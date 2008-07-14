@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/sather/System/Platforms/${LOWER_OPSYS}/lwp/CONFIG
+lib/sather/System/Platforms/${LOWER_OPSYS}/lwp/Makefile
+lib/sather/System/Platforms/${LOWER_OPSYS}/lwp/Platform.module
+lib/sather/System/Platforms/${LOWER_OPSYS}/lwp/header.h
+@dirrm lib/sather/System/Platforms/${LOWER_OPSYS}/lwp
