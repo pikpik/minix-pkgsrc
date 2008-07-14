@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.32 2006/02/05 23:10:45 joerg Exp $
+# $NetBSD: Makefile,v 1.33 2006/04/25 12:45:57 salo Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include	"../../security/nessus/Makefile.common"
 

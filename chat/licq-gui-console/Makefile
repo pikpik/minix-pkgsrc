@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/12/22 22:34:24 jdolecek Exp $
+# $NetBSD: Makefile,v 1.20 2007/12/22 23:22:51 jdolecek Exp $
 #
 
 DISTNAME=	licq-1.3.5
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.licq.org/
 COMMENT=	Curses GUI for licq
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	licq-core-[0-9]*:../../chat/licq-core
 

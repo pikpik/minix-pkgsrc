@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/03/09 21:04:42 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/07/07 15:49:30 jlam Exp $
 #
 
 DISTNAME=	arts_output-0.7.1
@@ -10,6 +10,8 @@ MASTER_SITES=	http://havardk.xmms.org/plugins/arts_output/
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.xmms.org/plugins.php?category=output
 COMMENT=	XMMS plugin to output sound through the aRts sound daemon
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

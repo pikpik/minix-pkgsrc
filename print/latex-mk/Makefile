@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/06/15 23:40:00 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.20 2007/08/29 01:57:41 dmcmahill Exp $
 #
 
 DISTNAME=	latex-mk-1.9.1
@@ -10,6 +10,7 @@ HOMEPAGE=	http://latex-mk.sourceforge.net/
 COMMENT=	Makefile fragments and scripts for managing LaTeX documents
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	awk echo env false find grep gzcat gzip rm rmdir tar
 

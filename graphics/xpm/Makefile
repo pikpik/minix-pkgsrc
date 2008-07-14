@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2007/10/16 23:49:00 tnn Exp $
+# $NetBSD: Makefile,v 1.60 2008/03/11 18:47:40 tnn Exp $
 
 DISTNAME=	xpm-3.4k
 PKGREVISION=	7
@@ -11,6 +11,7 @@ HOMEPAGE=	http://koala.ilog.fr/lehors/xpm.html
 COMMENT=	The X Pixmap library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		libXpm-[0-9]*
 

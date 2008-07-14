@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/01/18 05:08:52 tnn Exp $
+# $NetBSD: Makefile,v 1.14 2008/04/12 22:40:22 jlam Exp $
 #
 
 DISTNAME=	yaz-2.1.56
@@ -9,6 +9,8 @@ MASTER_SITES=	http://ftp.indexdata.dk/pub/yaz/
 MAINTAINER=	phil@NetBSD.org
 HOMEPAGE=	http://indexdata.dk/yaz/
 COMMENT=	C/C++ toolkit for the development of Z39.50v3/SRW clients and servers
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES

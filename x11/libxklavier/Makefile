@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/04/16 16:41:37 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2008/04/30 13:38:17 jmmv Exp $
 #
 
 DISTNAME=	libxklavier-3.5
@@ -10,6 +10,7 @@ HOMEPAGE=	http://freedesktop.org/Software/LibXklavier
 COMMENT=	High-level API for the X Keyboard Extension (XKB)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		YES

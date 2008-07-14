@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/04/25 08:14:57 kefren Exp $
+# $NetBSD: Makefile,v 1.5 2008/05/30 11:07:22 tnn Exp $
 
 DISTNAME=	monodoc-1.9
 CATEGORIES=	devel
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/
 COMMENT=	Documentation for the Mono class libraries
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 PKGCONFIG_OVERRIDE+=	monodoc.pc.in

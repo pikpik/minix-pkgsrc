@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/10/14 07:51:18 adam Exp $
+# $NetBSD: Makefile,v 1.22 2008/01/18 05:06:25 tnn Exp $
 
 DISTNAME=	kadu-0.5.0
 PKGREVISION=	1
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.kadu.net/
 COMMENT=	Chat client for Gadu-Gadu network (Poland)
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/kadu
 USE_DIRS+=		xdg-1.2

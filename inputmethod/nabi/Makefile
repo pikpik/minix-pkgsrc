@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/04/17 13:46:38 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2006/06/11 14:45:04 joerg Exp $
 #
 
 DISTNAME=		nabi-0.15
@@ -9,6 +9,8 @@ MASTER_SITES=		http://kldp.net/frs/download.php/1651/
 MAINTAINER=		minskim@NetBSD.org
 HOMEPAGE=		http://nabi.kldp.net/
 COMMENT=		X Input Method for Korean
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config msgfmt
 GNU_CONFIGURE=		YES

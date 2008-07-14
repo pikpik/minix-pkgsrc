@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/03/04 21:28:56 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2008/03/02 06:10:33 jlam Exp $
 #
 
 DISTNAME=	gtkmserv-0.5.2
@@ -11,6 +11,7 @@ HOMEPAGE=	http://projects.ubertechnique.com/index.html
 COMMENT=	Gtk-based GUI client for the audio/mserv package
 
 PKG_DESTDIR_SUPPORt=	user-destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 GNU_CONFIGURE=		YES

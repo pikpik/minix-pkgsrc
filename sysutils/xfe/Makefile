@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2007/07/17 20:23:28 xtraeme Exp $
+# $NetBSD: Makefile,v 1.29 2007/09/12 20:44:20 xtraeme Exp $
 
 DISTNAME=	xfe-1.04
 CATEGORIES=	sysutils
@@ -7,6 +7,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xfe/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://roland65.free.fr/xfe/
 COMMENT=	Fast MS-Explorer like filemanager for X
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++

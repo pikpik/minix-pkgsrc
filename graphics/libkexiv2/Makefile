@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/01/16 07:54:31 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2008/01/18 05:06:42 tnn Exp $
 #
 
 DISTNAME=	libkexiv2-0.1.6
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kipi-plugins.org/
 COMMENT=	KDE wrapper for exiv2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

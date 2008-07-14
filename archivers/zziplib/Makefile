@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/08/11 12:50:40 taca Exp $
+# $NetBSD: Makefile,v 1.14 2007/05/06 00:28:57 taca Exp $
 #
 
 DISTNAME=	zziplib-0.10.82
@@ -12,6 +12,7 @@ HOMEPAGE=	http://zziplib.sourceforge.net/
 COMMENT=	Library for ZIP archive handling
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

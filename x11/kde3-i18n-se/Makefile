@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.25 2008/01/18 05:10:03 tnn Exp $
+# $NetBSD: Makefile,v 1.26 2008/02/20 10:36:07 markd Exp $
 
 DISTNAME=	kde-i18n-se-${_KDE_VERSION}
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_KDE_I18N}
 
 COMMENT=	Language bindings for the KDE desktop
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 

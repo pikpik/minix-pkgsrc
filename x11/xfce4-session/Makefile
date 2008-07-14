@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.19 2007/04/12 09:55:24 martti Exp $
+# $NetBSD: Makefile,v 1.20 2007/04/17 17:45:07 martti Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 

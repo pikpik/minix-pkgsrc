@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/06/11 14:28:33 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2006/07/05 05:37:41 jlam Exp $
 #
 
 DISTNAME=	leafpad-0.8.4
@@ -9,6 +9,8 @@ MASTER_SITES=	http://savannah.nongnu.org/download/leafpad/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tarot.freeshell.org/leafpad/
 COMMENT=	Simple and light text editor using GTK+
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		intltool msgfmt pkg-config
 GNU_CONFIGURE=		YES

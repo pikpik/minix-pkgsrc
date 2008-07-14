@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/03/06 14:53:48 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2008/04/14 13:38:43 wiz Exp $
 
 DISTNAME=	libwpd-0.8.14
 CATEGORIES=	converters
@@ -7,6 +7,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libwpd/}
 MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://libwpd.sourceforge.net/
 COMMENT=	Library for importing and exporting WordPerfect(tm) documents
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2006/03/09 21:04:42 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2007/02/22 19:26:08 wiz Exp $
 
 DISTNAME=	xmmix-1.2
 PKGREVISION=	4
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.ibiblio.org/tkan/download/xmmix/1.2.2/src/
 MAINTAINER=	augustss@cs.chalmers.se
 HOMEPAGE=	http://www.amb.org/xmmix/
 COMMENT=	X interface to the audio mixer device
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/03/04 21:31:14 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2006/12/27 13:37:47 joerg Exp $
 
 DISTNAME=	xwatchwin
 PKGNAME=	xwatchwin-1.1.1
@@ -8,6 +8,8 @@ MASTER_SITES=	ftp://sunsite.uio.no/pub/X11/contrib/utilities/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Watch a window on another X server
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 

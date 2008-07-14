@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/06/20 01:09:19 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/21 16:27:09 wiz Exp $
 #
 
 DISTNAME=	gbrainy-0.70
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.softcatala.org/~jmas/gbrainy/
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/gbrainy
 COMMENT=	Brain teaser game and trainer
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_DIRS+=	xdg-1.4

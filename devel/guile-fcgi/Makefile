@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/10/04 21:35:59 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2007/06/05 05:44:37 wiz Exp $
 
 DISTNAME=	guile-fcgi-0.1
 PKGREVISION=	7
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# AWOL since 2003
 COMMENT=	Guile interface to FastCGI
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

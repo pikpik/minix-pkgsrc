@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2008/05/25 14:45:16 tron Exp $
+# $NetBSD: Makefile,v 1.9 2008/05/25 20:49:39 tron Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../chat/xchat/Makefile.common"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/03/17 17:29:01 rillig Exp $
+# $NetBSD: Makefile,v 1.22 2008/06/19 14:55:16 taca Exp $
 
 DISTNAME=	eruby-${ERUBY_VERSION}
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.modruby.net/archive/
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://modruby.net/en/index.rbx/eruby/
 COMMENT=	Interprets Ruby code embedded in a text file
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 # manual page conflicts.
 CONFLICTS+=	ruby[1-9][0-9]-eruby-*

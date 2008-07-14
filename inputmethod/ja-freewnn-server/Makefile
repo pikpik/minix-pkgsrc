@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/07/19 10:17:17 grant Exp $
+# $NetBSD: Makefile,v 1.6 2007/10/25 22:00:46 jlam Exp $
 
 DISTNAME=	ja-FreeWnn-server-1.10
 PKGREVISION=	2
@@ -8,6 +8,8 @@ DISTFILES=	# empty
 
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	Japanese/Chinese/Korean input method (Japanese server)
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	ja-FreeWnn-server-bin>=1.10nb4:../../inputmethod/ja-freewnn-server-bin
 DEPENDS+=	ja-FreeWnn-dict>=1.10nb1:../../inputmethod/ja-freewnn-dict

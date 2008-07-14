@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/05/12 11:11:25 shannonjr Exp $
+# $NetBSD: Makefile,v 1.14 2007/11/07 11:13:15 shannonjr Exp $
 #
 
 DISTNAME=		libassuan-1.0.3
@@ -11,6 +11,7 @@ HOMEPAGE=		ftp://ftp.gnupg.org/gcrypt/libassuan/
 COMMENT=		The IPC library used by some GnuPG related software
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/02/02 16:56:58 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/07/21 19:42:06 adrianp Exp $
 #
 
 DISTNAME=	mac-3.99-u4-b5
@@ -9,6 +9,8 @@ MASTER_SITES=	http://supermmx.org/download/linux/mac/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://supermmx.org
 COMMENT=	Monkey's Audio support library (for .ape files)
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.fast.prefs.mk"
 

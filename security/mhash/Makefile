@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/04/30 19:06:47 adam Exp $
+# $NetBSD: Makefile,v 1.21 2007/05/08 15:51:32 joerg Exp $
 
 DISTNAME=	mhash-0.9.9
 CATEGORIES=	security devel
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mhash.sourceforge.net/
 COMMENT=	Hash algorithms library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl
 USE_LIBTOOL=		yes

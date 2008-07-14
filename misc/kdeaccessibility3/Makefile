@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.36 2008/03/06 14:53:52 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2008/04/12 22:43:04 jlam Exp $
 
 DISTNAME=	kdeaccessibility-${_KDE_VERSION}
 PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	Accessibility support for the KDE integrated X11 desktop
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 

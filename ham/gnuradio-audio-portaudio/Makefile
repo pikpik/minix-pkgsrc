@@ -1,7 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/13 16:38:26 wulf Exp $
 
 PKGNAME=	gnuradio-audio-portaudio-${VERSION}
 COMMENT=	GNU Radio module adding support for portaudio
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/03/06 14:53:50 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2008/04/15 18:00:48 drochner Exp $
 #
 
 DISTNAME=	gucharmap-2.22.1
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/Gucharmap
 COMMENT=	Unicode/ISO10646 character map and font viewer
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

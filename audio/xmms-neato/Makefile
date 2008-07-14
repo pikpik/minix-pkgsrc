@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/03/04 21:29:00 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2006/10/04 20:44:20 wiz Exp $
 #
 
 DISTNAME=	neato
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://web.archive.org/web/20021209022733/http://www.rpi.edu/~mullr/xmms/
 COMMENT=	Circle effect XMMS plugin
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake

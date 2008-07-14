@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/07/05 18:20:07 jnemeth Exp $
+# $NetBSD: Makefile,v 1.17 2008/02/14 06:19:38 bjs Exp $
 
 DISTNAME=	mm-1.4.2
 PKGNAME=	lib${DISTNAME}
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.ossp.org/pkg/lib/mm/
 COMMENT=	Portable abstraction layer for shared memory
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

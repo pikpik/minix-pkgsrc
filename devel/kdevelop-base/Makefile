@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2008/02/20 10:24:09 markd Exp $
+# $NetBSD: Makefile,v 1.72 2008/02/23 11:38:36 wiz Exp $
 
 DISTNAME=	kdevelop-3.5.1
 PKGNAME=	kdevelop-base-3.5.1
@@ -6,6 +6,8 @@ CATEGORIES=	devel kde
 
 HOMEPAGE=	http://www.kdevelop.org/
 COMMENT=	Base modules for IDE for Unix/X11/KDE
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 

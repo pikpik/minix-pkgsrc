@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:29:42 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2006/06/12 16:28:09 wiz Exp $
 
 DISTNAME=	lpairs-1.0.1
 PKGREVISION=	4
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lgames/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lgames.sourceforge.net/
 COMMENT=	Memory game matching pairs of cards
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

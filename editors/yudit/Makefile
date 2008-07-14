@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/06/27 12:57:20 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2007/06/29 22:53:21 joerg Exp $
 
 DISTNAME=	yudit-2.8.1
 CATEGORIES=	editors
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://yudit.org/
 COMMENT=	Unicode Text Editor
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake msgmerge

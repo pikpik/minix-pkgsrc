@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/11/18 10:23:22 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2008/01/18 05:06:20 tnn Exp $
 #
 
 DISTNAME=		libofa-0.9.3
@@ -9,6 +9,8 @@ MASTER_SITES=		http://www.musicip.com/dns/files/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.musicip.com/dns/index.jsp
 COMMENT=		Open Fingerprint Architecture library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++

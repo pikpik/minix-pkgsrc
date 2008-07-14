@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/01/18 05:06:40 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/02 12:55:06 drochner Exp $
 #
 
 DISTNAME=	gwenview-i18n-1.4.2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gwenview.sourceforge.net/
 COMMENT=	Translations for gwenview image viewer
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake msgfmt
 USE_LANGUAGES=	c c++

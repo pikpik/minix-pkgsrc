@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2006/12/27 13:37:42 joerg Exp $
+# $NetBSD: Makefile,v 1.93 2007/06/26 10:39:44 tnn Exp $
 
 DISTNAME=	lesstif-0.95.0
 PKGREVISION=	1
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.lesstif.org/
 COMMENT=	API compatible clone of the OSF/Motif toolkit
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	openmotif-[0-9]*
 

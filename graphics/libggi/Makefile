@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2008/04/12 22:43:01 jlam Exp $
+# $NetBSD: Makefile,v 1.45 2008/05/11 13:01:07 tonnerre Exp $
 #
 
 DISTNAME=	libggi-2.1.1.src
@@ -12,6 +12,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ggi-project.org/
 COMMENT=	General Graphics Interface library is a flexible drawing library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_LIBTOOL=		yes

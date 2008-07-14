@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/04/16 12:34:13 abs Exp $
+# $NetBSD: Makefile,v 1.8 2008/04/25 20:39:08 joerg Exp $
 #
 
 DISTNAME=		meld-1.1.5.1
@@ -6,6 +6,8 @@ PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://ftp.gnome.org/pub/gnome/sources/meld/1.1/
 EXTRACT_SUFX=		.tar.bz2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		${PYPKGPREFIX}-gtk2>=2.6.0:../../x11/py-gtk2
 DEPENDS+=		${PYPKGPREFIX}-gnome2>=2.6.0:../../x11/py-gnome2

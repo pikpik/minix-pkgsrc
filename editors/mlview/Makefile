@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2007/09/21 13:03:40 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2008/03/06 14:53:50 wiz Exp $
 #
 
 DISTNAME=	mlview-0.7.0
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freespiders.org/projects/gmlview/
 COMMENT=	XML editor for the GNOME environment
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_DIRS+=		xdg-1.1

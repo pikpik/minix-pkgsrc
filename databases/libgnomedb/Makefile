@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2007/09/21 13:03:32 wiz Exp $
+# $NetBSD: Makefile,v 1.65 2008/01/18 05:06:27 tnn Exp $
 #
 
 DISTNAME=		libgnomedb-3.0.0
@@ -10,6 +10,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome-db.org/
 COMMENT=		GNOME2 database library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		YES

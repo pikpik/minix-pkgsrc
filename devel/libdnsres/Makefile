@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/04/25 16:39:40 tnn Exp $
+# $NetBSD: Makefile,v 1.7 2008/04/22 18:06:09 tnn Exp $
 #
 
 DISTNAME=		libdnsres-0.1a
@@ -9,6 +9,8 @@ MASTER_SITES=		http://www.monkey.org/~provos/
 MAINTAINER=		adrianp@NetBSD.org
 HOMEPAGE=		http://www.monkey.org/~provos/
 COMMENT=		Non-blocking thread-safe API for resolving DNS names
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES

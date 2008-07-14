@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2007/12/22 22:34:25 jdolecek Exp $
+# $NetBSD: Makefile,v 1.33 2007/12/29 20:19:34 joerg Exp $
 #
 
 DISTNAME=	licq-1.3.5
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.licq.org/
 COMMENT=	Qt GUI for licq
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.qt3-libs?=    qt3-libs>=3.0
 DEPENDS+=	licq-core-[0-9]*:../../chat/licq-core

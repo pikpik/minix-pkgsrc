@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2007/11/30 21:55:10 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2008/01/18 05:08:38 tnn Exp $
 #
 
 DISTNAME=	kmplayer-0.9.4a
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://kmplayer.kde.org/
 COMMENT=	KDE frontend to mplayer
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		mplayer>=1.0rc3:../../multimedia/mplayer
 DEPENDS+=		mencoder>=1.0rc3:../../multimedia/mencoder

@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2006/04/27 03:14:19 wulf Exp $
+# $NetBSD: Makefile,v 1.7 2006/11/13 18:12:41 wulf Exp $
 
 PKGNAME=	gnuradio-usrp-${VERSION}
 COMMENT=	USRP bindings for GNU Radio
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_PATCH_SCRIPTS+=	gr-usrp/src/flexrf_debug_gui.py
 PYTHON_PATCH_SCRIPTS+=	gr-usrp/src/qa_usrp.py

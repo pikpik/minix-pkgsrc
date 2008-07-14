@@ -1,7 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/11/13 17:27:57 wulf Exp $
 
 PKGNAME=	gnuradio-radio-astronomy-${VERSION}
 COMMENT=	GNU Radio module for radio astronomy
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 

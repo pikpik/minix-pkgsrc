@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2006/07/23 00:28:13 reed Exp $
+# $NetBSD: Makefile,v 1.24 2007/02/22 19:26:25 wiz Exp $
 #
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../editors/lyx-qt/Makefile.common"
 

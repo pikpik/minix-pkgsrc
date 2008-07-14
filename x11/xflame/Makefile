@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/01/09 10:16:19 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/03/06 05:58:28 obache Exp $
 #
 
 DISTNAME=	xflame-1.1.1
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.owlnet.rice.edu/~rahul/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Draws a flame on the screen
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 

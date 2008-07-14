@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/01/07 08:28:05 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2007/01/31 00:04:11 wiz Exp $
 #
 
 DISTNAME=	denemo-0.7.6
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=denemo/}
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://denemo.sourceforge.net/
 COMMENT=	GUI musical score editor written in C/GTK+
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	lilypond-[0-9]*:../../print/lilypond
 

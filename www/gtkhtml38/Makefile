@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/03/06 14:53:55 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2008/04/14 18:45:51 gdt Exp $
 #
 
 DISTNAME=	gtkhtml-3.12.3
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Lightweight HTML rendering/printing/editing engine
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

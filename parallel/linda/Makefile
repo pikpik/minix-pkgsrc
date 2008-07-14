@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/02/05 23:10:34 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2006/03/04 21:30:26 jlam Exp $
 #
 
 DISTNAME=	linda-0.1.1
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=linda/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/linda/
 COMMENT=	Parallel distributed database environment
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes

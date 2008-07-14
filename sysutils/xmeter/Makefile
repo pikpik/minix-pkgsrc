@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/04 21:30:44 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/12/27 13:37:40 joerg Exp $
 #
 
 DISTNAME=	xmeter-1.15
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=misdirected/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	#
 COMMENT=	Distributed system load meter for X11
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_IMAKE=	yes
