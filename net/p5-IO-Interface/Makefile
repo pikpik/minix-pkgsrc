@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2007/11/13 08:43:46 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:39 joerg Exp $
 #
 
-DISTNAME=		IO-Interface-1.03
+DISTNAME=		IO-Interface-1.05
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5ioi
 CATEGORIES=		net perl5
