@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/19 17:59:52 bjs Exp $
+# $NetBSD: Makefile,v 1.14 2008/07/13 23:16:02 bjs Exp $
 #
 
 DISTNAME=	pixman-0.11.6
@@ -29,6 +29,12 @@ PKGCONFIG_OVERRIDE+=	pixman-1.pc.in
 ###
 MAKE_ENV+=	PIXMAN_SYMFILE=${PIXMAN_SYMFILE:Q}
 PIXMAN_SYMFILE=	${WRKDIR}/pixman.sym
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Msunpro)
+CONFIGURE_ARGS+=	--disable-sse2
+.endif
 
 post-extract:
 	${CP} ${FILESDIR}/pixman.sym ${WRKDIR}
