@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2008/06/01 08:19:48 obache Exp $
+# $NetBSD: Makefile,v 1.7 2008/07/14 12:56:12 joerg Exp $
 #
 
-DISTNAME=	gvfs-0.2.4
+DISTNAME=	gvfs-0.2.5
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gvfs/0.2/}
 EXTRACT_SUFX=	.tar.bz2
