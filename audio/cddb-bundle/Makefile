@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/01/18 05:06:19 tnn Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/21 21:12:05 joerg Exp $
 #
 
 DISTNAME=	cddb.bundle-0.2
@@ -19,6 +19,9 @@ USE_LANGUAGES=	objc
 MAKE_ENV+=	ADDITIONAL_CPPFLAGS="-Wno-import" \
 		GNUSTEP_INSTALLATION_DIR=${PREFIX}/share/GNUstep/Local/
 MAKE_FILE=	GNUmakefile
+
+INSTALL_MAKE_FLAGS=	INSTALL_PROGRAM=${INSTALL_PROGRAM:Q} \
+			INSTALL_DATA=${INSTALL_DATA:Q}
 
 .include "../../devel/gnustep-base/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
