@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/01/07 09:14:14 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/02 00:07:12 joerg Exp $
 #
 
 DISTNAME=	xdkcal-0.9d
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	time
 MASTER_SITES=	http://www.shiratori.riec.tohoku.ac.jp/~jir/linux/products/xdkcal/
 
-MAINTAINER=	mishka@apk.od.ua
+MAINTAINER=	mishka@NetBSD.org
 HOMEPAGE=	http://www.shiratori.riec.tohoku.ac.jp/~jir/linux/products/xdkcal/index-e.html
 COMMENT=	X Desktop Calendar
 

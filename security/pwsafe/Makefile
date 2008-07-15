@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/01/18 05:09:40 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:45 joerg Exp $
 #
 
 DISTNAME=		pwsafe-0.2.0
@@ -7,7 +7,7 @@ CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pwsafe/} \
 			http://nsd.dyndns.org/pwsafe/releases/
 
-MAINTAINER=		mishka@apk.od.ua
+MAINTAINER=		mishka@NetBSD.org
 HOMEPAGE=		http://nsd.dyndns.org/pwsafe/
 COMMENT=		CLI based PasswordSafe compatible password manager
 
