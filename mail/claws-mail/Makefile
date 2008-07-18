@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2008/05/21 14:02:44 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2008/07/13 22:34:19 smb Exp $
 
 .include "Makefile.common"
+PKGREVISION=1
 
 PKGNAME=	claws-mail-${CLAWS_VERSION}
 
