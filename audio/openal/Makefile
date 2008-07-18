@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2007/09/15 11:45:57 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2008/06/20 01:09:07 joerg Exp $
 
 DISTNAME=	openal-0.0.8
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.openal.org/openal_webstf/downloads/
 
@@ -21,6 +21,11 @@ INFO_FILES=		# PLIST
 INSTALLATION_DIRS=	${PKGINFODIR} include/AL
 PKGCONFIG_OVERRIDE=	admin/pkgconfig/openal.pc.in
 LIBS+=			${LIBOSSAUDIO}
+
+SUBST_CLASSES+=		fixdev
+SUBST_STAGE.fixdev=	post-configure
+SUBST_FILES.fixdev=	src/backends/alc_backend_bsd.c
+SUBST_SED.fixdev=	-e 's;/dev/dsp;${DEVOSSSOUND};g'
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
