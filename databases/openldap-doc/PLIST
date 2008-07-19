@@ -12,6 +12,8 @@ share/doc/openldap/admin/dual_dc.png
 share/doc/openldap/admin/guide.html
 share/doc/openldap/admin/intro_dctree.png
 share/doc/openldap/admin/intro_tree.png
+share/doc/openldap/admin/push-based-complete.png
+share/doc/openldap/admin/push-based-standalone.png
 share/doc/openldap/admin/refint.png
 share/doc/openldap/admin/set-following-references.png
 share/doc/openldap/admin/set-memberUid.png
