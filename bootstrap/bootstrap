@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.132 2008/06/19 18:36:51 joerg Exp $
+# $NetBSD: bootstrap,v 1.133 2008/07/20 23:54:48 dbj Exp $
 #
 #
 # Copyright (c) 2001-2002 Alistair G. Crooks.  All rights reserved.
