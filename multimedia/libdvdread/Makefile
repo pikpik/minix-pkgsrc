@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/10/17 16:41:10 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2006/11/05 17:25:35 joerg Exp $
 
 DISTNAME=	libdvdread-0.9.7
+PKGREVISION=   1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.dtek.chalmers.se/groups/dvd/dist/
 
