@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/07/29 11:57:14 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/20 01:09:24 joerg Exp $
 
 DISTNAME=	Email-Date-1.03
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Email/}
 
-MAINTAINER=	kuli0020@umn.edu
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cpan.uwinnipeg.ca/dist/Email-Date
 COMMENT=	Find and Format Date Headers
 

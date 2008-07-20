@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/02/15 06:29:00 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/20 01:09:42 joerg Exp $
 
 DISTNAME=	HTML-Prototype-Useful-0.04
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTML/}
 
-MAINTAINER=	kuli0020@umn.edu
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/HTML-Prototype-Useful
 COMMENT=	Some useful additions for the Prototype library
 

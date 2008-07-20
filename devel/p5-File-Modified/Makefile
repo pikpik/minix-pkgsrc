@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/02/21 10:33:45 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/20 01:09:15 joerg Exp $
 
 DISTNAME=	File-Modified-0.07
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
 
-MAINTAINER=	kuli0020@umn.edu
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/File-Modified/
 COMMENT=	Perl module for checking intelligently if files have changed
 
