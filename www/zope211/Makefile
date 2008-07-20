@@ -1,10 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/06/21 10:39:31 taca Exp $
 #
 
 DISTNAME=	Zope-${ZOPE211_VERSION}-final
 PKGNAME=	${ZOPE_PKG_PREFIX}-${ZOPE211_VERSION}
 CATEGORIES=	www python
 MASTER_SITES=	http://www.zope.org/Products/Zope/${ZOPE211_VERSION}/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.zope.org/
