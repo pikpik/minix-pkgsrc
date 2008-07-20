@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2008/03/15 22:16:41 markd Exp $
+# $NetBSD: Makefile,v 1.97 2008/04/26 02:39:27 markd Exp $
 
 DISTNAME=		R-2.7.0
 CATEGORIES=		math
@@ -34,6 +34,10 @@ CONFIGURE_ARGS+=	--without-gnome		# not yet stable
 CONFIGURE_ARGS+=	--with-system-zlib
 CONFIGURE_ARGS+=	--with-system-bzlib
 CONFIGURE_ARGS+=	--with-system-pcre
+
+# Disable Mac OS specific support used by R.app
+CONFIGURE_ARGS+=	--disable-R-framework
+CONFIGURE_ARGS+=	--without-aqua
 
 # Use BLAS (math/blas)
 #
