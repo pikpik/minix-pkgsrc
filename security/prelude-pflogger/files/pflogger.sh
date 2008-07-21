@@ -3,20 +3,18 @@
 # $NetBSD$
 #
 
-# PROVIDE: pflogger
-# REQUIRE: pf NETWORKING
+# PROVIDE: preludepflogger
+# REQUIRE: LOGIN
 
 $_rc_subr_loaded . /etc/rc.subr
 
 name="pflogger"
-pflogger_user=_prelude
-pflogger_=_prelude
 procname="@PREFIX@/bin/prelude-pflogger"
 rcvar=${name}
-required_files="@PKG_SYSCONFDIR@/prelude-pflogger.conf"
+required_files="@PKG_SYSCONFDIR@/prelude-pflogger/prelude-pflogger.conf"
 start_precmd="pflogger_precommand"
+start_cmd="@PREFIX@/sbin/run-prelude-pflogger --pidfile @PRELUDE_PFLOGGER_PID_DIR@/prelude-pflogger.pid"
 pidfile="@PRELUDE_PFLOGGER_PID_DIR@/prelude-pflogger.pid"
-start_cmd="${procname} --pidfile ${pidfile}"
 
 pflogger_precommand()
 {
