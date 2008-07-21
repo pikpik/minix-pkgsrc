@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/scrub
+man/man1/scrub.1
