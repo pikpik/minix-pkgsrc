@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.432 2008/07/08 20:36:56 adrianp Exp $
+# $NetBSD: Makefile,v 1.433 2008/07/08 20:41:02 adrianp Exp $
 #
 
 COMMENT=	System utilities
@@ -70,6 +70,7 @@ SUBDIR+=	dfuife_cgi
 SUBDIR+=	dfuife_curses
 SUBDIR+=	dirsize
 SUBDIR+=	dirvish
+SUBDIR+=	diskscrub
 SUBDIR+=	dmassage
 SUBDIR+=	dmesg2gif
 SUBDIR+=	dmidecode
