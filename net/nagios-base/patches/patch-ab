@@ -1,6 +1,6 @@
-$NetBSD: patch-ab,v 1.2 2006/08/17 14:19:00 taca Exp $
+$NetBSD$
 
---- cgi/Makefile.in.orig	2006-05-30 16:31:44.000000000 +0000
+--- cgi/Makefile.in.orig	2008-02-28 20:26:36.000000000 +0100
 +++ cgi/Makefile.in
 @@ -15,7 +15,7 @@ exec_prefix=@exec_prefix@
  LOGDIR=@localstatedir@
@@ -11,8 +11,8 @@ $NetBSD: patch-ab,v 1.2 2006/08/17 14:19:00 taca Exp $
  HTMLDIR=@datadir@
  INSTALL=@INSTALL@
  INSTALL_OPTS=@INSTALL_OPTS@
-@@ -198,9 +198,9 @@ install-unstripped:
- 	 $(MAKE) install-basic
+@@ -196,9 +196,9 @@ install-unstripped:
+ 	$(MAKE) install-basic
  
  install-basic:
 -	$(INSTALL) -m 775 $(INSTALL_OPTS) -d $(DESTDIR)$(CGIDIR)
