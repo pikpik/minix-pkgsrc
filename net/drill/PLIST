@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/drill
+man/man1/drill.1
