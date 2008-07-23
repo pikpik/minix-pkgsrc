@@ -1,4 +1,5 @@
 @comment $NetBSD$
+bin/bbc2psf
 bin/cpi2psf
 bin/cpicomp
 bin/cpidcomp
@@ -7,6 +8,7 @@ bin/fnts2fon
 bin/fon2fnts
 bin/mda2psf
 bin/page2cp2
+bin/psf2bbc
 bin/psf2bdf
 bin/psf2bsd
 bin/psf2fnt
