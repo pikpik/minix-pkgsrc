@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2007/02/22 19:27:22 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/20 01:09:43 joerg Exp $
 
-DISTNAME=	Kwiki-0.38
+DISTNAME=	Kwiki-0.39
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Kwiki/}
 
@@ -12,7 +11,7 @@ COMMENT=	Extensible, modular, Perl-based Wiki
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-DEPENDS+=	p5-Spoon>=0.21nb1:../../devel/p5-Spoon
+DEPENDS+=	p5-Spoon>=0.22:../../devel/p5-Spoon
 
 PERL5_PACKLIST=		auto/Kwiki/.packlist
 
