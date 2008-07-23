@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/10 13:44:22 abs Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:25 joerg Exp $
 
-DISTNAME=	Rose-Object-0.84
+DISTNAME=	Rose-Object-0.85
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Rose/}
