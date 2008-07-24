@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/02/06 07:08:11 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/25 20:39:11 joerg Exp $
 #
 
-DISTNAME=	boto-1.0a
+DISTNAME=	boto-1.3a
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 EGG_NAME=	${DISTNAME}
 CATEGORIES=	net
