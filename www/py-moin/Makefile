@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2008/05/07 10:02:44 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/07/22 20:17:24 tnn Exp $
 #
 
-DISTNAME=	moin-1.6.3
-PKGNAME=	${PYPKGPREFIX}-moin-1.6.3
+DISTNAME=	moin-1.7.1
+PKGNAME=	${PYPKGPREFIX}-moin-1.7.1
 CATEGORIES=	www python
 MASTER_SITES=	http://static.moinmo.in/files/
 
