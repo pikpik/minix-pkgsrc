@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2008/03/03 15:21:07 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2008/05/26 02:13:16 joerg Exp $
 #
 
-DISTNAME=		SQLiteManager-1.0.4
-PKGREVISION=		2
+DISTNAME=		SQLiteManager-1.2.0
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sqlitemanager/}
 
-MAINTAINER=		manu@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/silsm/
 COMMENT=		Web frontend for managing SQLite databases
 
@@ -19,6 +18,9 @@ PKG_DESTDIR_SUPPORT=	destdir
 NO_BUILD=		yes
 
 PKG_USERS_VARS+=	APACHE_USER
+
+post-patch:
+	${FIND} ${WRKSRC} -name "*.orig" -exec ${RM} -f {} \;
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share
