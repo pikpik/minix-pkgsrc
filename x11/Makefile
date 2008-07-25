@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.554 2008/05/27 04:53:55 bjs Exp $
+# $NetBSD: Makefile,v 1.555 2008/07/14 04:03:36 tnn Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -466,6 +466,7 @@ SUBDIR+=	xlogo
 SUBDIR+=	xlogout
 SUBDIR+=	xlsclients
 SUBDIR+=	xlupe
+SUBDIR+=	xlt
 SUBDIR+=	xmag
 SUBDIR+=	xman
 SUBDIR+=	xmascot
