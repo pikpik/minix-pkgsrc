@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:14 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/16 13:35:02 obache Exp $
 #
 
-DISTNAME=		bmp-musepack-1.1
-PKGREVISION=		3
+DISTNAME=		bmp-musepack-1.2
 CATEGORIES=		audio
 MASTER_SITES=		http://files.musepack.net/linux/plugins/
 EXTRACT_SUFX=		.tar.bz2
@@ -19,5 +18,6 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 
 .include "../../audio/bmp/buildlink3.mk"
-.include "../../audio/libmusepack/buildlink3.mk"
+.include "../../audio/libmpcdec/buildlink3.mk"
+.include "../../audio/taglib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
