@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.OCaml.orig	2005-06-27 19:38:25.000000000 +0200
+--- Makefile.OCaml.orig	2007-05-07 17:42:29.000000000 +0200
 +++ Makefile.OCaml
 @@ -29,6 +29,10 @@ ifeq ($(shell uname),Darwin)
  else
@@ -13,7 +13,7 @@ $NetBSD$
  endif
  endif
  endif
-@@ -242,6 +249,10 @@ else
+@@ -261,6 +265,10 @@ else
    endif
  endif
  
