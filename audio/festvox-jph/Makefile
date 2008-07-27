@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2008/03/02 06:10:32 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2008/05/26 02:13:15 joerg Exp $
 
 DISTNAME=	voice_jph_di-2.0
 PKGNAME=	festvox-jph-2.0
 PKGREVISION=	1
 CATEGORIES=	audio
-MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
+MASTER_SITES=	http://www.cslu.ogi.edu/tts/download/data/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cslu.cse.ogi.edu/tts/
