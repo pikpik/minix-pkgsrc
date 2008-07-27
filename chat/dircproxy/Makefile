@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2008/06/13 11:46:21 tron Exp $
+# $NetBSD: Makefile,v 1.16 2008/06/17 12:53:54 tron Exp $
 
 DISTNAME=	dircproxy-1.2.0-beta2
 PKGNAME=	${DISTNAME:S/-beta/beta/}
 PKGREVISION=	1
 CATEGORIES=	chat
-MASTER_SITES=	http://dircproxy.securiweb.net/
+MASTER_SITES=	http://dircproxy.securiweb.net/pub/1.2/
 EXTRACT_SUFX=	.tar.bz
 
 MAINTAINER=	adrianp@NetBSD.org
