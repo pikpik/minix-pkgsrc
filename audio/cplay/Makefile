@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2006/07/17 19:04:50 ghen Exp $
+# $NetBSD: Makefile,v 1.11 2008/01/04 12:54:34 ghen Exp $
 
 DISTNAME=		cplay-1.49
 PKGREVISION=		3
 CATEGORIES=		audio
-MASTER_SITES=		${HOMEPAGE}
+MASTER_SITES=		# ${HOMEPAGE}
 
 MAINTAINER=		ghen@NetBSD.org
 HOMEPAGE=		http://mask.tf.hut.fi/~flu/hacks/cplay/
