@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2008/03/10 11:35:31 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2008/05/14 18:28:36 drochner Exp $
 #
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
@@ -24,7 +26,7 @@ TEST_TARGET=		check-torture
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/gconf/gstreamer-0.10.schemas \
-		${GCONF_SCHEMAS_DIR}
+		${DESTDIR}${GCONF_SCHEMAS_DIR}
 
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/zlib/buildlink3.mk"
