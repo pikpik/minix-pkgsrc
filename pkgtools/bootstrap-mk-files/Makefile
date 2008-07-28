@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2008/06/19 18:36:51 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2008/07/03 20:06:21 joerg Exp $
 
-DISTNAME=	bootstrap-mk-files-20080703
+DISTNAME=	bootstrap-mk-files-20080722
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
