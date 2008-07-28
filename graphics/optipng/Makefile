@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2007/01/29 17:53:05 adam Exp $
+# $NetBSD: Makefile,v 1.14 2007/11/10 19:08:51 heinz Exp $
 
-DISTNAME=	optipng-0.5.5
+DISTNAME=	optipng-0.6.1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=optipng/}
 
