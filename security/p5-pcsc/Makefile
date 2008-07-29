@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/03/04 11:31:04 shannonjr Exp $
 #
 
 DISTNAME=	pcsc-perl-1.4.6
@@ -20,6 +20,8 @@ SUBST_SED.perl=		-e 's,/usr/bin/perl,${PERL5},'
 PERL5_USE_PACKLIST=	yes
 MAKE_PARAMS+=		INSTALLDIRS=vendor
 PERL5_PACKLIST=		auto/Chipcard/PCSC/.packlist
+
+USE_TOOLS+=		pkg-config
 
 .include "../../lang/perl5/module.mk"
 .include "../../security/pcsc-lite/buildlink3.mk"
