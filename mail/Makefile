@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.353 2008/07/15 09:33:21 abs Exp $
+# $NetBSD: Makefile,v 1.354 2008/07/23 18:37:21 joerg Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -297,6 +297,5 @@ SUBDIR+=	xbuffy
 SUBDIR+=	xfmail
 SUBDIR+=	xmailbox
 SUBDIR+=	xmailwatcher
-SUBDIR+=	yatsvrs
 
 .include "../mk/misc/category.mk"
