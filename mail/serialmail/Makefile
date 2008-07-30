@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2006/01/05 02:57:11 schmonz Exp $
+# $NetBSD: Makefile,v 1.3 2006/01/23 16:24:09 joerg Exp $
 #
 
 DISTNAME=		serialmail-0.75
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		http://cr.yp.to/software/
 
