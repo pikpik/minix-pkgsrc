@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.433 2008/07/08 20:41:02 adrianp Exp $
+# $NetBSD: Makefile,v 1.434 2008/07/21 22:26:27 agc Exp $
 #
 
 COMMENT=	System utilities
@@ -62,6 +62,7 @@ SUBDIR+=	dbus-glib
 SUBDIR+=	dbus-qt3
 SUBDIR+=	dd_rescue
 SUBDIR+=	dd_rhelp
+SUBDIR+=	ddrescue
 SUBDIR+=	depot
 SUBDIR+=	desktop-file-utils
 SUBDIR+=	detox
