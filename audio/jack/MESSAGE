@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.1.1.1 2008/03/16 09:26:46 bjs Exp $
+$NetBSD: MESSAGE,v 1.2 2008/05/07 12:15:02 bjs Exp $
 
 NOTE:  Unfortunately, JACK wants to use a linux /proc filesystem to
 perform shared memory housekeeping tasks.  Therefore, if your platform
