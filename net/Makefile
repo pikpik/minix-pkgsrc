@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.717 2008/06/22 16:06:37 he Exp $
+# $NetBSD: Makefile,v 1.718 2008/07/22 08:41:46 he Exp $
 #
 
 COMMENT=	Networking tools
@@ -304,6 +304,7 @@ SUBDIR+=	p5-IO-Interface
 SUBDIR+=	p5-IO-Socket-Multicast
 SUBDIR+=	p5-IP-Country
 SUBDIR+=	p5-Net
+SUBDIR+=	p5-Net-Amazon
 SUBDIR+=	p5-Net-Amazon-S3
 SUBDIR+=	p5-Net-Bind
 SUBDIR+=	p5-Net-CIDR-Lite
