@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2008/05/26 12:57:13 adrianp Exp $
+# $NetBSD: Makefile,v 1.29 2008/06/17 21:29:59 adrianp Exp $
 
 DISTNAME=	turba-h3-${TURBAVER}
 PKGNAME=	turba-${TURBAVER}
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	http://ftp.horde.org/pub/turba/ \
 		ftp://ftp.horde.org/pub/turba/
@@ -21,7 +22,7 @@ EGDIR=		${PREFIX}/share/examples/turba
 HORDEDIR=	${PREFIX}/share/horde
 TURBADIR=	${HORDEDIR}/turba
 TURBAVER=	2.2.1
-PAXDIRS=	lib locale po scripts templates themes
+PAXDIRS=	lib locale po scripts templates themes js
 USE_TOOLS+=	pax perl:run
 
 MESSAGE_SUBST+=	TURBADIR=${TURBADIR:Q}
