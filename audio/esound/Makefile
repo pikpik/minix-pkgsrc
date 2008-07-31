@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.69 2008/07/29 21:58:13 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2008/07/30 10:24:40 drochner Exp $
 
 DISTNAME=		esound-0.2.39
+PKGREVISION=	1
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/esound/0.2/}
 EXTRACT_SUFX=		.tar.bz2
