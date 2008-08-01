@@ -6,8 +6,8 @@ PKG_SUPPORTED_OPTIONS=	threads
 .if !empty(PTHREAD_TYPE:Mnative)
 PKG_SUGGESTED_OPTIONS+=	threads
 .endif
-.include "../../mk/bsd.options.mk"
 
+.include "../../mk/bsd.options.mk"
 
 ###
 ### This enables new code for threaded operation on NetBSD, OpenBSD, etc.
