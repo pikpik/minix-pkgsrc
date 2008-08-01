@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2007/12/11 12:02:30 rhaen Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/07/31 04:06:51 schmonz Exp $
 #
 
 DISTNAME=		Text-WikiCreole-0.05
+PKGREVISION=		1
 PKGNAME=		p5-${DISTNAME}
 CATEGORIES=		textproc perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Text/}
