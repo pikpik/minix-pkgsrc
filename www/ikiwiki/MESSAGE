@@ -1,7 +1,6 @@
 ===========================================================================
-$NetBSD$
+$NetBSD: MESSAGE,v 1.1 2008/04/29 00:05:41 reed Exp $
 
-If you use custom templates, make sure they are correct when upgrading
-ikiwiki.
+If you use custom templates, make sure they are correct when upgrading.
 
 ===========================================================================
