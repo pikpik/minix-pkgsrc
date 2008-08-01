@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2008/03/10 18:35:54 drochner Exp $
+# $NetBSD: options.mk,v 1.5 2008/07/31 19:47:10 manu Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.curl
 PKG_SUPPORTED_OPTIONS=	inet6 libssh2 gssapi ldap
@@ -33,7 +33,8 @@ CONFIGURE_ARGS+=	--without-gssapi
 
 .if !empty(PKG_OPTIONS:Mldap)
 .include "../../databases/openldap-client/buildlink3.mk"
-CONFIGURE_ARGS+=      --enable-ldap
-CONFIGURE_ARGS+=      --enable-ldaps
+CONFIGURE_ARGS+=	--enable-ldap
+CONFIGURE_ARGS+=	--enable-ldaps
+.else
+CONFIGURE_ARGS+=	--disable-ldap
 .endif
-
