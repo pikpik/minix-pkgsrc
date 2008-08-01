@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.958 2008/07/27 13:34:02 seb Exp $
+# $NetBSD: Makefile,v 1.959 2008/07/27 14:20:47 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -744,6 +744,7 @@ SUBDIR+=	py-Pyro
 SUBDIR+=	py-TPG
 SUBDIR+=	py-ZopeInterface
 SUBDIR+=	py-at-spi
+SUBDIR+=	py-babel
 SUBDIR+=	py-checker
 SUBDIR+=	py-cheetah
 SUBDIR+=	py-compizconfig
