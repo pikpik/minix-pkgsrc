@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.718 2008/07/22 08:41:46 he Exp $
+# $NetBSD: Makefile,v 1.719 2008/07/31 06:17:25 obache Exp $
 #
 
 COMMENT=	Networking tools
@@ -329,6 +329,7 @@ SUBDIR+=	p5-Net-Pcap
 SUBDIR+=	p5-Net-RawIP
 SUBDIR+=	p5-Net-Rendezvous
 SUBDIR+=	p5-Net-SNMP
+SUBDIR+=	p5-Net-SNMP-Mixin
 SUBDIR+=	p5-Net-Server
 SUBDIR+=	p5-Net-TFTP
 SUBDIR+=	p5-Net-Telnet
