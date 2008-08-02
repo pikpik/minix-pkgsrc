@@ -1,8 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/12/14 01:16:39 xtraeme Exp $
+@comment $NetBSD$
 bin/fribidi
 bin/fribidi-config
 include/fribidi/fribidi.h
 include/fribidi/fribidi_char_sets.h
+include/fribidi/fribidi_char_sets.i
 include/fribidi/fribidi_char_sets_cap_rtl.h
 include/fribidi/fribidi_char_sets_cp1255.h
 include/fribidi/fribidi_char_sets_cp1256.h
@@ -13,6 +14,7 @@ include/fribidi/fribidi_char_sets_utf8.h
 include/fribidi/fribidi_config.h
 include/fribidi/fribidi_mem.h
 include/fribidi/fribidi_types.h
+include/fribidi/fribidi_types.i
 include/fribidi/fribidi_unicode.h
 lib/libfribidi.la
 lib/pkgconfig/fribidi.pc
