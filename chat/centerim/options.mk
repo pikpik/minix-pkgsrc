@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2007/04/15 20:16:42 wiz Exp $
+# $NetBSD: options.mk,v 1.1.1.1 2007/08/30 00:47:01 jnemeth Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.centerim
@@ -12,5 +12,6 @@ PKG_SUGGESTED_OPTIONS=	gpgme
 #CONFIGURE_ARGS+=	--with-gpgme=${BUILDLINK_PREFIX.gpgme:Q}/bin/gpgme-config
 .  include "../../security/gpgme/buildlink3.mk"
 .else
-CONFIGURE_ARGS+=	--without-gpgme
+CONFIGURE_ARGS+=	--without-gpgme-prefix
+CONFIGURE_ENV+=		ac_cv_path_GPGME_CONFIG=
 .endif
