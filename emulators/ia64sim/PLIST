@@ -1,2 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/12/10 12:59:02 agc Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:52:51 zuntum Exp $
 bin/ia64sim
+share/doc/ia64sim/ia64user.txt
+@dirrm share/doc/ia64sim
