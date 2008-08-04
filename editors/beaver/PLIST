@@ -1,9 +1,14 @@
 @comment $NetBSD$
 bin/beaver
 man/man1/beaver.1
+share/applications/beaver.desktop
 share/beaver/bl/example1.bl
 share/beaver/bl/example2.bl
 share/beaver/bl/glib.bl
-share/pixmaps/beaver.png
+share/pixmaps/beaver/about.xpm
+share/pixmaps/beaver/beaver.png
+@dirrm share/pixmaps/beaver
+@comment in xdg-dirs: @dirrm share/pixmaps
 @dirrm share/beaver/bl
 @dirrm share/beaver
+@comment in xdg-dirs: @dirrm share/applications
