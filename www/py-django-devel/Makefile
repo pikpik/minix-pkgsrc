@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2008/05/20 13:46:49 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/07/23 10:20:41 joerg Exp $
 
 DISTNAME=	Django-1.0-alpha
 PKGNAME=	${PYPKGPREFIX}-django-1.0alpha
 CATEGORIES=	www python
-MASTER_SITES=	http://media.djangoproject.com/releases/1.0-alpha/
+MASTER_SITES=	http://media.djangoproject.com/releases/1.0/
 
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.djangoproject.com/
