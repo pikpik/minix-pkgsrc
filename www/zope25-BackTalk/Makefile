@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2004/01/10 19:19:11 kristerw Exp $
+# $NetBSD: Makefile,v 1.4 2006/03/04 21:31:04 jlam Exp $
 #
 
 DISTNAME=	BackTalk-0.3
 PKGNAME=	zope25-BackTalk-0.3
 CATEGORIES=	www
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=/backtalk/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=backtalk/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://backtalk.sourceforge.net/

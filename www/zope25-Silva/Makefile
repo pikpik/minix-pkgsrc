@@ -1,14 +1,17 @@
-# $NetBSD: Makefile,v 1.12 2006/03/04 21:31:05 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2007/07/28 00:23:13 joerg Exp $
 
 DISTNAME=	Silva-0.9.2.2
 PKGNAME=	zope25-Silva-0.9.2.2
 PKGREVISION=	3
 CATEGORIES=	www
-MASTER_SITES=	http://www.zope.org/Members/infrae/Silva/
+MASTER_SITES=	http://www.zope.org/Members/infrae/
 EXTRACT_SUFX=	.tgz
 SIVLAFILES=	Silva-0.9.2.2 SilvaMetadata-0.7 ProxyIndex-1.1 \
 		Annotations-0.4.1
-DISTFILES=	${SIVLAFILES:S/$/.tgz/g}
+DISTFILES=	${SIVLAFILES:=.tgz}
+.for d in ${DISTFILES}
+SITES.${d:T:S/=/--/}?= ${MASTER_SITES:=${d:S/-/\//:S/${EXTRACT_SUFX}//}/}
+.endfor
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.infrae.com/products/silva

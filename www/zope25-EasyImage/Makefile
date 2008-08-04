@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2006/04/06 06:22:56 reed Exp $
+# $NetBSD: Makefile,v 1.14 2007/07/28 00:31:14 joerg Exp $
 
 DISTNAME=	EasyImage15
 PKGREVISION=	4
 PKGNAME=	zope25-EasyImage-1.5
 CATEGORIES=	www
-MASTER_SITES=	http://www.zope.org/Members/regebro/easyimage/
+MASTER_SITES=	http://www.zope.org/Members/regebro/easyimage/${PKGVERSION_NOREV}/
 EXTRACT_SUFX=	.zip
 
 BUILDLINK_API_DEPENDS.pyimaging+=	${PYPKGPREFIX}-imaging>=1.1.3

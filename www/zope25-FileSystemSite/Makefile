@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2003/07/26 15:31:17 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2006/03/04 21:31:05 jlam Exp $
 
 DISTNAME=	FileSystemSite-1.2
 PKGNAME=	zope25-FileSystemSite-1.2
 CATEGORIES=	www
-MASTER_SITES=	http://www.zope.org/Members/k_vertigo/Products/FileSystemSite/
+MASTER_SITES=	http://www.zope.org/Members/k_vertigo/Products/FileSystemSite/default/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
