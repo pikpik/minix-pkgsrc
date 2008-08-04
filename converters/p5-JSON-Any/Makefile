@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2008/02/28 09:15:12 abs Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/04 14:14:03 obache Exp $
 
-DISTNAME=		JSON-Any-1.16
+DISTNAME=		JSON-Any-1.17
 PKGNAME=		p5-${DISTNAME}
 CATEGORIES=		www perl5 converters
-MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=../../authors/id/P/PE/PERIGRIN/}
+MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=JSON/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/JSON-Any/
