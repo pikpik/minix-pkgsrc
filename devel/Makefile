@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.961 2008/08/01 12:08:35 seb Exp $
+# $NetBSD: Makefile,v 1.962 2008/08/02 08:01:17 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -670,6 +670,7 @@ SUBDIR+=	p5-Test-Memory-Cycle
 SUBDIR+=	p5-Test-MockObject
 SUBDIR+=	p5-Test-NoWarnings
 SUBDIR+=	p5-Test-Object
+SUBDIR+=	p5-Test-Output
 SUBDIR+=	p5-Test-Perl-Critic
 SUBDIR+=	p5-Test-Pod
 SUBDIR+=	p5-Test-Pod-Coverage
