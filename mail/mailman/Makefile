@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.51 2008/05/29 19:17:34 joerg Exp $
+# $NetBSD: Makefile,v 1.52 2008/06/29 07:47:03 kim Exp $
 
 DISTNAME=	mailman-2.1.10
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mailman/}
 EXTRACT_SUFX=	.tgz
@@ -96,6 +97,8 @@ PYCOMPILEALL=	${BUILDLINK_PREFIX.${PYPACKAGE}}/${PYLIB}/compileall.py
 
 # mailman depends a lot on it and will bitch if changed.
 CHECK_PERMS=	no
+
+REPLACE_PYTHON+=	cron/senddigests
 
 post-extract:
 	${CP} ${FILESDIR}/mailman.conf.dist ${WRKDIR}/mailman.conf.dist
