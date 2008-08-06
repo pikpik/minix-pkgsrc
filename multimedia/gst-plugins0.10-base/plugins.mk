@@ -1,4 +1,4 @@
-# $NetBSD: plugins.mk,v 1.5 2006/04/03 15:54:14 jmmv Exp $
+# $NetBSD: plugins.mk,v 1.6 2006/04/22 09:22:11 rillig Exp $
 #
 # This file is shared across the gst-plugins-{base,good} packages to
 # simplify their code.  It provides a framework to write simple packages
@@ -26,6 +26,7 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_ARGS+=	--disable-examples
+CONFIGURE_ARGS+=	--disable-experimental
 CONFIGURE_ARGS+=	--disable-debug
 CONFIGURE_ARGS+=	--disable-valgrind
 CONFIGURE_ARGS+=	--enable-external
