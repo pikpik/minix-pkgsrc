@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2008/07/28 02:12:57 bjs Exp $
+# $NetBSD: Makefile,v 1.67 2008/07/30 00:27:55 dsainty Exp $
 
 PKGNAME=	MesaLib-${MESA_PKGVERSION}
 COMMENT=	Graphics library similar to SGI's OpenGL
@@ -58,7 +58,6 @@ PLIST_VARS=		dri nodri
 
 .include "../../graphics/Mesa/Makefile.lib"
 .include "options.mk"
-.include "../../mk/pthread.buildlink3.mk"
 
 .if !empty(MACHINE_PLATFORM:MNetBSD-[12].*)
 ##
@@ -79,6 +78,7 @@ PTHREAD_STUBLIB=
 ## most platforms as they appear in "${WRKSRC}/configs", and is necessary
 ## for successful linking with libGL under many platforms.
 ##
+.include "../../mk/pthread.buildlink3.mk"
 PTHREAD_STUBLIB= ${PTHREAD_LDFLAGS} ${PTHREAD_LIBS}
 .endif
 PKGSRC_MAKE_ENV+=	PTHREAD_STUBLIB=${PTHREAD_STUBLIB:Q}
