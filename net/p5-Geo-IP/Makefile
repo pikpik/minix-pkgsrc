@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.13 2008/02/07 19:41:40 heinz Exp $
+# $NetBSD: Makefile,v 1.14 2008/07/17 15:17:19 heinz Exp $
 #
 
-DISTNAME=	Geo-IP-1.33
+DISTNAME=	Geo-IP-1.34
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Geo/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.maxmind.com/geoip/api/perl.shtml
+#HOMEPAGE=	http://search.cpan.org/dist/Geo-IP/
 COMMENT=	Gets country name by IP or hostname
 
 PKG_DESTDIR_SUPPORT=	user-destdir
