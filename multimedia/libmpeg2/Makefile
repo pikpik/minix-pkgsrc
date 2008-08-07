@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2007/02/22 17:43:51 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2007/07/01 16:03:02 heinz Exp $
 
-DISTNAME=	mpeg2dec-0.4.1
-PKGNAME=	libmpeg2-0.4.1
-PKGREVISION=	1
+DISTNAME=	libmpeg2-0.5.1
+PKGNAME=	libmpeg2-0.5.1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://libmpeg2.sourceforge.net/files/
 
