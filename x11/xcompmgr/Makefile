@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2008/04/22 19:40:28 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2008/05/24 21:45:16 tnn Exp $
 #
 
 DISTNAME=	xcompmgr-1.1.4
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES =	${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=	.tar.bz2
@@ -19,7 +20,7 @@ USE_FEATURES=	getopt_long
 ### XXX You may play around with these if you like; they're simply
 ###	the #defines from xcompmgr.c placed here for your convenience.
 #
-#XCOMPMGR_DEFS+=	-DCAN_DO_USABLE=0	# default: 0 (damage notification)
+XCOMPMGR_DEFS+=		-DCAN_DO_USABLE=1	# default: 0 (damage notification)
 #XCOMPMGR_DEFS+=	-DMONITOR_REPAINT=0	# default: 0 (?)
 #XCOMPMGR_DEFS+=	-DDEBUG_REPAINT=0	# default: 0 (debugging)
 #XCOMPMGR_DEFS+=	-DDEBUG_EVENTS=0	# default: 0 (debugging)
