@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2007/12/21 22:54:57 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/04 17:57:18 jlam Exp $
 
-DISTNAME=	milter-regex-1.6
-PKGREVISION=	1
+DISTNAME=	milter-regex-1.7
 CATEGORIES=	mail
 MASTER_SITES=	http://www.benzedrine.cx/
 
@@ -29,11 +28,6 @@ SUBST_CLASSES+=		var
 SUBST_STAGE.var=	do-configure
 SUBST_FILES.var=	milter-regex.8 milter-regex.c
 SUBST_SED.var=		-e 's|/var/spool|${VARBASE}|g'
-
-# Work arround to avoid naming clash between the source directory
-# and our "rc.d" script.
-post-extract:
-	${MV} ${WRKDIR}/${PKGBASE} ${WRKSRC}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/milter-regex ${DESTDIR}${PREFIX}/sbin
