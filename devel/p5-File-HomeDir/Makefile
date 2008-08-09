@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/05/28 21:54:19 abs Exp $
+# $NetBSD: Makefile,v 1.5 2008/08/09 01:40:42 obache Exp $
 #
 
 DISTNAME=		File-HomeDir-0.80
@@ -15,6 +15,12 @@ USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/File/HomeDir/.packlist
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+DEPENDS+=		p5-Mac-Carbon>=0.77:../../devel/p5-Mac-Carbon
+.endif
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
