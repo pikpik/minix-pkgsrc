@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.21 2006/12/17 17:17:19 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2007/02/10 04:53:08 obache Exp $
 
-DISTNAME=	most-4.9.0
-PKGREVISION=	1
+DISTNAME=	most-5.0.0a
 CATEGORIES=	misc
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/most/
 
@@ -9,8 +8,14 @@ MAINTAINER=	rhwang@bigpanda.com
 HOMEPAGE=	http://www.jedsoft.org/most/
 COMMENT=	Pager (like less) which has support for windows and binary files
 
-GNU_CONFIGURE=	yes
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
+
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-x
+
+CONFIGURE_ARGS+=	--with-slang=${BUILDLINK_PREFIX.libslang2}
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -19,5 +24,5 @@ CONFIGURE_ARGS+=	--without-x
 CFLAGS+= -D_POSIX_C_SOURCE
 .endif
 
-.include "../../devel/libslang/buildlink3.mk"
+.include "../../devel/libslang2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
