@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2007/06/21 00:58:04 minskim Exp $
+# $NetBSD: Makefile,v 1.76 2007/12/02 11:45:06 wiz Exp $
 
 DISTNAME=	WindowMaker-0.92.0
 PKGNAME=	${DISTNAME:S/WindowMaker/windowmaker/}
@@ -25,7 +25,6 @@ CONFIGURE_ARGS+=	--with-nlsdir=${PREFIX:Q}/${PKGLOCALEDIR:Q}/locale
 CONFIGURE_ENV+=		LINGUAS=yes
 CONFIGURE_ENV+=		CPP_PATH=${CPP:Q}
 REPLACE_PERL+=		util/wkdemenu.pl
-INSTALL_TARGET=		install-strip
 
 .include "../../mk/compiler.mk"
 
