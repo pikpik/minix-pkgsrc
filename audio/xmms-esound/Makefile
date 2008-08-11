@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/11/29 18:36:41 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/07/14 12:55:58 joerg Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -16,6 +16,8 @@ BUILDLINK_API_DEPENDS.xmms+=	xmms>=1.2.7nb9
 
 BUILD_DIRS=	${WRKSRC}/Output/esd
 INSTALL_DIRS=	${WRKSRC}/Output/esd
+
+USE_TOOLS+=	pkg-config
 
 .include "../../audio/esound/buildlink3.mk"
 .include "../../audio/xmms/buildlink3.mk"
