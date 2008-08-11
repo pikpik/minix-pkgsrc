@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.13 2008/01/03 23:39:25 grant Exp $
+# $NetBSD: Makefile,v 1.14 2008/06/20 01:09:09 joerg Exp $
 #
 
-DISTNAME=	Device-Gsm-1.48
+DISTNAME=	Device-Gsm-1.49
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5dgs
 CATEGORIES=	comms perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Device/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://search.cpan.org/dist/Device-Gsm/
 COMMENT=	Perl module to interface GSM cellular / modems
 
 PKG_DESTDIR_SUPPORT=	user-destdir
