@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.54 2007/02/22 19:27:07 wiz Exp $
-
-.include "Makefile.common"
+# $NetBSD: Makefile,v 1.55 2007/07/04 20:54:57 jlam Exp $
 
 SVR4_PKGNAME=	csasl
 COMMENT=	Simple Authentication and Security Layer
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "Makefile.common"
 
 .if exists(/usr/include/ndbm.h)
 SASL_DBTYPE?=		ndbm
@@ -65,9 +67,9 @@ PKG_SHELL.${CYRUS_USER}=${SH}
 MESSAGE_SUBST+=		PLUGINDIR=${PLUGINDIR:Q}
 
 post-install:
-	${INSTALL_DATA_DIR} ${DOCDIR}
+	${INSTALL_DATA_DIR} ${DESTDIR}${DOCDIR}
 	cd ${WRKSRC}/doc; for file in *.fig *.html *.txt; do		\
-		${INSTALL_DATA} $$file ${DOCDIR};			\
+		${INSTALL_DATA} $$file ${DESTDIR}${DOCDIR};		\
 	done
 
 .include "../../mk/bsd.pkg.mk"

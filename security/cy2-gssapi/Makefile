@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2006/04/18 17:42:12 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2008/01/18 05:09:36 tnn Exp $
 
 PKGNAME=	${DISTNAME:S/cyrus-sasl/cy2-gssapi/}
 PKGREVISION=	1
 COMMENT=	Cyrus SASL GSSAPI authentication plugin
 SASL_PLUGIN=	yes
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	cyrus-sasl<=2.1.19nb1
 
@@ -22,9 +24,9 @@ BUILD_TARGET=	libgssapiv2.la
 .include "../../mk/krb5.buildlink3.mk"
 
 do-install:
-	${INSTALL_DATA_DIR} ${PLUGINDIR}
+	${INSTALL_DATA_DIR} ${DESTDIR}${PLUGINDIR}
 	cd ${WRKSRC}/plugins && \
 	${SHLIBTOOL} --mode=install \
-		${INSTALL_PROGRAM} libgssapiv2.la ${PLUGINDIR}
+		${INSTALL_PROGRAM} libgssapiv2.la ${DESTDIR}${PLUGINDIR}
 
 .include "../../mk/bsd.pkg.mk"
