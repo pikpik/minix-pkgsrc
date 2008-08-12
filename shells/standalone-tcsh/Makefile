@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2005/12/19 14:12:31 abs Exp $
+# $NetBSD: Makefile,v 1.20 2006/10/05 01:11:41 rillig Exp $
 #
 
 # FIXME: This is because of PREFIX=/ below.
@@ -12,6 +12,8 @@ WRKSRC=			${WRKDIR}/${DISTNAME}
 PATCHDIR=		${.CURDIR}/../../shells/tcsh/patches
 
 .include "../../shells/tcsh/Makefile"
+
+INSTALLATION_DIRS+=	usr/share/man/man1
 
 COMMENT:=		Standalone version of the Extended C-shell
 MAINTAINER=		agc@NetBSD.org
