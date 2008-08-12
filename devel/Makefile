@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.971 2008/08/11 13:07:43 he Exp $
+# $NetBSD: Makefile,v 1.972 2008/08/11 14:19:40 he Exp $
 #
 
 COMMENT=	Development utilities
@@ -730,6 +730,7 @@ SUBDIR+=	pedisassem
 SUBDIR+=	php-gettext
 SUBDIR+=	php-gmp
 SUBDIR+=	php-memcache
+SUBDIR+=	php-mode
 SUBDIR+=	php-pcntl
 SUBDIR+=	php-posix
 SUBDIR+=	php-shmop
