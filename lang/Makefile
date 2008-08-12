@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.257 2008/06/03 19:37:35 wiz Exp $
+# $NetBSD: Makefile,v 1.258 2008/07/25 11:34:16 joerg Exp $
 #
 
 COMMENT=	Programming languages
@@ -25,6 +25,7 @@ SUBDIR+=	coq
 SUBDIR+=	cu-prolog
 SUBDIR+=	drscheme
 SUBDIR+=	eag
+SUBDIR+=	ecl
 SUBDIR+=	eieio
 SUBDIR+=	elisp-manual
 SUBDIR+=	elk
