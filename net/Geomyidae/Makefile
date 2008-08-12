@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	Geomyidae-0.11
+DISTNAME=	Geomyidae-0.12
 CATEGORIES=	net
 MASTER_SITES=	http://www.r-36.net/
 EXTRACT_SUFX=	.tgz

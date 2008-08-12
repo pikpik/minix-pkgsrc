@@ -20,7 +20,7 @@ command="@PREFIX@/sbin/$name"
 #####################################################
 #
 #LOGFILE="-l /var/log/gopherd.log"
-#LOGLEVEL="-v 7"
+#LOGLEVEL="-v 15"
 #HTDOCS="-b /var/gopher"
 #PORT="-p 70"
 #SPORT="-o 70"
