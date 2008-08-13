@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- history.h.orig	2003-07-31 14:38:44.000000000 +0200
++++ history.h
+@@ -32,6 +32,7 @@ extern "C" {
+ #  include "rlstdc.h"
+ #  include "rltypedefs.h"
+ #else
++#  include <stdio.h>
+ #  include <readline/rlstdc.h>
+ #  include <readline/rltypedefs.h>
+ #endif
