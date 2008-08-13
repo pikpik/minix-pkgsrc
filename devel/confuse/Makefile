@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2007/12/21 20:32:45 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/04/23 21:57:05 wiz Exp $
 #
 
 DISTNAME=	confuse-2.6
 CATEGORIES=	devel
 MASTER_SITES=	http://bzero.se/confuse/
 
-MAINTAINER=	adam.hoka@gmail.com
+MAINTAINER=	ahoka@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/confuse/
 COMMENT=	Configuration file parser library
 
