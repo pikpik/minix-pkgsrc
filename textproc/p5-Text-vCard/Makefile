@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/03/11 16:19:06 kleink Exp $
+# $NetBSD: Makefile,v 1.4 2008/06/12 02:14:50 joerg Exp $
 
-DISTNAME=	Text-vCard-2.01
+DISTNAME=	Text-vCard-2.03
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tva
 CATEGORIES=	textproc perl5
