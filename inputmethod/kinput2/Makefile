@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2006/12/27 13:37:38 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2008/07/14 12:56:07 joerg Exp $
 
 DISTNAME=	kinput2-v3
 PKGNAME=	kinput2-3.0
 PKGREVISION=	2
 CATEGORIES=	japanese inputmethod
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/x11/kinput2/
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/x11/kinput2/version-3/
 
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	Input server of Japanese text
