@@ -1,13 +1,13 @@
 $NetBSD$
 
---- ioemu/vl.c.orig	2008-08-01 14:38:07.000000000 +0000
+--- ioemu/vl.c.orig	2008-08-14 15:26:06.000000000 +0000
 +++ ioemu/vl.c
 @@ -108,7 +108,7 @@
  
  #include "exec-all.h"
  
 -#define DEFAULT_NETWORK_SCRIPT "/etc/xen/qemu-ifup"
-+#define DEFAULT_NETWORK_SCRIPT "@XENDCONFDIR@/qemu-ifup"
++#define DEFAULT_NETWORK_SCRIPT "@XENDCONFDIR@/scripts/qemu-ifup"
  #ifdef _BSD
  #define DEFAULT_BRIDGE "bridge0"
  #else 
