@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2008/06/13 11:28:35 drochner Exp $
+# $NetBSD: Makefile,v 1.30 2008/06/19 01:56:44 bjs Exp $
 #
 
-DISTNAME=	dbus-1.2.1
-PKGREVISION=	1
+DISTNAME=	dbus-1.2.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus/
 
@@ -22,6 +21,8 @@ USE_LIBTOOL=		YES
 PKGCONFIG_OVERRIDE=	dbus-1.pc.in
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+BUILD_DEFS+=		VARBASE
 
 .include "../../mk/bsd.prefs.mk"
 
