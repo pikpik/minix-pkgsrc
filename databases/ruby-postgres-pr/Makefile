@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.32 2007/12/02 11:58:26 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:15:57 jlam Exp $
 
 DISTNAME=	postgres-pr-0.4.0
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://rubyforge.org/projects/ruby-dbi/
 COMMENT=	Pure Ruby extension for PostgreSQL
 
 GEM_BUILD=	gemspec
