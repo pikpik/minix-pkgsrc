@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2007/01/02 14:07:45 darcy Exp $
+@comment $NetBSD: PLIST,v 1.2 2007/01/11 11:30:00 joerg Exp $
 ${PYSITELIB}/web/__init__.py
 ${PYSITELIB}/web/__init__.pyc
 ${PYSITELIB}/web/__init__.pyo
@@ -38,4 +38,8 @@ ${PYSITELIB}/web/webapi.pyo
 ${PYSITELIB}/web/wsgi.py
 ${PYSITELIB}/web/wsgi.pyc
 ${PYSITELIB}/web/wsgi.pyo
+${PYSITELIB}/web/wsgiserver/__init__.py
+${PYSITELIB}/web/wsgiserver/__init__.pyc
+${PYSITELIB}/web/wsgiserver/__init__.pyo
+@dirrm ${PYSITELIB}/web/wsgiserver
 @dirrm ${PYSITELIB}/web
