@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2006/09/01 06:34:31 gson Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:26 joerg Exp $
 #
 
-DISTNAME=	Set-IntSpan-1.09
+DISTNAME=	Set-IntSpan-1.13
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5sis
 CATEGORIES=	perl5
