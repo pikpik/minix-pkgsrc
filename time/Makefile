@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2008/06/23 21:31:17 markd Exp $
+# $NetBSD: Makefile,v 1.72 2008/07/30 14:00:14 schmonz Exp $
 #
 
 COMMENT=	Clocks, calendars, daily planners and other time related applications
@@ -51,6 +51,7 @@ SUBDIR+=	p5-DateTime-Format-Pg
 SUBDIR+=	p5-DateTime-Format-Strptime
 SUBDIR+=	p5-DateTime-Format-W3CDTF
 SUBDIR+=	p5-DateTime-Locale
+SUBDIR+=	p5-DateTime-Precise
 SUBDIR+=	p5-DateTime-Set
 SUBDIR+=	p5-DateTime-TimeZone
 SUBDIR+=	p5-Rose-DateTime
