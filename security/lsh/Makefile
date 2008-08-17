@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2006/04/07 15:28:49 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2007/04/01 21:26:48 wiz Exp $
 #
 
 DISTNAME=		lsh-2.0.2
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.lysator.liu.se/~nisse/archive/
 
@@ -10,7 +11,8 @@ HOMEPAGE=		http://www.lysator.liu.se/~nisse/lsh/
 COMMENT=		SSH2 client/server
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake gm4
+USE_TOOLS+=		gmake gm4 bash:run
+REPLACE_BASH+=		src/lcp
 CONFIGURE_ARGS+=	--disable-openssl --disable-pam
 INFO_FILES=		yes
 
