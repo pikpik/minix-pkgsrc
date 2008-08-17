@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/23 22:01:00 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2007/02/19 18:20:48 joerg Exp $
 
 DISTNAME=	lush-1.1
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lush/}
 
@@ -16,6 +17,7 @@ CONFIGURE_ARGS+=	--without-bfd
 
 post-install:
 	${RM} ${PREFIX}/share/lush/src/*c.orig
+	${RM} ${PREFIX}/share/lush/lsh/libc/*.lsh.orig
 
 .include "../../math/gsl/buildlink3.mk"
 .include "../../math/lapack/buildlink3.mk"
