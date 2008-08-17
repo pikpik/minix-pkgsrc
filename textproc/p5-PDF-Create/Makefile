@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/06/12 02:14:48 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2008/08/11 13:28:15 he Exp $
 #
 
 DISTNAME=	PDF-Create-1.02
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/PDF/Create/.packlist
 
-REPLACE_PERL=	sample.pl
+REPLACE_PERL=	sample.pl sample-cgi.pl
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
