@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/02/05 23:08:56 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2007/10/13 21:22:48 markd Exp $
 
 DISTNAME=	gnuserv-3.12.7
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	${HOMEPAGE}/src/
 
-MAINTAINER=	epg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://meltin.net/hacks/emacs/
 COMMENT=	Improved version of emacsserver for GNU Emacs
 

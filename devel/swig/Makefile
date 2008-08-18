@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.23 2007/07/10 19:51:22 heinz Exp $
+# $NetBSD: Makefile,v 1.24 2008/05/26 02:13:18 joerg Exp $
 
 DISTNAME=	swig-1.3.31
 PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=swig/}
 
-MAINTAINER=	epg@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.swig.org/
 COMMENT=	Simplified Wrapper and Interface Generator
 
