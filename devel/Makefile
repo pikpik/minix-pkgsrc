@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.973 2008/08/12 10:14:20 dsainty Exp $
+# $NetBSD: Makefile,v 1.974 2008/08/14 12:53:42 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -510,6 +510,7 @@ SUBDIR+=	p5-File-HomeDir
 SUBDIR+=	p5-File-MimeInfo
 SUBDIR+=	p5-File-Modified
 SUBDIR+=	p5-File-NFSLock
+SUBDIR+=	p5-File-Path-Expand
 SUBDIR+=	p5-File-PathConvert
 SUBDIR+=	p5-File-Slurp
 SUBDIR+=	p5-File-Temp
