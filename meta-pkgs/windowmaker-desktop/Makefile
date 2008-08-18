@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2007/10/25 22:00:58 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2007/12/19 12:27:30 rillig Exp $
 #
 
 DISTNAME=	windowmaker-desktop-1.2
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	meta-pkgs x11 windowmaker
 MASTER_SITES=	# empty
 
@@ -24,6 +24,7 @@ DEPENDS+=	wmnet-[0-9]*:../../net/wmnet
 DEPENDS+=	wmweather-[0-9]*:../../x11/wmweather
 DEPENDS+=	wmMoonClock-[0-9]*:../../time/wmmoonclock
 DEPENDS+=	wmmixer-[0-9]*:../../audio/wmmixer
+DEPENDS+=	docker-[0-9]*:../../x11/docker
 
 META_PACKAGE=	yes
 
