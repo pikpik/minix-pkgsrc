@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.974 2008/08/14 12:53:42 obache Exp $
+# $NetBSD: Makefile,v 1.975 2008/08/18 22:16:11 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -655,6 +655,7 @@ SUBDIR+=	p5-Sub-Identify
 SUBDIR+=	p5-Sub-Install
 SUBDIR+=	p5-Sub-Installer
 SUBDIR+=	p5-Sub-Name
+SUBDIR+=	p5-Sub-Override
 SUBDIR+=	p5-Sub-Uplevel
 SUBDIR+=	p5-Task-Weaken
 SUBDIR+=	p5-Term-ProgressBar
