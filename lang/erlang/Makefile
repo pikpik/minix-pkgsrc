@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2008/04/08 13:16:22 martti Exp $
+# $NetBSD: Makefile,v 1.38 2008/06/21 22:13:09 joerg Exp $
 
 DISTNAME=		otp_src_${DIST_VERSION_MAJOR}-${DIST_VERSION_MINOR}
 PKGNAME=		erlang-${ERLANG_VERSION}
@@ -13,6 +13,7 @@ COMMENT=		Concurrent functional programming language
 DIST_SUBDIR=		erlang
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=		yes
 OVERRIDE_DIRDEPTH=	4
