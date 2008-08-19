@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/07/22 08:29:06 he Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/22 08:40:24 he Exp $
 
 DISTNAME=	ldns-1.3.0
 CATEGORIES=	net
@@ -9,8 +9,12 @@ MAINTAINER=	he@NetBSD.org
 HOMEPAGE=	http://www.nlnetlabs.nl/projects/ldns/
 COMMENT=	Library for simplified DNS programming
 
-USE_TOOLS+=		gmake
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_TOOLS+=		gmake perl
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+
+REPLACE_PERL=	doc/doxyparse.pl
 
 .include "../../mk/bsd.pkg.mk"
