@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/dnssecmaint-config
+bin/dnssecmaint-copyprivate
+bin/maintkeydb
