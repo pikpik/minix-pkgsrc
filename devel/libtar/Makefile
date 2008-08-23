@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2007/11/13 23:15:39 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2008/07/14 12:56:02 joerg Exp $
 #
 
 DISTNAME=	libtar-1.2.11
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel archivers
 MASTER_SITES=	ftp://ftp.feep.net/pub/software/libtar/
 
@@ -13,6 +13,7 @@ COMMENT=	Library for manipulating POSIX tar files
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
+USE_LIBTOOL=		yes
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

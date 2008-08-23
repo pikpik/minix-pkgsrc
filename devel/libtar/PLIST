@@ -2,7 +2,7 @@
 bin/libtar
 include/libtar.h
 include/libtar_listhash.h
-lib/libtar.a
+lib/libtar.la
 man/man3/TH_ISBLK.3
 man/man3/TH_ISCHR.3
 man/man3/TH_ISDIR.3
