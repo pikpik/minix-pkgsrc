@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/06/09 09:07:38 ghen Exp $
+# $NetBSD: Makefile,v 1.13 2008/07/19 21:08:42 ghen Exp $
 
 DISTNAME=		openldap-2.4.11
 PKGNAME=		${DISTNAME:S/-/-doc-/}
@@ -7,7 +7,6 @@ MASTER_SITES=		ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/
 MASTER_SITES+=		http://ftp.openldap.org/pub/OpenLDAP/openldap-release/
 MASTER_SITES+=		http://www.PlanetMirror.com/pub/openldap/openldap-release/
 MASTER_SITES+=		ftp://gd.tuwien.ac.at/infosys/network/OpenLDAP/openldap-release/
-MASTER_SITES+=		ftp://ftp.matrix.com.br/pub/openldap/openldap-release/
 MASTER_SITES+=		ftp://ftp.ucr.ac.cr/pub/Unix/openldap/openldap-release/
 MASTER_SITES+=		ftp://ftp.ntua.gr/mirror/OpenLDAP/openldap-release/
 MASTER_SITES+=		ftp://it.openldap.org/pub/OpenLDAP/openldap-release/
