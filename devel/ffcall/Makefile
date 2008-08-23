@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2008/03/03 21:41:30 tnn Exp $
+# $NetBSD: Makefile,v 1.24 2008/06/12 02:14:22 joerg Exp $
 
 DISTNAME=	ffcall-1.10
 PKGREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.santafe.edu/pub/gnu/ \
-		http://www.haible.de/bruno/gnu/ \
+MASTER_SITES=	http://www.haible.de/bruno/gnu/ \
 		${MASTER_SITE_GNUSTEP:=libs/}
 
 MAINTAINER=	adam@NetBSD.org

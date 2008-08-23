@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2008/06/16 12:52:01 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/07/10 12:12:41 joerg Exp $
 #
 
 DISTNAME=	xjdic24
 PKGNAME=	xjdic-2.4
 CATEGORIES=	japanese misc
-MASTER_SITES=	ftp://ftp.cc.monash.edu.au/pub/nihongo/ \
-		http://japanology.arts.kuleuven.ac.be/mirrors/monash/ \
+MASTER_SITES=	http://japanology.arts.kuleuven.ac.be/mirrors/monash/ \
 		ftp://ftp.nrc.ca/pub/packages/nihongo/ \
 		http://www.bcit-broadcast.com/monash/ \
 		ftp://ftp.u-aizu.ac.jp/pub/SciEng/nihongo/ftp.cc.monash.edu.au/ \
