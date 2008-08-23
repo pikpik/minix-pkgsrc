@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.990 2008/08/23 20:41:15 seb Exp $
+# $NetBSD: Makefile,v 1.991 2008/08/23 21:24:38 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -433,6 +433,7 @@ SUBDIR+=	p5-Class-Fields
 SUBDIR+=	p5-Class-Gomor
 SUBDIR+=	p5-Class-ISA
 SUBDIR+=	p5-Class-Inner
+SUBDIR+=	p5-Class-InsideOut
 SUBDIR+=	p5-Class-Inspector
 SUBDIR+=	p5-Class-Loader
 SUBDIR+=	p5-Class-MOP
