@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.992 2008/08/23 21:42:28 seb Exp $
+# $NetBSD: Makefile,v 1.993 2008/08/23 21:58:09 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -673,6 +673,7 @@ SUBDIR+=	p5-Sub-Name
 SUBDIR+=	p5-Sub-Override
 SUBDIR+=	p5-Sub-Uplevel
 SUBDIR+=	p5-Task-Weaken
+SUBDIR+=	p5-Term-Cap
 SUBDIR+=	p5-Term-ProgressBar
 SUBDIR+=	p5-Term-Prompt
 SUBDIR+=	p5-Term-ReadKey
