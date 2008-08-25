@@ -1,4 +1,4 @@
-$NetBSD: patch-ab,v 1.1.1.1 2006/06/11 14:03:58 markd Exp $
+$NetBSD: patch-ab,v 1.2 2006/11/13 04:15:02 obache Exp $
 
 --- Makefile.orig	2006-02-02 23:01:38.000000000 +0900
 +++ Makefile
@@ -19,5 +19,5 @@ $NetBSD: patch-ab,v 1.1.1.1 2006/06/11 14:03:58 markd Exp $
  
  install: ${PRG}
 -	cp ${PRG} /usr/sbin
-+	${BSD_INSTALL_PROGRAM} ${PRG} ${PREFIX}/sbin
++	${BSD_INSTALL_PROGRAM} ${PRG} ${DESTDIR}${PREFIX}/sbin
  
