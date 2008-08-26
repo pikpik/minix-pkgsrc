@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.31 2008/06/10 13:57:10 shannonjr Exp $
+# $NetBSD: Makefile,v 1.32 2008/07/21 12:10:48 shannonjr Exp $
 #
-DISTNAME=		libprelude-0.9.18
+DISTNAME=		libprelude-0.9.19
 CATEGORIES=		security
 MASTER_SITES=		http://www.prelude-ids.com/download/releases/libprelude/
 
