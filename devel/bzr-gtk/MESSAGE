@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+bzr-gtk requires x11/py-gnome2-desktop to show syntax highlighted diffs.
+Nautilus integration is not yet supported.
+
+===========================================================================
