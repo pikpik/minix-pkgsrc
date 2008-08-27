@@ -1,7 +1,6 @@
 # $NetBSD: Makefile,v 1.67 2008/02/20 09:44:12 markd Exp $
 
-DISTNAME=	arts-1.5.9
-PKGREVISION=	1
+DISTNAME=	arts-1.5.10
 CATEGORIES=	audio
 HOMEPAGE=	http://multimedia.kde.org/
 COMMENT=	Analog Real-Time Synthesizer
