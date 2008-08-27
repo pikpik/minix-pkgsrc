@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${PYSITELIB}/_sqlite3.so
