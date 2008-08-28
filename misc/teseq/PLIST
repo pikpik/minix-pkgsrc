@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/reseq
+bin/teseq
+info/teseq.info
+libexec/teseq-post.sed
+man/man1/reseq.1
+man/man1/teseq.1
