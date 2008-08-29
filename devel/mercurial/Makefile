@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2008/05/30 13:14:18 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2008/07/19 13:36:51 drochner Exp $
 #
 
-DISTNAME=	mercurial-1.0.1
-PKGREVISION=	1
+DISTNAME=	mercurial-1.0.2
 CATEGORIES=	devel scm
 MASTER_SITES=	http://www.selenic.com/mercurial/release/
 
