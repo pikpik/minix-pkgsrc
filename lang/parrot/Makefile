@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2006/09/30 13:43:52 obache Exp $
+# $NetBSD: Makefile,v 1.13 2007/04/20 14:01:00 obache Exp $
 #
 
 DISTNAME=		parrot-0.4.11
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=../by-authors/id/M/MD/MDIEP/}
 
