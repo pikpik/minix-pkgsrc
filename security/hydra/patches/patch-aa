@@ -2,7 +2,7 @@ $NetBSD$
 
 --- Makefile.am.orig	2006-05-05 15:10:44.000000000 +0100
 +++ Makefile.am
-@@ -33,14 +33,9 @@ EXTRA_DIST = README README.arm README.pa
+@@ -33,17 +33,12 @@ EXTRA_DIST = README README.arm README.pa
               hydra-mod.h hydra.h crc32.h d3des.h md4.h
  
  all:	pw-inspector hydra $(XHYDRA_SUPPORT) 
@@ -16,4 +16,8 @@ $NetBSD$
 -	@echo
  
  xhydra:	
- 	-cd hydra-gtk && ./make_xhydra.sh
+-	-cd hydra-gtk && ./make_xhydra.sh
++	# -cd hydra-gtk && ./make_xhydra.sh
+ 
+ pw-inspector: pw-inspector.c
+ 	-$(CC) $(OPTS) -o pw-inspector pw-inspector.c
