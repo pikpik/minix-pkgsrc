@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/vmware-toolbox
+bin/vmware-user
+bin/vmware-user-suid-wrapper
+share/applications/vmware-user.desktop
