@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2007/06/09 06:59:03 obache Exp $
+# $NetBSD: Makefile,v 1.31 2008/05/02 09:22:21 degroote Exp $
 
 DISTNAME=		scheme48-1.8
 CATEGORIES=		lang
@@ -13,6 +13,9 @@ NOT_FOR_PLATFORM=	*-*-alpha	# *severe* problems.  Bus error, alignment
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
+
+# bin/scheme-r5rs
+CONFLICTS+=		gambc-[0-9]*
 
 GNU_CONFIGURE=		yes
 USE_TOOLS=		gmake
