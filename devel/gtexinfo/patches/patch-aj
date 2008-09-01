@@ -1,8 +1,8 @@
-$NetBSD: patch-aj,v 1.5 2005/02/28 13:06:46 wiz Exp $
+$NetBSD: patch-aj,v 1.6 2008/01/30 08:19:25 obache Exp $
 
---- configure.ac.orig	2007-09-10 02:36:29.000000000 +0200
-+++ configure.ac
-@@ -130,7 +130,7 @@ AM_CONDITIONAL(TOOLS_ONLY, [[test "x$too
+--- configure.ac.orig	2008-04-17 20:54:16.000000000 +0300
++++ configure.ac	2008-09-01 19:43:58.000000000 +0300
+@@ -130,7 +130,7 @@
  # rather ncurses.  So we check for it.
  TERMLIBS=
  # Check for termlib before termcap because Solaris termcap needs libucb.
