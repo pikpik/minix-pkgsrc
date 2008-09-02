@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.30 2007/01/07 09:14:00 rillig Exp $
+# $NetBSD: Makefile,v 1.31 2008/03/04 18:12:59 jlam Exp $
 
 DISTNAME=		xldlas-0.85
 PKGREVISION=		5
 CATEGORIES=		math
-MASTER_SITES=		http://sunsite.math.klte.hu/mirrors/xldlas/	\
-			${MASTER_SITE_SUNSITE:=X11/xapps/math/}
+MASTER_SITES=		${MASTER_SITE_SUNSITE:=science/visualization/}
 EXTRACT_SUFX=		-source.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://sunsite.math.klte.hu/mirrors/xldlas/
+HOMEPAGE=		# http://sunsite.math.klte.hu/mirrors/xldlas/
 COMMENT=		XForms-based statistics package
 
 PKG_DESTDIR_SUPPORT=	user-destdir
