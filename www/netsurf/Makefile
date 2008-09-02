@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/06/23 15:05:09 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2008/08/13 13:20:14 ahoka Exp $
 #
 
 DISTNAME=	netsurf-1.2-src
@@ -11,6 +11,9 @@ HOMEPAGE=	http://www.netsurf-browser.org/
 COMMENT=	Web browser for RISC OS and UNIX-like platforms
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+# current codebase needs strndup
+NOT_FOR_PLATFORM=	NetBSD-[0-3]*-*
 
 WRKSRC=		${WRKDIR}/netsurf
 
