@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/ocaml/site-lib/zip/gzip.cmx
+lib/ocaml/site-lib/zip/zip.a
+lib/ocaml/site-lib/zip/zip.cmx
+lib/ocaml/site-lib/zip/zip.cmxa
+lib/ocaml/site-lib/zip/zlib.cmx
