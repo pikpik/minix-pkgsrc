@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.22 2007/02/22 19:26:48 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/03/24 19:21:28 joerg Exp $
 
 DISTNAME=	yorick-1.6.02
 PKGREVISION=	2
 CATEGORIES=	math
-MASTER_SITES=	ftp://ftp-icf.llnl.gov/pub/Yorick/
+MASTER_SITES=	ftp://ftp.stack.nl/pub/users/johans/yorick/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	ftp://ftp-icf.llnl.gov/pub/Yorick/doc/index.html
+HOMEPAGE=	http://yorick.sourceforge.net/
 COMMENT=	Numerical algebra system (similar to Matlab)
 
 WRKSRC=		${WRKDIR}/yorick-1.6
