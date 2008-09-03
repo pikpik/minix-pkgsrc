@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: innd.sh,v 1.13 2002/09/29 10:39:36 jlam Exp $
+# $NetBSD: innd.sh,v 1.14 2008/06/23 09:10:53 spz Exp $
 #
 # PROVIDE: inn
 # REQUIRE: DAEMON
@@ -25,18 +25,18 @@ then
 	if [ $# -eq 0 ]
 	then
 		echo -n ' innd'
-		su news -c "@INN_PATHBIN@/rc.news start" >/dev/null
+		su -m news -c "@INN_PATHBIN@/rc.news start" >/dev/null
 		exit 0
 	fi
 
 	case "$1" in
 	start )
 		echo "Starting INN."
-		su news -c "@INN_PATHBIN@/rc.news $1" >/dev/null
+		su -m news -c "@INN_PATHBIN@/rc.news $1" >/dev/null
 		exit 0
 		;;
 	stop )
-		su news -c "@INN_PATHBIN@/rc.news $1"
+		su -m news -c "@INN_PATHBIN@/rc.news $1"
 		exit 0
 		;;
 	restart )
