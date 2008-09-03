@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2007/04/19 15:30:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.7 2007/07/29 05:18:43 jlam Exp $
 
 DISTNAME=	suse_freetype2-${SUSE_VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	emulators
-DISTFILES=	freetype2-2.1.10-4.4.${SUSE_ARCH}.rpm
+DISTFILES=	freetype2-2.1.10-4.9.${SUSE_ARCH}.rpm
 
 MAINTAINER=	tonio@NetBSD.org
 COMMENT=	Linux compatibility package for freetype-2.x
