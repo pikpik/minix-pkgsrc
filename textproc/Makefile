@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.428 2008/09/01 22:29:58 seb Exp $
+# $NetBSD: Makefile,v 1.429 2008/09/02 22:36:38 seb Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -418,6 +418,7 @@ SUBDIR+=	tex-xmltex
 SUBDIR+=	tex2page
 SUBDIR+=	texi2html
 SUBDIR+=	texi2roff
+SUBDIR+=	tokyodystopia
 SUBDIR+=	trang
 SUBDIR+=	troffcvt
 SUBDIR+=	unroff
