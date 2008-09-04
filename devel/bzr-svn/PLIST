@@ -86,6 +86,9 @@ ${PYSITELIB}/bzrlib/plugins/svn/revspec.pyo
 ${PYSITELIB}/bzrlib/plugins/svn/svk.py
 ${PYSITELIB}/bzrlib/plugins/svn/svk.pyc
 ${PYSITELIB}/bzrlib/plugins/svn/svk.pyo
+${PYSITELIB}/bzrlib/plugins/svn/tags.py
+${PYSITELIB}/bzrlib/plugins/svn/tags.pyc
+${PYSITELIB}/bzrlib/plugins/svn/tags.pyo
 ${PYSITELIB}/bzrlib/plugins/svn/tests/__init__.py
 ${PYSITELIB}/bzrlib/plugins/svn/tests/__init__.pyc
 ${PYSITELIB}/bzrlib/plugins/svn/tests/__init__.pyo
