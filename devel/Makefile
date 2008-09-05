@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1000 2008/09/02 23:11:32 seb Exp $
+# $NetBSD: Makefile,v 1.1001 2008/09/05 01:03:43 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -53,6 +53,7 @@ SUBDIR+=	automake
 SUBDIR+=	automake14
 SUBDIR+=	avl
 SUBDIR+=	avltree
+SUBDIR+=	bakefile
 SUBDIR+=	bcc
 SUBDIR+=	bglibs
 SUBDIR+=	bin86
