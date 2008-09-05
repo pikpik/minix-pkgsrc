@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.357 2008/08/18 21:41:38 seb Exp $
+# $NetBSD: Makefile,v 1.358 2008/08/18 22:29:04 seb Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -68,6 +68,7 @@ SUBDIR+=	dspam
 SUBDIR+=	elm
 SUBDIR+=	elm-me
 SUBDIR+=	elmo
+SUBDIR+=	enma
 SUBDIR+=	esmtp
 SUBDIR+=	etach
 SUBDIR+=	etpan
