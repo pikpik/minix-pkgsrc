@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/enma
+bin/sidfquery
+man/ja_JP.EUC/man1/enma.1
+man/man1/enma.1
+share/examples/enma/enma.conf.sample
+share/examples/rc.d/enma
