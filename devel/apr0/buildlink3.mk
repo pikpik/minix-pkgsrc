@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2008/01/12 11:36:29 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2008/03/11 18:32:28 joerg Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 APR_BUILDLINK3_MK:=	${APR_BUILDLINK3_MK}+
@@ -13,7 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}apr
 
 .if !empty(APR_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.apr+=	apr-0.9.* apr>=0.9.5.2.0.51nb1
-BUILDLINK_ABI_DEPENDS.apr+=	apr>=0.9.16.2.0.61
+BUILDLINK_ABI_DEPENDS.apr+=	apr>=0.9.17.2.0.63nb1
 BUILDLINK_PKGSRCDIR.apr?=	../../devel/apr0
 BUILDLINK_INCDIRS.apr?=		include/apr-0
 

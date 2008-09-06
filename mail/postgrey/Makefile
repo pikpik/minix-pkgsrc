@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2008/01/20 21:08:01 xtraeme Exp $
+# $NetBSD: Makefile,v 1.24 2008/03/04 17:57:19 jlam Exp $
 #
 
 DISTNAME=	postgrey-1.31
-#PKGREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://postgrey.schweikert.ch/pub/
 

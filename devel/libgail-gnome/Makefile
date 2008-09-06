@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2008/04/30 13:38:14 jmmv Exp $
+# $NetBSD: Makefile,v 1.26 2008/07/14 12:56:02 joerg Exp $
 #
 
 DISTNAME=	libgail-gnome-1.20.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgail-gnome/1.20/}
 EXTRACT_SUFX=	.tar.bz2

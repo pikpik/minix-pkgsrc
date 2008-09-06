@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/03/03 15:21:07 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2008/05/25 21:42:20 joerg Exp $
 
 DISTNAME=	cstore0.2
 PKGNAME=	cstore-0.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://db.lcs.mit.edu/projects/cstore/
 MASTER_SITES+=	http://db.csail.mit.edu/data/
