@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2007/01/23 14:44:09 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/05/24 21:45:21 tnn Exp $
 #
 
 DISTNAME=		libfontenc-1.0.4
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
