@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.32 2006/11/05 17:06:43 joerg Exp $
+# $NetBSD: Makefile,v 1.33 2008/05/30 12:28:42 wiz Exp $
 
-DISTNAME=	gtkspell-2.0.13
+DISTNAME=	gtkspell-2.0.14
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://gtkspell.sourceforge.net/download/
 
