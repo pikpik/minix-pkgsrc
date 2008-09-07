@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.485 2008/08/25 18:18:56 bjs Exp $
+# $NetBSD: Makefile,v 1.486 2008/08/31 00:10:33 gdt Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -46,6 +46,7 @@ SUBDIR+=	cambevao
 SUBDIR+=	camediaplay
 SUBDIR+=	camlimages
 SUBDIR+=	cdlabelgen
+SUBDIR+=	cheese
 SUBDIR+=	cinepaint
 SUBDIR+=	claraocr
 SUBDIR+=	cnxtview
