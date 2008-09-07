@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/10/04 21:46:13 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2007/11/05 07:14:51 rillig Exp $
 #
 
 DISTNAME=		gwydion-dylan-${DYLAN_VERSION}
@@ -24,6 +24,8 @@ CONFIGURE_ARGS+=	--enable-mindy-bootstrap
 DYLAN_VERSION=		2.4.0
 
 # other architecture changes will be gratefully received
+# (but note: don't enable platforms you haven't explicitly tested, as
+# they are liable to hang in the mindy debugger and hose bulk builds.)
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-sparc NetBSD-*-powerpc
 
 .include "../../mk/bsd.prefs.mk"
