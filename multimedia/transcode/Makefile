@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.45 2008/05/25 21:23:26 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2008/08/07 18:43:42 drochner Exp $
 #
 
 DISTNAME=	transcode-1.0.6
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://fromani.exit1.org/
 EXTRACT_SUFX=	.tar.bz2
@@ -37,7 +38,7 @@ LIBS+=			${LIBOSSAUDIO}
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../multimedia/ffmpeg-devel/buildlink3.mk"
+.include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../multimedia/libdvdread/buildlink3.mk"
 .include "../../multimedia/libmpeg2/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
