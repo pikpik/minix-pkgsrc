@@ -1,7 +1,7 @@
 $NetBSD$
 
---- src/dtsdec.c.orig	Mon Feb 23 23:30:49 2004
-+++ src/dtsdec.c	Fri Jun  8 21:09:29 2007
+--- src/dcadec.c.orig	Mon Feb 23 23:30:49 2004
++++ src/dcadec.c	Fri Jun  8 21:09:29 2007
 @@ -65,7 +65,9 @@
  {
      sigint = 1;
