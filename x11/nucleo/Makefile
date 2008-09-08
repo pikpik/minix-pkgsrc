@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2007/08/12 14:26:41 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/05/07 02:53:41 bjs Exp $
 #
 
 DISTNAME=	nucleo-0.7.1
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.lri.fr/~cardona/sources/nucleo/
 EXTRACT_SUFX=	.tar.bz2
@@ -36,7 +37,7 @@ SUBST_STAGE.mkfiles=	post-patch
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../multimedia/ffmpeg-devel/buildlink3.mk"
+.include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../net/mDNSResponder/buildlink3.mk"
 
 .include "../../x11/libICE/buildlink3.mk"
