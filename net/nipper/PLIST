@@ -1,7 +1,3 @@
 @comment $NetBSD$
 bin/nipper
-share/doc/nipper/Features.txt
-share/doc/nipper/Options.txt
-share/doc/nipper/Quickstart.txt
-share/doc/nipper/XML.txt
-@dirrm share/doc/nipper
+man/man1/nipper.1
