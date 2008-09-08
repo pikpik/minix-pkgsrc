@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1007 2008/09/08 01:49:57 seb Exp $
+# $NetBSD: Makefile,v 1.1008 2008/09/08 21:59:04 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -489,6 +489,7 @@ SUBDIR+=	p5-Date-Business
 SUBDIR+=	p5-Date-Calc
 SUBDIR+=	p5-Date-Manip
 SUBDIR+=	p5-Date-Simple
+SUBDIR+=	p5-Declare-Constraints-Simple
 SUBDIR+=	p5-Devel-Caller
 SUBDIR+=	p5-Devel-Cycle
 SUBDIR+=	p5-Devel-GlobalDestruction
