@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/libnipper/config.h
+include/libnipper/libnipper.h
+lib/libnipper.so
+share/examples/nipper.conf
+man/man5/nipper.conf.5
+@dirrm include/libnipper
