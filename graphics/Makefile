@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.486 2008/08/31 00:10:33 gdt Exp $
+# $NetBSD: Makefile,v 1.487 2008/09/07 22:46:38 jmcneill Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -198,6 +198,7 @@ SUBDIR+=	libotf
 SUBDIR+=	librsvg
 SUBDIR+=	libscigraphica
 SUBDIR+=	libungif
+SUBDIR+=	libv4l
 SUBDIR+=	libvideogfx
 SUBDIR+=	libwmf
 SUBDIR+=	ljpeg
