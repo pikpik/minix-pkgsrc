@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.305 2008/06/23 17:01:05 drochner Exp $
+# $NetBSD: Makefile,v 1.306 2008/08/17 13:09:41 gdt Exp $
 #
 
 COMMENT=	Games
@@ -234,6 +234,7 @@ SUBDIR+=	tileworld
 SUBDIR+=	tscp
 SUBDIR+=	tuxmath
 SUBDIR+=	tuxracer
+SUBDIR+=	ufoai
 SUBDIR+=	urban
 SUBDIR+=	velena
 SUBDIR+=	vms-empire
