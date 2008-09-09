@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2008/09/06 09:00:32 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2008/09/08 22:29:22 abs Exp $
 
 DISTNAME=	xterm-236
 PKGREVISION=	1
@@ -56,7 +56,7 @@ post-install:
 		${DESTDIR}${PREFIX}/share/applications && \
 	${INSTALL_DATA} ${WRKSRC}/uxterm.desktop \
 		${DESTDIR}${PREFIX}/share/applications
-	cd ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1 && tbl xterm.1
+	cd ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1 && tbl xterm.1 \
 		> xterm.1.tbl && mv xterm.1.tbl xterm.1
 
 .include "options.mk"
