@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/09/06 16:12:44 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/09/10 10:47:31 joerg Exp $
 
 DISTNAME=	pysqlite-2.5.0
 PKGNAME=	${PYPKGPREFIX}-sqlite2-2.5.0
@@ -16,7 +16,8 @@ PYDISTUTILSPKG=	yes
 
 .include "../../lang/python/extension.mk"
 
-.if ${PYPACKAGE} == "python23" || ${PYPACKAGE} == "python24"
+.if defined(PYPACKAGE) && \
+    (${PYPACKAGE} == "python23" || ${PYPACKAGE} == "python24")
 pre-configure:
 	rm ${WRKSRC}/pysqlite2/test/py25tests.py
 .else
