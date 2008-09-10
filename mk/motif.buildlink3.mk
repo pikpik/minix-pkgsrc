@@ -1,4 +1,4 @@
-# $NetBSD: motif.buildlink3.mk,v 1.11 2006/11/06 11:29:38 joerg Exp $
+# $NetBSD: motif.buildlink3.mk,v 1.12 2008/09/10 16:01:52 joerg Exp $
 #
 # Package-settable variables:
 #
@@ -21,7 +21,7 @@ MOTIF_BUILDLINK3_MK=	# defined
 
 .include "../../mk/bsd.prefs.mk"
 
-BUILD_DEFS+=			MOTIF_TYPE MOTIF_BASE
+BUILD_DEFS+=			MOTIF_TYPE MOTIFBASE
 
 #
 # If /usr/dt is a valid Motif-2.0 installation, then use it.  Otherwise,
