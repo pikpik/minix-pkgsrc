@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- image/rotate.c.orig	2003-08-23 15:22:09.000000000 +0900
++++ image/rotate.c
+@@ -40,6 +40,7 @@ int *new_pos;				/* Destination bit posi
+ Image *rotate(simage, degrees, verbose)
+ Image *simage;				/* Image to rotate             */
+ int    degrees;				/* Number of degrees to rotate */
++int    verbose;
+ { 
+   char buf[BUFSIZ];			/* New title                   */
+   Image    *image1;			/* Source image                */

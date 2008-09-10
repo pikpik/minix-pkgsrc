@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- image/faces.c.orig	2001-08-31 02:10:30.000000000 +0900
++++ image/faces.c
+@@ -86,6 +86,7 @@ static int nextInt(zf, len)
+ 
+ Image *facesLoad(fullname, name, verbose)
+      char *fullname, *name;
++     int verbose;
+ { ZFILE        *zf;
+   Image        *image;
+   char          fname[BUFSIZ];
