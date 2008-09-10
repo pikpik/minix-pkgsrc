@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/nbpatch
+man/cat1/nbpatch.0
+man/man1/nbpatch.1
