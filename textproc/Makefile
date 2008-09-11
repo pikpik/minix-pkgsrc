@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.430 2008/09/04 12:34:48 obache Exp $
+# $NetBSD: Makefile,v 1.431 2008/09/07 16:27:15 seb Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -250,8 +250,8 @@ SUBDIR+=	p5-Text-Tabs+Wrap
 SUBDIR+=	p5-Text-Template
 SUBDIR+=	p5-Text-Textile
 SUBDIR+=	p5-Text-Unaccent
-SUBDIR+=	p5-Text-WikiFormat
 SUBDIR+=	p5-Text-WikiCreole
+SUBDIR+=	p5-Text-WikiFormat
 SUBDIR+=	p5-Text-WrapI18N
 SUBDIR+=	p5-Text-Wrapper
 SUBDIR+=	p5-Text-vCard
