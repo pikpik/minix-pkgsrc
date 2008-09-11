@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.8 2008/06/22 15:20:56 wiz Exp $
+# $NetBSD: options.mk,v 1.9 2008/06/28 16:37:07 wiz Exp $
 #
 
 #
@@ -84,7 +84,7 @@ CONFIGURE_ARGS+=	--enable-renderer=${GNASH_RENDER}
 CONFIGURE_ARGS+=	--enable-media=ffmpeg
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"
-.include "../../multimedia/ffmpeg-devel/buildlink3.mk"
+.include "../../multimedia/ffmpeg/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mgstreamer)
