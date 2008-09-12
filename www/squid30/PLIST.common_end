@@ -1,0 +1,5 @@
+@comment $NetBSD$
+@dirrm share/squid/icons
+@dirrm share/squid
+@dirrm share/doc/squid
+@dirrm share/examples/squid
