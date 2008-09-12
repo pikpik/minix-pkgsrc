@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1018 2008/09/12 12:48:23 he Exp $
+# $NetBSD: Makefile,v 1.1019 2008/09/12 12:54:47 he Exp $
 #
 
 COMMENT=	Development utilities
@@ -796,6 +796,7 @@ SUBDIR+=	psvn
 SUBDIR+=	pth
 SUBDIR+=	pthread-sem
 SUBDIR+=	pthread-stublib
+SUBDIR+=	ptlib
 SUBDIR+=	pvs
 SUBDIR+=	pwlib
 SUBDIR+=	py-InlineEgg
