@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/04/25 20:39:13 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/12 02:14:55 joerg Exp $
 #
 
 DISTNAME=	mod_wsgi-${VERSION}
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 APACHE_MODULE=	yes
-VERSION=	1.3
+VERSION=	2.3
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-apxs=${APXS:Q}
