@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/05/10 15:28:04 tonnerre Exp $
+# $NetBSD: Makefile,v 1.35 2008/06/08 16:29:28 tron Exp $
 
 DISTNAME=		rdesktop-1.6.0
 CATEGORIES=		net
@@ -12,7 +12,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-x=${X11BASE:Q}
-CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 
 LDFLAGS+=		${LIBOSSAUDIO}
 
@@ -28,7 +27,6 @@ SUBST_MESSAGE.audio=	Fixing hardcoded audio device.
 CONFIGURE_ARGS+=	--with-sound=oss
 .endif
 
-.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
