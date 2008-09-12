@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/05/26 22:37:30 tnn Exp $
+# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:37 joerg Exp $
 #
 
 DISTNAME=		cdif-1.15
@@ -12,7 +12,6 @@ COMMENT=		Word context diff
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-# XXX add cdif-license
 LICENSE=		cdif-license
 RESTRICTED=		Redistribution only for "non-commercial purpose".
 NO_SRC_ON_CDROM=	${RESTRICTED}
