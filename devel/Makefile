@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1016 2008/09/11 05:06:28 bjs Exp $
+# $NetBSD: Makefile,v 1.1017 2008/09/11 21:27:08 jnemeth Exp $
 #
 
 COMMENT=	Development utilities
@@ -554,6 +554,7 @@ SUBDIR+=	p5-Hash-Case
 SUBDIR+=	p5-Hash-Merge
 SUBDIR+=	p5-Heap
 SUBDIR+=	p5-Hook-LexWrap
+SUBDIR+=	p5-IO
 SUBDIR+=	p5-IO-All
 SUBDIR+=	p5-IO-Capture
 SUBDIR+=	p5-IO-Compress-Base
