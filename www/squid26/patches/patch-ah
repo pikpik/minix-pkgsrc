@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- scripts/Makefile.in.orig	2007-08-12 21:41:06.000000000 +0900
++++ scripts/Makefile.in
+@@ -388,7 +388,7 @@ info-am:
+ 
+ install-data-am:
+ 
+-install-exec-am: install-binSCRIPTS
++install-exec-am:
+ 
+ install-info: install-info-am
+ 
