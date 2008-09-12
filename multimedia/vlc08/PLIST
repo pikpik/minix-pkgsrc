@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.15 2008/06/14 00:59:51 obache Exp $
+@comment $NetBSD: PLIST,v 1.8 2008/09/08 18:42:21 ahoka Exp $
 ${PLIST.skins}bin/svlc
 bin/vlc
 bin/vlc-config
@@ -263,6 +263,7 @@ share/locale/ru/LC_MESSAGES/vlc.mo
 share/locale/sk/LC_MESSAGES/vlc.mo
 share/locale/sl/LC_MESSAGES/vlc.mo
 share/locale/sq/LC_MESSAGES/vlc.mo
+share/locale/sr/LC_MESSAGES/vlc.mo
 share/locale/sv/LC_MESSAGES/vlc.mo
 share/locale/th/LC_MESSAGES/vlc.mo
 share/locale/tr/LC_MESSAGES/vlc.mo
