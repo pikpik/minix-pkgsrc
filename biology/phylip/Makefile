@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/04/04 23:45:57 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2008/05/18 12:28:17 obache Exp $
 
 DISTNAME=	phylip-3.61
 PKGREVISION=	2
@@ -10,7 +10,7 @@ HOMEPAGE=	http://evolution.genetics.washington.edu/phylip.html
 COMMENT=	Phylogeny Inference Package
 
 LICENSE=		phylip-license
-RESTRICTED=		No commercial distribution without a royalty agreement with the author
+RESTRICTED=		Distribution permitted only if no fee is charged.
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
