@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/04/25 02:16:11 reed Exp $
+# $NetBSD: Makefile,v 1.23 2008/06/12 02:14:53 joerg Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -14,7 +14,8 @@ COMMENT=	X window manager with Amiga look and feel
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 LICENSE=	amiwm-license
-RESTRICTED=	Restrictive copyright (non-commerical use only)
+RESTRICTED=	Distribution limited to non-commercial purposes, unmodified binaries only.
+NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
