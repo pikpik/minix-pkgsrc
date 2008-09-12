@@ -1,5 +1,8 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.1 2004/11/20 00:49:12 epg Exp $
+$NetBSD: MESSAGE,v 1.2 2005/11/03 23:04:29 epg Exp $
+
+The default database has changed from sqlite2 in 0.10.x to sqlite3
+in 0.11.x. Set PKG_OPTIONS.trac=sqlite2 for the old behaviour.
 
 You must upgrade existing Trac environments before using a new
 version:
