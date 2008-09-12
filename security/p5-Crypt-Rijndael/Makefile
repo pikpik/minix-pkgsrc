@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2008/01/25 02:26:31 heinz Exp $
+# $NetBSD: Makefile,v 1.16 2008/07/17 10:59:22 rhaen Exp $
 #
 
-DISTNAME=		Crypt-Rijndael-1.06
+DISTNAME=		Crypt-Rijndael-1.07
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5crj
 CATEGORIES=		security perl5
