@@ -1,5 +1,0 @@
-@comment $NetBSD$
-include/X11/extensions/dri2proto.h
-lib/pkgconfig/dri2proto.pc
-@comment @dirrm include/X11/extensions
-@comment @dirrm include/X11
