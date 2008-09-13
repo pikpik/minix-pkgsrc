@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/02/05 23:01:59 heinz Exp $
+# $NetBSD: Makefile,v 1.10 2008/03/16 23:33:57 tnn Exp $
 #
 
 BOOST_PACKAGE=		python
@@ -9,8 +9,10 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/boost/Makefile.common"
 
+BJAM_ARGS+=		--user-config=${WRKSRC}/user-config.jam
 BJAM_ARGS+=		--with-python
 MAKE_ENV+=		BOOST_BUILD_PATH=${WRKSRC}
+PYTHON_VERSIONS_ACCEPTED=	25
 
 .include "../../devel/boost-jam/bjam.mk"
 .include "../../lang/python/application.mk"
