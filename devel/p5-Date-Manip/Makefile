@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2008/01/19 13:06:07 obache Exp $
+# $NetBSD: Makefile,v 1.25 2008/05/30 12:32:16 wiz Exp $
 #
 
 DISTNAME=	Date-Manip-5.54
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5dma
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Date/}
