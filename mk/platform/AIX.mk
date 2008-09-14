@@ -1,4 +1,4 @@
-# $NetBSD: AIX.mk,v 1.29 2007/10/19 13:41:34 rillig Exp $
+# $NetBSD: AIX.mk,v 1.30 2008/03/04 06:45:34 jlam Exp $
 #
 # Variable definitions for the AIX operating system.
 
@@ -19,7 +19,7 @@ TYPE?=		type				# Shell builtin
 CPP_PRECOMP_FLAGS?=	# unset
 DEF_UMASK?=		0022
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
-MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
+MOTIF_TYPE_DEFAULT?=	lesstif # openmotif is not for closed platforms
 NOLOGIN?=		/sbin/nologin
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
