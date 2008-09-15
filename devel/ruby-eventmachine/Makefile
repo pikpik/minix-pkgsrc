@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:16:56 jlam Exp $
 
-DISTNAME=	eventmachine-0.10.0
+DISTNAME=	eventmachine-0.12.0
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel
 
