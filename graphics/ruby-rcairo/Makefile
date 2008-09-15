@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2008/04/14 20:09:32 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2008/04/29 17:36:32 jlam Exp $
 
-DISTNAME=		cairo-1.6.1
+DISTNAME=		cairo-1.7.0
 PKGNAME=		${RUBY_PKGPREFIX}-r${DISTNAME}
 CATEGORIES=		graphics
 
