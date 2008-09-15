@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.47 2008/09/07 23:55:36 ahoka Exp $
+# $NetBSD: Makefile,v 1.48 2008/09/11 18:21:49 ahoka Exp $
 #
 
 DISTNAME=	transcode-1.0.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://fromani.exit1.org/
 EXTRACT_SUFX=	.tar.bz2
