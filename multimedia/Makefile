@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.120 2008/09/08 19:21:17 ahoka Exp $
+# $NetBSD: Makefile,v 1.121 2008/09/14 13:15:43 drochner Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -111,6 +111,7 @@ SUBDIR+=	totem-nautilus
 SUBDIR+=	totem-pl-parser
 SUBDIR+=	totem-xine
 SUBDIR+=	transcode
+SUBDIR+=	tvtime
 SUBDIR+=	vlc
 SUBDIR+=	vlc08
 SUBDIR+=	vls
