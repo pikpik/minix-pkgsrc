@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2008/04/10 07:28:50 obache Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/22 15:52:59 taca Exp $
 
-DISTNAME=	sqlite3-ruby-1.2.2
+DISTNAME=	sqlite3-ruby-1.2.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/-ruby//}
 CATEGORIES=	databases
 
@@ -10,7 +10,10 @@ COMMENT=	Ruby interface for the SQLite database engine
 
 GEM_BUILD=	gemspec
 
-.include "../../misc/rubygems/rubygem.mk"
+pre-configure:
+	${FIND} ${WRKSRC} -perm -022 -exec ${CHMOD} 0644 {} \;
+	${CHMOD} 0444 ${WRKSRC}/ext/sqlite3_api/win32/build.bat
 
+.include "../../misc/rubygems/rubygem.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
