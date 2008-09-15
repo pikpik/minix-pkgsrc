@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.8 2005/11/23 22:14:10 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:49 joerg Exp $
 #
 
-DISTNAME=		Regexp-Common-2.120
+DISTNAME=		Regexp-Common-2.122
 PKGNAME=		p5-${DISTNAME}
 CATEGORIES=		textproc perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Regexp/}
 
-MAINTAINER=		dieter.NetBSD@pandora.be
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Regexp-Common/
 COMMENT=		Provide commonly requested regular expressions
 
