@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2007/06/15 01:10:21 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/04 15:22:09 jlam Exp $
 
-DISTNAME=	maruku-0.5.8
+DISTNAME=	maruku-0.5.9
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc
 
