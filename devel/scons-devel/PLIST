@@ -1,6 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2008/08/28 14:42:31 tonnerre Exp $
 bin/scons
 bin/scons-${SCONSVER}
+bin/scons-time
+bin/scons-time-${SCONSVER}
 bin/sconsign
 bin/sconsign-${SCONSVER}
 lib/${PKGNAME}/SCons/Action.py
@@ -531,6 +533,7 @@ lib/${PKGNAME}/SCons/dblite.pyo
 lib/${PKGNAME}/SCons/exitfuncs.py
 lib/${PKGNAME}/SCons/exitfuncs.pyc
 lib/${PKGNAME}/SCons/exitfuncs.pyo
+man/man1/scons-time.1
 man/man1/scons.1
 man/man1/sconsign.1
 @dirrm lib/${PKGNAME}/SCons/compat
