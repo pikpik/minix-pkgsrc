@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:16:28 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/29 17:36:18 jlam Exp $
 
-DISTNAME=	rubigen-1.3.1
+DISTNAME=	rubigen-1.3.2
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
