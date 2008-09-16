@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.379 2008/09/07 00:57:08 bjs Exp $
+# $NetBSD: Makefile,v 1.380 2008/09/14 09:07:59 abs Exp $
 #
 
 COMMENT=	Audio tools
@@ -236,7 +236,6 @@ SUBDIR+=	mserv_irman
 SUBDIR+=	mstream
 SUBDIR+=	mt-daapd
 SUBDIR+=	muse
-SUBDIR+=	musicbox
 SUBDIR+=	musicbrainz
 SUBDIR+=	musicpd
 SUBDIR+=	nas
@@ -327,7 +326,6 @@ SUBDIR+=	wmsmixer
 SUBDIR+=	wmusic
 SUBDIR+=	wsoundprefs
 SUBDIR+=	wsoundserver
-SUBDIR+=	xamp
 SUBDIR+=	xanalyser
 SUBDIR+=	xcdplayer
 SUBDIR+=	xfce4-mixer

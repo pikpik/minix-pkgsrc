@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2008/05/12 13:20:58 jmcneill Exp $
+# $NetBSD: Makefile,v 1.105 2008/06/06 08:30:56 wiz Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -10,7 +10,6 @@ SUBDIR+=	afterstep
 SUBDIR+=	amaterus
 SUBDIR+=	amiwm
 SUBDIR+=	awesome
-SUBDIR+=	bbconf
 SUBDIR+=	bbkeys
 SUBDIR+=	bbkeys09
 SUBDIR+=	bbpager
