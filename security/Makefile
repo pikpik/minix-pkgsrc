@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.327 2008/08/20 09:56:28 he Exp $
+# $NetBSD: Makefile,v 1.328 2008/08/24 09:10:52 obache Exp $
 #
 
 COMMENT=	Security tools
@@ -137,6 +137,7 @@ SUBDIR+=	openssh
 SUBDIR+=	openssl
 SUBDIR+=	otpCalc
 SUBDIR+=	p0f
+SUBDIR+=	p5-Authen-CAS-Client
 SUBDIR+=	p5-Authen-PAM
 SUBDIR+=	p5-Authen-SASL
 SUBDIR+=	p5-Authen-SASL-Cyrus
