@@ -1,0 +1,9 @@
+# $NetBSD$
+#
+include/pixman-1/pixman.h
+include/pixman-1/pixman-version.h
+lib/libpixman-1.0.11.8.dylib
+lib/libpixman-1.0.dylib
+lib/libpixman-1.dylib
+lib/libpixman-1.la
+lib/pkgconfig/pixman-1.pc
