@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/02/28 18:07:54 drochner Exp $
+# $NetBSD: Makefile,v 1.25 2008/06/20 01:09:27 joerg Exp $
 
 DISTNAME=	stellarium-0.9.1
 CATEGORIES=	misc
@@ -21,6 +21,7 @@ CM_ARGS+= -D CMAKE_INSTALL_PREFIX:PATH=${PREFIX}
 CM_ARGS+= -D FreeType2_INCLUDE_DIR:PATH=${LOCALBASE}/include/freetype2
 CM_ARGS+= -D FreeType2_LIBRARIES:PATH=${LOCALBASE}/lib
 CM_ARGS+= -D SDLMIXER_INCLUDE_DIR:PATH=${LOCALBASE}/include/SDL
+CM_ARGS+= -D CMAKE_INSTALL_RPATH_USE_LINK_PATH:BOOL=TRUE
 
 do-configure:
 	(cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} cmake ${CM_ARGS} .)
