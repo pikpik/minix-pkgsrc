@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/01/09 09:32:43 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2007/02/22 19:01:28 wiz Exp $
 
 DISTNAME=	xteddy-1.1
 PKGREVISION=	1
@@ -9,11 +9,11 @@ MAINTAINER=	johnam@mail.kemper.org
 HOMEPAGE=	http://staffwww.itn.liu.se/~stegu/xteddy/
 COMMENT=	Cuddly teddy bear for your desktop
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 GNU_CONFIGURE=	YES
 
-pre-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/xteddy
-	${INSTALL_DATA_DIR} ${PREFIX}/share/xteddy/pixmaps
+INSTALLATION_DIRS=	share/xteddy/pixmaps
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
