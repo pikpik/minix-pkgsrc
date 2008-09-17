@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2008/06/23 11:38:50 drochner Exp $
+# $NetBSD: Makefile,v 1.50 2008/07/29 05:17:01 adam Exp $
 
 DISTNAME=	fontforge_full-${VERSION}
 PKGNAME=	fontforge-${VERSION}
@@ -25,6 +25,7 @@ CONFIGURE_ARGS+=	--without-freetype-src
 CONFIGURE_ARGS+=	--without-python
 CONFIGURE_ENV+=		LOCALBASE=${LOCALBASE}
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
+BROKEN_GETTEXT_DETECTION=	yes
 
 # checks for X11/Intrinsic.h
 BUILDLINK_DEPMETHOD.libXt?=	build
