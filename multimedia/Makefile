@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.121 2008/09/14 13:15:43 drochner Exp $
+# $NetBSD: Makefile,v 1.122 2008/09/15 13:16:59 jmcneill Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -100,6 +100,7 @@ SUBDIR+=	py-ming
 SUBDIR+=	realplayer-codecs
 SUBDIR+=	regionset
 SUBDIR+=	replex
+SUBDIR+=	ruby-gnome2-gstreamer
 SUBDIR+=	ruby-ming
 SUBDIR+=	smpeg
 SUBDIR+=	smpeg-xmms

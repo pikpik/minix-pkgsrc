@@ -1,0 +1,3 @@
+@comment $NetBSD$
+${RUBY_VENDORLIB}/bonobo2.rb
+${RUBY_VENDORARCHLIB}/bonobo2.${RUBY_DLEXT}

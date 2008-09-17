@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.185 2008/06/19 16:27:10 reed Exp $
+# $NetBSD: Makefile,v 1.186 2008/09/03 21:39:00 markd Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -106,6 +106,7 @@ SUBDIR+=	rlpr
 SUBDIR+=	rtf2latex
 SUBDIR+=	rtf2latex2e
 SUBDIR+=	ruby-gnome2-gnomeprint
+SUBDIR+=	ruby-gnome2-gnomeprintui
 SUBDIR+=	ruby-gnome2-poppler
 SUBDIR+=	ruby-pdf-writer
 SUBDIR+=	scribus

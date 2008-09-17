@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ruby-glade-create-template
+${RUBY_VENDORLIB}/libglade2.rb
+${RUBY_VENDORARCHLIB}/libglade2.${RUBY_DLEXT}
