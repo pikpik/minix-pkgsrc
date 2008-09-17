@@ -1,4 +1,4 @@
-/*	$NetBSD: main.c,v 1.43 2008/04/29 05:46:08 martin Exp $	*/
+/*	$NetBSD: main.c,v 1.44 2008/09/16 13:32:58 joerg Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -8,7 +8,7 @@
 #include <sys/cdefs.h>
 #endif
 #ifndef lint
-__RCSID("$NetBSD: main.c,v 1.43 2008/04/29 05:46:08 martin Exp $");
+__RCSID("$NetBSD: main.c,v 1.44 2008/09/16 13:32:58 joerg Exp $");
 #endif
 
 /*-
@@ -147,7 +147,6 @@ add_pkg(const char *pkgdir, void *vp)
 		errx(EXIT_FAILURE, "%s: can't open `%s'", pkgdir, CONTENTS_FNAME);
 	free(contents);
 
-	Plist.head = Plist.tail = NULL;
 	read_plist(&Plist, f);
 	if ((p = find_plist(&Plist, PLIST_NAME)) == NULL) {
 		errx(EXIT_FAILURE, "Package `%s' has no @name, aborting.", pkgdir);
