@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:07 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/23 16:51:46 drochner Exp $
 #
 
 DISTNAME=	sonata-1.5.2
@@ -18,7 +18,7 @@ PYTHON_VERSIONS_ACCEPTED=	25 24
 PY_PATCHPLIST=	yes
 PYDISTUTILSPKG=	yes
 USE_DIRS+=	xdg-1.4
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	pkg-config msgfmt
 
 # gtk threading bugfix
 BUILDLINK_ABI_DEPENDS.pygtk2+= ${PYPKGPREFIX}-gtk2>=2.12.1nb1
