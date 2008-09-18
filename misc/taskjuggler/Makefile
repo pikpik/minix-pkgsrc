@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/03/04 11:02:25 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/20 01:09:27 joerg Exp $
 #
 
 DISTNAME=	taskjuggler-2.3.1
@@ -17,7 +17,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-docdir=${PREFIX}/share/doc/taskjuggler
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
-USE_TOOLS+=	perl
+USE_TOOLS+=	perl msgfmt
 
 pre-build:
 	# I have no idea why this test fails, and it is undocumented.
