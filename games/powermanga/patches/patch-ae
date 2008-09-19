@@ -1,8 +1,17 @@
 $NetBSD$
 
 --- src/linuxroutines.cpp.orig	2004-08-01 08:43:56.000000000 +0200
-+++ src/linuxroutines.cpp	2005-01-30 21:47:46.000000000 +0100
-@@ -457,7 +457,7 @@
++++ src/linuxroutines.cpp
+@@ -183,7 +183,7 @@ void libereMemoire(char *_pMemoire)
+       }
+     }
+     if(_pMemoire > 0)
+-    { fprintf(stderr, "libereMemoire() : can't release the address %x\n", (int)_pMemoire);
++    { fprintf(stderr, "libereMemoire() : can't release the address %p\n", _pMemoire);
+     }
+   }
+   else
+@@ -457,7 +457,7 @@ char *locate_data_file(const char *const
    for(const char **p = data_directories;; p++)
    { char *pathname;
      if(*p == 0)
