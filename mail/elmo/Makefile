@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/01/18 05:08:23 tnn Exp $
+# $NetBSD: Makefile,v 1.14 2008/08/31 20:09:12 dholland Exp $
 #
 
 DISTNAME=		elmo-1.3.2
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		flex
+USE_TOOLS+=		flex perl:run
 GNU_CONFIGURE=		yes
 
 REPLACE_PERL=		src/elmoconf.pl
