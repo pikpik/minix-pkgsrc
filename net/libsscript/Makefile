@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/01/19 23:00:24 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2007/03/24 19:21:29 joerg Exp $
 #
 
 DISTNAME=	sscript-lib2.0
@@ -12,9 +12,11 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.linuxave.net/~drow/SocketScript/
 COMMENT=	Simple library for creating network oriented software in C
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 NO_CONFIGURE=	YES
 USE_LIBTOOL=	YES
 
-INSTALLATION_DIRS=	lib
+INSTALLATION_DIRS=	include/libsscript lib share/doc/libsscript
 
 .include "../../mk/bsd.pkg.mk"
