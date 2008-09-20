@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2008/09/04 06:43:05 dholland Exp $
+# $NetBSD: Makefile,v 1.34 2008/09/16 22:47:41 dholland Exp $
 
 DISTNAME=		gri-2.12.18
 CATEGORIES=		graphics
@@ -19,6 +19,9 @@ REPLACE_PERL+=		src/gri_merge src/gri_unpage
 INFO_FILES=		# PLIST
 INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} PKGINFODIR=${PKGINFODIR:Q}
 
+TEX_DEPMETHOD=		build	
+
+.include "../../mk/tex.buildlink3.mk"
 .include "../../devel/netcdf/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
