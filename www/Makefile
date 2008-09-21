@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.583 2008/09/16 15:32:24 seb Exp $
+# $NetBSD: Makefile,v 1.584 2008/09/17 00:21:48 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -395,7 +395,6 @@ SUBDIR+=	py-beautifulsoup
 SUBDIR+=	py-clearsilver
 SUBDIR+=	py-curl
 SUBDIR+=	py-django
-SUBDIR+=	py-django-devel
 SUBDIR+=	py-flup
 SUBDIR+=	py-genshi
 SUBDIR+=	py-jonpy
