@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/08/29 14:56:59 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/09/04 22:04:17 tonnerre Exp $
 
 DJANGOVERS=	1.0
 DISTNAME=	Django-${DJANGOVERS}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.djangoproject.com/
 COMMENT=	Django, a high-level Python Web framework
 
 PYDISTUTILSPKG=	# yes
-PYBINMODULE=	# yes
 PYTHON_VERSIONS_ACCEPTED=	25 24
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 
