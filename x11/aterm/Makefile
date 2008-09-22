@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2008/05/27 21:46:53 tonnerre Exp $
+# $NetBSD: Makefile,v 1.36 2008/06/12 02:14:57 joerg Exp $
 #
 
 DISTNAME=	aterm-1.0.0
@@ -17,6 +17,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
+MAKE_JOBS_SAFE=	no
 
 CONFIGURE_ARGS+=--enable-background-image \
 		--enable-transparency \
