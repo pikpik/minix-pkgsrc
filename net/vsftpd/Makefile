@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2007/07/04 20:54:54 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2008/06/20 01:09:32 joerg Exp $
 #
 
-DISTNAME=	vsftpd-2.0.4
-PKGREVISION=	1
+DISTNAME=	vsftpd-2.0.7
 CATEGORIES=	net
 MASTER_SITES=	ftp://vsftpd.beasts.org/users/cevans/
 
