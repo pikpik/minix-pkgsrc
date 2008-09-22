@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.3 2008/06/12 02:14:22 joerg Exp $
 #
 
-DISTNAME=	exempi-2.0.2
+DISTNAME=	exempi-2.0.0
 CATEGORIES=	devel graphics
 MASTER_SITES=	http://libopenraw.freedesktop.org/download/
 
