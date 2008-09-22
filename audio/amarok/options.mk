@@ -1,17 +1,22 @@
-# $NetBSD: options.mk,v 1.4 2008/04/08 21:04:07 jlam Exp $
+# $NetBSD: options.mk,v 1.5 2008/04/12 22:42:57 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.amarok
-PKG_SUPPORTED_OPTIONS=	libgpod mysql pgsql
+PKG_SUPPORTED_OPTIONS=	libgpod libmtp mysql pgsql
 
 .include "../../mk/bsd.options.mk"
 
-PLIST_VARS+=	ipod
+PLIST_VARS+=	ipod libmtp
 
 .if !empty(PKG_OPTIONS:Mlibgpod)
 PLIST.ipod=		yes
 CONFIGURE_ARGS+=	--enable-libgpod
 BUILDLINK_API_DEPENDS.libgpod+=	libgpod>=0.4.2
 .  include "../../audio/libgpod/buildlink3.mk"
+.endif
+
+.if !empty(PKG_OPTIONS:Mlibmtp)
+PLIST.libmtp=		yes
+.  include "../../devel/libmtp/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mmysql)
