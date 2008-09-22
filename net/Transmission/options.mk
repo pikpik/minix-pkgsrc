@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.7 2008/06/19 08:15:48 tnn Exp $
+# $NetBSD: options.mk,v 1.8 2008/09/18 18:57:51 drochner Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -23,7 +23,7 @@ pre-configure:
 .endif
 
 .if !empty(PKG_OPTIONS:Mwxwidgets)
-. include "../../x11/wxGTK/buildlink3.mk"
+. include "../../x11/wxGTK26/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-wx
 USE_LANGUAGES+=		c c++
 .  if empty(PKG_OPTIONS:Mgtk)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/09/03 00:56:30 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2006/09/09 02:46:09 obache Exp $
 
 DISTNAME=		wxhaskell-src-0.9.4
 PKGNAME=		${DISTNAME:S/-src//}
@@ -27,5 +27,5 @@ pre-configure:
 	cd ${WRKSRC} && ./configure --prefix=${PREFIX} --with-opengl
 
 .include "../../lang/ghc/buildlink3.mk"
-.include "../../x11/wxGTK/buildlink3.mk"
+.include "../../x11/wxGTK26/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

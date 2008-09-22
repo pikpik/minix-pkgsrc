@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2008/01/31 16:37:35 gdt Exp $
+# $NetBSD: Makefile,v 1.37 2008/09/06 20:54:32 wiz Exp $
 
 DISTNAME=		rapidsvn-0.9.4
 PKGREVISION=		5
@@ -31,5 +31,5 @@ post-install:
 # subversion-base, following the precedent of devel/foo-subversion and
 # www/ap2-subversion.
 .include "../../devel/subversion-base/buildlink3.mk"
-.include "../../x11/wxGTK/buildlink3.mk"
+.include "../../x11/wxGTK26/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

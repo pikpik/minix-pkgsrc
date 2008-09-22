@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2006/08/17 23:55:16 adam Exp $
+# $NetBSD: Makefile,v 1.36 2008/06/12 02:14:38 joerg Exp $
 
 DISTNAME=	aMule-2.1.3
 PKGNAME=	${DISTNAME:S/aMule/amule/}
@@ -28,6 +28,6 @@ UNLIMIT_RESOURCES+=	datasize
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../x11/wxGTK/buildlink3.mk"
+.include "../../x11/wxGTK26/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

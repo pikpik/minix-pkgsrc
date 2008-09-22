@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2008/05/26 02:13:16 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2008/06/21 18:01:18 joerg Exp $
 #
 
 DISTNAME=	boolean_6_92
@@ -43,5 +43,5 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/boolean  ${DESTDIR}${PREFIX}/bin/boolean
 	${INSTALL_PROGRAM} ${WRKSRC}/apps/edit/edit  ${DESTDIR}${PREFIX}/bin/edit
 
-.include "../../x11/wxGTK/buildlink3.mk"
+.include "../../x11/wxGTK26/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
