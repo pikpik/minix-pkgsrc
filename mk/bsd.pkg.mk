@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1950 2008/07/21 22:34:18 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1951 2008/08/19 17:28:24 agc Exp $
 #
 # This file is in the public domain.
 #
@@ -222,6 +222,7 @@ BSD_MAKE_ENV+=	INCSDIR=${PREFIX}/include
 BSD_MAKE_ENV+=	LIBDIR=${PREFIX}/lib
 BSD_MAKE_ENV+=	MANDIR=${PREFIX}/${PKGMANDIR}
 BSD_MAKE_ENV+=	STRIPFLAG=${_STRIPFLAG_INSTALL:Q}
+BSD_MAKE_ENV+=	MKHTML=no
 
 _BUILD_DEFS=		${BUILD_DEFS}
 _BUILD_DEFS+=		LOCALBASE
