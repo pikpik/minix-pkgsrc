@@ -1,11 +1,14 @@
-# $NetBSD: Makefile,v 1.9 2007/05/20 00:17:01 heinz Exp $
+# $NetBSD: Makefile,v 1.10 2007/11/15 10:39:18 rillig Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
+PKGREVISION=		1
+
 INSTALLATION_DIRS+=	${PKGMANDIR}/man1
 CONFIGURE_ARGS+=	--disable-tcl
+CONFIGURE_ARGS+=	--enable-load-extension
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/sqlite3.1 \
