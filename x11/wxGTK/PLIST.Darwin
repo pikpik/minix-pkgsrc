@@ -1,4 +1,0 @@
-@comment $NetBSD$
-include/wx-2.6/wx/mac/corefoundation/cfstring.h
-include/wx-2.6/wx/mac/corefoundation/hid.h
-include/wx-2.6/wx/mac/corefoundation/stdpaths.h
