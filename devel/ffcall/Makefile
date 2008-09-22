@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/06/12 02:14:22 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2008/08/23 07:46:59 obache Exp $
 
 DISTNAME=	ffcall-1.10
 PKGREVISION=	2
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.haible.de/bruno/packages-ffcall.html
 COMMENT=	Foreign function call libraries
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=			no
 
 # the file ${WRKSRC}/avcall/avcall-${MACHINE_ARCH}.c needs to
 # be added for additional port support.
