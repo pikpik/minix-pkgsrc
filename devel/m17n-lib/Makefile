@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/02/27 13:48:28 obache Exp $
 #
 
 DISTNAME=	m17n-lib-1.5.1
@@ -11,6 +11,7 @@ COMMENT=	Multilingualization library
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+MAKE_JOBS_SAFE=	no
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
