@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2008/01/12 11:36:28 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2008/09/06 20:54:31 wiz Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 BDB_XML_BUILDLINK3_MK:=	${BDB_XML_BUILDLINK3_MK}+
@@ -17,7 +17,7 @@ BUILDLINK_ABI_DEPENDS.bdb-xml?=	bdb-xml>=1.2.1nb8
 BUILDLINK_PKGSRCDIR.bdb-xml?=	../../databases/bdb-xml
 .endif	# BDB_XML_BUILDLINK3_MK
 
-.include "../../databases/db4/buildlink3.mk"
+.include "../../databases/db46/buildlink3.mk"
 .include "../../textproc/libpathan/buildlink3.mk"
 .include "../../textproc/xerces-c/buildlink3.mk"
 
