@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:34 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/07/13 22:34:20 smb Exp $
 #
 
 DISTNAME=	spam_report-0.3.4
 PKGNAME=	claws-mail-spam_report-0.3.4
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
+PKGREVISION=	1
 
 MAINTAINER=	smb@NetBSD.org
 COMMENT=	Report spam to various places
@@ -22,6 +23,7 @@ USE_LANGUAGES+=	c
 
 .include "../../mail/claws-mail/Makefile.vers"
 .include "../../mail/claws-mail/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

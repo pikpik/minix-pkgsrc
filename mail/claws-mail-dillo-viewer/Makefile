@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:33 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/07/13 22:34:20 smb Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLUGIN_NAME=	dillo_viewer
 PLUG_VER=	3.5.0
+PKGREVISION=	1
 .include "../../mail/claws-mail/plugins.mk"
 
 MAINTAINER=	smb@NetBSD.org
@@ -16,6 +17,7 @@ DEPENDS+=	claws-mail-3.5.0{,nb[0-9]*}:../../mail/claws-mail
 DEPENDS+=	dillo>=0.8.6nb2:../../www/dillo
 
 .include "../../mail/claws-mail/Makefile.vers"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

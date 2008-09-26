@@ -1,10 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2008/07/13 22:34:20 smb Exp $
 #
 
 DISTNAME=	archive-0.6
 PKGNAME=	claws-mail-archive-0.6
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
+PKGREVISION=	1
 
 MAINTAINER=	smb@NetBSD.org
 COMMENT=	Adds archiving to Claws-Mail
@@ -23,6 +24,7 @@ USE_LANGUAGES+=	c
 .include "../../archivers/libarchive/buildlink3.mk"
 .include "../../mail/claws-mail/Makefile.vers"
 .include "../../mail/claws-mail/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
