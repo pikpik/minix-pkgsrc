@@ -1,7 +1,7 @@
-# $NetBSD: options.mk,v 1.6 2008/04/12 22:43:08 jlam Exp $
+# $NetBSD: options.mk,v 1.7 2008/09/08 18:58:24 ahoka Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.vlc
-PKG_SUPPORTED_OPTIONS=		debug faad arts dbus skins sdl esound x11
+PKG_SUPPORTED_OPTIONS=		debug faad arts dbus skins sdl esound x11 gnome
 PKG_SUGGESTED_OPTIONS=		x11 esound
 
 .include "../../mk/bsd.options.mk"
@@ -25,6 +25,16 @@ PLIST.sdl=		yes
 .else
 CONFIGURE_ARGS+=	--disable-sdl
 CONFIGURE_ARGS+=	--disable-sdl-image
+.endif
+
+## gnome-vfs support
+
+.if !empty(PKG_OPTIONS:Mgnome)
+CONFIGURE_ARGS+=	--enable-gnomevfs
+.include "../../sysutils/gnome-vfs/buildlink3.mk"
+PLIST.gnome=	yes
+.else
+CONFIGURE_ARGS+=	--disable-gnomevfs
 .endif
 
 ## DBUS message bus support
