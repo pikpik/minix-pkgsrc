@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.31 2008/04/25 20:39:09 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2008/05/26 02:13:18 joerg Exp $
 
-DISTNAME=	roundup-1.1.2
+DISTNAME=	roundup-1.4.6
 CATEGORIES=	devel
 MASTER_SITES=	http://cheeseshop.python.org/packages/source/r/roundup/
 
