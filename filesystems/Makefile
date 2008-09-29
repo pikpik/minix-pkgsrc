@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2007/12/13 07:01:09 bjs Exp $
+# $NetBSD: Makefile,v 1.23 2008/04/11 14:57:20 agc Exp $
 #
 
 COMMENT=	File systems, and file system related packages
 
+SUBDIR+=	fs-utils
 SUBDIR+=	fuse
 SUBDIR+=	fuse-afpfs-ng
 SUBDIR+=	fuse-archivemount
