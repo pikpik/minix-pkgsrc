@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	fs-utils_20080925
+DISTNAME=	fs-utils_20080929
 PKGNAME=	${DISTNAME:S/_/-/}
 CATEGORIES=	filesystems
 MASTER_SITES=	http://www.stacktic.org/
