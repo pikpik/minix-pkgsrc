@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/01/04 14:32:50 ghen Exp $
+# $NetBSD: Makefile,v 1.8 2008/01/08 16:52:20 ghen Exp $
 
 PKGNAME=		${DISTNAME:S/-/-clientonly-/}
 PKGREVISION=		1
@@ -31,5 +31,7 @@ PLIST_SRC+=		${.CURDIR}/../../sysutils/bacula/PLIST.common_end
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/scripts/dvd-handler ${DESTDIR}${EXAMPLESDIR}
+
+.include "options.mk"
 
 .include "../../mk/bsd.pkg.mk"
