@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2008/01/18 05:14:31 tnn Exp $
+# $NetBSD: Makefile,v 1.30 2008/06/21 18:52:21 joerg Exp $
 
 DISTNAME=	ProjectCenter-0.4.3
 PKGREVISION=	6
@@ -9,7 +9,7 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/experience/ProjectCenter.html
 COMMENT=	GNUstep Integrated Development Environment
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKG_DESTDIR_SUPPORT=	destdir
 
 USE_LANGUAGES=	objc
 
