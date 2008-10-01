@@ -1,6 +1,9 @@
-# $NetBSD: Makefile.common,v 1.4 2006/03/04 21:30:56 jlam Exp $
+# $NetBSD: Makefile.common,v 1.5 2007/12/05 17:42:49 ghen Exp $
 #
-DISTNAME=	mod_fastcgi-2.4.2
+# used by www/ap-fastcgi/Makefile
+# used by www/ap2-fastcgi/Makefile
+#
+DISTNAME=	mod_fastcgi-2.4.6
 CATEGORIES=	www
 MASTER_SITES=	http://www.fastcgi.com/dist/
 
