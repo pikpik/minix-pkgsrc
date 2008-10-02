@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/01/18 05:09:45 tnn Exp $
+# $NetBSD: Makefile,v 1.7 2008/02/02 13:38:53 heinz Exp $
 #
 
 DISTNAME=	xmlrpc-c-1.09.00
@@ -18,7 +18,7 @@ MAKE_JOBS_SAFE=	no
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_LANGUAGES=	c c++
+USE_LANGUAGES=	c99 c++
 USE_TOOLS+=	gmake
 MAKE_FILE=	GNUmakefile
 
