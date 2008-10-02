@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:35 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 21:46:44 abs Exp $
 #
 
 DISTNAME=		pine-pgp-filters-1.6
 CATEGORIES=		security mail
+PKGREVISION=		1
 MASTER_SITES=		http://dougbarton.us/PGP/scripts/ppf/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
@@ -16,6 +17,8 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 
 DOCDIR=			 ${PREFIX}/share/doc/pine-pgp-filters
 DOCFILES=		BUGS CHANGES INSTALL LICENSE README
+
+DEPENDS+=	gnupg>=1.4.9:../../security/gnupg
 
 INSTALLATION_DIRS=	${DOCDIR}
 
