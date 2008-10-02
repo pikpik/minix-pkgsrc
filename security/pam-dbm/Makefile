@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/08/18 14:02:12 adrianp Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/04 21:58:14 wiz Exp $
 #
 
 DISTNAME=		pam_dbm-0.2
@@ -11,6 +11,8 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.feep.net/PAM/pam_dbm/
 COMMENT=		PAM module for DBM authentication
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 BDB_ACCEPTED=		db1
@@ -19,6 +21,6 @@ BDB_ACCEPTED=		db1
 .include "../../mk/pam.buildlink3.mk"
 
 post-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/authtest ${PREFIX}/sbin/pam_dbm-authtest
+	${INSTALL_PROGRAM} ${WRKSRC}/authtest ${DESTDIR}${PREFIX}/sbin/pam_dbm-authtest
 
 .include "../../mk/bsd.pkg.mk"
