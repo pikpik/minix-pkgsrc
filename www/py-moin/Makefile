@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/07/22 20:17:24 tnn Exp $
+# $NetBSD: Makefile,v 1.10 2008/07/24 08:38:03 joerg Exp $
 #
 
 DISTNAME=	moin-1.7.1
@@ -14,6 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 
+PYTHON_VERSIONS_ACCEPTED=	25 24
 PYDISTUTILSPKG=	# empty
 
 REPLACE_INTERPRETER+=	env_python
