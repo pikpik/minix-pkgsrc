@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/09/11 13:12:34 kefren Exp $
 
 DISTNAME=	sqlsharpgtk-0.4
 CATEGORIES=	databases
@@ -9,7 +9,7 @@ HOMEPAGE=	http://forge.novell.com/modules/xfmod/project/?sqlsharpgtk
 COMMENT=	GUI client for entering and running SQL commands and scripts
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 MAKE_JOBS_SAFE=	no
 
 .include "../../lang/mono/buildlink3.mk"
