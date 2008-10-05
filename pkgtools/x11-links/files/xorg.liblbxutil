@@ -1,0 +1,6 @@
+# $NetBSD$
+#
+lib/liblbxutil.so
+lib/liblbxutil.so.1
+lib/liblbxutil.so.1.0
+lib/pkgconfig/lbxutil.pc

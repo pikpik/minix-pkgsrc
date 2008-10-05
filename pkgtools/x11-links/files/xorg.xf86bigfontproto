@@ -1,0 +1,3 @@
+# $NetBSD$
+#
+lib/pkgconfig/xf86bigfontproto.pc

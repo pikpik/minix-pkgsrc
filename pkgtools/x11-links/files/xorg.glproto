@@ -1,0 +1,7 @@
+# $NetBSD$
+#
+include/GL/glxint.h
+include/GL/glxmd.h
+include/GL/glxproto.h
+include/GL/glxtokens.h
+lib/pkgconfig/glproto.pc
