@@ -1,8 +1,8 @@
 $NetBSD$
 
---- modes/Makefile.in.orig	2007-09-16 20:43:06.000000000 +0200
+--- modes/Makefile.in.orig	2008-10-05 02:50:23.000000000 +0200
 +++ modes/Makefile.in
-@@ -579,19 +579,19 @@ install : install-program install-man in
+@@ -588,19 +588,19 @@ install : install-program install-man in
  	@ $(ECHO) ""
  
  install-program : xlock
