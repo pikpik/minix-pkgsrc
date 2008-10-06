@@ -57,6 +57,8 @@ struct fetchconn {
 	char		*buf;		/* buffer */
 	size_t		 bufsize;	/* buffer size */
 	size_t		 buflen;	/* length of buffer contents */
+	char		*next_buf;	/* pending buffer, e.g. after getln */
+	size_t		 next_len;	/* size of pending buffer */
 	int		 err;		/* last protocol reply code */
 #ifdef WITH_SSL
 	SSL		*ssl;		/* SSL handle */
