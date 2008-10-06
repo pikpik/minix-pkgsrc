@@ -1,4 +1,4 @@
-/*	$NetBSD: fts.h,v 1.4 2004/08/16 17:24:57 jlam Exp $	*/
+/*	$NetBSD: fts.h,v 1.5 2007/07/31 13:17:34 joerg Exp $	*/
 
 /*
  * Copyright (c) 1989, 1993
@@ -77,7 +77,7 @@ typedef struct _ftsent {
 	ino_t fts_ino;			/* inode */
 	dev_t fts_dev;			/* device */
 #ifdef __LIBC12_SOURCE__
-	u_int16_t fts_nlink;		/* link count */
+	uint16_t fts_nlink;		/* link count */
 #else
 	nlink_t fts_nlink;		/* link count */
 #endif

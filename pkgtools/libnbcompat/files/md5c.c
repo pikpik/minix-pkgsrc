@@ -1,4 +1,4 @@
-/*	$NetBSD: md5c.c,v 1.19 2003/11/14 16:43:57 keihan Exp $	*/
+/*	$NetBSD: md5c.c,v 1.6 2004/08/23 03:32:12 jlam Exp $	*/
 
 /*
  * This file is derived from the RSA Data Security, Inc. MD5 Message-Digest
@@ -62,8 +62,8 @@
 #endif
 
 typedef unsigned char *POINTER;
-typedef u_int16_t UINT2;
-typedef u_int32_t UINT4;
+typedef uint16_t UINT2;
+typedef uint32_t UINT4;
 
 /*
  * Constants for MD5Transform routine.

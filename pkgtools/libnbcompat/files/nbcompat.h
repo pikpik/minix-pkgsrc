@@ -1,4 +1,4 @@
-/*	$NetBSD: nbcompat.h,v 1.39 2008/04/29 05:46:08 martin Exp $	*/
+/*	$NetBSD: nbcompat.h,v 1.40 2008/05/19 12:52:57 joerg Exp $	*/
 
 /*-
  * Copyright (c) 2003 The NetBSD Foundation, Inc.
@@ -27,7 +27,6 @@
  */
 
 #include <nbcompat/nbconfig.h>
-#include <nbcompat/nbtypes.h>
 
 #include <nbcompat/cdefs.h>
 #include <nbcompat/limits.h>
