@@ -1,0 +1,11 @@
+===========================================================================
+$NetBSD$
+
+To complete the setup, please read:
+
+	${PREFIX}/share/doc/typolight/README
+
+
+Note: currently, PostgreSQL isn't tested well.
+
+===========================================================================
