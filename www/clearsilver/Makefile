@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:11:20 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2007/10/25 22:01:07 jlam Exp $
 
 .include "Makefile.common"
-
-PKGREVISION=	1
 
 DEPENDS+=${CLEARSILVER_BASE}{,nb[0-9]*}:../../www/clearsilver-base
 DEPENDS+=${PYPKGPREFIX}-${DISTNAME}{,nb[0-9]*}:../../www/py-clearsilver
