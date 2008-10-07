@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.585 2008/09/21 15:14:39 joerg Exp $
+# $NetBSD: Makefile,v 1.586 2008/10/06 10:54:18 kefren Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -366,6 +366,7 @@ SUBDIR+=	p5-Test-WWW-Declare
 SUBDIR+=	p5-Test-WWW-Mechanize
 SUBDIR+=	p5-Test-WWW-Mechanize-Catalyst
 SUBDIR+=	p5-URI
+SUBDIR+=	p5-URI-Escape-XS
 SUBDIR+=	p5-URI-Fetch
 SUBDIR+=	p5-VRML
 SUBDIR+=	p5-WWW-Amazon-Wishlist
