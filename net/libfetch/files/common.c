@@ -484,6 +484,7 @@ fetch_getln(conn_t *conn)
 
 	conn->buf[0] = '\0';
 	conn->buflen = 0;
+	next = NULL;
 
 	do {
 		len = fetch_read(conn, conn->buf + conn->buflen,
