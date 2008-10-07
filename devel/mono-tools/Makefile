@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2008/07/14 12:56:03 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2008/09/06 20:54:32 wiz Exp $
 
-DISTNAME=	mono-tools-1.9
-PKGREVISION=	2
+DISTNAME=	mono-tools-2.0
 CATEGORIES=	devel
-MASTER_SITES=	http://go-mono.com/sources/mono-tools/
+MASTER_SITES=	http://ftp.novell.com/pub/mono/sources/mono-tools/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	kefren@NetBSD.org
@@ -19,6 +18,8 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config gmake
 
 MAKE_JOBS_SAFE=		no
+
+CONFIGURE_ARGS+=	--mandir=${PKGMANDIR}
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../lang/mono/buildlink3.mk"

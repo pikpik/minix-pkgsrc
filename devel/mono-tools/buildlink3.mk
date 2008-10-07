@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/04/19 18:46:43 kefren Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 MONO_TOOLS_BUILDLINK3_MK:=	${MONO_TOOLS_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	mono-tools
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}mono-tools
 
 .if ${MONO_TOOLS_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.mono-tools+=	mono-tools>=1.9
+BUILDLINK_API_DEPENDS.mono-tools+=	mono-tools>=2.0
 BUILDLINK_PKGSRCDIR.mono-tools?=	../../devel/mono-tools
 .endif	# MONO_TOOLS_BUILDLINK3_MK
 
