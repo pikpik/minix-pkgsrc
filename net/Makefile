@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.727 2008/09/15 18:17:01 rhaen Exp $
+# $NetBSD: Makefile,v 1.728 2008/09/22 23:52:02 jmcneill Exp $
 #
 
 COMMENT=	Networking tools
@@ -102,6 +102,7 @@ SUBDIR+=	ettercap
 SUBDIR+=	ettercap-NG
 SUBDIR+=	ez-ipupdate
 SUBDIR+=	fair-identd
+SUBDIR+=	fetch
 SUBDIR+=	firewalk
 SUBDIR+=	flan
 SUBDIR+=	flodo
