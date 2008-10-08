@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/17 12:07:28 obache Exp $
+# $NetBSD: Makefile,v 1.2 2008/03/02 03:48:36 jlam Exp $
 #
 
 DISTNAME=		lzma443
@@ -18,6 +18,8 @@ USE_TOOLS+=		gmake
 
 WRKSRC=			${WRKDIR}/C/7zip/Compress/LZMA_Alone
 MAKE_FILE=		makefile.gcc
+
+CONFLICTS+=		lzma-utils-[0-9]*
 
 INSTALLATION_DIRS=	bin
 
