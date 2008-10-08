@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2008/08/16 03:19:14 taca Exp $
+# $NetBSD: Makefile,v 1.6 2008/09/18 12:42:47 taca Exp $
 
-DISTNAME=	tzinfo-0.3.10
+DISTNAME=	tzinfo-0.3.11
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	time
 
