@@ -1,4 +1,4 @@
-/*	$NetBSD: md5.h,v 1.3 2008/02/12 13:43:24 joerg Exp $	*/
+/*	$NetBSD: md5.h,v 1.4 2008/10/06 12:36:20 joerg Exp $	*/
 
 /*
  * This file is derived from the RSA Data Security, Inc. MD5 Message-Digest
@@ -31,6 +31,8 @@
 
 #ifndef _NBCOMPAT_SYS_MD5_H_
 #define _NBCOMPAT_SYS_MD5_H_
+
+#include <nbcompat/types.h>
 
 #define MD5_DIGEST_LENGTH		16
 #define MD5_DIGEST_STRING_LENGTH	33
