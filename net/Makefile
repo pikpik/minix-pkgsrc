@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.728 2008/09/22 23:52:02 jmcneill Exp $
+# $NetBSD: Makefile,v 1.729 2008/10/08 15:30:47 joerg Exp $
 #
 
 COMMENT=	Networking tools
@@ -362,6 +362,7 @@ SUBDIR+=	p5-Socket6
 SUBDIR+=	p5-X500-DN
 SUBDIR+=	p5-ispman
 SUBDIR+=	packit
+SUBDIR+=	parpd
 SUBDIR+=	partysip
 SUBDIR+=	pchar
 SUBDIR+=	pconsole
