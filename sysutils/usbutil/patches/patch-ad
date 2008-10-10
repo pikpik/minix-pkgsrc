@@ -1,13 +1,14 @@
 $NetBSD$
 
---- usbstats.c.orig	2005-12-18 17:23:45.000000000 +0000
+--- usbstats.c.orig	2002-02-25 01:55:56.000000000 +0100
 +++ usbstats.c
-@@ -26,10 +26,15 @@
+@@ -26,10 +26,16 @@
  
  #include <stdio.h>
  #include <sys/types.h>
 +#include <sys/ioctl.h>
  #include <fcntl.h>
++#include <stdlib.h>
  #include <unistd.h>
  #include <err.h>
 +#ifdef __DragonFly__
