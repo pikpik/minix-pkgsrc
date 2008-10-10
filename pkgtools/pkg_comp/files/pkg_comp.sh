@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: pkg_comp.sh,v 1.32 2006/06/17 12:18:24 seb Exp $
+# $NetBSD: pkg_comp.sh,v 1.33 2007/10/27 17:11:24 seb Exp $
 #
 # pkg_comp - Build packages inside a clean chroot environment
 # Copyright (c) 2002, 2003, 2004, 2005 Julio M. Merino Vidal <jmmv@NetBSD.org>
@@ -838,7 +838,7 @@ EOF
 #
 pkg_chroot()
 {
-    local prefix script
+    local prefix script exitstatus
 
     [ -d $DESTDIR ] || err "$DESTDIR does not exist"
 
@@ -861,9 +861,11 @@ EOF
     fi
     chmod +x $script
     ENV=/etc/shrc chroot $DESTDIR /pkg_comp/tmp/`basename $script`
+    exitstatus=$?
     echo
     rm $script
     fsumount
+    return $exitstatus
 }
 
 # ----------------------------------------------------------------------
@@ -1007,7 +1009,7 @@ case "$target" in
         readconf
         checkroot
         pkg_chroot $args
-        exit 0
+        exit $?
         ;;
     removeroot)
         readconf
