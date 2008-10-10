@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/09/08 10:31:23 shannonjr Exp $
 #
 
 DISTNAME=	osbf-lua-2.0.4
-CATEGORIES=	local
+CATEGORIES=	mail
 MASTER_SITES=	http://luaforge.net/frs/download.php/2094/
 
 MAINTAINER=	shannonjr@NetBSD.org
