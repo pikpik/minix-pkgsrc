@@ -1,8 +1,8 @@
 $NetBSD$
 
---- pp_sys.c.orig	2006-01-13 13:15:15.000000000 -0500
+--- pp_sys.c.orig	2007-12-18 11:47:08.000000000 +0100
 +++ pp_sys.c
-@@ -4516,12 +4516,15 @@ PP(pp_gmtime)
+@@ -4452,12 +4452,15 @@ PP(pp_gmtime)
  	when = (Time_t)SvIVx(POPs);
  #endif
  
