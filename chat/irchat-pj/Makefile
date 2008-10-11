@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/11/18 10:30:42 wiz Exp $
+# $NetBSD$
 
 DISTNAME=	irchat-pj-2.4.24.22
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -12,7 +12,10 @@ MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://gouketsu.net/irchat-pj/
 COMMENT=	Emacs lisp interface to Internet Relay Chat
 
-.include "../../mk/emacs.mk"
+INSTALLATION_DIRS=	bin ${EMACS_LISPPREFIX:C|^${PREFIX}/||}/irchat-pj
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../editors/emacs/modules.mk"
 
 .if ${EMACS_FLAVOR} == "emacs"
 INSTALL_TARGET=	install
@@ -25,5 +28,12 @@ PKG_FAIL_REASON+= "Unknown Emacs flavor"
 
 LIBS.SunOS+=	-lnsl -lsocket
 MAKE_ENV+=	LIBS=${LIBS:M*:Q}
+
+do-install:
+	cd ${WRKSRC}; \
+	${INSTALL_PROGRAM} dcc/dcc ${DESTDIR}${PREFIX}/bin; \
+	for f in irchat*.el*; do \
+		${INSTALL_DATA} $$f ${DESTDIR}${EMACS_LISPPREFIX}/irchat-pj; \
+	done
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/01/18 05:09:42 tnn Exp $
+# $NetBSD$
 #
 
 DISTNAME=		starttls-0.10
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

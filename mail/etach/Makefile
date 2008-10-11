@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/10/29 04:35:09 uebayasi Exp $
+# $NetBSD$
 
 DISTNAME=		etach-1.2.9
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -22,5 +22,5 @@ do-install:
 	cd ${WRKSRC} && ${INSTALL_DATA} README.txt FAQ.txt LICENSE.txt	\
 		${DESTDIR}${PREFIX}/share/doc/etach/
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

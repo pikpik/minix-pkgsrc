@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/07/05 18:22:29 jnemeth Exp $
+# $NetBSD$
 #
 
 DISTNAME=	eieio-0.17
@@ -37,5 +37,5 @@ do-install:
 		${INSTALL_DATA} "$$f" ${DESTDIR}${EMACS_INFOPREFIX};	\
 	done
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

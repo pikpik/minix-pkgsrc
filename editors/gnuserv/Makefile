@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/10/13 21:22:48 markd Exp $
+# $NetBSD$
 
 DISTNAME=	gnuserv-3.12.7
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -22,5 +22,5 @@ post-install:
 		${INSTALL_DATA} $${FILE} $${FILE}c ${EMACS_LISPPREFIX};		\
 	done
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

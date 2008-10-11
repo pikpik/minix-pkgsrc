@@ -33,5 +33,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/examples/*.png \
 		${PREFIX}/share/examples/emacs-muse
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

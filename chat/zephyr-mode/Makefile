@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/02/20 19:04:10 wiz Exp $
+# $NetBSD$
 #
 
 DISTNAME=	zephyr-mode-2.5.20
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 do-install:
 	@${INSTALL_DATA_DIR} ${DESTDIR}${EMACS_LISPPREFIX}/zephyr-mode

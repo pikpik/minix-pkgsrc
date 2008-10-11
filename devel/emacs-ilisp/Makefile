@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/03/19 12:13:08 obache Exp $
+# $NetBSD$
 #
 
 DISTNAME=	ilisp-20021222
@@ -36,5 +36,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/extra/*.el ${DESTDIR}${SITELISP}/extra
 	${INSTALL_DATA} ${WRKSRC}/extra/*.elc ${DESTDIR}${SITELISP}/extra
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/10/29 12:56:30 uebayasi Exp $
+# $NetBSD$
 #
 
 DISTNAME=	semantic-1.4.4
@@ -51,7 +51,7 @@ do-install:
 		${INSTALL_DATA} "$$f" ${DESTDIR}${EMACS_INFOPREFIX};	\
 	done
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .include "../../editors/speedbar/buildlink3.mk"
 .include "../../lang/eieio/buildlink3.mk"

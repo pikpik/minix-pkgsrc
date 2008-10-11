@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/04/08 20:04:18 jlam Exp $
+# $NetBSD$
 #
 
 DISTNAME=	tc-2.3.1
@@ -13,7 +13,7 @@ COMMENT=	T-Code driver for Emacs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .if ${EMACS_FLAVOR} == "xemacs"
 CONFIGURE_ARGS+=--with-emacs=xemacs

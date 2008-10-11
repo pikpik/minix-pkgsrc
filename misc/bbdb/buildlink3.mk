@@ -4,7 +4,7 @@
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 BBDB_BUILDLINK3_MK:=	${BBDB_BUILDLINK3_MK}+
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .if ${EMACS_FLAVOR} == "emacs"
 
 .if ${BUILDLINK_DEPTH} == "+"

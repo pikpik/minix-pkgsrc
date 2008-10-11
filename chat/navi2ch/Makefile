@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/10/29 04:37:51 uebayasi Exp $
+# $NetBSD$
 
 DISTNAME=	navi2ch-cvs_0.0.20070423-1
 PKGNAME=	${EMACS_PKGNAME_PREFIX}navi2ch-1.7.5.99.20070423
@@ -26,6 +26,6 @@ CONFIGURE_ARGS+=${CONFIGURE_ARGS.${EMACS_FLAVOR}}
 CONFIGURE_ARGS.emacs=	--with-lispdir=${EMACS_LISPPREFIX}/navi2ch
 CONFIGURE_ARGS.xemacs=	--with-packagedir=${EMACS_LISPPREFIX:C|/lisp$||}
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .include "../../mk/bsd.pkg.mk"

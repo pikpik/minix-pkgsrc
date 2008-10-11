@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/03/02 02:46:15 dmcmahill Exp $
+# $NetBSD$
 #
 
 DISTNAME=	dinotrace-9.3c
@@ -16,7 +16,7 @@ DEPENDS+=	${EMACS_PKGNAME_PREFIX}verilog-mode>=3.13:../../cad/verilog-mode
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .if ${EMACS_FLAVOR} == "emacs"
 EMACS=	emacs

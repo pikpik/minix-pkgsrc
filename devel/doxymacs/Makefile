@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/08/05 05:19:19 dsainty Exp $
+# $NetBSD$
 #
 
 DISTNAME=	doxymacs-1.8.0
@@ -10,7 +10,9 @@ MAINTAINER=	dsainty@NetBSD.org
 HOMEPAGE=	http://doxymacs.sourceforge.net/
 COMMENT=	Doxygen editing support for Emacs
 
-.include "../../mk/emacs.mk"
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../editors/emacs/modules.mk"
 
 #
 # "www/w3" (Emacs/W3) currently does not work with Emacs 22.  Emacs/W3

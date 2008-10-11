@@ -10,7 +10,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${RUBY_PKGPREFIX}-migemo>=${MIGEMO_VERSION}:../../textproc/migemo
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .if defined(EMACS_FLAVOR) && ${EMACS_FLAVOR} == "xemacs"
 DEPENDS+=	xemacs-packages-[0-9]*:../../editors/xemacs-packages
 .endif

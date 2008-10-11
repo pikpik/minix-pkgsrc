@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/01/04 05:54:57 obache Exp $
+# $NetBSD$
 #
 
 DISTNAME=	elscreen-1.4.5
@@ -30,7 +30,7 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR}/*/*.el ${DESTDIR}${EMACS_LISPPREFIX}/elscreen
 	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/elscreen
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .include "../../devel/apel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

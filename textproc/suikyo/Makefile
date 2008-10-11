@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/03/02 02:38:57 obache Exp $
+# $NetBSD$
 #
 
 .include "Makefile.common"
@@ -20,6 +20,6 @@ CONFIGURE_ARGS+=	--with-rubydir=${PREFIX}/${RUBY_VENDORLIB}
 
 INSTALL_TARGET=		install-pkgconfigDATA
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../lang/ruby/rubyversion.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/07/08 12:35:10 wiz Exp $
+# $NetBSD$
 
 DISTNAME=	cflow-1.1
 PKGNAME=	cflow-mode-1.1
@@ -11,7 +11,7 @@ COMMENT=	Emacs mode for GNU cflow output
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 do-build:
 	${EMACS_BIN} --no-init-file -batch -f batch-byte-compile \

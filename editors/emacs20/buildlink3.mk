@@ -13,9 +13,9 @@ BUILDLINK_PACKAGES+=	emacs
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}emacs
 
 .if ${APEL_BUILDLINK3_MK} == "+"
-.include "../../mk/emacs.mk"
-BUILDLINK_API_DEPENDS.emacs+=	${_EMACS_REQD.emacs20}
-BUILDLINK_PKGSRCDIR.emacs?=	${_EMACS_DEP.emacs20}
+.include "../../editors/emacs/modules.mk"
+BUILDLINK_API_DEPENDS.emacs+=	${_EMACS_REQD}
+BUILDLINK_PKGSRCDIR.emacs?=	${_EMACS_PKGDIR}
 .endif	# APEL_BUILDLINK3_MK
 
 BUILDLINK_CONTENTS_FILTER.emacs=	${EGREP} '.*\.el$$|.*\.elc$$'

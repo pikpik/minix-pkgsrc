@@ -13,9 +13,9 @@ BUILDLINK_PACKAGES+=	xemacs
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}xemacs
 
 .if ${XEMACS_BUILDLINK3_MK} == "+"
-.include "../../mk/emacs.mk"
-BUILDLINK_API_DEPENDS.xemacs+=	${_EMACS_REQD.xemacs215}
-BUILDLINK_PKGSRCDIR.xemacs?=	${_EMACS_DEP.xemacs215}
+.include "../../editors/emacs/modules.mk"
+BUILDLINK_API_DEPENDS.xemacs+=	${_EMACS_REQD}
+BUILDLINK_PKGSRCDIR.xemacs?=	${_EMACS_PKGDIR}
 .endif	# XEMACS_BUILDLINK3_MK
 
 BUILDLINK_CONTENTS_FILTER.xemacs=	${EGREP} '.*\.el$$|.*\.elc$$'

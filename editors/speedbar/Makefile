@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/07/05 18:21:20 jnemeth Exp $
+# $NetBSD$
 #
 
 DISTNAME=	speedbar-0.14beta4
@@ -13,7 +13,7 @@ COMMENT=	Directory and code browser for emacs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 PKGSRC_MAKE_ENV+=	EMACS=${EMACS}
 

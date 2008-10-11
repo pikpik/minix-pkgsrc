@@ -9,7 +9,7 @@ MULE_UCS_BUILDLINK3_MK:=	${MULE_UCS_BUILDLINK3_MK}+
 # incorporated Unicode support.
 #
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .if ${EMACS_FLAVOR} == "emacs" && ${EMACS_VERSION_MAJOR} < 22
 
 .if ${BUILDLINK_DEPTH} == "+"

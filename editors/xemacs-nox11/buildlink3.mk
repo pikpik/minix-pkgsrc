@@ -13,9 +13,9 @@ BUILDLINK_PACKAGES+=	xemacs-nox11
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}xemacs-nox11
 
 .if ${XEMACS_NOX11_BUILDLINK3_MK} == "+"
-.include "../../mk/emacs.mk"
-BUILDLINK_API_DEPENDS.xemacs-nox11+=	${_EMACS_REQD.xemacs214nox}
-BUILDLINK_PKGSRCDIR.xemacs-nox11?=	${_EMACS_DEP.xemacs214nox}
+.include "../../editors/emacs/modules.mk"
+BUILDLINK_API_DEPENDS.xemacs-nox11+=	${_EMACS_REQD}
+BUILDLINK_PKGSRCDIR.xemacs-nox11?=	${_EMACS_PKGDIR}
 .endif	# XEMACS_NOX11_BUILDLINK3_MK
 
 BUILDLINK_CONTENTS_FILTER.xemacs-nox11=	${EGREP} '.*\.el$$|.*\.elc$$'

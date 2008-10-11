@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/08/05 08:38:26 jnemeth Exp $
+# $NetBSD$
 
 DISTNAME=	epg-0.0.14
 PKGREVISION=	2
@@ -20,5 +20,5 @@ DEPENDS+=	gnupg>=1.4.3:../../security/gnupg
 # per README: GNU Emacs 21.4, XEmacs 21.4, or later
 EMACS_VERSIONS_ACCEPTED= emacs21 emacs21nox emacs22 emacs22nox xemacs214 xemacs215
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

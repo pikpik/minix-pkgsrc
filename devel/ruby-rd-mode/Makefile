@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/06/19 15:24:36 taca Exp $
+# $NetBSD$
 #
 
 DISTNAME=	rdtool-${RUBY_RD_VERSION}
@@ -30,5 +30,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/rd-mode.elc ${DESTDIR}${EMACS_LISPPREFIX}/rd-mode
 
 .include "../../lang/ruby/rubyversion.mk"
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

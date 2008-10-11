@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/08/06 18:17:17 wiz Exp $
+# $NetBSD$
 
 DISTNAME=		nxml-mode-20041004
 PKGREVISION=		1
@@ -25,5 +25,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/char-name/unicode/*.el ${EMACS_LISPPREFIX:Q}/nxml-mode/char-name/unicode
 	${INSTALL_DATA} ${WRKSRC}/nxml-mode.info ${EMACS_INFOPREFIX:Q}
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

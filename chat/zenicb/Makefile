@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/03/04 21:29:04 jlam Exp $
+# $NetBSD$
 
 DISTNAME=		zenicb-19981202
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -10,10 +10,11 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		ICB client for Emacs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+INSTALLATION_DIRS=	${EMACS_LISPPREFIX:C|^${PREFIX}/||}/zenicb
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox emacs20 xemacs214 xemacs215
 
@@ -22,7 +23,6 @@ EMACS_VERSIONS_ACCEPTED=	emacs21 emacs21nox emacs20 xemacs214 xemacs215
 do-build:
 
 do-install:
-	@${INSTALL_DATA_DIR} ${DESTDIR}${EMACS_LISPPREFIX}/zenicb
 	@for file in ${WRKSRC}/src/*.el; do \
 		j="${INSTALL_DATA} $$file ${DESTDIR}${EMACS_LISPPREFIX}/zenicb"; \
 		${ECHO} $$j; $$j; \

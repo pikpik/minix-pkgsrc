@@ -3,7 +3,7 @@
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 MELL_BUILDLINK3_MK:=	${MELL_BUILDLINK3_MK}+
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .if ${BUILDLINK_DEPTH} == "+"
 BUILDLINK_DEPENDS+=	mell

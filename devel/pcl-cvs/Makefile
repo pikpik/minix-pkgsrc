@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/17 20:59:49 wiz Exp $
+# $NetBSD$
 #
 
 DISTNAME=	pcl-cvs-2.9.9
@@ -11,6 +11,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=
 COMMENT=	Front-end to CVS for emacs
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 BROKEN_IN=	pkgsrc-2006Q1
 
 DEPENDS+=	emacs20-elib>=1.0:../../devel/emacs20-elib
@@ -20,13 +22,13 @@ CONFLICTS+=	emacs21
 
 EMACS_VERSIONS_ACCEPTED=	emacs20
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .if !((${EMACS_FLAVOR} == "emacs") && (${EMACS_VERSION_MAJOR} == "20"))
 PKG_SKIP_REASON+=	"${PKGNAME} is only for emacs20"
 .endif
 
-MAKE_ENV+=	PREFIX=${PREFIX:Q}
+MAKE_ENV+=	PREFIX=${DESTDIR:Q}${PREFIX:Q}
 BUILD_TARGET=	default
 INFO_FILES=	# PLIST
 MESSAGE_SUBST+=	EMACS_LISPPREFIX=${EMACS_LISPPREFIX:Q}

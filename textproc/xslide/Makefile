@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/02/05 23:11:08 joerg Exp $
+# $NetBSD$
 #
 
 DISTNAME=		xslide-0.2.2
@@ -12,7 +12,7 @@ HOMEPAGE=		http://xslide.sourceforge.net/
 COMMENT=		XSL major mode for emacs
 
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .if ${EMACS_FLAVOR} == "emacs"
 EMACS=	emacs

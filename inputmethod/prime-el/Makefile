@@ -28,5 +28,5 @@ CONF_FILES+=	${PREFIX}/share/doc/prime/examples/Custom_prime-el.el \
 .include "../../devel/apel/buildlink3.mk"
 .include "../../devel/mell/buildlink3.mk"
 .include "../../inputmethod/prime/buildlink3.mk"
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

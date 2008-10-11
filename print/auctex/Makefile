@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2007/10/29 04:44:04 uebayasi Exp $
+# $NetBSD$
 
 DISTNAME=		auctex-11.84
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -10,6 +10,8 @@ HOMEPAGE=		http://www.gnu.org/software/auctex/
 COMMENT=		Enhanced LaTeX mode for Emacs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+INSTALLATION_DIRS=	${EMACS_INFOPREFIX} \
+			${EMACS_LISPPREFIX}/auctex
 
 EMACS_MODULES=		base
 
@@ -26,6 +28,6 @@ INFO_FILES=		YES
 CONFIGURE_ARGS.emacs=	--with-lispdir=${EMACS_LISPPREFIX}
 CONFIGURE_ARGS.xemacs=	--with-packagedir=${EMACS_LISPPREFIX:C|/lisp||}
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/10/29 13:27:55 uebayasi Exp $
+# $NetBSD$
 
 DISTNAME=	emacs-packages-0.9
 CATEGORIES=	meta-pkgs editors
@@ -9,7 +9,7 @@ MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Meta-package for the GNU Emacs lisp packages
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 # XXX
 # Please update the version of this package (emacs-package) when you

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/06/15 13:31:30 wiz Exp $
+# $NetBSD$
 #
 
 DISTNAME=	ispell.el
@@ -12,6 +12,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.eng.utah.edu/~kstevens/ispell-page.html
 COMMENT=	Emacs interface for ispell spell checker
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+INSTALLATION_DIRS=	${EMACS_LISPPREFIX:C|^${PREFIX}/||}/ispell
+
 DEPENDS+=	ispell-base-[0-9]*:../../textproc/ispell-base
 
 DIST_SUBDIR=	${PKGNAME_NOREV:C|^xemacs-||}
@@ -21,8 +24,7 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
 do-install:
-	${INSTALL_DATA_DIR} ${EMACS_LISPPREFIX}/ispell
-	${INSTALL_DATA} ${WRKSRC}/ispell.el ${EMACS_LISPPREFIX}/ispell
+	${INSTALL_DATA} ${WRKSRC}/ispell.el ${DESTDIR}${EMACS_LISPPREFIX}/ispell
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 .include "../../mk/bsd.pkg.mk"

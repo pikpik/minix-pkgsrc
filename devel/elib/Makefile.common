@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.4 2007/07/05 18:20:07 jnemeth Exp $
+# $NetBSD$
 #
 
 DISTNAME=	elib-1.0
@@ -10,7 +10,7 @@ COMMENT=	Library of utility functions for Emacs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-.include "../../mk/emacs.mk"
+.include "../../editors/emacs/modules.mk"
 
 PKGSRC_MAKE_ENV+=	EMACS=${EMACS_FLAVOR:Q}
 MAKEFLAGS+=		EMACS=${EMACS_FLAVOR:Q}
