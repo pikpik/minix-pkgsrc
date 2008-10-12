@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.277 2008/10/11 12:27:36 obache Exp $
+# $NetBSD: Makefile,v 1.278 2008/10/12 21:50:37 he Exp $
 #
 
 COMMENT=	Databases
@@ -98,6 +98,7 @@ SUBDIR+=	p5-DBIx-Class-DynamicDefault
 SUBDIR+=	p5-DBIx-Class-Fixtures
 SUBDIR+=	p5-DBIx-Class-InflateColumn-IP
 SUBDIR+=	p5-DBIx-Class-Loader
+SUBDIR+=	p5-DBIx-Class-RDBOHelpers
 SUBDIR+=	p5-DBIx-Class-Schema-Loader
 SUBDIR+=	p5-DBIx-Class-TimeStamp
 SUBDIR+=	p5-DBIx-Class-UUIDColumns
