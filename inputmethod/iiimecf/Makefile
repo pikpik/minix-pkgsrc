@@ -13,6 +13,8 @@ COMMENT=	Emacs Lisp library for IIIM Protocol
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+EMACS_BUILDLINK=# defined
+
 do-build:
 	@cd ${WRKSRC} && \
 		${EMACS_BIN} -q --no-site-file -batch -l iiimcf-comp.el

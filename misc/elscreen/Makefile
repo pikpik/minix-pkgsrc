@@ -24,6 +24,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 
+EMACS_BUILDLINK=# defined
+
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${EMACS_LISPPREFIX}/elscreen
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/elscreen

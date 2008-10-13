@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=	ddskk-[0-9]*
 
 EMACS_MODULES+=	base leim
+EMACS_BUILDLINK=# defined
 
 MAKEFLAGS+=	EMACS=${EMACS_BIN:Q}
 MAKE_ENV=	prefix=${DESTDIR:Q}${PREFIX:Q} \

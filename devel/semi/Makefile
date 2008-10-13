@@ -31,6 +31,7 @@ USE_TOOLS+=	makeinfo
 INFO_FILES=	# PLIST
 
 EMACS_MODULES=	base
+EMACS_BUILDLINK=# defined
 
 BUILD_TARGET.emacs=	elc
 BUILD_TARGET.xemacs=	package

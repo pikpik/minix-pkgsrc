@@ -63,6 +63,16 @@
 #		Default value:
 #			emacs21, emacs21nox, emacs22, emacs22nox, emacs20, xemacs215, xemacs215nox, xemacs214, xemacs214nox
 #
+#	EMACS_BUILDLINK
+#		Description:
+#			Whether create buildlink directory of *.el / *.elc
+#			files.  ELPs which include other ELP's buildlink3.mk
+#			must define this value.
+#		Possible values:
+#			<defined>, <undefined>
+#		Default value:
+#			<undefined>
+#
 # Variables provided for ELPs:
 #
 #	EMACS_BIN
@@ -309,9 +319,11 @@ PRINT_PLIST_AWK+=	{ gsub(/${EMACS_LISPPREFIX:S|${PREFIX}/||:S|/|\\/|g}/, \
 # Build environment (buildlink3)
 #
 
+.if defined(EMACS_BUILDLINK)
 _EMACS_DIR=	${BUILDLINK_DIR}/share/emacs
 ALL_ENV+=	EMACSLOADPATH=${_EMACS_DIR}/${_EMACS_VERSION_MAJOR}.${_EMACS_VERSION_MINOR}/lisp:${_EMACS_DIR}/site-lisp
 
 .include	"${_EMACS_PKGDIR}/buildlink3.mk"
+.endif
 
 .endif	# EMACS_MK

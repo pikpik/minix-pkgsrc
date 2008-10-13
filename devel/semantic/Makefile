@@ -39,6 +39,8 @@ AUXFILES+=	c.bnf make.bnf java.bnf scheme.bnf
 
 INSTALLATION_DIRS=	${EMACS_INFOPREFIX}
 
+EMACS_BUILDLINK=# defined
+
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${EMACS_LISPPREFIX}/semantic
 	cd ${WRKSRC} && ${INSTALL_DATA} ${SRCS} ${SRCS:.el=.elc} 	\

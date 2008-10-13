@@ -31,6 +31,8 @@ SUBST_FILES.fix-icondir=	Makefile.in w3m.el w3mhack.el
 SUBST_SED.fix-icondir=		-e 's|etc/images/w3m|etc/w3m|g' \
 				-e 's|images/w3m|w3m|g'
 
+EMACS_BUILDLINK=# defined
+
 .include "../../editors/emacs/modules.mk"
 
 # GNU Emacs 21 or later and XEmacs have GUI support

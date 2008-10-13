@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+=	eblook>=1.4:../../textproc/eblook
 
 EMACS_VERSIONS_ACCEPTED=	emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs214 xemacs215
+EMACS_BUILDLINK=# defined
 
 GNU_CONFIGURE=	YES
 MAKEFLAGS+=	lispdir=${EMACS_LISPPREFIX}/lookup

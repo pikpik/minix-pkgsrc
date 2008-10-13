@@ -33,6 +33,7 @@ MAKEFLAGS.emacs+=
 MAKEFLAGS.xemacs+=	PACKAGEDIR=${EMACS_LISPPREFIX:C|/lisp$||}
 
 EMACS_MODULES=	base
+EMACS_BUILDLINK=# defined
 
 post-build:
 	@cd ${WRKSRC}; for i in mime-en mime-ja; do			\

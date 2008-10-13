@@ -26,6 +26,8 @@ INSTALLATION_DIRS=	${DOCDIR}/en ${DOCDIR}/ja \
 			${EXAMPLESDIR}/en ${EXAMPLESDIR}/ja \
 			${EMACS_INFOPREFIX}
 
+EMACS_BUILDLINK=# defined
+
 post-install:
 	@set -e; \
 	for f in BUGS NEWS README; do \
