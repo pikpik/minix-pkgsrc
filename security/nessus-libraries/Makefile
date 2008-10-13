@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.29 2008/07/14 12:56:12 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2008/10/10 11:34:50 adam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include 	"../../security/nessus/Makefile.common"
 
 DISTNAME=	nessus-libraries-${VERS}
+PKGREVISION=	1
+
 COMMENT=	Libs required by the Nessus Network security scanner
 
 WRKSRC=		${WRKDIR}/nessus-libraries

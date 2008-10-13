@@ -1,16 +1,17 @@
-# $NetBSD: Makefile,v 1.33 2006/04/25 12:45:57 salo Exp $
+# $NetBSD: Makefile,v 1.34 2008/07/14 12:56:12 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include	"../../security/nessus/Makefile.common"
 
 DISTNAME=	nessus-${VERS}
+PKGREVISION=	1
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 COMMENT=	The Nessus Network Security Scanner
 
-DEPENDS+=	nessus-plugins-${VERS}{,nb*}:../../security/nessus-plugins
+DEPENDS+=	nessus-plugins-${VERS}nb*:../../security/nessus-plugins
 
 EXTRACT_ONLY=	# empty
 NO_CHECKSUM=	yes
