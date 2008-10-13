@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2008/06/23 16:44:47 drochner Exp $
+# $NetBSD: Makefile,v 1.31 2008/07/28 15:34:40 drochner Exp $
 
-DISTNAME=	glibmm-2.16.4
+DISTNAME=	glibmm-2.18.0
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/glibmm/2.16/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/glibmm/2.18/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
@@ -18,7 +18,7 @@ USE_TOOLS+=		gmake pkg-config perl:run
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/glib/glibmm-2.4.pc.in
 GNU_CONFIGURE=		yes
 
-BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.16.0
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.18.0
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libsigc++/buildlink3.mk"
