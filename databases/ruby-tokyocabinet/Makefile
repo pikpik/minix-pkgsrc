@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/09/04 12:11:41 obache Exp $
 #
 
-DISTNAME=	tokyocabinet-ruby-1.14
+DISTNAME=	tokyocabinet-ruby-1.15
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/-ruby//}
 CATEGORIES=	databases ruby
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}
