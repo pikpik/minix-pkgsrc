@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2008/01/06 18:39:38 rillig Exp $
+# $NetBSD: Makefile,v 1.27 2008/03/03 05:33:32 jlam Exp $
 
 DISTNAME=	estic-1.61
 PKGREVISION=	1
 CATEGORIES=	comms
-MASTER_SITES=	ftp://ftp.gwdg.de/pub/misc/isdn/linux/estic/
+MASTER_SITES=	ftp://ftp.gwdg.de/pub/misc/isdn/linux/isdn4linux/oldstuff/estic/
 EXTRACT_SUFX=	.zip
 DISTFILES=	${EXTRACT_ONLY} ${ESTICPATCH}
 
