@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1040 2008/10/12 17:31:10 abs Exp $
+# $NetBSD: Makefile,v 1.1041 2008/10/13 04:31:46 kefren Exp $
 #
 
 COMMENT=	Development utilities
@@ -353,6 +353,7 @@ SUBDIR+=	mantis
 SUBDIR+=	meld
 SUBDIR+=	mell
 SUBDIR+=	memcached
+SUBDIR+=	menhir
 SUBDIR+=	mercurial
 SUBDIR+=	mico
 SUBDIR+=	mk-files
