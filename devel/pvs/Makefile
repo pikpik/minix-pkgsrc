@@ -43,8 +43,6 @@ MAINFILEEXT=		${EMUL_OPSYS}
 
 INSTALLATION_DIRS=	bin
 
-EMACS_BUILDLINK=	# defined
-
 do-build:
 	${SED} -e "s|@PREFIX@|${PREFIX}|" ${WRKSRC}/pvs > ${WRKSRC}/pvs.tmp
 	${MV} -f ${WRKSRC}/pvs.tmp ${WRKSRC}/pvs
