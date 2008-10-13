@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2006/07/20 21:03:50 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2006/07/23 16:47:11 rillig Exp $
 #
 
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_R_CRAN:=contrib/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	${R_HOMEPAGE_BASE}/akima.html
+HOMEPAGE=	${R_HOMEPAGE_BASE}/akima/
 COMMENT=	Linear or cubic spline interpolation for irregular gridded data
 
 R_PKGNAME=	akima
