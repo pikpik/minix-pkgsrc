@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.79 2007/12/02 08:32:23 rillig Exp $
+# $NetBSD: Makefile,v 1.80 2008/10/11 21:00:53 markd Exp $
 
-DISTNAME=	nas-1.9.src
+DISTNAME=	nas-1.9.1.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nas/}
 
@@ -84,7 +83,6 @@ CONF_FILES=	${EGDIR}/nasd.conf.eg ${PKG_SYSCONFDIR}/nasd.conf
 .  if ${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD" || ${OPSYS} == "OpenBSD" || \
       ${OPSYS} == "DragonFly" || ${OPSYS} == "Linux" || ${OPSYS} == "UnixWare"
 .  include "../../mk/oss.buildlink3.mk"
-PLIST_SRC+=	${PKGDIR}/PLIST.voxware
 .  endif
 .endif
 
