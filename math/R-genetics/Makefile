@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:10:00 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/07/02 13:19:53 markd Exp $
 #
 
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_R_CRAN:=contrib/}
 
 MAINTAINER=	mchittur@cs.nmsu.edu
-HOMEPAGE=	${R_HOMEPAGE_BASE}/genetics.html
+HOMEPAGE=	${R_HOMEPAGE_BASE}/genetics/
 COMMENT=	Classes and methods for handling genetic data
 
 R_PKGNAME=	genetics
-R_PKGVER=	1.2.0
+R_PKGVER=	1.3.4
 
 DEPENDS+=	R-combinat>=0.0.6:../../math/R-combinat
 DEPENDS+=	R-gdata>=2.1.2:../../math/R-gdata
