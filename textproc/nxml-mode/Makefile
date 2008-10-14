@@ -11,7 +11,7 @@ COMMENT=		Major mode for editing XML documents for emacs
 
 NO_CONFIGURE=		yes
 USE_TOOLS+=		makeinfo
-EMACS_VERSIONS_ACCEPTED= emacs22 emacs21 emacs21nox
+EMACS_VERSIONS_ACCEPTED= emacs22 emacs22nox emacs21 emacs21nox
 
 MESSAGE_SUBST+=		LISPDIR=${EMACS_LISPPREFIX:Q}
 INSTALLATION_DIRS=	${EMACS_LISPPREFIX:Q}/nxml-mode ${EMACS_INFOPREFIX:Q}
