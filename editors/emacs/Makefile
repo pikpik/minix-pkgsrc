@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.115 2008/10/11 09:56:38 uebayasi Exp $
+# $NetBSD$
 
 PKGNAME?=	${DISTNAME}
 COMMENT?=	GNU editing macros (editor)
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_GNU:=emacs/}
 
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
+#LICENSE=	gnu-gpl-v3
 
 CONFLICTS+=	elisp-manual-[0-9]*
 CONFLICTS+=	emacs-[0-9]*
