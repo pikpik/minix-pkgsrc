@@ -1,9 +1,10 @@
-# $NetBSD: plugins.mk,v 1.1 2007/08/03 02:34:41 smb Exp $
+# $NetBSD: plugins.mk,v 1.2 2007/10/23 20:16:51 smb Exp $
 #
 
 .include "../../mail/claws-mail/Makefile.common"
+.include "../../mail/claws-mail/Makefile.vers"
 
-PKGNAME=	claws-mail-${PLUGIN_NAME:S/_/-/}-${PLUG_VER}
+PKGNAME=	claws-mail-${PLUGIN_NAME:S/_/-/}-${CLAWS_VERSION}
 
 CONFIGURE_DIRS=	.
 BUILD_DIRS=	src/plugins/${PLUGIN_NAME}
