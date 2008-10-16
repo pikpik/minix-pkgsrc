@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/04/15 18:23:54 drochner Exp $
+# $NetBSD: Makefile,v 1.22 2008/06/20 01:09:28 joerg Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -11,6 +11,7 @@ COMMENT+=	(using Xine)
 CONFLICTS+=	totem-[0-9]*
 
 CONFIGURE_ARGS+=	--enable-xine=yes
+CONFIGURE_ARGS+=	--disable-browser-plugins
 
 # needed for fake events to keep screensavers out, dubious
 .include "../../x11/libXtst/buildlink3.mk"
