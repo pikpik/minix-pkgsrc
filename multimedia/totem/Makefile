@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/04/15 18:23:54 drochner Exp $
+# $NetBSD: Makefile,v 1.27 2008/06/20 01:09:28 joerg Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -10,6 +10,7 @@ COMMENT+=	(using GStreamer)
 CONFLICTS+=	totem-xine-[0-9]*
 
 CONFIGURE_ARGS+=	--enable-gstreamer=yes
+CONFIGURE_ARGS+=	--disable-browser-plugins
 
 BUILDLINK_API_DEPENDS.gst-plugins0.10-base+=	gst-plugins0.10-base>=0.10.7
 
