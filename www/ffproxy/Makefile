@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/01/05 19:12:35 garbled Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:55 joerg Exp $
 
 DISTNAME=	ffproxy-1.6
 CATEGORIES=	www
 MASTER_SITES=	http://faith.eu.org/ffproxy/
+PKGREVISION=	1
 
 MAINTAINER=	niklas@noxa.de
 HOMEPAGE=	http://faith.eu.org/programs.html\#ffproxy
