@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2008/04/15 18:45:41 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2008/06/20 01:09:27 joerg Exp $
 
-DISTNAME=		gnome-media-2.22.0
+DISTNAME=		gnome-media-2.24.0.1
 CATEGORIES=		multimedia gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-media/2.22/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-media/2.24/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		rh@NetBSD.org
@@ -38,7 +38,6 @@ CONFIGURE_ARGS+=	--enable-ipv6
 CONFIGURE_ARGS+=	--disable-ipv6
 .endif
 
-GCONF_SCHEMAS=		CDDB-Slave2.schemas
 GCONF_SCHEMAS+=	gnome-audio-profiles.schemas
 GCONF_SCHEMAS+=	gnome-sound-recorder.schemas
 GCONF_SCHEMAS+=	gnome-volume-control.schemas
@@ -53,7 +52,6 @@ BUILDLINK_API_DEPENDS.libgnomeui+=		libgnomeui>=2.13.2
 .include "../../audio/esound/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/GConf-ui/buildlink3.mk"
-.include "../../devel/gail/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"
