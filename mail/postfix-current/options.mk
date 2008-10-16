@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.32 2008/06/03 10:30:51 ghen Exp $
+# $NetBSD: options.mk,v 1.24 2008/10/16 09:45:12 martti Exp $
 
 # Global and legacy options
 
@@ -84,6 +84,7 @@ AUXLIBS+=	-L${PGSQL_PREFIX}/lib -lpq \
 
 ###
 ### Support using a SQLite database for table lookups.
+### See http://www.treibsand.com/postfix-sqlite/
 ###
 .if !empty(PKG_OPTIONS:Msqlite)
 .  include "../../databases/sqlite3/buildlink3.mk"
