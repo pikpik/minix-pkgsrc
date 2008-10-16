@@ -1,11 +1,11 @@
 $NetBSD$
 
---- data/Makefile.in.orig	2008-04-10 10:34:02.000000000 -0400
+--- data/Makefile.in.orig	2008-09-22 23:30:16.000000000 +0200
 +++ data/Makefile.in
-@@ -628,8 +628,8 @@ info: info-recursive
+@@ -683,8 +683,8 @@ info: info-recursive
  info-am:
  
- install-data-am: install-data-local install-defaultDATA \
+ install-data-am: install-data-local install-gladeDATA \
 -	install-pixmapDATA install-schemasDATA install-settingsDATA \
 -	install-xsessionDATA
 +	install-pixmapDATA install-schemasDATA install-settingsDATA
