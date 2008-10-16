@@ -1,8 +1,8 @@
 $NetBSD$
 
---- gobject/Makefile.in.orig	2007-09-16 13:27:26.000000000 +0200
+--- gobject/Makefile.in.orig	2008-09-03 09:51:10.000000000 +0200
 +++ gobject/Makefile.in
-@@ -986,7 +986,7 @@ info: info-am
+@@ -675,7 +675,7 @@ info: info-am
  info-am:
  
  install-data-am: install-nodist_pygobjectPYTHON \
@@ -10,4 +10,4 @@ $NetBSD$
 +	install-pygobjectLTLIBRARIES \
  	install-pygobjectPYTHON
  
- install-exec-am:
+ install-dvi: install-dvi-am
