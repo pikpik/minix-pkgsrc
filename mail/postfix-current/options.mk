@@ -1,9 +1,9 @@
-# $NetBSD: options.mk,v 1.31 2008/04/12 22:43:04 jlam Exp $
+# $NetBSD: options.mk,v 1.32 2008/06/03 10:30:51 ghen Exp $
 
 # Global and legacy options
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.postfix
-PKG_SUPPORTED_OPTIONS=	bdb ldap mysql mysql4 pcre pgsql sasl tls
+PKG_SUPPORTED_OPTIONS=	bdb ldap mysql mysql4 pcre pgsql sasl sqlite tls
 PKG_SUGGESTED_OPTIONS=	tls
 
 .include "../../mk/bsd.options.mk"
@@ -80,6 +80,15 @@ AUXLIBS+=	-L${BUILDLINK_PREFIX.mysql-client}/lib/mysql		\
 CCARGS+=	-DHAS_PGSQL -I${PGSQL_PREFIX}/include/pgsql
 AUXLIBS+=	-L${PGSQL_PREFIX}/lib -lpq \
 		-L${BUILDLINK_PREFIX.openssl}/lib -lcrypt -lssl -lcrypto
+.endif
+
+###
+### Support using a SQLite database for table lookups.
+###
+.if !empty(PKG_OPTIONS:Msqlite)
+.  include "../../databases/sqlite3/buildlink3.mk"
+CCARGS+=	-DHAS_SQLITE  -I${SQLITE3_PREFIX}/include/sqlite3
+AUXLIBS+=	-L${SQLITE3_PREFIX}/lib -lsqlite3
 .endif
 
 ###
