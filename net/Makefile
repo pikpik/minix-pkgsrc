@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.729 2008/10/08 15:30:47 joerg Exp $
+# $NetBSD: Makefile,v 1.730 2008/10/09 00:25:51 joerg Exp $
 #
 
 COMMENT=	Networking tools
@@ -138,6 +138,7 @@ SUBDIR+=	gnugk
 SUBDIR+=	gofish
 SUBDIR+=	gopher
 SUBDIR+=	gsnmp
+SUBDIR+=	gst-plugins0.10-soup
 SUBDIR+=	gt-itm
 SUBDIR+=	gtk-gnutella
 SUBDIR+=	gtk_wicontrol
