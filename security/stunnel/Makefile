@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.63 2008/05/29 00:44:30 schmonz Exp $
+# $NetBSD: Makefile,v 1.64 2008/10/01 14:34:32 obache Exp $
 
-DISTNAME=		stunnel-4.24
-PKGREVISION=		1
+DISTNAME=		stunnel-4.26
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.fu-berlin.de/unix/security/stunnel/ \
 			ftp://stunnel.mirt.net/stunnel/ \
@@ -15,11 +14,11 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-ssl=${SSLBASE:Q} \
-			--with-cert-dir=${SSLCERTS:Q} \
-			--with-pem-dir=${SSLCERTS:Q} \
-			--sysconfdir=${PKG_SYSCONFDIR:Q} \
-			--localstatedir=${VARBASE:Q}
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--with-cert-dir=${SSLCERTS:Q}
+CONFIGURE_ARGS+=	--with-pem-dir=${SSLCERTS:Q}
+CONFIGURE_ARGS+=	--with-ssl=${SSLBASE:Q}
 
 PKG_SYSCONFSUBDIR=	stunnel
 
