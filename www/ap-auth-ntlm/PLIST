@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/httpd/mod_ntlm.so
+share/examples/mod_ntlm/ntlm.conf
+@dirrm share/examples/mod_ntlm
