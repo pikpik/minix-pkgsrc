@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2006/10/25 13:56:45 obache Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/20 01:09:14 joerg Exp $
 #
 
 DISTNAME=	Data-TemporaryBag-0.09
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Data/}
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2006/10/21 08:11:10 obache Exp $
+# $NetBSD: Makefile,v 1.8 2008/02/14 19:11:40 rhaen Exp $
 
 DISTNAME=	Pod-Coverage-0.19
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Pod/}
 

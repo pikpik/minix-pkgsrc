@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2006/06/08 15:35:43 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2008/06/12 02:14:23 joerg Exp $
 
 DISTNAME=	IO-Stty-.02
 PKGNAME=	p5-IO-stty-0.02
+PKGREVISION=	4
 SVR4_PKGNAME=	p5ist
-PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IO/}
 

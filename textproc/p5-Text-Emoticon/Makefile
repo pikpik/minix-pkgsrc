@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/02/22 12:21:18 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:49 joerg Exp $
 
 DISTNAME=       Text-Emoticon-0.04
 PKGNAME=        p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/M/MI/MIYAGAWA/}
 

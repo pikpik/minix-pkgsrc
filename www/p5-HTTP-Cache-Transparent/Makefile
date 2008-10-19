@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/06/20 01:09:42 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/07/20 20:00:52 he Exp $
 
 DISTNAME=	HTTP-Cache-Transparent-1.0
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTTP/}
 

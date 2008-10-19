@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2008/02/08 12:51:59 rhaen Exp $
+# $NetBSD: Makefile,v 1.17 2008/07/15 12:16:09 rhaen Exp $
 #
 
 DISTNAME=	XML-Writer-0.604
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5xwr
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=XML/}

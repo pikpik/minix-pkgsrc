@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2006/12/15 13:11:10 adam Exp $
+# $NetBSD: Makefile,v 1.3 2007/05/23 07:52:15 adam Exp $
 
 DISTNAME=	DarwinStreamingSrvr5.5.5-Source
 PKGNAME=	DarwinStreamingServer-5.5.5
+PKGREVISION=	1
 CATEGORIES=	net multimedia
 MASTER_SITES=	http://www.opensource.apple.com/projects/streaming/release/
 

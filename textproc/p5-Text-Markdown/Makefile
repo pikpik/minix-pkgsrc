@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2008/06/12 02:14:49 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/07/27 16:31:20 he Exp $
 #
 
 DISTNAME=	Text-Markdown-1.0.21
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/B/BO/BOBTFISH/
 

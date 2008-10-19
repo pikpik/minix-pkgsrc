@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2005/10/18 08:33:24 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:24 joerg Exp $
 
 DISTNAME=	OOTools-2.21
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5oot
 CATEGORIES=	devel perl5
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/D/DO/DOMIZIO/

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2006/03/04 21:30:39 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2007/02/22 19:01:24 wiz Exp $
 
 DISTNAME=	psh-1.8
 PKGNAME=	perlsh-1.8
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	shells perl5
 MASTER_SITES=	http://www.focusresearch.com/gregor/download/
 

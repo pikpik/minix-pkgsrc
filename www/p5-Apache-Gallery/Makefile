@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.36 2007/02/15 14:07:44 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2008/05/26 02:13:25 joerg Exp $
 #
 
 DISTNAME=	Apache-Gallery-0.9.1
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	6
+PKGREVISION=	7
 SVR4_PKGNAME=	p5aga
 CATEGORIES=	www graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}

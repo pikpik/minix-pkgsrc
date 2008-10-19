@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2008/06/20 01:09:41 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2008/07/22 22:23:55 he Exp $
 
 DISTNAME=	Apache-SSI-2.19
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5ass
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}

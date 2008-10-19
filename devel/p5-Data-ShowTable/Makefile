@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2006/07/12 11:36:12 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2008/06/20 01:09:14 joerg Exp $
 #
 
 DISTNAME=		Data-ShowTable-3.3
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		4
 SVR4_PKGNAME=		p5dst
-PKGREVISION=		3
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Data/}
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2006/03/04 21:30:59 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2008/06/20 01:09:41 joerg Exp $
 #
 
 DISTNAME=	Apache-DBILogConfig-0.02
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	3
 SVR4_PKGNAME=	p5adc
-PKGREVISION=	2
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}
 

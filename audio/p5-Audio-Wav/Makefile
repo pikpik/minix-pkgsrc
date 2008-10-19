@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2007/02/27 08:53:44 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/20 01:09:07 joerg Exp $
 #
 
 DISTNAME=	Audio-Wav-0.06
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Audio/}
 

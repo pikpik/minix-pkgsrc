@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/11/04 16:02:12 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:53 joerg Exp $
 #
 
 DISTNAME=	Time-Interval-1.22
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	time
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/A/AH/AHICOX/
 

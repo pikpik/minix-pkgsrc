@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2008/06/20 01:09:43 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/07/20 20:16:28 he Exp $
 #
 
 DISTNAME=	HTTP-Proxy-0.22
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTTP/}
 

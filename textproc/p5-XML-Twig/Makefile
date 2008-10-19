@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2008/06/12 02:14:51 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2008/07/16 12:06:07 rhaen Exp $
 #
 
 DISTNAME=	XML-Twig-3.32
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5xtw
 CATEGORIES=	textproc perl5
 MASTER_SITES=	http://www.xmltwig.com/xmltwig/ \

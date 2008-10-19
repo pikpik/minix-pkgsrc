@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2008/01/19 09:16:26 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2008/06/12 02:14:57 joerg Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -6,7 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "Makefile.common"
 
 PKGNAME=		p5-gtk-${GTKPERL_VERSION}
-PKGREVISION=		6
+PKGREVISION=		7
 SVR4_PKGNAME=		p5gtk
 
 MAINTAINER=		pkgsrc-users@NetBSD.org

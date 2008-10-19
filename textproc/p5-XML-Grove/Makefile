@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2006/02/05 23:11:04 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2008/06/12 02:14:50 joerg Exp $
 #
 
 DISTNAME=	XML-Grove-0.46alpha
 PKGNAME=	p5-${DISTNAME:S/alpha/.0.1/}
-PKGREVISION=	4
+PKGREVISION=	5
 SVR4_PKGNAME=	p5xgr
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=XML/}

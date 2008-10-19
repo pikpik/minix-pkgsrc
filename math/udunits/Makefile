@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2007/12/20 12:08:22 obache Exp $
+# $NetBSD: Makefile,v 1.25 2008/09/02 03:11:08 obache Exp $
 
 DISTNAME=		udunits-1.12.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		math devel
 MASTER_SITES=		ftp://ftp.unidata.ucar.edu/pub/udunits/
 EXTRACT_SUFX=		.tar.Z

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2006/11/03 11:21:48 obache Exp $
+# $NetBSD: Makefile,v 1.17 2007/05/27 09:41:24 heinz Exp $
 
 DISTNAME=		Mail-ListDetector-1.01
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 SVR4_PKGNAME=		p5mli
 CATEGORIES=		mail perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Mail/}

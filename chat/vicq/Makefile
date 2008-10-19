@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2007/12/29 21:29:55 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2008/06/07 14:27:38 obache Exp $
 
 DISTNAME=	vicq-0.4.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	chat
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tar.bz2

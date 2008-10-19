@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2006/03/04 21:30:22 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:39 joerg Exp $
 #
 
 DISTNAME=	Net-Gnats-0.04
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnatsperl/}
 

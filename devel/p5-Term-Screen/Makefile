@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2006/10/01 14:22:02 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2008/06/12 02:14:26 joerg Exp $
 
 DISTNAME=	Term-Screen-1.03
 PKGNAME=	p5-Term-Screen-1.03
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Term/}
 

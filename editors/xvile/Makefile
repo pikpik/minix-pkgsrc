@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.56 2008/01/05 14:59:47 agc Exp $
+# $NetBSD: Makefile,v 1.57 2008/09/09 10:14:30 bjs Exp $
 
 DISTNAME=		vile-9.7
 PKGNAME=		x${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		editors
 MASTER_SITES=		ftp://invisible-island.net/vile/ \
 			ftp://ftp.phred.org/pub/vile/

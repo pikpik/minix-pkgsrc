@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2007/02/22 19:27:15 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2008/06/12 02:14:48 joerg Exp $
 #
 
 DISTNAME=	Pod-POM-0.17
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5pod
 # PKGREVISION=	2
 CATEGORIES=	textproc perl5

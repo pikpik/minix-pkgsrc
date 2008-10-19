@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2007/02/18 03:17:10 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2008/01/05 22:38:08 heinz Exp $
 
 DISTNAME=		HTML-Tree-3.23
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 SVR4_PKGNAME=		p5htr
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=HTML/}

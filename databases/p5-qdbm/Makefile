@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2007/12/10 01:24:25 obache Exp $
+# $NetBSD: Makefile,v 1.5 2008/02/08 14:15:40 obache Exp $
 #
 
 .include "../../databases/qdbm/Makefile.common"
 
 PKGNAME=	p5-qdbm-1.0.0.${QDBM_VERSION}
+PKGREVISION=	1
 CATEGORIES=	databases perl5
 
 MAINTAINER=	obache@NetBSD.org

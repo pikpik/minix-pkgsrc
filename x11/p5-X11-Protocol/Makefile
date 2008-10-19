@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2007/02/27 13:30:49 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:57 joerg Exp $
 #
 
 DISTNAME=		X11-Protocol-0.56
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		x11 perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=X11/}
 

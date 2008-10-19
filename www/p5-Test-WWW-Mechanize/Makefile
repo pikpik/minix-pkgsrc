@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2008/04/23 21:10:32 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/12 02:14:56 joerg Exp $
 #
 
 DISTNAME=	Test-WWW-Mechanize-1.20
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5twm
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Test/}

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:29:22 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:24 joerg Exp $
 #
 
 DISTNAME=	Memoize-1.01
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	3
 SVR4_PKGNAME=	p5mem
-PKGREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Memoize/}
 

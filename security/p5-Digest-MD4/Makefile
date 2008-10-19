@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2006/03/04 21:30:37 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2008/06/20 01:09:34 joerg Exp $
 #
 
 DISTNAME=		Digest-MD4-1.5
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		3
 SVR4_PKGNAME=		p5md4
-PKGREVISION=		2
 CATEGORIES=		security perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Digest/}
 
