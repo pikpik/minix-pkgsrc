@@ -1,4 +1,4 @@
-# $NetBSD: developer.mk,v 1.12 2008/04/30 16:22:18 jlam Exp $
+# $NetBSD: developer.mk,v 1.13 2008/10/20 10:17:40 rillig Exp $
 #
 # Public targets for developers:
 #
@@ -39,6 +39,9 @@
 # commit-changes-entry:
 # cce:
 #	Like changes-entry, plus the CHANGES file is committed.
+#
+# Keywords: commit update add rename changes
+#
 
 CTYPE?=			Updated
 NETBSD_LOGIN_NAME?=	${_NETBSD_LOGIN_NAME_cmd:sh}
