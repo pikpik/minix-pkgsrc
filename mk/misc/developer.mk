@@ -1,4 +1,4 @@
-# $NetBSD: developer.mk,v 1.11 2007/11/29 23:35:37 gdt Exp $
+# $NetBSD: developer.mk,v 1.12 2008/04/30 16:22:18 jlam Exp $
 #
 # Public targets for developers:
 #
@@ -36,7 +36,8 @@
 #	Like changes-entry-noupdate, plus the CHANGES file is updated,
 #	and if not writable, "cvs edit" is done.
 #
-# commit-changes-entry cce:
+# commit-changes-entry:
+# cce:
 #	Like changes-entry, plus the CHANGES file is committed.
 
 CTYPE?=			Updated
