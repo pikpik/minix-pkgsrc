@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2008/04/16 12:20:39 abs Exp $
+# $NetBSD: Makefile,v 1.50 2008/10/16 14:13:31 drochner Exp $
 #
 
 DISTNAME=	pygtk-2.13.0
@@ -24,7 +24,7 @@ USE_TOOLS+=	gmake pkg-config
 
 PYTHON_VERSIONS_ACCEPTED=	25 24
 
-BUILDLINK_API_DEPENDS.pygobject+=	${PYPKGPREFIX}-gobject>=2.12.1
+BUILDLINK_API_DEPENDS.pygobject+=	${PYPKGPREFIX}-gobject>=2.15.3
 
 .include "../../devel/libglade/buildlink3.mk"
 .include "../../graphics/py-cairo/buildlink3.mk"
