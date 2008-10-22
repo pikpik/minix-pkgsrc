@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/02/22 19:27:14 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2007/08/03 01:32:06 taca Exp $
 #
 
 DISTNAME=	ipadic-2.7.0
@@ -20,6 +20,8 @@ DOCS=		AUTHORS COPYING ChangeLog NEWS doc/ipadic-ja.pdf
 
 INSTALLATION_DIRS=	${DOCDIR}
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 post-install:
 .for f in ${DOCS}
