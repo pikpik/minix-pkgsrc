@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.329 2008/09/16 17:04:36 seb Exp $
+# $NetBSD: Makefile,v 1.330 2008/09/16 20:00:35 gdt Exp $
 #
 
 COMMENT=	Security tools
@@ -223,6 +223,7 @@ SUBDIR+=	pwsafe
 SUBDIR+=	py-OpenSSL
 SUBDIR+=	py-SSLCrypto
 SUBDIR+=	py-amkCrypto
+SUBDIR+=	py-asn1
 SUBDIR+=	py-crack
 SUBDIR+=	py-cryptkit
 SUBDIR+=	py-denyhosts
