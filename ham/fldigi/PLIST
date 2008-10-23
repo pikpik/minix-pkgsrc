@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/fldigi
+share/applications/fldigi.desktop
+share/pixmaps/fldigi.xpm
+@comment in xdg-dirs: @dirrm share/pixmaps
+@comment in xdg-dirs: @dirrm share/applications
