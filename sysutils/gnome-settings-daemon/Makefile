@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2008/06/20 01:09:35 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2008/10/16 14:40:35 drochner Exp $
 #
 
 DISTNAME=	gnome-settings-daemon-2.24.0
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-settings-daemon/2.24/}
 EXTRACT_SUFX=	.tar.bz2
@@ -28,6 +29,7 @@ PKGCONFIG_OVERRIDE+=	data/gnome-settings-daemon.pc.in
 BUILDLINK_API_DEPENDS.libxklavier+=	libxklavier>=3.3
 
 .include "../../devel/GConf/schemas.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
 .include "../../devel/libgnome/buildlink3.mk"
