@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2006/12/27 04:11:02 wulf Exp $
+# $NetBSD: Makefile,v 1.21 2007/07/02 15:30:04 wulf Exp $
 #
 
-DISTNAME=	hamlib-1.2.6.2
+DISTNAME=	hamlib-1.2.7.1
 CATEGORIES=	ham
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hamlib/}
-#EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://hamlib.sourceforge.net/
