@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.41 2008/06/12 02:14:22 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2008/10/16 13:46:59 drochner Exp $
 
-DISTNAME=	eel-2.24.0
+DISTNAME=	eel-2.24.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/eel/2.24/}
 EXTRACT_SUFX=	.tar.bz2
