@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.730 2008/10/09 00:25:51 joerg Exp $
+# $NetBSD: Makefile,v 1.731 2008/10/17 15:19:25 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -328,6 +328,7 @@ SUBDIR+=	p5-Net-Jifty
 SUBDIR+=	p5-Net-LDAP-Server
 SUBDIR+=	p5-Net-LibIDN
 SUBDIR+=	p5-Net-Libdnet
+SUBDIR+=	p5-Net-MAC
 SUBDIR+=	p5-Net-NBName
 SUBDIR+=	p5-Net-OpenID-Consumer
 SUBDIR+=	p5-Net-Packet
