@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.433 2008/10/08 09:43:18 wiz Exp $
+# $NetBSD: Makefile,v 1.434 2008/10/20 01:11:31 ahoka Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -232,6 +232,7 @@ SUBDIR+=	p5-Text-DelimMatch
 SUBDIR+=	p5-Text-Diff
 SUBDIR+=	p5-Text-Diff-HTML
 SUBDIR+=	p5-Text-Diff-Parser
+SUBDIR+=	p5-Text-DoubleMetaphone
 SUBDIR+=	p5-Text-Emoticon
 SUBDIR+=	p5-Text-Emoticon-MSN
 SUBDIR+=	p5-Text-Format
