@@ -1,0 +1,7 @@
+# $NetBSD$
+#
+# CVS repo:	:pserver:anonymous@bdwgc.cvs.sourceforge.net:/cvsroot
+# CVS module:	bdwgc
+
+LIBATOMIC_OPS_VERSION=	1.2
+LIBATOMIC_OPS_SNAPDATE=	20081024
