@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.25 2008/08/10 16:19:33 tron Exp $
+@comment $NetBSD: PLIST,v 1.26 2008/10/07 13:22:32 kefren Exp $
 bin/al
 bin/al1
 bin/al2
