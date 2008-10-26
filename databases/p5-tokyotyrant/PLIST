@@ -1,0 +1,3 @@
+@comment $NetBSD$
+share/tokyotyrant/doc/perl/index.html
+@dirrm share/tokyotyrant/doc/perl
