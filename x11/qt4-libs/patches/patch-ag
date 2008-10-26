@@ -1,8 +1,8 @@
 $NetBSD$
 
---- qmake/project.cpp.orig	2008-04-28 15:11:14.000000000 +0200
+--- qmake/project.cpp.orig	2008-09-27 10:58:44.000000000 +0200
 +++ qmake/project.cpp
-@@ -1617,6 +1617,9 @@ QMakeProject::isActiveConfig(const QStri
+@@ -1611,6 +1611,9 @@ QMakeProject::isActiveConfig(const QStri
      else if(x == "false")
          return false;
  

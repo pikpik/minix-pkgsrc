@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2008/07/24 12:55:21 markd Exp $
+# $NetBSD: Makefile,v 1.22 2008/10/08 09:35:49 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-tools-${QTVERSION}
-PKGREVISION=	1
 COMMENT=	QT GUI (WYSIWYG) builder and other tools
 
 DEPENDS+=	libtool-base-[0-9]*:../../devel/libtool-base
@@ -21,7 +20,7 @@ UNLIMIT_RESOURCES=	datasize
 INSTALLATION_DIRS=	${QTPREFIX}/bin ${QTPREFIX}/lib lib/pkgconfig \
 	${QTPREFIX}/plugins/designer ${QTPREFIX}/phrasebooks \
 	${QTPREFIX}/mkspecs
-INSTALL_ENV+=		INSTALL_ROOT=${DESTDIR:Q}
+INSTALL_ENV+=		INSTALL_ROOT=${DESTDIR}
 
 post-configure:
 	ln -s ${QTPREFIX}/bin/moc ${WRKSRC}/bin/moc

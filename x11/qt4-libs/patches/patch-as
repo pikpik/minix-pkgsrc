@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tools/assistant/lib/fulltextsearch/qclucene-config_p.h.orig	2008-04-29 01:11:20.000000000 +1200
+--- tools/assistant/lib/fulltextsearch/qclucene-config_p.h.orig	2008-09-27 10:58:48.000000000 +0200
 +++ tools/assistant/lib/fulltextsearch/qclucene-config_p.h
-@@ -89,7 +89,7 @@ configure.
+@@ -87,7 +87,7 @@ configure.
  #define _CL_HAVE_FCNTL_H  1 
  #endif
  
