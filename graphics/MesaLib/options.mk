@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.11 2008/07/28 02:12:57 bjs Exp $
+# $NetBSD: options.mk,v 1.12 2008/07/29 13:56:15 tnn Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.MesaLib
 PKG_SUPPORTED_OPTIONS=
@@ -46,11 +46,11 @@ BUILD_TARGET_SUFFIX=	# empty
 
 .if !empty(PKG_OPTIONS:Mdri)
 BUILD_TARGET=	pkgsrc-dri${BUILD_TARGET_SUFFIX}
-PLIST.dri=	# empty
+PLIST.dri=	yes
 .  include "../../graphics/MesaLib/dri.mk"
 .else
 BUILD_TARGET=	pkgsrc
-PLIST.nodri=	# empty
+PLIST.nodri=	yes
 ###
 ### XXX building libOSMesa breaks with -j, and GNU make has no .WAIT
 ###
