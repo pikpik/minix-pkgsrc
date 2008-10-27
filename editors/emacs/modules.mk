@@ -4,7 +4,7 @@
 #
 # Note to users:
 #
-#	* Users choose one favourite Emacs version (default GNU Emacs 21).
+#	* Users choose one favourite Emacs version (default GNU Emacs 22).
 #
 #	* Emacs Lisp files are installed...
 #	  	GNU emacs
