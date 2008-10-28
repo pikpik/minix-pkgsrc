@@ -1,4 +1,4 @@
-/*	$NetBSD: mpool.c,v 1.1 2008/10/10 00:21:44 joerg Exp $	*/
+/*	$NetBSD: mpool.c,v 1.2 2008/10/26 12:52:00 joerg Exp $	*/
 /*	NetBSD: mpool.c,v 1.18 2008/09/11 12:58:00 joerg Exp 	*/
 
 /*-
@@ -33,7 +33,7 @@
 #include <nbcompat.h>
 #include <nbcompat/cdefs.h>
 
-__RCSID("$NetBSD: mpool.c,v 1.1 2008/10/10 00:21:44 joerg Exp $");
+__RCSID("$NetBSD: mpool.c,v 1.2 2008/10/26 12:52:00 joerg Exp $");
 
 #include <nbcompat/queue.h>
 #include <sys/stat.h>
@@ -48,6 +48,10 @@ __RCSID("$NetBSD: mpool.c,v 1.1 2008/10/10 00:21:44 joerg Exp $");
 
 #define	__MPOOLINTERFACE_PRIVATE
 #include <nbcompat/mpool.h>
+
+#ifndef	EFTYPE
+#define	EFTYPE		EINVAL
+#endif
 
 #ifdef __weak_alias
 __weak_alias(mpool_close,_mpool_close)
