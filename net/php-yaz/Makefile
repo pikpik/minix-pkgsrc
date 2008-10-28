@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2008/01/18 05:08:48 tnn Exp $
+# $NetBSD: Makefile,v 1.3 2008/06/12 02:14:41 joerg Exp $
 
 MODNAME=		yaz
-PECL_VERSION=		1.0.7
-PKGREVISION=		1
+PECL_VERSION=		1.0.14
+#PKGREVISION=		1
 CATEGORIES+=		net
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		PHP extension for YAZ
