@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:50 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/10/19 19:18:57 he Exp $
 
-DISTNAME=	XML-Atom-0.28
+DISTNAME=	XML-Atom-0.29
 PKGNAME=	p5-${DISTNAME}
 PKGREVISION=	1
 SVR4_PKGNAME=	p5xat
