@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1049 2008/10/26 23:47:48 joerg Exp $
+# $NetBSD: Makefile,v 1.1050 2008/10/27 00:01:30 he Exp $
 #
 
 COMMENT=	Development utilities
@@ -193,7 +193,6 @@ SUBDIR+=	gflib
 SUBDIR+=	giblib
 SUBDIR+=	gindent
 SUBDIR+=	glade
-SUBDIR+=	glade-gnome
 SUBDIR+=	glade3
 SUBDIR+=	glib
 SUBDIR+=	glib2
