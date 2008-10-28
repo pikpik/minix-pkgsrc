@@ -1,8 +1,8 @@
 $NetBSD$
 
---- kis_packsources.cc.orig	2006-10-09 20:10:16.000000000 +0000
+--- kis_packsources.cc.orig	2008-05-20 10:47:13.000000000 +0200
 +++ kis_packsources.cc
-@@ -272,7 +272,7 @@ int RegisterKismetSources(Packetsourcetr
+@@ -345,7 +345,7 @@ int RegisterKismetSources(Packetsourcetr
      REG_EMPTY_CARD(sourcetracker, "prism2_openbsd");
  #endif
  
