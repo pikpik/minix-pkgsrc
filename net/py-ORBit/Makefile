@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.29 2007/10/24 14:46:17 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2008/04/16 12:36:59 abs Exp $
 #
 
-DISTNAME=	pyorbit-2.14.3
+DISTNAME=	pyorbit-2.24.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/pyorbit/ORBit/}
 CATEGORIES=	net python
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pyorbit/2.14/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pyorbit/2.24/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	recht@NetBSD.org
