@@ -1,0 +1,6 @@
+@comment $NetBSD$
+include/pakchois/pakchois.h
+include/pakchois/pakchois11.h
+lib/libpakchois.la
+lib/pkgconfig/pakchois.pc
+@dirrm include/pakchois
