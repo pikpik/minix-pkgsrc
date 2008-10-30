@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.331 2008/10/22 20:39:13 tonnerre Exp $
+# $NetBSD: Makefile,v 1.332 2008/10/27 16:54:49 wiz Exp $
 #
 
 COMMENT=	Security tools
@@ -192,6 +192,7 @@ SUBDIR+=	p5-SHA
 SUBDIR+=	p5-String-Random
 SUBDIR+=	p5-Tie-EncryptedHash
 SUBDIR+=	p5-pcsc
+SUBDIR+=	pakchois
 SUBDIR+=	pakemon
 SUBDIR+=	pam-af
 SUBDIR+=	pam-dbm
