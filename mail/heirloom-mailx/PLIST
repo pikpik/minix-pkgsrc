@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/mailx
+man/man1/mailx.1
+share/doc/mailx/mailx.1.html
+share/examples/mailx/nail.rc
+@dirrm share/examples/mailx
+@dirrm share/doc/mailx
