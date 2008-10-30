@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2008/06/03 20:30:27 abs Exp $
+# $NetBSD: Makefile,v 1.3 2008/06/05 21:04:20 drochner Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
 
 PKGNAME=		poppler-qt4-${POPPLER_VERS}
+PKGREVISION=		1
 
 COMMENT=		PDF rendering library (QT4 wrapper)
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-cairo-output
-CONFIGURE_ARGS+=	--disable-splash-output
 CONFIGURE_ARGS+=	--enable-poppler-qt4
 CONFIGURE_ARGS+=	--disable-gtk-test
 CONFIGURE_ARGS+=	--disable-utils
@@ -19,6 +19,9 @@ PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-qt4.pc.in
 INSTALLATION_DIRS+=	lib include/poppler lib/pkgconfig
 
 BUILD_DIRS=		qt4/src
+
+pre-build:
+	(cd ${WRKSRC}/poppler; ${MAKE} libpoppler-arthur.la)
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/poppler-qt4.pc ${DESTDIR}${PREFIX}/lib/pkgconfig
