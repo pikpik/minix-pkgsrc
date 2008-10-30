@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.440 2008/09/17 00:21:48 obache Exp $
+# $NetBSD: Makefile,v 1.441 2008/09/19 19:06:17 joerg Exp $
 #
 
 COMMENT=	System utilities
@@ -152,6 +152,7 @@ SUBDIR+=	libgtop
 SUBDIR+=	libirman
 SUBDIR+=	libnotify
 SUBDIR+=	libol
+SUBDIR+=	libpciaccess
 SUBDIR+=	lilo
 SUBDIR+=	logfinder
 SUBDIR+=	logrot
