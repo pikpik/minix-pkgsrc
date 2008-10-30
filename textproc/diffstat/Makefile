@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.13 2007/11/08 23:46:11 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2007/12/02 13:04:15 wiz Exp $
 
-DISTNAME=	diffstat-1.45
+DISTNAME=	diffstat-1.46
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://invisible-island.net/diffstat/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	snj@NetBSD.org
 HOMEPAGE=	http://invisible-island.net/diffstat/diffstat.html
 COMMENT=	Display a histogram of diff changes
 
