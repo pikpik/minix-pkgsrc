@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- solenv/inc/settings.mk.orig	2008-10-31 19:44:01.000000000 +0900
++++ solenv/inc/settings.mk	2008-10-31 19:46:27.000000000 +0900
+@@ -977,6 +977,8 @@
+ .INCLUDE : unx.mk
+ .ENDIF
+ 
++.INCLUDE : pkgsrc.mk
++
+ # for multiprocess building in external modules
+ # allow seperate handling
+ EXTMAXPROCESS*=$(MAXPROCESS)
