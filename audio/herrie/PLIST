@@ -14,6 +14,7 @@ share/locale/pt_BR/LC_MESSAGES/herrie.mo
 share/locale/ru/LC_MESSAGES/herrie.mo
 share/locale/sv/LC_MESSAGES/herrie.mo
 share/locale/tr/LC_MESSAGES/herrie.mo
+share/locale/uk/LC_MESSAGES/herrie.mo
 share/locale/vi/LC_MESSAGES/herrie.mo
 share/locale/zh_CN/LC_MESSAGES/herrie.mo
 @dirrm share/examples/herrie
