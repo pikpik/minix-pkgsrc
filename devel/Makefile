@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1059 2008/10/31 00:11:27 he Exp $
+# $NetBSD: Makefile,v 1.1060 2008/10/31 00:22:18 he Exp $
 #
 
 COMMENT=	Development utilities
@@ -615,6 +615,7 @@ SUBDIR+=	p5-Memoize
 SUBDIR+=	p5-Memoize-ExpireLRU
 SUBDIR+=	p5-Module-Build
 SUBDIR+=	p5-Module-CoreList
+SUBDIR+=	p5-Module-CPANTS-Analyse
 SUBDIR+=	p5-Module-Dependency
 SUBDIR+=	p5-Module-ExtractUse
 SUBDIR+=	p5-Module-Find
