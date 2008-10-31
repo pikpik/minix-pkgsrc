@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2008/10/16 17:58:00 drochner Exp $
+# $NetBSD: Makefile,v 1.93 2008/10/27 01:13:06 wiz Exp $
 #
 
 DISTNAME=		nautilus-2.24.1
@@ -51,6 +51,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
 
+# for nautilus-cd-burner, remove when it's no longer needed
 post-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/lib/nautilus/extensions-1.0
 
