@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2008/09/04 11:16:18 tonnerre Exp $
+# $NetBSD: Makefile,v 1.76 2008/09/10 16:50:08 seb Exp $
 #
 
 COMMENT=	Clocks, calendars, daily planners and other time related applications
@@ -33,6 +33,7 @@ SUBDIR+=	kronolith
 SUBDIR+=	leapsunpack
 SUBDIR+=	lmclock
 SUBDIR+=	logtime
+SUBDIR+=	ocaml-calendar
 SUBDIR+=	p5-Calendar-Simple
 SUBDIR+=	p5-Data-ICal
 SUBDIR+=	p5-Data-ICal-DateTime
