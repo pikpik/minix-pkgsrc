@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/02/04 20:10:35 tnn Exp $
+# $NetBSD: Makefile,v 1.19 2008/02/18 16:39:43 xtraeme Exp $
 
 DISTNAME=	pnet-0.8.0
 #PKGREVISION=	1
@@ -12,6 +12,8 @@ COMMENT=	DotGNU Portable.NET (development tools)
 BUILD_DEPENDS+=	treecc>=0.2.6:../../devel/treecc
 
 CONFLICTS=	mono-[0-9]*
+
+MAKE_JOBS_SAFE=	no
 
 USE_TOOLS+=	gmake lex makeinfo
 USE_LANGUAGES=	c c++
