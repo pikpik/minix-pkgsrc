@@ -1,0 +1,2 @@
+@comment $NetBSD$
+include/hook_op_check.h
