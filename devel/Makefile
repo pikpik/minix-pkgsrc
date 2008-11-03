@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1067 2008/11/02 22:15:31 he Exp $
+# $NetBSD: Makefile,v 1.1068 2008/11/03 04:57:37 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -51,6 +51,7 @@ SUBDIR+=	autoconf213
 SUBDIR+=	autogen
 SUBDIR+=	automake
 SUBDIR+=	automake14
+SUBDIR+=	automoc4
 SUBDIR+=	avl
 SUBDIR+=	avltree
 SUBDIR+=	bcc
