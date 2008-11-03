@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.312 2008/10/14 11:04:04 hira Exp $
+# $NetBSD: Makefile,v 1.313 2008/11/02 00:11:13 snj Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -90,6 +90,7 @@ SUBDIR+=	kanjipad
 SUBDIR+=	kchm
 SUBDIR+=	kchmviewer
 SUBDIR+=	kde3-dirs
+SUBDIR+=	kde4-dirs
 SUBDIR+=	kdeaccessibility3
 SUBDIR+=	kdeaddons3
 SUBDIR+=	kdeadmin3
