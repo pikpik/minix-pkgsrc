@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- lib/libpci.pc.in.orig	2008-04-10 15:15:47.000000000 -0400
++++ lib/libpci.pc.in
+@@ -6,5 +6,5 @@ idsdir=@IDSDIR@
+ Name: libpci
+ Description: libpci
+ Version: @VERSION@
+-Libs: -L${libdir} -lpci @LDLIBS@
++Libs: -L${libdir} -l@PCIUTILS_LIBNAME@ @LDLIBS@
+ Cflags: -I${includedir}
