@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.437 2008/10/30 23:02:28 he Exp $
+# $NetBSD: Makefile,v 1.438 2008/10/31 12:13:17 obache Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -357,6 +357,8 @@ SUBDIR+=	qprint
 SUBDIR+=	qsubst
 SUBDIR+=	raptor
 SUBDIR+=	rarian
+SUBDIR+=	rasqal
+SUBDIR+=	redland
 SUBDIR+=	regexx
 SUBDIR+=	rfcutil
 SUBDIR+=	rman
