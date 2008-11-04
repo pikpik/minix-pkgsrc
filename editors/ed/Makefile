@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2007/02/22 19:26:25 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2008/04/09 00:38:51 reed Exp $
 
-DISTNAME=		ed-0.9
+DISTNAME=		ed-1.1
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_GNU:=ed/}
 EXTRACT_SUFX=		.tar.bz2
