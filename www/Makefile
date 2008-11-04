@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.601 2008/11/04 21:46:13 jwise Exp $
+# $NetBSD: Makefile,v 1.602 2008/11/04 21:51:16 jwise Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -146,7 +146,6 @@ SUBDIR+=	jakarta-servletapi
 SUBDIR+=	jakarta-tomcat4
 SUBDIR+=	jakarta-tomcat5
 SUBDIR+=	jalbum
-SUBDIR+=	jsdk20
 SUBDIR+=	kahua
 SUBDIR+=	kannel
 SUBDIR+=	kazehakase
