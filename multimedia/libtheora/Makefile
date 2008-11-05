@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/11/05 13:11:48 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2008/11/05 14:23:44 wiz Exp $
 #
 
 .include "Makefile.common"
@@ -20,9 +20,9 @@ do-install:
 
 .include "../../mk/bsd.prefs.mk"
 
-.if !empty(MACHINE_PLATFORM:MDarwin-[9].*-i386)
-CONFIGURE_ARGS+=	--disable-asm
-.endif
+#.if !empty(MACHINE_PLATFORM:MDarwin-[9].*-i386)
+#CONFIGURE_ARGS+=	--disable-asm
+#.endif
 
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
