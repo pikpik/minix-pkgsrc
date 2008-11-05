@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.127 2008/11/03 04:52:22 obache Exp $
+# $NetBSD: Makefile,v 1.128 2008/11/03 11:01:32 markd Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -71,6 +71,7 @@ SUBDIR+=	libmpeg3
 SUBDIR+=	libnms
 SUBDIR+=	libogg
 SUBDIR+=	libtheora
+SUBDIR+=	libtheora-docs
 SUBDIR+=	lsdvd
 SUBDIR+=	mediatomb
 SUBDIR+=	mencoder
