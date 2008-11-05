@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2008/11/05 14:23:44 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2008/11/05 14:48:43 tron Exp $
 #
 
 .include "Makefile.common"
@@ -17,12 +17,6 @@ do-install:
 	cd ${WRKSRC} && ${MAKE_ENV} ${MAKE} install-pkgconfigDATA
 	cd ${WRKSRC}/include && ${MAKE_ENV} ${MAKE} install
 	cd ${WRKSRC}/lib && ${MAKE_ENV} ${MAKE} install
-
-.include "../../mk/bsd.prefs.mk"
-
-#.if !empty(MACHINE_PLATFORM:MDarwin-[9].*-i386)
-#CONFIGURE_ARGS+=	--disable-asm
-#.endif
 
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
