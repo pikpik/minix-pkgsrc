@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.439 2008/11/04 10:41:55 markd Exp $
+# $NetBSD: Makefile,v 1.440 2008/11/04 11:04:56 markd Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -144,6 +144,7 @@ SUBDIR+=	jade
 SUBDIR+=	java-mecab
 SUBDIR+=	jdom
 SUBDIR+=	jing
+SUBDIR+=	json-glib
 SUBDIR+=	kakasi
 SUBDIR+=	kbanner
 SUBDIR+=	kdoc
