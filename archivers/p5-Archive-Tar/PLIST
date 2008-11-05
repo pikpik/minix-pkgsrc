@@ -1,0 +1,6 @@
+@comment $NetBSD$
+@comment XXX: automatic handling and plain entries don't work, no idea why
+@unexec ${RM} -f %D/bin/ptar 2>/dev/null || ${TRUE}
+@unexec ${RM} -f %D/bin/ptardiff 2>/dev/null || ${TRUE}
+@unexec ${RM} -f %D/man/man1/ptar.1 2>/dev/null || ${TRUE}
+@unexec ${RM} -f %D/man/man1/ptardiff.1 2>/dev/null || ${TRUE}
