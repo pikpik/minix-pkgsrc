@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2007/06/12 21:04:56 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2007/12/17 10:33:56 obache Exp $
 #
 
 DISTNAME=	mimetex
-PKGNAME=	${DISTNAME}-1.64
+PKGNAME=	${DISTNAME}-1.70
 CATEGORIES=	www math graphics
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=support/mimetex/}
 DIST_SUBDIR=	${PKGNAME_NOREV}
