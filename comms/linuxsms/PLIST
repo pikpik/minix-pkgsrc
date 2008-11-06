@@ -1,9 +1,0 @@
-@comment $NetBSD$
-bin/linuxsms
-man/man1/linuxsms.1
-share/doc/linuxsms/BUGS
-share/doc/linuxsms/CHANGES
-share/doc/linuxsms/README
-share/doc/linuxsms/README.ES
-share/doc/linuxsms/TODO
-@dirrm share/doc/linuxsms
