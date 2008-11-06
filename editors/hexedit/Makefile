@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.26 2006/10/04 21:37:39 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2007/11/25 11:46:59 wiz Exp $
 
-DISTNAME=	hexedit-1.2.10
-PKGREVISION=	1
+DISTNAME=	hexedit-1.2.12
 CATEGORIES=	editors
 MASTER_SITES=	http://rigaux.org/
 EXTRACT_SUFX=	.src.tgz
