@@ -38,10 +38,12 @@
 
 #if HAVE_NBTOOL_CONFIG_H
 #include "nbtool_config.h"
+#else 
+#define HAVE_STRUCT_STAT_ST_FLAGS 1
 #endif
  
 #include <nbcompat.h>
-#if HAVE_ERR_H 
+#if HAVE_ERR_H
 #include <err.h> 
 #endif
 #if HAVE_FTS_H

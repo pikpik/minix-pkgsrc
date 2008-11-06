@@ -34,6 +34,8 @@
 #endif
 #if HAVE_NBTOOL_CONFIG_H
 #include "nbtool_config.h"
+#else
+#define HAVE_STRUCT_STAT_ST_FLAGS 1
 #endif
 
 #include <nbcompat.h>
@@ -86,7 +88,7 @@ flags_to_string(u_long flags, const char *def)
 
 	string[0] = '\0';
 	prefix = NULL;
-#if HAVE_FILE_FLAGS
+#if HAVE_STRUCT_STAT_ST_FLAGS
 	if (flags & UF_APPEND)
 		SAPPEND("uappnd");
 	if (flags & UF_IMMUTABLE)
@@ -145,7 +147,7 @@ string_to_flags(char **stringp, u_long *setp, u_long *clrp)
 	if (clrp)
 		*clrp = 0;
 
-#if HAVE_FILE_FLAGS
+#if HAVE_STRUCT_STAT_ST_FLAGS
 	string = *stringp;
 	while ((p = strsep(&string, "\t ,")) != NULL) {
 		clear = 0;
