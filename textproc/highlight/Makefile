@@ -1,7 +1,6 @@
-#	$NetBSD: Makefile,v 1.1.1.1 2008/02/19 02:23:44 rh Exp $
-#
+#	$NetBSD: Makefile,v 1.2 2008/07/14 12:56:13 joerg Exp $
 
-DISTNAME=		highlight-2.6.8
+DISTNAME=		highlight-2.6.14
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.andre-simon.de/zip/
 EXTRACT_SUFX=		.tar.bz2
