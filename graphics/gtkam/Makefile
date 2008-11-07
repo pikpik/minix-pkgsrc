@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2008/04/29 09:36:42 sborrill Exp $
+# $NetBSD: Makefile,v 1.35 2008/06/14 23:37:34 heinz Exp $
 #
 
-DISTNAME=	gtkam-0.1.15
+DISTNAME=	gtkam-0.1.16
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gphoto/}
 
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		pkg-config perl
 GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--without-bonobo
