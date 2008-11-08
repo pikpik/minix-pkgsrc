@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2008,v 1.2896 2008/11/08 00:35:55 wiz Exp $
+$NetBSD: CHANGES-2008,v 1.2897 2008/11/08 02:53:33 epg Exp $
 
 Changes to the packages collection and infrastructure in 2008:
 
@@ -4894,3 +4894,4 @@ Changes to the packages collection and infrastructure in 2008:
 	Updated devel/bzr to 1.9 [epg 2008-11-08]
 	Updated devel/bzrtools to 1.9.1 [epg 2008-11-08]
 	Updated devel/bzr-svn to 0.4.14 [epg 2008-11-08]
+	Moved www/p5-CGI_Lite to www/p5-CGI-Lite [wiz 2008-11-08]
