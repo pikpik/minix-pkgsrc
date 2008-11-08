@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/08/26 01:20:25 epg Exp $
+# $NetBSD: Makefile,v 1.2 2008/09/18 08:46:21 joerg Exp $
 
 DISTNAME=	bzr-gtk-${VER}
 CATEGORIES=	devel
@@ -21,6 +21,8 @@ USE_TOOLS+=	msgfmt
 
 # Insists on working X display, and fails anyway, so disable.
 BZR_PLUGIN_TEST=no
+
+PRIVILEGED_STAGES+=	clean
 
 .include "../../devel/bzr/plugin.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
