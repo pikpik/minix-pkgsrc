@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.602 2008/11/04 21:51:16 jwise Exp $
+# $NetBSD: Makefile,v 1.603 2008/11/04 21:54:46 jwise Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -142,7 +142,6 @@ SUBDIR+=	ijb
 SUBDIR+=	ikiwiki
 SUBDIR+=	instiki
 SUBDIR+=	ja-trac
-SUBDIR+=	jakarta-servletapi
 SUBDIR+=	jakarta-tomcat4
 SUBDIR+=	jakarta-tomcat5
 SUBDIR+=	jalbum
@@ -233,11 +232,11 @@ SUBDIR+=	p5-CGI-Cookie-Splitter
 SUBDIR+=	p5-CGI-FastTemplate
 SUBDIR+=	p5-CGI-FormBuilder
 SUBDIR+=	p5-CGI-Kwiki
+SUBDIR+=	p5-CGI-Lite
 SUBDIR+=	p5-CGI-Minimal
 SUBDIR+=	p5-CGI-ProgressBar
 SUBDIR+=	p5-CGI-Session
 SUBDIR+=	p5-CGI-Simple
-SUBDIR+=	p5-CGI_Lite
 SUBDIR+=	p5-CSS
 SUBDIR+=	p5-CSS-Squish
 SUBDIR+=	p5-CSS-Tiny
