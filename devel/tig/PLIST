@@ -2,8 +2,11 @@
 bin/tig
 man/man1/tig.1
 man/man5/tigrc.5
+share/doc/tig/NEWS.html
 share/doc/tig/README.html
 share/doc/tig/manual.html
 share/doc/tig/tig.1.html
 share/doc/tig/tigrc.5.html
+share/examples/tig/tigrc
+@dirrm share/examples/tig
 @dirrm share/doc/tig
