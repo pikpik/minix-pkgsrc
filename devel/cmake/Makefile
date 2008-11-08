@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.39 2008/08/25 02:45:12 bjs Exp $
+# $NetBSD: Makefile,v 1.40 2008/09/13 10:53:51 markd Exp $
 
-DISTNAME=	cmake-${CMAKE_API}.1
-PKGREVISION=	1
+DISTNAME=	cmake-${CMAKE_API}.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cmake.org/files/v2.6/
 
