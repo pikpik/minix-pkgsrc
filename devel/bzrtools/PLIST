@@ -23,6 +23,9 @@ ${PYSITELIB}/bzrlib/plugins/bzrtools/colordiff.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/command.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/command.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/command.pyo
+${PYSITELIB}/bzrlib/plugins/bzrtools/command_classes.py
+${PYSITELIB}/bzrlib/plugins/bzrtools/command_classes.pyc
+${PYSITELIB}/bzrlib/plugins/bzrtools/command_classes.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/dotgraph.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/dotgraph.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/dotgraph.pyo
