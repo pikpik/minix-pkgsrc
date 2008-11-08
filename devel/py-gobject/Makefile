@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/10/22 19:55:23 apb Exp $
+# $NetBSD: Makefile,v 1.17 2008/11/08 00:15:26 wiz Exp $
 #
 
 PKGNAME=		${PYPKGPREFIX}-gobject-2.15.4
@@ -13,7 +13,7 @@ post-patch:
 	<${WRKSRC}/dsextras.py >${WRKSRC}/dsextras.py.tmp \
 	&& ${MV} ${WRKSRC}/dsextras.py.tmp ${WRKSRC}/dsextras.py
 
-BUILDLINK_API_DEPENDS.py-gobject-shared+= py-gobject-shared>=${PKGVERSION}
+BUILDLINK_API_DEPENDS.py-gobject-shared+= py-gobject-shared>=${PKGVERSION_NOREV}
 
 .include "../../lang/python/extension.mk"
 .include "../../devel/py-gobject-shared/buildlink3.mk"
