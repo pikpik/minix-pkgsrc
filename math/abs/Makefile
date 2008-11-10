@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2006/12/27 13:37:39 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2008/03/04 18:12:58 jlam Exp $
 #
 
 DISTNAME=	abs-src-0.8
 PKGNAME=	abs-0.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	math x11
 MASTER_SITES=	http://www.ping.be/bertin/
 

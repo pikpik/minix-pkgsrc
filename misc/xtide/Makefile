@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2006/12/15 20:32:59 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2006/12/27 13:37:39 joerg Exp $
 
 DISTNAME=	xtide-2.8.3
+PKGREVISION=	1
 CATEGORIES=	misc x11
 MASTER_SITES=	ftp://ftp.flaterco.com/xtide/
 DISTFILES=	${DISTNAME}.tar.bz2 ${HARMONICS_FILE}.bz2

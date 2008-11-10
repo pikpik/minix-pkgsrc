@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2007/12/20 11:56:45 obache Exp $
+# $NetBSD: Makefile,v 1.19 2008/01/19 09:16:26 wiz Exp $
 
 DISTNAME=		xdm3d-1.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 

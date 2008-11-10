@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2007/07/08 09:45:15 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2008/03/03 19:21:38 jlam Exp $
 
 PKGNAME=	darcnes-20010401
-PKGREVISION=	3
+PKGREVISION=	4
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Multi-system emulator (NES, SMS, GG, PCE, and others)

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2008/02/15 13:33:20 obache Exp $
+# $NetBSD: Makefile,v 1.11 2008/05/26 02:13:20 joerg Exp $
 #
 
 DISTNAME=		vnc2swf-0.5.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		graphics
 MASTER_SITES=		http://www.unixuser.org/~euske/vnc2swf/
 

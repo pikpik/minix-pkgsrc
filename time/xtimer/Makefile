@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2006/12/27 13:37:40 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/07/14 12:56:14 joerg Exp $
 
 DISTNAME=	xtimer-8089
 PKGNAME=	xtimer-0.8089
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11 time
 MASTER_SITES=	http://www.bsddiary.net/xtimer/
 

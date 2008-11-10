@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2007/08/16 22:59:08 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2008/01/06 16:39:13 adam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-client-/}
+PKGREVISION=	1
 COMMENT=	Freeciv client
 
 PKG_DESTDIR_SUPPORT=	user-destdir

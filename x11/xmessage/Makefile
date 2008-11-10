@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2007/08/15 21:57:08 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/05/24 21:45:18 tnn Exp $
 #
 
 DISTNAME=		xmessage-1.0.2
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

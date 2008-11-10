@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2007/02/06 18:30:26 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2007/03/24 19:21:27 joerg Exp $
 #
 
 DISTNAME=	xbuffy-3.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail x11
 MASTER_SITES=	ftp://ftp.virginia.edu/pub/xbuffy/
 

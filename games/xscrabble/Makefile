@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2006/12/27 13:37:37 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2008/03/04 06:59:06 jlam Exp $
 #
 
 DISTNAME=	xscrabble-1.0
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

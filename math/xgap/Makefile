@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2008/03/04 18:12:59 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2008/05/26 02:13:22 joerg Exp $
 #
 
 DISTNAME=	xgap4r16
 PKGNAME=	xgap-4.16
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math x11
 MASTER_SITES=	ftp://ftp-gap.dcs.st-and.ac.uk/pub/gap/gap4/share/
 EXTRACT_SUFX=	.zoo

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2006/06/04 13:42:10 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2007/01/30 22:09:48 joerg Exp $
 #
 
 DISTNAME=	zephyr-20010518
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	chat net
 MASTER_SITES=	ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2006/12/27 13:37:35 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2007/03/24 19:21:19 joerg Exp $
 
 DISTNAME=		xmix-2.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=apps/sound/mixers/}
 

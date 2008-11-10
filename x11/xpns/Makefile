@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2006/10/04 22:06:57 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/01/15 18:08:58 joerg Exp $
 
 DISTNAME=	pns_source
 PKGNAME=	xpns-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11 cad
 MASTER_SITES=	http://robotics.ee.uwa.edu.au/pns/ftp/
 EXTRACT_SUFX=	.tar.Z

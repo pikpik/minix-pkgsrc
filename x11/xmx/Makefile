@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2006/03/04 21:31:13 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2008/08/31 06:52:29 dholland Exp $
 
 DISTNAME=	xmx-2.1alpha.pl7
 PKGNAME=	xmx-2.1a7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.cs.brown.edu/pub/xmx/
 

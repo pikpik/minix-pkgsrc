@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2006/12/27 13:37:46 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/07/14 12:56:20 joerg Exp $
 #
 
 DISTNAME=	xlogout
 PKGNAME=	xlogout-19891129
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

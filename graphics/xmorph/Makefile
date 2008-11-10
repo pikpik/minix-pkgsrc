@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2007/12/21 20:49:15 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2007/12/22 11:09:01 rillig Exp $
 
 DISTNAME=	xmorph_20060817
 PKGNAME=	xmorph-20060817
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmorph/}
 

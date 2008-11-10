@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.45 2007/01/08 01:40:23 rillig Exp $
+# $NetBSD: Makefile,v 1.46 2008/06/20 01:09:23 joerg Exp $
 #
 
 DISTNAME=	xart19980415
 PKGNAME=	xart-19980415
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://linux01.gwdg.de/~rhohen/linux/
 EXTRACT_SUFX=	.tgz

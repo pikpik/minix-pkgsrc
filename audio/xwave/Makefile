@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2006/12/27 13:37:36 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2008/03/02 06:10:34 jlam Exp $
 #
 
 DISTNAME=		xwave2
 PKGNAME=		xwave-2.0
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		audio x11
 MASTER_SITES=		# empty
 

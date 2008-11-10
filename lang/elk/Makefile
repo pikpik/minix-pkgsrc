@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2008/04/12 22:43:02 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2008/09/24 22:34:45 ahoka Exp $
 
 DISTNAME=	elk-3.99.7
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://sam.zoy.org/elk/
 EXTRACT_SUFX=	.tar.bz2
