@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/07/05 04:59:47 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2006/09/03 00:56:29 wiz Exp $
 #
 
 DISTNAME=	nbitools-R6.3
@@ -15,6 +15,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 BUILD_TARGET=	World
 MAKE_ENV+=	GCCCMD=gcc
+MAKE_JOBS_SAFE=	NO
 
 .include "../../mk/bsd.prefs.mk"
 

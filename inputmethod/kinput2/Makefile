@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/07/14 12:56:07 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/08/15 02:39:25 obache Exp $
 
 DISTNAME=	kinput2-v3
 PKGNAME=	kinput2-3.0
@@ -11,6 +11,7 @@ COMMENT=	Input server of Japanese text
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+MAKE_JOBS_SAFE=	NO
 USE_IMAKE=	YES
 
 PLIST_SRC=	${PKGDIR}/PLIST-common
