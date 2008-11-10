@@ -12,8 +12,10 @@ BUILDLINK_PACKAGES+=	libmcs
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}libmcs
 
 .if ${LIBMCS_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.libmcs+=	libmcs>=0.4.1
+BUILDLINK_API_DEPENDS.libmcs+=	libmcs>=0.7.1
 BUILDLINK_PKGSRCDIR.libmcs?=	../../devel/libmcs
 .endif	# LIBMCS_BUILDLINK3_MK
+
+.include "../../devel/libmowgli/buildlink3.mk"
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
