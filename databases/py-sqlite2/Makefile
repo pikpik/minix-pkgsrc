@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2008/09/10 12:40:58 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2008/09/21 09:24:52 obache Exp $
 
-DISTNAME=	pysqlite-2.5.0
-PKGNAME=	${PYPKGPREFIX}-sqlite2-2.5.0
-PKGREVISION=	1
+DISTNAME=	pysqlite-2.5.0a
+PKGNAME=	${PYPKGPREFIX}-sqlite2-2.5.0a
 CATEGORIES=	databases python
 MASTER_SITES=	http://oss.itsystementwicklung.de/download/pysqlite/2.5/2.5.0/
 
@@ -13,6 +12,9 @@ COMMENT=	SQLite database adapter for Python
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
+
+# remove after 2.5.0a
+WRKSRC=		${WRKDIR}/${DISTNAME:S/a$//}
 
 .include "../../lang/python/extension.mk"
 
