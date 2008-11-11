@@ -1,4 +1,4 @@
-# $NetBSD: modorder,v 1.2 2007/10/05 15:27:46 sjg Exp $
+# $NetBSD: modorder,v 1.2 2008/03/09 19:54:29 joerg Exp $
 
 LIST=		one two three four five six seven eight nine ten
 LISTX=		${LIST:Ox}

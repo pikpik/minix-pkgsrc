@@ -1,4 +1,4 @@
-/*	$NetBSD: config.h,v 1.20 2007/10/14 20:22:53 apb Exp $	*/
+/*	$NetBSD: make-conf.h,v 1.2 2008/03/09 19:54:29 joerg Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990 The Regents of the University of California.
