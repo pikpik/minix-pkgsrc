@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/11/07 15:16:32 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/11/09 10:40:57 wiz Exp $
 
-DISTNAME=	p5-gnome-bindings-2.24.1
+DISTNAME=	py-gnome-bindings-2.24.1
 CATEGORIES=	meta-pkgs x11 gnome
 MASTER_SITES=	# empty
 
