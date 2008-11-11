@@ -1,4 +1,4 @@
-/*	$NetBSD: for.c,v 1.28 2008/02/15 21:29:50 christos Exp $	*/
+/*	$NetBSD: for.c,v 1.30 2008/10/06 22:09:21 joerg Exp $	*/
 
 /*
  * Copyright (c) 1992, The Regents of the University of California.
@@ -30,14 +30,14 @@
  */
 
 #ifndef MAKE_NATIVE
-static char rcsid[] = "$NetBSD: for.c,v 1.28 2008/02/15 21:29:50 christos Exp $";
+static char rcsid[] = "$NetBSD: for.c,v 1.30 2008/10/06 22:09:21 joerg Exp $";
 #else
 #include <sys/cdefs.h>
 #ifndef lint
 #if 0
 static char sccsid[] = "@(#)for.c	8.1 (Berkeley) 6/6/93";
 #else
-__RCSID("$NetBSD: for.c,v 1.28 2008/02/15 21:29:50 christos Exp $");
+__RCSID("$NetBSD: for.c,v 1.30 2008/10/06 22:09:21 joerg Exp $");
 #endif
 #endif /* not lint */
 #endif
@@ -116,7 +116,7 @@ ForAddVar(const char *data, size_t len)
 	Buf_AddBytes(buf, len, (Byte *)UNCONST(data));
 
 	accumFor.nvars++;
-	accumFor.vars = erealloc(accumFor.vars, accumFor.nvars*sizeof(char *));
+	accumFor.vars = bmake_realloc(accumFor.vars, accumFor.nvars*sizeof(char *));
 
 	accumFor.vars[accumFor.nvars-1] = (char *)Buf_GetAll(buf, &varlen);
 
@@ -281,7 +281,7 @@ For_Eval(char *line)
 	}
     }
 
-    if (forLevel != 0) {
+    if (forLevel != 0 && accumFor.buf) {
 	Buf_AddBytes(accumFor.buf, strlen(line), (Byte *)line);
 	Buf_AddByte(accumFor.buf, (Byte)'\n');
 	return 1;
@@ -324,7 +324,7 @@ For_Run(int lineno)
     if (Lst_Open(arg.lst) != SUCCESS)
 	return;
 
-    values = emalloc(arg.nvars * sizeof(char *));
+    values = bmake_malloc(arg.nvars * sizeof(char *));
     
     while (!done) {
 	/* 
