@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/10/26 15:06:19 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/11/03 22:01:29 bjs Exp $
 
 DISTNAME=	pciutils-3.0.2
 CATEGORIES=	sysutils
@@ -14,6 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 ONLY_FOR_PLATFORM=	AIX-*-* FreeBSD-*-* Linux-*-* NetBSD-*-*
+ONLY_FOR_PLATFORM+=	DragonFly-*-* OpenBSD-*-*
 
 INSTALL_TARGET=		install install-lib
 USE_TOOLS+=		gmake pkg-config
