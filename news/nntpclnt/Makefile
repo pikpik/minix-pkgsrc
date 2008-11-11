@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2007/01/07 09:14:08 rillig Exp $
+# $NetBSD: Makefile,v 1.32 2008/09/12 00:49:36 gdt Exp $
 
 DISTNAME=	nntpclnt-1.6.1
 PKGREVISION=	6
@@ -26,7 +26,7 @@ PLIST_SUBST+=	PKG_SYSCONFDIR=${PKG_SYSCONFDIR:Q}
 .include "../../mk/bsd.prefs.mk"
 
 CONFIG_SH=	${FILESDIR}/config.${OPSYS}.sh
-ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-* DragonFly-*-* Linux-*-*
+ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-* DragonFly-*-* Linux-*-* Darwin-*-*
 
 INSTALLATION_DIRS=	bin include lib ${PKGMANDIR}/man3
 
