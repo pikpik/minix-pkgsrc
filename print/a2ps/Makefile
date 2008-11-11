@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2008/06/12 02:14:42 joerg Exp $
+# $NetBSD: Makefile,v 1.68 2008/11/10 18:00:34 wiz Exp $
 
 DISTNAME=		a2ps-4.14
 CATEGORIES=		print
@@ -27,6 +27,7 @@ CONFIGURE_ENV+=		LPR=lpr
 CONFIGURE_ARGS+=	--with-medium=${PAPERSIZE:Q}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--disable-dependency-tracking
+CONFIGURE_ARGS+=	ac_cv_prog_EMACS=no
 
 EGDIR=			${PREFIX}/share/examples/a2ps
 CONF_FILES=		${EGDIR}/a2ps-site.cfg ${PKG_SYSCONFDIR}/a2ps-site.cfg
