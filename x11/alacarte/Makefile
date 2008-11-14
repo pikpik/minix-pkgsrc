@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:57 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/11/08 14:12:31 wiz Exp $
 #
 
 DISTNAME=	alacarte-0.11.6
@@ -16,7 +16,7 @@ GNU_CONFIGURE=	yes
 USE_TOOLS+=	intltool perl pkg-config gmake msgfmt
 USE_DIRS+=	xdg-1.1
 
-PYTHON_VERSIONS_ACCEPTED=	25 24
+PYTHON_VERSIONS_ACCEPTED=	25
 PY_PATCHPLIST=	yes
 
 SUBST_CLASSES+=	paths
