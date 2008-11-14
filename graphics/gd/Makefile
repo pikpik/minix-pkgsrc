@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2007/07/01 07:54:25 adam Exp $
+# $NetBSD: Makefile,v 1.75 2007/09/21 16:56:19 joerg Exp $
 
 DISTNAME=	gd-2.0.35
 CATEGORIES=	graphics
@@ -23,6 +23,7 @@ REPLACE_PERL+=		bdftogd
 PTHREAD_AUTO_VARS=	yes
 
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
