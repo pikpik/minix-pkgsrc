@@ -1,4 +1,4 @@
-# $NetBSD: defaults.mk,v 1.52 2007/08/10 03:46:10 jlam Exp $
+# $NetBSD: defaults.mk,v 1.54 2007/12/18 10:18:49 markd Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -103,6 +103,7 @@ _TOOLS_VARNAME.lex=		LEX
 _TOOLS_VARNAME.lha=		LHA
 _TOOLS_VARNAME.ln=		LN
 _TOOLS_VARNAME.ls=		LS
+_TOOLS_VARNAME.lzcat=		LZCAT
 _TOOLS_VARNAME.m4=		M4
 _TOOLS_VARNAME.mail=		MAIL_CMD
 _TOOLS_VARNAME.makeinfo=	MAKEINFO
