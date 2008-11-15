@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2008/10/11 19:58:24 markd Exp $
+# $NetBSD: Makefile,v 1.34 2008/10/12 11:15:22 tron Exp $
 
 DISTNAME=	dbus-1.2.4
 CATEGORIES=	sysutils
@@ -33,6 +33,10 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 #CFLAGS.NetBSD+=		-D_NETBSD_SOURCE
 
 CONFIGURE_ARGS_GROUPS=	enable disable with without
+
+.if ${OPSYS} == "Darwin"
+CONFIGURE_ARGS+= --with-session-socket-dir=/tmp
+.endif
 
 CONFIGURE_ARGS.Linux=	abstract-sockets dnotify selinux
 CONFIGURE_ARGS.docs=	doxygen-docs xml-docs
