@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/04/25 20:39:11 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2008/06/20 01:09:31 joerg Exp $
 #
 
 DISTNAME=	nicotine-1.0.8
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 
-PYTHON_VERSIONS_ACCEPTED=	25 24
+PYTHON_VERSIONS_ACCEPTED=	25
 PY_PATCHPLIST=	yes
 PYDISTUTILSPKG=	yes
 
