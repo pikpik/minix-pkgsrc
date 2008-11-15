@@ -6,7 +6,7 @@ $NetBSD: patch-aa,v 1.2 2008/08/28 14:42:31 tonnerre Exp $
  import string
  import sys
  
--Version = "1.1.0.d20081104"
+-Version = "1.1.0"
 +Version = os.getenv("PKGVERSION_NOREV")
  
  man_pages = [
