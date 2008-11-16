@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.14 2008/04/12 22:43:00 jlam Exp $
+@comment $NetBSD: PLIST,v 1.15 2008/11/05 16:12:38 wiz Exp $
 bin/captoinfo
 bin/clear
 bin/infocmp
@@ -2484,10 +2484,10 @@ ${PLIST.not-sunos}${TERMINFODIR}/s/screen-bce
 ${PLIST.not-sunos}${TERMINFODIR}/s/screen-s
 ${PLIST.not-sunos}${TERMINFODIR}/s/screen-w
 ${PLIST.not-sunos}${TERMINFODIR}/s/screen.linux
+${PLIST.not-sunos}${TERMINFODIR}/s/screen.mlterm
+${PLIST.not-sunos}${TERMINFODIR}/s/screen.rxvt
 ${PLIST.not-sunos}${TERMINFODIR}/s/screen.teraterm
 ${TERMINFODIR}/s/screen+fkeys
-${TERMINFODIR}/s/screen.mlterm
-${TERMINFODIR}/s/screen.rxvt
 ${TERMINFODIR}/s/screen.xterm-new
 ${TERMINFODIR}/s/screen.xterm-r6
 ${TERMINFODIR}/s/screen.xterm-xfree86
