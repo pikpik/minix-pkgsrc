@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2008/11/02 23:30:34 he Exp $
+# $NetBSD: Makefile,v 1.6 2008/11/03 13:49:02 abs Exp $
 #
 
-DISTNAME=	B-Hooks-OP-Check-0.12
+DISTNAME=	B-Hooks-OP-Check-0.15
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=B/}
 
@@ -12,6 +11,7 @@ HOMEPAGE=	http://search.cpan.org/dist/B-Hooks-OP-Check/
 COMMENT=	Perl 5 module to wrap OP check callbacks
 
 BUILD_DEPENDS+=	p5-ExtUtils-Depends>0:../../devel/p5-ExtUtils-Depends
+DEPENDS+=	p5-parent>0:../../devel/p5-parent
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
