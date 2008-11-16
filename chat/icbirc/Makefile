@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2007/11/29 13:04:04 sketch Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/03 02:19:51 jlam Exp $
 
 DISTNAME=	icbirc-1.8
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.benzedrine.cx/
 
@@ -20,6 +21,7 @@ SRCS=		icb.c irc.c icbirc.c
 
 CPPFLAGS.Interix+=	-Dsocklen_t=int
 LDFLAGS.SunOS+=		-lresolv -lsocket -lnsl
+CFLAGS.SunOS+=		-DNEED_PROGNAME
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8
 
