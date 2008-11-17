@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- cmus.c.orig	2007-07-27 16:52:13.000000000 +0200
++++ cmus.c
+@@ -560,7 +560,7 @@ static int pl_handle_line(void *data, co
+ 	struct pl_data *d = data;
+ 	int i = 0;
+ 
+-	while (isspace(line[i]))
++	while (isspace((unsigned char)line[i]))
+ 		i++;
+ 	if (line[i] == 0)
+ 		return 0;
