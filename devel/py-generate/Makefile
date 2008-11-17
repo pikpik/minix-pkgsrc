@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2007/02/22 19:26:24 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:28 joerg Exp $
 #
 
-DISTNAME=	generate-2.4
+DISTNAME=	generate-2.6
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel python
 MASTER_SITES=	ftp://ftp.druid.net/pub/distrib/
@@ -13,8 +13,8 @@ COMMENT=	Python interface to Generate
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-MAKE_ENV+=		MANDIR=${LOCALBASE}/man
-MAKE_ENV+=		BINDIR=${LOCALBASE}/bin
+MAKE_ENV+=		MANDIR=${DESTDIR}${PREFIX}/${PKGMANDIR}
+MAKE_ENV+=		BINDIR=${DESTDIR}${PREFIX}/bin
 USE_TOOLS+=		gmake
 
 LIBS.SunOS+=	-lnsl -lsocket
