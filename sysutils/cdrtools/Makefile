@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.45 2008/10/14 14:48:18 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2008/11/05 19:46:44 wiz Exp $
 
 DISTNAME=	cdrtools-2.01.01a53
 PKGNAME=	${DISTNAME:S/a/./}
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.berlios.de/pub/cdrecord/alpha/
+MASTER_SITES=	ftp://ftp.berlios.de/pub/cdrecord/alpha/ \
+		http://ftp.berlios.de/pub/cdrecord/alpha/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
