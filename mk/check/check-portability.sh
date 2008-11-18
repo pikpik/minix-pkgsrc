@@ -1,4 +1,4 @@
-# $NetBSD: check-portability.sh,v 1.6 2007/01/02 17:58:11 rillig Exp $
+# $NetBSD: check-portability.sh,v 1.7 2007/11/28 17:00:04 rillig Exp $
 #
 # This program checks all files in the current directory and any
 # subdirectories for portability issues that are likely to result in
@@ -17,9 +17,6 @@ checkdir=`dirname "$0"`
 cs_setprogname "$0"
 
 : ${SKIP_FILTER:=""}
-
-found_random=no
-found_test_eqeq=no
 
 # usage: check_shell <fname>
 check_shell() {
