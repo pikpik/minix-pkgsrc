@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/11/13 11:17:26 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2008/11/17 21:56:16 jnemeth Exp $
 #
 
 DISTNAME=	pygtk-2.13.0
@@ -23,7 +23,7 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN:Q}
 USE_TOOLS+=	gmake pkg-config
 
-PYTHON_VERSIONS_ACCEPTED=	25
+PYTHON_VERSIONS_ACCEPTED=	24 25
 
 BUILDLINK_API_DEPENDS.pygobject+=	${PYPKGPREFIX}-gobject>=2.15.3
 
