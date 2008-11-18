@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/09/08 05:31:01 bjs Exp $
 #
 
 DISTNAME=	openbsd-input-ws-1.2
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://xenocara.org/src/
 
