@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.606 2008/11/13 21:31:28 snj Exp $
+# $NetBSD: Makefile,v 1.607 2008/11/17 20:20:46 he Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -88,7 +88,7 @@ SUBDIR+=	cherokee
 SUBDIR+=	chimera
 SUBDIR+=	clearsilver
 SUBDIR+=	clearsilver-base
-SUBDIR+=	cocoon
+#SUBDIR+=	cocoon
 SUBDIR+=	communicator
 SUBDIR+=	crawl
 SUBDIR+=	cronolog
