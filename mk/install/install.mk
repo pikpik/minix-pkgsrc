@@ -1,4 +1,4 @@
-# $NetBSD: install.mk,v 1.50 2007/12/10 22:49:19 rillig Exp $
+# $NetBSD: install.mk,v 1.51 2008/06/11 07:30:33 obache Exp $
 #
 # This file provides the code for the "install" phase.
 #
@@ -19,6 +19,15 @@
 # unprivileged-install-hook:
 #	This hook is placed _before_ switching to privileged mode
 #	in order to install the package.
+#
+
+# === User-settable variables ===
+#
+# INSTALL_UNSTRIPPED
+#	If "yes", all binaries and shared libraries are installed
+#	unstripped. Otherwise they are stripped while being installed.
+#
+# Keywords: strip unstripped
 #
 # === Package-settable variables ===
 #
