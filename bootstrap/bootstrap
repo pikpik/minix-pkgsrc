@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.135 2008/07/31 13:42:57 joerg Exp $
+# $NetBSD: bootstrap,v 1.136 2008/10/14 22:50:54 joerg Exp $
 #
 #
 # Copyright (c) 2001-2002 Alistair G. Crooks.  All rights reserved.
@@ -571,7 +571,7 @@ SunOS)
 	fi
 	root_group=root
 	need_pax=yes
-	need_bsd_install=no
+	need_bsd_install=yes
 	need_awk=yes
 	need_sed=yes
 	need_ksh=yes
