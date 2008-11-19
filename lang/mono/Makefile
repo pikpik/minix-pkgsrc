@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.73 2008/10/10 22:02:42 kefren Exp $
+# $NetBSD: Makefile,v 1.74 2008/10/25 05:27:58 kefren Exp $
 
 DISTNAME=	mono-${MONO_VERSION}
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://ftp.novell.com/pub/mono/sources/mono/
 EXTRACT_SUFX=	.tar.bz2
@@ -29,8 +30,6 @@ CONFIGURE_ARGS+=	--with-icu=yes
 CONFIGURE_ARGS+=	--with-preview=yes
 CONFIGURE_ARGS+=	--with-libgdiplus=installed
 CONFIGURE_ARGS+=	--with-moonlight=no
-
-MAKE_JOBS_SAFE=		no
 
 MAKE_FLAGS+=		PERL=${PERL5:Q}
 MAKE_FLAGS+=		mandir=${PREFIX}/${PKGMANDIR}
