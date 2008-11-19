@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2008/03/07 05:08:40 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2008/09/24 16:14:49 ghen Exp $
 
 MOZILLA=		firefox
 MOZ_VER=		3.0.2
 MOZ_DISTVER=		${MOZ_VER}
 
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mozilla.com/en-US/firefox/
 COMMENT=		Lightweight gecko-based web browser (binary package)
 
