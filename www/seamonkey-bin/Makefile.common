@@ -1,10 +1,10 @@
-# $NetBSD: Makefile.common,v 1.13 2008/03/07 05:06:16 jlam Exp $
+# $NetBSD: Makefile.common,v 1.14 2008/05/26 02:13:25 joerg Exp $
 
 DISTNAME=		${MOZILLA}${MOX_EXTRA}-bin	# overridden below
 PKGNAME=		${MOZILLA}${MOZ_EXTRA}-bin-${MOZ_VER}
 CATEGORIES=		www
 
-MAINTAINER=		grant@NetBSD.org
+MAINTAINER?=		pkgsrc-users@NetBSD.org
 HOMEPAGE?=		http://www.mozilla.org/
 
 WRKSRC?=		${WRKDIR}/${MOZILLA}
