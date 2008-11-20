@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/10/22 10:27:17 obache Exp $
 #
 
 DISTNAME=	goocanvas-0.12
@@ -13,7 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		pkg-config msgfmt
 USE_PKGLOCALEDIR=	yes
 
 PKGCONFIG_OVERRIDE+=	goocanvas.pc.in
