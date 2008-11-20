@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/09/06 23:24:08 wiz Exp $
 #
 
 DISTNAME=		libmtp-0.3.1
@@ -15,6 +15,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
+CONFIGURE_ENV+=		HAVE_DOXYGEN=false
 
 PKGCONFIG_OVERRIDE+=	libmtp.pc.in
 
