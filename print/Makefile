@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.186 2008/09/03 21:39:00 markd Exp $
+# $NetBSD: Makefile,v 1.187 2008/09/17 00:21:48 obache Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -90,6 +90,7 @@ SUBDIR+=	php-pdflib
 SUBDIR+=	pnm2ppa
 SUBDIR+=	poppler
 SUBDIR+=	poppler-glib
+SUBDIR+=	poppler-includes
 SUBDIR+=	poppler-qt
 SUBDIR+=	poppler-qt4
 SUBDIR+=	poppler-utils
