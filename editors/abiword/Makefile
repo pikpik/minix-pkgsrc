@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.115 2008/03/02 13:13:48 drochner Exp $
+# $NetBSD: Makefile,v 1.116 2008/04/14 11:36:11 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -59,5 +59,5 @@ post-install:
 .endif
 
 .include "../../textproc/enchant/buildlink3.mk"
-
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"
