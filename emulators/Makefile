@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2008/03/09 18:28:54 tnn Exp $
+# $NetBSD: Makefile,v 1.171 2008/03/28 18:46:26 xtraeme Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -167,6 +167,7 @@ SUBDIR+=	vmware-module
 SUBDIR+=	vmware-module3
 SUBDIR+=	vmware3
 SUBDIR+=	wine
+SUBDIR+=	wine-devel
 SUBDIR+=	x48
 SUBDIR+=	xbeeb
 SUBDIR+=	xcopilot
