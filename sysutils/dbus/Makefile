@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2008/11/15 03:59:10 chuck Exp $
+# $NetBSD: Makefile,v 1.36 2008/11/15 18:15:09 jmcneill Exp $
 
 DISTNAME=	dbus-1.2.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus/
 
