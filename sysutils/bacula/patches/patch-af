@@ -1,8 +1,8 @@
-$NetBSD: patch-af,v 1.1.1.1 2004/11/06 16:17:38 mjl Exp $
+$NetBSD$
 
---- src/stored/Makefile.in.orig	2004-06-20 15:43:04.000000000 +0400
+--- src/stored/Makefile.in.orig	2008-08-28 14:54:56.000000000 +0200
 +++ src/stored/Makefile.in
-@@ -132,14 +132,14 @@ install: all
+@@ -157,14 +157,14 @@ install: all
  	$(INSTALL_PROGRAM) bscan $(DESTDIR)$(sbindir)/bscan
  	$(INSTALL_PROGRAM) btape $(DESTDIR)$(sbindir)/btape
  	@srcconf=bacula-sd.conf; \

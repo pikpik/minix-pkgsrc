@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.11 2008/07/10 13:54:56 dmcmahill Exp $
+# $NetBSD: options.mk,v 1.3 2008/09/30 15:20:30 joerg Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.bacula-clientonly
 PKG_SUPPORTED_OPTIONS=		bacula-static
@@ -15,4 +15,3 @@ PLIST_SUBST+=		STATIC=
 .else
 PLIST_SUBST+=		STATIC="@comment "
 .endif
-

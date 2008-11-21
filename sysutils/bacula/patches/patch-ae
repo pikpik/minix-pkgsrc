@@ -1,8 +1,8 @@
-$NetBSD: patch-ae,v 1.1.1.1 2004/11/06 16:17:38 mjl Exp $
+$NetBSD$
 
---- src/filed/Makefile.in.orig	2004-03-11 00:38:48.000000000 +0300
+--- src/filed/Makefile.in.orig	2007-05-27 11:34:40.000000000 +0200
 +++ src/filed/Makefile.in
-@@ -111,14 +111,14 @@ devclean: realclean
+@@ -120,14 +120,14 @@ devclean: realclean
  install: all
  	$(INSTALL_PROGRAM) bacula-fd $(DESTDIR)$(sbindir)/bacula-fd 
  	@srcconf=bacula-fd.conf; \
