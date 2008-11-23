@@ -1,7 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2007/03/26 16:58:25 reed Exp $
-bin/fd2
-bin/goto
-bin/if
+@comment $NetBSD: PLIST,v 1.6 2007/03/26 17:01:59 reed Exp $
 bin/osh
 man/man1/fd2.1
 man/man1/goto.1
