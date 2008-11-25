@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.367 2008/11/03 11:21:50 markd Exp $
+# $NetBSD: Makefile,v 1.368 2008/11/08 00:36:12 wiz Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -178,6 +178,7 @@ SUBDIR+=	p5-Email-Reply
 SUBDIR+=	p5-Email-Send
 SUBDIR+=	p5-Email-Simple
 SUBDIR+=	p5-Email-Simple-Creator
+SUBDIR+=	p5-Email-Stuff
 SUBDIR+=	p5-Email-Valid
 SUBDIR+=	p5-Email-Valid-Loose
 SUBDIR+=	p5-GMail-IMAPD
