@@ -1,0 +1,4 @@
+@comment $NetBSD$
+libexec/hald-addon-storage
+libexec/hald-probe-storage
+libexec/hald-probe-volume
