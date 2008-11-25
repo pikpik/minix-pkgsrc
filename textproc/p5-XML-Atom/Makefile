@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2008/10/28 11:26:11 kleink Exp $
+# $NetBSD: Makefile,v 1.10 2008/11/14 19:11:16 kleink Exp $
 
-DISTNAME=	XML-Atom-0.31
+DISTNAME=	XML-Atom-0.32
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5xat
 CATEGORIES=	textproc perl5
