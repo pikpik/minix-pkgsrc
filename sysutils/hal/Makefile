@@ -13,8 +13,6 @@ COMMENT=		FreeDesktop hardware abstraction layer
 
 BUILD_DEFS+=		VARBASE
 
-HAL_DEVELOPER?=		no
-
 HAL_USER?=		haldaemon
 HAL_GROUP?=		haldaemon
 
@@ -74,11 +72,7 @@ FILES_SUBST+=		HAL_USER=${HAL_USER}
 FILES_SUBST+=		HAL_GROUP=${HAL_GROUP}
 
 post-extract:
-.if !empty(HAL_DEVELOPER:Myes)
-	${LN} -sf ${FILESDIR}/hald-netbsd ${WRKSRC}/hald/netbsd
-.else
 	${CP} -r ${FILESDIR}/hald-netbsd ${WRKSRC}/hald/netbsd
-.endif
 
 pre-configure:
 	cd ${WRKSRC} && autoreconf -vi
