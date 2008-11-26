@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2008/10/16 13:46:59 drochner Exp $
+# $NetBSD: Makefile,v 1.43 2008/10/24 22:04:17 wiz Exp $
 
 DISTNAME=	eel-2.24.1
 CATEGORIES=	devel gnome
@@ -22,6 +22,8 @@ CONFLICTS+=		eel2-[0-9]*
 
 BUILDLINK_API_DEPENDS.glib2+=		glib2>=2.6.0
 BUILDLINK_API_DEPENDS.gtk2+=		gtk2+>=2.9.4
+BUILDLINK_API_DEPENDS.libgnome+=	libgnome>=2.23.0
+BUILDLINK_API_DEPENDS.gnome-desktop+=	gnome-desktop>=2.23.3
 
 .include "../../devel/GConf/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
