@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/03/25 16:48:45 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2008/11/24 04:06:00 smb Exp $
 #
 
 # Note -- version number also in the do-install rule
@@ -24,6 +24,12 @@ SUBST_FILES.delcr=	README
 SUBST_SED.delcr=	-e 's/.$$//g'
 
 .include "options.mk"
+
+.include "../../mk/compiler.mk"
+
+.if !empty(CC_VERSION:Mgcc-3.*)
+BUILDLINK_TRANSFORM+=	rm:-fno-stack-protector
+.endif
 
 do-install:
 	${INSTALL_DATA_DIR} ${PREFIX}/mdec
