@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/05/26 12:15:14 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2008/11/27 12:42:00 obache Exp $
 
 DISTNAME=	intlfonts-1.2.1
 PKGREVISION=	5
@@ -40,7 +40,7 @@ MISC_FILES=	README.split
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 EXTRACT_SUFX=	.tar.gz
-EXTRACT_ONLY=	${FONT_SETS:S/$/${EXTRACT_SUFX}/}
+EXTRACT_ONLY=	${FONT_SETS:=${EXTRACT_SUFX}}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-fontdir=${PREFIX}/lib/X11/fonts/intlfonts \
