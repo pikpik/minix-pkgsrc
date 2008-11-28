@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2008/10/19 19:18:56 he Exp $
+# $NetBSD: Makefile,v 1.5 2008/11/15 14:37:24 seb Exp $
 #
 
-DISTNAME=	Text-RewriteRules-0.14
+DISTNAME=	Text-RewriteRules-0.16
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
