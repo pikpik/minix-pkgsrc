@@ -1,10 +1,11 @@
-# $NetBSD: gnu-configure.mk,v 1.6 2007/08/01 16:14:17 joerg Exp $
+# $NetBSD: gnu-configure.mk,v 1.7 2008/02/07 21:36:13 rillig Exp $
 
 _VARGROUPS+=			gnu-configure
 _USER_VARS.gnu-configure=	# none
 _PKG_VARS.gnu-configure=	GNU_CONFIGURE GNU_CONFIGURE_PREFIX \
 	GNU_CONFIGURE_INFODIR GNU_CONFIGURE_MANDIR \
 	CONFIGURE_HAS_MANDIR CONFIGURE_HAS_INFODIR \
+	OVERRIDE_DIRDEPTH.configure \
 	USE_GNU_CONFIGURE_HOST
 
 HAS_CONFIGURE=			defined
