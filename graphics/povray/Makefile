@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.39 2007/04/04 11:50:39 obache Exp $
+# $NetBSD: Makefile,v 1.40 2008/06/12 02:14:32 joerg Exp $
 
 DISTNAME=	povray-3.6.1
 PKGREVISION=	5
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Official/Unix/ \
-	 	ftp://ftp.mirror.ac.uk/sites/ftp.povray.org/pub/povray/Official/Unix/
+MASTER_SITES=	http://www.povray.org/ftp/pub/povray/Official/Unix/ \
+		ftp://ftp.povray.org/pub/povray/Official/Unix/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
