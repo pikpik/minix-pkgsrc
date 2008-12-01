@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/gnome-nds-thumbnailer
+share/gconf/schemas/gnome-nds-thumbnailer.schemas
+@comment in GConf: @dirrm share/gconf/schemas
