@@ -1,5 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 02:19:05 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2001/12/01 15:08:02 jlam Exp $
+bin/wcmgr
 bin/webalizer
 bin/webazolver
+man/man1/wcmgr.1
 man/man1/webalizer.1
+man/man1/webazolver.1
 share/examples/webalizer.conf.sample
