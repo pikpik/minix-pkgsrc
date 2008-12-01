@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2008/08/15 01:41:42 dsainty Exp $
+# $NetBSD: Makefile,v 1.71 2008/11/23 13:43:40 jmcneill Exp $
 
 PKGREVISION=		1
 
@@ -24,6 +24,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "Makefile.common"
+.include "options.mk"
 
 CONFIGURE_ARGS+=	--enable-fam
 
