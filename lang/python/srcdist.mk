@@ -1,4 +1,4 @@
-# $NetBSD: srcdist.mk,v 1.22 2008/04/25 16:11:11 tnn Exp $
+# $NetBSD: srcdist.mk,v 1.23 2008/11/29 18:52:22 snj Exp $
 
 .include "../../lang/python/pyversion.mk"
 
@@ -24,13 +24,13 @@ MASTER_SITES=	ftp://ftp.python.org/pub/python/2.4/
 
 .elif ${_PYTHON_VERSION} == "23"
 
-DISTNAME=	Python-2.3.5
+DISTNAME=	Python-2.3.7
 EXTRACT_SUFX=	.tgz
 DISTINFO_FILE=	${.CURDIR}/../../lang/python23/distinfo
 PATCHDIR=	${.CURDIR}/../../lang/python23/patches
-PYSUBDIR=	Python-2.3.5
+PYSUBDIR=	Python-2.3.7
 WRKSRC=		${WRKDIR}/${PYSUBDIR}
-MASTER_SITES=	ftp://ftp.python.org/pub/python/2.3.5/
+MASTER_SITES=	ftp://ftp.python.org/pub/python/2.3.7/
 
 .elif ${_PYTHON_VERSION} == "21"
 
