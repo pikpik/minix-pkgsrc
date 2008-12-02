@@ -1,4 +1,4 @@
-/*	$NetBSD: ftp.c,v 1.23 2008/10/06 12:58:29 joerg Exp $	*/
+/*	$NetBSD: ftp.c,v 1.24 2008/10/08 15:11:21 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * Copyright (c) 2008 Joerg Sonnenberger <joerg@NetBSD.org>
@@ -56,6 +56,11 @@
  * $ftpioId: ftpio.c,v 1.30 1998/04/11 07:28:53 phk Exp $
  *
  */
+
+#ifdef __linux__
+/* Keep this down to Linux, it can create surprises else where. */
+#define _GNU_SOURCE
+#endif
 
 #if HAVE_CONFIG_H
 #include "config.h"
