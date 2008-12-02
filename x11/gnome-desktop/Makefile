@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.82 2008/10/24 22:11:35 wiz Exp $
+# $NetBSD: Makefile,v 1.83 2008/11/26 20:52:33 jnemeth Exp $
 #
 
-DISTNAME=		gnome-desktop-2.24.1
+DISTNAME=		gnome-desktop-2.24.2
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-desktop/2.24/}
 EXTRACT_SUFX=		.tar.bz2
@@ -31,7 +31,6 @@ post-install:
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
