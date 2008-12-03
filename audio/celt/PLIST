@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/celtdec
+bin/celtenc
+include/celt/celt.h
+include/celt/celt_header.h
+include/celt/celt_types.h
+lib/libcelt.la
+lib/pkgconfig/celt.pc
+@dirrm include/celt
