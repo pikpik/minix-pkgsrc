@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+To change the default paper size to US Letter, make sure that
+
+	LC_MESSAGES=en_US.UTF-8
+
+is in your environment.
+===========================================================================
