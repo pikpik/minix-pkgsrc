@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.741 2008/11/27 12:40:49 kefren Exp $
+# $NetBSD: Makefile,v 1.742 2008/12/02 20:57:43 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -512,6 +512,7 @@ SUBDIR+=	torrentutils
 SUBDIR+=	totd
 SUBDIR+=	traceroute-as
 SUBDIR+=	trafshow
+SUBDIR+=	transmission
 SUBDIR+=	trickle
 SUBDIR+=	tsclient
 SUBDIR+=	tsocks
