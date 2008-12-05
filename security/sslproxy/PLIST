@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ssl_proxy
+share/doc/ssl_proxy/README
+@dirrm share/doc/ssl_proxy
