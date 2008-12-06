@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/02/06 09:31:06 bjs Exp $
+# $NetBSD: Makefile,v 1.13 2008/10/05 22:56:41 schmonz Exp $
 #
 
 DISTNAME=		mp3splt-2.2.1
@@ -16,4 +16,5 @@ GNU_CONFIGURE=	 	yes
 USE_FEATURES= 	 	getopt_long
 
 .include "../../audio/libmp3splt/buildlink3.mk"
+.include "../../devel/libltdl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
