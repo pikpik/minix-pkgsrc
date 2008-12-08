@@ -2,6 +2,7 @@
 
 PKGNAME=		php-${PHP_BASE_VERS}
 CATEGORIES=		lang
+PKGREVISION=		2
 HOMEPAGE=		http://www.php.net/
 COMMENT=		PHP Hypertext Preprocessor version 5
 
