@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/09/06 12:51:39 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/10/08 14:27:35 wiz Exp $
 #
 
-DISTNAME=	mnemosyne-1.1.1
+DISTNAME=	mnemosyne-1.2
 CATEGORIES=	misc
 MASTER_SITES=	http://downloads.sourceforge.net/mnemosyne-proj/
 EXTRACT_SUFX=	.tgz
