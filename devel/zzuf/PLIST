@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/zzuf
+lib/zzuf/libzzuf.la
+man/man1/zzuf.1
+man/man3/libzzuf.3
+@dirrm lib/zzuf
