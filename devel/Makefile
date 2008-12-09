@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1078 2008/11/30 13:29:16 seb Exp $
+# $NetBSD: Makefile,v 1.1079 2008/11/30 19:21:55 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -1024,5 +1024,6 @@ SUBDIR+=	xxgdb
 SUBDIR+=	yasm
 SUBDIR+=	z80-asm
 SUBDIR+=	zlib
+SUBDIR+=	zzuf
 
 .include "../mk/misc/category.mk"
