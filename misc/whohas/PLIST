@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/whohas
+share/doc/whohas/intro.html
+share/doc/whohas/intro.txt
+@dirrm share/doc/whohas
