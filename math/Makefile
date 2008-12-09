@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.176 2008/10/26 19:16:19 abs Exp $
+# $NetBSD: Makefile,v 1.177 2008/11/07 16:00:25 jwise Exp $
 
 COMMENT=	Mathematics
 
@@ -158,6 +158,7 @@ SUBDIR+=	snns
 SUBDIR+=	statist
 SUBDIR+=	superlu
 SUBDIR+=	tasp-vsipl
+SUBDIR+=	texdrive
 SUBDIR+=	tochnog
 SUBDIR+=	udunits
 SUBDIR+=	units
