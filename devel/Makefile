@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1079 2008/11/30 19:21:55 seb Exp $
+# $NetBSD: Makefile,v 1.1080 2008/12/09 06:57:27 bjs Exp $
 #
 
 COMMENT=	Development utilities
@@ -136,6 +136,7 @@ SUBDIR+=	devIL
 SUBDIR+=	devhelp
 SUBDIR+=	device-driver-doc-de
 SUBDIR+=	dia2code
+SUBDIR+=	diffuse
 SUBDIR+=	diffutils
 SUBDIR+=	distcc
 SUBDIR+=	distccmon-gnome
