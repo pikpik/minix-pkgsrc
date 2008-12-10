@@ -37,7 +37,6 @@
 /*
  * Gnu like getopt_long() and BSD4.4 getsubopt()/optreset extensions
  */
-#if !defined(_POSIX_SOURCE) && !defined(_XOPEN_SOURCE)
 #define no_argument        0
 #define required_argument  1
 #define optional_argument  2
@@ -74,8 +73,6 @@ extern int optopt;
 
 #ifdef __cplusplus
 };
-#endif
-
 #endif
  
 #endif /* !_GETOPT_H_ */
