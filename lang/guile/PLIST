@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.21 2008/05/30 17:10:04 drochner Exp $
+@comment $NetBSD: PLIST,v 1.22 2008/06/02 16:38:20 drochner Exp $
 bin/guile
 bin/guile-config
 bin/guile-snarf
@@ -122,6 +122,7 @@ lib/libguile-srfi-srfi-60-v-2.la
 lib/libguile.la
 lib/libguilereadline-v-17.la
 lib/pkgconfig/guile-1.8.pc
+man/man1/guile.1
 share/aclocal/guile.m4
 share/guile/1.8/guile-procedures.txt
 share/guile/1.8/ice-9/and-let-star.scm
