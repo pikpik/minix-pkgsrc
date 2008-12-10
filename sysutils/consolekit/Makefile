@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/11/25 13:40:05 hasso Exp $
+# $NetBSD: Makefile,v 1.5 2008/11/26 08:35:01 hasso Exp $
 #
 
 CONSOLEKIT_VER=		0.3.0
@@ -45,6 +45,7 @@ post-extract:
 pre-configure:
 	cd ${WRKSRC} && autoreconf -vi
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../security/policykit/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
