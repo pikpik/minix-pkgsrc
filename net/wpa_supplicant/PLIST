@@ -1,0 +1,8 @@
+@comment $NetBSD$
+man/man5/wpa_supplicant.conf.5
+man/man8/wpa_cli.8
+man/man8/wpa_passphrase.8
+man/man8/wpa_supplicant.8
+sbin/wpa_cli
+sbin/wpa_passphrase
+sbin/wpa_supplicant
