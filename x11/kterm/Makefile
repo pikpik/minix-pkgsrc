@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2008/07/14 12:56:18 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2008/11/10 17:21:38 wiz Exp $
 
 DISTNAME=	kterm-6.2.0
 PKGREVISION=	11
@@ -43,4 +43,5 @@ post-patch:
 .endif
 
 .include "../../mk/xaw.buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
