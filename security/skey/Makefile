@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/07/09 13:39:06 schwarz Exp $
+# $NetBSD: Makefile,v 1.19 2007/01/07 09:14:10 rillig Exp $
 #
 
 DISTNAME=		skey-1.1.5
@@ -17,11 +17,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONF_FILES+=		${PREFIX}/share/examples/skey/skeykeys \
 			${PKG_SYSCONFDIR}/skeykeys
 
-SUBST_CLASSES+=		perl
-SUBST_MESSAGE.perl=	fixing perl path
-SUBST_STAGE.perl=	post-extract
-SUBST_FILES.perl=	skeyprune.pl
-SUBST_SED.perl=		-e "s,^\#!/usr/bin/perl,\#!${PERL5},"
+REPLACE_PERL=		skeyprune.pl
 
 INSTALLATION_DIRS=	bin include lib ${PKGMANDIR}/man1 ${PKGMANDIR}/man8
 
