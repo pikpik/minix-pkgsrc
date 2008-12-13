@@ -1,4 +1,4 @@
-# $NetBSD: hacks.mk,v 1.2 2007/10/16 23:49:02 tnn Exp $
+# $NetBSD: hacks.mk,v 1.3 2008/03/11 18:47:41 tnn Exp $
 
 .if !defined(SKEY_HACKS_MK)
 SKEY_HACKS_MK=	# defined
@@ -32,7 +32,7 @@ SUBST_SED.sginap=	-e 's,usleep(100000),sginap(CLK_TCK/10),g'
 ###
 .if !empty(MACHINE_PLATFORM:MIRIX-5*)
 PKG_HACKS+=		missing-u_int64_t
-CPPFLAGS+=		-DMISSING-U_INT64_T
+CPPFLAGS+=		-DMISSING_U_INT64_T
 .endif
 
 .endif
