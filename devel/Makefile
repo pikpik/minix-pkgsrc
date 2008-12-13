@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1080 2008/12/09 06:57:27 bjs Exp $
+# $NetBSD: Makefile,v 1.1081 2008/12/09 14:19:47 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -881,6 +881,7 @@ SUBDIR+=	py-unitgui
 SUBDIR+=	py-urwid
 SUBDIR+=	py-zconfig
 SUBDIR+=	python-mode
+SUBDIR+=	qbzr
 SUBDIR+=	qconf
 SUBDIR+=	qof
 SUBDIR+=	quilt
