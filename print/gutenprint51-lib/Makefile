@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2008/07/18 00:13:40 gdt Exp $
+# $NetBSD: Makefile,v 1.8 2008/10/26 13:44:08 gdt Exp $
 
-VERSION=	5.2.1
+VERSION=	5.2.2
 DISTNAME=	gutenprint-${VERSION}
 EXTRACT_SUFX=	.tar.bz2
 PKGNAME=	gutenprint-lib-5.2.1
