@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/clutter-0.8/clutter-cairo/clutter-cairo.h
+lib/libclutter-cairo-0.8.la
+lib/pkgconfig/clutter-cairo-0.8.pc
+@dirrm include/clutter-0.8/clutter-cairo
