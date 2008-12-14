@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/04/11 14:57:20 agc Exp $
+# $NetBSD: Makefile,v 1.24 2008/09/29 15:23:22 stacktic Exp $
 #
 
 COMMENT=	File systems, and file system related packages
@@ -15,6 +15,7 @@ SUBDIR+=	fuse-djmount
 SUBDIR+=	fuse-encfs
 SUBDIR+=	fuse-gmailfs
 SUBDIR+=	fuse-gphotofs
+SUBDIR+=	fuse-gstfs
 SUBDIR+=	fuse-httpfs
 SUBDIR+=	fuse-loggedfs
 SUBDIR+=	fuse-lzofs
