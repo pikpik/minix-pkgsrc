@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.794 2008/12/05 06:48:05 wiz Exp $
+# $NetBSD: pkglint.pl,v 1.795 2008/12/14 18:46:58 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -3650,7 +3650,13 @@ sub checkline_relative_pkgdir($$) {
 	checkline_relative_path($line, $path, true);
 	$path = resolve_relative_path($path, false);
 
-	if ($path !~ m"^(?:\./)?\.\./\.\./[^/]+/[^/]+$") {
+	if ($path =~ m"^(?:\./)?\.\./\.\./([^/]+/[^/]+)$") {
+		my $otherpkgpath = $1;
+		if (! -f "$cwd_pkgsrcdir/$otherpkgpath/Makefile") {
+			$line->log_error("There is no package in $otherpkgpath.");
+		}
+
+	} else {
 		$line->log_warning("\"${path}\" is not a valid relative package directory.");
 		$line->explain_warning(
 "A relative pathname always starts with \"../../\", followed",
