@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.745 2008/12/08 23:24:15 adrianp Exp $
+# $NetBSD: Makefile,v 1.746 2008/12/11 21:21:14 reed Exp $
 #
 
 COMMENT=	Networking tools
@@ -298,6 +298,7 @@ SUBDIR+=	openafs
 SUBDIR+=	openag
 SUBDIR+=	openh323
 SUBDIR+=	openntpd
+SUBDIR+=	openresolv
 SUBDIR+=	openslp
 SUBDIR+=	openvmps
 SUBDIR+=	openvpn
