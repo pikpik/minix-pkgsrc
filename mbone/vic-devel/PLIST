@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/histtolut
+bin/vic
+man/vic.1
