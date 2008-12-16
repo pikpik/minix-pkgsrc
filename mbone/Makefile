@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/08/13 08:12:47 rillig Exp $
+# $NetBSD: Makefile,v 1.19 2008/08/26 15:02:54 seb Exp $
 #
 
 COMMENT=	Multi-cast backBone applications
@@ -16,5 +16,6 @@ SUBDIR+=	sapserver
 SUBDIR+=	sdr
 SUBDIR+=	vat
 SUBDIR+=	vic
+SUBDIR+=	vic-devel
 
 .include "../mk/misc/category.mk"
