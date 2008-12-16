@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/10/11 19:27:19 smb Exp $
+# $NetBSD: Makefile,v 1.25 2008/11/11 23:12:32 cube Exp $
 #
 
 DISTNAME=		libetpan-0.57
@@ -16,6 +16,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_LANGUAGES+=		c++
 USE_LANGUAGES+=		c
+MAKE_JOBS_SAFE=		no
 
 PRIVILEGED_STAGES+=	clean
 
