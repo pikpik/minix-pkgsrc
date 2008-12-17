@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.24 2008/07/24 12:55:20 markd Exp $
+# $NetBSD: Makefile,v 1.25 2008/11/03 11:28:21 adam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-libs-${QTVERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	C++ X GUI toolkit
 
 BUILD_TARGET=		sub-src
@@ -56,7 +56,7 @@ do-install:
 		${WRKSRC}/plugins/accessible/lib${plug}.la \
 		${DESTDIR}${QTPREFIX}/plugins/accessible/
 .endfor
-.for plug in qgif qjpeg qmng
+.for plug in qgif qjpeg qmng qsvg
 	${LIBTOOL} --mode=install ${INSTALL_LIB} \
 		${WRKSRC}/plugins/imageformats/lib${plug}.la \
 		${DESTDIR}${QTPREFIX}/plugins/imageformats/
