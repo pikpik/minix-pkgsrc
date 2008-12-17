@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.6 2008/07/14 12:56:13 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2008/12/09 10:36:24 ahoka Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-XFCE4_VERSION=	0.9.0
+XFCE4_VERSION=	0.9.3
 
 DISTNAME=	Thunar-${XFCE4_VERSION}
 PKGNAME=	xfce4-thunar-${XFCE4_VERSION}
-PKGREVISION=	2
 CATEGORIES=	sysutils
 COMMENT=	Xfce file manager
 
@@ -18,6 +17,10 @@ USE_DIRS+=	xdg-1.2
 
 PKGCONFIG_OVERRIDE+=	thunar-vfs/thunar-vfs-1.pc.in
 PKGCONFIG_OVERRIDE+=	thunarx/thunarx-1.pc.in
+
+PKG_SYSCONFSUBDIR=      xdg/Thunar
+EGDIR=                  ${PREFIX}/share/examples/Thunar
+CONF_FILES=             ${EGDIR:Q}/uca.xml ${PKG_SYSCONFDIR:Q}/uca.xml
 
 .include "options.mk"
 
