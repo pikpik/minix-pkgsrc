@@ -5,9 +5,12 @@ man/man1/unbound-host.1
 man/man3/libunbound.3
 man/man5/unbound.conf.5
 man/man8/unbound-checkconf.8
+man/man8/unbound-control.8
 man/man8/unbound.8
 sbin/unbound
 sbin/unbound-checkconf
+sbin/unbound-control
+sbin/unbound-control-setup
 sbin/unbound-host
 share/examples/rc.d/unbound
 share/examples/unbound/unbound.conf
