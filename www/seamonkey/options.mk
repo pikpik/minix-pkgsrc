@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.13 2008/09/18 21:14:59 adrianp Exp $
+# $NetBSD: options.mk,v 1.14 2008/12/17 18:27:53 tnn Exp $
 # used by www/firefox/Makefile.common
 # used by www/firefox3/Makefile.common
 # used by www/seamonkey/Makefile.common
@@ -29,8 +29,6 @@ CONFIGURE_ARGS+=	--enable-jemalloc
 CONFIGURE_ARGS+=	--disable-jemalloc
 .endif
 
-# this .if test looks backward, but the missing options disables debug,
-# so it is correct
 .if !empty(PKG_OPTIONS:Mdebug)
 CONFIGURE_ARGS+=	--enable-debug
 .else
