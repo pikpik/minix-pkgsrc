@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2008/05/07 02:53:41 bjs Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2008/09/10 16:41:55 ahoka Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 NUCLEO_BUILDLINK3_MK:=	${NUCLEO_BUILDLINK3_MK}+
@@ -13,6 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}nucleo
 
 .if ${NUCLEO_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.nucleo+=	nucleo>=0.6
+BUILDLINK_ABI_DEPENDS.nucleo?=	nucleo>=0.7.1nb2
 BUILDLINK_PKGSRCDIR.nucleo?=	../../x11/nucleo
 pkgbase:=nucleo
 .  include "../../mk/pkg-build-options.mk"

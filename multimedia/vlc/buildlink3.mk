@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.21 2008/02/25 16:38:00 sborrill Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2008/09/11 18:21:07 ahoka Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 VLC_BUILDLINK3_MK:=	${VLC_BUILDLINK3_MK}+
@@ -13,6 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}vlc
 
 .if ${VLC_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.vlc+=	vlc>=0.8.6d
+BUILDLINK_ABI_DEPENDS.vlc?=	vlc>=0.9.8anb1
 BUILDLINK_PKGSRCDIR.vlc?=	../../multimedia/vlc
 .endif	# VLC_BUILDLINK3_MK
 
