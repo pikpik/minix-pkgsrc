@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2008/10/20 14:28:26 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2008/10/24 01:06:22 obache Exp $
 #
 
 DISTNAME=	SOAP-Lite-0.710.08
 PKGNAME=	p5-${DISTNAME:S/710.08/71.08/}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SOAP/}
 
@@ -15,6 +15,7 @@ COMMENT=	Perl5 module providing a lightweight interface to SOAP
 DEPENDS+=	p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
 DEPENDS+=	p5-URI-[0-9]*:../../www/p5-URI
 DEPENDS+=	p5-XML-Parser>=2.23:../../textproc/p5-XML-Parser
+DEPENDS+=	{perl>=5.10.0,p5-version>=0}:../../devel/p5-version
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
