@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2007/04/12 09:47:14 martti Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 XFCE4_XARCHIVER_BUILDLINK3_MK:=	${XFCE4_XARCHIVER_BUILDLINK3_MK}+
@@ -12,7 +12,7 @@ BUILDLINK_PACKAGES+=	xfce4-xarchiver
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}xfce4-xarchiver
 
 .if ${XFCE4_XARCHIVER_BUILDLINK3_MK} == "+"
-BUILDLINK_API_DEPENDS.xfce4-xarchiver+=	xfce4-xarchiver>=0.4.6
+BUILDLINK_API_DEPENDS.xfce4-xarchiver+=	xfce4-xarchiver>=0.5.2nb1
 BUILDLINK_PKGSRCDIR.xfce4-xarchiver?=	../../sysutils/xfce4-xarchiver
 .endif	# XFCE4_XARCHIVER_BUILDLINK3_MK
 
