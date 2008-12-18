@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/04/12 09:55:22 martti Exp $
+# $NetBSD: Makefile,v 1.17 2008/07/14 12:56:19 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,6 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTNAME=	xfce-mcs-plugins-${XFCE4_VERSION}
 PKGNAME=	xfce4-mcs-plugins-${XFCE4_VERSION}
+PKGREVISION=	1
 CATEGORIES=	x11
 COMMENT=	Xfce settings manager plugins
 
