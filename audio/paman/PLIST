@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/paman
+share/applications/paman.desktop
+share/paman/paman.glade
+@dirrm share/paman
+@comment in xdg-dirs: @dirrm share/applications
