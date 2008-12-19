@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/07/13 11:52:28 itohy Exp $
+# $NetBSD: Makefile,v 1.8 2008/01/18 14:40:19 itohy Exp $
 
 DISTNAME=		kyopon-0.5
 CATEGORIES=		comms
@@ -8,14 +8,12 @@ MAINTAINER=		itohy@NetBSD.org
 #HOMEPAGE=
 COMMENT=		tool to manipulate data of Kyocera PHS handset
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 ONLY_FOR_PLATFORM=	NetBSD-*-* DragonFly-*-*
 
-MAKE_FLAGS+=		BINDIR="${PREFIX}/bin"
-MAKE_FLAGS+=		MANDIR="${PREFIX}/man"
-MAKE_ENV+=		BINOWN=${BINOWN} BINGRP=${BINGRP}
-MAKE_ENV+=		MANOWN=${MANOWN} MANGRP=${MANGRP}
+USE_BSD_MAKEFILE=	yes
 
-pre-install:
-	${INSTALL_MAN_DIR} ${PREFIX}/${PKGMANDIR}/cat1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat1 ${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
