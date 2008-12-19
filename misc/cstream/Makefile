@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2007/03/25 05:46:58 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:37 joerg Exp $
 
-DISTNAME=	cstream-2.2
+DISTNAME=	cstream-2.7.5
 CATEGORIES=	misc
 MASTER_SITES=	http://www.cons.org/cracauer/download/
 
