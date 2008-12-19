@@ -1,11 +1,9 @@
 # $NetBSD$
 #
 
-DISTNAME=		ecl-0.9l
-PKGNAME=		ecl-0.9.12
+DISTNAME=		ecl-8.12.0
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ecls/}
-EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		asau@inbox.ru
 HOMEPAGE=		http://ecls.sourceforge.net/
