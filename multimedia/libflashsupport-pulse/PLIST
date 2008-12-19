@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${EMULSUBDIRSLASH}usr/lib/libpulse.so.0
+${EMULSUBDIRSLASH}usr/lib/libgdbm.so.3
+${EMULSUBDIRSLASH}usr/lib/libflashsupport.so
