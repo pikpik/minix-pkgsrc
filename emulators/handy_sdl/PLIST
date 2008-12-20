@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/handy_sdl
+share/doc/handy_sdl/README
+@dirrm share/doc/handy_sdl
