@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/11/22 15:20:51 jmcneill Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/11/23 21:50:51 hasso Exp $
 bin/hal-device
 bin/hal-disable-polling
 bin/hal-find-by-capability
@@ -40,7 +40,6 @@ libexec/hal-storage-eject
 libexec/hal-storage-mount
 libexec/hal-storage-unmount
 libexec/hal-system-power-pm-is-supported
-libexec/hal-system-power-pmu
 libexec/hal-system-setserial
 libexec/hald-generate-fdi-cache
 libexec/hald-runner
