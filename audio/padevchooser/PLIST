@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/padevchooser
+share/applications/padevchooser.desktop
+share/padevchooser/padevchooser.glade
+@dirrm share/padevchooser
+@comment in xdg-dirs: @dirrm share/applications
