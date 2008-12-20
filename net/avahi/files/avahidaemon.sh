@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: avahidaemon.sh,v 1.1.1.1 2008/12/20 17:36:14 wiz Exp $
 #
 # PROVIDE: avahidaemon
 # REQUIRE: DAEMON
@@ -15,7 +15,7 @@ fi
 name="avahidaemon"
 rcvar=${name}
 command="@PREFIX@/sbin/avahi-daemon"
-required_files="@PREFIX@/etc/avahi/avahi-daemon.conf"
+required_files="@PKG_SYSCONFDIR@/avahi-daemon.conf"
 avahidaemon_flags="-D"
 
 load_rc_config $name
