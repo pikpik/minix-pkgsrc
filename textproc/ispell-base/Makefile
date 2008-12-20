@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2007/10/17 00:00:54 tnn Exp $
+# $NetBSD: Makefile,v 1.32 2008/10/21 18:25:48 tnn Exp $
 #
 
 DISTNAME=	ispell-3.3.02
@@ -20,7 +20,7 @@ MAKE_JOBS_SAFE=	no
 
 .include "../../mk/bsd.prefs.mk"
 
-.if exists(/usr/include/inttypes.h) && !empty(MACHINE_PLATFORM:MIRIX-5.3-*)
+.if exists(/usr/include/inttypes.h) && empty(MACHINE_PLATFORM:MIRIX-5.3-*)
 CFLAGS+=	-DHAVE_INTTYPES_H
 .endif
 
