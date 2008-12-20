@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/10/19 19:17:55 he Exp $
+# $NetBSD: Makefile,v 1.6 2008/11/16 23:53:04 he Exp $
 #
 
-DISTNAME=	Hook-LexWrap-0.21
+DISTNAME=	Hook-LexWrap-0.22
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5hlw
 CATEGORIES=	devel perl5
