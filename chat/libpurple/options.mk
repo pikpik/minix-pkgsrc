@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.7 2008/04/12 22:42:58 jlam Exp $
+# $NetBSD: options.mk,v 1.8 2008/05/17 23:26:06 tnn Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.libpurple
 PKG_SUPPORTED_OPTIONS+=		gnutls perl tcl debug dbus sasl
-PKG_SUGGESTED_OPTIONS+=		gnutls
+PKG_SUGGESTED_OPTIONS+=		gnutls dbus
 
 .include "../../mk/bsd.options.mk"
 
