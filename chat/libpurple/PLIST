@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.13 2008/08/19 18:18:10 bjs Exp $
+@comment $NetBSD: PLIST,v 1.14 2008/09/16 19:54:21 abs Exp $
 include/libpurple/account.h
 include/libpurple/accountopt.h
 include/libpurple/blist.h
@@ -58,6 +58,7 @@ lib/purple-2/buddynote.la
 lib/purple-2/idle.la
 lib/purple-2/joinpart.la
 lib/purple-2/libaim.la
+${PLIST.avahi}lib/purple-2/libbonjour.la
 lib/purple-2/libgg.la
 lib/purple-2/libicq.la
 lib/purple-2/libirc.la
