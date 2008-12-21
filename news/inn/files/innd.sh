@@ -1,10 +1,23 @@
 #!/bin/sh
 #
-# $NetBSD: innd.sh,v 1.14 2008/06/23 09:10:53 spz Exp $
+# $NetBSD: innd.sh,v 1.15 2008/09/03 20:19:39 spz Exp $
 #
 # PROVIDE: inn
 # REQUIRE: DAEMON
 # KEYWORD: shutdown
+
+if [ -d @INN_DATA_DIR@/etc ] ; then
+	echo ""
+	echo "WARNING WARNING WARNING WARNING WARNING WARNING WARNING"
+	echo ""
+	echo "WARNING: old inn config directory @INN_DATA_DIR@/etc found"
+	echo "WARNING: please move your config to @PREFIX@/etc/inn"
+	echo "WARNING: before starting your new inn install"
+	echo ""
+	echo "WARNING WARNING WARNING WARNING WARNING WARNING WARNING"
+	echo ""
+	sleep 120
+fi
 
 if [ -x @INN_PATHBIN@/rc.news -a -s @INN_DATA_DIR@/db/active ]
 then
@@ -20,6 +33,12 @@ then
 		then
 			echo $3 >@PREFIX@/etc/nntp/domainname
 		fi)
+	fi
+
+	if [ -f @INN_DATA_DIR@/db/history -a \
+		! -s @INN_DATA_DIR@/db/history ]
+	then
+		@INN_PATHBIN@/makedbz -i -o -s 10000
 	fi
 
 	if [ $# -eq 0 ]
