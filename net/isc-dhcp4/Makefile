@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/02/13 22:03:58 adrianp Exp $
 #
 
 COMMENT=	ISC Dynamic Host Configuration Protocol (DHCP) Base
 COMPONENT=	base
+PKGREVISION=	1
 SUBDIR=		includes common minires dst
 
 .include "options.mk"
