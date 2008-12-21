@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/12/02 16:42:17 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2008/12/21 09:53:13 joerg Exp $
 #
 
 DISTNAME=		gnome-terminal-2.24.2
@@ -26,7 +26,7 @@ GCONF_SCHEMAS=	gnome-terminal.schemas
 
 PYTHON_FOR_BUILD_ONLY=	YES
 
-BULD_DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
+BUILD_DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 
 BUILDLINK_API_DEPENDS.GConf+=	GConf>=2.14.0
 .include "../../devel/GConf/schemas.mk"
