@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/12/21 09:53:35 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2008/12/21 10:35:19 wiz Exp $
 #
 
 DISTNAME=		gnome-terminal-2.24.2
@@ -26,7 +26,7 @@ GCONF_SCHEMAS=	gnome-terminal.schemas
 
 PYTHON_FOR_BUILD_ONLY=	YES
 .include "../../lang/python/pyversion.mk"
-.if ${PYPKGPREFIX} == "py24"
+.if ${PYPKGPREFIX} == "py24" || ${PYPKGPREFIX} == "py23" || ${PYPKGPREFIX} == "py21"
 BUILD_DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 .endif
 
