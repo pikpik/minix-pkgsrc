@@ -31,8 +31,6 @@ ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/zprof.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/zpty.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/zselect.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/zutil.so
-@comment ${PLIST.terminfo}lib/zsh/${PKGVERSION}/zsh/terminfo.so
-@comment ${PLIST.shlibs}lib/zsh/libzsh-${PKGVERSION}.so
 man/man1/zsh.1
 man/man1/zshall.1
 man/man1/zshbuiltins.1
