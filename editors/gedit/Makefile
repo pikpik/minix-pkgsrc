@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2008/11/05 11:34:04 wiz Exp $
+# $NetBSD: Makefile,v 1.88 2008/11/24 13:39:28 wiz Exp $
 #
 
 DISTNAME=		gedit-2.24.2
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
+USE_TOOLS+=		autoconf
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
 
@@ -33,6 +34,9 @@ BUILDLINK_API_DEPENDS.gtk2+=		gtk2+>=2.10.0
 BUILDLINK_API_DEPENDS.libglade+=	libglade>=2.6.0
 BUILDLINK_API_DEPENDS.libgnomeui+=	libgnomeui>=2.16.0
 BUILDLINK_API_DEPENDS.gnome-vfs+=	gnome-vfs>=2.16.0
+
+pre-configure:
+	cd ${WRKSRC} && autoconf -f
 
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
