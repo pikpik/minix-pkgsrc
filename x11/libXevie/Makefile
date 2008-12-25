@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/08/06 13:59:34 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:15 tnn Exp $
 #
 
 DISTNAME=		libXevie-1.0.2
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		pkg-config autoconf
 
 PKGCONFIG_OVERRIDE+=	xevie.pc.in
 
@@ -24,6 +24,9 @@ PKGCONFIG_OVERRIDE+=	xevie.pc.in
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
+
+pre-configure:
+	cd ${WRKSRC} && autoconf -f
 
 .include "../../x11/evieext/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
