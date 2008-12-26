@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/hal/scripts/linux/hal-dockstation-undock-linux
 lib/hal/scripts/linux/hal-luks-remove-linux
 lib/hal/scripts/linux/hal-luks-setup-linux
