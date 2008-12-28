@@ -23,6 +23,7 @@ ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/sched.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/stat.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/system.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/termcap.so
+${PLIST.dynamic}${PLIST.terminfo}lib/zsh/${PKGVERSION}/zsh/terminfo.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/zftp.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/zle.so
 ${PLIST.dynamic}lib/zsh/${PKGVERSION}/zsh/zleparameter.so
