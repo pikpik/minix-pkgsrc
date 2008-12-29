@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2008/11/10 16:36:57 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2008/11/29 08:57:47 wiz Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -30,6 +30,7 @@ SUBDIR+=	p5-gnome-bindings
 SUBDIR+=	php4-extensions
 SUBDIR+=	php5-extensions
 SUBDIR+=	pkg_developer
+SUBDIR+=	pulseaudio-tools
 SUBDIR+=	pkgsrc-guide-tools
 SUBDIR+=	py-gnome-bindings
 SUBDIR+=	ruby-gnome2
