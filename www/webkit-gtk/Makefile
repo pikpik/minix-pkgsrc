@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/12/11 19:38:57 ahoka Exp $
+# $NetBSD: Makefile,v 1.2 2008/12/13 02:35:15 jmcneill Exp $
 #
 # pkg-config says 1.0.3, let's combine it with the revision
 # to give a sane version number.
@@ -43,7 +43,7 @@ REPLACE_PERL+=	JavaScriptCore/kjs/create_hash_table \
 		WebKitTools/Scripts/*
 
 pre-configure:
-	cd ${WRKSRC} && ${SHELL} autogen.sh
+	cd ${WRKSRC} && ${BASH} autogen.sh
 
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
