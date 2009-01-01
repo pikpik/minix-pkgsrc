@@ -1,4 +1,5 @@
-$NetBSD$
+$NetBSD: CHANGES-2009,v 1.1 2009/01/01 11:18:24 tnn Exp $
 
 Changes to the packages collection and infrastructure in 2009:
 
+	Updated databases/py-postgresql to 4.0 [darcy 2009-01-01]
