@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/12/17 04:17:25 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2008/12/18 17:28:17 bjs Exp $
 #
 
 DISTNAME=	pspvc-install-0.3
-PKGNAME=	pspvc-0.3
+PSPVCVER=	pspvc-0.3
+PKGNAME=	${PSPVCVER}
 PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pspvc/}
@@ -14,10 +15,10 @@ COMMENT=	PSP video converter
 USE_LANGUAGES=	c
 USE_TOOLS=	pkg-config gmake
 GNU_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PSPVCVER}
 
 post-extract:
-	${TAR} -C ${WRKDIR} -zxf ${WRKDIR}/${DISTNAME}/archives/${PKGNAME}.tar.gz
+	${TAR} -C ${WRKDIR} -zxf ${WRKDIR}/${DISTNAME}/archives/${PSPVCVER}.tar.gz
 
 post-install:
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/archives/pspvc.desktop ${PREFIX}/share/applications
