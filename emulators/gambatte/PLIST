@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${PLIST.qt}bin/gambatte_qt
+bin/gambatte_sdl
+share/doc/gambatte/README
+@dirrm share/doc/gambatte
