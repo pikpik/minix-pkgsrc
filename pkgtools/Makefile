@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2008/05/24 03:39:29 tnn Exp $
+# $NetBSD: Makefile,v 1.91 2008/06/06 08:30:31 wiz Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -23,6 +23,7 @@ SUBDIR+=	pbulk
 SUBDIR+=	pkg_alternatives
 SUBDIR+=	pkg_chk
 SUBDIR+=	pkg_comp
+SUBDIR+=	pkg_distinst
 SUBDIR+=	pkg_filecheck
 SUBDIR+=	pkg_install
 SUBDIR+=	pkg_install-info
