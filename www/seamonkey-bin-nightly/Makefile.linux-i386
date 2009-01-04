@@ -1,6 +1,6 @@
-# $NetBSD: Makefile.Linux.i386,v 1.1.1.1 2006/09/24 16:40:50 salo Exp $
+# $NetBSD: Makefile.linux-i386,v 1.1 2007/07/29 05:20:03 jlam Exp $
 
-DISTNAME=	seamonkey-2.0a1pre.en-US.linux-i686
+DISTNAME=	seamonkey-2.0a3pre.en-US.linux-i686
 EXTRACT_SUFX=	.tar.bz2
 
 MOZ_GTK2=	yes
