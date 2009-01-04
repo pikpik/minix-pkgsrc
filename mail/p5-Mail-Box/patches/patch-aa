@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.PL.orig	2008-04-28 08:30:56.000000000 +0100
+--- Makefile.PL.orig	2008-12-11 11:05:40.000000000 +0000
 +++ Makefile.PL
-@@ -159,88 +159,8 @@ FIX
+@@ -155,90 +155,8 @@ FIX
      exit 1;
  }
  
@@ -14,7 +14,7 @@ $NetBSD$
 -*
 -OPTIONAL
 -
--foreach my $optional (@optional)
+-foreach my $optional (sort {$a->[0] cmp $b->[0]} @optional)
 -{   my ($module, $version, %args) = @$optional;
 -    my $requirements = $args{requires} || sub {1};
 -    next unless $requirements->();
@@ -39,8 +39,10 @@ $NetBSD$
 -        else { print "**** Optional $module compilation failed:\n$@\n" }
 -    }
 -    elsif(eval '$module->VERSION($version)' && $@)
--    {   print "**** Optional $module too old: requires $version but is ",
--            $module->VERSION,";$@\n";
+-    {   my $error = $@ || '';
+-        $error =~ s/[\r\n]+$//;
+-        print "**** Optional $module too old: requires $version but is ",
+-            $module->VERSION,";$error\n";
 -    }
 -    else
 -    {   my $v = $module->VERSION;
