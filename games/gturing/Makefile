@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2008/03/06 14:53:50 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2008/07/14 12:56:04 joerg Exp $
 #
 
 DISTNAME=		gturing-0.1.1
@@ -22,5 +22,5 @@ BUILDLINK_TRANSFORM+=	rm:-D.*_DISABLE_DEPRECATED
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../textproc/scrollkeeper/omf.mk"
+.include "../../textproc/rarian/omf.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2008/05/30 12:29:00 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2008/06/12 02:14:55 joerg Exp $
 #
 
 DISTNAME=	drivel-2.0.3
@@ -37,7 +37,7 @@ BUILDLINK_API_DEPENDS.curl+=	curl>=7.14.0nb1
 .include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../textproc/gtkspell/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
-.include "../../textproc/scrollkeeper/omf.mk"
+.include "../../textproc/rarian/omf.mk"
 .include "../../www/curl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/gtksourceview/buildlink3.mk"

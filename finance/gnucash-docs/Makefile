@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/09/02 22:24:40 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2008/06/20 01:09:19 joerg Exp $
 
 DISTNAME=		gnucash-docs-2.2.0
 CATEGORIES=		finance
@@ -17,5 +17,5 @@ USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		YES
 
-.include "../../textproc/scrollkeeper/omf.mk"
+.include "../../textproc/rarian/omf.mk"
 .include "../../mk/bsd.pkg.mk"

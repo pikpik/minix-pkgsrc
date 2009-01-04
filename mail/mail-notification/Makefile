@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2008/05/21 16:13:46 gdt Exp $
+# $NetBSD: Makefile,v 1.44 2008/07/14 12:56:08 joerg Exp $
 #
 
 DISTNAME=	mail-notification-5.0
@@ -60,7 +60,7 @@ CONFIGURE_ARGS+=	--disable-ssl
 .include "../../net/ORBit2/buildlink3.mk"
 .include "../../sysutils/gnome-vfs/buildlink3.mk"
 .include "../../sysutils/libnotify/buildlink3.mk"
-.include "../../textproc/scrollkeeper/omf.mk"
+.include "../../textproc/rarian/omf.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

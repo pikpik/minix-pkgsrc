@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/09/06 20:54:33 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2008/11/08 18:25:10 wiz Exp $
 #
 
 DISTNAME=	gnome-netstatus-2.12.2
@@ -27,7 +27,7 @@ GCONF_SCHEMAS=		netstatus.schemas
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
-.include "../../textproc/scrollkeeper/omf.mk"
+.include "../../textproc/rarian/omf.mk"
 .include "../../x11/gnome-panel/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

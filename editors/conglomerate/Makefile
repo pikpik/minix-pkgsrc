@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/04/14 11:36:11 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2008/06/12 02:14:29 joerg Exp $
 #
 
 DISTNAME=	conglomerate-0.9.1
@@ -38,7 +38,7 @@ GCONF_SCHEMAS=		conglomerate.schemas
 .include "../../textproc/enchant/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
-.include "../../textproc/scrollkeeper/omf.mk"
+.include "../../textproc/rarian/omf.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/gtksourceview/buildlink3.mk"
 
