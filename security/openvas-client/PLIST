@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/OpenVAS-Client
+bin/openvasclient-mkcert
+man/man1/OpenVAS-Client.1
+man/man1/openvasclient-mkcert.1
+man/man1/openvasclient-mkrand.1
