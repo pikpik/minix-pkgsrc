@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/12/09 23:02:49 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2008/11/23 23:40:12 heinz Exp $
 #
 
 DISTNAME=		dvdisaster-0.70.6
@@ -6,7 +6,7 @@ CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dvdisaster/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		shattered@users.sourceforge.net
+MAINTAINER=		shattered@NetBSD.org
 HOMEPAGE=		http://www.dvdisaster.com/
 COMMENT=		Protects data on optical media with error correcting codes
 
