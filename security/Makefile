@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.337 2008/12/05 12:53:24 sborrill Exp $
+# $NetBSD: Makefile,v 1.338 2008/12/19 18:31:36 he Exp $
 #
 
 COMMENT=	Security tools
@@ -133,6 +133,11 @@ SUBDIR+=	opencdk
 SUBDIR+=	openpam
 SUBDIR+=	openssh
 SUBDIR+=	openssl
+SUBDIR+=	openvas-libraries
+SUBDIR+=	openvas-libnasl
+SUBDIR+=	openvas-plugins
+SUBDIR+=	openvas-server
+SUBDIR+=	openvas-client
 SUBDIR+=	otpCalc
 SUBDIR+=	p0f
 SUBDIR+=	p5-Authen-CAS-Client
