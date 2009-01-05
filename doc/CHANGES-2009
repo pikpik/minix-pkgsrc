@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2009,v 1.43 2009/01/04 22:19:34 wiz Exp $
+$NetBSD: CHANGES-2009,v 1.44 2009/01/04 23:16:30 he Exp $
 
 Changes to the packages collection and infrastructure in 2009:
 
@@ -63,3 +63,4 @@ Changes to the packages collection and infrastructure in 2009:
 	Updated devel/p5-PAR-Dist to 0.42 [he 2009-01-04]
 	Updated devel/p5-Perl-Critic to 1.094.001 [he 2009-01-04]
 	Updated devel/p5-Test-WWW-Selenium to 1.17 [he 2009-01-04]
+	Updated games/gbrainy to 1.01 [wiz 2009-01-05]
