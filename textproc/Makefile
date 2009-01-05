@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.453 2009/01/04 18:01:01 wiz Exp $
+# $NetBSD: Makefile,v 1.454 2009/01/05 09:41:16 he Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -424,6 +424,7 @@ SUBDIR+=	scew
 SUBDIR+=	soprano
 SUBDIR+=	source-highlight
 SUBDIR+=	stardic
+SUBDIR+=	sub2srt
 SUBDIR+=	subtitleripper
 SUBDIR+=	suikyo
 SUBDIR+=	suikyo-conv-table
