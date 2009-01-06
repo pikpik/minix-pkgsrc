@@ -1,6 +1,6 @@
 #!@PERL5@ -w
 
-# $NetBSD$
+# $NetBSD: pkg_distinst.pl,v 1.1.1.1 2009/01/04 00:44:38 adrianp Exp $
 
 use Data::Dumper;
 use File::Basename;
@@ -83,6 +83,14 @@ foreach $ipkg (@installed) {
 		chdir("$pkgsrc/$loc");
 
 		$line = `@MAKE@ show-var VARNAME=DISTFILES`;
+		chomp($line);
+
+		if ($line ne "") {
+			@pdistfiles = split / /, $line;
+			push(@distfiles, @pdistfiles);
+		}
+
+		$line = `@MAKE@ show-var VARNAME=PATCHFILES`;
 		chomp($line);
 
 		if ($line ne "") {
