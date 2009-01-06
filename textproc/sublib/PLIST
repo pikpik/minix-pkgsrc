@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/mono/sublib/sublib.dll
+lib/pkgconfig/sublib.pc
+@dirrm lib/mono/sublib
