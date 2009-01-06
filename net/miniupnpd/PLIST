@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/miniupnpd
+share/examples/miniupnpd/miniupnpd.conf
+@dirrm share/examples/miniupnpd
