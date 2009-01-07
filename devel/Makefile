@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1085 2008/12/20 14:39:15 he Exp $
+# $NetBSD: Makefile,v 1.1086 2008/12/20 17:27:08 ahoka Exp $
 #
 
 COMMENT=	Development utilities
@@ -373,6 +373,7 @@ SUBDIR+=	monotone-server
 SUBDIR+=	monotone-viz
 SUBDIR+=	mph
 SUBDIR+=	nana
+SUBDIR+=	nant
 SUBDIR+=	nasm
 SUBDIR+=	nbitools
 SUBDIR+=	nbpatch
