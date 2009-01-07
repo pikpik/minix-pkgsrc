@@ -28,7 +28,7 @@ PY_PATCHPLIST=		yes
 BUILDLINK_TRANSFORM+=	rm:-std=c99
 .endif
 
-BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.6.4
+BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.8.0
 
 .include "../../lang/python/extension.mk"
 .include "../../math/py-Numeric/buildlink3.mk"
