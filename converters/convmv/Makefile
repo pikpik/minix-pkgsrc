@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2008/02/11 23:28:45 heinz Exp $
+# $NetBSD: Makefile,v 1.8 2008/02/16 13:17:12 wiz Exp $
 
-DISTNAME=		convmv-1.12
+DISTNAME=		convmv-1.13
 CATEGORIES=		converters
 MASTER_SITES=		http://www.j3e.de/linux/convmv/
 
