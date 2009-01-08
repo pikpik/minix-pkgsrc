@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2008/06/12 02:14:13 joerg Exp $
+# $NetBSD: Makefile,v 1.67 2008/08/15 12:52:57 wiz Exp $
 
 DISTNAME=		amarok-${VERSION}
 VERSION=		1.4.10
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=	--without-nmm
 CONFIGURE_ARGS+=	--without-mas
 CONFIGURE_ARGS+=	--without-helix
 CONFIGURE_ARGS+=	--with-mp4v2
-CONFIGURE_ARGS+=	--with-mp4v2-dir=${LOCALBASE}
+CONFIGURE_ARGS+=	--with-mp4v2-dir=${BUILDLINK_PREFIX.libmp4v2}
 
 LIBS+=			${LIBOSSAUDIO}
 
