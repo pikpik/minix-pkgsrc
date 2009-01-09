@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/11/13 23:20:14 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2008/12/19 21:38:31 markd Exp $
 
-DISTNAME=	akonadi-1.0.81
+DISTNAME=	akonadi-1.1.0
 CATEGORIES=	mail
 MASTER_SITES=	http://download.akonadi-project.org/
 EXTRACT_SUFX=	.tar.bz2
@@ -26,6 +26,8 @@ CONFIGURE_DIRS=	_build
 pre-configure:
 	${LN} -sf ${QTDIR}/bin/qmake ${BUILDLINK_DIR}/bin/
 	${MKDIR} ${WRKSRC}/_build
+
+PKGCONFIG_OVERRIDE+=	akonadi.pc.cmake
 
 .include "../../databases/shared-mime-info/buildlink3.mk"
 .include "../../devel/boost-libs/buildlink3.mk"
