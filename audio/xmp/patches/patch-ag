@@ -1,12 +1,12 @@
 $NetBSD$
 
---- configure.orig	Sat May 15 09:48:55 2004
+--- configure.orig	2007-12-03 00:32:25.000000000 +0000
 +++ configure
-@@ -593,7 +593,6 @@ CINCS="${CPPFLAGS}"
- PLUGIN=""
+@@ -1851,7 +1851,6 @@ CINCS="${CPPFLAGS}"
+ PLUGINS=""
  
  
 -LDFLAGS=""
  
  
- X_XMP="xxmp"
+ DRIVERS=""

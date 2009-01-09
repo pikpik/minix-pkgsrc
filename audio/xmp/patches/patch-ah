@@ -1,12 +1,12 @@
 $NetBSD$
 
---- src/Makefile.orig	Sat May 15 10:09:32 2004
+--- src/Makefile.orig	2007-10-21 12:59:15.000000000 +0000
 +++ src/Makefile
-@@ -2,7 +2,7 @@
- 
+@@ -4,7 +4,7 @@
+ TOPDIR	= ../
  DFILES	= Makefile
- _DIRS	= drivers include loaders player misc main
--DDIRS	= $(_DIRS) os2 xmms
+ _DIRS	= drivers include loaders prowizard player misc main plugin
+-DDIRS	= $(_DIRS) os2
 +DDIRS	= $(_DIRS)
  CFILES	=
  DCFILES	=
