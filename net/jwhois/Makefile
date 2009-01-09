@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.58 2006/02/05 23:10:25 joerg Exp $
+# $NetBSD: Makefile,v 1.59 2006/04/06 03:20:54 jlam Exp $
 #
 
-DISTNAME=		jwhois-3.2.2
-PKGREVISION=		19
+DISTNAME=		jwhois-4.0
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_GNU:=jwhois/}
 
@@ -10,9 +9,11 @@ MAINTAINER=		kim@tac.nyc.ny.us
 HOMEPAGE=		http://www.gnu.org/software/jwhois/
 COMMENT=		Configurable WHOIS client
 
+#LICENSE=		gnu-gpl-v3
+
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/db
 
 LIBS.SunOS+=		-lnsl -lsocket
@@ -22,13 +23,15 @@ LIBS.SunOS+=		-lnsl -lsocket
 EGDIR=			${PREFIX}/share/examples/jwhois
 CONF_FILES=		${EGDIR}/jwhois.conf.default	\
 			${PKG_SYSCONFDIR}/jwhois.conf
-INFO_FILES=		# PLIST
+INFO_FILES=		YES
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-libintl-prefix=${BUILDLINK_PREFIX.gettext}
 
 post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/example/jwhois.conf	\
 		${EGDIR}/jwhois.conf.default
 
+.include "../../devel/libidn/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
