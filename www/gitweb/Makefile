@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2008/04/30 13:38:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/20 01:09:41 joerg Exp $
 #
 
-DISTNAME=	git-1.5.0.3
+DISTNAME=	git-1.6.0.6
 PKGNAME=	${DISTNAME:S/git/gitweb/}
 CATEGORIES=	www
 MASTER_SITES=	http://www.kernel.org/pub/software/scm/git/
