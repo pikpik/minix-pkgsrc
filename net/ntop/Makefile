@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2008/01/18 05:08:46 tnn Exp $
+# $NetBSD: Makefile,v 1.49 2008/10/16 12:24:09 adam Exp $
 
 DISTNAME=	ntop-3.3.8
 CATEGORIES=	net
@@ -33,6 +33,13 @@ BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=0.8.3
 .include "../../mk/pthread.buildlink3.mk"
 .if defined(PTHREAD_TYPE) && ${PTHREAD_TYPE} == "none"
 CONFIGURE_ARGS+=	--disable-mt
+.endif
+
+.if ${OPSYS} == "Darwin"
+# This package uses "-flat_namespace -undefined suppress" and exports
+# symbols from the executable that get stripped unless we set this:
+
+INSTALL_UNSTRIPPED=	YES
 .endif
 
 
