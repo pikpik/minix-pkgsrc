@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2008/07/28 19:47:08 plunky Exp $
+# $NetBSD: Makefile,v 1.15 2008/07/28 20:13:50 plunky Exp $
 #
 
-DISTNAME=	obexapp-1.4.9
+DISTNAME=	obexapp-1.4.10
 CATEGORIES=	comms
 MASTER_SITES=	http://www.geocities.com/m_evmenkin/
 
