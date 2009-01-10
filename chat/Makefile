@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.143 2009/01/04 00:53:07 adrianp Exp $
+# $NetBSD: Makefile,v 1.144 2009/01/04 01:06:23 adrianp Exp $
 #
 
 COMMENT=	Communication programs
@@ -58,6 +58,7 @@ SUBDIR+=	kadu
 SUBDIR+=	kmess
 SUBDIR+=	konversation
 SUBDIR+=	libirc
+SUBDIR+=	libmsn
 SUBDIR+=	libotr
 SUBDIR+=	libpurple
 SUBDIR+=	libtelepathy
