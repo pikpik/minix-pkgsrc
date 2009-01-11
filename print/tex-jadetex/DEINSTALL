@@ -1,0 +1,13 @@
+# $NetBSD: DEINSTALL,v 1.2 2009/01/08 22:13:23 minskim Exp $
+
+case ${STAGE} in
+DEINSTALL)
+	${RM} @VARBASE@/lib/texmf/web2c/jadetex.fmt
+	${RM} @VARBASE@/lib/texmf/web2c/jadetex.log
+	${RM} @VARBASE@/lib/texmf/web2c/pdfjadetex.fmt
+	${RM} @VARBASE@/lib/texmf/web2c/pdfjadetex.log
+	@MKTEXLSR@ @VARBASE@/lib/texmf
+	;;
+*)
+	;;
+esac
