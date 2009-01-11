@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2005/11/07 21:39:28 tv Exp $
+# $NetBSD: Makefile,v 1.15 2008/10/02 17:01:16 joerg Exp $
 
 DISTNAME=		pppoe.20000912
 PKGNAME=		mouse-${DISTNAME:S/./-/}
 PKGREVISION=		1
 CATEGORIES=		net
-MASTER_SITES=		ftp://ftp.NetBSD.org/pub/NetBSD/misc/mouse/pppoe/
+MASTER_SITES=		ftp://sparkle.rodents.montreal.qc.ca/pub/mouse/ftp.netbsd.org/pppoe/
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
