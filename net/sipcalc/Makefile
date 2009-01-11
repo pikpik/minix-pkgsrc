@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:24 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/20 01:09:31 joerg Exp $
 #
 
-DISTNAME=	sipcalc-1.1.3
+DISTNAME=	sipcalc-1.1.4
 CATEGORIES=	net
 MASTER_SITES=	http://www.routemeister.net/projects/sipcalc/files/
 
