@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2008/06/23 17:40:55 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2008/07/14 12:56:02 joerg Exp $
 
-DISTNAME=	libgnomeuimm-2.22.0
+DISTNAME=	libgnomeuimm-2.24.0
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnomeuimm/2.22/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgnomeuimm/2.24/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
