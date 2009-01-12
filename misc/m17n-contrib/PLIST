@@ -39,6 +39,7 @@ share/m17n/icons/or-inscript.png
 share/m17n/icons/pa-inscript.png
 share/m17n/icons/pa-jhelum.png
 share/m17n/icons/pa-phonetic.png
+share/m17n/icons/sd-inscript.png
 share/m17n/icons/ta-inscript.png
 share/m17n/icons/ta-phonetic.png
 share/m17n/icons/ta-tamil99.png
@@ -65,6 +66,7 @@ share/m17n/pa-jhelum.mim
 share/m17n/pa-phonetic.mim
 share/m17n/ru-translit.mim
 share/m17n/scripts/tbl2mim.awk
+share/m17n/sd-inscript.mim
 share/m17n/si-phonetic-dynamic.mim
 share/m17n/si-phonetic-static.mim
 share/m17n/si-trans.mim
