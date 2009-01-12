@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/04/04 15:31:39 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2008/06/19 14:50:08 taca Exp $
 #
 
 DISTNAME=	prime-1.0.0.1
@@ -33,6 +33,8 @@ PKG_SYSCONFSUBDIR=	prime
 
 CONF_FILES+=	${PREFIX}/share/doc/prime/examples/Custom_prime.rb \
 		${PKG_SYSCONFDIR}/Custom_prime.rb
+
+MAKE_JOBS_SAFE=	no
 
 .include "../../lang/ruby/modules.mk"
 .include "../../mk/bsd.pkg.mk"
