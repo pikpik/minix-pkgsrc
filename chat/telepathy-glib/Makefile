@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/12/21 10:36:00 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2008/12/21 10:58:52 wiz Exp $
 #
 
-DISTNAME=	telepathy-glib-0.7.18
+DISTNAME=	telepathy-glib-0.7.20
 CATEGORIES=	chat
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/telepathy-glib/
 
