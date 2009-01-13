@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/09/22 23:36:54 jmcneill Exp $
+# $NetBSD: Makefile,v 1.4 2008/10/25 18:12:34 jmcneill Exp $
 
-DISTNAME=	ptlib-2.4.2
+DISTNAME=	ptlib-2.4.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/ptlib/2.4/}
 EXTRACT_SUFX=	.tar.bz2
