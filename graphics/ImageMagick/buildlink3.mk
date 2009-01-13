@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2008/11/20 21:45:07 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.21 2009/01/13 11:52:30 obache Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 IMAGEMAGICK_BUILDLINK3_MK:=	${IMAGEMAGICK_BUILDLINK3_MK}+
@@ -31,10 +31,12 @@ pkgbase := ImageMagick
 .endif
 
 .include "../../archivers/bzip2/buildlink3.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../devel/libltdl/buildlink3.mk"
+.include "../../textproc/libxml2/buildlink3.mk"
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
