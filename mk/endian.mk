@@ -1,4 +1,4 @@
-# $NetBSD: endian.mk,v 1.4 2005/04/30 03:01:06 jlam Exp $
+# $NetBSD: endian.mk,v 1.5 2007/03/08 23:11:20 rillig Exp $
 #
 # Determine the endianness of the platform by checking header files.
 #
@@ -18,13 +18,13 @@
 
 .if !defined(MACHINE_ENDIAN)
 .  if exists(/usr/include/endian.h)
-_ENDIAN_H=	/usr/include/endian.h		# Linux
+_ENDIAN_H=	endian.h			# Linux
 .  elif exists(/usr/include/sys/endian.h)
-_ENDIAN_H=	/usr/include/sys/endian.h	# NetBSD>=1.5
+_ENDIAN_H=	sys/endian.h			# NetBSD>=1.5
 .  elif exists(/usr/include/machine/endian.h)
-_ENDIAN_H=	/usr/include/machine/endian.h	# NetBSD<1.5
+_ENDIAN_H=	machine/endian.h		# NetBSD<1.5
 .  elif exists(/usr/include/sys/byteorder.h)
-_ENDIAN_H=	/usr/include/sys/byteorder.h	# Solaris
+_ENDIAN_H=	sys/byteorder.h			# Solaris
 .  else
 _ENDIAN_H=	/dev/null
 .  endif
