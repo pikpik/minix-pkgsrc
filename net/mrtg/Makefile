@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.88 2008/04/15 11:09:58 adrianp Exp $
+# $NetBSD: Makefile,v 1.89 2008/08/10 16:50:56 adrianp Exp $
 
 DISTNAME=	mrtg-2.16.2
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://oss.oetiker.ch/mrtg/pub/ \
 		http://oss.oetiker.ch/mrtg/pub/old/
