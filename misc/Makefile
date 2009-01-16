@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.318 2008/12/09 15:05:34 wiz Exp $
+# $NetBSD: Makefile,v 1.319 2009/01/14 16:11:23 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -62,6 +62,7 @@ SUBDIR+=	gkrellm-launch
 SUBDIR+=	gkrellm-leds
 SUBDIR+=	gkrellm-moon
 SUBDIR+=	gkrellm-weather
+SUBDIR+=	gnome-devel-docs
 SUBDIR+=	gnome-dirs
 SUBDIR+=	gnome-user-docs
 SUBDIR+=	gnome-utils
