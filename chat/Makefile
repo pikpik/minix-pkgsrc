@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.145 2009/01/10 08:57:55 markd Exp $
+# $NetBSD: Makefile,v 1.146 2009/01/12 13:38:11 jmcneill Exp $
 #
 
 COMMENT=	Communication programs
@@ -85,6 +85,7 @@ SUBDIR+=	pidgin
 SUBDIR+=	pidgin-facebookchat
 SUBDIR+=	pidgin-icb
 SUBDIR+=	pidgin-latex
+SUBDIR+=	pidgin-libnotify
 SUBDIR+=	pidgin-otr
 SUBDIR+=	pidgin-sametime
 SUBDIR+=	pidgin-silc
