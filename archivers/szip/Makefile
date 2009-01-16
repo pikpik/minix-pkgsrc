@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2008/06/20 01:09:05 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/09/08 08:59:22 adam Exp $
 
 DISTNAME=	szip-2.1
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.hdfgroup.org/lib-external/szip/2.1/src/
 
@@ -18,6 +19,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
+DIST_SUBDIR=		${PKGNAME}
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
