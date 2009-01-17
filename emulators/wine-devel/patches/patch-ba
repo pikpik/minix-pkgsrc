@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2009-01-02 17:24:09.000000000 +0100
+--- configure.orig	2009-01-16 17:28:07.000000000 +0100
 +++ configure
-@@ -17708,6 +17708,11 @@ MAIN_BINARY="wine-pthread"
+@@ -17923,6 +17923,11 @@ MAIN_BINARY="wine-pthread"
  
          EXTRA_BINARIES="wine-pthread"
   ;;
