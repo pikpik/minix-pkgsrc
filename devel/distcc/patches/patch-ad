@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2004-11-30 12:34:40.000000000 +0100
+--- configure.orig	2008-12-02 22:50:34.000000000 +0100
 +++ configure
-@@ -7133,6 +7133,7 @@ _ACEOF
+@@ -7968,6 +7968,7 @@ _ACEOF
  cat confdefs.h >>conftest.$ac_ext
  cat >>conftest.$ac_ext <<_ACEOF
  /* end confdefs.h.  */
