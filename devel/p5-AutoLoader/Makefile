@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2008/10/19 19:17:47 he Exp $
+# $NetBSD: Makefile,v 1.3 2008/10/30 21:24:25 he Exp $
 #
 
-DISTNAME=	AutoLoader-5.67
+DISTNAME=	AutoLoader-5.68
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5aul
 CATEGORIES=	devel perl5
