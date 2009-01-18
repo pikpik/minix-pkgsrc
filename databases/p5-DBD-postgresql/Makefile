@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2008/10/19 19:17:44 he Exp $
+# $NetBSD: Makefile,v 1.48 2008/12/18 01:00:43 he Exp $
 #
 
-VER=		2.11.7
+VER=		2.11.8
 DISTNAME=	DBD-Pg-${VER}
 PKGNAME=	p5-DBD-postgresql-${VER}
 SVR4_PKGNAME=	p5dpo
