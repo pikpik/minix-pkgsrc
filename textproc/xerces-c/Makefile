@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2008/04/12 22:43:13 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2008/04/23 20:23:47 abs Exp $
 #
 
 DISTNAME=	xerces-c-src_2_7_0
@@ -17,6 +17,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}/${DISTNAME}/src/xercesc
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
+
+MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "SunOS"
