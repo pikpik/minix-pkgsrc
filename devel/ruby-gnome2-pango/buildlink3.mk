@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/07/08 23:10:48 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2007/01/29 06:42:34 minskim Exp $
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH}+
 RUBY_GNOME2_PANGO_BUILDLINK3_MK:=	${RUBY_GNOME2_PANGO_BUILDLINK3_MK}+
@@ -16,5 +16,8 @@ BUILDLINK_API_DEPENDS.ruby-gnome2-pango+=	${RUBY_PKGPREFIX}-gnome2-pango>=0.16.0
 BUILDLINK_PKGSRCDIR.ruby-gnome2-pango?=	../../devel/ruby-gnome2-pango
 .endif	# RUBY_GNOME2_PANGO_BUILDLINK3_MK
 
+.include "../../devel/ruby-gnome2-glib/buildlink3.mk"
+.include "../../devel/pango/buildlink3.mk"
+.include "../../lang/ruby/buildlink3.mk"
 
 BUILDLINK_DEPTH:=			${BUILDLINK_DEPTH:S/+$//}
