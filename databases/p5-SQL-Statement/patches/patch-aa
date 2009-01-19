@@ -1,12 +1,17 @@
 $NetBSD$
---- Makefile.PL.orig	2002-01-23 16:32:58.000000000 +0100
-+++ Makefile.PL	2003-03-03 12:06:05.000000000 +0100
-@@ -18,8 +18,8 @@
+
+Avoid Makefile.PL querying stdin, possibly causing a build to stall.
+
+--- Makefile.PL.orig	2009-01-18 16:35:38.000000000 +0100
++++ Makefile.PL
+@@ -17,9 +17,9 @@ WARNING! You seem to have an older versi
+ See the README for details.
  
  END_OF_WARNING
- print "Press enter to continue ... ";
+-print "Press enter to continue ... ";
 -my $x = <STDIN>;
 -last if $x;
++# print "Press enter to continue ... ";
 +# my $x = <STDIN>;
 +# last if $x;
    }
