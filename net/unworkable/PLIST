@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/unworkable
+${PKGMANDIR}/man1/unworkable.1
+${PKGMANDIR}/cat1/unworkable.0
