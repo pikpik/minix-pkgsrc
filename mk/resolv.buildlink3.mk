@@ -1,8 +1,8 @@
-# $NetBSD: dlopen.buildlink3.mk,v 1.15 2007/06/04 08:10:32 rillig Exp $
+# $NetBSD: resolv.buildlink3.mk,v 1.1 2007/07/03 13:54:45 joerg Exp $
 #
 # This Makefile fragment is included by package Makefiles and
 # buildlink3.mk files for the packages that need a thread-safe
-# DNS resolver..
+# DNS resolver.
 #
 # It defines the variables RESOLV_LDFLAGS and RESOLV_LIBS,
 # which are also exported into the CONFIGURE_ENV and MAKE_ENV environments.
