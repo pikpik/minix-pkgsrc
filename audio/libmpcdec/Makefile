@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/25 19:31:34 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/25 13:59:39 obache Exp $
 #
 
 DISTNAME=	libmpcdec-1.2.6
@@ -17,5 +17,11 @@ USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 
 INSTALLATION_DIRS+=	include/mpcdec
+
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(PKGSRC_COMPILER:Msunpro)
+CFLAGS+=	-D__inline=inline
+.endif
 
 .include "../../mk/bsd.pkg.mk"
