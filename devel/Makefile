@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1095 2009/01/18 19:23:50 seb Exp $
+# $NetBSD: Makefile,v 1.1096 2009/01/19 18:05:13 abs Exp $
 #
 
 COMMENT=	Development utilities
@@ -745,6 +745,7 @@ SUBDIR+=	p5-Sub-Uplevel
 SUBDIR+=	p5-Task-Weaken
 SUBDIR+=	p5-Template-Plugin-Handy
 SUBDIR+=	p5-Template-Plugin-VMethods
+SUBDIR+=	p5-Term-ANSIColor
 SUBDIR+=	p5-Term-Cap
 SUBDIR+=	p5-Term-ProgressBar
 SUBDIR+=	p5-Term-Prompt
