@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2008/11/20 16:20:05 cube Exp $
+# $NetBSD: Makefile,v 1.13 2009/01/11 14:30:08 he Exp $
 #
 
 DISTNAME=	Authen-SASL-2.12
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Authen/}
 
@@ -14,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Authen/SASL/.packlist
 MAKE_PARAMS+=	< /dev/null
+
+DEPENDS+=	p5-Digest-HMAC-[0-9]*:../../security/p5-Digest-HMAC
 
 .include "../../lang/perl5/module.mk"
 
