@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/12/20 19:44:00 jmcneill Exp $
+# $NetBSD: Makefile,v 1.7 2008/12/21 13:57:29 jmcneill Exp $
 #
 
 POLICYKIT_VER=		0.9
@@ -32,6 +32,8 @@ USE_DIRS+=		xdg-1.4
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config autoconf
 USE_LIBTOOL=		YES
+
+USE_LANGUAGES=		c99
 
 AUTOCONF_REQD=		2.59
 
