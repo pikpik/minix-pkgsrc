@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/03/03 17:45:37 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2008/05/26 02:13:18 joerg Exp $
 #
 
 DISTNAME=		teem-1.8.0-src
@@ -7,7 +7,7 @@ PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=teem/}
 
-MAINTAINER=		jschauma@NetBSD.org
+MAINTAINER=		pkgsrc-users@@NetBSD.org
 HOMEPAGE=		http://teem.sourceforge.net/
 COMMENT=		Libraries for manipulation of Structured Scientific Data
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2007/09/06 21:51:54 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2007/09/08 21:58:00 jlam Exp $
 #
 
 DISTNAME=		news-0.2
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.netmeister.org/apps/
 
-MAINTAINER=		jschauma@NetBSD.org
+MAINTAINER=		pkgsrc-users@@NetBSD.org
 HOMEPAGE=		http://www.netmeister.org/
 COMMENT=		System V news(1)
 

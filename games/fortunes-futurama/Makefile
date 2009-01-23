@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/11/09 08:44:04 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/04 06:59:04 jlam Exp $
 #
 
 DISTNAME=	fortunes-futurama-0.2
@@ -6,7 +6,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.netmeister.org/apps/
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=	jschauma@NetBSD.org
+MAINTAINER=	pkgsrc-users@@NetBSD.org
 HOMEPAGE=	http://www.netmeister.org/misc.html
 COMMENT=	Fortunes from the Futurama animated TV series
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/17 03:50:34 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2006/02/05 23:10:55 joerg Exp $
 #
 
 DISTNAME=		logfinder-0.1
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.eff.org/osp/
 
-MAINTAINER=		jschauma@NetBSD.org
+MAINTAINER=		pkgsrc-users@@NetBSD.org
 HOMEPAGE=		http://www.eff.org/osp/
 COMMENT=		Eliminate Unwanted Logging of Personal Data
 

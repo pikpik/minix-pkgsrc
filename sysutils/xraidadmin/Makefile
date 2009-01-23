@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/04/22 09:22:15 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2007/02/22 19:27:13 wiz Exp $
 #
 
 DISTNAME=		RAIDAdmin1.3.1archive
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://download.info.apple.com/Mac_OS_X/061-1325.20040706.bNhy4/
 
-MAINTAINER=		jschauma@NetBSD.org
+MAINTAINER=		pkgsrc-users@@NetBSD.org
 HOMEPAGE=		http://www.apple.com/downloads/macosx/apple/xserveraidadmintools.html
 COMMENT=		Tool to administer Apple's Xserve RAID
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/03/04 15:39:09 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/05/26 02:13:20 joerg Exp $
 
 DISTNAME=	BlenderManual.html
 PKGNAME=	blender-doc-20030922
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.blender.org/documentation/
 
-MAINTAINER=	jschauma@NetBSD.org
+MAINTAINER=	pkgsrc-users@@NetBSD.org
 HOMEPAGE=	http://download.blender.org/documentation/
 COMMENT=	Documentation for Blender
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.20 2006/05/22 22:22:02 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2008/03/03 17:45:35 jlam Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}
 PKGNAME=	eclipse-${VERSION}
 PKGREVISION=	1
 CATEGORIES=	devel java
-MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/jschauma/
+MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/pkgsrc-users@/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	jschauma@NetBSD.org

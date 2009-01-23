@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/01/07 09:13:56 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2008/03/04 15:39:11 jlam Exp $
 #
 
 DISTNAME=	xdvipresent-0.6p14
@@ -7,7 +7,7 @@ PKGREVISION=	5
 CATEGORIES=	graphics textproc print x11
 MASTER_SITES=	http://clip.dia.fi.upm.es/Software/
 
-MAINTAINER=	jschauma@NetBSD.org
+MAINTAINER=	pkgsrc-users@@NetBSD.org
 HOMEPAGE=	http://clip.dia.fi.upm.es/Software/
 COMMENT=	Slide Presentations Using LaTeX/xdvi
 
