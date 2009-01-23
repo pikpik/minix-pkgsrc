@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2008/12/28 12:43:27 jmcneill Exp $
+# $NetBSD: Makefile,v 1.31 2009/01/18 13:53:33 jmcneill Exp $
 #
 
 DISTNAME=		hal-0.5.11
@@ -59,6 +59,8 @@ CONF_FILES+=		${EGDIR}/90-hal.rules \
 CONFIGURE_ARGS+=	--with-backend=dummy
 PLIST_SRC=		PLIST
 .endif
+
+CFLAGS.SunOS+=		-Du_int32_t=uint32_t
 
 .if ${OPSYS} == "Darwin"
 BUILDLINK_TRANSFORM+=	rm:-Wl,--as-needed
