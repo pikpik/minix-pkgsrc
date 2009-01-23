@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.142 2009/01/22 13:42:36 jmcneill Exp $
+# $NetBSD: Makefile,v 1.143 2009/01/23 14:55:38 jmcneill Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -86,6 +86,7 @@ SUBDIR+=	mediatomb
 SUBDIR+=	mencoder
 SUBDIR+=	ming
 SUBDIR+=	mjpegtools
+SUBDIR+=	mkv2mp4
 SUBDIR+=	mkvtoolnix
 SUBDIR+=	mmg
 SUBDIR+=	mpeg-lib
