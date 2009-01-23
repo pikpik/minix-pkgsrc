@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2007/12/16 14:25:35 heinz Exp $
+# $NetBSD: Makefile,v 1.44 2008/06/02 08:20:04 dholland Exp $
 
 DISTNAME=		libmikmod-3.1.11
 PKGNAME=		libmikmod-3.1.11.1
@@ -10,7 +10,7 @@ PATCH_SITES=		${MASTER_SITES}
 PATCHFILES=		libmikmod-3.1.11-a.diff
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=		kuebart@mathematik.uni-ulm.de
+MAINTAINER=		pkgsrc-users@netbsd.org
 HOMEPAGE=		http://mikmod.raphnet.net/
 COMMENT=		MikMod Sound Library
 
