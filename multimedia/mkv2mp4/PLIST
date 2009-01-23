@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mkv2mp4.py
+share/doc/mkv2mp4/README
+@dirrm share/doc/mkv2mp4
