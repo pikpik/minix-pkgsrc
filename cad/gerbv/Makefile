@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2008/06/20 01:09:08 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2008/09/15 02:25:54 dmcmahill Exp $
 #
 
-DISTNAME=	gerbv-2.1.0
+DISTNAME=	gerbv-2.2.0
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gerbv/}
 
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
 USE_TOOLS+=	gmake pkg-config
+
+PLIST_SUBST+=	PKGNAME_NOREV=${PKGNAME_NOREV:Q}
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
