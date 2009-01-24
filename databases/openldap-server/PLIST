@@ -27,7 +27,9 @@ share/examples/openldap/schema/nis.ldif
 share/examples/openldap/schema/nis.schema
 share/examples/openldap/schema/openldap.ldif
 share/examples/openldap/schema/openldap.schema
+share/examples/openldap/schema/pmi.schema
 share/examples/openldap/schema/ppolicy.schema
 share/examples/openldap/slapd.conf
 share/examples/rc.d/slapd
 @dirrm share/examples/openldap/schema
+@dirrm share/examples/openldap
