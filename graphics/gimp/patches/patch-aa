@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 2008/11/26 12:19:58 drochner Exp $
 
 --- etc/Makefile.in.orig	2008-08-21 11:36:45.000000000 +0200
 +++ etc/Makefile.in
