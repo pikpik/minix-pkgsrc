@@ -1,12 +1,15 @@
-# $NetBSD: Makefile,v 1.29 2008/08/17 05:55:15 dholland Exp $
+# $NetBSD: Makefile,v 1.30 2008/11/10 14:56:16 adam Exp $
 
 DISTNAME=	gentoo-0.11.57
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gentoo/}
 
 MAINTAINER=	dunse@goa.nu
 HOMEPAGE=	http://www.obsession.se/gentoo/
 COMMENT=	Two-pane filemanager using GTK+, 100% GUI configurable
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt
