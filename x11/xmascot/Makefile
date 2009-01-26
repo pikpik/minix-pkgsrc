@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/05/11 05:24:50 obache Exp $
+# $NetBSD: Makefile,v 1.22 2008/11/10 17:21:39 wiz Exp $
 
 DISTNAME=	xmascot2.6a
 PKGNAME=	xmascot-2.6a
@@ -17,5 +17,6 @@ USE_IMAKE=	yes
 INSTALL_MAKE_FLAGS+=	LANG=ja_JP.eucJP
 
 .include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
