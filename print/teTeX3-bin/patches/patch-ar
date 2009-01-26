@@ -1,6 +1,6 @@
 $NetBSD$
 
---- texk/web2c/Makefile.in.orig	2005-02-06 05:56:56.000000000 -0500
+--- texk/web2c/Makefile.in.orig	2005-02-06 02:56:56.000000000 -0800
 +++ texk/web2c/Makefile.in
 @@ -600,7 +600,7 @@ tex-check: trip tex.fmt
  	TEXMFCNF=../kpathsea \
@@ -16,7 +16,7 @@ $NetBSD$
  	$(INSTALL_DATA) $(srcdir)/tiedir/tie.1 $(man1dir)/tie.$(manext)
  	$(INSTALL_DATA) $(srcdir)/ctiedir/ctie.1 $(man1dir)/ctie.$(manext)
 -	$(INSTALL_DATA) fmtutil.cnf $(web2cdir)/fmtutil.cnf
-+	$(INSTALL_DATA) fmtutil.cnf $(web2cdir)/fmtutil.cnf.dist
++	$(INSTALL_DATA) fmtutil.cnf $(prefix)/share/texmf/fmtutil/format.tetex.cnf
  
  # Dummy target.
  uninstall uninstall-exec uninstall-data:
