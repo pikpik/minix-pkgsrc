@@ -1,0 +1,20 @@
+@comment $NetBSD$
+${PYSITELIB}/pyPdf/__init__.py
+${PYSITELIB}/pyPdf/__init__.pyc
+${PYSITELIB}/pyPdf/__init__.pyo
+${PYSITELIB}/pyPdf/filters.py
+${PYSITELIB}/pyPdf/filters.pyc
+${PYSITELIB}/pyPdf/filters.pyo
+${PYSITELIB}/pyPdf/generic.py
+${PYSITELIB}/pyPdf/generic.pyc
+${PYSITELIB}/pyPdf/generic.pyo
+${PYSITELIB}/pyPdf/pdf.py
+${PYSITELIB}/pyPdf/pdf.pyc
+${PYSITELIB}/pyPdf/pdf.pyo
+${PYSITELIB}/pyPdf/utils.py
+${PYSITELIB}/pyPdf/utils.pyc
+${PYSITELIB}/pyPdf/utils.pyo
+${PYSITELIB}/pyPdf/xmp.py
+${PYSITELIB}/pyPdf/xmp.pyc
+${PYSITELIB}/pyPdf/xmp.pyo
+@dirrm ${PYSITELIB}/pyPdf
