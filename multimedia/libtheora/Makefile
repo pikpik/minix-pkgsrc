@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/11/05 14:55:23 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/01/22 15:14:23 is Exp $
 #
 
 .include "Makefile.common"
@@ -16,6 +16,12 @@ CONFIGURE_ENV+=		HAVE_DOXYGEN=no
 CONFIGURE_ENV+=		HAVE_TRANSFIG=no
 CONFIGURE_ENV+=		HAVE_BIBTEX=no
 CONFIGURE_ENV+=		HAVE_PDFLATEX=no
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Msunpro)
+CONFIGURE_ARGS+=	--disable-asm
+.endif
 
 # avoid installing docs
 do-install:
