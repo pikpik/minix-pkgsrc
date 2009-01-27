@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2007/02/17 08:27:11 obache Exp $
+# $NetBSD: Makefile,v 1.22 2008/11/17 10:27:57 obache Exp $
 #
 
 DISTNAME=	ctwm-3.8a
+PKGREVISION=	1
 CATEGORIES=	x11 wm
 MASTER_SITES=	http://ctwm.free.lp.se/dist/
 
@@ -37,6 +38,9 @@ pre-install:
 .for f in example.ctwmrc levitte.ctwmrc peterc.ctwmrc system.ctwmrc system.ctwmrc.gnome
 	${INSTALL_DATA} ${WRKSRC}/${f} ${DESTDIR}${EXAMPLEDIR}
 .endfor
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/xsessions
+	${INSTALL_DATA} ${FILESDIR}/ctwm.desktop \
+	    ${DESTDIR}${PREFIX}/share/xsessions/ctwm.desktop
 
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
