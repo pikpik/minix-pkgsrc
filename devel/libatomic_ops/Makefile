@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/10/25 00:32:23 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2008/12/22 02:46:52 jmcneill Exp $
 #
 .include "Makefile.version"
 
 DISTNAME=	libatomic_ops-${LIBATOMIC_OPS_SNAPDATE}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
