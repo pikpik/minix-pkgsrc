@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1097 2009/01/20 00:34:23 he Exp $
+# $NetBSD: Makefile,v 1.1098 2009/01/27 00:16:09 ahoka Exp $
 #
 
 COMMENT=	Development utilities
@@ -486,6 +486,7 @@ SUBDIR+=	p5-Compress-Zlib
 SUBDIR+=	p5-Config-Any
 SUBDIR+=	p5-Config-Find
 SUBDIR+=	p5-Config-General
+SUBDIR+=	p5-Config-INI
 SUBDIR+=	p5-Config-IniFiles
 SUBDIR+=	p5-Config-Std
 SUBDIR+=	p5-Config-Tiny
@@ -637,6 +638,7 @@ SUBDIR+=	p5-Make
 SUBDIR+=	p5-Memoize
 SUBDIR+=	p5-Memoize-ExpireLRU
 SUBDIR+=	p5-Method-Signatures-Simple
+SUBDIR+=	p5-Mixin-Linewise
 SUBDIR+=	p5-Module-Build
 SUBDIR+=	p5-Module-CPANTS-Analyse
 SUBDIR+=	p5-Module-CoreList
