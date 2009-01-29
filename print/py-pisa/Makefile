@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2008/04/25 20:39:13 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/28 14:45:44 joerg Exp $
 #
 
 DISTNAME=	pisa-3.0.29
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc print www python
-MASTER_SITES=	http://pypi.pytho.org/pypi/pisa/
+MASTER_SITES=	http://pypi.python.org/packages/source/p/pisa/
 
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.htmltopdf.org/
