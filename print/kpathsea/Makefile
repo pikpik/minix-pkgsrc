@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/03 22:12:42 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2009/01/08 21:47:18 minskim Exp $
 
 DISTNAME=	texlive-20080816-source
 PKGNAME=	kpathsea-3.5.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=systems/texlive/Source/}
 EXTRACT_SUFX=	.tar.lzma
