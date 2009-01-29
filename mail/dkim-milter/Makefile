@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/10/06 14:56:52 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2009/01/19 23:24:28 adrianp Exp $
 
 DISTNAME=	dkim-milter-2.8.1
 CATEGORIES=	mail
@@ -50,7 +50,8 @@ SUBST_MESSAGE.libs=	Fixing Makefile references and man pages.
 CONF_FILES=		${EGDIR}/dkim-filter.conf.sample \
 			${PKG_SYSCONFDIR}/dkim-filter.conf
 
-INSTALLATION_DIRS=	share/doc/dkim-milter ${EGDIR} \
+INSTALLATION_DIRS=	${PKGMANDIR}/man5 ${PKGMANDIR}/man8 \
+			share/doc/dkim-milter ${EGDIR} \
 			share/doc/dkim-milter/libdkim
 
 .include "../../mk/bsd.prefs.mk"
