@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2008/04/03 09:41:25 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2009/01/24 12:29:51 tonio Exp $
 #
 
-DISTNAME=	libmpeg3-1.7-src
+DISTNAME=	libmpeg3-1.8-src
 PKGNAME=	${DISTNAME:S/-src//}
 #PKGREVISION=	1
 CATEGORIES=	devel audio graphics multimedia
