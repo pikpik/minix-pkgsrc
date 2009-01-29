@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/12/21 14:34:46 jmcneill Exp $
 #
 
 DISTNAME=	mod_dnssd-0.5
@@ -12,6 +12,7 @@ COMMENT=	Apache module which adds Zeroconf support via DNS-SD using Avahi
 
 GNU_CONFIGURE=	yes
 USE_TOOLS=	pkg-config gmake
+USE_LIBTOOL=	yes
 
 CONFIGURE_ARGS+=	--disable-lynx
 
