@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/01/29 11:32:05 sborrill Exp $
+# $NetBSD: Makefile,v 1.15 2009/01/30 13:35:26 sborrill Exp $
 #
 
 DISTNAME=		vlc-${VLC_VER}
@@ -108,6 +108,7 @@ CONFIGURE_ARGS+=	x_libraries=${PREFIX}/lib
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../misc/libcdio/buildlink3.mk"
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../multimedia/libdvdplay/buildlink3.mk"
