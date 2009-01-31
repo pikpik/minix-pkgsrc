@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/openldap/nops.a
+lib/openldap/nops.la
+@dirrm lib/openldap
