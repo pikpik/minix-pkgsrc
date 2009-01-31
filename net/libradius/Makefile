@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/03/24 19:21:29 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2008/04/07 17:28:55 joerg Exp $
 
 DISTNAME=	libradius-linux-20040827
 PKGNAME=	${DISTNAME:S/-linux//}
@@ -8,6 +8,8 @@ MASTER_SITES=	http://portal-to-web.de/tacacs/
 
 MAINTAINER=	manu@NetBSD.org
 COMMENT=	RADIUS client library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	inn-[0-9]*
 
