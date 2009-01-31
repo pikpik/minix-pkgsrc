@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2008/11/09 20:15:17 adrianp Exp $
+# $NetBSD: Makefile,v 1.10 2009/01/04 00:38:11 adrianp Exp $
 #
 
 DISTNAME=	bugzilla-3.2
+PKGREVISION=	1
 CATEGORIES=	www devel
 MASTER_SITES=	${MASTER_SITE_MOZILLA_ALL:=webtools/}
 
@@ -72,6 +73,7 @@ do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${BZDIR}/Bugzilla
 
 	${INSTALL_DATA_DIR} ${DESTDIR}${BZDIR}/js
+	${INSTALL_DATA_DIR} ${DESTDIR}${BZDIR}/lib
 	${INSTALL_DATA_DIR} ${DESTDIR}${BZDIR}/template
 	${INSTALL_DATA_DIR} ${DESTDIR}${BZDIR}/skins
 	${INSTALL_DATA_DIR} ${DESTDIR}${BZDIR}/docs
