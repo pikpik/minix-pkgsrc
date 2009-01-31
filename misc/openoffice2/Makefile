@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2008/11/24 11:58:44 hira Exp $
+# $NetBSD: Makefile,v 1.61 2009/01/26 15:39:05 hira Exp $
 #
 
 OO_VER=			2.4.2
@@ -47,6 +47,7 @@ CONFLICTS+=		openoffice-[0-9]*
 CONFLICTS+=		openoffice3-[0-9]*
 CONFLICTS+=		openoffice-bin-[0-9]*
 CONFLICTS+=		openoffice2-bin-[0-9]*
+CONFLICTS+=		openoffice3-bin-[0-9]*
 CONFLICTS+=		openoffice-linux-[0-9]*
 
 ONLY_FOR_PLATFORM=	FreeBSD-*-i386 FreeBSD-*-x86_64
