@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/openldap/smbk5pwd.a
+lib/openldap/smbk5pwd.la
+@dirrm lib/openldap
