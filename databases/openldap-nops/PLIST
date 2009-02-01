@@ -1,4 +1,5 @@
 @comment $NetBSD$
 lib/openldap/nops.a
 lib/openldap/nops.la
+man/man5/slapo-nops.5
 @dirrm lib/openldap
