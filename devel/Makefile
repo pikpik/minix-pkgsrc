@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1098 2009/01/27 00:16:09 ahoka Exp $
+# $NetBSD: Makefile,v 1.1099 2009/01/28 22:08:54 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -821,6 +821,7 @@ SUBDIR+=	p5-capitalization
 SUBDIR+=	p5-enum
 SUBDIR+=	p5-gettext
 SUBDIR+=	p5-glib2
+SUBDIR+=	p5-local-lib
 SUBDIR+=	p5-namespace-clean
 SUBDIR+=	p5-parent
 SUBDIR+=	p5-perl-headers
