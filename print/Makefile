@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.198 2009/01/28 14:44:24 joerg Exp $
+# $NetBSD: Makefile,v 1.199 2009/01/28 14:46:40 joerg Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -151,6 +151,7 @@ SUBDIR+=	tex-xkeyval
 SUBDIR+=	texlive-tetex
 SUBDIR+=	texmf-dirs
 SUBDIR+=	transfig
+SUBDIR+=	web2c
 SUBDIR+=	xfce4-print
 SUBDIR+=	xpdf
 SUBDIR+=	xpdf-arabic
