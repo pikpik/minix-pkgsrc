@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.623 2009/01/17 20:54:27 wiz Exp $
+# $NetBSD: Makefile,v 1.624 2009/01/19 18:05:48 abs Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -139,6 +139,7 @@ SUBDIR+=	htmldoc-x11
 SUBDIR+=	htmlfix
 SUBDIR+=	htmllint
 SUBDIR+=	http_load
+SUBDIR+=	ies4linux
 SUBDIR+=	ijb
 SUBDIR+=	ikiwiki
 SUBDIR+=	instiki
