@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.185 2008/10/09 17:48:01 joerg Exp $
+# $NetBSD$
 
 .include "Makefile.mirrors"
 
@@ -23,6 +23,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}/${DISTNAME}/source
 GNU_CONFIGURE=		yes
 BUILD_DEFS+=		VARBASE
+CHECK_WRKREF_SKIP=	*
 
 .include "../../mk/bsd.prefs.mk"
 
