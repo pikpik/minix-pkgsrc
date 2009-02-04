@@ -1,3 +1,5 @@
+# $NetBSD$
+
 PKG_OPTIONS_VAR=	PKG_OPTIONS.openvpnc
 PKG_SUPPORTED_OPTIONS=	openssl		# off by default
 PKG_SUGGESTED_OPTIONS=
