@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:11:47 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/05/08 19:29:22 hubertf Exp $
 
 .include "../../x11/xlockmore/Makefile.common"
 
@@ -8,7 +8,6 @@ COMMENT=	"lite" version of xlockmore
 CONFIGURE_ARGS+=	--without-xpm
 CONFIGURE_ARGS+=	--without-gltt
 CONFIGURE_ARGS+=	--without-ttf
-CONFIGURE_ARGS+=	--without-glftgl
 CONFIGURE_ARGS+=	--without-freetype
 CONFIGURE_ARGS+=	--without-opengl
 CONFIGURE_ARGS+=	--without-mesa
