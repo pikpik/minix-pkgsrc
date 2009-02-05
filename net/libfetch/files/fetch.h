@@ -1,4 +1,4 @@
-/*	$NetBSD: fetch.h,v 1.12 2008/10/06 12:58:29 joerg Exp $	*/
+/*	$NetBSD: fetch.h,v 1.13 2009/02/05 16:59:45 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * All rights reserved.
@@ -170,7 +170,7 @@ extern char		 fetchLastErrString[MAXERRSTRING];
 extern int		 fetchTimeout;
 
 /* Restart interrupted syscalls */
-extern int		 fetchRestartCalls;
+extern volatile int	 fetchRestartCalls;
 
 /* Extra verbosity */
 extern int		 fetchDebug;
