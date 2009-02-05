@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.760 2009/01/29 21:48:23 shattered Exp $
+# $NetBSD: Makefile,v 1.761 2009/01/29 22:01:45 seb Exp $
 #
 
 COMMENT=	Networking tools
@@ -260,7 +260,6 @@ SUBDIR+=	napshare
 SUBDIR+=	nasd
 SUBDIR+=	nbtscan
 SUBDIR+=	ncftp3
-SUBDIR+=	neat
 SUBDIR+=	nemesis
 SUBDIR+=	net-snmp
 SUBDIR+=	net6
@@ -283,7 +282,6 @@ SUBDIR+=	nmap
 SUBDIR+=	nocol
 SUBDIR+=	nprobe
 SUBDIR+=	ns
-SUBDIR+=	nsca
 SUBDIR+=	nsd
 SUBDIR+=	nslint
 SUBDIR+=	nstx
