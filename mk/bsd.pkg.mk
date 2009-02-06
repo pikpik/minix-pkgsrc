@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1951 2008/08/19 17:28:24 agc Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1952 2008/09/22 14:52:07 dillo Exp $
 #
 # This file is in the public domain.
 #
@@ -45,6 +45,11 @@ PKGNAME?=		${DISTNAME}
 PKGNAME_NOREV=		${PKGNAME}
 .endif
 PKGVERSION_NOREV=	${PKGNAME_NOREV:C/^.*-//}
+
+# Fail-safe in the case of circular dependencies
+.if defined(_PKGSRC_DEPS) && defined(PKGNAME) && !empty(_PKGSRC_DEPS:M${PKGNAME})
+PKG_FAIL_REASON+=	"Circular dependency detected"
+.endif
 
 ####
 
@@ -119,11 +124,6 @@ _INSTALL_UNSTRIPPED=	# set (flag used by platform/*.mk)
 ############################################################################
 # Sanity checks
 ############################################################################
-
-# Fail-safe in the case of circular dependencies
-.if defined(_PKGSRC_DEPS) && defined(PKGNAME) && !empty(_PKGSRC_DEPS:M${PKGNAME})
-PKG_FAIL_REASON+=	"Circular dependency detected"
-.endif
 
 # PKG_INSTALLATION_TYPE can only be one of two values: "pkgviews" or
 # "overwrite".
