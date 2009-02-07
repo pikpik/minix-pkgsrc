@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2008/01/18 05:08:30 tnn Exp $
+# $NetBSD: Makefile,v 1.21 2008/11/16 13:54:12 tron Exp $
 #
 # TLS functionality needs testing. Please let me know the result,
 # and preferably info about your system.
@@ -29,6 +29,8 @@ PKG_SYSCONFSUBDIR=	${PKGBASE}
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 CONF_FILES=	${EGDIR}/ssmtp.conf ${PKG_SYSCONFDIR}/ssmtp.conf
 CONF_FILES+=	${EGDIR}/revaliases ${PKG_SYSCONFDIR}/revaliases
+
+MAKE_DIRS+=		${PKG_SYSCONFDIR}
 
 SUBST_CLASSES+=		paths
 SUBST_FILES.paths=	${WRKDIR}/mailer.conf ssmtp.c ssmtp.conf ssmtp.8
