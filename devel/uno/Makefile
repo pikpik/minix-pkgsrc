@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/09/10 15:19:16 xtraeme Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/03 17:45:38 jlam Exp $
 #
 
 DISTNAME=		uno_v212
@@ -30,11 +30,12 @@ SUBST_FILES.prefix=	makefile
 SUBST_SED.prefix=	-e "s,/usr/bin,${PREFIX}/bin,g"
 SUBST_MESSAGE.prefix=	Fixing hardcoded paths.
 
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 share/doc/uno
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/uno ${DESTDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/uno_local ${DESTDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/uno_global ${DESTDIR}${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/uno
 	${INSTALL_DATA} ${WRKDIR}/uno/doc/uno_long.pdf ${DESTDIR}${PREFIX}/share/doc/uno
 	${INSTALL_DATA} ${WRKDIR}/uno/doc/uno_man.pdf ${DESTDIR}${PREFIX}/share/doc/uno
 	${INSTALL_DATA} ${WRKDIR}/uno/doc/uno_manpage.pdf ${DESTDIR}${PREFIX}/share/doc/uno
