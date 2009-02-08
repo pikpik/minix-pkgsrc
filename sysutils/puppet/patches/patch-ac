@@ -1,0 +1,15 @@
+$NetBSD$
+
+NetBSD also has its init scripts in /etc/rc.d.
+
+--- lib/puppet/provider/service/init.rb
++++ lib/puppet/provider/service/init.rb
+@@ -17,6 +17,8 @@ Puppet::Type.type(:service).provide :init, :parent => :base do
+     case Facter["operatingsystem"].value
+     when "FreeBSD":
+         @defpath = ["/etc/rc.d", "/usr/local/etc/rc.d"]
++    when "NetBSD":
++        @defpath = "/etc/rc.d"
+     when "HP-UX":
+         @defpath = "/sbin/init.d"
+     else
