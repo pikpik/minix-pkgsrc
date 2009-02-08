@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/03/04 21:30:24 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2007/01/07 09:14:06 rillig Exp $
 #
 
 DISTNAME=	export.socks.cstc.4.2.2
@@ -14,6 +14,7 @@ COMMENT=	Old library, server and client for using proxy firewall software
 CONFLICTS=	socks5-[0-9]* dante*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/socks.cstc.4.2
 MAKE_ENV+=		OPTIMIZE=${CFLAGS:M*:Q}
@@ -21,7 +22,8 @@ MAKE_ENV+=		OPTIMIZE=${CFLAGS:M*:Q}
 EGDIR=		${PREFIX}/share/examples/socks4
 CONF_FILES=	${EGDIR}/socks.conf ${PKG_SYSCONFDIR}/socks.conf
 
-INSTALLATION_DIRS=	bin lib libexec ${PKGMANDIR}/man1 ${PKGMANDIR}/man5 ${PKGMANDIR}/man8
+INSTALLATION_DIRS=	bin lib libexec ${PKGMANDIR}/man1 \
+			${PKGMANDIR}/man5 ${PKGMANDIR}/man8 ${EGDIR}
 
 post-patch:
 	@cd ${WRKSRC};							\
@@ -30,8 +32,5 @@ post-patch:
 		include/socks.h > ${WRKSRC}/include/socks.h.new;	\
 	${MV} include/socks.h.new include/socks.h
 	@${ECHO} "sockd 0.0.0.0 0.0.0.0" >> ${WRKSRC}/socks.conf
-
-pre-install:
-	${INSTALL_DATA_DIR} ${EGDIR}
 
 .include "../../mk/bsd.pkg.mk"
