@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/09/11 17:40:29 wiz Exp $
+@comment $NetBSD$
 bin/analyze
 bin/chmorph
 bin/example
@@ -21,6 +21,7 @@ include/hunspell/hunspell.hxx
 include/hunspell/hunzip.hxx
 include/hunspell/langnum.hxx
 include/hunspell/phonet.hxx
+include/hunspell/replist.hxx
 include/hunspell/suggestmgr.hxx
 include/hunspell/w_char.hxx
 include/munch.h
@@ -31,6 +32,9 @@ lib/pkgconfig/hunspell.pc
 man/hu/man1/hunspell.1
 man/hu/man4/hunspell.4
 man/man1/hunspell.1
+man/man1/hunzip.1
+man/man1/hzip.1
+man/man3/hunspell.3
 man/man4/hunspell.4
 share/locale/hu/LC_MESSAGES/hunspell.mo
 @dirrm man/hu/man4

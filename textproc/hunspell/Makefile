@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2008/07/19 15:06:36 ahoka Exp $
+# $NetBSD: Makefile,v 1.9 2008/07/20 23:54:06 abs Exp $
 #
 
-DISTNAME=	hunspell-1.2.2
+DISTNAME=	hunspell-1.2.8
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hunspell/}
 
