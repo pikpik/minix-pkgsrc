@@ -1,9 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:21 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/21 18:35:03 adrianp Exp $
 #
 
-DISTNAME=	gpsbabel-1.3.4
+DISTNAME=	gpsbabel-1.3.6
 CATEGORIES=	geography
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gpsbabel/}
+#MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gpsbabel/}
+# Download from official site apparently only via interactive form,
+# but code is gnu-gpl-v2 so hosted elsewhere as a convenience to
+# pkgsrc users.
+MASTER_SITES=	http://www.lexort.com/pkgsrc/distfiles/
 
 MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://www.gpsbabel.org/
