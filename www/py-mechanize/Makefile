@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/17 20:46:55 wiz Exp $
 #
 
 DISTNAME=	mechanize-0.1.10
@@ -11,6 +11,8 @@ HOMEPAGE=	http://wwwsearch.sourceforge.net/mechanize/
 COMMENT=	Stateful programmatic web browsing in Python
 
 USE_LANGUAGES=	# none
+
+PYTHON_VERSIONS_ACCEPTED=	25
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
