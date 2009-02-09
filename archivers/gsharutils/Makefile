@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2006/06/18 07:04:15 rillig Exp $
+# $NetBSD: Makefile,v 1.42 2006/09/20 11:05:20 hira Exp $
 
 DISTNAME=	sharutils-4.2.1
 PKGNAME=	g${DISTNAME}
@@ -13,6 +13,7 @@ COMMENT=	Allow packing and unpacking of shell archives
 BROKEN_GETTEXT_DETECTION=	yes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
