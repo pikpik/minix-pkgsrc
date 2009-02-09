@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/17 13:29:27 adam Exp $
 
 PKGNAME=	${DISTNAME:S/-/-pump-/}
+PKGREVISION=	1
 COMMENT=	Accelerated remote compilation with distcc
 
 .include "../../devel/distcc/Makefile.common"

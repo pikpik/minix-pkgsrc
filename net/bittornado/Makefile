@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2006/03/10 20:46:28 veego Exp $
+# $NetBSD: Makefile,v 1.4 2008/06/12 02:14:38 joerg Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
+
+PKGREVISION=		1
 
 CONFLICTS=		bittorrent-[0-9]*
 

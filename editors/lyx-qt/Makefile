@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2007/08/11 21:33:37 reed Exp $
+# $NetBSD: Makefile,v 1.35 2008/07/14 12:56:03 joerg Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -6,6 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "./Makefile.common"
 
 PKGNAME=	${DISTNAME:S/lyx-/lyx-qt-/}
+PKGREVISION=	1
 
 COMMENT+=	(QT version)
 

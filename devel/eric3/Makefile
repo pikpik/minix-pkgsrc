@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2007/02/22 19:01:17 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2008/04/25 20:39:08 joerg Exp $
 #
 
 DISTNAME=	eric-3.8.1
+PKGREVISION=		1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=eric-ide/}
 

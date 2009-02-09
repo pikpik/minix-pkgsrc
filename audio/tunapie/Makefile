@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/05/01 16:06:16 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2008/05/01 16:27:47 xtraeme Exp $
 #
 
 DISTNAME=	tunapie-2.1.6
+PKGREVISION=		1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tunapie/}
 
@@ -13,7 +14,6 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
 USE_LANGUAGES=	# none
-PYTHON_VERSIONS_ACCEPTED=	25 24 23
 PYTHON_PATCH_SCRIPTS=		src/*.py
 PY_PATCHPLIST=			yes
 

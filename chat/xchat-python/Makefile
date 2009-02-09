@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2008/05/25 20:49:39 tron Exp $
+# $NetBSD: Makefile,v 1.10 2008/07/14 12:56:00 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../chat/xchat/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/-/-python-/}
+PKGREVISION=		1
 OWNER=			tron@NetBSD.org
 
 COMMENT=		Python scripting plugin for XChat

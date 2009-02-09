@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2007/09/21 18:52:07 veego Exp $
+# $NetBSD: Makefile,v 1.15 2008/06/12 02:14:38 joerg Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../net/bittornado/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/Tornado/Tornado-gui/}
+PKGREVISION=	1
 
 COMMENT+=	(wxGTK GUI)
 

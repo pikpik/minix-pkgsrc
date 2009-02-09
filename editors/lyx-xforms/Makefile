@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/02/22 19:26:25 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2008/07/14 12:56:03 joerg Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -6,6 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../editors/lyx-qt/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/lyx-/lyx-xforms-/}
+PKGREVISION=	1
 
 COMMENT+=	(xforms version)
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:48 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/06/19 16:35:22 reed Exp $
 #
 
 DISTNAME=	dblatex-0.2.9
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dblatex/}
 EXTRACT_SUFX=	.tar.bz2

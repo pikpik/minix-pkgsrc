@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2008/04/25 19:18:23 tnn Exp $
+# $NetBSD: Makefile,v 1.3 2008/05/21 11:00:56 drochner Exp $
 #
 
 DISTNAME=	urlgrabber-3.1.0
+PKGREVISION=	1
 CATEGORIES=	www devel
 MASTER_SITES=	http://linux.duke.edu/projects/urlgrabber/download/
 

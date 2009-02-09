@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/07/30 13:26:39 bjs Exp $
 #
 .include "../../news/hellanzb/Makefile.version"
 
 DISTNAME=		hellanzb-${HELLANZB_VERSION}.${HELLANZB_SVN_REV}
+PKGREVISION=		1
 CATEGORIES=		news
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
