@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/01/19 09:16:26 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2008/11/10 17:21:39 wiz Exp $
 
 DISTNAME=		xdm3d-1.0
 PKGREVISION=		2
@@ -64,6 +64,7 @@ do-install:
 .include "../../x11/libXau/buildlink3.mk"
 .include "../../x11/libXdmcp/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/xaw.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
