@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.26 2006/05/23 20:25:40 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2007/09/21 13:03:42 wiz Exp $
 
-DISTNAME=	ccgo-0.3.6.2
-PKGREVISION=	4
+DISTNAME=	ccgo-0.3.6.3
 CATEGORIES=	games
 MASTER_SITES=	http://ccdw.org/~cjj/prog/ccgo/src/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ccdw.org/~cjj/prog/ccgo/
 COMMENT=	Go board with IGS and gnugo interface
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	gnugo>=3.4:../../games/gnugo
 
