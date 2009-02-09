@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/04/25 20:39:09 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:31 joerg Exp $
 #
 
 DISTNAME=		pyproj-1.8.3
@@ -12,6 +12,7 @@ COMMENT=		Python wrapper for proj
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+PYTHON_VERSIONS_ACCEPTED=	25 24
 PYDISTUTILSPKG=			true
 
 INSTALLATION_DIRS=	share/doc/${PKGNAME}
