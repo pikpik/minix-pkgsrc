@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.460 2009/01/31 05:34:02 markd Exp $
+# $NetBSD: Makefile,v 1.461 2009/02/02 09:37:21 markd Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -350,7 +350,6 @@ SUBDIR+=	py-Reverend
 SUBDIR+=	py-SimpleParse
 SUBDIR+=	py-X
 SUBDIR+=	py-cmTemplate
-SUBDIR+=	py-csv
 SUBDIR+=	py-docutils
 SUBDIR+=	py-elementtree
 SUBDIR+=	py-enchant

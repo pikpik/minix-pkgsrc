@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/04/26 15:35:09 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2008/06/12 02:14:57 joerg Exp $
 #
 
 DISTNAME=	Pmw.1.2
@@ -12,8 +12,6 @@ HOMEPAGE=	http://pmw.sourceforge.net/
 COMMENT=	Python meta widgets
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_ACCEPTED=	25 24 23 21
 
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
 
