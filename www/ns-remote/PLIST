@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2000/01/13 05:01:52 simonb Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 02:17:33 zuntum Exp $
 bin/ns-open
 bin/ns-remote
+share/doc/ns-remote.README
