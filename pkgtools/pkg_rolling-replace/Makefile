@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2008/06/08 17:29:01 gdt Exp $
+# $NetBSD: Makefile,v 1.21 2008/06/22 12:49:53 gdt Exp $
 
 DISTNAME=	pkg_rolling-replace-0.16
 PKGREVISION=	2
@@ -13,6 +13,7 @@ DEPENDS+=	pkg_chk>=1.76:../../pkgtools/pkg_chk
 DEPENDS+=	pkg_tarup>=1.6.6:../../pkgtools/pkg_tarup
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	patch
 
@@ -53,8 +54,8 @@ do-extract:
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/pkg_rolling-replace.sh \
-		${PREFIX}/sbin/pkg_rolling-replace
+		${DESTDIR}${PREFIX}/sbin/pkg_rolling-replace
 	${INSTALL_MAN} ${WRKSRC}/pkg_rolling-replace.8 \
-		${PREFIX}/${PKGMANDIR}/man8/pkg_rolling-replace.8
+		${DESTDIR}${PREFIX}/${PKGMANDIR}/man8/pkg_rolling-replace.8
 
 .include "../../mk/bsd.pkg.mk"
