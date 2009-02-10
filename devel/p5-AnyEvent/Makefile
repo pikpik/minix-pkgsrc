@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2008/09/13 13:19:07 rhaen Exp $
+# $NetBSD: Makefile,v 1.9 2008/10/19 19:17:47 he Exp $
 #
 
-DISTNAME=	AnyEvent-4.233
+DISTNAME=	AnyEvent-4.331
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cpan.org/modules/by-authors/Marc_Lehmann/
 
