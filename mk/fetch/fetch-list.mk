@@ -1,4 +1,4 @@
-# $NetBSD: fetch-list.mk,v 1.9 2006/07/27 21:46:46 jlam Exp $
+# $NetBSD: fetch-list.mk,v 1.10 2009/02/08 23:16:08 wiz Exp $
 
 ######################################################################
 ### fetch-list (PUBLIC)
@@ -82,7 +82,7 @@ fetch-list-one-pkg:
 		${ECHO} "${MKDIR} ${_DISTDIR}";				\
 		${ECHO} 'cd ${_DISTDIR} && { [ -f ${fetchfile} -o -f ${fetchfile:T} ] ||'; \
 		${ECHO}	'for site in $$sites; do';			\
-		${ECHO} '	${FETCH_CMD} ${FETCH_BEFORE_ARGS} "$${site}${fetchfile:T}" ${FETCH_AFTER_ARGS} && break ||'; \
+		${ECHO} '	${_FETCH_CMD.${FETCH_USING}:Q} ${_FETCH_BEFORE_ARGS.${FETCH_USING}:Q} "$${site}${fetchfile:T}" ${_FETCH_AFTER_ARGS.${FETCH_USING}:Q} && break ||'; \
 		${ECHO} '	${ECHO} ${fetchfile:T} not fetched';	\
 		${ECHO}	'done; }';					\
 		${ECHO} ')';						\
@@ -100,7 +100,7 @@ fetch-list-one-pkg:
 		${ECHO} "${MKDIR} ${_DISTDIR}";				\
 		${ECHO} 'cd ${_DISTDIR} && { [ -f ${fetchfile} -o -f ${fetchfile:T} ] ||'; \
 		${ECHO}	'for site in $$sites; do';			\
-		${ECHO} '	${FETCH_CMD} ${FETCH_BEFORE_ARGS} "$${site}${fetchfile:T}" ${FETCH_AFTER_ARGS} && break ||'; \
+		${ECHO} '	${_FETCH_CMD.${FETCH_USING}:Q} ${_FETCH_BEFORE_ARGS.${FETCH_USING}:Q} "$${site}${fetchfile:T}" ${_FETCH_AFTER_ARGS.${FETCH_USING}:Q} && break ||'; \
 		${ECHO} '	${ECHO} ${fetchfile:T} not fetched';	\
 		${ECHO}	'done; }';					\
 	fi)
