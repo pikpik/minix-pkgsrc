@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/05/18 10:03:31 peter Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/20 01:09:16 joerg Exp $
 #
 
 DISTNAME=		tcllib-1.8
@@ -23,8 +23,5 @@ SUBST_STAGE.fix=	post-patch
 SUBST_FILES.fix=	modules/doctools/mpformats/_html.tcl
 SUBST_SED.fix=		-e "s,/usr/bin/wget -q -O,${FETCH_CMD} -V -o,g"
 SUBST_MESSAGE.fix=	Fixing hardcoded ftp binary
-
-post-patch:
-	@${FIND} ${WRKSRC} -name \*.orig | ${XARGS} ${RM}
 
 .include "../../mk/bsd.pkg.mk"
