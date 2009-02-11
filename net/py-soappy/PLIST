@@ -44,6 +44,9 @@ ${PYSITELIB}/SOAPpy/__init__.pyo
 ${PYSITELIB}/SOAPpy/version.py
 ${PYSITELIB}/SOAPpy/version.pyc
 ${PYSITELIB}/SOAPpy/version.pyo
+${PYSITELIB}/SOAPpy/wstools/Namespaces.py
+${PYSITELIB}/SOAPpy/wstools/Namespaces.pyc
+${PYSITELIB}/SOAPpy/wstools/Namespaces.pyo
 ${PYSITELIB}/SOAPpy/wstools/TimeoutSocket.py
 ${PYSITELIB}/SOAPpy/wstools/TimeoutSocket.pyc
 ${PYSITELIB}/SOAPpy/wstools/TimeoutSocket.pyo
