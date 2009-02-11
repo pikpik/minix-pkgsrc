@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2008/09/16 22:51:20 markd Exp $
+# $NetBSD: Makefile,v 1.28 2008/10/26 14:03:37 adam Exp $
 
-DISTNAME=	stellarium-0.10.0
+DISTNAME=	stellarium-0.10.1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=stellarium/}
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.stellarium.org/
