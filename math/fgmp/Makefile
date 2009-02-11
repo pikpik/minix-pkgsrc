@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2007/03/24 19:21:28 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/03/04 18:12:59 jlam Exp $
 
 DISTNAME=	fgmp-1.0b5-src-10.10
 PKGNAME=	fgmp-1.0b5
 CATEGORIES=	math
 MASTER_SITES=	http://hpux.cs.utah.edu/hppd/cgi-bin/redirect?hpux/Maths/Misc/fgmp-1.0b5/
 
-MAINTAINER=	pkgsrc-user@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://hpux.cs.utah.edu/hppd/hpux/Maths/Misc/fgmp-1.0b5/
 COMMENT=	Minimalist free re-implementation of GNU multi-precision routines
 
