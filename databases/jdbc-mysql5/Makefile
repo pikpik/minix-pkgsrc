@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/11 22:35:43 adrianp Exp $
 #
 
 DISTNAME=	mysql-connector-java-5.0.8
+PKGNAME=	${DISTNAME:S/mysql-connector-java/jdbc-mysql/}
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_MYSQL:=Connector-J/}
 
