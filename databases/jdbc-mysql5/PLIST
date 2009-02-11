@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/java/${PKGNAME_NOREV}-bin.jar
+share/doc/mysql-connector-java/connector-j.html
+share/doc/mysql-connector-java/README
+share/doc/mysql-connector-java/README.txt
+@dirrm share/doc/mysql-connector-java
+@unexec ${RMDIR} %D/lib/java 2>/dev/null || ${TRUE}
