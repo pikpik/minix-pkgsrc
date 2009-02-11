@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/11/24 16:28:31 stacktic Exp $
+# $NetBSD: Makefile,v 1.4 2008/12/18 15:25:38 joerg Exp $
 #
 
-DISTNAME=	fs-utils_20081124
+DISTNAME=	fs-utils_20090211
 PKGNAME=	${DISTNAME:S/_/-/}
 CATEGORIES=	filesystems
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/stacktic/
