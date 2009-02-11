@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/13 09:54:57 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:29 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,6 +6,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGNAME=	${PYPKGPREFIX}-newt-${VERSION}
 COMMENT=	Windowing toolkit based on libslang (Python bindings)
+
+PYTHON_VERSIONS_ACCEPTED=	25 24
 
 PY_PATCHPLIST=	yes
 GNU_CONFIGURE=	yes
