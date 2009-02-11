@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/02/05 23:08:51 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:28 jlam Exp $
 #
 
 DISTNAME=		PQueue-0.2
@@ -12,6 +12,8 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.csse.monash.edu.au/hons/projects/1999/Andrew.Snare/
 COMMENT=		Priority-queues using fibonacci heaps
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/PQueue
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-python=${PYTHONBIN:Q}
@@ -22,9 +24,10 @@ PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX:Q}
 
 PYQ_DOCDIR=	${PREFIX}/share/doc/${PYPKGPREFIX}-PQueue
 
+INSTALLATION_DIRS+=	${PYQ_DOCDIR} ${PYSITELIB}
+
 post-install:
-	${INSTALL_DATA_DIR} ${PYQ_DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/README ${PYQ_DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PYQ_DOCDIR}
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"
