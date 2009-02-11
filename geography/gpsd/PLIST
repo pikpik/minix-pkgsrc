@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.3 2006/08/31 14:12:53 gdt Exp $
+@comment $NetBSD: PLIST,v 1.4 2008/01/15 00:58:17 gdt Exp $
 bin/cgps
 bin/cgpxlogger
 bin/gpsctl
+bin/gpsdlcdd
 bin/gpsflash
 bin/gpspipe
 bin/rtcmdecode
