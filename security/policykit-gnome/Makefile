@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/11/22 03:34:55 jmcneill Exp $
 #
 
 POLICYKIT_GNOME_VER=	0.9.2
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		jmcneill@NetBSD.org
 HOMEPAGE=		http://hal.freedesktop.org/
 COMMENT=		GNOME dialogs for PolicyKit
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		VARBASE
 
