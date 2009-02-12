@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- cups/cups.mak.orig	2009-02-06 18:58:54.000000000 +0100
++++ cups/cups.mak
+@@ -49,7 +49,7 @@ pdftoraster: $(PDFTORASTER_XE)
+ pdftoraster_=cups/pdftoraster.c
+ 
+ $(PDFTORASTER_XE): $(pdftoraster_)
+-	$(GLCC) `cups-config --image --libs` -DBINDIR='"$(bindir)"' -DGS='"$(GS)"' -o $@ $(pdftoraster_)
++	$(GLCC) `cups-config --ldflags --image --libs` -DBINDIR='"$(bindir)"' -DGS='"$(GS)"' -o $@ $(pdftoraster_)
+ 
+ install:	install-cups
+ 

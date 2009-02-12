@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/unixinst.mak.orig	2006-03-13 17:18:19.000000000 +0100
-+++ src/unixinst.mak
-@@ -148,7 +148,7 @@ install-man: $(PSMANDIR)/gs.1
+--- base/unixinst.mak.orig	2007-08-14 22:48:29.000000000 +0200
++++ base/unixinst.mak
+@@ -151,7 +151,7 @@ install-man: $(PSMANDIR)/gs.1
  			  ln -s ps2pdf.$(man1ext) $$f.$(man1ext) ) ;\
  	      done ;\
  	    fi ;\
