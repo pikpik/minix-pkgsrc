@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/11/10 20:59:27 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2008/11/20 14:28:22 dillo Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -13,6 +13,7 @@ CONFIGURE_ARGS+=	--disable-cairo-output
 CONFIGURE_ARGS+=	--enable-poppler-qt4
 CONFIGURE_ARGS+=	--disable-gtk-test
 CONFIGURE_ARGS+=	--disable-utils
+CONFIGURE_ARGS+=	--disable-cms
 
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-qt4.pc.in
 

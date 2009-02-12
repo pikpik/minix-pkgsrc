@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/11/03 16:10:40 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2008/11/20 14:28:22 dillo Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -14,6 +14,7 @@ CONFIGURE_ARGS+=	--disable-splash-output
 CONFIGURE_ARGS+=	--enable-poppler-qt
 CONFIGURE_ARGS+=	--disable-gtk-test
 CONFIGURE_ARGS+=	--disable-utils
+CONFIGURE_ARGS+=	--disable-cms
 
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/poppler-qt.pc.in
 

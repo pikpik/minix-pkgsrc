@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/02/22 19:27:05 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2008/11/20 14:28:22 dillo Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -27,6 +27,7 @@ CONFIGURE_ARGS+=	--disable-gtk-test
 CONFIGURE_ARGS+=	--disable-poppler-glib
 # Enable build and install of the tools
 CONFIGURE_ARGS+=	--enable-utils	# the default
+CONFIGURE_ARGS+=	--disable-cms
 
 BUILD_DIRS=		utils # implies INSTALL_DIRS too
 
