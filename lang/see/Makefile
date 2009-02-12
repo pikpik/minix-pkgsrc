@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/10/20 00:45:35 ahoka Exp $
 #
 
 DISTNAME=	see-3.0.1376
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://users.tpg.com.au/dle0nard/software/
 
