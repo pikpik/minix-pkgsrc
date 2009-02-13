@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.629 2009/02/13 16:54:51 abs Exp $
+# $NetBSD: Makefile,v 1.630 2009/02/13 17:03:07 abs Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -278,6 +278,7 @@ SUBDIR+=	p5-Catalyst-Runtime
 SUBDIR+=	p5-Catalyst-View-Excel-Template-Plus
 SUBDIR+=	p5-Catalyst-View-JSON
 SUBDIR+=	p5-Catalyst-View-Jemplate
+SUBDIR+=	p5-Catalyst-View-Mason
 SUBDIR+=	p5-Catalyst-View-TT
 SUBDIR+=	p5-CatalystX-CRUD-Controller-RHTMLO
 SUBDIR+=	p5-CatalystX-CRUD-View-Excel
