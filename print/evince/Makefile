@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2008/12/20 20:52:27 reed Exp $
+# $NetBSD: Makefile,v 1.50 2008/12/22 15:27:02 reed Exp $
 #
 
 PKGREVISION=	3
@@ -21,6 +21,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../devel/GConf/schemas.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+.include "../../print/kpathsea/buildlink3.mk"
 .include "../../security/gnome-keyring/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
 BUILDLINK_API_DEPENDS.dbus-glib+=	dbus-glib>=0.70
