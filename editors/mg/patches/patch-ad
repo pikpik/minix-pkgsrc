@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- extend.c.orig	2007-01-12 17:24:48.000000000 +0000
++++ extend.c
+@@ -445,7 +445,7 @@ dobindkey(KEYMAP *map, const char *func,
+ 	for (i = 0; *str && i < MAXKEY; i++) {
+ 		/* XXX - convert numbers w/ strol()? */
+ 		if (*str == '^' && *(str + 1) !=  '\0') {
+-			key.k_chars[i] = CCHR(toupper(*++str));
++			key.k_chars[i] = CCHR(toupper((unsigned char)*++str));
+ 		} else if (*str == '\\' && *(str + 1) != '\0') {
+ 			switch (*++str) {
+ 			case '^':
