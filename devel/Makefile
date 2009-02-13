@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1109 2009/02/12 01:49:45 minskim Exp $
+# $NetBSD: Makefile,v 1.1110 2009/02/13 23:41:06 abs Exp $
 #
 
 COMMENT=	Development utilities
@@ -665,6 +665,7 @@ SUBDIR+=	p5-MooseX-Object-Pluggable
 SUBDIR+=	p5-MooseX-Param
 SUBDIR+=	p5-MooseX-StrictConstructor
 SUBDIR+=	p5-MooseX-Types
+SUBDIR+=	p5-MooseX-Types-Common
 SUBDIR+=	p5-MooseX-Types-Path-Class
 SUBDIR+=	p5-Mouse
 SUBDIR+=	p5-MouseX-Types
