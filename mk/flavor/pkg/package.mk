@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.15 2008/01/05 22:06:20 rillig Exp $
+# $NetBSD: package.mk,v 1.16 2008/01/23 14:07:07 rillig Exp $
 
 PKG_SUFX?=		.tgz
 PKGFILE?=		${PKGREPOSITORY}/${PKGNAME}${PKG_SUFX}
@@ -141,5 +141,8 @@ su-real-package-install:
 	@${SED} -e 's|@cwd ${_CROSS_DESTDIR}|@cwd |' ${_PKG_DBDIR}/${PKGNAME:Q}/+CONTENTS > ${_PKG_DBDIR}/${PKGNAME:Q}/+CONTENTS.tmp
 	@${MV} ${_PKG_DBDIR}/${PKGNAME:Q}/+CONTENTS.tmp ${_PKG_DBDIR}/${PKGNAME:Q}/+CONTENTS
 .else
-	${PKG_ADD} ${PKGFILE}
+	case ${_AUTOMATIC:Q}"" in					\
+	[yY][eE][sS])	${PKG_ADD} -A ${PKGFILE} ;;			\
+	*)		${PKG_ADD} ${PKGFILE} ;;			\
+	esac
 .endif
