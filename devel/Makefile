@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1108 2009/02/11 16:21:03 joerg Exp $
+# $NetBSD: Makefile,v 1.1109 2009/02/12 01:49:45 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -821,6 +821,7 @@ SUBDIR+=	p5-Variable-Magic
 SUBDIR+=	p5-Want
 SUBDIR+=	p5-WeakRef
 SUBDIR+=	p5-aliased
+SUBDIR+=	p5-boolean
 SUBDIR+=	p5-capitalization
 SUBDIR+=	p5-enum
 SUBDIR+=	p5-gettext
