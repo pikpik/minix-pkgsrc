@@ -10,7 +10,7 @@ $NetBSD$
  
  bool         RtConfig::supressMartians          = false;
  int          RtConfig::preferenceCeiling        = 1000;
-@@ -182,6 +183,9 @@ void init_and_set_options (int argc, cha
+@@ -182,8 +183,14 @@ void init_and_set_options (int argc, cha
       
       IRR_COMMAND_LINE_OPTIONS,
  
@@ -19,4 +19,9 @@ $NetBSD$
 +
       {"-config", ARGV_FUNC, (char *) &select_config_format, (char *) NULL, 
        "Configuration format (junos, cisco, bcc, gated or rsd)"},
++     {"-no_default_afi", ARGV_BOOL, (char *) NULL,
++      (char *) &AddressFamily::noDefaultAfi,
++      "Do not assume the router defaults to ipv4 unicast address family."},
       {"-no_match_ip_inbound", ARGV_BOOL, 
+       (char *) NULL, (char *) &CiscoConfig::forcedInboundMatchIP,
+       "Produce a match ip clause for inbound maps.\n\t\t\t\tCisco only."},
