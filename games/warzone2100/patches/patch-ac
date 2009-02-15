@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/exceptionhandler/exceptionhandler.c.orig	2008-12-21 13:41:15.000000000 -0500
++++ lib/exceptionhandler/exceptionhandler.c
+@@ -134,6 +134,8 @@ typedef void(*SigActionHandler)(int, sig
+ 
+ #ifdef WZ_OS_MAC
+ static struct sigaction oldAction[32];
++#elif defined(_NSIG)
++static struct sigaction oldAction[_NSIG];
+ #else
+ static struct sigaction oldAction[NSIG];
+ #endif
