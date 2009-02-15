@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/14 20:55:41 plunky Exp $
 #
 
 DISTNAME=	zyGrib-3.3.0
@@ -26,7 +26,7 @@ SUBST_SED.paths+=	-e "s|maps/|${PREFIX}/share/zyGrib/maps/|"
 SUBST_SED.paths+=	-e "s|img/|${PREFIX}/share/zyGrib/img/|"
 SUBST_SED.paths+=	-e "s|tr/|${PREFIX}/share/zyGrib/tr/|"
 
-INSTALLATION_DIRS+=	share/zyGrib/img
+INSTALLATION_DIRS+=	bin share/zyGrib/img
 INSTALLATION_DIRS+=	share/zyGrib/maps/gis
 INSTALLATION_DIRS+=	share/zyGrib/maps/gshhs
 INSTALLATION_DIRS+=	share/zyGrib/tr
