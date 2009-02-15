@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/11/11 10:55:55 seb Exp $
 #
 
-DISTNAME=	Devel-NYTProf-2.07
+DISTNAME=	Devel-NYTProf-2.08
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Devel/}
