@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/04/04 15:31:39 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/19 14:56:48 taca Exp $
 #
 
 DISTNAME=	nqxml-1.1.3p1
@@ -25,8 +25,11 @@ TESTS=		dispatchertester.rb oasis.rb streamingparsertester.rb test.rb \
 		writertester.rb
 REPLACE_RUBY_DIRS=	examples tests
 
+INSTALL_TARGET=		install \
+			--install-dir=${DESTDIR}${PREFIX}/${RUBY_VENDORLIB}
 INSTALLATION_DIRS=	${RUBY_DOC}/nqxml ${RUBY_EG}/nqxml/contrib \
 			${RUBY_EG}/nqxml/tests
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-install:
 .for f in ${DOC}
