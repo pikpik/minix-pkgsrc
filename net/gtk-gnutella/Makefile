@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2008/08/20 10:03:32 adam Exp $
+# $NetBSD: Makefile,v 1.62 2009/02/10 08:35:36 adam Exp $
 
 DISTNAME=	gtk-gnutella-0.96.5
 CATEGORIES=	net
@@ -9,7 +9,7 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://gtk-gnutella.sourceforge.net/
 COMMENT=	GTK-based gnutella client
 
-PKG_DESTDIR_SUPPORT=	destdir user-destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt pkg-config
