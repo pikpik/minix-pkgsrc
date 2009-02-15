@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- lib/framework/wzglobal.h.orig	2008-12-21 13:41:15.000000000 -0500
++++ lib/framework/wzglobal.h
+@@ -522,7 +522,11 @@
+ 
+ #elif defined(WZ_OS_UNIX)
+ #  include <unistd.h>
+-#  include <alloca.h>
++#  if defined(__linux__)
++#    include <alloca.h>
++#  else
++#    include <stdlib.h>
++#  endif
+ #endif /* WZ_OS_* */
+ 
+ 
