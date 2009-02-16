@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/12/20 00:13:07 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2009/01/05 10:54:15 martti Exp $
 #
 
 DISTNAME=	qgtkstyle-r868
@@ -15,7 +15,7 @@ COMMENT=	Qt style rendered using GTK
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 USE_LIBTOOL=	yes
 
 do-configure:
