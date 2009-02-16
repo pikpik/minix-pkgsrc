@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/10/04 21:53:16 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2007/07/24 17:23:34 jschauma Exp $
 
 DISTNAME=	ipcalc-0.41
 CATEGORIES=	net
@@ -8,6 +8,8 @@ MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://jodies.de/ipcalc
 COMMENT=	IP Calculator
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_TOOLS+=	perl:run
 REPLACE_PERL=	ipcalc
 NO_BUILD=	YES
@@ -15,6 +17,6 @@ NO_BUILD=	YES
 INSTALLATION_DIRS=	bin
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/ipcalc ${PREFIX}/bin/ipcalc
+	${INSTALL_SCRIPT} ${WRKSRC}/ipcalc ${DESTDIR}${PREFIX}/bin/ipcalc
 
 .include "../../mk/bsd.pkg.mk"
