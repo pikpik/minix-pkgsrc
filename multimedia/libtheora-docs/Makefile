@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/11/05 14:24:05 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/11/11 00:52:20 wiz Exp $
 #
 
 .include "../../multimedia/libtheora/Makefile.common"
@@ -12,6 +12,8 @@ BUILD_DEPENDS+=	doxygen>=1.5.7.1:../../devel/doxygen
 CONFIGURE_ARGS+=	--disable-oggtest
 CONFIGURE_ARGS+=	--disable-vorbistest
 CONFIGURE_ARGS+=	ac_cv_func_oggpackB_read=yes
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DIRS=	doc
 
