@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2008/04/24 20:22:00 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2008/09/16 17:47:57 jakllsch Exp $
 
 DISTNAME=	openbox-3.4.7.2
 PKGREVISION=	1
@@ -12,6 +12,8 @@ HOMEPAGE=	http://icculus.org/openbox/
 COMMENT=	Standards compliant, light-weight and extensible window manager
 
 DEPENDS+=		vera-ttf>=1.10:../../fonts/vera-ttf
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_DIRS+=		gnome2-1.5 xdg-1.4
