@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/11/26 12:00:36 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2008/12/11 17:35:54 gdt Exp $
 
 DISTNAME=	gtkimageview-1.6.3
+PKGREVISION=	1
 CATEGORIES=	graphics
 # See http://trac.bjourne.webfactional.com/ticket/27
 # MASTER_SITES=	http://trac.bjourne.webfactional.com/attachment/wiki/WikiStart/broken
@@ -22,7 +23,7 @@ PKGCONFIG_OVERRIDE+=	gtkimageview-1.0.pc.in
 
 TEST_TARGET=	check
 
-.include "../../devel/glib/buildlink3.mk"
+.include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 
