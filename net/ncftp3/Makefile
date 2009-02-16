@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2005/04/11 21:46:51 tv Exp $
+# $NetBSD: Makefile,v 1.19 2005/05/07 15:14:44 recht Exp $
 
 DISTNAME=	ncftp-3.1.9-src
 PKGNAME=	ncftp3-3.1.9
@@ -8,6 +8,10 @@ MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 MAINTAINER=	zuntum@NetBSD.org
 HOMEPAGE=	http://www.ncftp.com/
 COMMENT=	FTP replacement with advanced user interface
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 GNU_CONFIGURE=	yes
