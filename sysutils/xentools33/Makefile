@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/01/17 12:31:10 bouyer Exp $
+# $NetBSD: Makefile,v 1.14 2009/02/09 22:56:27 joerg Exp $
 #
 
 VERSION=		3.3.1
@@ -23,9 +23,8 @@ BUILD_DEPENDS+= dev86-[0-9]*:../../devel/dev86 # needed to build firmware
 PKG_SYSCONFSUBDIR=	xen
 
 ONLY_FOR_PLATFORM=	Linux-2.6*-i386 Linux-2.6*-x86_64
-ONLY_FOR_PLATFORM+=	NetBSD-4.99.*-x86_64 NetBSD-4.99.*-i386
-ONLY_FOR_PLATFORM+=	NetBSD-[5-9].*-x86_64 NetBSD-[5-9].*-i386
-
+ONLY_FOR_PLATFORM+=	NetBSD-[5-9].*-x86_64 NetBSD-[6-9].*-i386
+ONLY_FOR_PLATFORM+=	NetBSD-5.99.*-i386
 
 CONFLICTS+=		libxen-[0-9]*
 CONFLICTS+=		xentools20-[0-9]*
