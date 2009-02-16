@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.8 2008/09/18 18:57:51 drochner Exp $
+# $NetBSD: options.mk,v 1.9 2008/09/22 20:21:04 joerg Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -30,5 +30,5 @@ USE_LANGUAGES+=		c c++
 PKG_FAIL_REASON+=	"The wxwidgets option needs the gtk option."
 .  endif
 .else
-CONFIGURE_ARGS+=	--without-wx
+CONFIGURE_ARGS+=	--disable-wx
 .endif
