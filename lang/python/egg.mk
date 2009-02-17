@@ -1,8 +1,8 @@
-# $NetBSD: egg.mk,v 1.6 2008/09/12 05:32:38 epg Exp $
+# $NetBSD: egg.mk,v 1.7 2009/02/17 15:32:22 joerg Exp $
 #
 # Common logic to handle Python Eggs
 #
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/bsd.fast.prefs.mk"
 
 EGG_NAME?=	${DISTNAME}
 
