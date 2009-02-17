@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/04/17 13:46:35 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2007/01/07 09:13:56 rillig Exp $
 
 DISTNAME=	qiv-2.0-src
 PKGNAME=	${DISTNAME:S/-src//}
@@ -12,6 +12,8 @@ HOMEPAGE=	http://www.klografx.net/qiv/
 COMMENT=	Quick image viewer
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_TOOLS+=	gmake
