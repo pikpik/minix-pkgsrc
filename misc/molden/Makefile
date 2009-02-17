@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/02/22 19:26:50 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2007/08/17 21:38:23 joerg Exp $
 
 DISTNAME=	molden4.6
 PKGNAME=	${DISTNAME:S/molden/&-/}
@@ -6,7 +6,7 @@ CATEGORIES=	misc # chemistry
 MASTER_SITES=	ftp://ftp.cmbi.kun.nl/pub/molgraph/molden/
 EXTRACT_SUFX=	.tar.gz
 
-MAINTAINER=	oishi@ims.ac.jp
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cmbi.ru.nl/molden/molden.html
 COMMENT=	Displaying MOLecular DENsity
 
