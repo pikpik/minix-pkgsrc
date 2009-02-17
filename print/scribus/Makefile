@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2009/02/04 21:44:38 drochner Exp $
+# $NetBSD: Makefile,v 1.57 2009/02/09 22:56:26 joerg Exp $
 
 DISTNAME=		scribus-1.3.3.12
 PKGREVISION=		1
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_DIRS+=		xdg-1.4
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
-USE_TOOLS+=		gmake perl
+USE_TOOLS+=		gmake perl pkg-config
 PTHREAD_OPTS+=		require
 SHLIBTOOL_OVERRIDE=	# empty
 GNU_CONFIGURE=		yes
