@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2007/02/22 19:26:41 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2007/07/04 20:54:44 jlam Exp $
 
 DISTNAME=		majordomo-1.94.5
 PKGREVISION=		2
@@ -7,7 +7,7 @@ MASTER_SITES=		ftp://ftp.sgi.com/other/majordomo/1.94.5/ \
 			ftp://ftp-europe.sgi.com/other/majordomo/1.94.5/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=		packages@biology.nmsu.edu
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.greatcircle.com/majordomo/
 COMMENT=		The Majordomo mailing list manager
 
