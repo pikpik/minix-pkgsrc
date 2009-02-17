@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 2004/03/11 12:26:28 jmmv Exp $
-bin/gpgme03-config
-include/gpgme03.h
-lib/libgpgme03.la
-share/aclocal/gpgme03.m4
