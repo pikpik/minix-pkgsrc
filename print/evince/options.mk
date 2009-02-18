@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2008/10/25 00:11:13 wiz Exp $
+# $NetBSD: options.mk,v 1.2 2008/12/20 20:52:27 reed Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.evince
 PKG_SUPPORTED_OPTIONS=	dvi djvu gnome
@@ -12,7 +12,7 @@ PLIST_VARS+=		${PKG_SUPPORTED_OPTIONS}
 CONFIGURE_ARGS+=	--enable-dvi
 PLIST.dvi=		yes
 GCONF_SCHEMAS+=	evince-thumbnailer-dvi.schemas
-.include "../../mk/tex.buildlink3.mk"
+.include "../../print/kpathsea/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mdjvu)
