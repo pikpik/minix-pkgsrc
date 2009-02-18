@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/dvigif
+bin/dvipng
+info/dvipng.info
+man/man1/dvigif.1
+man/man1/dvipng.1
