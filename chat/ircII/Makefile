@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2008/11/10 19:25:27 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2008/11/17 08:09:19 dsainty Exp $
 
 DISTNAME=		ircii-${VERS}
 PKGNAME=		ircII-${VERS}
@@ -16,7 +16,7 @@ CONFLICTS=		blackened-[0-9]*
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-VERS=			20080314
+VERS=			20081115
 PLIST_SUBST+=	VERS=${VERS:Q}
 
 .include "../../mk/bsd.prefs.mk"
