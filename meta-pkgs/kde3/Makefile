@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.60 2008/02/20 09:45:55 markd Exp $
+# $NetBSD: Makefile,v 1.61 2008/08/27 11:59:13 markd Exp $
 
 DISTNAME=	kde-3.5.10
 CATEGORIES=	meta-pkgs x11 kde
 MASTER_SITES=	# empty
-DISTFILES=	# empty
 
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.kde.org/
