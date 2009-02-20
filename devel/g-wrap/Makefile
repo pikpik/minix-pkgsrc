@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2008/06/20 01:09:12 joerg Exp $
+# $NetBSD: Makefile,v 1.51 2009/02/20 00:42:50 gdt Exp $
 
 DISTNAME=	g-wrap-1.9.11
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://savannah.nongnu.org/download/g-wrap/
 
