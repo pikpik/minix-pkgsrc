@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2009/02/19 06:47:51 epg Exp $
 ${PYSITELIB}/subvertpy/__init__.py
 ${PYSITELIB}/subvertpy/__init__.pyc
 ${PYSITELIB}/subvertpy/__init__.pyo

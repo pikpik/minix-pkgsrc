@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1116 2009/02/17 15:03:43 abs Exp $
+# $NetBSD: Makefile,v 1.1117 2009/02/19 06:49:33 epg Exp $
 #
 
 COMMENT=	Development utilities
@@ -907,6 +907,7 @@ SUBDIR+=	py-pqueue
 SUBDIR+=	py-readline
 SUBDIR+=	py-setuptools
 SUBDIR+=	py-subversion
+SUBDIR+=	py-subvertpy
 SUBDIR+=	py-unit
 SUBDIR+=	py-unitgui
 SUBDIR+=	py-urwid
@@ -1020,7 +1021,6 @@ SUBDIR+=	stlport
 SUBDIR+=	stooop
 SUBDIR+=	subversion
 SUBDIR+=	subversion-base
-SUBDIR+=	subvertpy
 SUBDIR+=	sunifdef
 SUBDIR+=	svk
 SUBDIR+=	swig
