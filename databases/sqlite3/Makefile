@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/12/15 09:06:11 martin Exp $
+# $NetBSD: Makefile,v 1.16 2008/12/31 20:37:09 epg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,6 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS+=	${PKGMANDIR}/man1
 CONFIGURE_ARGS+=	--disable-tcl
+CONFIGURE_ENV+=		ac_cv_prog_TCLSH_CMD=""
 CONFIGURE_ARGS+=	--enable-load-extension
 CONFIGURE_ARGS+=	--with-readline-inc=
 
