@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2009/01/09 13:09:12 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2009/01/29 17:09:38 joerg Exp $
 #
 
-DISTNAME=	clive-2.1.3
+DISTNAME=	clive-2.1.6
 CATEGORIES=	net multimedia www
 MASTER_SITES=	http://clive.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -26,7 +26,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-build:
-	cd ${WRKSRC} && ${PERL5} genman
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/clive ${DESTDIR}${PREFIX}/bin
