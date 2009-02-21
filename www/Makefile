@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.633 2009/02/17 15:08:17 abs Exp $
+# $NetBSD: Makefile,v 1.634 2009/02/18 10:27:10 abs Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -62,6 +62,7 @@ SUBDIR+=	ap2-xslt2
 SUBDIR+=	ap22-authn-sasl
 SUBDIR+=	ap22-authnz-external
 SUBDIR+=	ap22-dnssd
+SUBDIR+=	ap22-vhost-ldap
 SUBDIR+=	apache
 SUBDIR+=	apache-roller
 SUBDIR+=	apache-tomcat55
