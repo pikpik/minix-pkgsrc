@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/scrotwm
+man/man1/scrotwm.1
+share/examples/scrotwm/baraction.sh
+share/examples/scrotwm/initscreen.sh
+share/examples/scrotwm/screenshot.sh
+share/examples/scrotwm/scrotwm.conf
+@dirrm share/examples/scrotwm
