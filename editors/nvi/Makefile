@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/12/31 20:48:37 epg Exp $
+# $NetBSD: Makefile,v 1.35 2009/01/16 12:31:51 obache Exp $
 #
 
 DISTNAME=	nvi-1.81.6
@@ -41,9 +41,12 @@ INSTALL_UNSTRIPPED=	yes
 
 # Use of db1 is not officially supported.
 BDB_ACCEPTED=		db3 db4
+CONFIGURE_ARGS+=	--with-db=system
 .include "../../mk/bdb.buildlink3.mk"
-.if ${BDB_TYPE} == "db1" || ${BDB_TYPE} == "db2"
+.if ${BDB_TYPE} == "db1"
 CONFIGURE_ARGS+=	--with-db_type=db1
-.endif
+.else
 CONFIGURE_ARGS+=	--with-db-prefix=${BDBBASE}
+BUILDLINK_TRANSFORM+=	l:db:${BDB_TYPE}
+.endif
 .include "../../mk/bsd.pkg.mk"
