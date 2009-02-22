@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.19 2009/01/07 21:28:56 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2009/01/21 19:26:13 drochner Exp $
 #
 
-PKGNAME=		${PYPKGPREFIX}-gobject-2.16.0
+PKGNAME=		${PYPKGPREFIX}-gobject-2.16.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
-
-PKGREVISION=	1
 
 post-patch:
 	${SED} "s|@PYGTKCODEGEN@|${PREFIX}/share/pygobject/2.0|" \
