@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.462 2009/02/09 21:09:22 joerg Exp $
+# $NetBSD: Makefile,v 1.463 2009/02/18 16:39:40 kleink Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -225,6 +225,7 @@ SUBDIR+=	p5-Regexp-Common
 SUBDIR+=	p5-SGMLS
 SUBDIR+=	p5-Search-Xapian
 SUBDIR+=	p5-String-Approx
+SUBDIR+=	p5-String-BufferStack
 SUBDIR+=	p5-String-CRC32
 SUBDIR+=	p5-String-Koremutake
 SUBDIR+=	p5-String-ShellQuote
