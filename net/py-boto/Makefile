@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/07/24 17:37:56 bjs Exp $
+# $NetBSD: Makefile,v 1.4 2008/09/12 05:32:37 epg Exp $
 #
 
-DISTNAME=	boto-1.3a
+DISTNAME=	boto-1.6b
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	net
 MASTER_SITES=	http://boto.googlecode.com/files/
