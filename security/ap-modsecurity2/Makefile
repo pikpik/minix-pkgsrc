@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/10/25 15:59:27 adrianp Exp $
+# $NetBSD: Makefile,v 1.11 2009/01/29 16:54:17 joerg Exp $
 
 DISTNAME=	modsecurity-apache_2.5.7
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/apache_//}
@@ -35,7 +35,7 @@ BUILDLINK_API_DEPENDS.apache+=	apache>=2.0.59nb2
 
 post-install:
 	${INSTALL_DATA_DIR} ${EGDIR}
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ap-imodsecurity
+	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ap-modsecurity
 
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/modsecurity.conf-minimal ${EGDIR}
 	cd ${WRKDIR}/${DISTNAME}/doc && \
