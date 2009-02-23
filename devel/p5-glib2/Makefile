@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/10/19 19:17:55 he Exp $
+# $NetBSD: Makefile,v 1.27 2008/11/17 22:44:18 he Exp $
 #
 
 DISTNAME=	Glib-${DIST_VERSION}
@@ -22,7 +22,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 
-DIST_VERSION=	1.200
+DIST_VERSION=	1.201
 
 PERL5_PACKLIST=	auto/Glib/.packlist
 
