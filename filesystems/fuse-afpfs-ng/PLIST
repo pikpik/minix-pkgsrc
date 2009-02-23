@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/07/09 19:03:22 agc Exp $
+@comment $NetBSD: PLIST,v 1.2 2009/02/21 23:34:00 tron Exp $
 bin/afp_client
+bin/afpfs
 bin/afpfsd
 bin/afpcmd
 bin/afpgetstatus
