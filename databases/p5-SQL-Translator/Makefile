@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/10/31 16:08:02 seb Exp $
+# $NetBSD: Makefile,v 1.4 2008/12/20 16:29:50 he Exp $
 
-DISTNAME=	SQL-Translator-0.09002
+DISTNAME=	SQL-Translator-0.09004
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/J/JR/JROBINSON/}
