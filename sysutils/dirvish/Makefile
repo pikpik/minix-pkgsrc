@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/03/24 19:21:32 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/02/16 10:09:16 wiz Exp $
 #
 
 DISTNAME=	dirvish-1.2.1
@@ -6,7 +6,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://www.dirvish.org/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dirvish.org/
 COMMENT=	Fast, disk based, rotating network backup system
 

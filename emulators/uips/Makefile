@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2005/06/16 06:57:51 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/03 19:21:38 jlam Exp $
 #
 
 DISTNAME=		uips
@@ -7,7 +7,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		http://www.neillcorlett.com/uips/
 DISTFILES=		uips.c uips.txt
 
-MAINTAINER=		wiz@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.neillcorlett.com/uips/
 COMMENT=		IPS patcher with v2 support
 
