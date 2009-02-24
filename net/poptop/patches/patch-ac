@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.3 2006/03/23 00:53:48 joerg Exp $
 
 --- pptpctrl.c.orig	2004-04-28 11:36:07.000000000 +0000
 +++ pptpctrl.c
@@ -19,7 +19,7 @@ $NetBSD$
          if (pptp_logwtmp) {
                   pppd_argv[an++] = "plugin";
 -                 pppd_argv[an++] = "/usr/lib/pptpd/pptpd-logwtmp.so";
-+                 pppd_argv[an++] = "/usr/pkg/lib/pptpd/pptpd-logwtmp.so";
++                 pppd_argv[an++] = "@@PREFIX@@/lib/pptpd/pptpd-logwtmp.so";
                   pppd_argv[an++] = "pptpd-original-ip";
                   pppd_argv[an++] = inet_ntoa(inetaddrs[1]);
          }
