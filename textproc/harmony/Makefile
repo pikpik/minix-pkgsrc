@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/08/11 15:55:31 wiz Exp $
 #
 
 DISTNAME=	harmony-stable-${VERSION}
@@ -10,6 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://alliance.seas.upenn.edu/~harmony/
 COMMENT=	Generic framework for reconciling disconnected updates to heterogeneous, replicated XML data
 
+BUILD_DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
 DEPENDS+=	ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
 DEPENDS+=	equeue-[0-9]*:../../devel/equeue
 DEPENDS+=	ocamlnet-[0-9]*:../../net/ocamlnet
