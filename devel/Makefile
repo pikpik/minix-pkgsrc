@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1118 2009/02/20 02:59:50 epg Exp $
+# $NetBSD: Makefile,v 1.1119 2009/02/23 00:10:57 rhaen Exp $
 #
 
 COMMENT=	Development utilities
@@ -906,6 +906,7 @@ SUBDIR+=	py-logging
 SUBDIR+=	py-newt
 SUBDIR+=	py-pexpect
 SUBDIR+=	py-pqueue
+SUBDIR+=	py-pytemplate
 SUBDIR+=	py-readline
 SUBDIR+=	py-setuptools
 SUBDIR+=	py-subversion
