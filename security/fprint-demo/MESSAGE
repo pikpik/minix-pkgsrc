@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD: MESSAGE$
+
+The fingerprint data is stored in the users home directory under the
+.fprint directory, and the program must have read/write access to the
+USB devices.
+===========================================================================
