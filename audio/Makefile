@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.402 2009/01/07 18:53:17 drochner Exp $
+# $NetBSD: Makefile,v 1.403 2009/02/10 11:52:06 abs Exp $
 #
 
 COMMENT=	Audio tools
@@ -8,6 +8,17 @@ SUBDIR+=	SDL_sound
 SUBDIR+=	abcde
 SUBDIR+=	abcmidi
 SUBDIR+=	adplug
+SUBDIR+=	akode
+SUBDIR+=	akode-plugins-alsa
+SUBDIR+=	akode-plugins-ffmpeg
+SUBDIR+=	akode-plugins-jack
+SUBDIR+=	akode-plugins-mpc
+SUBDIR+=	akode-plugins-mpeg
+SUBDIR+=	akode-plugins-oss
+SUBDIR+=	akode-plugins-pulseaudio
+SUBDIR+=	akode-plugins-resampler
+SUBDIR+=	akode-plugins-sun
+SUBDIR+=	akode-plugins-xiph
 SUBDIR+=	alsa-lib
 SUBDIR+=	alsa-plugins-oss
 SUBDIR+=	alsa-plugins-pulse
