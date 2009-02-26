@@ -1,0 +1,8 @@
+@comment $NetBSD: PLIST$
+include/libfprint/fprint.h
+lib/libfprint.a
+lib/libfprint.la
+lib/libfprint.so
+lib/libfprint.so.0
+lib/pkgconfig/libfprint.pc
+@dirrm include/libfprint
