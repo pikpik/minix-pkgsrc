@@ -1,11 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/01/28 15:00:19 recht Exp $
-lib/libdvbpsi.la
-include/dvbpsi/dvbpsi.h
-include/dvbpsi/psi.h
-include/dvbpsi/descriptor.h
-include/dvbpsi/pat.h
-include/dvbpsi/pmt.h
+@comment $NetBSD$
+include/dvbpsi/cat.h
 include/dvbpsi/demux.h
+include/dvbpsi/descriptor.h
+include/dvbpsi/dr.h
 include/dvbpsi/dr_02.h
 include/dvbpsi/dr_03.h
 include/dvbpsi/dr_04.h
@@ -23,6 +20,18 @@ include/dvbpsi/dr_0f.h
 include/dvbpsi/dr_42.h
 include/dvbpsi/dr_47.h
 include/dvbpsi/dr_48.h
-include/dvbpsi/dr.h
+include/dvbpsi/dr_4d.h
+include/dvbpsi/dr_4e.h
+include/dvbpsi/dr_52.h
+include/dvbpsi/dr_55.h
+include/dvbpsi/dr_56.h
+include/dvbpsi/dr_59.h
+include/dvbpsi/dr_69.h
+include/dvbpsi/dvbpsi.h
+include/dvbpsi/eit.h
+include/dvbpsi/pat.h
+include/dvbpsi/pmt.h
+include/dvbpsi/psi.h
 include/dvbpsi/sdt.h
+lib/libdvbpsi.la
 @dirrm include/dvbpsi

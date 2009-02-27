@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2006/02/05 23:10:16 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2008/04/20 20:50:20 heinz Exp $
 
-DISTNAME=	libdvbpsi-0.1.3
-PKGREVISION=	2
+DISTNAME=	libdvbpsi5-0.1.6
+PKGNAME=	${DISTNAME:S/5-/-/}
 CATEGORIES=	multimedia
-MASTER_SITES=	http://www.videolan.org/pub/libdvbpsi/0.1.3/
+MASTER_SITES=	http://www.videolan.org/pub/libdvbpsi/0.1.6/
 
 MAINTAINER=	wulf@NetBSD.org
 HOMEPAGE=	http://www.videolan.org/
