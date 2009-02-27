@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.514 2009/02/24 00:08:09 cube Exp $
+# $NetBSD: Makefile,v 1.515 2009/02/26 18:14:14 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -73,6 +73,21 @@ SUBDIR+=	dxsamples
 SUBDIR+=	eog
 SUBDIR+=	epeg
 SUBDIR+=	evas
+SUBDIR+=	evas-buffer
+SUBDIR+=	evas-edb
+SUBDIR+=	evas-eet
+SUBDIR+=	evas-gif
+SUBDIR+=	evas-jpeg
+SUBDIR+=	evas-pmaps
+SUBDIR+=	evas-png
+SUBDIR+=	evas-sdl
+SUBDIR+=	evas-sdl-16
+SUBDIR+=	evas-software-16-x11
+SUBDIR+=	evas-software-x11
+SUBDIR+=	evas-svg
+SUBDIR+=	evas-tiff
+SUBDIR+=	evas-xpm
+SUBDIR+=	evas-xrender-x11
 SUBDIR+=	ewipe
 SUBDIR+=	exif
 SUBDIR+=	exifprobe
