@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST.common,v 1.1 2008/05/06 13:29:33 htepper Exp $
+@comment $NetBSD: PLIST,v 1.1.1.1 2009/02/26 10:50:05 hasso Exp $
 bin/cardos-info
+bin/cardos-tool
 bin/cryptoflex-tool
 bin/eidenv
 bin/netkey-tool
@@ -38,7 +39,7 @@ lib/pkcs11/pkcs11-spy.so
 lib/pkgconfig/libopensc.pc
 lib/pkgconfig/libpkcs15init.pc
 lib/pkgconfig/libscconf.pc
-man/man1/cardos-info.1
+man/man1/cardos-tool.1
 man/man1/cryptoflex-tool.1
 man/man1/netkey-tool.1
 man/man1/opensc-config.1

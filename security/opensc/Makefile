@@ -1,6 +1,5 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 10:50:05 hasso Exp $
 
-PKGREVISION=		2
 COMMENT=		Smart Card drivers and middleware
 
 .include "../../security/opensc/Makefile.common"
