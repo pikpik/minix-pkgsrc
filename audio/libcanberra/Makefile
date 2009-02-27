@@ -1,13 +1,15 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/10/16 15:17:47 drochner Exp $
 #
 
-DISTNAME=	libcanberra-0.10
+DISTNAME=	libcanberra-0.11
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/libcanberra/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://0pointer.de/lennart/projects/libcanberra/
 COMMENT=	Desktop event sound library
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
