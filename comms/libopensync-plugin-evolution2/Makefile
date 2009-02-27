@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/04/23 21:24:22 dillo Exp $
+# $NetBSD: Makefile,v 1.4 2008/09/06 20:54:31 wiz Exp $
 #
 
 DISTNAME=	libopensync-plugin-evolution2-0.22
@@ -15,6 +15,8 @@ USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
+
+CPPFLAGS+=	-DHANDLE_LIBICAL_MEMORY
 
 .include "../../comms/libopensync/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
