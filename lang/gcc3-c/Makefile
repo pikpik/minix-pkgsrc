@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2007/10/13 15:06:29 heinz Exp $
+# $NetBSD: Makefile,v 1.23 2007/10/25 21:04:22 jlam Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-c-${GCC_VERSION}
+PKGREVISION=	1
 COMMENT=	GNU Compiler Collection, v3 - C compiler
 
 PKG_DESTDIR_SUPPORT=	user-destdir
