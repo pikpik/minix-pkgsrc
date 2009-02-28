@@ -1,9 +1,0 @@
-# $NetBSD$
-
-case ${STAGE} in
-POST-INSTALL)
-	if [ ! -e /media ]; then
-		mkdir /media
-	fi
-	;;
-esac
