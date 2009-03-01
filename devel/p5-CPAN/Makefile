@@ -1,10 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2009/03/01 21:59:46 sno Exp $
 
-DISTNAME=	CPAN-1.9301
+DISTNAME=	CPAN-1.9304
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=CPAN/}
-EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/${DISTNAME}/
