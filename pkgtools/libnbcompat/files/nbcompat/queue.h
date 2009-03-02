@@ -1,4 +1,4 @@
-/*	$NetBSD: queue.h,v 1.6 2008/11/06 00:25:42 joerg Exp $	*/
+/*	$NetBSD: queue.h,v 1.7 2009/02/26 16:14:18 joerg Exp $	*/
 
 /*
  * Copyright (c) 1991, 1993
@@ -321,6 +321,11 @@ struct {								\
 #endif
 #ifndef TAILQ_NEXT
 #define	TAILQ_NEXT(elm, field)		((elm)->field.tqe_next)
+#endif
+
+#ifndef TAILQ_LAST
+#define	TAILQ_LAST(head, headname) \
+	(*(((struct headname *)((head)->tqh_last))->tqh_last))
 #endif
 
 #ifndef CIRCLEQ_HEAD
