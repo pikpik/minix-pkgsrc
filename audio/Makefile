@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.403 2009/02/10 11:52:06 abs Exp $
+# $NetBSD: Makefile,v 1.404 2009/02/26 18:24:02 hasso Exp $
 #
 
 COMMENT=	Audio tools
@@ -402,6 +402,7 @@ SUBDIR+=	xmms-neato
 SUBDIR+=	xmms-nebulus
 SUBDIR+=	xmms-osx
 SUBDIR+=	xmms-paranormal
+SUBDIR+=	xmms-pulse
 SUBDIR+=	xmms-sid
 SUBDIR+=	xmms-synaesthesia
 SUBDIR+=	xmms-tv-scope
