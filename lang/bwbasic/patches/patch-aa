@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.1.1.1 2000/02/15 19:43:22 pooka Exp $
+$NetBSD: patch-aa,v 1.2 2005/11/03 22:19:01 rillig Exp $
 
 --- bwbasic-2.20/Makefile.in.orig	Sat Nov 25 14:32:18 1995
 +++ bwbasic-2.20/Makefile.in	Sun Feb  6 16:12:49 2000
@@ -16,3 +16,12 @@ $NetBSD: patch-aa,v 1.1.1.1 2000/02/15 19:43:22 pooka Exp $
  
  # Revised by JBV
  #LDFLAGS = -s
+@@ -75,7 +76,7 @@ $(OFILES):      $(HFILES)
+ 	$(CC) -c $(CPPFLAGS) -I$(srcdir) $(DEFS) $(CFLAGS) $<
+ 
+ install: all
+-	$(INSTALL_PROGRAM) bwbasic $(bindir)/bwbasic
++	$(INSTALL_PROGRAM) bwbasic ${DESTDIR}$(bindir)/bwbasic
+ 
+ uninstall:
+ 	rm -f $(bindir)/bwbasic
