@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2008/11/07 21:12:12 snj Exp $
 bin/highlight
 man/man1/highlight.1
 share/doc/highlight/AUTHORS
@@ -63,6 +63,7 @@ share/highlight/langDefs/c.lang
 share/highlight/langDefs/cb.lang
 share/highlight/langDefs/cfc.lang
 share/highlight/langDefs/clipper.lang
+share/highlight/langDefs/clojure.lang
 share/highlight/langDefs/clp.lang
 share/highlight/langDefs/cob.lang
 share/highlight/langDefs/cs.lang
