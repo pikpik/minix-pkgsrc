@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/27 17:44:14 drochner Exp $
 #
 
 DISTNAME=	multisync-gui-0.91.0
 CATEGORIES=	comms
-MASTER_SITES=	http://www.opensync.org/attachment/wiki/download/
+MASTER_SITES=	http://www.opensync.org/raw-attachment/wiki/releases/0.2x/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.opensync.org/
