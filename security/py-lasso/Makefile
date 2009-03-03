@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/02 16:46:26 manu Exp $
 #
 
-PKGNAME=	${PYPKGPREFIX}-lasso
+PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 COMMENT=	Libery Alliance Single Sign On binding for Python
 
 PKG_DESTDIR_SUPPORT=	destdir

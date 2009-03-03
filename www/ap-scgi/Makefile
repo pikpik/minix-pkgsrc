@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/03 10:13:34 manu Exp $
 #
 
-PKGNAME=	${APACHE_PKG_PREFIX}-scgi
+PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME}
 
 COMMENT=	Simple Common Gateway Interface for Apache
 
