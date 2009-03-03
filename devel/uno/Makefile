@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2008/03/03 17:45:38 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2009/02/07 21:42:35 joerg Exp $
 #
 
-DISTNAME=		uno_v212
-PKGNAME=		uno-2.12
-#PKGREVISION=		1
+DISTNAME=		uno_v213
+PKGNAME=		uno-2.13
 CATEGORIES=		devel
 MASTER_SITES=		http://spinroot.com/uno/
 
