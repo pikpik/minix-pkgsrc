@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1122 2009/03/01 23:44:37 sno Exp $
+# $NetBSD: Makefile,v 1.1123 2009/03/01 23:59:07 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -75,8 +75,6 @@ SUBDIR+=	bouml
 SUBDIR+=	buddy
 SUBDIR+=	bugzilla
 SUBDIR+=	bugzilla3
-SUBDIR+=	buildtool
-SUBDIR+=	buildtool-doc
 SUBDIR+=	byacc
 SUBDIR+=	bzr
 SUBDIR+=	bzr-gtk
