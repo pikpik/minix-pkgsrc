@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.635 2009/02/21 16:05:06 imil Exp $
+# $NetBSD: Makefile,v 1.636 2009/02/23 21:04:17 imil Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -157,6 +157,7 @@ SUBDIR+=	kdewebdev3
 SUBDIR+=	lhs
 SUBDIR+=	libghttp
 SUBDIR+=	libgtkhtml
+SUBDIR+=	libproxy
 SUBDIR+=	libwww
 SUBDIR+=	liferea
 SUBDIR+=	lighttpd
