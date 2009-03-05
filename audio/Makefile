@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.404 2009/02/26 18:24:02 hasso Exp $
+# $NetBSD: Makefile,v 1.405 2009/03/02 06:22:08 kefren Exp $
 #
 
 COMMENT=	Audio tools
@@ -201,7 +201,6 @@ SUBDIR+=	libmpg123
 SUBDIR+=	libmusepack
 SUBDIR+=	libmusicbrainz
 SUBDIR+=	libofa
-SUBDIR+=	libopendaap
 SUBDIR+=	libopenspc
 SUBDIR+=	libsamplerate
 SUBDIR+=	libshout
@@ -344,7 +343,6 @@ SUBDIR+=	tremor
 SUBDIR+=	tremor-tools
 SUBDIR+=	trm
 SUBDIR+=	tunapie
-SUBDIR+=	tunesbrowser
 SUBDIR+=	twolame
 SUBDIR+=	ubs
 SUBDIR+=	vorbis-tools
