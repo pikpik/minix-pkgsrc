@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/04/25 19:49:03 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/02/09 21:09:23 joerg Exp $
 #
 
 DISTNAME=	PyXML-0.8.4
@@ -16,7 +16,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS+=	PyXML-[0-9]*
 
 PYDISTUTILSPKG=	yes
-PYBINMODULE=	yes
 BUILDLINK_API_DEPENDS.expat+=	expat>=1.95.6
 PYSETUPBUILDARGS+=	--with-libexpat=${BUILDLINK_DIR}
 PYSETUPBUILDARGS+=	--ldflags="${EXPAT_LDFLAGS}"

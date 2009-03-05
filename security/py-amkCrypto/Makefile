@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/05/08 18:59:38 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2009/02/27 12:46:54 drochner Exp $
 #
 
 DISTNAME=	pycrypto-2.0.1
@@ -13,7 +13,6 @@ COMMENT=	Cryptographic and hash functions for Python
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYBINMODULE=	yes
 PYDISTUTILSPKG=	yes
 
 .include "../../security/openssl/buildlink3.mk"

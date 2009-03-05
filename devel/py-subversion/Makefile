@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2008/09/06 20:54:32 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2008/10/14 06:23:43 epg Exp $
 
 PKGNAME=	${PYPKGPREFIX}-subversion-${SVNVER}
 #PKGREVISION=	1
@@ -13,7 +13,6 @@ SHLIBTOOL_OVERRIDE=	# empty
 CONFIGURE_ENV+=		PYTHON2=${PYTHONBIN:Q}
 
 PY_PATCHPLIST=		YES
-PYBINMODULE=		YES
 PYTHON_PATCH_SCRIPTS=	tools/hook-scripts/mailer/mailer.py
 
 BUILD_TARGET=		swig-py

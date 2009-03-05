@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/04/25 20:39:12 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:45 joerg Exp $
 #
 
 DISTNAME=	python-mcrypt-1.1
@@ -13,7 +13,6 @@ COMMENT=	Python interface to mcrypt library
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYBINMODULE=	yes
 PYDISTUTILSPKG= yes
 
 .include "../../lang/python/extension.mk"

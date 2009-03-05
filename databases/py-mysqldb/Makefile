@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/06/12 02:14:20 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2008/08/06 17:16:49 mjl Exp $
 
 DISTNAME=	MySQL-python-${PKGVER}
 PKGNAME=	${PYPKGPREFIX}-mysqldb-${PKGVER}
@@ -14,7 +14,6 @@ COMMENT=	MySQL interface for Python
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
-PYBINMODULE=	yes
 PY_PATCHPLIST=	yes
 PYSETUPINSTALLARGS= --single-version-externally-managed --record plist.txt
 PLIST_SUBST+=   PYVERSSUFFIX=${PYVERSSUFFIX}

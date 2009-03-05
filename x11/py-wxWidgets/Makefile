@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/09/22 20:21:04 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2009/01/25 20:12:14 shattered Exp $
 #
 
 DISTNAME=	wxPython-src-2.6.3.3
@@ -29,7 +29,6 @@ PYDISTUTILSPKG=	yes
 # no scripts to avoid conflicts
 PYSETUPBUILDARGS=	NO_SCRIPTS=1 ${WXARG}
 PYSETUPINSTALLARGS=	NO_SCRIPTS=1 ${WXARG}
-PYBINMODULE=	yes
 
 PLIST_SUBST+=            GTKVER=2
 

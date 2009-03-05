@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/04/25 20:39:12 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/12 02:14:52 joerg Exp $
 #
 
 DISTNAME=	PyX-0.9
@@ -11,7 +11,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	teTeX-bin-[0-9]*:../../print/teTeX3-bin
 
-PYBINMODULE=	yes
 PYDISTUTILSPKG=	yes
 
 MAINTAINER=	adrianp@NetBSD.org

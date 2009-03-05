@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/12/17 16:08:53 darcy Exp $
+# $NetBSD: Makefile,v 1.14 2008/12/19 12:12:53 darcy Exp $
 #
 
 DISTNAME=	generate-2.6
@@ -22,7 +22,6 @@ LIBS.SunOS+=	-lnsl -lsocket
 LIBS.QNX=		-lsocket
 
 PYDISTUTILSPKG=	yes
-PYBINMODULE=	yes
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

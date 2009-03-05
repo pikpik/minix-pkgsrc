@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/01/29 09:37:54 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2009/02/09 18:43:06 joerg Exp $
 #
 
 DISTNAME=	ReportLab_2_2
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_ACCEPTED=	25 24
 
-PYBINMODULE=	yes
 PYDISTUTILSPKG=	yes
 
 .include "../../graphics/freetype2/buildlink3.mk"

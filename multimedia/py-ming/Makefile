@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/09/13 15:54:58 obache Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/12 02:14:38 joerg Exp $
 #
 
 DISTNAME=		ming-py-0.3.0
@@ -13,7 +13,6 @@ COMMENT=		Python bindings for Ming library
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PY_PATCHPLIST=		yes
-PYBINMODULE=		yes
 
 WRKSRC=			${WRKDIR}/ming-0.3.0/py_ext
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2008/10/16 13:32:49 drochner Exp $
+# $NetBSD: Makefile,v 1.32 2009/02/21 14:06:09 wiz Exp $
 
 DISTNAME=	libxml2-2.7.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/python
 PYDISTUTILSPKG=	YES
-PYBINMODULE=	YES
 NO_CONFIGURE=	YES
 
 SUBST_CLASSES+=		setup

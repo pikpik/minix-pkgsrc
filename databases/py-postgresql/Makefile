@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2008/06/12 02:14:20 joerg Exp $
+# $NetBSD: Makefile,v 1.54 2009/01/01 13:21:44 darcy Exp $
 
 DISTNAME=		PyGreSQL-4.0
 PKGNAME=		${PYPKGPREFIX}-postgresql-4.0
@@ -24,7 +24,6 @@ PLIST_SUBST+=		PYPKGPREFIX=${PYPKGPREFIX:Q}
 PYTHON_VERSIONS_ACCEPTED=	26 25 24 23
 
 PYDISTUTILSPKG=		yes
-PYBINMODULE=		yes
 DOCDIR=			${PREFIX}/share/doc/${PYPKGPREFIX}-postgresql
 
 INSTALLATION_DIRS=	${DOCDIR}/tutorial ${DOCDIR}/docs

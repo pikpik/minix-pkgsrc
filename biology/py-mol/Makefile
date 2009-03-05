@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/08/12 03:19:18 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/25 20:39:06 joerg Exp $
 
 DISTNAME=	pymol-0_98-src
 PKGNAME=	${PYPKGPREFIX}-mol-0.98
@@ -14,7 +14,6 @@ COMMENT=	Molecular Visualization System
 
 WRKSRC=		${WRKDIR}/pymol-0.98
 PYDISTUTILSPKG=	yes
-PYBINMODULE=	yes
 PYSETUP=	setup.py
 
 CONFLICTS=	pymol-[0-9]*

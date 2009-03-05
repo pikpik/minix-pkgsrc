@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/06/12 02:14:45 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/08/21 10:29:31 tonnerre Exp $
 #
 
 DISTNAME=	pyOpenSSL-0.7
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 PYTHON_VERSIONS_ACCEPTED= 25 24 23
 
 PYDISTUTILSPKG=	yes
-PYBINMODULE=	yes
 
 .include "../../lang/python/extension.mk"
 .include "../../security/openssl/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2009/02/09 21:09:20 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2009/02/23 11:30:51 wiz Exp $
 #
 
 DISTNAME=	bsddb3-4.7.5
@@ -16,7 +16,6 @@ PYSETUPBUILDARGS=	--berkeley-db=${BUILDLINK_PREFIX.db4}
 PYSETUPINSTALLARGS=	--berkeley-db=${BUILDLINK_PREFIX.db4}
 
 PYDISTUTILSPKG=	yes
-PYBINMODULE=	yes
 
 REPLACE_PYTHON=		Lib/bsddb/dbshelve.py
 REPLACE_PYTHON+=	Lib3/bsddb/dbshelve.py

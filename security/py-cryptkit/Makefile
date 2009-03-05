@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/09/30 17:45:25 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2008/05/08 18:33:53 joerg Exp $
 
 DISTNAME=	cryptkit-0.9
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Python Cryptographic Toolkit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYBINMODULE=	yes
 PYDISTUTILSPKG=	yes
 
 .include "../../lang/python/extension.mk"

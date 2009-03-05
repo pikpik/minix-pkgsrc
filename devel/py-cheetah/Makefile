@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/04/29 11:07:36 shannonjr Exp $
+# $NetBSD: Makefile,v 1.10 2008/06/12 02:14:28 joerg Exp $
 #
 
 DISTNAME=		Cheetah-2.0.1
@@ -15,7 +15,6 @@ COMMENT=		Python-powered template engine and code-generator
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=		yes
-PYBINMODULE=		yes
 PYSETUP=		setup.py
 
 .include "../../lang/python/extension.mk"
