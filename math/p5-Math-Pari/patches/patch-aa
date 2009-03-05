@@ -1,0 +1,17 @@
+$NetBSD$
+
+Darwin runtime linking fix
+
+--- ../pari-2.1.6/src/kernel/none/level0.h.orig	2000-11-03 22:00:26.000000000 +0100
++++ ../pari-2.1.6/src/kernel/none/level0.h
+@@ -50,8 +50,8 @@ ENDEXTERN
+ 
+ #else
+ 
+-ulong overflow;
+-ulong hiremainder;
++extern ulong overflow;
++extern ulong hiremainder;
+ 
+ INLINE long
+ addll(ulong x, ulong y)
