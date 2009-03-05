@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.in.orig	2008-12-12 20:56:28.000000000 +0000
++++ Makefile.in
+@@ -525,7 +525,6 @@ SUBDIRS = \
+ 	avahi-discover-standalone \
+ 	avahi-daemon \
+ 	avahi-sharp \
+-	initscript \
+ 	avahi-dnsconfd \
+ 	avahi-utils \
+ 	avahi-python \
