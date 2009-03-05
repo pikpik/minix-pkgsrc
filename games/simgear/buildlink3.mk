@@ -1,16 +1,17 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2007/07/12 19:56:14 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2008/03/14 14:49:53 drochner Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 SIMGEAR_BUILDLINK3_MK:=	${SIMGEAR_BUILDLINK3_MK}+
 
-.if !empty(BUILDLINK_DEPTH:M+)
+.if ${BUILDLINK_DEPTH} == "+"
 BUILDLINK_DEPENDS+=	simgear
 .endif
 
 BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nsimgear}
 BUILDLINK_PACKAGES+=	simgear
+BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}simgear
 
-.if !empty(SIMGEAR_BUILDLINK3_MK:M+)
+.if ${SIMGEAR_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.simgear+=	simgear>=1.0.0
 BUILDLINK_PKGSRCDIR.simgear?=	../../games/simgear
 BUILDLINK_DEPMETHOD.simgear?=	build
@@ -20,4 +21,4 @@ BUILDLINK_DEPMETHOD.simgear?=	build
 .include "../../games/plib/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 
-BUILDLINK_DEPTH:=     ${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
