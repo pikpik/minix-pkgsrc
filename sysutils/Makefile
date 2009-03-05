@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.458 2009/02/11 16:21:04 joerg Exp $
+# $NetBSD: Makefile,v 1.459 2009/02/26 08:00:56 jnemeth Exp $
 #
 
 COMMENT=	System utilities
@@ -99,6 +99,7 @@ SUBDIR+=	free
 SUBDIR+=	fs-kit
 SUBDIR+=	fsv
 SUBDIR+=	fsviewer
+SUBDIR+=	ftwin
 SUBDIR+=	gamin
 SUBDIR+=	gcdmaster
 SUBDIR+=	gcombust
