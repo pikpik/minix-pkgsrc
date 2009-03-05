@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/hebcal
+info/hebcal.info
+man/man1/hebcal.1
