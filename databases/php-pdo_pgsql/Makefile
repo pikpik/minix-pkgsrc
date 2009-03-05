@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/03/13 17:38:48 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:19 joerg Exp $
 
 PDO_DRIVER=		pgsql
 PDO_COMMENT=		PostgreSQL
@@ -13,3 +13,6 @@ CONFIGURE_ARGS+=	--with-${PKGMODNAME}=shared,${PGSQL_PREFIX}
 
 .include "../../mk/pgsql.buildlink3.mk"
 .include "../../databases/php-pdo/buildlink3.mk"
+
+.include "../../lang/php/ext.mk"
+.include "../../mk/bsd.pkg.mk"
