@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/12/01 13:17:56 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2008/02/28 11:58:48 rillig Exp $
 #
 
 DISTNAME=	Maude-2.3
@@ -11,13 +11,17 @@ MAINTAINER=	kristerw@NetBSD.org
 HOMEPAGE=	http://maude.cs.uiuc.edu/
 COMMENT=	System for equational and rewriting logic specification/programming
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=		no
+
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	flex bison
 AUTO_MKDIRS=		yes
 
 post-install:
-	cd ${WRKSRC}/src/Main && ${INSTALL_DATA} *.maude ${PREFIX}/share/maude
+	cd ${WRKSRC}/src/Main && ${INSTALL_DATA} *.maude \
+		${DESTDIR}${PREFIX}/share/maude
 
 .include "../../devel/buddy/buildlink3.mk"
 .include "../../devel/gmp/buildlink3.mk"
