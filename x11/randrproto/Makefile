@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2008/05/27 17:14:45 tnn Exp $
+# $NetBSD: Makefile,v 1.9 2008/07/23 05:04:55 bjs Exp $
 #
 
-DISTNAME=		randrproto-1.2.2
+DISTNAME=		randrproto-1.3.0
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=proto/}
 EXTRACT_SUFX=		.tar.bz2
