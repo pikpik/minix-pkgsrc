@@ -1,4 +1,4 @@
-# $NetBSD: fetch-list.mk,v 1.11 2009/02/10 18:55:54 joerg Exp $
+# $NetBSD: fetch-list.mk,v 1.12 2009/02/15 15:18:00 joerg Exp $
 
 ######################################################################
 ### fetch-list (PUBLIC)
@@ -59,7 +59,7 @@ fetch-list-recursive:
 ###
 .PHONY: fetch-list-one-pkg
 fetch-list-one-pkg:
-.if !empty(_ALLFILES)
+.if !empty(_ALLFILES) && empty(INTERACTIVE_STAGE:Mfetch)
 	@${ECHO}
 	@${ECHO} '#'
 	@location=`${PWD_CMD} | ${AWK} -F / '{ print $$(NF-1) "/" $$NF }'`; \
