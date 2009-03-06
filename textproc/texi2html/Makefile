@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.27 2006/11/05 17:06:43 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2007/07/30 18:58:26 wiz Exp $
 
-DISTNAME=	texi2html-1.78
+DISTNAME=	texi2html-1.82
 CATEGORIES=	textproc
 MASTER_SITES=	http://savannah.nongnu.org/download/texi2html/
 
