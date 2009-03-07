@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2008/03/07 11:24:16 obache Exp $
+# $NetBSD: Makefile,v 1.46 2009/02/08 12:51:04 asau Exp $
 
 DISTNAME=		icon.v943src
 PKGNAME=		icon-9.4.3
@@ -35,6 +35,9 @@ PTHREAD_OPTS+=		require native
 
 .elif ${OPSYS} == "FreeBSD" || ${OPSYS} == "DragonFly"
 NAME=	bsd
+
+.elif ${OPSYS} == "Darwin"
+NAME=	macintosh
 
 .elif ${OPSYS} == "Linux"
 NAME=	linux
