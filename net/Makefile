@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.767 2009/03/05 23:44:23 roy Exp $
+# $NetBSD: Makefile,v 1.768 2009/03/05 23:52:50 roy Exp $
 #
 
 COMMENT=	Networking tools
@@ -307,7 +307,6 @@ SUBDIR+=	p5-DNS-ZoneParse
 SUBDIR+=	p5-Data-Stream-Bulk
 SUBDIR+=	p5-Geo-IP
 SUBDIR+=	p5-Geo-IPfree
-SUBDIR+=	p5-INET6
 SUBDIR+=	p5-IO-Interface
 SUBDIR+=	p5-IO-Socket-INET6
 SUBDIR+=	p5-IO-Socket-Multicast
