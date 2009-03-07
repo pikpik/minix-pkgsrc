@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2007/05/09 02:41:33 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.70 2007/08/13 08:12:43 rillig Exp $
 #
 
 COMMENT=	CAD tools
@@ -38,7 +38,6 @@ SUBDIR+=	gtk1-wcalc
 SUBDIR+=	gtk2-wcalc
 SUBDIR+=	gtkwave
 SUBDIR+=	gwave
-SUBDIR+=	ipal-current
 SUBDIR+=	lc
 SUBDIR+=	libgeda
 SUBDIR+=	libwcalc
