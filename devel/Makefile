@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1124 2009/03/03 14:57:09 jmmv Exp $
+# $NetBSD: Makefile,v 1.1125 2009/03/05 22:01:34 ahoka Exp $
 #
 
 COMMENT=	Development utilities
@@ -525,7 +525,6 @@ SUBDIR+=	p5-Devel-Declare
 SUBDIR+=	p5-Devel-EvalContext
 SUBDIR+=	p5-Devel-Events
 SUBDIR+=	p5-Devel-Events-Objects
-SUBDIR+=	p5-Devel-Leak-Object
 SUBDIR+=	p5-Devel-Gladiator
 SUBDIR+=	p5-Devel-GlobalDestruction
 SUBDIR+=	p5-Devel-Leak-Object
@@ -920,6 +919,7 @@ SUBDIR+=	py-newt
 SUBDIR+=	py-pexpect
 SUBDIR+=	py-pqueue
 SUBDIR+=	py-pytemplate
+SUBDIR+=	py-quixote
 SUBDIR+=	py-readline
 SUBDIR+=	py-setuptools
 SUBDIR+=	py-subversion
