@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/02/07 18:24:06 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/03/07 03:20:48 wiz Exp $
 
 DISTNAME=		avahi-0.6.24
 PKGREVISION=		1
@@ -65,7 +65,7 @@ CONF_FILES+=		${PREFIX}/share/examples/avahi/avahi-dbus.conf \
 
 CONFIGURE_ARGS+=	--with-avahi-user=${AVAHI_USER}
 CONFIGURE_ARGS+=	--with-avahi-group=${AVAHI_GROUP}
-CONFIGURE_ARGS+=	--with-avahi_priv_access_group=wheel
+CONFIGURE_ARGS+=	--with-avahi_priv_access_group=${REAL_ROOT_GROUP}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE}
 CONFIGURE_ARGS+=	--disable-qt3
