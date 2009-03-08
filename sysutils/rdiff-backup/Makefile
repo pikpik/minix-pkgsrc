@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.33 2009/02/18 09:40:10 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2009/02/18 12:24:40 wiz Exp $
 
-DISTNAME=	rdiff-backup-1.2.6
-PKGREVISION=	1
+DISTNAME=	rdiff-backup-1.2.7
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://savannah.nongnu.org/download/rdiff-backup/
 
