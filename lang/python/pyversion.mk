@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.64 2009/02/09 22:56:24 joerg Exp $
+# $NetBSD: pyversion.mk,v 1.65 2009/02/18 05:50:31 obache Exp $
 
 # This file determines which Python version is used as a dependency for
 # a package.
@@ -52,6 +52,16 @@
 
 .if !defined(PYTHON_PYVERSION_MK)
 PYTHON_PYVERSION_MK=	defined
+
+# derive a python version from the package name if possible
+# optionally handled quoted package names
+.if defined(PKGNAME_REQD) && !empty(PKGNAME_REQD:Mpy[0-9][0-9]-*) || \
+    defined(PKGNAME_REQD) && !empty(PKGNAME_REQD:M*-py[0-9][0-9]-*)
+PYTHON_VERSION_REQD?= ${PKGNAME_REQD:C/(^.*-|^)py([0-9][0-9])-.*/\2/}
+.elif defined(PKGNAME_OLD) && !empty(PKGNAME_OLD:Mpy[0-9][0-9]-*) || \
+      defined(PKGNAME_OLD) && !empty(PKGNAME_OLD:M*-py[0-9][0-9]-*)
+PYTHON_VERSION_REQD?= ${PKGNAME_OLD:C/(^.*-|^)py([0-9][0-9])-.*/\2/}
+.endif
 
 .include "../../mk/bsd.prefs.mk"
 
