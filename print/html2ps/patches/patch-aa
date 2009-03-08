@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.3 2005/12/04 17:02:54 kim Exp $
+$NetBSD: patch-aa,v 1.4 2006/05/26 18:19:15 wiz Exp $
 
 --- install.orig	2005-03-03 12:25:29.000000000 +0000
 +++ install
@@ -74,7 +74,7 @@ $NetBSD: patch-aa,v 1.3 2005/12/04 17:02:54 kim Exp $
      $hfile = "";
      ($texdir = $dir{'TeX'}) =~ s|/bin$||;
 -    SW:for("texmf/tex/generic/hyphen","macros","inputs","lib/macros",
-+    SW:for("share/texmf-dist/tex/generic/hyphen","macros","inputs","lib/macros",
++    SW:for("share/texmf/tex/generic/hyphen","macros","inputs","lib/macros",
          "lib/inputs","lib/tex/macros","lib/tex/inputs") {
          if(-f "$texdir/$_/ushyph1.tex") {
              $hyph = "$texdir/$_";
