@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/08 19:50:30 seb Exp $
 #
 
 DISTNAME=	Net-LDAP-Batch-0.02
@@ -14,6 +14,7 @@ DEPENDS+=	p5-Class-Accessor-[0-9]*:../../devel/p5-Class-Accessor
 DEPENDS+=	p5-perl-ldap-[0-9]*:../../databases/p5-perl-LDAP
 BUILD_DEPENDS+=	p5-Net-LDAP-Server-Test>=0.40:../../devel/p5-Net-LDAP-Server-Test
 
+USE_LANGUAGES=		# empty
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Net/LDAP/Batch/.packlist
