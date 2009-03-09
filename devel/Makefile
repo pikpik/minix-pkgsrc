@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1128 2009/03/08 05:59:33 minskim Exp $
+# $NetBSD: Makefile,v 1.1129 2009/03/08 19:51:01 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -1013,6 +1013,7 @@ SUBDIR+=	rudiments
 SUBDIR+=	rvm
 SUBDIR+=	rx
 SUBDIR+=	sablecc
+SUBDIR+=	sapnwrfcsdk
 SUBDIR+=	scmcvs
 SUBDIR+=	scmgit
 SUBDIR+=	scmgit-base
