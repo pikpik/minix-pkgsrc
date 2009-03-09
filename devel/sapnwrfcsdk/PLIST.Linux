@@ -1,0 +1,12 @@
+@comment $NetBSD$
+bin/rfcexec
+bin/startrfc
+lib/libsapucum.so
+lib/libicui18n.so.34
+lib/libicui18n.so
+lib/libicudecnumber.so
+lib/libicuuc.so.34
+lib/libicuuc.so
+lib/libsapnwrfc.so
+lib/libicudata.so.34
+lib/libicudata.so
