@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/23 13:42:55 obache Exp $
 
 .include		"../../inputmethod/uim/Makefile.common"
 PKGNAME=		uim-qt4-immodule-${UIM_VERSION}
@@ -8,7 +8,7 @@ COMMENT=		Qt4 immodule for inputmethod/uim
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake intltool pkg-config
+USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=          YES
 CONFIGURE_ARGS+=	--with-libgcroots=installed
