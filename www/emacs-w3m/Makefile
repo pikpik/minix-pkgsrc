@@ -48,7 +48,7 @@ ICONDIR=	${PREFIX}/${ETCDIR}
 
 INSTALL_TARGET.emacs=	install install-icons
 INSTALL_TARGET.xemacs=	install-package
-ETCDIR.emacs=		share/emacs/${_EMACS_VERSION_NOREV}/etc/w3m
+ETCDIR.emacs=		share/emacs/${_EMACS_VERSION_MAJOR}/etc/w3m
 ETCDIR.xemacs=		lib/xemacs/site-packages/etc/w3m
 
 post-install:
