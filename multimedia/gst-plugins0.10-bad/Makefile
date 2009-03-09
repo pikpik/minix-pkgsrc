@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/06/20 01:09:27 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/10/15 12:18:37 obache Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -16,5 +16,7 @@ PLIST.x86=	yes
 .endif
 
 # bzip2 is likely present anyway, make it default
+.include "../../multimedia/libdvdnav/buildlink3.mk"
+.include "../../multimedia/libdvdread/buildlink3.mk"
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
