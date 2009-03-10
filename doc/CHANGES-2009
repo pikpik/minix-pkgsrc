@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2009,v 1.956 2009/03/09 20:35:03 rhaen Exp $
+$NetBSD: CHANGES-2009,v 1.957 2009/03/10 00:39:58 snj Exp $
 
 Changes to the packages collection and infrastructure in 2009:
 
@@ -1289,3 +1289,4 @@ Changes to the packages collection and infrastructure in 2009:
 	Updated www/p5-CGI-Application to 4.21 [rhaen 2009-03-09]
 	Updated www/p5-Catalyst-Manual to 5.7018 [rhaen 2009-03-09]
 	Added devel/py-xdg version 0.17 [snj 2009-03-10]
+	Updated graphics/pstoedit to 3.45 [dmcmahill 2009-03-09]
