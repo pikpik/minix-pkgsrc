@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/12/19 18:23:17 he Exp $
+# $NetBSD: Makefile,v 1.5 2009/02/10 19:46:51 he Exp $
 #
 
-DISTNAME=	Readonly-XS-1.04
+DISTNAME=	Readonly-XS-1.05
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Readonly/}
 
