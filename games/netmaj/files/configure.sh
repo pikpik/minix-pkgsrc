@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD$
+# $NetBSD: configure.sh,v 1.1 2008/02/29 20:53:02 jlam Exp $
 #
 # This script needs the following variables passed through the environment:
 #
@@ -21,6 +21,8 @@ fi
 # OS-specific stuff
 case ${OPSYS} in
 *BSD)
+	;;
+DragonFly)
 	;;
 Linux)
 	cppflags="$cppflags -DDEF_OPTARG"
