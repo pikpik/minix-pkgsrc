@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/01/23 00:54:18 rhaen Exp $
+# $NetBSD: Makefile,v 1.23 2008/04/07 13:22:35 he Exp $
 #
 
 COMMENT=	Software for geographical-related uses
@@ -22,6 +22,7 @@ SUBDIR+=	postgresql81-postgis
 SUBDIR+=	proj-swig
 SUBDIR+=	py-proj
 SUBDIR+=	shapelib
+SUBDIR+=	viking
 SUBDIR+=	vis5d+
 SUBDIR+=	xrmap
 SUBDIR+=	xrmap-anthems
