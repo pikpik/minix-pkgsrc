@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2008/10/19 19:17:59 he Exp $
+# $NetBSD: Makefile,v 1.36 2008/11/17 19:54:26 he Exp $
 #
 
 DISTNAME=	SDL_Perl-2.1.2
@@ -17,6 +17,11 @@ COMMENT=	Perl module for SDL
 PERL5_MODULE_TYPE=	Module::Build
 
 PERL5_PACKLIST=		auto/SDL/.packlist
+
+pre-configure:
+	${CAT} ${WRKSRC}/make/lib/SDL/Build/Netbsd.pm | \
+		${SED} 's|Netbsd|Dragonfly|g' > \
+		${WRKSRC}/make/lib/SDL/Build/Dragonfly.pm
 
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"
