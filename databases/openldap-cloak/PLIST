@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/openldap/cloak.a
+lib/openldap/cloak.la
+man/man5/slapo-cloak.5
+@dirrm lib/openldap
