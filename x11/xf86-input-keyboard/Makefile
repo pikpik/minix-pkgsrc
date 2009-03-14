@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2008/10/26 21:11:29 bjs Exp $
+# $NetBSD: Makefile,v 1.8 2009/02/25 15:52:45 wiz Exp $
 
 DISTNAME=	xf86-input-keyboard-1.3.2
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=driver/}
 EXTRACT_SUFX=	.tar.bz2
