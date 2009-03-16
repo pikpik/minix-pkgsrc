@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.in.orig	2009-02-16 17:29:28.000000000 -0500
++++ configure.in
+@@ -306,7 +306,7 @@ if test "$APACHE_HTTPD" != "no" -a -n "$
+     fi
+ else
+     have_apache=0
+-    if test "$APACHE_HTTPD" == "no" -o -z "$APACHE_MODULE_DIR"; then
++    if test "$APACHE_HTTPD" = "no" -o -z "$APACHE_MODULE_DIR"; then
+         MISSING_REGRESSION_TEST_PACKAGES="$MISSING_REGRESSION_TEST_PACKAGES apache"
+     else
+         MISSING_REGRESSION_TEST_PACKAGES="$MISSING_REGRESSION_TEST_PACKAGES mod_ssl"
