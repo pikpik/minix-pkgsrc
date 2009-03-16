@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2009/02/09 22:56:25 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2009/02/21 17:40:00 wiz Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -16,5 +16,6 @@ BUILDLINK_API_DEPENDS.gst-plugins0.10-base+=	gst-plugins0.10-base>=0.10.7
 
 .include "../../multimedia/gst-plugins0.10-base/buildlink3.mk"
 .include "../../multimedia/gst-plugins0.10-good/buildlink3.mk"
+DEPENDS+=	gst-plugins0.10-resindvd>=0.10.10:../../multimedia/gst-plugins0.10-resindvd
 .include "../../multimedia/gstreamer0.10/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
