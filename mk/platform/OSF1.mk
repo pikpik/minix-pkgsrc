@@ -69,5 +69,8 @@ SERIAL_DEVICES?=	/dev/tty00 \
 
 _INCOMPAT_ICONV=   OSF1-*-*
 
+# sysutils/fam is not usable on OSF1.
+FAM_DEFAULT?=		gamin
+
 _STRIPFLAG_CC?=		${_INSTALL_UNSTRIPPED:D:U}	# cc(1) option to strip
 _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U}	# install(1) option to strip
