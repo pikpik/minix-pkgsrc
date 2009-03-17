@@ -1,4 +1,4 @@
-# $NetBSD: plist.mk,v 1.37 2008/04/08 20:52:15 jlam Exp $
+# $NetBSD: plist.mk,v 1.38 2008/10/30 18:48:13 joerg Exp $
 #
 # This Makefile fragment handles the creation of PLISTs for use by
 # pkg_create(8).
@@ -264,7 +264,7 @@ ${PLIST}:
 
 # for list of keywords see pkg_create(1)
 ${_PLIST_NOKEYWORDS}: ${PLIST}
-	${_PKG_SILENT}${_PKG_DEBUG} ${AWK} < ${PLIST} > ${.TARGET} '	\
+	${RUN} ${AWK} < ${PLIST} > ${.TARGET} '	\
 		BEGIN {							\
 			FILTER="@(";					\
 			FILTER=FILTER"cd|cwd|src|exec|unexec|mode|option";\
