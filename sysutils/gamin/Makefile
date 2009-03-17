@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2008/11/24 21:48:39 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2009/03/15 21:27:47 jmcneill Exp $
 
 .include "../../sysutils/gamin/Makefile.common"
 
-PKGREVISION=		1
+PKGREVISION=		2
 CONFIGURE_ARGS+=	--enable-server
 
 do-install:
