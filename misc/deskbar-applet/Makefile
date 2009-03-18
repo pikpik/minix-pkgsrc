@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2009/01/14 10:31:37 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2009/02/11 14:23:32 joerg Exp $
 #
 
-DISTNAME=	deskbar-applet-2.24.3
+DISTNAME=	deskbar-applet-2.26.0
 CATEGORIES=	misc gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/deskbar-applet/2.24/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/deskbar-applet/2.26/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	drochner@NetBSD.org
