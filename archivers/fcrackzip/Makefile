@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:13 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/08/24 10:21:33 wiz Exp $
 
 DISTNAME=	fcrackzip-0.3
 MASTER_SITES=	http://www.goof.com/pcg/marc/data/
 CATEGORIES=	archivers
 
-MAINTAINER=	pkgsrc-users@pkgsrc.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.goof.com/pcg/marc/fcrackzip.html
 COMMENT=	Zip password cracker
 
