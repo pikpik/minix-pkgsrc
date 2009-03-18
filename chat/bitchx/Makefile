@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2008/07/06 05:16:50 tonnerre Exp $
+# $NetBSD: Makefile,v 1.45 2008/07/13 16:07:13 dholland Exp $
 
 DISTNAME=	ircii-pana-1.1-final
 PKGNAME=	bitchx-1.1
@@ -6,7 +6,7 @@ PKGREVISION=	3
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bitchx/}
 
-MAINTAINER=	jmcneill@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.bitchx.org/
 COMMENT=	IRC client based on ircII
 
