@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2009/01/10 21:04:22 jmcneill Exp $
+# $NetBSD: Makefile,v 1.4 2009/01/14 11:27:34 obache Exp $
 
 DISTNAME=	libv4l-0.4.3
 PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://people.atrpms.net/~hdegoede/
 
-MAINTAINER=	jmcneill@NetBSD.org
+MAINTAINER=	tech-multimedia@NetBSD.org
 HOMEPAGE=	http://people.atrpms.net/~hdegoede/
 COMMENT=	Video4Linux userspace library
 
