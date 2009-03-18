@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/11/22 17:54:42 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2008/11/24 01:16:18 jmcneill Exp $
 #
 
 DISTNAME=		gnome-mount-0.8
@@ -25,6 +25,7 @@ post-extract:
 .endif
 
 .include "../../devel/GConf/schemas.mk"
+.include "../../devel/libglade/buildlink3.mk"
 .include "../../security/gnome-keyring/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
 .include "../../sysutils/hal/buildlink3.mk"
