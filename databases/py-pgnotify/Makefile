@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/04/25 20:39:07 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/20 01:09:11 joerg Exp $
 #
 
 DISTNAME=	pgnotify-0.1
@@ -8,7 +8,7 @@ CATEGORIES=	databases python
 MASTER_SITES=	http://sandbox.rulemaker.net/ngps/Dist/
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	darcy@NetBSD.org
+OWNER=		darcy@NetBSD.org
 HOMEPAGE=	http://sandbox.rulemaker.net/ngps/pgnotify
 COMMENT=	Python interface to PostgreSQL LISTEN/NOTIFY
 
