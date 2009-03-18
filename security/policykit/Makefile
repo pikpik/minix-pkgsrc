@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/03/05 14:17:46 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/03/12 22:25:30 abs Exp $
 #
 
 POLICYKIT_VER=		0.9
@@ -8,7 +8,7 @@ PKGREVISION=		4
 CATEGORIES=		security
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 
-MAINTAINER=		jmcneill@NetBSD.org
+MAINTAINER=		netbsd-desktop@NetBSD.org
 HOMEPAGE=		http://hal.freedesktop.org/
 COMMENT=		Framework for managing admin policies and privileges
 
