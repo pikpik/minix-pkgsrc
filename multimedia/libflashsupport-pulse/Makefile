@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/12/19 19:49:22 jmcneill Exp $
 
 DISTNAME=	libflashsupport-pulse-20081219
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.invisible.ca/~jmcneill/netbsd/libflashsupport/
 
-MAINTAINER=	jmcneill@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pulseaudio.org/wiki/FlashPlayer9Solution
 COMMENT=	PulseAudio support for Adobe Flash
 

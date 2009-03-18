@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/11/26 07:47:56 hasso Exp $
+# $NetBSD: Makefile,v 1.3 2009/01/04 23:10:06 dbj Exp $
 #
 
 DISTNAME=		libvolume_id-0.81.0
@@ -7,7 +7,7 @@ CATEGORIES=		sysutils
 MASTER_SITES=		http://www.marcuscom.com/downloads/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		jmcneill@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Library to provide file system type information
 
