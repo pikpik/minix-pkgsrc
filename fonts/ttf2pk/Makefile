@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/03/03 20:17:12 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2009/01/14 06:16:19 minskim Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -9,7 +9,7 @@ PKGNAME=		ttf2pk-${FT_VERS}
 PKGREVISION=		1
 CATEGORIES=		print
 
-MAINTAINER=		bernhard@SDG.de,pkgsrc-users@NetBSD.org
+MAINTAINER=		bernhard@SDG.de
 HOMEPAGE=		http://www.freetype.org/
 COMMENT=		TrueType to TeX PK font converter
 
