@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/11/21 00:21:31 jmcneill Exp $
 #
 
 DISTNAME=		twitux-0.62
@@ -6,7 +6,7 @@ CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=twitux/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		jmcneill@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://live.gnome.org/DanielMorales/Twitux
 COMMENT=		GTK+ Twitter client
 
