@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2008/11/14 18:56:30 chuck Exp $
+# $NetBSD: Makefile,v 1.45 2009/01/26 15:44:21 drochner Exp $
 
 DISTNAME=	gphoto2-2.4.4
 CATEGORIES=	graphics
@@ -33,4 +33,5 @@ CFLAGS.Darwin+= -D_DARWIN_C_SOURCE
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../graphics/aalib/buildlink3.mk"
+.include "../../graphics/jpeg/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
