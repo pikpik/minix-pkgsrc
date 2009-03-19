@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2008/07/14 12:56:08 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2008/08/17 07:59:13 bjs Exp $
 #
 
-DISTNAME=		mpfr-2.3.1
+DISTNAME=		mpfr-2.4.1
 CATEGORIES=		math
 MASTER_SITES=		http://www.mpfr.org/mpfr-current/
 
+DIST_SUBDIR=		${DISTNAME}
 PATCHFILES=		patches
 PATCH_SITES=		${MASTER_SITES}
 PATCH_DIST_STRIP=	-p1
