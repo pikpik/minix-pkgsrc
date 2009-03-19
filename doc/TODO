@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.7977 2009/03/18 13:09:02 jmcneill Exp $
+$NetBSD: TODO,v 1.7978 2009/03/18 18:18:43 snj Exp $
 
 Suggested new packages
 ======================
@@ -1272,7 +1272,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o sysinfo-4.2.2
 	o systrace-1.6e
 	o tacacs-4.0.4.14
-	o taskjuggler-2.4.1
 	o tcl-8.5.5
 	o tcl83-8.3.5
 	o tcpdpriv-0.9
