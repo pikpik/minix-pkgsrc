@@ -1,4 +1,4 @@
-# $NetBSD: bsd.builtin.mk,v 1.8 2006/04/10 12:25:43 tron Exp $
+# $NetBSD: bsd.builtin.mk,v 1.9 2008/01/23 17:35:20 tnn Exp $
 #
 # Copyright (c) 2004-2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -35,8 +35,8 @@
 # POSSIBILITY OF SUCH DAMAGE.
 
 # Include this file to set the value of USE_BUILTIN.<pkg> for each
-# package listed in BUILDLINK_PACKAGES.  Note that this file may
-# indirectly add additional values to BUILDLINK_PACKAGES.
+# package listed in BUILDLINK_TREE.  Note that this file may
+# indirectly add additional values to BUILDLINK_TREE.
 #
 # For each package which may duplicate built-in software on the system,
 # a builtin.mk file should be created.  The only requirements of a

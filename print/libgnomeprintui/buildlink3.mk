@@ -1,21 +1,13 @@
-# $NetBSD: buildlink3.mk,v 1.14 2007/09/21 13:04:15 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.15 2008/01/18 05:08:55 tnn Exp $
 
-BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
-LIBGNOMEPRINTUI_BUILDLINK3_MK:=	${LIBGNOMEPRINTUI_BUILDLINK3_MK}+
+BUILDLINK_TREE+=	libgnomeprintui
 
-.if !empty(BUILDLINK_DEPTH:M+)
-BUILDLINK_DEPENDS+=	libgnomeprintui
-.endif
+.if !defined(LIBGNOMEPRINTUI_BUILDLINK3_MK)
+LIBGNOMEPRINTUI_BUILDLINK3_MK:=
 
-BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nlibgnomeprintui}
-BUILDLINK_PACKAGES+=	libgnomeprintui
-BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}libgnomeprintui
-
-.if !empty(LIBGNOMEPRINTUI_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.libgnomeprintui+=	libgnomeprintui>=2.8.0
 BUILDLINK_ABI_DEPENDS.libgnomeprintui+=	libgnomeprintui>=2.18.1nb2
 BUILDLINK_PKGSRCDIR.libgnomeprintui?=	../../print/libgnomeprintui
-.endif	# LIBGNOMEPRINTUI_BUILDLINK3_MK
 
 .include "../../devel/GConf/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
@@ -27,5 +19,6 @@ BUILDLINK_PKGSRCDIR.libgnomeprintui?=	../../print/libgnomeprintui
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../print/libgnomeprint/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
+.endif # LIBGNOMEPRINTUI_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_TREE+=	-libgnomeprintui

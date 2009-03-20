@@ -1,21 +1,13 @@
-# $NetBSD: buildlink3.mk,v 1.13 2006/07/08 23:10:51 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2007/01/31 01:38:48 joerg Exp $
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
-IMLIB_BUILDLINK3_MK:=	${IMLIB_BUILDLINK3_MK}+
+BUILDLINK_TREE+=	imlib
 
-.if !empty(BUILDLINK_DEPTH:M+)
-BUILDLINK_DEPENDS+=	imlib
-.endif
+.if !defined(IMLIB_BUILDLINK3_MK)
+IMLIB_BUILDLINK3_MK:=
 
-BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Nimlib}
-BUILDLINK_PACKAGES+=	imlib
-BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}imlib
-
-.if !empty(IMLIB_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.imlib+=	imlib>=1.9.14nb5
 BUILDLINK_ABI_DEPENDS.imlib+=	imlib>=1.9.15nb4
 BUILDLINK_PKGSRCDIR.imlib?=	../../graphics/imlib
-.endif	# IMLIB_BUILDLINK3_MK
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
@@ -25,5 +17,6 @@ BUILDLINK_PKGSRCDIR.imlib?=	../../graphics/imlib
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
+.endif # IMLIB_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_TREE+=	-imlib

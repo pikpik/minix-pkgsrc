@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2008/03/15 13:36:40 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2008/11/10 17:21:06 wiz Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
@@ -6,22 +6,14 @@
 .include "../../mk/x11.buildlink3.mk"
 .else
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
-LIBXAW_BUILDLINK3_MK:=	${LIBXAW_BUILDLINK3_MK}+
+BUILDLINK_TREE+=	libXaw
 
-.if ${BUILDLINK_DEPTH} == "+"
-BUILDLINK_DEPENDS+=	libXaw
-.endif
+.if !defined(LIBXAW_BUILDLINK3_MK)
+LIBXAW_BUILDLINK3_MK:=
 
-BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:NlibXaw}
-BUILDLINK_PACKAGES+=	libXaw
-BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}libXaw
-
-.if ${LIBXAW_BUILDLINK3_MK} == "+"
 BUILDLINK_API_DEPENDS.libXaw+=	libXaw>=1.0.5
 BUILDLINK_PKGSRCDIR.libXaw?=	../../x11/libXaw
 BUILDLINK_TRANSFORM+=		l:Xaw:Xaw7
-.endif	# LIBXAW_BUILDLINK3_MK
 
 .include "../../x11/libICE/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
@@ -32,7 +24,8 @@ BUILDLINK_TRANSFORM+=		l:Xaw:Xaw7
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"
+.endif # LIBXAW_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_TREE+=	-libXaw
 
 .endif

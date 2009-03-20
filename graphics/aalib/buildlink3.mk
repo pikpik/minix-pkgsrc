@@ -1,21 +1,13 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/11/06 11:26:30 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2007/05/30 08:54:30 rillig Exp $
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
-AALIB_BUILDLINK3_MK:=	${AALIB_BUILDLINK3_MK}+
+BUILDLINK_TREE+=	aalib
 
-.if !empty(BUILDLINK_DEPTH:M+)
-BUILDLINK_DEPENDS+=	aalib
-.endif
+.if !defined(AALIB_BUILDLINK3_MK)
+AALIB_BUILDLINK3_MK:=
 
-BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Naalib}
-BUILDLINK_PACKAGES+=	aalib
-BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}aalib
-
-.if !empty(AALIB_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.aalib+=	aalib>=1.4.0.4
 BUILDLINK_ABI_DEPENDS.aalib+=	aalib>=1.4.0.5nb2
 BUILDLINK_PKGSRCDIR.aalib?=	../../graphics/aalib
-.endif	# AALIB_BUILDLINK3_MK
 
 pkgbase := aalib
 .include "../../mk/pkg-build-options.mk"
@@ -31,5 +23,6 @@ pkgbase := aalib
 .if !empty(PKG_BUILD_OPTIONS.aalib:Mx11)
 .  include "../../x11/libX11/buildlink3.mk"
 .endif
+.endif # AALIB_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_TREE+=	-aalib

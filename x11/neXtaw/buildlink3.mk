@@ -1,17 +1,10 @@
-# $NetBSD: buildlink3.mk,v 1.12 2007/12/24 18:57:49 bjs Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2008/01/04 01:25:51 rillig Exp $
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
-NEXTAW_BUILDLINK3_MK:=	${NEXTAW_BUILDLINK3_MK}+
+BUILDLINK_TREE+=	neXtaw
 
-.if !empty(BUILDLINK_DEPTH:M+)
-BUILDLINK_DEPENDS+=	neXtaw
-.endif
+.if !defined(NEXTAW_BUILDLINK3_MK)
+NEXTAW_BUILDLINK3_MK:=
 
-BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:NneXtaw}
-BUILDLINK_PACKAGES+=	neXtaw
-BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}neXtaw
-
-.if !empty(NEXTAW_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.neXtaw+=	neXtaw>=0.15.1
 BUILDLINK_ABI_DEPENDS.neXtaw+=	neXtaw>=0.15.1nb2
 BUILDLINK_PKGSRCDIR.neXtaw?=	../../x11/neXtaw
@@ -32,10 +25,9 @@ LIBXAW?=	-L${BUILDLINK_PREFIX.neXtaw}/lib			\
 		${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.neXtaw}/lib	\
 		-lneXtaw
 
-.endif	# NEXTAW_BUILDLINK3_MK
-
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.endif # NEXTAW_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_TREE+=	-neXtaw

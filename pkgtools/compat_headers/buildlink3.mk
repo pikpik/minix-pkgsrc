@@ -1,20 +1,13 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/05/24 03:35:38 tnn Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2008/05/25 17:38:37 tnn Exp $
 
-BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
-COMPAT_HEADERS_BUILDLINK3_MK:=	${COMPAT_HEADERS_BUILDLINK3_MK}+
+BUILDLINK_TREE+=	compat_headers
 
-.if !empty(BUILDLINK_DEPTH:M+)
-BUILDLINK_DEPENDS+=	compat_headers
-.endif
+.if !defined(COMPAT_HEADERS_BUILDLINK3_MK)
+COMPAT_HEADERS_BUILDLINK3_MK:=
 
-BUILDLINK_PACKAGES:=	${BUILDLINK_PACKAGES:Ncompat_headers}
-BUILDLINK_PACKAGES+=	compat_headers
-BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}compat_headers
-
-.if !empty(COMPAT_HEADERS_BUILDLINK3_MK:M+)
 BUILDLINK_API_DEPENDS.compat_headers+=	compat_headers>=0.2
 BUILDLINK_PKGSRCDIR.compat_headers?=	../../pkgtools/compat_headers
 BUILDLINK_DEPMETHOD.compat_headers?=	build
-.endif	# COMPAT_HEADERS_BUILDLINK3_MK
+.endif # COMPAT_HEADERS_BUILDLINK3_MK
 
-BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH:S/+$//}
+BUILDLINK_TREE+=	-compat_headers
