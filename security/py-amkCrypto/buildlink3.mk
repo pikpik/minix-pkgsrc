@@ -1,9 +1,7 @@
-# $NetBSD: buildlink3.mk,v 1.2 2006/07/08 22:39:38 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2006/07/08 23:11:08 jlam Exp $
 
 BUILDLINK_DEPTH:=		${BUILDLINK_DEPTH}+
 PY24_AMKCRYPTO_BUILDLINK3_MK:=	${PY24_AMKCRYPTO_BUILDLINK3_MK}+
-
-.include "../../lang/python/pyversion.mk"
 
 .if ${BUILDLINK_DEPTH} == "+"
 BUILDLINK_DEPENDS+=	py-amkCrypto
@@ -14,6 +12,8 @@ BUILDLINK_PACKAGES+=	py-amkCrypto
 BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}py-amkCrypto
 
 .if ${PY24_AMKCRYPTO_BUILDLINK3_MK} == "+"
+.include "../../lang/python/pyversion.mk"
+
 BUILDLINK_API_DEPENDS.py-amkCrypto+=	${PYPKGPREFIX}-amkCrypto>=2.0.1nb1
 BUILDLINK_PKGSRCDIR.py-amkCrypto?=	../../security/py-amkCrypto
 .endif	# PY24_AMKCRYPTO_BUILDLINK3_MK

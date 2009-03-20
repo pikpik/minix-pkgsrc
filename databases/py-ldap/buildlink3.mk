@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/07/08 22:39:05 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2006/07/08 23:10:40 jlam Exp $
 
 BUILDLINK_DEPTH:=	${BUILDLINK_DEPTH}+
 PY_LDAP_BUILDLINK3_MK:=	${PY_LDAP_BUILDLINK3_MK}+
@@ -13,6 +13,7 @@ BUILDLINK_ORDER:=	${BUILDLINK_ORDER} ${BUILDLINK_DEPTH}pyldap
 
 .if !empty(PY_LDAP_BUILDLINK3_MK:M+)
 .include "../../lang/python/pyversion.mk"
+
 BUILDLINK_API_DEPENDS.pyldap+=	${PYPKGPREFIX}-ldap>=2.2.0
 BUILDLINK_ABI_DEPENDS.pyldap+=	${PYPKGPREFIX}-ldap>=2.2.0
 BUILDLINK_PKGSRCDIR.pyldap?=	../../databases/py-ldap
