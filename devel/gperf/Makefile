@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/04/04 15:29:51 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2009/02/27 20:29:20 wiz Exp $
 
 DISTNAME=	gperf-3.0.4
 CATEGORIES=	devel
@@ -14,5 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
+MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.pkg.mk"
