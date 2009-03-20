@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/poly
+bin/polyimport
+lib/libpolymain.la
+lib/libpolyml.la
+man/man1/poly.1
+man/man1/polyimport.1
