@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/13 13:28:10 obache Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/05 04:26:31 obache Exp $
 
 DISTNAME=	Judy-1.0.4
 PKGNAME=	libjudy-1.0.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=judy/}
 
-MAINTAINER=	cheusov@tut.by
+MAINTAINER=	vle@gmx.net
 HOMEPAGE=	http://judy.sourceforge.net/
 COMMENT=	High-performance sparse dynamic array library
 
