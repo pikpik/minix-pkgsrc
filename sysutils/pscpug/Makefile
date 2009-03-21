@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2007/02/08 15:54:15 tv Exp $
-#
+# $NetBSD: Makefile,v 1.3 2008/06/12 02:14:46 joerg Exp $
 
-DISTNAME=		pscpug032
-PKGNAME=		pscpug-0.3.2
+DISTNAME=		pscpug035
+PKGNAME=		pscpug-0.3.5
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.diablonet.net/~mercadal/projects/pscpug/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		bartosz@atom.eu.org
+MAINTAINER=		bartosz.kuzma@gmail.com
 HOMEPAGE=		http://www.diablonet.net/~mercadal/projects/pscpug/
 COMMENT=		Graph a given process's CPU usage
 
