@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.23 2006/07/04 20:05:22 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2006/07/06 17:04:42 rillig Exp $
 
 DISTNAME=		cross-${TARGET_ARCH}-${DISTVERSION}
 DISTVERSION=		3.3.6
 CATEGORIES=		cross lang
 MASTER_SITES=		http://chiharu.hauN.org/peace/dist/
 
-MAINTAINER=		peace-sacrifice@hauN.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://chiharu.hauN.org/peace/
 COMMENT=		Cross-compile environment for PEACE/i386
 
