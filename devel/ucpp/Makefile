@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2008/04/07 18:18:26 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/12/08 11:03:48 obache Exp $
 #
 
 DISTNAME=	ucpp-1.3
 CATEGORIES=	devel
-#MASTER_SITES=	http://ucpp.googlecode.com/files/
+MASTER_SITES=	http://ucpp.googlecode.com/files/
+EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	asmodai@in-nomine.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/ucpp/
 COMMENT=	C preprocessor and lexer
 
