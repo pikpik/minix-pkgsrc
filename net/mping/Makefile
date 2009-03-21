@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2007/01/03 15:52:42 tv Exp $
+# $NetBSD: Makefile,v 1.3 2009/02/16 13:17:13 joerg Exp $
 
 DISTNAME=	mping-2.01
 CATEGORIES=	net
 MASTER_SITES=	http://mping.uninett.no/
 
-MAINTAINER=	miwi@FreeBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mping.uninett.no/
 COMMENT=	Mping network statistics collector
 
