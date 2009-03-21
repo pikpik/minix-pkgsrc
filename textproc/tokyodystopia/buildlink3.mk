@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2008/12/15 11:18:41 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2009/03/20 19:25:33 joerg Exp $
 
 BUILDLINK_TREE+=	tokyodystopia
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	tokyodystopia
 TOKYODYSTOPIA_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.tokyodystopia+=	tokyodystopia>=0.9.5
-BUILDLINK_ABI_DEPENDS.tokyodystopia+=	tokyodystopia>=0.9.8nb2
+BUILDLINK_ABI_DEPENDS.tokyodystopia+=	tokyodystopia>=0.9.9nb1
 BUILDLINK_PKGSRCDIR.tokyodystopia?=	../../textproc/tokyodystopia
 
 .include "../../databases/tokyocabinet/buildlink3.mk"
