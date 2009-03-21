@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/12/28 12:12:58 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/13 17:38:48 joerg Exp $
 
 DISTNAME=	mod_auth_pgsql-0.9.12
 PKGNAME=	ap13-auth-pgsql-0.9.12
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	www databases
 MASTER_SITES=	http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/
 
-MAINTAINER=	waddell@caravan.com
+MAINTAINER=	waddell@caravan-epub.com
 HOMEPAGE=	http://www.giuseppetanzilli.it/mod_auth_pgsql/
 COMMENT=	Apache module for user authentication/logging against a PostgreSQL DB
 
