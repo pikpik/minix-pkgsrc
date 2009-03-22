@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2009/02/09 22:56:27 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/03/18 03:14:11 snj Exp $
 
-DISTNAME=	midori-0.1.4
+DISTNAME=	midori-0.1.5
 CATEGORIES=	www
 MASTER_SITES=	http://goodies.xfce.org/releases/midori/
 
@@ -49,6 +49,7 @@ pre-configure:
 	${MV} ${WRKSRC}/midori/marshal.list ${WRKSRC}/midori/marshallocal.list
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/libidn/buildlink3.mk"
 .include "../../devel/libsexy/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../lang/python/application.mk"
