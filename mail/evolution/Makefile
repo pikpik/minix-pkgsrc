@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.146 2009/03/07 16:32:33 apb Exp $
+# $NetBSD: Makefile,v 1.147 2009/03/19 12:05:04 drochner Exp $
 
 DISTNAME=		evolution-2.26.0
 CATEGORIES=		mail time gnome
@@ -49,14 +49,6 @@ GCONF_SCHEMAS+=	evolution-mail.schemas
 
 BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
 BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
-
-# The gettext version in pkgsrc cannot handle the .po files, so
-# we strip out usage of the newer features (context and fuzzy matches)
-post-patch:
-	for f in ${WRKSRC}/po/*.po ; do \
-	    mv $$f $$f.original ; \
-	    ${AWK} -f ${FILESDIR}/msgfmtstrip $$f.original > $$f ; \
-	done
 
 .if !exists(/usr/include/semaphore.h)
 LDFLAGS+=	-lsemaphore

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2009/03/15 18:32:43 jmcneill Exp $
+# $NetBSD: Makefile,v 1.78 2009/03/19 12:14:01 drochner Exp $
 
 DISTNAME=	seahorse-2.26.0
 CATEGORIES=	security
@@ -39,16 +39,6 @@ CONFIGURE_ENV+=		SSH_KEYGEN_PATH=${SSH_KEYGEN_PATH:Q}
 PKGCONFIG_OVERRIDE+=	libcryptui/cryptui.pc.in
 GCONF_SCHEMAS= 	seahorse.schemas
 
-BUILDLINK_API_DEPENDS.gpgme+=	gpgme>=1.0.1nb2
-
-# In pkgsrc, the shipped gettext cannot handle the .po files,
-# so we strip out usage of the newer features (context and fuzzy matches)
-post-patch:
-	for f in ${WRKSRC}/po/*.po ; do \
-	    mv $$f $$f.original ; \
-	    ${AWK} -f ${FILESDIR}/msgfmtstrip $$f.original > $$f ; \
-	done
-
 .include "../../databases/gnome-mime-data/buildlink3.mk"
 .include "../../databases/shared-mime-info/mimedb.mk"
 .include "../../devel/GConf/schemas.mk"
@@ -56,6 +46,7 @@ post-patch:
 .include "../../net/avahi/buildlink3.mk"
 .include "../../net/libsoup24/buildlink3.mk"
 .include "../../security/gnome-keyring/buildlink3.mk"
+BUILDLINK_API_DEPENDS.gpgme+=	gpgme>=1.0.1nb2
 .include "../../security/gpgme/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
 .include "../../sysutils/libnotify/buildlink3.mk"

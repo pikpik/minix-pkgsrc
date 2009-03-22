@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.179 2009/02/18 08:56:09 adam Exp $
+# $NetBSD: Makefile,v 1.180 2009/03/17 15:41:41 adam Exp $
 
 DISTNAME=	gimp-2.6.6
 CATEGORIES=	graphics
@@ -54,14 +54,6 @@ PLIST.twain=		yes
 .endif
 
 .include "options.mk"
-
-# The gettext version in pkgsrc cannot handle the .po files, so
-# we strip out usage of the newer features (context and fuzzy matches)
-post-patch:
-	for f in ${WRKSRC}/po/*.po ${WRKSRC}/po-libgimp/*.po ${WRKSRC}/po-plug-ins/*.po; do \
-		mv $$f $$f.original ; \
-		${AWK} -f ${FILESDIR}/msgfmtstrip $$f.original > $$f ; \
-	done
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../databases/shared-mime-info/mimedb.mk"
