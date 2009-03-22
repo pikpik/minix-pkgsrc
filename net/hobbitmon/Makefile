@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/01/18 05:08:42 tnn Exp $
+# $NetBSD: Makefile,v 1.23 2008/10/27 01:05:59 dholland Exp $
 #
 
 DISTNAME=	hobbit-4.0-beta6
@@ -7,7 +7,7 @@ PKGREVISION=	12
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hobbitmon/}
 
-MAINTAINER=	manu@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://hobbitmon.sourceforge.net/
 COMMENT=	Network services monitor a la Big Brother
 

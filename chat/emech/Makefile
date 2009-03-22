@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2007/03/17 14:13:23 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2008/02/28 11:58:47 rillig Exp $
 #
 
 DISTNAME=	emech-3.0.2
 CATEGORIES=	chat
 MASTER_SITES=	http://www.energymech.net/files/
 
-MAINTAINER=	manu@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.energymech.net/
 COMMENT=	IRC bot written in C
 

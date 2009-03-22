@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/01/31 00:04:12 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/22 19:27:12 wiz Exp $
 #
 
 PKGNAME=		nvnet-20050620nb1
@@ -10,7 +10,7 @@ MASTER_SITES+=		http://download.nvidia.com/XFree86/nforce/1.0-0310/
 
 EXTRACT_SUFX=
 
-MAINTAINER=		manu@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.morgart.com/NetBSD/nVidia/nvnet/
 COMMENT=		Driver for nVidia ethernet
 
