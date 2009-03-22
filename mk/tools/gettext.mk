@@ -1,4 +1,4 @@
-# $NetBSD: gettext.mk,v 1.10 2009/03/20 20:17:30 joerg Exp $
+# $NetBSD: gettext.mk,v 1.11 2009/03/22 17:57:58 joerg Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -90,7 +90,6 @@ MSGFMT_STRIP_MSGCTXT!=							\
 		${ECHO} yes;						\
 	fi
 .          endif
-.      endif
 .    else
 _TOOLS_USE_PKGSRC.msgfmt=	yes
 .    endif
