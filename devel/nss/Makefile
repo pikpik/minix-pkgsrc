@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2008/03/21 01:12:15 obache Exp $
+# $NetBSD: Makefile,v 1.31 2008/05/26 02:13:17 joerg Exp $
 
 DISTNAME=		nss-3.11.5
 CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_MOZILLA_ALL:=security/nss/releases/NSS_3_11_5_RTM/src/}
 
-MAINTAINER=		mjl@luckie.org.nz
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mozilla.org/projects/security/pki/nss/
 COMMENT=		Libraries to support development of security-enabled applications
 

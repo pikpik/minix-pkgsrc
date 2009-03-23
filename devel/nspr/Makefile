@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.26 2008/04/12 22:43:00 jlam Exp $
+# $NetBSD: Makefile,v 1.27 2008/05/26 02:13:17 joerg Exp $
 
 DISTNAME=		nspr-4.6.7
 PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_MOZILLA_ALL:=nspr/releases/v4.6.7/src/}
 
-MAINTAINER=		mjl@luckie.org.nz
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mozilla.org/projects/nspr/index.html
 COMMENT=		Platform-neutral API for system level and libc like functions
 
