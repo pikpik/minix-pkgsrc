@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.72 2007/11/11 11:35:48 martti Exp $
+# $NetBSD: Makefile.common,v 1.73 2008/11/19 01:26:52 chuck Exp $
 
 ###########################################################################
 ###########################################################################
@@ -27,7 +27,7 @@ DISTNAME=	libtool-1.5.26
 CATEGORIES=	devel pkgtools
 MASTER_SITES=	${MASTER_SITE_GNU:=libtool/}
 
-MAINTAINER=	joerg@NetBSD.org
+OWNER=		joerg@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/libtool/libtool.html
 #LICENSE=	gnu-gpl-v2
 
