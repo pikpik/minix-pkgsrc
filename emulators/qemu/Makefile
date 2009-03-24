@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2008/12/30 00:54:19 hubertf Exp $
+# $NetBSD: Makefile,v 1.54 2009/01/22 07:27:28 jmmv Exp $
 #
 
 DISTNAME=		qemu-0.9.1
@@ -18,6 +18,10 @@ USE_TOOLS+=		gmake perl:build
 HAS_CONFIGURE=		yes
 
 BUILD_DEPENDS+=		texi2html-[0-9]*:../../textproc/texi2html
+
+# Workaround for PR/41007 - ensure WRKSRC comes before any buildlinked
+# directories so we pickup our audio/audio.h. Cannot use CPPFLAGS for this
+CFLAGS+=	-I${WRKSRC}
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -70,6 +74,7 @@ CFLAGS+=		-fno-stack-protector
 .if !empty(CC_VERSION:Mgcc-4*)
 CONFIGURE_ARGS+=	--disable-gcc-check
 .endif
+
 
 INSTALLATION_DIRS=	${PKGMANDIR}/man1 share/doc/qemu
 
