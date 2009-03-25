@@ -1,4 +1,4 @@
-# $NetBSD: license.mk,v 1.9 2007/11/08 19:31:05 joerg Exp $
+# $NetBSD: license.mk,v 1.10 2008/01/09 14:38:05 gdt Exp $
 #
 # Note: This file is in draft state and not yet included in default
 # pkgsrc operations.
@@ -71,6 +71,8 @@
 # === See also ===
 #
 #	../doc/TODO, section "Licenses of packages"
+#
+# Keywords: licence
 #
 
 # This list is not complete.  Free and Open Source licenses should be
