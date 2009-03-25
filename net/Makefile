@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.770 2009/03/21 13:56:39 sno Exp $
+# $NetBSD: Makefile,v 1.771 2009/03/22 18:53:50 plunky Exp $
 #
 
 COMMENT=	Networking tools
@@ -353,7 +353,6 @@ SUBDIR+=	p5-Net-Twitter
 SUBDIR+=	p5-Net-Write
 SUBDIR+=	p5-Net-XMPP
 SUBDIR+=	p5-Net-XWhois
-SUBDIR+=	p5-Net-Z3950
 SUBDIR+=	p5-Net-Z3950-ZOOM
 SUBDIR+=	p5-Net-eBay
 SUBDIR+=	p5-NetAddr-IP
