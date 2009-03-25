@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2009/02/09 22:56:25 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2009/02/21 10:18:28 wiz Exp $
 #
 
 DISTNAME=	tellico-1.3.5
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.periapsis.org/tellico/download/
 

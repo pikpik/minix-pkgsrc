@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/04/25 15:49:30 kefren Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:25:25 joerg Exp $
 
 BUILDLINK_TREE+=	ndesk-dbus-glib
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	ndesk-dbus-glib
 NDESK_DBUS_GLIB_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.ndesk-dbus-glib+=	ndesk-dbus-glib>=0.4.1
+BUILDLINK_ABI_DEPENDS.ndesk-dbus-glib?=	ndesk-dbus-glib>=0.4.1nb1
 BUILDLINK_PKGSRCDIR.ndesk-dbus-glib?=	../../sysutils/ndesk-dbus-glib
 
 .include "../../lang/mono/buildlink3.mk"
