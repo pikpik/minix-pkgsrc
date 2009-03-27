@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $NetBSD: msgfmt.sh,v 1.30 2009/03/20 16:13:02 joerg Exp $
+# $NetBSD: msgfmt.sh,v 1.31 2009/03/22 17:57:58 joerg Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -110,7 +110,10 @@ while test $# -gt 0; do
 		version="$1"
 		cmd="$cmd $1"; shift
 		;;
-	-[aDo]|--alignment|--directory|--output-file)
+	--statistics|--tcl)
+		cmd="$cmd $1"; shift
+		;;
+	-[aDodl]|--alignment|--directory|--output-file)
 		cmd="$cmd $1 $2"; shift; shift;
 		;;
 	-c)
