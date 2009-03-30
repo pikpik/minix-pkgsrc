@@ -34,7 +34,7 @@
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-__RCSID("$NetBSD: pkg_delete.c,v 1.2 2009/03/02 15:15:06 joerg Exp $");
+__RCSID("$NetBSD: pkg_delete.c,v 1.3 2009/03/21 16:43:50 tnn Exp $");
 
 #if HAVE_ERR_H
 #include <err.h>
@@ -687,7 +687,7 @@ remove_pkg(const char *pkg)
 		printf("Attempting to delete package `%s'\n", pkg);
 	else if (delete_package(FALSE, prune_empty, &plist, unregister_only,
 			        destdir) == FAIL) {
-		warnx("couldn't entirely delete package `%s'\n", pkg);
+		warnx("couldn't entirely delete package `%s'", pkg);
 		/*
 		 * XXX It could be nice to error out here explicitly,
 		 * XXX but this is problematic for missing or changed files.
