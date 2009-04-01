@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/05/04 16:58:05 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/03 01:50:26 jlam Exp $
 #
 
 DISTNAME=	myhdl-0.5.1
@@ -19,5 +19,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/cosimulation/icarus/myhdl.vpi \
 		${DESTDIR}${PREFIX}/lib/ivl
 
-.include "../../cad/verilog/buildlink3.mk"
+.include "../../cad/verilog-current/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
