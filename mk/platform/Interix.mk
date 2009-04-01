@@ -1,4 +1,4 @@
-# $NetBSD: Interix.mk,v 1.57 2008/09/14 09:51:30 ahoka Exp $
+# $NetBSD: Interix.mk,v 1.58 2008/09/22 17:11:02 ahoka Exp $
 #
 # Variable definitions for the Interix operating system.
 
@@ -62,7 +62,6 @@ WRAPPER_SHELL?=		${PREFIX}/bin/nbsh
 .endif
 
 INSTALL?=		${PREFIX}/bin/install-sh
-PAX?=			${PREFIX}/bin/pax
 SED?=			${PREFIX}/bin/nbsed
 
 GCC_USE_SYMLINKS?=	yes
