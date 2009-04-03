@@ -1,4 +1,4 @@
-<!-- $NetBSD: configuring.xml,v 1.32 2009/01/28 23:31:39 abs Exp $ -->
+<!-- $NetBSD: configuring.xml,v 1.33 2009/03/05 13:08:02 imil Exp $ -->
 
 <chapter id="configuring">
   <title>Configuring pkgsrc</title>
@@ -403,7 +403,7 @@ PKG_OPTIONS.kdebase=    debug -sasl
 PKG_OPTIONS.apache=     suexec </screen>
 
     <para>It is important to note that options that were specifically
-    suggested by the package maintainer must be explicitely removed if
+    suggested by the package maintainer must be explicitly removed if
     you do not wish to include the option.  If you are unsure you can view
     the current state with <command>make show-options</command>.</para>
 
