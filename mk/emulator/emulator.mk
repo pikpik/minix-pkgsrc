@@ -1,4 +1,4 @@
-# $NetBSD: emulator.mk,v 1.9 2007/10/09 19:19:13 martti Exp $
+# $NetBSD: emulator.mk,v 1.10 2007/10/13 11:04:17 dsl Exp $
 #
 # This file is included by bsd.pkg.mk.
 #
@@ -54,6 +54,8 @@
 #	that contains checksums for all supported EMUL_PLATFORMs.
 #	This target should be run after the successful completion
 #	of the ``emul-fetch'' target.
+#
+# Keywords: emulator, emulation, emul
 #
 
 .if empty(EMUL_PLATFORMS:M${EMUL_PLATFORM})
