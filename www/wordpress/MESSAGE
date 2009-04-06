@@ -1,0 +1,13 @@
+===========================================================================
+$NetBSD$
+
+Please read ${DOCDIR}/readme.html for further instructions.
+
+For further post-installation customisation you may need to make
+changes to file permissions etc. based on the functionality that
+you require.  A good starting place for these issues can be found
+in this article:
+
+	http://codex.wordpress.org/Hardening_WordPress
+
+===========================================================================
