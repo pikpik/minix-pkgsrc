@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2008/06/21 18:47:44 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2009/04/07 19:27:57 drochner Exp $
 
 DISTNAME=	fontconfig-2.6.0
 PKGREVISION=	1
@@ -79,7 +79,7 @@ pre-configure:
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/30-pkgsrc-aliases.conf \
-		${EGDIR}/conf.d
+		${DESTDIR}${EGDIR}/conf.d
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
