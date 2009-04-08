@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2006/10/14 08:23:29 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2008/08/08 15:00:53 joerg Exp $
 
 DISTNAME=	docbook-4.4
 PKGREVISION=	2
@@ -25,7 +25,6 @@ BUILD_DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=	iso8879>=1986:../../textproc/iso8879
 
 WRKSRC=		${WRKDIR}
-NO_MTREE=	yes
 USE_LANGUAGES=	# none
 USE_TOOLS+=	unzip
 EXTRACT_ONLY=	# nothing

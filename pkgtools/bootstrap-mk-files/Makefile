@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2009/02/17 17:08:13 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2009/02/26 07:05:10 wiz Exp $
 
 DISTNAME=	bootstrap-mk-files-20090226
 CATEGORIES=	pkgtools
@@ -17,7 +17,6 @@ NO_PKGTOOLS_REQD_CHECK=	# defined
 BOOTSTRAP_PKG=	yes
 
 NO_CHECKSUM=	yes
-NO_MTREE=	yes
 NO_BUILD=	yes
 
 USE_TOOLS+=	sed

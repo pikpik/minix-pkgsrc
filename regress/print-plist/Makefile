@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/09/08 15:04:23 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/30 13:38:16 jmmv Exp $
 #
 
 DISTNAME=	print-plist-0.0
@@ -11,7 +11,6 @@ COMMENT=	Test print-PLIST and related functionality
 
 EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	yes
-NO_MTREE=	yes
 
 PRINT_PLIST_AWK+=	/^print-plist\/foo$$/ \
 				{ print "@comment Matched test file."; \

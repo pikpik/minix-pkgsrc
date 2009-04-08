@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/02 22:58:56 hubertf Exp $
+# $NetBSD: Makefile,v 1.16 2008/06/20 01:09:45 joerg Exp $
 
 DISTNAME=	xdaemon-2.1
 CATEGORIES=	games x11
@@ -17,7 +17,6 @@ CONFLICTS+=	xdaemon-1.*
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-NO_MTREE=	yes
 DIST_SUBDIR=	xdaemon
 
 IMAGES=		xdaemon xdaemon2 xnetbsd-flag xnetbsd-flag2
