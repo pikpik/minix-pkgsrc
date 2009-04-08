@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.319 2009/03/15 19:31:46 jmcneill Exp $
+# $NetBSD: Makefile,v 1.320 2009/03/22 12:02:05 bad Exp $
 #
 
 COMMENT=	Games
@@ -286,6 +286,7 @@ SUBDIR+=	xscavenger
 SUBDIR+=	xscorch
 SUBDIR+=	xscrabble
 SUBDIR+=	xskat
+SUBDIR+=	xsokoban
 SUBDIR+=	xsoldier
 SUBDIR+=	xtris
 SUBDIR+=	xtux
