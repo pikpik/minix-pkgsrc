@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1954 2009/03/20 19:25:01 joerg Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1955 2009/04/08 14:47:26 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -319,12 +319,6 @@ _PKGSRC_BUILD_TARGETS=	build
 #	*/*/file.
 #
 OVERRIDE_DIRDEPTH?=	2
-
-# The user can override the NO_PACKAGE by specifying this from
-# the make command line
-.if defined(FORCE_PACKAGE)
-.  undef NO_PACKAGE
-.endif
 
 # Handle alternatives
 #
