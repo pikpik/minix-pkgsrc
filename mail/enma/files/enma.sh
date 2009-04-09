@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: enma.sh,v 1.1.1.1 2008/09/05 07:23:44 obache Exp $
 #
 # PROVIDE: enma
 # REQUIRE: NETWORK
@@ -10,7 +10,7 @@
 
 name="enma"
 rcvar=${name}
-command="@PREFIX@/bin/enma"
+command="@PREFIX@/libexec/enma"
 pidfile="@VARBASE@/run/enma/${name}.pid"
 required_files="@PKG_SYSCONFDIR@/enma.conf"
 command_args="-c @PKG_SYSCONFDIR@/enma.conf"
