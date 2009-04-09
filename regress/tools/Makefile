@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/09/09 08:01:45 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/04 11:02:25 rillig Exp $
 #
 
 DISTNAME=	# not applicable
@@ -10,7 +10,6 @@ DISTFILES=	# none
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Test whether the TOOLS do what I expect
 
-NO_CHECKSUM=	yes
 WRKSRC=		${WRKDIR}
 REGRESS_TESTS=	awk sed sh sort tar tr
 USE_TOOLS+=	awk sed sh sort tar tr

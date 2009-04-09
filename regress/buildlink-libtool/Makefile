@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:09 tv Exp $
+# $NetBSD: Makefile,v 1.3 2005/12/17 05:20:23 jlam Exp $
 
 DISTNAME=	regress-buildlink-libtool-0.0
 CATEGORIES=	regress
@@ -9,10 +9,8 @@ MAINTAINER=	jlam@pkgsrc.org
 COMMENT=	test buildlink libtool
 
 USE_LIBTOOL=	yes
-EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	yes
 NO_INSTALL=	yes
-NO_PACKAGE=	yes
 
 # Remove GCC optimization options.
 BUILDLINK_TRANSFORM+=	rm:-O[0-9]*
