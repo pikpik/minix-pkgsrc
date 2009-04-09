@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2009/03/25 09:21:19 adam Exp $
+# $NetBSD: Makefile,v 1.91 2009/04/09 08:00:10 martti Exp $
 
 DISTNAME=	clamav-${CLAMAV_VERSION}
 PKGNAME=	clamav-${CLAMAV_VERSION:S/-/./}
@@ -9,7 +9,7 @@ MAINTAINER=	grant@NetBSD.org
 HOMEPAGE=	http://www.clamav.net/
 COMMENT=	Anti-virus toolkit
 
-#LICENSE=	gnu-gpl-v2
+LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
