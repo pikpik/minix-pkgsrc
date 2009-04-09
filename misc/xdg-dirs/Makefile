@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/10/25 22:01:02 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2008/04/30 13:38:15 jmmv Exp $
 #
 
 DISTNAME=	xdg-dirs-1.4
@@ -16,8 +16,6 @@ CONFLICTS=	gnome2-dirs<=1.2
 
 NO_BUILD=	yes
 NO_CONFIGURE=	yes
-NO_CHECKSUM=	yes
-NO_EXTRACT=	yes
 PLIST_SRC=	# empty
 USE_LANGUAGES=	# empty
 WRKSRC=		${WRKDIR}

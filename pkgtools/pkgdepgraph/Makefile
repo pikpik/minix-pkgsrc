@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/01/07 09:14:09 rillig Exp $
+# $NetBSD: Makefile,v 1.24 2009/02/10 00:17:11 joerg Exp $
 #
 
 DISTNAME=	pkgdepgraph-2.8
@@ -18,7 +18,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=		${WRKDIR}
 USE_TOOLS+=	perl:run
 
-EXTRACT_ONLY=	# empty
 NO_CONFIGURE=	yes
 
 DISTVER=	${DISTNAME:S/pkgdepgraph-//}

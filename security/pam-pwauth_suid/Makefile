@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/06/25 18:17:33 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2008/07/17 18:00:58 drochner Exp $
 
 DISTNAME=	pam-pwauth_suid-1.2
 CATEGORIES=	security
@@ -7,7 +7,6 @@ DISTFILES=	# empty
 MAINTAINER=	drochner@NetBSD.org
 COMMENT=	PAM authentication module for unprivileged users
 
-NO_CHECKSUM=	yes
 WRKSRC=		${WRKDIR}
 
 PAMDEF+= -DPATH_HELPER=\"${PREFIX}/libexec/pwauth_suid_helper\"

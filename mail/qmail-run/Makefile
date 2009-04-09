@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/03/24 07:08:35 schmonz Exp $
+# $NetBSD: Makefile,v 1.22 2008/03/04 17:57:19 jlam Exp $
 #
 
 DISTNAME=		qmail-run-20060604
@@ -18,7 +18,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
-NO_CHECKSUM=		yes
 NO_BUILD=		yes
 
 FILES_SUBST+=		QMAIL_QUEUE_EXTRA=${QMAIL_QUEUE_EXTRA:Q}

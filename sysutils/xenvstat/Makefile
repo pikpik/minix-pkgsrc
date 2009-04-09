@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:10:57 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2007/02/15 23:21:06 joerg Exp $
 
 DISTNAME=	xenvstat-20041127
 PKGREVISION=	2
@@ -13,7 +13,6 @@ COMMENT=	X11-based display environmental sensor readings
 ONLY_FOR_PLATFORM=	NetBSD-*-*
 
 NO_CONFIGURE=	yes
-NO_CHECKSUM=	yes
 
 LIBS+=		-lXt -lX11 -lm
 

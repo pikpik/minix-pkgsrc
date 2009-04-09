@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/12/27 23:19:06 minskim Exp $
+# $NetBSD: Makefile,v 1.21 2008/09/02 11:09:59 obache Exp $
 
 DISTNAME=	pkgfind-20050804
 CATEGORIES=	pkgtools
@@ -10,8 +10,6 @@ COMMENT=	Find packages by package name in pkgsrc
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-NO_CHECKSUM=	yes
 
 USE_FEATURES=	err getprogname setprogname snprintf warn
 

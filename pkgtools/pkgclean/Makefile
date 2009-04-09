@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/05/18 10:03:31 peter Exp $
+# $NetBSD: Makefile,v 1.14 2008/09/07 01:41:39 obache Exp $
 
 DISTNAME=	pkgclean-20051116
 CATEGORIES=	pkgtools
@@ -11,7 +11,6 @@ COMMENT=	Quickly clean up all work directories in pkgsrc
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/01/07 09:14:10 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/20 01:09:33 joerg Exp $
 #
 
 DISTNAME=	gpg2dot-1.4
@@ -15,8 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=	# empty
 USE_TOOLS+=	perl:run
 
-EXTRACT_ONLY=	# empty
-NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 
 DISTVER=	${DISTNAME:S/gpg2dot-//}

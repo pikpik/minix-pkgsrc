@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2008/07/20 23:49:35 dbj Exp $
+# $NetBSD: Makefile,v 1.39 2009/03/05 00:27:31 joerg Exp $
 
 DISTNAME=		pax-20080110
 CATEGORIES=		archivers
@@ -37,7 +37,6 @@ PLIST_SUBST+=		NBPAX_PROGRAM_PREFIX=${NBPAX_PROGRAM_PREFIX:Q}
 BUILD_DEFS+=		NBPAX_PROGRAM_PREFIX
 
 GNU_CONFIGURE=		yes
-NO_CHECKSUM=		yes
 
 do-extract:
 	${CP} -R ${FILESDIR} ${WRKSRC}

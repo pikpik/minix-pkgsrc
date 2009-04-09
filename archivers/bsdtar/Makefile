@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2008/07/14 14:56:50 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2008/09/22 20:19:18 joerg Exp $
 #
 
 DISTNAME=	bsdtar-2.5.5
 CATEGORIES=	archivers
 MASTER_SITES=	http://people.freebsd.org/~kientzle/libarchive/src/
 DISTFILES=	# empty
-
-NO_CHECKSUM=	yes
 
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://people.freebsd.org/~kientzle/libarchive/

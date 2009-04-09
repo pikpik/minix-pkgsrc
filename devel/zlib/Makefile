@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2007/08/22 18:35:30 jlam Exp $
+# $NetBSD: Makefile,v 1.40 2007/08/22 18:36:09 jlam Exp $
 
 DISTNAME=	zlib-1.2.3
 CATEGORIES=	devel
@@ -13,8 +13,6 @@ COMMENT=	General purpose data compression library
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-NO_CHECKSUM=		yes
-EXTRACT_ONLY=		# empty
 USE_LIBTOOL=		yes
 
 CFLAGS+=		${CPPFLAGS}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/11/03 21:46:38 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2008/04/06 13:17:22 heinz Exp $
 
 DISTNAME=	zonetab-0
 CATEGORIES=	time
@@ -9,7 +9,6 @@ COMMENT=	zone.tab file
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-NO_CHECKSUM=	yes
 NO_BUILD=	yes
 
 # install path is hardwired

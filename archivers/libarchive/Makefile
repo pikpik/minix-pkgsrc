@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.27 2008/07/13 14:25:04 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2008/07/14 14:56:50 joerg Exp $
 #
 
 DISTNAME=	libarchive-2.5.5
 CATEGORIES=	archivers
 MASTER_SITES=	http://people.freebsd.org/~kientzle/libarchive/src/
 DISTFILES=	# empty
-
-NO_CHECKSUM=	yes
 
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://people.freebsd.org/~kientzle/libarchive/

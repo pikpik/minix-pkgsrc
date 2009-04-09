@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/06/16 13:33:33 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2008/07/10 15:29:29 joerg Exp $
 
 DISTNAME=	bfd-mdsetimage-1.15.1
 PKGREVISION=	1
@@ -14,8 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin
 
 WRKSRC=		${WRKDIR}
-EXTRACT_ONLY=	# empty
-NO_CHECKSUM=	yes
 NO_CONFIGURE=	yes
 
 USE_CROSSBASE=	yes

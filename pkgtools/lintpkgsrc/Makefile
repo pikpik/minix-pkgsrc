@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/01/03 17:43:15 rillig Exp $
+# $NetBSD: Makefile,v 1.2 2008/08/29 15:33:01 abs Exp $
 #
 
 DISTNAME=	lintpkgsrc-4.82
@@ -19,7 +19,6 @@ USE_TOOLS+=	perl:run
 
 FILESDIR=	../../pkgtools/pkglint/files
 WRKSRC=		${WRKDIR}
-NO_CHECKSUM=	yes
 NO_BUILD=	yes
 USE_LANGUAGES=	# none
 AUTO_MKDIRS=	yes

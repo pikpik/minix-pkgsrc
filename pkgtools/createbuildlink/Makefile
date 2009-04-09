@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2007/06/30 12:58:59 tnn Exp $
+# $NetBSD: Makefile,v 1.45 2009/03/20 19:25:13 joerg Exp $
 
 DISTNAME=	createbuildlink-3.14
 CATEGORIES=	pkgtools sysutils
@@ -12,9 +12,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
-EXTRACT_ONLY=	# empty
 USE_LANGUAGES=	# empty
-NO_CHECKSUM=	yes
 NO_BUILD=	yes
 
 SCRIPT=		${DISTNAME:C/-.*$//}

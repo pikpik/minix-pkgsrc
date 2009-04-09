@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:46 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/16 15:38:17 joerg Exp $
 
 DISTNAME=	easydiskpasswd-1.0
 PKGREVISION=	1
@@ -10,7 +10,6 @@ COMMENT=	Tool to unlock a password protected USB "EasyDisk"
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-NO_CHECKSUM=	yes
 WRKSRC=		${WRKDIR}
 MAKE_ENV+=	BINOWN=${BINOWN} BINGRP=${BINGRP}
 
