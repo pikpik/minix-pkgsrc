@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/07/14 12:56:09 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2009/01/20 00:34:35 snj Exp $
 
 DISTNAME=	lsdvd-0.16
 PKGREVISION=	4
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lsdvd/}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 MAINTAINER=	snj@NetBSD.org
-HOMEPAGE=	http://untrepid.com/acidrip/lsdvd.html
+HOMEPAGE=	http://sourceforge.net/projects/lsdvd/
 COMMENT=	Application displaying the contents of DVDs
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
