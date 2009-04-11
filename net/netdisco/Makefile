@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2007/11/12 23:10:08 seb Exp $
+# $NetBSD: Makefile,v 1.21 2008/05/26 02:13:22 joerg Exp $
 #
 
 DISTNAME=		netdisco-0.95_with_mibs
 PKGNAME=		netdisco-0.95
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=netdisco/}
 
@@ -19,7 +20,7 @@ DEPENDS+=		p5-MasonX-Request-WithApacheSession-[0-9]*:../../www/p5-MasonX-Reques
 DEPENDS+=		p5-HTML-Parser-[0-9]*:../../www/p5-HTML-Parser
 DEPENDS+=		p5-Graph-[0-9]*:../../devel/p5-Graph
 DEPENDS+=		p5-GraphViz-[0-9]*:../../graphics/p5-GraphViz
-DEPENDS+=		p5-Compress-Zlib-[0-9]*:../../devel/p5-Compress-Zlib
+DEPENDS+=		p5-IO-Compress-[0-9]*:../../devel/p5-IO-Compress
 DEPENDS+=		p5-Net-NBName-[0-9]*:../../net/p5-Net-NBName
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
