@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2009/01/13 17:11:33 shattered Exp $
+# $NetBSD: Makefile,v 1.17 2009/03/24 19:54:54 bouyer Exp $
 #
 
 CATEGORIES=	net sysutils
 
-MAINTAINER=	tonnerre@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/nagiosplug/
 COMMENT=	Nagios plugins
 
