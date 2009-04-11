@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- view.h.orig	2009-04-01 13:22:53.000000000 -0700
++++ view.h	2009-04-01 13:23:01.000000000 -0700
+@@ -22,7 +22,7 @@
+  */
+  
+ 
+-#include <ncurses.h>
++#include <curses.h>
+ #include <unistd.h>
+ #include <signal.h>
+ 
