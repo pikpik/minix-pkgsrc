@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.205 2009/02/23 19:33:23 minskim Exp $
+# $NetBSD: Makefile,v 1.206 2009/03/06 17:54:54 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -158,6 +158,7 @@ SUBDIR+=	texmf-dirs
 SUBDIR+=	transfig
 SUBDIR+=	web2c
 SUBDIR+=	xdvik
+SUBDIR+=	xetex
 SUBDIR+=	xfce4-print
 SUBDIR+=	xpdf
 SUBDIR+=	xpdf-arabic
