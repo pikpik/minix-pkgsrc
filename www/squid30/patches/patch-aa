@@ -1,4 +1,6 @@
-$NetBSD: patch-aa,v 1.1.1.1 2008/09/12 15:05:57 taca Exp $
+$NetBSD: patch-aa,v 1.2 2009/01/22 17:23:47 taca Exp $
+
+Add DESTDIR support.
 
 --- Makefile.in.orig	2009-01-21 10:59:00.000000000 +0900
 +++ Makefile.in
