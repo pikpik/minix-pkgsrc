@@ -1,0 +1,5 @@
+@comment $NetBSD: PLIST,v 1.1.1.2 2009/04/12 02:32:09 minskim Exp $
+bin/dvipdfm
+bin/dvipdft
+bin/ebb
+man/man1/dvipdfm.1
