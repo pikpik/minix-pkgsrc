@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.24 2008/06/13 23:15:33 adrianp Exp $
+# $NetBSD: Makefile,v 1.25 2008/08/23 08:09:16 obache Exp $
 
 DISTNAME=	Unreal3.2.7
 PKGNAME=	unrealircd-3.2.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	chat
-MASTER_SITES=	http://files.alexisnet.net/unreal/ \
-		http://unrealircd.st-city.net/ \
-		http://unrealircd.icedslash.com/
+MASTER_SITES=	http://unreal.brueggisite.de/
 
 MAINTAINER=	adrianp@NetBSD.org
 HOMEPAGE=	http://www.unrealircd.com/
