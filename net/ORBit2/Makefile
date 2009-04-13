@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2008/10/09 20:22:23 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2009/03/06 14:02:32 wiz Exp $
 #
 
 DISTNAME=		ORBit2-2.14.17
@@ -9,6 +9,9 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://orbit-resource.sourceforge.net/
 COMMENT=		High-performance CORBA ORB with C language support
+
+# gtkdoc-rebase needed during installation
+BUILD_DEPENDS+=		gtk-doc>=1.9:../../textproc/gtk-doc
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
