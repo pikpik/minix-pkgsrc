@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.113 2008/08/14 01:48:20 bjs Exp $
+# $NetBSD: Makefile,v 1.114 2008/10/20 20:32:58 ghen Exp $
 #
 
 COMMENT=	Fonts
@@ -134,6 +134,7 @@ SUBDIR+=	sgi-fonts
 SUBDIR+=	t1lib
 SUBDIR+=	t1utils
 SUBDIR+=	terminus-font
+SUBDIR+=	tex-cm
 SUBDIR+=	tex-uhc-fonts-base
 SUBDIR+=	tex-uhc-fonts-extra
 SUBDIR+=	tex-unttf
