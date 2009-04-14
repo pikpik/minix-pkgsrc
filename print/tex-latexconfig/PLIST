@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/latexconfig/latex.ini
+share/texmf-dist/tex/latex/latexconfig/lualatex.ini
+share/texmf-dist/tex/latex/latexconfig/mllatex.ini
+share/texmf-dist/tex/latex/latexconfig/pdflatex.ini
+share/texmf-dist/tex/latex/latexconfig/pdflualatex.ini
+share/texmf-dist/tex/latex/latexconfig/xelatex.ini
