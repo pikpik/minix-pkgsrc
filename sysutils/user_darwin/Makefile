@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/10/29 08:12:55 rh Exp $
+# $NetBSD: Makefile,v 1.7 2009/04/09 00:48:17 joerg Exp $
 #
 
 DISTNAME=		user-20071026
@@ -6,7 +6,7 @@ CATEGORIES=		sysutils
 MASTER_SITES=		# empty
 DISTFILES=		# empty
 
-MAINTAINER=		danw@NetBSD.org
+MAINTAINER=		schmonz@NetBSD.org
 COMMENT=		Limited NetBSD-compatible useradd/groupadd commands
 
 ONLY_FOR_PLATFORM=	Darwin-*-*
