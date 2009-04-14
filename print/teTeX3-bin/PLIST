@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.12 2009/04/12 07:33:35 minskim Exp $
+@comment $NetBSD: PLIST,v 1.13 2009/04/13 07:48:24 minskim Exp $
 bin/a2ping
 bin/dvihp
 bin/dvilj
@@ -17,7 +17,6 @@ bin/makempy
 bin/mkindex
 bin/mptopdf
 bin/pdfcrop
-bin/pdfetex
 bin/pfb2pfa
 bin/pk2bm
 bin/ps2pk
