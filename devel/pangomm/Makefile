@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/03/17 22:10:15 jmcneill Exp $
+# $NetBSD: Makefile,v 1.4 2009/04/02 09:02:58 wiz Exp $
 
 DISTNAME=	pangomm-2.24.0
 CATEGORIES=	devel
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.gtkmm.org/
 COMMENT=	C++ bindings for pangomm
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+CONFLICTS+=		gtkmm<=2.13.5
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
