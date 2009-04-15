@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf/tex/generic/hyphen/dehyphn.tex
+share/texmf/tex/generic/hyphen/dehypht.tex
+share/texmf/tex/generic/hyphen/dehyphtex.tex
+share/texmf/tex/generic/hyphen/ghyphen.README
