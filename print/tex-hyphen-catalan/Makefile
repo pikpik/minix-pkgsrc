@@ -1,0 +1,17 @@
+# $NetBSD$
+# TeX Live Revision 8984
+
+DISTNAME=	hyphen-catalan
+PKGNAME=	tex-${DISTNAME}-2008.8984
+
+MAINTAINER=	minskim@NetBSD.org
+COMMENT=	Hyphenation patterns for Catalan
+
+CONFLICTS+=	teTeX-texmf<=3.0nb12
+DEPENDS+=	tex-hyph-utf8-[0-9]*:../../print/tex-hyph-utf8
+
+TEX_HYPHEN_DAT+=	catalan loadhyph-ca.tex
+TEX_HYPHEN_DEF+=	\addlanguage{catalan}{loadhyph-ca.tex}{}{2}{2}
+
+.include "../../print/texlive/module.mk"
+.include "../../mk/bsd.pkg.mk"
