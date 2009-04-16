@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2004/01/20 12:22:41 agc Exp $
+# $NetBSD: Makefile,v 1.7 2004/03/29 17:31:54 tv Exp $
 #
 
 DISTNAME=	newsfetch-1.3
@@ -6,8 +6,8 @@ PKGREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	jrf@diverge.org
-HOMEPAGE=	# doesn't work anymore - http://www.diverge.org/jrf/
+MAINTAINER=	jay.fink@gmail.com
+HOMEPAGE=	http://www.systhread.net/coding
 COMMENT=	Downloads newsgroup messages in mail file format
 
 WRKSRC=		${WRKDIR}/newsfetch
