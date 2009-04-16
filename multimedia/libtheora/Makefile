@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/01/27 21:55:04 sketch Exp $
+# $NetBSD: Makefile,v 1.25 2009/02/15 23:34:06 wiz Exp $
 #
 
 .include "Makefile.common"
@@ -20,7 +20,8 @@ CONFIGURE_ENV+=		HAVE_PDFLATEX=no
 
 .include "../../mk/compiler.mk"
 
-.if !empty(PKGSRC_COMPILER:Msunpro)
+.if !empty(PKGSRC_COMPILER:Msunpro) || \
+    !empty(MACHINE_PLATFORM:MDarwin-[9].*-i386)
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 
