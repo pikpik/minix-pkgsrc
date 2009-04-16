@@ -10,3 +10,11 @@ $NetBSD$
  endif
  ifeq ($(GNUSTEP_TARGET_OS),mingw32)
  THREADING = win32
+@@ -166,6 +165,7 @@ include $(GNUSTEP_MAKEFILES)/clibrary.ma
+ ADDITIONAL_INCLUDE_DIRS += \
+ 	-Iconfig/$(GNUSTEP_TARGET_CPU)/$(GNUSTEP_TARGET_OS) \
+ 	-Iconfig/$(GNUSTEP_TARGET_CPU)/generic \
++	-Iconfig/unknown/generic \
+ 	-I.
+ 
+ before-all:: runtime-info.h
