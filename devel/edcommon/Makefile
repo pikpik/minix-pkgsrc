@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/01/18 05:14:32 tnn Exp $
+# $NetBSD: Makefile,v 1.15 2009/04/17 22:01:19 rh Exp $
 #
 
 DISTNAME=	edcommon-32-s
@@ -11,7 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mulle-kybernetik.com/software/EDFrameworks/
 COMMENT=	Foundation and AppKit extensions
 
-LICENSE=		gnu-gpl-v3
+LICENSE=	edcommon-license
 
 PKG_DESTDIR_SUPPORT=	destdir
 USE_LANGUAGES=		objc
