@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/makeindex
+bin/mkindex
+man/man1/makeindex.1
+man/man1/mkindex.1
