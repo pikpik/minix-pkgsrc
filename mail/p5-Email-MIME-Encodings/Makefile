@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/10/19 19:18:11 he Exp $
+# $NetBSD: Makefile,v 1.4 2009/02/22 12:07:43 he Exp $
 
-DISTNAME=		Email-MIME-Encodings-1.312
+DISTNAME=		Email-MIME-Encodings-1.313
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5eme
 CATEGORIES=		mail perl5
@@ -9,6 +9,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Email/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Email-MIME-Encodings/
 COMMENT=		Unified interface to MIME encoding and decoding
+LICENSE=		artistic-2.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
