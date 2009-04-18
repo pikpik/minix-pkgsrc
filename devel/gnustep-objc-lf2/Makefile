@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/06/21 22:46:36 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2009/04/17 23:10:30 rh Exp $
 #
 
 DISTNAME=	gnustep-objc-lf2.95.3-r88
@@ -13,7 +13,7 @@ COMMENT=	Objective-C library required for libFoundation
 
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	objc
 
