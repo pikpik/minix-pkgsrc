@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- GNUmakefile.orig	2009-04-18 10:49:03.000000000 +1000
++++ GNUmakefile
+@@ -38,7 +38,7 @@ GNUSTEP_INSTALLATION_DOMAIN = SYSTEM
+ include $(GNUSTEP_MAKEFILES)/common.make
+ include ./Version
+ 
+-SUBPROJECTS = Foundation Resources examples
++SUBPROJECTS = Foundation Resources
+ 
+ include $(GNUSTEP_MAKEFILES)/aggregate.make
+ 
