@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2008/08/23 07:47:00 obache Exp $
+# $NetBSD: common.mk,v 1.1 2009/04/18 02:19:23 rh Exp $
 #
-PKG_DESTDIR_SUPPORT=	destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		objc
 
