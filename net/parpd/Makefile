@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2008/10/29 13:25:01 obache Exp $
+# $NetBSD: Makefile,v 1.4 2009/03/17 12:05:02 roy Exp $
 #
 
-DISTNAME=		parpd-1.2
+DISTNAME=		parpd-1.3
 CATEGORIES=		net
+LICENSE=		modified-bsd
 MASTER_SITES=		ftp://roy.marples.name/pub/parpd/
 EXTRACT_SUFX=		.tar.bz2
 
