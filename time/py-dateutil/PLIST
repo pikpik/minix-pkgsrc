@@ -23,6 +23,11 @@ ${PYSITELIB}/dateutil/tzwin.pyo
 ${PYSITELIB}/dateutil/zoneinfo/__init__.py
 ${PYSITELIB}/dateutil/zoneinfo/__init__.pyc
 ${PYSITELIB}/dateutil/zoneinfo/__init__.pyo
-${PYSITELIB}/dateutil/zoneinfo/zoneinfo-2007f.tar.gz
+${PYSITELIB}/dateutil/zoneinfo/zoneinfo-2007k.tar.gz
+${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
+${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
+${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
+${PYSITELIB}/${EGG_INFODIR}/top_level.txt
+@dirrm ${PYSITELIB}/${EGG_INFODIR}
 @dirrm ${PYSITELIB}/dateutil/zoneinfo
 @dirrm ${PYSITELIB}/dateutil
