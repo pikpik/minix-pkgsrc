@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2007/09/09 19:30:07 xtraeme Exp $
+# $NetBSD: Makefile,v 1.11 2008/10/20 07:46:52 wiz Exp $
 #
 
-BROWSER=	firefox
+BROWSER=	firefox3
 
 CONFIGURE_ARGS+=	--disable-gtk1
 
 .include "Makefile.common"
-.include "../../www/firefox/buildlink3.mk"
+.include "../../www/firefox3/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
