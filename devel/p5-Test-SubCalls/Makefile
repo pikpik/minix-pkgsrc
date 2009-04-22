@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/10/19 19:18:02 he Exp $
+# $NetBSD: Makefile,v 1.3 2008/11/17 22:22:07 he Exp $
 
-DISTNAME=	Test-SubCalls-1.08
+DISTNAME=	Test-SubCalls-1.09
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tsc
 CATEGORIES=	devel perl5
