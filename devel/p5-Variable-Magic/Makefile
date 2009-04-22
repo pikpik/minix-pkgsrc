@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2009/02/24 22:13:40 he Exp $
+# $NetBSD: Makefile,v 1.7 2009/04/12 19:47:55 sno Exp $
 #
 
-DISTNAME=	Variable-Magic-0.33
+DISTNAME=	Variable-Magic-0.34
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Variable/}
