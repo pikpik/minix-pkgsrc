@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/exam/README
+share/texmf-dist/doc/latex/exam/exam-${PKGVERSION}.md5
+share/texmf-dist/doc/latex/exam/examdoc.pdf
+share/texmf-dist/doc/latex/exam/examdoc.tex
