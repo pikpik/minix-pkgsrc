@@ -1,0 +1,12 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/graphics/00readme.txt
+share/texmf-dist/doc/latex/graphics/changes.txt
+share/texmf-dist/doc/latex/graphics/color.pdf
+share/texmf-dist/doc/latex/graphics/drivers.pdf
+share/texmf-dist/doc/latex/graphics/epsfig.pdf
+share/texmf-dist/doc/latex/graphics/graphics.pdf
+share/texmf-dist/doc/latex/graphics/graphicx.pdf
+share/texmf-dist/doc/latex/graphics/grfguide.pdf
+share/texmf-dist/doc/latex/graphics/keyval.pdf
+share/texmf-dist/doc/latex/graphics/lscape.pdf
+share/texmf-dist/doc/latex/graphics/trig.pdf
