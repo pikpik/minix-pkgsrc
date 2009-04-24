@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/03/16 22:30:49 seb Exp $
+# $NetBSD: Makefile,v 1.10 2009/04/10 09:43:22 abs Exp $
 #
 
 DISTNAME=	SQL-Abstract-1.51
@@ -13,8 +13,8 @@ COMMENT=	Generate SQL from Perl data structures
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-DEPENDS+=	p5-Scalar-List-Utils>0:../../devel/p5-Scalar-List-Utils
-BUILD_DEPENDS+=	p5-Test-Simple>0:../../devel/p5-Test-Simple
+DEPENDS+=	{perl>=5.10,p5-Scalar-List-Utils>=0}:../../devel/p5-Scalar-List-Utils
+BUILD_DEPENDS+=	{perl>=5.10,p5-Test-Simple>0}:../../devel/p5-Test-Simple
 BUILD_DEPENDS+=	p5-Test-Exception-[0-9]*:../../devel/p5-Test-Exception
 BUILD_DEPENDS+=	p5-Test-Warn-[0-9]*:../../devel/p5-Test-Warn
 BUILD_DEPENDS+=	p5-Test-Deep-[0-9]*:../../devel/p5-Test-Deep

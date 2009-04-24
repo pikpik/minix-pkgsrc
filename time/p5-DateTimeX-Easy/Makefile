@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/13 23:53:54 abs Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/14 00:14:25 abs Exp $
 
 DISTNAME=	DateTimeX-Easy-0.085
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,7 @@ DEPENDS+=	p5-DateTime-Format-Natural>0:../../time/p5-DateTime-Format-Natural
 DEPENDS+=	p5-DateTime-Format-Flexible>0:../../time/p5-DateTime-Format-Flexible
 DEPENDS+=	p5-DateTime-Format-ICal>0:../../time/p5-DateTime-Format-ICal
 DEPENDS+=	p5-DateTime-Format-DateManip>0:../../time/p5-DateTime-Format-DateManip
-DEPENDS+=	p5-Scalar-List-Utils>=0:../../devel/p5-Scalar-List-Utils
+DEPENDS+=	{perl>=5.10,p5-Scalar-List-Utils-[0-9]*}:../../devel/p5-Scalar-List-Utils
 
 BUILD_DEPENDS+=	p5-Test-Most>0:../../devel/p5-Test-Most
 
