@@ -1,0 +1,8 @@
+@comment $NetBSD$
+${PLIST.XvMC}lib/libchromeXvMC.la
+${PLIST.XvMC}lib/libchromeXvMCPro.la
+lib/xorg/modules/drivers/openchrome_drv.la
+man/man4/openchrome.4
+@comment @dirrm lib/xorg/modules/drivers
+@comment @dirrm lib/xorg/modules
+@comment @dirrm lib/xorg
