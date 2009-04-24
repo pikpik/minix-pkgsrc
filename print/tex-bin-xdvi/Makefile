@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/23 08:44:37 minskim Exp $
-# TeX Live Revision 10592
+# $NetBSD: Makefile,v 1.2 2009/04/13 00:13:03 minskim Exp $
+# TeX Live Revision 12778
 
 DISTNAME=	bin-xdvi
-PKGNAME=	tex-${DISTNAME}-22.84.14
+PKGNAME=	tex-${DISTNAME}-22.84.14.12778
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Configuration file for xdvik
