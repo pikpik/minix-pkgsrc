@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/17 16:07:36 seb Exp $
+# $NetBSD: Makefile,v 1.2 2009/01/29 14:41:22 seb Exp $
 
 DISTNAME=	App-Nopaste-0.10
 PKGNAME=	p5-${DISTNAME}
@@ -19,7 +19,7 @@ MAKE_ENV+=	PERL_EXTUTILS_AUTOINSTALL=--skip
 
 DEPENDS+=	p5-Clipboard-[0-9]*:../../x11/p5-Clipboard
 DEPENDS+=	p5-Config-INI-[0-9]*:../../devel/p5-Config-INI
-DEPENDS+=	p5-Module-Pluggable-[0-9]*:../../devel/p5-Module-Pluggable
+DEPENDS+=	{perl>=5.10,p5-Module-Pluggable-[0-9]*}:../../devel/p5-Module-Pluggable
 DEPENDS+=	p5-Moose>=0.50:../../devel/p5-Moose
 DEPENDS+=	p5-MooseX-Getopt>=0.13:../../devel/p5-MooseX-Getopt
 DEPENDS+=	p5-WWW-Mechanize-[0-9]*:../../www/p5-WWW-Mechanize

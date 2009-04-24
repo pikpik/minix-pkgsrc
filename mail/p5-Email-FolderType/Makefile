@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/08/18 14:06:48 seb Exp $
+# $NetBSD: Makefile,v 1.2 2008/10/19 19:18:11 he Exp $
 
 DISTNAME=	Email-FolderType-0.813
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST= auto/Email/FolderType/.packlist
 
-DEPENDS+=	p5-Module-Pluggable-[0-9]*:../../devel/p5-Module-Pluggable
+DEPENDS+=	{perl>=5.10,p5-Module-Pluggable-[0-9]*}:../../devel/p5-Module-Pluggable
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
