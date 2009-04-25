@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.23 2008/12/18 17:28:16 bjs Exp $
+# $NetBSD: buildlink3.mk,v 1.24 2009/03/20 19:25:06 joerg Exp $
 
 BUILDLINK_TREE+=	vlc
 
@@ -17,7 +17,6 @@ pkgbase:= vlc
 .endif
 
 .include "../../audio/flac/buildlink3.mk"
-.include "../../audio/lame/buildlink3.mk"
 .include "../../audio/liba52/buildlink3.mk"
 .include "../../audio/libcddb/buildlink3.mk"
 .include "../../audio/libid3tag/buildlink3.mk"
