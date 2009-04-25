@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2007/05/13 16:59:39 taca Exp $
+# $NetBSD: Makefile,v 1.31 2009/02/11 14:23:31 joerg Exp $
 
 DISTNAME=	zoo-2.10pl1
 PKGNAME=	zoo-2.10.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/arcers/
 

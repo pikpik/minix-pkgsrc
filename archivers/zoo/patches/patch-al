@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-al,v 1.1 2007/05/13 16:59:39 taca Exp $
 
---- zooext.c.orig	1993-05-01 12:58:50.000000000 +0900
+--- zooext.c.orig	1993-05-01 05:58:50.000000000 +0200
 +++ zooext.c
 @@ -89,6 +89,7 @@ int alloc_size;                         
  #endif
