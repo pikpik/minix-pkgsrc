@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.472 2009/04/14 18:33:52 wiz Exp $
+# $NetBSD: Makefile,v 1.473 2009/04/17 21:42:05 minskim Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -474,6 +474,7 @@ SUBDIR+=	xerces-j
 SUBDIR+=	xfce4-dict-plugin
 SUBDIR+=	xhtml
 SUBDIR+=	xhtmldiff
+SUBDIR+=	xml2
 SUBDIR+=	xml2doc
 SUBDIR+=	xmlcatmgr
 SUBDIR+=	xmlindent
