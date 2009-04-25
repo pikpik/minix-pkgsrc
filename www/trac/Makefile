@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.42 2009/02/09 22:56:27 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2009/02/19 14:49:13 gdt Exp $
 #
 
-DISTNAME=	Trac-0.11.3
+DISTNAME=	Trac-0.11.4
 PKGNAME=	${DISTNAME:tl}
 CATEGORIES=	devel www
 MASTER_SITES=	http://ftp.edgewall.org/pub/trac/ \
@@ -10,6 +10,7 @@ MASTER_SITES=	http://ftp.edgewall.org/pub/trac/ \
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://trac.edgewall.org/
 COMMENT=	Subversion repository browser, wiki, and issue tracking system
+LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
