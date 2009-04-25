@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/2csv
+bin/2html
+bin/2xml
+bin/csv2
+bin/html2
+bin/xml2
