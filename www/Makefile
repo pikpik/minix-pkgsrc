@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.641 2009/04/20 21:29:53 tron Exp $
+# $NetBSD: Makefile,v 1.642 2009/04/21 16:29:20 tnn Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -497,9 +497,7 @@ SUBDIR+=	tidy
 SUBDIR+=	tinyproxy
 SUBDIR+=	trac
 SUBDIR+=	typo3
-SUBDIR+=	typolight
-SUBDIR+=	typolight-example
-SUBDIR+=	typolight-translations
+#SUBDIR+=	typolight
 SUBDIR+=	urlget
 SUBDIR+=	urlgrabber
 SUBDIR+=	varnish
