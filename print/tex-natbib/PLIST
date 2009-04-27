@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/bibtex/bst/natbib/abbrvnat.bst
+share/texmf-dist/bibtex/bst/natbib/plainnat.bst
+share/texmf-dist/bibtex/bst/natbib/unsrtnat.bst
+share/texmf-dist/tex/latex/natbib/bibentry.sty
+share/texmf-dist/tex/latex/natbib/natbib.sty
