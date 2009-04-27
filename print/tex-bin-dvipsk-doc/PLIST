@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf/doc/dvips/dvips.html
+share/texmf/doc/dvips/dvips.pdf
+share/texmf/doc/pkfix/README
