@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/natbib/README.1st
+share/texmf-dist/doc/latex/natbib/README.v83
+share/texmf-dist/doc/latex/natbib/natbib.ltx
+share/texmf-dist/doc/latex/natbib/natbib.pdf
+share/texmf-dist/doc/latex/natbib/natnotes.pdf
+share/texmf-dist/doc/latex/natbib/natnotes.tex
