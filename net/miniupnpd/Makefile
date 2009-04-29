@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/06 03:56:45 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2009/01/06 23:39:53 jmcneill Exp $
 #
 
 DISTNAME=	miniupnpd-20081009
+PKGREVISION=	1
 PKGNAME=	${DISTNAME:S/miniupnpd-/&1.2.0./}
 CATEGORIES=	net
 MASTER_SITES=	http://miniupnp.free.fr/files/download.php?file=
