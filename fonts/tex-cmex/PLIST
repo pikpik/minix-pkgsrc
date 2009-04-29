@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/fonts/map/dvips/cmex/ttcmex.map
+share/texmf-dist/fonts/type1/public/cmex/fmex7.pfb
+share/texmf-dist/fonts/type1/public/cmex/fmex8.pfb
+share/texmf-dist/fonts/type1/public/cmex/fmex9.pfb
