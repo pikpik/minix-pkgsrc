@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- Makefile.orig	2009-04-16 14:39:20.000000000 +0000
++++ Makefile
+@@ -59,10 +59,10 @@ LIBS=commons/commons.cma \
+ 
+ #used for clean: and depend: and a little for rec & rec.opt
+ MAKESUBDIRS=commons ocamlsexp \
+- globals menhirlib $(PYDIR) ctl parsing_cocci parsing_c \
++ globals $(PYDIR) ctl parsing_cocci parsing_c \
+  engine extra python
+ INCLUDEDIRS=commons commons/ocamlextra ocamlsexp \
+- globals menhirlib $(PYDIR) ctl \
++ globals $(PYDIR) ctl \
+  parsing_cocci parsing_c engine extra python
+ 
+ ##############################################################################
