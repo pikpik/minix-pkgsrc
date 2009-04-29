@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1154 2009/04/27 04:21:04 seb Exp $
+# $NetBSD: Makefile,v 1.1155 2009/04/29 17:15:34 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -455,6 +455,7 @@ SUBDIR+=	p5-Class-Adapter
 SUBDIR+=	p5-Class-Autouse
 SUBDIR+=	p5-Class-Base
 SUBDIR+=	p5-Class-C3
+SUBDIR+=	p5-Class-C3-Adopt-NEXT
 SUBDIR+=	p5-Class-C3-Componentised
 SUBDIR+=	p5-Class-C3-XS
 SUBDIR+=	p5-Class-Container
