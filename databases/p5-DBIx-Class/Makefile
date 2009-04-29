@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2009/04/10 09:48:06 abs Exp $
+# $NetBSD: Makefile,v 1.5 2009/04/24 17:28:05 sno Exp $
 
-DISTNAME=	DBIx-Class-0.08100
+DISTNAME=	DBIx-Class-0.08101
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DBIx/}
@@ -12,7 +12,7 @@ COMMENT=	Extensible and flexible object <-> relational mapper
 DEPENDS+=	p5-Carp-Clan>=0:../../devel/p5-Carp-Clan
 DEPENDS+=	p5-Class-Accessor-Grouped>=0.08003:../../devel/p5-Class-Accessor-Grouped
 DEPENDS+=	p5-Class-C3>=0.20:../../devel/p5-Class-C3
-DEPENDS+=	p5-Class-C3-Componentised>=1.0004:../../devel/p5-Class-C3-Componentised
+DEPENDS+=	p5-Class-C3-Componentised>=1.0005:../../devel/p5-Class-C3-Componentised
 DEPENDS+=	p5-Class-Inspector>=0:../../devel/p5-Class-Inspector
 DEPENDS+=	p5-Data-Page>=2.00:../../devel/p5-Data-Page
 DEPENDS+=	p5-JSON-Any>=1.17:../../converters/p5-JSON-Any
