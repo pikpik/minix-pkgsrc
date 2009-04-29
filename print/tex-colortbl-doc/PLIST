@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/colortbl/README
+share/texmf-dist/doc/latex/colortbl/colortbl-de.pdf
+share/texmf-dist/doc/latex/colortbl/colortbl-de.tex
+share/texmf-dist/doc/latex/colortbl/colortbl.pdf
