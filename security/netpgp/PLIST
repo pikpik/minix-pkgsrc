@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/netpgp
+include/netpgp.h
+lib/libnetpgp.la
+man/man1/netpgp.1
+man/man3/libnetpgp.3
