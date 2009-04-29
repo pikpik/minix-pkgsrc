@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/fancyhdr/extramarks.sty
+share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+share/texmf-dist/tex/latex/fancyhdr/fancyheadings.sty
