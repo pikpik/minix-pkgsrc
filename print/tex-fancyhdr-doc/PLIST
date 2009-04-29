@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/fancyhdr/README
+share/texmf-dist/doc/latex/fancyhdr/fancyhdr.pdf
+share/texmf-dist/doc/latex/fancyhdr/fancyhdr.tex
