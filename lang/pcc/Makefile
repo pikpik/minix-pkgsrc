@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.6 2007/11/03 22:38:48 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2008/02/09 14:53:14 reed Exp $
 
 DISTNAME=	pcc-0.9.9
 CATEGORIES=	lang
 MASTER_SITES=	ftp://pcc.ludd.ltu.se/pub/ \
 		http://pcc.ludd.ltu.se/ftp/pub/pcc/
 EXTRACT_SUFX=	.tgz
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://pcc.ludd.ltu.se/
