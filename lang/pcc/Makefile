@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/02/09 14:53:14 reed Exp $
+# $NetBSD: Makefile,v 1.8 2009/04/30 18:25:59 hasso Exp $
 
 DISTNAME=	pcc-0.9.9
 CATEGORIES=	lang
-MASTER_SITES=	ftp://pcc.ludd.ltu.se/pub/ \
+MASTER_SITES=	ftp://pcc.ludd.ltu.se/pub/pcc/ \
 		http://pcc.ludd.ltu.se/ftp/pub/pcc/
 EXTRACT_SUFX=	.tgz
 
