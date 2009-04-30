@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.88 2008/04/29 14:07:15 tonnerre Exp $
+# $NetBSD: Makefile,v 1.89 2008/11/10 17:21:34 wiz Exp $
 
 PKGNAME?=	${DISTNAME}
 COMMENT?=	XEmacs text editor version 21
@@ -53,8 +53,8 @@ CONFIGURE_ARGS+=	--with_sound=none
 .  endif
 .endif
 
-.if (${OPSYS} == "DragonFly") && exists(/usr/lib/crtbegin.o)
-CPPFLAGS+=		-DDFLY_PRE_17_CRT
+.if (${OPSYS} == "DragonFly") && exists(/usr/lib/crtn.o)
+CPPFLAGS+=		-DDFLY_CRT_USRLIB
 .endif
 
 CHECK_WRKREF_SKIP=	bin/xemacs*
