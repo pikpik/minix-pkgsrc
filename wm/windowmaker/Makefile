@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.76 2007/12/02 11:45:06 wiz Exp $
+# $NetBSD: Makefile,v 1.77 2008/08/10 05:20:13 obache Exp $
 
 DISTNAME=	WindowMaker-0.92.0
 PKGNAME=	${DISTNAME:S/WindowMaker/windowmaker/}
 PKGREVISION=	7
 CATEGORIES=	x11 wm windowmaker
-MASTER_SITES=	ftp://ftp.windowmaker.info/pub/source/release/ \
-		http://windowmaker.info/pub/source/release/
+MASTER_SITES=	http://windowmaker.info/pub/source/release/ \
+	ftp://ftp.dti.ad.jp/pub/X/WindowMaker/source/release/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
