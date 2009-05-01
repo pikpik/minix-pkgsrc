@@ -1,11 +1,13 @@
-# $NetBSD: Makefile,v 1.18 2006/12/27 13:37:44 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:45 joerg Exp $
 #
 
 DISTNAME=	xearth-1.1
 PKGREVISION=	3
 CATEGORIES=	x11
-MASTER_SITES=	ftp://cag.lcs.mit.edu/pub/tuna/ \
-		http://ftp.x.org/contrib/applications/
+MASTER_SITES=	http://ftp.x.org/contrib/applications/ \
+	ftp://ftp.sunet.se/pub/X11/ftp.x.org/contrib/applications/ \
+	ftp://ftp.kddlabs.co.jp/X11/ftp.x.org/contrib/applications/ \
+	ftp://ftp.gwdg.de/pub/x11/x.org/contrib/applications/
 
 MAINTAINER=	agc@NetBSD.org
 HOMEPAGE=	# AWOL
