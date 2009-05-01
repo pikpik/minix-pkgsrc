@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2008/06/20 01:09:31 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/10/19 19:18:33 he Exp $
 
-DISTNAME=	NetPacket-0.04
+DISTNAME=	NetPacket-0.41.1
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=NetPacket/}
 
