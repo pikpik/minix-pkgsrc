@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2007/02/22 19:01:24 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/09/14 11:59:39 joerg Exp $
 
 DISTNAME=	crack5.0
 PKGNAME=	crack-5.0
 PKGREVISION=	2
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.cerias.purdue.edu/pub/tools/unix/pwdutils/crack \
+MASTER_SITES=	http://packetstormsecurity.nl/Crackers/crack/ \
 		ftp://ftp.netsw.org/system/tools/password/crack/crack/
 
 MAINTAINER=	bouyer@NetBSD.org
