@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2008/11/20 20:35:22 abs Exp $
+# $NetBSD: Makefile,v 1.18 2009/02/13 15:22:02 abs Exp $
 #
 
 DISTNAME=	alpine-2.00
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/alpine/
-# DIST_SUBDIR=	alpine-2.00
+DIST_SUBDIR=	alpine-2.00
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	abs@NetBSD.org
