@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2008/03/02 06:10:33 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2008/05/26 02:13:16 joerg Exp $
 
 DISTNAME=	us1-980512
 PKGNAME=	mbrolavox-us1-980512
 PKGREVISION=	2
 CATEGORIES=	audio
-MASTER_SITES=	ftp://tcts.fpms.ac.be/pub/mbrola/VOICES/us1/ \
-		http://www.festvox.org/mbrola/dba/us1/
+MASTER_SITES=	http://www.festvox.org/mbrola/dba/us1/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
