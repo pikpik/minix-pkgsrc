@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2008/05/26 02:13:17 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/04/30 17:11:46 wiz Exp $
 #
 
 DISTNAME=	ltsa2.2
 PKGNAME=	${DISTNAME:S/ltsa/ltsa-/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.doc.ic.ac.uk/~jnm/book/ltsa-v2/
 EXTRACT_SUFX=	.zip
@@ -32,11 +32,13 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/ltsa.sh ${DESTDIR}${PREFIX}/bin/ltsa
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/lib/ltsa
 	cd ${WRKSRC}/lib && pax -rwpppm . ${DESTDIR}${PREFIX}/lib/ltsa
+	${CHMOD} -R og-w ${DESTDIR}${PREFIX}/lib/ltsa
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/ltsa
 	${INSTALL_DATA} ${WRKSRC}/fspv2.pdf ${DESTDIR}${PREFIX}/share/doc/ltsa
 	${INSTALL_DATA} ${WRKSRC}/readme.txt ${DESTDIR}${PREFIX}/share/doc/ltsa
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/examples/ltsa
 	cd ${WRKSRC}/examples && pax -rwpppm . ${DESTDIR}${PREFIX}/share/examples/ltsa
+	${CHMOD} -R og-w ${DESTDIR}${PREFIX}/share/examples/ltsa
 
 .include "../../mk/java-vm.mk"
 .include "../../mk/bsd.pkg.mk"
