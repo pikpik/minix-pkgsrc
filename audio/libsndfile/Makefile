@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2009/02/21 13:20:45 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2009/03/04 16:47:05 tnn Exp $
 
 DISTNAME=	libsndfile-1.0.19
 CATEGORIES=	audio
@@ -21,7 +21,7 @@ MAKE_JOBS_SAFE=		no
 
 SUBST_CLASSES+=		vorbis
 SUBST_FILES.vorbis=	configure
-SUBST_SED.vorbis=	"s/1\.2\.1/1.2.0/g"
+SUBST_SED.vorbis=	-e "s/1\.2\.1/1.2.0/g"
 SUBST_STAGE.vorbis=	pre-configure
 SUBST_MESSAGE.vorbis=	Allowing libvorbis-1.2.0.
 
