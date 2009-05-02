@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/10/19 19:18:59 he Exp $
+# $NetBSD: Makefile,v 1.24 2009/03/08 13:30:47 seb Exp $
 
 DISTNAME=	XML-SAX-0.96
 PKGNAME=	p5-${DISTNAME}
@@ -18,6 +18,8 @@ CONFLICTS+=	p5-XML-SAX-Base-[0-9]*
 DEPENDS+=	p5-XML-NamespaceSupport>=0.03:../../textproc/p5-XML-NamespaceSupport
 # included in perl>=5.6.1
 #DEPENDS+=	p5-File-Temp-[0-9]*:../../devel/p5-File-Temp
+
+SUPERSEDES=	p5-XML-SAX-Base-[0-9]*
 
 MAKE_ENV=	SKIP_SAX_INSTALL=yes
 EGSUBDIR=	share/examples/p5-XML-SAX

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2009/03/18 01:03:36 jmcneill Exp $
+# $NetBSD: Makefile,v 1.91 2009/03/22 19:01:38 wiz Exp $
 
 DISTNAME=		gnome-games-2.26.0
 CATEGORIES=		games gnome
@@ -12,6 +12,7 @@ COMMENT=		GNOME2 games collection
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		xbill-[0-9]*
+SUPERSEDES=		glchess-[0-9]*
 
 USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes

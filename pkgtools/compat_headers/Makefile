@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/05/28 13:40:59 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2009/04/09 00:48:11 joerg Exp $
 
 DISTNAME=		compat_headers-0.2
 CATEGORIES=		pkgtools
@@ -8,6 +8,9 @@ DISTFILES=		# empty
 MAINTAINER=		tnn@NetBSD.org
 HOMEPAGE=		http://www.pkgsrc.org/
 COMMENT=		compatibility headers
+
+PREV_PKGPATH=		pkgtools/posix_headers
+SUPERSEDES=		posix_headers-[0-9]*
 
 CHECK_PERMS=		no
 GNU_CONFIGURE=		yes

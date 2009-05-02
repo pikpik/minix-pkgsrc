@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/01/29 09:35:54 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/04/14 09:14:24 joerg Exp $
 
 DJANGOVERS=	1.0.2
 DISTNAME=	Django-${DJANGOVERS}-final
@@ -10,6 +10,8 @@ MASTER_SITES=	http://media.djangoproject.com/releases/${DJANGOVERS}/
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.djangoproject.com/
 COMMENT=	Django, a high-level Python Web framework
+
+PREV_PKGPATH=	www/py-django-devel
 
 PYDISTUTILSPKG=	# yes
 PYTHON_VERSIONS_ACCEPTED=	25 24

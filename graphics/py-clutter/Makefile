@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/02/11 14:23:32 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/04/03 07:55:23 wiz Exp $
 #
 
 DISTNAME=	pyclutter-0.8.2
@@ -12,6 +12,9 @@ HOMEPAGE=	http://www.clutter-project.org/
 COMMENT=	Python modules for Clutter toolkit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PREV_PKGPATH=	graphics/py-pyclutter
+SUPERSEDES=	${PYPKGPREFIX}-pyclutter-[0-9]*
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/12/20 18:08:07 gdt Exp $
+# $NetBSD: Makefile,v 1.11 2008/12/24 00:53:14 gdt Exp $
 
 VERSION=	5.2.3
 DISTNAME=	gutenprint-${VERSION}
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gimp-print/}
 MAINTAINER=	gdt@NetBSD.org
 COMMENT=	Drivers for Canon, Epson, Lexmark, and PCL printers
 HOMEPAGE=	http://gutenprint.sourceforge.net/
+
+PREV_PKGPATH=	print/gutenprint51-lib
 
 INSTALLVERSION=	5.2
 PLIST_SUBST+=	INSTALLVERSION=${INSTALLVERSION}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.113 2008/06/29 11:38:32 tnn Exp $
+# $NetBSD: Makefile,v 1.114 2008/12/23 22:45:00 ahoka Exp $
 
 DISTNAME=	sylpheed-2.6.0
 CATEGORIES=	mail news x11
@@ -11,6 +11,8 @@ COMMENT=	X based e-mail and netnews client
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=		sylpheed-claws-[0-9]*
+
+PREV_PKGPATH=		mail/sylpheed-devel
 
 USE_DIRS+=		xdg-1.4
 USE_PKGLOCALEDIR=	yes
