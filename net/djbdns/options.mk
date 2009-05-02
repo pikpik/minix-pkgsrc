@@ -1,11 +1,11 @@
-# $NetBSD: options.mk,v 1.11 2009/01/19 10:27:31 sketch Exp $
+# $NetBSD: options.mk,v 1.12 2009/04/22 04:48:13 schmonz Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.djbdns
 PKG_SUPPORTED_OPTIONS+=		inet6 djbdns-cachestats djbdns-ignoreip2
 PKG_SUPPORTED_OPTIONS+=		djbdns-tinydns64
 PKG_OPTIONS_OPTIONAL_GROUPS=	qmerge
 PKG_OPTIONS_GROUP.qmerge=	djbdns-qmerge1 djbdns-qmerge2
-PKG_SUGGESTED_OPTIONS=		djbdns-qmerge2
+PKG_SUGGESTED_OPTIONS+=		djbdns-qmerge2
 
 
 .if ${MACHINE_ARCH} == "sparc64" || \
