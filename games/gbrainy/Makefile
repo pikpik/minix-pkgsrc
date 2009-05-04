@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/03/25 22:37:12 he Exp $
+# $NetBSD: Makefile,v 1.12 2009/04/20 09:25:06 wiz Exp $
 #
 
 DISTNAME=	gbrainy-1.1
@@ -19,7 +19,7 @@ GNU_CONFIGURE=	yes
 USE_DIRS+=	xdg-1.4
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c
-USE_TOOLS+=	intltool pkg-config bash:run
+USE_TOOLS+=	intltool pkg-config bash:run msgfmt
 
 BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.2.0
 
