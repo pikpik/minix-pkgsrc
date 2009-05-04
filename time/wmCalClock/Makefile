@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/16 11:51:46 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2009/05/02 16:21:45 reed Exp $
 #
 
 DISTNAME=	wmCalClock-1.25
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11 time
 MASTER_SITES=	http://reality.sgiweb.org/freeware/source/wmCalClock/
 
