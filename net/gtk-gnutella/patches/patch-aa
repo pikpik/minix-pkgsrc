@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Configure.orig	2008-04-02 01:19:12.000000000 +0200
+--- Configure.orig	2009-03-29 17:37:52.000000000 +0200
 +++ Configure
-@@ -3465,6 +3465,11 @@ done'
+@@ -4043,6 +4043,11 @@ done'
  set libintl.h i_libintl
  eval $inhdr
  

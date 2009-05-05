@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.62 2009/02/10 08:35:36 adam Exp $
+# $NetBSD: Makefile,v 1.63 2009/02/15 19:13:23 joerg Exp $
 
-DISTNAME=	gtk-gnutella-0.96.5
+DISTNAME=	gtk-gnutella-0.96.6
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtk-gnutella/}
 EXTRACT_SUFX=	.tar.bz2
@@ -28,4 +28,5 @@ CONFIGURE_ARGS+=	--yacc="yacc"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/gnutls/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"
