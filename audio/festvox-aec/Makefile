@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2008/03/02 06:10:31 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2008/05/26 02:13:15 joerg Exp $
 
 DISTNAME=	voice_aec_di-2.0
 PKGNAME=	festvox-aec-2.0
 PKGREVISION=	2
 CATEGORIES=	audio
-MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/
+MASTER_SITES=	# ftp://cslu.cse.ogi.edu/pub/tts/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cslu.cse.ogi.edu/tts/
