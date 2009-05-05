@@ -108,6 +108,7 @@ man/man1/git-show-branch.1
 man/man1/git-show-index.1
 man/man1/git-show-ref.1
 man/man1/git-show.1
+man/man1/git-stage.1
 man/man1/git-stash.1
 man/man1/git-status.1
 man/man1/git-stripspace.1
@@ -143,3 +144,4 @@ man/man7/gitdiffcore.7
 man/man7/gitglossary.7
 man/man7/gittutorial-2.7
 man/man7/gittutorial.7
+man/man7/gitworkflows.7
