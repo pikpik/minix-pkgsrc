@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.17 2008/03/02 06:10:33 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2008/07/14 12:55:56 joerg Exp $
 #
 
 DISTNAME=	gtkmserv-0.5.2
 PKGREVISION=	4
 CATEGORIES=	audio
-MASTER_SITES=	http://projects.ubertechnique.com/downloads/
+MASTER_SITES=	# http://projects.ubertechnique.com/downloads/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://projects.ubertechnique.com/index.html

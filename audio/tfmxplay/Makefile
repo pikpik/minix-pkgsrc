@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2006/03/09 21:04:41 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2008/03/02 06:10:34 jlam Exp $
 #
 
 DISTNAME=	tfmxplay-0.6
 CATEGORIES=	audio
-MASTER_SITES=	http://darkstar.tabu.uni-bonn.de/~neo/tfmx/
+MASTER_SITES=	# http://darkstar.tabu.uni-bonn.de/~neo/tfmx/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
