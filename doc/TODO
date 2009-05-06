@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.8075 2009/05/05 11:58:51 adam Exp $
+$NetBSD: TODO,v 1.8076 2009/05/05 12:01:36 taca Exp $
 
 Suggested new packages
 ======================
@@ -990,8 +990,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o ns-plugger-communicator-5.1.3
 	o ns-plugger-navigator-5.1.3
 	o nsca-1.2.0
-	o nslint-2.1a6 [pkg/33142]
-	o nslint-2.1a7
 	o nspr-4.7.4
 	o nss-3.11.7
 	o ntp-4.2.5p161
