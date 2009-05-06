@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2007/03/24 19:21:30 joerg Exp $
-#
+# $NetBSD: Makefile,v 1.8 2008/06/20 01:09:31 joerg Exp $
 
-DISTNAME=	nslint-2.0.2
+DISTNAME=	nslint-2.1a9
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/ \
 		ftp://ftp.ee.lbl.gov/old/
