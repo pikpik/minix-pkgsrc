@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2008/02/06 18:45:32 reed Exp $
+# $NetBSD: Makefile,v 1.37 2008/08/17 04:36:28 dholland Exp $
 #
 
 DISTNAME=	Squeak-3.9-8
@@ -26,6 +26,8 @@ AUTOMAKE_REQD=	1.4.6
 BUILD_DIRS=		${WRKDIR}/build
 CONFIGURE_DIRS=		${WRKDIR}/build
 CONFIGURE_SCRIPT=	${WRKSRC}/platforms/unix/config/configure
+CONFIG_GUESS_OVERRIDE+=	platforms/unix/config/config.guess
+CONFIG_SUB_OVERRIDE+=	platforms/unix/config/config.sub
 DIST_SUBDIR=		squeak
 
 SQUEAK_CHANGES= Squeak3.9-final-7067/Squeak3.9-final-7067.changes.gz
