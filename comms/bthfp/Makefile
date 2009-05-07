@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/06/21 20:47:28 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/05/07 17:59:37 plunky Exp $
 
 DISTNAME=		bthfp-0.1
 CATEGORIES=		comms
@@ -7,6 +7,8 @@ DISTFILES=		bthfp-0.1.tar.gz
 
 MAINTAINER=		plunky@rya-online.net
 COMMENT=		Bluetooth Handsfree Profile
+
+LICENSE=		modified-bsd
 
 ONLY_FOR_PLATFORM=	NetBSD-[4-9].*-*
 
