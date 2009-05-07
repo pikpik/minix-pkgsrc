@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2009/02/16 11:26:40 obache Exp $
+# $NetBSD: Makefile,v 1.10 2009/03/21 05:33:56 obache Exp $
 #
 
-DISTNAME=	tokyocabinet-ruby-1.21
+DISTNAME=	tokyocabinet-ruby-1.23
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/-ruby-/-/}
 CATEGORIES=	databases ruby
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://tokyocabinet.sourceforge.net/rubydoc/
 COMMENT=	Ruby binding of Tokyo Cabinet
+
+LICENSE=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -28,7 +30,7 @@ post-install:
 	cd ${WRKSRC}/doc && pax -rwpe . ${DESTDIR}${PREFIX}/${DOCDIR}
 	${RUBY_GENERATE_PLIST}
 
-BUILDLINK_API_DEPENDS.tokyocabinet+=	tokyocabinet>=1.4.10
+BUILDLINK_API_DEPENDS.tokyocabinet+=	tokyocabinet>=1.4.15
 .include "../../databases/tokyocabinet/buildlink3.mk"
 .include "../../lang/ruby/modules.mk"
 .include "../../mk/bsd.pkg.mk"
