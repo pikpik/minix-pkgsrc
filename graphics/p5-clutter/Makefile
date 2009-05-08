@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/12/14 11:13:32 obache Exp $
 #
 
 DISTNAME=	clutter-perl-0.8.2.0
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.clutter-project.org/sources/clutter-perl/0.8/
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.clutter-project.org/
 COMMENT=	Perl bindings to the Clutter OpenGL canvas
+
+LICENSE=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
