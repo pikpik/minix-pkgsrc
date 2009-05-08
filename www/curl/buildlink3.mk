@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2008/03/10 18:35:54 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.21 2009/03/20 19:25:36 joerg Exp $
 
 BUILDLINK_TREE+=	curl
 
@@ -16,6 +16,9 @@ pkgbase:= curl
 .  endif
 .  if !empty(PKG_BUILD_OPTIONS.curl:Mgssapi)
 .    include "../../mk/krb5.buildlink3.mk"
+.  endif
+.  if !empty(PKG_BUILD_OPTIONS.curl:Mldap)
+.    include "../../databases/openldap-client/buildlink3.mk"
 .  endif
 
 .include "../../devel/libidn/buildlink3.mk"
