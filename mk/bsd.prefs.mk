@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.289 2009/04/08 23:02:03 joerg Exp $
+# $NetBSD: bsd.prefs.mk,v 1.290 2009/04/08 23:03:14 joerg Exp $
 #
 # This file includes the mk.conf file, which contains the user settings.
 #
@@ -381,14 +381,15 @@ do-install:
 USE_DESTDIR?=		no
 PKG_DESTDIR_SUPPORT?=	# empty
 
-.if empty(PKG_DESTDIR_SUPPORT) || (empty(USE_DESTDIR:M[Yy][Ee][Ss]) && empty(USE_DESTDIR:M[Ff][Uu][Ll][Ll]))
+.if !empty(USE_DESTDIR:M[Ff][Uu][Ll][Ll])
+WARNINGS+=	"USE_DESTDIR=full is deprecated, just use USE_DESTDIR=yes"
+USE_DESTDIR:=		yes
+.endif
+
+.if empty(PKG_DESTDIR_SUPPORT) || empty(USE_DESTDIR:M[Yy][Ee][Ss])
 _USE_DESTDIR=		no
 .elif ${PKG_DESTDIR_SUPPORT} == "user-destdir"
-.  if !empty(USE_DESTDIR:M[Ff][Uu][Ll][Ll])
 _USE_DESTDIR=		user-destdir
-.  else
-_USE_DESTDIR=		destdir
-.  endif
 .elif ${PKG_DESTDIR_SUPPORT} == "destdir"
 _USE_DESTDIR=		destdir
 .else
