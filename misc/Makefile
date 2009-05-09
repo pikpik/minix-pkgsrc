@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.324 2009/02/14 20:59:54 plunky Exp $
+# $NetBSD: Makefile,v 1.325 2009/03/06 12:29:06 hasso Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -144,6 +144,7 @@ SUBDIR+=	openoffice2-bin
 SUBDIR+=	openoffice3
 SUBDIR+=	openoffice3-bin
 SUBDIR+=	orca
+SUBDIR+=	p5-App-MrShell
 SUBDIR+=	p5-Array-PrintCols
 SUBDIR+=	p5-Business-CreditCard
 SUBDIR+=	p5-Business-ISBN
