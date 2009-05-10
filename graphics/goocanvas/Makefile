@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/11/20 14:22:15 hasso Exp $
+# $NetBSD: Makefile,v 1.3 2009/05/10 04:59:38 obache Exp $
 #
 
 DISTNAME=	goocanvas-0.14
@@ -9,7 +9,7 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/GooCanvas
 COMMENT=	Cairo-based canvas widget for GTK+
 
-LICENSE=	gnu-lgpl-v2.1
+LICENSE=	gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
