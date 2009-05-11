@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.34 2008/12/20 00:43:47 jmcneill Exp $
+# $NetBSD: options.mk,v 1.35 2009/01/03 15:18:18 shattered Exp $
 
 .if defined(PKGNAME) && empty(PKGNAME:Mmplayer-share*)
 
@@ -19,12 +19,12 @@ PKG_SUPPORTED_OPTIONS=	gif jpeg mad dts dv dvdread png theora vorbis x264 debug
 PKG_SUPPORTED_OPTIONS+=	oss
 .endif
 
-# Set options based on the specific package being built.
-.if !empty(PKGNAME:M*mplayer*)
 PKG_OPTIONS_OPTIONAL_GROUPS=	faadgroup
 PKG_OPTIONS_GROUP.faadgroup=	faad mplayer-internal-faad
 PKG_SUGGESTED_OPTIONS+=		mplayer-internal-faad
 
+# Set options based on the specific package being built.
+.if !empty(PKGNAME:M*mplayer*)
 PKG_SUPPORTED_OPTIONS+=	aalib esound ggi mplayer-menu nas pulseaudio sdl
 
 .  if ${OPSYS} != "SunOS"
