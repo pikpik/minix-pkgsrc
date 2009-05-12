@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2008/02/05 22:59:05 heinz Exp $
+# $NetBSD: Makefile,v 1.6 2008/05/26 02:13:17 joerg Exp $
 #
 
 BOOST_PACKAGE=		docs
 BOOST_COMMENT=		(documentation)
 BOOST_CONFIG=		no
+PKGREVISION=		1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -28,5 +29,7 @@ do-install:
 		-type f -print | ${XARGS} ${CHOWN} ${SHAREOWN}:${SHAREGRP}
 	${FIND} ${DESTDIR}${DOCDIR} \
 		-type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
+	${FIND} ${DESTDIR}${DOCDIR} \
+		-type f -print | ${XARGS} ${CHMOD} ${SHAREMODE}
 
 .include "../../mk/bsd.pkg.mk"
