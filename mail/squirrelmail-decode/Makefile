@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/10/30 19:31:41 martti Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/04 17:57:20 jlam Exp $
 
 DISTNAME=	squirrelmail-decode-1.2
 #PKGREVISION=	1
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://www.squirrelmail.org/
 COMMENT=	Extra decoding library for SquirrelMail
-#LICENSE=	gnu-gpl-v2
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

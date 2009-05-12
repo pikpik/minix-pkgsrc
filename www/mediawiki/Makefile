@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/02/07 11:09:37 martti Exp $
+# $NetBSD: Makefile,v 1.5 2009/02/22 11:58:57 martti Exp $
 
 DISTNAME=	mediawiki-${VER}.${PVER}
 CATEGORIES=	www
@@ -7,7 +7,7 @@ MASTER_SITES=	http://download.wikimedia.org/mediawiki/${VER}/
 MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://www.mediawiki.org/
 COMMENT=	Free software wiki package originally written for Wikipedia
-#LICENSE=	gnu-gpl-v2
+LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=4.3.10:../../databases/php-mysql
 
