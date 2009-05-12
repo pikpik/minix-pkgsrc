@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2008/12/20 18:34:14 reed Exp $
+# $NetBSD: Makefile,v 1.11 2009/02/09 22:56:24 joerg Exp $
 
 DISTNAME=	gcompris-8.4.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gcompris/}
 
@@ -32,6 +32,9 @@ PKG_OPTIONS_VAR=	PKG_OPTIONS.gcompris
 CONFIGURE_ARGS+=	--enable-gnet
 .include "../../net/gnet/buildlink3.mk"
 .endif
+
+post-extract:
+	${CHMOD} -R go-w ${WRKSRC}
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../databases/py-sqlite2/buildlink3.mk"

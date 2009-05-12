@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.60 2009/03/16 18:13:34 adrianp Exp $
+# $NetBSD: Makefile,v 1.61 2009/04/03 19:52:38 joerg Exp $
 
 DISTNAME=	dspam-3.8.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://dspam.nuclearelephant.com/sources/
 
@@ -115,6 +115,9 @@ SUBST_SED.conf+=	-e "s|@PREFIX@|${PREFIX}|g"
 SUBST_SED.conf+=	-e "s|@VARBASE@|${VARBASE}|g"
 SUBST_SED.conf+=	-e "s|@DSPAM_PIDDIR@|${DSPAM_PIDDIR}|g"
 SUBST_MESSAGE.conf=	Fixing configuration file.
+
+post-extract:
+	${CHMOD} -R go-w ${WRKSRC}
 
 post-install:
 	${INSTALL_DATA_DIR} ${DOCDIR}
