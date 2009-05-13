@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.126 2009/04/15 03:14:50 reed Exp $
+# $NetBSD: Makefile,v 1.127 2009/04/16 18:52:27 drochner Exp $
 
-DISTNAME=		pango-1.24.1
+DISTNAME=		pango-1.24.2
 CATEGORIES=		devel fonts
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/pango/1.24/}
 EXTRACT_SUFX=		.tar.bz2
@@ -8,6 +8,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.pango.org/
 COMMENT=		Library for layout and rendering of text
+
+LICENSE=		gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
