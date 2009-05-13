@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-au,v 1.5 2008/10/16 09:40:20 martti Exp $
 
 Support for sqlite.
 
