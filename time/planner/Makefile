@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/03/08 15:56:47 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2009/05/13 00:06:12 dsainty Exp $
 #
 
 DISTNAME=	planner-0.14.4
@@ -31,6 +31,7 @@ GCONF_SCHEMAS=		planner.schemas
 .include "../../devel/libbonoboui/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
+.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../print/libgnomeprintui/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
