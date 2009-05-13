@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2008/11/24 14:14:52 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2008/12/20 23:31:54 jmcneill Exp $
 #
 
-DISTNAME=	libxklavier-3.8
-PKGREVISION=	1
+DISTNAME=	libxklavier-3.9
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gswitchit/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://freedesktop.org/Software/LibXklavier
 COMMENT=	High-level API for the X Keyboard Extension (XKB)
+
+LICENSE=	gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
