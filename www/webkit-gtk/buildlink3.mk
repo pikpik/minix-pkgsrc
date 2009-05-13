@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2009/03/25 22:37:15 he Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2009/04/08 16:42:50 drochner Exp $
 
 BUILDLINK_TREE+=	webkit-gtk
 
@@ -17,6 +17,7 @@ BUILDLINK_PKGSRCDIR.webkit-gtk?=	../../www/webkit-gtk
 .include "../../multimedia/gstreamer0.10/buildlink3.mk"
 .include "../../multimedia/gst-plugins0.10-base/buildlink3.mk"
 .include "../../net/libsoup24/buildlink3.mk"
+.include "../../textproc/enchant/buildlink3.mk"
 .include "../../textproc/icu/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
