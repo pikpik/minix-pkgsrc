@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${PYSITELIB}/matplotlib/backends/_tkagg.so
