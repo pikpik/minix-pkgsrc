@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/hyph-utf8/README
+share/texmf-dist/doc/generic/hyph-utf8/bg/azbukaExtended.pdf
+share/texmf-dist/doc/generic/hyph-utf8/bg/azbukaExtended.tex
+share/texmf-dist/doc/generic/hyph-utf8/hu/huhyphn.pdf
