@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2007/05/21 09:56:15 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/12/02 11:50:24 wiz Exp $
 
 DISTNAME=	tk8.3.4
 PKGNAME=	tk-8.3.4
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.informatik.uni-hamburg.de/pub/soft/lang/tcl/tcl8_3/
 
