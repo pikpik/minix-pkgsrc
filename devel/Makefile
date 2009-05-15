@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1161 2009/05/10 14:54:43 hasso Exp $
+# $NetBSD: Makefile,v 1.1162 2009/05/14 05:54:09 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -361,6 +361,7 @@ SUBDIR+=	makedepend
 SUBDIR+=	makedepf90
 SUBDIR+=	maketool
 SUBDIR+=	mantis
+SUBDIR+=	matio
 SUBDIR+=	meld
 SUBDIR+=	mell
 SUBDIR+=	memcached
