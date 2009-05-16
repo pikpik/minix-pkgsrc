@@ -1,4 +1,4 @@
-# $NetBSD: packlist.mk,v 1.11 2007/01/15 05:32:04 rillig Exp $
+# $NetBSD: packlist.mk,v 1.12 2007/01/15 05:36:04 rillig Exp $
 #
 # This Makefile fragment is intended to be included by packages that
 # create packlist files.  This file is automatically included by
@@ -114,7 +114,7 @@ post-install: perl-packlist
 
 .PHONY: perl-packlist
 perl-packlist:
-	${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}								\
 	${TEST} -n ${_PERL5_PACKLIST:Q}"" || exit 0;			\
 	for file in ${_PERL5_PACKLIST}; do				\
 		if ${TEST} ! -f "$$file"; then				\

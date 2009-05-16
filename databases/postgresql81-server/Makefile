@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/01/18 05:06:30 tnn Exp $
+# $NetBSD: Makefile,v 1.10 2008/06/20 08:27:58 adam Exp $
 
 PKGNAME=	postgresql81-server-${BASE_VERS}
 COMMENT=	PostgreSQL database server programs
@@ -84,12 +84,12 @@ post-wrapper:
 .endif
 
 pre-build:
-	${_PKG_SILENT}${_PKG_DEBUG}${_ULIMIT_CMD}			\
+	${RUN} ${_ULIMIT_CMD}						\
 	cd ${WRKSRC}/src/backend &&					\
-	env ${MAKE_ENV} ${MAKE_PROGRAM} ${BUILD_MAKE_FLAGS}	\
+	env ${MAKE_ENV} ${MAKE_PROGRAM} ${BUILD_MAKE_FLAGS}		\
 		../../src/include/parser/parse.h			\
 		../../src/include/utils/fmgroids.h
-	${_PKG_SILENT}${_PKG_DEBUG}${_ULIMIT_CMD}			\
+	${RUN} ${_ULIMIT_CMD}						\
 	cd ${WRKSRC}/src/port &&					\
        	env ${MAKE_ENV} ${MAKE_PROGRAM} ${BUILD_MAKE_FLAGS}
 

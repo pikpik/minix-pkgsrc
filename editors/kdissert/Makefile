@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/01/18 05:06:32 tnn Exp $
+# $NetBSD: Makefile,v 1.16 2009/02/27 19:51:13 drochner Exp $
 #
 
 DISTNAME=		kdissert-1.0.7
@@ -16,16 +16,16 @@ USE_TOOLS+=		msgfmt
 PYTHON_FOR_BUILD_ONLY=	yes
 
 do-configure:
-	${_PKG_SILENT}${_PKG_DEBUG}${_ULIMIT_CMD} \
+	${RUN} ${_ULIMIT_CMD} \
 	cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \
 	${PYTHONBIN} waf configure --prefix=${PTEFIX}
 
 do-build:
-	${_PKG_SILENT}${_PKG_DEBUG}${_ULIMIT_CMD}			\
+	${RUN} ${_ULIMIT_CMD} \
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PYTHONBIN} waf
 
 do-install:
-	${_PKG_SILENT}${_PKG_DEBUG}${_ULIMIT_CMD}			\
+	${RUN} ${_ULIMIT_CMD} \
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 	${PYTHONBIN} waf install
 

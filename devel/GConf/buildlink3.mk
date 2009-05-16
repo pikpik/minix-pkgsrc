@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.15 2008/10/09 20:53:48 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.16 2009/03/20 19:24:08 joerg Exp $
 
 BUILDLINK_TREE+=	GConf
 
@@ -22,7 +22,7 @@ _GCONF_FAKE=		${BUILDLINK_DIR}/bin/gconftool-2
 
 .PHONY: GConf-buildlink-fake
 GConf-buildlink-fake:
-	${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN} \
 	if [ ! -f ${_GCONF_FAKE} ]; then				\
 		${ECHO_BUILDLINK_MSG} "Creating ${_GCONF_FAKE}";	\
 		${MKDIR} ${_GCONF_FAKE:H};				\

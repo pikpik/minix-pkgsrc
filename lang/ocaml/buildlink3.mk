@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.21 2008/01/23 20:42:25 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2009/03/20 19:24:51 joerg Exp $
 
 BUILDLINK_TREE+=	ocaml
 
@@ -25,7 +25,7 @@ OCAMLBIN_WRAPPERS=	ocaml
 
 .PHONY: ocaml-wrappers
 ocaml-wrappers:
-	${_PKG_SILENT}${_PKG_DEBUG} set -e;				\
+	${RUN}								\
 	for w in ${OCAML_WRAPPERS}; do					\
 		${SED}	-e 's|@SH@|'${SH:Q}'|g'				\
 			-e 's|@OCAML_PREFIX@|${BUILDLINK_PREFIX.ocaml}|g' \
@@ -35,7 +35,7 @@ ocaml-wrappers:
 			> ${BUILDLINK_DIR}/bin/"$$w";			\
 		${CHMOD} +x ${BUILDLINK_DIR}/bin/"$$w";			\
 	done
-	${_PKG_SILENT}${_PKG_DEBUG} set -e;				\
+	${RUN}								\
 	for w in ${OCAMLBIN_WRAPPERS}; do				\
 		${LN} -s ${BUILDLINK_PREFIX.ocaml}/bin/"$$w"		\
 		         ${BUILDLINK_DIR}/bin/"$$w";			\
