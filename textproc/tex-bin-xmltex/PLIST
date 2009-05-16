@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/pdfxmltex
+bin/xmltex
+share/texmf/fmtutil/format.xmltex.cnf
