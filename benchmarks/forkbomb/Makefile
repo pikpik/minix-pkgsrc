@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2008/03/03 00:51:44 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2008/04/07 17:09:03 joerg Exp $
 #
 
 DISTNAME=	forkbomb-1.4
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://home.tiscali.cz:8080/~cz210552/distfiles/
+MASTER_SITES=	${MASTER_SITE_GENTOO:=distfiles/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.tiscali.cz:8080/~cz210552/forkbomb.html
