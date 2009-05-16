@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2007/01/07 09:13:48 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/03 01:10:06 jlam Exp $
 #
 
 DISTNAME=		lucy-1.18p
 CATEGORIES=		biology
-MASTER_SITES=		ftp://ftp.tigr.org/pub/software/Lucy/
+MASTER_SITES=		# ftp://ftp.tigr.org/pub/software/Lucy/
 
 MAINTAINER=		dprice@cs.nmsu.edu
-HOMEPAGE=		http://www.tigr.org/software/
+HOMEPAGE=		http://lucy.sourceforge.net/
 COMMENT=		Sequence Cleanup Program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
