@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2006/08/31 18:04:08 rillig Exp $
+# $NetBSD: Makefile,v 1.31 2008/01/19 09:16:18 wiz Exp $
 
 DISTNAME=		lmbench-2alpha11
 PKGNAME=		lmbench-2.11a
 PKGREVISION=		3
 CATEGORIES=		benchmarks
-MASTER_SITES=		ftp://ftp.bitmover.com/lmbench/
+MASTER_SITES=		ftp://ftp.kreonet.re.kr/tools/benchmark/lmbench/old/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
