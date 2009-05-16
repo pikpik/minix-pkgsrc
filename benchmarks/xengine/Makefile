@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2008/07/27 09:09:51 obache Exp $
+# $NetBSD: Makefile,v 1.22 2008/11/10 17:21:33 wiz Exp $
 
 DISTNAME=	xengine-1.0.1
 PKGREVISION=	4
 CATEGORIES=	benchmarks
-MASTER_SITES=	#ftp://ftp.lab.kdd.co.jp/Usenet/comp.sources.x/volume09/xengine/
+MASTER_SITES=	ftp://ftp.42.org/pub/OLD/x/xengine/
 DISTFILES=	part01.z patch1.z
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
