@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.470 2009/04/19 09:28:29 seb Exp $
+# $NetBSD: Makefile,v 1.471 2009/05/16 08:08:22 adam Exp $
 #
 
 COMMENT=	System utilities
@@ -213,6 +213,7 @@ SUBDIR+=	p5-Filesys-Statvfs
 SUBDIR+=	p5-GTop
 SUBDIR+=	p5-Lchown
 SUBDIR+=	p5-Parse-Syslog
+SUBDIR+=	p5-SSH-Batch
 SUBDIR+=	p5-Sys-CpuLoad
 SUBDIR+=	p5-Sys-Filesystem
 SUBDIR+=	p5-Sys-Hostname-Long
