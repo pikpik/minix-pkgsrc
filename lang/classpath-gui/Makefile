@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2007/01/17 03:11:19 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2007/09/21 13:03:56 wiz Exp $
 
 .include "../../lang/classpath/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/classpath/classpath-gui/}
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT+=	(GUI libraries)
 
 DEPENDS+=	classpath>=0.93:../../lang/classpath
