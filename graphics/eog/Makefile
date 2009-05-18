@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.44 2009/03/22 19:01:38 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2009/04/07 10:33:41 drochner Exp $
 #
 
-DISTNAME=	eog-2.26.0
+DISTNAME=	eog-2.26.1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/eog/2.26/}
 EXTRACT_SUFX=	.tar.bz2
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Eye of GNOME: an image viewing and cataloging program
+
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
