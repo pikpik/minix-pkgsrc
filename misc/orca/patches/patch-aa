@@ -1,4 +1,6 @@
-$NetBSD: patch-aa,v 1.1.1.1 2007/07/17 19:03:16 drochner Exp $
+$NetBSD: patch-aa,v 1.2 2008/10/27 00:33:42 wiz Exp $
+
+http://bugzilla.gnome.org/show_bug.cgi?id=583274
 
 --- src/orca/orca.in.orig	2008-10-14 22:49:59.000000000 +0000
 +++ src/orca/orca.in

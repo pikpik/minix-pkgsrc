@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1 2008/12/18 00:45:44 jmcneill Exp $
+
+http://bugzilla.gnome.org/show_bug.cgi?id=583270
 
 --- browser-plugin/totemPluginGlue.cpp.orig	2008-12-17 18:20:22.000000000 -0500
 +++ browser-plugin/totemPluginGlue.cpp	2008-12-17 18:20:38.000000000 -0500

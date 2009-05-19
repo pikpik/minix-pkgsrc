@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.7 2008/09/14 14:35:27 drochner Exp $
+
+http://bugzilla.gnome.org/show_bug.cgi?id=583276
 
 --- backend/pdf/ev-poppler.cc.orig	2008-08-29 19:38:51.000000000 +0200
 +++ backend/pdf/ev-poppler.cc

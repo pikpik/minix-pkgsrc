@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.3 2007/11/05 19:45:50 drochner Exp $
+
+http://bugzilla.gnome.org/show_bug.cgi?id=583285
 
 --- savers/floaters.c.orig	2007-09-17 23:15:12.000000000 +0200
 +++ savers/floaters.c
