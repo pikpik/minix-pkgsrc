@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/11/17 22:14:19 he Exp $
+# $NetBSD: Makefile,v 1.4 2009/04/12 19:13:34 sno Exp $
 
-DISTNAME=	Test-Output-0.13
+DISTNAME=	Test-Output-0.16
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5to
 CATEGORIES=	devel perl5
@@ -12,7 +12,7 @@ COMMENT=	Utilities to test STDOUT and STDERR messages
 LICENSE=	artistic-2.0
 
 DEPENDS+=	p5-Sub-Exporter-[0-9]*:../../devel/p5-Sub-Exporter
-DEPENDS+=	p5-Test-Tester>=0.103:../../devel/p5-Test-Tester
+DEPENDS+=	p5-Test-Tester>=0.107:../../devel/p5-Test-Tester
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
