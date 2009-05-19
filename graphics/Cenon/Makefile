@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/06/12 02:14:31 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2009/04/19 07:57:27 rh Exp $
 #
 
 DISTNAME=		Cenon-3.83
@@ -10,7 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.cenon.info/
 COMMENT=		Vector graphics / CAD / DTP program
-
 LICENSE=		vhf-public-license
 
 PKG_DESTDIR_SUPPORT=	user-destdir

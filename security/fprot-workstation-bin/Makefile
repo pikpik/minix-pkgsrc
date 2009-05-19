@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2007/08/07 21:42:55 taca Exp $
+# $NetBSD: Makefile,v 1.39 2007/08/21 23:14:45 jlam Exp $
 
 DISTNAME=		fprot-workstation-bin	# overridden below
 PKGNAME=		fprot-workstation-bin-${FPVER}
@@ -10,8 +10,8 @@ FPVER=			4.6.8
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.f-prot.com/products/home_use/
 COMMENT=		F-prot antivirus for home users
-
 LICENSE=		fprot-workstation-license
+
 RESTRICTED=		Redistribution not permitted
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}

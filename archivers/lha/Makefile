@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2007/05/28 21:21:09 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2008/03/02 03:48:36 jlam Exp $
 
 DISTNAME=	lha-114i
 PKGNAME=	lha-114.9
@@ -9,8 +9,8 @@ MASTER_SITES=	http://www2m.biglobe.ne.jp/~dolphin/lha/prog/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www2m.biglobe.ne.jp/~dolphin/lha/lha-unix.htm
 COMMENT=	Archive files using LZW compression (.lzh files)
-
 LICENSE=	lha-license
+
 RESTRICTED=	Other than for-free distribution of the unmodified source \
 		over a network, redistribution terms are complex.
 NO_SRC_ON_CDROM=${RESTRICTED}

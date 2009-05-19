@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/02/15 10:45:02 spz Exp $
+# $NetBSD: Makefile,v 1.25 2009/03/15 20:10:35 spz Exp $
 #
 
 DISTNAME=		IRRToolSet-4.8.5
@@ -9,13 +9,12 @@ MASTER_SITES=	ftp://ftp.isc.org/isc/IRRToolSet/IRRToolSet-4.8.5/
 MAINTAINER=		spz@NetBSD.org
 HOMEPAGE=		http://www.isc.org/index.pl?/sw/IRRToolSet/
 COMMENT=		The Internet Routing Registry Toolset - client to IRRd
+LICENSE=		no-commercial-use
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=         bison flex gmake perl
 
 INSTALLATION_DIRS=	${PKGBINDIR} ${PKGMANDIR}/man1 ${PKGMANDIR}/man3
-
-LICENSE=		no-commercial-use
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

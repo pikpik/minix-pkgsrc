@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/12/14 11:06:42 obache Exp $
+# $NetBSD: Makefile,v 1.2 2009/05/08 11:09:33 obache Exp $
 #
 
 DISTNAME=	clutter-gtk-0.8.3
@@ -8,7 +8,6 @@ MASTER_SITES=	http://www.clutter-project.org/sources/clutter-gtk/0.8/
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.clutter-project.org/
 COMMENT=	GTK+ Integration library for Clutter
-
 LICENSE=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir

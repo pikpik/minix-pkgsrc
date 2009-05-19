@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.89 2007/10/31 21:44:19 gdt Exp $
+# $NetBSD: Makefile.common,v 1.90 2008/05/26 02:13:25 joerg Exp $
 #
 # Common include file for communicator and navigator packages
 
@@ -6,8 +6,8 @@ CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE?=	http://www.netscape.com/browsers/index.html
-
 LICENSE=	generic-nonlicense
+
 RESTRICTED=	No re-distribution without agreement from Netscape
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}

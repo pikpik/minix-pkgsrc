@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/05/26 02:13:23 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2009/01/06 22:53:30 abs Exp $
 
 PKGNAME=		teamspeak-server-2.0.24.01
 DISTNAME=		ts2_server_rc2_202319
@@ -12,12 +12,12 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} server_linux
 MAINTAINER=		abs@NetBSD.org
 HOMEPAGE=		http://www.goteamspeak.com/
 COMMENT=		Teamspeak group VoIP server
+LICENSE=		teamspeak-license-200700213
 
 RESTRICTED=             Redistribution to third parties is expressly prohibited
 NO_SRC_ON_CDROM=        ${RESTRICTED}
 NO_BIN_ON_FTP=          ${RESTRICTED}
 NO_BIN_ON_CDROM=        ${RESTRICTED}
-LICENSE=		teamspeak-license-200700213
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base

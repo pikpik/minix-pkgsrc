@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.149 2009/02/11 15:46:28 joerg Exp $
+# $NetBSD: Makefile,v 1.150 2009/05/02 19:23:44 sno Exp $
 
 DISTNAME=	perl-5.10.0
 CATEGORIES=	lang devel perl5
@@ -9,7 +9,7 @@ DISTFILES+=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	jlam@pkgsrc.org
 HOMEPAGE=	http://www.perl.org/
 COMMENT=	Practical Extraction and Report Language
-#LICENSE=	gnu-gpl-v2
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

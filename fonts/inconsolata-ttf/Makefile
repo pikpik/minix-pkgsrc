@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2007/08/22 15:16:36 smb Exp $
+# $NetBSD: Makefile,v 1.2 2009/02/07 19:49:15 joerg Exp $
 #
 
 DISTNAME=	Inconsolata.otf
@@ -10,7 +10,6 @@ EXTRACT_SUFX=	# empty
 MAINTAINER=	smb@NetBSD.org
 HOMEPAGE=	http://www.levien.com/type/myfonts/inconsolata.html
 COMMENT=	Inconsolata TrueType font
-
 #LICENSE=	sil-open-font-license
 
 PKG_DESTDIR_SUPPORT=	user-destdir

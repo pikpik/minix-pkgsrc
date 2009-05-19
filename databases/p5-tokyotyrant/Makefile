@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/03/21 05:37:46 obache Exp $
+# $NetBSD: Makefile,v 1.11 2009/05/07 11:06:28 obache Exp $
 #
 
 DISTNAME=	tokyotyrant-perl-1.10
@@ -9,7 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://tokyocabinet.sourceforge.net/tyrantperldoc/
 COMMENT=	Pure Perl Interface of Tokyo Tyrant
-
 LICENSES=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir

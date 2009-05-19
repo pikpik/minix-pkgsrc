@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2008/03/02 03:48:36 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2009/02/09 23:29:54 joerg Exp $
 #
 
 DISTNAME=		bicom101
@@ -11,8 +11,8 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www3.sympatico.ca/mt0000/bicom/bicom.html
 COMMENT=		Data compressor in the PPM family
-
 LICENSE=		bicom-license
+
 RESTRICTED=		No commercial use without prior arrangement, no permission to distribute granted.
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}

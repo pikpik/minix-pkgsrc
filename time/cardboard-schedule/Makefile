@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/06/20 01:09:38 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2008/09/12 18:43:51 gdt Exp $
 #
 
 DISTNAME=	cs113ins
@@ -11,16 +11,16 @@ EXTRACT_SUFX=	.exe
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cardboard.nu/docs/software.html
 COMMENT=	Project and resource management software implemented in Java/Swing
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-USE_X11BASE=	yes
-
 LICENSE=	cardboard-schedule-license
+
 RESTRICTED=	Distribution permitted only of unmodified distfile at no charge.
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_X11BASE=	yes
 
 USE_TOOLS+=	pax gtar unzip
 

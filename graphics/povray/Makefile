@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2008/06/12 02:14:32 joerg Exp $
+# $NetBSD: Makefile,v 1.41 2008/12/01 12:01:18 obache Exp $
 
 DISTNAME=	povray-3.6.1
 PKGREVISION=	5
@@ -10,10 +10,9 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.povray.org/
 COMMENT=	Persistence of Vision Ray Tracer
+LICENSE=	povray-license
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-LICENSE=	povray-license
 
 BUILDLINK_API_DEPENDS.zlib+=	zlib>=1.2.1
 

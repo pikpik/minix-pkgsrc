@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2008/01/25 23:44:14 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/09 16:53:16 sno Exp $
 
 PKGNAME=		sapnwrfcsdk-7.11
 CATEGORIES=		devel
@@ -65,8 +65,8 @@ EXTRACT_CMD=		SAPCAR -xvf ${DOWNLOADED_DISTFILE}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		SAP NetWeaver RFC SDK
-
 LICENSE=		sap-license
+
 RESTRICTED=		Only unmodified original package can be distributed
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}

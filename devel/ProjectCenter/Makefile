@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2008/10/01 22:03:02 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2009/04/13 12:31:54 rh Exp $
 
 DISTNAME=	ProjectCenter-0.5.0
 CATEGORIES=	devel gnustep
@@ -7,7 +7,6 @@ MASTER_SITES=	${MASTER_SITE_GNUSTEP:=dev-apps/}
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/experience/ProjectCenter.html
 COMMENT=	GNUstep Integrated Development Environment
-
 LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	destdir

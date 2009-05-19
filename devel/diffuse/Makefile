@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/04/16 22:43:30 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2009/04/29 09:16:47 wiz Exp $
 #
 
 DISTNAME=	diffuse-0.3.3
@@ -9,7 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://diffuse.sourceforge.net/
 COMMENT=	Graphical tool for merging and comparing text files
-
 LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/06/21 22:43:21 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2009/04/13 12:24:28 rh Exp $
 #
 
 DISTNAME=	gnustep-examples-1.2.0
@@ -8,10 +8,9 @@ MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	Some GUI programming examples for GNUstep
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-LICENSE=	gnu-gpl-v2
 
 USE_LANGUAGES=	objc
 

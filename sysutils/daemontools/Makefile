@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2008/02/19 21:12:06 schmonz Exp $
+# $NetBSD: Makefile,v 1.32 2009/02/16 18:46:42 joerg Exp $
 
 DISTNAME=		daemontools-0.76
 PKGREVISION=		1
@@ -9,7 +9,7 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} ${MANPAGES}
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://cr.yp.to/daemontools.html
 COMMENT=		Service monitoring and logging utilities by djb
-#LICENSE=		public-domain
+LICENSE=		public-domain
 
 MANPAGES=		${DISTNAME}-man-20020131.tar.gz
 SITES.${MANPAGES}=	http://smarden.org/pape/djb/manpages/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/04/28 14:54:27 shannonjr Exp $
+# $NetBSD: Makefile,v 1.22 2008/06/20 01:09:33 joerg Exp $
 #
 
 DISTNAME=		gnupg-2.0.9
@@ -16,6 +16,7 @@ SITES.libassuan-1.0.4.tar.bz2=	ftp://ftp.gnupg.org/gcrypt/libassuan/
 MAINTAINER=		shannonjr@NetBSD.org
 HOMEPAGE=		http://www.gnupg.org/
 COMMENT=		GNUpg with OpenPGP and S/MIME capabilities
+LICENSE=		gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -32,7 +33,6 @@ USE_TOOLS+=		automake
 USE_TOOLS+=		gettext
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-#LICENSE=		GPLv3
 
 CONFIGURE_ARGS+=	--sharedstatedir=${VARBASE:Q}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}

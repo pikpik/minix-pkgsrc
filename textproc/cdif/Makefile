@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:37 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2008/09/12 12:00:12 gdt Exp $
 #
 
 DISTNAME=		cdif-1.15
@@ -9,13 +9,13 @@ EXTRACT_SUFX=		# empty
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.srekcah.org/~utashiro/perl/scripts/cdif/
 COMMENT=		Word context diff
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 LICENSE=		cdif-license
+
 RESTRICTED=		Redistribution only for "non-commercial purpose".
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 

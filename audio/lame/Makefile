@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2008/10/09 14:45:32 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2009/01/27 22:03:12 sketch Exp $
 #
 
 DISTNAME=	lame-398-2
@@ -10,7 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/} \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lame.sourceforge.net/
 COMMENT=	Fast, high quality MP3 encoder
-
 LICENSE=	lame-license
 
 PKG_DESTDIR_SUPPORT=	user-destdir

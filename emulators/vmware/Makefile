@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/07/29 05:19:24 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2008/03/03 19:21:38 jlam Exp $
 
 DISTNAME=	VMware-2.0.4-1142
 PKGNAME=	vmware-2.0.4
@@ -16,10 +16,9 @@ MASTER_SITES=	http://www4.vmware.com/software/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.vmware.com/
 COMMENT=	VMware 2.x emulator
+LICENSE=	vmware-license
 
 DEPENDS+=	vmware-module-1.*:../../emulators/vmware-module
-
-LICENSE=	vmware-license
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	vmware

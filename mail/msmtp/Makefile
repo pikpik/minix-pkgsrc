@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2008/08/12 16:39:56 reed Exp $
+# $NetBSD: Makefile,v 1.21 2009/01/06 12:08:01 obache Exp $
 
 DISTNAME=	msmtp-1.4.17
 CATEGORIES=	mail
@@ -8,8 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	bcv@hub3.net
 HOMEPAGE=	http://msmtp.sourceforge.net/
 COMMENT=	SMTP plugin for MUAs
-
-#LICENSE=	gnu-gpl-v3
+LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

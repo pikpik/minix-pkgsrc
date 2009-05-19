@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/04/24 10:17:22 adam Exp $
+# $NetBSD: Makefile,v 1.21 2009/05/03 13:34:24 abs Exp $
 
 DISTNAME=	GeoIP-1.4.6
 PKGREVISION=	1
@@ -8,7 +8,6 @@ MASTER_SITES=	http://www.maxmind.com/download/geoip/api/c/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.maxmind.com/download/geoip/api/c/
 COMMENT=	Find the country from any IP address
-
 #LICENSE=	gnu-lgpl-v2.1
 #LICENSE+=	gnu-gpl-v2	#  md5.c and types.h, from GNUPG
 

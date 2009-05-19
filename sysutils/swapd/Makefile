@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:43 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2009/05/16 08:10:03 obache Exp $
 #
 
 DISTNAME=	swapd-1.0.3
@@ -9,7 +9,6 @@ MASTER_SITES=	http://www.rkeene.org/files/oss/swapd/source/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.rkeene.org/oss/swapd/
 COMMENT=	Swap daemon for POSIX-compliant operating systems
-
 LICENSE=	gnu-gpl-v2
 
 ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-* Linux-*-*

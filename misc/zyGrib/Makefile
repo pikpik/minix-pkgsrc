@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/14 20:55:41 plunky Exp $
+# $NetBSD: Makefile,v 1.2 2009/02/15 21:00:05 joerg Exp $
 #
 
 DISTNAME=	zyGrib-3.3.0
@@ -9,8 +9,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	plunky@rya-online.net
 HOMEPAGE=	http://www.zygrib.org/
 COMMENT=	GRIB file viewer for weather data
-
-#LICENSE=	gnu-gpl-v3
+LICENSE=	gnu-gpl-v3
 
 WRKSRC=		${WRKDIR}/zyGrib/src
 USE_LANGUAGES=	c c++

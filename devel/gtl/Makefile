@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2007/12/01 11:16:44 rillig Exp $
+# $NetBSD: Makefile,v 1.27 2007/12/02 13:04:09 wiz Exp $
 
 DISTNAME=		GTL-1.2.1
 PKGNAME=		gtl-1.2.1
@@ -9,14 +9,13 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.infosun.fim.uni-passau.de/GTL/
 COMMENT=		C++ graph data structure library based on the STL
+LICENSE=		no-commercial-use
 
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
 
 # previous version of the same
 CONFLICTS=		gtl0-[0-9]*
-
-LICENSE=		no-commercial-use
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		CXXFLAGS=${CXXFLAGS:M*:Q}

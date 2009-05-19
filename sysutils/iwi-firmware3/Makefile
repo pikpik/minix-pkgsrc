@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/12/20 16:29:26 skrll Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2006/12/20 17:32:31 joerg Exp $
 #
 
 DISTNAME=		ipw2200-fw-3.0
@@ -10,11 +10,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		Damien.Bergamini@Free.FR
 HOMEPAGE=		http://damien.bergamini.free.fr/ipw/
 COMMENT=		Firmware binary images for iwi(4) driver
-
-CONFLICTS+=		iwi-firmware-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 LICENSE=		intel-ipw-license
 
 RESTRICTED=		Intel Licensed Software: see http://ipw2200.sourceforge.net/firmware.php?fid=7
@@ -22,6 +17,10 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
+
+CONFLICTS+=		iwi-firmware-[0-9]*
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes

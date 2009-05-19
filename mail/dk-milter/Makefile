@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/08/30 05:42:40 erh Exp $
+# $NetBSD: Makefile,v 1.17 2008/10/02 19:03:11 joerg Exp $
 
 DISTNAME=	dk-milter-0.3.0
 PKGREVISION=	3
@@ -8,10 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dk-milter/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/dk-milter/
 COMMENT=	Open source implementation of DomainKeys for sendmail
-
-BUILDLINK_API_DEPENDS.libmilter+=	libmilter>=8.13.0
-
-LICENSE=		sendmail-open-source-license
+LICENSE=	sendmail-open-source-license
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -68,6 +65,7 @@ do-install:
 
 .include "options.mk"
 .include "../../security/openssl/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libmilter+=	libmilter>=8.13.0
 .include "../../mail/libmilter/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2009/02/23 09:08:35 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2009/04/20 09:17:19 wiz Exp $
 #
 
 DISTNAME=		comix-4.0.4
@@ -8,7 +8,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=comix/}
 MAINTAINER=		hugor@users.sourceforge.net
 HOMEPAGE=		http://comix.sourceforge.net/index.html
 COMMENT=		Image viewer specifically designed to handle comic books
-
 LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir

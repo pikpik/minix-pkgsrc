@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/01/06 18:14:36 heinz Exp $
+# $NetBSD: Makefile,v 1.4 2008/01/18 05:09:44 tnn Exp $
 #
 
 DISTNAME=		monit-4.10.1
@@ -9,8 +9,7 @@ MASTER_SITES=		http://www.tildeslash.com/monit/dist/
 MAINTAINER=		heinz@NetBSD.org
 HOMEPAGE=		http://www.tildeslash.com/monit/
 COMMENT=		Utility for monitoring processes, files, directories and devices
-
-#LICENSE=		gnu-gpl-v3
+LICENSE=		gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

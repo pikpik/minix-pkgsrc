@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/02/05 23:09:09 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/03 20:17:12 jlam Exp $
 
 DISTNAME=		kaname_k12_bdf
 PKGNAME=		ja-kaname-0.0.0.20030112
@@ -8,6 +8,7 @@ MASTER_SITES=		${MASTER_SITE_LOCAL} # original site was closed.
 
 MAINTAINER=		tech-pkg-ja@jp.NetBSD.org
 COMMENT=		12x12 dots X11 bitmap font for JIS X 0208
+#LICENSE=		no-commercial-use
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -17,8 +18,6 @@ USE_TOOLS+=		bdftopcf gzip
 DOCDIR=			${PREFIX}/share/doc/kaname
 FONTDIR=		${PREFIX}/lib/X11/fonts/local
 FONTS_DIRS.x11=		${FONTDIR}
-
-#LICENSE=		no-commercial-use
 
 do-build:
 	cd ${WRKSRC}; \

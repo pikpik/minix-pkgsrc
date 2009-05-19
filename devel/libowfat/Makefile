@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/01/06 23:48:49 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2009/02/21 16:53:33 wiz Exp $
 #
 
 DISTNAME=	libowfat-0.28
@@ -9,12 +9,12 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fefe.de/libowfat/
 COMMENT=	Library of general purpose APIs
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=	GNUmakefile
 USE_TOOLS+=	gmake
-#LICENSE=	gnu-gplv2
 
 INSTALL_MAKE_FLAGS=	prefix=${DESTDIR}${PREFIX}
 

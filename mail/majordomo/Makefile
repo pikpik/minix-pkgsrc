@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2007/07/04 20:54:44 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2009/02/17 12:57:07 joerg Exp $
 
 DISTNAME=		majordomo-1.94.5
 PKGREVISION=		2
@@ -10,7 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.greatcircle.com/majordomo/
 COMMENT=		The Majordomo mailing list manager
-
 LICENSE=		majordomo-license
 
 CONFLICTS+=		bounce-*
