@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1163 2009/05/15 23:09:21 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.1164 2009/05/17 10:30:41 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -153,6 +153,7 @@ SUBDIR+=	eclipse
 SUBDIR+=	edcommon
 SUBDIR+=	eel
 SUBDIR+=	eet
+SUBDIR+=	eina
 SUBDIR+=	electricfence
 SUBDIR+=	elf
 SUBDIR+=	elfsh
