@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.3 2008/04/15 18:23:54 drochner Exp $
+
+Avoid installing short Python script to not incur a Python dependency.
 
 --- data/Makefile.in.orig	2008-04-03 21:28:58.000000000 +0200
 +++ data/Makefile.in
