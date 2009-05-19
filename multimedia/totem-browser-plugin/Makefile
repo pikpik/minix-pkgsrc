@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/12/18 00:46:44 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2009/03/16 12:13:31 jmcneill Exp $
 #
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/totem/Makefile.common"
 
@@ -10,11 +12,12 @@ GCONF_SCHEMAS=	# none
 
 COMMENT+=	(gecko plugin)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFIGURE_ARGS+=	--enable-browser-plugins
 
 BROWSER_PLUGINS=	cone gmp mully narrowspace
+
+INSTALLATION_DIRS=	lib/firefox3/plugins
+INSTALLATION_DIRS+=	libexec
 
 do-install:
 .for plugin in ${BROWSER_PLUGINS}
