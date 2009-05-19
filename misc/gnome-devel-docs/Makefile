@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2009/05/18 10:00:50 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2009/05/19 08:59:23 wiz Exp $
 #
 
-DISTNAME=	gnome-devel-docs-2.26.1
+DISTNAME=	gnome-devel-docs-2.26.2
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-devel-docs/2.26/}
 EXTRACT_SUFX=	.tar.bz2
