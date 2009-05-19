@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/11/24 01:16:18 jmcneill Exp $
+# $NetBSD: Makefile,v 1.3 2009/03/18 07:04:28 snj Exp $
 #
 
 DISTNAME=		gnome-mount-0.8
@@ -17,6 +17,8 @@ USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES
 
 GCONF_SCHEMAS+=	gnome-mount.schemas
+
+PKG_DESTDIR_SUPPORT=   user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "NetBSD"
