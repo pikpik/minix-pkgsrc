@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 2009/03/16 10:49:06 jmcneill Exp $
+
+http://bugzilla.gnome.org/show_bug.cgi?id=583332
 
 --- libbrasero-media/Makefile.am.orig	2009-03-15 20:47:51.000000000 -0400
 +++ libbrasero-media/Makefile.am
