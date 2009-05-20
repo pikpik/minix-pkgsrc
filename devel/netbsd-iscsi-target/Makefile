@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2008/02/07 19:31:51 agc Exp $
+# $NetBSD: Makefile,v 1.9 2008/02/28 11:58:48 rillig Exp $
 
 DISTNAME=	netbsd-iscsi-20080207
 PKGNAME=	${DISTNAME:C/-iscsi/-iscsi-target/}
 CATEGORIES=	devel
-MASTER_SITES=	http://www.alistaircrooks.co.uk/src/
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 MAINTAINER=	agc@NetBSD.org
 HOMEPAGE=	http://www.alistaircrooks.co.uk/software.html
