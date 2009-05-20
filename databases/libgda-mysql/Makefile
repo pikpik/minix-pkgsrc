@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/26 11:02:12 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:00 joerg Exp $
 #
 
 LIBGDA_PROVIDER=	mysql
@@ -6,6 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../databases/libgda/Makefile.common"
 
+PKGREVISION=		1
 CONFIGURE_ARGS+=	--with-=mysql
 
 .include "../../mk/mysql.buildlink3.mk"
