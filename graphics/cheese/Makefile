@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.11 2009/02/06 17:46:02 jmorse Exp $
+# $NetBSD: Makefile,v 1.12 2009/03/16 22:45:14 jmcneill Exp $
 
-DISTNAME=	cheese-2.26.0
+DISTNAME=	cheese-2.26.2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/cheese/2.26/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/cheese/
 COMMENT=	Use your webcam to take photos and videos
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
