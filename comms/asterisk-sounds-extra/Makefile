@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2006/03/04 21:29:04 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2007/11/11 23:43:47 wiz Exp $
 #
 
 VER=			1.2.1
 DISTNAME=		asterisk-sounds-${VER}
 PKGNAME=		asterisk-sounds-extra-${VER}
 CATEGORIES=		comms
-MASTER_SITES=		http://ftp2.digium.com/pub/asterisk/
+MASTER_SITES=		http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://ftp.digium.com/pub/asterisk/
+HOMEPAGE=		http://www.asterisk.org/
 COMMENT=		Asterisk IVR and miscellaneous sound files
 
 .include "../../mk/bsd.pkg.mk"
