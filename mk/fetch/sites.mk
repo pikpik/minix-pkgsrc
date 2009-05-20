@@ -1,4 +1,4 @@
-# $NetBSD: sites.mk,v 1.51 2008/12/02 12:58:59 obache Exp $
+# $NetBSD: sites.mk,v 1.52 2009/02/15 14:31:52 asau Exp $
 #
 # This Makefile fragment defines read-only MASTER_SITE_* variables
 # representing some well-known master distribution sites for software.
@@ -688,7 +688,6 @@ MASTER_SITE_GENTOO+= \
 	http://linux.rz.ruhr-uni-bochum.de/download/gentoo-mirror/ \
 	ftp://linux.rz.ruhr-uni-bochum.de/gentoo-mirror/ \
 	ftp://sunsite.informatik.rwth-aachen.de/pub/Linux/gento/ \
-	http://mirrors.sec.informatik.tu-darmstadt.de/gentoo/ \
 	ftp://pandemonium.tiscali.de/pub/gentoo/ \
 	ftp://ftp.tu-clausthal.de/pub/linux/gentoo/ \
 	http://ftp.uni-erlangen.de/pub/mirrors/gento/ \
