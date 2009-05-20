@@ -32,6 +32,8 @@ share/doc/${PKGNAME}/groupscheduled.ics
 share/doc/${PKGNAME}/groupscheduled.txt
 share/doc/${PKGNAME}/multiple.ics
 share/doc/${PKGNAME}/multiple.txt
+share/doc/${PKGNAME}/recurrence.ics
+share/doc/${PKGNAME}/recurrence.txt
 share/doc/${PKGNAME}/small.ics
 share/doc/${PKGNAME}/small.txt
 @dirrm share/doc/${PKGNAME}
