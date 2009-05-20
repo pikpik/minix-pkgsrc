@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-cc,v 1.1 2009/04/13 21:57:48 adrianp Exp $
+
+http://bugzilla.gnome.org/show_bug.cgi?id=562334
 
 --- glib/gbacktrace.h.orig	2009-03-13 04:09:59.000000000 +0000
 +++ glib/gbacktrace.h
