@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.15 2009/02/09 22:56:28 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/03/22 14:40:39 wiz Exp $
 #
 
-DISTNAME=	alacarte-0.11.10
+DISTNAME=	alacarte-0.12.1
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/alacarte/0.11/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/alacarte/0.12/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.realistanew.com/projects/alacarte/
 COMMENT=	Menu editor for the GNOME desktop
+LICENSE=	gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
