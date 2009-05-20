@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.39 2007/09/25 10:07:06 hira Exp $
+# $NetBSD: Makefile,v 1.40 2008/06/20 01:09:19 joerg Exp $
 
 DISTNAME=	asc-source-1.16.4.0
 PKGNAME=	${DISTNAME:S/-source//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=asc-hq/}
 EXTRACT_SUFX=	.tar.bz2

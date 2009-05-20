@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2006/09/09 02:41:56 obache Exp $
+# $NetBSD: Makefile,v 1.12 2006/09/09 12:52:11 obache Exp $
 #
 
 DISTNAME=	ald-0.1.7
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ald/}
 

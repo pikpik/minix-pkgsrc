@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2007/02/22 19:01:25 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2008/01/20 07:25:13 obache Exp $
 
 DISTNAME=	xfsprogs-2.7.3.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://oss.sgi.com/projects/xfs/cmd_tars/
 

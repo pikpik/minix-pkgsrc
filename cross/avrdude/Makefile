@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2008/06/12 02:14:17 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2009/02/25 17:20:27 minskim Exp $
 
 DISTNAME=		avrdude-5.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		cross
 MASTER_SITES=		http://download.savannah.gnu.org/releases/avrdude/
 

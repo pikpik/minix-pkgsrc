@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/07/08 23:10:47 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:24:26 joerg Exp $
 
 BUILDLINK_TREE+=	physfs
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	physfs
 PHYSFS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.physfs+=	physfs>=1.0.0
-BUILDLINK_ABI_DEPENDS.physfs+=	physfs>=1.0.1
+BUILDLINK_ABI_DEPENDS.physfs+=	physfs>=1.0.1nb1
 BUILDLINK_PKGSRCDIR.physfs?=	../../devel/physfs
 
 .include "../../devel/readline/buildlink3.mk"

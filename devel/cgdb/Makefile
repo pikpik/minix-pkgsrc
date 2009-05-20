@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2008/04/07 16:46:33 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2008/04/23 14:18:03 is Exp $
 #
 
 DISTNAME=	cgdb-0.4.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cgdb/}
 

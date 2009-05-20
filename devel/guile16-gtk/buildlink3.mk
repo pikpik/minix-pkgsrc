@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2007/06/18 00:38:58 dmcmahill Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:24:15 joerg Exp $
 
 BUILDLINK_TREE+=	guile16-gtk
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	guile16-gtk
 GUILE16_GTK_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.guile16-gtk+=	guile16-gtk>=0.5
-BUILDLINK_ABI_DEPENDS.guile16-gtk?=	guile16-gtk>=0.5
+BUILDLINK_ABI_DEPENDS.guile16-gtk?=	guile16-gtk>=0.5nb1
 BUILDLINK_PKGSRCDIR.guile16-gtk?=	../../devel/guile16-gtk
 
 .include "../../lang/guile16/buildlink3.mk"

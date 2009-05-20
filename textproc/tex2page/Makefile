@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2007/06/12 02:55:16 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.11 2009/02/25 18:07:40 minskim Exp $
 #
 
 DISTNAME=		tex2page
 DIST_SUBDIR=		tex2page-20060131
 PKGNAME=		tex2page-20060131
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.ccs.neu.edu/home/dorai/tex2page/
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2008/03/04 09:43:45 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2009/04/09 00:48:07 joerg Exp $
 
 DISTNAME=	guile-slib-3.2.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2007/02/22 19:26:48 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2008/03/04 19:21:11 jlam Exp $
 #
 
 DISTNAME=	chipmunk-1.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.bitwizard.nl/chipmunk/
 

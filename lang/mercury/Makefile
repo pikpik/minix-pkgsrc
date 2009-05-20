@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2008/03/04 16:38:12 jlam Exp $
+# $NetBSD: Makefile,v 1.34 2008/05/26 02:13:21 joerg Exp $
 
 DISTNAME=		mercury-compiler-0.11.0
 PKGNAME=		mercury-0.11.0
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.mercury.cs.mu.oz.au/pub/mercury/ \
 			${MASTER_SITE_SUNSITE:=devel/lang/mercury/}

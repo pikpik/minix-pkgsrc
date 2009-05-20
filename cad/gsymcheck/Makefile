@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2006/09/01 12:00:43 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.35 2008/06/20 01:09:08 joerg Exp $
 #
 
 DISTNAME=		geda-gsymcheck-${PKGVERSION}
 PKGNAME=		gsymcheck-${PKGVERSION}
+PKGREVISION=		1
 CATEGORIES=		cad
 
 MAINTAINER=		dmcmahill@NetBSD.org

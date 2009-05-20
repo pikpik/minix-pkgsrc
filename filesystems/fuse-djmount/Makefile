@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/11 14:55:45 agc Exp $
+# $NetBSD: Makefile,v 1.2 2009/03/21 05:44:05 agc Exp $
 
 DISTNAME=	djmount-0.71
 PKGNAME=	fuse-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	filesystems
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=djmount/}
 

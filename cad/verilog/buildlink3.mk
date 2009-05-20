@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2006/07/08 23:10:38 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2009/03/20 19:24:00 joerg Exp $
 
 BUILDLINK_TREE+=	verilog
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	verilog
 VERILOG_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.verilog+=	verilog>=0.8.1nb1
+BUILDLINK_ABI_DEPENDS.verilog?=	verilog>=0.8.7nb1
 BUILDLINK_PKGSRCDIR.verilog?=	../../cad/verilog
 
 .include "../../devel/zlib/buildlink3.mk"

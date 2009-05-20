@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2006/12/10 03:56:36 jnemeth Exp $
+# $NetBSD: Makefile,v 1.13 2007/11/07 11:16:48 rillig Exp $
 
 .include "Makefile.common"
 
 PKGNAME=		swi-prolog-lite-${SWIPLVERS}
-PKGREVISION=		3
+PKGREVISION=		4
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		ISO/Edinburgh-style Prolog compiler

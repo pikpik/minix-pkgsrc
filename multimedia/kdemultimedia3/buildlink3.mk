@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.25 2008/01/18 05:08:38 tnn Exp $
+# $NetBSD: buildlink3.mk,v 1.26 2009/03/20 19:25:03 joerg Exp $
 
 BUILDLINK_TREE+=	kdemultimedia
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	kdemultimedia
 KDEMULTIMEDIA_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.kdemultimedia+=	kdemultimedia>=3.5.0nb2
-BUILDLINK_ABI_DEPENDS.kdemultimedia?=	kdemultimedia>=3.5.8nb3
+BUILDLINK_ABI_DEPENDS.kdemultimedia?=	kdemultimedia>=3.5.10nb2
 BUILDLINK_PKGSRCDIR.kdemultimedia?=	../../multimedia/kdemultimedia3
 
 .include "../../audio/arts/buildlink3.mk"

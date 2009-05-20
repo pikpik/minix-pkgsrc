@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2006/09/03 00:56:28 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2008/03/04 22:29:06 jlam Exp $
 #
 
 DISTNAME=	plptools-0.12
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=plptools/}
 

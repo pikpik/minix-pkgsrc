@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/05/02 16:21:44 reed Exp $
+# $NetBSD: Makefile,v 1.3 2009/05/19 08:59:20 wiz Exp $
 #
 
 DISTNAME=	osbf-lua-2.0.4
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://luaforge.net/frs/download.php/2094/
 

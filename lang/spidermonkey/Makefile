@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2007/09/21 18:06:28 bjs Exp $
+# $NetBSD: Makefile,v 1.17 2008/01/11 09:36:23 bjs Exp $
 
 DISTNAME=	js-1.60
 PKGNAME=	${DISTNAME:S/js/spidermonkey/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_MOZILLA:=js/}
 

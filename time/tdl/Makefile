@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2008/06/12 02:14:53 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/09/04 11:13:29 tonnerre Exp $
 
 DISTNAME=	tdl-1.5.2
+PKGREVISION=	1
 CATEGORIES=	time
 MASTER_SITES=	http://www.rpcurnow.force9.co.uk/tdl/
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2007/01/12 20:33:03 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2008/03/04 06:59:06 jlam Exp $
 #
 
 DISTNAME=		stratagus-2.1-src
 PKGNAME=		${DISTNAME:S/-src//}
-PKGREVISION=		10
+PKGREVISION=		11
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=stratagus/}
 
