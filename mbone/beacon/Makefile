@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2008/10/19 19:18:21 he Exp $
+# $NetBSD: Makefile,v 1.11 2009/03/22 04:53:39 manu Exp $
 #
 
 DISTNAME=	beacon-1.1-0
 PKGNAME=	beacon-1.1.0
 PKGREVISION=	4
 CATEGORIES=	mbone
-MASTER_SITES=	http://dast.nlanr.net/Projects/Beacon/releases/
+MASTER_SITES=	${MASTER_SITE_FREEBSD}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dast.nlanr.net/Projects/Beacon/
