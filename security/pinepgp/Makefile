@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2009/01/23 21:14:17 jschauma Exp $
+# $NetBSD: Makefile,v 1.13 2009/03/17 21:40:47 darcy Exp $
 #
 
 DISTNAME=		pinepgp-0.18.0
 PKGREVISION=		2
 CATEGORIES=		security mail
 MASTER_SITES=		http://hany.sk/~hany/_data/pinepgp/	\
-			http://terminus.sk/~hany/_data/pinepgp/		\
-			http://www.mirrors.wiretapped.net/security/cryptography/apps/mail/pinepgp/
+			http://terminus.sk/~hany/_data/pinepgp/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://hany.sk/~hany/software/pinepgp/stable.html
