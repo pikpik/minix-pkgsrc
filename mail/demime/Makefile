@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2007/03/24 19:21:26 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2008/03/04 17:57:18 jlam Exp $
 #
 
 DISTNAME=	demime-1.1d
 CATEGORIES=	mail textproc
-MASTER_SITES=	${MASTER_SITE_LOCAL:=${PKGNAME_NOREV}/} \
-		http://majordomo.squawk.com/njs/demime/ \
-		http://scifi.squawk.com/
+MASTER_SITES=	${MASTER_SITE_FREEBSD}
 DISTFILES=	${DISTNAME:S/-/./} \
 		demime_junkmail.cf
 
