@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2008/03/04 17:57:18 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/03/04 19:08:06 schmonz Exp $
 #
 
 DISTNAME=	greetdelay-0.03
 PKGREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	${HOMEPAGE}
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://alkemio.org/software/greetdelay/
