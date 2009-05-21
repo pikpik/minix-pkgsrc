@@ -1,11 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/26 22:49:28 jmcneill Exp $
 #
 
 DISTNAME=	tstools-1_11
 PKGNAME=	${DISTNAME:S/_/./}
 CATEGORIES=	multimedia
-MASTER_SITES=	http://download.berlios.de/tstools/	\
-		http://download2.berlios.de/tstools/
+MASTER_SITES=	http://download.berlios.de/tstools/	
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tech-multimedia@NetBSD.org
