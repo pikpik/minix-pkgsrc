@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2008/10/03 17:42:28 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2008/12/21 15:20:27 taca Exp $
 #
 
 DISTNAME=	tripwire-1.2
 PKGREVISION=	3
 CATEGORIES=	security
-MASTER_SITES=	http://www.mirrors.wiretapped.net/security/host-intrusion-detection/tripwire/old/
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
