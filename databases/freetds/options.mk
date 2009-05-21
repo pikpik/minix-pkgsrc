@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.2 2008/04/12 22:42:59 jlam Exp $
+# $NetBSD: options.mk,v 1.3 2008/05/08 13:28:39 jlam Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.freetds
 PKG_OPTIONS_OPTIONAL_GROUPS+=	odbc tls
-PKG_OPTIONS_GROUP.odbc=		iodbc #unixodbc
+PKG_OPTIONS_GROUP.odbc=		iodbc unixodbc
 PKG_OPTIONS_GROUP.tls=		gnutls openssl
 
 .include "../../mk/bsd.options.mk"
