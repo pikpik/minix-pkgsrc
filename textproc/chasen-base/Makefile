@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2008/01/21 13:25:48 taca Exp $
+# $NetBSD: Makefile,v 1.19 2008/08/03 15:24:05 taca Exp $
 #
 
 DISTNAME=		chasen-${CHASEN_VERSION}
 PKGNAME=		chasen-base-${CHASEN_VERSION}
+PKGREVISION=		1
 CATEGORIES=		japanese textproc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE_JP:=chasen-legacy/32224/}
 
