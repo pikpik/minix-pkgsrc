@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2007/12/02 12:28:09 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:45 joerg Exp $
 
 DISTNAME=		prngd-0.9.29
 CATEGORIES=		security
-MASTER_SITES=		http://www.mirrors.wiretapped.net/security/cryptography/libraries/math/prng-and-entropy/prngd/ \
-			ftp://ftp.mirrors.wiretapped.net/pub/security/cryptography/libraries/math/prng-and-entropy/prngd/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=prngd/}	
+			
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.aet.tu-cottbus.de/personen/jaenicke/postfix_tls/prngd.html
