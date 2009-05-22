@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2008/07/28 19:42:33 plunky Exp $
+# $NetBSD: Makefile,v 1.10 2008/07/28 20:08:39 plunky Exp $
 #
 
 DISTNAME=		lcab-1.0b12
 CATEGORIES=		archivers
-MASTER_SITES=		http://lcab.move-to-cork.com/sources/
+MASTER_SITES=		${MASTER_SITE_FREEBSD}
 
 MAINTAINER=		plunky@rya-online.net
 HOMEPAGE=		http://lcab.move-to-cork.com/
