@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/07/30 13:59:25 schmonz Exp $
 #
 
 DISTNAME=		leapsunpack-0.05
 CATEGORIES=		time
-MASTER_SITES=		${HOMEPAGE}
+MASTER_SITES=		${MASTER_SITE_BACKUP}
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://su.bze.ro/software/
