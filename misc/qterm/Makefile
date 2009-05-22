@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2005/12/29 06:21:55 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2007/08/31 21:50:50 agc Exp $
 #
 
 DISTNAME=	qterm-ac-1.0
 PKGNAME=	qterm-1.0
 PKGREVISION=	1
 CATEGORIES=	misc
-MASTER_SITES=	http://www.alistaircrooks.co.uk/src/
+MASTER_SITES=	http://www.westley.demon.co.uk/src/
 
 MAINTAINER=	agc@NetBSD.org
 HOMEPAGE=	http://www.alistaircrooks.co.uk/software.html
