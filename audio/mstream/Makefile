@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2008/10/25 15:23:38 kim Exp $
+# $NetBSD: Makefile,v 1.12 2008/11/22 08:03:30 kim Exp $
 #
 
 DISTNAME=	mstream-1.3
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.gw.com/pub/people/kim/
+MASTER_SITES=	${MASTER_SITE_BACKUP}
 
 MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://kimmo.suominen.com/gwradio/
