@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/libjtokyocabinet.so
+lib/libjtokyocabinet.so.1
+lib/libjtokyocabinet.so.1.1.0
+lib/tokyocabinet.jar
+share/tokyocabinet/doc/java/index.html
+@dirrm share/tokyocabinet/doc/java
