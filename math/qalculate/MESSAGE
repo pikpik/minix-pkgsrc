@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+For online updates of currency exchange rates, either gnome-vfs
+(pkgsrc/sysutils/gnome-vfs) or wget (pkgsrc/net/wget) needs to be
+installed.
+
+===========================================================================
