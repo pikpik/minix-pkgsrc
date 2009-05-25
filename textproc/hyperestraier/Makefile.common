@@ -1,5 +1,7 @@
-# $NetBSD: Makefile.common,v 1.6 2008/01/03 12:50:52 obache Exp $
+# $NetBSD: Makefile.common,v 1.7 2008/02/12 14:32:50 obache Exp $
 #
+# used by textproc/java-native-hyperestraier/Makefile
+# used by textproc/java-pure-hyperestraier/Makefile
 # used by textproc/p5-native-hyperestraier/Makefile
 # used by textproc/ruby-native-hyperestraier/Makefile
 # used by textproc/ruby-pure-hyperestraier/Makefile
