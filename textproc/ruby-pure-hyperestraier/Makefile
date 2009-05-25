@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/06/19 15:18:31 taca Exp $
+# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:38 joerg Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -9,6 +9,7 @@ PKGREVISION=	1
 CATEGORIES=	textproc ruby
 
 COMMENT=	Ruby pure interface of Hyper Estaier
+LICENSE=	gnu-lgpl-v2.1
 
 MY_SUBDIR=	rubypure
 BUILD_DIRS=	${MY_SUBDIR}
