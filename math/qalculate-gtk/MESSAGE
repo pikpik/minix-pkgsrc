@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+For function plotting, gnuplot (pkgsrc/graphics/gnuplot) needs to
+be installed into $PATH.
+
+===========================================================================
