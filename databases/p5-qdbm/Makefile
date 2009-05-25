@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/02/08 14:15:40 obache Exp $
+# $NetBSD: Makefile,v 1.6 2008/10/19 19:17:45 he Exp $
 #
 
 .include "../../databases/qdbm/Makefile.common"
@@ -10,6 +10,7 @@ CATEGORIES=	databases perl5
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://qdbm.sourceforge.net/
 COMMENT=	Perl interface of QDBM
+LICENSE=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

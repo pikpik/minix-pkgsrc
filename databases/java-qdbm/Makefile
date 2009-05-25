@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/05/06 12:58:36 obache Exp $
+# $NetBSD: Makefile,v 1.2 2008/02/08 14:24:09 obache Exp $
 #
 
 .include "../../databases/qdbm/Makefile.common"
@@ -10,6 +10,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qdbm/}
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://qdbm.sourceforge.net/
 COMMENT=	Java API of QDBM
+LICENSE=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
