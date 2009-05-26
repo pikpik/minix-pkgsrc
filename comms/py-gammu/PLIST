@@ -1,0 +1,12 @@
+@comment $NetBSD$
+${PYSITELIB}/gammu/Data.py
+${PYSITELIB}/gammu/Data.pyc
+${PYSITELIB}/gammu/Data.pyo
+${PYSITELIB}/gammu/Worker.py
+${PYSITELIB}/gammu/Worker.pyc
+${PYSITELIB}/gammu/Worker.pyo
+${PYSITELIB}/gammu/__init__.py
+${PYSITELIB}/gammu/__init__.pyc
+${PYSITELIB}/gammu/__init__.pyo
+${PYSITELIB}/gammu/_gammu.so
+@dirrm ${PYSITELIB}/gammu
