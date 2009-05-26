@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2007/08/05 18:41:52 tron Exp $
+# $NetBSD: options.mk,v 1.6 2008/05/26 22:01:07 tron Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -62,11 +62,13 @@ MAKE_FLAGS+=	SSLTYPE=unix	# plaintext auth
 .  else
 MAKE_FLAGS+=	SSLTYPE=nopwd	# plaintext auth only over SSL/TLS
 .  endif
+
 MESSAGE_SRC+=	${PKGDIR}/MESSAGE.ssl
 MESSAGE_SUBST+=	SSLCERTS=${SSLCERTS:Q}
 MESSAGE_SUBST+=	SSLKEYS=${SSLKEYS:Q}
 
-EXTRASPECIALS+=	SSLDIR=${SSLBASE:Q}
+EXTRASPECIALS+=	SSLINCLUDE=${SSLBASE:Q}/include
+EXTRASPECIALS+=	SSLLIB=${SSLBASE:Q}/lib
 EXTRASPECIALS+=	SSLCERTS=${SSLCERTS:Q}
 EXTRASPECIALS+=	SSLKEYS=${SSLKEYS:Q}
 .else
