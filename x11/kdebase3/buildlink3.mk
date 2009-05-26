@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.28 2009/03/20 19:25:42 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.29 2009/05/20 00:58:30 wiz Exp $
 
 BUILDLINK_TREE+=	kdebase
 
@@ -6,13 +6,13 @@ BUILDLINK_TREE+=	kdebase
 KDEBASE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.kdebase+=	kdebase>=3.5.0nb2
-BUILDLINK_ABI_DEPENDS.kdebase?=	kdebase>=3.5.10nb2
+BUILDLINK_ABI_DEPENDS.kdebase+=	kdebase>=3.5.10nb2
 BUILDLINK_PKGSRCDIR.kdebase?=	../../x11/kdebase3
 
 pkgbase := kdebase
 .include "../../mk/pkg-build-options.mk"
 
-BUILDLINK_API_DEPENDS.Xrandr+=      Xrandr>=1.0
+BUILDLINK_API_DEPENDS.Xrandr+=	Xrandr>=1.0
 
 .include "../../databases/openldap-client/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
