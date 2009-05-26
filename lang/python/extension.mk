@@ -1,4 +1,4 @@
-# $NetBSD: extension.mk,v 1.23 2009/03/05 18:51:30 joerg Exp $
+# $NetBSD: extension.mk,v 1.24 2009/03/08 17:05:10 joerg Exp $
 
 .include "../../lang/python/pyversion.mk"
 
@@ -6,6 +6,7 @@
 .include "../../mk/bsd.prefs.mk"
 
 PYSETUP?=		setup.py
+PYSETUPBUILDTARGET?=	build
 PYSETUPBUILDARGS?=	#empty
 PYSETUPINSTALLARGS?=	#empty
 PYSETUPOPTARGS?=	-c -O1
@@ -18,7 +19,7 @@ PYSETUPSUBDIR?=		#empty
 
 do-build:
 	(cd ${WRKSRC}/${PYSETUPSUBDIR} && ${SETENV} ${MAKE_ENV} ${PYTHONBIN} \
-	 ${PYSETUP} build ${PYSETUPBUILDARGS})
+	 ${PYSETUP} ${PYSETUPBUILDTARGET} ${PYSETUPBUILDARGS})
 
 do-install:
 	(cd ${WRKSRC}/${PYSETUPSUBDIR} && ${SETENV} ${INSTALL_ENV} ${MAKE_ENV} \
