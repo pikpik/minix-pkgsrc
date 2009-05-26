@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.5 2007/02/22 19:27:28 wiz Exp $
+# $NetBSD: builtin.mk,v 1.6 2008/10/05 21:36:34 cube Exp $
 
 BUILTIN_PKG:=	xextproto
 
@@ -70,8 +70,8 @@ CHECK_BUILTIN.xextproto?=	no
 BUILDLINK_TARGETS+=	xextproto-fake-pc
 
 xextproto-fake-pc:
-	${_PKG_SILENT}${_PKG_DEBUG} \
-	src=${BUILDLINK_PREFIX.xextproto}/lib/pkgconfig/xextproto.pc \
+	${RUN} \
+	src=${BUILDLINK_PREFIX.xextproto}/lib/pkgconfig/xextproto.pc; \
 	dst=${BUILDLINK_DIR}/lib/pkgconfig/xextproto.pc; \
 	${MKDIR} ${BUILDLINK_DIR}/lib/pkgconfig; \
 	if ${TEST} -f $${src}; then \
