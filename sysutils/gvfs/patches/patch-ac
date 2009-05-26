@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 2009/03/02 02:00:51 jmcneill Exp $
+
+http://bugzilla.gnome.org/show_bug.cgi?id=583927
 
 --- client/gvfsfusedaemon.c.orig	2008-10-20 05:02:26.000000000 -0400
 +++ client/gvfsfusedaemon.c
