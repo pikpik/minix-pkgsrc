@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2009/03/18 17:18:10 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2009/04/16 19:42:58 drochner Exp $
 
-DISTNAME=	libsoup-2.26.1
+DISTNAME=	libsoup-2.26.2
 PKGNAME=	${DISTNAME:S/libsoup/libsoup24/}
 CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libsoup/2.26/}
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	HTTP library implementation in C
+LICENSE=	gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
