@@ -1,7 +1,18 @@
 $NetBSD$
 
---- configure.orig	2008-12-20 02:12:45.000000000 +1000
+Extend which ports we accept to deal with.
+
+--- configure.orig	2008-12-19 17:12:45.000000000 +0100
 +++ configure
+@@ -21017,7 +21017,7 @@ case "$host" in
+   mips-sgi-irix5.* | mips-sgi-irix6.*)
+ 	TARGET=MIPS; TARGETDIR=mips
+ 	;;
+-  mips*-*-linux*)
++  mips*-*-linux* | mips*-*-netbsd*)
+ 	TARGET=MIPS; TARGETDIR=mips
+ 	;;
+ 
 @@ -21033,7 +21033,7 @@ case "$host" in
    powerpc-*-aix* | rs6000-*-aix*)
  	TARGET=POWERPC_AIX; TARGETDIR=powerpc
