@@ -1,4 +1,4 @@
-/*	$NetBSD: license.c,v 1.1 2009/04/25 21:31:14 joerg Exp $	*/
+/*	$NetBSD: license.c,v 1.2 2009/05/18 10:01:37 wiz Exp $	*/
 
 /*-
  * Copyright (c) 2009 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -51,7 +51,7 @@ const char *default_acceptable_licenses =
     "gnu-gpl-v2 gnu-lgpl-v2 gnu-lgpl-v2.1 "
     "gnu-gpl-v3 gnu-lgpl-v3 "
     "original-bsd modified-bsd "
-    "x11 "
+    "x11 mit "
     "apache-1.1 apache-2.0 "
     "artistic artistic-2.0 "
     "cddl-1.0 "
