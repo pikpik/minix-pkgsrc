@@ -1,15 +1,15 @@
-# $NetBSD: buildlink3.mk,v 1.10 2009/03/20 17:30:10 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:24:07 joerg Exp $
 
-BUILDLINK_TREE+=	pyldap
+BUILDLINK_TREE+=	py-ldap
 
 .if !defined(PY_LDAP_BUILDLINK3_MK)
 PY_LDAP_BUILDLINK3_MK:=
 
 .include "../../lang/python/pyversion.mk"
 
-BUILDLINK_API_DEPENDS.pyldap+=	${PYPKGPREFIX}-ldap>=2.2.0
-BUILDLINK_ABI_DEPENDS.pyldap+=	${PYPKGPREFIX}-ldap>=2.2.0
-BUILDLINK_PKGSRCDIR.pyldap?=	../../databases/py-ldap
+BUILDLINK_API_DEPENDS.py-ldap+=	${PYPKGPREFIX}-ldap>=2.2.0
+BUILDLINK_ABI_DEPENDS.py-ldap+=	${PYPKGPREFIX}-ldap>=2.2.0
+BUILDLINK_PKGSRCDIR.py-ldap?=	../../databases/py-ldap
 .endif # PY_LDAP_BUILDLINK3_MK
 
-BUILDLINK_TREE+=	-pyldap
+BUILDLINK_TREE+=	-py-ldap
