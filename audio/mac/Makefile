@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2007/07/21 19:42:06 adrianp Exp $
+# $NetBSD: Makefile,v 1.4 2008/07/14 12:55:57 joerg Exp $
 #
 
 DISTNAME=	mac-3.99-u4-b5
 PKGNAME=	mac-3.99u4b5
 CATEGORIES=	audio
-MASTER_SITES=	http://supermmx.org/download/linux/mac/
+MASTER_SITES=	http://supermmx.org/resources/linux/mac/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://supermmx.org
