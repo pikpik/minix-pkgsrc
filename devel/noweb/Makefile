@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2006/10/04 21:35:59 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2008/03/08 13:02:40 tnn Exp $
 
 DISTNAME=		noweb-2.11b
 CATEGORIES=		devel
-MASTER_SITES=		http://www.eecs.harvard.edu/nr/noweb/dist/
+MASTER_SITES=		ftp://www.eecs.harvard.edu/pub/nr/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
