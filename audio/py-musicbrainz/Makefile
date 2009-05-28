@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2006/12/07 14:37:28 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/04/25 20:39:06 joerg Exp $
 
 DISTNAME=	python-musicbrainz2-0.4.0
 PKGNAME=	${DISTNAME:S/python/${PYPKGPREFIX}/}
 CATEGORIES=	audio python
-MASTER_SITES=	http://musicbrainz.org/~matt/
+MASTER_SITES=	http://users.musicbrainz.org/~matt/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://musicbrainz.org/doc/PythonMusicBrainz2
