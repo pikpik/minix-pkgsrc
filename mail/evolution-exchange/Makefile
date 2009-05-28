@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.36 2009/02/27 18:41:03 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2009/03/22 16:54:06 wiz Exp $
 #
 
-DISTNAME=	evolution-exchange-2.26.0
+DISTNAME=	evolution-exchange-2.26.2
 EE_VER=		2.26
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/evolution-exchange/2.26/}
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.novell.com/products/desktop/features/evolution.html
 COMMENT=	Support for Microsoft Exchange 2000 and 2003 in Evolution
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
