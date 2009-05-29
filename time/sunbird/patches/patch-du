@@ -1,13 +1,13 @@
 $NetBSD$
 
---- nsprpub/pr/src/linking/prlink.c.orig	2006-06-26 14:36:45.000000000 +0000
+--- nsprpub/pr/src/linking/prlink.c.orig	2006-10-07 01:36:22.000000000 +0200
 +++ nsprpub/pr/src/linking/prlink.c
-@@ -1616,7 +1616,7 @@ PR_IMPLEMENT(char *)
+@@ -1606,7 +1606,7 @@ PR_LoadStaticLibrary(const char *name, c
+ PR_IMPLEMENT(char *)
  PR_GetLibraryFilePathname(const char *name, PRFuncPtr addr)
  {
- #if defined(USE_DLFCN) && (defined(SOLARIS) || defined(FREEBSD) \
--        || defined(LINUX) || defined(__GNU__) || defined(__GLIBC__))
-+        || defined(LINUX) || defined(__GNU__) || defined(__GLIBC__) || defined(DRAGONFLY))
+-#if defined(SOLARIS) || defined(LINUX) || defined(FREEBSD)
++#if defined(SOLARIS) || defined(LINUX) || defined(FREEBSD) || defined(DRAGONFLY)
      Dl_info dli;
      char *result;
  
