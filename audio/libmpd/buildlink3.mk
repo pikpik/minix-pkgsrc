@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2006/07/08 23:10:36 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2009/03/20 19:23:55 joerg Exp $
 
 BUILDLINK_TREE+=	libmpd
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	libmpd
 LIBMPD_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libmpd+=	libmpd>=0.12.0
+BUILDLINK_ABI_DEPENDS.libmpd+=	libmpd>=0.18.0
 BUILDLINK_PKGSRCDIR.libmpd?=	../../audio/libmpd
 .endif # LIBMPD_BUILDLINK3_MK
 
