@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2006/12/27 13:37:40 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/07/14 12:56:13 joerg Exp $
 #
 
 DISTNAME=	lmclock-1.2
 PKGREVISION=	1
 CATEGORIES=	time x11
-MASTER_SITES=	http://pantransit.reptiles.org/prog/
+MASTER_SITES=	${MASTER_SITE_FREEBSD}
 
 MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://pantransit.reptiles.org/prog/
