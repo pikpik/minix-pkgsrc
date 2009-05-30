@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/07/30 10:57:25 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2009/05/30 01:33:11 obache Exp $
 #
 
 DISTNAME=	gimmix-0.5.6.1
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gimmix.berlios.de/
 COMMENT=	Graphical Music player daemon (MPD) client
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
