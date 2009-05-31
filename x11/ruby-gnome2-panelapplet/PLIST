@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/01/15 16:44:46 minskim Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/06/19 15:15:28 taca Exp $
 ${RUBY_VENDORARCHLIB}/panelapplet2.${RUBY_DLEXT}
+${RUBY_VENDORARCHLIB}/panelapplet2_main.${RUBY_DLEXT}
 ${RUBY_VENDORLIB}/panelapplet2.rb
