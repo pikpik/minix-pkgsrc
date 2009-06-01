@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/12/20 21:48:23 he Exp $
+# $NetBSD: Makefile,v 1.25 2009/04/11 23:15:20 sno Exp $
 #
 
 DISTNAME=	SOAP-Lite-0.710.08
@@ -20,7 +20,7 @@ DEPENDS+=	p5-IO-Socket-SSL>=0:../../security/p5-IO-Socket-SSL
 DEPENDS+=	p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
 DEPENDS+=	p5-MIME-Lite>=0:../../mail/p5-MIME-Lite
 DEPENDS+=	p5-MIME-tools>=0:../../mail/p5-MIME-tools
-DEPENDS+=	p5-Net>=0:../../net/p5-Net
+DEPENDS+=	{perl>=5.10,p5-Net>=0}:../../net/p5-Net
 DEPENDS+=	p5-URI-[0-9]*:../../www/p5-URI
 DEPENDS+=	{perl>=5.10.0,p5-version>=0}:../../devel/p5-version
 DEPENDS+=	p5-XML-Parser>=2.23:../../textproc/p5-XML-Parser
