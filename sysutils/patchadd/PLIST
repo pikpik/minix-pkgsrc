@@ -1,4 +1,0 @@
-@comment $NetBSD$
-sbin/patch_add
-sbin/patch_delete
-sbin/patch_info
