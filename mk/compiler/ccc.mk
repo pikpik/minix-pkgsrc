@@ -1,4 +1,4 @@
-# $NetBSD: ccc.mk,v 1.17 2008/02/07 20:59:05 rillig Exp $
+# $NetBSD: ccc.mk,v 1.18 2009/05/30 18:16:26 joerg Exp $
 #
 # This is the compiler definition for the Compaq C Compilers.
 #
@@ -83,7 +83,7 @@ ${_CCC_${_var_}}:
 .    for _alias_ in ${_ALIASES.${_var_}:S/^/${.TARGET:H}\//}
 	${RUN}					\
 	if [ ! -x "${_alias_}" ]; then					\
-		${LN} -f ${.TARGET} ${_alias_};				\
+		${LN} -f -s ${.TARGET} ${_alias_};			\
 	fi
 .    endfor
 .  endif
