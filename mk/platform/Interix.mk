@@ -1,4 +1,4 @@
-# $NetBSD: Interix.mk,v 1.59 2009/04/01 12:04:41 joerg Exp $
+# $NetBSD: Interix.mk,v 1.60 2009/06/02 14:47:44 joerg Exp $
 #
 # Variable definitions for the Interix operating system.
 
@@ -63,8 +63,6 @@ WRAPPER_SHELL?=		${PREFIX}/bin/nbsh
 
 INSTALL?=		${PREFIX}/bin/install-sh
 SED?=			${PREFIX}/bin/nbsed
-
-WRAPPER_DEBUG?=		no
 
 .if defined(BATCH)
 BULK_PREREQ+=		lang/perl5
