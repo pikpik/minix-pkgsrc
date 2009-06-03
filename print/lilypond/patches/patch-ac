@@ -1,7 +1,7 @@
 $NetBSD$
 
---- scripts/auxiliar/build-profile.sh.orig
-+++ scripts/auxiliar/build-profile.sh
+--- scripts/auxiliar/build-coverage.sh.orig
++++ scripts/auxiliar/build-coverage.sh
 @@ -1,6 +1,6 @@
  #!/bin/sh
  
