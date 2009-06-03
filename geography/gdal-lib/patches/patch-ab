@@ -1,13 +1,13 @@
 $NetBSD$
 
---- ogr/GNUmakefile.orig	2007-03-07 15:23:10.000000000 +0000
-+++ ogr/GNUmakefile
-@@ -15,7 +15,7 @@ CPPFLAGS	:=	-Iogrsf_frmts -I. $(GDAL_INC
+--- ogr/GNUmakefile.orig	2009-06-03 16:27:45 +0300
++++ ogr/GNUmakefile	2009-06-03 16:27:55 +0300
+@@ -19,7 +19,7 @@ CPPFLAGS	:=	-Iogrsf_frmts -I. $(GDAL_INC
  
- default:	lib apps
+ default:	lib
  
--all:	sublibs apps test_ogrsf$(EXE) docs
-+all:	sublibs apps test_ogrsf$(EXE)
+-all:	sublibs apps test_ogrsf$(EXE) 
++all:	sublibs
  
- ifeq ($(OGR_ENABLED),yes)
- 
+ clean:
+ 	rm -f html/*
