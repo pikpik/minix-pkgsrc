@@ -1,12 +1,11 @@
 # $NetBSD$
 #
 
-DISTNAME=		gramps-3.0.1
-PKGREVISION=		2
+DISTNAME=		gramps-3.1.1
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gramps/}
 
-MAINTAINER=		gdt@NetBSD.org
+MAINTAINER=		drochner@NetBSD.org
 HOMEPAGE=		http://gramps-project.org/
 COMMENT=		Genealogical Research and Analysis Management Programming System V3
 
