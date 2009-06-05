@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2007/01/07 15:01:52 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2007/11/21 12:47:04 drochner Exp $
 
 DISTNAME=	flac-1.2.1
 CATEGORIES=	audio archivers
@@ -29,10 +29,10 @@ BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
 .endif
 
 .if !empty(MACHINE_PLATFORM:M*-*-powerpc)
-.if ${OPSYS} != "Darwin"
+.  if ${OPSYS} != "Darwin"
 CONFIGURE_ARGS+=	--disable-asm-optimizations
 CONFIGURE_ARGS+=	--disable-altivec
-.endif
+.  endif
 .endif
 
 .if !empty(MACHINE_PLATFORM:MDarwin-*-i386)
