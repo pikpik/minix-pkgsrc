@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2008/06/20 01:09:25 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2008/07/14 12:56:08 joerg Exp $
 #
 
 DISTNAME=	gkrellflynn-0.8
 PKGNAME=	${DISTNAME:S/gkrell/gkrellm-/}
 PKGREVISION=	6
 CATEGORIES=	misc
-MASTER_SITES=	http://horus.comlab.uni-rostock.de/flynn/
+MASTER_SITES=	http://bax.comlab.uni-rostock.de/fileadmin/downloads/
 
 MAINTAINER=	cube@NetBSD.org
-HOMEPAGE=	http://horus.comlab.uni-rostock.de/flynn/
+HOMEPAGE=	http://bax.comlab.uni-rostock.de/en/projekte/gkrellflynn.html
 COMMENT=	GKrellM2 plugin that shows system load with a DooM marine
 
 PKG_DESTDIR_SUPPORT=	user-destdir
