@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 18:12:55 minskim Exp $
 #
 
 COMMENT=	Enlightened Canvas Library
@@ -12,6 +12,7 @@ PKGCONFIG_OVERRIDE=	evas.pc.in
 INSTALLATION_DIRS=	lib/evas/modules/loaders lib/evas/modules/savers
 
 .include "../../devel/eet/buildlink3.mk"
+.include "../../devel/eina/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
