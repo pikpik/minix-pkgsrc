@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/agedu
+man/man1/agedu.1
