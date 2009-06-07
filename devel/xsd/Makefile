@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/05/10 14:50:50 hasso Exp $
 
 DISTNAME=		xsd-3.2.0+dep
 EXTRACT_SUFX=		.tar.bz2
@@ -12,7 +12,7 @@ COMMENT=		W3C XML Schema to C++ data binding compiler
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake gm4
+USE_TOOLS+=		bash gmake gm4
 USE_LANGUAGES+=		c++
 
 SUBST_CLASSES+=		boost
