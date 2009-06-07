@@ -1,11 +1,11 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/10/26 07:54:20 minskim Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:24:48 joerg Exp $
 
 BUILDLINK_TREE+=	embryo
 
 .if !defined(EMBRYO_BUILDLINK3_MK)
 EMBRYO_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.embryo+=	embryo>=0.9.5.050
+BUILDLINK_API_DEPENDS.embryo+=	embryo>=0.9.5.060
 BUILDLINK_PKGSRCDIR.embryo?=	../../lang/embryo
 .endif # EMBRYO_BUILDLINK3_MK
 
