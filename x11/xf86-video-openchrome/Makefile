@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/04/24 16:52:45 sborrill Exp $
 #
 
 DISTNAME=	xf86-video-openchrome-0.2.903
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.openchrome.org/releases/
 EXTRACT_SUFX=	.tar.bz2
