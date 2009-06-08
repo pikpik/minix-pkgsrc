@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/05 20:30:52 hasso Exp $
 #
 
 DISTNAME=		engine_pkcs11-0.1.5
@@ -9,6 +9,7 @@ MASTER_SITES=		http://www.opensc-project.org/files/engine_pkcs11/
 MAINTAINER=		hasso@NetBSD.org
 HOMEPAGE=		http://www.opensc-project.org/engine_pkcs11/
 COMMENT=		PKCS\#11 engine for OpenSSL
+LICENSE=		original-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
