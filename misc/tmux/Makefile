@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/05/02 10:50:57 hasso Exp $
+# $NetBSD: Makefile,v 1.3 2009/06/03 06:09:11 minskim Exp $
 
 DISTNAME=	tmux-0.8
 CATEGORIES=	misc
@@ -7,6 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tmux/}
 MAINTAINER=	hasso@NetBSD.org
 HOMEPAGE=	http://tmux.sourceforge.net/
 COMMENT=	BSD-licensed terminal multiplexer (GNU Screen alternative)
+LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
