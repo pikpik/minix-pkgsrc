@@ -1,0 +1,11 @@
+===========================================================================
+$NetBSD$
+
+First steps before using pkgin.
+
+. Modify ${PREFIX}/etc/pkgin/repositories.conf to suit your platform
+. Initialize the database :
+
+	# pkgin update
+
+===========================================================================
