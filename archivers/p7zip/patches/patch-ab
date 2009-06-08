@@ -1,8 +1,8 @@
 $NetBSD$
 
---- CPP/Windows/FileFind.cpp.orig	2007-08-07 18:39:26.000000000 +0200
+--- CPP/Windows/FileFind.cpp.orig	2009-06-03 19:40:16.000000000 +0200
 +++ CPP/Windows/FileFind.cpp
-@@ -311,7 +311,8 @@ bool CFindFile::FindFirst(LPCTSTR wildca
+@@ -314,7 +314,8 @@ bool CFindFile::FindFirst(LPCSTR wildcar
    }
  
    TRACEN((printf("CFindFile::FindFirst : closedir-2(dirp=%p)\n",_dirp)))
