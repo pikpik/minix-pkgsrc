@@ -1,8 +1,8 @@
 $NetBSD$
 
---- vncserver.orig	2007-06-30 23:05:23.000000000 +0200
+--- vncserver.orig	2009-02-12 05:27:18.000000000 +0100
 +++ vncserver
-@@ -38,7 +38,7 @@ $depth = 24;
+@@ -34,7 +34,7 @@ $depth = 24;
  $desktopName = "X";
  $vncClasses = "/usr/local/vnc/classes";
  $vncUserDir = "$ENV{HOME}/.vnc";
@@ -10,4 +10,4 @@ $NetBSD$
 +#$fontPath = "unix/:7100";
  $authType = "-rfbauth $vncUserDir/passwd";
  
- # Here is another example of setting the font path:
+ # Read configuration from the system-wide and user files if present.
