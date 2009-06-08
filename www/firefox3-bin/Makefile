@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2008/11/20 13:11:19 tron Exp $
+# $NetBSD: Makefile,v 1.6 2009/03/19 00:30:39 mike Exp $
 
 MOZILLA=		firefox
 MOZ_VER=		3.0.2
 MOZ_DISTVER=		${MOZ_VER}
 
 HOMEPAGE=		http://www.mozilla.com/en-US/firefox/
-COMMENT=		Lightweight gecko-based web browser (binary package)
+COMMENT=		Web browser with support for extensions (binary package)
 
 # requires newer version of GTK+ than supported by suse_gtk2 package
 NOT_FOR_PLATFORM=	NetBSD-*-*
