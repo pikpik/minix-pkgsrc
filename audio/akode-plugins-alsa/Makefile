@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2008/12/05 14:03:53 htepper Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 18:03:15 hasso Exp $
 #
 
 PKGNAME=		akode-plugins-alsa-${AKODE_VERSION}
 
 MAINTAINER=		hasso@NetBSD.org
 COMMENT=		Alsa output plugin for aKode framework
+LICENSE=		gnu-lgpl-v2
 
 .include "../../audio/akode/Makefile.common"
 

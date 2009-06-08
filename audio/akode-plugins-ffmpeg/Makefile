@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2008/12/05 14:03:53 htepper Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 18:04:42 hasso Exp $
 #
 
 PKGNAME=		akode-plugins-ffmpeg-${AKODE_VERSION}
 
 MAINTAINER=		hasso@NetBSD.org
 COMMENT=		FFMPEG decoder plugin for akode framework
+LICENSE=		gnu-lgpl-v2
 
 .include "../../audio/akode/Makefile.common"
 
