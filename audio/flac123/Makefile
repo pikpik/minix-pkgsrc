@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2007/07/02 13:20:19 lkundrak Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:14 joerg Exp $
 
-DISTNAME=	flac123-0.0.10
-#PKGREVISION=	1
+DISTNAME=	flac123-0.0.11
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=flac-tools/}
 
