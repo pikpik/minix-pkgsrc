@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/luatex
+bin/texlua
+bin/texluac
