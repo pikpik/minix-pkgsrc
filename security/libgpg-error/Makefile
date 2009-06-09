@@ -1,19 +1,18 @@
-# $NetBSD: Makefile,v 1.24 2008/10/14 11:32:11 adam Exp $
+# $NetBSD: Makefile,v 1.25 2009/05/01 13:59:53 zafer Exp $
 
-DISTNAME=	libgpg-error-1.6
+DISTNAME=	libgpg-error-1.7
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/libgpg-error/ \
 		ftp://ftp.ring.gr.jp/pub/net/gnupg/libgpg-error/ \
 		ftp://mirror.switch.ch/mirror/gnupg/libgpg-error/ \
 		ftp://ftp.freenet.de/pub/ftp.gnupg.org/gcrypt/libgpg-error/ \
 		ftp://ftp.gnupg.ca/libgpg-error/
-		
-	
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://www.gnupg.org/
 COMMENT=	Definitions of common error values for all GnuPG components
+#LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
