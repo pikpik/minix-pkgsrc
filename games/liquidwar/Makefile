@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/11/29 17:28:24 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2008/07/14 12:56:04 joerg Exp $
 #
 
 DISTNAME=	liquidwar-5.6.4
@@ -15,6 +15,7 @@ USE_DIRS+=	gnome2-1.5
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	YES
 
+CONFIGURE_ARGS+=	--disable-doc-ps --disable-doc-pdf
 #CONFIGURE_ARGS+=	--enable-debug
 
 .include "../../devel/allegro/buildlink3.mk"
