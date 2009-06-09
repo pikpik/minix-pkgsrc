@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: README,v 1.6 2007/10/01 10:08:20 rillig Exp $
 
 = Introduction =
 
@@ -58,6 +58,7 @@ The following make targets must be implemented:
 * tarup-pkg
 * package-install
 * _flavor-replace
+* _flavor-destdir-replace
 * _flavor-undo-replace
 
 = Bugs =

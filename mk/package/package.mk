@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.19 2007/03/08 23:33:35 rillig Exp $
+# $NetBSD: package.mk,v 1.20 2009/03/17 22:13:36 rillig Exp $
 #
 # This file provides the code for the "package" phase.
 #
@@ -13,7 +13,7 @@
 #
 
 _PACKAGE_TARGETS+=	check-vulnerable
-.if make(replace)
+.if make(replace) && ${_USE_DESTDIR} == "no"
 _PACKAGE_TARGETS+=	replace
 .else
 _PACKAGE_TARGETS+=	install
