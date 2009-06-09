@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2009/02/07 18:03:00 adrianp Exp $
+# $NetBSD: Makefile,v 1.71 2009/03/02 22:52:17 adrianp Exp $
 
 PKGNAME=		php-${PHP_BASE_VERS}
 CATEGORIES=		lang
@@ -8,7 +8,7 @@ COMMENT=		PHP Hypertext Preprocessor version 5
 TEST_TARGET=		test
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake lex
+USE_TOOLS+=		gmake lex pkg-config
 LIBTOOL_OVERRIDE=	# empty
 
 PKG_OPTIONS_REQUIRED_GROUPS+=	sapi
