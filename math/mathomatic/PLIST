@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2007/09/16 16:53:12 minskim Exp $
+@comment $NetBSD$
 bin/mathomatic
 man/man1/mathomatic.1
 share/doc/mathomatic/README.txt
@@ -13,5 +13,6 @@ share/doc/mathomatic/matho-pascal.1.html
 share/doc/mathomatic/matho-primes.1.html
 share/doc/mathomatic/matho-sumsq.1.html
 share/doc/mathomatic/mathomatic.1.html
+share/doc/mathomatic/mathomatic16x16.png
 share/doc/mathomatic/open_book_nae_02.png
 @dirrm share/doc/mathomatic
