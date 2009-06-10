@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/06/09 21:47:52 minskim Exp $
 
 DISTNAME=	luatex-beta-0.40.2
 PKGNAME=	${DISTNAME:S/-beta//}
@@ -70,10 +70,12 @@ CONFIGURE_ARGS+=--enable-cxx-runtime-hack \
     --disable-web-progs \
     --disable-xdv2pdf \
     --disable-xdvipdfmx \
+    --disable-xetex \
     --without-system-freetype2 \
     --without-system-gd \
     --without-system-teckit \
     --without-system-t1lib \
+    --without-x \
     --disable-shared    \
     --disable-largefile
 CONFIGURE_ARGS+=--with-system-kpathsea \
