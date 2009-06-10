@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2008/10/08 13:24:02 taca Exp $
+@comment $NetBSD$
 ${GEM_HOME}/cache/tzinfo-${PKGVERSION}.gem
 ${GEM_LIBDIR}/CHANGES
 ${GEM_LIBDIR}/LICENSE
@@ -269,6 +269,7 @@ ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Kabul.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Kamchatka.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Karachi.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Kashgar.rb
+${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Kathmandu.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Katmandu.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Kolkata.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Krasnoyarsk.rb
