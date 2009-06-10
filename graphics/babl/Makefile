@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/08/19 17:51:14 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2009/01/28 13:02:49 tron Exp $
 
 DISTNAME=	babl-${BABL_VERSION}
 CATEGORIES=	graphics
@@ -8,6 +8,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	bjs@NetBSD.org
 HOMEPAGE=	http://gegl.org/babl/
 COMMENT=	Dynamic pixel conversion library
+LICENSE=	gnu-lgpl-v3
+
 ###
 ### NOTE: to build documentation--which requires additional dependencies--
 ###	  define BUILD_DOCS in MAKE_ENV.
