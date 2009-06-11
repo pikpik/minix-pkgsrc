@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/04/24 17:15:23 sno Exp $
+# $NetBSD: Makefile,v 1.3 2009/05/21 13:57:55 sno Exp $
 
 DISTNAME=	DateTimeX-Easy-0.087
 PKGNAME=	p5-${DISTNAME}
@@ -20,6 +20,7 @@ DEPENDS+=	{perl>=5.10,p5-Scalar-List-Utils-[0-9]*}:../../devel/p5-Scalar-List-Ut
 
 BUILD_DEPENDS+=	p5-Test-Most>0:../../devel/p5-Test-Most
 
+PERL5_MODULE_TYPE=	Module::Install
 PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=	#
 

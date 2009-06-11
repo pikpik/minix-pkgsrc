@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/03/15 22:00:45 seb Exp $
+# $NetBSD: Makefile,v 1.6 2009/05/17 18:54:08 sno Exp $
 
 DISTNAME=	Catalyst-Manual-5.7021
 PKGNAME=	p5-${DISTNAME}
@@ -10,6 +10,7 @@ HOMEPAGE=	http://search.cpan.org/dist/Catalyst-Manual/
 COMMENT=	Manual for Catalyst
 
 PERL5_PACKLIST=	auto/Catalyst/Manual/.packlist
+PERL5_MODULE_TYPE=	Module::Install
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/02/22 17:33:10 he Exp $
+# $NetBSD: Makefile,v 1.6 2009/05/17 19:34:17 sno Exp $
 
 DISTNAME=	Catalyst-Plugin-Session-State-Cookie-0.11
 PKGNAME=	p5-${DISTNAME}
@@ -15,6 +15,7 @@ DEPENDS+=	p5-MRO-Compat>=0:../../devel/p5-MRO-Compat
 DEPENDS+=	p5-Test-MockObject>=1.01:../../devel/p5-Test-MockObject
 
 PERL5_PACKLIST= auto/Catalyst/Plugin/Session/State/Cookie/.packlist
+PERL5_MODULE_TYPE=	Module::Install
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/04/24 17:15:21 sno Exp $
+# $NetBSD: Makefile,v 1.4 2009/05/02 19:00:04 sno Exp $
 
 DISTNAME=	DBIx-Class-Schema-Loader-0.04006
 PKGNAME=	p5-${DISTNAME}
@@ -33,6 +33,7 @@ MAKE_ENV+=	DBIC_FEATURE_NOQUESTIONS=1
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/DBIx/Class/Schema/Loader/.packlist
+PERL5_MODULE_TYPE=	Module::Install
 
 PKG_DESTDIR_SUPPORT=    user-destdir
 
