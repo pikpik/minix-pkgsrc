@@ -2,7 +2,7 @@ $NetBSD$
 
 Patch for CVE-2009-1195 taken from:
 
-http://svn.apache.org/viewvc/httpd/httpd/trunk/server/config.c?r1=759924&r2=772997&pathrev=772997
+http://svn.apache.org/viewvc?view=rev&revision=773881
 
 --- server/config.c.orig	2008-12-02 22:28:21.000000000 +0000
 +++ server/config.c	2009-06-04 09:44:24.000000000 +0100
