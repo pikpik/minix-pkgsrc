@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/11/20 14:32:19 dillo Exp $
+@comment $NetBSD: PLIST,v 1.2 2009/01/13 10:18:56 wiz Exp $
 include/poppler/Annot.h
 include/poppler/Array.h
 include/poppler/BuiltinFont.h
@@ -44,6 +44,7 @@ include/poppler/PreScanOutputDev.h
 include/poppler/ProfileData.h
 include/poppler/SecurityHandler.h
 include/poppler/Sound.h
+include/poppler/SplashOutputDev.h
 include/poppler/Stream-CCITT.h
 include/poppler/Stream.h
 include/poppler/TextOutputDev.h
