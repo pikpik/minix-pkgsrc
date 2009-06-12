@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:28 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/02/09 22:56:23 joerg Exp $
 
 DISTNAME=	ply-1.5
 PKGREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	http://systems.cs.uchicago.edu/ply/
+MASTER_SITES=	http://www.dabeaz.com/ply/
 
 MAINTAINER=	aw9k-nnk@asahi-net.or.jp
-HOMEPAGE=	http://systems.cs.uchicago.edu/ply/
+HOMEPAGE=	http://www.dabeaz.com/ply/
 COMMENT=	Python Lex-Yacc
 
 PKG_DESTDIR_SUPPORT=	user-destdir
