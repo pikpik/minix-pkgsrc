@@ -1,8 +1,8 @@
-@comment $NetBSD: PLIST,v 1.3 2006/04/17 07:07:18 jlam Exp $
+@comment $NetBSD: PLIST,v 1.4 2007/05/12 13:46:20 wiz Exp $
 bin/gtranslator
 bin/pozilla.sh
-man/man1/gtranslator.1.gz
-man/man1/pozilla.sh.1.gz
+man/man1/gtranslator.1
+man/man1/pozilla.sh.1
 share/applications/gtranslator.desktop
 share/gnome/help/gtranslator/C/figures/mainwindow.png
 share/gnome/help/gtranslator/C/figures/prefs.png
