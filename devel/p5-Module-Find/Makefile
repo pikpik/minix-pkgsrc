@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/07/14 09:25:19 abs Exp $
+# $NetBSD: Makefile,v 1.2 2008/10/19 19:17:57 he Exp $
 
 DISTNAME=	Module-Find-0.06
 PKGNAME=	p5-${DISTNAME}
@@ -16,7 +16,7 @@ DEPENDS+=	p5-PathTools>=0:../../devel/p5-PathTools
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Module/Find/.packlist
 
-PKG_DESTDIR_SUPPORT=    user-destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

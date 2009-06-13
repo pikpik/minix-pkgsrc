@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/10/19 19:17:48 he Exp $
+# $NetBSD: Makefile,v 1.3 2009/04/12 18:14:08 sno Exp $
 
 DISTNAME=	Class-C3-XS-0.11
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,7 @@ LICENSE=	artistic-2.0
 USE_LANGUAGES=	c
 PERL5_PACKLIST=	auto/Class/C3/XS/.packlist
 
-PKG_DESTDIR_SUPPORT=    user-destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/05/23 17:33:37 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/05/15 23:08:14 dmcmahill Exp $
 
 DISTNAME=		matio-1.3.3
 CATEGORIES=		devel
@@ -18,7 +18,7 @@ GNU_CONFIGURE=		yes
 #CONFIGURE_ARGS+=	--enable-fortran
 USE_LIBTOOL=		yes
 
-PKGCONFIG_OVERRIDE=     matio.pc.in
+PKGCONFIG_OVERRIDE=	matio.pc.in
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

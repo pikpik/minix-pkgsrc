@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/07/14 09:24:50 abs Exp $
+# $NetBSD: Makefile,v 1.2 2008/10/19 19:17:51 he Exp $
 
 DISTNAME=	Devel-Caller-2.03
 PKGNAME=	p5-${DISTNAME}
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/perldoc?Devel::Caller
 COMMENT=	Meatier versions of caller
 
-DEPENDS+=       p5-PadWalker>0.08:../../devel/p5-PadWalker
+DEPENDS+=	p5-PadWalker>0.08:../../devel/p5-PadWalker
 
 USE_LANGUAGES=	c
 PERL5_PACKLIST= auto/Devel/Caller/.packlist

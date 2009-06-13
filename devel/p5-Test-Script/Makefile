@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/07/15 17:38:29 rhaen Exp $
+# $NetBSD: Makefile,v 1.3 2008/10/19 19:18:01 he Exp $
 #
 
 DISTNAME=	Test-Script-1.03
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-IPC-Run3>=0.039:../../devel/p5-IPC-Run3
 
-PERL5_PACKLIST=         auto/Test/Script/.packlist
+PERL5_PACKLIST=		auto/Test/Script/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
