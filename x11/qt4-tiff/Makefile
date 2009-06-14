@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/07/28 07:40:54 adam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/11/22 18:54:47 drochner Exp $
 
 .include "../../x11/qt4-libs/Makefile.common"
 
@@ -11,6 +11,7 @@ CONFIGURE_ARGS+=	-L${QTDIR}/lib
 BUILD_QT4=		yes
 
 do-build:
+	cd ${WRKSRC}/src/tools/bootstrap && env ${MAKE_ENV} ${GMAKE}
 	cd ${WRKSRC}/src/tools/moc && env ${MAKE_ENV} ${GMAKE}
 	cd ${WRKSRC}/src/plugins/imageformats/tiff && env ${MAKE_ENV} ${GMAKE}
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2007/09/03 09:35:18 drochner Exp $
 
 .include "../../x11/qt4-libs/Makefile.common"
 
@@ -12,6 +12,7 @@ CONFIGURE_ARGS+=	-system-sqlite
 BUILD_QT4=		yes
 
 do-build:
+	cd ${WRKSRC}/src/tools/bootstrap && env ${MAKE_ENV} ${GMAKE}
 	cd ${WRKSRC}/src/tools/moc && env ${MAKE_ENV} ${GMAKE}
 	cd ${WRKSRC}/src/plugins/sqldrivers/sqlite && env ${MAKE_ENV} ${GMAKE}
 
