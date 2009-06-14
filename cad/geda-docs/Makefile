@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/21 13:23:56 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.20 2007/05/31 12:48:34 dmcmahill Exp $
 #
 
 DISTNAME=		geda-docs-${PKGVERSION}
@@ -27,8 +27,5 @@ post-install:
 	${CAT} ${.CURDIR}/PLIST.pre > ${PLIST_SRC}
 	${FIND} ${PREFIX}/share/doc/geda-doc/wiki -type f -print | \
 		${SORT} | ${SED} 's;^${PREFIX}/;;g' >> ${PLIST_SRC}
-	${FIND} ${PREFIX}/share/doc/geda-doc/wiki -type d -print | \
-		${SORT} -r | ${SED} 's;^${PREFIX}/;@dirrm ;g' >> ${PLIST_SRC}
-	${CAT} ${.CURDIR}/PLIST.post >> ${PLIST_SRC}
 
 .include "../../mk/bsd.pkg.mk"
