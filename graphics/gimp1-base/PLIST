@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2007/06/12 17:27:25 wiz Exp $
+@comment $NetBSD: PLIST,v 1.8 2009/06/14 17:59:14 joerg Exp $
 bin/gimp
 bin/gimp-1.2
 bin/gimp-config
@@ -1448,4 +1448,3 @@ share/locale/zh_TW/LC_MESSAGES/gimp-libgimp.mo
 share/locale/zh_TW/LC_MESSAGES/gimp-script-fu.mo
 share/locale/zh_TW/LC_MESSAGES/gimp-std-plugins.mo
 share/locale/zh_TW/LC_MESSAGES/gimp.mo
-@unexec ${RMDIR} %D/lib/gimp 2>/dev/null || ${TRUE}
