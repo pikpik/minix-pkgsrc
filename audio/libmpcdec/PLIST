@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2007/01/25 19:31:34 drochner Exp $
 include/mpcdec/config_types.h
 include/mpcdec/decoder.h
 include/mpcdec/huffman.h
@@ -8,4 +8,3 @@ include/mpcdec/reader.h
 include/mpcdec/requant.h
 include/mpcdec/streaminfo.h
 lib/libmpcdec.la
-@dirrm include/mpcdec

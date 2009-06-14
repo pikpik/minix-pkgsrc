@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2006/04/17 07:07:12 jlam Exp $
+@comment $NetBSD: PLIST,v 1.8 2007/06/08 17:06:44 wiz Exp $
 bin/ogg123
 bin/oggdec
 bin/oggenc
@@ -24,4 +24,3 @@ share/locale/ro/LC_MESSAGES/vorbis-tools.mo
 share/locale/ru/LC_MESSAGES/vorbis-tools.mo
 share/locale/sv/LC_MESSAGES/vorbis-tools.mo
 share/locale/uk/LC_MESSAGES/vorbis-tools.mo
-@dirrm share/doc/${DISTNAME}

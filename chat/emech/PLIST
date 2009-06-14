@@ -1,4 +1,3 @@
-@comment $NetBSD: PLIST,v 1.2 2002/06/06 17:10:32 schmonz Exp $
+@comment $NetBSD: PLIST,v 1.3 2007/03/17 14:13:23 rillig Exp $
 bin/mech
 share/examples/emech/sample.conf
-@dirrm share/examples/emech

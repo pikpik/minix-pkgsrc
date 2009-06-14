@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/10/14 17:05:39 tsarna Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/09/14 16:43:46 recht Exp $
 ${PYSITELIB}/japanese.pth
 ${PYSITELIB}/japanese/__init__.py
 ${PYSITELIB}/japanese/__init__.pyc
@@ -97,8 +97,3 @@ ${PYSITELIB}/japanese/ujis.pyo
 ${PYSITELIB}/japanese/windows_31j.py
 ${PYSITELIB}/japanese/windows_31j.pyc
 ${PYSITELIB}/japanese/windows_31j.pyo
-@dirrm ${PYSITELIB}/japanese/python
-@dirrm ${PYSITELIB}/japanese/mappings
-@dirrm ${PYSITELIB}/japanese/c
-@dirrm ${PYSITELIB}/japanese/aliases
-@dirrm ${PYSITELIB}/japanese

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2008/03/09 17:52:57 tnn Exp $
 bin/MOPAC7
 bin/mopac
 share/mopac7/mopac7-man/front
@@ -23,6 +23,3 @@ share/mopac7/sample/test_gre.end
 share/mopac7/sample/test_gre.out
 share/mopac7/sample/test_pol.dat
 share/mopac7/sample/test_pol.out
-@dirrm share/mopac7/sample
-@dirrm share/mopac7/mopac7-man
-@dirrm share/mopac7

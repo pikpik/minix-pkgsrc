@@ -1,3 +1,2 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/11 18:13:11 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:14 jlam Exp $
 lib/bmp/Output/libesdout.la
-@comment in bmp: @dirrm lib/bmp/Output

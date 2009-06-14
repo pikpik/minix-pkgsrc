@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/03/26 17:05:03 minskim Exp $
+@comment $NetBSD: PLIST,v 1.2 2009/06/12 19:07:29 rillig Exp $
 bin/lucy
 man/man1/lucy.1
 share/examples/lucy/ARMTM40TR.qul
@@ -14,4 +14,3 @@ share/examples/lucy/lucy.debug
 share/examples/lucy/lucy.ps
 share/examples/lucy/pSPORT1splice
 share/examples/lucy/pSPORT1vector
-@dirrm share/examples/lucy

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2008/12/08 04:53:28 jnemeth Exp $
 libexec/op_server.pl
 share/examples/op_panel/op_astdb.cfg
 share/examples/op_panel/op_buttons.cfg
@@ -32,5 +32,3 @@ share/op_panel/index-restrict.html
 share/op_panel/index.html
 share/op_panel/mypage.php
 share/op_panel/operator_panel.swf
-@dirrm share/examples/op_panel
-@dirrm share/op_panel

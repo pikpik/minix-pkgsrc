@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2000/12/15 00:36:36 wiz Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:06:42 zuntum Exp $
 bin/tkicb
 libdata/tkicb/icb.tcl
 libdata/tkicb/lib/confuse
@@ -19,6 +19,3 @@ libdata/tkicb/tcl/tabhist.tcl
 libdata/tkicb/tcl/ui.tk.tcl
 libdata/tkicb/tcl/util.tcl
 libdata/tkicb/tcl/version.tcl
-@dirrm libdata/tkicb/lib
-@dirrm libdata/tkicb/tcl
-@dirrm libdata/tkicb

@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/04/27 10:59:49 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 20:06:41 zuntum Exp $
 bin/tirc
 man/man1/tirc.1
 share/tirc/tircrc
-@dirrm share/tirc

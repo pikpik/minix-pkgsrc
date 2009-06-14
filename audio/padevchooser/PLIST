@@ -1,6 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2008/12/20 18:35:30 jmcneill Exp $
 bin/padevchooser
 share/applications/padevchooser.desktop
 share/padevchooser/padevchooser.glade
-@dirrm share/padevchooser
-@comment in xdg-dirs: @dirrm share/applications

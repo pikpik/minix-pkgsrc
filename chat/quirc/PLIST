@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/12/19 12:04:30 grant Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/03/12 06:07:12 minskim Exp $
 bin/quirc
 share/doc/quirc/AUTHORS
 share/doc/quirc/COPYING
@@ -32,5 +32,3 @@ share/quirc/server.tcl
 share/quirc/servers
 share/quirc/variables.tcl
 share/quirc/winpopup.tcl
-@dirrm share/quirc
-@dirrm share/doc/quirc

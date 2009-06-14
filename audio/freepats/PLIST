@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2006/05/13 13:38:34 wiz Exp $
 share/freepats/COPYING
 share/freepats/Drum_000/025_Snare_Roll.pat
 share/freepats/Drum_000/026_Snap.pat
@@ -148,6 +148,3 @@ share/freepats/Tone_000/125_Helicopter.pat
 share/freepats/crude.cfg
 share/freepats/freepats.cfg
 share/freepats/timidity.cfg
-@dirrm share/freepats/Tone_000
-@dirrm share/freepats/Drum_000
-@dirrm share/freepats

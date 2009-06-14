@@ -1,6 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/02/10 14:18:35 hubertf Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:15:30 zuntum Exp $
 bin/cmp3
 bin/rnmp3
 share/doc/cmp3/README
 share/doc/cmp3/sample.cmp3rc
-@dirrm share/doc/cmp3
