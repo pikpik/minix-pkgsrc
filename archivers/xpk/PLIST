@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/12/13 16:29:02 cjep Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:14 jlam Exp $
 bin/xDir
 bin/xPK
 bin/xQuery
@@ -16,4 +16,3 @@ lib/libxpkRLEN.la
 lib/libxpkSQSH.la
 lib/libxpkmaster.la
 share/aclocal/xpk.m4
-@dirrm include/xpk
