@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/06/12 02:14:57 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2009/02/09 21:09:23 joerg Exp $
 #
 
 DISTNAME=	Pmw.1.2
@@ -27,8 +27,6 @@ do-install:
 	${CAT} ${PKGDIR}/PLIST.pre >${PLIST_SRC}
 	(cd ${DESTDIR}${PREFIX}; ${FIND} ${PYSITELIB}/Pmw \
 		-type f -print >>${PLIST_SRC})
-	(cd ${DESTDIR}${PREFIX}; ${FIND} -d ${PYSITELIB}/Pmw \
-		-type d -print | ${SED} -e "s/^/@dirrm /" >>${PLIST_SRC})
 
 .include "../../lang/python/extension.mk"
 .include "../../x11/py-Tk/buildlink3.mk"
