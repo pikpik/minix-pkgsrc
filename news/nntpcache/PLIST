@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2008/06/15 13:08:52 obache Exp $
+@comment $NetBSD: PLIST,v 1.11 2009/06/14 18:10:06 joerg Exp $
 libexec/nntpcache-gdb.sh
 libexec/nntpcache.gdb
 libexec/nntpcached.debug
@@ -36,5 +36,5 @@ share/examples/nntpcache/pubring.asc-dist
 share/examples/nntpcache/pubring.pgp
 share/examples/nntpcache/pubring.pgp-dist
 share/examples/nntpcache/spam.filter
-@exec ${MKDIR} %D/share/examples/nntpcache/http/innreport/pics
 share/examples/rc.d/nntpcached
+@pkgdir share/examples/nntpcache/http/innreport/pics
