@@ -1,0 +1,10 @@
+# $NetBSD$
+
+OG_DIR="@PREFIX@/@OG_DIR@"
+
+case ${STAGE} in
+DEINSTALL)
+	# enable to edit language translation.
+	(cd "${OG_DIR}"; ${CHOWN} -R language)
+	;;
+esac
