@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/04/13 06:05:44 obache Exp $
+@comment $NetBSD: PLIST,v 1.2 2009/06/14 18:01:33 joerg Exp $
 include/tomoe/tomoe-candidate.h
 include/tomoe/tomoe-char.h
 include/tomoe/tomoe-config.h
@@ -46,4 +46,4 @@ share/tomoe/dict.dtd
 share/tomoe/recognizer/handwriting-ja.xml
 share/tomoe/recognizer/handwriting-zh_CN.xml
 share/tomoe/xml2est.rb
-@exec ${MKDIR} %D/share/tomoe/dict
+@pkgdir share/tomoe/dict
