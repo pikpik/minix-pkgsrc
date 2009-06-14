@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2009/05/04 01:37:43 hasso Exp $
+# $NetBSD: Makefile,v 1.14 2009/05/19 08:59:15 wiz Exp $
 #
 
-DISTNAME=	gbrainy-1.1
-# 1.1 is newer than 1.01 -- remove next line on update
-PKGNAME=	${DISTNAME}0
+DISTNAME=	gbrainy-1.11
 CATEGORIES=	games
 MASTER_SITES=	http://www.softcatala.org/~jmas/gbrainy/
 
