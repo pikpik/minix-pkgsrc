@@ -1,2 +1,2 @@
-@comment $NetBSD: PLIST.common_end,v 1.3 2009/05/21 21:21:35 tnn Exp $
-@exec ${MKDIR} %D/lib/python${PY_VER_SUFFIX}/lib-old
+@comment $NetBSD: PLIST.common_end,v 1.4 2009/06/14 18:03:39 joerg Exp $
+@pkgdir lib/python${PY_VER_SUFFIX}/lib-old
