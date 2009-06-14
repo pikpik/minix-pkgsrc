@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2009/05/19 23:46:44 sno Exp $
+# $NetBSD: Makefile,v 1.3 2009/06/13 06:46:45 rillig Exp $
 
-DISTNAME=	IPC-Cmd-0.44
+DISTNAME=	IPC-Cmd-0.46
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IPC/}
@@ -8,9 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IPC/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/IPC-Cmd/
 COMMENT=	Perl module for finding and running system commands
-LICENSE=	gnu-gpl-v2 # OR artistic
-
-DEPENDS+=	p5-Locale-Maketext-Simple>=0:../../misc/p5-Locale-Maketext-Simple
+LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
