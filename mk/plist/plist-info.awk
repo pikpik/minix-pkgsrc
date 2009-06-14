@@ -1,4 +1,4 @@
-# $NetBSD: plist-info.awk,v 1.14 2006/06/01 06:12:48 rillig Exp $
+# $NetBSD: plist-info.awk,v 1.15 2006/06/01 07:11:09 rillig Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -78,9 +78,6 @@ BEGIN {
 	sub("^" PKGINFODIR "/", "info/")
 }
 ($0 !~ "^@dirrm " IGNORE_INFO_REGEXP "$") && \
-($0 ~ "^@dirrm " PKGINFODIR "$") {
-	sub(PKGINFODIR "$", "info")
-}
 
 ###
 ### Canonicalize info page entries by stripping any ".gz" suffixes.

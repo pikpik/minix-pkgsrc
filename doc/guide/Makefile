@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2009/01/09 11:11:40 rillig Exp $
+# $NetBSD: Makefile,v 1.35 2009/04/08 22:43:23 joerg Exp $
 #
 
 DISTNAME=		pkgsrc-guide-${PKGVERSION}
@@ -72,9 +72,6 @@ do-install:
 post-install:
 	${FIND} ${DOCDIR} \( -type f -o -type l \) -print		\
 		| ${SORT} | ${SED} -e "s,${PREFIX}/,,g"			\
-		>> ${PLIST_SRC}
-	${FIND} ${DOCDIR} -type d -print				\
-		| ${SORT} -r | ${SED} -e "s,${PREFIX}/,@dirrm ,g"	\
 		>> ${PLIST_SRC}
 
 # install the single-file HTML and ascii output into the pkgsrc doc/

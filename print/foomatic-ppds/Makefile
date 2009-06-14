@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/03/14 12:12:57 markd Exp $
+# $NetBSD: Makefile,v 1.6 2007/10/25 21:04:23 jlam Exp $
 
 .include "Makefile.common"
 
@@ -26,10 +26,7 @@ CHECK_PORTABILITY_SKIP=		install
 GENERATE_PLIST+=							\
 	( cd ${WRKSRC}/share;						\
 	  ${FIND} ppd -type f -print | ${SORT} -u |			\
-	  ${SED} -e "s|^|share/foomatic/|";				\
-	  ${FIND} ppd -type d -print | ${SORT} -ur |			\
-	  ${SED} -e "s|^|@dirrm share/foomatic/|";			\
-	  ${ECHO} "@dirrm share/foomatic" );
+	  ${SED} -e "s|^|share/foomatic/|" )
 
 do-build:	# nothing
 

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:26:03 jlam Exp $
 
 DISTNAME=	ramaze-0.3.9.1
 CATEGORIES=	www
@@ -16,12 +16,9 @@ DEPENDS+=	${RUBY_PKGPREFIX}-rack>=0.2.0:../../www/ruby-rack
 #
 GENERATE_PLIST+= \
 	${ECHO} "@comment The following lines are automatically generated." && \
-	( cd ${DESTDIR}${PREFIX} && \
-          ${FIND} ${GEM_LIBDIR:S|${PREFIX}/||}/rdoc \! -type d -print | \
-                ${SORT} && \
-          ${FIND} ${GEM_LIBDIR:S|${PREFIX}/||}/rdoc -type d -print | \
-                ${SORT} -r | ${SED} -e "s,^,@dirrm ," && \
-	  ${ECHO} "@dirrm "${GEM_LIBDIR:S|${PREFIX}/||:Q} );
+	cd ${DESTDIR}${PREFIX} && \
+	  ${FIND} ${GEM_LIBDIR:S|${PREFIX}/||}/rdoc \! -type d -print | \
+	        ${SORT};
 
 .include "../../misc/rubygems/rubygem.mk"
 .include "../../mk/bsd.pkg.mk"

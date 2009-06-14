@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2008/03/04 06:59:05 jlam Exp $
+# $NetBSD: Makefile,v 1.38 2009/01/12 19:22:18 adam Exp $
 
 DISTNAME=	rocksndiamonds-3.2.6.0
 CATEGORIES=	games x11
@@ -74,7 +74,6 @@ do-install:
 		find "$${d}" -type d -print | { while read subdir; do	\
 			${INSTALL_DATA_DIR} 				\
 				${DESTDIR}${SHAREDIR}/"$${subdir}";	\
-			${ECHO} "@dirrm ${SHARESUBDIR}/$${subdir}";	\
 		done ; } | sort -r >> ${WRKDIR}/PLIST.D;		\
 		find "$${d}" -type f -print | while read f; do		\
 			${INSTALL_DATA} "$${f}"				\

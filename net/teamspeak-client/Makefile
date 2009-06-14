@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/04/30 21:24:44 zafer Exp $
+# $NetBSD: Makefile,v 1.9 2009/05/19 08:59:28 wiz Exp $
 
 PKGNAME=		teamspeak-client-2.0.32.60
 DISTNAME=		ts2_client_rc2_2032
@@ -43,7 +43,6 @@ do-install:
 	${INSTALL_DATA} -m 644 ${WRKSRC}/manual/* ${DESTDIR}${DOC_DIR}
 	${CAT} ${PKGDIR}/PLIST > ${PLIST_SRC}
 	(cd ${DESTDIR}${PREFIX}; ${FIND} lib/teamspeak-client share/doc/teamspeak-client -type f -print ) >> ${PLIST_SRC}
-	(cd ${DESTDIR}${PREFIX}; ${FIND} lib/teamspeak-client share/doc/teamspeak-client -type d -print ) | ${SED} 's/^/@dirrm /' | ${SORT} -r >> ${PLIST_SRC}
 
 
 .include "../../mk/bsd.pkg.mk"

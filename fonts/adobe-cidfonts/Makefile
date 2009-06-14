@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/10/25 21:04:21 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/03 20:17:11 jlam Exp $
 
 DISTNAME=	adobe-cidfonts-20000901
 CATEGORIES=	fonts
@@ -38,9 +38,7 @@ RESOURCEDIR=	${PREFIX}/${RESOURCESUBDIR}
 GENERATE_PLIST=								\
 	for f in ${DISTFILES:O:u}; do					\
 		${ECHO} ${RESOURCESUBDIR}/CIDFont/$$f;			\
-	done;								\
-	${ECHO} "@dirrm ${RESOURCESUBDIR}/CIDFont";			\
-	${ECHO} "@unexec ${RMDIR} -p %D/${RESOURCESUBDIR} 2>/dev/null || ${TRUE}";
+	done
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${RESOURCEDIR}/CIDFont

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2007/06/12 20:10:17 joerg Exp $
+# $NetBSD: Makefile,v 1.91 2008/02/01 07:50:01 tnn Exp $
 
 DISTNAME=		gcc-2.95.3
 PKGREVISION=		7
@@ -114,9 +114,6 @@ post-install:
 	${CP} -f ${PKGDIR}/PLIST ${PLIST_SRC}
 	${FIND} ${GCC_PREFIX} \( -type f -o -type l \) -print		\
 		| ${SORT} | ${SED} -e "s,${PREFIX}/,,g"			\
-		>> ${PLIST_SRC}
-	${FIND} ${GCC_PREFIX} -type d -print				\
-		| ${SORT} -r | ${SED} -e "s,${PREFIX}/,@dirrm ,g"	\
 		>> ${PLIST_SRC}
 
 .include "../../mk/bsd.pkg.mk"

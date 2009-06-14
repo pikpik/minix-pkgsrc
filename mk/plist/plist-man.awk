@@ -1,4 +1,4 @@
-# $NetBSD: plist-man.awk,v 1.4 2006/02/07 18:42:38 jlam Exp $
+# $NetBSD: plist-man.awk,v 1.5 2006/02/07 18:43:02 jlam Exp $
 #
 # Copyright (c) 2006 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -141,7 +141,4 @@ BEGIN {
 /^[^@]/ && \
 /^man\/([^\/]*\/)?(man[1-9ln]\/[^\/]*\.[1-9ln]|cat[1-9ln]\/[^\/]*\.[0-9])/ {
 	sub("^man/", PKGMANDIR "/")
-}
-/^@dirrm man\/([^\/]*\/)?(man[1-9ln]|cat[1-9ln])/ {
-	sub("^@dirrm man/", "@dirrm " PKGMANDIR "/")
 }

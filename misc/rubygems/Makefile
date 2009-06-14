@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/06/10 21:44:30 minskim Exp $
+# $NetBSD: Makefile,v 1.25 2009/06/12 23:02:57 minskim Exp $
 
 DISTNAME=	rubygems-1.3.4
 PKGREVISION=	1
@@ -41,11 +41,9 @@ SUBST_MESSAGE.conf=	Fixing configuration files.
 # Generate a dynamic PLIST for the rubygems documentation directory.
 GENERATE_PLIST+=	\
 	${ECHO} "@comment The following lines are automatically generated." && \
-	( cd ${DESTDIR}${PREFIX} && \
+	cd ${DESTDIR}${PREFIX} && \
 	  ${FIND} ${GEM_DOCDIR:S|${PREFIX}/||} \! -type d -print | \
-		${SORT} && \
-	  ${FIND} ${GEM_DOCDIR:S|${PREFIX}/||} -type d -print | \
-		${SORT} -r | ${SED} -e "s,^,@dirrm ," );
+		${SORT}
 
 .include "../../lang/ruby/modules.mk"
 

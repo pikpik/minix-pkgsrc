@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/07/27 18:48:04 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2007/02/01 22:55:49 joerg Exp $
 
 #
 # There is no distinfo file because users can specify alternate themes
@@ -62,7 +62,6 @@ do-install:
 	      ${ECHO} "${WM_DATADIR}/Themes/$$DIR/$$FILE" >>${PLIST_SRC}; \
 	    done; \
 	    cd ..; \
-	    ${ECHO} "@dirrm ${WM_DATADIR}/Themes/$$DIR" >>${PLIST_SRC}; \
 	  fi; \
 	done
 

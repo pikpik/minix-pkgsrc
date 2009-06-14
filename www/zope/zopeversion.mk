@@ -1,4 +1,4 @@
-# $NetBSD: zopeversion.mk,v 1.9 2008/10/25 16:17:24 taca Exp $
+# $NetBSD: zopeversion.mk,v 1.10 2009/02/21 15:26:47 taca Exp $
 #
 
 .if !defined(_ZOPEVERSION_MK)
@@ -200,7 +200,7 @@ PLIST_SUBST+=	ZOPE_VERSION=${ZOPE_VERSION} \
 		ZOPE_DOC_BASE=${ZOPE_DOC_BASE} \
 		ZOPE_PRODUCTS_BASE=${ZOPE_PRODUCTS_BASE}
 
-PRINT_PLIST_AWK+=	/^(@dirrm )?${ZOPE_BASE:S|/|\\/|g}/ \
+PRINT_PLIST_AWK+=	/^${ZOPE_BASE:S|/|\\/|g}/ \
 		{ gsub(/${ZOPE_BASE:S|/|\\/|g}/, "$${ZOPE_BASE}"); \
 		print; next; }
 

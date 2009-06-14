@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2007/11/12 20:05:38 heinz Exp $
+# $NetBSD: Makefile,v 1.33 2009/06/12 22:17:28 zafer Exp $
 
 DISTNAME=	nc110
 PKGNAME=	netcat-1.10
@@ -54,7 +54,6 @@ do-install:
 	    ${INSTALL_DATA} $$i ${DESTDIR:Q}${PREFIX:Q}/${EXAMPLE_DIR};	\
 	    ${ECHO} ${EXAMPLE_DIR}/$$i >> PLIST.data;			\
 	done;								\
-	${ECHO} "@dirrm ${EXAMPLE_DIR}" >> PLIST.data;			\
 	)
 	${INSTALL_MAN} ${FILESDIR}/nc.1 \
 		${DESTDIR:Q}${PREFIX:Q}/${PKGMANDIR}/man1/nc.1

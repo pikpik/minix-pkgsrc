@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2009/04/09 00:48:14 joerg Exp $
+# $NetBSD: Makefile,v 1.102 2009/05/19 08:59:29 wiz Exp $
 #
 # NOTE:	If you update this package, then you'll likely need to also update
 #	the x11-links dependency in buildlink3.mk to the correct version,
@@ -83,10 +83,6 @@ do-build:
 				>> ${PLIST_SRC.files};			\
 		fi;							\
 	done
-	${RM} -f ${PLIST_SRC.dirs}
-	{ cd ${WRKSRC}; ${FIND} ${X11_LINKS_SUBDIR} -type d -print |	\
-	  ${SORT} -ur | ${SED} -e "s|^|@dirrm |";			\
-	} > ${PLIST_SRC.dirs}
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR:Q}${X11_LINKS_DIR:Q}

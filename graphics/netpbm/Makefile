@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.159 2009/02/27 16:51:36 wiz Exp $
+# $NetBSD: Makefile,v 1.160 2009/06/09 12:12:00 abs Exp $
 
 DISTNAME=	netpbm-10.34
 PKGREVISION=	1
@@ -91,11 +91,6 @@ post-install:
 	${MV} misc share/netpbm && 				\
 	${CHOWN} -R ${BINOWN}:${BINGRP} . &&			\
 	${FIND} * \! -type d -print | ${SORT} >${PLIST_SRC} &&	\
-	${FIND} * -type d -print | 				\
-	while read DIR; do					\
-		${TEST} -d "${DESTDIR}${PREFIX}/$${DIR}" ||	\
-			${ECHO} "@dirrm $${DIR}";		\
-	done >>${PLIST_SRC} &&					\
 	pax -rwpppm . ${DESTDIR}${PREFIX}
 	${RM} -fr ${STAGEDIR}
 	${FIND} ${DESTDIR}${PREFIX}/share/doc/netpbm -type f -print |	\

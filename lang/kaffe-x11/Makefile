@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/02/07 23:21:36 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/09/21 13:03:56 wiz Exp $
 #
 
 .include "../../lang/kaffe/Makefile.common"
@@ -28,8 +28,6 @@ INSTALL_DIRS+=	libraries/javalib/external/classpath/native/jawt
 
 pre-build:
 	cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${BUILD_MAKE_FLAGS} BUILD_ENVIRONMENT
-
-PRINT_PLIST_AWK+= /^@dirrm/ { print "@comment in kaffe: " $$0; next; }
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 

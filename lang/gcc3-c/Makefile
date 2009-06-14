@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/10/25 21:04:22 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2009/02/28 18:37:22 joerg Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-c-${GCC_VERSION}
 PKGREVISION=	1
@@ -28,9 +28,7 @@ post-build:
 
 GENERATE_PLIST+=							\
 	${FIND} ${DESTDIR:Q}${GCC_PREFIX} \( -type f -o -type l \) -print \
-		| ${SORT} | ${SED} -e "s,${DESTDIR}${PREFIX}/,,g";	\
-	${FIND} ${DESTDIR:Q}${GCC_PREFIX} -type d -print		\
-		| ${SORT} -r | ${SED} -e "s,${DESTDIR}${PREFIX}/,@dirrm ,g";
+		| ${SORT} | ${SED} -e "s,${DESTDIR}${PREFIX}/,,g"
 
 post-install:
 .if ${OPSYS} == "SunOS"

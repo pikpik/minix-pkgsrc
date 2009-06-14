@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/02/15 15:47:56 tron Exp $
+# $NetBSD: Makefile,v 1.53 2009/02/27 10:00:29 tron Exp $
 
 DISTNAME=	magicfilter-1.2
 PKGREVISION=	7
@@ -44,11 +44,10 @@ SUBST_SED.gs=		-e 's,${PREFIX}/bin/gs,${SETENV} TEMP=$${TMPDIR:-/tmp} &,'
 INSTALLATION_DIRS+=	bin ${FILTER_DIR} ${PKGMANDIR}/man8
 
 GENERATE_PLIST+= \
-	(cd ${WRKSRC}/filters;						\
+	cd ${WRKSRC}/filters &&						\
 	for f in *-filter; do						\
 	  ${ECHO} ${FILTER_DIR}/"$$f";					\
-	done;								\
-	${ECHO} "@dirrm ${FILTER_DIR}");
+	done								\
 
 post-install:
 	set -e;								\

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2007/10/09 19:19:14 martti Exp $
+# $NetBSD: Makefile,v 1.31 2008/11/10 17:21:37 wiz Exp $
 #
 
 DISTNAME=	xipdump-1.5.4
@@ -24,9 +24,6 @@ post-build:
 	@${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
 	@(cd ${WRKSRC}/data; ${FIND} pkc pkt ! -type d -print | \
 		${SED} -e 's|^|share/xipdump/|' >> ${PLIST_SRC})
-	@${ECHO} "@dirrm share/xipdump/pkt" >> ${PLIST_SRC}
-	@${ECHO} "@dirrm share/xipdump/pkc" >> ${PLIST_SRC}
-	@${ECHO} "@dirrm share/xipdump" >> ${PLIST_SRC}
 
 post-install:
 	${FIND} ${PREFIX}/share/xipdump -name *.pkc | \
