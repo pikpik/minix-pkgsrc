@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.4 2006/06/21 16:54:25 jlam Exp $
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2007/05/29 04:58:06 gendalia Exp $
+@comment $NetBSD: PLIST,v 1.2 2007/05/29 04:58:06 gendalia Exp $
 hobbit/client/bin/bb
 hobbit/client/bin/bbcmd
 hobbit/client/bin/bbdigest
@@ -29,12 +29,5 @@ hobbit/client/bin/hobbitclient.sh
 hobbit/client/runclient.sh
 share/examples/rc.d/hobbitclient
 @exec ${MKDIR} %D/hobbit/client/tmp
-@dirrm hobbit/client/tmp
 @exec ${MKDIR} %D/hobbit/client/logs
-@dirrm hobbit/client/logs
 @exec ${MKDIR} %D/hobbit/client/ext
-@dirrm hobbit/client/ext
-@dirrm hobbit/client/etc
-@dirrm hobbit/client/bin
-@dirrm hobbit/client
-@dirrm hobbit

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/10/28 15:12:36 agc Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:32 jlam Exp $
 bin/aqsis
 bin/aqsis_framebuffer_glut
 bin/aqsis_framebuffer_glut_z
@@ -97,4 +97,3 @@ shaders/uvtest.sl
 shaders/uvtest.slx
 shaders/wavy.sl
 shaders/wavy.slx
-@dirrm shaders

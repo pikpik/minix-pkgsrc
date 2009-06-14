@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.7 2006/11/10 17:57:51 perry Exp $
 share/doc/gnus/info/emacs-mime
 share/doc/gnus/info/gnus
 share/doc/gnus/info/gnus-1
@@ -451,10 +451,3 @@ ${FOR_xemacs}${EMACS_LISPPREFIX}/gnus/webmail.el
 ${FOR_xemacs}${EMACS_LISPPREFIX}/gnus/webmail.elc
 ${EMACS_LISPPREFIX}/gnus/yenc.el
 ${EMACS_LISPPREFIX}/gnus/yenc.elc
-@dirrm ${EMACS_LISPPREFIX}/gnus
-@dirrm share/doc/gnus/info
-@dirrm share/doc/gnus
-@dirrm share/gnus/images/smilies
-@dirrm share/gnus/images/gnus
-@dirrm share/gnus/images
-@dirrm share/gnus

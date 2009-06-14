@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/10/13 02:30:49 epg Exp $
+@comment $NetBSD: PLIST,v 1.2 2007/07/13 14:58:38 drochner Exp $
 ${PYSITELIB}/_ctypes.so
 ${PYSITELIB}/_ctypes_test.so
 ${PYSITELIB}/ctypes/__init__.py
@@ -224,6 +224,3 @@ ${PYSITELIB}/ctypes/wintypes.py
 ${PYSITELIB}/ctypes/wintypes.pyc
 ${PYSITELIB}/ctypes/wintypes.pyo
 ${PYSITELIB}/ctypes/wintypes.pyo
-@dirrm ${PYSITELIB}/ctypes/test
-@dirrm ${PYSITELIB}/ctypes/macholib
-@dirrm ${PYSITELIB}/ctypes

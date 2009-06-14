@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/07/06 15:03:13 xtraeme Exp $
 bin/fsv
 share/fsv/about.html
 share/fsv/back.png
@@ -17,4 +17,3 @@ share/fsv/treev.png
 share/fsv/viewport.png
 share/fsv/window.html
 share/fsv/window.png
-@dirrm share/fsv

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:01:46 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/02/10 19:10:21 garbled Exp $
 share/xfmail/abook.xpm
 share/xfmail/abort.xpm
 share/xfmail/attach.xpm
@@ -35,5 +35,3 @@ man/man1/xfmail.1
 lib/libeditor.la
 lib/libmail.la
 bin/xfmail
-@dirrm share/doc/xfmail
-@dirrm share/xfmail

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2000/07/08 16:52:06 rh Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:59:52 zuntum Exp $
 bin/ftpcount
 bin/ftpwho
 libexec/ftpd
@@ -20,4 +20,3 @@ sbin/privatepw
 share/examples/wu-ftpd/ftpaccess.example
 share/examples/wu-ftpd/ftpconversions.example
 share/examples/wu-ftpd/ftpusers.example
-@dirrm share/examples/wu-ftpd

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.11 2008/04/12 22:43:08 jlam Exp $
+@comment $NetBSD: PLIST,v 1.12 2008/09/17 18:52:10 joerg Exp $
 bin/avifix
 bin/aviindex
 bin/avimerge
@@ -245,7 +245,3 @@ share/doc/transcode/import_yuv.txt
 share/doc/transcode/pvm.cfg
 share/doc/transcode/release-notes/README-0.6.13
 share/doc/transcode/template.cfg.txt
-@dirrm share/doc/transcode/release-notes
-@dirrm share/doc/transcode/html
-@dirrm share/doc/transcode
-@dirrm lib/transcode

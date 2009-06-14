@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2006/08/17 14:02:23 taca Exp $
+@comment $NetBSD: PLIST,v 1.3 2006/08/23 09:13:24 minskim Exp $
 bin/synergyc
 bin/synergys
 share/doc/${PKGBASE}/about.html
@@ -26,6 +26,3 @@ share/doc/${PKGBASE}/tips.html
 share/doc/${PKGBASE}/toc.html
 share/doc/${PKGBASE}/trouble.html
 share/examples/${PKGBASE}/synergy.conf
-@dirrm share/examples/${PKGBASE}
-@dirrm share/doc/${PKGBASE}/images
-@dirrm share/doc/${PKGBASE}

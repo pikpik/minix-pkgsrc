@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2006/04/07 15:28:49 jlam Exp $
+@comment $NetBSD: PLIST,v 1.5 2007/04/01 21:26:48 wiz Exp $
 bin/lcp
 bin/lsftp
 bin/lsh
@@ -78,4 +78,3 @@ man/man8/sftp-server.8
 sbin/lsh-execuv
 sbin/lshd
 sbin/sftp-server
-@dirrm include/nettle

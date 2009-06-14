@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/05/05 22:45:38 rh Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/01/12 16:08:46 adam Exp $
 bin/ltris
 share/ltris/figures
 share/ltris/gfx/back0.bmp
@@ -26,6 +26,3 @@ share/ltris/sounds/motion.wav
 share/ltris/sounds/nextlevel.wav
 share/ltris/sounds/stop.wav
 var/ltris.hscr
-@dirrm share/ltris/sounds
-@dirrm share/ltris/gfx
-@dirrm share/ltris

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:00:24 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/05/01 11:59:49 jmmv Exp $
 libexec/cgi-bin/mailserv/cgi-lib.pl
 libexec/cgi-bin/mailserv/listproc
 libexec/cgi-bin/mailserv/listserv
@@ -26,6 +26,3 @@ share/examples/mailserv/mlp.cf
 share/examples/mailserv/pmdf.cf
 share/examples/mailserv/smartlist.cf
 share/examples/mailserv/subscribe.cf
-@dirrm share/examples/mailserv
-@dirrm share/doc/mailserv
-@dirrm libexec/cgi-bin/mailserv

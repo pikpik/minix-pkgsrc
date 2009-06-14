@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:19:18 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/03/03 03:23:25 jschauma Exp $
 bin/sumtitra
 bin/titrax
 bin/titrat
@@ -6,4 +6,3 @@ lib/X11/app-defaults/Titrax
 libexec/titrax/weekno.perl
 ${IMAKE_MAN_DIR}/sumtitra.${IMAKE_MANNEWSUFFIX}
 ${IMAKE_MAN_DIR}/titrax.${IMAKE_MANNEWSUFFIX}
-@dirrm libexec/titrax

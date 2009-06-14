@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.12 2008/10/01 22:25:53 bjs Exp $
+@comment $NetBSD: PLIST,v 1.13 2009/06/05 11:10:35 wiz Exp $
 share/examples/${PKGNAME}/beos/GLInfo.cpp
 share/examples/${PKGNAME}/beos/demo.cpp
 share/examples/${PKGNAME}/beos/sample.cpp
@@ -495,16 +495,3 @@ share/examples/${PKGNAME}/xdemos/xrotfontdemo.c
 share/examples/${PKGNAME}/xdemos/xuserotfont.c
 share/examples/${PKGNAME}/xdemos/xuserotfont.h
 share/examples/${PKGNAME}/xdemos/yuvrect_client.c
-@dirrm share/examples/${PKGNAME}/xdemos
-@dirrm share/examples/${PKGNAME}/windml
-@dirrm share/examples/${PKGNAME}/util
-@dirrm share/examples/${PKGNAME}/samples
-@dirrm share/examples/${PKGNAME}/redbook
-@dirrm share/examples/${PKGNAME}/osdemos
-@dirrm share/examples/${PKGNAME}/images
-@dirrm share/examples/${PKGNAME}/glsl
-@dirrm share/examples/${PKGNAME}/ggi
-@dirrm share/examples/${PKGNAME}/fbdev
-@dirrm share/examples/${PKGNAME}/demos
-@dirrm share/examples/${PKGNAME}/beos
-@dirrm share/examples/${PKGNAME}

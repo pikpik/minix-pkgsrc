@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2008/03/17 15:59:05 kristerw Exp $
+@comment $NetBSD: PLIST,v 1.6 2008/07/20 00:38:44 kristerw Exp $
 bin/darcs
 man/man1/darcs.1
 share/doc/darcs/examples/darcs_completion
@@ -74,6 +74,3 @@ share/doc/darcs/manual/prev.png
 share/doc/darcs/manual/prev_g.png
 share/doc/darcs/manual/up.png
 share/doc/darcs/manual/up_g.png
-@dirrm share/doc/darcs/examples
-@dirrm share/doc/darcs/manual
-@dirrm share/doc/darcs

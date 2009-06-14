@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2008/08/01 10:04:09 hauke Exp $
+@comment $NetBSD: PLIST,v 1.9 2009/01/18 20:07:45 adam Exp $
 bin/hatari
 bin/hmsa
 man/man1/hatari.1
@@ -27,6 +27,3 @@ share/doc/hatari/release-notes.txt
 share/doc/hatari/todo.txt
 share/hatari/hatari-icon.bmp
 share/hatari/tos.img
-@dirrm share/hatari
-@dirrm share/doc/hatari/images
-@dirrm share/doc/hatari

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.14 2006/04/28 18:15:20 jlam Exp $
+@comment $NetBSD: PLIST,v 1.15 2006/06/09 22:12:10 jlam Exp $
 bin/imapd
 libexec/courier/courierpop3d
 libexec/courier/courierpop3login
@@ -38,4 +38,3 @@ share/examples/rc.d/courierimap
 share/examples/rc.d/courierimaps
 share/examples/rc.d/courierpop
 share/examples/rc.d/courierpops
-@dirrm share/doc/courier/imap

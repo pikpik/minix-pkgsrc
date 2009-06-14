@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2005/05/02 20:34:06 reed Exp $
+@comment $NetBSD: PLIST,v 1.7 2006/04/07 19:54:17 jlam Exp $
 info/ndtpd-ja.info
 info/ndtpd.info
 libexec/ndtpstat
@@ -9,4 +9,3 @@ sbin/ndtpcontrol
 sbin/ndtpdaily
 sbin/ndtpupgrade
 share/examples/rc.d/ndtpd
-@dirrm share/examples/ndtpd

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2006/04/28 18:14:06 jlam Exp $
+@comment $NetBSD: PLIST,v 1.6 2007/08/10 17:57:09 jlam Exp $
 bin/lockmail
 bin/mailbot
 bin/maildrop
@@ -34,4 +34,3 @@ share/doc/courier/reformail.html
 share/doc/courier/reformime.html
 share/doc/courier/rfc2045.html
 share/doc/courier/rfc822.html
-@dirrm share/doc/courier/maildrop

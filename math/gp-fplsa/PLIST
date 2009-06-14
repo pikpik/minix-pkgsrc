@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/12/24 00:17:25 cjep Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/01/05 12:43:02 cjep Exp $
 lib/gap4.3/pkg/fplsa/README.fplsa
 lib/gap4.3/pkg/fplsa/bin/${GAP_PLATFORM}/fplsa4
 lib/gap4.3/pkg/fplsa/doc/fplsa.tex
@@ -151,9 +151,3 @@ lib/gap4.3/pkg/fplsa/lib/std-e8.in
 lib/gap4.3/pkg/fplsa/lib/std-f4.in
 lib/gap4.3/pkg/fplsa/lib/std-g2.in
 lib/gap4.3/pkg/fplsa/lib/ufnarovs.in
-@dirrm lib/gap4.3/pkg/fplsa/lib
-@dirrm lib/gap4.3/pkg/fplsa/gap
-@dirrm lib/gap4.3/pkg/fplsa/doc
-@dirrm lib/gap4.3/pkg/fplsa/bin/${GAP_PLATFORM}
-@dirrm lib/gap4.3/pkg/fplsa/bin
-@dirrm lib/gap4.3/pkg/fplsa

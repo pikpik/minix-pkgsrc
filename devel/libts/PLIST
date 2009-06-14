@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/04/27 11:47:12 agc Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:24:49 zuntum Exp $
 lib/libtokenscan.a
 include/tokenscan.h
 share/doc/libts/tokenscan.txt
-@dirrm share/doc/libts

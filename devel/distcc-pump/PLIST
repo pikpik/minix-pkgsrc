@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2009/01/17 13:29:27 adam Exp $
 bin/pump
 ${PYSITELIB}/include_server/__init__.py
 ${PYSITELIB}/include_server/__init__.pyc
@@ -49,4 +49,3 @@ ${PYSITELIB}/include_server/setup.py
 ${PYSITELIB}/include_server/setup.pyc
 ${PYSITELIB}/include_server/statistics.py
 ${PYSITELIB}/include_server/statistics.pyc
-@dirrm ${PYSITELIB}/include_server

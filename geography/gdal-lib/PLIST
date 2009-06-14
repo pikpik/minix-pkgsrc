@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2007/03/24 00:19:29 joerg Exp $
+@comment $NetBSD: PLIST,v 1.6 2009/06/03 17:28:30 hasso Exp $
 bin/gdal-config
 bin/gdal_contour
 bin/gdal_grid
@@ -118,4 +118,3 @@ share/gdal/seed_2d.dgn
 share/gdal/seed_3d.dgn
 share/gdal/stateplane.csv
 share/gdal/unit_of_measure.csv
-@dirrm share/gdal

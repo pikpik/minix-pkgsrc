@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2007/11/29 16:42:09 wiz Exp $
+@comment $NetBSD: PLIST,v 1.4 2008/05/30 13:06:26 wiz Exp $
 bin/cntraining
 bin/mftraining
 bin/tesseract
@@ -333,9 +333,3 @@ share/tessdata/tessconfigs/msdemo
 share/tessdata/tessconfigs/nobatch
 share/tessdata/tessconfigs/segdemo
 share/tesseract/phototest.tif
-@dirrm share/tesseract
-@dirrm share/tessdata/tessconfigs
-@dirrm share/tessdata/configs
-@dirrm share/tessdata
-@dirrm share/doc/tesseract
-@dirrm include/tesseract

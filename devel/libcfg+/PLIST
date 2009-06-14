@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2004/09/22 08:09:24 jlam Exp $
+@comment $NetBSD: PLIST,v 1.1 2004/10/06 10:17:06 grant Exp $
 include/cfg+.h
 include/cfg.h
 include/platon/cfg+.h
@@ -73,8 +73,3 @@ share/doc/libcfg+-${PKGVERSION}/html/usage.error-codes.html
 share/doc/libcfg+-${PKGVERSION}/html/usage.html
 share/doc/libcfg+-${PKGVERSION}/html/usage.parsing.html
 share/doc/libcfg+-${PKGVERSION}/html/usage.properties.html
-@dirrm share/doc/libcfg+-${PKGVERSION}/html
-@dirrm share/doc/libcfg+-${PKGVERSION}/examples
-@dirrm share/doc/libcfg+-${PKGVERSION}/doxygen
-@dirrm share/doc/libcfg+-${PKGVERSION}
-@dirrm include/platon

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2006/07/09 15:12:15 wiz Exp $
 bin/dupemap
 bin/magicrescue
 bin/magicsort
@@ -31,6 +31,3 @@ share/magicrescue/tools/pngextract.pl
 share/magicrescue/tools/safecat
 share/magicrescue/tools/script_rename.pl
 share/magicrescue/tools/textextract
-@dirrm share/magicrescue/tools
-@dirrm share/magicrescue/recipes
-@dirrm share/magicrescue

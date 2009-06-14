@@ -1,5 +1,3 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2001/12/26 11:45:22 wennmach Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/10/23 20:23:33 rillig Exp $
 fdgw/i386/adslrouter.img
 fdgw/i386/natbox.img
-@dirrm fdgw/i386
-@dirrm fdgw

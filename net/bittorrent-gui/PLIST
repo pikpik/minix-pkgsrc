@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2005/08/07 16:15:55 recht Exp $
+@comment $NetBSD: PLIST,v 1.6 2006/02/26 22:43:33 tron Exp $
 bin/bittorrent
 bin/maketorrent
 share/pixmaps/BitTorrent-${PKGVERSION}/icons/default/abort.png
@@ -33,6 +33,3 @@ share/pixmaps/BitTorrent-${PKGVERSION}/icons/old/status-pre-natted.png
 share/pixmaps/BitTorrent-${PKGVERSION}/icons/old/status-running.png
 share/pixmaps/BitTorrent-${PKGVERSION}/icons/old/status-starting.png
 share/pixmaps/BitTorrent-${PKGVERSION}/icons/old/status-stopped.png
-@dirrm share/pixmaps/BitTorrent-${PKGVERSION}/icons/old
-@dirrm share/pixmaps/BitTorrent-${PKGVERSION}/icons/default
-@dirrm share/pixmaps/BitTorrent-${PKGVERSION}/icons

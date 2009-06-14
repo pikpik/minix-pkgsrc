@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2004/02/16 13:08:11 seb Exp $
+@comment $NetBSD: PLIST,v 1.5 2006/03/31 05:37:09 jlam Exp $
 bin/nana
 bin/nana-c++lg
 bin/nana-clg
@@ -38,4 +38,3 @@ man/man3/Qstl.3
 man/man3/nana.3
 share/nana/nana-run-init.gdb
 share/nana/nana-run.gdb
-@dirrm share/nana

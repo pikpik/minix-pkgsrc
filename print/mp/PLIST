@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:27:51 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/09/21 21:33:09 kim Exp $
 bin/cutlines
 bin/digestp
 bin/ertf2latex
@@ -39,4 +39,3 @@ share/mpdist/mp.pro.ps
 share/mpdist/mp.pro.tm.ps
 share/mpdist/mp.pro.tsi.ps
 share/mpdist/mp.pro.tsp.ps
-@dirrm share/mpdist

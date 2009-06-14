@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2006/06/12 14:54:27 rillig Exp $
 bin/xfractint
 man/man1/xfractint.1
 share/xfractint/Carlson1.map
@@ -165,4 +165,3 @@ share/xfractint/royal.map
 share/xfractint/tiling.l
 share/xfractint/topo.map
 share/xfractint/volcano.map
-@dirrm share/xfractint

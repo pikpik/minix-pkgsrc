@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2006/07/03 21:49:13 wiz Exp $
+@comment $NetBSD: PLIST,v 1.9 2007/07/25 23:31:08 wiz Exp $
 bin/sdl-config
 include/SDL/SDL.h
 include/SDL/SDL_active.h
@@ -210,4 +210,3 @@ man/man3/SDL_keysym.3
 man/man3/SDL_mutexP.3
 man/man3/SDL_mutexV.3
 share/aclocal/sdl.m4
-@dirrm include/SDL

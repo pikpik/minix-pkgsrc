@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/02/21 02:04:25 minskim Exp $
 bin/gdick
 bin/gdick_applet
 lib/bonobo/servers/GNOME_GDick.server
@@ -23,5 +23,3 @@ ${PYSITELIB}/gdick/gdick.pyo
 share/gdick/gdick.glade
 share/gdick/gdick.png
 share/gdick/gdick_icon.png
-@dirrm share/gdick
-@dirrm ${PYSITELIB}/gdick

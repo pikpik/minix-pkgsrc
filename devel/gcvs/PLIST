@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2004/09/08 16:21:53 wiz Exp $
+@comment $NetBSD: PLIST,v 1.6 2006/03/30 03:44:42 jlam Exp $
 bin/cvs
 bin/cvsbug
 bin/cvstree
@@ -92,7 +92,3 @@ share/gcvs/pixmaps/upfolder.xpm
 share/gcvs/pixmaps/warning.xpm
 share/gcvs/pixmaps/watch.xpm
 share/gcvs/startup.tcl
-@dirrm share/gcvs/pixmaps
-@dirrm share/gcvs
-@dirrm lib/cvs/contrib
-@dirrm lib/cvs

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2000/07/12 20:22:44 jlam Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:26:47 zuntum Exp $
 include/sgi-stl/algo.h
 include/sgi-stl/algobase.h
 include/sgi-stl/algorithm
@@ -90,4 +90,3 @@ include/sgi-stl/utility
 include/sgi-stl/valarray
 include/sgi-stl/vector
 include/sgi-stl/vector.h
-@dirrm include/sgi-stl

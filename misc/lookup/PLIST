@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2004/03/19 16:05:49 uebayasi Exp $
+@comment $NetBSD: PLIST,v 1.5 2006/04/05 23:01:16 jlam Exp $
 ${EMACS_INFOPREFIX}/lookup.info
 ${EMACS_INFOPREFIX}/lookup-guide.info
 ${EMACS_LISPPREFIX}/lookup/evi-mule.el
@@ -49,4 +49,3 @@ ${EMACS_LISPPREFIX}/lookup/sdicf.el
 ${EMACS_LISPPREFIX}/lookup/sdicf.elc
 ${EMACS_LISPPREFIX}/lookup/stem-english.el
 ${EMACS_LISPPREFIX}/lookup/stem-english.elc
-@dirrm ${EMACS_LISPPREFIX}/lookup

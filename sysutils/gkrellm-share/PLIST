@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2006/04/17 07:07:34 jlam Exp $
+@comment $NetBSD: PLIST,v 1.4 2007/05/03 20:21:27 cube Exp $
 share/gkrellm2/COPYRIGHT
 share/gkrellm2/README
 share/locale/bg/LC_MESSAGES/gkrellm.mo
@@ -15,4 +15,3 @@ share/locale/pt_BR/LC_MESSAGES/gkrellm.mo
 share/locale/ru/LC_MESSAGES/gkrellm.mo
 share/locale/sl/LC_MESSAGES/gkrellm.mo
 share/locale/sv/LC_MESSAGES/gkrellm.mo
-@dirrm share/gkrellm2

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2006/03/31 23:56:28 jlam Exp $
+@comment $NetBSD: PLIST,v 1.11 2009/01/08 17:21:36 wiz Exp $
 bin/anytovcd.sh
 bin/jpeg2yuv
 bin/lav2avi.sh
@@ -143,6 +143,3 @@ man/man1/yuvplay.1
 man/man1/yuvscaler.1
 man/man1/yuvycsnoise.1
 man/man5/yuv4mpeg.5
-@dirrm include/mjpegtools/mplex
-@dirrm include/mjpegtools/mpeg2enc
-@dirrm include/mjpegtools

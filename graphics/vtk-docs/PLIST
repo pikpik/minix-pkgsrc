@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/08/02 13:17:30 drochner Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/01/29 03:32:17 rillig Exp $
 share/doc/vtk-docs-4.2/annotated.html
 share/doc/vtk-docs-4.2/c2_vtk_e_0.html
 share/doc/vtk-docs-4.2/c2_vtk_e_1.html
@@ -6236,4 +6236,3 @@ share/doc/vtk-docs-4.2/vtkZLibDataCompressor_8h__incl.png
 share/doc/vtk-docs-4.2/vtkgluPickMatrix_8h-source.html
 share/doc/vtk-docs-4.2/vtkgluPickMatrix_8h.html
 share/doc/vtk-docs-4.2/vtkgluPickMatrix_8h__incl.png
-@dirrm share/doc/vtk-docs-4.2

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/08/17 12:29:14 wiz Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/11/08 22:33:01 rillig Exp $
 bin/stratagus
 share/doc/stratagus/ChangeLog.html
 share/doc/stratagus/README-SDL.txt
@@ -36,5 +36,3 @@ share/doc/stratagus/install.html
 share/doc/stratagus/media.html
 share/doc/stratagus/todo.html
 share/doc/stratagus/vp32_opensource_license_9-6-01.txt
-@dirrm share/doc/stratagus/graphics
-@dirrm share/doc/stratagus

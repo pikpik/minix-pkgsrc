@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/10/17 16:16:48 is Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/07/10 04:04:22 rillig Exp $
 bin/mpd
 bin/mpd-cstest
 bin/mpdl
@@ -32,5 +32,3 @@ share/doc/mpd/README
 share/doc/mpd/cairn.jpg
 share/doc/mpd/install.html
 share/doc/mpd/release.html
-@dirrm share/doc/mpd
-@dirrm lib/mpd

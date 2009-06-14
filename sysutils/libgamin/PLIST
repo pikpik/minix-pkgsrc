@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2009/03/15 21:29:14 jmcneill Exp $
 include/fam.h
 lib/libfam.la
 lib/libgamin-1.la
@@ -26,4 +26,3 @@ share/doc/gamin/security.html
 share/doc/gamin/server_structs.gif
 share/doc/gamin/socket.txt
 share/doc/gamin/using.html
-@dirrm share/doc/gamin

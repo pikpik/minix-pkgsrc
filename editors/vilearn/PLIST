@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 1999/10/29 00:14:07 abs Exp $
+@comment $NetBSD: PLIST,v 1.1 2001/10/31 21:24:08 zuntum Exp $
 bin/vilearn
 man/man1/vilearn.1
 share/vilearn/1basics
@@ -7,4 +7,3 @@ share/vilearn/3cutpaste
 share/vilearn/3temp
 share/vilearn/4inserting
 share/vilearn/5tricks
-@dirrm share/vilearn

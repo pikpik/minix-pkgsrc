@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2005/03/25 02:49:43 wiz Exp $
+@comment $NetBSD: PLIST,v 1.4 2005/04/18 15:55:38 wiz Exp $
 include/ggi/internal/wmh.h
 include/ggi/wmh-defs.h
 include/ggi/wmh.h
@@ -22,6 +22,3 @@ man/man3/ggiWmhSetTitle.3
 man/man3/ggiWmhZOrder.3
 man/man7/libggiwmh.7
 share/examples/libggiwmh/libggiwmh.conf
-@dirrm share/examples/libggiwmh
-@dirrm lib/ggi/wmh/display
-@dirrm lib/ggi/wmh

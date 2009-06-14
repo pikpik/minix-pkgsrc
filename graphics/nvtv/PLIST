@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2005/05/02 20:33:59 reed Exp $
+@comment $NetBSD: PLIST,v 1.4 2009/02/24 00:06:54 cube Exp $
 bin/nvtv
 bin/nvtvd
 man/man1/nvtv.1
@@ -10,4 +10,3 @@ share/doc/nvtv/chips.txt
 share/doc/nvtv/overview.txt
 share/doc/nvtv/timing.txt
 share/examples/rc.d/nvtvd
-@dirrm share/doc/nvtv

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:24:51 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2005/04/05 10:25:41 wiz Exp $
 bin/cp-build
 bin/csiod
 bin/ftp-cp
@@ -53,4 +53,3 @@ man/man1/proxy-server.1
 man/man1/siod.1
 man/man1/snapshot-compare.1
 man/man1/snapshot-dir.1
-@dirrm lib/siod

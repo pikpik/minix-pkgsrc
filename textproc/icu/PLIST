@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.14 2007/03/31 15:36:57 obache Exp $
+@comment $NetBSD: PLIST,v 1.15 2009/03/25 22:30:19 he Exp $
 bin/derb
 bin/genbrk
 bin/gencnval
@@ -204,10 +204,3 @@ share/icu/${PKGVERSION}/config/${MH_NAME}
 share/icu/${PKGVERSION}/install-sh
 share/icu/${PKGVERSION}/license.html
 share/icu/${PKGVERSION}/mkinstalldirs
-@dirrm share/icu/${PKGVERSION}/config
-@dirrm share/icu/${PKGVERSION}
-@dirrm share/icu
-@dirrm lib/icu/${PKGVERSION}
-@dirrm lib/icu
-@dirrm include/unicode
-@dirrm include/layout

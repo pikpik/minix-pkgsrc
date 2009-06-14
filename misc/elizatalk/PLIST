@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/03/01 13:02:10 jlam Exp $
 bin/elizatalk
 share/elizatalk/main.dict
 share/elizatalk/syn.dict
@@ -127,5 +127,3 @@ share/elizatalk/words/work.w
 share/elizatalk/words/x25.w
 share/elizatalk/words/yes.w
 share/elizatalk/words/you_forgot.w
-@dirrm share/elizatalk/words
-@dirrm share/elizatalk

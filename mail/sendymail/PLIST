@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST $
+@comment $NetBSD: PLIST,v 1.1.1.1 2007/01/14 14:05:34 obache Exp $
 bin/sendymail
 share/doc/sendymail/BUGS
 share/doc/sendymail/COPYING
@@ -7,5 +7,3 @@ share/doc/sendymail/INSTALL
 share/doc/sendymail/README
 share/doc/sendymail/TODO
 share/examples/sendymail/sendymailrc.sample
-@dirrm share/examples/sendymail
-@dirrm share/doc/sendymail

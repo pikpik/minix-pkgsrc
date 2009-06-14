@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2008/05/01 21:09:47 jlam Exp $
 ${GEM_HOME}/cache/ezcrypto-${PKGVERSION}.gem
 ${GEM_LIBDIR}/CHANGELOG
 ${GEM_LIBDIR}/MIT-LICENSE
@@ -31,6 +31,3 @@ ${GEM_LIBDIR}/test/testsigner.pem
 ${GEM_LIBDIR}/test/valicert_class2_root.crt
 ${GEM_LIBDIR}/test/wideword.net.cert
 ${GEM_HOME}/specifications/ezcrypto-${PKGVERSION}.gemspec
-@dirrm ${GEM_LIBDIR}/test
-@dirrm ${GEM_LIBDIR}/lib
-@dirrm ${GEM_LIBDIR}

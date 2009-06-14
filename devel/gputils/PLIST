@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2005/10/24 08:46:06 dogcow Exp $
+@comment $NetBSD: PLIST,v 1.4 2007/05/13 20:47:37 bouyer Exp $
 bin/gpasm
 bin/gpdasm
 bin/gplib
@@ -1078,7 +1078,3 @@ share/gputils/lkr/rf675h.lkr
 share/gputils/lkr/rf675hi.lkr
 share/gputils/lkr/rf675k.lkr
 share/gputils/lkr/rf675ki.lkr
-@dirrm share/gputils/lkr
-@dirrm share/gputils/header
-@dirrm share/gputils
-@dirrm share/doc/gputils

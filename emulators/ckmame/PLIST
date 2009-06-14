@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2005/12/28 21:44:26 wiz Exp $
+@comment $NetBSD: PLIST,v 1.3 2007/06/06 20:56:15 wiz Exp $
 bin/ckmame
 bin/detective
 bin/dumpgame
@@ -10,4 +10,3 @@ man/man1/dumpgame.1
 man/man1/mkmamedb.1
 share/doc/ckmame/mame-0.96.dtd
 share/doc/ckmame/mess-0.97.dtd
-@dirrm share/doc/ckmame

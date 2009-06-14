@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/03/01 07:17:23 obache Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/06/19 14:52:11 taca Exp $
 ${RUBY_VENDORLIB}/progressbar.rb
 ${RUBY_DOC}/progressbar/progressbar.en.rd
 ${RUBY_DOC}/progressbar/progressbar.ja.rd
-@dirrm ${RUBY_DOC}/progressbar

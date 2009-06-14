@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:59:03 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2003/05/01 22:03:49 jmmv Exp $
 bin/rfinger
 bin/rwhois
 bin/rftp
@@ -15,4 +15,3 @@ man/man5/sockd.route.5
 man/man5/socks.conf.5
 man/man8/sockd.8
 share/examples/socks4/socks.conf
-@dirrm share/examples/socks4

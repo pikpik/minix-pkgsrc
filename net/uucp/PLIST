@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2007/03/16 20:02:04 christos Exp $
+@comment $NetBSD: PLIST,v 1.4 2007/06/18 14:45:28 jlam Exp $
 bin/cu
 bin/uucp
 bin/uulog
@@ -30,4 +30,3 @@ share/examples/uucp/mountcritlocal
 share/examples/uucp/newsyslog.conf
 share/examples/uucp/syslog.conf
 share/examples/uucp/weekly
-@dirrm share/examples/uucp

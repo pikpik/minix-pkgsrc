@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2004/02/16 17:55:39 seb Exp $
+@comment $NetBSD: PLIST,v 1.6 2006/03/20 05:34:27 jlam Exp $
 ${EMACS_INFOPREFIX}/semantic.info
 ${EMACS_LISPPREFIX}/semantic/document-vars.el
 ${EMACS_LISPPREFIX}/semantic/document-vars.elc
@@ -53,4 +53,3 @@ ${EMACS_LISPPREFIX}/semantic/make.bnf
 ${EMACS_LISPPREFIX}/semantic/java.bnf
 ${EMACS_LISPPREFIX}/semantic/scheme.bnf
 ${EMACS_LISPPREFIX}/semantic/semantic-load.el
-@dirrm ${EMACS_LISPPREFIX}/semantic

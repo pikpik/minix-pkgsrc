@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.4 2008/02/15 16:23:09 gdt Exp $
 dumper/amgtar
 dumper/generic-dumper
 lib/libamclient.la
@@ -16,4 +16,3 @@ libexec/versionsuffix
 man/man8/amrecover.8
 sbin/amoldrecover
 sbin/amrecover
-@dirrm dumper

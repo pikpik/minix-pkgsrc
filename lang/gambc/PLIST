@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/04/28 04:14:31 bjs Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/07/16 07:14:36 bjs Exp $
 bin/gsc
 bin/gsc-cc-o.bat
 bin/gsc-script
@@ -37,4 +37,3 @@ lib/r5rs#.scm
 share/doc/gambc/gambit-c.html
 share/doc/gambc/gambit-c.pdf
 share/doc/gambc/gambit-c.txt
-@dirrm share/doc/gambc

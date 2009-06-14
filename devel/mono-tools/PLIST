@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2009/01/19 22:41:10 kefren Exp $
+@comment $NetBSD: PLIST,v 1.4 2009/04/07 11:18:31 kefren Exp $
 bin/create-native-map
 bin/gasnview
 bin/gendarme
@@ -124,9 +124,3 @@ man/man1/mprof-decoder.1
 man/man1/mprof-heap-viewer.1
 share/pixmaps/monodoc.png
 @exec ${MKDIR} %D/lib/ilcontrast
-@dirrm lib/ilcontrast
-@dirrm lib/gui-compare
-@dirrm lib/gendarme
-@dirrm lib/create-native-map
-@dirrm lib/mono-tools
-@dirrm lib/gsharp

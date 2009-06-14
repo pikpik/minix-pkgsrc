@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2005/01/16 19:19:46 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.6 2008/08/08 23:41:22 epg Exp $
 bin/ali
 bin/anno
 bin/burst
@@ -148,6 +148,3 @@ share/examples/nmh/scan.size
 share/examples/nmh/scan.time
 share/examples/nmh/scan.timely
 share/examples/nmh/scan.unseen
-@dirrm share/examples/nmh
-@dirrm share/doc/nmh
-@dirrm libexec/nmh

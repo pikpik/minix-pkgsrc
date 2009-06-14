@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2003/12/08 18:33:53 drochner Exp $
+@comment $NetBSD: PLIST,v 1.6 2004/07/02 15:40:01 drochner Exp $
 ${GCC_SUBPREFIX}/bin/gnat
 ${GCC_SUBPREFIX}/bin/gnatbind
 ${GCC_SUBPREFIX}/bin/gnatbl
@@ -1102,5 +1102,3 @@ ${GCC_SUBPREFIX}/lib/gcc-lib/${GCC_PLATFORM}/${PKGVERSION}/adalib/system.ali
 ${GCC_SUBPREFIX}/lib/gcc-lib/${GCC_PLATFORM}/${PKGVERSION}/adalib/text_io.ali
 ${GCC_SUBPREFIX}/lib/gcc-lib/${GCC_PLATFORM}/${PKGVERSION}/gnat1
 ${GCC_SUBPREFIX}/mk/ada.mk
-@dirrm ${GCC_SUBPREFIX}/lib/gcc-lib/${GCC_PLATFORM}/${PKGVERSION}/adainclude
-@dirrm ${GCC_SUBPREFIX}/lib/gcc-lib/${GCC_PLATFORM}/${PKGVERSION}/adalib

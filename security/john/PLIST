@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:16:45 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/03/14 10:17:25 martti Exp $
 bin/john
 bin/mailer
 bin/unafs
@@ -11,4 +11,3 @@ share/john/digits.chr
 share/john/john.conf
 share/john/lanman.chr
 share/john/password.lst
-@dirrm share/john

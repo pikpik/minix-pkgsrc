@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2003/09/14 16:43:50 recht Exp $
+@comment $NetBSD: PLIST,v 1.3 2005/10/06 18:04:42 drochner Exp $
 ${PYSITELIB}/Gnuplot/Errors.py
 ${PYSITELIB}/Gnuplot/Errors.pyc
 ${PYSITELIB}/Gnuplot/Errors.pyo
@@ -50,4 +50,3 @@ ${PYSITELIB}/Gnuplot/test.pyo
 ${PYSITELIB}/Gnuplot/utils.py
 ${PYSITELIB}/Gnuplot/utils.pyc
 ${PYSITELIB}/Gnuplot/utils.pyo
-@dirrm ${PYSITELIB}/Gnuplot

@@ -1,5 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/03/01 08:30:48 obache Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/06/19 14:57:36 taca Exp $
 ${RUBY_VENDORARCHLIB}/sary.${RUBY_DLEXT}
 ${RUBY_DOC}/sary/Reference.en.rd
 ${RUBY_DOC}/sary/Reference.ja.rd
-@dirrm ${RUBY_DOC}/sary

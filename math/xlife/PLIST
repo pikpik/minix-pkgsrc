@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2005/08/20 19:27:11 kristerw Exp $
+@comment $NetBSD: PLIST,v 1.6 2006/01/03 19:07:31 joerg Exp $
 bin/collect
 bin/lifeconv
 bin/lifesearch
@@ -227,8 +227,4 @@ share/xlife/wireworld/diode.l
 share/xlife/wireworld/flipflop.l
 share/xlife/wireworld/or.l
 share/xlife/wireworld/test.l
-@dirrm share/xlife/codd
-@dirrm share/xlife/life
-@dirrm share/xlife/misc
-@dirrm share/xlife/wireworld
 @unexec ${RMDIR} %D/share/xlife || ${TRUE}

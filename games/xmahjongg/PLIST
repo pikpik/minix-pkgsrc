@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2003/04/10 17:58:07 salo Exp $
+@comment $NetBSD: PLIST,v 1.5 2008/07/22 21:25:00 tonio Exp $
 bin/xmahjongg
 man/man6/xmahjongg.6
 share/xmahjongg/backgrounds/default.gif
@@ -35,7 +35,3 @@ share/xmahjongg/tiles/real.gif
 share/xmahjongg/tiles/small.gif
 share/xmahjongg/tiles/thick.gif
 share/xmahjongg/tiles/thin.gif
-@dirrm share/xmahjongg/tiles
-@dirrm share/xmahjongg/layouts
-@dirrm share/xmahjongg/backgrounds
-@dirrm share/xmahjongg

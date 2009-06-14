@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 21:03:46 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/07/08 02:21:18 kim Exp $
 bin/nn
 bin/nnadmin
 bin/nnbatch
@@ -46,5 +46,3 @@ share/nn/help/help.show
 share/nn/help/help.sort
 share/nn/help/help.variables
 share/nn/upgrade_rc
-@dirrm share/nn/help
-@dirrm share/nn

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2004/06/25 16:43:54 wiz Exp $
+@comment $NetBSD: PLIST,v 1.6 2006/03/31 05:37:09 jlam Exp $
 bin/prcs
 bin/prcs-callback
 bin/prcs-emerge
@@ -14,4 +14,3 @@ share/examples/prcs/prcs-hooks.el
 share/examples/prcs/prcs-hooks.elc
 share/examples/prcs/prcs.el
 share/examples/prcs/prcs.elc
-@dirrm share/examples/prcs

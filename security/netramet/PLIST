@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 01:17:02 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/03/22 03:48:18 itojun Exp $
 bin/LfapMet
 bin/NeMaC
 bin/NeTraMet
@@ -44,7 +44,3 @@ share/NeTraMet/mibs/mib-41.txt
 share/NeTraMet/mibs/mib.auckland
 share/NeTraMet/mibs/mib.txt
 share/NeTraMet/mibs/rtm-text.txt
-@dirrm share/NeTraMet/mibs
-@dirrm share/NeTraMet/examples/non-srl
-@dirrm share/NeTraMet/examples
-@dirrm share/NeTraMet

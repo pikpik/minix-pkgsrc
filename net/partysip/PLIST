@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2005/04/01 19:55:02 drochner Exp $
 bin/partysip
 bin/partysip-config
 bin/psp_users
@@ -32,6 +32,3 @@ lib/partysip/libpsp_rgstrar.la
 lib/partysip/libpsp_syntax.la
 lib/partysip/libpsp_udp.la
 share/examples/partysip.conf
-@dirrm lib/partysip
-@dirrm include/ppl
-@dirrm include/partysip
