@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2007/08/04 11:26:32 obache Exp $
+@comment $NetBSD: PLIST,v 1.11 2009/06/14 17:43:18 joerg Exp $
 bin/mergeant
 lib/bonobo/servers/GNOME_Mergeant.server
 share/application-registry/mergeant.applications
@@ -68,5 +68,5 @@ share/pixmaps/mergeant/mg-extra-grid.png
 share/pixmaps/mergeant/query-view-query_16x16.png
 share/pixmaps/mergeant/query-view-table_16x16.png
 share/pixmaps/mergeant/query-view-view_16x16.png
-@exec ${MKDIR} %D/share/gnome/help/mergeant/C/stylesheet-images
-@exec ${MKDIR} %D/share/gnome/help/mergeant/C/images
+@pkgdir share/gnome/help/mergeant/C/stylesheet-images
+@pkgdir share/gnome/help/mergeant/C/images
