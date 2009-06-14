@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/12/24 17:19:06 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/02/22 20:59:58 wiz Exp $
 bin/labltk
 bin/ocamlbrowser
 lib/ocaml/labltk/balloon.cmi
@@ -231,5 +231,4 @@ lib/ocaml/labltk/wm.mli
 lib/ocaml/stublibs/dlllabltk.so
 lib/ocaml/stublibs/dlltkanim.so
 @unexec ${RMDIR} %D/lib/ocaml/stublibs 2>/dev/null || ${TRUE}
-@dirrm lib/ocaml/labltk
 @unexec ${RMDIR} %D/lib/ocaml 2>/dev/null || ${TRUE}

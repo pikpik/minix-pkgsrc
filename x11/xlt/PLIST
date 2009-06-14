@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2008/07/15 19:45:40 christos Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/08/30 20:51:07 dholland Exp $
 include/Xlt/AnimatedButton.h
 include/Xlt/AnimatedButtonP.h
 include/Xlt/AppShell.h
@@ -89,5 +89,3 @@ share/doc/html/Xlt/SciPlotProg.html
 share/doc/html/Xlt/SciPlotTitle.gif
 share/doc/html/Xlt/TreeFSel.gif
 share/doc/html/Xlt/new.gif
-@dirrm share/doc/html/Xlt
-@dirrm include/Xlt

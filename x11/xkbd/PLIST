@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2004/04/24 00:45:58 snj Exp $
 bin/xkbd
 man/man1/xkbd.1
 share/xkbd/img/backspace.xpm
@@ -10,5 +10,3 @@ share/xkbd/kbdconfig
 share/xkbd/kbdconfig.fitaly
 share/xkbd/kbdconfig.tiny
 share/xkbd/kbdconfig.us
-@dirrm share/xkbd/img
-@dirrm share/xkbd

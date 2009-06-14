@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2009/04/25 11:31:32 wiz Exp $
 include/xcb/xcb_atom.h
 include/xcb/xcb_aux.h
 include/xcb/xcb_bitops.h
@@ -28,4 +28,3 @@ lib/pkgconfig/xcb-keysyms.pc
 lib/pkgconfig/xcb-property.pc
 lib/pkgconfig/xcb-renderutil.pc
 lib/pkgconfig/xcb-reply.pc
-@comment in libxcb: @dirrm include/xcb
