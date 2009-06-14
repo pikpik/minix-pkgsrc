@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.298 2009/05/21 14:33:53 tonnerre Exp $
+# $NetBSD: Makefile,v 1.299 2009/05/24 12:43:45 obache Exp $
 #
 
 COMMENT=	Databases
@@ -148,6 +148,7 @@ SUBDIR+=	p5-SQL-Translator
 SUBDIR+=	p5-Search-QueryParser
 SUBDIR+=	p5-Search-QueryParser-SQL
 SUBDIR+=	p5-Sort-SQL
+SUBDIR+=	p5-Tie-DBI
 SUBDIR+=	p5-gdbm
 SUBDIR+=	p5-perl-ldap
 SUBDIR+=	p5-postgresql
