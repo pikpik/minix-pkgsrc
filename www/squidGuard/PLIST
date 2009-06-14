@@ -1,7 +1,6 @@
-@comment $NetBSD: PLIST,v 1.4 2007/12/20 03:37:00 taca Exp $
+@comment $NetBSD: PLIST,v 1.5 2008/09/15 17:34:48 taca Exp $
 bin/squidGuard
 ${EGDIR}/squidGuard.conf
 ${EGDIR}/squidGuard-simple-de.cgi
 ${EGDIR}/squidGuard-simple.cgi
 ${EGDIR}/squidGuard.cgi
-@dirrm ${EGDIR}

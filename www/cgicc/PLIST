@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2004/09/22 08:09:56 jlam Exp $
+@comment $NetBSD: PLIST,v 1.6 2006/03/05 22:34:33 adam Exp $
 bin/cgicc-config
 include/cgicc/CgiDefs.h
 include/cgicc/CgiEnvironment.h
@@ -183,5 +183,3 @@ share/doc/cgicc/test_8cpp.html
 share/doc/cgicc/tutorial_8tmpl-source.html
 share/doc/cgicc/upload_8cpp-source.html
 share/doc/cgicc/upload_8cpp.html
-@dirrm share/doc/cgicc
-@dirrm include/cgicc

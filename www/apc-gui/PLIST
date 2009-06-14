@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 02:16:15 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2006/02/22 07:10:23 wiz Exp $
 share/apc-gui/CHANGES
 share/apc-gui/CREDITS
 share/apc-gui/INSTALL
@@ -67,6 +67,3 @@ share/apc-gui/pics/ttl.gif
 share/apc-gui/scripts.php
 share/apc-gui/top.php
 share/examples/apc-gui/apc_gui.conf
-@dirrm share/examples/apc-gui
-@dirrm share/apc-gui/pics
-@dirrm share/apc-gui

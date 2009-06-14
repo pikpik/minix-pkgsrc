@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/07/20 21:44:29 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:56 jlam Exp $
 include/cgic.h
 lib/libcgic.la
 libexec/cgi-bin/capture
@@ -6,5 +6,3 @@ libexec/cgi-bin/cgictest
 share/doc/html/cgiclib/cgic.html
 share/examples/cgiclib/capture.c
 share/examples/cgiclib/cgictest.c
-@dirrm share/examples/cgiclib
-@dirrm share/doc/html/cgiclib
