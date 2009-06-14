@@ -1,5 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2009/02/01 08:05:06 manu Exp $
 lib/openldap/nops.a
 lib/openldap/nops.la
 man/man5/slapo-nops.5
-@dirrm lib/openldap

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.28 2009/05/25 21:33:17 obache Exp $
+@comment $NetBSD: PLIST,v 1.29 2009/06/09 02:54:08 obache Exp $
 bin/tcamgr
 bin/tcatest
 bin/tcbmgr
@@ -72,5 +72,3 @@ share/tokyocabinet/doc/spex-en.html
 share/tokyocabinet/doc/spex-ja.html
 share/tokyocabinet/doc/tokyoproducts.pdf
 share/tokyocabinet/doc/tokyoproducts.ppt
-@dirrm share/tokyocabinet/doc
-@dirrm share/tokyocabinet
