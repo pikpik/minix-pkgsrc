@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/04/19 09:27:36 seb Exp $
+@comment $NetBSD: PLIST,v 1.2 2009/06/14 18:16:13 joerg Exp $
 ${GEM_HOME}/cache/rb-appscript-${PKGVERSION}.gem
 ${GEM_LIBDIR}/CHANGES
 ${GEM_LIBDIR}/LICENSE
@@ -109,4 +109,3 @@ ${GEM_LIBDIR}/test/test_mactypes.rb
 ${GEM_LIBDIR}/test/test_osax.rb
 ${GEM_LIBDIR}/test/testall.sh
 ${GEM_HOME}/specifications/rb-appscript-${PKGVERSION}.gemspec
-@exec ${MKDIR} %D/lib/ruby/gems/1.8/doc/rb-appscript-${PKGVERSION}
