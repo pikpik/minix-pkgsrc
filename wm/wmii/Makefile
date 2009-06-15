@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2009/03/05 09:20:57 ghen Exp $
+# $NetBSD: Makefile,v 1.20 2009/03/29 09:07:37 wiz Exp $
 
 DISTNAME=		wmii-3.6
 PKGREVISION=		4
 CATEGORIES=		wm
-MASTER_SITES=		http://www.suckless.org/download/
+MASTER_SITES=		http://code.suckless.org/dl/wmii/
 
 MAINTAINER=		ghen@NetBSD.org
 HOMEPAGE=		http://wmii.suckless.org/
