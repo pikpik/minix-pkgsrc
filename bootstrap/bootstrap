@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.144 2009/04/23 00:15:53 minskim Exp $
+# $NetBSD: bootstrap,v 1.146 2009/05/29 15:58:37 rillig Exp $
 #
 #
 # Copyright (c) 2001-2002 Alistair G. Crooks.  All rights reserved.
@@ -338,6 +338,11 @@ if [ "$dash_echo_test" = "@" ]; then
 	  echo "ERROR: Please select another shell by setting the environment"
 	  echo "ERROR: variable SH."
 	} 1>&2
+	exit 1;
+fi
+
+if [ -n "$PKG_PATH" ]; then
+	echo "ERROR: Please unset PKG_PATH before running bootstrap." 1>&2
 	exit 1;
 fi
 
