@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/05/19 08:59:18 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2009/06/01 07:42:21 obache Exp $
 #
 
 DISTNAME=	pygoocanvas-0.14.1
@@ -22,6 +22,8 @@ PKGCONFIG_OVERRIDE+=	pygoocanvas.pc.in
 CONFIGURE_ARGS+=	--disable-docs
 
 PY_PATCHPLIST=	yes
+
+PYTHON_VERSIONS_ACCEPTED= 26 25 24
 
 .include "../../lang/python/pyversion.mk"
 
