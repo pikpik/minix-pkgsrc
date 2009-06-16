@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/06/12 23:02:57 minskim Exp $
+# $NetBSD: Makefile,v 1.26 2009/06/14 22:58:05 joerg Exp $
 
 DISTNAME=	rubygems-1.3.4
 PKGREVISION=	1
@@ -43,7 +43,7 @@ GENERATE_PLIST+=	\
 	${ECHO} "@comment The following lines are automatically generated." && \
 	cd ${DESTDIR}${PREFIX} && \
 	  ${FIND} ${GEM_DOCDIR:S|${PREFIX}/||} \! -type d -print | \
-		${SORT}
+		${SORT};
 
 .include "../../lang/ruby/modules.mk"
 

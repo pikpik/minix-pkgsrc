@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:17:37 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/14 22:58:00 joerg Exp $
 
 DISTNAME=	log4r-1.0.5
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -17,7 +17,7 @@ GENERATE_PLIST+=	\
 	${ECHO} "@comment The following lines are automatically generated." && \
 	cd ${DESTDIR}${PREFIX} && \
 	  ${FIND} ${GEM_LIBDIR:S|${PREFIX}/||}/doc \! -type d -print | \
-		${SORT}
+		${SORT};
 
 .include "../../misc/rubygems/rubygem.mk"
 .include "../../mk/bsd.pkg.mk"
