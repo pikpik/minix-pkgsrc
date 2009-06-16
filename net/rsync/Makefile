@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2009/02/21 09:34:17 tron Exp $
+# $NetBSD: Makefile,v 1.82 2009/06/15 16:53:02 tron Exp $
 
 DISTNAME=	rsync-3.0.6
 CATEGORIES=	net
@@ -36,7 +36,7 @@ SUBST_SED.paths+=	-e 's|/usr/bin/rsync|${PREFIX}/bin/rsync|g'
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${WRKSRC}/tech_report.tex \
-	  ${PREFIX}/share/doc/rsync
+	  ${DESTDIR}${PREFIX}/share/doc/rsync
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
