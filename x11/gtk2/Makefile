@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2009/06/04 21:38:52 tron Exp $
+# $NetBSD: Makefile,v 1.176 2009/06/14 22:14:20 joerg Exp $
 
 DISTNAME=		gtk+-2.16.2
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
@@ -28,6 +28,8 @@ PTHREAD_AUTO_VARS=	yes
 
 GNU_CONFIGURE=		 yes
 CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/libdata
+# papi support doesn't build
+CONFIGURE_ARGS+=	--disable-papi
 MAKE_ENV+=		PKGLOCALEDIR=${PKGLOCALEDIR:Q}
 TEST_TARGET=		check
 
