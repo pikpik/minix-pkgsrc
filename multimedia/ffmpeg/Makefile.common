@@ -1,4 +1,5 @@
-# $NetBSD: Makefile.common,v 1.1 2009/06/12 20:26:30 ahoka Exp $
+# $NetBSD: Makefile.common,v 1.2 2009/06/14 19:28:10 ahoka Exp $
+# used by multimedia/ffplay/Makefile
 
 DISTNAME=	ffmpeg-${DISTVERSION:S/-//g}
 CATEGORIES=	multimedia
