@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.148 2009/03/09 16:07:31 drochner Exp $
+# $NetBSD: Makefile,v 1.149 2009/04/21 16:29:20 tnn Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -22,6 +22,7 @@ SUBDIR+=	dvdstyler
 SUBDIR+=	dvdview
 SUBDIR+=	ffmpeg
 SUBDIR+=	ffmpegthumbnailer
+SUBDIR+=	ffplay
 SUBDIR+=	flashplayer
 SUBDIR+=	fuppes
 SUBDIR+=	fxtv
