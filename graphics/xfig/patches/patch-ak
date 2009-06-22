@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- w_snap.c.orig	2009-03-30 17:52:10.000000000 +0200
++++ w_snap.c
+@@ -32,9 +32,6 @@
+ #include "u_search.h"
+ #include "f_util.h"
+ #include <math.h>
+-#ifndef __FreeBSD__
+-#include <alloca.h>
+-#endif
+ 
+ int snap_gx;
+ int snap_gy;
