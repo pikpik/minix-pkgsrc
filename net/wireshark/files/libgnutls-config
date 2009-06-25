@@ -1,0 +1,10 @@
+#!@SH@
+# $NetBSD$
+
+if [ $1 = "--version" ]; then
+	arg=--modversion
+else
+	arg=$1
+fi
+
+pkg-config $arg gnutls
