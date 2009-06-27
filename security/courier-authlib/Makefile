@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2009/05/19 08:59:30 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2009/06/14 22:58:08 joerg Exp $
 
 .include "Makefile.common"
 
@@ -86,6 +86,7 @@ CONF_FILES_PERMS+=	${EGDIR}/${file}.dist ${PKG_SYSCONFDIR}/${file} \
 GENERATE_PLIST+=	${TEST} -f ${DESTDIR}${PREFIX}/${file} &&	\
 			${ECHO} "${file}";
 .endfor
+GENERATE_PLIST+=	${TRUE};
 
 INSTALLATION_DIRS=	bin sbin
 
