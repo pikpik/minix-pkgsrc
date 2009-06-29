@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/11 14:18:30 gdt Exp $
 #
 
 DISTNAME=		viking-0.9.8
@@ -16,9 +16,7 @@ GNU_CONFIGURE=		yes
 DEPENDS+=		gpsbabel-[0-9]*:../../geography/gpsbabel
 REPLACE_PERL=		viking-remote
 
-USE_TOOLS+=		intltool
-USE_TOOLS+=		gmake
-USE_TOOLS+=		msgfmt
+USE_TOOLS+=		gmake intltool msgfmt pkg-config
 
 USE_DIRS+=		xdg-1.4
 
