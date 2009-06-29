@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/05/27 02:44:21 hamajima Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/22 21:16:08 rillig Exp $
 #
 
 DISTNAME=	snx101util-0.2
@@ -12,6 +12,8 @@ COMMENT=	USB Webcam based sonix SN9C101 chip Utility Programs
 
 MAKE_ENV+=	NOGCCERROR=
 MAKE_ENV+=	${BSD_MAKE_ENV}
+
+INSTALLATION_DIRS=	${PKGMANDIR}/cat1 ${PKGMANDIR}/man1
 
 .include "../../graphics/imlib/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
