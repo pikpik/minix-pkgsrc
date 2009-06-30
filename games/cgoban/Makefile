@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/04/25 22:03:32 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2007/02/02 18:09:23 joerg Exp $
 
 DISTNAME=	cgoban-1.9.12
 PKGREVISION=	1
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.igoweb.org/~wms/comp/cgoban/
 MAINTAINER=	bad@NetBSD.org
 HOMEPAGE=	http://www.igoweb.org/~wms/comp/cgoban/index.html
 COMMENT=	The complete goban.  A Go server client and sgf viewer/editor
+
+MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=	yes
 

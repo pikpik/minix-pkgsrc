@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2009/05/20 00:58:26 wiz Exp $
+# $NetBSD: Makefile,v 1.75 2009/06/14 22:58:08 joerg Exp $
 
 DISTNAME=	heimdal-1.1
 PKGREVISION=	3
@@ -16,6 +16,8 @@ CONFLICTS+=	openafs-[0-9]*
 CONFLICTS+=	gss-[0-9]*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		bison flex

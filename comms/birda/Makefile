@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/01/01 14:27:40 obache Exp $
+# $NetBSD: Makefile,v 1.20 2008/02/07 13:24:36 tnn Exp $
 #
 
 DISTNAME=	birda-1.3
@@ -7,6 +7,8 @@ MASTER_SITES=	ftp://ftp.augustsson.net/pub/netbsd/
 
 MAINTAINER=	lennart@augustsson.net
 COMMENT=	Bohlin's IrDA utilities
+
+MAKE_JOBS_SAFE=		no
 
 USE_BSD_MAKEFILE=	yes
 USE_TOOLS+=		groff nroff

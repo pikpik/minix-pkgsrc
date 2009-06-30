@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/07/07 15:49:32 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2007/06/08 18:41:20 wiz Exp $
 #
 
 DISTNAME=	lpe-1.2.6
@@ -9,6 +9,8 @@ MASTER_SITES=	ftp://ftp.twu.net/users/cdsmith/lpe/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cdsmith.twu.net/professional/opensource/lpe.html
 COMMENT=	Small and efficient programmer's editor for UNIX systems
+
+MAKE_JOBS_SAFE=		no
 
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES

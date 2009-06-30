@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.78 2008/10/19 19:18:11 he Exp $
+# $NetBSD: Makefile,v 1.79 2009/05/15 23:29:01 obache Exp $
 
 DISTNAME=	cyrus-imapd-2.2.13
 PKGREVISION=	8
@@ -11,6 +11,8 @@ HOMEPAGE=	http://cyrusimap.web.cmu.edu/imapd/
 COMMENT=	Cyrus IMAP server
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_TOOLS+=		perl
 USE_PKGLOCALEDIR=	yes

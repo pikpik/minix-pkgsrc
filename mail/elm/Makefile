@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2007/04/04 13:01:23 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2009/06/12 22:56:03 zafer Exp $
 
 DISTNAME=		elm2.5.8
 PKGNAME=		elm-2.5.8
@@ -9,6 +9,8 @@ MASTER_SITES=		http://www.instinct.org/elm/files/tarballs/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.instinct.org/elm/
 COMMENT=		ELM Mail User Agent (without ME extensions)
+
+MAKE_JOBS_SAFE=		no
 
 DEPENDS+=		metamail>=2.7:../../mail/metamail
 

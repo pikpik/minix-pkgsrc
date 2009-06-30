@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/06/22 15:47:54 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2008/09/26 15:10:08 joerg Exp $
 #
 
 .include "../../games/nethack-lib/Makefile.common"
@@ -7,6 +7,8 @@ PKGNAME=		nethack-tty-${NETHACK_VERSION}
 PKGREVISION=		1
 
 COMMENT=		The tty/console based version of NetHack
+
+MAKE_JOBS_SAFE=		no
 
 DEPENDS+=		nethack-lib-${NETHACK_VERSION}{,nb*}:../../games/nethack-lib
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2007/03/24 19:21:26 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2007/07/04 20:54:43 jlam Exp $
 
 DISTNAME=	exim-3.36
 PKGREVISION=	7
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	grant@NetBSD.org
 HOMEPAGE=	http://www.exim.org/
 COMMENT=	The Exim mail transfer agent, a replacement for sendmail
+
+MAKE_JOBS_SAFE=		no
 
 CONFLICTS+=	exim-exiscan-[0-9]*
 

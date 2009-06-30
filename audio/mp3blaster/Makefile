@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2006/10/04 20:44:19 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2008/07/14 12:55:57 joerg Exp $
 
 DISTNAME=	mp3blaster-3.2.0
 PKGREVISION=	3
@@ -10,6 +10,8 @@ HOMEPAGE=	http://mp3blaster.sourceforge.net/
 COMMENT=	MP3 console curses-based player
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 PTHREAD_OPTS+=	require
 USE_LANGUAGES=	c c++

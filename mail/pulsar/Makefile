@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/01/18 05:08:30 tnn Exp $
+# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:35 joerg Exp $
 #
 
 DISTNAME=	pulsar-0.1.1
@@ -12,6 +12,8 @@ HOMEPAGE=	http://pulsar.sourceforge.net/
 COMMENT=	Small, secure POP3 daemon, featuring native SSL support
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	autoconf gmake

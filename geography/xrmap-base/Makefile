@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/09/06 09:59:24 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2006/12/27 13:37:37 joerg Exp $
 #
 
 DISTNAME=		xrmap-2.29
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://frmas.free.fr/li_1.htm
 COMMENT=		Earth map viewer - base program
+
+MAKE_JOBS_SAFE=		no
 
 USE_IMAKE=		yes
 MAKE_FLAGS+=		MANPATH=${PREFIX}/${PKGMANDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2008/04/07 16:54:53 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2008/07/27 08:45:58 obache Exp $
 
 DISTNAME=	dap-2.1.5
 CATEGORIES=	audio
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.cee.hw.ac.uk/~richardk/
 COMMENT=	Digital audio recording and processing package
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_LANGUAGES=		c c++
 INSTALLATION_DIRS+=	bin share/doc/dap

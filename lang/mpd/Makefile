@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/03/25 09:48:13 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2008/04/07 17:43:14 joerg Exp $
 #
 
 DISTNAME=		mpd.1.0.1
@@ -12,6 +12,8 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		is@NetBSD.org
 HOMEPAGE=		http://www.cs.arizona.edu/mpd/
 COMMENT=		The MPD language compiler and run time system
+
+MAKE_JOBS_SAFE=		no
 
 CONFLICTS+=		musicpd-[0-9]*
 

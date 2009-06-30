@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/12/01 12:49:05 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2008/02/28 11:58:48 rillig Exp $
 #
 
 DISTNAME=		sr233
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		is@NetBSD.org
 HOMEPAGE=		http://www.cs.arizona.edu/sr/
 COMMENT=		The SR language compiler and run time system
+
+MAKE_JOBS_SAFE=		no
 
 WRKSRC= ${WRKDIR}
 TEST_TARGET=		verify

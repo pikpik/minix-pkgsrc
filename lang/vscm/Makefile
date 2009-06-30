@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:29:57 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/04 16:38:13 jlam Exp $
 
 DISTNAME=	vscmV0r4
 PKGNAME=	vscm-0.4
@@ -14,6 +14,8 @@ HOMEPAGE=	http://www.cs.princeton.edu/~blume/vscm/
 COMMENT=	Portable scheme implementation
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_TOOLS+=	gmake
 

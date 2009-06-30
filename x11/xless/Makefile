@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/12/27 13:37:45 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2008/11/10 17:21:39 wiz Exp $
 
 DISTNAME=	xless-1.7
 PKGREVISION=	3
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/} \
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	X11 text viewer; useful as an add-on tool for other apps
+
+MAKE_JOBS_SAFE=		no
 
 USE_IMAKE=	yes
 

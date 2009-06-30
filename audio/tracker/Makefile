@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2006/04/13 23:31:19 rillig Exp $
+# $NetBSD: Makefile,v 1.43 2008/08/09 09:28:19 obache Exp $
 
 DISTNAME=		tracker-5.3
 PKGREVISION=		1
@@ -16,6 +16,8 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/tracker
 MAKE_FLAGS+=		MACHINE=${LOWER_OPSYS:Q} INSTALL=${INSTALL:Q} \

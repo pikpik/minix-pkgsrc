@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/11/10 17:21:39 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/01/26 20:58:56 joerg Exp $
 
 DISTNAME=	xmascot2.6a
 PKGNAME=	xmascot-2.6a
@@ -11,6 +11,8 @@ HOMEPAGE=	http://cclub-flying.dsl.gr.jp/products/xmascot/
 COMMENT=	Moving mascot on your X-Window screen
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_IMAKE=	yes
 
