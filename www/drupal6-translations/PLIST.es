@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.es,v 1.1.1.1 2008/08/17 05:35:05 taca Exp $
+@comment $NetBSD: PLIST.es,v 1.2 2008/09/22 15:31:10 taca Exp $
 ${DRUPAL_BASE}/CONTRIBUTORS.es.txt
 ${DRUPAL_BASE}/LICENSE.es.txt
 ${DRUPAL_BASE}/README.es.txt
@@ -29,6 +29,7 @@ ${DRUPAL_BASE}/modules/statistics/translations/modules-statistics.es.po
 ${DRUPAL_BASE}/modules/syslog/translations/modules-syslog.es.po
 ${DRUPAL_BASE}/modules/system/translations/general.es.po
 ${DRUPAL_BASE}/modules/system/translations/includes.es.po
+${DRUPAL_BASE}/modules/system/translations/misc.es.po
 ${DRUPAL_BASE}/modules/system/translations/modules-system.es.po
 ${DRUPAL_BASE}/modules/system/translations/root.es.po
 ${DRUPAL_BASE}/modules/taxonomy/translations/modules-taxonomy.es.po
