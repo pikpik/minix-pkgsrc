@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.8 2008/02/06 04:30:37 bjs Exp $
+# $NetBSD: options.mk,v 1.9 2008/11/06 08:33:31 bjs Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.elinks
 PKG_SUPPORTED_OPTIONS+=	bittorrent nntp javascript finger gopher
@@ -67,6 +67,7 @@ CONFIGURE_ARGS+=	--with-openssl=${BUILDLINK_PREFIX.openssl}
 .elif !empty(PKG_OPTIONS:Mgnutls)
 
 .include "../../security/gnutls/buildlink3.mk"
+.include "../../security/gnutls/libgnutls-config.mk"
 
 CONFIGURE_ARGS+= --with-gnutls-includes=${BUILDLINK_PREFIX.gnutls}/include
 CONFIGURE_ARGS+= --with-gnutls-libs=${BUILDLINK_PREFIX.gnutls}/lib
