@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2008/05/08 13:28:39 jlam Exp $
+# $NetBSD: options.mk,v 1.4 2009/05/21 19:56:52 sno Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.freetds
 PKG_OPTIONS_OPTIONAL_GROUPS+=	odbc tls
@@ -39,6 +39,7 @@ CONFIGURE_ARGS+=	--disable-odbc
 ###
 .if !empty(PKG_OPTIONS:Mgnutls)
 .include "../../security/gnutls/buildlink3.mk"
+.include "../../security/gnutls/libgnutls-config.mk"
 CONFIGURE_ARGS+=	--with-gnutls
 .else
 CONFIGURE_ARGS+=	--without-gnutls
