@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2008/10/10 01:56:38 bjs Exp $
+# $NetBSD: options.mk,v 1.7 2009/03/08 23:41:33 bjs Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.aria2
 
@@ -29,6 +29,7 @@ CONFIGURE_ARGS+=	--with-gnutls=no
 CONFIGURE_ARGS+=	--with-gnutls
 CONFIGURE_ARGS+=	--with-openssl=no
 .  include "../../security/gnutls/buildlink3.mk"
+.  include "../../security/gnutls/libgnutls-config.mk"
 .endif
 ###
 ###	firefox3 cookie	support via sqlite3
