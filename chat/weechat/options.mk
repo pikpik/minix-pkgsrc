@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2008/04/12 22:42:58 jlam Exp $
+# $NetBSD: options.mk,v 1.5 2008/05/11 19:10:30 tonio Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.weechat
 PKG_SUPPORTED_OPTIONS=	charset gnutls python lua wide-curses
@@ -17,6 +17,7 @@ CONFIGURE_ARGS+=	--disable-charset
 
 .if !empty(PKG_OPTIONS:Mgnutls)
 .include "../../security/gnutls/buildlink3.mk"
+.include "../../security/gnutls/libgnutls-config.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mwide-curses)
