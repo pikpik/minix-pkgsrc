@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/05/04 16:20:48 tron Exp $
+# $NetBSD: Makefile,v 1.23 2009/05/29 15:51:34 heinz Exp $
 
 # NOTE: Please send a copy of any patches that are not pkgsrc-specific
 # to <pulseaudio-discuss@mail.0pointer.de>
@@ -20,7 +20,7 @@ USE_TOOLS+=	pkg-config gmake m4 msgfmt intltool perl \
 		autoconf automake autoreconf
 USE_DIRS+=	xdg-1.4
 
-AUTOCONF_REQD=	2.62    
+AUTOCONF_REQD=	2.62
 
 PKGCONFIG_OVERRIDE+=	libpulse-browse.pc.in
 PKGCONFIG_OVERRIDE+=	libpulse-mainloop-glib.pc.in
