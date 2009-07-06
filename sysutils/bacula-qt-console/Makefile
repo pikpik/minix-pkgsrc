@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/05/16 08:06:18 adam Exp $
+# $NetBSD: Makefile,v 1.2 2009/05/20 01:09:12 wiz Exp $
 
 PKGNAME=	${DISTNAME:S/-/-qt-console-/}
 PKGREVISION=	1
@@ -9,7 +9,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DISTINFO_FILE=		${.CURDIR}/../../sysutils/bacula/distinfo
 PATCHDIR=		${.CURDIR}/../../sysutils/bacula/patches
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 CONFIGURE_ARGS+=	--enable-client-only
 CONFIGURE_ARGS+=	--enable-bat
 
