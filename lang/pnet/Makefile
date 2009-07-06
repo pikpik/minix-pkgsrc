@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/02/18 16:39:43 xtraeme Exp $
+# $NetBSD: Makefile,v 1.20 2008/11/02 13:29:38 obache Exp $
 
 DISTNAME=	pnet-0.8.0
 #PKGREVISION=	1
@@ -12,6 +12,9 @@ COMMENT=	DotGNU Portable.NET (development tools)
 BUILD_DEPENDS+=	treecc>=0.2.6:../../devel/treecc
 
 CONFLICTS=	mono-[0-9]*
+
+# Unsupported by internal libffi
+NOT_FOR_PLATFORM=	NetBSD-*-x86_64
 
 MAKE_JOBS_SAFE=	no
 
