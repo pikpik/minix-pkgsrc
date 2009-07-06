@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2009/02/10 09:35:40 taca Exp $
+# $NetBSD: Makefile,v 1.13 2009/06/14 22:58:10 joerg Exp $
 #
 
 DISTNAME=	${TYPO3NAME}
@@ -10,13 +10,14 @@ DISTFILES=	${TYPO3NAME}${EXTRACT_SUFX} ${SITESRC}${EXTRACT_SUFX}
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://typo3.com/
 COMMENT=	The typo3 content management system
+LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PHP_PKG_PREFIX}-{mysql,pgsql}>=5.1.0:../../databases/php-mysql
 DEPENDS+=	${PHP_PKG_PREFIX}-zlib>=5.2.0:../../archivers/php-zlib/
 
 PKG_DESTDIR_SUPPORT=	destdir
 
-VER=		4.2.6
+VER=		4.2.8
 NO_BUILD=	yes
 USE_TOOLS=	pax
 
