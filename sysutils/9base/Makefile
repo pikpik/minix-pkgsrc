@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/03/25 07:37:54 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2008/09/30 14:41:03 joerg Exp $
 #
 
 DISTNAME=	9base-20051114
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.suckless.org/wiki/wmii/download
 COMMENT=	Port of various original plan9 tools
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 CONFLICTS=		rc-[0-9]*
 
