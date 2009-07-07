@@ -1,0 +1,8 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/preprint/00readme.txt
+share/texmf-dist/doc/latex/preprint/00readme.unix
+share/texmf-dist/doc/latex/preprint/authblk.pdf
+share/texmf-dist/doc/latex/preprint/balance.pdf
+share/texmf-dist/doc/latex/preprint/figcaps.pdf
+share/texmf-dist/doc/latex/preprint/fullpage.pdf
+share/texmf-dist/doc/latex/preprint/sublabel.pdf
