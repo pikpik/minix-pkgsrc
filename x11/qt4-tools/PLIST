@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.14 2009/06/13 11:55:52 hasso Exp $
+@comment $NetBSD: PLIST,v 1.15 2009/06/14 18:25:05 joerg Exp $
 lib/pkgconfig/QtAssistantClient.pc
 lib/pkgconfig/QtCLucene.pc
 lib/pkgconfig/QtDesigner.pc
@@ -228,6 +228,7 @@ qt4/mkspecs/features/win32/embed_manifest_dll.prf
 qt4/mkspecs/features/win32/embed_manifest_exe.prf
 qt4/mkspecs/features/win32/exceptions.prf
 qt4/mkspecs/features/win32/exceptions_off.prf
+qt4/mkspecs/features/win32/ltcg.prf
 qt4/mkspecs/features/win32/opengl.prf
 qt4/mkspecs/features/win32/qaxcontainer.prf
 qt4/mkspecs/features/win32/qaxserver.prf
