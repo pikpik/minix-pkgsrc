@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/11/04 10:35:22 markd Exp $
+# $NetBSD: Makefile,v 1.2 2009/01/07 21:33:37 wiz Exp $
 
 DISTNAME=	rasqal-0.9.16
 CATEGORIES=	textproc
@@ -7,6 +7,8 @@ MASTER_SITES=	http://download.librdf.org/source/
 MAINTAINER=	mkirby@NetBSD.org
 HOMEPAGE=	http://librdf.org/rasqal
 COMMENT=	Library that handles RDF query syntaxes
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake pkg-config
 GNU_CONFIGURE=	yes
