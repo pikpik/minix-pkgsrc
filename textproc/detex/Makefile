@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/01/07 09:14:13 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2008/11/20 02:19:26 chuck Exp $
 #
 
 DISTNAME=	detex-2.8
@@ -10,12 +10,14 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cs.purdue.edu/homes/trinkle/detex/
 COMMENT=	Remove LaTeX commands
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_TOOLS+=	lex
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/detex ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/detex.1l ${PREFIX}/${PKGMANDIR}/man1/detex.1
+	${INSTALL_PROGRAM} ${WRKSRC}/detex ${DESTDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/detex.1l ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/detex.1
 
 .include "../../mk/bsd.pkg.mk"
