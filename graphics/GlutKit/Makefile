@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/01/18 05:06:37 tnn Exp $
+# $NetBSD: Makefile,v 1.19 2008/09/08 06:38:56 dholland Exp $
 #
 
 .include "../../graphics/3DKit/Makefile.common"
@@ -11,6 +11,9 @@ COMMENT=	3DKit GLUT backend
 DISTINFO_FILE=	${.CURDIR}/distinfo
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/GlutKit
+
+MAKE_FLAGS+=	ADDITIONAL_INCLUDE_DIRS=-I${BUILDLINK_PREFIX.RenderKit}/System/Library/Headers
+
 
 .include "../../graphics/RenderKit/buildlink3.mk"
 .include "../../graphics/glut/buildlink3.mk"

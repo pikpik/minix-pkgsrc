@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.3 2009/06/14 17:59:05 joerg Exp $
-share/GNUstep/Local/Library/Headers/GlutKit/G3DGlutCamera.h
-share/GNUstep/Local/Library/Headers/GlutKit/G3DGlutKit.h
-share/GNUstep/Local/Library/Libraries/libGlutKit.so
-share/GNUstep/Local/Library/Libraries/libGlutKit.so.0.5.0
+@comment $NetBSD$
+System/Library/Headers/GlutKit/G3DGlutCamera.h
+System/Library/Headers/GlutKit/G3DGlutKit.h
+System/Library/Libraries/libGlutKit.so
+System/Library/Libraries/libGlutKit.so.0.5.0
 @pkgdir share/GNUstep/Local/Headers/GlutKit
