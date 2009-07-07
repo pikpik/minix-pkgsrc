@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/09/07 19:08:09 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/18 05:09:53 tnn Exp $
 
 DISTNAME=	Pound-2.3.2
 PKGNAME=	${DISTNAME:S/Pound/pound/}
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.apsis.ch/pound/
 COMMENT=	Reverse proxy, load balancer and HTTPS front-end
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
