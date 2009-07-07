@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/01/13 18:09:06 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2007/09/20 08:04:17 rillig Exp $
 
 DISTNAME=	dxpc-3.8.2
 PKGREVISION=	1
@@ -9,13 +9,13 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.vigor.nu/dxpc/
 COMMENT=	Differential X Protocol Compressor
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++
 
-.include "../../mk/bsd.prefs.mk"
-
-post-install:
-	strip ${PREFIX}/bin/dxpc
+INSTALL_MAKE_FLAGS+=	bindir=${DESTDIR}${PREFIX}/bin \
+			man1dir=${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../archivers/liblzo/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"

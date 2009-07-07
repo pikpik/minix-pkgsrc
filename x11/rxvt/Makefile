@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2007/12/02 11:49:55 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2008/04/03 22:33:00 tonnerre Exp $
 
 DISTNAME=		rxvt-2.7.10
 PKGREVISION=		6
@@ -12,6 +12,7 @@ HOMEPAGE=		http://sourceforge.net/projects/rxvt
 COMMENT=		Low memory usage xterm replacement that supports color
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=		YES
 GNU_CONFIGURE=		YES
@@ -59,10 +60,11 @@ post-patch:
 	${SED} < ${WRKSRC}/src/feature.h.orig > ${WRKSRC}/src/feature.h \
 		-e "s:/usr/lib/X11/app-defaults:${PREFIX}/lib/X11/app-defaults:"
 
+INSTALLATION_DIRS=	lib/X11/app-defaults
+
 pre-install:
 	if [ ! -f ${PREFIX}/lib/X11/app-defaults/Rxvt ]; then \
-		${INSTALL_DATA_DIR} ${PREFIX}/lib/X11/app-defaults; \
-		${INSTALL_DATA} ${FILESDIR}/Rxvt ${PREFIX}/lib/X11/app-defaults; \
+		${INSTALL_DATA} ${FILESDIR}/Rxvt ${DESTDIR}${PREFIX}/lib/X11/app-defaults; \
 	fi
 
 .include "../../x11/libXpm/buildlink3.mk"
