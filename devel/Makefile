@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1186 2009/07/07 18:15:05 sno Exp $
+# $NetBSD: Makefile,v 1.1187 2009/07/07 18:18:11 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -604,6 +604,7 @@ SUBDIR+=	p5-File-Slurp
 SUBDIR+=	p5-File-Temp
 SUBDIR+=	p5-File-Tempdir
 SUBDIR+=	p5-File-Type
+SUBDIR+=	p5-File-Util
 SUBDIR+=	p5-File-Which
 SUBDIR+=	p5-File-chdir
 SUBDIR+=	p5-File-pushd
