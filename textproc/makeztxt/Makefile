@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/11/08 19:38:04 tv Exp $
+# $NetBSD: Makefile,v 1.12 2006/06/20 23:41:14 minskim Exp $
 #
 
 DISTNAME=	${PKGNAME}b-src
@@ -10,15 +10,16 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://gutenpalm.sourceforge.net/makeztxt.php
 COMMENT=	ASCII text to Palm zTXT database converter
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}b
 
-INSTALLATION_DIRS=	bin
+INSTALLATION_DIRS=	bin share/doc/makeztxt
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/makeztxt ${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/makeztxt
+	${INSTALL_PROGRAM} ${WRKSRC}/makeztxt ${DESTDIR}${PREFIX}/bin
 .for doc in COPYING ChangeLog README
-	${INSTALL_DATA} ${WRKSRC}/${doc} ${PREFIX}/share/doc/makeztxt
+	${INSTALL_DATA} ${WRKSRC}/${doc} ${DESTDIR}${PREFIX}/share/doc/makeztxt
 .endfor
 
 .include "../../devel/libgetopt/buildlink3.mk"
