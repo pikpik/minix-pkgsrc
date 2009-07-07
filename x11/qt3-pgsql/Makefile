@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/01/18 05:10:07 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/13 17:38:49 joerg Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/qt3-libs/Makefile.common"
 
@@ -17,11 +19,11 @@ do-build:
 		${SETENV} ${MAKE_ENV} ${GMAKE})
 
 SQLDRVDIR=	${QTPREFIX}/plugins/sqldrivers
+INSTALLATION_DIRS=	${SQLDRVDIR}
 
 do-install:
-	${INSTALL_DATA_DIR} ${SQLDRVDIR}
 	${LIBTOOL} ${INSTALL_DATA} ${WRKSRC}/plugins/sqldrivers/libqsqlpsql.la \
-		${SQLDRVDIR}
+		${DESTDIR}${SQLDRVDIR}
 
 .include "../../x11/qt3-libs/buildlink3.mk"
 .include "../../mk/pgsql.buildlink3.mk"
