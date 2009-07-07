@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/07/21 14:27:56 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2006/12/27 13:37:45 joerg Exp $
 #
 
 DISTNAME=	xhangglider-0.94.0
@@ -10,6 +10,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.netfort.gr.jp/~take/linux/xhang-en.html
 COMMENT=	Hanggliders fly in the background of the X screen
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_IMAKE=		yes
 PKGSRC_MAKE_ENV+=	PREFIX=${PREFIX}
 
@@ -17,9 +19,7 @@ post-extract:
 	${RM} ${WRKSRC}/Makefile
 	${TOUCH} ${WRKSRC}/xhangglider.man
 
-do-install:
-	cd ${WRKSRC} ; ${SETENV} ${MAKE_ENV} make install
-	cd ${WRKSRC} ; ${SETENV} ${MAKE_ENV} make install.dat
+INSTALL_TARGET=	install install.dat
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

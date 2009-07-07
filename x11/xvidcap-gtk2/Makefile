@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2006/04/17 13:47:02 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2006/05/17 01:53:18 reed Exp $
 #
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/xvidcap/Makefile.common"
 
