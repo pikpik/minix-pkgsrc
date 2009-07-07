@@ -1,0 +1,2 @@
+@comment $NetBSD: PLIST,v 1.11 2009/06/14 17:59:11 joerg Exp $
+bin/exiv2-organize
