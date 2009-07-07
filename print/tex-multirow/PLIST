@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/multirow/bigdelim.sty
+share/texmf-dist/tex/latex/multirow/bigstrut.sty
+share/texmf-dist/tex/latex/multirow/multirow.sty
