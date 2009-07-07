@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- GNUmakefile.orig	2010-05-31 23:36:23.000000000 +0200
++++ GNUmakefile
+@@ -8,6 +8,9 @@
+ # GNUmakefile.postamble
+ #
+ 
++# Install into the system root by default
++GNUSTEP_INSTALLATION_DIR = $(GNUSTEP_SYSTEM_ROOT)
++
+ include $(GNUSTEP_MAKEFILES)/common.make
+ include Version
+ #
