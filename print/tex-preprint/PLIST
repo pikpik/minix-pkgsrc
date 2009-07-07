@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/preprint/authblk.sty
+share/texmf-dist/tex/latex/preprint/balance.sty
+share/texmf-dist/tex/latex/preprint/figcaps.sty
+share/texmf-dist/tex/latex/preprint/fullpage.sty
+share/texmf-dist/tex/latex/preprint/sublabel.sty
