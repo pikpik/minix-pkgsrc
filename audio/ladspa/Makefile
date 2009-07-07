@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/05/12 22:43:46 minskim Exp $
+# $NetBSD: Makefile,v 1.9 2006/09/09 02:41:55 obache Exp $
 #
 
 DISTNAME=	ladspa_sdk_1.12
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ladspa.org/
 COMMENT=	Linux Audio Developers Simple Plugin API
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/ladspa_sdk/src
 USE_TOOLS+=	gmake
