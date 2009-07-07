@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.410 2009/07/07 19:06:59 drochner Exp $
+# $NetBSD: Makefile,v 1.411 2009/07/07 19:15:53 drochner Exp $
 #
 
 COMMENT=	Audio tools
@@ -241,6 +241,7 @@ SUBDIR+=	mp3diags
 SUBDIR+=	mp3info
 SUBDIR+=	mp3splt
 SUBDIR+=	mp3to
+SUBDIR+=	mp3val
 SUBDIR+=	mpc
 SUBDIR+=	mpegaudio
 SUBDIR+=	mpg123
