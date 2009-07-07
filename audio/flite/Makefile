@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/09/01 15:44:44 gdt Exp $
+# $NetBSD: Makefile,v 1.6 2007/07/08 18:33:38 minskim Exp $
 #
 
 DISTNAME=	flite-1.3-release
@@ -10,6 +10,8 @@ MASTER_SITES=	http://www.speech.cs.cmu.edu/flite/packed/flite-1.3/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.speech.cs.cmu.edu/flite/
 COMMENT=	Small and fast run-time synthesis engine
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
