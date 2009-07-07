@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/01/18 05:06:38 tnn Exp $
+# $NetBSD: Makefile,v 1.23 2008/09/08 06:38:56 dholland Exp $
 #
 
 .include "../../graphics/3DKit/Makefile.common"
@@ -11,6 +11,8 @@ COMMENT=	3DKit SDL backend
 DISTINFO_FILE=	${.CURDIR}/distinfo
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/SDLKit
+
+MAKE_FLAGS+=	ADDITIONAL_INCLUDE_DIRS=-I${BUILDLINK_PREFIX.RenderKit}/System/Library/Headers
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../graphics/RenderKit/buildlink3.mk"
