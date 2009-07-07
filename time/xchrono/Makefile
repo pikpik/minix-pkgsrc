@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/11/10 17:21:38 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2008/11/12 13:18:50 obache Exp $
 #
 
 DISTNAME=		xchrono
@@ -11,11 +11,14 @@ EXTRACT_SUFX=		.shar
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Multi-timezone X11-based clock
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_IMAKE=		yes
 
+INSTALLATION_DIRS=	share/doc/xchrono
+
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/xchrono
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xchrono/
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/xchrono/
 
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

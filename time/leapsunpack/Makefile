@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/07/30 13:59:25 schmonz Exp $
+# $NetBSD: Makefile,v 1.2 2009/05/22 18:03:30 zafer Exp $
 #
 
 DISTNAME=		leapsunpack-0.05
@@ -8,6 +8,8 @@ MASTER_SITES=		${MASTER_SITE_BACKUP}
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://su.bze.ro/software/
 COMMENT=		Creates libtai leapsecs.dat from compressed table
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		libtai-[0-9]*:../../devel/libtai
 
@@ -22,9 +24,9 @@ SUBST_MESSAGE.files=	Fixing configuration files.
 INSTALLATION_DIRS=	bin share/doc/${PKGBASE}
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/leapsunpack ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKSRC}/leapsinstall ${PREFIX}/bin
-	${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/doc/${PKGBASE}
+	${INSTALL_PROGRAM} ${WRKSRC}/leapsunpack ${DESTDIR}${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/leapsinstall ${DESTDIR}${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/INSTALL ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 
 .include "../../mk/djbware.mk"
 .include "../../mk/bsd.pkg.mk"

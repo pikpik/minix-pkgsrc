@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/02/05 23:11:11 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2007/02/02 00:06:52 joerg Exp $
 #
 
 DISTNAME=		xdaliclock-2.18
@@ -11,8 +11,13 @@ MAINTAINER=		nathanw@NetBSD.org
 HOMEPAGE=		http://www.jwz.org/xdaliclock/
 COMMENT=		Animated digital clock
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=			${WRKDIR}/${DISTNAME}/X11
 GNU_CONFIGURE=		yes
+
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
+INSTALL_MAKE_FLAGS+=	install_prefix=${DESTDIR}
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

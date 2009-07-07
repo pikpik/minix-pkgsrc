@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/12/27 13:37:40 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/11/10 17:21:38 wiz Exp $
 #
 
 DISTNAME=		xcal41
@@ -10,6 +10,8 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Calendar with alarms and a notebook for X11
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=		yes
 
