@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/12/27 13:37:41 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2007/10/03 07:55:24 obache Exp $
 
 DISTNAME=	X.V11R3uwm
 PKGNAME=	uwm-19881027
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://www.x.org/
 COMMENT=	X11R3 window manager
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/X.V11R3/clients/uwm
 USE_IMAKE=	yes
@@ -21,9 +23,10 @@ post-patch:
 	${SED} -e 's#/usr/lib/X11#${PREFIX}/lib/X11#g' <${WRKSRC}/uwm.man.src \
 		>${WRKSRC}/uwm.man
 
+INSTALLATION_DIRS=	lib/X11/uwm
+
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/lib/X11/uwm
-	${INSTALL_DATA} ${WRKSRC}/default.uwmrc ${PREFIX}/lib/X11/uwm/system.uwmrc
+	${INSTALL_DATA} ${WRKSRC}/default.uwmrc ${DESTDIR}${PREFIX}/lib/X11/uwm/system.uwmrc
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

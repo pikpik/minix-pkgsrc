@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/12/27 13:37:41 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2007/04/13 09:06:15 xtraeme Exp $
 #
 
 DISTNAME=	skippy-0.5.0
@@ -11,13 +11,15 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://thegraveyard.org/skippy.php
 COMMENT=	Fullscreen task switcher for X11
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_TOOLS+=		pkg-config
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 
 INSTALLATION_DIRS=	share/examples/${PKGBASE}
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/skippyrc-default ${EGDIR}/skippyrc
+	${INSTALL_DATA} ${WRKSRC}/skippyrc-default ${DESTDIR}${EGDIR}/skippyrc
 
 .include "../../graphics/imlib2/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
