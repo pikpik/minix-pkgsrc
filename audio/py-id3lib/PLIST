@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${PYSITELIB}/pyid3lib.so
