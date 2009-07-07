@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/11/04 10:52:53 markd Exp $
 
 DISTNAME=		clucene-core-0.9.21
 PKGREVISION=		1
@@ -10,6 +10,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clucene/}
 MAINTAINER=		mkirby@NetBSD.org
 HOMEPAGE=		http://clucene.sourceforge.net/index.php/Main_Page
 COMMENT=		Text search engine written in C++
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	        gmake
 USE_LANGUAGES=		c c++
