@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/mtag
+include/libmtag/mtag.h
+lib/libmtag.la
+lib/pkgconfig/libmtag.pc
