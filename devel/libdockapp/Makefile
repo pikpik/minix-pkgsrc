@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/12/15 20:32:54 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2006/12/27 13:37:36 joerg Exp $
 #
 
 DISTNAME=	libdockapp-0.4.0
@@ -11,12 +11,15 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://solfertje.student.utwente.nl/~dalroi/libdockapp/
 COMMENT=	Simple library to create dockapps for WindowMaker
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
+INSTALLATION_DIRS=	share/doc/libdockapp
+
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/libdockapp
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/libdockapp
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/libdockapp
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/12/12 16:43:55 xtraeme Exp $
+# $NetBSD: Makefile,v 1.13 2008/05/25 21:23:26 wiz Exp $
 #
 
 DISTNAME=	ntfs-3g-1.1120
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ntfs-3g.org/
 COMMENT=	NTFS driver for Linux/FreeBSD/NetBSD with read and write support
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
