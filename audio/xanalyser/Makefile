@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/02/22 19:01:14 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2008/01/19 09:16:17 wiz Exp $
 #
 
 DISTNAME=	xanalyser-1.24
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://arvin.schnell-web.net/xanalyser/
 COMMENT=	Frequency spectrum analyser for X
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
