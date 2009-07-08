@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/04/24 19:06:03 agc Exp $
+# $NetBSD: Makefile,v 1.2 2007/05/13 15:34:05 agc Exp $
 #
 
 DISTNAME=	u9fs-2.0.3
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=v9fs/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://plan9.bell-labs.com/
 COMMENT=	Unix file server using the 9P protocol
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/u9fs
 
