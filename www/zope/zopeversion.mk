@@ -1,4 +1,4 @@
-# $NetBSD: zopeversion.mk,v 1.10 2009/02/21 15:26:47 taca Exp $
+# $NetBSD: zopeversion.mk,v 1.11 2009/06/14 22:58:11 joerg Exp $
 #
 
 .if !defined(_ZOPEVERSION_MK)
@@ -206,7 +206,5 @@ PRINT_PLIST_AWK+=	/^${ZOPE_BASE:S|/|\\/|g}/ \
 
 #
 ZOPE_PY_COMPILE= ${PYTHONBIN} ${ZOPE_DIR}/bin/compilezpy.py
-PY_COMPILE_ALL= \
-	${PYTHONBIN} ${PREFIX}/lib/python${PYVERSSUFFIX}/compileall.py -q
 
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2009/05/10 10:31:05 zafer Exp $
+# $NetBSD: Makefile,v 1.40 2009/05/13 21:32:37 wiz Exp $
 #
 
 DISTNAME=	gnome-doc-utils-0.16.1
@@ -37,10 +37,8 @@ BUILDLINK_API_DEPENDS.libxml2+=	libxml2>=2.6.12
 BUILDLINK_DEPMETHOD.libxslt=	build
 BUILDLINK_DEPMETHOD.libxml2=	build
 
-PYCOMPILEALL=	${BUILDLINK_PREFIX.${PYPACKAGE}}/${PYLIB}/compileall.py
-
 post-install:
-	${PYTHONBIN} ${PYCOMPILEALL} ${DESTDIR}${PREFIX}/share/xml2po
+	${PY_COMPILE_ALL} ${DESTDIR}${PREFIX}/share/xml2po
 
 .include "../../lang/python/application.mk"
 .include "../../textproc/libxml2/buildlink3.mk"

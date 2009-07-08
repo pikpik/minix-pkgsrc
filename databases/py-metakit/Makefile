@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/12/02 13:04:08 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2009/02/11 21:00:49 joerg Exp $
 #
 
 DISTNAME=	metakit-2.4.9.7
@@ -27,12 +27,10 @@ INSTALL_TARGET=	install-python
 MAKE_ENV+=	PYINC=${LOCALBASE}/${PYINC} PYSITELIB=${LOCALBASE}/${PYSITELIB}
 PY_PATCHPLIST=	yes
 
-PYCOMPILEALL=	${BUILDLINK_PREFIX.${PYPACKAGE}}/${PYLIB}/compileall.py
-
 INSTALLATION_DIRS+=	${PYSITELIB}
 
 post-build:
-	cd ${WRKSRC}/python && ${PYTHONBIN} ${PYCOMPILEALL} .
+	cd ${WRKSRC}/python && ${PY_COMPILE_ALL} .
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/python/metakit.pyc ${DESTDIR}${PREFIX}/${PYSITELIB}
