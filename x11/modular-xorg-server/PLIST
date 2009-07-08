@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.12 2009/06/14 18:25:01 joerg Exp $
+@comment $NetBSD: PLIST,v 1.13 2009/06/14 22:06:41 joerg Exp $
 bin/X
 bin/Xnest
 bin/Xorg
@@ -126,8 +126,6 @@ include/xorg/xf86DDC.h
 include/xorg/xf86Modes.h
 include/xorg/xf86Module.h
 include/xorg/xf86Opt.h
-include/xorg/xf86Optrec.h
-include/xorg/xf86Parser.h
 include/xorg/xf86Pci.h
 include/xorg/xf86PciInfo.h
 include/xorg/xf86Priv.h
