@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/03/04 21:29:00 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2009/05/05 18:56:33 zafer Exp $
 #
 
 DISTNAME=	vismsa-xmms-plugin-0.2
@@ -11,7 +11,11 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://a.godau.org/
 COMMENT=	Vis plugin similar to the Spectrum Analyser from Open Cubic Player
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_LIBTOOL=		YES
+
+INSTALLATION_DIRS=	lib/xmms/Visualization
 
 pre-build:
 	cd ${WRKSRC} ; ${MAKE} clean
