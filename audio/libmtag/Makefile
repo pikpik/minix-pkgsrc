@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/07 19:02:02 drochner Exp $
 #
 
 DISTNAME=	libmtag-0.3.1
@@ -15,6 +15,7 @@ USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 
 PKGCONFIG_OVERRIDE+=	libmtag.pc.in
+PKG_DESTDIR_SUPPORT= user-destdir
 
 .include "../../audio/taglib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
