@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/11/05 14:47:55 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2009/01/12 16:21:38 jmcneill Exp $
 #
 
 DISTNAME=		xmms-FMRadio-1.4
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://silicone.free.fr/xmms-FMRadio/
 COMMENT=		Use a Radio Tuner card in XMMS
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	NetBSD-1.5Z[A-Z]-* NetBSD-1.6*-* NetBSD-[2-9]*-*
 
