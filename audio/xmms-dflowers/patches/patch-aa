@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.4 2002/09/21 01:32:23 jlam Exp $
 
 --- Makefile.orig	Sat Jun  9 14:37:36 2001
 +++ Makefile
@@ -49,8 +49,9 @@ $NetBSD$
 -install:
 -	install libdflowers.so $(INSTALL-DIR)
 +install: libdflowers.la
-+	${LIBTOOL} install libdflowers.la $(INSTALL-DIR)
- 	mkdir -p $(XMMS_DATADIR)/$(THEME_SUBDIR)
++	${LIBTOOL} install libdflowers.la ${DESTDIR}$(INSTALL-DIR)
+-	mkdir -p $(XMMS_DATADIR)/$(THEME_SUBDIR)
++	mkdir -p ${DESTDIR}$(XMMS_DATADIR)/$(THEME_SUBDIR)
 -	install bg_*.xpm $(XMMS_DATADIR)/$(THEME_SUBDIR)
-+	$(BSD_INSTALL_DATA) bg_*.xpm $(XMMS_DATADIR)/$(THEME_SUBDIR)
++	$(BSD_INSTALL_DATA) bg_*.xpm ${DESTDIR}$(XMMS_DATADIR)/$(THEME_SUBDIR)
 +
