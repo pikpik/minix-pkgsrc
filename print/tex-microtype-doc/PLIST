@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/microtype/README
+share/texmf-dist/doc/latex/microtype/microtype.pdf
+share/texmf-dist/doc/latex/microtype/test-microtype.tex
