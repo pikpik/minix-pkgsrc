@@ -1,0 +1,8 @@
+@comment $NetBSD$
+share/texmf-dist/doc/fonts/cm-super/COPYING
+share/texmf-dist/doc/fonts/cm-super/ChangeLog
+share/texmf-dist/doc/fonts/cm-super/FAQ
+share/texmf-dist/doc/fonts/cm-super/INSTALL
+share/texmf-dist/doc/fonts/cm-super/README
+share/texmf-dist/doc/fonts/cm-super/TODO
+share/texmf-dist/doc/fonts/cm-super/cm-super-inf.tar.bz2
