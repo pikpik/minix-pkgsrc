@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/enumitem/README
+share/texmf-dist/doc/latex/enumitem/enumitem.pdf
+share/texmf-dist/doc/latex/enumitem/enumitem.tex
