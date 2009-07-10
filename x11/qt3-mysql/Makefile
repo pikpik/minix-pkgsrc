@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/01/18 05:10:06 tnn Exp $
+# $NetBSD: Makefile,v 1.23 2009/07/07 18:07:03 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -20,7 +20,7 @@ do-build:
 		${SETENV} ${MAKE_ENV} ${GMAKE})
 
 SQLDRVDIR=	${QTPREFIX}/plugins/sqldrivers
-INSTALLATION_DIRS	${SQLDRVDIR}
+INSTALLATION_DIRS=	${SQLDRVDIR}
 
 do-install:
 	${LIBTOOL} ${INSTALL_DATA} ${WRKSRC}/plugins/sqldrivers/libqsqlmysql.la \
