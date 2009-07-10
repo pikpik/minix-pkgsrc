@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2007/07/10 21:16:43 minskim Exp $
+# $NetBSD: Makefile,v 1.71 2007/12/27 16:05:11 joerg Exp $
 #
 
 .include "Makefile.common"
@@ -27,7 +27,7 @@ LIBS+= -lltdl
 .include "../../devel/gettext-lib/buildlink3.mk"
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/license.terms ${JAVA_HOME}
+	${INSTALL_DATA} ${WRKSRC}/license.terms ${DESTDIR}${JAVA_HOME}
 
 .include "../../mk/java-env.mk"
 .include "../../mk/bsd.pkg.mk"
