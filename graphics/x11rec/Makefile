@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/01/05 08:34:40 obache Exp $
+# $NetBSD: Makefile,v 1.14 2008/02/08 15:19:42 obache Exp $
 #
 
 DISTNAME=	x11rec-0.3
@@ -9,6 +9,7 @@ MASTER_SITES=	http://0xcc.net/x11rec/
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://0xcc.net/x11rec/
 COMMENT=	Very ad hoc X11 recorder which create a movie
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
