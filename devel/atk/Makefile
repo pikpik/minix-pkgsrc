@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2009/05/26 16:55:23 wiz Exp $
+# $NetBSD: Makefile,v 1.68 2009/06/03 12:40:32 obache Exp $
 #
 
 DISTNAME=		atk-1.26.0
@@ -9,6 +9,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://developer.gnome.org/projects/gap/
 COMMENT=		Set of interfaces for accessibility
+LICENSE=		gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
