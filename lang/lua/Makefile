@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2009/05/20 00:58:19 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2009/05/30 16:08:58 joerg Exp $
 
 DISTNAME=	lua-${LUA_VERSION}
 PKGREVISION=	2
@@ -16,6 +16,7 @@ MASTER_SITES=	ftp://ftp.tecgraf.puc-rio.br/pub/lua/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.lua.org/
 COMMENT=	Powerful light-weight language for extending applications
+LICENSE=	mit
 
 .include "../../lang/lua/version.mk"
 
