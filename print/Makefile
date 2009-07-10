@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.269 2009/07/09 23:10:37 minskim Exp $
+# $NetBSD: Makefile,v 1.270 2009/07/10 00:16:46 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -258,6 +258,8 @@ SUBDIR+=	tex-natbib-doc
 SUBDIR+=	tex-oberdiek
 SUBDIR+=	tex-oberdiek-doc
 SUBDIR+=	tex-ocrb
+SUBDIR+=	tex-paralist
+SUBDIR+=	tex-paralist-doc
 SUBDIR+=	tex-passivetex
 SUBDIR+=	tex-pdftex
 SUBDIR+=	tex-pdftex-def
