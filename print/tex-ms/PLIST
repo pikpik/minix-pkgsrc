@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/ms/count1to.sty
+share/texmf-dist/tex/latex/ms/everysel.sty
+share/texmf-dist/tex/latex/ms/everyshi.sty
+share/texmf-dist/tex/latex/ms/multitoc.sty
+share/texmf-dist/tex/latex/ms/prelim2e.sty
+share/texmf-dist/tex/latex/ms/ragged2e.sty
