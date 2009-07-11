@@ -1,8 +1,7 @@
-$NetBSD$
+$NetBSD: patch-cg,v 1.1 2007/08/01 20:51:26 tron Exp $
 
 --- src/xml/qsvgdevice.cpp	Mon Jul 16 10:45:03 CEST 2007
 +++ src/xml/qsvgdevice.cpp	Mon Jul 16 10:45:03 CEST 2007
-
 @@ -978,7 +978,7 @@
  		// ### catch references to embedded .svg files
  		QPixmap pix;
