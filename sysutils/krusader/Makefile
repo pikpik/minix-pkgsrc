@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/10/15 08:21:23 markd Exp $
+# $NetBSD: Makefile,v 1.23 2009/05/20 00:58:28 wiz Exp $
 #
 
 DISTNAME=	krusader-1.90.0
@@ -16,6 +16,12 @@ USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 
 SHLIBTOOL_OVERRIDE=	# empty
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "DragonFly"
+CONFIGURE_ARGS+= --without-acl
+.endif
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
