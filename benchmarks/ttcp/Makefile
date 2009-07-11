@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/10/28 15:29:58 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/05/16 21:06:49 zafer Exp $
 
 DISTNAME=	ttcp
 PKGNAME=	${DISTNAME}-1.12
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	thorpej@NetBSD.org
 HOMEPAGE=	http://www.ccci.com/tools/ttcp/
 COMMENT=	TCP testing and performance measuring tool
+LICENSE=	public-domain
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
