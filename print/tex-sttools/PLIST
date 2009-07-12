@@ -1,0 +1,10 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/sttools/boundbox.sty
+share/texmf-dist/tex/latex/sttools/cuted.sty
+share/texmf-dist/tex/latex/sttools/floatpag.sty
+share/texmf-dist/tex/latex/sttools/flushend.sty
+share/texmf-dist/tex/latex/sttools/marginal.sty
+share/texmf-dist/tex/latex/sttools/midfloat.sty
+share/texmf-dist/tex/latex/sttools/stabular.sty
+share/texmf-dist/tex/latex/sttools/stfloats.sty
+share/texmf-dist/tex/latex/sttools/texsort.sty
