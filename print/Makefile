@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.278 2009/07/11 05:24:19 minskim Exp $
+# $NetBSD: Makefile,v 1.279 2009/07/12 00:17:53 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -281,6 +281,8 @@ SUBDIR+=	tex-ruhyphen
 SUBDIR+=	tex-sectsty
 SUBDIR+=	tex-sectsty-doc
 SUBDIR+=	tex-setspace
+SUBDIR+=	tex-sttools
+SUBDIR+=	tex-sttools-doc
 SUBDIR+=	tex-tools
 SUBDIR+=	tex-tools-doc
 SUBDIR+=	tex-type1cm
