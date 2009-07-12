@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/leaflet/README
+share/texmf-dist/doc/latex/leaflet/leaflet-manual.pdf
+share/texmf-dist/doc/latex/leaflet/leaflet-manual.tex
+share/texmf-dist/doc/latex/leaflet/leaflet.pdf
