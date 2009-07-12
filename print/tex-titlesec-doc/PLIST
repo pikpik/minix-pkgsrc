@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/titlesec/README
+share/texmf-dist/doc/latex/titlesec/titlesec.pdf
+share/texmf-dist/doc/latex/titlesec/titlesec.tex
