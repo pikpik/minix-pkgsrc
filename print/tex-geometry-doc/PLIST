@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/geometry/README
+share/texmf-dist/doc/latex/geometry/changes.txt
+share/texmf-dist/doc/latex/geometry/geometry-samples.tex
+share/texmf-dist/doc/latex/geometry/geometry.cfg
+share/texmf-dist/doc/latex/geometry/geometry.pdf
