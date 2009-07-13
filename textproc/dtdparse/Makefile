@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/10/19 19:18:47 he Exp $
+# $NetBSD: Makefile,v 1.13 2009/07/07 22:10:29 joerg Exp $
 #
 
 DISTNAME=	dtdparse-2.0beta6
@@ -32,7 +32,7 @@ do-build:
 	${PERL5} -pi -e 's,modules/,XML/DTDParse/,' ${WRKSRC}/dtdformat
 
 do-install:
-	cd ${WRKSRC}; ${INSTALL_SCRIPT} ${SCRIPTS} ${{DESTDIR}${PREFIX}/bin
+	cd ${WRKSRC}; ${INSTALL_SCRIPT} ${SCRIPTS} ${DESTDIR}${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/XML/DTDParse/*.pm ${WRKSRC}/modules/*.pl \
 		${DESTDIR}${PERL5_INSTALLVENDORLIB}/XML/DTDParse
 	${INSTALL_DATA} ${WRKSRC}/dtd.dtd ${DESTDIR}${XMLDIR}
