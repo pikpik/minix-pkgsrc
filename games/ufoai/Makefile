@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/09/19 18:24:15 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/03/18 18:20:36 darcy Exp $
 
 DISTNAME=		ufoai-2.2.1
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ufoai/}
@@ -17,7 +17,7 @@ HOMEPAGE=	http://ufoai.sourceforge.net/
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	tar gmake bzip2
+USE_TOOLS+=	tar gmake bzip2 msgfmt
 MAKE_JOBS_SAFE=	no
 
 INSTALLATION_DIRS=	share/ufoai
