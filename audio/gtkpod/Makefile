@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2009/02/09 22:56:21 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2009/02/15 09:43:38 wiz Exp $
 #
 
 DISTNAME=	gtkpod-0.99.14
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkpod/}
 
@@ -21,7 +22,8 @@ REPLACE_PERL+=		scripts/mab2vcard
 REPLACE_INTERPRETER+=	bash
 REPLACE.bash.old=	.*/bin/bash
 REPLACE.bash.new=	${PREFIX}/bin/bash
-REPLACE_FILES.bash=	scripts/sync-knotes.sh
+REPLACE_FILES.bash=	scripts/sync-knotes.sh scripts/sync-evolution.sh \
+			scripts/sync-ldif.sh
 
 REPLACE_PYTHON+=	scripts/sync-palm-jppy.py
 .include "../../lang/python/application.mk"
