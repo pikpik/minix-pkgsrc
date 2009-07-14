@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/02/22 19:01:27 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2007/08/09 13:31:52 joerg Exp $
 #
 
 DISTNAME=	flup-r2311
@@ -12,6 +12,8 @@ HOMEPAGE=	http://trac.saddi.com/flup
 COMMENT=	WSGI support modules
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_LANGUAGES=	# empty
 
 WRKSRC=		${WRKDIR}/${EGG_NAME}
 
