@@ -1,4 +1,4 @@
-# $NetBSD: checksum.mk,v 1.13 2008/05/22 16:27:22 joerg Exp $
+# $NetBSD: checksum.mk,v 1.14 2008/05/22 20:47:21 joerg Exp $
 #
 # See bsd.checksum.mk for helpful comments.
 #
@@ -114,3 +114,13 @@ makepatchsum:
 	else								\
 		${MV} -f $$newfile ${DISTINFO_FILE};			\
 	fi
+
+.PHONY: depends-checksum
+depends-checksum:
+	${RUN}                                                          \
+	${_DEPENDS_WALK_CMD} ${PKGPATH} |                               \
+	while read dir; do                                              \
+		${ECHO} "===> Checksumming for $${dir}" &&              \
+		cd ${.CURDIR}/../../$$dir &&                            \
+		${RECURSIVE_MAKE} ${MAKEFLAGS} checksum;   		\
+	done

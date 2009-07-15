@@ -1,4 +1,4 @@
-# $NetBSD: bsd.fetch.mk,v 1.5 2007/01/02 17:54:32 rillig Exp $
+# $NetBSD: bsd.fetch.mk,v 1.6 2007/10/30 23:35:51 rillig Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and defines the
 # relevant variables and targets for the "fetch" step.
@@ -11,6 +11,9 @@
 # fetch-list:
 #	Prints a shell script to the standard output that will download
 #	the distfiles.
+#
+# depends-fetch:
+#	Run fetch for the current package and all dependencies.
 #
 # The following targets may be overridden in a package Makefile:
 #
