@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2007/02/18 11:40:09 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2008/06/12 02:14:28 joerg Exp $
 #
 
 DISTNAME=		pth-2.0.7
@@ -13,6 +13,8 @@ CONFLICTS=		pth-current-[0-9]* pth-syscall<1.4.1nb1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES
