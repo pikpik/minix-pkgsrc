@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/caption/caption.sty
+share/texmf-dist/tex/latex/caption/caption2.sty
+share/texmf-dist/tex/latex/caption/caption3.sty
+share/texmf-dist/tex/latex/caption/ltcaption.sty
+share/texmf-dist/tex/latex/caption/subcaption.sty
