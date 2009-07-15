@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/03/15 20:43:24 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/06/06 00:48:39 abs Exp $
 #
 
 DISTNAME=	freerdist-0.92
@@ -25,9 +25,5 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 post-extract:
 	${CP} ${FILESDIR}/os-dragonfly.h ${WRKSRC}/config
 	${ECHO} LIB_SYS=-lcompat > ${WRKSRC}/config/mf.dragonfly
-
-post-install:
-	@strip ${DESTDIR}${PREFIX}/bin/${RDIST6_NAME}
-	@strip ${DESTDIR}${PREFIX}/bin/rdistd
 
 .include "../../mk/bsd.pkg.mk"
