@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.287 2009/07/16 23:21:40 minskim Exp $
+# $NetBSD: Makefile,v 1.288 2009/07/16 23:26:44 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -297,6 +297,8 @@ SUBDIR+=	tex-sectsty-doc
 SUBDIR+=	tex-setspace
 SUBDIR+=	tex-sttools
 SUBDIR+=	tex-sttools-doc
+SUBDIR+=	tex-subfig
+SUBDIR+=	tex-subfig-doc
 SUBDIR+=	tex-titlesec
 SUBDIR+=	tex-titlesec-doc
 SUBDIR+=	tex-tools
