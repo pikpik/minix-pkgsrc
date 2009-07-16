@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2006/04/08 20:04:18 jlam Exp $
+@comment $NetBSD$
 bin/tcinput
 ${EMACS_INFOPREFIX}/tc.info
 ${EMACS_LISPPREFIX}/tc/eelll.el
@@ -14,9 +14,10 @@ ${EMACS_LISPPREFIX}/tc/tc-image.el
 ${EMACS_LISPPREFIX}/tc/tc-inst.el
 ${EMACS_LISPPREFIX}/tc/tc-inst.elc
 ${EMACS_LISPPREFIX}/tc/tc-is18.el
+${FOR_emacs23}${EMACS_LISPPREFIX}/tc/tc-is18.elc
 ${EMACS_LISPPREFIX}/tc/tc-is19.el
 ${EMACS_LISPPREFIX}/tc/tc-is20.el
-${EMACS_LISPPREFIX}/tc/tc-is20.elc
+${NOTFOR_emacs23}${EMACS_LISPPREFIX}/tc/tc-is20.elc
 ${EMACS_LISPPREFIX}/tc/tc-ja-alnum.el
 ${EMACS_LISPPREFIX}/tc/tc-ja-alnum.elc
 ${EMACS_LISPPREFIX}/tc/tc-jiscode.el
