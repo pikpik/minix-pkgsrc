@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.20 2009/04/12 08:25:43 tonio Exp $
+@comment $NetBSD: PLIST,v 1.21 2009/06/14 18:04:38 joerg Exp $
 bin/flea
 bin/mutt
 bin/mutt_dotlock
@@ -37,6 +37,7 @@ share/doc/mutt/miscellany.html
 share/doc/mutt/optionalfeatures.html
 share/doc/mutt/patch-notes.txt
 share/doc/mutt/reference.html
+share/doc/mutt/security.html
 share/doc/mutt/smime-notes.txt
 share/doc/mutt/tuning.html
 share/examples/mutt/Mush.rc
