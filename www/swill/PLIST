@@ -1,3 +1,5 @@
 @comment $NetBSD$
-include/swill.h
+include/swill/swill.h
 lib/libswill.a
+lib/libswill.so
+@dirrm include/swill
