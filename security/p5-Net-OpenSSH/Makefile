@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/05/17 10:37:35 seb Exp $
+# $NetBSD: Makefile,v 1.2 2009/07/08 13:48:30 sno Exp $
 #
 
-DISTNAME=		Net-OpenSSH-0.35
+DISTNAME=		Net-OpenSSH-0.36
 PKGNAME=		p5-${DISTNAME}
 CATEGORIES=		security net perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}
