@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/mono-nat/Mono.Nat.dll
+lib/mono-nat/Mono.Nat.dll.mdb
+lib/pkgconfig/mono.nat.pc
