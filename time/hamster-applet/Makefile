@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/03/22 19:38:38 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2009/05/19 14:36:20 wiz Exp $
 #
 
 DISTNAME=	hamster-applet-2.26.2
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_DIRS+=	xdg-1.4
 USE_LIBTOOL=	yes
-USE_TOOLS+=	gmake intltool pkg-config
+USE_TOOLS+=	gmake intltool pkg-config msgfmt
 
 GCONF_SCHEMAS+=	hamster-applet.schemas
 PY_PATCHPLIST=	yes
