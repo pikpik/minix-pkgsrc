@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/07/16 13:17:45 zafer Exp $
+# $NetBSD: Makefile,v 1.9 2009/07/16 22:11:41 obache Exp $
 
 DISTNAME=		swill-0.3
 CATEGORIES=		www devel
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/SWILL-0.3
 GNU_CONFIGURE=		yes
-
 INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX}
 
 .include "../../mk/bsd.pkg.mk"
