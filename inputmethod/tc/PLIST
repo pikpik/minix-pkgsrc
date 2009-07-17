@@ -14,11 +14,9 @@ ${EMACS_LISPPREFIX}/tc/tc-image.el
 ${EMACS_LISPPREFIX}/tc/tc-inst.el
 ${EMACS_LISPPREFIX}/tc/tc-inst.elc
 ${EMACS_LISPPREFIX}/tc/tc-is18.el
-@comment ${FOR_emacs23}${EMACS_LISPPREFIX}/tc/tc-is18.elc
 ${EMACS_LISPPREFIX}/tc/tc-is19.el
 ${EMACS_LISPPREFIX}/tc/tc-is20.el
 ${EMACS_LISPPREFIX}/tc/tc-is20.elc
-@comment ${NOTFOR_emacs23}${EMACS_LISPPREFIX}/tc/tc-is20.elc
 ${EMACS_LISPPREFIX}/tc/tc-ja-alnum.el
 ${EMACS_LISPPREFIX}/tc/tc-ja-alnum.elc
 ${EMACS_LISPPREFIX}/tc/tc-jiscode.el
