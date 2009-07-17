@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.774 2009/04/21 14:19:21 roy Exp $
+# $NetBSD: Makefile,v 1.775 2009/07/08 17:45:45 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -235,6 +235,7 @@ SUBDIR+=	miredo
 SUBDIR+=	mirror
 SUBDIR+=	mldonkey
 SUBDIR+=	mldonkey-gui
+SUBDIR+=	mono-nat
 SUBDIR+=	monotorrent
 SUBDIR+=	monsoon
 SUBDIR+=	mouse-pppoe
