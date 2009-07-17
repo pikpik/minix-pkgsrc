@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/06/16 14:51:52 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2009/02/10 00:03:41 joerg Exp $
 #
 
 DISTNAME=	jamjar-0.7.1
@@ -16,11 +16,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/jamjar
 
+EVAL_PREFIX+=	ACUNIA_JAM_PREFIX=acunia-jam
 JAM_COMMAND=	\
 	cd ${WRKSRC} &&							\
 		${SETENV} ${MAKE_ENV}					\
-		${LOCALBASE}/bin/jam					\
-			-sPREFIX="${DESTDIR}${PREFIX}"				\
+		${ACUNIA_JAM_PREFIX}/bin/jam				\
+			-sPREFIX="${DESTDIR}${PREFIX}"			\
 			-sCFLAGS="${CFLAGS}"
 
 do-build:
