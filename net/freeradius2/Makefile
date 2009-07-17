@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/04/23 18:26:05 adam Exp $
+# $NetBSD: Makefile,v 1.6 2009/05/28 06:00:38 adam Exp $
 
 DISTNAME=	freeradius-server-${RADVER}
 PKGNAME=	${DISTNAME:S/-server//}
@@ -6,7 +6,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freeradius.org/
 COMMENT=	Free RADIUS server implementation
 

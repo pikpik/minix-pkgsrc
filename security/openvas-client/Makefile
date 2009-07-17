@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/04 01:12:18 adrianp Exp $
 #
 
 DISTNAME=	openvas-client-2.0.1
 CATEGORIES=	security
 MASTER_SITES=	http://wald.intevation.org/frs/download.php/552/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openvas.org/
 COMMENT=	Client for the Open Vulnerability Assessment System
 

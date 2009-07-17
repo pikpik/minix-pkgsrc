@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2007/05/05 22:09:18 adrianp Exp $
+# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:36 joerg Exp $
 
 DISTNAME=	Numbers_Words-0.14.0
 PKGREVISION=	1
 CATEGORIES=	math
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pear.php.net/package/Numbers_Words/
 COMMENT=	Provides methods for spelling numerals in words
 

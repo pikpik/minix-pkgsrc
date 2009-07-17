@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/06/12 02:14:44 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/05/19 08:59:30 wiz Exp $
 #
 
 DISTNAME=	amap-5.2
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	http://freeworld.thc.org/releases/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://freeworld.thc.org/thc-amap/
 COMMENT=	Applications and Services scanner
 LICENSE=	amap-license

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/05/26 12:58:49 adrianp Exp $
+# $NetBSD: Makefile,v 1.15 2008/10/12 12:08:07 adrianp Exp $
 
 DISTNAME=	kronolith-h3-${KRONOLITHVER}
 PKGNAME=	kronolith-${KRONOLITHVER}
@@ -6,7 +6,7 @@ CATEGORIES=	www time
 MASTER_SITES=	http://ftp.horde.org/pub/kronolith/ \
 		ftp://ftp.horde.org/pub/kronolith/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.horde.org/kronolith/
 COMMENT=	Horde calendar application
 

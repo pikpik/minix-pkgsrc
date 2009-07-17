@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2007/06/07 15:12:01 taca Exp $
+# $NetBSD: Makefile,v 1.3 2008/01/18 05:08:31 tnn Exp $
 
 DISTNAME=	up-imapproxy-1.2.5
 PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.imapproxy.org/downloads/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.imapproxy.org/
 COMMENT=	Connection caching IMAP proxy server
 

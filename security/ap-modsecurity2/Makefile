@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2009/02/23 22:01:11 adrianp Exp $
+# $NetBSD: Makefile,v 1.13 2009/03/14 13:45:38 adrianp Exp $
 
 DISTNAME=	modsecurity-apache_2.5.9
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/apache_//}
 CATEGORIES=	www security
 MASTER_SITES=	http://www.modsecurity.org/download/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.modsecurity.org/
 COMMENT=	Intrusion detection and prevention engine for web applications
 

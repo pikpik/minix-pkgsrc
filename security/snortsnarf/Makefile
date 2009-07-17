@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/05/26 02:13:23 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/06/09 17:34:50 abs Exp $
 #
 
 DISTNAME=	SnortSnarf-050314.1
@@ -6,7 +6,7 @@ PKGNAME=	${DISTNAME:S/SnortSnarf-/snortsnarf-20/}
 CATEGORIES=	security net
 MASTER_SITES=	http://www.snort.org/dl/contrib/data_analysis/snortsnarf/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.silicondefense.com/software/snortsnarf/
 COMMENT=	Generate HTML report summaries from snort incident alerts
 

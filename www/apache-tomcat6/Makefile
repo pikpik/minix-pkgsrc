@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/14 12:02:08 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/06 17:34:08 adrianp Exp $
 #
 
 DISTNAME=	apache-tomcat-${TOMCAT_VER}
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_APACHE:=tomcat/tomcat-6/v${TOMCAT_VER}/bin/}
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tomcat.apache.org/
 COMMENT=	Implementation of Java Servlet and JavaServer Pages technologies
 

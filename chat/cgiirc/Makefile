@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2008/03/03 02:19:51 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2009/03/07 08:12:15 seb Exp $
 
 DISTNAME=	cgiirc-0.5.9
 PKGREVISION=	2
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cgiirc/}
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cgiirc.sourceforge.net/
 COMMENT=	Access IRC from a web browser
 

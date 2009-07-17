@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2009/01/19 20:14:16 abs Exp $
+# $NetBSD: Makefile,v 1.3 2009/07/13 14:48:36 joerg Exp $
 
 DISTNAME=	MDB2_Driver_sqlite-1.5.0b2
 CATEGORIES=	databases
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pear.php.net/package/MDB2_Driver_sqlite
 COMMENT=	Sqlite MDB2 driver
 

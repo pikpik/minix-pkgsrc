@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2007/04/14 10:30:37 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2008/03/03 17:45:36 jlam Exp $
 
 DISTNAME=	libwhisker2-2.4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.wiretrip.net/rfp/libwhisker/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.wiretrip.net/rfp/lw.asp
 COMMENT=	Perl module geared specifically for HTTP testing
 

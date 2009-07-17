@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/02/11 22:56:02 adrianp Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/11 23:10:16 adrianp Exp $
 #
 
 DISTNAME=	mysql-connector-java-3.1.14
@@ -6,7 +6,7 @@ PKGNAME=	${DISTNAME:S/mysql-connector-java/jdbc-mysql/}
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_MYSQL:=Connector-J/}
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dev.mysql.com/doc/refman/5.0/en/connector-j.html
 COMMENT=	MySQL 3.1 JDBC driver
 

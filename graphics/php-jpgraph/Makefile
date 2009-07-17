@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.16 2008/05/26 02:13:20 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2008/11/13 19:23:56 adrianp Exp $
 
 DISTNAME=	jpgraph-1.18
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME}
 CATEGORIES=	graphics www
 MASTER_SITES=	http://members.chello.se/jpgraph/jpgdownloads/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.aditus.nu/jpgraph/index.php
 COMMENT=	Object Oriented class library for PHP
 

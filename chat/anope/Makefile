@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2007/07/11 19:32:23 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/13 23:32:45 adrianp Exp $
 
 DISTNAME=	anope-1.7.21
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=anope/}
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.anope.org/
 COMMENT=	Set of Services for IRC networks
 

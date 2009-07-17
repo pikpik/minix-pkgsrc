@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2007/01/07 09:13:51 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2007/02/18 18:30:59 adrianp Exp $
 
 DISTNAME=	libnet-1.1.2.1
 PKGNAME=	${DISTNAME:S/libnet/libnet11/}
 CATEGORIES=	devel net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.packetfactory.net/libnet/
 COMMENT=	C library for portable packet creation and injection
 
