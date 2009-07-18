@@ -1,6 +1,5 @@
-@comment $NetBSD: PLIST.common,v 1.2 2009/04/24 01:32:50 hasso Exp $
+@comment $NetBSD: PLIST.common,v 1.4 2009/05/21 21:21:35 tnn Exp $
 bin/2to3
-bin/idle
 bin/pydoc${PY_VER_SUFFIX}
 bin/python${PY_VER_SUFFIX}
 bin/python${PY_VER_SUFFIX}-config
