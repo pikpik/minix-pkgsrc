@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.82 2009/05/20 00:58:26 wiz Exp $
+# $NetBSD: Makefile,v 1.83 2009/06/09 18:56:37 wiz Exp $
 
-DISTNAME=	gnutls-2.8.0
+DISTNAME=	gnutls-2.8.1
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/ \
 		ftp://ftp.gnupg.org/gcrypt/gnutls/ \
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnutls.org/
 COMMENT=	GNU Transport Layer Security library
-#LICENSE=	gnu-gpl-v3 AND gnu-lgpl-v2.1
+LICENSE=	gnu-gpl-v3 AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
