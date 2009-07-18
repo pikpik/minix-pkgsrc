@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/bibtex/bib/acmtrans/acmtr.bib
+share/texmf-dist/bibtex/bst/acmtrans/acmtrans.bst
+share/texmf-dist/tex/latex/acmtrans/acmtrans2e.cls
