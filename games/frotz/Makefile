@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2007/12/02 00:00:20 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2008/03/04 06:59:04 jlam Exp $
 
 DISTNAME=	frotz-2.43
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games
 # The maintainer has asked us to use the mirrors instead of www.cs.csubak.edu.
 #MASTER_SITES=	http://www.cs.csubak.edu/~dgriffi/frotz/files/
