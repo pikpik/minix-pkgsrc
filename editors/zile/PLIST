@@ -1,9 +1,6 @@
-@comment $NetBSD: PLIST,v 1.5 2006/03/31 15:40:37 jlam Exp $
+@comment $NetBSD$
 bin/zile
-info/zile.info
+lib/charset.alias
 man/man1/zile.1
-share/zile/AUTODOC
 share/zile/FAQ
-share/zile/HELP
-share/zile/TUTORIAL
 share/zile/dotzile.sample

@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.22 2007/11/19 07:12:45 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.23 2008/07/14 12:56:03 joerg Exp $
 
-DISTNAME=	zile-2.2.50
+DISTNAME=	zile-2.3.9
 CATEGORIES=	editors
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zile/}
+MASTER_SITES=	http://ftp.gnu.org/gnu/zile/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://zile.sourceforge.net/
+HOMEPAGE=	http://www.gnu.org/software/zile/
 COMMENT=	Emacs-like text editor
+LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
