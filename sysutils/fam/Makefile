@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.35 2007/12/16 14:25:14 cjep Exp $
+# $NetBSD: Makefile,v 1.36 2008/01/09 21:17:32 wiz Exp $
 #
 
 DISTNAME=		fam-2.7.0
 PKGREVISION=		9
 CATEGORIES=		sysutils devel
 MASTER_SITES=		ftp://oss.sgi.com/projects/fam/download/stable/	\
-			ftp://ftp.tuwien.ac.at/opsys/linux/gentoo/distfiles/ \
-			http://gd.tuwien.ac.at/opsys/linux/gentoo/distfiles/
+			${MASTER_SITE_GENTOO:=distfiles/}
 
 CONFLICTS+=		gamin-[0-9]*
 
