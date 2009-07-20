@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/euc-bookmark
+bin/hbibtex
+bin/hmakeindex
+bin/hypua2jamo
+bin/insertjamofiller
+bin/jamo2hypua
+bin/komkindex
+bin/ttf2kotexfont
