@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libdnet-stripped/include/dnet/os.h.orig	2008-08-29 21:23:56.000000000 +0100
+--- libdnet-stripped/include/dnet/os.h.orig	2009-06-24 22:35:54.000000000 +0100
 +++ libdnet-stripped/include/dnet/os.h
 @@ -115,7 +115,7 @@
  # ifdef __GNUC__
@@ -10,4 +10,4 @@ $NetBSD$
 +#  if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L && !defined(__SUNPRO_C)
  #   define __flexarr	[]
  #  elif defined(_WIN32)
- /* MS VC++ */
+ /* MS VC++ -- using [] works but gives a "nonstandard extension" warning */
