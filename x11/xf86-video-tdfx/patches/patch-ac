@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 2007/08/15 17:55:42 joerg Exp $
 
---- configure.ac.orig	2007-08-15 19:51:28.000000000 +0200
+--- configure.ac.orig	2009-07-02 16:47:46.000000000 +0100
 +++ configure.ac
-@@ -67,7 +67,7 @@ sdkdir=$(pkg-config --variable=sdkdir xo
+@@ -73,7 +73,7 @@ CPPFLAGS="$SAVE_CPPFLAGS"
  # Checks for header files.
  AC_HEADER_STDC
  
