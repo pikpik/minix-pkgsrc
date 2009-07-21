@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.20 2009/03/07 22:26:23 manu Exp $
+# $NetBSD: Makefile.common,v 1.21 2009/04/27 07:15:43 ghen Exp $
 
 # please stick to the "stable" releases as much as possible!
 DISTNAME=		openldap-2.4.16
@@ -61,6 +61,7 @@ SUBST_MESSAGE.conflict=	Fixing conflicting function prototypes.
 .endif
 
 CPPFLAGS.Darwin+=	-DBIND_8_COMPAT
+CPPFLAGS.Linux+=	-D_GNU_SOURCE
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--localstatedir=${OPENLDAP_VARDIR:Q}
