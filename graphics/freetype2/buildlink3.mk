@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.29 2006/07/08 23:10:51 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.30 2009/03/20 19:24:38 joerg Exp $
 
 BUILDLINK_TREE+=	freetype2
 
@@ -12,6 +12,8 @@ BUILDLINK_INCDIRS.freetype2?=	include/freetype2
 
 FREETYPE_CONFIG?=	${BUILDLINK_PREFIX.freetype2}/bin/freetype-config
 CONFIGURE_ENV+=		FREETYPE_CONFIG=${FREETYPE_CONFIG:Q}
+
+.include "../../devel/zlib/buildlink3.mk"
 .endif # FREETYPE2_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-freetype2
