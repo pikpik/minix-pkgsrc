@@ -1,10 +1,10 @@
-# $NetBSD: options.mk,v 1.6 2009/05/17 12:55:52 sno Exp $
+# $NetBSD: options.mk,v 1.7 2009/07/22 12:35:29 gdt Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.graphviz
 PKG_SUPPORTED_OPTIONS=	gd x11 pangocairo gtk rsvg swig guile lua ocaml tcl perl
 PKG_SUGGESTED_OPTIONS=	gd x11 pangocairo gtk rsvg swig lua tcl perl
 # Explanation of consquence of options, to help those trying to slim down:
-#   swig: build-time only, needed for any of the lanaguages.  Silently
+#   swig: build-time only, needed for any of the languages.  Silently
 #     forces off language options.
 #   ocaml lua tcl perl: extension language support
 #   x11: Omits all linking with x11.  Silently forces off pangocairo, gtk
