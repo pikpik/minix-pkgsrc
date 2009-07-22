@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/03/08 15:56:47 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/03/26 16:49:45 roy Exp $
 #
 
 DISTNAME=	fast-user-switch-applet-2.24.0
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+=		gdm>=2.16.0:../../x11/gdm
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		gnome2-1.6
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

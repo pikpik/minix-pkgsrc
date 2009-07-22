@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/07/05 05:37:41 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/07/14 12:56:03 joerg Exp $
 #
 
 DISTNAME=	leafpad-0.8.4
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		intltool msgfmt pkg-config
 GNU_CONFIGURE=		YES
-USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	YES
 
 .include "../../converters/libiconv/buildlink3.mk"

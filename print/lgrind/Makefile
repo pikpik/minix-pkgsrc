@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2006/08/10 03:21:40 minskim Exp $
+# $NetBSD: Makefile,v 1.30 2007/02/15 23:23:43 joerg Exp $
 
 DISTNAME=	lgrind
 PKGNAME=	lgrind-3.5
@@ -13,7 +13,6 @@ COMMENT=	Source pretty printer for LaTeX
 WRKSRC=		${WRKDIR}/lgrind/source
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 NO_CONFIGURE=	yes
-USE_DIRS+=	texmf-1.0
 TEX_ACCEPTED=	teTeX3
 
 .include "../../print/teTeX/module.mk"

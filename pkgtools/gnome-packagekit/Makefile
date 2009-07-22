@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/08 00:22:45 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2009/03/27 09:24:45 wiz Exp $
 #
 
 DISTNAME=	gnome-packagekit-0.4.0
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config gmake intltool perl msgfmt
-USE_DIRS+=	gnome2-1.6
 USE_PKGLOCALEDIR= yes
 
 GCONF_SCHEMAS+=	gnome-packagekit.schemas

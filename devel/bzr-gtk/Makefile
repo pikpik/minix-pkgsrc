@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/11/08 02:49:49 epg Exp $
+# $NetBSD: Makefile,v 1.4 2008/11/13 11:18:05 wiz Exp $
 
 DISTNAME=	bzr-gtk-${VER}
 CATEGORIES=	devel
@@ -16,7 +16,6 @@ DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.8:../../x11/py-gtk2
 
 PYDISTUTILSPKG=	yes
 PYTHON_VERSIONS_ACCEPTED=	25
-USE_DIRS+=	xdg-1.1
 
 USE_TOOLS+=	msgfmt
 

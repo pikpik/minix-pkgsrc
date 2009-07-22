@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/31 03:04:37 ahoka Exp $
+# $NetBSD: Makefile,v 1.2 2009/07/14 15:53:20 hasso Exp $
 #
 
 DISTNAME=	PokerTH-0.7.1-src
@@ -14,7 +14,6 @@ COMMENT=        Texas Holdem poker with online play
 USE_TOOLS=	gmake
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
-USE_DIRS+=	xdg-1.4
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin lib ${PKGMANDIR}/man1 share/pokerth \

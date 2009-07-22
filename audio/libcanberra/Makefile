@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/02/27 22:08:57 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2009/03/02 16:29:31 wiz Exp $
 #
 
 DISTNAME=	libcanberra-0.11
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config gmake
-USE_DIRS+=	gnome2-1.5
 GCONF_SCHEMAS+=	libcanberra.schemas
 
 PKGCONFIG_OVERRIDE+=	libcanberra-gtk.pc.in

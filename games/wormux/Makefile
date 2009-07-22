@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/10/23 15:24:42 adam Exp $
+# $NetBSD: Makefile,v 1.11 2009/04/23 13:10:07 adam Exp $
 
 DISTNAME=	wormux-0.8.3
 CATEGORIES=	games
@@ -11,7 +11,6 @@ COMMENT=	Battle game
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		pkg-config msgfmt

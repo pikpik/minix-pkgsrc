@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/20 01:09:20 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2009/02/09 22:56:24 joerg Exp $
 #
 
 DISTNAME=		pytraffic-2.5.4
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 # pytraffic-2.5.4 distfile was changed after release
 DIST_SUBDIR=	pytraffic-2.5.4-070313
 
-USE_DIRS+=		xdg-1.1
 PYDISTUTILSPKG=		yes
 
 .include "../../lang/python/application.mk"

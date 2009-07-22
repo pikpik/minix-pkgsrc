@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/03/17 23:37:24 jmcneill Exp $
+# $NetBSD: Makefile,v 1.22 2009/04/07 10:38:54 drochner Exp $
 #
 
 DISTNAME=		sound-juicer-2.26.0
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-USE_DIRS=		xdg-1.4 gnome2-1.6
 USE_TOOLS+=		gmake pkg-config intltool msgfmt
 USE_LANGUAGES=		c c++
 

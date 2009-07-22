@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.78 2008/10/25 02:09:37 wiz Exp $
+# $NetBSD: Makefile,v 1.79 2009/03/17 12:19:35 jmcneill Exp $
 #
 
 DISTNAME=		yelp-2.26.0
@@ -16,7 +16,6 @@ DEPENDS+=		docbook>=4.2:../../textproc/docbook
 
 BUILDLINK_API_DEPENDS.libxslt+=	libxslt>=1.1.4
 
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

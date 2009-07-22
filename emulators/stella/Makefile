@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2008/06/20 01:09:18 joerg Exp $
+# $NetBSD: Makefile,v 1.33 2009/07/12 16:31:59 dholland Exp $
 
 STELLA_VERSION=	2.8.4
 DISTNAME=	stella-${STELLA_VERSION}-src
@@ -16,7 +16,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
-USE_DIRS+=		xdg-1.1
 UNLIMIT_RESOURCES=	datasize
 
 HAS_CONFIGURE=		YES

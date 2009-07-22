@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2008/04/24 21:26:49 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2008/06/12 02:14:30 joerg Exp $
 #
 
 DISTNAME=		crimson-0.5.2
@@ -13,7 +13,6 @@ COMMENT=		Tactical war game in the tradition of Battle Isle
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 # not standard locale files

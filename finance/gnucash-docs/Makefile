@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/01/04 18:01:00 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/03/08 15:56:45 wiz Exp $
 
 DISTNAME=		gnucash-docs-2.2.0
 CATEGORIES=		finance
@@ -13,7 +13,6 @@ COMMENT=		Documentation for GnuCash - personal double-entry accounting program
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		YES
 

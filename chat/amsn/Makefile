@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/08/30 13:05:45 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/01/05 20:27:16 rillig Exp $
 #
 
 DISTNAME=		amsn-0.97
@@ -31,7 +31,6 @@ REPLACE_BASH=		utils/update-amsn.sh
 USE_TOOLS+=		perl:run bash:run
 
 USE_TOOLS+=		autoconf gmake
-USE_DIRS+=		xdg-1.4
 
 pre-configure:
 	cd ${WRKSRC} && autoconf

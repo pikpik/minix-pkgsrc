@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/05/28 21:17:14 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2009/05/28 21:25:32 wiz Exp $
 #
 
 DISTNAME=	accerciser-1.6.1
@@ -14,7 +14,6 @@ LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

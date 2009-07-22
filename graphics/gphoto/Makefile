@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2008/06/20 01:09:22 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2009/06/30 00:07:17 joerg Exp $
 
 DISTNAME=	gphoto-0.4.3
 PKGREVISION=	9
@@ -13,7 +13,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
-USE_DIRS+=		gnome1-1.0
 USE_X11BASE=		YES
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		yes

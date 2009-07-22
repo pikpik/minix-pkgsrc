@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2007/04/15 10:36:19 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2008/06/20 01:09:10 joerg Exp $
 #
 
 DISTNAME=		gnome-mime-data-2.18.0
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		gnome-vfs<=1.0.3
 
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		intltool msgfmt perl gmake
 GNU_CONFIGURE=		YES

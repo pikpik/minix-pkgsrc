@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/09/21 13:03:42 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2009/02/09 21:11:52 joerg Exp $
 
 DISTNAME=	ccgo-0.3.6.3
 CATEGORIES=	games
@@ -14,7 +14,6 @@ DEPENDS+=	gnugo>=3.4:../../games/gnugo
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		msgfmt pkg-config
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 

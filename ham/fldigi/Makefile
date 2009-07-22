@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/02/15 19:41:10 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/02/21 13:22:43 wiz Exp $
 #
 
 DISTNAME=	fldigi-3.03
@@ -12,7 +12,6 @@ COMMENT=	Digital radio modem
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=	xdg-1.1
 USE_TOOLS+=	gmake pkg-config
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	yes

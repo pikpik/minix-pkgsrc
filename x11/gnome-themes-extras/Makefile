@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2008/06/20 01:09:44 joerg Exp $
+# $NetBSD: Makefile,v 1.39 2008/08/20 23:46:43 bjs Exp $
 #
 
 DISTNAME=	gnome-themes-extras-2.22.0
@@ -17,7 +17,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_USING=		bsdtar
 
-USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

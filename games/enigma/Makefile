@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/06/12 16:28:08 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2007/06/14 17:55:03 heinz Exp $
 
 DISTNAME=	enigma-1.01
 CATEGORIES=	games
@@ -14,7 +14,6 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 DEPENDS+=		gettext-tools-[0-9]*:../../devel/gettext-tools
 
 GCC_REQD+=		3.3
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake

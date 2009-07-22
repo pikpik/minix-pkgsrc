@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/03/25 22:37:13 he Exp $
+# $NetBSD: Makefile,v 1.10 2009/05/20 00:58:24 wiz Exp $
 #
 
 DISTNAME=	tellico-1.3.5
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++
-USE_DIRS+=		kde3-1.0
 USE_TOOLS+=		gmake perl:build pkg-config
 
 .include "options.mk"

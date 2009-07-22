@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.93 2009/07/06 10:49:55 drochner Exp $
+# $NetBSD: Makefile,v 1.94 2009/07/09 18:21:44 drochner Exp $
 #
 
 DISTNAME=	file-roller-2.26.3
@@ -18,7 +18,6 @@ DEPENDS+=		zip>=2.3nb2:../../archivers/zip
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_PKGLOCALEDIR=	yes

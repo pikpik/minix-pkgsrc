@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/03 08:59:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/10/26 16:57:51 reed Exp $
 
 DISTNAME=	everypage
 PKGNAME=	tex-${DISTNAME}-1.0
@@ -13,7 +13,6 @@ COMMENT=	LaTeX package for hooks to run on every page
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
-USE_DIRS+=	texmf-1.4
 
 INSTALLATION_DIRS=	share/doc/tex-everypage
 

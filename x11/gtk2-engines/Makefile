@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2009/05/19 11:21:58 wiz Exp $
+# $NetBSD: Makefile,v 1.60 2009/05/19 23:22:10 wiz Exp $
 
 DISTNAME=		gtk-engines-2.18.2
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
@@ -23,7 +23,6 @@ BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.10.0
 
 USE_TOOLS+=		gmake intltool pkg-config msgfmt
 GNU_CONFIGURE=		yes
-USE_DIRS+=		theme-1.1 xdg-1.1
 USE_LIBTOOL=		yes
 
 CONFIGURE_ARGS+=	--enable-animation

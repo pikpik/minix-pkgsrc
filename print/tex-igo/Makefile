@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2006/06/11 06:13:35 minskim Exp $
 
 DISTNAME=	igo
 PKGNAME=	tex-${DISTNAME}-0
@@ -10,7 +10,6 @@ MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://www.ctan.org/tex-archive/fonts/igo/
 COMMENT=	Fonts and macro to typeset Go diagrams
 
-USE_DIRS+=	texmf-1.2
 
 .include "../../print/teTeX/module.mk"
 

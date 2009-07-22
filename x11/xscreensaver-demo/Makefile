@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2008/03/10 12:37:12 drochner Exp $
+# $NetBSD: Makefile,v 1.29 2009/07/07 17:28:04 joerg Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-demo-/}
@@ -8,7 +8,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	xscreensaver<4.14 xscreensaver-gnome-[0-9]*
 
-USE_DIRS+=	xdg-1.1
 
 .include "../../x11/xscreensaver/Makefile.common"
 

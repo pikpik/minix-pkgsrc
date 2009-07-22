@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/09/06 20:54:34 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2009/05/30 00:53:53 zafer Exp $
 #
 
 DISTNAME=	gtodo-applet-0.1
@@ -16,7 +16,6 @@ DEPENDS+=		gtodo>=0.14:../../time/gtodo
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		YES
 
 .include "../../devel/GConf/schemas.mk"

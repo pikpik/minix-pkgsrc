@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/01/28 12:47:35 drochner Exp $
+# $NetBSD: Makefile,v 1.30 2009/05/30 01:25:19 obache Exp $
 #
 
 DISTNAME=		gmpc-0.18.0
@@ -18,7 +18,6 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		intltool msgfmt pkg-config gmake
 PKGCONFIG_OVERRIDE=	data/gmpc.pc.in
 
-USE_DIRS+=		xdg-1.1
 
 .include "options.mk"
 

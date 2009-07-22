@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/10 21:08:14 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2009/01/10 21:48:51 jmcneill Exp $
 #
 
 DISTNAME=	frameworks-0.3.7
@@ -13,7 +13,6 @@ COMMENT=	Stop-motion animation frame capture software
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config gmake autoconf
-USE_DIRS+=	xdg-1.4
 
 SUBST_CLASSES=		xdg
 SUBST_STAGE.xdg=	pre-configure

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2009/01/14 20:57:02 tnn Exp $
+# $NetBSD: Makefile,v 1.52 2009/05/22 19:52:02 tnn Exp $
 
 DISTNAME=	xterm-243
 CATEGORIES=	x11
@@ -13,7 +13,6 @@ COMMENT=	Latest terminal emulator for the X Window System
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		xdg-1.4
 USE_TOOLS+=		tbl
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}

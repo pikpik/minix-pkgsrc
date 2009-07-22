@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/07/14 12:55:59 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2009/02/21 13:22:43 wiz Exp $
 
 DISTNAME=	kadu-0.5.0
 PKGREVISION=	2
@@ -13,7 +13,6 @@ COMMENT=	Chat client for Gadu-Gadu network (Poland)
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/kadu
-USE_DIRS+=		xdg-1.2
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake bash:run

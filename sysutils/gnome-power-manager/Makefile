@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/02/24 15:14:01 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/07/10 19:19:57 hasso Exp $
 #
 
 DISTNAME=	gnome-power-manager-2.24.4
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 BUILD_DEPENDS+=	xmlto-[0-9]*:../../textproc/xmlto
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES

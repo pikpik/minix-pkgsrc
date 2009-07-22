@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/04/12 16:37:25 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/05/19 08:59:24 wiz Exp $
 #
 
 DISTNAME=	mnemosyne-1.2.1
@@ -13,7 +13,6 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=	xdg-1.4
 USE_LANGUAGES=	# none
 
 EGG_NAME=	${DISTNAME:S/^m/M/}

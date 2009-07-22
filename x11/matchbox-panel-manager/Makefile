@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/07/14 12:56:19 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/07/16 21:46:39 zafer Exp $
 #
 
 DISTNAME=	matchbox-panel-manager-0.1
@@ -13,7 +13,6 @@ COMMENT=	Manager panel for the Matchbox desktop
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=	gnome2-1.5
 USE_TOOLS+=	pkg-config
 GNU_CONFIGURE=	yes
 

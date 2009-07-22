@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 2009/03/15 19:15:45 jmcneill Exp $
+# $NetBSD: Makefile,v 1.95 2009/07/09 18:27:45 drochner Exp $
 #
 
 DISTNAME=	epiphany-2.26.3
@@ -13,7 +13,6 @@ COMMENT=	The web browser for the GNOME Desktop
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES

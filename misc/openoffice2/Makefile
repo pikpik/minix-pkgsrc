@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2009/04/16 21:42:43 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2009/06/14 22:58:05 joerg Exp $
 #
 
 OO_VER=			2.4.2
@@ -37,7 +37,6 @@ CONFIGURE_DIRS=		config_office
 GCC_REQD+=		3.4
 USE_LANGUAGES+=		c c++
 
-USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		bash gmake imake perl pkg-config tar
 PTHREAD_OPTS+=		require
 PTHREAD_AUTO_VARS=	yes

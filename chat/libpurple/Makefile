@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/04/29 10:55:02 jmmv Exp $
+# $NetBSD: Makefile,v 1.13 2008/05/17 22:56:17 tnn Exp $
 #
 
 PKGNAME=	libpurple-${PIDGIN_VERSION}
@@ -12,7 +12,6 @@ CONFIGURE_ENV+=		GCONF_SCHEMA_FILE_DIR=${PREFIX}/share/gconf/schemas/
 MAKE_ENV+=		GCONF_SCHEMA_FILE_DIR=${PREFIX}/share/gconf/schemas/
 
 USE_TOOLS+=		msgfmt intltool
-## #USE_DIRS+=		xdg-1.2
 
 GCONF_SCHEMAS+=	purple.schemas
 

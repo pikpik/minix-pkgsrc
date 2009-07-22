@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2009/01/04 18:01:01 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2009/03/08 15:56:47 wiz Exp $
 #
 
 DISTNAME=	drivel-2.0.3
@@ -14,7 +14,6 @@ COMMENT=	LiveJournal client for the GNOME Desktop
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/07/14 12:56:19 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/07/16 21:48:49 zafer Exp $
 #
 
 DISTNAME=	matchbox-themes-extra-0.3
@@ -13,7 +13,6 @@ COMMENT=	Collection of themes for Matchbox
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=	gnome2-1.5 xdg-1.4
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 

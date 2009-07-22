@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2008/10/16 13:25:02 drochner Exp $
+# $NetBSD: Makefile,v 1.68 2009/03/07 13:28:36 wiz Exp $
 #
 
 DISTNAME=	libbonoboui-2.24.1
@@ -13,7 +13,6 @@ COMMENT=	GNOME2 Object activation framework library (graphical version)
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes

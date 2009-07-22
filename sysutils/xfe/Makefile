@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2007/09/12 20:44:20 xtraeme Exp $
+# $NetBSD: Makefile,v 1.30 2008/07/14 12:56:13 joerg Exp $
 
 DISTNAME=	xfe-1.04
 CATEGORIES=	sysutils
@@ -10,7 +10,6 @@ COMMENT=	Fast MS-Explorer like filemanager for X
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/09/21 16:53:42 veego Exp $
+# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:38 joerg Exp $
 
 DISTNAME=	alevt-1.6.1
 CATEGORIES=	multimedia
@@ -16,7 +16,6 @@ ONLY_FOR_PLATFORM=	NetBSD-1.4[Y-Z]-* NetBSD-1.4Z[A-Z]-* \
 			NetBSD-1.5_ALPHA-* NetBSD-1.[56]*-* \
 			NetBSD-[2-9]*-* DragonFly-*-*
 
-USE_DIRS+=	xdg-1.1
 USE_X11BASE=	YES
 USE_TOOLS+=	gmake
 

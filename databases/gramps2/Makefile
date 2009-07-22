@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2008/09/06 20:54:32 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2008/09/18 16:56:55 drochner Exp $
 #
 
 DISTNAME=		gramps-2.2.10
@@ -12,7 +12,6 @@ COMMENT=	Genealogical Research and Analysis Management Programming System
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		msgfmt pkg-config intltool msgconv
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

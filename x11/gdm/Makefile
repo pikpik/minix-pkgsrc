@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.150 2009/03/02 15:13:10 jmcneill Exp $
+# $NetBSD: Makefile,v 1.151 2009/04/07 11:40:20 drochner Exp $
 #
 
 DISTNAME=	gdm-2.20.10
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	zenity>=2.16.0:../../x11/zenity
 
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

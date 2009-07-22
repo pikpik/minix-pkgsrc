@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/06/09 07:34:01 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2009/03/03 15:19:26 jmmv Exp $
 
 DISTNAME=	glossaries
 PKGNAME=	tex-${DISTNAME}-1.02
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+=	tex-xkeyval>=2.5f:../../print/tex-xkeyval
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
-USE_DIRS+=	texmf-1.4
 USE_TOOLS+=	perl:run
 
 REPLACE_PERL=	scripts/makeglossaries

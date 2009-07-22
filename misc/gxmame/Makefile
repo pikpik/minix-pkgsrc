@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/07/07 22:03:50 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2008/07/14 12:56:08 joerg Exp $
 #
 
 DISTNAME=	gxmame-0.35beta1
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+=		xmame>=0.87:../../emulators/xmame
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		intltool gmake msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 

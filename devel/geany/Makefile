@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/11/24 09:37:15 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2009/07/18 19:37:42 wiz Exp $
 
 DISTNAME=	geany-0.17
 CATEGORIES=	devel
@@ -15,7 +15,6 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		pkg-config msgfmt gmake perl:run intltool
 USE_LANGUAGES=		c c++
-USE_DIRS+=		xdg-1.1
 
 CONFIGURE_ARGS+=	--enable-plugins
 CONFIGURE_ARGS+=	--enable-vte

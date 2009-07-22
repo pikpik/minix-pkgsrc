@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2008/10/27 00:00:56 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2009/03/22 17:06:53 wiz Exp $
 #
 
 DISTNAME=	evolution-webcal-2.26.0
@@ -13,7 +13,6 @@ COMMENT=	GNOME URL handler for web-published iCal calendar files
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES
 

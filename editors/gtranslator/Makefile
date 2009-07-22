@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/01/04 18:00:59 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2009/03/08 15:56:45 wiz Exp $
 
 DISTNAME=	gtranslator-1.1.7
 PKGREVISION=	4
@@ -11,7 +11,6 @@ COMMENT=	Gettext po file editor for the GNOME2 desktop environment
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

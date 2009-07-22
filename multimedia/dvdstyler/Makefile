@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/06/12 02:14:38 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/09/22 20:21:03 joerg Exp $
 #
 
 DISTNAME=	DVDStyler-1.5.1
@@ -15,7 +15,6 @@ DEPENDS+=	dvdauthor>=0.6.10:../../multimedia/dvdauthor
 DEPENDS+=	dvd+rw-tools-[0-9]*:../../sysutils/dvd+rw-tools
 DEPENDS+=	mpgtx-[0-9]*:../../graphics/mpgtx
 
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config msgfmt

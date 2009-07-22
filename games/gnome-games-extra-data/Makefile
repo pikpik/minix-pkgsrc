@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2009/02/09 22:56:24 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/15 19:31:19 jmcneill Exp $
 
 DISTNAME=	gnome-games-extra-data-2.26.0
 CATEGORIES=	games gnome
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	GNOME2 games collection - extra data files
 
-USE_DIRS+=	gnome2-1.5
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 

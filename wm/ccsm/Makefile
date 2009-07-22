@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/06/22 08:41:36 hira Exp $
+# $NetBSD: Makefile,v 1.6 2009/02/09 21:55:23 joerg Exp $
 #
 
 DISTNAME=		ccsm-0.6.0
@@ -13,7 +13,6 @@ COMMENT=		CompizConfig Settings Manager
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config gmake msgfmt
-USE_DIRS+=		xdg-1.1
 
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes

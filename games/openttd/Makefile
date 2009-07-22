@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2008/12/14 01:31:01 ahoka Exp $
+# $NetBSD: Makefile,v 1.31 2009/03/22 16:39:14 hasso Exp $
 
 DISTNAME=	openttd-0.6.3-source
 PKGNAME=	${DISTNAME:S/-source//}
@@ -12,7 +12,6 @@ EXTRACT_SUFX=	.tar.bz2
 
 HAS_CONFIGURE=		yes
 USE_LANGUAGES+=		c c++
-USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		gmake pkg-config
 
 # Setting the below results in binaries looking in ${DESTDIR} for datafiles

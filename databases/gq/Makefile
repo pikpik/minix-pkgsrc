@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2008/03/03 03:50:17 obache Exp $
+# $NetBSD: Makefile,v 1.36 2008/06/01 15:34:02 tnn Exp $
 
 DISTNAME=	gq-1.2.3
 PKGREVISION=	2
@@ -11,7 +11,6 @@ COMMENT=	GTK-based LDAP client
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake perl pkg-config intltool
 GNU_CONFIGURE=		yes

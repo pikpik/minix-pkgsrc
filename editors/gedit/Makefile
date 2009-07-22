@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2009/05/20 10:01:03 wiz Exp $
+# $NetBSD: Makefile,v 1.96 2009/07/09 18:23:26 drochner Exp $
 #
 
 DISTNAME=		gedit-2.26.3
@@ -13,7 +13,6 @@ LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES

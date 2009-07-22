@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.180 2009/07/09 17:37:27 drochner Exp $
+# $NetBSD: Makefile,v 1.181 2009/07/18 19:19:55 wiz Exp $
 
 DISTNAME=		gtk+-2.16.5
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
@@ -19,7 +19,6 @@ CONFLICTS+=		gail-[0-9]*
 
 SUPERSEDES=		gail-[0-9]*
 
-USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt perl pkg-config
 USE_LANGUAGES=		c c++

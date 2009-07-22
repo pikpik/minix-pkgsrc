@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2008/06/12 02:14:14 joerg Exp $
+# $NetBSD: Makefile,v 1.61 2009/02/24 16:16:24 wiz Exp $
 #
 
 DISTNAME=	easytag-2.1
@@ -14,7 +14,6 @@ COMMENT=	GTK+ tag editor for MP3, Ogg Vorbis files, and others
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

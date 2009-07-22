@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.27 2009/04/17 16:10:21 drochner Exp $
+# $NetBSD: Makefile.common,v 1.28 2009/05/19 13:45:16 wiz Exp $
 #
 # used by print/evince/Makefile
 # used by print/evince-nautilus/Makefile
@@ -16,7 +16,6 @@ PATCHDIR=		${.CURDIR}/../evince/patches
 DISTINFO_FILE=		${.CURDIR}/../evince/distinfo
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

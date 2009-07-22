@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/07/29 19:49:12 tnn Exp $
+# $NetBSD: Makefile,v 1.25 2008/11/02 21:50:21 snj Exp $
 
 DISTNAME=		obconf-2.0.3
 CATEGORIES=		wm
@@ -13,7 +13,6 @@ COMMENT=		Tool for configuring the Openbox window manager
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
-USE_DIRS+=		xdg-1.1
 GNU_CONFIGURE=		YES
 
 .include "../../databases/shared-mime-info/mimedb.mk"

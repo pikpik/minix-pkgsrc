@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2009/03/18 02:14:42 jmcneill Exp $
+# $NetBSD: Makefile,v 1.62 2009/03/22 19:01:39 wiz Exp $
 #
 
 DISTNAME=		gok-2.26.0
@@ -12,7 +12,6 @@ COMMENT=		GNOME On-Screen Keyboard
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake msgfmt pkg-config intltool
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

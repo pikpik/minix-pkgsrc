@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/12/30 19:38:07 hasso Exp $
+# $NetBSD: Makefile,v 1.3 2009/05/31 16:07:19 abs Exp $
 #
 
 DISTNAME=	pavucontrol-0.9.7
@@ -12,7 +12,6 @@ COMMENT=	Volume control tool ("mixer") for the PulseAudio sound server
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	pkg-config gmake intltool perl msgfmt
-USE_DIRS+=	gnome2-1.5
 
 CONFIGURE_ARGS+=	--disable-lynx
 

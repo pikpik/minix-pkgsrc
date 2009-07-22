@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/07/14 12:56:10 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2008/10/29 02:05:47 wiz Exp $
 #
 
 DISTNAME=	logjam-4.5.3
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-xmms
-USE_DIRS=		xdg-1.4
 USE_LIBTOOL=		yes
 USE_TOOLS+=		perl pkg-config intltool msgfmt
 

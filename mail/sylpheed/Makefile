@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.114 2008/12/23 22:45:00 ahoka Exp $
+# $NetBSD: Makefile,v 1.115 2009/05/02 16:21:44 reed Exp $
 
 DISTNAME=	sylpheed-2.6.0
 CATEGORIES=	mail news x11
@@ -14,7 +14,6 @@ CONFLICTS=		sylpheed-claws-[0-9]*
 
 PREV_PKGPATH=		mail/sylpheed-devel
 
-USE_DIRS+=		xdg-1.4
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake msgfmt pkg-config

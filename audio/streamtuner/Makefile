@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2009/01/04 18:00:58 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2009/03/08 15:56:43 wiz Exp $
 #
 
 DISTNAME=	streamtuner-0.99.99
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	hicolor-icon-theme-[0-9]*:../../graphics/hicolor-icon-theme
 
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake msgfmt pkg-config intltool
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

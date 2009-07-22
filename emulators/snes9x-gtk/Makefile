@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/04/25 15:15:20 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2009/05/04 01:37:43 hasso Exp $
 #
 
 DISTNAME=	snes9x-1.51-src-gtk-70
@@ -16,7 +16,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/snes9x-1.51-src/gtk
 GNU_CONFIGURE=	yes
-USE_DIRS=	xdg-1.4
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	intltool pkg-config msgfmt
 

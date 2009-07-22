@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2007/01/26 04:25:46 markd Exp $
+# $NetBSD: options.mk,v 1.3 2007/09/25 10:25:19 hira Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.celestia
 PKG_SUPPORTED_OPTIONS=		# empty
@@ -30,7 +30,6 @@ PLIST_SRC=		${PKGDIR}/PLIST.gtk
 .if !empty(PKG_OPTIONS:Mkde)
 CONFIGURE_ARGS+=	--with-kde
 PLIST_SRC=		${PKGDIR}/PLIST.kde
-USE_DIRS+=		kde3-1.0
 .  include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .  include "../../x11/kdelibs3/buildlink3.mk"
 .endif

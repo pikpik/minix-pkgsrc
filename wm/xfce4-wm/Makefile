@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/07/14 12:56:14 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2008/12/18 14:12:24 hira Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -10,7 +10,6 @@ PKGREVISION=	1
 CATEGORIES=	wm
 COMMENT=	Xfce window manager
 
-USE_DIRS+=	xdg-1.4
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"

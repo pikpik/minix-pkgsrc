@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2009/03/02 11:36:33 tron Exp $
+# $NetBSD: Makefile,v 1.39 2009/03/18 13:30:45 jmcneill Exp $
 
 DISTNAME=		hal-0.5.11
 PKGREVISION=		23
@@ -14,7 +14,6 @@ BUILD_DEFS+=		VARBASE PKG_SYSCONFBASE
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		xdg-1.4
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_TOOLS+=		autoconf automake autoreconf

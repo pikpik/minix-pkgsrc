@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2008/12/21 11:00:37 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2009/07/03 10:50:33 drochner Exp $
 
 DISTNAME=	vino-2.24.1
 PKGREVISION=	2
@@ -12,7 +12,6 @@ COMMENT=	VNC server for GNOME
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config

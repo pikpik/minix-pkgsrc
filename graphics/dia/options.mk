@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2007/02/22 19:01:19 wiz Exp $
+# $NetBSD: options.mk,v 1.6 2008/04/12 22:43:01 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dia
 #PKG_SUPPORTED_OPTIONS=	gnome cairo
@@ -10,7 +10,6 @@ PKG_SUGGESTED_OPTIONS=	gnome
 PLIST_VARS+=		cairo gnome
 
 .if !empty(PKG_OPTIONS:Mgnome)
-USE_DIRS+=		gnome2-1.5
 CONFIGURE_ARGS+=	--enable-gnome
 .  include "../../devel/libgnome/buildlink3.mk"
 .  include "../../devel/libgnomeui/buildlink3.mk"

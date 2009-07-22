@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/03/06 14:53:52 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2008/06/20 01:09:27 joerg Exp $
 #
 
 DISTNAME=	gmencoder-0.1.0
@@ -17,7 +17,6 @@ DEPENDS+=	mencoder>=0.90:../../multimedia/mencoder
 DEPENDS+=	mplayer>=0.90:../../multimedia/mplayer
 
 GNU_CONFIGURE=		yes
-USE_DIRS+=		gnome2-1.5
 USE_TOOLS+=		gmake msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/10/31 12:46:27 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2009/03/17 23:54:24 jmcneill Exp $
 #
 
 DISTNAME=	swfdec-gnome-2.26.0
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
-USE_DIRS+=		gnome2-1.5 xdg-1.4
 USE_PKGLOCALEDIR=	YES
 
 GCONF_SCHEMAS=		swfdec-thumbnailer.schemas

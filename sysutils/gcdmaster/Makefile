@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2008/03/06 14:53:54 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2008/06/20 01:09:35 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -12,7 +12,6 @@ DEPENDS+=	cdrdao-${CDRDAO_VER}{,nb*}:../../sysutils/cdrdao
 
 WRKSRC=		${WRKDIR}/cdrdao-${CDRDAO_VER}
 
-USE_DIRS+=		xdg-1.1
 CONFIGURE_ARGS+=	--without-posix-threads
 CONFIGURE_ARGS+=	--with-xdao
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 share/applications share/pixmaps

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2008/09/11 04:22:50 dholland Exp $
+# $NetBSD: Makefile,v 1.53 2008/09/19 19:08:10 joerg Exp $
 
 DISTNAME=	amaya-fullsrc-10.0.1
 PKGNAME=	${DISTNAME:S/-fullsrc//}
@@ -14,7 +14,6 @@ COMMENT=	Web browser/editor from the World Wide Web Consortium (W3C)
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake perl pkg-config
 GNU_CONFIGURE=		yes

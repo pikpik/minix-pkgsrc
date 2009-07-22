@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/10/18 20:23:15 reed Exp $
+# $NetBSD: Makefile,v 1.34 2007/02/02 15:23:46 joerg Exp $
 
 DISTNAME=		wdm-1.28
 CATEGORIES=		x11 windowmaker
@@ -9,7 +9,6 @@ HOMEPAGE=		http://voins.program.ru/wdm/
 COMMENT=		WINGs display manager
 
 USE_TOOLS+=		msgfmt
-USE_DIRS+=		xdg-1.1
 USE_X11BASE=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES

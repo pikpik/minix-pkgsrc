@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/05/28 14:07:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.2 2009/03/03 15:05:34 jmmv Exp $
 
 DISTNAME=	algorithm2e
 PKGNAME=	tex-${DISTNAME}-3.9
@@ -13,7 +13,6 @@ COMMENT=	Environment for writing algorithms
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
-USE_DIRS+=	texmf-1.4
 
 .include "../../print/teTeX/module.mk"
 

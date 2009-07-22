@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/03/17 16:04:07 jmcneill Exp $
+# $NetBSD: Makefile,v 1.15 2009/05/26 18:47:40 drochner Exp $
 #
 
 DISTNAME=	gnome-system-monitor-2.26.2
@@ -12,7 +12,6 @@ COMMENT=	GNOME 2 system monitor program
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		gnome2-1.5
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

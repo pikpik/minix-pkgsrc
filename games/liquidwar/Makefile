@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/07/14 12:56:04 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2009/06/09 03:04:00 dsainty Exp $
 #
 
 DISTNAME=	liquidwar-5.6.4
@@ -11,7 +11,6 @@ COMMENT=	Unique multiplayer wargame
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=	gnome2-1.5
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	YES
 

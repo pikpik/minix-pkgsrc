@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/11/15 18:30:22 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2008/11/23 02:50:49 jmcneill Exp $
 #
 
 DISTNAME=		liboobs-2.22.0
@@ -22,7 +22,6 @@ PKG_SUGGESTED_OPTIONS+=	hal
 .endif
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/01/18 05:06:24 tnn Exp $
+# $NetBSD: Makefile,v 1.9 2008/07/14 12:55:59 joerg Exp $
 #
 
 DISTNAME=		gtmess-0.91
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		tk-[0-9]*:../../x11/tk
 
-USE_DIRS+=		xdg-1.1
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 

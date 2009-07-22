@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/11/19 03:39:57 hasso Exp $
+# $NetBSD: Makefile,v 1.6 2009/02/09 22:56:28 joerg Exp $
 #
 
 DISTNAME=	driconf-0.9.1
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+= 	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 DEPENDS+= 	xdriinfo>=1.0.2:../../x11/xdriinfo
 
-USE_DIRS+=		xdg-1.4
 USE_PKGLOCALEDIR= 	yes
 USE_TOOLS+=		msgfmt msgmerge xgettext
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/06/20 01:09:28 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/02/21 14:47:58 wiz Exp $
 #
 
 DISTNAME=		subtitleeditor-0.30.0
@@ -11,7 +11,6 @@ COMMENT=		GTK+2 tool to edit movie subtitles
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		xdg-1.4
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake intltool pkg-config msgfmt

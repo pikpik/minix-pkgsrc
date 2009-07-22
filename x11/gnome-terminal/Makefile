@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/06/11 08:10:26 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2009/07/09 18:42:35 drochner Exp $
 #
 
 DISTNAME=		gnome-terminal-2.26.3.1
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=		gnome-core-[0-9]* gnome2-terminal-[0-9]*
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES

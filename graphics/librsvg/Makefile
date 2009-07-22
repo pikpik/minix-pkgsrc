@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2008/10/16 13:55:53 drochner Exp $
+# $NetBSD: Makefile,v 1.36 2009/03/17 21:19:50 jmcneill Exp $
 
 DISTNAME=	librsvg-2.26.0
 CATEGORIES=	graphics gnome
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS+=	librsvg2-gtk-[0-9]* librsvg2-[0-9]*
 MAKE_JOBS_SAFE=	NO
 
-USE_DIRS+=		xdg-1.1
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES+=		c c++

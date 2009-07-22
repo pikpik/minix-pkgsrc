@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/04/09 21:45:51 minskim Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/06/15 21:49:07 dmcmahill Exp $
 
 DISTNAME=	cooking
 PKGNAME=	tex-${DISTNAME}-0.9b
@@ -12,7 +12,6 @@ COMMENT=	Typeset recipes
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
-USE_DIRS+=	texmf-1.0
 
 .include "../../print/teTeX/module.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/02/05 00:53:09 jmcneill Exp $
+# $NetBSD: Makefile,v 1.30 2009/05/19 08:59:28 wiz Exp $
 #
 
 DISTNAME=		skype_static-1.4.0.118-oss
@@ -26,7 +26,6 @@ EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base compat fontconfig freetype2 glx \
 			libsigc++2 resmgr x11
 
-USE_DIRS+=		xdg-1.1
 USE_TOOLS+=		pax
 WRKSRC=			${WRKDIR}/${DISTNAME}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2008/12/24 03:05:16 jmcneill Exp $
+# $NetBSD: Makefile,v 1.66 2009/03/17 09:10:03 jmcneill Exp $
 #
 
 DISTNAME=		bug-buddy-2.26.0
@@ -13,7 +13,6 @@ COMMENT=		Graphical GNOME2 bug reporting tool
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_TOOLS+=		autoconf

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.150 2008/12/16 13:27:30 jmcneill Exp $
+# $NetBSD: Makefile,v 1.151 2009/04/20 18:55:42 adam Exp $
 
 DISTNAME=	wine-1.0.1
 PKGREVISION=	2
@@ -19,7 +19,6 @@ ONLY_FOR_PLATFORM+=	*-*-x86_64
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_DIRS+=		xdg-1.1
 USE_LANGUAGES=		c
 USE_LIBTOOL=		yes
 USE_NCURSES=		yes

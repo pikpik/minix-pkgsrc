@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/11/23 13:38:41 jmcneill Exp $
+# $NetBSD: Makefile,v 1.4 2009/02/24 15:24:12 wiz Exp $
 #
 
 DISTNAME=	gnome-volume-manager-2.24.1
@@ -15,7 +15,6 @@ DEPENDS+=	gnome-mount>=0.8:../../sysutils/gnome-mount
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2008/04/29 19:13:04 drochner Exp $
+# $NetBSD: Makefile,v 1.36 2008/06/20 01:09:20 joerg Exp $
 #
 
 DISTNAME=		grhino-0.16.0
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		pkg-config msgfmt
 GNU_CONFIGURE=		yes
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	yes
 
 .include "../../devel/libgnomeui/buildlink3.mk"

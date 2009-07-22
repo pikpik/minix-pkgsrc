@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/05/02 16:21:45 reed Exp $
+# $NetBSD: Makefile,v 1.20 2009/06/12 17:24:54 ahoka Exp $
 #
 
 DISTNAME=		vlc-${VLC_VER}
@@ -25,7 +25,6 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 PTHREAD_OPTS+=		require
 USE_LANGUAGES=		c c++
-USE_DIRS+=		xdg-1.4
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:44 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/09/06 20:54:34 wiz Exp $
 #
 
 DISTNAME=	grandr_applet-0.4
@@ -16,7 +16,6 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		pkg-config gmake msgfmt
-USE_DIRS+=		xdg-1.1
 
 .include "../../devel/libgnomeui/buildlink3.mk"
 .include "../../x11/gnome-panel/buildlink3.mk"

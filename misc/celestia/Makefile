@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:25 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2009/05/20 00:58:23 wiz Exp $
 
 DISTNAME=	celestia-1.4.1
 PKGREVISION=	7
@@ -14,7 +14,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DISTINFO_FILE=	${.CURDIR}/../../misc/celestia/distinfo
 PATCHDIR=	${.CURDIR}/../../misc/celestia/patches
 
-USE_DIRS+=		xdg-1.3
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

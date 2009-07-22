@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/04/09 22:07:54 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2006/05/13 05:36:52 minskim Exp $
 
 DISTNAME=	memhangul-ucs-1.4.4f
 PKGNAME=	tex-${DISTNAME}
@@ -15,7 +15,6 @@ DEPENDS+=	tex-memoir>=1.618:../../print/tex-memoir
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
-USE_DIRS+=	texmf-1.2
 
 .include "../../print/teTeX/module.mk"
 

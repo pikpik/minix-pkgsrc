@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2009/03/08 15:56:44 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2009/05/20 00:58:08 wiz Exp $
 #
 
 DISTNAME=		gnome-pilot-2.0.17
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 BUILD_DEPENDS+=		gob2-[0-9]*:../../devel/gob2
 
 GNU_CONFIGURE=		YES
-USE_DIRS+=		gnome2-1.5
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config

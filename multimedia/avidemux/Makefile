@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2009/02/24 16:09:39 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2009/05/20 00:58:24 wiz Exp $
 #
 
 DISTNAME=	avidemux_2.4.4
@@ -19,7 +19,6 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt pkg-config
 USE_CMAKE=		yes
-USE_DIRS+=		xdg-1.4
 
 CMAKE_ARGS+=		-DNO_ARTS=1
 

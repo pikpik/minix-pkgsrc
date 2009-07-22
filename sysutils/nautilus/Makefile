@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.99 2009/05/19 20:35:34 wiz Exp $
+# $NetBSD: Makefile,v 1.100 2009/05/19 21:46:23 wiz Exp $
 #
 
 DISTNAME=		nautilus-2.26.3
@@ -15,7 +15,6 @@ COMMENT=		Nautilus file manager for GNOME2
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
-USE_DIRS+=		gnome2-1.6
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
