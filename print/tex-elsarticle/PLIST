@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/bibtex/bst/elsarticle/elsarticle-harv.bst
+share/texmf-dist/bibtex/bst/elsarticle/elsarticle-num-names.bst
+share/texmf-dist/bibtex/bst/elsarticle/elsarticle-num.bst
+share/texmf-dist/tex/latex/elsarticle/elsarticle.cls
