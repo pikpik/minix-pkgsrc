@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/06/17 07:57:49 hasso Exp $
+# $NetBSD: Makefile,v 1.10 2009/06/30 15:33:06 wiz Exp $
 #
 
 PKGNAME=		${PYPKGPREFIX}-qt4-${PYQT_VERSION}
@@ -55,7 +55,6 @@ PLIST_SRC+=		${PKGDIR}/PLIST.X11
 .if ${PYPKGPREFIX} == "py24"
 PLIST_SRC+=		${PKGDIR}/PLIST.elementtree
 .endif
-PLIST_SRC+=		${PKGDIR}/PLIST.common_end
 
 CONFIGURE_ARGS+=	--verbose
 do-configure:
