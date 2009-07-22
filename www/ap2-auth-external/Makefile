@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2007/11/02 15:06:26 sborrill Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2007/12/20 14:59:14 sborrill Exp $
 #
 
 DISTNAME=	mod_auth_external-${DISTVERS}
 PKGREVISION=	2
 PKGNAME=	${APACHE_PKG_PREFIX}-auth-external-${DISTVERS}
 CATEGORIES=	www
-MASTER_SITES=	http://unixpapa.com/software/
+MASTER_SITES=	http://mod-auth-external.googlecode.com/files/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://unixpapa.com/mod_authnz_external/
+HOMEPAGE=	http://code.google.com/p/mod-auth-external/
 COMMENT=	Apache module for external program authentication
 
 PKG_APACHE_ACCEPTED=	apache2 apache22
