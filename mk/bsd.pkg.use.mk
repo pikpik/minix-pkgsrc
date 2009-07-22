@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.use.mk,v 1.46 2008/02/07 12:26:55 tnn Exp $
+#	$NetBSD: bsd.pkg.use.mk,v 1.47 2008/05/16 20:00:09 tnn Exp $
 #
 # Turn USE_* macros into proper depedency logic.  Included near the top of
 # bsd.pkg.mk, after bsd.prefs.mk.
@@ -79,13 +79,6 @@ PKG_FAIL_REASON=	"INSTALLATION_PREFIX can't be used in a pkgviews package"
 .if defined(PKG_USE_KERBEROS)
 CRYPTO?=		uses Kerberos encryption code
 BUILD_DEFS+=		KERBEROS
-.endif
-
-### USE_DIRS
-
-USE_DIRS?=		# empty
-.if !empty(USE_DIRS) && ${PKG_INSTALLATION_TYPE} == "overwrite"
-.  include "dirs.mk"
 .endif
 
 ### USE_LIBTOOL, PKG_[SH]LIBTOOL
