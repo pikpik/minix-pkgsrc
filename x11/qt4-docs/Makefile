@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/03/18 17:34:41 adam Exp $
+# $NetBSD: Makefile,v 1.4 2008/02/04 18:15:34 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -9,7 +9,7 @@ COMMENT=	Documentation for the QT C++ X GUI toolkit
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
-PLIST_SRC=		${WRKDIR}/PLIST ${PKGDIR}/PLIST
+PLIST_SRC=		${WRKDIR}/PLIST
 
 INSTALLATION_DIRS=	${QTPREFIX}
 
