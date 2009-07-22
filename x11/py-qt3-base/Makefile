@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2008/06/12 02:14:57 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2008/10/08 14:23:24 wiz Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -17,7 +17,6 @@ PLIST_SRC+=		${PKGDIR}/PLIST.Darwin
 .else
 PLIST_SRC+=		${PKGDIR}/PLIST.X11
 .endif
-PLIST_SRC+=		${PKGDIR}/PLIST.common_end
 
 SUBST_CLASSES+=		pyversfx
 SUBST_STAGE.pyversfx=	pre-configure
