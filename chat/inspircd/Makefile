@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/10/25 16:12:36 adrianp Exp $
+# $NetBSD: Makefile,v 1.18 2008/12/05 14:04:52 adrianp Exp $
 #
 
 DISTNAME=	InspIRCd-1.1.22
@@ -19,7 +19,6 @@ HAS_CONFIGURE=		yes
 CONFIG_SHELL=		${PERL5}
 USE_LANGUAGES=		c++
 PLIST_SRC=		${WRKDIR}/.PLIST_SRC
-PLIST_SRC+=		${PKGDIR}/PLIST.common_end
 RCD_SCRIPTS+=		inspircd
 PKG_SYSCONFSUBDIR=	inspircd
 
