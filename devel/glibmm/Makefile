@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.33 2008/10/28 19:05:04 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2009/03/17 22:02:36 jmcneill Exp $
 
-DISTNAME=	glibmm-2.20.0
+DISTNAME=	glibmm-2.20.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/glibmm/2.20/}
 EXTRACT_SUFX=	.tar.bz2
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.gtkmm.org/
 COMMENT=	C++ bindings for glib
+LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
