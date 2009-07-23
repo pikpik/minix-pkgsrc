@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2008/08/14 19:17:36 wiz Exp $
+@comment $NetBSD: PLIST,v 1.8 2009/06/14 18:17:26 joerg Exp $
 bin/rapper
 bin/raptor-config
 include/raptor.h
@@ -37,6 +37,7 @@ share/doc/raptor/raptor-section-triples.html
 share/doc/raptor/raptor-section-unicode.html
 share/doc/raptor/raptor-section-uri-factory.html
 share/doc/raptor/raptor-section-uri.html
+share/doc/raptor/raptor-section-world.html
 share/doc/raptor/raptor-section-www.html
 share/doc/raptor/raptor-section-xml-namespace.html
 share/doc/raptor/raptor-section-xml-qname.html
