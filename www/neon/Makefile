@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2009/04/06 12:54:06 markd Exp $
+# $NetBSD: Makefile,v 1.46 2009/07/24 15:18:24 tnn Exp $
 
 DISTNAME=	neon-0.28.5
 CATEGORIES=	www
@@ -20,6 +20,7 @@ CONFIGURE_ARGS+=	--with-ssl=yes
 
 PKGCONFIG_OVERRIDE=	neon.pc.in
 TEST_TARGET=		check
+USE_TOOLS+=		perl
 
 .include "options.mk"
 
