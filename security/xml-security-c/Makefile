@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/05/10 12:23:36 hasso Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/08 19:11:30 hasso Exp $
 
-DISTNAME=		xml-security-c-1.4.0
+DISTNAME=		xml-security-c-1.5.1
 CATEGORIES=		security devel
 MASTER_SITES=		http://santuario.apache.org/dist/c-library/
 
