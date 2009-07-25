@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- cmake/modules/CMakeLists.txt.orig	2009-06-24 07:45:40.000000000 +1200
++++ cmake/modules/CMakeLists.txt
+@@ -1,5 +1,5 @@
+ install(FILES
+   SopranoAddOntology.cmake
+   DESTINATION
+-  share/apps/cmake/modules
++  share/kde/apps/cmake/modules
+ )
