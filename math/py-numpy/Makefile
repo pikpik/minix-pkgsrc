@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2008/12/19 22:09:55 markd Exp $
+# $NetBSD: Makefile,v 1.3 2009/06/26 19:47:14 joerg Exp $
 #
 
-DISTNAME=	numpy-1.1.0
-PKGNAME=	${PYPKGPREFIX}-numpy-1.1.0
+DISTNAME=	numpy-1.3.0
+PKGNAME=	${PYPKGPREFIX}-numpy-1.3.0
 CATEGORIES=	math python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy/}
 
