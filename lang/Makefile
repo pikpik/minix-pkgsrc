@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.270 2009/04/19 14:43:30 wiz Exp $
+# $NetBSD: Makefile,v 1.271 2009/07/17 04:21:27 rillig Exp $
 #
 
 COMMENT=	Programming languages
 
 SUBDIR+=	Cg-compiler
+SUBDIR+=	LuaJIT
 SUBDIR+=	STk
 SUBDIR+=	SmartEiffel
 SUBDIR+=	a60
