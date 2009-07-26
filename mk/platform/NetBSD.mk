@@ -1,4 +1,4 @@
-# $NetBSD: NetBSD.mk,v 1.30 2008/04/03 14:07:51 joerg Exp $
+# $NetBSD: NetBSD.mk,v 1.31 2008/08/10 17:40:00 joerg Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -141,6 +141,8 @@ FFLAGS+=	-mieee
 .if exists(/usr/include/sys/event.h)
 PKG_HAVE_KQUEUE=	# defined
 .endif
+
+_OPSYS_CAN_CHECK_SHLIBS=	yes # use readelf in check/bsd.check-vars.mk
 
 # check for maximum command line length and set it in configure's environment,
 # to avoid a test required by the libtool script that takes forever.

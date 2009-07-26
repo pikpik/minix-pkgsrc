@@ -1,4 +1,4 @@
-# $NetBSD: OSF1.mk,v 1.25 2008/09/22 17:11:02 ahoka Exp $
+# $NetBSD: FreeMiNT.mk,v 1.1 2009/03/05 00:02:44 abs Exp $
 #
 # Variable definitions for the FreeMiNT operating system.
 
@@ -37,3 +37,5 @@ _PATCH_BACKUP_ARG?=	-b -V simple -z	# switch to patch(1) for backup suffix
 
 DEFAULT_SERIAL_DEVICE?=	/dev/modem1
 SERIAL_DEVICES?=	/dev/modem1 
+
+_OPSYS_CAN_CHECK_SHLIBS=	no # can't use readelf in check/bsd.check-vars.mk

@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.32 2008/01/12 22:44:10 joerg Exp $
+# $NetBSD: Linux.mk,v 1.33 2008/03/04 06:45:34 jlam Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -75,6 +75,8 @@ _OPSYS_NO_WHOLE_ARCHIVE_FLAG=	-Wl,--no-whole-archive
 
 _STRIPFLAG_CC?=		${_INSTALL_UNSTRIPPED:D:U-s}	# cc(1) option to strip
 _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U-s}	# install(1) option to strip
+
+_OPSYS_CAN_CHECK_SHLIBS=	no # can't use readelf in check/bsd.check-vars.mk
 
 # check for maximum command line length and set it in configure's environment,
 # to avoid a test required by the libtool script that takes forever.
