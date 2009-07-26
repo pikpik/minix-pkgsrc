@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.474 2009/07/20 14:14:19 ahoka Exp $
+# $NetBSD: Makefile,v 1.475 2009/07/23 15:31:20 drochner Exp $
 #
 
 COMMENT=	System utilities
@@ -35,6 +35,7 @@ SUBDIR+=	bkpupsd
 SUBDIR+=	boxbackup-client
 SUBDIR+=	boxbackup-server
 SUBDIR+=	brasero
+SUBDIR+=	brasero-nautilus
 SUBDIR+=	bsign
 SUBDIR+=	btpin-qt
 SUBDIR+=	bubblemon
