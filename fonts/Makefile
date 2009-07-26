@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.139 2009/07/15 23:55:12 minskim Exp $
+# $NetBSD: Makefile,v 1.140 2009/07/21 07:27:05 minskim Exp $
 #
 
 COMMENT=	Fonts
@@ -85,6 +85,7 @@ SUBDIR+=	geoslab703-ttf
 SUBDIR+=	ghostscript-cidfonts
 SUBDIR+=	ghostscript-cmaps
 SUBDIR+=	ghostscript-fonts
+SUBDIR+=	gsftopkk
 SUBDIR+=	gucharmap
 SUBDIR+=	inconsolata-ttf
 SUBDIR+=	intlfonts
