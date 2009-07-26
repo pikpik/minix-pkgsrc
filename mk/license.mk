@@ -1,4 +1,4 @@
-# $NetBSD: license.mk,v 1.27 2009/07/15 06:12:45 ver Exp $
+# $NetBSD: license.mk,v 1.28 2009/07/15 09:31:20 joerg Exp $
 #
 # This file handles everything about the LICENSE variable. It is
 # included automatically by bsd.pkg.mk.
@@ -109,7 +109,7 @@ DEFAULT_ACCEPTABLE_LICENSES= \
 	cddl-1.0 \
 	cpl-1.0 \
 	open-font-license \
-	mpl-1.1 \
+	mpl-1.0 mpl-1.1 \
 	zpl
 
 ##### Variant spellings
