@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- dvi2xx.h.orig	2008-02-17 04:58:17.000000000 -0800
++++ dvi2xx.h
+@@ -19,7 +19,6 @@
+ #include <kpathsea/tex-glyph.h>
+ #include <kpathsea/tex-hush.h>
+ #include <kpathsea/tex-make.h>
+-#include <kpathsea/c-vararg.h>
+ #include <c-auto.h>
+ #else
+ #include <string.h>
