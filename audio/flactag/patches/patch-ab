@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- CoverArt.h.orig	2008-12-16 12:20:56.000000000 +0100
++++ CoverArt.h
+@@ -31,8 +31,10 @@
+ 
+ #include <string>
+ 
++extern "C" {
+ #include <jpeglib.h>
+ #include <jerror.h>
++}
+ 
+ class CCoverArt
+ {
