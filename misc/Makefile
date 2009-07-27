@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.326 2009/05/09 23:40:09 seb Exp $
+# $NetBSD: Makefile,v 1.327 2009/07/22 09:05:23 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -124,6 +124,7 @@ SUBDIR+=	m17n-contrib
 SUBDIR+=	m17n-db
 SUBDIR+=	m17n-docs
 SUBDIR+=	mirmon
+SUBDIR+=	mkcue
 SUBDIR+=	mmv
 SUBDIR+=	mnemosyne
 SUBDIR+=	molden
