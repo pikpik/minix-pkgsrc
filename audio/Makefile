@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.413 2009/07/23 16:07:44 drochner Exp $
+# $NetBSD: Makefile,v 1.414 2009/07/27 13:57:14 drochner Exp $
 #
 
 COMMENT=	Audio tools
@@ -29,6 +29,7 @@ SUBDIR+=	amarok
 SUBDIR+=	amp
 SUBDIR+=	ampache
 SUBDIR+=	applerecords
+SUBDIR+=	ario
 SUBDIR+=	arts
 SUBDIR+=	audacious
 SUBDIR+=	audacious-plugins
