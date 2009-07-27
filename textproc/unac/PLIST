@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/unaccent
+include/unac.h
+lib/libunac.la
+lib/pkgconfig/unac.pc
+man/man1/unaccent.1
+man/man3/unac.3
