@@ -1,0 +1,12 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	unac
+
+.if !defined(UNAC_BUILDLINK3_MK)
+UNAC_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.unac+=	unac>=1.7.0
+BUILDLINK_PKGSRCDIR.unac?=	../../textproc/unac
+.endif	# UNAC_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-unac
