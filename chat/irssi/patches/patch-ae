@@ -1,4 +1,6 @@
-$NetBSD: patch-ae,v 1.4 2005/07/17 14:32:46 dillo Exp $
+$NetBSD: patch-ae,v 1.5 2006/03/04 06:34:13 wiz Exp $
+
+Accept ENOTCONN as indicating socket is not ready for write.
 
 --- src/core/network.c.orig	2005-11-19 23:45:08.000000000 +0100
 +++ src/core/network.c

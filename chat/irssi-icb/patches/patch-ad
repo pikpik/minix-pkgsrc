@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.1 2008/07/22 09:56:17 hubertf Exp $
+
+Clarify the README.
 
 --- README.orig	2008-07-22 11:42:10.000000000 +0200
 +++ README	2008-07-22 11:46:02.000000000 +0200
