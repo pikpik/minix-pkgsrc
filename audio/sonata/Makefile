@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/05/26 18:24:58 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2009/07/22 09:01:20 wiz Exp $
 #
 
 DISTNAME=	sonata-1.6.2
@@ -11,8 +11,6 @@ HOMEPAGE=	http://sonata.berlios.de/
 COMMENT=	Elegant GTK2 client for the Music Player Daemon
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-DEPENDS+=	musicpd>0:../../audio/musicpd
 
 PYTHON_VERSIONS_ACCEPTED=	25 24
 PY_PATCHPLIST=	yes
