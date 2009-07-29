@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/05/19 08:59:17 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/07 10:07:45 drochner Exp $
 #
 
 DISTNAME=		exiv2-0.18.2
@@ -12,6 +12,7 @@ COMMENT=		Image metadata manipulation
 LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+INSTALLATION_DIRS=	bin
 
 USE_LANGUAGES=		c c++
 GCC_REQD+=		3.3
