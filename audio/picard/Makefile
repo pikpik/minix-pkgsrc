@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/07/18 14:58:17 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2009/07/22 09:01:19 wiz Exp $
 #
 
 DISTNAME=	picard-0.11
@@ -14,7 +14,7 @@ USE_LANGUAGES=	c c++
 PYDISTUTILSPKG=	yes
 PKG_DESTDIR_SUPPORT= user-destdir
 
-USE_TOOLS+=	msgfmt
+USE_TOOLS+=	msgfmt pkg-config
 
 do-configure:
 	(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PYTHONBIN} setup.py config)
