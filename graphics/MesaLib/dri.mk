@@ -1,4 +1,4 @@
-# $NetBSD: dri.mk,v 1.1 2008/04/24 07:40:24 bjs Exp $
+# $NetBSD: dri.mk,v 1.2 2009/06/05 11:10:35 wiz Exp $
 #
 # Currently, this is for convenience only.
 #
@@ -10,6 +10,7 @@ DRI_MK=		# defined
 .  include "../../x11/glproto/buildlink3.mk"
 .  include "../../x11/libXdamage/buildlink3.mk"
 .  include "../../x11/libXfixes/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libdrm+= libdrm>=2.4.9
 .  include "../../x11/libdrm/buildlink3.mk"
 .  include "../../x11/libXxf86vm/buildlink3.mk"
 .  include "../../x11/xf86driproto/buildlink3.mk"
