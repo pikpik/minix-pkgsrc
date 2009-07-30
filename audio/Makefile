@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.414 2009/07/27 13:57:14 drochner Exp $
+# $NetBSD: Makefile,v 1.415 2009/07/27 19:55:11 drochner Exp $
 #
 
 COMMENT=	Audio tools
@@ -74,6 +74,7 @@ SUBDIR+=	emixer
 SUBDIR+=	esound
 SUBDIR+=	espeak
 SUBDIR+=	exaile
+SUBDIR+=	ezstream
 SUBDIR+=	faac
 SUBDIR+=	faad2
 SUBDIR+=	festival
