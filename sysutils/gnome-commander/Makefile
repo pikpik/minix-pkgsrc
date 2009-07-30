@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/23 15:29:22 drochner Exp $
 #
 
 DISTNAME=		gnome-commander-1.2.8
@@ -14,7 +14,7 @@ USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake intltool pkg-config perl
+USE_TOOLS+=		gmake intltool msgfmt pkg-config perl
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 #Problem with heimdal, on which this package depends via another packages.
