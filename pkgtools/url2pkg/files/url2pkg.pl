@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: url2pkg.pl,v 1.12 2009/04/22 04:54:48 schmonz Exp $
+# $NetBSD: url2pkg.pl,v 1.13 2009/05/19 15:17:27 wiz Exp $
 #
 
 use strict;
@@ -284,8 +284,11 @@ sub generate_initial_package($) {
 	print_section(*MF, [
 		["MAINTAINER", get_maintainer()],
 		["HOMEPAGE", $homepage],
-		["COMMENT", "SHORT_DESCRIPTION_OF_THE_PACKAGE"],
-		["LICENSE", "LICENSE"],
+		["COMMENT", "TODO: Short description of the package"],
+		["#LICENSE", "# TODO: (see mk/license.mk)"],
+	]);
+	print_section(*MF, [
+		["PKG_DESTDIR_SUPPORT", "user-destdir"],
 	]);
 	print MF ("# url2pkg-marker (please do not remove this line.)\n");
 	print MF (".include \"../../mk/bsd.pkg.mk\"\n");
