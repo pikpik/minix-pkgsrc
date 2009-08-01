@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2007/05/09 02:42:25 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.17 2009/07/08 15:35:48 joerg Exp $
 #
 
 DISTNAME=	electric-7.00
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_GNU:=electric/}
 
