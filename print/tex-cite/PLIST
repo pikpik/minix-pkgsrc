@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/cite/chapterbib.sty
+share/texmf-dist/tex/latex/cite/cite.sty
+share/texmf-dist/tex/latex/cite/drftcite.sty
+share/texmf-dist/tex/latex/cite/overcite.sty
