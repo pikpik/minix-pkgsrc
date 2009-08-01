@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2009/04/20 22:35:17 schmonz Exp $
+# $NetBSD: Makefile,v 1.4 2009/07/07 16:31:42 sno Exp $
 #
 
-DISTNAME=	Search-Xapian-1.0.13.1
+DISTNAME=	Search-Xapian-1.0.14.0
 PKGNAME=	${DISTNAME:S/^/p5-/}
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Search/}
