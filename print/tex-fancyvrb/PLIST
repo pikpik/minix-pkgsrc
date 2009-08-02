@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+share/texmf-dist/tex/latex/fancyvrb/fvrb-ex.sty
+share/texmf-dist/tex/latex/fancyvrb/hbaw.sty
+share/texmf-dist/tex/latex/fancyvrb/hcolor.sty
