@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2009/07/22 12:23:37 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2009/08/02 10:52:06 drochner Exp $
 #
 
 DISTNAME=	libgsf-1.14.15
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
-COMMENT=	GNOME2 structured file library
+COMMENT=	GNOME2 structured file library (GNOME support)
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 
 CONFLICTS+=	libgsf<1.14.15nb1
