@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/fancyvrb/README
+share/texmf-dist/doc/latex/fancyvrb/README.contrib
+share/texmf-dist/doc/latex/fancyvrb/artistic2.txt
+share/texmf-dist/doc/latex/fancyvrb/fancyvrb.pdf
+share/texmf-dist/doc/latex/fancyvrb/t-fvrbex.tex
