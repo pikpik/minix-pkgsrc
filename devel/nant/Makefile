@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/07 03:01:10 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2009/03/25 22:37:12 he Exp $
 #
 
 DISTNAME=	nant-0.86-beta1-src
@@ -14,6 +14,8 @@ COMMENT=	Free .NET build tool similar to Apache Ant
 WRKSRC=		${WRKDIR}/nant-0.86-beta1
 USE_LANGUAGES=	# csharp
 USE_TOOLS+=	pkg-config gmake
+
+MAKE_JOBS_SAFE=	no
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
