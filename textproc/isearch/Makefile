@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/06/02 13:38:53 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/07/07 22:00:07 joerg Exp $
 
 DISTNAME=		Isearch-1.47.01
 PKGNAME=		isearch-1.47.01
@@ -10,6 +10,8 @@ HOMEPAGE=		http://www.etymon.com/Isearch/
 COMMENT=		Advanced text indexing and searching system
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++
