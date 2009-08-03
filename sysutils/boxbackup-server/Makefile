@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/06/21 15:04:35 drochner Exp $
 #
 
 DISTNAME=	boxbackup-0.10
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.boxbackup.org/
 COMMENT=	Backup tool
+
+MAKE_JOBS_SAFE=	no
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c++
