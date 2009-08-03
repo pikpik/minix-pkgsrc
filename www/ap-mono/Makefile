@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/07/06 22:22:40 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2009/07/15 12:02:44 kefren Exp $
 
 DISTNAME=	mod_mono-2.4.2
 PKGNAME=	${APACHE_PKG_PREFIX}-mono-2.4.2
@@ -10,8 +10,10 @@ MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/Mod_mono
 COMMENT=	Apache module that provides ASP.NET support
 
-APACHE_MODULE=		yes
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+APACHE_MODULE=		yes
+PKG_APACHE_ACCEPTED=	apache2 apache22
 
 CONF_FILES=		${PREFIX}/share/examples/httpd/mod_mono.conf\
 			${PKG_SYSCONFDIR}/httpd/mod_mono.conf
