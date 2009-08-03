@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2007/11/17 12:04:13 rillig Exp $
+# $NetBSD: Makefile,v 1.39 2008/06/20 01:09:21 joerg Exp $
 
 DISTNAME=		geomview-1.8.1
 PKGREVISION=		6
@@ -10,6 +10,8 @@ HOMEPAGE=		http://www.geomview.org/
 COMMENT=		Interactive geometry viewing program
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_TOOLS+=		lex
 USE_LANGUAGES=		c c++
