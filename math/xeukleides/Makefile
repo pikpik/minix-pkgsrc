@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/12/02 08:32:24 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2008/09/02 05:33:32 obache Exp $
 
 DISTNAME=	xeukleides.1.0.1
 PKGNAME=	xeukleides-1.0.1
@@ -10,6 +10,7 @@ HOMEPAGE=	http://www.eukleides.or/
 COMMENT=	X-Frontend for A Euclidean geometry drawing language
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=		no
 
 DEPENDS+=	eukleides>=1.0.1:../../math/eukleides
 
