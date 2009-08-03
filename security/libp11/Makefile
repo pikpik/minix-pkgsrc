@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/03/05 20:28:24 hasso Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/08 19:11:30 hasso Exp $
 #
 
-DISTNAME=		libp11-0.2.4
+DISTNAME=		libp11-0.2.6
 CATEGORIES=		security
 MASTER_SITES=		http://www.opensc-project.org/files/libp11/
 
