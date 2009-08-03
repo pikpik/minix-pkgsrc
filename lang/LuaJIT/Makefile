@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/26 19:34:33 rillig Exp $
 #
 
 DISTNAME=	LuaJIT-1.1.5
@@ -8,6 +8,8 @@ MASTER_SITES=	http://luajit.org/download/
 MAINTAINER=	pho@cielonegro.org
 HOMEPAGE=	http://luajit.org/
 COMMENT=	Just-In-Time Compiler for the Lua programming language
+
+ONLY_FOR_PLATFORM=	*-*-i386
 
 LICENSE=	mit
 
