@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.151 2009/04/07 11:40:20 drochner Exp $
+# $NetBSD: Makefile,v 1.152 2009/07/22 09:01:52 wiz Exp $
 #
 
 DISTNAME=	gdm-2.20.10
@@ -131,6 +131,7 @@ PRINT_PLIST_AWK+=	/gdmopen/ { print "$${GDMOPEN}" $$0; next }
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
+.include "../../devel/popt/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libart+=	libart>=2.3.11
 .include "../../graphics/libart/buildlink3.mk"
