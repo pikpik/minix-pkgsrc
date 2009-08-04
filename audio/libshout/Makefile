@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/07/14 12:55:57 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/07/30 16:41:18 drochner Exp $
 #
 
 DISTNAME=	libshout-2.2.2
@@ -13,6 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		YES
 PTHREAD_OPTS+=		require
+USE_TOOLS+=		pkg-config
 
 GNU_CONFIGURE=		YES
 
