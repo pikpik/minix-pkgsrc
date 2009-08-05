@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/02/02 09:44:44 markd Exp $
+# $NetBSD: Makefile,v 1.3 2009/08/05 10:41:17 markd Exp $
 #
 
 DISTNAME=	Sphinx-0.6.2
@@ -9,6 +9,7 @@ MASTER_SITES=	http://pypi.python.org/packages/source/S/Sphinx/
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://sphinx.pocoo.org/
 COMMENT=	Python documentation generator
+LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
