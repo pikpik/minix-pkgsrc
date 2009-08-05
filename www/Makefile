@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.651 2009/07/07 08:58:47 sborrill Exp $
+# $NetBSD: Makefile,v 1.652 2009/07/07 19:03:24 sno Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -109,6 +109,7 @@ SUBDIR+=	drupal6
 SUBDIR+=	drupal6-translations
 SUBDIR+=	elinks
 SUBDIR+=	emacs-w3m
+SUBDIR+=	emacs-w3m-snapshot
 SUBDIR+=	epiphany
 SUBDIR+=	epiphany-extensions
 SUBDIR+=	erubis
