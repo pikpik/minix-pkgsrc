@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/11/10 19:04:45 adam Exp $
+# $NetBSD: Makefile,v 1.22 2009/02/13 14:17:03 joerg Exp $
 
 DISTNAME=	cinepaint-0.22-1
 PKGNAME=	cinepaint-0.22.1
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
-USE_TOOLS+=		pkg-config msgfmt
+USE_TOOLS+=		pkg-config msgfmt gmake
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-gtk2
 CONFIGURE_ARGS+=	--without-python
