@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/03/12 06:46:41 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:31 joerg Exp $
 #
 
 DISTNAME=		MayaVi-1.5
@@ -20,6 +20,7 @@ PYDISTUTILSPKG=		yes
 # vtk-python is for 23 only
 PYTHON_VERSIONS_ACCEPTED=	23
 
+.include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .include "../../x11/py-Tk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
