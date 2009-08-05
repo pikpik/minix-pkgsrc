@@ -1,75 +1,24 @@
 $NetBSD$
 
---- gfx/src/x11shared/nsFontFreeType.cpp.orig	2004-04-29 12:32:42.000000000 +0000
-+++ gfx/src/x11shared/nsFontFreeType.cpp
-@@ -177,7 +177,7 @@ nsFreeTypeFont::getFTFace()
-   FTC_Manager mgr;
-   nsresult rv;
-   mFt2->GetFTCacheManager(&mgr);
--  rv = mFt2->ManagerLookupSize(mgr, &mImageDesc.font, &face, nsnull);
-+  rv = mFt2->ManagerLookupFace(mgr, mImageDesc->face_id, &face);
-   NS_ASSERTION(NS_SUCCEEDED(rv), "failed to get face/size");
-   if (NS_FAILED(rv))
-     return nsnull;
-@@ -191,22 +191,15 @@ nsFreeTypeFont::nsFreeTypeFont(nsITrueTy
-   PRBool embedded_bimap = PR_FALSE;
-   mFaceID = aFaceID;
-   mPixelSize = aPixelSize;
--  mImageDesc.font.face_id    = (void*)mFaceID;
--  mImageDesc.font.pix_width  = aPixelSize;
--  mImageDesc.font.pix_height = aPixelSize;
--  mImageDesc.image_type = 0;
-+  mImageDesc->face_id = (FTC_FaceID)&mFaceID;
-+  mImageDesc->width  = aPixelSize;
-+  mImageDesc->height = aPixelSize;
-+  mImageDesc->flags = 0;
- 
-   if (aPixelSize < nsFreeType2::gAntiAliasMinimum) {
--    mImageDesc.image_type |= ftc_image_mono;
-     anti_alias = PR_FALSE;
-   }
- 
--  if (nsFreeType2::gFreeType2Autohinted)
--    mImageDesc.image_type |= ftc_image_flag_autohinted;
--
--  if (nsFreeType2::gFreeType2Unhinted)
--    mImageDesc.image_type |= ftc_image_flag_unhinted;
--
-   PRUint32  num_embedded_bitmaps, i;
-   PRInt32*  embedded_bitmapheights;
-   mFaceID->GetEmbeddedBitmapHeights(&num_embedded_bitmaps,
-@@ -218,7 +211,6 @@ nsFreeTypeFont::nsFreeTypeFont(nsITrueTy
-         if (embedded_bitmapheights[i] == aPixelSize) {
-           embedded_bimap = PR_TRUE;
-           // unhinted must be set for embedded bitmaps to be used
--          mImageDesc.image_type |= ftc_image_flag_unhinted;
-           break;
-         }
-       }
-@@ -312,7 +304,7 @@ nsFreeTypeFont::doGetBoundingMetrics(con
-   if (!face)
-     return NS_ERROR_FAILURE;
- 
--  FTC_Image_Cache icache;
-+  FTC_ImageCache icache;
-   mFt2->GetImageCache(&icache);
-   if (!icache)
-     return NS_ERROR_FAILURE;
-@@ -401,7 +393,7 @@ nsFreeTypeFont::GetWidth(const PRUnichar
-   if (!face)
-     return 0;
- 
--  FTC_Image_Cache icache;
-+  FTC_ImageCache icache;
-   mFt2->GetImageCache(&icache);
-   if (!icache)
-     return 0;
-@@ -725,7 +717,7 @@ nsFreeTypeXImage::DrawString(nsRendering
-     if (y%4==0) (*blendPixelFunc)(sub_image, y, ascent-1, black, 255/2);
- #endif
- 
--  FTC_Image_Cache icache;
-+  FTC_ImageCache icache;
-   mFt2->GetImageCache(&icache);
-   if (!icache)
-     return 0;
+--- toolkit/mozapps/installer/packager.mk.orig	2009-06-29 18:15:27.000000000 +0200
++++ toolkit/mozapps/installer/packager.mk
+@@ -449,8 +449,8 @@ endif
+ 	(cd $(DIST)/$(MOZ_PKG_DIR) && tar $(TAR_CREATE_FLAGS) - .) | \
+ 	  (cd $(DESTDIR)$(installdir) && tar -xf -)
+ 	$(NSINSTALL) -D $(DESTDIR)$(bindir)
+-	$(RM) -f $(DESTDIR)$(bindir)/$(MOZ_APP_NAME)
+-	ln -s $(installdir)/$(MOZ_APP_NAME) $(DESTDIR)$(bindir)
++	$(RM) -f $(DESTDIR)$(bindir)/$(MOZILLA_PKG_NAME)
++	ln -s $(installdir)/$(MOZ_APP_NAME) $(DESTDIR)$(bindir)/$(MOZILLA_PKG_NAME)
+ ifdef INSTALL_SDK # Here comes the hard part
+ # include directory is stable (dist/sdk/include) and unstable (dist/include)
+ 	$(NSINSTALL) -D $(DESTDIR)$(includedir)/stable
+@@ -458,7 +458,7 @@ ifdef INSTALL_SDK # Here comes the hard 
+ 	(cd $(DIST)/sdk/include && tar $(TAR_CREATE_FLAGS) - .) | \
+ 	  (cd $(DESTDIR)$(includedir)/stable && tar -xf -)
+ # The dist/include has module subdirectories that we need to flatten
+-	find $(DIST)/include -xtype f -exec $(SYSINSTALL) $(IFLAGS1) {} $(DESTDIR)$(includedir)/unstable \;
++	find $(DIST)/include -type f -exec $(SYSINSTALL) $(IFLAGS1) {} $(DESTDIR)$(includedir)/unstable \;
+ # IDL directory is stable (dist/sdk/idl) and unstable (dist/idl)
+ 	$(NSINSTALL) -D $(DESTDIR)$(idldir)/stable 
+ 	$(NSINSTALL) -D $(DESTDIR)$(idldir)/unstable

@@ -1,40 +1,20 @@
 $NetBSD$
 
---- gfx/src/freetype/nsFreeType.h.orig	2003-06-11 18:15:22.000000000 +0000
-+++ gfx/src/freetype/nsFreeType.h
-@@ -104,13 +104,13 @@ typedef FT_Error (*FT_Outline_Decompose_
- typedef FT_Error (*FT_New_Face_t)(FT_Library, const char*, FT_Long, FT_Face*);
- typedef FT_Error (*FT_Set_Charmap_t)(FT_Face face, FT_CharMap  charmap);
- typedef FT_Error (*FTC_Image_Cache_Lookup_t)
--                      (FTC_Image_Cache, FTC_Image_Desc*, FT_UInt, FT_Glyph*);
--typedef FT_Error (*FTC_Manager_Lookup_Size_t)
--                      (FTC_Manager, FTC_Font, FT_Face*, FT_Size*);
-+                      (FTC_ImageCache, FTC_ImageType*, FT_UInt, FT_Glyph*);
-+typedef FT_Error (*FTC_Manager_LookupFace_t)
-+                      (FTC_Manager, FTC_FaceID, FT_Face*);
- typedef FT_Error (*FTC_Manager_Done_t)(FTC_Manager);
- typedef FT_Error (*FTC_Manager_New_t)(FT_Library, FT_UInt, FT_UInt, FT_ULong,
-                        FTC_Face_Requester, FT_Pointer, FTC_Manager*);
--typedef FT_Error (*FTC_Image_Cache_New_t)(FTC_Manager, FTC_Image_Cache*);
-+typedef FT_Error (*FTC_Image_Cache_New_t)(FTC_Manager, FTC_ImageCache*);
+--- profile/dirserviceprovider/src/nsProfileLock.cpp.orig	2009-06-29 18:15:11.000000000 +0200
++++ profile/dirserviceprovider/src/nsProfileLock.cpp
+@@ -391,6 +391,7 @@ nsresult nsProfileLock::LockWithSymlink(
+                     act.sa_flags = 0;
+                     sigfillset(&act.sa_mask);
  
- typedef FT_ULong (*FT_Get_First_Char_t)(FT_Face, FT_UInt*);
- typedef FT_ULong (*FT_Get_Next_Char_t)(FT_Face, FT_ULong, FT_UInt*);
-@@ -157,7 +157,7 @@ protected:
-   FT_Outline_Decompose_t    nsFT_Outline_Decompose;
-   FT_Set_Charmap_t          nsFT_Set_Charmap;
-   FTC_Image_Cache_Lookup_t  nsFTC_Image_Cache_Lookup;
--  FTC_Manager_Lookup_Size_t nsFTC_Manager_Lookup_Size;
-+  FTC_Manager_LookupFace_t  nsFTC_Manager_LookupFace;
-   FTC_Manager_Done_t        nsFTC_Manager_Done;
-   FTC_Manager_New_t         nsFTC_Manager_New;
-   FTC_Image_Cache_New_t     nsFTC_Image_Cache_New;
-@@ -195,7 +195,7 @@ protected:
-   PRLibrary      *mSharedLib;
-   FT_Library      mFreeTypeLibrary;
-   FTC_Manager     mFTCacheManager;
--  FTC_Image_Cache mImageCache;
-+  FTC_ImageCache  mImageCache;
++#ifndef DEBUG
+ #define CATCH_SIGNAL(signame)                                           \
+ PR_BEGIN_MACRO                                                          \
+   if (sigaction(signame, NULL, &oldact) == 0 &&                         \
+@@ -409,6 +410,7 @@ PR_BEGIN_MACRO                          
+                     CATCH_SIGNAL(SIGTERM);
  
-   static nsHashtable   *sFontFamilies;
-   static nsHashtable   *sRange1CharSetNames;
+ #undef CATCH_SIGNAL
++#endif
+                 }
+             }
+         }

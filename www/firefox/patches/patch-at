@@ -1,36 +1,15 @@
 $NetBSD$
 
---- directory/c-sdk/ldap/libraries/libprldap/ldappr-io.c.orig	2006-05-25 11:38:04.000000000 +1200
-+++ directory/c-sdk/ldap/libraries/libprldap/ldappr-io.c
-@@ -292,12 +292,12 @@ prldap_try_one_address( struct lextiof_s
-      * Set up address and open a TCP socket:
-      */
-     if ( PR_SUCCESS != PR_SetNetAddr( PR_IpAddrNull, /* don't touch IP addr. */
--		PRLDAP_DEFAULT_ADDRESS_FAMILY, (PRUint16)port, addrp )) { 
-+		PR_NetAddrFamily( addrp ), (PRUint16)port, addrp )) { 
- 	return( -1 );
-     }
- 
-     if (( prsockp->prsock_prfd = PR_OpenTCPSocket(
--		PRLDAP_DEFAULT_ADDRESS_FAMILY )) == NULL ) {
-+		PR_NetAddrFamily( addrp ))) == NULL ) {
- 	return( -1 );
-     }
- 
-@@ -390,14 +390,14 @@ prldap_connect( const char *hostlist, in
- 
- 	if ( PR_SUCCESS == PR_StringToNetAddr( host, &addr )) {
- 		
--		if ( PRLDAP_DEFAULT_ADDRESS_FAMILY == PR_AF_INET6 &&
-+		/*if ( PRLDAP_DEFAULT_ADDRESS_FAMILY == PR_AF_INET6 &&
- 				PR_AF_INET == PR_NetAddrFamily( &addr )) {
- 			PRUint32	ipv4ip = addr.inet.ip;
- 			memset( &addr, 0, sizeof(addr));
- 			PR_ConvertIPv4AddrToIPv6( ipv4ip, &addr.ipv6.ip );
- 			addr.ipv6.family = PR_AF_INET6;
- 			
--		}
-+		}*/
- 	    rc = prldap_try_one_address( prsockp, &addr, port,
- 			timeout, options );
- 	} else {
+Treat DragonFly like FreeBSD.
+
+--- gfx/qcms/qcmstypes.h.orig	2009-06-29 18:14:50.000000000 +0200
++++ gfx/qcms/qcmstypes.h
+@@ -23,7 +23,7 @@ typedef PRUint64 uint64_t;
+ #ifdef __OS2__
+ /* OS/2's stdlib typdefs uintptr_t. So we'll just include that so we don't collide */
+ #include <stdlib.h>
+-#elif defined(__FreeBSD__)
++#elif defined(__FreeBSD__) || defined(__DragonFly__)
+ /* FreeBSD typedefs uintptr_t in /usr/include/sys/types.h */
+ #else
+ typedef PRUptrdiff uintptr_t;

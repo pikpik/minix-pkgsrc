@@ -1,14 +1,13 @@
 $NetBSD$
 
---- gfx/src/gtk/nsFontMetricsXft.cpp.orig	2004-01-13 00:30:58.000000000 +0100
-+++ gfx/src/gtk/nsFontMetricsXft.cpp	2004-04-29 09:36:03.000000000 +0200
-@@ -65,7 +65,8 @@
+--- media/liboggz/include/oggz/oggz_off_t_generated.h.orig	2009-06-29 18:15:03.000000000 +0200
++++ media/liboggz/include/oggz/oggz_off_t_generated.h
+@@ -59,7 +59,7 @@
  
- #include <gdk/gdkx.h>
- #include <freetype/tttables.h>
--#include <freetype/freetype.h>
-+#include <ft2build.h>
-+#include FT_FREETYPE_H
+ #include <sys/types.h>
  
- #define FORCE_PR_LOG
- #include "prlog.h"
+-#if defined(__APPLE__) || defined(SOLARIS)
++#if defined(__APPLE__) || defined(SOLARIS) || defined(__NetBSD__) || defined(__DragonFly__)
+ typedef off_t oggz_off_t;
+ #else
+ typedef loff_t oggz_off_t;
