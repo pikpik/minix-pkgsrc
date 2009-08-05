@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2009/07/22 09:01:38 wiz Exp $
+# $NetBSD: Makefile,v 1.81 2009/08/05 06:11:10 tnn Exp $
 #
 
 DISTNAME=		yelp-2.26.0
@@ -52,7 +52,6 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
-.include "../../mk/omf-scrollkeeper.mk"
 .include "../../textproc/rarian/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
