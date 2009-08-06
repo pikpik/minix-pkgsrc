@@ -1,0 +1,13 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	firefox
+
+.if !defined(FIREFOX_BUILDLINK3_MK)
+FIREFOX_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.firefox+=	firefox>=3.5.2
+BUILDLINK_PKGSRCDIR.firefox?=	../../www/firefox
+
+.endif	# FIREFOX_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-firefox
