@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.131 2009/06/05 02:59:50 minskim Exp $
+# $NetBSD: Makefile,v 1.132 2009/08/05 22:07:08 minskim Exp $
 #
 
 COMMENT=	Editors
 
+SUBDIR+=	Sigil
 SUBDIR+=	TeXmacs
 SUBDIR+=	abiword
 SUBDIR+=	abiword-plugins
