@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/05/14 05:52:12 minskim Exp $
 #
 
 DISTNAME=	lua-mode-20071122
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://luaforge.net/frs/download.php/2724/
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.5 2008/10/11 09:31:55 uebayasi Exp $
 
 DISTNAME=	cflow-1.1
 PKGNAME=	cflow-mode-1.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=cflow/}
 

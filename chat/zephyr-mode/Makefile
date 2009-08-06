@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.15 2008/10/11 09:31:55 uebayasi Exp $
 #
 
 DISTNAME=	zephyr-mode-2.5.20
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	chat net
 MASTER_SITES=	http://www.cs.cmu.edu/People/dkindred/zephyr-mode/
 

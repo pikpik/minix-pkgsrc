@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.6 2008/10/11 09:31:55 uebayasi Exp $
 #
 
 DISTNAME=	psvn.el
 PKGNAME=	psvn-${VER}
+PKGREVISION=	1
 CATEGORIES=	devel editors scm
 MASTER_SITES=	http://svn.collab.net/viewvc/*checkout*/svn/trunk/contrib/client-side/emacs/psvn.el?revision=${VER}&file=
 DIST_SUBDIR=	psvn-${VER}

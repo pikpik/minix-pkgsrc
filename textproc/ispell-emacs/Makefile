@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.10 2008/10/11 09:31:58 uebayasi Exp $
 #
 
 DISTNAME=	ispell.el
 PKGNAME=	${EMACS_PKGNAME_PREFIX}ispell-emacs-3.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://kdstevens.com/pub/stevens/
 EXTRACT_SUFX=	.gz

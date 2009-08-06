@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2008/10/11 09:31:57 uebayasi Exp $
+# $NetBSD: Makefile,v 1.20 2009/06/06 15:32:56 minskim Exp $
 #
 
 DISTNAME=		bbdb-2.34
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		mail misc news
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=bbdb/}
 

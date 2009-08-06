@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.23 2008/10/11 09:31:55 uebayasi Exp $
 #
 
 DISTNAME=	rdtool-${RUBY_RD_VERSION}
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${RUBY_PKGPREFIX}-rd-mode-${RUBY_RD_VERSION}
+PKGREVISION=	1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://rubyforge.org/frs/download.php/33346/
 
