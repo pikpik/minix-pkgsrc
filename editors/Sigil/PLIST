@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/Sigil
+libexec/Sigil/Sigil
+libexec/Sigil/data/basicmeta.csv
+libexec/Sigil/data/languages.csv
+libexec/Sigil/data/relator.csv
