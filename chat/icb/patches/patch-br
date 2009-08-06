@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- icb/getline.c.orig	2009-08-06 09:17:50.000000000 +0100
++++ icb/getline.c
+@@ -11,7 +11,7 @@ static char *line_read = (char *)NULL;
+ 
+ extern void echo();
+ 
+-char *getline(prompt, expand)
++char *get_line(prompt, expand)
+ char *prompt;
+ int expand;
+ {
