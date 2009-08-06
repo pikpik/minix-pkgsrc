@@ -584,7 +584,11 @@ include/xulrunner/unstable/keythi.h
 include/xulrunner/unstable/mozAutoDocUpdate.h
 include/xulrunner/unstable/mozFlushType.h
 include/xulrunner/unstable/mozIJSSubScriptLoader.h
+include/xulrunner/unstable/mozIPersonalDictionary.h
 include/xulrunner/unstable/mozISanitizingSerializer.h
+include/xulrunner/unstable/mozISpellCheckingEngine.h
+include/xulrunner/unstable/mozISpellI18NManager.h
+include/xulrunner/unstable/mozISpellI18NUtil.h
 include/xulrunner/unstable/mozITXTToHTMLConv.h
 include/xulrunner/unstable/mozcontainer.h
 include/xulrunner/unstable/mozdrawingarea.h
