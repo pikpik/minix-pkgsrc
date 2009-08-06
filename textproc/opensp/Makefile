@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2007/02/22 19:27:15 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2008/01/15 00:27:37 heinz Exp $
 #
 
 DISTNAME=	OpenSP-1.5.2
@@ -25,6 +25,7 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-http \
 			--enable-default-catalog=${PREFIX}/share/sgml/catalog
+REPLACE_PERL+=		unicode/gensyntax.pl
 
 TEST_TARGET=		check
 
