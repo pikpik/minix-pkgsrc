@@ -1,8 +1,8 @@
 $NetBSD$
 
---- xenstore/Makefile.orig	2008-08-01 16:38:07.000000000 +0200
+--- xenstore/Makefile.orig	2009-08-06 14:56:38.000000000 +0200
 +++ xenstore/Makefile
-@@ -94,24 +94,24 @@ tarball: clean
+@@ -90,24 +90,24 @@ tarball: clean
  
  .PHONY: install
  install: all
@@ -39,5 +39,5 @@ $NetBSD$
 +	$(BSD_INSTALL_DATA) xs.h $(DESTDIR)$(INCLUDEDIR)
 +	$(BSD_INSTALL_DATA) xs_lib.h $(DESTDIR)$(INCLUDEDIR)
  
- -include $(DEP)
+ -include $(DEPS)
  
