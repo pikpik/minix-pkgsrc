@@ -1,11 +1,11 @@
-# $NetBSD: buildlink3.mk,v 1.10 2009/03/05 21:10:27 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:24:03 joerg Exp $
 
 BUILDLINK_TREE+=	openobex
 
 .if !defined(OPENOBEX_BUILDLINK3_MK)
 OPENOBEX_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.openobex+=	openobex>=1.3
+BUILDLINK_API_DEPENDS.openobex+=	openobex>=1.5
 BUILDLINK_PKGSRCDIR.openobex?=	../../comms/openobex
 
 .include "../../devel/libusb/buildlink3.mk"
