@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.299 2009/08/03 23:38:34 minskim Exp $
+# $NetBSD: Makefile,v 1.300 2009/08/03 23:47:14 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -258,6 +258,7 @@ SUBDIR+=	tex-igo
 SUBDIR+=	tex-jadetex
 SUBDIR+=	tex-koma-script
 SUBDIR+=	tex-kotex
+SUBDIR+=	tex-kotex-doc
 SUBDIR+=	tex-lambda
 SUBDIR+=	tex-latex
 SUBDIR+=	tex-latexconfig
