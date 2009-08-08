@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2009/05/12 08:16:03 obache Exp $
+@comment $NetBSD$
 bin/m17n-db
 share/locale/ja/LC_MESSAGES/m17n-db.mo
 share/locale/vi/LC_MESSAGES/m17n-db.mo
@@ -366,7 +366,6 @@ share/m17n/sa-harvard-kyoto.mim
 share/m17n/sa.lnm
 share/m17n/se.lnm
 share/m17n/si-samanala.mim
-share/m17n/si-wijesekera-preedit-alt.mim
 share/m17n/si-wijesekera-preedit.mim
 share/m17n/si-wijesekera.mim
 share/m17n/sid.lnm
