@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2008/04/25 07:47:47 kefren Exp $
 bin/fcrackzip
-bin/zipinfo
+bin/fcrackzipinfo
 man/man1/fcrackzip.1
