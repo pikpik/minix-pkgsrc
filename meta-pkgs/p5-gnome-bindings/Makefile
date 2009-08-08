@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/05/21 13:52:05 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2009/05/21 20:40:03 wiz Exp $
 
 DISTNAME=	p5-gnome-bindings-2.26.1.91
 CATEGORIES=	meta-pkgs x11 gnome
@@ -22,7 +22,7 @@ DEPENDS+=	p5-glib2>=1.220:../../devel/p5-glib2
 # unpackaged
 #DEPENDS+=	p5-Gnome2-VFS>=1.081:../../devel/p5-Gnome2-VFS
 DEPENDS+=	p5-gtk2>=1.220:../../x11/p5-gtk2
-DEPENDS+=	p5-Gtk2-GladeXML>=1.007:../../x11/p5-Gtk2-GladeXML
+DEPENDS+=	p5-Gtk2-GladeXML>=1.007:../../devel/p5-Gtk2-GladeXML
 DEPENDS+=	p5-pango>=1.220:../../devel/p5-pango
 
 .include "../../mk/bsd.pkg.mk"
