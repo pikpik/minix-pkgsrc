@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/08/06 10:56:46 tnn Exp $
+# $NetBSD: Makefile,v 1.9 2009/08/08 04:14:18 tnn Exp $
 #
 
 DISTNAME=	xulrunner-${XULRUNNER_VER}-source
@@ -58,6 +58,7 @@ CONFIGURE_ARGS+=	--enable-system-sqlite
 CONFIGURE_ARGS+=	--disable-crashreporter
 
 ALL_ENV+=		MOZILLA_PKG_NAME=xulrunner
+INSTALL_ENV+=		SKIP_GRE_REGISTRATION=defined
 
 PYTHON_FOR_BUILD_ONLY=	yes
 .include "../../lang/python/application.mk"
