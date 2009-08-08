@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/11/16 07:12:09 snj Exp $
+@comment $NetBSD: PLIST,v 1.2 2009/06/14 17:56:53 joerg Exp $
 bin/pysol.py
+man/man6/pysol.py.6
 ${PYSITELIB}/pysollib/__init__.py
 ${PYSITELIB}/pysollib/__init__.pyc
 ${PYSITELIB}/pysollib/__init__.pyo
