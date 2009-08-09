@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.24 2008/01/19 09:16:19 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2008/01/30 05:43:55 obache Exp $
 
-DISTNAME=	nut-13.2
+DISTNAME=	nut-14.4
 CATEGORIES=	biology
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nut/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nut.sourceforge.net/
 COMMENT=	Record what you eat and analyze your meals
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
