@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ssss-split
+bin/ssss-combine
+man/man1/ssss.1
