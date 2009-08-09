@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/05/24 21:45:15 tnn Exp $
+# $NetBSD: Makefile,v 1.6 2008/07/29 21:24:01 wiz Exp $
 #
 
-DISTNAME=		libSM-1.1.0
+DISTNAME=		libSM-1.1.1
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
