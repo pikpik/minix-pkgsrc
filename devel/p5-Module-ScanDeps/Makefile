@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/07/08 08:21:28 sno Exp $
+# $NetBSD: Makefile,v 1.17 2009/08/09 11:53:34 sno Exp $
 #
 
 DISTNAME=	Module-ScanDeps-0.93
@@ -14,7 +14,8 @@ LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Module/ScanDeps/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+#PERL5_MODULE_TYPE=	Module::Install
+MAKE_PARAMS+=		--skipdeps
 
 REPLACE_PERL+=	script/scandeps.pl
 
