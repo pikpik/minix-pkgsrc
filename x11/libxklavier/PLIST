@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.5 2008/10/24 23:21:20 jnemeth Exp $
+@comment $NetBSD$
+include/libxklavier/xkl-enum-types.h
 include/libxklavier/xkl_config_item.h
 include/libxklavier/xkl_config_rec.h
 include/libxklavier/xkl_config_registry.h
