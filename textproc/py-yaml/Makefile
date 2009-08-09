@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2008/04/25 20:39:13 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2008/05/08 18:32:19 joerg Exp $
 #
 
-DISTNAME=	PyYAML-3.05
-PKGNAME=	${PYPKGPREFIX}-yaml-3.05
+DISTNAME=	PyYAML-3.08
+PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/PyYAML/yaml/}
 CATEGORIES=	textproc python
 MASTER_SITES=	http://pyyaml.org/download/pyyaml/
 
@@ -15,4 +15,5 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 PYDISTUTILSPKG=	yes
 
 .include "../../lang/python/extension.mk"
+.include "../../textproc/libyaml/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
