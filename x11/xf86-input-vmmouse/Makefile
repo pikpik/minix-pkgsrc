@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2009/06/07 11:24:35 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2009/06/08 08:34:15 obache Exp $
 
-DISTNAME=	xf86-input-vmmouse-12.6.4
+DISTNAME=	xf86-input-vmmouse-12.6.5
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=driver/}
 EXTRACT_SUFX=	.tar.bz2
