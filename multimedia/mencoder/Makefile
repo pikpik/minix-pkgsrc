@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2008/12/18 16:40:57 bjs Exp $
+# $NetBSD: Makefile,v 1.43 2009/02/03 12:01:04 drochner Exp $
 
 PKGNAME=	mencoder-${MPLAYER_PKG_VERSION}
 PKGREVISION=	7
@@ -13,7 +13,7 @@ CONFIGURE_ARGS+=	--confdir=${PREFIX}/share/mplayer
 
 BUILD_TARGET=	mencoder
 
-MANCOMPRESSED_IF_MANZ=	1
+MANCOMPRESSED_IF_MANZ=	YES
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
