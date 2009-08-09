@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/kotex-dev/luatexko/luatexko-doc.pdf
+share/texmf-dist/doc/latex/kotex-dev/luatexko/luatexko-doc.tex
+share/texmf-dist/doc/latex/kotex-dev/xetexko/xetexko-doc.pdf
+share/texmf-dist/doc/latex/kotex-dev/xetexko/xetexko-doc.tex
+share/texmf-dist/doc/latex/kotex-dev/xoblivoir/ultrasimplexob.pdf
+share/texmf-dist/doc/latex/kotex-dev/xoblivoir/ultrasimplexob.tex
