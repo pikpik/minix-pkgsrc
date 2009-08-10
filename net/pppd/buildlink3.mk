@@ -1,0 +1,12 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	pppd
+
+.if !defined(PPPD_BUILDLINK3_MK)
+PPPD_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.pppd+=	pppd>=2.4.3nb2
+BUILDLINK_PKGSRCDIR.pppd?=	../../net/pppd
+.endif	# PPPD_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-pppd
