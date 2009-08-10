@@ -1,17 +1,17 @@
 $NetBSD$
 
---- libfaad/common.h.orig	2007-11-01 13:33:30.000000000 +0100
+--- libfaad/common.h.orig	2009-02-05 01:51:03.000000000 +0100
 +++ libfaad/common.h
-@@ -39,7 +39,7 @@ extern "C" {
- #  include "../config.h"
- #endif
+@@ -41,7 +41,7 @@ extern "C" {
+ 
+ #include "neaacdec.h"
  
 -#if 1
 +#if 0
  #define INLINE __inline
  #else
  #define INLINE inline
-@@ -328,7 +328,7 @@ char *strchr(), *strrchr();
+@@ -330,7 +330,7 @@ char *strchr(), *strrchr();
      #ifndef HAVE_LRINTF
      #define HAS_LRINTF
      // from http://www.stereopsis.com/FPU.html
