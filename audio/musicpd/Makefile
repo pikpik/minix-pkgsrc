@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2009/07/13 12:57:00 tonio Exp $
+# $NetBSD: Makefile,v 1.38 2009/07/27 20:08:38 drochner Exp $
 
 DISTNAME=		mpd-0.15.1
 PKGNAME=		${DISTNAME:S/mpd/musicpd/}
+PKGREVISION=		1
 CATEGORIES=		audio
 #MASTER_SITES=		http://musicpd.org/uploads/files/
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=musicpd/}
