@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/02/08 15:19:42 obache Exp $
+# $NetBSD: Makefile,v 1.15 2009/07/10 09:18:44 obache Exp $
 #
 
 DISTNAME=	x11rec-0.3
@@ -14,6 +14,7 @@ LICENSE=	gnu-gpl-v2
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	gifsicle-[0-9]*:../../graphics/gifsicle
+DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 
 NO_BUILD=	yes
 REPLACE_RUBY=	x11rec
@@ -27,7 +28,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/x11rec-ja.html \
 		${DESTDIR}${PREFIX}/share/doc/x11rec/index.html.ja
 
-.include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../lang/ruby/modules.mk"
 
 SUBST_CLASSES+=		toolpath
