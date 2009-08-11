@@ -8,7 +8,7 @@ $NetBSD$
  
 -libmp4_la_LIBADD = $(top_builddir)/libfaad/libfaad.la \
 -       $(top_builddir)/common/mp4ff/libmp4ff.a
-+libmp4_la_LIBADD = $(top_builddir)/common/mp4ff/libmp4ff.a
++libmp4_la_LIBADD = -L$(prefix)/lib -lmp4ff -lfaad
  
 -libmp4_la_LDFLAGS = -module -avoid-version $(local_LDFLAGS) -lpthread
 +libmp4_la_LDFLAGS = -module -avoid-version $(local_LDFLAGS) ${PTHREAD_LDFLAGS} ${PTHREAD_LIBS}
