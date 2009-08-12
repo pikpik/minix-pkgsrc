@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/05/26 06:27:28 obache Exp $
+@comment $NetBSD: PLIST,v 1.2 2008/06/19 15:13:26 taca Exp $
+lib/pkgconfig/librsvg-2.0-ruby.pc
 ${RUBY_VENDORLIB}/rsvg2.rb
 ${RUBY_VENDORARCHLIB}/rsvg2.${RUBY_DLEXT}
