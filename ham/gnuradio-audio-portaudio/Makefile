@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/13 16:38:26 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:06 joerg Exp $
 
 PKGNAME=	gnuradio-audio-portaudio-${VERSION}
 COMMENT=	GNU Radio module adding support for portaudio
@@ -9,6 +9,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONF_FILES+=    ${EGDIR}/gr-audio-portaudio.conf ${PKG_SYSCONFDIR}/gr-audio-portaudio.conf
 CONFIGURE_ARGS+=--enable-gr-audio-portaudio
+CONFIGURE_ARGS+=--with-gnuradio-core --with-omnithread --with-gruel
 
 PYTHON_PATCH_SCRIPTS+=	gr-audio-portaudio/src/qa_portaudio.py
 

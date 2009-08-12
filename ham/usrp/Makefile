@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/11/13 18:01:29 wulf Exp $
+# $NetBSD: Makefile,v 1.10 2008/07/14 12:56:06 joerg Exp $
 
 PKGNAME=	usrp-${VERSION}
 COMMENT=	Non GNU Radio specific part of the USRP code base
@@ -8,6 +8,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 
 CONFIGURE_ARGS+=	--enable-usrp
+CONFIGURE_ARGS+=--with-gnuradio-core --with-omnithread --with-gruel
 
 BUILD_DEPENDS+=	sdcc>=2.4.0:../../devel/sdcc
 
@@ -26,4 +27,5 @@ PYTHON_PATCH_SCRIPTS+=	usrp/host/lib/usrp_dbid.py
 
 .include "../../ham/gnuradio-core/buildlink3.mk"
 .include "../../devel/libusb/buildlink3.mk"
+.include "../../lang/guile/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

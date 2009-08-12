@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/02/22 19:26:37 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2008/07/14 12:56:06 joerg Exp $
 
 PKGNAME=	gnuradio-wxgui-${VERSION}
 COMMENT=	GUI framework for GNU Radio based on wxPython
@@ -22,6 +22,7 @@ SUBST_SED.py-exec=	-e 's,python -c,${PYTHONBIN} -c,g'
 
 CONF_FILES+=	${EGDIR}/gr-wxgui.conf ${PKG_SYSCONFDIR}/gr-wxgui.conf
 CONFIGURE_ARGS+=--enable-gr-wxgui
+CONFIGURE_ARGS+=--with-gnuradio-core --with-omnithread --with-gruel
 
 .include "../../ham/gnuradio-core/buildlink3.mk"
 .include "../../x11/py-wxWidgets/buildlink3.mk"

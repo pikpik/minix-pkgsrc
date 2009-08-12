@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/13 17:27:57 wulf Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:06 joerg Exp $
 
 PKGNAME=	gnuradio-radio-astronomy-${VERSION}
 COMMENT=	GNU Radio module for radio astronomy
@@ -8,6 +8,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 
 CONFIGURE_ARGS+=--enable-gr-radio-astronomy
+CONFIGURE_ARGS+=--with-gnuradio-core --with-omnithread --with-gruel
 
 #DEPENDS+=	${PYPKGPREFIX}-ephem>=3.7b:../../math/py-ephem
 
