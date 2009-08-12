@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2007/11/18 16:22:06 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/22 23:01:19 he Exp $
 
 .include "../../www/apache2/Makefile.common"
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 
 HOMEPAGE=	http://apr.apache.org/
 COMMENT=	Apache Portable Runtime
+LICENSE=	apache-2.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
