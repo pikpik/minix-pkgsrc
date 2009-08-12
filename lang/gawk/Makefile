@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2009/08/08 16:23:48 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2009/08/09 11:35:47 tron Exp $
 
 DISTNAME=	gawk-3.1.7
 CATEGORIES=	lang
@@ -16,6 +16,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
+USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt
 TEST_TARGET=		check
