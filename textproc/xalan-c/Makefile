@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2009/03/25 22:37:15 he Exp $
+# $NetBSD: Makefile,v 1.27 2009/06/30 00:07:23 joerg Exp $
 #
 
 DISTNAME=	Xalan-C_1_10_0-src
 PKGNAME=	xalan-c-1.10
-#PKGREVISION=	1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://archive.apache.org/dist/xml/xalan-c/source/
 
