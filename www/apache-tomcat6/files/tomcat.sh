@@ -1,6 +1,6 @@
 #! @RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: tomcat.sh,v 1.2 2009/08/12 20:07:57 adrianp Exp $
+# $NetBSD: tomcat.sh,v 1.3 2009/08/12 21:51:49 adrianp Exp $
 #
 # PROVIDE: tomcat
 # REQUIRE: DAEMON
@@ -66,7 +66,7 @@ tomcat_start()
 
 tomcat_stop()
 {
-	rc_pid=$(check_pidfile $pidfile "java")
+	rc_pid=$(check_pidfile $pidfile "${JAVA_HOME}/bin/java")
 	@SU@ ${tomcat_user} -c "${command} stop"
 	wait_for_pids $rc_pid
 }
