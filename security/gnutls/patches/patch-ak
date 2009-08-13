@@ -1,11 +1,11 @@
 $NetBSD$
 
---- configure.orig	2009-06-17 20:42:30.000000000 +0200
-+++ configure
-@@ -8587,7 +8587,7 @@ $as_echo "#define GNUTLS_POINTER_TO_INT_
+--- configure.orig	2009-08-13 02:54:16.000000000 -0700
++++ configure	2009-08-13 10:50:08.000000000 -0700
+@@ -8651,7 +8651,7 @@ done
  $as_echo_n "checking whether to disable OpenSSL compatibility layer... " >&6; }
    # Check whether --enable-openssl-compatibility was given.
- if test "${enable_openssl_compatibility+set}" = set; then
+ if test "${enable_openssl_compatibility+set}" = set; then :
 -  enableval=$enable_openssl_compatibility; enable_openssl=$withval
 +  enableval=$enable_openssl_compatibility; enable_openssl=$enableval
  else
