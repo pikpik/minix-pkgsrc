@@ -33,7 +33,7 @@ $NetBSD$
  
      free(d);
    }
-@@ -55,6 +72,12 @@ int cdda_open(cdrom_drive *d){
+@@ -55,22 +72,31 @@ int cdda_open(cdrom_drive *d){
    if(d->opened)return(0);
  
    switch(d->interface){
@@ -46,7 +46,18 @@ $NetBSD$
    case SGIO_SCSI_BUGGY1:  
    case SGIO_SCSI:  
    case GENERIC_SCSI:  
-@@ -71,6 +94,7 @@ int cdda_open(cdrom_drive *d){
+     if((ret=scsi_init_drive(d)))
+       return(ret);
+     break;
++#ifndef __NetBSD__
+   case COOKED_IOCTL:  
+     if((ret=cooked_init_drive(d)))
+       return(ret);
+     break;
++#endif
+ #ifdef CDDA_TEST
+   case TEST_INTERFACE:  
+     if((ret=test_init_drive(d)))
        return(ret);
      break;
  #endif
