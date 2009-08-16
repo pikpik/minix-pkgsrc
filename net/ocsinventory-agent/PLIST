@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ocsinventory-agent
+share/examples/ocsinventory-agent/ocsinventory-agent.cfg
+share/examples/ocsinventory-agent/modules.conf
