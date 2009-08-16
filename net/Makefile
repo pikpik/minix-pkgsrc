@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.778 2009/08/01 14:55:19 schnoebe Exp $
+# $NetBSD: Makefile,v 1.779 2009/08/02 11:49:41 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -298,6 +298,7 @@ SUBDIR+=	ntop
 SUBDIR+=	ntop1
 SUBDIR+=	ntp4
 SUBDIR+=	ocamlnet
+SUBDIR+=	ocsinventory-agent
 SUBDIR+=	oidentd
 SUBDIR+=	oinkmaster
 SUBDIR+=	openafs
