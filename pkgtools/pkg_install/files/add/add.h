@@ -1,4 +1,4 @@
-/* $NetBSD: add.h,v 1.13 2009/02/02 12:35:00 joerg Exp $ */
+/* $NetBSD: add.h,v 1.14 2009/08/06 16:53:34 joerg Exp $ */
 
 /* from FreeBSD Id: add.h,v 1.8 1997/02/22 16:09:15 peter Exp  */
 
@@ -25,6 +25,7 @@
 #ifndef _INST_ADD_H_INCLUDE
 #define _INST_ADD_H_INCLUDE
 
+extern const char *PlainPkgdb;
 extern char *Destdir;
 extern char *OverrideMachine;
 extern char *Prefix;
