@@ -1,4 +1,4 @@
-/*	$NetBSD: common.h,v 1.10 2008/10/06 23:37:56 joerg Exp $	*/
+/*	$NetBSD: common.h,v 1.11 2009/03/05 19:08:47 abs Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * All rights reserved.
@@ -72,6 +72,7 @@ struct fetchconn {
 #  endif
 #endif
 	int		 ref;		/* reference count */
+	int		 is_active;
 };
 
 /* Structure used for error message lists */
