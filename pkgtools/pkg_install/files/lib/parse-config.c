@@ -1,4 +1,4 @@
-/*	$NetBSD: parse-config.c,v 1.7 2009/08/16 14:26:46 joerg Exp $	*/
+/*	$NetBSD: parse-config.c,v 1.8 2009/08/16 21:10:15 joerg Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -7,7 +7,7 @@
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-__RCSID("$NetBSD: parse-config.c,v 1.7 2009/08/16 14:26:46 joerg Exp $");
+__RCSID("$NetBSD: parse-config.c,v 1.8 2009/08/16 21:10:15 joerg Exp $");
 
 /*-
  * Copyright (c) 2008, 2009 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -145,6 +145,8 @@ parse_pkg_install_conf(void)
 		*var->var = config_tmp_variables[i];
 		config_tmp_variables[i] = NULL;
 	}
+
+	fclose(fp);
 }
 
 void
