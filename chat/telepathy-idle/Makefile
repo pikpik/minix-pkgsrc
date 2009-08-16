@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2009/02/23 10:59:02 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/04/01 16:20:41 roy Exp $
 #
 
-DISTNAME=	telepathy-idle-0.1.3
+DISTNAME=	telepathy-idle-0.1.4
 CATEGORIES=	chat
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/telepathy-idle/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://telepathy.freedesktop.org/wiki/Components
 COMMENT=	Full-featured IRC connection manager for Telepathy
+LICENSE=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
