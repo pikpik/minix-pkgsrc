@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.11 2007/01/26 03:56:50 markd Exp $
+@comment $NetBSD$
 bin/kdbg
 share/applications/kde/kdbg.desktop
 share/doc/kde/HTML/de/kdbg/argspwdenv.html
@@ -97,6 +97,7 @@ share/kde/apps/kdbg/types/qt2.kdbgtt
 share/kde/apps/kdbg/types/qt3.kdbgtt
 share/kde/apps/kdbg/types/qt4core.kdbgtt
 share/kde/apps/kdbg/types/stdc++.kdbgtt
+share/kde/apps/kdbg/types/stdc++6.kdbgtt
 share/kde/config/kdbgrc
 share/locale/cs/LC_MESSAGES/kdbg.mo
 share/locale/da/LC_MESSAGES/kdbg.mo
@@ -117,3 +118,4 @@ share/locale/sk/LC_MESSAGES/kdbg.mo
 share/locale/sr/LC_MESSAGES/kdbg.mo
 share/locale/sv/LC_MESSAGES/kdbg.mo
 share/locale/tr/LC_MESSAGES/kdbg.mo
+share/locale/zh_CN/LC_MESSAGES/kdbg.mo
