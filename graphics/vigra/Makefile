@@ -1,13 +1,13 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/08/25 18:17:56 bjs Exp $
 #
 
 DISTNAME=	vigra1.6.0
 PKGNAME=	${DISTNAME:C/^[[:alpha:]]+/&-/}
 CATEGORIES=	graphics
-MASTER_SITES=	http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/
+MASTER_SITES=	http://hci.iwr.uni-heidelberg.de/vigra/
 
 MAINTAINER=	bjs@NetBSD.org
-HOMEPAGE=	http://kogs-www.informatik.uni-hamburg.de/~koethe/vigra/
+HOMEPAGE=	http://hci.iwr.uni-heidelberg.de/vigra/
 COMMENT=	Computer vision library
 
 PKG_DESTDIR_SUPPORT=	user-destdir
