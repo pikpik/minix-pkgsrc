@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2009/02/05 21:52:52 seb Exp $
+# $NetBSD: Makefile,v 1.34 2009/08/03 22:35:33 wiz Exp $
 #
 
 DISTNAME=	tidy-20090326
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	# manually created tarballs on ftp.NetBSD.org only
 
@@ -31,7 +32,7 @@ INSTALLATION_DIRS=	${PKGMANDIR}/man1
 PLIST_SRC+=		${PKGDIR}/PLIST
 
 .if !empty(PKG_OPTIONS:Mdoc)
-BUILD_DEPENDS+= doxygen>=1.5.7.1:../../devel/doxygen
+BUILD_DEPENDS+= doxygen>=1.5.9:../../devel/doxygen
 
 HTML_DOCFILES=	Overview.html doxygen.cfg grid.gif tidy.css faq.html \
 		license.html pending.html release-notes.html tidy.gif
