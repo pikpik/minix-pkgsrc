@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/01/01 21:47:31 hubertf Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/06/07 12:49:01 ahoka Exp $
 #
 
 DISTNAME=		cmus-unofficial-20090605
@@ -13,4 +13,5 @@ COMMENT=		Curses based music player (Jason Woof's cmus fork)
 CONFLICTS+=		cmus-[0-9]*
 WRKSRC=			${WRKDIR}/cmus-unofficial
 
+.include "options.mk"
 .include "../cmus/Makefile.common"
