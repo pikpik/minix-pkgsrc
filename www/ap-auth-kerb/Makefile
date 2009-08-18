@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2006/06/25 09:11:48 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2007/01/25 19:54:08 markd Exp $
 
-DISTNAME=	mod_auth_kerb-5.3
-PKGNAME=	${APACHE_PKG_PREFIX}-auth-kerb-5.3
+DISTNAME=	mod_auth_kerb-5.4
+PKGNAME=	${DISTNAME:S/mod/${APACHE_PKG_PREFIX}/:S/_/-/g}
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=modauthkerb/}
 
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://modauthkerb.sourceforge.net/
 COMMENT=	Module to allow Apache authentication using Kerberos
+LICENSE=	modified-bsd
 
 CONFLICTS=	ap-auth-kerb-[0-9]*
 
