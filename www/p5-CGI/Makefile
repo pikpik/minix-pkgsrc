@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.48 2009/05/18 22:14:20 abs Exp $
+# $NetBSD: Makefile,v 1.49 2009/08/09 13:01:48 sno Exp $
 
-VERS=		3.44
+VERS=		3.45
 DISTNAME=	CGI.pm-${VERS}
 PKGNAME=	p5-CGI-${VERS}
 SVR4_PKGNAME=	p5cgi
