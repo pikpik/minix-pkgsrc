@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- includes/osdep.h.orig	2009-08-08 14:12:41 +0300
++++ includes/osdep.h	2009-08-08 14:13:18 +0300
+@@ -89,7 +89,7 @@
+ #  include "cf/netbsd.h"
+ #endif
+ 
+-#ifdef __FreeBSD__
++#if defined(__FreeBSD__) || defined(__DragonFly__)
+ #  include "cf/freebsd.h"
+ #endif
+ 
