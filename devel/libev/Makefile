@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2009/08/16 15:38:01 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2009/08/17 11:08:30 drochner Exp $
 
-DISTNAME=	libev-3.7
-PKGREVISION=	1
+DISTNAME=	libev-3.8
 CATEGORIES=	devel
 MASTER_SITES=	http://dist.schmorp.de/libev/
 
