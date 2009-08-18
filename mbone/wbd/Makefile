@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2005/05/22 20:08:14 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/07 16:10:18 sborrill Exp $
 #
 
 DISTNAME=		wbd-1.0ucl4
@@ -15,6 +15,8 @@ WRKSRC=			${WRKDIR}/wbd
 BUILD_TARGET=		wbd
 NO_CONFIGURE=		yes
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+INSTALLATION_DIRS=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wbd ${DESTDIR}${PREFIX}/bin/wbd
