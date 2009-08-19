@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/03/04 06:59:04 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2009/07/18 02:49:15 smb Exp $
 
 DISTNAME=	frotz-2.43
 PKGREVISION=	3
@@ -12,6 +12,14 @@ HOMEPAGE=	http://www.cs.csubak.edu/~dgriffi/proj/frotz/
 COMMENT=	Curses-based interpreter for Infocom-compatible games
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} != "Darwin"
+MAKE_ENV+=	SOUND_DEFS=-DOSS_SOUND
+MAKE_ENV+=	SOUND_LIB=${LIBOSSAUDIO}
+MAKE_ENV+=	SOUND_DEV=${DEVOSSSOUND}
+.endif
 
 # setscrreg()
 INCOMPAT_CURSES=	NetBSD-1.5-* NetBSD-1.5.*-* NetBSD-1.5[A-V]-*
