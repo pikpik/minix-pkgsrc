@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2008/05/26 02:13:17 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2009/03/23 17:39:12 darcy Exp $
 
 DISTNAME=		nss-3.11.5
 CATEGORIES=		security
@@ -37,6 +37,12 @@ PLIST_SUBST+=		SO_SUFFIX=${SO_SUFFIX:Q}
 
 .if ${OPSYS} == "SunOS" && !empty(PKGSRC_COMPILER:Mgcc)
 MAKEFLAGS+=	NS_USE_GCC=YES
+.endif
+
+.if ${OPSYS} == "Linux"
+.  if defined(ABI) && ${ABI} == "64"
+MAKE_FLAGS+=		USE_64=1
+.  endif
 .endif
 
 pre-configure:
