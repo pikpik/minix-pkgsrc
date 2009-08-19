@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1213 2009/08/19 20:12:23 sno Exp $
+# $NetBSD: Makefile,v 1.1214 2009/08/19 20:19:02 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -714,6 +714,7 @@ SUBDIR+=	p5-MooseX-LazyRequire
 SUBDIR+=	p5-MooseX-Meta-TypeConstraint-ForceCoercion
 SUBDIR+=	p5-MooseX-Method-Signatures
 SUBDIR+=	p5-MooseX-MethodAttributes
+SUBDIR+=	p5-MooseX-NonMoose
 SUBDIR+=	p5-MooseX-Object-Pluggable
 SUBDIR+=	p5-MooseX-Param
 SUBDIR+=	p5-MooseX-Params-Validate
