@@ -7,6 +7,7 @@ share/diffuse/syntax/c++.syntax
 share/diffuse/syntax/csh.syntax
 share/diffuse/syntax/csharp.syntax
 share/diffuse/syntax/css.syntax
+share/diffuse/syntax/fortran.syntax
 share/diffuse/syntax/gettext.syntax
 share/diffuse/syntax/glsl.syntax
 share/diffuse/syntax/html.syntax
