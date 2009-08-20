@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.528 2009/08/17 17:51:41 sno Exp $
+# $NetBSD: Makefile,v 1.529 2009/08/18 12:57:30 hasso Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -29,6 +29,7 @@ SUBDIR+=	aalib
 SUBDIR+=	agg
 SUBDIR+=	aqsis
 SUBDIR+=	artist
+SUBDIR+=	autopano-sift-C
 SUBDIR+=	autotrace
 SUBDIR+=	aview
 SUBDIR+=	babl
@@ -225,6 +226,7 @@ SUBDIR+=	libkexiv2
 SUBDIR+=	libkipi
 SUBDIR+=	liblqr
 SUBDIR+=	libotf
+SUBDIR+=	libpano13
 SUBDIR+=	libpuzzle
 SUBDIR+=	librsvg
 SUBDIR+=	libscigraphica
