@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2009/05/19 08:59:19 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2009/07/23 17:18:43 abs Exp $
 
-DISTNAME=	jdk-1_5_0_19-linux-${DIST_ARCH}
-PKGNAME=	sun-jdk15-5.0.19
+DISTNAME=	jdk-1_5_0_20-linux-${DIST_ARCH}
+PKGNAME=	sun-jdk15-5.0.20
 MASTER_SITES=	# empty
 
 LICENSE=	sun-jdk6-license
