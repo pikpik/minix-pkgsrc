@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2008/05/26 02:13:24 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2009/07/07 20:29:41 joerg Exp $
 #
 # Note: we currently use the pre-built (-bin) distribution of Xerces-J,
 # because although Xerces runs fine under JDK 1.1, JDK 1.2 or greater is
@@ -10,7 +10,7 @@ PKGREVISION=	1
 CATEGORIES=	textproc www
 MASTER_SITES=	http://xerces.apache.org/dist/xerces-j/
 
-MAINTAINER=	jwise@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xerces.apache.org/xerces-j/
 COMMENT=	The Apache Project's validating XML parser with DOM and SAX support
 

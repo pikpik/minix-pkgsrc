@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2006/11/10 17:34:47 tv Exp $
+# $NetBSD: Makefile,v 1.34 2007/01/07 09:13:57 rillig Exp $
 #
 
 DISTNAME=	tclx8.3.5-src
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	lang tcl tk
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tclx/}
 
-MAINTAINER=	jwise@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tclx.sourceforge.net/
 COMMENT=	Extended Tcl (TclX), a set of Tcl extensions for system programming
 

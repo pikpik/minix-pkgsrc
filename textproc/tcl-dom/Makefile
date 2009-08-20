@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/10/04 22:01:00 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2009/07/07 20:41:51 joerg Exp $
 #
 
 DISTNAME=	TclDOM-1.6
@@ -7,7 +7,7 @@ CATEGORIES=	textproc www tcl
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 # newer releases are on sourceforge
 
-MAINTAINER=	jwise@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tclxml.sourceforge.net/tcldom.html
 COMMENT=	DOM implementation for use with TclXML or TclExpat
 

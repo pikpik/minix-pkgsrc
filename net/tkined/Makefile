@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/01/07 09:14:07 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2007/02/22 19:27:00 wiz Exp $
 #
 
 DISTNAME=	scotty-2.1.11
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	net tcl tk
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
 
-MAINTAINER=	jwise@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nosuchname.net/scotty/
 COMMENT=	Graphical network discovery and monitoring tool based on scotty
 

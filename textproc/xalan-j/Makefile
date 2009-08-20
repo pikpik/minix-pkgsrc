@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/05/26 02:13:24 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2009/07/07 20:30:31 joerg Exp $
 #
 # Note: we currently use the pre-built (-bin) distribution of Xalan-J,
 # because although Xalan runs fine under JDK 1.1, JDK 1.2 or greater is
@@ -9,7 +9,7 @@ PKGNAME=	xalan-j-1.2
 CATEGORIES=	textproc www
 MASTER_SITES=	http://xml.apache.org/dist/xalan-j/
 
-MAINTAINER=	jwise@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xml.apache.org/xalan-j/
 COMMENT=	The Apache Project's XSLT implementation
 
