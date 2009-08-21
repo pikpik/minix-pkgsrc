@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2009/05/19 08:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2009/05/20 00:58:09 wiz Exp $
 #
 
-DISTNAME=	obexapp-1.4.11
-PKGREVISION=	1
+DISTNAME=	obexapp-1.4.12
 CATEGORIES=	comms
 MASTER_SITES=	http://www.geocities.com/m_evmenkin/
 
