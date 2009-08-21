@@ -35,8 +35,6 @@ remove_pidfile()
 
 if [ -f /etc/rc.subr ]; then
 	load_rc_config $name
-	# XXX Previous commands seem to complete but not be ready.
-	sleep 5
 	run_rc_command "$1"
 else
 	@ECHO@ -n " ${name}"
