@@ -1,10 +1,9 @@
 # $NetBSD: Makefile,v 1.1 2009/07/30 16:07:08 zafer Exp $
 #
 
-VERSION=	3.2.6.1
+VERSION=	3.2.7
 DISTNAME=	FileZilla_${VERSION}_src
 PKGNAME=	filezilla-${VERSION}
-PKGREVISION=	1
 CATEGORIES=	net x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=filezilla/}
 EXTRACT_SUFX=	.tar.bz2
@@ -14,6 +13,7 @@ HOMEPAGE=	http://filezilla-project.org/
 COMMENT=	FTP, FTPS and SFTP client with intuitive GUI
 LICENSE=	gnu-gpl-v2
 
+DEPENDS+=	gnutls>=2.8.3:../../security/gnutls
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
