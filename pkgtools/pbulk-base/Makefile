@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.51 2009/04/09 00:48:11 joerg Exp $
+# $NetBSD: Makefile,v 1.1 2009/06/07 18:07:00 joerg Exp $
 
-DISTNAME=	pbulk-base-0.38
+DISTNAME=	pbulk-base-0.39
 COMMENT=	Core components of the modular bulk build framework
 
 PKG_DESTDIR_SUPPORT=	user-destdir
