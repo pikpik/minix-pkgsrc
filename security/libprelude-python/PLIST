@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${PYSITELIB}/_prelude.so
+${PYSITELIB}/prelude.py
+${PYSITELIB}/prelude.pyc
+${PYSITELIB}/PreludeEasy.py
+${PYSITELIB}/PreludeEasy.pyc
+${PYSITELIB}/_PreludeEasy.so
