@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- stun/utils.h.orig	2009-08-23 18:16:34 +0300
++++ stun/utils.h	2009-08-23 18:16:44 +0300
+@@ -49,6 +49,7 @@
+ #else
+ #include <sys/types.h>
+ #include <sys/socket.h>
++#include <netinet/in.h>
+ #endif
+ 
+ # ifdef __cplusplus
