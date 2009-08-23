@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/09/04 12:07:15 obache Exp $
 #
 
 DISTNAME=	lzmalib-0.0.1
@@ -10,6 +10,8 @@ HOMEPAGE=	http://tokyocabinet.sourceforge.net/misc/
 COMMENT=	Thin wrapper library of LZMA
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+CONFLICTS=	xz-[0-9]*
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
