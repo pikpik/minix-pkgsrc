@@ -1,6 +1,6 @@
-$NetBSD: patch-ac,v 1.4 2009/05/15 10:29:05 adam Exp $
+$NetBSD$
 
---- src/console/Makefile.in.orig	2009-02-18 12:40:09.000000000 +0100
+--- src/console/Makefile.in.orig	2009-06-05 15:02:10.000000000 +0200
 +++ src/console/Makefile.in
 @@ -48,7 +48,7 @@ all: Makefile bconsole @STATIC_CONS@
  
@@ -10,7 +10,7 @@ $NetBSD: patch-ac,v 1.4 2009/05/15 10:29:05 adam Exp $
 +	      $(DLIB) $(CONS_LIBS) ../lib/libbaccfg.la ../lib/libbac.la -lm $(LIBS) $(GETTEXT_LIBS) \
  	      $(OPENSSL_LIBS)
  
- static-bconsole: Makefile $(CONSOBJS) ../lib/libbac.a../lib/libbaccfg$(DEFAULT_ARCHIVE_TYPE)
+ static-bconsole: Makefile $(CONSOBJS) ../lib/libbac.a ../lib/libbaccfg$(DEFAULT_ARCHIVE_TYPE)
 @@ -90,19 +90,19 @@ install: all
  	fi
  	$(LIBTOOL_INSTALL) $(INSTALL_PROGRAM) bconsole $(DESTDIR)$(sbindir)/bconsole
