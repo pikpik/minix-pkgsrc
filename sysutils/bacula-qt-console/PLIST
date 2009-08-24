@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/05/16 08:06:18 adam Exp $
-bin/bat
+@comment $NetBSD: PLIST,v 1.2 2009/06/14 18:16:01 joerg Exp $
+sbin/bat
 share/doc/bacula/html/clients.html
 share/doc/bacula/html/console.html
 share/doc/bacula/html/filesets.html
