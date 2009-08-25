@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/03/22 04:53:40 manu Exp $
+# $NetBSD: Makefile,v 1.8 2009/05/19 08:59:34 wiz Exp $
 #
 
 PKGNAME=		nvnet-20050620nb1
@@ -20,8 +20,6 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
-
-BROKEN_IN=		pkgsrc-2006Q1 pkgsrc-2006Q4
 
 WRKSRC=		${WRKDIR}/nvnet
 
