@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/asyncns.h
+lib/libasyncns.la
+lib/pkgconfig/libasyncns.pc
+share/doc/libasyncns/README
+share/doc/libasyncns/README.html
+share/doc/libasyncns/style.css
