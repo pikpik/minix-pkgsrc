@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2008/05/26 02:13:19 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/06/05 22:33:53 zafer Exp $
 
 DISTNAME=	osp-Quake3-1.03a_full
 PKGNAME=	quake3server-osp-1.03a
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games net
 MASTER_SITES=	${MASTER_SITE_GENTOO:=distfiles/}
 EXTRACT_SUFX=	.zip

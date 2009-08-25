@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/03/03 01:10:06 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2008/05/26 02:13:16 joerg Exp $
 
 DISTNAME=		sewer
 PKGNAME=		sewer-2.6
@@ -22,7 +22,7 @@ NO_BUILD=		YES
 WRKSRC=			${WRKDIR}
 
 pre-install:
-.for goner in readme.txt* cvs images/cvs styles/cvs scripts/cvs
+.for goner in readme.txt* CVS images/CVS styles/CVS scripts/CVS
 	${RM} -fr ${WRKDIR}/${goner}
 .endfor
 

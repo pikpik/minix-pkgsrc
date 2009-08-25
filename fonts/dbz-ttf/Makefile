@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/03/03 20:17:12 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2009/05/19 08:59:14 wiz Exp $
 #
 
 DISTNAME=	dbz
@@ -18,6 +18,7 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
+EXTRACT_OPTS_ZIP=	-Laqo
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
