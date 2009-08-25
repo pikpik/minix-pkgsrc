@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2008/09/22 20:21:03 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2009/08/14 19:09:48 joerg Exp $
 #
 
 DISTNAME=	boolean_6_99
@@ -14,8 +14,6 @@ COMMENT=	GDSII viewer/editor + (boolean) operations on sets of 2d polygons
 PKG_DESTDIR_SUPPORT=	destdir
 
 WRKSRC=		${WRKDIR}/boolean
-# avoid lowercasing files
-EXTRACT_OPTS_ZIP=	-aqo
 
 GCC_REQD+=	3.0
 USE_TOOLS+=	gmake pax pkg-config tar

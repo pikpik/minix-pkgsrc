@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2008/11/01 05:15:42 obache Exp $
+# $NetBSD: Makefile,v 1.28 2008/11/21 17:36:43 chuck Exp $
 #
 
 DISTNAME=	simhv38-0
@@ -16,7 +16,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=0.6
 
-EXTRACT_OPTS_ZIP=	-aoq
 WRKSRC=			${WRKDIR}
 
 .include "../../mk/bsd.prefs.mk"

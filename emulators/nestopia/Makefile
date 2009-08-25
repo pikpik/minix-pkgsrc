@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/01/28 06:53:39 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2009/07/08 16:38:35 joerg Exp $
 #
 
 DISTNAME=	Nestopia140src
@@ -19,7 +19,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	c c++
 USE_TOOLS=	gmake pkg-config
-EXTRACT_OPTS_ZIP=	-aqo
 
 SUBST_CLASSES+=		oss
 SUBST_SED.oss=		-e "s,/dev/dsp,${DEVOSSAUDIO},"

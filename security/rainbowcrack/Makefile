@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/01/18 05:09:41 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2008/09/17 16:15:54 joerg Exp $
 #
 
 PKGNAME=		rainbowcrack-1.2
@@ -17,7 +17,6 @@ COMMENT=		Hash cracker
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DIRS=		src
-EXTRACT_OPTS_ZIP=	-aqo
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		patch
 MAKE_FILE=		${FILESDIR}/Makefile

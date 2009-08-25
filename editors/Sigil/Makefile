@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/06 06:23:23 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2009/08/19 14:43:36 wiz Exp $
 #
 
 DISTNAME=	Sigil_code_0.1.2
@@ -17,7 +17,6 @@ INSTALLATION_DIRS=	bin libexec/Sigil/data
 
 USE_LANGUAGES=	c c++
 USE_CMAKE=	yes
-EXTRACT_OPTS_ZIP=	-aqo
 
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
