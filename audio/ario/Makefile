@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/27 19:53:20 drochner Exp $
 #
 
 DISTNAME=	ario-1.3
@@ -11,7 +11,7 @@ COMMENT=	mpd client
 LICENSE=	gnu-gpl-v2
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	intltool pkg-config gmake
+USE_TOOLS+=	intltool msgfmt pkg-config gmake
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS+= --disable-avahi
 PKG_DESTDIR_SUPPORT= user-destdir
