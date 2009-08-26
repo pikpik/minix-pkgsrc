@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.24 2008/12/18 16:46:29 hira Exp $
+# $NetBSD: buildlink3.mk,v 1.25 2009/03/20 19:25:16 joerg Exp $
 
 BUILDLINK_TREE+=	xfce4-print
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	xfce4-print
 XFCE4_PRINT_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.xfce4-print+=	xfce4-print>=4.4.3nb1
-BUILDLINK_ABI_DEPENDS.xfce4-print?=	xfce4-print>=4.4.3nb1
+BUILDLINK_ABI_DEPENDS.xfce4-print?=	xfce4-print>=4.4.3nb2
 BUILDLINK_PKGSRCDIR.xfce4-print?=	../../print/xfce4-print
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

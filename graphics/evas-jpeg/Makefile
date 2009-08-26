@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 19:06:55 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/07 21:12:12 joerg Exp $
 
 PKGNAME=	${DISTNAME:S/evas/evas-jpeg/}
+PKGREVISION=	1
 
 COMMENT=	Evas JPEG image loader
 

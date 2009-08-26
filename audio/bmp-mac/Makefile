@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2007/12/29 10:09:07 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/12 02:14:13 joerg Exp $
 #
 
 DISTNAME=	bmp-mac-0.1.1
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://bsd.cenkes.org/myports/
 

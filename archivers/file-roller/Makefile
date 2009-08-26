@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.94 2009/07/09 18:21:44 drochner Exp $
+# $NetBSD: Makefile,v 1.95 2009/07/22 09:01:16 wiz Exp $
 #
 
 DISTNAME=	file-roller-2.26.3
+PKGREVISION=	1
 CATEGORIES=	archivers gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/file-roller/2.26/}
 EXTRACT_SUFX=	.tar.bz2

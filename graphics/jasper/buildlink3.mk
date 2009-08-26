@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2007/01/17 23:47:20 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:24:41 joerg Exp $
 
 BUILDLINK_TREE+=	jasper
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	jasper
 JASPER_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.jasper+=	jasper>=1.600.0
-BUILDLINK_ABI_DEPENDS.jasper+=	jasper>=1.900.0
+BUILDLINK_ABI_DEPENDS.jasper+=	jasper>=1.900.1nb3
 BUILDLINK_PKGSRCDIR.jasper?=	../../graphics/jasper
 
 .include "../../graphics/jpeg/buildlink3.mk"

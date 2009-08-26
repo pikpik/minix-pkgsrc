@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2009/08/10 16:57:43 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2009/08/11 18:57:07 drochner Exp $
 #
 
 DISTNAME=	wxsvg-1.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wxsvg/}
 EXTRACT_SUFX=	.tar.bz2

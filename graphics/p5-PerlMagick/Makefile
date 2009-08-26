@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2008/10/28 10:42:02 adam Exp $
+# $NetBSD: Makefile,v 1.62 2009/07/26 03:02:27 obache Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,6 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGNAME=	p5-PerlMagick-${DISTVERSION}
 
+PKGREVISION=	1
 SVR4_PKGNAME=	p5pma
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

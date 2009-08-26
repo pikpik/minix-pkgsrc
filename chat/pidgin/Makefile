@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/06/12 16:31:39 smb Exp $
+# $NetBSD: Makefile,v 1.17 2009/07/22 09:01:21 wiz Exp $
 #
 # XXX appease pkglint
 #PKGNAME=		pidgin-${PIDGIN_VERSION}
@@ -8,7 +8,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include		"../../chat/libpurple/Makefile.common"
 
-#PKGREVISION=		1
+PKGREVISION=		1
 
 USE_TOOLS+=		msgfmt intltool
 

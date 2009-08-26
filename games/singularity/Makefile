@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2008/04/22 20:55:37 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/05/21 11:02:55 wiz Exp $
 #
 
 DISTNAME=		singularity_0.28
 PKGNAME=		${DISTNAME:S/_/-/}
+PKGREVISION=		1
 CATEGORIES=		games
 MASTER_SITES=		http://www.emhsoft.com/singularity/
 

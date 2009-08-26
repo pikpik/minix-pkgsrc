@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.14 2006/07/08 23:10:51 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.15 2009/03/20 19:24:40 joerg Exp $
 
 BUILDLINK_TREE+=	gtkglext
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	gtkglext
 GTKGLEXT_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.gtkglext+=	gtkglext>=1.2.0
-BUILDLINK_ABI_DEPENDS.gtkglext?=	gtkglext>=1.2.0nb1
+BUILDLINK_ABI_DEPENDS.gtkglext?=	gtkglext>=1.2.0nb3
 BUILDLINK_PKGSRCDIR.gtkglext?=	../../graphics/gtkglext
 
 .include "../../graphics/glu/buildlink3.mk"

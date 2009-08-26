@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2008/05/19 10:43:02 tnn Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2009/03/20 19:25:37 joerg Exp $
 
 BUILDLINK_TREE+=	seamonkey
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	seamonkey
 SEAMONKEY_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.seamonkey+=	seamonkey>=1.0
-BUILDLINK_ABI_DEPENDS.seamonkey?=	seamonkey>=1.0.1nb1
+BUILDLINK_ABI_DEPENDS.seamonkey?=	seamonkey>=1.1.17nb1
 BUILDLINK_PKGSRCDIR.seamonkey?=		../../www/seamonkey
 
 .include "../../graphics/freetype2/buildlink3.mk"

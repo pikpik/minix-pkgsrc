@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/11/23 23:40:12 heinz Exp $
+# $NetBSD: Makefile,v 1.5 2009/01/04 14:08:15 shattered Exp $
 #
 
 DISTNAME=		dvdisaster-0.70.6
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dvdisaster/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/12/14 11:06:42 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:24:37 joerg Exp $
 #
 
 BUILDLINK_TREE+=	clutter-gtk
@@ -7,6 +7,7 @@ BUILDLINK_TREE+=	clutter-gtk
 CLUTTER_GTK_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.clutter-gtk+=	clutter-gtk>=0.8.0
+BUILDLINK_ABI_DEPENDS.clutter-gtk?=	clutter-gtk>=0.8.3nb1
 BUILDLINK_PKGSRCDIR.clutter-gtk?=	../../graphics/clutter-gtk
 
 .include "../../x11/gtk2/buildlink3.mk"

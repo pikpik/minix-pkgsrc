@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2009/02/23 23:13:11 cube Exp $
+# $NetBSD: Makefile,v 1.5 2009/05/21 11:03:30 zafer Exp $
 #
 
 DISTNAME=	jpeginfo-1.6.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GENTOO:=distfiles/}
 

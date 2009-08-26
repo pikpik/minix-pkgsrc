@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2009/06/12 17:24:53 ahoka Exp $
+# $NetBSD: Makefile,v 1.10 2009/08/11 12:46:41 drochner Exp $
 # FreeBSD Id: ports/multimedia/dvd-slideshow/Makefile,v 1.12 2007/09/23 04:42:06 edwin Exp
 
 DISTNAME=	dvd-slideshow-0.7.5
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dvd-slideshow/}
 

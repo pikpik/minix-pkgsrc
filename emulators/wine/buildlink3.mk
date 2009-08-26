@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.13 2007/03/18 11:11:09 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2009/03/20 19:24:33 joerg Exp $
 
 BUILDLINK_TREE+=	wine
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	wine
 WINE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.wine+=	wine>=0.9.6nb1
+BUILDLINK_ABI_DEPENDS.wine?=	wine>=1.0.1nb3
 BUILDLINK_PKGSRCDIR.wine?=	../../emulators/wine
 
 pkgbase:= wine

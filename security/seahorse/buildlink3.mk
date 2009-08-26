@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2008/10/27 16:51:59 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2009/03/20 19:25:22 joerg Exp $
 
 BUILDLINK_TREE+=	seahorse
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	seahorse
 SEAHORSE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.seahorse+=	seahorse>=2.24.1
+BUILDLINK_ABI_DEPENDS.seahorse?=	seahorse>=2.26.2nb1
 BUILDLINK_PKGSRCDIR.seahorse?=	../../security/seahorse
 
 .include "../../sysutils/dbus-glib/buildlink3.mk"

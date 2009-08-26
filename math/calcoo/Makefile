@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2007/09/03 15:59:14 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:36 joerg Exp $
 #
 
 DISTNAME=		calcoo-1.3.18
+PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=calcoo/}
 

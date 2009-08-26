@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 23:44:22 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/07 21:12:11 joerg Exp $
 
 PKGNAME=	${DISTNAME:S/evas/evas-gif/}
+PKGREVISION=	1
 
 COMMENT=	Evas GIF image loader
 

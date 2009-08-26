@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.21 2008/10/16 14:02:29 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2009/03/20 19:25:37 joerg Exp $
 
 BUILDLINK_TREE+=	libgtkhtml
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	libgtkhtml
 LIBGTKHTML_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libgtkhtml+=		libgtkhtml>=2.6.0
-BUILDLINK_ABI_DEPENDS.libgtkhtml+=	libgtkhtml>=2.6.3nb10
+BUILDLINK_ABI_DEPENDS.libgtkhtml+=	libgtkhtml>=2.6.3nb12
 BUILDLINK_PKGSRCDIR.libgtkhtml?=	../../www/libgtkhtml
 
 .include "../../textproc/libxml2/buildlink3.mk"

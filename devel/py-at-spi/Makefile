@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2009/07/08 13:55:58 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/07/10 22:22:39 abs Exp $
 #
 
 DISTNAME=		at-spi-1.26.0
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/at-spi/1.26/}
 EXTRACT_SUFX=		.tar.bz2

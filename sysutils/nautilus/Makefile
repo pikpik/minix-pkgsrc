@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.100 2009/05/19 21:46:23 wiz Exp $
+# $NetBSD: Makefile,v 1.101 2009/07/22 09:01:47 wiz Exp $
 #
 
 DISTNAME=		nautilus-2.26.3
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/nautilus/2.26/}
 EXTRACT_SUFX=		.tar.bz2

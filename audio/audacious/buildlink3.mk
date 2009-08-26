@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2009/03/20 19:23:52 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2009/06/14 22:57:58 joerg Exp $
 
 BUILDLINK_TREE+=	audacious
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	audacious
 AUDACIOUS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.audacious+=	audacious>=1.5.0
+BUILDLINK_ABI_DEPENDS.audacious?=	audacious>=1.5.1nb1
 BUILDLINK_PKGSRCDIR.audacious?=	../../audio/audacious
 BUILDLINK_DEPMETHOD.audacious?=	build
 

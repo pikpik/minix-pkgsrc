@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/07/14 12:56:05 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/08/03 12:58:28 joerg Exp $
 
 DISTNAME=		koverartist-0.5
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		graphics kde
 MASTER_SITES=		# empty
 EXTRACT_SUFX=		.tar.bz2

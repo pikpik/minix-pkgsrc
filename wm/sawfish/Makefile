@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.50 2009/07/14 10:33:28 tnn Exp $
+# $NetBSD: Makefile,v 1.51 2009/07/22 09:01:50 wiz Exp $
 #
 
 DISTNAME=		sawfish-1.5.0
+PKGREVISION=		1
 CATEGORIES=		x11 wm
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sawmill/}
 EXTRACT_SUFX=		.tar.bz2

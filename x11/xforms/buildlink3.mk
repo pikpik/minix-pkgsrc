@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/12/15 20:33:05 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2009/03/20 19:25:54 joerg Exp $
 
 BUILDLINK_TREE+=	xforms
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	xforms
 XFORMS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.xforms+=	xforms>=1.0nb2
-BUILDLINK_ABI_DEPENDS.xforms+=	xforms>=1.0nb5
+BUILDLINK_ABI_DEPENDS.xforms+=	xforms>=1.0nb6
 BUILDLINK_PKGSRCDIR.xforms?=	../../x11/xforms
 
 .include "../../graphics/jpeg/buildlink3.mk"

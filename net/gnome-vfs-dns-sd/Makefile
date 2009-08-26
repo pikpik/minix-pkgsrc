@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2008/11/23 13:45:33 jmcneill Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/12/20 21:21:08 jmcneill Exp $
 #
 
 GNOME_VFS_NAME=		dns-sd
 GNOME_VFS_FLAG=		avahi
+PKGREVISION=		1
 CATEGORIES=		net
 
 PKG_DESTDIR_SUPPORT=	user-destdir

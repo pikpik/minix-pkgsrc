@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2009/02/09 22:56:21 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/07/08 14:04:06 joerg Exp $
 #
 
 DISTNAME=	tunapie-2.1.6
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tunapie/}
 

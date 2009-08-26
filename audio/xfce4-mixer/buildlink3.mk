@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.22 2008/12/18 16:46:29 hira Exp $
+# $NetBSD: buildlink3.mk,v 1.23 2009/03/20 19:23:59 joerg Exp $
 
 BUILDLINK_TREE+=	xfce4-mixer
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	xfce4-mixer
 XFCE4_MIXER_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.xfce4-mixer+=	xfce4-mixer>=4.4.3nb1
+BUILDLINK_ABI_DEPENDS.xfce4-mixer?=	xfce4-mixer>=4.4.3nb2
 BUILDLINK_PKGSRCDIR.xfce4-mixer?=	../../audio/xfce4-mixer
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.24 2008/12/18 16:46:29 hira Exp $
+# $NetBSD: buildlink3.mk,v 1.25 2009/03/20 19:25:35 joerg Exp $
 
 BUILDLINK_TREE+=	xfce4-wm
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	xfce4-wm
 XFCE4_WM_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.xfce4-wm+=	xfce4-wm>=4.4.3nb1
+BUILDLINK_ABI_DEPENDS.xfce4-wm?=	xfce4-wm>=4.4.3nb2
 BUILDLINK_PKGSRCDIR.xfce4-wm?=	../../wm/xfce4-wm
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

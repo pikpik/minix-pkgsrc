@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2009/04/16 19:08:07 tnn Exp $
+# $NetBSD: Makefile,v 1.7 2009/07/14 10:10:00 tnn Exp $
 
 DISTNAME=		rep-gtk-0.18.6r2
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
+PKGREVISION=		1
 CATEGORIES=		x11 lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=rep-gtk/}
 EXTRACT_SUFX=		.tar.bz2

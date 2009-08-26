@@ -2,6 +2,7 @@
 #
 
 DISTNAME=		gramps-3.1.1
+PKGREVISION=		1
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gramps/}
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2006/05/15 21:05:49 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/04 06:59:06 jlam Exp $
 #
 
 DISTNAME=	hugov31_unix_source
 PKGNAME=	wxhugo-3.1.02
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_IFARCHIVE:=programming/hugo/source/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTFILE_WX}

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2006/07/07 15:49:32 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2008/06/20 01:09:25 joerg Exp $
 #
 
 DISTNAME=		blccc-1.99
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		misc
 MASTER_SITES=		http://sven.gimp.org/blinkenlights/
 

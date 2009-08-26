@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2008/10/28 11:06:38 adam Exp $
+# $NetBSD: Makefile,v 1.9 2009/01/13 14:08:07 obache Exp $
 
 DISTNAME=		kismet-2008-05-R1
 PKGNAME=		kismet-2008.05.01
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://www.kismetwireless.net/code/
 

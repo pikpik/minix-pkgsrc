@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/08/11 02:53:02 gdt Exp $
+# $NetBSD: Makefile,v 1.2 2007/08/16 22:31:11 joerg Exp $
 #
 
 DISTNAME=	libdrg-0.0.81
+PKGREVISION=	1
 CATEGORIES=	geography
 MASTER_SITES=	http://www.lexort.com/software/
 

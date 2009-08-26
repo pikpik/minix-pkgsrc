@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:28 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/02/09 18:40:25 joerg Exp $
 #
 
 DISTNAME=		compizconfig-python-0.6.0
 PKGNAME=		${PYPKGPREFIX}-compizconfig-0.6.0
+PKGREVISION=		1
 CATEGORIES=		devel gnome
 MASTER_SITES=		http://releases.compiz-fusion.org/0.6.0/
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2009/07/22 09:01:50 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2009/08/21 22:42:59 wiz Exp $
 
 DISTNAME=		obconf-2.0.3
+PKGREVISION=		1
 CATEGORIES=		wm
 MASTER_SITES=		http://icculus.org/openbox/obconf/
 # PR pkg/36489

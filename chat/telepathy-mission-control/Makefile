@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/02/09 22:56:22 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/04/01 16:20:41 roy Exp $
 #
 
 DISTNAME=	telepathy-mission-control-4.67
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mission-control/}
 

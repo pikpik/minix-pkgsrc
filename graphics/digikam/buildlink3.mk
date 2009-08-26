@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2009/01/07 01:43:49 gdt Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2009/03/20 19:24:37 joerg Exp $
 
 BUILDLINK_TREE+=	digikam
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	digikam
 DIGIKAM_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.digikam+=	digikam>=0.8.1
-BUILDLINK_ABI_DEPENDS.digikam?=	digikam>=0.9.5beta1nb1
+BUILDLINK_ABI_DEPENDS.digikam?=	digikam>=0.9.6nb1
 BUILDLINK_PKGSRCDIR.digikam?=	../../graphics/digikam
 
 .include "../../databases/sqlite3/buildlink3.mk"

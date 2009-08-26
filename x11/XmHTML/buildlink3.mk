@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/12/15 20:33:03 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2009/03/20 19:25:39 joerg Exp $
 
 BUILDLINK_TREE+=	XmHTML
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	XmHTML
 XMHTML_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.XmHTML+=	XmHTML>=1.1.7nb2
-BUILDLINK_ABI_DEPENDS.XmHTML+=	XmHTML>=1.1.7nb6
+BUILDLINK_ABI_DEPENDS.XmHTML+=	XmHTML>=1.1.7nb7
 BUILDLINK_PKGSRCDIR.XmHTML?=	../../x11/XmHTML
 
 .include "../../graphics/jpeg/buildlink3.mk"

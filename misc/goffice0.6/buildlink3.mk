@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2009/03/20 19:25:00 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2009/08/02 10:54:37 drochner Exp $
 
 BUILDLINK_TREE+=	goffice0.6
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	goffice0.6
 GOFFICE0.6_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.goffice0.6+=	goffice0.6>=0.6.1
-BUILDLINK_ABI_DEPENDS.goffice0.6?=	goffice0.6>=0.6.1nb1
+BUILDLINK_ABI_DEPENDS.goffice0.6?=	goffice0.6>=0.6.6nb2
 BUILDLINK_PKGSRCDIR.goffice0.6?=	../../misc/goffice0.6
 
 #.include "../../converters/libiconv/buildlink3.mk"

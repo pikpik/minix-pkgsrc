@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2006/06/12 16:28:07 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2007/12/29 09:50:14 wiz Exp $
 #
 
 DISTNAME=		circuslinux-1.0.3
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.billsgames.com/unix/x/circus-linux/src/
 
