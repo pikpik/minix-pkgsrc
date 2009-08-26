@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2007/01/09 08:07:44 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2009/07/07 18:44:26 joerg Exp $
 #
 
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	x11
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

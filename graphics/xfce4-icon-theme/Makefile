@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2007/04/12 09:55:09 martti Exp $
+# $NetBSD: Makefile,v 1.8 2008/07/14 12:56:06 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 DISTNAME=	xfce4-icon-theme-${XFCE4_VERSION}
+PKGREVISION=	1
 CATEGORIES=	graphics
 COMMENT=	Xfce icon themes
 
