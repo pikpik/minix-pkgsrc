@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 17:50:36 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2008/05/24 21:45:16 tnn Exp $
 #
 
-DISTNAME=		xcmiscproto-1.1.2
+DISTNAME=		xcmiscproto-1.2.0
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=proto/}
 EXTRACT_SUFX=		.tar.bz2
