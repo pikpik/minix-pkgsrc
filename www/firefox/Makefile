@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.52 2009/08/08 04:14:18 tnn Exp $
+# $NetBSD: Makefile,v 1.53 2009/08/26 19:58:26 sno Exp $
 #
 
 DISTNAME=	firefox-${FIREFOX_VER}-source
 PKGNAME=	firefox-${FIREFOX_VER}
 FIREFOX_VER=	3.5.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_MOZILLA:=firefox/releases/${FIREFOX_VER}/source/}
 EXTRACT_SUFX=	.tar.bz2
@@ -37,8 +37,7 @@ CONFIGURE_ARGS+=	--enable-libxul
 CONFIGURE_ARGS+=	--disable-tests --disable-pedantic
 CONFIGURE_ARGS+=	--enable-crypto
 CONFIGURE_ARGS+=	--enable-optimize=-O2 --with-pthreads
-CONFIGURE_ARGS+=	--disable-gnomevfs --disable-gnomeui
-CONFIGURE_ARGS+=	--disable-dbus --disable-javaxpcom
+CONFIGURE_ARGS+=	--disable-gnomeui --disable-javaxpcom
 CONFIGURE_ARGS+=	--enable-default-toolkit=cairo-gtk2
 CONFIGURE_ARGS+=	--enable-svg --enable-mathml
 CONFIGURE_ARGS+=	--enable-system-cairo --enable-system-lcms
