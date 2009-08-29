@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2007/01/18 17:30:44 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:14 tnn Exp $
 #
 
-DISTNAME=		damageproto-1.1.0
+DISTNAME=		damageproto-1.2.0
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=proto/}
 EXTRACT_SUFX=		.tar.bz2
