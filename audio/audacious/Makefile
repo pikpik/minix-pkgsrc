@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/07/22 09:01:17 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/08/26 19:56:59 sno Exp $
 #
 
 DISTNAME=		audacious-1.5.1
@@ -10,6 +10,8 @@ EXTRACT_SUFX=		.tbz2
 MAINTAINER=		jfranz@bsdprojects.net
 HOMEPAGE=		http://audacious-media-player.org/
 COMMENT=		Media player based on BMP and XMMS
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
