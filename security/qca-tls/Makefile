@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/01/18 05:09:41 tnn Exp $
+# $NetBSD: Makefile,v 1.25 2009/08/26 19:58:16 sno Exp $
 
 DISTNAME=	qca-tls-1.0
 PKGREVISION=	5
@@ -10,6 +10,8 @@ MAINTAINER=	jdolecek@NetBSD.org
 HOMEPAGE=	http://delta.affinix.com/qca/
 COMMENT=	Cross-platform crypto API for QT - TLS plugin
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes
 HAS_CONFIGURE=	yes
@@ -17,6 +19,8 @@ USE_LANGUAGES=	c c++
 
 CONFIGURE_ARGS+=	--with-openssl-inc=${SSLBASE}/include
 CONFIGURE_ARGS+=	--with-openssl-lib=${SSLBASE}/lib
+
+INSTALL_MAKE_FLAGS+=	INSTALL_ROOT=${DESTDIR:Q}
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../x11/qt3-libs/buildlink3.mk"
