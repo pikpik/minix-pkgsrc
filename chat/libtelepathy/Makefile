@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/02/09 22:56:21 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/04/01 16:20:41 roy Exp $
 #
 
 DISTNAME=	libtelepathy-0.3.3
@@ -9,6 +9,8 @@ MASTER_SITES=	http://telepathy.freedesktop.org/releases/libtelepathy/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://telepathy.freedesktop.org/wiki/
 COMMENT=	Unified framework for many different kinds of real-time communications
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
