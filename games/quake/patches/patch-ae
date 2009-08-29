@@ -1,7 +1,7 @@
-$NetBSD: patch-ae,v 1.7 2003/03/09 19:46:53 jschauma Exp $
+$NetBSD: patch-ae,v 1.8 2005/02/17 18:23:24 xtraeme Exp $
 
---- qw/makefile.linux.orig	Wed Apr 21 20:16:24 1999
-+++ qw/makefile.linux
+--- QW/Makefile.Linux.orig	Wed Apr 21 20:16:24 1999
++++ QW/Makefile.Linux
 @@ -27,41 +27,51 @@
  RPMARCH=i386
  endif
