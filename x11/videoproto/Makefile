@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/11/03 20:18:23 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2008/05/24 21:45:16 tnn Exp $
 #
 
-DISTNAME=		videoproto-2.2.2
+DISTNAME=		videoproto-2.3.0
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=proto/}
 EXTRACT_SUFX=		.tar.bz2
