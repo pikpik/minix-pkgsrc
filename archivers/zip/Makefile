@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.53 2007/06/05 06:02:46 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2009/08/26 22:33:15 wiz Exp $
 
 DISTNAME=	zip30
 PKGNAME=	zip-3.0
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.info-zip.org/pub/infozip/src/
 EXTRACT_SUFX=	.tgz
