@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2009/05/16 20:38:39 zafer Exp $
+# $NetBSD: Makefile,v 1.33 2009/07/08 14:23:23 joerg Exp $
 
 DISTNAME=		lmbench-2alpha11
 PKGNAME=		lmbench-2.11a
@@ -8,7 +8,7 @@ MASTER_SITES=		ftp://ftp.kreonet.re.kr/tools/benchmark/lmbench/old/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.bitmover.com/lm/lmbench/
+HOMEPAGE=		http://lmbench.sourceforge.net/
 COMMENT=		Complete benchmark that gives a large amount of information
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
