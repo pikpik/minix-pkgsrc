@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 2009/06/07 18:07:00 joerg Exp $
+# $NetBSD: Makefile,v 1.95 2009/06/08 14:10:54 imil Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -44,6 +44,7 @@ SUBDIR+=	pkgfind
 SUBDIR+=	pkgin
 SUBDIR+=	pkglint
 SUBDIR+=	pkgse
+SUBDIR+=	pkgsrc-todo
 SUBDIR+=	pkgsurvey
 SUBDIR+=	port2pkg
 #SUBDIR+=	prereq-readme	# Only used by the README.html generation
