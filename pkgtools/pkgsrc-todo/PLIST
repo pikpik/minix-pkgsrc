@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/add_todo
+bin/obsolete_todo
+man/man1/add_todo.1
+man/man1/obsolete_todo.1
