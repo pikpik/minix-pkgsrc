@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/04/21 01:09:51 bjs Exp $
+# $NetBSD: Makefile,v 1.7 2008/09/17 01:18:42 bjs Exp $
 #
 
 PKGNAME=		scmgit-docs-${GIT_VERSION}
@@ -15,6 +15,8 @@ BUILD_TARGET=		doc
 
 USE_LANGUAGES=		c
 INSTALL_TARGET=		install-doc
+
+UNLIMIT_RESOURCES+=	datasize
 
 .include "../../devel/scmgit/Makefile.common"
 
