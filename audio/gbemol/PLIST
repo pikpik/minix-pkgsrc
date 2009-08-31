@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/gbemol
+share/applications/gbemol.desktop
+share/pixmaps/gbemol.png
