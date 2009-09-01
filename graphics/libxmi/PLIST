@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/xmi.h
+info/libxmi.info
+lib/libxmi.la
