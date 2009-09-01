@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.532 2009/08/21 23:02:55 wiz Exp $
+# $NetBSD: Makefile,v 1.533 2009/09/01 14:41:13 adam Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -148,6 +148,7 @@ SUBDIR+=	gle
 SUBDIR+=	glew
 SUBDIR+=	glitz
 SUBDIR+=	gliv
+SUBDIR+=	glpng
 SUBDIR+=	glu
 SUBDIR+=	glut
 SUBDIR+=	glx-utils
