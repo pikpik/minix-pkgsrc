@@ -14,3 +14,29 @@ $NetBSD$
  
    SSLv2Box->clear();
    SSLv3Box->clear();
+@@ -2337,8 +2341,10 @@ SSL_METHOD *meth;
+   CipherItem *item;
+   for (i=0; ; i++) {
+     int j, k;
+-    SSL_CIPHER *sc;
+-    sc = (meth->get_cipher)(i);
++#if defined(OPENSSL_VERSION_NUMBER) && OPENSSL_VERSION_NUMBER >= 0x10000000L
++    const
++#endif
++    SSL_CIPHER *sc = (meth->get_cipher)(i);
+     if (!sc)
+       break;
+     // Leak of sc*?
+@@ -2365,8 +2371,10 @@ SSL_METHOD *meth;
+ 
+   for (i=0; ; i++) {
+     int j, k;
+-    SSL_CIPHER *sc;
+-    sc = (meth->get_cipher)(i);
++#if defined(OPENSSL_VERSION_NUMBER) && OPENSSL_VERSION_NUMBER >= 0x10000000L
++    const
++#endif
++    SSL_CIPHER *sc = (meth->get_cipher)(i);
+     if (!sc)
+       break;
+     // Leak of sc*?
