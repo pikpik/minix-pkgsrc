@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/02/22 19:27:19 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2007/07/30 16:12:56 jlam Exp $
 
 DISTNAME=		MozillaFirebird-bin-acroread-1.0
 PKGREVISION=		2
 
-MAINTAINER=		kei@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Acrobat Reader 4 plugin for firefox-bin
 
 DEPENDS+=		acroread-4.[0-9]*:../../print/acroread

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2008/07/14 12:56:11 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2009/04/08 23:28:34 joerg Exp $
 
 DISTNAME=	ja-ptex-1.0
 PKGREVISION=	3
 CATEGORIES=	meta-pkgs print japanese
 
-MAINTAINER=	kei@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Meta-package for pTeX et al, supports Japanese language
 
 META_PACKAGE=		# empty

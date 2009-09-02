@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2009/06/09 21:31:04 minskim Exp $
+# $NetBSD: Makefile,v 1.31 2009/07/22 09:01:42 wiz Exp $
 
 DISTNAME=	dvipdfmx-20070518
 PKGNAME=	${DISTNAME:S/-/-0.0.0./}
@@ -6,7 +6,7 @@ PKGREVISION=	2
 CATEGORIES=	print converters
 MASTER_SITES=	http://project.ktug.or.kr/dvipdfmx/snapshot/release/
 
-MAINTAINER=	kei@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://project.ktug.or.kr/dvipdfmx/
 COMMENT=	Dvi to pdf converter with CID-keyed font support
 

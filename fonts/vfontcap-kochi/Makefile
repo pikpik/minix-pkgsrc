@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/03/03 20:17:13 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2009/04/09 00:48:08 joerg Exp $
 
 DISTNAME=		vfontcap-kochi-0.0
 PKGREVISION=		3
@@ -6,7 +6,7 @@ CATEGORIES=		fonts x11 japanese
 MASTER_SITES=		# empty
 DISTFILES=		# empty
 
-MAINTAINER=		kei@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Configuration file for VFlib to use kochi-ttf
 
 DEPENDS+=		ja-vflib-lib-[0-9]*:../../print/ja-vflib-lib

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/06/24 10:48:06 hira Exp $
+# $NetBSD: Makefile,v 1.21 2009/04/10 17:49:45 minskim Exp $
 
 DISTNAME=	ptex-texmf-2.4
 PKGNAME=	ja-ptex-share-2.4
@@ -14,7 +14,7 @@ DISTFILES=	ptex-texmf-2.4${EXTRACT_SUFX} \
 		standard${EXTRACT_SUFX} \
 		morisawa${EXTRACT_SUFX}
 
-MAINTAINER=	kei@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ascii.co.jp/pb/ptex/
 COMMENT=	Library files for pTeX
 

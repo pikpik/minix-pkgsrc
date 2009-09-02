@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/10/19 19:18:56 he Exp $
+# $NetBSD: Makefile,v 1.16 2009/05/21 14:54:23 sno Exp $
 
 DISTNAME=		Text-ChaSen-1.04
 PKGNAME=		p5-${DISTNAME}
@@ -6,7 +6,7 @@ SVR4_PKGNAME=		p5tcs
 CATEGORIES=		japanese textproc perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Text/}
 
-MAINTAINER=		kei@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Text-ChaSen/
 COMMENT=		Perl5 module to use ChaSen
 
