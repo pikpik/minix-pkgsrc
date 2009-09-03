@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.22 2008/04/12 22:43:09 jlam Exp $
+@comment $NetBSD$
 bin/gpg
 bin/gpg-zip
 bin/gpgsplit
@@ -8,6 +8,7 @@ libexec/gnupg/gpgkeys_curl
 libexec/gnupg/gpgkeys_finger
 libexec/gnupg/gpgkeys_hkp
 ${PLIST.ldap}libexec/gnupg/gpgkeys_ldap
+man/man1/gpg-zip.1
 man/man1/gpg.1
 man/man1/gpg.ru.1
 man/man1/gpgv.1
