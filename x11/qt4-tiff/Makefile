@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/07/07 18:01:07 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/26 19:58:40 sno Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -23,7 +23,7 @@ IMGFMTDIR=	${QTPREFIX}/plugins/imageformats
 INSTALLATION_DIRS=	${IMGFMTDIR}
 
 do-install:
-	${LIBTOOL} ${INSTALL_DATA} ${WRKSRC}/plugins/imageformats/libqtiff.la \
+	${LIBTOOL} --mode=install ${INSTALL_DATA} ${WRKSRC}/plugins/imageformats/libqtiff.la \
 		${DESTDIR}${IMGFMTDIR}
 
 # up to 4.3.2 a builtin libtiff is used
