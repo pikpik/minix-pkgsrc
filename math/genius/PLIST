@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.5 2009/04/08 18:22:54 drochner Exp $
+@comment $NetBSD$
 bin/genius
-bin/gnome-genius
+${PLIST.x11}bin/gnome-genius
 include/genius/compil.h
 include/genius/dict.h
 include/genius/eval.h
@@ -16,10 +16,11 @@ include/genius/plug_api.h
 include/genius/structs.h
 include/genius/utype.h
 lib/genius/libtestplugin.la
-libexec/genius-readline-helper-fifo
+${PLIST.x11}libexec/genius-readline-helper-fifo
 share/application-registry/genius.applications
-share/applications/gnome-genius.desktop
+${PLIST.x11}share/applications/gnome-genius.desktop
 share/genius/gel/calculus/differentiation.gel
+share/genius/gel/calculus/fourier.gel
 share/genius/gel/calculus/integration.gel
 share/genius/gel/calculus/limits.gel
 share/genius/gel/calculus/loader.gel
