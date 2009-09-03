@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2008/06/20 01:09:24 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2009/09/03 12:03:37 joerg Exp $
 
 DISTNAME=	WMMail.app-0.64
 PKGNAME=	wmmail-0.64
@@ -11,9 +11,7 @@ COMMENT=	xbiff like "mail-checker" for WindowMaker
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-NO_SRC_ON_FTP=	already in MASTER_SITE_LOCAL
-
-#DEPENDS+=	windowmaker>=0.80.0nb1:../../wm/windowmaker
+DEPENDS+=	windowmaker>=0.80.0nb1:../../wm/windowmaker
 
 USE_X11BASE=		yes
 USE_TOOLS+=		gmake
