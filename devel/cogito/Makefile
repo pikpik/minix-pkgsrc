@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/04 11:02:24 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:22 joerg Exp $
 #
 
 DISTNAME=		cogito-0.18.2
@@ -8,7 +8,7 @@ MASTER_SITES=		http://www.kernel.org/pub/software/scm/cogito/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.kernel.org/pub/software/scm/cogito/
+HOMEPAGE=		http://git.or.cz/cogito/
 COMMENT=		Version control system of the Linux kernel
 
 PKG_DESTDIR_SUPPORT=	user-destdir
