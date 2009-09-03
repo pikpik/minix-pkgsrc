@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/12/02 00:05:21 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/08/26 19:56:51 sno Exp $
 
 DISTNAME=	gdchart0.11.5dev
 PKGNAME=	gdchart-0.11.5
@@ -27,7 +27,6 @@ post-patch:
 do-install:
 	${LIBTOOL} --mode=install ${INSTALL_LIB} ${WRKSRC}/libgdchart.la \
 		 ${DESTDIR}${PREFIX}/lib
-	${LIBTOOL} -n --finish ${DESTDIR}${PREFIX}/lib
 	${INSTALL_DATA}	${WRKSRC}/gdchart.h ${DESTDIR}${PREFIX}/include
 	${INSTALL_DATA}	${WRKSRC}/gdc.h ${DESTDIR}${PREFIX}/include
 	${INSTALL_DATA}	${WRKSRC}/gdcpie.h ${DESTDIR}${PREFIX}/include
