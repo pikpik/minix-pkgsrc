@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/01/17 12:19:21 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2009/03/02 14:55:05 wiz Exp $
 
 DISTNAME=	cfitsio3100
 PKGNAME=	cfitsio-3.100
@@ -31,7 +31,7 @@ post-build:
 
 do-install:
 	cd ${WRKSRC}; \
-	${LIBTOOL} ${INSTALL_DATA} libcfitsio.la ${DESTDIR}${PREFIX}/lib; \
+	${LIBTOOL} --mode=install ${INSTALL_DATA} libcfitsio.la ${DESTDIR}${PREFIX}/lib; \
 	${INSTALL_DATA} fitsio.h fitsio2.h longnam.h drvrsmem.h ${DESTDIR}${PREFIX}/include; \
 	${INSTALL_DATA} cfitsio.pc ${DESTDIR}${PREFIX}/lib/pkgconfig; \
 	${INSTALL_DATA} fitsio.doc ${DESTDIR}${PREFIX}/share/doc/cfitsio
