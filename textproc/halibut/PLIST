@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/halibut
+man/man1/halibut.1
