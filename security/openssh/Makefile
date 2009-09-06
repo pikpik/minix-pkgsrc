@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.191 2009/05/01 14:27:34 zafer Exp $
+# $NetBSD: Makefile,v 1.192 2009/05/21 03:22:29 taca Exp $
 
 DISTNAME=		openssh-5.2p1
 PKGNAME=		openssh-5.2.1
@@ -7,7 +7,6 @@ CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp3.usa.openbsd.org/pub/OpenBSD/OpenSSH/portable/ \
 			ftp://gd.tuwien.ac.at/opsys/OpenBSD/OpenSSH/portable/ \
-			ftp://openbsd.informatik.uni-erlangen.de/pub/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp.freenet.de/pub/ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp.jaist.ac.jp/pub/OpenBSD/OpenSSH/portable/ \
 			ftp://ftp.belnet.be/packages/openbsd/OpenSSH/portable/ \
