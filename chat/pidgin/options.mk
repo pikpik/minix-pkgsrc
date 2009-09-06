@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.5 2008/12/21 00:12:10 ahoka Exp $
+# $NetBSD: options.mk,v 1.6 2008/12/21 14:08:39 ahoka Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.pidgin
-PKG_SUPPORTED_OPTIONS+=		dbus debug gstreamer gtkspell
-PKG_SUGGESTED_OPTIONS+=		gtkspell dbus gstreamer
+PKG_SUPPORTED_OPTIONS+=		dbus debug farsight gstreamer gtkspell
+PKG_SUGGESTED_OPTIONS+=		gtkspell dbus farsight gstreamer
 
 .include "../../mk/bsd.options.mk"
 
@@ -13,6 +13,11 @@ CONFIGURE_ARGS+=	--enable-dbus
 PLIST.dbus=		yes
 .  include "../../sysutils/dbus/buildlink3.mk"
 .  include "../../sysutils/dbus-glib/buildlink3.mk"
+.endif
+
+.if !empty(PKG_OPTIONS:Mfarsight)
+CONFIGURE_ARGS+=	--enable-farsight
+.  include "../../multimedia/farsight2/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mgtkspell)

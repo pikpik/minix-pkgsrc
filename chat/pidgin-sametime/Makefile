@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/12/22 18:47:44 jmcneill Exp $
+# $NetBSD: Makefile,v 1.7 2009/02/09 18:36:11 joerg Exp $
 #
 
 PKGNAME=		pidgin-sametime-${PIDGIN_VERSION}
@@ -20,5 +20,6 @@ BUILDLINK_API_DEPENDS.libpurple+=	libpurple-${PIDGIN_VERSION}{,nb*}
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/libidn/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
