@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/01/28 05:38:53 obache Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/31 14:25:49 wiz Exp $
 #
 
 DISTNAME=	alsa-lib-1.0.21
@@ -21,5 +21,7 @@ PKGCONFIG_OVERRIDE+=	utils/alsa.pc.in
 CONFIGURE_ARGS+=	--disable-python
 
 .include "../../mk/dlopen.buildlink3.mk"
+BUILDLINK_TRANSFORM+=	opt:-ldl:${BUILDLINK_LDADD.dl:M*}
+
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
