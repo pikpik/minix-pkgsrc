@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.494 2009/08/23 22:22:33 wiz Exp $
+# $NetBSD: Makefile,v 1.495 2009/09/06 18:44:41 ahoka Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -367,8 +367,6 @@ SUBDIR+=	pxp
 SUBDIR+=	py-Excelerator
 SUBDIR+=	py-FourSuite
 SUBDIR+=	py-HappyDoc
-SUBDIR+=	py-Reverend
-SUBDIR+=	py-SimpleParse
 SUBDIR+=	py-X
 SUBDIR+=	py-cmTemplate
 SUBDIR+=	py-docutils
