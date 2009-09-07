@@ -1,8 +1,8 @@
 $NetBSD$
 
---- otherlibs/labltk/browser/Makefile.orig	Mon Aug 12 07:31:21 2002
-+++ otherlibs/labltk/browser/Makefile	Thu Apr 22 10:34:37 2004
-@@ -47,7 +47,7 @@
+--- otherlibs/labltk/browser/Makefile.shared.orig	2009-05-21 11:08:07.000000000 +0200
++++ otherlibs/labltk/browser/Makefile.shared	2009-05-21 11:07:29.000000000 +0200
+@@ -49,7 +49,7 @@
  
  install:
  	if test -f ocamlbrowser$(EXE); then : ; \
@@ -10,4 +10,4 @@ $NetBSD$
 +	  ${BSD_INSTALL_SCRIPT} ocamlbrowser$(EXE) $(BINDIR); fi
  
  clean:
- 	rm -f *.cm? ocamlbrowser$(EXE) dummy.mli *~ *.orig
+ 	rm -f *.cm? ocamlbrowser$(EXE) dummy.mli *~ *.orig *.$(O)
