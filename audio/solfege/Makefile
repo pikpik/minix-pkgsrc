@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/07/22 09:01:19 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2009/08/26 19:57:12 sno Exp $
 #
 
 DISTNAME=		solfege-3.14.1
@@ -62,7 +62,6 @@ post-install:
 		${DESTDIR}${PREFIX}/share/solfege/soundcard \
 		${DESTDIR}${PREFIX}/share/solfege/src
 
-PYTHON_VERSIONS_INCOMPATIBLE=	23
 .include "../../lang/python/application.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
