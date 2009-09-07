@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2009/05/19 08:59:35 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2009/06/30 00:07:23 joerg Exp $
 
 DISTNAME=	glimpse-4.18.5
+PKGREVISION=	1
 CATEGORIES=	textproc databases
 MASTER_SITES=	http://webglimpse.net/trial/
 
@@ -12,6 +13,9 @@ LICENSE=	glimpse-license
 RESTRICTED=	Redistribution only on non-profit basis.
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
+
+# both install bin/agrep (approx. grep)
+CONFLICTS+=	tre>=0.7.5nb6
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
