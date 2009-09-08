@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2009/01/23 03:05:53 dsainty Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2009/03/20 19:24:51 joerg Exp $
 
 BUILDLINK_TREE+=	python24
 
@@ -19,11 +19,6 @@ BUILDLINK_TRANSFORM+=		l:python:python2.4
 .endif # PYTHON24_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-python24
-
-.include "../../mk/bsd.fast.prefs.mk"
-.if ${OPSYS} != "IRIX"
-.  include "../../mk/bdb.buildlink3.mk"
-.endif
 
 .include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
