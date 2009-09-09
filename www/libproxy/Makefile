@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2009/03/18 17:19:30 snj Exp $
+# $NetBSD: Makefile,v 1.4 2009/07/08 07:57:31 abs Exp $
 #
 
 DISTNAME=	libproxy-0.2.3
+PKGREVISION=	1
 CATEGORIES=	www gnome
 MASTER_SITES=	http://libproxy.googlecode.com/files/
 
@@ -22,6 +23,8 @@ pre-configure:
 	cd ${WRKSRC} && autoreconf --force
 
 PYTHON_VERSIONS_ACCEPTED=	25 26
+BUILDLINK_API_DEPENDS.python26+= python26>=2.6.2nb4
+BUILDLINK_API_DEPENDS.python25+= python25>=2.5.4nb2
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/dlopen.buildlink3.mk"
