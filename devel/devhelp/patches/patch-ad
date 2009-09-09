@@ -1,11 +1,11 @@
 $NetBSD$
 
---- misc/Makefile.in.orig	2009-01-19 17:00:31.000000000 +0100
+--- misc/Makefile.in.orig	2009-08-12 23:41:11.000000000 +0200
 +++ misc/Makefile.in
-@@ -238,7 +238,7 @@ sbindir = @sbindir@
- sharedstatedir = @sharedstatedir@
- sysconfdir = @sysconfdir@
- target_alias = @target_alias@
+@@ -218,7 +218,7 @@ target_alias = @target_alias@
+ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
 -SUBDIRS = gedit-plugin
 +SUBDIRS =
  EXTRA_DIST = devhelp.el devhelp.vim html2funcs.py html2xml.py man2xml.py
