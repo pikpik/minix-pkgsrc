@@ -1,4 +1,6 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/11/20 14:32:19 dillo Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:25:15 joerg Exp $
+
+BUILDLINK_DEPMETHOD.poppler-includes?=	build
 
 BUILDLINK_TREE+=	poppler-includes
 
