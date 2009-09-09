@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2008/07/14 09:02:41 wiz Exp $
+@comment $NetBSD$
 bin/cdg2mpg
 bin/pycdg
 bin/pykar
@@ -6,6 +6,9 @@ bin/pykaraoke
 bin/pykaraoke_mini
 bin/pympg
 ${PYSITELIB}/_pycdgAux.so
+${PYSITELIB}/performer_prompt.py
+${PYSITELIB}/performer_prompt.pyc
+${PYSITELIB}/performer_prompt.pyo
 ${PYSITELIB}/pycdg.py
 ${PYSITELIB}/pycdg.pyc
 ${PYSITELIB}/pycdg.pyo
@@ -52,5 +55,5 @@ share/pykaraoke/icons/folder_close_16.png
 share/pykaraoke/icons/folder_open_16.png
 share/pykaraoke/icons/microphone.ico
 share/pykaraoke/icons/microphone.png
-share/pykaraoke/icons/splash.png
 share/pykaraoke/icons/pykaraoke.xpm
+share/pykaraoke/icons/splash.png
