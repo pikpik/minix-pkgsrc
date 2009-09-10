@@ -1,0 +1,12 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	bml
+
+.if !defined(BML_BUILDLINK3_MK)
+BML_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.bml+=	bml>=0.5.0
+BUILDLINK_PKGSRCDIR.bml?=	../../nih/bml
+.endif # BML_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-bml
