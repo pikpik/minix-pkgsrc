@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.4 2008/12/28 13:10:29 adrianp Exp $
+# $NetBSD: options.mk,v 1.5 2009/03/05 07:13:01 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.lablgtk
 PKG_SUPPORTED_OPTIONS=	glade gnomecanvas gtksourceview svg gtkspell
-PKG_SUGGESTED_OPTIONS=	gnomecanvas svg gtkspell
+PKG_SUGGESTED_OPTIONS=	gnomecanvas gtksourceview svg gtkspell
 
 .include "../../mk/bsd.options.mk"
 
