@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.188 2009/04/21 17:48:22 schmonz Exp $
+# $NetBSD: Makefile,v 1.189 2009/07/08 10:26:47 sno Exp $
 
 COMMENT=	Mathematics
 
@@ -37,6 +37,7 @@ SUBDIR+=	R-shapefiles
 SUBDIR+=	R-sp
 SUBDIR+=	R-statmod
 SUBDIR+=	R-wle
+SUBDIR+=	aamath
 SUBDIR+=	abs
 SUBDIR+=	admesh
 SUBDIR+=	algae
