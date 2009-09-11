@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.327 2009/07/22 09:05:23 wiz Exp $
+# $NetBSD: Makefile,v 1.328 2009/07/27 19:37:55 drochner Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -176,6 +176,7 @@ SUBDIR+=	ppower
 SUBDIR+=	proj
 SUBDIR+=	proj-doc
 SUBDIR+=	pty-redir
+SUBDIR+=	py-anita
 SUBDIR+=	qbrew
 SUBDIR+=	qterm
 SUBDIR+=	reed
