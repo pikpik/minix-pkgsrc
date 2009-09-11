@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- bindings/c++/prelude.cxx.orig	2009-09-11 18:50:18.000000000 +0200
++++ bindings/c++/prelude.cxx
+@@ -21,6 +21,8 @@
+ *
+ *****/
+ 
++#include <ctime>
++
+ #include <prelude.h>
+ #include "prelude.hxx"
+ 
