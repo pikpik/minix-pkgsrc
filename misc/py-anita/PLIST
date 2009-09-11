@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/anita
+${PYSITELIB}/anita.py
+${PYSITELIB}/anita.pyc
+${PYSITELIB}/anita.pyo
