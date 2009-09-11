@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/04/11 23:15:21 sno Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/08/17 18:31:12 sno Exp $
 #
 
 DISTNAME=		URI-Find-20090319
@@ -20,6 +20,8 @@ USE_LANGUAGES=		# empty
 
 PERL5_PACKLIST=		auto/URI/Find/.packlist
 PERL5_MODULE_TYPE=	Module::Build
+
+BUILD_DEPENDS+=		p5-Module-Build>=0.30000:../../devel/p5-Module-Build
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
