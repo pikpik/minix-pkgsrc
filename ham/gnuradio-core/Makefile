@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/03/15 15:09:54 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/08/12 12:21:39 markd Exp $
 
 PKGNAME=        gnuradio-core-${VERSION}
 COMMENT=	Runtime system and DSP blocks for GNU Radio
@@ -6,8 +6,6 @@ COMMENT=	Runtime system and DSP blocks for GNU Radio
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/gnuradio/Makefile.common"
-
-PATCHDIR=	${.CURDIR}/../../ham/gnuradio-core/patches
 
 CONF_FILES+=	${EGDIR}/gnuradio-core.conf ${PKG_SYSCONFDIR}/gnuradio-core.conf
 CONFIGURE_ARGS+=--enable-gnuradio-core
