@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2009/06/07 14:42:54 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2009/07/14 22:05:39 joerg Exp $
 #
 
-DISTNAME=	embryo-0.9.9.061
+DISTNAME=	embryo-0.9.9.062
 CATEGORIES=	lang
-MASTER_SITES=	http://download.enlightenment.org/snapshots/2009-06-14/
+MASTER_SITES=	http://download.enlightenment.org/snapshots/2009-07-29/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	grzela@seculture.com
