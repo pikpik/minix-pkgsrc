@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2009/02/22 16:07:55 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2009/07/21 22:25:12 sno Exp $
 #
 
-DISTNAME=	Config-General-2.43
+DISTNAME=	Config-General-2.44
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5cfg
 CATEGORIES=	devel perl5
