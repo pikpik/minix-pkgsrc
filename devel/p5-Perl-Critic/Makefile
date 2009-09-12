@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2009/08/09 12:50:15 sno Exp $
+# $NetBSD: Makefile,v 1.11 2009/08/29 23:27:50 seb Exp $
 #
 
-DISTNAME=	Perl-Critic-1.104
+DISTNAME=	Perl-Critic-1.105
 PKGNAME=	p5-${DISTNAME}
 #PKGNAME=	p5-${DISTNAME:C/0[0-9][0-9]$/.&/}
 CATEGORIES=	devel perl5
