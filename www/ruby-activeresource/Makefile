@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2008/09/15 05:43:01 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2009/04/07 17:13:27 minskim Exp $
 
-DISTNAME=	activeresource-2.3.2
+DISTNAME=	activeresource-2.3.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	www
 

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2008/09/15 05:38:29 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2009/04/07 17:13:26 minskim Exp $
 
-DISTNAME=	activerecord-2.3.2
+DISTNAME=	activerecord-2.3.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	databases
 
