@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.593 2009/07/30 19:26:03 hasso Exp $
+# $NetBSD: Makefile,v 1.594 2009/08/08 06:29:10 tnn Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -23,7 +23,6 @@ SUBDIR+=	beforelight
 SUBDIR+=	bigreqsproto
 SUBDIR+=	bitmap
 SUBDIR+=	blt
-SUBDIR+=	bwidget
 SUBDIR+=	compositeproto
 SUBDIR+=	damageproto
 SUBDIR+=	desklaunch
