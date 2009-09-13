@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/security/pam_saml.la
+man/man5/pam_saml.5
