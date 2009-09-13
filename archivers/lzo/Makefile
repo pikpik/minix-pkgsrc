@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/12/28 15:22:17 tron Exp $
+# $NetBSD: Makefile,v 1.7 2008/05/20 15:11:55 wiz Exp $
 
 DISTNAME=	lzo-2.03
 CATEGORIES=	archivers
@@ -18,7 +18,8 @@ TEST_TARGET=	test
 
 .include "../../mk/bsd.prefs.mk"
 
-.if !empty(MACHINE_PLATFORM:MDarwin-9.*-i386)
+.if !empty(MACHINE_PLATFORM:MDarwin-9.*-i386) || \
+    !empty(MACHINE_PLATFORM:MDarwin-??.*-*)
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 
