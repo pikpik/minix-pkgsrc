@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2009/08/19 14:25:27 tnn Exp $
+# $NetBSD: Makefile,v 1.31 2009/08/26 19:57:05 sno Exp $
 #
 
 DISTNAME=	gnome-python-extras-2.14.3
@@ -21,7 +21,7 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN:Q}
 USE_TOOLS+=		pkg-config gmake
 
-PYTHON_VERSIONS_ACCEPTED=	25
+PYTHON_VERSIONS_ACCEPTED=	26 25
 
 SUBST_CLASSES+=	ffhome
 SUBST_STAGE.ffhome=	pre-configure
