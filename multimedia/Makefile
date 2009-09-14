@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.150 2009/06/19 00:06:56 jnemeth Exp $
+# $NetBSD: Makefile,v 1.151 2009/08/17 21:13:34 wiz Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -92,7 +92,6 @@ SUBDIR+=	mpeg_play
 SUBDIR+=	mplayer
 SUBDIR+=	mplayer-plugin-firefox
 SUBDIR+=	mplayer-plugin-seamonkey
-SUBDIR+=	mplayer-plugin-seamonkey-gtk1
 SUBDIR+=	mplayer-share
 SUBDIR+=	ns-flash
 SUBDIR+=	ogle
