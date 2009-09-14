@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.44 2009/05/19 08:59:01 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2009/06/30 00:07:09 joerg Exp $
 #
 
 DISTNAME=	zip1-1.1
 PKGREVISION=	2
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://ftp.info-zip.org/pub/infozip/src/ \
-		http://ftp.uni-koeln.de/util/arc/
+MASTER_SITES=	ftp://ftp.info-zip.org/pub/infozip/src/
 DISTFILES=	zip11.zip zcrypt10.zip
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
