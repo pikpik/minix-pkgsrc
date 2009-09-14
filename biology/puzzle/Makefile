@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:15 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/04/28 19:07:31 zafer Exp $
 
 DISTNAME=	tree-puzzle-5.1
 PKGNAME=	puzzle-5.1
 PKGREVISION=	1
 CATEGORIES=	biology
-MASTER_SITES=  http://www.tree-puzzle.de/ \
-		ftp://ftp.ebi.ac.uk/pub/software/unix/puzzle/ 
+MASTER_SITES=  http://www.tree-puzzle.de/
 
 MAINTAINER=	babafou@babafou.eu.org
 HOMEPAGE=	http://www.tree-puzzle.de/
