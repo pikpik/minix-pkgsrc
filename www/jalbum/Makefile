@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/07/07 19:07:35 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2009/09/13 17:28:03 martti Exp $
 
 DISTNAME=		Jalbum${VERSION}
 PKGNAME=		jalbum-${VERSION}
@@ -18,7 +18,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 VERSION=		8.4
 
-USE_JAVA=		run
+USE_JAVA2=		1.5
 PKG_JVMS_ACCEPTED=	sun-jdk15 sun-jdk6
 
 WRKSRC=			${WRKDIR}/Jalbum
