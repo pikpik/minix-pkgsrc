@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.357 2009/09/07 18:34:16 joerg Exp $
+# $NetBSD: Makefile,v 1.358 2009/09/13 19:58:14 manu Exp $
 #
 
 COMMENT=	Security tools
@@ -236,6 +236,7 @@ SUBDIR+=	php-mhash
 SUBDIR+=	php-suhosin
 SUBDIR+=	pinentry
 SUBDIR+=	pinepgp
+SUBDIR+=	pkcs11-helper
 SUBDIR+=	pks
 SUBDIR+=	policykit
 SUBDIR+=	policykit-gnome
