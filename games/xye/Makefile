@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:04 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/08/26 19:57:35 sno Exp $
 #
 
-DISTNAME=	xye-source-0.8.0
-PKGNAME=	xye-0.8.0
-PKGREVISION=	1
+DISTNAME=	xye-0.9.1
 CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xye/}
+MASTER_SITE_SOURCEFORGE_NEW= http://downloads.sourceforge.net/project/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_NEW:=xye/xye/0.9.1/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xye.sourceforge.net/
@@ -13,7 +12,7 @@ COMMENT=	Kye clone
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=		${WRKDIR}/xye-0.8.0
+WRKSRC=		${WRKDIR}/xye-0.9.1
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-docdir=${PREFIX}/share/doc
 USE_LANGUAGES=	c c++

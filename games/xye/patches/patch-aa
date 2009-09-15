@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/options.cpp.orig	2008-01-13 00:37:12.000000000 +0100
+--- src/options.cpp.orig	2009-07-27 03:02:29.000000000 +0200
 +++ src/options.cpp
 @@ -21,6 +21,7 @@ Permission is granted to anyone to use t
  #include "options.h"
@@ -8,5 +8,5 @@ $NetBSD$
  
 +#include <unistd.h>
  
- #include <iostream>
- #include <fstream>
+ #include<iostream>
+ #include<fstream>
