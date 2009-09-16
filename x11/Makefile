@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.595 2009/09/12 20:52:10 plunky Exp $
+# $NetBSD: Makefile,v 1.596 2009/09/15 12:20:54 drochner Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -219,7 +219,7 @@ SUBDIR+=	liboldXrandr
 SUBDIR+=	libunique
 SUBDIR+=	libxcb
 SUBDIR+=	libxfce4gui
-SUBDIR+=	libxfce4mcs
+SUBDIR+=	libxfce4menu
 SUBDIR+=	libxfce4util
 SUBDIR+=	libxkbfile
 SUBDIR+=	libxkbui
@@ -435,13 +435,12 @@ SUBDIR+=	xfce4-desktop
 SUBDIR+=	xfce4-exo
 SUBDIR+=	xfce4-eyes-plugin
 SUBDIR+=	xfce4-gtk2-engine
-SUBDIR+=	xfce4-mcs-manager
-SUBDIR+=	xfce4-mcs-plugins
 SUBDIR+=	xfce4-notes-plugin
 SUBDIR+=	xfce4-panel
 SUBDIR+=	xfce4-places-plugin
 SUBDIR+=	xfce4-screenshooter-plugin
 SUBDIR+=	xfce4-session
+SUBDIR+=	xfce4-settings
 SUBDIR+=	xfce4-terminal
 SUBDIR+=	xfce4-utils
 SUBDIR+=	xfd
