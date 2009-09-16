@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.476 2009/07/26 18:25:01 drochner Exp $
+# $NetBSD: Makefile,v 1.477 2009/09/07 18:21:23 joerg Exp $
 #
 
 COMMENT=	System utilities
@@ -71,6 +71,7 @@ SUBDIR+=	ddrescue
 SUBDIR+=	depot
 SUBDIR+=	desktop-file-utils
 SUBDIR+=	detox
+SUBDIR+=	devkitd
 SUBDIR+=	dirsize
 SUBDIR+=	dirvish
 SUBDIR+=	diskscrub
@@ -161,6 +162,7 @@ SUBDIR+=	kdirstat
 SUBDIR+=	krusader
 SUBDIR+=	lambd
 SUBDIR+=	lavaps
+SUBDIR+=	libdevkit-gobject
 SUBDIR+=	libgamin
 SUBDIR+=	libgksu
 SUBDIR+=	libgtop
