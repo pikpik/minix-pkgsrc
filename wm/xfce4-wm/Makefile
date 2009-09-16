@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/07/22 09:01:50 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2008/12/18 14:12:24 hira Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,15 +6,28 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTNAME=	xfwm4-${XFCE4_VERSION}
 PKGNAME=	xfce4-wm-${XFCE4_VERSION}
-PKGREVISION=	2
 CATEGORIES=	wm
 COMMENT=	Xfce window manager
 
+MAKE_DIRS+=	${PREFIX}/libexec/xfce4 ${PREFIX}/share/themes/Default
+MAKE_DIRS+=	${PREFIX}/share/xfce4 ${PREFIX}/share/xfce4/doc
+MAKE_DIRS+=	${PREFIX}/share/xfce4/doc/C ${PREFIX}/share/xfce4/doc/C/images
+MAKE_DIRS+=	${PREFIX}/share/xfce4/doc/fr ${PREFIX}/share/xfce4/doc/fr/images
+MAKE_DIRS+=	${PREFIX}/share/xfce4/doc/it ${PREFIX}/share/xfce4/doc/it/images
 
+.include "../../devel/libglade/buildlink3.mk"
+.include "../../devel/libwnck/buildlink3.mk"
+.include "../../devel/xfconf/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
-.include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xfce4-mcs-plugins/buildlink3.mk"
-.include "../../x11/startup-notification/buildlink3.mk"
+.include "../../sysutils/dbus/buildlink3.mk"
+.include "../../sysutils/dbus-glib/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/libXcomposite/buildlink3.mk"
 .include "../../x11/libXdamage/buildlink3.mk"
+.include "../../x11/libXfixes/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/libXrender/buildlink3.mk"
+.include "../../x11/libxfce4gui/buildlink3.mk"
+.include "../../x11/libxfce4util/buildlink3.mk"
+.include "../../x11/startup-notification/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

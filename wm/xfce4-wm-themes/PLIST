@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2009/06/14 18:19:03 joerg Exp $
+@comment $NetBSD: PLIST,v 1.5 2007/04/12 09:55:20 martti Exp $
 share/themes/Adept/xfwm4/README
 share/themes/Adept/xfwm4/bottom-active.xpm
 share/themes/Adept/xfwm4/bottom-inactive.xpm
