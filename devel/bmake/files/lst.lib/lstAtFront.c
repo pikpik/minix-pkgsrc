@@ -1,4 +1,4 @@
-/*	$NetBSD: lstAtFront.c,v 1.2 2008/03/09 19:54:29 joerg Exp $	*/
+/*	$NetBSD: lstAtFront.c,v 1.13 2009/01/23 21:26:30 dsl Exp $	*/
 
 /*
  * Copyright (c) 1988, 1989, 1990, 1993
@@ -33,14 +33,14 @@
  */
 
 #ifndef MAKE_NATIVE
-static char rcsid[] = "$NetBSD: lstAtFront.c,v 1.2 2008/03/09 19:54:29 joerg Exp $";
+static char rcsid[] = "$NetBSD: lstAtFront.c,v 1.13 2009/01/23 21:26:30 dsl Exp $";
 #else
 #include <sys/cdefs.h>
 #ifndef lint
 #if 0
 static char sccsid[] = "@(#)lstAtFront.c	8.1 (Berkeley) 6/6/93";
 #else
-__RCSID("$NetBSD: lstAtFront.c,v 1.2 2008/03/09 19:54:29 joerg Exp $");
+__RCSID("$NetBSD: lstAtFront.c,v 1.13 2009/01/23 21:26:30 dsl Exp $");
 #endif
 #endif /* not lint */
 #endif
@@ -67,7 +67,7 @@ __RCSID("$NetBSD: lstAtFront.c,v 1.2 2008/03/09 19:54:29 joerg Exp $");
  *-----------------------------------------------------------------------
  */
 ReturnStatus
-Lst_AtFront(Lst l, ClientData d)
+Lst_AtFront(Lst l, void *d)
 {
     LstNode	front;
 
