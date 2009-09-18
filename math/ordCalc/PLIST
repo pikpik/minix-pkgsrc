@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/ord
+share/doc/ordCalc/README
+share/doc/ordCalc/ordCalc.pdf
+share/doc/ordCalc/ordinal.pdf
