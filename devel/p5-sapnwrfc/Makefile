@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/03/10 18:57:36 sno Exp $
+# $NetBSD: Makefile,v 1.2 2009/07/07 21:28:52 sno Exp $
 
-DISTNAME=	sapnwrfc-0.30
+DISTNAME=	sapnwrfc-0.31
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SAP/PIERS/}
