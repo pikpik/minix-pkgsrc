@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/08/30 21:09:55 seb Exp $
+# $NetBSD: Makefile,v 1.2 2008/10/19 19:18:54 he Exp $
 
-DISTNAME=	Kwalify-1.19
+DISTNAME=	Kwalify-1.20
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/S/SR/SREZIC/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Kwalify/
 COMMENT=	Perl implementation of Kwalify parser, validator and data binding tool
+LICENSE=	${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
