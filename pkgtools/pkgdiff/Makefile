@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2008/11/05 23:18:18 wiz Exp $
+# $NetBSD: Makefile,v 1.67 2009/04/09 00:48:13 joerg Exp $
 #
 
 DISTNAME=	pkgdiff-0.121
@@ -25,12 +25,14 @@ MAKE_ENV+=	PKGSRCDIR=${_PKGSRCDIR:Q}
 
 BUILD_DEFS+=	MANINSTALL
 
-.if ${OPSYS} == "SunOS"
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "OSF1"
 DEPENDS+=	diffutils-[0-9]*:../../devel/diffutils
-DIFF?=		${LOCALBASE}/bin/${GNU_PROGRAM_PREFIX}diff
-MANINSTALL=	catinstall
+DIFF?=		${PREFIX}/bin/${GNU_PROGRAM_PREFIX}diff
 .else
 DIFF?=		diff
+.endif
+.if ${OPSYS} == "SunOS"
+MANINSTALL=	catinstall
 .endif
 
 INSTALLATION_DIRS=	bin
