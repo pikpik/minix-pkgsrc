@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2009/09/02 08:34:14 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2009/09/19 15:37:06 minskim Exp $
 
 DISTNAME=	teTeX-3.0
 PKGREVISION=	7
@@ -13,7 +13,7 @@ DEPENDS+=	dviljk-[0-9]*:../../print/dviljk
 DEPENDS+=	dvipdfm-[0-9]*:../../print/dvipdfm
 DEPENDS+=	dvipng-[0-9]*:../../graphics/dvipng
 DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
-DEPENDS+=	gsftopk-[0-9]*:../../fonts/gsftopk
+DEPENDS+=	gsftopkk-[0-9]*:../../fonts/gsftopkk
 DEPENDS+=	ps2pkm-[0-9]*:../../fonts/ps2pkm
 DEPENDS+=	teTeX-bin-[0-9]*:../../print/teTeX3-bin
 DEPENDS+=	teTeX-texmf-[0-9]*:../../print/teTeX3-texmf
