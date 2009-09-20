@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2008/11/03 22:07:11 bad Exp $
+# $NetBSD: Makefile,v 1.7 2009/07/28 06:09:34 sno Exp $
 #
 
-DISTNAME=	List-MoreUtils-0.24
-PKGNAME=	p5-${DISTNAME}
+DISTNAME=	List-MoreUtils-0.25_02
+PKGNAME=	p5-${DISTNAME:S/25_02/25beta02/}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=List/}
-#MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/V/VP/VPARSEVAL/}
+MASTER_SITES+=	${MASTER_SITE_PERL_CPAN:=../../authors/id/V/VP/VPARSEVAL/}
 
 MAINTAINER=	abs@absd.org
 HOMEPAGE=	http://search.cpan.org/dist/List-MoreUtils/
