@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.5 2009/03/03 08:57:58 jmmv Exp $
 
 --- Jamroot.orig
 +++ Jamroot
@@ -17,7 +17,7 @@ $NetBSD$
      :   <location>$(stage-locate)/lib
          <install-dependencies>on <install-type>LIB 
          <install-no-version-symlinks>on
-+	<dll-path>/usr/pkg/lib
++	<dll-path>@PREFIX@/lib
      ;
  explicit stage-proper ;
  
