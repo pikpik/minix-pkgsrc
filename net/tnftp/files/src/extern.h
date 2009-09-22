@@ -1,4 +1,4 @@
-/*	$NetBSD: extern.h,v 1.5 2007/08/07 02:07:02 lukem Exp $	*/
+/*	$NetBSD: extern.h,v 1.6 2008/04/29 05:46:09 martin Exp $	*/
 /*	from	NetBSD: extern.h,v 1.72 2007/05/24 05:05:18 lukem Exp	*/
 
 /*-
@@ -135,7 +135,7 @@ int	ftp_login(const char *, const char *, const char *);
 void	get(int, char **);
 struct cmd *getcmd(const char *);
 int	getit(int, char **, int, const char *);
-int	getline(FILE *, char *, size_t, const char **);
+int	get_line(FILE *, char *, size_t, const char **);
 struct option *getoption(const char *);
 char   *getoptionvalue(const char *);
 void	getremoteinfo(void);
