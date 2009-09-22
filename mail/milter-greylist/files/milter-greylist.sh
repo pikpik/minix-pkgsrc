@@ -10,7 +10,7 @@
 name="miltergreylist"
 rcvar="miltergreylist"
 command="@PREFIX@/bin/milter-greylist"
-command_args="-p /var/milter-greylist/milter-greylist.sock -u @MTG_USER@"
+command_args="-p /var/milter-greylist/milter-greylist.sock -u @MILTER_USER@"
 
 if [ -f /etc/rc.subr -a -d /etc/rc.d -a -f /etc/rc.d/DAEMON ]; then
 	. /etc/rc.subr
