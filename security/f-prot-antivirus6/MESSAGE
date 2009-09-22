@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+Put your license key into ${PKG_SYSCONFDIR}/license.key as following
+format:
+
+FPROT_LICENSE_KEY="your-license-key"
+
+===========================================================================
