@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.7 2009/03/16 10:15:23 tron Exp $
+# $NetBSD: options.mk,v 1.8 2009/09/22 14:02:56 tron Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.milter-greylist
 PKG_OPTIONS_REQUIRED_GROUPS=	mta
@@ -58,7 +58,6 @@ CONFIGURE_ARGS+=	--enable-p0f
 CONFIGURE_ARGS+=	--enable-postfix
 
 POSTFIX_QUEUE_DIR?=	${VARBASE}/spool/postfix
-BUILD_DEFS+=		VARBASE
 
 PKG_GROUPS?=		postfix
 PKG_USERS?=		postfix:postfix
