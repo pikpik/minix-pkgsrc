@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.360 2009/09/17 19:01:49 jnemeth Exp $
+# $NetBSD: Makefile,v 1.361 2009/09/22 13:11:06 wiz Exp $
 #
 
 COMMENT=	Security tools
@@ -56,9 +56,12 @@ SUBDIR+=	dsniff
 SUBDIR+=	dsniff-nox11
 SUBDIR+=	egd
 SUBDIR+=	engine-pkcs11
+#SUBDIR+=	f-prot-antivirus6		# only contains shared files
+SUBDIR+=	f-prot-antivirus6-fs-bin
+SUBDIR+=	f-prot-antivirus6-ms-bin
+SUBDIR+=	f-prot-antivirus6-ws-bin
 SUBDIR+=	flawfinder
 SUBDIR+=	fprint-demo
-SUBDIR+=	fprot-workstation-bin
 SUBDIR+=	fragroute
 SUBDIR+=	fsh
 SUBDIR+=	fwbuilder
