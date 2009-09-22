@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2009/07/08 22:24:33 roy Exp $
+# $NetBSD: Makefile,v 1.12 2009/09/02 20:54:18 roy Exp $
 #
 
-DISTNAME=		dhcpcd-5.1.0
+DISTNAME=		dhcpcd-5.1.1
 CATEGORIES=		net
 MASTER_SITES=		ftp://roy.marples.name/pub/dhcpcd/
 MASTER_SITES+=		http://roy.aydogan.net/dhcpcd/
