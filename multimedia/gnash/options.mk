@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.9 2008/06/28 16:37:07 wiz Exp $
+# $NetBSD: options.mk,v 1.10 2008/09/11 18:27:24 ahoka Exp $
 #
 
 #
@@ -22,7 +22,7 @@ PKG_SUGGESTED_OPTIONS+=		agg gstreamer gtk mitshm
 .if !empty(PKG_OPTIONS:Mgtk)
 GNASH_GUIS+=		gtk
 PLIST_SRC+=		${PKGDIR}/PLIST.gtk
-CONFIGURE_ARGS+=	--with-npapi-plugindir=${PREFIX}/lib/firefox/plugins
+CONFIGURE_ARGS+=	--with-npapi-plugindir=${PREFIX}/lib/netscape/plugins
 INSTALL_TARGET+=	install-plugin
 .include "../../x11/gtk2/buildlink3.mk"
 .endif
