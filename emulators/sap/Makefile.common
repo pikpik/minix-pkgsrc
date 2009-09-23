@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile.common,v 1.1.1.1 2009/03/09 16:46:02 sno Exp $
 # used by archivers/sapcar/Makefile
 # used by devel/sapnwrfcsdk/Makefile
 
@@ -29,3 +29,8 @@ BUILD_DIRS=		# empty
 NO_CONFIGURE=		yes
 NO_BUILD=		yes
 
+INTERACTIVE_STAGE=	fetch
+FETCH_MESSAGE=							\
+	"Distfiles cannot be downloaded automatically."		\
+	"Please see the file DESCR for instructions on how"	\
+	"to fetch the distfiles for ${PKGNAME}."
