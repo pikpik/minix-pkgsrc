@@ -2,6 +2,15 @@ $NetBSD$
 
 --- Makefile.in.orig	1998-06-11 21:10:02.000000000 +0200
 +++ Makefile.in
+@@ -7,7 +7,7 @@ sysconfdir=@sysconfdir@
+ sbindir=@sbindir@
+ 
+ includedir=${prefix}/include
+-mandir=${prefix}/man
++mandir=${prefix}/${PKGMANDIR}
+ bindir=${exec_prefix}/bin
+ libdir=${exec_prefix}/lib
+ 
 @@ -31,8 +31,6 @@ install:
  	${ENSUREDIR} ${DESTDIR}${libdir} 755
  	${ENSUREDIR} ${DESTDIR}${datadir} 755
