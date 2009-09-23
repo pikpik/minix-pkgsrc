@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:52 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/10/19 19:19:00 he Exp $
 #
 
 DISTNAME=		po4a-0.23
@@ -7,7 +7,7 @@ CATEGORIES=		textproc
 MASTER_SITES=		http://alioth.debian.org/download.php/1317/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://alioth.debian.org/projects/po4a/
+HOMEPAGE=		http://po4a.alioth.debian.org/
 COMMENT=		Tool for using gettext where it was not intended to be used
 
 PKG_DESTDIR_SUPPORT=	user-destdir
