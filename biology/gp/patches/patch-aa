@@ -2,7 +2,7 @@ $NetBSD$
 
 --- Makefile.orig	2001-05-17 21:27:07.000000000 +0200
 +++ Makefile
-@@ -5,20 +5,20 @@
+@@ -5,30 +5,30 @@
  ######################################################################
  # Change the following to suit your needs
  
@@ -26,8 +26,11 @@ $NetBSD$
  
  # Directory to install the programs themselves. 
  # Default: /usr/local/bin
-@@ -28,7 +28,7 @@ BINDIR=$(TREE)/bin
- MANDIR=$(TREE)/man
+ BINDIR=$(TREE)/bin
+ 
+ # directory to install the manual pages
+-MANDIR=$(TREE)/man
++MANDIR=$(TREE)/$(PKGMANDIR)
  
  #directory to install the data directory
 -DATADIR=$(TREE)/lib

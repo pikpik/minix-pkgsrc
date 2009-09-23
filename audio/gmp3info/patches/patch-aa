@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.4 2007/08/31 10:32:49 drochner Exp $
+$NetBSD$
 
 --- Makefile.orig	2006-11-10 01:14:11.000000000 +0100
 +++ Makefile
@@ -10,7 +10,7 @@ $NetBSD: patch-aa,v 1.4 2007/08/31 10:32:49 drochner Exp $
 -bindir=${prefix}/bin
 -mandir = $(prefix)/man/man1
 +bindir=$(PREFIX)/bin
-+mandir = $(PREFIX)/man/man1
++mandir = $(PREFIX)/$(PKGMANDIR)/man1
  
  # No changes necessary below this line
  
