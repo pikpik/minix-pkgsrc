@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${AMD64_OR_IA32}include/botan/asm_macr.h
+${AMD64_OR_IA32}include/botan/eng_sse2.h
+${AMD64_OR_IA32}include/botan/sha1_sse2.h
