@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/04/26 03:54:57 taca Exp $
 #
 
 DISTNAME=	typolight${TL_VER}-translations-${VERS}
 CATEGORIES=	www
-MASTER_SITES=	http://www.typolight.org/download.html?file=tl_files/languages/ja/
+MASTER_SITES=	# defined for each distfiles
 DISTFILES=	${TL_DISTFILES}
 EXTRACT_DIR=	${WRKSRC}
 
