@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2009/08/19 19:04:04 sno Exp $
+# $NetBSD: Makefile,v 1.7 2009/09/13 20:40:00 sno Exp $
 
 DISTNAME=	Catalyst-Model-DBIC-Schema-0.29
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Catalyst/}
 
