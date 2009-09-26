@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2009/03/19 11:26:41 drochner Exp $
+# $NetBSD: Makefile,v 1.67 2009/08/26 19:56:55 sno Exp $
 #
 
 DISTNAME=		libglade-2.6.4
@@ -18,7 +18,7 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 PKGCONFIG_OVERRIDE=	libglade-2.0.pc.in
 
-CONFLICTS+=		libglade-[0-9]*
+CONFLICTS+=		libglade2-[0-9]*
 
 CONFIGURE_ARGS+=	--without-xml-catalog
 
