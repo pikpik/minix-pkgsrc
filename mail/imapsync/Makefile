@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2008/09/08 22:25:13 abs Exp $
+# $NetBSD: Makefile,v 1.6 2009/08/13 15:20:33 abs Exp $
 #
 
 DISTNAME=	imapsync-1.286
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.linux-france.org/prj/imapsync/dist/
 EXTRACT_SUFX=	.tgz
@@ -24,12 +25,6 @@ USE_TOOLS+=	perl:run
 REPLACE_PERL+=	imapsync
 
 INSTALLATION_DIRS=	bin share/doc
-
-SUBST_CLASSES+=         conf
-SUBST_STAGE.conf=       pre-configure
-SUBST_FILES.conf=	imapsync
-SUBST_SED.conf=         -e "s:IMAPClient:IMAPClient2:g"
-SUBST_MESSAGE.conf=     Replacing IMAPClient with IMAPClient2
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/imapsync ${DESTDIR}${PREFIX}/bin
