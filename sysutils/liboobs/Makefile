@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/07/22 09:01:47 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/20 09:13:51 wiz Exp $
 #
 
 DISTNAME=		liboobs-2.22.1
@@ -19,6 +19,10 @@ GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES
+
+# Workaround for Upstream Bug#562310.
+# for more detail, see also PR#41475.
+TOOLS_NOOP+=	gtkdoc-rebase
 
 .include "../../sysutils/system-tools-backends/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
