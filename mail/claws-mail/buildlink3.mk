@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.4 2009/01/11 03:11:37 smb Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2009/03/20 19:24:54 joerg Exp $
 
 BUILDLINK_TREE+=	claws-mail
 
@@ -7,6 +7,8 @@ CLAWS_MAIL_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.claws-mail+= claws-mail>=3.7.0
 BUILDLINK_PKGSRCDIR.claws-mail?=	../../mail/claws-mail
+
+.include "../../textproc/enchant/buildlink3.mk"
 .endif # CLAWS_MAIL_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-claws-mail
