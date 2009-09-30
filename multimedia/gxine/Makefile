@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2009/08/05 03:03:20 tnn Exp $
+# $NetBSD: Makefile,v 1.41 2009/08/26 19:58:05 sno Exp $
 
 DISTNAME=	gxine-0.5.904
 PKGREVISION=	2
@@ -19,6 +19,8 @@ CONFIGURE_ARGS+=	--disable-lirc
 
 BROKEN_GETTEXT_DETECTION=	yes
 PTHREAD_OPTS+=			require
+# for svg->png icon conversion
+BUILD_DEPENDS+=		librsvg-[0-9]*:../../graphics/librsvg
 
 EGDIR=			${PREFIX}/share/examples/gxine
 PKG_SYSCONFSUBDIR=	gxine
