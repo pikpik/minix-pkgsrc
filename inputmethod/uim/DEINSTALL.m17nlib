@@ -1,0 +1,8 @@
+# $NetBSD$
+case ${STAGE} in
+DEINSTALL)
+	for icon in ${PREFIX}/share/uim/pixmaps/m17n-*.png ; do
+		${TEST} ! -h ${icon} || ${RM} -f ${icon}
+	done
+	;;
+esac

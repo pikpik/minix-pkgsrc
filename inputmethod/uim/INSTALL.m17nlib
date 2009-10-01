@@ -1,0 +1,8 @@
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	${TEST} ! -x ${PREFIX}/bin/uim-m17nlib-relink-icons ||
+		${PREFIX}/bin/uim-m17nlib-relink-icons
+	;;
+esac
