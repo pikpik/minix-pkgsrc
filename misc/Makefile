@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.328 2009/07/27 19:37:55 drochner Exp $
+# $NetBSD: Makefile,v 1.329 2009/09/11 11:54:12 gson Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -91,12 +91,21 @@ SUBDIR+=	kanjipad
 SUBDIR+=	kchm
 SUBDIR+=	kchmviewer
 SUBDIR+=	kdeaccessibility3
+SUBDIR+=	kdeaccessibility4
 SUBDIR+=	kdeaddons3
 SUBDIR+=	kdeadmin3
+SUBDIR+=	kdeadmin4
 SUBDIR+=	kdeartwork3
+SUBDIR+=	kdeartwork4
 SUBDIR+=	kdeedu3
+SUBDIR+=	kdeedu4
 SUBDIR+=	kdepim3
+SUBDIR+=	kdepim-runtime4
+SUBDIR+=	kdepim4
+SUBDIR+=	kdepimlibs4
+SUBDIR+=	kdeplasma-addons4
 SUBDIR+=	kdeutils3
+SUBDIR+=	kdeutils4
 SUBDIR+=	kdrill
 SUBDIR+=	kodos
 SUBDIR+=	koffice
