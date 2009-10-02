@@ -1,0 +1,8 @@
+#!/bin/sh
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	${PREFIX}/sbin/update-reader.conf
+	;;
+esac
