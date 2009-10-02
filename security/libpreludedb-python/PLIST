@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.11 2009/08/24 13:50:03 hasso Exp $
+${PYSITELIB}/_preludedb.so
+${PYSITELIB}/preludedb.py
+${PYSITELIB}/preludedb.pyc
