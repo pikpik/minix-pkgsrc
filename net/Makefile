@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.784 2009/09/02 22:33:55 wiz Exp $
+# $NetBSD: Makefile,v 1.785 2009/09/16 19:41:22 sno Exp $
 #
 
 COMMENT=	Networking tools
@@ -314,6 +314,7 @@ SUBDIR+=	openslp
 SUBDIR+=	openvmps
 SUBDIR+=	openvpn
 SUBDIR+=	openwbem
+SUBDIR+=	ortp
 SUBDIR+=	overnet
 SUBDIR+=	p5-Cisco-Abbrev
 SUBDIR+=	p5-DNS-ZoneParse
