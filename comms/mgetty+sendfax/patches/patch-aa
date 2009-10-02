@@ -1,11 +1,11 @@
-$NetBSD: patch-aa,v 1.2 1998/11/15 20:45:30 tron Exp $
+$NetBSD$
 
---- fax/faxspool.in.orig	2004-07-17 12:17:49.000000000 +0200
+--- fax/faxspool.in.orig	2007-01-19 08:38:22.000000000 +0100
 +++ fax/faxspool.in
-@@ -389,11 +389,11 @@ fs_cvt_pdf()
- # user name (for authentification)
- ##########
+@@ -407,11 +407,11 @@ fs_cvt_pdf()
  
+ # user name (for fax header only! auth is done by faxq-helper via getuid())
+ ##########
 -if user=`logname 2>/dev/null`
 -then :
 +if [ `id -u` = 0 ]; then
