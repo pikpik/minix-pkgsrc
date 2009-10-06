@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- sj3dic/sjrc.c.orig	2009-10-06 19:37:25.000000000 +0200
++++ sj3dic/sjrc.c
+@@ -36,7 +36,7 @@
+ 
+ 
+ 
+-
++#include <string.h>
+ #include <stdio.h>
+ #include <locale.h>
+ #include <ctype.h>
