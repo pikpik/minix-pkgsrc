@@ -1,4 +1,4 @@
-/* $NetBSD: add.h,v 1.14 2009/08/06 16:53:34 joerg Exp $ */
+/* $NetBSD: add.h,v 1.15 2009/08/16 14:26:46 joerg Exp $ */
 
 /* from FreeBSD Id: add.h,v 1.8 1997/02/22 16:09:15 peter Exp  */
 
@@ -38,6 +38,8 @@ extern Boolean Force;
 extern Boolean Automatic;
 extern int LicenseCheck;
 extern int Replace;
+
+extern Boolean ForceDepends;
 
 int     make_hierarchy(char *);
 void    apply_perms(char *, char **, int);
