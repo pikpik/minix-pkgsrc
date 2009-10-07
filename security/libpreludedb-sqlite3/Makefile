@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.26 2009/08/24 13:50:03 hasso Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/10/02 10:05:54 hasso Exp $
 #
 
-.include "../../security/libpreludedb/Makefile.common"
-.include "../../mk/bsd.prefs.mk"
-
-PATCHDIR=		${.CURDIR}/../libpreludedb/patches
 PKGNAME=		libpreludedb-sqlite3-${VERSION}
 COMMENT=		Sqlite3 plugin for LibPreludeDB
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../security/libpreludedb/Makefile.common"
 
 CONFIGURE_ARGS+=	--with-perl=no
 CONFIGURE_ARGS+=	--with-python=no

@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.26 2009/08/24 13:50:03 hasso Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/10/02 09:59:40 hasso Exp $
 #
 
-.include "../../security/libpreludedb/Makefile.common"
-.include "../../mk/bsd.prefs.mk"
-
-PATCHDIR=		${.CURDIR}/../libpreludedb/patches
 PKGNAME=		libpreludedb-perl-${VERSION}
 COMMENT=		Perl bindings for LibPreludeDB libraries
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../security/libpreludedb/Makefile.common"
 
 CONFIGURE_ARGS+=	--with-python=no
 CONFIGURE_ARGS+=	--with-mysql=no
