@@ -1,8 +1,0 @@
-===========================================================================
-$NetBSD$
-
-This package is obsolete.
-You probably want to install epdfview since this conflicts with poppler
-which is a more recent package that people use.
-
-===========================================================================
