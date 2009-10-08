@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.329 2009/09/11 11:54:12 gson Exp $
+# $NetBSD: Makefile,v 1.330 2009/10/02 21:36:50 markd Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -99,8 +99,8 @@ SUBDIR+=	kdeartwork3
 SUBDIR+=	kdeartwork4
 SUBDIR+=	kdeedu3
 SUBDIR+=	kdeedu4
-SUBDIR+=	kdepim3
 SUBDIR+=	kdepim-runtime4
+SUBDIR+=	kdepim3
 SUBDIR+=	kdepim4
 SUBDIR+=	kdepimlibs4
 SUBDIR+=	kdeplasma-addons4
