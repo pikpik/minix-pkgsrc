@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/03/05 16:27:23 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2007/06/15 17:09:45 joerg Exp $
 
 DISTNAME=	cross-${TARGET_ARCH}-${DISTVERSION}
 TARGET_ARCH=	mipsEEel-netbsd
@@ -35,6 +35,7 @@ EXTRACT_ONLY=		${BINUTILS_DISTNAME}.tar.gz
 # gcc
 #
 MASTER_SITES+=		ftp://ftp.NetBSD.org/pub/NetBSD/misc/hamajima/PlayStation2/GPLed-from-SCEI/gcc-2.95.2EE/
+SITES.gcc-2.95.2.tar.gz=	${MASTER_SITE_GNU:=gcc/}
 GCC_VERSION=		2.95.2
 GCC_DISTNAME=		gcc-${GCC_VERSION}
 GCC_WRKSRC=		${WRKDIR}/${GCC_DISTNAME}
