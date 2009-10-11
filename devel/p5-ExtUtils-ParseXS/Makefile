@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2009/07/28 06:28:07 sno Exp $
+# $NetBSD: Makefile,v 1.7 2009/09/16 17:21:24 sno Exp $
 
-DISTNAME=	ExtUtils-ParseXS-2.200401
-PKGNAME=	p5-${DISTNAME:S/200401/20.04.01/}
+DISTNAME=	ExtUtils-ParseXS-2.21
+PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5epx
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=ExtUtils/}
