@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2009/07/07 18:58:47 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/09/22 00:56:14 wiz Exp $
 #
 
-DISTNAME=	mechanize-0.1.10
+DISTNAME=	mechanize-0.1.11
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	www
 MASTER_SITES=	http://wwwsearch.sourceforge.net/mechanize/src/
