@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/gui/kernel/qcursor_x11.cpp.orig	2008-09-27 10:58:47.000000000 +0200
+--- src/gui/kernel/qcursor_x11.cpp.orig	2009-09-29 13:01:37.000000000 +0200
 +++ src/gui/kernel/qcursor_x11.cpp
-@@ -229,7 +229,7 @@ void QCursorData::update()
+@@ -244,7 +244,7 @@ void QCursorData::update()
          return;
      }
  
