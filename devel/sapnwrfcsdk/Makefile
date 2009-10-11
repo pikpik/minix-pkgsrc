@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/03/09 16:53:16 sno Exp $
+# $NetBSD: Makefile,v 1.2 2009/05/19 08:59:12 wiz Exp $
 
 PKGNAME=		sapnwrfcsdk-7.11
 CATEGORIES=		devel
@@ -58,7 +58,7 @@ DISTNAME=		NWRFC_1-20004551
 BROKEN=		Architecture ${MACHINE_ARCH} on platform ${OPSYS} not supported
 .endif
 .else
-BROKEN=		Plattform ${OPSYS} not supported
+BROKEN=		Platform ${OPSYS} not supported
 .endif
 
 EXTRACT_CMD=		SAPCAR -xvf ${DOWNLOADED_DISTFILE}
