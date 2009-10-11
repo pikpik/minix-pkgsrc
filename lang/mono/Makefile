@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.92 2009/08/21 09:29:28 kefren Exp $
+# $NetBSD: Makefile,v 1.93 2009/09/02 12:09:01 wiz Exp $
 
 DISTNAME=	mono-${MONO_VERSION}
 CATEGORIES=	lang
+PKGREVISION=	1
 MASTER_SITES=	http://ftp.novell.com/pub/mono/sources/mono/
 EXTRACT_SUFX=	.tar.bz2
 
