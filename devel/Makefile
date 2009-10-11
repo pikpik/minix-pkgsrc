@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1238 2009/10/02 20:31:31 markd Exp $
+# $NetBSD: Makefile,v 1.1239 2009/10/11 09:38:24 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -78,6 +78,7 @@ SUBDIR+=	bugzilla
 SUBDIR+=	bugzilla3
 SUBDIR+=	byacc
 SUBDIR+=	bzr
+SUBDIR+=	bzr-explorer
 SUBDIR+=	bzr-gtk
 SUBDIR+=	bzr-svn
 SUBDIR+=	bzrtools
