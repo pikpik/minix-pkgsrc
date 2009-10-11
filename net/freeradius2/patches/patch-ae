@@ -1,13 +1,13 @@
 $NetBSD$
 
---- Makefile.orig	2008-09-25 10:41:26.000000000 +0200
+--- Makefile.orig	2009-09-14 16:43:29.000000000 +0200
 +++ Makefile
 @@ -11,7 +11,7 @@ include Make.inc
  
  .PHONY: all clean install
  
--SUBDIRS		= $(LTDL_SUBDIRS) src raddb scripts doc
-+SUBDIRS		= $(LTDL_SUBDIRS) src scripts doc
+-SUBDIRS		= $(LTDL_SUBDIRS) $(wildcard src raddb scripts doc)
++SUBDIRS		= $(LTDL_SUBDIRS) $(wildcard src scripts doc)
  WHAT_TO_MAKE	= all
  
  all:
