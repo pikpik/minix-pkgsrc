@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2008/10/13 20:18:15 smb Exp $
+# $NetBSD: Makefile,v 1.29 2009/06/09 13:14:42 wiz Exp $
 #
 
 DISTNAME=		enchant-1.5.0
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.abisource.com/downloads/enchant/1.5.0/
 
