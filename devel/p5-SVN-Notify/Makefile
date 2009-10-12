@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2008/10/19 19:18:00 he Exp $
+# $NetBSD: Makefile,v 1.8 2008/11/11 09:06:23 rhaen Exp $
 
-DISTNAME=	SVN-Notify-2.78
+DISTNAME=	SVN-Notify-2.79
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5 scm
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SVN/}
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SVN/}
 MAINTAINER=	rhaen@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/SVN-Notify/
 COMMENT=	Perl module for mailing messages for Subversion repository activity
+LICENSE=  ${PERL5_LICENSE}
 
 PERL5_PACKLIST=		auto/SVN/Notify/.packlist
 PERL5_MODULE_TYPE=	Module::Build
