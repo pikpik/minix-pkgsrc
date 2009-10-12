@@ -5,12 +5,12 @@ DISTNAME=	Class-Trigger-0.14
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5ctr
 CATEGORIES=	devel perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/M/MI/MIYAGAWA/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Class/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Class-Trigger/
 COMMENT=	Mixin to add/call inheritable triggers
-LICENSE=  ${PERL5_LICENSE}
+LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
