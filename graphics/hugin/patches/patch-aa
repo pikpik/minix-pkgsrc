@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/hugin1/hugin/config_defaults.h.orig	2009-08-21 19:36:01.000000000 +0200
+--- src/hugin1/hugin/config_defaults.h.orig	2009-09-21 03:04:06.000000000 +0200
 +++ src/hugin1/hugin/config_defaults.h
-@@ -148,7 +148,7 @@
+@@ -131,7 +131,7 @@
  
  #endif
  
