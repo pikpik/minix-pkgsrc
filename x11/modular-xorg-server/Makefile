@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.51 2009/08/01 15:33:46 tnn Exp $
+# $NetBSD: Makefile,v 1.52 2009/09/20 12:04:01 sno Exp $
 #
 
-DISTNAME=	xorg-server-1.6.3
+DISTNAME=	xorg-server-1.6.5
 PKGNAME=	modular-${DISTNAME}
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=xserver/}
