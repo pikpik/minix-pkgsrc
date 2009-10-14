@@ -1,5 +1,4 @@
-# $NetBSD: bjam.mk,v 1.3 2008/02/05 22:39:41 heinz Exp $
-#
+# $NetBSD: bjam.mk,v 1.4 2009/03/03 08:57:58 jmmv Exp $
 
 .include "../../devel/boost-jam/buildlink3.mk"
 
@@ -17,7 +16,6 @@ BJAM_ARGS+=		-sTARGET_LIBDIR=${PREFIX}/lib
 BJAM_ARGS+=		--disable-long-double
 BJAM_ARGS+=		${BJAM_BUILD}
 
-BJAM_BUILD+=		debug
 BJAM_BUILD+=		release
 BJAM_BUILD+=		threading=multi
 BJAM_BUILD+=		link=shared,static

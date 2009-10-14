@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/11/29 22:27:13 heinz Exp $
-#
+# $NetBSD: Makefile,v 1.3 2008/01/04 19:58:40 jmmv Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -27,6 +26,6 @@ do-build:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tools/jam/src/bin.*/bjam \
-	    ${DESTDIR:Q}${PREFIX}/bin
+	    ${DESTDIR}${PREFIX}/bin
 
 .include "../../mk/bsd.pkg.mk"

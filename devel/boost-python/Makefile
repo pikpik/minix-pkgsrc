@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/09/13 16:14:13 jmmv Exp $
+# $NetBSD: Makefile,v 1.12 2009/08/08 21:16:19 wiz Exp $
 #
 
 BOOST_PACKAGE=		python
@@ -18,7 +18,7 @@ PYTHON_VERSIONS_ACCEPTED=	26 25
 .include "../../lang/python/application.mk"
 
 post-configure:
-	echo 'using python : ${PYVERSSUFFIX} :' \
+	${ECHO} 'using python : ${PYVERSSUFFIX} :' \
 	    '${PREFIX}/bin/python${PYVERSSUFFIX} ;' \
 	    >${WRKSRC}/user-config.jam
 
