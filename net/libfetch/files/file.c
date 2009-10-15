@@ -1,4 +1,4 @@
-/*	$NetBSD: file.c,v 1.13 2009/02/05 16:59:45 joerg Exp $	*/
+/*	$NetBSD: file.c,v 1.14 2009/03/10 00:33:38 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * Copyright (c) 2008, 2009 Joerg Sonnenberger <joerg@NetBSD.org>
@@ -234,6 +234,7 @@ fetchListFile(struct url_list *ue, struct url *u, const char *pattern, const cha
 	char *path;
 	struct dirent *de;
 	DIR *dir;
+	int ret;
 
 	if ((path = fetchUnquotePath(u)) == NULL) {
 		fetch_syserr();
@@ -248,13 +249,17 @@ fetchListFile(struct url_list *ue, struct url *u, const char *pattern, const cha
 		return -1;
 	}
 
+	ret = 0;
+
 	while ((de = readdir(dir)) != NULL) {
 		if (pattern && fnmatch(pattern, de->d_name, 0) != 0)
 			continue;
-		fetch_add_entry(ue, u, de->d_name, 0);
+		ret = fetch_add_entry(ue, u, de->d_name, 0);
+		if (ret)
+			break;
 	}
 
 	closedir(dir);
 
-	return 0;
+	return ret;
 }
