@@ -1,2 +1,0 @@
-@comment $NetBSD: PLIST,v 1.3 2008/06/22 15:45:36 taca Exp $
-${RUBY_VENDORLIB}/DBD/SQLite/SQLite.rb

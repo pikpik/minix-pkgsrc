@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 2008/06/22 15:45:12 taca Exp $
-${RUBY_EG}/dbi/dbd-postgresql/sqlsh.rb.new
-${RUBY_VENDORLIB}/DBD/Pg/Pg.rb
