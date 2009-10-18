@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1239 2009/10/11 09:38:24 wiz Exp $
+# $NetBSD: Makefile,v 1.1240 2009/10/11 18:40:38 epg Exp $
 #
 
 COMMENT=	Development utilities
@@ -933,6 +933,7 @@ SUBDIR+=	p5-autodie
 SUBDIR+=	p5-boolean
 SUBDIR+=	p5-capitalization
 SUBDIR+=	p5-common-sense
+SUBDIR+=	p5-constant
 SUBDIR+=	p5-enum
 SUBDIR+=	p5-ex-lib
 SUBDIR+=	p5-gettext
