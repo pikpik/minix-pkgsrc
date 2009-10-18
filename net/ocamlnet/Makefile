@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/11 15:43:36 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/30 00:07:21 joerg Exp $
 #
 
 DISTNAME=		ocamlnet-1.1.2
 CATEGORIES=		net
-MASTER_SITES=		http://www.ocaml-programming.de/packages/
+MASTER_SITES=		http://download.camlcity.org/download/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.ocaml-programming.de/packages/
+HOMEPAGE=		http://projects.camlcity.org/projects/ocamlnet.html
 COMMENT=		Library focusing on application-level network protocols (OCaml)
 
 MAKE_JOBS_SAFE=		no
