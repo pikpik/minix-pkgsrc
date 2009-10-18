@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2007/03/19 13:19:01 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2008/06/20 01:09:31 joerg Exp $
 #
 
 DISTNAME=		gopher_3.0.11
 PKGNAME=		${DISTNAME:S/_/-/}
 PKGREVISION=		1
 CATEGORIES=		net
-MASTER_SITES=		http://quux.org/devel/gopher/Downloads/
+MASTER_SITES=		http://gopher.quux.org:70/devel/gopher/Downloads/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		gopher://quux.org/1/devel/gopher/
