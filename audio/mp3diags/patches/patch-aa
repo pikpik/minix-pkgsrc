@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/src.pro.orig	2009-10-19 15:41:57.000000000 +0200
++++ src/src.pro
+@@ -148,7 +148,7 @@ ThreadRunner.ui \
+  Export.ui
+ 
+ 
+-LIBS += -lboost_serialization-mt
++LIBS += -lboost_serialization
+ 
+ #CONFIG += console
+ 
