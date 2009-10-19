@@ -1,6 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2008/11/02 23:30:34 he Exp $
-
-BUILDLINK_DEPMETHOD.p5-B-Hooks-OP-Check?=	build
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:24:25 joerg Exp $
 
 BUILDLINK_TREE+=	p5-B-Hooks-OP-Check
 

@@ -1,6 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2009/01/19 18:02:57 abs Exp $
-
-BUILDLINK_DEPMETHOD.p5-B-Hooks-Parser?=	build
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:24:25 joerg Exp $
 
 BUILDLINK_TREE+=	p5-B-Hooks-Parser
 
