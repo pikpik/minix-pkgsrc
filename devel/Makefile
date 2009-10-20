@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1242 2009/10/18 11:11:56 sno Exp $
+# $NetBSD: Makefile,v 1.1243 2009/10/18 11:30:25 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -1063,6 +1063,7 @@ SUBDIR+=	ruby-curses
 SUBDIR+=	ruby-debug
 SUBDIR+=	ruby-debug-base
 SUBDIR+=	ruby-debug-ide
+SUBDIR+=	ruby-deprecated
 SUBDIR+=	ruby-dhaka
 SUBDIR+=	ruby-eet
 SUBDIR+=	ruby-eventmachine
