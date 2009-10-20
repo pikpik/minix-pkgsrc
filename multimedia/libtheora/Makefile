@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2009/04/16 04:03:49 tron Exp $
+# $NetBSD: Makefile,v 1.27 2009/09/13 13:33:59 tron Exp $
 #
 
 .include "Makefile.common"
-
-PKGREVISION=		1
 
 PKGCONFIG_OVERRIDE=	theora.pc.in theoradec.pc.in theoraenc.pc.in
 USE_LIBTOOL=		YES
