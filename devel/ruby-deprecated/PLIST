@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/deprecated-${PKGVERSION}.gem
+${GEM_LIBDIR}/lib/deprecated.rb
+${GEM_LIBDIR}/test/deprecated.rb
+${GEM_HOME}/specifications/deprecated-${PKGVERSION}.gemspec
