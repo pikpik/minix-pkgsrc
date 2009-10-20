@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/10/19 08:46:30 stacktic Exp $
+# $NetBSD: Makefile,v 1.4 2009/10/19 16:31:38 stacktic Exp $
 #
 
 DISTNAME=		rump_20091014
@@ -22,6 +22,8 @@ USE_BSD_MAKEFILE=	yes
 WRKSRC=			${WRKDIR}/rump
 MAKEFLAGS+=		-m ${WRKSRC}/share/mk
 MAKEFLAGS+=		MKMAN=no
+MAKEFLAGS+=		TOOLDIR=${WRKSRC}/tooldir
+MAKEFLAGS+=		MACHINE_ARCH=${MACHINE_ARCH}
 
 SUBST_CLASSES+=		inc_path
 SUBST_STAGE.inc_path=	pre-configure
@@ -61,7 +63,7 @@ SUBST_FILES.strlc=	lib/libukfs/Makefile
 SUBST_SED.strlc=	-e "s|\#LIB.*|LDADD+= -L${WRKSRC}/tools/compat -lnbcompat|g"
 
 MAKEFLAGS+=		MACHINE=${MACHINE_ARCH:C/x86_64/amd64/}
-MAKEFLAGS+=		MACHINE_ARCH=${MACHINE_ARCH}
+
 CRT_PATH!=		gcc --print-file-name=crtbegin.o
 MAKEFLAGS+=		_GCC_CRTBEGIN=${CRT_PATH}
 MAKEFLAGS+=		_GCC_CRTBEGINS=${CRT_PATH:C/begin/beginS/}
