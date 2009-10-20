@@ -1,0 +1,12 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	gsoap
+
+.if !defined(GSOAP_BUILDLINK3_MK)
+GSOAP_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.gsoap+=	gsoap>=2.7.13
+BUILDLINK_PKGSRCDIR.gsoap?=	../../devel/gsoap
+.endif	# GSOAP_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-gsoap
