@@ -96,6 +96,9 @@ CHECK_FILES_SKIP+=	${PREFIX}/.*/fonts.scale
 CHECK_FILES_SKIP+=	${PREFIX}/.*/fonts.cache-1
 .endif
 
+# Mutable charset.alias file
+CHECK_FILES_SKIP+=	${PREFIX}/lib/charset.alias
+
 _CHECK_FILES_SKIP_FILTER=	${GREP} -vx ${CHECK_FILES_SKIP:@f@-e ${DESTDIR:Q}${f:Q}@}
 
 ###########################################################################
