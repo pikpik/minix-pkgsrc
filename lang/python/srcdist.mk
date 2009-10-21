@@ -1,14 +1,14 @@
-# $NetBSD: srcdist.mk,v 1.27 2009/04/19 14:46:21 wiz Exp $
+# $NetBSD: srcdist.mk,v 1.28 2009/09/07 18:21:43 joerg Exp $
 
 .include "../../lang/python/pyversion.mk"
 
 .if ${_PYTHON_VERSION} == "26"
 
-DISTNAME=	Python-2.6.2
+DISTNAME=	Python-2.6.3
 EXTRACT_SUFX=	.tar.bz2
 DISTINFO_FILE=	${.CURDIR}/../../lang/python26/distinfo
 PATCHDIR=	${.CURDIR}/../../lang/python26/patches
-PYSUBDIR=	Python-2.6.2
+PYSUBDIR=	Python-2.6.3
 WRKSRC=		${WRKDIR}/${PYSUBDIR}
 MASTER_SITES=	ftp://ftp.python.org/pub/python/2.6/
 
