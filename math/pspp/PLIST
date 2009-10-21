@@ -1,9 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.8 2009/09/04 21:39:10 asau Exp $
 bin/pspp
 ${PLIST.x11}bin/psppire
 info/pspp-dev.info
 info/pspp.info.gz
-lib/charset.alias
 ${PLIST.x11}lib/pspp/libpsppire.la
 ${PLIST.x11}lib/pspp/libpsppwidgets.la
 share/examples/pspp/devices
