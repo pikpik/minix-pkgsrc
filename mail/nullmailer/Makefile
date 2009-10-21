@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.31 2009/10/13 13:55:28 plunky Exp $
+# $NetBSD: Makefile,v 1.32 2009/10/14 21:13:41 plunky Exp $
 
-DISTNAME=		nullmailer-1.04
-PKGREVISION=		1
+DISTNAME=		nullmailer-1.05
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE:Q}
 
@@ -11,7 +10,7 @@ COMMENT=		Simple relay-only mail transport agent
 
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKG_DESTDIR_SUPPORT=	destdir
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
