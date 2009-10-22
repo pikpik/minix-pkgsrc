@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/07/18 10:20:51 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2009/09/22 19:34:05 tnn Exp $
 #
 
 DISTNAME=		libX11-1.2.2
@@ -12,8 +12,6 @@ COMMENT=		Base X libraries from modular Xorg X11
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-MAKE_JOBS_SAFE=		no
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
