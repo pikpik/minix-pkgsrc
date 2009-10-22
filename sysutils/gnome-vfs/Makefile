@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2009/04/10 22:27:16 asau Exp $
-
-PKGREVISION=	1
+# $NetBSD: Makefile,v 1.75 2009/06/25 17:37:11 drochner Exp $
 
 PKGCONFIG_OVERRIDE=	gnome-vfs-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	gnome-vfs-module-2.0.pc.in
