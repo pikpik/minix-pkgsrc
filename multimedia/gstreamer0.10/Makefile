@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2009/08/17 17:40:25 drochner Exp $
+# $NetBSD: Makefile,v 1.31 2009/10/21 16:39:38 drochner Exp $
 #
 
 DISTNAME=		gstreamer-0.10.25
@@ -57,6 +57,8 @@ PLIST_VARS+=	gstcheck
 .include "../../devel/check/buildlink3.mk"
 PLIST.gstcheck=	yes
 TEST_TARGET=	check-torture
+.else
+CONFIGURE_ARGS+= --disable-check
 .endif
 
 .include "../../devel/glib2/buildlink3.mk"
