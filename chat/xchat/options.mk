@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.12 2008/05/26 14:39:24 tron Exp $
+# $NetBSD: options.mk,v 1.13 2009/07/22 09:01:21 wiz Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -73,4 +73,6 @@ CONFIGURE_ARGS+=	--enable-spell=gtkspell
 .elif !empty(PKG_OPTIONS:Mlibsexy)
 CONFIGURE_ARGS+=	--enable-spell=libsexy
 .	include "../../devel/libsexy/buildlink3.mk"
+.else
+CONFIGURE_ARGS+=	--enable-spell=none
 .endif
