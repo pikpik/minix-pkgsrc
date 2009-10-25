@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.36 2009/09/07 10:02:13 drochner Exp $
+# $NetBSD: Makefile,v 1.37 2009/10/21 18:56:15 drochner Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
+
+DEPENDS+=	gst-plugins0.10-soup-[0-9]*:../../net/gst-plugins0.10-soup
 
 COMMENT+=	(using GStreamer)
 
