@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/12/16 12:34:31 obache Exp $
+# $NetBSD: Makefile,v 1.2 2009/08/26 19:58:07 sno Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-clutter-gst-${VERSION}
 COMMENT=		Ruby binding for Clutter GStreamer library
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		multimedia
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -17,5 +17,5 @@ USE_TOOLS+=	pkg-config
 
 .include "../../devel/ruby-gnome2-glib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../multimedia/clutter-gst/buildlink3.mk"
+.include "../../multimedia/clutter08-gst/buildlink3.mk"
 .include "../../graphics/ruby-clutter/Makefile.common"
