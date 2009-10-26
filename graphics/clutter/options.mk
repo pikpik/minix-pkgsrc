@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1.1.1 2008/12/14 10:57:18 obache Exp $
+# $NetBSD$
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.clutter
@@ -14,6 +14,7 @@ PLIST.x11=		yes
 CONFIGURE_ARGS+=	--with-x
 CONFIGURE_ARGS+=	--with-flavour=glx
 CONFIGURE_ARGS+=	--with-imagebackend=gdk-pixbuf
+CONFIGURE_ARGS+=	--enable-xinput
 BUILDLINK_API_DEPENDS.MesaLib+= MesaLib>=7.0
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
