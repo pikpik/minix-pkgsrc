@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/02/22 13:59:47 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2009/06/09 13:25:02 wiz Exp $
 #
 
 PKGNAME=		${PYPKGPREFIX}-gobject-2.18.0
@@ -6,6 +6,8 @@ PKGNAME=		${PYPKGPREFIX}-gobject-2.18.0
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
+
+PYTHON_VERSIONS_ACCEPTED=	26 25
 
 post-patch:
 	${SED} "s|@PYGTKCODEGEN@|${PREFIX}/share/pygobject/2.0|" \
