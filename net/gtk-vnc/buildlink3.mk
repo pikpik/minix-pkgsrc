@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2009/04/06 10:18:07 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2009/08/26 19:57:02 sno Exp $
 
 BUILDLINK_TREE+=	gtk-vnc
 
@@ -11,7 +11,6 @@ BUILDLINK_PKGSRCDIR.gtk-vnc?=	../../net/gtk-vnc
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/gtkglext/buildlink3.mk"
 .include "../../security/gnutls/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .endif # GTK_VNC_BUILDLINK3_MK
