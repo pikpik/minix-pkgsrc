@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2009/05/19 08:59:16 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/26 19:57:06 sno Exp $
 #
 
 DISTNAME=	clutter-cairo-0.8.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.clutter-project.org/sources/clutter-cairo/0.8/
 
@@ -21,5 +21,5 @@ PKGCONFIG_OVERRIDE+=	clutter-cairo.pc.in
 
 BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.4
 .include "../../graphics/cairo/buildlink3.mk"
-.include "../../graphics/clutter/buildlink3.mk"
+.include "../../graphics/clutter08/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
