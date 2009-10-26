@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/10/14 11:39:25 tnn Exp $
 #
 
 DISTNAME=	# from icedtea-extras.mk
@@ -9,7 +9,7 @@ MASTER_SITES=	# from icedtea-extras.mk
 MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://icedtea.classpath.org/
 COMMENT=	Java browser plugin
-LICENSE=	# GPL2 + Classpath exception
+#LICENSE=	# GPL2 + Classpath exception
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
