@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/10/14 11:39:25 tnn Exp $
+# $NetBSD: Makefile,v 1.2 2009/10/26 05:18:30 obache Exp $
 #
 
 DISTNAME=	# from icedtea-extras.mk
@@ -10,6 +10,8 @@ MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://icedtea.classpath.org/
 COMMENT=	Java browser plugin
 #LICENSE=	# GPL2 + Classpath exception
+
+BUILD_DEPENDS+=	zip-[0-9]*:../../archivers/zip
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
