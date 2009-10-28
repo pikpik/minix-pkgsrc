@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/06/15 11:09:58 obache Exp $
+# $NetBSD: Makefile,v 1.22 2009/08/25 11:57:45 wiz Exp $
 #
 
 DISTNAME=		arnsrc27012002
@@ -35,6 +35,13 @@ do-install:
 		${FIND} . -type d -print | ${XARGS} ${CHMOD} ${PKGDIRMODE}
 	cd ${WRKSRC} && ${INSTALL_DATA} readme.* \
 		${DESTDIR}${PREFIX}/share/doc/arnold
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+CONFIGURE_ARGS+=	--x-includes=${PREFIX}/include
+CONFIGURE_ARGS+=	--x-libraries=${PREFIX}/lib
+.endif
 
 .include "../../mk/oss.buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"
