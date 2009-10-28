@@ -1,5 +1,6 @@
-# $NetBSD: Makefile,v 1.18 2009/05/20 00:58:11 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2009/05/21 11:44:42 adam Exp $
 
+PKGREVISION=		1
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
