@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/11/10 17:21:37 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/02/08 00:01:35 cube Exp $
 
 DISTNAME=	xtide-2.8.3
 PKGREVISION=	2
@@ -34,6 +34,13 @@ post-extract:
 post-install:
 	${INSTALL_DATA} ${WRKDIR}/xtide.conf ${EGDIR}/xtide.conf
 	${INSTALL_DATA} ${WRKDIR}/${HARMONICS_FILE} ${PREFIX}/share/xtide
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+CONFIGURE_ARGS+=	--x-includes=${X11BASE:Q}/include
+CONFIGURE_ARGS+=	--x-libraries=${X11BASE:Q}/lib${LIBABISUFFIX:Q}
+.endif
 
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
