@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/10/02 17:57:39 ahoka Exp $
-#
+# $NetBSD: Makefile,v 1.9 2009/10/27 18:50:38 drochner Exp $
 
 DISTNAME=	xmlrpc-c-1.06.38
 CATEGORIES=	textproc devel
@@ -13,14 +12,17 @@ COMMENT=	Library for writing an XML-RPC server or client in C or C++
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Sometimes can't open ../xmltok/libxmlrpc_xmltok.la
-MAKE_JOBS_SAFE=	no
+MAKE_JOBS_SAFE=		no
 
-GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
-USE_LANGUAGES=	c99 c++
-USE_TOOLS+=	gmake
-MAKE_FILE=	GNUmakefile
-TEST_TARGET=	check
+USE_LANGUAGES=		c99 c++
+USE_LIBTOOL=		yes
+USE_TOOLS+=		gmake
+GNU_CONFIGURE=		yes
+MAKE_FILE=		GNUmakefile
+MAKE_ENV=		CFLAGS_COMMON=${CFLAGS:M*:Q}
+MAKE_ENV+=		CXXFLAGS_COMMON=${CXXFLAGS:M*:Q}
+MAKE_ENV+=		LADD=${LDFLAGS:M*:Q}
+TEST_TARGET=		check
 
 SUBST_CLASSES+=	pthread
 SUBST_FILES.pthread=	xmlrpc-c-config.in xmlrpc-c-config.test.in

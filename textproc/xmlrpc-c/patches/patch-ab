@@ -18,7 +18,7 @@ $NetBSD$
  ifeq ($(HOST_OS),aix)
    # This code is not finished; that's why we don't set SHARED_LIB_TYPE.
    # If you can finish it and make it work on AIX, please do.
-@@ -188,11 +197,30 @@ ifeq ($(HOST_OS),osf)
+@@ -188,17 +197,36 @@ ifeq ($(HOST_OS),osf)
  endif
  
  ifeq ($(findstring netbsd,$(HOST_OS)),netbsd)
@@ -53,3 +53,10 @@ $NetBSD$
  endif
  
  ifeq ($(HOST_OS),darwin)
+   # This code is not finished; that's why we don't set SHARED_LIB_TYPE.
+   # If you can finish it and make it work on AIX, please do.
+-  # SHARED_LIB_TYPE = dylib
++  SHARED_LIB_TYPE = dylib
+   SHLIB_SUFFIX = dylib
+ endif
+ 
