@@ -1,13 +1,14 @@
-$NetBSD: patch-aa,v 1.1.1.1 2001/03/12 10:08:25 zuntum Exp $
+$NetBSD$
 
---- Makefile.orig	Thu Jan  4 22:22:16 2001
+--- Makefile.orig	2001-01-04 22:22:16.000000000 +0100
 +++ Makefile
 @@ -1,13 +1,12 @@
  PACKAGE=loco
  VERSION=0.32
 -PREFIX=/usr/local
- MANDIR=$(PREFIX)/man/man1
+-MANDIR=$(PREFIX)/man/man1
 -DOCDIR=$(PREFIX)/doc/$(PACKAGE)-$(VERSION)
++MANDIR=$(PREFIX)/$(PKGMANDIR)/man1
 +DOCDIR=$(PREFIX)/share/doc/$(PACKAGE)
  
  check:
@@ -20,7 +21,7 @@ $NetBSD: patch-aa,v 1.1.1.1 2001/03/12 10:08:25 zuntum Exp $
  	#
  	# Checks finished. Everything looks fine
  	#
-@@ -15,18 +14,18 @@
+@@ -15,18 +14,18 @@ check:
  install: installdoc installman installprogram
  
  installdoc:
