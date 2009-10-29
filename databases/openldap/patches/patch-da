@@ -1,6 +1,6 @@
 $NetBSD$
 
---- contrib/slapd-modules/smbk5pwd/Makefile.orig	2009-09-02 00:53:30.000000000 +0200
+--- contrib/slapd-modules/smbk5pwd/Makefile.orig	2009-10-02 23:16:53.000000000 +0200
 +++ contrib/slapd-modules/smbk5pwd/Makefile
 @@ -13,8 +13,8 @@
  # <http://www.OpenLDAP.org/license.html>.
@@ -17,8 +17,8 @@ $NetBSD$
  
  smbk5pwd.la:	smbk5pwd.lo
  	$(LIBTOOL) --mode=link $(CC) $(OPT) -version-info 0:0:0 \
--	-rpath $(libdir) -module -o $@ $? $(LIBS)
-+	-rpath $(libdir) -module -o $@ $? -ldes $(LIBS)
+-	-rpath $(moduledir) -module -o $@ $? $(LIBS)
++	-rpath $(moduledir) -module -o $@ $? -ldes $(LIBS)
  
  clean:
  	rm -f smbk5pwd.lo smbk5pwd.la
