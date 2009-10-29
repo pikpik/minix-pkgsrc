@@ -1,4 +1,4 @@
-/* $NetBSD$ */
+/* $NetBSD: proctab.c,v 1.1 2006/07/14 14:23:06 jlam Exp $ */
 
 #include <stdio.h>
 #include "awk.h"
@@ -180,7 +180,7 @@ Cell *(*proctab[92])(Node **, int) = {
 	nullproc,	/* NUMBER */
 	nullproc,	/* STRING */
 	nullproc,	/* REGEXPR */
-	getline,	/* GETLINE */
+	get_line,	/* GETLINE */
 	substr,	/* SUBSTR */
 	split,	/* SPLIT */
 	jump,	/* RETURN */
