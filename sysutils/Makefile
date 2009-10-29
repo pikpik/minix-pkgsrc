@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.477 2009/09/07 18:21:23 joerg Exp $
+# $NetBSD: Makefile,v 1.478 2009/09/16 19:05:11 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -77,6 +77,7 @@ SUBDIR+=	dirvish
 SUBDIR+=	diskscrub
 SUBDIR+=	dmassage
 SUBDIR+=	dmesg2gif
+SUBDIR+=	dmg2img
 SUBDIR+=	dmidecode
 SUBDIR+=	dmsdos
 SUBDIR+=	dog
