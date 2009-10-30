@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.787 2009/10/02 20:20:03 markd Exp $
+# $NetBSD: Makefile,v 1.788 2009/10/21 18:51:12 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -65,6 +65,7 @@ SUBDIR+=	cisco-mibs
 SUBDIR+=	citrix_ica
 SUBDIR+=	clive
 SUBDIR+=	cmu-dhcpd
+SUBDIR+=	cntlm
 SUBDIR+=	coda
 SUBDIR+=	coherence
 SUBDIR+=	connect
