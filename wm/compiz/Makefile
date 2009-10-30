@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2009/07/07 22:50:08 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2009/08/26 19:56:55 sno Exp $
 #
 
 DISTNAME=	compiz-0.6.2
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	wm x11
 MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 
@@ -97,6 +97,7 @@ PLIST.kde=		yes
 # some plugins do it.
 .include "../../mk/pthread.buildlink3.mk"
 
+.include "../../audio/libcanberra/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
