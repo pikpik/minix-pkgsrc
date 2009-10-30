@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2009/03/20 19:24:12 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2009/08/26 19:56:56 sno Exp $
 
 BUILDLINK_TREE+=	devhelp
 
@@ -11,10 +11,10 @@ BUILDLINK_PKGSRCDIR.devhelp?=	../../devel/devhelp
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/libglade/buildlink3.mk"
 .include "../../devel/libwnck/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+.include "../../www/webkit-gtk/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .endif # DEVHELP_BUILDLINK3_MK
 
