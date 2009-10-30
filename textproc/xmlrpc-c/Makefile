@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/10/28 09:25:23 adam Exp $
+# $NetBSD: Makefile,v 1.11 2009/10/29 17:39:11 drochner Exp $
 
 DISTNAME=	xmlrpc-c-1.06.38
 # the "super stable" branch
@@ -12,6 +12,7 @@ HOMEPAGE=	http://xmlrpc-c.sourceforge.net/
 COMMENT=	Library for writing an XML-RPC server or client in C or C++
 
 CONFLICTS+=	xmlrpc-c-[0-9]*
+SUPERSEDES+=	xmlrpc-c-[0-9]*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
