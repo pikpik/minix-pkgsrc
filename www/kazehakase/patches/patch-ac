@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/net/kz-http.c.orig	2009-09-29 05:38:19.000000000 +0200
++++ src/net/kz-http.c
+@@ -25,7 +25,6 @@
+ #  include "config.h"
+ #endif /* HAVE_CONFIG_H */
+ 
+-#include <features.h>
+ #define __USE_XOPEN
+ #include <time.h>
+ #include "gnet.h"
