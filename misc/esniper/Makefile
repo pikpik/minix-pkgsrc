@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2008/10/14 18:21:18 heinz Exp $
+# $NetBSD: Makefile,v 1.14 2009/08/09 13:39:06 heinz Exp $
 #
 
-DISTNAME=		esniper-2-19-0
-PKGNAME=		esniper-2.19.0
-PKGREVISION=		1
+DISTNAME=		esniper-2-20-0
+PKGNAME=		esniper-2.20.0
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=esniper/}
 EXTRACT_SUFX=		.tgz
@@ -11,6 +10,7 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		heinz@NetBSD.org
 HOMEPAGE=		http://esniper.sourceforge.net/
 COMMENT=		Simple, lightweight tool for sniping ebay auctions
+LICENSE=		2-clause-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
