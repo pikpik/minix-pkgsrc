@@ -1,9 +1,10 @@
-# $NetBSD: Makefile.common,v 1.2 2009/06/14 19:28:10 ahoka Exp $
+# $NetBSD: Makefile.common,v 1.3 2009/06/18 16:36:50 agc Exp $
 # used by multimedia/ffplay/Makefile
 
 DISTNAME=	ffmpeg-${DISTVERSION:S/-//g}
 CATEGORIES=	multimedia
-MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/ahoka/dist/
+MASTER_SITES=	ftp://ftp.netbsd.org/pub/NetBSD/misc/ahoka/dist/ \
+		http://irkmaffia.com/~ahoka/distfiles/
 EXTRACT_SUFX=	.tar.bz2
 
 DISTVERSION=	2009-06-11
