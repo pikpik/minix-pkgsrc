@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2004/09/22 08:09:53 jlam Exp $
+@comment $NetBSD$
 bin/xmlsec1
 bin/xmlsec1-config
 include/xmlsec1/xmlsec/app.h
@@ -44,6 +44,7 @@ lib/pkgconfig/xmlsec1.pc
 lib/xmlsec1Conf.sh
 man/man1/xmlsec1-config.1
 man/man1/xmlsec1.1
+share/aclocal/xmlsec1.m4
 share/doc/xmlsec1/api/home.png
 share/doc/xmlsec1/api/images/encryption-structure.png
 share/doc/xmlsec1/api/images/key.png
