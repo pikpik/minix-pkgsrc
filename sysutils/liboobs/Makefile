@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2009/08/20 09:13:51 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2009/09/30 09:22:48 sketch Exp $
 #
 
-DISTNAME=		liboobs-2.22.1
+DISTNAME=		liboobs-2.22.2
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/liboobs/2.22/}
 EXTRACT_SUFX=		.tar.bz2
