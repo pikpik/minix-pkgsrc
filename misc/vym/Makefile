@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2009/04/19 04:07:52 reed Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/26 19:58:03 sno Exp $
 #
 
 DISTNAME=		vym-1.12.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vym/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,6 +10,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://vym.sourceforge.net/
 COMMENT=		Generate and manipulate maps which show your thoughts
+LICENSE=		gnu-gpl-v2
 
 USE_LANGUAGES=		c++
 USE_TOOLS+=		perl:run bash:run
