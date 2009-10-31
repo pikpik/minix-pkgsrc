@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/06 17:37:52 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2009/07/07 20:36:32 joerg Exp $
 #
 
-DISTNAME=		trang-20030619
+DISTNAME=		trang-20090818
 CATEGORIES=		textproc
-MASTER_SITES=		http://www.thaiopensource.com/download/
+MASTER_SITES=		http://jing-trang.googlecode.com/files/
 EXTRACT_SUFX=		.zip
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.thaiopensource.com/relaxng/trang.html
 COMMENT=		Multi-format schema converter based on RELAX NG
+LICENSE=		modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
