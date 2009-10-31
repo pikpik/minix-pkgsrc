@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/common.h.orig	2003-06-30 04:28:38.000000000 -0700
+--- src/common.h.orig	2003-06-30 13:28:38.000000000 +0200
 +++ src/common.h
 @@ -716,7 +716,6 @@ void DBTest (void);
  
@@ -10,3 +10,12 @@ $NetBSD$
  void *input_func(void *);
  
  /*
+@@ -745,7 +744,7 @@ void wait_for_input(void);
+  * Input routine, initialized to one of the specific
+  * input routines. The given argument is the prompt.
+  */
+-void (*getline) (char *);
++void (*get_line) (char *);
+ 
+ #define MAXSTR 128
+ extern char inputstr[MAXSTR];
