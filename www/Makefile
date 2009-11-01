@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.665 2009/10/31 19:40:43 seb Exp $
+# $NetBSD: Makefile,v 1.666 2009/11/01 03:18:26 seb Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -94,7 +94,6 @@ SUBDIR+=	cherokee
 SUBDIR+=	chimera
 SUBDIR+=	clearsilver
 SUBDIR+=	clearsilver-base
-SUBDIR+=	communicator
 SUBDIR+=	crawl
 SUBDIR+=	cronolog
 SUBDIR+=	curl
@@ -200,14 +199,11 @@ SUBDIR+=	mongrel-config
 SUBDIR+=	mongrel-console
 SUBDIR+=	mongrel-upload-progress
 SUBDIR+=	mono-xsp
-SUBDIR+=	navigator
 SUBDIR+=	neon
 SUBDIR+=	netscape
 SUBDIR+=	netsurf
 SUBDIR+=	nginx
 SUBDIR+=	ns-plugger-common
-SUBDIR+=	ns-plugger-communicator
-SUBDIR+=	ns-plugger-navigator
 SUBDIR+=	ns-remote
 SUBDIR+=	nspluginwrapper
 SUBDIR+=	nvu
