@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2009,v 1.4189 2009/11/01 03:17:57 seb Exp $
+$NetBSD: CHANGES-2009,v 1.4190 2009/11/01 13:32:21 tnn Exp $
 
 Changes to the packages collection and infrastructure in 2009:
 
@@ -5566,3 +5566,4 @@ Changes to the packages collection and infrastructure in 2009:
 	Removed www/navigator [tnn 2009-11-01]
 	Removed www/ns-plugger-communicator [tnn 2009-11-01]
 	Removed www/ns-plugger-navigator [tnn 2009-11-01]
+	Removed archivers/zip1 [joerg 2009-11-01]
