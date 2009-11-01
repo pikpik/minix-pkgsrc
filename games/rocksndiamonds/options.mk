@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2006/10/01 14:34:01 rillig Exp $
+# $NetBSD: options.mk,v 1.4 2007/02/02 19:00:45 joerg Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.rocksndiamonds
 PKG_SUPPORTED_OPTIONS=	sdl x11
@@ -14,6 +14,7 @@ BUILD_TARGET=	sdl
 .  endif
 .  include "../../audio/SDL_mixer/buildlink3.mk"
 .  include "../../graphics/SDL_image/buildlink3.mk"
+.  include "../../multimedia/smpeg/buildlink3.mk"
 .  include "../../net/SDL_net/buildlink3.mk"
 .endif
 
