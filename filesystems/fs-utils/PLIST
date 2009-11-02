@@ -22,6 +22,10 @@ bin/fsu_rm
 bin/fsu_rmdir
 bin/fsu_touch
 bin/fsu_write
+include/fsu_fts.h
+include/fsu_mount.h
+include/fsu_utils.h
+include/fts2fsufts.h
 lib/libfsu_mount.a
 lib/libfsu_mount.so
 lib/libfsu_mount.so.0
