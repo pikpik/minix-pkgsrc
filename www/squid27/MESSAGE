@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+Since Squid 2.7 dosen't enlarge the maximum number of open files for
+the process, you should carefully check the default value of it and
+please consider to set appropriate value to "max_filedescriptors"
+parameter in ${PKG_SYSCONFDIR}/squid.conf.
+
+===========================================================================
