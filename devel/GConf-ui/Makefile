@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2009/08/26 19:56:59 sno Exp $
+# $NetBSD: Makefile,v 1.6 2009/10/21 15:49:33 drochner Exp $
 #
+
+MAKE_JOBS_SAFE=	no
 
 .include "../../devel/GConf/Makefile.common"
 
