@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2009/10/11 10:49:56 tnn Exp $
+# $NetBSD: Makefile,v 1.25 2009/10/28 11:36:36 tnn Exp $
 #
 
 DISTNAME=	firefox-${FIREFOX_VER}.source
 PKGNAME=	${DISTNAME:S/firefox/xulrunner/:S/3.5/1.9.1/:S/.source//}
+PKGREVISION=	1
 FIREFOX_VER=	3.5.4
 CATEGORIES=	devel www
 MASTER_SITES=	${MASTER_SITE_MOZILLA:=firefox/releases/${FIREFOX_VER}/source/}
