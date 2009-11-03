@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2009/09/28 20:15:08 tnn Exp $
+# $NetBSD: Makefile,v 1.105 2009/10/27 16:25:21 zafer Exp $
 
 DISTNAME=	gnupg-1.4.10
 CATEGORIES=	security
@@ -35,11 +35,8 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 CONFIGURE_ARGS+=	--disable-gnupg-iconv
 .endif
 
-.if ${OPSYS} == "SunOS" && defined(ABI) && ${ABI} == 64
-CONFIGURE_ARGS+=	--disable-asm
-.endif
-
-.if ${OPSYS} == "AIX" && defined(ABI) && ${ABI} == 64
+.if (${OPSYS} == "AIX" || ${OPSYS} == "Darwin" || ${OPSYS} == "SunOS") \
+    && defined(ABI) && ${ABI} == 64
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 
