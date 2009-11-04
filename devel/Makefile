@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1248 2009/10/31 03:34:59 heinz Exp $
+# $NetBSD: Makefile,v 1.1249 2009/11/02 11:40:21 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -1007,6 +1007,7 @@ SUBDIR+=	py-compizconfig
 SUBDIR+=	py-ctypes
 SUBDIR+=	py-curses
 SUBDIR+=	py-cursespanel
+SUBDIR+=	py-dulwich
 SUBDIR+=	py-expect
 SUBDIR+=	py-fann
 SUBDIR+=	py-game
