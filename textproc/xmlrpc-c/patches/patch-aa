@@ -22,3 +22,16 @@ $NetBSD$
  endif
  
  DISTDIR = $(BUILDDIR)/$(PACKAGE)-$(VERSION)/$(SUBDIR)
+@@ -116,10 +116,8 @@ ifneq ($(ENABLE_LIBXML2_BACKEND),yes)
+   # We're using the internal Expat XML parser
+   LIBXMLRPC_XML = $(LIBXMLRPC_XMLPARSE) $(LIBXMLRPC_XMLTOK)
+   LDLIBS_XML = \
+-        -L$(BUILDDIR)/lib/expat/xmlparse/.libs \
+-	-lxmlrpc_xmlparse \
+-        -L$(BUILDDIR)/lib/expat/xmltok/.libs \
+-	-lxmlrpc_xmltok
++        $(BUILDDIR)/lib/expat/xmlparse/libxmlrpc_xmlparse.la \
++        $(BUILDDIR)/lib/expat/xmltok/libxmlrpc_xmltok.la
+ else
+   LDLIBS_XML = $(shell xml2-config --libs)
+ endif
