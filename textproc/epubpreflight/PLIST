@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/epubpreflight
+libexec/epubpreflight/${PKGNAME}.jar
+libexec/epubpreflight/lib/saxon.jar
+share/doc/epubpreflight/COPYING.txt
+share/doc/epubpreflight/README.txt
+share/doc/epubpreflight/jing_license.txt
