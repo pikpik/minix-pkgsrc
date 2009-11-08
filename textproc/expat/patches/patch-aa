@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.7 2009/09/10 09:59:21 drochner Exp $
+
+CVE-2009-3720
 
 --- lib/xmltok_impl.c.orig	2009-09-10 11:37:45.000000000 +0200
 +++ lib/xmltok_impl.c
