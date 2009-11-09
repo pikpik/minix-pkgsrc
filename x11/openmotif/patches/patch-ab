@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- tools/wml/wmluiltok.l.orig	2009-11-08 21:40:09.000000000 -0500
++++ tools/wml/wmluiltok.l	2009-11-08 21:40:19.000000000 -0500
+@@ -68,6 +68,8 @@
+ 
+ %a 9999						/* transitions */
+ 
++%option main
++
+ %{
+ 
+ #include <stdio.h>
