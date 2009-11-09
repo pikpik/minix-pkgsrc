@@ -35,3 +35,12 @@ $NetBSD$
  else
    LDLIBS_XML = $(shell xml2-config --libs)
  endif
+@@ -334,7 +332,7 @@ install-headers: $(HEADERS_TO_INSTALL)
+ 	done
+ 
+ 
+-INSTALL_PROGRAM_CMD = $(INSTALL_PROGRAM) $$p $(DESTDIR)$(PROGRAMINST_DIR)/$$p
++INSTALL_PROGRAM_CMD = libtool --mode=install $(INSTALL_PROGRAM) $$p $(DESTDIR)$(PROGRAMINST_DIR)/$$p
+ 
+ install-bin: $(PROGRAMS_TO_INSTALL) $(DESTDIR)$(PROGRAMINST_DIR)
+ 	@list='$(PROGRAMS_TO_INSTALL)'; \
