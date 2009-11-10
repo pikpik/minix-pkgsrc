@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/httpd/mod_cband.so
+share/doc/mod_cband/documentation.txt
+share/doc/mod_cband/faq.txt
