@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/06/30 16:09:08 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/10 10:44:57 sborrill Exp $
 #
 
 DISTNAME=		mod-cband-0.9.7.5
@@ -19,6 +19,7 @@ DOC_DIR=		${PREFIX}/share/doc/${APACHE_MODULE_NAME}
 APACHE_MODULE=		yes
 PKG_APACHE_ACCEPTED=	apache2 apache22
 
+USE_LIBTOOL=		yes
 HAS_CONFIGURE=		yes
 BUILD_TARGET=
 
