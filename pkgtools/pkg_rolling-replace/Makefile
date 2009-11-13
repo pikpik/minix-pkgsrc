@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.23 2009/04/09 00:48:13 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2009/06/17 08:12:18 tnn Exp $
 
-DISTNAME=	pkg_rolling-replace-0.17
+DISTNAME=	pkg_rolling-replace-0.18
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -28,7 +28,7 @@ SUBST_CLASSES+=		tools
 SUBST_STAGE.tools=	pre-configure
 SUBST_MESSAGE.tools=	Substituting tool locations.
 SUBST_FILES.tools=	pkg_rolling-replace.sh
-SUBST_VARS.tools=	PKG_INFO_CMD MAKE PKG_CHK AWK
+SUBST_VARS.tools=	PKG_INFO_CMD MAKE PKG_CHK AWK MKDIR
 
 SUBST_CLASSES+=		prefix
 SUBST_STAGE.prefix=	pre-configure
