@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.788 2009/10/21 18:51:12 drochner Exp $
+# $NetBSD: Makefile,v 1.789 2009/10/30 19:57:58 jym Exp $
 #
 
 COMMENT=	Networking tools
@@ -142,7 +142,6 @@ SUBDIR+=	gnet1
 SUBDIR+=	gnetcat
 SUBDIR+=	gnome-netstatus
 SUBDIR+=	gnome-nettool
-SUBDIR+=	gnome-vfs-dns-sd
 SUBDIR+=	gnome-vfs-smb
 SUBDIR+=	gnugk
 SUBDIR+=	gofish
