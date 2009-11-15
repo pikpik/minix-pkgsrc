@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.8 2009/04/20 21:59:53 wiz Exp $
+@comment $NetBSD$
 bin/yaz-asncomp
 bin/yaz-client
 bin/yaz-config
@@ -194,6 +194,7 @@ share/yaz/etc/MARC21slim2RDFDC.xsl
 share/yaz/etc/MARC21slimUtils.xsl
 share/yaz/etc/cqlpass.properties
 share/yaz/etc/maps.xml
+share/yaz/etc/marc21_to_endnote.xsl
 share/yaz/etc/opacxml.xsd
 share/yaz/etc/pqf.properties
 share/yaz/etc/yazgfs.xml
