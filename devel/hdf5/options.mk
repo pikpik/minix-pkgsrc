@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2006/07/22 04:46:15 rillig Exp $
+# $NetBSD: options.mk,v 1.4 2008/04/12 22:42:59 jlam Exp $
 
 PKG_OPTIONS_VAR=PKG_OPTIONS.hdf5
 PKG_SUPPORTED_OPTIONS=	szip cxx threads
@@ -21,5 +21,6 @@ PLIST.cxx=		yes
 
 .if !empty(PKG_OPTIONS:Mthreads)
 CONFIGURE_ARGS+=	--enable-threadsafe
+# XXX libraries should not be linked against -lpthread
 .include "../../mk/pthread.buildlink3.mk"
 .endif
