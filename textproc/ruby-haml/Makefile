@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:21:33 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2009/10/31 06:18:16 seb Exp $
 
-DISTNAME=	haml-2.2.10
+DISTNAME=	haml-2.2.13
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc
 
