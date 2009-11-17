@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2009/07/22 21:28:06 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2009/08/26 19:58:03 sno Exp $
 #
 
-DISTNAME=	mousetweaks-2.26.3
-PKGREVISION=	1
+DISTNAME=	mousetweaks-2.28.1
 CATEGORIES=	misc
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/mousetweaks/2.26/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/mousetweaks/2.28/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/Mousetweaks/Home
