@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2009/07/22 09:01:25 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.18 2009/08/26 19:57:24 sno Exp $
 
-DISTNAME=	leafpad-0.8.4
-PKGREVISION=	5
+DISTNAME=	leafpad-0.8.17
 CATEGORIES=	editors gnome
 MASTER_SITES=	http://savannah.nongnu.org/download/leafpad/
 
@@ -12,7 +10,7 @@ COMMENT=	Simple and light text editor using GTK+
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		intltool msgfmt pkg-config
+USE_TOOLS+=		intltool msgfmt pkg-config gmake
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 
