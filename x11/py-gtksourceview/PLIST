@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/12/03 09:43:22 wiz Exp $
+@comment $NetBSD$
 lib/pkgconfig/pygtksourceview-2.0.pc
 ${PYSITELIB}/gtksourceview2.la
 share/gtk-doc/html/pygtksourceview2/class-gtksourcebuffer2.html
+share/gtk-doc/html/pygtksourceview2/class-gtksourcegutter2.html
 share/gtk-doc/html/pygtksourceview2/class-gtksourcelanguage2.html
 share/gtk-doc/html/pygtksourceview2/class-gtksourcelanguagemanager2.html
 share/gtk-doc/html/pygtksourceview2/class-gtksourcemark2.html

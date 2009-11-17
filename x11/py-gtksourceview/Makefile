@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.7 2009/08/19 11:35:05 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2009/08/26 19:58:39 sno Exp $
 
-DISTNAME=	pygtksourceview-2.6.0
+DISTNAME=	pygtksourceview-2.8.0
 PKGNAME=	${DISTNAME:S/py/${PYPKGPREFIX}-/}
-PKGREVISION=	1
 CATEGORIES=	x11 python
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pygtksourceview/2.6/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pygtksourceview/2.8/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Python bindings for gtksourceview2
+LICENSE=	gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
