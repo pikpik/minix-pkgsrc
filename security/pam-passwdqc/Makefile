@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/10/28 18:46:20 drochner Exp $
 #
 
-DISTNAME=	passwdqc-1.1.3
-PKGNAME=	pam-passwdqc-1.1.3
+DISTNAME=	passwdqc-1.1.4
+PKGNAME=	pam-passwdqc-1.1.4
 CATEGORIES=	security
 MASTER_SITES=	http://www.openwall.com/passwdqc/
 
