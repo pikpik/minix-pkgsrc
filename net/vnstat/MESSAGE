@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+You must configure the network interfaces you wish to monitor in
+${PKG_SYSCONFDIR}/vnstat.conf before attempting to use this package.
+
+===========================================================================
