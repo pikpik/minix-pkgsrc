@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.789 2009/10/30 19:57:58 jym Exp $
+# $NetBSD: Makefile,v 1.790 2009/11/13 00:05:08 jnemeth Exp $
 #
 
 COMMENT=	Networking tools
@@ -560,6 +560,7 @@ SUBDIR+=	vinagre
 SUBDIR+=	vino
 SUBDIR+=	vnc
 SUBDIR+=	vncviewer
+SUBDIR+=	vnstat
 SUBDIR+=	vpnc
 SUBDIR+=	vsftpd
 SUBDIR+=	vtun
