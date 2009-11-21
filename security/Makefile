@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.365 2009/10/28 18:48:36 drochner Exp $
+# $NetBSD: Makefile,v 1.366 2009/11/17 04:30:29 dsainty Exp $
 #
 
 COMMENT=	Security tools
@@ -252,6 +252,7 @@ SUBDIR+=	pkcs11-helper
 SUBDIR+=	pks
 SUBDIR+=	policykit
 SUBDIR+=	policykit-gnome
+SUBDIR+=	polkit-qt
 SUBDIR+=	portsentry
 SUBDIR+=	prelude-correlator
 SUBDIR+=	prelude-lml
