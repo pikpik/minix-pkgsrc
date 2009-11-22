@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2007/03/05 16:01:58 rmind Exp $
+# $NetBSD: Makefile,v 1.42 2007/08/13 08:12:42 rillig Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -19,6 +19,7 @@ SUBDIR+=	hint
 SUBDIR+=	httperf
 SUBDIR+=	iozone
 SUBDIR+=	kttcp
+SUBDIR+=	libmicro
 SUBDIR+=	linpack-bench
 SUBDIR+=	lmbench
 SUBDIR+=	nbench
