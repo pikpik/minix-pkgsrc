@@ -1,12 +1,12 @@
 $NetBSD$
 
---- dao/GenericMMC.cc.orig	2004-06-05 21:40:52.000000000 +0200
+--- dao/GenericMMC.cc.orig	2009-02-21 22:54:48.000000000 +0100
 +++ dao/GenericMMC.cc
-@@ -2019,6 +2019,7 @@ CdRawToc *GenericMMC::getRawToc(int sess
+@@ -2065,6 +2065,7 @@ CdRawToc *GenericMMC::getRawToc(int sess
    }
  
    dataLen = ((reqData[0] << 8) | reqData[1]) + 2;
 +  dataLen = (dataLen + 1) & ~1;
    
-   message(4, "Raw toc data len: %d", dataLen);
+   log_message(4, "Raw toc data len: %d", dataLen);
  
