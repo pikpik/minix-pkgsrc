@@ -1,5 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/04/26 04:00:12 taca Exp $
 #
+
+LICENSE=	gnu-lgpl-v2.1
 
 .include "../../www/typolight27/Makefile.version"
 .include "../../www/typolight/Makefile.example"
