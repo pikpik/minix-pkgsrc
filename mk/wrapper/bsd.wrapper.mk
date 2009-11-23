@@ -1,4 +1,4 @@
-# $NetBSD: bsd.wrapper.mk,v 1.82 2008/12/29 20:47:17 joerg Exp $
+# $NetBSD: bsd.wrapper.mk,v 1.83 2009/05/30 19:18:01 joerg Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -459,9 +459,9 @@ ${_WRAP_COOKIE.${_wrappee_}}:						\
 			*${WRAPPER_DIR}*)				\
 				;;					\
 			*)						\
-				if ${TEST} -f $${dir}/$$wrappee -o	\
-				   	   -h $${dir}/$$wrappee; then	\
-					wrappee=$${dir}/$$wrappee;	\
+				if ${TEST} -f "$${dir}/$$wrappee" -o	\
+				   	   -h "$${dir}/$$wrappee"; then	\
+					wrappee="$${dir}/$$wrappee";	\
 					break;				\
 				fi;					\
 				;;					\
