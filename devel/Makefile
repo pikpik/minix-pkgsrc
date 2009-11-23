@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1258 2009/11/23 14:26:40 fhajny Exp $
+# $NetBSD: Makefile,v 1.1259 2009/11/23 22:21:05 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -930,6 +930,7 @@ SUBDIR+=	p5-UNIVERSAL-can
 SUBDIR+=	p5-UNIVERSAL-isa
 SUBDIR+=	p5-UNIVERSAL-moniker
 SUBDIR+=	p5-UNIVERSAL-require
+SUBDIR+=	p5-UUID-Tiny
 SUBDIR+=	p5-VCP
 SUBDIR+=	p5-VCP-Dest-svk
 SUBDIR+=	p5-Variable-Magic
