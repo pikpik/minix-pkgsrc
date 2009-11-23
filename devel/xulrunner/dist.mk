@@ -1,5 +1,8 @@
-# $NetBSD$
+# $NetBSD: dist.mk,v 1.1 2009/11/06 15:44:34 tnn Exp $
 #
+# used by devel/nspr/Makefile
+# used by devel/xulrunner/Makefile
+# used by www/firefox/Makefile
 
 DISTNAME=	firefox-${FIREFOX_VER}.source
 FIREFOX_VER=	3.5.5
