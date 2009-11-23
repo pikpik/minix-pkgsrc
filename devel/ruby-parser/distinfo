@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.3 2008/04/04 15:21:39 jlam Exp $
+
+SHA1 (ruby_parser-2.0.4.gem) = e877e2b46079705e2a6901c6e980b8949160799e
+RMD160 (ruby_parser-2.0.4.gem) = 1ff38d3094a7990cb18ba971e2c6172dc43354c3
+Size (ruby_parser-2.0.4.gem) = 75776 bytes
