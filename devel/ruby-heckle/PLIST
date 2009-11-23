@@ -1,11 +1,13 @@
 @comment $NetBSD: PLIST,v 1.1.1.1 2008/04/04 15:17:14 jlam Exp $
 bin/heckle
 ${GEM_HOME}/cache/heckle-${PKGVERSION}.gem
+${GEM_LIBDIR}/.autotest
 ${GEM_LIBDIR}/History.txt
 ${GEM_LIBDIR}/Manifest.txt
 ${GEM_LIBDIR}/README.txt
 ${GEM_LIBDIR}/Rakefile
 ${GEM_LIBDIR}/bin/heckle
+${GEM_LIBDIR}/lib/autotest/heckle.rb
 ${GEM_LIBDIR}/lib/heckle.rb
 ${GEM_LIBDIR}/lib/test_unit_heckler.rb
 ${GEM_LIBDIR}/sample/Rakefile
