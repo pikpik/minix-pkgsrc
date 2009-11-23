@@ -8,8 +8,6 @@ ${GEM_LIBDIR}/Rakefile
 ${GEM_LIBDIR}/bin/rubyforge
 ${GEM_LIBDIR}/lib/rubyforge.rb
 ${GEM_LIBDIR}/lib/rubyforge/client.rb
-${GEM_LIBDIR}/lib/rubyforge/cookie_manager.rb
 ${GEM_LIBDIR}/test/test_rubyforge.rb
 ${GEM_LIBDIR}/test/test_rubyforge_client.rb
-${GEM_LIBDIR}/test/test_rubyforge_cookie_manager.rb
 ${GEM_HOME}/specifications/rubyforge-${PKGVERSION}.gemspec
