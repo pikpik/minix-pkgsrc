@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.601 2009/10/22 22:31:04 wiz Exp $
+# $NetBSD: Makefile,v 1.602 2009/11/08 18:31:02 jakllsch Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -299,6 +299,7 @@ SUBDIR+=	qt4-sqlite3
 SUBDIR+=	qt4-tiff
 SUBDIR+=	qt4-tools
 SUBDIR+=	qwt
+SUBDIR+=	qwt-qt4
 SUBDIR+=	randrproto
 SUBDIR+=	ratmen
 SUBDIR+=	recordproto
