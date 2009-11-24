@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.540 2009/10/27 03:05:57 obache Exp $
+# $NetBSD: Makefile,v 1.541 2009/11/05 22:48:12 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -135,6 +135,7 @@ SUBDIR+=	gimmage
 SUBDIR+=	gimp
 SUBDIR+=	gimp-color-manager
 SUBDIR+=	gimp-docs
+SUBDIR+=	gimp-exif-browser
 SUBDIR+=	gimp-fix-ca
 SUBDIR+=	gimp-liquid-rescale
 SUBDIR+=	gimp-rawphoto
