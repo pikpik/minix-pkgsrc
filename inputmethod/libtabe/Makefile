@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/06/30 00:07:17 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/11/24 11:15:14 obache Exp $
 #
 
 DISTNAME=	libtabe-0.2.6
@@ -32,6 +32,12 @@ post-install:
 		${DESTDIR}${PREFIX}/share/doc/tabe/README.tsi
 
 BUILDLINK_DEPMETHOD.libXt?=	build
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+CONFIGURE_ARGS+=	--x-includes=${PREFIX:Q}/include
+.endif
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
