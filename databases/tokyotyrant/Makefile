@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/07/18 01:52:47 obache Exp $
+# $NetBSD: Makefile,v 1.24 2009/07/21 11:31:23 obache Exp $
 #
 
 DISTNAME=	tokyotyrant-1.1.33
@@ -6,7 +6,7 @@ CATEGORIES=	databases net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}
 
 MAINTAINER=	obache@NetBSD.org
-HOMEPAGE=	http://tokyocabinet.sourceforge.net/
+HOMEPAGE=	http://1978th.net/tokyotyrant/
 COMMENT=	Network interface of Tokyo Cabinet
 LICENSE=	gnu-lgpl-v2.1
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/06/14 06:04:11 obache Exp $
+# $NetBSD: Makefile,v 1.11 2009/07/07 11:37:46 obache Exp $
 #
 
 DISTNAME=	tokyodystopia-0.9.13
@@ -6,7 +6,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}
 
 MAINTAINER=	obache@NetBSD.org
-HOMEPAGE=	http://tokyocabinet.sourceforge.net/dystopiadoc/
+HOMEPAGE=	http://1978th.net/tokyodystopia/
 COMMENT=	Full-text search system
 LICENSE=	gnu-lgpl-v2.1
 
