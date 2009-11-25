@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/07/22 09:01:18 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2009/08/26 19:57:09 sno Exp $
 
 DISTNAME=		gqmpeg-0.91.1
 PKGREVISION=		7
@@ -21,6 +21,8 @@ GNU_CONFIGURE=		YES
 
 CONFIGURE_ARGS+=	--without-included-gettext
 CONFIGURE_ENV+=		GNOME_DATADIR=${PREFIX}/share
+
+MAKE_ENV=		builddir=.
 
 .include "options.mk"
 
