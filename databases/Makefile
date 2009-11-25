@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.308 2009/10/20 10:59:43 abs Exp $
+# $NetBSD: Makefile,v 1.309 2009/11/18 14:58:34 he Exp $
 #
 
 COMMENT=	Databases
@@ -8,6 +8,7 @@ SUBDIR+=	adodb
 SUBDIR+=	bdb-xml
 SUBDIR+=	cdb
 #SUBDIR+=	cstore	# not enabled at present due to its size requirements
+SUBDIR+=	datadraw
 SUBDIR+=	db
 SUBDIR+=	db3
 SUBDIR+=	db4
