@@ -11,6 +11,19 @@ $NetBSD$
  LIBS		=	@LIBS@ @PTHREAD_LIBS@
  LN		=	@LN@ -s
  MKDIR		=	@MKDIR@
+@@ -59,10 +59,10 @@ BUILDROOT	=	$(DSTROOT)
+ # Install commands...
+ #
+ 
+-INSTALL_BIN	=	$(LIBTOOL) $(INSTALL) -m 755 -s
++INSTALL_BIN	=	$(LIBTOOL) --mode=install $(BSD_INSTALL_PROGRAM)
+ INSTALL_DATA	=	$(INSTALL) -m 644
+ INSTALL_DIR	=	$(INSTALL) -d
+-INSTALL_LIB	=	$(LIBTOOL) $(INSTALL) -m 755
++INSTALL_LIB	=	$(LIBTOOL) --mode=install $(BSD_INSTALL_LIB)
+ INSTALL_MAN	=	$(INSTALL) -m 644
+ INSTALL_SCRIPT	=	$(INSTALL) -m 755
+ 
 @@ -133,7 +133,7 @@ clang:
  # Install everything...
  #
