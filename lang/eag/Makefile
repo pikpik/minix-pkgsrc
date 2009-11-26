@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:33 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2008/11/10 17:21:36 wiz Exp $
 
 DISTNAME=		eag-2.3
 PKGREVISION=		3
@@ -15,6 +15,13 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+CONFIGURE_ARGS+=	--x-includes=${PREFIX:Q}/include
+CONFIGURE_ARGS+=	--x-libraries=${PREFIX:Q}/lib
+.endif
 
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
