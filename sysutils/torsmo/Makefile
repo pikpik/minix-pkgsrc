@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/06/15 18:15:21 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2008/01/04 12:31:02 ghen Exp $
 
 DISTNAME=		torsmo-0.18
 CATEGORIES=		sysutils
@@ -21,6 +21,11 @@ INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 share/examples/torsmo
 INSTALLATION_DIRS+=	share/doc/torsmo
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${X11_TYPE} == "modular"
+CONFIGURE_ARGS+=	--x-includes=${PREFIX}/include
+CONFIGURE_ARGS+=	--x-libraries=${PREFIX}/lib
+.endif
 
 .if (${OPSYS} == "NetBSD" || ${OPSYS} == "DragonFly" || ${OPSYS} == "FreeBSD" \
 			  || ${OPSYS} == "OpenBSD" || ${OPSYS} == "Linux")
