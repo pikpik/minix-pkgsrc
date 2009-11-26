@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/07/22 09:01:32 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2009/08/26 19:57:43 sno Exp $
 
 DISTNAME=	gqview-2.1.5
 PKGREVISION=	2
@@ -14,6 +14,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		msgfmt pkg-config
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
+
+MAKE_ENV+=		builddir=.
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../graphics/lcms/buildlink3.mk"
