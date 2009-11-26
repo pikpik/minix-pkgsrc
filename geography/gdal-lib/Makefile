@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/06/03 17:28:30 hasso Exp $
+# $NetBSD: Makefile,v 1.16 2009/08/26 19:57:35 sno Exp $
 #
 
 DISTNAME=		gdal-1.6.1
@@ -44,6 +44,7 @@ CONFIGURE_ARGS+=	--with-mysql
 CONFIGURE_ARGS+=	--without-mysql
 .endif
 
+CONFIGURE_ARGS+=	--with-libz=${BUILDLINK_PREFIX.zlib}/include
 CONFIGURE_ARGS+=	--with-xerces
 CONFIGURE_ARGS+=	--with-xerces-inc=${BUILDLINK_PREFIX.xerces-c}/include
 CONFIGURE_ARGS+=	--with-xerces-lib=-L${BUILDLINK_PREFIX.xerces-c}/lib\ -lxerces-c
