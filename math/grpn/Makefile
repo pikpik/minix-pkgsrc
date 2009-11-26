@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/10/04 15:50:47 zafer Exp $
+# $NetBSD: Makefile,v 1.21 2009/11/15 13:32:16 drochner Exp $
 #
 
 DISTNAME=	grpn
@@ -15,7 +15,7 @@ HOMEPAGE=	http://www.getreu.net/
 COMMENT=	Graphical reverse polish notation (RPN) calculator
 
 BUILD_TARGET=	grpn
-USE_TOOLS+=	mkdirhier
+USE_TOOLS+=	mkdirhier pkg-config
 WRKSRC=		${WRKDIR}/grpn-1.2
 PKG_DESTDIR_SUPPORT= user-destdir
 
