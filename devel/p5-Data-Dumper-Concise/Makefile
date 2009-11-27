@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/16 23:59:36 seb Exp $
 #
 
-DISTNAME=	Data-Dumper-Concise-1.001
+DISTNAME=	Data-Dumper-Concise-1.002
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Data/}
