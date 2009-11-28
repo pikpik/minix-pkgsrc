@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.671 2009/11/12 11:08:40 markd Exp $
+# $NetBSD: Makefile,v 1.672 2009/11/19 14:13:02 fhajny Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -484,7 +484,6 @@ SUBDIR+=	seamonkey-bin
 SUBDIR+=	seamonkey-bin-flash
 SUBDIR+=	seamonkey-bin-java
 SUBDIR+=	seamonkey-bin-nightly
-SUBDIR+=	seamonkey-gtk1
 SUBDIR+=	serf
 SUBDIR+=	sitecopy
 SUBDIR+=	skipstone
