@@ -1,4 +1,4 @@
-# $NetBSD: Makefile-sunbird.common,v 1.13 2009/03/18 00:08:39 abs Exp $
+# $NetBSD: Makefile-sunbird.common,v 1.14 2009/05/29 13:22:11 he Exp $
 # used by time/sunbird/Makefile
 
 MOZILLA_BIN=		sunbird-bin
@@ -28,4 +28,4 @@ CHECK_FILES_SKIP+=	${PREFIX}/lib/${MOZILLA}/chrome/app-chrome.manifest
 CHECK_FILES_SKIP+=	${PREFIX}/lib/${MOZILLA}/components/compreg.dat
 CHECK_FILES_SKIP+=	${PREFIX}/lib/${MOZILLA}/components/xpti.dat
 
-.include "../../www/seamonkey/Makefile.common"
+.include "../../www/seamonkey/legacy-Makefile.common"
