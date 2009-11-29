@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2006/08/30 15:51:15 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/05/13 18:46:16 hasso Exp $
 
 DISTNAME=		gsoap_2.7.13
 PKGNAME=		gsoap-2.7.13
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gsoap2/}
 
