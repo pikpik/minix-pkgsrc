@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.541 2009/11/05 22:48:12 wiz Exp $
+# $NetBSD: Makefile,v 1.542 2009/11/24 11:13:57 drochner Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -376,6 +376,7 @@ SUBDIR+=	simage
 SUBDIR+=	skencil
 SUBDIR+=	snx101view
 SUBDIR+=	spcaview
+SUBDIR+=	tango-icon-theme
 SUBDIR+=	tesseract
 SUBDIR+=	tex-a2ping
 SUBDIR+=	tex-a2ping-doc
