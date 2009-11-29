@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.602 2009/11/08 18:31:02 jakllsch Exp $
+# $NetBSD: Makefile,v 1.603 2009/11/24 19:51:45 drochner Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -441,7 +441,6 @@ SUBDIR+=	xf86dgaproto
 SUBDIR+=	xf86driproto
 SUBDIR+=	xf86miscproto
 SUBDIR+=	xf86vidmodeproto
-SUBDIR+=	xfce3
 SUBDIR+=	xfce4-clipman-plugin
 SUBDIR+=	xfce4-desktop
 SUBDIR+=	xfce4-exo
