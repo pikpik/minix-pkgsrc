@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/24 12:08:40 obache Exp $
 #
 
 DISTNAME=	scim-thai-0.1.1
 CATEGORIES=	inputmethod
-MASTER_SITES=	ftp://linux.thai.net/pub/ThaiLinux/software/libthai/
+MASTER_SITES=	http://linux.thai.net/pub/thailinux/software/libthai/ \
+		ftp://linux.thai.net/pub/ThaiLinux/software/libthai/
 
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://linux.thai.net/projects/scim-thai
