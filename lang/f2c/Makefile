@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2009/10/31 19:15:44 asau Exp $
+# $NetBSD: Makefile,v 1.47 2009/11/22 12:52:53 asau Exp $
 
 DISTNAME=	f2c-20090411
 CATEGORIES=	lang
@@ -27,7 +27,7 @@ CONFLICTS=	egcs-current-19980608
 
 WRKSRC=		${WRKDIR}/f2c
 USE_LIBTOOL=	yes
-USE_TOOLS+=	unzip
+USE_TOOLS+=	yacc unzip
 
 USE_BSD_MAKEFILE=	yes
 MAKE_FLAGS=	LIBF2CSRCDIR='$$(.CURDIR)/libf2c' MKLTARCHIVE=yes
