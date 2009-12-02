@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.507 2009/11/07 08:49:58 wiz Exp $
+# $NetBSD: Makefile,v 1.508 2009/11/07 09:04:59 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -448,6 +448,7 @@ SUBDIR+=	ruby-markaby
 SUBDIR+=	ruby-maruku
 SUBDIR+=	ruby-mecab
 SUBDIR+=	ruby-native-hyperestraier
+SUBDIR+=	ruby-nokogiri
 SUBDIR+=	ruby-nqxml
 SUBDIR+=	ruby-oniguruma
 SUBDIR+=	ruby-plist
