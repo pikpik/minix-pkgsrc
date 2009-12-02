@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2007/09/07 22:12:14 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.49 2008/03/04 18:15:08 jlam Exp $
 
 DISTNAME=	sdr-3.0
 PKGREVISION=	2
