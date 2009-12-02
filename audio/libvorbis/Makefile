@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2008/05/14 16:36:18 drochner Exp $
+# $NetBSD: Makefile,v 1.48 2009/07/17 20:28:21 wiz Exp $
 
 DISTNAME=	libvorbis-1.2.3
+PKGREVISION=	1
 CATEGORIES=	devel audio
 MASTER_SITES=	http://downloads.xiph.org/releases/vorbis/
 
