@@ -1,5 +1,7 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.5 2009/10/18 04:43:16 schmonz Exp $
+$NetBSD: MESSAGE,v 1.6 2009/11/02 04:23:37 schmonz Exp $
+
+For a new wiki, see <URL:http://ikiwiki.info/setup/>.
 
 If you use custom templates, make sure they are correct when
 upgrading.
