@@ -1,0 +1,12 @@
+===========================================================================
+$NetBSD$
+
+To complete the setup, please read:
+
+	${PREFIX}/share/doc/typolight${TL_VER}/README
+
+
+NOTE:	TYPOlight 2.8.RC1 is beta version and it isn't suitable for
+	productional website!
+
+===========================================================================
