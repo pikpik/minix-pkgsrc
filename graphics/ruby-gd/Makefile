@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2008/09/15 15:28:58 taca Exp $
+# $NetBSD: Makefile,v 1.25 2009/08/26 19:57:49 sno Exp $
 
 DISTNAME=	ruby-gd-0.8.0
+PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	graphics
 
@@ -21,7 +22,6 @@ CONFIGURE_ARGS+=	--with-freetype-dir=${BUILDLINK_PREFIX.freetype2:Q}
 CONFIGURE_ARGS+=	--enable-gd2_0
 
 .include "../../misc/rubygems/rubygem.mk"
-
 .include "../../graphics/freetype-lib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
