@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/03/13 16:45:33 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2008/06/20 01:09:38 joerg Exp $
 #
 
 DISTNAME=	source-highlight-2.9
@@ -26,8 +26,6 @@ USE_TOOLS+=	gmake gsed
 TEST_TARGET=	check
 
 CONFIGURE_ARGS+=	--with-boost-regex
-
-BUILDLINK_TRANSFORM+=	l:boost_regex:boost_regex-mt
 
 .include "../../mk/bsd.prefs.mk"
 
