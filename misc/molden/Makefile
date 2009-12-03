@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2009/02/17 13:02:20 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2009/05/19 08:59:24 wiz Exp $
 
 DISTNAME=	molden4.6
 PKGNAME=	${DISTNAME:S/molden/&-/}
+PKGREVISION=	1
 CATEGORIES=	misc # chemistry
 MASTER_SITES=	ftp://ftp.cmbi.kun.nl/pub/molgraph/molden/
 EXTRACT_SUFX=	.tar.gz

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2006/03/04 21:30:08 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2007/03/24 19:21:28 joerg Exp $
 
 DISTNAME=		quadpack-20001130
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
