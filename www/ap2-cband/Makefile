@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/11/10 10:44:57 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2009/11/10 16:35:06 sborrill Exp $
 #
 
 DISTNAME=		mod-cband-0.9.7.5
@@ -23,7 +23,7 @@ USE_LIBTOOL=		yes
 HAS_CONFIGURE=		yes
 BUILD_TARGET=
 
-INSTALLATION_DIRS+=	share/doc/${APACHE_MODULE_NAME}
+INSTALLATION_DIRS+=	lib/httpd share/doc/${APACHE_MODULE_NAME}
 
 do-install:
 	cd ${WRKSRC}/src && 							\
