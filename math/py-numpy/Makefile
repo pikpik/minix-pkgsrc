@@ -3,7 +3,7 @@
 
 DISTNAME=	numpy-1.3.0
 PKGNAME=	${PYPKGPREFIX}-numpy-1.3.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy/}
 
@@ -27,7 +27,11 @@ REPLACE_PYTHON+=	numpy/distutils/conv_template.py
 # XXX Avoid picking up other compilers when installed
 .include "../../mk/compiler.mk"
 
-.if !empty(PKGSRC_COMPILER:Mgcc)
+.if defined(PKGSRC_FORTRAN) && !empty(PKGSRC_FORTRAN:Mg95)
+PYSETUPBUILDARGS+= --fcompiler=g95
+.elif defined(PKGSRC_FORTRAN) && !empty(PKGSRC_FORTRAN:Mgfortran)
+PYSETUPBUILDARGS+= --fcompiler=gnu95
+.elif !empty(PKGSRC_COMPILER:Mgcc)
 PYSETUPBUILDARGS+= --fcompiler=gnu
 .endif
 
