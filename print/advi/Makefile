@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/07/22 09:01:42 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2009/08/26 19:58:12 sno Exp $
 
 DISTNAME=		advi-1.6.0
 PKGREVISION=		6
@@ -7,7 +7,7 @@ MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/cristal/advi/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://pauillac.inria.fr/advi/
+HOMEPAGE=		http://cristal.inria.fr/advi/
 COMMENT=		Active-DVI Presenter
 
 BUILD_DEPENDS+=		ocaml>=3.04:../../lang/ocaml
