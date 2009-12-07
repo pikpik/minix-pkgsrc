@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1268 2009/12/05 21:37:21 seb Exp $
+# $NetBSD: Makefile,v 1.1269 2009/12/07 10:48:46 fhajny Exp $
 #
 
 COMMENT=	Development utilities
@@ -1100,6 +1100,7 @@ SUBDIR+=	ruby-highline
 SUBDIR+=	ruby-inline
 SUBDIR+=	ruby-linecache
 SUBDIR+=	ruby-locale
+SUBDIR+=	ruby-locale-rails
 SUBDIR+=	ruby-log4r
 SUBDIR+=	ruby-logging
 SUBDIR+=	ruby-memcache
