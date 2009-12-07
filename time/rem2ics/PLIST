@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/rem2ics
+man/man1/rem2ics.1
