@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.46 2009/10/31 19:15:44 asau Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/12/02 22:32:46 asau Exp $
 
 DISTNAME=	libf2c-20090201
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL}	# see notes below
 
