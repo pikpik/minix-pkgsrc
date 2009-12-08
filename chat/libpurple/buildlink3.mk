@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2008/08/19 18:18:10 bjs Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2009/03/20 19:24:01 joerg Exp $
 
 BUILDLINK_TREE+=	libpurple
 
@@ -15,6 +15,9 @@ pkgbase := libpurple
 .  include "../../sysutils/dbus/buildlink3.mk"
 .  include "../../sysutils/dbus-glib/buildlink3.mk"
 .  include "../../sysutils/py-dbus/buildlink3.mk"
+.endif
+.if !empty(PKG_BUILD_OPTIONS.libpurple:Mfarsight)
+.  include "../../multimedia/farsight2/buildlink3.mk"
 .endif
 .endif # LIBPURPLE_BUILDLINK3_MK
 
