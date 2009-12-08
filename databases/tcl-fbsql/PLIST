@@ -1,2 +1,2 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:12:54 zuntum Exp $
-lib/tcl/fbsql.so
+@comment $NetBSD: PLIST,v 1.1.1.1 2003/03/07 16:17:49 bouyer Exp $
+lib/tcl/fbsql.la
