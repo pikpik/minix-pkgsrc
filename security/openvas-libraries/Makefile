@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/07/17 18:00:24 adrianp Exp $
+# $NetBSD: Makefile,v 1.3 2009/09/09 17:32:29 joerg Exp $
 #
 
 DISTNAME=	openvas-libraries-2.0.0
@@ -15,8 +15,8 @@ GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
 MAKE_JOBS_SAFE=	NO
 BUILD_DEFS+=	VARBASE
-USE_LANGUAGES+=	c++ c
-USE_TOOLS=	pkg-config
+USE_LANGUAGES=	c++ c
+USE_TOOLS+=	pkg-config
 
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 
