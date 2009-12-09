@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.59 2009/09/22 12:18:33 tnn Exp $
+# $NetBSD: Makefile,v 1.60 2009/10/11 16:04:13 asau Exp $
 #
 
-DISTNAME=		qemu-0.11.0
+DISTNAME=		qemu-0.11.1
 CATEGORIES=		emulators
 MASTER_SITES=		http://download.savannah.gnu.org/releases/qemu/
 
