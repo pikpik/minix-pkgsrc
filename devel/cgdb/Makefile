@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/05/20 00:58:12 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2009/06/30 00:07:12 joerg Exp $
 #
 
 DISTNAME=	cgdb-0.4.0
@@ -18,6 +18,8 @@ GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 USE_NCURSES=	# tigetstr()
 USE_GNU_READLINE=	# rl_mark and others
+
+MAKE_ENV+=	AM_LDFLAGS=-L${WRKSRC}/various/util/src
 
 INSTALLATION_DIRS=	bin share/doc/cgdb
 
