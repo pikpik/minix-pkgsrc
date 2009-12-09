@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/07/07 19:53:00 sno Exp $
+# $NetBSD: Makefile,v 1.15 2009/12/03 16:19:24 joerg Exp $
 #
 
 DISTNAME=		arping-2.08
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 LIBS+=			-lnet -lpcap
 LIBS.SunOS+=		-lsocket -lnsl
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man8
-CPPFLAGS+=		-I${LOCALBASE}/include/libnet11
+CPPFLAGS+=		-I${BUILDLINK_PREFIX.libnet11}/include/libnet11
 
 do-build:
 	${CC} -o ${WRKSRC}/arping ${CPPFLAGS} ${CFLAGS} ${LDFLAGS} \
