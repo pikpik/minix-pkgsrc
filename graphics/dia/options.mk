@@ -1,9 +1,8 @@
-# $NetBSD: options.mk,v 1.6 2008/04/12 22:43:01 jlam Exp $
+# $NetBSD: options.mk,v 1.7 2009/07/22 09:01:31 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dia
-#PKG_SUPPORTED_OPTIONS=	gnome cairo
-PKG_SUPPORTED_OPTIONS=	gnome
-PKG_SUGGESTED_OPTIONS=	gnome
+PKG_SUPPORTED_OPTIONS=	gnome cairo
+PKG_SUGGESTED_OPTIONS=	gnome cairo
 
 .include "../../mk/bsd.options.mk"
 
@@ -20,7 +19,6 @@ CONFIGURE_ARGS+=	--disable-gnome
 PLIST_SUBST+=		DIA_HELPDIR=share/dia/help
 .endif
 
-# Disabled, freedesktop is down.
 .if !empty(PKG_OPTIONS:Mcairo)
 CONFIGURE_ARGS+=	--with-cairo
 .  include "../../graphics/cairo/buildlink3.mk"
