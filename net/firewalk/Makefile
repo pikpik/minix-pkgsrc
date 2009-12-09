@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2007/02/22 19:26:52 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2009/12/09 09:02:08 obache Exp $
 
 DISTNAME=	firewalk-5.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net security
 MASTER_SITES=	http://www.packetfactory.net/firewalk/dist/
 EXTRACT_SUFX=	.tgz

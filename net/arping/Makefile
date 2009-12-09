@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2009/12/03 16:19:24 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/12/09 08:42:04 obache Exp $
 #
 
 DISTNAME=		arping-2.08
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.habets.pp.se/pub/synscan/
 
