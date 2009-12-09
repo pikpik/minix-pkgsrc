@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/02/24 00:44:26 cube Exp $
+# $NetBSD: Makefile,v 1.24 2009/05/06 21:54:54 adrianp Exp $
 #
 
 DISTNAME=	libnids-1.23
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libnids/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://libnids.sourceforge.net/
 COMMENT=	Network monitoring library with TCP/IP reassembly
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
