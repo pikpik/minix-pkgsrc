@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/10/21 18:48:21 drochner Exp $
 #
 
-DISTNAME=	libgdata-0.5.0
+DISTNAME=	libgdata-0.5.1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgdata/0.5/}
 EXTRACT_SUFX=	.tar.bz2
