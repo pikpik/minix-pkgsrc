@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2009/08/26 19:57:47 sno Exp $
+# $NetBSD: Makefile,v 1.36 2009/08/26 21:20:13 sno Exp $
 #
 
 DISTNAME=	pixieplus-0.5.4
@@ -16,6 +16,10 @@ USE_TOOLS+=	gmake
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
+
+.include "../../mk/bsd.prefs.mk"
+
+CPPFLAGS+=	-I${BUILDLINK_PREFIX.ImageMagick}/include/ImageMagick
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/ImageMagick/buildlink3.mk"
