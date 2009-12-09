@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/10/04 21:35:58 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2008/05/23 17:33:37 joerg Exp $
 
 DISTNAME=		dmalloc-5.4.2
 CATEGORIES=		devel
@@ -10,6 +10,8 @@ HOMEPAGE=		http://dmalloc.com/
 COMMENT=		Run-time configurable debugging malloc library
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
