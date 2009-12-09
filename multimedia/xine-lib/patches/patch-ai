@@ -1,10 +1,10 @@
-$NetBSD: patch-ai,v 1.2 2005/10/13 10:48:01 jmmv Exp $
+$NetBSD$
 
---- src/xine-engine/audio_out.c.orig	2006-11-04 23:30:14.000000000 +0000
+--- src/xine-engine/audio_out.c.orig	2009-12-01 02:33:30.000000000 +0100
 +++ src/xine-engine/audio_out.c
-@@ -2180,7 +2180,9 @@ xine_audio_port_t *_x_ao_new_port (xine_
-     this->audio_loop_running = 1;  
-     
+@@ -2279,7 +2279,9 @@ xine_audio_port_t *_x_ao_new_port (xine_
+     this->audio_loop_running = 1;
+ 
      pthread_attr_init(&pth_attrs);
 +#ifdef _POSIX_THREAD_PRIORITY_SCHEDULING
      pthread_attr_setscope(&pth_attrs, PTHREAD_SCOPE_SYSTEM);
