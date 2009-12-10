@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2008/09/15 09:08:19 taca Exp $
+# $NetBSD: Makefile,v 1.3 2009/12/04 15:57:47 fhajny Exp $
 
 DISTNAME=	eventmachine-0.12.10
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
