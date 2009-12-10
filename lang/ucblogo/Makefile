@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/09/09 02:43:10 obache Exp $
+# $NetBSD: Makefile,v 1.19 2007/02/19 19:51:17 joerg Exp $
 
 DISTNAME=	ucblogo-5.3
 PKGREVISION=	2
@@ -11,16 +11,18 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://http.cs.berkeley.edu/~bh/logo.html
 COMMENT=	Brian Harvey's logo language interpreter
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 MAKE_FILE=	makefile
 GNU_CONFIGURE=	yes
 # otherwise ./configure guesses -L incorrectly
 LIBS+=		-L${X11BASE}/lib
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ucblogo
-	${INSTALL_DATA}	${WRKSRC}/usermanual ${PREFIX}/share/doc/ucblogo/usermanual.txt
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/ucblogo/html
-	${CP} ${WRKSRC}/emacs/docs/*.html ${PREFIX}/share/doc/ucblogo/html/
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/ucblogo
+	${INSTALL_DATA}	${WRKSRC}/usermanual ${DESTDIR}${PREFIX}/share/doc/ucblogo/usermanual.txt
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/ucblogo/html
+	${CP} ${WRKSRC}/emacs/docs/*.html ${DESTDIR}${PREFIX}/share/doc/ucblogo/html/
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
