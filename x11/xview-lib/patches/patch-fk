@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-fk,v 1.1 2007/05/12 00:22:18 tnn Exp $
 
---- lib/libxview/textsw/txt_field.c.orig	1993-06-29 07:17:50.000000000 +0200
+--- lib/libxview/textsw/txt_field.c.orig	1993-06-29 05:17:50.000000000 +0000
 +++ lib/libxview/textsw/txt_field.c
 @@ -121,7 +121,6 @@ check_selection(buf, buf_len, first, las
  		    CHAR            marker2[3];
