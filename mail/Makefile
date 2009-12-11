@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.381 2009/11/29 01:33:05 tnn Exp $
+# $NetBSD: Makefile,v 1.382 2009/12/03 23:47:58 jnemeth Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -64,7 +64,6 @@ SUBDIR+=	dk-milter
 SUBDIR+=	dkim-milter
 SUBDIR+=	dot-forward
 SUBDIR+=	dovecot
-SUBDIR+=	dovecot-sieve
 SUBDIR+=	drac
 SUBDIR+=	dspam
 SUBDIR+=	elm
