@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/deliver/deliver.c.orig	2008-01-20 13:54:08.000000000 +0100
+--- src/deliver/deliver.c.orig	2008-12-13 17:01:04.000000000 +0100
 +++ src/deliver/deliver.c
-@@ -41,7 +41,7 @@
+@@ -42,7 +42,7 @@
  #include <syslog.h>
  
  #define DEFAULT_CONFIG_FILE SYSCONFDIR"/dovecot.conf"
