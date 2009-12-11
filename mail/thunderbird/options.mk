@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2009/09/16 18:42:31 tnn Exp $
+# $NetBSD: options.mk,v 1.1 2009/11/29 03:06:42 tnn Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.thunderbird
 PKG_SUPPORTED_OPTIONS=	debug mozilla-jemalloc gnome official-mozilla-branding
@@ -52,4 +52,6 @@ LICENSE=		mozilla-trademark-license
 RESTRICTED=		Trademark holder prohibits distribution of modified versions.
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
+.else
+CONFIGURE_ARGS+=	--disable-official-branding
 .endif
