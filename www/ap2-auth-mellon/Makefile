@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/08/11 15:53:41 manu Exp $
+# $NetBSD: Makefile,v 1.6 2009/11/16 09:48:28 manu Exp $
 #
 
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/mod_//:S/_/-/}
@@ -26,8 +26,6 @@ CONFIGURE_ENV+=		PKG_CONFIG_PATH=${PREFIX}/lib/pkgconfig
 CONFIGURE_ENV+=		OPENSSL_CFLAGS="${CPPFLAGS}"
 CONFIGURE_ENV+=		OPENSSL_LIBS="-L${PREFIX}/lib -lssl -lcrypto"
 CONFIGURE_ARGS+=        --with-apxs2=${APXS:Q}
-
-# url2pkg-marker (please do not remove this line.)
 
 .include "../../security/lasso/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
