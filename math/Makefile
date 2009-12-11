@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.191 2009/09/18 14:15:30 is Exp $
+# $NetBSD: Makefile,v 1.192 2009/11/03 17:54:17 wiz Exp $
 
 COMMENT=	Mathematics
 
@@ -16,9 +16,11 @@ SUBDIR+=	R-abind
 SUBDIR+=	R-akima
 SUBDIR+=	R-chron
 SUBDIR+=	R-circular
+SUBDIR+=	R-classInt
 SUBDIR+=	R-clim.pact
 SUBDIR+=	R-combinat
 SUBDIR+=	R-date
+SUBDIR+=	R-e1071
 SUBDIR+=	R-gdata
 SUBDIR+=	R-genetics
 SUBDIR+=	R-geoR
@@ -32,6 +34,7 @@ SUBDIR+=	R-maps
 SUBDIR+=	R-mvtnorm
 SUBDIR+=	R-ncdf
 SUBDIR+=	R-pixmap
+SUBDIR+=	R-randomForest
 SUBDIR+=	R-sgeostat
 SUBDIR+=	R-shapefiles
 SUBDIR+=	R-sp
