@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.1 2003/12/04 15:10:48 adam Exp $
+$NetBSD: patch-aa,v 1.2 2006/07/27 18:49:47 rillig Exp $
 
 --- /dev/null	2003-12-04 12:37:08.000000000 +0000
 +++ Makefile
@@ -223,4 +223,4 @@ $NetBSD: patch-aa,v 1.1 2003/12/04 15:10:48 adam Exp $
 +
 +install: lib$(LIB).a
 +	${LIBTOOL} --mode=install ${BSD_INSTALL_DATA} ${.ALLSRC:.a=.la} \
-+		${PREFIX}/lib
++		${DESTDIR}${PREFIX}/lib
