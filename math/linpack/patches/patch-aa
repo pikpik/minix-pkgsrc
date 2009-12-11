@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 2001/04/27 22:57:31 jtb Exp $
 
 --- /dev/null	Fri Apr 27 22:55:43 2001
 +++ Makefile
@@ -38,7 +38,7 @@ $NetBSD$
 +	$(RANLIB) $@
 +
 +install:	lib$(LIB).a
-+	$(BSD_INSTALL_DATA) lib$(LIB).a $(LIBDIR)
++	$(BSD_INSTALL_DATA) lib$(LIB).a $(DESTDIR)$(LIBDIR)
 +
 +clean:
 +	rm -f *.o lib$(LIB).a
