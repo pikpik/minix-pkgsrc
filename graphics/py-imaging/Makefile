@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2009/03/11 21:58:52 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2009/08/26 19:56:42 sno Exp $
 
-DISTNAME=	Imaging-1.1.6
-PKGNAME=	${PYPKGPREFIX}-imaging-1.1.6
-PKGREVISION=	1
+DISTNAME=	Imaging-1.1.7
+PKGNAME=	${PYPKGPREFIX}-imaging-1.1.7
 CATEGORIES=	graphics python
-MASTER_SITES=	http://effbot.org/downloads/
+MASTER_SITES=	http://effbot.org/media/downloads/
 
 MAINTAINER=	tsarna@NetBSD.org
 HOMEPAGE=	http://www.pythonware.com/products/pil/
@@ -32,6 +31,7 @@ post-install:
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
+.include "../../graphics/lcms/buildlink3.mk"
 .include "../../lang/python/extension.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
