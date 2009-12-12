@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/08/26 19:57:54 sno Exp $
+# $NetBSD: Makefile,v 1.23 2009/09/05 20:44:57 tonio Exp $
 #
 
 DISTNAME=	coq-8.2pl1
@@ -8,6 +8,8 @@ MASTER_SITES=	http://coq.inria.fr/distrib/V8.2pl1/files/
 MAINTAINER=	richards+netbsd@CS.Princeton.EDU
 HOMEPAGE=	http://coq.inria.fr/
 COMMENT=	Theorem prover which extracts programs from proofs
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 HAS_CONFIGURE=		YES
