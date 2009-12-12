@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/12/11 19:53:57 drochner Exp $
 #
 
 DISTNAME=	muparser_v130
@@ -14,6 +14,7 @@ WRKSRC=		${WRKDIR}/muparser
 GNU_CONFIGURE=	yes
 #USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c c++
+MAKE_JOBS_SAFE=	no
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGCONFIG_OVERRIDE+=	build/autoconf/muparser.pc.in
