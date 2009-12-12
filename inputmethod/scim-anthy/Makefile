@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/24 11:47:40 obache Exp $
 #
 
 DISTNAME=		scim-anthy-1.2.7
+PKGREVISION=		1
 CATEGORIES=		inputmethod
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE_JP:=scim-imengine/37309/}
 
@@ -11,6 +12,8 @@ COMMENT=		SCIM IMEngine module for anthy
 LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+DEPENDS+=		kasumi>=0.6:../../inputmethod/kasumi
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++
