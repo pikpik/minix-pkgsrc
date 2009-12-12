@@ -1,0 +1,13 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	xylib
+
+.if !defined(XYLIB_BUILDLINK3_MK)
+XYLIB_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.xylib+=	xylib>=0.4
+BUILDLINK_PKGSRCDIR.xylib?=	../../math/xylib
+
+.endif	# XYLIB_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-xylib
