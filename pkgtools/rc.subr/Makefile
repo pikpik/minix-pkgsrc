@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/02/10 00:25:00 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2009/02/10 00:26:26 joerg Exp $
 #
 
 DISTNAME=		rc.subr-20090118
@@ -20,15 +20,16 @@ NO_BUILD=		yes
 NO_CONFIGURE=		yes
 
 CHECK_FILES_SUPPORTED=	no
+BUILD_DEFS+=		RCD_SCRIPTS_DIR
 
 PLIST_SUBST+=		RCD_SCRIPTS_DIR=${RCD_SCRIPTS_DIR:S/^\///}
 
-CONF_FILES+=		${PREFIX}etc/rc.conf.example ${PREFIX}etc/rc.conf
+CONF_FILES+=		etc/rc.conf.example etc/rc.conf
 
 INSTALLATION_DIRS=	etc ${RCD_SCRIPTS_DIR:S/^\///}
 
 do-extract:
-	@${CP} -R ${FILESDIR} ${WRKSRC}
+	${CP} -R ${FILESDIR} ${WRKSRC}
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/rc.conf.example ${DESTDIR}${PREFIX}etc/rc.conf.example
