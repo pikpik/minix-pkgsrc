@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/08/31 08:59:11 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2009/09/18 13:18:54 sketch Exp $
 #
 
 DISTNAME=	xz-4.999.9beta
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE=	src/liblzma/liblzma.pc.in
+
+GCC_REQD=		3.4
 
 CONFLICTS=	lzma-[0-9]* lzma-utils-[0-9]* lzmalib-[0-9]*
 
