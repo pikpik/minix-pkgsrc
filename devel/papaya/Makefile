@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/11/08 19:39:43 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2008/06/12 02:14:27 joerg Exp $
 #
 
 DISTNAME=	papaya-0.1.7
@@ -31,6 +31,6 @@ pre-configure:
 	${TR} -d '\r' < detab.in.cr > detab.in
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/doc/html/*.html ${DESTDIR}${PREFIX}/share/doc/papaya
+	${INSTALL_DATA} ${WRKSRC}/doc/html/*.html ${WRKSRC}/doc/papaya/*.html ${DESTDIR}${PREFIX}/share/doc/papaya
 
 .include "../../mk/bsd.pkg.mk"
