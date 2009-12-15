@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.674 2009/12/02 12:24:08 fhajny Exp $
+# $NetBSD: Makefile,v 1.675 2009/12/02 16:12:57 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -201,6 +201,7 @@ SUBDIR+=	mongrel-config
 SUBDIR+=	mongrel-console
 SUBDIR+=	mongrel-upload-progress
 SUBDIR+=	mono-xsp
+SUBDIR+=	mserv-php
 SUBDIR+=	neon
 SUBDIR+=	netscape
 SUBDIR+=	netsurf
