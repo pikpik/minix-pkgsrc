@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2009/08/16 20:14:39 zafer Exp $
+# $NetBSD: Makefile,v 1.32 2009/08/26 19:57:37 sno Exp $
 #
 
 DISTNAME=		cqcam-0.91
@@ -31,6 +31,7 @@ USE_LANGUAGES=		c c++
 
 CONFIGURE_ENV+=		TCLCONFIG_SH=${TCLCONFIG_SH:Q}
 CONFIGURE_ARGS+=	--x-includes=${X11BASE:Q}/include
+CONFIGURE_ARGS+=	--x-libraries=${X11BASE:Q}/lib
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
