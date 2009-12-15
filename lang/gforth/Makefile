@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2009/08/14 22:52:20 asau Exp $
+# $NetBSD: Makefile,v 1.26 2009/08/14 22:54:49 asau Exp $
 
 DISTNAME=		gforth-0.7.0
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_GNU:=gforth/}
 MASTER_SITES+=		http://www.complang.tuwien.ac.at/forth/gforth/
