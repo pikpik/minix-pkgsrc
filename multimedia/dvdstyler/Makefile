@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/08/26 19:58:04 sno Exp $
+# $NetBSD: Makefile,v 1.22 2009/11/15 18:24:40 drochner Exp $
 #
 
 DISTNAME=	DVDStyler-1.7.4
@@ -11,6 +11,7 @@ HOMEPAGE=	http://www.dvdstyler.de/
 COMMENT=	Crossplatform DVD Authoring System
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=		no
 
 DEPENDS+=	dvdauthor>=0.6.10:../../multimedia/dvdauthor
 DEPENDS+=	dvd+rw-tools-[0-9]*:../../sysutils/dvd+rw-tools
