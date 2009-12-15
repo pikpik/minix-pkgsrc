@@ -1,3 +1,4 @@
-@comment $NetBSD$
-lib/liblualxp.so
+@comment $NetBSD: PLIST,v 1.1.1.1 2004/04/05 13:57:53 xtraeme Exp $
+${LUA_CDIR}/lxp.so
+${LUA_LDIR}/lom.lua
 share/examples/lua/lxp.lua
