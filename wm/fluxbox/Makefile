@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2009/07/07 15:47:59 sborrill Exp $
+# $NetBSD: Makefile,v 1.49 2009/08/26 19:58:46 sno Exp $
 #
 
 DISTNAME=	fluxbox-1.1.1
@@ -19,10 +19,6 @@ USE_TOOLS+=	gmake
 USE_LIBTOOL=	YES
 
 .include "../../mk/bsd.prefs.mk"
-
-.for option in 9 8 7 6 5 4 3 2 s
-BUILDLINK_TRANSFORM+=	rename:-O${option}:-O1
-.endfor
 
 CONFIGURE_ARGS+=	--enable-shape
 CONFIGURE_ARGS+=	--enable-nls
