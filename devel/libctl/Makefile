@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2009/06/30 00:07:12 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2009/07/08 16:32:38 joerg Exp $
 
 DISTNAME=	libctl-2.2
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	http://ab-initio.mit.edu/libctl/
 
