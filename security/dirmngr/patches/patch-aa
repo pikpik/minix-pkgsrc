@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/Makefile.am.orig	2007-08-13 02:54:50.000000000 -0600
+--- src/Makefile.am.orig	2008-06-12 15:23:02.000000000 +0000
 +++ src/Makefile.am
 @@ -20,7 +20,7 @@
  
@@ -18,5 +18,5 @@ $NetBSD$
 -AM_CPPFLAGS += -DDIRMNGR_DATADIR="\"$(localstatedir)/lib/@PACKAGE@\""
 +AM_CPPFLAGS += -DDIRMNGR_DATADIR="\"$(datadir)/@PACKAGE@\""
  AM_CPPFLAGS += -DDIRMNGR_CACHEDIR="\"$(localstatedir)/cache/@PACKAGE@\""
+ AM_CPPFLAGS += -DDIRMNGR_SOCKETDIR="\"$(localstatedir)/run/@PACKAGE@\""
  
- AM_CFLAGS = -I$(top_srcdir)/jnlib $(LIBGCRYPT_CFLAGS) $(LIBASSUAN_CFLAGS) \
