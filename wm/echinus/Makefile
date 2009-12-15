@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/02 04:15:51 obache Exp $
 #
 
-DISTNAME=	echinus-0.3.8
+DISTNAME=	echinus-0.3.9
 CATEGORIES=	wm
 MASTER_SITES=	http://www.rootshell.be/~polachok/code/
 
