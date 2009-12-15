@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/23 19:07:19 hasso Exp $
+# $NetBSD: Makefile,v 1.2 2009/10/07 19:39:43 joerg Exp $
 
 PKGNAME=		libprelude-ruby-${VERSION}
+PKGREVISION=		1
 COMMENT=                Ruby bindings to LibPrelude
 
 PKG_DESTDIR_SUPPORT=	user-destdir

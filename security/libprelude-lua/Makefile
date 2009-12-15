@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/23 19:03:34 hasso Exp $
+# $NetBSD: Makefile,v 1.2 2009/10/07 19:39:42 joerg Exp $
 
 PKGNAME=		libprelude-lua-${VERSION}
+PKGREVISION=		1
 COMMENT=                Lua bindings to LibPrelude
 
 PKG_DESTDIR_SUPPORT=	user-destdir
