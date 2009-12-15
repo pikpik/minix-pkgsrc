@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2009/05/26 13:32:29 gdt Exp $
+# $NetBSD: Makefile,v 1.20 2009/11/15 04:47:41 snj Exp $
 #
 
 CATEGORIES=	net sysutils
-PKGREVISION=	2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/nagiosplug/
