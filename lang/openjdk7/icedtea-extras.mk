@@ -1,7 +1,7 @@
-# $NetBSD: icedtea-extras.mk,v 1.2 2009/10/14 16:50:29 tnn Exp $
+# $NetBSD: icedtea-extras.mk,v 1.3 2009/11/07 14:48:49 tnn Exp $
 
 # Needed to extract icedtea
-EXTRACT_USING=			gtar
+EXTRACT_USING=			bsdtar
 
 DIST_SUBDIR=			openjdk7
 
