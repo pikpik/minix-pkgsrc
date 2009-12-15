@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2007/10/13 20:59:49 rillig Exp $
+# $NetBSD: Makefile,v 1.29 2007/12/02 13:04:07 wiz Exp $
 
 DISTNAME=	db-3.3.11
 PKGNAME=	java-db3-3.11.2
@@ -24,6 +24,7 @@ JAVACABS=		${JAVAC}
 WRKSRC=			${WRKDIR}/${DISTNAME}/build_unix
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+USE_TOOLS+=		gmake
 CONFIGURE_SCRIPT=	../dist/configure
 CONFIG_SUB_OVERRIDE+=	../dist/config.sub
 CONFIG_GUESS_OVERRIDE+=	../dist/config.guess
