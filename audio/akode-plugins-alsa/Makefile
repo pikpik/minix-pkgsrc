@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 18:03:15 hasso Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/08 18:54:20 hasso Exp $
 #
 
 PKGNAME=		akode-plugins-alsa-${AKODE_VERSION}
+PKGREVISION=		1
 
 MAINTAINER=		hasso@NetBSD.org
 COMMENT=		Alsa output plugin for aKode framework

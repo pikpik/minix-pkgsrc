@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 18:05:27 hasso Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/08 18:54:21 hasso Exp $
 #
 
 PKGNAME=		akode-plugins-jack-${AKODE_VERSION}
+PKGREVISION=		1
 
 MAINTAINER=		hasso@NetBSD.org
 COMMENT=		Jack output plugin for aKode framework

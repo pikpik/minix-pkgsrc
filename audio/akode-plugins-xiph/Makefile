@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/26 18:12:39 hasso Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/08 18:54:21 hasso Exp $
 #
 
 PKGNAME=		akode-plugins-xiph-${AKODE_VERSION}
+PKGREVISION=		1
 
 MAINTAINER=		hasso@NetBSD.org
 COMMENT=		Xiph decoder plugin for akode framework

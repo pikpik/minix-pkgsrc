@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2009/02/27 16:31:27 hasso Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2009/03/20 19:23:52 joerg Exp $
 
 BUILDLINK_TREE+=	akode
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	akode
 AKODE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.akode+=	akode>=2.0.2
+BUILDLINK_ABI_DEPENDS.akode+=	akode>=2.0.2nb2
 BUILDLINK_PKGSRCDIR.akode?=	../../audio/akode
 
 .include "../../devel/libltdl/buildlink3.mk"

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/03/05 07:14:38 hasso Exp $
+# $NetBSD: Makefile,v 1.3 2009/06/08 18:54:21 hasso Exp $
 #
 
 PKGNAME=		akode-plugins-sun-${AKODE_VERSION}
+PKGREVISION=		1
 
 MAINTAINER=		hasso@NetBSD.org
 COMMENT=		Sun audio output plugin for akode framework
