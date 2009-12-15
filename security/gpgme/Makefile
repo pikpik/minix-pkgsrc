@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2009/11/15 18:41:55 drochner Exp $
+# $NetBSD: Makefile,v 1.58 2009/12/03 15:22:39 joerg Exp $
 #
 
 DISTNAME=	gpgme-1.1.8
@@ -62,8 +62,10 @@ BUILDLINK_API_DEPENDS.librfuncs+=	librfuncs>=1.0.7nb1
 .  include "../../security/gnupg2/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-gpgsm=${BUILDLINK_PREFIX.gnupg2}/bin/gpgsm
 CONFIGURE_ARGS+=	--with-gpg=${BUILDLINK_PREFIX.gnupg2}/bin/gpg2
+REPLACE_SH+=		tests/gpg/pinentry
 .else
 CONFIGURE_ARGS+=	--without-gpgsm
+CONFIGURE_ARGS+=	--without-gpgconf
 .endif
 
 .include "../../mk/bsd.prefs.mk"
