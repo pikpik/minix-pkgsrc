@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2009/07/23 09:23:28 markd Exp $
+# $NetBSD: Makefile,v 1.23 2009/09/30 09:22:47 sketch Exp $
 #
 
-DISTNAME=	raptor-1.4.19
+DISTNAME=	raptor-1.4.20
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.librdf.org/source/
 
