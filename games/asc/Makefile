@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2009/05/20 00:58:16 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2009/08/26 19:57:28 sno Exp $
 
 DISTNAME=	asc-source-1.16.4.0
 PKGNAME=	${DISTNAME:S/-source//}
@@ -27,6 +27,8 @@ USE_TOOLS+=		gmake perl:build pkg-config
 REPLACE_PERL=		checkfordata.pl
 GNU_CONFIGURE=		yes
 CPPFLAGS.NetBSD+=	-D_UNICODE_BROKEN_
+
+MAKE_ENV+=		top_src_dir=.
 
 # ../weaponguide.cpp:1205: virtual memory exhausted
 UNLIMIT_RESOURCES=	datasize
