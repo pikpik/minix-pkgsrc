@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2009/07/22 09:01:47 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2009/08/16 14:03:59 wiz Exp $
 #
 
-DISTNAME=		hal-info-20090716
+DISTNAME=		hal-info-20091130
 CATEGORIES=		sysutils
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 
