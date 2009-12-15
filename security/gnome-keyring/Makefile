@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2009/10/21 16:37:19 drochner Exp $
+# $NetBSD: Makefile,v 1.51 2009/12/15 14:07:22 wiz Exp $
 
 DISTNAME=	gnome-keyring-2.28.2
 CATEGORIES=	security gnome
@@ -10,14 +10,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	GNOME password and secret manager
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-PKG_OPTIONS_VAR=	PKG_OPTIONS.gnome-keyring
-PKG_SUPPORTED_OPTIONS+=	hal
-PKG_SUGGESTED_OPTIONS+=	hal
-.include "../../mk/bsd.options.mk"
-.if !empty(PKG_OPTIONS:Mhal)
-.include "../../sysutils/hal/buildlink3.mk"
-.endif
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 GNU_CONFIGURE=		YES
