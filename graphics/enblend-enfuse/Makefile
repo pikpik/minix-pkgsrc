@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/09/01 14:39:28 adam Exp $
 
-DISTNAME=	enblend-enfuse-3.2
+DISTNAME=	enblend-enfuse-4.0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=enblend/}
 
@@ -12,10 +12,12 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}-753b534c819d
+
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
+USE_TOOLS+=		gmake perl:build
 GNU_CONFIGURE=		yes
-INFO_FILES=		yes
 
 .include "../../mk/bsd.prefs.mk"
 
