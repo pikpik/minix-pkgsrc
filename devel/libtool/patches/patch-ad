@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libltdl/configure.orig	2009-12-15 16:46:54.000000000 +0100
+--- libltdl/configure.orig	2009-12-16 15:15:21.000000000 +0000
 +++ libltdl/configure
 @@ -4542,6 +4542,13 @@ else
      lt_cv_sys_max_cmd_len=8192;
