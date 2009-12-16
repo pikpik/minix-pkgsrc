@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.4 2008/09/03 06:34:32 spz Exp $
+# $NetBSD: Makefile.common,v 1.5 2008/12/21 11:55:25 spz Exp $
 #
 
 INN_PREFIX?=	${PREFIX}
@@ -8,3 +8,5 @@ INN_SPOOL?=	${INN_DATA_DIR}/spool
 
 BUILD_DEFS+=	INN_DATA_DIR
 BUILD_DEFS+=	VARBASE
+BUILD_DEFS+=	INN_USER
+BUILD_DEFS+=	INN_GROUP
