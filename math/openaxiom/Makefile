@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/04/10 05:21:59 asau Exp $
+# $NetBSD: Makefile,v 1.3 2009/04/18 11:17:33 asau Exp $
 #
 
-DISTNAME=		open-axiom-1.2.1
+DISTNAME=		open-axiom-1.3.0
 PKGNAME=		${DISTNAME:S/open-/open/}
-PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=open-axiom/}
 EXTRACT_SUFX=		.tar.bz2
