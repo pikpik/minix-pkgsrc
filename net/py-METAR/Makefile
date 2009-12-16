@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2008/04/25 20:39:11 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:41 joerg Exp $
 #
 
-DISTNAME=	pymetar-0.12
-PKGNAME=	${PYPKGPREFIX}-pymetar-0.12
-PKGREVISION=	1
+DISTNAME=	pymetar-0.15
+PKGNAME=	${PYPKGPREFIX}-pymetar-0.15
 CATEGORIES=	net python
 MASTER_SITES=	http://www.schwarzvogel.de/pkgs/
 
