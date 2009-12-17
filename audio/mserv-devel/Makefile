@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/06/26 05:45:55 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2009/08/10 11:32:40 drochner Exp $
 #
 
 DISTNAME=	mserv-0.39a
@@ -19,20 +19,21 @@ REPLACE_PERL=		support/mservedit webclient/main.cgi \
 			webclient/margin.cgi webclient/mserv.cgi
 USE_TOOLS+=		perl:run pkg-config
 
+INSTALLATION_DIRS+= share/doc/mserv share/mserv/webclient
+PKG_DESTDIR_SUPPORT= user-destdir
+
 post-configure:
 	${MV} ${WRKSRC}/mserv/soundcard.h ${WRKSRC}/mserv/mservsoundcard.h
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/support/mservedit ${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${PREFIX}/share/doc/mserv
+	${INSTALL_SCRIPT} ${WRKSRC}/support/mservedit ${DESTDIR}${PREFIX}/bin
 	${INSTALL_DATA} \
 		${WRKSRC}/INSTALL \
 		${WRKSRC}/LICENSE \
-		${PREFIX}/share/doc/mserv
-	${INSTALL_DATA_DIR} ${PREFIX}/share/mserv/webclient
+		${DESTDIR}${PREFIX}/share/doc/mserv
 	${INSTALL_DATA} \
 		${WRKSRC}/webclient/* \
-		${PREFIX}/share/mserv/webclient
+		${DESTDIR}${PREFIX}/share/mserv/webclient
 
 .include "../../audio/libshout/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
