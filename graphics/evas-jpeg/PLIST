@@ -1,3 +1,3 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/02/26 19:06:55 minskim Exp $
-lib/evas/modules/loaders/jpeg/${MODULE_ARCH}/module.la
-lib/evas/modules/savers/jpeg/${MODULE_ARCH}/module.la
+@comment $NetBSD$
+lib/evas/modules/loaders/jpeg/${LOWER_OPSYS}-${MACHINE_ARCH}-ver-svn-05/module.la
+lib/evas/modules/savers/jpeg/${LOWER_OPSYS}-${MACHINE_ARCH}-ver-svn-05/module.la
