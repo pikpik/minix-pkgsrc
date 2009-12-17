@@ -1,6 +1,6 @@
-$NetBSD: patch-ab,v 1.4 2005/11/05 03:27:56 rillig Exp $
+$NetBSD: patch-ab,v 1.5 2008/07/14 00:43:34 dholland Exp $
 
---- unix/configure.orig	2001-10-20 02:24:40.000000000 +0200
+--- unix/configure.orig	2001-10-20 00:24:40.000000000 +0000
 +++ unix/configure
 @@ -1688,7 +1688,7 @@ echo "configure:1679: checking system ve
  	    # results, and the version is kept in special file).
