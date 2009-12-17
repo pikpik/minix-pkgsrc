@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/09/22 21:53:57 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/01/22 17:09:55 tnn Exp $
 #
 
 DISTNAME=	sgi-fonts-1.0-457.src
@@ -12,20 +12,19 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://oss.sgi.com/projects/sgi_propack/
 COMMENT=	Linux compatibility package for SGI fonts
 
-BUILD_DEPENDS+=	rpm2pkg>=1.3:../../pkgtools/rpm2pkg
-
 WRKSRC=		${WRKDIR}/sgi-fonts
+PKG_DESTDIR_SUPPORT= user-destdir
 
 USE_IMAKE=	YES
-USE_TOOLS+=	bdftopcf bzcat gtar gzip
+USE_TOOLS+=	bdftopcf bzcat gtar gzip rpm2pkg
 FONTS_DIRS.x11+=	${PREFIX}/lib/X11/fonts/misc/sgi
 REQD_DIRS+=		${PREFIX}/lib/X11/fonts/misc/sgi
 
 do-extract:
-	${LOCALBASE}/sbin/rpm2pkg -d ${WRKDIR} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES}
+	rpm2pkg -d ${WRKDIR} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES}
 	cd ${WRKDIR} && bzcat sgi-fonts.tar.bz2 | ${GTAR} xf -
 
 post-install:
-	${RM} ${PREFIX}/lib/X11/fonts/misc/sgi/fonts.scale
+	${RM} ${DESTDIR}${PREFIX}/lib/X11/fonts/misc/sgi/fonts.scale
 
 .include "../../mk/bsd.pkg.mk"
