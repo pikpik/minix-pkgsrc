@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- scripts/areas/Makefile.orig	2001-01-07 15:29:44.000000000 +0000
++++ scripts/areas/Makefile
+@@ -32,7 +32,7 @@ morannon:
+ 
+ 
+ install:
+-	$(INSTALL_PROG) areasbbssync $(PREFIX)$(BINDIR)
++	$(INSTALL_PROG) areasbbssync $(DESTDIR)$(PREFIX)$(BINDIR)
+ 
+ 
+ clean:

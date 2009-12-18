@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- doc/Makefile.orig	1999-04-03 13:28:56.000000000 +0000
++++ doc/Makefile
+@@ -50,6 +50,6 @@ test:	check
+ 
+ 
+ install::
+-	$(INSTALL_DATA) fidogate.info* $(PREFIX)$(INFODIR)
++	$(INSTALL_DATA) fidogate.info* $(DESTDIR)$(PREFIX)$(INFODIR)
+ 
+ depend::
