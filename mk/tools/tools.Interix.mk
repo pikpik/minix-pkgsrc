@@ -1,4 +1,4 @@
-# $NetBSD: tools.Interix.mk,v 1.21 2006/11/06 19:18:42 tv Exp $
+# $NetBSD: tools.Interix.mk,v 1.22 2009/12/13 08:30:01 obache Exp $
 #
 # System-supplied tools for the Interix operating system.
 
@@ -57,6 +57,9 @@ TOOLS_PLATFORM.makeinfo?=	/bin/makeinfo
 TOOLS_PLATFORM.mkdir?=		/bin/mkdir -p
 TOOLS_PLATFORM.mv?=		/bin/mv
 TOOLS_PLATFORM.nice?=		/bin/nice
+.if empty(MACHINE_PLATFORM:MInterix-[0-5].*-*)
+TOOLS_PLATFORM.patch?=		/bin/patch
+.endif
 TOOLS_PLATFORM.printf?=		/bin/printf
 TOOLS_PLATFORM.pwd?=		/bin/pwd
 TOOLS_PLATFORM.rm?=		/bin/rm
