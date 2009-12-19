@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2009/11/25 11:33:56 obache Exp $
+# $NetBSD: Makefile,v 1.10 2009/11/30 21:59:37 joerg Exp $
 #
 
 DISTNAME=	tokyocabinet-lua-1.8
+PKGREVISION=	1
 PKGNAME=	${LUA_PKGPREFIX}-${DISTNAME:S/-lua-/-/}
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}

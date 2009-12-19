@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2009/07/20 02:55:58 obache Exp $
+# $NetBSD: Makefile,v 1.19 2009/11/25 11:33:56 obache Exp $
 #
 
 DISTNAME=	tokyocabinet-perl-1.32
+PKGREVISION=	1
 PKGNAME=	p5-${DISTNAME:S/-perl-/-/}
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tokyocabinet/}
