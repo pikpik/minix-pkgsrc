@@ -1,0 +1,11 @@
+# $NetBSD$
+
+FO_DIR="@PREFIX@/@FO_DIR@"
+
+case ${STAGE} in
+DEINSTALL)
+	# remove temporary files.
+	${FIND} ${FO_DIR}/cache ${FO_DIR}/tmp -type f \
+		! -name dummy.php -exec ${RM} -f {} \;
+	;;
+esac
