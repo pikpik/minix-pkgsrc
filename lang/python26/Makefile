@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/11/16 10:40:21 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2009/11/16 21:12:05 jakllsch Exp $
 
 DISTNAME=	Python-2.6.4
 PKGNAME=	${DISTNAME:S/Python/python26/}
@@ -137,6 +137,11 @@ PLIST.nis=	yes
 .  else
 PLIST.no-nis=	yes
 .  endif
+.endif
+
+.if ${OPSYS} == "OSF1"
+# configure complains about buggy getaddrinfo()
+CONFIGURE_ARGS+=	--disable-ipv6
 .endif
 
 .if defined(BUILDLINK_TRANSFORM)
