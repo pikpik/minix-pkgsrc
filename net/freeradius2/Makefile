@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2009/07/17 18:00:22 adrianp Exp $
+# $NetBSD: Makefile,v 1.8 2009/10/11 09:18:25 adam Exp $
 
 DISTNAME=	freeradius-server-${RADVER}
 PKGNAME=	${DISTNAME:S/-server//}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/
 EXTRACT_SUFX=	.tar.bz2
