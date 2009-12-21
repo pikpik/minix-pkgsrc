@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/12 02:14:44 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2008/10/19 19:18:44 he Exp $
 #
 
 DISTNAME=	egd-0.8
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+=	p5-SHA-[0-9]*:../../security/p5-SHA
 
 PERL5_PACKLIST=	auto/egd/.packlist
+
+BROKEN=		Conflicts with dependency
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
