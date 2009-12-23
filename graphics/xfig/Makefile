@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.58 2009/11/24 06:08:48 obache Exp $
+# $NetBSD: Makefile,v 1.59 2009/11/30 13:50:38 itohy Exp $
 
 DISTNAME=	xfig.3.2.5b.full
 PKGNAME=	xfig-3.2.5b
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mcj/}
 
