@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/11/28 19:31:29 kefren Exp $
+# $NetBSD: Makefile,v 1.10 2009/12/15 21:59:05 joerg Exp $
 #
 
 DISTNAME=	fuppes-0.640
@@ -18,9 +18,9 @@ USE_TOOLS+=	gmake pkg-config
 USE_TOOLS+=	autoconf automake aclocal m4 autoreconf
 USE_LIBTOOL=	yes
 
-CONFIGURE_ARGS+=	--enable-video-transcoding
 CONFIGURE_ARGS+=	--enable-faad
 CONFIGURE_ARGS+=	--enable-mad
+CONFIGURE_ARGS+=	--enable-lame
 
 .include "options.mk"
 
