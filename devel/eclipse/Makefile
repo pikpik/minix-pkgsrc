@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/08/01 18:33:08 dholland Exp $
+# $NetBSD: Makefile,v 1.26 2009/11/22 19:51:43 abs Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}
@@ -14,6 +14,7 @@ COMMENT=	Java IDE
 LICENSE=	eclipse-license
 
 DEPENDS+=	apache-ant>=1.4.1:../../devel/apache-ant
+USE_TOOLS+=	unzip
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
