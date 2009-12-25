@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2009/07/22 09:01:44 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2009/10/09 11:21:35 is Exp $
 #
 
 DISTNAME=	prosper-1.00.4
@@ -9,7 +9,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=prosper/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} PPRblends.sty.gz
 
 MAINTAINER=	minskim@NetBSD.org
-HOMEPAGE=	http://prosper.sourceforge.net/
+HOMEPAGE=	http://sourceforge.net/projects/prosper/
 COMMENT=	LaTeX class for writing transparencies
 
 WRKSRC=		${WRKDIR}/prosper
