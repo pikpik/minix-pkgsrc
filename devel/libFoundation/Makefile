@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2009/04/18 02:19:23 rh Exp $
+# $NetBSD: Makefile,v 1.14 2009/05/19 08:59:10 wiz Exp $
 #
 DISTNAME=	libFoundation-1.1.7-r168
 PKGNAME=	${DISTNAME:S/-r/./}
+PKGREVISION=	1
 CATEGORIES=	devel gnustep
 MASTER_SITES=	http://download.opengroupware.org/nightly/sources/releases/
 
