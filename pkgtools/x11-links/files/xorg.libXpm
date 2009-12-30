@@ -1,0 +1,13 @@
+# $NetBSD$
+#
+include/X11/xpm.h
+lib/libXpm.a
+lib/libXpm.so
+lib/libXpm.so.4
+lib/libXpm.so.4.11
+lib/libXpm.so.5
+lib/libXpm.so.5.0
+lib/libXpm.dylib
+lib/libXpm.4.dylib
+lib/libXpm.4.11.dylib
+lib/pkgconfig/xpm.pc
