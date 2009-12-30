@@ -1,31 +1,26 @@
-# $NetBSD: Makefile,v 1.31 2008/06/12 02:14:48 joerg Exp $
+# $NetBSD$
 
-DISTNAME=	dictd-1.9.15
-PKGNAME=	dict-client-1.9.15
-PKGREVISION=	3
+.include "../../textproc/dict-server/Makefile.common"
+
+PKGNAME=	${DISTNAME:S/dictd/dict-client/}
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://ftp.dict.org/pub/dict/
-
-MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.dict.org/
 COMMENT=	Dictionary Service Protocol client
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		gnu-gpl-v2
 
-USE_TOOLS+=		gmake flex yacc
+USE_TOOLS+=		gmake yacc lex
+USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-cflags=${CFLAGS:M*:Q}
-CONFIGURE_ARGS+=	--with-etcdir=${PKG_SYSCONFDIR:Q}
-CONFIGURE_ARGS+=	--enable-dictorg
 
-BUILD_TARGET=	dict
-INSTALL_TARGET=	install.dict
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
+
+BUILD_TARGET=		dict
+INSTALL_TARGET=		install.dict
 
 FILESDIR=	${.CURDIR}/../../textproc/dict-server/files
 PATCHDIR=	${.CURDIR}/../../textproc/dict-server/patches
 DISTINFO_FILE=	${.CURDIR}/../../textproc/dict-server/distinfo
 
-.include "../../devel/libltdl/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-
+.include "../../devel/libmaa/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
