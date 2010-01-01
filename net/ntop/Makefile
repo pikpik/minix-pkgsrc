@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2009/05/25 09:03:14 adam Exp $
+# $NetBSD: Makefile,v 1.54 2009/09/26 05:58:27 taca Exp $
 
 DISTNAME=	ntop-3.3.10
 CATEGORIES=	net
@@ -43,7 +43,7 @@ USE_BUILTIN.libevent=	no
 
 pre-configure:
 	set -e; cd ${WRKSRC}; \
-	cp ${PREFIX}/share/libtool/ltmain.sh .; \
+	cp ${PREFIX}/share/libtool/config/ltmain.sh .; \
 	aclocal; autoheader; automake -a --foreign -i; autoconf
 
 .include "../../databases/gdbm/buildlink3.mk"
