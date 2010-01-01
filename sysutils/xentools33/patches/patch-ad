@@ -1,8 +1,8 @@
 $NetBSD$
 
---- console/Makefile.orig	2008-08-01 16:38:07.000000000 +0200
+--- console/Makefile.orig	2009-08-06 12:56:32.000000000 +0000
 +++ console/Makefile
-@@ -29,7 +29,7 @@ xenconsole: $(patsubst %.c,%.o,$(wildcar
+@@ -29,9 +29,9 @@ xenconsole: $(patsubst %.c,%.o,$(wildcar
  
  .PHONY: install
  install: $(BIN)
@@ -14,3 +14,5 @@ $NetBSD$
 +	$(BSD_INSTALL_PROGRAM) xenconsoled $(DESTDIR)/$(SBINDIR)
 +	$(BSD_INSTALL_PROGRAM_DIR) $(DESTDIR)$(PRIVATE_BINDIR)
 +	$(BSD_INSTALL_PROGRAM) xenconsole $(DESTDIR)$(PRIVATE_BINDIR)
+ 
+ -include $(DEPS)
