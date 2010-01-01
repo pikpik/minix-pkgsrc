@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.79 2009/03/05 09:59:12 jmmv Exp $
+# $NetBSD: Makefile,v 1.80 2009/10/30 12:02:46 tron Exp $
 
 DISTNAME=	screen-4.0.3
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	misc shells
 MASTER_SITES=	ftp://ftp.uni-erlangen.de/pub/utilities/screen/ \
 		http://komquats.com/distfiles/ \
