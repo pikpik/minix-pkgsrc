@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/05/01 13:43:48 zafer Exp $
+# $NetBSD: Makefile,v 1.25 2009/05/29 00:00:20 agc Exp $
 
 DISTNAME=	crack5.0
 PKGNAME=	crack-5.0
@@ -37,7 +37,7 @@ pre-build:
 	@${CHMOD} a+rx ${WRKSRC}/Crack
 
 do-build:
-	cd ${WRKSRC} ; ./Crack -makeonly
+	cd ${WRKSRC} ; env ${MAKE_ENV} ./Crack -makeonly
 
 do-install:
 	@${INSTALL_DATA_DIR} ${PREFIX}/libexec/crack
