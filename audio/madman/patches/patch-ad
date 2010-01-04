@@ -11,7 +11,19 @@ $NetBSD$
  opts = Options(	"my_options.py")
  
  opts.Add("qt_directory", "Path to Qt directory", "not specified")
-@@ -112,7 +114,7 @@ def SplitLibs(lstring):
+@@ -18,10 +20,7 @@ opts.Add("add_lib_dirs", "A comma-separa
+ opts.Add(BoolOption("maintainer_mode", "Whether you want to use some special ingredients", 0))
+ 
+ env = Environment(
+-    ENV = {
+-      'PATH' : os.environ[ 'PATH' ],
+-      'HOME' : os.environ[ 'HOME' ] # required for distcc
+-    }, options = opts)
++    ENV = os.environ, options = opts)
+ env.Replace(CPPPATH = [], LIBS = [], LIBPATH = [], CPPDEFINES = [],
+     CXXFLAGS = "", CCFLAGS = "")
+ Help(opts.GenerateHelpText(env))
+@@ -112,7 +111,7 @@ def SplitLibs(lstring):
  def CheckForQtAt(context, qtdir):
    context.Message('Checking for Qt at %s... ' % qtdir)
    result = AttemptLinkWithVariables(context,
