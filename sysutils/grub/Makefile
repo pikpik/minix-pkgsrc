@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2008/04/12 22:43:12 jlam Exp $
+# $NetBSD: Makefile,v 1.50 2009/06/07 18:20:03 tnn Exp $
 
 DISTNAME=	grub-0.97
 PKGREVISION=	8
@@ -15,7 +15,7 @@ GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake
 INFO_FILES=		# PLIST
 
-BUILDLINK_TRANSFORM+=	rename:-fno-builtin:-ffreestanding
+BUILDLINK_TRANSFORM+=	opt:-fno-builtin:-ffreestanding
 
 .include "../../mk/bsd.prefs.mk"
 
