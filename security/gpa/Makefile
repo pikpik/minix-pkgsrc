@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/06/20 01:09:33 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2009/08/26 19:58:15 sno Exp $
 #
 
 DISTNAME=	gpa-0.7.0
@@ -17,6 +17,8 @@ GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 
 LIBS+=			${BUILDLINK_LDADD.getopt}
+
+CONFIGURE_ENV+=		ac_cv_path_GPG=${GPGME_GPG:Q}
 
 .include "../../devel/libgetopt/buildlink3.mk"
 .include "../../security/gpgme/buildlink3.mk"
