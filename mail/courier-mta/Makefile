@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2008/02/21 15:50:29 jlam Exp $
+# $NetBSD: Makefile,v 1.26 2008/10/19 19:18:11 he Exp $
 
 DISTNAME=	courier-${COURIER_VERSION}
 PKGNAME=	${DISTNAME:S/-/-mta-/}
@@ -28,6 +28,10 @@ PLIST_SRC+=		${PKGDIR}/PLIST
 
 .include "pkginstall.mk"
 .include "options.mk"
+
+.if ${OPSYS} == "NetBSD"
+CONFIGURE_ARGS+=	ac_cv_path_REHASH=${FALSE}
+.endif
 
 USERGROUP_PHASE=	configure
 
