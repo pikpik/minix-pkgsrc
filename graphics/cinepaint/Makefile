@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/08/26 19:57:37 sno Exp $
+# $NetBSD: Makefile,v 1.25 2009/12/22 15:42:20 drochner Exp $
 
 DISTNAME=	cinepaint-0.22-1
 PKGNAME=	cinepaint-0.22.1
@@ -12,6 +12,8 @@ COMMENT=	Motion picture painting and image retouching program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
