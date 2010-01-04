@@ -1,5 +1,7 @@
 #! /bin/sh
 #
+# $NetBSD$
+#
 # Based on http://www.jpegclub.org/exifautotran.txt
 #
 if [ "$#" = "0" ]

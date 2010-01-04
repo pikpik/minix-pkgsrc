@@ -1,3 +1,4 @@
+/* $NetBSD$ */
 /*
  * jpegexiforient.c
  *
