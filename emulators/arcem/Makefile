@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/02/06 18:43:14 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/12/17 22:12:08 abs Exp $
 #
 
 DISTNAME=	arcem-1.00-src
@@ -6,6 +6,8 @@ PKGNAME=	${DISTNAME:S/-src//}
 PKGREVISION=	2
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=arcem/}
+
+NOT_FOR_PLATFORM+=	${LP64PLATFORMS}
 
 EXTRACT_SUFX=	.tgz
 
