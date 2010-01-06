@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.3 2007/04/01 01:58:37 obache Exp $
+# $NetBSD: Makefile,v 1.4 2008/01/21 03:04:30 obache Exp $
 
 DISTNAME=	kcc
-PKGNAME=	kcc-1.0
+PKGNAME=	kcc-2.3
 CATEGORIES=	japanese converters
-MASTER_SITES=	${MASTER_SITE_FREEBSD} \
-		ftp://ftp.sra.co.jp/pub/os/linux/JE/sources/base/
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/os/linux/JE/sources/base/
+DIST_SUBDIR=	${PKGNAME_NOREV}
 
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	# empty
 COMMENT=	Kanji code converter with auto encoding detection
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
