@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2008/03/03 01:50:27 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2009/05/19 08:59:05 wiz Exp $
 #
 
-DISTNAME=		eagle-lin-eng-4.14
-PKGNAME=		eagle-4.14
-PKGREVISION=		1
+DISTNAME=		eagle-lin-eng-4.16r2
+PKGNAME=		${DISTNAME:S/-lin-eng//}
 CATEGORIES=		cad
-MASTER_SITES=		ftp://ftp.cadsoft.de/pub/program/4.14/
+MASTER_SITES=		ftp://ftp.cadsoft.de/pub/program/${PKGVERSION}/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		rh@NetBSD.org
