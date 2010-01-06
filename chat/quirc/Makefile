@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2007/01/15 19:31:46 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2007/03/17 16:06:22 rillig Exp $
 #
 
 DISTNAME=	quirc-0.9.84
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	chat
 MASTER_SITES=	http://quirc.org/
 
@@ -12,9 +12,10 @@ COMMENT=	Stable and powerful graphical IRC client
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake automake autoconf autoreconf
+USE_TOOLS+=	gmake automake autoconf autoreconf wish
 
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}
+CONFIGURE_ARGS+=	--with-wish=${TOOLS_PATH.wish}
 MAKE_FLAGS+=	docdir=${PREFIX}/share/doc/quirc
 
 pre-configure:
