@@ -1,14 +1,17 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 23:52:35 zuntum Exp $
+@comment $NetBSD$
 bin/fmsx
-bin/rddsk
-bin/wrdsk
+share/doc/fMSX.html
+share/fmsx/CYRILLIC.FNT
 share/fmsx/DISK.ROM
 share/fmsx/FMPAC.ROM
+share/fmsx/FMPAC16.ROM
+share/fmsx/ITALIC.FNT
 share/fmsx/KANJI.ROM
 share/fmsx/MSX.ROM
 share/fmsx/MSX2.ROM
 share/fmsx/MSX2EXT.ROM
 share/fmsx/MSX2P.ROM
 share/fmsx/MSX2PEXT.ROM
+share/fmsx/MSXDOS2.ROM
 share/fmsx/PAINTER.ROM
-share/doc/html/fMSX.html
+share/fmsx/RS232.ROM
