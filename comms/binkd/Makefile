@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/06/26 09:00:03 rillig Exp $
+# $NetBSD: Makefile,v 1.28 2009/06/30 00:07:11 joerg Exp $
 #
 
 DISTNAME=		binkd098
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
-NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64
+NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 
 post-extract:
 	@cd ${WRKSRC}/mkfls/unix && ${CHMOD} +x configure mkinstalldirs && \

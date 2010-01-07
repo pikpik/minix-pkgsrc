@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/12/15 14:34:19 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2009/06/30 00:07:09 joerg Exp $
 #
 
 DISTNAME=		csound-4.23f13gbs.0
@@ -25,7 +25,8 @@ CONFIGURE_ARGS+=	--bindir=${PREFIX}/lib/csound4
 CFLAGS+=		-g
 INFO_FILES=		# PLIST
 
-NOT_FOR_PLATFORM=	*-*-alpha *-*-sparc64	# Severe LP64 problems
+# Severe LP64 problems
+NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 
 post-install:
 	cd ${PREFIX} && ${LN} -s ../lib/csound4/csound bin/csound4
