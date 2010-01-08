@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/08/26 19:58:07 sno Exp $
+# $NetBSD: Makefile,v 1.9 2009/10/21 19:18:31 drochner Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -10,6 +10,7 @@ PKGNAME=	${DISTNAME:S/totem/totem-nautilus/}
 # override Makefile.common
 PLIST_SRC=      ${.CURDIR}/PLIST
 GCONF_SCHEMAS=	# none
+CONFIGURE_ARGS+= --with-plugins=properties
 
 COMMENT+=	(nautilus plugin)
 
