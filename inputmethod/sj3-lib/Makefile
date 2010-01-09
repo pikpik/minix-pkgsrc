@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2005/12/05 20:50:24 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2006/07/05 04:55:24 jlam Exp $
 
 DISTNAME=	sj3-2.0.1.20
 PKGNAME=	sj3-lib-2.0.1.20
@@ -9,6 +9,8 @@ MASTER_SITES=	ftp://ftp.sony.co.jp/pub/unsupported/src/	\
 
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	SJ3 Japanese input method library
+
+PKG_DESTDIR_SUPPORT=	destdir
 
 USE_TOOLS+=	itools
 USE_IMAKE=	yes
