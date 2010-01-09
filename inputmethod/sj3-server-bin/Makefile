@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/07/05 04:55:24 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2007/07/04 20:54:40 jlam Exp $
 #
 
 DISTNAME=	sj3-2.0.1.20
@@ -13,6 +13,8 @@ COMMENT=	SJ3 Japanese input method server & client
 
 DISTINFO_FILE=	${.CURDIR}/../sj3-lib/distinfo
 PATCHDIR=	${.CURDIR}/../sj3-lib/patches
+
+NOT_FOR_PLATFORM+=	${LP64PLATFORMS}
 
 .include "../../mk/bsd.prefs.mk"
 
