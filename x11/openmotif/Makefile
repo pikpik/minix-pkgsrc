@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2009/10/19 21:47:22 tez Exp $
+# $NetBSD: Makefile,v 1.62 2009/12/08 20:25:30 joerg Exp $
 
 PKGVER=		2.3.1
 DISTNAME=	openmotif-${PKGVER}
@@ -56,7 +56,8 @@ CONFIGURE_ARGS+= \
 		--with-libjpeg-includes=${BUILDLINK_PREFIX.jpeg}/include \
 		--with-libjpeg-lib=${BUILDLINK_PREFIX.jpeg}/lib \
 		--with-libpng-includes=${BUILDLINK_PREFIX.png}/include \
-		--with-libpng-lib=${BUILDLINK_PREFIX.png}/lib
+		--with-libpng-lib=${BUILDLINK_PREFIX.png}/lib \
+		--x-libraries=${X11BASE}/lib
 
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ENV+=		ac_cv_func_setpgrp_void=no
