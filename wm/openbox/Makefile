@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.55 2009/12/15 12:42:04 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2009/12/24 03:13:07 snj Exp $
 
-DISTNAME=	openbox-3.4.8
-PKGREVISION=	1
+DISTNAME=	openbox-3.4.10
 CATEGORIES=	wm x11
 MASTER_SITES=	http://icculus.org/openbox/releases/
 # PR pkg/36489
@@ -42,6 +41,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXcursor/buildlink3.mk"
