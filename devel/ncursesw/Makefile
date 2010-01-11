@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/12/11 05:27:05 bjs Exp $
+# $NetBSD: Makefile,v 1.5 2008/11/05 16:12:38 wiz Exp $
 
 .include "../../devel/ncurses/Makefile.common"
 
@@ -14,6 +14,10 @@ INSTALLATION_DIRS+=	include/ncursesw
 INSTALLATION_DIRS+=	lib
 
 BUILD_TARGET=	libs
+
+.if ${OPSYS} == "SunOS"
+CXXFLAGS+=	-D_XPG5
+.endif
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/include/curses.h ${DESTDIR}${PREFIX}/include/ncursesw/ncurses.h
