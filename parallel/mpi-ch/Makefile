@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2009/12/03 13:06:56 asau Exp $
+# $NetBSD: Makefile,v 1.60 2009/12/13 18:38:10 asau Exp $
 
 DISTNAME=	mpich2-1.2.1
 CATEGORIES=	parallel
@@ -67,7 +67,7 @@ post-extract:
 .include "../../mk/bsd.prefs.mk"
 
 # FreeBSD 6 hack:
-.if $(OPSYS) == "FreeBSD"
+.if $(OPSYS) == "FreeBSD" || $(OPSYS) == "DragonFly"
 BUILDLINK_TRANSFORM+=	rm:-lrt
 .endif
 
