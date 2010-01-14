@@ -2,6 +2,7 @@
 
 DISTNAME=	acroread8	# overridden below
 PKGNAME=	acroread8-8.1.7
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://ardownload.adobe.com/pub/adobe/reader/unix/8.x/8.1.7/enu/
 
@@ -60,6 +61,9 @@ do-install:
 	( ${ECHO} n; ${ECHO} n ) | InstallDir=${DESTDIR}${PREFIX}/Acrobat8 ${WRKSRC}/INSTALL
 
 post-install:
+	cd ${DESTDIR}${PREFIX}/Acrobat8/Adobe/Reader8/Reader/GlobalPrefs && \
+	  ${BIN_PATCH} <${FILESDIR}/reader_prefs.diff && \
+	  ${RM} -f reader_prefs.orig
 	cd ${DESTDIR}${PREFIX}/Acrobat8/Adobe/Reader8/bin && \
 	  ${BIN_PATCH} <${FILESDIR}/acroread.diff && \
 	  ${SED} -e 's:@PREFIX@:${PREFIX}:' \
