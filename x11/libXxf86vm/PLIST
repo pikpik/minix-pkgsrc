@@ -1,4 +1,5 @@
 @comment $NetBSD$
+include/X11/extensions/xf86vmode.h
 lib/libXxf86vm.la
 lib/pkgconfig/xxf86vm.pc
 man/man3/XF86VM.3
