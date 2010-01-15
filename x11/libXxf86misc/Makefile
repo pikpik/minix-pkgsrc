@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2007/07/27 23:49:59 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:16 tnn Exp $
 #
 
-DISTNAME=		libXxf86misc-1.0.1
+DISTNAME=		libXxf86misc-1.0.2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
