@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2006/03/04 21:28:51 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/02 03:48:36 jlam Exp $
 
 DISTNAME=	9e
 PKGNAME=	9e-1.0
 CATEGORIES=	plan9 archivers
-MASTER_SITES=	http://www.eecs.harvard.edu/~wkj/Software/9e/
+MASTER_SITES=	http://distfiles.aydogan.net/archivers/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.eecs.harvard.edu/~wkj/Software/9e/
