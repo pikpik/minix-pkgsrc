@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2008/10/17 07:20:22 gson Exp $
+# $NetBSD: Makefile,v 1.39 2009/05/20 00:58:15 wiz Exp $
 
 DISTNAME=	sdcc-src-2.8.0
 PKGNAME=	${DISTNAME:S/-src//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sdcc/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,6 +10,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sdcc.sourceforge.net/
 COMMENT=	Cross compile 8051 code
+
+DEPENDS+=	gputils-[0-9]*:../../devel/gputils
 
 USE_LANGUAGES=	c c++
 
