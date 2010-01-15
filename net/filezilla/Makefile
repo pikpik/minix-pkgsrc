@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.8 2009/11/11 18:30:38 zafer Exp $
 #
 
-VERSION=	3.3.0.1
+VERSION=	3.3.1
 DISTNAME=	FileZilla_${VERSION}_src
 PKGNAME=	filezilla-${VERSION}
 CATEGORIES=	net x11
@@ -14,6 +14,8 @@ COMMENT=	FTP, FTPS and SFTP client with intuitive GUI
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	gnutls>=2.8.3:../../security/gnutls
+DEPENDS+=	xdg-utils-[0-9]*:../../misc/xdg-utils
+
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
