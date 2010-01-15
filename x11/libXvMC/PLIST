@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/01/14 09:56:50 joerg Exp $
+@comment $NetBSD$
 include/X11/extensions/XvMClib.h
 lib/libXvMC.la
 lib/libXvMCW.la
 lib/pkgconfig/xvmc.pc
+share/doc/libXvMC/XvMC_API.txt
