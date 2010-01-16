@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.134 2009/10/16 12:59:08 reed Exp $
+# $NetBSD: Makefile,v 1.135 2009/12/30 12:06:44 abs Exp $
 #
 
 COMMENT=	Editors
@@ -73,6 +73,15 @@ SUBDIR+=	notecase
 SUBDIR+=	nvi
 SUBDIR+=	nvi-m17n
 SUBDIR+=	obby
+SUBDIR+=	p5-Acme-Padre-PlayCode
+SUBDIR+=	p5-PPIx-EditorTools
+SUBDIR+=	p5-Padre
+SUBDIR+=	p5-Padre-Plugin-Kate
+SUBDIR+=	p5-Padre-Plugin-Nopaste
+SUBDIR+=	p5-Padre-Plugin-PerlCritic
+SUBDIR+=	p5-Padre-Plugin-PerlTidy
+SUBDIR+=	p5-Padre-Plugin-Vi
+SUBDIR+=	p5-Padre-Plugin-XS
 SUBDIR+=	pico
 SUBDIR+=	poedit
 SUBDIR+=	rox-edit
