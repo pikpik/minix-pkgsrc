@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/12/04 22:35:00 seb Exp $
+# $NetBSD: Makefile,v 1.2 2009/12/15 13:40:22 wiz Exp $
 
 DISTNAME=	ack-1.92
 PKGNAME=	p5-${DISTNAME}
@@ -15,9 +15,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/ack/.packlist
 
-DEPENDS+=	p5-File-Next-[0-9]*:../../devel/p5-File-Next
+DEPENDS+=	p5-File-Next>=0.4:../../devel/p5-File-Next
 DEPENDS+=	p5-Term-ANSIColor-[0-9]*:../../devel/p5-Term-ANSIColor
-BUILD_DEPENDS+=	p5-Test-Harness>=2.5:../../devel/p5-Test-Harness
+BUILD_DEPENDS+=	{perl>=5.8.8,p5-Test-Harness>=2.5}:../../devel/p5-Test-Harness
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
