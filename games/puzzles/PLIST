@@ -9,8 +9,10 @@ bin/flip
 bin/galaxies
 bin/guess
 bin/inertia
+bin/keen
 bin/lightup
 bin/loopy
+bin/magnets
 bin/map
 bin/mines
 bin/netgame
@@ -19,10 +21,12 @@ bin/pattern
 bin/pegs
 bin/rect
 bin/samegame
+bin/singles
 bin/sixteen
 bin/slant
 bin/solo
 bin/tents
+bin/towers
 bin/twiddle
 bin/unequal
 bin/untangle
