@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.679 2010/01/06 11:39:30 wiz Exp $
+# $NetBSD: Makefile,v 1.680 2010/01/16 10:53:54 abs Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -371,6 +371,7 @@ SUBDIR+=	p5-Kwiki-Wikiwyg
 SUBDIR+=	p5-Kwiki-Zipcode
 SUBDIR+=	p5-LWP-Authen-Negotiate
 SUBDIR+=	p5-LWP-Authen-Wsse
+SUBDIR+=	p5-LWP-Online
 SUBDIR+=	p5-LWP-UserAgent-Determined
 SUBDIR+=	p5-LWPx-ParanoidAgent
 SUBDIR+=	p5-MasonX-Request-WithApacheSession
