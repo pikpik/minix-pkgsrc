@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/02/22 19:26:59 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/20 01:09:31 joerg Exp $
 #
 
 DISTNAME=		socket++-1.12.10
@@ -15,10 +15,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 INFO_FILES=		# PLIST
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
-USE_TOOLS+=		automake14
-AUTOCONF_REQD=		2.50
+USE_TOOLS+=		automake
 GNU_CONFIGURE=		YES
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake makeinfo
 TEST_DIRS=		${WRKSRC}/test
 TEST_TARGET=		check
 
