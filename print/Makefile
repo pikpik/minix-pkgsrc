@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.311 2010/01/16 03:55:04 minskim Exp $
+# $NetBSD: Makefile,v 1.312 2010/01/16 04:32:17 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -322,6 +322,7 @@ SUBDIR+=	tex-subfig-doc
 SUBDIR+=	tex-subfigure
 SUBDIR+=	tex-subfigure-doc
 SUBDIR+=	tex-tetex
+SUBDIR+=	tex-texlive-scripts
 SUBDIR+=	tex-titlesec
 SUBDIR+=	tex-titlesec-doc
 SUBDIR+=	tex-tools
