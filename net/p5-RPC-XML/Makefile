@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2009/07/18 21:27:19 sno Exp $
+# $NetBSD: Makefile,v 1.7 2009/09/13 19:25:53 sno Exp $
 
-DISTNAME=	RPC-XML-0.69
+DISTNAME=	RPC-XML-0.72
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	net www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=RPC/}
@@ -13,6 +13,7 @@ LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	{perl>=5.10,p5-PathTools>=0.8}:../../devel/p5-PathTools
 DEPENDS+=	{perl>=5.10,p5-Scalar-List-Utils>=1.2}:../../devel/p5-Scalar-List-Utils
+DEPENDS+=	p5-XML-LibXML>=1.70:../../textproc/p5-XML-LibXML
 DEPENDS+=	p5-XML-Parser>=2.31:../../textproc/p5-XML-Parser
 DEPENDS+=	p5-libwww>=5.801:../../www/p5-libwww
 
