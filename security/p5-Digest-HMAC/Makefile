@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/11/05 17:35:58 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2008/10/19 19:18:46 he Exp $
 #
 
 DISTNAME=		Digest-HMAC-1.01
@@ -11,6 +11,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Digest/}
 MAINTAINER=		heinz@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Digest-HMAC/
 COMMENT=		Perl5 module for HMAC
+LICENSE=		${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

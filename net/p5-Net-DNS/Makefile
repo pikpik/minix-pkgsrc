@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2009/02/22 16:38:46 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2009/03/07 15:34:40 seb Exp $
 
 DISTNAME=		Net-DNS-0.65
 PKGREVISION=		1
@@ -11,6 +11,7 @@ MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}		\
 MAINTAINER=		heinz@NetBSD.org
 HOMEPAGE=		http://www.net-dns.org/
 COMMENT=		Perl5 module for DNS resolution
+LICENSE=		${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
