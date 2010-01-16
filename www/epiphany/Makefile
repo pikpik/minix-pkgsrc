@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.98 2009/08/26 19:56:45 sno Exp $
+# $NetBSD: Makefile,v 1.99 2009/12/15 22:16:10 joerg Exp $
 #
 
-DISTNAME=	epiphany-2.26.3
-PKGREVISION=	3
+DISTNAME=	epiphany-2.28.2
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/epiphany/2.26/}
 EXTRACT_SUFX=	.tar.bz2
@@ -39,7 +38,9 @@ BUILDLINK_API_DEPENDS.libgnome+=	libgnome>=2.14.0
 .include "../../devel/libgnome/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libgnomeui+=	libgnomeui>=2.14.0
 .include "../../devel/libgnomeui/buildlink3.mk"
-.include "../../devel/xulrunner/buildlink3.mk"
+.include "../../devel/nss/buildlink3.mk"
+.include "../../www/webkit-gtk/buildlink3.mk"
+.include "../../graphics/gnome-icon-theme/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../net/ORBit2/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
