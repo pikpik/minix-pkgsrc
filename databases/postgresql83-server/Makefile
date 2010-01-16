@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/12/15 21:33:48 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/12/16 14:23:13 adam Exp $
 
 PKGNAME=	postgresql83-server-${BASE_VERS}
 COMMENT=	PostgreSQL database server programs
@@ -46,7 +46,7 @@ DL_LIBS+=	-lltdl
 .endif
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.postgresql83-server
-PKG_SUPPORTED_OPTIONS=	pam
+PKG_SUPPORTED_OPTIONS=	ldap pam
 .include "../../databases/postgresql83/options.mk"
 
 # PGUSER	username of the database administrator
