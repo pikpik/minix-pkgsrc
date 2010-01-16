@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2009/05/19 08:59:17 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2009/08/26 19:57:45 sno Exp $
 
 DISTNAME=	lcms-1.18a
 # 1.18a is a bugfix semi-release after 1.18, and it's just 1.18 with a
@@ -28,9 +28,6 @@ TEST_TARGET=		check
 # lcms does not need zlib, but will look for it and link it to tifficc
 # if present.  Therefore, we don't enjoin lcms from finding zlib, but
 # don't include it via bl3.
-
-# Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 PKGCONFIG_OVERRIDE=	lcms.pc.in
 

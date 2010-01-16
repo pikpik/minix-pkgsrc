@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.65 2008/03/26 13:29:58 wiz Exp $
+# $NetBSD: Makefile.common,v 1.66 2008/05/25 21:42:20 joerg Exp $
 #
 # used by databases/mysql4-server/Makefile
 
@@ -72,9 +72,6 @@ CONFIGURE_ARGS+=	--with-extra-charsets=${MYSQL_EXTRA_CHARSET:Q}
 	${OPSYS} != "SunOS" && ${OPSYS} != "Darwin"
 CONFIGURE_ARGS+=	--enable-assembler
 .endif
-
-# Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 CPPFLAGS+=		-Dunix
 CFLAGS+=		-DUSE_OLD_FUNCTIONS # 3.23.x compat

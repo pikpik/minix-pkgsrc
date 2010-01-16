@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2007/10/09 20:13:40 hubertf Exp $
+# $NetBSD: Makefile,v 1.33 2008/07/14 12:55:57 joerg Exp $
 #
 
 DISTNAME=	madplay-0.15.2b
@@ -16,9 +16,6 @@ USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_TOOLS+=		msgfmt
-
-# Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 .include "options.mk"
 

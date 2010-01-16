@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2009/12/15 19:15:38 drochner Exp $
+# $NetBSD: Makefile,v 1.60 2009/12/15 20:17:33 drochner Exp $
 #
 
 DISTNAME=	gpgme-1.1.8
@@ -32,9 +32,6 @@ SUBST_SED.pthread+=	-e 's,@PTHREAD_CFLAGS@,${PTHREAD_CFLAGS},g'
 SUBST_STAGE.pthread=	post-patch
 
 LIBS.SunOS+=		-lnsl -lsocket
-
-# Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 # getenv_r is not detected correctly. It will be found
 # in either base system or librfuncs

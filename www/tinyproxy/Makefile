@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/01/18 05:09:54 tnn Exp $
+# $NetBSD: Makefile,v 1.25 2009/07/07 18:50:54 joerg Exp $
 #
 
 DISTNAME=	tinyproxy-1.6.2
@@ -32,9 +32,6 @@ FILES_SUBST+=		TINYPROXY_GROUP=${TINYPROXY_GROUP:Q}
 
 CONFIGURE_ARGS+=	--with-config=${PKG_SYSCONFDIR}/tinyproxy.conf
 CONFIGURE_ARGS+=	--enable-transparent-proxy
-
-# Avoid an ICE in gcc2 on sparc64
-CONFIGURE_ENV+=		F77=${FALSE:Q}
 
 .include "options.mk"
 
