@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2008/01/09 21:17:32 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2009/07/19 18:18:09 tnn Exp $
 #
 
 DISTNAME=		fam-2.7.0
@@ -12,6 +12,7 @@ CONFLICTS+=		gamin-[0-9]*
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://oss.sgi.com/projects/fam/
 COMMENT=		File Alteration Monitor
+LICENSE=		gnu-gpl-v2 AND gnu-lgpl-v2.1 # fam and libfam
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir

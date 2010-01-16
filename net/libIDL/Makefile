@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2009/03/19 11:29:17 drochner Exp $
+# $NetBSD: Makefile,v 1.50 2010/01/16 17:57:38 wiz Exp $
 
 DISTNAME=	libIDL-0.8.13
 CATEGORIES=	net gnome
@@ -7,6 +7,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libIDL/0.8/}
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	CORBA Interface Definition Language parser
+LICENSE=	gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir

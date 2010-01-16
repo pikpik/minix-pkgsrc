@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2008/10/19 19:18:20 he Exp $
+# $NetBSD: Makefile,v 1.46 2009/06/01 19:38:57 sno Exp $
 
 DISTNAME=	MailTools-2.04
 PKGNAME=	p5-${DISTNAME}
@@ -10,6 +10,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}
 MAINTAINER=	rhaen@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/MailTools/
 COMMENT=	Perl5 modules related to mail applications
+LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
