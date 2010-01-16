@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2008/02/05 14:07:05 reed Exp $
+# $NetBSD: Makefile,v 1.23 2008/03/13 17:59:27 joerg Exp $
 #
 
-DISTNAME=	pstree-2.32
-PKGREVISION=	1
+DISTNAME=	pstree-2.33
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.thp.uni-duisburg.de/pub/source/
 #		http://fresh.t-systems-sfr.com/unix/src/misc/
