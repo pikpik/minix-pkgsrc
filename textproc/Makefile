@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.509 2009/12/02 13:49:18 fhajny Exp $
+# $NetBSD: Makefile,v 1.510 2009/12/04 22:36:03 seb Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -243,6 +243,7 @@ SUBDIR+=	p5-PDF
 SUBDIR+=	p5-PDF-API2
 SUBDIR+=	p5-PDF-Create
 SUBDIR+=	p5-PPI-HTML
+SUBDIR+=	p5-Pod-Abstract
 SUBDIR+=	p5-Pod-Coverage
 SUBDIR+=	p5-Pod-Escapes
 SUBDIR+=	p5-Pod-POM
@@ -262,11 +263,13 @@ SUBDIR+=	p5-String-CRC32
 SUBDIR+=	p5-String-Koremutake
 SUBDIR+=	p5-String-RewritePrefix
 SUBDIR+=	p5-String-ShellQuote
+SUBDIR+=	p5-Syntax-Highlight-Engine-Kate
 SUBDIR+=	p5-Template-Declare
 SUBDIR+=	p5-Template-Plugin-Autoformat
 SUBDIR+=	p5-Template-Plugin-CSV
 SUBDIR+=	p5-Template-Plugin-Latex
 SUBDIR+=	p5-Template-Plugin-Number-Format
+SUBDIR+=	p5-Template-Tiny
 SUBDIR+=	p5-Template-Plugin-YAML
 SUBDIR+=	p5-Text-Aspell
 SUBDIR+=	p5-Text-Autoformat
@@ -286,6 +289,7 @@ SUBDIR+=	p5-Text-Diff-Parser
 SUBDIR+=	p5-Text-DoubleMetaphone
 SUBDIR+=	p5-Text-Emoticon
 SUBDIR+=	p5-Text-Emoticon-MSN
+SUBDIR+=	p5-Text-FindIndent
 SUBDIR+=	p5-Text-Format
 SUBDIR+=	p5-Text-Glob
 SUBDIR+=	p5-Text-Kakasi
