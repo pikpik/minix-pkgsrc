@@ -1,4 +1,4 @@
-#	$NetBSD$
+#	$NetBSD: setup.mk,v 1.1 2010/01/17 01:41:33 dholland Exp $
 
 KBD= unix.kbd
 
@@ -8,9 +8,11 @@ KBD= unix.kbd
 DESTDIR?=# empty
 PREFIX?=/usr/local
 
+PKGMANDIR?=man
+
 BINDIR?=$(PREFIX)/bin
-MAN1DIR?=$(PREFIX)/man/man1
-MAN5DIR?=$(PREFIX)/man/man5
+MAN1DIR?=$(PREFIX)/$(PKGMANDIR)/man1
+MAN5DIR?=$(PREFIX)/$(PKGMANDIR)/man5
 SHAREDIR?=$(PREFIX)/share/tn3270
 
 BINMODE?=755
@@ -39,5 +41,8 @@ INSTALLDIR=$(INSTALL) -d
 INSTALLBIN?=$(INSTALL) -c -m $(BINMODE)
 INSTALLMAN?=$(INSTALL) -c -m $(MANMODE)
 INSTALLFILE?=$(INSTALL) -c -m $(FILESMODE)
+
+############################################################
+# substitutions
 
 CFLAGS+=-DPATH_MAP3270=\"$(SHAREDIR)/map3270\"
