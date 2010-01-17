@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.22 2007/09/02 11:54:08 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2010/01/17 08:00:47 dholland Exp $
 
 DISTNAME=		hercules-2.11
 PKGREVISION=		4
 CATEGORIES=		emulators
-MASTER_SITES=		http://www.conmicro.cx/hercules/
+MASTER_SITES=		http://www.hercules-390.org/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.conmicro.cx/hercules/
+HOMEPAGE=		http://www.hercules-390.org/
 COMMENT=		S370 emulator
 
 PKG_DESTDIR_SUPPORT=	user-destdir
