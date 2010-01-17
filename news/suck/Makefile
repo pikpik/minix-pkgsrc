@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2008/01/18 05:08:53 tnn Exp $
+# $NetBSD: Makefile,v 1.28 2009/06/30 00:07:22 joerg Exp $
 #
 
 DISTNAME=	suck-4.3.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/news/transport/}
 

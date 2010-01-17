@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.14 2008/10/13 22:32:54 bad Exp $
+# $NetBSD: buildlink3.mk,v 1.15 2009/03/20 19:25:20 joerg Exp $
 
 BUILDLINK_TREE+=	nessus-libraries
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	nessus-libraries
 NESSUS_LIBRARIES_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.nessus-libraries+=	nessus-libraries>=2.2.11
-BUILDLINK_ABI_DEPENDS.nessus-libraries?=	nessus-libraries>=2.2.11nb1
+BUILDLINK_ABI_DEPENDS.nessus-libraries?=	nessus-libraries>=2.2.11nb2
 BUILDLINK_PKGSRCDIR.nessus-libraries?=	../../security/nessus-libraries
 
 .include "../../devel/zlib/buildlink3.mk"

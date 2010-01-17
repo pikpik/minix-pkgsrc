@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/05/30 00:16:10 obache Exp $
 #
 
 DISTNAME=	libnxml-0.18.3
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.autistici.org/bakunin/libnxml/
 

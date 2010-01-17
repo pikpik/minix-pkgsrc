@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.13 2009/08/14 14:09:28 joerg Exp $
 #
 
 DISTNAME=		Mixminion-0.0.8alpha3
 PKGNAME=		${DISTNAME:S/M/m/}
+PKGREVISION=		1
 CATEGORIES=		security mail
 MASTER_SITES=		http://mixminion.net/dist/0.0.8alpha3/
 

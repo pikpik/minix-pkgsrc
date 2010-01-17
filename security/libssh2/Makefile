@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/11/15 20:07:45 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2009/11/20 16:45:30 drochner Exp $
 #
 
 DISTNAME=	libssh2-1.2.2
+PKGREVISION=	1
 CATEGORIES=	security
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libssh2/}
 MASTER_SITES=	http://www.libssh2.org/download/

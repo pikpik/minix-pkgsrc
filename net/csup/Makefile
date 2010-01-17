@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/12/02 08:32:24 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2008/12/23 11:22:05 obache Exp $
 #
 
 DISTNAME=	csup-snap-20070216
 PKGNAME=	${DISTNAME:S/-snap//}
+PKGREVISION=	1
 CATEGORIES=	net devel
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 

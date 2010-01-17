@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2009/08/23 14:14:48 zafer Exp $
+# $NetBSD: Makefile,v 1.26 2009/10/04 17:31:32 zafer Exp $
 
 DISTNAME=		openntpd-3.9p1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.openbsd.org/pub/OpenBSD/OpenNTPD/ \
 			ftp://ftp3.usa.openbsd.org/pub/OpenBSD/OpenNTPD/ \

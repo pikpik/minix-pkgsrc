@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.40 2008/06/20 01:09:43 joerg Exp $
+# $NetBSD: Makefile,v 1.41 2009/05/22 18:09:17 zafer Exp $
 
 DISTNAME=		sitecopy-0.16.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_BACKUP}
 

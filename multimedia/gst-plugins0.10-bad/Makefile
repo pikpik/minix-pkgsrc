@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/04/08 19:04:54 drochner Exp $
+# $NetBSD: Makefile,v 1.10 2009/05/25 15:41:34 drochner Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,6 +6,7 @@ USE_LANGUAGES=		c c++
 
 .include "Makefile.common"
 
+PKGREVISION=		1
 COMMENT+=		bad plugins
 
 # bzip2 is likely present anyway, make it default

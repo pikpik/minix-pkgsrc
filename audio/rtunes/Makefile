@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2008/01/18 05:06:21 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2008/02/28 11:58:47 rillig Exp $
 #
 
 DISTNAME=	rtunes-snap-20071122
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2

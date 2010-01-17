@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2008/01/18 05:08:41 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2008/01/29 11:31:58 joerg Exp $
 
 DISTNAME=	ctorrent-1.3.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ctorrent/}
 EXTRACT_SUFX=	.tar.bz2

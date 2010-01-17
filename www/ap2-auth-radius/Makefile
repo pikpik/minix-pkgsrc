@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/01/18 05:09:47 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2009/07/17 18:00:25 adrianp Exp $
 
 DISTNAME=	mod_auth_radius
 PKGNAME=	${APACHE_PKG_PREFIX}-auth-radius-1.5.7
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	www databases
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/radius/
 

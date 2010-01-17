@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2008/08/12 10:16:54 obache Exp $
+# $NetBSD: Makefile,v 1.38 2009/05/14 23:00:46 obache Exp $
 
 DISTNAME=	cyrus-sasl-2.1.23
 PKGNAME=	${DISTNAME:S/sasl/saslauthd/}
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/OLD-VERSIONS/sasl/

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.13 2008/01/18 05:06:24 tnn Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2009/03/20 19:24:01 joerg Exp $
 
 BUILDLINK_TREE+=	jabberd
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	jabberd
 JABBERD_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.jabberd+=	jabberd>=1.4.2
-BUILDLINK_ABI_DEPENDS.jabberd?=	jabberd>=1.4.2nb6
+BUILDLINK_ABI_DEPENDS.jabberd?=	jabberd>=1.4.2nb7
 BUILDLINK_PKGSRCDIR.jabberd?=	../../chat/jabberd
 
 .include "../../security/openssl/buildlink3.mk"

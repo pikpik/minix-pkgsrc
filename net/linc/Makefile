@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.31 2008/01/18 05:08:44 tnn Exp $
+# $NetBSD: Makefile,v 1.32 2008/07/14 12:56:10 joerg Exp $
 #
 
 DISTNAME=		linc-1.1.1
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/linc/1.1/}
 EXTRACT_SUFX=		.tar.bz2

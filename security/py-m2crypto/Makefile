@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2008/06/12 02:14:45 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2009/02/09 21:09:22 joerg Exp $
 #
 
 DISTNAME=		m2crypto-0.13
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		security python
 MASTER_SITES=		http://sandbox.rulemaker.net/ngps/Dist/
 EXTRACT_SUFX=		.zip
