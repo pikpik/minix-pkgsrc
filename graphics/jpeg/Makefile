@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2007/08/01 11:47:15 obache Exp $
+# $NetBSD: Makefile,v 1.38 2009/08/26 16:50:46 sno Exp $
 #
 
-DISTNAME=		jpegsrc.v7
-PKGNAME=		jpeg-7
+DISTNAME=		jpegsrc.v8
+PKGNAME=		jpeg-8
 CATEGORIES=		graphics
 MASTER_SITES=		http://www.ijg.org/files/
 
@@ -17,15 +17,14 @@ WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
-INSTALLATION_DIRS=	bin lib include ${PKGMANDIR}/man1
+INSTALLATION_DIRS=	bin include share/doc/jpeg
 
 post-extract:
 	${CP} ${FILESDIR}/jpegexiforient.c ${WRKSRC}
 
 post-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/exifautotran ${DESTDIR}${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/jpeg
-	${INSTALL_DATA} ${WRKSRC}/*.txt ${DESTDIR}${PREFIX}/share/doc/jpeg
 	${INSTALL_DATA} ${WRKSRC}/jpegint.h ${DESTDIR}${PREFIX}/include
+	${INSTALL_DATA} ${WRKSRC}/*.txt ${DESTDIR}${PREFIX}/share/doc/jpeg
 
 .include "../../mk/bsd.pkg.mk"
