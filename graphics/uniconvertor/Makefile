@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/12/11 21:42:12 drochner Exp $
 #
 
 DISTNAME=	uniconvertor-1.1.4
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://sk1project.org/downloads/uniconvertor/v1.1.4/
 

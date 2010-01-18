@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2009/08/26 20:22:52 sno Exp $
+# $NetBSD: Makefile,v 1.19 2009/09/14 18:52:03 asau Exp $
 #
 
 PKGNAME=		${DISTNAME:C/-/-nox11-/}
+PKGREVISION=		1
 
 CONFLICTS+=		gnuplot-[0-9]*
 

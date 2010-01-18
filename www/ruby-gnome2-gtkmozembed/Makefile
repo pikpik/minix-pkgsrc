@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2009/08/26 19:58:27 sno Exp $
+# $NetBSD: Makefile,v 1.7 2009/10/12 03:09:32 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gtkmozembed-${VERSION}
 COMMENT=		Ruby binding of gtkmozembed
+PKGREVISION=		1
 CATEGORIES=		www
 
 PKG_DESTDIR_SUPPORT=	user-destdir

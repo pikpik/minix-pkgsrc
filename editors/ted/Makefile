@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2009/08/26 19:57:26 sno Exp $
+# $NetBSD: Makefile,v 1.36 2009/09/11 12:55:44 joerg Exp $
 
 DISTNAME=	ted-2.16.src
 PKGNAME=	ted-2.16
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.46 2009/08/26 19:57:14 sno Exp $
+# $NetBSD: Makefile,v 1.47 2009/11/06 02:29:59 dmcmahill Exp $
 #
 
 DISTNAME=	pcb-20091103
+PKGREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pcb/}
 
