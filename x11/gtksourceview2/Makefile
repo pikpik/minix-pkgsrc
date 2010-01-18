@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/08/26 19:56:57 sno Exp $
+# $NetBSD: Makefile,v 1.17 2009/10/21 16:47:17 drochner Exp $
 #
 
 DISTNAME=	gtksourceview-${DISTVER}
@@ -23,7 +23,7 @@ PKGCONFIG_OVERRIDE=	gtksourceview-2.0.pc.in
 
 CONFIGURE_ARGS+=	--disable-build-tests
 
-DISTVER=		2.8.1
+DISTVER=		2.8.2
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
