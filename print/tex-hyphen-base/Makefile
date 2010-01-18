@@ -1,8 +1,8 @@
 # $NetBSD: Makefile,v 1.1.1.1 2009/03/06 17:53:40 minskim Exp $
-# TeX Live Revision 11176
+# TeX Live Revision 14587
 
 DISTNAME=	hyphen-base
-PKGNAME=	tex-${DISTNAME}-2008.11176
+PKGNAME=	tex-${DISTNAME}-2009.14587
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	TeX hyphenation patterns for English
@@ -18,5 +18,5 @@ CONF_FILES+=	${PREFIX}/share/texmf/tex/generic/config/language.def \
 TEX_TEXMF_DIRS+=	${PKG_SYSCONFDIR}
 TEX_TEXMF_DIRS+=	${PREFIX}/share/texmf
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
