@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2010/01/17 11:40:16 zafer Exp $
+# $NetBSD: Makefile,v 1.102 2010/01/18 09:59:30 wiz Exp $
 #
 
 DISTNAME=	epiphany-2.28.2
@@ -44,6 +44,7 @@ BUILDLINK_API_DEPENDS.libgnomeui+=	libgnomeui>=2.14.0
 .include "../../graphics/gnome-icon-theme/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../net/ORBit2/buildlink3.mk"
+.include "../../net/libsoup24/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
