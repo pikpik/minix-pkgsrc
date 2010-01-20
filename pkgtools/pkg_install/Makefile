@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.165 2010/01/17 12:02:37 wiz Exp $
+# $NetBSD: Makefile,v 1.166 2010/01/17 13:24:27 tron Exp $
 
 # Notes to package maintainers:
 #
@@ -24,7 +24,7 @@ CONFLICTS+=		audit-packages-[0-9]*
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
-CONFIGURE_ARGS+=	--with-pkgdbdir=${PKG_DBDIR:Q}
+CONFIGURE_ARGS+=	--with-pkgdbdir=/var/db/pkg  # ${PKG_DBDIR:Q}
 
 USE_FEATURES=		nbcompat
 
