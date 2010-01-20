@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/02 11:24:06 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2009/08/26 19:58:10 sno Exp $
 #
 
-DISTNAME=	gssdp-0.6.4
-PKGREVISION=	1
+DISTNAME=	gssdp-0.7.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.gupnp.org/sources/gssdp/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gupnp.org/
 COMMENT=	SSDP library
+LICENSE=	gnu-lgpl-v2
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
@@ -18,6 +18,5 @@ PKG_DESTDIR_SUPPORT= user-destdir
 PKGCONFIG_OVERRIDE+=	gssdp-1.0.pc.in
 
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/libglade/buildlink3.mk"
 .include "../../net/libsoup24/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
