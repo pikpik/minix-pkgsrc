@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2008/08/24 10:21:33 wiz Exp $
+# $NetBSD: Makefile,v 1.71 2009/08/08 16:01:31 wiz Exp $
 
 DISTNAME=	unzip552
 PKGNAME=	unzip-5.52
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.info-zip.org/pub/infozip/UnZip.html
 COMMENT=	List, test and extract compressed files in a ZIP archive
+LICENSE=	info-zip
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir

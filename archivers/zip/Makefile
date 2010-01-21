@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2009/09/18 14:01:32 sketch Exp $
+# $NetBSD: Makefile,v 1.57 2009/11/01 18:55:12 wiz Exp $
 
 DISTNAME=	zip30
 PKGNAME=	zip-3.0
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.info-zip.org/pub/infozip/Zip.html
 COMMENT=	Create/update ZIP files compatible with pkzip
+LICENSE=	info-zip
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir

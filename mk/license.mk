@@ -113,6 +113,9 @@ DEFAULT_ACCEPTABLE_LICENSES= \
 	zpl \
 	python-software-foundation
 
+# not approved by OSI, derived from BSD
+DEFAULT_ACCEPTABLE_LICENSES+=	info-zip
+
 ##### Variant spellings
 
 .if defined(ACCEPTABLE_LICENCES) && !defined(ACCEPTABLE_LICENSES)
