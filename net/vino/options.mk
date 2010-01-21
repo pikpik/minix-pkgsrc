@@ -1,8 +1,7 @@
-# $NetBSD: options.mk,v 1.1 2007/08/14 09:30:56 obache Exp $
+# $NetBSD: options.mk,v 1.2 2008/12/21 11:00:37 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.vino
 PKG_SUPPORTED_OPTIONS+=	avahi inet6
-PKG_SUGGESTED_OPTIONS+=	avahi
 
 .include "../../mk/bsd.options.mk"
 
