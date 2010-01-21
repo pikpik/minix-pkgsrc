@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2009/11/10 18:35:13 wiz Exp $
+# $NetBSD: Makefile,v 1.65 2010/01/20 10:01:19 wiz Exp $
 
 DISTNAME=	gc-7.1
 PKGNAME=	${DISTNAME:S/gc/boehm-gc/}
@@ -33,6 +33,10 @@ EXTRACT_ELEMENTS=	-u
 
 .if ${MACHINE_ARCH} == "mipsel"
 CFLAGS+=		-D__MIPSEL__
+.endif
+
+.if ${OPSYS} == "Darwin" && empty(OS_VERSION:M[1-9].*)
+CFLAGS+=		-D_XOPEN_SOURCE
 .endif
 
 .include "options.mk"
