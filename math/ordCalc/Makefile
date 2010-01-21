@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/09/18 14:09:26 is Exp $
 #
 
-ORDCALCVER=	0.1
+ORDCALCVER=	0.2
 PKGNAME=	ordCalc-${ORDCALCVER}
 DISTNAME=	ordCalc_${ORDCALCVER}
 CATEGORIES=	math
@@ -20,6 +20,7 @@ USE_LIBTOOL=	yes
 PKG_DESTDIR_SUPPORT= user-destdir
 
 BUILD_TARGET=	EXE
+TEST_TARGET=	TEST
 
 DOCS=           ${DESTDIR}${PREFIX}/share/doc/ordCalc
 
