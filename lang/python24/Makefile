@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2009/09/12 17:47:17 drochner Exp $
+# $NetBSD: Makefile,v 1.51 2010/01/17 12:02:22 wiz Exp $
 
 DISTNAME=	Python-2.4.5
 PKGNAME=	python24-2.4.5
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	recht@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
+LICENSE=	python-software-foundation
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
