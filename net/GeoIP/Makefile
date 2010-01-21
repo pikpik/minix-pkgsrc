@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/05/19 08:59:26 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/10/18 19:37:51 zafer Exp $
 
 DISTNAME=	GeoIP-1.4.6
 PKGREVISION=	1
@@ -8,8 +8,7 @@ MASTER_SITES=	http://geolite.maxmind.com/download/geoip/api/c/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.maxmind.com/download/geoip/api/c/
 COMMENT=	Find the country from any IP address
-#LICENSE=	gnu-lgpl-v2.1
-#LICENSE+=	gnu-gpl-v2	#  md5.c and types.h, from GNUPG
+LICENSE=	gnu-lgpl-v2.1 AND gnu-gpl-v2 #  md5.c and types.h, from GNUPG
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
