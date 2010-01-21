@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.547 2009/12/17 11:33:01 jnemeth Exp $
+# $NetBSD: Makefile,v 1.548 2010/01/16 07:12:23 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -197,6 +197,7 @@ SUBDIR+=	impress
 SUBDIR+=	inkscape
 SUBDIR+=	ivtools
 SUBDIR+=	jasper
+SUBDIR+=	jbigkit
 SUBDIR+=	jhead
 SUBDIR+=	jpeg
 SUBDIR+=	jpeg2ps
