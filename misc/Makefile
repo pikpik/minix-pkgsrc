@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.333 2009/11/08 07:48:12 wiz Exp $
+# $NetBSD: Makefile,v 1.334 2009/11/29 07:33:51 obache Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -119,6 +119,7 @@ SUBDIR+=	koffice-l10n-fi
 SUBDIR+=	koffice-l10n-fr
 SUBDIR+=	koffice-l10n-pl
 SUBDIR+=	kp
+SUBDIR+=	kseg
 SUBDIR+=	latin-words-bin
 SUBDIR+=	less
 SUBDIR+=	libcdio
