@@ -1,4 +1,4 @@
-/*	$NetBSD: main.c,v 1.28 2009/09/11 18:00:13 joerg Exp $	*/
+/*	$NetBSD: main.c,v 1.29 2010/01/20 22:34:47 jmmv Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -7,7 +7,7 @@
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-__RCSID("$NetBSD: main.c,v 1.28 2009/09/11 18:00:13 joerg Exp $");
+__RCSID("$NetBSD: main.c,v 1.29 2010/01/20 22:34:47 jmmv Exp $");
 
 /*
  *
@@ -67,7 +67,6 @@ main(int argc, char **argv)
 {
 	char *CheckPkg = NULL;
 	char *BestCheckPkg = NULL;
-	const char *pkgdb = NULL;
 	lpkg_t *lpp;
 	int     ch;
 	int	rc;
@@ -127,7 +126,7 @@ main(int argc, char **argv)
 			break;
 
 		case 'K':
-			pkgdb = optarg;
+			pkgdb_set_dir(optarg, 3);
 			break;
 
 		case 'k':
@@ -214,9 +213,6 @@ main(int argc, char **argv)
 	argv += optind;
 
 	pkg_install_config();
-
-	if (pkgdb != NULL)
-		_pkgdb_setPKGDB_DIR(pkgdb);
 
 	if (argc == 0 && !Flags && !CheckPkg) {
 		/* No argument or relevant flags specified - assume -I */
@@ -305,7 +301,7 @@ main(int argc, char **argv)
 			} else {
 				const char   *dbdir;
 
-				dbdir = _pkgdb_getPKGDB_DIR();
+				dbdir = pkgdb_get_dir();
 				if (**argv == '/' && strncmp(*argv, dbdir, strlen(dbdir)) == 0) {
 					*argv += strlen(dbdir) + 1;
 					if ((*argv)[strlen(*argv) - 1] == '/') {
