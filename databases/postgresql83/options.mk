@@ -5,6 +5,21 @@ PKG_SUPPORTED_OPTIONS+=		# empty
 .include "../../mk/bsd.options.mk"
 
 ###
+### GSSAPI authentication for the PostgreSQL backend.
+###
+.if !empty(PKG_OPTIONS:Mgssapi)
+CONFIGURE_ARGS+=	--with-gssapi
+.endif
+
+###
+### Kerberos5 authentication for the PostgreSQL backend.
+###
+.if !empty(PKG_OPTIONS:Mkrb5)
+.  include "../../mk/krb5.buildlink3.mk"
+CONFIGURE_ARGS+=	--with-krb5
+.endif
+
+###
 ### LDAP authentication for the PostgreSQL backend.
 ###
 .if !empty(PKG_OPTIONS:Mldap)
