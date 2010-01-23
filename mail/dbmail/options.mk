@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.7 2007/12/13 07:43:20 obache Exp $
+# $NetBSD: options.mk,v 1.8 2008/04/12 22:43:03 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dbmail
 PKG_SUPPORTED_OPTIONS=	ldap sieve
@@ -27,7 +27,7 @@ INSTALLATION_DIRS+=	${DATADIR}/sql/mysql
 .include "../../mk/pgsql.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-pgsql
 PLIST.pgsql=		yes
-INSTALLATION_DIRS+=	${DATADIR}/sql/pgsql
+INSTALLATION_DIRS+=	${DATADIR}/sql/postgresql
 .endif
 
 ###
@@ -73,7 +73,7 @@ dbmail-install-scripts:
 	${INSTALL_DATA} ${WRKSRC}/sql/mysql/* ${DESTDIR}${DATADIR}/sql/mysql
 .endif
 .if !empty(PKG_OPTIONS:Mpgsql)
-	${INSTALL_DATA} ${WRKSRC}/sql/postgresql/* ${DESTDIR}${DATADIR}/sql/pgsql
+	${INSTALL_DATA} ${WRKSRC}/sql/postgresql/* ${DESTDIR}${DATADIR}/sql/postgresql
 .endif
 .if !empty(PKG_OPTIONS:Msqlite)
 	${INSTALL_DATA} ${WRKSRC}/sql/sqlite/* ${DESTDIR}${DATADIR}/sql/sqlite
