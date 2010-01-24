@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2008/07/14 12:55:56 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/07/25 11:42:10 dillo Exp $
 #
 
-DISTNAME=		libzip-0.9
+DISTNAME=		libzip-0.9.1
 CATEGORIES=		archivers devel
 MASTER_SITES=		http://www.nih.at/libzip/
 
 OWNER=			dillo@NetBSD.org
 HOMEPAGE=		http://www.nih.at/libzip/
 COMMENT=		C library to manipulate zip archives
+LICENSE=		modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
