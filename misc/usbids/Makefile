@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/04/26 05:07:09 bjs Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/11/22 13:06:40 jmcneill Exp $
 #
 
 DISTNAME=	usbids-20081118
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.invisible.ca/~jmcneill/distfiles/
 MAINTAINER=	jmcneill@NetBSD.org
 HOMEPAGE=	http://www.linux-usb.org/
 COMMENT=	Repository of USB IDs (usb.ids database)
+LICENSE=	modified-bsd OR gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

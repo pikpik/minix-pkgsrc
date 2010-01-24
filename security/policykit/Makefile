@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/09/08 13:31:16 abs Exp $
+# $NetBSD: Makefile,v 1.14 2009/12/27 00:00:55 abs Exp $
 #
 
 POLICYKIT_VER=		0.9
@@ -11,6 +11,7 @@ MASTER_SITES=		http://hal.freedesktop.org/releases/
 MAINTAINER=		netbsd-desktop@NetBSD.org
 HOMEPAGE=		http://hal.freedesktop.org/
 COMMENT=		Framework for managing admin policies and privileges
+LICENSE=		mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 BUILD_DEPENDS+=		libxslt-[0-9]*:../../textproc/libxslt

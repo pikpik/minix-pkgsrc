@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/02/21 13:22:43 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2009/02/25 19:35:46 drochner Exp $
 #
 
 DISTNAME=	libsamplerate-0.1.7
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.mega-nerd.com/SRC/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mega-nerd.com/SRC/
 COMMENT=	Sample rate converter library
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

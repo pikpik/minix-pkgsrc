@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2009/06/05 20:47:30 rillig Exp $
+# $NetBSD: Makefile,v 1.44 2009/06/05 21:02:45 rillig Exp $
 
 DISTNAME=	flac-1.2.1
 PKGREVISION=	1
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=flac/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://flac.sourceforge.net/
 COMMENT=	Free lossless audio codec
+LICENSE=	modified-bsd AND gnu-gpl-v2 AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
