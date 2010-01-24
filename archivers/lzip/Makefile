@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/15 08:36:48 wiz Exp $
 #
 
 DISTNAME=	lzip-1.7
 CATEGORIES=	archivers
-MASTER_SITES=	http://mirror.lihnidos.org/GNU/savannah/lzip/
+MASTER_SITES=	http://download.savannah.gnu.org/releases/lzip/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/lzip/lzip.html
