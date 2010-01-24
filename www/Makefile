@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.681 2010/01/16 16:06:42 sno Exp $
+# $NetBSD: Makefile,v 1.682 2010/01/17 12:03:41 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -375,6 +375,7 @@ SUBDIR+=	p5-LWP-Online
 SUBDIR+=	p5-LWP-UserAgent-Determined
 SUBDIR+=	p5-LWPx-ParanoidAgent
 SUBDIR+=	p5-MasonX-Request-WithApacheSession
+SUBDIR+=	p5-Mojo
 SUBDIR+=	p5-ParallelUserAgent
 SUBDIR+=	p5-Pod-POM-Web
 SUBDIR+=	p5-Reaction
