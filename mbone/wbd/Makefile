@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/07 16:10:18 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2009/08/18 15:57:59 joerg Exp $
 #
 
 DISTNAME=		wbd-1.0ucl4
@@ -21,5 +21,5 @@ INSTALLATION_DIRS=	bin
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wbd ${DESTDIR}${PREFIX}/bin/wbd
 
-.include "../../x11/tk83/buildlink3.mk"
+.include "../../x11/tk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
