@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- xtra/pgscript/file/test/execute.sh.orig	2010-01-25 08:09:38.000000000 +0000
++++ xtra/pgscript/file/test/execute.sh
+@@ -24,7 +24,7 @@ echo "done"
+ echo ""
+ 
+ # Get parameters for database connections
+-if test "$*" == ""
++if test "$*" = ""
+ then
+ 	PARAMETERS="$DEFAULTPARAM" # Default if nothing is provided
+ else
