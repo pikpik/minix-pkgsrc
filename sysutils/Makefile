@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.479 2009/10/29 04:25:46 agc Exp $
+# $NetBSD: Makefile,v 1.480 2009/12/10 17:32:20 abs Exp $
 #
 
 COMMENT=	System utilities
@@ -148,6 +148,7 @@ SUBDIR+=	hfsutils
 SUBDIR+=	htop
 SUBDIR+=	i2ocfg
 SUBDIR+=	i810switch
+SUBDIR+=	iat
 SUBDIR+=	idesk
 SUBDIR+=	install-sh
 SUBDIR+=	ipa
