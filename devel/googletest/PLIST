@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2009/12/21 19:18:25 reed Exp $
 bin/gtest-config
 include/gtest/gtest-death-test.h
 include/gtest/gtest-message.h
