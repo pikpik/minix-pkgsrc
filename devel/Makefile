@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1278 2010/01/16 22:42:01 sno Exp $
+# $NetBSD: Makefile,v 1.1279 2010/01/26 01:23:37 reed Exp $
 #
 
 COMMENT=	Development utilities
@@ -503,6 +503,7 @@ SUBDIR+=	p5-Class-ObjectTemplate
 SUBDIR+=	p5-Class-ReturnValue
 SUBDIR+=	p5-Class-Singleton
 SUBDIR+=	p5-Class-Std
+SUBDIR+=	p5-Class-Throwable
 SUBDIR+=	p5-Class-Trigger
 SUBDIR+=	p5-Class-Unload
 SUBDIR+=	p5-Class-WhiteHole
