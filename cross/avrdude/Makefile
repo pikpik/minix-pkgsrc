@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.26 2010/01/04 16:30:36 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2010/01/20 03:31:58 jakllsch Exp $
 
 DISTNAME=		avrdude-5.8
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		cross
 MASTER_SITES=		http://download.savannah.gnu.org/releases/avrdude/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.bsdhome.com/avrdude/
 COMMENT=		Downloader/uploader for Atmel AVR 8-bit RISC microcontrollers
+LICENSE=		gnu-gpl-v2
 
 BUILD_DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
 
