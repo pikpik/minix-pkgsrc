@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/08/16 20:15:54 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2005/04/11 21:47:30 tv Exp $
 #
 
 DISTNAME=		wipe-2.2.0
@@ -11,6 +11,7 @@ HOMEPAGE=		http://wipe.sourceforge.net/
 COMMENT=		Secure data destruction
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 
