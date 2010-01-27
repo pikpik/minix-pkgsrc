@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/05/01 14:01:50 zafer Exp $
+# $NetBSD: Makefile,v 1.16 2009/05/19 08:59:31 wiz Exp $
 #
 
 DISTNAME=	libidea-0.8.2b
@@ -9,6 +9,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.media-crypt.com/pages/fidea.html
 COMMENT=	IDEA block cipher library
 LICENSE=	idea-license
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=	IDEA is a patented algorithm that requires proper licensing
 NO_SRC_ON_CDROM=${RESTRICTED}
@@ -24,9 +26,9 @@ CRYPTO=		YES
 INSTALLATION_DIRS=	bin include lib
 
 do-install:
-	cd ${WRKSRC} &&							\
-	${INSTALL_DATA} libidea.a ${PREFIX}/lib &&			\
-	${INSTALL_DATA} idea.h ${PREFIX}/include &&			\
-	${INSTALL_PROGRAM} ideatest idea_spd ${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/libidea.a ${DESTDIR}${PREFIX}/lib
+	${INSTALL_DATA} ${WRKSRC}/idea.h ${DESTDIR}${PREFIX}/include
+	${INSTALL_PROGRAM} ${WRKSRC}/ideatest ${WRKSRC}/idea_spd \
+	    ${DESTDIR}${PREFIX}/bin
 
 .include "../../mk/bsd.pkg.mk"
