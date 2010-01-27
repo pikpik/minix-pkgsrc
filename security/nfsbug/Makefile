@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/03/28 22:07:18 hubertf Exp $
+# $NetBSD: Makefile,v 1.18 2007/02/22 19:27:08 wiz Exp $
 
 DISTNAME=	nfsshell-1.0
 PKGREVISION=	1
@@ -10,6 +10,8 @@ DISTFILES=	nfsBugFerret.tgz \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	NFS security verification suite
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 EXTRACT_ONLY=	nfsBugFerret.tgz
 WRKSRC=		${WRKDIR}/nfsbug
 
@@ -20,7 +22,7 @@ post-extract:
 	${CP} ${DISTDIR}/nfsShell.c ${WRKSRC}/nfsshell.c
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/nfsbug ${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/nfsshell ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/nfsbug ${DESTDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/nfsshell ${DESTDIR}${PREFIX}/bin
 
 .include "../../mk/bsd.pkg.mk"

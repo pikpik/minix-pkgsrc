@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/04/30 19:28:34 adam Exp $
+# $NetBSD: Makefile,v 1.21 2008/12/15 20:59:28 smb Exp $
 
 DISTNAME=	mcrypt-2.6.8
 CATEGORIES=	security devel
@@ -7,6 +7,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mcrypt/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mcrypt.sourceforge.net/
 COMMENT=	Replacement to crypt(1), supports many crypto algorithms
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
