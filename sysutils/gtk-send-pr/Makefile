@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/08/26 19:58:19 sno Exp $
+# $NetBSD: Makefile,v 1.30 2010/01/17 12:02:45 wiz Exp $
 #
 
 DISTNAME=		gtk-send-pr-0.4.9
@@ -11,11 +11,16 @@ MAINTAINER=		mmendez@energyhq.be
 HOMEPAGE=		http://gtk-send-pr.berlios.de/index.html
 COMMENT=		GTK+ based problem report tool
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_TOOLS+=		pkg-config
 
 CPPFLAGS.SunOS+=	-Dstrsep=strpbrk
 CPPFLAGS.IRIX+=		-Dstrsep=strpbrk
 LDFLAGS.IRIX+=		-lgen
+
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
+INSTALL_MAKE_FLAGS+=	PREFIX=${DESTDIR}${PREFIX}
 
 .include "../../mail/libesmtp/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
