@@ -1,10 +1,18 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2010/01/26 09:01:24 adam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mapserver
-PKG_SUPPORTED_OPTIONS=	pgsql mysql
+PKG_SUPPORTED_OPTIONS=	fastcgi pgsql mysql
 PKG_SUGGESTED_OPTIONS=	# empty
 
 .include "../../mk/bsd.options.mk"
+
+#
+# FastCGI support
+#
+.if !empty(PKG_OPTIONS:Mfastcgi)
+.include "../../www/fcgi/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-fastcgi
+.endif
 
 #
 # PostgreSQL/PostGIS support
