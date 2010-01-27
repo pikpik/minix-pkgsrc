@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2005/09/28 20:52:26 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2007/01/07 09:14:09 rillig Exp $
 #
 
 DISTNAME=		yup-r1-rel
@@ -11,6 +11,7 @@ MAINTAINER=		grant@NetBSD.org
 COMMENT=		Print multiple PostScript/ASCII pages per sheet
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run
 
@@ -21,7 +22,7 @@ NO_BUILD=		yes
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/yup ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/yup.1 ${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_SCRIPT} ${WRKSRC}/yup ${DESTDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/yup.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
