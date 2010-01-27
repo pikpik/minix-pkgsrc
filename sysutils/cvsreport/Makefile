@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/11/05 17:53:44 seb Exp $
+# $NetBSD: Makefile,v 1.3 2007/01/07 09:14:11 rillig Exp $
 #
 
 DISTNAME=		cvsreport-0.3.5
@@ -9,12 +9,16 @@ MAINTAINER=		pancake@phreaker.net
 HOMEPAGE=		http://home.gna.org/cvsreport/
 COMMENT=		Message reports from CVS activity
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 REPLACE_PERL+=		cvsreport
 USE_TOOLS+=		perl:run
 NO_BUILD=		yes
 
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
+
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/cvsreport ${PREFIX}/bin/
-	${INSTALL_MAN} ${WRKSRC}/cvsreport.1 ${PREFIX}/${PKGMANDIR}/man1/
+	${INSTALL_SCRIPT} ${WRKSRC}/cvsreport ${DESTDIR}${PREFIX}/bin/
+	${INSTALL_MAN} ${WRKSRC}/cvsreport.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/
 
 .include "../../mk/bsd.pkg.mk"
