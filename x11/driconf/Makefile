@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/07/22 09:01:52 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2009/08/26 19:58:29 sno Exp $
 #
 
 DISTNAME=	driconf-0.9.1
@@ -10,10 +10,10 @@ MAINTAINER=	bjs@NetBSD.org
 HOMEPAGE=	http://dri.freedesktop.org/wiki/DriConf
 COMMENT=	Configuration applet for DRI drivers
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+= 	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 DEPENDS+= 	xdriinfo>=1.0.2:../../x11/xdriinfo
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR= 	yes
 USE_TOOLS+=		msgfmt msgmerge xgettext
