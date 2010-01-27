@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.689 2010/01/27 09:40:11 sno Exp $
+# $NetBSD: Makefile,v 1.690 2010/01/27 10:44:39 sno Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -268,6 +268,7 @@ SUBDIR+=	p5-Catalyst-Devel
 SUBDIR+=	p5-Catalyst-Engine-JobQueue-POE
 SUBDIR+=	p5-Catalyst-Manual
 SUBDIR+=	p5-Catalyst-Model-Adaptor
+SUBDIR+=	p5-Catalyst-Model-File
 SUBDIR+=	p5-Catalyst-Plugin-Authentication
 SUBDIR+=	p5-Catalyst-Plugin-Authentication-Store-DBIC
 SUBDIR+=	p5-Catalyst-Plugin-Authentication-Store-RDBO
