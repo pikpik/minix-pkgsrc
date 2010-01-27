@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/07/17 18:00:23 adrianp Exp $
+# $NetBSD: Makefile,v 1.22 2009/08/16 15:35:44 wiz Exp $
 #
 
 DISTNAME=	arpd-0.2
@@ -11,6 +11,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://niels.xtdnet.nl/honeyd/
 COMMENT=	ARP daemon for honeyd
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 RCD_SCRIPTS=	honeydarpd
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/arpd
@@ -20,8 +22,8 @@ CONFIGURE_ARGS+=    --with-libevent=${BUILDLINK_PREFIX.libevent}
 INSTALLATION_DIRS=	sbin ${PKGMANDIR}/man8
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/arpd ${PREFIX}/sbin/honeyd-arpd
-	${INSTALL_MAN} ${WRKSRC}/arpd.8 ${PREFIX}/${PKGMANDIR}/man8/honeyd-arpd.8
+	${INSTALL_PROGRAM} ${WRKSRC}/arpd ${DESTDIR}${PREFIX}/sbin/honeyd-arpd
+	${INSTALL_MAN} ${WRKSRC}/arpd.8 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man8/honeyd-arpd.8
 
 .include "../../devel/libevent/buildlink3.mk"
 .include "../../net/libdnet/buildlink3.mk"
