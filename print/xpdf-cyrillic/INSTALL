@@ -1,0 +1,10 @@
+# $NetBSD: DEINSTALL,v 1.2 2003/08/30 20:23:03 jlam Exp $
+
+XPDFRC=${PKG_SYSCONFDIR}/xpdfrc
+CAT=@CAT@
+
+case ${STAGE} in
+POST-INSTALL)
+	${CAT} ${PREFIX}/share/xpdf/cyrillic/add-to-xpdfrc >> ${XPDFRC}
+	;;
+esac
