@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2003/07/17 22:53:40 grant Exp $
+# $NetBSD: Makefile,v 1.8 2005/05/30 04:05:46 lukem Exp $
 #
 
 DISTNAME=	logrot-1.7
@@ -9,9 +9,14 @@ MAINTAINER=	lukem@NetBSD.org
 HOMEPAGE=	http://www.mewburn.net/luke/software.html
 COMMENT=	Rotate log files in a safe and configurable manner
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 GNU_CONFIGURE=	YES
 
 OPSYSVARS+=		CONFIGURE_ARGS
 CONFIGURE_ARGS.NetBSD+=	--with-pidfile=/var/run/syslogd.pid
+
+INSTALL_MAKE_FLAGS+=	bindir=${DESTDIR}${PREFIX}/bin \
+			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
