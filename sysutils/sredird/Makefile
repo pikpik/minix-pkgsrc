@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/03/22 22:50:33 tv Exp $
+# $NetBSD: Makefile,v 1.7 2007/03/19 16:40:28 tv Exp $
 #
 
 DISTNAME=		sredird-2.0.0
@@ -9,13 +9,14 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.pcmicro.com/sredird/
 COMMENT=		RFC2217 compliant serial port redirector
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FLAGS+=		CC=${CC:Q} CFLAGS=${CFLAGS:M*:Q}
 BUILD_TARGET=		sredird
 INSTALLATION_DIRS=	libexec share/doc
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/sredird ${PREFIX}/libexec/sredird
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/sredird.README
+	${INSTALL_PROGRAM} ${WRKSRC}/sredird ${DESTDIR}${PREFIX}/libexec/sredird
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/sredird.README
 
 .include "../../mk/bsd.pkg.mk"
