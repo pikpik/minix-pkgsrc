@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2007/04/04 14:37:53 tv Exp $
+# $NetBSD: Makefile,v 1.8 2009/04/09 00:48:17 joerg Exp $
 #
 
 DISTNAME=		user-20040426
@@ -8,6 +8,8 @@ DISTFILES=		# empty
 
 MAINTAINER=		interix-pkg-people@NetBSD.org
 COMMENT=		Limited NetBSD-compatible useradd/groupadd commands
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	Interix-*-*
 
@@ -20,7 +22,7 @@ INSTALLATION_DIRS=	sbin
 
 do-install:
 .for f in useradd userdel groupadd groupdel
-	${INSTALL_SCRIPT} ${FILESDIR}/${f}.sh ${PREFIX}/sbin/${f}
+	${INSTALL_SCRIPT} ${FILESDIR}/${f}.sh ${DESTDIR}${PREFIX}/sbin/${f}
 .endfor
 
 .include "../../mk/bsd.pkg.mk"
