@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2004/06/07 18:05:43 xtraeme Exp $
+# $NetBSD: Makefile,v 1.2 2006/03/04 21:30:43 jlam Exp $
 #
 
 DISTNAME=	Slay.1.2
@@ -11,11 +11,12 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Kills a login shell and process(es) of a user
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 INSTALLATION_DIRS=	bin
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/slay ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/slay ${DESTDIR}${PREFIX}/bin
 
 .include "../../mk/bsd.pkg.mk"
