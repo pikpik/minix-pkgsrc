@@ -1,8 +1,8 @@
 # $NetBSD$
-# TeX Live Revision 16392
+# TeX Live Revision 16770
 
 DISTNAME=	tetex
-PKGNAME=	tex-${DISTNAME}-3.0.16392
+PKGNAME=	tex-${DISTNAME}-3.0.16770
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Supplementary files for updmap
