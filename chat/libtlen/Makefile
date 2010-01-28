@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/02/05 18:55:22 adam Exp $
+# $NetBSD: Makefile,v 1.9 2006/03/04 21:29:03 jlam Exp $
 
 DISTNAME=	libtlen-20041113
 CATEGORIES=	chat
@@ -9,6 +9,7 @@ HOMEPAGE=	http://libtlen.sourceforge.net/
 COMMENT=	Library to access tlen.pl IM system
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
