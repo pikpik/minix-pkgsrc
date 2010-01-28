@@ -91,11 +91,11 @@ _texlive-install:
 		done; \
 	fi
 
-.if empty(TEX_TEXMF_DIRS) || ${TEX_TEXMF_DIRS} != "none"
-.include "../../print/kpathsea/texmf.mk"
-.endif
 .if !empty(TEX_FORMAT_NAMES)
 .  include "../../print/texlive-tetex/format.mk"
+.endif
+.if empty(TEX_TEXMF_DIRS) || ${TEX_TEXMF_DIRS} != "none"
+.include "../../print/kpathsea/texmf.mk"
 .endif
 .if !empty(TEX_HYPHEN_DAT) || !empty(TEX_HYPHEN_DEF)
 .  include "../../print/texlive-tetex/hyphen.mk"
