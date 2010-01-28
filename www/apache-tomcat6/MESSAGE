@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+The ${PREFIX}/share/tomcat/webapps directory will be mercilessly mangled
+in updates, so pick a different directory for your own local appBase
+(in ${PREFIX}/share/tomcat/conf/server.xml). You have been warned. :)
+
+===========================================================================
