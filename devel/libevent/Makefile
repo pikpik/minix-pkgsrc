@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2009/08/17 11:07:55 drochner Exp $
+# $NetBSD: Makefile,v 1.34 2009/08/18 16:53:14 drochner Exp $
 #
 
 DISTNAME=	libevent-1.4.12-stable
 PKGNAME=	${DISTNAME:S/-stable//}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://monkey.org/~provos/
 
@@ -10,7 +11,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://monkey.org/~provos/libevent/
 COMMENT=	Asynchronous event notification library
 
-CONFLICTS+=	libev-[0-9]*
+CONFLICTS+=	libev<3.9nb1
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
