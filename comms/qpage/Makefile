@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/04/11 21:45:07 tv Exp $
+# $NetBSD: Makefile,v 1.13 2006/03/04 21:29:05 jlam Exp $
 #
 
 DISTNAME=	qpage-3.3
@@ -10,8 +10,16 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.qpage.org/
 COMMENT=	Simple and efficient paging (SNPP) client and server
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ENV+=	MKDIR_PATH=${MKDIR:Q}
+
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/qpage ${DESTDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/qpage.man ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/qpage.1
 
 .include "../../mk/bsd.pkg.mk"
