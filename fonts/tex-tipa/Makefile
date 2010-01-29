@@ -3,14 +3,14 @@
 
 DISTNAME=	tipa
 PKGNAME=	tex-${DISTNAME}-1.3
+PKGREVISION=	1
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Fonts and macros for IPA phonetics characters
 
-DEPENDS+=	tex-bin-latex-[0-9]*:../../print/tex-bin-latex
 DEPENDS+=	tex-latex-[0-9]*:../../print/tex-latex
 
 TEX_MIXEDMAP_FILES+=	tipa.map
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
