@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/07/22 09:01:25 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2009/08/26 19:57:25 sno Exp $
 #
 
 DISTNAME=	notecase-1.8.8_src
@@ -10,6 +10,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=notecase/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://notecase.sourceforge.net/
 COMMENT=	Hierarchical note manager
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/notecase-1.8.8
 USE_LANGUAGES=	c c++
