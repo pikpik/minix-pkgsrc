@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2006/07/31 21:13:33 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2006/10/03 05:30:04 rillig Exp $
 #
+
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../editors/ce/Makefile.common"
 
 PKGNAME=		ce-doc-${VERSION}
 PKGREVISION=		2
 COMMENT+=		, documentation
-
-PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NO_BUILD=		yes
 USE_LANGUAGES=		c

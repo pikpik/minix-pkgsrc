@@ -1,11 +1,13 @@
-# $NetBSD: Makefile,v 1.16 2006/03/11 10:07:49 ghen Exp $
+# $NetBSD: Makefile,v 1.17 2007/01/07 09:13:52 rillig Exp $
 #
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 .include "Makefile.common"
 
 COMMENT+=		, tty version
 
-PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 REPLACE_INTERPRETER+=	bash
 REPLACE.bash.old=	.*/bin/bash
