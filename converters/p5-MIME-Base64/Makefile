@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2009/05/19 08:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2009/06/14 20:40:57 sno Exp $
 #
 
-DISTNAME=		MIME-Base64-3.08
+DISTNAME=		MIME-Base64-3.09
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5mba
 CATEGORIES=		converters perl5
