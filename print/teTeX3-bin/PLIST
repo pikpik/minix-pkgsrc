@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.20 2010/01/28 19:33:07 minskim Exp $
+@comment $NetBSD: PLIST,v 1.21 2010/01/28 21:37:35 minskim Exp $
 bin/fdf2tan
 bin/fdf2tex
 bin/lamed
@@ -23,6 +23,5 @@ share/texmf/doc/tetex/TETEXDOC.dvi
 share/texmf/doc/tetex/TETEXDOC.pdf
 share/texmf/doc/tetex/TETEXDOC.ps
 share/texmf/doc/tetex/teTeX-FAQ
-share/texmf/fmtutil/format.tetex.cnf
 share/texmf/release-tetex-src.txt
 share/texmf/web2c/pdfetex-pl.pool
