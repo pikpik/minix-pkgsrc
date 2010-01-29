@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/05/28 16:35:38 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2007/01/07 09:13:52 rillig Exp $
 #
 
 DISTNAME=	xmake-1.06
@@ -11,9 +11,12 @@ HOMEPAGE=	http://apollo.backplane.com/xmake/
 COMMENT=	Portable make utility
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/xmake
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
+INSTALL_MAKE_FLAGS+=	IBDIR=${DESTDIR}${PREFIX}/bin \
+			IMDIR=${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
