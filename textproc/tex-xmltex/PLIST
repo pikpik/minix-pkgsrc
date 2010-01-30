@@ -1,4 +1,6 @@
 @comment $NetBSD$
+bin/pdfxmltex
+bin/xmltex
 share/texmf-dist/tex/xmltex/base/iso-8859-1.xmt
 share/texmf-dist/tex/xmltex/base/iso-8859-2.xmt
 share/texmf-dist/tex/xmltex/base/koi8-r.xmt
