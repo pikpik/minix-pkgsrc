@@ -1,4 +1,4 @@
-/* $NetBSD: add.h,v 1.16 2009/10/07 12:53:26 joerg Exp $ */
+/* $NetBSD: add.h,v 1.17 2010/01/22 13:30:41 joerg Exp $ */
 
 /* from FreeBSD Id: add.h,v 1.8 1997/02/22 16:09:15 peter Exp  */
 
@@ -37,6 +37,7 @@ extern Boolean Force;
 extern Boolean Automatic;
 extern int LicenseCheck;
 extern int Replace;
+extern int ReplaceSame;
 
 extern Boolean ForceDepends;
 
