@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2009/03/17 21:19:50 jmcneill Exp $
+# $NetBSD: Makefile,v 1.37 2009/07/22 09:01:33 wiz Exp $
 
 DISTNAME=	librsvg-2.26.0
 CATEGORIES=	graphics gnome
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://librsvg.sourceforge.net/
 COMMENT=	SVG library for GNOME2
+LICENSE=	gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2008/05/26 16:52:21 drochner Exp $
+# $NetBSD: Makefile,v 1.33 2009/03/05 18:51:32 joerg Exp $
 
 DISTNAME=	libxslt-1.1.24
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -9,6 +9,7 @@ MASTER_SITES+=	${MASTER_SITE_GNOME:=sources/libxslt/1.1/}
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://xmlsoft.org/XSLT/
 COMMENT=	Python wrapper for libxslt
+LICENSE=	mit # with no-advertising clause
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

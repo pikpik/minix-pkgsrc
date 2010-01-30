@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/12/04 21:23:22 markd Exp $
+# $NetBSD: Makefile,v 1.9 2010/01/27 20:48:20 drochner Exp $
 #
 
 DISTNAME=	numpy-1.4.0
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://numpy.scipy.org/
 COMMENT=	Array processing for numbers, strings, records, and objects
+LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
