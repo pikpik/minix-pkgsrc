@@ -295,6 +295,10 @@ ${RUBY_VENDORLIB}/rabbit/theme/pdf-tortoise-and-hare/pdf-tortoise-and-hare.rb
 ${RUBY_VENDORLIB}/rabbit/theme/pdf-tortoise-and-hare/property.rb
 ${RUBY_VENDORLIB}/rabbit/theme/pdf/pdf.rb
 ${RUBY_VENDORLIB}/rabbit/theme/pdf/property.rb
+${RUBY_VENDORLIB}/rabbit/theme/per-slide-background-color/per-slide-background-color.rb
+${RUBY_VENDORLIB}/rabbit/theme/per-slide-background-color/property.rb
+${RUBY_VENDORLIB}/rabbit/theme/per-slide-background-image/per-slide-background-image.rb
+${RUBY_VENDORLIB}/rabbit/theme/per-slide-background-image/property.rb
 ${RUBY_VENDORLIB}/rabbit/theme/powered-by/powered-by.rb
 ${RUBY_VENDORLIB}/rabbit/theme/powered-by/property.rb
 ${RUBY_VENDORLIB}/rabbit/theme/rabbit-block-quote/property.rb
