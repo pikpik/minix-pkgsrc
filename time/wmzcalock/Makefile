@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/16 14:36:56 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/19 08:23:43 wiz Exp $
 #
 
 DISTNAME=		wmzcalock-0.1
@@ -31,4 +31,5 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
