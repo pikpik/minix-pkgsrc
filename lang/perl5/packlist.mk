@@ -1,4 +1,4 @@
-# $NetBSD: packlist.mk,v 1.13 2009/05/16 07:22:04 rillig Exp $
+# $NetBSD: packlist.mk,v 1.14 2009/06/18 05:30:24 wiz Exp $
 #
 # This Makefile fragment is intended to be included by packages that
 # create packlist files.  This file is automatically included by
@@ -76,6 +76,7 @@ GENERATE_PLIST+=	${PERL5_GENERATE_PLIST}
 .if !empty(PERL5_PACKLIST_DESTDIR:M[Yy][Ee][Ss])
 _PERL5_PACKLIST_AWK_STRIP_DESTDIR=					\
 	BEGIN { destdir = "${DESTDIR}"; 				\
+		gsub(/\/\//, "/", destdir);				\
 		len_destdir = length(destdir); }			\
 	{ if (index($$1, destdir) == 1) 				\
 		$$1 = substr($$1, len_destdir + 1) }
