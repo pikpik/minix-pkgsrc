@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2008/07/28 16:27:42 cube Exp $
 #
 
 DISTNAME=	newsx-1.6
 PKGREVISION=	2
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.kvaleberg.com/pub/
+MASTER_SITES=	http://www.sfr-fresh.com/unix/misc/
 
 MAINTAINER=	cube@NetBSD.org
 HOMEPAGE=	http://www.kvaleberg.com/newsx.html

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2008/11/11 21:12:20 chuck Exp $
+# $NetBSD: Makefile,v 1.34 2009/05/19 08:59:29 wiz Exp $
 
 DISTNAME=	nntpclnt-1.6.1
 PKGREVISION=	6
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.uu.net/networking/news/nntp/
+MASTER_SITES=	http://ftp.sunet.se/pub/news/nntp/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	NNTP client library and inews client posting program
