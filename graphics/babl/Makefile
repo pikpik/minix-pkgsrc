@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/06/13 08:05:05 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2009/08/21 19:39:58 adam Exp $
 
 DISTNAME=	babl-${BABL_VERSION}
 CATEGORIES=	graphics
@@ -14,9 +14,9 @@ COMMENT=	Dynamic pixel conversion library
 ###
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config gmake
+USE_LIBTOOL=		yes
+USE_TOOLS+=		pkg-config gmake
+GNU_CONFIGURE=		yes
 
 PKGCONFIG_OVERRIDE+=	babl.pc.in
 
