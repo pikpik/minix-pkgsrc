@@ -1,6 +1,6 @@
 $NetBSD$
 
---- modules/pammodutil/Makefile.orig	2001-12-09 17:15:12.000000000 -0500
+--- modules/pammodutil/Makefile.orig	2001-12-09 22:15:12.000000000 +0000
 +++ modules/pammodutil/Makefile
 @@ -25,10 +25,15 @@ LIBSTATIC = $(LIBNAME).a
  
@@ -24,7 +24,7 @@ $NetBSD$
  	$(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c $< -o $@
  
 +%.lo: %.c
-+	$(LIBTOOL) --mode=compile $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c $<
++	$(LIBTOOL) --tag=CC --mode=compile $(CC) $(CFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c $<
 +
  $(LIBSTATIC): $(SLIBOBJECTS)
  	ar cr $@ $(SLIBOBJECTS)
@@ -34,7 +34,7 @@ $NetBSD$
 +# libraries and modules.
 +#
 +$(LIBLIBTOOL): $(LALIBOBJECTS)
-+	$(LIBTOOL) --mode=link $(CC) $(LDFLAGS) $(LALIBOBJECTS) -o $@
++	$(LIBTOOL) --tag=CC --mode=link $(CC) $(LDFLAGS) $(LALIBOBJECTS) -o $@
 +
  install:
  	@echo "at this time, we're not installing $(LIBSTATIC)"
