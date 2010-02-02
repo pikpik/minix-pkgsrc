@@ -28,3 +28,20 @@ $NetBSD$
  
  
  my $missing_modules = 0;
+@@ -197,12 +198,12 @@ package MY;
+ sub postamble {
+ 	my $postamble = <<'END';
+ pixmaps ::
+-	$(MKPATH) $(PREFIX)/share/pixmaps/gscmxx
+-	@$(MOD_INSTALL) ./pixmaps/ $(PREFIX)/share/pixmaps/gscmxx/
++	$(MKPATH) $(DESTDIR)$(PREFIX)/share/pixmaps/gscmxx
++	@$(MOD_INSTALL) ./pixmaps/ $(DESTDIR)$(PREFIX)/share/pixmaps/gscmxx/
+ 
+ i18n ::
+-	$(MKPATH) $(PREFIX)/share/gscmxx/i18n
+-	@$(MOD_INSTALL) ./share/i18n/ $(PREFIX)/share/gscmxx/i18n/
++	$(MKPATH) $(DESTDIR)$(PREFIX)/share/gscmxx/i18n
++	@$(MOD_INSTALL) ./share/i18n/ $(DESTDIR)$(PREFIX)/share/gscmxx/i18n/
+ 
+ END
+ 	return $postamble;
