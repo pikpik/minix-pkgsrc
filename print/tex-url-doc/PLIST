@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/url/miscdoc.sty
+share/texmf-dist/doc/latex/url/url.pdf
+share/texmf-dist/doc/latex/url/url.tex
