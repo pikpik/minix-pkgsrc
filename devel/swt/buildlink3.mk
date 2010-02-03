@@ -1,0 +1,13 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	swt
+
+.if !defined(SWT_BUILDLINK3_MK)
+SWT_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.swt+=	swt>=3.5.1.3555
+BUILDLINK_PKGSRCDIR.swt?=	../../devel/swt
+
+.endif	# SWT_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-swt
