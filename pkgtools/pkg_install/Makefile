@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2010/01/22 13:30:41 joerg Exp $
+# $NetBSD: Makefile,v 1.171 2010/01/26 15:48:13 joerg Exp $
 
 # Notes to package maintainers:
 #
@@ -80,7 +80,7 @@ MESSAGE_SUBST+=		PKGVULNDIR=${PKG_DBDIR:Q}			\
 
 .include "../../mk/bsd.prefs.mk"
 
-VERSION!=		${AWK} -F '"' '/PKGTOOLS_VERSION/ {print $$2}' \
+VERSION!=		${AWK} '/PKGTOOLS_VERSION/ {print $$3}' \
 			${FILESDIR}/lib/version.h
 
 # linkresolver interface appeared in libarchive 2.5 and extract
