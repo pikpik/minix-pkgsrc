@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/03/04 21:29:47 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2006/10/22 21:20:54 rillig Exp $
 
 DISTNAME=	fbm-1.2
 CATEGORIES=	graphics converters
@@ -8,8 +8,11 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Fuzzy Pixmap Manipulation utilities
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}
-MAKE_FLAGS+=	MAN=${PREFIX}/${PKGMANDIR}/manl/
-INSTALLATION_DIRS+=	${PKGMANDIR}/manl
+INSTALL_MAKE_FLAGS+=	BIN=${DESTDIR}${PREFIX}/bin/ \
+			MAN=${DESTDIR}${PREFIX}/${PKGMANDIR}/manl/
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/manl
 
 .include "../../mk/bsd.pkg.mk"

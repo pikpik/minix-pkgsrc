@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/09/30 17:45:24 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2007/12/17 11:16:44 drochner Exp $
 
 DISTNAME=	exiftags-1.01
 CATEGORIES=	graphics
@@ -9,6 +9,7 @@ HOMEPAGE=	http://johnst.org/sw/exiftags/
 COMMENT=	Utility to read Exif tags from a digital camera JPEG file
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 
