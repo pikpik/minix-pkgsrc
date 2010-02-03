@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.63 2009/05/26 18:15:20 drochner Exp $
+# $NetBSD: options.mk,v 1.1 2009/05/26 20:26:58 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.rhythmbox
-PKG_SUPPORTED_OPTIONS=	hal
+PKG_SUPPORTED_OPTIONS=	hal daap
 PKG_SUGGESTED_OPTIONS=	hal
-PLIST_VARS+=		hal
+PLIST_VARS+=		hal daap
 
 .include "../../mk/bsd.options.mk"
 
@@ -18,4 +18,11 @@ PLIST.hal=		yes
 .include "../../sysutils/hal/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-hal
+.endif
+
+.if !empty(PKG_OPTIONS:Mdaap)
+.include "../../net/avahi/buildlink3.mk"
+PLIST.daap=		yes
+.else
+CONFIGURE_ARGS+=	--disable-daap
 .endif
