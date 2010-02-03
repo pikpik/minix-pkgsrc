@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/07/22 09:01:27 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2009/12/17 18:04:27 abs Exp $
 #
 
 DISTNAME=		ec-fonts-mftraced-1.0.8
@@ -9,6 +9,8 @@ MASTER_SITES=		http://lilypond.org/download/fonts/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://lilypond.org/web/
 COMMENT=		EC PostScript Type1 fonts with TFMs for TeX
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
