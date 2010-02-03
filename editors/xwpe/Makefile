@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/06/17 17:56:10 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2007/01/30 23:09:50 joerg Exp $
 #
 
 DISTNAME=	xwpe-1.5.29a
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.identicalsoftware.com/xwpe/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.identicalsoftware.com/xwpe/
 COMMENT=	Programming environment for UNIX systems
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
