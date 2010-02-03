@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/02/22 19:01:20 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2007/09/04 21:22:05 drochner Exp $
 #
 
 DISTNAME=	tuxpaint-stamps-2007.07.01
@@ -9,13 +9,16 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tuxpaint.org/
 COMMENT=	Rubber stamps for Tux Paint
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 DEPENDS+=	tuxpaint>=0.9.13:../../graphics/tuxpaint
 CONFLICTS+=	tuxpaint<0.9.13
 
 INSTALL_TARGET=	install-all
+INSTALL_MAKE_FLAGS+=	PREFIX=${DESTDIR}${PREFIX}
 
 post-install:
-	-${FIND} ${PREFIX}/share/tuxpaint/stamps -name CVS -exec \
+	-${FIND} ${DESTDIR}${PREFIX}/share/tuxpaint/stamps -name CVS -exec \
 		 ${RM} -r {} \; 2>/dev/null
 
 .include "../../mk/bsd.pkg.mk"
