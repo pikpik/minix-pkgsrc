@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2004/02/07 10:39:39 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2005/12/05 20:50:41 rillig Exp $
 #
 
 DISTNAME=	xtend-1.2beta4
@@ -9,8 +9,12 @@ MAINTAINER=	damon@brodiefamily.org
 HOMEPAGE=	http://www.jabberwocky.com/software/xtend/
 COMMENT=	Monitors X10 commands using heyu to automate UNIX functions
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 DEPENDS+=	heyu>=1.35:../../misc/heyu
 
 GNU_CONFIGURE=	yes
+
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
