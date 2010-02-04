@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.515 2010/01/26 15:13:26 sno Exp $
+# $NetBSD: Makefile,v 1.516 2010/01/30 16:45:49 minskim Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -257,6 +257,7 @@ SUBDIR+=	p5-Pod-Tree
 SUBDIR+=	p5-Regexp-Common
 SUBDIR+=	p5-Regexp-Copy
 SUBDIR+=	p5-SGMLS
+SUBDIR+=	p5-Search-Indexer
 SUBDIR+=	p5-Search-Xapian
 SUBDIR+=	p5-String-Approx
 SUBDIR+=	p5-String-BufferStack
