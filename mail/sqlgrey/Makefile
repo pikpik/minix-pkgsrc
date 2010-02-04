@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/11/13 16:43:04 ghen Exp $
+# $NetBSD: Makefile,v 1.2 2008/10/19 19:18:20 he Exp $
 
 DISTNAME=		sqlgrey-1.6.8
 PKGREVISION=		1
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sqlgrey.sourceforge.net/
 COMMENT=		Postfix greylisting policy daemon
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run
 
