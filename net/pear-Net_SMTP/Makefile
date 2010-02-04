@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.7 2007/05/05 22:09:19 adrianp Exp $
+# $NetBSD: Makefile,v 1.8 2008/04/30 19:32:34 adrianp Exp $
 
 DISTNAME=	Net_SMTP-1.3.0
 CATEGORIES+=	net mail
 
 MAINTAINER=	jdolecek@NetBSD.org
 COMMENT=	PHP classes to provide SMTP Interface
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-pear-Net_SMTP-[0-9]*
 
