@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/03/24 19:21:25 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2008/01/19 09:16:25 wiz Exp $
 
 DISTNAME=		coolmail-1.3
 PKGREVISION=		2
@@ -8,6 +8,8 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Xbiff replacement with 3D animation and sound
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 OPSYSVARS+=		EXTRA_LIBS
 EXTRA_LIBS.*=		-lcompat
@@ -21,7 +23,7 @@ INSTALLATION_DIRS=	bin lib/X11/app-defaults ${PKGMANDIR}/man1
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/Coolmail.ad \
-	  ${PREFIX}/lib/X11/app-defaults/Coolmail
+	    ${DESTDIR}${PREFIX}/lib/X11/app-defaults/Coolmail
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
