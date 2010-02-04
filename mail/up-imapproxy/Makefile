@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/07/17 18:00:18 adrianp Exp $
+# $NetBSD: Makefile,v 1.5 2010/01/17 12:02:26 wiz Exp $
 
 DISTNAME=	up-imapproxy-1.2.5
 PKGREVISION=	2
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.imapproxy.org/downloads/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.imapproxy.org/
 COMMENT=	Connection caching IMAP proxy server
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 RCD_SCRIPTS=	upimapproxy
@@ -22,16 +24,17 @@ CONF_FILES=	${PREFIX}/share/examples/up-imapproxy/imapproxy.conf \
 			${PKG_SYSCONFDIR}/imapproxy.conf
 
 INSTALLATION_DIRS+= sbin share/doc/up-imapproxy share/examples/up-imapproxy
+INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX}
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/up-imapproxy
-	${INSTALL_DATA} ${WRKSRC}/README.ssl ${PREFIX}/share/doc/up-imapproxy
+	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/up-imapproxy
+	${INSTALL_DATA} ${WRKSRC}/README.ssl ${DESTDIR}${PREFIX}/share/doc/up-imapproxy
 	${INSTALL_DATA} ${WRKSRC}/README.known_issues \
-		 ${PREFIX}/share/doc/up-imapproxy
+		 ${DESTDIR}${PREFIX}/share/doc/up-imapproxy
 	${INSTALL_DATA} ${WRKSRC}/scripts/imapproxy.conf \
-		 ${PREFIX}/share/examples/up-imapproxy
+		 ${DESTDIR}${PREFIX}/share/examples/up-imapproxy
 
 .include "../../mk/bsd.pkg.mk"
