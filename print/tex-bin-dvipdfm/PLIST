@@ -1,4 +1,0 @@
-@comment $NetBSD$
-share/texmf/dvipdfm/config/config
-share/texmf/dvipdfm/config/config-win32
-share/texmf/tex/latex/dvipdfm/dvipdfm.def
