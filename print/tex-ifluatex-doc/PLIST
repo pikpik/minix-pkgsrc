@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/oberdiek/ifluatex.pdf
+share/texmf-dist/doc/latex/oberdiek/test/ifluatex-test1.tex
+share/texmf-dist/doc/latex/oberdiek/test/ifluatex-test2.tex
+share/texmf-dist/doc/latex/oberdiek/test/ifluatex-test3.tex
