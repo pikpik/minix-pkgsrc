@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/bibtex/bst/apalike/apalike.bst
+share/texmf-dist/tex/latex/apalike/apalike.sty
+share/texmf-dist/tex/plain/apalike/apalike.tex
