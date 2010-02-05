@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2008/10/24 21:08:01 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/08/16 13:35:58 wiz Exp $
 #
 
-DISTNAME=	gmime-2.2.24
+DISTNAME=	gmime-2.2.25
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gmime/2.2/}
 
