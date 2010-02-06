@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2007/05/05 22:09:18 adrianp Exp $
+# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:41 joerg Exp $
 
-DISTNAME=	Net_DIME-0.3
+DISTNAME=	Net_DIME-1.0.1
 CATEGORIES+=	net
-PKGREVISION=	1
 
 MAINTAINER=	jdolecek@NetBSD.org
 COMMENT=	PHP classes that implements DIME encoding
