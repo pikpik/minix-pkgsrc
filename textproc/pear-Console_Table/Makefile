@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/07/08 20:46:54 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2009/07/17 18:00:25 adrianp Exp $
 
-DISTNAME=	Console_Table-1.1.1
+DISTNAME=	Console_Table-1.1.3
 CATEGORIES+=	textproc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
