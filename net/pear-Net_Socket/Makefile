@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2008/04/30 19:30:24 adrianp Exp $
+# $NetBSD: Makefile,v 1.10 2008/06/12 02:14:41 joerg Exp $
 
-DISTNAME=	Net_Socket-1.0.8
+DISTNAME=	Net_Socket-1.0.9
 CATEGORIES+=	net
 
 MAINTAINER=	jdolecek@NetBSD.org
