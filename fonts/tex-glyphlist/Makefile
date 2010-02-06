@@ -1,5 +1,5 @@
 # $NetBSD$
-# TeX Live Revision 7557
+# TeX Live Revision 15878
 
 DISTNAME=	glyphlist
 PKGNAME=	tex-${DISTNAME}-2.0
@@ -8,5 +8,5 @@ CATEGORIES=	fonts
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Adobe glyph list
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
