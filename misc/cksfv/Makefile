@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2009/05/19 08:59:23 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2009/10/29 22:41:42 tnn Exp $
 #
 
 DISTNAME=	cksfv-1.3.14
 CATEGORIES=	misc
-MASTER_SITES=	http://zakalwe.fi/~shd/foss/cksfv/files/ \
-		http://zakalwe.fi/~shd/foss/cksfv/files/devel/
+MASTER_SITES=	http://zakalwe.fi/~shd/foss/cksfv/files/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	dillo@NetBSD.org
