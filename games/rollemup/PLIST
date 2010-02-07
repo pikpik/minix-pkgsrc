@@ -1,3 +1,13 @@
-@comment $NetBSD: PLIST,v 1.3 1999/10/28 06:59:15 sakamoto Exp $
+@comment $NetBSD$
 bin/Rollemup
 bin/rollemup
+share/examples/Rollemup/Highscore.html
+share/examples/Rollemup/Rollemup.ini
+share/games/Rollemup/Media/Rollemup.15.MSF
+share/games/Rollemup/Media/Rollemup.8.MSF
+share/games/Rollemup/README
+share/games/Rollemup/README.Rollemup
+share/games/Rollemup/Upload/hiscore.jpg
+share/games/Rollemup/Upload/name.jpg
+share/games/Rollemup/Upload/send.gif
+@pkgdir share/games/Rollemup/Games
