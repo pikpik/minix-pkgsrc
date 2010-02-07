@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.38 2009/05/19 08:59:15 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2009/06/14 22:58:01 joerg Exp $
 
 DISTNAME=	Rollemup
 PKGNAME=	rollemup-1.0
 PKGREVISION=	3
 CATEGORIES=	games
-MASTER_SITES=	http://savor.gulic.org/demos/
+MASTER_SITES=	http://ftp.giga.or.at/pub/lost-distfiles/ \
+		ftp://ftp.tw.freebsd.org/pub/ports/distfiles/ \
+		http://www.uberstudent.org/archive/programs/games/
 # was http://usa.lostboys.nl/medialab/rollemup/Linux/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
