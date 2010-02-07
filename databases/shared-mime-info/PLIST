@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.14 2009/06/14 17:43:26 joerg Exp $
+@comment $NetBSD$
 bin/update-mime-database
 man/man1/update-mime-database.1
+share/locale/ara/LC_MESSAGES/shared-mime-info.mo
 share/locale/az/LC_MESSAGES/shared-mime-info.mo
 share/locale/be@latin/LC_MESSAGES/shared-mime-info.mo
 share/locale/bg/LC_MESSAGES/shared-mime-info.mo
