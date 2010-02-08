@@ -1,4 +1,2 @@
 @comment $NetBSD$
-share/texmf-dist/fonts/map/glyphlist/glyphlist.txt
-share/texmf-dist/fonts/map/glyphlist/pdfglyphlist.txt
 share/texmf-dist/fonts/map/glyphlist/texglyphlist.txt
