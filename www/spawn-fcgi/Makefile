@@ -14,6 +14,6 @@ CONFLICTS=       lighttpd<1.4.23
 
 GNU_CONFIGURE=		yes
 
-RCD_SCRIPTS=		spawn-fcgi
+RCD_SCRIPTS=		spawnfcgi
 
 .include "../../mk/bsd.pkg.mk"
