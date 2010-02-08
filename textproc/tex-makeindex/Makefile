@@ -1,5 +1,5 @@
 # $NetBSD: Makefile,v 1.1.1.1 2009/06/07 06:29:45 minskim Exp $
-# TeX Live Revision 12671
+# TeX Live Revision 16044
 
 DISTNAME=	makeindex
 PKGNAME=	tex-${DISTNAME}-2.12
@@ -9,5 +9,5 @@ DIST_SUBDIR=	${PKGNAME}
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Style files for makeindex
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
