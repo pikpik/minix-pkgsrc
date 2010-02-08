@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.335 2010/02/06 00:57:24 minskim Exp $
+# $NetBSD: Makefile,v 1.336 2010/02/08 05:07:52 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -163,6 +163,7 @@ SUBDIR+=	tex-chemarrow
 SUBDIR+=	tex-cite
 SUBDIR+=	tex-cite-doc
 SUBDIR+=	tex-collection-basic
+SUBDIR+=	tex-collection-documentation-base-doc
 SUBDIR+=	tex-colortbl
 SUBDIR+=	tex-colortbl-doc
 SUBDIR+=	tex-cooking
