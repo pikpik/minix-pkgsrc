@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.27 2010/01/20 03:31:58 jakllsch Exp $
+# $NetBSD: Makefile,v 1.28 2010/01/26 02:01:47 jakllsch Exp $
 
-DISTNAME=		avrdude-5.8
-PKGREVISION=		2
+DISTNAME=		avrdude-5.10
 CATEGORIES=		cross
 MASTER_SITES=		http://download.savannah.gnu.org/releases/avrdude/
 
