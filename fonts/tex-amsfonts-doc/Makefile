@@ -1,13 +1,13 @@
 # $NetBSD$
-# TeX Live Revision 7340
+# TeX Live Revision 15878
 
 DISTNAME=	amsfonts.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-2.2
+PKGNAME=	tex-${DISTNAME:S/./-/}-3.0
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-amsfonts
 
 CONFLICTS+=	teTeX-texmf<=3.0nb13
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
