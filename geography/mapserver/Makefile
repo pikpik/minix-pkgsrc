@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/01/18 09:58:55 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2010/01/26 09:01:24 adam Exp $
 
 DISTNAME=	mapserver-5.6.1
 CATEGORIES=	geography www
@@ -13,6 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 USE_LANGUAGES=		c c++
+USE_TOOLS+=		pkg-config
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-cairo
