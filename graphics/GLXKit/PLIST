@@ -1,6 +1,0 @@
-@comment $NetBSD$
-System/Library/Headers/GLXKit/G3DGLXCamera.h
-System/Library/Headers/GLXKit/G3DGLXKit.h
-System/Library/Headers/GLXKit/G3DXEventHandler.h
-System/Library/Libraries/libGLXKit.so
-System/Library/Libraries/libGLXKit.so.0.0.1

@@ -1,6 +1,0 @@
-@comment $NetBSD$
-System/Library/Headers/GlutKit/G3DGlutCamera.h
-System/Library/Headers/GlutKit/G3DGlutKit.h
-System/Library/Libraries/libGlutKit.so
-System/Library/Libraries/libGlutKit.so.0.5.0
-@pkgdir share/GNUstep/Local/Headers/GlutKit

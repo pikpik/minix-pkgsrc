@@ -1,17 +1,13 @@
-# $NetBSD: Makefile,v 1.548 2010/01/16 07:12:23 minskim Exp $
+# $NetBSD: Makefile,v 1.549 2010/01/21 12:37:02 obache Exp $
 #
 
 COMMENT=	Graphics tools and libraries
 
-SUBDIR+=	3DKit
 SUBDIR+=	CRWInfo
 SUBDIR+=	Cenon
 SUBDIR+=	Coin
-SUBDIR+=	GLXKit
 SUBDIR+=	GMT
 SUBDIR+=	GUIlib
-SUBDIR+=	GeometryKit
-SUBDIR+=	GlutKit
 SUBDIR+=	GraphicsMagick
 SUBDIR+=	ImageMagick
 SUBDIR+=	ImageViewer
@@ -21,8 +17,6 @@ SUBDIR+=	MesaLib
 SUBDIR+=	Ngraph
 SUBDIR+=	OpenRM
 SUBDIR+=	PanoTools
-SUBDIR+=	RenderKit
-SUBDIR+=	SDLKit
 SUBDIR+=	SDL_image
 SUBDIR+=	TiffIO
 SUBDIR+=	aalib
