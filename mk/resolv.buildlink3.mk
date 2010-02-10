@@ -1,4 +1,4 @@
-# $NetBSD: resolv.buildlink3.mk,v 1.2 2009/01/20 21:30:41 adrianp Exp $
+# $NetBSD: resolv.buildlink3.mk,v 1.3 2009/03/20 19:25:01 joerg Exp $
 #
 # This Makefile fragment is included by package Makefiles and
 # buildlink3.mk files for the packages that need a thread-safe
@@ -43,7 +43,7 @@ USE_BUILTIN.resolv?=	no
 BUILDLINK_TREE+=		resolv -resolv
 BUILDLINK_AUTO_VARS.resolv=	${RESOLV_AUTO_VARS}
 .else
-.  include "../../net/bind9/buildlink3.mk"
+.  include "../../net/bind95/buildlink3.mk"
 
 BUILDLINK_AUTO_VARS.bind=	${RESOLV_AUTO_VARS}
 BUILDLINK_LDFLAGS.resolv=	${BUILDLINK_LDFLAGS.bind}
