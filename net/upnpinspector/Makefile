@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/08 17:44:20 drochner Exp $
 #
 
 DISTNAME=	UPnP-Inspector-0.2.2
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://coherence.beebits.net/download/
 

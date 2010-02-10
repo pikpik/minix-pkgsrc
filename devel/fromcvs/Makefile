@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2009/05/19 08:59:08 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2009/06/13 06:46:42 rillig Exp $
 
 DISTNAME=	c31a1dd9cbb2
 # Last part of PKGNAME is changeset number
 PKGNAME=	fromcvs-0.0.0.132
+PKGREVISION=	1
 CATEGORIES=	devel scm
 MASTER_SITES=	http://ww2.fs.ei.tum.de/~corecode/hg/fromcvs/archive/
 EXTRACT_SUFX=	.tar.bz2

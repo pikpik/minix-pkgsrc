@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2009/07/29 16:33:48 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2009/11/15 13:19:02 drochner Exp $
 #
 
 DISTNAME=	picard-0.12.1
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.musicbrainz.org/pub/musicbrainz/picard/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2008/04/30 13:38:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2008/06/20 01:09:37 joerg Exp $
 #
 
 DISTNAME=	vxargs-0.3.3
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dharma.cis.upenn.edu/planetlab/vxargs/
 EXTRACT_SUFX=	.py

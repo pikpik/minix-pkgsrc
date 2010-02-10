@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2009/02/09 22:56:27 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/03/06 15:17:07 wiz Exp $
 #
 
 DISTNAME=		asciidoc-8.3.3
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${HOMEPAGE}	\
 			${MASTER_SITE_SOURCEFORGE:=asciidoc/}

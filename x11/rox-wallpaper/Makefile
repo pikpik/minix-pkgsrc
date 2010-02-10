@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2009/02/09 22:56:28 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2009/12/17 17:40:29 abs Exp $
 #
 
 DISTNAME=	wallpaper-2.0
 PKGNAME=	rox-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tgz

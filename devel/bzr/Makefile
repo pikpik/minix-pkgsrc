@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.44 2009/11/10 19:31:31 epg Exp $
+# $NetBSD: Makefile,v 1.45 2010/01/27 08:46:23 wiz Exp $
 
 DISTNAME=		bzr-${VER}
-#PKGREVISION=		1
+PKGREVISION=		1
 CATEGORIES=		devel scm
 MASTER_SITES=		http://launchpad.net/bzr/2.0/${VER}/+download/
 VER=			2.0.1

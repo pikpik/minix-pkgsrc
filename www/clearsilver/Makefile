@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2009/02/09 22:56:27 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2009/02/13 15:06:24 joerg Exp $
 
 META_PACKAGE=	yes
 
 .include "Makefile.common"
 
-PKGREVISION=		1
+PKGREVISION=		2
 
 DEPENDS+=${CLEARSILVER_BASE}{,nb[0-9]*}:../../www/clearsilver-base
 DEPENDS+=${PYPKGPREFIX}-${DISTNAME}{,nb[0-9]*}:../../www/py-clearsilver
