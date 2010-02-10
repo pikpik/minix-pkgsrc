@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.179 2009/11/10 16:20:17 wiz Exp $
+# $NetBSD: Makefile,v 1.180 2010/02/05 20:23:51 markd Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -173,10 +173,6 @@ SUBDIR+=	uips
 SUBDIR+=	vba
 SUBDIR+=	vice
 SUBDIR+=	vmips
-SUBDIR+=	vmware
-SUBDIR+=	vmware-module
-SUBDIR+=	vmware-module3
-SUBDIR+=	vmware3
 SUBDIR+=	wine
 SUBDIR+=	wine-devel
 SUBDIR+=	x48
