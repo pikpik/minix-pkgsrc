@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2009/05/13 08:27:49 hasso Exp $
+# $NetBSD: Makefile,v 1.5 2009/10/19 11:19:36 joerg Exp $
 #
 
 DISTNAME=	pisa-3.0.32
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc print www python
 MASTER_SITES=	http://pypi.python.org/packages/source/p/pisa/
 
