@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.480 2009/12/10 17:32:20 abs Exp $
+# $NetBSD: Makefile,v 1.481 2010/01/26 19:37:52 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -95,7 +95,6 @@ SUBDIR+=	fakeroot
 SUBDIR+=	fam
 SUBDIR+=	fastfs
 SUBDIR+=	fatback
-SUBDIR+=	fdgw
 SUBDIR+=	fdupes
 SUBDIR+=	file
 SUBDIR+=	filelight
