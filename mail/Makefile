@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.385 2010/02/06 16:15:43 taca Exp $
+# $NetBSD: Makefile,v 1.386 2010/02/09 22:06:38 seb Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -45,7 +45,6 @@ SUBDIR+=	claws-mail-tnef
 SUBDIR+=	claws-mail-trayicon
 SUBDIR+=	claws-mail-vcalendar
 SUBDIR+=	clawsker
-SUBDIR+=	columba
 SUBDIR+=	cone
 SUBDIR+=	coolmail
 SUBDIR+=	courier-analog
