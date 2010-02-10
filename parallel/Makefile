@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2009/11/26 17:04:18 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2009/12/12 23:32:10 asau Exp $
 #
 
 COMMENT=	Applications dealing with parallelism in computing
 
-SUBDIR+=	GridSim
 SUBDIR+=	clusterit
 SUBDIR+=	dqs
 SUBDIR+=	ganglia-monitor-core
