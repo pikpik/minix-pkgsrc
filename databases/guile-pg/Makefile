@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.39 2009/12/15 21:33:48 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2010/01/29 17:07:05 joerg Exp $
 #
 
 DISTNAME=	guile-pg-0.37
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	http://www.gnuvola.org/software/guile-pg/
 
