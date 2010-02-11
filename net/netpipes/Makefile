@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/12/17 05:20:22 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2006/03/14 16:00:41 jlam Exp $
 
 DISTNAME=	netpipes-4.2-export
 PKGNAME=	${DISTNAME:S/-export//}
@@ -8,6 +8,8 @@ MASTER_SITES=	http://web.purplefrog.com/ftp/thoth/netpipes/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://web.purplefrog.com/~thoth/netpipes/netpipes.html
 COMMENT=	Utilities for communicating via sockets
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_TOOLS+=	tbl
