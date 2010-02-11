@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/squeak/${PKGVERSION}/UUIDPlugin
+lib/squeak/${PKGVERSION}/vm-display-fbdev
+lib/squeak/${PKGVERSION}/vm-sound-ALSA
