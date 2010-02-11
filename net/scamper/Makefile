@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/04/20 22:57:06 rpaulo Exp $
+# $NetBSD: Makefile,v 1.6 2007/07/08 12:35:11 wiz Exp $
 #
 
 DISTNAME=	scamper-cvs-20060331
@@ -10,12 +10,14 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.wand.net.nz/scamper/
 COMMENT=	Dual-stack traceroute software
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 INSTALLATION_DIRS=bin
 
 MAKE_FLAGS+=	WITH_DEBUG=yes	# recommended by the the software developer
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/scamper ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/scamper ${DESTDIR}${PREFIX}/bin
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.scamper
 PKG_OPTIONS_REQUIRED_GROUPS=	inet6 # require inet6 capability

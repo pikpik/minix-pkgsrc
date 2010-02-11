@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/03/04 21:30:24 jlam Exp $
+# $NetBSD: Makefile,v 1.9 2006/11/09 09:36:41 rillig Exp $
 
 DISTNAME=	tcpdmerge-1.0
 CATEGORIES=	net
@@ -9,8 +9,13 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://phantom.nemoto.ecei.tohoku.ac.jp/~akiraka/tcpdmerge/
 COMMENT=	Merge two tcpdump output files
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_BSD_MAKEFILE=	yes
+
 WRKSRC=		${WRKDIR}
-MAKE_ENV+=	${BSD_MAKE_ENV}
+
+INSTALLATION_DIRS+=	bin
 
 post-extract:
 	cp ${FILESDIR}/Makefile ${WRKSRC}

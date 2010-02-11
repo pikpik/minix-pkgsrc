@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.28 2009/05/19 08:59:28 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2009/08/25 11:57:45 wiz Exp $
 
 DISTNAME=		speedtouch-1.3.1
 PKGREVISION=		4
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=speedtouch/}
 DISTFILES=		${DISTNAME}.tar.bz2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 #
 # Firmware license and link from:
@@ -45,6 +47,8 @@ pre-extract:
 SAMPLECONF=	${WRKSRC}/doc-bsd/ppp.conf.sample
 
 INSTALLATION_DIRS=	libdata/speedtouch
+INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} \
+			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 post-build:
 	${CP} ${SAMPLECONF} ${SAMPLECONF}.pre
