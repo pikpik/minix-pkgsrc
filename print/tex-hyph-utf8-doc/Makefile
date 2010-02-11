@@ -1,11 +1,11 @@
 # $NetBSD$
-# TeX Live Revision 11171
+# TeX Live Revision 15878
 
 DISTNAME=	hyph-utf8.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-2008.11171
+PKGNAME=	tex-${DISTNAME:S/./-/}-2009
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-hyph-utf8
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
