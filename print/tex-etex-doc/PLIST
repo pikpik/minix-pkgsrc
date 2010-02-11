@@ -1,5 +1,6 @@
 @comment $NetBSD$
-share/texmf-dist/doc/etex/base/etex.html
+man/man1/etex.1
+share/texmf-dist/doc/etex/base/NTS-FAQ
 share/texmf-dist/doc/etex/base/etex_gen.tex
 share/texmf-dist/doc/etex/base/etex_man.pdf
 share/texmf-dist/doc/etex/base/etex_man.sty
