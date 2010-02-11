@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/05/19 08:59:12 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2009/10/11 15:33:27 sno Exp $
 
 PKGNAME=		sapnwrfcsdk-7.11
 CATEGORIES=		devel
@@ -59,6 +59,10 @@ BROKEN=		Architecture ${MACHINE_ARCH} on platform ${OPSYS} not supported
 .endif
 .else
 BROKEN=		Platform ${OPSYS} not supported
+.endif
+
+.if !exists(DOWNLOADED_DISTFILE) && make(pbulk-index)
+PKG_FAIL_REASON+=	"Missing distfile"
 .endif
 
 EXTRACT_CMD=		SAPCAR -xvf ${DOWNLOADED_DISTFILE}
