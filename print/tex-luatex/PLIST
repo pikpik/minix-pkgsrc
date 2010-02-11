@@ -1,4 +1,3 @@
 @comment $NetBSD$
-bin/pdfluatex
-share/texmf/fmtutil/format.luatex.cnf
+bin/dviluatex
 share/texmf/tex/generic/config/luatexiniconfig.tex
