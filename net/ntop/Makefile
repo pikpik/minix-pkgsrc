@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2010/01/01 13:50:09 tron Exp $
+# $NetBSD: Makefile,v 1.57 2010/01/17 12:02:34 wiz Exp $
 
 DISTNAME=	ntop-3.3.10
 PKGREVISION=	2
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ntop/}
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.ntop.org/ntop.html
 COMMENT=	Shows network usage (similar to "top" for processes)
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ntop-[0-9]*
 
