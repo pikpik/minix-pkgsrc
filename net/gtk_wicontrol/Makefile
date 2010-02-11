@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2006/06/09 06:37:51 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2007/01/08 16:16:38 joerg Exp $
 
 DISTNAME=	gtk_wicontrol-0.17
 PKGREVISION=	4
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.izawa.org/software/gtk_wicontrol/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.izawa.org/software/gtk_wicontrol/
 COMMENT=	GTK+-based Wavelan status meter
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	*BSD-*-* DragonFly-*-*
 
