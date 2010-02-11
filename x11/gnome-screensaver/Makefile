@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.38 2009/11/17 17:54:25 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2009/11/18 08:12:12 wiz Exp $
 #
 
-DISTNAME=	gnome-screensaver-2.28.0
-PKGREVISION=	1
+DISTNAME=	gnome-screensaver-2.28.2
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-screensaver/2.28/}
 EXTRACT_SUFX=	.tar.bz2
