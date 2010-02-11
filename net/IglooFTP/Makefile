@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/02/20 12:45:06 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2007/12/02 11:25:23 wiz Exp $
 
 DISTNAME=	IglooFTP-0.6.1
 PKGREVISION=	5
@@ -9,6 +9,8 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://www.littleigloo.org/iglooftp.php3
 COMMENT=	Easy to use FTP client for X Window System
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DIRS=	src
 
@@ -24,6 +26,8 @@ LDFLAGS.resolv=	-lresolv
 .endif
 
 MAKE_ENV+=	LDFLAGS.resolv=${LDFLAGS.resolv:Q}
+
+INSTALLATION_DIRS+=	bin
 
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"

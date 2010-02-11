@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/11/19 08:03:05 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2009/03/22 04:53:39 manu Exp $
 #
 
 DISTNAME=		bounce-0.0
@@ -8,6 +8,8 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Tool to forward TCP connection from one IP to another
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 CONFLICTS+=		majordomo-*
 
 WRKSRC=			${WRKDIR}/bounce
@@ -16,7 +18,10 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 
 BUILD_TARGET=		bounce
 
-post-install:
-	strip ${PREFIX}/bin/bounce
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/bounce ${DESTDIR}${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/bounce.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"
