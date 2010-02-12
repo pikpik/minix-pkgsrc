@@ -1,4 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2006/10/10 00:27:30 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.17 2007/02/22 19:27:03 wiz Exp $
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
@@ -57,7 +59,9 @@ REQD_DIRS=	${EGDIR}
 OWN_DIRS=	${CONFDIR}
 CONF_FILES=	${EGDIR}/filter.conf ${CONFDIR}/filter.conf
 
+INSTALLATION_DIRS+=	${EGDIR}
+
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/filter.conf ${EGDIR}
+	${INSTALL_DATA} ${WRKSRC}/filter.conf ${DESTDIR}${EGDIR}
 
 .include "../../mk/bsd.pkg.mk"
