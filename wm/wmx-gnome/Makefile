@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2006/01/12 18:27:53 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2006/02/05 23:11:16 joerg Exp $
 
 PKGNAME=	wmx-gnome-${WMX_VERS}
 PKGREVISION=	2
 CATEGORIES+=	gnome
 COMMENT=	Another X11 window manager based on wm2, with GNOME compliance
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../wm/wmx/Makefile.common"
 
