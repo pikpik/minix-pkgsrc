@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.317 2010/02/10 18:01:40 joerg Exp $
+# $NetBSD: Makefile,v 1.318 2010/02/11 13:14:46 joerg Exp $
 #
 
 COMMENT=	Databases
@@ -109,6 +109,7 @@ SUBDIR+=	p5-DBIx-Class
 SUBDIR+=	p5-DBIx-Class-Cursor-Cached
 SUBDIR+=	p5-DBIx-Class-DigestColumns
 SUBDIR+=	p5-DBIx-Class-DynamicDefault
+SUBDIR+=	p5-DBIx-Class-EncodedColumn
 SUBDIR+=	p5-DBIx-Class-Fixtures
 SUBDIR+=	p5-DBIx-Class-InflateColumn-IP
 SUBDIR+=	p5-DBIx-Class-IntrospectableM2M
