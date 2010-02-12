@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/apis
+bin/musca
+bin/xlisten
+man/man1/musca.1
