@@ -76,6 +76,7 @@ _texlive-set-permission:
 
 _texlive-info:
 	if [ -d ${WRKSRC}/texmf/doc/info ]; then \
+		${RM} -f ${WRKSRC}/texmf/doc/info/dir; \
 		${MKDIR} ${WRKSRC}/info; \
 		${MV} ${WRKSRC}/texmf/doc/info/* ${WRKSRC}/info; \
 		${RMDIR} -p ${WRKSRC}/texmf/doc/info || ${TRUE}; \
