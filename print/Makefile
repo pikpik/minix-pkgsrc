@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.340 2010/02/11 19:03:11 jnemeth Exp $
+# $NetBSD: Makefile,v 1.341 2010/02/12 00:20:02 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -267,6 +267,7 @@ SUBDIR+=	tex-kotex-dev
 SUBDIR+=	tex-kotex-dev-doc
 SUBDIR+=	tex-kotex-doc
 SUBDIR+=	tex-kpathsea
+SUBDIR+=	tex-kpathsea-doc
 SUBDIR+=	tex-lambda
 SUBDIR+=	tex-latex
 SUBDIR+=	tex-latexconfig
