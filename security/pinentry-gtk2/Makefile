@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/12/15 19:50:47 drochner Exp $
+# $NetBSD: Makefile,v 1.1 2010/02/07 15:36:58 drochner Exp $
 #
 
 DISTNAME=		pinentry-0.7.6
@@ -12,6 +12,7 @@ COMMENT=		Applications for entering PINs or Passphrases
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--enable-pinentry-gtk2
