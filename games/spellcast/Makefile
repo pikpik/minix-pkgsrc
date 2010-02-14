@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/03/24 19:21:24 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/01/19 09:16:22 wiz Exp $
 #
 
 DISTNAME=		spellcast
@@ -11,6 +11,8 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.eblong.com/zarf/spellcast.html
 COMMENT=		Game of dueling wizards for two players
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=		yes
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man6
