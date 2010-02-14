@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2010/01/17 12:02:23 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2010/01/23 04:50:22 obache Exp $
 #
 
-DISTNAME=		dbmail-2.2.14
+DISTNAME=		dbmail-2.2.15
 CATEGORIES=		mail
 MASTER_SITES=		http://www.dbmail.org/download/2.2/
 
