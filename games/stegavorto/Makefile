@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/01/18 09:58:54 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/02/10 19:17:39 joerg Exp $
 #
 
 DISTNAME=	stegavorto-src-2009.01.22
@@ -11,6 +11,8 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://james.hamsterrepublic.com/?p=130
 COMMENT=	Discover secret messages embedded in the works of great authors
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/stegavorto-src
 USE_LANGUAGES=	# none
