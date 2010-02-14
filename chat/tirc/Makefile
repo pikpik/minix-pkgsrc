@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/03/04 21:29:04 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2006/10/04 20:50:47 wiz Exp $
 #
 
 DISTNAME=	tirc-1.2
@@ -10,11 +10,18 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# http://home.mayn.de/jean-luc/alt/tirc/
 COMMENT=	Token's 'Internet Relay Chat' Client
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+="--with-ansi-colours"
 
 LIBS.SunOS+=	-lnsl -lsocket
+
+INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1 share/tirc
+
+INSTALL_MAKE_FLAGS+=	bindir=${DESTDIR}${PREFIX}/bin \
+			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 post-patch:
 	${SED} "s,/usr/local,${PREFIX},g" ${WRKSRC}/tirc.1		\
@@ -29,8 +36,7 @@ post-patch:
 .endif
 
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/tirc
-	${INSTALL_DATA} ${WRKSRC}/dot.tircrc ${PREFIX}/share/tirc/tircrc
+	${INSTALL_DATA} ${WRKSRC}/dot.tircrc ${DESTDIR}${PREFIX}/share/tirc/tircrc
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
