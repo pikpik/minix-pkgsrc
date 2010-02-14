@@ -1,11 +1,16 @@
 # $NetBSD$
-# TeX Live Revision 12671
+# TeX Live Revision 16044
 
 DISTNAME=	makeindex.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2.12
+PKGREVISION=	1
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-makeindex
 
-.include "../../print/texlive/module.mk"
+TEX_TEXMF_DIRS+=	${PREFIX}/share/texmf-dist
+
+TEXLIVE_IGNORE_PATTERNS=	texmf/doc/man
+
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
