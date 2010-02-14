@@ -1,0 +1,3 @@
+@comment $NetBSD: PLIST,v 1.2 2008/12/02 22:26:45 rillig Exp $
+lib/libefence.la
+man/man3/libefence.3
