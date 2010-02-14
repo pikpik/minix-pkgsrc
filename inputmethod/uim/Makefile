@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2010/01/20 11:06:07 obache Exp $
+# $NetBSD: Makefile,v 1.40 2010/01/20 11:10:46 obache Exp $
 #
 
 .include "../../inputmethod/uim/Makefile.common"
@@ -19,8 +19,6 @@ CONFIGURE_ARGS+=	--disable-emacs
 CONFIGURE_ARGS+=	--with-libgcroots=installed
 
 .include "options.mk"
-
-# XXXUEBAYASI why is readline a must?
 
 PLIST_VARS+=		editline
 CHECK_BUILTIN.readline:=	yes
