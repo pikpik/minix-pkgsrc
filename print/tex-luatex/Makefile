@@ -3,7 +3,7 @@
 
 DISTNAME=	luatex
 PKGNAME=	tex-${DISTNAME}-0.2
-PKGREVISION=	1
+PKGREVISION=	2
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://www.luatex.org/
@@ -16,7 +16,7 @@ DEPENDS+=	tex-plain>=3.14159265.12854:../../print/tex-plain
 
 INSTALLATION_DIRS+=	bin
 
-TEX_FORMATS+=	"luatex luatex language.def luatex.ini\\\ndviluatex luatex language.def dviluatex.ini"
+TEX_FORMATS+=	"luatex luatex language.def luatex.ini\\ndviluatex luatex language.def dviluatex.ini\\n"
 TEX_TEXMF_DIRS+=	${PREFIX}/share/texmf
 
 .include "../../print/texlive/package.mk"
