@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.334 2009/11/29 07:33:51 obache Exp $
+# $NetBSD: Makefile,v 1.335 2010/01/21 10:25:25 drochner Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -217,6 +217,7 @@ SUBDIR+=	taskjuggler
 SUBDIR+=	tds
 SUBDIR+=	team
 SUBDIR+=	tellico
+SUBDIR+=	tellico-kde3
 SUBDIR+=	teseq
 SUBDIR+=	tmux
 SUBDIR+=	topless
