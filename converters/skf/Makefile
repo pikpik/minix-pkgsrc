@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.25 2010/02/06 11:26:44 obache Exp $
+# $NetBSD: Makefile,v 1.26 2010/02/07 13:17:55 obache Exp $
 
-DISTNAME=	skf_${VERSION}.0
+DISTNAME=	skf_${VERSION}.0a
 VERSION=	1.97
 PKGNAME=	${DISTNAME:S/_/-/}
 CATEGORIES=	japanese converters
