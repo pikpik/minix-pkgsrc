@@ -1,8 +1,8 @@
 # $NetBSD$
-# TeX Live Revision 16376
+# TeX Live Revision 16770
 
 DISTNAME=	dvips.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-2009.16376
+PKGNAME=	tex-${DISTNAME:S/./-/}-2009.16770
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-dvips
