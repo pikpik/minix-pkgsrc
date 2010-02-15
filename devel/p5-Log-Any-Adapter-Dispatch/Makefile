@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/16 22:39:16 sno Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/12 15:31:13 sno Exp $
 #
 
-DISTNAME=	Log-Any-Adapter-Dispatch-0.05
+DISTNAME=	Log-Any-Adapter-Dispatch-0.06
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	3
 CATEGORIES=	devel perl5
