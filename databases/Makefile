@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.318 2010/02/11 13:14:46 joerg Exp $
+# $NetBSD: Makefile,v 1.319 2010/02/12 19:36:00 sno Exp $
 #
 
 COMMENT=	Databases
@@ -59,6 +59,7 @@ SUBDIR+=	mysql4-client
 SUBDIR+=	mysql4-server
 SUBDIR+=	mysql5-client
 SUBDIR+=	mysql5-server
+SUBDIR+=	mysql51-embedded
 SUBDIR+=	mysqlcc
 SUBDIR+=	mytop
 SUBDIR+=	nss_ldap
