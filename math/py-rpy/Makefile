@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/06/12 02:14:37 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2008/09/19 14:39:00 joerg Exp $
 #
 
 DISTNAME=	rpy-0.99.0
@@ -16,6 +16,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 PYDISTUTILSPKG=		YES
 
 BUILDLINK_API_DEPENDS.R+= R>=2.7.0
+
+BROKEN=		Doesn't support modern R.
 
 .include "../../lang/python/extension.mk"
 .include "../../math/py-Numeric/buildlink3.mk"
