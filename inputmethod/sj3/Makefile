@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2010/02/15 13:35:21 obache Exp $
 #
 
 .include "version.mk"
@@ -13,7 +13,7 @@ COMMENT=	SJ3 Japanese input method
 
 META_PACKAGE=	yes
 
-DEPENDS+=	sj3-server>=${SJ3_VERSION}:../../wip/sj3-server
-DEPENDS+=	sj3-client>=${SJ3_VERSION}:../../wip/sj3-client
+DEPENDS+=	sj3-server>=${SJ3_VERSION}:../../inputmethod/sj3-server
+DEPENDS+=	sj3-client>=${SJ3_VERSION}:../../inputmethod/sj3-client
 
 .include "../../mk/bsd.pkg.mk"
