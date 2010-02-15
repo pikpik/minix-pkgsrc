@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2009/03/13 13:33:34 hasso Exp $
+# $NetBSD: Makefile,v 1.46 2009/06/05 22:23:00 zafer Exp $
 
 SNESVER=		1.43
 DISTNAME=		snes9x-${SNESVER}-src
@@ -12,6 +12,8 @@ HOMEPAGE=		http://www.snes9x.com/
 COMMENT=		Super Nintendo Entertainment System (SNES) emulator
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/snes9x
 USE_LANGUAGES=		c c++
