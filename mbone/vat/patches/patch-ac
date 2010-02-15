@@ -1,7 +1,7 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.5 2010/01/25 21:07:48 is Exp $
 
---- /pkg_comp/obj/pkgsrc/mbone/vat/netbsd5/vat-4.0b2/main.cc.orig	1996-05-03 13:27:22.000000000 +0000
-+++ /pkg_comp/obj/pkgsrc/mbone/vat/netbsd5/vat-4.0b2/main.cc
+--- main.cc.orig	1996-05-03 13:27:22.000000000 +0000
++++ main.cc
 @@ -63,7 +63,7 @@ extern "C" {
  #include "inet.h"
  #include "Tcl.h"
