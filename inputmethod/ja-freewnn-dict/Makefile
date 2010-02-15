@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/12/05 20:50:23 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2009/04/08 22:43:23 joerg Exp $
 #
 
 PKGNAME=	ja-FreeWnn-dict-1.10
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.freewnn.org/
 COMMENT=	Japanese/Chinese/Korean input method (Japanese dictionary)
 
 BUILD_DEPENDS+=	ja-FreeWnn-server-bin>=1.10nb1:../../inputmethod/ja-freewnn-server-bin
+
+MAKE_JOBS_SAFE=	no
 
 WNNDIR=		Wnn
 WNN_TARGET=	DICT
