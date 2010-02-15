@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/dvilualatex
+bin/latex
+bin/lualatex
+bin/pdflatex
