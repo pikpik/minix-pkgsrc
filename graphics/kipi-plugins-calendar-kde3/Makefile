@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/02/03 22:42:10 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/15 14:38:20 wiz Exp $
 
 DISTNAME=	kipi-plugins-0.1.7
 PKGNAME=	kipi-plugins-calendar-0.1.7
@@ -9,7 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kipi-plugins.org/drupal/
-COMMENT=	Kipi calendar plugin
+COMMENT=	Kipi calendar plugin (KDE3)
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
