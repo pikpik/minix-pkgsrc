@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2010/02/04 11:22:29 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2010/02/10 19:17:42 joerg Exp $
 #
 
 DISTNAME=	tellico-1.3.6
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	misc
 MASTER_SITES=	http://www.periapsis.org/tellico/download/
 
@@ -28,6 +28,7 @@ USE_TOOLS+=		gmake perl:build pkg-config
 .include "../../misc/kdepim3/buildlink3.mk"
 .include "../../multimedia/kdemultimedia3/buildlink3.mk"
 .include "../../net/yaz/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
