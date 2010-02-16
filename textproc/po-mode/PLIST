@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${EMACS_LISPPREFIX}/po-mode/po-compat.el
+${EMACS_LISPPREFIX}/po-mode/po-compat.elc
+${EMACS_LISPPREFIX}/po-mode/po-mode.el
+${EMACS_LISPPREFIX}/po-mode/po-mode.elc
+${EMACS_LISPPREFIX}/po-mode/start-po.el
+${EMACS_LISPPREFIX}/po-mode/start-po.elc
