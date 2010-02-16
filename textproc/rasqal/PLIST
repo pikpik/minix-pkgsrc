@@ -21,9 +21,12 @@ share/gtk-doc/html/rasqal/rasqal-section-prefix.html
 share/gtk-doc/html/rasqal/rasqal-section-query-results-formatter.html
 share/gtk-doc/html/rasqal/rasqal-section-query-results.html
 share/gtk-doc/html/rasqal/rasqal-section-query.html
+share/gtk-doc/html/rasqal/rasqal-section-row.html
 share/gtk-doc/html/rasqal/rasqal-section-triple.html
 share/gtk-doc/html/rasqal/rasqal-section-triples-source.html
+share/gtk-doc/html/rasqal/rasqal-section-updates.html
 share/gtk-doc/html/rasqal/rasqal-section-variable.html
+share/gtk-doc/html/rasqal/rasqal-section-variables-table.html
 share/gtk-doc/html/rasqal/rasqal-section-xsd.html
 share/gtk-doc/html/rasqal/rasqal.devhelp
 share/gtk-doc/html/rasqal/rasqal.devhelp2
