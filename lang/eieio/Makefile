@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/10/11 09:31:57 uebayasi Exp $
+# $NetBSD: Makefile,v 1.19 2009/08/06 01:44:53 minskim Exp $
 #
 
 DISTNAME=	eieio-0.17
@@ -12,6 +12,10 @@ HOMEPAGE=	http://cedet.sourceforge.net/eieio.shtml
 COMMENT=	Enhanced Integration of Emacs Interpreted Objects
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+EMACS_VERSIONS_ACCEPTED= \
+	emacs20 emacs21 emacs21nox emacs22 emacs22nox \
+	xemacs214 xemacs214nox xemacs215 xemacs215nox
 
 EMACS_MODULES+=	base
 MAKEFLAGS+=	EMACS=${EMACS_BIN:Q}
