@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.805 2010/02/14 22:59:57 spz Exp $
+# $NetBSD: Makefile,v 1.806 2010/02/15 15:29:34 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -468,6 +468,7 @@ SUBDIR+=	ruby-icmp
 SUBDIR+=	ruby-netaddr
 SUBDIR+=	ruby-snmp
 SUBDIR+=	samba
+SUBDIR+=	samba33
 SUBDIR+=	scamper
 SUBDIR+=	scapy
 SUBDIR+=	scdp
