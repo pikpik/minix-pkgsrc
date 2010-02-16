@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/04/17 17:59:34 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2009/12/06 22:45:50 wiz Exp $
 #
 
 DISTNAME=	gnome-menus-2.28.0.1
@@ -27,5 +27,4 @@ BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.6.0
 .include "../../sysutils/gnome-menus/buildlink3.mk"
 .include "../../lang/python/extension.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../mk/fam.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
