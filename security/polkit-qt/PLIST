@@ -10,6 +10,7 @@ include/PolicyKit/polkit-qt/actionbuttons.h
 include/PolicyKit/polkit-qt/auth.h
 include/PolicyKit/polkit-qt/context.h
 include/PolicyKit/polkit-qt/export.h
+include/PolicyKit/polkit-qt/polkitqtversion.h
 lib/libpolkit-qt-core.so
 lib/libpolkit-qt-core.so.0
 lib/libpolkit-qt-core.so.${PKGVERSION}
