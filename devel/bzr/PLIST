@@ -1686,6 +1686,8 @@ ${PYSITELIB}/bzrlib/tests/test_patch.pyo
 ${PYSITELIB}/bzrlib/tests/test_patches.py
 ${PYSITELIB}/bzrlib/tests/test_patches.pyc
 ${PYSITELIB}/bzrlib/tests/test_patches.pyo
+${PYSITELIB}/bzrlib/tests/test_patches_data/binary-after-normal.patch
+${PYSITELIB}/bzrlib/tests/test_patches_data/binary.patch
 ${PYSITELIB}/bzrlib/tests/test_patches_data/diff
 ${PYSITELIB}/bzrlib/tests/test_patches_data/diff-2
 ${PYSITELIB}/bzrlib/tests/test_patches_data/diff-3
