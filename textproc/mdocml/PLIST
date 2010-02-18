@@ -1,5 +1,9 @@
-@comment $NetBSD: PLIST,v 1.2 2009/03/22 23:51:10 joerg Exp $
+@comment $NetBSD$
 bin/mandoc
 man/man1/mandoc.1
+man/man3
+man/man7/man.7
+man/man7/mandoc_char.7
+man/man7/manuals.7
 man/man7/mdoc.7
 share/examples/mandoc/example.style.css
