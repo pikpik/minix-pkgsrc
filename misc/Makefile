@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.335 2010/01/21 10:25:25 drochner Exp $
+# $NetBSD: Makefile,v 1.336 2010/02/15 14:55:00 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -70,6 +70,7 @@ SUBDIR+=	gnome-user-docs
 SUBDIR+=	gnome-utils
 SUBDIR+=	gnuls
 SUBDIR+=	goffice0.6
+SUBDIR+=	goffice0.8
 SUBDIR+=	gok
 SUBDIR+=	gone
 SUBDIR+=	gperiodic
