@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2010/01/25 14:14:59 sno Exp $
+# $NetBSD: Makefile,v 1.13 2010/02/02 12:43:41 sno Exp $
 
-DISTNAME=	Time-Piece-1.17
+DISTNAME=	Time-Piece-1.19
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tpc
 CATEGORIES=	time perl5
