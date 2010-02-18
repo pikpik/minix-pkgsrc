@@ -1,6 +1,10 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/02/21 15:15:29 wiz Exp $
+@comment $NetBSD$
 bin/scrotwm
+lib/libswmhack.so.0.0
 man/man1/scrotwm.1
+man/man1/scrotwm_es.1
+man/man1/scrotwm_it.1
+man/man1/scrotwm_ru.1
 share/examples/scrotwm/baraction.sh
 share/examples/scrotwm/initscreen.sh
 share/examples/scrotwm/screenshot.sh
