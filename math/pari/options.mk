@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.1 2010/02/06 10:37:06 sno Exp $
+# $NetBSD: options.mk,v 1.2 2010/02/19 08:33:28 schmonz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.pari
 PKG_SUPPORTED_OPTIONS=	gmp x11
-PKG_SUGGESTED_OPTIONS=	gmp
+PKG_SUGGESTED_OPTIONS=	gmp x11
 
 .include "../../mk/bsd.options.mk"
 
