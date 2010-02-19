@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.22 2007/10/25 22:00:56 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.23 2007/12/19 12:27:29 rillig Exp $
 
-DISTNAME=	netbsd-www-1.4
-PKGREVISION=	3
+DISTNAME=	netbsd-www-1.5
 CATEGORIES=	meta-pkgs
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -15,14 +13,19 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 # we add an explicit dependency on docbook-xsl here since earlier versions
 # generated slightly different html code, leading to a large number of
 # unneccessary 'regen' commits
-DEPENDS+=	docbook-xsl>=1.68.1:../../textproc/docbook-xsl
-DEPENDS+=	docbook-website>=2.6.0nb1:../../textproc/docbook-website
-DEPENDS+=	libxslt>=1.0.20:../../textproc/libxslt
 DEPENDS+=	ImageMagick>=5.5.7.11nb1:../../graphics/ImageMagick
-DEPENDS+=	xplanet>=1.2.0nb3:../../x11/xplanet
+DEPENDS+=	docbook-website>=2.6.0nb1:../../textproc/docbook-website
+DEPENDS+=	docbook-xsl>=1.68.1:../../textproc/docbook-xsl
+DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
+DEPENDS+=	ghostscript-[0-9]*:../../print/ghostscript
+DEPENDS+=	libxslt>=1.0.20:../../textproc/libxslt
 DEPENDS+=	opensp>=1.1:../../textproc/opensp
 DEPENDS+=	psutils>=1.17:../../print/psutils
+DEPENDS+=	tex-german-[0-9]*:../../print/tex-german
+DEPENDS+=	tex-latex-[0-9]*:../../print/tex-latex
 DEPENDS+=	w3m>=0.4:../../www/w3m
+DEPENDS+=	xplanet>=1.2.0nb3:../../x11/xplanet
+
 USE_TOOLS+=	perl:run
 
 META_PACKAGE=	yes
