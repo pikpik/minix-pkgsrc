@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.346 2010/02/18 10:08:28 wiz Exp $
+# $NetBSD: Makefile,v 1.347 2010/02/19 18:22:10 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -203,6 +203,7 @@ SUBDIR+=	tex-footmisc
 SUBDIR+=	tex-footmisc-doc
 SUBDIR+=	tex-geometry
 SUBDIR+=	tex-geometry-doc
+SUBDIR+=	tex-german
 SUBDIR+=	tex-glossaries
 SUBDIR+=	tex-graphics
 SUBDIR+=	tex-graphics-doc
@@ -375,3 +376,4 @@ SUBDIR+=	xpp
 SUBDIR+=	yup
 
 .include "../mk/misc/category.mk"
+
