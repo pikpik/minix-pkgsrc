@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.41 2008/06/20 01:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2010/01/17 12:02:36 wiz Exp $
 
 DISTNAME=	vtun-2.6
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	net
 MASTER_SITES=	http://vtun.sourceforge.net/
 
@@ -32,7 +32,7 @@ LOCKDIR=		/var/run/vtund
 LOGDIR=			/var/log/vtund
 
 CONF_FILES_PERMS=	${EGDIR}/vtund.conf ${PKG_SYSCONFDIR}/vtund.conf \
-			${ROOT_USER} ${ROOT_GROUP} 0600
+			${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0600
 OWN_DIRS=		${LOCKDIR} ${LOGDIR}
 
 INSTALLATION_DIRS=	${PKGMANDIR}/man5 ${PKGMANDIR}/man8 sbin ${EGDIR} ${DOCDIR}
