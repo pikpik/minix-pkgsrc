@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2009/08/16 14:24:01 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2009/10/31 02:54:34 wiz Exp $
 #
 
 DISTNAME=		libdaemon-0.14
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://0pointer.de/lennart/projects/libdaemon/
 
@@ -25,3 +26,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/README ${DESTDIR}${PREFIX}/share/doc/libdaemon
 
 .include "../../mk/bsd.pkg.mk"
+
+.if ${OPSYS} == "NetBSD" && ${OS_VERSION:M4.*} != ""
+BUILDLINK_TRANSFORM+=	rm:-Wl,--no-undefined
+.endif
