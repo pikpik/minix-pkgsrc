@@ -1,4 +1,4 @@
-# $NetBSD
+# $NetBSD$
 
 from distutils.core import setup, Extension
 
