@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- plugins/copy-tool/copy-tool.c	2010-02-19 08:21:55.000000000 +0000
 +++ plugins/copy-tool/copy-tool.c	2010-02-19 10:08:30.000000000 +0000
 @@ -40,6 +40,13 @@

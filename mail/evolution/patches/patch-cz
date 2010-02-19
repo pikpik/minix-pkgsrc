@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- plugins/templates/templates.c	2010-02-19 08:21:55.000000000 +0000
 +++ plugins/templates/templates.c	2010-02-19 10:26:03.000000000 +0000
 @@ -102,6 +102,14 @@

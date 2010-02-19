@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- plugins/groupwise-features/addressbook-groupwise.c	2010-02-19 08:21:55.000000000 +0000
 +++ plugins/groupwise-features/addressbook-groupwise.c	2010-02-19 10:14:02.000000000 +0000
 @@ -28,6 +28,13 @@
