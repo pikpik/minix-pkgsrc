@@ -1,4 +1,4 @@
-# $NetBSD: metadata.mk,v 1.31 2009/05/02 16:14:37 reed Exp $
+# $NetBSD: metadata.mk,v 1.32 2009/07/24 06:54:37 joerg Exp $
 
 ######################################################################
 ### The targets below are all PRIVATE.
@@ -217,8 +217,8 @@ MESSAGE_SUBST+=	PKGNAME=${PKGNAME}					\
 		X11PREFIX=${X11PREFIX}					\
 		X11BASE=${X11BASE}					\
 		PKG_SYSCONFDIR=${PKG_SYSCONFDIR}			\
-		ROOT_GROUP=${ROOT_GROUP}				\
-		ROOT_USER=${ROOT_USER}
+		ROOT_GROUP=${REAL_ROOT_GROUP}				\
+		ROOT_USER=${REAL_ROOT_USER}
 
 _MESSAGE_SUBST_SED=	${MESSAGE_SUBST:S/=/}!/:S/$/!g/:S/^/ -e s!\\\${/}
 
