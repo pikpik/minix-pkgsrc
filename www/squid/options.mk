@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.14 2008/09/12 14:59:52 taca Exp $
+# $NetBSD: options.mk,v 1.15 2008/10/24 14:14:53 taca Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.squid
 PKG_SUPPORTED_OPTIONS=	snmp ssl \
@@ -113,6 +113,8 @@ SQUID_BASIC_AUTH_HELPERS+=	PAM
 .if !empty(PKG_OPTIONS:Msnmp)
 CONFIGURE_ARGS+=	--enable-snmp
 PLIST.snmp=		yes
+.else
+CONFIGURE_ARGS+=	--disable-snmp
 .endif
 
 .if !empty(PKG_OPTIONS:Mssl)
