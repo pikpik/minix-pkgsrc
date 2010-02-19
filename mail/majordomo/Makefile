@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2009/02/17 12:57:07 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2009/05/19 08:59:21 wiz Exp $
 
 DISTNAME=		majordomo-1.94.5
 PKGREVISION=		2
@@ -69,6 +69,8 @@ MESSAGE_SED=		-e 's|$${PREFIX}|${PREFIX}|g'			\
 			-e 's|$${HOME}|${HOME}|g'			\
 			-e 's|$${MAJORDOMO_USER}|${MAJORDOMO_USER}|g'	\
 			-e 's|$${MAJORDOMO_GROUP}|${MAJORDOMO_GROUP}|g'	\
+
+INSTALLATION_DIRS=	${PKGMANDIR}/man8
 
 do-configure:
 	${SED} ${CONFIGURE_SED} ${WRKSRC}/Makefile > ${WRKSRC}/Makefile.netbsd
