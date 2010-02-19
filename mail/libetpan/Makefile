@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/01/17 12:02:24 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2010/02/19 20:16:40 heinz Exp $
 #
 
 DISTNAME=		libetpan-0.57
@@ -19,7 +19,10 @@ USE_LANGUAGES+=		c++
 USE_LANGUAGES+=		c
 MAKE_JOBS_SAFE=		no
 
+.include "../../mk/bsd.prefs.mk"
+.if empty(USE_DESTDIR:M[Yy][Ee][Ss])
 PRIVILEGED_STAGES+=	clean
+.endif
 
 SUBST_CLASSES+=		conf
 SUBST_STAGE.conf=	pre-configure
