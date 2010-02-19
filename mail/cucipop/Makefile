@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2008/03/04 17:57:18 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2009/05/19 08:59:21 wiz Exp $
 #
 
 DISTNAME=	cucipop-1.31
@@ -22,7 +22,7 @@ REQD_DIRS+=	${PREFIX}/share/cucipop/bulletins
 # directory.  The appropriate permissions should be set on sbin/cucipop
 # so that it can do this.
 #
-SPECIAL_PERMS+=	${PREFIX}/sbin/cucipop ${ROOT_USER} ${ROOT_GROUP} 2555
+SPECIAL_PERMS+=	${PREFIX}/sbin/cucipop ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 2555
 
 # XXX TODO:
 # XXX
