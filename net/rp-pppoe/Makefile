@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2007/09/29 21:46:33 bad Exp $
+# $NetBSD: Makefile,v 1.38 2009/01/11 02:50:46 jmcneill Exp $
 
 DISTNAME=	rp-pppoe-3.8
 PKGREVISION=	1
@@ -8,6 +8,8 @@ MASTER_SITES=	http://www.roaringpenguin.com/files/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.roaringpenguin.com/products/pppoe
 COMMENT=	Roaring Penguin's PPP over Ethernet client
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM+=	Interix-*-* # no userland protocol stack support
 
@@ -23,10 +25,13 @@ BUILD_DIRS=	src
 
 RCD_SCRIPTS=	pppoe
 
+INSTALLATION_DIRS+=	share/examples/rp-pppoe
+
+INSTALL_MAKE_FLAGS+=	RPM_INSTALL_ROOT=${DESTDIR}
+
 post-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/share/examples/rp-pppoe
 	cd ${WRKSRC}/configs && \
 	${INSTALL_DATA} pppoe.conf pppoe-server-options \
-	  ${PREFIX}/share/examples/rp-pppoe
+	    ${DESTDIR}${PREFIX}/share/examples/rp-pppoe
 
 .include "../../mk/bsd.pkg.mk"
