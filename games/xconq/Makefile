@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2008/11/10 17:21:35 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2010/02/14 08:17:11 dholland Exp $
 
 DISTNAME=		xconq-7.4.1
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		games x11
 MASTER_SITES=		ftp://sources.redhat.com/pub/xconq/
 
@@ -27,7 +27,7 @@ INFO_FILES=	# PLIST
 # the infrastructure.
 SETGIDGAME=		yes
 GAMEDIRMODE?=		775
-GAMEDIR_PERMS?=		${ROOT_USER} ${GAMES_GROUP} ${GAMEDIRMODE}
+GAMEDIR_PERMS?=		${GAMES_USER} ${GAMES_GROUP} ${GAMEDIRMODE}
 
 SPECIAL_PERMS+=		bin/xconq ${SETGID_GAMES_PERMS}
 SCOREDIR=		${VARBASE}/games/xconq/scores
