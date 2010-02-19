@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/03/03 17:45:35 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2009/11/30 00:03:08 dholland Exp $
 #
 
 DISTNAME=		gentle-97
@@ -11,6 +11,7 @@ HOMEPAGE=		http://gentle.compilertools.net/
 COMMENT=		Gentle Compiler Construction System
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 
 USE_LIBTOOL=		yes
 INSTALLATION_DIRS=	bin lib
