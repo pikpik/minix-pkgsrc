@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/01/04 12:31:02 ghen Exp $
+# $NetBSD: Makefile,v 1.6 2009/11/26 00:46:14 joerg Exp $
 
 DISTNAME=		torsmo-0.18
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=torsmo/}
 
@@ -29,7 +30,7 @@ CONFIGURE_ARGS+=	--x-libraries=${PREFIX}/lib
 
 .if (${OPSYS} == "NetBSD" || ${OPSYS} == "DragonFly" || ${OPSYS} == "FreeBSD" \
 			  || ${OPSYS} == "OpenBSD" || ${OPSYS} == "Linux")
-SPECIAL_PERMS+=	bin/torsmo ${BINOWN} kmem 2555
+SPECIAL_PERMS+=	bin/torsmo ${REAL_ROOT_USER} kmem 2555
 .endif
 
 do-install:
