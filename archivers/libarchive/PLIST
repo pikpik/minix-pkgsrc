@@ -1,9 +1,11 @@
-@comment $NetBSD: PLIST,v 1.5 2007/07/29 17:35:14 joerg Exp $
+@comment $NetBSD: PLIST,v 1.6 2007/11/30 21:32:27 joerg Exp $
 include/archive.h
 include/archive_entry.h
 lib/libarchive.la
+lib/pkgconfig/libarchive.pc
 man/man3/archive_entry.3
 man/man3/archive_read.3
+man/man3/archive_read_disk.3
 man/man3/archive_util.3
 man/man3/archive_write.3
 man/man3/archive_write_disk.3
