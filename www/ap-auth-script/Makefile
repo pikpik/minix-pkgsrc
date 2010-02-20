@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/06/02 18:27:59 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2006/08/09 10:46:47 wiz Exp $
 #
 
 DISTNAME=	auth_script-alpha1.10
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mod-auth-script/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mod-auth-script.sourceforge.net/
 COMMENT=	Apache module for script-based authentication
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ap-auth-script-[0-9]*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/10/17 19:24:10 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2010/02/12 21:17:22 joerg Exp $
 #
 
 DISTNAME=	ntlm2
@@ -28,10 +28,9 @@ MESSAGE_SUBST+=	EGDIR=${EGDIR}
 
 EGDIR=		${PREFIX}/share/examples/mod_ntlm
 
-INSTALLATION_DIRS+=	lib/httpd ${EGDIR}
+INSTALLATION_DIRS+=	${EGDIR}
 
-do-install:
-	${INSTALL_LIB} ${WRKSRC}/.libs/mod_ntlm.so ${DESTDIR}${PREFIX}/lib/httpd
+post-install:
 	${INSTALL_DATA} ${WRKSRC}/ntlm.conf ${DESTDIR}${EGDIR}
 
 .include "../../www/apache/module.mk"
