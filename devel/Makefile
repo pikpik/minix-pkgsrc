@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1296 2010/02/16 09:27:56 sno Exp $
+# $NetBSD: Makefile,v 1.1297 2010/02/20 11:15:01 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -152,6 +152,7 @@ SUBDIR+=	dmalloc
 SUBDIR+=	doc++
 SUBDIR+=	doxygen
 SUBDIR+=	doxymacs
+SUBDIR+=	easygit
 SUBDIR+=	eclipse
 SUBDIR+=	edcommon
 SUBDIR+=	eel
