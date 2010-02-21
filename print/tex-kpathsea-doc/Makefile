@@ -1,8 +1,9 @@
 # $NetBSD$
-# TeX Live Revision 16044
+# TeX Live Revision 17032
 
 DISTNAME=	kpathsea.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2009.16044
+DIST_SUBDIR=	${PKGNAME:S/16044/17032/}
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-kpathsea
