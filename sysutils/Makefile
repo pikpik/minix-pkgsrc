@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.483 2010/02/10 16:54:21 joerg Exp $
+# $NetBSD: Makefile,v 1.484 2010/02/18 03:01:08 seb Exp $
 #
 
 COMMENT=	System utilities
@@ -8,7 +8,6 @@ SUBDIR+=	915resolution
 SUBDIR+=	9base
 SUBDIR+=	acpica-utils
 SUBDIR+=	acpidump
-SUBDIR+=	adjustkernel
 SUBDIR+=	adtool
 SUBDIR+=	afbinit
 SUBDIR+=	agedu
