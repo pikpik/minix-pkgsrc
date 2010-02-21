@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.25 2008/09/18 11:51:37 taca Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/15 17:01:12 wiz Exp $
 
-DISTNAME=		mysql-5.1.43
+DISTNAME=		mysql-5.1.44
 PKGNAME=		${DISTNAME:S/-/-embedded-/}
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_MYSQL:=MySQL-5.1/}
@@ -29,7 +29,7 @@ CONFIGURE_ARGS+=	--without-server
 CONFIGURE_ARGS+=	--without-ssl
 
 # the usual == problem
-CHECK_PORTABILITY_SKIP=	configure BUILD/compile-pentium-gcov
+CHECK_PORTABILITY_SKIP=	configure BUILD/compile-pentium-gcov configure~
 
 CFLAGS+=		-fPIC -DPIC
 CXXFLAGS+=		-fPIC -DPIC
