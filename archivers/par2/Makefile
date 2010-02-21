@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.12 2007/09/09 17:10:52 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/12 02:14:13 joerg Exp $
 #
 
 DISTNAME=		par2cmdline-0.4
 PKGNAME=		${DISTNAME:S/cmdline//}
+PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=parchive/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://parchive.sourceforge.net/
 COMMENT=		Create or use PAR2 parity volumes
+LICENSE=		gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
