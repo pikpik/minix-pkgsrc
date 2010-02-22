@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/16 16:13:12 sno Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/25 14:33:15 sno Exp $
 
-DISTNAME=	Template-Tiny-0.10
+DISTNAME=	Template-Tiny-0.11
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Template/}
@@ -11,6 +11,8 @@ COMMENT=	Template Toolkit reimplemented in as little code as possible
 LICENSE=	${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+DEPENDS+=	p5-Capture-Tiny>=0.07:../../devel/p5-Capture-Tiny
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Template/Tiny/.packlist
