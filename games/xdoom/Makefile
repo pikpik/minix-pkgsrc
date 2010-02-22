@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2009/05/19 08:59:15 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2010/02/22 21:58:47 wiz Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
@@ -25,8 +25,6 @@ MAKE_ENV+=	X11BASE=${X11BASE:Q} INSTALL_PREFIX=${PREFIX:Q}
 
 NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 
-INSTALLATION_DIRS=	share/doom
-
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "Linux"
@@ -39,7 +37,7 @@ CFLAGS+=	-DLINUX
 CFLAGS+=	-D__BIG_ENDIAN__=1
 .endif
 
-INSTALLATION_DIRS=	bin
+INSTALLATION_DIRS=	bin share/doom
 
 post-extract:
 	(cd ${WRKDIR}; ${TAR} xzf linuxdoom-1.10.src.tgz)
