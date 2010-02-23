@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2008/10/19 19:17:46 he Exp $
+# $NetBSD: Makefile,v 1.4 2010/02/03 00:15:48 sno Exp $
 
-DISTNAME=	Rose-DBx-Garden-0.16
+DISTNAME=	Rose-DBx-Garden-0.17
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	databases perl5
