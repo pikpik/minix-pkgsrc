@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.18 2010/01/29 15:23:10 sno Exp $
+# $NetBSD: Makefile,v 1.19 2010/02/07 16:05:41 wiz Exp $
 
-DISTNAME=	Module-Install-0.93
+DISTNAME=	Module-Install-0.94
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5moi
 CATEGORIES=	devel perl5
