@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: url2pkg.pl,v 1.15 2009/11/20 11:49:18 rillig Exp $
+# $NetBSD: url2pkg.pl,v 1.16 2010/01/29 20:47:49 rillig Exp $
 #
 
 # Copyright (c) 2010 The NetBSD Foundation, Inc.
@@ -304,7 +304,7 @@ sub generate_initial_package($) {
 	$category = $1;
 
 	open(MF, ">", "Makefile") or die;
-	print MF ("# \$NetBSD" . "\$\n");
+	print MF ("# \$Net" . "BSD\$\n");
 	print MF ("#\n");
 	print MF ("\n");
 	print_section(*MF, [
@@ -329,7 +329,7 @@ sub generate_initial_package($) {
 	close(MF) or die;
 
 	open(PLIST, ">", "PLIST") or die;
-	print PLIST ("\@comment \$NetBSD\$\n");
+	print PLIST ("\@comment \$Net" . "BSD\$\n");
 	close(PLIST) or die;
 
 	open(DESCR, ">", "DESCR") or die;
