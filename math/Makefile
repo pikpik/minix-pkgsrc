@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.199 2010/02/03 23:39:33 wiz Exp $
+# $NetBSD: Makefile,v 1.200 2010/02/18 21:03:31 drochner Exp $
 
 COMMENT=	Mathematics
 
@@ -149,6 +149,7 @@ SUBDIR+=	pari-galdata
 SUBDIR+=	pear-Numbers_Roman
 SUBDIR+=	pear-Numbers_Words
 SUBDIR+=	php-bcmath
+SUBDIR+=	prng
 SUBDIR+=	pspp
 SUBDIR+=	py-Numeric
 SUBDIR+=	py-Scientific
