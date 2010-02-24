@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/05 10:32:54 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2009/10/07 10:50:59 obache Exp $
 
 PKGNAME=	${DISTNAME:S/-/-nox11-/}
 PKGREVISION=	1
@@ -7,8 +7,9 @@ FILESDIR=	${.CURDIR}/../../editors/emacs22/files
 PATCHDIR=	${.CURDIR}/../../editors/emacs22/patches
 PKGDIR=		${.CURDIR}/../../editors/emacs22
 
-# Mirror PKG_DESTDIR_SUPPORT setting from emacs/Makefile.
+# Mirror pre-bsd.prefs.mk settings from emacs/Makefile.
 PKG_DESTDIR_SUPPORT=	user-destdir
+SETGIDGAME=		yes
 
 .include "../../mk/bsd.prefs.mk"
 
