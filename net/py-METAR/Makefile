@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:41 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2009/12/16 21:22:02 drochner Exp $
 #
 
-DISTNAME=	pymetar-0.15
-PKGNAME=	${PYPKGPREFIX}-pymetar-0.15
+DISTNAME=	pymetar-0.16
+PKGNAME=	${PYPKGPREFIX}-pymetar-0.16
 CATEGORIES=	net python
 MASTER_SITES=	http://www.schwarzvogel.de/pkgs/
 
@@ -16,7 +16,7 @@ PYDISTUTILSPKG=	yes
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 
 post-extract:
-	${MV} ${WRKSRC}/bin/weather.py ${WRKSRC}/bin/weather-${PYVERSSUFFIX}.py
+	${MV} ${WRKSRC}/bin/pymetar ${WRKSRC}/bin/pymetar${PYVERSSUFFIX}
 
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/application.mk"
