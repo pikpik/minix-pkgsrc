@@ -1,4 +1,4 @@
-# $NetBSD
+# $NetBSD$
 
 LIB=		fetch
 SRCS=		fetch.c common.c ftp.c http.c file.c
