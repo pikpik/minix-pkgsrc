@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.8 2007/02/15 10:00:08 rillig Exp $
+# $NetBSD: options.mk,v 1.9 2007/08/09 19:28:24 tnn Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mc
@@ -74,7 +74,7 @@ CONFIGURE_ARGS+=		--without-x
 ### SLang (the default), which is distributed with the Midnight Commander.
 .if !empty(PKG_OPTIONS:Mslang)
 CONFIGURE_ARGS+=	--with-screen=slang
-.include "../../devel/libslang/buildlink3.mk"
+.include "../../devel/libslang2/buildlink3.mk"
 .elif !empty(PKG_OPTIONS:Mncurses)
 USE_NCURSES=		yes
 CONFIGURE_ARGS+=	--with-screen=ncurses
