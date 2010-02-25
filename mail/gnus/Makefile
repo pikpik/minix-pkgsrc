@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.16 2008/10/11 09:31:57 uebayasi Exp $
 
 DISTNAME=	gnus-5.10.8
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
 CATEGORIES=	mail news
 MASTER_SITES=	http://gnus.org/dist/
 
-MAINTAINER=	lha@NetBSD.org
+MAINTAINER=	pkgsrc-usersNetBSD.org
 HOMEPAGE=	http://gnus.org/
 COMMENT=	Gnus is a flexible message reader running under GNU Emacs
 
