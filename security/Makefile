@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.371 2010/01/27 10:32:20 sno Exp $
+# $NetBSD: Makefile,v 1.372 2010/02/07 15:36:58 drochner Exp $
 #
 
 COMMENT=	Security tools
@@ -252,6 +252,7 @@ SUBDIR+=	pinentry
 SUBDIR+=	pinentry-gtk
 SUBDIR+=	pinentry-gtk2
 SUBDIR+=	pinentry-qt
+SUBDIR+=	pinentry-qt4
 SUBDIR+=	pinepgp
 SUBDIR+=	pkcs11-helper
 SUBDIR+=	pks
