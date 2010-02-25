@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2008/10/30 14:49:42 bad Exp $
+# $NetBSD: options.mk,v 1.5 2009/08/27 19:40:44 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.hydra
 PKG_SUPPORTED_OPTIONS=	gtkfe svn pgsql
@@ -16,7 +16,7 @@ post-build:
 	cd ${WRKSRC}/hydra-gtk && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM}
 
 post-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/hydra-gtk/src/xhydra ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/hydra-gtk/src/xhydra ${DESTDIR}${PREFIX}/bin
 PLIST_SRC+=	${PKGDIR}/PLIST.xhydra
 .endif
 
