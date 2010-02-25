@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.349 2010/02/21 15:47:48 minskim Exp $
+# $NetBSD: Makefile,v 1.350 2010/02/22 01:20:07 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -378,4 +378,3 @@ SUBDIR+=	xpp
 SUBDIR+=	yup
 
 .include "../mk/misc/category.mk"
-
