@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2009/11/27 09:26:06 enami Exp $
+# $NetBSD: Makefile,v 1.53 2010/02/20 13:51:12 obache Exp $
 #
 
 DISTNAME=	Gauche-0.9
@@ -43,6 +43,9 @@ INFO_FILES=	yes
 
 # refer %install in ${WRKSRC}/Gauche.spec
 INSTALL_TARGET=	install-pkg install-doc
+
+# Does relink internally
+BUILDLINK_PASSTHRU_RPATHDIRS+=	${WRKSRC}
 
 .include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
