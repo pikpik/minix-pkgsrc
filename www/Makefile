@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.702 2010/02/17 14:42:30 taca Exp $
+# $NetBSD: Makefile,v 1.703 2010/02/25 11:02:36 tnn Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -164,6 +164,7 @@ SUBDIR+=	lighttpd
 SUBDIR+=	links
 SUBDIR+=	links-gui
 SUBDIR+=	loggerhead
+SUBDIR+=	lua-curl
 SUBDIR+=	lynx
 SUBDIR+=	mMosaic
 SUBDIR+=	make_album
