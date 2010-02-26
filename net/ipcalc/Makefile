@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2007/07/24 17:23:34 jschauma Exp $
+# $NetBSD: Makefile,v 1.16 2009/02/16 18:39:36 joerg Exp $
 
 DISTNAME=	ipcalc-0.41
 CATEGORIES=	net
 MASTER_SITES=	http://jodies.de/ipcalc-archive/
 
-MAINTAINER=	zuntum@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jodies.de/ipcalc
 COMMENT=	IP Calculator
 

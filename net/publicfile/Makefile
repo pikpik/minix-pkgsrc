@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.9 2005/03/23 00:51:10 schmonz Exp $
+# $NetBSD: Makefile,v 1.10 2005/12/18 20:28:34 joerg Exp $
 #
 
 DISTNAME=		publicfile-0.52
 CATEGORIES=		net
 MASTER_SITES=		http://cr.yp.to/publicfile/
 
-MAINTAINER=		zuntum@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://cr.yp.to/publicfile.html
 COMMENT=		Secure read-only HTTP and FTP servers
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2008/02/16 15:21:40 heinz Exp $
+# $NetBSD: Makefile,v 1.13 2009/06/30 00:07:19 joerg Exp $
 #
 
 DISTNAME=		safecat-1.13
 CATEGORIES=		mail
 MASTER_SITES=		http://jeenyus.net/~budney/linux/software/safecat/
 
-MAINTAINER=		zuntum@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://jeenyus.net/~budney/linux/software/safecat.html
 COMMENT=		Write data safely to a maildir
 

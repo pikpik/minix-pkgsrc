@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2005/06/17 03:50:24 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/20 01:09:29 joerg Exp $
 #
 
 DISTNAME=		awhois.sh-v1.61
@@ -7,7 +7,7 @@ CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.planix.com/pub/Planix/
 EXTRACT_SUFX=		# nowt
 
-MAINTAINER=		cjep@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		ftp://ftp.planix.com/pub/Planix/
 COMMENT=		All-encompassing whois client wrapper
 

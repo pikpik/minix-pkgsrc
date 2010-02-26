@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/02/22 19:01:23 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2009/02/16 18:39:00 joerg Exp $
 #
 
 DISTNAME=	pdmenu_1.2.65
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	misc
 MASTER_SITES=	http://www.kitenet.net/programs/pdmenu/
 
-MAINTAINER=	zuntum@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kitenet.net/~joey/code/pdmenu.html
 COMMENT=	Simple console menu program
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2005/11/01 18:31:16 tv Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/20 01:09:32 joerg Exp $
 #
 
 DISTNAME=	whatmask-1.2
 CATEGORIES=	net
 MASTER_SITES=	http://downloads.laffeycomputer.com/current_builds/whatmask/
 
-MAINTAINER=	zuntum@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.laffeycomputer.com/whatmask.html
 COMMENT=	Easily convert between three common subnet mask notations
 

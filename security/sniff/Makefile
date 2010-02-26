@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2008/04/07 18:04:40 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2009/02/16 18:49:58 joerg Exp $
 #
 
 DISTNAME=	sniff-2.0
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	zuntum@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Program to sniff logins and passwords
 
 PKG_DESTDIR_SUPPORT=	user-destdir

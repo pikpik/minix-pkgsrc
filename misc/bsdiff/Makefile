@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2007/06/15 17:28:17 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/20 01:09:25 joerg Exp $
 #
 
 DISTNAME=		bsdiff-4.3
 CATEGORIES=		misc
 MASTER_SITES=		http://www.daemonology.net/bsdiff/
 
-MAINTAINER=		cjep@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.daemonology.net/bsdiff/
 COMMENT=		Size efficient binary diff and patch tools
 

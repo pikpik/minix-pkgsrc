@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2007/01/07 09:14:05 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:41 joerg Exp $
 #
 
 DISTNAME=	poink-1.6
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	zuntum@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Nosuid, absolutely secure version of ping utility
 
 PKG_DESTDIR_SUPPORT=	user-destdir

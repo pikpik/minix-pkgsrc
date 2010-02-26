@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2006/11/28 16:42:51 tv Exp $
+# $NetBSD: Makefile,v 1.13 2009/02/19 16:36:25 joerg Exp $
 
 DISTNAME=	dog-1.7
 PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://jl.photodex.com/dog/
 
-MAINTAINER=	zuntum@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jl.photodex.com/dog/
 COMMENT=	Dog writes the contents of each given file, URL, or stdin
 

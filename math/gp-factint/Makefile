@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/04 18:12:59 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2008/05/26 02:13:22 joerg Exp $
 #
 
 DISTNAME=	factint-1.3
@@ -9,7 +9,7 @@ CATEGORIES=	math
 MASTER_SITES=	http://www.cip.mathematik.uni-stuttgart.de/~kohlsn/factint/
 EXTRACT_SUFX=	.zoo
 
-MAINTAINER=	cjep@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gap-system.org/Share/factint.html
 COMMENT=	Integer factorization routines for GAP
 

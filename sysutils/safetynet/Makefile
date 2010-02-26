@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.7 2005/07/16 01:19:23 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2009/02/16 18:51:16 joerg Exp $
 #
 
 DISTNAME=	safetynet-1.15
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.unixpimps.org/safetynet/
 
-MAINTAINER=	zuntum@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.unixpimps.org/safetynet/
 COMMENT=	Safetynet is a perl script intended to monitor system services
 

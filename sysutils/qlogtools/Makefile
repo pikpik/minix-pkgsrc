@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2006/01/13 18:58:58 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2009/02/16 19:03:18 joerg Exp $
 #
 
 DISTNAME=		qlogtools-3.1
 CATEGORIES=		sysutils
 MASTER_SITES=		${HOMEPAGE}
 
-MAINTAINER=		zuntum@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://untroubled.org/qlogtools/
 COMMENT=		Tools useful in analyzing logs from qmail and other pkgs
 
