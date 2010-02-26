@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.PL.orig	2010-02-26 17:56:40.000000000 +0000
++++ Makefile.PL
+@@ -41,7 +41,7 @@ OPT
+ 
+ }
+ 
+-my $LINK = "$Config{ld} -o conftest $Config{ccflags} -I$Config{incpath} %s $Config{ldflags} conftest.c $Config{libs} %s %s";
++my $LINK = "$Config{ld} -o conftest $Config{ccflags} %s $Config{ldflags} conftest.c $Config{libs} %s %s";
+ 
+ if ($config{LIBS} !~ /\-lghttp/) {
+     $config{LIBS} .= ' -lghttp';
