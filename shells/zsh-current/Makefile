@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.16 2008/12/21 16:53:45 uebayasi Exp $
 
 .include "../../shells/zsh/Makefile.common"
 
-ZSH_VERSION=	4.3.9
+ZSH_VERSION=	4.3.10
 ZSH_MAINTAINER=	uebayasi@NetBSD.org
 
 USE_TOOLS+=	env
