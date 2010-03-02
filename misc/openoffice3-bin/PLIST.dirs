@@ -1,0 +1,5 @@
+@comment $NetBSD$
+@pkgdir opt/openoffice.org/basis${BASEVER}
+@pkgdir opt/openoffice.org
+@pkgdir opt/openoffice.org${VER}
+@pkgdir opt
