@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1298 2010/02/21 09:11:51 plunky Exp $
+# $NetBSD: Makefile,v 1.1299 2010/02/22 08:38:33 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -1161,6 +1161,7 @@ SUBDIR+=	ruby-setup
 SUBDIR+=	ruby-sexp-processor
 SUBDIR+=	ruby-stream
 SUBDIR+=	ruby-subversion
+SUBDIR+=	ruby-termcolor
 SUBDIR+=	ruby-test-spec
 SUBDIR+=	ruby-validatable
 SUBDIR+=	ruby2ruby
