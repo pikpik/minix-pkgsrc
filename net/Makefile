@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.808 2010/02/20 10:40:38 seb Exp $
+# $NetBSD: Makefile,v 1.809 2010/02/20 11:51:43 seb Exp $
 #
 
 COMMENT=	Networking tools
@@ -468,6 +468,7 @@ SUBDIR+=	rtorrent
 SUBDIR+=	ruby-amqp
 SUBDIR+=	ruby-icmp
 SUBDIR+=	ruby-netaddr
+SUBDIR+=	ruby-rubytter
 SUBDIR+=	ruby-snmp
 SUBDIR+=	samba
 SUBDIR+=	samba33
