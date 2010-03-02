@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:17:21 jlam Exp $
 
-DISTNAME=	highline-1.4.0
+DISTNAME=	highline-1.5.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	net security
 
