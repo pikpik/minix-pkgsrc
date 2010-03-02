@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1299 2010/02/22 08:38:33 wiz Exp $
+# $NetBSD: Makefile,v 1.1300 2010/03/02 11:49:16 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -388,6 +388,7 @@ SUBDIR+=	mono-addins
 SUBDIR+=	mono-tools
 SUBDIR+=	monodevelop
 SUBDIR+=	monotone
+SUBDIR+=	monotone-el
 SUBDIR+=	monotone-server
 SUBDIR+=	monotone-viz
 SUBDIR+=	mph
