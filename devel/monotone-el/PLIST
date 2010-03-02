@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${EMACS_LISPPREFIX}/monotone.el
+${EMACS_LISPPREFIX}/monotone.elc
+${EMACS_LISPPREFIX}/monotone-nav.el
+${EMACS_LISPPREFIX}/monotone-nav.elc
