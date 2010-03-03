@@ -1,12 +1,10 @@
 $NetBSD$
 
---- extflat/EFargs.c	2004/01/23 09:58:12	1.1
-+++ extflat/EFargs.c	2004/01/23 09:58:38
-@@ -24,7 +24,6 @@
+--- textio/txMain.c.orig	2006-04-10 22:03:13.000000000 +0000
++++ textio/txMain.c
+@@ -22,4 +22,5 @@ static char rcsid[] __attribute__ ((unus
+ #endif  /* not lint */
+ 
++#include <sys/types.h>
  #include <stdio.h>
- #include <ctype.h>
- #include <stdlib.h>
--#include <varargs.h>
- #ifdef SYSV
  #include <string.h>
- #endif
