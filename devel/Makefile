@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1300 2010/03/02 11:49:16 obache Exp $
+# $NetBSD: Makefile,v 1.1301 2010/03/02 18:38:53 jmmv Exp $
 #
 
 COMMENT=	Development utilities
@@ -101,6 +101,7 @@ SUBDIR+=	coccinelle
 SUBDIR+=	coconut
 SUBDIR+=	codeville
 SUBDIR+=	cogito
+SUBDIR+=	colordiff
 SUBDIR+=	compiz-bcop
 SUBDIR+=	compizconfig-backend-gconf
 SUBDIR+=	confuse
