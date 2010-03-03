@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/cdiff
+bin/colordiff
+man/man1/cdiff.1
+man/man1/colordiff.1
+share/examples/colordiff/colordiffrc
