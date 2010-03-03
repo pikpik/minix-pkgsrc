@@ -11,6 +11,15 @@ $NetBSD$
  MAKE = make
  SHELL = /bin/sh
  
+@@ -34,7 +34,7 @@ all:	config
+ 
+ ##  Install everything.
+ 
+-install:  paths.sh	; sh install.sh
++install:  paths.sh	; sh install.sh ${DESTDIR}
+ 
+ 
+ 
 @@ -212,6 +212,9 @@ vscripts:  ; @cd vsuite; find * -name Sc
  
  
