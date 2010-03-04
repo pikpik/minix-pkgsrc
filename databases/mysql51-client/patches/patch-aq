@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- mysys/Makefile.in.orig	2010-02-04 11:46:20.000000000 +0000
++++ mysys/Makefile.in
+@@ -888,7 +888,7 @@ install-data-am:
+ 
+ install-dvi: install-dvi-am
+ 
+-install-exec-am: install-pkglibLIBRARIES
++install-exec-am:
+ 
+ install-html: install-html-am
+ 
