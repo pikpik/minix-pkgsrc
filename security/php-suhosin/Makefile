@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/17 23:16:14 adrianp Exp $
 #
 
 MODNAME=		suhosin
 DISTNAME=		suhosin-${PECL_VERSION}
-PECL_VERSION=		0.9.27
+PECL_VERSION=		0.9.29
 CATEGORIES=		www
 MASTER_SITES=		http://download.suhosin.org/
 EXTRACT_SUFX=		.tgz
