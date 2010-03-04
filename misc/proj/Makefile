@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2009/01/29 02:24:41 gdt Exp $
+# $NetBSD: Makefile,v 1.27 2010/01/18 08:56:02 adam Exp $
 
 DISTNAME=	proj-4.7.0
 CATEGORIES=	misc geography
@@ -6,7 +6,7 @@ MASTER_SITES=	http://download.osgeo.org/proj/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} proj-datumgrid-1.4${EXTRACT_SUFX}
 
 MAINTAINER=	gdt@NetBSD.org
-HOMEPAGE=	http://www.remotesensing.org/proj/
+HOMEPAGE=	http://trac.osgeo.org/proj/
 COMMENT=	Cartographic projection software
 
 PKG_DESTDIR_SUPPORT=	user-destdir
