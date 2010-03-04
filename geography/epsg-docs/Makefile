@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2008/03/04 14:44:05 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2009/05/19 08:59:16 wiz Exp $
 #
 
 DISTNAME=		G7-1
 PKGNAME=		epsg-docs-${VERS}
-VERS=			20070716
+VERS=			200911
 CATEGORIES=		geography databases
 MASTER_SITES=		http://www.epsg.org/guides/docs/
 DISTFILES=		G7-1.pdf G7-2.pdf
