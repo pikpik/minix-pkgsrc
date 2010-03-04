@@ -28,3 +28,12 @@ $NetBSD$
  void	copenmsg (char *pkt);
  void	cpersonalmsg (char *pkt);
  void	csendopen (char *txt);
+@@ -79,7 +82,7 @@ void	echo (void);
+ void	errormsg (char *pkt);
+ void	exitmsg (void);
+ char	*findspace (char *s);
+-char	*getline (char *prompt, int expand);
++char	*i2cb_getline (char *prompt, int expand);
+ char	*getloginid (void);
+ char	*getswitch (int argc, char **argv, char **switchv);
+ void	getterm (void);
