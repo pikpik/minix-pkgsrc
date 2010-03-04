@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- sql/log_event.cc.orig	2010-02-04 11:39:50.000000000 +0000
++++ sql/log_event.cc
+@@ -32,6 +32,9 @@
+ #include "rpl_utility.h"
+ #include "rpl_record.h"
+ #include <my_dir.h>
++#ifdef NEEDS_BSTRING_H
++#include <bstring.h> /* defines bcmp() */
++#endif
+ 
+ #endif /* MYSQL_CLIENT */
+ 
