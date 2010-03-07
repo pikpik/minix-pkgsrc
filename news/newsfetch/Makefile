@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2009/04/16 17:00:31 jrf Exp $
+# $NetBSD: Makefile,v 1.9 2009/10/29 22:40:23 tnn Exp $
 #
 
 DISTNAME=	newsfetch-1.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
