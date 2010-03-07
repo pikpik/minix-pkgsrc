@@ -11,7 +11,7 @@ COMMENT=	Subtitle editor
 
 DEPENDS+=	iso-codes-[0-9]*:../../textproc/iso-codes
 DEPENDS+=	${PYPKGPREFIX}-chardet-[0-9]*:../../converters/py-chardet
-DEPENDS+=	${PYPKGPREFIX}-enchant-[0-9]*:../../textproc/py-enchant
+DEPENDS+=	${PYPKGPREFIX}-enchant>=1.1.3:../../textproc/py-enchant
 DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.12:../../x11/py-gtk2
 
 PYTHON_VERSIONS_ACCEPTED=	26 25
