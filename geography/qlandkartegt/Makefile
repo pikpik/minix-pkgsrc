@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	qlandkartegt-0.17.1
+DISTNAME=	qlandkartegt-0.18.0
 CATEGORIES=	geography
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qlandkartegt/}
 
@@ -12,7 +12,7 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=		${WRKDIR}/qlandkartegt-0.17.1
+WRKSRC=		${WRKDIR}/qlandkartegt-0.18.0
 USE_LANGUAGES=	c c++
 USE_CMAKE=	yes
 
