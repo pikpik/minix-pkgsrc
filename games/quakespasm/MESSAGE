@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+To use QuakeSpasm, you must have a set of data files.  One possible source
+is pkgsrc/games/quakedata/.  Once you have obtained a set of data files,
+run quakespasm from the directory containing the "id1" directory.
+
+===========================================================================
