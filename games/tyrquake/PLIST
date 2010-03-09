@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/tyr-glquake
+bin/tyr-glqwcl
+bin/tyr-quake
+bin/tyr-qwcl
+bin/tyr-qwsv
