@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2008/03/02 06:10:33 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2009/05/25 12:42:26 wiz Exp $
 
 DISTNAME=	mp32ogg-0.11
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	# empty
