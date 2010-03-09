@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/07 06:04:23 seb Exp $
 
-DISTNAME=	HTML-Selector-XPath-0.03
+DISTNAME=	HTML-Selector-XPath-0.04
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	www perl5
