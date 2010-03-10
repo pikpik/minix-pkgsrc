@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2009/10/24 14:36:53 sno Exp $
+# $NetBSD: Makefile,v 1.13 2010/01/16 18:17:37 sno Exp $
 
-DISTNAME=	Catalyst-Devel-1.26
+DISTNAME=	Catalyst-Devel-1.27
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Catalyst/}
