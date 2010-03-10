@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.2 2006/05/06 08:36:10 xtraeme Exp $
+
+Make this pkgsrc friendly.
 
 --- src/dspam.conf.in.orig	2006-02-15 22:06:35.000000000 +0200
 +++ src/dspam.conf.in	2006-05-05 23:44:16.000000000 +0300
