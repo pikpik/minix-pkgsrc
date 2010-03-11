@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2009/11/23 22:25:16 jakllsch Exp $
+# $NetBSD: Makefile,v 1.159 2009/11/27 08:39:08 wiz Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -104,6 +104,7 @@ SUBDIR+=	p5-xmltv
 SUBDIR+=	phonon
 SUBDIR+=	php-ming
 SUBDIR+=	pspvc
+SUBDIR+=	py-clutter-gst
 SUBDIR+=	py-gstreamer0.10
 SUBDIR+=	py-ming
 SUBDIR+=	realplayer-codecs
