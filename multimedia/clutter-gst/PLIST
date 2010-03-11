@@ -1,13 +1,11 @@
 @comment $NetBSD$
-include/clutter-1.0/clutter-gst/clutter-gst-audio.h
 include/clutter-1.0/clutter-gst/clutter-gst-util.h
 include/clutter-1.0/clutter-gst/clutter-gst-version.h
 include/clutter-1.0/clutter-gst/clutter-gst-video-sink.h
 include/clutter-1.0/clutter-gst/clutter-gst-video-texture.h
 include/clutter-1.0/clutter-gst/clutter-gst.h
-lib/libclutter-gst-0.10.la
-lib/pkgconfig/clutter-gst-0.10.pc
-share/gtk-doc/html/clutter-gst/ClutterGstAudio.html
+lib/libclutter-gst-1.0.la
+lib/pkgconfig/clutter-gst-1.0.pc
 share/gtk-doc/html/clutter-gst/ClutterGstVideoSink.html
 share/gtk-doc/html/clutter-gst/ClutterGstVideoTexture.html
 share/gtk-doc/html/clutter-gst/ch01.html
