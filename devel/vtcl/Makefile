@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/05/26 02:13:18 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2010/01/08 12:47:44 joerg Exp $
 
 DISTNAME=		vtcl-1.6.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vtcl/}
 
@@ -35,5 +35,5 @@ do-install:
 	cd ${WRKSRC} && pax -rwpam demo ${DESTDIR}${VTCLEGDIR}
 	cd ${WRKSRC} && pax -rwpam sample ${DESTDIR}${VTCLEGDIR}
 
-.include "options.mk"
+.include "../../x11/tk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
