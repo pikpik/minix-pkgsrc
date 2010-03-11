@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2009/10/26 08:59:22 obache Exp $
+
+SHA1 (pyclutter-gtk-0.10.0.tar.gz) = ebe7af54839ffdcc626fbcc4166cc48e809087a7
+RMD160 (pyclutter-gtk-0.10.0.tar.gz) = 924060e65c7f0d0c0bb613cb1f8132180df665c3
+Size (pyclutter-gtk-0.10.0.tar.gz) = 314949 bytes
