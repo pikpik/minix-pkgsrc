@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/06/11 21:06:37 schmonz Exp $
+# $NetBSD: Makefile,v 1.18 2009/05/19 09:07:14 wiz Exp $
 #
 
 DISTNAME=		fastforward-0.51
@@ -13,7 +13,7 @@ LICENSE=		public-domain
 
 DEPENDS+=		qmail>=1.03nb7:../../mail/qmail
 
-CONFLICTS+=		postfix-[0-9]* sendmail-[0-9]*
+CONFLICTS+=		esmtp>=1.2 postfix-[0-9]* sendmail-[0-9]*
 
 USE_TOOLS+=		nroff
 
