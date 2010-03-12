@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.373 2010/02/25 11:30:50 drochner Exp $
+# $NetBSD: Makefile,v 1.374 2010/03/09 19:59:37 pettai Exp $
 #
 
 COMMENT=	Security tools
@@ -239,6 +239,7 @@ SUBDIR+=	pam-passwdqc
 SUBDIR+=	pam-pwauth_suid
 SUBDIR+=	pam-radius
 SUBDIR+=	pam-saml
+SUBDIR+=	pam-tacplus
 SUBDIR+=	pam_ssh_agent_auth
 SUBDIR+=	pcsc-lite
 SUBDIR+=	pcsc-tools
