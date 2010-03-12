@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/threeparttable/miscdoc.sty
+share/texmf-dist/doc/latex/threeparttable/threeparttable.pdf
+share/texmf-dist/doc/latex/threeparttable/threeparttable.tex
