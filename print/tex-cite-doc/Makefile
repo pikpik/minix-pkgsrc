@@ -1,11 +1,11 @@
 # $NetBSD$
-# TeX Live Revision 12952
+# TeX Live Revision 15878
 
 DISTNAME=	cite.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-5.1
+PKGNAME=	tex-${DISTNAME:S/./-/}-5.2
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-cite
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
