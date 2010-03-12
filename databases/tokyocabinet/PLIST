@@ -26,7 +26,7 @@ include/tcutil.h
 lib/libtokyocabinet.a
 lib/libtokyocabinet.so
 lib/libtokyocabinet.so.9
-lib/libtokyocabinet.so.9.4.0
+lib/libtokyocabinet.so.9.6.0
 lib/pkgconfig/tokyocabinet.pc
 libexec/tcawmgr.cgi
 man/man1/tcamgr.1
@@ -74,3 +74,4 @@ share/tokyocabinet/doc/spex-en.html
 share/tokyocabinet/doc/spex-ja.html
 share/tokyocabinet/doc/tokyoproducts.pdf
 share/tokyocabinet/doc/tokyoproducts.ppt
+share/tokyocabinet/tokyocabinet.idl
