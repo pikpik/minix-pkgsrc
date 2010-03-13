@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2010/01/17 12:02:06 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2010/03/08 17:30:23 dmcmahill Exp $
 
-DISTNAME=	ejabberd-2.1.1
-PKGREVISION=	2
+DISTNAME=	ejabberd-2.1.3
 CATEGORIES=	chat
-MASTER_SITES=	http://www.process-one.net/downloads/ejabberd/2.1.1/
+MASTER_SITES=	http://www.process-one.net/downloads/ejabberd/2.1.3/
 
 MAINTAINER=	martti@NetBSD.org
 HOMEPAGE=	http://www.ejabberd.im/
@@ -106,7 +105,9 @@ SUBST_FILES.paths+=	src/ejabberdctl.template
 SUBST_FILES.paths+=	doc/guide.tex
 SUBST_SED.paths+=	-e 's,@PKG_SYSCONFDIR@,${PKG_SYSCONFDIR},g'
 SUBST_SED.paths+=	-e 's,@JABBERD_LOGDIR@,${EJABBERD_LOGDIR},g'
+SUBST_SED.paths+=	-e 's,@EJABBERD_DBDIR@,${EJABBERD_DB},g'
 SUBST_SED.paths+=	-e 's,@EJABBERD_LOGDIR@,${EJABBERD_LOGDIR},g'
+SUBST_SED.paths+=	-e 's,@EJABBERD_PIDDIR@,${EJABBERD_PIDDIR},g'
 SUBST_SED.paths+=	-e 's,@EJABBERD_DB@,${EJABBERD_DB},g'
 SUBST_SED.paths+=	-e 's,@PREFIX@,${PREFIX},g'
 SUBST_SED.paths+=	-e 's,@DISTNAME@,${DISTNAME},g'
