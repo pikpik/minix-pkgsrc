@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.813 2010/03/12 23:42:46 pettai Exp $
+# $NetBSD: Makefile,v 1.814 2010/03/13 10:06:07 pettai Exp $
 #
 
 COMMENT=	Networking tools
@@ -443,6 +443,7 @@ SUBDIR+=	py-kenosis
 SUBDIR+=	py-libdnet
 SUBDIR+=	py-libpcap
 SUBDIR+=	py-medusa
+SUBDIR+=	py-pcap
 SUBDIR+=	py-soaplib
 SUBDIR+=	py-soappy
 SUBDIR+=	py-spreadmodule
