@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/03/02 21:38:44 jkunz Exp $
+# $NetBSD: Makefile,v 1.10 2010/03/07 21:13:13 jkunz Exp $
 #
 
 DISTNAME=	merkaartor-0.15.2
@@ -32,9 +32,9 @@ do-configure:
 		${QMAKE} ${CONFIGURE_ARGS} Merkaartor.pro && \
 		${MAKE} qmake
 
-.include "../../misc/proj/buildlink3.mk"
 .include "../../geography/gdal-lib/buildlink3.mk"
 .include "../../geography/gpsd/buildlink3.mk"
+.include "../../geography/proj/buildlink3.mk"
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"

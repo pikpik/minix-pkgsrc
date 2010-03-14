@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:31 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/02/09 18:51:19 joerg Exp $
 #
 
 DISTNAME=		pyproj-1.8.3
@@ -22,5 +22,5 @@ post-install:
 
 .include "../../lang/python/extension.mk"
 
-.include "../../misc/proj/buildlink3.mk"
+.include "../../geography/proj/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
