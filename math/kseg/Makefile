@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/21 10:21:01 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/03/14 16:36:22 wiz Exp $
 #
 
 DISTNAME=	kseg-0.403
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=		${WRKDIR}/kseg
 USE_LANGUAGES=	c++
 INSTALLATION_DIRS+= bin share/kseg
+
+PREV_PKGPATH=	misc/kseg
 
 KSEGLANG=	${PREFIX}/share/kseg/lang
 SUBST_CLASSES+= prefix
