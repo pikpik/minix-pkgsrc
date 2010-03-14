@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2009/02/25 20:02:31 sno Exp $
+# $NetBSD: Makefile,v 1.6 2009/07/17 18:00:18 adrianp Exp $
 #
 
 DISTNAME=	Email-MIME-Attachment-Stripper-1.316
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Email/}
 
@@ -12,9 +13,8 @@ COMMENT=	Strip the attachments from a mail
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-DEPENDS+=	p5-Email-MIME>=1.861:../../mail/p5-Email-MIME
+DEPENDS+=	p5-Email-MIME>=1.903:../../mail/p5-Email-MIME
 DEPENDS+=	p5-Email-MIME-ContentType>=1.0:../../mail/p5-Email-MIME-ContentType
-DEPENDS+=	p5-Email-MIME-Modifier>=1.442:../../mail/p5-Email-MIME-Modifier
 
 PERL5_PACKLIST=	auto/Email/MIME/Attachment/Stripper/.packlist
 USE_LANGUAGES=	# none
