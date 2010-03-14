@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2009/05/05 19:01:03 zafer Exp $
+# $NetBSD: Makefile,v 1.27 2009/07/08 15:52:33 joerg Exp $
 #
 
 DISTNAME=	emixer-0.05.5
@@ -13,7 +13,7 @@ COMMENT=	mpg123-frontend that can mix two mp3 streams, and fade between them
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-DEPENDS+=	mpg123{,-esound,-nas}-0.59*:../../audio/mpg123
+DEPENDS+=	mpg123:../../audio/mpg123
 
 NO_CONFIGURE=	YES
 
