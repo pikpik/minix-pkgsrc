@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1309 2010/03/13 21:18:00 seb Exp $
+# $NetBSD: Makefile,v 1.1310 2010/03/15 08:21:49 pettai Exp $
 #
 
 COMMENT=	Development utilities
@@ -959,6 +959,7 @@ SUBDIR+=	p5-Test-use-ok
 SUBDIR+=	p5-Throwable
 SUBDIR+=	p5-Tie-Array-AsHash
 SUBDIR+=	p5-Tie-Array-Sorted
+SUBDIR+=	p5-Tie-Cache
 SUBDIR+=	p5-Tie-File
 SUBDIR+=	p5-Tie-IxHash
 SUBDIR+=	p5-Tie-RefHash
