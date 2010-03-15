@@ -1,4 +1,4 @@
-# $NetBSD: djbware.mk,v 1.21 2008/02/07 21:36:13 rillig Exp $
+# $NetBSD: djbware.mk,v 1.22 2008/05/20 19:39:48 tnn Exp $
 #
 # Makefile fragment for packages with djb-style build machinery
 #
@@ -57,6 +57,7 @@ INSTALL_TARGET?=	setup check ${DJB_INSTALL_TARGETS}
 do-configure:
 	${RUN}cd ${DJB_CONFIG_DIR};		\
 	for i in conf-*; do ${CP} $${i} $${i}.orig_dist; done;		\
+	${ECHO} ${DESTDIR:Q}${DJB_CONFIG_PREFIX:Q} > conf-destdir;	\
 	[ -f ${DJB_CONFIG_HOME} ] && \
 		${ECHO} ${DJB_CONFIG_PREFIX} > ${DJB_CONFIG_HOME};	\
 	[ -f conf-cc ] && \
