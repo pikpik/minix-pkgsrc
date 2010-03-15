@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.15 2008/12/19 23:16:22 tnn Exp $
+@comment $NetBSD$
 bin/gsl-config
 bin/gsl-histogram
 bin/gsl-randist
@@ -85,6 +85,7 @@ include/gsl/gsl_multifit.h
 include/gsl/gsl_multifit_nlin.h
 include/gsl/gsl_multimin.h
 include/gsl/gsl_multiroots.h
+include/gsl/gsl_multiset.h
 include/gsl/gsl_nan.h
 include/gsl/gsl_ntuple.h
 include/gsl/gsl_odeiv.h
