@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2009/04/22 05:23:19 schmonz Exp $
+# $NetBSD: Makefile,v 1.59 2009/10/18 19:34:54 zafer Exp $
 
 DISTNAME=		djbdns-1.05
 PKGREVISION=	9
@@ -14,6 +14,7 @@ LICENSE=		public-domain
 MANPAGES=		${DISTNAME}-man-20031023.tar.gz
 SITES.${MANPAGES}=	http://smarden.org/pape/djb/manpages/
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 # We change conf-home from the default "/usr/local" and don't
@@ -31,8 +32,9 @@ PLIST_SRC=		${PKGDIR}/PLIST
 INSTALLATION_DIRS=	bin man ${PKGMANDIR}/man1 ${PKGMANDIR}/man5 ${PKGMANDIR}/man8 share/examples/djbdns
 
 post-install:
-	cd ${WRKDIR}/*-man; for i in 1 5 8; do		 		\
-	for j in *.$$i; do ${INSTALL_MAN} $$j ${PREFIX}/${PKGMANDIR}/man$$i; done \
+	cd ${WRKDIR}/${PKGBASE}-man; for i in 1 5 8; do		 	\
+		for j in *.$$i; do ${INSTALL_MAN} $$j			\
+			${DESTDIR}${PREFIX}/${PKGMANDIR}/man$$i; done	\
 	done
 
 .include "../../mk/djbware.mk"
