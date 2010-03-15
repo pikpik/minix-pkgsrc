@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2010/01/17 12:02:37 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2010/02/04 11:17:06 wiz Exp $
 #
 
-DISTNAME=	yaz-4.0.1
+DISTNAME=	yaz-4.0.2
 CATEGORIES=	net
 MASTER_SITES=	http://ftp.indexdata.dk/pub/yaz/
 
