@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2005/04/11 21:45:19 tv Exp $
+# $NetBSD: Makefile,v 1.12 2005/06/26 13:11:22 minskim Exp $
 #
 
 DISTNAME=	dlcompat-20030629
@@ -8,6 +8,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fink/}
 MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://fink.sourceforge.net/
 COMMENT=	Library for dlopen() emulation on Darwin
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	Darwin-[56].*-*
 
