@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/01/03 13:51:28 obache Exp $
+# $NetBSD: Makefile,v 1.18 2008/01/13 19:24:49 tonio Exp $
 
 DISTNAME=	hevea-1.10
 CATEGORIES=	textproc
@@ -8,7 +8,10 @@ MAINTAINER=	tonio@NetBSD.org
 HOMEPAGE=	http://pauillac.inria.fr/~maranget/hevea/
 COMMENT=	LaTeX to HTML translator
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 BUILD_DEPENDS+=	ocaml>=3.07:../../lang/ocaml
+MAKE_ENV+=	DESTDIR=${DESTDIR}
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 .include "../../mk/bsd.prefs.mk"
