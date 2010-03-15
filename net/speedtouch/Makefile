@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/08/25 11:57:45 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2010/02/11 22:50:54 joerg Exp $
 
 DISTNAME=		speedtouch-1.3.1
 PKGREVISION=		4
@@ -48,7 +48,8 @@ SAMPLECONF=	${WRKSRC}/doc-bsd/ppp.conf.sample
 
 INSTALLATION_DIRS=	libdata/speedtouch
 INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} \
-			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
+			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR} \
+			installuser=${ROOT_USER}
 
 post-build:
 	${CP} ${SAMPLECONF} ${SAMPLECONF}.pre
