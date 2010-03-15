@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/06/04 16:26:53 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:19 joerg Exp $
 
 MODNAME=		mysqli
 CATEGORIES+=		databases
@@ -9,8 +9,6 @@ MAINTAINER=		jdolecek@NetBSD.org
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-mysqli-[0-9]*
-
-PHP_VERSIONS_ACCEPTED=	5
 
 EVAL_PREFIX+=		MYSQLDIR=mysql-client
 CONFIGURE_ARGS+=	--with-${MODNAME}=${PREFIX}/bin/mysql_config
