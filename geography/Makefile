@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2010/03/04 05:03:05 taca Exp $
+# $NetBSD: Makefile,v 1.29 2010/03/12 15:56:28 ghen Exp $
 #
 
 COMMENT=	Software for geographical-related uses
@@ -21,6 +21,7 @@ SUBDIR+=	mapserver
 SUBDIR+=	merkaartor
 SUBDIR+=	p5-Geo-Distance
 SUBDIR+=	p5-Geo-ShapeFile
+SUBDIR+=	proj
 SUBDIR+=	proj-swig
 SUBDIR+=	py-proj
 SUBDIR+=	qlandkartegt
