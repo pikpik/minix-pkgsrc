@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2006/05/28 14:46:47 adrianp Exp $
+# $NetBSD: options.mk,v 1.3 2006/06/02 18:28:00 joerg Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.drupal
 
@@ -29,9 +29,5 @@ DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=4.3.3:../../databases/php-mysql
 ### syndication.
 ###
 .if !empty(PKG_OPTIONS:Mdrupal-xmlservices)
-.	if ${PKG_PHP_VERSION} == "4"
-DEPENDS+=	${PHP_PKG_PREFIX}-domxml>=4.3.3:../../textproc/php4-domxml
-.	elif ${PKG_PHP_VERSION} == "5"
 DEPENDS+=	${PHP_PKG_PREFIX}-dom-[0-9]*:../../textproc/php5-dom
-.	endif
 .endif
