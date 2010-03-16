@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/03/02 15:22:54 taca Exp $
+# $NetBSD: Makefile,v 1.15 2010/03/15 16:45:59 taca Exp $
 #
 
 DISTNAME=	typolight-${TL_VERSION}
@@ -12,10 +12,10 @@ COMMENT=	Powerful web content management system (CMS)
 LICENSE=	gnu-lgpl-v2.1
 
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=5.2.0:../../graphics/php-gd
-DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.2.0:../../misc/php-mbstring
+DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.2.0:../../converters/php-mbstring
 DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=5.2.0:../../databases/php-mysql
 DEPENDS+=	${PHP_PKG_PREFIX}-mcrypt>=5.2.0:../../security/php-mcrypt
-DEPENDS+=	${PHP_PKG_PREFIX}-soap>=5.2.0:../../net/php5-soap
+DEPENDS+=	${PHP_PKG_PREFIX}-soap>=5.2.0:../../net/php-soap
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

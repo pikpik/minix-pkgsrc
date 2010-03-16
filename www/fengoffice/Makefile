@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/01/26 15:36:24 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/02/19 19:46:18 joerg Exp $
 #
 
 DISTNAME=	fengoffice_1.6.2
@@ -17,10 +17,10 @@ LICENSE=	gnu-gpl-v3
 CONFLICTS+=	opengoo-[0-9]*
 
 DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=5.1.0:../../databases/php-mysql
-DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.1.0:../../misc/php-mbstring
+DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.1.0:../../converters/php-mbstring
 DEPENDS+=	${PHP_PKG_PREFIX}-zip>=5.1.0:../../archivers/php-zip
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=5.1.0:../../graphics/php-gd
-DEPENDS+=	${PHP_PKG_PREFIX}-dom>=5.1.0:../../textproc/php5-dom
+DEPENDS+=	${PHP_PKG_PREFIX}-dom>=5.1.0:../../textproc/php-dom
 DEPENDS+=	${PHP_PKG_PREFIX}-imap>=5.1.0:../../mail/php-imap
 
 PKG_DESTDIR_SUPPORT=	user-destdir
