@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2009/01/20 06:24:03 seb Exp $
+# $NetBSD: Makefile,v 1.15 2010/02/22 15:56:28 sno Exp $
 #
 
-DISTNAME=	Authen-SASL-2.13
+DISTNAME=	Authen-SASL-2.14
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	security perl5
