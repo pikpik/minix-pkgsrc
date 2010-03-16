@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.100 2009/01/17 20:43:51 wiz Exp $
+# $NetBSD: Makefile,v 1.101 2009/09/07 18:24:11 joerg Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -55,6 +55,7 @@ SUBDIR+=	p5-Unicode-UTF8simple
 SUBDIR+=	p5-chkjis
 SUBDIR+=	p5-nkf
 SUBDIR+=	php-iconv
+SUBDIR+=	php-mbstring
 SUBDIR+=	psiconv
 SUBDIR+=	py-chardet
 SUBDIR+=	py-jpCodecs
