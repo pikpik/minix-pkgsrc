@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/03 07:40:05 manu Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/13 22:47:40 joerg Exp $
 
 MODNAME=		perl
 PKGMODNAME=		perl
@@ -10,9 +10,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--with-perl=${PREFIX}
 
-PHP_VERSIONS_ACCEPTED=		5
+PHP_VERSION_REQD=	5
 
 .include "../../lang/perl5/buildlink3.mk"
-
 .include "../../lang/php/ext.mk"
 .include "../../mk/bsd.pkg.mk"

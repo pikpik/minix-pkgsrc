@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/06/04 16:26:53 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:19 joerg Exp $
 
 MODNAME=		dbase
 CATEGORIES+=		databases
@@ -9,6 +9,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=	php-dbase-[0-9]*
 
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared
+
+PHP_VERSION_REQD=	5
 
 .include "../../lang/php/ext.mk"
 .include "../../mk/bsd.pkg.mk"
