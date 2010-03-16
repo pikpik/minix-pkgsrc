@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.704 2010/02/26 22:04:47 agc Exp $
+# $NetBSD: Makefile,v 1.705 2010/03/02 12:27:59 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -122,6 +122,8 @@ SUBDIR+=	firefox-bin-acroread7
 SUBDIR+=	firefox-bin-flash
 SUBDIR+=	firefox-bin-java
 SUBDIR+=	firefox-bin-realplayer
+SUBDIR+=	gallery
+SUBDIR+=	gallery2
 SUBDIR+=	galway
 SUBDIR+=	ganglia-webfrontend
 SUBDIR+=	geeklog
