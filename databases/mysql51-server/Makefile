@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/03/04 16:28:57 taca Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
+PKGREVISION=		1
 SVR4_PKGNAME=		mysqs
 COMMENT=		MySQL 5, a free SQL database (server)
 
@@ -21,6 +22,8 @@ CONFIGURE_ARGS+=	--with-mysqld-user=${MYSQL_USER}
 .if !empty(PKG_OPTIONS:Membedded-server)
 CONFIGURE_ARGS+=	--with-embedded-privilege-control
 CONFIGURE_ARGS+=	--with-embedded-server
+#CONFIGURE_ARGS+=	--with-mysqld-ldflags=-all-static
+CONFIGURE_ARGS+=	--with-pic
 PLIST.embedded=		yes
 .endif
 
