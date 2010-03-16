@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+As you have chosen to install the Suhosin patch you may also want to
+install the Suhosin extension which can be found in security/php-suhosin.
+
+===========================================================================
