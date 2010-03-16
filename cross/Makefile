@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2010/01/15 22:04:47 jakllsch Exp $
+# $NetBSD: Makefile,v 1.45 2010/03/15 18:37:57 asau Exp $
 #
 
 COMMENT=	Cross-platform development utilities
@@ -20,7 +20,6 @@ SUBDIR+=	h8300-hms-binutils
 SUBDIR+=	h8300-hms-gcc
 SUBDIR+=	i386-cygwin32
 SUBDIR+=	i386-linux
-SUBDIR+=	i386-mingw32
 SUBDIR+=	i386-msdosdjgpp
 SUBDIR+=	i386-netbsdpe
 SUBDIR+=	icdprog
