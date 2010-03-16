@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2008/11/17 03:04:01 he Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/09 11:41:42 sno Exp $
 #
 
-DISTNAME=	Lexical-Persistence-1.01
-PKGNAME=	p5-${DISTNAME}
+DISTNAME=	Lexical-Persistence-1.020
+PKGNAME=	p5-${DISTNAME:S/020/02/}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Lexical/}
 
