@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/01/07 09:13:52 rillig Exp $
+# $NetBSD: Makefile,v 1.5 2008/03/03 18:25:52 jlam Exp $
 #
 
 DISTNAME=		heme-0.4
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		heme
-USE_NCURSES=		# mvwchgat
+USE_NCURSES=		chgat
 USE_TOOLS+=		gmake
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
