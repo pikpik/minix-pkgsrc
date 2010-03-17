@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/02/15 16:19:09 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/03/08 13:49:18 joerg Exp $
 #
 
-DISTNAME=	uwsgi-0.9.4.2
+DISTNAME=	uwsgi-0.9.4.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	www python
 MASTER_SITES=	http://projects.unbit.it/downloads/
