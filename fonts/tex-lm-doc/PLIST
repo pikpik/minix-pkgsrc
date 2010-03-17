@@ -1,7 +1,7 @@
 @comment $NetBSD$
-share/texmf-dist/doc/fonts/lm/GUST-FONT-LICENSE.txt
-share/texmf-dist/doc/fonts/lm/MANIFEST-Latin-Modern.txt
-share/texmf-dist/doc/fonts/lm/README-Latin-Modern.txt
+share/texmf-dist/doc/fonts/lm/GUST-FONT-LICENSE.TXT
+share/texmf-dist/doc/fonts/lm/MANIFEST-Latin-Modern.TXT
+share/texmf-dist/doc/fonts/lm/README-Latin-Modern.TXT
 share/texmf-dist/doc/fonts/lm/lm-hist.txt
 share/texmf-dist/doc/fonts/lm/lm-info.pdf
 share/texmf-dist/doc/fonts/lm/tstlmot1.pdf
