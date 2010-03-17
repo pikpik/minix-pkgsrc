@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2005/04/11 21:45:42 tv Exp $
+# $NetBSD: Makefile,v 1.3 2008/03/03 19:21:37 jlam Exp $
 #
 
 DISTNAME=		aliados-0.1.1
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		YES
 USE_LANGUAGES=		c++
-USE_NCURSES=		# tigetstr tparm setupterm
+USE_NCURSES=		yes # tigetstr tparm setupterm
 
 INSTALLATION_DIRS=	bin
 
