@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/07/17 18:00:17 adrianp Exp $
+# $NetBSD: Makefile,v 1.11 2010/03/08 18:21:26 sno Exp $
 
 DISTNAME=	User-Identity-0.93
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,7 @@ HOMEPAGE=	http://perl.overmeer.net/userid/
 COMMENT=	Helps maintaining user information from various sources
 LICENSE=	${PERL5_LICENSE}
 
-DEPENDS+=	p5-Geography-Countries>=1.4:../../misc/p5-Geography-Countries
+DEPENDS+=	p5-Geography-Countries>=1.4:../../geography/p5-Geography-Countries
 BUILD_DEPENDS+=	p5-Test-Pod>=1.0:../../devel/p5-Test-Pod
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
