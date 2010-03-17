@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/12/06 07:45:06 obache Exp $
+# $NetBSD: Makefile,v 1.25 2010/01/18 09:58:56 wiz Exp $
 
 DISTNAME=		camlimages-2.2.0
 PKGREVISION=		8
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://cristal.inria.fr/camlimages/
 COMMENT=		Image processing library for Objective Caml
+
+MAKE_JOBS_SAFE=		no
 
 BUILDLINK_API_DEPENDS.ocaml+=	ocaml>=3.0.6
 
