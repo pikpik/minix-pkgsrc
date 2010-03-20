@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2010/02/03 10:51:59 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2010/02/10 19:17:42 joerg Exp $
 #
 
 DISTNAME=	mnemosyne-1.2.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mnemosyne-proj/}
 EXTRACT_SUFX=	.tgz
@@ -28,5 +28,6 @@ SUBST_STAGE.installpath=	pre-build
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/egg.mk"
+.include "../../graphics/py-imaging/buildlink3.mk"
 .include "../../x11/py-qt3-base/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
