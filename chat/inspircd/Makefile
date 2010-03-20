@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/08/29 22:47:47 adrianp Exp $
+# $NetBSD: Makefile,v 1.21 2010/01/28 19:46:37 joerg Exp $
 #
 
 DISTNAME=	InspIRCd-1.1.23
@@ -7,7 +7,7 @@ CATEGORIES=	chat
 MASTER_SITES=	http://www.inspircd.org/downloads/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.inspircd.org/
 COMMENT=	Modular C++ IRC Daemon
 

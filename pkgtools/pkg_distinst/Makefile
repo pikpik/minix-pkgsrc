@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2009/01/06 10:28:38 adrianp Exp $
+# $NetBSD: Makefile,v 1.3 2009/04/09 00:48:12 joerg Exp $
 
 DISTNAME=	pkg_distinst-0.02
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	adrianp@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Remove any distfiles not belonging to an installed package
 
 PKG_DESTDIR_SUPPORT=	user-destdir

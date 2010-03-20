@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/04 01:05:46 adrianp Exp $
+# $NetBSD: Makefile,v 1.2 2009/12/17 21:14:20 abs Exp $
 #
 
 DISTNAME=		ctrlproxy-3.0.8
 CATEGORIES=		chat
 MASTER_SITES=		http://www.ctrlproxy.org/releases/
 
-MAINTAINER=		adrianp@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ctrlproxy.org/
 COMMENT=		Detachable internet relay chat proxy server
 
