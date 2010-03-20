@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.820 2010/03/16 23:32:40 sno Exp $
+# $NetBSD: Makefile,v 1.821 2010/03/18 09:20:08 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -199,7 +199,7 @@ SUBDIR+=	kmldonkey
 SUBDIR+=	kmldonkey-kde3
 SUBDIR+=	kphone
 SUBDIR+=	ktorrent
-SUBDIR+=	ktorrent3
+SUBDIR+=	ktorrent-kde3
 SUBDIR+=	lambdamoo
 SUBDIR+=	lambdamoo-core
 SUBDIR+=	lambdamoo-doc
