@@ -1,4 +1,4 @@
-/*	$NetBSD: compare.c,v 1.49 2006/10/30 20:22:54 christos Exp $	*/
+/*	$NetBSD: compare.c,v 1.5 2008/11/06 02:14:52 jschauma Exp $	*/
 
 /*-
  * Copyright (c) 1989, 1993
@@ -44,7 +44,7 @@
 #if 0
 static char sccsid[] = "@(#)compare.c	8.1 (Berkeley) 6/6/93";
 #else
-__RCSID("$NetBSD: compare.c,v 1.49 2006/10/30 20:22:54 christos Exp $");
+__RCSID("$NetBSD: compare.c,v 1.5 2008/11/06 02:14:52 jschauma Exp $");
 #endif
 #endif /* not lint */
 
@@ -151,7 +151,7 @@ do {									\
 int
 compare(NODE *s, FTSENT *p)
 {
-	u_int32_t len, val, flags;
+	uint32_t len, val, flags;
 	int fd, label;
 	const char *cp, *tab;
 #if !defined(NO_MD5) || !defined(NO_RMD160) || !defined(NO_SHA1) || !defined(NO_SHA2)
