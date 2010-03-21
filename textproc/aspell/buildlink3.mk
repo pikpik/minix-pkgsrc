@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.14 2007/01/06 22:07:42 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.15 2009/03/20 19:25:28 joerg Exp $
 
 BUILDLINK_TREE+=	aspell
 
@@ -10,6 +10,8 @@ BUILDLINK_ABI_DEPENDS.aspell+=	aspell>=0.60.4nb1
 BUILDLINK_PKGSRCDIR.aspell?=	../../textproc/aspell
 
 BUILDLINK_FILES.aspell=	bin/aspell bin/prezip-bin bin/word-list-compress
+
+.include "../../devel/gettext-lib/buildlink3.mk"
 .endif # ASPELL_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-aspell
