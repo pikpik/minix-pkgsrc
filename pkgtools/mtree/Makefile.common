@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.5 2008/10/02 17:15:22 joerg Exp $
+# $NetBSD: Makefile.common,v 1.6 2008/11/06 02:14:52 jschauma Exp $
 #
 # This Makefile fragment is included by:
 #
@@ -10,7 +10,7 @@ DISTNAME=		mtree-20081105
 MASTER_SITES=		# empty
 DISTFILES=		# empty
 
-MAINTAINER=		grant@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		Utility for mapping and checking directory hierarchies
 

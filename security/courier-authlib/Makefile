@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/07/02 12:23:44 obache Exp $
+# $NetBSD: Makefile,v 1.34 2009/12/15 22:10:38 joerg Exp $
 
 .include "Makefile.common"
 
@@ -8,7 +8,7 @@ CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jlam@pkgsrc.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Courier Authentication Library
 HOMEPAGE=	http://www.courier-mta.org/authlib/
 LICENSE=	gnu-gpl-v3

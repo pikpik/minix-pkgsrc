@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/01/07 09:14:02 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2009/02/11 08:06:17 obache Exp $
 #
 
 DISTNAME=		hping2.0.0-rc3
@@ -6,7 +6,7 @@ PKGNAME=		hping-2.0.0.3
 CATEGORIES=		net
 MASTER_SITES=		http://www.hping.org/
 
-MAINTAINER=		atatat@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.hping.org/
 COMMENT=		Command-line oriented TCP/IP packet assembler/analyzer
 

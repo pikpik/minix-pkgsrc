@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/02/19 18:45:41 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2008/02/21 15:50:29 jlam Exp $
 
 DISTNAME=	courier-${COURIER_VERSION}
 PKGNAME=	${DISTNAME:S/-/tcpd-/}
@@ -7,7 +7,7 @@ CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jlam@pkgsrc.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Courier TCP socket and TLS servers
 HOMEPAGE=	http://www.courier-mta.org/
 

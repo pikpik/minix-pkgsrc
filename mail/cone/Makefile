@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2008/02/20 13:18:24 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/02/20 22:31:06 jlam Exp $
 
 DISTNAME=	cone-0.74
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jlam@pkgsrc.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.courier-mta.org/cone/
 COMMENT=	Console newsreader and emailer
 

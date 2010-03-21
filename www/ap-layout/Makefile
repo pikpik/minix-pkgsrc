@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2009/06/06 22:37:22 zafer Exp $
+# $NetBSD: Makefile,v 1.19 2010/02/20 14:58:45 joerg Exp $
 #
 
 DISTNAME=	mod_layout-3.2
@@ -6,7 +6,7 @@ PKGNAME=	${DISTNAME:C|mod_|ap13-|}
 CATEGORIES=	www
 MASTER_SITES=	http://download.tangent.org/
 
-MAINTAINER=	grant@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tangent.org/
 COMMENT=	Apache module to wrap static or dynamic content
 

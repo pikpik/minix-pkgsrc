@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/06/15 09:56:37 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/04/09 00:48:15 joerg Exp $
 
 META_PACKAGE=	yes
 
@@ -6,7 +6,7 @@ META_PACKAGE=	yes
 
 DISTNAME=	foomatic-ppds-cups-${FOOMATIC_PPDS_VERSION}
 
-MAINTAINER=	jlam@pkgsrc.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Foomatic PPD collection for CUPS servers
 
 DEPENDS+=	cups>=1.0:../../print/cups
