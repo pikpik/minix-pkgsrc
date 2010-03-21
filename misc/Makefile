@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.342 2010/03/16 15:20:37 taca Exp $
+# $NetBSD: Makefile,v 1.343 2010/03/16 15:40:21 taca Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -177,7 +177,6 @@ SUBDIR+=	p5-Search
 SUBDIR+=	parchive
 SUBDIR+=	pciids
 SUBDIR+=	pdmenu
-SUBDIR+=	php-intl
 SUBDIR+=	pinfo
 SUBDIR+=	ppower
 SUBDIR+=	pty-redir
