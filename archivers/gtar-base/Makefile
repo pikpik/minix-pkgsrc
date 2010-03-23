@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.63 2008/05/18 01:48:09 tnn Exp $
 
-DISTNAME=	tar-1.22
-PKGNAME=	gtar-base-1.22
+DISTNAME=	tar-1.23
+PKGNAME=	gtar-base-1.23
 SVR4_PKGNAME=	gtarb
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_GNU:=tar/}
