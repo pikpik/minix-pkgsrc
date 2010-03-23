@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.77 2010/01/17 12:02:40 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2010/02/19 20:16:05 joerg Exp $
 
 DISTNAME=	heimdal-1.1
 PKGREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	http://www.h5l.org/dist/src/
 
-MAINTAINER=	lha@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.h5l.org/
 COMMENT=	Kerberos 5 implementation
 LICENSE=	modified-bsd
