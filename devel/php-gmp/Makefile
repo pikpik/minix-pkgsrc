@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:27 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2010/03/03 07:32:26 taca Exp $
 
 MODNAME=		gmp
+PKGREVISION=		1
 CATEGORIES+=		devel math
 COMMENT=		PHP extension for arbitrary precision math
 

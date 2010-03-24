@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/09 05:52:36 agc Exp $
+# $NetBSD: Makefile,v 1.2 2010/02/19 15:12:04 joerg Exp $
 
 DISTNAME=	ssss-0.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://point-at-infinity.org/ssss/
 DISTFILES=      ${DISTNAME}${EXTRACT_SUFX} ssss.1

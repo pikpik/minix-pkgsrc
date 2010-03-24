@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2009/05/19 08:59:33 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2010/01/27 21:26:59 joerg Exp $
 
 DISTNAME=		srp-1.4.4
 PKGNAME=		srp-client-1.4.4
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		security net
 MASTER_SITES=		ftp://ftp.zedz.net/pub/crypto/programs/srp/
 

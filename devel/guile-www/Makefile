@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2009/12/15 21:40:01 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2010/02/07 16:12:01 wiz Exp $
 
 DISTNAME=	guile-www-2.25
+PKGREVISION=	1
 CATEGORIES=	devel www
 MASTER_SITES=	http://www.gnuvola.org/software/guile-www/
 

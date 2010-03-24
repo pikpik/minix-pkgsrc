@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2009/05/20 00:58:15 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2009/07/08 16:24:53 joerg Exp $
 
 DISTNAME=	afpfs-ng-0.8.1
 PKGNAME=	fuse-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	filesystems
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=afpfs-ng/}
 EXTRACT_SUFX=	.tar.bz2
