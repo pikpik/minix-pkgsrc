@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2009/03/20 19:24:58 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2010/02/06 10:37:06 sno Exp $
 
 BUILDLINK_TREE+=	pari
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	pari
 PARI_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.pari+=	pari>=2.3.4
-BUILDLINK_ABI_DEPENDS.pari+=	pari>=2.3.4
+BUILDLINK_ABI_DEPENDS.pari+=	pari>=2.3.5nb5
 BUILDLINK_PKGSRCDIR.pari?=	../../math/pari
 
 pkgbase := pari

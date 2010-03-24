@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2007/09/18 20:15:58 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.7 2009/03/20 19:24:57 joerg Exp $
 
 BUILDLINK_TREE+=	mpfr
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	mpfr
 MPFR_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.mpfr+=	mpfr>=2.0.3
+BUILDLINK_ABI_DEPENDS.mpfr?=	mpfr>=2.4.2.3nb1
 BUILDLINK_PKGSRCDIR.mpfr?=	../../math/mpfr
 
 .include "../../devel/gmp/buildlink3.mk"
