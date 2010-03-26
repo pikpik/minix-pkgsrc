@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/08/26 19:56:57 sno Exp $
+# $NetBSD: Makefile,v 1.16 2009/10/21 15:53:23 drochner Exp $
 #
 
 DISTNAME=	libgweather-2.28.0
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Weather information access library
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
