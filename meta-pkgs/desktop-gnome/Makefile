@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/06/08 22:49:22 ahoka Exp $
+# $NetBSD: Makefile,v 1.3 2009/08/05 13:57:03 tnn Exp $
 #
 
 DISTNAME=	desktop-gnome-0.3
@@ -23,6 +23,7 @@ DEPENDS+=	thunderbird-[0-9]*:../../mail/thunderbird
 DEPENDS+=	pidgin-[0-9]*:../../chat/pidgin
 DEPENDS+=	pidgin-libnotify-[0-9]*:../../chat/pidgin-libnotify
 DEPENDS+=	Transmission-[0-9]*:../../net/Transmission
+DEPENDS+=	filezilla-[0-9]*:../../net/filezilla
 
 # useful fonts and themes
 #
