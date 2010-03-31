@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.17 2009/03/20 19:24:24 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.18 2009/08/26 19:57:01 sno Exp $
 
 BUILDLINK_TREE+=	libwnck
 
@@ -11,6 +11,7 @@ BUILDLINK_PKGSRCDIR.libwnck?=	../../devel/libwnck
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../x11/libXres/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
