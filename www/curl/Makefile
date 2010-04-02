@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2010/02/09 16:05:38 drochner Exp $
+# $NetBSD: Makefile,v 1.96 2010/02/16 12:51:43 wiz Exp $
 
 DISTNAME=	curl-7.20.0
 CATEGORIES=	www
@@ -23,6 +23,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_PREFIX.openssl}
 CONFIGURE_ARGS+=	--with-ca-path=${SSLCERTS}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
+PKGCONFIG_OVERRIDE=	libcurl.pc.in
 
 .include "../../mk/bsd.prefs.mk"
 
