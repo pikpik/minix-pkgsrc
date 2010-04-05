@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/01/17 12:02:26 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/01/18 09:59:13 wiz Exp $
 #
 
 DISTNAME=	fbreader-sources-0.10.7
@@ -23,6 +23,12 @@ MAKE_ENV+=	INSTALLDIR=${PREFIX}
 MAKE_ENV+=	DESTDIR=${DESTDIR}
 MAKE_ENV+=	LDFLAGS=${COMPILER_RPATH_FLAG}${PREFIX}/lib
 MAKE_ENV+=	TARGET_ARCH=desktop
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "NetBSD"
+CPPFLAGS+=	-DDO_ICONV_CAST
+.endif
 
 .include "options.mk"
 
