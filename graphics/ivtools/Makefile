@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2009/08/26 19:57:44 sno Exp $
+# $NetBSD: Makefile,v 1.22 2010/01/18 09:59:02 wiz Exp $
 
-DISTNAME=	ivtools-1.2.4
-PKGREVISION=	5
+DISTNAME=	ivtools-1.2.8
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ivtools/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	markd@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ivtools.org/ivtools/
 COMMENT=	Drawing editors for PostScript, TeX, and web graphics
 
@@ -14,6 +13,8 @@ CONFLICTS+=	dclock-[0-9]*
 
 DEPENDS+=	pstoedit>=3.0:../../graphics/pstoedit
 DEPENDS+=	wget>=1.0:../../net/wget
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	imake bash:run
@@ -31,7 +32,8 @@ post-patch:
 pre-install:
 	${RM} -f ${WRKSRC}/config/local.def.orig
 	${RM} -f ${WRKSRC}/config/params.def.orig
-	${RM} -f ${WRKSRC}/config/site.def.NETBSD.orig
+	${RM} -f ${WRKSRC}/config/rules.def.orig
+	${RM} -f ${WRKSRC}/config/site.def.*.orig
 	${RM} -f ${WRKSRC}/config/arch.def.orig
 
 .include "../../graphics/tiff/buildlink3.mk"
