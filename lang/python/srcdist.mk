@@ -1,4 +1,4 @@
-# $NetBSD: srcdist.mk,v 1.29 2009/10/21 06:36:24 wiz Exp $
+# $NetBSD: srcdist.mk,v 1.30 2009/11/03 02:21:05 wiz Exp $
 
 .include "../../lang/python/pyversion.mk"
 
@@ -14,11 +14,11 @@ MASTER_SITES=	ftp://ftp.python.org/pub/python/2.6/
 
 .elif ${_PYTHON_VERSION} == "25"
 
-DISTNAME=	Python-2.5.4
+DISTNAME=	Python-2.5.5
 EXTRACT_SUFX=	.tar.bz2
 DISTINFO_FILE=	${.CURDIR}/../../lang/python25/distinfo
 PATCHDIR=	${.CURDIR}/../../lang/python25/patches
-PYSUBDIR=	Python-2.5.4
+PYSUBDIR=	Python-2.5.5
 WRKSRC=		${WRKDIR}/${PYSUBDIR}
 MASTER_SITES=	ftp://ftp.python.org/pub/python/2.5/
 
