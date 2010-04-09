@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.343 2010/03/16 15:40:21 taca Exp $
+# $NetBSD: Makefile,v 1.344 2010/03/21 17:06:06 jdolecek Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -10,6 +10,7 @@ SUBDIR+=	JMdict
 SUBDIR+=	ascii
 SUBDIR+=	asr-manpages
 SUBDIR+=	astrolog
+SUBDIR+=	attica
 SUBDIR+=	autocue
 SUBDIR+=	basket
 SUBDIR+=	bbappconf
