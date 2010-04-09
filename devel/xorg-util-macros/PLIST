@@ -1,4 +1,4 @@
 @comment $NetBSD$
 share/aclocal/xorg-macros.m4
-share/doc/util-macros/INSTALL
 share/pkgconfig/xorg-macros.pc
+share/util-macros/INSTALL

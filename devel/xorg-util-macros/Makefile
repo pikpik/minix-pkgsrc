@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2009/07/08 20:22:54 hasso Exp $
+# $NetBSD: Makefile,v 1.6 2010/01/15 18:58:44 tnn Exp $
 #
 
-DISTNAME=		util-macros-1.4.1
+DISTNAME=		util-macros-1.7.0
 PKGNAME=		xorg-${DISTNAME}
 CATEGORIES=		devel x11
 MASTER_SITES=		${MASTER_SITE_XORG:=util/}
