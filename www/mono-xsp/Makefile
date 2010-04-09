@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2009/08/29 13:49:20 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2010/02/16 17:47:26 kefren Exp $
 
-DISTNAME=	xsp-2.6
+DISTNAME=	xsp-2.6.3
 PKGNAME=	mono-${DISTNAME}
 CATEGORIES=	www
 MASTER_SITES=	http://ftp.novell.com/pub/mono/sources/xsp/
