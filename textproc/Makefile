@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.529 2010/03/16 22:35:38 pettai Exp $
+# $NetBSD: Makefile,v 1.530 2010/03/21 16:58:55 jdolecek Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -486,6 +486,7 @@ SUBDIR+=	sary
 SUBDIR+=	saxon
 SUBDIR+=	scew
 SUBDIR+=	scrollkeeper-dtd
+SUBDIR+=	shared-desktop-ontologies
 SUBDIR+=	soprano
 SUBDIR+=	source-highlight
 SUBDIR+=	stardic
