@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2009/03/22 21:12:51 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2009/12/13 13:11:55 obache Exp $
 #
 
-DISTNAME=	libotf-0.9.10
+DISTNAME=	libotf-0.9.11
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.m17n.org/libotf/
 
