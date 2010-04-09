@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/06/07 11:24:36 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/06/09 02:46:10 obache Exp $
 #
 
 DISTNAME=	xf86-video-chips-1.2.1
@@ -20,5 +20,6 @@ USE_TOOLS+=	pkg-config
 .include "../../x11/randrproto/buildlink3.mk"
 .include "../../x11/renderproto/buildlink3.mk"
 .include "../../x11/videoproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
+BUILDLINK_DEPMETHOD.libXext?=	build
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

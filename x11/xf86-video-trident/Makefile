@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/06/09 07:01:22 hasso Exp $
+# $NetBSD: Makefile,v 1.7 2009/08/09 22:58:28 wiz Exp $
 #
 
 DISTNAME=	xf86-video-trident-1.3.3
@@ -20,6 +20,7 @@ USE_TOOLS+=     pkg-config
 .include "../../x11/randrproto/buildlink3.mk"
 .include "../../x11/renderproto/buildlink3.mk"
 .include "../../x11/videoproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
+BUILDLINK_DEPMETHOD.libXext?=	build
+.include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/xf86dgaproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
