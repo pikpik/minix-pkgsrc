@@ -1,0 +1,9 @@
+# $NetBSD$
+#
+# used by multimedia/py-ming/Makefile
+
+DISTNAME=	ming-0.4.3
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ming/}
+
+DISTINFO_FILE=	${.CURDIR}/../../multimedia/ming/distinfo
+PATCHDIR=	${.CURDIR}/../../multimedia/ming/patches
