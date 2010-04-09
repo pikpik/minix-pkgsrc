@@ -1,4 +1,6 @@
 @comment $NetBSD$
+include/X11/extensions/Xinerama.h
+include/X11/extensions/panoramiXext.h
 lib/libXinerama.la
 lib/pkgconfig/xinerama.pc
 man/man3/Xinerama.3
