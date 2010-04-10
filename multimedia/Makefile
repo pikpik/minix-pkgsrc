@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.159 2009/11/27 08:39:08 wiz Exp $
+# $NetBSD: Makefile,v 1.160 2010/03/11 06:27:52 obache Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -60,6 +60,7 @@ SUBDIR+=	kaffeine
 SUBDIR+=	kdemultimedia3
 SUBDIR+=	kdemultimedia4
 SUBDIR+=	kmplayer
+SUBDIR+=	kmplayer-kde3
 SUBDIR+=	libassetml
 SUBDIR+=	libdv
 SUBDIR+=	libdv-tools
