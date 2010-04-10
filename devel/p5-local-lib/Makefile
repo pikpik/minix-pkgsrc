@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2009/11/22 14:19:55 seb Exp $
+# $NetBSD: Makefile,v 1.8 2010/03/15 19:00:15 sno Exp $
 #
 
-DISTNAME=	local-lib-1.005001
-PKGNAME=	p5-${DISTNAME:S/005001/5.1/}
+DISTNAME=	local-lib-1.006000
+PKGNAME=	p5-${DISTNAME:S/006000/6.0/}
 CATEGORIES=	devel perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/A/AP/APEIRON/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=lib/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/local-lib/
