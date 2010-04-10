@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.151 2010/02/25 09:21:44 jnemeth Exp $
+# $NetBSD: Makefile,v 1.152 2010/03/04 21:51:11 spz Exp $
 #
 
 COMMENT=	Communication programs
@@ -56,6 +56,7 @@ SUBDIR+=	jabberd2
 SUBDIR+=	kadu
 SUBDIR+=	kmess
 SUBDIR+=	konversation
+SUBDIR+=	konversation-kde3
 SUBDIR+=	libirc
 SUBDIR+=	libmsn
 SUBDIR+=	libotr
