@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.487 2010/02/23 13:52:33 sno Exp $
+# $NetBSD: Makefile,v 1.488 2010/03/09 07:06:00 adam Exp $
 #
 
 COMMENT=	System utilities
@@ -224,6 +224,7 @@ SUBDIR+=	p5-Mac-AppleScript
 SUBDIR+=	p5-Mac-AppleScript-Glue
 SUBDIR+=	p5-Parse-Syslog
 SUBDIR+=	p5-SSH-Batch
+SUBDIR+=	p5-Server-Starter
 SUBDIR+=	p5-Sys-CpuLoad
 SUBDIR+=	p5-Sys-Filesystem
 SUBDIR+=	p5-Sys-Hostname-Long
