@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/answers/ansexam1.tex
+share/texmf-dist/doc/latex/answers/ansexam2.tex
+share/texmf-dist/doc/latex/answers/ansexam3.tex
+share/texmf-dist/doc/latex/answers/answers.pdf
