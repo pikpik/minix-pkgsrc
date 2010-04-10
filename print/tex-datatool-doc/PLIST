@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/datatool/CHANGES
+share/texmf-dist/doc/latex/datatool/README
+share/texmf-dist/doc/latex/datatool/datatool.pdf
