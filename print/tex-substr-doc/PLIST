@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/substr/ChangeLog
+share/texmf-dist/doc/latex/substr/README
+share/texmf-dist/doc/latex/substr/testsubstr.pdf
+share/texmf-dist/doc/latex/substr/testsubstr.tex
