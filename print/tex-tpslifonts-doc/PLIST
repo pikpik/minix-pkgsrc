@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/tpslifonts/00readme.txt
+share/texmf-dist/doc/latex/tpslifonts/0install.txt
+share/texmf-dist/doc/latex/tpslifonts/__TPslifonts.tex
+share/texmf-dist/doc/latex/tpslifonts/slifontsexample.tex
