@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/xfor/CHANGES
+share/texmf-dist/doc/latex/xfor/README
+share/texmf-dist/doc/latex/xfor/sample.tex
+share/texmf-dist/doc/latex/xfor/xfor.pdf
