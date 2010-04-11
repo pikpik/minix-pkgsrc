@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.59 2009/11/16 12:33:31 adam Exp $
+# $NetBSD: Makefile,v 1.60 2009/12/07 23:57:31 wiz Exp $
 
-DISTNAME=	scummvm-1.0.0
+DISTNAME=	scummvm-1.1.0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scummvm/}
 EXTRACT_SUFX=	.tar.bz2
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 HAS_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--disable-debug
 CONFIGURE_ARGS+=	--mandir=${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 
