@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.358 2010/04/10 21:26:18 markd Exp $
+# $NetBSD: Makefile,v 1.359 2010/04/10 21:56:13 markd Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -145,6 +145,8 @@ SUBDIR+=	tex-acmconf
 SUBDIR+=	tex-acmconf-doc
 SUBDIR+=	tex-acmtrans
 SUBDIR+=	tex-acmtrans-doc
+SUBDIR+=	tex-acromake
+SUBDIR+=	tex-acromake-doc
 SUBDIR+=	tex-algorithm2e
 SUBDIR+=	tex-algorithms
 SUBDIR+=	tex-algorithms-doc
