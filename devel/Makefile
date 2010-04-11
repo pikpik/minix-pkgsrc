@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1321 2010/04/10 14:23:46 seb Exp $
+# $NetBSD: Makefile,v 1.1322 2010/04/10 15:44:10 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -1093,6 +1093,7 @@ SUBDIR+=	py-readline
 SUBDIR+=	py-setuptools
 SUBDIR+=	py-subversion
 SUBDIR+=	py-subvertpy
+SUBDIR+=        py-sysctl
 SUBDIR+=	py-unit
 SUBDIR+=	py-unitgui
 SUBDIR+=	py-urwid
