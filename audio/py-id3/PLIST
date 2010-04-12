@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/ID3.py
+${PYSITELIB}/ID3.pyc
+${PYSITELIB}/ID3.pyo
