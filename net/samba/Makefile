@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.197 2010/02/09 16:08:35 drochner Exp $
+# $NetBSD: Makefile,v 1.198 2010/03/08 22:19:07 jmmv Exp $
 
 .include "Makefile.mirrors"
 
@@ -170,5 +170,6 @@ post-install: install-samba-lib-symlinks
 	${CHMOD} ${SHAREMODE} ${DESTDIR}${PREFIX}/include/libmsrpc.h \
 		${DESTDIR}${PREFIX}/include/libsmbclient.h
 
+.include "../../security/openssl/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
