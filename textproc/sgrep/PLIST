@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/sgrep
+man/man1/sgrep.1
+share/doc/sgrep/README
+share/examples/sgrep/sample.sgreprc
