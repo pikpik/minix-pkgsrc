@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.37 2010/01/26 13:31:50 ghen Exp $
+# $NetBSD: options.mk,v 1.38 2010/02/25 18:48:01 drochner Exp $
 
 # Global and legacy options
 
@@ -146,7 +146,7 @@ PATCH_DIST_STRIP=	-p1
 .  include "../../devel/libidn/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-idn=${BUILDLINK_PREFIX.libidn}
 .else
-CONFIGURE_ARGS+=	--disable-idn
+CONFIGURE_ARGS+=	--with-idn=no
 .endif
 
 ###
