@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/captdef/captdef.pdf
+share/texmf-dist/doc/latex/captdef/captdef.tex
+share/texmf-dist/doc/latex/captdef/miscdoc.sty
