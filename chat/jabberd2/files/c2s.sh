@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: c2s.sh,v 1.1.1.1 2004/03/28 19:44:07 xtraeme Exp $
+# $NetBSD: c2s.sh,v 1.2 2004/06/26 11:21:46 abs Exp $
 #
 # PROVIDE: c2s
 # REQUIRE: DAEMON
@@ -31,6 +31,11 @@ remove_pidfile()
 	if [ -f @JABBERD_PIDDIR@/${name}.pid ]; then
 	    rm -f @JABBERD_PIDDIR@/${name}.pid
 	fi
+}
+
+limits_precmd()
+{
+	ulimit -n 1024
 }
 
 if [ -f /etc/rc.subr ]; then
