@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.434 2010/03/14 16:28:02 martin Exp $
+# $NetBSD: Makefile,v 1.435 2010/04/12 12:14:20 obache Exp $
 #
 
 COMMENT=	Audio tools
@@ -286,6 +286,7 @@ SUBDIR+=	nspmod
 SUBDIR+=	ocp
 SUBDIR+=	oggasm
 SUBDIR+=	openal
+SUBDIR+=	opencore-amr
 SUBDIR+=	p5-Audio-CD
 SUBDIR+=	p5-Audio-Scan
 SUBDIR+=	p5-Audio-Wav
