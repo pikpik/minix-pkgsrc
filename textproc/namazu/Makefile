@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2009/03/14 15:04:39 taca Exp $
+# $NetBSD: Makefile,v 1.4 2009/09/24 15:04:33 taca Exp $
 
 DISTNAME=	namazu-2.0.20
 CATEGORIES=	japanese textproc www
 MASTER_SITES=	http://www.namazu.org/test/ \
-		http://www.namazu.org/stable/ \
-		http://namazu.ipmedia.de/stable/
+		http://www.namazu.org/stable/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.namazu.org/index.html.en
