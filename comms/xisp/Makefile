@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2009/12/17 21:49:22 abs Exp $
+# $NetBSD: Makefile,v 1.31 2010/01/18 09:58:42 wiz Exp $
 #
 
 DISTNAME=		xisp-2.7p4
 PKGREVISION=		1
 CATEGORIES=		comms x11
 MASTER_SITES=		http://xisp.hellug.gr/release/ \
-			${MASTER_SITE_SUNSITE:=system/network/serial/} \
-			ftp://argeas.cs-net.gr/pub/unix/linux/
+			${MASTER_SITE_SUNSITE:=system/network/serial/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://xisp.hellug.gr/
