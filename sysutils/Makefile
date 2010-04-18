@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.488 2010/03/09 07:06:00 adam Exp $
+# $NetBSD: Makefile,v 1.489 2010/04/10 13:44:27 seb Exp $
 #
 
 COMMENT=	System utilities
@@ -314,7 +314,6 @@ SUBDIR+=	ups-nut-cgi
 SUBDIR+=	ups-nut-snmp
 SUBDIR+=	ups-nut-usb
 SUBDIR+=	usbutil
-SUBDIR+=	user
 SUBDIR+=	user_darwin
 SUBDIR+=	user_interix
 SUBDIR+=	vbetool
