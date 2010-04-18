@@ -1,4 +1,4 @@
-# $NetBSD: bin-install.mk,v 1.17 2008/02/19 22:53:34 rillig Exp $
+# $NetBSD: bin-install.mk,v 1.18 2008/02/20 09:58:04 wiz Exp $
 #
 
 # This file provides the following targets:
@@ -31,7 +31,7 @@
 # replaced with OS release ("1.5", ...) and architecture ("mipsel", ...)
 .if ${OPSYS} == "NetBSD"
 BINPKG_SITES?= \
-	ftp://ftp.NetBSD.org/pub/NetBSD/packages/$${rel}/$${arch}
+	ftp://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/$${arch}/$${rel}
 .else
 BINPKG_SITES?=
 .endif
