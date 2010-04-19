@@ -1,0 +1,2 @@
+@comment $NetBSD: PLIST,v 1.15 2010/04/13 15:11:55 drochner Exp $
+lib/xine/plugins/1.28/xineplug_inp_v4l.la
