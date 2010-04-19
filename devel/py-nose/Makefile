@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/26 17:43:14 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2010/02/10 10:31:46 drochner Exp $
 #
 
-DISTNAME=	nose-0.11.1
+DISTNAME=	nose-0.11.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel python
 #MASTER_SITES=	http://python-nose.googlecode.com/files/
@@ -22,6 +22,9 @@ PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 
 post-extract:
 	${MV} ${WRKSRC}/nosetests.1 ${WRKSRC}/nosetests${PYVERSSUFFIX}.1
+
+do-test:
+	${RUN} cd ${WRKSRC}; ${SETENV} ${TEST_ENV} ${PYTHONBIN} selftest.py
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
