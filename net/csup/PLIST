@@ -1,4 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/02/16 12:06:39 xtraeme Exp $
+@comment $NetBSD$
+bin/cpasswd
 bin/csup
+man/cat1/cpasswd.0
 man/cat1/csup.0
+man/man1/cpasswd.1
 man/man1/csup.1
