@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2008/11/10 17:21:34 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2009/05/20 00:58:11 wiz Exp $
 
 # This section contains variables that might be overridden.
 PKGNAME?=	${PKGNAME_BASE}
@@ -9,7 +9,7 @@ DISTNAME=	sqsh-2.1-src
 PKGNAME_BASE=	${DISTNAME:S/-src//}
 PKGREVISION=	7
 CATEGORIES=	databases
-MASTER_SITES=	${HOMEPAGE}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sqsh/}
 
 CONFLICTS+=	sqsh-[0-9]*
 CONFLICTS+=	sqsh-motif-[0-9]*
