@@ -1,4 +1,4 @@
-/*	$NetBSD: mpool.c,v 1.3 2008/10/28 15:06:26 joerg Exp $	*/
+/*	$NetBSD: mpool.c,v 1.4 2010/01/24 12:29:48 obache Exp $	*/
 /*	NetBSD: mpool.c,v 1.18 2008/09/11 12:58:00 joerg Exp 	*/
 
 /*-
@@ -33,7 +33,7 @@
 #include <nbcompat.h>
 #include <nbcompat/cdefs.h>
 
-__RCSID("$NetBSD: mpool.c,v 1.3 2008/10/28 15:06:26 joerg Exp $");
+__RCSID("$NetBSD: mpool.c,v 1.4 2010/01/24 12:29:48 obache Exp $");
 
 #include <nbcompat/queue.h>
 #include <sys/stat.h>
@@ -68,6 +68,13 @@ __weak_alias(mpool_sync,_mpool_sync)
 static BKT *mpool_bkt(MPOOL *);
 static BKT *mpool_look(MPOOL *, pgno_t);
 static int  mpool_write(MPOOL *, BKT *);
+
+#ifdef BROKEN_PREAD
+#include "../pread.c"
+#endif
+#ifdef BROKEN_PWRITE
+#include "../pwrite.c"
+#endif
 
 /*
  * mpool_open --
