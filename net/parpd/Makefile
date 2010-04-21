@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2009/05/19 08:59:27 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2009/08/31 20:06:27 zafer Exp $
 #
 
-DISTNAME=		parpd-1.4
+DISTNAME=		parpd-1.5
 CATEGORIES=		net
 MASTER_SITES=		ftp://roy.marples.name/pub/parpd/ \
 					http://roy.aydogan.net/parpd/
