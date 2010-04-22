@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+To change the language in Thunderbird, go to:
+Edit -> Preferences ->  Advanced -> General -> Config Editor
+and edit the general.useragent.locale property. 
+===========================================================================
