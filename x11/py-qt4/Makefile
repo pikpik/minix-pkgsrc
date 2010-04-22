@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2010/04/13 15:27:38 drochner Exp $
+# $NetBSD: Makefile,v 1.23 2010/04/20 09:35:05 drochner Exp $
 #
 
 PKGNAME=		${PYPKGPREFIX}-qt4-${PYQT_VERSION}
@@ -21,6 +21,7 @@ CONFIGURE_ARGS+=	-d ${PREFIX}/${PYSITELIB}
 CONFIGURE_ARGS+=	-v ${PREFIX}/share/sip${PYVERSSUFFIX}
 CONFIGURE_ARGS+=	-q ${QTDIR}/bin/qmake
 CONFIGURE_ARGS+=	--confirm-license
+CONFIGURE_ARGS+=	--qsci-api
 
 INSTALL_ENV+=		INSTALL_ROOT=${DESTDIR:Q}
 
