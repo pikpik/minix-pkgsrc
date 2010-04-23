@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/03/22 14:57:51 seb Exp $
+# $NetBSD: Makefile,v 1.2 2010/03/10 15:59:30 sno Exp $
 #
 
-DISTNAME=	autobox-Core-1.0
+DISTNAME=	autobox-Core-1.2
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/S/SW/SWALTERS/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=autobox/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/autobox-Core/
