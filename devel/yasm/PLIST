@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.8 2009/06/14 17:49:17 joerg Exp $
+@comment $NetBSD$
+bin/vsyasm
 bin/yasm
 bin/ytasm
 include/libyasm-stdint.h
