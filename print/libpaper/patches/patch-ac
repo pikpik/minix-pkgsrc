@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 2009/02/16 18:05:44 drochner Exp $
+
+http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=578885
 
 --- lib/paper.h.orig	1996-09-24 09:16:07.000000000 +0200
 +++ lib/paper.h
