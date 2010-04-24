@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2009/08/26 19:57:16 sno Exp $
+# $NetBSD: Makefile,v 1.6 2010/01/20 14:04:52 wiz Exp $
 
 DISTNAME=	pidgin-icb-20070505
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	chat
 MASTER_SITES=	http://nic.com.pl/~alek/pidgin-icb/
 
@@ -35,5 +35,6 @@ do-install:
 	    ${INSTALL_DATA} icb_$$i.png ${PIDGIN_PIXMAPS_DIR}/$$i/icb.png; done
 
 .include "../../chat/pidgin/buildlink3.mk"
+.include "../../devel/libidn/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
