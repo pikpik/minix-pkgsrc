@@ -1,4 +1,4 @@
-/* $Id: realpath.c,v 1.1.1.1 2010/04/20 13:32:27 joerg Exp $ */
+/* $Id: realpath.c,v 1.1.1.2 2010/04/24 20:33:57 joerg Exp $ */
 /* from: $NetBSD: getcwd.c,v 1.45 2007/10/26 19:48:14 christos Exp $	*/
 
 /*
@@ -35,7 +35,7 @@
 #ifdef HAVE_CONFIG_H
 # include <config.h>
 #endif
-#ifndef HAVE_REALPATHx
+#ifndef HAVE_REALPATH
 
 #include <sys/cdefs.h>
 #include <sys/param.h>
