@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.223 2010/01/20 14:47:30 joerg Exp $
+# $NetBSD: replace.mk,v 1.224 2010/03/21 10:52:29 wiz Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -289,7 +289,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.${_t_}=
 TOOLS_DEPENDS.${_t_}?=		bzip2>=0.9.0b:../../archivers/bzip2
 TOOLS_CREATE+=			${_t_}
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.${_t_}=bzip2
-TOOLS_PATH.bzcat=		${TOOLS_PREFIX.${_t_}}/bin/${_t_}
+TOOLS_PATH.${_t_}=		${TOOLS_PREFIX.${_t_}}/bin/${_t_}
 .    endif
 .  endif
 .endfor
