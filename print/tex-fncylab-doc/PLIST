@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/fncylab/fncylab-example.tex
+share/texmf-dist/doc/latex/fncylab/fncylab.pdf
+share/texmf-dist/doc/latex/fncylab/fncylab.tex
