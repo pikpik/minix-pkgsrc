@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/clib/clib.h
+include/clib/queue.h
+lib/libclib.la
