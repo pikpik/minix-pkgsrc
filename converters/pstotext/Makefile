@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/04/25 12:46:19 obache Exp $
 #
 
 DISTNAME=	pstotext-1.9
+PKGREVISION=	1
 CATEGORIES=	converters print
 MASTER_SITES=	ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/contrib/
 
