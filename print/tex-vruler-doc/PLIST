@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/vruler/miscdoc.sty
+share/texmf-dist/doc/latex/vruler/vruler-example.tex
+share/texmf-dist/doc/latex/vruler/vruler.pdf
+share/texmf-dist/doc/latex/vruler/vruler.tex
