@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.328 2010/04/17 09:35:57 seb Exp $
+# $NetBSD: Makefile,v 1.329 2010/04/18 15:33:38 seb Exp $
 #
 
 COMMENT=	Databases
 
 SUBDIR+=	abook
 SUBDIR+=	adodb
+SUBDIR+=	apache-cassandra
 SUBDIR+=	bdb-xml
 SUBDIR+=	cdb
 #SUBDIR+=	cstore	# not enabled at present due to its size requirements
