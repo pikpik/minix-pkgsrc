@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- glibmm-utils/log-stream.cc.orig	2008-10-14 14:11:14.000000000 +0200
++++ glibmm-utils/log-stream.cc
+@@ -36,6 +36,10 @@
+ #include "date.h"
+ #include "ustring.h"
+ 
++#ifndef __ASSERT_FUNCTION
++#define __ASSERT_FUNCTION __func__
++#endif
++
+ namespace Glib {
+ namespace Util {
+ 
