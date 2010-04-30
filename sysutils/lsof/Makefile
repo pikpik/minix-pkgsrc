@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.103 2010/03/21 16:29:43 wiz Exp $
+# $NetBSD: Makefile,v 1.104 2010/04/30 06:53:06 sbd Exp $
 
 DISTNAME=		lsof_4.78
 PKGNAME=		${DISTNAME:S/_/-/}.${OS_VERSION}
@@ -38,6 +38,10 @@ USE_TOOLS+=	gtar pax perl:run
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
+TEST_DIRS=		tests
+TEST_TARGET=		test
+INTERACTIVE_STAGE+=	test
+
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
@@ -76,4 +80,10 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/scripts/* ${DESTDIR}${PREFIX}/share/lsof
 	@${CHMOD} 0444 ${DESTDIR}${PREFIX}/share/lsof/00*
 
+opt:
+.for _dir_ in ${TEST_DIRS}
+	${RUN}${_ULIMIT_CMD}			\
+	cd ${WRKSRC} && cd ${_dir_} &&		\
+	${TEST_MAKE_CMD} opt
+.endfor
 .include "../../mk/bsd.pkg.mk"
