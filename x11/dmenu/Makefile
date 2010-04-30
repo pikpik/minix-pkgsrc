@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.4 2009/06/14 22:48:51 ahoka Exp $
 #
 
 DISTNAME=	dmenu-4.0
@@ -7,7 +7,7 @@ MASTER_SITES=	http://code.suckless.org/dl/tools/
 
 MAINTAINER=	leot1990@users.sourceforge.net
 HOMEPAGE=	http://tools.suckless.org/dmenu
-COMMENT=	Dymanic menu for X
+COMMENT=	Dynamic menu for X
 
 LICENSE=	mit
 
