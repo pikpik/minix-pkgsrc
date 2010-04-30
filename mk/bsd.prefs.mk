@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.307 2010/02/06 11:40:22 obache Exp $
+# $NetBSD: bsd.prefs.mk,v 1.308 2010/04/18 21:51:49 sbd Exp $
 #
 # This file includes the mk.conf file, which contains the user settings.
 #
@@ -97,6 +97,8 @@ GNU_ARCH.sh3el?=	shle
 NATIVE_MACHINE_GNU_ARCH?=	${GNU_ARCH.${NATIVE_MACHINE_ARCH}:U${NATIVE_MACHINE_ARCH}}
 MACHINE_GNU_ARCH?=		${GNU_ARCH.${MACHINE_ARCH}:U${MACHINE_ARCH}}
 
+## If changes are made to how OS_VERSION is set below please keep
+## "pkgsrc/pkgtools/osabi/INSTALL" in-sync.
 .if ${OPSYS} == "NetBSD"
 LOWER_OPSYS?=		netbsd
 
