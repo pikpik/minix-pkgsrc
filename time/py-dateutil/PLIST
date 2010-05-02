@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2009/04/21 15:15:04 wiz Exp $
+@comment $NetBSD$
 ${PYSITELIB}/dateutil/__init__.py
 ${PYSITELIB}/dateutil/__init__.pyc
 ${PYSITELIB}/dateutil/__init__.pyo
@@ -23,7 +23,7 @@ ${PYSITELIB}/dateutil/tzwin.pyo
 ${PYSITELIB}/dateutil/zoneinfo/__init__.py
 ${PYSITELIB}/dateutil/zoneinfo/__init__.pyc
 ${PYSITELIB}/dateutil/zoneinfo/__init__.pyo
-${PYSITELIB}/dateutil/zoneinfo/zoneinfo-2008e.tar.gz
+${PYSITELIB}/dateutil/zoneinfo/zoneinfo-2010g.tar.gz
 ${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
 ${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
 ${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
