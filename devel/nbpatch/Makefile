@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/01/23 23:08:03 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2010/04/20 15:41:20 tnn Exp $
 #
 
 DISTNAME=	nbpatch-20100124
@@ -20,6 +20,7 @@ USE_FEATURES=		nbcompat
 
 NBCOMPAT_CONFIGURE_ARGS+=	--enable-bsd-getopt
 
+LIBS.IRIX+=	-lgen
 ALL_ENV+=	LDADD=${LIBS:Q}
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat1 ${PKGMANDIR}/man1
