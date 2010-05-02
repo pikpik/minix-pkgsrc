@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/babelbib/ChangeLog
+share/texmf-dist/doc/latex/babelbib/README
+share/texmf-dist/doc/latex/babelbib/babelbib.pdf
+share/texmf-dist/doc/latex/babelbib/babelbibtest.bib
+share/texmf-dist/doc/latex/babelbib/babelbibtest.tex
+share/texmf-dist/doc/latex/babelbib/tugboat-babelbib.pdf
