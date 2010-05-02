@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2010/02/10 19:17:41 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2010/03/07 08:56:55 wiz Exp $
 #
 
-DISTNAME=	gaupol-0.15
+DISTNAME=	gaupol-0.15.1
 CATEGORIES=	misc
 MASTER_SITES=	http://download.gna.org/gaupol/0.15/
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://home.gna.org/gaupol/index.html
 COMMENT=	Subtitle editor
+LICENSE=	gnu-gpl-v3
 
 DEPENDS+=	iso-codes-[0-9]*:../../textproc/iso-codes
 DEPENDS+=	${PYPKGPREFIX}-chardet-[0-9]*:../../converters/py-chardet
