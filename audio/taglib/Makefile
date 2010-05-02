@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2009/11/01 16:18:27 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2010/03/21 16:29:38 wiz Exp $
 #
 
-DISTNAME=	taglib-1.6.1
+DISTNAME=	taglib-1.6.3
 CATEGORIES=	audio
 MASTER_SITES=	http://ktown.kde.org/~wheeler/files/src/
 
