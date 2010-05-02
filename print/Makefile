@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.396 2010/04/29 23:05:40 minskim Exp $
+# $NetBSD: Makefile,v 1.397 2010/04/30 18:19:37 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -167,6 +167,8 @@ SUBDIR+=	tex-apalike
 SUBDIR+=	tex-apalike-doc
 SUBDIR+=	tex-babel
 SUBDIR+=	tex-babel-doc
+SUBDIR+=	tex-babelbib
+SUBDIR+=	tex-babelbib-doc
 SUBDIR+=	tex-bagpipetex
 SUBDIR+=	tex-beamer
 SUBDIR+=	tex-beamer-doc
