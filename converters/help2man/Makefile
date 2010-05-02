@@ -1,13 +1,14 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/17 20:43:27 wiz Exp $
 #
 
-DISTNAME=		help2man-1.36.4
+DISTNAME=		help2man-1.38.2
 CATEGORIES=		converters
 MASTER_SITES=		${MASTER_SITE_GNU:=help2man/}
 
 MAINTAINER=		arved@arved.at
 HOMEPAGE=		http://www.gnu.org/software/help2man/
 COMMENT=		Generate simple manual pages from program output
+LICENSE=		gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
