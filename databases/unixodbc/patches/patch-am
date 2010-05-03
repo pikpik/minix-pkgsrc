@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- exe/Makefile.in.orig	2010-04-26 02:28:44.000000000 +0000
++++ exe/Makefile.in
+@@ -319,7 +319,7 @@ $(ACLOCAL_M4):  $(am__aclocal_m4_deps)
+ $(am__aclocal_m4_deps):
+ install-binPROGRAMS: $(bin_PROGRAMS)
+ 	@$(NORMAL_INSTALL)
+-	test -z "$(bindir)" || $(MKDIR_P) "$(DESTDIR)$(bindir)"
++	test -z "$(DESTDIR)$(bindir)" || $(MKDIR_P) "$(DESTDIR)$(bindir)"
+ 	@list='$(bin_PROGRAMS)'; test -n "$(bindir)" || list=; \
+ 	for p in $$list; do echo "$$p $$p"; done | \
+ 	sed 's/$(EXEEXT)$$//' | \
