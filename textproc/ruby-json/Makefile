@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/09/15 08:38:01 taca Exp $
+# $NetBSD: Makefile,v 1.3 2009/11/23 13:33:47 fhajny Exp $
 
-DISTNAME=	json-1.2.0
+DISTNAME=	json-1.4.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc
 
