@@ -1,6 +1,6 @@
-$NetBSD: patch-configure,v 1.8 2009/09/07 20:05:30 ahoka Exp $
+$NetBSD$
 
---- configure.orig	2009-06-10 22:50:53.000000000 +0200
+--- configure.orig	2009-06-10 20:50:53.000000000 +0000
 +++ configure
 @@ -1619,6 +1619,10 @@ case $target_os in
          add_cflags -D__EXTENSIONS__
@@ -39,3 +39,12 @@ $NetBSD: patch-configure,v 1.8 2009/09/07 20:05:30 ahoka Exp $
  
  # ---
  # check availability of some header files
+@@ -2101,7 +2110,7 @@ enabled libschroedinger && add_cflags $(
+ enabled libspeex   && require  libspeex speex/speex.h speex_decoder_init -lspeex
+ enabled libtheora  && require  libtheora theora/theora.h theora_info_init -ltheora -logg
+ enabled libvorbis  && require  libvorbis vorbis/vorbisenc.h vorbis_info_init -lvorbisenc -lvorbis -logg
+-enabled libx264    && require  libx264 x264.h x264_encoder_open -lx264 -lm &&
++enabled libx264    && require  libx264 x264.h x264_encoder_close -lx264 -lm &&
+                       { check_cpp_condition x264.h "X264_BUILD >= 65" ||
+                         die "ERROR: libx264 version must be >= 0.65."; }
+ enabled libxvid    && require  libxvid xvid.h xvid_global -lxvidcore
