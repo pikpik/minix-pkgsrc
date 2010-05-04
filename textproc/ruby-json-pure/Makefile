@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/09/15 08:39:10 taca Exp $
+# $NetBSD: Makefile,v 1.3 2009/11/23 13:35:59 fhajny Exp $
 
-DISTNAME=	json_pure-1.2.0
+DISTNAME=	json_pure-1.4.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/_/-/g}
 CATEGORIES=	textproc
 
@@ -10,6 +10,7 @@ COMMENT=	Pure Ruby implementation of JSON
 LICENSE=	ruby-license
 
 GEM_BUILD=	gemspec
+REPLACE_RUBY=	tools/fuzz.rb tools/server.rb
 
 post-extract:
 	cd ${WRKSRC}; ${FIND} . -xdev -type f -print | ${XARGS} ${CHMOD} g-w
