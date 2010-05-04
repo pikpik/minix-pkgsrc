@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/gen/db/read.py.orig	2010-03-18 15:39:23.000000000 +0000
-+++ src/gen/db/read.py
-@@ -35,7 +35,7 @@ import random
+--- src/plugins/lib/libgrdb.py.orig	2010-03-18 15:42:36.000000000 +0000
++++ src/plugins/lib/libgrdb.py
+@@ -36,7 +36,7 @@ import random
  import locale
  import os
  from sys import maxint
