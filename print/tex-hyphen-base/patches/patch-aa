@@ -1,6 +1,6 @@
-$NetBSD: patch-aa,v 1.2 2010/01/18 23:08:29 minskim Exp $
+$NetBSD$
 
---- texmf/tex/generic/config/language.dat.orig	2010-04-10 01:55:22.000000000 +0000
+--- texmf/tex/generic/config/language.dat.orig	2010-05-03 01:52:21.000000000 +0000
 +++ texmf/tex/generic/config/language.dat
 @@ -47,130 +47,3 @@ usenglishmax	ushyphmax.tex
  % 
@@ -63,9 +63,9 @@ $NetBSD: patch-aa,v 1.2 2010/01/18 23:08:29 minskim Exp $
 -% from hyphen-indic:
 -assamese loadhyph-as.tex
 -bengali loadhyph-bn.tex
--guajrati loadhyph-gu.tex
+-gujarati loadhyph-gu.tex
 -hindi loadhyph-hi.tex
--assamese loadhyph-kn.tex
+-kannada loadhyph-kn.tex
 -malayalam loadhyph-ml.tex
 -marathi loadhyph-mr.tex
 -oriya loadhyph-or.tex
