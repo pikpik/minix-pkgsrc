@@ -1,3 +1,9 @@
 @comment $NetBSD$
+share/texmf-dist/doc/latex/sttools/doc/cuted.pdf
+share/texmf-dist/doc/latex/sttools/doc/cuted.tex
+share/texmf-dist/doc/latex/sttools/doc/floatpag.pdf
+share/texmf-dist/doc/latex/sttools/doc/floatpag.tex
+share/texmf-dist/doc/latex/sttools/doc/flushend.pdf
+share/texmf-dist/doc/latex/sttools/doc/flushend.tex
 share/texmf-dist/doc/latex/sttools/index.html
 share/texmf-dist/doc/latex/sttools/presfull.pdf
