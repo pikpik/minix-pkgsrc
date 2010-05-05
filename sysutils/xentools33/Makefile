@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2009/10/18 21:31:23 bouyer Exp $
+# $NetBSD: Makefile,v 1.20 2010/02/10 19:17:46 joerg Exp $
 #
 
 VERSION=		3.3.2
 DISTNAME=		xen-${VERSION}
 PKGNAME=		xentools33-${VERSION}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
 EXTRACT_SUFX=		.tar.gz
@@ -12,6 +12,8 @@ EXTRACT_SUFX=		.tar.gz
 MAINTAINER=		cegger@NetBSD.org
 HOMEPAGE=		http://xen.org/
 COMMENT=		Userland Tools for Xen 3.3.x
+
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
