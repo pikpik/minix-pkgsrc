@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/10/04 20:53:45 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2010/01/29 17:00:26 joerg Exp $
 #
 
 DISTNAME=	gdbm-prim-1.15
@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_OPTS=		-f tar
 MAKE_ENV+=		BUILDLINK_LDFLAGS=${BUILDLINK_LDFLAGS:Q}
+MAKE_ENV+=		PKGMANDIR=${PKGMANDIR:Q}
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 .include "../../databases/gdbm/buildlink3.mk"
