@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/08/27 17:03:58 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2009/11/05 21:56:59 asau Exp $
 #
 
 DISTNAME=	dash-0.5.5.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	shells
 MASTER_SITES=	http://gondor.apana.org.au/~herbert/dash/files/
 
