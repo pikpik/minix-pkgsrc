@@ -1,4 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/01/02 15:18:12 obache Exp $
+@comment $NetBSD$
 bin/kasumi
-share/kasumi/kasumi.png
-${PKGLOCALEDIR}/locale/ja/LC_MESSAGES/kasumi.mo
+man/man1/kasumi.1
+share/applications/kasumi.desktop
+share/locale/it/LC_MESSAGES/kasumi.mo
+share/locale/ja/LC_MESSAGES/kasumi.mo
+share/pixmaps/kasumi.png
