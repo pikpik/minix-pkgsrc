@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.61 2009/12/15 21:59:06 joerg Exp $
+# $NetBSD: Makefile,v 1.62 2010/01/18 09:59:18 wiz Exp $
 
 DISTNAME=	transcode-1.1.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.berlios.de/tcforge/
 EXTRACT_SUFX=	.tar.bz2
@@ -22,6 +22,9 @@ CONFIGURE_ARGS+=	--enable-oss
 CONFIGURE_ARGS+=	--enable-ogg
 CONFIGURE_ARGS+=	--enable-theora
 CONFIGURE_ARGS+=	--enable-vorbis
+CONFIGURE_ARGS+=	--enable-libmpeg2
+CONFIGURE_ARGS+=	--enable-libmpeg2convert
+CONFIGURE_ARGS+=	--enable-xvid
 CONFIGURE_ARGS+=	--with-libavcodec-prefix=${BUILDLINK_PREFIX.ffmpeg}
 CONFIGURE_ENV+=		PATH_TO_AWK=${AWK:Q}
 
@@ -39,7 +42,6 @@ PLIST_VARS+=	i386
 
 .include "options.mk"
 
-.include "../../audio/faac/buildlink3.mk"
 .include "../../audio/lame/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
