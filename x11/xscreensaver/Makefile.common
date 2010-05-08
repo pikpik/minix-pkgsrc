@@ -19,8 +19,6 @@ USE_TOOLS+=		msgfmt perl
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-hackdir=${PREFIX}/libexec/xscreensaver
-CONFIGURE_ARGS+=	--with-gl
-CONFIGURE_ARGS+=	--with-gle
 CONFIGURE_ARGS+=	--with-jpeg=${BUILDLINK_PREFIX.jpeg}
 CONFIGURE_ARGS+=	--with-zippy=/usr/games/fortune
 
@@ -66,6 +64,5 @@ GCC_REQD+=		2.95.3
 INSTALL_MAKE_FLAGS=	install_prefix=${DESTDIR}
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../graphics/gle/buildlink3.mk"
 .include "../../graphics/jpeg/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
