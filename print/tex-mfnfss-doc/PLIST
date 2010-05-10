@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/mfnfss/changes.txt
+share/texmf-dist/doc/latex/mfnfss/manifest.txt
+share/texmf-dist/doc/latex/mfnfss/readme.txt
