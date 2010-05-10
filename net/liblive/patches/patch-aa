@@ -2,7 +2,8 @@ $NetBSD$
 
 --- config.linux.orig	2008-07-25 00:40:05.000000000 +0000
 +++ config.linux
-@@ -1,17 +1,19 @@
+@@ -1,17 +1,20 @@
++.SUFFIXES: .la .lo .cpp
  COMPILE_OPTS =		$(INCLUDES) -I. -O2 -DSOCKLEN_T=socklen_t -D_LARGEFILE_SOURCE=1 -D_FILE_OFFSET_BITS=64
  C =			c
 -C_COMPILER =		cc
