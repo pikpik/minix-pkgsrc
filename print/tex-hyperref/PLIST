@@ -11,6 +11,7 @@ share/texmf-dist/tex/latex/hyperref/htexture.def
 share/texmf-dist/tex/latex/hyperref/hvtex.def
 share/texmf-dist/tex/latex/hyperref/hvtexhtm.def
 share/texmf-dist/tex/latex/hyperref/hvtexmrk.def
+share/texmf-dist/tex/latex/hyperref/hxetex.def
 share/texmf-dist/tex/latex/hyperref/hylatex.ltx
 share/texmf-dist/tex/latex/hyperref/hyperref.sty
 share/texmf-dist/tex/latex/hyperref/hypertex.def
