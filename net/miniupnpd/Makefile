@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2009/04/29 12:34:42 sborrill Exp $
+# $NetBSD: Makefile,v 1.4 2009/11/26 00:35:00 joerg Exp $
 #
 
-DISTNAME=	miniupnpd-20081009
-PKGREVISION=	1
-PKGNAME=	${DISTNAME:S/miniupnpd-/&1.2.0./}
+DISTNAME=	miniupnpd-1.4.20100308
 CATEGORIES=	net
 MASTER_SITES=	http://miniupnp.free.fr/files/download.php?file=
 
@@ -20,8 +18,10 @@ CONF_FILES=	${EGDIR}/miniupnpd.conf ${PKG_SYSCONFDIR}/miniupnpd.conf
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
-MAKE_ENV+=	${BSD_MAKE_ENV}
-MAKE_ENV+=	PKG_CFLAGS="-DPKG_DEFAULT_CONFIG=\\\"${PKG_SYSCONFDIR:Q}/miniupnpd.conf\\\""
+CFLAGS+=	-DDEFAULT_CONFIG=\"${PKG_SYSCONFDIR:Q}/miniupnpd.conf\"
+
+INSTALL_MAKE_FLAGS+=	INSTALLETCDIR=${EGDIR}
+INSTALL_MAKE_FLAGS+=	INSTALLMANDIR=${PREFIX}/${PKGMANDIR}/man1
 
 RCD_SCRIPTS=	miniupnpd
 
