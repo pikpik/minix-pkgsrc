@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2008/10/27 14:38:54 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/26 19:56:57 sno Exp $
 #
 
 DISTNAME=	tomoe-gtk-0.6.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	inputmethod
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tomoe/}
 
@@ -20,10 +20,13 @@ USE_PKGLOCALEDIR=	yes
 PKGCONFIG_OVERRIDE+=	tomoe-gtk.pc.in
 
 CONFIGURE_ARGS+=	--without-python
-# enable again once upstream supports gucharmap-2, or a
-# gucharmap-1 package was created
-CONFIGURE_ARGS+=	--without-gucharmap
+
+SUBST_CLASSES+=		gucharmap2
+SUBST_STAGE.gucharmap2=	pre-configure
+SUBST_FILES.gucharmap2=	configure
+SUBST_SED.gucharmap2=	-e 's|gucharmap >= 1.4.0|gucharmap-2|g'
 
 .include "../../inputmethod/tomoe/buildlink3.mk"
+.include "../../fonts/gucharmap/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
