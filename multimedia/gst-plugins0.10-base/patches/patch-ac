@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ext/alsa/gstalsasrc.c.orig	2008-12-18 23:35:54.000000000 -0500
+--- ext/alsa/gstalsasrc.c.orig	2010-04-09 08:13:11.000000000 +0000
 +++ ext/alsa/gstalsasrc.c
 @@ -51,6 +51,10 @@
  
@@ -10,6 +10,6 @@ $NetBSD$
 +#define ESTRPIPE EPIPE
 +#endif
 +
- /* elementfactory information */
- static const GstElementDetails gst_alsasrc_details =
- GST_ELEMENT_DETAILS ("Audio source (ALSA)",
+ #define DEFAULT_PROP_DEVICE		"default"
+ #define DEFAULT_PROP_DEVICE_NAME	""
+ 
