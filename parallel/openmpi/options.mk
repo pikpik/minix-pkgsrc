@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1.1.1 2009/12/12 23:30:01 asau Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.openmpi
 PKG_SUPPORTED_OPTIONS=	debug openmpi-vampirtrace
@@ -14,6 +14,7 @@ CONFIGURE_ARGS+=	--enable-debug
 .if !empty(PKG_OPTIONS:Mopenmpi-vampirtrace)
 CONFLICTS+=	libotf-[0-9]*
 PLIST_SRC+=	PLIST.vt
+.include "../../graphics/freetype2/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--enable-contrib-no-build=vt
 .endif
