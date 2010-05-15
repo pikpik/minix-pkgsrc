@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/src.pro.orig	2009-10-19 15:41:57.000000000 +0200
+--- src/src.pro.orig	2009-11-29 21:33:13.000000000 +0000
 +++ src/src.pro
-@@ -148,7 +148,7 @@ ThreadRunner.ui \
+@@ -150,7 +150,7 @@ ThreadRunner.ui \
   Export.ui
  
  
