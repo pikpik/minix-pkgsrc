@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/06/19 14:58:13 taca Exp $
+# $NetBSD: Makefile,v 1.6 2008/10/29 04:16:15 obache Exp $
 #
 
 DISTNAME=	xmlscan-${VER}
@@ -10,6 +10,7 @@ MASTER_SITES=	http://www.blue.sky.or.jp/atelier/ruby/xmlscan/
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.blue.sky.or.jp/atelier/ruby/xmlscan/
 COMMENT=	Pure Ruby XML parser
+#LICENSE=	# Ruby's
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
