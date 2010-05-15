@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/24 11:52:41 obache Exp $
 #
 
 DISTNAME=		scim-chewing-0.3.3
@@ -9,6 +9,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		obache@NetBSD.org
 HOMEPAGE=		http://chewing.csie.net/
 COMMENT=		SCIM IMEngine module for Chewing input method
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
