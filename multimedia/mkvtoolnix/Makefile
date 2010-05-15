@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2009/11/29 19:14:41 joerg Exp $
-#
+# $NetBSD: Makefile,v 1.18 2010/01/18 09:59:18 wiz Exp $
 
 DISTNAME=	mkvtoolnix-2.9.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2
@@ -31,10 +30,12 @@ PLIST_VARS+=	gui
 
 .if !empty(PKG_OPTIONS:Mmkvtoolnix-gui)
 PLIST.gui=	yes
-CONFIGURE_ARGS+= --enable-gui --enable-wxwidgets 
+CONFIGURE_ARGS+=	--enable-gui
+CONFIGURE_ARGS+=	--enable-wxwidgets
 .   include "../../x11/wxGTK28/buildlink3.mk"
 .else
-CONFIGURE_ARGS+= --disable-gui --disable-wxwidgets
+CONFIGURE_ARGS+=	--disable-gui
+CONFIGURE_ARGS+=	--disable-wxwidgets
 .endif
 
 .include "../../archivers/bzip2/buildlink3.mk"
