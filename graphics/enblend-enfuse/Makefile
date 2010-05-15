@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2010/01/05 11:18:04 adam Exp $
+# $NetBSD: Makefile,v 1.5 2010/01/18 09:58:57 wiz Exp $
 
 DISTNAME=	enblend-enfuse-4.0
 # XXX distribution file has changed; remove the line below on next update
 DIST_SUBDIR=	${PKGNAME_NOREV}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=enblend/}
 
@@ -25,6 +25,7 @@ GNU_CONFIGURE=		yes
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "Darwin"
+CONFIGURE_ARGS+=	--enable-openmp
 CONFIGURE_ARGS+=	--with-apple-opengl-framework
 .else
 CONFIGURE_ARGS+=	--with-x
