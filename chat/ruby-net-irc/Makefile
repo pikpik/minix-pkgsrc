@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/05/14 09:31:22 obache Exp $
+# $NetBSD: Makefile,v 1.4 2010/02/14 12:29:13 taca Exp $
 
 DISTNAME=		net-irc-0.0.9
 PKGNAME=		${RUBY_PKGPREFIX}-${DISTNAME}
@@ -7,6 +7,7 @@ CATEGORIES=		chat
 MAINTAINER=		obache@NetBSD.org
 HOMEPAGE=		http://lowreal.rubyforge.org/net-irc/
 COMMENT=		Ruby IRC library
+#LICENSE=		Ruby's
 
 GEM_BUILD=		gemspec
 
