@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/09/04 12:07:15 obache Exp $
+# $NetBSD: Makefile,v 1.2 2009/08/23 09:23:28 obache Exp $
 #
 
 DISTNAME=	lzmalib-0.0.1
@@ -8,6 +8,7 @@ MASTER_SITES=	http://tokyocabinet.sourceforge.net/misc/
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://tokyocabinet.sourceforge.net/misc/
 COMMENT=	Thin wrapper library of LZMA
+#LICENSE=	gnu-lgpl-?
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
