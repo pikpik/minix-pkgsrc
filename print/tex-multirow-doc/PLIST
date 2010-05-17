@@ -1,2 +1,5 @@
 @comment $NetBSD$
 share/texmf-dist/doc/latex/multirow/README
+share/texmf-dist/doc/latex/multirow/miscdoc.sty
+share/texmf-dist/doc/latex/multirow/multirow.pdf
+share/texmf-dist/doc/latex/multirow/multirow.tex
