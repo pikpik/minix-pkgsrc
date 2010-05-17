@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2010/02/22 06:10:32 obache Exp $
+# $NetBSD: Makefile,v 1.31 2010/03/09 01:19:48 obache Exp $
 #
 
 DISTNAME=	GraphicsMagick-1.3.12
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=graphicsmagick/} \
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.graphicsmagick.org/
 COMMENT=	X application for displaying and manipulating images
+#LICENSE=	mit AND # see ${WRKSRC}/Copyright.txt
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
