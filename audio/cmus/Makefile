@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2010/03/02 23:06:43 ahoka Exp $
+# $NetBSD: Makefile,v 1.23 2010/03/16 16:46:22 ahoka Exp $
 #
 
-DISTNAME=		cmus-v2.3.1
+DISTNAME=		cmus-v2.3.2
 PKGNAME=		${DISTNAME:S/-v/-/}
 CATEGORIES=		audio
-MASTER_SITES=		http://downloads.sourceforge.net/project/cmus/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=cmus/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		ahoka@NetBSD.org
