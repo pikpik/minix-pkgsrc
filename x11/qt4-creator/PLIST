@@ -94,6 +94,9 @@ share/qtcreator/snippets/for.snp
 share/qtcreator/snippets/foreach.snp
 share/qtcreator/snippets/if.snp
 share/qtcreator/snippets/ifelse.snp
+share/qtcreator/styles/default.xml
+share/qtcreator/styles/fakevim.xml
+share/qtcreator/styles/grayscale.xml
 share/qtcreator/templates/qt4project/customwidgetwizard/tpl_collection.cpp
 share/qtcreator/templates/qt4project/customwidgetwizard/tpl_collection.h
 share/qtcreator/templates/qt4project/customwidgetwizard/tpl_plugin.pro
