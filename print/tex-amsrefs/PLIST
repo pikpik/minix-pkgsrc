@@ -1,4 +1,10 @@
 @comment $NetBSD$
+share/texmf-dist/bibtex/bib/amsrefs/amsj.bib
+share/texmf-dist/bibtex/bst/amsrefs/amsra.bst
+share/texmf-dist/bibtex/bst/amsrefs/amsrn.bst
+share/texmf-dist/bibtex/bst/amsrefs/amsrs.bst
+share/texmf-dist/bibtex/bst/amsrefs/amsru.bst
+share/texmf-dist/bibtex/bst/amsrefs/amsry.bst
 share/texmf-dist/tex/latex/amsrefs/amsbst.sty
 share/texmf-dist/tex/latex/amsrefs/amsrefs.sty
 share/texmf-dist/tex/latex/amsrefs/ifoption.sty
