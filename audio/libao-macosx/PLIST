@@ -1,2 +1,2 @@
-@comment $NetBSD: PLIST,v 1.1 2005/05/20 19:20:56 jmmv Exp $
-lib/ao/plugins-2/libmacosx.la
+@comment $NetBSD: PLIST,v 1.2 2009/06/14 17:32:13 joerg Exp $
+lib/ao/plugins-4/libmacosx.la
