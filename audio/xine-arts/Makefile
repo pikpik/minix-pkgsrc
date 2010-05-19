@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.31 2008/07/21 00:13:43 dholland Exp $
+# $NetBSD: Makefile,v 1.32 2008/08/26 13:14:48 drochner Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/xine-lib/Makefile.common"
+
+PKGREVISION=	1
 
 PKGNAME=	${XINE_PKGNAME:S/lib/arts/}
 CATEGORIES=	audio
@@ -24,6 +26,5 @@ do-install:
 		${DESTDIR}${PREFIX}/lib/xine/plugins/${XINE_MOD_DIR_VER}
 
 .include "../../audio/arts/buildlink3.mk"
-.include "../../audio/libao/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
