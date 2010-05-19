@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.31 2006/11/02 17:59:37 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2007/11/30 17:50:30 wiz Exp $
 
 PKG_INSTALLATION_TYPES=	overwrite
 
 .include "Makefile.common"
 
 post-install:
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/lib/ao/plugins-2
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/lib/ao/plugins-4
 
 .include "../../mk/bsd.pkg.mk"
