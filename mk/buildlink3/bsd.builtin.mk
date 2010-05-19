@@ -1,4 +1,4 @@
-# $NetBSD: bsd.builtin.mk,v 1.9 2008/01/23 17:35:20 tnn Exp $
+# $NetBSD: bsd.builtin.mk,v 1.10 2009/03/20 19:25:01 joerg Exp $
 #
 # Copyright (c) 2004-2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -147,6 +147,9 @@ _BLTN_PREFER.${_pkg_}=	native
 _BLTN_PREFER.${_pkg_}=	pkgsrc
 .  endif
 PREFER.${_pkg_}?=	${_BLTN_PREFER.${_pkg_}}
+.  if empty(_BUILTIN_PKGS:M${_pkg_})
+_BUILTIN_PKGS+=	${_pkg_}
+.  endif
 .endfor
 
 .include "../../mk/buildlink3/find-libs.mk"
