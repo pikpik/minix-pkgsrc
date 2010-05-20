@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.20 2009/10/11 16:30:43 tnn Exp $
+
+cups installs stuff in /usr/pkg/lib64 on Linux. Don't do this.
 
 --- config-scripts/cups-3264.m4.orig	2007-07-11 23:46:42.000000000 +0200
 +++ config-scripts/cups-3264.m4
