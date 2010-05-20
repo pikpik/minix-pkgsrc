@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/diffpdf
+man/man1/diffpdf.1
