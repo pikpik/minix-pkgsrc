@@ -2,13 +2,13 @@
 
 DISTNAME=	krb5-1.4.2
 PKGNAME=	mit-${DISTNAME:S/-signed$//}
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	security
 MASTER_SITES=	http://web.mit.edu/kerberos/dist/krb5/1.4/
 DISTFILES=	${DISTNAME}-signed${EXTRACT_SUFX}
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	tez@NetBSD.org
 HOMEPAGE=	http://web.mit.edu/kerberos/www/
 COMMENT=	MIT Kerberos 5 authentication system
 
