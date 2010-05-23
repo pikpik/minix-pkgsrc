@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.827 2010/04/19 22:42:44 seb Exp $
+# $NetBSD: Makefile,v 1.828 2010/04/19 22:47:32 seb Exp $
 #
 
 COMMENT=	Networking tools
@@ -212,6 +212,7 @@ SUBDIR+=	libares
 SUBDIR+=	libasyncns
 SUBDIR+=	libbind
 SUBDIR+=	libcares
+SUBDIR+=	libdlna
 SUBDIR+=	libdnet
 SUBDIR+=	libfetch
 SUBDIR+=	libgdata
