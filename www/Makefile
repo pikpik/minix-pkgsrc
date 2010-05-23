@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.724 2010/04/24 14:00:22 obache Exp $
+# $NetBSD: Makefile,v 1.725 2010/04/28 21:28:35 seb Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -99,6 +99,7 @@ SUBDIR+=	cronolog
 SUBDIR+=	curl
 SUBDIR+=	cvsweb
 SUBDIR+=	dansguardian
+SUBDIR+=	davical
 SUBDIR+=	dillo
 SUBDIR+=	drivel
 SUBDIR+=	drraw
