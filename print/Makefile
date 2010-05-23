@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.412 2010/05/19 23:03:19 minskim Exp $
+# $NetBSD: Makefile,v 1.413 2010/05/20 17:20:45 drochner Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -222,6 +222,7 @@ SUBDIR+=	tex-datatool-doc
 SUBDIR+=	tex-dblfloatfix
 SUBDIR+=	tex-dblfloatfix-doc
 SUBDIR+=	tex-dehyph-exptl
+SUBDIR+=	tex-dehyph-exptl-doc
 SUBDIR+=	tex-draftwatermark
 SUBDIR+=	tex-dvipdfm
 SUBDIR+=	tex-dvipdfm-doc
