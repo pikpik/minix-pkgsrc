@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2009/06/13 06:46:46 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2010/04/10 08:07:26 seb Exp $
 
-DISTNAME=	Scope-Guard-0.12
+DISTNAME=	Scope-Guard-0.20
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	devel perl5
