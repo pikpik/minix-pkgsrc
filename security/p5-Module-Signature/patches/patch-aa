@@ -1,4 +1,6 @@
-$NetBSD: patch-aa,v 1.1.1.1 2004/11/11 18:11:58 seb Exp $
+$NetBSD: patch-aa,v 1.2 2007/02/27 09:28:33 wiz Exp $
+
+Prevent interactive configure.
 
 --- Makefile.PL.orig	2006-07-30 01:11:14.000000000 +0000
 +++ Makefile.PL
