@@ -203,6 +203,7 @@ share/texmf-dist/doc/latex/oberdiek/test/listingsutf8-test2.tex
 share/texmf-dist/doc/latex/oberdiek/test/listingsutf8-test3.tex
 share/texmf-dist/doc/latex/oberdiek/test/listingsutf8-test4.tex
 share/texmf-dist/doc/latex/oberdiek/test/listingsutf8-test5.tex
+share/texmf-dist/doc/latex/oberdiek/test/ltxcmds-test-gobble.tex
 share/texmf-dist/doc/latex/oberdiek/test/ltxcmds-test1.tex
 share/texmf-dist/doc/latex/oberdiek/test/luacolor-test1.tex
 share/texmf-dist/doc/latex/oberdiek/test/luacolor-test2.tex

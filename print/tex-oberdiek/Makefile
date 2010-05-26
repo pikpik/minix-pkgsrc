@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/02/19 18:19:45 minskim Exp $
-# TeX Live Revision 17996
+# $NetBSD: Makefile,v 1.3 2010/04/30 18:53:26 minskim Exp $
 
 DISTNAME=	oberdiek
 PKGNAME=	tex-${DISTNAME}-2009
+PKGREVISION=	1
+TEXLIVE_REV=	18100
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Bundle of packages submitted by Heiko Oberdiek
