@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2009/01/28 16:03:37 tonio Exp $
+# $NetBSD: Makefile,v 1.35 2009/06/02 17:10:53 drochner Exp $
 
 DISTNAME=	xvidcore-1.2.2
 CATEGORIES=	multimedia
@@ -18,7 +18,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 # big patch available from Gentoo, if someone is interested:
 # http://bugs.gentoo.org/show_bug.cgi?id=90287
 .if ${OPSYS} == "SunOS" || ${MACHINE_ARCH} == "x86_64" || \
-    !empty(MACHINE_PLATFORM:MDarwin-[9].*-i386)
+    !empty(MACHINE_PLATFORM:MDarwin-*-i386)
 CONFIGURE_ARGS+=	--disable-assembly
 .elif ${MACHINE_ARCH} == "i386"
 BUILD_DEPENDS+=		nasm>=0.98.39nb3:../../devel/nasm
