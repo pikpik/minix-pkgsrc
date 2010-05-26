@@ -1,6 +1,7 @@
 @comment $NetBSD$
 share/texmf-dist/tex/latex/microtype/letterspace.sty
 share/texmf-dist/tex/latex/microtype/microtype.cfg
+share/texmf-dist/tex/latex/microtype/microtype.lua
 share/texmf-dist/tex/latex/microtype/microtype.sty
 share/texmf-dist/tex/latex/microtype/mt-bch.cfg
 share/texmf-dist/tex/latex/microtype/mt-blg.cfg
