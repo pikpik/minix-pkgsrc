@@ -1,8 +1,8 @@
-$NetBSD: patch-ag,v 1.1.1.1 2009/01/04 00:21:36 adrianp Exp $
+$NetBSD: patch-ag,v 1.2 2009/07/26 09:07:58 obache Exp $
 
---- lib/dns/rbt.c.orig	2009-01-18 23:47:40.000000000 +0000
+--- lib/dns/rbt.c.orig	2009-10-20 05:06:04.000000000 +0000
 +++ lib/dns/rbt.c
-@@ -167,6 +167,10 @@ Name(dns_rbtnode_t *node) {
+@@ -177,6 +177,10 @@ Name(dns_rbtnode_t *node) {
  static void dns_rbt_printnodename(dns_rbtnode_t *node);
  #endif
  
