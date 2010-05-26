@@ -1,7 +1,5 @@
 @comment $NetBSD$
 share/texmf-dist/makeindex/memoir/basic.gst
-share/texmf-dist/makeindex/memoir/memman.gst
-share/texmf-dist/makeindex/memoir/memman.ist
 share/texmf-dist/tex/latex/memoir/mem10.clo
 share/texmf-dist/tex/latex/memoir/mem11.clo
 share/texmf-dist/tex/latex/memoir/mem12.clo
