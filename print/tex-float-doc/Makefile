@@ -1,11 +1,11 @@
-# $NetBSD$
-# TeX Live Revision 7340
+# $NetBSD: Makefile,v 1.1.1.1 2009/07/16 23:20:36 minskim Exp $
 
 DISTNAME=	float.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-1.3d
+TEXLIVE_REV=	15878
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-float
 
-.include "../../print/texlive/module.mk"
+.include "../../print/texlive/package.mk"
 .include "../../mk/bsd.pkg.mk"
