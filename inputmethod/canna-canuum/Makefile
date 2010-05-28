@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/02/17 13:02:20 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2010/02/20 10:37:24 obache Exp $
 
 PKGREVISION=	3
 CANNA_MODULE=	canuum
@@ -7,12 +7,14 @@ CANNA_MODULE=	canuum
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 
-PKG_DESTDIR_SUPPORT=	destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	${PKGMANDIR}/ja_JP.EUC/man1
 
 CONFIGURE_DIRS=	. canuum
 BUILD_DIRS=	canuum
+
+INSTALL_MAKE_FLAGS+=	INSTUGIDFLAGS=
 
 SPECIAL_PERMS+=	bin/canuum ${SETUID_ROOT_PERMS}
 
