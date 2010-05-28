@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/05/20 07:48:09 obache Exp $
 #
 
 DISTNAME=	kimera-tomoe-gtk-0.5
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		msgfmt pkg-config
 
 SUBST_CLASSES+=		libtomoe
 SUBST_STAGE.libtomoe=	pre-configure
