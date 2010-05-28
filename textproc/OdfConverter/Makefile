@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/09/02 08:47:15 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/11/12 01:15:31 dsainty Exp $
 #
 
 DISTNAME=	OdfAddinForOffice-src-3.0
@@ -73,4 +73,5 @@ do-install:
 		${DESTDIR}${PREFIX}/share/doc/OdfConverter/README.TXT
 
 .include "../../lang/mono/buildlink3.mk"
+.include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
