@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2009/12/21 20:34:05 joerg Exp $
+# $NetBSD: Makefile,v 1.69 2010/01/17 12:02:31 wiz Exp $
 
 DISTNAME=	freeradius-${RADVER}
 PKGREVISION=	4
@@ -75,7 +75,7 @@ SUBST_STAGE.make=	post-patch
 SUBST_FILES.make=	src/modules/rlm_mschap/Makefile \
 			src/modules/rlm_sql/drivers/rlm_sql_postgresql/Makefile.in
 SUBST_SED.make=	-e "s|RLM_LDFLAGS	=|RLM_LDFLAGS 	= \
-				-L../../../src/lib/.libs/ -lradius|g"
+				../../../src/lib/libradius.la|g"
 SUBST_SED.make+=	-e "s|RLM_SQL_LIBS	=|RLM_SQL_LIBS	= \
 				-L${PREFIX}/lib|g"
 SUBST_MESSAGE.make=	Fixing Makefiles.
