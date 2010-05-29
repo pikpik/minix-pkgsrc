@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.381 2010/05/06 13:27:08 pettai Exp $
+# $NetBSD: Makefile,v 1.382 2010/05/16 11:46:22 obache Exp $
 #
 
 COMMENT=	Security tools
@@ -292,6 +292,7 @@ SUBDIR+=	py-paramiko
 SUBDIR+=	py-prewikka
 SUBDIR+=	py-smbpasswd
 SUBDIR+=	py-tlslite
+SUBDIR+=	py-xmlsec
 SUBDIR+=	pyca
 SUBDIR+=	qca
 SUBDIR+=	qca-tls
