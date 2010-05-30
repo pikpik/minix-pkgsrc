@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/01/17 12:02:40 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2010/02/03 10:58:11 drochner Exp $
 #
 
 DISTNAME=		gnupg-2.0.14
@@ -20,10 +20,6 @@ LICENSE=		gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-# ../licommon/libcommon.a
-# reported upstream, should be fixed in 2.0.6
-MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
