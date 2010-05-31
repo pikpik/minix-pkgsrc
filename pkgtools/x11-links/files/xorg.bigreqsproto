@@ -1,3 +1,5 @@
-# $NetBSD$
+# $NetBSD: xorg.bigreqsproto,v 1.2 2008/10/05 21:36:35 cube Exp $
 #
+include/X11/extensions/bigreqsproto.h
+include/X11/extensions/bigreqstr.h
 lib/pkgconfig/bigreqsproto.pc

@@ -1,3 +1,6 @@
-# $NetBSD$
+# $NetBSD: xorg.recordproto,v 1.2 2008/10/05 21:36:35 cube Exp $
 #
+include/X11/extensions/recordconst.h
+include/X11/extensions/recordproto.h
+include/X11/extensions/recordstr.h
 lib/pkgconfig/recordproto.pc
