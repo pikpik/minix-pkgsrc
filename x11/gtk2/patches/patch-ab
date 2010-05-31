@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.23 2010/05/31 17:34:33 drochner Exp $
+
+http://mail.gnome.org/archives/gtk-devel-list/2010-March/msg00113.html
 
 --- gtk/gtkentry.c.orig	2010-05-02 03:14:28.000000000 +0000
 +++ gtk/gtkentry.c
