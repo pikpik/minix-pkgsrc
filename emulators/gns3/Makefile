@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/06/01 22:00:41 markd Exp $
 
 DISTNAME=	GNS3-0.7-src
 PKGNAME=	gns3-0.7
@@ -7,7 +7,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gns3/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gns3.org/
-COMMENT=	graphical network simulator
+COMMENT=	Graphical network simulator
 LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
