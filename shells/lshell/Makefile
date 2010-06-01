@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2010/04/11 14:37:25 imil Exp $
+# $NetBSD: Makefile,v 1.5 2010/05/07 12:02:44 jmmv Exp $
 #
 
-DISTNAME=	lshell-0.9.10
-PKGREVISION=	4
+DISTNAME=	lshell-0.9.12
 CATEGORIES=	shells python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lshell/}
 
 MAINTAINER=	imil@gcu.info
 HOMEPAGE=	http://ghantoos.org/limited-shell-lshell/
 COMMENT=	Lshell restricts user's environment to specified commands
+LICENSE=	gnu-gpl-v3
 
 PKG_GROUPS=	lshellg
 PKG_SHELL=	bin/lshell
