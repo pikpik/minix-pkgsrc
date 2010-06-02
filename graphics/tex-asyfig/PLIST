@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/asyfig/asyalign.sty
+share/texmf-dist/tex/latex/asyfig/asyfig.sty
+share/texmf-dist/tex/latex/asyfig/asyprocess.sty
