@@ -1,7 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/06/12 02:14:35 joerg Exp $
-#
-
-PKGREVISION=		5
+# $NetBSD: Makefile,v 1.7 2010/02/10 19:34:07 joerg Exp $
 
 PERDITION_COMMENT=	PostgreSQL user database module
 PERDITION_PKGNAME=	postgresql
@@ -13,4 +10,4 @@ USE_TOOLS+=	bash:run
 REPLACE_BASH+=	perdition/db/postgresql/perditiondb_postgresql_makedb
 
 .include "../../mk/pgsql.buildlink3.mk"
-.include "../perdition/Makefile.common"
+.include "../../mail/perdition/Makefile.common"

@@ -1,7 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/09/04 21:16:25 joerg Exp $
-#
-
-PKGREVISION=		1
+# $NetBSD: Makefile,v 1.4 2008/06/12 02:14:35 joerg Exp $
 
 PERDITION_COMMENT=	UnixODBC user database module
 PERDITION_PKGNAME=	odbc
@@ -15,4 +12,4 @@ USE_TOOLS+=	bash:run
 REPLACE_BASH+=	perdition/db/odbc/perditiondb_odbc_makedb
 
 .include "../../databases/unixodbc/buildlink3.mk"
-.include "../perdition/Makefile.common"
+.include "../../mail/perdition/Makefile.common"
