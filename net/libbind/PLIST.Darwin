@@ -1,0 +1,2 @@
+@comment $NetBSD$
+include/bind/sys/bitypes.h

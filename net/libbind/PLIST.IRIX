@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/bind/paths.h
+include/bind/sys/bitypes.h
+include/bind/sys/cdefs.h

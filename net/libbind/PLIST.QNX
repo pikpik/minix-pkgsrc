@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/bind/sys/resource.h
+include/bind/sys/bitypes.h
+include/bind/sys/ioctl.h
