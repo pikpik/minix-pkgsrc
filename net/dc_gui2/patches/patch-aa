@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	Tue Jun 10 14:32:15 2003
+--- configure.orig	2004-01-24 06:41:45.000000000 +0000
 +++ configure
-@@ -10490,6 +10490,7 @@
+@@ -11042,6 +11042,7 @@ fi
  
  							if test "x$HAVE_DB40" = "xyes"; then
  
