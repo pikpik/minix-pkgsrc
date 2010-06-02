@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/asyfig/README
+share/texmf-dist/doc/latex/asyfig/asyfig.pdf
+share/texmf-dist/doc/latex/asyfig/example/frf.asy
+share/texmf-dist/doc/latex/asyfig/example/test-asyfig.tex
