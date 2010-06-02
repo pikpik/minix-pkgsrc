@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.6 2006/03/04 21:29:30 jlam Exp $
-#
+# $NetBSD: Makefile,v 1.7 2008/06/20 01:09:17 joerg Exp $
 
-DISTNAME=		vanessa_socket-0.0.7
-PKGREVISION=		3
-CATEGORIES=		devel
-MASTER_SITES=		http://www.vergenet.net/linux/vanessa/download/vanessa_socket/0.0.7/
+DISTNAME=	vanessa_socket-0.0.10
+CATEGORIES=	devel
+MASTER_SITES=	http://www.vergenet.net/linux/vanessa/download/vanessa_socket/0.0.10/
+EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.vergenet.net/linux/vanessa/
-COMMENT=		Library that simplifies TCP/IP socket operations
+MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://www.vergenet.net/linux/vanessa/
+COMMENT=	Library that simplifies TCP/IP socket operations
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
