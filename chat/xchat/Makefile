@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.64 2009/10/24 15:51:25 tnn Exp $
+# $NetBSD: Makefile,v 1.65 2009/12/20 10:09:42 tron Exp $
 
 .include "Makefile.common"
 
 PKGNAME=	${DISTNAME}pl1
-PKGREVISION=	2
+PKGREVISION=	3
 OWNER=		tron@NetBSD.org
 COMMENT=	X11 (X Window System) IRC client, using the GTK2 toolkit
 
@@ -24,7 +24,7 @@ LDFLAGS.IRIX+=		-lX11
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
-BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.10.0
+BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.20.0
 .include "../../x11/gtk2/buildlink3.mk"
 
 .if ${OPSYS} == "Darwin"
