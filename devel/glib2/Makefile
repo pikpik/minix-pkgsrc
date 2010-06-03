@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.173 2010/04/20 17:43:50 jmmv Exp $
+# $NetBSD: Makefile,v 1.174 2010/05/31 17:30:36 drochner Exp $
 
 .include "Makefile.common"
 
@@ -28,4 +28,5 @@ BUILDLINK_API_DEPENDS.pcre+=	pcre>=7.4nb1
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
