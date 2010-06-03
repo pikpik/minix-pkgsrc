@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2006/04/12 23:04:21 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2010/01/29 16:14:29 joerg Exp $
 
 DISTNAME=	efax-0.9
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/serialcomm/fax/}
 
