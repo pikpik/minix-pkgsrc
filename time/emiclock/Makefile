@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2009/05/30 00:24:00 zafer Exp $
+# $NetBSD: Makefile,v 1.22 2009/07/07 20:25:27 joerg Exp $
 #
 
 DISTNAME=	emiclock-2.0.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_FREEBSD}
 

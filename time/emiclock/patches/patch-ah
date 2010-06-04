@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- rcfile.c	1999-09-02 23:33:49.000000000 +0900
++++ rcfile.c
+@@ -256,7 +256,7 @@
+     int		token;
+     char	tokenStr[MAXPATHLEN];
+     char	buffer[MAXPATHLEN];
+-    long	now;
++    time_t	now;
+     struct tm	*tm;
+ 
+     if ((rcFileName = GetRcFileName()) == NULL) {
