@@ -825,7 +825,7 @@ main(int argc, char **argv)
 		progname++;
 	else
 		progname = argv[0];
-#ifdef RLIMIT_NOFILE
+#if defined(RLIMIT_NOFILE) && defined(HAVE_SETRLIMIT)
 	/*
 	 * get rid of resource limit on file descriptors
 	 */

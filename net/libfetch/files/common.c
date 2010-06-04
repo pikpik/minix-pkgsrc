@@ -150,11 +150,15 @@ fetch_syserr(void)
 	case EADDRNOTAVAIL:
 	case ENETDOWN:
 	case ENETUNREACH:
+#if defined(ENETRESET)
 	case ENETRESET:
+#endif
 	case EHOSTUNREACH:
 		fetchLastErrCode = FETCH_NETWORK;
 		break;
+#if defined(ECONNABORTED)
 	case ECONNABORTED:
+#endif
 	case ECONNRESET:
 		fetchLastErrCode = FETCH_ABORT;
 		break;
@@ -162,7 +166,9 @@ fetch_syserr(void)
 		fetchLastErrCode = FETCH_TIMEOUT;
 		break;
 	case ECONNREFUSED:
+#if defined(EHOSTDOWN)
 	case EHOSTDOWN:
+#endif
 		fetchLastErrCode = FETCH_DOWN;
 		break;
 default:

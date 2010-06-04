@@ -1380,7 +1380,7 @@ JobExec(Job *job, char **argv)
 	 * we can kill it and all its descendants in one fell swoop,
 	 * by killing its process family, but not commit suicide.
 	 */
-#if defined(SYSV)
+#if defined(SYSV) || !defined(HAVE_SETPGID)
 	/* XXX: dsl - I'm sure this should be setpgrp()... */
 	(void)setsid();
 #else

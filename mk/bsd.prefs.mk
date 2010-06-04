@@ -270,6 +270,14 @@ LOWER_VENDOR?=		sun
 LOWER_OPSYS?=		solaris
 LOWER_OPSYS_VERSUFFIX=	2
 
+.elif ${OPSYS} == "Minix"
+OS_VERSION!= echo `${UNAME} -r`.`${UNAME} -v`
+LOWER_OS_VERSION= OS_VERSION
+LOWER_ARCH!=		${UNAME} -m
+MACHINE_ARCH?=		${LOWER_ARCH}
+LOWER_VENDOR?=pc
+LOWER_OPSYS:=		${OPSYS:tl}
+USE_TOOLS+=		ar
 .elif !defined(LOWER_OPSYS)
 LOWER_OPSYS:=		${OPSYS:tl}
 .endif
