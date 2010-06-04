@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/iscsi.h
+lib/libiscsi.la
+man/man3/libiscsi.3
