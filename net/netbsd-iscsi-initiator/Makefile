@@ -1,27 +1,15 @@
-# $NetBSD: Makefile,v 1.10 2009/05/20 23:53:45 zafer Exp $
+# $NetBSD$
 
-DISTNAME=	netbsd-iscsi-20080207
 PKGNAME=	${DISTNAME:C/-iscsi/-iscsi-initiator/}
-CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_BACKUP}
-
-MAINTAINER=	agc@NetBSD.org
-HOMEPAGE=	http://www.alistaircrooks.co.uk/software.html
+CATEGORIES=	net
 COMMENT=	NetBSD's iSCSI initiator (per iSCSI RFC 3720)
 
-GNU_CONFIGURE=	yes
-CONFIGURE_DIRS=	src
-BUILD_TARGET=	all-initiator
+BUILD_DIRS+=	${WRKSRC}/src/initiator
+DISTINFO_FILE=	${.CURDIR}/../../devel/netbsd-iscsi-lib/distinfo
+PATCHDIR=	${.CURDIR}/../../devel/netbsd-iscsi-lib/patches
 
-AUTO_MKDIRS=			yes
+.include "../../devel/netbsd-iscsi-lib/Makefile.common"
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/src/iscsifs ${DESTDIR}${PREFIX}/sbin/iscsifs
-	${INSTALL_MAN} ${WRKSRC}/src/iscsifs.8 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man8/iscsifs.8
-
-.include "../../mk/fuse.buildlink3.mk"
+.include "../../devel/netbsd-iscsi-lib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"
