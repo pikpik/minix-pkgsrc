@@ -66,6 +66,9 @@ ${PYSITELIB}/hgext/convert/subversion.pyo
 ${PYSITELIB}/hgext/convert/transport.py
 ${PYSITELIB}/hgext/convert/transport.pyc
 ${PYSITELIB}/hgext/convert/transport.pyo
+${PYSITELIB}/hgext/eol.py
+${PYSITELIB}/hgext/eol.pyc
+${PYSITELIB}/hgext/eol.pyo
 ${PYSITELIB}/hgext/extdiff.py
 ${PYSITELIB}/hgext/extdiff.pyc
 ${PYSITELIB}/hgext/extdiff.pyo
