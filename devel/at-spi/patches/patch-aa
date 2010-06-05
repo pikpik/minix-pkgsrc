@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.9 2009/10/21 15:39:11 drochner Exp $
+
+python bindings are in separate py-atspi package.
 
 --- Makefile.in.orig	2009-10-19 04:59:15.000000000 +0200
 +++ Makefile.in
