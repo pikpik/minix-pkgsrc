@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.41 2009/05/19 08:59:11 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2010/01/21 17:41:07 heinz Exp $
 #
 
-DISTNAME=	popt-1.15
+DISTNAME=	popt-1.16
 CATEGORIES=	devel
 MASTER_SITES=	http://rpm5.org/files/popt/
 
@@ -19,6 +19,8 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
+PKGCONFIG_OVERRIDE=	popt.pc
+PKGCONFIG_OVERRIDE_STAGE=	post-configure
 
 TEST_TARGET=		check
 
