@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.540 2010/05/19 12:12:55 obache Exp $
+# $NetBSD: Makefile,v 1.541 2010/05/19 12:42:08 obache Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -193,6 +193,7 @@ SUBDIR+=	libxml2
 SUBDIR+=	libxslt
 SUBDIR+=	libyaml
 SUBDIR+=	link-grammar
+SUBDIR+=	lit2epub
 SUBDIR+=	lout
 SUBDIR+=	lq-sp
 SUBDIR+=	lua-expat
