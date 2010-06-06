@@ -1,6 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2009/01/10 22:20:23 wiz Exp $
 bin/einfo
-bin/lit2epub
 include/epub.h
 include/epub_shared.h
 lib/libepub.so
