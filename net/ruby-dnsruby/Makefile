@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2010/03/12 09:28:57 pettai Exp $
+# $NetBSD: Makefile,v 1.3 2010/05/09 18:36:55 pettai Exp $
 
-DISTNAME=	dnsruby-1.46
+DISTNAME=	dnsruby-1.47
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	net
 
