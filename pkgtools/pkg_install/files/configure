@@ -3419,8 +3419,9 @@ else
   RANLIB="$ac_cv_prog_RANLIB"
 fi
 
-# Extract the first word of "ar", so it can be a program name with args.
-for ac_prog in gar ar; do
+for ac_prog in gar ar
+do
+  # Extract the first word of "$ac_prog", so it can be a program name with args.
 set dummy $ac_prog; ac_word=$2
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
 $as_echo_n "checking for $ac_word... " >&6; }
@@ -3455,8 +3456,10 @@ else
   { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
 $as_echo "no" >&6; }
 fi
-done
 
+
+  test -n "$AR" && break
+done
 
 
 # Extract the first word of "chmod", so it can be a program name with args.

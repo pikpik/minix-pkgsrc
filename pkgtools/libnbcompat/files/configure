@@ -3724,9 +3724,9 @@ fi
   test -n "$AWK" && break
 done
 
-# Extract the first word of "ar", so it can be a program name with args.
 for ac_prog in gar ar
 do
+  # Extract the first word of "$ac_prog", so it can be a program name with args.
 set dummy $ac_prog; ac_word=$2
 { $as_echo "$as_me:${as_lineno-$LINENO}: checking for $ac_word" >&5
 $as_echo_n "checking for $ac_word... " >&6; }
@@ -3761,8 +3761,10 @@ else
   { $as_echo "$as_me:${as_lineno-$LINENO}: result: no" >&5
 $as_echo "no" >&6; }
 fi
-done
 
+
+  test -n "$AR" && break
+done
 
 
 AUTOCONF=${AUTOCONF-"$srcdir/missing --run autoconf"}
@@ -6399,6 +6401,19 @@ fi
 
 fi
 
+
+ac_fn_c_check_member "$LINENO" "struct stat" "st_blksize" "ac_cv_member_struct_stat_st_blksize" " #include <sys/stat.h>
+"
+if test "x$ac_cv_member_struct_stat_st_blksize" = x""yes; then :
+
+cat >>confdefs.h <<_ACEOF
+#define HAVE_STRUCT_STAT_ST_BLKSIZE 1
+_ACEOF
+
+:
+else
+  :
+fi
 
 ac_fn_c_check_member "$LINENO" "struct statfs" "f_flags" "ac_cv_member_struct_statfs_f_flags" " #include <sys/statfs.h>
 "

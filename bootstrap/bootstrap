@@ -622,6 +622,16 @@ Linux)
 	set_opsys=no
 	machine_arch=`uname -m | sed -e 's/i.86/i386/'`
 	;;
+Minix)
+	root_group=operator
+	need_bsd_install=yes
+	need_sed=yes
+	set_opsys=no
+	groupsprog="id -gn"
+	machine_arch=`uname -p`
+	check_compiler=yes
+	export CC="gcc"
+	;;
 NetBSD)
 	root_group=wheel
 	need_bsd_install=no
@@ -683,18 +693,6 @@ UnixWare)
 	set_opsys=no
 	CC="gcc -DUNIXWARE"; export CC
 	;;
-Minix)
-	root_group=operator
-	need_bsd_install=yes
-	need_awk=yes
-	need_sed=yes
-	set_opsys=no
-	groupsprog="id -gn"
-	machine_arch=`uname -p`
-	check_compiler=yes
-	export CC="gcc"
-	;;
-
 *)
 	echo "This platform ($opsys) is untried - good luck, and thanks for using pkgsrc"
 	root_group=wheel

@@ -39,10 +39,9 @@ HTMLDIR?=	${DESTDIR}/usr/share/man
 CATDEPS?=	${TMACDIR}/mandoc.tmac \
 		${TMACDIR}/doc.tmac
 MANTARGET?=	cat
-NROFF?=		nroff -Tascii
+NROFF?=		nroff -man
 GROFF?=		groff -Tascii
 TBL?=		tbl
-
 
 .SUFFIXES: .1 .2 .3 .4 .5 .6 .7 .8 .9 \
 	   .cat1 .cat2 .cat3 .cat4 .cat5 .cat6 .cat7 .cat8 .cat9 \
@@ -104,7 +103,6 @@ __installpage: .USE
 	    (echo "${MINSTALL} ${.ALLSRC} ${.TARGET}" && \
 	     ${MINSTALL} ${.ALLSRC} ${.TARGET})
 .endif
-
 
 # Rules for cat'ed man page installation
 .if defined(CATPAGES) && !empty(CATPAGES) && ${MKCATPAGES} != "no"

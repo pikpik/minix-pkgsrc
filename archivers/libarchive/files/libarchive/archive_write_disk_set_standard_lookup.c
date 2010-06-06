@@ -127,12 +127,7 @@ lookup_gid(void *private_data, const char *gname, gid_t gid)
 
 		for (;;) {
 			result = &grent; /* Old getgrnam_r ignores last arg. */
-#if defined(HAVE_GETGRNAM_R)
 			r = getgrnam_r(gname, &grent, buffer, bufsize, &result);
-#else
-			result = getgrnam(gname);
-			r = errno;
-#endif
 			if (r == 0)
 				break;
 			if (r != ERANGE)
@@ -202,12 +197,7 @@ lookup_uid(void *private_data, const char *uname, uid_t uid)
 
 		for (;;) {
 			result = &pwent; /* Old getpwnam_r ignores last arg. */
-#if defined(HAVE_GETPWNAM_R)
 			r = getpwnam_r(uname, &pwent, buffer, bufsize, &result);
-#else
-			result = getpwnam(uname);
-			r = errno;
-#endif
 			if (r == 0)
 				break;
 			if (r != ERANGE)
