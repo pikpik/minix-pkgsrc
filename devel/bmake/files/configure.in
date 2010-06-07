@@ -102,8 +102,8 @@ AC_CHECK_FUNCS( \
 	putenv \
 	select \
 	setenv \
-    setpgid \
-    setrlimit \
+	setpgid \
+	setrlimit \
 	sigaction \
 	sigvec \
 	snprintf \
