@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/powder
+share/doc/powder/CREDITS.TXT
+share/doc/powder/LICENSE.TXT
+share/doc/powder/README.TXT
