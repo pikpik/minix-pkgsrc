@@ -1,8 +1,8 @@
-$NetBSD: patch-ag,v 1.1 2005/01/09 00:07:47 schmonz Exp $
+$NetBSD$
 
---- prayer/response.c.orig	2003-04-15 13:00:03.000000000 +0000
-+++ prayer/response.c
-@@ -694,7 +694,12 @@ response_file(struct request *request,
+--- shared/response.c.orig	2008-09-16 11:59:58 +0200
++++ shared/response.c	2010-05-01 21:21:55 +0200
+@@ -694,7 +694,12 @@
      } else
          bputs(b, "Content-Type: text/plain" CRLF);
  
