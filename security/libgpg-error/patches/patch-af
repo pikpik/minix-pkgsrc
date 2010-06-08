@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.2 2008/10/14 11:32:11 adam Exp $
 
---- src/mkerrcodes.awk.orig	2005-09-03 12:12:12.000000000 +0200
+--- src/mkerrcodes.awk.orig	2008-08-26 12:45:58.000000000 +0000
 +++ src/mkerrcodes.awk
 @@ -60,7 +60,7 @@
  # as is trailing whitespace.
