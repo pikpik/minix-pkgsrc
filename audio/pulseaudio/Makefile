@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2010/02/02 12:39:14 jmcneill Exp $
+# $NetBSD: Makefile,v 1.35 2010/02/22 21:48:03 wiz Exp $
 
 # NOTE: Please send a copy of any patches that are not pkgsrc-specific
 # to <pulseaudio-discuss@mail.0pointer.de>
@@ -21,7 +21,7 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config gmake m4 msgfmt intltool perl \
 		autoconf automake autoreconf
 
-AUTOCONF_REQD=	2.62
+AUTOCONF_REQD=	2.63
 
 PKGCONFIG_OVERRIDE+=	libpulse-browse.pc.in
 PKGCONFIG_OVERRIDE+=	libpulse-mainloop-glib.pc.in
