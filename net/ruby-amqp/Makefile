@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/12/02 12:22:07 fhajny Exp $
 
-DISTNAME=	amqp-0.6.5
+DISTNAME=	amqp-0.6.7
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	net
 
