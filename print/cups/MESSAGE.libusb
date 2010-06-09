@@ -1,0 +1,11 @@
+===========================================================================
+$NetBSD$
+
+To get the libusb DeviceURI's of attached printers run:
+
+${PREFIX}/libexec/cups/backend/usb
+
+The DeviceURI is the string starting with "usb://".
+
+Note: ulpt(4)/usblp printer can be accessed with a "usb:/dev/" DeviceURI.
+===========================================================================
