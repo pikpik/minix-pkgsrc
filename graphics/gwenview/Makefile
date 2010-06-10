@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2010/01/18 09:59:02 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2010/02/03 23:04:20 joerg Exp $
 #
 
 DISTNAME=	gwenview-1.4.2
@@ -27,6 +27,7 @@ SHLIBTOOL_OVERRIDE=	# empty
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../graphics/libkipi/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
