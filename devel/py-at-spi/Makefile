@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/10/21 15:40:10 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2010/06/05 11:05:58 wiz Exp $
 #
 
 DISTNAME=		at-spi-1.30.1
@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 PY_PATCHPLIST=	yes
+PYTHON_VERSIONS_ACCEPTED=	26 25
 
 PYATSPIDIR=		${PREFIX}/${PYSITELIB}/pyatspi
 INSTALLATION_DIRS=	${PYATSPIDIR}
