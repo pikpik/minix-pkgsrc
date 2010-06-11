@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/09/07 19:02:14 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2010/02/14 02:28:16 obache Exp $
 #
 
 DISTNAME=	gnome-packagekit-0.4.0
@@ -20,6 +20,12 @@ USE_PKGLOCALEDIR= yes
 GCONF_SCHEMAS+=	gnome-packagekit.schemas
 
 PY_PATCHPLIST=	yes
+
+# needed for gnome-packagekit-0.4 and gtk2-2.20 -- remove on next update
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_PIXBUF_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/libglade/buildlink3.mk"
