@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2010/01/18 09:59:31 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2010/02/13 13:36:08 tnn Exp $
 #
 
 
@@ -19,6 +19,12 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
+
+# needed for kazehakase-0.5 and gtk2-2.20 -- remove on next update!
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_PIXBUF_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 
 .include "options.mk"
 
