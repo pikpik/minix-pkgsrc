@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/06/20 01:09:23 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2009/08/26 19:57:53 sno Exp $
 
 DISTNAME=	gpredict-0.8.0
 PKGREVISION=	2
@@ -15,6 +15,12 @@ USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake msgfmt pkg-config intltool
 USE_PKGLOCALEDIR=yes
 GNU_CONFIGURE=	yes
+
+# needed for gpredict-0.8.0 and gtk2-2.20 -- remove on next update!
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_PIXBUF_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 
 .include "../../devel/GConf/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
