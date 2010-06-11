@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.105 2009/12/16 17:17:03 drochner Exp $
+# $NetBSD: Makefile,v 1.106 2010/04/11 16:38:29 tnn Exp $
 #
 
 DISTNAME=		nautilus-2.28.4
@@ -23,6 +23,12 @@ PKGCONFIG_OVERRIDE=	libnautilus-extension/libnautilus-extension.pc.in
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 
 GCONF_SCHEMAS=		apps_nautilus_preferences.schemas
+
+# needed for nautilus-2.28 and gtk2-2.20 -- remove on next update
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGDK_PIXBUF_DISABLE_DEPRECATED
+BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 
 post-install:
 	# current default path
