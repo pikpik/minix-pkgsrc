@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.333 2010/06/02 12:09:35 adam Exp $
+# $NetBSD: Makefile,v 1.334 2010/06/03 04:57:34 jnemeth Exp $
 #
 
 COMMENT=	Databases
@@ -261,6 +261,7 @@ SUBDIR+=	ruby-activeldap
 SUBDIR+=	ruby-activerecord
 SUBDIR+=	ruby-activerecord-odbc
 SUBDIR+=	ruby-acts-as-versioned
+SUBDIR+=	ruby-cassandra
 SUBDIR+=	ruby-datamapper
 SUBDIR+=	ruby-dbd-mysql
 SUBDIR+=	ruby-dbd-odbc
