@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.726 2010/05/23 21:39:43 jym Exp $
+# $NetBSD: Makefile,v 1.727 2010/06/04 09:20:23 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -502,6 +502,7 @@ SUBDIR+=	ruby-clearsilver
 SUBDIR+=	ruby-compass
 SUBDIR+=	ruby-compass-susy-plugin
 SUBDIR+=	ruby-cssmin
+SUBDIR+=	ruby-div
 SUBDIR+=	ruby-fcgi
 SUBDIR+=	ruby-gnome2-gtkhtml2
 SUBDIR+=	ruby-gnome2-gtkmozembed
