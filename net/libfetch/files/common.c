@@ -1,4 +1,4 @@
-/*	$NetBSD: common.c,v 1.25 2010/01/24 16:54:23 joerg Exp $	*/
+/*	$NetBSD: common.c,v 1.26 2010/03/21 16:48:43 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * Copyright (c) 2008, 2010 Joerg Sonnenberger <joerg@NetBSD.org>
@@ -316,6 +316,7 @@ fetch_connect(struct url *url, int af, int verbose)
 	if ((conn = fetch_reopen(sd)) == NULL) {
 		fetch_syserr();
 		close(sd);
+		return (NULL);
 	}
 	conn->cache_url = fetchCopyURL(url);
 	conn->cache_af = af;
