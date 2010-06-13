@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2007/09/04 21:16:05 drochner Exp $
+# $NetBSD: Makefile,v 1.10 2010/02/03 22:13:09 joerg Exp $
 #
 
 DISTNAME=		tuxpaint-config-0.0.8
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.billsgames.com/unix/x/tuxpaint/config/
 

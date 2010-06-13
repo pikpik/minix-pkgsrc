@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2010/01/18 09:59:13 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/05/02 11:29:23 wiz Exp $
 #
 
 DISTNAME=		kchmviewer-5.2
+PKGREVISION=		1
 CATEGORIES=		misc x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kchmviewer/}
 

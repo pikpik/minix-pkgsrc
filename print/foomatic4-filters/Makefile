@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/02/24 19:25:40 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2010/03/21 16:29:42 wiz Exp $
 
 DISTNAME=	foomatic-filters-4.0.4
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://www.linuxprinting.org/download/foomatic/
 

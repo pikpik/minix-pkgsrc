@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2010/01/18 09:59:12 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2010/04/13 17:28:34 drochner Exp $
 
 DISTNAME=	qalculate-gtk-0.9.7
+PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qalculate/}
 

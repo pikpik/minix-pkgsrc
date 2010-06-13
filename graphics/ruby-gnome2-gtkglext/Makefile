@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2009/08/26 19:57:50 sno Exp $
+# $NetBSD: Makefile,v 1.4 2009/10/12 03:09:32 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gtkglext-${VERSION}
 COMMENT=		Ruby binding of gtkglext
+PKGREVISION=		1
 CATEGORIES=		graphics
 
 PKG_DESTDIR_SUPPORT=	user-destdir

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2010/02/03 15:50:33 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2010/02/16 15:37:05 wiz Exp $
 #
 
 DISTNAME=	Sigil-0.1.9-Code
 PKGNAME=	${DISTNAME:S/-Code//}
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://sigil.googlecode.com/files/
 EXTRACT_SUFX=	.zip

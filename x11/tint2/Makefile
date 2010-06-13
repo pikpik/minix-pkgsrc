@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/04/11 21:43:57 gls Exp $
+# $NetBSD: Makefile,v 1.5 2010/05/07 20:53:45 gls Exp $
 
 DISTNAME=		tint2-0.9
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11
 MASTER_SITES=		http://tint2.googlecode.com/files/
 

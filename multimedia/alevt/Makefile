@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:38 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2009/07/22 09:01:38 wiz Exp $
 
 DISTNAME=	alevt-1.6.1
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.goron.de/~froese/alevt/
 

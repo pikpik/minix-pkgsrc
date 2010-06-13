@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/01/20 14:04:53 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2010/02/16 15:29:50 wiz Exp $
 #
 
 DISTNAME=	gupnp-av-0.5.4
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.gupnp.org/sources/gupnp-av/
 

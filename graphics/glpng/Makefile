@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/09/01 21:07:37 wiz Exp $
 #
 
 DISTNAME=	glpng-1.45.20081203
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	#
 

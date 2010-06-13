@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2006/12/15 20:33:00 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2009/03/20 19:25:16 joerg Exp $
 
 BUILDLINK_TREE+=	transfig
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	transfig
 TRANSFIG_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.transfig+=	transfig>=3.2.4
-BUILDLINK_ABI_DEPENDS.transfig?=	transfig>=3.2.5alpha7nb2
+BUILDLINK_ABI_DEPENDS.transfig?=	transfig>=3.2.5nb3
 BUILDLINK_PKGSRCDIR.transfig?=	../../print/transfig
 
 .include "../../graphics/png/buildlink3.mk"

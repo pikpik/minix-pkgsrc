@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/10/22 22:30:40 wiz Exp $
 #
 
 DISTNAME=	gselt-1.2
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://offog.org/files/
 

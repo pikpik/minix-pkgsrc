@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2010/04/12 07:04:46 adam Exp $
+# $NetBSD: Makefile,v 1.25 2010/04/27 14:24:14 matthias Exp $
 
 DISTNAME=	mapserver-5.6.3
+PKGREVISION=	1
 CATEGORIES=	geography www
 MASTER_SITES=	http://download.osgeo.org/mapserver/
 

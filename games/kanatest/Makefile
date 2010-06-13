@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2009/10/19 11:31:05 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/12/16 23:55:13 joerg Exp $
 
 DISTNAME=	kanatest-0.4.8
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://clayo.org/kanatest/
 

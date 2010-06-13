@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.11 2010/04/09 01:36:34 obache Exp $
 
 DISTNAME=	ming-ruby-${VER}
 PKGNAME=	${RUBY_PKGPREFIX}-ming-${VER}
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://rubyforge.org/frs/download.php/44137/
 

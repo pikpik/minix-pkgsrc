@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2007/02/10 04:53:08 obache Exp $
+# $NetBSD: Makefile,v 1.23 2008/08/09 21:32:39 bjs Exp $
 
 DISTNAME=	most-5.0.0a
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/most/
 

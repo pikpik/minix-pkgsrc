@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/24 12:11:39 obache Exp $
 #
 
 DISTNAME=	scim-unikey-0.3.1
+PKGREVISION=	1
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://scim-unikey.googlecode.com/files/
 

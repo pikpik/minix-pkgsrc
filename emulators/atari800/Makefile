@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.42 2008/06/20 01:09:18 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2009/11/04 11:44:15 adam Exp $
 
 DISTNAME=	atari800-2.1.0
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=atari800/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} xf25.zip

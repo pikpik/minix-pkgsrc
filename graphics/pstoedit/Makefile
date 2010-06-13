@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.48 2010/04/09 01:38:32 obache Exp $
+# $NetBSD: Makefile,v 1.49 2010/04/13 06:53:19 obache Exp $
 
 DISTNAME=	pstoedit-3.50
+PKGREVISION=	1
 CATEGORIES=	converters graphics print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pstoedit/}
 

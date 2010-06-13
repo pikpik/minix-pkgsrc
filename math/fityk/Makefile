@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2010/01/18 09:59:12 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2010/05/15 07:12:00 adam Exp $
 
 DISTNAME=	fityk-0.9.2
+PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fityk/}
 EXTRACT_SUFX=	.tar.bz2

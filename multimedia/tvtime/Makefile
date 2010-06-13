@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/09/15 13:15:46 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2008/09/17 23:00:05 joerg Exp $
 
 DISTNAME=	tvtime-1.0.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	multimedia x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tvtime/}
 

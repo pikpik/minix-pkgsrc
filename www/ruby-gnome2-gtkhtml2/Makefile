@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2009/08/26 19:58:27 sno Exp $
+# $NetBSD: Makefile,v 1.4 2009/10/12 03:09:32 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gtkhtml2-${VERSION}
 COMMENT=		Ruby binding of gtkhtml2
+PKGREVISION=		1
 CATEGORIES=		www
 
 PKG_DESTDIR_SUPPORT=	user-destdir

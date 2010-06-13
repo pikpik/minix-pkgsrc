@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/24 11:53:35 obache Exp $
 #
 
 DISTNAME=		scim-fcitx.3.1.1
 PKGNAME=		scim-fcitx-3.1.1
+PKGREVISION=		1
 CATEGORIES=		inputmethod
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scim/}
 EXTRACT_SUFX=		.tar.bz2

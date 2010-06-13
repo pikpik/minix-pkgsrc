@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.43 2008/11/10 17:21:36 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2010/05/02 13:28:43 wiz Exp $
 #
 
 DISTNAME=		plotutils-2.6
+PKGREVISION=		1
 CATEGORIES=		devel graphics x11
 MASTER_SITES=		${MASTER_SITE_GNU:=plotutils/}
 

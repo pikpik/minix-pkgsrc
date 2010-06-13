@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2009/05/22 20:19:19 tnn Exp $
+# $NetBSD: Makefile,v 1.26 2010/03/21 16:29:44 wiz Exp $
 #
 
 DISTNAME=		XaoS-3.4
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xaos/}
 

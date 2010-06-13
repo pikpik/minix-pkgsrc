@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.15 2009/08/26 19:57:04 sno Exp $
+# $NetBSD: buildlink3.mk,v 1.16 2009/09/16 01:31:13 reed Exp $
 
 BUILDLINK_TREE+=	xfce4-datetime-plugin
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	xfce4-datetime-plugin
 XFCE4_DATETIME_PLUGIN_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.xfce4-datetime-plugin+=	xfce4-datetime-plugin>=0.4.1
-BUILDLINK_ABI_DEPENDS.xfce4-datetime-plugin?=	xfce4-datetime-plugin>=0.5.0nb1
+BUILDLINK_ABI_DEPENDS.xfce4-datetime-plugin?=	xfce4-datetime-plugin>=0.6.1nb1
 BUILDLINK_PKGSRCDIR.xfce4-datetime-plugin?=	../../time/xfce4-datetime-plugin
 
 .include "../../x11/xfce4-panel/buildlink3.mk"

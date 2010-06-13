@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2009/08/26 19:56:46 sno Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2009/10/26 09:46:22 drochner Exp $
 
 BUILDLINK_TREE+=	eel
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	eel
 EEL_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.eel+=	eel>=2.10.0
-BUILDLINK_ABI_DEPENDS.eel?=	eel>=2.26.0nb1
+BUILDLINK_ABI_DEPENDS.eel?=	eel>=2.26.0nb2
 BUILDLINK_PKGSRCDIR.eel?=	../../devel/eel
 
 .include "../../devel/GConf/buildlink3.mk"
