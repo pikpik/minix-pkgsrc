@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/11/19 15:48:19 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2009/11/26 14:11:44 joerg Exp $
 
 DISTNAME=	vnstat-1.9
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://humdi.net/vnstat/
 #DISTFILES=${DISTNAME}.tar.gz
