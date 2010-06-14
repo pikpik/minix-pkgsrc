@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1.1.1 2006/01/24 20:21:46 adam Exp $
+# $NetBSD: options.mk,v 1.2 2007/08/16 22:23:46 joerg Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.e-uae
 PKG_SUPPORTED_OPTIONS=	gtk sdl x11
@@ -7,6 +7,7 @@ PKG_SUGGESTED_OPTIONS=	gtk sdl
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mgtk)
+USE_TOOLS+=	pkg-config
 .include "../../x11/gtk2/buildlink3.mk"
 .endif
 
