@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.7 2009/06/14 17:59:28 joerg Exp $
+@comment $NetBSD$
 ${GEM_HOME}/cache/ruby-opengl-${PKGVERSION}.gem
 ${GEM_LIBDIR}/Rakefile
 ${GEM_LIBDIR}/doc/build_install.txt
+${GEM_LIBDIR}/doc/extensions.txt
 ${GEM_LIBDIR}/doc/extensions.txt.in
 ${GEM_LIBDIR}/doc/history.txt
 ${GEM_LIBDIR}/doc/requirements_and_design.txt
@@ -73,7 +74,6 @@ ${GEM_LIBDIR}/examples/misc/anisotropic.rb
 ${GEM_LIBDIR}/examples/misc/fbo_test.rb
 ${GEM_LIBDIR}/examples/misc/font-glut.rb
 ${GEM_LIBDIR}/examples/misc/glfwtest.rb
-${GEM_LIBDIR}/examples/misc/md2model.rb
 ${GEM_LIBDIR}/examples/misc/plane.rb
 ${GEM_LIBDIR}/examples/misc/readpixel.rb
 ${GEM_LIBDIR}/examples/misc/sdltest.rb
