@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1347 2010/06/11 23:00:18 tonnerre Exp $
+# $NetBSD: Makefile,v 1.1348 2010/06/12 20:44:57 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -842,6 +842,7 @@ SUBDIR+=	p5-Params-Coerce
 SUBDIR+=	p5-Params-Util
 SUBDIR+=	p5-Params-Validate
 SUBDIR+=	p5-Parse-CPAN-Meta
+SUBDIR+=	p5-Parse-CPAN-Packages
 SUBDIR+=	p5-Parse-ErrorString-Perl
 SUBDIR+=	p5-Parse-ExuberantCTags
 SUBDIR+=	p5-Parse-Method-Signatures
