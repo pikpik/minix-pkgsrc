@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.202 2010/06/01 13:26:31 drochner Exp $
+# $NetBSD: Makefile,v 1.203 2010/06/13 22:45:39 wiz Exp $
 
 DISTNAME=		gtk+-2.20.1
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
@@ -93,10 +93,10 @@ _BUILDING_GTK2=	yes
 .include "modules.mk"
 
 .include "../../databases/shared-mime-info/buildlink3.mk"
-BUILDLINK_API_DEPENDS.atk+=	atk>=1.13.0
+BUILDLINK_API_DEPENDS.atk+=	atk>=1.30.0
 .include "../../devel/atk/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.21.3
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.24.0
 .include "../../devel/glib2/buildlink3.mk"
 BUILDLINK_API_DEPENDS.pango+=	pango>=1.20.0
 .include "../../devel/pango/buildlink3.mk"
