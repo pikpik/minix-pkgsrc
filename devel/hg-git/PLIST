@@ -16,6 +16,6 @@ ${PYSITELIB}/hggit/gitrepo.pyo
 ${PYSITELIB}/hggit/hgrepo.py
 ${PYSITELIB}/hggit/hgrepo.pyc
 ${PYSITELIB}/hggit/hgrepo.pyo
-${PYSITELIB}/hggit/toposort.py
-${PYSITELIB}/hggit/toposort.pyc
-${PYSITELIB}/hggit/toposort.pyo
+${PYSITELIB}/hggit/util.py
+${PYSITELIB}/hggit/util.pyc
+${PYSITELIB}/hggit/util.pyo
