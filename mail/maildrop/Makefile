@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.48 2008/02/19 18:45:28 jlam Exp $
+# $NetBSD: Makefile,v 1.49 2010/03/21 16:29:40 wiz Exp $
 
-DISTNAME=	maildrop-2.0.4
-PKGREVISION=	3
+DISTNAME=	maildrop-2.5.0
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,7 +11,7 @@ HOMEPAGE=	http://www.courier-mta.org/maildrop/
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-DEPENDS+=	courier-maildir>=0.58.0:../../mail/courier-maildir
+DEPENDS+=	courier-maildir>=${COURIER_VERSION}:../../mail/courier-maildir
 
 USE_TOOLS+=		gmake perl
 USE_TOOLS+=		cat:run		# used by makedat(1)
