@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2010/02/22 21:48:03 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2010/06/08 08:28:43 dholland Exp $
 
 # NOTE: Please send a copy of any patches that are not pkgsrc-specific
 # to <pulseaudio-discuss@mail.0pointer.de>
@@ -110,6 +110,7 @@ pre-configure:
 	cd ${WRKSRC} && autoreconf -f
 
 .include "../../audio/libsamplerate/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libsndfile+=	libsndfile>=1.0.20
 .include "../../audio/libsndfile/buildlink3.mk"
 .include "../../audio/speex/buildlink3.mk"
 .include "../../databases/gdbm/buildlink3.mk"
