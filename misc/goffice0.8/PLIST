@@ -129,6 +129,7 @@ include/libgoffice-0.8/goffice/math/go-distribution.h
 include/libgoffice-0.8/goffice/math/go-fft.h
 include/libgoffice-0.8/goffice/math/go-math.h
 include/libgoffice-0.8/goffice/math/go-matrix3x3.h
+include/libgoffice-0.8/goffice/math/go-quad.h
 include/libgoffice-0.8/goffice/math/go-rangefunc.h
 include/libgoffice-0.8/goffice/math/go-regression.h
 include/libgoffice-0.8/goffice/math/goffice-math.h
