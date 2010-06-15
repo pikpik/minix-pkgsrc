@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.4 2009/09/21 17:48:46 tnn Exp $
+# $NetBSD: Makefile.common,v 1.5 2010/02/16 17:38:14 taca Exp $
 #
 # used by x11/wxGTK28/Makefile
 
@@ -68,5 +68,6 @@ pre-configure:
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
 
 .include "../../mk/pthread.buildlink3.mk"
