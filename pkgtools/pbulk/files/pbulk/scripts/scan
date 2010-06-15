@@ -1,5 +1,5 @@
 #!@SH@
-# $NetBSD: scan,v 1.5 2009/12/16 19:41:41 joerg Exp $
+# $NetBSD: scan,v 1.6 2009/12/30 21:14:43 joerg Exp $
 #
 # Copyright (c) 2007 Joerg Sonnenberger <joerg@NetBSD.org>.
 # All rights reserved.
@@ -72,7 +72,7 @@ if [ -z "${limited_list}" ]; then
 else
 	initial=1
 	mkdir -p ${loc}
-	cp "${limited_list}" ${loc}/missing
+	grep -v '^#' "${limited_list}" > ${loc}/missing
 
 	while [ -s ${loc}/missing ]; do
 		sort -u ${loc}/missing > ${loc}/missing.s
