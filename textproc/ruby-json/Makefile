@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/05/04 02:46:50 taca Exp $
+# $NetBSD: Makefile,v 1.5 2010/05/16 09:12:30 obache Exp $
 
 DISTNAME=	json-1.4.3
+PKGREVISION=	1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc
 
@@ -10,6 +11,7 @@ COMMENT=	Native extension implementation of JSON for Ruby
 LICENSE=	ruby-license
 
 GEM_BUILD=	gemspec
+GEM_CLEANBUILD=	ext/json/ext/generator/* ext/json/ext/parser/*
 
 post-extract:
 	cd ${WRKSRC}; ${FIND} . -xdev -type f -print | ${XARGS} ${CHMOD} g-w
