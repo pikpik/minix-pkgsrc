@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2010/05/14 06:22:18 pettai Exp $
+# $NetBSD: Makefile,v 1.18 2010/06/06 17:31:05 gson Exp $
 
-DISTNAME=	miredo-1.1.7
-PKGREVISION=	1
+DISTNAME=	miredo-1.2.2
 CATEGORIES=	net
-MASTER_SITES=	http://www.remlab.net/files/miredo/archive/
+MASTER_SITES=	http://www.remlab.net/files/miredo/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
