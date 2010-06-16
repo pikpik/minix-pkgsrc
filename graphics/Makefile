@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.558 2010/06/05 10:22:59 wiz Exp $
+# $NetBSD: Makefile,v 1.559 2010/06/05 10:26:11 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -387,6 +387,8 @@ SUBDIR+=	tex-a2ping-doc
 SUBDIR+=	tex-asyfig
 SUBDIR+=	tex-asyfig-doc
 SUBDIR+=	tex-dvipng-doc
+SUBDIR+=	tex-eepic
+SUBDIR+=	tex-eepic-doc
 SUBDIR+=	tgif
 SUBDIR+=	tiff
 SUBDIR+=	tkpiechart
