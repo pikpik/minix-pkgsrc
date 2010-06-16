@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2009/07/15 21:09:10 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2010/02/03 13:03:08 obache Exp $
 #
 
-DISTNAME=		zope.interface-3.5.3
+DISTNAME=		zope.interface-3.6.1
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME:S/zope.i/ZopeI/}
 CATEGORIES=		devel python
 MASTER_SITES=		http://pypi.python.org/packages/source/z/zope.interface/
