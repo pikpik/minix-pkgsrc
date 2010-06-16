@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2010/05/01 17:01:20 asau Exp $
+@comment $NetBSD$
 bin/sbcl
 lib/sbcl/asdf-install/.cvsignore
 lib/sbcl/asdf-install/Makefile
