@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.728 2010/06/12 10:44:21 obache Exp $
+# $NetBSD: Makefile,v 1.729 2010/06/15 14:11:02 hauke Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -454,7 +454,6 @@ SUBDIR+=	p5-WordPress-XMLRPC
 SUBDIR+=	p5-libapreq
 SUBDIR+=	p5-libapreq2
 SUBDIR+=	p5-libwww
-SUBDIR+=	pyblosxom
 SUBDIR+=	paros
 SUBDIR+=	pear-HTML_Common
 SUBDIR+=	pear-HTML_Select
@@ -492,6 +491,7 @@ SUBDIR+=	py-simpletal
 SUBDIR+=	py-swish-e
 SUBDIR+=	py-uwsgi
 SUBDIR+=	py-webpy
+SUBDIR+=	pyblosxom
 SUBDIR+=	qDecoder
 SUBDIR+=	raggle
 SUBDIR+=	rails
