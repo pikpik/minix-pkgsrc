@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2009/06/30 00:07:11 joerg Exp $
+# $NetBSD: Makefile,v 1.61 2009/12/18 01:09:23 abs Exp $
 #
 
 DISTNAME=	fidogate-4.4.10
@@ -22,6 +22,7 @@ RCD_SCRIPTS=	fidogate
 RCD_SCRIPT_SRC.fidogate=	${WRKSRC}/scripts/maintenance/rc.fidogate
 INFO_FILES=	yes # PLIST
 
+USERGROUP_PHASE=	pre-install
 PKG_GROUPS=	news
 PKG_USERS=	news:news
 PKG_GECOS.news=	Network News
