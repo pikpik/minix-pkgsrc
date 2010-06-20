@@ -1,4 +1,7 @@
-$NetBSD: patch-configure,v 1.3 2009/07/07 16:17:47 tnn Exp $
+$NetBSD: patch-configure,v 1.4 2009/09/24 22:14:57 ahoka Exp $
+
+First chunk: http://trac.videolan.org/vlc/ticket/3762
+Second chunk: http://trac.videolan.org/vlc/ticket/3761
 
 --- configure.ac.orig	2009-09-19 21:30:21.000000000 +0200
 +++ configure.ac
