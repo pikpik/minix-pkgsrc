@@ -1,4 +1,6 @@
-$NetBSD: patch-af,v 1.1 2006/05/06 11:59:49 wiz Exp $
+$NetBSD: patch-af,v 1.2 2010/06/18 06:55:44 wiz Exp $
+
+http://bugs.povray.org/task/144
 
 --- source/png_pov.cpp.orig	2004-08-02 23:11:37.000000000 +0000
 +++ source/png_pov.cpp
