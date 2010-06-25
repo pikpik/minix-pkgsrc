@@ -2,7 +2,7 @@
 #
 # System-supplied tools for the Minix operating system.
 
-#TODO: Cover these in .if exists(checks)
+#System supplied tools
 TOOLS_PLATFORM.[?=		/bin/[
 TOOLS_PLATFORM.awk?=		/usr/bin/awk
 TOOLS_PLATFORM.basename?=	/usr/bin/basename
@@ -18,7 +18,7 @@ TOOLS_PLATFORM.cut?=		/usr/bin/cut
 TOOLS_PLATFORM.date?=		/bin/date
 TOOLS_PLATFORM.diff?=		/usr/bin/diff
 TOOLS_PLATFORM.dirname?=	/usr/bin/dirname
-TOOLS_PLATFORM.echo?=		/bin/echo
+TOOLS_PLATFORM.echo?=		/usr/gnu/bin/echo
 TOOLS_PLATFORM.env?=		/usr/bin/env
 TOOLS_PLATFORM.expr?=		/bin/expr
 TOOLS_PLATFORM.false?=		/bin/false
@@ -46,49 +46,102 @@ TOOLS_PLATFORM.strip?=		/usr/bin/strip
 TOOLS_PLATFORM.tail?=		/usr/bin/tail
 TOOLS_PLATFORM.tar?=		/usr/bin/tar
 TOOLS_PLATFORM.tee?=		/usr/bin/tee
-TOOLS_PLATFORM.test?=		/bin/test
+TOOLS_PLATFORM.test?=		/usr/gnu/bin/test
 TOOLS_PLATFORM.tr?=		/usr/bin/tr
 TOOLS_PLATFORM.true?=		/bin/true
 TOOLS_PLATFORM.tsort?=		/usr/bin/tsort
 TOOLS_PLATFORM.wc?=		/usr/bin/wc
 TOOLS_PLATFORM.xargs?=		/usr/bin/xargs
 TOOLS_PLATFORM.yacc?=		/usr/bin/yacc
+TOOLS_PLATFORM.patch?=		/usr/bin/patch
+TOOLS_PLATFORM.grep?=		/usr/bin/grep
+TOOLS_PLATFORM.egrep?=		/usr/bin/egrep
+TOOLS_PLATFORM.fgrep?=		/usr/bin/fgrep
 
+#To be system supplied tools
 TOOLS_PLATFORM.printf?=		/usr/bsd/bin/printf
-TOOLS_PLATFORM.touch?=		/usr/bsd/bin/touch #XXX Use Minix touch 
+TOOLS_PLATFORM.touch?=		/usr/bsd/bin/touch
 TOOLS_PLATFORM.hostname?= /usr/bsd/bin/hostname
 
-#TOOLS_PLATFORM.patch?=		/usr/gnu/bin/patch
 TOOLS_PLATFORM.gzcat?=		/usr/local/bin/zcat
-TOOLS_PLATFORM.grep?=		/usr/local/bin/grep
-TOOLS_PLATFORM.egrep?=		/usr/local/bin/egrep
-TOOLS_PLATFORM.fgrep?=		/usr/local/bin/fgrep
 
+# Temporary hack for configure scripts to use gar with gcc
 TOOLS_PLATFORM.ar?=	/usr/gnu/bin/gar
+
+# Other tools if they exist
+.if exists(/usr/local/bin/bash)
 TOOLS_PLATFORM.bash?=		/usr/local/bin/bash
+.endif
+.if exists(/usr/local/bin/zcat)
+TOOLS_PLATFORM.gzcat?=		/usr/local/bin/zcat
+.endif
+
+.if exists(/usr/local/bin/bison)
 TOOLS_PLATFORM.bison?=		/usr/local/bin/bison
+.endif
+.if exists(/usr/local/bin/bison)
 TOOLS_PLATFORM.bison-yacc?=	/usr/local/bin/bison -y
+.endif
+.if exists(/usr/local/bin/awk)
 TOOLS_PLATFORM.gawk?=		/usr/local/bin/awk
+.endif
+.if exists(/usr/gnu/bin/m4)
 TOOLS_PLATFORM.gm4?=		/usr/gnu/bin/m4
-TOOLS_PLATFORM.gmake?=		/usr/local/bin/gmake
+.endif
+.if exists(/usr/utils/gmake)
+TOOLS_PLATFORM.gmake?=		/usr/utils/gmake
+.endif
+.if exists(/usr/local/bin/groff)
 TOOLS_PLATFORM.groff?=		/usr/local/bin/groff
+.endif
+.if exists(/usr/local/bin/sed)
 TOOLS_PLATFORM.gsed?=		/usr/local/bin/sed
+.endif
+.if exists(/usr/gnu/bin/tar)
 TOOLS_PLATFORM.gtar?=		/usr/gnu/bin/tar
+.endif
+.if exists(/usr/local/bin/gunzip)
 TOOLS_PLATFORM.gunzip?=		/usr/local/bin/gunzip -f
+.endif
+.if exists(/usr/local/bin/gzip)
 TOOLS_PLATFORM.gzip?=		/usr/local/bin/gzip -nf ${GZIP}
-
-
-# TOOLS_PLATFORM.ident?=
-# TOOLS_PLATFORM.install-info?=
-# TOOLS_PLATFORM.ldconfig?=
-# TOOLS_PLATFORM.makeinfo?=
-# TOOLS_PLATFORM.mktemp?=
-# TOOLS_PLATFORM.openssl?=
-# TOOLS_PLATFORM.sdiff?=
-# TOOLS_PLATFORM.soelim?=
-# TOOLS_PLATFORM.tbl?=
-# TOOLS_PLATFORM.xgettext?=
-# TOOLS_PLATFORM.csh?=
-# TOOLS_PLATFORM.diff3?=
-# TOOLS_PLATFORM.msgfmt?=
-# TOOLS_PLATFORM.gsoelim?=
+.endif
+.if exists(/usr/bin/flex)
+TOOLS_PLATFORM.flex?=		/usr/bin/flex
+.endif
+.if exists(/usr/local/bin/perl)
+TOOLS_PLATFORM.perl?=		/usr/local/bin/perl
+.endif
+.if exists(/usr/local/bin/unzip)
+TOOLS_PLATFORM.unzip?=		/usr/local/bin/unzip
+.endif
+.if exists(/usr/local/bin/install-info)
+TOOLS_PLATFORM.install-info?= /usr/local/bin/install-info
+.endif
+.if exists(/usr/local/bin/makeinfo)
+TOOLS_PLATFORM.makeinfo?= /usr/local/bin/makeinfo
+.endif
+.if exists(/usr/local/ssl/bin)
+TOOLS_PLATFORM.openssl?= /usr/local/ssl/bin
+.endif
+.if exists(/usr/local/bin/sdiff)
+TOOLS_PLATFORM.sdiff?= /usr/local/bin/sdiff
+.endif
+.if exists(/usr/local/bin/soelim)
+TOOLS_PLATFORM.soelim?= /usr/local/bin/soelim
+.endif
+.if exists(/usr/local/bin/tbl)
+TOOLS_PLATFORM.tbl?= /usr/local/bin/tbl
+.endif
+.if exists(/usr/local/bin/xgettext)
+TOOLS_PLATFORM.xgettext?= /usr/local/bin/xgettext
+.endif
+.if exists(/usr/local/bin/diff3)
+TOOLS_PLATFORM.diff3?= /usr/local/bin/diff3
+.endif
+.if exists(/usr/local/bin/msgfmt)
+TOOLS_PLATFORM.msgfmt?= /usr/local/bin/msgfmt
+.endif
+.if exists(/usr/local/bin/soelim)
+TOOLS_PLATFORM.gsoelim?= /usr/local/bin/soelim
+.endif
