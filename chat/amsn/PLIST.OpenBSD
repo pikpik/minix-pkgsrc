@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/amsn/utils/linux/linflash/flash.so
+share/amsn/utils/linux/linflash/pkgIndex.tcl
+share/amsn/utils/linux/traydock/libtray.so
+share/amsn/utils/linux/traydock/pkgIndex.tcl
