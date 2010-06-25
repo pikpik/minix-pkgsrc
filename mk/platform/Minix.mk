@@ -53,7 +53,7 @@ _OPSYS_PERL_REQD=		# no base version of perl required
 _OPSYS_PTHREAD_AUTO=	no	# -lpthread needed for pthreads
 _OPSYS_SHLIB_TYPE=		a.out # XXX Is this right?
 _PATCH_CAN_BACKUP=	yes	# native patch(1) can make backups
-_PATCH_BACKUP_ARG?= 	-V simple -b	# switch to patch(1) for backup suffix
+_PATCH_BACKUP_ARG?= 	-b -V simple --suffix	# switch to patch(1) for backup suffix
 _USE_RPATH=		no	# add rpath to LDFLAGS
 
 # flags passed to the linker to extract all symbols from static archives.
