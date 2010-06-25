@@ -1,3 +1,5 @@
+$NetBSD$
+
 Don't install libiberty.a
 
 --- libiberty/Makefile.in.orig	2007-08-06 23:59:45.000000000 +0400
