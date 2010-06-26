@@ -167,8 +167,8 @@ ls_list(ARCHD *arcn, time_t now, FILE *fp)
 	 * print device id's for devices, or sizes for other nodes
 	 */
 	if ((arcn->type == PAX_CHR) || (arcn->type == PAX_BLK))
-		(void)fprintf(fp, "%4lu,%4lu ", (long) MAJOR(sbp->st_rdev),
-		    (long) MINOR(sbp->st_rdev));
+		(void)fprintf(fp, "%4lu,%4lu ", (long) PAX_MAJOR(sbp->st_rdev),
+		    (long) PAX_MINOR(sbp->st_rdev));
 	else {
 		(void)fprintf(fp, OFFT_FP("9") " ", (OFFT_T)sbp->st_size);
 	}

@@ -1141,8 +1141,12 @@ set_crc(ARCHD *arcn, int fd)
 		return 0;
 	}
 
+#ifndef __minix
 	if ((size = (u_long)arcn->sb.st_blksize) > (u_long)sizeof(tbuf))
 		size = (u_long)sizeof(tbuf);
+#else
+		size = (u_long)sizeof(tbuf);
+#endif
 
 	/*
 	 * read all the bytes we think that there are in the file. If the user

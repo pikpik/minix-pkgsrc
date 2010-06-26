@@ -90,7 +90,7 @@ pack_native(int n, u_long numbers[], const char **error)
 	portdev_t dev = 0;
 
 	if (n == 2) {
-		dev = TODEV(numbers[0], numbers[1]);
+		dev = PAX_TODEV(numbers[0], numbers[1]);
 		if (major(dev) != numbers[0])
 			*error = iMajorError;
 		else if (minor(dev) != numbers[1])

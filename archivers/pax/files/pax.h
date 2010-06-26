@@ -247,22 +247,22 @@ typedef struct oplist {
 
 #ifdef HOSTPROG
 # include "pack_dev.h"			/* explicitly use NetBSD's macros */
-# define MAJOR(x)	major_netbsd(x)
-# define MINOR(x)	minor_netbsd(x)
-# define TODEV(x, y)	makedev_netbsd((x), (y))
+# define PAX_MAJOR(x)	major_netbsd(x)
+# define PAX_MINOR(x)	minor_netbsd(x)
+# define PAX_TODEV(x, y)	makedev_netbsd((x), (y))
 #else
-# ifdef __HAIKU__
+# if defined(__HAIKU__)
 #  define major(x)		((int)(0x00ff & ((x) >> 8)))
 #  define minor(x)		((int)(0xffff00ff & (x)))
 #  define makedev(maj,min)	((0xff00 & ((maj)<<8))|(0xffff00ff & (min)))
 # endif
-# define MAJOR(x)	major(x)
-# define MINOR(x)	minor(x)
+# define PAX_MAJOR(x)	major(x)
+# define PAX_MINOR(x)	minor(x)
 # ifdef __QNXNTO__
 # include <sys/netmgr.h>
-#  define TODEV(x, y)	makedev(ND_LOCAL_NODE, (x), (y))
+#  define PAX_TODEV(x, y)	makedev(ND_LOCAL_NODE, (x), (y))
 # else
-#  define TODEV(x, y)	makedev((x), (y))
+#  define PAX_TODEV(x, y)	makedev((x), (y))
 # endif
 #endif
 

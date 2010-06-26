@@ -941,7 +941,7 @@ ustar_rd(ARCHD *arcn, char *buf)
 		}
 		devmajor = (dev_t)asc_ul(hd->devmajor,sizeof(hd->devmajor),OCT);
 		devminor = (dev_t)asc_ul(hd->devminor,sizeof(hd->devminor),OCT);
-		arcn->sb.st_rdev = TODEV(devmajor, devminor);
+		arcn->sb.st_rdev = PAX_TODEV(devmajor, devminor);
 		break;
 	case SYMTYPE:
 	case LNKTYPE:
@@ -1155,9 +1155,9 @@ ustar_wr(ARCHD *arcn)
 			hd->typeflag = CHRTYPE;
 		else
 			hd->typeflag = BLKTYPE;
-		if (ul_oct((u_long)MAJOR(arcn->sb.st_rdev), hd->devmajor,
+		if (ul_oct((u_long)PAX_MAJOR(arcn->sb.st_rdev), hd->devmajor,
 		   sizeof(hd->devmajor), 3) ||
-		   ul_oct((u_long)MINOR(arcn->sb.st_rdev), hd->devminor,
+		   ul_oct((u_long)PAX_MINOR(arcn->sb.st_rdev), hd->devminor,
 		   sizeof(hd->devminor), 3) ||
 		   ul_oct((u_long)0L, hd->size, sizeof(hd->size), 3))
 			return size_err("DEVTYPE", arcn);

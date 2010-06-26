@@ -451,7 +451,11 @@ next_file(ARCHD *arcn)
 	int		cnt;
 	time_t		atime, mtime;
 	char		*curlink;
+#ifndef __minix
 #define MFTENT_DUMMY_DEV	UINT_MAX
+#else
+#define MFTENT_DUMMY_DEV SHRT_MAX
+#endif
 
 	curlink = NULL;
 #ifndef SMALL
