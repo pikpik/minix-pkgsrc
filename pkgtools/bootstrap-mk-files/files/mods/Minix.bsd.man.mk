@@ -18,56 +18,34 @@ realinstall:	${MANINSTALL}
 .endif
 cleandir: cleanman
 
-.if exists(${DESTDIR}/usr/local/share/groff/1.20.1/tmac)
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/1.20.1/tmac
-.elif exists(${DESTDIR}/usr/local/share/groff/1.19.2/tmac)
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/1.19.2/tmac
-.elif exists(${DESTDIR}/usr/local/share/groff/1.19.1/tmac)
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/1.19.1/tmac
-.elif exists(${DESTDIR}/usr/local/share/groff/1.18.1.1/tmac)
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/1.18.1.1/tmac
-.elif exists(${DESTDIR}/usr/local/share/groff/1.18.1.4/tmac)
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/1.18.1.4/tmac
-.elif exists(${DESTDIR}/usr/local/share/groff/1.18.1/tmac)
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/1.18.1/tmac
-.elif exists(${DESTDIR}/usr/local/share/groff/1.17.2/tmac)
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/1.17.2/tmac
-.else
-TMACDIR?=	${DESTDIR}/usr/local/share/groff/tmac
-.endif
 HTMLDIR?=	${DESTDIR}/usr/share/man
-CATDEPS?=	${TMACDIR}/mandoc.tmac \
-		${TMACDIR}/doc.tmac
 MANTARGET?=	cat
-NROFF?=		nroff -man
-GROFF?=		groff -Tascii
+MANDOC?=	mandoc -Tascii
 TBL?=		tbl
 
 .SUFFIXES: .1 .2 .3 .4 .5 .6 .7 .8 .9 \
 	   .cat1 .cat2 .cat3 .cat4 .cat5 .cat6 .cat7 .cat8 .cat9 \
 	   .html1 .html2 .html3 .html4 .html5 .html6 .html7 .html8 .html9
 
-.9.cat9 .8.cat8 .7.cat7 .6.cat6 .5.cat5 .4.cat4 .3.cat3 .2.cat2 .1.cat1: \
-    ${CATDEPS}
+.9.cat9 .8.cat8 .7.cat7 .6.cat6 .5.cat5 .4.cat4 .3.cat3 .2.cat2 .1.cat1:
 .if !defined(USETBL)
-	@echo "${NROFF} -mandoc ${.IMPSRC} > ${.TARGET}"
-	@${NROFF} -mandoc ${.IMPSRC} > ${.TARGET} || \
+	@echo "${MANDOC} ${.IMPSRC} > ${.TARGET}"
+	${MANDOC} ${.IMPSRC} > ${.TARGET} || \
 	 (rm -f ${.TARGET}; false)
 .else
-	@echo "${TBL} ${.IMPSRC} | ${NROFF} -mandoc > ${.TARGET}"
-	@${TBL} ${.IMPSRC} | ${NROFF} -mandoc > ${.TARGET} || \
+	@echo "${TBL} ${.IMPSRC} | ${MANDOC} > ${.TARGET}"
+	@${TBL} ${.IMPSRC} | ${MANDOC} > ${.TARGET} || \
 	 (rm -f ${.TARGET}; false)
 .endif
 
-.9.html9 .8.html8 .7.html7 .6.html6 .5.html5 .4.html4 .3.html3 .2.html2 .1.html1: \
-    ${CATDEPS}
+.9.html9 .8.html8 .7.html7 .6.html6 .5.html5 .4.html4 .3.html3 .2.html2 .1.html1:
 .if !defined(USETBL)
-	@echo "${GROFF} -mdoc2html -P-b -P-u -P-o ${.IMPSRC} > ${.TARGET}"
-	@${GROFF} -mdoc2html -P-b -P-u -P-o ${.IMPSRC} > ${.TARGET} || \
+	@echo "${MANDOC} -Thtml ${.IMPSRC} > ${.TARGET}"
+	@${MANDOC} -Thtml ${.IMPSRC} > ${.TARGET} || \
 	 (rm -f ${.TARGET}; false)
 .else
-	@echo "${TBL} ${.IMPSRC} | ${GROFF} -mdoc2html -P-b -P-u -P-o > ${.TARGET}"
-	@cat ${.IMPSRC} | ${GROFF} -mdoc2html -P-b -P-u -P-o > ${.TARGET} || \
+	@echo "${TBL} ${.IMPSRC} | ${MANDOC} -Thtml > ${.TARGET}"
+	@cat ${.IMPSRC} | ${MANDOC} -Thtml > ${.TARGET} || \
 	 (rm -f ${.TARGET}; false)
 .endif
 
