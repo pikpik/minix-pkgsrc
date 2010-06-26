@@ -18,7 +18,7 @@ TOOLS_PLATFORM.cut?=		/usr/bin/cut
 TOOLS_PLATFORM.date?=		/bin/date
 TOOLS_PLATFORM.diff?=		/usr/bin/diff
 TOOLS_PLATFORM.dirname?=	/usr/bin/dirname
-TOOLS_PLATFORM.echo?=		/usr/gnu/bin/echo
+TOOLS_PLATFORM.echo?=		/bin/echo
 TOOLS_PLATFORM.env?=		/usr/bin/env
 TOOLS_PLATFORM.expr?=		/bin/expr
 TOOLS_PLATFORM.false?=		/bin/false
@@ -41,12 +41,12 @@ TOOLS_PLATFORM.rmdir?=		/bin/rmdir
 TOOLS_PLATFORM.sed?=	/usr/bin/sed
 TOOLS_PLATFORM.sh?=		/bin/sh
 TOOLS_PLATFORM.sleep?=		/usr/bin/sleep
-TOOLS_PLATFORM.sort?=		/usr/bsd/bin/sort
+TOOLS_PLATFORM.sort?=		/usr/bin/sort
 TOOLS_PLATFORM.strip?=		/usr/bin/strip
 TOOLS_PLATFORM.tail?=		/usr/bin/tail
 TOOLS_PLATFORM.tar?=		/usr/bin/tar
 TOOLS_PLATFORM.tee?=		/usr/bin/tee
-TOOLS_PLATFORM.test?=		/usr/gnu/bin/test
+TOOLS_PLATFORM.test?=		/bin/test
 TOOLS_PLATFORM.tr?=		/usr/bin/tr
 TOOLS_PLATFORM.true?=		/bin/true
 TOOLS_PLATFORM.tsort?=		/usr/bin/tsort
@@ -57,11 +57,9 @@ TOOLS_PLATFORM.patch?=		/usr/bin/patch
 TOOLS_PLATFORM.grep?=		/usr/bin/grep
 TOOLS_PLATFORM.egrep?=		/usr/bin/egrep
 TOOLS_PLATFORM.fgrep?=		/usr/bin/fgrep
-
-#To be system supplied tools
-TOOLS_PLATFORM.printf?=		/usr/bsd/bin/printf
-TOOLS_PLATFORM.touch?=		/usr/bsd/bin/touch
-TOOLS_PLATFORM.hostname?= /usr/bsd/bin/hostname
+TOOLS_PLATFORM.printf?=		/usr/bin/printf
+TOOLS_PLATFORM.touch?=		/usr/bin/touch
+TOOLS_PLATFORM.hostname?= /usr/bin/hostname
 
 TOOLS_PLATFORM.gzcat?=		/usr/local/bin/zcat
 
