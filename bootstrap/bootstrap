@@ -625,7 +625,8 @@ Linux)
 Minix)
 	root_group=operator
 	need_bsd_install=yes
-	need_sed=yes
+	need_sed=no
+	need_awk=no
 	set_opsys=no
 	groupsprog="id -gn"
 	machine_arch=`uname -p`
