@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/08/06 11:49:50 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:16 tnn Exp $
 #
 
 DISTNAME=		liblbxutil-1.0.1
@@ -16,6 +16,8 @@ USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/lbxutil.pc.in
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
+
+BROKEN=			Unsupported by modern X.org
 
 .include "../../mk/bsd.prefs.mk"
 
