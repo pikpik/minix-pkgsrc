@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.335 2010/06/11 23:27:39 tonnerre Exp $
+# $NetBSD: Makefile,v 1.336 2010/06/11 23:42:02 tonnerre Exp $
 #
 
 COMMENT=	Databases
@@ -195,7 +195,6 @@ SUBDIR+=	php-mssql
 SUBDIR+=	php-mysql
 SUBDIR+=	php-mysqli
 SUBDIR+=	php-oci8
-SUBDIR+=	php-odbc
 SUBDIR+=	php-pdo
 SUBDIR+=	php-pdo_dblib
 SUBDIR+=	php-pdo_mysql
