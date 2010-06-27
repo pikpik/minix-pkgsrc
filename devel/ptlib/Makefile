@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/11/10 16:14:17 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/01/17 12:02:14 wiz Exp $
 
 DISTNAME=	ptlib-2.6.5
 PKGREVISION=	2
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	pwlib-[0-9]*
 
-USE_TOOLS+=		bison gmake pkg-config
+USE_TOOLS+=		bison flex gmake pkg-config
 BUILD_TARGET=		optshared
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
