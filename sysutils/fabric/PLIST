@@ -55,8 +55,10 @@ share/doc/fabric/api/core/context_managers.rst
 share/doc/fabric/api/core/decorators.rst
 share/doc/fabric/api/core/operations.rst
 share/doc/fabric/api/core/utils.rst
+share/doc/fabric/changes/${PKGVERSION}.rst
 share/doc/fabric/changes/0.9.rst
 share/doc/fabric/development.rst
+share/doc/fabric/faq.rst
 share/doc/fabric/index.rst
 share/doc/fabric/installation.rst
 share/doc/fabric/tutorial.rst
