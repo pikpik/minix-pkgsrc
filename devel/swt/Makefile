@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/06/10 19:25:28 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2010/06/13 22:44:10 wiz Exp $
 #
 
 SWTREL=		3.5.1
@@ -35,6 +35,13 @@ PLIST_SUBST+=	SWTVER=${SWTVER}
 INSTALLATION_DIRS+=	share/java
 INSTALLATION_DIRS+=	lib/jni
 
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD" && ${LOWER_ARCH} == "x86_64"
+MY_LOWER_ARCH=	amd64
+.endif
+MY_LOWER_ARCH?=	${LOWER_ARCH}
+
 post-extract:
 	cd ${WRKSRC} && jar -xf ${WRKSRC}/src.zip
 	cp ${FILESDIR}/make_pkgsrc.mak ${WRKSRC}
@@ -44,6 +51,7 @@ do-build:
 	cd ${WRKSRC} && ${GMAKE} \
 	    JAVA_HOME=${PKG_JAVA_HOME} \
 	    LOWER_OPSYS=${LOWER_OPSYS} \
+	    LOWER_ARCH=${MY_LOWER_ARCH} \
 	    -f make_pkgsrc.mak ${target}
 .endfor
 	${TEST} -d ${WRKSRC}/bin || mkdir ${WRKSRC}/bin
