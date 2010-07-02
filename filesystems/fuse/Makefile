@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/03/15 22:55:21 agc Exp $
+# $NetBSD: Makefile,v 1.3 2007/03/16 18:57:29 gdt Exp $
 #
 
 DISTNAME=		fuse-2.5.2
@@ -8,6 +8,8 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fuse/}
 MAINTAINER=		pancake@phreaker.net
 HOMEPAGE=		http://fuse.sourceforge.net/
 COMMENT=		Filesystem in Userspace
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 
