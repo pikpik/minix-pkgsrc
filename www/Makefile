@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.732 2010/07/01 07:19:04 jnemeth Exp $
+# $NetBSD: Makefile,v 1.733 2010/07/03 20:53:50 seb Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -402,6 +402,7 @@ SUBDIR+=	p5-LWPx-ParanoidAgent
 SUBDIR+=	p5-MasonX-Request-WithApacheSession
 SUBDIR+=	p5-Mojo
 SUBDIR+=	p5-Net-FastCGI
+SUBDIR+=	p5-POE-Filter-HTTP-Parser
 SUBDIR+=	p5-PSGI
 SUBDIR+=	p5-ParallelUserAgent
 SUBDIR+=	p5-Plack
