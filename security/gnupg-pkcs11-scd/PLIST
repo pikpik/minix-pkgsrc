@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/gnupg-pkcs11-scd
+share/doc/gnupg-pkcs11-scd/gnupg-pkcs11-scd.conf.example
+share/doc/gnupg-pkcs11-scd/README
+share/doc/gnupg-pkcs11-scd/COPYING
+man/man1/gnupg-pkcs11-scd.1
