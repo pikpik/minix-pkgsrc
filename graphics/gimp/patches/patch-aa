@@ -1,8 +1,8 @@
 $NetBSD$
 
---- etc/Makefile.in.orig	2009-08-13 21:37:06.000000000 +0200
+--- etc/Makefile.in.orig	2010-06-21 20:00:58.000000000 +0000
 +++ etc/Makefile.in
-@@ -320,7 +320,7 @@ gimpdatadir = @gimpdatadir@
+@@ -342,7 +342,7 @@ gimpdatadir = @gimpdatadir@
  gimpdir = @gimpdir@
  gimplocaledir = @gimplocaledir@
  gimpplugindir = @gimpplugindir@
