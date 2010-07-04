@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.64 2010/01/05 23:02:12 tron Exp $
+# $NetBSD: Makefile,v 1.65 2010/03/15 10:08:30 wiz Exp $
 
-DISTNAME=	lame-3.98.3
+DISTNAME=	lame-3.98.4
 CATEGORIES=	audio
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/} 
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lame.sourceforge.net/
