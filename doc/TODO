@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.9439 2010/07/04 11:09:08 markd Exp $
+$NetBSD: TODO,v 1.9440 2010/07/04 15:29:07 wiz Exp $
 
 Suggested new packages
 ======================
@@ -36,10 +36,6 @@ Suggested new packages
 	joyce
 	http://www.seasip.demon.co.uk/Unix/Joyce/index.html
 	Amstrad PCW emulator
-
-	SlimServer
-	http://www.slimdevices.com/pi_features.html
-	Slim Devices audio streaming server
 
 	Helix Player
 	http://player.helixcommunity.org/2004/downloads/
