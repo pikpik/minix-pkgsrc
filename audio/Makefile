@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.437 2010/06/05 09:28:40 obache Exp $
+# $NetBSD: Makefile,v 1.438 2010/06/15 21:25:23 joerg Exp $
 #
 
 COMMENT=	Audio tools
@@ -352,6 +352,7 @@ SUBDIR+=	speex
 SUBDIR+=	spiralloops
 SUBDIR+=	spiralsynth
 SUBDIR+=	splay
+SUBDIR+=	squeezeboxserver
 SUBDIR+=	streamripper
 SUBDIR+=	streamripper-current
 SUBDIR+=	streamtuner
