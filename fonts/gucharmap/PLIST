@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.20 2009/07/09 18:04:31 drochner Exp $
+@comment $NetBSD$
 bin/charmap
 bin/gnome-character-map
 bin/gucharmap
@@ -100,6 +100,7 @@ share/locale/da/LC_MESSAGES/gucharmap.mo
 share/locale/de/LC_MESSAGES/gucharmap.mo
 share/locale/dz/LC_MESSAGES/gucharmap.mo
 share/locale/el/LC_MESSAGES/gucharmap.mo
+share/locale/en@shaw/LC_MESSAGES/gucharmap.mo
 share/locale/en_CA/LC_MESSAGES/gucharmap.mo
 share/locale/en_GB/LC_MESSAGES/gucharmap.mo
 share/locale/eo/LC_MESSAGES/gucharmap.mo
