@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.23 2009/09/06 04:18:11 schnoebe Exp $
+# $NetBSD: options.mk,v 1.24 2010/06/02 13:14:47 adam Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.jabberd2
 PKG_OPTIONS_REQUIRED_GROUPS=	auth storage sasl mio
@@ -33,6 +33,7 @@ CONFIGURE_ARGS+=	--with-sasl=gsasl
 .endif
 
 .if !empty(PKG_OPTIONS:Mauth-db) || !empty(PKG_OPTIONS:Mstorage-db)
+BDB_ACCEPTED=		db4 db5
 CONFIGURE_ARGS+=	--enable-db
 PLIST.db=		yes
 BUILDLINK_TRANSFORM+=	l:db:${BDB_TYPE}
