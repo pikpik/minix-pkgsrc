@@ -1,9 +1,10 @@
-# $NetBSD: builtin.mk,v 1.5 2006/04/06 06:21:57 reed Exp $
+# $NetBSD: builtin.mk,v 1.6 2007/08/03 11:53:27 joerg Exp $
 
 BUILTIN_PKG:=	zlib
 
 BUILTIN_FIND_FILES_VAR:=	H_ZLIB
-BUILTIN_FIND_FILES.H_ZLIB=	/usr/include/zlib.h
+BUILTIN_FIND_FILES.H_ZLIB=	/usr/include/zlib.h \
+				/boot/develop/headers/3rdparty/zlib.h
 
 .include "../../mk/buildlink3/bsd.builtin.mk"
 
