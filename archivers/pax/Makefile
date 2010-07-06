@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2010/03/21 16:29:38 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2010/03/21 16:50:41 joerg Exp $
 
 DISTNAME=		pax-20080110
 CATEGORIES=		archivers
@@ -40,5 +40,13 @@ GNU_CONFIGURE=		yes
 
 do-extract:
 	${CP} -R ${FILESDIR} ${WRKSRC}
+
+# Haiku (BeFS) cannot support hard link
+.if ${OPSYS} == "Haiku"
+SUBST_CLASSES+=		symlink
+SUBST_STAGE.symlink=	pre-configure
+SUBST_FILES.symlink=	Makefile.in
+SUBST_SED.symlink=	-e 's,ln -f ,ln -sf ,g'
+.endif
 
 .include "../../mk/bsd.pkg.mk"
