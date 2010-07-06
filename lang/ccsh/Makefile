@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/04/22 09:22:10 rillig Exp $
+# $NetBSD: Makefile,v 1.6 2008/03/04 16:38:11 jlam Exp $
 #
 
 DISTNAME=		ccsh-0.0.4
@@ -6,7 +6,7 @@ PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ccsh/}
 
-MAINTAINER=		pancake@phreaker.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ccsh.sourceforge.net/
 COMMENT=		C-like syntax scripting
 

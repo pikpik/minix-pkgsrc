@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2010/01/27 19:10:29 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2010/06/13 22:45:23 wiz Exp $
 #
 
 DISTNAME=	idesk-0.7.5
@@ -7,7 +7,7 @@ CATEGORIES=	sysutils x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=idesk/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	pancake@phreaker.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://idesk.sourceforge.net/
 COMMENT=	Lightweight desktop icons handler
 

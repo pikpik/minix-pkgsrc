@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:44 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2010/01/17 12:02:40 wiz Exp $
 #
 
 PKGNAME=	dirb-1.9
@@ -7,7 +7,7 @@ PKGREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dirb/}
 
-MAINTAINER=	pancake@phreaker.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dirb.sourceforge.net/
 COMMENT=	Web Content Scanner
 

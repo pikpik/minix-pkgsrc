@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/03/04 06:59:06 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2008/11/10 17:21:35 wiz Exp $
 
 DISTNAME=		xjump_2.7.5.orig
 PKGNAME=		xjump-2.7.5
@@ -7,7 +7,7 @@ CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/\
 			http://www.gtlib.cc.gatech.edu/pub/debian/pool/main/x/xjump/
 
-MAINTAINER=		pancake@phreaker.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gtlib.cc.gatech.edu/pub/debian/pool/main/x/xjump/
 COMMENT=		Jumping game for X
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2007/06/05 14:08:43 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2008/09/07 06:41:44 dholland Exp $
 #
 
 DISTNAME=		jamvm-1.5.1
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=jamvm/}
 
-MAINTAINER=		pancake@phreaker.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://jamvm.sourceforge.net/
 COMMENT=		Compact Java Virtual Machine
 
