@@ -4,6 +4,7 @@ share/gnome-background-properties/gnome-nature.xml
 share/locale/af/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/ar/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/as/LC_MESSAGES/gnome-backgrounds.mo
+share/locale/ast/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/be/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/be@latin/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/bg/LC_MESSAGES/gnome-backgrounds.mo
@@ -17,6 +18,7 @@ share/locale/da/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/de/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/dz/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/el/LC_MESSAGES/gnome-backgrounds.mo
+share/locale/en@shaw/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/en_CA/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/en_GB/LC_MESSAGES/gnome-backgrounds.mo
 share/locale/es/LC_MESSAGES/gnome-backgrounds.mo
