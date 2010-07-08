@@ -1,4 +1,4 @@
-# $NetBSD: unprivileged.mk,v 1.19 2010/02/28 19:33:00 tnn Exp $
+# $NetBSD: unprivileged.mk,v 1.20 2010/02/28 19:57:52 tnn Exp $
 #
 # This file collects definitions that are useful when using pkgsrc as an
 # unprivileged (non-root) user. It is included automatically by the
@@ -154,6 +154,7 @@ ROOT_USER=		${UNPRIVILEGED_USER}
 # Override "games" account.
 GAMES_GROUP=		${UNPRIVILEGED_GROUP}
 GAMES_USER=		${UNPRIVILEGED_USER}
+GAMEDATAMODE=		0644
 GAMEDIRMODE=		0755
 GAMEMODE=		0755
 .  endif
