@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.11 2009/11/24 17:20:40 jakllsch Exp $
+# $NetBSD: Makefile,v 1.12 2009/12/27 18:08:12 jakllsch Exp $
 #
 
 # Note -- version number also in the do-install rule
 MAJVER=4
-MINVER=00
+MINVER=10
 
 DISTNAME=		memtest86+-${MAJVER}.${MINVER}
 PKGNAME=		memtestplus-${MAJVER}.${MINVER}
-PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.memtest.org/download/${MAJVER}.${MINVER}/
 
