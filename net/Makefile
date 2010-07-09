@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.834 2010/06/04 16:10:24 sborrill Exp $
+# $NetBSD: Makefile,v 1.835 2010/06/10 05:44:27 dholland Exp $
 #
 
 COMMENT=	Networking tools
@@ -62,6 +62,7 @@ SUBDIR+=	cia
 SUBDIR+=	cidr
 SUBDIR+=	cisco-mibs
 SUBDIR+=	citrix_ica
+SUBDIR+=	clisp-rawsock
 SUBDIR+=	clive
 SUBDIR+=	cmu-dhcpd
 SUBDIR+=	cntlm

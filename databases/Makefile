@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.336 2010/06/11 23:42:02 tonnerre Exp $
+# $NetBSD: Makefile,v 1.337 2010/06/27 20:40:11 joerg Exp $
 #
 
 COMMENT=	Databases
@@ -8,6 +8,8 @@ SUBDIR+=	adodb
 SUBDIR+=	apache-cassandra
 SUBDIR+=	bdb-xml
 SUBDIR+=	cdb
+SUBDIR+=	clisp-gdbm
+SUBDIR+=	clisp-pgsql
 #SUBDIR+=	cstore	# not enabled at present due to its size requirements
 SUBDIR+=	datadraw
 SUBDIR+=	db
