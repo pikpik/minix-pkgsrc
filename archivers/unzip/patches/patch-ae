@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- unix/unix.c.orig	Fri Jul  9 15:16:58 2010
++++ unix/unix.c
+@@ -49,6 +49,9 @@
+ #ifdef __minix
+ /* For _POSIX_VERSION */
+ #include <unistd.h>
++
++#define lchown chown
++#define lchmod chmod
+ #endif
+ 
+ #ifdef _POSIX_VERSION
