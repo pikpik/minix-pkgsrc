@@ -5,9 +5,9 @@ required by ISO C99 and only gcc can handle it.
 
 Fixed in gettext-tools-0.16.
 
---- gettext-tools/src/po-lex.h.orig	2005-05-20 23:03:44.000000000 +0200
-+++ gettext-tools/src/po-lex.h	2007-03-12 23:26:26.000000000 +0100
-@@ -73,7 +73,7 @@ extern void po_lex_pass_obsolete_entries
+--- gettext-tools/src/po-lex.h.orig	Fri May 20 21:03:44 2005
++++ gettext-tools/src/po-lex.h
+@@ -73,7 +73,7 @@ extern void po_lex_pass_obsolete_entries (bool flag);
  
  /* ISO C 99 is smart enough to allow optimizations like this.
     Note: OpenVMS 7.3 cc pretends to support ISO C 99 but chokes on '...'.  */
@@ -16,7 +16,7 @@ Fixed in gettext-tools-0.16.
  
  /* CAUTION: If you change this macro, you must also make identical
     changes to the function of the same name in src/po-lex.c  */
-@@ -109,7 +109,7 @@ extern void po_lex_pass_obsolete_entries
+@@ -109,7 +109,7 @@ extern void po_lex_pass_obsolete_entries (bool flag);
    } while (0)
  
  /* GCC is also smart enough to allow optimizations like this.  */

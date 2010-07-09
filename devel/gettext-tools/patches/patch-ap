@@ -1,23 +1,24 @@
 $NetBSD$
 
---- gettext-tools/lib/vasprintf.c.orig	2006-06-28 23:14:51.332244000 +1200
+--- gettext-tools/lib/vasprintf.c.orig	Fri May 20 21:03:42 2005
 +++ gettext-tools/lib/vasprintf.c
-@@ -40,7 +40,13 @@ int_vasprintf (char **result, const char
+@@ -40,8 +40,14 @@ int_vasprintf (char **result, const char *format, va_l
    /* Add one to make sure that it is never zero, which might cause malloc
       to return NULL.  */
    size_t total_width = strlen (format) + 1;
 -  va_list ap = *args;
 +  va_list ap;
-+
+ 
 +#ifdef va_copy
 +  va_copy (ap, *args);
 +#else
 +  ap = *args;
 +#endif
- 
++
    while (*p != '\0')
      {
-@@ -109,6 +115,9 @@ int_vasprintf (char **result, const char
+       if (*p++ == '%')
+@@ -109,6 +115,9 @@ int_vasprintf (char **result, const char *format, va_l
  	  p++;
  	}
      }

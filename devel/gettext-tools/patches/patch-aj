@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gettext-runtime/Makefile.in.orig	2006-02-03 14:42:03.000000000 +0000
+--- gettext-runtime/Makefile.in.orig	Wed Jun 21 12:29:28 2006
 +++ gettext-runtime/Makefile.in
 @@ -300,7 +300,7 @@ sysconfdir = @sysconfdir@
  target_alias = @target_alias@

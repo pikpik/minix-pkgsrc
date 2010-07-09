@@ -4,7 +4,7 @@ Treat Haiku like BeOS
 
 http://git.savannah.gnu.org/cgit/gnulib.git/commit/?id=40d88197eef9efb44102f8fd6ce10141ca61fb3c
 
---- gettext-tools/lib/binary-io.h.orig	2005-05-20 21:03:41.000000000 +0000
+--- gettext-tools/lib/binary-io.h.orig	Fri May 20 21:03:41 2005
 +++ gettext-tools/lib/binary-io.h
 @@ -31,8 +31,8 @@
  # define O_BINARY _O_BINARY

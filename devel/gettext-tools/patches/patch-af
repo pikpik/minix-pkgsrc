@@ -1,8 +1,8 @@
 $NetBSD$
 
---- gettext-tools/lib/execute.c.orig	2005-05-20 22:03:42.000000000 +0100
-+++ gettext-tools/lib/execute.c	2007-11-26 17:51:20.000000000 +0000
-@@ -62,8 +62,13 @@
+--- gettext-tools/lib/execute.c.orig	Fri May 20 21:03:42 2005
++++ gettext-tools/lib/execute.c
+@@ -62,7 +62,12 @@
  #endif
  
  #ifndef HAVE_ENVIRON_DECL
@@ -11,8 +11,7 @@ $NetBSD$
 +#define environ (*_NSGetEnviron())
 +#else
  extern char **environ;
- #endif
 +#endif
+ #endif
  
  #ifndef STDIN_FILENO
- # define STDIN_FILENO 0

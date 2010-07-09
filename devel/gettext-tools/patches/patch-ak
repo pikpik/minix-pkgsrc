@@ -1,7 +1,16 @@
 $NetBSD$
 
---- gettext-runtime/intl/Makefile.in.orig	2006-02-04 19:34:01.000000000 +0000
+--- gettext-runtime/intl/Makefile.in.orig	Fri May 20 21:03:38 2005
 +++ gettext-runtime/intl/Makefile.in
+@@ -32,7 +32,7 @@ transform = @program_transform_name@
+ libdir = @libdir@
+ includedir = @includedir@
+ datadir = @datadir@
+-localedir = $(datadir)/locale
++localedir = /usr/pkg//share/locale
+ gettextsrcdir = $(datadir)/gettext/intl
+ aliaspath = $(localedir)
+ subdir = intl
 @@ -257,7 +257,7 @@ check: all
  # separate library.
  # If you want to use the one which comes with this version of the

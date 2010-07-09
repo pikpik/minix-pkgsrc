@@ -1,7 +1,16 @@
 $NetBSD$
 
---- gettext-tools/lib/Makefile.in.orig	2006-06-21 14:30:05.000000000 +0200
+--- gettext-tools/lib/Makefile.in.orig	Wed Jun 21 12:30:05 2006
 +++ gettext-tools/lib/Makefile.in
+@@ -348,7 +348,7 @@ install_sh = @install_sh@
+ libdir = @libdir@
+ libexecdir = @libexecdir@
+ lispdir = @lispdir@
+-localedir = @localedir@
++localedir = /usr/pkg//share/locale
+ localstatedir = @localstatedir@
+ mandir = @mandir@
+ mkdir_p = @mkdir_p@
 @@ -453,7 +453,7 @@ libgettextlib_la_LIBADD = @LTLIBOBJS@
  # Need @LTLIBICONV@ because linebreak.c uses iconv().
  libgettextlib_la_LDFLAGS = \
@@ -29,10 +38,11 @@ $NetBSD$
  
  install-exec-am: install-exec-local install-libLTLIBRARIES
  
-@@ -779,15 +779,6 @@ uninstall-am: uninstall-examplesbuildaux
+@@ -778,15 +778,6 @@ uninstall-am: uninstall-examplesbuildauxDATA uninstall
+ 	uninstall-am uninstall-examplesbuildauxDATA \
  	uninstall-gettextsrcDATA uninstall-info-am \
  	uninstall-libLTLIBRARIES uninstall-local
- 
+-
 -
 -# No need to install libgettextlib.a, except on AIX.
 -install-exec-local: install-libLTLIBRARIES install-exec-clean
@@ -41,7 +51,6 @@ $NetBSD$
 -	  aix*) ;; \
 -	  *) $(RM) $(DESTDIR)$(libdir)/libgettextlib.a ;; \
 -	esac
--
+ 
  # The following is needed in order to create an <stdbool.h> when the system
  # doesn't have one that works.
- all-local $(libgettextlib_la_OBJECTS): @STDBOOL_H@

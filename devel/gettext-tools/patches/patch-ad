@@ -1,7 +1,16 @@
 $NetBSD$
 
---- gettext-tools/Makefile.in.orig	2006-02-03 15:55:59.000000000 +0000
+--- gettext-tools/Makefile.in.orig	Wed Jun 21 12:30:07 2006
 +++ gettext-tools/Makefile.in
+@@ -335,7 +335,7 @@ install_sh = @install_sh@
+ libdir = @libdir@
+ libexecdir = @libexecdir@
+ lispdir = @lispdir@
+-localedir = @localedir@
++localedir = /usr/pkg//share/locale
+ localstatedir = @localstatedir@
+ mandir = @mandir@
+ mkdir_p = @mkdir_p@
 @@ -348,7 +348,7 @@ sysconfdir = @sysconfdir@
  target_alias = @target_alias@
  AUTOMAKE_OPTIONS = 1.5 gnu no-dependencies

@@ -1,7 +1,16 @@
 $NetBSD$
 
---- gettext-tools/man/Makefile.in.orig	2006-02-04 20:16:58.000000000 +0000
+--- gettext-tools/man/Makefile.in.orig	Wed Jun 21 12:30:05 2006
 +++ gettext-tools/man/Makefile.in
+@@ -297,7 +297,7 @@ install_sh = @install_sh@
+ libdir = @libdir@
+ libexecdir = @libexecdir@
+ lispdir = @lispdir@
+-localedir = $(datadir)/locale
++localedir = /usr/pkg//share/locale
+ localstatedir = @localstatedir@
+ mandir = @mandir@
+ mkdir_p = @mkdir_p@
 @@ -328,8 +328,7 @@ gettextize.x autopoint.x
  # Likewise.
  man_MAN1OTHER = \

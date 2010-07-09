@@ -1,17 +1,18 @@
 $NetBSD$
 
---- gettext-tools/config.h.in.orig	2006-02-14 15:40:12.000000000 +0100
+--- gettext-tools/config.h.in.orig	Wed Jun 21 12:29:58 2006
 +++ gettext-tools/config.h.in
-@@ -1,5 +1,9 @@
+@@ -1,6 +1,10 @@
  /* config.h.in.  Generated from configure.ac by autoheader.  */
  
 +#ifdef __NetBSD__
 +#include <sys/param.h>
 +#endif
-+
  
++
  /* Default value for alignment of strings in .mo file.  */
  #define DEFAULT_OUTPUT_ALIGNMENT 1
+ 
 @@ -500,8 +504,12 @@
  /* Define to 1 if you have the `wcslen' function. */
  #undef HAVE_WCSLEN
