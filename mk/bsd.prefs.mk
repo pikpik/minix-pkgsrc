@@ -31,7 +31,6 @@
 #
 
 .if !defined(BSD_PKG_MK)
-
 # Let mk.conf know that this is pkgsrc.
 BSD_PKG_MK=1
 __PREFIX_SET__:=${PREFIX}
@@ -96,7 +95,6 @@ GNU_ARCH.sh3eb?=	sh
 GNU_ARCH.sh3el?=	shle
 NATIVE_MACHINE_GNU_ARCH?=	${GNU_ARCH.${NATIVE_MACHINE_ARCH}:U${NATIVE_MACHINE_ARCH}}
 MACHINE_GNU_ARCH?=		${GNU_ARCH.${MACHINE_ARCH}:U${MACHINE_ARCH}}
-
 ## If changes are made to how OS_VERSION is set below please keep
 ## "pkgsrc/pkgtools/osabi/INSTALL" in-sync.
 .if ${OPSYS} == "NetBSD"
@@ -271,13 +269,16 @@ LOWER_OPSYS?=		solaris
 LOWER_OPSYS_VERSUFFIX=	2
 
 .elif ${OPSYS} == "Minix"
-OS_VERSION!= echo `${UNAME} -r`.`${UNAME} -v`
+OS_VERSION!= echo `${UNAME} -r`
 LOWER_OS_VERSION= OS_VERSION
-LOWER_ARCH!=		${UNAME} -m
-MACHINE_ARCH?=		${LOWER_ARCH}
+#LOWER_ARCH!=		${UNAME} -m
+LOWER_ARCH=	i386
+# Set this unconditionally for now as Minix make sets it wrong
+MACHINE_ARCH=		${LOWER_ARCH}
 LOWER_VENDOR?=pc
 LOWER_OPSYS:=		${OPSYS:tl}
 USE_TOOLS+=		ar
+USE_TOOLS+=		nm
 .elif !defined(LOWER_OPSYS)
 LOWER_OPSYS:=		${OPSYS:tl}
 .endif
