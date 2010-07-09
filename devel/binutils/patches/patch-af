@@ -1,7 +1,7 @@
 $NetBSD$
 
---- gas/read.c.orig	2005-11-17 08:29:28.000000000 +0100
-+++ gas/read.c	2007-08-14 11:03:42.000000000 +0200
+--- gas/read.c.orig	Thu Nov 17 07:29:28 2005
++++ gas/read.c
 @@ -1423,7 +1423,7 @@ s_comm_internal (int param,
    offsetT temp, size;
    symbolS *symbolP = NULL;
@@ -11,3 +11,20 @@ $NetBSD$
    expressionS exp;
  
    if (flag_mri)
+@@ -3251,14 +3251,14 @@ s_weakref (int ignore ATTRIBUTE_UNUSED)
+ 	  char *loop;
+ 
+ 	  loop = concat (S_GET_NAME (symbolP),
+-			 " => ", S_GET_NAME (symbolP2), NULL);
++			 " => ", S_GET_NAME (symbolP2), (char *)NULL);
+ 
+ 	  symp = symbolP2;
+ 	  while (symp != symbolP)
+ 	    {
+ 	      char *old_loop = loop;
+ 	      symp = symbol_get_value_expression (symp)->X_add_symbol;
+-	      loop = concat (loop, " => ", S_GET_NAME (symp), NULL);
++	      loop = concat (loop, " => ", S_GET_NAME (symp), (char *)NULL);
+ 	      free (old_loop);
+ 	    }
+ 
