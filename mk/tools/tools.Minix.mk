@@ -13,7 +13,7 @@ TOOLS_PLATFORM.chgrp?=		/usr/bin/chgrp
 TOOLS_PLATFORM.chmod?=		/usr/bin/chmod
 TOOLS_PLATFORM.chown?=		/usr/sbin/chown
 TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
-TOOLS_PLATFORM.cp?=		/bin/cp
+TOOLS_PLATFORM.cp?=		/bin/cp /* Minix does not have ipv6 but pretends it does */
 TOOLS_PLATFORM.cut?=		/usr/bin/cut
 TOOLS_PLATFORM.date?=		/bin/date
 TOOLS_PLATFORM.diff?=		/usr/bin/diff
@@ -53,7 +53,6 @@ TOOLS_PLATFORM.tsort?=		/usr/bin/tsort
 TOOLS_PLATFORM.wc?=		/usr/bin/wc
 TOOLS_PLATFORM.xargs?=		/usr/bin/xargs
 TOOLS_PLATFORM.yacc?=		/usr/bin/yacc
-TOOLS_PLATFORM.patch?=		/usr/bin/patch
 TOOLS_PLATFORM.grep?=		/usr/bin/grep
 TOOLS_PLATFORM.egrep?=		/usr/bin/egrep
 TOOLS_PLATFORM.fgrep?=		/usr/bin/fgrep
@@ -61,12 +60,21 @@ TOOLS_PLATFORM.printf?=		/usr/bin/printf
 TOOLS_PLATFORM.touch?=		/usr/bin/touch
 TOOLS_PLATFORM.hostname?= /usr/bin/hostname
 
-TOOLS_PLATFORM.gzcat?=		/usr/local/bin/zcat
+.if exists(/usr/gnu/bin/patch)
+TOOLS_PLATFORM.patch?=		/usr/gnu/bin/patch
+.else
+TOOLS_PLATFORM.patch?=		/usr/bin/patch
+.endif
 
-# Temporary hack for configure scripts to use gar with gcc
+# Temporary hack to fool  configure scripts into using
+# gar and gnm with gcc
 TOOLS_PLATFORM.ar?=	/usr/gnu/bin/gar
+TOOLS_PLATFORM.nm?=	/usr/gnu/bin/gnm
 
 # Other tools if they exist
+.if exists(/usr/local/bin/zcat)
+TOOLS_PLATFORM.gzcat?=		/usr/local/bin/zcat
+.endif
 .if exists(/usr/local/bin/bash)
 TOOLS_PLATFORM.bash?=		/usr/local/bin/bash
 .endif
