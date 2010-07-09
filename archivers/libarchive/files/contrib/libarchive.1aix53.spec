@@ -126,7 +126,12 @@ rm -fr %buildroot
 * %{date} PLD Team <feedback@pld-linux.org>
 All persons listed below can be reached at <cvs_login>@pld-linux.org
 
-$Log: libarchive.spec,v $
+$Log: libarchive.1aix53.spec,v $
+Revision 1.4  2010/03/14 18:39:08  joerg
+Import libarchive-2.8.4:
+- Improved reliability of hash function detection
+- Fix issues on ancient FreeBSD, QNX, ancient NetBSD and Minix
+
 Release 1aix53  2006/12/12 rm1023@dcx.com
 - tweak for aix-5.3
 - added libarchive-0123457890.patch for "0123457890" error
