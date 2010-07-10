@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.756 2010/07/09 04:26:16 seb Exp $
+# $NetBSD: Makefile,v 1.757 2010/07/09 19:38:43 asau Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -462,6 +462,7 @@ SUBDIR+=	p5-Test-HTTP-Server-Simple
 SUBDIR+=	p5-Test-WWW-Declare
 SUBDIR+=	p5-Test-WWW-Mechanize
 SUBDIR+=	p5-Test-WWW-Mechanize-Catalyst
+SUBDIR+=	p5-Test-WWW-Mechanize-PSGI
 SUBDIR+=	p5-Twiggy
 SUBDIR+=	p5-URI
 SUBDIR+=	p5-URI-Escape-XS
