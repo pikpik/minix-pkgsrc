@@ -1,6 +1,6 @@
 $NetBSD: patch-ac,v 1.15 2007/12/22 00:23:58 joerg Exp $
 
---- configure.orig	2008-10-26 00:04:38.000000000 +0000
+--- configure.orig	Sun Oct 26 00:04:38 2008
 +++ configure
 @@ -2663,7 +2663,7 @@ if test "$cross_compiling" = yes ; then
    LDCONFIG=:
@@ -24,3 +24,12 @@ $NetBSD: patch-ac,v 1.15 2007/12/22 00:23:58 joerg Exp $
    ;;
  esac
  
+@@ -17100,6 +17095,8 @@ do
+ EOF
+ cat >>$CONFIG_STATUS <<EOF
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
+     echo "running $SHELL $0 " $ac_configure_args " --no-create --no-recursion"
+     exec $SHELL $0 $ac_configure_args --no-create --no-recursion ;;
+ EOF

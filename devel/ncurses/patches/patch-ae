@@ -1,6 +1,6 @@
 $NetBSD$
 
---- misc/Makefile.in.orig	2007-01-08 09:40:08.000000000 +0100
+--- misc/Makefile.in.orig	Sat Mar 31 15:54:17 2007
 +++ misc/Makefile.in
 @@ -66,7 +66,7 @@ ticfile		= $(ticdir).db
  source		= @TERMINFO_SRC@
