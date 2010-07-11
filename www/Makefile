@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.758 2010/07/10 06:58:43 seb Exp $
+# $NetBSD: Makefile,v 1.759 2010/07/11 07:08:36 seb Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -316,6 +316,7 @@ SUBDIR+=	p5-CatalystX-CRUD-View-Excel
 SUBDIR+=	p5-CatalystX-CRUD-YUI
 SUBDIR+=	p5-CatalystX-Component-Traits
 SUBDIR+=	p5-CatalystX-LeakChecker
+SUBDIR+=	p5-Continuity
 SUBDIR+=	p5-Corona
 SUBDIR+=	p5-Dancer
 SUBDIR+=	p5-Data-URIEncode
