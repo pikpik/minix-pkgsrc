@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1364 2010/07/11 14:28:59 seb Exp $
+# $NetBSD: Makefile,v 1.1365 2010/07/11 14:53:45 seb Exp $
 #
 
 COMMENT=	Development utilities
@@ -474,6 +474,7 @@ SUBDIR+=	p5-B-Hooks-Parser
 SUBDIR+=	p5-B-Keywords
 SUBDIR+=	p5-B-Utils
 SUBDIR+=	p5-BSD-Resource
+SUBDIR+=	p5-BackPAN-Index
 SUBDIR+=	p5-Bit-Vector
 SUBDIR+=	p5-CLASS
 SUBDIR+=	p5-CPAN
