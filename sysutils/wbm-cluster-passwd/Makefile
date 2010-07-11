@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 21:40:03 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2007/04/21 05:22:59 obache Exp $
 
 WBM_NAME=	cluster-passwd
 
 WBM_DEPEND_MODULES=	cluster-useradmin
 
 COMMENT=	Webmin module to change users' passwords within a Webmin cluster
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

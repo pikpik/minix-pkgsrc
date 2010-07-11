@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 04:02:54 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2007/04/21 05:23:01 obache Exp $
 
 WBM_NAME=	ipfilter
 
 WBM_DEPEND_MODULES+=	net
 
 COMMENT=	Webmin module for IPFilter configuration
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-extract:
 	cp ${FILESDIR}/ipfilter_config-netbsd ${WRKSRC}/${WBM_NAME}/config-netbsd

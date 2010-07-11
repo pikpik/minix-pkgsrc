@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2007/02/19 21:52:42 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2007/04/21 05:23:04 obache Exp $
 
 WBM_NAME=	postfix
 
 COMMENT=	Webmin module for Postfix mail server configuration
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

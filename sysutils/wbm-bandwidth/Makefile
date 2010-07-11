@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/05/16 15:39:59 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2007/04/21 05:22:58 obache Exp $
 
 WBM_NAME=	bandwidth
 
 WBM_DEPEND_MODULES=	net
 
 COMMENT=	Webmin module to view bandwidth usage
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"
