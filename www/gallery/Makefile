@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/16 23:05:30 pettai Exp $
+# $NetBSD: Makefile,v 1.2 2010/03/19 21:34:44 joerg Exp $
 #
 
 DISTNAME=	gallery-1.5.10
@@ -20,6 +20,8 @@ DEPENDS+=	${PHP_PKG_PREFIX}-gettext>=4.1.0:../../devel/php-gettext
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}
+
+USE_TOOLS+=	perl:run
 
 REPLACE_PERL=	po/remove_obsolete.pl po/transform_fuzzy.pl
 REPLACE_SH=	po/create_po_template.sh po/change_version.sh
