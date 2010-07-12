@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/09/13 18:17:17 he Exp $
+# $NetBSD: Makefile,v 1.8 2008/10/19 19:19:02 he Exp $
 #
 
 DISTNAME=		Apache-Reload-0.10
@@ -21,6 +21,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_PACKLIST=		auto/Apache/Reload/.packlist
 .else
 PERL5_PACKLIST=		auto/Apache2/Reload/.packlist
+.endif
+
+.if (${PKG_APACHE} == "apache13")
+.include "../../www/ap-perl/buildlink3.mk"
+.else
+.include "../../www/ap2-perl/buildlink3.mk"
 .endif
 
 .include "../../lang/perl5/module.mk"
