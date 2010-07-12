@@ -1,6 +1,7 @@
-$NetBSD$
+$NetBSD: patch-directory_c-sdk_ldap_include_portable.h,v 1.1 2010/07/12 11:57:00 tnn Exp $
 
 Add DragonFly support.
+https://bugzilla.mozilla.org/show_bug.cgi?id=577298
 
 --- directory/c-sdk/ldap/include/portable.h.orig	2006-10-03 20:43:40.000000000 +0000
 +++ directory/c-sdk/ldap/include/portable.h
