@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/01/27 14:45:11 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2010/05/15 07:25:32 adam Exp $
 
-DISTNAME=	exiv2-0.19
-PKGNAME=	exiv2-organize-0.19
-PKGREVISION=	1
+DISTNAME=	exiv2-0.20
+PKGNAME=	exiv2-organize-0.20
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.exiv2.org/
 
@@ -33,7 +32,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/contrib/organize/organize \
 	 ${DESTDIR}${PREFIX}/bin/exiv2-organize
 
-BUILDLINK_API_DEPENDS.exiv2+= exiv2>=0.18.1
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../devel/boost-headers/buildlink3.mk"
 .include "../../devel/boost-libs/buildlink3.mk"
