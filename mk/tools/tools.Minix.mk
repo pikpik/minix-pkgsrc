@@ -44,6 +44,7 @@ TOOLS_PLATFORM.strip?=		/usr/bin/strip
 TOOLS_PLATFORM.tail?=		/usr/bin/tail
 TOOLS_PLATFORM.tar?=		/usr/bin/tar
 TOOLS_PLATFORM.bsdtar?=		/usr/bin/bsdtar
+TOOLS_PLATFORM.fetch?=		/usr/bin/fetch
 TOOLS_PLATFORM.tee?=		/usr/bin/tee
 TOOLS_PLATFORM.test?=		/bin/test
 TOOLS_PLATFORM.tr?=		/usr/bin/tr
