@@ -103,7 +103,7 @@ TOOLS_PLATFORM.bison?=		/usr/local/bin/bison
 TOOLS_PLATFORM.bison-yacc?=	/usr/local/bin/bison -y
 .endif
 .if exists(/usr/local/bin/awk)
-TOOLS_PLATFORM.gawk?=		/usr/local/bin/awk
+TOOLS_PLATFORM.gawk?=		/usr/local/bin/gawk
 .endif
 .if exists(/usr/gnu/bin/m4)
 TOOLS_PLATFORM.gm4?=		/usr/gnu/bin/m4
