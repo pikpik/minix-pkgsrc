@@ -1,8 +1,8 @@
 $NetBSD$
 
---- hints/hpux.sh.orig	2007-12-18 11:47:07.000000000 +0100
+--- hints/hpux.sh.orig	2009-05-26 21:21:41.000000000 +0000
 +++ hints/hpux.sh
-@@ -376,7 +376,7 @@ case "$ccisgcc" in
+@@ -364,7 +364,7 @@ case "$ccisgcc" in
  	    *O[3456789]*) optimize=`echo "$optimize" | sed -e 's/O[3-9]/O2/'` ;;
  	    esac
  	#ld="$cc"
@@ -11,7 +11,7 @@ $NetBSD$
  	cccdlflags='-fPIC'
  	#lddlflags='-shared'
  	lddlflags='-b'
-@@ -434,7 +434,7 @@ case "$ccisgcc" in
+@@ -422,7 +422,7 @@ case "$ccisgcc" in
  	    toke_cflags="$toke_cflags;optimize=\"$opt\""
  	    regexec_cflags="optimize=\"$opt\""
  	    fi
@@ -20,3 +20,18 @@ $NetBSD$
  	cccdlflags='+Z'
  	lddlflags='-b +vnocompatwarnings'
  	;;
+@@ -688,3 +688,14 @@ case "$d_oldpthreads" in
+ 	d_strerror_r_proto='undef'
+ 	;;
+     esac
++
++cat > UU/pkgsrc.cbu <<'EOCBU'
++# This script UU/pkgsrc.cbu will get 'called-back' by Configure to set
++# linker options after all other call-back scripts have been invoked.
++ldflags="-R /usr/pkg//lib $ldflags"
++lddlflags="-R /usr/pkg//lib $lddlflags"
++EOCBU
++
++# Set pkgsrc defaults for library and header search paths.
++locincpth="/usr/pkg//include"
++loclibpth="/usr/pkg//lib"

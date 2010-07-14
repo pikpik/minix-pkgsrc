@@ -50,6 +50,12 @@ CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde
 MAKE_ENV+=		LC_ALL="C"
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	-Uusenm 
+CONFIGURE_ARGS+=	-Accflags="-DUSE_PERL_SBRK -DPERL_SBRK_VIA_MALLOC -D_MINIX -D_POSIX_SOURCE"
+CONFIGURE_ARGS+=	-Dnoextensions="IO/Compress Sys/Syslog DB_File"
+.endif
+
 TEST_TARGET=		test
 
 # Policy.sh generation
@@ -311,7 +317,7 @@ post-build:
 		-e "s,@PKGMANDIR@,"${PKGMANDIR:Q}",g"			\
 		${FILESDIR}/perllink.in > ${WRKDIR}/perllink.sh
 
-INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
+INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${PERL5_SCRIPTDIR} ${PERL5_MAN1DIR}
 PERL5_PACKLIST_DIR_cmd=	. ${WRKSRC}/config.sh;	echo $$installarchlib
 PERL5_PACKLIST_DIR=	${PERL5_PACKLIST_DIR_cmd:sh}
 PERL5_PACKLIST=		.packlist

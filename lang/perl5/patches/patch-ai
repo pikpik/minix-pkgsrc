@@ -1,8 +1,8 @@
 $NetBSD$
 
---- hints/solaris_2.sh.orig	2007-12-18 11:47:07.000000000 +0100
-+++ hints/solaris_2.sh	2009-05-02 10:14:48.292729716 +0200
-@@ -571,9 +571,9 @@
+--- hints/solaris_2.sh.orig	2009-02-12 22:58:12.000000000 +0000
++++ hints/solaris_2.sh
+@@ -571,9 +571,9 @@ EOM
  		lddlflags="$lddlflags -G -m64"
  		;;
  	    *)
@@ -15,3 +15,18 @@ $NetBSD$
  		echo "int main() { return(0); } " > try.c
  		tryworkshopcc="${cc:-cc} try.c -o try $ccflags"
  		if test "$processor" = sparc; then
+@@ -655,3 +655,14 @@ case "$cc" in
+   ;;
+ esac
+ 
++
++cat > UU/pkgsrc.cbu <<'EOCBU'
++# This script UU/pkgsrc.cbu will get 'called-back' by Configure to set
++# linker options after all other call-back scripts have been invoked.
++ldflags="-R /usr/pkg//lib $ldflags"
++lddlflags="-R /usr/pkg//lib $lddlflags"
++EOCBU
++
++# Set pkgsrc defaults for library and header search paths.
++locincpth="/usr/pkg//include"
++loclibpth="/usr/pkg//lib"
