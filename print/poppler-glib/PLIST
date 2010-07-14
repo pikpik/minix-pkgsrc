@@ -8,6 +8,8 @@ include/poppler/glib/poppler-enums.h
 include/poppler/glib/poppler-features.h
 include/poppler/glib/poppler-form-field.h
 include/poppler/glib/poppler-layer.h
+include/poppler/glib/poppler-media.h
+include/poppler/glib/poppler-movie.h
 include/poppler/glib/poppler-page.h
 include/poppler/glib/poppler.h
 lib/libpoppler-glib.la
@@ -20,7 +22,6 @@ share/gtk-doc/html/poppler/index.sgml
 share/gtk-doc/html/poppler/left.png
 share/gtk-doc/html/poppler/poppler-poppler-action.html
 share/gtk-doc/html/poppler/poppler-poppler-annot.html
-share/gtk-doc/html/poppler/poppler-poppler-attachment.html
 share/gtk-doc/html/poppler/poppler-poppler-document.html
 share/gtk-doc/html/poppler/poppler-poppler-enums.html
 share/gtk-doc/html/poppler/poppler-poppler-features.html
