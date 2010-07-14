@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2010/01/20 14:04:53 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2010/06/13 22:45:24 wiz Exp $
 #
 
-DISTNAME=		nautilus-sendto-1.1.5
-PKGREVISION=		5
+DISTNAME=		nautilus-sendto-2.28.4
 CATEGORIES=		sysutils gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/nautilus-sendto/1.1/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/nautilus-sendto/2.28/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
@@ -27,7 +26,6 @@ GNU_CONFIGURE=		yes
 .include "../../chat/pidgin/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../devel/libglade/buildlink3.mk"
 .include "../../mail/evolution-data-server/buildlink3.mk"
 .include "../../mail/evolution/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
