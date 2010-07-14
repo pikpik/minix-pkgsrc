@@ -16,7 +16,6 @@ TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
 TOOLS_PLATFORM.cp?=		/bin/cp 
 TOOLS_PLATFORM.cut?=		/usr/bin/cut
 TOOLS_PLATFORM.date?=		/bin/date
-TOOLS_PLATFORM.diff?=		/usr/bin/diff
 TOOLS_PLATFORM.dirname?=	/usr/bin/dirname
 TOOLS_PLATFORM.echo?=		/bin/echo
 TOOLS_PLATFORM.env?=		/usr/bin/env
@@ -41,10 +40,10 @@ TOOLS_PLATFORM.rmdir?=		/bin/rmdir
 TOOLS_PLATFORM.sed?=	/usr/bin/sed
 TOOLS_PLATFORM.sh?=		/bin/sh
 TOOLS_PLATFORM.sleep?=		/usr/bin/sleep
-TOOLS_PLATFORM.sort?=		/usr/bin/sort
 TOOLS_PLATFORM.strip?=		/usr/bin/strip
 TOOLS_PLATFORM.tail?=		/usr/bin/tail
 TOOLS_PLATFORM.tar?=		/usr/bin/tar
+TOOLS_PLATFORM.bsdtar?=		/usr/bin/bsdtar
 TOOLS_PLATFORM.tee?=		/usr/bin/tee
 TOOLS_PLATFORM.test?=		/bin/test
 TOOLS_PLATFORM.tr?=		/usr/bin/tr
@@ -60,10 +59,24 @@ TOOLS_PLATFORM.printf?=		/usr/bin/printf
 TOOLS_PLATFORM.touch?=		/usr/bin/touch
 TOOLS_PLATFORM.hostname?= /usr/bin/hostname
 
+# Gnu tools when the Minix tools are known to
+# not work in some cases
 .if exists(/usr/gnu/bin/patch)
 TOOLS_PLATFORM.patch?=		/usr/gnu/bin/patch
 .else
 TOOLS_PLATFORM.patch?=		/usr/bin/patch
+.endif
+
+.if exists(/usr/local/bin/diff)
+TOOLS_PLATFORM.diff?=		/usr/local/bin/diff
+.else
+TOOLS_PLATFORM.diff?=		/usr/bin/diff
+.endif
+
+.if exists(/usr/gnu/bin/sort)
+TOOLS_PLATFORM.sort?=		/usr/gnu/bin/sort
+.else
+TOOLS_PLATFORM.sort?=		/usr/bin/sort
 .endif
 
 # Temporary hack to fool  configure scripts into using
