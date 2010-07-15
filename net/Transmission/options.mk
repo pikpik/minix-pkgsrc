@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.13 2009/07/22 09:01:40 wiz Exp $
+# $NetBSD: options.mk,v 1.14 2009/08/10 12:14:50 tnn Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -30,6 +30,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST.qt
 MAKE_ENV+=		QTDIR=${QTDIR}
 INSTALL_ENV+=		INSTALL_ROOT=${DESTDIR}${PREFIX}
 . include "../../x11/qt4-tools/buildlink3.mk"
+. include "../../x11/qt4-qdbus/buildlink3.mk"
 .PHONY:		build-qt-client
 post-build:	build-qt-client
 build-qt-client:
