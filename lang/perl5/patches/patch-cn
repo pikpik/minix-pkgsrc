@@ -20,18 +20,3 @@ $NetBSD$
  	cccdlflags='+Z'
  	lddlflags='-b +vnocompatwarnings'
  	;;
-@@ -688,3 +688,14 @@ case "$d_oldpthreads" in
- 	d_strerror_r_proto='undef'
- 	;;
-     esac
-+
-+cat > UU/pkgsrc.cbu <<'EOCBU'
-+# This script UU/pkgsrc.cbu will get 'called-back' by Configure to set
-+# linker options after all other call-back scripts have been invoked.
-+ldflags="-R /usr/pkg//lib $ldflags"
-+lddlflags="-R /usr/pkg//lib $lddlflags"
-+EOCBU
-+
-+# Set pkgsrc defaults for library and header search paths.
-+locincpth="/usr/pkg//include"
-+loclibpth="/usr/pkg//lib"

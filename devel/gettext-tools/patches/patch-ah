@@ -13,15 +13,6 @@ $NetBSD$
  am_msgmerge_OBJECTS = msgmerge-msgmerge.$(OBJEXT) \
  	msgmerge-plural-count.$(OBJEXT)
  msgmerge_OBJECTS = $(am_msgmerge_OBJECTS)
-@@ -447,7 +445,7 @@ install_sh = @install_sh@
- libdir = @libdir@
- libexecdir = @libexecdir@
- lispdir = @lispdir@
--localedir = $(datadir)/locale
-+localedir = /usr/pkg//share/locale
- localstatedir = @localstatedir@
- mandir = @mandir@
- mkdir_p = @mkdir_p@
 @@ -591,7 +589,7 @@ urlget_SOURCES = urlget.c
  # use iconv().
  libgettextsrc_la_LDFLAGS = \

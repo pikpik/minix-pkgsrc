@@ -16,18 +16,3 @@ Pkgsrc control.
  # If you have glibc, then report the version for ./myconfig bug reporting.
  # (Configure doesn't need to know the specific version since it just uses
  # gcc to load the library for all tests.)
-@@ -436,3 +433,14 @@ case "$libdb_needs_pthread" in
-     libswanted="$libswanted pthread"
-     ;;
- esac
-+
-+cat > UU/pkgsrc.cbu <<'EOCBU'
-+# This script UU/pkgsrc.cbu will get 'called-back' by Configure to set
-+# linker options after all other call-back scripts have been invoked.
-+ldflags="-R /usr/pkg//lib $ldflags"
-+lddlflags="-R /usr/pkg//lib $lddlflags"
-+EOCBU
-+
-+# Set pkgsrc defaults for library and header search paths.
-+locincpth="/usr/pkg//include"
-+loclibpth="/usr/pkg//lib"

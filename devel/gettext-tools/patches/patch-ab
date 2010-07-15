@@ -2,15 +2,6 @@ $NetBSD$
 
 --- gettext-tools/misc/Makefile.in.orig	Wed Jun 21 12:30:05 2006
 +++ gettext-tools/misc/Makefile.in
-@@ -314,7 +314,7 @@ install_sh = @install_sh@
- libdir = @libdir@
- libexecdir = @libexecdir@
- lispdir = @lispdir@
--localedir = @localedir@
-+localedir = /usr/pkg//share/locale
- localstatedir = @localstatedir@
- mandir = @mandir@
- mkdir_p = @mkdir_p@
 @@ -576,7 +576,7 @@ info: info-am
  
  info-am:

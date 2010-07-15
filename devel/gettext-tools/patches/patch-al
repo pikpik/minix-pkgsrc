@@ -2,15 +2,6 @@ $NetBSD$
 
 --- gettext-tools/po/Makefile.in.in.orig	Mon Apr 11 18:49:00 2005
 +++ gettext-tools/po/Makefile.in.in
-@@ -24,7 +24,7 @@ VPATH = @srcdir@
- prefix = @prefix@
- exec_prefix = @exec_prefix@
- datadir = @datadir@
--localedir = $(datadir)/locale
-+localedir = /usr/pkg//share/locale
- gettextsrcdir = $(datadir)/gettext/po
- 
- INSTALL = @INSTALL@
 @@ -154,7 +154,7 @@ $(POFILES): $(srcdir)/$(DOMAIN).pot
  	fi
  

@@ -15,18 +15,3 @@ $NetBSD$
  		echo "int main() { return(0); } " > try.c
  		tryworkshopcc="${cc:-cc} try.c -o try $ccflags"
  		if test "$processor" = sparc; then
-@@ -655,3 +655,14 @@ case "$cc" in
-   ;;
- esac
- 
-+
-+cat > UU/pkgsrc.cbu <<'EOCBU'
-+# This script UU/pkgsrc.cbu will get 'called-back' by Configure to set
-+# linker options after all other call-back scripts have been invoked.
-+ldflags="-R /usr/pkg//lib $ldflags"
-+lddlflags="-R /usr/pkg//lib $lddlflags"
-+EOCBU
-+
-+# Set pkgsrc defaults for library and header search paths.
-+locincpth="/usr/pkg//include"
-+loclibpth="/usr/pkg//lib"

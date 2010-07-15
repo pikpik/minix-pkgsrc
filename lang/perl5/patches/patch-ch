@@ -11,18 +11,3 @@ $NetBSD$
  		      ;;
  		  esac
  		  # -msym: If using a sufficiently recent /sbin/loader,
-@@ -675,3 +675,14 @@ unset _DEC_cc_style
- #	  for the optimizer.
- #
- 
-+
-+cat > UU/pkgsrc.cbu <<'EOCBU'
-+# This script UU/pkgsrc.cbu will get 'called-back' by Configure to set
-+# linker options after all other call-back scripts have been invoked.
-+ldflags="-R /usr/pkg//lib $ldflags"
-+lddlflags="-R /usr/pkg//lib $lddlflags"
-+EOCBU
-+
-+# Set pkgsrc defaults for library and header search paths.
-+locincpth="/usr/pkg//include"
-+loclibpth="/usr/pkg//lib"
