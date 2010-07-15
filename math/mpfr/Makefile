@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2010/01/15 14:04:36 asau Exp $
+# $NetBSD: Makefile,v 1.16 2010/03/24 19:43:26 asau Exp $
 #
 
-DISTNAME=		mpfr-2.4.2
+DISTNAME=		mpfr-3.0.0
 PKGNAME=		${DISTNAME}.3	# append patch level
-PKGREVISION=		1
 CATEGORIES=		math
 MASTER_SITES=		http://www.mpfr.org/mpfr-current/
 
@@ -15,7 +14,7 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.mpfr.org/
 COMMENT=		GMP-based library for multiple-precision floating-point computations
-LICENSE=		gnu-lgpl-v2.1
+LICENSE=		gnu-lgpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
