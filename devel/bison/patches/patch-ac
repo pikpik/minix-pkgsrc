@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- lib/wctype.in.h.orig	2010-07-15 17:05:42.000000000 +0000
++++ lib/wctype.in.h
+@@ -94,7 +94,10 @@ extern "C" {
+ # undef towupper
+ 
+ /* Linux libc5 has <wctype.h> and the functions but they are broken.  */
+-# if @REPLACE_ISWCNTRL@
++/* Minix has wctype.h and the prototypes for the functions, but not the 
++ * functions themselves 
++ */
++# if @REPLACE_ISWCNTRL@ || defined(__minix)
+ #  define iswalnum rpl_iswalnum
+ #  define iswalpha rpl_iswalpha
+ #  define iswblank rpl_iswblank

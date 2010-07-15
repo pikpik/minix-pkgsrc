@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- lib/spawni.c.orig	2010-07-15 16:44:44.000000000 +0000
++++ lib/spawni.c
+@@ -223,10 +223,13 @@ __spawni (pid_t *pid, const char *file,
+     }
+ #endif
+ 
++#ifndef __minix
++  /* Bison never pases POSIX+SPAWN_SETPGROUP, so this is fine */
+   /* Set the process group ID.  */
+   if ((flags & POSIX_SPAWN_SETPGROUP) != 0
+       && setpgid (0, attrp->_pgrp) != 0)
+     _exit (SPAWN_ERROR);
++#endif
+ 
+   /* Set the effective user and group IDs.  */
+   if ((flags & POSIX_SPAWN_RESETIDS) != 0
