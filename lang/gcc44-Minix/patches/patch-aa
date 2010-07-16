@@ -50,7 +50,7 @@ $NetBSD: patch-aa,v 1.1.1.1 2009/09/18 11:24:50 dmcmahill Exp $
  	tmake_file="${tmake_file} i386/t-i386elf t-svr4"
  	;;
 +i[34567]86-*-minix*)
-+    tm_file="${tm_file} i386/bsd.h i386/gas.h i386/gstabs.h i386/minix.h"
++    tm_file="${tm_file} i386/minix.h i386/bsd.h i386/gas.h i386/gstabs.h"
 +    tmake_file=i386/t-minix
 +    use_fixproto=yes
 +    use_collect2=yes
