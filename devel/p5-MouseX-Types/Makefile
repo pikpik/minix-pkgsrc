@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2009/11/08 16:53:43 seb Exp $
+# $NetBSD: Makefile,v 1.4 2010/01/17 11:13:27 seb Exp $
 
-DISTNAME=	MouseX-Types-0.04
+DISTNAME=	MouseX-Types-0.05
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	devel perl5
