@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/11/17 12:34:47 shannonjr Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2009/03/20 19:25:18 joerg Exp $
 
 BUILDLINK_TREE+=	libassuan
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	libassuan
 LIBASSUAN_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libassuan+=	libassuan>=1.0.0
+BUILDLINK_API_DEPENDS.libassuan+=	libassuan<2.0.0
 BUILDLINK_ABI_DEPENDS.libassuan?=	libassuan>=1.0.0
 BUILDLINK_PKGSRCDIR.libassuan?=	../../security/libassuan
 
