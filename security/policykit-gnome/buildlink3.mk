@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2008/11/22 21:21:48 jmcneill Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:25:22 joerg Exp $
 
 BUILDLINK_TREE+=	policykit-gnome
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	policykit-gnome
 POLICYKIT_GNOME_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.policykit-gnome+=	policykit-gnome>=0.9.2
+BUILDLINK_ABI_DEPENDS.policykit-gnome+=	policykit-gnome>=0.9.2nb2
 BUILDLINK_PKGSRCDIR.policykit-gnome?=	../../security/policykit-gnome
 
 .include "../../security/policykit/buildlink3.mk"
