@@ -1,6 +1,6 @@
 $NetBSD$
 
---- info/filesys.h.orig	Sat Jul 10 19:04:10 2010
+--- info/filesys.h.orig	2007-07-01 21:20:29.000000000 +0000
 +++ info/filesys.h
 @@ -78,7 +78,7 @@ extern int is_dir_name (char *filename);
  

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- configure.orig	Sat Jul 10 19:02:40 2010
+--- configure.orig	2008-04-18 07:34:58.000000000 +0000
 +++ configure
 @@ -15947,7 +15947,7 @@ fi
  # rather ncurses.  So we check for it.
@@ -11,3 +11,12 @@ $NetBSD$
  for termlib in ${TERMLIB_VARIANTS}; do
    as_ac_Lib=`$as_echo "ac_cv_lib_${termlib}''_tgetent" | $as_tr_sh`
  { $as_echo "$as_me:$LINENO: checking for tgetent in -l${termlib}" >&5
+@@ -19205,6 +19205,8 @@ do
+   case $ac_option in
+   # Handling of the options.
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
+     ac_cs_recheck=: ;;
+   --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
+     $as_echo "$ac_cs_version"; exit ;;
