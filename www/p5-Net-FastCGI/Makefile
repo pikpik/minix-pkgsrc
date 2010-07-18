@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/04/10 19:49:17 seb Exp $
 
-DISTNAME=	Net-FastCGI-0.11
+DISTNAME=	Net-FastCGI-0.12
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	www perl5 net
