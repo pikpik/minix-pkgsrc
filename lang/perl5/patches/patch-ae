@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- iperlsys.h.orig	2010-07-18 11:39:33.000000000 +0000
++++ iperlsys.h
+@@ -50,6 +50,11 @@
+ */
+ #include "perlio.h"
+ 
++#ifdef __minix
++/* Minix does not support siginfo, but pretends to */
++#undef SA_SIGINFO
++#endif
++
+ #ifndef Sighandler_t
+ #  if defined(HAS_SIGACTION) && defined(SA_SIGINFO)
+ typedef Signal_t (*Sighandler_t) (int, siginfo_t*, void*);
