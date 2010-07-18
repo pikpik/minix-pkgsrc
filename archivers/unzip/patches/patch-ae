@@ -1,14 +1,19 @@
 $NetBSD$
 
---- unix/unix.c.orig	Fri Jul  9 15:16:58 2010
+--- unix/unix.c.orig	2010-07-18 01:43:48.000000000 +0000
 +++ unix/unix.c
-@@ -49,6 +49,9 @@
- #ifdef __minix
- /* For _POSIX_VERSION */
- #include <unistd.h>
+@@ -46,6 +46,14 @@
+ #  endif
+ #endif
+ 
++#ifdef __minix
++/* For _POSIX_VERSION */
++#include <unistd.h>
 +
 +#define lchown chown
 +#define lchmod chmod
- #endif
- 
++#endif
++
  #ifdef _POSIX_VERSION
+ #  ifndef DIRENT
+ #    define DIRENT

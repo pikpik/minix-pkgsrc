@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ttyio.c.orig	Fri Jul  9 15:24:05 2010
+--- ttyio.c.orig	2008-01-05 20:24:16.000000000 +0000
 +++ ttyio.c
 @@ -54,6 +54,11 @@
  #  define HAVE_TERMIOS_H
