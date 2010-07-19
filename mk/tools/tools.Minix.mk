@@ -59,14 +59,10 @@ TOOLS_PLATFORM.fgrep?=		/usr/bin/fgrep
 TOOLS_PLATFORM.printf?=		/usr/bin/printf
 TOOLS_PLATFORM.touch?=		/usr/bin/touch
 TOOLS_PLATFORM.hostname?= /usr/bin/hostname
+TOOLS_PLATFORM.patch?=		/usr/bin/patch
 
 # Gnu tools when the Minix tools are known to
 # not work in some cases
-.if exists(/usr/gnu/bin/patch)
-TOOLS_PLATFORM.patch?=		/usr/gnu/bin/patch
-.else
-TOOLS_PLATFORM.patch?=		/usr/bin/patch
-.endif
 
 .if exists(/usr/local/bin/diff)
 TOOLS_PLATFORM.diff?=		/usr/local/bin/diff
