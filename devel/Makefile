@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1369 2010/07/15 17:44:45 drochner Exp $
+# $NetBSD: Makefile,v 1.1370 2010/07/19 11:15:05 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -1127,6 +1127,7 @@ SUBDIR+=	py-generate
 SUBDIR+=	py-gobject
 SUBDIR+=	py-gobject-shared
 SUBDIR+=	py-idle
+SUBDIR+=	py-jersey
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
 SUBDIR+=	py-newt

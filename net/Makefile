@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.836 2010/07/09 19:37:11 asau Exp $
+# $NetBSD: Makefile,v 1.837 2010/07/14 04:56:04 manu Exp $
 #
 
 COMMENT=	Networking tools
@@ -457,6 +457,7 @@ SUBDIR+=	py-libdnet
 SUBDIR+=	py-libpcap
 SUBDIR+=	py-medusa
 SUBDIR+=	py-pcap
+SUBDIR+=	py-s3cmd
 SUBDIR+=	py-soaplib
 SUBDIR+=	py-soappy
 SUBDIR+=	py-spreadmodule
