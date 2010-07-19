@@ -102,6 +102,8 @@ CONFIGURE_ARGS+=	--enable-threads=posix
 CONFIGURE_ARGS+=	--with-gmp=${BUILDLINK_PREFIX.gmp}
 CONFIGURE_ARGS+=	--with-mpfr=${BUILDLINK_PREFIX.mpfr}
 
+.info "=-=-=- ${CONFIGURE_ARGS}"
+
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL}
 
 # ${WRKSRC}/gcc-4.4.1/libjava/contrib/aotcompile.py.in stores the path to
