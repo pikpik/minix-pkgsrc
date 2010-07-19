@@ -18,7 +18,7 @@ NOT_FOR_PLATFORM=	Darwin-*-* Interix-*-*
 USE_PKGLOCALEDIR=	yes
 REPLACE_LOCALEDIR_PATTERNS+=	Make-in
 
-USE_TOOLS+=		makeinfo
+USE_TOOLS+=		makeinfo perl
 TEXINFO_REQD=		4.0
 MAKEFLAGS+=		TEXINFO_LOCALE=no
 
