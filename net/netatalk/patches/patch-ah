@@ -1,13 +1,13 @@
-$NetBSD: patch-ah,v 1.5 2009/06/09 13:57:56 taca Exp $
+$NetBSD$
 
---- config/Makefile.in.orig	2009-04-25 01:46:56.000000000 +0900
+--- config/Makefile.in.orig	2010-02-07 18:59:32.000000000 +0000
 +++ config/Makefile.in
-@@ -413,13 +413,14 @@ uninstall-am: uninstall-local
- #
- # install configuration files
- #
-+egconfdir = @prefix@/share/examples/netatalk
+@@ -668,12 +668,14 @@ uninstall-local:
+ 		rm -f $(DESTDIR)$(pkgconfdir)/$$f; \
+ 	done
  
++egconfdir = @prefix@/share/examples/netatalk
++
  install-config-files: $(CONFFILES) $(GENFILES)
 -	$(mkinstalldirs) $(DESTDIR)$(pkgconfdir)
 +	$(mkinstalldirs) $(DESTDIR)$(egconfdir)
