@@ -269,12 +269,14 @@ LOWER_OPSYS?=		solaris
 LOWER_OPSYS_VERSUFFIX=	2
 
 .elif ${OPSYS} == "Minix"
-OS_VERSION!= echo `${UNAME} -r`
+OS_VERSION!= echo `${UNAME} -v`
 LOWER_OS_VERSION= OS_VERSION
-#LOWER_ARCH!=		${UNAME} -m
-LOWER_ARCH=	i386
-# Set this unconditionally for now as Minix make sets it wrong
+OS_RELEASE!= echo `${UNAME} -r`
+LOWER_ARCH!=		${UNAME} -p
+MACHINE_ARCH?=		${LOWER_ARCH}
+.if ${MACHINE_ARCH} == "unknown"
 MACHINE_ARCH=		${LOWER_ARCH}
+.endif
 LOWER_VENDOR?=pc
 LOWER_OPSYS:=		${OPSYS:tl}
 USE_TOOLS+=		ar
