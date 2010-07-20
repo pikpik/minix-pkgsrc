@@ -34,7 +34,6 @@ NOT_FOR_PLATFORM=	Interix-*-*
 UNLIMIT_RESOURCES+=	datasize
 
 .include "../../mk/bsd.prefs.mk"
-.include "options.mk"
 
 # Determine whether to use binutils
 
@@ -88,11 +87,6 @@ LANGS+= java
 .if !empty(BUILD_OBJC:M[Yy][Ee][Ss])
 LANGS+= objc
 .endif
-
-.include "../../devel/gmp/buildlink3.mk"
-.include "../../devel/zlib/buildlink3.mk"
-.include "../../devel/binutils/buildlink3.mk"
-.include "../../math/mpfr/buildlink3.mk"
 
 CONFIGURE_ARGS+=	--prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
@@ -170,5 +164,9 @@ do-install:
 GENERATE_PLIST+=                                                        \
 	cd ${DESTDIR}${PREFIX} && ${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print \
 	| ${SORT} ;
+
+.include "../../devel/gmp/buildlink3.mk"
+.include "../../devel/binutils/buildlink3.mk"
+.include "../../math/mpfr/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
