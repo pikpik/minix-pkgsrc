@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.79 2010/03/09 22:52:56 hubertf Exp $
+# $NetBSD: Makefile,v 1.80 2010/05/11 04:39:54 adam Exp $
 
-DISTNAME=	net-snmp-5.4.2.1
-PKGREVISION=	4
+DISTNAME=	net-snmp-5.4.3
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=net-snmp/}
 
@@ -16,8 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-
-MAKE_JOBS_SAFE=		NO
+MAKE_JOBS_SAFE=		no
 
 MAKE_ENV+=	OPSYS=${OPSYS}
 
