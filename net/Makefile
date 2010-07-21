@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.837 2010/07/14 04:56:04 manu Exp $
+# $NetBSD: Makefile,v 1.838 2010/07/19 17:04:54 ver Exp $
 #
 
 COMMENT=	Networking tools
@@ -481,6 +481,7 @@ SUBDIR+=	rootprobe
 SUBDIR+=	rp-l2tp
 SUBDIR+=	rp-pppoe
 SUBDIR+=	rsync
+SUBDIR+=	rtmpdump
 SUBDIR+=	rtorrent
 SUBDIR+=	ruby-amqp
 SUBDIR+=	ruby-dnsruby
