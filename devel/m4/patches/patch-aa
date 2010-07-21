@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/isnan.c.orig	2010-03-24 21:31:20.000000000 +0000
+--- lib/isnan.c.orig	Thu Jan 28 13:04:06 2010
 +++ lib/isnan.c
 @@ -117,7 +117,7 @@ FUNC (DOUBLE x)
  # else

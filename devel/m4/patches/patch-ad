@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/freading.c.orig	Thu Jan 28 13:04:06 2010
++++ lib/freading.c
+@@ -39,6 +39,8 @@ freading (FILE *fp)
+   return (fp_->_flags & __SRD) != 0;
+ #elif defined __EMX__               /* emx+gcc */
+   return (fp->_flags & _IOREAD) != 0;
++#elif defined __minix
++  return (fp->_flags & _IOREAD) != 0;
+ #elif defined _IOERR                /* AIX, HP-UX, IRIX, OSF/1, Solaris, OpenServer, mingw */
+   return (fp->_flag & _IOREAD) != 0;
+ #elif defined __UCLIBC__            /* uClibc */

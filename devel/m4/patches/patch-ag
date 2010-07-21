@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/wctype.in.h.orig	Wed Jul 21 07:46:43 2010
++++ lib/wctype.in.h
+@@ -92,7 +92,7 @@ extern "C" {
+ # undef towupper
+ 
+ /* Linux libc5 has <wctype.h> and the functions but they are broken.  */
+-# if @REPLACE_ISWCNTRL@
++# if @REPLACE_ISWCNTRL@ || defined(__minix)
+ #  define iswalnum rpl_iswalnum
+ #  define iswalpha rpl_iswalpha
+ #  define iswblank rpl_iswblank
