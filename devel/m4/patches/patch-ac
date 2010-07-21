@@ -1,20 +1,23 @@
 $NetBSD$
 
---- lib/freadahead.c.orig	Wed Jul 21 07:23:02 2010
+--- lib/freadahead.c.orig	Wed Jul 21 00:13:45 2010
 +++ lib/freadahead.c
-@@ -49,9 +49,15 @@ freadahead (FILE *fp)
-      (fp->_ungetc_count == 0 ? fp->_rcount : fp->_ungetc_count - fp->_rcount) */
-   return (fp->_rcount > 0 ? fp->_rcount : fp->_ungetc_count - fp->_rcount);
- #elif defined _IOERR                /* AIX, HP-UX, IRIX, OSF/1, Solaris, OpenServer, mingw */
+@@ -25,6 +25,11 @@
+ size_t
+ freadahead (FILE *fp)
+ {
 +#ifdef __minix
-+  if((fp_->_flags & _IOWRITE) != 0)
-+	  return 0;
-+  return fp_->_count;
++	if(fp->_flags & _IOFIFO)
++		return 0;
++	return fp->_count;
 +#else
-   if ((fp_->_flag & _IOWRT) != 0)
+ #if defined _IO_ftrylockfile || __GNU_LIBRARY__ == 1 /* GNU libc, BeOS, Haiku, Linux libc5 */
+   if (fp->_IO_write_ptr > fp->_IO_write_base)
      return 0;
-   return fp_->_cnt;
+@@ -81,5 +86,6 @@ freadahead (FILE *fp)
+   return 0;
+ #else
+  #error "Please port gnulib freadahead.c to your platform! Look at the definition of fflush, fread, ungetc on your system, then report this to bug-gnulib."
 +#endif
- #elif defined __UCLIBC__            /* uClibc */
- # ifdef __STDIO_BUFFERS
-   if (fp->__modeflags & __FLAG_WRITING)
+ #endif
+ }

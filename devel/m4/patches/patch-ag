@@ -1,13 +1,14 @@
 $NetBSD$
 
---- lib/wctype.in.h.orig	Wed Jul 21 07:46:43 2010
-+++ lib/wctype.in.h
-@@ -92,7 +92,7 @@ extern "C" {
- # undef towupper
+--- lib/spawni.c.orig	Wed Jul 21 00:13:45 2010
++++ lib/spawni.c
+@@ -224,8 +224,7 @@ __spawni (pid_t *pid, const char *file,
+ #endif
  
- /* Linux libc5 has <wctype.h> and the functions but they are broken.  */
--# if @REPLACE_ISWCNTRL@
-+# if @REPLACE_ISWCNTRL@ || defined(__minix)
- #  define iswalnum rpl_iswalnum
- #  define iswalpha rpl_iswalpha
- #  define iswblank rpl_iswblank
+   /* Set the process group ID.  */
+-  if ((flags & POSIX_SPAWN_SETPGROUP) != 0
+-      && setpgid (0, attrp->_pgrp) != 0)
++  if ((flags & POSIX_SPAWN_SETPGROUP) != 0)
+     _exit (SPAWN_ERROR);
+ 
+   /* Set the effective user and group IDs.  */

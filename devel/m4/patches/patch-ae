@@ -1,23 +1,23 @@
 $NetBSD$
 
---- lib/fseeko.c.orig	Wed Jul 21 07:42:38 2010
+--- lib/fseeko.c.orig	Wed Jul 21 00:13:45 2010
 +++ lib/fseeko.c
-@@ -70,6 +70,9 @@ rpl_fseeko (FILE *fp, off_t offset, int whence)
-       && fp->_rcount == 0
-       && fp->_wcount == 0
-       && fp->_ungetc_count == 0)
-+#elif defined __minix
-+  if (fp_->_ptr == fp_->_buf
-+      && (fp_->_ptr == NULL || fp_->_count == 0))
- #elif defined _IOERR                /* AIX, HP-UX, IRIX, OSF/1, Solaris, OpenServer, mingw */
-   if (fp_->_ptr == fp_->_base
-       && (fp_->_ptr == NULL || fp_->_cnt == 0))
-@@ -131,6 +134,8 @@ rpl_fseeko (FILE *fp, off_t offset, int whence)
-       fp_->_flags |= __SOFF;
-       fp_->_flags &= ~__SEOF;
- #elif defined __EMX__               /* emx+gcc */
-+      fp->_flags &= ~_IOEOF;
-+#elif defined __minix
-       fp->_flags &= ~_IOEOF;
- #elif defined _IOERR                /* AIX, HP-UX, IRIX, OSF/1, Solaris, OpenServer, mingw */
-       fp->_flag &= ~_IOEOF;
+@@ -31,6 +31,7 @@
+ # define fseeko fseek
+ #endif
+ 
++#if 0
+ int
+ rpl_fseeko (FILE *fp, off_t offset, int whence)
+ {
+@@ -145,3 +146,10 @@ rpl_fseeko (FILE *fp, off_t offset, int whence)
+     }
+   return fseeko (fp, offset, whence);
+ }
++#else
++int
++rpl_fseeko (FILE *fp, off_t offset, int whence)
++{
++	return fseek(fp, offset, whence);
++}
++#endif
