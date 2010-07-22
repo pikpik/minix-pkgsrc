@@ -1,49 +1,20 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.25 2010/01/17 12:02:43 wiz Exp $
+#
 
-DISTNAME=	pycrypt100
-PKGNAME=	py-crypto-1.0.0
-CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.cwi.nl/pub/pct/
-EXTRACT_SUFX=	.tgz
+DISTNAME=	pycrypto-2.1.0
+PKGNAME=	${PYPKGPREFIX}-crypto-2.1.0
+CATEGORIES=	security python
+MASTER_SITES=	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/
 
-MAINTAINER=	tsarna@netbsd.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://www.dlitz.net/software/pycrypto/
+COMMENT=	Cryptographic and hash functions for Python
 
-DEPENDS+=	python-1.5.1:../../lang/python
+PKG_DESTDIR_SUPPORT=	user-destdir
 
-MIRROR_DISTFILE=no
-RESTRICTED=	crypto
+PYDISTUTILSPKG=	yes
 
-WRKSRC=		${WRKDIR}/Extensions/Crypto
-MAKE_FLAGS=	'OPT=${CFLAGS}'
-
-INFO_FILES=	pct.info
-
-.if ${MACHINE_ARCH} == "powerpc" || ${MACHINE_ARCH} == "mips" || ${MACHINE_ARCH} == "alpha"
-IGNORE="Needs dynamic loading"
-.endif
-
-post-extract:
-	@(cd ${WRKDIR}; tar xf pycrypt.tar)
-
-do-configure:
-	@(cd ${WRKSRC}; ${PREFIX}/bin/python buildkit)
-	${CP} ${PREFIX}/lib/python1.5/config/Makefile.pre.in ${WRKSRC}/src
-	${CP} ${WRKSRC}/Setup.in ${WRKSRC}/src
-	@(cd ${WRKSRC}/src; make -f Makefile.pre.in boot)
-
-do-build:
-	@(cd ${WRKSRC}/src; make)
-	${PREFIX}/bin/python ${PREFIX}/lib/python1.5/compileall.py \
-		${WRKSRC}/Lib
-	${PREFIX}/bin/python -O ${PREFIX}/lib/python1.5/compileall.py \
-		${WRKSRC}/Lib
-
-do-install:
-	(cd ${WRKSRC}/Lib ; ${INSTALL_DATA} *.py *.pyc *.pyo \
-		${PREFIX}/lib/python1.5/site-packages)
-	(cd ${WRKSRC}/src ; ${INSTALL_DATA} *.so \
-		${PREFIX}/lib/python1.5/site-packages)
-	(cd ${WRKSRC}/Doc ; ${INSTALL_MAN} *info* \
-		${PREFIX}/info)
-
+.include "../../devel/gmp/buildlink3.mk"
+.include "../../lang/python/extension.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
