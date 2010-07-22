@@ -1,0 +1,25 @@
+$NetBSD$
+
+--- sqlite3.c.orig	Thu Jul 22 17:18:14 2010
++++ sqlite3.c
+@@ -22471,7 +22471,9 @@ static int sqliteErrorFromPosixError(int posixError, i
+   case ENODEV:
+   case ENXIO:
+   case ENOENT:
++#ifdef ESTALE
+   case ESTALE:
++#endif
+   case ENOSYS:
+     /* these should force the client to close the file and reconnect */
+     
+@@ -23921,7 +23923,9 @@ static int dotlockLock(sqlite3_file *id, int locktype)
+   */
+   if( pFile->locktype > NO_LOCK ){
+     pFile->locktype = locktype;
+-#if !OS_VXWORKS
++#if defined(__minix)
++    utime(zLockFile, NULL);
++#elif !OS_VXWORKS
+     /* Always update the timestamp on the old file */
+     utimes(zLockFile, NULL);
+ #endif
