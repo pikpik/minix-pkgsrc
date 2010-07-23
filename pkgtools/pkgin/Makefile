@@ -47,7 +47,7 @@ do-install:
 .include "../../mk/bsd.prefs.mk"
 
 # libfetch has no builtin.mk and is included in NetBSD>=5
-.if ${OPSYS} != "NetBSD" || \
+.if (${OPSYS} != "Minix" && ${OPSYS} != "NetBSD") || \
 	(${OPSYS} == "NetBSD" && !empty(OS_VERSION:M[0-4].*))
 .	include "../../net/libfetch/buildlink3.mk"
 .endif

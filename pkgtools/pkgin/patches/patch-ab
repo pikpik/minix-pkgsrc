@@ -1,0 +1,48 @@
+$NetBSD$
+
+--- Makefile.in.orig	Sat Jan 23 16:10:54 2010
++++ Makefile.in
+@@ -19,7 +19,7 @@ CC=		@CC@
+ 
+ LOCALBASE?=		@prefix@
+ PKG_SYSCONFDIR?=	${LOCALBASE}/etc
+-VARBASE?=		/var
++VARBASE?=		/usr/var
+ PKG_DBDIR?=		${VARBASE}/db/pkg
+ 
+ CPPFLAGS+=	-DLOCALBASE=\"${LOCALBASE}\" 		\
+@@ -30,7 +30,11 @@ OPSYS!=		uname
+ OS_VER!=	uname -r
+ OS_ARCH!=	uname -p
+ 
++.if ${OPSYS} == "Minix"
++PKGIN_VERSION=	"${VERSION}-for-${OPSYS}-${OS_VER}-${OS_ARCH}"
++.else
+ PKGIN_VERSION=	"${VERSION} for ${OPSYS}-${OS_VER} ${OS_ARCH}"
++.endif
+ 
+ CPPFLAGS+=	-DPKGIN_VERSION=\"${PKGIN_VERSION}\"
+ 
+@@ -53,6 +57,9 @@ PKGIN_DB=	${VARBASE}/db/pkgin
+ WARNS=	2
+ PKGTOOLS?=	/usr/sbin
+ CPPFLAGS+=	-DNETBSD
++.elif ${OPSYS} == "Minix"
++WARNS=	2
++PKGTOOLS?=	/usr/sbin
+ .else
+ PKGTOOLS?=	${LOCALBASE}/sbin
+ .endif
+@@ -66,7 +73,11 @@ CPPFLAGS+=	-I${LOCALBASE}/include -Iexternal -I.
+ COPTS.plist.c+=	-Wno-pointer-sign
+ 
+ LDADD+=		-L${LOCALBASE}/lib @RPATH@,${LOCALBASE}/lib	\
+-		-lbz2 -lz -ltermcap -larchive @LIBS@
++		-lbz2 -lz -larchive @LIBS@
++
++.if ${OPSYS} != "Minix"
++LDADD+=	-ltermcap
++.endif
+ 
+ pkgindb_create.h:
+ 	@SEDCMD=@SED@ ./mkpkgindb.sh > pkgindb_create.h

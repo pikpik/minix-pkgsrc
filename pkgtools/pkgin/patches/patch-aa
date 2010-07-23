@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tools.h.orig	2010-01-23 16:10:54.000000000 +0000
+--- tools.h.orig	Sat Jan 23 16:10:54 2010
 +++ tools.h
-@@ -70,7 +70,7 @@
+@@ -70,12 +70,16 @@
  #include <sys/utsname.h>
  #endif
  
@@ -11,3 +11,12 @@ $NetBSD$
  #include <nbcompat.h>
  #include <nbcompat/string.h>
  #endif
+ 
++#ifdef LINE_MAX
+ #define MAXLEN LINE_MAX
++#else
++#define MAXLEN 1024
++#endif
+ #define MIDLEN 256
+ #define SMLLEN 32
+ #define D_WARN 5
