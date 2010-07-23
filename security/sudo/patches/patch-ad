@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- parse.c.orig	Fri Apr  9 10:12:02 2010
++++ parse.c
+@@ -53,7 +53,7 @@
+ 
+ /* sudoers nsswitch routines */
+ struct sudo_nss sudo_nss_file = {
+-    &sudo_nss_file,
++    NULL,
+     NULL,
+     sudo_file_open,
+     sudo_file_close,
