@@ -2,15 +2,6 @@ $NetBSD$
 
 --- Makefile.in.orig	Sat Jan 23 16:10:54 2010
 +++ Makefile.in
-@@ -19,7 +19,7 @@ CC=		@CC@
- 
- LOCALBASE?=		@prefix@
- PKG_SYSCONFDIR?=	${LOCALBASE}/etc
--VARBASE?=		/var
-+VARBASE?=		/usr/var
- PKG_DBDIR?=		${VARBASE}/db/pkg
- 
- CPPFLAGS+=	-DLOCALBASE=\"${LOCALBASE}\" 		\
 @@ -30,7 +30,11 @@ OPSYS!=		uname
  OS_VER!=	uname -r
  OS_ARCH!=	uname -p
