@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.102 2010/03/16 15:05:01 taca Exp $
+# $NetBSD: Makefile,v 1.103 2010/04/25 12:48:03 obache Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -61,6 +61,7 @@ SUBDIR+=	pstotext
 SUBDIR+=	py-chardet
 SUBDIR+=	py-jpCodecs
 SUBDIR+=	py-simplejson
+SUBDIR+=	py-zfec
 SUBDIR+=	py-zhCodecs
 SUBDIR+=	qkc
 SUBDIR+=	qrencode
