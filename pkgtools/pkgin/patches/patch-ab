@@ -2,7 +2,23 @@ $NetBSD$
 
 --- Makefile.in.orig	Sat Jan 23 16:10:54 2010
 +++ Makefile.in
-@@ -30,7 +30,11 @@ OPSYS!=		uname
+@@ -17,10 +17,15 @@ CC=		@CC@
+ 
+ # packages prefix
+ 
++.if ${OPSYS} != "Minix"
+ LOCALBASE?=		@prefix@
+ PKG_SYSCONFDIR?=	${LOCALBASE}/etc
+ VARBASE?=		/var
+ PKG_DBDIR?=		${VARBASE}/db/pkg
++.else
++BSD_PKG_MK=	1
++.include "/etc/pkgsrc.conf"
++.endif
+ 
+ CPPFLAGS+=	-DLOCALBASE=\"${LOCALBASE}\" 		\
+ 		-DPKG_SYSCONFDIR=\"${PKG_SYSCONFDIR}\"	\
+@@ -30,7 +35,11 @@ OPSYS!=		uname
  OS_VER!=	uname -r
  OS_ARCH!=	uname -p
  
@@ -14,17 +30,17 @@ $NetBSD$
  
  CPPFLAGS+=	-DPKGIN_VERSION=\"${PKGIN_VERSION}\"
  
-@@ -53,6 +57,9 @@ PKGIN_DB=	${VARBASE}/db/pkgin
+@@ -53,6 +62,9 @@ PKGIN_DB=	${VARBASE}/db/pkgin
  WARNS=	2
  PKGTOOLS?=	/usr/sbin
  CPPFLAGS+=	-DNETBSD
 +.elif ${OPSYS} == "Minix"
 +WARNS=	2
-+PKGTOOLS?=	/usr/sbin
++PKGTOOLS?=	${PKG_TOOLS_BIN}
  .else
  PKGTOOLS?=	${LOCALBASE}/sbin
  .endif
-@@ -66,7 +73,11 @@ CPPFLAGS+=	-I${LOCALBASE}/include -Iexternal -I.
+@@ -66,7 +78,11 @@ CPPFLAGS+=	-I${LOCALBASE}/include -Iexternal -I.
  COPTS.plist.c+=	-Wno-pointer-sign
  
  LDADD+=		-L${LOCALBASE}/lib @RPATH@,${LOCALBASE}/lib	\
