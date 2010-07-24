@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2009/07/16 14:54:21 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2010/02/01 13:37:15 jmmv Exp $
 #
 
 COMMENT=	File systems, and file system related packages
@@ -29,6 +29,7 @@ SUBDIR+=	fuse-unionfs
 SUBDIR+=	fuse-wdfs
 SUBDIR+=	fuse-wikipediafs
 SUBDIR+=	py-fuse-bindings
+SUBDIR+=	tahoe-lafs
 SUBDIR+=	u9fs
 
 .include "../mk/misc/category.mk"
