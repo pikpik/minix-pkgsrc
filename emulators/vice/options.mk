@@ -1,9 +1,7 @@
-# $NetBSD: options.mk,v 1.3 2007/02/07 19:43:29 wiz Exp $
+# $NetBSD: options.mk,v 1.4 2007/05/29 08:41:29 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.vice
-# ffmpeg support for vice-1.21 needs at least ffmpeg-0.5.1
-#PKG_SUPPORTED_OPTIONS=	esound ffmpeg lame gnome
-PKG_SUPPORTED_OPTIONS=	esound lame gnome
+PKG_SUPPORTED_OPTIONS=	esound ffmpeg lame gnome
 
 .include "../../mk/bsd.options.mk"
 
@@ -15,6 +13,7 @@ CONFIGURE_ARGS+=	--without-esd
 
 .if !empty(PKG_OPTIONS:Mffmpeg)
 CONFIGURE_ARGS+=	--enable-ffmpeg
+USE_TOOLS+=		pkg-config
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .  if !empty(PKG_OPTIONS:Mlame)
 .  include "../../audio/lame/buildlink3.mk"
