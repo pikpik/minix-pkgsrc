@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	2009-04-11 00:24:49.000000000 +0100
-+++ Makefile.in	2009-06-15 13:55:30.000000000 +0100
-@@ -62,12 +62,9 @@
+--- Makefile.in.orig	Sun Dec 13 01:22:43 2009
++++ Makefile.in
+@@ -62,12 +62,9 @@ CHECK_OBJS=tls.o getgroups.o getfsdev.o t_stub.o t_uns
  all: Makefile rsync$(EXEEXT) @MAKE_MAN@
  
  install: all

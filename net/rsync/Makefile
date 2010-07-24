@@ -17,6 +17,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${PKGMANDIR}/man5 share/doc/rsync
 
+CONFIGURE_ENV+=ac_cv_func_lseek64=no
+
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		perl
 CONFIGURE_ARGS+=	--with-included-popt \
