@@ -1,9 +1,12 @@
-@comment $NetBSD: PLIST,v 1.9 2009/03/08 23:41:33 bjs Exp $
+@comment $NetBSD$
 bin/aria2c
 man/man1/aria2c.1
 share/doc/aria2/README
 share/doc/aria2/README.html
 share/doc/aria2/aria2c.1.html
+share/doc/aria2/xmlrpc/README.txt
+share/doc/aria2/xmlrpc/aria2mon
+share/doc/aria2/xmlrpc/aria2rpc
 share/locale/bg/LC_MESSAGES/aria2.mo
 share/locale/ca/LC_MESSAGES/aria2.mo
 share/locale/da/LC_MESSAGES/aria2.mo
@@ -19,11 +22,14 @@ share/locale/hu/LC_MESSAGES/aria2.mo
 share/locale/id/LC_MESSAGES/aria2.mo
 share/locale/it/LC_MESSAGES/aria2.mo
 share/locale/ja/LC_MESSAGES/aria2.mo
+share/locale/ko/LC_MESSAGES/aria2.mo
 share/locale/nl/LC_MESSAGES/aria2.mo
 share/locale/nn/LC_MESSAGES/aria2.mo
 share/locale/pl/LC_MESSAGES/aria2.mo
+share/locale/pt/LC_MESSAGES/aria2.mo
 share/locale/pt_BR/LC_MESSAGES/aria2.mo
 share/locale/ru/LC_MESSAGES/aria2.mo
+share/locale/sk/LC_MESSAGES/aria2.mo
 share/locale/sr/LC_MESSAGES/aria2.mo
 share/locale/sv/LC_MESSAGES/aria2.mo
 share/locale/th/LC_MESSAGES/aria2.mo
