@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2010/01/16 17:53:51 sno Exp $
+# $NetBSD: Makefile,v 1.13 2010/07/18 12:46:12 seb Exp $
 #
 
-DISTNAME=	MooseX-Types-0.22
+DISTNAME=	MooseX-Types-0.23
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	devel perl5
