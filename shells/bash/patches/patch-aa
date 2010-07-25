@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/sh/fpurge.c.orig	2009-04-20 01:12:23.000000000 +0000
+--- lib/sh/fpurge.c.orig	Mon Apr 20 01:12:23 2009
 +++ lib/sh/fpurge.c
 @@ -53,7 +53,7 @@ fpurge (FILE *fp)
    extern int fpurge (FILE *);
@@ -30,3 +30,15 @@ $NetBSD$
    fp_->_p = fp_->_bf._base;
    fp_->_r = 0;
    fp_->_w = ((fp_->_flags & (__SLBF | __SNBF | __SRD)) == 0 /* fully buffered and not currently reading? */
+@@ -100,6 +103,11 @@ fpurge (FILE *fp)
+   fp->_rcount = 0;
+   fp->_wcount = 0;
+   fp->_ungetc_count = 0;
++  return 0;
++#elif __minix  
++  fp->_ptr = fp->_buf;
++  if (fp->_ptr != NULL)
++    fp->_count = 0;
+   return 0;
+ # elif defined _IOERR               /* AIX, HP-UX, IRIX, OSF/1, Solaris, OpenServer, mingw */
+   fp->_ptr = fp->_base;
