@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2010/03/12 23:39:16 pettai Exp $
+@comment $NetBSD: PLIST,v 1.2 2010/07/19 11:22:25 pettai Exp $
 bin/agmrancid
 bin/alogin
 bin/arancid
@@ -128,4 +128,3 @@ share/doc/rancid/rancid.conf.sample
 share/doc/rancid/rtrfilter
 share/examples/rancid/lg.conf.sample
 share/examples/rancid/rancid.conf.sample
-@pkgdir etc/rancid
