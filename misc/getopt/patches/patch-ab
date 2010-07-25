@@ -44,7 +44,7 @@ $NetBSD$
  
  getopt: $(objects)
 -	$(CC) $(LDFLAGS) -o $@ $(objects)
-+	$(CC) $(LDFLAGS) -o $@ $(objects) -lintl
++	$(CC) $(LDFLAGS) -o $@ $(objects) -lintl -liconv
  
  install: getopt install_po
  	$(INSTALL) -m 755 -d $(DESTDIR)$(bindir) $(DESTDIR)$(man1dir)
