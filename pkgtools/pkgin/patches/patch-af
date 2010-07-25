@@ -9,6 +9,6 @@ $NetBSD$
 -
 -ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/i386/5.0/All
 -
-+ftp://ftp.cs.vu.nl/pub/minix/packages/3.1.8/i386/All
++ftp://ftp.cs.vu.nl/pub/minix/packages/$osrelease/$arch/All
  # European countries will prefer the following
  # ftp://ftp.fr.netbsd.org/pub/pkgsrc/packages/NetBSD/i386/5.0/All
