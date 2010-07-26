@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.560 2010/06/16 23:48:23 minskim Exp $
+# $NetBSD: Makefile,v 1.561 2010/06/17 00:01:29 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -73,6 +73,8 @@ SUBDIR+=	dx
 SUBDIR+=	dxsamples
 SUBDIR+=	enblend-enfuse
 SUBDIR+=	eog
+SUBDIR+=	eog-plugins
+SUBDIR+=	eog-plugins-map
 SUBDIR+=	epeg
 SUBDIR+=	evas
 SUBDIR+=	evas-buffer
