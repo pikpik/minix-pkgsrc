@@ -15,9 +15,15 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config msgfmt
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--with-expat
 CONFIGURE_ARGS+=	--with-ssl=yes
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--without-pic
+.else
+CONFIGURE_ARGS+=	--enable-shared
+.endif
 
 PKGCONFIG_OVERRIDE=	neon.pc.in
 TEST_TARGET=		check
