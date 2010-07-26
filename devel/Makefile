@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1375 2010/07/24 17:26:22 gdt Exp $
+# $NetBSD: Makefile,v 1.1376 2010/07/26 11:27:01 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -846,6 +846,7 @@ SUBDIR+=	p5-PPI
 SUBDIR+=	p5-PPI-XS
 SUBDIR+=	p5-PV
 SUBDIR+=	p5-Package-Constants
+SUBDIR+=	p5-Package-DeprecationManager
 SUBDIR+=	p5-Package-Generator
 SUBDIR+=	p5-Package-Stash
 SUBDIR+=	p5-PadWalker
