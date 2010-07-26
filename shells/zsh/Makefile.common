@@ -17,6 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--enable-etcdir=${PKG_SYSCONFDIR:Q}
+CONFIGURE_ARGS+=	zsh_cv_path_errno_h=/usr/include/errno.h
 
 USE_TOOLS+=		makeinfo
 INFO_FILES=		# PLIST
