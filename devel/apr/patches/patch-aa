@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- network_io/unix/sockopt.c.orig	Thu Aug  3 10:55:31 2006
++++ network_io/unix/sockopt.c
+@@ -346,7 +346,7 @@ apr_status_t apr_socket_opt_get(apr_socket_t *sock, 
+ 
+ apr_status_t apr_socket_atmark(apr_socket_t *sock, int *atmark)
+ {
+-#ifndef BEOS_R5
++#if !defined(BEOS_R5) && !defined(__minix) 
+     int oobmark;
+ 
+     if (ioctl(sock->socketdes, SIOCATMARK, (void*) &oobmark) < 0)

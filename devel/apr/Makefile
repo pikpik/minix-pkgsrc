@@ -20,6 +20,13 @@ PKGCONFIG_OVERRIDE+=	apr.pc.in
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-devrandom=/dev/urandom
 CONFIGURE_ARGS+=	--with-installbuilddir=${PREFIX}/libexec/apr
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--disable-dso --disable-ipv6 --without-pic
+CONFIGURE_ENV+=	ac_cv_func_mmap=no
+.endif
+
 CONFIGURE_ENV+=		LIBS=${LIBS:M*:Q}
 LIBS.SunOS+=		-lnsl
 
