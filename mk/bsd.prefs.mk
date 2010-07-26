@@ -271,7 +271,6 @@ LOWER_OPSYS_VERSUFFIX=	2
 .elif ${OPSYS} == "Minix"
 OS_VERSION!= echo `${UNAME} -v`
 LOWER_OS_VERSION= OS_VERSION
-OS_RELEASE!= echo `${UNAME} -r`
 LOWER_ARCH!=		${UNAME} -p
 MACHINE_ARCH?=		${LOWER_ARCH}
 .if ${MACHINE_ARCH} == "unknown"
