@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- patterns/transform.c.orig	Tue Feb 17 21:41:31 2009
++++ patterns/transform.c
+@@ -24,7 +24,11 @@
+ #include "liberty.h"
+ #include "dfa.h"
+ 
++#ifdef __minix
++#include <string.h>
++#else
+ #include <memory.h>
++#endif
+ 
+ /* Array for use by TRANSFORM() macro. */
+ int transformation[MAX_OFFSET][8];
