@@ -1,7 +1,16 @@
 $NetBSD$
 
---- gcc/config.gcc.orig	2009-04-17 13:58:41 +0200
+--- gcc/config.gcc.orig	2010-01-04 15:13:08.000000000 +0000
 +++ gcc/config.gcc
+@@ -251,7 +251,7 @@ case ${target} in
+  | *-*-sysv*		\
+  | vax-*-vms*				\
+  )
+-	echo "*** Configuration ${target} not supported" 1>&2
++	echo "*** Configuration ${target} recognized but not supported" 1>&2
+ 	exit 1
+ 	;;
+ esac
 @@ -482,6 +482,33 @@ case ${target} in
    esac
    fbsd_tm_file="${fbsd_tm_file} freebsd-spec.h freebsd.h"
@@ -36,7 +45,22 @@ $NetBSD$
  *-*-linux* | frv-*-*linux* | *-*-kfreebsd*-gnu | *-*-knetbsd*-gnu | *-*-gnu* | *-*-kopensolaris*-gnu)
    extra_parts="crtbegin.o crtbeginS.o crtbeginT.o crtend.o crtendS.o"
    gas=yes
-@@ -1047,6 +1074,12 @@ x86_64-*-freebsd*)
+@@ -1037,6 +1064,14 @@ x86_64-*-elf*)
+ 	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h i386/i386elf.h i386/x86-64.h"
+ 	tmake_file="${tmake_file} i386/t-i386elf t-svr4"
+ 	;;
++i[34567]86-*-minix*)
++    tm_file="${tm_file} i386/minix.h i386/bsd.h i386/gas.h i386/gstabs.h"
++    tmake_file=i386/t-minix
++    use_fixproto=yes
++    use_collect2=yes
++    gas=yes
++    gnu_ld=yes
++    ;;
+ i[34567]86-*-aout*)
+ 	tm_file="${tm_file} i386/unix.h i386/bsd.h i386/gas.h i386/gstabs.h i386/i386-aout.h"
+ 	;;
+@@ -1047,6 +1082,12 @@ x86_64-*-freebsd*)
  	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h ${fbsd_tm_file} i386/x86-64.h i386/freebsd.h i386/freebsd64.h"
  	tmake_file="${tmake_file} i386/t-crtstuff"
  	;;
@@ -49,3 +73,12 @@ $NetBSD$
  i[34567]86-*-netbsdelf*)
  	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h netbsd.h netbsd-elf.h i386/netbsd-elf.h"
  	;;
+@@ -2415,7 +2456,7 @@ m32c-*-elf*)
+ 	cxx_target_objs="m32c-pragma.o"
+  	;;
+ *)
+-	echo "*** Configuration ${target} not supported" 1>&2
++	echo "*** Configuration ${target} not recognized, not supported" 1>&2
+ 	exit 1
+ 	;;
+ esac

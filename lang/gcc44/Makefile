@@ -20,13 +20,13 @@ USE_TOOLS+=		awk:run bash:run perl chmod \
 
 DEPENDS+=		zip-[0-9]*:../../archivers/zip
 
-GCC_VERSION=		4.4.4
+GCC_VERSION=		4.4.3
 
 GCC_SUBPREFIX=		gcc44
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
 FILES_SUBST+=		PKGNAME=${PKGNAME}
 MESSAGE_SUBST+=		GCC_PREFIX=${GCC_PREFIX}
-
+GCC_SYMLINK_PROGRAMS=	cpp g++ gcc gccbug gcov
 
 # To avoid GNU surprises
 CONFIG_SHELL=		${TOOLS_PATH.bash}
@@ -64,9 +64,15 @@ REPLACE_BASH+= libstdc++-v3/scripts/run_doxygen
 # ../gcc34-ada for guidance
 BUILD_DEFS+=		BUILD_CXX BUILD_FORTRAN BUILD_JAVA BUILD_OBJC
 BUILD_CXX?=		YES
+.if ${OPSYS} == "Minix"
+BUILD_FORTRAN?=		NO
+BUILD_JAVA?=		NO
+BUILD_OBJC?=		NO
+.else
 BUILD_FORTRAN?=		YES
 BUILD_JAVA?=		YES
 BUILD_OBJC?=		YES
+.endif
 
 LANGS= c
 
@@ -93,16 +99,21 @@ LANGS+= objc
 CONFIGURE_ARGS+=	--prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
 CONFIGURE_ARGS+=	--with-system-zlib
+.if ${OPSYS} != "Minix"
 CONFIGURE_ARGS+=	--enable-shared
+CONFIGURE_ARGS+=	--enable-threads=posix
+.endif
 CONFIGURE_ARGS+=	--enable-__cxa_atexit
 CONFIGURE_ARGS+=	--enable-long-long
 CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--disable-libssp
-CONFIGURE_ARGS+=	--enable-threads=posix
 CONFIGURE_ARGS+=	--with-gmp=${BUILDLINK_PREFIX.gmp}
 CONFIGURE_ARGS+=	--with-mpfr=${BUILDLINK_PREFIX.mpfr}
 
-.info "=-=-=- ${CONFIGURE_ARGS}"
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--with-as=${BUILDLINK_PREFIX.binutils}/bin/${GNU_PROGRAM_PREFIX}as
+CONFIGURE_ARGS+=	--with-ld=${BUILDLINK_PREFIX.binutils}/bin/${GNU_PROGRAM_PREFIX}ld
+.endif
 
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL}
 
@@ -147,6 +158,10 @@ pre-configure:
 	${CP} ${FILESDIR}/dragonfly-spec.h ${WRKSRC}/gcc/config/dragonfly-spec.h
 	${CP} ${FILESDIR}/i386-dragonfly.h ${WRKSRC}/gcc/config/i386/dragonfly.h
 	${CP} ${FILESDIR}/i386-dragonfly64.h ${WRKSRC}/gcc/config/i386/dragonfly64.h
+.elif ${OPSYS} == "Minix"
+	${CP} ${FILESDIR}/minix.h ${WRKSRC}/gcc/config/i386/
+	${CP} ${FILESDIR}/t-minix ${WRKSRC}/gcc/config/i386/
+	${CP} ${FILESDIR}/gcov-minix-fs-wrapper.h ${WRKSRC}/gcc/
 .endif
 
 
@@ -155,7 +170,7 @@ do-configure:
 	cd ${WRKDIR}/obj; ${SETENV} ${CONFIGURE_ENV} ${CONFIG_SHELL} ${WRKSRC}/configure ${CONFIGURE_ARGS}
 
 do-build:
-	(${_ULIMIT_CMD} cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} -j${MAKE_JOBS:U1:Q} )
+	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} -j${MAKE_JOBS:U1:Q})
 
 do-test:
 .if (${MACHINE_GNU_ARCH} == "x86_64")
@@ -167,11 +182,20 @@ do-install:
 	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} install DESTDIR=${DESTDIR} \
 	 && ${TEST} -f ${DESTDIR}${GCC_PREFIX}/bin/cc || ${LN} -f ${DESTDIR}${GCC_PREFIX}/bin/gcc ${DESTDIR}${GCC_PREFIX}/bin/cc)
 
-GENERATE_PLIST+=                                                        \
-	cd ${DESTDIR}${PREFIX} && ${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print \
-	| ${SORT} ;
+post-install:
+.for X in ${GCC_SYMLINK_PROGRAMS}
+	${LN} -s ${DESTDIR}${GCC_PREFIX}/bin/${X} ${DESTDIR}${PREFIX}/bin/${X}
+.endfor
+
+
+GENERATE_PLIST_SYMLINKS=	for x in ${GCC_SYMLINK_PROGRAMS}; do ${ECHO} bin/$$x; done 
+GENERATE_PLIST+= { ${GENERATE_PLIST_SYMLINKS};                                                       \
+	cd ${DESTDIR}${PREFIX} && ${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print; } | ${SORT} ;
 
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../math/mpfr/buildlink3.mk"
+.if ${OPSYS} == "Minix"
+.include "../../devel/binutils/buildlink3.mk"
+.endif
 .include "../../mk/bsd.pkg.mk"
