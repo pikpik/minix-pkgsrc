@@ -33,7 +33,7 @@
 BINPKG_SITES?= \
 	ftp://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/$${arch}/$${rel}
 .elif ${OPSYS} == "Minix"
-BINPKG_SITES?= ftp://ftp.cs.vu.nl/pub/minix/packages/$${rel}/$${arch}
+BINPKG_SITES?= ftp://ftp.minix3.org/pub/minix/packages/$${rel}/$${arch}
 .else
 BINPKG_SITES= 
 .endif
