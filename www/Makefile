@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.764 2010/07/11 13:50:52 seb Exp $
+# $NetBSD: Makefile,v 1.765 2010/07/19 17:04:54 ver Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -591,9 +591,6 @@ SUBDIR+=	tinyproxy
 SUBDIR+=	trac
 SUBDIR+=	typo3
 #SUBDIR+=	typolight	# only contains Makefile fragments
-SUBDIR+=	typolight27
-SUBDIR+=	typolight27-example
-SUBDIR+=	typolight27-translations
 SUBDIR+=	typolight28
 SUBDIR+=	typolight28-example
 SUBDIR+=	typolight28-translations
