@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- e_os.h.orig	Mon May 31 13:17:51 2010
++++ e_os.h
+@@ -77,9 +77,13 @@ extern "C" {
+ #endif
+ 
+ #ifndef DEVRANDOM
++#ifdef __minix
++#define DEVRANDOM "/dev/random","/dev/urandom","/dev/srandom"
++#else
+ /* set this to a comma-separated list of 'random' device files to try out.
+  * My default, we will try to read at least one of these files */
+ #define DEVRANDOM "/dev/urandom","/dev/random","/dev/srandom"
++#endif
+ #endif
+ #ifndef DEVRANDOM_EGD
+ /* set this to a comma-seperated list of 'egd' sockets to try out. These

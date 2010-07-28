@@ -1,0 +1,22 @@
+$NetBSD$
+
+--- crypto/rand/rand_unix.c.orig	Mon Feb 16 08:44:23 2009
++++ crypto/rand/rand_unix.c
+@@ -232,6 +232,7 @@ int RAND_poll(void)
+ 				t.tv_sec = 0;
+ 				t.tv_usec = usec;
+ 
++#ifndef __minix
+ 				if (FD_SETSIZE > 0 && (unsigned)fd >= FD_SETSIZE)
+ 					{
+ 					/* can't use select, so just try to read once anyway */
+@@ -251,6 +252,9 @@ int RAND_poll(void)
+ 					else
+ 						usec = 0;
+ 					}
++#else /* !__minix */
++				try_read = 1;
++#endif
+ #endif
+ 				
+ 				if (try_read)
