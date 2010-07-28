@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- daemon.c.orig	Tue Jul 27 13:01:35 2010
++++ daemon.c
+@@ -894,7 +894,9 @@ static int service_loop(int socknum, int *socklist)
+ 					switch (errno) {
+ 					case EAGAIN:
+ 					case EINTR:
++#ifdef ECONNABORTED
+ 					case ECONNABORTED:
++#endif
+ 						continue;
+ 					default:
+ 						die_errno("accept returned");

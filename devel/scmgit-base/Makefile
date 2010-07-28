@@ -21,6 +21,7 @@ REPLACE_PERL+=		*.perl */*.perl */*/*.perl
 REPLACE_PERL+=		contrib/hooks/update-paranoid
 
 CFLAGS.NetBSD+=		-D_NETBSD_SOURCE
+CFLAGS.Minix+=		-D_MINIX -D_POSIX_SOURCE
 
 CONFIGURE_ARGS+=	--with-curl=${BUILDLINK_PREFIX.curl}
 CONFIGURE_ARGS+=	--with-expat=${BUILDLINK_PREFIX.expat}
