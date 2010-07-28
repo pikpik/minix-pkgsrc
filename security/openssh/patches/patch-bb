@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- roaming_common.c.orig	Tue Jan 12 08:43:46 2010
++++ roaming_common.c
+@@ -168,7 +168,10 @@ roaming_read(int fd, void *buf, size_t count, int *con
+ 		}
+ 	} else if (out_buf_size > 0 &&
+ 	    (ret == 0 || (ret == -1 && (errno == ECONNRESET
+-	    || errno == ECONNABORTED || errno == ETIMEDOUT
++#ifdef ECONNABORTED
++	    || errno == ECONNABORTED
++#endif
++		|| errno == ETIMEDOUT
+ 	    || errno == EHOSTUNREACH)))) {
+ 		debug("roaming_read failed for %d  ret=%ld  errno=%d",
+ 		    fd, (long)ret, errno);

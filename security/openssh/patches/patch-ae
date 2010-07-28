@@ -1,15 +1,35 @@
 $NetBSD: patch-ae,v 1.12 2006/10/31 03:31:20 taca Exp $
 
---- includes.h.orig	2009-08-20 09:16:01.000000000 +0300
-+++ includes.h	2010-02-19 12:07:37.000000000 +0200
-@@ -124,6 +124,10 @@
+--- includes.h.orig	Thu Aug 20 06:16:01 2009
++++ includes.h
+@@ -74,6 +74,9 @@
+ #  include <lastlog.h>
+ #endif
+ 
++#ifdef __minix
++#include <net/gen/in.h>
++#endif
+ #ifdef HAVE_SYS_SELECT_H
+ # include <sys/select.h>
+ #endif
+@@ -110,7 +113,9 @@
+ #endif
+ 
+ #include <netinet/in.h>
++#ifndef __minix
+ #include <netinet/in_systm.h> /* For typedefs */
++#endif
+ #ifdef HAVE_RPC_TYPES_H
+ # include <rpc/types.h> /* For INADDR_LOOPBACK */
+ #endif
+@@ -123,6 +128,10 @@
+ #endif
  #ifdef HAVE_READPASSPHRASE_H
  # include <readpassphrase.h>
- #endif
++#endif
 +#ifdef HAVE_INTERIX
 +# include <interix/env.h>
 +# include <interix/security.h>
-+#endif
+ #endif
  
  #ifdef HAVE_IA_H
- # include <ia.h>

@@ -1,8 +1,18 @@
 $NetBSD: patch-av,v 1.8 2010/02/19 10:17:34 martti Exp $
 
---- sshd.c.orig	2010-03-07 14:05:17.000000000 +0200
-+++ sshd.c	2010-06-09 20:36:56.000000000 +0300
-@@ -236,7 +236,11 @@
+--- sshd.c.orig	Sun Mar  7 12:05:17 2010
++++ sshd.c
+@@ -119,6 +119,9 @@
+ #include "monitor_wrap.h"
+ #include "roaming.h"
+ #include "version.h"
++#ifdef __minix
++#include <sys/param.h>
++#endif
+ 
+ #ifdef LIBWRAP
+ #include <tcpd.h>
+@@ -236,7 +239,11 @@ int *startup_pipes = NULL;
  int startup_pipe;		/* in child */
  
  /* variables used for privilege separation */
@@ -14,7 +24,7 @@ $NetBSD: patch-av,v 1.8 2010/02/19 10:17:34 martti Exp $
  struct monitor *pmonitor = NULL;
  
  /* global authentication context */
-@@ -612,10 +616,15 @@
+@@ -612,10 +619,15 @@ privsep_preauth_child(void)
  	/* XXX not ready, too heavy after chroot */
  	do_setusercontext(privsep_pw);
  #else
@@ -30,7 +40,7 @@ $NetBSD: patch-av,v 1.8 2010/02/19 10:17:34 martti Exp $
  #endif
  }
  
-@@ -655,7 +664,7 @@
+@@ -655,7 +667,7 @@ privsep_preauth(Authctxt *authctxt)
  		close(pmonitor->m_sendfd);
  
  		/* Demote the child */
@@ -39,7 +49,7 @@ $NetBSD: patch-av,v 1.8 2010/02/19 10:17:34 martti Exp $
  			privsep_preauth_child();
  		setproctitle("%s", "[net]");
  	}
-@@ -670,7 +679,7 @@
+@@ -670,7 +682,7 @@ privsep_postauth(Authctxt *authctxt)
  #ifdef DISABLE_FD_PASSING
  	if (1) {
  #else
@@ -48,7 +58,7 @@ $NetBSD: patch-av,v 1.8 2010/02/19 10:17:34 martti Exp $
  #endif
  		/* File descriptor passing is broken or root login */
  		use_privsep = 0;
-@@ -1310,8 +1319,10 @@
+@@ -1310,8 +1322,10 @@ main(int ac, char **av)
  	av = saved_argv;
  #endif
  
@@ -60,7 +70,7 @@ $NetBSD: patch-av,v 1.8 2010/02/19 10:17:34 martti Exp $
  
  	/* Ensure that fds 0, 1 and 2 are open or directed to /dev/null */
  	sanitise_stdfd();
-@@ -1664,7 +1675,7 @@
+@@ -1664,7 +1678,7 @@ main(int ac, char **av)
  		    (st.st_uid != getuid () ||
  		    (st.st_mode & (S_IWGRP|S_IWOTH)) != 0))
  #else
@@ -69,7 +79,7 @@ $NetBSD: patch-av,v 1.8 2010/02/19 10:17:34 martti Exp $
  #endif
  			fatal("%s must be owned by root and not group or "
  			    "world-writable.", _PATH_PRIVSEP_CHROOT_DIR);
-@@ -1688,8 +1699,10 @@
+@@ -1688,8 +1702,10 @@ main(int ac, char **av)
  	 * to create a file, and we can't control the code in every
  	 * module which might be used).
  	 */

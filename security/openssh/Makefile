@@ -63,6 +63,10 @@ PKG_GECOS.${OPENSSH_USER}=	sshd privsep pseudo-user
 PKG_HOME.${OPENSSH_USER}=	${OPENSSH_CHROOT}
 
 .endif
+.if ${OPSYS} == "Minix"
+CPPFLAGS+=	-DMISSING_NFDBITS -DMISSING_HOWMANY
+CONFIGURE_ARGS+=	--disable-utmpx
+.endif
 
 SSH_PID_DIR=		${VARBASE}/run	# default directory for PID files
 
@@ -73,7 +77,9 @@ CONFIGURE_ARGS+=	--with-mantype=man
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-pid-dir=${SSH_PID_DIR:Q}
 CONFIGURE_ARGS+=	--with-ssl-dir=${SSLBASE:Q}
+.if ${OPSYS} != "Minix"
 CONFIGURE_ARGS+=	--with-tcp-wrappers=${BUILDLINK_PREFIX.tcp_wrappers}
+.endif
 
 .if ${OPSYS} != "Interix"
 CONFIGURE_ARGS+=	--with-privsep-path=${OPENSSH_CHROOT:Q}
@@ -159,7 +165,9 @@ SUBST_MESSAGE.patch=	More patch a file.
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
+.if ${OPSYS} != "Minix"
 .include "../../security/tcp_wrappers/buildlink3.mk"
+.endif
 
 post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}

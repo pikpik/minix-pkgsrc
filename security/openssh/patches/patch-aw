@@ -1,15 +1,25 @@
 $NetBSD: patch-aw,v 1.2 2006/10/31 03:31:20 taca Exp $
 
---- openbsd-compat/port-tun.c.orig	2008-05-19 14:28:36.000000000 +0900
+--- openbsd-compat/port-tun.c.orig	Mon May 19 05:28:36 2008
 +++ openbsd-compat/port-tun.c
-@@ -110,6 +110,10 @@ sys_tun_open(int tun, int mode)
+@@ -21,7 +21,9 @@
+ 
+ #include <netinet/in.h>
+ #include <arpa/inet.h>
++#ifndef __minix
+ #include <netinet/ip.h>
++#endif
+ 
+ #include <errno.h>
+ #include <fcntl.h>
+@@ -109,6 +111,10 @@ sys_tun_open(int tun, int mode)
+ #ifdef SSH_TUN_FREEBSD
  #include <sys/socket.h>
  #include <net/if.h>
- 
++
 +#ifdef HAVE_NET_TUN_IF_TUN_H
 +#include <net/tun/if_tun.h>
 +#endif
-+
+ 
  #ifdef HAVE_NET_IF_TUN_H
  #include <net/if_tun.h>
- #endif

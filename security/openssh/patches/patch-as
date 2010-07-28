@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- atomicio.c.orig	Fri Jul  4 23:36:58 2008
++++ atomicio.c
+@@ -78,6 +78,7 @@ atomicio(ssize_t (*f) (int, void *, size_t), int fd, v
+ 	return (pos);
+ }
+ 
++#ifndef __minix
+ /*
+  * ensure all of data on socket comes through. f==readv || f==writev
+  */
+@@ -140,3 +141,4 @@ atomiciov(ssize_t (*f) (int, const struct iovec *, int
+ 	}
+ 	return pos;
+ }
++#endif
