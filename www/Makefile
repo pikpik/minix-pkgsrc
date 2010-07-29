@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.766 2010/07/28 16:37:48 taca Exp $
+# $NetBSD: Makefile,v 1.767 2010/07/29 03:02:16 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -480,6 +480,7 @@ SUBDIR+=	p5-WWW-Amazon-Wishlist
 SUBDIR+=	p5-WWW-Curl
 SUBDIR+=	p5-WWW-Facebook-API
 SUBDIR+=	p5-WWW-Mechanize
+SUBDIR+=	p5-WWW-Mechanize-GZip
 SUBDIR+=	p5-WWW-Pastebin-PastebinCom-Create
 SUBDIR+=	p5-WWW-Pastebin-RafbNet-Create
 SUBDIR+=	p5-WWW-Shorten
