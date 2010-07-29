@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.765 2010/07/19 17:04:54 ver Exp $
+# $NetBSD: Makefile,v 1.766 2010/07/28 16:37:48 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -568,7 +568,6 @@ SUBDIR+=	sope
 SUBDIR+=	spawn-fcgi
 #SUBDIR+=	squid		# only contains Makefile fragments
 SUBDIR+=	squid27
-SUBDIR+=	squid30
 SUBDIR+=	squid31
 SUBDIR+=	squidGuard
 SUBDIR+=	squidpurge
