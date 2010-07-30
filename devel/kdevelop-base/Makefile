@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.86 2010/06/13 22:44:05 wiz Exp $
+# $NetBSD: Makefile,v 1.87 2010/07/14 11:11:18 sbd Exp $
 
 DISTNAME=	kdevelop_3.5.5.orig
 PKGNAME=	kdevelop-base-3.5.5
@@ -29,7 +29,7 @@ DEPENDS+=		qt3-tools>=3.1.1:../../x11/qt3-tools
 CONFLICTS+=	kdevelop<=1.3
 
 BDB_ACCEPTED=		db4 db5
-USE_LANGUAGES=		c c++ fortran
+USE_LANGUAGES=		c c++ fortran77
 USE_TOOLS+=		msgfmt perl:run
 
 REPLACE_PERL+=		kdevprj2kdevelop

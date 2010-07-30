@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2009/02/22 14:15:28 asau Exp $
+# $NetBSD: Makefile,v 1.28 2009/12/03 13:06:53 asau Exp $
 #
 
 DISTNAME=	blas
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=		${PKGNAME_NOREV}
 WRKSRC=			${WRKDIR}/BLAS
-USE_LANGUAGES=		c fortran
+USE_LANGUAGES=		c fortran77
 USE_LIBTOOL=		yes
 
 # Pass along the major and minor of the version number as the major and

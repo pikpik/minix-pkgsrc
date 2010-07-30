@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/02/17 10:40:47 adam Exp $
+# $NetBSD: Makefile,v 1.10 2009/12/03 13:06:54 asau Exp $
 
 DISTNAME=	fftw-3.2.1
 PKGNAME=	fftwf-3.2.1
@@ -25,7 +25,7 @@ DEPENDS+=		fftw>=3.2:../../math/fftw
 #CONFIGURE_ARGS+=	--enable-sse
 CONFIGURE_ARGS+=	--with-our-malloc16
 .endif
-USE_LANGUAGES=		c fortran
+USE_LANGUAGES=		c fortran77
 USE_TOOLS+=		gmake
 # For the "test" target:
 USE_TOOLS+=		perl

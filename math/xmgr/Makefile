@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/12/11 02:11:52 asau Exp $
+# $NetBSD: Makefile,v 1.34 2010/02/07 18:36:33 zafer Exp $
 
 DISTNAME=		xmgr-4.1.2
 PKGREVISION=		5
@@ -15,7 +15,7 @@ BUILD_DEPENDS+=		bison-[0-9]*:../../devel/bison
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=		YES
-USE_LANGUAGES=		c fortran
+USE_LANGUAGES=		c fortran77
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-acegr-home=${PREFIX:Q}
 

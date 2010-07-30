@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/06/20 01:09:24 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2009/12/03 13:06:53 asau Exp $
 
 DISTNAME=	blitz-0.8
 PKGNAME=	blitz++-0.8
@@ -12,7 +12,7 @@ COMMENT=	C++ template class library providing array objects
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_LANGUAGES=		c c++ fortran
+USE_LANGUAGES=		c c++ fortran77
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes

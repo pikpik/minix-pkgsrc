@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/12/03 13:06:54 asau Exp $
+# $NetBSD: Makefile,v 1.17 2009/12/12 19:43:41 asau Exp $
 
 DISTNAME=		fftpack-20001130
 PKGREVISION=		2
@@ -9,7 +9,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Single precision Fortran FFT subroutines
 
 NO_SRC_ON_FTP=		Already in MASTER_SITE_LOCAL
-USE_LANGUAGES=		fortran
+USE_LANGUAGES=		fortran77
 WRKSRC=			${WRKDIR}/fftpack
 INSTALLATION_DIRS=	lib share/doc/fftpack
 PKG_DESTDIR_SUPPORT=	user-destdir

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/12/10 17:10:14 drochner Exp $
+# $NetBSD: Makefile,v 1.34 2010/01/18 09:58:45 wiz Exp $
 
 DISTNAME=	HDF4.2r4
 PKGNAME=	hdf-4.2r4
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		lex gmake yacc
-USE_LANGUAGES=		c fortran
+USE_LANGUAGES=		c fortran77
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/hdf
 CONFIGURE_ARGS+=	--with-szlib

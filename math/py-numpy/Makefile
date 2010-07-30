@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/01/30 16:27:59 heinz Exp $
+# $NetBSD: Makefile,v 1.11 2010/04/24 17:13:55 gls Exp $
 #
 
 DISTNAME=	numpy-1.4.1
@@ -14,7 +14,7 @@ LICENSE=	modified-bsd
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
-USE_LANGUAGES+=	c fortran
+USE_LANGUAGES+=	c fortran77
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 MAKE_ENV+=	ATLAS=None
 

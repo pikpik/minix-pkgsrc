@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/01/19 00:45:58 asau Exp $
+# $NetBSD: Makefile,v 1.5 2010/05/14 20:12:58 asau Exp $
 
 DISTNAME=	openmpi-1.4.2
 CATEGORIES=	parallel
@@ -15,7 +15,7 @@ CONFLICTS+=	mpich2-[0-9]*	# installs bin/mpicc & other wrappers
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
-USE_LANGUAGES=		c c++ fortran
+USE_LANGUAGES=		c c++ fortran77
 USE_LIBTOOL=		yes
 LIBTOOL_OVERRIDE=	${WRKSRC}/libtool
 SHLIBTOOL_OVERRIDE=	${WRKSRC}/config/libtool.m4

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/02/28 19:43:00 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/03/16 21:22:13 agc Exp $
 
 DISTNAME=	itpp-4.0.7
 CATEGORIES=	math
@@ -14,7 +14,7 @@ USE_LIBTOOL=	yes
 USE_TOOLS=	gmake
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_LANGUAGES+=	c c++ fortran
+USE_LANGUAGES+=	c c++ fortran77
 
 .include "../../math/blas/buildlink3.mk"
 .include "../../math/fftw/buildlink3.mk"

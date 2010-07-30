@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/06/12 02:14:36 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2009/12/03 13:06:54 asau Exp $
 
 DISTNAME=		fftw-2.1.5
 PKGNAME=		fftw2-2.1.5
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	--enable-shared
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+=	--enable-i386-hacks
 .endif
-USE_LANGUAGES=		c fortran
+USE_LANGUAGES=		c fortran77
 USE_TOOLS+=		gmake makeinfo
 INFO_FILES=		# PLIST
 

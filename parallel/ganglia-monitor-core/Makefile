@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/12/03 13:06:56 asau Exp $
+# $NetBSD: Makefile,v 1.26 2010/06/13 22:45:13 wiz Exp $
 #
 
 DISTNAME=		ganglia-3.1.2
@@ -17,7 +17,7 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-gmetad
 USE_LIBTOOL=		yes
-USE_LANGUAGES+=		c c++ fortran
+USE_LANGUAGES+=		c c++ fortran77
 
 PLIST_VARS+=		python
 
