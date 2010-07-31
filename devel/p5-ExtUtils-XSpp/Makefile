@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2010/02/15 13:46:54 sno Exp $
+# $NetBSD: Makefile,v 1.4 2010/04/25 12:07:52 seb Exp $
 
-DISTNAME=	ExtUtils-XSpp-0.10
+DISTNAME=	ExtUtils-XSpp-0.14
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=ExtUtils/}
@@ -10,6 +10,7 @@ HOMEPAGE=	http://search.cpan.org/dist/ExtUtils-XSpp/
 COMMENT=	XS for C++
 LICENSE=	${PERL5_LICENSE}
 
+BUILD_DEPENDS+=	{perl>=5.12.0,p5-Module-Build>=0.36000}:../../devel/p5-Module-Build
 BUILD_DEPENDS+=	p5-Test-Base-[0-9]*:../../devel/p5-Test-Base
 BUILD_DEPENDS+=	p5-Test-Differences-[0-9]*:../../devel/p5-Test-Differences
 DEPENDS+=	p5-ExtUtils-ParseXS>=2.22.02:../../devel/p5-ExtUtils-ParseXS
