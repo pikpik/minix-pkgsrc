@@ -23,7 +23,6 @@ DISTINFO_FILE=	${.CURDIR}/../../devel/scmgit-base/distinfo
 
 GNU_CONFIGURE?=	yes
 USE_TOOLS+=		gmake tar perl sh
-EXTRACT_USING=		gtar
 
 PKG_SYSCONFSUBDIR=	git
 
