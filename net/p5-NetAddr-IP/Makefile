@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2009/04/15 07:40:00 sno Exp $
+# $NetBSD: Makefile,v 1.20 2009/07/08 10:07:19 sno Exp $
 #
 
-DISTNAME=	NetAddr-IP-4.027
+DISTNAME=	NetAddr-IP-4.030
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5nai
 CATEGORIES=	net perl5
