@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.143 2010/06/13 22:44:09 wiz Exp $
+# $NetBSD: Makefile,v 1.144 2010/06/16 17:35:50 drochner Exp $
 
 DISTNAME=		pango-1.28.1
 CATEGORIES=		devel fonts
@@ -39,10 +39,6 @@ CHECK_FILES_SKIP+=	${PREFIX}/libdata/pango/pango.modules
 PLIST_VARS+=		carbon
 
 .include "options.mk"
-
-# Workaround for Upstream Bug#562310.
-# for more detail, see also PR#41475.
-TOOLS_NOOP+=	gtkdoc-rebase
 
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.17.3
 .include "../../devel/glib2/buildlink3.mk"
