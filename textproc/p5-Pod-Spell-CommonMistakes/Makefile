@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/02/22 15:51:45 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/07/31 07:34:31 sno Exp $
 
 DISTNAME=	Pod-Spell-CommonMistakes-0.01
 PKGNAME=	p5-${DISTNAME}
@@ -10,7 +10,7 @@ HOMEPAGE=	http://search.cpan.org/dist/Pod-Spell-CommonMistakes/
 COMMENT=	Catches common typos in POD
 LICENSE=	${PERL5_LICENSE}
 
-DEPENDS+=	IO-stringy>=2.110:../../devel/p5-IO-stringy
+DEPENDS+=	p5-IO-stringy>=2.110:../../devel/p5-IO-stringy
 DEPENDS+=	p5-Pod-Spell>=1.01:../../textproc/p5-Pod-Spell
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
