@@ -1,6 +1,6 @@
 $NetBSD: patch-ar,v 1.7 2006/10/31 03:31:20 taca Exp $
 
---- uidswap.c.orig	2009-01-21 14:04:24.000000000 +0900
+--- uidswap.c.orig	Wed Jan 21 05:04:24 2009
 +++ uidswap.c
 @@ -66,13 +66,13 @@ temporarily_use_uid(struct passwd *pw)
  	    (u_int)pw->pw_uid, (u_int)pw->pw_gid,
@@ -36,7 +36,8 @@ $NetBSD: patch-ar,v 1.7 2006/10/31 03:31:20 taca Exp $
  	}
 +#ifndef HAVE_INTERIX
  	/* Set the effective uid to the given (unprivileged) uid. */
- 	if (setgroups(user_groupslen, user_groups) < 0)
+-	if (setgroups(user_groupslen, user_groups) < 0)
++	if (user_groupslen && setgroups(user_groupslen, user_groups) < 0)
  		fatal("setgroups: %.100s", strerror(errno));
 +#endif
  #ifndef SAVED_IDS_WORK_WITH_SETEUID
@@ -46,8 +47,9 @@ $NetBSD: patch-ar,v 1.7 2006/10/31 03:31:20 taca Exp $
  	setgid(getgid());
  #endif /* SAVED_IDS_WORK_WITH_SETEUID */
  
+-	if (setgroups(saved_egroupslen, saved_egroups) < 0)
 +#ifndef HAVE_INTERIX
- 	if (setgroups(saved_egroupslen, saved_egroups) < 0)
++	if (saved_egroupslen && setgroups(saved_egroupslen, saved_egroups) < 0)
  		fatal("setgroups: %.100s", strerror(errno));
 +#endif
  	temporarily_use_uid_effective = 0;
