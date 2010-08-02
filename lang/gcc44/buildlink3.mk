@@ -56,7 +56,10 @@ BUILDLINK_DEPMETHOD.gcc44+=	full
 BUILDLINK_DEPMETHOD.gcc44?=	build
 .endif
 
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} != "Minix"
 .include "../../mk/pthread.buildlink3.mk"
+.endif
 .include "../../devel/gettext-lib/buildlink3.mk"
 .endif # GCC44_BUILDLINK3_MK
 
