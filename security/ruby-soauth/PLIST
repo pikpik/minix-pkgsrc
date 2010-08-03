@@ -1,0 +1,9 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/soauth-${PKGVERSION}.gem
+${GEM_LIBDIR}/LICENSE
+${GEM_LIBDIR}/README.markdown
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/lib/soauth.rb
+${GEM_LIBDIR}/soauth.gemspec
+${GEM_LIBDIR}/test/soauth_test.rb
+${GEM_HOME}/specifications/soauth-${PKGVERSION}.gemspec
