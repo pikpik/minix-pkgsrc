@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/07/11 07:08:19 seb Exp $
 
-DISTNAME=	Catalyst-Engine-PSGI-0.10
+DISTNAME=	Catalyst-Engine-PSGI-0.11
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	www perl5
