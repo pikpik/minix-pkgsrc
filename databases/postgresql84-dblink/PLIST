@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/postgresql/dblink.la
+share/postgresql/contrib/dblink.sql
+share/postgresql/contrib/uninstall_dblink.sql
