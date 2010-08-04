@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2008/10/19 19:18:54 he Exp $
+# $NetBSD: Makefile,v 1.9 2010/02/02 19:26:25 sno Exp $
 
-DISTNAME=	Lingua-EN-Inflect-1.891
-PKGNAME=	p5-${DISTNAME:S/891/89.1/}
+DISTNAME=	Lingua-EN-Inflect-1.892
+PKGNAME=	p5-${DISTNAME:S/892/89.2/}
 #PKGREVISION=	1
 SVR4_PKGNAME=	p5lei
 CATEGORIES=	textproc perl5
