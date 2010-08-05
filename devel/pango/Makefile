@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.144 2010/06/16 17:35:50 drochner Exp $
+# $NetBSD: Makefile,v 1.145 2010/08/01 08:10:10 obache Exp $
 
 DISTNAME=		pango-1.28.1
 CATEGORIES=		devel fonts
@@ -42,8 +42,6 @@ PLIST_VARS+=		carbon
 
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.17.3
 .include "../../devel/glib2/buildlink3.mk"
-# XXX: later maybe add an option for libthai to provide pango-thai-lang.la?
-#.include "../../devel/libthai/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.8.0
 .include "../../graphics/cairo/buildlink3.mk"

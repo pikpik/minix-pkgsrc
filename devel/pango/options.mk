@@ -1,12 +1,12 @@
-# $NetBSD: options.mk,v 1.7 2008/04/22 12:15:38 tron Exp $
+# $NetBSD: options.mk,v 1.8 2008/08/19 18:10:22 tron Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.pango
-PKG_SUPPORTED_OPTIONS=	x11
+PKG_SUPPORTED_OPTIONS=	x11 libthai
 PKG_SUGGESTED_OPTIONS=	x11
 
 .include "../../mk/bsd.options.mk"
 
-PLIST_VARS+=		x11
+PLIST_VARS+=		x11 thai
 
 ###
 ### X11 support
@@ -30,4 +30,12 @@ CONFIGURE_ARGS+=	--without-x
 .if ${OPSYS} == "Darwin"
 PLIST.carbon=	yes
 .endif
+.endif
+
+###
+### Thai lauguage support
+###
+.if !empty(PKG_OPTIONS:Mlibthai)
+PLIST.thai=		yes
+.include "../../devel/libthai/buildlink3.mk"
 .endif
