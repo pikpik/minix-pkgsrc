@@ -77,6 +77,12 @@ PKG_METADATA_DIR="${2-${CURDIR}}"
 
 PKG_REFCOUNT_DIRS_DBDIR="${PKG_REFCOUNT_DBDIR}/dirs"
 
+if ${TEST} -n "${PKG_DESTDIR}"; then
+	PKG_DBDIR="${PKG_DESTDIR}${PKG_DBDIR}"
+	PKG_REFCOUNT_DBDIR="${PKG_DESTDIR}${PKG_REFCOUNT_DBDIR}"
+	PKG_REFCOUNT_DIRS_DBDIR="${PKG_DESTDIR}${PKG_REFCOUNT_DIRS_DBDIR}"
+fi
+
 case "${PKG_CONFIG:-@PKG_CONFIG@}" in
 [Yy][Ee][Ss]|[Tt][Rr][Uu][Ee]|[Oo][Nn]|1)
 	_PKG_CONFIG=yes
@@ -111,6 +117,7 @@ ADD)
 		perms="$shadow_dir/+PERMISSIONS"
 		preexist="$shadow_dir/+PREEXISTING"
 		token="$shadow_dir/${PKGNAME}"
+		dir="${PKG_DESTDIR}$dir"
 		if ${TEST} ! -d "$shadow_dir"; then
 			${MKDIR} $shadow_dir
 			${TEST} ! -d "$dir" ||
@@ -162,6 +169,7 @@ REMOVE)
 		preexist="$shadow_dir/+PREEXISTING"
 		token="$shadow_dir/${PKGNAME}"
 		tokentmp="$token.tmp.$$"
+		dir="${PKG_DESTDIR}$dir"
 		if ${TEST} -f "$token" && \
 		   ${GREP} "^${PKG_METADATA_DIR}$" $token >/dev/null; then
 			${CAT} "$token" | ${GREP} -v "^${PKG_METADATA_DIR}$" > $tokentmp
@@ -193,7 +201,7 @@ PERMS)
 		esac
 		case $dir in
 		"")	continue ;;
-		[!/]*)	dir="${PKG_PREFIX}/$dir" ;;
+		[!/]*)	dir="${PKG_DESTDIR}${PKG_PREFIX}/$dir" ;;
 		esac
 		case $d_user in
 		"")	;;
@@ -215,7 +223,7 @@ CHECK-ADD)
 	{ while read dir d_flags d_mode d_user d_group; do
 		case $dir in
 		"")	continue ;;
-		[!/]*)	dir="${PKG_PREFIX}/$dir" ;;
+		[!/]*)	dir="${PKG_DESTDIR}${PKG_PREFIX}/$dir" ;;
 		esac
 		${TEST} ! -d "$dir" || continue
 		case $d_flags in
@@ -262,6 +270,7 @@ CHECK-REMOVE)
 		esac
 		shadow_dir="${PKG_REFCOUNT_DIRS_DBDIR}$dir"
 		${TEST} ! -d "$shadow_dir" || continue	# refcount isn't zero
+		dir="${PKG_DESTDIR}$dir"
 		case "$printed_header" in
 		yes)	;;
 		*)	printed_header=yes
@@ -290,7 +299,7 @@ CHECK-PERMS)
 	{ while read dir d_flags d_mode d_user d_group; do
 		case $dir in
 		"")	continue ;;
-		[!/]*)	dir="${PKG_PREFIX}/$dir" ;;
+		[!/]*)	dir="${PKG_DESTDIR}${PKG_PREFIX}/$dir" ;;
 		esac
 		${TEST} -d "$dir" || continue
 		case $d_user:$d_group:$d_mode in

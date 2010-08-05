@@ -114,6 +114,12 @@ VIEW-REMOVE)
 	;;
 esac
 
+if ${TEST} -n "${PKG_DESTDIR}"; then
+	PKG_DBDIR="${PKG_DESTDIR}${PKG_DBDIR}"
+	PKG_REFCOUNT_DBDIR="${PKG_DESTDIR}${PKG_REFCOUNT_DBDIR}"
+	PKG_REFCOUNT_FILES_DBDIR="${PKG_DESTDIR}${PKG_REFCOUNT_FILES_DBDIR}"
+fi
+
 exitcode=0
 case $ACTION in
 ADD)
@@ -136,6 +142,9 @@ ADD)
 		perms="$shadow_dir/+PERMISSIONS"
 		preexist="$shadow_dir/+PREEXISTING"
 		token="$shadow_dir/${PKGNAME}"
+		file="${PKG_DESTDIR}$file"
+		f_eg="${PKG_DESTDIR}$f_eg"
+
 		if ${TEST} ! -d "$shadow_dir"; then
 			${MKDIR} $shadow_dir
 			${TEST} ! -f "$file" ||
@@ -202,6 +211,9 @@ REMOVE)
 		preexist="$shadow_dir/+PREEXISTING"
 		token="$shadow_dir/${PKGNAME}"
 		tokentmp="$token.tmp.$$"
+		file="${PKG_DESTDIR}$file"
+		f_eg="${PKG_DESTDIR}$f_eg"
+
 		if ${TEST} -f "$token" && \
 		   ${GREP} "^${PKG_METADATA_DIR}$" $token >/dev/null; then
 			${CAT} "$token" | ${GREP} -v "^${PKG_METADATA_DIR}$" > $tokentmp
@@ -237,7 +249,7 @@ PERMS)
 		esac
 		case $file in
 		"")	continue ;;
-		[!/]*)	file="${PKG_PREFIX}/$file" ;;
+		[!/]*)	file="${PKG_DESTDIR}${PKG_PREFIX}/$file" ;;
 		esac
 		case $f_user in
 		"")	;;
@@ -275,7 +287,7 @@ CHECK-ADD)
 	{ while read file f_flags f_eg f_mode f_user f_group; do
 		case $file in
 		"")	continue ;;
-		[!/]*)	file="${PKG_PREFIX}/$file" ;;
+		[!/]*)	file="${PKG_DESTDIR}${PKG_PREFIX}/$file" ;;
 		esac
 		${TEST} ! -f "$file" || continue
 		case $f_flags in
@@ -284,7 +296,7 @@ CHECK-ADD)
 		esac
 		case $f_eg in
 		"")	continue ;;
-		[!/]*)	f_eg="${PKG_PREFIX}/$f_eg" ;;
+		[!/]*)	f_eg="${PKG_DESTDIR}${PKG_PREFIX}/$f_eg" ;;
 		esac
 
 		case "$printed_header" in
@@ -330,6 +342,8 @@ CHECK-REMOVE)
 		${TEST} -f "$file" || continue
 		shadow_dir="${PKG_REFCOUNT_FILES_DBDIR}$file"
 		${TEST} ! -d "$shadow_dir" || continue	# refcount isn't zero
+		file="${PKG_DESTDIR}$file"
+
 		case "$printed_header" in
 		yes)	;;
 		*)	printed_header=yes
@@ -358,7 +372,7 @@ CHECK-PERMS)
 	{ while read file f_flags f_eg f_mode f_user f_group; do
 		case $file in
 		"")	continue ;;
-		[!/]*)	file="${PKG_PREFIX}/$file" ;;
+		[!/]*)	file="${PKG_DESTDIR}${PKG_PREFIX}/$file" ;;
 		esac
 		${TEST} -f "$file" || continue
 		case $f_mode:$f_user:$f_group in
