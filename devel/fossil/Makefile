@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/01/24 19:44:42 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2010/05/31 20:21:06 wiz Exp $
 #
 
-DISTNAME=	fossil-src-20100521162104
+DISTNAME=	fossil-src-20100805100943
 PKGNAME=	${DISTNAME:S/-src//:C/-(2........)/-\1./}
 CATEGORIES=	devel scm
 MASTER_SITES=	http://www.fossil-scm.org/download/
