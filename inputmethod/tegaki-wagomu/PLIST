@@ -1,0 +1,7 @@
+@comment $NetBSD$
+${PYSITELIB}/_wagomu.so
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/wagomu.py
+${PYSITELIB}/wagomu.pyc
+${PYSITELIB}/wagomu.pyo
+share/tegaki/engines/tegakiwagomu.py
