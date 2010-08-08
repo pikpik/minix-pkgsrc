@@ -1,5 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2010/08/08 00:42:23 obache Exp $
 lib/ibus-tegaki/ibus-engine-tegaki
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 share/ibus-tegaki/engine/__init__.py
 share/ibus-tegaki/engine/engine.py
 share/ibus-tegaki/engine/factory.py
