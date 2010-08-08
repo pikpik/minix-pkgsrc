@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+share/scim-python/helper/tegaki/__init__.py
+share/scim-python/helper/tegaki/scimtegaki.py
