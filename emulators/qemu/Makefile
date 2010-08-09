@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2010/08/09 11:49:10 tsutsui Exp $
+# $NetBSD: Makefile,v 1.70 2010/08/09 20:28:32 tsutsui Exp $
 #
 
 DISTNAME=		qemu-0.12.4
@@ -61,7 +61,7 @@ BUILDLINK_PASSTHRU_RPATHDIRS+= /usr/lib
 INSTALLATION_DIRS=	${PKGMANDIR}/man1 share/doc/qemu
 
 UE_ARCHS+=		alpha arm armeb cris i386 m68k microblaze mips mipsel
-UE_ARCHS+=		nbd ppc ppc64 ppc64abi32 sh4 sh4eb sparc sparc32plus
+UE_ARCHS+=		ppc ppc64 ppc64abi32 sh4 sh4eb sparc sparc32plus
 UE_ARCHS+=		sparc64 x86_64
 
 .if !empty(OPSYS:M*BSD) || !empty(OPSYS:MDragonFly)
