@@ -30,7 +30,7 @@ OSVERSION_SPECIFIC=	yes
 
 .if ${X11_TYPE} == "modular"
 PKG_FAIL_REASON+=	"${PKGNAME} should only be used with X11_TYPE=native."
-.elif !exists(${X11BASE}/include/X11/X.h)
+.elif !exists(${X11BASE}/include/X11/X.h) && ${OPSYS} != "Minix"
 PKG_FAIL_REASON+=	"pkgsrc has been configured to use a system provided X11 installation"
 PKG_FAIL_REASON+=	"but one could not be found. Possible solutions:"
 PKG_FAIL_REASON+=	""
@@ -39,6 +39,9 @@ PKG_FAIL_REASON+=	"	*) set X11_TYPE=modular in mk.conf to use X11 from pkgsrc"
 PKG_FAIL_REASON+=	""
 PKG_FAIL_REASON+=	"Please note that changing the value of X11_TYPE in existing"
 PKG_FAIL_REASON+=	"pkgsrc installations is not supported!"
+.endif
+.if ${OPSYS} == "Minix"
+DEPENDS+=	x11-[0-9]*:../../minix/x11
 .endif
 
 .if ${OPSYS} == "IRIX"
