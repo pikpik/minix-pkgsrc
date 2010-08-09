@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2010/06/13 22:45:07 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2010/07/06 15:22:23 drochner Exp $
 #
 
-DISTNAME=	totem-pl-parser-2.30.1
+DISTNAME=	totem-pl-parser-2.30.2
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/totem-pl-parser/2.30/}
 EXTRACT_SUFX=	.tar.bz2
@@ -29,4 +29,5 @@ TOOLS_NOOP+=		gtkdoc-rebase
 .include "../../mail/gmime24/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../net/libsoup24/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
