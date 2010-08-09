@@ -1,9 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/08/07 12:54:45 obache Exp $
 #
 
 DISTNAME=	tegaki-wagomu-0.3.1
 CATEGORIES=	inputmethod
-MASTER_SITES=	http://www.tegaki.org/releases/${PKGVERSION_NOREV}/
+MASTER_SITES=	http://www.tegaki.org/releases/${PKGVERSION_NOREV}/ \
+		http://www.tegaki.org/releases/0.3/
 DISTFILES=	tegaki-wagomu-0.3${EXTRACT_SUFX} ${DEFAULT_DISTFILES}
 
 MAINTAINER=	obache@NetBSD.org
