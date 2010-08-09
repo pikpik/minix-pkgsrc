@@ -549,6 +549,8 @@ X11BASE?=	/usr
 .  elif !empty(MACHINE_PLATFORM:MDarwin-9.*-*) || \
         !empty(MACHINE_PLATFORM:MDarwin-??.*-*)
 X11BASE?=	/usr/X11
+.  elif ${OPSYS} == "Minix"
+X11BASE?=	${LOCALBASE}/X11R6
 .  elif exists(/usr/X11R7/lib/libX11.so)
 X11BASE?=	/usr/X11R7
 .  else

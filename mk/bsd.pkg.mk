@@ -475,7 +475,7 @@ PKG_FAIL_REASON+= "${PKGNAME} is restricted:" \
 PKG_FAIL_REASON+= "${PKGNAME} may not be built, because it utilizes strong cryptography"
 .    endif
 .  endif
-.  if defined(USE_X11) && (${X11_TYPE} == "native") && !exists(${X11BASE})
+.  if defined(USE_X11) && (${X11_TYPE} == "native") && !exists(${X11BASE}) && (${OPSYS} != "Minix")
 PKG_FAIL_REASON+= "${PKGNAME} uses X11, but ${X11BASE} not found"
 .  endif
 .  if defined(BROKEN)
