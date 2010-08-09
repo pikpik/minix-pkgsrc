@@ -86,8 +86,8 @@ then
 fi
 
 # Run imake to process the Imakefile.
-${IMAKE} -DUseInstalled -I${X11BASE}/lib/X11/config -s - |
-${IMAKE_MAKE} -f - builtin-test |
+${IMAKE} -DUseInstalled -I${X11BASE}/lib/X11/config
+${IMAKE_MAKE} builtin-test |
 ${GREP} -q yes
 exitcode="$?"
 
