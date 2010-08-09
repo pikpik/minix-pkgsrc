@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2009/08/26 19:57:38 sno Exp $
+# $NetBSD: Makefile,v 1.8 2010/01/18 09:58:57 wiz Exp $
 
-DISTNAME=		djvulibre-3.5.21
-PKGNAME=		djvulibre-lib-3.5.21
-PKGREVISION=		3
+DISTNAME=		djvulibre-3.5.22
+PKGNAME=		djvulibre-lib-3.5.22
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=djvu/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://djvulibre.djvuzone.org/
 COMMENT=		Compression library for scanned documents
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
