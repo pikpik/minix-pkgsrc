@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.846 2010/08/02 07:06:44 wiz Exp $
+# $NetBSD: Makefile,v 1.847 2010/08/04 21:33:16 seb Exp $
 #
 
 COMMENT=	Networking tools
@@ -148,6 +148,7 @@ SUBDIR+=	gofish
 SUBDIR+=	gopher
 SUBDIR+=	gsnmp
 SUBDIR+=	gssdp
+SUBDIR+=	gst-plugins0.10-libnice
 SUBDIR+=	gst-plugins0.10-mms
 SUBDIR+=	gst-plugins0.10-soup
 SUBDIR+=	gt-itm
