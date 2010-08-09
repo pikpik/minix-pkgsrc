@@ -226,6 +226,8 @@ LDFLAGS+=	${PERL5_LDFLAGS}
 
 .include "../../lang/perl5/packlist.mk"
 
+.if ${OPSYS} != "Minix"
 .include "../../mk/pthread.buildlink3.mk"
+.endif
 
 .endif	# PERL5_MODULE_MK
