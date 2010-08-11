@@ -76,11 +76,6 @@ TOOLS_PLATFORM.sort?=		/usr/gnu/bin/sort
 TOOLS_PLATFORM.sort?=		/usr/bin/sort
 .endif
 
-# Temporary hack to fool  configure scripts into using
-# gar and gnm with gcc
-TOOLS_PLATFORM.ar?=	/usr/gnu/bin/gar
-TOOLS_PLATFORM.nm?=	/usr/gnu/bin/gnm
-
 # Other tools if they exist
 .if exists(/usr/local/bin/zcat)
 TOOLS_PLATFORM.gzcat?=		/usr/local/bin/zcat
