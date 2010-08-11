@@ -3,6 +3,7 @@ include/muParser.h
 include/muParserBase.h
 include/muParserBytecode.h
 include/muParserCallback.h
+include/muParserComplex.h
 include/muParserDLL.h
 include/muParserDef.h
 include/muParserError.h
@@ -13,4 +14,6 @@ include/muParserTest.h
 include/muParserToken.h
 include/muParserTokenReader.h
 lib/libmuparser.so
+lib/libmuparser.so.0
+lib/libmuparser.so.0.0.0
 lib/pkgconfig/muparser.pc
