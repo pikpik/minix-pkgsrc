@@ -1,0 +1,28 @@
+$NetBSD$
+
+--- config/cf/minix3.cf.orig	Wed Aug 11 09:57:19 2010
++++ config/cf/minix3.cf
+@@ -21,10 +21,6 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
+ 
+ #define UseGcc
+ 
+-/* Try to restrict what gets built */
+-#define BuildServer NO
+-#define BuildFontServer NO
+-#define BuildFonts NO
+ #endif /* GccDevelTree */
+ 
+ /* The default compiler is ACK */
+@@ -39,10 +35,10 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
+ /* #define CcCmd		acd -name gcc -stack 15m */
+ #define CcCmd			gcc
+ #define	DefaultCCOptions	
+-#define ArCmd			gar clq
++#define ArCmd			ar clq
+ /* #define ArAddCmd		ArCmd */
+ /* #define DoRanlibCmd		NO */
+-#define LdCmd			gld
++#define LdCmd			ld
+ #endif
+ 
+ #ifdef AcdAck

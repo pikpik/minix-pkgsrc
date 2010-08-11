@@ -26,7 +26,7 @@ SUBST_MESSAGE.path=	Adjusting path.
 SUBST_FILES.path=	config/cf/minix3.cf x11.pc
 SUBST_FILES.path+=	config/imake/imakemdep.h config/imake/imake.c Makefile
 SUBST_SED.path=		-e "s|/usr/X11R6-gcc|${X11R6_PREFIX}|g"
-SUBST_SED.path+=	-e "s|/usr/gnu/bin/gcc|${PREFIX}/bin/gcc|g"
+SUBST_SED.path+=	-e "s|/usr/gnu/bin/gcc|gcc|g"
 
 GENERATE_PLIST+= \
 	cd ${DESTDIR}${PREFIX} && ${FIND} ${X11R6_SUBPREFIX} \( -type f -o -type l \) -print | ${SORT};

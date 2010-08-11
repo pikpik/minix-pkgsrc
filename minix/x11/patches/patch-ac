@@ -1,0 +1,21 @@
+$NetBSD$
+
+--- programs/Xserver/hw/xfree86/os-support/minix3/io_intr.S.orig	Wed Aug 11 04:40:48 2010
++++ programs/Xserver/hw/xfree86/os-support/minix3/io_intr.S
+@@ -0,0 +1,16 @@
++/*	intr_disable(), intr_enable - Disable/Enable hardware interrupts. */
++/*							Author: Kees J. Bot */
++/*								18 Mar 1996 */
++/*	void intr_disable(void); */
++/*	void intr_enable(void); */
++
++.text
++.globl	_intr_disable
++_intr_disable:
++	cli
++	ret
++
++.globl	_intr_enable
++_intr_enable:
++	sti
++	ret
