@@ -4,9 +4,9 @@
 # override the default selection of as(1) and use the one from devel/binutils
 # instead.
 
-GNU_PREFIX_CMD= ${PKG_INFO} -Q GNU_PROGRAM_PREFIX binutils 2>/dev/null \
+GNU_PREFIX_CMD= ${PKG_INFO} -Q BINUTILS_PROGRAM_PREFIX binutils 2>/dev/null \
 		|| { cd ${BUILDLINK_PKGSRCDIR.binutils} \
-		&& ${MAKE} ${MAKEFLAGS} show-var VARNAME=GNU_PROGRAM_PREFIX; }
+		&& ${MAKE} ${MAKEFLAGS} show-var VARNAME=BINUTILS_PROGRAM_PREFIX; }
 
 PKG_AS=		${PREFIX}/bin/${:!${GNU_PREFIX_CMD}!}as
 
