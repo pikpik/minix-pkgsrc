@@ -110,11 +110,6 @@ CONFIGURE_ARGS+=	--disable-libssp
 CONFIGURE_ARGS+=	--with-gmp=${BUILDLINK_PREFIX.gmp}
 CONFIGURE_ARGS+=	--with-mpfr=${BUILDLINK_PREFIX.mpfr}
 
-.if ${OPSYS} == "Minix"
-CONFIGURE_ARGS+=	--with-as=${BUILDLINK_PREFIX.binutils}/bin/${GNU_PROGRAM_PREFIX}as
-CONFIGURE_ARGS+=	--with-ld=${BUILDLINK_PREFIX.binutils}/bin/${GNU_PROGRAM_PREFIX}ld
-.endif
-
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL}
 
 # ${WRKSRC}/gcc-4.4.1/libjava/contrib/aotcompile.py.in stores the path to
@@ -195,7 +190,4 @@ GENERATE_PLIST+= { ${GENERATE_PLIST_SYMLINKS};                                  
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../math/mpfr/buildlink3.mk"
-.if ${OPSYS} == "Minix"
-.include "../../devel/binutils/buildlink3.mk"
-.endif
 .include "../../mk/bsd.pkg.mk"
