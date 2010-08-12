@@ -38,6 +38,17 @@ UNLIMIT_RESOURCES+=	datasize
 .include "options.mk"
 
 # Determine whether to use binutils
+.if ${OPSYS} == "Minix"
+DEPENDS+=	binutils>=2.16:../../devel/binutils
+
+BINUTILS_PREFIX_CMD= ${PKG_INFO} -Q BINUTILS_PROGRAM_PREFIX binutils 2>/dev/null \
+		|| { cd ${.CURDIR}/../../devel/binutils \
+		&& ${MAKE} ${MAKEFLAGS} show-var VARNAME=BINUTILS_PROGRAM_PREFIX; }
+BINUTILS_PREFIX= ${:!${BINUTILS_PREFIX_CMD}!}
+CONFIGURE_ARGS+=	--with-as=${LOCALBASE}/bin/${BINUTILS_PREFIX}as
+CONFIGURE_ARGS+=	--with-ld=${LOCALBASE}/bin/${BINUTILS_PREFIX}ld
+.info "=-=- ${CONFIGURE_ARGS} ${BINUTILS_PROGRAM_PREFIX}"
+.endif
 
 # REPLACE_AWK+=	gcc/testsuite/gcc.test-framework/test-framework.awk	\
 # 		gcc/mkmap-symver.awk					\
