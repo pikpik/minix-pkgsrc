@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2010/08/07 13:05:42 obache Exp $
+# $NetBSD: Makefile,v 1.41 2010/08/08 01:11:03 obache Exp $
 #
 
 COMMENT=	Input method tools and libraries
@@ -15,7 +15,7 @@ SUBDIR+=	canna-server
 SUBDIR+=	fcitx
 SUBDIR+=	gcin
 SUBDIR+=	gtk-im-libthai
-SBUDIR+=	ibus
+SUBDIR+=	ibus
 SUBDIR+=	ibus-anthy
 SUBDIR+=	ibus-array
 SUBDIR+=	ibus-chewing
