@@ -2,6 +2,8 @@
 bin/oauth
 ${GEM_HOME}/cache/oauth-${PKGVERSION}.gem
 ${GEM_LIBDIR}/.gitignore
+${GEM_LIBDIR}/Gemfile
+${GEM_LIBDIR}/Gemfile.lock
 ${GEM_LIBDIR}/HISTORY
 ${GEM_LIBDIR}/LICENSE
 ${GEM_LIBDIR}/README.rdoc
