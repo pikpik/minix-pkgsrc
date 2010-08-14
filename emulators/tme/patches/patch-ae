@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	2010-06-05 19:57:30.000000000 +0000
++++ configure
+@@ -12985,7 +12985,7 @@ i[3456789]86-* | x86_64-*) misc_hosts="x
+ esac
+ { echo "$as_me:$LINENO: result: ${misc_hosts}" >&5
+ echo "${ECHO_T}${misc_hosts}" >&6; }
+-if test "x${misc_hosts}" = no; then
++if test "x${misc_hosts}" = xno; then
+     misc_hosts=
+ fi
+ 
