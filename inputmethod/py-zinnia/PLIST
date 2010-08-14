@@ -3,3 +3,4 @@ ${PYSITELIB}/_zinnia.so
 ${PYSITELIB}/zinnia.py
 ${PYSITELIB}/zinnia.pyc
 ${PYSITELIB}/zinnia.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
