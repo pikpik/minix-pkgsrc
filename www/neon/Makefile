@@ -21,6 +21,7 @@ CONFIGURE_ARGS+=	--with-ssl=yes
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	--without-pic
+CONFIGURE_ENV+=	ac_cv_func_lseek64=no
 .else
 CONFIGURE_ARGS+=	--enable-shared
 .endif
