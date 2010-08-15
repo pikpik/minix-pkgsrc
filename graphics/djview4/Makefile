@@ -1,19 +1,17 @@
-# $NetBSD: Makefile,v 1.5 2010/01/18 09:58:57 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/06/13 22:44:29 wiz Exp $
 #
 
-DISTNAME=	djview4-4.2-2
-PKGNAME=	djview4-4.2.2
-PKGREVISION=	3
+DISTNAME=	djview4-4.5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=djvu/}
 
 MAINTAINER=	matias@dotbsd.org
 HOMEPAGE=	http://djvu.sourceforge.net/
 COMMENT=	Portable DjVu viewer and browser plugin
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=		${WRKDIR}/djview4-4.2
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	pkg-config
