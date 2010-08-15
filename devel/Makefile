@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1387 2010/08/09 23:12:16 seb Exp $
+# $NetBSD: Makefile,v 1.1388 2010/08/10 17:33:34 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -1149,10 +1149,12 @@ SUBDIR+=	py-newt
 SUBDIR+=	py-nose
 SUBDIR+=	py-pexpect
 SUBDIR+=	py-pqueue
+SUBDIR+=	py-pysvn
 SUBDIR+=	py-pytemplate
 SUBDIR+=	py-pyutil
 SUBDIR+=	py-quixote
 SUBDIR+=	py-readline
+SUBDIR+=	py-rope
 SUBDIR+=	py-setuptools
 SUBDIR+=	py-setuptools_trial
 SUBDIR+=	py-subversion
