@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/dtpstree
+man/man1/dtpstree.1
