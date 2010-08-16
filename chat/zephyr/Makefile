@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/10/29 21:53:10 tnn Exp $
+# $NetBSD: Makefile,v 1.18 2010/02/19 17:54:38 joerg Exp $
 #
 
 DISTNAME=	zephyr-20010518
@@ -6,7 +6,7 @@ PKGREVISION=	7
 CATEGORIES=	chat net
 MASTER_SITES=	ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/
 
-MAINTAINER=	sommerfeld@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://web.mit.edu/olh/Zephyr/index.html
 COMMENT=	Project Athena's original Instant Messaging system
 
