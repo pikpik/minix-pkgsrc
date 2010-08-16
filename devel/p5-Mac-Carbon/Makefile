@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/09/22 20:56:53 sno Exp $
+# $NetBSD: Makefile,v 1.4 2009/10/14 08:07:22 obache Exp $
 #
 
 DISTNAME=	Mac-Carbon-0.82
@@ -10,7 +10,7 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Mac-Carbon/
 COMMENT=	Carbon API for perl on Mac OS X
 
-ONLY_FOR_PLATFORM=	Darwin-*-*
+ONLY_FOR_PLATFORM=	Darwin-*-i386 Darwin-*-powerpc
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
