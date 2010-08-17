@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/09/09 15:11:31 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2009/12/15 11:00:11 wiz Exp $
 #
 
 DISTNAME=	libproxy-0.3.0
@@ -27,4 +27,5 @@ PKGCONFIG_OVERRIDE+=	libproxy-1.0.pc.in
 
 #.include "../../lang/python/extension.mk"
 .include "../../mk/dlopen.buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
