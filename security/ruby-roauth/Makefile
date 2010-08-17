@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/08/03 05:01:41 obache Exp $
 
-DISTNAME=	roauth-0.0.2
+DISTNAME=	roauth-0.0.3
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	security
 
