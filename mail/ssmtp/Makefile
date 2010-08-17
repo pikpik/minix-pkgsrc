@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2008/11/16 13:54:12 tron Exp $
+# $NetBSD: Makefile,v 1.22 2009/02/07 23:21:05 joerg Exp $
 #
 # TLS functionality needs testing. Please let me know the result,
 # and preferably info about your system.
 #
-# pkg@pop.707.to
 # Toru TAKAMIZU
 
 DISTNAME=	ssmtp_2.61.orig
@@ -12,8 +11,8 @@ PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/s/ssmtp/}
 
-MAINTAINER=	pkg@pop.707.to
-HOMEPAGE=	http://packages.debian.org/testing/mail/ssmtp.html
+MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://packages.debian.org/stable/mail/ssmtp
 COMMENT=	Extremely simple MTA to forward mail to a mail hub
 
 PKG_DESTDIR_SUPPORT=	user-destdir
