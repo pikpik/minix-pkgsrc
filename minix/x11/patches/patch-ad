@@ -1,0 +1,19 @@
+$NetBSD$
+
+--- programs/xdm/config/Xsession.orig	Sun Aug  1 11:49:08 2010
++++ programs/xdm/config/Xsession
+@@ -42,9 +42,9 @@ else
+ 	if [ -r "$resources" ]; then
+ 		xrdb -load "$resources"
+ 	fi
+-	/usr/X11R6/bin/xbiff -geometry +0+0 &
+-	/usr/X11R6/bin/xterm -geometry +56+0 &
+-	/usr/X11R6/bin/xterm -geometry +300+200 &
+-	exec /usr/X11R6/bin/twm
+-	#exec /usr/X11R6/bin/xsm
++	/usr/pkg/X11R6/bin/xbiff -geometry +0+0 &
++	/usr/pkg/X11R6/bin/xterm -geometry +56+0 &
++	/usr/pkg/X11R6/bin/xterm -geometry +300+200 &
++	exec /usr/pkg/X11R6/bin/twm
++	#exec /usr/pkg/X11R6/bin/xsm
+ fi
