@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2009/09/24 06:50:11 sno Exp $
+# $NetBSD: Makefile,v 1.6 2010/01/26 12:13:32 sno Exp $
 
-DISTNAME=	DBIx-Class-Fixtures-1.001009
+DISTNAME=	DBIx-Class-Fixtures-1.001010
 PKGNAME=	p5-${DISTNAME}
 #PKGREVISION=	1
 CATEGORIES=	databases perl5
