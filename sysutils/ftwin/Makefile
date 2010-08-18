@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2010/01/18 09:59:26 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2010/06/13 22:45:21 wiz Exp $
 #
 
 DISTNAME=	ftwin-0.8.5
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.meroware.org/ftwin/
 EXTRACT_SUFX=	.tar.bz2
@@ -27,6 +27,7 @@ post-install:
 
 .include "../../archivers/libarchive/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
+BUILDLINK_DEPMETHOD.check=	build
 .include "../../devel/check/buildlink3.mk"
 .include "../../devel/apr/buildlink3.mk"
 .include "../../devel/apr-util/buildlink3.mk"
