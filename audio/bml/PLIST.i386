@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/win32/BuzzMachineLoader.dll
