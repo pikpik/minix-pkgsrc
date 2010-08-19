@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.548 2010/08/01 12:15:36 obache Exp $
+# $NetBSD: Makefile,v 1.549 2010/08/05 12:19:27 obache Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -238,6 +238,7 @@ SUBDIR+=	p5-Lingua-EN-Inflect
 SUBDIR+=	p5-Lingua-EN-Inflect-Number
 SUBDIR+=	p5-Lingua-EN-Numbers-Ordinate
 SUBDIR+=	p5-Lingua-EN-Sentence
+SUBDIR+=	p5-Lingua-PT-Stemmer
 SUBDIR+=	p5-Lingua-Preferred
 SUBDIR+=	p5-Lingua-Stem-Snowball
 SUBDIR+=	p5-List-Compare
