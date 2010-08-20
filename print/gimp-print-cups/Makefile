@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2010/01/18 09:59:22 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2010/06/13 22:45:15 wiz Exp $
 
 DISTNAME=	gimp-print-4.2.7
 PKGNAME=	gimp-print-cups-4.2.7
@@ -6,7 +6,7 @@ PKGREVISION=	9
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gimp-print/}
 
-MAINTAINER=	gdt@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gimp-print.sourceforge.net/
 COMMENT=	GIMP print plugin
 
