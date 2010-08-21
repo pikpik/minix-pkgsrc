@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2007/02/22 19:26:48 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2010/02/10 18:11:45 joerg Exp $
 
 DISTNAME=	imm36a1
 PKGNAME=	imm-3.6a1
@@ -18,5 +18,5 @@ DEPENDS+=	xv>=3.10:../../graphics/xv
 WRKSRC=		${WRKDIR}/${DISTNAME}.src
 BUILD_TARGET=	netbsd
 
-.include "../../x11/tk83/buildlink3.mk"
+#.include "../../x11/tk83/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
