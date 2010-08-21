@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2006/09/03 00:56:29 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2010/02/10 18:11:45 joerg Exp $
 #
 
 DISTNAME=		nt.1.5a23
@@ -21,7 +21,7 @@ USE_TOOLS+=		gmake
 do-configure:
 	cd ${WRKSRC}/netbsd && ${SH} configure
 
-.include "../../x11/tk83/buildlink3.mk"
+#.include "../../x11/tk83/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
 
 #DISGUSTING HACK ALERT

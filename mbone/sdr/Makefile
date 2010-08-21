@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2009/12/02 08:19:02 snj Exp $
+# $NetBSD: Makefile,v 1.51 2010/02/10 18:11:46 joerg Exp $
 
 DISTNAME=	sdr-3.0
 PKGREVISION=	2
@@ -57,5 +57,5 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sdr ${DESTDIR}${PREFIX}/bin/sdr
 
 .include "../../mbone/common-mml/buildlink3.mk"
-.include "../../x11/tk83/buildlink3.mk"
+#.include "../../x11/tk83/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
