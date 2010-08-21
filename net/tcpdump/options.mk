@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2005/06/12 19:41:45 salo Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.tcpdump
-PKG_SUPPORTED_OPTIONS=	inet6 ssl
+PKG_SUPPORTED_OPTIONS=	inet6 ssl libsmi
 PKG_SUGGESTED_OPTIONS=	ssl
 
 .include "../../mk/bsd.options.mk"
@@ -17,4 +17,8 @@ USE_OLD_DES_API=	yes
 .include "../../security/openssl/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-crypto
+.endif
+
+.if !empty(PKG_OPTIONS:Mlibsmi)
+.include "../../devel/libsmi/buildlink3.mk"
 .endif
