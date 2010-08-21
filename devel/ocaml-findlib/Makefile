@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2009/02/16 16:29:18 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2009/05/28 21:22:35 zafer Exp $
 #
 
-DISTNAME=		findlib-1.1.2pl1
+DISTNAME=		findlib-1.2.6
 PKGNAME=		ocaml-${DISTNAME}
-PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		http://download.camlcity.org/download/
 
@@ -21,8 +20,7 @@ CONFIGURE_ARGS+=	-mandir ${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	-config ${PKG_SYSCONFDIR}/ocamlfind.conf
 
 EGDIR=			${PREFIX}/share/examples/ocaml-findlib
-INSTALL_MAKE_FLAGS+=	OCAMLFIND_CONF=${EGDIR}/ocamlfind.conf \
-			prefix=${DESTDIR}
+INSTALL_MAKE_FLAGS+=	OCAMLFIND_CONF=${EGDIR}/ocamlfind.conf
 INSTALLATION_DIRS=	libexec bin
 
 CONF_FILES=		${EGDIR}/ocamlfind.conf ${PKG_SYSCONFDIR}/ocamlfind.conf
