@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2008/10/19 19:18:00 he Exp $
+# $NetBSD: Makefile,v 1.17 2010/01/17 01:00:13 sno Exp $
 
 DISTNAME=	SVN-Simple-0.28
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5 scm
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SVN/}
 

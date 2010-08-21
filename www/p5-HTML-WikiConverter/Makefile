@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2008/12/12 22:42:39 he Exp $
+# $NetBSD: Makefile,v 1.6 2009/09/19 22:45:38 sno Exp $
 #
 
 DISTNAME=	HTML-WikiConverter-0.68
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTML/}
 

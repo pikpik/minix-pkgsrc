@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2009/05/19 08:59:29 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2010/05/28 14:56:14 wiz Exp $
 
 DISTNAME=	p5-pkgsrc-Dewey-1.1
+PKGREVISION=	1
 CATEGORIES=	pkgtools perl5
 MASTER_SITES=	# empty
 DISTFILES=	# empty

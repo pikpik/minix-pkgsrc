@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/06/01 21:41:39 seb Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/11 12:06:11 abs Exp $
 #
 
 DISTNAME=	Apache2-AuthCASSimple-0.10
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache2/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/16 21:34:51 sno Exp $
+# $NetBSD: Makefile,v 1.2 2010/02/12 20:33:02 sno Exp $
 #
 
 DISTNAME=	Padre-Plugin-Catalyst-0.08
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	editors perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Padre/}
 

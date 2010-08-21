@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2008/10/19 19:18:32 he Exp $
+# $NetBSD: Makefile,v 1.7 2010/03/09 22:00:49 sno Exp $
 
 DISTNAME=		Net-eBay-0.54
 PKGNAME=		p5-${DISTNAME}
-#PKGREVISION=		1
+PKGREVISION=		1
 CATEGORIES=		net perl5 www
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Net/}
 

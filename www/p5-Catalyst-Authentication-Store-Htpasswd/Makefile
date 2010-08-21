@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/01/27 08:47:25 sno Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/01/27 10:43:46 sno Exp $
 
 DISTNAME=	Catalyst-Authentication-Store-Htpasswd-1.003
 PKGNAME=	p5-${DISTNAME}
-#PKGREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Catalyst/}
 

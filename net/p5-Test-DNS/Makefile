@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/02/20 10:40:00 seb Exp $
+# $NetBSD: Makefile,v 1.2 2010/08/04 09:38:49 seb Exp $
 #
 
 DISTNAME=	Test-DNS-0.08
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Test/}
 

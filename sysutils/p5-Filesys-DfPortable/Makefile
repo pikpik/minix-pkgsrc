@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2009/03/10 17:27:28 sno Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/22 21:34:26 sno Exp $
 #
 
 DISTNAME=		Filesys-DfPortable-0.85
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		sysutils devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Filesys/}
 

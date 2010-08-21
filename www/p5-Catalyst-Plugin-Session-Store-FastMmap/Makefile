@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2009/10/24 15:05:35 sno Exp $
+# $NetBSD: Makefile,v 1.10 2009/11/02 19:21:19 abs Exp $
 
 DISTNAME=	Catalyst-Plugin-Session-Store-FastMmap-0.13
-PKGREVISION=	1
+PKGREVISION=	2
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Catalyst/}

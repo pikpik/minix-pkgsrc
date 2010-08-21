@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2009/05/19 08:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/09/20 13:05:21 sno Exp $
 #
 
 DISTNAME=	DBD-PgPP-0.07
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/A/AR/ARC/
 

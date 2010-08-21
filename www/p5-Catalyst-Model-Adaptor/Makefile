@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/02/02 11:17:08 sno Exp $
+# $NetBSD: Makefile,v 1.6 2010/03/10 10:19:10 sno Exp $
 
 DISTNAME=	Catalyst-Model-Adaptor-0.08
 PKGNAME=	p5-${DISTNAME}
-#PKGREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Catalyst/}
 

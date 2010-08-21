@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/04/18 15:17:42 seb Exp $
 #
 
 DISTNAME=	AnyEvent-AIO-1.1
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	parallel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=AnyEvent/}
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/18 10:26:49 abs Exp $
 
 DISTNAME=		Template-Provider-Encoding-0.10
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Template/}
 

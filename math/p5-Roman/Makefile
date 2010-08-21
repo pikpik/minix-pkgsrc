@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/09 03:18:07 dsainty Exp $
+# $NetBSD: Makefile,v 1.2 2009/02/22 13:21:32 he Exp $
 #
 
 DISTNAME=	Roman-1.23
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Roman/}
 EXTRACT_SUFX=	.zip

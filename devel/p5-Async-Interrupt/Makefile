@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2010/04/11 23:09:38 seb Exp $
+# $NetBSD: Makefile,v 1.5 2010/05/24 20:25:25 seb Exp $
 #
 
 DISTNAME=	Async-Interrupt-1.05
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Async/}
 

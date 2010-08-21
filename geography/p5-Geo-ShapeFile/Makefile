@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/04 09:52:04 wiz Exp $
 #
 
 DISTNAME=	Geo-ShapeFile-2.52
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	geography perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Geo/}
 

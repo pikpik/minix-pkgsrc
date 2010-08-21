@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/23 20:57:49 imil Exp $
 #
 
 DISTNAME=		WordPress-XMLRPC-1.18
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		www net
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=../by-authors/id/L/LE/LEOCHARRE/}
 

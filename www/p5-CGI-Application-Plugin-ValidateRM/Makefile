@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/10/19 19:19:07 he Exp $
+# $NetBSD: Makefile,v 1.5 2008/11/08 19:56:28 rhaen Exp $
 
 DISTNAME=		CGI-Application-Plugin-ValidateRM-2.3
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=CGI/}
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/24 12:25:35 tonnerre Exp $
+# $NetBSD: Makefile,v 1.2 2009/05/21 14:28:45 tonnerre Exp $
 #
 
 DISTNAME=		Convert-Translit-1.03
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		converters perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Convert/}
 

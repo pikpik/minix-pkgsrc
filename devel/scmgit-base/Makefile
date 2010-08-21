@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2010/02/22 09:20:30 obache Exp $
+# $NetBSD: Makefile,v 1.24 2010/04/28 22:01:43 morr Exp $
 #
 
 .include "../../devel/scmgit/Makefile.common"
 
 PKGNAME=		scmgit-base-${GIT_VERSION}
+PKGREVISION=		1
 COMMENT=		GIT Tree History Storage Tool (base package)
 
 PKG_DESTDIR_SUPPORT=	user-destdir

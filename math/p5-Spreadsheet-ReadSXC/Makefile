@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/02/01 09:04:02 seb Exp $
 #
 
 DISTNAME=	Spreadsheet-ReadSXC-0.20
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Spreadsheet/}
 

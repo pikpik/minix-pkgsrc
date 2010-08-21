@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2009/05/19 22:46:17 sno Exp $
+# $NetBSD: Makefile,v 1.4 2010/03/10 19:15:24 sno Exp $
 #
 
 DISTNAME=	Scalar-Defer-0.23
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Scalar/}
 

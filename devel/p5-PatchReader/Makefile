@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/10/19 19:17:58 he Exp $
+# $NetBSD: Makefile,v 1.8 2009/07/17 18:00:15 adrianp Exp $
 
 DISTNAME=	PatchReader-0.9.5
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/J/JK/JKEISER/}
 

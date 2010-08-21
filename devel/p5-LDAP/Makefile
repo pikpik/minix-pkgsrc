@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2008/06/12 02:14:23 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2008/10/19 19:17:56 he Exp $
 #
 
 DISTNAME=	perldap-1.2.2
 PKGNAME=	p5-LDAP-1.2.2
-PKGREVISION=	4
+PKGREVISION=	5
 SVR4_PKGNAME=	p5lda
 CATEGORIES=	devel perl5 databases
 MASTER_SITES=	${MASTER_SITE_MOZILLA_ALL:=directory/perldap/ancient/}
