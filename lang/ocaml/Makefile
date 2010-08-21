@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2009/11/19 03:18:58 minskim Exp $
+# $NetBSD: Makefile,v 1.65 2010/08/19 08:06:53 asau Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -10,6 +10,7 @@ CONFIGURE_ENV+=		disable_x11=yes
 
 BUILD_TARGET=		world
 MAKE_JOBS_SAFE=		no
+UNLIMIT_RESOURCES=	stacksize
 
 ###
 ### PLIST components
