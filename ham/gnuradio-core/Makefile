@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2010/02/10 19:17:40 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2010/05/15 07:28:08 adam Exp $
 
 PKGNAME=	gnuradio-core-${VERSION}
-PKGREVISION=	3
+PKGREVISION=	4
 COMMENT=	Runtime system and DSP blocks for GNU Radio
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -75,7 +75,7 @@ PYTHON_PATCH_SCRIPTS+=	gnuradio-core/src/tests/test_buffers.py
 .include "../../devel/cppunit/buildlink3.mk"
 .include "../../math/fftwf/buildlink3.mk"
 .include "../../math/gsl/buildlink3.mk"
-.include "../../math/py-Numeric/buildlink3.mk"
+.include "../../math/py-numpy/buildlink3.mk"
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"
