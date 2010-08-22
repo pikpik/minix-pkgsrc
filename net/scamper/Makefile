@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2007/07/08 12:35:11 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/02/11 22:41:44 joerg Exp $
 #
 
-DISTNAME=	scamper-cvs-20060331
+DISTNAME=	scamper-cvs-20100517
 PKGNAME=	${DISTNAME:S/-cvs//}
 CATEGORIES=	net
 MASTER_SITES=	http://www.wand.net.nz/scamper/
