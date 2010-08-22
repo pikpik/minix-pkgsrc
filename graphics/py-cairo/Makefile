@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2009/08/31 08:04:32 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2010/06/13 22:44:42 wiz Exp $
 #
 
 DISTNAME=		pycairo-1.8.8
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME:S/py//}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics
 MASTER_SITES=		http://cairographics.org/releases/
 
@@ -31,7 +31,6 @@ BUILDLINK_TRANSFORM+=	rm:-std=c99
 .endif
 
 .include "../../lang/python/extension.mk"
-.include "../../math/py-Numeric/buildlink3.mk"
 BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.8.8
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
