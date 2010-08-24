@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/10/19 19:17:53 he Exp $
+# $NetBSD: Makefile,v 1.10 2010/08/21 16:33:42 seb Exp $
 
 DISTNAME=	File-BaseDir-0.03
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_MODULE_TYPE=	Module::Build
-PERL5_USE_PACKLIST=	no
+PERL5_PACKLIST=		auto/File/BaseDir/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
