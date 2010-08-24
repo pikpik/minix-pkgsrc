@@ -1,4 +1,4 @@
-# $NetBSD: check-headers.mk,v 1.4 2007/03/16 10:29:22 rillig Exp $
+# $NetBSD: check-headers.mk,v 1.5 2008/02/20 10:43:55 rillig Exp $
 #
 # This file checks the C and C++ header files for possible problems.
 #
@@ -19,7 +19,7 @@ _VARGROUPS+=			check-headers
 _USER_VARS.check-headers=	CHECK_HEADERS
 _PKG_VARS.check-headers=	CHECK_HEADERS_SKIP
 
-.if defined(PKG_DEVELOPER)
+.if defined(PKG_DEVELOPER) && ${PKG_DEVELOPER} != "no"
 # still experimental
 #CHECK_HEADERS?=		yes
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: check-stripped.mk,v 1.2 2008/12/15 11:03:49 rillig Exp $
+# $NetBSD: check-stripped.mk,v 1.3 2008/12/15 12:28:49 rillig Exp $
 #
 # This file checks that after installation, all binaries conform to the
 # setting of INSTALL_UNSTRIPPED.
@@ -20,7 +20,7 @@
 #	Example: bin/* sbin/foo
 #
 
-.if defined(PKG_DEVELOPER)
+.if defined(PKG_DEVELOPER) && ${PKG_DEVELOPER} != "no"
 CHECK_STRIPPED?=		no	# XXX: change to "yes" later
 .else
 CHECK_STRIPPED?=		no

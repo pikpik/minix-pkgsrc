@@ -1,4 +1,4 @@
-# $NetBSD: check-shlibs.mk,v 1.16 2009/06/18 14:51:55 tnn Exp $
+# $NetBSD: check-shlibs.mk,v 1.17 2010/02/02 15:36:15 tnn Exp $
 #
 # This file verifies that all libraries used by the package can be found
 # at run-time.
@@ -22,7 +22,7 @@ _VARGROUPS+=			check-shlibs
 _USER_VARS.check-shlibs=	CHECK_SHLIBS
 _PKG_VARS.check-shlibs=		CHECK_SHLIBS_SUPPORTED
 
-.if defined(PKG_DEVELOPER)
+.if defined(PKG_DEVELOPER) && ${PKG_DEVELOPER} != "no"
 CHECK_SHLIBS?=			yes
 .endif
 CHECK_SHLIBS?=			no
