@@ -1,7 +1,8 @@
 ===========================================================================
 $NetBSD$
 
-You must create the device by typing:
-  $ mknod /dev/fuse -m 0666 c 10 229
+On NetBSD, there is no kernel FUSE support. perfused(8) must be
+started prior using FUSE filesystems. It will take care of creating
+a /dev/fuse socket.
 
 ===========================================================================
