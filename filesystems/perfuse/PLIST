@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/perfuse.h
+lib/libperfuse.so
+sbin/perfused
