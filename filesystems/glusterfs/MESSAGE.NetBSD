@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+glusterfs on NetBSD is extremely experimental. Do not feed it with 
+important data right now.
+
+===========================================================================
