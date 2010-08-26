@@ -1,6 +1,7 @@
 # $NetBSD: Makefile,v 1.77 2010/08/15 12:08:59 wiz Exp $
 
 DISTNAME=		autoconf-2.68
+PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=autoconf/}
 
@@ -25,6 +26,7 @@ USE_LANGUAGES=		# empty
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-lispdir
 CONFIGURE_ENV+=		ac_cv_prog_TEST_EMACS=no
+CONFIGURE_ENV+=		ac_cv_path_M4=${TOOLS_PATH.gm4}
 
 TEXINFO_REQD=		4.0
 INFO_FILES=		YES
