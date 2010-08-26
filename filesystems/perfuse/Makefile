@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	perfuse-20100825
+DISTNAME=	perfuse-20100826
 CATEGORIES=	filesystems
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/perfuse/
 EXTRACT_SUFX=	.tgz
