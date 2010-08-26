@@ -1,6 +1,7 @@
 # $NetBSD: Makefile,v 1.74 2010/07/20 13:57:28 tnn Exp $
 
 DISTNAME=		bison-2.4.3
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=bison/}
 EXTRACT_SUFX=		.tar.bz2
@@ -20,7 +21,7 @@ USE_TOOLS+=		grep gm4:run msgfmt
 INFO_FILES=		# PLIST
 
 CONFIGURE_ENV+=		gt_cv_func_gnugettext1_libintl=yes \
-			ac_cv_prog_M4=${TOOLS_PATH.gm4}
+			ac_cv_path_M4=${TOOLS_PATH.gm4}
 
 TEST_TARGET=		check
 
