@@ -3,7 +3,6 @@
 
 DISTNAME=	pdftex
 PKGNAME=	tex-${DISTNAME}-1.40.10
-PKGREVISION=	1
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	TeX extension for direct creation of PDF
@@ -27,5 +26,4 @@ post-install:
 	${LN} -sf pdftex ${DESTDIR}${PREFIX}/bin/etex
 	${LN} -sf pdftex ${DESTDIR}${PREFIX}/bin/pdfetex
 
-.include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
