@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- CMakeLists.txt.orig	2010-07-22 18:25:40.000000000 +0000
++++ CMakeLists.txt
+@@ -177,7 +177,7 @@ if(NOT BIN2DATADIR)
+ endif()
+ 
+ if(NOT MANDIR)
+-	set(MANDIR share/man/man1)
++	set(MANDIR man/man1)
+ endif()
+ 
+ if(NOT DOCDIR)
