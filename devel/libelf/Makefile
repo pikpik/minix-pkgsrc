@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2009/08/16 14:27:30 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2009/11/15 21:26:51 wiz Exp $
 #
 
 DISTNAME=		libelf-0.8.13
@@ -17,6 +17,10 @@ INSTALL_MAKE_FLAGS+=	instroot=${DESTDIR}
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
+USE_TOOLS+=		autoconf
+
+pre-configure:
+	(cd ${WRKSRC} && autoconf)
 
 CONFIGURE_ARGS+=	--disable-shared
 CONFIGURE_ARGS+=	--disable-compat
