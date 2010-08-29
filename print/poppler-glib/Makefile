@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/07/14 17:04:23 drochner Exp $
+# $NetBSD: Makefile,v 1.28 2010/08/18 16:32:44 reed Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -35,10 +35,6 @@ INSTALLATION_DIRS+=	lib/pkgconfig
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/poppler-cairo.pc ${DESTDIR}${PREFIX}/lib/pkgconfig
 	${INSTALL_DATA} ${WRKSRC}/poppler-glib.pc ${DESTDIR}${PREFIX}/lib/pkgconfig
-
-# Workaround for Upstream Bug#562310.
-# for more detail, see also PR#41475.
-TOOLS_NOOP+=		gtkdoc-rebase
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"

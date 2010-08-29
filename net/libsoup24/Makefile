@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2010/06/05 11:00:42 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2010/07/06 15:08:54 drochner Exp $
 
 DISTNAME=	libsoup-2.30.2
 PKGNAME=	${DISTNAME:S/libsoup/libsoup24/}
@@ -22,10 +22,6 @@ PKGCONFIG_OVERRIDE+=	libsoup-2.4.pc.in
 TEST_TARGET=	check
 
 .include "options.mk"
-
-# Workaround for Upstream Bug#562310.
-# for more detail, see also PR#41475.
-TOOLS_NOOP+=		gtkdoc-rebase
 
 .include "../../databases/sqlite3/buildlink3.mk"
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.21.3
