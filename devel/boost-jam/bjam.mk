@@ -1,4 +1,4 @@
-# $NetBSD: bjam.mk,v 1.4 2009/03/03 08:57:58 jmmv Exp $
+# $NetBSD: bjam.mk,v 1.5 2009/10/14 06:40:08 adam Exp $
 
 .include "../../devel/boost-jam/buildlink3.mk"
 
@@ -7,6 +7,9 @@
 
 BJAM=			${BUILDLINK_PREFIX.boost-jam}/bin/bjam
 
+.if !empty(MAKE_JOBS)
+BJAM_ARGS+=		-j${MAKE_JOBS}
+.endif
 BJAM_ARGS+=		--builddir=${WRKSRC}/build
 BJAM_ARGS+=		--layout=system
 BJAM_ARGS+=		--toolset=${BOOST_TOOLSET}
