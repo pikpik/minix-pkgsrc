@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2010/06/11 13:31:10 drochner Exp $
+# $NetBSD: Makefile,v 1.75 2010/06/13 22:44:06 wiz Exp $
 #
 
 DISTNAME=	libbonoboui-2.24.3
@@ -19,10 +19,6 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes
 
 PKGCONFIG_OVERRIDE=	bonobo/libbonoboui-2.0.pc.in
-
-# Workaround for Upstream Bug#562310.
-# for more detail, see also PR#41475.
-TOOLS_NOOP+=	gtkdoc-rebase
 
 BUILDLINK_API_DEPENDS.glib2+=		glib2>=2.14.0
 BUILDLINK_API_DEPENDS.gtk2+=		gtk2+>=2.6.0

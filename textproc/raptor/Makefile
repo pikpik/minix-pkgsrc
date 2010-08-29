@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2010/01/17 12:02:46 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2010/02/05 13:01:07 wiz Exp $
 #
 
 DISTNAME=	raptor-1.4.21
@@ -19,10 +19,6 @@ PKGCONFIG_OVERRIDE+=	raptor.pc.in
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 
 TEST_TARGET=		check
-
-# Workaround for Upstream Bug#562310.
-# for more detail, see also PR#41475.
-TOOLS_NOOP+=	gtkdoc-rebase
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
