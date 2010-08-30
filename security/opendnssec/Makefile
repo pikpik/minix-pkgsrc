@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/06/19 14:21:57 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2010/07/16 22:22:38 pettai Exp $
 #
 
-DISTNAME=	opendnssec-1.1.1
+DISTNAME=	opendnssec-1.1.2
 CATEGORIES=	security net
 MASTER_SITES=	http://www.opendnssec.org/files/source/
 
@@ -12,9 +12,9 @@ LICENSE=	2-clause-bsd
 
 DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 DEPENDS+=	${PYPKGPREFIX}-4Suite-[0-9]*:../../textproc/py-4Suite
-DEPENDS+=	ldns>=1.6.4:../../net/ldns
+DEPENDS+=	ldns>=1.6.6:../../net/ldns
 DEPENDS+=	rubygems-[0-9]*:../../misc/rubygems
-DEPENDS+=	${RUBY_PKGPREFIX}-dnsruby>=1.46:../../net/ruby-dnsruby
+DEPENDS+=	${RUBY_PKGPREFIX}-dnsruby>=1.49:../../net/ruby-dnsruby
 BUILD_DEPENDS+=	CUnit-[0-9]*:../../devel/cunit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
