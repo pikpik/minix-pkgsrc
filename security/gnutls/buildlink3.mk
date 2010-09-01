@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.21 2008/03/06 14:52:12 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2009/03/20 19:25:17 joerg Exp $
 
 BUILDLINK_TREE+=	gnutls
 
@@ -15,7 +15,6 @@ BUILDLINK_PKGSRCDIR.gnutls?=	../../security/gnutls
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/libgcrypt/buildlink3.mk"
 .include "../../security/libtasn1/buildlink3.mk"
-.include "../../security/opencdk/buildlink3.mk"
 .endif # GNUTLS_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-gnutls
