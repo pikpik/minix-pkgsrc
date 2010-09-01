@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2009/12/15 22:10:40 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2010/01/17 12:02:42 wiz Exp $
 
 PKGNAME=		opensc-signer-${OPENSC_PKG_VERSION}
-PKGREVISION=		3
 COMMENT=		Opensc signer plugin for Mozilla apps
 LICENSE=		gnu-lgpl-v2.1
 
@@ -22,7 +21,7 @@ do-install:
 		plugindir=${DESTDIR}${PREFIX}/lib/xulrunner/plugins install
 
 .include "../../devel/libltdl/buildlink3.mk"
-.include "../../security/libassuan/buildlink3.mk"
+.include "../../security/libassuan2/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../security/pinentry/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
