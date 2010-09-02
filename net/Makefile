@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.850 2010/08/31 13:26:05 gdt Exp $
+# $NetBSD: Makefile,v 1.851 2010/09/01 16:30:57 drochner Exp $
 #
 
 COMMENT=	Networking tools
@@ -315,6 +315,7 @@ SUBDIR+=	ocamlnet
 SUBDIR+=	ocsinventory-agent
 SUBDIR+=	oidentd
 SUBDIR+=	oinkmaster
+SUBDIR+=	omniNotify
 SUBDIR+=	omniORB
 SUBDIR+=	openafs
 SUBDIR+=	openag
@@ -465,6 +466,7 @@ SUBDIR+=	py-kenosis
 SUBDIR+=	py-libdnet
 SUBDIR+=	py-libpcap
 SUBDIR+=	py-medusa
+SUBDIR+=	py-omniORBpy
 SUBDIR+=	py-pcap
 SUBDIR+=	py-s3cmd
 SUBDIR+=	py-soaplib
