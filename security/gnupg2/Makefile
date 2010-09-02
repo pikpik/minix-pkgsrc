@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.30 2010/08/03 19:14:42 drochner Exp $
+# $NetBSD: Makefile,v 1.31 2010/09/01 16:46:41 drochner Exp $
 #
 
 DISTNAME=		gnupg-2.0.16
 PKGNAME=		${DISTNAME:S/gnupg/gnupg2/}
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/gnupg/
 EXTRACT_SUFX=		.tar.bz2
@@ -18,9 +19,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
 USE_TOOLS+=		gmake
-USE_TOOLS+=		autoconf
-USE_TOOLS+=		automake
-USE_TOOLS+=		gettext
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 
