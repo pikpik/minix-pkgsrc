@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2010/01/27 08:43:04 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2010/04/07 14:57:49 gdt Exp $
 
 DISTNAME=	Python-2.5.5
 PKGNAME=	python25-2.5.5
+PKGREVISION=	1
 CATEGORIES=	lang python
 MASTER_SITES=	http://www.python.org/ftp/python/2.5.5/
 EXTRACT_SUFX=	.tar.bz2
@@ -47,6 +48,8 @@ PLIST_SRC+=	${.CURDIR}/../../lang/python25/PLIST.${OPSYS}
 
 .if ${OPSYS} == "NetBSD"
 PRIVILEGED_STAGES+=	clean
+# XXX work around a botched autoconf check which ignores libintl
+CONFIGURE_ENV+=		ac_cv_func_bind_textdomain_codeset=yes
 .endif
 
 .if ${OPSYS} == "Darwin" || ${OPSYS} == "Interix"
