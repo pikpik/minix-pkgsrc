@@ -1,0 +1,5 @@
+@comment $NetBSD$
+libexec/xscreensaver/unicode
+man/man6/unicode.6
+share/applications/screensavers/unicode.desktop
+share/xscreensaver/config/unicode.xml
