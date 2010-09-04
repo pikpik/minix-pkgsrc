@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/08/07 02:02:40 obache Exp $
+# $NetBSD: Makefile,v 1.2 2010/08/11 13:11:57 obache Exp $
 #
 
 DISTNAME=	ibus-pinyin-1.3.10
@@ -34,6 +34,7 @@ SUBST_STAGE.epython=	pre-configure
 SUBST_FILES.epython=	setup/ibus-setup-pinyin.in
 SUBST_SED.epython=	-e 's;exec python;exec ${PYTHONBIN};g'
 
+CONFIGURE_ARGS+=	--localedir=${PREFIX}/${PKGLOCALEDIR}/locale
 CONFIGURE_ARGS+=	--disable-db-android
 CONFIGURE_ARGS+=	--enable-db-open-phrase
 
