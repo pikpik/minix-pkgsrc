@@ -189,8 +189,9 @@ do-install:
 	 && ${TEST} -f ${DESTDIR}${GCC_PREFIX}/bin/cc || ${LN} -f ${DESTDIR}${GCC_PREFIX}/bin/gcc ${DESTDIR}${GCC_PREFIX}/bin/cc)
 
 post-install:
+	${MKDIR} -p ${DESTDIR}${PREFIX}/bin
 .for X in ${GCC_SYMLINK_PROGRAMS}
-	${LN} -s ${DESTDIR}${GCC_PREFIX}/bin/${X} ${DESTDIR}${PREFIX}/bin/${X}
+	${LN} -s ${GCC_PREFIX}/bin/${X} ${DESTDIR}${PREFIX}/bin/${X}
 .endfor
 
 
