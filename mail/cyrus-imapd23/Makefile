@@ -1,15 +1,17 @@
-# $NetBSD: Makefile,v 1.4 2010/06/03 06:55:54 obache Exp $
+# $NetBSD: Makefile,v 1.5 2010/08/21 16:35:00 seb Exp $
 
 DISTNAME=	cyrus-imapd-2.3.16
 PKGREVISION=	2
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
+MASTER_SITES=	ftp://ftp.cyrusimap.org/cyrus-imapd/ \
+		ftp://ftp.cyrusimap.org/cyrus-imapd/OLD-VERSIONS/ \
+		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/OLD-VERSIONS/imap/ \
 		http://www.t.ring.gr.jp/archives/net/mail/cyrus-mail/ \
 		ftp://ftp.t.ring.gr.jp/pub/net/mail/cyrus-mail/
 
 MAINTAINER=	obache@NetBSD.org
-HOMEPAGE=	http://cyrusimap.web.cmu.edu/imapd/
+HOMEPAGE=	http://www.cyrusimap.org/
 COMMENT=	Cyrus IMAP server
 #LICENSE=	original-bsd # like license
 
