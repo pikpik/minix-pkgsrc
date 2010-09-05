@@ -1,6 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2008/10/29 21:14:01 cube Exp $
-
-.include "../../mk/bsd.fast.prefs.mk"
+# $NetBSD: buildlink3.mk,v 1.4 2009/03/20 19:25:46 joerg Exp $
 
 BUILDLINK_TREE+=	libXv
 
