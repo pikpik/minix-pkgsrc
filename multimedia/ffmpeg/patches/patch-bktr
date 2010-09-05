@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- libavdevice/bktr.c.orig	2009-01-19 15:46:40 +0000
 +++ libavdevice/bktr.c	2009-09-21 11:29:29 +0000
 @@ -24,7 +24,11 @@
