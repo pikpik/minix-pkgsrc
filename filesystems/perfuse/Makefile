@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/09/05 09:24:19 manu Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/06 04:34:52 manu Exp $
 #
 
 DISTNAME=	perfuse-20100906
@@ -14,6 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=	${WRKDIR}/src/
 BUILD_DIRS=	lib/libperfuse usr.sbin/perfused
+BUILDLINK_TRANSFORM=	rm:-Werror
 
 pre-build:
 	${LN} -s ${WRKSRC}/lib/libperfuse/perfuse.h ${BUILDLINK_DIR}/include/
