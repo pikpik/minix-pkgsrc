@@ -1,12 +1,12 @@
 $NetBSD$
 
---- qwtconfig.pri.orig	2009-03-22 16:41:05.000000000 +0100
+--- qwtconfig.pri.orig	2010-04-11 09:55:06.000000000 +0000
 +++ qwtconfig.pri
-@@ -8,7 +8,7 @@ VER_PAT      = 0
+@@ -8,7 +8,7 @@ VER_PAT      = 1
  VERSION      = $${VER_MAJ}.$${VER_MIN}.$${VER_PAT}
  
  unix {
--    INSTALLBASE    = /usr/local/qwt-5.2.0
+-    INSTALLBASE    = /usr/local/qwt-5.2.1
 +    INSTALLBASE    = $$(PREFIX)
  }
  
