@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/04/07 18:04:46 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2010/06/15 16:48:19 bad Exp $
 
 DISTNAME=		openoffice3-bin	# overridden below
 PKGNAME=		openoffice3-bin-${OO_RELEASE}
@@ -45,9 +45,6 @@ RPM2PKG_STAGE=		do-install
 RUN_LDCONFIG=		no
 
 USE_TOOLS+=	patch
-
-CHECK_FILES_SKIP+=	${PREFIX}/opt/openoffice.org/basis${OO_BASEVER}/ure-link
-CHECK_FILES_SKIP+=	${PREFIX}/opt/openoffice.org${OO_VER}/basis-link
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
