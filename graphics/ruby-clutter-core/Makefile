@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/10/26 08:37:27 obache Exp $
+# $NetBSD: Makefile,v 1.4 2010/06/13 22:44:43 wiz Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-clutter-core-${VERSION}
@@ -11,6 +11,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 RUBY_EXTCONF_SUBDIRS=	clutter
 
 USE_TOOLS+=		pkg-config
+
+RUBY_VERSION_SUPPORTED= 18
 
 .include "../../devel/ruby-gnome2-glib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"

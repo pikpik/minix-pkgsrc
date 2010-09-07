@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/01/12 12:50:57 obache Exp $
+# $NetBSD: Makefile,v 1.5 2010/05/16 00:26:49 obache Exp $
 #
 
 DISTNAME=	prime-1.0.0.1
@@ -17,6 +17,15 @@ DEPENDS+=	${RUBY_PKGPREFIX}-prime-dict>=0.8.5:../../inputmethod/prime-dict
 DEPENDS+=	${RUBY_PKGPREFIX}-suikyo>=2.0:../../textproc/ruby-suikyo
 DEPENDS+=	${RUBY_PKGPREFIX}-progressbar-[0-9]*:../../misc/ruby-progressbar
 DEPENDS+=	${RUBY_PKGPREFIX}-sary-[0-9]*:../../textproc/ruby-sary
+
+#
+# The same dictonary directory now.
+#
+#CONFLICTS+=	ruby[1-9][0-9]-prime-[1-9]*
+#
+# Currently, it seems some encoding problem. 
+#
+RUBY_VERSION_SUPPORTED= 18
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

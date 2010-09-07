@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/04/14 21:33:01 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2008/09/15 09:03:58 taca Exp $
 
 DISTNAME=	ruby-debug-base-0.10.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
@@ -9,6 +9,8 @@ HOMEPAGE=	http://www.datanoise.com/ruby-debug/
 COMMENT=	Fast implementation of the standard Ruby debugger
 
 DEPENDS+=	${RUBY_PKGPREFIX}-linecache>=0.3:../../devel/ruby-linecache
+
+RUBY_VERSION_SUPPORTED= 18
 
 .include "../../misc/rubygems/rubygem.mk"
 .include "../../mk/bsd.pkg.mk"
