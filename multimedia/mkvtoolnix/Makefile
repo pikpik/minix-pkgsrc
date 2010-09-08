@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.22 2010/07/09 16:04:02 drochner Exp $
+# $NetBSD: Makefile,v 1.23 2010/08/04 19:21:01 drochner Exp $
 
-DISTNAME=	mkvtoolnix-4.2.0
+DISTNAME=	mkvtoolnix-4.3.0
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2
@@ -40,6 +40,14 @@ CONFIGURE_ARGS+=	--enable-wxwidgets
 CONFIGURE_ARGS+=	--disable-gui
 CONFIGURE_ARGS+=	--disable-wxwidgets
 .endif
+
+BUILD_DEPENDS+=	ruby-[0-9]*:../../lang/ruby
+
+do-build:
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ruby drake
+
+do-install:
+	cd ${WRKSRC} && ${SETENV} ${INSTALL_ENV} ruby drake install
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../archivers/liblzo/buildlink3.mk"
