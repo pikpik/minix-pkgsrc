@@ -30,6 +30,13 @@ TEST_TARGET=		check
 CPPFLAGS+=	-Dsocklen_t=int
 .endif
 
+post-extract:
+	cp ${WRKSRC}/libxslt/libxslt.syms ${WRKSRC}/libxslt/libxslt_solaris.syms
+
+.if ${OPSYS} == "SunOS"
+BUILDLINK_TRANSFORM+=	rename:-Wl,./libxslt.syms:-Wl,./libxslt_solaris.syms
+.endif
+
 BUILDLINK_API_DEPENDS.libxml2+=	libxml2>=2.6.27
 
 .include "../../security/libgcrypt/buildlink3.mk"
