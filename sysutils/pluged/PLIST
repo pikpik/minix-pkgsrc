@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/pluged
+share/examples/pluged/pluged.conf
+share/examples/rc.d/pluged
