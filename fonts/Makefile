@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2010/09/03 18:25:17 wiz Exp $
+# $NetBSD: Makefile,v 1.159 2010/09/04 10:38:46 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -158,6 +158,8 @@ SUBDIR+=	tex-ec
 SUBDIR+=	tex-ec-doc
 SUBDIR+=	tex-euenc
 SUBDIR+=	tex-euenc-doc
+SUBDIR+=	tex-eurosym
+SUBDIR+=	tex-eurosym-doc
 SUBDIR+=	tex-fontspec
 SUBDIR+=	tex-fontspec-doc
 SUBDIR+=	tex-glyphlist
