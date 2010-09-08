@@ -1,11 +1,11 @@
-# $NetBSD: options.mk,v 1.2 2006/01/25 08:53:34 xtraeme Exp $
+# $NetBSD: options.mk,v 1.1 2007/08/23 17:10:39 abs Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dvdrip
 .if !empty(MACHINE_ARCH:Mi386)
 PKG_SUPPORTED_OPTIONS=	rar
 
-PKG_SUGGESTED_OPTIONS=	rar
+#PKG_SUGGESTED_OPTIONS=	rar
 .endif
 
 .include "../../mk/bsd.options.mk"
