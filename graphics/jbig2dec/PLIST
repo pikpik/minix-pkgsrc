@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/jbig2dec
+include/jbig2.h
+lib/libjbig2dec.la
+man/man1/jbig2dec.1
