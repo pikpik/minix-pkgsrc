@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/07/08 14:00:44 sno Exp $
+# $NetBSD: Makefile,v 1.24 2010/08/21 16:35:40 seb Exp $
 #
 
 DISTNAME=		Crypt-RSA-1.99
@@ -32,7 +32,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Crypt/RSA/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 REPLACE_PERL+=		lib/Crypt/RSA.pm
 REPLACE_PERL+=		lib/Crypt/RSA/*.pm
