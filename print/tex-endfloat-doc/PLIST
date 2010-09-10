@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/endfloat/COPYING
+share/texmf-dist/doc/latex/endfloat/endfloat.asc
+share/texmf-dist/doc/latex/endfloat/endfloat.pdf
+share/texmf-dist/doc/latex/endfloat/readme.enf
