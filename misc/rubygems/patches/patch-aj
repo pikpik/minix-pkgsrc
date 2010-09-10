@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aj,v 1.4 2009/06/10 21:44:31 minskim Exp $
+
+Use vendordir instead of sitedir.
 
 --- lib/rubygems/defaults.rb.orig	2009-05-20 16:30:35.000000000 -0700
 +++ lib/rubygems/defaults.rb
