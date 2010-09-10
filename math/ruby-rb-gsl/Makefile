@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2010/03/18 17:22:36 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/03/31 10:00:06 taca Exp $
 
 DISTNAME=	rb-gsl-1.14.3
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	math ruby
 MASTER_SITES=	http://rubyforge.org/frs/download.php/69960/
 
