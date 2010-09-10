@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/27 00:12:27 ahoka Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/13 06:46:48 rillig Exp $
 
-DISTNAME=	pathname2-1.6.1
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+DISTNAME=	pathname2-1.6.3
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://rubyforge.org/projects/shards
 COMMENT=	Alternate implementation of the Pathname library
+LICENSE=	artistic-2.0
 
-GEM_BUILD=	gemspec
+DEPENDS+=	${RUBY_PKGPREFIX}-facade>=1.0.4:../../devel/ruby-facade
 
-DEPENDS+=	${RUBY_PKGPREFIX}-facade>=1.0.1:../../devel/ruby-facade
-
-.include "../../misc/rubygems/rubygem.mk"
+.include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
