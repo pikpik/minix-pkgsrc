@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.6 2008/06/22 15:54:37 taca Exp $
+# $NetBSD: Makefile,v 1.7 2009/11/23 13:45:51 fhajny Exp $
 
-DISTNAME=	ZenTest-4.1.4
+DISTNAME=	ZenTest-4.4.0
 CATEGORIES=	devel
 
 MAINTAINER=	minskim@NetBSD.org
-HOMEPAGE=	http://zentest.rubyforge.org/
+HOMEPAGE=	http://www.zenspider.com/ZSS/Products/ZenTest/
 COMMENT=	Testing utilities for Ruby
 LICENSE=	mit
 
-DEPENDS+=	hoe>=2.3.3:../../devel/hoe
+CONFLICTS+=	ruby[1-9][0-9]-ZenTest-[0-9]* ZenTest-[0-9]*
 
-.include "../../misc/rubygems/rubygem.mk"
+.include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
