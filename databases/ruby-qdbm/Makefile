@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/05/25 09:40:57 obache Exp $
+# $NetBSD: Makefile,v 1.10 2009/12/23 07:34:25 obache Exp $
 #
 
 .include "../../databases/qdbm/Makefile.common"
@@ -26,7 +26,6 @@ TEST_TARGET=		check
 #USE_RUBY_EXTCONF=	yes
 #RUBY_EXTCONF_SUBDIRS=	${MY_SUBDIR}/curia ${MY_SUBDIR}/depot ${MY_SUBDIR}/villa
 RUBY_EXTCONF_ARGS=	--with-opt-dir=${PREFIX:Q} --vendor
-RUBY_HAS_ARCHLIB=	yes
 USE_TOOLS+=		gmake
 
 REPLACE_RUBY=	${MY_SUBDIR}/curia/rbcrtest ${MY_SUBDIR}/depot/rbdptest \
