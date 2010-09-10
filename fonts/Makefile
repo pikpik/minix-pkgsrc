@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.160 2010/09/08 18:33:18 minskim Exp $
+# $NetBSD: Makefile,v 1.161 2010/09/10 06:10:23 obache Exp $
 #
 
 COMMENT=	Fonts
@@ -81,7 +81,7 @@ SUBDIR+=	font-misc-ethiopic
 SUBDIR+=	font-misc-meltho
 SUBDIR+=	font-mutt-misc
 SUBDIR+=	font-schumacher-misc
-SUBDIR+=	font-screen-misc
+SUBDIR+=	font-screen-cyrillic
 SUBDIR+=	font-sony-misc
 SUBDIR+=	font-sun-misc
 SUBDIR+=	font-util
