@@ -1,18 +1,17 @@
-# $NetBSD: Makefile,v 1.5 2010/01/18 09:58:47 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/06/13 22:44:10 wiz Exp $
 
-DISTNAME=	rubysdl-2.0.1
+DISTNAME=	rubysdl-2.1.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/rubysdl/SDL/}
-PKGREVISION=	3
 CATEGORIES=	devel audio graphics
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kmc.gr.jp/~ohai/rubysdl.en.html
 COMMENT=	Ruby extension library to use SDL library
+LICENSE=	gnu-lgpl-v2.1 OR gnu-lgpl-v3
 
-GEM_BUILD=	gemspec
-GEM_CLEANBUILD=	Makefile *.o sdl.${RUBY_DLEXT} mkmf.log
+GEM_CLEANBUILD=	Makefile *.o sdl_ext.${RUBY_DLEXT} mkmf.log
 
-.include "../../misc/rubygems/rubygem.mk"
+.include "../../lang/ruby/gem.mk"
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../devel/SDL_ttf/buildlink3.mk"
