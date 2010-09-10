@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2008/05/24 21:45:19 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2008/11/10 17:21:38 wiz Exp $
 #
 
-DISTNAME=		xcalc-1.0.2
-PKGREVISION=		1
+DISTNAME=		xcalc-1.0.3
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,6 +9,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Scientific calculator for X
+LICENSE=		mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
