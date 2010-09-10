@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/11/06 19:59:04 snj Exp $
+# $NetBSD: Makefile,v 1.7 2010/01/17 12:02:06 wiz Exp $
 
 DISTNAME=	climm-0.6.3
 PKGREVISION=	1
@@ -7,7 +7,7 @@ MASTER_SITES=	http://www.climm.org/source/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.climm.org/source/
+HOMEPAGE=	http://www.climm.org/
 COMMENT=	Text-mode ICQ client
 
 PKG_DESTDIR_SUPPORT=	user-destdir
