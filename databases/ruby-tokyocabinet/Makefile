@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2010/06/18 09:55:01 obache Exp $
+# $NetBSD: Makefile,v 1.22 2010/08/06 04:51:24 obache Exp $
 #
 
 DISTNAME=	tokyocabinet-ruby-1.30
@@ -14,7 +14,6 @@ LICENSE=	gnu-lgpl-v2.1
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_RUBY_EXTCONF=	yes
-RUBY_HAS_ARCHLIB=	yes
 REPLACE_RUBY_DIRS=	.
 USE_TOOLS+=		pax
 
