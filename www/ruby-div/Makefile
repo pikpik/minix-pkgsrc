@@ -1,8 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/06/12 10:43:12 obache Exp $
 #
 
 DISTNAME=	div-1.3.2
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	www devel ruby
 MASTER_SITES=	http://www2a.biglobe.ne.jp/~seki/ruby/
 
