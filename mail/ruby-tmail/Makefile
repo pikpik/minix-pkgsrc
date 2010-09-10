@@ -1,18 +1,17 @@
-# $NetBSD: Makefile,v 1.16 2008/04/13 05:25:09 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2008/06/22 16:09:32 taca Exp $
 
-DISTNAME=	tmail-1.2.3.1
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+DISTNAME=	tmail-1.2.7.1
 CATEGORIES=	mail
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://tmail.rubyforge.org/
 COMMENT=	Mail manipulating library for Ruby including MIME multipart support
-
-GEM_BUILD=	gemspec
+LICENSE=	mit
 
 # Add a directory that would be created if the setup.rb script was run.
-post-extract:
+pre-configure:
 	cd ${WRKSRC} && mkdir doc
+	${FIND} ${WRKSRC} -type f -exec ${CHMOD} -x {} \;
 
-.include "../../misc/rubygems/rubygem.mk"
+.include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
