@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:21:13 jlam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/01/27 00:11:15 ahoka Exp $
 
-DISTNAME=	facade-1.0.2
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+DISTNAME=	facade-1.0.4
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://rubyforge.org/projects/shards
 COMMENT=	Module that helps implement the facade pattern
+LICENSE=	artistic-2.0
 
-GEM_BUILD=	gemspec
-
-.include "../../misc/rubygems/rubygem.mk"
+.include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
