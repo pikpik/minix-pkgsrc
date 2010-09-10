@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/07 18:03:35 seb Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/07 17:20:27 taca Exp $
 
-DISTNAME=	fastercsv-1.2.3
-PKGNAME=	${RUBYGEM_PKGPREFIX}-${DISTNAME}
-#PKGREVISION=	1
+DISTNAME=	fastercsv-1.5.3
 CATEGORIES=	textproc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fastercsv.rubyforge.org/
 COMMENT=	Replacement to Ruby standard CSV library
+LICENSE=	gnu-gpl-v2 OR ruby-license
 
 RUBY_VERSION_SUPPORTED= 18
 
-.include "../../misc/rubygems/rubygem.mk"
+.include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
