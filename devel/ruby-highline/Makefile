@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:17:21 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2010/03/02 11:44:52 obache Exp $
 
-DISTNAME=	highline-1.5.2
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
+DISTNAME=	highline-1.6.1
 CATEGORIES=	net security
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://highline.rubyforge.org/
 COMMENT=	High-level console IO library
+LICENSE=	gnu-gpl-v2 OR ruby-license
 
-.include "../../misc/rubygems/rubygem.mk"
+.include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
