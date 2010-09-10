@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2008/05/24 21:45:15 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2010/01/15 18:37:10 tnn Exp $
 #
 
-DISTNAME=		libXrender-0.9.5
+DISTNAME=		libXrender-0.9.6
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,6 +9,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X Render Library
+LICENSE=		mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
