@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/06/19 14:56:39 taca Exp $
+# $NetBSD: Makefile,v 1.4 2009/10/14 08:22:35 obache Exp $
 
 .include "../../textproc/mecab/Makefile.common"
 
@@ -13,7 +13,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 REPLACE_RUBY+=		test.rb
-RUBY_HAS_ARCHLIB=	yes
 USE_RUBY_EXTCONF=	yes
 
 do-test:
