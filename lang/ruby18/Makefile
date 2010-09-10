@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/10/25 22:00:48 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2008/01/06 15:45:37 taca Exp $
 #
 
 DISTNAME=	# empty
@@ -10,14 +10,15 @@ DISTFILES=	# empty
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.ruby-lang.org/en/
 COMMENT=	Ruby programming language ${RUBY_VERSION} meta package
+LICENSE=	gnu-gpl-v2 OR ruby-license
 
 META_PACKAGE=		yes
 
-DEPENDS+= ${RUBY_PKGPREFIX}-base>=${RUBY_VERSION}:../../lang/ruby18-base
-DEPENDS+= ${RUBY_PKGPREFIX}-gdbm>=${RUBY_VERSION}:../../databases/ruby-gdbm
-DEPENDS+= ${RUBY_PKGPREFIX}-curses>=${RUBY_VERSION}:../../devel/ruby-curses
-DEPENDS+= ${RUBY_PKGPREFIX}-readline>=${RUBY_VERSION}:../../devel/ruby-readline
-DEPENDS+= ${RUBY_PKGPREFIX}-tk>=${RUBY_VERSION}:../../x11/ruby-tk
+DEPENDS+= ${RUBY_PKGPREFIX}-base>=${RUBY_VERSION_SUFFIX}:../../lang/${RUBY_NAME}-base
+DEPENDS+= ${RUBY_PKGPREFIX}-gdbm>=${RUBY_VERSION_SUFFIX}:../../databases/ruby-gdbm
+DEPENDS+= ${RUBY_PKGPREFIX}-curses>=${RUBY_VERSION_SUFFIX}:../../devel/ruby-curses
+DEPENDS+= ${RUBY_PKGPREFIX}-readline>=${RUBY_VERSION_SUFFIX}:../../devel/ruby-readline
+DEPENDS+= ${RUBY_PKGPREFIX}-tk>=${RUBY_VERSION_SUFFIX}:../../x11/ruby-tk
 
 RUBY_VERSION=	${RUBY18_VERSION}
 
