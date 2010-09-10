@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.422 2010/06/17 00:02:31 minskim Exp $
+# $NetBSD: Makefile,v 1.423 2010/09/10 20:10:55 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -242,6 +242,8 @@ SUBDIR+=	tex-elsarticle
 SUBDIR+=	tex-elsarticle-doc
 SUBDIR+=	tex-enctex
 SUBDIR+=	tex-enctex-doc
+SUBDIR+=	tex-endfloat
+SUBDIR+=	tex-endfloat-doc
 SUBDIR+=	tex-endnotes
 SUBDIR+=	tex-endnotes-doc
 SUBDIR+=	tex-enumitem
