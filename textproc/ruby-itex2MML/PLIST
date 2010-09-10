@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2007/06/14 18:56:59 minskim Exp $
-${RUBY_VENDORARCHLIB}/itex2MML.${RUBY_DLEXT}
+@comment $NetBSD: PLIST,v 1.2 2008/06/19 14:56:14 taca Exp $
+${RUBY_VENDORLIB}/itex_stringsupport.rb
 ${RUBY_VENDORLIB}/itextomml.rb
+${RUBY_VENDORARCHLIB}/itex2MML.${RUBY_DLEXT}
