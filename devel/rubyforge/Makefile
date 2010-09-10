@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2008/06/22 16:07:40 taca Exp $
+# $NetBSD: Makefile,v 1.6 2009/11/23 13:39:42 fhajny Exp $
 
-DISTNAME=	rubyforge-2.0.3
+DISTNAME=	rubyforge-2.0.4
 CATEGORIES=	devel
 
 MAINTAINER=	minskim@NetBSD.org
@@ -10,7 +10,10 @@ LICENSE=	mit
 
 DEPENDS+=	${RUBY_PKGPREFIX}-json-pure>=1.1.7:../../textproc/ruby-json-pure
 
-GEM_BUILD=	gemspec
+CONFLICTS+=	ruby[1-9][0-9]-rubyforge-[0-9]*
 
-.include "../../misc/rubygems/rubygem.mk"
+pre-build:
+	cd ${WRKSRC}; ${CHMOD} -R g-w .
+
+.include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
