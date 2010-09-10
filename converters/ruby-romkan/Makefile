@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.12 2008/06/19 14:42:24 taca Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/21 10:12:59 taca Exp $
 
 DISTNAME=	ruby-romkan-0.4
 PKGNAME=	${RUBY_PKGPREFIX}-romkan-0.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	converters japanese ruby
 MASTER_SITES=	http://0xcc.net/ruby-romkan/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://0xcc.net/ruby-romkan/
 COMMENT=	Romaji <-> Kana conversion library for Ruby
+LICENSE=	ruby-license
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
