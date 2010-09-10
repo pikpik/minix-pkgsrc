@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/05/16 00:26:49 obache Exp $
+# $NetBSD: Makefile,v 1.6 2010/09/07 17:20:26 taca Exp $
 #
 
 DISTNAME=	prime-1.0.0.1
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://prime.sourceforge.jp/src/
 
