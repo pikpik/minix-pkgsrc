@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/11/10 17:21:39 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2009/04/17 01:07:29 dsainty Exp $
 #
 
-DISTNAME=		xmore-1.0.1
-PKGREVISION=		3
+DISTNAME=		xmore-1.0.2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
