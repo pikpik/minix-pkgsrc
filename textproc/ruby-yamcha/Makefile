@@ -1,9 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/05/19 12:10:51 obache Exp $
 #
 
 .include "../../textproc/yamcha/Makefile.common"
 
-PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES+=	ruby
 
 COMMENT=	YamCha ruby module
