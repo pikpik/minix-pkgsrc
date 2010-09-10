@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2010/08/21 16:35:03 seb Exp $
+# $NetBSD: Makefile,v 1.9 2010/09/05 11:52:54 sno Exp $
 
-DISTNAME=		Email-MIME-1.904
+DISTNAME=		Email-MIME-1.905
 PKGNAME=		p5-${DISTNAME}
 #PKGREVISION=		1
 SVR4_PKGNAME=		p5emm
