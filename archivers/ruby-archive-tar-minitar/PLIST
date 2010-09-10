@@ -1,5 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/04/04 15:13:23 jlam Exp $
-bin/minitar
+@comment $NetBSD: PLIST,v 1.2 2009/06/14 17:28:17 joerg Exp $
+bin/minitar${RUBY_VER}
 ${GEM_HOME}/cache/archive-tar-minitar-${PKGVERSION}.gem
 ${GEM_LIBDIR}/ChangeLog
 ${GEM_LIBDIR}/Install
