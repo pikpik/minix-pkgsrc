@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/fancybox/Changes
+share/texmf-dist/doc/latex/fancybox/Makefile
+share/texmf-dist/doc/latex/fancybox/README
+share/texmf-dist/doc/latex/fancybox/fancybox-doc.pdf
+share/texmf-dist/doc/latex/fancybox/fancybox-doc.tex
