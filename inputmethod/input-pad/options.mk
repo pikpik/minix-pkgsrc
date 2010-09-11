@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1.1.1 2010/08/31 08:25:20 obache Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.input-pad
@@ -12,7 +12,7 @@ PLIST_VARS+=	eek python xtest
 #
 # Draw keyboard using libeek
 #
-.if !empty(PKG_OPTIONS:Meek)
+.if !empty(PKG_OPTIONS:Meekboard)
 .include "../../x11/eekboard/buildlink3.mk"
 CONFIGURE_ARGS+=	--enable-eek
 PLIST.eek=		yes
