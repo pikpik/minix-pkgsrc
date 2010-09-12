@@ -1,0 +1,6 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/README.rdoc
+${GEM_LIBDIR}/VERSION
+${GEM_LIBDIR}/lib/subexec.rb
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
