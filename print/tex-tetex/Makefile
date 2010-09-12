@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/01/28 23:40:42 minskim Exp $
-# TeX Live Revision 16770
+# $NetBSD: Makefile,v 1.3 2010/05/06 01:47:41 reed Exp $
 
 DISTNAME=	tetex
-PKGNAME=	tex-${DISTNAME}-3.0.16770
+PKGNAME=	tex-${DISTNAME}-3.0.19496
+TEXLIVE_REV=	19496
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Supplementary files for updmap
