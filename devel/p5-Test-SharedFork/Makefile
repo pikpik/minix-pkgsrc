@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:34:37 seb Exp $
+# $NetBSD: Makefile,v 1.3 2010/08/29 10:21:19 seb Exp $
 
-DISTNAME=	Test-SharedFork-0.12
+DISTNAME=	Test-SharedFork-0.14
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Test/}
