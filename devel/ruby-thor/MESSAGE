@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+To use rake2thor command, please install these packages:
+
+	devel/ruby-parsetree
+	devel/ruby2ruby
+
+===========================================================================
