@@ -22,6 +22,7 @@ include/yaz/diagsru_update.h
 include/yaz/diagsrw.h
 include/yaz/dirent.h
 include/yaz/errno.h
+include/yaz/facet.h
 include/yaz/file_glob.h
 include/yaz/gettimeofday.h
 include/yaz/icu.h
