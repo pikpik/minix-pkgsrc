@@ -1,5 +1,4 @@
-@comment $NetBSD$
-bin/luatangle
+@comment $NetBSD: PLIST,v 1.2 2010/01/16 03:19:07 minskim Exp $
 bin/luatex
 bin/texlua
 bin/texluac
