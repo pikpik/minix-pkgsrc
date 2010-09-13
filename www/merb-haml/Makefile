@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:24:08 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/12 02:42:28 taca Exp $
 
 DISTNAME=	merb-haml-1.1.3
 CATEGORIES=	www
@@ -10,6 +10,8 @@ LICENSE=	mit
 
 DEPENDS+=	${RUBY_PKGPREFIX}-merb-core>=1.1.3:../../www/merb-core
 DEPENDS+=	${RUBY_PKGPREFIX}-haml>=2.0.3:../../textproc/ruby-haml
+
+CONFLICTS+=	merb-haml-[0-9]*
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

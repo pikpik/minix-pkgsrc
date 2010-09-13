@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:24:45 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/12 02:46:38 taca Exp $
 
 DISTNAME=	merb-param-protection-1.1.3
 CATEGORIES=	www
@@ -9,6 +9,8 @@ COMMENT=	Merb plugin supplying methods to filter parameters
 LICENSE=	mit
 
 DEPENDS+=	${RUBY_PKGPREFIX}-merb-core>=1.1.3:../../www/merb-core
+
+CONFLICTS+=	merb-param-protection-[0-9]*
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

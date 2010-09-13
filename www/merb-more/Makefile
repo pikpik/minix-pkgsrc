@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/04 15:24:38 jlam Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/12 03:08:30 taca Exp $
 
 DISTNAME=	merb-more-1.0.15
 CATEGORIES=	www
@@ -20,6 +20,8 @@ DEPENDS+=	${RUBY_PKGPREFIX}-merb-haml>=1.0.15:../../www/merb-haml
 DEPENDS+=	${RUBY_PKGPREFIX}-merb-helpers>=1.0.15:../../www/merb-helpers
 DEPENDS+=	${RUBY_PKGPREFIX}-merb-mailer>=1.0.15:../../www/merb-mailer
 DEPENDS+=	${RUBY_PKGPREFIX}-merb-param-protection>=1.0.15:../../www/merb-param-protection
+
+CONFLICTS+=	merb-more-[0-9]*
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
