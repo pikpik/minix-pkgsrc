@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.2 2010/01/29 08:27:54 minskim Exp $
 
 DISTNAME=	manfnt
 PKGNAME=	tex-${DISTNAME}-2009
+TEXLIVE_REV=	15878
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	LaTeX support for the TeX book symbols

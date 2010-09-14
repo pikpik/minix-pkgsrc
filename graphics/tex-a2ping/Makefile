@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/03 23:48:44 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/26 05:25:06 minskim Exp $
 
 DISTNAME=	a2ping
 PKGNAME=	tex-${DISTNAME}-2.77p
-TEXLIVE_REV=	16044
+TEXLIVE_REV=	18835
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Advanced PS, PDF, EPS converter

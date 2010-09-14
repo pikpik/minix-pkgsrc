@@ -1,9 +1,9 @@
-# $NetBSD$
-# TeX Live Revision 16044
+# $NetBSD: Makefile,v 1.2 2010/02/14 22:29:49 minskim Exp $
 
 DISTNAME=	makeindex.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2.12
 PKGREVISION=	1
+TEXLIVE_REV=	18835
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-makeindex
