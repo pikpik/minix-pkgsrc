@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2009/07/21 20:12:07 abs Exp $
+# $NetBSD: Makefile,v 1.8 2009/08/09 22:57:19 wiz Exp $
 #
 
 DISTNAME=	xf86-video-tdfx-1.4.3
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=driver/}
 EXTRACT_SUFX=	.tar.bz2
