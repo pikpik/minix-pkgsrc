@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/04/29 18:54:36 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/10 23:34:32 minskim Exp $
 
 DISTNAME=	lambda
 PKGNAME=	tex-${DISTNAME}-2008.7340
 TEXLIVE_REV=	15878
+DIST_SUBDIR=	${PKGBASE}-${TEXLIVE_REV}.2010
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	LaTeX for Omega

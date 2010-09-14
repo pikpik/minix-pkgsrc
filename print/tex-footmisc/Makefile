@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/09 22:56:02 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/11 00:33:58 minskim Exp $
 
 DISTNAME=	footmisc
 PKGNAME=	tex-${DISTNAME}-5.5a
 TEXLIVE_REV=	15878
+DIST_SUBDIR=	${PKGBASE}-${TEXLIVE_REV}.2010
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Range of footnote options

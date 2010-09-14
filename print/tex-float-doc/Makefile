@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/16 23:20:36 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/26 03:53:45 minskim Exp $
 
 DISTNAME=	float.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-1.3d
 TEXLIVE_REV=	15878
+DIST_SUBDIR=	${PKGBASE:S/-doc//}-${TEXLIVE_REV}.2010
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-float

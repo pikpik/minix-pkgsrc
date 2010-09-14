@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.2 2010/02/08 04:03:06 minskim Exp $
 
 DISTNAME=	etex-pkg
 PKGNAME=	tex-${DISTNAME}-2.0
+TEXLIVE_REV=	15878
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	E-TeX support package

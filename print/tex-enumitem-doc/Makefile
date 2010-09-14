@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/09 22:52:28 minskim Exp $
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.2 2010/05/06 20:42:03 minskim Exp $
 
 DISTNAME=	enumitem.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2.2
+TEXLIVE_REV=	15878
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-enumitem

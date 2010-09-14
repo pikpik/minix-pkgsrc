@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/10 00:15:02 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/12 01:23:47 minskim Exp $
 
 DISTNAME=	ms
 PKGNAME=	tex-${DISTNAME}-2009
 TEXLIVE_REV=	16596
+DIST_SUBDIR=	${PKGBASE}-${TEXLIVE_REV}.2010
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Various LaTeX packages by Martin Schroeder

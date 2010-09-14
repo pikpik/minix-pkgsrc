@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 16085
+# $NetBSD: Makefile,v 1.2 2010/01/29 09:57:51 minskim Exp $
 
 DISTNAME=	preprint
 PKGNAME=	tex-${DISTNAME}-2009
+TEXLIVE_REV=	16085
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Bundle of LaTeX packages provided as-is

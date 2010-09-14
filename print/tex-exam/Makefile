@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2010/02/19 18:19:45 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2010/05/26 03:50:20 minskim Exp $
 
 DISTNAME=	exam
 PKGNAME=	tex-${DISTNAME}-2.3
 PKGREVISION=	1
 TEXLIVE_REV=	15878
+DIST_SUBDIR=	${PKGBASE}-${TEXLIVE_REV}.2010
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Package for typesetting exam scripts

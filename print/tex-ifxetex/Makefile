@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/04/24 01:00:28 minskim Exp $
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.3 2010/02/08 04:22:01 minskim Exp $
 
 DISTNAME=	ifxetex
 PKGNAME=	tex-${DISTNAME}-0.5
+TEXLIVE_REV=	15878
 
 MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://tug.ctan.org/tex-archive/help/Catalogue/entries/ifxetex.html
