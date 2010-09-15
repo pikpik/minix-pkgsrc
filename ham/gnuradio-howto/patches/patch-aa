@@ -1,0 +1,19 @@
+$NetBSD$
+
+--- configure.orig	2010-06-03 07:17:38.000000000 +0000
++++ configure
+@@ -2798,12 +2798,12 @@ $as_echo "not found" >&6; }
+   fi
+ 
+ 
+-    if test "$MINOR_VERSION" == "git"; then
++    if test "$MINOR_VERSION" = "git"; then
+                 RELEASE=$GIT_DESCRIBE
+     DOCVER=$MAJOR_VERSION.$API_COMPAT$MINOR_VERSION
+     LIBVER=$MAJOR_VERSION.$API_COMPAT$MINOR_VERSION
+   else
+-    if test "$MAINT_VERSION" == "git" ; then
++    if test "$MAINT_VERSION" = "git" ; then
+                         RELEASE=$GIT_DESCRIBE
+       DOCVER=$MAJOR_VERSION.$API_COMPAT.$MINOR_VERSION$MAINT_VERSION
+       LIBVER=$MAJOR_VERSION.$API_COMPAT.$MINOR_VERSION$MAINT_VERSION
