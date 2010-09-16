@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2008/06/20 01:09:36 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2008/07/13 16:14:00 tonnerre Exp $
 #
 
-DISTNAME=	vobcopy-1.1.1
+DISTNAME=	vobcopy-1.2.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lpn.rnbhq.org/download/
 
