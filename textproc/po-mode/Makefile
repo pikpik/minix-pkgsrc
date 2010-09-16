@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/16 17:22:13 taca Exp $
 
-DISTNAME=		gettext-0.14.6
-PKGNAME=		po-mode-2.01
+DISTNAME=		gettext-0.18.1.1
+PKGNAME=		po-mode-2.2
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_GNU:=gettext/}
 EXTRACT_ELEMENTS=	${DISTNAME}/gettext-tools/misc
