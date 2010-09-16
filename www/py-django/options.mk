@@ -1,6 +1,6 @@
-# $NetBSD: options.mk,v 1.7 2010/02/10 19:30:09 joerg Exp $
+# $NetBSD: options.mk,v 1.8 2010/02/11 13:37:45 joerg Exp $
 
-PKG_OPTIONS_VAR =	PKG_OPTIONS.django
+PKG_OPTIONS_VAR=	PKG_OPTIONS.django
 PKG_SUPPORTED_OPTIONS=	mysql oracle pgsql sqlite
 PKG_SUGGESTED_OPTIONS=	pgsql
 
