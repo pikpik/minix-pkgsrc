@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.162 2010/09/10 06:16:11 obache Exp $
+# $NetBSD: Makefile,v 1.163 2010/09/16 07:15:55 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -23,6 +23,7 @@ SUBDIR+=	acroread7-jpnfont
 SUBDIR+=	acroread7-korfont
 SUBDIR+=	adobe-cidfonts
 SUBDIR+=	adobe-cmaps
+SUBDIR+=	ae-mono-ttf
 SUBDIR+=	alee-ttf
 SUBDIR+=	arphic-ttf
 SUBDIR+=	artwiz-fonts
