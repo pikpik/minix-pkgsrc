@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.161 2010/09/10 06:10:23 obache Exp $
+# $NetBSD: Makefile,v 1.162 2010/09/10 06:16:11 obache Exp $
 #
 
 COMMENT=	Fonts
@@ -75,10 +75,10 @@ SUBDIR+=	font-ibm-type1
 SUBDIR+=	font-isas-misc
 SUBDIR+=	font-jis-misc
 SUBDIR+=	font-micro-misc
-SUBDIR+=	font-misc-misc
 SUBDIR+=	font-misc-cyrillic
 SUBDIR+=	font-misc-ethiopic
 SUBDIR+=	font-misc-meltho
+SUBDIR+=	font-misc-misc
 SUBDIR+=	font-mutt-misc
 SUBDIR+=	font-schumacher-misc
 SUBDIR+=	font-screen-cyrillic
