@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2009/04/30 20:59:15 zafer Exp $
+# $NetBSD: Makefile,v 1.40 2010/06/02 13:07:12 adam Exp $
 
 DISTNAME=	dctc-0.85.9
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://ac2i.homelinux.com/dctc/
 
