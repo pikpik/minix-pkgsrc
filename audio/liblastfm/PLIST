@@ -15,6 +15,7 @@ include/lastfm/Playlist
 include/lastfm/RadioStation
 include/lastfm/RadioTuner
 include/lastfm/Scrobble
+include/lastfm/ScrobbleCache
 include/lastfm/ScrobblePoint
 include/lastfm/Tag
 include/lastfm/Track
