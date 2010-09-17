@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/03/05 18:51:29 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/05/20 00:58:14 wiz Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
@@ -27,7 +27,6 @@ do-patch:
 	${PATCH} --batch <$$f || true; \
 	done)
 
-BUILDLINK_API_DEPENDS.python23+=	python23>=2.3.5nb11
 BUILDLINK_API_DEPENDS.python24+=	python24>=2.4.5nb1
 BUILDLINK_API_DEPENDS.python25+=	python25>=2.5.2nb2
 
