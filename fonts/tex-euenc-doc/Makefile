@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/07 22:37:42 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/24 03:35:09 minskim Exp $
 
 DISTNAME=	euenc.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-0.1f
-TEXLIVE_REV=	17015
+PKGNAME=	tex-${DISTNAME:S/./-/}-0.1h
+TEXLIVE_REV=	19795
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-euenc
