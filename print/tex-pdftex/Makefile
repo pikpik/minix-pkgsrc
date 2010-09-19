@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2010/08/26 00:13:49 jnemeth Exp $
+# $NetBSD: Makefile,v 1.10 2010/09/13 04:14:32 minskim Exp $
 
 DISTNAME=	pdftex
-PKGNAME=	tex-${DISTNAME}-1.40.10
-PKGREVISION=	1
-TEXLIVE_REV=	19496
+PKGNAME=	tex-${DISTNAME}-1.40.11
+TEXLIVE_REV=	19724
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	TeX extension for direct creation of PDF
