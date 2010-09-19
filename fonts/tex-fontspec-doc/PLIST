@@ -1,4 +1,5 @@
 @comment $NetBSD$
-share/texmf-dist/doc/xelatex/fontspec/README
-share/texmf-dist/doc/xelatex/fontspec/fontspec-example.ltx
-share/texmf-dist/doc/xelatex/fontspec/fontspec.pdf
+share/texmf-dist/doc/latex/fontspec/README
+share/texmf-dist/doc/latex/fontspec/fontspec-example.tex
+share/texmf-dist/doc/latex/fontspec/fontspec-testsuite.pdf
+share/texmf-dist/doc/latex/fontspec/fontspec.pdf

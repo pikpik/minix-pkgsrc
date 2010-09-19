@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/21 07:24:53 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/19 23:09:15 minskim Exp $
 
 DISTNAME=	fontspec.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-1.18
-TEXLIVE_REV=	15878
+PKGNAME=	tex-${DISTNAME:S/./-/}-2.1
+TEXLIVE_REV=	19796
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-fontspec
