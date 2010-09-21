@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ae,v 1.1.1.1 2010/03/04 16:27:18 taca Exp $
+
+* Portability: include <bstring.h> if exists.
 
 --- client/mysqlbinlog.cc.orig	2010-02-04 11:36:52.000000000 +0000
 +++ client/mysqlbinlog.cc

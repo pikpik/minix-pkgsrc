@@ -1,4 +1,6 @@
-$NetBSD: patch-ap,v 1.1.1.1 2010/03/04 16:27:18 taca Exp $
+$NetBSD: patch-ap,v 1.2 2010/08/11 23:18:04 taca Exp $
+
+* Tweak installig manual pages for client package.
 
 --- man/Makefile.in.orig	2010-07-09 12:38:13.000000000 +0000
 +++ man/Makefile.in

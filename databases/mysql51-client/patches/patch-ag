@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ag,v 1.1.1.1 2010/03/04 16:27:18 taca Exp $
+
+* Correct function call with a pointer to function.
 
 --- config/ac-macros/readline.m4.orig	2010-02-04 11:36:58.000000000 +0000
 +++ config/ac-macros/readline.m4

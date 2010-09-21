@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-av,v 1.1.1.1 2010/03/04 16:27:18 taca Exp $
+
+* Handle DragonFly as the same as FreeBSD.
 
 --- sql/mysqld.cc.orig	2010-02-04 11:39:50.000000000 +0000
 +++ sql/mysqld.cc

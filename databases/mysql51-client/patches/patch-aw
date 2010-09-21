@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aw,v 1.1.1.1 2010/03/04 16:27:18 taca Exp $
+
+* Portability: include <bstring.h> if exists.
 
 --- sql/sql_string.cc.orig	2010-02-04 11:39:53.000000000 +0000
 +++ sql/sql_string.cc
