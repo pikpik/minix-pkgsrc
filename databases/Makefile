@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.348 2010/09/16 07:15:32 wiz Exp $
+# $NetBSD: Makefile,v 1.349 2010/09/18 09:10:24 obache Exp $
 #
 
 COMMENT=	Databases
@@ -235,6 +235,16 @@ SUBDIR+=	postgresql84-plperl
 SUBDIR+=	postgresql84-plpython
 SUBDIR+=	postgresql84-pltcl
 SUBDIR+=	postgresql84-server
+SUBDIR+=	postgresql90
+SUBDIR+=	postgresql90-adminpack
+SUBDIR+=	postgresql90-client
+SUBDIR+=	postgresql90-dblink
+SUBDIR+=	postgresql90-docs
+SUBDIR+=	postgresql90-pgcrypto
+SUBDIR+=	postgresql90-plperl
+SUBDIR+=	postgresql90-plpython
+SUBDIR+=	postgresql90-pltcl
+SUBDIR+=	postgresql90-server
 SUBDIR+=	pxtools
 SUBDIR+=	py-PgSQL
 SUBDIR+=	py-bdb-xml
