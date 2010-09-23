@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2009/12/08 14:39:14 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/10 07:42:48 taca Exp $
 
-DISTNAME=	net-scp-1.0.3
+DISTNAME=	net-scp-1.0.4
 CATEGORIES=	net security
 
 MAINTAINER=	filip@joyent.com
