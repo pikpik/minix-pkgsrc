@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.349 2010/09/18 09:10:24 obache Exp $
+# $NetBSD: Makefile,v 1.350 2010/09/21 07:56:11 adam Exp $
 #
 
 COMMENT=	Databases
@@ -10,6 +10,7 @@ SUBDIR+=	bdb-xml
 SUBDIR+=	cdb
 SUBDIR+=	clisp-gdbm
 SUBDIR+=	clisp-pgsql
+SUBDIR+=	couchdb
 #SUBDIR+=	cstore	# not enabled at present due to its size requirements
 SUBDIR+=	datadraw
 SUBDIR+=	db
