@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2010/09/14 11:01:43 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2010/09/16 08:06:14 adam Exp $
 
 DISTNAME=	poedit-1.4.6.1
 PKGREVISION=	3
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=poedit/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.poedit.net/
 COMMENT=	Cross-platform gettext catalogs (.po files) editor
+LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
