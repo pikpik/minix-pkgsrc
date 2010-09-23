@@ -1,12 +1,12 @@
-@comment $NetBSD: PLIST,v 1.7 2009/08/12 12:43:09 obache Exp $
+@comment $NetBSD$
 lib/pkgconfig/ruby-glib2.pc
 ${RUBY_VENDORLIB}/glib-mkenums.rb
 ${RUBY_VENDORLIB}/glib2.rb
-${RUBY_VENDORARCHLIB}/glib2.${RUBY_DLEXT}
+${RUBY_VENDORLIB}/gnome2-win32-binary-downloader.rb
 ${RUBY_VENDORARCHLIB}/glib-enum-types.h
+${RUBY_VENDORARCHLIB}/glib2.${RUBY_DLEXT}
 ${RUBY_VENDORARCHLIB}/rbgcompat.h
 ${RUBY_VENDORARCHLIB}/rbglib.h
 ${RUBY_VENDORARCHLIB}/rbgobject.h
 ${RUBY_VENDORARCHLIB}/rbgutil.h
 ${RUBY_VENDORLIB}/mkmf-gnome2.rb
-${RUBY_VENDORLIB}/pkg-config.rb
