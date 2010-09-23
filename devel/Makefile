@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1401 2010/09/12 10:04:33 wiz Exp $
+# $NetBSD: Makefile,v 1.1402 2010/09/23 05:27:32 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -745,6 +745,9 @@ SUBDIR+=	p5-Inline
 SUBDIR+=	p5-InlineX-C2XS
 SUBDIR+=	p5-Internals
 SUBDIR+=	p5-LDAP
+SUBDIR+=	p5-LEOCHARRE-CLI2
+SUBDIR+=	p5-LEOCHARRE-Debug
+SUBDIR+=	p5-LEOCHARRE-Dir
 SUBDIR+=	p5-Lexical-Persistence
 SUBDIR+=	p5-Lexical-SealRequireHints
 SUBDIR+=	p5-List-MoreUtils
