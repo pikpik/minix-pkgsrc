@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2010/01/03 01:37:59 tnn Exp $
+# $NetBSD: Makefile,v 1.54 2010/07/31 20:31:33 dholland Exp $
 
 DISTNAME=	f2c-20090411	# see notes below
 PKGREVISION=	5
@@ -64,5 +64,11 @@ do-install:
 #
 #   mv f2c.tar f2c-yyyymmdd.tar
 #   gzip --best f2c-yyyymmdd.tar
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Mclang)
+BUILDLINK_TRANSFORM+=	rm:-Werror
+.endif
 
 .include "../../mk/bsd.pkg.mk"
