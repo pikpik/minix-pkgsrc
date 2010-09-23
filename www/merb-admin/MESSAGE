@@ -1,0 +1,6 @@
+===========================================================================
+$NetBSD$
+
+  Make sure to add authorization logic before deploying to production!
+  WARNING: MerbAdmin does not implement any authorization scheme.
+===========================================================================
