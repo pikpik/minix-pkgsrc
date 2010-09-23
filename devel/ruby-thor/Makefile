@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/12 04:04:25 taca Exp $
 
-DISTNAME=	thor-0.14.0
+DISTNAME=	thor-0.14.1
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
