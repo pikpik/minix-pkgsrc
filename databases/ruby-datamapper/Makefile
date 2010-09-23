@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2008/09/16 06:28:48 taca Exp $
+# $NetBSD: Makefile,v 1.5 2010/09/12 00:01:14 taca Exp $
 
 DISTNAME=	datamapper-1.0.2
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.datamapper.org/
+HOMEPAGE=	http://datamapper.org/
 COMMENT=	Object/Relational Mapper for Ruby
 LICENSE=	mit
 
