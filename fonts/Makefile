@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.163 2010/09/16 07:15:55 wiz Exp $
+# $NetBSD: Makefile,v 1.164 2010/09/16 23:49:48 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -183,6 +183,8 @@ SUBDIR+=	tex-lh
 SUBDIR+=	tex-lh-doc
 SUBDIR+=	tex-lm
 SUBDIR+=	tex-lm-doc
+SUBDIR+=	tex-ly1
+SUBDIR+=	tex-ly1-doc
 SUBDIR+=	tex-manfnt
 SUBDIR+=	tex-marvosym
 SUBDIR+=	tex-marvosym-doc
