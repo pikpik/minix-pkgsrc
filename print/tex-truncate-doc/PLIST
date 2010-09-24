@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/truncate/miscdoc.sty
+share/texmf-dist/doc/latex/truncate/truncate.pdf
+share/texmf-dist/doc/latex/truncate/truncate.tex
