@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2009/08/16 13:42:33 wiz Exp $
+# $NetBSD: Makefile,v 1.58 2010/02/13 09:43:40 asau Exp $
 
 DISTNAME=	gmp-5.0.1
 CATEGORIES=	devel math
@@ -42,7 +42,8 @@ GCC_REQD+=		3.0
 .endif
 
 .if ${MACHINE_ARCH} == "i386"
-.  if ${OPSYS} == "Darwin" || !empty(PKGSRC_COMPILER:Msunpro)
+# XXX SunOS should work, but currently bombs in mpn/fat.c
+.  if ${OPSYS} == "Darwin" || ${OPSYS} == "SunOS" || !empty(PKGSRC_COMPILER:Msunpro)
 # don't use x86 assembly (it doesn't build)
 CONFIGURE_ENV+=		MPN_PATH="generic"
 .  else
