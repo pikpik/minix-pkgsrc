@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/underscore/miscdoc.sty
+share/texmf-dist/doc/latex/underscore/underscore.pdf
+share/texmf-dist/doc/latex/underscore/underscore.tex
