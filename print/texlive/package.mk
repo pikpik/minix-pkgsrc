@@ -31,7 +31,11 @@
 #	should not be installed.
 
 CATEGORIES?=	print
+.if empty(TEXLIVE_USE_CTAN)
+MASTER_SITES?=	${MASTER_SITE_BACKUP}
+.else
 MASTER_SITES?=	${MASTER_SITE_TEX_CTAN:=systems/texlive/tlnet/archive/}
+.endif
 .if empty(TEXLIVE_REV)
 DIST_SUBDIR?=	${PKGNAME_NOREV}
 .else
