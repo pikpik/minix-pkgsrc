@@ -1,0 +1,2 @@
+@comment $NetBSD$
+@pkgdir ${EMULSUBDIRSLASH}usr/lib/qt3/etc
