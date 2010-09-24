@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/titleref/miscdoc.sty
+share/texmf-dist/doc/latex/titleref/titleref.pdf
+share/texmf-dist/doc/latex/titleref/titleref.tex
