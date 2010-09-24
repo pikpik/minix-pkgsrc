@@ -1,4 +1,4 @@
-# $NetBSD: metadata.mk,v 1.33 2010/02/19 19:11:08 joerg Exp $
+# $NetBSD: metadata.mk,v 1.34 2010/05/03 16:46:36 reed Exp $
 
 ######################################################################
 ### The targets below are all PRIVATE.
@@ -217,6 +217,8 @@ _METADATA_TARGETS+=	${_MESSAGE_FILE}
 MESSAGE_SUBST+=	PKGNAME=${PKGNAME}					\
 		PKGBASE=${PKGBASE}					\
 		PREFIX=${PREFIX}					\
+		EMULDIR=${EMULDIR}					\
+		EMULSUBDIR=${EMULSUBDIR}				\
 		LOCALBASE=${LOCALBASE}					\
 		X11PREFIX=${X11PREFIX}					\
 		X11BASE=${X11BASE}					\
