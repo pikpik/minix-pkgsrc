@@ -1,2 +1,4 @@
 @comment $NetBSD$
+share/texmf-dist/doc/latex/placeins/placeins-doc.pdf
+share/texmf-dist/doc/latex/placeins/placeins-doc.tex
 share/texmf-dist/doc/latex/placeins/placeins.txt
