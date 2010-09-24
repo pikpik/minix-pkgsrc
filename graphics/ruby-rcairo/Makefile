@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/09/14 06:05:25 obache Exp $
+# $NetBSD: Makefile,v 1.18 2010/09/14 11:00:47 wiz Exp $
 
 DISTNAME=		rcairo-1.10.0
 PKGNAME=		${RUBY_PKGPREFIX}-${DISTNAME}
@@ -25,4 +25,5 @@ RUBY_HAS_ARCHILIB=	yes
 BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.2.0
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../lang/ruby/modules.mk"
+.include "../../devel/ruby-pkg-config/tool.mk"
 .include "../../mk/bsd.pkg.mk"
