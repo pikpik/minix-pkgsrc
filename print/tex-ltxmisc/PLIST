@@ -8,7 +8,6 @@ share/texmf-dist/tex/latex/ltxmisc/iagproc.cls
 share/texmf-dist/tex/latex/ltxmisc/linsys.sty
 share/texmf-dist/tex/latex/ltxmisc/mitpress.sty
 share/texmf-dist/tex/latex/ltxmisc/parskip.sty
-share/texmf-dist/tex/latex/ltxmisc/path.sty
 share/texmf-dist/tex/latex/ltxmisc/romanneg.sty
 share/texmf-dist/tex/latex/ltxmisc/secdot.sty
 share/texmf-dist/tex/latex/ltxmisc/section.sty
@@ -19,9 +18,6 @@ share/texmf-dist/tex/latex/ltxmisc/sphack.sty
 share/texmf-dist/tex/latex/ltxmisc/statex.sty
 share/texmf-dist/tex/latex/ltxmisc/subfigmat.sty
 share/texmf-dist/tex/latex/ltxmisc/thrmappendix.sty
-share/texmf-dist/tex/latex/ltxmisc/titleref.sty
 share/texmf-dist/tex/latex/ltxmisc/topcapt.sty
-share/texmf-dist/tex/latex/ltxmisc/truncate.sty
-share/texmf-dist/tex/latex/ltxmisc/underscore.sty
 share/texmf-dist/tex/latex/ltxmisc/verbasef.sty
 share/texmf-dist/tex/latex/ltxmisc/vrbexin.sty
