@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/01/17 12:02:32 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2010/06/25 21:56:46 joerg Exp $
 #
 
 PKGNAME=	isc-dhcp-${DHVER}
-PKGREVISION=	1
 COMMENT=	ISC Dynamic Host Configuration Protocol (DHCP) Base
 SUBDIR=		includes common minires dst
 
