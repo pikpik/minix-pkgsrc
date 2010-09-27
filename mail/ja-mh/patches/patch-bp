@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-bp,v 1.1 2009/12/25 13:55:12 taca Exp $
+
+* Nuke removing existing files.
 
 --- conf/makefiles/zotnet/mts.orig	2001-06-11 01:26:35.000000000 +0000
 +++ conf/makefiles/zotnet/mts
