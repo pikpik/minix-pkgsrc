@@ -600,7 +600,6 @@ _ROOT_CMD=	cd ${.CURDIR} &&					\
 			su-${.TARGET} ${MAKEFLAGS.su-${.TARGET}}
 
 .PHONY: su-target
-.if ${OPSYS} != "Minix"
 su-target: .USE
 	${RUN} \
 	case ${PRE_CMD.su-${.TARGET}:Q}"" in				\
@@ -619,21 +618,6 @@ su-target: .USE
 		${SU_CMD} ${_ROOT_CMD:Q};				\
 		${STEP_MSG} "Dropping \`\`${_SU_ROOT_USER}'' privileges.";	\
 	fi
-.else
-su-target: .USE
-	${RUN} \
-	case ${PRE_CMD.su-${.TARGET}:Q}"" in				\
-	"")	;;							\
-	*)	${PRE_CMD.su-${.TARGET}} ;;				\
-	esac;								\
-	if ${TEST} `${ID} -u` = `${ID} -u ${_SU_ROOT_USER}`; then	\
-		${_ROOT_CMD};						\
-	else								\
-		${STEP_MSG} "***** Please run make as root ******"; \
-		${STEP_MSG} "***** Support for just in time su is in progress. ******"; \
-		false; \
-	fi
-.endif
 
 ################################################################
 # Some more targets supplied for users' convenience
