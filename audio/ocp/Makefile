@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/01/16 17:10:31 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2010/06/05 14:45:01 wiz Exp $
 
 DISTNAME=		ocp-0.1.20
 CATEGORIES=		audio
@@ -18,6 +18,9 @@ USE_TOOLS+=		gmake makeinfo
 USE_LANGUAGES=		c c++
 USE_NCURSES=		yes	# resize_term
 INFO_FILES=		yes
+
+# ymtype.so wants to link -llzh before it's finished building
+MAKE_JOBS_SAFE=		no
 
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}
 CONFIGURE_ARGS+=	--infodir=${PREFIX}/info
