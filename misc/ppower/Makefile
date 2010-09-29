@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:37 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2009/05/19 08:59:24 wiz Exp $
 #
 
 DISTNAME=	ppower-0.1.5
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ppower/}
 
