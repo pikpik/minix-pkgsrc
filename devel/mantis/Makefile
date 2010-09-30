@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2009/04/23 10:45:21 gavan Exp $
+# $NetBSD: Makefile,v 1.35 2009/07/17 18:00:15 adrianp Exp $
 
 DISTNAME=	mantisbt-1.1.7
 PKGNAME=	${DISTNAME:S/mantisbt/mantis/}
+PKGREVISION=	1
 CATEGORIES=	devel www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mantisbt/}
 
@@ -71,7 +72,6 @@ do-install:
 	cd ${DESTDIR}${MANTIS_HOME} && \
 		${FIND} . -type f | ${XARGS} ${CHMOD} ${SHAREMODE}
 
-.include "../../mk/mysql.buildlink3.mk"
 .include "../../lang/php/phpversion.mk"
 .include "../../mk/apache.mk"
 .include "../../mk/bsd.pkg.mk"
