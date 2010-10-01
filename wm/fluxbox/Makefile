@@ -21,10 +21,17 @@ USE_LIBTOOL=	YES
 .include "../../mk/bsd.prefs.mk"
 
 CONFIGURE_ARGS+=	--enable-shape
-CONFIGURE_ARGS+=	--enable-nls
 CONFIGURE_ARGS+=	--enable-xinerama
+CONFIGURE_ARGS+=	--enable-nls
+.if ${OPSYS} != "Minix"
+CONFIGURE_ARGS+=	--enable-nls
+.else
+CONFIGURE_ARGS+=	--disable-nls
+CONFIGURE_ARGS+=	--disable-xpm
+CONFIGURE_ARGS+=	--disable-xrandr
+.endif
 
-.include "options.mk"
+
 
 .include "../../mk/compiler.mk"
 .if !empty(PKGSRC_COMPILER:Msunpro)
@@ -38,8 +45,12 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"
+
+.if ${OPSYS} != "Minix"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
+.endif
+
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
