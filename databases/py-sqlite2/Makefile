@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/07/09 19:02:58 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2010/09/16 11:31:16 adam Exp $
 
 DISTNAME=	pysqlite-2.6.0
 PKGNAME=	${PYPKGPREFIX}-sqlite2-2.6.0
@@ -14,6 +14,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 PYDISTUTILSPKG=	yes
 
 .include "../../lang/python/extension.mk"
+
+.if !defined(PYPACKAGE) || ${PYPACKAGE} != "python24"
+PLIST.python25=	yes
+.endif
+
+PLIST_VARS+=	python25
 
 do-postinstall-test: .PHONY
 	cd ${WRKDIR} && ${PYTHONBIN} -c "from pysqlite2 import test;test.test()"
