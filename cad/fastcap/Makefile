@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/02/25 17:03:03 minskim Exp $
+# $NetBSD: Makefile,v 1.34 2010/09/29 21:57:04 minskim Exp $
 #
 
 DISTNAME=	fastcap-2.0-18Sep92
@@ -18,6 +18,7 @@ BUILD_DEPENDS+=	tex-bibtex>=0.99c:../../print/tex-bibtex
 BUILD_DEPENDS+=	tex-latex-bin>=2009nb1:../../print/tex-latex-bin
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=		no
 
 EXTRACT_USING=		bsdtar
 
