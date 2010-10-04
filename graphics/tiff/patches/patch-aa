@@ -57,3 +57,4 @@ https://bugzilla.redhat.com/show_bug.cgi?id=603081
  			{
  				if (initYCbCrConversion(img)!=0)
  				{
+
