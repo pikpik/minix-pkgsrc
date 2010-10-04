@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2010/01/17 12:02:45 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2010/06/06 12:36:11 obache Exp $
 #
 
 DISTNAME=		xmlsec1-1.2.16
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.aleksey.com/xmlsec/download/
 
