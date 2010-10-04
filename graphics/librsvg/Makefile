@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2010/06/27 20:11:36 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2010/09/14 11:00:59 wiz Exp $
 
 DISTNAME=	librsvg-2.26.3
 PKGREVISION=	2
@@ -28,6 +28,10 @@ TEST_TARGET=		check
 CONFIGURE_ARGS+=	--with-gimp=no
 CONFIGURE_ARGS+=	--with-tags=
 CONFIGURE_ARGS+=	--disable-mozilla-plugin
+
+# Workaround for Upstream Bug#562310.
+# for more detail, see also PR#41475.
+TOOLS_NOOP+=	gtkdoc-rebase
 
 GTK2_LOADERS=		yes
 
