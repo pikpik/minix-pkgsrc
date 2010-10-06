@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/06/13 22:44:02 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2010/09/14 11:01:33 wiz Exp $
 #
 
 DISTNAME=	accerciser-1.6.1
@@ -17,7 +17,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-PYTHON_VERSIONS_ACCEPTED=	25 24
 PY_PATCHPLIST=		yes
 REPLACE_PYTHON=		plugins/ipython_view.py
 REPLACE_PYTHON+=	src/accerciser.in
