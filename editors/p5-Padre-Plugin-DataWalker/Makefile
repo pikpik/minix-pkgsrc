@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/16 21:36:17 sno Exp $
+# $NetBSD: Makefile,v 1.2 2010/08/21 16:34:49 seb Exp $
 #
 
 DISTNAME=	Padre-Plugin-DataWalker-0.02
@@ -13,6 +13,8 @@ COMMENT=	Simple Perl data structure browser Padre
 LICENSE=	${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=	no
 
 DEPENDS+=	p5-Padre>=0.47:../../editors/p5-Padre
 DEPENDS+=	p5-Wx-Perl-DataWalker>=0.02:../../devel/p5-Wx-Perl-DataWalker
