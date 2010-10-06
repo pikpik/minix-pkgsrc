@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2010/08/11 21:56:28 taca Exp $
+# $NetBSD: Makefile,v 1.23 2010/09/30 08:20:24 obache Exp $
 
 DISTNAME=	drupal-6.18
 PKGREVISION=	1
@@ -12,7 +12,13 @@ LICENSE=	gnu-gpl-v2
 
 CONFLICTS+=	drupal-5.*{,nb*}
 
-DEPENDS+=	php>=5.2.0:../../lang/php5
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../lang/php/phpversion.mk"
+
+.if ${PKG_PHP_VERSION} == "5"
+DEPENDS+=	php>=5.2.0<5.3:../../lang/php5
+.endif
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=4.3.5:../../graphics/php-gd
 
 NO_BUILD=	YES
@@ -55,9 +61,6 @@ SUBST_MESSAGE.conf=	Fixing configuration files.
 
 INSTALLATION_DIRS+=	${DRUPAL}/files ${DRUPAL}/sites/all \
 			share/doc/drupal share/examples/drupal
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-.include "../../lang/php/phpversion.mk"
 
 .include "options.mk"
 
