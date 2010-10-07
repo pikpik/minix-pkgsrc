@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.9758 2010/10/05 16:12:41 wiz Exp $
+$NetBSD: TODO,v 1.9760 2010/10/06 12:09:34 taca Exp $
 
 Suggested new packages
 ======================
@@ -1017,8 +1017,8 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o muse-0.9.2
 	o mutt-1.5.21
 	o mutt-devel-1.5.21
-	o mysql51-client-5.1.50
-	o mysql51-server-5.1.50
+	o mysql51-client-5.1.51
+	o mysql51-server-5.1.51
 	o nagios-3.2.3
 	o nap-1.5.3
 	o nautilus-actions-2.30.3 [GNOME 2.30]
