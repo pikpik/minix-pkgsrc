@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/11/17 13:40:15 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2009/04/09 00:44:53 joerg Exp $
 
 DISTNAME=		mailagent-3.0.73
 CATEGORIES=		mail
@@ -13,6 +13,8 @@ RESTRICTED=		Correct FQDN needs to be hardcoded
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 INTERACTIVE_STAGE=	configure
+
+MAKE_JOBS_SAFE=		no
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
