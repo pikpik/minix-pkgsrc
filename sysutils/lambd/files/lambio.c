@@ -1,4 +1,4 @@
-/*	$NetBSD: lambio.c,v 1.2 2004/05/23 22:55:39 kristerw Exp $	*/
+/*	$NetBSD: lambio.c,v 1.3 2007/12/23 00:32:49 tnn Exp $	*/
 
 /*
  * Copyright (C) 2001 WIDE Project.  All rights reserved.
@@ -63,7 +63,7 @@ static u_int8_t
 lamb_inb(unsigned port)
 {
 	u_int8_t data;
-	__asm volatile("inb %w1,%0" : "=a" (data) : "id" (port));
+	__asm volatile("inb %w1,%0" : "=a" (data) : "d" (port));
 	return data;
 }
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2008/02/07 13:24:36 tnn Exp $
+# $NetBSD: Makefile,v 1.14 2009/04/09 00:48:16 joerg Exp $
 
 DISTNAME=	lambd-20010719
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	# none
 DISTFILES=	# none
