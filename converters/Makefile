@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2010/07/24 13:24:39 gdt Exp $
+# $NetBSD: Makefile,v 1.105 2010/07/24 17:57:01 gdt Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -30,6 +30,8 @@ SUBDIR+=	kcc
 SUBDIR+=	latex2rtf
 SUBDIR+=	libiconv
 SUBDIR+=	libwpd
+SUBDIR+=	libwpg
+SUBDIR+=	libwps
 SUBDIR+=	macfork
 SUBDIR+=	mpack
 SUBDIR+=	nkf
