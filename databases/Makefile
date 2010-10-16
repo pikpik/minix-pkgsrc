@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.351 2010/09/23 05:25:49 obache Exp $
+# $NetBSD: Makefile,v 1.353 2010/10/12 16:52:36 joerg Exp $
 #
 
 COMMENT=	Databases
@@ -11,6 +11,7 @@ SUBDIR+=	cdb
 SUBDIR+=	clisp-gdbm
 SUBDIR+=	clisp-pgsql
 SUBDIR+=	couchdb
+SUBDIR+=	csharp-mysql
 #SUBDIR+=	cstore	# not enabled at present due to its size requirements
 SUBDIR+=	datadraw
 SUBDIR+=	db
@@ -42,7 +43,6 @@ SUBDIR+=	java-tokyocabinet
 SUBDIR+=	jdb
 SUBDIR+=	jdbc-mysql31
 SUBDIR+=	jdbc-mysql5
-SUBDIR+=	jdbc-postgresql82
 SUBDIR+=	jdbc-postgresql83
 SUBDIR+=	jdbc-postgresql84
 SUBDIR+=	kmysqladmin
@@ -210,14 +210,6 @@ SUBDIR+=	phpldapadmin
 SUBDIR+=	phpmyadmin
 SUBDIR+=	phppgadmin
 SUBDIR+=	postgresql-postgis
-SUBDIR+=	postgresql82
-SUBDIR+=	postgresql82-adminpack
-SUBDIR+=	postgresql82-client
-SUBDIR+=	postgresql82-plperl
-SUBDIR+=	postgresql82-plpython
-SUBDIR+=	postgresql82-pltcl
-SUBDIR+=	postgresql82-server
-SUBDIR+=	postgresql82-tsearch2
 SUBDIR+=	postgresql83
 SUBDIR+=	postgresql83-adminpack
 SUBDIR+=	postgresql83-client
