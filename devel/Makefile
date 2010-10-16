@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1404 2010/09/23 07:20:07 taca Exp $
+# $NetBSD: Makefile,v 1.1405 2010/09/23 15:25:57 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -400,6 +400,7 @@ SUBDIR+=	mkcmd
 SUBDIR+=	mono-addins
 SUBDIR+=	mono-tools
 SUBDIR+=	monodevelop
+SUBDIR+=	monodevelop-database
 SUBDIR+=	monotone
 SUBDIR+=	monotone-el
 SUBDIR+=	monotone-server
