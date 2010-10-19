@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2010/09/10 10:51:56 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/13 14:12:14 taca Exp $
 
 DISTNAME=	camping-2.1
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://rubyforge.org/projectrs/camping/
+HOMEPAGE=	http://rubyforge.org/projects/camping/
 COMMENT=	Ruby micro-framework for web applications
 LICENSE=	mit
 

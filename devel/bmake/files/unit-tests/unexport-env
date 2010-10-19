@@ -1,4 +1,4 @@
-# $Id: unexport-env,v 1.1.1.1 2010/04/20 13:32:42 joerg Exp $
+# $Id: unexport-env,v 1.1.1.1 2009/11/19 00:31:11 sjg Exp $
 
 # pick up a bunch of exported vars
 .include "export"

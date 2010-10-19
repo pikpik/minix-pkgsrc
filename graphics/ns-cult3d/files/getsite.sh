@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: getsite.sh,v 1.1.1.1 2002/02/13 09:10:10 abs Exp $
+# $Id$
 # 
 # Determine the correct BASE URL from which to download $DISTFILE
 

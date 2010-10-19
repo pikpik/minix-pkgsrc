@@ -3,7 +3,7 @@
 /*
  * prototypes for PD-KSH
  * originally generated using "cproto.c 3.5 92/04/11 19:28:01 cthuang "
- * $Id: proto.h,v 1.2 2008/05/31 16:47:37 tnn Exp $
+ * $Id: proto.h,v 1.7 2005/06/26 19:09:00 christos Exp $
  */
 
 /* alloc.c */

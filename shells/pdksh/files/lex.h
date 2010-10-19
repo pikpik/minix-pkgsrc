@@ -4,7 +4,7 @@
  * Source input, lexer and parser
  */
 
-/* $Id: lex.h,v 1.2 2008/05/31 16:47:37 tnn Exp $ */
+/* $Id: lex.h,v 1.7 2005/09/11 22:16:00 christos Exp $ */
 
 #define	IDENT	64
 

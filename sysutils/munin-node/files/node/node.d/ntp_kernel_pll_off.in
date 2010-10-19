@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $Id: ntp_kernel_pll_off.in,v 1.1.1.1 2006/06/04 20:53:57 he Exp $
+# $Id$
 #
 # Plugin to monitor the kernel's PLL offset for the NTP
 # status.

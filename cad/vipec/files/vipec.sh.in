@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $Id: vipec.sh.in,v 1.1 2003/02/06 00:41:13 dmcmahill Exp $
+# $Id$
 #
 
 VIPECHOME=@prefix@/vipec

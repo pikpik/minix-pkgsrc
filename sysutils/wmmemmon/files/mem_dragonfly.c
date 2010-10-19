@@ -1,4 +1,4 @@
-/* $Id: mem_dragonfly.c,v 1.1 2007/01/29 16:42:52 joerg Exp $ */
+/* $Id$ */
 
 /*
  * mem_dragonfly.c - module to get memory/swap usages in percent, for DragonFly

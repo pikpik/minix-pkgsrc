@@ -1,5 +1,5 @@
 /***************************************************************************
- * CVSID: $Id: hal-file-monitor.c,v 1.1 2008/11/25 23:10:23 jmcneill Exp $
+ * CVSID: $Id$
  *
  * hal-file-monitor.c: Kqueue-based file monitor
  *

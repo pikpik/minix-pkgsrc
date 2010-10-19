@@ -6,7 +6,7 @@
 /*
  * Shell file I/O routines
  */
-/* $Id: shf.h,v 1.2 2008/05/31 16:47:37 tnn Exp $ */
+/* $Id: shf.h,v 1.3 1999/10/20 15:10:00 hubertf Exp $ */
 
 #define SHF_BSIZE	512
 

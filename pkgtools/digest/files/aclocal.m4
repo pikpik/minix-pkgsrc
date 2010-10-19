@@ -1,4 +1,4 @@
-dnl $Id: aclocal.m4,v 1.2 2006/03/01 16:44:28 joerg Exp $
+dnl $Id: aclocal.m4,v 1.1 2002/12/21 04:06:13 schmonz Exp $
 
 dnl From heimdal sources
 dnl Id: c-attribute.m4,v 1.5 2004/08/26 12:35:41 joda Exp 

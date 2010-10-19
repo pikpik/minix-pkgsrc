@@ -1,6 +1,6 @@
 #! @SH@
 #
-# $Id: pkg_tarup,v 1.23 2009/11/05 16:22:47 joerg Exp $
+# $Id: pkg_tarup,v 1.22 2008/02/12 15:03:29 rillig Exp $
 #
 # Tar up installed package
 #

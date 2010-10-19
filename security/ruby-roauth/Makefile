@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2010/08/17 04:48:46 obache Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/10 07:47:05 taca Exp $
 
-DISTNAME=	roauth-0.0.3
+DISTNAME=	roauth-0.0.6
 CATEGORIES=	security
 
 MAINTAINER=	obache@NetBSD.org

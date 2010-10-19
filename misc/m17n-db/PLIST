@@ -1,5 +1,6 @@
 @comment $NetBSD$
 bin/m17n-db
+share/locale/de/LC_MESSAGES/m17n-db.mo
 share/locale/ja/LC_MESSAGES/m17n-db.mo
 share/locale/vi/LC_MESSAGES/m17n-db.mo
 share/m17n/8859-10.map
@@ -71,6 +72,7 @@ share/m17n/GUJR-OTF.flt
 share/m17n/GUR2-OTF.flt
 share/m17n/GURU-OTF.flt
 share/m17n/HEBR-FF.flt
+share/m17n/HEBR-OTF.flt
 share/m17n/HEBR.flt
 share/m17n/IBM037.map
 share/m17n/IBM038.map

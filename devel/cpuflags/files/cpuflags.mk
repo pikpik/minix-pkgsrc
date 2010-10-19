@@ -1,4 +1,4 @@
-# $Id: cpuflags.mk,v 1.20 2009/01/28 23:30:50 abs Exp $
+# $Id: cpuflags.mk,v 1.19 2009/01/20 17:26:21 abs Exp $
 # Makefile include fragment to simplify use of cpuflags in pkgsrc
 # abs@absd.org - freely distributable, no warrenties, stick no bills.
 

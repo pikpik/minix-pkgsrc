@@ -1,4 +1,4 @@
-dnl $Id: configure.ac,v 1.10 2007/03/07 19:18:39 rillig Exp $
+dnl $Id: configure.ac,v 1.9 2004/09/12 16:50:50 jschauma Exp $
 dnl Process this file with autoconf to produce a configure script.
 AC_PREREQ(2.57)
 AC_INIT([sed],[20040821],[agc@NetBSD.org])

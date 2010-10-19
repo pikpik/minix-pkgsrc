@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2009/04/08 22:43:25 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2009/04/09 00:48:16 joerg Exp $
 
-DISTNAME=	install-sh-20070712
+DISTNAME=	install-sh-20100824
 CATEGORIES=	sysutils
 MASTER_SITES=	# empty
 DISTFILES=	# empty

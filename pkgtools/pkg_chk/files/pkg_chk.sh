@@ -1,6 +1,6 @@
 #!@SH@ -e
 #
-# $Id: pkg_chk.sh,v 1.65 2009/07/22 21:56:13 sketch Exp $
+# $Id: pkg_chk.sh,v 1.64 2009/05/04 22:45:16 abs Exp $
 #
 # TODO: Make -g check dependencies and tsort
 # TODO: Make -g list user-installed packages first, followed by commented

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $Id: makeme,v 1.3 2006/01/15 17:50:53 joerg Exp $
+# $Id: makeme,v 1.2 2005/04/06 15:48:17 epg Exp $
 # This hack won't work for every trick you can play with /usr/msrc.
 # If the Distfile sends different files to the various platforms, or
 # builds a file on the meta source machine with a special tool or

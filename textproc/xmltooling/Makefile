@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/03/15 18:45:36 pettai Exp $
 #
 
 DISTNAME=	xmltooling-${PKGVERSION}
 PKGVERSION=	1.3.3
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://shibboleth.internet2.edu/downloads/opensaml/cpp/2.3/
 

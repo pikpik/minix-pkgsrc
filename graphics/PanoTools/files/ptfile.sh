@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$Id: ptfile.sh,v 1.2 2003/04/20 06:58:20 rh Exp $
+#	$Id: ptfile.sh,v 1.1.1.1 2003/04/19 07:55:34 rh Exp $
 #
 export CLASSPATH=@@prefix@@/share/PanoTools:${CLASSPATH}
 export JAVA_HOME=@@javahome@@

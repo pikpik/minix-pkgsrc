@@ -1,4 +1,4 @@
-# $Id: optimize_gcc.mk,v 1.36 2009/04/21 16:47:48 tnn Exp $
+# $Id: optimize_gcc.mk,v 1.35 2007/09/20 10:19:03 abs Exp $
 
 # This file is 'experimental' - which is doublespeak for unspeakably
 # ugly, and quite broken by design.

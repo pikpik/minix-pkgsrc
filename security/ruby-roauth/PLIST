@@ -1,5 +1,5 @@
 @comment $NetBSD$
-${GEM_HOME}/cache/roauth-${PKGVERSION}.gem
+${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/.gitignore
 ${GEM_LIBDIR}/LICENSE
 ${GEM_LIBDIR}/README.markdown
@@ -7,4 +7,6 @@ ${GEM_LIBDIR}/Rakefile
 ${GEM_LIBDIR}/VERSION
 ${GEM_LIBDIR}/lib/roauth.rb
 ${GEM_LIBDIR}/roauth.gemspec
-${GEM_HOME}/specifications/roauth-${PKGVERSION}.gemspec
+${GEM_LIBDIR}/test/helper.rb
+${GEM_LIBDIR}/test/test_roauth.rb
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec

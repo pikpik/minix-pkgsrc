@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/12/20 18:06:39 christos Exp $
+# $NetBSD: Makefile,v 1.14 2010/10/09 11:36:04 obache Exp $
 #
 
 DISTNAME=		strace-4.5.15
@@ -10,6 +10,9 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		christos@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/strace/
 COMMENT=		Trace system calls
+LICENSE=		modified-bsd
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 #			NetBSD < 3.99.16
 NOT_FOR_PLATFORM=	NetBSD-[012]*-* NetBSD-3.[0-9][._]*-* \
@@ -28,8 +31,10 @@ pre-configure:
 .endif
 
 .if ${OPSYS} == "NetBSD"
+MAKE_ENV+=	NETBSD_SRCDIR=${BSD_SRCDIR:Q}
 pre-configure:
 	${CP} -f ${WRKSRC}/syscalls.pl ${WRKSRC}/netbsd
+
 .endif
 
 .include "../../mk/bsd.pkg.mk"

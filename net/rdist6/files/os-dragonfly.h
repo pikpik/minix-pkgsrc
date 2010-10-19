@@ -33,7 +33,7 @@
  */
 
 /*
- * $Id: os-dragonfly.h,v 1.1 2006/03/23 13:41:41 joerg Exp $
+ * $Id: os-netbsd.h,v 1.6 2001/03/12 18:16:18 kim Exp $
  * @(#)os-netbsd.h
  */
 

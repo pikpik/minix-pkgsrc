@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $Id: ntp_kernel_pll_freq.in,v 1.1.1.1 2006/06/04 20:53:57 he Exp $
+# $Id$
 #
 # Plugin to monitor the kernel's PLL frequency for the NTP
 # status.

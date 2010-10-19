@@ -11,6 +11,7 @@ include/lastfm/InternetConnectionMonitor
 include/lastfm/Mbid
 include/lastfm/MutableTrack
 include/lastfm/NetworkAccessManager
+include/lastfm/ParseError
 include/lastfm/Playlist
 include/lastfm/RadioStation
 include/lastfm/RadioTuner

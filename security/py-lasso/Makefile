@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/01/17 12:02:43 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2010/07/01 15:08:14 joerg Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -7,7 +7,12 @@ COMMENT=	Libery Alliance Single Sign On binding for Python
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+.include "../../lang/python/pyversion.mk"
+
 BUILD_DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
+.if ${PYPKGPREFIX} == "py24"
+BUILD_DEPENDS+=	${PYPKGPREFIX}-elementtree-[0-9]*:../../textproc/py-elementtree
+.endif
 
 CONFIGURE_ARGS+=	--disable-php4
 CONFIGURE_ARGS+=	--disable-perl

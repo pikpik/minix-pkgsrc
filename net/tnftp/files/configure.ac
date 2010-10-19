@@ -4,7 +4,7 @@
 
 AC_INIT([tnftp], [20070806], [lukem@NetBSD.org])
 AC_PREREQ([2.61])
-AC_REVISION([$Revision: 1.1.1.1 $])
+AC_REVISION([$Revision: 1.11 $])
 
 AS_SHELL_SANITIZE
 

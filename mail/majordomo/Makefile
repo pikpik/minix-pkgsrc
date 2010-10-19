@@ -1,16 +1,20 @@
-# $NetBSD: Makefile,v 1.32 2010/02/19 18:49:41 joerg Exp $
+# $NetBSD: Makefile,v 1.33 2010/08/20 21:25:02 tron Exp $
 
 DISTNAME=		majordomo-1.94.5
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		mail
 MASTER_SITES=		ftp://ftp.sgi.com/other/majordomo/1.94.5/ \
 			ftp://ftp-europe.sgi.com/other/majordomo/1.94.5/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
+MAINTAINER=		spz@NetBSD.org
 HOMEPAGE=		http://www.greatcircle.com/majordomo/
 COMMENT=		The Majordomo mailing list manager
 LICENSE=		majordomo-license
+
+RESTRICTED=             No distribution of modified binary packages to the general public
+NO_BIN_ON_FTP=          ${RESTRICTED}
+NO_BIN_ON_CDROM=        ${RESTRICTED}
 
 CONFLICTS+=		bounce-*
 

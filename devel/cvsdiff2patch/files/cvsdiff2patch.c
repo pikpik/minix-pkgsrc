@@ -26,7 +26,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $Id: cvsdiff2patch.c,v 1.1.1.1 2007/11/29 10:11:13 bjs Exp $
+ * $Id: cvsdiff2patch.c,v 1.1 2003/06/06 16:56:08 bright Exp $
  */
 
 /*

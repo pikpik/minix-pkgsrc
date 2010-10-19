@@ -142,6 +142,7 @@ share/X11/xkb/symbols/al
 share/X11/xkb/symbols/altwin
 share/X11/xkb/symbols/am
 share/X11/xkb/symbols/ara
+share/X11/xkb/symbols/at
 share/X11/xkb/symbols/az
 share/X11/xkb/symbols/ba
 share/X11/xkb/symbols/bd
@@ -173,7 +174,9 @@ share/X11/xkb/symbols/es
 share/X11/xkb/symbols/et
 share/X11/xkb/symbols/eurosign
 share/X11/xkb/symbols/extras/apl
+share/X11/xkb/symbols/extras/ir
 share/X11/xkb/symbols/extras/rs
+share/X11/xkb/symbols/extras/ru
 share/X11/xkb/symbols/extras/us
 share/X11/xkb/symbols/fi
 share/X11/xkb/symbols/fo

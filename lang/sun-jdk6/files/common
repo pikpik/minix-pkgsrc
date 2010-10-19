@@ -1,7 +1,6 @@
-# $NetBSD: common,v 1.1.1.1 2004/09/30 23:47:20 rh Exp $
+# $NetBSD: common,v 1.1 2007/02/18 19:11:27 tv Exp $
 
 COPYRIGHT
-LICENSE
 THIRDPARTYLICENSEREADME.txt
 bin/ControlPanel
 bin/java

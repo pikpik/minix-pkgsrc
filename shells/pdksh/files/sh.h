@@ -4,7 +4,7 @@
  * Public Domain Bourne/Korn shell
  */
 
-/* $Id: sh.h,v 1.4 2008/06/15 14:20:09 tnn Exp $ */
+/* $Id: sh.h,v 1.3 2008/05/31 16:47:37 tnn Exp $ */
 
 #include "config.h"	/* system and option configuration info */
 

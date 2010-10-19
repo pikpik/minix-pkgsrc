@@ -1,4 +1,4 @@
-/* $Id: netdb.h,v 1.1 2008/10/06 12:36:20 joerg Exp $ */
+/* $Id: fake-rfc2553.h,v 1.16 2008/07/14 11:37:37 djm Exp $ */
 
 /*
  * Copyright (C) 2000-2003 Damien Miller.  All rights reserved.
