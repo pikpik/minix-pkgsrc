@@ -2,7 +2,7 @@
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc44-${GCC_VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_GNU:=gcc/gcc-${GCC_VERSION}/}
 EXTRACT_SUFX=		.tar.bz2
@@ -166,7 +166,6 @@ pre-configure:
 	${CP} ${FILESDIR}/i386-dragonfly64.h ${WRKSRC}/gcc/config/i386/dragonfly64.h
 .elif ${OPSYS} == "Minix"
 	${CP} ${FILESDIR}/minix.h ${WRKSRC}/gcc/config/i386/
-	${CP} ${FILESDIR}/t-minix ${WRKSRC}/gcc/config/i386/
 	${CP} ${FILESDIR}/gcov-minix-fs-wrapper.h ${WRKSRC}/gcc/
 .endif
 

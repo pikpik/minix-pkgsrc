@@ -23,12 +23,11 @@
 	"-lc"
 
 #undef  STANDARD_STARTFILE_PREFIX_1
-#define STANDARD_STARTFILE_PREFIX_1 "/usr/gnu/lib/"
+#define STANDARD_STARTFILE_PREFIX_1 "/usr/lib/"
+
+#undef  STANDARD_STARTFILE_PREFIX_2
 
 #undef  STARTFILE_SPEC
-/* #define STARTFILE_SPEC \
- *	"/usr/gnu/lib/crtso%O%s"
- */
 #define STARTFILE_SPEC \
 	"crtso.o%s"
 
@@ -64,12 +63,14 @@ Boston, MA 02111-1307, USA.  */
    count is in %cl.  Some assemblers require %cl as an argument;
    some don't.  This macro controls what to do: by default, don't
    print %cl.  */
+#undef  SHIFT_DOUBLE_OMITS_COUNT
 #define SHIFT_DOUBLE_OMITS_COUNT 1
 
 /* Define the syntax of pseudo-ops, labels and comments.  */
 
 /* String containing the assembler's comment-starter.  */
 
+#undef  ASM_COMMENT_START
 #define ASM_COMMENT_START "/"
 
 /* Output to assembler file text saying following lines
@@ -99,9 +100,8 @@ Boston, MA 02111-1307, USA.  */
 
 /* By default, target has a 80387, uses IEEE compatible arithmetic,
    and returns float values in the 387.  */
-/* But MINIX doesn't use the 387 yet, so disable it */
 #undef  TARGET_SUBTARGET_DEFAULT
-#define TARGET_SUBTARGET_DEFAULT (MASK_IEEE_FP)
+#define TARGET_SUBTARGET_DEFAULT (MASK_IEEE_FP | MASK_80387 | MASK_FLOAT_RETURNS)
 
 #undef  LONG_DOUBLE_TYPE_SIZE
 #define LONG_DOUBLE_TYPE_SIZE 64

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libstdc++-v3/acinclude.m4.orig	2010-07-11 16:15:18.000000000 +0000
+--- libstdc++-v3/acinclude.m4.orig	Wed May  6 09:00:57 2009
 +++ libstdc++-v3/acinclude.m4
 @@ -1670,6 +1670,7 @@ AC_DEFUN([GLIBCXX_CHECK_SYSTEM_ERROR], [
  m4_pushdef([n_syserr], [1])dnl
