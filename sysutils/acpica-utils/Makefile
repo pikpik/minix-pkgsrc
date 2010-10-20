@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2009/07/14 18:13:48 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2010/01/10 07:58:05 obache Exp $
 #
 
 DISTNAME=	acpica-unix-${ACPICA_UTILS_VERSION}
 PKGNAME=	acpica-utils-${ACPICA_UTILS_VERSION}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.acpica.org/download/
 
-MAINTAINER=	uebayasi@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.acpica.org/
 COMMENT=	Intel ACPI CA Unix utilities
 
@@ -40,7 +41,8 @@ do-build:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/compiler/iasl \
-		${DESTDIR}${PREFIX}/bin/acpi-iasl
+		${DESTDIR}${PREFIX}/bin/iasl
+	ln -s iasl ${DESTDIR}${PREFIX}/bin/acpi-iasl
 	${INSTALL_PROGRAM} ${WRKSRC}/acpiexec ${DESTDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/tools/acpixtract/acpixtract \
 		${DESTDIR}${PREFIX}/bin

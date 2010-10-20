@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/15 08:18:53 pettai Exp $
+# $NetBSD: Makefile,v 1.3 2010/10/19 20:23:18 pettai Exp $
 #
 
 DISTNAME=	log4shib-1.0.4
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://shibboleth.internet2.edu/downloads/log4shib/1.0.4/
 
@@ -16,6 +17,7 @@ BUILD_DEFS+=	VARBASE
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
+CONFIGURE_ARGS+=	--disable-doxygen
 
 USE_TOOLS+=	pkg-config
 
