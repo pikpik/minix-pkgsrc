@@ -1,0 +1,15 @@
+$NetBSD$
+# Remove unnecessary byteswap.h as we later include riff.h which includes byteswap.h as needed
+
+--- src/modules/kino/riff.cc.orig	2010-09-14 06:00:09.000000000 +0000
++++ src/modules/kino/riff.cc
+@@ -25,9 +25,6 @@
+ //#include <stdio.h>
+ #include <iostream>
+ #include <iomanip>
+-#ifndef __FreeBSD__
+-#include <byteswap.h>
+-#endif /* __FreeBSD__ */
+ 
+ using std::cout;
+ using std::hex;
