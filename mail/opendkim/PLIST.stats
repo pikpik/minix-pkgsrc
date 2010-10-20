@@ -1,0 +1,6 @@
+@comment $NetBSD$
+man/man8/opendkim-importstats.8
+man/man8/opendkim-stats.8
+sbin/opendkim-importstats.sh
+sbin/opendkim-stats
+share/doc/opendkim/mkdb.mysql
