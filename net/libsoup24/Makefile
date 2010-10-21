@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2010/07/06 15:08:54 drochner Exp $
+# $NetBSD: Makefile,v 1.25 2010/08/29 09:39:17 obache Exp $
 
-DISTNAME=	libsoup-2.30.2
+DISTNAME=	libsoup-2.32.0
 PKGNAME=	${DISTNAME:S/libsoup/libsoup24/}
 CATEGORIES=	net gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libsoup/2.30/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libsoup/2.32/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	recht@NetBSD.org
@@ -13,7 +13,7 @@ LICENSE=	gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		pkg-config gmake
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
