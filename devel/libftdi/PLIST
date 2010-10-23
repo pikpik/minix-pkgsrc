@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/libftdi-config
+include/ftdi.h
+lib/libftdi.la
+lib/pkgconfig/libftdi.pc
