@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/pkgconfig/ruby-gio2.pc
+${RUBY_VENDORLIB}/gio2.rb
+${RUBY_VENDORARCHLIB}/gio2.${RUBY_DLEXT}
