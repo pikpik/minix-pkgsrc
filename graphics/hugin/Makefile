@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2010/09/15 10:28:09 adam Exp $
+# $NetBSD: Makefile,v 1.13 2010/10/19 10:33:38 adam Exp $
 
 DISTNAME=	hugin-2010.2.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hugin/}
 
@@ -45,6 +46,7 @@ SUBST_SED.pthread=	-e 's|-pthread;-D_THREAD_SAFE|-pthread -D_THREAD_SAFE|g'
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../graphics/glew/buildlink3.mk"
 .include "../../graphics/glut/buildlink3.mk"
+.include "../../graphics/gnome-icon-theme/buildlink3.mk"
 .include "../../graphics/libpano13/buildlink3.mk"
 .include "../../graphics/openexr/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"

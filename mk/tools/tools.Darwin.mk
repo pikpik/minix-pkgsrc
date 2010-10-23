@@ -1,4 +1,4 @@
-# $NetBSD: tools.Darwin.mk,v 1.39 2009/01/22 20:14:04 schwarz Exp $
+# $NetBSD: tools.Darwin.mk,v 1.40 2009/08/18 04:38:24 yyamano Exp $
 #
 # System-supplied tools for the Darwin (Mac OS X) operating system.
 
@@ -60,7 +60,6 @@ TOOLS_PLATFORM.install-info?=	/usr/bin/install-info
 .if exists(/bin/ksh)
 TOOLS_PLATFORM.ksh?=		/bin/ksh
 .endif
-TOOLS_PLATFORM.ldconfig?=	/sbin/ldconfig
 TOOLS_PLATFORM.lex?=		/usr/bin/lex
 TOOLS_PLATFORM.ln?=		/bin/ln
 TOOLS_PLATFORM.ls?=		/bin/ls
