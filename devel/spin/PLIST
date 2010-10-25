@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/spin
+${PKGMANDIR}/man1/spin.1
