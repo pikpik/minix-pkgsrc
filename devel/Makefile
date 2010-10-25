@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1405 2010/09/23 15:25:57 obache Exp $
+# $NetBSD: Makefile,v 1.1407 2010/10/23 15:31:27 jakllsch Exp $
 #
 
 COMMENT=	Development utilities
@@ -302,6 +302,7 @@ SUBDIR+=	libextractor
 SUBDIR+=	libf2c
 SUBDIR+=	libffi
 SUBDIR+=	libfirm
+SUBDIR+=	libftdi
 SUBDIR+=	libgail-gnome
 SUBDIR+=	libgcroots
 SUBDIR+=	libgee
@@ -1312,6 +1313,7 @@ SUBDIR+=	sml-mode
 SUBDIR+=	sparse
 SUBDIR+=	sparsehash
 SUBDIR+=	spiff
+SUBDIR+=	spin
 SUBDIR+=	splint
 SUBDIR+=	st
 SUBDIR+=	stgit
