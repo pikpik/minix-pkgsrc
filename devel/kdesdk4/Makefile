@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2010/07/14 11:11:18 sbd Exp $
+# $NetBSD: Makefile,v 1.11 2010/09/14 11:01:36 wiz Exp $
 
 DISTNAME=	kdesdk-${_KDE_VERSION}
-PKGREVISION=	2
 CATEGORIES=	devel
 COMMENT=	Support applications and tools used by KDE developers
 
@@ -21,7 +20,7 @@ REPLACE_PERL+= \
 	scripts/cxxmetric \
 	scripts/fixkdeincludes \
 	scripts/fixuifiles \
-	scripts/kdesvn-build \
+	scripts/kdesrc-build \
 	scripts/krazy-licensecheck \
 	scripts/png2mng.pl \
 	scripts/svnintegrate \
@@ -51,6 +50,7 @@ BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../misc/kdepimlibs4/buildlink3.mk"
 .include "../../textproc/hunspell/buildlink3.mk"
 .include "../../x11/kdelibs4/buildlink3.mk"
+.include "../../x11/kdebase4/buildlink3.mk"
 .include "../../x11/kdebase-runtime4/buildlink3.mk"
 .include "../../x11/kdebase-workspace4/buildlink3.mk"
 
