@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.1.1.1 2010/01/16 03:48:32 minskim Exp $
 
 DISTNAME=	pkfix
 PKGNAME=	tex-${DISTNAME}-1.5
+TEXLIVE_REV=	18835
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Script to replace pk fonts in PostScript with Type 1 fonts

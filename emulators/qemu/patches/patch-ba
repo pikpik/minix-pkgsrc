@@ -1,6 +1,6 @@
-$NetBSD: patch-ba,v 1.1 2007/12/24 10:18:22 apb Exp $
+$NetBSD: patch-ba,v 1.2 2010/08/09 11:46:39 tsutsui Exp $
 
---- hw/pcspk.c.orig	2010-05-04 15:27:48.000000000 +0000
+--- hw/pcspk.c.orig	2010-07-28 01:55:42.000000000 +0000
 +++ hw/pcspk.c
 @@ -42,7 +42,6 @@ typedef struct {
      unsigned int samples;

@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 15990
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/05 17:20:32 minskim Exp $
 
 DISTNAME=	texlive-en.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-2009
+PKGNAME=	tex-${DISTNAME:S/./-/}-2010
+TEXLIVE_REV=	20034
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	TeX Live manual (English)

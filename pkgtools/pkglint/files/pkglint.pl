@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.822 2010/03/10 14:42:22 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.823 2010/06/15 22:06:48 rillig Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -5898,11 +5898,11 @@ sub checklines_package_Makefile_varorder($) {
 				[ "OWNER", optional ],
 				[ "HOMEPAGE", optional ],
 				[ "COMMENT", once ],
+				[ "LICENSE", once ],
 			]
 		],
 		[ "Legal issues", optional,
 			[
-				[ "LICENSE", once ],
 				[ "LICENSE_FILE", optional ],
 				[ "RESTRICTED", optional ],
 				[ "NO_BIN_ON_CDROM", optional ],
