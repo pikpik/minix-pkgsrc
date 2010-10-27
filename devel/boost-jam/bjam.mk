@@ -1,4 +1,4 @@
-# $NetBSD: bjam.mk,v 1.6 2010/08/29 05:50:19 adam Exp $
+# $NetBSD: bjam.mk,v 1.7 2010/10/26 13:07:41 adam Exp $
 
 .include "../../devel/boost-jam/buildlink3.mk"
 
@@ -23,8 +23,6 @@ BJAM_BUILD+=		link=shared,static
 BJAM_CMD=		${SETENV} ${MAKE_ENV} ${BJAM} ${BJAM_ARGS}
 
 .include "../../meta-pkgs/boost/options.mk"
-
-PLIST_SRC+=		PLIST
 
 UNLIMIT_RESOURCES+=	datasize
 
