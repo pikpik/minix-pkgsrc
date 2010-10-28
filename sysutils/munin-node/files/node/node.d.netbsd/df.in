@@ -7,7 +7,18 @@
 # 	config   (required)
 # 	autoconf (optional - used by munin-config)
 #
-# $Log$
+# $Log: df.in,v $
+# Revision 1.1.1.1  2006/06/04 20:53:57  he
+# Import the client version of the Munin system monitoring/graphing
+# tool -- project homepage is at http://munin.sourceforge.net/
+#
+# This package has added support for NetBSD, via a number of new plugin
+# scripts where specific steps needs to be taken to collect information.
+#
+# I also modified the ntp_ plugin script to make it possible to not
+# plot the NTP poll delay, leaving just jitter and offset, which IMO
+# produces a more telling graph.
+#
 #
 #
 # Magic markers (optional - used by munin-config and installation
@@ -18,7 +29,7 @@
 
 MAXLABEL=20
 
-TYPES=noprocfs,devfs,fdescfs,ptyfs,kernfs,nfs
+TYPES=noprocfs,devfs,fdescfs,ptyfs,kernfs,nfs,null,union
 
 
 if [ "$1" = "autoconf" ]; then
