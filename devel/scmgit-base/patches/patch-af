@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Documentation/Makefile.orig	2009-03-04 08:18:50.000000000 +0000
+--- Documentation/Makefile.orig	2010-10-22 03:49:16.000000000 +0000
 +++ Documentation/Makefile
-@@ -94,16 +94,16 @@ pdf: user-manual.pdf
+@@ -180,16 +180,16 @@ pdf: user-manual.pdf
  install: install-man
  
  install-man: man
