@@ -2,7 +2,7 @@ $NetBSD$
 
 --- texmf/tex/generic/config/language.dat.lua.orig	2010-10-20 02:05:07.000000000 +0000
 +++ texmf/tex/generic/config/language.dat.lua
-@@ -33,612 +33,3 @@ return {
+@@ -33,612 +33,4 @@ return {
          -- dumylang and zerohyph are dumped in the format,
          -- since they contain either very few or no patterns at all
  -- END of language.us.lua (missing '}' appended after all entries)
@@ -614,4 +614,4 @@ $NetBSD$
 -		patterns = 'hyph-cy.pat.txt',
 -		hyphenation = '',
 -	},
--}
+ }
