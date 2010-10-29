@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.105 2010/09/21 07:47:25 adam Exp $
+# $NetBSD: Makefile,v 1.107 2010/10/28 20:11:18 bouyer Exp $
 
 DISTNAME=	clamav-${CLAMAV_VERSION}
 PKGNAME=	clamav-${CLAMAV_VERSION:S/-/./}

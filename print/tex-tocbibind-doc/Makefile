@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/10 22:15:49 minskim Exp $
 
 DISTNAME=	tocbibind.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-1.5j
-TEXLIVE_REV=	16882
+PKGNAME=	tex-${DISTNAME:S/./-/}-1.5k
+TEXLIVE_REV=	20085
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-tocbibind
