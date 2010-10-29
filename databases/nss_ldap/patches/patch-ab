@@ -1,8 +1,8 @@
-$NetBSD: patch-ab,v 1.1.1.1 2005/08/08 09:47:42 drochner Exp $
+$NetBSD$
 
---- ldap-nss.c.orig	2008-03-04 19:05:12.000000000 +0900
-+++ ldap-nss.c	2008-03-31 13:28:07.000000000 +0900
-@@ -33,6 +33,7 @@
+--- ldap-nss.c.orig	2009-11-06 10:28:08.000000000 +0000
++++ ldap-nss.c
+@@ -33,6 +33,7 @@ static char rcsId[] =
  #include <pthread.h>
  #endif
  
@@ -10,7 +10,7 @@ $NetBSD: patch-ab,v 1.1.1.1 2005/08/08 09:47:42 drochner Exp $
  #include <assert.h>
  #include <stdlib.h>
  #include <unistd.h>
-@@ -1258,8 +1259,6 @@
+@@ -1256,8 +1257,6 @@ do_init (void)
      __pid = pid;
    else
      __libc_once (__once, do_atfork_setup);
