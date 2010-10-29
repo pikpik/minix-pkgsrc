@@ -1,0 +1,9 @@
+@comment $NetBSD: PLIST.opt,v 1.16 2010/08/19 08:06:53 asau Exp $
+lib/ocaml/bigarray.cmxs
+lib/ocaml/dbm.cmxs
+lib/ocaml/dynlink.a
+lib/ocaml/dynlink.cmx
+lib/ocaml/dynlink.cmxa
+lib/ocaml/nums.cmxs
+lib/ocaml/str.cmxs
+lib/ocaml/unix.cmxs
