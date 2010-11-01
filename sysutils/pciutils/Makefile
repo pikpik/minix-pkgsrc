@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/07/08 06:00:47 hasso Exp $
+# $NetBSD: Makefile,v 1.16 2009/07/20 05:58:44 hasso Exp $
 
 DISTNAME=	pciutils-3.1.3
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/ \
 		ftp://ftp.kernel.org/pub/software/utils/pciutils/ 
 
-MAINTAINER=	cube@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mj.ucw.cz/pciutils.shtml
 COMMENT=	PCI bus manipulation utility similar to NetBSD pcictl(8)
 

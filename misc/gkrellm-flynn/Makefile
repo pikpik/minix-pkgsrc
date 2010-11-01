@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2010/06/13 22:44:58 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2010/09/14 11:02:23 wiz Exp $
 #
 
 DISTNAME=	gkrellflynn-0.8
@@ -7,7 +7,7 @@ PKGREVISION=	10
 CATEGORIES=	misc
 MASTER_SITES=	http://bax.comlab.uni-rostock.de/fileadmin/downloads/
 
-MAINTAINER=	cube@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bax.comlab.uni-rostock.de/en/projekte/gkrellflynn.html
 COMMENT=	GKrellM2 plugin that shows system load with a DooM marine
 

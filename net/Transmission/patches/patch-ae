@@ -1,13 +1,13 @@
 $NetBSD$
 
---- qt/qtr.pro.orig	2010-06-27 01:28:17.000000000 +0000
+--- qt/qtr.pro.orig	2010-10-17 00:14:40.000000000 +0000
 +++ qt/qtr.pro
-@@ -9,7 +9,9 @@ INSTALLS += target
+@@ -13,7 +13,9 @@ man.files = transmission-qt.1
  
  CONFIG += qt qdbus thread debug link_pkgconfig
  QT += network
--PKGCONFIG = fontconfig libcurl openssl
-+PKGCONFIG = fontconfig libcurl
+-PKGCONFIG = fontconfig libcurl openssl dbus-1
++PKGCONFIG = fontconfig libcurl dbus-1
 +INCLUDEPATH += $${OPENSSL_CFLAGS}
 +LIBS +=  $${OPENSSL_LIBS}
  

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2009/11/26 00:46:14 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2010/02/19 21:21:20 joerg Exp $
 
 DISTNAME=		torsmo-0.18
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=torsmo/}
 

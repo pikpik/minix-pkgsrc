@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:32:45 seb Exp $
+# $NetBSD: Makefile,v 1.5 2010/09/07 10:49:00 wiz Exp $
 
 # To the poor soul who wants to update this package:
 #
@@ -65,7 +65,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 LICENSE=	squeezeboxserver-license
 
 # Database server
-DEPENDS+=	mysql-server-[0-9]*:../../databases/mysql5-server
+DEPENDS+=	mysql-server-[0-9]*:../../databases/mysql51-server
 
 # Audio converters
 DEPENDS+=	wavpack-[0-9]*:../../audio/wavpack

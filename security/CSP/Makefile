@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/01/17 12:02:39 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2010/08/21 16:35:35 seb Exp $
 #
 
 DISTNAME=	CSP-0.32
@@ -7,7 +7,7 @@ CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.su.se/pub/users/leifj/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${CSPGUIDE}
 
-MAINTAINER=	cube@cubidou.net
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://devel.it.su.se/pub/jsp/polopoly.jsp?d=1026&a=3290
 COMMENT=	Simple PKI Toolkit
 
