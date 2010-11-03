@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2010,v 1.3853 2010/11/01 04:02:41 obache Exp $
+$NetBSD: CHANGES-2010,v 1.3858 2010/11/02 09:37:31 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2010:
 
@@ -5298,3 +5298,8 @@ Changes to the packages collection and infrastructure in 2010:
 	Updated devel/apr to 1.4.2 [adam 2010-11-01]
 	Updated www/apache2 to 2.0.64 [adam 2010-11-01]
 	Updated www/apache22 to 2.2.17 [adam 2010-11-01]
+	Updated devel/fossil to 201011011.42335 [joerg 2010-11-01]
+	Updated converters/skf to 1.97.3 [obache 2010-11-02]
+	Updated www/ja-trac to 0.12.1pl1 [obache 2010-11-02]
+	Updated devel/mercurial to 1.7 [wiz 2010-11-02]
+	Updated emulators/suse113_freetype2 to 11.3nb1 [chs 2010-11-02]
