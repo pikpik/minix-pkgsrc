@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1408 2010/10/24 18:55:18 agc Exp $
+# $NetBSD: Makefile,v 1.1410 2010/11/04 05:27:40 jnemeth Exp $
 #
 
 COMMENT=	Development utilities
@@ -156,6 +156,7 @@ SUBDIR+=	dlcompat
 SUBDIR+=	dmake
 SUBDIR+=	dmalloc
 SUBDIR+=	doc++
+SUBDIR+=	dotconf
 SUBDIR+=	doxygen
 SUBDIR+=	doxymacs
 SUBDIR+=	easygit
@@ -1160,6 +1161,7 @@ SUBDIR+=	py-idle
 SUBDIR+=	py-jersey
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
+SUBDIR+=	py-multiprocessing
 SUBDIR+=	py-newt
 SUBDIR+=	py-nose
 SUBDIR+=	py-pexpect
