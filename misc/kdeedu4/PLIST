@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2010/05/08 22:13:57 markd Exp $
+@comment $NetBSD$
 bin/blinken
 bin/calgebra
 bin/cantor
@@ -264,6 +264,7 @@ share/doc/kde/HTML/en/cantor/index.cache.bz2
 share/doc/kde/HTML/en/cantor/index.docbook
 share/doc/kde/HTML/en/cantor/latex_formula.png
 share/doc/kde/HTML/en/cantor/screenshot.png
+share/doc/kde/HTML/en/kalgebra/commands.docbook
 share/doc/kde/HTML/en/kalgebra/common
 share/doc/kde/HTML/en/kalgebra/index.cache.bz2
 share/doc/kde/HTML/en/kalgebra/index.docbook

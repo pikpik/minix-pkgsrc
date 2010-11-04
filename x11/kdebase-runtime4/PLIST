@@ -355,6 +355,9 @@ share/doc/kde/HTML/en/kioslave/info/index.docbook
 share/doc/kde/HTML/en/kioslave/man/common
 share/doc/kde/HTML/en/kioslave/man/index.cache.bz2
 share/doc/kde/HTML/en/kioslave/man/index.docbook
+share/doc/kde/HTML/en/kioslave/nepomuksearch/common
+share/doc/kde/HTML/en/kioslave/nepomuksearch/index.cache.bz2
+share/doc/kde/HTML/en/kioslave/nepomuksearch/index.docbook
 share/doc/kde/HTML/en/kioslave/nfs/common
 share/doc/kde/HTML/en/kioslave/nfs/index.cache.bz2
 share/doc/kde/HTML/en/kioslave/nfs/index.docbook

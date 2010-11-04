@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/12/12 12:27:33 asau Exp $
+# $NetBSD: Makefile,v 1.3 2010/08/11 20:33:19 asau Exp $
 #
 
-DISTNAME=	muparser_v132
-PKGNAME=	muparser-132
+DISTNAME=	muparser_v134
+PKGNAME=	muparser-134
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=muparser/}
 

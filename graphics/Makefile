@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.566 2010/09/12 01:44:15 taca Exp $
+# $NetBSD: Makefile,v 1.567 2010/09/16 04:37:24 joerg Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -118,6 +118,7 @@ SUBDIR+=	g3d
 SUBDIR+=	gd
 SUBDIR+=	gdchart
 SUBDIR+=	gdk-pixbuf
+SUBDIR+=	gdk-pixbuf2
 SUBDIR+=	geeqie
 SUBDIR+=	gegl
 SUBDIR+=	geomview

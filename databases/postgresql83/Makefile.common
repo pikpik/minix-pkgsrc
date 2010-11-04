@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.12 2010/05/20 12:36:28 adam Exp $
+# $NetBSD: Makefile.common,v 1.13 2010/10/07 15:52:40 adam Exp $
 #
 # used by databases/postgresql83-adminpack/Makefile
 # used by databases/postgresql83-client/Makefile
@@ -17,6 +17,7 @@
 #	postgresql-<lang>	server-side module for PostgreSQL backend
 
 .include "../../databases/postgresql83/Makefile.mirrors"
+.include "../../databases/postgresql83/options.mk"
 
 DISTNAME?=	postgresql-${DIST_VERS}
 CATEGORIES+=	databases

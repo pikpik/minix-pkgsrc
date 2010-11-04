@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/01/17 12:02:45 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2010/02/12 14:16:57 joerg Exp $
 #
 
 DISTNAME=	boxbackup-0.10
@@ -32,5 +32,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/parcels/boxbackup*-backup-server-*/bbstored-config ${DESTDIR}${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKSRC}/parcels/boxbackup*-backup-server-*/raidfile-config ${DESTDIR}${PREFIX}/bin
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
