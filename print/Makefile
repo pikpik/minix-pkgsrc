@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.432 2010/10/28 17:38:14 minskim Exp $
+# $NetBSD: Makefile,v 1.433 2010/10/28 17:48:37 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -113,6 +113,7 @@ SUBDIR+=	psify
 SUBDIR+=	psjoin
 SUBDIR+=	pslib
 SUBDIR+=	psutils
+SUBDIR+=	ptexenc
 SUBDIR+=	py-Pdf
 SUBDIR+=	py-cups
 SUBDIR+=	py-pisa
