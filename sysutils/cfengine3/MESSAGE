@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+IMPORTANT NOTE:
+
+Cfengine 3 is operationally backwards compatible with Cfengine 2, but the
+language is not. Cfengine 3 is not a drop-in replacement for Cfengine 2.
+
+===========================================================================
