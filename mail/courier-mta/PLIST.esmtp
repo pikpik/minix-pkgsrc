@@ -1,12 +1,12 @@
-@comment $NetBSD: PLIST.esmtp,v 1.1.1.1 2006/04/28 18:10:21 jlam Exp $
+@comment $NetBSD: PLIST.esmtp,v 1.2 2009/06/14 18:04:30 joerg Exp $
 bin/addcr
 libexec/courier/modules/esmtp/addcr
 libexec/courier/modules/esmtp/courieresmtp
 libexec/courier/modules/esmtp/courieresmtpd
 sbin/courieresmtpd
 sbin/esmtpd
-sbin/esmtpd-ssl
 sbin/esmtpd-msa
+sbin/esmtpd-ssl
 sbin/makeacceptmailfor
 sbin/makepercentrelay
 sbin/makesmtpaccess
