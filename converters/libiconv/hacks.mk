@@ -1,7 +1,7 @@
-# $NetBSD: hacks.mk,v 1.1 2006/04/14 21:13:10 schwarz Exp $
+# $NetBSD: hacks.mk,v 1.2 2007/10/16 23:48:58 tnn Exp $
 
-.if !defined(LIBEXIF_HACKS_MK)
-LIBEXIF_HACKS_MK=	# defined
+.if !defined(LIBICONV_HACKS_MK)
+LIBICONV_HACKS_MK=	# defined
 
 ### [Fri Dec 30 21:00:59 CET 2005 : schwarz]
 ### make sys/types.h not conflict with inttypes.h
