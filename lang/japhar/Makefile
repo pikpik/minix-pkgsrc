@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2009/05/20 00:58:19 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2009/06/30 00:07:18 joerg Exp $
 #
 
 DISTNAME=		japhar-0.08
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_BACKUP}
 
@@ -29,5 +29,6 @@ post-extract:
 
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/libffi/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
