@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2010/05/18 13:24:15 adam Exp $
+# $NetBSD: Makefile,v 1.8 2010/07/01 16:22:26 joerg Exp $
 
-DISTNAME=	cone-0.83
-PKGREVISION=	1
+DISTNAME=	cone-0.84
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
