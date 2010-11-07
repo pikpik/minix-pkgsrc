@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/04/03 14:22:09 jakllsch Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/14 00:18:12 minskim Exp $
 
 DISTNAME=	graphics
 PKGNAME=	tex-${DISTNAME}-1.0o
 PKGREVISION=	1
-TEXLIVE_REV=	19536
+TEXLIVE_REV=	20255
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Standard LaTeX graphics
