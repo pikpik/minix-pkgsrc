@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/12/22 20:04:07 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/09/07 21:48:14 tonio Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -24,6 +24,15 @@ PLIST_VARS+=		opt
 BUILD_TARGET+=		allopt
 INSTALL_TARGET+=	installopt
 PLIST.opt=		yes
+.endif
+
+PLIST_VARS+=		natdynlib
+.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "x86_64")
+.  if !empty(MACHINE_PLATFORM:MLinux-*-*) || \
+      !empty(MACHINE_PLATFORM:MDarwin-*-*) || \
+      !empty(MACHINE_PLATFORM:MFreeBSD-*-*)
+PLIST.natdynlib=		yes
+.  endif
 .endif
 
 PLIST_SRC=	${WRKDIR}/.PLIST_SRC
