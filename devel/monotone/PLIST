@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.20 2010/01/18 13:27:51 jmmv Exp $
+@comment $NetBSD: PLIST,v 1.21 2010/03/15 09:51:32 jmmv Exp $
 bin/mtn
 bin/mtnopt
 info/monotone.info
+man/man1/mtn.1
 share/doc/monotone/figures/branch-heads.png
 share/doc/monotone/figures/cert.png
 share/doc/monotone/figures/difference-between-versions.png
