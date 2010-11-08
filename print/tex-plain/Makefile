@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/01/29 01:54:26 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/14 00:18:13 minskim Exp $
 
 DISTNAME=	plain
 PKGNAME=	tex-${DISTNAME}-3.141592653
-TEXLIVE_REV=	15878
+PKGREVISION=	1
+TEXLIVE_REV=	20014
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	The Plain TeX format
