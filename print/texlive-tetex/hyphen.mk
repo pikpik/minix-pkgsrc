@@ -1,4 +1,4 @@
-# $NetBSD: hyphen.mk,v 1.1 2009/03/06 18:12:59 minskim Exp $
+# $NetBSD: hyphen.mk,v 1.2 2010/11/07 17:22:24 minskim Exp $
 #
 # This Makefile fragment is intended to be included by packages that
 # install TeX hyphenation pattens.  It updates format files at
@@ -14,8 +14,8 @@
 .if !defined(TEX_HYPHEN_MK)
 TEX_HYPHEN_MK=		# defined
 
-DEPENDS+=		texlive-tetex>=2008:../../print/texlive-tetex
-DEPENDS+=		tex-hyphen-base-[0-9]*:../../print/tex-hyphen-base
+DEPENDS+=		texlive-tetex>=2010:../../print/texlive-tetex
+DEPENDS+=		tex-hyphen-base>=2010nb1:../../print/tex-hyphen-base
 
 EVAL_PREFIX+=		TETEX_PREFIX=texlive-tetex
 FILES_SUBST+=		FMTUTIL_SYS=${TETEX_PREFIX:Q}/bin/fmtutil-sys
