@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.164 2010/09/16 23:49:48 wiz Exp $
+# $NetBSD: Makefile,v 1.165 2010/09/23 04:08:54 minskim Exp $
 #
 
 COMMENT=	Fonts
@@ -155,6 +155,7 @@ SUBDIR+=	t1lib
 SUBDIR+=	t1utils
 SUBDIR+=	takao-fonts-ttf
 SUBDIR+=	terminus-font
+SUBDIR+=	tex-adobemapping
 SUBDIR+=	tex-ae
 SUBDIR+=	tex-ae-doc
 SUBDIR+=	tex-amsfonts
