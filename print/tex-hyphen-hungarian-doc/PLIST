@@ -1,1 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2010/05/26 04:52:41 minskim Exp $
+share/texmf/doc/generic/huhyphen/huhyphn.pdf
+share/texmf/doc/generic/huhyphen/hyph_hu.dic
+share/texmf/doc/generic/huhyphen/searchforerrors.rb
+share/texmf/doc/generic/huhyphen/testhyphenation.rb
