@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.101 2010/06/02 13:04:04 adam Exp $
+# $NetBSD: Makefile,v 1.102 2010/06/06 14:15:30 adam Exp $
 
 DISTNAME=	exim-4.72
 CATEGORIES=	mail net
@@ -49,9 +49,6 @@ RCD_SCRIPTS=		exim
 OWN_DIRS_PERMS=		${VARBASE}/log/exim ${EXIM_USER} ${EXIM_GROUP} 0750
 OWN_DIRS_PERMS+=	${VARBASE}/spool/exim ${EXIM_USER} ${EXIM_GROUP} 0750
 SPECIAL_PERMS+=		sbin/${PKGSRC_EXIM_VERSION} ${SETUID_ROOT_PERMS}
-
-# XXX: The following will be handled by buildlink3 at some point.
-CFLAGS+=		${_STRIPFLAG_CC}
 
 # pay attention to CPPFLAGS as well
 CFLAGS+=		${CPPFLAGS}
