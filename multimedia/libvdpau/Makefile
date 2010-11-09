@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/01 20:41:45 wiz Exp $
 #
 
-DISTNAME=	libvdpau-0.4
+DISTNAME=	libvdpau-0.4.1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://people.freedesktop.org/~aplattner/vdpau/
 
