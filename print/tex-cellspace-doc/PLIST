@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/cellspace/README
+share/texmf-dist/doc/latex/cellspace/cellspace.pdf
+share/texmf-dist/doc/latex/cellspace/cellspace.tex
