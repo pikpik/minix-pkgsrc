@@ -1,0 +1,9 @@
+@comment $NetBSD$
+share/texmf-dist/doc/fonts/chemarrow/Liesmich.txt
+share/texmf-dist/doc/fonts/chemarrow/README
+share/texmf-dist/doc/fonts/chemarrow/arrow.Mac.sit.hqx
+share/texmf-dist/doc/fonts/chemarrow/chemarrow-de.pdf
+share/texmf-dist/doc/fonts/chemarrow/chemarrow-de.tex
+share/texmf-dist/doc/fonts/chemarrow/chemarrow.pdf
+share/texmf-dist/doc/fonts/chemarrow/chemarrow.tex
+share/texmf-dist/doc/fonts/chemarrow/testchem.tex
