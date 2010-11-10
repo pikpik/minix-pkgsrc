@@ -1,4 +1,4 @@
-# $NetBSD: tools.NetBSD.mk,v 1.41 2008/05/22 20:11:55 joerg Exp $
+# $NetBSD: tools.NetBSD.mk,v 1.42 2009/09/04 13:21:19 joerg Exp $
 #
 # System-supplied tools for the NetBSD operating system.
 
@@ -120,6 +120,9 @@ TOOLS_PLATFORM.unzip?=		/usr/bin/unzip
 TOOLS_PLATFORM.xargs?=		/usr/bin/xargs
 .if exists(/usr/bin/xgettext)
 TOOLS_PLATFORM.xgettext?=	/usr/bin/xgettext
+.endif
+.if exists(/usr/bin/xzcat)
+TOOLS_PLATFORM.xzcat?=		/usr/bin/xzcat
 .endif
 TOOLS_PLATFORM.yacc?=		/usr/bin/yacc
 
