@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.19 2008/02/27 22:10:34 jlam Exp $
+# $NetBSD: builtin.mk,v 1.20 2010/08/30 02:04:58 obache Exp $
 
 BUILTIN_PKG:=	iconv
 
@@ -161,7 +161,7 @@ BUILDLINK_TRANSFORM+=		rm:-liconv
 
 .  if defined(GNU_CONFIGURE)
 .    if !empty(USE_BUILTIN.iconv:M[nN][oO])
-CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.iconv:Q}
+CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.iconv}
 .    else
 CONFIGURE_ARGS+=	--without-libiconv-prefix
 .    endif
