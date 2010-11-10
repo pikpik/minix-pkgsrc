@@ -1,8 +1,8 @@
-$NetBSD: patch-ad,v 1.9 2008/02/19 18:45:14 jlam Exp $
+$NetBSD$
 
---- configure.orig	2007-11-23 22:20:27.000000000 -0500
+--- configure.orig	2010-10-04 11:12:59.000000000 +0000
 +++ configure
-@@ -12377,9 +12377,6 @@ else
+@@ -11061,9 +11061,6 @@ else
  fi
  
  
