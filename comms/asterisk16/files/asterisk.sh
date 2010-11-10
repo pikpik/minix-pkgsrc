@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: asterisk.sh,v 1.2 2010/03/01 07:06:48 jnemeth Exp $
+# $NetBSD: asterisk.sh,v 1.3 2010/10/19 19:21:21 jnemeth Exp $
 #
 # PROVIDE: asterisk
 # REQUIRE: DAEMON
@@ -25,7 +25,7 @@ start_precmd=asterisk_prestart
 
 auser="@ASTERISK_USER@"
 agroup="@ASTERISK_GROUP@"
-command_args="-U $auser -G $agroup"
+command_args="-U $auser -G $agroup -n"
 
 asterisk_prestart() {
 	if test ! -d @ASTVARRUNDIR@; then
