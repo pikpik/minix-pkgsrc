@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.30 2010/01/17 12:02:40 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2010/03/06 09:07:15 spz Exp $
 
 DISTNAME=		ipsec-tools-0.7.3
 CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_NETBSD:=ipsec-tools/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		manu@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ipsec-tools.sourceforge.net/
 COMMENT=		IPsec-tools racoon IKE daemon
 
