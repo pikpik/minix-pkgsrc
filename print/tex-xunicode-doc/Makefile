@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/07 22:26:28 minskim Exp $
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.2 2010/05/05 00:17:48 minskim Exp $
 
 DISTNAME=	xunicode.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-0.91
+PKGNAME=	tex-${DISTNAME:S/./-/}-0.95
+TEXLIVE_REV=	19594
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-xunicode
