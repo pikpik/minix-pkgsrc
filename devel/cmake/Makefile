@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2010/10/19 08:15:01 adam Exp $
+# $NetBSD: Makefile,v 1.53 2010/11/11 08:34:01 adam Exp $
 
 DISTNAME=	cmake-${CMAKE_API}.3
 CATEGORIES=	devel
@@ -56,6 +56,7 @@ SUBST_SED.flags=	-e 's,-O.,,'
 pre-configure:
 	${RM} ${WRKSRC}/Modules/*.orig ${WRKSRC}/Modules/Platform/*.orig
 
+BUILDLINK_API_DEPENDS.libarchive+=	libarchive>=2.8.4
 .include "../../archivers/libarchive/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
