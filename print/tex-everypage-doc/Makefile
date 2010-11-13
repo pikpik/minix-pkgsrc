@@ -1,0 +1,11 @@
+# $NetBSD$
+
+DISTNAME=	everypage.doc
+PKGNAME=	tex-${DISTNAME:S/./-/}-1.1
+TEXLIVE_REV=	15878
+
+MAINTAINER=	reed@reedmedia.net
+COMMENT=	Documentation for tex-everypage
+
+.include "../../print/texlive/package.mk"
+.include "../../mk/bsd.pkg.mk"
