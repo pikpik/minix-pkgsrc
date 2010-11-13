@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.437 2010/11/09 16:29:59 minskim Exp $
+# $NetBSD: Makefile,v 1.438 2010/11/09 19:03:32 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -228,6 +228,7 @@ SUBDIR+=	tex-colortbl-doc
 SUBDIR+=	tex-context
 SUBDIR+=	tex-context-doc
 SUBDIR+=	tex-cooking
+SUBDIR+=	tex-cooking-doc
 SUBDIR+=	tex-cyrillic
 SUBDIR+=	tex-cyrillic-doc
 SUBDIR+=	tex-datatool
