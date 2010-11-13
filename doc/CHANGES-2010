@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2010,v 1.3961 2010/11/13 12:21:13 tnn Exp $
+$NetBSD: CHANGES-2010,v 1.3962 2010/11/13 16:24:01 jmmv Exp $
 
 Changes to the packages collection and infrastructure in 2010:
 
@@ -5542,3 +5542,5 @@ Changes to the packages collection and infrastructure in 2010:
 	Updated mail/thunderbird to 3.1.6 [tnn 2010-11-13]
 	Updated www/seamonkey to 2.0.10 [tnn 2010-11-13]
 	Updated pkgtools/pkg_comp to 1.35 [jmmv 2010-11-13]
+	Updated print/tex-amsrefs to 2.09 [minskim 2010-11-13]
+	Updated print/tex-amsrefs-doc to 2.09 [minskim 2010-11-13]
