@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2009/05/19 08:59:33 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2010/01/27 21:13:11 joerg Exp $
 
 DISTNAME=		vlp4510e
 PKGNAME=		uvscan-5.10
@@ -8,7 +8,7 @@ MASTER_SITES=		http://download.nai.com/products/evaluation/virusscan/english/cmd
 EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.mcafee.com/us/enterprise/products/anti_virus/file_servers_desktops/virusscan_command_line_scanner_windows_unix.html
+HOMEPAGE=		http://www.mcafee.com/us/enterprise/products/system_security/servers/virusscan_command_line_scanner_windows_unix.html
 COMMENT=		Evaluation version of a DOS/Windows file virus scanner
 LICENSE=		uvscan-license
 

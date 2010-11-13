@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.71 2010/06/28 22:43:50 joerg Exp $
+# $NetBSD: Makefile,v 1.72 2010/10/29 15:55:19 adam Exp $
 
 DISTNAME=	freeradius-${RADVER}
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/radius/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.freeradius.org/
+HOMEPAGE=	http://freeradius.org/
 COMMENT=	Free RADIUS server implementation
 
 CONFLICTS+=	freeradius-2.[0-9]*

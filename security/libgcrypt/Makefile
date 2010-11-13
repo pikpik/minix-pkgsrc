@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2009/12/18 18:54:24 drochner Exp $
+# $NetBSD: Makefile,v 1.47 2010/07/23 06:39:03 adam Exp $
 
 DISTNAME=	libgcrypt-1.4.6
 CATEGORIES=	security
@@ -10,7 +10,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=	${PKGNAME_NOREV}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://directory.fsf.org/security/libgcrypt.html
+HOMEPAGE=	http://directory.fsf.org/project/libgcrypt/
 COMMENT=	GNU cryptographic library
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 

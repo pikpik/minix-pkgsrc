@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/02/11 20:37:13 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2009/06/12 17:24:53 ahoka Exp $
 #
 
 SVNREV=		11
@@ -15,7 +15,7 @@ DISTFILES=	${DISTNAME}.py README
 DIST_SUBDIR=	mkv2mp4
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://mkv2mp4.googlecode.com/
+HOMEPAGE=	http://code.google.com/p/mkv2mp4
 COMMENT=	Remux mkv files to mp4 files compatible with standalone players
 WRKSRC=		${WRKDIR}
 

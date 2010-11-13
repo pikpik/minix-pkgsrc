@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2008/06/20 01:09:12 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2009/07/22 09:25:02 wiz Exp $
 
 DISTNAME=	binutils-2.17
 PKGREVISION=	1
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=binutils/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://directory.fsf.org/binutils.html
+HOMEPAGE=	http://directory.fsf.org/project/binutils/
 COMMENT=	GNU binary utilities
 
 PKG_DESTDIR_SUPPORT=	user-destdir
