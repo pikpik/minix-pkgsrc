@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/cooking/COPYING
+share/texmf-dist/doc/latex/cooking/README
+share/texmf-dist/doc/latex/cooking/cooking.pdf
+share/texmf-dist/doc/latex/cooking/kraut.tex
