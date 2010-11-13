@@ -1,4 +1,4 @@
-# $NetBSD: mozilla-common.mk,v 1.16 2010/09/09 09:41:21 tnn Exp $
+# $NetBSD: mozilla-common.mk,v 1.17 2010/11/03 01:22:36 joerg Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 1.9.1.
 # 
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+=	--enable-optimize=-O2 --with-pthreads
 CONFIGURE_ARGS+=	--disable-javaxpcom
 CONFIGURE_ARGS+=	--enable-default-toolkit=cairo-gtk2
 CONFIGURE_ARGS+=	--enable-svg --enable-mathml
-CONFIGURE_ARGS+=	--enable-system-cairo
+CONFIGURE_ARGS+=	--disable-system-cairo
 CONFIGURE_ARGS+=	--with-system-jpeg
 CONFIGURE_ARGS+=	--with-system-zlib --with-system-bz2
 CONFIGURE_ARGS+=	--enable-system-sqlite
