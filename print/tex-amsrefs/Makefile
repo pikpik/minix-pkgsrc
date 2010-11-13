@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/12 02:55:54 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2010/05/19 22:59:13 minskim Exp $
 
 DISTNAME=	amsrefs
-PKGNAME=	tex-${DISTNAME}-2.03
-TEXLIVE_REV=	15878
+PKGNAME=	tex-${DISTNAME}-2.09
+TEXLIVE_REV=	20249
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	LaTeX-based replacement for BibTeX
