@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/08/13 14:25:34 taca Exp $
+# $NetBSD: Makefile,v 1.7 2010/09/08 16:24:57 taca Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
 SVR4_PKGNAME=		mysqs
@@ -9,8 +9,6 @@ CONFLICTS=		{mysql-server-[0-9]*,mysql3-server-[0-9]*}
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../databases/mysql51-client/Makefile.common"
-
-MAKE_JOBS_SAFE=		no
 
 CONFIGURE_ARGS+=	--with-libwrap
 CONFIGURE_ARGS+=	--with-mysqld-user=${MYSQL_USER}
