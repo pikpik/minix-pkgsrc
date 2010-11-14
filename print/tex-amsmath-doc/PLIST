@@ -1,4 +1,5 @@
 @comment $NetBSD$
+share/texmf-dist/doc/latex/amsmath/00LICENSE.txt
 share/texmf-dist/doc/latex/amsmath/amsbsy.pdf
 share/texmf-dist/doc/latex/amsmath/amscd.pdf
 share/texmf-dist/doc/latex/amsmath/amsgen.pdf

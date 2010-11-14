@@ -1,8 +1,9 @@
-# $NetBSD$
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.2 2010/02/21 16:09:15 minskim Exp $
 
 DISTNAME=	amsmath.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2.13
+PKGREVISION=	1
+TEXLIVE_REV=	20250
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-amsmath
