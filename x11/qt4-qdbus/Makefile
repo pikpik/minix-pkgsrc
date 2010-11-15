@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2010/07/04 06:00:14 adam Exp $
+# $NetBSD: Makefile,v 1.14 2010/09/14 11:01:15 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-qdbus-${QTVERSION}
-PKGREVISION=	1
 COMMENT=	QT DBus support
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include -L${QTDIR}/lib
@@ -39,6 +38,6 @@ do-install:
 		${DESTDIR}${QTPREFIX}/bin
 .endfor
 
-.include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
+.include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

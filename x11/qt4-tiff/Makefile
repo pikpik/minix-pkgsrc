@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2010/07/04 06:00:15 adam Exp $
+# $NetBSD: Makefile,v 1.11 2010/09/14 11:03:05 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-tiff-${QTVERSION}
-PKGREVISION=	1
 COMMENT=	QT TIFF image format plugin
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include
@@ -23,7 +22,7 @@ IMGFMTDIR=	${QTPREFIX}/plugins/imageformats
 INSTALLATION_DIRS=	${IMGFMTDIR}
 
 do-install:
-	${LIBTOOL} --mode=install ${INSTALL_DATA} ${WRKSRC}/plugins/imageformats/libqtiff.la \
+	${LIBTOOL} --mode=install ${INSTALL_LIB} ${WRKSRC}/plugins/imageformats/libqtiff.la \
 		${DESTDIR}${IMGFMTDIR}
 
 # up to 4.3.2 a builtin libtiff is used
