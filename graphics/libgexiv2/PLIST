@@ -1,0 +1,9 @@
+@comment $NetBSD$
+include/gexiv2/gexiv2-managed-stream.h
+include/gexiv2/gexiv2-metadata.h
+include/gexiv2/gexiv2-preview-image.h
+include/gexiv2/gexiv2-preview-properties.h
+include/gexiv2/gexiv2.h
+lib/libgexiv2.la
+lib/pkgconfig/gexiv2.pc
+share/vala/vapi/gexiv2.vapi
