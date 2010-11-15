@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2010/07/30 11:03:27 asau Exp $
+# $NetBSD: Makefile,v 1.30 2010/08/27 11:14:23 adam Exp $
 
-DISTNAME=	gdal-1.7.2
-PKGNAME=	gdal-lib-1.7.2
+DISTNAME=	gdal-1.7.3
+PKGNAME=	gdal-lib-1.7.3
 CATEGORIES=	geography
 MASTER_SITES=	http://download.osgeo.org/gdal/
 
