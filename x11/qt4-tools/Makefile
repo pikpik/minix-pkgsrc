@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.35 2010/09/14 11:01:16 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2010/11/15 13:05:47 adam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-tools-${QTVERSION}
+PKGREVISION=	1
 COMMENT=	QT GUI (WYSIWYG) builder and other tools
 
 DEPENDS+=	libtool-base-[0-9]*:../../devel/libtool-base

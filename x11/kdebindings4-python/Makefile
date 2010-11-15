@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2010/09/14 11:03:02 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2010/10/25 20:55:29 markd Exp $
 
 PKGNAME=	kdebindings4-python-${_KDE_VERSION}
 DISTNAME=	kdebindings-${_KDE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	Python bindings for the KDE integrated X11 desktop
 

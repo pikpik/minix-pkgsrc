@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.25 2010/06/13 22:45:08 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2010/09/14 11:02:33 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../net/bittorrent/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/BitTorrent/bittorrent-gui/}
-PKGREVISION=	8
+PKGREVISION=	9
 
 COMMENT+=	(GTK+ GUI)
 

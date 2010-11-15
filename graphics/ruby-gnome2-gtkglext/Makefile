@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2010/09/23 15:36:01 obache Exp $
+# $NetBSD: Makefile,v 1.8 2010/10/23 12:45:10 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gtkglext-${VERSION}
 COMMENT=		Ruby binding of gtkglext
+PKGREVISION=		1
 CATEGORIES=		graphics
 
 CONFLICTS+=		ruby[0-9][0-9]-gnome2-gtkglext-[0-9]*
