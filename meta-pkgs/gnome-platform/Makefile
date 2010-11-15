@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2010/07/06 15:00:27 drochner Exp $
+# $NetBSD: Makefile,v 1.25 2010/11/15 20:35:57 drochner Exp $
 
 DISTNAME=	gnome-platform-2.32.0
 CATEGORIES=	meta-pkgs x11 gnome
@@ -16,7 +16,7 @@ PKG_SUGGESTED_OPTIONS=	fam
 
 .include "../../mk/bsd.options.mk"
 
-# see http://ftp.gnome.org/pub/GNOME/platform/2.30/2.30.1/sources/
+# see http://ftp.gnome.org/pub/GNOME/platform/2.32/2.32.0/sources/
 
 DEPENDS+=	GConf>=2.32.0:../../devel/GConf
 DEPENDS+=	ORBit2>=2.14.19:../../net/ORBit2
