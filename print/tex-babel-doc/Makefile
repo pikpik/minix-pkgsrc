@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/04/29 20:58:29 minskim Exp $
-# TeX Live Revision 15878
+# $NetBSD: Makefile,v 1.2 2010/04/15 23:02:08 minskim Exp $
 
 DISTNAME=	babel.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-3.8l
+TEXLIVE_REV=	20253
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-babel
