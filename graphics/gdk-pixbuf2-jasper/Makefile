@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/11/02 15:17:29 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/11/14 20:13:40 drochner Exp $
 #
 
 DISTNAME=	gdk-pixbuf-2.22.1
@@ -33,7 +33,6 @@ do-install:
 	${INSTALL_DATA} libpixbufloader-jasper.la \
 	${DESTDIR}${PREFIX}/lib/gdk-pixbuf-2.0/2.10.0/loaders
 
-GTK2_LOADERS= yes
 .include "../../graphics/gdk-pixbuf2/loaders.mk"
 
 BUILDLINK_API_DEPENDS.glib2+= glib2>=2.26.0
