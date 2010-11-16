@@ -17,8 +17,8 @@ include/libgtkhtml-3.14/gtkhtml/htmlenums.h
 include/libgtkhtml-3.14/gtkhtml/htmltokenizer.h
 include/libgtkhtml-3.14/gtkhtml/htmltypes.h
 lib/libgtkhtml-3.14.la
-lib/libgtkhtml-editor.la
-lib/pkgconfig/gtkhtml-editor.pc
+lib/libgtkhtml-editor-3.14.la
+lib/pkgconfig/gtkhtml-editor-3.14.pc
 lib/pkgconfig/libgtkhtml-3.14.pc
 share/gtkhtml-3.14/gtkhtml-editor-builder.ui
 share/gtkhtml-3.14/gtkhtml-editor-manager.ui
