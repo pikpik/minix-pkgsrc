@@ -26,7 +26,7 @@ GCC_SUBPREFIX=		gcc44
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
 FILES_SUBST+=		PKGNAME=${PKGNAME}
 MESSAGE_SUBST+=		GCC_PREFIX=${GCC_PREFIX}
-GCC_SYMLINK_PROGRAMS=	cpp g++ gcc gccbug gcov
+GCC_SYMLINK_PROGRAMS=	cpp g++ gcc gccbug gcov gfortran
 
 # To avoid GNU surprises
 CONFIG_SHELL=		${TOOLS_PATH.bash}
