@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1412 2010/11/14 20:43:58 sno Exp $
+# $NetBSD: Makefile,v 1.1413 2010/11/16 19:53:24 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -228,6 +228,7 @@ SUBDIR+=	gnustep-make
 SUBDIR+=	gnustep-objc
 SUBDIR+=	gnustep-objc-lf2
 SUBDIR+=	gob2
+SUBDIR+=	gobject-introspection
 SUBDIR+=	googletest
 SUBDIR+=	gperf
 SUBDIR+=	gputils
