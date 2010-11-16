@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/gdk-pixbuf-2.0/gdk-pixbuf-xlib/gdk-pixbuf-xlib.h
+include/gdk-pixbuf-2.0/gdk-pixbuf-xlib/gdk-pixbuf-xlibrgb.h
+lib/libgdk_pixbuf_xlib-2.0.la
+lib/pkgconfig/gdk-pixbuf-xlib-2.0.pc
