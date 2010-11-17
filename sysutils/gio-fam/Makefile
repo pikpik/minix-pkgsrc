@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/04/20 17:44:26 jmmv Exp $
 #
 
 .include "../../devel/glib2/Makefile.common"
@@ -25,6 +25,6 @@ MAKE_FLAGS+=		FAM_LIBS="-lfam -lC"
 BUILDLINK_TRANSFORM+=	l:fam:fam:C
 .endif
 
-.include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/glib2/modules.mk"
 .include "../../mk/fam.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
