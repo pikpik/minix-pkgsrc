@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/02/07 21:10:47 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2009/06/30 00:07:10 joerg Exp $
 
 DISTNAME=	xmp-2.5.1
 CATEGORIES=	audio
@@ -26,7 +26,7 @@ CONF_FILES+=	${EGDIR}/xmp.conf ${PKG_SYSCONFDIR}/xmp.conf
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${EGDIR}
 
-INSTALL_MAKE_FLAGS+=	INSTALL=${INSTALL}
+INSTALL_MAKE_FLAGS+=	INSTALL=${INSTALL:Q}
 
 .include "options.mk"
 .include "../../mk/bsd.prefs.mk"
