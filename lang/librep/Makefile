@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.50 2010/03/24 19:43:25 asau Exp $
+# $NetBSD: Makefile,v 1.51 2010/08/21 16:55:06 asau Exp $
 #
 
 DISTNAME=		librep-0.90.5
+PKGREVISION=		1
 CATEGORIES=		lang devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=librep/}
 EXTRACT_SUFX=		.tar.bz2
