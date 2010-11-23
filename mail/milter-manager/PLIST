@@ -496,4 +496,5 @@ share/milter-manager/munin/plugins/milter_manager_memory
 share/milter-manager/munin/plugins/postfix_processes
 share/milter-manager/munin/plugins/sendmail_processes
 share/milter-manager/sample/ruby/milter-regexp.rb
+share/milter-manager/sample/ruby/milter-tarpit.rb
 share/milter-manager/sample/ruby/milter-test-client.rb
