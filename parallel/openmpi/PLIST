@@ -479,6 +479,7 @@ share/openmpi/help-mca-coll-base.txt
 share/openmpi/help-mca-param.txt
 share/openmpi/help-mpi-api.txt
 share/openmpi/help-mpi-btl-base.txt
+share/openmpi/help-mpi-btl-tcp.txt
 share/openmpi/help-mpi-common-sm.txt
 share/openmpi/help-mpi-errors.txt
 share/openmpi/help-mpi-runtime.txt
