@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2010/07/16 12:17:59 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2010/07/17 18:13:08 joerg Exp $
 #
 
-DISTNAME=		tables-2.2
-PKGNAME=		${PYPKGPREFIX}-pytables-2.2
+DISTNAME=		tables-2.2.1
+PKGNAME=		${PYPKGPREFIX}-pytables-2.2.1
 CATEGORIES=		math python
-MASTER_SITES=		http://www.pytables.org/download/pytables-2.2/
+MASTER_SITES=		http://www.pytables.org/download/pytables-2.2.1/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.pytables.org/
@@ -42,6 +42,7 @@ do-test:
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../math/py-numpy/buildlink3.mk"
+BUILDLINK_API_DEPENDS.pycython+= ${PYPKGPREFIX}-cython>=0.13
 .include "../../devel/py-cython/buildlink3.mk"
 .include "../../math/py-numexpr/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
