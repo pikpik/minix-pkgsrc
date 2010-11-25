@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2009/08/29 09:31:23 obache Exp $
+# $NetBSD: Makefile,v 1.17 2009/09/11 18:47:55 tnn Exp $
 #
 
 DISTNAME=	nbitools-R6.3
 PKGNAME=	nbitools-6.3
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
@@ -31,8 +31,5 @@ SUBST_SED.nbi=		-e 's|^\(\#define[ \t]*ProjectRoot\).*|\1 ${PREFIX}|'
 
 post-extract:
 	${CP} ${FILESDIR}/DragonFly.cf ${WRKSRC}/config/cf
-
-pre-patch:
-	cd ${WRKSRC}/config/makedepend; ${PATCH} --quiet < md.patch
 
 .include "../../mk/bsd.pkg.mk"
