@@ -11,12 +11,18 @@ $NetBSD$
  XML_INCLUDEDIR='-I${includedir}/libxml2'
  
  XML_CFLAGS=""
-@@ -14584,7 +14584,7 @@ $as_echo "#define vsnprintf _vsnprintf" 
+@@ -14582,10 +14582,10 @@ $as_echo "#define snprintf _snprintf" >>
  
-  if test "${PYTHON}" != ""
-  then
+ $as_echo "#define vsnprintf _vsnprintf" >>confdefs.h
+ 
+- if test "${PYTHON}" != ""
+- then
 -   WIN32_EXTRA_PYTHON_LIBADD="-L${pythondir}/../../libs -lpython${PYTHON_VERSION//./}"
+- fi
++# if test "${PYTHON}" != ""
++# then
 +#   WIN32_EXTRA_PYTHON_LIBADD="-L${pythondir}/../../libs -lpython${PYTHON_VERSION//./}"
-  fi
++# fi
   ;;
   *-*-cygwin*)
+  CYGWIN_EXTRA_LDFLAGS="-no-undefined"
