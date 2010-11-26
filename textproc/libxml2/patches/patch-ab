@@ -2,6 +2,15 @@ $NetBSD$
 
 --- configure.orig	2010-11-04 17:28:14.000000000 +0000
 +++ configure
+@@ -11414,7 +11414,7 @@ else
+   esac
+ fi
+ 
+- if test -z "$VERSION_SCRIPT_FLAGS"; then
++ if test \! -z "$VERSION_SCRIPT_FLAGS"; then
+   USE_VERSION_SCRIPT_TRUE=
+   USE_VERSION_SCRIPT_FALSE='#'
+ else
 @@ -13364,7 +13364,7 @@ fi
  fi
  
