@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/07/30 13:26:39 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2009/02/09 22:56:26 joerg Exp $
 #
 .include "../../news/hellanzb/Makefile.version"
 
 DISTNAME=		hellanzb-${HELLANZB_VERSION}.${HELLANZB_SVN_REV}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		news
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		bjs@NetBSD.org
-HOMEPAGE=		http://www.hellanzb.com:8080/trac
+HOMEPAGE=		http://www.hellanzb.com/trac
 COMMENT=		Command line nntp file grabber
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -19,7 +19,7 @@ DEPENDS+=	unrar>=3.5.4:../../archivers/unrar
 
 PYDISTUTILSPKG=	yes
 
-PYTHON_VERSIONS_ACCEPTED=	25 24
+PYTHON_VERSIONS_ACCEPTED=	26 25 24
 
 EGDIR=		${PREFIX}/share/examples/${PKGBASE}
 WRKSRC=		${WRKDIR}/hellanzb-${HELLANZB_VERSION}-trunk
