@@ -1,3 +1,5 @@
+$NetBSD$
+
 termcap does not require curses.
 
 --- Src/Modules/termcap.c.orig	2010-02-07 08:23:33.000000000 +0000
