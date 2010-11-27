@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/06/12 17:24:53 ahoka Exp $
+# $NetBSD: Makefile,v 1.8 2010/11/13 21:09:00 shattered Exp $
 #
 
 SVNREV=		11
@@ -21,7 +21,7 @@ WRKSRC=		${WRKDIR}
 
 REPLACE_PYTHON=	${DISTNAME}.py
 # uses subprocess.check_call, which is new in 2.5
-PYTHON_VERSIONS_ACCEPTED=	25
+PYTHON_VERSIONS_ACCEPTED=	25 26
 
 INSTALLATION_DIRS=	bin share/doc/mkv2mp4
 
