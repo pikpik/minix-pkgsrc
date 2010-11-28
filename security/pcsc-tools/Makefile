@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.2 2008/04/10 07:56:09 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2009/03/16 19:14:08 hasso Exp $
 #
 
 DISTNAME=	pcsc-tools-1.4.15
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
 
 MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://ludovic.rousseau.free.fr/softwares/pcsc-tools/
-COMMENT=	Some tools usefull for a PC/SC user.
+COMMENT=	Tools useful for a PC/SC user
 
 DEPENDS+=	p5-pcsc-perl>=1.4.6:../../security/p5-pcsc
 
