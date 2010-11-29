@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/xargs/README
+share/texmf-dist/doc/latex/xargs/xargs-fr.pdf
+share/texmf-dist/doc/latex/xargs/xargs.pdf
