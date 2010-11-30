@@ -83,6 +83,9 @@ share/gramps/DateHandler/_Date_ru.pyo
 share/gramps/DateHandler/_Date_sk.py
 share/gramps/DateHandler/_Date_sk.pyc
 share/gramps/DateHandler/_Date_sk.pyo
+share/gramps/DateHandler/_Date_sl.py
+share/gramps/DateHandler/_Date_sl.pyc
+share/gramps/DateHandler/_Date_sl.pyo
 share/gramps/DateHandler/_Date_sr.py
 share/gramps/DateHandler/_Date_sr.pyc
 share/gramps/DateHandler/_Date_sr.pyo
@@ -1017,6 +1020,7 @@ share/gramps/data/Web_Navigation-Vertical.css
 share/gramps/data/Web_Nebraska.css
 share/gramps/data/Web_Print-Default.css
 share/gramps/data/Web_Visually.css
+share/gramps/data/ancestortree.css
 share/gramps/data/authors.xml
 share/gramps/data/behaviour.css
 share/gramps/data/gedcom.xml
@@ -2448,6 +2452,9 @@ share/gramps/plugins/rel/rel_ru.pyo
 share/gramps/plugins/rel/rel_sk.py
 share/gramps/plugins/rel/rel_sk.pyc
 share/gramps/plugins/rel/rel_sk.pyo
+share/gramps/plugins/rel/rel_sl.py
+share/gramps/plugins/rel/rel_sl.pyc
+share/gramps/plugins/rel/rel_sl.pyo
 share/gramps/plugins/rel/rel_sv.py
 share/gramps/plugins/rel/rel_sv.pyc
 share/gramps/plugins/rel/rel_sv.pyo
