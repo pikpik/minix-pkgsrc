@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.293 2010/08/15 10:47:26 drochner Exp $
+# $NetBSD: Makefile,v 1.294 2010/09/12 03:52:33 taca Exp $
 #
 
 COMMENT=	Programming languages
@@ -37,6 +37,7 @@ SUBDIR+=	erlang-doc
 SUBDIR+=	erlang-man
 SUBDIR+=	ezm3
 SUBDIR+=	f2c
+SUBDIR+=	ficl
 SUBDIR+=	focal
 SUBDIR+=	fort77
 SUBDIR+=	g95
