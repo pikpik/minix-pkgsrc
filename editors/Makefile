@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.138 2010/02/10 17:34:51 joerg Exp $
+# $NetBSD: Makefile,v 1.139 2010/11/03 20:06:42 drochner Exp $
 #
 
 COMMENT=	Editors
@@ -137,6 +137,7 @@ SUBDIR+=	xemacs-nox11
 SUBDIR+=	xemacs-packages
 SUBDIR+=	xfce4-mousepad
 SUBDIR+=	xjed
+SUBDIR+=	xournal
 SUBDIR+=	xvile
 SUBDIR+=	xwpe
 SUBDIR+=	yudit
