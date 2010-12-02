@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/09/26 13:16:11 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/12/01 13:52:59 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -99,7 +99,7 @@ CONFIGURE_ARGS+=	--enable-wide-getaddrinfo
 # work around for Linux
 #
 .if ${OPSYS} == "Linux"
-CONFIGURE_ENV+=	MKDIR_P=${MAKEDIR:Q}
+CONFIGURE_ENV+=	MKDIR_P=${MKDIR:Q}
 .endif
 
 DOCS=		COPYING COPYING.ja ChangeLog NEWS README \
