@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2009/04/11 17:28:16 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2010/01/27 19:27:24 joerg Exp $
 
 DISTNAME=	mklivecd-0.17
 CATEGORIES=	sysutils
@@ -13,7 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 
-DEPENDS+=	{cdrtools,cdrtools-ossdvd}-[0-9]*:../../sysutils/cdrtools
+DEPENDS+=	cdrtools-[0-9]*:../../sysutils/cdrtools
 .if ${MACHINE_ARCH} == "i386"
 DEPENDS+=	grub>=0.97:../../sysutils/grub
 .endif
