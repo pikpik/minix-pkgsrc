@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.23 2008/04/03 20:19:42 jlam Exp $
+# $NetBSD: options.mk,v 1.24 2008/04/12 22:43:08 jlam Exp $
 
 # Recommended package options for various setups:
 #
@@ -9,6 +9,7 @@
 #
 PKG_OPTIONS_VAR=	PKG_OPTIONS.samba
 PKG_SUPPORTED_OPTIONS=	ads cups fam ldap pam winbind
+PKG_SUGGESTED_OPTIONS=	ads ldap pam winbind
 
 .include "../../mk/bsd.fast.prefs.mk"
 
