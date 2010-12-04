@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/07/25 20:04:21 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/24 18:20:59 gdt Exp $
 #
 
-VERSION=	1.8.0
+VERSION=	1.8.1
 DISTNAME=	allmydata-tahoe-${VERSION}
 EGG_NAME=	allmydata_tahoe-${VERSION}
 PKGNAME=	tahoe-lafs-${VERSION}
