@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2010/08/03 02:56:32 obache Exp $
+# $NetBSD: Makefile,v 1.6 2010/09/10 05:59:28 taca Exp $
 
-DISTNAME=	mocha-0.9.8
+DISTNAME=	mocha-0.9.10
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
