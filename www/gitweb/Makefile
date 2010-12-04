@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/01/09 13:56:24 tonnerre Exp $
+# $NetBSD: Makefile,v 1.7 2010/03/05 16:12:07 gdt Exp $
 #
 
 DISTNAME=	git-${VERSION}
@@ -30,7 +30,7 @@ MAKE_FLAGS+=	PERL_PATH=${PERL5:Q}
 
 GITWEB_CONFIG=	${PKG_SYSCONFDIR}/gitweb.conf
 GITWEB_CGIBIN=	${PREFIX}/libexec/cgi-bin
-# Apaache wants files in ${PREFIX}/share/httpd/htdocs/gitweb
+# Apache wants files in ${PREFIX}/share/httpd/htdocs/gitweb
 GITWEB_HTDOCS=	${PREFIX}/share/examples/gitweb/htdocs
 GITWEB_EGDIR=	${PREFIX}/share/examples/gitweb
 
