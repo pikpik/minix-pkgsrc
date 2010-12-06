@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.49 2010/06/01 13:31:40 tnn Exp $
+# $NetBSD: Makefile,v 1.50 2010/12/04 01:21:06 gdt Exp $
 
 DISTNAME=		bzr-${VER}
 CATEGORIES=		devel scm
 MASTER_SITES=		http://launchpad.net/bzr/2.1/${VER}/+download/
 VER=			2.1.1
 
-MAINTAINER=		epg@NetBSD.org
+MAINTAINER=		jan.m.danielsson@gmail.com
 HOMEPAGE=		http://bazaar-vcs.org/
 COMMENT=		Bazaar open source distributed version control system
 LICENSE=		gnu-gpl-v2
