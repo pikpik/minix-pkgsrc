@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2010/11/15 22:58:00 abs Exp $
+# $NetBSD: Makefile,v 1.16 2010/11/19 08:29:30 mrg Exp $
 
 DISTNAME=	kdeutils-${_KDE_VERSION}
-PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	Utilities for the KDE integrated X11 desktop
 
@@ -29,6 +28,7 @@ BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../lang/python/application.mk"
 .include "../../misc/kdepimlibs4/buildlink3.mk"
 .include "../../security/qca2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../x11/kdebase4/buildlink3.mk"
 .include "../../x11/kdebase-runtime4/buildlink3.mk"

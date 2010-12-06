@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2010/10/25 20:55:24 markd Exp $
+# $NetBSD: Makefile,v 1.11 2010/11/15 22:57:58 abs Exp $
 
 DISTNAME=	kdeadmin-${_KDE_VERSION}
-PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	System administration tools for the KDE integrated X11 desktop
 
@@ -13,6 +12,7 @@ COMMENT=	System administration tools for the KDE integrated X11 desktop
 
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../misc/kdepimlibs4/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../x11/kdebase-runtime4/buildlink3.mk"
 

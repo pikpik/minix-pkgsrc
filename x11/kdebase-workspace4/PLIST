@@ -447,6 +447,8 @@ ${PYSITELIB}/PyKDE4/plasmascript.py
 ${PYSITELIB}/PyKDE4/plasmascript.pyc
 lib/strigi/strigita_font.so
 man/man1/plasmaengineexplorer.1
+man/man1/plasmapkg.1
+man/man1/plasmoidviewer.1
 share/PolicyKit/policy/org.kde.fontinst.policy
 share/PolicyKit/policy/org.kde.kcontrol.kcmclock.policy
 share/PolicyKit/policy/org.kde.kcontrol.kcmkdm.policy
