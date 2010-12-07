@@ -1,13 +1,13 @@
-$NetBSD: patch-ae,v 1.7 2006/01/03 00:04:42 wiz Exp $
+$NetBSD$
 
---- common/unicode/umachine.h.orig	2006-02-07 02:54:16.000000000 +0100
+--- common/unicode/umachine.h.orig	2010-06-03 15:51:19.000000000 +0000
 +++ common/unicode/umachine.h
 @@ -43,7 +43,7 @@
  
  #if defined(U_PALMOS)
  #   include "unicode/ppalmos.h"
--#elif defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64)
-+#elif (defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64)) && !defined(__NetBSDPE__)
- #   include "unicode/pwin32.h"
- #else
+-#elif !defined(__MINGW32__) && (defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64))
++#elif !defined(__MINGW32__) && !defined(__NetBSDPE__) && (defined(WIN32) || defined(_WIN32) || defined(WIN64) || defined(_WIN64))
+ #ifdef CYGWINMSVC
  #   include "unicode/platform.h"
+ #endif

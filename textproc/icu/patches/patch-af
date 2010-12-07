@@ -1,10 +1,10 @@
 $NetBSD$
 
---- runConfigureICU.orig	2006-07-14 01:36:36.000000000 +0200
+--- runConfigureICU.orig	2010-08-30 19:24:42.000000000 +0000
 +++ runConfigureICU
-@@ -232,7 +232,7 @@ case $platform in
-         RELEASE_CFLAGS='-O2'
-         RELEASE_CXXFLAGS='-O2'
+@@ -276,7 +276,7 @@ case $platform in
+         DEBUG_CFLAGS='-g -O0'
+         DEBUG_CXXFLAGS='-g -O0'
          ;;
 -    *BSD)
 +    *BSD | DragonFly)
