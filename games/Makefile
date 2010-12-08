@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.337 2010/06/08 08:46:40 wiz Exp $
+# $NetBSD: Makefile,v 1.338 2010/08/27 08:01:24 adam Exp $
 #
 
 COMMENT=	Games
@@ -188,6 +188,7 @@ SUBDIR+=	ninvaders
 SUBDIR+=	omega
 SUBDIR+=	openmortal
 SUBDIR+=	openttd
+SUBDIR+=	openttd-data
 SUBDIR+=	orbital_eunuchs_sniper
 SUBDIR+=	pag
 SUBDIR+=	pioneers
