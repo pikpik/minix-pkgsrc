@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.622 2010/09/16 09:49:42 wiz Exp $
+# $NetBSD: Makefile,v 1.623 2010/10/16 13:12:17 obache Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -48,6 +48,7 @@ SUBDIR+=	fast-user-switch-applet
 SUBDIR+=	fbdesk
 SUBDIR+=	filerunner
 SUBDIR+=	fixesproto
+SUBDIR+=	fixesproto4
 SUBDIR+=	fltk
 SUBDIR+=	fltk2
 SUBDIR+=	fontcacheproto
