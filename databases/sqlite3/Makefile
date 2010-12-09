@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2010/10/25 07:44:32 tnn Exp $
+# $NetBSD: Makefile,v 1.35 2010/11/13 21:54:13 joerg Exp $
 
-DISTNAME=	sqlite-amalgamation-3.7.3
-PKGNAME=	${DISTNAME:S/sqlite-amalgamation/sqlite3/}
-PKGREVISION=	1
+DISTNAME=	sqlite-autoconf-3070400
+PKGNAME=	sqlite3-3.7.4
 CATEGORIES=	databases
 MASTER_SITES=	http://www.hwaci.com/sw/sqlite/ \
 		http://www.sqlite.org/
@@ -14,7 +13,6 @@ LICENSE=	public-domain
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=			${WRKDIR}/sqlite-${PKGVERSION_NOREV}
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
