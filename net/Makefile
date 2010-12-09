@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.858 2010/11/30 12:36:23 adam Exp $
+# $NetBSD: Makefile,v 1.859 2010/12/06 17:03:03 adam Exp $
 #
 
 COMMENT=	Networking tools
@@ -419,6 +419,7 @@ SUBDIR+=	partysip
 SUBDIR+=	pchar
 SUBDIR+=	pconsole
 SUBDIR+=	pear-Net_DIME
+SUBDIR+=	pear-Net_IDNA2
 SUBDIR+=	pear-Net_LDAP2
 SUBDIR+=	pear-Net_SMTP
 SUBDIR+=	pear-Net_Sieve
