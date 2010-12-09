@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/08/31 07:48:22 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/04/09 08:09:11 tnn Exp $
 #
 
 DISTNAME=	libpciaccess-0.11.0
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=	--with-zlib
 
 PKGCONFIG_OVERRIDE+=	pciaccess.pc.in
 
-BUILD_DEPENDS+=	xorg-util-macros>=1.2:../../devel/xorg-util-macros
+BUILD_DEPENDS+=	xorg-util-macros>=1.3:../../devel/xorg-util-macros
 
 pre-configure:
 	cd ${WRKSRC} && autoreconf -v -i -f
