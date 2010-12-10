@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${PG_SUBPREFIX}bin/pg_upgrade
