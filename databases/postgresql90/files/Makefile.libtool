@@ -4,7 +4,7 @@
 #    Common rules for buildling libtool archives
 #
 # IDENTIFICATION
-#    $NetBSD: Makefile.libtool,v 1.1.1.1 2010/09/21 07:50:46 adam Exp $
+#    $NetBSD: Makefile.libtool,v 1.2 2010/11/05 14:56:37 adam Exp $
 #
 #-------------------------------------------------------------------------
 
@@ -27,18 +27,10 @@ else
 ifneq (,$(findstring src/pl/,$(subdir)))
 shmodule	= yes
 else
-ifneq (,$(findstring contrib/adminpack,$(subdir)))
+ifneq (,$(findstring contrib/,$(subdir)))
 shmodule	= yes
-else
-ifneq (,$(findstring contrib/pgcrypto,$(subdir)))
-shmodule	= yes
-else
-ifneq (,$(findstring contrib/dblink,$(subdir)))
-shmodule       = yes
 else
 shmodule	= no
-endif
-endif
 endif
 endif
 endif
