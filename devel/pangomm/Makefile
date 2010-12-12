@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2010/09/14 11:00:47 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2010/11/18 11:38:19 obache Exp $
 
-DISTNAME=	pangomm-2.26.2
-PKGREVISION=	2
+DISTNAME=	pangomm-2.26.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pangomm/2.26/}
 EXTRACT_SUFX=	.tar.bz2
