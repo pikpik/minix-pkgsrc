@@ -15,6 +15,8 @@ CONFLICTS=	jpeg-[0-9]*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+BUILD_DEPENDS+=	nasm-[0-9]*:../../devel/nasm
+
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
