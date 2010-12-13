@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2010/11/23 17:40:40 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2010/12/12 11:38:26 wiz Exp $
 #
 
-DISTNAME=	clive-2.2.18
+DISTNAME=	clive-2.2.19
 CATEGORIES=	net multimedia www
 MASTER_SITES=	http://clive.googlecode.com/files/
-EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://clive.sourceforge.net/
