@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2009/02/10 16:39:40 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2009/08/06 19:14:52 zafer Exp $
 #
 
-DISTNAME=	john-1.7.3.1
+DISTNAME=	john-1.7.6
 CATEGORIES=	security textproc
 MASTER_SITES=	http://www.openwall.com/john/g/
 
