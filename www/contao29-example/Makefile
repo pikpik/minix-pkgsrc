@@ -1,5 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/07/05 14:46:25 taca Exp $
 #
+
+DIST_SUBDIR=	contao${CT_VER}-20101203
 
 LICENSE=	gnu-lgpl-v3
 
