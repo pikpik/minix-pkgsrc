@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.6 2007/08/03 11:53:27 joerg Exp $
+# $NetBSD: builtin.mk,v 1.7 2010/07/06 23:37:57 obache Exp $
 
 BUILTIN_PKG:=	zlib
 
@@ -7,6 +7,10 @@ BUILTIN_FIND_FILES.H_ZLIB=	/usr/include/zlib.h \
 				/boot/develop/headers/3rdparty/zlib.h
 
 .include "../../mk/buildlink3/bsd.builtin.mk"
+
+.if ! empty(MACHINE_PLATFORM:MDarwin-[0-8].*-*)
+USE_BUILTIN.zlib=no
+.endif
 
 ###
 ### Determine if there is a built-in implementation of the package and
