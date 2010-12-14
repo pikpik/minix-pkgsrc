@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/11/15 22:57:32 abs Exp $
+# $NetBSD: Makefile,v 1.4 2010/11/23 01:10:36 obache Exp $
 #
 
-DISTNAME=	ibus-handwrite-2.1.1
+DISTNAME=	ibus-handwrite-2.1.2
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://ibus-handwrite.googlecode.com/files/
 
