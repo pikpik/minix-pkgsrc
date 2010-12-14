@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.3 2008/02/12 16:53:30 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2009/01/28 13:14:54 tron Exp $
 
-DISTNAME=	ilmbase-1.0.1
+DISTNAME=	ilmbase-1.0.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://savannah.nongnu.org/download/openexr/
 
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.openexr.com/
 COMMENT=	High dynamic-range (HDR) image file format library and tools
+LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
