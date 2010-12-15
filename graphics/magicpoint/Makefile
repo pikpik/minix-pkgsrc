@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2010/02/03 22:35:34 joerg Exp $
+# $NetBSD: Makefile,v 1.66 2010/06/13 22:44:38 wiz Exp $
 
 DISTNAME=		magicpoint-1.13a
 PKGREVISION=		3
@@ -79,3 +79,4 @@ post-install:
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
+# DO NOT DELETE
