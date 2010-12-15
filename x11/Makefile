@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.623 2010/10/16 13:12:17 obache Exp $
+# $NetBSD: Makefile,v 1.624 2010/12/08 00:40:01 abs Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -319,6 +319,7 @@ SUBDIR+=	ratmen
 SUBDIR+=	recordproto
 SUBDIR+=	rendercheck
 SUBDIR+=	renderproto
+SUBDIR+=	renderproto9
 SUBDIR+=	rep-gtk2
 SUBDIR+=	resourceproto
 SUBDIR+=	rgb
