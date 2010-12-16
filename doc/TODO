@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.9945 2010/12/15 13:31:59 wiz Exp $
+$NetBSD: TODO,v 1.9948 2010/12/16 03:50:30 taca Exp $
 
 Suggested new packages
 ======================
@@ -646,7 +646,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o gammu-1.28.92
 	o gap-4r4p9
 	o gated-3.6
-	o gauche-0.9.1
 	o gbdfed-1.6
 	o gcal-3.6
 	o gcalctool-5.32.2
@@ -761,7 +760,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o hiawatha-7.4
 	o highlight-3.2
 	o honeyd-1.5c
-	o horde-3.3.11
 	o host-20070128
 	o hpijs-2.1.7 - note: hplip-0.9.7.tar.gz includes hpijs-2.1.7 in prnt
 	o html2ps-1.0b5
@@ -871,7 +869,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o libflash-0.4.13
 	o libfontenc-1.1.0
 	o libgda-4.2.1 [GNOME 2.32]
-	o libgdata-0.6.6
+	o libgdata-0.7.0
 	o libgiigic-1.1.2
 	o libgnomedb-3.1.2
 	o libhydrogen-0.9.2
@@ -989,6 +987,8 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o munin-1.4.4
 	o muse-0.9.2
 	o musicpd-0.16.0
+	o mysql55-client-5.5.8 (MySQL 5.5.8)
+	o mysql55-server-5.5.8 (MySQL 5.5.8)
 	o nagios-3.2.3
 	o nap-1.5.3
 	o nautilus-2.32.2 [GNOME 2.32]
@@ -1149,6 +1149,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o rc-1.7.1 [at ftp://quenix2.dyndns.org/FreeBSD/ports/distfiles/]
 	o rdp-1.6
 	o recordproto-1.14.1
+	o resourceproto-1.1.1
 	o remind-3.1.10
 	o rendercheck-1.4
 	o renderproto-0.11.1
@@ -1418,7 +1419,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o xinput-1.5.3
 	o xjman-0.7
 	o xkbcomp-1.2.0
-	o xkbevd-1.1.0 [unpackaged]
+	o xkbevd-1.1.2 [unpackaged]
 	o xkbset-0.5
 	o xkbutils-1.0.2 [unpackaged]
 	o xkill-1.0.3
