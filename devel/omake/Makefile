@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/05/29 10:43:14 obache Exp $
 #
 
-DISTNAME=	omake-${VERSION}-3
-PKGNAME=	omake-${VERSION}
+DISTNAME=	omake-${VERSION}-0.rc1
+PKGNAME=	omake-${VERSION}.0rc1
 CATEGORIES=	devel
 MASTER_SITES=	http://omake.metaprl.org/downloads/
 
@@ -19,7 +19,7 @@ WRKSRC=		${WRKDIR}/omake-${VERSION}
 
 MAKE_ENV+=	INSTALL_ROOT=${DESTDIR}
 
-VERSION=	0.9.8.5
+VERSION=	0.9.8.6
 
 .include "../../lang/ocaml/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
