@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.53 2010/02/20 13:51:12 obache Exp $
+# $NetBSD: Makefile,v 1.54 2010/02/25 19:07:53 joerg Exp $
 #
 
-DISTNAME=	Gauche-0.9
+DISTNAME=	Gauche-0.9.1
 CATEGORIES=	lang
-#PKGREVISION=	1
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gauche/}
 EXTRACT_SUFX=	.tgz
 

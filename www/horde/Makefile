@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.69 2010/09/30 08:17:23 obache Exp $
+# $NetBSD: Makefile,v 1.70 2010/11/10 12:46:53 adam Exp $
 
-DISTNAME=	horde-3.3.10
+DISTNAME=	horde-3.3.11
 CATEGORIES=	www
 MASTER_SITES=	http://ftp.horde.org/pub/horde/ \
 		ftp://ftp.horde.org/pub/horde/
