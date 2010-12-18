@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.294 2010/09/12 03:52:33 taca Exp $
+# $NetBSD: Makefile,v 1.295 2010/12/01 21:59:28 asau Exp $
 #
 
 COMMENT=	Programming languages
@@ -10,6 +10,7 @@ SUBDIR+=	SmartEiffel
 SUBDIR+=	a60
 SUBDIR+=	awka
 SUBDIR+=	baci
+SUBDIR+=	boomerang
 SUBDIR+=	brandybasic
 SUBDIR+=	bwbasic
 SUBDIR+=	caml-light
