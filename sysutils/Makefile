@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.502 2010/11/05 13:59:27 pettai Exp $
+# $NetBSD: Makefile,v 1.503 2010/12/19 20:21:56 plunky Exp $
 #
 
 COMMENT=	System utilities
@@ -147,7 +147,6 @@ SUBDIR+=	gvfs
 SUBDIR+=	gworkspace
 SUBDIR+=	hal
 SUBDIR+=	hal-info
-SUBDIR+=	hcidump
 SUBDIR+=	hddtemp
 SUBDIR+=	hfsutils
 SUBDIR+=	htop
