@@ -14,6 +14,9 @@ share/ibus-skk/engine/kzik.pyo
 share/ibus-skk/engine/main.py
 share/ibus-skk/engine/main.pyc
 share/ibus-skk/engine/main.pyo
+share/ibus-skk/engine/nicola.py
+share/ibus-skk/engine/nicola.pyc
+share/ibus-skk/engine/nicola.pyo
 share/ibus-skk/engine/skk.py
 share/ibus-skk/engine/skk.pyc
 share/ibus-skk/engine/skk.pyo
