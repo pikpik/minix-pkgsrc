@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2010/03/24 19:43:25 asau Exp $
+# $NetBSD: Makefile,v 1.45 2010/05/04 20:46:31 tez Exp $
 #
 
 DISTNAME=	gcc-${GCC_VERSION}
@@ -11,6 +11,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gcc/gcc.html
 COMMENT=	This is the gcc 3.4 compiler
+LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 
 GCC_VERSION=		3.4.6
 
