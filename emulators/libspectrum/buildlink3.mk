@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/07/08 23:10:49 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:24:33 joerg Exp $
 
 BUILDLINK_TREE+=	libspectrum
 
@@ -9,6 +9,8 @@ BUILDLINK_API_DEPENDS.libspectrum+=		libspectrum>=0.2.2
 BUILDLINK_ABI_DEPENDS.libspectrum+=	libspectrum>=0.2.2nb2
 BUILDLINK_PKGSRCDIR.libspectrum?=	../../emulators/libspectrum
 
+.include "../../archivers/bzip2/buildlink3.mk"
+.include "../../audio/libaudiofile/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/libgcrypt/buildlink3.mk"
