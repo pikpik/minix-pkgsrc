@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1414 2010/11/16 20:11:25 drochner Exp $
+# $NetBSD: Makefile,v 1.1415 2010/11/29 06:44:15 agc Exp $
 #
 
 COMMENT=	Development utilities
@@ -120,6 +120,7 @@ SUBDIR+=	cscope
 SUBDIR+=	cssc
 SUBDIR+=	cunit
 SUBDIR+=	cut
+SUBDIR+=	cutter
 SUBDIR+=	cvs2cl
 SUBDIR+=	cvs2html
 SUBDIR+=	cvs2p4
