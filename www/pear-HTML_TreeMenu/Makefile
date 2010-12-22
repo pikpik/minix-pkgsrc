@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2008/06/12 02:14:56 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/12/16 01:39:55 dsainty Exp $
 
-DISTNAME=	HTML_TreeMenu-1.2.1
+DISTNAME=	HTML_TreeMenu-1.2.2
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
