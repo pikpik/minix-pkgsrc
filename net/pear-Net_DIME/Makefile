@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:41 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2010/02/06 15:56:35 taca Exp $
 
-DISTNAME=	Net_DIME-1.0.1
+DISTNAME=	Net_DIME-1.0.2
 CATEGORIES+=	net
 
 MAINTAINER=	jdolecek@NetBSD.org
