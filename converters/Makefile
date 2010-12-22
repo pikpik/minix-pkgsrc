@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.105 2010/07/24 17:57:01 gdt Exp $
+# $NetBSD: Makefile,v 1.106 2010/10/16 15:27:25 wiz Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -56,6 +56,7 @@ SUBDIR+=	p5-Unicode-String
 SUBDIR+=	p5-Unicode-UTF8simple
 SUBDIR+=	p5-chkjis
 SUBDIR+=	p5-nkf
+SUBDIR+=	pear-I18n_UnicodeNormalizer
 SUBDIR+=	php-iconv
 SUBDIR+=	php-mbstring
 SUBDIR+=	psiconv
