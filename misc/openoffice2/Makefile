@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2010/11/15 22:58:00 abs Exp $
+# $NetBSD: Makefile,v 1.82 2010/12/17 07:36:13 obache Exp $
 #
 
 OO_VER=			2.4.3
@@ -191,7 +191,7 @@ post-install:
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../textproc/icu/buildlink3.mk"

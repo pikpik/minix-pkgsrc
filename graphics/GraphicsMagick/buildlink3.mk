@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2010/06/05 13:30:33 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2010/06/13 22:44:26 wiz Exp $
 
 BUILDLINK_TREE+=	GraphicsMagick
 
@@ -13,7 +13,7 @@ BUILDLINK_PKGSRCDIR.GraphicsMagick?=	../../graphics/GraphicsMagick
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/jbigkit/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
 .include "../../graphics/libwmf/buildlink3.mk"

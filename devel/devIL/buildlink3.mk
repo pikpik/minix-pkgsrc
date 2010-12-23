@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.18 2010/01/18 09:58:44 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.19 2010/06/13 22:44:03 wiz Exp $
 
 BUILDLINK_TREE+=	devIL
 
@@ -12,7 +12,7 @@ BUILDLINK_PKGSRCDIR.devIL?=	../../devel/devIL
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"

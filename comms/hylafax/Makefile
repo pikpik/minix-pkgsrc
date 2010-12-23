@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2010/01/18 09:58:41 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2010/01/29 16:44:13 joerg Exp $
 
 VERS=		4.2.5
 DISTNAME=	hylafax-${VERS}
@@ -64,7 +64,7 @@ CONFIGURE_ENV+=		MACHDEPLIBS=-lrt
 .endif
 
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

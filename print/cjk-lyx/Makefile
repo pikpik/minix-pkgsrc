@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2010/02/10 19:17:44 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2010/02/12 00:00:45 joerg Exp $
 
 DISTNAME=	lyx-${LYX_VERS}
 PKGNAME=	cjk-${DISTNAME}
@@ -35,7 +35,7 @@ REPLACE_PYTHON+=	lib/scripts/*.py lib/scripts/listerrors
 
 .include "../../lang/python/application.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/xforms/buildlink3.mk"
 .include "../../mk/tex.buildlink3.mk"

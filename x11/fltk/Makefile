@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2010/04/09 13:35:41 obache Exp $
+# $NetBSD: Makefile,v 1.72 2010/06/13 22:45:36 wiz Exp $
 
 DISTNAME=	fltk-1.1.10-source
 PKGNAME=	${DISTNAME:S/-source//}
@@ -38,7 +38,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

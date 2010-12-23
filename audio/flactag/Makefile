@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/01/18 09:58:38 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/07/16 16:23:49 drochner Exp $
 #
 
 DISTNAME=	flactag-1.1
@@ -24,7 +24,7 @@ do-install:
 .include "../../audio/flac/buildlink3.mk"
 .include "../../audio/libdiscid/buildlink3.mk"
 .include "../../www/neon/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../textproc/unac/buildlink3.mk"
 .include "../../audio/libmusicbrainz/buildlink3.mk"
 .include "../../devel/libslang2/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2010/02/22 11:39:10 obache Exp $
+# $NetBSD: Makefile,v 1.33 2010/06/13 22:44:39 wiz Exp $
 #
 
 DISTNAME=	mgl2-alpha-020
@@ -111,7 +111,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/nine/${i} ${DESTDIR}${PREFIX}/share/doc/mgl2/nine/
 .endfor
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

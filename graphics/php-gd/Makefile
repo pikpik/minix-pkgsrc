@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2010/06/13 22:44:41 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2010/07/24 22:24:21 tron Exp $
 
 MODNAME=		gd
 CATEGORIES+=		graphics
@@ -24,7 +24,7 @@ USE_PHP_EXT_PATCHES=	yes
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../lang/php/ext.mk"
 .include "../../mk/bsd.pkg.mk"

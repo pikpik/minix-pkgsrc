@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.78 2010/11/17 16:47:37 dholland Exp $
+# $NetBSD: Makefile,v 1.79 2010/11/19 19:21:37 tez Exp $
 
 DISTNAME=	doxygen-1.6.3.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -74,6 +74,7 @@ post-patch:
 
 BUILDLINK_API_DEPENDS.graphviz+=	graphviz>=2.12nb1
 
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../graphics/graphviz/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../mk/tex.buildlink3.mk"

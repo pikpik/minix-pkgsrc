@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/01/18 09:58:57 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2010/08/09 11:05:55 drochner Exp $
 
 DISTNAME=		djvulibre-3.5.22
 PKGNAME=		djvulibre-tools-3.5.22
@@ -27,6 +27,6 @@ INSTALL_DIRS=		tools xmltools
 REPLACE_BASH+=		tools/any2djvu
 
 .include "../../graphics/djvulibre-lib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

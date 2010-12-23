@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2010/11/15 22:58:04 abs Exp $
+# $NetBSD: Makefile,v 1.30 2010/12/01 11:00:11 obache Exp $
 #
 
 DISTNAME=		gnash-${VER}
@@ -43,7 +43,7 @@ BUILDLINK_TRANSFORM+=	rm:-fvisibility-inlines-hidden
 .include "../../devel/libltdl/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"

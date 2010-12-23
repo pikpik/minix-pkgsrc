@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2010/01/18 09:59:20 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2010/03/24 21:35:12 sbd Exp $
 
 DISTNAME=		tightvnc-1.3.10
 PKGREVISION=		4
@@ -76,7 +76,7 @@ do-install:
 	    ${DESTDIR}${PREFIX}/share/examples/tightvnc/tightvncserver.conf
 
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

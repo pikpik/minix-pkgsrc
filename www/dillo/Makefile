@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2010/02/14 20:19:24 snj Exp $
+# $NetBSD: Makefile,v 1.48 2010/06/13 22:45:32 wiz Exp $
 
 DISTNAME=	dillo-2.2
 PKGREVISION=	1
@@ -39,7 +39,7 @@ post-install:
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/fltk2/buildlink3.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2010/01/18 09:59:17 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2010/06/13 22:45:05 wiz Exp $
 
 DISTNAME=	mjpegtools-1.9.0
 PKGREVISION=	3
@@ -42,7 +42,7 @@ BUILDLINK_TRANSFORM+=	rm:-laudio
 
 .include "../../audio/lame/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 #
 # GTK+ support is disabled to avoid a dependency on GTK+ when building GNOME2.

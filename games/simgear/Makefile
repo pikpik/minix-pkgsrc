@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/09/14 11:01:51 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/11/15 22:57:06 abs Exp $
 
 DISTNAME=	SimGear-2.0.0
 PKGNAME=	${DISTNAME:tl}
@@ -25,7 +25,7 @@ BUILDLINK_API_DEPENDS.plib+= plib>=1.8.4
 .include "../../devel/boost-headers/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../games/plib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/osg/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

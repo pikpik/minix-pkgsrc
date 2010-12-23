@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2010/06/13 22:44:09 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2010/08/21 16:34:22 seb Exp $
 #
 
 DISTNAME=	SDL_Perl-2.1.2
@@ -29,7 +29,7 @@ pre-configure:
 .include "../../devel/SDL_gfx/buildlink3.mk"
 .include "../../devel/SDL_ttf/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../lang/perl5/module.mk"

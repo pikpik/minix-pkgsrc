@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/09/14 11:13:12 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/11/15 22:57:23 abs Exp $
 #
 
 PKGNAME=	pornview-0.2.0pre1
@@ -24,6 +24,6 @@ REPLACE_PERL+=		src/scripts/helloworld
 
 .include "options.mk"
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

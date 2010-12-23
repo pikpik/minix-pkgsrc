@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/07/14 11:11:27 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/14 11:02:29 wiz Exp $
 #
 
 DISTNAME=	kmplayer-0.10.0c
@@ -35,7 +35,7 @@ SUBST_SED.desktop=	-e 's|@PREFIX@|${PREFIX}|g'
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../multimedia/xine-lib/buildlink3.mk"

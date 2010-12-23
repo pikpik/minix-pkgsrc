@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/01/18 09:59:23 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2010/05/05 18:23:52 drochner Exp $
 #
 
 DISTNAME=	podofo-0.7.0
@@ -27,7 +27,7 @@ CXXFLAGS+=	-fPIC
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

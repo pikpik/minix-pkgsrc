@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/10/25 18:36:53 adam Exp $
+# $NetBSD: Makefile,v 1.16 2010/11/15 22:57:14 abs Exp $
 
 DISTNAME=	gegl-0.1.2
 PKGREVISION=	3
@@ -36,7 +36,7 @@ PLIST.v4l=	yes
 
 BUILDLINK_API_DEPENDS.babl+=	babl>=0.1.2
 .include "../../graphics/babl/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/openexr/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

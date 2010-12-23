@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.110 2010/07/30 10:36:25 asau Exp $
+# $NetBSD: Makefile,v 1.111 2010/09/14 11:02:21 wiz Exp $
 
 DISTNAME=		R-2.11.1
 PKGREVISION=		1
@@ -101,7 +101,7 @@ CONFIGURE_ARGS+=	--enable-mbcs=no
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../math/blas/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/08/26 19:57:36 sno Exp $
+# $NetBSD: Makefile,v 1.11 2010/01/18 09:58:56 wiz Exp $
 #
 
 DISTNAME=	bktr2jpeg-1.0
@@ -19,5 +19,5 @@ INSTALL_MAKE_FLAGS=	PREFIX=${DESTDIR}${PREFIX}
 
 INSTALLATION_DIRS=	bin
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

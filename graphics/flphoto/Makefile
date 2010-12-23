@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/01/18 09:58:59 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2010/06/13 22:44:30 wiz Exp $
 #
 
 DISTNAME=		flphoto-1.2-source
@@ -19,7 +19,7 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
 .include "../../x11/fltk/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../print/cups/buildlink3.mk"
 .include "../../devel/libgphoto2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/02/11 23:23:54 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2010/02/12 02:02:49 joerg Exp $
 
 DISTNAME=	xrmftp-1.2.4
 PKGREVISION=	6
@@ -20,7 +20,7 @@ INSTALLATION_DIRS=	bin
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xrmftp ${DESTDIR}${PREFIX}/bin
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/xforms/buildlink3.mk"
 

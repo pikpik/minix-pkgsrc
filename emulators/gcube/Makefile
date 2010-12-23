@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/08/26 19:57:26 sno Exp $
+# $NetBSD: Makefile,v 1.16 2010/01/18 09:58:49 wiz Exp $
 #
 
 DISTNAME=		gcube-0.4-src
@@ -37,5 +37,5 @@ do-install:
 
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

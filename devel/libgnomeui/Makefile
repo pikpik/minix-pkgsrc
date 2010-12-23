@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 2010/10/22 19:34:33 drochner Exp $
+# $NetBSD: Makefile,v 1.95 2010/11/15 22:56:42 abs Exp $
 #
 
 DISTNAME=	libgnomeui-2.24.4
@@ -44,7 +44,7 @@ post-configure:
 .include "../../devel/libglade/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
-#.include "../../graphics/jpeg/buildlink3.mk"
+#.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../security/libgnome-keyring/buildlink3.mk"
 .include "../../sysutils/gnome-vfs/buildlink3.mk"

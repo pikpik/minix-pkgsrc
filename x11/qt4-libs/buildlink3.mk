@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2010/11/15 22:59:09 abs Exp $
+# $NetBSD: buildlink3.mk,v 1.21 2010/11/18 07:48:46 obache Exp $
 
 BUILDLINK_TREE+=	qt4-libs
 
@@ -21,7 +21,7 @@ PTHREAD_OPTS+=	require
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libXcursor/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2010/01/18 09:59:33 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2010/06/13 22:45:36 wiz Exp $
 
 BUILDLINK_TREE+=	fox
 
@@ -12,7 +12,7 @@ BUILDLINK_INCDIRS.fox?=		include/fox-1.6
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"

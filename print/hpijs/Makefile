@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/01/18 09:59:22 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2010/01/27 13:42:20 joerg Exp $
 
 DISTNAME=	hpijs-2.1.4
 PKGREVISION=	2
@@ -28,5 +28,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/ppd/HP* ${DESTDIR}${PREFIX}/share/ppd/
 	${GZIP_CMD} ${DESTDIR}${PREFIX}/share/ppd/HP*.ppd
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

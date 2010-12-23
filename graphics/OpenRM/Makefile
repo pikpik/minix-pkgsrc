@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/08/26 19:56:41 sno Exp $
+# $NetBSD: Makefile,v 1.17 2010/01/18 09:58:55 wiz Exp $
 #
 
 DISTNAME=		openrm-devel-1.5.2
@@ -45,7 +45,7 @@ do-install:
 
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

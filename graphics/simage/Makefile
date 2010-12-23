@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2010/01/18 09:59:08 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2010/06/13 22:44:45 wiz Exp $
 
 DISTNAME=		simage-1.6.1
 PKGREVISION=		8
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--with-xwd --with-mpeg2enc
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
 

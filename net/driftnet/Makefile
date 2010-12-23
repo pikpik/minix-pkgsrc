@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2010/01/18 09:59:19 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2010/02/11 20:47:11 joerg Exp $
 #
 
 DISTNAME=	driftnet-0.1.6
@@ -28,7 +28,7 @@ do-install:
 
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
