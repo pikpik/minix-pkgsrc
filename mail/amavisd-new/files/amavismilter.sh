@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: amavismilter.sh,v 1.1.1.1 2004/08/06 15:05:54 jlam Exp $
 #
 # PROVIDE: amavismilter
 # REQUIRE: DAEMON

@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD$
+$NetBSD: MESSAGE.milter,v 1.1.1.1 2004/08/06 15:05:53 jlam Exp $
 
 Before using amavisd-new with Sendmail, you must configure Sendmail
 properly.  Please refer to the following documentation:

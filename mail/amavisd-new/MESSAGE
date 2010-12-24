@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD$
+$NetBSD: MESSAGE,v 1.1.1.1 2004/08/06 15:05:54 jlam Exp $
 
 To use amavisd-new, you should install at least one content checker.
 Examples of content checkers include the freely-available Clam Anti-Virus
