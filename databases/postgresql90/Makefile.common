@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.4 2010/12/09 23:46:32 asau Exp $
+# $NetBSD: Makefile.common,v 1.5 2010/12/19 09:53:27 adam Exp $
 #
 # used by databases/postgresql90-adminpack/Makefile
 # used by databases/postgresql90-client/Makefile
@@ -33,9 +33,9 @@ HOMEPAGE=	http://www.postgresql.org/
 CONFLICTS+=	postgresql-[0-9]*
 CONFLICTS+=	postgresql[0-8][0-9]-*
 
-DISTINFO_FILE?=		${.CURDIR}/../postgresql90/distinfo
-COMMON_FILESDIR?=	${.CURDIR}/../postgresql90/files
-PATCHDIR?=		${.CURDIR}/../postgresql90/patches
+DISTINFO_FILE?=		${.CURDIR}/../../databases/postgresql90/distinfo
+COMMON_FILESDIR?=	${.CURDIR}/../../databases/postgresql90/files
+PATCHDIR?=		${.CURDIR}/../../databases/postgresql90/patches
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		bison gmake lex msgfmt
