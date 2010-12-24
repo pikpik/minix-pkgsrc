@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.155 2010/09/23 05:23:38 obache Exp $
+# $NetBSD: Makefile,v 1.156 2010/11/24 18:52:05 drochner Exp $
 #
 
 COMMENT=	Communication programs
@@ -29,6 +29,7 @@ SUBDIR+=	epic4
 SUBDIR+=	epic4-doc
 SUBDIR+=	finch
 SUBDIR+=	fisg
+SUBDIR+=	gajim
 SUBDIR+=	gale
 SUBDIR+=	gg2
 SUBDIR+=	gnomeicu
