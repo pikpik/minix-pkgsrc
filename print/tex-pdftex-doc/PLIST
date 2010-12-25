@@ -2,6 +2,7 @@
 share/texmf-dist/doc/pdftex/Announcement-1.40.2
 share/texmf-dist/doc/pdftex/NEWS
 share/texmf-dist/doc/pdftex/README
+share/texmf-dist/doc/pdftex/manual/ChangeLog
 share/texmf-dist/doc/pdftex/manual/Makefile
 share/texmf-dist/doc/pdftex/manual/README
 share/texmf-dist/doc/pdftex/manual/makefiles.cmd
@@ -12,7 +13,6 @@ share/texmf-dist/doc/pdftex/manual/pdftex-s.pdf
 share/texmf-dist/doc/pdftex/manual/pdftex-syntax.txt
 share/texmf-dist/doc/pdftex/manual/pdftex-t.tex
 share/texmf-dist/doc/pdftex/manual/pdftex-t.txt
-share/texmf-dist/doc/pdftex/manual/pdftex-w.pdf
 share/texmf-dist/doc/pdftex/manual/pdftex-w.tex
 share/texmf-dist/doc/pdftex/manual/samplepdf/cmr10.103
 share/texmf-dist/doc/pdftex/manual/samplepdf/obj.dat
