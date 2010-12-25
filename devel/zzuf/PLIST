@@ -1,5 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/12/09 06:56:52 bjs Exp $
+@comment $NetBSD$
+bin/zzcat
 bin/zzuf
 lib/zzuf/libzzuf.la
+man/man1/zzcat.1
 man/man1/zzuf.1
 man/man3/libzzuf.3
