@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.85 2010/10/13 00:11:21 spz Exp $
+# $NetBSD: Makefile,v 1.86 2010/11/28 14:06:16 obache Exp $
 
-DISTNAME=	cairo-1.10.0
-PKGREVISION=	2
+DISTNAME=	cairo-1.10.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/
 
