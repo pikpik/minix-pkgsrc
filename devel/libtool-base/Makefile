@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.92 2010/03/17 10:59:45 markd Exp $
+# $NetBSD: Makefile,v 1.93 2010/07/30 10:36:23 asau Exp $
 
 ###########################################################################
 ###########################################################################
@@ -59,7 +59,6 @@ BUILD_SHLIBTOOL=	NO
 .  endif
 .endif
 
-CONFIGURE_ARGS+=	--disable-ltdl-install
 BUILD_SHLIBTOOL?=	YES
 
 # We are going to want libtool to find the same versions of the C, C++,
