@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.165 2010/09/09 20:35:43 sno Exp $
+# $NetBSD: Makefile,v 1.166 2010/09/23 21:47:48 sno Exp $
 
 .include "license.mk"
 .include "Makefile.common"
@@ -48,6 +48,8 @@ PERL5_API_VERS_cmd=	\
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde
+CONFIGURE_ARGS+=	-D ccflags=${CFLAGS:Q}
+CONFIGURE_ARGS+=	-D ldflags=${LDFLAGS:Q}
 MAKE_ENV+=		LC_ALL="C"
 
 TEST_TARGET=		test
