@@ -1,4 +1,4 @@
-# $NetBSD: clang.mk,v 1.2 2010/10/21 13:55:13 adam Exp $
+# $NetBSD: clang.mk,v 1.3 2010/11/03 18:05:05 adam Exp $
 #
 # This is the compiler definition for the clang compiler.
 #
@@ -49,6 +49,8 @@ CC_VERSION_STRING?=	${CC_VERSION}
 CC_VERSION?=		clang
 .endif
 
+_COMPILER_ABI_FLAG.32=	-m32
+_COMPILER_ABI_FLAG.64=	-m64
 _COMPILER_LD_FLAG=	-Wl,
 _LINKER_RPATH_FLAG=	-rpath
 _COMPILER_RPATH_FLAG=	${_COMPILER_LD_FLAG}${_LINKER_RPATH_FLAG},
