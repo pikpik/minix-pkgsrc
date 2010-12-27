@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/11/15 22:57:07 abs Exp $
+# $NetBSD: Makefile,v 1.4 2010/12/21 17:48:13 adam Exp $
 
 DISTNAME=	qgis-1.6.0
 CATEGORIES=	geography
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 USE_CMAKE=		yes
-USE_LANGUAGES=		c c++ fortran
+USE_LANGUAGES=		c c++ fortran77
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		bison perl
