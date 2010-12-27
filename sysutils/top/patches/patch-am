@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-am,v 1.2 2004/09/16 13:32:16 he Exp $
 
 --- machine/m_netbsd16.c.orig	Thu Sep 16 15:39:54 2004
 +++ machine/m_netbsd16.c
@@ -140,14 +140,14 @@ $NetBSD$
 +
 +/* these are for detailing the memory statistics */
 +
-+int memory_stats[7];
++long memory_stats[7];
 +char *memorynames[] = {
 +	"K Act, ", "K Inact, ", "K Wired, ", "K Exec, ", "K File, ",
 +	"K Free, ",
 +	NULL
 +};
 +
-+int swap_stats[4];
++long swap_stats[4];
 +char *swapnames[] = {
 +	"K Total, ", "K Used, ", "K Free, ",
 +	NULL
