@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/04/12 22:43:12 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2010/12/23 06:34:50 ryoon Exp $
 
 DISTNAME=	e2fsprogs-1.41.12
 CATEGORIES=	sysutils
@@ -12,7 +12,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	makeinfo gmake
-INFO_FILES=	# PLIST
+INFO_FILES=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
