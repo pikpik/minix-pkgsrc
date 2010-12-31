@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- mtftpd.c.orig	2008-02-29 18:25:59.000000000 +0000
++++ mtftpd.c
+@@ -47,6 +47,7 @@
+ #include <sys/stat.h>
+ 
+ #include <arpa/inet.h>
++#include <sys/socket.h>
+ 
+ #include <pthread.h>
+ #include <stdlib.h>
