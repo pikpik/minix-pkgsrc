@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/11/15 22:58:06 abs Exp $
+# $NetBSD: Makefile,v 1.4 2011/01/01 13:17:29 obache Exp $
 
 DISTNAME=	mkvtoolnix-2.9.8
 PKGREVISION=	5
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake msgfmt
+USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=	c c++
 
 CONFIGURE_ARGS+=	--with-boost-libdir=${BUILDLINK_PREFIX.boost-libs}
