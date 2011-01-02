@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- network_io/unix/socket_util.c.orig	Fri Nov 13 06:41:23 2009
++++ network_io/unix/socket_util.c
+@@ -17,6 +17,7 @@
+ #include "apr_network_io.h"
+ #include "apr_poll.h"
+ 
++#ifndef __minix
+ APR_DECLARE(apr_status_t) apr_socket_atreadeof(apr_socket_t *sock, int *atreadeof)
+ {
+     apr_pollfd_t pfds[1];
+@@ -71,4 +72,5 @@ APR_DECLARE(apr_status_t) apr_socket_atreadeof(apr_soc
+     /* Should not fall through here. */
+     return APR_EGENERAL;
+ }
++#endif
+ 

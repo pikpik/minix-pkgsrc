@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- test/testsock.c.orig	Sun Nov  8 19:54:46 2009
++++ test/testsock.c
+@@ -200,6 +200,7 @@ static void test_recv(abts_case *tc, void *data)
+ 
+ static void test_atreadeof(abts_case *tc, void *data)
+ {
++#ifndef __minix
+     apr_status_t rv;
+     apr_socket_t *sock;
+     apr_socket_t *sock2;
+@@ -257,6 +258,7 @@ static void test_atreadeof(abts_case *tc, void *data)
+ 
+     rv = apr_socket_close(sock);
+     APR_ASSERT_SUCCESS(tc, "Problem closing socket", rv);
++#endif    
+ }
+ 
+ static void test_timeout(abts_case *tc, void *data)

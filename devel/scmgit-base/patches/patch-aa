@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.orig	2010-10-22 03:49:16.000000000 +0000
+--- Makefile.orig	Thu Dec 16 02:52:11 2010
 +++ Makefile
 @@ -259,8 +259,6 @@ endif
  
@@ -46,7 +46,51 @@ $NetBSD$
  	BASIC_CFLAGS += -D__EXTENSIONS__ -D__sun__ -DHAVE_ALLOCA_H
  endif
  ifeq ($(uname_O),Cygwin)
-@@ -1563,8 +1556,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(D
+@@ -1147,6 +1140,20 @@ endif
+ -include config.mak.autogen
+ -include config.mak
+ 
++ifeq ($(uname_S),Minix)
++# Override configure
++	NO_IPV6 = YesPlease
++	NO_ST_BLOCKS_IN_STRUCT_STAT = YesPlease
++	NO_NSEC = YesPlease
++	NEEDS_LIBGEN =
++	NEEDS_CRYPTO_WITH_SSL = YesPlease
++	NEEDS_SSL_WITH_CURL = YesPlease
++	NEEDS_RESOLV = 
++	NO_HSTRERROR = YesPlease
++	NO_MMAP = YesPlease
++	NO_CURL = 
++endif
++
+ ifdef CHECK_HEADER_DEPENDENCIES
+ COMPUTE_HEADER_DEPENDENCIES =
+ USE_COMPUTED_HEADER_DEPENDENCIES =
+@@ -1216,6 +1223,13 @@ else
+ 	else
+ 		CURL_LIBCURL = -lcurl
+ 	endif
++	ifdef NEEDS_SSL_WITH_CURL
++		CURL_LIBCURL +=	-lssl
++	endif
++	ifdef NEEDS_CRYPTO_WITH_SSL
++		CURL_LIBCURL += -lcrypto
++	endif
++
+ 	REMOTE_CURL_PRIMARY = git-remote-http$X
+ 	REMOTE_CURL_ALIASES = git-remote-https$X git-remote-ftp$X git-remote-ftps$X
+ 	REMOTE_CURL_NAMES = $(REMOTE_CURL_PRIMARY) $(REMOTE_CURL_ALIASES)
+@@ -1255,7 +1269,7 @@ ifndef NO_OPENSSL
+ 		OPENSSL_LINK =
+ 	endif
+ 	ifdef NEEDS_CRYPTO_WITH_SSL
+-		OPENSSL_LINK += -lcrypto
++		OPENSSL_LIBSSL += -lcrypto
+ 	endif
+ else
+ 	BASIC_CFLAGS += -DNO_OPENSSL
+@@ -1567,8 +1581,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(DEFAULT_PAGER_C
  BASIC_CFLAGS += -DDEFAULT_PAGER='$(DEFAULT_PAGER_CQ_SQ)'
  endif
  

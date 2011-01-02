@@ -34,6 +34,10 @@ CFLAGS.NetBSD+=		-DUSE_PREAD
 CFLAGS+=		-DSQLITE_ENABLE_LOCKING_STYLE=0
 .endif
 
+.if ${OPSYS} == "Minix"
+CPPFLAGS+=	-DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_MUTEX_NOOP
+.endif
+
 # This define includes the sqlite3_unlock_notify() API in the build.
 # It is required by Firefox 4.x.
 CFLAGS+=		-DSQLITE_ENABLE_UNLOCK_NOTIFY=1

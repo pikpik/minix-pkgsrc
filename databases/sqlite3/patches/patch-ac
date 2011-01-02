@@ -1,8 +1,8 @@
 $NetBSD$
 
---- sqlite3.c.orig	Thu Jul 22 17:18:14 2010
-+++ sqlite3.c
-@@ -22471,7 +22471,9 @@ static int sqliteErrorFromPosixError(int posixError, i
+--- /usr/tmp/work/databases/sqlite3/work/sqlite-autoconf-3070400/sqlite3.c.orig	Tue Dec  7 20:28:24 2010
++++ /usr/tmp/work/databases/sqlite3/work/sqlite-autoconf-3070400/sqlite3.c
+@@ -23441,7 +23441,9 @@ static int sqliteErrorFromPosixError(int posixError, i
    case ENODEV:
    case ENXIO:
    case ENOENT:
@@ -12,14 +12,24 @@ $NetBSD$
    case ENOSYS:
      /* these should force the client to close the file and reconnect */
      
-@@ -23921,7 +23923,9 @@ static int dotlockLock(sqlite3_file *id, int locktype)
+@@ -24596,7 +24598,7 @@ static int dotlockLock(sqlite3_file *id, int eFileLock
    */
-   if( pFile->locktype > NO_LOCK ){
-     pFile->locktype = locktype;
+   if( pFile->eFileLock > NO_LOCK ){
+     pFile->eFileLock = eFileLock;
 -#if !OS_VXWORKS
-+#if defined(__minix)
-+    utime(zLockFile, NULL);
-+#elif !OS_VXWORKS
++#if !OS_VXWORKS && !defined(__minix)
      /* Always update the timestamp on the old file */
      utimes(zLockFile, NULL);
  #endif
+@@ -26065,7 +26067,11 @@ static int fcntlSizeHint(unixFile *pFile, i64 nByte){
+       ** is the same technique used by glibc to implement posix_fallocate()
+       ** on systems that do not have a real fallocate() system call.
+       */
++#ifndef __minix
+       int nBlk = buf.st_blksize;  /* File-system block size */
++#else
++     int nBlk = 4096;
++#endif
+       i64 iWrite;                 /* Next offset to write to */
+       int nWrite;                 /* Return value from seekAndWrite() */
+ 

@@ -37,7 +37,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../mk/bsd.prefs.mk"
 .include "../../mk/compiler.mk"
 
-EXTRACT_USING=		gtar
+#EXTRACT_USING=		gtar
 USE_TOOLS+=		gmake perl
 TEST_TARGET=		tests
 MAKE_JOBS_SAFE=		no
