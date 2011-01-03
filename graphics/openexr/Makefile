@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/08/28 21:33:07 hasso Exp $
+# $NetBSD: Makefile,v 1.23 2010/12/14 09:55:56 adam Exp $
 
 DISTNAME=	openexr-1.7.0
 CATEGORIES=	graphics
@@ -25,6 +25,7 @@ LIBS.SunOS+=		-lm
 BUILDLINK_TRANSFORM+=	rm:-Wno-long-double
 
 .include "../../devel/zlib/buildlink3.mk"
+BUILDLINK_API_DEPENDS.ilmbase+=	ilmbase>=1.0.2nb1
 .include "../../graphics/ilmbase/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
