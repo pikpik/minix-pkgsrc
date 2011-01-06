@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.1.1.1 2007/04/24 19:06:03 agc Exp $
 
 --- u9fs.c	2007/04/23 22:01:05	1.1
 +++ u9fs.c	2007/04/23 22:29:28
@@ -8,7 +8,7 @@ $NetBSD$
  
 +#if __linux__
  #include <linux/kdev_t.h>
-+#elif __NetBSD__
++#elif defined(__NetBSD__) || defined(__APPLE__) || defined(__DragonFly__) || defined(__FreeBSD__) 
 +#include <sys/types.h>
 +#define MAJOR(m)	major(m)
 +#define MINOR(m)	minor(m)
