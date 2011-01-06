@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.8 2009/01/20 14:48:56 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2009/03/20 19:25:22 joerg Exp $
 
 BUILDLINK_TREE+=	skey
 
@@ -15,6 +15,9 @@ BUILDLINK_DEPMETHOD.skey?=	build
 # PR#40434
 .if ${OPSYS} == "SunOS"
 BUILDLINK_TRANSFORM+=	l:skey:skey:md5
+# PR#44324
+.elif ${OPSYS} == "DragonFly" || ${OPSYS} == "FreeBSD"
+BUILDLINK_TRANSFORM+=	l:skey:skey:md
 .endif
 .endif # SKEY_BUILDLINK3_MK
 
