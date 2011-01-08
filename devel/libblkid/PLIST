@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/blkid/blkid.h
+lib/libblkid.la
+lib/pkgconfig/blkid.pc
+man/man3/libblkid.3
