@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1415 2010/11/29 06:44:15 agc Exp $
+# $NetBSD: Makefile,v 1.1416 2010/12/21 11:29:39 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -288,6 +288,7 @@ SUBDIR+=	libast
 SUBDIR+=	libatomic_ops
 SUBDIR+=	libbegemot
 SUBDIR+=	libbinio
+SUBDIR+=	libblkid
 SUBDIR+=	libbonobo
 SUBDIR+=	libbonoboui
 SUBDIR+=	libcfg+
@@ -376,6 +377,7 @@ SUBDIR+=	libtool-base
 SUBDIR+=	libtool-info
 SUBDIR+=	libts
 SUBDIR+=	libusb
+SUBDIR+=	libuuid
 SUBDIR+=	libview
 SUBDIR+=	libvolume_id
 SUBDIR+=	libwhisker2
