@@ -1,7 +1,7 @@
-@comment $NetBSD: PLIST.NetBSD,v 1.2 2008/11/27 03:32:19 jmcneill Exp $
-lib/hal/scripts/netbsd/hal-system-power-reboot-netbsd
-lib/hal/scripts/netbsd/hal-system-power-shutdown-netbsd
-lib/hal/scripts/netbsd/hal-system-power-suspend-netbsd
+@comment $NetBSD: PLIST.NetBSD,v 1.3 2009/06/14 18:16:07 joerg Exp $
 libexec/hald-addon-storage
 libexec/hald-probe-storage
 libexec/hald-probe-volume
+libexec/scripts/netbsd/hal-system-power-reboot-netbsd
+libexec/scripts/netbsd/hal-system-power-shutdown-netbsd
+libexec/scripts/netbsd/hal-system-power-suspend-netbsd
