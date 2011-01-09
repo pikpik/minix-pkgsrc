@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/09/04 05:04:57 obache Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/06 07:56:24 obache Exp $
 #
 
 DISTNAME=	ibus-pinyin-1.3.11
@@ -39,6 +39,12 @@ CONFIGURE_ARGS+=	--disable-db-android
 CONFIGURE_ARGS+=	--enable-db-open-phrase
 
 .include "options.mk"
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Linux"
+.  include "../../devel/libuuid/buildlink3.mk"
+.endif
 
 .include "../../inputmethod/ibus/bad-env-usage.mk"
 
