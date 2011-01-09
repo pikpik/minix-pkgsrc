@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/12/21 11:27:57 obache Exp $
 #
 
 DISTNAME=	cutter-1.1.5
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	gmake intltool pkg-config
+USE_TOOLS+=	gmake intltool pkg-config xgettext msgmerge msgfmt
 USE_LANGUAGES=	c c++
 USE_PKGLOCALEDIR=	yes
 
