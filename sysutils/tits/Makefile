@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2008/01/05 14:12:40 rillig Exp $
+# $NetBSD: Makefile,v 1.21 2008/12/18 14:48:01 joerg Exp $
 #
 
 DISTNAME=	tits-1.2.2
@@ -8,6 +8,7 @@ MASTER_SITES=	http://www.mctavish.co.uk/tits/
 
 MAINTAINER=	scw@NetBSD.org
 COMMENT=	Server which provides telnet(1) access to one or more tty ports
+LICENSE=	original-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
