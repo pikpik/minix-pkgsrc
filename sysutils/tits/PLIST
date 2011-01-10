@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/10/31 22:53:57 zuntum Exp $
-share/examples/rc.d/tits
-share/examples/tits.conf
-sbin/tits
+@comment $NetBSD: PLIST,v 1.2 2006/05/18 15:45:09 gavan Exp $
 man/man8/tits.8
 man/cat8/tits.0
+sbin/tits
+share/examples/rc.d/tits
+share/examples/tits.conf
