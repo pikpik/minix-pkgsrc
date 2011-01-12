@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.575 2010/12/12 11:53:09 dsainty Exp $
+# $NetBSD: Makefile,v 1.576 2010/12/23 11:47:23 ryoon Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -352,6 +352,8 @@ SUBDIR+=	py-matplotlib-gtk2
 SUBDIR+=	py-matplotlib-tk
 SUBDIR+=	py-piddle
 SUBDIR+=	py-pyfits
+SUBDIR+=	py-sk1libs
+SUBDIR+=	py-uniconvertor
 SUBDIR+=	qcamview
 SUBDIR+=	qimageblitz
 SUBDIR+=	qiv
