@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.449 2011/01/12 16:43:00 minskim Exp $
+# $NetBSD: Makefile,v 1.450 2011/01/12 17:00:32 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -280,6 +280,7 @@ SUBDIR+=	tex-fancyvrb-doc
 SUBDIR+=	tex-fix2col
 SUBDIR+=	tex-fix2col-doc
 SUBDIR+=	tex-fixme
+SUBDIR+=	tex-fixme-doc
 SUBDIR+=	tex-float
 SUBDIR+=	tex-float-doc
 SUBDIR+=	tex-fmtcount
