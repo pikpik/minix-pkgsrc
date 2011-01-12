@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.446 2010/12/25 06:25:37 minskim Exp $
+# $NetBSD: Makefile,v 1.447 2011/01/12 16:32:04 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -232,6 +232,8 @@ SUBDIR+=	tex-cyrillic
 SUBDIR+=	tex-cyrillic-doc
 SUBDIR+=	tex-datatool
 SUBDIR+=	tex-datatool-doc
+SUBDIR+=	tex-datetime
+SUBDIR+=	tex-datetime-doc
 SUBDIR+=	tex-dblfloatfix
 SUBDIR+=	tex-dblfloatfix-doc
 SUBDIR+=	tex-dehyph-exptl
