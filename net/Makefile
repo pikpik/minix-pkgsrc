@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.860 2010/12/09 07:46:07 adam Exp $
+# $NetBSD: Makefile,v 1.861 2010/12/13 12:45:47 ryoon Exp $
 #
 
 COMMENT=	Networking tools
@@ -476,6 +476,7 @@ SUBDIR+=	py-s3cmd
 SUBDIR+=	py-soaplib
 SUBDIR+=	py-soappy
 SUBDIR+=	py-spreadmodule
+SUBDIR+=	py-suds
 SUBDIR+=	py-twisted
 SUBDIR+=	py-twisted-docs
 SUBDIR+=	py-zsi
