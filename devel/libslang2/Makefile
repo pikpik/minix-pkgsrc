@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2010/08/09 12:21:48 drochner Exp $
+# $NetBSD: Makefile,v 1.8 2010/08/10 10:16:44 drochner Exp $
 #
 
 DISTNAME=	slang-2.2.2
 PKGNAME=	lib${DISTNAME:slang%=slang2%}
-PKGREVISION=	1
+PKGREVISION=	2
 SVR4_PKGNAME=	lslan
 CATEGORIES=	devel
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/slang/v2.2/ \
