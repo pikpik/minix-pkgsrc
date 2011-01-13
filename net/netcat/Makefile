@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2009/06/12 22:17:28 zafer Exp $
+# $NetBSD: Makefile,v 1.34 2009/06/14 22:58:07 joerg Exp $
 
 DISTNAME=	nc110
 PKGNAME=	netcat-1.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/netutils/netcat/
 EXTRACT_SUFX=	.tgz
