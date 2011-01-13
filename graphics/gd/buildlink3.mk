@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.21 2010/06/13 22:44:30 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2010/12/23 11:44:37 dsainty Exp $
 
 BUILDLINK_TREE+=	gd
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	gd
 GD_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.gd+=	gd>=2.0.15nb1
-BUILDLINK_ABI_DEPENDS.gd+=	gd>=2.0.35nb5
+BUILDLINK_ABI_DEPENDS.gd+=	gd>=2.0.35nb8
 BUILDLINK_PKGSRCDIR.gd?=	../../graphics/gd
 
 pkgbase := gd

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2010/09/14 11:02:29 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2010/12/23 11:44:50 dsainty Exp $
 #
 
 DISTNAME=	kmplayer-0.10.0c
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	multimedia kde
 MASTER_SITES=	http://kmplayer.kde.org/pkgs/
 EXTRACT_SUFX=	.tar.bz2

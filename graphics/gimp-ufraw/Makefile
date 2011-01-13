@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.61 2010/11/15 22:57:17 abs Exp $
+# $NetBSD: Makefile,v 1.62 2010/12/23 11:44:38 dsainty Exp $
 
 DISTNAME=		ufraw-0.17
 PKGNAME=		gimp-${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ufraw/}
 

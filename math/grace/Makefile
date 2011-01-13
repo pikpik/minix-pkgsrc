@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2010/07/30 10:36:29 asau Exp $
+# $NetBSD: Makefile,v 1.49 2010/12/23 11:44:48 dsainty Exp $
 #
 
 DISTNAME=	grace-5.1.22
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	math graphics x11
 MASTER_SITES=	ftp://plasma-gate.weizmann.ac.il/pub/grace/src/stable/ \
 		ftp://ftp.fu-berlin.de/unix/graphics/grace/src/stable/ \

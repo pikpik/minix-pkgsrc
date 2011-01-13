@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2010/06/13 22:45:36 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2010/12/23 11:44:59 dsainty Exp $
 #
 
 DISTNAME=	efltk-2.0.5
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ede/}
 EXTRACT_SUFX=	.tar.bz2

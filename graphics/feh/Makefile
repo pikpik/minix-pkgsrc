@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.39 2010/12/19 12:32:42 dsainty Exp $
+# $NetBSD: Makefile,v 1.40 2010/12/23 11:44:36 dsainty Exp $
 #
 
 DISTNAME=	feh-1.3.4
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	http://linuxbrit.co.uk/downloads/
 

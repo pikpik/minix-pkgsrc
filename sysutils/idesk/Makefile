@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2010/06/13 22:45:23 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2010/07/06 10:17:16 jmmv Exp $
 #
 
 DISTNAME=	idesk-0.7.5
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=idesk/}
 EXTRACT_SUFX=	.tar.bz2

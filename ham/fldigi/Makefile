@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2010/10/03 12:13:23 obache Exp $
+# $NetBSD: Makefile,v 1.10 2010/12/23 11:44:47 dsainty Exp $
 #
 
 DISTNAME=	fldigi-3.03
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	ham
 MASTER_SITES=	http://www.w1hkj.com/fldigi-distro/
 

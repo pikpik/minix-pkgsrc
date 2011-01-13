@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2010/12/05 10:36:40 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2010/12/23 11:44:43 dsainty Exp $
 #
 
 DISTNAME=		OpenCV-2.2.0
 PKGNAME=		${DISTNAME:S/OpenCV/opencv/}
+PKGREVISION=		1
 CATEGORIES=		graphics devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=opencvlibrary/}
 EXTRACT_SUFX=		.tar.bz2
