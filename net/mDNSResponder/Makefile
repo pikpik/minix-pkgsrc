@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2010/12/20 14:17:01 tez Exp $
+# $NetBSD: Makefile,v 1.34 2011/01/12 08:53:52 adam Exp $
 
 DISTNAME=	mDNSResponder-258.14
 CATEGORIES=	net
@@ -13,6 +13,7 @@ USE_TOOLS+=		gmake flex bison
 BUILD_DIRS=		mDNSPosix
 BUILDDIR=		${WRKSRC}/mDNSPosix/build/prod
 AUTO_MKDIRS=		yes
+MAKE_JOBS_SAFE=		no
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
