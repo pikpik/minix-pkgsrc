@@ -1,15 +1,50 @@
-$NetBSD: patch-ac,v 1.2 2010/07/22 17:02:36 drochner Exp $
+$NetBSD$
 
---- Makefile.rules.orig	Thu Aug 26 11:48:11 2010
+--- Makefile.rules.orig	2010-08-26 08:27:26.000000000 +0000
 +++ Makefile.rules
-@@ -696,6 +696,10 @@ ifeq ($(HOST_OS),AuroraUX)
- CPP.BaseFlags += -include llvm/System/Solaris.h
- endif # !HOST_OS - AuroraUX.
+@@ -517,9 +517,9 @@ ifneq ($(HOST_OS), $(filter $(HOST_OS), 
+ ifneq ($(HOST_OS),Darwin)
+   LD.Flags += $(RPATH) -Wl,'$$ORIGIN'
+ else
+-ifneq ($(DARWIN_MAJVERS),4)
+-  LD.Flags += $(RPATH) -Wl,$(SharedLibDir)
+-endif
++#ifneq ($(DARWIN_MAJVERS),4)
++#  LD.Flags += $(RPATH) -Wl,$(SharedLibDir)
++#endif
+ endif
+ endif
+ endif
+@@ -553,9 +553,9 @@ ifneq ($(HOST_OS), Darwin)
+ ifdef TOOLNAME
+   LD.Flags += $(RPATH) -Wl,'$$ORIGIN/../lib'
+   ifdef EXAMPLE_TOOL
+-    LD.Flags += $(RPATH) -Wl,$(ExmplDir) $(RDYNAMIC)
++    LD.Flags += $(RDYNAMIC)
+   else
+-    LD.Flags += $(RPATH) -Wl,$(ToolDir) $(RDYNAMIC)
++    LD.Flags += $(RDYNAMIC)
+   endif
+ endif
+ else
+@@ -716,9 +716,6 @@ ObjectsBC := $(BaseNameSources:%=$(ObjDi
+ # in the file so they get built before dependencies
+ #---------------------------------------------------------
  
-+ifeq ($(HOST_OS),Minix)
-+CPP.BaseFlags += -D_POSIX_SOURCE
-+endif #
-+
- LD.Flags      += -L$(LibDir) -L$(LLVMLibDir)
- CPP.BaseFlags += -D_GNU_SOURCE -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS
- # All -I flags should go here, so that they don't confuse llvm-config.
+-$(DESTDIR)$(PROJ_bindir) $(DESTDIR)$(PROJ_libdir) $(DESTDIR)$(PROJ_includedir) $(DESTDIR)$(PROJ_etcdir)::
+-	$(Verb) $(MKDIR) $@
+-
+ # To create other directories, as needed, and timestamp their creation
+ %/.dir:
+ 	$(Verb) $(MKDIR) $* > /dev/null
+@@ -844,7 +841,9 @@ install-local::
+ uninstall-local::
+ 	$(Echo) UnInstall circumvented with NO_INSTALL
+ else
+-install-local:: $(DESTDIR)$(PROJ_etcdir) $(CONFIG_FILES)
++PROJ_etcdir=${PREFIX}/share/examples/llvm
++install-local:: $(CONFIG_FILES)
++	$(MKDIR) ${PROJ_etcdir}
+ 	$(Echo) Installing Configuration Files To $(DESTDIR)$(PROJ_etcdir)
+ 	$(Verb)for file in $(CONFIG_FILES); do \
+           if test -f $(PROJ_OBJ_DIR)/$${file} ; then \

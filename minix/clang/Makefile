@@ -1,10 +1,11 @@
-# $NetBSD$
-#
+# $NetBSD: Makefile,v 1.7 2010/10/25 12:47:09 adam Exp $
 
-DISTNAME=	llvm-2.6
-SVN_TAG=	109091
+DISTNAME=	clang-2.8
 CATEGORIES=	lang
 MASTER_SITES=	http://llvm.org/releases/${PKGVERSION_NOREV}/
+# XXX remove on next update
+DIST_SUBDIR=	${PKGNAME_NOREV}
+DISTFILES=	llvm-${PKGVERSION_NOREV}.tgz clang-${PKGVERSION_NOREV}.tgz
 
 MAINTAINER=	adam.hoka@gmail.com
 HOMEPAGE=	http://llvm.org/
@@ -12,65 +13,32 @@ COMMENT=	Low Level Virtual Machine compiler infrastructure
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake perl:build chown groff
-USE_LANGUAGES+=	c c++
-MAKE_DIRS+=	etc/llvm
-USE_LIBTOOL=	yes
+WRKSRC=			${WRKDIR}/llvm-${PKGVERSION_NOREV}
 
-CONFIGURE_ARGS=	--enable-bindings=none	# no OCaml, please!
+USE_LANGUAGES=		c c++
+USE_TOOLS+=		chown perl:build gmake
+GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--disable-bindings	# disable OCaml
+
+MAKE_DIRS+=		etc/llvm
 
 INSTALLATION_DIRS=	bin lib libexec
 
-.include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} == "Minix"
-CXXFLAGS+= -D_POSIX_SOURCE
-CONFIGURE_ARGS+= --disable-jit 
-CONFIGURE_ARGS+= --enable-targets=x86
-CONFIGURE_ARGS+= --disable-shared
-CONFIGURE_ARGS+= --disable-llvm-dynamic-plugins
-CONFIGURE_ARGS+= --disable-threads
-CONFIGURE_ARGS+= --disable-pic
-CONFIGURE_ARGS+= --disable-llvmc-dynamic 
-CONFIGURE_ARGS+= --disable-llvmc-dynamic-plugins
-CONFIGURE_ARGS+= --disable-libtool-lock
-CONFIGURE_ARGS+= --enable-optimized
-CONFIGURE_ARGS+= --disable-assertions
-CONFIGURE_ENV+= AR=ar AS=as LD=ld NM=nm
-.else
-# This should be changed!
-CONFIGURE_ARGS+= --enable-targets=host-only
-CONFIGURE_ARGS+= --disable-optimized
-.endif
+CHECK_PORTABILITY_SKIP=	utils/buildit/build_llvm
 
-#CONF_FILES=	share/examples/llvm/c etc/llvm/c
-#CONF_FILES+=	share/examples/llvm/c++ etc/llvm/c++
-#CONF_FILES+=	share/examples/llvm/cpp etc/llvm/cpp
-#CONF_FILES+=	share/examples/llvm/cxx etc/llvm/cxx
-#CONF_FILES+=	share/examples/llvm/ll etc/llvm/ll
-#CONF_FILES+=	share/examples/llvm/st etc/llvm/st
-
-#.include "../../lang/ocaml/buildlink3.mk"
 TEST_TARGET=	check unittests
 
+SUBST_CLASSES+=		perl
+SUBST_MESSAGE.perl=	Fixing llvm-configure PERL path
+SUBST_STAGE.perl=	post-patch
+SUBST_FILES.perl=	tools/llvm-config/llvm-config.in.in
+SUBST_SED.perl=		-e 's,@PERL@,${PERL5},'
+
 post-extract:
-	${MV} ${WRKDIR}/clang ${WRKDIR}/llvm/tools/clang
+	mv ${WRKDIR}/clang-${PKGVERSION_NOREV} ${WRKSRC}/tools/clang
 
-# Get it from Subversion repository:
-SVN_REPOSITORIES=	llvm clang
-SVN_ROOT.llvm=		http://llvm.org/svn/llvm-project/llvm/trunk
-SVN_MODULE.llvm=	llvm
-SVN_ROOT.clang=		http://llvm.org/svn/llvm-project/cfe/trunk
-SVN_MODULE.clang=	clang
+# XXX Darwin only?
+pre-install:
+	find ${WRKSRC}/tools/clang/include/clang -name '*.inc.tmp' -exec rm {} \;
 
-PKGNAME=		clang-2.7.99
-WRKSRC=			$(WRKDIR)/$(SVN_MODULE.llvm)
-
-CHECK_PORTABILITY_SKIP= utils/buildit/.svn/text-base/build_llvm.svn-base \
-			utils/buildit/build_llvm
-
-
-.include "../../wip/mk/svn-package.mk"
-
-.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
