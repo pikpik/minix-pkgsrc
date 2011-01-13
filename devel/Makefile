@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1418 2011/01/11 20:45:54 drochner Exp $
+# $NetBSD: Makefile,v 1.1419 2011/01/12 13:52:09 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -48,6 +48,7 @@ SUBDIR+=	astyle
 SUBDIR+=	at-spi
 SUBDIR+=	atf
 SUBDIR+=	atk
+SUBDIR+=	atkmm
 SUBDIR+=	autoconf
 SUBDIR+=	autoconf213
 SUBDIR+=	autogen
