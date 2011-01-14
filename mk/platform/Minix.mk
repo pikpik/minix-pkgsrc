@@ -26,6 +26,7 @@ ROOT_GROUP?=	operator
 ROOT_USER?=		root
 SERIAL_DEVICES?=	/dev/null
 USERADD?=		/usr/bin/useradd
+ULIMIT_CMD_datasize?=	: 
 
 # imake installs manpages in weird places
 # these values from /usr/X11R6/lib/X11/config/linux.cf
