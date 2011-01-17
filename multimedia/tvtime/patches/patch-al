@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- src/pngoutput.c.orig	2003-09-26 18:07:41.000000000 +0000
++++ src/pngoutput.c
+@@ -19,6 +19,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <png.h>
++#include <zlib.h>
+ #include "pngoutput.h"
+ 
+ struct pngoutput_s
