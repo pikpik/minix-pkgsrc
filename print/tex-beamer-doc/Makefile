@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 17093
+# $NetBSD: Makefile,v 1.1.1.1 2010/04/10 21:09:17 markd Exp $
 
 DISTNAME=	beamer.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-3.07
+PKGNAME=	tex-${DISTNAME:S/./-/}-3.10
+TEXLIVE_REV=	19443
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Documentation for tex-beamer
