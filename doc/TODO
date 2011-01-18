@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10018 2011/01/16 13:57:53 wiz Exp $
+$NetBSD: TODO,v 1.10020 2011/01/18 01:43:12 obache Exp $
 
 Suggested new packages
 ======================
@@ -471,7 +471,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o classpath-0.98
 	o climm-0.7.1
 	o clustalw-2.0.12 [pkg/43395]
-	o cmus-2.3.3
 	o colorize-0.3.4
 	o compositeproto-0.4.2
 	o connect-1.96
@@ -1344,6 +1343,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o vnc-4.0 [http://www.realvnc.com/download.html|pkgsrc-wip]
 	o vp-1.6
 	o vttest-20100830
+	o w3m-0.5.3
 	o wMosaic-3.8.22
 	o wap-utils-1.4.1
 	o warzone2100-2.3.6
