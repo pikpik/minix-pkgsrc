@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.777 2011/01/12 08:16:48 adam Exp $
+# $NetBSD: Makefile,v 1.778 2011/01/13 04:23:54 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -166,6 +166,7 @@ SUBDIR+=	lhs
 SUBDIR+=	libghttp
 SUBDIR+=	libgtkhtml
 SUBDIR+=	libproxy
+SUBDIR+=	librest
 SUBDIR+=	libwww
 SUBDIR+=	liferea
 SUBDIR+=	liferea-current

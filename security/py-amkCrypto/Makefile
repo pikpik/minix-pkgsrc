@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/03/05 18:51:31 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2010/01/17 12:02:43 wiz Exp $
 #
 
 DISTNAME=	pycrypto-2.0.1
@@ -10,6 +10,8 @@ MASTER_SITES=	http://www.amk.ca/files/python/crypto/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.amk.ca/python/code/crypto.html
 COMMENT=	Cryptographic and hash functions for Python
+
+CONFLICTS+=	${PYPKGPREFIX}-crypto-[0-9]*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
