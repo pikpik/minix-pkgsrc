@@ -1,3 +1,4 @@
 @comment $NetBSD$
 share/texmf-dist/doc/latex/advdate/advdate.pdf
 share/texmf-dist/doc/latex/advdate/advdate.tex
+share/texmf-dist/doc/latex/advdate/manifest.txt
