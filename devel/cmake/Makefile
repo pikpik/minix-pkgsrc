@@ -58,6 +58,10 @@ pre-configure:
 
 BUILDLINK_API_DEPENDS.libarchive+=	libarchive>=2.8.4
 .include "../../archivers/libarchive/buildlink3.mk"
+
+post-extract:
+	cp ${FILESDIR}/Minix.cmake ${WRKSRC}/Modules/Platform/
+
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
@@ -65,3 +69,9 @@ BUILDLINK_API_DEPENDS.libarchive+=	libarchive>=2.8.4
 .include "../../www/curl/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
+
+.if ${OPSYS} == "Minix"
+CFLAGS+=                -D_POSIX_SOURCE=1 -D_MINIX=1
+CXXFLAGS+=              -D_POSIX_SOURCE=1 -D_MINIX=1
+.endif
+

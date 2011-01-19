@@ -1,0 +1,47 @@
+$NetBSD$
+
+--- Source/kwsys/DynamicLoader.cxx.orig	Wed Nov  3 19:58:30 2010
++++ Source/kwsys/DynamicLoader.cxx
+@@ -428,6 +428,42 @@ const char* DynamicLoader::LastError()
+ } // namespace KWSYS_NAMESPACE
+ #endif
+ 
++#ifdef __minix
++#define DYNAMICLOADER_DEFINED 1
++// Setup for most unix machines
++
++namespace KWSYS_NAMESPACE
++{
++
++//----------------------------------------------------------------------------
++DynamicLoader::LibraryHandle DynamicLoader::OpenLibrary(const char* libname )
++{
++  return 0;
++}
++
++//----------------------------------------------------------------------------
++int DynamicLoader::CloseLibrary(DynamicLoader::LibraryHandle lib)
++{
++  return -1;
++}
++
++//----------------------------------------------------------------------------
++DynamicLoader::SymbolPointer DynamicLoader::GetSymbolAddress(
++  DynamicLoader::LibraryHandle lib, const char* sym)
++{
++  return 0;
++}
++
++//----------------------------------------------------------------------------
++const char* DynamicLoader::LastError()
++{
++  return 0;
++}
++
++} // namespace KWSYS_NAMESPACE
++
++#endif
++
+ // ---------------------------------------------------------------
+ // 6. Implementation for default UNIX machines.
+ // if nothing has been defined then use this
