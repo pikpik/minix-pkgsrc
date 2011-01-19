@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2011/01/19 04:16:16 jmcneill Exp $
+# $NetBSD: Makefile,v 1.171 2011/01/19 04:19:42 jmcneill Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -85,6 +85,7 @@ SUBDIR+=	libtheora
 SUBDIR+=	libtheora-docs
 SUBDIR+=	libva
 SUBDIR+=	libvdpau
+SUBDIR+=	libvpx
 SUBDIR+=	lsdvd
 SUBDIR+=	mediainfo
 SUBDIR+=	mediatomb
