@@ -1,4 +1,5 @@
-$NetBSD: patch-aa,v 1.1 2010/11/23 13:53:54 haad Exp $
+$NetBSD: patch-aa,v 1.2 2010/11/23 13:56:31 wiz Exp $
+
 Fix problem with gettext definition of LC_* variables. See 
 code below as example of warning. 
 
