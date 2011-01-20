@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/04/10 21:14:46 markd Exp $
-# TeX Live Revision 17670
+# $NetBSD: Makefile,v 1.2 2010/04/15 20:44:34 minskim Exp $
 
 DISTNAME=	pgfplots.doc
-PKGNAME=	tex-${DISTNAME:S/./-/}-1.3.1
+PKGNAME=	tex-${DISTNAME:S/./-/}-1.4.1
+TEXLIVE_REV=	19839
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-pgfplots
