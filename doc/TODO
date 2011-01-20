@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10024 2011/01/19 12:19:11 wiz Exp $
+$NetBSD: TODO,v 1.10026 2011/01/20 02:29:08 obache Exp $
 
 Suggested new packages
 ======================
@@ -708,7 +708,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o gnopernicus-1.1.2
 	o gnu-crypto-2.1.0
 	o gnumeric110-1.10.12
-	o gnupg2-2.0.17
 	o gnuplot-4.4.0 [pkg/43771]
 	o gobject-introspection-0.10.1
 	o gogo-3.11p1
@@ -961,7 +960,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o mgetty+sendfax-1.1.35
 	o midori-0.2.9
 	o milkytracker-0.90.85
-	o milter-manager-1.6.2
+	o milter-manager-1.6.4
 	o mined-2000.16
 	o minicom-2.4
 	o minivmac-3.0.4
