@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/metalogo/README
+share/texmf-dist/doc/latex/metalogo/TeXoutline.pdf
+share/texmf-dist/doc/latex/metalogo/eLaToutline.pdf
+share/texmf-dist/doc/latex/metalogo/metalogo.pdf
