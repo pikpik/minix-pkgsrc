@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:15 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2009/08/20 17:59:10 joerg Exp $
 #
 
-DISTNAME=		libXp-1.0.0
+DISTNAME=		libXp-1.0.1
 CATEGORIES=		x11 print
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
