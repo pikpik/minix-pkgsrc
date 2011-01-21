@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/06/08 08:45:38 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2010/06/19 13:32:06 wiz Exp $
 #
 
-DISTNAME=	powder114_src
+DISTNAME=	powder115_src
 PKGNAME=	${DISTNAME:S/_src//:S/powder/powder-/}
 CATEGORIES=	games
 MASTER_SITES=	http://www.zincland.com/powder/release/
