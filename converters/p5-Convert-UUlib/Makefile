@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.25 2009/11/28 10:00:53 seb Exp $
+# $NetBSD: Makefile,v 1.26 2010/08/21 16:32:48 seb Exp $
 
-DISTNAME=		Convert-UUlib-1.33
+DISTNAME=		Convert-UUlib-1.34
 PKGNAME=		p5-${DISTNAME}
 PKGREVISION=		1
 SVR4_PKGNAME=		p5uul
