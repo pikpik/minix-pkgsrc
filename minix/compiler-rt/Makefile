@@ -1,0 +1,55 @@
+# Original by Brooks Davis taken from FreeBSD and modified by beng@
+
+DISTNAME=	compiler-rt-r123836
+PKGREVISION=	1
+CATEGORIES=	minix
+MASTER_SITES=	http://www.minix3.org/distfiles/
+
+MAINTAINER=	ben@minix3.org
+COMMENT=	libgcc replacement
+
+BUILD_DEPENDS+=	cmake:../../devel/cmake
+
+#WRKSRC=                 ${WRKDIR}/$(SVN_REPOSITORIES)
+
+INSTALL_DIRS= ${WRKDIR}/build
+CONFIGURE_DIRS=	${WRKDIR}/build
+CMAKE_ARG_PATH=../${DISTNAME}
+BUILD_DIRS=		${WRKDIR}/build
+INSTALL_DIRS=		${WRKDIR}/build
+
+CMAKE_SOURCE_PATH=	${WRKSRC}
+
+USE_CMAKE=	yes
+USE_GCC=	4.2+
+USE_GMAKE=	yes
+USE_BZIP2=	yes
+USE_LDCONFIG=	yes
+MAKE_ARGS=	VERBOSE=1
+MAKE_JOBS_SAFE=	yes
+
+PLIST_FILES=	include/Block.h \
+		include/Block_private.h \
+		lib/libBlocksRuntime.so
+
+.if ${MACHINE_ARCH} == "i386"
+CFLAGS+=	-march=i486
+.elif ${MACHINE_ARCH} == "powerpc"
+BROKEN=		Does not compile on powerpc
+.endif
+
+SUBST_CLASSES=fixtest
+SUBST_STAGE.fixtest=post-patch
+SUBST_MESSAGE.fixtest=Removing broken tests
+SUBST_FILES.fixtest=test/CMakeLists.txt
+SUBST_SED.fixtest+=	-e 's/\(MACRO_ADD_CHECK_TEST( powixf2_test\)/\# \1/'
+SUBST_SED.fixtest+=	-e 's/\(MACRO_ADD_CHECK_TEST( clear_cache_test\)/\# \1/'
+
+post-extract:
+	${MV} ${WRKDIR}/compiler-rt  ${WRKDIR}/${DISTNAME}
+	${MKDIR} ${WRKDIR}/build
+
+regression-test:
+	cd ${BUILD_DIRS} && make test
+
+.include "../../mk/bsd.pkg.mk"

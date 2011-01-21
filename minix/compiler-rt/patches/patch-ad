@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- test/Unit/clear_cache_test.c.orig	Wed Jan 19 19:07:01 2011
++++ test/Unit/clear_cache_test.c
+@@ -38,7 +38,9 @@ int main()
+     // make executable the page containing execution_buffer 
+     char* start = (char*)((uintptr_t)execution_buffer & (-4095));
+     char* end = (char*)((uintptr_t)(&execution_buffer[128+4096]) & (-4095));
++#ifndef __minix
+     if ( mprotect(start, end-start, PROT_READ|PROT_WRITE|PROT_EXEC) != 0 )
++#endif
+         return 1;
+ 
+     // verify you can copy and execute a function
