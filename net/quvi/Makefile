@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/12/13 12:43:17 ryoon Exp $
 #
 
-DISTNAME=	quvi-0.2.10
+DISTNAME=	quvi-0.2.12
 CATEGORIES=	net multimedia www
 MASTER_SITES=	http://quvi.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2
