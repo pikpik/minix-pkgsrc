@@ -7,16 +7,6 @@ share/texmf-dist/tex/latex/ltxmisc/flashcard.cls
 share/texmf-dist/tex/latex/ltxmisc/iagproc.cls
 share/texmf-dist/tex/latex/ltxmisc/linsys.sty
 share/texmf-dist/tex/latex/ltxmisc/mitpress.sty
-share/texmf-dist/tex/latex/ltxmisc/parskip.sty
-share/texmf-dist/tex/latex/ltxmisc/romanneg.sty
-share/texmf-dist/tex/latex/ltxmisc/secdot.sty
-share/texmf-dist/tex/latex/ltxmisc/section.sty
-share/texmf-dist/tex/latex/ltxmisc/sepnum.sty
-share/texmf-dist/tex/latex/ltxmisc/shadow.sty
-share/texmf-dist/tex/latex/ltxmisc/showtags.sty
-share/texmf-dist/tex/latex/ltxmisc/sphack.sty
-share/texmf-dist/tex/latex/ltxmisc/statex.sty
-share/texmf-dist/tex/latex/ltxmisc/subfigmat.sty
 share/texmf-dist/tex/latex/ltxmisc/thrmappendix.sty
 share/texmf-dist/tex/latex/ltxmisc/topcapt.sty
 share/texmf-dist/tex/latex/ltxmisc/verbasef.sty
