@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.440 2010/11/30 19:08:18 drochner Exp $
+# $NetBSD: Makefile,v 1.441 2010/11/30 19:25:56 drochner Exp $
 #
 
 COMMENT=	Audio tools
@@ -128,7 +128,6 @@ SUBDIR+=	gnome-audio
 SUBDIR+=	gnome-speech
 SUBDIR+=	gnome-speech-espeak
 SUBDIR+=	gnome-vfs-cdda
-SUBDIR+=	gogo
 SUBDIR+=	goom
 SUBDIR+=	gqmpeg
 SUBDIR+=	gqmpeg-devel
