@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2011/01/13 14:03:21 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2011/01/23 14:31:56 wiz Exp $
 
 DISTNAME=	mc-4.6.1
 PKGREVISION=	7
@@ -8,7 +8,7 @@ MASTER_SITES=	http://www.ibiblio.org/pub/Linux/utils/file/managers/mc/ \
 
 MAINTAINER=	pavel.arnost@clnet.cz
 HOMEPAGE=	http://www.ibiblio.org/mc/
-COMMENT=	User-friendly file manager and visual shell
+COMMENT=	User-friendly file manager and visual shell (old 4.6 branch)
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
