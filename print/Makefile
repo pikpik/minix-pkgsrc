@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.456 2011/01/22 22:07:23 minskim Exp $
+# $NetBSD: Makefile,v 1.457 2011/01/22 22:25:01 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -484,6 +484,8 @@ SUBDIR+=	tex-prosper
 SUBDIR+=	tex-pslatex
 SUBDIR+=	tex-pspicture
 SUBDIR+=	tex-pspicture-doc
+SUBDIR+=	tex-ptex
+SUBDIR+=	tex-ptex-doc
 SUBDIR+=	tex-rcsinfo
 SUBDIR+=	tex-rcsinfo-doc
 SUBDIR+=	tex-realscripts
