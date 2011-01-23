@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.504 2010/12/19 20:30:04 plunky Exp $
+# $NetBSD: Makefile,v 1.505 2010/12/27 16:29:59 jmcneill Exp $
 #
 
 COMMENT=	System utilities
@@ -184,6 +184,7 @@ SUBDIR+=	lsof
 SUBDIR+=	magicrescue
 SUBDIR+=	mbmon
 SUBDIR+=	mc
+SUBDIR+=	mc46
 SUBDIR+=	mdf2iso
 SUBDIR+=	memconf
 SUBDIR+=	memtest86
