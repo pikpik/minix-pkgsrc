@@ -1,4 +1,4 @@
-# $NetBSD: gem.mk,v 1.1 2010/09/10 03:12:02 taca Exp $
+# $NetBSD: gem.mk,v 1.2 2010/11/10 10:57:41 obache Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # and install Ruby gems.
@@ -86,7 +86,7 @@ _RUBYGEM_UNPACK_OPTION=	${RUBYGEM_INSTALL_ROOT_OPTION}
 .endif
 
 CATEGORIES+=	ruby
-MASTER_SITES?=	http://rubygems.org/downloads/ http://gems.rubyforge.org/gems/
+MASTER_SITES?=	http://rubygems.org/gems/ http://gems.rubyforge.org/gems/
 
 EXTRACT_SUFX?=	.gem
 DISTFILES?=	${DISTNAME}${EXTRACT_SUFX}

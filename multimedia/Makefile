@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.168 2010/10/19 16:38:44 abs Exp $
+# $NetBSD: Makefile,v 1.172 2011/01/19 21:30:32 ryoon Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -51,12 +51,14 @@ SUBDIR+=	gst-plugins0.10-resindvd
 SUBDIR+=	gst-plugins0.10-theora
 SUBDIR+=	gst-plugins0.10-ugly
 SUBDIR+=	gst-plugins0.10-v4l2
+SUBDIR+=	gst-plugins0.10-vp8
 SUBDIR+=	gst-plugins0.10-x264
 SUBDIR+=	gst-plugins0.10-xvid
 SUBDIR+=	gstreamer0.10
 SUBDIR+=	gtranscode
 SUBDIR+=	gxine
 SUBDIR+=	handbrake
+SUBDIR+=	hwdecode-demos
 SUBDIR+=	kaffeine
 SUBDIR+=	kdemultimedia3
 SUBDIR+=	kdemultimedia4
@@ -82,7 +84,9 @@ SUBDIR+=	libnms
 SUBDIR+=	libogg
 SUBDIR+=	libtheora
 SUBDIR+=	libtheora-docs
+SUBDIR+=	libva
 SUBDIR+=	libvdpau
+SUBDIR+=	libvpx
 SUBDIR+=	lsdvd
 SUBDIR+=	mediainfo
 SUBDIR+=	mediatomb

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.98 2010/11/13 21:09:00 shattered Exp $
+# $NetBSD: Makefile,v 1.100 2010/12/23 11:44:52 dsainty Exp $
 #
 
 DISTNAME=		vlc-${VLC_VERSION}
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		multimedia
 MASTER_SITES=		http://download.videolan.org/pub/videolan/vlc/${VLC_VERSION}/
 EXTRACT_SUFX=		.tar.bz2
@@ -133,7 +133,7 @@ CHECK_WRKREF_SKIP=	lib/libvlccore.a \
 .include "../../audio/libcddb/buildlink3.mk"
 .include "../../misc/libcdio/buildlink3.mk"
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../net/liblive/buildlink3.mk"
 .include "../../converters/fribidi/buildlink3.mk"
 .include "../../devel/libebml/buildlink3.mk"

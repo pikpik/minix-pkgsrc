@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/11/16 19:47:07 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2010/11/17 14:35:32 drochner Exp $
 #
 
 DISTNAME=	dconf-0.5.1
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --disable-editor
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	pkg-config gmake
 
 PKGCONFIG_OVERRIDE+=	client/dconf.pc.in
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.165 2010/09/09 20:35:43 sno Exp $
+# $NetBSD: Makefile,v 1.168 2010/12/29 22:25:17 wiz Exp $
 
 .include "license.mk"
 .include "Makefile.common"
@@ -12,16 +12,16 @@ CONFLICTS=	perl-base-[0-9]* perl-thread-[0-9]*			\
 		p5-CGI-2.66{,nb*} p5-CGI-2.75{,nb*} p5-CGI-2.75.[0-2]	\
 		p5-Tie-File-0.96{,nb*}					\
 		p5-Memoize-1.01{,nb*}					\
-		p5-I18N-LangTags<0.35{,nb*}				\
+		p5-I18N-LangTags<0.35					\
 		p5-Locale-Maketext-1.[0-9]*{,nb*}			\
-		p5-Locale-Maketext-Simple<0.21{,nb*}			\
-		p5-Digest<=1.16{,nb*}					\
-		p5-Digest-MD5<=2.39{,nb*}				\
+		p5-Locale-Maketext-Simple<0.21				\
+		p5-Digest<=1.16						\
+		p5-Digest-MD5<=2.39					\
 		p5-Digest-SHA<2.48
 
 SUPERSEDES+=	p5-Tie-File<0.97
 SUPERSEDES+=	p5-Memoize<1.02
-SUPERSEDES+=	p5-I18N-LangTags<=0.35{,nb*}
+SUPERSEDES+=	p5-I18N-LangTags<=0.35
 SUPERSEDES+=	p5-Locale-Maketext<=1.15
 
 .include "../../mk/bsd.prefs.mk"
@@ -48,6 +48,8 @@ PERL5_API_VERS_cmd=	\
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	-sde
+CONFIGURE_ARGS+=	-D ccflags=${CFLAGS:Q}
+CONFIGURE_ARGS+=	-D ldflags=${LDFLAGS:Q}
 MAKE_ENV+=		LC_ALL="C"
 
 .if ${OPSYS} == "Minix"
@@ -125,6 +127,7 @@ LIBSWANTED.HPUX=	cl pthread $$libswanted # see Perl's README.hpux
 LIBSWANTED.IRIX=	m crypt
 LIBSWANTED.Interix=	m dl
 LIBSWANTED.Linux=	m crypt dl nsl
+LIBSWANTED.MirBSD=	m crypt
 LIBSWANTED.NetBSD=	m crypt
 LIBSWANTED.OpenBSD=	m crypt
 LIBSWANTED.SunOS=	m crypt dl socket nsl
@@ -140,6 +143,7 @@ SYSLIBPATH.Darwin=	/usr/lib
 SYSLIBPATH.DragonFly=	/usr/lib
 SYSLIBPATH.FreeBSD=	/usr/lib
 SYSLIBPATH.Interix=	/usr/lib
+SYSLIBPATH.MirBSD=	/usr/lib
 SYSLIBPATH.NetBSD=	/usr/lib
 SYSLIBPATH.OpenBSD=	/usr/lib
 SYSLIBPATH.SunOS=	/usr/lib

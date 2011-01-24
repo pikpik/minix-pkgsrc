@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2010/06/13 22:44:41 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2010/12/23 11:44:43 dsainty Exp $
 
 MODNAME=		gd
+PKGREVISION=		1
 CATEGORIES+=		graphics
 COMMENT=		PHP extension for GD graphics library
 
@@ -24,7 +25,7 @@ USE_PHP_EXT_PATCHES=	yes
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../lang/php/ext.mk"
 .include "../../mk/bsd.pkg.mk"

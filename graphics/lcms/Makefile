@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2010/01/18 09:59:04 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2010/06/16 15:17:58 drochner Exp $
 
 DISTNAME=	lcms-1.19
 CATEGORIES=	graphics
@@ -30,6 +30,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/${_f_} ${DESTDIR}${PREFIX}/share/doc/lcms/${_f_}
 .endfor
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

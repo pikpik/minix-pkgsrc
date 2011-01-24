@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gdft.c.orig	2004-11-02 15:00:48.000000000 -0600
+--- gdft.c.orig	2007-04-19 12:54:56.000000000 +0000
 +++ gdft.c
 @@ -25,6 +25,261 @@
  #define R_OK 04			/* Needed in Windows */
@@ -264,3 +264,12 @@ $NetBSD$
  /* number of antialised colors for indexed bitmaps */
  #define NUMCOLORS 8
  
+@@ -1659,7 +1914,7 @@ static char * font_path(char **fontpath,
+ BGD_DECLARE(int) gdFTUseFontConfig(int flag)
+ {
+ #ifdef HAVE_LIBFONTCONFIG
+-	fontConfigFlag = 1;
++	fontConfigFlag = flag;
+ 	return 1;
+ #else
+ 	return 0;

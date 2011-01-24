@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2010/02/07 21:04:13 heinz Exp $
+# $NetBSD: Makefile,v 1.33 2011/01/11 20:20:53 drochner Exp $
 
-DISTNAME=	lbreakout2-2.5.2
-PKGREVISION=	8
+DISTNAME=	lbreakout2-2.6.2
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lgames/}
 
@@ -31,6 +31,8 @@ SUBST_SED.sunpro=	-e 's,^inline ,,'
 CONF_FILES_PERMS+=	/dev/null ${VARBASE}/games/lbreakout2.hscr \
 			${REAL_ROOT_USER} games 664
 
+.include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

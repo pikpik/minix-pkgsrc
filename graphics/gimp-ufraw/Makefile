@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.60 2010/09/14 11:01:59 wiz Exp $
+# $NetBSD: Makefile,v 1.62 2010/12/23 11:44:38 dsainty Exp $
 
 DISTNAME=		ufraw-0.17
 PKGNAME=		gimp-${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ufraw/}
 
@@ -43,7 +43,7 @@ PKG_SUGGESTED_OPTIONS=	lensfun
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../graphics/gimp/buildlink3.mk"
 .include "../../graphics/gtkimageview/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"

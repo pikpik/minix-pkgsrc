@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2010/01/18 09:58:43 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2010/09/30 10:49:16 obache Exp $
 #
 
 DISTNAME=	xsqlmenu-2.10
@@ -28,7 +28,7 @@ do-install:
 		${DESTDIR}${PREFIX}/share/doc/xsqlmenu
 
 .include "../../mk/mysql.buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/xforms/buildlink3.mk"
 

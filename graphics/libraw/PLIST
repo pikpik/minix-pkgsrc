@@ -1,12 +1,4 @@
 @comment $NetBSD$
-bin/4channels
-bin/dcraw_emu
-bin/dcraw_half
-bin/half_mt
-bin/mem_image
-bin/raw-identify
-bin/simple_dcraw
-bin/unprocessed_raw
 include/libraw/libraw.h
 include/libraw/libraw_alloc.h
 include/libraw/libraw_const.h

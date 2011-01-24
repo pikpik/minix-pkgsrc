@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.574 2010/11/24 18:20:29 drochner Exp $
+# $NetBSD: Makefile,v 1.578 2011/01/18 11:59:44 drochner Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -129,6 +129,7 @@ SUBDIR+=	get_ds7
 SUBDIR+=	gfract
 SUBDIR+=	gif2png
 SUBDIR+=	gif320
+SUBDIR+=	giflib
 SUBDIR+=	gifsicle
 SUBDIR+=	giftrans
 SUBDIR+=	gimageview
@@ -262,6 +263,7 @@ SUBDIR+=	mgl
 SUBDIR+=	mng
 SUBDIR+=	mpeg2codec
 SUBDIR+=	mpgtx
+SUBDIR+=	mypaint
 SUBDIR+=	ncview
 SUBDIR+=	netpbm
 SUBDIR+=	ns-cult3d
@@ -351,6 +353,8 @@ SUBDIR+=	py-matplotlib-gtk2
 SUBDIR+=	py-matplotlib-tk
 SUBDIR+=	py-piddle
 SUBDIR+=	py-pyfits
+SUBDIR+=	py-sk1libs
+SUBDIR+=	py-uniconvertor
 SUBDIR+=	qcamview
 SUBDIR+=	qimageblitz
 SUBDIR+=	qiv
@@ -408,6 +412,8 @@ SUBDIR+=	tex-eepic
 SUBDIR+=	tex-eepic-doc
 SUBDIR+=	tex-metapost
 SUBDIR+=	tex-metapost-doc
+SUBDIR+=	tex-mptopdf
+SUBDIR+=	tex-mptopdf-doc
 SUBDIR+=	tgif
 SUBDIR+=	tiff
 SUBDIR+=	tkpiechart

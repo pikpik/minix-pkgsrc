@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/11/02 15:17:29 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2010/12/23 11:44:37 dsainty Exp $
 #
 
 DISTNAME=	gdk-pixbuf-2.22.1
 PKGNAME=	gdk-pixbuf2-2.22.1
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdk-pixbuf/2.22/}
 EXTRACT_SUFX=	.tar.bz2
@@ -35,6 +36,6 @@ post-install:
 BUILDLINK_API_DEPENDS.glib2+= glib2>=2.26.0
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

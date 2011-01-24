@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2010/09/14 11:02:49 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2011/01/01 09:08:06 obache Exp $
 
 DISTNAME=	screentest-2.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	sysutils x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=screentest/}
 
@@ -10,7 +10,8 @@ HOMEPAGE=	http://screentest.sourceforge.net/
 COMMENT=	CRT/LCD screen testing utility using GTK+
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	pkg-config msgfmt
+USE_PKGLOCALEDIR=	yes
 
 INSTALLATION_DIRS+=	share/doc/screentest
 
@@ -21,6 +22,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/${f} ${DESTDIR}${PREFIX}/share/doc/screentest
 .endfor
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/04/29 06:19:37 minskim Exp $
-# TeX Live Revision 17012
+# $NetBSD: Makefile,v 1.2 2010/05/04 23:51:22 minskim Exp $
 
 DISTNAME=	xmltex.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-0.8
 PKGREVISION=	1
+TEXLIVE_REV=	18835
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-xmltex

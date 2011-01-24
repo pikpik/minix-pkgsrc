@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2009/11/02 09:09:25 tnn Exp $
+# $NetBSD: Makefile,v 1.90 2010/01/24 17:11:18 heinz Exp $
 
 DISTNAME=	SDL-1.2.14
 PKGREVISION=	1
@@ -26,7 +26,7 @@ CPPFLAGS+=		-DX11BASE="\"${X11BASE}\""
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${MACHINE_ARCH} == "i386" && ${OPSYS} != "SunOS"
+.if (${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64") && ${OPSYS} != "SunOS"
 BUILD_DEPENDS+=		yasm>=0.6.0:../../devel/yasm
 NASMFLAGS_ELF=		-f elf
 NASMFLAGS_a.out=	-f aoutb

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2010/01/18 09:59:41 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2011/01/13 13:40:01 wiz Exp $
 #
 
 DISTNAME=	mrxvt-0.5.4
-PKGREVISION=	3
+PKGREVISION=	5
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=materm/}
 PATCH_SITES=	${MASTER_SITES}
@@ -50,7 +50,7 @@ SPECIAL_PERMS=		${PREFIX}/bin/mrxvt ${SETUID_ROOT_PERMS}
 
 BUILDLINK_DEPMETHOD.libXt+=	build
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"

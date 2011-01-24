@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.44 2010/01/18 09:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2010/12/23 11:44:44 dsainty Exp $
 
 DISTNAME=	povray-3.6.1
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.povray.org/ftp/pub/povray/Official/Unix/ \
 		ftp://ftp.povray.org/pub/povray/Official/Unix/
@@ -40,7 +40,7 @@ INSTALLATION_DIRS=	share/povray-3.6/scripts
 BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"

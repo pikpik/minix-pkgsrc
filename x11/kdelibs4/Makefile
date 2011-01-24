@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/09/14 11:01:15 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2011/01/13 13:36:53 wiz Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 CATEGORIES=	x11
@@ -77,7 +77,7 @@ BUILDLINK_API_DEPENDS.shared-desktop-ontologies+=	shared-desktop-ontologies>=0.4
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../graphics/openexr/buildlink3.mk"
 .include "../../misc/attica/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.404 2010/11/04 05:37:58 jnemeth Exp $
+# $NetBSD: Makefile,v 1.406 2010/12/23 16:58:59 taca Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -9,6 +9,8 @@ SUBDIR+=	Pantomime
 SUBDIR+=	YoSucker
 SUBDIR+=	akonadi
 SUBDIR+=	alpine
+SUBDIR+=	amavis-perl
+SUBDIR+=	amavisd-new
 SUBDIR+=	anomy-sanitizer
 SUBDIR+=	archivemail
 SUBDIR+=	autorespond
@@ -18,7 +20,6 @@ SUBDIR+=	bbmail
 SUBDIR+=	bmf
 SUBDIR+=	bogofilter
 SUBDIR+=	bulk_mailer
-SUBDIR+=	clamav
 SUBDIR+=	clamsmtp
 SUBDIR+=	claws-mail
 SUBDIR+=	claws-mail-archive
@@ -93,6 +94,8 @@ SUBDIR+=	fetchmail
 SUBDIR+=	fetchmailconf
 SUBDIR+=	fetchyahoo
 SUBDIR+=	fix-mime-charset
+SUBDIR+=	fml
+SUBDIR+=	fml4
 SUBDIR+=	freepops
 SUBDIR+=	fromto
 SUBDIR+=	getmail

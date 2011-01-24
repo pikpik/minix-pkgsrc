@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/01/18 09:59:18 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2010/02/11 20:08:00 joerg Exp $
 #
 
 DISTNAME=		${PKGNAME_NOREV}-src
@@ -40,5 +40,5 @@ pre-configure:
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

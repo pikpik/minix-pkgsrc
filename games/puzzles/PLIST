@@ -19,8 +19,10 @@ bin/netgame
 bin/netslide
 bin/pattern
 bin/pegs
+bin/range
 bin/rect
 bin/samegame
+bin/signpost
 bin/singles
 bin/sixteen
 bin/slant

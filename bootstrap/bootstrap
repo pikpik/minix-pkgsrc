@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.160 2010/11/13 21:43:39 joerg Exp $
+# $NetBSD: bootstrap,v 1.162 2010/12/26 11:24:21 adam Exp $
 #
 #
 # Copyright (c) 2001-2002 Alistair G. Crooks.  All rights reserved.
@@ -480,7 +480,7 @@ Darwin)
 	set_opsys=no
 	[ -z "$fetch_cmd" ] && fetch_cmd="/usr/bin/ftp"
 	machine_arch=`uname -p`
-	CC="gcc -isystem /usr/include"; export CC
+	CC=${CC:-"gcc -isystem /usr/include"}; export CC
 	osrev=`uname -r`
 	macosx_version=`echo $osrev | awk -F . '{ print "10."$1-4; }'`
 	case "$macosx_version" in
@@ -632,6 +632,34 @@ Minix)
 	machine_arch=`uname -p`
 	check_compiler=yes
 	export CC="gcc"
+MirBSD)
+	root_group=wheel
+	need_pax=yes
+	need_mtree=no
+	need_bsd_install=no
+	need_awk=no
+	need_sed=no
+	set_opsys=no
+	check_prog mtreeprog mtree
+	machine_arch=`arch -s`
+	[ -z "$fetch_cmd" ] && fetch_cmd=/usr/bin/ftp
+	# there is no /usr/bin/cc, so use mgcc if unset
+	test -n "$CC" || { CC=mgcc; export CC; }
+	# get some variables from the native make if unset
+	for var in CFLAGS CPPFLAGS LDFLAGS; do
+		# check if variable is already set
+		eval _tmp=\"\$$var\"
+		[ "x$_tmp" != x ] && continue
+		# ask the native make (EXPERIMENTAL = don't add -Werror)
+		# the -I${.CURDIR} dance is to prevent junk in CPPFLAGS
+		_tmp=`printf '%s\nall:\n\t@%s %%s %s=${%s:M*:Q:Q}\n%s\n%s\n' \
+		    $var'+=-I${.CURDIR}' printf $var $var':S/-I${.CURDIR}//' \
+		    EXPERIMENTAL=yes '.include <bsd.prog.mk>' | \
+		    (unset MAKECONF; /usr/bin/make -f - all 2>/dev/null) | \
+		    sed 's/^x//'`
+		eval $_tmp
+		eval export $var
+	done
 	;;
 NetBSD)
 	root_group=wheel

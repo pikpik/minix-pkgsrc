@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2010/11/15 22:57:43 abs Exp $
+# $NetBSD: Makefile,v 1.11 2010/11/29 17:58:34 drochner Exp $
 #
 
 DISTNAME=	archive-0.6.8
 PKGNAME=	claws-mail-archive-0.6.8
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 

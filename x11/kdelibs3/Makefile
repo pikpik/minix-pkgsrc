@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.149 2010/07/13 12:34:32 wiz Exp $
+# $NetBSD: Makefile,v 1.151 2010/12/23 11:45:01 dsainty Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	x11
 COMMENT=	Support libraries for the KDE integrated X11 desktop
 
@@ -101,7 +101,7 @@ GCC_REQD+=		2.95
 .include "../../devel/libidn/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libart/buildlink3.mk"
 .include "../../graphics/openexr/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"

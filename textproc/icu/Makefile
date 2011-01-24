@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2009/08/05 17:01:17 drochner Exp $
+# $NetBSD: Makefile,v 1.61 2010/12/07 17:58:13 adam Exp $
 
 DISTNAME=	icu4c-4_6-src
 PKGNAME=	icu-4.6
@@ -50,13 +50,7 @@ PLIST_SUBST+=		MH_NAME=mh-unknown
 .endif
 
 .if ${OPSYS} == "Darwin"
-SO_EXT=
-SO_SUFFIX=.dylib
 INSTALL_UNSTRIPPED=	yes
-.else
-SO_EXT=.so
-SO_SUFFIX=
 .endif
-PLIST_SUBST+=	SO_SUFFIX=${SO_SUFFIX} SO_EXT=${SO_EXT}
 
 .include "../../mk/bsd.pkg.mk"

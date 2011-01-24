@@ -1,4 +1,4 @@
-# $NetBSD: clang.mk,v 1.2 2010/10/21 13:55:13 adam Exp $
+# $NetBSD: clang.mk,v 1.5 2010/12/26 09:46:24 adam Exp $
 #
 # This is the compiler definition for the clang compiler.
 #
@@ -34,13 +34,6 @@ CXXPATH=		${CLANGBASE}/bin/clang++
 PKG_CXX:=		${CXXPATH}
 .endif
 
-# Mimic GCC behaviour by defaulting to C89
-#.if !empty(USE_LANGUAGES:Mc99)
-#_WRAP_EXTRA_ARGS.CC+=	-std=gnu99
-#.else
-#_WRAP_EXTRA_ARGS.CC+=	-std=gnu89
-#.endif
-
 .if exists(${CCPATH})
 CC_VERSION_STRING!=	${CCPATH} -v 2>&1
 CC_VERSION!=		${CCPATH} -dumpversion 2>&1
@@ -49,6 +42,8 @@ CC_VERSION_STRING?=	${CC_VERSION}
 CC_VERSION?=		clang
 .endif
 
+_COMPILER_ABI_FLAG.32=	-m32
+_COMPILER_ABI_FLAG.64=	-m64
 _COMPILER_LD_FLAG=	-Wl,
 _LINKER_RPATH_FLAG=	-rpath
 _COMPILER_RPATH_FLAG=	${_COMPILER_LD_FLAG}${_LINKER_RPATH_FLAG},
@@ -60,5 +55,9 @@ _LANGUAGES.clang=	# empty
 .for _lang_ in ${USE_LANGUAGES}
 _LANGUAGES.clang+=	${LANGUAGES.clang:M${_lang_}}
 .endfor
+
+.if defined(PKGSRC_FORTRAN) && !empty(PKGSRC_FORTRAN)
+.  include "../../mk/compiler/${PKGSRC_FORTRAN}.mk"
+.endif
 
 .endif	# COMPILER_CLANG_MK

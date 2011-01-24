@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/09/05 17:32:40 asau Exp $
 #
 
 DISTNAME=	aamath-0.3
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://fuse.superglue.se/aamath/
 
-MAINTAINER=	emil@math.su.se
+MAINTAINER=	esg@sdf.lonestar.org
 HOMEPAGE=	http://fuse.superglue.se/aamath/
 COMMENT=	ASCII art mathematics
 

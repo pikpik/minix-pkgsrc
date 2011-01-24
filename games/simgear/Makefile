@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2010/09/14 11:01:51 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2010/12/23 11:44:32 dsainty Exp $
 
 DISTNAME=	SimGear-2.0.0
 PKGNAME=	${DISTNAME:tl}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	games devel
 MASTER_SITES=	ftp://mirrors.ibiblio.org/pub/mirrors/simgear/ftp/Source/ \
 		ftp://ftp.goflyflightgear.com/simgear/
@@ -25,7 +25,7 @@ BUILDLINK_API_DEPENDS.plib+= plib>=1.8.4
 .include "../../devel/boost-headers/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../games/plib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/osg/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

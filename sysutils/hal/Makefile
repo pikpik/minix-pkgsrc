@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2010/08/17 10:59:13 obache Exp $
+# $NetBSD: Makefile,v 1.50 2011/01/08 13:39:08 obache Exp $
 
-DISTNAME=		hal-0.5.11
-PKGREVISION=		28
+DISTNAME=		hal-0.5.14
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 EXTRACT_SUFX=		.tar.bz2
@@ -32,7 +32,6 @@ CONFIGURE_ARGS+=        --sysconfdir=${PKG_SYSCONFBASE}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 CONFIGURE_ARGS+=	--with-pci-ids=${PREFIX}/share/pciids
 CONFIGURE_ARGS+=	--with-usb-ids=${PREFIX}/share/usbids
-CONFIGURE_ARGS+=	--without-os-type
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -48,10 +47,13 @@ CONFIGURE_ARGS+=	--with-backend=netbsd
 HAL_GROUP=		operator
 
 .elif ${OPSYS} == "Linux"
-.include "../../devel/libusb/buildlink3.mk"
+.include "../../devel/gperf/buildlink3.mk"
+.include "../../devel/libblkid/buildlink3.mk"
 .include "../../devel/libvolume_id/buildlink3.mk"
 .include "../../sysutils/pciutils/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-backend=linux
+MAKE_DIRS+=		${PKG_SYSCONFBASE}/udev
+MAKE_DIRS+=		${PKG_SYSCONFBASE}/udev/rules.d
 CONF_FILES+=		${EGDIR}/90-hal.rules \
 			${PKG_SYSCONFBASE}/udev/rules.d/90-hal.rules
 

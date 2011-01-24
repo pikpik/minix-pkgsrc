@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2009/11/01 22:24:58 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2010/02/07 18:06:09 zafer Exp $
 
-DISTNAME=	gob2-2.0.16
+DISTNAME=	gob2-2.0.18
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://ftp.5z.com/pub/gob/
 

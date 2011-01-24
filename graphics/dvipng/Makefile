@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2010/06/13 22:44:29 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2010/09/13 04:28:21 minskim Exp $
 
 DISTNAME=	dvipng-1.13
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dvipng/}
 

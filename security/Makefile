@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.400 2010/11/09 03:34:32 agc Exp $
+# $NetBSD: Makefile,v 1.402 2010/12/24 07:24:54 kefren Exp $
 #
 
 COMMENT=	Security tools
@@ -12,8 +12,6 @@ SUBDIR+=	PAM
 SUBDIR+=	aide
 SUBDIR+=	aide06
 SUBDIR+=	amap
-SUBDIR+=	amavis-perl
-SUBDIR+=	amavisd-new
 SUBDIR+=	antonym
 SUBDIR+=	ap-modsecurity
 SUBDIR+=	ap-modsecurity2
@@ -29,6 +27,7 @@ SUBDIR+=	caff
 SUBDIR+=	ccid
 SUBDIR+=	cfs
 SUBDIR+=	chkrootkit
+SUBDIR+=	clamav
 SUBDIR+=	courier-authlib
 SUBDIR+=	crack
 #SUBDIR+=	crudesaml	# only shared files

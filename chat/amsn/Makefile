@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2010/06/13 22:43:56 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2010/12/23 11:44:25 dsainty Exp $
 #
 
 DISTNAME=		amsn-0.98.3
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		chat
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=amsn/}
 DISTFILES=		${DISTNAME}-src.tar.bz2
@@ -49,6 +49,6 @@ CHECK_PORTABILITY_SKIP=	utils/macosx/finishbuild.sh
 .include "../../lang/tcl/buildlink3.mk"
 .include "../../x11/tk/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

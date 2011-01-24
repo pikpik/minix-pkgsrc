@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.9 2007/01/07 09:13:54 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2011/01/03 14:54:34 obache Exp $
 
 DISTNAME=	powwow-1.2.5
 PKGREVISION=	1
 CATEGORIES=	games
-MASTER_SITES=	http://linuz.sns.it/~max/powwow/
+MASTER_SITES=	http://hoopajoo.net/static/powwow-mirror/powwow/
 
 MAINTAINER=	jdolecek@NetBSD.org
-HOMEPAGE=	http://linuz.sns.it/~max/powwow.html
+HOMEPAGE=	http://hoopajoo.net/projects/powwow.html
 COMMENT=	Client to play MUDs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -26,4 +26,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/powwow.doc ${DESTDIR}${POWWOW_DIR}
 	${INSTALL_DATA} ${WRKSRC}/powwow.help ${DESTDIR}${POWWOW_DIR}
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

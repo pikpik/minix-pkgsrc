@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.51 2010/11/15 13:05:45 adam Exp $
+# $NetBSD: Makefile,v 1.55 2011/01/12 14:40:42 adam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-libs-${QTVERSION}
-PKGREVISION=	1
+PKGREVISION=	4
 COMMENT=	C++ X GUI toolkit
 
 # XXX this is to test what really gets installed when 'do-install' is disabled
@@ -39,7 +39,11 @@ INSTALLATION_DIRS+=	${QTPREFIX}/plugins/codecs
 INSTALLATION_DIRS+=	${QTPREFIX}/plugins/graphicssystems
 INSTALLATION_DIRS+=	${QTPREFIX}/plugins/iconengines
 INSTALLATION_DIRS+=	${QTPREFIX}/plugins/imageformats
+.if ${OPSYS} == "Darwin"
+INSTALLATION_DIRS+=	${QTPREFIX}/qt_menu.nib
+.else
 INSTALLATION_DIRS+=	${QTPREFIX}/plugins/inputmethods
+.endif
 
 INSTALL_ENV+=		INSTALL_ROOT=${DESTDIR}
 
@@ -101,29 +105,29 @@ do-install:
 		${WRKSRC}/plugins/imageformats/lib${plug}.la \
 		${DESTDIR}${QTPREFIX}/plugins/imageformats/
 .endfor
+.if ${OPSYS} == "Darwin"
+	${INSTALL_DATA} ${WRKSRC}/src/gui/mac/qt_menu.nib/*.nib \
+		${DESTDIR}${QTPREFIX}/qt_menu.nib/
+.else
 	${LIBTOOL} --mode=install ${INSTALL_LIB} \
 		${WRKSRC}/plugins/inputmethods/libqimsw-multi.la \
 		${DESTDIR}/${QTPREFIX}/plugins/inputmethods/
-
-.if ${OPSYS} == "Darwin" && empty(MACHINE_PLATFORM:MDarwin-[567].*)
-SUBST_CLASSES+=		socklen
-SUBST_MESSAGE.socklen=	Correcting socklen_t.
-SUBST_STAGE.socklen=	pre-configure
-SUBST_FILES.socklen=	mkspecs/darwin-g++/qplatformdefs.h
-SUBST_SED.socklen=	-e 's/QT_SOCKLEN_T.*/QT_SOCKLEN_T socklen_t/'
 .endif
 
-.include "../../devel/zlib/buildlink3.mk"
-.include "../../fonts/fontconfig/buildlink3.mk"
-.include "../../graphics/freetype2/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.if ${OPSYS} != "Darwin"
 .include "../../graphics/glu/buildlink3.mk"
-.include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libXcursor/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
+.endif
+
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../fonts/fontconfig/buildlink3.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

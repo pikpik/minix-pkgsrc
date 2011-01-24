@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/08/26 19:58:07 sno Exp $
+# $NetBSD: Makefile,v 1.26 2010/01/18 09:59:18 wiz Exp $
 #
 
 DISTNAME=	xawtv-3.95
@@ -45,7 +45,7 @@ CONFIGURE_ARGS+=	--enable-mmx
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/Xaw3d/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"

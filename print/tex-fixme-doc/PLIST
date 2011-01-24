@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/fixme/NEWS
+share/texmf-dist/doc/latex/fixme/README
+share/texmf-dist/doc/latex/fixme/THANKS
+share/texmf-dist/doc/latex/fixme/fixme.el
+share/texmf-dist/doc/latex/fixme/fixme.pdf
+share/texmf-dist/doc/latex/fixme/header.inc

@@ -1,4 +1,4 @@
-# $NetBSD: license.mk,v 1.34 2010/05/06 13:16:59 obache Exp $
+# $NetBSD: license.mk,v 1.36 2011/01/13 13:25:56 wiz Exp $
 #
 # This file handles everything about the LICENSE variable. It is
 # included automatically by bsd.pkg.mk.
@@ -110,6 +110,7 @@ DEFAULT_ACCEPTABLE_LICENSES= \
 	cpl-1.0 \
 	open-font-license \
 	mpl-1.0 mpl-1.1 \
+	png-license \
 	zpl \
 	python-software-foundation \
 	ipafont \
@@ -168,7 +169,7 @@ _PKG_INSTALL_CONF?=	${PREFIX}/etc/pkg_install.conf
 .  if empty(LICENSE:MAND) && empty(LICENSE:MOR) && empty(LICENSE:M*[()]*)
 PKG_FAIL_REASON+= "${PKGNAME} has an unacceptable license condition: " \
     "    "${LICENSE:Q} \
-    "You can mark the license \`\`license'' as acceptable by adding" \
+    "You can mark the license \`\`${LICENSE}'' as acceptable by adding" \
     "    ACCEPTABLE_LICENSES+= ${LICENSE}" \
     "to ${_MAKE_CONF} or by adding" \
     "    ACCEPTABLE_LICENSES= ${LICENSE}" \
@@ -178,10 +179,12 @@ PKG_FAIL_REASON+= "The following command will show you the license text:" \
 .  else
 PKG_FAIL_REASON+= "${PKGNAME} has an unacceptable license condition: " \
     "    "${LICENSE:Q} \
-    "You can mark the license \`\`license'' as acceptable by adding" \
-    "    ACCEPTABLE_LICENSES+= license" \
+    "" \
+    "Check that you have accepted all necessary licenses." \
+    "You can mark a particular license \`\`foo'' as acceptable by adding" \
+    "    ACCEPTABLE_LICENSES+= foo" \
     "to ${_MAKE_CONF} or by adding" \
-    "    ACCEPTABLE_LICENSES= license" \
+    "    ACCEPTABLE_LICENSES= foo" \
     "to ${_PKG_INSTALL_CONF}."
 .  endif
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.49 2010/01/18 09:59:10 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2010/12/23 11:44:46 dsainty Exp $
 #
 
 DISTNAME=	xart19980415
 PKGNAME=	xart-19980415
-PKGREVISION=	14
+PKGREVISION=	15
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://linux01.gwdg.de/~rhohen/linux/
 EXTRACT_SUFX=	.tgz
@@ -21,7 +21,7 @@ post-extract:
 	cd ${WRKDIR} && find * -type d -exec chmod 755 "{}" ";"
 	cd ${WRKDIR} && find * -type f -print | xargs chmod 644
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"

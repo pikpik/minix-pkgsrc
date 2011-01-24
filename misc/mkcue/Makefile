@@ -19,4 +19,8 @@ MAKE_FILE=	GNUmakefile
 PKG_DESTDIR_SUPPORT= user-destdir
 INSTALLATION_DIRS= bin
 
+post-extract:
+	${CP} ${FILESDIR}/mb_dragonfly.cpp ${WRKSRC}/osdep
+	${CP} ${FILESDIR}/mb_dragonfly.h ${WRKSRC}/osdep
+
 .include "../../mk/bsd.pkg.mk"

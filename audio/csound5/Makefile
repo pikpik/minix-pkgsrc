@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2010/02/10 19:17:32 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2010/12/23 11:44:24 dsainty Exp $
 #
 
 DISTNAME=		Csound${CSOUND_VERSION}_src
 PKGNAME=		csound5-${CSOUND_VERSION}
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=csound/}
 WRKSRC=			${WRKDIR}/Csound${CSOUND_VERSION}
@@ -37,7 +37,7 @@ do-install:
 .include "../../audio/fluidsynth/buildlink3.mk"
 .include "../../audio/libsndfile/buildlink3.mk"
 .include "../../devel/swig/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../lang/python24/buildlink3.mk"
 .include "../../x11/fltk/buildlink3.mk"

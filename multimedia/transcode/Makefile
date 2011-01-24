@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.65 2010/06/13 22:45:07 wiz Exp $
+# $NetBSD: Makefile,v 1.67 2010/12/23 11:44:52 dsainty Exp $
 
 DISTNAME=	transcode-1.1.5
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.berlios.de/tcforge/
 EXTRACT_SUFX=	.tar.bz2
@@ -46,7 +46,7 @@ PLIST_VARS+=	i386
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../multimedia/libdvdread/buildlink3.mk"

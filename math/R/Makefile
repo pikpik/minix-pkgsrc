@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.110 2010/07/30 10:36:25 asau Exp $
+# $NetBSD: Makefile,v 1.112 2010/12/23 11:44:48 dsainty Exp $
 
 DISTNAME=		R-2.11.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_R_CRAN:=base/R-2/}
 
@@ -101,7 +101,7 @@ CONFIGURE_ARGS+=	--enable-mbcs=no
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../math/blas/buildlink3.mk"

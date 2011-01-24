@@ -1,10 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2008/07/22 03:21:38 dholland Exp $
-
-.include "../../mk/bsd.fast.prefs.mk"
-
-.if ${X11_TYPE} != "modular"
-.include "../../mk/x11.buildlink3.mk"
-.else
+# $NetBSD: buildlink3.mk,v 1.3 2009/03/20 19:25:46 joerg Exp $
 
 BUILDLINK_TREE+=	libXvMC
 
@@ -21,5 +15,3 @@ BUILDLINK_PKGSRCDIR.libXvMC?=	../../x11/libXvMC
 .endif # LIBXVMC_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-libXvMC
-
-.endif

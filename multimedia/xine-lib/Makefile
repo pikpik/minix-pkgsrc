@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.80 2010/07/28 09:24:14 drochner Exp $
+# $NetBSD: Makefile,v 1.83 2011/01/13 13:39:00 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
-PKGREVISION=		1
+PKGREVISION=		4
 
 COMMENT=		Multimedia player library
 
 CONFLICTS+=		xine-xcb-[0-9]*
 
 CONFIGURE_ARGS+=	--disable-v4l
+CONFIGURE_ARGS+=	--disable-real-codecs
 
 BUILDLINK_API_DEPENDS.vcdimager+= vcdimager>=0.7.20nb1
 

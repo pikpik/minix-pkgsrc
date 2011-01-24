@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2010/02/03 23:03:26 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2010/12/23 11:44:39 dsainty Exp $
 #
 
 DISTNAME=		gtksee-0.5.6
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		graphics x11
 MASTER_SITES=		http://download.berlios.de/gtksee/
 
@@ -25,7 +25,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/TODO	  ${DESTDIR}${PREFIX}/share/doc/gtksee
 
 .include "../../x11/gtk/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

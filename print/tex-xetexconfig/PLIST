@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/tex/generic/xetexconfig/unicode-letters.tex
+share/texmf-dist/tex/xelatex/xetexconfig/crop.cfg
+share/texmf-dist/tex/xelatex/xetexconfig/hyperref.cfg

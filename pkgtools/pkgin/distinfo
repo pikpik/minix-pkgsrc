@@ -1,9 +1,8 @@
 $NetBSD$
 
-SHA1 (pkgin-0.3.3.1.tar.gz) = 32e51abf2460a41285c68bc60df9d57870ca7d2f
-RMD160 (pkgin-0.3.3.1.tar.gz) = 88f22e5eae5416fe163a656f8da5f1a8c3b143d8
-Size (pkgin-0.3.3.1.tar.gz) = 140765 bytes
-SHA1 (patch-aa) = 19de3f17c77245e01ec8e7f98df555a6b865d5d7
+SHA1 (pkgin-0.3.3.4.tar.gz) = 67ff74175af841fed65921941505fa12ef29ad6d
+RMD160 (pkgin-0.3.3.4.tar.gz) = ac6e1e254071493fe2f731255973456b5714ce39
+Size (pkgin-0.3.3.4.tar.gz) = 141057 bytes
 SHA1 (patch-ab) = 2d86ab804e61fe4248f7dd5a76427bbaef1c7123
 SHA1 (patch-ac) = 19fa5810b89635ff1976273bf7f2b4bc04ca128a
 SHA1 (patch-ad) = ef02f28aa447735ffefc6b738512fb50b99e17c6

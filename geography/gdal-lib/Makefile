@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2010/08/27 11:14:23 adam Exp $
+# $NetBSD: Makefile,v 1.33 2011/01/13 13:36:08 wiz Exp $
 
 DISTNAME=	gdal-1.7.3
 PKGNAME=	gdal-lib-1.7.3
+PKGREVISION=	2
 CATEGORIES=	geography
 MASTER_SITES=	http://download.osgeo.org/gdal/
 
@@ -12,7 +13,7 @@ LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_LANGUAGES=		c c++ fortran
+USE_LANGUAGES=		c c++ fortran77
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2010/01/18 09:59:31 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2010/12/23 11:44:58 dsainty Exp $
 
 # This section contains variables that might be overridden.
 PKGNAME?=	${PKGNAME_BASE}
@@ -7,7 +7,7 @@ COMMENT?=	Converts HTML to indexed HTML, PDF and/or PostScript
 # Normal package Makefile contents follow.
 DISTNAME=	htmldoc-1.8.27-source
 PKGNAME_BASE=	${DISTNAME:S/-source//}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.easysw.com/pub/htmldoc/${PKGVERSION_NOREV}/
 EXTRACT_SUFX=	.tar.bz2
@@ -35,6 +35,6 @@ INSTALL_MAKE_FLAGS+=	datadir=${DESTDIR}${PREFIX}/share
 INSTALL_MAKE_FLAGS+=	mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

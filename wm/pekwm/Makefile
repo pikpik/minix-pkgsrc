@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2010/04/17 10:07:17 gls Exp $
+# $NetBSD: Makefile,v 1.38 2010/12/23 11:44:57 dsainty Exp $
 #
 
 DISTNAME=	pekwm-0.1.12
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	wm
 MASTER_SITES=	http://www.pekwm.org/projects/pekwm/files/
 
@@ -28,7 +28,7 @@ CONF_FILES=
 CONF_FILES+=		${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .endfor
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

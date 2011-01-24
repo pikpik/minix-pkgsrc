@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.61 2010/01/18 09:59:10 wiz Exp $
+# $NetBSD: Makefile,v 1.64 2011/01/13 13:38:23 wiz Exp $
 
 DISTNAME=	xfig.3.2.5b.full
 PKGNAME=	xfig-3.2.5b
-PKGREVISION=	7
+PKGREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mcj/}
 
@@ -62,7 +62,7 @@ XFIGDOCDIR=		${PREFIX}/share/doc/xfig
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/Doc/FORMAT?.? ${DESTDIR}${XFIGDOCDIR}
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXi/buildlink3.mk"
 .include "../../x11/libXp/buildlink3.mk"

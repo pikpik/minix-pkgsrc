@@ -5,8 +5,8 @@ share/texmf-dist/tex/latex/amscls/amsart.cls
 share/texmf-dist/tex/latex/amscls/amsbook.cls
 share/texmf-dist/tex/latex/amscls/amsbooka.sty
 share/texmf-dist/tex/latex/amscls/amsdtx.cls
+share/texmf-dist/tex/latex/amscls/amsldoc.cls
 share/texmf-dist/tex/latex/amscls/amsmidx.sty
 share/texmf-dist/tex/latex/amscls/amsproc.cls
 share/texmf-dist/tex/latex/amscls/amsthm.sty
-share/texmf-dist/tex/latex/amscls/rkvbeta.sty
 share/texmf-dist/tex/latex/amscls/upref.sty

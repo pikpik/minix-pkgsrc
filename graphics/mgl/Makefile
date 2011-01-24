@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2010/02/22 11:39:10 obache Exp $
+# $NetBSD: Makefile,v 1.34 2010/12/23 11:44:42 dsainty Exp $
 #
 
 DISTNAME=	mgl2-alpha-020
 PKGNAME=	mgl-0.2.0a
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	http://at.sakura.ne.jp/~suz/arc/
 
@@ -111,7 +111,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/nine/${i} ${DESTDIR}${PREFIX}/share/doc/mgl2/nine/
 .endfor
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

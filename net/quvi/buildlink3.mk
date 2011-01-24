@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.1.1.1 2010/12/13 12:43:17 ryoon Exp $
 
 BUILDLINK_TREE+=	quvi
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	quvi
 QUVI_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.quvi+=	quvi>=0.2.0
-BUILDLINK_PKGSRCDIR.quvi?=	../../wip/quvi
+BUILDLINK_PKGSRCDIR.quvi?=	../../net/quvi
 
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"

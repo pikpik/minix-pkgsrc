@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2010/12/05 10:01:52 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2010/12/23 11:44:43 dsainty Exp $
 #
 
 DISTNAME=		OpenCV-2.2.0
 PKGNAME=		${DISTNAME:S/OpenCV/opencv/}
+PKGREVISION=		1
 CATEGORIES=		graphics devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=opencvlibrary/}
 EXTRACT_SUFX=		.tar.bz2
@@ -34,7 +35,7 @@ CMAKE_ARGS+=	-D BUILD_NEW_PYTHON_SUPPORT=OFF
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 

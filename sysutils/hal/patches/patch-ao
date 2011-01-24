@@ -1,16 +1,30 @@
-$NetBSD$
+$NetBSD: patch-ao,v 1.2 2010/12/26 20:59:31 markd Exp $
 
---- hald/freebsd/hf-usb.c.orig	2008-11-24 14:15:42 +0200
-+++ hald/freebsd/hf-usb.c	2008-11-24 07:18:17 +0200
-@@ -31,7 +31,11 @@
- #include <fcntl.h>
- #include <sys/ioctl.h>
- #include <unistd.h>
+On DragonFly /dev/usb will be taken by usbd(8), but that does not
+mean that one cannot check usbX devices. The same behaviour was present
+in older versions of hald(8).
+
+--- hald/freebsd/hf-usb.c.orig	2009-09-17 13:49:46.000000000 +0000
++++ hald/freebsd/hf-usb.c
+@@ -36,9 +36,13 @@
+ #if __FreeBSD_version >= 800064
+ #include <legacy/dev/usb/usb.h>
+ #else
 +#ifdef __DragonFly__
 +#include <bus/usb/usb.h>
 +#else
  #include <dev/usb/usb.h>
+ #endif
+ #endif
 +#endif
  
  #include "../logger.h"
  #include "../osspec.h"
+@@ -613,7 +617,6 @@ hf_usb_privileged_init (void)
+   if (hf_usb_fd < 0)
+     {
+       HAL_INFO(("unable to open %s: %s", HF_USB_DEVICE, g_strerror(errno)));
+-      return;
+     }
+ 
+   for (i = 0; i < 16; i++)

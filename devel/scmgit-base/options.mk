@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2008/08/01 11:30:20 minskim Exp $
+# $NetBSD: options.mk,v 1.3 2010/04/28 22:01:43 morr Exp $
 #
 PKG_OPTIONS_VAR=	PKG_OPTIONS.scmgit
 PKG_SUPPORTED_OPTIONS=	scmgit-gui python
@@ -15,6 +15,12 @@ PLIST.gui=		yes
 USE_TOOLS+=		wish:run
 CONFIGURE_ARGS+=	--with-tcltk=${WISH:Q}
 .  if ${OPSYS} == "Darwin" && exists(/System/Library/Frameworks/Tk.framework)
+.    if exists(/System/Library/Frameworks/Tk.framework/Resources/Wish.app)
+WISH_APP=Wish
+.    else
+WISH_APP=Wish Shell
+.    endif
+PLIST_SUBST+= WISH_APP=${WISH_APP:Q}
 PLIST.macosx=		yes
 PRIVILEGED_STAGES+=	clean
 .  endif

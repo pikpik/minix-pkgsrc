@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/05/16 10:22:37 adam Exp $
+# $NetBSD: Makefile,v 1.3 2010/12/23 11:44:43 dsainty Exp $
 
 DISTNAME=	panomatic-0.9.4-src
 PKGNAME=	panomatic-0.9.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://aorlinsk2.free.fr/panomatic/bin/
 EXTRACT_SUFX=	.tar.bz2
@@ -22,7 +22,7 @@ GNU_CONFIGURE=		yes
 
 .include "../../devel/boost-headers/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

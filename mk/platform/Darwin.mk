@@ -1,4 +1,4 @@
-# $NetBSD: Darwin.mk,v 1.43 2010/07/08 04:57:36 dholland Exp $
+# $NetBSD: Darwin.mk,v 1.44 2010/12/22 20:43:45 abs Exp $
 #
 # Variable definitions for the Darwin operating system.
 
@@ -107,10 +107,6 @@ _OPSYS_WHOLE_ARCHIVE_FLAG=	-Wl,--whole-archive
 _OPSYS_NO_WHOLE_ARCHIVE_FLAG=	-Wl,--no-whole-archive
 
 _OPSYS_CAN_CHECK_SHLIBS=	no # can't use readelf in check/bsd.check-vars.mk
-
-# The x86_64 "iconv" library is incomplete, please look here for details:
-# http://www.mail-archive.com/gtk-list@gnome.org/msg28747.html
-_INCOMPAT_ICONV=	Darwin-*-x86_64
 
 _STRIPFLAG_CC?=		${_INSTALL_UNSTRIPPED:D:U-Wl,-x} # cc(1) option to strip
 _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U-s}	# install(1) option to strip

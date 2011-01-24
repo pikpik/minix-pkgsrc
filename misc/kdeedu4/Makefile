@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/11/15 22:57:59 abs Exp $
+# $NetBSD: Makefile,v 1.15 2011/01/13 13:36:55 wiz Exp $
 
 DISTNAME=	kdeedu-${_KDE_VERSION}
 CATEGORIES=	misc

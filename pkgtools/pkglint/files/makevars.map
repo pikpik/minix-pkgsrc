@@ -1,4 +1,4 @@
-# $NetBSD: makevars.map,v 1.204 2010/06/02 12:12:17 adam Exp $
+# $NetBSD: makevars.map,v 1.206 2011/01/17 09:13:59 wiz Exp $
 #
 
 # This file contains the guessed type of some variables, according to
@@ -301,10 +301,10 @@ EMACS_PKGNAME_PREFIX	Identifier [$system]
 # ^^ or the empty string.
 EMACS_TYPE		{ emacs xemacs } [$system]
 EMACS_USE_LEIM		Yes
-EMACS_VERSIONS_ACCEPTED	List of { emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:s]
+EMACS_VERSIONS_ACCEPTED	List of { emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:s]
 EMACS_VERSION_MAJOR	Integer [$system]
 EMACS_VERSION_MINOR	Integer [$system]
-EMACS_VERSION_REQD	List of { emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:as]
+EMACS_VERSION_REQD	List of { emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:as]
 EMULDIR			Pathname [$system]
 EMULSUBDIR		Pathname [$system]
 OPSYS_EMULDIR		Pathname [$system]
@@ -708,7 +708,7 @@ USE_GNU_READLINE	Yes [m:s,c:s,o:s]
 USE_IMAKE		Yes [m:s]
 USE_JAVA		{ run yes build } [$package]
 USE_JAVA2		{ YES yes no 1.4 1.5 } [$package]
-USE_LANGUAGES		List of { c c99 c++ fortran java objc } [m:s,c:s,o:s]
+USE_LANGUAGES		List of { c c99 c++ fortran fortran77 java objc } [m:s,c:s,o:s]
 USE_LIBTOOL		Yes [$package]
 USE_MAKEINFO		Yes [$package]
 USE_MSGFMT_PLURALS	Yes [$package]

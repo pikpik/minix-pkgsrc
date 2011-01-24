@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2010/01/18 09:59:30 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2010/12/23 11:44:58 dsainty Exp $
 #
 
 DISTNAME=	chimera-2.0a19
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera-alpha/
 
@@ -26,7 +26,7 @@ post-install:
 	cd ${WRKSRC}/doc && ${INSTALL_DATA}			\
 	    HINTS INFO LICENSE ${DESTDIR}${PREFIX}/share/doc/chimera
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXp/buildlink3.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/01/18 09:58:38 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/12/23 11:44:24 dsainty Exp $
 #
 
 DISTNAME=	flactag-1.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://software.gently.org.uk/flactag-1.1/
 
@@ -24,7 +24,7 @@ do-install:
 .include "../../audio/flac/buildlink3.mk"
 .include "../../audio/libdiscid/buildlink3.mk"
 .include "../../www/neon/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../textproc/unac/buildlink3.mk"
 .include "../../audio/libmusicbrainz/buildlink3.mk"
 .include "../../devel/libslang2/buildlink3.mk"

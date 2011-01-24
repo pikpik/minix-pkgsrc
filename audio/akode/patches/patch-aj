@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- akode/lib/auto_sink.cpp.orig	2005-10-26 13:50:29.000000000 +0000
++++ akode/lib/auto_sink.cpp
+@@ -21,6 +21,7 @@
+ #include "audioframe.h"
+ #include "auto_sink.h"
+ 
++#include <cstdlib>
+ #include <iostream>
+ 
+ namespace aKode {

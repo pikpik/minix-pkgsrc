@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2010/01/18 09:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2010/06/13 22:44:40 wiz Exp $
 #
 
 DISTNAME=		PerceptualDiff-1.0.1
 PKGNAME=		pdiff-1.0.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pdiff/}
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.155 2010/01/18 09:58:49 wiz Exp $
+# $NetBSD: Makefile,v 1.157 2010/12/23 11:44:30 dsainty Exp $
 
 DISTNAME=	wine-1.0.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	emulators
 MASTER_SITES=	http://ibiblio.org/pub/linux/system/emulators/wine/ \
 		${MASTER_SITE_SOURCEFORGE:=wine/}
@@ -60,7 +60,7 @@ post-install:
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../devel/ncurses/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"

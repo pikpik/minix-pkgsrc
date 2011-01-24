@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2010/02/14 20:19:24 snj Exp $
+# $NetBSD: Makefile,v 1.49 2010/12/23 11:44:58 dsainty Exp $
 
 DISTNAME=	dillo-2.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://www.dillo.org/download/
 EXTRACT_SUFX=	.tar.bz2
@@ -39,7 +39,7 @@ post-install:
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/fltk2/buildlink3.mk"
 

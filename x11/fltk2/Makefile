@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/01/18 09:59:33 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/12/23 11:45:00 dsainty Exp $
 
 VERS=		6129
-PKGREVISION=	4
+PKGREVISION=	5
 DISTNAME=	fltk-2.0.x-r${VERS}
 PKGNAME=	fltk2-2.0pre${VERS}
 CATEGORIES=	x11
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=	ac_cv_have_overlay=yes
 
 .include "options.mk"
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"

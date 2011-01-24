@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.14 2010/02/02 14:05:59 adam Exp $
+@comment $NetBSD: PLIST,v 1.16 2011/01/12 07:07:06 adam Exp $
 lib/pkgconfig/Qt3Support.pc
 lib/pkgconfig/QtCore.pc
 lib/pkgconfig/QtDeclarative.pc
@@ -53,5 +53,8 @@ qt4/plugins/imageformats/libqgif.la
 qt4/plugins/imageformats/libqico.la
 qt4/plugins/imageformats/libqjpeg.la
 qt4/plugins/imageformats/libqsvg.la
-qt4/plugins/inputmethods/libqimsw-multi.la
+${PLIST.unix}qt4/plugins/inputmethods/libqimsw-multi.la
+${PLIST.mac}qt4/qt_menu.nib/classes.nib
+${PLIST.mac}qt4/qt_menu.nib/info.nib
+${PLIST.mac}qt4/qt_menu.nib/keyedobjects.nib
 qt4/q3porting.xml

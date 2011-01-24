@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2010/11/19 08:29:30 mrg Exp $
+# $NetBSD: Makefile,v 1.18 2011/01/13 13:38:49 wiz Exp $
 
 DISTNAME=	kdeutils-${_KDE_VERSION}
 CATEGORIES=	misc

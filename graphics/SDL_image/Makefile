@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.36 2010/01/18 09:58:55 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2010/12/23 11:44:33 dsainty Exp $
 
 DISTNAME=	SDL_image-1.2.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics devel
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_image/release/
 
@@ -28,7 +28,7 @@ post-install:
 
 BUILDLINK_API_DEPENDS.SDL+=	SDL>=1.2.10
 .include "../../devel/SDL/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

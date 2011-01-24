@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2010/09/14 11:01:56 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2010/12/23 11:44:35 dsainty Exp $
 #
 
 DISTNAME=	djview4-4.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=djvu/}
 
@@ -21,5 +21,5 @@ USE_TOOLS+=	pkg-config
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

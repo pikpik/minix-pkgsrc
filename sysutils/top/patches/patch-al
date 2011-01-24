@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-al,v 1.2 2004/07/12 08:14:44 cube Exp $
 
 --- machine/m_netbsd15.c.orig	2004-07-12 09:09:49.000000000 +0200
 +++ machine/m_netbsd15.c
@@ -138,7 +138,7 @@ $NetBSD$
 +
 +/* these are for detailing the memory statistics */
 +
-+int memory_stats[7];
++long memory_stats[7];
 +char *memorynames[] = {
 +	"K Act, ", "K Inact, ", "K Wired, ", "K Free, ",
 +	"K Swp, ", "K Swp free, ",

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/11/18 22:55:12 adam Exp $
+# $NetBSD: Makefile,v 1.16 2011/01/13 13:39:59 wiz Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
 CATEGORIES=	x11

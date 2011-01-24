@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.28 2010/01/18 09:59:01 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2010/12/23 11:44:38 dsainty Exp $
 #
 
 DISTNAME=		gimp-1.2.5
 PKGNAME=		gimp-base-1.2.5
-PKGREVISION=		10
+PKGREVISION=		11
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.gimp.org/pub/gimp/v1.2/v1.2.5/ \
 			ftp://ftp.fu-berlin.de/unix/X11/graphics/gimp/v1.2/v1.2.5/
@@ -59,7 +59,7 @@ pre-build:
 		${FILESDIR}/pdb_self_doc.c
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../multimedia/mpeg-lib/buildlink3.mk"

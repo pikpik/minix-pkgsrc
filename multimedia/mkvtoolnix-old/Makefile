@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2010/09/14 11:02:30 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2011/01/01 13:18:36 obache Exp $
 
 DISTNAME=	mkvtoolnix-2.9.8
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2
@@ -14,7 +14,8 @@ LICENSE=	gnu-gpl-v2
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake msgfmt
+USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=	c c++
 
 CONFIGURE_ARGS+=	--with-boost-libdir=${BUILDLINK_PREFIX.boost-libs}
@@ -43,6 +44,7 @@ CONFIGURE_ARGS+=	--disable-wxwidgets
 .include "../../audio/flac/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libebml/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../devel/boost-headers/buildlink3.mk"

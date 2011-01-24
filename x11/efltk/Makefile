@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2010/01/18 09:59:33 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2010/12/23 11:44:59 dsainty Exp $
 #
 
 DISTNAME=	efltk-2.0.5
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ede/}
 EXTRACT_SUFX=	.tar.bz2
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=	--disable-shared
 .include "options.mk"
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

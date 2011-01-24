@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/08/26 19:58:41 sno Exp $
+# $NetBSD: Makefile,v 1.24 2010/01/18 09:59:44 wiz Exp $
 #
 
 DISTNAME=	ssystem-1.6
@@ -34,5 +34,5 @@ do-install:
 	    ${INSTALL_DATA} hires/README ${DESTDIR}${PREFIX}/share/ssystem/hires
 
 .include "../../graphics/Mesa/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.31 2010/04/06 04:36:00 dsainty Exp $
+# $NetBSD: Makefile,v 1.33 2010/12/23 11:44:30 dsainty Exp $
 #
 
 DISTNAME=	emulator_src_${POSE_VERSION}
 PKGNAME=	palmosemulator-${POSE_VERSION}
-PKGREVISION=	11
+PKGREVISION=	12
 CATEGORIES=	emulators x11
 MASTER_SITES=	http://www.palmos.com/dev/tools/emulator/sources/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -69,7 +69,7 @@ do-install:
 			${INSTALL_DATA} "$$i" ${DESTDIR}${POSE_SKINS_DIR}; \
 		done
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/fltk/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 

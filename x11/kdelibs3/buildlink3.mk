@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.34 2010/07/13 12:34:32 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.36 2010/12/23 11:45:01 dsainty Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
@@ -8,7 +8,7 @@ BUILDLINK_TREE+=	kdelibs
 KDELIBS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.kdelibs+=	kdelibs>=3.5.6
-BUILDLINK_ABI_DEPENDS.kdelibs?=	kdelibs>=3.5.10nb9
+BUILDLINK_ABI_DEPENDS.kdelibs?=	kdelibs>=3.5.10nb10
 BUILDLINK_PKGSRCDIR.kdelibs?=	../../x11/kdelibs3
 
 pkgbase := kdelibs
@@ -23,7 +23,7 @@ pkgbase := kdelibs
 .include "../../devel/libidn/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libart/buildlink3.mk"
 .include "../../graphics/openexr/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"

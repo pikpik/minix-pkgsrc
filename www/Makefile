@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.774 2010/10/14 11:42:11 obache Exp $
+# $NetBSD: Makefile,v 1.778 2011/01/13 04:23:54 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -166,6 +166,7 @@ SUBDIR+=	lhs
 SUBDIR+=	libghttp
 SUBDIR+=	libgtkhtml
 SUBDIR+=	libproxy
+SUBDIR+=	librest
 SUBDIR+=	libwww
 SUBDIR+=	liferea
 SUBDIR+=	liferea-current
@@ -520,7 +521,10 @@ SUBDIR+=	py-blosxom
 SUBDIR+=	py-clearsilver
 SUBDIR+=	py-curl
 SUBDIR+=	py-django
+SUBDIR+=	py-django-classy-tags
+SUBDIR+=	py-django-cms
 SUBDIR+=	py-django-registration
+SUBDIR+=	py-django-south
 SUBDIR+=	py-flup
 SUBDIR+=	py-gdata
 SUBDIR+=	py-genshi
@@ -538,7 +542,6 @@ SUBDIR+=	py-uwsgi
 SUBDIR+=	py-webpy
 SUBDIR+=	qDecoder
 SUBDIR+=	raggle
-SUBDIR+=	rails
 SUBDIR+=	ramaze
 SUBDIR+=	ruby-actionpack
 SUBDIR+=	ruby-actionpack3
@@ -565,6 +568,7 @@ SUBDIR+=	ruby-rack
 SUBDIR+=	ruby-rack-mount
 SUBDIR+=	ruby-rack-test
 SUBDIR+=	ruby-rack11
+SUBDIR+=	ruby-rails
 SUBDIR+=	ruby-rails3
 SUBDIR+=	ruby-staticmatic
 SUBDIR+=	ruby-tag

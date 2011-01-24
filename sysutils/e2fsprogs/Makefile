@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2008/03/07 22:40:29 tron Exp $
+# $NetBSD: Makefile,v 1.18 2010/12/23 06:34:50 ryoon Exp $
 
-DISTNAME=	e2fsprogs-1.40.7
+DISTNAME=	e2fsprogs-1.41.12
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=e2fsprogs/}
 
@@ -11,8 +11,8 @@ COMMENT=	Second extended file system (ext2fs) management programs
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	makeinfo
-INFO_FILES=	# PLIST
+USE_TOOLS+=	makeinfo gmake
+INFO_FILES=	yes
 
 .include "../../mk/bsd.prefs.mk"
 

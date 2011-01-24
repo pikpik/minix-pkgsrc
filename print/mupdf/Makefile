@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/09/15 13:15:29 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2010/09/28 13:11:26 wiz Exp $
 #
 
 DISTNAME=	mupdf-0.7
@@ -31,7 +31,7 @@ post-install:
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/jbig2dec/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/openjpeg/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"

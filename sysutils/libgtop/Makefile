@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2010/08/09 10:07:10 drochner Exp $
+# $NetBSD: Makefile,v 1.32 2011/01/18 13:46:38 jmmv Exp $
 
 DISTNAME=		libgtop-2.28.2
+PKGREVISION=		2
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libgtop/2.28/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,7 +10,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Library to retrieve system information, used in GNOME2
 
-PKG_DESTDIR_SUPPORT=	destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 OSVERSION_SPECIFIC=	YES
 
@@ -47,19 +48,28 @@ PRINT_PLIST_AWK+=	/^include\/libgtop-2.0\/glibtop_suid.h$$/ \
 CONFIGURE_ENV+=	fu_cv_sys_mounted_getmntinfo=yes
 .endif
 
+INSTALL_MAKE_FLAGS+=	libgtop_postinstall=true
 PLIST_VARS+=	server suid.h
-.if ${OPSYS} == "Linux"
-#		nothing
+.if ${OPSYS} == "AIX"
+PLIST.server=	yes
+PLIST.suid.h=	yes
+SPECIAL_PERMS=	bin/libgtop_server2 ${REAL_ROOT_USER} system 2755
+.elif ${OPSYS} == "Darwin" || ${OPSYS} == "DragonFly" || \
+      ${OPSYS} == "FreeBSD" || ${OPSYS} == "NetBSD" || \
+      ${OPSYS} == "OpenBSD"
+PLIST.server=	yes
+PLIST.suid.h=	yes
+SPECIAL_PERMS=	bin/libgtop_server2 ${REAL_ROOT_USER} kmem 2755
+.elif ${OPSYS} == "Linux"
+#PLIST.server=	no
+#PLIST.suid.h=	no
 .elif ${OPSYS} == "SunOS"
 PLIST.server=	yes
+PLIST.suid.h=	yes
+SPECIAL_PERMS=	bin/libgtop_server2 ${REAL_ROOT_USER} sys 2755
 .else
 PLIST.server=	yes
 PLIST.suid.h=	yes
-.endif
-
-.if defined(PLIST.server)
-post-install:
-	${CHMOD} g+s ${DESTDIR}${PREFIX}/bin/libgtop_server2
 .endif
 
 PLIST_VARS+=    glibtop_private.h

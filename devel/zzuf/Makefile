@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	zzuf-0.12
+DISTNAME=	zzuf-0.13
 CATEGORIES=	devel security
 MASTER_SITES=	http://caca.zoy.org/files/zzuf/
 
@@ -15,11 +15,10 @@ GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 
 BUILDLINK_TRANSFORM+=	l:gnugetopt:getopt
-REPLACE_SH=		test/testsuite.sh
 SHLIBTOOL_OVERRIDE=	# empty
 
 SUBST_CLASSES+=		fix-paths
-SUBST_FILES.fix-paths=	doc/libzzuf.3
+SUBST_FILES.fix-paths=	doc/libzzuf.3.in
 SUBST_MESSAGE.fix-paths=Fixing hard-coded pathnames
 SUBST_SED.fix-paths=	-e 's,/usr,${PREFIX},g'
 SUBST_STAGE.fix-paths=	post-patch
@@ -40,9 +39,7 @@ NETBSDLIB.rt!=								\
 	echo "$$lib"
 .endif
 
-do-test:
-	${RUN} cd ${WRKSRC}/test && ${SETENV} ${TEST_ENV}		\
-		${SH} ./testsuite.sh
+TEST_TARGET=	check
 
 .include "options.mk"
 

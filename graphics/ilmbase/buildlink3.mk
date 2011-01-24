@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2007/11/30 21:50:22 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2011/01/03 08:47:54 dsainty Exp $
 
 BUILDLINK_TREE+=	ilmbase
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.67 2010/10/10 18:44:53 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2010/12/23 11:44:30 dsainty Exp $
 
 DISTNAME=	fontforge_full-${VERSION}
 PKGNAME=	fontforge-${VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	fonts editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fontforge/}
 EXTRACT_SUFX=	.tar.bz2
@@ -37,7 +37,7 @@ LDFLAGS.SunOS+=		-lrt
 .include "../../devel/pango/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"

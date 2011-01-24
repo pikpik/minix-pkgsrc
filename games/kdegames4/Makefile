@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/12/07 14:09:55 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2011/01/13 13:37:46 wiz Exp $
 
 DISTNAME=	kdegames-${_KDE_VERSION}
 CATEGORIES=	games

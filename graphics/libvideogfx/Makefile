@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2010/01/18 09:59:04 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2010/12/23 11:44:42 dsainty Exp $
 #
 
 DISTNAME=	libvideogfx-1.0.3
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://rachmaninoff.informatik.uni-mannheim.de/libvideogfx/data/
 
@@ -18,7 +18,7 @@ GNU_CONFIGURE=	YES
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

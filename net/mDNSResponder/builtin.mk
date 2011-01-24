@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.10 2009/11/13 17:31:07 drochner Exp $
+# $NetBSD: builtin.mk,v 1.1 2010/07/14 17:45:30 drochner Exp $
 
 BUILTIN_PKG:=	mDNSResponder
 
@@ -30,13 +30,13 @@ _BLTN_DNSSD_212_1!= \
 	${GREP} -c 2120100 ${H_DNSSD} || ${TRUE}
 _BLTN_DNSSD_214_3_2!= \
 	${GREP} -c 2140302 ${H_DNSSD} || ${TRUE}
-. if ${_BLTN_DNSSD_214_3_2} == "1"
+.  if ${_BLTN_DNSSD_214_3_2} == "1"
 BUILTIN_VERSION.mDNSResponder=	214.3.2
-. elif ${_BLTN_DNSSD_212_1} == "1"
+.  elif ${_BLTN_DNSSD_212_1} == "1"
 BUILTIN_VERSION.mDNSResponder=	212.1
-. else
+.  else
 BUILTIN_VERSION.mDNSResponder=	0 #unknown
-. endif
+.  endif
 BUILTIN_PKG.mDNSResponder=	mDNSResponder-${BUILTIN_VERSION.mDNSResponder}
 .endif
 

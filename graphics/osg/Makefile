@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/10/12 21:42:24 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2010/12/23 11:44:43 dsainty Exp $
 
 DISTNAME=	OpenSceneGraph-${OSGVER}
 PKGNAME=	osg-${OSGVER}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics devel
 MASTER_SITES=	http://www.openscenegraph.org/downloads/stable_releases/OpenSceneGraph-${OSGVER}/source/
 EXTRACT_SUFX=	.zip
@@ -29,7 +29,7 @@ CMAKE_ARGS+=		-DCMAKE_BUILD_TYPE=Release
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libungif/buildlink3.mk"
 .include "../../graphics/librsvg/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"

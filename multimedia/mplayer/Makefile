@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.73 2010/11/23 12:31:29 tron Exp $
+# $NetBSD: Makefile,v 1.76 2011/01/19 09:29:47 tron Exp $
 
 PKGNAME=	mplayer-${MPLAYER_VERSION}
-PKGREVISION=	2
+PKGREVISION=	5
 
 COMMENT=	Fast, cross-platform movie player
 
@@ -18,6 +18,7 @@ BUILD_DEPENDS+=		yasm-[0-9]*:../../devel/yasm
 CONFIGURE_ARGS+=	--disable-mencoder
 CONFIGURE_ARGS+=	--confdir=${PREFIX}/share/mplayer
 CONFIGURE_ARGS+=	--enable-xvmc
+CONFIGURE_ARGS+=	--with-xvmclib=XvMCW
 
 # Solaris/x86 has Xv, but the header files live in /usr/X11R6, not
 # ${X11_BASE}, so we need to also look for headers in this path.

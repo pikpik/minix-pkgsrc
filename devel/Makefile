@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1415 2010/11/29 06:44:15 agc Exp $
+# $NetBSD: Makefile,v 1.1420 2011/01/13 15:57:56 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -48,6 +48,7 @@ SUBDIR+=	astyle
 SUBDIR+=	at-spi
 SUBDIR+=	atf
 SUBDIR+=	atk
+SUBDIR+=	atkmm
 SUBDIR+=	autoconf
 SUBDIR+=	autoconf213
 SUBDIR+=	autogen
@@ -141,6 +142,7 @@ SUBDIR+=	cxref
 SUBDIR+=	darcs
 SUBDIR+=	darts
 SUBDIR+=	dconf
+SUBDIR+=	dconf-editor
 SUBDIR+=	ddd
 SUBDIR+=	dejagnu
 SUBDIR+=	dev86
@@ -288,6 +290,7 @@ SUBDIR+=	libast
 SUBDIR+=	libatomic_ops
 SUBDIR+=	libbegemot
 SUBDIR+=	libbinio
+SUBDIR+=	libblkid
 SUBDIR+=	libbonobo
 SUBDIR+=	libbonoboui
 SUBDIR+=	libcfg+
@@ -376,6 +379,7 @@ SUBDIR+=	libtool-base
 SUBDIR+=	libtool-info
 SUBDIR+=	libts
 SUBDIR+=	libusb
+SUBDIR+=	libuuid
 SUBDIR+=	libview
 SUBDIR+=	libvolume_id
 SUBDIR+=	libwhisker2
@@ -402,6 +406,7 @@ SUBDIR+=	memcached
 SUBDIR+=	menhir
 SUBDIR+=	mercurial
 SUBDIR+=	mico
+SUBDIR+=	mk-configure
 SUBDIR+=	mkcmd
 SUBDIR+=	mono-addins
 SUBDIR+=	mono-tools
@@ -1166,6 +1171,8 @@ SUBDIR+=	py-idle
 SUBDIR+=	py-jersey
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
+SUBDIR+=	py-logilab-astng
+SUBDIR+=	py-logilab-common
 SUBDIR+=	py-multiprocessing
 SUBDIR+=	py-newt
 SUBDIR+=	py-nose

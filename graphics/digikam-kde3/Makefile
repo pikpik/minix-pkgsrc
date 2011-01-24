@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/06/13 22:44:28 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/12/23 11:44:34 dsainty Exp $
 
 DISTNAME=		digikam-0.9.6
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		graphics kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=digikam/}
 EXTRACT_SUFX=		.tar.bz2
@@ -33,7 +33,7 @@ PLIST_SUBST=	HTMLDIR=${DISTNAME}
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../graphics/imlib2/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/libkdcraw/buildlink3.mk"
 .include "../../graphics/libkexiv2/buildlink3.mk"
 .include "../../graphics/libkipi/buildlink3.mk"

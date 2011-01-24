@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2010/11/15 22:59:09 abs Exp $
+# $NetBSD: buildlink3.mk,v 1.23 2011/01/12 07:07:06 adam Exp $
 
 BUILDLINK_TREE+=	qt4-libs
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	qt4-libs
 QT4_LIBS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.qt4-libs+=	qt4-libs>=4.6.1nb2
-BUILDLINK_ABI_DEPENDS.qt4-libs+=	qt4-libs>=4.7.1
+BUILDLINK_ABI_DEPENDS.qt4-libs+=	qt4-libs>=4.7.1nb4
 BUILDLINK_PKGSRCDIR.qt4-libs?=	../../x11/qt4-libs
 
 BUILDLINK_INCDIRS.qt4-libs+=	qt4/include
@@ -20,16 +20,18 @@ PTHREAD_OPTS+=	require
 
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../graphics/glu/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.if ${OPSYS} != "Darwin"
+.include "../../graphics/glu/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libXcursor/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
-.if ${X11_TYPE} == "modular"
-.include "../../x11/libXinerama/buildlink3.mk"
+.  if ${X11_TYPE} == "modular"
+.  include "../../x11/libXinerama/buildlink3.mk"
+.  endif
 .endif
 .include "../../mk/pthread.buildlink3.mk"
 

@@ -52,4 +52,7 @@ post-extract:
 regression-test:
 	cd ${BUILD_DIRS} && make test
 
+do-install:
+	cp ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/lib/
+
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.83 2010/09/14 11:02:06 wiz Exp $
+# $NetBSD: Makefile,v 1.85 2010/12/23 11:44:47 dsainty Exp $
 
 DISTNAME=	xsane-0.994
 PKGNAME=	xsane-0.99.4
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.xsane.org/download/old/ \
 		ftp://ftp.u-aizu.ac.jp/pub/misc/device/scsi/scanner/sane/xsane/ \
@@ -20,7 +20,7 @@ USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../graphics/gimp/buildlink3.mk"

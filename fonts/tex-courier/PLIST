@@ -22,7 +22,6 @@ share/texmf-dist/fonts/tfm/adobe/courier/pcrb7t.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrb8c.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrb8t.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/pcrb8y.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrbc.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrbc7t.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrbc8t.tfm
@@ -31,13 +30,11 @@ share/texmf-dist/fonts/tfm/adobe/courier/pcrbo7t.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrbo8c.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrbo8r.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrbo8t.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/pcrbo8y.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrr.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrr8c.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrr8r.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/pcrr8y.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrrc.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrrc7t.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrrc8t.tfm
@@ -46,11 +43,6 @@ share/texmf-dist/fonts/tfm/adobe/courier/pcrro7t.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrro8c.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrro8r.tfm
 share/texmf-dist/fonts/tfm/adobe/courier/pcrro8t.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/pcrro8y.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/rpcrb.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/rpcrbo.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/rpcrr.tfm
-share/texmf-dist/fonts/tfm/adobe/courier/rpcrro.tfm
 share/texmf-dist/fonts/tfm/cg/courier/ccrb.tfm
 share/texmf-dist/fonts/tfm/cg/courier/ccrb8t.tfm
 share/texmf-dist/fonts/tfm/cg/courier/ccrbi.tfm
@@ -89,6 +81,10 @@ share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/pcrbo8u.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/pcrr8u.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/pcrrc8u.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/pcrro8u.tfm
+share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrb.tfm
+share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrbo.tfm
+share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrr.tfm
+share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrro.tfm
 share/texmf-dist/fonts/tfm/groff/courier/pcrb8g.tfm
 share/texmf-dist/fonts/tfm/groff/courier/pcrbo8g.tfm
 share/texmf-dist/fonts/tfm/groff/courier/pcrr8g.tfm

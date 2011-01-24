@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2009/08/26 19:56:39 sno Exp $
+# $NetBSD: Makefile,v 1.35 2010/01/18 09:59:05 wiz Exp $
 
 DISTNAME=	libmng-1.0.10
 PKGNAME=	mng-1.0.10
@@ -20,7 +20,7 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		automake
 
-CONFIGURE_ARGS+=	--with-jpeg=${BUILDLINK_PREFIX.jpeg}
+CONFIGURE_ARGS+=	--with-jpeg=${JPEGBASE}
 CONFIGURE_ARGS+=	--with-lcms=${BUILDLINK_PREFIX.lcms}
 CPPFLAGS+=		${BUILDLINK_CPPFLAGS.lcms}
 
@@ -46,7 +46,7 @@ post-install:
 		${INSTALL_MAN} jng.5 mng.5 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man5
 
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/lcms/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

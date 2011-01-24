@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2010/06/13 22:44:38 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2011/01/03 20:45:27 markd Exp $
 #
 
 DISTNAME=	libkexiv2-0.1.9
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kipi/}
 EXTRACT_SUFX=	.tar.bz2
@@ -24,7 +24,7 @@ PKGCONFIG_OVERRIDE+=	libkexiv2/libkexiv2.pc.in
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/jpeg/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

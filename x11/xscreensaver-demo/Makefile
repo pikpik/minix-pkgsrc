@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2010/11/15 22:59:19 abs Exp $
+# $NetBSD: Makefile,v 1.37 2010/11/29 18:05:23 drochner Exp $
 #
 
 PKGNAME=	${DISTNAME:S/-/-demo-/}
@@ -8,9 +8,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	xscreensaver<4.14 xscreensaver-gnome-[0-9]*
 
-
 .include "../../x11/xscreensaver/Makefile.common"
 
+PKGREVISION=		1
 USE_TOOLS+=		pkg-config
 
 CONFIGURE_ARGS+=	--with-gtk=${BUILDLINK_PREFIX.gtk2}

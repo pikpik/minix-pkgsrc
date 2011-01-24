@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2007/06/15 05:12:05 jlam Exp $
+# $NetBSD: Makefile,v 1.30 2008/06/12 02:14:54 joerg Exp $
 #
 
 DISTNAME=	pwm-20060517
 PKGNAME=	${DISTNAME:S/-/-1.0./}
+PKGREVISION=	1
 CATEGORIES=	wm x11
 MASTER_SITES=	http://modeemi.fi/~tuomov/pwm/dl/
 

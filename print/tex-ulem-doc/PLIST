@@ -1,3 +1,4 @@
 @comment $NetBSD$
+share/texmf-dist/doc/generic/ulem/README
 share/texmf-dist/doc/generic/ulem/ulem.ltx
 share/texmf-dist/doc/generic/ulem/ulem.pdf

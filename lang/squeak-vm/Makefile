@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2010/06/13 22:44:51 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2011/01/13 13:38:34 wiz Exp $
 #
 
 SQUEAK_VERSION=	3.11.3.2135
 
 DISTNAME=	Squeak-$(SQUEAK_VERSION)-src
 PKGNAME=	squeak-vm-$(SQUEAK_VERSION:C/-/./)
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	http://ftp.squeak.org/3.10/unix-linux/ \
 		http://squeakvm.org/unix/release/
@@ -30,6 +30,13 @@ CMAKE_ARGS+=	-DPKGMANDIR=$(PKGMANDIR)
 CMAKE_ARGS+=	-DVM_HOST=$(MACHINE_GNU_PLATFORM:Q) -DVM_VERSION=$(SQUEAK_VERSION)
 CMAKE_ARGS+=	-DLIBOSSAUDIO=$(LIBOSSAUDIO) -DDEVOSSAUDIO=$(DEVOSSAUDIO)
 #CFLAGS=		-g -fomit-frame-pointer
+
+.include "../../mk/bsd.prefs.mk"
+
+.if $(OPSYS) == "NetBSD"
+# UUID routines are in libc:
+BUILDLINK_TRANSFORM+=	rm:-luuid
+.endif
 
 PLIST_SUBST=	SQUEAK_VERSION=$(SQUEAK_VERSION)
 

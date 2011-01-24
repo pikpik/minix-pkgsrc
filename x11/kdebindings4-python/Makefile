@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/11/15 22:59:03 abs Exp $
+# $NetBSD: Makefile,v 1.23 2011/01/18 09:14:13 wiz Exp $
 
 PKGNAME=	kdebindings4-python-${_KDE_VERSION}
 DISTNAME=	kdebindings-${_KDE_VERSION}
