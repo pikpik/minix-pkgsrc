@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.24 2010/06/13 22:42:10 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.25 2011/01/13 13:27:21 wiz Exp $
 
 BUILDLINK_TREE+=	png
 
@@ -10,9 +10,9 @@ BUILDLINK_ABI_DEPENDS.png+=	png>=1.5.0
 BUILDLINK_PKGSRCDIR.png?=	../../graphics/png
 
 # keep this in sync with the same code in Makefile
-.  if ${MACHINE_ARCH} != "i386" && ${MACHINE_ARCH} != "x86_64"
+.if ${MACHINE_ARCH} != "i386" && ${MACHINE_ARCH} != "x86_64"
 CPPFLAGS+=	-DPNG_NO_ASSEMBLER_CODE
-.  endif
+.endif
 
 # Some software directly tries to link against -lpng instead of
 # using pkg-config or libpng-config to find the proper arguments
