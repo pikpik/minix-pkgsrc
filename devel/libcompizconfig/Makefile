@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/11/15 22:56:40 abs Exp $
+# $NetBSD: Makefile,v 1.9 2011/01/13 13:37:24 wiz Exp $
 #
 
 PKGVER=		0.8.4
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config perl intltool gmake
+USE_TOOLS+=	pkg-config perl intltool gmake xgettext megmerge msgfmt
 USE_LANGUAGES+=	c c++
 
 PKG_SYSCONFSUBDIR?=	compizconfig
