@@ -4,7 +4,7 @@ DISTNAME=X11R${XORG_VER}
 PKGNAME=	x11-${XORG_VER}
 XORG_VER=	6.8.2
 CATEGORIES=	minix x11
-MASTER_SITES= http://www.minix3.org/distfiles/
+MASTER_SITES= ${MASTER_SITE_MINIX}
 EXTRACT_SUFX= .tar.gz
 
 MAINTAINER=	gautam.bt@gmail.com

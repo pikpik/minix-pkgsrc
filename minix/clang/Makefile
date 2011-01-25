@@ -7,7 +7,7 @@ MASTER_SITES=	http://llvm.org/releases/${PKGVERSION_NOREV}/
 DIST_SUBDIR=	${PKGNAME_NOREV}
 DISTFILES=	llvm-${PKGVERSION_NOREV}.tgz clang-${PKGVERSION_NOREV}.tgz
 
-MAINTAINER=	adam.hoka@gmail.com
+MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
 COMMENT=	Low Level Virtual Machine compiler infrastructure
 

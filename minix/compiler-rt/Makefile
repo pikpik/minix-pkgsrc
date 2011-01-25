@@ -3,7 +3,7 @@
 DISTNAME=	compiler-rt-r123836
 PKGREVISION=	1
 CATEGORIES=	minix
-MASTER_SITES=	http://www.minix3.org/distfiles/
+MASTER_SITES=	${MASTER_SITE_MINIX}
 
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
