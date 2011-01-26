@@ -142,6 +142,10 @@ LIBS+=		-larchive
 CPPFLAGS+=	-I${WRKDIR}/libfetch
 LDFLAGS+=	-L${WRKDIR}/libfetch
 
+.  if ${OPSYS} == "Minix"
+LIBS+=		-larchive -lbz2 -lz
+.  endif
+
 CONFIGURE_ENV+=	LIBS=${LIBS:Q}
 
 do-extract:
