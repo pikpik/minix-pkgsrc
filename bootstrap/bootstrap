@@ -632,6 +632,9 @@ Minix)
 	machine_arch=`uname -p`
 	check_compiler=yes
 	export CC="gcc"
+	export CPPFLAGS="-D_MINIX -D_POSIX_SOURCE"
+	export AR="ar"
+	;;
 MirBSD)
 	root_group=wheel
 	need_pax=yes
