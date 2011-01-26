@@ -52,6 +52,7 @@ __RCSID("$NetBSD: perform.c,v 1.98 2010/09/14 22:26:18 gdt Exp $");
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
+#include <assert.h>
 
 #include <archive.h>
 #include <archive_entry.h>
@@ -863,6 +864,33 @@ pkg_register_depends(struct pkg_task *pkg)
 	free(text);
 }
 
+static void
+normalise_version(char *release, char *version)
+{
+	char actual_version[50];
+	int l1, l2;
+
+	assert(release && version);
+
+	l1 = strlen(release);
+	l2 = strlen(version);
+
+	assert(l1 + l2 + 2 < sizeof(actual_version));
+
+	if(l1 > 0 && l2 > 0)
+		snprintf(actual_version, sizeof(actual_version),
+			"%s.%s", release, version);
+        else if(strlen(release) > 0)
+		strncpy(actual_version, release, sizeof(actual_version)-1);
+	else if(strlen(version) > 0)
+		strncpy(actual_version, version, sizeof(actual_version)-1);
+	else
+		errx(EXIT_FAILURE, "no version info");
+
+	strcpy(release, actual_version);
+	version[0] = '\0';
+}
+
 /*
  * Reduce the result from uname(3) to a canonical form.
  */
@@ -875,6 +903,7 @@ normalise_platform(struct utsname *host_name)
 	span = strspn(host_name->release, "0123456789.");
 	host_name->release[span] = '\0';
 #endif
+	normalise_version(host_name->release, host_name->version);
 }
 
 /*
@@ -885,7 +914,7 @@ check_platform(struct pkg_task *pkg)
 {
 	struct utsname host_uname;
 	const char *effective_arch;
-	int fatal;
+	int fatal = 0;
 
 	if (uname(&host_uname) < 0) {
 		if (Force) {
@@ -910,6 +939,8 @@ check_platform(struct pkg_task *pkg)
 		fatal = 1;
 	else
 		fatal = 0;
+
+	normalise_version(host_uname.release, host_uname.version);
 
 	if (fatal ||
 	    compatible_platform(OPSYS_NAME, host_uname.release,
