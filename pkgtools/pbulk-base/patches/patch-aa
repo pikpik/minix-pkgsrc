@@ -1,0 +1,36 @@
+$NetBSD$
+
+--- lib/event.c.orig	Wed Jan 26 19:50:21 2011
++++ lib/event.c
+@@ -32,6 +32,7 @@
+  */
+ 
+ #include <nbcompat.h>
++#include <fcntl.h>
+ 
+ #include <nbcompat/types.h>
+ #include <sys/ioctl.h>
+@@ -157,11 +158,22 @@ deferred_write(int fd, const void *buf, size_t buf_len
+ int
+ set_nonblocking(int fd)
+ {
++#ifdef FIONBIO
+ 	int ioctl_arg;
+-
+ 	ioctl_arg = 1;
+ 	if (ioctl(fd, FIONBIO, &ioctl_arg) == -1)
+ 		return -1;
++#else
++#ifdef O_NONBLOCK
++	int flags;
++	if((flags = fcntl(fd, F_GETFL, 0)) < 0)
++		return -1;
++	if(fcntl(fd, F_SETFL, flags | O_NONBLOCK) < 0)
++		return -1;
++#else
++#error No nonblocking primitive found.
++#endif
++#endif
+ 	return 0;
+ }
+ 

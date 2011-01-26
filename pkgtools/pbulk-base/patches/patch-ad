@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- pscan/pscan.c.orig	Wed Jan 26 19:51:46 2011
++++ pscan/pscan.c
+@@ -103,7 +103,7 @@ main(int argc, char **argv)
+ 		}
+ 	}
+ 
+-#if !defined(__INTERIX)
++#if !defined(__INTERIX) && !defined(__minix)
+ 	sa.sa_sigaction = NULL;
+ #endif
+ 	sa.sa_handler = SIG_IGN;
