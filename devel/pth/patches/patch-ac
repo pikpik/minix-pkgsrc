@@ -1,12 +1,13 @@
 $NetBSD$
 
---- pth_high.c.orig	2006-06-08 17:54:03.000000000 +0000
+--- pth_high.c.orig	Thu Jun  8 17:54:03 2006
 +++ pth_high.c
-@@ -184,6 +184,35 @@ int pth_sigwait_ev(const sigset_t *set, 
+@@ -184,6 +184,37 @@ int pth_sigwait_ev(const sigset_t *set, int *sigp, pth
      return 0;
  }
  
 +#ifdef HAVE_SYS_RESOURCE_H
++#ifndef __minix
 +/* Pth variant of wait4(2) */
 +pid_t pth_wait4(pid_t wpid, int *status, int options, struct rusage *rusage)
 +{
@@ -34,11 +35,12 @@ $NetBSD$
 +    return pid;
 +}
 +#endif
++#endif
 +
  /* Pth variant of waitpid(2) */
  pid_t pth_waitpid(pid_t wpid, int *status, int options)
  {
-@@ -334,9 +363,9 @@ int pth_select_ev(int nfd, fd_set *rfds,
+@@ -334,9 +365,9 @@ int pth_select_ev(int nfd, fd_set *rfds, fd_set *wfds,
              }
          }
          /* POSIX.1-2001/SUSv3 compliance */
@@ -51,7 +53,7 @@ $NetBSD$
          return 0;
      }
  
-@@ -349,17 +378,17 @@ int pth_select_ev(int nfd, fd_set *rfds,
+@@ -349,17 +380,17 @@ int pth_select_ev(int nfd, fd_set *rfds, fd_set *wfds,
      delay.tv_usec = 0;
      rtmp = NULL;
      if (rfds != NULL) {
@@ -72,7 +74,7 @@ $NetBSD$
          etmp = &espare;
      }
      while ((rc = pth_sc(select)(nfd, rtmp, wtmp, etmp, &delay)) < 0
-@@ -374,11 +403,11 @@ int pth_select_ev(int nfd, fd_set *rfds,
+@@ -374,11 +405,11 @@ int pth_select_ev(int nfd, fd_set *rfds, fd_set *wfds,
                   && pth_time_cmp(timeout, PTH_TIME_ZERO) == 0)) {
          /* pass-through immediate success */
          if (rfds != NULL)
@@ -87,7 +89,7 @@ $NetBSD$
          return rc;
      }
  
-@@ -411,9 +440,9 @@ int pth_select_ev(int nfd, fd_set *rfds,
+@@ -411,9 +442,9 @@ int pth_select_ev(int nfd, fd_set *rfds, fd_set *wfds,
          && pth_event_status(ev_timeout) == PTH_STATUS_OCCURRED) {
          selected = TRUE;
          /* POSIX.1-2001/SUSv3 compliance */
@@ -100,7 +102,23 @@ $NetBSD$
          rc = 0;
      }
      if (ev_extra != NULL && !selected)
-@@ -601,6 +630,7 @@ int pth_connect_ev(int s, const struct s
+@@ -557,6 +588,7 @@ int pth_poll_ev(struct pollfd *pfd, nfds_t nfd, int ti
+             if (pfd[i].events & POLLRDNORM)
+                 pfd[i].revents |= POLLRDNORM;
+             n++;
++#ifdef MSG_PEEK
+             /* support for POLLHUP */
+             if (   recv(pfd[i].fd, data, sizeof(data), MSG_PEEK) == -1
+                 && (   errno == ESHUTDOWN    || errno == ECONNRESET
+@@ -565,6 +597,7 @@ int pth_poll_ev(struct pollfd *pfd, nfds_t nfd, int ti
+                 pfd[i].revents &= ~(POLLRDNORM);
+                 pfd[i].revents |= POLLHUP;
+             }
++#endif
+         }
+         else if (FD_ISSET(pfd[i].fd, &wfds)) {
+             if (pfd[i].events & POLLOUT)
+@@ -601,6 +634,7 @@ int pth_connect_ev(int s, const struct sockaddr *addr,
      int rv, err;
      socklen_t errlen;
      int fdmode;
@@ -108,7 +126,7 @@ $NetBSD$
  
      pth_implicit_init();
      pth_debug2("pth_connect_ev: enter from thread \"%s\"", pth_current->name);
-@@ -615,8 +645,11 @@ int pth_connect_ev(int s, const struct s
+@@ -615,8 +649,11 @@ int pth_connect_ev(int s, const struct sockaddr *addr,
  
      /* try to connect */
      while (   (rv = pth_sc(connect)(s, (struct sockaddr *)addr, addrlen)) == -1
@@ -121,7 +139,7 @@ $NetBSD$
  
      /* restore filedescriptor mode */
      pth_shield { pth_fdmode(s, fdmode); }
-@@ -624,6 +657,13 @@ int pth_connect_ev(int s, const struct s
+@@ -624,6 +661,13 @@ int pth_connect_ev(int s, const struct sockaddr *addr,
      /* if it is still on progress wait until socket is really writeable */
      if (rv == -1 && errno == EINPROGRESS && fdmode != PTH_FDMODE_NONBLOCK) {
          if ((ev = pth_event(PTH_EVENT_FD|PTH_UNTIL_FD_WRITEABLE|PTH_MODE_STATIC, &ev_key, s)) == NULL)
