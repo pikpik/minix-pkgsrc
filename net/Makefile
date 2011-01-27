@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.862 2011/01/12 08:05:38 adam Exp $
+# $NetBSD: Makefile,v 1.863 2011/01/19 23:30:58 jmmv Exp $
 #
 
 COMMENT=	Networking tools
@@ -105,6 +105,7 @@ SUBDIR+=	ed2k-gtk-gui
 SUBDIR+=	edonkey2k
 SUBDIR+=	ekiga
 SUBDIR+=	entropy
+SUBDIR+=	ether2dns
 SUBDIR+=	etherape
 SUBDIR+=	ettercap
 SUBDIR+=	ettercap-NG
