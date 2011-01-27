@@ -1,4 +1,4 @@
-$NetBSD: patch-aq,v 1.1.1.1 2010/12/15 03:22:45 jnemeth Exp $
+$NetBSD: patch-aq,v 1.2 2011/01/16 17:52:43 jnemeth Exp $
 
 --- configure.orig	2011-01-12 16:52:31.000000000 +0000
 +++ configure
@@ -139,7 +139,7 @@ $NetBSD: patch-aq,v 1.1.1.1 2010/12/15 03:22:45 jnemeth Exp $
 +if test $ac_cv_header_sys_atomic_h = yes; then
 +
 +cat >>confdefs.h <<_ACEOF
-+#define HAVE_OS_ATOMIC_H 1
++#define HAVE_SYS_ATOMIC_H 1
 +_ACEOF
 +
 +fi
