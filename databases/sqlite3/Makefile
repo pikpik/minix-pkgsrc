@@ -36,6 +36,7 @@ CFLAGS+=		-DSQLITE_ENABLE_LOCKING_STYLE=0
 
 .if ${OPSYS} == "Minix"
 CPPFLAGS+=	-DSQLITE_OMIT_LOAD_EXTENSION -DSQLITE_MUTEX_NOOP
+CONFIGURE_ARGS+=	--enable-readline=no
 .endif
 
 # This define includes the sqlite3_unlock_notify() API in the build.
