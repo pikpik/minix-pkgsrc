@@ -1,5 +1,4 @@
-# $NetBSD: options.mk,v 1.18 2007/08/26 09:10:54 xtraeme Exp $
-#
+# $NetBSD: options.mk,v 1.1.1.1 2009/08/01 02:41:22 schnoebe Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.udns
 PKG_SUPPORTED_OPTIONS+=		inet6
