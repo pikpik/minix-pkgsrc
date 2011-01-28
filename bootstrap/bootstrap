@@ -634,7 +634,6 @@ Minix)
 	export CC="gcc"
 	export CPPFLAGS="-D_MINIX -D_POSIX_SOURCE"
 	export AR="ar"
-	[ -z "$fetch_cmd" ] && fetch_cmd="/usr/bin/fetch"
 	;;
 MirBSD)
 	root_group=wheel

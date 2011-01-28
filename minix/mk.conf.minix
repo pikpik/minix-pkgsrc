@@ -1,4 +1,5 @@
 
+TOOLS_PLATFORM.ftp?=           /usr/bin/fetch
 DISTDIR=/usr/pkgsrc/distfiles
 SKIP_LICENSE_CHECK=yes
 IS_BUILTIN.dl?=    yes
