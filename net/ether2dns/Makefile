@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/01/26 21:39:09 is Exp $
 #
 
-DISTNAME=		ether2dns-1.5
+DISTNAME=		ether2dns-1.6
 CATEGORIES=		net
 MASTER_SITES=		http://theory.cs.uni-bonn.de/~ignatios/
 EXTRACT_SUFX=		.shar
