@@ -1,0 +1,6 @@
+
+DISTDIR=/usr/pkgsrc/distfiles
+SKIP_LICENSE_CHECK=yes
+IS_BUILTIN.dl?=    yes
+MASTER_SITE_BACKUP=http://www.minix3.org/distfiles-backup/
+ALLOW_VULNERABLE_PACKAGES=      yes
