@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.config.in.orig	2008-12-07 01:58:20.000000000 +0000
+--- Makefile.config.in.orig	Sun Dec  7 01:58:20 2008
 +++ Makefile.config.in
 @@ -24,7 +24,7 @@ DEFAULT_TARGET = nonmerge
  # and skip it on those systems unless you want to debug it and fix it.
@@ -29,7 +29,7 @@ $NetBSD$
  #Solaris:
  #INSTALL = /usr/ucb/install
  #Tru64:
-@@ -112,7 +112,7 @@ INSTALL = $(SRCDIR)/buildtools/install.s
+@@ -112,7 +112,7 @@ INSTALL = $(SRCDIR)/buildtools/install.sh
  
  # STRIPFLAG is the option you pass to the above install program to make it
  # strip unnecessary information out of binaries.
@@ -65,14 +65,14 @@ $NetBSD$
  # You need -nostart instead of -shared on BeOS.  Though the BeOS compiler is
  # ostensibly gcc, it has the -nostart option, which is not mentioned in gcc
  # documentation and doesn't exist in at least one non-BeOS installation.
-@@ -261,6 +263,19 @@ LDRELOC = NONE
+@@ -261,7 +263,20 @@ LDRELOC = NONE
  #LDRELOC = ld --reloc
  #LDRELOC = ld -r
  
 +ifeq ($(OPSYS),SunOS)
 +LDSHLIB = -Wl,-B,dynamic,-G,-h,$(SONAME) 
 +endif
-+
+ 
 +ifeq ($(OPSYS),Darwin)
 +LDSHLIB = -dynamiclib -install_name $(PREFIX)/lib/libnetpbm.$(MAJ).dylib \
 +	-compatibility_version $(MAJ) -current_version $(MAJ).$(MIN)
@@ -82,10 +82,11 @@ $NetBSD$
 +# random base address between 0x6B000000 and 0x6D000000
 +LDSHLIB+= -Wl,--image-base,$$(($$RANDOM %64/2*1048576+1795162112))
 +endif
- 
++
  # On older systems, you have to make shared libraries out of position
  # independent code, so you need -fpic or fPIC here.  (The rule is: if
-@@ -283,11 +298,23 @@ LDRELOC = NONE
+ # -fpic works, use it.  If it bombs, go to fPIC).  On newer systems,
+@@ -283,11 +298,27 @@ LDRELOC = NONE
  CFLAGS_SHLIB = 
  # Gcc:
  #CFLAGS_SHLIB = -fpic
@@ -107,10 +108,14 @@ $NetBSD$
 +CFLAGS_SHLIB = # none!
 +endif
 +
++ifeq ($(OPSYS),Minix)
++CFLAGS_SHLIB = # none!
++endif
++
  # SHLIB_CLIB is the link option to include the C library in a shared library,
  # normally "-lc".  On typical systems, this serves no purpose.  On some,
  # though, it causes information about which C library to use to be recorded
-@@ -356,8 +383,8 @@ TIFFHDR_DIR =
+@@ -356,8 +387,8 @@ TIFFHDR_DIR =
  #TIFFLIB = libtiff.so
  #TIFFHDR_DIR = /usr/include/libtiff
  #NetBSD:
@@ -121,7 +126,7 @@ $NetBSD$
  # OSF, Tru64:
  #TIFFLIB = /usr/local1/DEC/lib/libtiff.so
  #TIFFHDR_DIR = /usr/local1/DEC/include
-@@ -387,8 +414,8 @@ JPEGHDR_DIR =
+@@ -387,8 +418,8 @@ JPEGHDR_DIR =
  #JPEGLIB = libjpeg.so
  #JPEGHDR_DIR = /usr/include/jpeg
  # Netbsd:
@@ -132,7 +137,7 @@ $NetBSD$
  # OSF, Tru64:
  #JPEGLIB = /usr/local1/DEC/libjpeg.so
  #JPEGHDR_DIR = /usr/local1/DEC/include
-@@ -415,12 +442,12 @@ JPEGHDR_DIR =
+@@ -415,12 +446,12 @@ JPEGHDR_DIR =
  
  PNGLIB = NONE
  PNGHDR_DIR =
@@ -148,7 +153,7 @@ $NetBSD$
  # OSF/Tru64:
  #PNGLIB = /usr/local1/DEC/lib/libpng$(PNGVER).so
  #PNGHDR_DIR = /usr/local1/DEC/include
-@@ -432,8 +459,8 @@ PNGVER = 
+@@ -432,8 +463,8 @@ PNGVER = 
  #
  # If you have 'libpng-config' (see above), these are irrelevant.
  
@@ -159,7 +164,7 @@ $NetBSD$
  #ZLIB = libz.so
  
  # The JBIG lossless image compression library (aka JBIG-KIT):
-@@ -442,8 +469,8 @@ JBIGLIB = $(BUILDDIR)/converter/other/jb
+@@ -442,8 +473,8 @@ JBIGLIB = $(BUILDDIR)/converter/other/jbig/libjbig.a
  JBIGHDR_DIR = $(SRCDIR)/converter/other/jbig
  
  # The Jasper JPEG-2000 image compression library (aka JasPer):
@@ -170,7 +175,7 @@ $NetBSD$
  # JASPERDEPLIBS is the libraries (-l options or file names) on which
  # The Jasper library depends -- i.e. what you have to link into any
  # executable that links in the Jasper library.
-@@ -488,7 +515,7 @@ OMIT_NETWORK =
+@@ -488,7 +519,7 @@ OMIT_NETWORK =
  # built into the standard C library, so this can be null.  This is irrelevant
  # if OMIT_NETWORK is "y".
  
@@ -179,7 +184,7 @@ $NetBSD$
  # Solaris, SunOS:
  #NETWORKLD = -lsocket -lnsl
  # SCO:
-@@ -542,7 +569,7 @@ SUFFIXMANUALS5 = 5
+@@ -542,7 +573,7 @@ SUFFIXMANUALS5 = 5
  #Netpbm library functions.  The value is used only in make file tests.
  # "unixshared" means a unix-style shared library, typically named like 
  # libxyz.so.2.3
@@ -188,7 +193,14 @@ $NetBSD$
  # "unixstatic" means a unix-style static library, (like libxyz.a)
  #NETPBMLIBTYPE = unixstatic
  # "dll" means a Windows DLL shared library
-@@ -553,7 +580,7 @@ NETPBMLIBTYPE = unixshared
+@@ -550,10 +581,14 @@ NETPBMLIBTYPE = unixshared
+ # "dylib" means a Darwin/Mac OS shared library
+ #NETPBMLIBTYPE = dylib
+ 
++ifeq ($(OPSYS),Minix)
++NETPBMLIBTYPE = unixstatic
++endif
++
  #NETPBMLIBSUFFIX is the suffix used on whatever kind of library is 
  #selected above.  All this is used for is to construct library names.
  #The make files never examine the actual value.

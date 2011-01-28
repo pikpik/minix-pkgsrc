@@ -1,0 +1,37 @@
+$NetBSD$
+
+--- lib/libsystem.c.orig	Sat Jul 10 01:38:01 2010
++++ lib/libsystem.c
+@@ -201,22 +201,32 @@ signalName(unsigned int const signalClass) {
+         return "SIGTTIN";
+     case SIGTTOU: /* POSIX.1 */
+         return "SIGTTOU";
++#ifdef SIGURG
+     case SIGURG:
+         return "SIGURG";
++#endif
++#ifdef SIGXPU
+     case SIGXCPU:
+         return "SIGXCPU";
++#endif
++#ifdef SIGXFSZ
+     case SIGXFSZ:
+         return "SIGXFSZ";
++#endif
+     case SIGVTALRM:
+         return "SIGVTALRM";
+     case SIGPROF:
+         return "SIGPROF";
+     case SIGWINCH:
+         return "SIGWINCH";
++#ifdef SIGIO
+     case SIGIO:
+         return "SIGIO";
++#endif
++#ifdef SIGSYS
+     case SIGSYS:
+         return "SIGSYS";
++#endif
+     default:
+         return "???";
+ 

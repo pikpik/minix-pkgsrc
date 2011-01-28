@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- converter/ppm/ppmtompeg/psocket.c.orig	Sat Aug 19 03:12:28 2006
++++ converter/ppm/ppmtompeg/psocket.c
+@@ -287,7 +287,9 @@ ConnectToSocket(const char *      const machineName, 
+             struct sockaddr_in  nameEntry;
+             
+             nameEntry.sin_family = AF_INET;
++#ifndef __minix
+             memset((void *) nameEntry.sin_zero, 0, 8);
++#endif
+             memcpy((void *) &(nameEntry.sin_addr.s_addr),
+                    (void *) (*hostEnt)->h_addr_list[0],
+                    (size_t) (*hostEnt)->h_length);

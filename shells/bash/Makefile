@@ -77,7 +77,7 @@ BUILDLINK_API_DEPENDS.readline+=	readline>=6.0
 
 .include "../../devel/readline/buildlink3.mk"
 .elif ${OPSYS} == "Minix"
-CONFIGURE_ARGS+=	bash_cv_func_snprintf=yes
+CONFIGURE_ARGS+=	bash_cv_func_snprintf=yes --with-bash-malloc=no
 .endif
 
 post-install:

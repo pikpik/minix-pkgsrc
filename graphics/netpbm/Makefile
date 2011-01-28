@@ -26,6 +26,7 @@ REPLACE_PERL+=	editor/ppmfade editor/ppmshadow editor/pnmquant \
 STAGEDIR=	${WRKDIR}/staging
 
 LIBS.SunOS+=	-lsocket -lnsl
+LIBS.Minix=	-lz
 MAKE_ENV+=	NETWORKLD=${LIBS:Q}
 MAKE_FLAGS+=	PKGMANDIR=${PKGMANDIR}
 
@@ -53,6 +54,14 @@ SUBST_FILES.rgb_txt=	pm_config.in.h
 SUBST_SED.rgb_txt+=	-e 's,@@PREFIX@@,${PREFIX},'
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Minix"
+SUBST_CLASSES+=	tj 
+SUBST_STAGE.tj=	post-patch 
+SUBST_MESSAGE.tj=skipthinkjettopbm
+SUBST_FILES.tj=	converter/pbm/Makefile
+SUBST_SED.tj+=	-e 's/^  PORTBINARIES .= thinkjettopbm/\#&/' 
+.endif
 
 # Fiasco fails to compile on Darwin-8.x.
 PLIST_VARS+=	fiasco
