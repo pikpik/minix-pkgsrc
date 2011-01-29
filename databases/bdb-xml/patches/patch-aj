@@ -1,0 +1,14 @@
+$NetBSD$
+
+fix build with gcc4.3
+
+--- ../src/dbxml/IndexSpecification.hpp.orig	2003-09-17 13:08:51.000000000 +0000
++++ ../src/dbxml/IndexSpecification.hpp
+@@ -12,6 +12,7 @@
+ 
+ #include <vector>
+ #include <string>
++#include <cstring>
+ #include <map>
+ #include "ID.hpp"
+ #include "Name.hpp"
