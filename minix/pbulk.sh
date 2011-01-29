@@ -35,7 +35,7 @@ echo Adding to $MKCONF
 
 echo "# These settings added by Minix pbulk.sh" >>$MKCONF
 echo >>$MKCONF .ifdef BSD_PKG_MK
-echo "WRKOBJDIR=$WRKOBJDIR"
+echo "WRKOBJDIR=$WRKOBJDIR" >>$MKCONF
 cat $MINIXMKCONF >>$MKCONF
 echo >>$MKCONF .endif
 
