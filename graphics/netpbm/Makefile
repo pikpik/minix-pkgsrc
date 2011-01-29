@@ -26,7 +26,7 @@ REPLACE_PERL+=	editor/ppmfade editor/ppmshadow editor/pnmquant \
 STAGEDIR=	${WRKDIR}/staging
 
 LIBS.SunOS+=	-lsocket -lnsl
-LIBS.Minix=	-lz
+
 MAKE_ENV+=	NETWORKLD=${LIBS:Q}
 MAKE_FLAGS+=	PKGMANDIR=${PKGMANDIR}
 
@@ -56,6 +56,7 @@ SUBST_SED.rgb_txt+=	-e 's,@@PREFIX@@,${PREFIX},'
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "Minix"
+LDFLAGS+=	-lz -ljpeg
 SUBST_CLASSES+=	tj 
 SUBST_STAGE.tj=	post-patch 
 SUBST_MESSAGE.tj=skipthinkjettopbm
