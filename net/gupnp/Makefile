@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/06/13 22:45:10 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/08/16 09:56:22 wiz Exp $
 #
 
 DISTNAME=	gupnp-0.13.3
@@ -18,6 +18,15 @@ PKG_DESTDIR_SUPPORT= user-destdir
 
 PKGCONFIG_OVERRIDE+=	gupnp-1.0.pc.in
 REPLACE_PYTHON=	tools/gupnp-binding-tool
+
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(OPSYS:M*BSD) || ${OPSYS} == "DragonFly"
+pre-configure:
+	cp ${FILESDIR}/uuid.pc ${BUILDLINK_DIR}/lib/pkgconfig/
+.else
+.include "../../devel/libuuid/buildlink3.mk"
+.endif
 
 .include "../../lang/python/application.mk"
 .include "../../devel/glib2/buildlink3.mk"
