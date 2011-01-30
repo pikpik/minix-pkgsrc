@@ -1,6 +1,6 @@
 # $NetBSD$
 
-DISTNAME=	django-cms-2.0.2
+DISTNAME=	django-cms-2.1.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	www python
 MASTER_SITES=	http://pypi.python.org/packages/source/d/django-cms/
