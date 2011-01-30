@@ -644,3 +644,5 @@ MASTER_SITE_BACKUP?=	\
 	ftp://ftp.NetBSD.org/pub/NetBSD/packages/distfiles/ \
 	http://ftp.NetBSD.org/pub/NetBSD/packages/distfiles/ \
 	ftp://ftp.FreeBSD.org/pub/FreeBSD/distfiles/
+
+MASTER_SITE_MINIX=http://www.minix3.org/distfiles-minix/
