@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.17 2011/01/13 13:36:56 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2011/01/23 07:55:12 markd Exp $
 
 DISTNAME=	kdegraphics-${_KDE_VERSION}
 CATEGORIES=	graphics
 COMMENT=	Graphical tools for the KDE desktop
 
 .include "../../meta-pkgs/kde4/Makefile.kde4"
+
+PKGREVISION=	1
 
 # BUILD_MAKE_FLAGS+= VERBOSE=1
 
