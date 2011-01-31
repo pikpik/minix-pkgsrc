@@ -634,6 +634,8 @@ Minix)
 	export CC="gcc"
 	export CPPFLAGS="-D_MINIX -D_POSIX_SOURCE"
 	export AR="ar"
+	export LD="ld"
+	export NM="nm"
 	[ -z "$fetch_cmd" ] && fetch_cmd=/usr/bin/fetch
 	;;
 MirBSD)
