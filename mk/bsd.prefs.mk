@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.311 2010/08/24 19:08:28 bad Exp $
+# $NetBSD: bsd.prefs.mk,v 1.312 2011/01/23 19:07:25 agc Exp $
 #
 # This file includes the mk.conf file, which contains the user settings.
 #
@@ -115,7 +115,7 @@ _OS_VERSION!=		/usr/bin/oslevel
 .  else
 _OS_VERSION!=		echo `${UNAME} -v`.`${UNAME} -r`
 .  endif
-OS_VERSION=		${_OS_VERSION:C/\([0-9]*\.[0-9]*\).*/\1/}
+OS_VERSION=		${_OS_VERSION:C/([0-9]*\.[0-9]*).*/\1/}
 LOWER_OPSYS_VERSUFFIX=	${_OS_VERSION}
 LOWER_OPSYS?=		aix
 LOWER_VENDOR?=		ibm
