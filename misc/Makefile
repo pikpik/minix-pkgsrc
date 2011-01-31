@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.349 2010/09/12 01:52:07 taca Exp $
+# $NetBSD: Makefile,v 1.350 2011/01/27 04:57:29 jnemeth Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -47,6 +47,8 @@ SUBDIR+=	dvorakng
 SUBDIR+=	dvtm
 SUBDIR+=	dync
 SUBDIR+=	easymenu
+SUBDIR+=	ec2-ami-tools
+SUBDIR+=	ec2-api-tools
 SUBDIR+=	edict
 SUBDIR+=	elizatalk
 SUBDIR+=	elscreen
