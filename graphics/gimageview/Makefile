@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2010/12/23 11:44:37 dsainty Exp $
+# $NetBSD: Makefile,v 1.65 2011/01/13 13:38:02 wiz Exp $
 
 DISTNAME=	gimageview-0.2.27
 PKGREVISION=	21
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkmmviewer/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gtkmmviewer.sourceforge.net/
 COMMENT=	GTK+ based image viewer with tabbed browsing
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
