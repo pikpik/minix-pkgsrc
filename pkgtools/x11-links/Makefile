@@ -42,6 +42,7 @@ PKG_FAIL_REASON+=	"pkgsrc installations is not supported!"
 .endif
 .if ${OPSYS} == "Minix"
 DEPENDS+=	x11-[0-9]*:../../minix/x11
+.include "../../devel/pth/buildlink3.mk"
 .endif
 
 .if ${OPSYS} == "IRIX"
