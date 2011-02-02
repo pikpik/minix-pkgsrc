@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2010/11/15 22:56:29 abs Exp $
+# $NetBSD: Makefile,v 1.14 2011/01/13 13:37:15 wiz Exp $
 
 PKGNAME=	pidgin-sametime-${PIDGIN_VERSION}
-PKGREVISION=	3
 COMMENT=	Lotus Sametime plugin for the Pidgin instant messenger
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -14,7 +13,6 @@ CONFIGURE_ARGS+=	--enable-meanwhile
 
 BUILD_DIRS=		libpurple/protocols/sametime
 
-BUILDLINK_API_DEPENDS.libpurple+=	libpurple-${PIDGIN_VERSION}{,nb*}
 .include "../../chat/libpurple/buildlink3.mk"
 .include "../../chat/meanwhile/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
