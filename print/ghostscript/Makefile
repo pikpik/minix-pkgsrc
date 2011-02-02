@@ -65,6 +65,14 @@ CFLAGS+=		-fPIC
 .endif
 .endif
 
+.if ${OPSYS} == "Minix"
+SUBST_CLASSES+=		lzconfig
+SUBST_STAGE.lzconfig=	post-extract
+SUBST_MESSAGE.lzconfig=	Forcing -lz in configure for libtiff check
+SUBST_FILES.lzconfig=	configure
+SUBST_SED.lzconfig=	-e "s/^LIBS=.-ltiff -ljpeg/& -lz /"
+.endif
+
 # Interim IRIX build fix, the real problem is that fontconfig.pc doesn't
 # require linking against libiconv when it should do so.
 .if ${OPSYS} == "IRIX"
