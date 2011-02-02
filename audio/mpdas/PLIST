@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/mpdas
+man/man1/mpdas.1
+share/doc/mpdas/README
+share/examples/mpdas/mpdasrc.example
+share/examples/rc.d/mpdas
