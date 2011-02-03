@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.183 2010/06/01 22:02:09 markd Exp $
+# $NetBSD: Makefile,v 1.184 2010/09/24 01:31:59 chs Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -76,7 +76,9 @@ SUBDIR+=	linuxppc_lib
 SUBDIR+=	lrmi
 SUBDIR+=	m1
 SUBDIR+=	makeppf
+SUBDIR+=	mame
 SUBDIR+=	mednafen
+SUBDIR+=	mess
 SUBDIR+=	minivmac
 SUBDIR+=	mmix
 SUBDIR+=	nestopia
@@ -100,8 +102,6 @@ SUBDIR+=	pearpc
 SUBDIR+=	qemu
 SUBDIR+=	raine
 #SUBDIR+=	sap	# only contains a Makefile.common
-SUBDIR+=	sdlmame
-SUBDIR+=	sdlmess
 SUBDIR+=	simh
 SUBDIR+=	simulavr
 SUBDIR+=	ski
