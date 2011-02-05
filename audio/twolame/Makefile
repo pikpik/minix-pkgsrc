@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2009/01/27 00:49:43 jmcneill Exp $
+# $NetBSD: Makefile,v 1.6 2009/02/21 13:22:43 wiz Exp $
 #
 
-DISTNAME=	twolame-0.3.12
-PKGREVISION=	1
+DISTNAME=	twolame-0.3.13
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=twolame/}
 
