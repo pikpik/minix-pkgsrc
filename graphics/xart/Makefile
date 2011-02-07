@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2010/12/23 11:44:46 dsainty Exp $
+# $NetBSD: Makefile,v 1.52 2011/01/13 13:38:23 wiz Exp $
 #
 
 DISTNAME=	xart19980415
@@ -11,6 +11,9 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linux01.gwdg.de/~rhohen/linux.html
 COMMENT=	Paint program (enhanced xpaint)
+# quite like isc, but copyright needs to mention in documentation as well
+# see the bottom of the included "Help.txt" file
+#LICENSE=	isc
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
