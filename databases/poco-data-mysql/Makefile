@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/02/06 06:02:02 schnoebe Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/06 14:42:17 wiz Exp $
 #
 
 PKGNAME=	poco-data-mysql-${POCO_VERSION}

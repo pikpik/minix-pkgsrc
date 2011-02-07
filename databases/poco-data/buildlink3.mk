@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2011/02/06 06:08:07 schnoebe Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2011/02/06 14:42:16 wiz Exp $
 
 BUILDLINK_TREE+=	poco-data
 
