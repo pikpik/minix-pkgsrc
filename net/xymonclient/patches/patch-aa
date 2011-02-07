@@ -47,7 +47,7 @@ $NetBSD$
  if test -z "$BBTOPDIR"
  then
  	read BBTOPDIR
-@@ -158,6 +160,7 @@ echo "# Toplevel dir"                   
+@@ -158,9 +160,12 @@ echo "# Toplevel dir"                   
  echo "BBTOPDIR = $BBTOPDIR"              >>Makefile
  echo "# Server home dir for etc/, www/"  >>Makefile
  echo "BBHOME = $BBHOME"                  >>Makefile
@@ -55,7 +55,12 @@ $NetBSD$
  echo ""                                  >>Makefile
  echo "# Xymon settings follows"          >>Makefile
  echo "#"                                 >>Makefile
-@@ -194,6 +197,9 @@ fi
++echo "# Xymon Logdir"                    >>Makefile
++echo "BBLOGDIR = $BBLOGDIR"              >>Makefile
+ echo "# Username running Xymon"          >>Makefile
+ echo "BBUSER = $BBUSER"                  >>Makefile
+ echo "# Xymon server IP-address"         >>Makefile
+@@ -194,6 +199,9 @@ fi
  if test "$INSTALLETCDIR" != ""; then
  	echo "INSTALLETCDIR = $INSTALLETCDIR"   >>Makefile
  fi
