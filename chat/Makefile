@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.158 2011/02/06 21:06:33 schnoebe Exp $
+# $NetBSD: Makefile,v 1.159 2011/02/06 21:15:46 schnoebe Exp $
 #
 
 COMMENT=	Communication programs
@@ -104,6 +104,7 @@ SUBDIR+=	silc-client
 SUBDIR+=	silc-client-icb
 SUBDIR+=	silc-server
 SUBDIR+=	sirc
+SUBDIR+=	spectrum
 SUBDIR+=	smirk
 SUBDIR+=	telepathy-farsight
 SUBDIR+=	telepathy-gabble
