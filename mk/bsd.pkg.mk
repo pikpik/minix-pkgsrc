@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1974 2010/08/24 19:08:28 bad Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1975 2010/11/03 18:02:40 adam Exp $
 #
 # This file is in the public domain.
 #
@@ -640,7 +640,7 @@ _BIN_INSTALL_FLAGS+=	-A
 .endif
 _BIN_INSTALL_FLAGS+=	${PKG_ARGS_ADD}
 
-_SHORT_UNAME_R=	${:!${UNAME} -r!:C@\.([0-9]*)[_.].*@.\1@} # n.n[_.]anything => n.n
+_SHORT_UNAME_R=	${:!${UNAME} -r!:C@\.([0-9]*)[_.-].*@.\1@} # n.n[_.]anything => n.n
 
 .include "install/bin-install.mk"
 
