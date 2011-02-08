@@ -5,3 +5,6 @@ SKIP_LICENSE_CHECK=yes
 IS_BUILTIN.dl?=    yes
 MASTER_SITE_BACKUP=http://www.minix3.org/distfiles-backup/
 ALLOW_VULNERABLE_PACKAGES=      yes
+PKG_OPTIONS.groff=-x11 -groff-docs
+PKG_OPTIONS.scmgit=-python -scmgit-gui
+
