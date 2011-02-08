@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2008/06/15 16:13:09 obache Exp $
+# $NetBSD: Makefile,v 1.21 2010/07/24 08:45:14 wiz Exp $
 #
 
 DISTNAME=		cabextract-1.3
+PKGREVISION=		1
 CATEGORIES=		archivers
 MASTER_SITES=		http://www.cabextract.org.uk/
 
