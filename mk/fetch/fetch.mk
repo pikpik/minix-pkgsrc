@@ -192,23 +192,29 @@ fetch-check-interactive: .USEBEFORE
 #	connections after the given amount of seconds.
 #       The specific behavior depends on the command used.
 #
+# FETCH_USE_IPV4_ONLY, if defined, will cause the fetch command to force
+#	connecting to only IPv4 addresses.
+#
 
 # If this host is behind a filtering firewall, use passive ftp(1)
 _FETCH_BEFORE_ARGS.ftp=		${PASSIVE_FETCH:D-p} \
-				${FETCH_TIMEOUT:D-q ${FETCH_TIMEOUT}}
+				${FETCH_TIMEOUT:D-q ${FETCH_TIMEOUT}} \
+				${FETCH_USE_IPV4_ONLY:D-4}
 _FETCH_AFTER_ARGS.ftp=		# empty
 _FETCH_RESUME_ARGS.ftp=		-R
 _FETCH_OUTPUT_ARGS.ftp=		-o
 _FETCH_CMD.ftp=			${TOOLS_PATH.ftp}
 
-_FETCH_BEFORE_ARGS.fetch=	${FETCH_TIMEOUT:D-T ${FETCH_TIMEOUT}}
+_FETCH_BEFORE_ARGS.fetch=	${FETCH_TIMEOUT:D-T ${FETCH_TIMEOUT}} \
+				${FETCH_USE_IPV4_ONLY:D-4}
 _FETCH_AFTER_ARGS.fetch=	# empty
 _FETCH_RESUME_ARGS.fetch=	-r
 _FETCH_OUTPUT_ARGS.fetch=	-o
 _FETCH_CMD.fetch=		${TOOLS_PATH.fetch}
 
 _FETCH_BEFORE_ARGS.wget=	${PASSIVE_FETCH:D--passive-ftp} \
-				${FETCH_TIMEOUT:D--timeout=${FETCH_TIMEOUT}}
+				${FETCH_TIMEOUT:D--timeout=${FETCH_TIMEOUT}} \
+				${FETCH_USE_IPV4_ONLY:D--inet4-only}
 _FETCH_AFTER_ARGS.wget=		# empty
 _FETCH_RESUME_ARGS.wget=	-c
 _FETCH_OUTPUT_ARGS.wget=	-O
@@ -217,7 +223,8 @@ _FETCH_CMD.wget=		${PREFIX}/bin/wget
 _FETCH_BEFORE_ARGS.curl=	${PASSIVE_FETCH:D--ftp-pasv} \
 				--fail --location \
 				${FETCH_TIMEOUT:D--connect-timeout ${FETCH_TIMEOUT}} \
-				${FETCH_TIMEOUT:D--speed-time ${FETCH_TIMEOUT}}
+				${FETCH_TIMEOUT:D--speed-time ${FETCH_TIMEOUT}} \
+				${FETCH_USE_IPV4_ONLY:D--ipv4}
 _FETCH_AFTER_ARGS.curl=		-O # must be here to honor -o option
 _FETCH_RESUME_ARGS.curl=	-C -
 _FETCH_OUTPUT_ARGS.curl=	-o
