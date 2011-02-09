@@ -8,3 +8,6 @@ ALLOW_VULNERABLE_PACKAGES=      yes
 PKG_OPTIONS.groff=-x11 -groff-docs
 PKG_OPTIONS.scmgit=-python -scmgit-gui
 
+AR=ar
+LD=ld
+
