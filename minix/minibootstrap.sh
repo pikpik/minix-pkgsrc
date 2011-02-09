@@ -10,5 +10,5 @@ then	No $MKCONF. Please run me from pkgsrc/minix/.
 	exit 1
 fi
 
-cp $MKCONF /usr/pkg/etc/
+cp $MKCONF /usr/pkg/etc/mk.conf
 
