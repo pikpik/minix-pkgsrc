@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.350 2011/01/27 04:57:29 jnemeth Exp $
+# $NetBSD: Makefile,v 1.351 2011/01/31 20:59:51 jym Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -80,7 +80,6 @@ SUBDIR+=	gone
 SUBDIR+=	gperiodic
 SUBDIR+=	granulate
 SUBDIR+=	gwaei
-SUBDIR+=	gxmame
 SUBDIR+=	hanzim
 SUBDIR+=	heyu
 SUBDIR+=	ibutton-pdkit
