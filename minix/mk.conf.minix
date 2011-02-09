@@ -1,3 +1,11 @@
+.ifdef BSD_PKG_MK
+
+AR=ar
+LD=ld
+CC= gcc
+BINUTILS_PROGRAM_PREFIX=
+COMPILER_TYPE=gnu
+PKGSRC_COMPILER=    gcc
 
 TOOLS_PLATFORM.ftp?=           /usr/bin/fetch
 DISTDIR=/usr/pkgsrc/distfiles
@@ -5,9 +13,35 @@ SKIP_LICENSE_CHECK=yes
 IS_BUILTIN.dl?=    yes
 MASTER_SITE_BACKUP=http://www.minix3.org/distfiles-backup/
 ALLOW_VULNERABLE_PACKAGES=      yes
+
 PKG_OPTIONS.groff=-x11 -groff-docs
 PKG_OPTIONS.scmgit=-python -scmgit-gui
 
-AR=ar
-LD=ld
+CURSES_DEFAULT?= ncurses
 
+EXTRACT_USING?=    bsdtar
+FETCH_USING?=        fetch
+
+LOCALBASE=        /usr/pkg
+SITE_MINIX=http://www.minix3.org/
+MASTER_SITE_BACKUP=${SITE_MINIX}/distfiles-backup/
+MASTER_SITE_MINIX=${SITE_MINIX}/distfiles-minix/
+PACKAGES=${PKGSRCDIR}/packages/${OS_VERSION}/${MACHINE_ARCH}
+PKGMANDIR=        man
+
+PKG_DBDIR=        /usr/var/db/pkg
+PKG_DEFAULT_OPTIONS?= -inet6
+PKG_OPTIONS.ghostscript=-fontconfig
+PKG_RCD_SCRIPTS=YES
+.if exists(/usr/sbin/pkg_add)
+PKG_TOOLS_BIN=        /usr/sbin
+.else
+PKG_TOOLS_BIN=        ${LOCALBASE}/sbin
+.endif
+
+RCD_SCRIPTS_DIR=${LOCALBASE}/etc/rc.d
+
+VARBASE=        /usr/var
+WRKOBJDIR?=    /usr/tmp/work
+
+.endif

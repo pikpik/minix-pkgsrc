@@ -1,0 +1,8 @@
+WRKOBJDIR = /usr/tmp/pbulk-workdir
+PKGSRCDIR = /usr/pkgsrc
+DISTDIR = ${PKGSRCDIR}/distfiles
+PACKAGES = ${PKGSRCDIR}/packages-pbulk/${OS_VERSION}/${MACHINE_ARCH}
+FAILOVER_FETCH= yes
+SKIP_LICENSE_CHECK=                     yes
+ALLOW_VULNERABLE_PACKAGES=      yes
+PKG_DEVELOPER?= yes
