@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/06/20 01:09:12 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2010/10/27 15:43:55 wiz Exp $
 
 DISTNAME=	gettext-0.14.6
 PKGNAME=	gettext-tools-0.14.6
@@ -28,6 +28,7 @@ CONFIGURE_ENV+=		HAVE_GCJ_IN_PATH=
 CONFIGURE_ENV+=		HAVE_JAVAC_IN_PATH=
 CONFIGURE_ENV+=		HAVE_JIKES_IN_PATH=
 CONFIGURE_ENV+=		ac_cv_libexpat=no
+LDFLAGS.AIX+=		-Wl,-brtl
 
 SHLIBTOOL_OVERRIDE=	# empty
 INFO_FILES=		yes
