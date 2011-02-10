@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10090 2011/02/09 09:13:11 adam Exp $
+$NetBSD: TODO,v 1.10092 2011/02/09 16:25:52 taca Exp $
 
 Suggested new packages
 ======================
@@ -660,7 +660,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o gcombust-0.1.55
 	o gcompris-9.5
 	o gcpio-2.10
-	o gdal-lib-1.8.0
 	o gdb-7.2
 	o gdeskcal-1.01
 	o gdl-2.30.1 [GNOME 2.32]
@@ -1054,7 +1053,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o openmsx-0.7.0
 	o openoffice3-3.3
 	o openssh-5.8p1
-	o openssl-1.0.0c
+	o openssl-1.0.0d
 	o open-vm-tools-2010.09.19.301124
 	o orca-2.32.1 [GNOME 2.32]
 	o oroborus-2.0.18
