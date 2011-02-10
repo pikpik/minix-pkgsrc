@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.361 2010/12/22 15:36:07 taca Exp $
+# $NetBSD: Makefile,v 1.362 2011/02/06 06:09:52 schnoebe Exp $
 #
 
 COMMENT=	Databases
@@ -212,9 +212,9 @@ SUBDIR+=	phpldapadmin
 SUBDIR+=	phpmyadmin
 SUBDIR+=	phppgadmin
 SUBDIR+=	poco-data
-SUBDIR+=	poco-data-sqlite
 SUBDIR+=	poco-data-mysql
 SUBDIR+=	poco-data-odbc
+SUBDIR+=	poco-data-sqlite
 SUBDIR+=	postgresql-postgis
 SUBDIR+=	postgresql83
 SUBDIR+=	postgresql83-adminpack
