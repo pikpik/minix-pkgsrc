@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-makefile,v 1.1.1.1 2011/02/03 22:22:36 wiz Exp $
+
+First chunk accepted upstream, second pkgsrc-only.
 
 --- makefile.orig	2010-12-29 22:50:26.000000000 +0000
 +++ makefile
