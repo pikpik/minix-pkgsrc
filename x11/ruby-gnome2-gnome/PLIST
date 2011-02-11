@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST,v 1.3 2009/08/12 12:43:10 obache Exp $
-lib/pkgconfig/ruby-gnome2.pc
-${RUBY_VENDORLIB}/gnome2.rb
-${RUBY_VENDORARCHLIB}/gnome2.${RUBY_DLEXT}

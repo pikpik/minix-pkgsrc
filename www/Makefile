@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.779 2011/01/18 19:12:53 drochner Exp $
+# $NetBSD: Makefile,v 1.780 2011/02/07 12:51:39 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -556,7 +556,6 @@ SUBDIR+=	ruby-cssmin
 SUBDIR+=	ruby-csspool
 SUBDIR+=	ruby-div
 SUBDIR+=	ruby-fcgi
-SUBDIR+=	ruby-gnome2-gtkhtml2
 SUBDIR+=	ruby-gnome2-gtkmozembed
 SUBDIR+=	ruby-htmlsplit
 SUBDIR+=	ruby-innate
