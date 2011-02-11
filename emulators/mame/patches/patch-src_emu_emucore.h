@@ -1,7 +1,5 @@
 $NetBSD$
 
-Sent upstream and accepted.
-
 --- src/emu/emucore.h.orig	2010-12-31 14:59:46.000000000 +0000
 +++ src/emu/emucore.h
 @@ -686,6 +686,7 @@ inline void fatalerror_exitcode(running_
