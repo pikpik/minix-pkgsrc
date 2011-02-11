@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2011/01/21 12:09:10 ryoon Exp $
+# $NetBSD: Makefile,v 1.3 2011/01/21 12:20:38 ryoon Exp $
 #
 
-DISTNAME=	quvi-0.2.12
+DISTNAME=	quvi-0.2.13
 CATEGORIES=	net multimedia www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=quvi/}
 EXTRACT_SUFX=	.tar.bz2
