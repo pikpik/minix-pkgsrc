@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2009/05/28 20:35:53 zafer Exp $
+# $NetBSD: Makefile,v 1.6 2011/02/05 18:54:59 wiz Exp $
 #
 
-DISTNAME=	mac-3.99-u4-b5
-PKGNAME=	mac-3.99u4b5
+DISTNAME=	mac-3.99-u4-b5-s7
+PKGNAME=	mac-3.99u4b5s7
 CATEGORIES=	audio
-MASTER_SITES=	http://supermmx.org/resources/linux/mac/
+MASTER_SITES=	http://etree.org/shnutils/shntool/support/formats/ape/unix/3.99-u4-b5-s7/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://supermmx.org/
+#HOMEPAGE=	http://supermmx.org/
+HOMEPAGE=	http://etree.org/shnutils/shntool/
 COMMENT=	Monkey's Audio support library (for .ape files)
 LICENSE=	mac-license
 
