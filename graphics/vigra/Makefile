@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/01/13 13:36:10 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2011/01/29 16:29:03 adam Exp $
 
 DISTNAME=	vigra-1.7.1-src
 PKGNAME=	${DISTNAME:S/-src//}
@@ -19,7 +19,7 @@ USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
 
-CMAKE_ARGS+=	-D DOCINSTALL:PATH=${DESTDIR}${PREFIX}/share/doc
+CMAKE_ARGS+=	-D DOCINSTALL:PATH=${PREFIX}/share/doc
 
 .include "options.mk"
 
