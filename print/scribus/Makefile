@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2010/12/23 11:44:56 dsainty Exp $
+# $NetBSD: Makefile,v 1.72 2011/01/13 13:39:15 wiz Exp $
 
 DISTNAME=		scribus-1.3.3.14
 PKGREVISION=		3
@@ -9,6 +9,8 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.scribus.net/
 COMMENT=		Publishing layout with graphical interface
+# plus exceptions for qt3 and Windows GDI+ linkage
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
