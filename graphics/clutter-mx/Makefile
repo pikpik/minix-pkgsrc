@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/11/24 18:19:26 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/13 13:36:29 wiz Exp $
 #
 
 DISTNAME=	mx-1.0.4
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config intltool gmake
+USE_TOOLS+=	pkg-config intltool gmake msgfmt msgmerge xgettext
 
 PKGCONFIG_OVERRIDE+=	mx-gtk.pc.in
 PKGCONFIG_OVERRIDE+=	mx.pc.in
