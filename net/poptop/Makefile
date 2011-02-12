@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2006/11/11 16:50:54 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2009/02/24 21:22:41 cube Exp $
 #
 
-DISTNAME=	pptpd-1.3.0
+DISTNAME=	pptpd-1.3.4
 PKGNAME=	${DISTNAME:S/pptpd/poptop/}
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=poptop/}
