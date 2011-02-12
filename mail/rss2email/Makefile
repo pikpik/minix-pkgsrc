@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2010/02/10 19:17:41 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2011/01/28 01:41:52 schmonz Exp $
 #
 
 DISTNAME=		rss2email-2.70
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}
 
