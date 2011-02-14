@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.29 2011/01/01 13:39:14 obache Exp $
+# $NetBSD: Makefile,v 1.30 2011/01/13 13:38:56 wiz Exp $
 
-DISTNAME=	mkvtoolnix-4.3.0
-PKGREVISION=	3
+DISTNAME=	mkvtoolnix-4.5.0
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2
