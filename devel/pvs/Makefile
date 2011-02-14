@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2009/05/19 08:59:11 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2009/08/06 01:44:50 minskim Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -35,7 +35,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 VERSION=		3.2
-INFO_FILES=		# PLIST
+INFO_FILES=		yes
 TEX_ACCEPTED=		teTeX3
 
 MESSAGE_SRC=		${PKGDIR}/MESSAGE.${EMUL_PLATFORM}
