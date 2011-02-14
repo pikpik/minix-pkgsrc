@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.1 2010/04/12 21:12:12 drochner Exp $
+
+https://bugs.webkit.org/show_bug.cgi?id=54407
 
 --- JavaScriptCore/jit/JITOpcodes.cpp.orig	2010-04-12 13:49:15.000000000 +0000
 +++ JavaScriptCore/jit/JITOpcodes.cpp
