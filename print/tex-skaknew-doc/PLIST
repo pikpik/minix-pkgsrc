@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/fonts/skaknew/README
+share/texmf-dist/doc/fonts/skaknew/SkakNew.pdf
+share/texmf-dist/doc/fonts/skaknew/SkakNew.tex
+share/texmf-dist/doc/fonts/skaknew/fonttables.pdf
+share/texmf-dist/doc/fonts/skaknew/install.vtex
