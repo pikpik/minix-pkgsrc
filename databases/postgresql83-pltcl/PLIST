@@ -1,6 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/03/04 12:45:02 adam Exp $
+@comment $NetBSD: PLIST,v 1.2 2010/12/19 09:53:54 adam Exp $
 bin/pltcl_delmod
 bin/pltcl_listmod
 bin/pltcl_loadmod
-lib/postgresql/pltcl.la
+lib/postgresql/pltcl.so
 share/postgresql/unknown.pltcl
