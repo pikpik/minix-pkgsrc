@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${RUBY_VENDORLIB}/mp3info.rb
+${RUBY_VENDORLIB}/mp3info/extension_modules.rb
+${RUBY_VENDORLIB}/mp3info/id3v2.rb
