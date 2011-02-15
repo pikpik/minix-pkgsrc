@@ -2,6 +2,7 @@
 #
 
 DISTNAME=	ruby-mp3info-0.6.13
+PKGNAME=	${DISTNAME:S/ruby-/${RUBY_PKGPREFIX}-/}
 CATEGORIES=	audio
 MASTER_SITES=	http://rubyforge.org/frs/download.php/57443/
 EXTRACT_SUFX=	.tgz
