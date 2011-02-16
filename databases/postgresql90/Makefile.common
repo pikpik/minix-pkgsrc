@@ -1,10 +1,11 @@
-# $NetBSD: Makefile.common,v 1.8 2010/12/24 06:30:03 asau Exp $
+# $NetBSD: Makefile.common,v 1.9 2011/02/09 08:48:16 adam Exp $
 #
 # used by databases/postgresql90-adminpack/Makefile
 # used by databases/postgresql90-client/Makefile
 # used by databases/postgresql90-datatypes/Makefile
 # used by databases/postgresql90-dblink/Makefile
 # used by databases/postgresql90-docs/Makefile
+# used by databases/postgresql90-fuzzystrmatch/Makefile
 # used by databases/postgresql90-pgcrypto/Makefile
 # used by databases/postgresql90-plperl/Makefile
 # used by databases/postgresql90-plpython/Makefile
