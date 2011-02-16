@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.42 2009/02/13 18:53:28 abs Exp $
+# $NetBSD: Makefile,v 1.43 2009/02/25 18:44:30 drochner Exp $
 #
 
 DISTNAME=		enscript-1.6.4
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		print
 MASTER_SITES=		http://www.iki.fi/mtr/genscript/
 
