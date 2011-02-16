@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/postgresql/contrib/fuzzystrmatch.sql
+share/postgresql/contrib/uninstall_fuzzystrmatch.sql
+lib/postgresql/fuzzystrmatch.la
