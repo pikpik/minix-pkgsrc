@@ -1,3 +1,4 @@
+@comment $NetBSD$
 lib/${PKGNAME}/encodings/arabic
 lib/${PKGNAME}/encodings/ascii
 lib/${PKGNAME}/encodings/atarist.bin
