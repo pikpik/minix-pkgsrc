@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2011/01/08 13:39:08 obache Exp $
+# $NetBSD: Makefile,v 1.51 2011/01/09 01:26:56 dsainty Exp $
 
 DISTNAME=		hal-0.5.14
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 EXTRACT_SUFX=		.tar.bz2
