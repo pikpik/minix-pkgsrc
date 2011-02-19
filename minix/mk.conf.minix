@@ -44,4 +44,6 @@ RCD_SCRIPTS_DIR=${LOCALBASE}/etc/rc.d
 VARBASE=        /usr/var
 WRKOBJDIR?=    /usr/tmp/work
 
+MASTER_SITE_OVERRIDE=${MASTER_SITE_BACKUP}
+
 .endif
