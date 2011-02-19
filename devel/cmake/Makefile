@@ -66,7 +66,9 @@ post-extract:
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
+.if ${OPSYS} != "Minix"
 .include "../../textproc/xmlrpc-c/buildlink3.mk"
+.endif
 .include "../../www/curl/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
