@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.470 2011/02/15 11:23:00 wiz Exp $
+# $NetBSD: Makefile,v 1.471 2011/02/15 11:39:48 wiz Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -315,7 +315,6 @@ SUBDIR+=	tex-harvard
 SUBDIR+=	tex-harvard-doc
 SUBDIR+=	tex-here
 SUBDIR+=	tex-here-doc
-SUBDIR+=	tex-hlatex
 SUBDIR+=	tex-hyper
 SUBDIR+=	tex-hyper-doc
 SUBDIR+=	tex-hypernat
