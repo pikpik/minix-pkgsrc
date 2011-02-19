@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.14 2007/02/22 19:27:26 wiz Exp $
+# $NetBSD: Makefile.common,v 1.15 2011/01/12 10:47:41 wiz Exp $
 #
 # used by x11/dfm/Makefile
 
@@ -11,7 +11,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-imlib-icons
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../graphics/imlib/buildlink3.mk"
+.include "../../graphics/imlib-gtk/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 
