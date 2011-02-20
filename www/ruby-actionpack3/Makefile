@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2010/10/15 11:42:32 taca Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/09 12:58:53 taca Exp $
 
 DISTNAME=	actionpack-3.0.4
+PKGREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
