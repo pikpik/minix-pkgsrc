@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/01/17 12:02:15 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/09/10 05:33:41 taca Exp $
 
 DISTNAME=	eventmachine-0.12.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/09/07 17:20:25 taca Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/10 05:16:14 taca Exp $
 
 DISTNAME=	linecache-0.43
+PKGREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

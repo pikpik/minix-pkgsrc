@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/09/10 05:17:36 taca Exp $
+# $NetBSD: Makefile,v 1.6 2010/12/04 03:52:25 taca Exp $
 
 DISTNAME=	ruby-debug-base-0.10.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/ruby-//}
+PKGREVISION=	1
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
