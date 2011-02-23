@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2010/01/17 12:02:45 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2010/12/17 07:36:12 obache Exp $
 
 BUILDLINK_TREE+=	xml-security-c
 
@@ -10,7 +10,6 @@ BUILDLINK_ABI_DEPENDS.xml-security-c+=	xml-security-c>=1.5.1nb3
 BUILDLINK_PKGSRCDIR.xml-security-c?=	../../security/xml-security-c
 
 .include "../../security/openssl/buildlink3.mk"
-.include "../../textproc/xalan-c/buildlink3.mk"
 .include "../../textproc/xerces-c/buildlink3.mk"
 .endif # XML_SECURITY_C_BUILDLINK3_MK
 
