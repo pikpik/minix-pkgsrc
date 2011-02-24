@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-Clients_dns-sd.c,v 1.1 2011/02/17 09:02:14 markd Exp $
 
 --- Clients/dns-sd.c.orig	2010-05-15 00:16:11.000000000 +0000
 +++ Clients/dns-sd.c
@@ -6,8 +6,8 @@ $NetBSD$
  	#include <netinet/in.h>		// For struct sockaddr_in()
  	#include <arpa/inet.h>		// For inet_addr()
  	#include <net/if.h>			// For if_nametoindex()
-+#ifdef __linux__
  	static const char kFilePathSep = '/';
++#ifdef __linux__
 +	static size_t _sa_len(const struct sockaddr *addr)
 +		{
 +		if (addr->sa_family == AF_INET) return (sizeof(struct sockaddr_in));
