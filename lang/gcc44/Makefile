@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/05/06 10:21:17 adam Exp $
+# $NetBSD: Makefile,v 1.14 2010/07/15 21:35:10 asau Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc44-${GCC_VERSION}
@@ -20,7 +20,7 @@ USE_TOOLS+=		awk:run bash:run perl chmod \
 
 DEPENDS+=		zip-[0-9]*:../../archivers/zip
 
-GCC_VERSION=		4.4.4
+GCC_VERSION=		4.4.5
 
 GCC_SUBPREFIX=		gcc44
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
