@@ -64,7 +64,7 @@ $NetBSD$
  
    const char *Exec =
 -    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu/bin/gld"));
-+#if 1
++#if 0
 +    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu_cross/bin/i386-pc-minix3-ld"));
 +#else
 +    Args.MakeArgString(getToolChain().GetProgramPath("/usr/pkg/bin/ld"));

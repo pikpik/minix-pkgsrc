@@ -12,7 +12,7 @@ $NetBSD$
 -  getFilePaths().push_back("/usr/lib");
 -  getFilePaths().push_back("/usr/gnu/lib");
 -  getFilePaths().push_back("/usr/gnu/lib/gcc/i686-pc-minix/4.4.3");
-+#if 1
++#if 0
 +  getFilePaths().push_back("/usr/gnu_cross/i386-pc-minix3/lib/");
 +#else
 +  getFilePaths().push_back("/usr/lib/");
