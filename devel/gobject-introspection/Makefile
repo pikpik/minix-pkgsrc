@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/02/10 05:17:13 obache Exp $
+# $NetBSD: Makefile,v 1.5 2011/02/14 01:07:41 obache Exp $
 #
 
 DISTNAME=	gobject-introspection-0.10.2
@@ -21,7 +21,7 @@ USE_TOOLS+=	pkg-config flex bison gmake
 
 PKGCONFIG_OVERRIDE+=	gobject-introspection-1.0.pc.in
 PKGCONFIG_OVERRIDE+=	gobject-introspection-no-export-1.0.pc.in
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 SUBST_CLASSES+=	timet
 SUBST_STAGE.timet=	pre-configure

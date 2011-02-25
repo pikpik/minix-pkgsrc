@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/12/23 11:45:32 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/13 13:38:11 wiz Exp $
 #
 
 DISTNAME=	mypaint-0.9.0
@@ -14,7 +14,7 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 USE_LANGUAGES=	c++
 
 USE_TOOLS+=	bash:run msgfmt pkg-config

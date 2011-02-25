@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/11/15 22:56:45 abs Exp $
+# $NetBSD: Makefile,v 1.10 2011/01/13 13:37:26 wiz Exp $
 #
 
 PKGVER=			0.8.4
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config gmake
 
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 PY_PATCHPLIST=		yes
 

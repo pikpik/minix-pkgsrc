@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/01/13 13:38:17 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2011/02/17 10:33:38 markd Exp $
 #
 
 DISTNAME=		matplotlib-1.0.1
@@ -17,7 +17,7 @@ PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
 USE_LANGUAGES=		c c++
 
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 post-patch:
 	( echo "[directories]"; \

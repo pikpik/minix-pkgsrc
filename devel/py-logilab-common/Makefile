@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/01/11 20:41:00 drochner Exp $
 #
 
 VERS=			0.53.0
@@ -15,7 +15,7 @@ LICENSE=		gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=			user-destdir
 
-PYTHON_VERSIONS_ACCEPTED= 26 25 24
+PYTHON_VERSIONS_ACCEPTED= 27 26 25 24
 
 #comment this out to avoid problems to find the binary by other programs
 PLIST_SUBST+=   PYVERSSUFFIX=${PYVERSSUFFIX}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/08/26 14:26:18 manu Exp $
+# $NetBSD: Makefile,v 1.2 2010/10/02 07:02:40 obache Exp $
 #
 
 DISTNAME=	glusterfs-3.0.5
@@ -16,7 +16,7 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		flex bison
 
-PYTHON_VERSIONS_ACCEPTED= 26 25
+PYTHON_VERSIONS_ACCEPTED= 27 26 25
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 
 SUBST_CLASSES+=		py

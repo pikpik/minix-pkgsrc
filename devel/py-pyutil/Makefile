@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/10/13 13:00:39 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/11/27 18:24:44 gdt Exp $
 #
 
 DISTNAME=	pyutil-1.7.9
@@ -14,7 +14,7 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYTHON_VERSIONS_ACCEPTED=	26
+PYTHON_VERSIONS_ACCEPTED=	27 26
 
 DEPENDS+=	${PYPKGPREFIX}-setuptools_trial-[0-9]*:../../devel/py-setuptools_trial
 DEPENDS+=	${PYPKGPREFIX}-twisted-[0-9]*:../../net/py-twisted
