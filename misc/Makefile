@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.351 2011/01/31 20:59:51 jym Exp $
+# $NetBSD: Makefile,v 1.352 2011/02/09 09:51:19 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -82,6 +82,7 @@ SUBDIR+=	granulate
 SUBDIR+=	gwaei
 SUBDIR+=	hanzim
 SUBDIR+=	heyu
+SUBDIR+=	howm
 SUBDIR+=	ibutton-pdkit
 SUBDIR+=	ipbt
 SUBDIR+=	iselect
