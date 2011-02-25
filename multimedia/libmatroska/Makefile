@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2010/07/08 18:46:45 drochner Exp $
+# $NetBSD: Makefile,v 1.24 2011/02/14 19:00:45 drochner Exp $
 #
 
 DISTNAME=	libmatroska-1.1.0
@@ -26,7 +26,7 @@ INSTALL_TARGET=	install_headers install_sharedlib
 TEST_TARGET=	test
 
 # needed for libtoolization
-BUILDLINK_API_DEPENDS.libebml+=	libebml>=0.7.7nb1
+BUILDLINK_API_DEPENDS.libebml+=	libebml>=0.8
 .include "../../devel/libebml/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
