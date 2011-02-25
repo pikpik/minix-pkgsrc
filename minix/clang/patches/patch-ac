@@ -1,50 +1,46 @@
 $NetBSD$
 
---- Makefile.rules.orig	2010-08-26 08:27:26.000000000 +0000
-+++ Makefile.rules
-@@ -517,9 +517,9 @@ ifneq ($(HOST_OS), $(filter $(HOST_OS), 
- ifneq ($(HOST_OS),Darwin)
-   LD.Flags += $(RPATH) -Wl,'$$ORIGIN'
- else
--ifneq ($(DARWIN_MAJVERS),4)
--  LD.Flags += $(RPATH) -Wl,$(SharedLibDir)
--endif
-+#ifneq ($(DARWIN_MAJVERS),4)
-+#  LD.Flags += $(RPATH) -Wl,$(SharedLibDir)
+--- include/llvm/Support/system_error.h.orig	Fri Feb 11 02:25:12 2011
++++ include/llvm/Support/system_error.h
+@@ -510,7 +510,11 @@ enum _ {
+   bad_message                         = EINVAL,
+ #endif
+   broken_pipe                         = EPIPE,
++#ifdef ECONNABORTED
+   connection_aborted                  = ECONNABORTED,
++#else
++  connection_aborted                  = EINVAL,
 +#endif
- endif
- endif
- endif
-@@ -553,9 +553,9 @@ ifneq ($(HOST_OS), Darwin)
- ifdef TOOLNAME
-   LD.Flags += $(RPATH) -Wl,'$$ORIGIN/../lib'
-   ifdef EXAMPLE_TOOL
--    LD.Flags += $(RPATH) -Wl,$(ExmplDir) $(RDYNAMIC)
-+    LD.Flags += $(RDYNAMIC)
-   else
--    LD.Flags += $(RPATH) -Wl,$(ToolDir) $(RDYNAMIC)
-+    LD.Flags += $(RDYNAMIC)
-   endif
- endif
- else
-@@ -716,9 +716,6 @@ ObjectsBC := $(BaseNameSources:%=$(ObjDi
- # in the file so they get built before dependencies
- #---------------------------------------------------------
- 
--$(DESTDIR)$(PROJ_bindir) $(DESTDIR)$(PROJ_libdir) $(DESTDIR)$(PROJ_includedir) $(DESTDIR)$(PROJ_etcdir)::
--	$(Verb) $(MKDIR) $@
--
- # To create other directories, as needed, and timestamp their creation
- %/.dir:
- 	$(Verb) $(MKDIR) $* > /dev/null
-@@ -844,7 +841,9 @@ install-local::
- uninstall-local::
- 	$(Echo) UnInstall circumvented with NO_INSTALL
- else
--install-local:: $(DESTDIR)$(PROJ_etcdir) $(CONFIG_FILES)
-+PROJ_etcdir=${PREFIX}/share/examples/llvm
-+install-local:: $(CONFIG_FILES)
-+	$(MKDIR) ${PROJ_etcdir}
- 	$(Echo) Installing Configuration Files To $(DESTDIR)$(PROJ_etcdir)
- 	$(Verb)for file in $(CONFIG_FILES); do \
-           if test -f $(PROJ_OBJ_DIR)/$${file} ; then \
+   connection_already_in_progress      = EALREADY,
+   connection_refused                  = ECONNREFUSED,
+   connection_reset                    = ECONNRESET,
+@@ -534,7 +538,11 @@ enum _ {
+   is_a_directory                      = EISDIR,
+   message_size                        = EMSGSIZE,
+   network_down                        = ENETDOWN,
++#ifdef ENETRESET
+   network_reset                       = ENETRESET,
++#else
++  network_reset                       = EINVAL,
++#endif
+   network_unreachable                 = ENETUNREACH,
+   no_buffer_space                     = ENOBUFS,
+   no_child_process                    = ECHILD,
+@@ -547,9 +555,17 @@ enum _ {
+ #ifdef ENODATA
+   no_message_available                = ENODATA,
+ #else
++#ifdef ENOMSG
+   no_message_available                = ENOMSG,
++#else
++  no_message_available                = EINVAL,
+ #endif
++#endif
++#ifdef ENOMSG
+   no_message                          = ENOMSG,
++#else
++  no_message                          = EINVAL,
++#endif
+   no_protocol_option                  = ENOPROTOOPT,
+   no_space_on_device                  = ENOSPC,
+ #ifdef ENOSR

@@ -1,0 +1,22 @@
+$NetBSD$
+
+--- tools/clang/lib/Driver/ToolChains.cpp.orig	Fri Feb 11 02:27:08 2011
++++ tools/clang/lib/Driver/ToolChains.cpp
+@@ -1184,11 +1184,13 @@ Tool &NetBSD::SelectTool(const Compilation &C, const J
+ /// Minix - Minix tool chain which can call as(1) and ld(1) directly.
+ 
+ Minix::Minix(const HostInfo &Host, const llvm::Triple& Triple)
+-  : Generic_GCC(Host, Triple) {
++  : Generic_ELF(Host, Triple) {
+   getFilePaths().push_back(getDriver().Dir + "/../lib");
+-  getFilePaths().push_back("/usr/lib");
+-  getFilePaths().push_back("/usr/gnu/lib");
+-  getFilePaths().push_back("/usr/gnu/lib/gcc/i686-pc-minix/4.4.3");
++#if 1
++  getFilePaths().push_back("/usr/gnu_cross/i386-pc-minix3/lib/");
++#else
++  getFilePaths().push_back("/usr/lib/");
++#endif
+ }
+ 
+ Tool &Minix::SelectTool(const Compilation &C, const JobAction &JA) const {

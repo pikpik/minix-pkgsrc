@@ -1,11 +1,6 @@
-$NetBSD: distinfo,v 1.5 2010/10/21 13:52:15 adam Exp $
+$NetBSD$
 
-SHA1 (clang-2.8/clang-2.8.tgz) = 94977c84ce136307dbbeade95e67bfe3c25161ff
-RMD160 (clang-2.8/clang-2.8.tgz) = f00956b6de29cc09f3992aeabd140f2189c6cf39
-Size (clang-2.8/clang-2.8.tgz) = 5666777 bytes
-SHA1 (clang-2.8/llvm-2.8.tgz) = 6d49fe039d28e8664de25491c775cb2c599e30c1
-RMD160 (clang-2.8/llvm-2.8.tgz) = 3f5a71d07e105a7cf46eafc7a9006a927035012c
-Size (clang-2.8/llvm-2.8.tgz) = 9112527 bytes
-SHA1 (patch-ab) = 0a2f0cca347d3f305e6e648cf811a4190d7f7b11
-SHA1 (patch-ac) = e82e112bbbb294a3880f7445a7d1b755a6e9ab43
-SHA1 (patch-ad) = 4cd7223d1660a4e8d81b33b6c99efbb680664164
+SHA1 (llvm-clang-r125950.tar.gz) = c56f2db84df308843bb13b3ae644fce399ddb4f6
+RMD160 (llvm-clang-r125950.tar.gz) = b3e97262ad2032f9f19ef31b8d49b583e269b710
+Size (llvm-clang-r125950.tar.gz) = 32735142 bytes
+SHA1 (patch-ad) = 79f42380e70015c071a67c0f50da5672f256e8a7

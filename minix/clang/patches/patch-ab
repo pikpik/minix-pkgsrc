@@ -1,45 +1,26 @@
 $NetBSD$
 
---- docs/Makefile.orig	2010-07-29 12:46:24.000000000 +0000
-+++ docs/Makefile
-@@ -46,20 +46,19 @@ install-local:: $(install_targets)
- # 'make generated BUILD_FOR_WEBSITE=1'
- generated:: doxygen ocamldoc
+--- include/llvm/Support/FEnv.h.orig	Fri Feb 11 02:25:12 2011
++++ include/llvm/Support/FEnv.h
+@@ -33,8 +33,10 @@ namespace sys {
+ /// llvm_fenv_clearexcept - Clear the floating-point exception state.
+ static inline void llvm_fenv_clearexcept() {
+ #ifdef HAVE_FENV_H
++#ifdef FE_ALL_EXCEPT
+   feclearexcept(FE_ALL_EXCEPT);
+ #endif
++#endif
+   errno = 0;
+ }
  
--install-html: $(PROJ_OBJ_DIR)/html.tar.gz
-+install-html:
- 	$(Echo) Installing HTML documentation
- 	$(Verb) $(MKDIR) $(DESTDIR)$(PROJ_docsdir)/html
- 	$(Verb) $(MKDIR) $(DESTDIR)$(PROJ_docsdir)/html/img
- 	$(Verb) $(DataInstall) $(HTML) $(DESTDIR)$(PROJ_docsdir)/html
- 	$(Verb) $(DataInstall) $(IMAGES) $(DESTDIR)$(PROJ_docsdir)/html/img
--	$(Verb) $(DataInstall) $(PROJ_OBJ_DIR)/html.tar.gz $(DESTDIR)$(PROJ_docsdir)
- 
- $(PROJ_OBJ_DIR)/html.tar.gz: $(HTML)
- 	$(Echo) Packaging HTML documentation
- 	$(Verb) $(RM) -rf $@ $(PROJ_OBJ_DIR)/html.tar
- 	$(Verb) cd $(PROJ_SRC_DIR) && \
- 	  $(TAR) cf $(PROJ_OBJ_DIR)/html.tar *.html
--	$(Verb) $(GZIP) $(PROJ_OBJ_DIR)/html.tar
-+	$(Verb) $(GZIPBIN) $(PROJ_OBJ_DIR)/html.tar
- 
- install-doxygen: doxygen
- 	$(Echo) Installing doxygen documentation
-@@ -82,7 +81,7 @@ $(PROJ_OBJ_DIR)/doxygen.tar.gz: $(DOXYFI
- 	$(Echo) Packaging doxygen documentation
- 	$(Verb) $(RM) -rf $@ $(PROJ_OBJ_DIR)/doxygen.tar
- 	$(Verb) $(TAR) cf $(PROJ_OBJ_DIR)/doxygen.tar doxygen
--	$(Verb) $(GZIP) $(PROJ_OBJ_DIR)/doxygen.tar
-+	$(Verb) $(GZIPBIN) $(PROJ_OBJ_DIR)/doxygen.tar
- 	$(Verb) $(CP) $(PROJ_OBJ_DIR)/doxygen.tar.gz $(PROJ_OBJ_DIR)/doxygen/html/
- 
- userloc: $(LLVM_SRC_ROOT)/docs/userloc.html
-@@ -104,7 +103,7 @@ ocamldoc: regen-ocamldoc
- 	$(Echo) Packaging ocamldoc documentation
- 	$(Verb) $(RM) -rf $(PROJ_OBJ_DIR)/ocamldoc.tar*
- 	$(Verb) $(TAR) cf $(PROJ_OBJ_DIR)/ocamldoc.tar ocamldoc
--	$(Verb) $(GZIP) $(PROJ_OBJ_DIR)/ocamldoc.tar
-+	$(Verb) $(GZIPBIN) $(PROJ_OBJ_DIR)/ocamldoc.tar
- 	$(Verb) $(CP) $(PROJ_OBJ_DIR)/ocamldoc.tar.gz $(PROJ_OBJ_DIR)/ocamldoc/html/
- 
- regen-ocamldoc:
+@@ -44,8 +46,10 @@ static inline bool llvm_fenv_testexcept() {
+   if (errno_val == ERANGE || errno_val == EDOM)
+     return true;
+ #ifdef HAVE_FENV_H
++#if defined(FE_ALL_EXCEPT) && defined(FE_INEXACT)
+   if (fetestexcept(FE_ALL_EXCEPT & ~FE_INEXACT))
+     return true;
++#endif
+ #endif
+   return false;
+ }

@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- Makefile.rules.orig	Fri Feb 11 02:26:11 2011
++++ Makefile.rules
+@@ -637,6 +637,10 @@ ifeq ($(HOST_OS),AuroraUX)
+ CPP.BaseFlags += -include llvm/Support/Solaris.h
+ endif # !HOST_OS - AuroraUX.
+ 
++ifeq ($(HOST_OS),Minix)
++CPP.BaseFlags += -D_POSIX_SOURCE -D_MINIX
++endif #
++
+ LD.Flags      += -L$(LibDir) -L$(LLVMLibDir)
+ CPP.BaseFlags += -D_GNU_SOURCE -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS
+ # All -I flags should go here, so that they don't confuse llvm-config.

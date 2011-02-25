@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- tools/clang/lib/Basic/Targets.cpp.orig	Fri Feb 18 17:53:09 2011
++++ tools/clang/lib/Basic/Targets.cpp
+@@ -247,6 +247,7 @@ class MinixTargetInfo : public OSTargetInfo<Target> { 
+     Builder.defineMacro("_EM_LSIZE", "4");
+     Builder.defineMacro("_EM_FSIZE", "4");
+     Builder.defineMacro("_EM_DSIZE", "8");
++    Builder.defineMacro("__ELF__");
+     DefineStd(Builder, "unix", Opts);
+   }
+ public:

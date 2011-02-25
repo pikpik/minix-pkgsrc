@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- lib/Object/COFFObjectFile.cpp.orig	Fri Feb 11 02:25:42 2011
++++ lib/Object/COFFObjectFile.cpp
+@@ -255,7 +255,11 @@ StringRef COFFObjectFile::getSectionName(DataRefImpl S
+ 
+   // Check for string table entry. First byte is '/'.
+   if (name[0] == '/') {
++#if 0
+     uint32_t Offset;
++#else
++    unsigned int Offset;	/* workaround for "no matching function for call" compile error */
++#endif
+     name.getAsInteger(10, Offset);
+     return StringRef(getString(Offset));
+   }
