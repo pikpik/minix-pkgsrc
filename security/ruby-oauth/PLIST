@@ -1,5 +1,5 @@
-@comment $NetBSD$
-bin/oauth
+@comment $NetBSD: PLIST,v 1.2 2010/08/14 02:55:24 obache Exp $
+bin/oauth${RUBY_VER}
 ${GEM_HOME}/cache/oauth-${PKGVERSION}.gem
 ${GEM_LIBDIR}/.gitignore
 ${GEM_LIBDIR}/Gemfile
