@@ -1,22 +1,13 @@
 $NetBSD$
 
---- gas/config/te-minix.h.orig	Fri Jul  9 19:00:58 2010
-+++ gas/config/te-minix.h
-@@ -0,0 +1,17 @@
-+/* Added these, because if we don't know what we're targeting we may
-+   need an assembler version of libgcc, and that will use local
-+   labels.  */
-+#define LOCAL_LABELS_DOLLAR 1
-+#define LOCAL_LABELS_FB 1
-+
-+#define AOUT_TARGET_FORMAT "a.out-i386-minix"
-+
-+/* these define interfaces */
-+#ifdef OBJ_HEADER
-+#include OBJ_HEADER
-+#else
-+#include "obj-format.h"
-+#endif
-+
-+/* end of te-minix.h */
-+
+--- bfd/targets.c.orig	Wed Apr  5 12:41:57 2006
++++ bfd/targets.c
+@@ -696,6 +696,8 @@ extern const bfd_target i386linux_vec;
+ extern const bfd_target i386lynx_aout_vec;
+ extern const bfd_target i386lynx_coff_vec;
+ extern const bfd_target i386mach3_vec;
++extern const bfd_target i386minix_vec;
++extern const bfd_target bfd_elf32_i386_minix_vec;
+ extern const bfd_target i386msdos_vec;
+ extern const bfd_target i386netbsd_vec;
+ extern const bfd_target i386os9k_vec;

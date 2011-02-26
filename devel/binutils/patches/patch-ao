@@ -1,22 +1,16 @@
 $NetBSD$
 
---- bfd/aoutx.h.orig	Thu Mar 16 12:20:15 2006
-+++ bfd/aoutx.h
-@@ -383,6 +383,7 @@ DESCRIPTION
- 	Swap the information in an internal exec header structure
- 	@var{execp} into the buffer @var{raw_bytes} ready for writing to disk.
- */
-+#ifndef NAME_swap_exec_header_out
- void
- NAME (aout, swap_exec_header_out) (bfd *abfd,
- 				   struct internal_exec *execp,
-@@ -398,6 +399,9 @@ NAME (aout, swap_exec_header_out) (bfd *abfd,
-   PUT_WORD (abfd, execp->a_trsize, bytes->e_trsize);
-   PUT_WORD (abfd, execp->a_drsize, bytes->e_drsize);
- }
-+#define NAME_swap_exec_header_out NAME (aout, swap_exec_header_out)
-+#endif
+--- gas/config/te-minix.h.orig	Sat Feb 26 00:58:30 2011
++++ gas/config/te-minix.h
+@@ -0,0 +1,11 @@
++#define TE_MINIX 1
 +
- 
- /* Make all the section for an a.out file.  */
- 
++/* Added these, because if we don't know what we're targeting we may
++   need an assembler version of libgcc, and that will use local
++   labels.  */
++#define LOCAL_LABELS_DOLLAR 1
++#define LOCAL_LABELS_FB 1
++
++#define ELF_TARGET_FORMAT "elf32-i386-minix"
++
++#include "obj-format.h"

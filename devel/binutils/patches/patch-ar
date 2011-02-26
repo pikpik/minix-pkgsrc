@@ -1,13 +1,27 @@
 $NetBSD$
 
---- ld/ldlang.c.orig	Fri Jul  9 20:51:04 2010
-+++ ld/ldlang.c
-@@ -813,7 +813,7 @@ new_afile (const char *name,
-       p->is_archive = TRUE;
-       p->filename = name;
-       p->real = TRUE;
--      p->local_sym_name = concat ("-l", name, NULL);
-+      p->local_sym_name = concat ("-l", name, (char *)NULL);
-       p->just_syms_flag = FALSE;
-       p->search_dirs_flag = TRUE;
-       break;
+--- ld/Makefile.in.orig	Sat Jun  3 04:45:50 2006
++++ ld/Makefile.in
+@@ -458,6 +458,8 @@ ALL_EMULATIONS = \
+ 	ei386linux.o \
+ 	ei386lynx.o \
+ 	ei386mach.o \
++	ei386minix.o \
++	eelf_i386_minix.o \
+ 	ei386moss.o \
+ 	ei386msdos.o \
+ 	ei386nbsd.o \
+@@ -1862,6 +1864,13 @@ ei386lynx.c: $(srcdir)/emulparams/i386lynx.sh \
+ ei386mach.c: $(srcdir)/emulparams/i386mach.sh \
+   $(srcdir)/emultempl/generic.em $(srcdir)/scripttempl/aout.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} i386mach "$(tdir_i386mach)"
++ei386minix.c: $(srcdir)/emulparams/i386minix.sh \
++  $(srcdir)/emultempl/generic.em $(srcdir)/scripttempl/aout.sc ${GEN_DEPENDS}
++	${GENSCRIPTS} i386minix "$(tdir_i386minix)"
++eelf_i386_minix.c: $(srcdir)/emulparams/elf_i386_minix.sh \
++  $(srcdir)/emulparams/elf_i386.sh \
++  $(srcdir)/emultempl/elf32.em $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
++	${GENSCRIPTS} elf_i386_minix "$(tdir_elf_i386_minix)"
+ ei386moss.c: $(srcdir)/emulparams/i386moss.sh \
+   $(srcdir)/emultempl/elf32.em $(srcdir)/scripttempl/elf.sc ${GEN_DEPENDS}
+ 	${GENSCRIPTS} i386moss "$(tdir_i386moss)"

@@ -1,11 +1,15 @@
 $NetBSD$
 
---- ld/emulparams/i386minix.sh.orig	Fri Jul  9 19:01:02 2010
-+++ ld/emulparams/i386minix.sh
-@@ -0,0 +1,6 @@
-+SCRIPT_NAME=aout
-+OUTPUT_FORMAT="a.out-i386-minix"
-+TARGET_PAGE_SIZE=1
-+TEXT_START_ADDR=0
-+NONPAGED_TEXT_START_ADDR=0
-+ARCH=i386
+--- gas/config/tc-i386.h.orig	Mon Feb 27 15:35:37 2006
++++ gas/config/tc-i386.h
+@@ -59,6 +59,10 @@ extern unsigned long i386_mach (void);
+ #define ELF_TARGET_FORMAT	"elf32-i386-vxworks"
+ #endif
+ 
++#ifdef TE_MINIX
++#define ELF_TARGET_FORMAT      "elf32-i386-minix"
++#endif
++
+ #ifndef ELF_TARGET_FORMAT
+ #define ELF_TARGET_FORMAT	"elf32-i386"
+ #endif

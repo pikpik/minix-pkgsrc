@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.37 2009/07/22 09:25:02 wiz Exp $
 
 DISTNAME=	binutils-2.17
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=binutils/}
 
@@ -41,6 +41,10 @@ PLIST_VARS+=	gprof
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} != "IRIX"
 PLIST.gprof=	yes
+.endif
+
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+= --target=i386-pc-minix3 
 .endif
 
 # Prevent the need to run texi2pod.pl and pod2man hence

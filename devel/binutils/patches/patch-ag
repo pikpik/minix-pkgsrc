@@ -1,12 +1,21 @@
 $NetBSD$
 
---- bfd/configure.in.orig	Fri Jun 23 18:17:07 2006
-+++ bfd/configure.in
-@@ -735,6 +735,7 @@ do
-     i386lynx_aout_vec)		tb="$tb i386lynx.lo lynx-core.lo aout32.lo" ;;
-     i386lynx_coff_vec)		tb="$tb cf-i386lynx.lo cofflink.lo lynx-core.lo" ;;
-     i386mach3_vec)		tb="$tb i386mach3.lo aout32.lo" ;;
-+    i386minix_vec)		tb="$tb i386minix.lo" ;;
-     i386msdos_vec)		tb="$tb i386msdos.lo" ;;
-     i386netbsd_vec)		tb="$tb i386netbsd.lo aout32.lo" ;;
-     i386os9k_vec)		tb="$tb i386os9k.lo aout32.lo" ;;
+--- bfd/aoutx.h.orig	Thu Mar 16 12:20:15 2006
++++ bfd/aoutx.h
+@@ -383,6 +383,7 @@ DESCRIPTION
+ 	Swap the information in an internal exec header structure
+ 	@var{execp} into the buffer @var{raw_bytes} ready for writing to disk.
+ */
++#ifndef NAME_swap_exec_header_out
+ void
+ NAME (aout, swap_exec_header_out) (bfd *abfd,
+ 				   struct internal_exec *execp,
+@@ -398,6 +399,8 @@ NAME (aout, swap_exec_header_out) (bfd *abfd,
+   PUT_WORD (abfd, execp->a_trsize, bytes->e_trsize);
+   PUT_WORD (abfd, execp->a_drsize, bytes->e_drsize);
+ }
++#define NAME_swap_exec_header_out NAME(aout,swap_exec_header_out)
++#endif
+ 
+ /* Make all the section for an a.out file.  */
+ 
