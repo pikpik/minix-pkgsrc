@@ -1,9 +1,0 @@
-
-This is the gcc 4.4.3 compiler suite.
-
-This is a temporary package used for building gcc on Minix.
-Once gcc is known to build with the same configuration as gcc44,
-this package will disappear.
-
-This package has a test target. For testing (only), this
-package requires dejagnu.
