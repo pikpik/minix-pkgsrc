@@ -37,8 +37,6 @@ MAKE_FLAGS+=	BIGENDIAN=true
 .endif
 
 # mame source is double-zipped
-# Note all files have CR-LF but are marked as binary, so unzip -a
-# does not help. Hence all patches must have CR-LF
 post-extract:
 	cd ${WRKDIR} && ${.CURDIR}/../../mk/extract/extract mame.zip
 	rm ${WRKDIR}/mame.zip
