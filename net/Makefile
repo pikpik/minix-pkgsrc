@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.867 2011/02/26 09:36:15 obache Exp $
+# $NetBSD: Makefile,v 1.868 2011/02/27 11:36:19 obache Exp $
 #
 
 COMMENT=	Networking tools
@@ -302,6 +302,7 @@ SUBDIR+=	netpipes
 SUBDIR+=	nfdump
 SUBDIR+=	ngrep
 SUBDIR+=	nicotine
+SUBDIR+=	nicovideo-dl
 SUBDIR+=	nidentd
 SUBDIR+=	nipper
 SUBDIR+=	nload
