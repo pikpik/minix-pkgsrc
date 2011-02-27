@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.170 2011/02/19 01:47:06 minskim Exp $
+# $NetBSD: Makefile,v 1.171 2011/02/20 23:33:50 minskim Exp $
 #
 
 COMMENT=	Fonts
@@ -136,6 +136,7 @@ SUBDIR+=	mminstance
 SUBDIR+=	monafonts
 SUBDIR+=	monafonts-ttf
 SUBDIR+=	mothanna-ttf
+SUBDIR+=	motoya-fonts
 SUBDIR+=	mozilla-fonts
 SUBDIR+=	mplayer-fonts
 SUBDIR+=	ms-ttf
