@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.445 2011/02/25 20:25:54 markd Exp $
+# $NetBSD: Makefile,v 1.446 2011/02/27 15:05:17 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -123,6 +123,7 @@ SUBDIR+=	gkrellm-xmms
 SUBDIR+=	glurp
 SUBDIR+=	gmp3info
 SUBDIR+=	gmpc
+SUBDIR+=	gmpc-lyricwiki
 SUBDIR+=	gmpc-magnatune
 SUBDIR+=	gnome-audio
 SUBDIR+=	gnome-speech
