@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/09/02 12:53:42 bjs Exp $
+# $NetBSD: Makefile,v 1.4 2008/11/11 09:11:22 bjs Exp $
 #
 
 DISTNAME=	uriparser-0.7.3
@@ -6,7 +6,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=uriparser/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	bjs@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://uriparser.sourceforge.net/
 COMMENT=	URI parsing library
 

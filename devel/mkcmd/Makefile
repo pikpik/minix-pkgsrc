@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/02/04 19:52:54 tnn Exp $
+# $NetBSD: Makefile,v 1.10 2008/08/19 23:41:05 epg Exp $
 #
 
 DISTNAME=		mkcmd-8.14
@@ -7,7 +7,7 @@ CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.physics.purdue.edu/pub/pundits/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		epg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Command-line parser and manual page generator
 
 PKG_DESTDIR_SUPPORT=	user-destdir

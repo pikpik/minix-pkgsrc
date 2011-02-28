@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2010/11/15 22:58:55 abs Exp $
+# $NetBSD: Makefile,v 1.13 2011/01/13 13:39:42 wiz Exp $
 #
 
 DISTNAME=	driconf-0.9.1
@@ -6,7 +6,7 @@ PKGREVISION=	6
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
-MAINTAINER=	bjs@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dri.freedesktop.org/wiki/DriConf
 COMMENT=	Configuration applet for DRI drivers
 

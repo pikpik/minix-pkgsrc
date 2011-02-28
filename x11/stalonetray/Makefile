@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2008/04/25 15:04:32 smb Exp $
+# $NetBSD: Makefile,v 1.5 2011/02/01 04:38:11 schnoebe Exp $
 #
 DISTNAME=stalonetray-0.8.1
 CATEGORIES=x11
 MASTER_SITES=${MASTER_SITE_SOURCEFORGE:=stalonetray/}
 
-MAINTAINER=	smb@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://stalonetray.sourceforge.net/
 COMMENT=	Stand-alone system tray
 LICENSE=	gnu-gpl-v2

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2006/12/27 06:47:30 wulf Exp $
+# $NetBSD: Makefile,v 1.15 2010/01/29 23:54:50 joerg Exp $
 #
 
 DISTNAME=	tlf-0.9.30
 CATEGORIES=	ham
 MASTER_SITES=	http://sharon.pi8zaa.ampr.org/pub/linux/ham/tlf/
 
-MAINTAINER=	wulf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.iae.nl/users/reinc/TLF-0.2.html
 COMMENT=	Advanced hamradio logging and contest program
 

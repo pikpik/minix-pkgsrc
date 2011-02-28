@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2008/06/12 02:14:43 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2011/02/26 15:05:03 wiz Exp $
 DISTNAME=	BibTool-2.48
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=biblio/bibtex/utils/bibtool/}
 
-MAINTAINER=	smb@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gerd-neugebauer.de/software/TeX/BibTool.en.html
 COMMENT=	Tool to manipulate BibTeX databases
 #LICENSE=	gnu-gpl-v1

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.25 2008/07/14 12:56:10 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2010/02/10 19:34:07 joerg Exp $
 
 DISTNAME=	flow-tools-0.68
 PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.eng.oar.net/pub/flow-tools/
 
-MAINTAINER=	cjs@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.splintered.net/sw/flow-tools/
 COMMENT=	Collect and store NetFlow data
 

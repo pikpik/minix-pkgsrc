@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.36 2010/01/29 19:14:00 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2010/02/10 19:17:36 joerg Exp $
 
 DISTNAME=	roundup-1.4.6
 PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://pypi.python.org/packages/source/r/roundup/
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://roundup.sourceforge.net/
 COMMENT=	Issue tracking system with command-line, web and email clients
 

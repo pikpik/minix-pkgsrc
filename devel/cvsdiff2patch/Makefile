@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/11/29 10:11:13 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2009/04/09 00:48:07 joerg Exp $
 #
 
 DISTNAME=	cvsdiff2patch-1.0.1
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	bjs@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://people.freebsd.org/~alfred/sources/cvsdiff2patch/
 COMMENT=	Convert CVS diffs into something that patch(1) understands
 

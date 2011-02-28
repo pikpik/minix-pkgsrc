@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/06/15 09:51:59 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2009/08/12 12:20:04 markd Exp $
 
 META_PACKAGE=	yes
 
@@ -9,7 +9,7 @@ CATEGORIES=	meta-pkgs ham
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	wulf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gnuradio/
 COMMENT=	"meta-package" for GNU Radio
 

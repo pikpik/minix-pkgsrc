@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/01/30 19:21:08 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/30 19:26:00 bjs Exp $
 #
 
 DISTNAME=	bsdav-1.4
@@ -6,7 +6,7 @@ CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	bjs@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jakemsr.trancell.org/
 COMMENT=	BSD Audio/Video library and tools
 

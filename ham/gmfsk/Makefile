@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2010/11/15 22:57:30 abs Exp $
+# $NetBSD: Makefile,v 1.34 2011/01/13 13:38:25 wiz Exp $
 #
 
 DISTNAME=	gmfsk-0.6
@@ -6,7 +6,7 @@ PKGREVISION=	20
 CATEGORIES=	ham
 MASTER_SITES=	http://gmfsk.connect.fi/
 
-MAINTAINER=	wulf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gmfsk.connect.fi/
 COMMENT=	Multimode HF terminal program
 

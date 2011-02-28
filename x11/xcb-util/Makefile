@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/02/08 14:07:47 tnn Exp $
+# $NetBSD: Makefile,v 1.6 2010/02/09 17:24:49 tnn Exp $
 #
 
 DISTNAME=	xcb-util-0.3.6
@@ -6,7 +6,7 @@ CATEGORIES=	x11
 MASTER_SITES=	http://xcb.freedesktop.org/dist/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	bjs@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xcb.freedesktop.org/
 COMMENT=	XCB Utilities
 

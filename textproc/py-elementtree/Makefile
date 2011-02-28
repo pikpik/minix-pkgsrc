@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/04/25 20:39:12 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/02/09 21:09:23 joerg Exp $
 #
 
 DISTNAME=		elementtree-1.2.6-20050316
@@ -7,7 +7,7 @@ PKGREVISION=		3
 CATEGORIES=		textproc
 MASTER_SITES=		http://effbot.org/downloads/
 
-MAINTAINER=		recht@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://effbot.org/zone/element.htm
 COMMENT=		Read XML and HTML files into trees of Element objects
 

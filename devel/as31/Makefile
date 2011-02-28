@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/06/08 18:39:23 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/03 17:45:34 jlam Exp $
 
 DISTNAME=	asm.8051
 PKGNAME=	as31-19900126
@@ -7,7 +7,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.uu.net/usenet/comp.sources.misc/volume10/
 EXTRACT_SUFX=	.Z
 
-MAINTAINER=	bjh21@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	8031/8051 assembler
 
 PKG_DESTDIR_SUPPORT=	user-destdir
