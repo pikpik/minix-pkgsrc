@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2010/11/29 09:39:42 he Exp $
+# $NetBSD: Makefile,v 1.7 2011/02/25 12:21:09 he Exp $
 
 PKGNAME=	pcc-current-1.0.0.BETA.${DATE_STR}
 DISTPREFIX=	pcc-1.0.0.BETA
 DISTNAME=	${DISTPREFIX}-${DATE_STR}
-DATE_STR=	20110225
+DATE_STR=	20110228
 WRKSRC=		${WRKDIR}/${DISTPREFIX}
 CATEGORIES=	lang
 MASTER_SITES=	ftp://pcc.ludd.ltu.se/pub/pcc-beta/
