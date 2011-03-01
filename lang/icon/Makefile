@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.46 2009/02/08 12:51:04 asau Exp $
+# $NetBSD: Makefile,v 1.47 2009/03/07 01:31:45 reed Exp $
 
 DISTNAME=		icon.v943src
 PKGNAME=		icon-9.4.3
-PKGREVISION=		#
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		http://www.cs.arizona.edu/icon/ftp/packages/unix/
 EXTRACT_SUFX=		.tgz
@@ -10,6 +10,7 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.cs.arizona.edu/icon/index.htm
 COMMENT=		The Icon programming language
+LICENSE=		public-domain
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
