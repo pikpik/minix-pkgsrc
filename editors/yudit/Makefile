@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.24 2009/06/30 00:07:14 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2011/02/28 14:52:48 wiz Exp $
 
-DISTNAME=	yudit-2.8.1
+DISTNAME=	yudit-2.9.2
 CATEGORIES=	editors
 MASTER_SITES=	http://yudit.org/download/
 EXTRACT_SUFX=	.tar.bz2
@@ -8,6 +8,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://yudit.org/
 COMMENT=	Unicode Text Editor
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -18,7 +19,7 @@ USE_TOOLS+=		gmake msgmerge
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-x
 
-BUILDLINK_DEPMETHOD.libXt?=	build
+BUILDLINK_DEPMETHOD.libXt=	build
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
