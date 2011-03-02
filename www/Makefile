@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.785 2011/02/25 02:27:11 obache Exp $
+# $NetBSD: Makefile,v 1.786 2011/02/28 17:24:09 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -76,6 +76,7 @@ SUBDIR+=	apachetop
 SUBDIR+=	asp2php
 SUBDIR+=	august
 SUBDIR+=	aws
+SUBDIR+=	aws-demos
 SUBDIR+=	awstats
 SUBDIR+=	bannerfilter
 SUBDIR+=	bins
