@@ -1,8 +1,8 @@
 $NetBSD$
 
---- main.cc.orig	2007-12-21 22:16:34.000000000 +0100
+--- main.cc.orig	2010-11-21 12:02:12.000000000 +0000
 +++ main.cc
-@@ -600,7 +600,7 @@ int bx_init_main(int argc, char *argv[])
+@@ -622,7 +622,7 @@ int bx_init_main(int argc, char *argv[])
      }
      arg++;
    }
