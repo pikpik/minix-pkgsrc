@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 16381
+# $NetBSD: Makefile,v 1.2 2010/02/11 05:48:22 minskim Exp $
 
 DISTNAME=	etex.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2.1.16381
+TEXLIVE_REV=	21345
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-etex

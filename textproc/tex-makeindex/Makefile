@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2010/02/08 06:01:13 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2010/09/14 00:24:40 minskim Exp $
 
 DISTNAME=	makeindex
 PKGNAME=	tex-${DISTNAME}-2.12
 PKGREVISION=	1
-TEXLIVE_REV=	18835
+TEXLIVE_REV=	21345
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Style files for makeindex
