@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2009/07/11 08:05:06 obache Exp $
+# $NetBSD: Makefile,v 1.7 2010/03/08 12:35:54 adam Exp $
 
-DISTNAME=	ocrad-0.19
+DISTNAME=	ocrad-0.21
 CATEGORIES=	graphics
 MASTER_SITES=	http://ftp.gnu.org/gnu/ocrad/
 
