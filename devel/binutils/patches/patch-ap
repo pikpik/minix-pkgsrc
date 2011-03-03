@@ -6,20 +6,10 @@ $NetBSD$
    fi
    ;;
  
-+minix3*)
++minix*)
 +  lt_cv_deplibs_check_method=pass_all
 +  ;;
 +
  gnu*)
    lt_cv_deplibs_check_method=pass_all
    ;;
-@@ -4867,6 +4871,9 @@ _ACEOF
-       # for the default linux configuration
-       # i386-*-linux*-elf) emulation="i386elf i386aout" ;;
-       #
-+
-+      i386-*-minix-aout) ;;
-+
-       i386-*-aout)	emulation="i386aout" ;;
-       i386-*-coff)	emulation="i386coff" ;;
-       i386-*-elf)	emulation="i386elf" ;;

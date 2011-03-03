@@ -11,12 +11,11 @@ $NetBSD: patch-ad,v 1.1 2006/02/26 23:59:41 joerg Exp $
  				    	fmt=elf em=freebsd ;;
    i386-*-sysv*)				fmt=coff ;;
    i386-*-sco3.2v5*coff)			fmt=coff ;;
-@@ -213,6 +213,8 @@ case ${generic_target} in
+@@ -213,6 +213,7 @@ case ${generic_target} in
    i386-*-nto-qnx*)			fmt=elf ;;
    i386-*-*nt*)				fmt=coff em=pe ;;
    i386-*-chaos)				fmt=elf ;;
-+  i386-*-minix)                         fmt=aout em=minix ;;
-+  i386-*-minix3*)                       fmt=elf em=minix ;;
++  i386-*-minix*)                       fmt=elf em=minix ;;
    i386-*-rdos*)				fmt=elf ;;
  
    i860-*-*)				fmt=elf endian=little ;;

@@ -39,12 +39,8 @@ INFO_FILES=	# PLIST
 #
 PLIST_VARS+=	gprof
 .include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} != "IRIX"
+.if ${OPSYS} != "IRIX" &&  ${OPSYS} != "Minix"
 PLIST.gprof=	yes
-.endif
-
-.if ${OPSYS} == "Minix"
-CONFIGURE_ARGS+= --target=i386-pc-minix3 
 .endif
 
 # Prevent the need to run texi2pod.pl and pod2man hence

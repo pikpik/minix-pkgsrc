@@ -11,15 +11,12 @@ $NetBSD: patch-ac,v 1.1 2006/02/26 23:59:41 joerg Exp $
      targ_defvec=bfd_elf32_i386_freebsd_vec
      targ_selvecs=i386coff_vec
      # FreeBSD <= 4.0 supports only the old nonstandard way of ABI labelling.
-@@ -611,6 +611,12 @@ case "${targ}" in
+@@ -611,6 +611,9 @@ case "${targ}" in
      ;;
    i[3-7]86-none-*)
      targ_defvec=i386coff_vec
 +    ;;
 +  i[3-7]86-*-minix)
-+    targ_defvec=i386minix_vec
-+    ;;
-+  i[3-7]86-*-minix3*)
 +    targ_defvec=bfd_elf32_i386_minix_vec
      ;;
    i[3-7]86-*-aout* | i[3-7]86*-*-vsta*)

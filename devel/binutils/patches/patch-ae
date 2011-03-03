@@ -2,12 +2,11 @@ $NetBSD: patch-ae,v 1.1 2006/02/26 23:59:41 joerg Exp $
 
 --- ld/configure.tgt.orig	Wed Apr  5 12:41:57 2006
 +++ ld/configure.tgt
-@@ -145,6 +145,9 @@ i[3-7]86-*-bsd)		targ_emul=i386bsd ;;
+@@ -145,6 +145,8 @@ i[3-7]86-*-bsd)		targ_emul=i386bsd ;;
  i[3-7]86-*-bsd386)	targ_emul=i386bsd ;;
  i[3-7]86-*-bsdi*)	targ_emul=i386bsd ;;
  i[3-7]86-*-aout)	targ_emul=i386aout ;;
-+i[3-7]86-*-minix)	targ_emul=i386minix ;;
-+i[3-7]86-*-minix3)	targ_emul=elf_i386_minix
++i[3-7]86-*-minix)	targ_emul=elf_i386_minix
 +			targ_extra_emuls="elf_i386" ;;
  i[3-7]86-*-linux*aout*)	targ_emul=i386linux
  			targ_extra_emuls=elf_i386

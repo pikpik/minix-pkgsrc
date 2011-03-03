@@ -19,7 +19,7 @@ $NetBSD: patch-ab,v 1.1 2006/02/26 23:59:41 joerg Exp $
      bfd_elf32_i386_vxworks_vec)	tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
      bfd_elf32_i386_vec)		tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
      bfd_elf32_i860_little_vec)	tb="$tb elf32-i860.lo elf32.lo $elf" ;;
-@@ -13218,10 +13219,13 @@ do
+@@ -13218,10 +13219,12 @@ do
      i386coff_vec)		tb="$tb coff-i386.lo cofflink.lo" ;;
      i386dynix_vec)		tb="$tb i386dynix.lo aout32.lo" ;;
      i386freebsd_vec)		tb="$tb i386freebsd.lo aout32.lo" ;;
@@ -28,7 +28,6 @@ $NetBSD: patch-ab,v 1.1 2006/02/26 23:59:41 joerg Exp $
      i386lynx_aout_vec)		tb="$tb i386lynx.lo lynx-core.lo aout32.lo" ;;
      i386lynx_coff_vec)		tb="$tb cf-i386lynx.lo cofflink.lo lynx-core.lo" ;;
      i386mach3_vec)		tb="$tb i386mach3.lo aout32.lo" ;;
-+    i386minix_vec)		tb="$tb i386minix.lo" ;;
 +    bfd_elf32_i386_minix_vec)	tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
      i386msdos_vec)		tb="$tb i386msdos.lo" ;;
      i386netbsd_vec)		tb="$tb i386netbsd.lo aout32.lo" ;;
