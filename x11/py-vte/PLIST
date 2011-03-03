@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/pkgconfig/pyvte.pc
+${PYSITELIB}/gtk-2.0/vtemodule.la
+share/pygtk/2.0/defs/vte.defs
