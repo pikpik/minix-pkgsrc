@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libgfortran/intrinsics/c99_functions.c.orig	Mon Nov 15 16:43:14 2010
+--- libgfortran/intrinsics/c99_functions.c.orig	Thu Apr  9 23:23:07 2009
 +++ libgfortran/intrinsics/c99_functions.c
 @@ -1412,7 +1412,7 @@ ctanl (long double complex a)
  #endif
