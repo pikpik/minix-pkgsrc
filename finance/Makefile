@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/06/23 02:00:20 abs Exp $
+# $NetBSD: Makefile,v 1.23 2008/10/25 20:23:37 abs Exp $
 #
 
 COMMENT=	Monetary, financial and related applications
@@ -15,6 +15,8 @@ SUBDIR+=	p5-Finance-Quote
 SUBDIR+=	p5-Locale-Currency-Format
 SUBDIR+=	ruby-activemerchant
 SUBDIR+=	tclticker
+SUBDIR+=	tex-euro
+SUBDIR+=	tex-euro-doc
 SUBDIR+=	xfinans
 SUBDIR+=	xinvest
 SUBDIR+=	xquote
