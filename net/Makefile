@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.868 2011/02/27 11:36:19 obache Exp $
+# $NetBSD: Makefile,v 1.869 2011/02/27 20:11:45 ryoon Exp $
 #
 
 COMMENT=	Networking tools
@@ -37,6 +37,7 @@ SUBDIR+=	batchftp
 SUBDIR+=	bftpd
 SUBDIR+=	bind96
 SUBDIR+=	bind97
+SUBDIR+=	bind98
 SUBDIR+=	bing
 SUBDIR+=	bittornado
 SUBDIR+=	bittornado-gui
