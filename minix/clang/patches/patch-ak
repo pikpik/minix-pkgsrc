@@ -11,20 +11,16 @@ $NetBSD$
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
-@@ -3658,7 +3658,11 @@ void minix::Assemble::ConstructJob(Compilation &C, con
+@@ -3658,7 +3658,7 @@ void minix::Assemble::ConstructJob(Compilation &C, con
    }
  
    const char *Exec =
 -    Args.MakeArgString(getToolChain().GetProgramPath("gas"));
-+#if 1
-+    Args.MakeArgString(getToolChain().GetProgramPath("i386-pc-minix3-as"));
-+#else
 +    Args.MakeArgString(getToolChain().GetProgramPath("as"));
-+#endif
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
-@@ -3678,9 +3682,14 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -3678,9 +3678,14 @@ void minix::Link::ConstructJob(Compilation &C, const J
    }
  
    if (!Args.hasArg(options::OPT_nostdlib) &&
@@ -42,7 +38,7 @@ $NetBSD$
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -3698,21 +3707,22 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -3698,21 +3703,18 @@ void minix::Link::ConstructJob(Compilation &C, const J
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
      CmdArgs.push_back("-lc");
@@ -64,11 +60,7 @@ $NetBSD$
  
    const char *Exec =
 -    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu/bin/gld"));
-+#if 0
-+    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu_cross/bin/i386-pc-minix3-ld"));
-+#else
 +    Args.MakeArgString(getToolChain().GetProgramPath("/usr/pkg/bin/ld"));
-+#endif
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
