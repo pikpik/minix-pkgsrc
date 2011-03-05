@@ -1,8 +1,17 @@
 $NetBSD: patch-ad,v 1.13 2009/05/21 03:22:29 taca Exp $
 
---- loginrec.c.orig	2010-04-09 11:13:27.000000000 +0300
-+++ loginrec.c	2010-06-09 21:16:25.000000000 +0300
-@@ -432,8 +432,8 @@ login_set_addr(struct logininfo *li, con
+--- loginrec.c.orig	Fri Apr  9 08:13:27 2010
++++ loginrec.c
+@@ -184,6 +184,8 @@
+ # include <libutil.h>
+ #endif
+ 
++#undef USE_LASTLOG
++
+ /**
+  ** prototypes for helper functions in this file
+  **/
+@@ -432,8 +434,8 @@ login_set_addr(struct logininfo *li, const struct sock
  int
  login_write(struct logininfo *li)
  {
@@ -13,7 +22,7 @@ $NetBSD: patch-ad,v 1.13 2009/05/21 03:22:29 taca Exp $
  		logit("Attempt to write login records by non-root user (aborting)");
  		return (1);
  	}
-@@ -441,7 +441,7 @@ login_write(struct logininfo *li)
+@@ -441,7 +443,7 @@ login_write(struct logininfo *li)
  
  	/* set the timestamp */
  	login_set_current_time(li);
@@ -22,7 +31,7 @@ $NetBSD: patch-ad,v 1.13 2009/05/21 03:22:29 taca Exp $
  	syslogin_write_entry(li);
  #endif
  #ifdef USE_LASTLOG
-@@ -625,7 +625,7 @@ line_abbrevname(char *dst, const char *s
+@@ -625,7 +627,7 @@ line_abbrevname(char *dst, const char *src, int dstsiz
   ** into account.
   **/
  
@@ -31,7 +40,7 @@ $NetBSD: patch-ad,v 1.13 2009/05/21 03:22:29 taca Exp $
  
  /* build the utmp structure */
  void
-@@ -762,10 +762,6 @@ construct_utmpx(struct logininfo *li, st
+@@ -762,10 +764,6 @@ construct_utmpx(struct logininfo *li, struct utmpx *ut
  	set_utmpx_time(li, utx);
  	utx->ut_pid = li->pid;
  
@@ -42,7 +51,7 @@ $NetBSD: patch-ad,v 1.13 2009/05/21 03:22:29 taca Exp $
  	if (li->type == LTYPE_LOGOUT)
  		return;
  
-@@ -774,6 +770,8 @@ construct_utmpx(struct logininfo *li, st
+@@ -774,6 +772,8 @@ construct_utmpx(struct logininfo *li, struct utmpx *ut
  	 * for logouts.
  	 */
  
@@ -51,7 +60,7 @@ $NetBSD: patch-ad,v 1.13 2009/05/21 03:22:29 taca Exp $
  # ifdef HAVE_HOST_IN_UTMPX
  	strncpy(utx->ut_host, li->hostname,
  	    MIN_SIZEOF(utx->ut_host, li->hostname));
-@@ -1403,7 +1401,7 @@ wtmpx_get_entry(struct logininfo *li)
+@@ -1403,7 +1403,7 @@ wtmpx_get_entry(struct logininfo *li)
   ** Low-level libutil login() functions
   **/
  

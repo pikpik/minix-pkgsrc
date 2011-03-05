@@ -110,7 +110,7 @@ SUBST_FILES.soname=	Makefile.shared
 SUBST_SED.soname=	-e 's/-Wl,-soname=/-Wl,-h,/g'
 .elif ${OPSYS} == "Minix"
 CONFIGURE_SCRIPT=	./Configure
-CONFIGURE_ARGS+=	minix-aout no-threads no-shared
+CONFIGURE_ARGS+=	minix-elf no-threads no-shared
 .endif
 
 .include "../../security/openssl/options.mk"
