@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/postgresql/uuid.so
+share/postgresql/contrib/uninstall_uuid.sql
+share/postgresql/contrib/uuid.sql
