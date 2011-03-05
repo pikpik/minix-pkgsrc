@@ -1,7 +1,7 @@
 # Original by Brooks Davis taken from FreeBSD and modified by beng@
 
 DISTNAME=	compiler-rt-r123836
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	minix
 MASTER_SITES=	${MASTER_SITE_MINIX}
 
@@ -44,6 +44,7 @@ SUBST_MESSAGE.fixtest=Removing broken tests
 SUBST_FILES.fixtest=test/CMakeLists.txt
 SUBST_SED.fixtest+=	-e 's/\(MACRO_ADD_CHECK_TEST( powixf2_test\)/\# \1/'
 SUBST_SED.fixtest+=	-e 's/\(MACRO_ADD_CHECK_TEST( clear_cache_test\)/\# \1/'
+SUBST_SED.fixtest+=	-e 's/\(MACRO_ADD_CHECK_TEST( enable_execute_stack_test\)/\# \1/'
 
 post-extract:
 	${MV} ${WRKDIR}/compiler-rt  ${WRKDIR}/${DISTNAME}

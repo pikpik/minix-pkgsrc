@@ -32,6 +32,9 @@ SUBST_SED.path+=	-e "s|/usr/gnu/bin/gcc|gcc|g"
 GENERATE_PLIST+= \
 	cd ${DESTDIR}${PREFIX} && ${FIND} ${X11R6_SUBPREFIX} \( -type f -o -type l \) -print | ${SORT};
 
+pre-configure:
+	${CP} ${FILESDIR}/util.S ${WRKSRC}/programs/Xserver/hw/xfree86/os-support/minix3/
+
 post-install:
 	${CP} ${WRKSRC}/x11.pc ${X11R6_PREFIX}/lib/pkgconfig/x11.pc
 	${RM} -r ${X11R6_PREFIX}/lib/X11/doc/PDF

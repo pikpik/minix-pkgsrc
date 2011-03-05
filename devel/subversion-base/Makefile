@@ -98,5 +98,9 @@ svn-build-outputs-hack:
 	cd ${WRKSRC} && ./gen-make.py --release --installed-libs libsvn_client,libsvn_delta,libsvn_diff,libsvn_fs,libsvn_ra,libsvn_repos,libsvn_subr,libsvn_wc
 	${MV} -f ${WRKSRC}/build-outputs.mk ${FILESDIR}/build-outputs.mk
 
+.if ${OPSYS} == "Minix"
+LDADD += -lexpat
+.endif
+
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

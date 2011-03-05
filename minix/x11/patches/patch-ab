@@ -1,19 +1,28 @@
 $NetBSD$
 
---- programs/Xserver/hw/xfree86/os-support/minix3/Imakefile.orig	Wed Aug 11 04:58:56 2010
+--- programs/Xserver/hw/xfree86/os-support/minix3/Imakefile.orig	Sun Aug  1 11:45:26 2010
 +++ programs/Xserver/hw/xfree86/os-support/minix3/Imakefile
 @@ -122,12 +122,12 @@ VIDEO_OBJ = mnx3_video.o
  SRCS = mnx3_init.c $(VIDEO_SRC) bsd_io.c VTsw_noop.c \
         libc_wrapper.c $(IOPERM_SRC) std_kbdEv.c posix_tty.c $(MOUSESRC) \
         $(RES_SRC) stdPci.c vidmem.c $(JOYSTICK_SRC) sigiostubs.c $(APMSRC) \
 -       $(AXP_SRC) $(KMODSRC) $(AGP_SRC) $(KBDSRC) bios_devmem.c 
-+       $(AXP_SRC) $(KMODSRC) $(AGP_SRC) $(KBDSRC) bios_devmem.c io_intr.S
++       $(AXP_SRC) $(KMODSRC) $(AGP_SRC) $(KBDSRC) bios_devmem.c util.S
  
  OBJS = dummy.o mnx3_init.o $(VIDEO_OBJ) mnx3_io.o VTsw_noop.o \
  	libc_wrapper.o std_kbdEv.o posix_tty.o $(MOUSEOBJ) \
  	$(RES_OBJ) stdPci.o vidmem.o sigiostubs.o $(APMOBJ) \
 -	$(AGP_OBJ) $(KBDOBJ) bios_devmem.o
-+	$(AGP_OBJ) $(KBDOBJ) bios_devmem.o io_intr.o
++	$(AGP_OBJ) $(KBDOBJ) bios_devmem.o util.o
  
  INCLUDES = -I$(XF86COMSRC) -I$(XF86OSSRC) -I. -I$(SERVERSRC)/include \
             -I$(XINCLUDESRC) -I$(EXTINCSRC) -I$(SERVERSRC)/mi $(APINCLUDES) \
+@@ -200,6 +200,8 @@ MakeSubdirs($(SUBDIRS))
+ 
+ DependSubdirs($(SUBDIRS))
+ #endif
++
++ObjectFromAsmSource(util, NullParameter)
+ 
+ #if 0
+ InstallDriverSDKDynamicModule(bsd_jstk.o,$(DRIVERSDKMODULEDIR))

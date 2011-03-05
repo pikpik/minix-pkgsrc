@@ -47,6 +47,8 @@ BINUTILS_PREFIX_CMD= ${PKG_INFO} -Q BINUTILS_PROGRAM_PREFIX binutils 2>/dev/null
 BINUTILS_PREFIX= ${:!${BINUTILS_PREFIX_CMD}!}
 CONFIGURE_ARGS+=	--with-as=${LOCALBASE}/bin/${BINUTILS_PREFIX}as
 CONFIGURE_ARGS+=	--with-ld=${LOCALBASE}/bin/${BINUTILS_PREFIX}ld
+CONFIGURE_ARGS+=	--host=i386-pc-minix --target=i386-pc-minix --build=i386-pc-minix 
+CONFIGURE_ARGS+=	--disable-visibility 
 .endif
 
 # REPLACE_AWK+=	gcc/testsuite/gcc.test-framework/test-framework.awk	\
