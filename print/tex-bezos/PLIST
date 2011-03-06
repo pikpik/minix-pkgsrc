@@ -1,0 +1,9 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/bezos/accents.sty
+share/texmf-dist/tex/latex/bezos/arabicfront.sty
+share/texmf-dist/tex/latex/bezos/babeltools.sty
+share/texmf-dist/tex/latex/bezos/checkend.sty
+share/texmf-dist/tex/latex/bezos/dotlessi.sty
+share/texmf-dist/tex/latex/bezos/esindex.sty
+share/texmf-dist/tex/latex/bezos/subdocs.sty
+share/texmf-dist/tex/latex/bezos/tensind.sty
