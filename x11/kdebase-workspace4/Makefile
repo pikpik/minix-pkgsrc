@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2011/01/23 07:55:16 markd Exp $
+# $NetBSD: Makefile,v 1.26 2011/02/25 09:47:30 wiz Exp $
 
 DISTNAME=	kdebase-workspace-${_KDE_VERSION}
 CATEGORIES=	x11
@@ -72,6 +72,7 @@ RT_LIB_SCHED=	rt
 RT_LIB_SCHED=	# empty
 .endif
 CMAKE_ARGS+=	-DRT_LIB_SCHED=${RT_LIB_SCHED}
+CMAKE_ARGS+=	-DWITH_Xmms:BOOL=OFF
 
 # genkdmconf wont install faces if using destdir so do it ourselves
 INSTALLATION_DIRS+= share/kde/apps/kdm/faces
