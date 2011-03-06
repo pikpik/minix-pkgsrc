@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/bibtopic/README
+share/texmf-dist/doc/latex/bibtopic/articles.bib
+share/texmf-dist/doc/latex/bibtopic/bibtopic.pdf
+share/texmf-dist/doc/latex/bibtopic/books.bib
+share/texmf-dist/doc/latex/bibtopic/sample.tex
