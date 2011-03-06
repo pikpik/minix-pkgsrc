@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/eurosans/README
+share/texmf-dist/doc/latex/eurosans/eurosans.pdf
+share/texmf-dist/doc/latex/eurosans/eurosans.tex
