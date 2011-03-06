@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.108 2009/11/02 04:16:56 obache Exp $
+# $NetBSD: Makefile,v 1.109 2010/02/12 15:40:10 asau Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -62,7 +62,6 @@ SUBDIR+=	oroborus
 SUBDIR+=	pekwm
 SUBDIR+=	piewm
 SUBDIR+=	pwm
-SUBDIR+=	qvwm
 SUBDIR+=	ratpoison
 SUBDIR+=	sawfish
 SUBDIR+=	scrotwm
@@ -76,13 +75,11 @@ SUBDIR+=	w9wm
 SUBDIR+=	waimea
 SUBDIR+=	wampager
 SUBDIR+=	weewm
-SUBDIR+=	whiteBOX
 SUBDIR+=	windowlab
 SUBDIR+=	windowmaker
 SUBDIR+=	wm2
 SUBDIR+=	wmakerconf
 SUBDIR+=	wmctrl
-SUBDIR+=	wmdrawer
 SUBDIR+=	wmextra
 SUBDIR+=	wmi
 SUBDIR+=	wmii

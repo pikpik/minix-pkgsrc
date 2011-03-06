@@ -1,3 +1,0 @@
-@comment $NetBSD: PLIST,v 1.2 2003/07/13 08:43:31 mrg Exp $
-lib/xmms/Visualization/libblursk.la
-share/xmms/blursk-presets
