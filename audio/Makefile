@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.452 2011/02/27 19:53:11 wiz Exp $
+# $NetBSD: Makefile,v 1.453 2011/03/06 16:02:28 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -402,6 +402,7 @@ SUBDIR+=	xmcd
 SUBDIR+=	xmix
 SUBDIR+=	xmmix
 SUBDIR+=	xmms
+SUBDIR+=	xmms-cdread
 SUBDIR+=	xmms-crossfade
 SUBDIR+=	xmms-esound
 SUBDIR+=	xmms-faad
@@ -411,6 +412,7 @@ SUBDIR+=	xmms-mad
 SUBDIR+=	xmms-meta-input
 SUBDIR+=	xmms-meta-timidity
 SUBDIR+=	xmms-musepack
+SUBDIR+=	xmms-nas
 SUBDIR+=	xmms-pulse
 SUBDIR+=	xmms-sid
 SUBDIR+=	xmms-wma
