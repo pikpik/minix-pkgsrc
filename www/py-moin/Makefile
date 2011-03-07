@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2010/07/09 11:38:36 obache Exp $
+# $NetBSD: Makefile,v 1.15 2011/02/25 09:47:29 wiz Exp $
 #
 
 VER=		1.9.3
 DISTNAME=	moin-${VER}
 PKGNAME=	${PYPKGPREFIX}-moin-${VER}
+PKGREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://static.moinmo.in/files/
 
