@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/07/22 04:46:15 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2010/02/14 19:49:50 joerg Exp $
 #
 
 DISTNAME=		tvision-0.8
@@ -14,6 +14,8 @@ HOMEPAGE=		http://www.sigala.it/sergio/tvision/
 COMMENT=		Turbo Vision C++ CUI library for UNIX
 
 NOT_FOR_PLATFORM+=	${LP64PLATFORMS}
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
