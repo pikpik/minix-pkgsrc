@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/20 23:33:06 minskim Exp $
 
 DISTNAME=	bookman
 PKGNAME=	tex-${DISTNAME}-2010
-TEXLIVE_REV=	21101
+TEXLIVE_REV=	21570
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Bookman font

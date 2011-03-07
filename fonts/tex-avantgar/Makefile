@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/19 01:46:23 minskim Exp $
 
 DISTNAME=	avantgar
 PKGNAME=	tex-${DISTNAME}-2010
-TEXLIVE_REV=	21101
+TEXLIVE_REV=	21570
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Avantgarde font
