@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.185 2011/03/08 18:38:34 minskim Exp $
+# $NetBSD: Makefile,v 1.186 2011/03/08 19:05:06 minskim Exp $
 #
 
 COMMENT=	Fonts
@@ -240,6 +240,8 @@ SUBDIR+=	tex-utopia
 SUBDIR+=	tex-utopia-doc
 SUBDIR+=	tex-wasy
 SUBDIR+=	tex-wasy-doc
+SUBDIR+=	tex-wasysym
+SUBDIR+=	tex-wasysym-doc
 SUBDIR+=	tex-zapfchan
 SUBDIR+=	tex-zapfding
 SUBDIR+=	thaixfonts
