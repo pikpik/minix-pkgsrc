@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/wasysym/uwasy.fd
+share/texmf-dist/tex/latex/wasysym/uwasyvar.fd
+share/texmf-dist/tex/latex/wasysym/wasysym.sty
