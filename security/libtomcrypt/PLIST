@@ -13,5 +13,6 @@ include/tomcrypt_pk.h
 include/tomcrypt_pkcs.h
 include/tomcrypt_prng.h
 include/tomcrypt_test.h
-lib/libtomcrypt.a
+lib/libtomcrypt.la
+lib/libtomcrypt_prof.la
 share/doc/libtomcrypt/crypt.pdf
