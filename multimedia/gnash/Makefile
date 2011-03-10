@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2011/02/23 12:15:52 shattered Exp $
+# $NetBSD: Makefile,v 1.34 2011/02/26 04:04:41 obache Exp $
 #
 
 DISTNAME=		gnash-${VER}
 VER=			0.8.8
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_GNU:=gnash/${VER}/}
 EXTRACT_SUFX=		.tar.bz2
@@ -42,7 +42,7 @@ BUILDLINK_TRANSFORM+=	rm:-fvisibility-inlines-hidden
 .include "../../devel/boost-libs/buildlink3.mk"
 .include "../../devel/libltdl/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/libungif/buildlink3.mk"
+.include "../../mk/giflib.buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"

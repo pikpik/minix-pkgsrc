@@ -6,8 +6,8 @@ include/libraw/libraw_datastream.h
 include/libraw/libraw_internal.h
 include/libraw/libraw_types.h
 include/libraw/libraw_version.h
-lib/libraw.a
-lib/libraw_r.a
+lib/libraw.la
+lib/libraw_r.la
 lib/pkgconfig/libraw.pc
 lib/pkgconfig/libraw_r.pc
 share/doc/libraw/COPYRIGHT

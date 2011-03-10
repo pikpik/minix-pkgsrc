@@ -1,4 +1,8 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.2 2011/01/18 11:57:53 drochner Exp $
+
+.if !defined(MK_GIFLIB_BUILDLINK3_MK)
+PKG_FAIL_REASON= "please use giflib.buildlink3.mk"
+.endif
 
 BUILDLINK_TREE+=	giflib
 

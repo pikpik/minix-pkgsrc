@@ -116,8 +116,10 @@ share/examples/curl/sendrecv.c
 share/examples/curl/sepheaders.c
 share/examples/curl/simple.c
 share/examples/curl/simplepost.c
+share/examples/curl/simplesmtp.c
 share/examples/curl/simplessl.c
 share/examples/curl/smooth-gtk-thread.c
 share/examples/curl/smtp-multi.c
+share/examples/curl/smtp-tls.c
 share/examples/curl/synctime.c
 share/examples/curl/threaded-ssl.c

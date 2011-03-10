@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2010/12/23 11:44:54 dsainty Exp $
+# $NetBSD: Makefile,v 1.34 2011/01/13 13:39:10 wiz Exp $
 
 DISTNAME=		advi-1.6.0
-PKGREVISION=		9
+PKGREVISION=		10
 CATEGORIES=		print
 MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/cristal/advi/
 EXTRACT_SUFX=		.tgz
@@ -56,7 +56,7 @@ post-install:
 .include "../../graphics/camlimages/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/libungif/buildlink3.mk"
+.include "../../mk/giflib.buildlink3.mk"
 .include "../../graphics/gdk-pixbuf/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../x11/lablgtk1/buildlink3.mk"

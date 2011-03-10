@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.352 2011/02/09 09:51:19 wiz Exp $
+# $NetBSD: Makefile,v 1.353 2011/02/25 11:08:44 obache Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -236,6 +236,7 @@ SUBDIR+=	vym
 SUBDIR+=	watch
 SUBDIR+=	wdic
 SUBDIR+=	whohas
+SUBDIR+=	window
 SUBDIR+=	xchm
 SUBDIR+=	xdg-utils
 SUBDIR+=	xfce4-weather-plugin
