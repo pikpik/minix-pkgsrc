@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2008/01/22 02:00:42 gdt Exp $
+# $NetBSD: Makefile,v 1.27 2008/07/14 12:56:02 joerg Exp $
 #
 
-DISTNAME=	lwp-2.4
+DISTNAME=	lwp-2.6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.coda.cs.cmu.edu/pub/lwp/src/
 
