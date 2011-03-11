@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.140 2010/12/01 10:48:06 asau Exp $
+# $NetBSD: Makefile,v 1.142 2011/03/11 14:24:26 drochner Exp $
 #
 
 COMMENT=	Editors
 
 SUBDIR+=	Sigil
 SUBDIR+=	TeXmacs
+SUBDIR+=	TeXmacs-devel
 SUBDIR+=	abiword
 SUBDIR+=	abiword-plugins
 SUBDIR+=	beav
@@ -97,6 +98,7 @@ SUBDIR+=	poedit
 SUBDIR+=	qgoogletranslator
 SUBDIR+=	rox-edit
 SUBDIR+=	sam
+SUBDIR+=	scite
 SUBDIR+=	speedbar
 SUBDIR+=	ssam
 SUBDIR+=	tamago

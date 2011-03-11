@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2007/11/06 20:13:33 reed Exp $
+# $NetBSD: Makefile,v 1.21 2008/03/02 03:48:37 jlam Exp $
 
 DISTNAME=	unlzx.c
 PKGNAME=	unlzx-1.1
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://de.aminet.net/misc/unix/ \
-		ftp://us.aminet.net/pub/aminet/misc/unix/
+MASTER_SITES=	ftp://de.aminet.net/misc/unix/
+
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

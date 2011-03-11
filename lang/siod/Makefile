@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.17 2006/09/09 02:43:09 obache Exp $
+# $NetBSD: Makefile,v 1.18 2008/08/28 13:15:27 ahoka Exp $
 
 DISTNAME=		siod
 PKGNAME=		siod-3.0
 PKGREVISION=		1
 CATEGORIES=		lang
-MASTER_SITES=		ftp://ftp.std.com/pub/gjc/
+MASTER_SITES=		# ftp://ftp.std.com/pub/gjc/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org

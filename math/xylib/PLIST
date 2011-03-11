@@ -1,8 +1,9 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/12/12 13:58:58 drochner Exp $
+@comment $NetBSD$
 bin/xyconv
 include/xylib/brucker_raw.h
 include/xylib/cache.h
 include/xylib/canberra_mca.h
+include/xylib/chiplot.h
 include/xylib/cpi.h
 include/xylib/dbws.h
 include/xylib/gsas.h

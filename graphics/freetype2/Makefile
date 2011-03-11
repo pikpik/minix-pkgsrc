@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.77 2010/11/24 18:44:53 drochner Exp $
+# $NetBSD: Makefile,v 1.78 2010/12/26 19:16:15 adam Exp $
 
 DISTNAME=	freetype-2.4.4
 PKGNAME=	${DISTNAME:S/-/2-/}
 CATEGORIES=	graphics
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=freetype/} \
-		ftp://ring.aist.go.jp/pub/graphics/freetype/freetype2/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=freetype/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	rh@NetBSD.org
