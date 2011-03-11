@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.870 2011/03/04 03:53:20 taca Exp $
+# $NetBSD: Makefile,v 1.871 2011/03/04 16:52:18 tron Exp $
 #
 
 COMMENT=	Networking tools
@@ -137,6 +137,7 @@ SUBDIR+=	gini
 SUBDIR+=	gkrellm-multiping
 SUBDIR+=	gkrellm-snmp
 SUBDIR+=	gkrellm-wireless
+SUBDIR+=	glib-networking
 SUBDIR+=	gnapfetch
 SUBDIR+=	gnet
 SUBDIR+=	gnet1
