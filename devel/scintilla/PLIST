@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/SciLexer.h
+include/Scintilla.h
+include/ScintillaWidget.h
+lib/scintilla.a
