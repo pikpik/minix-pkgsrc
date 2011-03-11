@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/01/19 21:15:51 ryoon Exp $
 #
 
-DISTNAME=	libvpx-v0.9.5
+DISTNAME=	libvpx-v0.9.6
 PKGNAME=	${DISTNAME:S/-v/-/}
 CATEGORIES=	multimedia
 MASTER_SITES=	http://webm.googlecode.com/files/
