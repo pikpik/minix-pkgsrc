@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/02/25 09:47:29 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2011/03/11 18:38:12 drochner Exp $
 #
 
 DISTNAME=	libproxy-0.3.1
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --without-python
+CONFIGURE_ENV+=	PYTHON=${TRUE}
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config gmake
 PY_PATCHPLIST=	yes
