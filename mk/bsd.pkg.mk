@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1975 2010/11/03 18:02:40 adam Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1976 2011/02/07 10:32:32 wiz Exp $
 #
 # This file is in the public domain.
 #
@@ -203,6 +203,13 @@ _BUILD_DEFS+=            PKG_OPTIONS
 
 .if empty(DEPOT_SUBDIR)
 PKG_FAIL_REASON+=	"DEPOT_SUBDIR may not be empty."
+.endif
+
+# Store the build options for multi-packages, i.e. packages that can
+# be built with multiple versions of Apache, Python, Ruby, PHP etc.
+#
+.if defined(MULTI)
+_BUILD_DEFS+=            MULTI
 .endif
 
 # ZERO_FILESIZE_P exits with a successful return code if the given file
