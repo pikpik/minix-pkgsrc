@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/12/17 07:36:12 obache Exp $
+# $NetBSD: Makefile,v 1.4 2011/02/23 09:11:09 adam Exp $
 
 DISTNAME=	opensaml-2.4.1
 CATEGORIES=	security
@@ -23,4 +23,5 @@ CONFIGURE_ARGS+=	--disable-doxygen-doc
 .include "../../security/xml-security-c/buildlink3.mk"
 .include "../../textproc/xerces-c/buildlink3.mk"
 .include "../../textproc/xmltooling/buildlink3.mk"
+.include "../../www/curl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
