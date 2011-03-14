@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/12/23 19:25:22 abs Exp $
+# $NetBSD: Makefile,v 1.30 2011/03/14 06:34:37 obache Exp $
 #
 
 DISTNAME=	eGTK_0.3.4
@@ -10,6 +10,7 @@ MASTER_SITES=	http://www.netlabs.net/hp/richieb/downloads/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.netlabs.net/hp/richieb/gtk_eiffel.html
 COMMENT=	Eiffel/GTK+ interface for SmallEiffel
+#LICENSE=	Fiffel Forum Freeware License, version 1
 
 DEPENDS+=	SmartEiffel-[0-9]*:../../lang/SmartEiffel
 
