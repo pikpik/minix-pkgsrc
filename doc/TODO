@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10193 2011/03/15 19:43:32 jakllsch Exp $
+$NetBSD: TODO,v 1.10196 2011/03/16 14:43:33 wiz Exp $
 
 Suggested new packages
 ======================
@@ -694,7 +694,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o gnomeicu-0.99.14
 	o gnopernicus-1.1.2
 	o gnu-crypto-2.1.0
-	o gnucash-2.4.4
 	o gnuchess-5.08
 	o gobject-introspection-0.10.4
 	o gok-2.30.1 [GNOME 2.32]
@@ -907,7 +906,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o lyx-1.6.9
 	o lzip-1.11
 	o lzop-1.03
-	o m4-1.4.16
 	o maelstrom-sdl-3.0.6
 	o maelstrom-x11-2.0.7
 	o mailgraph-1.14
@@ -1124,7 +1122,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o rep-gtk-0.90.5
 	o resize_image-0.7
 	o resourceproto-1.1.1
-	o rftg-0.8.1
 	o rgb-1.0.4
 	o rhythmbox-0.13.3
 	o riece-7.0.1 [pkg/43970]
