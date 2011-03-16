@@ -20,6 +20,8 @@ INSTALL_DIRS=		${WRKDIR}/build
 
 CMAKE_SOURCE_PATH=	${WRKSRC}
 
+.include "../../mk/bsd.prefs.mk"
+
 USE_CMAKE=	yes
 USE_GCC=	4.2+
 USE_GMAKE=	yes
@@ -56,5 +58,4 @@ regression-test:
 do-install:
 	cp ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/lib/
 
-.include "../../mk/bsd.prefs.mk"
 .include "../../mk/bsd.pkg.mk"
