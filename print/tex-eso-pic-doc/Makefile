@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/04 22:39:29 minskim Exp $
 
 DISTNAME=	eso-pic.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2.0c
-TEXLIVE_REV=	20020
+TEXLIVE_REV=	21515
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Documentation for tex-eso-pic

@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/04 22:39:15 minskim Exp $
 
 DISTNAME=	eso-pic
 PKGNAME=	tex-${DISTNAME}-2.0c
-TEXLIVE_REV=	20020
+PKGREVISION=	1
+TEXLIVE_REV=	21515
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Add picture commands (or backgrounds) to every page
