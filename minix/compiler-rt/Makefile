@@ -56,4 +56,5 @@ regression-test:
 do-install:
 	cp ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/lib/
 
+.include "../../mk/bsd.prefs.mk"
 .include "../../mk/bsd.pkg.mk"
