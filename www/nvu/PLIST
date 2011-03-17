@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/10/21 21:54:13 rillig Exp $
+@comment $NetBSD: PLIST,v 1.2 2009/06/14 22:00:29 joerg Exp $
 bin/nvu
 bin/nvu-config
 include/${PKGNAME}/accessibility/nsAccessNode.h
@@ -2077,7 +2077,6 @@ lib/pkgconfig/nvu-nspr.pc
 lib/pkgconfig/nvu-nss.pc
 lib/pkgconfig/nvu-plugin.pc
 lib/pkgconfig/nvu-xpcom.pc
-share/aclocal/nspr.m4
 share/idl/${PKGNAME}/XPCIDispatch.idl
 share/idl/${PKGNAME}/diIIconFinder.idl
 share/idl/${PKGNAME}/domstubs.idl
