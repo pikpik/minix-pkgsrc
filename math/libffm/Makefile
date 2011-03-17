@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2008/01/19 09:16:25 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/03/04 18:12:59 jlam Exp $
 
 DISTNAME=		libffm.0.28
 PKGNAME=		libffm-0.28
 PKGREVISION=		1
 CATEGORIES=		math
-MASTER_SITES=		ftp://ftp.unix-ag.org/user/nils/
+MASTER_SITES=		# ftp://ftp.unix-ag.org/user/nils/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Fast alpha-optimized replacement for some libm routines
