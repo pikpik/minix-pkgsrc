@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2007/01/07 09:14:06 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2010/01/27 17:44:37 joerg Exp $
 
 DISTNAME=	tcpd-tools-0.8
 PKGNAME=	tcpdpriv-0.8
 CATEGORIES=	net
-MASTER_SITES=	ftp://tracer.csl.sony.co.jp/pub/mawi/tools/
+MASTER_SITES=	# ftp://tracer.csl.sony.co.jp/pub/mawi/tools/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Anonymize tcpdump traces
