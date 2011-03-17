@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2007/01/07 09:14:00 rillig Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/04 19:21:11 jlam Exp $
 
 DISTNAME=		cowsay-3.03
 PKGREVISION=		1
 CATEGORIES=		misc
-MASTER_SITES=		ftp://ftp.nog.net/pub/tony/cowsay/
+MASTER_SITES=		# ftp://ftp.nog.net/pub/tony/cowsay/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.nog.net/~tony/warez/cowsay.shtml
