@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2005/11/02 18:44:40 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2009/10/29 21:34:12 tnn Exp $
 #
 
 DISTNAME=		genpasswd-1.5
 CATEGORIES=		sysutils
-MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
+MASTER_SITES=		# ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Random password generator
