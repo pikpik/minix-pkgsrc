@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-circ/pst-circ.pro
+share/texmf-dist/tex/generic/pst-circ/pst-circ.tex
+share/texmf-dist/tex/latex/pst-circ/pst-circ.sty
