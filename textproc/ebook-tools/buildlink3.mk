@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2009/01/10 22:20:23 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:25:28 joerg Exp $
 
 BUILDLINK_TREE+=	ebook-tools
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	ebook-tools
 EBOOK_TOOLS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.ebook-tools+=	ebook-tools>=0.1.1
+BUILDLINK_ABI_DEPENDS.ebook-tools+=	ebook-tools>=0.1.1nb2
 BUILDLINK_PKGSRCDIR.ebook-tools?=	../../textproc/ebook-tools
 
 .include "../../archivers/libzip/buildlink3.mk"
