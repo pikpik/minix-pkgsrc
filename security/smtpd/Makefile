@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2007/07/22 22:26:04 adrianp Exp $
+# $NetBSD: Makefile,v 1.22 2010/01/27 16:51:14 joerg Exp $
 #
 
 DISTNAME=	smtpd-2.0
 PKGREVISION=	3
 CATEGORIES=	mail security
-MASTER_SITES=	http://www.netsw.org/net/ip/firewall/proxy/smtpd/
+MASTER_SITES=	# http://www.netsw.org/net/ip/firewall/proxy/smtpd/
 
 PATCHFILES=	patch-smtpd-2.0-RBL.gz
 PATCH_SITES=	ftp://ftp.42.org/pub/OLD/p/
