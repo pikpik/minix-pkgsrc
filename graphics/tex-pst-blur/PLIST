@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-blur/pst-blur.pro
+share/texmf-dist/tex/generic/pst-blur/pst-blur.tex
+share/texmf-dist/tex/latex/pst-blur/pst-blur.sty
