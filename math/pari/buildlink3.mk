@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2010/02/06 10:37:06 sno Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2010/03/24 21:54:16 asau Exp $
 
 BUILDLINK_TREE+=	pari
 
@@ -13,10 +13,10 @@ pkgbase := pari
 .include "../../mk/pkg-build-options.mk"
 
 PARI_LIB?=	pari
-.  if !empty(PKG_BUILD_OPTIONS.pari:Mgmp)
+.if !empty(PKG_BUILD_OPTIONS.pari:Mgmp)
 PARI_LIB=	pari-gmp
-.    include "../../devel/gmp/buildlink3.mk"
-.  endif
+.  include "../../devel/gmp/buildlink3.mk"
+.endif
 
 .endif # PARI_BUILDLINK3_MK
 
