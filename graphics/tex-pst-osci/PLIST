@@ -1,0 +1,3 @@
+@comment $NetBSD$
+share/texmf-dist/tex/generic/pst-osci/pst-osci.tex
+share/texmf-dist/tex/latex/pst-osci/pst-osci.sty
