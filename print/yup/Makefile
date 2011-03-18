@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2010/01/27 16:47:41 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2010/03/21 16:29:43 wiz Exp $
 #
 
 DISTNAME=		yup-r1-rel
 PKGNAME=		yup-1.0
 CATEGORIES=		print
-MASTER_SITES=		http://redback.spyda.net/~mjch/yup/
+MASTER_SITES=		# http://redback.spyda.net/~mjch/yup/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
