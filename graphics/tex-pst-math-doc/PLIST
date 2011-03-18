@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/pst-math/Changes
+share/texmf-dist/doc/generic/pst-math/README
+share/texmf-dist/doc/generic/pst-math/pst-math-doc.bib
+share/texmf-dist/doc/generic/pst-math/pst-math-doc.pdf
+share/texmf-dist/doc/generic/pst-math/pst-math-doc.tex
