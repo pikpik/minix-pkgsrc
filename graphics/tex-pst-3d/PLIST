@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-3d/pst-3d.pro
+share/texmf-dist/tex/generic/pst-3d/pst-3d.tex
+share/texmf-dist/tex/latex/pst-3d/pst-3d.sty
