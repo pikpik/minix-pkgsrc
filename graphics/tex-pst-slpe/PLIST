@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-slpe/pst-slpe.pro
+share/texmf-dist/tex/generic/pst-slpe/pst-slpe.tex
+share/texmf-dist/tex/latex/pst-slpe/pst-slpe.sty
