@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/pst-eps/Changes
+share/texmf-dist/doc/generic/pst-eps/README
+share/texmf-dist/doc/generic/pst-eps/pst-eps-doc.bib
+share/texmf-dist/doc/generic/pst-eps/pst-eps-doc.pdf
+share/texmf-dist/doc/generic/pst-eps/pst-eps-doc.tex
+share/texmf-dist/doc/generic/pst-eps/spirale.eps
