@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-text/pst-text.pro
+share/texmf-dist/tex/generic/pst-text/pst-char.tex
+share/texmf-dist/tex/generic/pst-text/pst-text.tex
+share/texmf-dist/tex/latex/pst-text/pst-char.sty
+share/texmf-dist/tex/latex/pst-text/pst-text.sty
