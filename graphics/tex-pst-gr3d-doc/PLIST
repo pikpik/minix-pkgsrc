@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/pst-gr3d/Changes
+share/texmf-dist/doc/generic/pst-gr3d/README
+share/texmf-dist/doc/generic/pst-gr3d/pst-gr3d.pdf
