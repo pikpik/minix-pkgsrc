@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-coil/pst-coil.pro
+share/texmf-dist/tex/generic/pst-coil/pst-coil.tex
+share/texmf-dist/tex/latex/pst-coil/pst-coil.sty
