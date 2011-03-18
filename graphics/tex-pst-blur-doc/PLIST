@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/pst-blur/Changes
+share/texmf-dist/doc/generic/pst-blur/README
+share/texmf-dist/doc/generic/pst-blur/pst-blur.pdf
