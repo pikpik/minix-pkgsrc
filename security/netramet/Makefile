@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/02/25 14:59:22 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2011/03/18 20:28:21 zafer Exp $
 #
 
 DISTNAME=	NeTraMet44
@@ -8,11 +8,17 @@ MASTER_SITES=	# http://foobar.cit.buffalo.edu/nms/NeTraMet/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	NEtwork TRaffic METer
+#LICENSE=	GNU EMACS GENERAL PUBLIC LICENSE
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=	no
 
 GNU_CONFIGURE=	YES
 
 CONFIGURE_ARGS+=--without-x
 MAKE_ENV+=	PCAP_LIB=${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.libpcap}/lib
+INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX}
 
 .include "../../net/libpcap/buildlink3.mk"
 
