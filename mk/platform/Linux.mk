@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.39 2010/05/20 07:57:23 sbd Exp $
+# $NetBSD: Linux.mk,v 1.40 2010/07/08 04:57:36 dholland Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -12,7 +12,11 @@ PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 # XXX: default from defaults/mk.conf.  Verify/correct for this platform
 # and remove this comment.
+.if exists(/usr/bin/su)
+SU?=		/usr/bin/su
+.else
 SU?=		/bin/su
+.endif
 TYPE?=		type			# Shell builtin
 
 CPP_PRECOMP_FLAGS?=	# unset
