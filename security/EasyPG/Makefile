@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2009/08/05 08:01:36 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2009/08/06 01:44:55 minskim Exp $
 
 DISTNAME=	epg-0.0.16
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME:S/epg/EasyPG/}
@@ -10,8 +10,11 @@ MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.easypg.org/
 COMMENT=	GnuPG interface for emacs
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 GNU_CONFIGURE=	YES
 MAKE_FLAGS+=	lispdir=${EMACS_LISPPREFIX:Q}
+INSTALL_MAKE_FLAGS+=	lispdir=${DESTDIR}${EMACS_LISPPREFIX:Q}
 
 INFO_FILES=	epa.info
 
