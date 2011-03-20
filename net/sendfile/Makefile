@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/03/20 12:00:15 obache Exp $
+# $NetBSD: Makefile,v 1.25 2011/03/20 12:13:44 obache Exp $
 #
 
 DISTNAME=	sendfile-20010216
@@ -11,6 +11,7 @@ MASTER_SITES=	ftp://ftp.belwue.de/pub/unix/sendfile/current/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fex.rus.uni-stuttgart.de/saft/sendfile.html
 COMMENT=	Implementation of the Simple asynchronous file transfer protocol
+LICENSE=	gnu-gpl-v2
 
 WRKSRC=		${WRKDIR}/sendfile-2.1a
 
