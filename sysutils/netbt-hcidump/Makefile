@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/12/19 20:20:42 plunky Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/30 20:41:29 plunky Exp $
 
 DISTNAME=		netbt-hcidump-2.0
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.kernel.org/pub/linux/bluetooth/
 DISTFILES=		bluez-hcidump-2.0.tar.gz	\
