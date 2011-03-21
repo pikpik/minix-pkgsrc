@@ -31,6 +31,8 @@ sbin/ods-control
 sbin/ods-enforcerd
 sbin/ods-signer
 sbin/ods-signerd
+share/doc/opendnssec/KNOWN_ISSUES
+share/doc/opendnssec/MIGRATION
 share/examples/opendnssec/conf.xml
 share/examples/opendnssec/conf.xml.sample
 share/examples/opendnssec/kasp.xml
