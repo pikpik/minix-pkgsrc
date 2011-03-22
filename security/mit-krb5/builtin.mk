@@ -56,10 +56,10 @@ USE_BUILTIN.mit-krb5=	${IS_BUILTIN.mit-krb5}
 .    if defined(BUILTIN_PKG.mit-krb5) && \
         !empty(IS_BUILTIN.mit-krb5:M[yY][eE][sS])
 USE_BUILTIN.mit-krb5=	yes
-.      for _dep_ in ${BUILDLINK_API_DEPENDS.mit-krb5}
+.      for dep__ in ${BUILDLINK_API_DEPENDS.mit-krb5}
 .        if !empty(USE_BUILTIN.mit-krb5:M[yY][eE][sS])
 USE_BUILTIN.mit-krb5!=							\
-	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.mit-krb5:Q}; then \
+	if ${PKG_ADMIN} pmatch ${dep__:Q} ${BUILTIN_PKG.mit-krb5:Q}; then \
 		${ECHO} "yes";						\
 	else								\
 		${ECHO} "no";						\
