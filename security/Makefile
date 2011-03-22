@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.403 2010/12/31 06:18:48 wiz Exp $
+# $NetBSD: Makefile,v 1.404 2011/03/01 15:40:22 kleink Exp $
 #
 
 COMMENT=	Security tools
@@ -143,6 +143,7 @@ SUBDIR+=	md5-collision
 SUBDIR+=	mhash
 SUBDIR+=	mirrordir
 SUBDIR+=	mit-krb5
+SUBDIR+=	mit-krb5-appl
 SUBDIR+=	mixminion
 SUBDIR+=	mozilla-rootcerts
 SUBDIR+=	msu
