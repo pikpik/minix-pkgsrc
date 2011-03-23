@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.117 2010/09/11 07:30:53 taca Exp $
+# $NetBSD: Makefile,v 1.118 2011/02/15 10:25:15 obache Exp $
 #
 
 COMMENT=	Archivers
@@ -35,7 +35,6 @@ SUBDIR+=	lcab
 SUBDIR+=	lha
 SUBDIR+=	libarchive
 SUBDIR+=	libcomprex
-SUBDIR+=	liblzo
 SUBDIR+=	libzip
 SUBDIR+=	lzip
 SUBDIR+=	lzma
