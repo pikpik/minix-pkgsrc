@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/03/03 12:07:40 obache Exp $
 #
 
 .include "../../x11/vte/Makefile.common"
@@ -21,6 +21,8 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 CONFIGURE_ARGS+=	--enable-python
 CONFIGURE_ARGS+=	--disable-freetype-test
 CONFIGURE_ARGS+=	--enable-Bsymbolic=auto
+
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 BUILD_DIRS=	python
 
