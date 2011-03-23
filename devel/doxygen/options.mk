@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2011/03/23 19:24:35 gdt Exp $
 #
 PKG_OPTIONS_VAR=	PKG_OPTIONS.doxygen
 PKG_SUPPORTED_OPTIONS=	latex
@@ -33,7 +33,5 @@ DEPENDS+=	tex-psnfss>=9.2anb2:../../fonts/tex-psnfss
 DEPENDS+=	tex-pspicture-[0-9]*:../../print/tex-pspicture
 DEPENDS+=	tex-tools-[0-9]*:../../print/tex-tools
 DEPENDS+=	texlive-pdftools-[0-9]*:../../print/texlive-pdftools
-
-.include "../../mk/tex.buildlink3.mk"
 
 .endif
