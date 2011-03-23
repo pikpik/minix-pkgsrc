@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10210 2011/03/22 07:03:45 obache Exp $
+$NetBSD: TODO,v 1.10211 2011/03/22 09:38:30 taca Exp $
 
 Suggested new packages
 ======================
@@ -987,7 +987,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o openh323-1.19.1
 	o openmortal-0.7.1
 	o openmotif-2.3.3
-	o openmpi-1.5.3
 	o openmsx-0.7.0
 	o openoffice3-3.3
 	o openssh-5.8p1
