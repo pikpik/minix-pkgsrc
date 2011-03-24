@@ -215,6 +215,7 @@ share/brasero/icons/hicolor/scalable/status/brasero-disc-80.svg
 share/brasero/icons/hicolor/scalable/status/brasero-disc-85.svg
 share/brasero/icons/hicolor/scalable/status/brasero-disc-90.svg
 share/brasero/icons/hicolor/scalable/status/brasero-disc-95.svg
+share/glib-2.0/schemas/org.gnome.brasero.gschema.xml
 share/gnome/help/brasero/C/brasero.xml
 share/gnome/help/brasero/C/figures/brasero_main.png
 share/gnome/help/brasero/C/legal.xml
