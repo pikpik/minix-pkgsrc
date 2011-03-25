@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.68 2011/01/13 13:53:31 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2011/02/11 21:41:21 tnn Exp $
 #
-DISTNAME=		transmission-2.21
-PKGNAME=		Transmission-2.21
+DISTNAME=		transmission-2.22
+PKGNAME=		Transmission-2.22
 CATEGORIES=		net
 MASTER_SITES=		http://download.m0k.org/transmission/files/
 EXTRACT_SUFX=		.tar.bz2
@@ -14,6 +14,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config intltool msgfmt
 EXTRACT_USING=		bsdtar
+
+LICENSE=		gnu-gpl-v2 AND mit
 
 GNU_CONFIGURE=		yes
 LDFLAGS+=		${BUILDLINK_LDADD.getopt} ${BUILDLINK_LDADD.gettext}
