@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/03/11 14:38:22 drochner Exp $
 #
 
 DISTNAME=	scintilla224
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/scintilla
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 BUILD_DIRS=	gtk
 MAKE_FILE=	makefile
 
