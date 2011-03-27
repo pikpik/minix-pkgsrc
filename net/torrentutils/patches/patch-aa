@@ -1,4 +1,7 @@
-$NetBSD: patch-aa,v 1.2 2004/08/29 19:46:45 wiz Exp $
+$NetBSD: patch-aa,v 1.3 2010/01/27 17:31:58 joerg Exp $
+
+Fix installation path and mandir.
+Fix unportable test(1) construct.
 
 --- Makefile.orig	2003-10-12 14:13:16.000000000 +0200
 +++ Makefile
