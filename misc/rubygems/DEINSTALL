@@ -1,0 +1,12 @@
+# $NetBSD$
+
+RUBYGEM="@PREFIX@/bin/@RUBYGEM_NAME@"
+
+case ${STAGE} in
+DEINSTALL)
+	${MV} ${RUBYGEM} ${RUBYGEM}.new
+	if [ -f ${RUBYGEM}.orig ]; then
+		${MV} ${RUBYGEM}.orig ${RUBYGEM}
+	fi
+	;;
+esac
