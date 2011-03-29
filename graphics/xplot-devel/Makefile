@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2007/02/01 16:08:21 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/01/29 23:54:31 joerg Exp $
 
 DISTNAME=	xplot-0.90.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://acert.ir.bbn.com/downloads/acert-geospatial/
 HOMEPAGE=	http://www.xplot.org/
