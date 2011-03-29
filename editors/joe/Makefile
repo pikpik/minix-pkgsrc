@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2010/06/23 12:52:42 adam Exp $
+# $NetBSD: Makefile,v 1.33 2010/07/10 03:00:49 obache Exp $
 
 DISTNAME=	joe-3.7
 PKGREVISION=	1
@@ -26,5 +26,5 @@ CONF_FILES+=	${EGDIR}/jpicorc ${PKG_SYSCONFDIR}/jpicorc
 CONF_FILES+=	${EGDIR}/jstarrc ${PKG_SYSCONFDIR}/jstarrc
 CONF_FILES+=	${EGDIR}/rjoerc ${PKG_SYSCONFDIR}/rjoerc
 
-.include "../../devel/ncurses/buildlink3.mk"
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
