@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- programs/PROBES/Makefile.in.orig	2006-01-03 20:41:30.000000000 +0000
++++ programs/PROBES/Makefile.in
+@@ -280,9 +280,9 @@ uninstall-am: uninstall-info-am
+ 
+ 
+ myinstall: 
+-	$(mkinstalldirs) $(sampleprogdir)
++	$(mkinstalldirs) $(DESTDIR)$(sampleprogdir)
+ 	@-sh -c '( echo "cd $(sampleprogdir)" ; \
+-		cd $(sampleprogdir) && for s in $(LINKLIST) ; do \
++		cd $(DESTDIR)$(sampleprogdir) && for s in $(LINKLIST) ; do \
+ 		$(LN_S) ../$$s $$s ; \
+ 		echo "$(LN_S) ../$$s $$s" ; \
+ 	done )'
