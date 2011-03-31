@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2011/02/19 09:44:32 imil Exp $
+# $NetBSD: Makefile,v 1.4 2011/03/31 20:45:56 zafer Exp $
 #
 
 PKGNAME=	shelldap-0.4
-DISTNAME=	tip
+DISTNAME=	d7975e514b2a
 CATEGORIES=	sysutils
 MASTER_SITES=	http://code.martini.nu/shelldap/archive/
 EXTRACT_SUFX=	.zip
