@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2011/04/01 14:52:24 obache Exp $
+# $NetBSD: Makefile,v 1.24 2011/04/01 15:03:48 wiz Exp $
 #
 
 DISTNAME=		mod-auth-mysql_4.3.9.orig
 PKGNAME=		${APACHE_PKG_PREFIX}-auth-mysql-4.3.9
+PKGREVISION=		1
 WRKSRC=			${WRKDIR}/${DISTNAME:S/_/-/}
 CATEGORIES=		www databases security
 MASTER_SITES=		${MASTER_SITE_DEBIAN:=pool/main/m/mod-auth-mysql/}
