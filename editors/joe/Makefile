@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.33 2010/07/10 03:00:49 obache Exp $
+# $NetBSD: Makefile,v 1.34 2011/03/29 21:38:26 roy Exp $
 
 DISTNAME=	joe-3.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=joe-editor/}
 
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://joe-editor.sourceforge.net/
 COMMENT=	Joe's own editor
+LICENSE=	gnu-gpl-v1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
