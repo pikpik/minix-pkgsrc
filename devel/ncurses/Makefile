@@ -17,6 +17,14 @@ SUBST_FILES.ti=		${TERMINFO_SRC}
 # see misc/screen/PLIST for these:
 SUBST_SED.ti=		-e '/^screen|/,/^$$/d'
 SUBST_SED.ti+=		-e '/^screen-bce|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.xterm-new|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.rxvt|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.Eterm|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.mrxvt|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.gnome|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.konsole|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.linux|/,/^$$/d'
+SUBST_SED.ti+=		-e '/^screen-bce.mlterm|/,/^$$/d'
 SUBST_SED.ti+=		-e '/^screen-s|/,/^$$/d'
 # see ${TERMINFO_SRC} and look for use=screen for these
 SUBST_SED.ti+=		-e '/^screen.teraterm|/,/^$$/d'
