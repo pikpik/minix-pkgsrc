@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2009/03/20 17:17:48 mishka Exp $
+# $NetBSD: Makefile,v 1.59 2011/03/02 15:43:12 ryoon Exp $
 
 DISTNAME=		bochs-2.4.6
 CATEGORIES=		emulators
@@ -148,6 +148,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .  include "../../x11/libSM/buildlink3.mk"
 .  include "../../x11/libX11/buildlink3.mk"
 .  include "../../x11/libXpm/buildlink3.mk"
+.  include "../../x11/libXrandr/buildlink3.mk"
 .  include "../../x11/libXt/buildlink3.mk"
 .  endif
 .endif
