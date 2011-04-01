@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/07/12 12:07:44 obache Exp $
+# $NetBSD: Makefile,v 1.17 2011/02/23 10:32:29 adam Exp $
 
 DISTNAME=	dbxml-2.5.16
 PKGNAME=	${DISTNAME:S/db/bdb-/}
@@ -19,7 +19,7 @@ WRKSRC=			${WRKDIR}/${DISTNAME}/dbxml
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-berkeleydb=${BUILDLINK_PREFIX.db5}
+CONFIGURE_ARGS+=	--with-berkeleydb=${BDBBASE}
 CONFIGURE_ARGS+=	--with-xerces=${BUILDLINK_PREFIX.xerces-c}
 CONFIGURE_ARGS+=	--with-xqilla=${BUILDLINK_PREFIX.xqilla}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
