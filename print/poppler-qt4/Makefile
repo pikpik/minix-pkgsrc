@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:39:14 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2011/03/09 12:08:27 drochner Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -22,7 +22,7 @@ INSTALLATION_DIRS+=	lib include/poppler lib/pkgconfig
 BUILD_DIRS=		qt4/src
 
 pre-build:
-	(cd ${WRKSRC}/poppler; ${MAKE} libpoppler-arthur.la)
+	cd ${WRKSRC}/poppler && ${BUILD_MAKE_CMD} libpoppler-arthur.la
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/poppler-qt4.pc ${DESTDIR}${PREFIX}/lib/pkgconfig
