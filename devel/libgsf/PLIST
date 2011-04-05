@@ -95,6 +95,7 @@ share/gtk-doc/html/gsf/right.png
 share/gtk-doc/html/gsf/sources.html
 share/gtk-doc/html/gsf/style.css
 share/gtk-doc/html/gsf/up.png
+share/locale/ca/LC_MESSAGES/libgsf.mo
 share/locale/cs/LC_MESSAGES/libgsf.mo
 share/locale/da/LC_MESSAGES/libgsf.mo
 share/locale/de/LC_MESSAGES/libgsf.mo
