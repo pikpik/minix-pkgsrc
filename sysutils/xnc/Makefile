@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2010/12/23 11:44:56 dsainty Exp $
+# $NetBSD: Makefile,v 1.34 2011/01/13 13:39:27 wiz Exp $
 
 DISTNAME=	xnc-5.0.4.src
 PKGNAME=	xnc-5.0.4
@@ -9,6 +9,7 @@ MASTER_SITES=	http://www.xnc.dubna.su/src-5/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xnc.dubna.su/
 COMMENT=	File manager for X Window
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
