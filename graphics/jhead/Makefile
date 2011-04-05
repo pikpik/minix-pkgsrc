@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2008/10/22 21:58:30 tonnerre Exp $
+# $NetBSD: Makefile,v 1.25 2009/09/29 20:04:05 is Exp $
 #
 
-DISTNAME=	jhead-2.87
+DISTNAME=	jhead-2.90
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.sentex.net/~mwandel/jhead/
 
