@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-barcode/pst-barcode.pro
+share/texmf-dist/tex/generic/pst-barcode/pst-barcode.tex
+share/texmf-dist/tex/latex/pst-barcode/pst-barcode.sty
