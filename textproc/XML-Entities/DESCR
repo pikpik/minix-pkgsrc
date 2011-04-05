@@ -1,2 +1,0 @@
-This module deals with decoding of strings with XML character entities.
-Based upon the HTML::Entities module by Gisle Aas
