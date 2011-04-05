@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Src/zsh.h.orig	2008-10-31 18:40:18.000000000 +0900
+--- Src/zsh.h.orig	2010-12-14 10:09:52.000000000 +0000
 +++ Src/zsh.h
-@@ -1986,6 +1986,7 @@ struct ttyinfo {
+@@ -2105,6 +2105,7 @@ struct ttyinfo {
  #endif
  };
  
@@ -10,7 +10,7 @@ $NetBSD$
  /* defines for whether tabs expand to spaces */
  #if defined(HAVE_TERMIOS_H) || defined(HAVE_TERMIO_H)
  #define SGTTYFLAG       shttyinfo.tio.c_oflag
-@@ -2003,6 +2004,7 @@ struct ttyinfo {
+@@ -2122,6 +2123,7 @@ struct ttyinfo {
  #   endif
  #  endif
  # endif
