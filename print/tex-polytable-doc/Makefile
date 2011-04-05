@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/04/10 21:16:02 markd Exp $
+# $NetBSD: Makefile,v 1.2 2010/11/17 17:48:30 minskim Exp $
 
 DISTNAME=	polytable.doc
 PKGNAME=	tex-${DISTNAME:S/./-/}-0.8.2
+PKGREVISION=	1
 TEXLIVE_REV=	20331
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
