@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/28 18:10:51 wiz Exp $
 #
 
-DISTNAME=	mdds_0.5.1
+DISTNAME=	mdds_0.5.2
 PKGNAME=	${DISTNAME:S/_/-/}
 CATEGORIES=	devel
 MASTER_SITES=	http://multidimalgorithm.googlecode.com/files/
