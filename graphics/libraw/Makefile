@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2011/02/16 22:17:36 gls Exp $
+# $NetBSD: Makefile,v 1.10 2011/03/09 17:19:19 drochner Exp $
 #
 
-DISTNAME=		LibRaw-0.13.2
+DISTNAME=		LibRaw-0.13.4
 PKGNAME=		${DISTNAME:tl}
 CATEGORIES=		graphics
 MASTER_SITES=	http://www.libraw.org/data/
