@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2011/01/12 18:46:35 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2011/02/02 14:44:45 drochner Exp $
 
-DISTNAME=	libgexiv2-0.3.0
+DISTNAME=	libgexiv2-0.3.1
 CATEGORIES=	graphics devel
 MASTER_SITES=	http://yorba.org/download/gexiv2/0.3/
 EXTRACT_SUFX=	.tar.bz2
