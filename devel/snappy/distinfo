@@ -1,0 +1,6 @@
+$NetBSD$
+
+SHA1 (snappy-1.0.1.tar.gz) = 25fbae93cd4b7794e4a3705f0c5cb7ef3b9e32de
+RMD160 (snappy-1.0.1.tar.gz) = b5028ee1932456575ff025f644ebd8ee3518696a
+Size (snappy-1.0.1.tar.gz) = 1713964 bytes
+SHA1 (patch-aa) = 89b076be10d7768d3cf7e68bb1e290d5187dd4e2
