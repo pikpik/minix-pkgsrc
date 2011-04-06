@@ -1,9 +1,9 @@
 $NetBSD$
 
---- lib/expat/Makefile.orig	2006-07-12 04:00:38.000000000 +0200
+--- lib/expat/Makefile.orig	2011-03-25 16:58:35.000000000 +0000
 +++ lib/expat/Makefile
-@@ -6,7 +6,7 @@ SUBDIR = lib/expat
- include $(SRCDIR)/Makefile.config
+@@ -9,7 +9,7 @@ SUBDIR := lib/expat
+ include $(BLDDIR)/config.mk
  
  # Build up SUBDIRS:
 -SUBDIRS = gennmtab xmlparse xmltok
