@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/swath
+man/man1/swath.1
+share/swath/swathdic.tri
