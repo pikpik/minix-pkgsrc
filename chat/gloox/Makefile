@@ -1,4 +1,4 @@
-# $NetBSD: Makefile-example,v 1.18 2009/05/18 17:09:43 agc Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/06 19:46:48 schnoebe Exp $
 
 DISTNAME=		gloox-1.0
 CATEGORIES=		chat
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 
 USE_LANGUAGES+=		c++ c
-USE_TOOLS+=		autoconf automake
+USE_TOOLS+=		autoconf automake pkg-config
 USE_LIBTOOL=		yes
 
 .include "options.mk"
