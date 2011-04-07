@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/06/30 00:07:11 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2010/01/07 07:36:54 wiz Exp $
 #
 
 DISTNAME=		binkd098
@@ -7,6 +7,7 @@ PKGREVISION=		2
 CATEGORIES=		comms
 MASTER_SITES=		ftp://happy.kiev.ua/pub/fidosoft/mailer/binkd/
 EXTRACT_SUFX=		.zip
+PKG_DESTDIR_SUPPORT=	destdir
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://homepage.corbina.net/~maloff/binkd/
@@ -18,6 +19,7 @@ WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
+INSTALL_MAKE_FLAGS=     ${MAKE_FLAGS} PREFIX=${DESTDIR:Q}${PREFIX:Q}
 
 NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 
