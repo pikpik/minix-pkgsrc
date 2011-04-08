@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.408 2011/02/26 09:01:35 tron Exp $
+# $NetBSD: Makefile,v 1.409 2011/02/27 12:57:15 obache Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -286,6 +286,7 @@ SUBDIR+=	ruby-mime-types
 SUBDIR+=	ruby-tmail
 SUBDIR+=	safecat
 SUBDIR+=	sendmail
+SUBDIR+=	sendmail-cidrexpand
 SUBDIR+=	sendmail-qtool
 SUBDIR+=	sendymail
 SUBDIR+=	serialmail
