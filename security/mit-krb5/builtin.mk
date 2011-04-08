@@ -5,11 +5,13 @@ BUILTIN_PKG:=	mit-krb5
 .include "../../mk/bsd.fast.prefs.mk"
 
 BUILTIN_FIND_FILES_VAR:=		H_MIT_KRB5 SH_KRB5_CONFIG
-.if empty(MACHINE_PLATFORM:MDarwin-9.*-*) && \
-    empty(MACHINE_PLATFORM:MDarwin-10.*-*)
-BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5.h
-.else
+.if !(empty(MACHINE_PLATFORM:MDarwin-9.*-*) && \
+      empty(MACHINE_PLATFORM:MDarwin-10.*-*))
 BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5/krb5.h
+.elif !empty(MACHINE_PLATFORM:MSunOS-*-*)
+BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/kerberosv5/krb5.h
+.else
+BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5.h
 .endif
 BUILTIN_FIND_GREP.H_MIT_KRB5=		Massachusetts Institute of Technology
 BUILTIN_FIND_FILES.SH_KRB5_CONFIG=	/usr/bin/krb5-config
