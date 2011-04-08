@@ -1,12 +1,14 @@
-# $NetBSD: Makefile,v 1.3 2008/05/27 21:22:02 tonnerre Exp $
+# $NetBSD: Makefile,v 1.4 2010/01/17 12:02:33 wiz Exp $
 #
 
 PKGNAME=	nagios-plugin-radius-${PLUGINSVERSION}
-PKGREVISION=	1
 CATEGORIES=	net sysutils
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Nagios radius plugin
+LICENSE=	gnu-gpl-v3
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	nagios-plugins-${PLUGINSVERSION}{,nb[0-9]*}:../../net/nagios-plugins
 DEPENDS+=	p5-Net-SNMP-[0-9]*:../../net/p5-Net-SNMP
