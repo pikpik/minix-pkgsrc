@@ -58,6 +58,7 @@ share/scite/lua.properties
 share/scite/matlab.properties
 share/scite/metapost.properties
 share/scite/mmixal.properties
+share/scite/modula3.properties
 share/scite/nimrod.properties
 share/scite/nncrontab.properties
 share/scite/nsis.properties
