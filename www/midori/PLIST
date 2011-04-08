@@ -22,7 +22,8 @@ share/doc/midori/COPYING
 share/doc/midori/ChangeLog
 share/doc/midori/EXPAT
 share/doc/midori/README
-share/doc/midori/user/midori.html
+share/doc/midori/faq.css
+share/doc/midori/faq.html
 share/examples/midori/extensions/libadblock.so/config
 share/examples/midori/search
 share/icons/hicolor/16x16/apps/midori.png
