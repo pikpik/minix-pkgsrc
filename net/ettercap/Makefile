@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2010/11/15 22:58:13 abs Exp $
+# $NetBSD: Makefile,v 1.49 2011/01/13 13:53:32 wiz Exp $
 
 DISTNAME=		ettercap-0.6.b
 PKGREVISION=		9
@@ -10,6 +10,8 @@ HOMEPAGE=		http://ettercap.sourceforge.net/
 COMMENT=		Multipurpose sniffer/interceptor/logger for switched LAN
 
 CONFLICTS+=		ettercap-NG-[0-9]*
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
