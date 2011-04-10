@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.177 2011/03/06 16:02:29 wiz Exp $
+# $NetBSD: Makefile,v 1.178 2011/03/23 10:30:39 adam Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -36,6 +36,7 @@ SUBDIR+=	gmencoder
 SUBDIR+=	gmplayer
 SUBDIR+=	gnash
 SUBDIR+=	gnome-media
+SUBDIR+=	gnome-mplayer
 SUBDIR+=	goggles
 SUBDIR+=	gopchop
 SUBDIR+=	gpac
