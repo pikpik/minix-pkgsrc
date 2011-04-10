@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.178 2011/03/23 10:30:39 adam Exp $
+# $NetBSD: Makefile,v 1.179 2011/04/10 08:44:21 obache Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -30,6 +30,7 @@ SUBDIR+=	ffplay
 SUBDIR+=	flashplayer
 SUBDIR+=	fuppes
 SUBDIR+=	fxtv
+SUBDIR+=	gecko-mediaplayer
 SUBDIR+=	ggrab
 SUBDIR+=	gmediaserver
 SUBDIR+=	gmencoder
