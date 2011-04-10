@@ -16,9 +16,8 @@ lib/mlterm/libmozmodern.la
 lib/mlterm/libnext.la
 lib/mlterm/libsample.la
 lib/mlterm/libsample2.la
-${PLIST.m17nlib}lib/mlterm/libim-m17nlib.la
-${PLIST.uim}lib/mlterm/libim-uim.la
 libexec/mlconfig
+libexec/mlimgloader
 libexec/mlterm-menu
 man/man1/mlclient.1
 man/man1/mlterm.1
