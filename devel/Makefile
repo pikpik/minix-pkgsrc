@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1440 2011/04/05 05:35:20 agc Exp $
+# $NetBSD: Makefile,v 1.1441 2011/04/06 13:02:43 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -1116,6 +1116,7 @@ SUBDIR+=	papaya
 SUBDIR+=	pardiff
 SUBDIR+=	patch
 SUBDIR+=	patchutils
+SUBDIR+=	pcc-libs
 SUBDIR+=	pccts
 SUBDIR+=	pcl-cvs
 SUBDIR+=	pcre
