@@ -1,0 +1,8 @@
+===========================================================================
+$NetBSD$
+
+The configuration syntax for suphp.conf has slightly changed with this release.
+Be sure to read the documentation before upgrading, because existing
+configuration files will not work without changing them.
+
+===========================================================================
