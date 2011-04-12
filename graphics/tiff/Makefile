@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.99 2011/03/12 16:10:42 tron Exp $
+# $NetBSD: Makefile,v 1.100 2011/03/31 11:05:44 drochner Exp $
 
-DISTNAME=	tiff-3.9.4
-PKGREVISION=	3
+DISTNAME=	tiff-3.9.5
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.remotesensing.org/pub/libtiff/ \
 		http://libtiff.maptools.org/dl/
