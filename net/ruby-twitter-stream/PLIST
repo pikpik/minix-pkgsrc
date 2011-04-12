@@ -1,5 +1,9 @@
 @comment $NetBSD$
 ${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/.gemtest
+${GEM_LIBDIR}/.gitignore
+${GEM_LIBDIR}/.rspec
+${GEM_LIBDIR}/Gemfile
 ${GEM_LIBDIR}/README.markdown
 ${GEM_LIBDIR}/Rakefile
 ${GEM_LIBDIR}/VERSION
