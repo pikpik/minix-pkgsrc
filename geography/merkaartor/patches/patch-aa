@@ -33,9 +33,18 @@ $NetBSD$
             {
             errno = 0;
             gpsdata = Server->read();
-@@ -1027,13 +1026,13 @@ void QGPSDDevice::onDataAvailable()
+@@ -1026,14 +1025,22 @@ void QGPSDDevice::onDataAvailable()
+     setFixStatus(StatusActive);
      setLatitude(gpsdata->fix.latitude);
      setLongitude(gpsdata->fix.longitude);
++    if (gpsdata->fix.latitude < 0)
++	setLatCardinal(CardinalSouth);
++    else
++	setLatCardinal(CardinalNorth);
++    if (gpsdata->fix.longitude < 0)
++	setLongCardinal(CardinalWest);
++    else
++	setLongCardinal(CardinalEast);
      double Alt = gpsdata->fix.altitude;
 -    if (!__isnan(Alt))
 +    if (!std::isnan(Alt))
