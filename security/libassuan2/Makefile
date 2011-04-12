@@ -1,5 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/07/03 04:45:38 manu Exp $
-#
+# $NetBSD: Makefile,v 1.2 2010/08/16 21:42:18 wiz Exp $
 
 DISTNAME=	libassuan-2.0.1
 CATEGORIES=	security
@@ -14,11 +13,10 @@ LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
-CONFIGURE_ARGS+=--infodir=${PREFIX}/info
-INFO_FILES=	yes
+USE_LIBTOOL=		yes
+GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--infodir=${PREFIX}/info
+INFO_FILES=		yes
 
 .include "../../security/libgpg-error/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"
