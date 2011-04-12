@@ -1,13 +1,13 @@
 $NetBSD$
 
---- gettext-tools/misc/Makefile.in.orig	2006-06-21 14:30:05.000000000 +0200
+--- gettext-tools/misc/Makefile.in.orig	2010-06-06 20:12:31.000000000 +0000
 +++ gettext-tools/misc/Makefile.in
-@@ -576,7 +576,7 @@ info: info-am
+@@ -1451,7 +1451,7 @@ info: info-am
  
  info-am:
  
 -install-data-am: install-gettextsrcDATA install-lispLISP
 +install-data-am: install-gettextsrcDATA
  
- install-exec-am: install-binSCRIPTS
+ install-dvi: install-dvi-am
  
