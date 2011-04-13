@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.213 2011/03/04 19:06:26 minskim Exp $
+# $NetBSD: Makefile,v 1.214 2011/03/15 18:46:57 minskim Exp $
 
 COMMENT=	Mathematics
 
@@ -182,6 +182,7 @@ SUBDIR+=	qhull
 SUBDIR+=	quadpack
 SUBDIR+=	randlib
 SUBDIR+=	ruby-rb-gsl
+SUBDIR+=	ruby-spreadsheet
 SUBDIR+=	sc
 SUBDIR+=	scilab
 SUBDIR+=	slatec
