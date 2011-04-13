@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2009/05/20 00:58:07 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2010/02/01 02:19:35 joerg Exp $
 #
 
-DISTNAME=	verilog-0.8.7
-PKGREVISION=	1
+DISTNAME=	verilog-0.9.4
 CATEGORIES=	cad
-MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/v0.8/
+MASTER_SITES=	ftp://icarus.com/pub/eda/verilog/v0.9/
 
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://icarus.com/eda/verilog/index.html
@@ -21,8 +20,6 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake bison lex
 CONFIGURE_ARGS+=	--without-ipal
 TEST_TARGET=		check
-
-INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../archivers/bzip2/buildlink3.mk"
