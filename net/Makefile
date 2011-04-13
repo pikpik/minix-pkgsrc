@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.875 2011/04/05 11:48:41 obache Exp $
+# $NetBSD: Makefile,v 1.876 2011/04/06 13:10:55 obache Exp $
 #
 
 COMMENT=	Networking tools
@@ -533,6 +533,7 @@ SUBDIR+=	skype
 SUBDIR+=	slurm
 SUBDIR+=	smokeping
 SUBDIR+=	sniffit
+SUBDIR+=	snmptt
 SUBDIR+=	snort
 SUBDIR+=	snort-rules
 SUBDIR+=	socat
