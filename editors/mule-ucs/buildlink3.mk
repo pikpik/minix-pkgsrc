@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2008/10/11 09:31:56 uebayasi Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2009/03/20 19:24:31 joerg Exp $
 #
 
 #
@@ -19,7 +19,7 @@ BUILDLINK_PKGSRCDIR.mule-ucs?=	../../editors/mule-ucs
 
 BUILDLINK_CONTENTS_FILTER.mule-ucs=	${EGREP} '.*\.el$$|.*\.elc$$'
 
-.endif
 .endif # MULE_UCS_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-mule-ucs
+.endif
