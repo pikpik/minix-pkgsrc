@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2011/01/18 19:15:34 drochner Exp $
+# $NetBSD: Makefile,v 1.36 2011/03/18 21:29:49 minskim Exp $
 #
 
 COMMENT=	Software for geographical-related uses
@@ -21,6 +21,7 @@ SUBDIR+=	gpspoint
 SUBDIR+=	gpsutils
 SUBDIR+=	libchamplain04
 SUBDIR+=	libchamplain06
+SUBDIR+=	libchamplain08
 SUBDIR+=	libdrg
 SUBDIR+=	mapserver
 SUBDIR+=	merkaartor
