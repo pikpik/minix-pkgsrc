@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2009/08/24 13:57:33 hasso Exp $
+# $NetBSD: Makefile,v 1.32 2009/10/02 10:25:53 hasso Exp $
 #
 
 DISTNAME=		prewikka-${VERSION}
@@ -23,6 +23,7 @@ USE_TOOLS+=		msgfmt
 
 .include "../../mk/bsd.prefs.mk"
 
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 PYDISTUTILSPKG=		yes
 PYSETUP=		setup.py
 PYTHON_PATCH_SCRIPTS=	scripts/prewikka-httpd
