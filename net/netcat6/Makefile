@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/17 23:29:44 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/01/04 12:50:13 ghen Exp $
 
 DISTNAME=		nc6-1.0
 PKGNAME=		${DISTNAME:S/nc/netcat/}
@@ -20,8 +20,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-stack-guess
 
 USE_PKGLOCALEDIR=	yes
-
-.include "options.mk"
+USE_FEATURES+=		inet6
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
