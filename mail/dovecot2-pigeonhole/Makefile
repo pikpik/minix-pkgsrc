@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.2 2010/11/07 12:36:53 adam Exp $
+# $NetBSD: Makefile,v 1.3 2010/12/07 10:08:27 ghen Exp $
 
-DISTNAME=		dovecot-2.0-pigeonhole-0.2.2
-PKGNAME=		${DISTNAME:S/-2.0-/-/}
-CATEGORIES=		mail
-MASTER_SITES=		http://www.rename-it.nl/dovecot/2.0/
+DISTNAME=	dovecot-2.0-pigeonhole-0.2.3
+PKGNAME=	${DISTNAME:S/-2.0-/-/}
+CATEGORIES=	mail
+MASTER_SITES=	http://www.rename-it.nl/dovecot/2.0/
 
-MAINTAINER=		ghen@NetBSD.org
-HOMEPAGE=		http://www.dovecot.org/
-COMMENT=		Support for the Sieve language and the ManageSieve protocol
-LICENSE=		gnu-lgpl-v2.1
+MAINTAINER=	ghen@NetBSD.org
+HOMEPAGE=	http://www.dovecot.org/
+COMMENT=	Support for the Sieve language and the ManageSieve protocol
+LICENSE=	gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
