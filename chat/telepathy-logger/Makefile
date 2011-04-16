@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/01/18 10:08:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2011/04/05 18:22:28 drochner Exp $
 #
 
 DISTNAME=	telepathy-logger-0.2.7
@@ -25,6 +25,7 @@ BUILD_DEPENDS+=	gsed-[0-9]*:../../textproc/gsed
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/schemas.mk"
 .include "../../devel/GConf/buildlink3.mk"
+.include "../../lang/python/application.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../chat/telepathy-glib/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
