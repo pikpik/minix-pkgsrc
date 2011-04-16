@@ -23,4 +23,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/mtx.pcf \
 		${DESTDIR}${PREFIX}/share/cmatrix/mtx.pcf
 
+.include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
