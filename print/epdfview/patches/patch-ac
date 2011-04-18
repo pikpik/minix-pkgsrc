@@ -2,6 +2,15 @@ $NetBSD$
 
 --- src/PDFDocument.cxx.orig	2009-02-28 21:00:35.000000000 +0000
 +++ src/PDFDocument.cxx
+@@ -324,7 +324,7 @@ PDFDocument::loadMetadata (void)
+     gchar *format = NULL;
+     gchar *keywords = NULL;
+     PopplerPageLayout layout = POPPLER_PAGE_LAYOUT_UNSET;
+-    gchar *linearized = NULL;
++    gboolean linearized = 0;
+     GTime modDate;
+     PopplerPageMode mode = POPPLER_PAGE_MODE_UNSET;
+     gchar *producer = NULL;
 @@ -680,13 +680,13 @@ PDFDocument::setTextSelection (DocumentR
  
      //for get text we must exchange y coordinate, don't ask me where logic here.
