@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/xsl/docbook/epub/README
+share/xsl/docbook/epub/bin/dbtoepub
+share/xsl/docbook/epub/bin/lib/docbook.rb
+share/xsl/docbook/epub/bin/xslt/obfuscate.xsl
+share/xsl/docbook/epub/docbook.xsl
