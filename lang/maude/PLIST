@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.6 2009/06/14 18:03:36 joerg Exp $
+@comment $NetBSD$
 bin/maude
 share/maude/linear.maude
 share/maude/machine-int.maude
+share/maude/metaInterpreter.maude
 share/maude/model-checker.maude
 share/maude/prelude.maude
 share/maude/socket.maude
