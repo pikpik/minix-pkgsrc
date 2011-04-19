@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.3 2010/04/28 22:01:43 morr Exp $
+# $NetBSD: options.mk,v 1.4 2010/12/23 23:42:40 abs Exp $
 #
 PKG_OPTIONS_VAR=	PKG_OPTIONS.scmgit
 PKG_SUPPORTED_OPTIONS=	scmgit-gui python
@@ -32,6 +32,10 @@ CONFIGURE_ARGS+=	--without-tcltk
 PY_PATCHPLIST=	yes
 MAKE_FLAGS+=	PYTHON_PATH=${PYTHONBIN}
 PLIST.python=		yes
+# not executable
+CHECK_INTERPRETER_SKIP+= ${PYSITELIB}/git_remote_helpers/*.py
+CHECK_INTERPRETER_SKIP+= ${PYSITELIB}/git_remote_helpers/git/*.py
+.include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .else
 CONFIGURE_ARGS+=	--without-python
