@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.3 2005/02/24 09:03:06 agc Exp $
+$NetBSD$
 
-SHA1 (cdl3-1.2.7.tar.gz) = 78d87904229a04fe52704469c8912bfa30b19198
-RMD160 (cdl3-1.2.7.tar.gz) = b71e39bb984864ece08d8bfbf360bf405093bf29
-Size (cdl3-1.2.7.tar.gz) = 980452 bytes
+SHA1 (cdl3-1.2.8.tar.gz) = b657ec9f838d2055d6425e4aa7166b0bbebcbfa3
+RMD160 (cdl3-1.2.8.tar.gz) = 89d9d16677b1359cffd7686aaf85bea32c903553
+Size (cdl3-1.2.8.tar.gz) = 1013179 bytes
