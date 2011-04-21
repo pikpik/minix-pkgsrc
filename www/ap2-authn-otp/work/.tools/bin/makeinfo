@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/home/pettai/pkgsrc/www/ap2-authn-otp.import/work/.work.log}"
+echo "[*] "/home/pettai/pkgsrc/www/ap2-authn-otp.import/work/.tools/bin/makeinfo" $@" >> $wrapperlog
+echo "<.> for arg in "$@"; do case "$arg" in --version) exit 1 ;; esac; done; /home/pettai/pkgsrc/mk/gnu-config/missing makeinfo "$@"" >> $wrapperlog
+for arg in "$@"; do case "$arg" in --version) exit 1 ;; esac; done; /home/pettai/pkgsrc/mk/gnu-config/missing makeinfo "$@"
