@@ -1,16 +1,22 @@
 $NetBSD$
 
-toupper is a macro on NetBSD.
-Sent upstream.
+To avoid confusion with the ctype macros of the same name.
 
 --- src/lib/util/astring.h.orig	2011-02-01 20:29:56.000000000 +0000
 +++ src/lib/util/astring.h
-@@ -396,7 +396,7 @@ public:
+@@ -43,8 +43,15 @@
+ #define __ASTRING_H__
  
- 	astring &delchr(int ch) { return *astring_delchr(this, ch); }
- 	astring &replacechr(int ch, int newch) { return *astring_replacechr(this, ch, newch); }
--	astring &toupper() { return *astring_toupper(this); }
-+	astring &upper() { return *astring_toupper(this); }
- 	astring &tolower() { return *astring_tolower(this); }
- 	astring &trimspace() { return *astring_trimspace(this); }
- };
+ #include <stdarg.h>
++#include <ctype.h>
+ #include "osdcomm.h"
+ 
++#ifdef toupper
++#undef toupper
++#endif
++#ifdef tolower
++#undef tolower
++#endif
+ 
+ /***************************************************************************
+     TYPE DEFINITIONS
