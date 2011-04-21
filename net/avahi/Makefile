@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/11/18 13:56:15 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2011/01/13 13:36:38 wiz Exp $
 
 DISTNAME=		avahi-0.6.27
 PKGREVISION=		4
@@ -49,6 +49,8 @@ PKG_GECOS.${AVAHI_USER}=	Avahi user
 .if ${OPSYS} == "NetBSD"
 CFLAGS+=		-D_NETBSD_SOURCE
 .endif
+
+CPPFLAGS.SunOS+=	--std=c99 -D_XOPEN_SOURCE=600
 
 PLIST_SRC+=		${PKGDIR}/PLIST.shared
 
