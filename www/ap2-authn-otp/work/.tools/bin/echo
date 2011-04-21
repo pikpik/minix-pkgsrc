@@ -1,5 +1,0 @@
-#!/bin/sh
-wrapperlog="${TOOLS_WRAPPER_LOG-/home/pettai/pkgsrc/www/ap2-authn-otp.import/work/.work.log}"
-echo "[*] "/home/pettai/pkgsrc/www/ap2-authn-otp.import/work/.tools/bin/echo" $@" >> $wrapperlog
-echo "<.> echo  "$@"" >> $wrapperlog
-echo  "$@"
