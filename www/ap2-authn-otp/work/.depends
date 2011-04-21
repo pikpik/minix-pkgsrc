@@ -1,0 +1,4 @@
+bootstrap	digest>=20010302	../../pkgtools/digest
+build	perl>=5.0	../../lang/perl5
+build	x11-links>=0.65	../../pkgtools/x11-links
+build	apache>=2.2.14nb1	../../www/apache22

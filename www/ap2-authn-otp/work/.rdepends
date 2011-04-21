@@ -1,0 +1,4 @@
+bootstrap	digest>=20010302	digest-20080510
+build	perl>=5.0	perl-5.12.2nb2
+build	x11-links>=0.65	x11-links-0.65
+build	apache>=2.2.14nb1	apache-2.2.17
