@@ -3,6 +3,9 @@
 /*	unsigned inb(U16_t port); */
 #include <machine/asm.h>
 
+#undef ENTRY
+#define ENTRY(l) l:
+
 ENTRY(inb)
 	push	%ebp
 	movl	%esp, %ebp
@@ -89,3 +92,12 @@ ENTRY(outw)
 	outw	%dx	/* output 1 word */
 	pop	%ebp
 	ret
+
+.globl inb
+.globl inl
+.globl intr_disable
+.globl intr_enable
+.globl inw
+.globl outb
+.globl outl
+.globl outw

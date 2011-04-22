@@ -32,8 +32,9 @@ SUBST_SED.path+=	-e "s|/usr/gnu/bin/gcc|gcc|g"
 GENERATE_PLIST+= \
 	cd ${DESTDIR}${PREFIX} && ${FIND} ${X11R6_SUBPREFIX} \( -type f -o -type l \) -print | ${SORT};
 
-pre-configure:
+post-extract:
 	${CP} ${FILESDIR}/util.S ${WRKSRC}/programs/Xserver/hw/xfree86/os-support/minix3/
+	${CP} ${FILESDIR}/assyntax.h ${WRKSRC}/programs/Xserver/hw/xfree86/os-support/assyntax.h
 
 post-install:
 	${CP} ${WRKSRC}/x11.pc ${X11R6_PREFIX}/lib/pkgconfig/x11.pc
@@ -44,4 +45,5 @@ post-install:
 #		  ${X11R6_PREFIX}/bin.all/makedepend ${X11R6_PREFIX}/bin
 #	${RM} -r ${X11R6_PREFIX}/bin.all
 
+.include "../../mk/bsd.prefs.mk"
 .include "../../mk/bsd.pkg.mk"
