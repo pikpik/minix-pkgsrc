@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/08/11 13:11:57 obache Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/27 09:14:13 obache Exp $
 #
 
 DISTNAME=	ibus-hangul-1.3.1
+PKGREVISION=	1
 CATEGORIES=	inputmethod korean
 MASTER_SITES=	http://ibus.googlecode.com/files/
 

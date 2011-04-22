@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2006/07/05 05:37:42 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/20 01:09:22 joerg Exp $
 #
 
 DISTNAME=		refocus-it-2.0.0
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=refocus-it/}
 

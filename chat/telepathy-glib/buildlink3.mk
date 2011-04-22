@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:24:02 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2009/06/14 22:57:58 joerg Exp $
 
 BUILDLINK_TREE+=	telepathy-glib
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	telepathy-glib
 TELEPATHY_GLIB_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.telepathy-glib+=	telepathy-glib>=0.7.18
+BUILDLINK_ABI_DEPENDS.telepathy-glib?=	telepathy-glib>=0.14.3nb1
 BUILDLINK_PKGSRCDIR.telepathy-glib?=	../../chat/telepathy-glib
 
 .include "../../devel/glib2/buildlink3.mk"

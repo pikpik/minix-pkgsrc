@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2008/07/01 08:34:37 agc Exp $
+# $NetBSD: Makefile,v 1.20 2009/09/23 11:42:05 obache Exp $
 #
 
 DISTNAME=	dpkg_1.13.25
 PKGNAME=	dpkg-1.13.25
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/d/dpkg/}
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.20 2011/02/02 13:48:06 ryoon Exp $
 #
 
 DISTNAME=		gcal-3.6
+PKGREVISION=		1
 CATEGORIES=		time
 MASTER_SITES=		${MASTER_SITE_GNU:=gcal/}
 

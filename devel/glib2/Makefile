@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.181 2011/04/19 06:14:02 roy Exp $
+# $NetBSD: Makefile,v 1.182 2011/04/21 10:27:35 roy Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=		2
+PKGREVISION=		3
 
 CATEGORIES=		devel
 

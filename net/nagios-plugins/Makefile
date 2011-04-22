@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2010/12/27 08:01:47 obache Exp $
+# $NetBSD: Makefile,v 1.24 2011/04/08 22:56:12 morr Exp $
 #
 
+PKGREVISION=	1
 CATEGORIES=	net sysutils
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2008/06/20 01:09:06 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2009/10/28 18:32:17 drochner Exp $
 #
 
 GST_PLUGINS0.10_NAME=	lame
 GST_PLUGINS0.10_DIRS=	ext/lame
+
+PKGREVISION=	1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

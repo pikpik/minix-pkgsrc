@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/05/17 22:27:26 morr Exp $
 #
 
 DISTNAME=	uni2ascii-4.14
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://billposer.org/Software/Downloads/
 EXTRACT_SUFX=	.tar.bz2

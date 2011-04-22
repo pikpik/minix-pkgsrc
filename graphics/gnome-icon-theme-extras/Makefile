@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/06/05 10:22:17 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2010/10/20 20:26:30 wiz Exp $
 #
 
 DISTNAME=		gnome-icon-theme-extras-2.30.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-icon-theme-extras/2.30/}
 EXTRACT_SUFX=		.tar.bz2

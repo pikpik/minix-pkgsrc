@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:17 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2009/10/27 19:41:11 drochner Exp $
 #
 
 DISTNAME=	obby-0.4.7
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://releases.0x539.de/obby/
 

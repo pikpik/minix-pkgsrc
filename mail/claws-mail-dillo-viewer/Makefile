@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:38:35 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2011/03/19 14:52:09 gls Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLUGIN_NAME=	dillo_viewer
+PKGREVISION=	1
 .include "../../mail/claws-mail/plugins.mk"
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

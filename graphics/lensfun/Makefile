@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/01/13 13:38:11 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2011/01/17 16:38:20 drochner Exp $
 #
 
 DISTNAME=	lensfun-0.2.5
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.berlios.de/lensfun/
 EXTRACT_SUFX=	.tar.bz2

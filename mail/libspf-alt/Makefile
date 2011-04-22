@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2011/02/27 12:48:05 obache Exp $
+# $NetBSD: Makefile,v 1.21 2011/02/27 13:06:12 obache Exp $
 
 DISTNAME=	libspf_alt-0.4.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	http://libspf2.org/spf/
 

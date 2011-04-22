@@ -1,9 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/06/03 09:22:42 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	mms
 GST_PLUGINS0.10_FLAGS=	libmms
 GST_PLUGINS0.10_DIRS=	ext/libmms
+
+PKGREVISION=	1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

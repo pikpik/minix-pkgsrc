@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2009/07/22 09:01:54 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2009/12/17 18:31:46 abs Exp $
 
 DISTNAME=		gtkstep-1.10
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=		.tar.bz2

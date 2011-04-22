@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2006/03/04 21:28:59 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2009/07/08 14:06:51 joerg Exp $
 #
 
 DISTNAME=	xhippo-3.3
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	audio x11
 MASTER_SITES=	${MASTER_SITE_GNU:=xhippo/}
 

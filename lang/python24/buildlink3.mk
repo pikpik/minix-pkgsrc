@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2009/09/08 10:06:35 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2011/04/15 17:23:23 drochner Exp $
 
 BUILDLINK_TREE+=	python24
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	python24
 PYTHON24_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.python24+=	python24>=2.4
-BUILDLINK_ABI_DEPENDS.python24?=	python24>=2.4.2nb4
+BUILDLINK_ABI_DEPENDS.python24?=	python24>=2.4.5nb7
 BUILDLINK_PKGSRCDIR.python24?=	../../lang/python24
 
 .if defined(BUILDLINK_DEPMETHOD.python)

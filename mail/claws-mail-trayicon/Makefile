@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2011/01/13 13:40:11 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2011/03/19 14:52:11 gls Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLUGIN_NAME=	trayicon
+PKGREVISION=	1
 .include "../../mail/claws-mail/plugins.mk"
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

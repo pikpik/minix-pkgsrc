@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/12/19 09:53:53 adam Exp $
+# $NetBSD: Makefile,v 1.6 2011/02/15 09:06:32 adam Exp $
 
 PKGNAME=	${DISTNAME:C/-/83-adminpack-/}
+PKGREVISION=	1
 COMMENT=	Admin pack module for pgAdmin management
 
 PKG_DESTDIR_SUPPORT=	user-destdir

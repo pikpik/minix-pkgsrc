@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2010/11/22 05:54:17 dholland Exp $
+# $NetBSD: Makefile,v 1.18 2011/03/11 09:27:09 adam Exp $
 
 DISTNAME=	xmlto-0.0.23
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	# ftp(1) doesn't speak https: https://fedorahosted.org/releases/x/m/xmlto/
 EXTRACT_SUFX=	.tar.bz2

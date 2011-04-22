@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2006/06/17 19:41:32 minskim Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/14 17:22:49 jlam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
 PKGNAME=	freetype-lib-${FT_VERS}
+PKGREVISION=	1
 COMMENT=	TrueType font rendering engine and library API
 
 CONFIGURE_ARGS+=	--without-x

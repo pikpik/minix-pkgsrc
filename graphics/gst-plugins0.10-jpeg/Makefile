@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2010/02/16 13:17:28 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2010/12/23 11:44:39 dsainty Exp $
 #
 
 GST_PLUGINS0.10_NAME=	jpeg
 GST_PLUGINS0.10_DIRS=	ext/jpeg
+
+PKGREVISION=	1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/02/14 19:07:03 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2011/04/15 16:18:02 drochner Exp $
 
 DISTNAME=	mkvtoolnix-2.9.8
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2

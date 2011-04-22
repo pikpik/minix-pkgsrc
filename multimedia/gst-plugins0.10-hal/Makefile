@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2008/11/24 12:50:17 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/11/27 17:51:28 jmcneill Exp $
 #
 
 GST_PLUGINS0.10_NAME=	hal
 GST_PLUGINS0.10_DIRS=	ext/hal
 GST_PLUGINS0.10_FLAGS=	hal
+
+PKGREVISION=	1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

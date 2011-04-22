@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.31 2009/05/09 16:33:04 adrianp Exp $
+# $NetBSD: Makefile,v 1.32 2010/01/27 22:10:07 joerg Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
-PKGREVISION=	7
+PKGREVISION=	8
 COMMENT=	Password sniffer (webspy)
 
 DEPENDS+=	dsniff-nox11-[0-9]*:../../security/dsniff-nox11

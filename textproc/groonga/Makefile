@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/04/06 13:17:03 obache Exp $
 #
 
 DISTNAME=	groonga-1.2.0
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://groonga.org/files/groonga/
 

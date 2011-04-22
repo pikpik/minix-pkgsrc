@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2010/10/12 17:23:36 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2010/11/18 21:00:58 shattered Exp $
 #
 
 DISTNAME=	tpb-0.6.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	http://savannah.nongnu.org/download/tpb/
 

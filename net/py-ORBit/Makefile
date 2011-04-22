@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2009/09/23 09:54:46 tron Exp $
+# $NetBSD: Makefile,v 1.35 2011/02/28 14:52:59 wiz Exp $
 #
 
 DISTNAME=	pyorbit-2.24.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/pyorbit/ORBit/}
+PKGREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pyorbit/2.24/}
 EXTRACT_SUFX=	.tar.bz2

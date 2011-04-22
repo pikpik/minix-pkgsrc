@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/10/30 03:32:19 bjs Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:25:21 joerg Exp $
 
 BUILDLINK_TREE+=	pakchois
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	pakchois
 PAKCHOIS_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.pakchois+=	pakchois>=0.4
+BUILDLINK_ABI_DEPENDS.pakchois?=	pakchois>=0.4nb1
 BUILDLINK_PKGSRCDIR.pakchois?=	../../security/pakchois
 
 .include "../../devel/gettext-lib/buildlink3.mk"

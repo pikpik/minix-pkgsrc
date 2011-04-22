@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2007/06/30 13:28:06 heinz Exp $
+# $NetBSD: Makefile,v 1.4 2009/05/21 11:41:09 zafer Exp $
 
 DISTNAME=		mbrowse-0.3.1
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_FREEBSD}
 

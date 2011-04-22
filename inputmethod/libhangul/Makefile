@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2009/11/01 08:47:23 obache Exp $
+# $NetBSD: Makefile,v 1.8 2011/02/27 09:06:34 obache Exp $
 
 DISTNAME=	libhangul-0.0.12
+PKGREVISION=	1
 CATEGORIES=	inputmethod korean
 MASTER_SITES=	http://kldp.net/frs/download.php/5855/
 

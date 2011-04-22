@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/07/14 12:55:59 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2011/03/11 10:21:40 zafer Exp $
 #
 
 DISTNAME=	xmms-mac-0.3.1
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	# http://bsd.cenkes.org/myports/
 

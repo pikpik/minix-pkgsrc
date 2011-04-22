@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2008/06/20 01:09:36 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2011/03/18 20:54:44 zafer Exp $
 #
 
 DISTNAME=	gtoaster1.0Beta5
 PKGNAME=	gnometoaster-1.0Beta5
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	# http://gnometoaster.rulez.org/archive/
 EXTRACT_SUFX=	.tgz

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.56 2007/07/04 20:54:34 jlam Exp $
+# $NetBSD: Makefile,v 1.57 2009/06/06 21:30:30 wiz Exp $
 
 DISTNAME=	minicom-2.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	comms
 MASTER_SITES=	http://alioth.debian.org/download.php/123/
 

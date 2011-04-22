@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/12/07 10:08:27 ghen Exp $
+# $NetBSD: Makefile,v 1.4 2011/04/15 13:36:01 adam Exp $
 
 DISTNAME=	dovecot-2.0-pigeonhole-0.2.3
 PKGNAME=	${DISTNAME:S/-2.0-/-/}
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.rename-it.nl/dovecot/2.0/
 

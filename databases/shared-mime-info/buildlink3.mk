@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2009/03/20 19:24:07 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/05/16 07:22:02 rillig Exp $
 
 BUILDLINK_TREE+=	shared-mime-info
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	shared-mime-info
 SHARED_MIME_INFO_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.shared-mime-info+=	shared-mime-info>=0.15
-BUILDLINK_ABI_DEPENDS.shared-mime-info+=	shared-mime-info>=0.16nb2
+BUILDLINK_ABI_DEPENDS.shared-mime-info+=	shared-mime-info>=0.90nb1
 BUILDLINK_PKGSRCDIR.shared-mime-info?=	../../databases/shared-mime-info
 
 BUILDLINK_TARGETS+=	shared-mime-info-buildlink-fake
