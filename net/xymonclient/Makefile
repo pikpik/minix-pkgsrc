@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2011/02/07 20:36:59 spz Exp $
+# $NetBSD: Makefile,v 1.7 2011/04/22 15:37:02 spz Exp $
 #
 
 DISTNAME=		xymon-4.3.2
 PKGNAME=		xymonclient-4.3.2
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xymon/}
 
@@ -43,7 +44,7 @@ RCD_SCRIPTS+=		xymonclient
 PKG_SYSCONFDIR.xymon=	${PREFIX}/etc/xymon
 EXAMPLEDIR=		${PREFIX}/share/examples/xymon
 
-XYMONHOME?=		${PREFIX}/share/xymon/bbhome
+XYMONHOME?=		${PREFIX}/share/xymon/xymonhome
 XYMONTOPDIR?=		${PREFIX}/libexec/xymon
 
 XYMONSERVERNAME?=	"`uname -n`"
