@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2010/02/07 21:02:16 heinz Exp $
+# $NetBSD: Makefile,v 1.23 2011/02/28 14:52:58 wiz Exp $
 #
 
 DISTNAME=	smpeg-0.4.4
-PKGREVISION=	14
+PKGREVISION=	15
 CATEGORIES=	devel multimedia
 MASTER_SITES=	#
 
