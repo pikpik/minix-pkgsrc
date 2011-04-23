@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.11 2011/04/15 17:23:23 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.12 2011/04/22 13:42:00 obache Exp $
 
 BUILDLINK_TREE+=	python24
 
@@ -16,10 +16,11 @@ BUILDLINK_DEPMETHOD.python24?=	${BUILDLINK_DEPMETHOD.python}
 #BUILDLINK_INCDIRS.python24+=	include/python2.4
 #BUILDLINK_LIBDIRS.python24+=	lib/python2.4/config
 #BUILDLINK_TRANSFORM+=		l:python:python2.4
-.endif # PYTHON24_BUILDLINK3_MK
-
-BUILDLINK_TREE+=	-python24
 
 .include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
+.endif # PYTHON24_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-python24
+
