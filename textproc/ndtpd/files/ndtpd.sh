@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: ndtpd.sh,v 1.1.1.1 2002/03/15 07:19:58 uebayasi Exp $
+# $NetBSD: ndtpd.sh,v 1.2 2002/04/02 15:59:50 uebayasi Exp $
 #
 # PROVIDE: ndtpd
 # REQUIRE: DAEMON

@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10282 2011/04/17 10:53:07 ryoon Exp $
+$NetBSD: TODO,v 1.10283 2011/04/21 18:11:25 wiz Exp $
 
 Suggested new packages
 ======================
@@ -1034,7 +1034,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o pari-galdata-2.2 [pkg/38117]
 	o patch-2.6.1
 	o patchutils-0.3.2
-	o pavucontrol-0.9.8
 	o pbzip2-1.1.3
 	o pcal-4.8
 	o pcmanfm-0.5.2 [pkg/42451]
