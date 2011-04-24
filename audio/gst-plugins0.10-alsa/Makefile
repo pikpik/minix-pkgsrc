@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2008/06/20 01:09:06 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2008/12/19 04:40:39 jmcneill Exp $
 #
 
 GST_PLUGINS0.10_NAME=	alsa
 GST_PLUGINS0.10_DIRS=	ext/alsa
+
+PKGREVISION=		1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/11/28 01:26:04 obache Exp $
+# $NetBSD: Makefile,v 1.15 2010/12/03 18:15:44 drochner Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,6 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 #CONFIGURE_ARGS+= --disable-silent-rules
 
 COMMENT+=		base plugins
+PKGREVISION=		1
 
 # some plugins were moved from bad to base
 CONFLICTS+=		gst-plugins0.10-bad<0.10.10
