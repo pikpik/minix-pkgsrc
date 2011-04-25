@@ -11,8 +11,11 @@ FIND_PREFIX:=	BUILDLINK_PREFIX.gcc44=gcc44
 _GCC44_SUBDIR=	gcc44
 _GCC44_PREFIX=	${BUILDLINK_PREFIX.gcc44}/${_GCC44_SUBDIR}
 
+# Minix gcc dependency override
+.if !defined(MINIX_GCC_NODEP)
 BUILDLINK_API_DEPENDS.gcc44+=	gcc44>=${_GCC_REQD}
 BUILDLINK_ABI_DEPENDS.gcc44?=	gcc44>=4.4.0
+.endif
 BUILDLINK_PKGSRCDIR.gcc44?=	../../lang/gcc44
 
 .if exists(${_GCC44_PREFIX}/bin/gcc)

@@ -6,19 +6,24 @@ CATEGORIES=	minix
 MASTER_SITES=	http://www.minix3.org/distfiles-minix/
 SVNREV=		125950
 DISTNAME=	llvm-clang-r${SVNREV}
+PKGREVISION=	2
+
+# Avoid dependency on lang/gcc44
+MINIX_GCC_NODEP=yes
 
 MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
 COMMENT=	Low Level Virtual Machine compiler infrastructure
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
-DEPENDS+=       compiler-rt-r123836nb2:../../minix/compiler-rt
+DEPENDS+=       compiler-rt-r123836nb3:../../minix/compiler-rt
 
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake perl:build chown groff
-#USE_LANGUAGES+=	c c++
+USE_LANGUAGES=  c c++
+_USE_GCC_SHLIB=	no
 MAKE_DIRS+=	etc/llvm
 USE_LIBTOOL=	yes
 

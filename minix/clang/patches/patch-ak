@@ -38,7 +38,7 @@ $NetBSD$
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -3698,21 +3703,18 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -3698,21 +3703,12 @@ void minix::Link::ConstructJob(Compilation &C, const J
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
      CmdArgs.push_back("-lc");
@@ -51,13 +51,12 @@ $NetBSD$
 +    CmdArgs.push_back("-L/usr/pkg/lib");
    }
  
-   if (!Args.hasArg(options::OPT_nostdlib) &&
-       !Args.hasArg(options::OPT_nostartfiles)) {
-     CmdArgs.push_back(Args.MakeArgString(getToolChain().GetFilePath(
+-  if (!Args.hasArg(options::OPT_nostdlib) &&
+-      !Args.hasArg(options::OPT_nostartfiles)) {
+-    CmdArgs.push_back(Args.MakeArgString(getToolChain().GetFilePath(
 -                                              "/usr/gnu/lib/libend.a")));
-+                                              "/usr/lib/libend.a")));
-   }
- 
+-  }
+-
    const char *Exec =
 -    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu/bin/gld"));
 +    Args.MakeArgString(getToolChain().GetProgramPath("/usr/pkg/bin/ld"));
