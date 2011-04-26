@@ -1,11 +1,12 @@
 #!/bin/sh
 
-# $NetBSD$
+# $NetBSD: xattr-init.sh,v 1.1 2011/04/18 16:19:48 manu Exp $
 
 GLUSTERFS_XATTR="
   trusted.distribute.linkinfo
   trusted.distribute.fix.layout
   trusted.glusterfs.pathinfo
+  trusted.glusterfs.test
   trusted.glusterfs.volume-mark
   trusted.glusterfs.test
   trusted.posix1.gen
