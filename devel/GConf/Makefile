@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2011/01/22 17:58:53 schwarz Exp $
+# $NetBSD: Makefile,v 1.74 2011/04/22 13:41:54 obache Exp $
 #
 
 .include "../../devel/GConf/Makefile.common"
@@ -28,7 +28,6 @@ post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/gconf/schemas
 
 BUILDLINK_ABI_DEPENDS.dbus-glib+=	dbus-glib>=0.74
-DEPENDS+=	glib2>=2.25.9:../../devel/glib2
 .include "../../lang/python/application.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../net/ORBit2/buildlink3.mk"
