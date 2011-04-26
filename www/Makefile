@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.790 2011/04/07 06:09:54 adam Exp $
+# $NetBSD: Makefile,v 1.791 2011/04/21 10:43:32 pettai Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -124,6 +124,7 @@ SUBDIR+=	fcgi
 SUBDIR+=	fengoffice
 SUBDIR+=	ffproxy
 SUBDIR+=	firefox
+SUBDIR+=	firefox36
 SUBDIR+=	firefox-bin
 SUBDIR+=	firefox-bin-acroread
 SUBDIR+=	firefox-bin-acroread5
