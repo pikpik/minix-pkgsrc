@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2010/07/06 10:17:16 jmmv Exp $
+# $NetBSD: Makefile,v 1.27 2011/01/13 13:39:24 wiz Exp $
 #
 
 DISTNAME=	idesk-0.7.5
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://idesk.sourceforge.net/
 COMMENT=	Lightweight desktop icons handler
+LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
