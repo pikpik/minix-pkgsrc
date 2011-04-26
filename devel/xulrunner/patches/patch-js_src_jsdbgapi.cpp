@@ -1,3 +1,5 @@
+$NetBSD$
+
 https://bugzilla.mozilla.org/show_bug.cgi?id=637437
 
 --- js/src/jsdbgapi.cpp	
