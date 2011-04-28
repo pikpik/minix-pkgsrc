@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.792 2011/04/26 14:18:50 tnn Exp $
+# $NetBSD: Makefile,v 1.793 2011/04/27 10:33:10 tnn Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -124,8 +124,6 @@ SUBDIR+=	fcgi
 SUBDIR+=	fengoffice
 SUBDIR+=	ffproxy
 SUBDIR+=	firefox
-SUBDIR+=	firefox36
-SUBDIR+=	firefox36-l10n
 SUBDIR+=	firefox-bin
 SUBDIR+=	firefox-bin-acroread
 SUBDIR+=	firefox-bin-acroread5
@@ -134,6 +132,8 @@ SUBDIR+=	firefox-bin-flash
 SUBDIR+=	firefox-bin-java
 SUBDIR+=	firefox-bin-realplayer
 SUBDIR+=	firefox-l10n
+SUBDIR+=	firefox36
+SUBDIR+=	firefox36-l10n
 SUBDIR+=	gallery
 SUBDIR+=	gallery2
 SUBDIR+=	ganglia-webfrontend
