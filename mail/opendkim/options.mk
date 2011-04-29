@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.1.1.1 2010/10/19 23:11:42 pettai Exp $
+# $NetBSD: options.mk,v 1.2 2011/03/13 23:31:31 pettai Exp $
 
-PKG_OPTIONS_VAR=        PKG_OPTIONS.opendkim
-PKG_SUPPORTED_OPTIONS=  filter debug dkim-stats vbr
-PKG_SUGGESTED_OPTIONS=  filter
+PKG_OPTIONS_VAR=	PKG_OPTIONS.opendkim
+PKG_SUPPORTED_OPTIONS=	filter debug dkim-stats vbr
+PKG_SUGGESTED_OPTIONS=	filter
 
 .include "../../mk/bsd.options.mk"
 
