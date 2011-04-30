@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.575 2011/04/06 13:18:24 obache Exp $
+# $NetBSD: Makefile,v 1.576 2011/04/19 10:05:40 roy Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -298,6 +298,7 @@ SUBDIR+=	p5-Text-Aspell
 SUBDIR+=	p5-Text-Autoformat
 SUBDIR+=	p5-Text-Balanced
 SUBDIR+=	p5-Text-BibTeX
+SUBDIR+=	p5-Text-Brew
 SUBDIR+=	p5-Text-CSV
 SUBDIR+=	p5-Text-CSV-Hash
 SUBDIR+=	p5-Text-CSV_XS
