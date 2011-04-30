@@ -1,13 +1,18 @@
-# $NetBSD: Makefile,v 1.17 2011/01/23 07:55:16 markd Exp $
+# $NetBSD: Makefile,v 1.18 2011/04/22 13:45:11 obache Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 COMMENT=	Base modules for the KDE 4 integrated X11 desktop
 
 .include "../../meta-pkgs/kde4/Makefile.kde4"
 
 # BUILD_MAKE_FLAGS+= VERBOSE=1
+
+REPLACE_RUBY+=	apps/dolphin/src/khns/servicemenudeinstallation
+REPLACE_RUBY+=	apps/dolphin/src/khns/servicemenuinstallation
+
+.include "../../lang/ruby/replace.mk"
 
 .include "../../meta-pkgs/kde4/kde4.mk"
 
@@ -17,5 +22,6 @@ COMMENT=	Base modules for the KDE 4 integrated X11 desktop
 .include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../x11/kdebase-runtime4/buildlink3.mk"
 .include "../../x11/kdebase-workspace4/buildlink3.mk"
+.include "../../lang/ruby/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
