@@ -1,13 +1,16 @@
-# $NetBSD: Makefile,v 1.14 2011/01/23 07:55:13 markd Exp $
+# $NetBSD: Makefile,v 1.15 2011/04/22 13:44:11 obache Exp $
 
 DISTNAME=	kdeadmin-${_KDE_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 COMMENT=	System administration tools for the KDE integrated X11 desktop
 
 .include "../../meta-pkgs/kde4/Makefile.kde4"
 
 # BUILD_MAKE_FLAGS+= VERBOSE=1
+
+REPLACE_PERL+=	knetworkconf/backends/network-conf.cmake
+REPLACE_PERL+=	knetworkconf/backends/*.pl.cmake
 
 .include "../../meta-pkgs/kde4/kde4.mk"
 
