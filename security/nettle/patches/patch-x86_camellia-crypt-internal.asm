@@ -1,0 +1,15 @@
+$NetBSD$
+
+Avoid ambiguous instruction.
+
+--- x86/camellia-crypt-internal.asm.orig	2011-05-02 18:31:15.000000000 +0000
++++ x86/camellia-crypt-internal.asm
+@@ -185,7 +185,7 @@ PROLOGUE(_nettle_camellia_crypt)
+ 	FL(L0, H0, -16)
+ 	FLINV(L1, H1, -8)
+ 	ROUND6
+-	sub 	$8, FRAME_CNT	
++	subl 	$8, FRAME_CNT	
+ 	ja	.Lround_loop
+ 
+ 	movl	FRAME_DST, TMP
