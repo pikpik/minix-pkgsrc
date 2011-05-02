@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2010/02/10 19:17:46 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2011/04/15 10:32:22 bouyer Exp $
 #
 
 VERSION=		4.1.0
 DISTNAME=		xen-${VERSION}
 PKGNAME=		xentools41-${VERSION}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
 EXTRACT_SUFX=		.tar.gz
