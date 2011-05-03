@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.15 2008/03/04 06:59:06 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/04/07 18:16:45 joerg Exp $
 #
 
 DISTNAME=	tscp181
 PKGNAME=	tscp-1.81
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games benchmarks
-MASTER_SITES=	http://home.comcast.net/~tckerrigan/
+MASTER_SITES=	http://www.tckerrigan.com/Chess/TSCP/attachments/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	abs@NetBSD.org
-HOMEPAGE=	http://home.comcast.net/~tckerrigan/
+HOMEPAGE=	http://www.tckerrigan.com/
 COMMENT=	Tom Kerrigan's Simple Chess Program
 
 RESTRICTED=	No distribution without authorisation from Tom Kerrigan
