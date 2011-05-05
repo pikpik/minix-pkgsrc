@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2011,v 1.1061 2011/05/04 22:27:26 gdt Exp $
+$NetBSD: CHANGES-2011,v 1.1062 2011/05/04 23:34:37 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2011:
 
@@ -1743,3 +1743,4 @@ Changes to the packages collection and infrastructure in 2011:
 	Updated emulators/wine to 1.2.3 [adam 2011-05-04]
 	Updated sysutils/ir-account to 0.2 [gdt 2011-05-04]
 	Updated net/aria2 to 1.11.1 [ryoon 2011-05-04]
+	Added sysutils/mkmemstick version 20090801 [agc 2011-05-04]
