@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2011/03/08 11:42:00 wiz Exp $
+# $NetBSD: Makefile,v 1.81 2011/04/22 13:44:44 obache Exp $
 
 DISTNAME=	mc-4.7.0.10
 PKGREVISION=	3
@@ -17,6 +17,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_TOOLS+=		pkg-config unzip:run
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
+
+CHECK_INTERPRETER_SKIP=	libexec/mc/extfs.d/s3+
 
 .include "../../mk/bsd.prefs.mk"
 
