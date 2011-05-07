@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/04/15 10:32:22 bouyer Exp $
+# $NetBSD: Makefile,v 1.4 2011/05/02 20:32:27 abs Exp $
 #
 
 VERSION=		4.1.0
@@ -37,7 +37,7 @@ CONFLICTS+=		xentools20-[0-9]*
 CONFLICTS+=		xentools3*
 
 WRKSRC=			${WRKDIR}/xen-${VERSION}/tools
-CHECK_PORTABILITY_SKIP=	examples/* xm-test/ramdisk/make-release
+CHECK_PORTABILITY_SKIP=	examples/*
 
 EGDIR=			${PREFIX}/share/examples/xen
 MESSAGE_SUBST=		EGDIR=${EGDIR}
