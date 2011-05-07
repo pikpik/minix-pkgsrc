@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2011/04/04 09:41:17 hans Exp $
+# $NetBSD: Makefile,v 1.55 2011/04/22 13:42:40 obache Exp $
 
 DISTNAME=		hal-0.5.14
 PKGREVISION=		3
@@ -60,6 +60,7 @@ CONF_FILES+=		${EGDIR}/90-hal.rules \
 
 .else	# Unsupported systems
 # Pull in the dummy backend
+.include "../../devel/libvolume_id/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-backend=dummy
 PLIST_SRC=		PLIST
 .endif
