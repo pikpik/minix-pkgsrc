@@ -2,11 +2,12 @@
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/.gemtest
 ${GEM_LIBDIR}/.gitignore
+${GEM_LIBDIR}/.travis.yml
+${GEM_LIBDIR}/.yardopts
 ${GEM_LIBDIR}/Gemfile
-${GEM_LIBDIR}/LICENSE
-${GEM_LIBDIR}/README.rdoc
+${GEM_LIBDIR}/LICENSE.md
+${GEM_LIBDIR}/README.md
 ${GEM_LIBDIR}/Rakefile
-${GEM_LIBDIR}/VERSION
 ${GEM_LIBDIR}/init.rb
 ${GEM_LIBDIR}/lib/simple_oauth.rb
 ${GEM_LIBDIR}/lib/simple_oauth/core_ext/object.rb
