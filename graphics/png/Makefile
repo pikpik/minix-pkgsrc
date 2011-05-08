@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.133 2011/05/03 09:07:35 wiz Exp $
+# $NetBSD: Makefile,v 1.134 2011/05/06 07:19:22 adam Exp $
 
 DISTNAME=	libpng-1.5.3beta05
 PKGNAME=	${DISTNAME:S/lib//}
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libpng/} \
 		ftp://ftp.fu-berlin.de/unix/graphics/png/src/
-EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.libpng.org/pub/png/libpng.html
