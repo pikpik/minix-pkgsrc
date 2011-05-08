@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.578 2011/05/01 09:21:50 obache Exp $
+# $NetBSD: Makefile,v 1.579 2011/05/08 18:21:58 cheusov Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -595,5 +595,6 @@ SUBDIR+=	xslide
 SUBDIR+=	xt
 SUBDIR+=	yamcha
 SUBDIR+=	yodl
+SUBDIR+=	zoem
 
 .include "../mk/misc/category.mk"
