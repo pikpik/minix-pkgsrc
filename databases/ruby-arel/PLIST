@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2010/09/12 04:15:06 taca Exp $
+@comment $NetBSD: PLIST,v 1.2 2011/02/09 12:55:28 taca Exp $
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/.autotest
+${GEM_LIBDIR}/.gemtest
 ${GEM_LIBDIR}/History.txt
 ${GEM_LIBDIR}/MIT-LICENSE.txt
 ${GEM_LIBDIR}/Manifest.txt
