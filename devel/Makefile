@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1451 2011/05/08 18:33:57 cheusov Exp $
+# $NetBSD: Makefile,v 1.1452 2011/05/10 14:49:39 abs Exp $
 #
 
 COMMENT=	Development utilities
@@ -123,6 +123,7 @@ SUBDIR+=	cpuflags
 SUBDIR+=	cqual
 SUBDIR+=	cscope
 SUBDIR+=	cssc
+SUBDIR+=	ctemplate
 SUBDIR+=	cunit
 SUBDIR+=	cut
 SUBDIR+=	cutter
