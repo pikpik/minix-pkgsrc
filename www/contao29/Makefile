@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2011/01/06 13:19:08 taca Exp $
+# $NetBSD: Makefile,v 1.11 2011/03/25 16:52:08 taca Exp $
 #
 
 DISTNAME=	contao-${CT_VERSION}
 PKGNAME=	contao${CT_VER}-${CT_PKGVER}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=typolight/}
 DIST_SUBDIR=	${PKGBASE}-20101203
@@ -90,8 +90,6 @@ OWN_DIRS_PERMS+= \
 
 PKG_GROUPS_VARS+=	APACHE_GROUP
 PKG_USERS_VARS+=	APACHE_USER
-
-.include "../../www/contao/options.mk"
 
 pre-configure:
 	${CP} ${FILESDIR}/contao.conf ${WRKDIR}
