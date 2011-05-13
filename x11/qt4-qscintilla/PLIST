@@ -23,6 +23,8 @@ qt4/include/Qsci/qscilexerjava.h
 qt4/include/Qsci/qscilexerjavascript.h
 qt4/include/Qsci/qscilexerlua.h
 qt4/include/Qsci/qscilexermakefile.h
+qt4/include/Qsci/qscilexermatlab.h
+qt4/include/Qsci/qscilexeroctave.h
 qt4/include/Qsci/qscilexerpascal.h
 qt4/include/Qsci/qscilexerperl.h
 qt4/include/Qsci/qscilexerpostscript.h
