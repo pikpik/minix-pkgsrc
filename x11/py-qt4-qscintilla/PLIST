@@ -24,6 +24,8 @@ share/sip${PYVERSSUFFIX}/Qsci/qscilexerjava.sip
 share/sip${PYVERSSUFFIX}/Qsci/qscilexerjavascript.sip
 share/sip${PYVERSSUFFIX}/Qsci/qscilexerlua.sip
 share/sip${PYVERSSUFFIX}/Qsci/qscilexermakefile.sip
+share/sip${PYVERSSUFFIX}/Qsci/qscilexermatlab.sip
+share/sip${PYVERSSUFFIX}/Qsci/qscilexeroctave.sip
 share/sip${PYVERSSUFFIX}/Qsci/qscilexerpascal.sip
 share/sip${PYVERSSUFFIX}/Qsci/qscilexerperl.sip
 share/sip${PYVERSSUFFIX}/Qsci/qscilexerpostscript.sip
