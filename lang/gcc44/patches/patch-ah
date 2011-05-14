@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- libgfortran/intrinsics/c99_functions.c.orig	2009-04-10 01:23:07.000000000 +0200
 +++ libgfortran/intrinsics/c99_functions.c
 @@ -538,7 +538,7 @@
