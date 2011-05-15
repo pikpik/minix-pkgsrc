@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2011/04/22 13:42:36 obache Exp $
+# $NetBSD: Makefile,v 1.42 2011/05/05 12:37:08 adam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -8,6 +8,8 @@ PKGNAME=	qt4-tools-${QTVERSION}
 COMMENT=	QT GUI (WYSIWYG) builder and other tools
 
 DEPENDS+=	libtool-base-[0-9]*:../../devel/libtool-base
+
+BUILDLINK_API_DEPENDS.qt4-libs+=	qt4-libs>=${QTVERSION}
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include -L${QTDIR}/lib
 CONFIGURE_ARGS+=	-DQT_NO_DBUS
