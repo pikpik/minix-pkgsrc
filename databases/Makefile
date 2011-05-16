@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.369 2011/04/25 21:14:00 adam Exp $
+# $NetBSD: Makefile,v 1.370 2011/04/26 11:35:53 mspo Exp $
 #
 
 COMMENT=	Databases
@@ -69,6 +69,7 @@ SUBDIR+=	maatkit
 SUBDIR+=	mergeant
 SUBDIR+=	metakit-lib
 SUBDIR+=	myodbc
+SUBDIR+=	mysql-workbench
 SUBDIR+=	mysql5-client
 SUBDIR+=	mysql5-server
 SUBDIR+=	mysql51-client
