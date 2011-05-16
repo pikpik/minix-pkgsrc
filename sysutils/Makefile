@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.516 2011/05/15 11:17:51 wiz Exp $
+# $NetBSD: Makefile,v 1.517 2011/05/16 13:29:38 abs Exp $
 #
 
 COMMENT=	System utilities
@@ -39,6 +39,7 @@ SUBDIR+=	brasero-nautilus
 SUBDIR+=	bsign
 SUBDIR+=	btpin-qt
 SUBDIR+=	bubblemon
+SUBDIR+=	bup
 SUBDIR+=	burn
 SUBDIR+=	capistrano
 SUBDIR+=	ccd2iso
