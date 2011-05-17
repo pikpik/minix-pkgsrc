@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.39 2011/05/16 01:18:54 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.40 2011/05/16 10:00:40 dmcmahill Exp $
 #
 
 .include "Makefile.common"
 PKGREVISION=	5
-MAINTAINER=	obache@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.graphicsmagick.org/
 COMMENT=	X application for displaying and manipulating images
 #LICENSE=	mit AND # see ${WRKSRC}/Copyright.txt
