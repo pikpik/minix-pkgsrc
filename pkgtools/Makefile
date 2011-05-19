@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.99 2011/05/16 19:20:43 cheusov Exp $
+# $NetBSD: Makefile,v 1.100 2011/05/16 22:04:47 cheusov Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -12,6 +12,7 @@ SUBDIR+=	compat_headers
 SUBDIR+=	createbuildlink
 SUBDIR+=	dfdisk
 SUBDIR+=	digest
+SUBDIR+=	distbb
 SUBDIR+=	genrpm
 SUBDIR+=	gensolpkg
 SUBDIR+=	gnome-packagekit
