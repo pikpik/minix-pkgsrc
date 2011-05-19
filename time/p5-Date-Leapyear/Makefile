@@ -1,12 +1,12 @@
-# $NetBSD: Makefile $
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/18 01:27:43 dmcmahill Exp $
 
 DISTNAME=	Date-Leapyear-1.72
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	time perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/R/RB/RBOW/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Date/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://search.cpan.org/~rbow/Date-Leapyear-1.72/
+HOMEPAGE=	http://search.cpan.org/dist/Date-Leapyear/
 COMMENT=	Is a particular year a leap year?
 LICENSE=	${PERL5_LICENSE}
 
