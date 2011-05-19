@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.23 2011/04/11 09:12:51 adam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/17 21:55:35 dmcmahill Exp $
 
 DISTNAME=	PDF-API2-Simple-1.1.4u
 WRKSRC=		${WRKDIR}/${DISTNAME:S/u$//}
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	textproc perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/R/RE/REDTREE/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=PDF/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/PDF-API2-Simple/
