@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/18 01:54:52 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/19 04:49:54 obache Exp $
 
 DISTNAME=	CGI-Session-Serialize-yaml-4.26
 EXTRACT_SUFX=	.tgz
@@ -7,7 +7,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=CGI/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://search.cpan.org/dist/CGI-Session-Serialize-yaml
+HOMEPAGE=	http://search.cpan.org/dist/CGI-Session-Serialize-yaml/
 COMMENT=	Serializer for CGI::Session
 LICENSE=	artistic
 
