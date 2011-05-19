@@ -1,10 +1,9 @@
 # $NetBSD: Makefile,v 1.7 2011/05/09 09:38:26 manu Exp $
 #
 
-DISTNAME=	glusterfs-3.1.4
-PKGREVISION=	2
+DISTNAME=	glusterfs-3.2.0
 CATEGORIES=	filesystems
-MASTER_SITES=	http://download.gluster.com/pub/gluster/glusterfs/3.1/LATEST/
+MASTER_SITES=	http://download.gluster.com/pub/gluster/glusterfs/3.2/LATEST/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gluster.org/
@@ -71,7 +70,11 @@ post-install:
 	${INSTALL_SCRIPT} ${DESTDIR}/sbin/mount.glusterfs \
 	    ${DESTDIR}/${PREFIX}/sbin/
 	${INSTALL_SCRIPT} ${FILESDIR}/xattr-init.sh \
-	    ${DESTDIR}/${PREFIX}/etc/glusterfs
+	    ${DESTDIR}/${PREFIX}/etc/glusterfs/
+
+# Debug
+CFLAGS+=		-g
+INSTALL_UNSTRIPPED=	yes
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../lang/python/application.mk"
