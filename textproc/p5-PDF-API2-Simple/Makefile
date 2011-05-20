@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/17 21:55:35 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/19 05:10:31 obache Exp $
 
 DISTNAME=	PDF-API2-Simple-1.1.4u
 WRKSRC=		${WRKDIR}/${DISTNAME:S/u$//}
@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+=	p5-PDF-API2>=2.019:../../textproc/p5-PDF-API2
 
 PERL5_PACKLIST=	auto/PDF/API2/Simple/.packlist
+PERL5_MODULE_TYPE=	Module::Install
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
