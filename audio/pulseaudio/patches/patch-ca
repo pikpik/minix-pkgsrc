@@ -1,4 +1,6 @@
-$NetBSD: patch-ca,v 1.1 2009/01/21 15:40:20 drochner Exp $
+$NetBSD: patch-ca,v 1.2 2010/02/01 15:00:20 jmcneill Exp $
+
+Avoid GNUism in iconv usage.
 
 --- src/pulse/utf8.c.orig	2009-09-10 00:04:58.000000000 +0000
 +++ src/pulse/utf8.c
