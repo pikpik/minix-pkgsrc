@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.797 2011/05/19 02:09:17 mspo Exp $
+# $NetBSD: Makefile,v 1.798 2011/05/21 09:07:42 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -574,6 +574,7 @@ SUBDIR+=	ruby-htmlsplit
 SUBDIR+=	ruby-httpclient
 SUBDIR+=	ruby-innate
 SUBDIR+=	ruby-jsmin
+SUBDIR+=	ruby-liquid
 SUBDIR+=	ruby-mechanize
 SUBDIR+=	ruby-net-flickr
 SUBDIR+=	ruby-patron
