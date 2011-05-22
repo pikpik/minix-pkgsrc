@@ -1,6 +1,6 @@
-# $NetBSD: $
+# $NetBSD: Makefile,v 1.1 2011/04/28 20:45:48 alnsn Exp $
 
-DISTNAME=	cmph-1.0
+DISTNAME=	cmph-1.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cmph/}
 
@@ -13,5 +13,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
+
+TEST_DIRS=		tests
+TEST_TARGET=	check
 
 .include "../../mk/bsd.pkg.mk"
