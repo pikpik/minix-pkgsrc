@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2 2003/01/27 23:39:03 ad Exp $
+
+- Config for netbsd.
 
 --- dpteng/engcalls.c.orig	Tue Aug 13 16:02:24 2002
 +++ dpteng/engcalls.c	Fri Dec 13 14:14:51 2002
