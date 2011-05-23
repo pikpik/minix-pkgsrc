@@ -16,7 +16,7 @@ CFLAGS+= -Wno-error
   
 .LIBS:		.a
 
-AR?=		gar
+AR?=		ar
 ARFLAGS?=	rl
 RANLIB?=	ranlib
 
@@ -63,7 +63,7 @@ LEX?=		lex
 LFLAGS?=
 LEX.l?=		${LEX} ${LFLAGS}
 
-LD?=		gld
+LD?=		ld
 LDFLAGS?=
 
 LINT?=		lint
