@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.30 2011/03/09 16:26:47 drochner Exp $
+# $NetBSD: Makefile,v 1.31 2011/04/22 13:43:41 obache Exp $
 
 DISTNAME=		camlimages-2.2.0
 PKGREVISION=		12
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/cristal/caml-light/bazar-ocaml/
 EXTRACT_SUFX=		.tgz
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://cristal.inria.fr/camlimages/
