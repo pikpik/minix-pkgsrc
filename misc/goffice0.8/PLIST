@@ -194,6 +194,7 @@ lib/goffice/${PKGVERSION}/plugins/plot_surface/plugin.xml
 lib/goffice/${PKGVERSION}/plugins/plot_surface/surface.la
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-bubble-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-color-prefs.ui
+lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-dropbar-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-series-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/plot-types.xml
@@ -478,6 +479,8 @@ share/pixmaps/goffice/${PKGVERSION}/chart_cylinder_2_3.png
 share/pixmaps/goffice/${PKGVERSION}/chart_cylinder_3_1.png
 share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_1.png
 share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_2.png
+share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_3.png
+share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_4.png
 share/pixmaps/goffice/${PKGVERSION}/chart_histogram_1_1.png
 share/pixmaps/goffice/${PKGVERSION}/chart_histogram_1_3.png
 share/pixmaps/goffice/${PKGVERSION}/chart_histogram_1_4.png
