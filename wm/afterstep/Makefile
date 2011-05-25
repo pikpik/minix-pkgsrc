@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2011/04/10 09:18:51 obache Exp $
+# $NetBSD: Makefile,v 1.51 2011/04/22 13:44:54 obache Exp $
 
 DISTNAME=	AfterStep-2.1.2
 PKGNAME=	${DISTNAME:S/AfterStep/afterstep/}
@@ -10,8 +10,10 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.afterstep.org/
 COMMENT=	Window manager based on the look and feel of the NeXTStep interface
+LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		bash:run gmake perl:run pkg-config
 GNU_CONFIGURE=		yes
