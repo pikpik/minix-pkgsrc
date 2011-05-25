@@ -1,8 +1,22 @@
-WRKOBJDIR = /usr/tmp/pbulk-workdir
-PKGSRCDIR = /usr/pkgsrc
-DISTDIR = ${PKGSRCDIR}/distfiles
-PACKAGES = ${PKGSRCDIR}/packages-pbulk/${OS_VERSION}/${MACHINE_ARCH}
+WRKOBJDIR=/usr/tmp/pbulk-outer
+PKGSRCDIR=/usr/pkgsrc
+DISTDIR=/usr/pkgsrc/distfiles
+DIST_PATH=/usr/pkgsrc/distfiles
+PACKAGES=/usr/pbulk-packages
+
 FAILOVER_FETCH= yes
-SKIP_LICENSE_CHECK=                     yes
-ALLOW_VULNERABLE_PACKAGES=      yes
-PKG_DEVELOPER?= yes
+_ACCEPTABLE= yes
+SKIP_LICENSE_CHECK= yes
+ALLOW_VULNERABLE_PACKAGES= yes
+
+PKG_OPTIONS.groff=-x11 -groff-docs
+PKG_OPTIONS.scmgit=-python -scmgit-gui
+CURSES_DEFAULT?= ncurses
+PKG_DEFAULT_OPTIONS?= -inet6
+PKG_OPTIONS.ghostscript=-fontconfig
+
+#PKG_DEVELOPER?= yes
+IS_BUILTIN.dl?=    yes
+EXTRACT_USING?=    bsdtar
+FETCH_USING?=        fetch
+
