@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2011,v 1.1226 2011/05/26 07:42:49 tron Exp $
+$NetBSD: CHANGES-2011,v 1.1227 2011/05/26 08:43:30 drochner Exp $
 
 Changes to the packages collection and infrastructure in 2011:
 
@@ -2001,3 +2001,4 @@ Changes to the packages collection and infrastructure in 2011:
 	Updated devel/libgsf to 1.14.21 [drochner 2011-05-25]
 	Updated x11/gtk3 to 3.0.10 [drochner 2011-05-25]
 	Updated devel/glib2 to 2.28.7 [drochner 2011-05-25]
+	Updated devel/libgcroots to 0.2.3 [obache 2011-05-26]
