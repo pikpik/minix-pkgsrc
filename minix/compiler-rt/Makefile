@@ -8,7 +8,7 @@ MASTER_SITES=	${MASTER_SITE_MINIX}
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
 
-BUILD_DEPENDS+=	cmake:../../devel/cmake
+BUILD_DEPENDS+=	cmake-[0-9]*:../../devel/cmake
 
 #WRKSRC=                 ${WRKDIR}/$(SVN_REPOSITORIES)
 
