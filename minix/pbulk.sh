@@ -88,7 +88,7 @@ pbulksh_bin_kit() {
 	sh ./bootstrap/cleanup
 
 	# Trim the .ifdef BSD_PKG_MK and .endif lines to make a "fragment"
-	sed -e '1d;$d' /usr/pkgsrc/minix/mk.conf.minix.frag
+	sed -e '1d;$d' /usr/pkgsrc/minix/mk.conf.minix > /usr/pkgsrc/minix/mk.conf.minix.frag
 
 	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} sh ./bootstrap/bootstrap \
 		--mk-fragment=/usr/pkgsrc/minix/mk.conf.minix.frag \
@@ -102,9 +102,9 @@ pbulksh_bin_kit() {
 	# Use the same mk.conf that our users instead of the hybrid auto-generated mk.conf from bootstrap
 	cd /usr/pkgsrc/bootstrap
 	mkdir temp
-	mv bootstrap.tgz temp
+	mv bootstrap.tar.gz temp
 	cd temp
-	tar xf bootstrap.tgz
+	tar xf bootstrap.tar.gz
 	cp /usr/pkgsrc/minix/mk.conf.minix usr/pkg/etc/mk.conf
 	tar hzcf ../bootstrap.tar.gz usr
 	cd ..
