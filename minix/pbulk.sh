@@ -151,5 +151,5 @@ case $1 in
 	"--restore") pbulksh_restore; break;;
 	"--all") pbulksh_all; break;;
 	"--help") pbulksh_help; break;;
-	*) echo pbulksh_help; break;;
+	*) pbulksh_help; break;;
 esac
