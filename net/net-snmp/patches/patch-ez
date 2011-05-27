@@ -1,8 +1,8 @@
-$NetBSD: patch-ez,v 1.1 2010/05/11 04:39:54 adam Exp $
+$NetBSD$
 
---- agent/mibgroup/mibII/udp.c.orig	2010-10-19 03:54:57.000000000 +0000
+--- agent/mibgroup/mibII/udp.c.orig	2011-02-01 14:16:09.000000000 +0000
 +++ agent/mibgroup/mibII/udp.c
-@@ -29,6 +29,10 @@
+@@ -30,6 +30,10 @@
  #include "kernel_linux.h"
  #endif
  
@@ -13,9 +13,9 @@ $NetBSD: patch-ez,v 1.1 2010/05/11 04:39:54 adam Exp $
  #ifdef cygwin
  #define WIN32
  #include <windows.h>
-@@ -149,6 +153,12 @@ init_udp(void)
- #define USES_SNMP_DESIGNED_UDPSTAT
- #endif
+@@ -137,6 +141,12 @@ init_udp(void)
+ 	 *
+ 	 *********************/
  
 +#ifdef NETBSD_STATS_VIA_SYSCTL
 +#define UDP_STAT_STRUCTURE      struct udp_mib
@@ -23,10 +23,10 @@ $NetBSD: patch-ez,v 1.1 2010/05/11 04:39:54 adam Exp $
 +#undef UDP_NSTATS
 +#endif
 +
- #ifdef WIN32
- #include <iphlpapi.h>
- #define UDP_STAT_STRUCTURE MIB_UDPSTATS
-@@ -469,6 +479,21 @@ udp_load(netsnmp_cache *cache, void *vma
+ #ifdef hpux11
+ #define UDP_STAT_STRUCTURE	int
+ #endif
+@@ -467,6 +477,21 @@ udp_load(netsnmp_cache *cache, void *vma
      }
      return ret_value;
  }
