@@ -40,6 +40,11 @@ if [ "${config_version}" != "@PBULK_CONFIG_VERSION@" ]; then
 	exit 1
 fi
 
+if [ ${master_mode} = "yes" -a ${has_nfs} = "no" ]; then
+	# fetch new packages
+        ${rsync} ${pkg_rsync_args} ${master_ip}:${packages}/ ${packages}/
+fi
+
 pkg="${packages}/All/$1.tgz"
 [ -f ${pkg} ]
 

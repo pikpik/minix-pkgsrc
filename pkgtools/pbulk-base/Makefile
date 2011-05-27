@@ -7,6 +7,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../pkgtools/pbulk/Makefile.common"
 
+PKGVERSION=     1
+
 USE_FEATURES=	nbcompat
 USE_TOOLS+=	groff nroff
 

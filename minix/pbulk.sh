@@ -86,13 +86,30 @@ pbulksh_bin_kit() {
 	cd /usr/pkgsrc
 	rm -f /usr/pkgsrc/bootstrap/bootstrap.tar.gz
 	sh ./bootstrap/cleanup
+
+	# Trim the .ifdef BSD_PKG_MK and .endif lines to make a "fragment"
+	sed -e '1d;$d' /usr/pkgsrc/minix/mk.conf.minix.frag
+
 	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} sh ./bootstrap/bootstrap \
-		--mk-fragment=/usr/pkgsrc/minix/mk.conf.minix \
+		--mk-fragment=/usr/pkgsrc/minix/mk.conf.minix.frag \
 		--gzip-binary-kit=/usr/pkgsrc/bootstrap/bootstrap.tar.gz \
 		--varbase=/usr/var \
 		--pkgdbdir=/usr/var/db/pkg
+	rm -f /usr/pkgsrc/minix/mk.conf.minix.frag
 
 	rm -rf /usr/pbulk-packages
+
+	# Use the same mk.conf that our users instead of the hybrid auto-generated mk.conf from bootstrap
+	cd /usr/pkgsrc/bootstrap
+	mkdir temp
+	mv bootstrap.tgz temp
+	cd temp
+	tar xf bootstrap.tgz
+	cp /usr/pkgsrc/minix/mk.conf.minix usr/pkg/etc/mk.conf
+	tar hzcf ../bootstrap.tar.gz usr
+	cd ..
+	rm -rf temp
+	cd /usr/pkgsrc
 }
 
 # Perform the bulk build. Most configuration is in pbulk.conf
@@ -113,7 +130,7 @@ pbulksh_build() {
 		exit 1
 	fi
 
-	env PATH=/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} /usr/pbulk/bin/bulkbuild
+	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} /usr/pbulk/bin/bulkbuild
 }
 
 # Restore the backed up /usr/pkg and /usr/var

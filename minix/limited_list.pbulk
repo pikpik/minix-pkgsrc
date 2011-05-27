@@ -67,6 +67,7 @@ pkgtools/digest
 pkgtools/libnbcompat
 pkgtools/osabi
 pkgtools/p5-pkgsrc-Dewey
+pkgtools/pbulk
 pkgtools/pkgdep
 pkgtools/pkgdepgraph
 pkgtools/pkgdiff

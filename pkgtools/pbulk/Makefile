@@ -7,6 +7,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../pkgtools/pbulk/Makefile.common"
 
+PKGVERSION=	1
+
 USE_TOOLS+=	awk:run bzip2:run digest:run gzip:run make:run \
 		mail:run sed:run tar:run
 DEPENDS+=	rsync-[0-9]*:../../net/rsync

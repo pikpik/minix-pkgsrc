@@ -187,6 +187,11 @@ run_usergroup install > ${bulklog}/${pkgname}/install.log 2>&1 || cleanup
 run_make ${run_install} stage-install >> ${bulklog}/${pkgname}/install.log 2>&1 || cleanup
 run_make run_direct package  > ${bulklog}/${pkgname}/package.log 2>&1 || cleanup
 
+if [ ${master_mode} = "yes" -a ${has_nfs} = "no" ]; then
+	# push back the new package
+	${rsync} ${pkg_rsync_args_no_del} ${packages}/ ${master_ip}:${packages}/
+fi
+
 # When using DESTDIR build, add the package once to test install rules.
 # This is not done for potential bootstrap packages as they might already
 # be installed.

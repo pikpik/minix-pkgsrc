@@ -12,5 +12,10 @@ if [ "${config_version}" != "@PBULK_CONFIG_VERSION@" ]; then
 fi
 
 for client in ${build_clients}; do
+	if [ ${master_mode} = "yes" -a ${has_nfs} = "no" ]; then
+		# push out the log directory to the client
+		${rsync} ${pkg_rsync_args} ${bulklog} ${client}:${bulklog}/
+	fi
+
 	ssh $client "${pbuild} -c ${master_port_build} -b ${pbuild_script}" &
 done

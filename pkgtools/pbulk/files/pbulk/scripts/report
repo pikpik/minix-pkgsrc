@@ -40,6 +40,11 @@ if [ "${config_version}" != "@PBULK_CONFIG_VERSION@" ]; then
 	exit 1
 fi
 
+if [ ${master_mode} = "yes" -a ${has_nfs} = "no" ]; then
+	# collect all log files back
+	${rsync} ${pkg_rsync_args_no_del} ${bulklog}/ ${master_ip}:${bulklog}/
+fi
+
 echo "Build reports..."
 ${report_script} ${loc}
 ${bzip2} -zc ${loc}/report > ${loc}/report.bz2
