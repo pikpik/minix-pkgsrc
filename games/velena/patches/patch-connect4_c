@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1.1.1 2007/07/25 00:11:10 rillig Exp $
+
+- void main
 
 --- connect4.c.orig	1997-07-27 17:29:38.000000000 +0200
 +++ connect4.c	2007-07-25 01:52:05.000000000 +0200

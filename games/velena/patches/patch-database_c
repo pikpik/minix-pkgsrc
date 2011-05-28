@@ -1,7 +1,19 @@
 $NetBSD$
 
---- database.c.orig	1997-07-27 17:44:50.000000000 +0200
-+++ database.c	2007-07-25 01:52:55.000000000 +0200
+- needs unistd.h
+- don't use gets
+
+--- database.c.orig	1997-07-27 21:44:50.000000000 +0000
++++ database.c
+@@ -16,7 +16,7 @@
+ #include <stdio.h>
+ #include <string.h>
+ #include <stdlib.h>
+-#include <malloc.h>
++#include <unistd.h>
+ 
+ #include "connect4.h"
+ #include "con4vals.h"
 @@ -698,7 +698,8 @@ void merge()
  	char filename[255];
  
