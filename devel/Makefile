@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1456 2011/05/18 02:23:22 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.1457 2011/05/19 04:16:05 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -257,6 +257,9 @@ SUBDIR+=	guile16-gtk
 SUBDIR+=	haskell-mode
 SUBDIR+=	hdf
 SUBDIR+=	hdf5
+SUBDIR+=	heirloom-getopt
+SUBDIR+=	heirloom-libcommon
+SUBDIR+=	heirloom-what
 SUBDIR+=	hg-git
 SUBDIR+=	hoe
 SUBDIR+=	hptools
