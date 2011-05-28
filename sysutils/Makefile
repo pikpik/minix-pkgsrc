@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.518 2011/05/16 13:53:18 wiz Exp $
+# $NetBSD: Makefile,v 1.519 2011/05/28 00:53:00 cheusov Exp $
 #
 
 COMMENT=	System utilities
@@ -190,6 +190,7 @@ SUBDIR+=	heirloom-renice
 SUBDIR+=	heirloom-rm
 SUBDIR+=	heirloom-rmdir
 SUBDIR+=	heirloom-setpgrp
+SUBDIR+=	heirloom-shl
 SUBDIR+=	heirloom-sort
 SUBDIR+=	heirloom-split
 SUBDIR+=	heirloom-stty
