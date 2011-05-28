@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/28 01:01:46 cheusov Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/28 10:15:14 cheusov Exp $
 
 PKGNAME=	heirloom-awk-${HEIRLOOM_VER}
 CATEGORIES=	textproc lang
@@ -7,6 +7,7 @@ LICENSE=	gnu-gpl-v2 AND original-bsd
 MAKE_FLAGS+=	SUBDIRS="build oawk nawk"
 
 NEED_LIBUXRE=	1
+USE_TOOLS=	yacc lex
 
 .include "../../sysutils/heirloom-doc/Makefile.common"
 
