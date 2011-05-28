@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/28 00:10:41 cheusov Exp $
 
 PKGNAME=	heirloom-ls-${HEIRLOOM_VER}
 CATEGORIES=	sysutils
@@ -10,7 +10,7 @@ NEED_LIBCURSES=	1
 
 .include "../../sysutils/heirloom-doc/Makefile.common"
 
-DESCR_SRC+=	DESCR
+DESCR_SRC+=	${.CURDIR}/DESCR
 
 .include "../../devel/heirloom-libcommon/buildlink3.mk"
 .include "../../mk/curses.buildlink3.mk"
