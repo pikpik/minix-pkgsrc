@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.119 2011/03/23 10:33:29 adam Exp $
+# $NetBSD: Makefile,v 1.120 2011/04/15 16:22:59 drochner Exp $
 #
 
 COMMENT=	Archivers
@@ -28,6 +28,7 @@ SUBDIR+=	gtar-info
 SUBDIR+=	gzip
 SUBDIR+=	gzrecover
 SUBDIR+=	ha
+SUBDIR+=	heirloom-tar
 SUBDIR+=	hpack
 SUBDIR+=	jamjar
 SUBDIR+=	lbrate
