@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.35 2008/07/30 13:27:46 bjs Exp $
+# $NetBSD: Makefile,v 1.36 2009/01/05 13:20:49 jmcneill Exp $
 #
 
 COMMENT=	Network news
 
 SUBDIR+=	cg
 SUBDIR+=	cleanscore
+SUBDIR+=	heirloom-news
 SUBDIR+=	hellanzb
 SUBDIR+=	inn
 SUBDIR+=	knews
