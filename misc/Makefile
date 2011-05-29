@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.358 2011/05/28 09:53:58 cheusov Exp $
+# $NetBSD: Makefile,v 1.359 2011/05/28 09:58:05 cheusov Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -222,6 +222,7 @@ SUBDIR+=	rump
 SUBDIR+=	sch
 SUBDIR+=	sci
 SUBDIR+=	screen
+SUBDIR+=	send-pr
 SUBDIR+=	siag
 SUBDIR+=	softmaker-office-demo
 SUBDIR+=	splitvt
