@@ -52,6 +52,7 @@ games/gnugo
 games/ninvaders
 games/sex
 graphics/png
+ham/locator
 lang/f2c
 lang/gawk
 lang/gcc44
