@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2010/01/17 12:02:22 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2011/05/09 12:02:59 obache Exp $
 #
 
 DISTNAME=	alpine-2.00
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/alpine/
 DIST_SUBDIR=	alpine-2.00a
@@ -20,6 +20,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-ssl-dir=${SSLBASE:Q}
 CONFIGURE_ARGS+= --with-system-pinerc=${PKG_SYSCONFDIR}/pine.conf
 CONFIGURE_ARGS+= --with-system-fixed-pinerc=${PKG_SYSCONFDIR}/pine.conf.fixed
+# disabled, for Web Alpine Support
+CONFIGURE_ARGS+=	--without-tcl
 
 USE_LIBTOOL=	yes
 

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.59 2010/11/07 12:21:09 obache Exp $
+# $NetBSD: Makefile,v 1.61 2011/04/22 13:44:27 obache Exp $
 
-DISTNAME=	proftpd-1.3.3d
+DISTNAME=	proftpd-1.3.3e
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.proftpd.org/distrib/source/ \
 		ftp://ftp.servus.at/ProFTPD/distrib/source/ \
@@ -30,6 +30,7 @@ BUILD_DEFS+=		VARBASE
 
 RCD_SCRIPTS=		proftpd
 REPLACE_PERL+=		contrib/ftpasswd
+REPLACE_PERL+=		src/prxs
 
 CONF_FILES=		${PREFIX}/share/examples/proftpd/basic.conf \
 			${PKG_SYSCONFDIR}/proftpd.conf

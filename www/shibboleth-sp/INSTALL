@@ -1,0 +1,9 @@
+#!/bin/sh
+#
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+        ${SH} ${DESTDIR}${PREFIX}/sbin/shib-keygen
+        ;;
+esac

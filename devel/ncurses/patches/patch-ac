@@ -1,17 +1,8 @@
-$NetBSD: patch-ac,v 1.15 2007/12/22 00:23:58 joerg Exp $
+$NetBSD$
 
---- configure.orig	Sun Oct 26 00:04:38 2008
+--- configure.orig	2011-02-21 01:40:36.000000000 +0000
 +++ configure
-@@ -2663,7 +2663,7 @@ if test "$cross_compiling" = yes ; then
-   LDCONFIG=:
- else
- case "$cf_cv_system_name" in #(vi
--freebsd*) #(vi
-+dragonfly*|freebsd*) #(vi
-   test -z "$LDCONFIG" && LDCONFIG="/sbin/ldconfig -R"
-   ;;
- *) LDPATH=$PATH:/sbin:/usr/sbin
-@@ -8516,12 +8516,7 @@ case ".$MANPAGE_RENAMES" in #(vi
+@@ -9640,12 +9640,7 @@ case ".$MANPAGE_RENAMES" in #(vi
  .no) #(vi
    ;;
  .|.yes)
@@ -24,12 +15,12 @@ $NetBSD: patch-ac,v 1.15 2007/12/22 00:23:58 joerg Exp $
    ;;
  esac
  
-@@ -17100,6 +17095,8 @@ do
- EOF
- cat >>$CONFIG_STATUS <<EOF
-   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
-+	: Avoid regenerating within pkgsrc
-+	exit 0
-     echo "running $SHELL $0 " $ac_configure_args " --no-create --no-recursion"
-     exec $SHELL $0 $ac_configure_args --no-create --no-recursion ;;
- EOF
+@@ -18449,7 +18444,7 @@ echo "${ECHO_T}$LIB_SUBSETS" >&6
+ 
+ ### Construct the list of include-directories to be generated
+ 
+-CPPFLAGS="$CPPFLAGS -I. -I../include"
++CPPFLAGS="-I. -I../include $CPPFLAGS"
+ if test "$srcdir" != "."; then
+ 	CPPFLAGS="$CPPFLAGS -I\${srcdir}/../include"
+ fi

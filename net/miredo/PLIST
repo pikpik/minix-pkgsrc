@@ -19,3 +19,4 @@ sbin/miredo-server
 share/examples/miredo/miredo-server.conf
 share/examples/miredo/miredo.conf
 share/examples/rc.d/client-hook
+share/examples/rc.d/miredo

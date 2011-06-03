@@ -1,25 +1,23 @@
-# $NetBSD: Makefile,v 1.65 2010/12/01 19:39:29 drochner Exp $
+# $NetBSD: Makefile,v 1.69 2011/03/09 11:05:12 ryoon Exp $
 #
 
 DISTNAME=	lilypond-2.12.3
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	http://lilypond.org/download/sources/v2.12/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://lilypond.org/web/
+HOMEPAGE=	http://lilypond.org/
 COMMENT=	GNU Music Typesetter
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-DEPENDS+=	ec-fonts-mftraced-[0-9]*:../../fonts/ec-fonts-mftraced
-
-BUILDLINK_API_DEPENDS.mftrace+=	mftrace>=1.1.0
 
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		bison flex gmake gs:run makeinfo perl pkg-config msgfmt
+USE_TOOLS+=		texi2html
 MAKE_FILE=		GNUmakefile
 
 .include "../../mk/bsd.prefs.mk"
@@ -32,10 +30,11 @@ INFO_DIR=		${GNU_CONFIGURE_INFODIR}
 INFO_FILES=		YES
 
 BUILD_DEPENDS+=		urw-fonts-[0-9]*:../../fonts/urw-fonts
+BUILD_DEPENDS+=		fontforge>=20060125:../../fonts/fontforge
+BUILD_DEPENDS+=		t1utils>=1.33:../../fonts/t1utils
 CONFIGURE_ARGS+=	--with-ncsb-dir=${LOCALBASE}/share/fonts/urw
 CONFIGURE_ARGS+=	--disable-optimising
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
-PYTHON_VERSIONS_ACCEPTED= 25 24
 
 REPLACE_PYTHON+= scripts/auxiliar/yyout2grammar.py
 PLIST_SUBST+=	PKGVERSION=${PKGVERSION:S/nb${PKGREVISION}//}
@@ -45,7 +44,6 @@ DEPENDS+=	potrace>=1.8:../../graphics/potrace
 
 .include "../../devel/pango/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
-.include "../../fonts/mftrace/buildlink3.mk"
 .include "../../lang/guile/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../mk/omf-scrollkeeper.mk"

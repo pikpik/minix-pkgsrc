@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2009/09/15 20:03:47 spz Exp $
 
-PKG_OPTIONS_VAR=        PKG_OPTIONS.pkcs11-helper
-PKG_SUPPORTED_OPTIONS=  openssl gnutls nss
+PKG_OPTIONS_VAR=	PKG_OPTIONS.pkcs11-helper
+PKG_SUPPORTED_OPTIONS=	openssl gnutls nss
 PKG_SUGGESTED_OPTIONS=	openssl
 
 .include "../../mk/bsd.options.mk"

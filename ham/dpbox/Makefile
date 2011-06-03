@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/09/09 02:43:09 obache Exp $
+# $NetBSD: Makefile,v 1.16 2010/01/29 23:46:15 joerg Exp $
 #
 
 DISTNAME=	dpbox-60000
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	ham
 MASTER_SITES=	http://home.snafu.de/wahlm/dl8hbs/
 
-MAINTAINER=	wulf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.snafu.de/wahlm/dl8hbs/dpbox.html
 COMMENT=	Multi-Protocol Amateur Packet Radio BBS
 

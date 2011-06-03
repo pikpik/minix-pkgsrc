@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/08/28 21:53:46 jmmv Exp $
+# $NetBSD: Makefile,v 1.3 2011/04/22 13:45:20 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	xvid

@@ -1,34 +1,24 @@
-# $NetBSD: Makefile,v 1.16 2007/12/23 04:50:30 minskim Exp $
+# $NetBSD: Makefile,v 1.19 2011/02/05 17:54:13 ryoon Exp $
 #
 
-DISTNAME=		wdiff-0.5
-PKGREVISION=		3
+DISTNAME=		wdiff-0.6.5
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_GNU:=wdiff/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnu.org/software/wdiff/wdiff.html
 COMMENT=		Word-by-word diff
+LICENSE=		gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
-CONFIGURE_HAS_INFODIR=	no
-CONFIGURE_HAS_MANDIR=	no
 
 USE_TOOLS+=		makeinfo
-INFO_FILES=		# PLIST
-INSTALLATION_DIRS=	bin ${PKGINFODIR} ${PKGMANDIR}/man1 share/doc/wdiff
+INFO_FILES=		yes
+CHECK_FILES_SKIP+=	lib/charset.alias
 
-do-install:
-	${INSTALL_MAN} ${WRKSRC}/wdiff.1				\
-		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
-	cd ${WRKSRC}; for f in wdiff.info wdiff.info-[0-9]*; do		\
-		${TEST} ! -f "$$f" ||					\
-		${INSTALL_MAN} "$$f" ${DESTDIR}${PREFIX}/${PKGINFODIR};	\
-	done
-	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/wdiff
-	${INSTALL_PROGRAM} ${WRKSRC}/wdiff ${DESTDIR}${PREFIX}/bin
-
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

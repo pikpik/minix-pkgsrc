@@ -1,15 +1,14 @@
-# $NetBSD: buildlink3.mk,v 1.10 2009/03/20 19:25:33 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.12 2011/02/23 08:31:13 adam Exp $
 
 BUILDLINK_TREE+=	xerces-c
 
 .if !defined(XERCES_C_BUILDLINK3_MK)
 XERCES_C_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.xerces-c+=	xerces-c>=2.8.0
-BUILDLINK_ABI_DEPENDS.xerces-c?=	xerces-c>=2.8.0
-BUILDLINK_PKGSRCDIR.xerces-c?=	../../textproc/xerces-c
+BUILDLINK_API_DEPENDS.xerces-c+=	xerces-c>=3.1.1
+BUILDLINK_PKGSRCDIR.xerces-c?=		../../textproc/xerces-c
 
 .include "../../converters/libiconv/buildlink3.mk"
-.endif # XERCES_C_BUILDLINK3_MK
+.endif	# XERCES_C_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-xerces-c

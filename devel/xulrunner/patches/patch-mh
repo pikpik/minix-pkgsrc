@@ -1,6 +1,6 @@
 $NetBSD$
 
---- security/nss/lib/Makefile.orig	2010-04-13 22:22:54.000000000 +0000
+--- security/nss/lib/Makefile.orig	2011-03-18 23:34:05.000000000 +0000
 +++ security/nss/lib/Makefile
 @@ -70,7 +70,7 @@ endif
  

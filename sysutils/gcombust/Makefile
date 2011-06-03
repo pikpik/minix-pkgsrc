@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2008/06/20 01:09:35 joerg Exp $
+# $NetBSD: Makefile,v 1.45 2009/07/22 09:01:46 wiz Exp $
 #
 
 DISTNAME=		gcombust-0.1.54
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		x11 sysutils
 MASTER_SITES=		${HOMEPAGE}
 

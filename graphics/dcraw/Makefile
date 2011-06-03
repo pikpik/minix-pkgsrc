@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2010/08/06 20:49:23 bad Exp $
+# $NetBSD: Makefile,v 1.34 2010/12/23 11:44:34 dsainty Exp $
 #
 
 DISTNAME=	dcraw-9.04
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.cybercom.net/~dcoffin/dcraw/archive/
 

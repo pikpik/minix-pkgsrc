@@ -1,19 +1,22 @@
-# $NetBSD: Makefile,v 1.21 2010/06/13 22:44:18 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2011/02/23 10:20:26 adam Exp $
 
-DISTNAME=	enigma-1.01
-PKGREVISION=	4
+DISTNAME=	enigma-1.01-r1914
+PKGNAME=	${DISTNAME:S/-r/./}
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://download.berlios.de/enigma-game/
 
 MAINTAINER=	heinz@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/enigma/
 COMMENT=	Puzzle game similar to Oxyd/Rock'n'Roll/Marble Madness
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 DEPENDS+=		gettext-tools-[0-9]*:../../devel/gettext-tools
 
+WRKSRC=			${WRKDIR}/${DISTNAME:S/-r1914//}
 GCC_REQD+=		3.3
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
@@ -36,5 +39,6 @@ BUILDLINK_API_DEPENDS.xerces-c+=	xerces-c>=2.7.0
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/xerces-c/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

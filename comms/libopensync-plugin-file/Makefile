@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/01/10 22:56:41 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:00 joerg Exp $
 #
 
 DISTNAME=	libopensync-plugin-file-0.22
+PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	http://www.opensync.org/download/releases/0.22/
 EXTRACT_SUFX=	.tar.bz2

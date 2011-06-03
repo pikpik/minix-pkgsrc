@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pst-ghsb/pst-ghsb.pro
+share/texmf-dist/tex/generic/pst-ghsb/pst-ghsb.tex
+share/texmf-dist/tex/latex/pst-ghsb/pst-ghsb.sty

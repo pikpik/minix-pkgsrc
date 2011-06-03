@@ -1,5 +1,0 @@
-@comment $NetBSD: PLIST,v 1.4 2009/08/12 12:43:11 obache Exp $
-lib/pkgconfig/ruby-panelapplet2.pc
-${RUBY_VENDORARCHLIB}/panelapplet2.${RUBY_DLEXT}
-${RUBY_VENDORARCHLIB}/panelapplet2_main.${RUBY_DLEXT}
-${RUBY_VENDORLIB}/panelapplet2.rb

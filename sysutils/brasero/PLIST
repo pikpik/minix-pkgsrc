@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.8 2011/01/11 15:27:25 drochner Exp $
 bin/brasero
 include/brasero/brasero-blank-dialog.h
 include/brasero/brasero-burn-dialog.h

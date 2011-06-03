@@ -1,8 +1,9 @@
-$NetBSD: distinfo,v 1.1.1.1 2009/08/16 18:25:53 bouyer Exp $
+$NetBSD: distinfo,v 1.2 2010/12/01 21:00:51 bouyer Exp $
 
 SHA1 (Ocsinventory-Agent-1.1.2.1.tar.gz) = ff8395bd281ddfdb9c3f9106b51aa75ac542f169
 RMD160 (Ocsinventory-Agent-1.1.2.1.tar.gz) = 8cd303df6f760d6ec4f64e79792544c4c8119227
 Size (Ocsinventory-Agent-1.1.2.1.tar.gz) = 1401670 bytes
+SHA1 (patch-Backend_OS_Generic_Packaging_BSDpkg.pm) = d7abd77c73cd4e90d83a7a1c2f2dcbd8b66ffdc6
 SHA1 (patch-aa) = 5022b8b1f5e98c43f7da562412bd752956320f05
 SHA1 (patch-ab) = 6eca9c4fb2f9971a10437e05d40cf0c98bbe2371
 SHA1 (patch-ac) = 352825dd73ab8b9f22d60c8c4056999bf8ff3b3f

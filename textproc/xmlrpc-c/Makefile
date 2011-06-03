@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2010/06/15 09:18:10 adam Exp $
+# $NetBSD: Makefile,v 1.20 2011/04/22 13:42:09 obache Exp $
 
-DISTNAME=	xmlrpc-c-1.06.41
+DISTNAME=	xmlrpc-c-1.16.35
 # the "super stable" branch
-PKGNAME=	xmlrpc-c-ss-1.06.41
+PKGNAME=	${DISTNAME:S/-c-/-c-ss-/}
 CATEGORIES=	textproc devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmlrpc-c/}
 EXTRACT_SUFX=	.tgz
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xmlrpc-c.sourceforge.net/
 COMMENT=	Library for writing an XML-RPC server or client in C or C++
+LICENSE=	modified-bsd
 
 CONFLICTS+=	xmlrpc-c-[0-9]*
 SUPERSEDES+=	xmlrpc-c-[0-9]*
@@ -30,14 +31,14 @@ MAKE_ENV+=		LADD=${LDFLAGS:M*:Q}
 TEST_TARGET=		check
 
 PTHREAD_LINKFLAGS=	${PTHREAD_LDFLAGS} ${PTHREAD_LIBS}
-SUBST_CLASSES+=	pthread
-SUBST_FILES.pthread=	xmlrpc-c-config.in xmlrpc-c-config.test.in
-SUBST_SED.pthread=	-e s/-lpthread/${PTHREAD_LINKFLAGS:Q}/
-SUBST_SED.pthread+=	-e "s/-L\(.\)libdir/-L\1libdir ${COMPILER_RPATH_FLAG}\1libdir/"
+SUBST_CLASSES+=		pthread
 SUBST_STAGE.pthread=	pre-configure
 SUBST_MESSAGE.pthread=	Fixing config scripts.
+SUBST_FILES.pthread=	xmlrpc-c-config.* xmlrpc-c-config.test.*
+SUBST_SED.pthread=	-e 's/-lpthread/${PTHREAD_LINKFLAGS:Q}/'
+SUBST_SED.pthread+=	-e 's/-L\(.\)libdir/-L\1libdir ${COMPILER_RPATH_FLAG}\1libdir/'
 
-.include "../../www/libwww/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
+.include "../../www/libwww/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

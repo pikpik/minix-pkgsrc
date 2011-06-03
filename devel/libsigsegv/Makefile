@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2009/12/15 17:53:43 asau Exp $
+# $NetBSD: Makefile,v 1.12 2011/03/09 19:41:54 asau Exp $
 #
 
-DISTNAME=		libsigsegv-2.8
+DISTNAME=		libsigsegv-2.10
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=libsigsegv/}
 

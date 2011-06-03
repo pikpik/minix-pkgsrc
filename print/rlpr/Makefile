@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2006/10/04 21:56:34 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2011/03/18 20:17:51 zafer Exp $
 
 DISTNAME=		rlpr-2.06
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		print
-MASTER_SITES=		ftp://truffula.com/pub/
+MASTER_SITES=		# ftp://truffula.com/pub/
 
 MAINTAINER=		sekiya@NetBSD.org
 HOMEPAGE=		http://truffula.com/rlpr/

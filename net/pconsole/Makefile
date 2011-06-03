@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2007/08/01 20:13:41 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2008/06/12 02:14:40 joerg Exp $
 #
 
 DISTNAME=	pconsole-1.0
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.ka.sara.nl/home/walter/pconsole/
 
-MAINTAINER=	frueauf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ka.sara.nl/home/walter/pconsole/
 COMMENT=	Parallel console tool to access several host via one input tty
 

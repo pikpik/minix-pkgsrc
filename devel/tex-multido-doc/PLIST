@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/multido/Changes
+share/texmf-dist/doc/generic/multido/multido-doc.pdf
+share/texmf-dist/doc/generic/multido/multido-doc.tex
+share/texmf-dist/doc/generic/multido/multido.pdf

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2007/03/24 19:21:30 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2010/01/27 17:42:32 joerg Exp $
 #
 
 DISTNAME=		ssync-1.6
 CATEGORIES=		net
-MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
+MASTER_SITES=		# ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Invoke rsync to distribute files to a set of hosts

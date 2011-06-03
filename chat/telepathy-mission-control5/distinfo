@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.1.1.1 2010/07/09 09:46:49 drochner Exp $
+$NetBSD: distinfo,v 1.3 2011/02/24 21:07:27 drochner Exp $
 
-SHA1 (telepathy-mission-control-5.5.3.tar.gz) = f37f2df84c275c8b1f97b5c4d40b90a68371886d
-RMD160 (telepathy-mission-control-5.5.3.tar.gz) = 83a3bb70bb8eb50a0a21f89b8acba259ed9e17ca
-Size (telepathy-mission-control-5.5.3.tar.gz) = 1245954 bytes
+SHA1 (telepathy-mission-control-5.7.9.tar.gz) = 0eeb7b98ffd26277e5930322db7a30015af58dca
+RMD160 (telepathy-mission-control-5.7.9.tar.gz) = 07473a0bfe9b0796b8424a04e32d62e45e7766ec
+Size (telepathy-mission-control-5.7.9.tar.gz) = 1110156 bytes

@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.72 2010/06/13 22:44:26 wiz Exp $
+# $NetBSD: Makefile,v 1.74 2011/04/01 10:59:56 wiz Exp $
 
 DISTNAME=	blender-2.49b
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.blender.org/source/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.blender.org/
 COMMENT=	Fully integrated 3D graphics creation suite
+LICENSE=	gnu-gpl-v2
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++
@@ -15,6 +16,8 @@ USE_CMAKE=		yes
 CMAKE_ARG_PATH=		..
 CONFIGURE_DIRS=		_build
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 LDFLAGS+=		-lcrypto
 

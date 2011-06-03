@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2010/11/23 18:02:02 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2011/03/11 11:06:30 wiz Exp $
 #
 
-DISTNAME=	farsight2-0.0.22
+DISTNAME=	farsight2-0.0.26
 PKGREVISION=	1
 CATEGORIES=	chat multimedia
 MASTER_SITES=	http://farsight.freedesktop.org/releases/farsight2/
@@ -37,7 +37,7 @@ BUILDLINK_API_DEPENDS.gstreamer0.10+=	gstreamer0.10>=0.10.23
 BUILDLINK_API_DEPENDS.gst-python+=	${PYPKGPREFIX}-gstreamer0.10>=0.10.10
 .include "../../multimedia/py-gstreamer0.10/buildlink3.mk"
 .include "../../net/gupnp-igd/buildlink3.mk"
-BUILDLINK_API_DEPENDS.libnice+=	libnice>=0.0.11
+BUILDLINK_API_DEPENDS.libnice+=	libnice>=0.1.0
 .include "../../net/libnice/buildlink3.mk"
 .include "../../textproc/gtk-doc/buildlink3.mk"
 .include "../../x11/py-gtk2/buildlink3.mk"

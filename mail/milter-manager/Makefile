@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/11/10 04:47:59 obache Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/26 15:39:47 obache Exp $
 #
 
-DISTNAME=	milter-manager-1.6.2
+DISTNAME=	milter-manager-1.6.9
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=milter-manager/}
 
@@ -23,6 +24,10 @@ CONFIGURE_ARGS+=	--with-default-effective-user=${MILTER_MANAGER_USER}
 CONFIGURE_ARGS+=	--with-default-effective-group=${MILTER_MANAGER_GROUP}
 CONFIGURE_ARGS+=	--with-default-socket-group=${MILTER_MANAGER_SOCKET_GROUP}
 CONFIGURE_ARGS+=	--with-default-pid-file=${VARBASE}/run/milter-manager/milter-manager.pid
+CONFIGURE_ARGS+=	--with-libev=${BUILDLINK_PREFIX.libev}
+CONFIGURE_ARGS+=	--with-ruby=${RUBY}
+CONFIGURE_ARGS+=	--enable-ruby-milter=${PREFIX}/${RUBY_VENDORLIB}
+
 PKG_SYSCONFSUBDIR=	${PKGBASE}
 
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
@@ -33,6 +38,10 @@ PKGCONFIG_OVERRIDE+=	milter-client.pc.in
 PKGCONFIG_OVERRIDE+=	milter-core.pc.in
 PKGCONFIG_OVERRIDE+=	milter-manager.pc.in
 PKGCONFIG_OVERRIDE+=	milter-server.pc.in
+PKGCONFIG_OVERRIDE+=	ruby-milter.pc.in
+PKGCONFIG_OVERRIDE+=	ruby-milter-client.pc.in
+PKGCONFIG_OVERRIDE+=	ruby-milter-core.pc.in
+PKGCONFIG_OVERRIDE+=	ruby-milter-server.pc.in
 
 MILTER_MANAGER_USER?=	_milter
 MILTER_MANAGER_GROUP?=	_milter
@@ -71,10 +80,20 @@ BUILD_DEFS+=		MILTER_MANAGER_GROUP
 BUILD_DEFS+=		MILTER_MANAGER_SOCKET_GROUP
 
 REPLACE_RUBY=		admin/public/dispatch.*
+REPLACE_RUBY+=		admin/script/*
+REPLACE_RUBY+=		admin/script/performance/*
+REPLACE_RUBY+=		admin/script/process/*
+REPLACE_RUBY+=		data/munin/milter_manager_
+REPLACE_RUBY+=		tool/milter-manager-log-analyzer
+REPLACE_RUBY+=		tool/milter-performance-check
+REPLACE_RUBY+=		tool/milter-report-statistics
 .include "../../lang/ruby/replace.mk"
 
 .include "../../lang/ruby/buildlink3.mk"
+BUILDLINK_API_DEPENDS.ruby-gnome2-glib+=	${RUBY_PKGPREFIX}-gnome2-glib>=0.90.5
 .include "../../devel/ruby-gnome2-glib/buildlink3.mk"
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.12.3
 .include "../../devel/glib2/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libev+=	libev>=4.01
+.include "../../devel/libev/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

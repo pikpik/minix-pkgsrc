@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2010/12/02 16:00:38 wiz Exp $
+# $NetBSD: Makefile,v 1.63 2011/05/02 13:17:47 wiz Exp $
 #
 
 PKGNAME=	${DISTNAME:S/links/&-gui/}

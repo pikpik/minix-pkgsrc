@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/07/08 23:11:03 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2009/03/20 19:25:08 joerg Exp $
 
 BUILDLINK_TREE+=	gnet1
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	gnet1
 GNET1_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.gnet1+=	gnet1>=1.1.8nb2
-BUILDLINK_ABI_DEPENDS.gnet1+=	gnet1>=1.1.8nb4
+BUILDLINK_ABI_DEPENDS.gnet1+=	gnet1>=1.1.8nb5
 BUILDLINK_PKGSRCDIR.gnet1?=	../../net/gnet1
 
 .include "../../devel/glib2/buildlink3.mk"

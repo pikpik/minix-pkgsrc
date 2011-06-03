@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.823 2010/06/15 22:06:48 rillig Exp $
+# $NetBSD: pkglint.pl,v 1.826 2011/05/23 10:59:37 cheusov Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -6157,6 +6157,15 @@ sub checklines_mk($) {
 			if ($includefile =~ m"/x11-links/buildlink3\.mk$") {
 				$line->log_error("${includefile} must not be included directly. Include \"../../mk/x11.buildlink3.mk\" instead.");
 			}
+			if ($includefile =~ m"/giflib/buildlink3\.mk$") {
+				$line->log_error("${includefile} must not be included directly. Include \"../../mk/giflib.buildlink3.mk\" instead.");
+			}
+			if ($includefile =~ m"/jpeg/buildlink3\.mk$") {
+				$line->log_error("${includefile} must not be included directly. Include \"../../mk/jpeg.buildlink3.mk\" instead.");
+			}
+			if ($includefile =~ m"/libungif/buildlink3\.mk$") {
+				$line->log_error("${includefile} must not be included directly. Include \"../../mk/giflib.buildlink3.mk\" instead.");
+			}
 			if ($includefile =~ m"/intltool/buildlink3\.mk$") {
 				$line->log_warning("Please say \"USE_TOOLS+= intltool\" instead of this line.");
 			}
@@ -6868,7 +6877,7 @@ sub checkfile_distinfo($) {
 			next;
 		}
 		my ($alg, $chksum_fname, $sum) = ($1, $2, $3);
-		my $is_patch = (($chksum_fname =~ m"^patch-[A-Za-z0-9]+$") ? true : false);
+		my $is_patch = (($chksum_fname =~ m"^patch-.+$") ? true : false);
 
 		if ($chksum_fname !~ m"^\w") {
 			$line->log_error("All file names should start with a letter.");
@@ -7096,8 +7105,8 @@ sub checkfile_package_Makefile($$) {
 		$pkgctx_vardef->{"NO_CONFIGURE"}->log_warning("... NO_CONFIGURE is set.");
 	}
 
-	if (exists($pkgctx_vardef->{"RESTRICTED"}) && !exists($pkgctx_vardef->{"LICENSE"})) {
-		$pkgctx_vardef->{"RESTRICTED"}->log_error("Restricted packages must have a LICENSE.");
+	if (!exists($pkgctx_vardef->{"LICENSE"})) {
+		log_error($fname, NO_LINE_NUMBER, "All packages must define their LICENSE.");
 	}
 
 	if (exists($pkgctx_vardef->{"GNU_CONFIGURE"}) && exists($pkgctx_vardef->{"USE_LANGUAGES"})) {
@@ -7976,9 +7985,6 @@ sub checkfile($) {
 	} elsif ($basename eq "buildlink3.mk") {
 		$opt_check_bl3 and checkfile_buildlink3_mk($fname);
 
-	} elsif ($basename =~ m"^(?:.*\.mk|Makefile.*)$") {
-		$opt_check_mk and checkfile_mk($fname);
-
 	} elsif ($basename =~ m"^DESCR") {
 		$opt_check_DESCR and checkfile_DESCR($fname);
 
@@ -7991,14 +7997,17 @@ sub checkfile($) {
 	} elsif ($basename =~ m"^MESSAGE") {
 		$opt_check_MESSAGE and checkfile_MESSAGE($fname);
 
-	} elsif ($basename =~ m"^patch-[A-Za-z0-9]*$") {
+	} elsif ($basename =~ m"^patch-[-A-Za-z0-9_\.]*$") {
 		$opt_check_patches and checkfile_patch($fname);
 
 	} elsif ($fname =~ m"(?:^|/)patches/manual-[^/]*$") {
 		$opt_debug_unchecked and log_debug($fname, NO_LINE_NUMBER, "Unchecked file \"${fname}\".");
 
 	} elsif ($fname =~ m"(?:^|/)patches/[^/]*$") {
-		log_warning($fname, NO_LINE_NUMBER, "Patch files should be named \"patch-\", followed by letters and digits only.");
+		log_warning($fname, NO_LINE_NUMBER, "Patch files should be named \"patch-\", followed by letters, '-', '_', '.', and digits only.");
+
+	} elsif ($basename =~ m"^(?:.*\.mk|Makefile.*)$") {
+		$opt_check_mk and checkfile_mk($fname);
 
 	} elsif ($basename =~ m"^PLIST") {
 		$opt_check_PLIST and checkfile_PLIST($fname);
@@ -8326,7 +8335,8 @@ sub checkdir_package() {
 	# Determine the used variables before checking any of the
 	# Makefile fragments.
 	foreach my $fname (@files) {
-		if ($fname =~ m"^((?:.*/)?Makefile\..*|.*\.mk)$"
+		if (($fname =~ m"^((?:.*/)?Makefile\..*|.*\.mk)$")
+		&& (not $fname =~ m"patch-")
 		&& (defined(my $lines = load_lines($fname, true)))) {
 			parselines_mk($lines);
 			determine_used_variables($lines);
@@ -8339,7 +8349,7 @@ sub checkdir_package() {
 		} else {
 			checkfile($fname);
 		}
-		if ($fname =~ m"/patches/patch-[A-Za-z0-9]*$") {
+		if ($fname =~ m"/patches/patch-*$") {
 			$have_patches = true;
 		} elsif ($fname =~ m"/distinfo$") {
 			$have_distinfo = true;

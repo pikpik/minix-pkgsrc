@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.63 2011/01/17 16:51:04 drochner Exp $
+# $NetBSD: Makefile,v 1.67 2011/04/29 07:41:01 obache Exp $
 
-# XXX This is release 0.6.1 but we had date-based pkgnames before.
-PKGNAME=	ffmpeg-20101018.0.6.1
+# XXX This is release 0.6.3 but we had date-based pkgnames before.
+PKGNAME=	ffmpeg-20110426.${DISTVERSION}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ffmpeg.mplayerhq.hu/
@@ -26,6 +26,8 @@ CONF_FILES+=	${PREFIX}/share/examples/ffmpeg/ffserver.conf \
 .if ${OPSYS} == "Darwin"
 CONFIGURE_ARGS+=	--disable-asm
 .endif
+
+TEST_TARGET=	check
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/libavcodec/api-example.c \

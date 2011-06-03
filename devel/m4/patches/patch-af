@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/quotearg.c.orig	Mon Mar  8 21:47:53 2010
+--- lib/quotearg.c.orig	Tue Mar  1 16:39:29 2011
 +++ lib/quotearg.c
-@@ -31,7 +31,6 @@
+@@ -30,7 +30,6 @@
  #include <stdlib.h>
  #include <string.h>
  #include <wchar.h>
@@ -10,7 +10,7 @@ $NetBSD$
  
  #include "gettext.h"
  #define _(msgid) gettext (msgid)
-@@ -538,7 +537,11 @@ quotearg_buffer_restyled (char *buffer, size_t buffers
+@@ -537,7 +536,11 @@ quotearg_buffer_restyled (char *buffer, size_t buffers
                                  }
                            }
  

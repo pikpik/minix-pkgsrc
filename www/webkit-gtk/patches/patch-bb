@@ -1,21 +1,13 @@
 $NetBSD$
 
---- WebCore/page/EventHandler.cpp.orig	2010-09-10 13:20:33.000000000 +0000
-+++ WebCore/page/EventHandler.cpp
-@@ -549,13 +549,13 @@ void EventHandler::updateSelectionForMou
-     if (!targetNode)
-         return;
+--- WebCore/platform/graphics/cairo/GraphicsContextCairo.cpp.orig	2010-09-10 13:20:33.000000000 +0000
++++ WebCore/platform/graphics/cairo/GraphicsContextCairo.cpp
+@@ -184,6 +184,8 @@ static inline void drawPathShadow(Graphi
  
-+    if (!canMouseDragExtendSelect(targetNode))
+     // Create suitably-sized ImageBuffer to hold the shadow.
+     OwnPtr<ImageBuffer> shadowBuffer = ImageBuffer::create(shadowBufferSize);
++    if (!shadowBuffer)
 +	return;
-+
-     RenderObject* targetRenderer = targetNode->renderer();
-     if (!targetRenderer)
-         return;
-         
--    if (!canMouseDragExtendSelect(targetNode))
--        return;
--
-     VisiblePosition targetPosition(targetRenderer->positionForPoint(localPoint));
  
-     // Don't modify the selection if we're not on a node.
+     // Draw shadow into a new ImageBuffer.
+     cairo_t* shadowContext = shadowBuffer->context()->platformContext();

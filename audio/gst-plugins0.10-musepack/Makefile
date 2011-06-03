@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/07/25 14:03:30 obache Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/22 13:45:20 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	musepack

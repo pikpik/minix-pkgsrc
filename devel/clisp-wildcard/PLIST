@@ -1,0 +1,10 @@
+@comment $NetBSD: PLIST,v 1.1.1.1 2010/07/09 21:17:32 asau Exp $
+lib/clisp/dynmod/lib-wildcard.so
+lib/clisp/dynmod/wildcard.lisp
+lib/clisp/wildcard/Makefile
+lib/clisp/wildcard/README
+lib/clisp/wildcard/libgnu_wc.a
+lib/clisp/wildcard/link.sh
+lib/clisp/wildcard/wildcard.fas
+lib/clisp/wildcard/wildcard.lisp
+lib/clisp/wildcard/wildcard.o

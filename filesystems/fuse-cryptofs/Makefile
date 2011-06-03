@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2007/03/15 22:55:21 agc Exp $
+# $NetBSD: Makefile,v 1.3 2009/07/08 16:24:12 joerg Exp $
 #
 
 DISTNAME=	cryptofs-0.6.0
 PKGNAME=	fuse-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	filesystems
 MASTER_SITES=	http://reboot.animeirc.de/cryptofs/
 EXTRACT_SUFX=	.tar.bz2

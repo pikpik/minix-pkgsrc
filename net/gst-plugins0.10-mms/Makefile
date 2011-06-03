@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2011/04/22 13:45:20 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	mms

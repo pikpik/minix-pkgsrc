@@ -1,21 +1,27 @@
-# $NetBSD: Makefile,v 1.28 2008/10/02 18:48:31 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2011/03/14 06:35:52 obache Exp $
 #
 
 DISTNAME=	eGTK_0.3.4
 PKGNAME=	egtk-0.3.4
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	x11
 MASTER_SITES=	http://www.netlabs.net/hp/richieb/downloads/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.netlabs.net/hp/richieb/gtk_eiffel.html
 COMMENT=	Eiffel/GTK+ interface for SmallEiffel
+#LICENSE=	Fiffel Forum Freeware License, version 1
 
 DEPENDS+=	SmartEiffel-[0-9]*:../../lang/SmartEiffel
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 
 WRKSRC=		${WRKDIR}/eGTK
+
+BUILD_DIRS=	C/se
+MAKE_FILE=	Makefile.se
 
 INSTALLATION_DIRS+=	bin lib ${PKGMANDIR}/man1
 INSTALLATION_DIRS+=	share/egtk/se share/examples/egtk
@@ -39,9 +45,6 @@ do-configure:
 		${WRKSRC}/man/egtkbuild.1.in > ${WRKSRC}/man/egtkbuild.1
 	${SED} -e "s,@PREFIX@,${PREFIX},g" \
 		${FILESDIR}/loadpath.se.in > ${WRKDIR}/loadpath.se
-
-do-build:
-	cd ${WRKSRC}/C/se && ${MAKE_PROGRAM} ${MAKE_FLAGS} -f Makefile.se
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/egtkbuild ${DESTDIR}${PREFIX}/bin

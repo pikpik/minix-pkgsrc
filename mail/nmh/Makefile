@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.69 2008/08/19 19:22:46 epg Exp $
+# $NetBSD: Makefile,v 1.70 2008/08/21 20:35:36 epg Exp $
 
 DISTNAME=		nmh-1.3
 CATEGORIES=		mail
 MASTER_SITES=		http://savannah.nongnu.org/download/nmh/
 
-MAINTAINER=		epg@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.nongnu.org/nmh/
 COMMENT=		Cleaned up MH mailer suite
 

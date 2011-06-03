@@ -1,0 +1,12 @@
+# $NetBSD$
+
+RUBYGEM="@PREFIX@/bin/@RUBYGEM_NAME@"
+
+case ${STAGE} in
+POST-INSTALL)
+	if [ -f ${RUBYGEM} ]; then
+		${MV} ${RUBYGEM} ${RUBYGEM}.orig
+	fi
+	${CP} -p ${RUBYGEM}.new ${RUBYGEM}
+	;;
+esac

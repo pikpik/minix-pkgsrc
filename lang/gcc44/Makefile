@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/05/06 10:21:17 adam Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/14 19:38:13 hans Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc44-${GCC_VERSION}
@@ -15,12 +15,12 @@ LICENSE=		gnu-gpl-v2 AND gnu-gpl-v3 AND gnu-lgpl-v2 AND gnu-lgpl-v3
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		awk:run bash:run perl chmod \
-			gmake:run makeinfo msgfmt bison flex gm4 \
+			gmake:run makeinfo bison flex gm4 \
 			sed:run unzip
 
 DEPENDS+=		zip-[0-9]*:../../archivers/zip
 
-GCC_VERSION=		4.4.3
+GCC_VERSION=		4.4.5
 
 GCC_SUBPREFIX=		gcc44
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
@@ -33,6 +33,7 @@ CONFIG_SHELL=		${TOOLS_PATH.bash}
 
 NOT_FOR_PLATFORM=	Interix-*-*
 UNLIMIT_RESOURCES+=	datasize
+UNLIMIT_RESOURCES+=	stacksize
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
@@ -49,6 +50,15 @@ CONFIGURE_ARGS+=	--with-as=${LOCALBASE}/bin/${BINUTILS_PREFIX}as
 CONFIGURE_ARGS+=	--with-ld=${LOCALBASE}/bin/${BINUTILS_PREFIX}ld
 CONFIGURE_ARGS+=	--host=i386-pc-minix --target=i386-pc-minix --build=i386-pc-minix 
 CONFIGURE_ARGS+=	--disable-visibility 
+.endif
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ARGS+=	--without-gnu-ld --with-ld=/usr/bin/ld
+. if !exists(/usr/bin/gas)
+CONFIGURE_ARGS+=	--without-gnu-as --with-as=/usr/bin/as
+. else
+CONFIGURE_ARGS+=	--with-gnu-as --with-as=/usr/bin/gas
+.endif
 .endif
 
 # REPLACE_AWK+=	gcc/testsuite/gcc.test-framework/test-framework.awk	\
@@ -180,9 +190,9 @@ do-build:
 	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} -j${MAKE_JOBS:U1:Q})
 
 do-test:
-.if (${MACHINE_GNU_ARCH} == "x86_64")
-	(cd ${FILESDIR} && ${CP} netbsd64macro.dfs ${WRKSRC}/gcc/testsuite/ada/acats/support/macro.dfs)
-.endif
+#.if (${MACHINE_GNU_ARCH} == "x86_64")
+#	(cd ${FILESDIR} && ${CP} netbsd64macro.dfs ${WRKSRC}/gcc/testsuite/ada/acats/support/macro.dfs)
+#.endif
 	(cd ${WRKDIR}/obj && ${GMAKE} -k check)
 
 do-install:

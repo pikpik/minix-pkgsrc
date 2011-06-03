@@ -1,12 +1,39 @@
 $NetBSD$
 
---- src/output/ao_plugin.c.orig	2010-05-19 14:49:45.000000000 +0000
-+++ src/output/ao_plugin.c
-@@ -175,6 +175,7 @@ ao_output_open(void *data, struct audio_
- 	if (audio_format->bits > 16)
- 		audio_format->bits = 16;
+--- src/input/file_input_plugin.c.orig	2011-03-19 00:41:53.000000000 +0000
++++ src/input/file_input_plugin.c
+@@ -52,7 +52,7 @@ input_file_open(const char *filename, GE
+ 	struct file_input_stream *fis;
  
-+	memset(&format, 0, sizeof(format));
- 	format.bits = audio_format->bits;
- 	format.rate = audio_format->sample_rate;
- 	format.byte_format = AO_FMT_NATIVE;
+ 	if (!g_path_is_absolute(filename))
+-		return false;
++		return NULL;
+ 
+ 	fd = open_cloexec(filename, O_RDONLY|O_BINARY, 0);
+ 	if (fd < 0) {
+@@ -60,7 +60,7 @@ input_file_open(const char *filename, GE
+ 			g_set_error(error_r, file_quark(), errno,
+ 				    "Failed to open \"%s\": %s",
+ 				    filename, g_strerror(errno));
+-		return false;
++		return NULL;
+ 	}
+ 
+ 	ret = fstat(fd, &st);
+@@ -69,14 +69,14 @@ input_file_open(const char *filename, GE
+ 			    "Failed to stat \"%s\": %s",
+ 			    filename, g_strerror(errno));
+ 		close(fd);
+-		return false;
++		return NULL;
+ 	}
+ 
+ 	if (!S_ISREG(st.st_mode)) {
+ 		g_set_error(error_r, file_quark(), 0,
+ 			    "Not a regular file: %s", filename);
+ 		close(fd);
+-		return false;
++		return NULL;
+ 	}
+ 
+ #ifdef POSIX_FADV_SEQUENTIAL

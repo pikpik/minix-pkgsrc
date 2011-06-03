@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2009/08/30 10:40:59 wiz Exp $
+# $NetBSD: Makefile,v 1.100 2011/05/16 22:04:47 cheusov Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -12,6 +12,7 @@ SUBDIR+=	compat_headers
 SUBDIR+=	createbuildlink
 SUBDIR+=	dfdisk
 SUBDIR+=	digest
+SUBDIR+=	distbb
 SUBDIR+=	genrpm
 SUBDIR+=	gensolpkg
 SUBDIR+=	gnome-packagekit
@@ -19,6 +20,7 @@ SUBDIR+=	libkver
 SUBDIR+=	libnbcompat
 SUBDIR+=	lintpkgsrc
 SUBDIR+=	mtree
+SUBDIR+=	nih
 SUBDIR+=	osabi
 SUBDIR+=	p5-pkgsrc-Dewey
 SUBDIR+=	packagekit
@@ -33,9 +35,12 @@ SUBDIR+=	pkg_install
 SUBDIR+=	pkg_install-info
 SUBDIR+=	pkg_leaves
 SUBDIR+=	pkg_notify
+SUBDIR+=	pkg_online-client
+SUBDIR+=	pkg_online-server
 SUBDIR+=	pkg_regress
 SUBDIR+=	pkg_rolling-replace
 SUBDIR+=	pkg_select
+SUBDIR+=	pkg_summary-utils
 SUBDIR+=	pkg_tarup
 SUBDIR+=	pkgclean
 SUBDIR+=	pkgdep

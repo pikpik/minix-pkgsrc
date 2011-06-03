@@ -1,0 +1,15 @@
+$NetBSD$
+
+- Fix LP64 issues by including proper standard headers.
+
+--- buildob.c.orig	1997-07-27 20:49:42.000000000 +0000
++++ buildob.c
+@@ -14,6 +14,8 @@
+ 
+ 
+ #include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ 
+ 
+ #include "connect4.h"

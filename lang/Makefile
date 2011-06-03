@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.296 2010/12/18 12:47:31 wiz Exp $
+# $NetBSD: Makefile,v 1.301 2011/05/15 00:10:23 wiz Exp $
 #
 
 COMMENT=	Programming languages
@@ -56,13 +56,17 @@ SUBDIR+=	gcc3-objc
 SUBDIR+=	gcc34
 SUBDIR+=	gcc34-ada
 SUBDIR+=	gcc44
+SUBDIR+=	gcc45
+SUBDIR+=	gcc46
 SUBDIR+=	gforth
 SUBDIR+=	ghc
+SUBDIR+=	gnat-aux
 SUBDIR+=	gpc
 SUBDIR+=	gprolog
 SUBDIR+=	guile
 SUBDIR+=	guile16
 SUBDIR+=	gwydion-dylan
+SUBDIR+=	heirloom-awk
 SUBDIR+=	hugs
 SUBDIR+=	icon
 SUBDIR+=	inform
@@ -137,6 +141,7 @@ SUBDIR+=	py26-html-docs
 SUBDIR+=	python24
 SUBDIR+=	python25
 SUBDIR+=	python26
+SUBDIR+=	python27
 SUBDIR+=	racket
 SUBDIR+=	racket-textual
 SUBDIR+=	rcfunge

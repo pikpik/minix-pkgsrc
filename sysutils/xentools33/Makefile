@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2010/10/30 20:06:52 tnn Exp $
+# $NetBSD: Makefile,v 1.25 2011/05/12 15:39:05 bouyer Exp $
 #
 
 VERSION=		3.3.2
 DISTNAME=		xen-${VERSION}
 PKGNAME=		xentools33-${VERSION}
-PKGREVISION=		5
+PKGREVISION=		8
 CATEGORIES=		sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
 EXTRACT_SUFX=		.tar.gz
@@ -113,6 +113,8 @@ SUBST_FILES.prefix+=	python/xen/xend/osdep.py
 SUBST_FILES.prefix+=	misc/xen-python-path
 SUBST_FILES.prefix+=	ioemu/vl.c
 SUBST_SED.prefix=	-e "s,@PREFIX@,${PREFIX},g"
+
+REPLACE_PYTHON+=	misc/xsview
 
 .include "../../mk/bsd.prefs.mk"
 

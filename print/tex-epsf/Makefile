@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/10/28 17:36:55 minskim Exp $
 
 DISTNAME=	epsf
-PKGNAME=	tex-${DISTNAME}-2.7.3
-TEXLIVE_REV=	17190
+PKGNAME=	tex-${DISTNAME}-2.7.4
+TEXLIVE_REV=	21461
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Simple macros for EPS inclusion

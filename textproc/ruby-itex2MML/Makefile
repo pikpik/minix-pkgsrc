@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/09/07 17:20:27 taca Exp $
+# $NetBSD: Makefile,v 1.7 2011/02/21 16:01:20 taca Exp $
 
 DISTNAME=	itexToMML
 PKGNAME=	${RUBY_PKGPREFIX}-itex2MML-${ITEX2MML_VERSION}
@@ -15,8 +15,7 @@ BUILD_DEPENDS+=	swig>=1.3:../../devel/swig
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-ITEX2MML_VERSION=	1.3.25
-RUBY_VERSION_SUPPORTED= 18
+ITEX2MML_VERSION=	1.4.5
 
 USE_TOOLS+=		bison flex gmake
 WRKSRC=			${WRKDIR}/${DISTNAME}/itex-src

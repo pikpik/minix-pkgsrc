@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/23 15:24:28 obache Exp $
+# $NetBSD: Makefile,v 1.4 2011/04/04 09:28:03 obache Exp $
 
-DISTNAME=	pkg-config-1.0.7
+DISTNAME=	pkg-config-1.1.1
 CATEGORIES=	devel
-MASTER_SITES=	http://rubyforge.org/frs/download.php/72681/
+MASTER_SITES=	http://rubyforge.org/frs/download.php/74790/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obache@NetBSD.org

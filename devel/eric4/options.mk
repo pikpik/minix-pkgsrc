@@ -1,7 +1,7 @@
-# $NetBSD: options.mk,v 1.1.1.1 2010/05/08 15:44:36 drochner Exp $
+# $NetBSD: options.mk,v 1.2 2010/08/15 10:51:27 drochner Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.eric4
-PKG_SUPPORTED_OPTIONS=	sqlite mysql pgsql enchant pylint cxfreeze rope
+PKG_SUPPORTED_OPTIONS=	sqlite mysql pgsql enchant cxfreeze rope
 PKG_SUGGESTED_OPTIONS=	sqlite
 
 
@@ -26,9 +26,9 @@ DEPENDS+=		${PYPKGPREFIX}-enchant>=1.4.2:../../textproc/py-enchant
 .endif
 
 #Enable source code analyzer for python
-.if !empty(PKG_OPTIONS:Mpylint)
-.include "../../wip/pylint/buildlink3.mk"
-.endif
+#.if !empty(PKG_OPTIONS:Mpylint)
+#.include "../../wip/pylint/buildlink3.mk"
+#.endif
 
 #Enable support for freezing Python scripts
 .if !empty(PKG_OPTIONS:Mcxfreeze)

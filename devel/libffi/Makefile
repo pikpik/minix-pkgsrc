@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2010/01/16 16:28:58 asau Exp $
+# $NetBSD: Makefile,v 1.14 2010/02/14 22:20:55 tnn Exp $
 #
 
 DISTNAME=	libffi-3.0.9
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sourceware.org/pub/libffi/
 
@@ -34,6 +35,11 @@ pre-build:
 .if !empty(PKGSRC_RUN_TEST:M[Yy][Ee][Ss])
 TEST_TARGET=	check
 BUILD_DEPENDS+=	dejagnu-[0-9]*:../../devel/dejagnu
+.endif
+
+# patch-aj uses m68k_sync_icache(2)
+.if !empty(MACHINE_PLATFORM:MNetBSD-*-m68k)
+LIBS+=	-lm68k
 .endif
 
 .include "../../mk/bsd.pkg.mk"

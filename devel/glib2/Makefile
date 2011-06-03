@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.176 2010/08/20 16:33:10 tez Exp $
+# $NetBSD: Makefile,v 1.183 2011/04/22 13:42:05 obache Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=		1
 CATEGORIES=		devel
 
 COMMENT=		Some useful routines for C programming (glib2)
@@ -23,8 +22,18 @@ PKGCONFIG_OVERRIDE+=	gthread-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	gio-2.0.pc.in
 PKGCONFIG_OVERRIDE+=	gio-unix-2.0.pc.in
 
+FILES_SUBST+=		GIO_MODULES_DIR=${PREFIX}/lib/gio/modules
+FILES_SUBST+=		GIO_QUERYMODULES=${PREFIX}/bin/gio-querymodules
+FILES_SUBST+=		GLIB_COMPILE_SCHEMAS=${PREFIX}/bin/glib-compile-schemas
+FILES_SUBST+=		GLIB_SCHEMAS_DIR=${PREFIX}/share/glib-2.0/schemas
+
+# gtester is the glib unit testing and reporting framework
+# agc doesn't want glib2 to depend on python so we install it
+# in a broken and useless state.
+CHECK_INTERPRETER_SKIP+=	bin/gtester-report
+
 # need pcre utf8 + unicode-properties
-BUILDLINK_API_DEPENDS.pcre+=	pcre>=7.4nb1
+BUILDLINK_API_DEPENDS.pcre+=	pcre>=8.11
 
 LIBS.SunOS+=	-lnsl -lsocket
 

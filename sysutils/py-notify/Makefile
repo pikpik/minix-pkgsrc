@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2010/11/15 22:58:37 abs Exp $
+# $NetBSD: Makefile,v 1.17 2011/02/25 09:47:28 wiz Exp $
 #
 
 DISTNAME=	notify-python-0.1.1
 PKGNAME=	${PYPKGPREFIX}-notify-0.1.1
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	sysutils
 MASTER_SITES= \
  http://www.galago-project.org/files/releases/source/notify-python/
@@ -20,7 +20,7 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake pkg-config
 
 PKGCONFIG_OVERRIDE+=	notify-python.pc.in
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 PY_PATCHPLIST=	yes
 
 # Missing function attach_status_icon

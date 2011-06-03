@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/08/06 01:44:53 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/22 13:43:58 obache Exp $
 
 .include		"../../inputmethod/uim/Makefile.common"
 PKGNAME=		${EMACS_PKGNAME_PREFIX}uim-elisp-${UIM_VERSION}

@@ -1,0 +1,3 @@
+@comment $NetBSD$
+sbin/ether2dns
+share/doc/ether2dns/README

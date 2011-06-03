@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2008/07/14 12:55:57 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2011/02/10 21:49:48 zafer Exp $
 #
 
 DISTNAME=		libofa-0.9.3
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		audio
-MASTER_SITES=		http://www.musicip.com/dns/files/
+MASTER_SITES=		http://distfiles.aydogan.net/audio/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.musicip.com/dns/index.jsp

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2011/01/18 09:14:13 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2011/04/16 16:14:27 roy Exp $
 
 PKGNAME=	kdebindings4-python-${_KDE_VERSION}
 DISTNAME=	kdebindings-${_KDE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	misc
 COMMENT=	Python bindings for the KDE integrated X11 desktop
 
@@ -19,14 +20,21 @@ CMAKE_ARGS+=	-DENABLE_KROSSRUBY=off
 CMAKE_ARGS+=	-DENABLE_KROSSJAVA=off -DENABLE_KROSSFALCON=off
 CMAKE_ARGS+=	-DPYTHON_EXECUTABLE:FILEPATH=${PYTHONBIN}
 
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 PY_PATCHPLIST=			yes
 PLIST_SUBST+=			PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 
 REPLACE_PYTHON+= \
-	python/pykde4/examples/polkitqtExamples/pkexample.py \
-	python/pykde4/examples/polkitqtExamples/pkexamplehelper.py \
-	python/pykde4/examples/solid_demo.py
+	python/pykde4/tools/pykdeuic4/*.py \
+	python/pykde4/examples/*.py \
+	python/pykde4/examples/*/*.py \
+	python/pykde4/docs/html/tutorials/started/*.py
+
+# We need to replace the embedded interpreter
+SUBST_CLASSES+=	pykdeuic4
+SUBST_STAGE.pykdeuic4=	post-build
+SUBST_FILES.pykdeuic4=	python/pykde4/tools/pykdeuic4/pykdeuic4.py
+SUBST_SED.pykdeuic4=	's:/usr/bin/env python$$:${PYTHONBIN}:'
 
 post-extract:
 	${CP} ${FILESDIR}/FindPolkitQt.cmake ${WRKSRC}/cmake/modules

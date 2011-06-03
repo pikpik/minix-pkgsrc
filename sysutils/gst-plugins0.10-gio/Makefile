@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/06/20 01:09:36 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2011/04/22 13:44:43 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	gio

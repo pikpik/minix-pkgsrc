@@ -1,11 +1,11 @@
-# $NetBSD: Makefile.common,v 1.7 2010/06/25 21:56:46 joerg Exp $
+# $NetBSD: Makefile.common,v 1.9 2011/04/08 14:09:23 taca Exp $
 #
 # used by net/isc-dhcp4/Makefile
 # used by net/isc-dhcpd4/Makefile
 # used by net/isc-dhclient4/Makefile
 # used by net/isc-dhcrelay4/Makefile
 
-DISTNAME=		dhcp-4.1.1-P1
+DISTNAME=		dhcp-4.2.1-P1
 DHVER=			${DISTNAME:S/dhcp-//:S/-P/p/}
 CATEGORIES=		net
 MASTER_SITES=		http://ftp.isc.org/isc/dhcp/
@@ -23,6 +23,7 @@ DHCP_HOME?=		${VARBASE}/db/isc-dhcp
 DHCP_PID?=		${VARBASE}/run/isc-dhcp
 PKG_SYSCONFSUBDIR=	dhcp
 
+USE_TOOLS+=		gmake
 USE_LANGUAGES+=		c c++
 
 PATCHDIR=		${.CURDIR}/../isc-dhcp4/patches
@@ -45,6 +46,7 @@ SUBST_SED.config=       -e "s|@@PREFIX@@|${PREFIX}|g"
 SUBST_SED.config+=      -e "s|@@PKG_SYSCONFDIR@@|${PKG_SYSCONFDIR}|g"
 SUBST_MESSAGE.config=   Fixing configuration files.
 
+BUILD_DIRS=	${BUILD_SUBDIR}
 INSTALL_DIRS=	${SUBDIR}
 
 .include "../../security/openssl/buildlink3.mk"

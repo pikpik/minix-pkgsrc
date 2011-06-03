@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/08/20 07:31:38 taca Exp $
+# $NetBSD: Makefile,v 1.4 2008/04/25 20:39:11 joerg Exp $
 #
 
 VER=		2.6
@@ -26,7 +26,7 @@ SUBST_STAGE.cf= post-configure
 SUBST_VARS.cf=	VARBASE PREFIX VARBASE PKG_SYSCONFDIR PYTHONBIN
 SUBST_FILES.cf=	setup.py denyhosts.cfg-dist daemon-control-dist
 
-REPLACE_PYTHON=	plugins/test_deny.py
+REPLACE_PYTHON=	daemon-control-dist plugins/test_deny.py setup.py
 REPLACE_PYTHON+= scripts/restricted_from_invalid.py
 REPLACE_PYTHON+= scripts/restricted_from_passwd.py
 

@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.46 2010/12/23 11:44:51 dsainty Exp $
+# $NetBSD: Makefile,v 1.50 2011/02/10 16:41:56 wiz Exp $
 
 DISTNAME=	mjpegtools-1.9.0
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mjpeg/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mjpeg.sourceforge.net/
 COMMENT=	Programs for compressing video streams
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -44,12 +45,6 @@ BUILDLINK_TRANSFORM+=	rm:-laudio
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-#
-# GTK+ support is disabled to avoid a dependency on GTK+ when building GNOME2.
-# This only disables the "glav" program.  If you really need it, please add an
-# external package for it.
-#
-#.include "../../x11/gtk/buildlink3.mk"
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

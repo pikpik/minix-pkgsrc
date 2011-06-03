@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/12/02 13:36:57 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2011/02/25 09:47:26 wiz Exp $
 #
 
 DISTNAME=	pitivi-0.13.4
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pitivi/0.13/}
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pitivi/}
@@ -18,7 +18,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ENV+=	ac_cv_path_PYTHON=${PYTHONBIN}
 PYTHON_PATCH_SCRIPTS=	bin/pitivi.in
-PYTHON_VERSIONS_ACCEPTED= 26 25
+PYTHON_VERSIONS_ACCEPTED= 27 26 25
 
 .include "../../multimedia/gstreamer0.10/buildlink3.mk"
 .include "../../lang/python/application.mk"

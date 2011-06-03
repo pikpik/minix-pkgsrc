@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2010/06/02 18:31:41 gls Exp $
+# $NetBSD: Makefile,v 1.9 2010/12/06 22:22:08 gls Exp $
 #
 
 DISTNAME=		paramiko-1.7.6
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
-PKG_REVISION=	2
+PKGREVISION=		2
 CATEGORIES=		security
 MASTER_SITES=	http://pypi.python.org/packages/source/p/paramiko/
 EXTRACT_SUFX=	.zip

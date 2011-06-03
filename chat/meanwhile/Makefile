@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2007/09/02 11:16:53 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/07/14 12:55:59 joerg Exp $
 #
 
 DISTNAME=	meanwhile-1.0.2
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=meanwhile/}
 

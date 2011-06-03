@@ -1,31 +1,22 @@
 $NetBSD$
 
---- WebCore/svg/animation/SMILTimeContainer.cpp.orig	2010-09-10 13:20:33.000000000 +0000
-+++ WebCore/svg/animation/SMILTimeContainer.cpp
-@@ -254,7 +254,7 @@ void SMILTimeContainer::updateAnimations
-     sortByPriority(toAnimate, elapsed);
-     
-     // Calculate animation contributions.
--    typedef HashMap<ElementAttributePair, SVGSMILElement*> ResultElementMap;
-+    typedef HashMap<ElementAttributePair, RefPtr<SVGSMILElement> > ResultElementMap;
-     ResultElementMap resultsElements;
-     for (unsigned n = 0; n < toAnimate.size(); ++n) {
-         SVGSMILElement* animation = toAnimate[n];
-@@ -273,7 +273,7 @@ void SMILTimeContainer::updateAnimations
-         
-         // Results are accumulated to the first animation that animates a particular element/attribute pair.
-         ElementAttributePair key(targetElement, attributeName); 
--        SVGSMILElement* resultElement = resultsElements.get(key);
-+        SVGSMILElement* resultElement = resultsElements.get(key).get();
-         if (!resultElement) {
-             resultElement = animation;
-             resultElement->resetToBaseValue(baseValueFor(key));
-@@ -296,7 +296,7 @@ void SMILTimeContainer::updateAnimations
-     Vector<SVGSMILElement*> animationsToApply;
-     ResultElementMap::iterator end = resultsElements.end();
-     for (ResultElementMap::iterator it = resultsElements.begin(); it != end; ++it)
--        animationsToApply.append(it->second);
-+        animationsToApply.append(it->second.get());
+--- WebCore/platform/image-decoders/gif/GIFImageDecoder.cpp.orig	2011-02-07 17:29:58.000000000 +0000
++++ WebCore/platform/image-decoders/gif/GIFImageDecoder.cpp
+@@ -343,7 +343,7 @@ bool GIFImageDecoder::initFrameBuffer(un
  
-     // Sort <animateTranform> to be the last one to be applied. <animate> may change transform attribute as
-     // well (directly or indirectly by modifying <use> x/y) and this way transforms combine properly.
+         if ((prevMethod == RGBA32Buffer::DisposeNotSpecified) || (prevMethod == RGBA32Buffer::DisposeKeep)) {
+             // Preserve the last frame as the starting state for this frame.
+-            if (!buffer->copyBitmapData(*prevBuffer));
++            if (!buffer->copyBitmapData(*prevBuffer))
+                 return setFailed();
+         } else {
+             // We want to clear the previous frame to transparent, without
+@@ -357,7 +357,7 @@ bool GIFImageDecoder::initFrameBuffer(un
+                     return setFailed();
+             } else {
+               // Copy the whole previous buffer, then clear just its frame.
+-              if (!buffer->copyBitmapData(*prevBuffer));
++              if (!buffer->copyBitmapData(*prevBuffer))
+                   return setFailed();
+               for (int y = prevRect.y(); y < prevRect.bottom(); ++y) {
+                   for (int x = prevRect.x(); x < prevRect.right(); ++x)

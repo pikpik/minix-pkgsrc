@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2011/01/01 13:39:14 obache Exp $
+# $NetBSD: Makefile,v 1.32 2011/03/20 13:19:44 adam Exp $
 
-DISTNAME=	mkvtoolnix-4.3.0
-PKGREVISION=	3
+DISTNAME=	mkvtoolnix-4.6.0
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2
@@ -13,37 +13,15 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake msgfmt
+USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
-USE_LANGUAGES=	c c++
-
+USE_TOOLS+=		gmake msgfmt
+GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-boost-libdir=${BUILDLINK_PREFIX.boost-libs}
 CONFIGURE_ARGS+=	--with-boost_regex=boost_regex
 CONFIGURE_ARGS+=	--with-boost-filesystem=boost_filesystem
 
-PKG_OPTIONS_VAR=	PKG_OPTIONS.mkvtoolnix
-PKG_SUPPORTED_OPTIONS=	mkvtoolnix-gui
-PKG_SUGGESTED_OPTIONS=
-
-.include "../../mk/bsd.options.mk"
-
-PLIST_VARS+=	gui
-
-.if !empty(PKG_OPTIONS:Mmkvtoolnix-gui)
-PLIST.gui=	yes
-CONFIGURE_ARGS+=	--enable-gui
-CONFIGURE_ARGS+=	--enable-wxwidgets
-.   include "../../x11/wxGTK28/buildlink3.mk"
-.include "../../sysutils/desktop-file-utils/desktopdb.mk"
-.include "../../databases/shared-mime-info/mimedb.mk"
-.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
-.else
-CONFIGURE_ARGS+=	--disable-gui
-CONFIGURE_ARGS+=	--disable-wxwidgets
-.endif
-
-INSTALL_ENV+=	SHELL=${SH}
+INSTALL_ENV+=	SHELL=${SH:Q}
 
 do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ruby drake
@@ -51,11 +29,17 @@ do-build:
 do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${INSTALL_ENV} ruby drake install
 
+.include "options.mk"
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} != "Darwin"
 BUILDLINK_DEPMETHOD.${RUBY_BASE}=	build
 .include "../../lang/ruby/buildlink3.mk"
+.endif
 
 .include "../../archivers/bzip2/buildlink3.mk"
-.include "../../archivers/liblzo/buildlink3.mk"
+.include "../../archivers/lzo/buildlink3.mk"
 .include "../../audio/flac/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
@@ -68,5 +52,4 @@ BUILDLINK_DEPMETHOD.${RUBY_BASE}=	build
 .include "../../multimedia/libogg/buildlink3.mk"
 .include "../../sysutils/file/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

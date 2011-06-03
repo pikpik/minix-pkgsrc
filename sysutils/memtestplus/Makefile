@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2009/12/27 18:08:12 jakllsch Exp $
+# $NetBSD: Makefile,v 1.13 2010/07/08 18:54:22 jakllsch Exp $
 #
 
 # Note -- version number also in the do-install rule
@@ -10,7 +10,7 @@ PKGNAME=		memtestplus-${MAJVER}.${MINVER}
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.memtest.org/download/${MAJVER}.${MINVER}/
 
-MAINTAINER=		smb@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.memtest.org/
 COMMENT=		Thorough, stand alone memory test for x86 arch
 LICENSE=		gnu-gpl-v2

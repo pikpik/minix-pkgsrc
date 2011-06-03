@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2010/12/23 11:44:24 dsainty Exp $
+# $NetBSD: Makefile,v 1.16 2011/04/07 09:23:10 wiz Exp $
 #
 
 DISTNAME=		Csound${CSOUND_VERSION}_src
 PKGNAME=		csound5-${CSOUND_VERSION}
-PKGREVISION=		8
+PKGREVISION=		9
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=csound/}
 WRKSRC=			${WRKDIR}/Csound${CSOUND_VERSION}
@@ -17,13 +17,15 @@ USE_LANGUAGES=		c c++
 CFLAGS+=		-g -D__PKGSRC_PREFIX__=${PREFIX}/ -DBETA
 BUILD_DEPENDS+=		scons>=0.96:../../devel/scons
 # Severe LP64 problems
-NOT_FOR_PLATFORM=	${LP64PLATFORMS}
+#NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 SCONS=			${PREFIX}/bin/scons
 SCONS_ARGS=		-C ${WRKSRC} prefix=${PREFIX}
 SCONS_ARGS+=		buildDSSI=0 buildLoris=0 buildRelease=1
 SCONS_ARGS+=		useALSA=0 useJack=0 useOSC=0 usePortMIDI=0
 SCONS_ARGS+=		usePortAudio=0
 SCONS_ENV_FILE=		${WRKDIR}/ugly-pkgsrc-scons-hack.txt
+
+INSTALLATION_DIRS=	bin
 
 do-build:
 	${ECHO} ${MAKE_ENV:Q} >${SCONS_ENV_FILE}
@@ -32,7 +34,7 @@ do-build:
 do-install:
 	cd ${WRKSRC} && SCONS_ENV="`${CAT} ${SCONS_ENV_FILE}`" && \
 		eval "${SETENV} $${SCONS_ENV} ${SCONS} ${SCONS_ARGS} install"
-	cd ${PREFIX} && ${LN} -s ../lib/csound5/csound bin/csound5
+	cd ${DESTDIR}${PREFIX} && ${LN} -s ../lib/csound5/csound bin/csound5
 
 .include "../../audio/fluidsynth/buildlink3.mk"
 .include "../../audio/libsndfile/buildlink3.mk"

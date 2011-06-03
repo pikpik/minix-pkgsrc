@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.8 2010/11/15 22:58:15 abs Exp $
+# $NetBSD: Makefile,v 1.10 2011/04/15 15:00:27 reed Exp $
 #
 
 DISTNAME=	gssdp-0.7.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	http://www.gupnp.org/sources/gssdp/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gupnp.org/
-COMMENT=	SSDP library
+COMMENT=	Simple Service Discovery Protocol library and device sniffer
 LICENSE=	gnu-lgpl-v2
 
 GNU_CONFIGURE=	yes

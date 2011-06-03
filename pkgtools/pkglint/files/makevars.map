@@ -1,4 +1,4 @@
-# $NetBSD: makevars.map,v 1.206 2011/01/17 09:13:59 wiz Exp $
+# $NetBSD: makevars.map,v 1.210 2011/05/12 12:31:05 adam Exp $
 #
 
 # This file contains the guessed type of some variables, according to
@@ -62,7 +62,7 @@ PKG_DEVELOPER			Yes [$user]
 USE_ABI_DEPENDS			YesNo [$user]
 PKG_REGISTER_SHELLS		{ YES NO } [$user]
 PKGSRC_COMPILER			List of { \
-					ccache ccc distcc f2c gcc hp icc \
+					ccache ccc clang distcc f2c gcc hp icc \
 					ido gcc mipspro mipspro-ucode pcc \
 					sunpro xlc \
 				} [$user]
@@ -435,7 +435,7 @@ MAKE_FILE		Pathname [$package]
 MAKE_FLAGS		List of ShellWord [$package_list]
 MAKE_JOBS		Integer [$user]
 MAKE_JOBS_SAFE		YesNo [$package]
-MAKE_PROGRAM		ShellCommand [$system]
+MAKE_PROGRAM		ShellCommand [$package]
 MANCOMPRESSED		YesNo [m:s,c:ds]
 MANCOMPRESSED_IF_MANZ	Yes [m:s,c:ds]
 MANGRP			UserGroupName [$system]
@@ -526,6 +526,7 @@ PGPKGSRCDIR		Pathname [$system]
 PHASE_MSG		ShellCommand [$system]
 PKGBASE			Identifier [$system]
 PKGCONFIG_OVERRIDE	List of Pathmask [m:as,c:a]
+PKGCONFIG_OVERRIDE_STAGE	Stage [$package]
 PKGDIR			RelativePkgDir [$package]
 PKGDIRMODE		FileMode [$system]
 PKGLOCALEDIR		Pathname [$system]
@@ -540,7 +541,7 @@ PKGVERSION		Version [$system]
 PKGWILDCARD		Filemask [$system]
 PKG_ADMIN		ShellCommand [$system]
 PKG_APACHE		{ apache13 apache2 apache22 } [$system]
-PKG_APACHE_ACCEPTED	List of { apache13 apache2 apache22 }
+PKG_APACHE_ACCEPTED	List of { apache13 apache2 apache22 } [$package]
 PKG_APACHE_DEFAULT	{ apache13 apache2 apache22 } [$user]
 PKG_CONFIG		Yes [$user]
 # ^^ No, this is not the popular command from GNOME, but the setting

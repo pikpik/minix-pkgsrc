@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.38 2010/11/23 06:22:28 obache Exp $
+# $NetBSD: Makefile,v 1.39 2011/01/13 13:38:01 wiz Exp $
 
 DISTNAME=	fly-1.6.5
 PKGREVISION=	13
 CATEGORIES=	graphics www
-MASTER_SITES=	ftp://www.unimelb.edu.au/pub/www/tools/unix/fly/
+MASTER_SITES=	# ftp://www.unimelb.edu.au/pub/www/tools/unix/fly/
 
 MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://www.unimelb.edu.au/fly/fly.html

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/08/09 01:43:14 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/08/31 00:59:23 obache Exp $
 #
 
 DISTNAME=	tegaki-wagomu-0.3.1
+PKGREVISION=	1
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://www.tegaki.org/releases/${PKGVERSION_NOREV}/ \
 		http://www.tegaki.org/releases/0.3/

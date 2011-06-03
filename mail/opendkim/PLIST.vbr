@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.vbr,v 1.1.1.1 2010/10/19 23:11:42 pettai Exp $
 include/vbr/vbr.h
 lib/libvbr.la
 lib/pkgconfig/vbr.pc
+man/man3/vbr.3

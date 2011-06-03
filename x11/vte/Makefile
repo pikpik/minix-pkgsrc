@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.81 2010/11/17 01:14:52 obache Exp $
+# $NetBSD: Makefile,v 1.83 2011/03/03 12:05:22 obache Exp $
 #
 
-DISTNAME=	vte-0.26.2
-PKGREVISION=	1
+.include "Makefile.common"
+
+PKGREVISION=	2
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/vte/0.26/}
-EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
@@ -22,8 +21,6 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--with-ft-exec-prefix=${BUILDLINK_PREFIX.freetype2}
 CONFIGURE_ARGS+=	--enable-Bsymbolic=auto
-
-PKGCONFIG_OVERRIDE+=	vte.pc.in
 
 BUILDLINK_API_DEPENDS.glib2+=		glib2>=2.10.0
 .include "../../devel/glib2/buildlink3.mk"

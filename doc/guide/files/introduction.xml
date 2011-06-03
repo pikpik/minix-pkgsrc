@@ -1,4 +1,4 @@
-<!-- $NetBSD: introduction.xml,v 1.22 2007/04/21 02:59:53 kano Exp $ -->
+<!-- $NetBSD: introduction.xml,v 1.23 2010/09/30 12:21:51 obache Exp $ -->
 
 <chapter id="introduction">
   <title>What is pkgsrc?</title>
@@ -68,7 +68,7 @@ pkgsrc provides the following key features:
   are preserved.</para></listitem>
 <listitem><para>Like NetBSD, pkgsrc is designed with portability in mind and
   consists of highly portable code. This allows the greatest speed of
-  development when porting to new a platform. This portability also
+  development when porting to a new platform. This portability also
   ensures that pkgsrc is <emphasis>consistent across all
   platforms</emphasis>.</para></listitem>
 <listitem><para>The installation prefix, acceptable software licenses,

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2010/06/05 15:19:37 taca Exp $
+# $NetBSD: Makefile,v 1.28 2010/06/07 11:30:07 taca Exp $
 #
 
 DISTNAME=	typolight${TL_VER}-translations-${VERS}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	# defined for each distfiles
 DISTFILES=	${TL_DISTFILES}

@@ -3,7 +3,9 @@ abook			Enable abook support.
 acl			Enable POSIX ACL support.
 ads			Enable Windows's Active Directory support.
 agg			Enable agg support.
-amule-alc		Build aMule LinkCreator GUI version. .
+alsa			Enable ALSA support.
+amtterm-gamt		Build amtterm GUI version (gamt).
+amule-alc		Build aMule LinkCreator GUI version.
 amule-alcc		Build aMule LinkCreator for console.
 amule-cas		Build C aMule Statistics.
 amule-cmd		Build aMule command line client.
@@ -31,6 +33,7 @@ aterm-greek		Enable Greek keyboard support.
 aterm-kanji		Enable kanji support.
 aterm-xterm-scroll	Use xterm-scrollbar instead of a NeXT-like one.
 atheme-large-net	Enable support for large networks (i.e. > 2000 users).
+audiofile		Enable audio conversion using libaudiofile.
 avahi			Enable DNS service discovery and multicast DNS support.
 avahi-howl		Enable howl compatibility in avahi.
 bacula-static		Enable building of statically linked versions of the Bacula daemons.
@@ -175,6 +178,7 @@ gqmpeg-japanese		Japanese ID3 tag support.
 gqmpeg-russian		Russian ID3 tag support.
 graphicsmagick		Use GraphicsMagick as imaging library.
 groff-docs		Install documentation images.
+groonga-suggest-learner	Enable Groonga suggest learner.
 gsasl			Enable SASL support with gsasl.
 gsl			Use GNU Scientific Library.
 gssapi			Enable gssapi support.
@@ -191,6 +195,7 @@ hpn-patch		High Performance Enabled SSH/SCP for OpenSSH.
 hunspell		Add spell checking support using hunspell.
 i586-optimized		Optimize for i586 (only).
 icu			Enable icu support.
+id3			Enable id3 tagging support.
 idea			Enable support for the IDEA cryptographic algorithm (possible license+patent problems).
 idn			Internationalized Domain Names (IDN) support.
 ikiwiki-amazon-s3	Enable publishing rendered pages to Amazon S3 servers.
@@ -220,6 +225,7 @@ ipa-without-thresholds	Disable thresholds support.
 irssi-perl		Enable Perl support in irssi.
 iso			Build a .iso file.
 ispell			Add spell checking support using ispell.
+jack			Enable support for the JACK audio server.
 jasper			Enable JPEG 2000 support using the jasper library.
 java			Enable Java support.
 javascript		Enable Javascript support.
@@ -231,6 +237,7 @@ kde			Enable KDE support.
 kde3			Enable support for KDE 3.
 kde4			Enable support for KDE 4.
 kerberos		Enable Kerberos support.
+kerberos-prefix-cmds	Enables addition of a prefix to the kerberos client commands.
 kerberos4		Enable Kerberos4 support.
 kermit-suid-uucp	Install kermit setuid uucp.
 klash			Install Konqueror flash plugin.
@@ -292,10 +299,12 @@ lang-uk-ua		Add Ukrainian/UKRAINE language support.
 lang-zh			Add Chinese language support.
 lang-zh-cn		Add Chinese Simplified language support.
 lang-zh-tw		Add Chinese Traditional language support.
+latex			Depend on latex for build-time or run-time documentation.
 lcms			Enable Light Color Management System support.
 ldap			Enable LDAP support.
 lensfun			Enable lensfun (camera lens distortion rectifyer) support.
 libao			Enable the platform-independent 'ao' audio library.
+libgcrypt		Use GNU cryptographic library.
 libgpod			Enable libgpod support.
 libiconv-cp932		Add supplemental support for CP932.
 liblqr			Enable liblqr (liquid rescale) support.
@@ -356,7 +365,6 @@ mozilla-jit		Enable nanojit javascript acceleration.
 mozilla-lightning	Enable the lightning calendar extension.
 mozilla-single-profile	Enable single profiles on mozilla browsers.
 mp3tunes		Enable support for mp3tunes.com.
-mpcdec			Enable the portable Musepack decoder library.
 mpeg4ip			Enable mpeg4ip support.
 mpg123-altivec		Enable altivec optimized dithering code.
 mpg123-fifo		Enable FIFO support for the mpg123 control interface.
@@ -368,16 +376,20 @@ mplayer-runtime-cpudetection	Enable CPU detection at run time.
 mplayer-win32		Enable usage of Win32 DLLs (codecs).
 mrtg-snmpv3		Enable SNMPv3 support.
 mstats			Enable memory statistics.
+musepack		Enable the portable Musepack decoder library.
+musicbrainz		Enable musicbrainz support.
 mutt-compressed-mbox	Enable compressed mailbox support in mutt.
 mutt-hcache		Enable header caching in mutt.
 mutt-sidebar		Enable the mutt mailbox sidebar patch.
 mutt-smtp		Enable SMTP support in mutt.
 mysql			Enable MySQL support.
 mysqlmanager		Build mysqlmanager.
+nagios-nrpe-args	Enable argument passing via NRPE (possible security issues).
 nas			Enable usage of the Network Audio System.
 ncurses			Enable ncurses support.
 ncursesw		Enable wide character ncurses support.
 ndb-cluster		Build NDB Cluster support.
+ndiff			Enable tool to compare Nmap scans.
 nextstep		Enable Cocoa or GNUstep support.
 nfdump-ftconv		Build the flow-tools to nfdump converter.
 nfdump-nfprofile	Build the netflow profiler.
@@ -459,6 +471,8 @@ seamonkey		Use seamonkey as gecko rendering engine.
 sendmail-milter		Build the milter with support for the Sendmail MTA.
 sendmail-socketmap	Enable Sendmail SOCKETMAP support.
 serialconsole		Enable use of serial console.
+shout			Enable SHOUTcast support.
+sidplay			Enable support for the SID audio file format.
 sieve			Enable sieve support.
 sigver			Enable signature verification for debugging purposes.
 simd			Enable MMX/3DNOW/SSE/Altivec support.
@@ -525,7 +539,6 @@ tls			Enable TLS support.
 tokyocabinet		Enable Tokyo Cabinet support.
 trn-inn			Use INN as NNTP client.
 trn-nntpclnt		Use nntpclnt as NNTP client.
-typolight-liveupdate	Allow using TYPOlight Live Update service.
 ucspi-ssl-perl		Enable Perl support in ucspi-ssl.
 ucspi-tcp-nodefaultrbl	Remove the (nonexistent) default RBL from rblsmtpd.
 uds			Enable support for Unix domain sockets.
@@ -547,9 +560,13 @@ unrealircd-topicisnuhost	/topic command to show the nick!user@host of the person
 unrealircd-ziplinks	Compress data before transmitting it between servers.
 upnp			Enable support for UPnP.
 uucp			Enable support for uucp.
+uulib			Enable support for uulib.
 vdpau			Enable support for VDPAU.
 vflib			Enable support for Japanese vector font library.
 via-padlock		Enable support for the VIA PadLock Security Engine.
+vice-ethernet		Enable Ethernet cartridge support.
+vice-fullscreen		Enable full-screen support.
+vice-hwscaling		Enable hardware-assisted screen scaling.
 viewvc-php		Use php to colorize .php and .inc files.
 vorbis			Enable Ogg Vorbis support.
 w3m			Use and enable support for the w3m browser.

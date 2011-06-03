@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/11/08 21:13:27 bjs Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/22 13:45:21 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	speex

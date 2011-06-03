@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/01 15:52:58 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/25 12:24:02 obache Exp $
 #
 
-DISTNAME=		omniORB-4.1.4
+DISTNAME=		omniORB-4.1.5
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=omniorb/}
+EXTRACT_SUFX+=		.tar.bz2
 
 MAINTAINER=		ianzag@mail.ru
 HOMEPAGE=		http://omniorb.sourceforge.net/

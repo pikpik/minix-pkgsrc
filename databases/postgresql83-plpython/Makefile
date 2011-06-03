@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/04/12 09:53:50 adam Exp $
+# $NetBSD: Makefile,v 1.10 2011/04/22 13:43:14 obache Exp $
 
 PKGNAME=	${DISTNAME:C/-/83-plpython-/}
 COMMENT=	PL/Python procedural language for the PostgreSQL backend
@@ -9,12 +9,11 @@ DEPENDS+=	postgresql83-server>=${PKGVERSION_NOREV}:../../databases/postgresql83-
 
 .include "../../databases/postgresql83/Makefile.common"
 
-USE_LIBTOOL=		yes
-PKG_LIBTOOL=		${PKG_SHLIBTOOL}
 CONFIGURE_ARGS+=	--with-python
 CONFIGURE_ENV+=		PYTHON="${PYTHONBIN}"
 
 BUILD_DIRS=		src/pl/plpython
+BUILD_MAKE_FLAGS=	PGXS=1
 
 .include "../../databases/postgresql83-client/buildlink3.mk"
 .include "../../lang/python/extension.mk"

@@ -1,19 +1,24 @@
-# $NetBSD: Makefile,v 1.30 2007/07/04 20:54:34 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2011/02/28 14:52:42 wiz Exp $
 
 DISTNAME=	gnats-4.1.0
 PKGREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_GNU:=gnats/}
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gnats/
 COMMENT=	GNATS bug tracking system
+LICENSE=	gnu-gpl-v3
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gm4 gmake makeinfo bison
 TEXINFO_REQD+=		4.6
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+
+BUILD_DEFS+=		VARBASE
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-gnats-service=service-name=${GNATS_SERVICE}
 CONFIGURE_ARGS+=	--with-gnats-user=${GNATS_USER:Q}
@@ -51,7 +56,13 @@ GNATS_DBHOME?=		${GNATS_HOME}/gnatsdb
 REQD_DIRS+=		${PREFIX}/share/gnats
 REQD_DIRS+=		${PREFIX}/libexec/gnats
 REQD_DIRS+=		${EGDIR}
-OWN_DIRS_PERMS+=	${GNATS_HOME} gnats daemon 755
+OWN_DIRS_PERMS+=	${GNATS_HOME} ${GNATS_USER} ${GNATS_GROUP} 755
+
+INSTALLATION_DIRS=	bin libexec/gnats info share
+INSTALLATION_DIRS+=	share/examples share/examples/gnats
+INSTALLATION_DIRS+=	share/gnats share/gnats/defaults
+INSTALLATION_DIRS+=	${PKGMANDIR}/man1 ${PKGMANDIR}/man5
+INSTALLATION_DIRS+=	${PKGMANDIR}/man7 ${PKGMANDIR}/man8
 
 EGDIR=			${PREFIX}/share/examples/gnats
 CONF_FILES_PERMS+=	${EGDIR}/gnatsd.user_access  ${GNATS_USER_FILE}	\
@@ -69,7 +80,7 @@ MESSAGE_SUBST+=		GNATS_SERVICE=${GNATS_SERVICE:Q}
 SUBST_CLASSES+=		gnats
 SUBST_STAGE.gnats=	pre-configure
 SUBST_FILES.gnats=	gnats/Makefile.in gnats/mkdb.sh send-pr/Makefile.in
-SUBST_SED.gnats=	-e "s,%%EGDIR%%,${EGDIR},g"
-SUBST_SED.gnats+=	-e "s,%%GNATS_DEFAULTS%%,${PREFIX}/share/gnats/defaults,g"
+SUBST_SED.gnats=	-e "s,%%EGDIR%%,${DESTDIR}${EGDIR},g"
+SUBST_SED.gnats+=	-e "s,%%GNATS_DEFAULTS%%,${DESTDIR}${PREFIX}/share/gnats/defaults,g"
 
 .include "../../mk/bsd.pkg.mk"

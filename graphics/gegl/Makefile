@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2010/12/23 11:44:37 dsainty Exp $
+# $NetBSD: Makefile,v 1.20 2011/02/15 17:11:46 adam Exp $
 
-DISTNAME=	gegl-0.1.2
-PKGREVISION=	4
+DISTNAME=	gegl-0.1.6
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gegl/0.1/
 EXTRACT_SUFX=	.tar.bz2
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://gegl.org/
 COMMENT=	Graph based image processing framework
+LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -34,12 +35,12 @@ PLIST.v4l=	yes
 
 .include "options.mk"
 
-BUILDLINK_API_DEPENDS.babl+=	babl>=0.1.2
+BUILDLINK_API_DEPENDS.babl+=	babl>=0.1.4
 .include "../../graphics/babl/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
+.include "../../graphics/jasper/buildlink3.mk"
 .include "../../graphics/openexr/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
-
 .include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

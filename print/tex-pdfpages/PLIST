@@ -1,0 +1,8 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+share/texmf-dist/tex/latex/pdfpages/ppdvipdfm.def
+share/texmf-dist/tex/latex/pdfpages/ppdvips.def
+share/texmf-dist/tex/latex/pdfpages/ppnull.def
+share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+share/texmf-dist/tex/latex/pdfpages/ppvtex.def
+share/texmf-dist/tex/latex/pdfpages/ppxetex.def

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/11/17 14:35:32 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2011/02/25 20:46:11 drochner Exp $
 #
 
 DISTNAME=	dconf-0.5.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/dconf/0.5/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,6 +13,8 @@ COMMENT=	Backend for gsettings
 #LICENSE=	# TODO: (see mk/license.mk)
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+BUILD_DEPENDS+=		vala-[0-9]*:../../lang/vala
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --disable-editor

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:10:45 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2009/03/20 19:24:22 joerg Exp $
 
 BUILDLINK_TREE+=	librsync
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	librsync
 LIBRSYNC_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.librsync+=	librsync>=0.9.6nb2
-BUILDLINK_ABI_DEPENDS.librsync+=	librsync>=0.9.7nb1
+BUILDLINK_ABI_DEPENDS.librsync+=	librsync>=0.9.7nb3
 BUILDLINK_PKGSRCDIR.librsync?=	../../devel/librsync
 
 .include "../../archivers/bzip2/buildlink3.mk"

@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 17318
+# $NetBSD: Makefile,v 1.1.1.1 2010/04/27 18:48:55 minskim Exp $
 
 DISTNAME=	fwlw
-PKGNAME=	tex-${DISTNAME}-2009
+PKGNAME=	tex-${DISTNAME}-2010
+TEXLIVE_REV=	21548
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Get first and last words of a page

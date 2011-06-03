@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/wchar.in.h.orig	Thu Jul 29 13:21:38 2010
+--- lib/wchar.in.h.orig	Tue Mar  1 16:39:30 2011
 +++ lib/wchar.in.h
-@@ -71,7 +71,20 @@
+@@ -76,7 +76,20 @@
  #endif
  
  #undef _GL_ALREADY_INCLUDING_WCHAR_H
@@ -23,7 +23,7 @@ $NetBSD$
  #ifndef _GL_WCHAR_H
  #define _GL_WCHAR_H
  
-@@ -155,7 +168,6 @@ _GL_WARN_ON_USE (wctob, "wctob is unportable - "
+@@ -162,7 +175,6 @@ _GL_WARN_ON_USE (wctob, "wctob is unportable - "
                   "use gnulib module wctob for portability");
  # endif
  #endif

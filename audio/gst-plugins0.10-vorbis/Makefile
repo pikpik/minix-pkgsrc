@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/07/02 11:35:20 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2011/04/24 15:31:09 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	vorbis

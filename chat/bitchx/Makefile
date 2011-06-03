@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2010/01/17 12:02:06 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2010/08/25 09:59:52 jmcneill Exp $
 
 DISTNAME=	ircii-pana-1.1-final
 PKGNAME=	bitchx-1.1
@@ -12,6 +12,8 @@ COMMENT=	IRC client based on ircII
 
 # This package is not even remotely 64-bit clean
 NOT_FOR_PLATFORM=	${LP64PLATFORMS}
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	bash
 
@@ -30,6 +32,9 @@ SUBST_CLASSES+=		manpage
 SUBST_STAGE.manpage=	post-patch
 SUBST_FILES.manpage+=	doc/BitchX.1
 SUBST_SED.manpage+=	-e 's,@PREFIX@,${PREFIX},g'
+
+INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX}
+INSTALL_MAKE_FLAGS+=	mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"

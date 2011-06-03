@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/06/17 00:32:54 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2011/01/21 04:09:21 minskim Exp $
 
 DISTNAME=	context
 PKGNAME=	tex-${DISTNAME}-2010
-TEXLIVE_REV=	20438
+TEXLIVE_REV=	21345
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	The ConTeXt macro package

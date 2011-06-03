@@ -1,8 +1,8 @@
 $NetBSD$
 
---- agent/mibgroup/ucd-snmp/memory_netbsd1.c.orig	2005-08-17 12:36:14.000000000 +0000
+--- agent/mibgroup/ucd-snmp/memory_netbsd1.c.orig	2008-10-21 21:10:43.000000000 +0000
 +++ agent/mibgroup/ucd-snmp/memory_netbsd1.c
-@@ -163,7 +163,7 @@ var_extensible_mem(struct variable *vp,
+@@ -165,7 +165,7 @@ var_extensible_mem(struct variable *vp,
      static char     errmsg[1024];
  
      static struct uvmexp uvmexp;
@@ -11,7 +11,7 @@ $NetBSD$
      int             uvmexp_mib[] = { CTL_VM, VM_UVMEXP };
      static struct vmtotal total;
      size_t          total_size = sizeof(total);
-@@ -179,13 +179,22 @@ var_extensible_mem(struct variable *vp,
+@@ -181,13 +181,22 @@ var_extensible_mem(struct variable *vp,
      /*
       * Memory info 
       */

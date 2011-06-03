@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.20 2010/10/28 10:23:08 adam Exp $
+@comment $NetBSD: PLIST,v 1.23 2011/04/26 10:57:20 adam Exp $
 bin/git
 bin/git-cvsserver
 bin/git-receive-pack
@@ -130,6 +130,8 @@ libexec/git-core/git-receive-pack
 libexec/git-core/git-reflog
 libexec/git-core/git-relink
 libexec/git-core/git-remote
+libexec/git-core/git-remote-ext
+libexec/git-core/git-remote-fd
 libexec/git-core/git-remote-ftp
 libexec/git-core/git-remote-ftps
 libexec/git-core/git-remote-http
@@ -225,6 +227,7 @@ ${PLIST.gui}share/git-gui/lib/msgs/hu.msg
 ${PLIST.gui}share/git-gui/lib/msgs/it.msg
 ${PLIST.gui}share/git-gui/lib/msgs/ja.msg
 ${PLIST.gui}share/git-gui/lib/msgs/nb.msg
+${PLIST.gui}share/git-gui/lib/msgs/pt_br.msg
 ${PLIST.gui}share/git-gui/lib/msgs/ru.msg
 ${PLIST.gui}share/git-gui/lib/msgs/sv.msg
 ${PLIST.gui}share/git-gui/lib/msgs/zh_cn.msg
@@ -250,6 +253,7 @@ ${PLIST.gui}share/gitk/lib/msgs/fr.msg
 ${PLIST.gui}share/gitk/lib/msgs/hu.msg
 ${PLIST.gui}share/gitk/lib/msgs/it.msg
 ${PLIST.gui}share/gitk/lib/msgs/ja.msg
+${PLIST.gui}share/gitk/lib/msgs/pt_br.msg
 ${PLIST.gui}share/gitk/lib/msgs/ru.msg
 ${PLIST.gui}share/gitk/lib/msgs/sv.msg
 share/gitweb/gitweb.cgi

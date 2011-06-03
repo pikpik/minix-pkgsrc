@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2010/05/05 18:23:52 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2010/12/23 11:44:55 dsainty Exp $
 #
 
 DISTNAME=	podofo-0.7.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=podofo/}
 
@@ -21,8 +21,8 @@ CMAKE_ARGS+=	-DFREETYPE_LIB_PATHS:PATH=${BUILDLINK_PREFIX.freetype2}/lib
 CFLAGS+=	-fPIC
 CXXFLAGS+=	-fPIC
 
-# XXX lua support should be optional
-.include "../../lang/lua/buildlink3.mk"
+.include "options.mk"
+
 # tests-depend on cppunit (for unit tests)
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.39 2010/05/20 07:57:23 sbd Exp $
+# $NetBSD: Linux.mk,v 1.41 2011/03/20 09:00:08 obache Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -12,7 +12,11 @@ PKGLOCALEDIR?=	share
 PS?=		/bin/ps
 # XXX: default from defaults/mk.conf.  Verify/correct for this platform
 # and remove this comment.
+.if exists(/usr/bin/su)
+SU?=		/usr/bin/su
+.else
 SU?=		/bin/su
+.endif
 TYPE?=		type			# Shell builtin
 
 CPP_PRECOMP_FLAGS?=	# unset
@@ -21,8 +25,8 @@ DEFAULT_SERIAL_DEVICE?=	/dev/null
 EXPORT_SYMBOLS_LDFLAGS?=	# Don't add symbols to the dynamic symbol table
 GROUPADD?=		/usr/sbin/groupadd
 MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
-.if exists(/usr/bin/false)
-NOLOGIN?=		/usr/bin/false
+.if exists(/etc/ssdlinux_version)
+NOLOGIN?=		/sbin/nologin
 .else
 NOLOGIN?=		/bin/false
 .endif

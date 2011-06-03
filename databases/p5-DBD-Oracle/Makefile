@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/07/07 15:49:40 sno Exp $
+# $NetBSD: Makefile,v 1.15 2010/08/21 16:32:56 seb Exp $
 
 DISTNAME=	DBD-Oracle-1.23
 PKGNAME=	p5-${DISTNAME}
@@ -22,7 +22,7 @@ PKG_SUGGESTED_OPTIONS=	# empty
 
 PKG_OPTIONS_REQUIRED_GROUPS=	oralib
 PKG_OPTIONS_GROUP.oralib=	lib32 libsys libbase
-PKG_SUGGESTED_OPTIONS.oralib=	libsys
+PKG_SUGGESTED_OPTIONS=		libsys
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../mk/bsd.options.mk"

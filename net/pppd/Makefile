@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/12/26 21:41:40 hasso Exp $
+# $NetBSD: Makefile,v 1.10 2011/03/20 12:35:28 obache Exp $
 
 DISTNAME=		ppp-${PPPD_VERSION}
 PKGNAME=		${DISTNAME:S/ppp/&d/}
@@ -9,6 +9,8 @@ MASTER_SITES=		ftp://ftp.samba.org/pub/ppp/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ppp.samba.org/
 COMMENT=		PPP Daemon
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
@@ -21,5 +23,8 @@ CONFIGURE_ENV+=		PREFIX=${PREFIX:Q} PKGSYSCONFDIR=${PKG_SYSCONFDIR:Q}
 
 PPPD_VERSION=	2.4.3
 PLIST_SUBST+=	PPPD_VERSION=${PPPD_VERSION:Q}
+
+DESTDIR_VARNAME=	#empty
+INSTALL_MAKE_FLAGS+=	DESTDIR=${DESTDIR}${PREFIX}
 
 .include "../../mk/bsd.pkg.mk"

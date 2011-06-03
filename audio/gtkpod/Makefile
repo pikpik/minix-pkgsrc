@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.31 2010/11/15 22:56:16 abs Exp $
+# $NetBSD: Makefile,v 1.33 2011/02/28 14:52:39 wiz Exp $
 #
 
 DISTNAME=	gtkpod-0.99.14
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtkpod/}
 
-MAINTAINER=	smb@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gtkpod.org/
 COMMENT=	GUI for iPod using GTK2
 

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.12 2008/04/25 20:39:09 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/02 15:08:10 drochner Exp $
 
-DISTNAME=	omniORBpy-3.4
+DISTNAME=	omniORBpy-3.5
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=omniorb/}
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tonnerre@NetBSD.org
 HOMEPAGE=	http://omniorb.sourceforge.net/

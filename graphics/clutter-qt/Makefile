@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.6 2010/11/15 22:57:10 abs Exp $
+# $NetBSD: Makefile,v 1.8 2011/02/13 03:56:09 obache Exp $
 #
 
 DISTNAME=	clutter-qt-1.0.0
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.clutter-project.org/sources/clutter-qt/1.0/
 
-MAINTAINER=	obache@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.clutter-project.org/
 COMMENT=	Qt Integratin Library for Clutter
 LICENSE=	gnu-lgpl-v2.1

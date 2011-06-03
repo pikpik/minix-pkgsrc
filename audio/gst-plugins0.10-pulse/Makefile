@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/06/20 01:09:06 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2011/04/22 13:42:54 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	pulse

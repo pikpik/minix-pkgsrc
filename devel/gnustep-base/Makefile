@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.45 2009/05/19 08:59:09 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2011/04/07 01:55:14 rh Exp $
 
-DISTNAME=	gnustep-base-1.18.0
+DISTNAME=	gnustep-base-1.20.1
 PKGREVISION=	1
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
@@ -17,7 +17,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}/libexec/GNUstep
 CONFIGURE_ENV+=		INSTALL_PROGRAM=${INSTALL_SCRIPT:Q}
 MAKE_FILE=		GNUmakefile
-MAKE_JOBS_SAFE=		no
 
 GNUSTEP_OVERRIDE_INSTALL=	YES
 

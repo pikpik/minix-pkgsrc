@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.112 2010/12/23 11:44:48 dsainty Exp $
+# $NetBSD: Makefile,v 1.115 2011/04/22 13:44:07 obache Exp $
 
 DISTNAME=		R-2.11.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_R_CRAN:=base/R-2/}
 
@@ -23,6 +23,8 @@ USE_GNU_ICONV=		yes		# latin1 support, iconvlist
 USE_LANGUAGES=		c c++ fortran77
 USE_LIBTOOL=		yes
 TEXINFO_REQD=		4.7
+
+PTHREAD_AUTO_VARS=	yes
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-R-shlib
@@ -64,6 +66,9 @@ CONFIGURE_ENV+=		lt_cv_path_SED=${TOOLS_SED}
 CONFIGURE_ENV+=		ac_cv_path_R_GZIPCMD=${TOOLS_GZIP_CMD}
 CONFIGURE_ENV+=		ac_cv_path_R_UNZIPCMD=${TOOLS_PATH.unzip}
 CONFIGURE_ENV+=		r_cv_prog_f77_flag_mieee=no
+
+# We don't want "lib64"
+CONFIGURE_ENV+=		LIBnn=lib
 
 # Package assumes it can append to files (specifically DESCRIPTION) that have
 # been installed SHAREMODE

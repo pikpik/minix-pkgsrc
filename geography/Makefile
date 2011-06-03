@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2010/08/27 11:47:51 adam Exp $
+# $NetBSD: Makefile,v 1.36 2011/03/18 21:29:49 minskim Exp $
 #
 
 COMMENT=	Software for geographical-related uses
@@ -21,6 +21,7 @@ SUBDIR+=	gpspoint
 SUBDIR+=	gpsutils
 SUBDIR+=	libchamplain04
 SUBDIR+=	libchamplain06
+SUBDIR+=	libchamplain08
 SUBDIR+=	libdrg
 SUBDIR+=	mapserver
 SUBDIR+=	merkaartor
@@ -39,6 +40,8 @@ SUBDIR+=	qlandkartegt
 SUBDIR+=	qlandkartegt-garmindev
 SUBDIR+=	qlandkartem
 SUBDIR+=	shapelib
+SUBDIR+=	tex-pst-geo
+SUBDIR+=	tex-pst-geo-doc
 SUBDIR+=	viking
 SUBDIR+=	vis5d+
 SUBDIR+=	xrmap

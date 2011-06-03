@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/psgo/Changes
+share/texmf-dist/doc/latex/psgo/README
+share/texmf-dist/doc/latex/psgo/psgomanual.pdf
+share/texmf-dist/doc/latex/psgo/psgomanual.tex

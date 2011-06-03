@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.49 2009/04/17 22:36:23 rh Exp $
+# $NetBSD: Makefile,v 1.50 2009/12/05 14:53:39 bad Exp $
 #
 
-DISTNAME=	cgoban-java-3.3.26
+DISTNAME=	cgoban-java-3.4.14
 CATEGORIES=	games java
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 # Mirrored from http://files.gokgs.com/javaBin/cgoban.jar
 EXTRACT_SUFX=	.jar
 
-MAINTAINER=	rh@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gokgs.com/
 COMMENT=	Client for the KGS Go Server and SGF viewer/editor
 

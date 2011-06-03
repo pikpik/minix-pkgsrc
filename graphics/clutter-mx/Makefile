@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/11/24 18:19:26 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/12 12:24:44 obache Exp $
 #
 
 DISTNAME=	mx-1.0.4
 PKGNAME=	clutter-mx-1.0.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://source.clutter-project.org/sources/mx/1.0/
 EXTRACT_SUFX=	.tar.bz2
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config intltool gmake
+USE_TOOLS+=	pkg-config intltool gmake msgfmt msgmerge xgettext
 
 PKGCONFIG_OVERRIDE+=	mx-gtk.pc.in
 PKGCONFIG_OVERRIDE+=	mx.pc.in

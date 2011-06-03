@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${RUBY_VENDORARCHLIB}/bz2.${RUBY_DLEXT}

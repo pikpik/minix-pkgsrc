@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2009/11/03 22:22:31 tonio Exp $
+# $NetBSD: Makefile,v 1.27 2011/03/05 22:48:07 tonio Exp $
 #
 
-DISTNAME=	weechat-0.3.1.1
+DISTNAME=	weechat-0.3.4
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.weechat.org/files/src/
 
@@ -17,7 +18,7 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--disable-ruby --disable-aspell
+CONFIGURE_ARGS+=	--disable-tcl --disable-aspell
 MAKE_ENV+=		INSTALL_DATA_DIR=${INSTALL_DATA_DIR:Q}
 MAKE_ENV+=		PREFIX=${DESTDIR:Q}${PREFIX:Q}
 LIBS.SunOS+=		-lnsl

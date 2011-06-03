@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2010/11/28 01:25:19 obache Exp $
+# $NetBSD: Makefile,v 1.42 2011/04/22 13:42:19 obache Exp $
 #
 
-DISTNAME=		gstreamer-0.10.31
+DISTNAME=		gstreamer-0.10.34
 PKGNAME=		${DISTNAME:S/gstreamer/gstreamer0.10/}
 CATEGORIES=		multimedia gnome
 MASTER_SITES=		http://gstreamer.freedesktop.org/src/gstreamer/
@@ -43,6 +43,10 @@ PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer-uninstalled.pc.in
 PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer.pc.in
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "FreeBSD"
+CONFIGURE_ENV+=		ac_cv_func_register_printf_function="no"
+.endif
 
 .if ${OPSYS} == "NetBSD"
 # We must have a glib2 compiled with the RTLD_GLOBAL fix; if not, plugins

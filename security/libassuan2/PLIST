@@ -1,6 +1,6 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2011/04/12 13:17:20 adam Exp $
 bin/libassuan-config
 include/assuan.h
+info/assuan.info
 lib/libassuan.la
 share/aclocal/libassuan.m4
-info/assuan.info

@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.36 2010/06/16 16:35:57 drochner Exp $
+# $NetBSD: Makefile,v 1.38 2011/01/26 19:25:55 drochner Exp $
 #
 
-DISTNAME=	pixman-0.18.4
+DISTNAME=	pixman-0.20.2
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	bjs@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Library of low-level pixel manipulation routines
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2010/10/12 19:36:43 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2010/12/15 21:52:15 riz Exp $
 
 DISTNAME=	Botan-1.8.7
 PKGNAME=	botan-1.8.7
@@ -15,7 +15,6 @@ LICENSE=	modified-bsd
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
-REPLACE_PYTHON+=	configure.pl
 USE_LANGUAGES=		c++
 
 PYTHON_FOR_BUILD_ONLY=	yes

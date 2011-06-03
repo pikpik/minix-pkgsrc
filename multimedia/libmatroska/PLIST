@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2009/06/14 18:08:07 joerg Exp $
+@comment $NetBSD$
 include/matroska/FileKax.h
 include/matroska/KaxAttached.h
 include/matroska/KaxAttachments.h
@@ -18,7 +18,6 @@ include/matroska/KaxInfoData.h
 include/matroska/KaxSeekHead.h
 include/matroska/KaxSegment.h
 include/matroska/KaxTag.h
-include/matroska/KaxTagMulti.h
 include/matroska/KaxTags.h
 include/matroska/KaxTrackAudio.h
 include/matroska/KaxTrackEntryData.h

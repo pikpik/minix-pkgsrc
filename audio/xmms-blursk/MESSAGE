@@ -1,8 +1,0 @@
-===========================================================================
-$NetBSD$
-
-A large list of default preset settings for Blursk have been installed
-into ${PREFIX}/share/xmms/blursk-presets, and should be copied to each
-users ~/.xmms directory for use.
-
-===========================================================================

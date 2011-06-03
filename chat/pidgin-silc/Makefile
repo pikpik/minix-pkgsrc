@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2010/11/15 22:56:29 abs Exp $
+# $NetBSD: Makefile,v 1.20 2011/03/14 12:21:49 adam Exp $
 
 PKGNAME=	pidgin-silc-${PIDGIN_VERSION}
-PKGREVISION=	3
+PKGREVISION=	1
 COMMENT=	SILC plugin for the Pidgin instant messenger
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -12,7 +12,6 @@ USE_TOOLS+=		msgfmt perl intltool
 
 BUILD_DIRS=		libpurple/protocols/silc
 
-BUILDLINK_API_DEPENDS.libpurple+=	libpurple-${PIDGIN_VERSION}{,nb*}
 .include "../../chat/libpurple/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"

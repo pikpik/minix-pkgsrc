@@ -1,0 +1,10 @@
+$NetBSD: distinfo,v 1.2 2011/05/06 00:34:32 taca Exp $
+
+SHA1 (bind-9.8.0-P2.tar.gz) = b3492ad11cfbf2939d9b0fb62c52c204de58679b
+RMD160 (bind-9.8.0-P2.tar.gz) = 3db0b25303da78f06d6fb48f66908111cb0eb34c
+Size (bind-9.8.0-P2.tar.gz) = 7702702 bytes
+SHA1 (patch-config.threads.in) = 3d8ee03230fdb6aca545a67759ba7aacda52bb61
+SHA1 (patch-configure) = edf5a32b5c05aea110316f877264c22a2c4344ba
+SHA1 (patch-lib_dns_rbt.c) = 29fb5c24ff3558f1621e93ea16419e32dbc695b7
+SHA1 (patch-lib_lwres_getaddrinfo.c) = 9585a26a376d32f80ac8266eb7967c00b433f14d
+SHA1 (patch-lib_lwres_getnameinfo.c) = c26dcff4637b7beb16b66c32b304d0f187390eed

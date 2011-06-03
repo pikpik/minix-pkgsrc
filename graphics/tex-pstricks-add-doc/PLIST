@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/pstricks-add/Changes
+share/texmf-dist/doc/generic/pstricks-add/README
+share/texmf-dist/doc/generic/pstricks-add/pstricks-add-doc.bib
+share/texmf-dist/doc/generic/pstricks-add/pstricks-add-doc.dat
+share/texmf-dist/doc/generic/pstricks-add/pstricks-add-doc.pdf
+share/texmf-dist/doc/generic/pstricks-add/pstricks-add-doc.tex

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2009/03/05 18:51:29 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2010/03/07 00:07:28 gdt Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-cursespanel-0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel python
 
 MAINTAINER=	tsarna@NetBSD.org
@@ -21,6 +21,7 @@ PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes
 
 PY_SETUP_SUBST=	NCURSESPREFIX=${BUILDLINK_PREFIX.ncurses}
+PYSETUPINSTALLARGS+=	--install-lib ${PREFIX}/${PYLIB}/lib-dynload
 
 # ignore errors due to missing files (EXTRACT_ELEMENTS!)
 do-patch:

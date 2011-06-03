@@ -1,17 +1,23 @@
 $NetBSD$
 
---- mk-1st.awk.orig	Sat Mar 24 22:10:55 2007
+--- mk-1st.awk.orig	2010-08-07 20:42:30.000000000 +0000
 +++ mk-1st.awk
-@@ -386,7 +386,7 @@ END	{
- 				}
+@@ -396,11 +396,11 @@ END	{
  				end_name = lib_name;
  				printf "../lib/%s : $(%s_OBJS)\n", lib_name, OBJS
--				printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:$o=.lo) -rpath $(DESTDIR)$(libdir) -version-info $(NCURSES_MAJOR):$(NCURSES_MINOR) $(SHLIB_LIST)\n", compile, lib_name, OBJS
-+				printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:.o=.lo) -rpath $(DESTDIR)$(libdir) -version-info $(NCURSES_MAJOR):$(NCURSES_MINOR) $(SHLIB_LIST)\n", compile, lib_name, OBJS
+ 				if ( is_ticlib() ) {
+-					printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:$o=.lo) -rpath $(DESTDIR)$(libdir) %s $(NCURSES_MAJOR):$(NCURSES_MINOR) $(LT_UNDEF) $(TICS_LIST)\n", compile, lib_name, OBJS, libtool_version
++					printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:.o=.lo) -rpath $(DESTDIR)$(libdir) %s $(NCURSES_MAJOR):$(NCURSES_MINOR) $(LT_UNDEF) $(TICS_LIST)\n", compile, lib_name, OBJS, libtool_version
+ 				} else if ( is_termlib() ) {
+-					printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:$o=.lo) -rpath $(DESTDIR)$(libdir) %s $(NCURSES_MAJOR):$(NCURSES_MINOR) $(LT_UNDEF) $(TINFO_LIST)\n", compile, lib_name, OBJS, libtool_version
++					printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:.o=.lo) -rpath $(DESTDIR)$(libdir) %s $(NCURSES_MAJOR):$(NCURSES_MINOR) $(LT_UNDEF) $(TINFO_LIST)\n", compile, lib_name, OBJS, libtool_version
+ 				} else {
+-					printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:$o=.lo) -rpath $(DESTDIR)$(libdir) %s $(NCURSES_MAJOR):$(NCURSES_MINOR) $(LT_UNDEF) $(SHLIB_LIST)\n", compile, lib_name, OBJS, libtool_version
++					printf "\tcd ../lib && $(LIBTOOL_LINK) $(%s) -o %s $(%s_OBJS:.o=.lo) -rpath $(DESTDIR)$(libdir) %s $(NCURSES_MAJOR):$(NCURSES_MINOR) $(LT_UNDEF) $(SHLIB_LIST)\n", compile, lib_name, OBJS, libtool_version
+ 				}
  				print  ""
  				print  "install \\"
- 				print  "install.libs \\"
-@@ -452,7 +452,7 @@ END	{
+@@ -469,7 +469,7 @@ END	{
  			print "mostlyclean::"
  			printf "\t-rm -f $(%s_OBJS)\n", OBJS
  			if ( MODEL == "LIBTOOL" ) {
@@ -20,7 +26,7 @@ $NetBSD$
  			}
  		}
  		else if ( found == 2 )
-@@ -461,13 +461,13 @@ END	{
+@@ -478,13 +478,13 @@ END	{
  			print "mostlyclean::"
  			printf "\t-rm -f $(%s_OBJS)\n", OBJS
  			if ( MODEL == "LIBTOOL" ) {

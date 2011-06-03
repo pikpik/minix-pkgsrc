@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.46 2008/06/20 01:09:12 joerg Exp $
+# $NetBSD: Makefile,v 1.47 2009/07/18 19:32:38 wiz Exp $
 #
 
 DISTNAME=	indent-2.2.9
 PKGNAME=	g${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=indent/}
 

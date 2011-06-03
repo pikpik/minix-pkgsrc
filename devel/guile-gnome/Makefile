@@ -1,13 +1,16 @@
-# $NetBSD: Makefile,v 1.19 2010/11/15 22:56:39 abs Exp $
+# $NetBSD: Makefile,v 1.22 2011/05/13 02:50:06 dmcmahill Exp $
 
 DISTNAME=	guile-gnome-platform-2.16.1
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	devel
 MASTER_SITES=	http://ftp.gnu.org/gnu/guile-gnome/guile-gnome-platform/
 
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/guile-gnome/
 COMMENT=	Library to access gobject/glib/gtk and gnome from guile
+LICENSE=	gnu-gpl-v2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	guile-slib>=2.4.2:../../devel/guile-slib
 
@@ -17,6 +20,12 @@ GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake makeinfo pkg-config
 USE_LIBTOOL=		YES
 INFO_FILES=		YES
+
+# warnings on alpha (perhaps other 64-bit too?)
+BUILDLINK_TRANSFORM+=	rm:-Werror
+
+post-install:
+	rm -f ${DESTDIR}${PREFIX}/share/guile-gnome-2/gnome/overrides/gtk.defs.orig
 
 # XXX This should arguably be split into separate packages.
 

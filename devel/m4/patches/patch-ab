@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/fpurge.c.orig	Wed Jul 21 00:13:45 2010
+--- lib/fpurge.c.orig	Tue Mar  1 16:39:27 2011
 +++ lib/fpurge.c
 @@ -26,6 +26,7 @@
  

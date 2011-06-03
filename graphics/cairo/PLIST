@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.27 2010/10/13 00:11:21 spz Exp $
+@comment $NetBSD: PLIST,v 1.29 2011/02/12 12:08:06 obache Exp $
 bin/cairo-trace
 include/cairo/cairo-deprecated.h
 include/cairo/cairo-features.h

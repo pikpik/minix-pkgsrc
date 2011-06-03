@@ -1,19 +1,20 @@
-$NetBSD: distinfo,v 1.3 2010/03/15 08:27:06 adam Exp $
+$NetBSD: distinfo,v 1.7 2011/03/16 14:53:49 hans Exp $
 
-SHA1 (gcc-4.4.3.tar.bz2) = 619766282734728539ce58a5c383cb371f1999c7
-RMD160 (gcc-4.4.3.tar.bz2) = b51afac3cb77ee3dc09d29c2f85936482ed82ab2
-Size (gcc-4.4.3.tar.bz2) = 62944934 bytes
-SHA1 (patch-aa) = 34c0689b3df59d34287bca9ac478d8a8d626587b
-SHA1 (patch-ab) = 6b19bbcbc90bbfea491d2839e1aa8682ab783a52
-SHA1 (patch-ac) = 54a7412e80f82583664c279e7358bb3f5626edb9
+SHA1 (gcc-4.4.5.tar.bz2) = 2b1427a932a620c909d74f1e4821ed90c90fd350
+RMD160 (gcc-4.4.5.tar.bz2) = 87d6fa77d50f23a3359e24bf5b0ddfafa7088478
+Size (gcc-4.4.5.tar.bz2) = 63081552 bytes
+SHA1 (patch-aa) = 8e0194fc7c2ef9067d3dc54d0a21750d5ca9b960
+SHA1 (patch-ab) = 2bf3525826523936a58772ee94b953f80340281f
+SHA1 (patch-ac) = 71cdd492d3da0a6b31cf14934b793d9e9a15c589
 SHA1 (patch-ad) = b0583bb2edb5cf4085f7f018dba31bca4955d0e8
 SHA1 (patch-ae) = 50a6b90897092df291b4d132bb9886d9595f5821
-SHA1 (patch-af) = f755d6f7dd7ed63fb6bff44fd40b38ca85fea4bd
-SHA1 (patch-ag) = f1c58af36c2e45e3af719fdff3a83f3ef6e05d9a
-SHA1 (patch-ah) = 98c5c052bd347533f045787689ba7f02135e67a6
-SHA1 (patch-ai) = 6f37c62c051465b6ea5c70767fd6d7f14cf001cb
-SHA1 (patch-aj) = 590eef0ff636a744acebbde27b57ec3fb7751b94
-SHA1 (patch-ak) = 17bab4367815a6fe375d8649e03965b3b8e57fce
-SHA1 (patch-al) = 95041e8a578c22a673e5477c8a4a3678ebcb8774
-SHA1 (patch-am) = e89c3c5121c0b7c03ab282a8cf9ef80b6b29d1b9
+SHA1 (patch-af) = f4a47e942476ce85cd9e55bfb26e438de188990e
+SHA1 (patch-ag) = 93b228dc61f078eda980611c12770bfaae9eca36
+SHA1 (patch-ah) = 979d091d5d3026c9db2d91de26aeaa44e9183fe8
+SHA1 (patch-ai) = bcbcf694a15d37c79ad91c146ee38b30892dd4e5
+SHA1 (patch-aj) = 8d30f7ed20d04957f5b38e04eebbbcf32fd1e267
+SHA1 (patch-ak) = 4ebc85af08b712543314393a38130b424db82059
+SHA1 (patch-al) = 69d28874059752606664340b213661546479183d
+SHA1 (patch-am) = 1929feedd8ae94fd036b7a3d9e1e01c06a1d4ac1
 SHA1 (patch-ao) = 0b2ab0e209d234f24036d9a5f831ce2d4ddbeed9
+SHA1 (patch-gcc_ginclude_stddef.h) = 867e3ff87f0b8865b37823c42c9b01935b94e5fb

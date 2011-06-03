@@ -1,4 +1,7 @@
-# $NetBSD: Makefile.common,v 1.16 2010/07/01 16:07:05 joerg Exp $
+# $NetBSD: Makefile.common,v 1.17 2010/07/01 21:29:33 ghen Exp $
+#
+# used by net/mydns-mysql/Makefile
+# used by net/mydns-pgsql/Makefile
 
 DISTNAME=		mydns-1.1.0
 CATEGORIES=		net

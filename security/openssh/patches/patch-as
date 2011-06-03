@@ -1,17 +1,11 @@
-$NetBSD$
-
---- atomicio.c.orig	Fri Jul  4 23:36:58 2008
-+++ atomicio.c
-@@ -78,6 +78,7 @@ atomicio(ssize_t (*f) (int, void *, size_t), int fd, v
- 	return (pos);
- }
+--- atomicio.c.orig	Fri Sep 24 12:15:11 2010
++++ atomicio.c	Fri Jun  3 12:17:49 2011
+@@ -99,7 +99,7 @@
+ {
+ 	size_t pos = 0, rem;
+ 	ssize_t res;
+-	struct iovec iov_array[IOV_MAX], *iov = iov_array;
++	struct iovec iov_array[16], *iov = iov_array;
+ 	struct pollfd pfd;
  
-+#ifndef __minix
- /*
-  * ensure all of data on socket comes through. f==readv || f==writev
-  */
-@@ -140,3 +141,4 @@ atomiciov(ssize_t (*f) (int, const struct iovec *, int
- 	}
- 	return pos;
- }
-+#endif
+ 	if (iovcnt > IOV_MAX) {

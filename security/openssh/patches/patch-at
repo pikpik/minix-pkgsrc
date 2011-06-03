@@ -1,16 +1,40 @@
-$NetBSD$
-
---- misc.c.orig	Sat Jan  9 23:31:12 2010
-+++ misc.c
-@@ -136,6 +136,7 @@ set_nodelay(int fd)
+--- misc.c.orig	Thu Jan 13 01:21:36 2011
++++ misc.c	Fri Jun  3 12:08:07 2011
+@@ -38,9 +38,11 @@
+ #include <time.h>
+ #include <unistd.h>
+ 
++#ifndef __minix
+ #include <netinet/in.h>
+ #include <netinet/in_systm.h>
+ #include <netinet/ip.h>
++#endif
+ #include <netinet/tcp.h>
+ 
+ #include <errno.h>
+@@ -54,6 +56,13 @@
+ #include <net/if.h>
+ #endif
+ 
++#ifndef timercmp
++#define timercmp(tvp, uvp, cmp)				\
++        (((tvp)->tv_usec == (uvp)->tv_sec) ?		\
++                ((tvp)->tv_usec cmp (uvp)->tv_usec) :	\
++                ((tvp)->tv_sec cmp (uvp)->tv_sec))
++#endif
++
+ #include "xmalloc.h"
+ #include "misc.h"
+ #include "log.h"
+@@ -136,6 +145,7 @@
+ void
+ set_nodelay(int fd)
+ {
++#ifndef __minix
  	int opt;
  	socklen_t optlen;
  
-+#ifndef __minix
- 	optlen = sizeof opt;
- 	if (getsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &opt, &optlen) == -1) {
- 		debug("getsockopt TCP_NODELAY: %.100s", strerror(errno));
-@@ -149,6 +150,7 @@ set_nodelay(int fd)
+@@ -152,6 +162,7 @@
  	debug2("fd %d setting TCP_NODELAY", fd);
  	if (setsockopt(fd, IPPROTO_TCP, TCP_NODELAY, &opt, sizeof opt) == -1)
  		error("setsockopt TCP_NODELAY: %.100s", strerror(errno));

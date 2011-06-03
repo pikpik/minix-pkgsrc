@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/05/22 16:32:37 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2011/04/22 13:45:20 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	esound

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.25 2010/12/17 07:36:10 obache Exp $
+# $NetBSD: Makefile,v 1.29 2011/04/08 20:02:13 drochner Exp $
 
-DISTNAME=	midori-0.2.6
-PKGREVISION=	4
+DISTNAME=	midori-0.3.3
+PKGREVISION=	1
 CATEGORIES=	www
-MASTER_SITES=	http://archive.xfce.org/src/apps/midori/0.2/
+MASTER_SITES=	http://archive.xfce.org/src/apps/midori/0.3/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.twotoasts.de/index.php?/pages/midori_summary.html
@@ -16,6 +16,7 @@ USE_TOOLS+=	gmake intltool msgfmt pkg-config
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
+CONFIGURE_ARGS+=	--disable-vala
 
 REPLACE_PYTHON=		waf wscript docs/api/wscript_build
 REPLACE_PYTHON+=	tests/wscript_build extensions/wscript_build

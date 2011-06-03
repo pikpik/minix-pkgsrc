@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/01/15 16:23:33 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2011/04/24 15:31:09 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	x11

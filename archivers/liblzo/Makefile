@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/06/16 14:52:20 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2007/09/08 20:35:28 joerg Exp $
 #
 
 DISTNAME=	lzo-1.08

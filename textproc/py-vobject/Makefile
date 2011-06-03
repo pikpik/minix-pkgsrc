@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/08/27 17:16:20 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2009/09/23 09:54:46 tron Exp $
 #
 
 DISTNAME=	vobject-0.8.1c
@@ -9,7 +9,8 @@ MASTER_SITES=	http://vobject.skyhouseconsulting.com/
 
 MAINTAINER=	kleink@NetBSD.org
 HOMEPAGE=	http://vobject.skyhouseconsulting.com/
-COMMENT=	Python iCalendar library
+COMMENT=	Python iCalendar (ics) and vCard library
+LICENSE=	apache-2.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

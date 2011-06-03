@@ -1,0 +1,14 @@
+$NetBSD$
+
+fix build with gcc4.3
+
+--- lib/utf8/utf8util.cpp.orig	2006-11-18 10:52:26.000000000 +0000
++++ lib/utf8/utf8util.cpp
+@@ -26,6 +26,7 @@
+ ----------------------------------------------------------------------------*/
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include "utf8util.h"
+ #include "utf8.h"
+ #ifdef WIN32

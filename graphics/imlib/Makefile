@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.106 2010/12/23 11:44:39 dsainty Exp $
+# $NetBSD: Makefile,v 1.109 2011/03/09 16:26:48 drochner Exp $
 
 DISTNAME=	imlib-1.9.15
-PKGREVISION=	8
+PKGREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/imlib/1.9/}
 EXTRACT_SUFX=	.tar.bz2
@@ -23,6 +23,8 @@ CPPFLAGS+=		-DENABLE_NLS
 CONFIGURE_ENV+=		ac_cv_path_CONVERT_PROG="${LOCALBASE}/bin/convert"
 CONFIGURE_ENV+=		X_LDFLAGS=${X_LDFLAGS:Q}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
+# breaks kde3 kuickshow if shm and other than XAA acceleration
+CONFIGURE_ARGS+=	--disable-shm
 
 PKG_SYSCONFSUBDIR=	imlib
 EGDIR=			${PREFIX}/share/examples/imlib
@@ -34,6 +36,11 @@ CONF_FILES+=		${EGDIR}/im_palette-small.pal \
 			${PKG_SYSCONFDIR}/im_palette-small.pal
 CONF_FILES+=		${EGDIR}/im_palette-tiny.pal \
 			${PKG_SYSCONFDIR}/im_palette-tiny.pal
+
+SUBST_CLASSES+=		imlib-config
+SUBST_FILES.imlib-config=	imlib-config
+SUBST_SED.imlib-config=	-e 's,no --,${PREFIX}/bin/gtk-config --,'
+SUBST_STAGE.imlib-config=	post-configure
 
 # The following ensures that `imlib-config --libs' includes the correct
 # linker flags for linking the X11 libs.
@@ -54,11 +61,10 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
-.include "../../graphics/libungif/buildlink3.mk"
+.include "../../mk/giflib.buildlink3.mk"
 .include "../../graphics/netpbm/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
-.include "../../x11/gtk/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"

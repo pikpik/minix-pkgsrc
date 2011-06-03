@@ -1,0 +1,14 @@
+--- gettext-tools/gnulib-lib/spawni.c.orig	Tue May 31 19:49:54 2011
++++ gettext-tools/gnulib-lib/spawni.c	Tue May 31 19:50:36 2011
+@@ -224,9 +224,11 @@
+ #endif
+ 
+   /* Set the process group ID.  */
++#ifndef _MINIX
+   if ((flags & POSIX_SPAWN_SETPGROUP) != 0
+       && setpgid (0, attrp->_pgrp) != 0)
+     _exit (SPAWN_ERROR);
++#endif
+ 
+   /* Set the effective user and group IDs.  */
+   if ((flags & POSIX_SPAWN_RESETIDS) != 0

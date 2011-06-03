@@ -1,0 +1,10 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/eso-pic/eso-article-test.tex
+share/texmf-dist/doc/latex/eso-pic/eso-ex1.tex
+share/texmf-dist/doc/latex/eso-pic/eso-ex2.tex
+share/texmf-dist/doc/latex/eso-pic/eso-ex3.tex
+share/texmf-dist/doc/latex/eso-pic/eso-ex4.tex
+share/texmf-dist/doc/latex/eso-pic/eso-ex5.tex
+share/texmf-dist/doc/latex/eso-pic/eso-ex6.tex
+share/texmf-dist/doc/latex/eso-pic/eso-memoir-test.tex
+share/texmf-dist/doc/latex/eso-pic/eso-pic.pdf

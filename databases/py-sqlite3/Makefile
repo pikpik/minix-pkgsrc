@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2009/03/05 18:51:28 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2011/02/25 09:47:19 wiz Exp $
 
 PKGNAME=	${PYPKGPREFIX}-sqlite3-0
+PKGREVISION=	1
 CATEGORIES=	databases python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -14,8 +15,9 @@ USE_TOOLS+=		patch
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/_sqlite
 
 PYDISTUTILSPKG=		yes
-PYTHON_VERSIONS_ACCEPTED=26 25
+PYTHON_VERSIONS_ACCEPTED=27 26 25
 PY_SETUP_SUBST+= 	SQLITE_PREFIX=${BUILDLINK_PREFIX.sqlite3}
+PYSETUPINSTALLARGS+=	--install-lib ${PREFIX}/${PYLIB}/lib-dynload
 
 # ignore errors due to missing files (EXTRACT_ELEMENTS!)
 do-patch:

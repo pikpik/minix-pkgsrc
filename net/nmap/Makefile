@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.74 2010/11/15 22:58:18 abs Exp $
+# $NetBSD: Makefile,v 1.79 2011/02/16 21:52:01 pettai Exp $
 #
 
-DISTNAME=	nmap-5.35DC1
-PKGNAME=	nmap-5.35dc1
-PKGREVISION=	3
+DISTNAME=	nmap-5.51
+PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	http://nmap.org/dist/
 EXTRACT_SUFX=	.tar.bz2
@@ -60,7 +59,7 @@ pre-build:
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	post-patch
 SUBST_FILES.paths=	ndiff/setup.py
-SUBST_SED.paths=        -e "s|@@PKGMANDIR@@|${PKGMANDIR}|g"
+SUBST_SED.paths=	-e "s|@@PKGMANDIR@@|${PKGMANDIR}|g"
 SUBST_MESSAGE.paths=	Fixing paths.
 
 post-build:

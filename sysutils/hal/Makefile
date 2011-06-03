@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2011/01/08 13:39:08 obache Exp $
+# $NetBSD: Makefile,v 1.55 2011/04/22 13:42:40 obache Exp $
 
 DISTNAME=		hal-0.5.14
-PKGREVISION=		1
+PKGREVISION=		3
 CATEGORIES=		sysutils
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 EXTRACT_SUFX=		.tar.bz2
@@ -32,6 +32,7 @@ CONFIGURE_ARGS+=        --sysconfdir=${PKG_SYSCONFBASE}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 CONFIGURE_ARGS+=	--with-pci-ids=${PREFIX}/share/pciids
 CONFIGURE_ARGS+=	--with-usb-ids=${PREFIX}/share/usbids
+CONFIGURE_ARGS+=	--without-os-type
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -59,13 +60,14 @@ CONF_FILES+=		${EGDIR}/90-hal.rules \
 
 .else	# Unsupported systems
 # Pull in the dummy backend
+.include "../../devel/libvolume_id/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-backend=dummy
 PLIST_SRC=		PLIST
 .endif
 
 CFLAGS.SunOS+=		-Du_int32_t=uint32_t
 
-.if ${OPSYS} == "Darwin"
+.if ${OPSYS} == "Darwin" || ${OPSYS} == "SunOS"
 BUILDLINK_TRANSFORM+=	rm:-Wl,--as-needed
 .endif
 

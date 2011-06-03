@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2011/01/13 13:36:24 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2011/04/22 13:42:29 obache Exp $
 
 DISTNAME=	gconfmm-2.28.2
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gconfmm/2.28/}
 EXTRACT_SUFX=	.tar.bz2
@@ -17,6 +18,7 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config perl
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/gconf/gconfmm-2.6.pc.in
 GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--disable-documentation
 
 .include "../../devel/GConf/buildlink3.mk"
 .include "../../x11/gtkmm/buildlink3.mk"

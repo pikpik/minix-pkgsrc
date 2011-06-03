@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/07/06 19:14:02 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2011/04/22 13:45:21 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	wavpack

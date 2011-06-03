@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2007/01/07 09:13:52 rillig Exp $
+# $NetBSD: Makefile,v 1.3 2010/01/29 19:32:59 joerg Exp $
 #
 
 DISTNAME=	xmake-1.06
 CATEGORIES=	devel
-MASTER_SITES=	http://apollo.backplane.com/xmake/
+MASTER_SITES=	# http://apollo.backplane.com/xmake/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	cg@cgall.de

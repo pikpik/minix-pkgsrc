@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/11/24 12:50:17 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2011/04/22 13:44:15 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	hal

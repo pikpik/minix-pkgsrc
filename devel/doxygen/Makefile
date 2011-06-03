@@ -1,23 +1,19 @@
-# $NetBSD: Makefile,v 1.79 2010/11/19 19:21:37 tez Exp $
+# $NetBSD: Makefile,v 1.82 2011/03/18 23:51:16 minskim Exp $
 
 DISTNAME=	doxygen-1.6.3.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.stack.nl/pub/users/dimitri/ \
 		http://ftp.stack.nl/pub/users/dimitri/
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.doxygen.org/
 COMMENT=	Documentation system for C++, Java, IDL and C
 LICENSE=	gnu-gpl-v2
 
-DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
-DEPENDS+=	texlive-pdftools-[0-9]*:../../print/texlive-pdftools
-
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-TEX_ACCEPTED=	teTeX3
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 UNLIMIT_RESOURCES+=	datasize
 USE_TOOLS+=		gmake gs:run perl:run bison flex
@@ -55,7 +51,9 @@ SUBST_SED.epstopdf=	-e 's,"epstopdf","${LOCALBASE}/bin/epstopdf",g'
 
 PRIVILEGED_STAGES+=	clean
 
-INSTALL_TARGET=		install install_docs
+# Just install the binary and the man page.  (If the latex option
+# is enabled, this target will be augmented.)
+INSTALL_TARGET=		install
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -74,8 +72,8 @@ post-patch:
 
 BUILDLINK_API_DEPENDS.graphviz+=	graphviz>=2.12nb1
 
+.include "options.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../graphics/graphviz/buildlink3.mk"
 .include "../../lang/python/application.mk"
-.include "../../mk/tex.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/01/27 21:31:43 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/10 07:46:31 taca Exp $
 
 DISTNAME=	ruby-password-0.5.3
 PKGNAME=	${DISTNAME:S/ruby/${RUBY_PKGPREFIX}/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://www.caliban.org/files/ruby/
 

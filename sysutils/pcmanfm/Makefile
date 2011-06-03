@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2010/11/15 22:58:37 abs Exp $
+# $NetBSD: Makefile,v 1.13 2011/04/22 13:44:45 obache Exp $
 #
 
 DISTNAME=	pcmanfm-0.1.8.9
-PKGREVISION=	7
+PKGREVISION=	9
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pcmanfm/}
 
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config msgfmt
+
+DEPENDS+=	gamin>=0.1.10:../../sysutils/gamin
 
 .include "../../databases/shared-mime-info/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

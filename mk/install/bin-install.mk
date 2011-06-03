@@ -1,4 +1,4 @@
-# $NetBSD: bin-install.mk,v 1.18 2008/02/20 09:58:04 wiz Exp $
+# $NetBSD: bin-install.mk,v 1.19 2010/04/18 21:48:39 sbd Exp $
 #
 
 # This file provides the following targets:
@@ -34,6 +34,9 @@ BINPKG_SITES?= \
 	ftp://ftp.NetBSD.org/pub/pkgsrc/packages/NetBSD/$${arch}/$${rel}
 .elif ${OPSYS} == "Minix"
 BINPKG_SITES?= ftp://ftp.minix3.org/pub/minix/packages/$${rel}/$${arch}
+.elif ${OPSYS} == "DragonFly"
+BINPKG_SITES?= \
+	http://mirror-master.dragonflybsd.org/packages/$${arch}/DragonFly-$${rel}/stable
 .else
 BINPKG_SITES= 
 .endif

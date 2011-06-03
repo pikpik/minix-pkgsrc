@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/08/13 13:20:14 ahoka Exp $
+# $NetBSD: Makefile,v 1.3 2009/10/11 11:17:07 ahoka Exp $
 
-VERSION=		1.5
+VERSION=		1.6.1
 DICTNAME=		hu_HU
 PKGNAME=		hunspell-${DISTNAME}
 DISTNAME=		${DICTNAME}-${VERSION}

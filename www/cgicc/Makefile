@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.15 2007/09/30 17:45:25 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:55 joerg Exp $
 
-DISTNAME=	cgicc-3.2.3
+DISTNAME=	cgicc-3.2.9
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_GNU:=cgicc/}
-EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/cgicc/cgicc.html
 COMMENT=	C++ compliant CGI applications libraries
+LICENSE=	gnu-lgpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -16,6 +16,8 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-demos
+
+BUILD_DIRS=		cgicc support
 
 .include "../../mk/compiler.mk"
 

@@ -1,5 +1,5 @@
 $NetBSD$
 
-SHA1 (libsigsegv-2.8.tar.gz) = 6bfe91907a3479b4137dfd5db8e30586ca97e2f1
-RMD160 (libsigsegv-2.8.tar.gz) = c6b8abab315367b205c5b0b0fee3bf15d48d2598
-Size (libsigsegv-2.8.tar.gz) = 428206 bytes
+SHA1 (libsigsegv-2.10.tar.gz) = b75a647a9ebda70e7a3b33583efdd550e0eac094
+RMD160 (libsigsegv-2.10.tar.gz) = 186b145f0318657544f774868f50d45729f48834
+Size (libsigsegv-2.10.tar.gz) = 402279 bytes

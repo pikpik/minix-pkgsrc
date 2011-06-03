@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2010/06/13 22:45:06 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2011/01/13 13:38:58 wiz Exp $
 #
 
 .include "../../multimedia/ming/Makefile.common"
 
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		multimedia
 
 MAINTAINER=		obache@NetBSD.org
@@ -20,6 +20,15 @@ PYSETUPSUBDIR=		py_ext
 
 PYDISTUTILSPKG=		yes
 
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../multimedia/ming/buildlink3.mk"
+.include "../../mk/giflib.buildlink3.mk"
+.if defined(GIFLIB_IMPLEMENTATION) && ${GIFLIB_IMPLEMENTATION} != "libungif"
+SUBST_CLASSES+=		giflib
+SUBST_STAGE.giflib=	pre-configure
+SUBST_FILES.giflib=	py_ext/setup.py
+SUBST_SED.giflib=	-e 's/ungif/gif/g'
+.endif
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

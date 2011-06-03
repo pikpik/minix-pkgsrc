@@ -1,12 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.3 2011/01/29 20:55:17 gdt Exp $
 #
 
-DISTNAME=	foolscap-0.5.1.tar
-EGG_NAME=	foolscap-0.5.1
+DISTNAME=	foolscap-0.6.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/.tar//}
 CATEGORIES=	net python
 MASTER_SITES=	http://pypi.python.org/packages/source/f/foolscap/
-EXTRACT_SUFX=	.gz
 
 MAINTAINER=	kamel.derouiche@gmail.com
 HOMEPAGE=	http://foolscap.lothar.com/trac
@@ -19,10 +17,12 @@ DEPENDS+=	${PYPKGPREFIX}-OpenSSL>=0.6:../../security/py-OpenSSL
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=		${WRKDIR}/foolscap-0.5.1
+TEST_TARGET=	test
+
 USE_LANGUAGES=	# none
 
-PYTHON_VERSIONS_ACCEPTED= 26
+# Why?
+PYTHON_VERSIONS_ACCEPTED= 27 26
 
 INSTALLATION_DIRS+=	share/doc/py-foolscap
 

@@ -1,21 +1,20 @@
-# $NetBSD: Makefile,v 1.2 2010/09/25 09:41:39 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2011/02/28 01:45:43 chs Exp $
 
 DISTNAME=	suse_base-${SUSE_VERSION}
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	emulators
-DISTFILES+=	aaa_base-11.3-7.2.${SUSE_ARCH}.rpm
+DISTFILES+=	aaa_base-11.3-8.9.1.${SUSE_ARCH}.rpm
 DISTFILES+=	bash-4.1-8.1.${SUSE_ARCH}.rpm
 DISTFILES+=	coreutils-7.1-10.1.${SUSE_ARCH}.rpm
 DISTFILES+=	cyrus-sasl-2.1.23-11.1.${SUSE_ARCH}.rpm
 DISTFILES+=	findutils-4.4.2-4.1.${SUSE_ARCH}.rpm
 DISTFILES+=	gdbm-1.8.3-373.4.${SUSE_ARCH}.rpm
-DISTFILES+=	glibc-2.11.2-2.4.${SUSE_ARCH}.rpm
+DISTFILES+=	glibc-2.11.2-3.3.1.${SUSE_ARCH}.rpm
 DISTFILES+=	keyutils-libs-1.3-1.9.${SUSE_ARCH}.rpm
 DISTFILES+=	libFLAC8-1.2.1-75.1.${SUSE_ARCH}.rpm
 DISTFILES+=	libacl-2.2.48-8.1.${SUSE_ARCH}.rpm
 DISTFILES+=	libattr-2.4.44-7.1.${SUSE_ARCH}.rpm
 DISTFILES+=	libcap2-2.16-9.1.${SUSE_ARCH}.rpm
-DISTFILES+=	libcurl4-7.20.1-3.4.${SUSE_ARCH}.rpm
 DISTFILES+=	libgcc45-4.5.0_20100604-1.12.${SUSE_ARCH}.rpm
 DISTFILES+=	libidn-1.15-4.1.${SUSE_ARCH}.rpm
 DISTFILES+=	libldap-2_4-2-2.4.21-9.1.${SUSE_ARCH}.rpm
@@ -36,7 +35,7 @@ DISTFILES+=	net-tools-1.60-741.1.${SUSE_ARCH}.rpm
 DISTFILES+=	tcpd-7.6-863.1.${SUSE_ARCH}.rpm
 DISTFILES+=	zlib-1.2.3-141.1.${SUSE_ARCH}.rpm
 
-MAINTAINER=	tonio@NetBSD.org
+MAINTAINER=	chs@NetBSD.org
 COMMENT=	Linux compatibility package
 
 CONFLICTS=	linux_SuSE-5.3 linux_lib-2.4 linuxppc_lib-[0-9]*

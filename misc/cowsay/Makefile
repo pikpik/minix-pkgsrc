@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2007/01/07 09:14:00 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2011/03/17 21:11:44 zafer Exp $
 
 DISTNAME=		cowsay-3.03
 PKGREVISION=		1
 CATEGORIES=		misc
-MASTER_SITES=		ftp://ftp.nog.net/pub/tony/cowsay/
+MASTER_SITES=		# ftp://ftp.nog.net/pub/tony/cowsay/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.nog.net/~tony/warez/cowsay.shtml
@@ -16,7 +16,7 @@ USE_TOOLS+=		perl:run
 SUBST_CLASSES+=		pap
 SUBST_STAGE.pap=	pre-install # after patch to avoid sneaking into patches
 SUBST_MESSAGE.pap=	Adjusting paths to perl and the cows
-SUBST_FILES.pap=	cowsay
+SUBST_FILES.pap=	cowsay cowsay.1
 SUBST_SED.pap=		-e "s|%BANGPERL%|!${PERL5}|" -e "s|%PREFIX%|${PREFIX}|"
 
 NO_CONFIGURE=		yes

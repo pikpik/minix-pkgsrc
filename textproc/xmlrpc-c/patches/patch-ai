@@ -1,13 +1,13 @@
 $NetBSD$
 
---- tools/xmlrpc/Makefile.orig	2009-11-01 17:37:40.000000000 +0100
+--- tools/xmlrpc/Makefile.orig	2011-03-25 16:58:35.000000000 +0000
 +++ tools/xmlrpc/Makefile
-@@ -38,7 +38,7 @@ LIBS = $(LIBXMLRPC_CLIENT) $(LIBXMLRPC) 
- XMLRPC_OBJS = xmlrpc.o dumpvalue.o
+@@ -45,7 +45,7 @@ LIBS = $(LIBXMLRPC_CLIENT) $(LIBXMLRPC) 
+ XMLRPC_OBJS = xmlrpc.o $(DUMPVALUE)
  
  xmlrpc: $(XMLRPC_OBJS) $(LIBS) $(UTILS)
 -	$(CCLD) -o $@ $(LDFLAGS) $(XMLRPC_OBJS) $(UTILS) $(CLIENT_LDLIBS)
 +	libtool --mode=link $(CCLD) -o $@ $(LDFLAGS) $(XMLRPC_OBJS) $(UTILS) $(CLIENT_LDLIBS)
  
- %.o:%.c
+ %.o:%.c $(BLDDIR)/include/xmlrpc-c/config.h
  	$(CC) -c $(CFLAGS) $<

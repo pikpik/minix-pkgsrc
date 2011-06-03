@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2008/11/23 17:24:55 jmcneill Exp $
+# $NetBSD: Makefile,v 1.10 2009/06/05 11:20:27 abs Exp $
 
 DISTNAME=	suse_fontconfig-${SUSE_VERSION}
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	emulators
 DISTFILES=	fontconfig-2.3.2.20050721-10.2.${SUSE_ARCH}.rpm
 

@@ -2,6 +2,7 @@
 libexec/ibus-engine-m17n
 libexec/ibus-setup-m17n
 share/ibus-m17n/icons/ibus-m17n.svg
+share/ibus-m17n/setup/default.xml
 share/ibus-m17n/setup/ibus-m17n-preferences.ui
 share/ibus/component/m17n.xml
 share/locale/zh_CN/LC_MESSAGES/ibus-m17n.mo

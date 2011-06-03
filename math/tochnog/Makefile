@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2006/09/09 02:43:10 obache Exp $
+# $NetBSD: Makefile,v 1.22 2008/03/04 18:12:59 jlam Exp $
 
 DISTNAME=	tochnog-20010429
 CATEGORIES=	math
-MASTER_SITES=	ftp://tochnog.sourceforge.net/pub/tochnog/
+MASTER_SITES=	http://sourceforge.net/projects/tochnog/files/tochnog/
 DISTFILES=	tn.tar.gz tnu.ps.gz tnp.ps.gz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

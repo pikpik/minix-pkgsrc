@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2009/06/30 00:07:19 joerg Exp $
+# $NetBSD: Makefile,v 1.45 2010/04/15 06:50:46 dholland Exp $
 
 DISTNAME=		elm2.5.8
 PKGNAME=		elm-2.5.8
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		mail
 MASTER_SITES=		http://www.instinct.org/elm/files/tarballs/
 

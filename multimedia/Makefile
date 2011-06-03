@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.172 2011/01/19 21:30:32 ryoon Exp $
+# $NetBSD: Makefile,v 1.180 2011/04/10 08:55:07 obache Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -6,6 +6,7 @@ COMMENT=	Multimedia utilities
 SUBDIR+=	RealPlayerGold
 SUBDIR+=	acidrip
 SUBDIR+=	adobe-flash-plugin
+SUBDIR+=	adobe-flash-plugin10.1
 SUBDIR+=	alevt
 SUBDIR+=	avidemux
 SUBDIR+=	bsdav
@@ -29,12 +30,14 @@ SUBDIR+=	ffplay
 SUBDIR+=	flashplayer
 SUBDIR+=	fuppes
 SUBDIR+=	fxtv
+SUBDIR+=	gecko-mediaplayer
 SUBDIR+=	ggrab
 SUBDIR+=	gmediaserver
 SUBDIR+=	gmencoder
 SUBDIR+=	gmplayer
 SUBDIR+=	gnash
 SUBDIR+=	gnome-media
+SUBDIR+=	gnome-mplayer
 SUBDIR+=	goggles
 SUBDIR+=	gopchop
 SUBDIR+=	gpac
@@ -54,6 +57,7 @@ SUBDIR+=	gst-plugins0.10-v4l2
 SUBDIR+=	gst-plugins0.10-vp8
 SUBDIR+=	gst-plugins0.10-x264
 SUBDIR+=	gst-plugins0.10-xvid
+SUBDIR+=	gst123
 SUBDIR+=	gstreamer0.10
 SUBDIR+=	gtranscode
 SUBDIR+=	gxine
@@ -125,7 +129,6 @@ SUBDIR+=	ruby-clutter-gst
 SUBDIR+=	ruby-gnome2-gstreamer
 SUBDIR+=	ruby-ming
 SUBDIR+=	smpeg
-SUBDIR+=	smpeg-xmms
 SUBDIR+=	subtitleeditor
 SUBDIR+=	swfdec
 SUBDIR+=	swfdec-gnome
@@ -140,6 +143,7 @@ SUBDIR+=	tvtime
 SUBDIR+=	ushare
 SUBDIR+=	vlc
 SUBDIR+=	vlc08
+SUBDIR+=	vlc10
 SUBDIR+=	vls
 SUBDIR+=	win32-codecs
 SUBDIR+=	x264-devel

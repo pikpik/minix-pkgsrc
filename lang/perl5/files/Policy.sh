@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Policy.sh,v 1.1 2010/08/19 20:47:10 seb Exp $
 #
 # Site-wide policy settings for pkgsrc Perl
 #
@@ -35,7 +35,7 @@ vendorscript='@PERL5_VENDORBASE@/bin'
 # Put any compiled binaries into vendor- and site-specific locations to
 # avoid conflicts with each other.  The perllink script will handle all
 # the appropriate symlinking.
-sitebin='@PERL5_SITEBASE@/bin'
+sitebin='@PERL5_SITEBIN@'
 vendorbin='@PERL5_VENDORBASE@/bin'
 
 # Put the API-specific files into API-specific directories instead

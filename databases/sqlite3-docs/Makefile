@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2011/02/02 09:03:09 adam Exp $
 
-DISTNAME=	sqlite_docs_3_7_3
-PKGNAME=	sqlite3-docs-3.7.3
+DISTNAME=	sqlite-doc-3070600
+PKGNAME=	sqlite3-docs-3.7.6
 CATEGORIES=	databases
 MASTER_SITES=	http://www.hwaci.com/sw/sqlite/ \
 		http://www.sqlite.org/
@@ -19,7 +19,6 @@ LICENSE=	public-domain
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=		${WRKDIR}/sqlite-3_7_3-docs
 USE_LANGUAGES=	# none
 USE_TOOLS+=	find xargs pax
 

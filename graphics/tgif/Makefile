@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.58 2010/01/18 09:59:09 wiz Exp $
+# $NetBSD: Makefile,v 1.60 2011/01/30 01:53:41 markd Exp $
 #
 
 DISTNAME=		tgif-4.2.2
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		graphics
 MASTER_SITES=		ftp://bourbon.usc.edu/pub/tgif/free-of-charge/
 
@@ -28,6 +28,9 @@ post-patch::
 	@${RM} -f ${WRKSRC}/Tgif.tmpl
 	@${CP}  ${OS_TEMPLATE} ${WRKSRC}/Tgif.tmpl
 
+.if ${OPSYS} == "Linux"
+.include "../../devel/libidn/buildlink3.mk"
+.endif 
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

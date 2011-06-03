@@ -1,4 +1,4 @@
-/*	$NetBSD: show.c,v 1.30 2009/08/02 17:56:45 joerg Exp $	*/
+/*	$NetBSD: show.c,v 1.31 2010/11/22 09:00:12 joerg Exp $	*/
 
 #if HAVE_CONFIG_H
 #include "config.h"
@@ -7,7 +7,7 @@
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-__RCSID("$NetBSD: show.c,v 1.30 2009/08/02 17:56:45 joerg Exp $");
+__RCSID("$NetBSD: show.c,v 1.31 2010/11/22 09:00:12 joerg Exp $");
 
 /*
  * FreeBSD install - a package for the installation and maintainance
@@ -197,7 +197,8 @@ show_plist(const char *title, package_t *plist, pl_ent_t type)
 			case PLIST_PKGCFL:
 			case PLIST_BLDDEP:
 			case PLIST_PKGDIR:
-				printf(Quiet ? showv[p->type].sh_quiet : showv[p->type].sh_verbose, p->name);
+				printf(Quiet ? showv[p->type].sh_quiet : showv[p->type].sh_verbose,
+					(p->name) ? p->name : "(null)");
 				break;
 			default:
 				warnx("unknown command type %d (%s)", p->type, p->name);

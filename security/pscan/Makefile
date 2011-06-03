@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2007/12/02 08:32:25 rillig Exp $
+# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:45 joerg Exp $
 
 DISTNAME=	pscan
 PKGNAME=	pscan-1.3
 CATEGORIES=	security devel
-MASTER_SITES=	http://www.striker.ottawa.on.ca/~aland/pscan/
+MASTER_SITES=	# http://www.striker.ottawa.on.ca/~aland/pscan/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.striker.ottawa.on.ca/~aland/pscan/

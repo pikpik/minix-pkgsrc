@@ -1,8 +1,8 @@
 $NetBSD$
 
---- agent/mibgroup/ucd-snmp/disk.c.orig	2004-10-05 07:50:38.000000000 +0000
+--- agent/mibgroup/ucd-snmp/disk.c.orig	2010-06-16 21:34:42.000000000 +0000
 +++ agent/mibgroup/ucd-snmp/disk.c
-@@ -45,9 +45,11 @@
+@@ -51,9 +51,11 @@
  #ifdef HAVE_SYS_STAT_H
  #include <sys/stat.h>
  #endif

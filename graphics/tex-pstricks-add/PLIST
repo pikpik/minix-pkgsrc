@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/dvips/pstricks-add/pstricks-add.pro
+share/texmf-dist/tex/generic/pstricks-add/pstricks-add.tex
+share/texmf-dist/tex/latex/pstricks-add/pstricks-add.sty

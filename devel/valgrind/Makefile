@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:29:30 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2008/09/13 19:07:31 dholland Exp $
 #
 
 DISTNAME=		valgrind-2.4.0
@@ -10,6 +10,9 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://valgrind.org/downloads/
 COMMENT=		Debugging and profiling tools
+LICENSE=		gnu-gpl-v2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 PKGCONFIG_OVERRIDE+=	${WRKSRC}/valgrind.pc.in

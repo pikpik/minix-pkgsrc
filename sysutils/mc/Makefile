@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.75 2009/12/16 15:29:48 joerg Exp $
+# $NetBSD: Makefile,v 1.81 2011/04/22 13:44:44 obache Exp $
 
 DISTNAME=	mc-4.7.0.10
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.midnight-commander.org/downloads/
 EXTRACT_SUFX=	.tar.bz2
@@ -17,6 +17,8 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 USE_TOOLS+=		pkg-config unzip:run
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
+
+CHECK_INTERPRETER_SKIP=	libexec/mc/extfs.d/s3+
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -39,15 +41,15 @@ CONFFILES=	cedit.menu edit.indent.rc edit.spell.rc filehighlight.ini \
 		mc.ext mc.keymap mc.keymap.default mc.keymap.emacs mc.lib \
 		mc.menu mc.menu.sr
 
-.if !empty(PKG_OPTIONS:Medit)
+.if !empty(PKG_OPTIONS:Mmc-edit)
 CONFFILES+=	syntax/Syntax
 .endif
 
-.if !empty(PKG_OPTIONS:Mvfs)
+.if !empty(PKG_OPTIONS:Mmc-vfs)
 CONFFILES+=	sfs.ini
 .endif
 
-.if !empty(PKG_OPTIONS:Mcharset)
+.if !empty(PKG_OPTIONS:Mmc-charset)
 CONFFILES+=	mc.charsets
 .endif
 

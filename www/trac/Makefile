@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.48 2010/03/10 15:27:01 gdt Exp $
+# $NetBSD: Makefile,v 1.52 2011/03/15 12:58:04 gdt Exp $
 #
 
-DISTNAME=	Trac-0.12
+DISTNAME=	Trac-0.12.2
 PKGNAME=	${DISTNAME:tl}
+PKGREVISION=	1
 CATEGORIES=	devel www
 MASTER_SITES=	http://ftp.edgewall.org/pub/trac/ \
 		ftp://ftp.edgewall.org/pub/trac/
@@ -14,6 +15,28 @@ LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+# Maintainer notes:
+#
+# This package is similar to wip/trac, which in turn structurally
+# matches www/ja-trac.  Ideally, www/trac and ja-trac would converge.
+# This note outlines the known differences and proposed resolution.
+# Besides bringing the packages closer, a goal is to avoid breaking
+# existing trac installations that blindly upgrade, to the extent that
+# this is reasonable.
+#
+# subversion dependency: ja-trac does not depend on subversion,
+# because 1) trac is useful without a repo, and because one can use
+# other than svn.  Perhaps options to specify repo support (not a
+# group, because trac can support multiple), defaulting to subversion
+# is a good strategy for now.
+#
+# www/trac options are not in options.mk (to be fixed).
+#
+# sqlite2 vs sqlite3: This package has logic to choose sqlite2 vs
+# sqlite3, and ja-trac uses only sqlite2.  This is hard, because
+# database format changes are disruptive, and gdt should consult
+# upstream's idea of best practice.
+
 DEPENDS+=	${PYPKGPREFIX}-genshi>=0.5:../../www/py-genshi
 DEPENDS+=	${PYPKGPREFIX}-subversion>=1.1.0:../../devel/py-subversion
 
@@ -21,7 +44,7 @@ USE_TOOLS+=	pax
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.trac
 PKG_OPTIONS_REQUIRED_GROUPS=	db
-PKG_OPTIONS_GROUP.db=	sqlite pgsql psycopg2
+PKG_OPTIONS_GROUP.db=	sqlite psycopg2
 PKG_SUGGESTED_OPTIONS=	sqlite
 
 .include "../../mk/bsd.options.mk"
@@ -41,9 +64,8 @@ DEPENDS+=	${PYPKGPREFIX}-sqlite2>=2:../../databases/py-sqlite2
 DEPENDS+=	${PYPKGPREFIX}-sqlite3>=0:../../databases/py-sqlite3
 .endif
 .endif
-.if !empty(PKG_OPTIONS:Mpgsql)
-DEPENDS+=	${PYPKGPREFIX}-PgSQL>=2.4:../../databases/py-PgSQL
-.endif
+# trac 0.12 dropped support for py-PgSQL.  Switching to py-psycopg2 with
+# an existing database that used to be accessed by py-PgSQL worked.
 .if !empty(PKG_OPTIONS:Mpsycopg2)
 DEPENDS+=	${PYPKGPREFIX}-psycopg2>=2:../../databases/py-psycopg2
 .endif

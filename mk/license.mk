@@ -1,4 +1,4 @@
-# $NetBSD: license.mk,v 1.36 2011/01/13 13:25:56 wiz Exp $
+# $NetBSD: license.mk,v 1.41 2011/04/22 08:09:00 adam Exp $
 #
 # This file handles everything about the LICENSE variable. It is
 # included automatically by bsd.pkg.mk.
@@ -98,8 +98,9 @@
 # XXX open-font-license should perhaps be changed to open-font
 
 DEFAULT_ACCEPTABLE_LICENSES= \
-	public-domain \
+	public-domain unlicense \
 	gnu-fdl-v1.1 gnu-fdl-v1.2 gnu-fdl-v1.3 \
+	gnu-gpl-v1 \
 	gnu-gpl-v2 gnu-lgpl-v2 gnu-lgpl-v2.1 \
 	gnu-gpl-v3 gnu-lgpl-v3 \
 	original-bsd modified-bsd 2-clause-bsd \
@@ -111,10 +112,14 @@ DEFAULT_ACCEPTABLE_LICENSES= \
 	open-font-license \
 	mpl-1.0 mpl-1.1 \
 	png-license \
+	postgresql-license \
 	zpl \
 	python-software-foundation \
 	ipafont \
-	isc
+	isc \
+	boost-license \
+	mplusfont \
+	cc-by-sa-v3.0
 
 # not approved by OSI, derived from BSD
 DEFAULT_ACCEPTABLE_LICENSES+=	info-zip

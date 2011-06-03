@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/03/23 17:43:15 darcy Exp $
+# $NetBSD: Makefile,v 1.3 2009/06/30 00:07:12 joerg Exp $
 #
 
 DISTNAME=	cc65-sources-2.12.0
@@ -13,9 +13,13 @@ COMMENT=	C cross compiler for 6502 target systems
 
 MAKE_JOBS_SAFE=		no
 
+PKG_DESTDIR_SUPPORT=	user-destdir
+
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 MAKE_FILE=	make/gcc.mak
 USE_TOOLS+=	gmake perl
 REPLACE_PERL=	src/ca65html/ca65html
+
+INSTALL_MAKE_FLAGS+=	PREFIX=${DESTDIR}${PREFIX}
 
 .include "../../mk/bsd.pkg.mk"

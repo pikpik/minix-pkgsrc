@@ -6,9 +6,6 @@ ${PYSITELIB}/hgext/__init__.pyo
 ${PYSITELIB}/hgext/acl.py
 ${PYSITELIB}/hgext/acl.pyc
 ${PYSITELIB}/hgext/acl.pyo
-${PYSITELIB}/hgext/bookmarks.py
-${PYSITELIB}/hgext/bookmarks.pyc
-${PYSITELIB}/hgext/bookmarks.pyo
 ${PYSITELIB}/hgext/bugzilla.py
 ${PYSITELIB}/hgext/bugzilla.pyc
 ${PYSITELIB}/hgext/bugzilla.pyo
@@ -164,6 +161,9 @@ ${PYSITELIB}/mercurial/archival.pyc
 ${PYSITELIB}/mercurial/archival.pyo
 ${PYSITELIB}/mercurial/base85.so
 ${PYSITELIB}/mercurial/bdiff.so
+${PYSITELIB}/mercurial/bookmarks.py
+${PYSITELIB}/mercurial/bookmarks.pyc
+${PYSITELIB}/mercurial/bookmarks.pyo
 ${PYSITELIB}/mercurial/bundlerepo.py
 ${PYSITELIB}/mercurial/bundlerepo.pyc
 ${PYSITELIB}/mercurial/bundlerepo.pyo
@@ -407,6 +407,8 @@ ${PYSITELIB}/mercurial/templatekw.pyo
 ${PYSITELIB}/mercurial/templater.py
 ${PYSITELIB}/mercurial/templater.pyc
 ${PYSITELIB}/mercurial/templater.pyo
+${PYSITELIB}/mercurial/templates/atom/bookmarkentry.tmpl
+${PYSITELIB}/mercurial/templates/atom/bookmarks.tmpl
 ${PYSITELIB}/mercurial/templates/atom/changelog.tmpl
 ${PYSITELIB}/mercurial/templates/atom/changelogentry.tmpl
 ${PYSITELIB}/mercurial/templates/atom/error.tmpl
@@ -417,6 +419,7 @@ ${PYSITELIB}/mercurial/templates/atom/tagentry.tmpl
 ${PYSITELIB}/mercurial/templates/atom/tags.tmpl
 ${PYSITELIB}/mercurial/templates/coal/header.tmpl
 ${PYSITELIB}/mercurial/templates/coal/map
+${PYSITELIB}/mercurial/templates/gitweb/bookmarks.tmpl
 ${PYSITELIB}/mercurial/templates/gitweb/branches.tmpl
 ${PYSITELIB}/mercurial/templates/gitweb/changelog.tmpl
 ${PYSITELIB}/mercurial/templates/gitweb/changelogentry.tmpl
@@ -443,6 +446,7 @@ ${PYSITELIB}/mercurial/templates/map-cmdline.changelog
 ${PYSITELIB}/mercurial/templates/map-cmdline.compact
 ${PYSITELIB}/mercurial/templates/map-cmdline.default
 ${PYSITELIB}/mercurial/templates/map-cmdline.xml
+${PYSITELIB}/mercurial/templates/monoblue/bookmarks.tmpl
 ${PYSITELIB}/mercurial/templates/monoblue/branches.tmpl
 ${PYSITELIB}/mercurial/templates/monoblue/changelog.tmpl
 ${PYSITELIB}/mercurial/templates/monoblue/changelogentry.tmpl
@@ -465,6 +469,7 @@ ${PYSITELIB}/mercurial/templates/monoblue/search.tmpl
 ${PYSITELIB}/mercurial/templates/monoblue/shortlog.tmpl
 ${PYSITELIB}/mercurial/templates/monoblue/summary.tmpl
 ${PYSITELIB}/mercurial/templates/monoblue/tags.tmpl
+${PYSITELIB}/mercurial/templates/paper/bookmarks.tmpl
 ${PYSITELIB}/mercurial/templates/paper/branches.tmpl
 ${PYSITELIB}/mercurial/templates/paper/changeset.tmpl
 ${PYSITELIB}/mercurial/templates/paper/error.tmpl
@@ -494,6 +499,8 @@ ${PYSITELIB}/mercurial/templates/raw/index.tmpl
 ${PYSITELIB}/mercurial/templates/raw/manifest.tmpl
 ${PYSITELIB}/mercurial/templates/raw/map
 ${PYSITELIB}/mercurial/templates/raw/notfound.tmpl
+${PYSITELIB}/mercurial/templates/rss/bookmarkentry.tmpl
+${PYSITELIB}/mercurial/templates/rss/bookmarks.tmpl
 ${PYSITELIB}/mercurial/templates/rss/changelog.tmpl
 ${PYSITELIB}/mercurial/templates/rss/changelogentry.tmpl
 ${PYSITELIB}/mercurial/templates/rss/error.tmpl

@@ -1,14 +1,13 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.3 2011/05/13 19:57:37 ryoon Exp $
 #
 
-DISTNAME=	IPAfont00302
+DISTNAME=	IPAfont00303
 PKGNAME=	${DISTNAME:S/IPAfont/ipafont-/}
 CATEGORIES=	fonts japanese
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=ipafonts/46146/} \
-		http://info.openlab.ipa.go.jp/ipafont/fontdata/
+MASTER_SITES=	http://info.openlab.ipa.go.jp/ipafont/fontdata/
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	ryo_on@yk.rim.or.jp
+MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://ossipedia.ipa.go.jp/ipafont/
 COMMENT=	IPA JIS X 0213 fonts (Gothic, P Gothic, Mincho, and P Mincho)
 LICENSE=	ipafont
@@ -32,7 +31,7 @@ INSTALL_FONTS=	ipag.ttf \
 		ipam.ttf \
 		ipamp.ttf
 INSTALL_DOCS=	IPA_Font_License_Agreement_v1.0.txt \
-		Readme_IPAfont00302.txt
+		Readme_IPAfont00303.txt
 
 USE_LANGUAGES=	# none
 

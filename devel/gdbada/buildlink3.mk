@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:10:42 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2009/03/20 19:24:13 joerg Exp $
 
 BUILDLINK_TREE+=	gdbada
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	gdbada
 GDBADA_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.gdbada+=	gdbada>=5.3
-BUILDLINK_ABI_DEPENDS.gdbada+=	gdbada>=6.3nb1
+BUILDLINK_ABI_DEPENDS.gdbada+=	gdbada>=6.3nb3
 BUILDLINK_PKGSRCDIR.gdbada?=	../../devel/gdbada
 
 .include "../../mk/pthread.buildlink3.mk"

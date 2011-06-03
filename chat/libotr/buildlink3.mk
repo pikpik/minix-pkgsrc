@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2007/11/11 21:53:57 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:24:01 joerg Exp $
 
 BUILDLINK_TREE+=	libotr
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	libotr
 LIBOTR_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libotr+=	libotr>=3.0.0
+BUILDLINK_ABI_DEPENDS.libotr?=	libotr>=3.2.0nb1
 BUILDLINK_PKGSRCDIR.libotr?=	../../chat/libotr
 
 .include "../../security/libgcrypt/buildlink3.mk"

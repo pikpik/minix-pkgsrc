@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2010/06/15 09:17:20 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2011/02/25 09:47:25 wiz Exp $
 #
 
-DISTNAME=	gaupol-0.17
+DISTNAME=	gaupol-0.17.2
 CATEGORIES=	misc
 MASTER_SITES=	http://download.gna.org/gaupol/0.17/
 
@@ -15,7 +15,7 @@ DEPENDS+=	${PYPKGPREFIX}-chardet-[0-9]*:../../converters/py-chardet
 DEPENDS+=	${PYPKGPREFIX}-enchant>=1.4:../../textproc/py-enchant
 DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.16:../../x11/py-gtk2
 
-PYTHON_VERSIONS_ACCEPTED=	26
+PYTHON_VERSIONS_ACCEPTED=	27 26
 PYDISTUTILSPKG= 		yes
 USE_LANGUAGES=			# none
 USE_TOOLS+=			intltool msgfmt

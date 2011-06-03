@@ -1,7 +1,5 @@
-$NetBSD: patch-ac,v 1.17 2008/09/16 12:53:08 taca Exp $
-
---- defines.h.orig	2009-08-28 04:21:07.000000000 +0300
-+++ defines.h	2010-02-19 12:07:15.000000000 +0200
+--- defines.h.orig	Mon Jan 17 10:15:31 2011
++++ defines.h	Fri Jun  3 11:37:42 2011
 @@ -30,6 +30,15 @@
  
  /* Constants */
@@ -18,10 +16,24 @@ $NetBSD: patch-ac,v 1.17 2008/09/16 12:53:08 taca Exp $
  #if defined(HAVE_DECL_SHUT_RD) && HAVE_DECL_SHUT_RD == 0
  enum
  {
-@@ -652,6 +661,24 @@
- #    endif
- #  endif
- #endif
+@@ -56,8 +65,10 @@
+ /*
+  * Definitions for DiffServ Codepoints as per RFC2474
+  */
++#ifndef __minix
+ #include <netinet/in_systm.h>
+ #include <netinet/ip.h>
++#endif
+ #ifndef IPTOS_DSCP_AF11
+ # define	IPTOS_DSCP_AF11		0x28
+ # define	IPTOS_DSCP_AF12		0x30
+@@ -695,6 +706,24 @@
+ #  else
+ #    ifdef CONF_WTMP_FILE
+ #      define WTMP_FILE CONF_WTMP_FILE
++#    endif
++#  endif
++#endif
 +#ifndef UTMPX_FILE
 +#  ifdef _PATH_UTMPX
 +#    define UTMPX_FILE _PATH_UTMPX
@@ -37,9 +49,6 @@ $NetBSD: patch-ac,v 1.17 2008/09/16 12:53:08 taca Exp $
 +#  else
 +#    ifdef CONF_WTMPX_FILE
 +#      define WTMPX_FILE CONF_WTMPX_FILE
-+#    endif
-+#  endif
-+#endif
- /* pick up the user's location for lastlog if given */
- #ifndef LASTLOG_FILE
- #  ifdef _PATH_LASTLOG
+ #    endif
+ #  endif
+ #endif

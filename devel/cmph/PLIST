@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/cmph
+include/chd_ph.h
+include/cmph.h
+include/cmph_time.h
+include/cmph_types.h
+lib/libcmph.la
+lib/pkgconfig/cmph.pc
+man/man1/cmph.1

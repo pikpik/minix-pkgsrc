@@ -1,18 +1,21 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:38:49 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2011/04/22 13:44:12 obache Exp $
 
 DISTNAME=	kdeutils-${_KDE_VERSION}
+PKGREVISION=	3
 CATEGORIES=	misc
 COMMENT=	Utilities for the KDE integrated X11 desktop
 
 .include "../../meta-pkgs/kde4/Makefile.kde4"
 
-PYTHON_VERSIONS_ACCEPTED= 26 25
+PYTHON_VERSIONS_ACCEPTED= 27 26 25
 #make sure cmake picks up the same Python version as pkgsrc
 CMAKE_ARGS+=	-DPYTHON_EXECUTABLE:FILEPATH=${PYTHONBIN}
 CMAKE_ARGS+=	-DLIBLZMA_INCLUDE_DIR:PATH=${BUILDLINK_PREFIX.xz}/include
 CMAKE_ARGS+=	-DLIBLZMA_LIBRARY:FILEPATH=${BUILDLINK_PREFIX.xz}/lib/liblzma.so
 
 # BUILD_MAKE_FLAGS+= VERBOSE=1
+
+REPLACE_PYTHON+=	printer-applet/*.py
 
 .include "options.mk"
 

@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.13 2010/06/13 22:44:16 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2011/02/28 14:52:49 wiz Exp $
 #
 
 DISTNAME=		4stAttack-2.1.4
-PKGREVISION=		10
+PKGREVISION=		11
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=forcedattack/}
 
-MAINTAINER=		recht@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://forcedattack.sourceforge.net/
 COMMENT=		Game in which you have to try to out-smart your opponent
 

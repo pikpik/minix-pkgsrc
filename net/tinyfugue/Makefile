@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2007/12/27 11:43:51 obache Exp $
+# $NetBSD: Makefile,v 1.26 2011/04/22 13:44:28 obache Exp $
 
 DISTNAME=	tf-40s1
 PKGNAME=	tf-4.0s1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	net games
 MASTER_SITES=	ftp://laurel.actlab.utexas.edu/pub/tinyfugue/ \
 		${MASTER_SITE_SOURCEFORGE:=tinyfugue/}
@@ -10,6 +10,8 @@ MASTER_SITES=	ftp://laurel.actlab.utexas.edu/pub/tinyfugue/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tinyfugue.sourceforge.net/
 COMMENT=	Popular programmable MUD client, with macro support and more
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
@@ -21,6 +23,13 @@ PATCHFILES=	tf-40s1-mccp-patch.gz
 PATCH_DIST_STRIP=-p1
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
+
+SUBST_CLASSES+=         fix-paths
+SUBST_MESSAGE.fix-paths=      late-addition DESTDIR
+SUBST_STAGE.fix-paths=        pre-configure
+SUBST_FILES.fix-paths=        unix/Config
+SUBST_SED.fix-paths=          -e 's,@DESTDIR@,'${DESTDIR}',g'
+
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

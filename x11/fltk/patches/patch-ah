@@ -1,10 +1,19 @@
-$NetBSD$
+$NetBSD: patch-ah,v 1.6 2011/02/28 15:38:13 wiz Exp $
 
 Fix build with png-1.5.
+http://www.fltk.org/str.php?L2542+P0+S-2+C0+I0+E0+Q
 
 --- src/Fl_PNG_Image.cxx.orig	2006-06-09 16:16:34.000000000 +0000
 +++ src/Fl_PNG_Image.cxx
-@@ -75,7 +75,7 @@ Fl_PNG_Image::Fl_PNG_Image(const char *p
+@@ -66,6 +66,7 @@ Fl_PNG_Image::Fl_PNG_Image(const char *p
+   png_structp	pp;			// PNG read pointer
+   png_infop	info;			// PNG info pointers
+   png_bytep	*rows;			// PNG row pointers
++  int		num_trans = 0;		// PNG # of transp. colors
+ 
+ 
+   // Open the PNG file...
+@@ -75,7 +76,7 @@ Fl_PNG_Image::Fl_PNG_Image(const char *p
    pp   = png_create_read_struct(PNG_LIBPNG_VER_STRING, NULL, NULL, NULL);
    info = png_create_info_struct(pp);
  
@@ -13,7 +22,7 @@ Fix build with png-1.5.
    {
      Fl::warning("PNG file \"%s\" contains errors!\n", png);
      return;
-@@ -87,27 +87,21 @@ Fl_PNG_Image::Fl_PNG_Image(const char *p
+@@ -87,27 +88,28 @@ Fl_PNG_Image::Fl_PNG_Image(const char *p
    // Get the image dimensions and convert to grayscale or RGB...
    png_read_info(pp, info);
  
@@ -22,14 +31,16 @@ Fix build with png-1.5.
      png_set_expand(pp);
  
 -  if (info->color_type & PNG_COLOR_MASK_COLOR)
--    channels = 3;
--  else
--    channels = 1;
-+  channels = png_get_channels(pp, info);
++  if (png_get_color_type(pp, info) & PNG_COLOR_MASK_COLOR)
+     channels = 3;
+   else
+     channels = 1;
  
 -  if ((info->color_type & PNG_COLOR_MASK_ALPHA) || info->num_trans)
--    channels ++;
--
++  png_get_tRNS(pp, info, 0, &num_trans, 0);
++  if ((png_get_color_type(pp, info) & PNG_COLOR_MASK_ALPHA) || num_trans)
+     channels ++;
+ 
 -  w((int)(info->width));
 -  h((int)(info->height));
 +  w((int)(png_get_image_width(pp, info)));

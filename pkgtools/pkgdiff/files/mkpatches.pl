@@ -1,6 +1,6 @@
 #!@PERL5@
 #
-# $NetBSD: mkpatches.pl,v 1.12 2005/12/13 12:05:08 wiz Exp $
+# $NetBSD: mkpatches.pl,v 1.15 2011/02/02 23:35:11 wiz Exp $
 #
 # mkpatches: creates a set of patches patch-aa, patch-ab, ...
 #   in work/.newpatches by looking for *.orig files in and below
@@ -13,9 +13,30 @@
 #   It retains the naming and header (RCS Id and comment) from the
 #   patches directory.
 #
-# Copyright (c) 2000 by Thomas Klausner <wiz@NetBSD.org>
+# Copyright (c) 2000, 2011 by Thomas Klausner <wiz@NetBSD.org>
 #               2004 by Dieter Baron <dillo@NetBSD.org>
-# All Rights Reserved.  Absolutely no warranty.
+# All rights reserved.
+#
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+# 1. Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+# 2. Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in the
+#    documentation and/or other materials provided with the distribution.
+#
+# THIS SOFTWARE IS PROVIDED BY THE AUTHORS
+# ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+# TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHORS
+# BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+# CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+# SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+# CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
 #
 
 use Getopt::Std;
@@ -25,61 +46,105 @@ use File::Spec;
 my $patchdir;
 my $old_patchdir;
 my $wrkdir;
+my $wrksrc;
 my %old_filename;
 my %old_header;
 
 # create patchdir, or empty it if already existing
 
 sub create_patchdir {
-    if ( -d $patchdir ) {
-	unlink "$patchdir/*";
-    } else {
+    if (! -d $patchdir) {
 	mkdir($patchdir, 0755);
+	if (-d $origpatchdir && "$origpatchdir" != "$patchdir") {
+	    system("cp", "$origpatchdir/p*", "$patchdir");
+	}
     }
 }
 
 # read command line arguments
 
+undef($opt_c);
+undef($opt_D);
 undef($opt_d);
 undef($opt_h);
+undef($opt_r);
 undef($opt_v);
 
-getopts('d:hv');
+getopts('cDd:hrv');
 
 if ($opt_h) {
 		($prog) = ($0 =~ /([^\/]+)$/);
 		print STDERR <<EOF;
-usage: $prog [-d output-directory]
-    -d dirname	directory to put the resulting patches into;
-		defaults to \$WRKDIR/.newpatches
+usage: $prog [-hv] [-c | -r] [-D | -d dir]
+    -c   	commit -- clean up old patches backups
+    -d dir   	create patches in this directory
+    -D   	create patches in \$WRKDIR/.newpatches
+    -h   	show this help
+    -r   	revert -- remove new patches, put old patches back
     -v   	verbose - list .orig files as processed
 EOF
 		exit 0;
 };
 
-# get WRKDIR
-
-$wrkdir=`@MAKE@ show-var VARNAME=WRKDIR` or
-    die ("can't find WRKDIR -- wrong dir?");
-chomp($wrkdir);
-$old_patchdir=`@MAKE@ show-var VARNAME=PATCHDIR` or
-    die ("can't find PATCHDIR -- wrong dir?");
-chomp($old_patchdir);
-
-if ($opt_d) {
-    $patchdir = cwd()."/$opt_d";
-} 
-else {
-    $patchdir="$wrkdir"."/.newpatches";
+if ($opt_d && $opt_D) {
+    print STDERR "-D and -d conflict, choose one\n";
+    exit 1;
 }
 
-create_patchdir();
-
-# get WRKSRC
+# get some pkgsrc variables
 
 $wrksrc=`@MAKE@ show-var VARNAME=WRKSRC` or 
     die ("can't find WRKSRC -- wrong dir?");
 chomp($wrksrc);
+$wrkdir=`@MAKE@ show-var VARNAME=WRKDIR` or
+    die ("can't find WRKDIR -- wrong dir?");
+chomp($wrkdir);
+$origpatchdir=`@MAKE@ show-var VARNAME=PATCHDIR` or
+    die ("can't find PATCHDIR -- wrong dir?");
+chomp($origpatchdir);
+
+if ($opt_D) {
+    $patchdir = "$wrkdir/.newpatches";
+} elsif ($opt_d) {
+    if (-d "/$opt_d") {
+	$patchdir = $opt_d;
+    } else {
+	my $pwd = cwd();
+	chomp($pwd);
+	$patchdir = "$pwd/$opt_d";
+    }
+} else {
+    $patchdir = $origpatchdir;
+}
+
+if ($opt_c) {
+    open(HANDLE, "find ${patchdir} -type f -name \\\*.orig |");
+    foreach (<HANDLE>) {
+	chomp;
+	unlink $_;
+    }
+    exit 0;
+}
+
+if ($opt_r) {
+    open(HANDLE, "find ${patchdir} -type f -name \\\*.orig |");
+    foreach (<HANDLE>) {
+	chomp;
+	my $orig = $_;
+	my $new = $_;
+	$new =~ s/.orig$//;
+	rename $orig, $new;
+	if (! -s $new) {
+	    unlink $new;
+	}
+    }
+    exit 0;
+}
+
+create_patchdir();
+
+
+move_away_old_patches();
 
 analyze_old_patches();
 
@@ -87,7 +152,7 @@ chdir $wrksrc or die ("can't cd to WRKSRC ($wrksrc)");
 
 # find files
 
-open(HANDLE, "find ${wrkdir} -type f -name \\\*.orig |");
+open(HANDLE, "find ${wrksrc} -type f -name \\\*.orig |");
 
 # create patches
 
@@ -98,22 +163,18 @@ foreach (sort <HANDLE>) {
     $path = $_;
     $complete = $path;
     $complete =~ s/.orig$//;
-    $new = File::Spec->abs2rel( $complete, $wrksrc );
-    $old = File::Spec->abs2rel( $path, $wrksrc );
-    if ( -f $complete ) {
+    $new = File::Spec->abs2rel($complete, $wrksrc);
+    $old = File::Spec->abs2rel($path, $wrksrc);
+    if (-f $complete) {
 	$patchfile = patch_name($new);
 	if ($opt_v) {
 	    print "$patchfile -> $complete\n";
 	}
-	$diff=`pkgdiff $old $new`;
-	if ( $? ) {
+	$diff=`pkgdiff $old $new 2>&1`;
+	if ($?) {
 	    print "$old: $diff";
 	}
-	if ( "$diff" eq "" ) {
-	    print ("$new and $old don't differ\n");
-	} else {
-	    make_patch($old, $new, $patchfile, $diff);
-	}
+	make_patch($old, $new, $patchfile, $diff);
     } else {
 	print ("$new doesn't exist, though $old does\n");
     }
@@ -122,19 +183,28 @@ foreach (sort <HANDLE>) {
 sub analyze_old_patches 
 {
     my $filename;
+    my $origfilename;
     my $patch;
     my $name;
+    my $checkname;
 
     %old_header = ();
     %old_filename = ();
 
-    open(HANDLE, "ls $old_patchdir/patch-* 2>/dev/null |");
+    open(HANDLE, "ls $patchdir/patch-* 2>/dev/null |");
 
-    while ($filename = <HANDLE>) {
-	chomp $filename;
-	$patch = `sed '/^\+\+\+/ q' $filename`;
+    while ($origfilename = <HANDLE>) {
+	chomp $origfilename;
+	next if not $origfilename =~ m/.orig$/;
+	$filename = $origfilename;
+	$filename =~ s/.orig$//;
+	$checkname = $origfilename;
+	if (! -s $checkname) {
+	    $checkname = $filename;
+	}
+	$patch = `sed '/^\+\+\+/ q' $checkname`;
 	if (!($patch =~ m/^\+\+\+ ([^\t\n]*)(\n$|\t)/m)) {
-	    warn "cannot extract filename from patch $filename";
+	    warn "cannot extract filename from patch $checkname";
 	    next;
 	}
 	$name = $1;
@@ -148,6 +218,19 @@ sub analyze_old_patches
     close(HANDLE);
 }
 
+sub move_away_old_patches
+{
+    open(HANDLE, "ls $patchdir/patch-* 2>/dev/null |");
+
+    while ($filename = <HANDLE>) {
+	chomp $filename;
+	next if $filename =~ m/.orig$/;
+	if (-f "$filename" and not -f "$filename.orig") {
+	    rename "$filename", "$filename.orig";
+	}
+    }
+	
+}
 
 sub patch_name # filename
 {
@@ -158,12 +241,11 @@ sub patch_name # filename
 	return $old_filename{$name};
     }
 
-    for ($l=0; ; $l++) {
-	$pname = 'patch-' . ("aa" .. "zz")[$l];
-	if (! -f "$old_patchdir/$pname" and ! -f "$patchdir/$pname") {
-	    return $pname;
-	}
-    }
+    $name =~ s,_,__,g;
+    $name =~ s,/,_,g;
+    $name = "patch-$name";
+
+    return $name;
 }
 
 
@@ -171,6 +253,15 @@ sub make_patch # new old patchfile diff
 {
     my ($old, $new, $patchfile, $diff) = @_;
 
+    if ("$diff" eq "") {
+	print "$old and $new don't differ\n";
+	if (-f "$patchdir/$patchfile.orig") {
+	    rename "$patchdir/$patchfile.orig", "$patchdir/$patchfile";
+	}
+    }
+    if (not -f "$patchdir/$patchfile.orig") {
+	system("touch", "$patchdir/$patchfile.orig");
+    }
     if (defined($old_header{$new})) {
 	$diff =~ s/^.*\n(--- )/$1/s;
 	$diff = $old_header{$new} . $diff;

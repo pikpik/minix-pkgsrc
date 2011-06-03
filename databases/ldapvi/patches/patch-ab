@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- misc.c.orig	2007-05-05 10:17:26.000000000 +0000
++++ misc.c
+@@ -315,7 +315,7 @@ write_ldapvi_history()
+ }
+ 
+ char *
+-getline(char *prompt, char *value)
++lv_getline(char *prompt, char *value)
+ {
+ 	tdialog d;
+ 	init_dialog(&d, DIALOG_DEFAULT, prompt, value);

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2010/07/14 11:11:21 sbd Exp $
+# $NetBSD: Makefile,v 1.42 2011/02/06 16:13:13 wiz Exp $
 #
 
 DISTNAME=	gwenview-1.4.2
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	kde graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gwenview/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://gwenview.sourceforge.net/
 COMMENT=	Image viewer for KDE whose aims are ease of use and speed
+LICENSE=	gnu-gpl-v2 AND gnu-fdl-v1.2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

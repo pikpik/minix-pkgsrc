@@ -1,44 +1,14 @@
-$NetBSD$
-
---- lib/sh/fpurge.c.orig	Mon Apr 20 01:12:23 2009
-+++ lib/sh/fpurge.c
-@@ -53,7 +53,7 @@ fpurge (FILE *fp)
-   extern int fpurge (FILE *);
- # endif
-   int result = fpurge (fp);
--# if defined __sferror || defined __DragonFly__ /* FreeBSD, NetBSD, OpenBSD, DragonFly, MacOS X, Cygwin */
-+# if defined __sferror /* FreeBSD, NetBSD, OpenBSD, DragonFly, MacOS X, Cygwin */
-   if (result == 0)
-     /* Correct the invariants that fpurge broke.
-        <stdio.h> on BSD systems says:
-@@ -63,6 +63,9 @@ fpurge (FILE *fp)
-        into the buffer, although they shouldn't be allowed to.  */
-     if ((fp->_flags & __SRD) != 0)
-       fp->_w = 0;
-+#elif defined __DragonFly__
-+    if ((((struct __FILE_public *) fp)->_flags & __SRD) != 0)
-+      ((struct __FILE_public *) fp)->_w = 0;
- # endif
-   return result;
- 
-@@ -81,7 +84,7 @@ fpurge (FILE *fp)
-       fp->_IO_save_base = NULL;
-     }
-   return 0;
--# elif defined __sferror || defined __DragonFly__ /* FreeBSD, NetBSD, OpenBSD, DragonFly, MacOS X, Cygwin */
-+# elif defined __sferror /* FreeBSD, NetBSD, OpenBSD, MacOS X, Cygwin */
-   fp_->_p = fp_->_bf._base;
-   fp_->_r = 0;
-   fp_->_w = ((fp_->_flags & (__SLBF | __SNBF | __SRD)) == 0 /* fully buffered and not currently reading? */
-@@ -100,6 +103,11 @@ fpurge (FILE *fp)
-   fp->_rcount = 0;
+--- lib/sh/fpurge.c.orig	Wed Dec 22 14:32:58 2010
++++ lib/sh/fpurge.c	Thu Jun  2 10:51:18 2011
+@@ -185,6 +185,11 @@
    fp->_wcount = 0;
    fp->_ungetc_count = 0;
-+  return 0;
+   return 0;
 +#elif __minix  
 +  fp->_ptr = fp->_buf;
 +  if (fp->_ptr != NULL)
 +    fp->_count = 0;
-   return 0;
- # elif defined _IOERR               /* AIX, HP-UX, IRIX, OSF/1, Solaris, OpenServer, mingw */
++  return 0;
+ # elif defined _IOERR || defined __TANDEM    /* AIX, HP-UX, IRIX, OSF/1, Solaris, OpenServer, mingw */
    fp->_ptr = fp->_base;
+   if (fp->_ptr != NULL)

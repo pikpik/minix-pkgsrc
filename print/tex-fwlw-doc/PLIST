@@ -1,3 +1,4 @@
 @comment $NetBSD$
+share/texmf-dist/doc/latex/fwlw/README
 share/texmf-dist/doc/latex/fwlw/fwlw.pdf
 share/texmf-dist/doc/latex/fwlw/fwlw.tex

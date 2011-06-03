@@ -46,8 +46,10 @@ devel/topgit
 editors/nano
 editors/vim
 editors/vim-share
+games/cmatrix
 games/doom1
 games/gnugo
+games/ninvaders
 games/sex
 graphics/png
 lang/f2c
@@ -60,6 +62,7 @@ math/mpfr
 minix/clang
 minix/compiler-rt
 minix/x11
+misc/cowsay
 misc/figlet
 net/rsync
 pkgtools/bootstrap-mk-files

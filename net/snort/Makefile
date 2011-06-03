@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2009/07/17 18:00:20 adrianp Exp $
+# $NetBSD: Makefile,v 1.43 2011/04/01 16:48:36 gdt Exp $
 #
 
-DISTNAME=		snort-2.8.3.1
+DISTNAME=		snort-2.8.5.1
+PKGREVISION=		1
 CATEGORIES=		net security
 MASTER_SITES=		http://www.snort.org/dl/ \
 			http://www.snort.org/dl/current/ \
@@ -10,6 +11,8 @@ MASTER_SITES=		http://www.snort.org/dl/ \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.snort.org/
 COMMENT=		The Open Source Network Intrusion Detection System
+
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

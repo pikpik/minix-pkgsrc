@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.66 2010/11/30 10:30:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.69 2011/04/22 13:43:21 obache Exp $
 #
 
-DISTNAME=	monotone-0.99.1
+DISTNAME=	monotone-1.0
+PKGREVISION=	2
 CATEGORIES=	devel scm
-MASTER_SITES=	http://monotone.ca/downloads/0.99.1/
+MASTER_SITES=	http://monotone.ca/downloads/1.0/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://monotone.ca/
@@ -17,11 +19,13 @@ INFO_FILES=		yes
 LICENSE=		gnu-gpl-v2 OR gnu-gpl-v3 # OR newer
 TEST_TARGET=		check
 UNLIMIT_RESOURCES+=	datasize
-USE_TOOLS+=		gmake makeinfo pax pkg-config
+USE_TOOLS+=		gmake makeinfo pax perl:run pkg-config
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 
 CONFIGURE_ARGS+=	--with-system-pcre
+
+INSTALL_MAKE_FLAGS+=	bashcompdir=${PREFIX:Q}/share/examples/monotone
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.monotone
 PKG_SUPPORTED_OPTIONS=	inet6
@@ -29,7 +33,13 @@ PKG_SUPPORTED_OPTIONS=	inet6
 CHECK_INTERPRETER_SKIP+=	share/monotone/contrib/*
 CHECK_PORTABILITY_SKIP+=	debian/*
 
+REPLACE_PERL=			extra/bin/mtn-cleanup
 REPLACE_SH=			mtnopt
+# The following are optional scripts for hooks.  We do not replace their
+# interpreter because we want to avoid a dependency on them.  (Ideally they
+# should be in separate packages with appropriate dependencies.)
+CHECK_INTERPRETER_SKIP=	share/monotone/scripts/monotone-ciabot.py
+CHECK_INTERPRETER_SKIP+=	share/monotone/scripts/monotone-mail-notify
 
 .include "../../mk/bsd.options.mk"
 
@@ -40,13 +50,6 @@ CONFIGURE_ARGS+=	--disable-ipv6
 .endif
 
 INSTALLATION_DIRS+=	share/monotone
-
-post-install:
-	cd ${WRKSRC} && rm -rf contrib/.deps && \
-	    pax -rw -pm contrib \
-	    ${DESTDIR}${PREFIX}/share/monotone
-	cd ${WRKSRC} && pax -rw -pm figures/*.png \
-	    ${DESTDIR}${PREFIX}/share/doc/monotone
 
 BUILDLINK_API_DEPENDS.pcre+=	pcre>=7.6
 

@@ -1,15 +1,11 @@
-# $NetBSD: options.mk,v 1.3 2008/10/27 18:07:23 tnn Exp $
+# $NetBSD: options.mk,v 1.8 2011/04/20 18:44:56 hans Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.clisp
 
 # this option is essential for some others to work:
 PKG_SUPPORTED_OPTIONS+=		ffcall
 
-PKG_SUPPORTED_OPTIONS+=		bdb pari wildcard
 PKG_SUPPORTED_OPTIONS+=		readline
-
-PKG_OPTIONS_OPTIONAL_GROUPS=	x11-bindings
-PKG_OPTIONS_GROUP.x11-bindings=	mit-clx new-clx
 
 PKG_SUPPORTED_OPTIONS+=		gmalloc
 
@@ -42,34 +38,6 @@ CONFIGURE_ARGS+=	--with-dynamic-ffi
 .  include "../../devel/ffcall/buildlink3.mk"
 .endif
 
-.if !empty(PKG_OPTIONS:Mbdb)
-# it requires version 4, not anything older
-CONFIGURE_ARGS+=	--with-module=berkeley-db
-BUILDLINK_TRANSFORM+=	l:db:db46
-.  include "../../databases/db46/buildlink3.mk"
-.endif
-
-.if !empty(PKG_OPTIONS:Mpari)
-CONFIGURE_ARGS+=	--with-module=pari
-.  include "../../math/pari/buildlink3.mk"
-.endif
-
-.if !empty(PKG_OPTIONS:Mnew-clx)
-CONFIGURE_ARGS+=	--with-module=clx/new-clx
-.  include "../../x11/libX11/buildlink3.mk"
-.  include "../../x11/libXau/buildlink3.mk"
-.endif
-
-.if !empty(PKG_OPTIONS:Mmit-clx)
-CONFIGURE_ARGS+=	--with-module=clx/mit-clx
-.  include "../../x11/libX11/buildlink3.mk"
-.  include "../../x11/libXau/buildlink3.mk"
-.endif
-
-.if !empty(PKG_OPTIONS:Mwildcard)
-CONFIGURE_ARGS+=	--with-module=wildcard
-.endif
-
 .if !empty(PKG_OPTIONS:Mreadline)
 USE_GNU_READLINE=	YES
 CONFIGURE_ARGS+=	--with-readline
@@ -78,6 +46,34 @@ CONFIGURE_ARGS+=	--with-readline
 
 
 # Options for those who wishes to build "static" CLISP:
+
+#.if !empty(PKG_OPTIONS:Mwildcard)
+#CONFIGURE_ARGS+=	--with-module=wildcard
+#.endif
+
+#.if !empty(PKG_OPTIONS:Mpari)
+#CONFIGURE_ARGS+=	--with-module=pari
+#.  include "../../math/pari/buildlink3.mk"
+#.endif
+
+#.if !empty(PKG_OPTIONS:Mmit-clx)
+#CONFIGURE_ARGS+=	--with-module=clx/mit-clx
+#.  include "../../x11/libX11/buildlink3.mk"
+#.  include "../../x11/libXau/buildlink3.mk"
+#.endif
+
+#.if !empty(PKG_OPTIONS:Mnew-clx)
+#CONFIGURE_ARGS+=	--with-module=clx/new-clx
+#.  include "../../x11/libX11/buildlink3.mk"
+#.  include "../../x11/libXau/buildlink3.mk"
+#.endif
+
+#.if !empty(PKG_OPTIONS:Mbdb)
+# it requires version 4, not anything older
+#CONFIGURE_ARGS+=	--with-module=berkeley-db
+#BUILDLINK_TRANSFORM+=	l:db:db46
+#.  include "../../databases/db46/buildlink3.mk"
+#.endif
 
 # .if !empty(PKG_OPTIONS:Mpgsql)
 # CONFIGURE_ARGS+=       --with-module=postgresql

@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.10 2009/10/30 16:51:29 drochner Exp $
+
+https://bugzilla.gnome.org/show_bug.cgi?id=644489
 
 --- libgnomeui/gnome-thumbnail.c.orig	2009-10-01 13:31:59.000000000 +0200
 +++ libgnomeui/gnome-thumbnail.c

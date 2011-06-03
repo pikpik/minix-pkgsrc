@@ -1,4 +1,4 @@
-# $NetBSD: mysql.buildlink3.mk,v 1.12 2010/09/23 14:27:11 taca Exp $
+# $NetBSD: mysql.buildlink3.mk,v 1.14 2011/04/27 04:22:00 taca Exp $
 #
 # This file is included by packages that require some version of the
 # MySQL database client.
@@ -8,7 +8,7 @@
 # MYSQL_VERSION_DEFAULT
 #	The preferred MySQL version.
 #
-#	Possible: 51 50
+#	Possible: 51 55 50
 #	Default: 51
 #
 # === Package-settable variables ===
@@ -31,7 +31,7 @@ _SYS_VARS.mysql=	MYSQL_PKGSRCDIR
 .include "../../mk/bsd.prefs.mk"
 
 MYSQL_VERSION_DEFAULT?=		51
-MYSQL_VERSIONS_ACCEPTED?=	51 50
+MYSQL_VERSIONS_ACCEPTED?=	51 55 50
 
 # transform the list into individual variables
 .for mv in ${MYSQL_VERSIONS_ACCEPTED}
@@ -39,14 +39,32 @@ _MYSQL_VERSION_${mv}_OK=	yes
 .endfor
 
 # check what is installed
-.if exists(${LOCALBASE}/lib/mysql/libmysqlclient.so.16)
+.if ${OPSYS} == "Darwin"
+.  if exists(${LOCALBASE}/lib/libmysqlclient.18.dylib)
+_MYSQL_VERSION_55_INSTALLED=	yes
+_MYSQL_VERSION_INSTALLED=	55
+.  endif
+.  if exists(${LOCALBASE}/lib/mysql/libmysqlclient.16.dylib)
 _MYSQL_VERSION_51_INSTALLED=	yes
 _MYSQL_VERSION_INSTALLED=	51
-.endif
-
-.if exists(${LOCALBASE}/lib/mysql/libmysqlclient.so.15)
+.  endif
+.  if exists(${LOCALBASE}/lib/mysql/libmysqlclient.15.dylib)
 _MYSQL_VERSION_50_INSTALLED=	yes
 _MYSQL_VERSION_INSTALLED=	50
+.  endif
+.else
+.  if exists(${LOCALBASE}/lib/libmysqlclient.so.18)
+_MYSQL_VERSION_55_INSTALLED=	yes
+_MYSQL_VERSION_INSTALLED=	55
+.  endif
+.  if exists(${LOCALBASE}/lib/mysql/libmysqlclient.so.16)
+_MYSQL_VERSION_51_INSTALLED=	yes
+_MYSQL_VERSION_INSTALLED=	51
+.  endif
+.  if exists(${LOCALBASE}/lib/mysql/libmysqlclient.so.15)
+_MYSQL_VERSION_50_INSTALLED=	yes
+_MYSQL_VERSION_INSTALLED=	50
+.  endif
 .endif
 
 # if a version is explicitely required, take it
@@ -86,7 +104,9 @@ _MYSQL_VERSION=	${_MYSQL_VERSION_FIRSTACCEPTED}
 #
 # set variables for the version we decided to use:
 #
-.if ${_MYSQL_VERSION} == "51"
+.if ${_MYSQL_VERSION} == "55"
+MYSQL_PKGSRCDIR=	../../databases/mysql55-client
+.elif ${_MYSQL_VERSION} == "51"
 MYSQL_PKGSRCDIR=	../../databases/mysql51-client
 .elif ${_MYSQL_VERSION} == "50"
 MYSQL_PKGSRCDIR=	../../databases/mysql5-client
@@ -99,9 +119,9 @@ PKG_FAIL_REASON+=	"[mysql.buildlink3.mk] ${_MYSQL_VERSION} is not a valid mysql 
 # check installed version aginst required:
 #
 .if defined(_MYSQL_VERSION_INSTALLED)
-.if ${_MYSQL_VERSION} != ${_MYSQL_VERSION_INSTALLED}
+.  if ${_MYSQL_VERSION} != ${_MYSQL_VERSION_INSTALLED}
 PKG_SKIP_REASON+=	"${PKGBASE} requires mysql-${_MYSQL_VERSION}, but mysql-${_MYSQL_VERSION_INSTALLED} is already installed."
-.endif
+.  endif
 .endif
 
 .include "${MYSQL_PKGSRCDIR}/buildlink3.mk"

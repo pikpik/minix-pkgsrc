@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.90 2010/01/24 17:11:18 heinz Exp $
+# $NetBSD: Makefile,v 1.92 2011/01/27 14:15:05 adam Exp $
 
 DISTNAME=	SDL-1.2.14
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel games
 MASTER_SITES=	http://www.libsdl.org/release/
 
@@ -41,23 +41,12 @@ CONFIGURE_ARGS+=	--disable-video-wscons
 CONFIGURE_ENV+=		NASMFLAGS="${NASMFLAGS_${OBJECT_FMT}}"
 MAKE_ENV+=		NASMFLAGS="${NASMFLAGS_${OBJECT_FMT}}"
 
-# buildlink passthru the directories required for the Cocoa framework
-# on Darwin if they exist.
-.if ${OPSYS} == "Darwin"
-COCOA_DIRS+=			/System /Library /Developer
-.  for dir in ${COCOA_DIRS}
-.    if exists(${dir})
-BUILDLINK_PASSTHRU_DIRS+=	${dir}
-.    endif
-.  endfor
-
 # See <http://developer.apple.com/qa/qa2007/qa1567.html>.
+.if ${OPSYS} == "Darwin"
 .  if !empty(OS_VERSION:M9.*)
 LDFLAGS+=	-Wl,-dylib_file -Wl,/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib:/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
 .  endif
-
 .endif
-
 
 .include "../../mk/oss.buildlink3.mk"
 

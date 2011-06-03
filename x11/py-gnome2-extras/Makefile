@@ -1,16 +1,20 @@
-# $NetBSD: Makefile,v 1.38 2010/11/15 22:59:07 abs Exp $
+# $NetBSD: Makefile,v 1.43 2011/03/28 01:40:20 obache Exp $
 #
 
-DISTNAME=	gnome-python-extras-2.14.3
+DISTNAME=	gnome-python-extras-2.25.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/gnome-python/gnome2/}
-PKGREVISION=	11
+PKGREVISION=	1
 CATEGORIES=	x11 python
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-python-extras/2.14/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-python-extras/2.25/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Python binding for GNOME2
+
+# need xsltproc to build docs
+BUILD_DEPENDS+=	libxslt-[0-9]*:../../textproc/libxslt
+BUILD_DEPENDS+=	docbook-xsl-[0-9]*:../../textproc/docbook-xsl
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -19,14 +23,20 @@ USE_LIBTOOL=	YES
 PKGCONFIG_OVERRIDE+=	gnome-python-extras-2.0.pc.in
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN:Q}
-USE_TOOLS+=		pkg-config gmake
+USE_TOOLS+=		pkg-config gmake autoconf automake
+USE_LANGUAGES=	c c++
+CONFIGURE_ARGS+=	--with-gtkmozembed=xulrunner-1.9
+CONFIGURE_ARGS+=	--enable-docs
 
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
-SUBST_CLASSES+=	ffhome
-SUBST_STAGE.ffhome=	pre-configure
-SUBST_FILES.ffhome=	gtkmozembed/gtkmozembedmodule.c
-SUBST_VARS.ffhome=	LOCALBASE
+pre-configure:
+	${RM} -f ${WRKSRC}/gtkmozembed/gtkmozembedmodule.c
+	${RUN}cd ${WRKSRC};aclocal;autoheader;automake;autoconf
+
+# for libtool happy
+BUILDLINK_FNAME_TRANSFORM.xulrunner+=	-e 's|/libxpcomglue.a|/libxpcomglue_pic.a|g'	
+BUILDLINK_TRANSFORM+=	l:xpcomglue:xpcomglue_pic
 
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/application.mk"

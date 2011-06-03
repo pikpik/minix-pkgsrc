@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/freadahead.c.orig	Wed Jul 21 00:13:45 2010
+--- lib/freadahead.c.orig	Tue Mar  1 16:39:27 2011
 +++ lib/freadahead.c
 @@ -25,6 +25,11 @@
  size_t

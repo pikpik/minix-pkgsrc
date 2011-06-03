@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.13 2007/04/27 04:08:19 uebayasi Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2009/03/20 19:25:28 joerg Exp $
 
 BUILDLINK_TREE+=	eb
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	eb
 EB_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.eb+=		eb>=3.3.2nb1
-BUILDLINK_ABI_DEPENDS.eb+=		eb>=4.1.3nb1
+BUILDLINK_ABI_DEPENDS.eb+=		eb>=4.3nb2
 BUILDLINK_PKGSRCDIR.eb?=		../../textproc/eb
 
 .include "../../devel/gettext-lib/buildlink3.mk"

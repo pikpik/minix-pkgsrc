@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2010/11/15 22:56:11 abs Exp $
+# $NetBSD: Makefile,v 1.11 2011/02/10 21:59:54 zafer Exp $
 #
 
 DISTNAME=	bmp-mac-0.1.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	audio
-MASTER_SITES=	http://bsd.cenkes.org/myports/
+MASTER_SITES=	http://distfiles.aydogan.net/audio/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://sourceforge.net/projects/mac-port/

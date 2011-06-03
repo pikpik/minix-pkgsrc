@@ -1,0 +1,15 @@
+$NetBSD$
+
+Build fix for semi-modern C++.
+
+--- dpteng/raid.h~	2002-08-13 15:02:27.000000000 +0000
++++ dpteng/raid.h
+@@ -249,7 +249,7 @@ struct raidDef_S : public raidDefinition
+ 
+ // Constructor/Destructor.............................
+ 
+-			raidDef_S::raidDef_S();
++			raidDef_S();
+ 
+ };
+ #endif  // c++

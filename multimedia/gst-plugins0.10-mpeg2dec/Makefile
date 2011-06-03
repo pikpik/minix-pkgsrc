@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/07/06 19:22:43 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/22 13:45:22 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	mpeg2dec

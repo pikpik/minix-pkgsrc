@@ -194,6 +194,7 @@ lib/goffice/${PKGVERSION}/plugins/plot_surface/plugin.xml
 lib/goffice/${PKGVERSION}/plugins/plot_surface/surface.la
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-bubble-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-color-prefs.ui
+lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-dropbar-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/gog-xy-series-prefs.ui
 lib/goffice/${PKGVERSION}/plugins/plot_xy/plot-types.xml
@@ -348,6 +349,7 @@ share/gtk-doc/html/goffice-0.8/goffice-0.8-GOReg.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-GORegression.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-GOUndo.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-GOUrl.html
+share/gtk-doc/html/goffice-0.8/goffice-0.8-GOffice.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-GogAxisMap.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-GogChartMap.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-GogGuru.html
@@ -363,7 +365,6 @@ share/gtk-doc/html/goffice-0.8/goffice-0.8-go-distribution.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-go-image.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-go-plugin.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8-go-string.html
-share/gtk-doc/html/goffice-0.8/goffice-0.8-goffice.html
 share/gtk-doc/html/goffice-0.8/goffice-0.8.devhelp
 share/gtk-doc/html/goffice-0.8/goffice-0.8.devhelp2
 share/gtk-doc/html/goffice-0.8/home.png
@@ -478,6 +479,8 @@ share/pixmaps/goffice/${PKGVERSION}/chart_cylinder_2_3.png
 share/pixmaps/goffice/${PKGVERSION}/chart_cylinder_3_1.png
 share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_1.png
 share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_2.png
+share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_3.png
+share/pixmaps/goffice/${PKGVERSION}/chart_dropbar_1_4.png
 share/pixmaps/goffice/${PKGVERSION}/chart_histogram_1_1.png
 share/pixmaps/goffice/${PKGVERSION}/chart_histogram_1_3.png
 share/pixmaps/goffice/${PKGVERSION}/chart_histogram_1_4.png

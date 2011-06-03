@@ -1,10 +1,10 @@
-$NetBSD: patch-ac,v 1.2 2010/08/24 18:58:03 bad Exp $
+$NetBSD$
 
---- zfuncs.h.orig	2010-08-18 11:23:51.000000000 +0000
-+++ zfuncs.h	2010-10-02 12:06:46.000000000 +0000
+--- zfuncs.h.orig	2011-05-01 18:44:26.000000000 +0000
++++ zfuncs.h
 @@ -22,6 +22,7 @@
  
- //     zfuncs.h   version  v.3.8
+ //     zfuncs.h   version  v.4.2
  
 +#include <sys/param.h>
  #include <sys/time.h>

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2006/10/04 21:35:58 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2008/03/03 17:45:35 jlam Exp $
 #
 
 DISTNAME=		florist-3.15p-src
 PKGNAME=		florist-3.15p
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		devel
 MASTER_SITES=		http://www.cs.fsu.edu/~baker/ftp/
 EXTRACT_SUFX=		.tgz

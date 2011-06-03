@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2010/11/15 22:58:31 abs Exp $
+# $NetBSD: Makefile,v 1.11 2011/01/31 21:20:05 wiz Exp $
 #
 
 DISTNAME=		dvdisaster-0.70.6
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dvdisaster/}
 EXTRACT_SUFX=		.tar.bz2
@@ -24,6 +24,8 @@ ONLY_FOR_COMPILER=	gcc
 USE_LANGUAGES=		c
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		bash gmake pkg-config
+
+MAKE_JOBS_SAFE=		no
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}

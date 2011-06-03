@@ -5,6 +5,7 @@ share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 share/texmf-dist/tex/latex/latexconfig/graphics.cfg
 share/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 share/texmf-dist/tex/latex/latexconfig/latex.ini
+share/texmf-dist/tex/latex/latexconfig/lualatex-patch-kernel.tex
 share/texmf-dist/tex/latex/latexconfig/lualatex-reset-codes.tex
 share/texmf-dist/tex/latex/latexconfig/lualatex.ini
 share/texmf-dist/tex/latex/latexconfig/lualatexiniconfig.tex

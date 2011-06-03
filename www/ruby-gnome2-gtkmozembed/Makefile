@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/11/27 06:14:48 obache Exp $
+# $NetBSD: Makefile,v 1.18 2011/03/04 13:14:06 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gtkmozembed-${VERSION}
@@ -15,6 +15,9 @@ RUBY_EXTCONF_SUBDIRS=	gtkmozembed
 DEPENDS+=               ${RUBY_PKGPREFIX}-gnome2-gtk>=${VERSION}:../../x11/ruby-gnome2-gtk
 
 USE_LANGUAGES=		c c++
+
+do-test:
+	${RUN} cd ${WRKSRC}/gtkmozembed/test; ${SETENV} ${TEST_ENV} ${RUBY} run-test.rb
 
 BUILDLINK_API_DEPENDS.ruby-gnome2-glib+=	${RUBY_PKGPREFIX}-gnome2-glib-${VERSION}{,nb*}
 BUILDLINK_DEPMETHOD.ruby-gnome2-glib=	build

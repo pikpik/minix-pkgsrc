@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/09/08 07:48:49 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/22 13:45:19 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	dts

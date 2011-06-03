@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/pst-barcode/Changes
+share/texmf-dist/doc/generic/pst-barcode/README
+share/texmf-dist/doc/generic/pst-barcode/pst-barcode-doc.bib
+share/texmf-dist/doc/generic/pst-barcode/pst-barcode-doc.pdf
+share/texmf-dist/doc/generic/pst-barcode/pst-barcode-doc.tex

@@ -1,3 +1,6 @@
 @comment $NetBSD$
 bin/pgpool
+man/man8/pgpool.8
 share/examples/pgpool.conf.sample
+share/examples/pool_hba.conf.sample
+share/pgpool/pgpool.pam

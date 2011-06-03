@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2010/12/01 19:34:49 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/15 16:32:33 drochner Exp $
 #
 
-DISTNAME=		lyx-1.6.8
+DISTNAME=		lyx-1.6.9
 PKGREVISION=		1
 CATEGORIES=		editors
 MASTER_SITES=		ftp://ftp.lyx.org/pub/lyx/stable/1.6.x/ \
@@ -30,7 +30,6 @@ USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
 GCC_REQD+=		2.95
 TEX_ACCEPTED=		teTeX3
-MAKE_ENV+=		PKG_LOCALTEXMFPREFIX=${PKG_LOCALTEXMFPREFIX}
 
 CONFIGURE_ARGS+=	--with-extra-prefix=${BUILDLINK_PREFIX.qt4-libs} \
 			--with-qt4-dir=${QTDIR:Q} \
@@ -40,6 +39,21 @@ CONFIGURE_ARGS+=	--with-extra-prefix=${BUILDLINK_PREFIX.qt4-libs} \
 CONFIGURE_ARGS+=	--with-pspell-lib=${BUILDLINK_PREFIX.aspell}/lib \
 			--with-pspell-include=${BUILDLINK_PREFIX.aspell}/include/pspell \
 			--with-pspell
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+GNU_CONFIGURE_PREFIX=	${PREFIX}/Applications/LyX.app
+PLIST_SUBST+=		BIN_DIR=Applications/LyX.app/Contents/MacOS \
+			LYX=LyX \
+			MAN_DIR=Applications/LyX.app/Contents/Resources/man \
+			SHARE_DIR=Applications/LyX.app/Contents/Resources
+.else
+PLIST_SUBST+=		BIN_DIR=bin \
+			LYX=lyx \
+			MAN_DIR="${PKGMANDIR}" \
+			SHARE_DIR=share/lyx
+.endif
 
 PYTHON_PATCH_SCRIPTS=	development/tools/convert_kmap.py \
 			development/tools/generate_symbols_list.py \
@@ -85,7 +99,7 @@ SUBST_SED.python+=	-e 's,command("python -tt,command("${PYTHONBIN} -tt,'
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../lang/python/application.mk"
-.include "../../print/teTeX/module.mk"
+.include "../../mk/tex.buildlink3.mk"
 .include "../../textproc/aiksaurus/buildlink3.mk"
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"

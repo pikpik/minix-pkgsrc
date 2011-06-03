@@ -1,8 +1,8 @@
 $NetBSD$
 
---- libltdl/configure.orig	2009-12-17 01:29:59.000000000 +0100
+--- libltdl/configure.orig	2011-04-14 15:39:09.000000000 +0000
 +++ libltdl/configure
-@@ -4542,6 +4542,13 @@ else
+@@ -4542,13 +4542,20 @@ else
      lt_cv_sys_max_cmd_len=8192;
      ;;
  
@@ -16,7 +16,44 @@ $NetBSD$
    amigaos*)
      # On AmigaOS with pdksh, this test takes hours, literally.
      # So we just punt and use a minimum line length of 8192.
-@@ -4967,7 +4974,7 @@ newos6*)
+     lt_cv_sys_max_cmd_len=8192;
+     ;;
+ 
+-  netbsd* | freebsd* | openbsd* | darwin* | dragonfly*)
++  netbsd* | freebsd* | openbsd* | mirbsd* | darwin* | dragonfly*)
+     # This has been around since 386BSD, at least.  Likely further.
+     if test -x /sbin/sysctl; then
+       lt_cv_sys_max_cmd_len=`/sbin/sysctl -n kern.argmax`
+@@ -4914,6 +4921,10 @@ gnu*)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
++haiku*)
++  lt_cv_deplibs_check_method=pass_all
++  ;;
++
+ hpux10.20* | hpux11*)
+   lt_cv_file_magic_cmd=/usr/bin/file
+   case $host_cpu in
+@@ -4952,6 +4963,17 @@ linux* | k*bsd*-gnu)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
++midnightbsd*)
++  # might to use match_pattern like MirBSD, but there is no well-defined
++  # naming scheme for libraries yet, as the current one is deprecated, and
++  # the new one in a state of flux especially between mports and MirPorts
++  lt_cv_deplibs_check_method=pass_all
++  ;;
++
++mirbsd*)
++  lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|\.so|_pic\.a)$'
++  ;;
++
+ netbsd*)
+   if echo __ELF__ | $CC -E - | $GREP __ELF__ > /dev/null; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|_pic\.a)$'
+@@ -4967,7 +4989,7 @@ newos6*)
    ;;
  
  *nto* | *qnx*)
@@ -25,7 +62,7 @@ $NetBSD$
    ;;
  
  openbsd*)
-@@ -7286,7 +7293,10 @@ for cc_temp in $compiler""; do
+@@ -7286,7 +7308,10 @@ for cc_temp in $compiler""; do
      *) break;;
    esac
  done
@@ -37,7 +74,7 @@ $NetBSD$
  
  
  # Only perform the check for file, if the check method requires it
-@@ -7596,9 +7606,11 @@ $as_echo_n "checking for $compiler optio
+@@ -7596,9 +7621,17 @@ $as_echo_n "checking for $compiler optio
        ;;
  
      darwin* | rhapsody*)
@@ -47,10 +84,16 @@ $NetBSD$
        # Common symbols not allowed in MH_DYLIB files
        lt_prog_compiler_pic='-fno-common'
 +      lt_prog_compiler_static=''
++      ;;
++
++    haiku*)
++      # PIC is the default for Haiku.
++      # The "-static" flag exists, but is broken.
++      lt_prog_compiler_static=
        ;;
  
      hpux*)
-@@ -7620,6 +7632,13 @@ $as_echo_n "checking for $compiler optio
+@@ -7620,6 +7653,13 @@ $as_echo_n "checking for $compiler optio
        # Instead, we relocate shared libraries at runtime.
        ;;
  
@@ -64,7 +107,7 @@ $NetBSD$
      msdosdjgpp*)
        # Just because we use GCC doesn't mean we suddenly get shared libraries
        # on systems that don't support them.
-@@ -7817,6 +7836,9 @@ $as_echo_n "checking for $compiler optio
+@@ -7817,6 +7857,9 @@ $as_echo_n "checking for $compiler optio
  
  case $host_os in
    # For platforms which do not support PIC, -DPIC is meaningless:
@@ -74,7 +117,19 @@ $NetBSD$
    *djgpp*)
      lt_prog_compiler_pic=
      ;;
-@@ -8316,7 +8338,7 @@ _LT_EOF
+@@ -8230,6 +8273,11 @@ _LT_EOF
+       fi
+       ;;
+ 
++    haiku*)
++      archive_cmds='$CC -shared $libobjs $deplibs $compiler_flags ${wl}-soname $wl$soname -o $lib'
++      link_all_deplibs=yes
++      ;;
++
+     interix[3-9]*)
+       hardcode_direct=no
+       hardcode_shlibpath_var=no
+@@ -8316,7 +8364,7 @@ _LT_EOF
        ;;
  
      netbsd*)
@@ -83,7 +138,40 @@ $NetBSD$
  	archive_cmds='$LD -Bshareable $libobjs $deplibs $linker_flags -o $lib'
  	wlarc=
        else
-@@ -8836,6 +8858,8 @@ rm -f core conftest.err conftest.$ac_obj
+@@ -8703,6 +8751,11 @@ if test -z "$aix_libpath"; then aix_libp
+       hardcode_shlibpath_var=no
+       ;;
+ 
++      haiku*)
++        archive_cmds='$CC -shared $libobjs $deplibs $compiler_flags ${wl}-soname $wl$soname -o $lib'
++        link_all_deplibs=yes
++        ;;
++
+     hpux9*)
+       if test "$GCC" = yes; then
+ 	archive_cmds='$RM $output_objdir/$soname~$CC -shared -fPIC ${wl}+b ${wl}$install_libdir -o $output_objdir/$soname $libobjs $deplibs $compiler_flags~test $output_objdir/$soname = $lib || mv $output_objdir/$soname $lib'
+@@ -8816,6 +8869,20 @@ rm -f core conftest.err conftest.$ac_obj
+       link_all_deplibs=yes
+       ;;
+ 
++    mirbsd*)
++      if test -f /usr/libexec/ld.so; then
++	hardcode_direct=yes
++	hardcode_shlibpath_var=no
++	hardcode_direct_absolute=yes
++	archive_cmds='$CC -shared $pic_flag -o $lib $libobjs $deplibs $compiler_flags'
++	archive_expsym_cmds='$CC -shared $pic_flag -o $lib $libobjs $deplibs $compiler_flags ${wl}-retain-symbols-file,$export_symbols'
++	hardcode_libdir_flag_spec='${wl}-rpath,$libdir'
++	export_dynamic_flag_spec='${wl}-E'
++      else
++	ld_shlibs=no
++      fi
++      ;;
++
+     netbsd*)
+       if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
+ 	archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'  # a.out
+@@ -8836,6 +8903,8 @@ rm -f core conftest.err conftest.$ac_obj
        ;;
  
      *nto* | *qnx*)
@@ -92,7 +180,7 @@ $NetBSD$
        ;;
  
      openbsd*)
-@@ -9450,6 +9474,7 @@ beos*)
+@@ -9450,6 +9519,7 @@ beos*)
  bsdi[45]*)
    version_type=linux
    need_version=no
@@ -100,7 +188,7 @@ $NetBSD$
    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major $libname${shared_ext}'
    soname_spec='${libname}${release}${shared_ext}$major'
    finish_cmds='PATH="\$PATH:/sbin" ldconfig $libdir'
-@@ -9551,9 +9576,7 @@ freebsd1*)
+@@ -9551,9 +9621,7 @@ freebsd1*)
    dynamic_linker=no
    ;;
  
@@ -111,7 +199,7 @@ $NetBSD$
    if test -x /usr/bin/objformat; then
      objformat=`/usr/bin/objformat`
    else
-@@ -9565,7 +9588,7 @@ freebsd* | dragonfly*)
+@@ -9565,7 +9633,7 @@ freebsd* | dragonfly*)
    version_type=freebsd-$objformat
    case $version_type in
      freebsd-elf*)
@@ -120,7 +208,7 @@ $NetBSD$
        need_version=no
        need_lib_prefix=no
        ;;
-@@ -9588,13 +9611,24 @@ freebsd* | dragonfly*)
+@@ -9588,13 +9656,24 @@ freebsd* | dragonfly*)
      shlibpath_overrides_runpath=no
      hardcode_into_libs=yes
      ;;
@@ -146,7 +234,27 @@ $NetBSD$
  gnu*)
    version_type=linux
    need_lib_prefix=no
-@@ -9666,12 +9700,7 @@ interix[3-9]*)
+@@ -9605,6 +9684,19 @@ gnu*)
+   hardcode_into_libs=yes
+   ;;
+ 
++haiku*)
++  version_type=linux
++  need_lib_prefix=no
++  need_version=no
++  dynamic_linker="$host_os runtime_loader"
++  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}${major} ${libname}${shared_ext}'
++  soname_spec='${libname}${release}${shared_ext}$major'
++  shlibpath_var=LIBRARY_PATH
++  shlibpath_overrides_runpath=yes
++  sys_lib_dlsearch_path_spec='/boot/home/config/lib /boot/common/lib /boot/system/lib'
++  hardcode_into_libs=yes
++  ;;
++
+ hpux9* | hpux10* | hpux11*)
+   # Give a soname corresponding to the major version so that dld.sl refuses to
+   # link against other versions.
+@@ -9666,12 +9758,7 @@ interix[3-9]*)
  irix5* | irix6* | nonstopux*)
    case $host_os in
      nonstopux*) version_type=nonstopux ;;
@@ -160,17 +268,42 @@ $NetBSD$
    esac
    need_lib_prefix=no
    need_version=no
-@@ -9762,15 +9791,14 @@ rm -f core conftest.err conftest.$ac_obj
+@@ -9761,16 +9848,38 @@ rm -f core conftest.err conftest.$ac_obj
+   dynamic_linker='GNU/Linux ld.so'
    ;;
  
++midnightbsd*)
++  version_type=linux
++  need_lib_prefix=no
++  need_version=no
++  library_names_spec='${libname}${release}${shared_ext}${versuffix2} ${libname}${release}${shared_ext} $libname${shared_ext}'
++  finish_cmds='PATH="\$PATH:/sbin" ldconfig -m $libdir'
++  shlibpath_var=LD_LIBRARY_PATH
++  shlibpath_overrides_runpath=yes
++  hardcode_into_libs=yes
++  ;;
++
++mirbsd*)
++  version_type=linux
++  sys_lib_search_path_spec="/usr/lib"
++  sys_lib_dlsearch_path_spec="/usr/lib"
++  need_lib_prefix=no
++  need_version=no
++  library_names_spec='${libname}${release}${shared_ext}${versuffix2} ${libname}${shared_ext}${versuffix2}'
++  finish_cmds='PATH="\$PATH:/sbin" ldconfig -m $libdir'
++  shlibpath_var=LD_LIBRARY_PATH
++  shlibpath_overrides_runpath=yes
++  ;;
++
  netbsd*)
 -  version_type=sunos
 +  version_type=linux
    need_lib_prefix=no
    need_version=no
-+  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
-   if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
+-  if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
 -    library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${shared_ext}$versuffix'
++  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
++  if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null && echo __G95__ | $CC -cpp -E - | $GREP __G95__ >/dev/null; then
      finish_cmds='PATH="\$PATH:/sbin" ldconfig -m $libdir'
      dynamic_linker='NetBSD (a.out) ld.so'
    else
@@ -178,7 +311,7 @@ $NetBSD$
      soname_spec='${libname}${release}${shared_ext}$major'
      dynamic_linker='NetBSD ld.elf_so'
    fi
-@@ -9799,7 +9827,7 @@ newsos6)
+@@ -9799,7 +9908,7 @@ newsos6)
    ;;
  
  openbsd*)
@@ -187,7 +320,7 @@ $NetBSD$
    sys_lib_dlsearch_path_spec="/usr/lib"
    need_lib_prefix=no
    # Some older versions of OpenBSD (3.3 at least) *do* need versioned libs.
-@@ -9807,7 +9835,7 @@ openbsd*)
+@@ -9807,7 +9916,7 @@ openbsd*)
      openbsd3.3 | openbsd3.3.*)	need_version=yes ;;
      *)				need_version=no  ;;
    esac
@@ -196,3 +329,13 @@ $NetBSD$
    finish_cmds='PATH="\$PATH:/sbin" ldconfig -m $libdir'
    shlibpath_var=LD_LIBRARY_PATH
    if test -z "`echo __ELF__ | $CC -E - | $GREP __ELF__`" || test "$host_os-$host_cpu" = "openbsd2.8-powerpc"; then
+@@ -11295,6 +11404,9 @@ else
+     # at 6.2 and later dlopen does load deplibs.
+     lt_cv_sys_dlopen_deplibs=yes
+     ;;
++  mirbsd*)
++    lt_cv_sys_dlopen_deplibs=yes
++    ;;
+   netbsd*)
+     lt_cv_sys_dlopen_deplibs=yes
+     ;;

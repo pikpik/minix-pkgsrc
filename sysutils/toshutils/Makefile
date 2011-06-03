@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2007/12/06 02:11:26 obache Exp $
+# $NetBSD: Makefile,v 1.16 2009/09/18 09:37:01 obache Exp $
 #
 
 DISTNAME=	toshutils-991217
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	# http://www.buzzard.me.uk/toshiba/downloads/
 

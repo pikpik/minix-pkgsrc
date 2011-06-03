@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.39 2010/06/02 16:43:26 adam Exp $
+# $NetBSD: Makefile,v 1.42 2011/05/12 11:09:30 adam Exp $
 
-DISTNAME=	glibmm-2.24.2
+DISTNAME=	glibmm-2.28.1
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/glibmm/2.24/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/glibmm/${PKGVERSION_NOREV:R}/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
@@ -22,7 +22,16 @@ EXTRACT_USING=		bsdtar # added for pkg/42258
 PKGCONFIG_OVERRIDE+=	gio/giomm.pc.in
 PKGCONFIG_OVERRIDE+=	glib/glibmm.pc.in
 
-BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.24.1
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.28.0
+
+# x11/gtkmm needs these tools
+INSTALLATION_DIRS=	share/glibmm-2.4/doctool
+
+post-install:
+.for tool in doc-install.pl doc-postprocess.pl
+	${INSTALL_SCRIPT} ${WRKSRC}/docs/${tool} \
+		${DESTDIR}${PREFIX}/share/glibmm-2.4/doctool/${tool}
+.endfor
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libsigc++/buildlink3.mk"

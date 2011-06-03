@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2010/09/21 07:52:24 adam Exp $
-lib/postgresql/pgcrypto.la
+@comment $NetBSD: PLIST,v 1.2 2010/12/19 09:53:28 adam Exp $
+lib/postgresql/pgcrypto.so
 share/postgresql/contrib/pgcrypto.sql
 share/postgresql/contrib/uninstall_pgcrypto.sql

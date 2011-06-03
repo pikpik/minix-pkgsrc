@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2010/11/30 00:45:55 obache Exp $
+# $NetBSD: Makefile,v 1.6 2011/03/31 01:28:37 obache Exp $
 
-DISTNAME=	cyrus-imapd-2.4.6
+DISTNAME=	cyrus-imapd-2.4.8
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cyrusimap.org/cyrus-imapd/ \
 		ftp://ftp.cyrusimap.org/cyrus-imapd/OLD-VERSIONS/ \

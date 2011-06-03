@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.31 2010/09/10 04:34:12 taca Exp $
+# $NetBSD: Makefile,v 1.33 2011/02/07 14:55:55 taca Exp $
 #
 
 DISTNAME=	mysql-ruby-2.8.2
 PKGNAME=	${RUBY_PKGPREFIX}-mysql-2.8.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://rubyforge.org/frs/download.php/51087/ \
 		http://tmtm.org/downloads/mysql/ruby/
@@ -15,7 +15,6 @@ LICENSE=	gnu-gpl-v2 OR ruby-license
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-RUBY_REQD=		1.8.2
 USE_RUBY_EXTCONF=	yes
 INSTALL_TARGET=		site-install
 CONFIGURE_ARGS+=	--with-mysql-config

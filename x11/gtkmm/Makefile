@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.74 2011/01/13 13:36:24 wiz Exp $
+# $NetBSD: Makefile,v 1.77 2011/05/12 11:17:01 adam Exp $
 
-DISTNAME=	gtkmm-2.22.0
+DISTNAME=	gtkmm-2.24.0
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtkmm/2.22/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtkmm/${PKGVERSION_NOREV:R}/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.gtkmm.org/
 COMMENT=	C++ interface to Gtk+ v2
+LICENSE=	gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -21,9 +22,10 @@ EXTRACT_USING=		bsdtar
 PKGCONFIG_OVERRIDE+=	gdk/gdkmm.pc.in
 PKGCONFIG_OVERRIDE+=	gtk/gtkmm.pc.in
 
-BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.20.1
+BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.24.0
 
 .include "../../devel/atkmm/buildlink3.mk"
+BUILDLINK_API_DEPENDS.pangomm+= pangomm>=2.28.0
 .include "../../devel/pangomm/buildlink3.mk"
 .include "../../devel/glibmm/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

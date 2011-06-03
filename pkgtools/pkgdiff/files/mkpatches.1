@@ -1,9 +1,30 @@
-.\"	$NetBSD: mkpatches.1,v 1.2 2001/12/03 19:03:22 wiz Exp $
+.\"	$NetBSD: mkpatches.1,v 1.6 2011/02/02 23:34:48 wiz Exp $
 .\"
-.\" Copyright (c) 2000 by Thomas Klausner <wiz@NetBSD.org>
-.\" All Rights Reserved.  Absolutely no warranty.
+.\" Copyright (c) 2000-2011 by Thomas Klausner <wiz@NetBSD.org>
+.\" All rights reserved.
 .\"
-.Dd June 25, 2000
+.\" Redistribution and use in source and binary forms, with or without
+.\" modification, are permitted provided that the following conditions
+.\" are met:
+.\" 1. Redistributions of source code must retain the above copyright
+.\"    notice, this list of conditions and the following disclaimer.
+.\" 2. Redistributions in binary form must reproduce the above copyright
+.\"    notice, this list of conditions and the following disclaimer in the
+.\"    documentation and/or other materials provided with the distribution.
+.\"
+.\" THIS SOFTWARE IS PROVIDED BY THE AUTHOR
+.\" ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+.\" TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+.\" PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR
+.\" BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+.\" CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+.\" SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+.\" INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+.\" CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+.\" ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+.\" POSSIBILITY OF SUCH DAMAGE.
+.\"
+.Dd February 20, 2011
 .Dt MKPATCHES 1
 .Os
 .Sh NAME
@@ -11,7 +32,9 @@
 .Nd create patch files appropriate for pkgsrc
 .Sh SYNOPSIS
 .Nm
-.Op Fl d Ar output-directory
+.Op Fl hv
+.Oo Fl c | Fl r Oc
+.Op Fl D | Fl d Ar dir
 .Sh DESCRIPTION
 .Nm
 is a perl script that simplifies creating patches from a changed work
@@ -31,12 +54,43 @@ changed file of the same name (with no
 extension) using
 .Xr pkgdiff 1 .
 .Pp
-The resulting patches are saved in the directory
-.Pa ${WRKDIR}/.newpatches
-or the directory specified after
-.Fl d ,
+The resulting patches are saved in the package's patches directory
+(usually
+.Pa patches/ )
 and can be easily compared to the currently existing set using
-.Xr patchdiff 1 .
+.Xr patchdiff 1
+or
+.Ic "cvs diff" .
+.Pp
+Supported options are:
+.Bl -tag -width 3n
+.It Fl c
+Clean up backup patches of previous runs.
+Use this after you're finished working on the patch set and committed
+it.
+.It Fl D
+Use
+.Pa $WRKDIR/.newpatches
+for patches.
+See
+.Fl d
+for more details.
+.It Fl d Ar dir
+Use
+.Ar dir
+for patches.
+Copies any existing patches there on the first run and then
+creates or updates patches only there.
+Use this e.g. if you have a read-only pkgsrc.
+.It Fl h
+Show a short usage.
+.It Fl r
+Revert the changes.
+Removes the new patches and puts the original patches back.
+.It Fl v
+More verbose output.
+.El
 .Sh SEE ALSO
+.Xr cvs 1 ,
 .Xr patchdiff 1 ,
 .Xr pkgdiff 1

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2010/12/25 05:45:15 obache Exp $
+# $NetBSD: Makefile,v 1.38 2011/04/23 10:39:01 tron Exp $
 
 .include "dist.mk"
 
 PKGNAME=	python26-${PY_DISTVERSION}
-PKGREVISION=	5
+PKGREVISION=	9
 CATEGORIES=	lang python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -60,6 +60,7 @@ USE_TOOLS+=	gmake
 PY_PLATNAME=	${LOWER_OPSYS:C/\..*//}
 .elif ${OPSYS} == "SunOS"
 PY_PLATNAME=	sunos${OS_VERSION:C/\..*//}
+CONFIGURE_ENV+=        ac_cv_header_netpacket_packet_h=no
 .elif ${OPSYS} == "HPUX"
 PY_PLATNAME=	hp-ux11
 .else
@@ -142,9 +143,7 @@ INSTALL_TARGET=	altinstall
 REPLACE_INTERPRETER+=	py26
 REPLACE.py26.old=	.*python[^ ]*
 REPLACE.py26.new=	${PREFIX}/bin/python${PY_VER_SUFFIX}
-REPLACE_FILES.py26=	Lib/cgi.py	# explicitly demanded to be patched
-REPLACE_FILES.py26+=	Lib/bsddb/dbshelve.py Lib/test/test_bz2.py
-REPLACE_FILES.py26+=	Lib/test/test_largefile.py Lib/test/test_optparse.py
+REPLACE_FILES.py26=	Lib/*.py Lib/*/*.py Lib/*/*/*.py
 
 SUBST_CLASSES+=		findlib
 SUBST_MESSAGE.findlib=	Fixing find_library_file on Darwin.

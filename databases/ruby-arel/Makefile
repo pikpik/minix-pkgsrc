@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.18 2010/05/29 15:04:53 taca Exp $
+# $NetBSD: Makefile,v 1.2 2011/02/09 12:55:28 taca Exp $
 
-DISTNAME=	arel-1.0.1
+DISTNAME=	arel-2.0.9
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://github.com/brynary/arel/
 COMMENT=	Arel is a relational algebra engine for Ruby
 LICENSE=	mit
-
-DEPENDS+=	${RUBY_PKGPREFIX}-activesupport>=3.0.0:../../devel/ruby-activesupport3
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/lnl
+man/man6/lnl-faq.6
+man/man6/lnl.6

@@ -1,8 +1,10 @@
-$NetBSD: distinfo,v 1.28 2010/05/19 18:25:19 drochner Exp $
+$NetBSD: distinfo,v 1.32 2011/04/04 08:51:34 wiz Exp $
 
-SHA1 (mpd-0.15.15.tar.bz2) = 2ec37cc32469255ea603d15617f100d1f12e766c
-RMD160 (mpd-0.15.15.tar.bz2) = 16b6196f698f0442ad6d76b7a03f06f0dcc5a245
-Size (mpd-0.15.15.tar.bz2) = 391688 bytes
-SHA1 (patch-aa) = 14c63f15f09d6d22770b90a30cc49951c8d1d38a
-SHA1 (patch-ab) = 080c2b068fd30cd9ea9c67fb1dcb5ca7c1336a04
-SHA1 (patch-ac) = 1fa9333d4e54ccabe02ed94c4bddd1d3a1e6d914
+SHA1 (mpd-0.16.2.tar.bz2) = ce0b8cd473f8acb45c06d73f41c18fc4dabbe440
+RMD160 (mpd-0.16.2.tar.bz2) = 74e63fe4514eb8309bf2b2e4e4012566e14b6262
+Size (mpd-0.16.2.tar.bz2) = 478096 bytes
+SHA1 (patch-aa) = 4ac387b87c793014f2001e4cc2ba8242eaaa05e5
+SHA1 (patch-ab) = b0879896541d220300c105a0b2a94b53d62203cc
+SHA1 (patch-ac) = 08cb6ce7a7ca6e2c56d19d9d5487944dbba66c91
+SHA1 (patch-ad) = 0a836d2ca10143eb1472560d97769c367e42aea6
+SHA1 (patch-ae) = dfc4ca455ef606baf56cb2513e5471f6c16385dc

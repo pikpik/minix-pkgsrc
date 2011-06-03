@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2007/12/21 20:38:53 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/07/17 18:00:19 adrianp Exp $
 
 DISTNAME=	netcat-0.7.1
 PKGNAME=	gnetcat-0.7.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netcat/}
 

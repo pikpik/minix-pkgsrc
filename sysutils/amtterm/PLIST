@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/amtterm
+${PLIST.gamt}bin/gamt
+bin/amttool
+man/man1/amtterm.1
+man/man1/amttool.1
+${PLIST.gamt}man/man1/gamt.1
+man/man7/amt-howto.7
+${PLIST.gamt}share/applications/gamt.desktop

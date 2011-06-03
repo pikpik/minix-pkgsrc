@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2010,v 1.4389 2011/01/03 12:20:32 wiz Exp $
+$NetBSD: CHANGES-2010,v 1.4391 2011/02/05 19:21:05 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2010:
 
@@ -3489,6 +3489,8 @@ Changes to the packages collection and infrastructure in 2010:
 	Updated devel/p5-Moose to 1.09 [seb 2010-07-26]
 	Updated www/apache22 to 2.2.16 [tron 2010-07-26]
 	Updated devel/p5-MooseX-SemiAffordanceAccessor to 0.08nb1 [seb 2010-07-26]
+	Added graphics/eog-plugins version 2.30.1 [drochner 2010-07-26]
+	Added graphics/eog-plugins-map version 2.30.1 [drochner 2010-07-26]
 	Updated devel/xulrunner to 1.9.2.8 [tnn 2010-07-27]
 	Updated www/firefox to 3.6.8 [tnn 2010-07-27]
 	Updated devel/p5-File-ChangeNotify to 0.16 [seb 2010-07-27]
@@ -5347,7 +5349,7 @@ Changes to the packages collection and infrastructure in 2010:
 	Updated databases/mysql51-server to 5.1.52 [taca 2010-11-04]
 	Updated net/py-twisted to 10.1.0 [adam 2010-11-04]
 	Updated net/py-twisted-docs to 10.1.0 [adam 2010-11-04]
-	Updated multimedia/libdvbpsi to 10.1.0 [adam 2010-11-04]
+	Updated multimedia/libdvbpsi to 0.1.7 [adam 2010-11-04]
 	Updated security/netpgp to 20101104 [agc 2010-11-04]
 	Updated sysutils/dd_rescue to 1.23 [ghen 2010-11-05]
 	Updated net/openresolv to 3.4.0 [roy 2010-11-05]

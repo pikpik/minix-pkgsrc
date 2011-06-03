@@ -1,12 +1,20 @@
-$NetBSD$
-
---- libstdc++-v3/acinclude.m4.orig	Wed May  6 09:00:57 2009
-+++ libstdc++-v3/acinclude.m4
-@@ -1670,6 +1670,7 @@ AC_DEFUN([GLIBCXX_CHECK_SYSTEM_ERROR], [
- m4_pushdef([n_syserr], [1])dnl
- m4_foreach([syserr], [EOWNERDEAD, ENOTRECOVERABLE, ENOLINK, EPROTO, ENODATA,
- 		      ENOSR, ENOSTR, ETIME, EBADMSG, ECANCELED,
-+			  ECONNABORTED, EDESTADDRREQ, ENOMSG, ENETRESET,
- 		      EOVERFLOW, ENOTSUP, EIDRM, ETXTBSY],
- [m4_pushdef([SYSERR], m4_toupper(syserr))dnl
- AC_MSG_CHECKING([for syserr])
+--- gcc/fortran/f95-lang.c.orig	Tue Jun 15 12:27:01 2010
++++ gcc/fortran/f95-lang.c	Fri Jun  3 14:51:32 2011
+@@ -873,10 +873,17 @@
+ 
+   gfc_define_builtin ("__builtin_cabsl", func_clongdouble_longdouble, 
+ 		      BUILT_IN_CABSL, "cabsl", true);
++#if defined (__NetBSD__)
+   gfc_define_builtin ("__builtin_cabs", func_cdouble_double, 
++		      BUILT_IN_CABS, "__c99_cabs", true);
++  gfc_define_builtin ("__builtin_cabsf", func_cfloat_float, 
++		      BUILT_IN_CABSF, "__c99_cabsf", true);
++#else
++  gfc_define_builtin ("__builtin_cabs", func_cdouble_double, 
+ 		      BUILT_IN_CABS, "cabs", true);
+   gfc_define_builtin ("__builtin_cabsf", func_cfloat_float, 
+ 		      BUILT_IN_CABSF, "cabsf", true);
++#endif
+  
+   gfc_define_builtin ("__builtin_copysignl", mfunc_longdouble[1], 
+ 		      BUILT_IN_COPYSIGNL, "copysignl", true);

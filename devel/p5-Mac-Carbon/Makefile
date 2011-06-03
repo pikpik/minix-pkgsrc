@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/08/16 23:41:10 obache Exp $
+# $NetBSD: Makefile,v 1.6 2010/08/21 16:33:59 seb Exp $
 #
 
 DISTNAME=	Mac-Carbon-0.82
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mac/}
 
-MAINTAINER=	obache@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Mac-Carbon/
 COMMENT=	Carbon API for perl on Mac OS X
 

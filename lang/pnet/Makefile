@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/07/06 22:17:14 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2011/05/21 09:05:26 obache Exp $
 
 DISTNAME=	pnet-0.8.0
 #PKGREVISION=	1
@@ -12,6 +12,10 @@ COMMENT=	DotGNU Portable.NET (development tools)
 BUILD_DEPENDS+=	treecc>=0.2.6:../../devel/treecc
 
 CONFLICTS=	mono-[0-9]*
+CONFLICTS+=	libffi-[0-9]*
+CONFLICTS+=	boehm-gc-[0-9]*
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Unsupported by internal libffi
 NOT_FOR_PLATFORM=	NetBSD-*-x86_64

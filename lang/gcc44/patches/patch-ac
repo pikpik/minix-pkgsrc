@@ -1,8 +1,6 @@
-$NetBSD: patch-cc,v 1.1 2004/11/05 12:40:23 shannonjr Exp $
-
---- gcc/config.gcc.orig	Mon Jan  4 15:13:08 2010
-+++ gcc/config.gcc
-@@ -251,7 +251,7 @@ case ${target} in
+--- gcc/config.gcc.orig	Fri Jun  3 14:42:47 2011
++++ gcc/config.gcc	Fri Jun  3 14:42:58 2011
+@@ -251,7 +251,7 @@
   | *-*-sysv*		\
   | vax-*-vms*				\
   )
@@ -11,9 +9,9 @@ $NetBSD: patch-cc,v 1.1 2004/11/05 12:40:23 shannonjr Exp $
  	exit 1
  	;;
  esac
-@@ -482,6 +482,33 @@ case ${target} in
+@@ -515,6 +515,33 @@
    esac
-   fbsd_tm_file="${fbsd_tm_file} freebsd-spec.h freebsd.h"
+   dfbsd_tm_file="${dfbsd_tm_file} dragonfly-spec.h dragonfly.h"
    ;;
 +*-*-dragonfly*)
 +  gas=yes
@@ -45,7 +43,7 @@ $NetBSD: patch-cc,v 1.1 2004/11/05 12:40:23 shannonjr Exp $
  *-*-linux* | frv-*-*linux* | *-*-kfreebsd*-gnu | *-*-knetbsd*-gnu | *-*-gnu* | *-*-kopensolaris*-gnu)
    extra_parts="crtbegin.o crtbeginS.o crtbeginT.o crtend.o crtendS.o"
    gas=yes
-@@ -1037,6 +1064,14 @@ x86_64-*-elf*)
+@@ -1070,6 +1097,14 @@
  	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h i386/i386elf.h i386/x86-64.h"
  	tmake_file="${tmake_file} i386/t-i386elf t-svr4"
  	;;
@@ -60,9 +58,9 @@ $NetBSD: patch-cc,v 1.1 2004/11/05 12:40:23 shannonjr Exp $
  i[34567]86-*-aout*)
  	tm_file="${tm_file} i386/unix.h i386/bsd.h i386/gas.h i386/gstabs.h i386/i386-aout.h"
  	;;
-@@ -1047,6 +1089,12 @@ x86_64-*-freebsd*)
- 	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h ${fbsd_tm_file} i386/x86-64.h i386/freebsd.h i386/freebsd64.h"
- 	tmake_file="${tmake_file} i386/t-crtstuff"
+@@ -1086,6 +1121,12 @@
+ x86_64-*-dragonfly*)
+ 	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h ${dfbsd_tm_file} i386/x86-64.h i386/dragonfly.h i386/dragonfly64.h"
  	;;
 +i[34567]86-*-dragonfly*)
 +	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h ${dfbsd_tm_file} i386/dragonfly.h"
@@ -73,7 +71,7 @@ $NetBSD: patch-cc,v 1.1 2004/11/05 12:40:23 shannonjr Exp $
  i[34567]86-*-netbsdelf*)
  	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h netbsd.h netbsd-elf.h i386/netbsd-elf.h"
  	;;
-@@ -2415,7 +2463,7 @@ m32c-*-elf*)
+@@ -2466,7 +2507,7 @@
  	cxx_target_objs="m32c-pragma.o"
   	;;
  *)

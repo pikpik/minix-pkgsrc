@@ -1,6 +1,6 @@
 $NetBSD$
 
---- make/linux/Makefile.orig	2010-06-04 08:44:54.000000000 +0000
+--- make/linux/Makefile.orig	2011-03-18 12:15:07.000000000 +0000
 +++ make/linux/Makefile
 @@ -16,16 +16,16 @@ prefix=/boot/home/config
  else
@@ -31,7 +31,7 @@ $NetBSD$
  LIBRARY=libebml.a
 -LIBRARY_SO=libebml.so
 +LIBRARY_SO=libebml.la
- LIBRARY_SO_VER=libebml.so.2
+ LIBRARY_SO_VER=libebml.so.3
  
  # source-files
 @@ -84,16 +84,14 @@ lib:
@@ -59,7 +59,7 @@ $NetBSD$
  	$(INSTALL) $(INSTALL_DIR_OPTS) -d $(libdir)
 -	$(INSTALL) $(INSTALL_OPTS_LIB) $(LIBRARY_SO_VER) $(libdir)
 -	ln -fs $(LIBRARY_SO_VER) $(libdir)/$(LIBRARY_SO)
-+	$(LIBTOOL) --mode=install $(INSTALL) $(INSTALL_OPTS_LIB) $(LIBRARY_SO) $(libdir)
++	$(LIBTOOL) --mode=install $(BSD_INSTALL_LIB) $(LIBRARY_SO) $(libdir)
  
  
  ifneq ($(wildcard .depend),)

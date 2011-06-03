@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2010/01/17 12:02:06 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2011/02/15 10:18:06 adam Exp $
 
-DISTNAME=	climm-0.6.3
+DISTNAME=	climm-0.7.1
 PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.climm.org/source/
@@ -12,12 +12,15 @@ COMMENT=	Text-mode ICQ client
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=	gmake
-GNU_CONFIGURE=	yes
-USE_LANGUAGES=	c c++
+USE_LANGUAGES=		c c++
+USE_TOOLS+=		gmake
+GNU_CONFIGURE=		yes
+#CONFIGURE_ARGS+=	--disable-otr
+CONFIGURE_ARGS+=	--disable-tcl
+CONFIGURE_ARGS+=	--disable-xmpp
+CONFIGURE_ARGS+=	--enable-ssl=openssl
 
-CONFIGURE_ARGS+=	--disable-tcl --disable-otr --enable-ssl=openssl
-
+.include "../../chat/libotr/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

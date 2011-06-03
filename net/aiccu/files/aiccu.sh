@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: aiccu.sh,v 1.1.1.1 2005/12/29 14:53:52 ghen Exp $
 #
 
 # PROVIDE: aiccu

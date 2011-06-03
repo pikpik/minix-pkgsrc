@@ -1,10 +1,9 @@
-# $NetBSD: Makefile.common,v 1.31 2008/08/23 07:47:00 obache Exp $
+# $NetBSD: Makefile.common,v 1.33 2011/03/19 10:37:26 obache Exp $
 #
-# Common Makefile for:
-#  * nessus-core
-#  * nessus-libraries
-#  * nessus-plugins
-#  * libnasl
+# used by security/nessus-core/Makefile
+# used by security/nessus-libraries/Makefile
+# used by security/nessus-plugins/Makefile
+# used by security/libnasl/Makefile
 
 VERS=		2.2.11
 
@@ -14,7 +13,7 @@ MASTER_SITES=	http://www.nessus.org/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nessus.org/
 
-FETCH_MESSAGE+=	"Please download ${DISTFILES:Q}"
+FETCH_MESSAGE+=	"Please download ${DEFAULT_DISTFILES:Q}"
 FETCH_MESSAGE+=	"manually from ${MASTER_SITES:Q}"
 
 MAKE_JOBS_SAFE=	no

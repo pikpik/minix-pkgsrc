@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2006/12/15 20:32:56 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/07/22 09:01:30 wiz Exp $
 #
 
 DISTNAME=	xbreaky-0.0.5
@@ -9,7 +9,9 @@ MASTER_SITES=	http://xbreaky.sourceforge.net/
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://xbreaky.sourceforge.net/
 COMMENT=	Breakout game for X11
+LICENSE=	gnu-gpl-v2 # or later
 
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 

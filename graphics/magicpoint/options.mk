@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2008/09/10 13:32:47 taca Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -37,7 +37,7 @@ MGP_VFONT=	% %
 CONFIGURE_ARGS+=	--disable-xft2
 .endif
 
-.include "../../graphics/imlib/buildlink3.mk"
+.include "../../graphics/imlib2/buildlink3.mk"
 
 
 #

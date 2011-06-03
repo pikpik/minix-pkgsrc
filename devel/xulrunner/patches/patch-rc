@@ -1,12 +1,11 @@
 $NetBSD$
 
---- browser/branding/unofficial/locales/en-US/brand.dtd.orig	2009-10-29 23:10:36.000000000 +0100
+--- browser/branding/unofficial/locales/en-US/brand.dtd.orig	2011-04-14 05:28:21.000000000 +0000
 +++ browser/branding/unofficial/locales/en-US/brand.dtd
-@@ -1,5 +1,5 @@
--<!ENTITY  brandShortName        "Namoroka">
--<!ENTITY  brandFullName         "Namoroka">
+@@ -1,4 +1,4 @@
+-<!ENTITY  brandShortName        "Tumucumaque">
+-<!ENTITY  brandFullName         "Tumucumaque">
 +<!ENTITY  brandShortName        "Browser">
 +<!ENTITY  brandFullName         "Browser">
  <!ENTITY  vendorShortName       "mozilla.org">
- <!ENTITY  logoCopyright         " ">
- 
+ <!ENTITY  trademarkInfo.part1   " ">

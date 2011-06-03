@@ -1,7 +1,7 @@
-$NetBSD: patch-ag,v 1.1.1.1 2006/02/18 17:12:20 bouyer Exp $
+$NetBSD: patch-ah,v 1.1 2006/05/17 20:47:41 bouyer Exp $
 
---- cgi/getcgi.c.orig	2006-05-17 22:25:16.000000000 +0200
-+++ cgi/getcgi.c	2006-05-17 22:25:26.000000000 +0200
+--- cgi/getcgi.c.orig	2006-05-15 16:59:24.000000000 +0000
++++ cgi/getcgi.c
 @@ -10,6 +10,7 @@
  #include "../include/getcgi.h"
  #include <stdio.h>

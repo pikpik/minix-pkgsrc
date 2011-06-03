@@ -1,10 +1,10 @@
 $NetBSD$
 
---- config.h.in.orig	2007-03-05 11:17:55.000000000 +0100
+--- config.h.in.orig	2010-01-11 11:06:53.000000000 +0000
 +++ config.h.in
-@@ -55,6 +55,9 @@
- /* Define to 1 if you have the `putc_unlocked' function. */
- #undef HAVE_PUTC_UNLOCKED
+@@ -70,6 +70,9 @@
+ /* Define if we have pthread. */
+ #undef HAVE_PTHREAD
  
 +/* Define to 1 if you have the <rfuncs.h> header file. */
 +#undef HAVE_RFUNCS_H

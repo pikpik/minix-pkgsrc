@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2009/05/19 08:59:22 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/01 11:40:34 wiz Exp $
 #
 
-DISTNAME=	mpop-1.0.12
+DISTNAME=	mpop-1.0.23
 PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mpop/}
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		pkg-config
-INFO_FILES=		# PLIST
+INFO_FILES=		yes
 
 CONFIGURE_ARGS+=	--enable-nls
 

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.1.1.1 2011/01/19 21:15:51 ryoon Exp $
 
 *BSD are identified as linux.
 
@@ -10,7 +10,7 @@ $NetBSD$
  
 +    case ${tgt_os} in
 +    darwin*)
-+	add_extralibs -lm -lrt
++	add_extralibs -lm
 +	;;
 +    solaris*)
 +	add_extralibs -lm -lrt

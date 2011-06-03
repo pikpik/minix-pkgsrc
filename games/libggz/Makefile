@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/25 23:09:44 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:04 joerg Exp $
 #
 
 DISTNAME=	libggz-0.0.14.1
+PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://mirrors.ibiblio.org/pub/mirrors/ggzgamingzone/ggz/0.0.14.1/
 

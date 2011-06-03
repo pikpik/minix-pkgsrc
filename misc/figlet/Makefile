@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.19 2006/10/25 14:36:09 rillig Exp $
+# $NetBSD: Makefile,v 1.20 2009/12/10 21:13:07 abs Exp $
 
-DISTNAME=	figlet222
-PKGNAME=	figlet-2.2.2
-PKGREVISION=	1
+DISTNAME=	figlet-2.2.4
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.figlet.org/pub/figlet/program/unix/
 
@@ -16,5 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_FLAGS+=	MANDIR=${PREFIX}/${PKGMANDIR}/man6
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man6
+
+TEST_TARGET=	check
 
 .include "../../mk/bsd.pkg.mk"

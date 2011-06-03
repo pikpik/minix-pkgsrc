@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2010/06/28 18:45:21 gls Exp $
+# $NetBSD: Makefile,v 1.9 2011/03/08 21:29:34 gls Exp $
 #
 
-VERSION=		0.9.3
+VERSION=		1.0.1
 DISTNAME=		Fabric-${VERSION}
 PKGNAME=		${DISTNAME:S/F/f/}
 CATEGORIES=		sysutils net
-MASTER_SITES=	http://code.fabfile.org/projects/fabric/files/
+MASTER_SITES=	http://pypi.python.org/packages/source/F/Fabric/
 
 MAINTAINER=		gls@NetBSD.org
 HOMEPAGE=		http://fabfile.org/
@@ -26,9 +26,6 @@ INSTALLATION_DIRS+=	share/doc/fabric/api/contrib
 INSTALLATION_DIRS+=	share/doc/fabric/api/core
 INSTALLATION_DIRS+=	share/doc/fabric/changes
 INSTALLATION_DIRS+=	share/doc/fabric/usage
-
-#post-extract:
-#	${RM} -r ${WRKSRC}/paramiko
 
 post-install:
 	${INSTALL_MAN} files/fab.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/

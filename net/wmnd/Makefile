@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2007/07/08 12:35:11 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/06/20 01:09:32 joerg Exp $
 
 DISTNAME=	wmnd-0.4.12
 PKGREVISION=	1
 CATEGORIES=	net x11
-MASTER_SITES=	ftp://ftp.yuv.info/pub/wmnd/releases/
+MASTER_SITES=	# ftp://ftp.yuv.info/pub/wmnd/releases/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.yuv.info/wmnd/

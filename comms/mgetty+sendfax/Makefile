@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.68 2010/06/13 22:43:59 wiz Exp $
+# $NetBSD: Makefile,v 1.73 2011/04/16 11:14:31 obache Exp $
 
-DISTNAME=	mgetty1.1.36-Jun15
-PKGNAME=	mgetty-1.1.36
-PKGREVISION=	5
+DISTNAME=	mgetty1.1.37-Jun05
+PKGNAME=	mgetty-1.1.37
 CATEGORIES=	comms
 MASTER_SITES=	ftp://alpha.greenie.net/pub/mgetty/source/1.1/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mgetty.greenie.net/
 COMMENT=	Handle external logins, send and receive faxes
+LICENSE=	gnu-gpl-v2
 
 MAKE_JOBS_SAFE=		no
 
@@ -16,17 +16,19 @@ BUILD_DEPENDS+=	texi2roff-[0-9]*:../../textproc/texi2roff
 
 CONFLICTS=	hylafax-[0-9]*
 
+PKG_DESTDIR_SUPPORT=	destdir
+
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
 MAKE_ENV+=		MGETTY_CONFDIR=${PKG_SYSCONFDIR:Q} PERL5=${PERL5:Q}
-MAKE_FLAGS+=		prefix=${PREFIX:Q}				\
-			INFODIR=${PREFIX:Q}/${PKGINFODIR:Q}		\
-			MAN1DIR=${PREFIX:Q}/${PKGMANDIR:Q}/man1		\
-			MAN4DIR=${PREFIX:Q}/${PKGMANDIR:Q}/man4		\
-			MAN5DIR=${PREFIX:Q}/${PKGMANDIR:Q}/man5		\
-			MAN8DIR=${PREFIX:Q}/${PKGMANDIR:Q}/man8
-BUILD_MAKE_FLAGS=	${MAKE_FLAGS} CONFDIR=${PKG_SYSCONFDIR:Q}
-INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} CONFDIR=${EXAMPLES_DIR:Q}
+MAKE_FLAGS+=		prefix=${DESTDIR:Q}${PREFIX:Q}                  \
+			INFODIR=${DESTDIR:Q}${PREFIX:Q}/${PKGINFODIR:Q} \
+			MAN1DIR=${DESTDIR:Q}${PREFIX:Q}/${PKGMANDIR:Q}/man1\
+			MAN4DIR=${DESTDIR:Q}${PREFIX:Q}/${PKGMANDIR:Q}/man4\
+			MAN5DIR=${DESTDIR:Q}${PREFIX:Q}/${PKGMANDIR:Q}/man5\
+			MAN8DIR=${DESTDIR:Q}${PREFIX:Q}/${PKGMANDIR:Q}/man8
+INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} CONFDIR=${DESTDIR:Q}${EXAMPLES_DIR:Q}
+BUILD_MAKE_FLAGS=	${MAKE_FLAGS:S,${DESTDIR},,} CONFDIR=${PKG_SYSCONFDIR:Q}
 
 USE_TOOLS+=		makeinfo perl:run
 

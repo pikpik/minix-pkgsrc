@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/01/12 14:09:35 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:00 joerg Exp $
 #
 
 DISTNAME=	libsyncml-0.4.5
+PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	http://libsyncml.opensync.org/download/releases/0.4.5/
 EXTRACT_SUFX=	.tar.bz2

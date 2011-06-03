@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.4 2010/02/11 18:58:35 drochner Exp $
+$NetBSD: distinfo,v 1.6 2011/02/25 13:22:33 drochner Exp $
 
-SHA1 (veusz-1.9.tar.gz) = 1f1ff89aa2e1a37cb54536cb6b2fe20fafe0f1af
-RMD160 (veusz-1.9.tar.gz) = 4399fcc6ac3e28b7504b253cbe60ff0eb391cfb7
-Size (veusz-1.9.tar.gz) = 1335537 bytes
+SHA1 (veusz-1.11.tar.gz) = 5f2c067583427bb19d2c0a2c63645eaa59cf2321
+RMD160 (veusz-1.11.tar.gz) = c9d4da62d3386cf1fb3e1aaa3c03478e7091b383
+Size (veusz-1.11.tar.gz) = 1579404 bytes

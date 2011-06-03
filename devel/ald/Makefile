@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/09/09 12:52:11 obache Exp $
+# $NetBSD: Makefile,v 1.13 2009/05/20 00:58:11 wiz Exp $
 #
 
 DISTNAME=	ald-0.1.7
@@ -9,6 +9,9 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ald/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ald.sourceforge.net/
 COMMENT=	Very nice x86 assembly-level debugger
+LICENSE=	gnu-gpl-v2
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	*-*-i386
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.41 2007/03/04 11:29:58 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2007/11/07 09:56:05 heinz Exp $
 
 DISTNAME=	gtkglarea-1.2.3
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	x11 graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openev/}
 

@@ -1,12 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/12 04:13:24 taca Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/09 12:56:48 taca Exp $
 
-DISTNAME=	activesupport-3.0.1
+DISTNAME=	activesupport-${RUBY_RAILS3_VERSION}
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.rubyonrails.org/
 COMMENT=	Toolkit of support libraries and Ruby core extensions
 LICENSE=	mit
+
+RUBY_RAILS=	3
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

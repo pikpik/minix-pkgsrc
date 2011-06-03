@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2006/09/06 20:44:12 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2008/07/14 12:56:00 joerg Exp $
 #
 
 DISTNAME=	yencode-0.46
 PKGNAME=	yencode-0.4.6
+PKGREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yencode/}
 

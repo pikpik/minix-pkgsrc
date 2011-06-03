@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2011/02/03 11:30:54 wiz Exp $
 #
 
 DISTNAME=	lp_solve_5.5.2.0_source
@@ -13,33 +13,33 @@ COMMENT=	Mixed Integer Linear Programming (MILP) solver
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=	automake
-
 WRKSRC=		${WRKDIR}/lp_solve_5.5
 
 SUBST_CLASSES+=		dl
 SUBST_STAGE.dl=		pre-build
-SUBST_SED.dl+=		-e "s,-ldl,${DL_LIBS},g"
-SUBST_SED.dl+=		-e "s,^opts=.*,opts=${CFLAGS},g"
-SUBST_SED.dl+=		-e "s,-fpic,-fPIC,g"
+SUBST_SED.dl+=		-e s,-ldl,${DL_LIBS:Q},g
+SUBST_SED.dl+=		-e s,^opts=.*,opts=\'${CFLAGS:Q}\',g
+SUBST_SED.dl+=		-e s,-fpic,-fPIC,g
 SUBST_FILES.dl+=	lp_solve/ccc
 SUBST_FILES.dl+=	lpsolve55/ccc
 SUBST_FILES.dl+=	demo/ccc
 
 .include "../../mk/bsd.fast.prefs.mk"
 
-.if ${MACHINE_ARCH} == "i386"
-LPSOLVE_ARCH=	ux32
-.else
+.if ${MACHINE_ARCH} == "alpha" || ${MACHINE_ARCH} == "sparc64" || ${MACHINE_ARCH} == "x86_64"
 LPSOLVE_ARCH=	ux64
+.else
+LPSOLVE_ARCH=	ux32
 .endif
 
 INSTALLATION_DIRS=	bin include/lpsolve lib
 
 do-build:
-	cd ${WRKSRC}/lp_solve && ${SHELL} ccc
-	cd ${WRKSRC}/lpsolve55 && ${SHELL} ccc
-	cd ${WRKSRC}/demo && ${SHELL} ccc
+.for dir in lp_solve lpsolve55 demo
+	${RUN}${_ULIMIT_CMD}				\
+	cd ${WRKSRC}/${dir} &&				\
+	${SETENV} ${MAKE_ENV} ${SH} ccc
+.endfor
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/lp_solve/bin/${LPSOLVE_ARCH}/lp_solve \
@@ -53,4 +53,5 @@ do-install:
 .endfor
 	${LN} -sf liblpsolve55.so ${DESTDIR}${PREFIX}/lib/liblpsolve55.so.1
 
+.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

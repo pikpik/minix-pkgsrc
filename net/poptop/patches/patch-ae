@@ -1,16 +1,7 @@
-$NetBSD: patch-ae,v 1.1 2005/01/01 06:26:41 cube Exp $
+$NetBSD: patch-ae,v 1.2 2009/02/24 21:22:41 cube Exp $
 
 --- Makefile.in.orig	2005-08-03 07:47:42.000000000 +0000
 +++ Makefile.in
-@@ -14,7 +14,7 @@
- 
- @SET_MAKE@
- 
--SOURCES = $(bcrelay_SOURCES) $(pptpctrl_SOURCES) $(pptpd_SOURCES)
-+SOURCES = $(pptpctrl_SOURCES) $(pptpd_SOURCES)
- 
- srcdir = @srcdir@
- top_srcdir = @top_srcdir@
 @@ -37,7 +37,7 @@ NORMAL_UNINSTALL = :
  PRE_UNINSTALL = :
  POST_UNINSTALL = :

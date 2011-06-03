@@ -1,11 +1,11 @@
-$NetBSD: distinfo,v 1.10 2005/12/01 18:46:53 wiz Exp $
+$NetBSD: distinfo,v 1.12 2011/02/12 02:52:34 obache Exp $
 
-SHA1 (nvi-1.79.m17n-20040401.diff.gz) = 10fa772dad4368727a7ddc740d85cdfda3062414
-RMD160 (nvi-1.79.m17n-20040401.diff.gz) = 1b1790448d38a4f92f3b2df5f6aa566f1d8efff0
-Size (nvi-1.79.m17n-20040401.diff.gz) = 160411 bytes
 SHA1 (nvi-1.79.tar.gz) = 65b49768783372609278ecedd63caa8c1547aa2a
 RMD160 (nvi-1.79.tar.gz) = 1c39d480e0d30a87fc061c3219354b50011a8621
 Size (nvi-1.79.tar.gz) = 1295401 bytes
+SHA1 (nvi-m17n-1.79-20040608.diff.gz) = 4deaeecadd978b5aacd49735917741f7662e5bc3
+RMD160 (nvi-m17n-1.79-20040608.diff.gz) = 7791ce2bf6aa13245480de049e69f227002daf5f
+Size (nvi-m17n-1.79-20040608.diff.gz) = 159701 bytes
 SHA1 (patch-aa) = f9de0fd75adfd08ec55acd4bcbbce22d292d8535
 SHA1 (patch-ab) = 4526fa11abf619c5b2cfc23c97b2a4700462b601
 SHA1 (patch-ac) = 617ddb4ba49ce3d556d2148ff4154430ad2868a0
@@ -18,3 +18,4 @@ SHA1 (patch-ai) = a6da171a13f01615ad4c831aad8c26ea9d2ed315
 SHA1 (patch-aj) = bc8698e2d12a88fe7024d38188723cb058ab240a
 SHA1 (patch-ak) = 2c5069a892a5204fcd3a607e6b383e8a503092f8
 SHA1 (patch-al) = 96a625d1eb906390beca232b129711b869ab3026
+SHA1 (patch-regex_regex2.h) = c9f6f28b8b7cc1d4515edcae07ff0b5c011c3a9e

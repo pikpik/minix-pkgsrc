@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.196 2010/04/17 10:42:55 zafer Exp $
+# $NetBSD: Makefile,v 1.201 2011/05/16 05:06:48 taca Exp $
 
-DISTNAME=		openssh-5.5p1
-PKGNAME=		openssh-5.5.1
+DISTNAME=		openssh-5.8p2
+PKGNAME=		openssh-5.8.2
+PKGREVISION=		2
 SVR4_PKGNAME=		ossh
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable/ \
@@ -46,11 +47,17 @@ PLIST_SRC=		# empty
 
 # OpenSSH on Interix has some important caveats
 MESSAGE_SRC=		${.CURDIR}/MESSAGE.Interix
-BUILDLINK_PASSTHRU_DIRS+= /usr/local/include/bind /usr/local/lib/bind
+BUILDLINK_PASSTHRU_DIRS+= /usr/local/lib/bind
 CONFIGURE_ENV+=		ac_cv_func_openpty=no
 CONFIGURE_ENV+=		ac_cv_type_struct_timespec=yes
 CPPFLAGS+=		-DIOV_MAX=16 # default is INT_MAX, way too large
+.if exists(/usr/local/include/bind/resolv.h)
 CPPFLAGS+=		-I/usr/local/include/bind
+BUILDLINK_PASSTHRU_DIRS+= /usr/local/include/bind
+.elif exists(/usr/local/bind/include/resolv.h)
+CPPFLAGS+=		-I/usr/local/bind/include
+BUILDLINK_PASSTHRU_DIRS+= /usr/local/bind/include
+.endif
 LDFLAGS+=		-L/usr/local/lib/bind
 LIBS+=			-lbind -ldb -lcrypt
 
@@ -104,10 +111,18 @@ CONFIGURE_ARGS+=	--with-skey=${BUILDLINK_PREFIX.skey}
 CONFIGURE_ARGS+=	--without-skey
 .endif
 
-.if (${OPSYS} == "NetBSD") && exists(/usr/include/utmpx.h)
+.if (${OPSYS} == "NetBSD")
+.  if exists(/usr/include/utmpx.h)
 # if we have utmpx et al do not try to use login()
 CONFIGURE_ARGS+=	--disable-libutil
+.  endif
+#
+# NetBSD current after 2011/03/12 has incompatible strnvis(3) and
+# prior version don't have it.  So, disable use of strnvis(3) now.
+#
+CONFIGURE_ENV+=		ac_cv_func_strnvis=no
 .endif
+
 .if (${OPSYS} == "SunOS") && (${OS_VERSION} == "5.8" || ${OS_VERSION} == "5.9")
 CONFIGURE_ARGS+=	--disable-utmp --disable-wtmp
 .endif
@@ -153,6 +168,7 @@ CONF_FILES+=		${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .endfor
 OWN_DIRS=		${OPENSSH_CHROOT}
 RCD_SCRIPTS=		sshd
+RCD_SCRIPT_SRC.sshd=	${WRKDIR}/sshd.sh
 
 PLIST_SRC+=		${.CURDIR}/PLIST
 FILES_SUBST+=		SSH_PID_DIR=${SSH_PID_DIR:Q}
@@ -168,6 +184,19 @@ SUBST_MESSAGE.patch=	More patch a file.
 .if ${OPSYS} != "Minix"
 .include "../../security/tcp_wrappers/buildlink3.mk"
 .endif
+
+#
+# type of key "ecdsa" isn't always supported depends on OpenSSL.
+#
+post-configure:
+	if ${EGREP} -q '^\#define[ 	]+OPENSSL_HAS_ECC' \
+	    ${WRKSRC}/config.h; then \
+		${SED} -e '/HAVE_ECDSA/s/.*//' \
+			${FILESDIR}/sshd.sh > ${WRKDIR}/sshd.sh; \
+	else \
+		${SED} -e '/HAVE_ECDSA_START/,/HAVE_ECDSA_STOP/d' \
+			${FILESDIR}/sshd.sh > ${WRKDIR}/sshd.sh; \
+	fi
 
 post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}

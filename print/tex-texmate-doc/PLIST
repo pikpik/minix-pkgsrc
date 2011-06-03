@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/texmate/README
+share/texmf-dist/doc/latex/texmate/texmate${PKGVERSION}manual.pdf
+share/texmf-dist/doc/latex/texmate/texmate${PKGVERSION}manual.tex

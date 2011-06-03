@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.124 2011/01/19 03:39:13 jmcneill Exp $
+# $NetBSD: Makefile,v 1.126 2011/01/30 17:26:32 wiz Exp $
 #
 # NOTE:	If you update this package, then you'll likely need to also update
 #	the x11-links dependency in buildlink3.mk to the correct version,
 #	usually the most recent.
 
-DISTNAME=	x11-links-0.63
+DISTNAME=	x11-links-0.65
 CATEGORIES=	pkgtools x11
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -52,6 +52,8 @@ DEPENDS+=	x11-[0-9]*:../../minix/x11
 .elif !empty(X11BASE:M*openwin)
 .  include "openwin.mk"
 .elif exists(${X11BASE}/lib/X11/config/xorgversion.def) || \
+      (exists(${X11BASE}/lib/X11/config/xorg.cf) && \
+       exists(${X11BASE}/lib/X11/config/version.def)) || \
       exists(${X11BASE}/lib/pkgconfig/xorg-server.pc)
 .  include "xorg.mk"
 .else

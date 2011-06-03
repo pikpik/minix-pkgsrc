@@ -1,0 +1,9 @@
+$NetBSD$
+
+DragonFly BSD support.
+
+--- /dev/null	2011-02-07 10:19:08 +0100
++++ ../gcc-4.0.3/gcc/config/t-dragonfly-thread	2011-02-07 10:23:04 +0100
+@@ -0,0 +1,2 @@
++# This is currently needed to compile libgcc2 for threads support
++TARGET_LIBGCC2_CFLAGS += -pthread

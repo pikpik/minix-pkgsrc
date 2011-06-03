@@ -5,11 +5,13 @@ BUILTIN_PKG:=	mit-krb5
 .include "../../mk/bsd.fast.prefs.mk"
 
 BUILTIN_FIND_FILES_VAR:=		H_MIT_KRB5 SH_KRB5_CONFIG
-.if empty(MACHINE_PLATFORM:MDarwin-9.*-*) && \
-    empty(MACHINE_PLATFORM:MDarwin-10.*-*)
-BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5.h
-.else
+.if !(empty(MACHINE_PLATFORM:MDarwin-9.*-*) && \
+      empty(MACHINE_PLATFORM:MDarwin-10.*-*))
 BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5/krb5.h
+.elif !empty(MACHINE_PLATFORM:MSunOS-*-*)
+BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/kerberosv5/krb5.h
+.else
+BUILTIN_FIND_FILES.H_MIT_KRB5=		/usr/include/krb5.h
 .endif
 BUILTIN_FIND_GREP.H_MIT_KRB5=		Massachusetts Institute of Technology
 BUILTIN_FIND_FILES.SH_KRB5_CONFIG=	/usr/bin/krb5-config
@@ -56,10 +58,10 @@ USE_BUILTIN.mit-krb5=	${IS_BUILTIN.mit-krb5}
 .    if defined(BUILTIN_PKG.mit-krb5) && \
         !empty(IS_BUILTIN.mit-krb5:M[yY][eE][sS])
 USE_BUILTIN.mit-krb5=	yes
-.      for _dep_ in ${BUILDLINK_API_DEPENDS.mit-krb5}
+.      for dep__ in ${BUILDLINK_API_DEPENDS.mit-krb5}
 .        if !empty(USE_BUILTIN.mit-krb5:M[yY][eE][sS])
 USE_BUILTIN.mit-krb5!=							\
-	if ${PKG_ADMIN} pmatch ${_dep_:Q} ${BUILTIN_PKG.mit-krb5:Q}; then \
+	if ${PKG_ADMIN} pmatch ${dep__:Q} ${BUILTIN_PKG.mit-krb5:Q}; then \
 		${ECHO} "yes";						\
 	else								\
 		${ECHO} "no";						\

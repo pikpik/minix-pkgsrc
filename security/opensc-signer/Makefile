@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/01/17 12:02:42 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/09/01 15:59:48 drochner Exp $
 
 PKGNAME=		opensc-signer-${OPENSC_PKG_VERSION}
+PKGREVISION=		1
 COMMENT=		Opensc signer plugin for Mozilla apps
 LICENSE=		gnu-lgpl-v2.1
 

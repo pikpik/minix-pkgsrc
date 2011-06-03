@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.139 2010/11/03 20:06:42 drochner Exp $
+# $NetBSD: Makefile,v 1.144 2011/05/07 20:02:42 ryoon Exp $
 #
 
 COMMENT=	Editors
 
 SUBDIR+=	Sigil
 SUBDIR+=	TeXmacs
+SUBDIR+=	TeXmacs-devel
 SUBDIR+=	abiword
 SUBDIR+=	abiword-plugins
 SUBDIR+=	beav
@@ -70,6 +71,7 @@ SUBDIR+=	ne
 SUBDIR+=	nedit
 SUBDIR+=	ng
 SUBDIR+=	notecase
+SUBDIR+=	nts
 SUBDIR+=	nvi
 SUBDIR+=	nvi-m17n
 SUBDIR+=	obby
@@ -94,8 +96,10 @@ SUBDIR+=	p5-Padre-Plugin-Vi
 SUBDIR+=	p5-Padre-Plugin-XS
 SUBDIR+=	pico
 SUBDIR+=	poedit
+SUBDIR+=	qgoogletranslator
 SUBDIR+=	rox-edit
 SUBDIR+=	sam
+SUBDIR+=	scite
 SUBDIR+=	speedbar
 SUBDIR+=	ssam
 SUBDIR+=	tamago
@@ -142,5 +146,6 @@ SUBDIR+=	xvile
 SUBDIR+=	xwpe
 SUBDIR+=	yudit
 SUBDIR+=	zile
+SUBDIR+=	zim
 
 .include "../mk/misc/category.mk"

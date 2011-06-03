@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.54 2010/12/23 11:44:40 dsainty Exp $
+# $NetBSD: Makefile,v 1.56 2011/03/09 16:26:48 drochner Exp $
 
-DISTNAME=	imlib2-1.4.2
-PKGREVISION=	6
+DISTNAME=	imlib2-1.4.4
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=enlightenment/}
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://docs.enlightenment.org/api/imlib2/html/
@@ -39,7 +39,7 @@ SUBST_SED.shlib+=	-e 's,"\.so",".${SHLIB_SUFFIX}",'
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
-.include "../../graphics/libungif/buildlink3.mk"
+.include "../../mk/giflib.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 

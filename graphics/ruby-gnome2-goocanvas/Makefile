@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/11/27 06:14:49 obache Exp $
+# $NetBSD: Makefile,v 1.13 2011/03/04 13:14:06 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-goocanvas-${VERSION}

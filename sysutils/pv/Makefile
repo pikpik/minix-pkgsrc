@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2006/04/13 18:23:38 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2008/06/12 02:14:47 joerg Exp $
 #
 
 DISTNAME=		pv-0.9.6
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.ivarch.com/programs/sources/
 MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:=pipeviewer/}

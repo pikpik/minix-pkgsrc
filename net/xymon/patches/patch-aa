@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.server.orig	2009-02-12 13:09:34.000000000 +0000
+--- configure.server.orig	2011-03-08 17:20:28.000000000 +0000
 +++ configure.server
-@@ -495,6 +495,9 @@ fi
+@@ -507,6 +507,9 @@ fi
  if test "$INSTALLETCDIR" != ""; then
  	echo "INSTALLETCDIR = $INSTALLETCDIR"   >>Makefile
  fi

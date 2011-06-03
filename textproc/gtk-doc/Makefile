@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.40 2010/02/10 19:17:46 joerg Exp $
+# $NetBSD: Makefile,v 1.43 2011/03/22 22:03:41 gls Exp $
 #
 
-DISTNAME=	gtk-doc-1.15
+DISTNAME=	gtk-doc-1.17
+PKGREVISION=	1
 CATEGORIES=	textproc
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtk-doc/1.15/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtk-doc/1.17/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -19,7 +20,7 @@ DEPENDS+=	docbook-xsl>=1.68.1:../../textproc/docbook-xsl
 GNU_CONFIGURE=		YES
 PKGCONFIG_OVERRIDE=	gtk-doc.pc.in
 CONFIGURE_ARGS+=	--with-xml-catalog=${XML_DEFAULT_CATALOG:Q}
-USE_TOOLS+=		gmake perl:run pkg-config
+USE_TOOLS+=		gmake perl:run pkg-config msgfmt
 
 .include "options.mk"
 

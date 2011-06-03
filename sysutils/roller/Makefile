@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.31 2008/12/25 13:27:02 kim Exp $
+# $NetBSD: Makefile,v 1.32 2010/01/27 19:53:23 joerg Exp $
 #
 
 DISTNAME=		roller-1.20
 #PKGREVISION=		1
 CATEGORIES=		sysutils
-MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
+MASTER_SITES=		# ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Roll log files

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.168 2010/12/29 22:25:17 wiz Exp $
+# $NetBSD: Makefile,v 1.171 2011/04/07 04:03:57 taca Exp $
 
 .include "license.mk"
 .include "Makefile.common"
 
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	Practical Extraction and Report Language
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -76,6 +76,7 @@ PERL5_SCRIPTDIR=	${PERL5_PERLBASE}/bin
 SUBST_VARS.policysh+=	PERL5_SCRIPTDIR
 SUBST_VARS.policysh+=	PERL5_PERLBASE
 SUBST_VARS.policysh+=	PERL5_SITEBASE
+SUBST_VARS.policysh+=	PERL5_SITEBIN
 SUBST_VARS.policysh+=	PERL5_VENDORBASE
 SUBST_VARS.policysh+=	PERL5_PRIVLIB
 SUBST_VARS.policysh+=	PERL5_SITELIB
@@ -185,6 +186,14 @@ PERL5_BUILD_THREADS_SUPPORT=	${DLOPEN_REQUIRE_PTHREADS}
     !empty(USE_BUILTIN.pthread:M[yY][eE][sS])
 PKG_HACKS+=			broken-vax-pthreads
 PERL5_BUILD_THREADS_SUPPORT=	no
+.endif
+
+.if !empty(MACHINE_PLATFORM:MMirBSD*)
+SUBST_CLASSES+=			mirbsd-paths
+SUBST_STAGE.mirbsd-paths=	pre-configure
+SUBST_FILES.mirbsd-paths=	hints/mirbsd.sh
+SUBST_SED.mirbsd-paths=		-e 's,/usr/mpkg,${PREFIX},g'
+SUBST_MESSAGE.mirbsd-paths=	Do not use non-pkgsrc paths on MirBSD.
 .endif
 
 .include "../../mk/compiler.mk"

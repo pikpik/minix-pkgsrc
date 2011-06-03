@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.152 2010/10/05 06:53:27 ghen Exp $
+# $NetBSD: Makefile,v 1.154 2011/04/22 14:40:43 obache Exp $
 
 DOVECOT_VERSION=	1.2
-DOVECOT_SUBVERSION=	.16
+DOVECOT_SUBVERSION=	.17
 SIEVE_VERSION=		0.1.18
 MANAGESIEVE_VERSION=	0.11.12
 DISTNAME=		dovecot-${DOVECOT_VERSION}${DOVECOT_SUBVERSION}
@@ -22,14 +22,12 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
+USE_TOOLS+=		pkg-config rpcgen
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		pkg-config
-USE_TOOLS+=		rpcgen
-
-CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
-CONFIGURE_ARGS+=	--with-ssldir=${SSLDIR}
 CONFIGURE_ARGS+=	--enable-header-install
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--with-ssldir=${SSLDIR}
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
@@ -45,8 +43,8 @@ PKG_USERS_VARS+=	DOVECOT_USER
 
 PKG_GECOS.${DOVECOT_USER}=	Dovecot IMAP/POP3 user
 
-EGDIR=			${PREFIX}/share/examples/dovecot
-CONF_FILES=		${EGDIR}/dovecot-example.conf ${PKG_SYSCONFDIR}/dovecot.conf
+EGDIR=		${PREFIX}/share/examples/dovecot
+CONF_FILES=	${EGDIR}/dovecot-example.conf ${PKG_SYSCONFDIR}/dovecot.conf
 
 INSTALLATION_DIRS=	libexec/dovecot sbin share/doc/dovecot		\
 			share/examples/dovecot

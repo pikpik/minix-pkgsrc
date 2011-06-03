@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.44 2010/01/17 12:02:22 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2011/04/25 20:58:24 asau Exp $
 
 DISTNAME=		otp_src_${DIST_VERSION_MAJOR}${DIST_VERSION_MINOR:D-${DIST_VERSION_MINOR}}
 PKGNAME=		erlang-${ERLANG_VERSION}
-PKGREVISION=		4
 CATEGORIES=		lang
 MASTER_SITES=		http://www.erlang.org/download/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.erlang.org/
 COMMENT=		Concurrent functional programming language
+LICENSE=		erlang-public-license
 
 DIST_SUBDIR=		erlang
 
@@ -22,15 +22,22 @@ USE_TOOLS+=		gmake perl:run
 
 CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_PREFIX.openssl}
 
-###
-### XXX Linking fails on amd64 due to invalid relocations without this.
-###
-CONFIGURE_ARGS+=	--enable-dynamic-ssl-lib
-
 PTHREAD_OPTS+=		require native
 CONFIGURE_ARGS+=	--enable-threads
 
 MAKE_ENV+=		DESTDIR=${DESTDIR}
+
+REPLACE_INTERPRETER+=	escript
+REPLACE.escript.old=	.*escript
+REPLACE.escript.new=	${LOCALBASE}/bin/escript
+REPLACE_FILES.escript=	\
+	lib/reltool/examples/display_args \
+	lib/reltool/examples/mnesia_core_dump_viewer \
+	lib/snmp/src/compile/snmpc.src \
+	lib/erl_docgen/priv/bin/codeline_preprocessing.escript \
+	lib/erl_docgen/priv/bin/xml_from_edoc.escript \
+	lib/snmp/bin/snmpc \
+	lib/diameter/bin/diameterc
 
 SUBST_CLASSES+=		target
 SUBST_STAGE.target=	post-patch
@@ -39,7 +46,7 @@ SUBST_SED.target=	-e "s|=.*config.guess)|= ${MACHINE_GNU_PLATFORM}|"
 SUBST_MESSAGE.target=	Fixing target name.
 
 TEST_TARGET=		tests
-TEST_MAKE_FLAGS=	ERL_TOP=$(WRKSRC)
+TEST_MAKE_FLAGS=	ERL_TOP=${WRKSRC}
 REPLACE_PERL+=		make/make_emakefile
 
 PLIST_SRC=		PLIST

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2010/08/04 02:52:44 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.9 2010/12/02 16:10:34 wiz Exp $
 #
 
 DISTNAME=	confuse-2.7
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://savannah.nongnu.org/download/confuse/
 

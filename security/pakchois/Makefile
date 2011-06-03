@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/10/30 03:32:19 bjs Exp $
+# $NetBSD: Makefile,v 1.3 2011/03/31 18:37:34 agc Exp $
 #
 
 DISTNAME=	pakchois-0.4
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.manyfish.co.uk/pakchois/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.manyfish.co.uk/pakchois/
-COMMENT=	PKCS#11 wrapper library
+COMMENT=	PKCS\#11 wrapper library
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

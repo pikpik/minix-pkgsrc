@@ -1,0 +1,16 @@
+$NetBSD$
+
+fix build with gcc4.3
+
+--- lib/tunepimp.cpp.orig	2006-11-18 10:52:33.000000000 +0000
++++ lib/tunepimp.cpp
+@@ -30,7 +30,9 @@
+ #endif
+ #endif
+ 
++#include <string.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <map>
+ using namespace std;
+ 

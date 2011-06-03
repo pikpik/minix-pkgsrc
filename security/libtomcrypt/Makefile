@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.47 2010/07/23 06:39:03 adam Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/11/27 06:11:57 agc Exp $
 
 DISTNAME=	crypt-1.17
 PKGNAME=	libtom${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://libtom.org/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -15,7 +16,9 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
-MAKE_FILE=	makefile.unix
+USE_LIBTOOL=	yes
+USE_TOOLS+=	gmake
+MAKE_FILE=	makefile.shared
 MAKE_ENV+=	CFLAGS_OPTS="-DUSE_LTM -DLTM_DESC"
 BUILD_TARGET=	default
 

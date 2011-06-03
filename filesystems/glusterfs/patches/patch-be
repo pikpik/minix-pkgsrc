@@ -1,22 +1,15 @@
-$NetBSD$
-
-basename() and dirname() are not supposed to be thread-safe, and NetBSD's
-implementation is not. glusterfs assume the functions are thread-safe. 
-Borrow basename() and rdirname() form glibc and make NetBSD use them.
-
---- libglusterfs/src/compat.c.orig	2010-08-25 03:58:44.000000000 +0200
-+++ libglusterfs/src/compat.c	2010-08-25 10:42:37.000000000 +0200
-@@ -509,4 +509,230 @@
- 		len++;
- 	return len;
+--- libglusterfs/src/compat.c.orig	2011-04-22 19:37:28.000000000 +0200
++++ libglusterfs/src/compat.c	2011-05-19 15:27:32.000000000 +0200
+@@ -529,8 +529,285 @@
+ 
  }
- #endif /* STRNLEN */
-+
+ #endif /* GF_SOLARIS_HOST_OS */
+ 
 +#ifdef __NetBSD__
 +/*
 + * basename() and dirname() are not supposed to be thread-safe. 
-+ * SUSv2 states it can return a static pointer, and * NetBSD does that. 
-+ * glusterfs heavily assume basename() and * dirname() thread-safety, 
++ * SUSv2 states it can return a static pointer, and NetBSD does that. 
++ * glusterfs heavily assume basename() and dirname() thread-safety, 
 + * hence these replacement from glibc.
 + * compat.h defines basename() and dirname() as macro so that
 + * the replacement are used.
@@ -236,4 +229,60 @@ Borrow basename() and rdirname() form glibc and make NetBSD use them.
 +
 +  return path;
 +}
++
++/*
++ * Extended attribute API for NetBSD
++ */
++int
++removexattr(const char *path, const char *key)
++{ return extattr_delete_file(path, EXTATTR_NAMESPACE_USER, key); }
++
++ssize_t
++listxattr(const char *path, void *value, size_t size) 
++{ return extattr_list_file(path, EXTATTR_NAMESPACE_USER, value, size); }
++
++ssize_t
++getxattr(const char *path, const char *key, void *value, size_t size)
++{ return extattr_get_file(path, EXTATTR_NAMESPACE_USER, key, value, size); }
++
++int
++setxattr(const char *path, const char *key, const void *value, size_t size)
++{ return extattr_set_file(path, EXTATTR_NAMESPACE_USER, key, value, size); }
++
++int
++fremovexattr(int fd, const char *key)
++{ return extattr_delete_fd(fd, EXTATTR_NAMESPACE_USER, key); }
++
++ssize_t
++flistxattr(int fd, void *value, size_t size) 
++{ return extattr_list_fd(fd, EXTATTR_NAMESPACE_USER, value, size); }
++
++ssize_t
++fgetxattr(int fd, const char *key, void *value, size_t size)
++{ return extattr_get_fd(fd, EXTATTR_NAMESPACE_USER, key, value, size); }
++
++int
++fsetxattr(int fd, const char *key, const void *value, size_t size)
++{ return extattr_set_fd(fd, EXTATTR_NAMESPACE_USER, key, value, size); }
++
++int
++lremovexattr(const char *path, const char *key)
++{ return extattr_delete_link(path, EXTATTR_NAMESPACE_USER, key); }
++
++ssize_t
++llistxattr(const char *path, void *value, size_t size) 
++{ return extattr_list_link(path, EXTATTR_NAMESPACE_USER, value, size); }
++
++ssize_t
++lgetxattr(const char *path, const char *key, void *value, size_t size)
++{ return extattr_get_link(path, EXTATTR_NAMESPACE_USER, key, value, size); }
++
++int
++lsetxattr(const char *path, const char *key, const void *value, size_t size)
++{ return extattr_set_link(path, EXTATTR_NAMESPACE_USER, key, value, size); }
++
 +#endif /* __NetBSD__ */
+ #ifndef HAVE_STRNLEN
+ size_t
+ strnlen(const char *string, size_t maxlen)
+ {

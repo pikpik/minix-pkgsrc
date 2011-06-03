@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/lcyw/README
+share/texmf-dist/doc/latex/lcyw/README.koi8-r
+share/texmf-dist/doc/latex/lcyw/example-lcyw.tex
+share/texmf-dist/doc/latex/lcyw/lcyw.pdf

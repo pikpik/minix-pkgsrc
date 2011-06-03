@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.156 2010/11/24 18:52:05 drochner Exp $
+# $NetBSD: Makefile,v 1.161 2011/02/10 16:25:30 wiz Exp $
 #
 
 COMMENT=	Communication programs
@@ -32,6 +32,7 @@ SUBDIR+=	fisg
 SUBDIR+=	gajim
 SUBDIR+=	gale
 SUBDIR+=	gg2
+SUBDIR+=	gloox
 SUBDIR+=	gnomeicu
 SUBDIR+=	goofey
 SUBDIR+=	gossip
@@ -58,6 +59,7 @@ SUBDIR+=	kadu
 SUBDIR+=	kmess
 SUBDIR+=	konversation
 SUBDIR+=	konversation-kde3
+SUBDIR+=	libfolks
 SUBDIR+=	libirc
 SUBDIR+=	libmsn
 SUBDIR+=	libotr
@@ -93,6 +95,7 @@ SUBDIR+=	pidgin-silc
 SUBDIR+=	pircbot
 SUBDIR+=	prosody
 SUBDIR+=	psi
+SUBDIR+=	py-xmpppy
 SUBDIR+=	quirc
 SUBDIR+=	riece
 SUBDIR+=	roxirc
@@ -103,6 +106,7 @@ SUBDIR+=	silc-client-icb
 SUBDIR+=	silc-server
 SUBDIR+=	sirc
 SUBDIR+=	smirk
+SUBDIR+=	spectrum
 SUBDIR+=	telepathy-farsight
 SUBDIR+=	telepathy-gabble
 SUBDIR+=	telepathy-glib

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2010/08/29 21:51:34 pettai Exp $
+# $NetBSD: Makefile,v 1.14 2011/03/21 13:10:58 pettai Exp $
 
-DISTNAME=	ldns-1.6.7
+DISTNAME=	ldns-1.6.9
 CATEGORIES=	net
 MASTER_SITES=	http://www.nlnetlabs.nl/downloads/ldns/
 
@@ -38,6 +38,8 @@ PLIST_VARS.sha2!=	\
 .endif
 .if ${PLIST_VARS.sha2} == "yes"
 CONFIGURE_ARGS+=	--enable-sha2
+.else
+CONFIGURE_ARGS+=	--disable-sha2
 .endif
 CONFIGURE_ARGS+=	--with-ssl=${SSLBASE}
 CONFIGURE_ARGS+=	DOXYGEN=${FALSE}

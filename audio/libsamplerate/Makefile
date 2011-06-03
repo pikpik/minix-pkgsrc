@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2009/02/25 19:35:46 drochner Exp $
+# $NetBSD: Makefile,v 1.22 2010/01/24 17:11:18 heinz Exp $
 #
 
 DISTNAME=	libsamplerate-0.1.7
@@ -11,6 +11,9 @@ COMMENT=	Sample rate converter library
 LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+# remove on next update
+DIST_SUBDIR=	libsamplerate-0.1.7-repack
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES

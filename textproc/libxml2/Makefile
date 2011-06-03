@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2010/11/26 13:43:24 drochner Exp $
+# $NetBSD: Makefile,v 1.107 2011/01/03 12:17:43 drochner Exp $
 
 DISTNAME=	libxml2-2.7.8
 PKGREVISION=	2
@@ -7,7 +7,7 @@ MASTER_SITES=	ftp://xmlsoft.org/libxml2/ \
 		http://xmlsoft.org/sources/
 #MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxml2/2.7/}
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xmlsoft.org/
 COMMENT=	XML parser library from the GNOME project
 LICENSE=	modified-bsd

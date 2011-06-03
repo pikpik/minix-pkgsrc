@@ -1,12 +1,13 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.2 2004/11/03 23:34:05 cube Exp $
+$NetBSD: MESSAGE,v 1.5 2011/02/27 17:05:57 spz Exp $
 
 You must configure RT by editing ${PKG_SYSCONFDIR}/RT_SiteConfig.pm.
 
 To initialize the RT database, run
 
 	${PREFIX}/sbin/rt-setup-database --action init \
-	    --dba dbadmin --prompt-for-dba-password
+	    --dba dbadmin --prompt-for-dba-password \
+	    --datadir ${RTSHAREDIR}/etc
 
 as a user in the ${RT_GROUP} group or as superuser.  In the previous
 command-line, 'dbadmin' stands for the database administrator's username,
@@ -29,6 +30,21 @@ previously used, do the following:
 You might also want to clear the Mason cache:
 
 	rm -Rf ${RTVARDIR}/mason_data/obj
+
+UPGRADING FROM 3.8.8 and earlier:
+
+Previous versions of RT used a password hashing scheme which was too
+easy to reverse, which could allow attackers with read access to the
+RT database to possibly compromise users' passwords.  Even if RT does
+no password authentication itself, it may still store these weak
+password hashes -- using ExternalAuth does not guarantee that you are
+not vulnerable!  To upgrade stored passwords to a stronger hash, run:
+
+    perl ${RTSHAREDIR}/etc/vulnerable-passwords
+
+at this point.
+
+For other upgrading actions, see ${RTSHAREDIR}/etc/UPGRADING
 
 See also the manual on ${HOMEPAGE}docs.html
 ===========================================================================

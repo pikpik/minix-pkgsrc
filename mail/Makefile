@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.406 2010/12/23 16:58:59 taca Exp $
+# $NetBSD: Makefile,v 1.409 2011/02/27 12:57:15 obache Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -210,6 +210,7 @@ SUBDIR+=	p5-Mail-ListDetector
 SUBDIR+=	p5-Mail-Mbox-MessageParser
 SUBDIR+=	p5-Mail-Milter
 SUBDIR+=	p5-Mail-RFC822-Address
+SUBDIR+=	p5-Mail-SPF
 SUBDIR+=	p5-Mail-SPF-Query
 SUBDIR+=	p5-Mail-SRS
 SUBDIR+=	p5-Mail-Sender
@@ -248,7 +249,6 @@ SUBDIR+=	popa3d
 SUBDIR+=	poppassd
 SUBDIR+=	poppy
 SUBDIR+=	postfix
-SUBDIR+=	postfix-current
 SUBDIR+=	postgrey
 SUBDIR+=	prayer
 SUBDIR+=	procmail
@@ -286,6 +286,7 @@ SUBDIR+=	ruby-mime-types
 SUBDIR+=	ruby-tmail
 SUBDIR+=	safecat
 SUBDIR+=	sendmail
+SUBDIR+=	sendmail-cidrexpand
 SUBDIR+=	sendmail-qtool
 SUBDIR+=	sendymail
 SUBDIR+=	serialmail

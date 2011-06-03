@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2010/11/28 21:12:54 adam Exp $
+# $NetBSD: Makefile,v 1.15 2011/04/22 13:42:39 obache Exp $
 
 DISTNAME=	libcanberra-0.26
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/libcanberra/
 
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config gmake
-GCONF_SCHEMAS+=	libcanberra.schemas
 
 PKGCONFIG_OVERRIDE+=	libcanberra-gtk.pc.in
 PKGCONFIG_OVERRIDE+=	libcanberra.pc.in
@@ -34,12 +33,13 @@ TOOLS_NOOP+=		gtkdoc-rebase
 
 PLIST_VARS+=		oss
 
+.include "options.mk"
+
 #.include "../../devel/libltdl/convenience.mk"
 .include "../../devel/libltdl/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../multimedia/gstreamer0.10/buildlink3.mk"
-.include "../../x11/gtk2/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .if ${OSS_TYPE} != "none"

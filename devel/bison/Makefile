@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2010/07/20 13:57:28 tnn Exp $
+# $NetBSD: Makefile,v 1.75 2010/08/15 15:16:58 wiz Exp $
 
 DISTNAME=		bison-2.4.3
 PKGREVISION=		1

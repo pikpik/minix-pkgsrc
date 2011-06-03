@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.12 2010/11/15 22:57:10 abs Exp $
+# $NetBSD: Makefile,v 1.14 2011/02/13 03:56:09 obache Exp $
 #
 
 DISTNAME=	clutter-gtk-0.10.8
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://source.clutter-project.org/sources/clutter-gtk/0.10/
 
-MAINTAINER=	obache@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.clutter-project.org/
 COMMENT=	GTK+ Integration library for Clutter
 LICENSE=	gnu-lgpl-v2.1

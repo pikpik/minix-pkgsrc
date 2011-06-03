@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.67 2010/11/15 22:58:11 abs Exp $
+# $NetBSD: Makefile,v 1.70 2011/03/25 21:37:02 abs Exp $
 #
-DISTNAME=		transmission-2.12
-PKGNAME=		Transmission-2.12
-PKGREVISION=		2
+DISTNAME=		transmission-2.22
+PKGNAME=		Transmission-2.22
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://download.m0k.org/transmission/files/
 EXTRACT_SUFX=		.tar.bz2
@@ -16,12 +16,12 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config intltool msgfmt
 EXTRACT_USING=		bsdtar
 
+LICENSE=		gnu-gpl-v2 AND mit
+
 GNU_CONFIGURE=		yes
 LDFLAGS+=		${BUILDLINK_LDADD.getopt} ${BUILDLINK_LDADD.gettext}
 # Tell libtool to link all internal libraries statically
 LDFLAGS+=		-static
-
-CONFIGURE_ARGS+=	--disable-wx
 
 .include "../../mk/bsd.prefs.mk"
 .if !empty(OPSYS:M*BSD)
@@ -42,7 +42,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST.common
 
 .include "options.mk"
 
-BUILDLINK_API_DEPENDS.libevent+=	libevent>=1.4.11
+BUILDLINK_API_DEPENDS.libevent+=	libevent>=2.0.10
 .include "../../devel/libevent/buildlink3.mk"
 ALL_ENV+=		"OPENSSL_CFLAGS=-I${SSLBASE}/include"
 ALL_ENV+=		"OPENSSL_LIBS=-L${SSLBASE}/lib -lcrypto -lssl"

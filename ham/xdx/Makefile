@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.24 2010/11/15 22:57:31 abs Exp $
+# $NetBSD: Makefile,v 1.26 2011/02/28 14:52:53 wiz Exp $
 #
 
 DISTNAME=	xdx-2.4.2
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	ham
 MASTER_SITES=	http://www.qsl.net/pg4i/download/
 
-MAINTAINER=	wulf@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.qsl.net/pg4i/linux/xdx.html
 COMMENT=	Amateur Radio tcp/ip DX-cluster client
 LICENSE=	gnu-gpl-v2

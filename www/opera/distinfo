@@ -1,11 +1,5 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.34 2011/01/24 21:46:18 ahoka Exp $
 
-SHA1 (opera-9.64-freebsd5-static-qt3.i386.tar.bz2) = 0fb77ec99b2a36282e2c81a02aa3079ed3b18404
-RMD160 (opera-9.64-freebsd5-static-qt3.i386.tar.bz2) = 3cb21f2706435beebe63d2304bcc6ae70bb6b1bb
-Size (opera-9.64-freebsd5-static-qt3.i386.tar.bz2) = 9423112 bytes
-SHA1 (opera-9.64.gcc295-static-qt3.tar.bz2) = 61d1a477fcf61f7b2db46f6c93d0255059eec17c
-RMD160 (opera-9.64.gcc295-static-qt3.tar.bz2) = a2970c6cc7767e3e06790a27f23f8d8eda021b59
-Size (opera-9.64.gcc295-static-qt3.tar.bz2) = 11682363 bytes
-SHA1 (opera-9.64.gcc4-static-qt3.i386.rpm) = 80fa51285be2d7017a4b788ff255e0d2a0e42fc1
-RMD160 (opera-9.64.gcc4-static-qt3.i386.rpm) = 0f3d7cd97b796c86fd7fa879d4c225efea345adf
-Size (opera-9.64.gcc4-static-qt3.i386.rpm) = 10980991 bytes
+SHA1 (opera-11.01-1190.i386.rpm) = 61830f3923e3b67a5b1624c5f92c1989b537feb1
+RMD160 (opera-11.01-1190.i386.rpm) = 80b346bba09121d24522ace8834b11dd4162514b
+Size (opera-11.01-1190.i386.rpm) = 13306952 bytes

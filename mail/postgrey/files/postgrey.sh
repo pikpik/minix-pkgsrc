@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: postgrey.sh,v 1.1.1.1 2004/12/22 15:51:38 kim Exp $
 #
 
 # PROVIDE: postgrey
@@ -20,6 +20,8 @@ required_files="
  @PKG_SYSCONFDIR@/postgrey_whitelist_recipients
 "
 @PKGBASE@_flags=${@PKGBASE@_flags-"-i 2525"}
+extra_commands="reload"
+stop_postcmd='rm -f $pidfile'
 
 load_rc_config $name
 run_rc_command "$1"

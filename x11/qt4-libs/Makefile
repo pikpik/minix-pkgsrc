@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.55 2011/01/12 14:40:42 adam Exp $
+# $NetBSD: Makefile,v 1.60 2011/05/05 12:37:07 adam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-.include "../../x11/qt4-libs/Makefile.common"
-
 PKGNAME=	qt4-libs-${QTVERSION}
-PKGREVISION=	4
 COMMENT=	C++ X GUI toolkit
+
+.include "../../x11/qt4-libs/Makefile.common"
 
 # XXX this is to test what really gets installed when 'do-install' is disabled
 INSTALL_DIRS+=		src

@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.67 2010/12/15 19:08:21 chuck Exp $
+# $NetBSD: Makefile,v 1.71 2011/03/09 16:26:48 drochner Exp $
 
 DISTNAME=		magicpoint-1.13a
-PKGREVISION=		4
+PKGREVISION=		8
 CATEGORIES=		x11 graphics
 MASTER_SITES=		ftp://sh.wide.ad.jp/WIDE/free-ware/mgp/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://member.wide.ad.jp/wg/mgp/
 COMMENT=		X11 based presentation tool
+LICENSE=		modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -72,11 +73,10 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${DESTDIR}${PREFIX}/${EGDIR}
 .endfor
 
-.include "../../graphics/libungif/buildlink3.mk"
+.include "../../mk/giflib.buildlink3.mk"
 .include "../../graphics/mng/buildlink3.mk"
 .include "../../graphics/netpbm/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
-# DO NOT DELETE

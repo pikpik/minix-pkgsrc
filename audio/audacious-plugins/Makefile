@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2010/11/15 22:56:10 abs Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/21 15:03:52 hans Exp $
 #
 
 DISTNAME=		audacious-plugins-1.5.1
-PKGREVISION=		12
+PKGREVISION=		13
 CATEGORIES=		audio
 MASTER_SITES=		http://distfiles.atheme.org/
 EXTRACT_SUFX=		.tgz
@@ -43,7 +43,7 @@ CONFIGURE_ARGS+=	--disable-amidiplug --disable-evdevplug \
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
-PLIST_VARS+=	oss sun
+PLIST_VARS+=	oss sun oss4
 
 .if ${OPSYS} == "NetBSD"
 RAWPART_cmd=		/sbin/sysctl -n kern.rawpartition | ${TR} 0-9 a-j
@@ -57,7 +57,10 @@ PLIST.oss=	yes
 .elif ${OPSYS} == "DragonFly"
 PLIST.oss=	yes
 .elif ${OPSYS} == "SunOS"
-PLIST.sun=	yes
+CPPFLAGS.SunOS=	-D__EXTENSIONS__ -D__uint32_t=uint32_t -D__uint64_t=uint64_t
+CONFIGURE_ARGS+=	--enable-oss4
+PLIST.oss4=	yes
+PLIST.oss=	yes
 #.elif ${OPSYS} == "Linux"
 #.  include	"../../wip/alsa-lib/buildlink3.mk"
 #PKG_SUPPORTED_OPTIONS+= lirc

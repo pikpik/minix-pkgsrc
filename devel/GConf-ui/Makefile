@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2010/11/15 22:56:34 abs Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/22 13:42:45 obache Exp $
 #
 
 MAKE_JOBS_SAFE=	no
-PKGREVISION=	2
 
 .include "../../devel/GConf/Makefile.common"
 
@@ -11,6 +10,7 @@ PKGNAME=	${DISTNAME:S/GConf/GConf-ui/}
 BUILDLINK_API_DEPENDS.GConf+=	GConf>=${GCONF_VERSION}
 
 CONFIGURE_ARGS+=	--enable-gtk
+CONFIGURE_ARGS+=	--with-gtk=2.0
 CONFIGURE_ARGS+=	--disable-defaults-service
 
 BUILD_DIRS=	gconf

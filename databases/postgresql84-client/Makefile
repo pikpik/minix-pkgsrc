@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/11/03 14:36:40 adam Exp $
+# $NetBSD: Makefile,v 1.13 2011/02/15 08:14:16 adam Exp $
 
 PKGNAME=	${DISTNAME:C/-/84-client-/}
 COMMENT=	PostgreSQL database client programs
@@ -8,7 +8,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../databases/postgresql84/Makefile.common"
 
 USE_TOOLS+=		gzip tar
-USE_LIBTOOL=		yes
 CONFIGURE_ARGS+=	--with-openssl
 CONFIGURE_ARGS+=	--with-readline
 CONFIGURE_ARGS+=	--with-zlib
@@ -57,6 +56,7 @@ SUBST_STAGE.pgxs=	post-build
 SUBST_MESSAGE.pgxs=	Fixing workdir tools references in pgxs Makefile
 SUBST_FILES.pgxs=	src/Makefile.global
 SUBST_SED.pgxs=		-e 's,${WRKDIR}/.tools,${PREFIX},'
+SUBST_SED.pgxs+=	-e 's,${WRKDIR}/.wrapper/bin/ld,${LD},'
 SUBST_SED.pgxs+=	-e 's,${WRKDIR}/.wrapper,${PREFIX},'
 SUBST_SED.pgxs+=	-e 's,${WRKSRC},/dev/null,'
 
@@ -79,8 +79,8 @@ post-wrapper:
 .endif
 
 post-install:
-	set -e; for file in ${PGXS_FILES}; do				\
-		${INSTALL_DATA} ${WRKSRC}/$$file ${DEST_PGXS}/$$file;	\
-	done
+.for file in ${PGXS_FILES}
+	${INSTALL_DATA} ${WRKSRC}/${file} ${DEST_PGXS}/${file}
+.endfor
 
 .include "../../mk/bsd.pkg.mk"

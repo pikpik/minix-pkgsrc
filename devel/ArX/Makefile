@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.24 2010/11/15 22:56:33 abs Exp $
+# $NetBSD: Makefile,v 1.26 2011/02/28 14:52:43 wiz Exp $
 #
 
 DISTNAME=	ArX-2.2.4
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	devel scm
 MASTER_SITES=	http://savannah.nongnu.org/download/arx/
 
-MAINTAINER=	recht@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/arx/
 COMMENT=	Distributed revision control system
 

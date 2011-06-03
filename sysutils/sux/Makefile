@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2006/06/06 17:21:42 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2010/01/27 20:16:56 joerg Exp $
 #
 
 DISTNAME=		sux-1.0
 CATEGORIES=		sysutils
-MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
+MASTER_SITES=		# ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Set user id, preserving shell and environment, checking ssh agent

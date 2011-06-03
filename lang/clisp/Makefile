@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.79 2010/11/15 22:57:41 abs Exp $
+# $NetBSD: Makefile,v 1.81 2011/04/20 19:42:17 hans Exp $
 #
 
 DISTNAME=		clisp-2.49
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clisp/}
 #EXTRACT_SUFX=		.tar.bz2
@@ -48,6 +48,14 @@ TEST_TARGET=		check mod-check
 .if ${MACHINE_ARCH:Malpha} || ${MACHINE_ARCH:Mamd64} || ${MACHINE_ARCH:Mx86_64} || ${OPSYS} == "DragonFly"
 CONFIGURE_ARGS+=	--disable-mmap
 .endif
+
+.if ${OPSYS} == "SunOS"
+USE_TOOLS+=	bash
+CONFIG_SHELL=	${TOOLS_PATH.bash}
+.endif
+
+post-extract:
+	(cd ${WRKSRC} && ${CP} -p src/gllib/mbrtowc.c modules/syscalls/gllib)
 
 .include "options.mk"
 

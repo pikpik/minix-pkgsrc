@@ -1,7 +1,0 @@
-===========================================================================
-$NetBSD$
-
-Madman currently uses a lot of memory while saving the database. If you
-have a large collection of audiofiles (several thousands) you might want to
-raise the datasize ulimit (200 MB is a good starting point)
-===========================================================================

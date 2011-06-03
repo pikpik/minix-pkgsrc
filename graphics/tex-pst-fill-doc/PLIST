@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/pst-fill/Changes
+share/texmf-dist/doc/generic/pst-fill/README
+share/texmf-dist/doc/generic/pst-fill/pst-fill.pdf

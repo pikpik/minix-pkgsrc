@@ -1,15 +1,16 @@
-# $NetBSD: Makefile,v 1.22 2010/11/15 22:57:02 abs Exp $
+# $NetBSD: Makefile,v 1.24 2011/04/03 11:14:19 wiz Exp $
 #
 
 DISTNAME=		genecys-0.2
 PKGNAME=		genecys-client-0.2
-PKGREVISION=		12
+PKGREVISION=		13
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=genecys/}
 
 MAINTAINER=		root@garbled.net
 HOMEPAGE=		http://www.genecys.org/
 COMMENT=		Client for Genecys MMORPG
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

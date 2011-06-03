@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.5 2010/08/10 13:39:56 asau Exp $
+# $NetBSD: Makefile,v 1.7 2011/02/25 12:21:09 he Exp $
 
-DISTNAME=	pcc-${DATE_STR}
-PKGNAME=	pcc-current-0.9.9.20-${DATE_STR}
-DATE_STR=	101129
+PKGNAME=	pcc-current-1.0.0.BETA.${DATE_STR}
+DISTPREFIX=	pcc-1.0.0.BETA
+DISTNAME=	${DISTPREFIX}-${DATE_STR}
+DATE_STR=	20110228
+WRKSRC=		${WRKDIR}/${DISTPREFIX}
 CATEGORIES=	lang
-MASTER_SITES=	ftp://pcc.ludd.ltu.se/pub/pcc/
+MASTER_SITES=	ftp://pcc.ludd.ltu.se/pub/pcc-beta/
 EXTRACT_SUFX=	.tgz
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -12,6 +14,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 MAINTAINER=	he@NetBSD.org
 HOMEPAGE=	http://pcc.ludd.ltu.se/
 COMMENT=	Portable C compiler
+
+LICENSE=	pcc-license
 
 CONFLICTS=	pcc-[0-9]*
 

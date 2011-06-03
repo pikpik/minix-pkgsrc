@@ -1,14 +1,18 @@
-# $NetBSD: Makefile,v 1.12 2010/01/17 12:02:48 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2011/04/22 13:44:57 obache Exp $
 #
 
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/mod_//:S/_/-/}
-DISTNAME=	mod_auth_mellon-0.2.7
+DISTNAME=	mod_auth_mellon-0.3.0
+PKGREVISION=	3
 CATEGORIES=	www security
 MASTER_SITES=	http://modmellon.googlecode.com/files/
 
 MAINTAINER=	manu@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/modmellon/
 COMMENT=	SAML 2.0 authentication for Apache
+LICENSE=	gnu-gpl-v2 # or later
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
@@ -16,19 +20,23 @@ USE_TOOLS+=	pkg-config
 
 APACHE_MODULE=	YES
 APACHE_MODULE_NAME=	auth_mellon_module
-PKG_APACHE_ACCEPTED=    apache22
+PKG_APACHE_ACCEPTED=	apache22
 .include "../../mk/apache.mk"
-BUILDLINK_API_DEPENDS.apache+=  apache>=2.0.47
+BUILDLINK_API_DEPENDS.apache+=	apache>=2.0.47
 
-CPPFLAGS+=	-I${BUILDLINK_PREFIX.openssl}/include/openssl
-OPENSSL_LIBS=	-L${PREFIX}/lib -lssl -lcrypto
+SUBST_CLASSES+=		pthflags
+SUBST_MESSAGES=		Convert -pthread flag to apxs style
+SUBST_STAGE.pthflags=	post-configure
+SUBST_FILES.pthflags=	Makefile
+SUBST_SED.pthflags=	-e 's| -pthread | ${"${PTHREAD_CFLAGS:M-pthread}":?-Wc,-pthread:} ${"${PTHREAD_LDFLAGS:M-pthread}":?-Wl,-pthread:} |g'
 
-CONFIGURE_ENV+=		PKG_CONFIG_PATH=${PREFIX}/lib/pkgconfig
-CONFIGURE_ENV+=		OPENSSL_CFLAGS=${CPPFLAGS:Q}
-CONFIGURE_ENV+=		OPENSSL_LIBS=${OPENSSL_LIBS:Q}
-CONFIGURE_ARGS+=        --with-apxs2=${APXS:Q}
+INSTALLATION_DIRS+=	lib/httpd
 
-# url2pkg-marker (please do not remove this line.)
+do-install:
+	cd ${WRKSRC} &&							\
+	    libexecdir=`${APXS} -q LIBEXECDIR` &&			\
+	    ${APXS} -i -S LIBEXECDIR=${DESTDIR}"$${libexecdir}" 	\
+	      -n auth_mellon  mod_auth_mellon.la
 
 .include "../../security/lasso/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"

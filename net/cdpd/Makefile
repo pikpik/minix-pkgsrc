@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2007/02/18 18:57:33 adrianp Exp $
+# $NetBSD: Makefile,v 1.15 2008/06/20 01:09:30 joerg Exp $
 #
 
 DISTNAME=	cdpd-1.0.2
 PKGREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.lexa.ru/pub/domestic/snar/
+MASTER_SITES=	# ftp://ftp.lexa.ru/pub/domestic/snar/
 
 MAINTAINER=	explorer@NetBSD.org
 COMMENT=	Simple daemon to send Cisco Discovery Protocol packets
+HOMEPAGE=	http://www.lexa.ru
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

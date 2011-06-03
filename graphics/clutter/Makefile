@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.24 2010/12/03 07:30:17 obache Exp $
+# $NetBSD: Makefile,v 1.26 2011/02/13 03:56:09 obache Exp $
 #
 
 DISTNAME=	clutter-1.2.14
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://source.clutter-project.org/sources/clutter/1.2/
 #		${MASTER_SITE_GNOME:=sources/clutter/1.2/}
 
-MAINTAINER=	obache@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://clutter-project.org/
 COMMENT=	Open GL based interactive canvas library
 LICENSE=	gnu-lgpl-v2.1

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2011/01/18 10:59:12 markd Exp $
+# $NetBSD: Makefile,v 1.27 2011/03/06 16:04:33 wiz Exp $
 
 DISTNAME=	kdebase-workspace-${_KDE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	x11
 COMMENT=	base workspace for the KDE 4 integrated X11 desktop
 
@@ -72,6 +73,7 @@ RT_LIB_SCHED=	rt
 RT_LIB_SCHED=	# empty
 .endif
 CMAKE_ARGS+=	-DRT_LIB_SCHED=${RT_LIB_SCHED}
+CMAKE_ARGS+=	-DWITH_Xmms:BOOL=OFF
 
 # genkdmconf wont install faces if using destdir so do it ourselves
 INSTALLATION_DIRS+= share/kde/apps/kdm/faces
@@ -97,7 +99,7 @@ post-install:
 BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../meta-pkgs/kde4/kde4.mk"
 
-PYTHON_VERSIONS_ACCEPTED= 26 25 # because kdebindings4-python
+PYTHON_VERSIONS_ACCEPTED= 27 26 25 # because kdebindings4-python
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .include "../../devel/libusb/buildlink3.mk"

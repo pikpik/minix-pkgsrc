@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/11/27 06:14:46 obache Exp $
+# $NetBSD: Makefile,v 1.21 2011/03/04 13:14:05 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gdkpixbuf-${VERSION}
@@ -15,7 +15,6 @@ RUBY_EXTCONF_SUBDIRS=	gdk_pixbuf2
 
 DEPENDS+=		${RUBY_PKGPREFIX}-gnome2-glib>=${VERSION}:../../devel/ruby-gnome2-glib
 
-.include "../../graphics/ruby-rcairo/buildlink3.mk"
 BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.6.0
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../devel/ruby-pkg-config/tool.mk"

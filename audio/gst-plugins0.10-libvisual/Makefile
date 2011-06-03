@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/07/26 13:03:15 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/22 13:42:53 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	libvisual

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.83 2010/12/23 11:44:49 dsainty Exp $
+# $NetBSD: Makefile,v 1.85 2011/02/28 14:52:56 wiz Exp $
 #
 
 OO_VER=			2.4.3
 DISTNAME=		openoffice-${OO_VER}
 PKGNAME=		openoffice2-${OO_VER}
-PKGREVISION=		9
+PKGREVISION=		10
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_OPENOFFICE:=stable/${OO_VER}/}
 DIST_SUBDIR=		${DISTNAME}
@@ -15,7 +15,7 @@ DISTFILES+=		OOo_${OO_VER}_src_l10n.tar.bz2
 #DISTFILES+=		OOo_${OO_VER}_src_sdk.tar.bz2
 DISTFILES+=		OOo_${OO_VER}_src_system.tar.bz2
 
-MAINTAINER=		hira@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.openoffice.org/
 COMMENT=		Integrated office productivity suite (version 2)
 

@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2010/03/14 14:47:36 martin Exp $
+# $NetBSD: Makefile,v 1.1 2010/03/14 16:28:02 martin Exp $
 
 
 MPG123_MODULE=	arts
+
+PKGREVISION=	1
 
 .include "${.CURDIR}/../../audio/mpg123/Makefile.common"
 

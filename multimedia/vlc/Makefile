@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.100 2010/12/23 11:44:52 dsainty Exp $
+# $NetBSD: Makefile,v 1.110 2011/04/11 15:51:18 drochner Exp $
 #
 
 DISTNAME=		vlc-${VLC_VERSION}
-PKGREVISION=		6
+PKGREVISION=		2
 CATEGORIES=		multimedia
-MASTER_SITES=		http://download.videolan.org/pub/videolan/vlc/${VLC_VERSION}/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vlc/} \
+			http://download.videolan.org/pub/videolan/vlc/${VLC_VERSION}/
 EXTRACT_SUFX=		.tar.bz2
 
-VLC_VERSION=		1.0.6
+VLC_VERSION=		1.1.8
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.videolan.org/
@@ -22,6 +23,7 @@ USE_TOOLS+=		gmake perl pkg-config \
 			autoconf automake autoreconf
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--with-kde-solid=${PREFIX}/share/kde/apps/solid/actions
 PTHREAD_OPTS+=		require
 USE_LANGUAGES=		c99 c++
 PLIST_VARS+=		x86simd altivec v4l2 vcd cdda
@@ -80,7 +82,7 @@ INSTALLATION_DIRS+=	share/vlc/http/dialogs share/vlc/http/images \
 			share/vlc/osdmenu/dvd/volume \
 			share/vlc/osdmenu/dvd/unselect \
 			share/vlc/osdmenu/dvd/selection \
-			share/vlc/skins2 share/vlc/skins2/fonts \
+			share/vlc/skins2/fonts \
 			${PKGMANDIR}/man1
 pre-configure:
 	cd ${WRKSRC} && autoreconf -f
@@ -100,8 +102,6 @@ SUBST_STAGE.oss=	pre-configure
 SUBST_SED.oss=		-e "s,/dev/dsp,${DEVOSSAUDIO},g"
 SUBST_FILES.oss+=	modules/access/oss.c
 SUBST_FILES.oss+=	modules/audio_output/oss.c
-SUBST_FILES.oss+=	modules/gui/pda/pda_interface.c
-SUBST_FILES.oss+=	modules/gui/pda/pda.glade
 SUBST_FILES.oss+=	po/*.po
 SUBST_MESSAGE.oss=	Fixing hardcoded audio device.
 
@@ -114,12 +114,8 @@ SUBST_MESSAGE.fnt=	Fixing hardcoded paths.
 REPLACE_SH+=		vlc-config.in.in
 
 # VLC embeds the build environment info to help debuging.
-# Change it if it's bumped after a VLC upgrade!
-#
 CHECK_WRKREF_SKIP=	lib/libvlccore.a \
-			lib/libvlccore.so \
-			lib/libvlccore.so.2 \
-			lib/libvlccore.so.2.1.2
+			lib/libvlccore.so*
 
 .include "../../audio/libmpcdec/buildlink3.mk"
 .include "../../audio/flac/buildlink3.mk"
@@ -153,8 +149,11 @@ CHECK_WRKREF_SKIP=	lib/libvlccore.a \
 .include "../../multimedia/libmpeg2/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
 .include "../../multimedia/libtheora/buildlink3.mk"
+# libX11 should be built with xcb enabled
+BUILDLINK_API_DEPENDS.libX11+=	libX11>=1.3.5
+.include "../../x11/libX11/buildlink3.mk"
 # needs x264_encoder_delayed_frames
-BUILDLINK_API_DEPENDS.x264-devel+= x264-devel>=20090920
+BUILDLINK_API_DEPENDS.x264-devel+= x264-devel>=20100201
 .include "../../multimedia/x264-devel/buildlink3.mk"
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"

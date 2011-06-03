@@ -1,8 +1,6 @@
-$NetBSD: patch-an,v 1.10 2009/05/21 03:22:29 taca Exp $
-
---- scp.c.orig	Fri Jan  8 07:53:43 2010
-+++ scp.c
-@@ -118,6 +118,13 @@ extern char *__progname;
+--- scp.c.orig	Thu Jan  6 11:41:21 2011
++++ scp.c	Fri Jun  3 11:12:54 2011
+@@ -118,6 +118,13 @@
  
  #define COPY_BUFLEN	16384
  
@@ -14,9 +12,9 @@ $NetBSD: patch-an,v 1.10 2009/05/21 03:22:29 taca Exp $
 +#endif
 +
  int do_cmd(char *host, char *remuser, char *cmd, int *fdin, int *fdout);
+ int do_cmd2(char *host, char *remuser, char *cmd, int fdin, int fdout);
  
- void bwlimit(int);
-@@ -395,7 +402,11 @@ main(int argc, char **argv)
+@@ -477,7 +484,11 @@
  	argc -= optind;
  	argv += optind;
  
@@ -28,7 +26,7 @@ $NetBSD: patch-an,v 1.10 2009/05/21 03:22:29 taca Exp $
  		fatal("unknown user %u", (u_int) userid);
  
  	if (!isatty(STDOUT_FILENO))
-@@ -789,8 +800,10 @@ rsource(char *name, struct stat *statp)
+@@ -877,8 +888,10 @@
  		return;
  	}
  	while ((dp = readdir(dirp)) != NULL) {
@@ -39,7 +37,7 @@ $NetBSD: patch-an,v 1.10 2009/05/21 03:22:29 taca Exp $
  		if (!strcmp(dp->d_name, ".") || !strcmp(dp->d_name, ".."))
  			continue;
  		if (strlen(name) + 1 + strlen(dp->d_name) >= sizeof(path) - 1) {
-@@ -1240,7 +1253,9 @@ okname(char *cp0)
+@@ -1275,7 +1288,9 @@
  			case '\'':
  			case '"':
  			case '`':

@@ -1,7 +1,9 @@
-@comment $NetBSD: PLIST,v 1.2 2008/11/08 10:44:12 bjs Exp $
+@comment $NetBSD$
+bin/test-graph
 bin/tig
 man/man1/tig.1
 man/man5/tigrc.5
+man/man7/tigmanual.7
 share/doc/tig/NEWS.html
 share/doc/tig/README.html
 share/doc/tig/manual.html

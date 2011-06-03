@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2010/11/29 13:57:20 hauke Exp $
+# $NetBSD: Makefile,v 1.77 2011/01/16 07:31:12 wiz Exp $
 
 DISTNAME=	unzip60
 PKGNAME=	unzip-6.0
@@ -29,6 +29,7 @@ CPPFLAGS+=	-DBSD
 .if (${OPSYS} == "SunOS" || \
      ${OPSYS} == "OSF1"  || \
      ${OPSYS} == "AIX"  || \
+     ${OPSYS} == "OpenBSD"  || \
     (${OPSYS} == "Darwin" && !empty(OS_VERSION:M[01234678].*))) 
 CPPFLAGS+=	-DNO_LCHMOD
 .endif

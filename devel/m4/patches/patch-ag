@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/spawni.c.orig	Wed Jul 21 00:13:45 2010
+--- lib/spawni.c.orig	Tue Mar  1 16:39:29 2011
 +++ lib/spawni.c
 @@ -224,8 +224,7 @@ __spawni (pid_t *pid, const char *file,
  #endif

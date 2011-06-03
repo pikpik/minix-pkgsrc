@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/12/03 14:31:14 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2010/12/02 18:00:14 adam Exp $
 
 DISTNAME=	source-highlight-3.1.4
 SVR4_PKGNAME=	srchl
@@ -32,7 +32,7 @@ TEST_TARGET=	check
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
-# We really need GNU sed not NetBSD's GNuish sed
+# We really need GNU sed not NetBSD's GNUish sed
 TOOLS_PLATFORM.gsed=	# empty
 .endif
 
