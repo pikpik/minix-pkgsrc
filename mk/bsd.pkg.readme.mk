@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkg.readme.mk,v 1.22 2008/06/24 13:03:29 wiz Exp $
+# $NetBSD: bsd.pkg.readme.mk,v 1.23 2009/06/30 16:11:49 dmcmahill Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and encapsulates the
 # code to produce README.html files in each package directory.
@@ -159,7 +159,7 @@ describe:
 	@${ECHO_N} "${PKGNAME}|${.CURDIR}|";				\
 	${ECHO_N} "${PREFIX}|";						\
 	${ECHO_N} ${COMMENT:Q};						\
-	if [ -f ${DESCR_SRC} ]; then					\
+	if [ -f "${DESCR_SRC}" ]; then					\
 		${ECHO_N} "|${DESCR_SRC}";				\
 	else								\
 		${ECHO_N} "|/dev/null";					\
@@ -333,7 +333,7 @@ print-summary-data:
 		${ECHO} "maintainer ${PKGPATH} ${MAINTAINER}";		\
 	fi
 	@${ECHO} "categories ${PKGPATH} ${CATEGORIES}"
-	@if [ -f ${DESCR_SRC} ]; then					\
+	@if [ -f "${DESCR_SRC}" ]; then					\
 		${ECHO}  "descr ${PKGPATH} ${DESCR_SRC:S;${PKGSRCDIR}/;;g}"; \
 	else								\
 		${ECHO}  "descr ${PKGPATH} /dev/null";			\
