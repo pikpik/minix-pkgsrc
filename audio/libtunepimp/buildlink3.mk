@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.11 2010/01/17 12:02:05 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.12 2011/04/22 13:42:10 obache Exp $
 
 BUILDLINK_TREE+=	libtunepimp
 
@@ -11,7 +11,6 @@ BUILDLINK_PKGSRCDIR.libtunepimp?=	../../audio/libtunepimp
 
 .include "../../audio/musicbrainz/buildlink3.mk"
 .include "../../audio/libofa/buildlink3.mk"
-.include "../../textproc/expat/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
 .endif # LIBTUNEPIMP_BUILDLINK3_MK
 
