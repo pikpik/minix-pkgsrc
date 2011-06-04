@@ -1,8 +1,8 @@
 $NetBSD$
 
---- dired.c.orig	2008-12-30 12:40:28.000000000 +0000
+--- dired.c.orig	Tue Dec 30 12:40:28 2008
 +++ dired.c
-@@ -570,11 +570,11 @@ d_makename(struct line *lp, char *fn, si
+@@ -570,11 +570,11 @@ d_makename(struct line *lp, char *fn, size_t len)
  	ep = lp->l_text + llength(lp);
  	p++; /* skip action letter, if any */
  	for (i = 0; i < NAME_FIELD; i++) {

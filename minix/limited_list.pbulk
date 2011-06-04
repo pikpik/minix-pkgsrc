@@ -43,9 +43,11 @@ devel/readline
 devel/scmgit-base
 devel/subversion-base
 devel/topgit
+editors/mg
 editors/nano
 editors/vim
 editors/vim-share
+games/bastet
 games/cmatrix
 games/doom1
 games/gnugo
@@ -63,6 +65,7 @@ math/mpfr
 minix/clang
 minix/compiler-rt
 minix/x11
+misc/ascii
 misc/cowsay
 misc/figlet
 net/rsync

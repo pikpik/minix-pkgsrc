@@ -1,7 +1,7 @@
 $NetBSD$
 
---- fileio.c.orig	2009-03-11 19:57:37 +0200
-+++ fileio.c	2009-03-11 19:58:36 +0200
+--- fileio.c.orig	Tue Dec 30 16:04:23 2008
++++ fileio.c
 @@ -15,6 +15,10 @@
  #define	DEFFILEMODE	(S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH)
  #endif
@@ -25,3 +25,21 @@ $NetBSD$
  		return (NULL);
  
  	/* loop over the specified directory, making up the list of files */
+@@ -568,7 +568,7 @@ make_file_list(char *buf)
+ 
+ 	while ((dent = readdir(dirp)) != NULL) {
+ 		int isdir;
+-#if defined (__CYGWIN__)	/* Cygwin lacks reclen/namlen. */
++#if defined (__CYGWIN__) || defined(__minix)	/* Cygwin lacks reclen/namlen. */
+ 		if (strlen(dent->d_name) < len
+ 		    || memcmp(cp, dent->d_name, len) != 0)
+ #elif defined (__GLIBC__)		/* Linux uses reclen instead. */
+@@ -580,7 +580,7 @@ make_file_list(char *buf)
+ 
+ 		isdir = 0;
+ 
+-#ifndef __CYGWIN__      /* No support for d_type in Cygwin, do all
++#if ! defined(__CYGWIN__) && ! defined(__minix)      /* No support for d_type in Cygwin, do all
+ 			     type cheking with stat. */
+ 		if (dent->d_type == DT_DIR) {
+ 			isdir = 1;

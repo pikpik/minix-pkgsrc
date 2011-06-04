@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	2008-12-11 09:11:05.000000000 +0000
+--- Makefile.in.orig	Thu Dec 11 09:11:05 2008
 +++ Makefile.in
 @@ -7,7 +7,7 @@
  

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- extend.c.orig	2007-01-12 17:24:48.000000000 +0000
+--- extend.c.orig	Fri Jan 12 17:24:48 2007
 +++ extend.c
-@@ -445,7 +445,7 @@ dobindkey(KEYMAP *map, const char *func,
+@@ -445,7 +445,7 @@ dobindkey(KEYMAP *map, const char *func, const char *s
  	for (i = 0; *str && i < MAXKEY; i++) {
  		/* XXX - convert numbers w/ strol()? */
  		if (*str == '^' && *(str + 1) !=  '\0') {
