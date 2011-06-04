@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/Makefile.in.orig	2009-07-08 16:10:42.000000000 +0200
+--- lib/Makefile.in.orig	Mon May 24 22:47:43 2010
 +++ lib/Makefile.in
-@@ -1221,6 +1221,7 @@ install-exec-local: all-local
+@@ -1579,6 +1579,7 @@ install-exec-localcharset: all-local
  	else \
  	  need_charset_alias=false ; \
  	fi ; \
