@@ -40,16 +40,19 @@ devel/patch
 devel/pkg-config
 devel/pth
 devel/readline
+devel/scmcvs
 devel/scmgit-base
 devel/subversion-base
 devel/topgit
 editors/mg
 editors/nano
+editors/vilearn
 editors/vim
 editors/vim-share
 games/bastet
 games/cmatrix
 games/doom1
+games/dungeon
 games/gnugo
 games/ninvaders
 games/sex
@@ -90,6 +93,7 @@ security/openssh
 security/openssl
 security/p5-Digest
 security/p5-Digest-SHA1
+security/rats
 security/sudo
 shells/bash
 shells/pdksh
@@ -104,5 +108,7 @@ textproc/xmlrpc-c
 wm/fluxbox
 www/curl
 www/libwww
+www/lynx
 www/neon
+www/urlget
 x11/inputproto
