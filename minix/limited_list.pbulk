@@ -28,6 +28,7 @@ devel/diffutils
 devel/flex
 devel/gettext-lib
 devel/gettext-tools
+devel/gindent
 devel/gmake
 devel/gmp
 devel/gtexinfo
@@ -68,6 +69,7 @@ lang/lua
 lang/nawk
 lang/perl5
 math/mpfr
+math/units
 minix/clang
 minix/compiler-rt
 minix/x11
@@ -102,11 +104,15 @@ shells/bash
 shells/pdksh
 shells/zsh
 sysutils/bchunk
+sysutils/cpuid
 sysutils/mdf2iso
+sysutils/tree
+sysutils/wtail
 textproc/expat
 textproc/grep
 textproc/groff
 textproc/gsed
+textproc/wdiff
 textproc/xmlrpc-c
 wm/fluxbox
 www/curl
