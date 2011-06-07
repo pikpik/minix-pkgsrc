@@ -38,7 +38,7 @@ BINPKG_SITES?= ftp://ftp.minix3.org/pub/minix/packages/$${rel}/$${arch}
 BINPKG_SITES?= \
 	http://mirror-master.dragonflybsd.org/packages/$${arch}/DragonFly-$${rel}/stable
 .else
-BINPKG_SITES= 
+BINPKG_SITES?=
 .endif
 
 PKGNAME_REQD?=	${PKGNAME}

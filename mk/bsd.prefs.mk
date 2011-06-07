@@ -31,6 +31,7 @@
 #
 
 .if !defined(BSD_PKG_MK)
+
 # Let mk.conf know that this is pkgsrc.
 BSD_PKG_MK=1
 __PREFIX_SET__:=${PREFIX}
@@ -95,6 +96,7 @@ GNU_ARCH.sh3eb?=	sh
 GNU_ARCH.sh3el?=	shle
 NATIVE_MACHINE_GNU_ARCH?=	${GNU_ARCH.${NATIVE_MACHINE_ARCH}:U${NATIVE_MACHINE_ARCH}}
 MACHINE_GNU_ARCH?=		${GNU_ARCH.${MACHINE_ARCH}:U${MACHINE_ARCH}}
+
 ## If changes are made to how OS_VERSION is set below please keep
 ## "pkgsrc/pkgtools/osabi/INSTALL" in-sync.
 .if ${OPSYS} == "NetBSD"
