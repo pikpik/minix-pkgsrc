@@ -50,7 +50,7 @@ pbulksh_bootstrap() {
 	# Install pbulk into /usr/pbulk
 	cd /usr/pkgsrc/pkgtools/pbulk
 	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:${PATH} bmake install package
-	cp /usr/pkgsrc/minix/pbulk.conf /usr/pbulk/etc/pbulk.conf
+	sed -e 's/OP_SYS_VER/'$(uname -r)'/g' /usr/pkgsrc/minix/pbulk.conf > /usr/pbulk/etc/pbulk.conf
 }
 
 # In order to build proper packages, we need to work in /usr/pkg.
