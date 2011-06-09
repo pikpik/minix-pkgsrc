@@ -864,6 +864,7 @@ pkg_register_depends(struct pkg_task *pkg)
 	free(text);
 }
 
+#ifdef __minix
 static void
 normalise_version(char *release, char *version)
 {
@@ -890,6 +891,7 @@ normalise_version(char *release, char *version)
 	strcpy(release, actual_version);
 	version[0] = '\0';
 }
+#endif
 
 /*
  * Reduce the result from uname(3) to a canonical form.
@@ -903,7 +905,9 @@ normalise_platform(struct utsname *host_name)
 	span = strspn(host_name->release, "0123456789.");
 	host_name->release[span] = '\0';
 #endif
+#ifdef __minix
 	normalise_version(host_name->release, host_name->version);
+#endif
 }
 
 /*
@@ -940,7 +944,9 @@ check_platform(struct pkg_task *pkg)
 	else
 		fatal = 0;
 
+#ifdef __minix
 	normalise_version(host_uname.release, host_uname.version);
+#endif
 
 	if (fatal ||
 	    compatible_platform(OPSYS_NAME, host_uname.release,
