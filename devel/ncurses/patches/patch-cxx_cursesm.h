@@ -1,8 +1,8 @@
 $NetBSD$
 
---- c++/cursesm.h.orig	2011-02-28 09:25:22.000000000 +0000
+--- c++/cursesm.h.orig	Sat Aug 13 18:10:36 2005
 +++ c++/cursesm.h
-@@ -635,7 +635,7 @@ protected:
+@@ -635,7 +635,7 @@ template<class T> class NCURSES_IMPEXP NCursesUserMenu
    }
  
  public:
@@ -11,7 +11,7 @@ $NetBSD$
  		   const T* p_UserData = STATIC_CAST(T*)(0),
  		   bool with_frame=FALSE,
  		   bool autoDelete_Items=FALSE)
-@@ -644,7 +644,7 @@ public:
+@@ -644,7 +644,7 @@ template<class T> class NCURSES_IMPEXP NCursesUserMenu
  	set_user (const_cast<void *>(p_UserData));
    };
  

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- c++/Makefile.in.orig	2010-11-27 21:45:27.000000000 +0000
+--- c++/Makefile.in.orig	Sat Nov 27 21:45:27 2010
 +++ c++/Makefile.in
 @@ -167,7 +167,7 @@ LIB_OBJS = \
  
