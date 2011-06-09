@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/01/13 13:38:12 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2011/04/22 13:43:49 obache Exp $
 #
 
 DISTNAME=		OpenCV-2.2.0
@@ -31,6 +31,8 @@ SUBST_SED.py=		-e 's,/usr/bin/python,/usr/bin/env python,'
 
 #CONFIGURE_ARGS+=--with-swig=no
 CMAKE_ARGS+=	-D BUILD_NEW_PYTHON_SUPPORT=OFF
+# FIXME: should be option.mk'ed instead
+CMAKE_ARGS+=	-D WITH_OPENEXR:BOOL=OFF
 
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
