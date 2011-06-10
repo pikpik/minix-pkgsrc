@@ -1141,11 +1141,11 @@ set_crc(ARCHD *arcn, int fd)
 		return 0;
 	}
 
-#ifndef __minix
+#ifdef HAVE_STRUCT_STAT_ST_BLKSIZE
 	if ((size = (u_long)arcn->sb.st_blksize) > (u_long)sizeof(tbuf))
 		size = (u_long)sizeof(tbuf);
 #else
-		size = (u_long)sizeof(tbuf);
+	size = (u_long)sizeof(tbuf);
 #endif
 
 	/*
