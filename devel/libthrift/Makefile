@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/05/20 01:07:12 tonnerre Exp $
+# $NetBSD: Makefile,v 1.7 2011/06/03 13:39:44 fhajny Exp $
 
 DISTNAME=	thrift-${THRIFT_VERSION}
 PKGNAME=	libthrift-${THRIFT_VERSION}
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_APACHE:=thrift/${THRIFT_VERSION}/}
 EXTRACT_SUFX=	.tar.gz
