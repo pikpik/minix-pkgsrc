@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/18 01:27:52 mspo Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/20 00:07:25 mspo Exp $
 #
 
 DISTNAME=	mod_geoip2_1.2.5
-PKGNAME=	${DISTNAME:S/mod_/${APACHE_PKG_PREFIX}-/}
+PKGNAME=	${DISTNAME:S/mod_/${APACHE_PKG_PREFIX}-/:S/_/-/}
 CATEGORIES=	www
 MASTER_SITES=	http://geolite.maxmind.com/download/geoip/api/mod_geoip2/
 
