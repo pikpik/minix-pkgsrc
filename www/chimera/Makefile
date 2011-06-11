@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.26 2010/12/23 11:44:58 dsainty Exp $
+# $NetBSD: Makefile,v 1.27 2011/01/13 13:39:37 wiz Exp $
 #
 
 DISTNAME=	chimera-2.0a19
 PKGREVISION=	10
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera-alpha/
+MASTER_SITES=	http://www.chimera.org/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.chimera.org/
