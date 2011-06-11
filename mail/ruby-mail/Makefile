@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2011/01/28 13:23:20 taca Exp $
+# $NetBSD: Makefile,v 1.4 2011/03/23 15:02:09 taca Exp $
 
-DISTNAME=	mail-2.2.15
+DISTNAME=	mail-2.2.19
 CATEGORIES=	devel
 
+# Note: mail/ruby-actionmailer3 needs ruby-mail<2.3.
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://github.com/mikel/mail
 COMMENT=	Mail provides a nice Ruby DSL for making, sending and reading emails
