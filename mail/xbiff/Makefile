@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:21 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2008/11/10 17:21:36 wiz Exp $
 #
 
-DISTNAME=		xbiff-1.0.1
-PKGREVISION=		1
+DISTNAME=		xbiff-1.0.3
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
@@ -19,5 +18,8 @@ USE_TOOLS+=		pkg-config
 CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 
 .include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
