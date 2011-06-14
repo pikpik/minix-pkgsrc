@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1459 2011/05/28 09:48:49 cheusov Exp $
+# $NetBSD: Makefile,v 1.1460 2011/06/13 12:21:14 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -434,6 +434,7 @@ SUBDIR+=	monotone
 SUBDIR+=	monotone-server
 SUBDIR+=	monotone-viz
 SUBDIR+=	mph
+SUBDIR+=	mr
 SUBDIR+=	mscgen
 SUBDIR+=	msgpack
 SUBDIR+=	nana
