@@ -52,7 +52,6 @@ __RCSID("$NetBSD: perform.c,v 1.98 2010/09/14 22:26:18 gdt Exp $");
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <assert.h>
 
 #include <archive.h>
 #include <archive_entry.h>
@@ -871,12 +870,14 @@ normalise_version(char *release, char *version)
 	char actual_version[50];
 	int l1, l2;
 
-	assert(release && version);
+	if (release == NULL || version == NULL)
+		errx(EXIT_FAILURE, "release or version information not present");
 
 	l1 = strlen(release);
 	l2 = strlen(version);
 
-	assert(l1 + l2 + 2 < sizeof(actual_version));
+	if (l1 + l2 + 2 >= sizeof(actual_version))
+		errx(EXIT_FAILURE, "not enough space to normalise version");
 
 	if(l1 > 0 && l2 > 0)
 		snprintf(actual_version, sizeof(actual_version),
