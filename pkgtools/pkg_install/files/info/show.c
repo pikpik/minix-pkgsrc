@@ -60,9 +60,6 @@ __RCSID("$NetBSD: show.c,v 1.31 2010/11/22 09:00:12 joerg Exp $");
 #if HAVE_ERR_H
 #include <err.h>
 #endif
-#if HAVE_SYS_PARAM_H
-#include <sys/param.h>
-#endif
 
 #include "defs.h"
 #include "lib.h"
