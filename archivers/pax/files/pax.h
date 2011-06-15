@@ -251,7 +251,7 @@ typedef struct oplist {
 # define PAX_MINOR(x)	minor_netbsd(x)
 # define PAX_TODEV(x, y)	makedev_netbsd((x), (y))
 #else
-# if defined(__HAIKU__)
+# ifdef __HAIKU__
 #  define major(x)		((int)(0x00ff & ((x) >> 8)))
 #  define minor(x)		((int)(0xffff00ff & (x)))
 #  define makedev(maj,min)	((0xff00 & ((maj)<<8))|(0xffff00ff & (min)))
