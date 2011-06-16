@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1460 2011/06/13 12:21:14 obache Exp $
+# $NetBSD: Makefile,v 1.1461 2011/06/14 21:59:06 schmonz Exp $
 #
 
 COMMENT=	Development utilities
@@ -1316,6 +1316,7 @@ SUBDIR+=	ruby-rbtree
 SUBDIR+=	ruby-rcov
 SUBDIR+=	ruby-rcsparse
 SUBDIR+=	ruby-rd-mode
+SUBDIR+=	ruby-rdoc
 SUBDIR+=	ruby-readline
 SUBDIR+=	ruby-rgl
 SUBDIR+=	ruby-rspec
