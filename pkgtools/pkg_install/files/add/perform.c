@@ -927,7 +927,7 @@ check_platform(struct pkg_task *pkg)
 {
 	struct utsname host_uname;
 	const char *effective_arch;
-	int fatal = 0;
+	int fatal;
 
 	if (uname(&host_uname) < 0) {
 		if (Force) {
@@ -1432,7 +1432,7 @@ pkg_do(const char *pkgpath, int mark_automatic, int top_level, int depth)
 		warnx("circular dependency detected");
 		return -1;
 	}
-	
+
 	pkg = xcalloc(1, sizeof(*pkg));
 
 	status = -1;
