@@ -647,11 +647,7 @@ _BIN_INSTALL_FLAGS+=	-A
 .endif
 _BIN_INSTALL_FLAGS+=	${PKG_ARGS_ADD}
 
-.if ${OPSYS} == "Minix"
-_SHORT_UNAME_R=        ${:!${UNAME} -r!:} # full uname -r output
-.else
 _SHORT_UNAME_R=	${:!${UNAME} -r!:C@\.([0-9]*)[_.-].*@.\1@} # n.n[_.]anything => n.n
-.endif
 
 .include "install/bin-install.mk"
 
