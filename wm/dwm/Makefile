@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2009/08/01 23:26:14 tnn Exp $
+# $NetBSD: Makefile,v 1.10 2009/10/18 12:15:18 tnn Exp $
 #
 
-DISTNAME=	dwm-5.7.2
+DISTNAME=	dwm-5.8.2
 CATEGORIES=	wm
-MASTER_SITES=	http://code.suckless.org/dl/dwm/
+MASTER_SITES=	http://dl.suckless.org/dwm/
 
 MAINTAINER=	leot1990@users.sourceforge.net
 HOMEPAGE=	http://dwm.suckless.org/
@@ -19,7 +19,7 @@ SUBST_CLASSES+=		makefile
 SUBST_STAGE.makefile=	pre-build
 SUBST_MESSAGE.makefile=	Fixing config.mk
 SUBST_FILES.makefile=	config.mk
-SUBST_SED.makefile+=	-e 's,/usr/local,${PREFIX},g'
+SUBST_SED.makefile=	-e 's,/usr/local,${PREFIX},g'
 SUBST_SED.makefile+=	-e 's,share/man,${PKGMANDIR},g'
 SUBST_SED.makefile+=	-e 's,/usr/X11R6,${X11BASE},'
 SUBST_SED.makefile+=	-e 's,^CFLAGS = ,CFLAGS += ,'
