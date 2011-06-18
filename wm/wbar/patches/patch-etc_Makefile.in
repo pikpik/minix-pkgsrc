@@ -1,0 +1,15 @@
+$NetBSD$
+
+Install config to example directory.
+
+--- etc/Makefile.in.orig	2011-05-20 16:15:57.000000000 +0000
++++ etc/Makefile.in
+@@ -201,7 +201,7 @@ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+ CLEANFILES = *~ $(wbardesktop:.desktop.in.in=.desktop)
+-defaultdir = @DEFAULT_CONFIGDIR@
++defaultdir = @prefix@/share/examples/wbar
+ default_DATA = $(wbarcfg:.cfg.in=.cfg)
+ autostartdir = @AUTOSTARTDIR@
+ autostart_DATA = $(wbardesktop:.desktop.in.in=.desktop)
