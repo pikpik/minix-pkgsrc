@@ -1,2 +1,4 @@
 @comment $NetBSD$
+share/texmf-dist/doc/latex/type1cm/type1cm-doc.pdf
+share/texmf-dist/doc/latex/type1cm/type1cm-doc.tex
 share/texmf-dist/doc/latex/type1cm/type1cm.txt
