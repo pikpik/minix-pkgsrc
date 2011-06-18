@@ -1,0 +1,8 @@
+@name tex-forloop-3.0
+@blddep kpathsea-6.0.0nb1
+@pkgdep kpathsea>=3.5.7
+@blddep digest-20080510
+@blddep xz-5.0.0
+@blddep checkperms-1.11
+@comment $NetBSD$
+share/texmf-dist/tex/latex/forloop/forloop.sty

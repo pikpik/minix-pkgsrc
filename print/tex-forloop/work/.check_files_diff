@@ -1,0 +1,4 @@
+--- /usr/pkgsrc/wip-local/tex-forloop/work/.prefix.pre	2011-06-18 09:54:30.000000000 -0600
++++ /usr/pkgsrc/wip-local/tex-forloop/work/.prefix.post	2011-06-18 09:54:30.000000000 -0600
+@@ -0,0 +1 @@
++/usr/pkgsrc/wip-local/tex-forloop/work/.destdir/usr/pkg/share/texmf-dist/tex/latex/forloop/forloop.sty
