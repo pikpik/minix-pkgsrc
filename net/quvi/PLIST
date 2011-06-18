@@ -6,12 +6,6 @@ include/quvi/quvi.h
 lib/libquvi.la
 lib/pkgconfig/libquvi.pc
 man/man1/quvi.1
-share/doc/quvi/CodingStyle
-share/doc/quvi/HowtoGetDevelopmentCode
-share/doc/quvi/HowtoHelp
-share/doc/quvi/HowtoSubmitPatches
-share/doc/quvi/HowtoWriteWebsiteScript
-share/doc/quvi/WebsiteScriptGuidelines
 share/quvi/lua/README
 share/quvi/lua/util/charset.lua
 share/quvi/lua/util/content_type.lua
