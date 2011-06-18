@@ -1,6 +1,7 @@
 $NetBSD$
 
 alloca.h is deprecated and doesn't exist on many systems.
+http://code.google.com/p/bmpanel2/issues/detail?id=28
 
 --- widget-utils.c.orig	2009-11-01 05:50:26.000000000 +0000
 +++ widget-utils.c
