@@ -1,4 +1,0 @@
-bootstrap	digest>=20010302	digest-20080510
-build	xz>=4.999.9betanb1	xz-5.0.0
-build	checkperms>=1.1	checkperms-1.11
-full	kpathsea>=3.5.7	kpathsea-6.0.0nb1
