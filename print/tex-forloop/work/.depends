@@ -1,0 +1,4 @@
+bootstrap	digest>=20010302	../../pkgtools/digest
+build	xz>=4.999.9betanb1	../../archivers/xz
+build	checkperms>=1.1	../../sysutils/checkperms
+full	kpathsea>=3.5.7	../../print/kpathsea

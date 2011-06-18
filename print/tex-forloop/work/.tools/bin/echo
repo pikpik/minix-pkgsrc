@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/usr/pkgsrc/wip-local/tex-forloop/work/.work.log}"
+echo "[*] "/usr/pkgsrc/wip-local/tex-forloop/work/.tools/bin/echo" $@" >> $wrapperlog
+echo "<.> echo  "$@"" >> $wrapperlog
+echo  "$@"
