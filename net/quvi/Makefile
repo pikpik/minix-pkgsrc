@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/06/09 11:21:12 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2011/06/18 22:18:13 ryoon Exp $
 #
 
 DISTNAME=	quvi-0.2.17
@@ -22,8 +22,6 @@ CONFIGURE_ARGS+=	--enable-nsfw
 
 PKGCONFIG_OVERRIDE+=	libquvi.pc.in
 
-#BUILDLINK_API_DEPENDS.pcre+=		pcre>=7.8
-#.include "../../devel/pcre/buildlink3.mk"
 BUILDLINK_API_DEPENDS.curl+=		curl>=7.18.0
 .include "../../www/curl/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libiconv+=	libiconv>=1.12.0
