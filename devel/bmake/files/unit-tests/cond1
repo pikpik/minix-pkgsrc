@@ -1,4 +1,4 @@
-# $Id: cond1,v 1.4 2011/06/18 22:39:46 bsiegert Exp $
+# $Id: cond1,v 1.1.1.5 2011/06/18 22:18:21 bsiegert Exp $
 
 # hard code these!
 TEST_UNAME_S= NetBSD
