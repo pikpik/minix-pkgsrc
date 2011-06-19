@@ -1,9 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/04/13 13:17:00 obache Exp $
 #
 
-DISTNAME=	spreadsheet-0.6.5.3
+DISTNAME=	spreadsheet-0.6.5.4
 CATEGORIES=	math
-MASTER_SITES=	http://rubyforge.org/frs/download.php/74536/
 
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://spreadsheet.rubyforge.org/
