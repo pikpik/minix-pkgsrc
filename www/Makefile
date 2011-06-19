@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.800 2011/05/26 22:19:11 minskim Exp $
+# $NetBSD: Makefile,v 1.801 2011/06/15 17:44:52 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -584,6 +584,7 @@ SUBDIR+=	ruby-rack-test
 SUBDIR+=	ruby-rack11
 SUBDIR+=	ruby-rails
 SUBDIR+=	ruby-rails3
+SUBDIR+=	ruby-sass
 SUBDIR+=	ruby-staticmatic
 SUBDIR+=	ruby-tag
 SUBDIR+=	ruby-webunit
