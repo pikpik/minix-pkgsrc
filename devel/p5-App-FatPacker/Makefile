@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/07/26 16:47:04 seb Exp $
+# $NetBSD: Makefile,v 1.4 2010/08/21 16:33:11 seb Exp $
 #
 
 DISTNAME=		App-FatPacker-0.009003
@@ -13,6 +13,8 @@ COMMENT=		Perl5 module to pack your dependencies onto your script file
 LICENSE=		${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+REPLACE_PERL+=		bin/fatpack
 
 PERL5_PACKLIST=		auto/App/FatPacker/.packlist
 
