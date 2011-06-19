@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/12 01:31:13 taca Exp $
 
-DISTNAME=	ruby-debug-extra-0.10.3
+DISTNAME=	ruby-debug-extra-0.10.4
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/ruby-//}
 CATEGORIES=	devel
-MASTER_SITES=	http://rubyforge.org/frs/download.php/46883/
+MASTER_SITES=	http://rubyforge.org/frs/download.php/73086/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rubyforge.org/projects/ruby-debug/
