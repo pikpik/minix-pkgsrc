@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2010/09/07 16:42:08 drochner Exp $
+@comment $NetBSD$
 features/qwt.prf
 features/qwtconfig.pri
 features/qwtmathml.prf
@@ -82,7 +82,7 @@ include/qwt_thermo.h
 include/qwt_wheel.h
 lib/libqwt.la
 lib/libqwtmathml.la
-plugins/designer/libqwt_designer_plugin.la
+qt4/plugins/designer/libqwt_designer_plugin.la
 share/doc/qwt/analogclock.png
 share/doc/qwt/annotated.html
 share/doc/qwt/bc_s.png
