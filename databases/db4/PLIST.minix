@@ -1,0 +1,2 @@
+@comment $NetBSD$
+@comment Minix doesn't support shared libraries

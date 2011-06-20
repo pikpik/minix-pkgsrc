@@ -43,6 +43,15 @@ CONFIGURE_ENV+=		LIBSO_LIBS=${LIBSO_LIBS:Q}
 PTHREAD_OPTS+=		native
 .include "../../mk/pthread.buildlink3.mk"
 
+PLIST_OPSYS?=		${PKGDIR}/PLIST.${LOWER_OPSYS:C/([.0-9]*)$//}
+.if exists(${PLIST_OPSYS})
+PLIST_SHLIB=		${PLIST_OPSYS}
+.else
+PLIST_SHLIB=		${PKGDIR}/PLIST.shlib
+.endif
+PLIST_SRC=		${PLIST_SHLIB}
+PLIST_SRC+=		${PKGDIR}/PLIST.common
+
 INSTALLATION_DIRS=	include/db4 lib share/doc/db4
 
 post-install:
