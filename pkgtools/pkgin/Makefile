@@ -16,7 +16,6 @@ EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 CONF_FILES=		${EGDIR}/repositories.conf.example		\
 			${PKG_SYSCONFDIR}/${PKGBASE}/repositories.conf
 
-MAKE_DIRS+=		${PKG_SYSCONFDIR}/${PKGBASE}
 OWN_DIRS+=		${PKG_SYSCONFDIR}/${PKGBASE}
 INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1 ${EGDIR}
 
