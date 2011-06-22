@@ -168,6 +168,7 @@ ALL_ENV+=	LC_MONETARY=C
 ALL_ENV+=	LC_NUMERIC=C
 ALL_ENV+=	LC_TIME=C
 ALL_ENV+=	LDFLAGS=${LDFLAGS:M*:Q}
+ALL_ENV+=	LDADD=${LDADD:M*:Q}
 ALL_ENV+=	LINKER_RPATH_FLAG=${LINKER_RPATH_FLAG:Q}
 ALL_ENV+=	PATH=${PATH:Q}:${LOCALBASE}/bin:${X11BASE}/bin
 ALL_ENV+=	PREFIX=${PREFIX}
@@ -796,3 +797,7 @@ ${_MAKEVARS_MK.${_phase_}}: ${WRKDIR}
 .include "misc/import.mk"
 .endif
 .include "misc/can-be-built-here.mk"
+
+.if exists(/usr/share/mk/pkgsrchooks.mk)
+.include "/usr/share/mk/pkgsrchooks.mk"
+.endif
