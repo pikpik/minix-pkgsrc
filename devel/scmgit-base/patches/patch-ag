@@ -1,6 +1,6 @@
 $NetBSD$
 
---- templates/Makefile.orig	2010-10-22 03:49:16.000000000 +0000
+--- templates/Makefile.orig	Wed Jun  1 22:36:22 2011
 +++ templates/Makefile
 @@ -8,7 +8,7 @@ INSTALL ?= install
  TAR ?= tar

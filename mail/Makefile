@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.409 2011/02/27 12:57:15 obache Exp $
+# $NetBSD: Makefile,v 1.410 2011/04/08 14:42:36 hauke Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -271,6 +271,7 @@ SUBDIR+=	qpopper
 SUBDIR+=	qtools
 SUBDIR+=	queue-fix
 SUBDIR+=	queue-repair
+SUBDIR+=	quickml
 SUBDIR+=	rblcheck
 SUBDIR+=	re-alpine
 SUBDIR+=	relay-ctrl

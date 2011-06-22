@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/04/30 09:41:45 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/07/02 21:48:49 ghen Exp $
 #
 
 DISTNAME=	dmenu-4.1.1
@@ -12,6 +12,8 @@ COMMENT=	Dynamic menu for X
 LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=	no
 
 NO_CONFIGURE=	yes
 

@@ -1,6 +1,5 @@
 @comment $NetBSD$
 ${GEM_HOME}/cache/${GEM_NAME}.gem
-${GEM_LIBDIR}/.gitignore
 ${GEM_LIBDIR}/LICENSE
 ${GEM_LIBDIR}/README.markdown
 ${GEM_LIBDIR}/Rakefile

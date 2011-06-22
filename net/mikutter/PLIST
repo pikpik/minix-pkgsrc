@@ -1,15 +1,18 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.8 2011/06/12 12:41:15 obache Exp $
 bin/mikutter
 share/applications/mikutter.desktop
 share/doc/mikutter/README
 share/mikutter/core/addon/addon.rb
+share/mikutter/core/addon/alsa/alsa.rb
 share/mikutter/core/addon/bitly/bitly.rb
+share/mikutter/core/addon/bitly/test.bitly.rb
 share/mikutter/core/addon/bugreport.rb
 share/mikutter/core/addon/change_account.rb
 share/mikutter/core/addon/contextmenu.rb
 share/mikutter/core/addon/extract.rb
 share/mikutter/core/addon/followingcontrol.rb
 share/mikutter/core/addon/friend_timeline.rb
+share/mikutter/core/addon/libnotify/libnotify.rb
 share/mikutter/core/addon/list.rb
 share/mikutter/core/addon/mentions.rb
 share/mikutter/core/addon/notify.rb
@@ -29,11 +32,12 @@ share/mikutter/core/chi.rb
 share/mikutter/core/config.rb
 share/mikutter/core/configloader.rb
 share/mikutter/core/delayer.rb
+share/mikutter/core/entity.rb
 share/mikutter/core/environment.rb
 share/mikutter/core/image.rb
 share/mikutter/core/initialize.rb
-share/mikutter/core/lib/escape.rb
 share/mikutter/core/lib/lazy.rb
+share/mikutter/core/lib/miku/escape.rb
 share/mikutter/core/lib/piapro.rb
 share/mikutter/core/lib/timelimitedqueue.rb
 share/mikutter/core/lib/timelimitedqueue/test/test_timelimitedqueue.rb
@@ -61,6 +65,7 @@ share/mikutter/core/mui/cairo_cell_renderer_message.rb
 share/mikutter/core/mui/cairo_coordinate_module.rb
 share/mikutter/core/mui/cairo_icon_over_button.rb
 share/mikutter/core/mui/cairo_inner_tl.rb
+share/mikutter/core/mui/cairo_markup_generator.rb
 share/mikutter/core/mui/cairo_miracle_painter.rb
 share/mikutter/core/mui/cairo_pseudo_message_widget.rb
 share/mikutter/core/mui/cairo_replyviewer.rb
@@ -133,6 +138,7 @@ share/mikutter/core/skin/data/tab-bg.png
 share/mikutter/core/skin/data/timeline.png
 share/mikutter/core/skin/data/unfav.png
 share/mikutter/core/test/test_cairo_textselector.rb
+share/mikutter/core/test/test_entity.rb
 share/mikutter/core/test/test_message.rb
 share/mikutter/core/test/test_messageconverters.rb
 share/mikutter/core/test/test_plugin.rb

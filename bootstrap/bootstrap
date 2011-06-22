@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.165 2011/04/05 05:43:19 agc Exp $
+# $NetBSD: bootstrap,v 1.168 2011/06/12 08:28:32 obache Exp $
 #
 # Copyright (c) 2001-2011 Alistair Crooks <agc@NetBSD.org>
 # All rights reserved.
@@ -39,7 +39,6 @@ BOOTSTRAP_VERSION=20060721
 MAKECONF=/dev/null
 export MAKECONF
 
-ignorecasecheck=no
 unprivileged=no
 
 preserve_path=no
@@ -51,25 +50,24 @@ pkgsrcdir=`dirname "${bootstrapdir}"`
 wrkdir="`pwd`/work"
 
 usage="Usage: $0 "'
-    [ --workdir <workdir> ]
-    [ --prefix <prefix> ]
+    [ --abi [32|64] ]
+    [ --binary-kit <tarball> ]
+    [ --binary-macpkg <pkg> ]
+    [ --compiler <compiler> ]
+    [ --full ]
+    [ --gzip-binary-kit <tarball> ]
+    [ --help ]
+    [ --mk-fragment <mk.conf> ]
     [ --pkgdbdir <pkgdbdir> ]
     [ --pkgmandir <pkgmandir> ]
-    [ --sysconfdir <sysconfdir> ]
-    [ --varbase <varbase> ]
-    [ --fetch-cmd <ftp command> ]
-    [ --ignore-case-check ]
-    [ --unprivileged | --ignore-user-check ]
+    [ --prefix <prefix> ]
     [ --preserve-path ]
-    [ --compiler <compiler> ]
-    [ --abi [32|64] ]
-    [ --mk-fragment <mk.conf> ]
-    [ --binary-kit <tarball> ]
-    [ --gzip-binary-kit <tarball> ]
-    [ --binary-macpkg <pkg> ]
-    [ --full ]
     [ --quiet ]
-    [ --help ]'
+    [ --sysconfdir <sysconfdir> ]
+    [ --unprivileged | --ignore-user-check ]
+    [ --varbase <varbase> ]
+    [ --workdir <workdir> ]
+'
 
 # this replicates some of the logic in bsd.prefs.mk. until
 # bootstrap-pkgsrc is merged into pkgsrc, we need to determine the
@@ -383,13 +381,10 @@ while [ $# -gt 0 ]; do
 	--sysconfdir)	sysconfdir="$2"; shift ;;
 	--varbase=*)	varbase=`get_optarg "$1"` ;;
 	--varbase)	varbase="$2"; shift ;;
-	--fetch-cmd=*)	fetch_cmd=`get_optarg "$1"` ;;
-	--fetch-cmd)	fetch_cmd="$2"; shift ;;
 	--compiler=*)	compiler=`get_optarg "$1"` ;;
 	--compiler)	compiler="$2"; shift ;;
 	--abi=*)	abi=`get_optarg "$1"` ;;
 	--abi)		abi="$2"; shift ;;
-	--ignore-case-check) ignorecasecheck=yes ;;
 	--unprivileged | --ignore-user-check) unprivileged=yes ;;
 	--preserve-path) preserve_path=yes ;;
 	--mk-fragment=*)
@@ -470,7 +465,6 @@ Darwin)
 	need_awk=no
 	need_sed=no
 	set_opsys=no
-	[ -z "$fetch_cmd" ] && fetch_cmd="/usr/bin/ftp"
 	machine_arch=`uname -p`
 	CC=${CC:-"gcc -isystem /usr/include"}; export CC
 	osrev=`uname -r`
@@ -493,16 +487,6 @@ DragonFly)
 	set_opsys=no
 	check_prog tarprog tar
 	machine_arch=`uname -p`
-	case `uname -r` in
-	1.1[0-9]*)
-		[ -z "$fetch_cmd" ] && fetch_cmd="/usr/bin/ftp"
-		;;
-	1.0* | 1.1 | 1.2.* | 1.3.*)
-		;;
-	*)
-		[ -z "$fetch_cmd" ] && fetch_cmd="/usr/bin/ftp"
-		;;
-	esac
 	;;
 FreeBSD)
 	root_group=wheel
@@ -640,7 +624,6 @@ MirBSD)
 	set_opsys=no
 	check_prog mtreeprog mtree
 	machine_arch=`arch -s`
-	[ -z "$fetch_cmd" ] && fetch_cmd=/usr/bin/ftp
 	# there is no /usr/bin/cc, so use mgcc if unset
 	test -n "$CC" || { CC=mgcc; export CC; }
 	# get some variables from the native make if unset
@@ -691,7 +674,6 @@ QNX)
 	set_opsys=no
 	groupsprog="id -gn"
 	whoamiprog="id -un"
-	fetch_cmd="/usr/bin/ftp"
 	machine_arch=`uname -p | sed -e 's/x86/i386/'`
 	;;
 SunOS)
@@ -847,25 +829,6 @@ LIBOWN=$user
 LIBGRP=$group
 MANOWN=$user
 MANGRP=$group" > ${wrkdir}/Makefile.inc
-fi
-
-# make sure we're using a case-sensitive file system
-if [ $ignorecasecheck = "no" ]; then
-case "$opsys" in
-Interix)
-	echo_msg "Testing file system case sensitivity"
-	for fs in "$prefix"; do
-		testdir="pkgsrc-REQUIRES-case-SENSITIVE-filesystem"
-		testdir_mangled="PKGSRC-requires-CASE-sensitive-FILESYSTEM"
-		mkdir_p "$fs/$testdir" || die "can't verify filesystem ($fs) case-sensitivity"
-		if [ -d "$fs/$testdir_mangled" ]; then
-			$rmdirprog "$fs/$testdir"
-			die "\"$fs\" needs to be on a case-sensitive filesystem (see README.$opsys)"
-		fi
-		$rmdirprog "$fs/$testdir"
-	done
-	;;
-esac
 fi
 
 # export the proper environment
@@ -1039,10 +1002,6 @@ run_cmd "$install_sh -c -o $user -g $group -m 755 $wrkdir/pkg_install/info/pkg_i
 echo "PKG_ADMIN_CMD?=			$wrkdir/sbin/pkg_admin" >> ${BOOTSTRAP_MKCONF}
 echo "PKG_CREATE_CMD?=			$wrkdir/sbin/pkg_create" >> ${BOOTSTRAP_MKCONF}
 echo "PKG_INFO_CMD?=			$wrkdir/sbin/pkg_info" >> ${BOOTSTRAP_MKCONF}
-
-if [ -n "${fetch_cmd}" ]; then
-	echo "FETCH_CMD=		$fetch_cmd" >> ${TARGET_MKCONF}
-fi
 
 MAKECONF=$wrkdir/mk.conf
 export MAKECONF

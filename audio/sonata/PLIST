@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.4 2009/05/26 18:24:58 drochner Exp $
+@comment $NetBSD$
 bin/sonata
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/mmkeys.so
 ${PYSITELIB}/sonata/__init__.py
 ${PYSITELIB}/sonata/__init__.pyc

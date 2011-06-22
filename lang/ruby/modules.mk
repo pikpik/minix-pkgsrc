@@ -1,4 +1,4 @@
-# $NetBSD: modules.mk,v 1.28 2010/09/10 03:21:57 taca Exp $
+# $NetBSD: modules.mk,v 1.29 2010/11/06 23:44:01 obache Exp $
 
 .if !defined(_RUBY_MODULE_MK)
 _RUBY_MODULE_MK=	# defined
@@ -15,6 +15,11 @@ DEPENDS+= ruby${RUBY_VER}-base>=${RUBY_REQD}:../../lang/ruby${RUBY_VER}-base
 .else
 .include "../../lang/ruby/buildlink3.mk"
 .endif
+
+#
+# rdoc version
+#
+.include "../../lang/ruby/rdoc.mk"
 
 CONFIGURE_ENV+=		RUBY=${RUBY:Q} RDOC=${RDOC:Q}
 

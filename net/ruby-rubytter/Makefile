@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2010/09/05 02:18:59 obache Exp $
+# $NetBSD: Makefile,v 1.5 2010/09/10 07:38:13 taca Exp $
 
-DISTNAME=	rubytter-1.4.1
+DISTNAME=	rubytter-1.4.2
 CATEGORIES=	net
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

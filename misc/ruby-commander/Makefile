@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/01/20 14:39:32 tonnerre Exp $
 
-DISTNAME=	commander-4.0.2
+DISTNAME=	commander-4.0.4
 CATEGORIES=	misc
 
 MAINTAINER=	tonnerre@NetBSD.org

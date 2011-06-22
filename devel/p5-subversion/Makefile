@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2010/09/19 16:10:47 sno Exp $
+# $NetBSD: Makefile,v 1.51 2011/06/03 13:26:49 taca Exp $
 
 PKGNAME=	p5-subversion-${SVNVER}
 PKGREVISION=	1

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2010/02/12 15:40:10 asau Exp $
+# $NetBSD: Makefile,v 1.112 2011/06/18 15:16:41 wiz Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -17,6 +17,7 @@ SUBDIR+=	bbpager04
 SUBDIR+=	bbrun
 SUBDIR+=	blackbox
 SUBDIR+=	blackbox70
+SUBDIR+=	bmpanel2
 SUBDIR+=	bsetroot
 SUBDIR+=	ccsm
 SUBDIR+=	compiz
@@ -62,6 +63,7 @@ SUBDIR+=	oroborus
 SUBDIR+=	pekwm
 SUBDIR+=	piewm
 SUBDIR+=	pwm
+SUBDIR+=	py-tyle
 SUBDIR+=	ratpoison
 SUBDIR+=	sawfish
 SUBDIR+=	scrotwm
@@ -74,6 +76,7 @@ SUBDIR+=	vtwm
 SUBDIR+=	w9wm
 SUBDIR+=	waimea
 SUBDIR+=	wampager
+SUBDIR+=	wbar
 SUBDIR+=	weewm
 SUBDIR+=	windowlab
 SUBDIR+=	windowmaker

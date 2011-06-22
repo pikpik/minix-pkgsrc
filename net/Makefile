@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.878 2011/05/18 02:23:23 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.880 2011/06/19 14:08:19 taca Exp $
 #
 
 COMMENT=	Networking tools
@@ -511,6 +511,8 @@ SUBDIR+=	ruby-addressable
 SUBDIR+=	ruby-amqp
 SUBDIR+=	ruby-dnsruby
 SUBDIR+=	ruby-icmp
+SUBDIR+=	ruby-net-ldap
+SUBDIR+=	ruby-net-ping
 SUBDIR+=	ruby-netaddr
 SUBDIR+=	ruby-rubytter
 SUBDIR+=	ruby-snmp

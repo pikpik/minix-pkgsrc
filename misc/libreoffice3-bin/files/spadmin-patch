@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- /usr/tmp/misc/libreoffice3-bin/work/.destdir/usr/pkg/opt/libreoffice/program/spadmin.orig	2011-06-19 05:55:59.000000000 +0000
++++ /usr/tmp/misc/libreoffice3-bin/work/.destdir/usr/pkg/opt/libreoffice/program/spadmin
+@@ -52,6 +52,10 @@ do
+   esac
+ done
+ 
++# Set LD_LIBRARY_PATH so that javaldx finds libuno_sal.so.3:
++LD_LIBRARY_PATH=$sd_prog/../basis-link/program:$sd_prog/../basis-link/../ure/lib${LD_LIBRARY_PATH+:$LD_LIBRARY_PATH}
++export LD_LIBRARY_PATH
++
+ # extend the ld_library_path for java: javaldx checks the sofficerc for us
+ if [ -x "$sd_prog/../basis-link/ure-link/bin/javaldx" ] ; then
+     my_path=`"$sd_prog/../basis-link/ure-link/bin/javaldx" $BOOTSTRAPVARS \

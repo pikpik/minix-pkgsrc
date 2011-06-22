@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/03/12 11:00:01 tron Exp $
+# $NetBSD: Makefile,v 1.5 2011/06/20 18:57:01 ryoon Exp $
 
 DISTNAME=	libvpx-v0.9.6
 PKGNAME=	${DISTNAME:S/-v/-/}

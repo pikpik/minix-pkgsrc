@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2010/06/09 13:53:53 fhajny Exp $
+# $NetBSD: Makefile,v 1.22 2011/06/06 13:45:37 fhajny Exp $
 
-DISTNAME=	ejabberd-2.1.5
+DISTNAME=	ejabberd-2.1.8
 CATEGORIES=	chat
-MASTER_SITES=	http://www.process-one.net/downloads/ejabberd/2.1.5/
+MASTER_SITES=	http://www.process-one.net/downloads/ejabberd/${PKGVERSION}/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ejabberd.im/

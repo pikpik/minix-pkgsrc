@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.216 2011/04/20 18:44:56 hans Exp $
+# $NetBSD: Makefile,v 1.218 2011/06/09 04:39:26 jnemeth Exp $
 
 COMMENT=	Mathematics
 
@@ -11,8 +11,10 @@ SUBDIR+=	R-PHYLOGR
 SUBDIR+=	R-R2HTML
 SUBDIR+=	R-RArcInfo
 SUBDIR+=	R-Rcmdr
+SUBDIR+=	R-XML
 SUBDIR+=	R-abind
 SUBDIR+=	R-akima
+SUBDIR+=	R-bitops
 SUBDIR+=	R-chron
 SUBDIR+=	R-circular
 SUBDIR+=	R-classInt
@@ -91,9 +93,9 @@ SUBDIR+=	graphopt
 SUBDIR+=	grpn
 SUBDIR+=	gsl
 SUBDIR+=	gtklife
-SUBDIR+=	itpp
 SUBDIR+=	heirloom-factor
 SUBDIR+=	heirloom-units
+SUBDIR+=	itpp
 SUBDIR+=	kseg
 SUBDIR+=	lapack
 SUBDIR+=	libffm

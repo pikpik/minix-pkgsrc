@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.orig	Thu Dec 16 02:52:11 2010
+--- Makefile.orig	Wed Jun  1 22:36:22 2011
 +++ Makefile
-@@ -259,8 +259,6 @@ endif
+@@ -264,8 +264,6 @@ endif
  
  CFLAGS = -g -O2 -Wall
  LDFLAGS =
@@ -25,7 +25,7 @@ $NetBSD$
  RPMBUILD = rpmbuild
  TCL_PATH = tclsh
  TCLTK_PATH = wish
-@@ -834,9 +828,10 @@ ifeq ($(uname_S),Darwin)
+@@ -847,9 +841,10 @@ ifeq ($(uname_S),Darwin)
  	USE_ST_TIMESPEC = YesPlease
  endif
  ifeq ($(uname_S),SunOS)
@@ -37,7 +37,7 @@ $NetBSD$
  	SANE_TOOL_PATH = /usr/xpg6/bin:/usr/xpg4/bin
  	NO_STRCASESTR = YesPlease
  	NO_MEMMEM = YesPlease
-@@ -880,8 +875,6 @@ ifeq ($(uname_S),SunOS)
+@@ -890,8 +885,6 @@ ifeq ($(uname_S),SunOS)
  		NO_STRTOUMAX = YesPlease
  		GIT_TEST_CMP = cmp
  	endif
@@ -46,9 +46,9 @@ $NetBSD$
  	BASIC_CFLAGS += -D__EXTENSIONS__ -D__sun__ -DHAVE_ALLOCA_H
  endif
  ifeq ($(uname_O),Cygwin)
-@@ -1147,6 +1140,20 @@ endif
- -include config.mak.autogen
- -include config.mak
+@@ -1192,6 +1185,20 @@ sysconfdir = etc
+ endif
+ endif
  
 +ifeq ($(uname_S),Minix)
 +# Override configure
@@ -67,7 +67,7 @@ $NetBSD$
  ifdef CHECK_HEADER_DEPENDENCIES
  COMPUTE_HEADER_DEPENDENCIES =
  USE_COMPUTED_HEADER_DEPENDENCIES =
-@@ -1216,6 +1223,13 @@ else
+@@ -1261,6 +1268,13 @@ else
  	else
  		CURL_LIBCURL = -lcurl
  	endif
@@ -81,7 +81,7 @@ $NetBSD$
  	REMOTE_CURL_PRIMARY = git-remote-http$X
  	REMOTE_CURL_ALIASES = git-remote-https$X git-remote-ftp$X git-remote-ftps$X
  	REMOTE_CURL_NAMES = $(REMOTE_CURL_PRIMARY) $(REMOTE_CURL_ALIASES)
-@@ -1255,7 +1269,7 @@ ifndef NO_OPENSSL
+@@ -1297,7 +1311,7 @@ ifndef NO_OPENSSL
  		OPENSSL_LINK =
  	endif
  	ifdef NEEDS_CRYPTO_WITH_SSL
@@ -90,7 +90,7 @@ $NetBSD$
  	endif
  else
  	BASIC_CFLAGS += -DNO_OPENSSL
-@@ -1567,8 +1581,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(DEFAULT_PAGER_C
+@@ -1638,8 +1652,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(DEFAULT_PAGER_C
  BASIC_CFLAGS += -DDEFAULT_PAGER='$(DEFAULT_PAGER_CQ_SQ)'
  endif
  

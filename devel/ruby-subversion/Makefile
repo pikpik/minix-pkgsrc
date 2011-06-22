@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2011/03/04 03:12:36 taca Exp $
+# $NetBSD: Makefile,v 1.31 2011/06/03 13:26:50 taca Exp $
 
 PKGNAME=	${RUBY_PKGPREFIX}-subversion-${SVNVER}
 PKGREVISION=	1

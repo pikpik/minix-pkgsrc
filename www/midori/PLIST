@@ -8,7 +8,6 @@ lib/midori/libcopy-tabs.so
 lib/midori/libfeed-panel.so
 lib/midori/libformhistory.so
 lib/midori/libmouse-gestures.so
-lib/midori/libpage-holder.so
 lib/midori/libshortcuts.so
 lib/midori/libstatus-clock.so
 lib/midori/libstatusbar-features.so
@@ -88,4 +87,3 @@ share/midori/res/error.html
 share/midori/res/logo-shade.png
 share/midori/res/mootools.js
 share/midori/res/speeddial-head.html
-share/midori/res/speeddial.json

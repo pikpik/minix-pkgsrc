@@ -1,32 +1,30 @@
-# $NetBSD: Makefile,v 1.18 2010/09/19 14:05:35 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2011/06/09 06:21:38 schmonz Exp $
 #
 
-DISTNAME=		html2text-2.39
-PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
+DISTNAME=		aaronsw-${GHNAME}-${GHVERSION}-0-g${GHCOMMIT}
+GHNAME=			html2text
+GHVERSION=		3.02
+GHCOMMIT=		d9bf7d6
+PKGNAME=		${PYPKGPREFIX}-${GHNAME}-${GHVERSION}
 CATEGORIES=		textproc python
-MASTER_SITES=		${HOMEPAGE}
-EXTRACT_SUFX=		.py
+MASTER_SITES=		https://github.com/aaronsw/html2text/tarball/${GHVERSION}/
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://www.aaronsw.com/2002/html2text/
 COMMENT=		Convert HTML into easy-to-read plain ASCII text
 LICENSE=		gnu-gpl-v2
 
+FETCH_USING=		curl
+
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=			${WRKDIR}
+WRKSRC=			${WRKDIR}/aaronsw-${GHNAME}-${GHCOMMIT}
 
-USE_TOOLS+=		tr
 NO_BUILD=		yes
 
 REPLACE_PYTHON=		html2text.py
 
 INSTALLATION_DIRS=	share/html2text
-
-do-extract:
-	${RUN}								\
-	${TR} -d '\r' < ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}		\
-		> ${WRKSRC}/html2text.py
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/html2text.py ${DESTDIR}${PREFIX}/share/html2text

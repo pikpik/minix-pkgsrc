@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.107 2010/12/22 15:13:39 taca Exp $
+# $NetBSD: Makefile,v 1.108 2011/05/18 02:23:22 dmcmahill Exp $
 #
 
 COMMENT=	Document format and character code converters
@@ -76,6 +76,7 @@ SUBDIR+=	rpm2cpio
 SUBDIR+=	rss2html
 SUBDIR+=	rtf2html
 SUBDIR+=	ru-d1489
+SUBDIR+=	ruby-Ascii85
 SUBDIR+=	ruby-romkan
 SUBDIR+=	ruby-uconv
 SUBDIR+=	skf

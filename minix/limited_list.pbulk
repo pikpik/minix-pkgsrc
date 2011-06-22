@@ -91,6 +91,7 @@ pkgtools/pkgin
 pkgtools/pkg_install
 pkgtools/pkg_install-info
 pkgtools/pkg_leaves
+pkgtools/pkg_tarup
 pkgtools/pkglint
 pkgtools/url2pkg
 pkgtools/x11-links
@@ -102,6 +103,7 @@ security/p5-Digest-SHA1
 security/rats
 security/sudo
 shells/bash
+shells/bash2
 shells/pdksh
 shells/zsh
 sysutils/bchunk

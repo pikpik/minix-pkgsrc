@@ -1,8 +1,8 @@
-# $NetBSD$
-# TeX Live Revision 17175
+# $NetBSD: Makefile,v 1.1.1.1 2010/04/29 22:38:44 minskim Exp $
 
 DISTNAME=	oubraces
-PKGNAME=	tex-${DISTNAME}-2009
+PKGNAME=	tex-${DISTNAME}-2010
+TEXLIVE_REV=	21833
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Braces over and under a formula

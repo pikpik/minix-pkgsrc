@@ -1,6 +1,6 @@
 $NetBSD$
 
---- refs.c.orig	Thu Dec 16 02:52:11 2010
+--- refs.c.orig	Wed Jun  1 22:36:22 2011
 +++ refs.c
 @@ -499,7 +499,9 @@ const char *resolve_ref(const char *ref, unsigned char
  		git_snpath(path, sizeof(path), "%s", ref);

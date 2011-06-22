@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/11 07:36:25 taca Exp $
 
-DISTNAME=	uuidtools-2.1.1
+DISTNAME=	uuidtools-2.1.2
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

@@ -1,6 +1,6 @@
 $NetBSD: patch-ah,v 1.6 2010/12/23 23:42:41 abs Exp $
 
---- git-gui/Makefile.orig	2010-12-16 02:52:11.000000000 +0000
+--- git-gui/Makefile.orig	Wed Jun  1 22:36:22 2011
 +++ git-gui/Makefile
 @@ -48,11 +48,11 @@ endif
  RM_RF     ?= rm -rf

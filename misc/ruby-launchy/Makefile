@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/06/22 16:10:16 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/10 07:24:27 taca Exp $
 
-DISTNAME=	launchy-0.3.7
+DISTNAME=	launchy-0.4.0
 CATEGORIES=	misc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -9,6 +9,8 @@ COMMENT=	Ruby class for launching applications
 LICENSE=	isc
 
 DEPENDS+=	${RUBY_PKGPREFIX}-configuration>=0.0.5:../../misc/ruby-configuration
+
+USE_RAKE=	YES
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,3 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1 2001/11/01 00:54:24 zuntum Exp $
+@comment $NetBSD: PLIST,v 1.2 2002/03/25 20:32:27 pooka Exp $
 bin/nethack-qt
 share/nethackdir340/tiles.xpm
+share/nethackdir340/nhsplash.xpm
+share/nethackdir340/knh.xpm
+share/nethackdir340/knh-mini.xpm
