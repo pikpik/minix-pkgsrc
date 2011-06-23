@@ -6,17 +6,17 @@ $NetBSD$
  
  #define execerr() if (!forked) { lastval = 1; goto done; } else _exit(1)
  
-+#ifdef __minix
++#ifndef HAVE_SETPGRP
 +int setpgrp(int a, int b) { return 0; }
 +#endif
  static LinkList args;
  static int doneps4;
  static char *STTYval;
-@@ -184,11 +187,17 @@ zsetlimit(int limnum, char *nam)
+@@ -184,11 +187,18 @@ zsetlimit(int limnum, char *nam)
  {
      if (limits[limnum].rlim_max != current_limits[limnum].rlim_max ||
  	limits[limnum].rlim_cur != current_limits[limnum].rlim_cur) {
-+#ifndef __minix
++#ifdef HAVE_SETRLIMIT
  	if (setrlimit(limnum, limits + limnum)) {
  	    if (nam)
  		zwarnnam(nam, "setrlimit failed: %e", NULL, errno);
@@ -24,7 +24,8 @@ $NetBSD$
  	}
 +#else
 +   if (nam)
-+		zwarnnam(nam, "setrlimit not supporded on Minix", NULL, 0);
++		zwarnnam(nam, "setrlimit is not supported on your platform.",
++								NULL, 0);
 +   return -1;
 +#endif
  	current_limits[limnum] = limits[limnum];

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Src/mkmakemod.sh.orig	2007-10-25 17:40:46.000000000 +0900
+--- Src/mkmakemod.sh.orig	Thu Oct 25 08:40:46 2007
 +++ Src/mkmakemod.sh
 @@ -112,9 +112,7 @@ if $first_stage; then
      module_list="${bin_mods}${dyn_mods}"

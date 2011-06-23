@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Src/zsh.h.orig	2007-11-26 18:38:49.000000000 +0900
+--- Src/zsh.h.orig	Mon Nov 26 09:38:49 2007
 +++ Src/zsh.h
 @@ -1678,6 +1678,7 @@ struct ttyinfo {
  #endif

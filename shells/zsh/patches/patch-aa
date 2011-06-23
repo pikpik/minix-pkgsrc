@@ -2,11 +2,11 @@ $NetBSD$
 
 --- Src/Builtins/rlimits.c.orig	Tue Oct 30 09:33:09 2007
 +++ Src/Builtins/rlimits.c
-@@ -422,11 +422,19 @@ do_limit(char *nam, int lim, rlim_t val, int hard, int
+@@ -422,11 +422,20 @@ do_limit(char *nam, int lim, rlim_t val, int hard, int
  		     NULL, lim);
  	    return 1;
  	}
-+#ifndef __minix
++#ifdef HAVE_SETRLIMIT
  	else if (setrlimit(lim, &vals) < 0)
  	{
  	    zwarnnam(nam, "setrlimit failed: %e", NULL, errno);
@@ -15,27 +15,29 @@ $NetBSD$
 +#else
 +	else
 +	{
-+		zwarnnam(nam, "setrlimit not supported on Minix.", NULL, 0);
++		zwarnnam(nam, "setrlimit is not supported on your platform.",
++								NULL, 0);
 +		return 1;
 +	}
 +#endif
      } else {
  	/* new limit is valid and has been interpreted; apply it to the
  	specified resource */
-@@ -594,10 +602,18 @@ do_unlimit(char *nam, int lim, int hard, int soft, int
+@@ -594,10 +603,19 @@ do_unlimit(char *nam, int lim, int hard, int soft, int
  		     "warning: unrecognised limit %d, use -s to set",
  		     NULL, lim);
  	    return 1;
 -	} else if (setrlimit(lim, &vals) < 0) {
 +	}
-+#ifndef __minix
++#ifdef HAVE_SETRLIMIT
 +	else if (setrlimit(lim, &vals) < 0) {
  	    zwarnnam(nam, "setrlimit failed: %e", NULL, errno);
  	    return 1;
  	}
 +#else
 +	else {
-+		zwarnnam(nam, "setrlimit not supported on Minix.", NULL, 0);
++		zwarnnam(nam, "setrlimit is not supported on your platform.",
++								NULL, 0);
 +		return 1;
 +	}
 +#endif
