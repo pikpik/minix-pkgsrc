@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/01/07 09:13:54 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2008/03/04 06:59:03 jlam Exp $
 #
 
 DISTNAME=		cmatrix-1.2a
@@ -23,4 +23,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/mtx.pcf \
 		${DESTDIR}${PREFIX}/share/cmatrix/mtx.pcf
 
+.include "../../mk/curses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
