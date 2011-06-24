@@ -1,7 +1,7 @@
-$NetBSD: patch-aa,v 1.3 2006/01/06 17:12:18 wiz Exp $
+$NetBSD: patch-aa,v 1.4 2006/10/09 12:52:35 joerg Exp $
 
---- Makefile.orig	2005-12-30 14:45:30.000000000 +0000
-+++ Makefile
+--- build/generic/Makefile.orig	2005-12-30 14:45:30.000000000 +0000
++++ build/generic/Makefile
 @@ -83,7 +83,7 @@ $(OBJECTS): platform.inc
  
  $(BUILD_DIR):
