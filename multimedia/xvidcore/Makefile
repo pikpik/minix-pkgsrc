@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2009/06/02 17:10:53 drochner Exp $
+# $NetBSD: Makefile,v 1.36 2010/05/26 14:30:36 tron Exp $
 
 DISTNAME=	xvidcore-1.2.2
 CATEGORIES=	multimedia
@@ -42,6 +42,9 @@ WRKSRC=		${WRKDIR}/xvidcore/build/generic
 GNU_CONFIGURE=	YES
 
 MAKE_ENV+=	MKDIR=${MKDIR:Q}
+
+post-extract:
+	@${LN} -s ../../src ${WRKSRC}/src
 
 .if ${OPSYS} == "Darwin"
 post-install:
