@@ -796,7 +796,3 @@ ${_MAKEVARS_MK.${_phase_}}: ${WRKDIR}
 .include "misc/import.mk"
 .endif
 .include "misc/can-be-built-here.mk"
-
-.if exists(/usr/share/mk/pkgsrchooks.mk)
-.include "/usr/share/mk/pkgsrchooks.mk"
-.endif

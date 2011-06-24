@@ -42,3 +42,8 @@ VARBASE=	/usr/pbulk/var
 WRKOBJDIR?=	/usr/tmp/pbulk-outer
 
 MASTER_SITE_OVERRIDE=${MASTER_SITE_BACKUP}
+
+.if exists(/usr/share/mk/pkgsrchooks.mk)
+.include "/usr/share/mk/pkgsrchooks.mk"
+.endif
+
