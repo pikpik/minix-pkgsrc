@@ -3,4 +3,3 @@ $NetBSD: distinfo,v 1.4 2005/02/23 22:24:30 agc Exp $
 SHA1 (patch-2.5.4.tar) = e8b7b82ee2ebb70624465cc41f9ad1a14d54097e
 RMD160 (patch-2.5.4.tar) = 4604e4678e6d40cf7b11133ef3dd06564442521b
 Size (patch-2.5.4.tar) = 706560 bytes
-SHA1 (patch-aa) = 53c35d0653a95ea3ea86d5c3bd5377e2146af612

@@ -40,6 +40,15 @@ PLIST.gpatch=		yes
 INSTALL_MAKE_FLAGS=	bindir=${DESTDIR}${PREFIX}/bin \
 			man1dir=${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
+do-patch:
+	${MV} ${WRKSRC}/pch.c ${WRKSRC}/pch.c.orig
+	${AWK} '/#include <pch.h>/{print $$0 "\n#include <sys/param.h>";next;}\
+		/^#if HAVE_SETMODE/					\
+		{gsub(/^#if HAVE_SETMODE/,"#if defined(HAVE_SETMODE) \\&\\& !(defined(BSD) \\&\\& BSD >= 199306) \\&\\& !defined(__INTERIX)");print $$0; next; } \
+		{print $$0;}'						\
+		< ${WRKSRC}/pch.c.orig 					\
+		> ${WRKSRC}/pch.c
+
 .if !defined(GNU_PROGRAM_PREFIX) || ${GNU_PROGRAM_PREFIX} != "g"
 post-install:
 	${LN} -sf ${GNU_PROGRAM_PREFIX}patch ${DESTDIR}${PREFIX}/bin/gpatch

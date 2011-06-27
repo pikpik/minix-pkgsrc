@@ -41,7 +41,6 @@ PKGS_REQUIRING_MINIX_LIBC = \
 	devel/ncurses \
 	devel/p5-enum \
 	devel/p5-Error \
-	devel/patch \
 	devel/pkg-config \
 	devel/pth \
 	devel/readline \
