@@ -76,6 +76,10 @@ PKG_FAIL_REASON+=	"Circular dependency detected"
 
 .include "bsd.hacks.mk"
 
+.if exists(/usr/share/mk/pkgsrchooks.mk)
+.include "/usr/share/mk/pkgsrchooks.mk"
+.endif
+
 ############################################################################
 # Transform package Makefile variables and set defaults
 ############################################################################
