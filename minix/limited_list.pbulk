@@ -49,6 +49,7 @@ devel/scmcvs
 devel/scmgit-base
 devel/subversion-base
 devel/topgit
+devel/zlib
 editors/mg
 editors/nano
 editors/vilearn
