@@ -12,7 +12,6 @@ PKGS_REQUIRING_MINIX_LIBC = \
 	chat/naim \
 	converters/libiconv \
 	databases/db4 \
-	databases/sqlite3 \
 	devel/apr \
 	devel/apr-util \
 	devel/binutils \
