@@ -114,7 +114,6 @@ PKGS_REQUIRING_MINIX_LIBC = \
 	textproc/grep \
 	textproc/groff \
 	textproc/gsed \
-	textproc/wdiff \
 	textproc/xmlrpc-c \
 	wm/fluxbox \
 	www/curl \

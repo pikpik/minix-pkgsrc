@@ -1,10 +1,6 @@
-$NetBSD: distinfo,v 1.6 2007/12/23 04:50:30 minskim Exp $
+$NetBSD$
 
 SHA1 (wdiff-0.6.5.tar.gz) = 8a1d5d76f7faa999a5573619b9f3f0a7711e1d08
 RMD160 (wdiff-0.6.5.tar.gz) = aead43659c8d8368318f1b1145826078aeec36da
 Size (wdiff-0.6.5.tar.gz) = 1232434 bytes
-SHA1 (patch-aa) = ab7d2f5ab4ff89f380b0da4297df82de25490cc4
-SHA1 (patch-ab) = b3aa170ea45cb9f5134f84eed947a81d84edf985
-SHA1 (patch-ac) = ccdd5186d98e7606dba106806a46d545bea2fa74
-SHA1 (patch-ad) = 8c9fb10903d5b654e3d50eb326cf75437220efed
-SHA1 (patch-ae) = 6f4f780ba15ddeb0d9d1fc9a89bad40769ce3037
+SHA1 (patch-src_wdiff.c) = 5759529efcc7c5a6eeda85c275697388716abb08
