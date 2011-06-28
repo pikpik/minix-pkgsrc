@@ -122,5 +122,4 @@ PKGS_REQUIRING_MINIX_LIBC = \
 	www/lynx \
 	www/neon \
 	www/urlget \
-	x11/inputproto \
-	games/sex 
+	x11/inputproto
