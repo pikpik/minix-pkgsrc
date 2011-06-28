@@ -34,6 +34,7 @@ PKGS_REQUIRING_MINIX_LIBC = \
 	devel/gmp \
 	devel/gtexinfo \
 	devel/lcov \
+	devel/libgetopt \
 	devel/libiberty \
 	devel/libidn \
 	devel/libtool-base \

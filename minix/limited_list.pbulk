@@ -33,6 +33,7 @@ devel/gmake
 devel/gmp
 devel/gtexinfo
 devel/lcov
+devel/libgetopt
 devel/libiberty
 devel/libidn
 devel/libtool-base
