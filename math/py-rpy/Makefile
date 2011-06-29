@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2010/06/09 21:04:26 markd Exp $
+# $NetBSD: Makefile,v 1.27 2010/07/30 10:36:30 asau Exp $
 #
 
 DISTNAME=	rpy2-2.1.3
@@ -9,6 +9,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rpy/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rpy.sourceforge.net/
 COMMENT=	R interface for Python
+LICENSE=	mpl-1.1 OR gnu-gpl-v2 OR gnu-lgpl-v2.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
