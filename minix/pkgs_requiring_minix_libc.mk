@@ -1,5 +1,4 @@
 PKGS_REQUIRING_MINIX_LIBC = \
-	archivers/9e \
 	archivers/bzip2 \
 	archivers/gtar-base \
 	archivers/gtar \
