@@ -1,4 +1,4 @@
-/*	$NetBSD: license.c,v 1.19 2011/04/22 08:16:42 adam Exp $	*/
+/*	$NetBSD: license.c,v 1.20 2011/05/08 10:53:22 ryoon Exp $	*/
 
 /*-
  * Copyright (c) 2009 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -59,7 +59,7 @@ const char *default_acceptable_licenses =
     "cpl-1.0 "
     "open-font-license "
     "mpl-1.0 mpl-1.1 "
-    "png-license "
+    "php png-license "
     "postgresql-license "
     "zpl "
     "python-software-foundation "
