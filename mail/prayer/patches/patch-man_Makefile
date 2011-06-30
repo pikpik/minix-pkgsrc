@@ -1,8 +1,8 @@
 $NetBSD$
 
---- man/Makefile.orig	2008-09-16 11:59:57 +0200
-+++ man/Makefile	2010-05-01 21:37:04 +0200
-@@ -18,7 +18,7 @@
+--- man/Makefile.orig	2008-09-16 09:59:57.000000000 +0000
++++ man/Makefile
+@@ -18,7 +18,7 @@ install:
  	PUBLIC_DIR=$(PUBLIC_DIR) PRIVATE_DIR=$(PRIVATE_DIR) \
  	PUBLIC_FILE=$(PUBLIC_FILE) PRIVATE_FILE=$(PRIVATE_FILE) \
  	PUBLIC_EXEC=$(PUBLIC_FILE) PRIVATE_EXEC=$(PRIVATE_EXEC) \
