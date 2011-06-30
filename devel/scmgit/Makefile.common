@@ -22,6 +22,7 @@ PATCHDIR=	${.CURDIR}/../../devel/scmgit-base/patches
 DISTINFO_FILE=	${.CURDIR}/../../devel/scmgit-base/distinfo
 
 USE_TOOLS+=		gmake tar perl sh
+EXTRACT_USING=		gtar
 
 PKG_SYSCONFSUBDIR=	git
 
