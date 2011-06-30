@@ -67,8 +67,6 @@ PKGS_REQUIRING_MINIX_LIBC = \
 	pkgtools/libnbcompat \
 	pkgtools/p5-pkgsrc-Dewey \
 	pkgtools/pbulk \
-	pkgtools/pkgdep \
-	pkgtools/pkgdepgraph \
 	pkgtools/pkgin \
 	pkgtools/pkg_install \
 	pkgtools/pkg_install-info \
