@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2007/02/02 18:46:26 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2008/04/25 13:14:52 joerg Exp $
 #
 
 DISTNAME=		scid-3.6.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scid/}
 
@@ -30,6 +30,9 @@ SUBST_SED.paths=	-e 's,@TCLPREFIX@,${BUILDLINK_PREFIX.tcl},g'	\
 
 MAKE_ENV+=		X_LDFLAGS=${X11_LDFLAGS:Q}
 
+REPLACE_PYTHON+=	scripts/pgnfix.py
+
+.include "../../lang/python/application.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../lang/tcl/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
