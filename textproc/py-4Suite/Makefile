@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/16 22:31:04 pettai Exp $
+# $NetBSD: Makefile,v 1.2 2010/04/07 18:19:42 joerg Exp $
 #
 
 VER=		1.0.2
@@ -19,10 +19,13 @@ BUILD_DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 PYDISTUTILSPKG= yes
 
 SUBST_CLASSES+=		python
-SUBST_FILES.python=	${WRKSRC}/build/scripts.*/4xml
-SUBST_FILES.python+=	${WRKSRC}/build/scripts.*/4xpath
-SUBST_FILES.python+=	${WRKSRC}/build/scripts.*/4xslt
-SUBST_FILES.python+=	${WRKSRC}/build/scripts.*/4xupdate
+SUBST_FILES.python=	build/scripts.*/4xml
+SUBST_FILES.python+=	build/scripts.*/4xpath
+SUBST_FILES.python+=	build/scripts.*/4xslt
+SUBST_FILES.python+=	build/scripts.*/4xupdate
+SUBST_FILES.python+=	test/Xml/XPath/Borrowed/*.py
+SUBST_FILES.python+=	test/Xml/XPath/Core/*.py
+SUBST_FILES.python+=	test/test.py
 SUBST_STAGE.python=	post-build
 SUBST_SED.python=	-e 's,\#![^ ]* python,\#! ${PYTHONBIN},'
 
@@ -33,7 +36,6 @@ PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 do-configure:
 	cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \
 	${PYTHONBIN} setup.py config --prefix=${PREFIX}
-
 
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/application.mk"
