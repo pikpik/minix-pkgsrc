@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/08/06 14:46:16 hauke Exp $
+# $NetBSD: Makefile,v 1.3 2011/07/03 12:07:43 jym Exp $
 #
 
 PYBLOXSOMVERS=	1.5
@@ -16,6 +16,7 @@ LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+DIST_SUBDIR=	${DISTNAME}	# upstream reissued tarball with no changes
 DOC_SUBDIR=     share/doc/pyblosxom
 DOCDIR=         ${PREFIX}/${DOC_SUBDIR}
 DOCFILES=       AUTHORS CHANGELOG INSTALL LICENSE README THANKS TODO UPGRADE
