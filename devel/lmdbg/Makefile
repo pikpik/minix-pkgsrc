@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/08 18:32:15 cheusov Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/10 08:10:13 cheusov Exp $
 #
 
 DISTNAME=	lmdbg-0.16.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lmdbg/} \
 		http://mova.org/~cheusov/pub/lmdbg/
@@ -32,6 +32,7 @@ REPLACE_INTERPRETER+=	runawk
 REPLACE.runawk.old=	.*runawk
 REPLACE.runawk.new=	${PREFIX}/bin/runawk
 REPLACE_FILES.runawk=	scripts/lmdbg-*.in
+DEPENDS+=		runawk>=1.3.1:../../lang/runawk
 
 INSTALLATION_DIRS=	${DOCDIR}
 
