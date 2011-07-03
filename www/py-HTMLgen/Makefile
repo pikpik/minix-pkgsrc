@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/03/04 21:31:03 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2009/02/16 19:44:28 joerg Exp $
 #
 
 DISTNAME=	HTMLgen
@@ -19,7 +19,10 @@ NO_BUILD=	yes
 MAKE_ENV+=	PYTHONBIN=${PYTHONBIN:Q}
 PY_PATCHPLIST=	yes
 
+REPLACE_PYTHON+=	*.py
+
 INSTALLATION_DIRS+=	${PYSITELIB}
 
+.include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"
