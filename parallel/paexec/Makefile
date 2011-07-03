@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/03/23 14:49:47 gdt Exp $
+# $NetBSD: Makefile,v 1.3 2011/05/07 10:06:02 cheusov Exp $
 #
 
 DISTNAME=	paexec-0.16.1
@@ -16,6 +16,11 @@ BUILD_DEPENDS+=		mk-configure>=0.20.0:../../devel/mk-configure
 DEPENDS+=		runawk>=0.20.0:../../lang/runawk
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+REPLACE_INTERPRETER+=	runawk
+REPLACE.runawk.old=	/usr/bin/env runawk
+REPLACE.runawk.new=	${PREFIX}/bin/runawk
+REPLACE_FILES.runawk=	paexec/paexec_reorder
 
 TEST_TARGET=		test
 
