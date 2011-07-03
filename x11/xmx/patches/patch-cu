@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-cu,v 1.1 2008/08/31 06:52:29 dholland Exp $
+
+- protect header file against multiple inclusion
 
 --- server/df.h~	1997-09-27 17:10:13.000000000 -0400
 +++ server/df.h	2008-08-31 02:08:49.000000000 -0400
