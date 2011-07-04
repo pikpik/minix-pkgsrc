@@ -608,7 +608,7 @@ Minix)
 	machine_arch=`uname -p`
 	check_compiler=yes
 	export CC="gcc"
-	export CPPFLAGS="-D_MINIX -D_POSIX_SOURCE"
+	export CPPFLAGS="-D_NETBSD_SOURCE -D_MINIX -D_POSIX_SOURCE"
 	export AR="ar"
 	export LD="ld"
 	export NM="nm"
