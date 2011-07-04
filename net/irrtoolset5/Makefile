@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/01/31 21:49:16 spz Exp $
+# $NetBSD: Makefile,v 1.3 2010/04/13 21:19:55 spz Exp $
 #
 
 DISTNAME=		irrtoolset-5.0.0
@@ -17,6 +17,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../mk/bsd.prefs.mk"
 
 INSTALLATION_DIRS=	${PKGBINDIR} ${PKGMANDIR}/man1
+
+MAKE_JOBS_SAFE=		NO
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
