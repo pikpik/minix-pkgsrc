@@ -79,6 +79,7 @@ minix/x11
 misc/ascii
 misc/cowsay
 misc/figlet
+net/libfetch
 net/rsync
 pkgtools/bootstrap-mk-files
 pkgtools/digest
