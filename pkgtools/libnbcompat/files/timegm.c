@@ -56,7 +56,7 @@ leap_days(int y1, int y2)
  * Code adapted from Python 2.4.1 sources (Lib/calendar.py).
  */
 time_t
-timegm(const struct tm *tm)
+timegm(struct tm *tm)
 {
 	int year;
 	time_t days;
