@@ -47,6 +47,7 @@ MAKEFLAGS+=		GMAKE_LOCALE=${GMAKE_LOCALE:Q}
 USE_PKGLOCALEDIR=		yes
 PLIST_SRC+=			${PKGDIR}/PLIST.locale
 USE_TOOLS+=			msgfmt
+CONFIGURE_ARGS+=		--enable-nls
 .  include "../../devel/gettext-lib/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-libintl
