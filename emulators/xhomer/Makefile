@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/12/06 12:56:27 obache Exp $
+# $NetBSD: Makefile,v 1.2 2008/12/06 13:10:34 obache Exp $
 
 DISTNAME=	xhomer-9-16-06
 PKGNAME=	xhomer-9.16.06
@@ -31,5 +31,6 @@ do-install:
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXxf86dga/buildlink3.mk"
+.include "../../x11/xf86dgaproto/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
