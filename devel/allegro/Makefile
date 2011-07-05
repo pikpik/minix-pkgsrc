@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2008/06/12 02:14:21 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2009/06/30 00:07:12 joerg Exp $
 
 DISTNAME=	allegro-4.2.2
 CATEGORIES=	devel
@@ -52,5 +52,6 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
+.include "../../x11/xf86dgaproto/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
