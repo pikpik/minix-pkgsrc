@@ -1,4 +1,6 @@
-$NetBSD: patch-bb,v 1.1 2003/09/28 15:58:34 jmmv Exp $
+$NetBSD: patch-bb,v 1.1.1.1 2004/01/26 11:36:40 jmmv Exp $
+
+Handle always-on-top.
 
 --- glob.c.orig	2001-02-12 19:26:16.000000000 +0100
 +++ glob.c

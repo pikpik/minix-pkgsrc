@@ -1,4 +1,8 @@
-$NetBSD: patch-ad,v 1.1.1.1 2004/01/26 11:36:38 jmmv Exp $
+$NetBSD: patch-ad,v 1.2 2004/02/22 10:00:31 jmmv Exp $
+
+Handle always-on-top.
+Handle png.
+Fix illegal C.
 
 --- app_rsrc.h.orig	2001-02-12 22:17:53.000000000 +0100
 +++ app_rsrc.h
