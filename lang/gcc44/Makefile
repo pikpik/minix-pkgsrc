@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/04/14 19:38:13 hans Exp $
+# $NetBSD: Makefile,v 1.20 2011/04/22 14:40:43 obache Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc44-${GCC_VERSION}
@@ -80,6 +80,8 @@ REPLACE_BASH+= contrib/reghunt/date_based/reg_search
 REPLACE_BASH+= gcc/dbgcnt.def
 REPLACE_BASH+= gcc/testsuite/gcc.test-framework/gen_directive_tests
 REPLACE_BASH+= libstdc++-v3/scripts/run_doxygen
+
+REPLACE_PYTHON+=libjava/contrib/aot-compile.in
 
 # Optional languages - change as required
 # Ada could be added although there is a bootstrapping issue.  See
@@ -210,6 +212,7 @@ GENERATE_PLIST_SYMLINKS=	for x in ${GCC_SYMLINK_PROGRAMS}; do ${ECHO} bin/$$x; d
 GENERATE_PLIST+= { ${GENERATE_PLIST_SYMLINKS};                                                       \
 	cd ${DESTDIR}${PREFIX} && ${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print; } | ${SORT} ;
 
+.include "../../lang/python/application.mk"
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../math/mpfr/buildlink3.mk"
