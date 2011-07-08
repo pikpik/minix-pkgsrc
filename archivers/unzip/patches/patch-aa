@@ -1,8 +1,8 @@
 $NetBSD$
 
---- unzip.h.orig	2004-05-22 20:04:23.000000000 -0500
+--- unzip.h.orig	Sun Feb 15 18:12:54 2009
 +++ unzip.h
-@@ -258,11 +258,16 @@ freely, subject to the following restric
+@@ -273,10 +273,15 @@ freely, subject to the above disclaimer and the follow
  #endif
  
  /* used to remove arguments in function prototypes for non-ANSI C */
@@ -14,8 +14,7 @@ $NetBSD$
  #  define OF(a) a
  #else
  #  define OF(a) ()
- #endif
 +#endif
+ #endif
  
  /* enable the "const" keyword only if MODERN and if not otherwise instructed */
- #ifdef MODERN
