@@ -448,6 +448,7 @@ overpath=""
 root_user=root
 bmakexenv=
 bmakexargs=
+enable_db=yes
 need_extras=no
 case "$opsys" in
 AIX)
@@ -603,12 +604,14 @@ Minix)
 	need_bsd_install=yes
 	need_sed=no
 	need_awk=no
+	enable_db=no
 	set_opsys=no
 	groupsprog="id -gn"
 	machine_arch=`uname -p`
 	check_compiler=yes
 	export CC="gcc"
-	export CPPFLAGS="-D_NETBSD_SOURCE -D_MINIX -D_POSIX_SOURCE"
+	export CPPFLAGS="-D_NETBSD_SOURCE -D_MINIX -D_POSIX_SOURCE -D_COMPAT_MINIX"
+	export LDFLAGS="-lcompat_minix -lminlib"
 	export AR="ar"
 	export LD="ld"
 	export NM="nm"
@@ -944,7 +947,16 @@ bmake="$wrkdir/bin/bmake $make_quiet_flags"
 # build libnbcompat
 echo_msg "Building libnbcompat"
 copy_src $pkgsrcdir/pkgtools/libnbcompat/files libnbcompat
-run_cmd "(cd $wrkdir/libnbcompat; $shprog ./configure $configure_quiet_flags -C --prefix=$prefix --mandir=$mandir --sysconfdir=$sysconfdir --enable-bsd-getopt --enable-db && $bmake $make_quiet_flags)"
+
+db_flag=""
+if [ "$enable_db" = "yes" ]
+then
+	db_flag="--enable-db"
+else
+	db_flag="--disable-db"
+fi
+
+run_cmd "(cd $wrkdir/libnbcompat; $shprog ./configure $configure_quiet_flags -C --prefix=$prefix --mandir=$mandir --sysconfdir=$sysconfdir --enable-bsd-getopt $db_flag && $bmake $make_quiet_flags)"
 
 # bootstrap ksh if necessary
 case "$need_ksh" in
