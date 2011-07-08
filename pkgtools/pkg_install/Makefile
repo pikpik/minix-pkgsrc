@@ -28,7 +28,7 @@ CONFIGURE_ARGS+=	--with-pkgdbdir=${PKG_DBDIR:Q}
 
 USE_FEATURES=		nbcompat
 
-NBCOMPAT_CONFIGURE_ARGS+=	--enable-bsd-getopt --enable-db
+NBCOMPAT_CONFIGURE_ARGS+=	--enable-bsd-getopt
 
 SKIP_AUDIT_PACKAGES=	yes
 NO_PKGTOOLS_REQD_CHECK=	yes
@@ -85,6 +85,12 @@ VERSION!=		${AWK} '/PKGTOOLS_VERSION/ {print $$3}' \
 
 # raw format appeared in libarchive 2.8.
 BUILDLINK_API_DEPENDS.libarchive+=	libarchive>=2.8.0
+
+.if ${OPSYS} == "Minix"
+NBCOMPAT_CONFIGURE_ARGS+=	--disable-db
+.else
+NBCOMPAT_CONFIGURE_ARGS+=	--enable-db
+.endif
 
 .include "../../archivers/bzip2/builtin.mk"
 .include "../../archivers/libarchive/builtin.mk"
