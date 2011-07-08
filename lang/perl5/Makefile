@@ -54,8 +54,10 @@ MAKE_ENV+=		LC_ALL="C"
 
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	-Uusenm 
-CONFIGURE_ARGS+=	-Accflags="-DUSE_PERL_SBRK -DPERL_SBRK_VIA_MALLOC -D_MINIX -D_POSIX_SOURCE"
+CONFIGURE_ARGS+=	-Accflags="-DUSE_PERL_SBRK -DPERL_SBRK_VIA_MALLOC -D_MINIX -D_POSIX_SOURCE -D_COMPAT_MINIX -D_NETBSD_SOURCE"
 CONFIGURE_ARGS+=	-Dnoextensions="IO/Compress Sys/Syslog DB_File"
+CONFIGURE_ARGS+=	-Dusedl="false"
+CONFIGURE_ARGS+=	-Duseshrplib="false"
 .endif
 
 TEST_TARGET=		test
@@ -128,6 +130,7 @@ LIBSWANTED.HPUX=	cl pthread $$libswanted # see Perl's README.hpux
 LIBSWANTED.IRIX=	m crypt
 LIBSWANTED.Interix=	m dl
 LIBSWANTED.Linux=	m crypt dl nsl
+LIBSWANTED.Minix=	m crypt c minlib compat_minix
 LIBSWANTED.MirBSD=	m crypt
 LIBSWANTED.NetBSD=	m crypt
 LIBSWANTED.OpenBSD=	m crypt
@@ -144,6 +147,7 @@ SYSLIBPATH.Darwin=	/usr/lib
 SYSLIBPATH.DragonFly=	/usr/lib
 SYSLIBPATH.FreeBSD=	/usr/lib
 SYSLIBPATH.Interix=	/usr/lib
+SYSLIBPATH.Minix=	/usr/lib
 SYSLIBPATH.MirBSD=	/usr/lib
 SYSLIBPATH.NetBSD=	/usr/lib
 SYSLIBPATH.OpenBSD=	/usr/lib
