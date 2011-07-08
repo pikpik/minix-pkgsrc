@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2010/02/19 21:30:13 joerg Exp $
+# $NetBSD: Makefile,v 1.41 2011/04/22 13:42:43 obache Exp $
 #
 
 COMMENT=	LibPrelude libraries and c++ easy bindings
@@ -27,5 +27,6 @@ CFLAGS=			-O0 -ggdb
 .include "../../devel/libltdl/convenience.mk"
 .include "../../security/gnutls/buildlink3.mk"
 .include "../../security/gnutls/libgnutls-config.mk"
+.include "../../security/libgcrypt/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
