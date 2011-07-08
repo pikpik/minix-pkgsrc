@@ -29,18 +29,26 @@ test -d ${VOLUME} || {
 	exit 1
 }
 
-extattrctl start ${VOLUME} || {
-	echo "$0: cannot start extended attributes on ${VOLUME}"
-	exit 1
-}
-
 mkdir -p ${VOLUME}/.attribute/user || {
 	echo "$0: cannot create ${VOLUME}/.attribute/user"
 	exit 1
 }
 
+mkdir -p ${VOLUME}/.attribute/system || {
+	echo "$0: cannot create ${VOLUME}/.attribute/system"
+	exit 1
+}
+
+extattrctl start ${VOLUME} || {
+	echo "$0: cannot start extended attributes on ${VOLUME}"
+	exit 1
+}
+
 for attr in ${GLUSTERFS_XATTR} ; do
-	attrfile=${VOLUME}/.attribute/user/${attr}
+	ns="user";
+	echo ${attr} | egrep -q '^(trusted|system|security)\.' && ns="system"
+
+	attrfile=${VOLUME}/.attribute/${ns}/${attr}
 
 	test -e ${attrfile} && {
 		echo "$0: ${attrfile} exists."
@@ -52,7 +60,7 @@ for attr in ${GLUSTERFS_XATTR} ; do
 		exit 1
 	}
 
-	extattrctl enable ${VOLUME} user ${attr} ${attrfile} || {
+	extattrctl enable ${VOLUME} ${ns} ${attr} ${attrfile} || {
 		echo "$0: cannot enable ${attr} backed by ${attrfile}"
 		exit 1
 	}
