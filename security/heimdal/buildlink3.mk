@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.37 2010/07/01 18:14:19 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.38 2010/07/02 13:40:22 joerg Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
@@ -24,6 +24,7 @@ CHECK_BUILTIN.heimdal:=	yes
 .include "../../security/heimdal/builtin.mk"
 CHECK_BUILTIN.heimdal:=	no
 .if !empty(USE_BUILTIN.heimdal:M[nN][oO])
+.include "../../databases/sqlite3/buildlink3.mk"
 .include "../../mk/bdb.buildlink3.mk"
 .endif
 .endif # HEIMDAL_BUILDLINK3_MK
