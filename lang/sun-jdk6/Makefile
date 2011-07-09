@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2011/02/21 07:48:19 obache Exp $
+# $NetBSD: Makefile,v 1.22 2011/06/09 09:08:17 obache Exp $
 
 DISTNAME=	jdk-6u26-linux-${DIST_ARCH}
 PKGNAME=	sun-jdk6-6.0.26
@@ -13,6 +13,10 @@ JAVA_WRAPPERS=	appletviewer apt extcheck idlj jar jarsigner \
 		javac javadoc javah javap jdb rmic serialver
 
 MAKE_JOBS_SAFE=	no
+
+.if !empty(MACHINE_PLATFORM:MLinux-*-x86_64)
+CHECK_SHLIBS_SUPPORTED=	no
+.endif
 
 .include "../../lang/sun-jre6/Makefile.common"
 
