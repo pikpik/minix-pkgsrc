@@ -2,6 +2,20 @@ $NetBSD$
 
 --- unzip.h.orig	Sun Feb 15 18:12:54 2009
 +++ unzip.h
+@@ -116,11 +116,11 @@ freely, subject to the above disclaimer and the follow
+ #    define UNIX
+ #  endif
+ #endif /* __NetBSD__ || __FreeBSD__ */
+-#if (defined(CONVEX) || defined(MINIX) || defined(_AIX) || defined(__QNX__))
++#if (defined(CONVEX) || defined(__minix) || defined(_AIX) || defined(__QNX__))
+ #  ifndef UNIX
+ #    define UNIX
+ #  endif
+-#endif /* CONVEX || MINIX || _AIX || __QNX__ */
++#endif /* CONVEX || __minix || _AIX || __QNX__ */
+ 
+ #if (defined(VM_CMS) || defined(MVS))
+ #  define CMS_MVS
 @@ -273,10 +273,15 @@ freely, subject to the above disclaimer and the follow
  #endif
  

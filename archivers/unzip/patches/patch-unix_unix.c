@@ -19,3 +19,12 @@ $NetBSD$
  #ifdef _POSIX_VERSION
  #  ifndef DIRENT
  #    define DIRENT
+@@ -1574,7 +1584,7 @@ void version(__G)
+       " (Linux a.out)",
+ #  endif
+ #else
+-#ifdef MINIX
++#ifdef __minix
+       " (Minix)",
+ #else
+ #ifdef M_UNIX

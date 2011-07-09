@@ -1,6 +1,6 @@
 $NetBSD: patch-ab,v 1.5 2004/01/22 12:25:59 grant Exp $
 
---- unix/Makefile.orig	2009-01-18 22:41:18.000000000 +0000
+--- unix/Makefile.orig	Sun Jan 18 22:41:18 2009
 +++ unix/Makefile
 @@ -42,7 +42,7 @@
  # such as -DDOSWILD).
@@ -20,7 +20,7 @@ $NetBSD: patch-ab,v 1.5 2004/01/22 12:25:59 grant Exp $
  
  # Generic GNU C shared library.  This is an example of how to compile UnZip as
  # a shared library.  (Doing so as a static library would be similar.)  See also
-@@ -651,7 +651,7 @@ vax:		unzips	# general-purpose VAX targe
+@@ -651,7 +651,7 @@ vax:		unzips	# general-purpose VAX target (not countin
  bsd:		_bsd	# generic BSD (BSD 4.2 & Ultrix handled in unzip.h)
  
  _bsd:		unix_make

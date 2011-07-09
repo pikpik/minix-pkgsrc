@@ -1,6 +1,6 @@
 $NetBSD$
 
---- inflate.c.orig	2008-07-30 01:31:08.000000000 +0000
+--- inflate.c.orig	Wed Jul 30 01:31:08 2008
 +++ inflate.c
 @@ -473,7 +473,11 @@ int UZinflate(__G__ is_defl64)
                      retval = 2;
