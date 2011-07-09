@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2011,v 1.1624 2011/07/09 07:50:51 adam Exp $
+$NetBSD: CHANGES-2011,v 1.1625 2011/07/09 10:25:53 abs Exp $
 
 Changes to the packages collection and infrastructure in 2011:
 
@@ -2544,3 +2544,4 @@ Changes to the packages collection and infrastructure in 2011:
 	Updated net/httping to 1.4.4 [adam 2011-07-09]
 	Added www/libmicrohttpd version 0.9.9 [abs 2011-07-09]
 	Added multimedia/libass version 0.9.12 [abs 2011-07-09]
+	Updated chat/bitlbee to 3.0.3nb1 [mspo 2011-07-09]
