@@ -3,8 +3,9 @@ $NetBSD: distinfo,v 1.18 2008/03/23 13:03:13 tron Exp $
 SHA1 (unzip60.tgz) = abf7de8a4018a983590ed6f5cbd990d4740f8a22
 RMD160 (unzip60.tgz) = 48af66606e9472e45fbb94bc4e285da23d1b89ba
 Size (unzip60.tgz) = 1376845 bytes
-SHA1 (patch-aa) = 50aa3a4878e8a5a35dae8c7ee4199d08638b53c8
+SHA1 (patch-aa) = 5c8700318bc8e1f477be276c525d875f92757d76
 SHA1 (patch-ab) = 945a3f561761ac42e2b17044243ff28c4339c6ff
 SHA1 (patch-ac) = 19fc1861d8b562d70492a8fb0d1cd02c4f7eb41c
-SHA1 (patch-unix_unix.c) = fdd13f02b420837e6dcb5e84719fec888f27e99b
-SHA1 (patch-unix_unxcfg.h) = 75ccf75f32d83504b41d9f2c54792a7709607253
+SHA1 (patch-fileio.c) = 708fde326a92b942fcea38b9b05ba97e6fbc05bc
+SHA1 (patch-unix_unix.c) = 424e1c742040e324b0b88e61bc4c46e0021323df
+SHA1 (patch-unix_unxcfg.h) = 40a539d7a44bfc5d547d9f0c01167ca4113bdc6c
