@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.803 2011/07/09 10:22:20 abs Exp $
+# $NetBSD: Makefile,v 1.804 2011/07/10 12:57:58 spz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -436,6 +436,7 @@ SUBDIR+=	p5-LWP-Authen-Negotiate
 SUBDIR+=	p5-LWP-Authen-Wsse
 SUBDIR+=	p5-LWP-MediaTypes
 SUBDIR+=	p5-LWP-Online
+SUBDIR+=	p5-LWP-Protocol-https
 SUBDIR+=	p5-LWP-UserAgent-Determined
 SUBDIR+=	p5-LWPx-ParanoidAgent
 SUBDIR+=	p5-MasonX-Request-WithApacheSession
