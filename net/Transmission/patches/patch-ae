@@ -1,6 +1,6 @@
 $NetBSD$
 
---- qt/qtr.pro.orig	2011-02-08 21:14:20.000000000 +0000
+--- qt/qtr.pro.orig	2011-06-29 01:14:38.000000000 +0000
 +++ qt/qtr.pro
 @@ -13,7 +13,9 @@ man.files = transmission-qt.1
  
@@ -12,4 +12,4 @@ $NetBSD$
 +LIBS +=  $${OPENSSL_LIBS}
  
  TRANSMISSION_TOP = ..
- INCLUDEPATH += $${TRANSMISSION_TOP}
+ INCLUDEPATH = $${EVENT_TOP}/include $${INCLUDEPATH}
