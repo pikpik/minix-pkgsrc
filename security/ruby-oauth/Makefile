@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2010/11/01 04:02:26 obache Exp $
+# $NetBSD: Makefile,v 1.7 2011/02/25 06:35:23 obache Exp $
 
-DISTNAME=	oauth-0.4.4
-PKGREVISION=	1
+DISTNAME=	oauth-0.4.5
 CATEGORIES=	security
 
 MAINTAINER=	obache@NetBSD.org
