@@ -1,10 +1,10 @@
 $NetBSD$
 
---- browser/branding/unofficial/locales/en-US/brand.dtd.orig	2011-04-14 05:28:21.000000000 +0000
+--- browser/branding/unofficial/locales/en-US/brand.dtd.orig	2011-01-22 00:24:21.000000000 +0000
 +++ browser/branding/unofficial/locales/en-US/brand.dtd
 @@ -1,4 +1,4 @@
--<!ENTITY  brandShortName        "Tumucumaque">
--<!ENTITY  brandFullName         "Tumucumaque">
+-<!ENTITY  brandShortName        "Mozilla Developer Preview">
+-<!ENTITY  brandFullName         "Mozilla Developer Preview">
 +<!ENTITY  brandShortName        "Browser">
 +<!ENTITY  brandFullName         "Browser">
  <!ENTITY  vendorShortName       "mozilla.org">
