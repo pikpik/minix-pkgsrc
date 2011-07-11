@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.412 2011/05/28 08:37:10 cheusov Exp $
+# $NetBSD: Makefile,v 1.413 2011/06/19 03:20:04 taca Exp $
 #
 
 COMMENT=	Security tools
@@ -329,6 +329,7 @@ SUBDIR+=	ruby-roauth
 SUBDIR+=	ruby-simple_oauth
 SUBDIR+=	ruby-soauth
 SUBDIR+=	ruby-tcpwrap
+SUBDIR+=	ruby-twitter_oauth
 SUBDIR+=	sbd
 SUBDIR+=	scanssh
 SUBDIR+=	seahorse
