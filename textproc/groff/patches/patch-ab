@@ -1,8 +1,8 @@
 $NetBSD$
 
---- src/libs/libgroff/Makefile.sub.orig	2009-01-09 15:25:52.000000000 +0100
+--- src/libs/libgroff/Makefile.sub.orig	Fri Jan  9 14:25:52 2009
 +++ src/libs/libgroff/Makefile.sub
-@@ -153,6 +153,9 @@ MKINSTALLDIRS = $(SHELL) $(top_srcdir)/m
+@@ -153,6 +153,9 @@ MKINSTALLDIRS = $(SHELL) $(top_srcdir)/mkinstalldirs
  
  install_data: install_charset_data
  install_charset_data:

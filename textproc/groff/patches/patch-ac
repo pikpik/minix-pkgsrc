@@ -1,6 +1,6 @@
 $NetBSD: patch-ac,v 1.2 2004/07/11 13:40:06 wiz Exp $
 
---- tmac/doc.tmac.orig	2005-02-04 01:06:10.000000000 +0100
+--- tmac/doc.tmac.orig	Fri Jan  9 14:25:52 2009
 +++ tmac/doc.tmac
 @@ -950,8 +950,16 @@
  .de Nm

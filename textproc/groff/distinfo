@@ -3,7 +3,13 @@ $NetBSD: distinfo,v 1.13 2009/02/24 20:41:45 wiz Exp $
 SHA1 (groff-1.20.1.tar.gz) = 3066587d73df73c2bda235034f4515cf52d22549
 RMD160 (groff-1.20.1.tar.gz) = ec311727206d183fb04f1b4bd01c1284142fdb52
 Size (groff-1.20.1.tar.gz) = 3594658 bytes
-SHA1 (patch-aa) = 3c74f1b8e809da5359d4702f0f5f299593601209
-SHA1 (patch-ab) = 35f8a7f724ab13bedda8ad8bc54bcbede37f12c7
-SHA1 (patch-ac) = 7c29e3ca0c0a2e5389ff436ff5c15c9a0a4d7581
-SHA1 (patch-ae) = 777b9b4d5f39da5acf8d79616ae9d42025772fc5
+SHA1 (patch-aa) = d436862475bcb6a42bb300e41ee0c2181303bba5
+SHA1 (patch-ab) = cfeaadcc8942b8561553cc3878032f2a94f61d10
+SHA1 (patch-ac) = d403329070fa94c1745b860a051ed1147b3a7e28
+SHA1 (patch-ae) = 91553573023988bda4c90b5a5d7744b71ddb770c
+SHA1 (patch-src_devices_grodvi_dvi.cpp) = c1be452cbc798853042a0f201a3e27dc2be40735
+SHA1 (patch-src_devices_grolj4_lj4.cpp) = 93d6f10998143c59928ce5f8a07dd293c0c61626
+SHA1 (patch-src_devices_grops_ps.cpp) = a3db6264ea169c30f533f70b08aa8032107840bb
+SHA1 (patch-src_preproc_grn_main.cpp) = d7535934f492cd7eb9c2fc212da39a2e83470d59
+SHA1 (patch-src_preproc_pic_main.cpp) = 1670f054d717988389d56e14dd7122b470cbef5e
+SHA1 (patch-src_preproc_preconv_preconv.cpp) = 7d2c21c3b8e523c4d95b76e537c3c8025743d3c4
