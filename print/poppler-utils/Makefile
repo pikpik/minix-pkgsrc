@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2011/05/09 14:03:26 gdt Exp $
+# $NetBSD: Makefile,v 1.21 2011/05/11 07:05:46 abs Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
 
 PKGNAME=		poppler-utils-${POPPLER_VERS}
-PKGREVISION=		2
 
 COMMENT=		PDF utilities (from poppler)
 MAINTAINER=		reed@reedmedia.net
@@ -28,7 +27,11 @@ CONFIGURE_ARGS+=	--disable-gtk-test
 CONFIGURE_ARGS+=	--disable-poppler-glib
 # Enable build and install of the tools
 CONFIGURE_ARGS+=	--enable-utils	# the default
+.if !empty(PKG_BUILD_OPTIONS.poppler:Mpoppler-cms)
+CONFIGURE_ARGS+=	--enable-cms
+.else
 CONFIGURE_ARGS+=	--disable-cms
+.endif
 
 BUILD_DIRS=		utils # implies INSTALL_DIRS too
 

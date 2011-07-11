@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.38 2011/01/31 16:58:42 drochner Exp $
+# $NetBSD: Makefile,v 1.39 2011/04/22 13:42:23 obache Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
 
 PKGNAME=		poppler-glib-${POPPLER_VERS}
-PKGREVISION=		1
 
 COMMENT=		PDF rendering library (GLib wrapper)
 MAINTAINER=		reed@reedmedia.net
@@ -25,7 +24,11 @@ CONFIGURE_ARGS+=	--disable-poppler-qt
 # Don't compile GTK+ test program.
 CONFIGURE_ARGS+=	--disable-gtk-test
 CONFIGURE_ARGS+=	--disable-utils
+.if !empty(PKG_BUILD_OPTIONS.poppler:Mpoppler-cms)
+CONFIGURE_ARGS+=	--enable-cms
+.else
 CONFIGURE_ARGS+=	--disable-cms
+.endif
 CONFIGURE_ARGS+=	--disable-poppler-cpp
 
 BUILD_DIRS=		goo fofi poppler glib
