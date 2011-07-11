@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/07 20:02:22 ryoon Exp $
 #
 
-DISTNAME=	nts-77
+DISTNAME=	nts-78
 CATEGORIES=	editors
 MASTER_SITES=	http://www.duke.edu/~dgraham/NTS/
 
