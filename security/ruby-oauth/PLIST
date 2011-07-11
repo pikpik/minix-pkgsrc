@@ -1,7 +1,7 @@
-@comment $NetBSD: PLIST,v 1.2 2010/08/14 02:55:24 obache Exp $
+@comment $NetBSD$
 bin/oauth${RUBY_VER}
-${GEM_HOME}/cache/oauth-${PKGVERSION}.gem
-${GEM_LIBDIR}/.gitignore
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/.gemtest
 ${GEM_LIBDIR}/Gemfile
 ${GEM_LIBDIR}/Gemfile.lock
 ${GEM_LIBDIR}/HISTORY
@@ -88,4 +88,4 @@ ${GEM_LIBDIR}/test/test_signature_base.rb
 ${GEM_LIBDIR}/test/test_signature_plain_text.rb
 ${GEM_LIBDIR}/test/test_token.rb
 ${GEM_LIBDIR}/test/test_typhoeus_request_proxy.rb
-${GEM_HOME}/specifications/oauth-${PKGVERSION}.gemspec
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
