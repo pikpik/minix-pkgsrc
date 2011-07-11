@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.520 2011/05/28 10:02:12 cheusov Exp $
+# $NetBSD: Makefile,v 1.521 2011/06/19 07:36:56 taca Exp $
 #
 
 COMMENT=	System utilities
@@ -453,6 +453,7 @@ SUBDIR+=	wtail
 SUBDIR+=	xapply
 SUBDIR+=	xbatt
 SUBDIR+=	xbattbar
+SUBDIR+=	xc3028l-firmware
 SUBDIR+=	xc5k-firmware
 SUBDIR+=	xcdroast
 SUBDIR+=	xdu
