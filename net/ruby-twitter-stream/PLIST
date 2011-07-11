@@ -8,7 +8,7 @@ ${GEM_LIBDIR}/README.markdown
 ${GEM_LIBDIR}/Rakefile
 ${GEM_LIBDIR}/VERSION
 ${GEM_LIBDIR}/examples/reader.rb
-${GEM_LIBDIR}/fixtures/twitter/basic_http.txt
+${GEM_LIBDIR}/fixtures/twitter/tweets.txt
 ${GEM_LIBDIR}/lib/twitter/json_stream.rb
 ${GEM_LIBDIR}/spec/spec_helper.rb
 ${GEM_LIBDIR}/spec/twitter/json_stream_spec.rb
