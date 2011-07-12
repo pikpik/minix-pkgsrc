@@ -1,10 +1,13 @@
---- gettext-tools/gnulib-lib/spawni.c.orig	Tue May 31 19:49:54 2011
-+++ gettext-tools/gnulib-lib/spawni.c	Tue May 31 19:50:36 2011
-@@ -224,9 +224,11 @@
+$NetBSD$
+
+--- gettext-tools/gnulib-lib/spawni.c.orig	Tue Mar  1 16:39:29 2011
++++ gettext-tools/gnulib-lib//spawni.c
+@@ -223,10 +223,12 @@ __spawni (pid_t *pid, const char *file,
+     }
  #endif
  
++#ifndef __minix
    /* Set the process group ID.  */
-+#ifndef _MINIX
    if ((flags & POSIX_SPAWN_SETPGROUP) != 0
        && setpgid (0, attrp->_pgrp) != 0)
      _exit (SPAWN_ERROR);
