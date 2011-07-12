@@ -387,7 +387,9 @@ ${PYSITELIB}/veusz/windows/icons/error_diamond.svg
 ${PYSITELIB}/veusz/windows/icons/error_fillhorz.svg
 ${PYSITELIB}/veusz/windows/icons/error_fillvert.svg
 ${PYSITELIB}/veusz/windows/icons/error_linehorz.svg
+${PYSITELIB}/veusz/windows/icons/error_linehorzbar.svg
 ${PYSITELIB}/veusz/windows/icons/error_linevert.svg
+${PYSITELIB}/veusz/windows/icons/error_linevertbar.svg
 ${PYSITELIB}/veusz/windows/icons/error_none.svg
 ${PYSITELIB}/veusz/windows/icons/kde-application-exit.svg
 ${PYSITELIB}/veusz/windows/icons/kde-dataset-new-veuszedit.svg
