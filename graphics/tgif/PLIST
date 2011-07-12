@@ -3,6 +3,7 @@ bin/tgif
 lib/X11/tgif/Copyright
 lib/X11/tgif/License
 lib/X11/tgif/eq4-2x-jpg.sym
+lib/X11/tgif/eq4-2x-nowin-jpg.sym
 lib/X11/tgif/eq4-2x.sym
 lib/X11/tgif/eq4-epstool.sym
 lib/X11/tgif/eq4-lyx-ps2epsi.sym
