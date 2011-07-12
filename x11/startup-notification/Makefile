@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.21 2008/12/17 13:03:32 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2009/11/08 18:59:56 jakllsch Exp $
 
-DISTNAME=		startup-notification-0.10
+DISTNAME=		startup-notification-0.12
 CATEGORIES=		x11
 MASTER_SITES=		http://www.freedesktop.org/software/startup-notification/releases/
 
