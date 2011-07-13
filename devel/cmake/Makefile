@@ -75,7 +75,7 @@ post-extract:
 .include "../../mk/bsd.pkg.mk"
 
 .if ${OPSYS} == "Minix"
-CFLAGS+=                -D_POSIX_SOURCE=1 -D_MINIX=1
-CXXFLAGS+=              -D_POSIX_SOURCE=1 -D_MINIX=1
+CFLAGS+=                -D_POSIX_SOURCE=1 -D_MINIX=1 -D_NETBSD_SOURCE=1
+CXXFLAGS+=              -D_POSIX_SOURCE=1 -D_MINIX=1 -D_NETBSD_SOURCE=1
 .endif
 
