@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2010/07/20 03:12:18 obache Exp $
+# $NetBSD: Makefile,v 1.3 2010/08/10 10:32:45 asau Exp $
 
 PKGNAME=	racket-5.0.1
+PKGREVISION=	1
 DISTNAME=	$(PKGNAME)-src-unix
 CATEGORIES=	lang
 MASTER_SITES_PLT=	http://download.racket-lang.org/installers/$(PKGVERSION_NOREV)/ \
@@ -30,6 +31,15 @@ MAKE_JOBS_SAFE=	no
 UNLIMIT_RESOURCES=	datasize
 
 REPLACE_SH=	collects/tests/framework/framework-test
+
+.for f in use-c-printf.rkt use-crypt.rkt use-esd.rkt use-magick.rkt use-sndfile.rkt use-tcl.rkt use-xmmsctrl.rkt use-xosd.rkt
+REPLACE_RACKET+=	collects/ffi/examples/$f
+.endfor
+
+REPLACE_INTERPRETER+=	racket
+REPLACE.racket.old=	.*racket
+REPLACE.racket.new=	${LOCALBASE}/bin/racket
+REPLACE_FILES.racket=	${REPLACE_RACKET}
 
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
