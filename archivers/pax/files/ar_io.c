@@ -347,16 +347,11 @@ ar_open(const char *name)
 			break;
 		}
 
-#ifdef HAVE_STRUCT_STAT_ST_BLKSIZE
 		if ((arsb.st_blksize > 0) && (arsb.st_blksize < MAXBLK) &&
 		    ((arsb.st_blksize % BLKMULT) == 0))
 			rdblksz = arsb.st_blksize;
 		else
 			rdblksz = DEVBLK;
-#else
-		rdblksz = DEVBLK;
-#endif
-
 		/*
 		 * For performance go for large reads when we can without harm
 		 */
@@ -1068,13 +1063,8 @@ ar_rdsync(void)
 		 * try to step over the bad part of the device.
 		 */
 		io_ok = 0;
-#ifdef HAVE_STRUCT_STAT_ST_BLKSIZE
-		if (((fsbz = arsb.st_blksize) <= 0) || (artyp != ISREG))	
+		if (((fsbz = arsb.st_blksize) <= 0) || (artyp != ISREG))
 			fsbz = BLKMULT;
-#else
-		fsbz = BLKMULT;
-#endif
-
 		if ((cpos = lseek(arfd, (off_t)0L, SEEK_CUR)) < 0)
 			break;
 		mpos = fsbz - (cpos % (off_t)fsbz);

@@ -22,7 +22,6 @@ AC_CHECK_HEADERS([sys/cdefs.h sys/ioctl.h sys/mman.h sys/mtio.h sys/param.h \
 	sys/resource.h sys/stat.h sys/tape.h sys/time.h sys/types.h sys/uio.h \
 	sys/wait.h])
 AC_CHECK_MEMBERS([struct stat.st_flags],,, [#include <sys/stat.h>])
-AC_CHECK_MEMBERS([struct stat.st_blksize], [:], [:], [ #include <sys/stat.h> ])
 AC_CHECK_DECLS([UF_SETTABLE, SF_SETTABLE])
 AH_BOTTOM([/* Define to 1 if the user- and root-changeable masks were detected */
 #if HAVE_STRUCT_STAT_ST_FLAGS && HAVE_DECL_UF_SETTABLE && HAVE_DECL_SF_SETTABLE

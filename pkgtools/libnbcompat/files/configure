@@ -686,8 +686,7 @@ CFLAGS
 LDFLAGS
 LIBS
 CPPFLAGS
-CPP
-CPPFLAGS'
+CPP'
 
 
 # Initialize some variables set by options.
@@ -6765,19 +6764,6 @@ fi
 
 fi
 
-
-ac_fn_c_check_member "$LINENO" "struct stat" "st_blksize" "ac_cv_member_struct_stat_st_blksize" " #include <sys/stat.h>
-"
-if test "x$ac_cv_member_struct_stat_st_blksize" = xyes; then :
-
-cat >>confdefs.h <<_ACEOF
-#define HAVE_STRUCT_STAT_ST_BLKSIZE 1
-_ACEOF
-
-:
-else
-  :
-fi
 
 ac_fn_c_check_member "$LINENO" "struct statfs" "f_flags" "ac_cv_member_struct_statfs_f_flags" " #include <sys/statfs.h>
 "

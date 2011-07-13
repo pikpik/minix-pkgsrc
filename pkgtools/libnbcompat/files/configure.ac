@@ -386,8 +386,6 @@ AC_CHECK_FUNCS([getpassphrase getpgrp memmove select])
 
 AC_CHECK_FUNC(getpgrp, [AC_FUNC_GETPGRP])
 
-AC_CHECK_MEMBERS([struct stat.st_blksize], [:], [:],
-	[ #include <sys/stat.h> ])
 AC_CHECK_MEMBERS([struct statfs.f_flags], [:], [:],
 	[ #include <sys/statfs.h> ])
 AC_CHECK_MEMBERS([struct statfs.f_fsize], [:], [:],

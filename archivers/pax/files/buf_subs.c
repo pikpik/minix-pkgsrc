@@ -725,10 +725,8 @@ rd_wrfile(ARCHD *arcn, int ofd, off_t *left)
 	if (ofd < 0)
 		sz = PAXPATHLEN+1;
 	else if (fstat(ofd, &sb) == 0) {
-#ifdef HAVE_STRUCT_STAT_ST_BLKSIZE
 		if (sb.st_blksize > 0)
 			sz = (int)sb.st_blksize;
-#endif
 	} else
 		syswarn(0, errno,
 		    "Unable to obtain block size for file %s", fnm);
@@ -816,12 +814,8 @@ cp_file(ARCHD *arcn, int fd1, int fd2)
 	 * check for holes in the source file. If none, we will use regular
 	 * write instead of file write.
 	 */
-#ifdef HAVE_STRUCT_STAT_ST_BLKSIZE
 	 if (((off_t)(arcn->sb.st_blocks * BLKMULT)) >= arcn->sb.st_size)
-	 	 ++no_hole;
-#else
-	++no_hole;
-#endif
+		++no_hole;
 
 	/*
 	 * by default, remember the previously obtained stat information
@@ -837,10 +831,8 @@ cp_file(ARCHD *arcn, int fd1, int fd2)
 	 * if the size is zero, use the default MINFBSZ
 	 */
 	if (fstat(fd2, &sb) == 0) {
-#ifdef HAVE_STRUCT_STAT_ST_BLKSIZE
 		if (sb.st_blksize > 0)
 			sz = sb.st_blksize;
-#endif
 	} else
 		syswarn(0, errno,
 		    "Unable to obtain block size for file %s", fnm);

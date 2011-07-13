@@ -260,11 +260,7 @@ __bt_open(const char *fname, int flags, mode_t mode, const BTREEINFO *openinfo,
 		 * Don't overflow the page offset type.
 		 */
 		if (b.psize == 0) {
-#ifdef HAVE_STRUCT_STAT_ST_BLKSIZE
 			b.psize = sb.st_blksize;
-#else
-			b.psize = 1024;
-#endif
 			if (b.psize < MINPSIZE)
 				b.psize = MINPSIZE;
 			if (b.psize > MAX_PAGE_OFFSET + 1)
