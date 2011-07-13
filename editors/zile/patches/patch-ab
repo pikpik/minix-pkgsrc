@@ -2,15 +2,6 @@ $NetBSD$
 
 --- lib/wchar.in.h.orig	Sun May  9 18:10:04 2010
 +++ lib/wchar.in.h
-@@ -30,7 +30,7 @@
- @PRAGMA_SYSTEM_HEADER@
- #endif
- 
--#if defined __need_mbstate_t || defined __need_wint_t || (defined __hpux && ((defined _INTTYPES_INCLUDED && !defined strtoimax) || defined _GL_JUST_INCLUDE_SYSTEM_WCHAR_H)) || defined _GL_ALREADY_INCLUDING_WCHAR_H
-+#if defined __need_mbstate_t || defined __need_wint_t || (defined __hpux && ((defined _INTTYPES_INCLUDED && !defined strtoimax) || defined _GL_JUST_INCLUDE_SYSTEM_WCHAR_H)) || defined _GL_ALREADY_INCLUDING_WCHAR_H || (defined __minix)
- /* Special invocation convention:
-    - Inside glibc and uClibc header files.
-    - On HP-UX 11.00 we have a sequence of nested includes
 @@ -59,6 +59,7 @@
     But avoid namespace pollution on glibc systems.  */
  #ifndef __GLIBC__
