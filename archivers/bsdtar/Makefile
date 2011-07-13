@@ -34,7 +34,7 @@ FILESDIR.bzip2?=	${.CURDIR}/../../archivers/bzip2/files
 FILESDIR.libarchive?=	${.CURDIR}/../../archivers/libarchive/files
 FILESDIR.zlib?=		${.CURDIR}/../../devel/zlib/files
 
-CONFIGURE_ARGS+=	--enable-bsdtar=static --disable-bsdcpio \
+CONFIGURE_ARGS+=	--enable-bsdtar=static --disable-cpio \
 			--disable-shared --without-xml2 --without-expat
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1

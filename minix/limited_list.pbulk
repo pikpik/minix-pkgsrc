@@ -1,4 +1,5 @@
 archivers/9e
+archivers/bsdtar
 archivers/bzip2
 archivers/gtar-base
 archivers/gtar-info
