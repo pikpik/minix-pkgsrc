@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.489 2011/06/19 14:19:51 taca Exp $
+# $NetBSD: Makefile,v 1.490 2011/06/19 14:50:37 taca Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -585,6 +585,7 @@ SUBDIR+=	tex-url-doc
 SUBDIR+=	tex-verbdef
 SUBDIR+=	tex-verbdef-doc
 SUBDIR+=	tex-version
+SUBDIR+=	tex-version-doc
 SUBDIR+=	tex-vertbars
 SUBDIR+=	tex-vruler
 SUBDIR+=	tex-vruler-doc
