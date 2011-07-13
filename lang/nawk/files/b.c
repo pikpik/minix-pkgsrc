@@ -720,6 +720,10 @@ Node *unary(Node *np)
  * to nelson beebe for the suggestion; let's see if it works everywhere.
  */
 
+#ifdef __minix
+#define HAS_ISBLANK
+#endif
+
 #ifndef HAS_ISBLANK
 
 int (isblank)(int c)
