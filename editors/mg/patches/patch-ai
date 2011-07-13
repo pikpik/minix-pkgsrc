@@ -2,28 +2,7 @@ $NetBSD$
 
 --- configure.orig	Fri Dec 12 08:40:04 2008
 +++ configure
-@@ -134,6 +134,20 @@ else
-     extraobjs="$extraobjs strlcat.o"
- fi
- 
-+note 'siginterrupt'
-+cat << EOF > testfile.c
-+#include <signal.h>
-+int main(void)
-+{siginterrupt(1, 1);return 0;}
-+EOF
-+if gcc -Wall testfile.c -o testfile 2>&3; then
-+    echo 'Found.'
-+else
-+    echo 'Not Found, adding.'
-+    add_inc HAVE_NOSIGINTERRUPT
-+    extraobjs="$extraobjs siginterrupt.o"
-+fi
-+
- note 'fgetln'
- cat << EOF > testfile.c
- #include <stdio.h>
-@@ -163,32 +177,6 @@ else
+@@ -163,32 +163,6 @@ else
      echo 'Fails.'
  fi
  
@@ -56,14 +35,3 @@ $NetBSD$
  note 'base and dirname'
  if gcc_defines "__GLIBC__" || gcc_defines "__CYGWIN__" ; then
      echo 'Not present, adding.'
-@@ -228,6 +216,10 @@ if uname -s | grep -q '^CYGWIN' ; then
-     extralibs="$extralibs -Wl,--enable-auto-import"
- fi
- 
-+if uname -s | grep -q '^Minix' ; then
-+    extraflags="$extraflags -D_MINIX -D_POSIX -I/usr/pkg/include -I/usr/pkg/include/ncurses"
-+    extralibs="$extralibs -L/usr/pkg/lib"
-+fi
- 
- rm testfile*
- 

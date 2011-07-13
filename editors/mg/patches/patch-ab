@@ -10,29 +10,3 @@ $NetBSD$
  
  
  #define	KBLOCK		8192	/* Kill grow.			 */
-@@ -58,6 +59,10 @@ extern size_t strlcpy(char *, const char *, size_t);
- extern size_t strlcat(char *, const char *, size_t);
- #endif
- 
-+#ifdef HAVE_NOSIGINTERRUPT
-+int siginterrupt(int sig, int flag);
-+#endif
-+
- /* not provided by glibc stdio.h */
- #ifdef HAVE_NOFGETLN
- extern char * fgetln(FILE *, size_t *);
-@@ -68,6 +73,14 @@ extern char * fgetln(FILE *, size_t *);
- extern long long strtonum(const char *, long long, long long, const char **);
- #endif
- 
-+#ifndef _POSIX_LOGIN_NAME_MAX
-+#define _POSIX_LOGIN_NAME_MAX (8)
-+#endif
-+
- #ifndef LOGIN_NAME_MAX
- #define LOGIN_NAME_MAX MAXLOGNAME
-+#endif
-+
-+#ifndef __progname
-+char *__progname;
- #endif
