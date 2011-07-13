@@ -3,6 +3,5 @@ $NetBSD$
 SHA1 (compiler-rt-r123836.tar.gz) = 5a04d74d60a30854e481b8a1b9286638e7d9e959
 RMD160 (compiler-rt-r123836.tar.gz) = e8b3392c416b2f3783a28ee1d8897eaae69b492c
 Size (compiler-rt-r123836.tar.gz) = 2337437 bytes
-SHA1 (patch-ab) = 8d412c72aadafd055c2d4f3fce330e6564a94b4e
 SHA1 (patch-ac) = 1794e565f54051c66f70094a529c7c13f22ec193
 SHA1 (patch-ad) = 6d306323d65a25b1a32b94ac0cbca77088c0022e
