@@ -1,7 +1,7 @@
 $NetBSD$
 
---- apps/speed.c.orig	2006-06-09 17:42:11.000000000 +0200
-+++ apps/speed.c	2007-07-31 17:52:43.000000000 +0200
+--- apps/speed.c.orig	Thu Jul  8 01:23:25 2010
++++ apps/speed.c
 @@ -108,12 +108,12 @@
  #include <signal.h>
  #endif
@@ -13,7 +13,7 @@ $NetBSD$
  # define TIMES
  #endif
 -#if !defined(_UNICOS) && !defined(__OpenBSD__) && !defined(sgi) && !defined(__FreeBSD__) && !(defined(__bsdi) || defined(__bsdi__)) && !defined(_AIX) && !defined(OPENSSL_SYS_MPE) && !defined(__NetBSD__) && !defined(OPENSSL_SYS_VXWORKS) /* FIXME */
-+#if !defined(_UNICOS) && !defined(__OpenBSD__) && !defined(sgi) && !defined(__FreeBSD__) && !(defined(__bsdi) || defined(__bsdi__)) && !defined(_AIX) && !defined(OPENSSL_SYS_MPE) && !defined(__NetBSD__) && !defined(OPENSSL_SYS_VXWORKS) && !defined(__DragonFly__) /* FIXME */
++#if !defined(_UNICOS) && !defined(__OpenBSD__) && !defined(sgi) && !defined(__FreeBSD__) && !(defined(__bsdi) || defined(__bsdi__)) && !defined(_AIX) && !defined(OPENSSL_SYS_MPE) && !defined(__NetBSD__) && !defined(OPENSSL_SYS_VXWORKS) && !defined(__DragonFly__) && !defined(__minix) /* FIXME */
  # define TIMEB
  #endif
  

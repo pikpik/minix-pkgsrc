@@ -1,9 +1,10 @@
 $NetBSD$
 
---- crypto/bn/bn_prime.pl.orig	2003-09-25 15:57:58.000000000 +0200
-+++ crypto/bn/bn_prime.pl	2007-07-31 17:53:39.000000000 +0200
+--- crypto/bn/bn_prime.pl.orig	Tue Sep 18 20:55:10 2007
++++ crypto/bn/bn_prime.pl
 @@ -1,6 +1,8 @@
- #!/usr/local/bin/perl
+-#!/usr/local/bin/perl
++#!/usr/pkg/bin/perl
  # bn_prime.pl
  
 +use POSIX;

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.shared.orig	2007-09-16 16:11:51.000000000 +0200
+--- Makefile.shared.orig	Wed Sep 17 15:56:40 2008
 +++ Makefile.shared
 @@ -273,6 +273,11 @@ link_o.alpha-osf1:
  	@ if ${DETECT_GNU_LD}; then \

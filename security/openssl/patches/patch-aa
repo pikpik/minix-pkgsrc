@@ -1,6 +1,6 @@
 $NetBSD: patch-aa,v 1.23 2010/02/26 03:15:13 taca Exp $
 
---- config.orig	2010-03-09 17:08:24.000000000 +0000
+--- config.orig	Tue Mar  9 17:08:24 2010
 +++ config
 @@ -49,6 +49,7 @@ done
  # First get uname entries that we use below
@@ -10,7 +10,7 @@ $NetBSD: patch-aa,v 1.23 2010/02/26 03:15:13 taca Exp $
  [ "$RELEASE" ] || RELEASE=`(uname -r) 2>/dev/null` || RELEASE="unknown"
  [ "$SYSTEM" ] || SYSTEM=`(uname -s) 2>/dev/null`  || SYSTEM="unknown"
  [ "$BUILD" ] || VERSION=`(uname -v) 2>/dev/null` || VERSION="unknown"
-@@ -154,6 +155,10 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${
+@@ -154,6 +155,10 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${MACHINE}" in
  	echo "mips4-sgi-irix64"; exit 0
  	;;
  
@@ -21,7 +21,7 @@ $NetBSD: patch-aa,v 1.23 2010/02/26 03:15:13 taca Exp $
      Linux:[2-9].*)
  	echo "${MACHINE}-whatever-linux2"; exit 0
  	;;
-@@ -210,12 +215,16 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${
+@@ -210,12 +215,16 @@ case "${SYSTEM}:${RELEASE}:${VERSION}:${MACHINE}" in
  	echo "${MACHINE}-whatever-freebsd"; exit 0
  	;;
  
@@ -60,12 +60,12 @@ $NetBSD: patch-aa,v 1.23 2010/02/26 03:15:13 taca Exp $
  			if [ -L /usr/lib/libc.so ]; then	# [Free|Net]BSD
  			    libc=/usr/lib/libc.so
  			else					# OpenBSD
-@@ -680,6 +694,8 @@ case "$GUESSOS" in
+@@ -679,6 +693,8 @@ case "$GUESSOS" in
+ 			*)	OUT="BSD-x86"; options="$options no-sse2" ;;
  			esac ;;
    *-*-*bsd*)		OUT="BSD-generic32" ;;
- 
-+  *-*-interix)		OUT="Interix" ;;
 +
++  *-*-interix)		OUT="Interix" ;;
+ 
    *-*-osf)		OUT="osf1-alpha-cc" ;;
    *-*-tru64)		OUT="tru64-alpha-cc" ;;
-   *-*-[Uu]nix[Ww]are7)

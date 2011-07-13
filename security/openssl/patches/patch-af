@@ -1,6 +1,6 @@
 $NetBSD: patch-af,v 1.23 2010/01/15 04:55:30 taca Exp $
 
---- Makefile.org.orig	2010-01-27 16:06:36.000000000 +0000
+--- Makefile.org.orig	Wed Jan 27 16:06:36 2010
 +++ Makefile.org
 @@ -28,6 +28,7 @@ INSTALLTOP=/usr/local/ssl
  

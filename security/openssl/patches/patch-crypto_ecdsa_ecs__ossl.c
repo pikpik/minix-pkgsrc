@@ -5,9 +5,9 @@ by Billy Bob Brumley and Nicola Tuveri, see:
   http://eprint.iacr.org/2011/232.pdf
 [Billy Bob Brumley and Nicola Tuveri]
 
---- crypto/ecdsa/ecs_ossl.c.orig	2009-12-01 11:32:16.000000000 -0600
-+++ crypto/ecdsa/ecs_ossl.c	2011-05-31 11:17:14.168169900 -0500
-@@ -144,6 +144,16 @@
+--- crypto/ecdsa/ecs_ossl.c.orig	Tue Dec  1 17:32:16 2009
++++ crypto/ecdsa/ecs_ossl.c
+@@ -144,6 +144,16 @@ static int ecdsa_sign_setup(EC_KEY *eckey, BN_CTX *ctx
  			}
  		while (BN_is_zero(k));
  
@@ -24,4 +24,3 @@ by Billy Bob Brumley and Nicola Tuveri, see:
  		/* compute r the x-coordinate of generator * k */
  		if (!EC_POINT_mul(group, tmp_point, k, NULL, NULL, ctx))
  		{
-
