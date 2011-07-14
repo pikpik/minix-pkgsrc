@@ -45,6 +45,7 @@ devel/libiberty
 devel/libidn
 devel/libtool-base
 devel/m4
+devel/nbpatch
 devel/ncurses
 devel/p5-enum
 devel/p5-Error
@@ -136,6 +137,8 @@ textproc/expat
 textproc/grep
 textproc/groff
 textproc/gsed
+textproc/nbsed
+textproc/rman
 textproc/wdiff
 textproc/xmlrpc-c
 time/jday
