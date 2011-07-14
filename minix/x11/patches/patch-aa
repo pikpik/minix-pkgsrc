@@ -1,6 +1,6 @@
 $NetBSD$
 
---- config/cf/minix3.cf.orig	Wed Aug 11 09:57:19 2010
+--- config/cf/minix3.cf.orig	Thu Jul 14 11:37:11 2011
 +++ config/cf/minix3.cf
 @@ -21,10 +21,6 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
  
@@ -26,3 +26,21 @@ $NetBSD$
  #endif
  
  #ifdef AcdAck
+@@ -63,7 +59,7 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
+ /* Defaults for Minix */
+ 
+ #define ConnectionFlags		-DMNX3_TCPCONN
+-#define StandardDefines		-D_MINIX -DMINIX3
++#define StandardDefines		-DMINIX3 -D_NETBSD_SOURCE -D_MINIX -D_POSIX_SOURCE -D_COMPAT_MINIX -D__minix
+ #define StandardIncludes
+ 
+ #define BuildIPv6		NO
+@@ -72,7 +68,7 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
+ #define HasStreams		NO
+ #define HasVFork		NO
+ #define HasNdbm			YES
+-#define	ExtraLibraries		
++#define	ExtraLibraries		-lcompat_minix -lminlib
+ #define ExtraLoadFlags		
+ #define NeedConstPrototypes	YES
+ #define NeedVarargsPrototypes	YES
