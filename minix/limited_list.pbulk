@@ -43,6 +43,7 @@ devel/ncurses
 devel/p5-enum
 devel/p5-Error
 devel/patch
+devel/pcre
 devel/pkg-config
 devel/pth
 devel/readline
