@@ -6,7 +6,7 @@
 
 MKCONF=mk.conf.minix
 if [ ! -f $MKCONF ]
-then	No $MKCONF. Please run me from pkgsrc/minix/.
+then	echo "No $MKCONF. Please run me from pkgsrc/minix/."
 	exit 1
 fi
 
