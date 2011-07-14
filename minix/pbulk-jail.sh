@@ -9,7 +9,9 @@ JAILROOT=/usr/pbulk-jail
 # Release script used to build the jailed system
 RELEASE=/usr/src/tools/release.sh
 PKGSRC=/usr/pkgsrc
+SEEDPACKAGES=$PKGSRC/packages/`uname -r`/`uname -p`/All/
 JAILPKGSRC=$JAILROOT/$PKGSRC
+JAILPKGINCACHE=$JAILROOT/usr/var/db/pkgin/cache/
 PBULK_SH=$PKGSRC/minix/pbulk.sh
 JAILPBULK_SH=$JAILROOT/$PBULK_SH
 PACKAGES="binutils gcc44 scmgit-base"
@@ -21,9 +23,12 @@ mychroot() {
 my_help() {
 	echo "Usage: "
 	echo " "
-	echo "  $0 --jail-make        Build $JAILROOT"
-	echo "  $0 --jail-makepkgsrc  make pkgsrc-create in $JAILROOT"
-	echo "  $0 --jail-CMD         sh pbulk.sh --CMD chroot in $JAILROOT"
+	echo "  $0 --jail-make    Build $JAILROOT"
+	echo "  $0 --jail-seed    add local packages to jail pkgin cache"
+	echo "  $0 --jail-pkgsrc  make pkgsrc-create/-update in jail"
+	echo "  $0 --jail-CMD     sh pbulk.sh --CMD chroot in $JAILROOT"
+	echo " "
+	echo "Options:"
 }
 
 makejail() {
@@ -33,9 +38,10 @@ makejail() {
 		exit 1
 	fi
 
-	# Execute jail creating script
+	# Execute jail creating script that builds a new minix
+	# in $JAILROOT from the latest git repository
 	cd `dirname $RELEASE`
-	echo sh `basename $RELEASE` -j$JAILROOT -p
+	sh `basename $RELEASE` -j$JAILROOT -p
 
 	# Check it worked
 	if [ ! -d $JAILROOT ]
@@ -46,21 +52,22 @@ makejail() {
 	exit 0
 }
 
+makejailseed() {
+	echo " * Copying $SEEDPACKAGES to $JAILPKGINCACHE"
+	mkdir -p $JAILPKGINCACHE || true
+	cp $SEEDPACKAGES/* $JAILPKGINCACHE
+}
+
 makejailpkgsrc() {
-	# Some guest preparation
+	# Some guest preparation necessary for networking to work
 	cp /etc/hosts /etc/resolv.conf $JAILROOT/etc/
-	(cd /dev ; tar cf - . ) | (cd $JAILROOT/dev ; tar xf -)
+	(cd /dev && tar cf - . ) | (cd $JAILROOT/dev ; tar xf -)
 
 	echo " * Installing packages $PACKAGES with pkgin"
 	mychroot "pkgin -y in $PACKAGES"
 
-	if [ -d $JAILPKGSRC ]
-	then	echo "Newly created jail with $JAILPKGSRC doesn't make sense."
-		exit 1
-	fi
-
-	echo " * Creating pkgsrc in $JAILROOT"
-	mychroot "cd /usr ; make pkgsrc-create"
+	echo " * Creating/updating pkgsrc in $JAILROOT"
+	mychroot "cd /usr ; make pkgsrc-create ; make pkgsrc-update"
 
 	if [ ! -d $JAILPKGSRC ]
 	then	echo "Creating $JAILPKGSRC failed."
@@ -83,7 +90,8 @@ jailcmd() {
 
 case $1 in
 	"--jail-make") makejail; break;;
-	"--jail-makepkgsrc") makejailpkgsrc; break;;
+	"--jail-pkgsrc") makejailpkgsrc; break;;
+	"--jail-seed") makejailseed; break;;
 	--jail-*) jailcmd $1; break;;
 	"--help") my_help; break;;
 	*) my_help; break;;

@@ -173,14 +173,10 @@ pbulksh_all() {
 	pbulksh_restore
 }
 
-echo 1 = "$1"
-
 if [ $1 = --jailed ]
 then	JAILED=1
 	shift
 fi
-
-echo 1 = "$1"
 
 case $1 in
 	"--bootstrap") pbulksh_bootstrap; break;;
