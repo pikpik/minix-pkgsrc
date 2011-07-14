@@ -87,6 +87,7 @@ lang/nawk
 lang/p2c
 lang/perl5
 lang/wsbasic
+math/bc
 math/mpfr
 math/units
 minix/clang
