@@ -12,6 +12,12 @@ set -e
 # Set output verbosity (0=quiet, 1=normal, 2=debug)
 PKG_DEBUG_LEVEL=2
 
+# This is set if we are running from a jail hierarchy.
+# If so, we don't have to be too careful with wiping out
+# directories; we are running in a throw-away, reproducible
+# environment.
+JAILED=0
+
 pbulksh_help() {
 	echo "Usage: "
 	echo "  $0 --bootstrap   Do the initial bootstrap"
@@ -27,6 +33,11 @@ pbulksh_help() {
 pbulksh_bootstrap() {
 
 	dirs="/usr/pbulk /usr/pbulk-packages /usr/tmp/pbulk-bootstrap /usr/tmp/pbulk-outer /usr/pbulk-logs /usr/pkgsrc/packages/$(uname -r)/"
+
+	if [ $JAILED = 1 ]
+	then	rm -rf $dirs
+	fi
+
 	for d in $dirs
 	do      if [ -d $d ]
 	        then    echo "$d exists."
@@ -161,6 +172,15 @@ pbulksh_all() {
 	pbulksh_build
 	pbulksh_restore
 }
+
+echo 1 = "$1"
+
+if [ $1 = --jailed ]
+then	JAILED=1
+	shift
+fi
+
+echo 1 = "$1"
 
 case $1 in
 	"--bootstrap") pbulksh_bootstrap; break;;
