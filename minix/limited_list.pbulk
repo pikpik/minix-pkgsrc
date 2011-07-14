@@ -59,6 +59,7 @@ devel/scmgit-base
 devel/subversion-base
 devel/topgit
 devel/zlib
+editors/ed
 editors/hexedit
 editors/mg
 editors/nano
