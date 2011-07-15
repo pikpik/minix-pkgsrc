@@ -3,8 +3,10 @@ $NetBSD$
 SHA1 (cmake-2.8.4.tar.gz) = 6c42699bd63fdfcc7743d4906e3208d051d7f19b
 RMD160 (cmake-2.8.4.tar.gz) = 8b92eb11391b07433e7fe02bbb80c3ebcaaf1893
 Size (cmake-2.8.4.tar.gz) = 5477628 bytes
+SHA1 (patch-CMakeLists.txt) = b29f59ac0475306cbb40200784cf176a63d03a04
 SHA1 (patch-aa) = c16ba8be422ec243995cd5d475324d469d08c37a
 SHA1 (patch-ab) = c3bb671d98e0d91e32e94f8d8b8203e647559543
 SHA1 (patch-ac) = 1f11e98d50127fae12286708215a90f118b2d2bc
 SHA1 (patch-ae) = d5c40a3aa39c8b09b3de0cb624b5b5a3be6b5126
 SHA1 (patch-af) = a8a86baf718d98a9d60e8bd917fde34616263024
+SHA1 (patch-bootstrap) = 2682218a8a30e34213cedfa04bb72360cbbb5c5e
