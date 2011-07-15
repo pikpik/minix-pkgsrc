@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.806 2011/07/11 11:44:05 obache Exp $
+# $NetBSD: Makefile,v 1.807 2011/07/14 05:02:07 jnemeth Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -562,6 +562,7 @@ SUBDIR+=	py-scgi
 SUBDIR+=	py-simpletal
 SUBDIR+=	py-swish-e
 SUBDIR+=	py-uwsgi
+SUBDIR+=	py-webcolors
 SUBDIR+=	py-webpy
 SUBDIR+=	qDecoder
 SUBDIR+=	raggle
