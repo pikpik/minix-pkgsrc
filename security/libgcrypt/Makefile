@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2011/04/22 13:42:47 obache Exp $
+# $NetBSD: Makefile,v 1.51 2011/07/13 21:21:52 adam Exp $
 
 DISTNAME=	libgcrypt-1.5.0
 CATEGORIES=	security
@@ -33,6 +33,7 @@ INFO_FILES=		yes # PLIST
     empty(MACHINE_PLATFORM:M*-*-hppa)
 CONFIGURE_ARGS+=	--disable-asm
 .endif
+CONFIGURE_ARGS+=	--disable-aesni-support
 
 .include "options.mk"
 
