@@ -40,7 +40,7 @@ $NetBSD$
  #define HasVFork		NO
  #define HasNdbm			YES
 -#define	ExtraLibraries		
-+#define	ExtraLibraries		-lcompat_minix -lminlib
++#define	ExtraLibraries		-lcompat_minix -lminlib -lcrypt
  #define ExtraLoadFlags		
  #define NeedConstPrototypes	YES
  #define NeedVarargsPrototypes	YES
