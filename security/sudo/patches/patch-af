@@ -7,9 +7,9 @@ $NetBSD: patch-af,v 1.26 2010/09/21 03:05:27 taca Exp $
   functions (HAVE_KRB5_*).
 * Remove setting sysconfdir to "/etc".
 
---- configure.in.orig	2011-05-16 17:38:07.000000000 +0000
+--- configure.in.orig	Mon May 16 17:38:07 2011
 +++ configure.in
-@@ -326,6 +326,18 @@ AC_ARG_WITH(csops, [AS_HELP_STRING([--wi
+@@ -326,6 +326,18 @@ AC_ARG_WITH(csops, [AS_HELP_STRING([--with-csops], [ad
  		;;
  esac])
  
@@ -46,7 +46,7 @@ $NetBSD: patch-af,v 1.26 2010/09/21 03:05:27 taca Exp $
      _LIBS="$LIBS"
      LIBS="${LIBS} ${SUDO_LIBS}"
      AC_CHECK_FUNCS(krb5_verify_user krb5_init_secure_context)
-@@ -2869,7 +2883,6 @@ test "$libexecdir" = '${exec_prefix}/lib
+@@ -2869,7 +2883,6 @@ test "$libexecdir" = '${exec_prefix}/libexec' && libex
  test "$includedir" = '${prefix}/include' && includedir='$(prefix)/include'
  test "$datarootdir" = '${prefix}/share' && datarootdir='$(prefix)/share'
  test "$docdir" = '${datarootdir}/doc/${PACKAGE_TARNAME}' && docdir='$(datarootdir)/doc/$(PACKAGE_TARNAME)'

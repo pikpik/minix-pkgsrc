@@ -2,7 +2,8 @@
 bin/sudo
 bin/sudoedit
 bin/sudoreplay
-libexec/sudo_noexec.so
+@comment Minix doesn't have .so
+@comment libexec/sudo_noexec.so
 man/man5/sudoers.5
 ${PLIST.ldap}man/man5/sudoers.ldap.5
 man/man8/sudo.8
