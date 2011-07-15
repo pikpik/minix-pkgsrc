@@ -46,7 +46,7 @@ $NetBSD$
  	BASIC_CFLAGS += -D__EXTENSIONS__ -D__sun__ -DHAVE_ALLOCA_H
  endif
  ifeq ($(uname_O),Cygwin)
-@@ -1192,6 +1185,20 @@ sysconfdir = etc
+@@ -1192,6 +1185,22 @@ sysconfdir = etc
  endif
  endif
  
@@ -57,17 +57,19 @@ $NetBSD$
 +	NO_NSEC = YesPlease
 +	NEEDS_LIBGEN =
 +	NEEDS_CRYPTO_WITH_SSL = YesPlease
++	NEEDS_IDN_WITH_CURL = YesPlease
 +	NEEDS_SSL_WITH_CURL = YesPlease
 +	NEEDS_RESOLV = 
 +	NO_HSTRERROR = YesPlease
 +	NO_MMAP = YesPlease
-+	NO_CURL = 
++	NO_CURL =
++	NO_EXPAT = 
 +endif
 +
  ifdef CHECK_HEADER_DEPENDENCIES
  COMPUTE_HEADER_DEPENDENCIES =
  USE_COMPUTED_HEADER_DEPENDENCIES =
-@@ -1261,6 +1268,13 @@ else
+@@ -1261,6 +1270,16 @@ else
  	else
  		CURL_LIBCURL = -lcurl
  	endif
@@ -77,11 +79,14 @@ $NetBSD$
 +	ifdef NEEDS_CRYPTO_WITH_SSL
 +		CURL_LIBCURL += -lcrypto
 +	endif
++	ifdef NEEDS_IDN_WITH_CURL
++		CURL_LIBCURL += -lidn
++	endif
 +
  	REMOTE_CURL_PRIMARY = git-remote-http$X
  	REMOTE_CURL_ALIASES = git-remote-https$X git-remote-ftp$X git-remote-ftps$X
  	REMOTE_CURL_NAMES = $(REMOTE_CURL_PRIMARY) $(REMOTE_CURL_ALIASES)
-@@ -1297,7 +1311,7 @@ ifndef NO_OPENSSL
+@@ -1297,7 +1316,7 @@ ifndef NO_OPENSSL
  		OPENSSL_LINK =
  	endif
  	ifdef NEEDS_CRYPTO_WITH_SSL
@@ -90,7 +95,7 @@ $NetBSD$
  	endif
  else
  	BASIC_CFLAGS += -DNO_OPENSSL
-@@ -1638,8 +1652,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(DEFAULT_PAGER_C
+@@ -1638,8 +1657,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(DEFAULT_PAGER_C
  BASIC_CFLAGS += -DDEFAULT_PAGER='$(DEFAULT_PAGER_CQ_SQ)'
  endif
  
