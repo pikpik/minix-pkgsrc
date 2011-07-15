@@ -64,6 +64,7 @@ makejailpkgsrc() {
 	(cd /dev && tar cf - . ) | (cd $JAILROOT/dev ; tar xf -)
 
 	echo " * Installing packages $PACKAGES with pkgin"
+	mychroot "pkgin update"
 	mychroot "pkgin -y in $PACKAGES"
 
 	echo " * Creating/updating pkgsrc in $JAILROOT"
@@ -73,6 +74,10 @@ makejailpkgsrc() {
 	then	echo "Creating $JAILPKGSRC failed."
 		exit 1
 	fi
+
+	# Fix GCC headers
+	mychroot "cd /usr/src && make gnu-includes"
+
 	exit 0
 }
 
