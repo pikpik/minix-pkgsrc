@@ -9,6 +9,4 @@ SHA1 (patch-ae) = 52f826d292869be44886881c48aa7707a4af2df3
 SHA1 (patch-ai) = e7b981f07d4691bbd63bfa80b34b3e1c050c3ad2
 SHA1 (patch-aj) = e3ca062349eb7c50cf3d3dc1370744987a0f3bde
 SHA1 (patch-ak) = 2d0528260b203965e5237f5ca7f9464215283f5c
-SHA1 (patch-minix_cflags) = 0ce24b0c6f51948c0d01f32c521b72ce873600b5
-SHA1 (patch-minix_girstring) = 8d198c0cd3ba9e7a743101922c4c63923ac6b6eb
 SHA1 (patch-minix_select) = 0ded7f5c6d72414ffe2c4b16e9c1ffafab080e2f
