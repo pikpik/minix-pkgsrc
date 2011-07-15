@@ -24,6 +24,10 @@ CONFIGURE_ARGS+=	--with-installbuilddir=${PREFIX}/libexec/apr
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	--disable-dso --disable-ipv6 --without-pic
+
+# Force SysV IPC shmget()
+CONFIGURE_ENV+=        ac_cv_func_mmap=no
+CONFIGURE_ENV+=        ac_cv_func_munmap=no
 .endif
 
 CONFIGURE_ENV+=		LIBS=${LIBS:M*:Q}
