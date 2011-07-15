@@ -9,12 +9,12 @@ JAILROOT=/usr/pbulk-jail
 # Release script used to build the jailed system
 RELEASE=/usr/src/tools/release.sh
 PKGSRC=/usr/pkgsrc
-SEEDPACKAGES=$PKGSRC/packages/`uname -r`/`uname -p`/All/
 JAILPKGSRC=$JAILROOT/$PKGSRC
 JAILPKGINCACHE=$JAILROOT/usr/var/db/pkgin/cache/
 PBULK_SH=$PKGSRC/minix/pbulk.sh
+SEEDPACKAGES=$PKGSRC/minix/seedpackages/
 JAILPBULK_SH=$JAILROOT/$PBULK_SH
-PACKAGES="binutils gcc44 scmgit-base"
+PACKAGES="binutils gcc44 scmgit-base openssh"
 # How to execute commands there
 mychroot() {
 	chroot $JAILROOT "/bin/sh -c '$1'"
@@ -23,12 +23,16 @@ mychroot() {
 my_help() {
 	echo "Usage: "
 	echo " "
+	echo "Jail preparation:"
 	echo "  $0 --jail-make    Build $JAILROOT"
-	echo "  $0 --jail-seed    add local packages to jail pkgin cache"
 	echo "  $0 --jail-pkgsrc  make pkgsrc-create/-update in jail"
+	echo " "
+	echo "To run pbulk.sh actions within the jail:"
 	echo "  $0 --jail-CMD     sh pbulk.sh --CMD chroot in $JAILROOT"
 	echo " "
-	echo "Options:"
+	echo "Wipe current jail, if any, build a new jail,"
+	echo "and run a full bulk build in it:"
+	echo "  $0 --all          wipe current jail, run -make, -pkgsrc, --jail-all"
 }
 
 makejail() {
@@ -49,13 +53,16 @@ makejail() {
 		exit 1
 	fi
 
-	exit 0
+	return 0
 }
 
 makejailseed() {
-	echo " * Copying $SEEDPACKAGES to $JAILPKGINCACHE"
-	mkdir -p $JAILPKGINCACHE || true
-	cp $SEEDPACKAGES/* $JAILPKGINCACHE
+	if [ -d $SEEDPACKAGES ]
+	then	echo " * Copying $SEEDPACKAGES to $JAILPKGINCACHE"
+		mkdir -p $JAILPKGINCACHE || true
+		cp $SEEDPACKAGES/* $JAILPKGINCACHE
+	else	echo " * $SEEDPACKAGES not found, not seeding"
+	fi
 }
 
 makejailpkgsrc() {
@@ -67,8 +74,11 @@ makejailpkgsrc() {
 	mychroot "pkgin update"
 	mychroot "pkgin -y in $PACKAGES"
 
-	echo " * Creating/updating pkgsrc in $JAILROOT"
-	mychroot "cd /usr ; make pkgsrc-create ; make pkgsrc-update"
+	echo " * Making pkgsrc in jail"
+	mychroot "cd /usr && make pkgsrc-create" || true
+
+	echo " * Running pkgsrc-update"
+	mychroot "cd /usr && make pkgsrc-update"
 
 	if [ ! -d $JAILPKGSRC ]
 	then	echo "Creating $JAILPKGSRC failed."
@@ -78,7 +88,7 @@ makejailpkgsrc() {
 	# Fix GCC headers
 	mychroot "cd /usr/src && make gnu-includes"
 
-	exit 0
+	return 0
 }
 
 jailcmd() {
@@ -90,14 +100,34 @@ jailcmd() {
 
 	subcmd=`echo $1 | sed 's/--jail-//'`
 	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --$subcmd"
-	exit 0
+	return 0
+}
+
+jailall() {
+	LOGFILE=jail.log
+	echo "Redirecting output to $LOGFILE"
+	set -x
+	exec >$LOGFILE 2>&1
+	echo " * Wiping current jail."
+	rm -rf $JAILROOT
+	echo " * Building jail."
+	makejail
+	echo " * Seeding packages."
+	makejailseed
+	echo " * Building pkgsrc in jail."
+	makejailpkgsrc
+	echo " * Running bulk build."
+	jailcmd --jail-all
+	return 0
 }
 
 case $1 in
 	"--jail-make") makejail; break;;
 	"--jail-pkgsrc") makejailpkgsrc; break;;
-	"--jail-seed") makejailseed; break;;
+	"--all") jailall; break;;
 	--jail-*) jailcmd $1; break;;
 	"--help") my_help; break;;
 	*) my_help; break;;
 esac
+
+exit 0
