@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.230 2011/01/19 13:05:39 jym Exp $
+# $NetBSD: replace.mk,v 1.231 2011/04/08 23:06:51 tez Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -664,7 +664,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.pax=
 TOOLS_DEPENDS.pax?=		pax>=20040802:../../archivers/pax
 TOOLS_CREATE+=			pax
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.pax=pax
-TOOLS_PATH.pax=			${TOOLS_PREFIX.pax}/bin/pax
+TOOLS_PATH.pax=			${TOOLS_PREFIX.pax}/bin/${NBPAX_PROGRAM_PREFIX}pax
 .  endif
 .endif
 
