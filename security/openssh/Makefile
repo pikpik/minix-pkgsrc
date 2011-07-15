@@ -71,8 +71,10 @@ PKG_HOME.${OPENSSH_USER}=	${OPENSSH_CHROOT}
 
 .endif
 .if ${OPSYS} == "Minix"
-CPPFLAGS+=	-DMISSING_NFDBITS -DMISSING_HOWMANY -DSETEUID_BREAKS_SETUID
+CPPFLAGS+=	-DSETEUID_BREAKS_SETUID -D_MINIX_COMPAT
 CONFIGURE_ARGS+=	--disable-utmpx
+LIBS+=			-lcrypt -lcompat_minix
+CONFIGURE_ENV+=		ac_cv_func_mmap=no
 .endif
 
 SSH_PID_DIR=		${VARBASE}/run	# default directory for PID files
