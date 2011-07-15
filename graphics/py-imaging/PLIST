@@ -170,6 +170,7 @@ ${PYSITELIB}/PIL/MspImagePlugin.pyo
 ${PYSITELIB}/PIL/OleFileIO.py
 ${PYSITELIB}/PIL/OleFileIO.pyc
 ${PYSITELIB}/PIL/OleFileIO.pyo
+${PLIST.eggfile}${PYSITELIB}/PIL/${EGG_FILE}
 ${PYSITELIB}/PIL/PSDraw.py
 ${PYSITELIB}/PIL/PSDraw.pyc
 ${PYSITELIB}/PIL/PSDraw.pyo
