@@ -7,6 +7,8 @@ archivers/gtar
 archivers/gzip
 archivers/libarchive
 archivers/libzip
+archivers/lzo
+archivers/lzop
 archivers/nomarch
 archivers/pax
 archivers/unzip
@@ -96,6 +98,7 @@ minix/x11
 misc/ascii
 misc/cowsay
 misc/figlet
+net/fetch
 net/libfetch
 net/rsync
 pkgtools/bootstrap-mk-files
@@ -122,6 +125,7 @@ security/openssh
 security/openssl
 security/p5-Digest
 security/p5-Digest-SHA1
+security/pscan
 security/rats
 security/sudo
 shells/bash
@@ -134,6 +138,7 @@ sysutils/mdf2iso
 sysutils/mktemp
 sysutils/tree
 sysutils/wtail
+textproc/antiword
 textproc/catdoc
 textproc/expat
 textproc/grep
@@ -141,8 +146,10 @@ textproc/groff
 textproc/gsed
 textproc/nbsed
 textproc/rman
+textproc/robodoc
 textproc/wdiff
 textproc/xmlrpc-c
+time/cal
 time/jday
 wm/fluxbox
 www/curl
