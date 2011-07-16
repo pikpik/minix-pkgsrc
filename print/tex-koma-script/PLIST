@@ -185,6 +185,7 @@ share/texmf-dist/tex/latex/koma-script/scrbook.cls
 share/texmf-dist/tex/latex/koma-script/scrdate.sty
 share/texmf-dist/tex/latex/koma-script/scrdoc.cls
 share/texmf-dist/tex/latex/koma-script/scrextend.sty
+share/texmf-dist/tex/latex/koma-script/scrfontsizes.sty
 share/texmf-dist/tex/latex/koma-script/scrhack.sty
 share/texmf-dist/tex/latex/koma-script/scrjura.sty
 share/texmf-dist/tex/latex/koma-script/scrkbase.sty
