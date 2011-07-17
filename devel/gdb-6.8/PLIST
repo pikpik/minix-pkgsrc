@@ -1,0 +1,22 @@
+@comment $NetBSD$
+bin/gdb
+include/${PKGNAME}/ansidecl.h
+include/${PKGNAME}/bfd.h
+include/${PKGNAME}/bfdlink.h
+include/${PKGNAME}/dis-asm.h
+include/${PKGNAME}/symcat.h
+info/annotate.info
+info/gdb.info
+info/gdb.info-1
+info/gdb.info-2
+info/gdb.info-3
+info/gdb.info-4
+info/gdbint.info
+info/gdbint.info-1
+info/gdbint.info-2
+info/stabs.info
+info/standards.info
+lib/${PKGNAME}/libbfd.la
+lib/${PKGNAME}/libiberty.a
+lib/${PKGNAME}/libo${LOWER_VENDOR}odes.la
+man/man1/gdb.1

@@ -1,0 +1,21 @@
+$NetBSD$
+
+SHA1 (gdb-6.8.tar.bz2) = ba1394d59dd84a1dd3a83322bd82c799596f0bcf
+RMD160 (gdb-6.8.tar.bz2) = 23fc9442290b6383ce8f943ef1eb117fa06e79fb
+Size (gdb-6.8.tar.bz2) = 15581509 bytes
+SHA1 (patch-aa) = edebcee1bc3d5c8a5a5a086e3d9e5d2606d85b46
+SHA1 (patch-ab) = 7b99d5bbafd4f4f449c940a139470a94d5d86916
+SHA1 (patch-ac) = b671c10de064362ca8c09f9522c35e9baa1e2897
+SHA1 (patch-ad) = dc2c77fb9d7722c7d661648e8e1338eb146a0947
+SHA1 (patch-ae) = f7dea9b266208ac00d7e35d646be0d61a7d3f47e
+SHA1 (patch-af) = 5454d8c04480b1e8ed6e0e883cd232dc64b8d8e6
+SHA1 (patch-ag) = af7d2405cf78b0f2db31e32a34dc92195e4e0060
+SHA1 (patch-ah) = c8bc8e2d816c6a072ab7b313deadf7e3740bfdc7
+SHA1 (patch-ai) = 7e9ffcc5cf42a875cc7043564d7d7a9b74b1941f
+SHA1 (patch-aj) = 11ccbd26a96d07408c8edc132217ea5c74436dba
+SHA1 (patch-ak) = f904054e806d939b0e18ad7659af127d9f6e4241
+SHA1 (patch-al) = d93557bd968f9ef9ec6facb36f769129a3a9d3fe
+SHA1 (patch-am) = 93041fab9e731e385577ed1ba20d7e749e7162ef
+SHA1 (patch-an) = 742666c7a5b0ecfebed7cd9c4136de2f2c08f285
+SHA1 (patch-ao) = e0dcb4396a2a1f8cdef072806461fd164f5bab18
+SHA1 (patch-ap) = 258dc2a6785e1a3903229e652fec7f20e27e1df9

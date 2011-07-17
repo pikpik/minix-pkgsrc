@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- bfd/config.bfd.orig	Thu Feb 14 15:20:24 2008
++++ bfd/config.bfd
+@@ -661,6 +661,9 @@ case "${targ}" in
+   i[3-7]86-none-*)
+     targ_defvec=i386coff_vec
+     ;;
++  i[3-7]86-*-minix)
++    targ_defvec=bfd_elf32_i386_minix_vec
++    ;;
+   i[3-7]86-*-aout* | i[3-7]86*-*-vsta*)
+     targ_defvec=i386aout_vec
+     ;;

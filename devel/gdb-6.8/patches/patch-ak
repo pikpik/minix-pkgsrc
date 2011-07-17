@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- gdb/eval.c.orig	Mon Feb  4 00:23:04 2008
++++ gdb/eval.c
+@@ -1641,8 +1641,8 @@ evaluate_subexp_standard (struct type *expect_type,
+ 
+     multi_f77_subscript:
+       {
+-	int subscript_array[MAX_FORTRAN_DIMS];
+-	int array_size_array[MAX_FORTRAN_DIMS];
++	int subscript_array[MAX_FORTRAN_DIMS] = {0};
++	int array_size_array[MAX_FORTRAN_DIMS] = {0};
+ 	int ndimensions = 1, i;
+ 	struct type *tmp_type;
+ 	int offset_item;	/* The array offset where the item lives */

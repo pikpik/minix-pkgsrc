@@ -1,0 +1,36 @@
+$NetBSD$
+
+--- bfd/configure.orig	Thu Feb 14 15:20:25 2008
++++ bfd/configure
+@@ -19058,6 +19058,7 @@ do
+     bfd_elf32_i386_dragonfly_vec)
+ 				tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
+     bfd_elf32_i386_freebsd_vec)	tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
++    bfd_elf32_i386_dragonfly_vec) tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
+     bfd_elf32_i386_vxworks_vec)	tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
+     bfd_elf32_i386_vec)		tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
+     bfd_elf32_i860_little_vec)	tb="$tb elf32-i860.lo elf32.lo $elf" ;;
+@@ -19189,10 +19190,12 @@ do
+     x86_64coff_vec)		tb="$tb coff-x86_64.lo cofflink.lo"; target_size=64 ;;
+     i386dynix_vec)		tb="$tb i386dynix.lo aout32.lo" ;;
+     i386freebsd_vec)		tb="$tb i386freebsd.lo aout32.lo" ;;
++    i386dragonfly_vec)		tb="$tb i386freebsd.lo aout32.lo" ;;
+     i386linux_vec)		tb="$tb i386linux.lo aout32.lo" ;;
+     i386lynx_aout_vec)		tb="$tb i386lynx.lo lynx-core.lo aout32.lo" ;;
+     i386lynx_coff_vec)		tb="$tb cf-i386lynx.lo cofflink.lo lynx-core.lo" ;;
+     i386mach3_vec)		tb="$tb i386mach3.lo aout32.lo" ;;
++    bfd_elf32_i386_minix_vec)	tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
+     i386msdos_vec)		tb="$tb i386msdos.lo" ;;
+     i386netbsd_vec)		tb="$tb i386netbsd.lo aout32.lo" ;;
+     i386os9k_vec)		tb="$tb i386os9k.lo aout32.lo" ;;
+@@ -21003,6 +21006,10 @@ do
+ _ACEOF
+ cat >>$CONFIG_STATUS <<\_ACEOF
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
+     ac_cs_recheck=: ;;
+   --version | --vers* | -V )
+     echo "$ac_cs_version"; exit 0 ;;

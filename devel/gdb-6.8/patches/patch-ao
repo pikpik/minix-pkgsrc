@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- gdb/osabi.c.orig	Tue Jan  1 22:53:12 2008
++++ gdb/osabi.c
+@@ -55,6 +55,7 @@ static const char * const gdb_osabi_names[] =
+   "GNU/Hurd",
+   "Solaris",
+   "OSF/1",
++  "MINIX",
+   "GNU/Linux",
+   "FreeBSD a.out",
+   "FreeBSD ELF",
