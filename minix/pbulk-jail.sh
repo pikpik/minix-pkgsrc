@@ -10,11 +10,13 @@ JAILROOT=/usr/pbulk-jail
 RELEASE=/usr/src/tools/release.sh
 PKGSRC=/usr/pkgsrc
 JAILPKGSRC=$JAILROOT/$PKGSRC
-JAILPKGINCACHE=$JAILROOT/usr/var/db/pkgin/cache/
+PKGINCACHE=/usr/var/db/pkgin/cache/
+JAILPKGINCACHE=$JAILROOT/$PKGINCACHE
 PBULK_SH=$PKGSRC/minix/pbulk.sh
 SEEDPACKAGES=$PKGSRC/minix/seedpackages/
 JAILPBULK_SH=$JAILROOT/$PBULK_SH
-PACKAGES="binutils gcc44 scmgit-base openssh"
+PACKAGEURL="ftp://ftp.minix3.org/pub/minix/packages/`uname -r`/`uname -m`/All/"
+PACKAGES="binutils gcc44-4.4.5nb3 scmgit-base"
 # How to execute commands there
 mychroot() {
 	chroot $JAILROOT "/bin/sh -c '$1'"
@@ -70,9 +72,11 @@ makejailpkgsrc() {
 	cp /etc/hosts /etc/resolv.conf $JAILROOT/etc/
 	(cd /dev && tar cf - . ) | (cd $JAILROOT/dev ; tar xf -)
 
-	echo " * Installing packages $PACKAGES with pkgin"
-	mychroot "pkgin update"
-	mychroot "pkgin -y in $PACKAGES"
+	echo " * Installing packages $PACKAGES from $PACKAGEURL"
+	for p in $PACKAGES
+	do	echo $p ...
+		pkg_add -P $JAILROOT $PACKAGEURL/$p
+	done
 
 	echo " * Making pkgsrc in jail"
 	mychroot "cd /usr && make pkgsrc-create" || true
@@ -105,9 +109,10 @@ jailcmd() {
 
 jailall() {
 	LOGFILE=jail.log
+(
 	echo "Redirecting output to $LOGFILE"
+	exec 2>&1
 	set -x
-	exec >$LOGFILE 2>&1
 	echo " * Wiping current jail."
 	rm -rf $JAILROOT
 	echo " * Building jail."
@@ -118,6 +123,7 @@ jailall() {
 	makejailpkgsrc
 	echo " * Running bulk build."
 	jailcmd --jail-all
+) | tee $LOGFILE
 	return 0
 }
 
