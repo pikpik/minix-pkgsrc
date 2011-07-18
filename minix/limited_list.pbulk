@@ -90,6 +90,7 @@ lang/lua
 lang/nawk
 lang/p2c
 lang/perl5
+lang/tcl
 lang/wsbasic
 math/bc
 math/mpfr
