@@ -20,3 +20,8 @@ CONFLICTS+=  	mg2a-[0-9]*
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
+
+# Drop -lcompat_minix to avoid symbol size change linker error 
+.if ${OPSYS} == "Minix"
+LDFLAGS:= ${LDFLAGS:S/-lcompat_minix//g}
+.endif
