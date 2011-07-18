@@ -11,13 +11,3 @@ $NetBSD$
  flex_LDADD = $(LDADD)
  DEFAULT_INCLUDES = -I. -I$(srcdir) -I.
  depcomp = $(SHELL) $(top_srcdir)/depcomp
-@@ -274,8 +274,7 @@ ACLOCAL_AMFLAGS = -I m4
- m4 = @M4@
- indent = @INDENT@
- lib_LIBRARIES = \
--	libfl.a \
--	libfl_pic.a
-+	libfl.a
- 
- flex_SOURCES = \
- 	ccl.c \

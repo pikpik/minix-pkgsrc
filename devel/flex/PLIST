@@ -4,6 +4,7 @@ bin/flex++
 include/FlexLexer.h
 info/flex.info
 lib/libfl.a
+lib/libfl_pic.a
 man/man1/flex.1
 share/locale/ca/LC_MESSAGES/flex.mo
 share/locale/da/LC_MESSAGES/flex.mo
