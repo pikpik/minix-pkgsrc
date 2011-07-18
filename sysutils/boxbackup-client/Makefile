@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/02/12 14:16:57 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2010/11/02 21:14:23 shattered Exp $
 #
 
 DISTNAME=	boxbackup-0.10
@@ -32,4 +32,5 @@ do-install:
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
+#.include "../../devel/readline/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
