@@ -30,6 +30,10 @@
  * behaviour
  */
 
+#ifdef __minix
+#define NO_MMAP
+#endif
+
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -65,7 +69,7 @@
 /* Input-file-with-indexable-lines abstract type */
 
 static off_t	i_size;		/* size of the input file */
-static char	*i_womp;	/* plan a buffer for entire file */
+static char	*i_womp = NULL;	/* plan a buffer for entire file */
 static char	**i_ptr;	/* pointers to lines in i_womp */
 static char	empty_line[] = { '\0' };
 
@@ -88,6 +92,7 @@ static void	plan_b(const char *);
 void
 re_input(void)
 {
+#ifndef NO_MMAP
 	if (using_plan_a) {
 		i_size = 0;
 		free(i_ptr);
@@ -96,7 +101,9 @@ re_input(void)
 			munmap(i_womp, i_size);
 			i_womp = NULL;
 		}
-	} else {
+	} else
+#endif
+	{
 		using_plan_a = true;	/* maybe the next one is smaller */
 		close(tifd);
 		tifd = -1;
@@ -113,7 +120,9 @@ re_input(void)
 void
 scan_input(const char *filename)
 {
+#ifndef NO_MMAP
 	if (!plan_a(filename))
+#endif
 		plan_b(filename);
 	if (verbose) {
 		say("Patching file %s using Plan %s...\n", filename,
@@ -121,6 +130,7 @@ scan_input(const char *filename)
 	}
 }
 
+#ifndef NO_MMAP
 static bool
 reallocate_lines(size_t *lines_allocated)
 {
@@ -141,9 +151,11 @@ reallocate_lines(size_t *lines_allocated)
 	i_ptr = p;
 	return true;
 }
+#endif
 
 /* Try keeping everything in memory. */
 
+#ifndef NO_MMAP
 static bool
 plan_a(const char *filename)
 {
@@ -362,6 +374,7 @@ plan_a(const char *filename)
 	}
 	return true;		/* plan a will work */
 }
+#endif
 
 /* Keep (virtually) nothing in memory. */
 
