@@ -16,3 +16,4 @@ SHA1 (patch-ak) = 3706fd3a34c9cc2e061009d15037e18fbbe5a8a3
 SHA1 (patch-al) = 3346f581c354cd7562a7b9588fe9cbd85cc35c06
 SHA1 (patch-am) = f13f848bf5708e7af6d3723182ba8e0d7010b3f0
 SHA1 (patch-an) = bb61b7f5bfa0f04580e40ff714be573e49747c3b
+SHA1 (patch-lib_Support_Unix_Unix.h) = e12949848c4e32928a4b992b384abdb7b46f5443
