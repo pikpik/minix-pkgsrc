@@ -36,6 +36,7 @@ devel/cscope
 devel/diffutils
 devel/exctags
 devel/flex
+devel/gdb-6.8
 devel/gettext-lib
 devel/gettext-tools
 devel/gindent
