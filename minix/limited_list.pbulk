@@ -1,6 +1,7 @@
 archivers/9e
 archivers/bsdtar
 archivers/bzip2
+archivers/gcpio
 archivers/gtar-base
 archivers/gtar-info
 archivers/gtar
@@ -144,6 +145,7 @@ sysutils/tree
 sysutils/wtail
 textproc/antiword
 textproc/catdoc
+textproc/diffstat
 textproc/expat
 textproc/grep
 textproc/groff
