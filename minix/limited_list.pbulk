@@ -55,6 +55,7 @@ devel/ncurses
 devel/p5-enum
 devel/p5-Error
 devel/patch
+devel/patchutils
 devel/pcre
 devel/pkg-config
 devel/pth
