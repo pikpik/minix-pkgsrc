@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1.1.1 2011/02/11 16:48:52 drochner Exp $
+# $NetBSD: options.mk,v 1.2 2011/03/02 10:14:31 drochner Exp $
 
 
 # xmlada is built-in (not optional) due to gprbuild dependency
@@ -18,7 +18,7 @@ PKG_SUGGESTED_OPTIONS=	ssl
 
 CONFIGURE_ARGS+=	GCC=gnatgcc
 CONFIGURE_ARGS+=	PROCESSORS=1
-CONFIGURE_ARGS+=	PYTHON=python2.6
+CONFIGURE_ARGS+=	PYTHON=python${PYVERSSUFFIX}
 DOTBUILD=		release
 
 # The system libgcc is from version 4.1 which doesn't include the symbol
