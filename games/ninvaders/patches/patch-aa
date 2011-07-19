@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.orig	Thu May  8 19:19:50 2003
-+++ Makefile
-@@ -1,10 +1,9 @@
+--- Makefile.orig	2003-05-08 12:19:50.000000000 -0700
++++ Makefile	2009-04-01 13:22:43.000000000 -0700
+@@ -1,6 +1,4 @@
 -CC=gcc
 -CFLAGS=-O3 -Wall
 -LIBS=-lncurses
@@ -10,12 +10,7 @@ $NetBSD$
  
  CFILES=globals.c view.c aliens.c ufo.c player.c nInvaders.c
  HFILES=globals.h view.h aliens.h ufo.h player.h nInvaders.h
- OFILES=globals.o view.o aliens.o ufo.o player.o nInvaders.o
-+CFLAGS=$(CPPFLAGS)
- all:		nInvaders
- 
- nInvaders: 	$(OFILES) $(HFILES)
-@@ -14,3 +13,6 @@ nInvaders: 	$(OFILES) $(HFILES)
+@@ -14,3 +12,6 @@ nInvaders: 	$(OFILES) $(HFILES)
  		$(CC) -c  -I. $(CFLAGS) $(OPTIONS) $<
  clean:
  		rm -f nInvaders $(OFILES)
