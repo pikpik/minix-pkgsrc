@@ -164,3 +164,12 @@ share/doc/${PKGNAME}/html/refxml.html
 share/doc/${PKGNAME}/html/security.html
 share/doc/${PKGNAME}/html/using.html
 share/doc/${PKGNAME}/html/xml.html
+share/locale/cs/LC_MESSAGES/neon.mo
+share/locale/de/LC_MESSAGES/neon.mo
+share/locale/fr/LC_MESSAGES/neon.mo
+share/locale/ja/LC_MESSAGES/neon.mo
+share/locale/nn/LC_MESSAGES/neon.mo
+share/locale/pl/LC_MESSAGES/neon.mo
+share/locale/ru/LC_MESSAGES/neon.mo
+share/locale/tr/LC_MESSAGES/neon.mo
+share/locale/zh_CN/LC_MESSAGES/neon.mo

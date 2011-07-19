@@ -20,10 +20,10 @@ CONFIGURE_ARGS+=	--with-expat
 CONFIGURE_ARGS+=	--with-ssl=yes
 
 .include "../../mk/bsd.prefs.mk"
+
+# no PIC nor shared libraries for Minix
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	--without-pic
-CONFIGURE_ENV+=		ac_cv_func_lseek64=no
-NEON_LOCALE=		no
 .else
 CONFIGURE_ARGS+=	--enable-shared
 .endif
@@ -33,19 +33,9 @@ TEST_TARGET=		check
 #selftest needs perl
 #USE_TOOLS+=		perl
 
-.include "../../mk/bsd.prefs.mk"
-
-NEON_LOCALE?=		yes
-.if !empty(NEON_LOCALE:M[yY][eE][sS])
-USE_PKGLOCALEDIR=	yes
-PLIST_SRC+=		${PKGDIR}/PLIST.locale
-.include "../../devel/gettext-lib/buildlink3.mk"
-.else
-CONFIGURE_ARGS+=	--disable-nls
-.endif
-
 .include "options.mk"
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
