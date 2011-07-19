@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.18 2011/01/17 16:51:05 drochner Exp $
+# $NetBSD: options.mk,v 1.19 2011/01/24 19:07:16 drochner Exp $
 
 # Global and legacy options
 
@@ -79,10 +79,12 @@ CONFIGURE_ARGS+=	--enable-libxvid
 ###
 .if !empty(PKG_OPTIONS:Mx264)
 # ABI change between 20090326 and 20100201
-BUILDLINK_API_DEPENDS.x264-devel+=	x264-devel>=20101101
+BUILDLINK_API_DEPENDS.x264-devel+=	x264-devel>=20110707
 #BUILDLINK_API_DEPENDS.x264-devel+=	x264-devel<20110102
 CONFIGURE_ARGS+=	--enable-libx264
 .include "../../multimedia/x264-devel/buildlink3.mk"
+.else
+CONFIGURE_ARGS+=	--disable-libx264
 .endif
 
 ###
