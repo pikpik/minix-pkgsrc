@@ -88,6 +88,7 @@ lang/bwbasic
 lang/f2c
 lang/gawk
 lang/gcc44
+lang/guile
 lang/lua
 lang/nawk
 lang/p2c
