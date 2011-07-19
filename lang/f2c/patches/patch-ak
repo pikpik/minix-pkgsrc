@@ -1,6 +1,8 @@
---- src/sysdep.c.orig	Sat Apr 11 23:56:11 2009
-+++ src/sysdep.c	Tue May 31 10:21:11 2011
-@@ -80,8 +80,8 @@
+$NetBSD$
+
+--- src/sysdep.c.orig	2009-12-22 11:45:47.000000000 +0100
++++ src/sysdep.c
+@@ -80,8 +80,8 @@ extern "C" {
  #define Cextern extern
  #endif
  
@@ -11,12 +13,3 @@
  
   void
  #ifdef KR_headers
-@@ -223,7 +223,7 @@
- 			}
- #else /*!NO_MKDTEMP*/
- 		strcpy(tdbuf, "/tmp/f2ctd_XXXXXX");
--		if (!(tmpdir = mkdtemp(tdbuf))) {
-+		if ((tmpdir = (char*) mkdtemp((char*)tdbuf)) == NULL) {
- 			fprintf(stderr, "mkdtemp failed (for -T)\n");
- 			exit(1);
- 			}
