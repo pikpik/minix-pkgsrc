@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} == "SunOS" || ${OPSYS} == "OSF1" || ${OPSYS} == "AIX"
+.if ${OPSYS} == "SunOS" || ${OPSYS} == "OSF1" || ${OPSYS} == "AIX" || ${OPSYS} == "Minix"
 DEPENDS+=		diffutils>=2.7:../../devel/diffutils
 CONFIGURE_ARGS+=	--with-diffutils
 # the native diff/diff3 is not sufficient for rcs

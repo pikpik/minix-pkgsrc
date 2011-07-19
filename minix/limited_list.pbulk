@@ -58,6 +58,7 @@ devel/patch
 devel/pcre
 devel/pkg-config
 devel/pth
+devel/rcs
 devel/readline
 devel/scmcvs
 devel/scmgit-base
