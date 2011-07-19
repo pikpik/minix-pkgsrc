@@ -68,8 +68,10 @@ BUILDLINK_DEPMETHOD.readline=	build
 .endif
 
 # Minix lacks setpgid() which is needed for job control.
+# Also set with-bash-malloc to no
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	--disable-job-control
+CONFIGURE_ARGS+=	--with-bash-malloc=no
 .else
 CONFIGURE_ARGS+=	--enable-job-control
 .endif
@@ -82,8 +84,6 @@ USE_GNU_READLINE=		yes
 BUILDLINK_API_DEPENDS.readline+=	readline>=6.0
 
 .include "../../devel/readline/buildlink3.mk"
-.elif ${OPSYS} == "Minix"
-CONFIGURE_ARGS+=	bash_cv_func_snprintf=yes --with-bash-malloc=no
 .endif
 
 post-install:
