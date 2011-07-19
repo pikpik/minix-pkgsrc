@@ -2,7 +2,7 @@
 #
 
 DISTNAME=	glusterfs-3.2.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	filesystems
 MASTER_SITES=	http://download.gluster.com/pub/gluster/glusterfs/3.2/3.2.1/
 
@@ -72,6 +72,8 @@ BUILD_DEFS+=		VARBASE
 
 RCD_SCRIPTS=		glusterfsd glusterd
 
+PLIST_SRC=		${PLIST_SRC_DFLT}
+
 post-build:
 	 cp ${WRKSRC}/doc/glusterd.vol ${WRKSRC}/doc/glusterd.vol.sample
 
@@ -84,6 +86,8 @@ post-install:
 # Debug
 CFLAGS+=		-g
 INSTALL_UNSTRIPPED=	yes
+
+.include "options.mk"
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../lang/python/application.mk"
