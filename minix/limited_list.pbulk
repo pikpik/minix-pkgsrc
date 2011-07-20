@@ -110,6 +110,7 @@ minix/x11
 misc/ascii
 misc/cowsay
 misc/figlet
+misc/figlet-fonts
 net/fetch
 net/libfetch
 net/rsync
