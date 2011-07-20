@@ -74,6 +74,8 @@ editors/vilearn
 editors/vim
 editors/vim-share
 editors/zile
+fonts/fontconfig
+fonts/ghostscript-fonts
 games/aop
 games/bastet
 games/cmatrix
@@ -82,7 +84,10 @@ games/dungeon
 games/gnugo
 games/ninvaders
 games/sex
+graphics/freetype2
+graphics/jpeg
 graphics/png
+graphics/tiff
 ham/locator
 lang/a60
 lang/bwbasic
@@ -127,6 +132,8 @@ pkgtools/pkglint
 pkgtools/rdigest
 pkgtools/url2pkg
 pkgtools/x11-links
+print/libpaper
+print/ghostscript
 security/bcrypt
 security/openssh
 security/openssl
