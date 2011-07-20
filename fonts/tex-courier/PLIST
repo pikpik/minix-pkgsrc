@@ -85,10 +85,6 @@ share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrb.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrbo.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrr.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/courier/rpcrro.tfm
-share/texmf-dist/fonts/tfm/groff/courier/pcrb8g.tfm
-share/texmf-dist/fonts/tfm/groff/courier/pcrbo8g.tfm
-share/texmf-dist/fonts/tfm/groff/courier/pcrr8g.tfm
-share/texmf-dist/fonts/tfm/groff/courier/pcrro8g.tfm
 share/texmf-dist/fonts/tfm/urw35vf/courier/ucrb7t.tfm
 share/texmf-dist/fonts/tfm/urw35vf/courier/ucrb8c.tfm
 share/texmf-dist/fonts/tfm/urw35vf/courier/ucrb8r.tfm
