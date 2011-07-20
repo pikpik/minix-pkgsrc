@@ -61,7 +61,6 @@ CONFIGURE_ENV+=	ac_cv_type_wctype_t=no
 # Drop -lcompat_minix to avoid symbol size change linker error 
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=        --disable-job-control
-LDFLAGS:= ${LDFLAGS:S/-lcompat_minix//g}
 .endif
 
 
