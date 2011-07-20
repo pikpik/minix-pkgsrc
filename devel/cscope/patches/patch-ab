@@ -2,30 +2,27 @@ $NetBSD$
 
 --- src/main.c.orig	Fri Apr 10 14:36:38 2009
 +++ src/main.c
-@@ -121,8 +121,15 @@ static	void	usage(void);
- void	fixkeypad();
+@@ -131,6 +131,13 @@ sigwinch_handler(int sig, siginfo_t *info, void *unuse
+     if(incurses == YES)
+         ungetch(KEY_RESIZE);
+ }
++
++void 
++sigwinch_handler_wrapper(int sig)
++{
++    sigwinch_handler(sig, NULL, NULL);
++    signal(SIGWINCH, sigwinch_handler_wrapper);
++}
  #endif
  
--#if defined(KEY_RESIZE) && !defined(__DJGPP__)
-+#if defined(__minix)
- void 
-+sigwinch_handler(int sig)
-+{
-+    if(incurses == YES)
-+        ungetch(KEY_RESIZE);
-+}
-+#elif defined(KEY_RESIZE) && !defined(__DJGPP__)
-+void 
- sigwinch_handler(int sig, siginfo_t *info, void *unused)
- {
-     (void) sig;
+ int
 @@ -402,7 +409,9 @@ cscope: Could not create private temp dir %s\n",
  	signal(SIGINT, SIG_IGN);	/* ignore interrupts */
  	signal(SIGPIPE, SIG_IGN);/* | command can cause pipe signal */
  
 -#if defined(KEY_RESIZE) && !defined(__DJGPP__)
-+#if defined(__minix)
-+	signal(SIGWINCH, sigwinch_handler);
++#if defined(_POSIX_SOURCE)
++	signal(SIGWINCH, sigwinch_handler_wrapper);
 +#elif defined(KEY_RESIZE) && !defined(__DJGPP__)
  	winch_action.sa_sigaction = sigwinch_handler;
  	sigemptyset(&winch_action.sa_mask);
