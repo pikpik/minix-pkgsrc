@@ -16,7 +16,7 @@ $NetBSD$
  CFLAGS?=	-O2 -pipe
  CFLAGS+=	-g -Wall -Werror
 -LDFLAGS= 	-lncurses
-+LDFLAGS+= 	-lncurses
++LDFLAGS:= 	-lncurses $(LDFLAGS)
  
  INSTALL=	/usr/bin/install
  STRIP=		/usr/bin/strip
