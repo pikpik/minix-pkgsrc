@@ -72,12 +72,6 @@ SUBST_MESSAGE.lzconfig=	Forcing -lz in configure for libtiff check
 SUBST_FILES.lzconfig=	configure
 SUBST_SED.lzconfig=	-e "s/^LIBS=.-ltiff -ljpeg/& -lz /"
 
-SUBST_CLASSES+=		decontrib
-SUBST_STAGE.decontrib=	post-extract
-SUBST_MESSAGE.decontrib=Disabling contrib.mak
-SUBST_FILES.decontrib=	Makefile.in base/Makefile.in
-SUBST_SED.decontrib=	-e "s/^include.*contrib.mak/\#&/" -e "s/^@CONTRIBINCLUDE@//" -e "s/^DEVICE_DEVS[12]=/\#&/"
-
 # no dlopen
 CONFIGURE_ENV+=		ac_cv_lib_dl_dlopen=no
 
@@ -87,6 +81,7 @@ LDFLAGS+=		-lfontconfig   -lexpat -liconv -lfreetype -lz
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
+.include "../../fonts/fontconfig/buildlink3.mk"
 .endif
 
 # Interim IRIX build fix, the real problem is that fontconfig.pc doesn't
