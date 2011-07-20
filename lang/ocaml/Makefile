@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2010/12/19 08:27:17 is Exp $
+# $NetBSD: Makefile,v 1.69 2011/03/29 13:45:01 adam Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -43,9 +43,12 @@ PLIST_SRC+=	${PKGDIR}/PLIST.prof
 .  endif
 .endif
 
+# XXX This conditional is not complete.  It should match the
+# conditional in ocaml-x.y.z/configure.
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "x86_64")
 .  if !empty(MACHINE_PLATFORM:MLinux-*-*) || \
-      !empty(MACHINE_PLATFORM:MFreeBSD-*-*)
+      !empty(MACHINE_PLATFORM:MFreeBSD-*-*) || \
+      !empty(MACHINE_PLATFORM:MNetBSD-*-*)
 PLIST_SRC+=	${PKGDIR}/PLIST.natdynlink
 .  endif
 .endif
