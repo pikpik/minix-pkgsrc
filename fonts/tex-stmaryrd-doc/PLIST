@@ -1,3 +1,5 @@
 @comment $NetBSD$
+share/texmf-dist/doc/fonts/stmaryrd/INSTALL
 share/texmf-dist/doc/fonts/stmaryrd/README
-share/texmf-dist/doc/fonts/stmaryrd/stmaryrd.dvi
+share/texmf-dist/doc/fonts/stmaryrd/README.hoekwater
+share/texmf-dist/doc/fonts/stmaryrd/stmaryrd.pdf
