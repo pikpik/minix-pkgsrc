@@ -1,6 +1,6 @@
 $NetBSD$
 
---- XSUB.h.orig	2009-04-12 20:11:29.000000000 +0000
+--- XSUB.h.orig	2007-12-18 11:47:07.000000000 +0100
 +++ XSUB.h
 @@ -93,6 +93,9 @@ is a lexical $_ in scope.
  #ifndef PERL_UNUSED_VAR

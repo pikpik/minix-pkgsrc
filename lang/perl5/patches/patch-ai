@@ -1,8 +1,8 @@
 $NetBSD$
 
---- hints/solaris_2.sh.orig	2009-02-12 22:58:12.000000000 +0000
-+++ hints/solaris_2.sh
-@@ -571,9 +571,9 @@ EOM
+--- hints/solaris_2.sh.orig	2007-12-18 11:47:07.000000000 +0100
++++ hints/solaris_2.sh	2009-05-02 10:14:48.292729716 +0200
+@@ -571,9 +571,9 @@
  		lddlflags="$lddlflags -G -m64"
  		;;
  	    *)

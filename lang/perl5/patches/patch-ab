@@ -1,8 +1,8 @@
 $NetBSD$
 
---- installperl.orig	2009-08-13 22:40:10.000000000 +0000
-+++ installperl
-@@ -355,7 +355,6 @@ my $vershort = ($Is_Cygwin and !$Config{
+--- installperl.orig	2009-12-06 17:14:00.000000000 +0000
++++ installperl	2009-12-06 17:14:13.000000000 +0000
+@@ -355,7 +355,6 @@
  mkpath($installprivlib, $opts{verbose}, 0777);
  mkpath($installarchlib, $opts{verbose}, 0777);
  mkpath($installsitelib, $opts{verbose}, 0777) if ($installsitelib);

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- hints/dec_osf.sh.orig	2009-02-12 22:58:12.000000000 +0000
+--- hints/dec_osf.sh.orig	2007-12-18 11:47:07.000000000 +0100
 +++ hints/dec_osf.sh
 @@ -79,7 +79,7 @@ case "$unamer" in
  		      # fixed in 4.0E or better.

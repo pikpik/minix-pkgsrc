@@ -2,9 +2,9 @@ $NetBSD$
 
 On NetBSD, filesystems may be mounted with the noatime option.
 
---- t/io/fs.t.orig	2009-06-10 16:53:47.000000000 +0000
-+++ t/io/fs.t
-@@ -281,15 +281,15 @@ sub check_utime_result {
+--- t/io/fs.t.orig	2009-12-06 21:03:51.000000000 +0000
++++ t/io/fs.t	2009-12-06 21:04:34.000000000 +0000
+@@ -281,15 +281,15 @@
  		is( $atime, 500000001,          'atime' );
  		is( $mtime, 500000000 + $delta, 'mtime' );
  	    }
