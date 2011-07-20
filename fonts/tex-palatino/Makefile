@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/02/04 22:14:32 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2011/03/07 19:52:17 minskim Exp $
 
 DISTNAME=	palatino
-PKGNAME=	tex-${DISTNAME}-2010
-TEXLIVE_REV=	21570
+PKGNAME=	tex-${DISTNAME}-2010.21993
+TEXLIVE_REV=	21993
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Palatino font family for TeX
