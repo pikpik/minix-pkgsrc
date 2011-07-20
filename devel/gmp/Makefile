@@ -27,7 +27,7 @@ PLIST_VARS+=		cxx
 
 .include "../../mk/bsd.prefs.mk"
 
-.if empty(PKGSRC_COMPILER:Msunpro) && ${OPSYS} != "Minix"
+.if empty(PKGSRC_COMPILER:Msunpro)
 CONFIGURE_ARGS+=	--enable-cxx
 PLIST.cxx=		yes
 .endif
