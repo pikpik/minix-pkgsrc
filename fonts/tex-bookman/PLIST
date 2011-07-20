@@ -55,10 +55,6 @@ share/texmf-dist/fonts/tfm/cspsfonts-adobe/bookman/rpbkd.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/bookman/rpbkdi.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/bookman/rpbkl.tfm
 share/texmf-dist/fonts/tfm/cspsfonts-adobe/bookman/rpbkli.tfm
-share/texmf-dist/fonts/tfm/groff/bookman/pbkd8g.tfm
-share/texmf-dist/fonts/tfm/groff/bookman/pbkdi8g.tfm
-share/texmf-dist/fonts/tfm/groff/bookman/pbkl8g.tfm
-share/texmf-dist/fonts/tfm/groff/bookman/pbkli8g.tfm
 share/texmf-dist/fonts/tfm/urw35vf/bookman/ubkb7t.tfm
 share/texmf-dist/fonts/tfm/urw35vf/bookman/ubkb8c.tfm
 share/texmf-dist/fonts/tfm/urw35vf/bookman/ubkb8r.tfm
