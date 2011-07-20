@@ -3,7 +3,7 @@ $NetBSD$
 SHA1 (X11R6.8.2.tar.gz) = 71b64c653e4c504372538f20d71137d115cc0ce2
 RMD160 (X11R6.8.2.tar.gz) = ee793bb14d86ffb4ae0bdee88754827133976645
 Size (X11R6.8.2.tar.gz) = 57254838 bytes
-SHA1 (patch-aa) = e5b66f4ed5d59b36544de40048bd14f7589fd713
+SHA1 (patch-aa) = 44d3c479bedbf21503ddd928647ddbb2cc5612d2
 SHA1 (patch-ab) = 59c195043e45f8817b2f3b054f1bb9b3136656ce
 SHA1 (patch-ac) = eebd12b432083adcbfa78b035efb8fa1bb1559fb
 SHA1 (patch-lib_xtrans_Xtranssock__mnx3.c) = 939ce13a142aae5ccb075594a69404b19326dfb3
