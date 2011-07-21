@@ -45,6 +45,7 @@ devel/gmake
 devel/gmp
 devel/gtexinfo
 devel/lcov
+devel/libelf
 devel/libgetopt
 devel/libiberty
 devel/libidn
