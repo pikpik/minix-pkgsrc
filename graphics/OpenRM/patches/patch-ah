@@ -7,7 +7,7 @@ $NetBSD: patch-ah,v 1.1 2005/06/23 04:02:48 jlam Exp $
 +
 +# Make a libtool archive
 +
-+# $Id: patch-ah,v 1.2 2011/07/21 17:04:46 joerg Exp $
++# $Id: patch-ah,v 1.1 2005/06/23 04:02:48 jlam Exp $
 +
 +#--common--------------------------------------------------------------
 +
