@@ -1,0 +1,27 @@
+$NetBSD$
+
+--- config.h.in.orig	Sat Mar 26 21:37:52 2011
++++ config.h.in
+@@ -265,6 +265,12 @@
+ /* Define to 1 if you have the <netdb.h> header file. */
+ #undef HAVE_NETDB_H
+ 
++/* Define to 1 if you have the <netinet/in_systm.h> header file. */
++#undef HAVE_NETINET_IN_SYSTM_H
++
++/* Define to 1 if you have the <netinet/ip.h> header file. */
++#undef HAVE_NETINET_IP_H
++
+ /* Define to 1 if you have the `nl_langinfo' function. */
+ #undef HAVE_NL_LANGINFO
+ 
+@@ -694,6 +700,9 @@
+ #ifndef __cplusplus
+ #undef inline
+ #endif
++
++/* Define to `unsigned int' if <sys/types.h> does not define. */
++#undef size_t
+ 
+ /* type to use in place of socklen_t if not defined */
+ #undef socklen_t

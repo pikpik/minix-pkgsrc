@@ -58,7 +58,7 @@ BUILDLINK_DEPMETHOD.readline=	build
 CONFIGURE_ENV+=	ac_cv_type_wctype_t=no
 .endif
 
-# Drop -lcompat_minix to avoid symbol size change linker error 
+# Minix lacks setpgid() which is needed for job control.
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=        --disable-job-control
 .endif
