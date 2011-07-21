@@ -102,6 +102,7 @@ lang/perl5
 lang/tcl
 lang/wsbasic
 math/bc
+math/mpcomplex
 math/mpfr
 math/units
 minix/clang
