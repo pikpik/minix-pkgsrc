@@ -3,7 +3,6 @@ bin/bison
 info/bison.info
 lib/liby.a
 man/man1/bison.1
-man/man1/yacc.1
 share/aclocal/bison-i18n.m4
 share/bison/README
 share/bison/bison.m4
