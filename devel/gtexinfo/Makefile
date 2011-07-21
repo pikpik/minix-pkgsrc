@@ -1,6 +1,6 @@
 # $NetBSD: Makefile,v 1.74 2009/08/16 13:57:43 wiz Exp $
 
-DISTNAME=		texinfo-4.12
+DISTNAME=		texinfo-4.13
 PKGNAME=		g${DISTNAME}
 PKGREVISION=		1
 CATEGORIES=		devel sysutils
