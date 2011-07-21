@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.84 2011/04/22 13:44:58 obache Exp $
+# $NetBSD: Makefile,v 1.85 2011/04/26 14:18:01 tnn Exp $
 
 .include "../../devel/xulrunner/dist.mk"
 PKGNAME=	firefox-${FIREFOX_VER}
+PKGREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	tnn@NetBSD.org
