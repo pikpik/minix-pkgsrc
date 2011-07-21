@@ -3,5 +3,8 @@ $NetBSD: distinfo,v 1.35 2010/01/02 12:39:16 tron Exp $
 SHA1 (rsync-3.0.8.tar.gz) = 10e80173c7e9ed8b8a4dc9e8fdab08402da5f08d
 RMD160 (rsync-3.0.8.tar.gz) = f00c5ba42e33a1745976c9af5e770c220a6fa4a6
 Size (rsync-3.0.8.tar.gz) = 790722 bytes
-SHA1 (patch-aa) = 1f56480a5ae4e06a9199326243eae8e6379e9b68
-SHA1 (patch-ab) = b0d234db518ca554a2a8df509279b6ed6d500d0b
+SHA1 (patch-aa) = af151cf2ca0505c5cb94c1a34a8c2078f48e9a90
+SHA1 (patch-ab) = dfc3e99b8c6538eb4219be04864077cd52cac5fe
+SHA1 (patch-config.h.in) = 5d6789350fcce8ad48c93cc11b13923ec02b9821
+SHA1 (patch-configure) = 985e1cf83345b88e8d03dd8333275e8aed851417
+SHA1 (patch-configure.ac) = 025abf9e8dc7e793bb0cdfdde1a977fb53d44281

@@ -1,19 +1,21 @@
 $NetBSD$
 
---- socket.c.orig	Sat Jan 17 21:46:11 2009
+--- socket.c.orig	Sat Jan  1 21:55:03 2011
 +++ socket.c
-@@ -26,8 +26,10 @@
+@@ -26,8 +26,12 @@
  
  #include "rsync.h"
  #include "ifuncs.h"
-+#ifndef __minix
++#ifdef HAVE_NETINET_IN_SYSTM_H
  #include <netinet/in_systm.h>
++#endif
++#ifdef HAVE_NETINET_IP_H
  #include <netinet/ip.h>
 +#endif
  #include <netinet/tcp.h>
  
  extern char *bind_address;
-@@ -632,7 +634,9 @@ struct
+@@ -635,7 +639,9 @@ struct
  } socket_options[] = {
    {"SO_KEEPALIVE",      SOL_SOCKET,    SO_KEEPALIVE,    0,                 OPT_BOOL},
    {"SO_REUSEADDR",      SOL_SOCKET,    SO_REUSEADDR,    0,                 OPT_BOOL},
