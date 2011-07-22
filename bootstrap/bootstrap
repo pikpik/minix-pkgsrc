@@ -611,6 +611,7 @@ Minix)
 	check_compiler=yes
 	export CC="gcc"
 	export CPPFLAGS="-D_NETBSD_SOURCE -D_MINIX -D_POSIX_SOURCE -D_COMPAT_MINIX"
+	export CFLAGS="-march=i586"
 	export LDFLAGS="-lcompat_minix -lminlib"
 	export AR="ar"
 	export LD="ld"
