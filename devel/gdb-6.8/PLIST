@@ -15,7 +15,6 @@ info/gdbint.info
 info/gdbint.info-1
 info/gdbint.info-2
 info/stabs.info
-info/standards.info
 lib/${PKGNAME}/libbfd.la
 lib/${PKGNAME}/libiberty.a
 lib/${PKGNAME}/libo${LOWER_VENDOR}odes.la

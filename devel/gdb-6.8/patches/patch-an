@@ -50,24 +50,30 @@ $NetBSD$
        break;
  
        /* We had an event in the inferior, but we are not interested
-@@ -2073,6 +2096,11 @@ process_event_stop_test:
+@@ -2073,6 +2096,15 @@ process_event_stop_test:
  	     signal return address and then, once hit, step off that
  	     breakpoint.  */
  
-+          /* FIXME: On MINIX, when resuming execution of the inferior,
-+	     it receives signal 28, ignore it for now */
++          /* XXX: On MINIX, when resuming execution of the inferior, gdb
++	     receives signal 28, ignore it for now (Note: It might 
++	     have to do with the fact that tcsetpgrp doesn't work in 
++	     MINIX) */
++#ifdef _MINIX
 +          if (stop_signal == 28)
 +	    goto temp_solution;
++#endif
 +
  	  insert_step_resume_breakpoint_at_frame (get_current_frame ());
  	  ecs->step_after_step_resume_breakpoint = 1;
  	  keep_going (ecs);
-@@ -2109,6 +2137,8 @@ process_event_stop_test:
+@@ -2109,6 +2141,10 @@ process_event_stop_test:
        keep_going (ecs);
        return;
      }
 +
++#ifdef _MINIX
 +temp_solution:
++#endif
  
    /* Handle cases caused by hitting a breakpoint.  */
    {

@@ -2,12 +2,17 @@ $NetBSD$
 
 --- gdb/inf-ptrace.c.orig	Tue Jan  1 22:53:11 2008
 +++ gdb/inf-ptrace.c
-@@ -531,7 +531,7 @@ inf_ptrace_xfer_partial (struct target_ops *ops, enum 
+@@ -531,7 +531,13 @@ inf_ptrace_xfer_partial (struct target_ops *ops, enum 
  	if (readbuf)
  	  {
  	    errno = 0;
--	    buffer.word = ptrace (PT_READ_I, pid,
++/* On MINIX I and D are separate - if we leave I here, it won't read correctly from
++   the stack */
++#ifdef _MINIX
 +	    buffer.word = ptrace (PT_READ_D, pid,
++#else
+ 	    buffer.word = ptrace (PT_READ_I, pid,
++#endif
  				  (PTRACE_TYPE_ARG3)(uintptr_t)rounded_offset,
  				  0);
  	    if (errno)

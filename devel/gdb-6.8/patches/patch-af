@@ -1,31 +1,13 @@
 $NetBSD$
 
---- configure.orig	Wed Feb 20 14:26:58 2008
-+++ configure
-@@ -3491,13 +3491,13 @@ if test "$ac_test_CFLAGS" = set; then
-   CFLAGS=$ac_save_CFLAGS
- elif test $ac_cv_prog_cc_g = yes; then
-   if test "$GCC" = yes; then
--    CFLAGS="-g -O2"
-+    CFLAGS="-g -O2 -D_POSIX_SOURCE -D_NETBSD_SOURCE"
-   else
-     CFLAGS="-g"
-   fi
- else
-   if test "$GCC" = yes; then
--    CFLAGS="-O2"
-+    CFLAGS="-O2 -D_POSIX_SOURCE -D_NETBSD_SOURCE"
-   else
-     CFLAGS=
-   fi
-@@ -12664,6 +12664,10 @@ do
- _ACEOF
- cat >>$CONFIG_STATUS <<\_ACEOF
-   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
-+	: Avoid regenerating within pkgsrc
-+	exit 0
-+	: Avoid regenerating within pkgsrc
-+	exit 0
-     ac_cs_recheck=: ;;
-   --version | --vers* | -V )
-     echo "$ac_cs_version"; exit 0 ;;
+--- gdb/Makefile.in.orig	Mon Mar 17 12:15:08 2008
++++ gdb/Makefile.in
+@@ -149,7 +149,7 @@ GDB_WERROR_CFLAGS = $(WERROR_CFLAGS)
+ GDB_WARN_CFLAGS_NO_FORMAT = `echo " $(GDB_WARN_CFLAGS) " | sed "s/ -Wformat-nonliteral / /g"`
+ 
+ # Where is the INTL library?  Typically in ../intl.
+-INTL = @LIBINTL@
++INTL = -L${PREFIX}/lib -R${PREFIX}/lib -lintl
+ INTL_DEPS = @LIBINTL_DEP@
+ INTL_CFLAGS = @INCINTL@
+ 

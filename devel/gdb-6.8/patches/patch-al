@@ -2,23 +2,20 @@ $NetBSD$
 
 --- gdb/gdb_ptrace.h.orig	Tue Jan  1 22:53:09 2008
 +++ gdb/gdb_ptrace.h
-@@ -94,16 +94,13 @@
- 
- /* Not all systems support attaching and detaching.   */
- 
-+/* For MINIX, these are 11 and 12 */
+@@ -97,12 +97,16 @@
  #ifndef PT_ATTACH
--# ifdef PTRACE_ATTACH
--#  define PT_ATTACH PTRACE_ATTACH
--# endif
-+#  define PT_ATTACH     11
+ # ifdef PTRACE_ATTACH
+ #  define PT_ATTACH PTRACE_ATTACH
++# elif T_ATTACH
++#  define PT_ATTACH T_ATTACH
+ # endif
  #endif
  
  #ifndef PT_DETACH
--# ifdef PTRACE_DETACH
--#  define PT_DETACH PTRACE_DETACH
--# endif
-+#  define PT_DETACH     12
+ # ifdef PTRACE_DETACH
+ #  define PT_DETACH PTRACE_DETACH
++# elif T_ATTACH
++#  define PT_DETACH T_DETACH
+ # endif
  #endif
  
- /* Some systems, in particular DEC OSF/1, Digital Unix, Compaq Tru64
