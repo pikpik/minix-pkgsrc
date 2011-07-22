@@ -83,10 +83,6 @@ makejailpkgsrc() {
 	return 0
 }
 
-jailcmd() {
-	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --all"
-	return 0
-}
 
 jailall() {
 	LOGFILE=jail.log
@@ -99,7 +95,7 @@ jailall() {
 	echo " * Building pkgsrc in jail."
 	makejailpkgsrc
 	echo " * Running bulk build."
-	jailall
+	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --all"
 ) | tee $LOGFILE
 	return 0
 }
