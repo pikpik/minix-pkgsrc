@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2010/05/31 20:30:31 gls Exp $
+@comment $NetBSD$
 ${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
 ${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
 ${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
@@ -70,15 +70,6 @@ ${PYSITELIB}/paramiko/primes.pyo
 ${PYSITELIB}/paramiko/resource.py
 ${PYSITELIB}/paramiko/resource.pyc
 ${PYSITELIB}/paramiko/resource.pyo
-${PYSITELIB}/paramiko/rng.py
-${PYSITELIB}/paramiko/rng.pyc
-${PYSITELIB}/paramiko/rng.pyo
-${PYSITELIB}/paramiko/rng_posix.py
-${PYSITELIB}/paramiko/rng_posix.pyc
-${PYSITELIB}/paramiko/rng_posix.pyo
-${PYSITELIB}/paramiko/rng_win32.py
-${PYSITELIB}/paramiko/rng_win32.pyc
-${PYSITELIB}/paramiko/rng_win32.pyo
 ${PYSITELIB}/paramiko/rsakey.py
 ${PYSITELIB}/paramiko/rsakey.pyc
 ${PYSITELIB}/paramiko/rsakey.pyo
