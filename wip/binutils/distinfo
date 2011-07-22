@@ -1,0 +1,23 @@
+$NetBSD: distinfo,v 1.8 2007/05/29 12:25:03 martti Exp $
+
+SHA1 (binutils-2.21.tar.gz) = 5a2688ca4b75c3b5aca634bb1a626f642371c177
+RMD160 (binutils-2.21.tar.gz) = 1aadefc537843b38121c960816e6c8a82fd93e48
+Size (binutils-2.21.tar.gz) = 25021590 bytes
+SHA1 (patch-aa) = 9fe3c97f71f1dd1be5db2726cf78e8bb9fa37deb
+SHA1 (patch-ab) = abd9ac5e206e10e076090130b32706ef626cdd7e
+SHA1 (patch-ac) = cec7d09b43dcb08d4529ddfb5ce709dcaf672298
+SHA1 (patch-ad) = 054e127eab63df3a3b62b77db8bcf864ee0bd661
+SHA1 (patch-ae) = a27eb6d7e9d1d999c0f37d4ce91dec42c7b133ce
+SHA1 (patch-af) = c4f0aad84628d68c5137c8c5db638a0823775060
+SHA1 (patch-ag) = 2c19c251149a8d0e7bc43de148f553b99aed7065
+SHA1 (patch-ah) = b37a778d7f0ce8dd2742f22b58ed9e68325b9d89
+SHA1 (patch-ai) = 0cb5bceeb4f587487db42700afba6b680ee8fe75
+SHA1 (patch-aj) = 230d2366a6bd8495cc67cdd93948a2bab6063cd1
+SHA1 (patch-am) = a26317ad70b7859a3d87a4803c62d0694a73f1c1
+SHA1 (patch-an) = 4022fdbcbb6d9d7110a1b1ca6b8fbc01efb9dd69
+SHA1 (patch-ao) = 162841c8924e9ed056d0fc7f5931b9fc3bf02301
+SHA1 (patch-ap) = 4b54ab4a4f6fce84a1a3cd6e91c1a236a3c079b6
+SHA1 (patch-ar) = cf5785835c0265c46afca186ed0b2fc1f7abe13e
+SHA1 (patch-as) = c2f41e078f1d46f686f28cc9d994a9c47792163a
+SHA1 (patch-at) = 777f487e0bb33ee33849811f6ef6ed9a87a148cb
+SHA1 (patch-au) = 61e82a17233bdfe2ccb0678ca1a2ebe6d5d7a79c
