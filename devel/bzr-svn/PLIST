@@ -1,4 +1,5 @@
 @comment $NetBSD$
+${PYSITELIB}/bzr_svn-${PKGVERSION}-py2.6.egg-info
 ${PYSITELIB}/bzrlib/plugins/svn/__init__.py
 ${PYSITELIB}/bzrlib/plugins/svn/__init__.pyc
 ${PYSITELIB}/bzrlib/plugins/svn/__init__.pyo
