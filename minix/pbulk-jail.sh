@@ -17,7 +17,7 @@ initvars() {
 	# Where to build a pbulk jail
 	if [ "$JAILDEV" ]
 	then	umount $JAILDEV || true
-		echo "mkfs $DEVJAILDEV .."
+		echo "mkfs $JAILDEV .."
 		mkfs.mfs $JAILDEV
 		JAILROOT=$JAILROOTBASE.`basename $JAILDEV`
 		mkdir $JAILROOT || true
@@ -84,14 +84,7 @@ makejailpkgsrc() {
 }
 
 jailcmd() {
-	if [ ! -f $JAILPBULK_SH ]
-	then	echo "$JAILPBULK_SH not found; "
-		echo "please run $0 --jail-make and --jail-makepkgsrc first."
-		exit 1
-	fi
-
-	subcmd=$1
-	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --$subcmd"
+	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --all"
 	return 0
 }
 
@@ -106,7 +99,7 @@ jailall() {
 	echo " * Building pkgsrc in jail."
 	makejailpkgsrc
 	echo " * Running bulk build."
-	jailcmd --jail-all
+	jailall
 ) | tee $LOGFILE
 	return 0
 }
