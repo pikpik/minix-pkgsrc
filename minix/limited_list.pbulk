@@ -73,6 +73,7 @@ editors/mg
 editors/nano
 editors/vilearn
 editors/vim
+editors/nvi
 editors/vim-share
 editors/zile
 fonts/fontconfig
