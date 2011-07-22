@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/04/05 13:54:24 ryoon Exp $
+# $NetBSD: Makefile,v 1.21 2011/04/05 15:03:44 ryoon Exp $
 
 .include "../../shells/zsh/Makefile.common"
 
@@ -8,6 +8,11 @@ ZSH_MAINTAINER=	ryoon@NetBSD.org
 USE_TOOLS+=	env
 
 CONFIGURE_ARGS+=	--disable-gdbm
+
+PLIST_VARS+=   xattr
+.if exists(/usr/include/sys/xattr.h)
+PLIST.xattr=   yes
+.endif
 
 SUBST_CLASSES+=	prefix-fixup
 SUBST_STAGE.prefix-fixup=	pre-configure
