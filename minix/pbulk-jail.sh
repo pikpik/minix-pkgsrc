@@ -53,12 +53,22 @@ makejail() {
 	# Execute jail creating script that builds a new minix
 	# in $JAILROOT from the latest git repository
 	cd `dirname $RELEASE`
-	sh `basename $RELEASE` -j$JAILROOT -p
+	sh `basename $RELEASE` $RELOPTS -j$JAILROOT -p
 
 	return 0
 }
 
 makejailpkgsrc() {
+        # Some guest preparation necessary for networking to work
+	(cd /etc
+		for f in hosts resolv.conf
+		do	if [ -f $f ]
+			then cp $f $JAILROOT/etc/
+			fi
+		done
+	)
+        (cd /dev && tar cf - . ) | (cd $JAILROOT/dev ; tar xf -)
+
 	echo " * Installing packages $PACKAGES from $PACKAGEURL"
 	for p in $PACKAGES
 	do	echo $p ...
@@ -102,9 +112,10 @@ jailall() {
 
 initvars
 
-while getopts "u:d:Ah" opt
+while getopts "u:d:Ahr:" opt
 do
 	case $opt in
+	r) RELOPTS=$OPTARG; ;;
 	d) JAILDEV=$OPTARG; initvars; ;;
 	A) jailall; ;;
 	h) my_help; ;;
