@@ -2,8 +2,8 @@ $NetBSD$
 
 Add xdr-sizeof() to the build
 
---- rpc/rpc-lib/src/Makefile.am.orig	2011-05-19 15:41:12.000000000 +0200
-+++ rpc/rpc-lib/src/Makefile.am	2011-05-19 15:41:33.000000000 +0200
+--- rpc/rpc-lib/src/Makefile.am.orig	2011-07-14 14:21:10.000000000 +0200
++++ rpc/rpc-lib/src/Makefile.am	2011-07-22 09:01:18.000000000 +0200
 @@ -1,9 +1,9 @@
  lib_LTLIBRARIES = libgfrpc.la
  

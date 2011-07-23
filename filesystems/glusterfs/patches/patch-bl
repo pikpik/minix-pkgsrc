@@ -2,8 +2,8 @@ $NetBSD$
 
 #include <signal.h> for SIGTERM
 
---- glusterfsd/src/glusterfsd-mgmt.c.orig	2011-05-19 15:15:46.000000000 +0200
-+++ glusterfsd/src/glusterfsd-mgmt.c	2011-05-19 15:16:00.000000000 +0200
+--- glusterfsd/src/glusterfsd-mgmt.c.orig	2011-07-14 14:21:10.000000000 +0200
++++ glusterfsd/src/glusterfsd-mgmt.c	2011-07-22 09:01:16.000000000 +0200
 @@ -20,8 +20,9 @@
  #include <stdio.h>
  #include <sys/types.h>

@@ -1,7 +1,11 @@
 $NetBSD$
---- xlators/performance/quick-read/src/quick-read.c.orig	2011-07-03 03:59:32.000000000 +0200
-+++ xlators/performance/quick-read/src/quick-read.c	2011-07-03 03:59:42.000000000 +0200
-@@ -726,9 +726,9 @@
+
+O_DIRECTORY is defined as 0, therefore ((flags & O_DIRECTORY) == O_DIRECTORY)
+is always true even if the flag is not set.
+
+--- xlators/performance/quick-read/src/quick-read.c.orig	2011-07-14 14:21:10.000000000 +0200
++++ xlators/performance/quick-read/src/quick-read.c	2011-07-22 09:16:44.000000000 +0200
+@@ -727,9 +727,9 @@
                  }
          }
          UNLOCK (&table->lock);

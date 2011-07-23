@@ -14,8 +14,8 @@ At least NetBSD returns a static storage. glusterfs will return it to
 a calling function that has the responsability to free it, causing
 a SIGSEGV.
 
---- xlators/performance/stat-prefetch/src/stat-prefetch.c.orig	2011-04-22 19:37:28.000000000 +0200
-+++ xlators/performance/stat-prefetch/src/stat-prefetch.c	2011-05-19 12:41:28.000000000 +0200
+--- xlators/performance/stat-prefetch/src/stat-prefetch.c.orig	2011-07-14 14:21:10.000000000 +0200
++++ xlators/performance/stat-prefetch/src/stat-prefetch.c	2011-07-22 09:00:07.000000000 +0200
 @@ -949,18 +949,24 @@
                  path = dirname (cpy);
                  switch (i)
