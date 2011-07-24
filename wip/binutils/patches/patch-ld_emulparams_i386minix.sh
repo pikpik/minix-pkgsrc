@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ld/emulparams/i386minix.sh.orig	Sat Feb 26 00:58:30 2011
+--- ld/emulparams/i386minix.sh.orig	Fri Jul 22 17:18:51 2011
 +++ ld/emulparams/i386minix.sh
 @@ -0,0 +1,6 @@
 +SCRIPT_NAME=aout

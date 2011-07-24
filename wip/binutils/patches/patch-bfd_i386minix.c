@@ -1,6 +1,6 @@
 $NetBSD$
 
---- bfd/i386minix.c.orig	Sat Feb 26 00:58:30 2011
+--- bfd/i386minix.c.orig	Fri Jul 22 17:18:48 2011
 +++ bfd/i386minix.c
 @@ -0,0 +1,325 @@
 +/* BFD back-end for i386 minix a.out binaries.

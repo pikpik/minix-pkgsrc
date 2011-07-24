@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ld/emulparams/elf_i386_minix.sh.orig	Sat Feb 26 00:58:30 2011
+--- ld/emulparams/elf_i386_minix.sh.orig	Fri Jul 22 17:18:50 2011
 +++ ld/emulparams/elf_i386_minix.sh
 @@ -0,0 +1,3 @@
 +. ${srcdir}/emulparams/elf_i386.sh

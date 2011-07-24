@@ -1,8 +1,8 @@
 $NetBSD$
 
---- bfd/aoutx.h.orig	Thu Mar 16 12:20:15 2006
+--- bfd/aoutx.h.orig	Thu Oct 14 01:31:26 2010
 +++ bfd/aoutx.h
-@@ -383,6 +383,7 @@ DESCRIPTION
+@@ -407,6 +407,7 @@ DESCRIPTION
  	Swap the information in an internal exec header structure
  	@var{execp} into the buffer @var{raw_bytes} ready for writing to disk.
  */
@@ -10,7 +10,7 @@ $NetBSD$
  void
  NAME (aout, swap_exec_header_out) (bfd *abfd,
  				   struct internal_exec *execp,
-@@ -398,6 +399,8 @@ NAME (aout, swap_exec_header_out) (bfd *abfd,
+@@ -422,6 +423,8 @@ NAME (aout, swap_exec_header_out) (bfd *abfd,
    PUT_WORD (abfd, execp->a_trsize, bytes->e_trsize);
    PUT_WORD (abfd, execp->a_drsize, bytes->e_drsize);
  }

@@ -1,9 +1,9 @@
 $NetBSD$
 
---- gas/config/tc-i386.h.orig	Mon Feb 27 15:35:37 2006
+--- gas/config/tc-i386.h.orig	Mon Mar  8 14:07:45 2010
 +++ gas/config/tc-i386.h
-@@ -59,6 +59,10 @@ extern unsigned long i386_mach (void);
- #define ELF_TARGET_FORMAT	"elf32-i386-vxworks"
+@@ -68,6 +68,10 @@ extern unsigned long i386_mach (void);
+ #define ELF_TARGET_FORMAT64	"elf64-x86-64-sol2"
  #endif
  
 +#ifdef TE_MINIX
