@@ -42,6 +42,11 @@ UNLIMIT_RESOURCES+=	stacksize
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
+.if ${OPSYS} == "Minix"
+BUILD_FORTRAN=NO
+BUILD_JAVA=NO
+.endif
+
 # Determine whether to use binutils
 
 # REPLACE_AWK+=	gcc/testsuite/gcc.test-framework/test-framework.awk	\
