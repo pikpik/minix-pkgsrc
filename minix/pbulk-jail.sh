@@ -11,6 +11,7 @@ PACKAGES="binutils gcc44-4.4.5nb3 scmgit-base"
 JAILROOTBASE=/usr/pbulk-jail
 BRANCH=minix-master
 REMOTE=pkgsrc
+COPY=0
 
 # Jail-dependent vars
 initvars() {
@@ -75,17 +76,22 @@ makejailpkgsrc() {
 		pkg_add -P $JAILROOT $PACKAGEURL/$p
 	done
 
-	# copy our own pkgsrc repository there so the new repository
-	# doesn't have to retrieve objects we already have
-	GITDIR=$JAILPKGSRC/.git
-	mkdir -p $GITDIR
-	synctree -f $PKGSRC/.git $GITDIR >/dev/null
-	(	cd $JAILPKGSRC
-		git remote rm $REMOTE || true
-		git remote add $REMOTE git://git.minix3.org/pkgsrc.git
-		git fetch $REMOTE
-		git checkout -f $REMOTE/$BRANCH
-	)
+	if [ $COPY -eq 0 ]
+	then	
+		# copy our own pkgsrc repository there so the new repository
+		# doesn't have to retrieve objects we already have
+		GITDIR=$JAILPKGSRC/.git
+		mkdir -p $GITDIR
+		synctree -f $PKGSRC/.git $GITDIR >/dev/null
+		(	cd $JAILPKGSRC
+			git remote rm $REMOTE || true
+			git remote add $REMOTE git://git.minix3.org/pkgsrc.git
+			git fetch $REMOTE
+			git checkout -f $REMOTE/$BRANCH
+		)
+	else	# copy and use our local pkgsrc repository as it is
+		synctree -f $PKGSRC $JAILPKGSRC >/dev/null
+	fi
 
 	# Fix GCC headers
 	mychroot "cd /usr/src && make gnu-includes"
@@ -112,9 +118,10 @@ jailall() {
 
 initvars
 
-while getopts "u:d:Ahr:" opt
+while getopts "u:d:Ahr:c" opt
 do
 	case $opt in
+	c) COPY=1; ;;
 	r) RELOPTS=$OPTARG; ;;
 	d) JAILDEV=$OPTARG; initvars; ;;
 	A) jailall; ;;
