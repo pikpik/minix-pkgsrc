@@ -71,6 +71,7 @@ post-extract:
 .include "../../textproc/xmlrpc-c/buildlink3.mk"
 .endif
 .include "../../www/curl/buildlink3.mk"
+.include "../../mk/terminfo.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
 
