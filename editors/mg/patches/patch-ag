@@ -11,12 +11,17 @@ $NetBSD$
  bindir=		$(prefix)/bin
  libdir=		$(prefix)/lib
  includedir=	$(prefix)/include
-@@ -17,7 +17,7 @@ mandir=		$(prefix)/man
+@@ -17,10 +17,10 @@ mandir=		$(prefix)/man
  CC=		gcc
  CFLAGS?=	-O2 -pipe
  CFLAGS+=	-g -Wall -Werror
 -LDFLAGS= 	-lncurses
 +LDFLAGS:= 	-lncurses $(LDFLAGS)
  
- INSTALL=	/usr/bin/install
- STRIP=		/usr/bin/strip
+-INSTALL=	/usr/bin/install
+-STRIP=		/usr/bin/strip
++INSTALL=	install
++STRIP=		strip
+ 
+ 
+ OBJS= 	autoexec.o \

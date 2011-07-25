@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tty.c.orig	Mon Jul 18 17:27:23 2011
+--- tty.c.orig	Thu Dec 11 09:32:56 2008
 +++ tty.c
 @@ -35,8 +35,13 @@
  
