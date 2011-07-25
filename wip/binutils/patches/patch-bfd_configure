@@ -1,6 +1,6 @@
 $NetBSD$
 
---- bfd/configure.orig	Wed Dec  8 08:37:34 2010
+--- bfd/configure.orig	Mon Jul 25 16:26:08 2011
 +++ bfd/configure
 @@ -1,11 +1,13 @@
  #! /bin/sh
@@ -2960,7 +2960,7 @@ $NetBSD$
      i386lynx_aout_vec)		tb="$tb i386lynx.lo lynx-core.lo aout32.lo" ;;
      i386lynx_coff_vec)		tb="$tb cf-i386lynx.lo cofflink.lo lynx-core.lo" ;;
      i386mach3_vec)		tb="$tb i386mach3.lo aout32.lo" ;;
-+    bfd_elf32_i386_minix_vec)	tb="$tb elf32-i386.lo elf-vxworks.lo elf32.lo $elf" ;;
++    bfd_elf32_i386_minix_vec)	tb="$tb elf32-i386.lo elf-ifunc.lo elf-vxworks.lo elf32.lo $elf" ;;
      i386msdos_vec)		tb="$tb i386msdos.lo" ;;
      i386netbsd_vec)		tb="$tb i386netbsd.lo aout32.lo" ;;
      i386os9k_vec)		tb="$tb i386os9k.lo aout32.lo" ;;
@@ -3340,12 +3340,7 @@ $NetBSD$
    *)
      ac_option=$1
      ac_optarg=$2
-@@ -16361,15 +16435,20 @@ do
-   case $ac_option in
-   # Handling of the options.
-   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
-+	: Avoid regenerating within pkgsrc
-+	exit 0
+@@ -16364,12 +16438,15 @@ do
      ac_cs_recheck=: ;;
    --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
      $as_echo "$ac_cs_version"; exit ;;
@@ -3361,7 +3356,7 @@ $NetBSD$
      esac
      as_fn_append CONFIG_FILES " '$ac_optarg'"
      ac_need_defaults=false;;
-@@ -16382,7 +16461,7 @@ do
+@@ -16382,7 +16459,7 @@ do
      ac_need_defaults=false;;
    --he | --h)
      # Conflict between --help and --header
@@ -3370,7 +3365,7 @@ $NetBSD$
  Try \`$0 --help' for more information.";;
    --help | --hel | -h )
      $as_echo "$ac_cs_usage"; exit ;;
-@@ -16391,7 +16470,7 @@ Try \`$0 --help' for more information.";;
+@@ -16391,7 +16468,7 @@ Try \`$0 --help' for more information.";;
      ac_cs_silent=: ;;
  
    # This is an error.
@@ -3379,7 +3374,7 @@ $NetBSD$
  Try \`$0 --help' for more information." ;;
  
    *) as_fn_append ac_config_targets " $1"
-@@ -16742,7 +16821,7 @@ do
+@@ -16742,7 +16819,7 @@ do
      "po/Makefile.in") CONFIG_FILES="$CONFIG_FILES po/Makefile.in:po/Make-in" ;;
      "default") CONFIG_COMMANDS="$CONFIG_COMMANDS default" ;;
  
@@ -3388,7 +3383,7 @@ $NetBSD$
    esac
  done
  
-@@ -16765,9 +16844,10 @@ fi
+@@ -16765,9 +16842,10 @@ fi
  # after its creation but before its name has been assigned to `$tmp'.
  $debug ||
  {
@@ -3401,7 +3396,7 @@ $NetBSD$
  ' 0
    trap 'as_fn_exit 1' 1 2 13 15
  }
-@@ -16775,12 +16855,13 @@ $debug ||
+@@ -16775,12 +16853,13 @@ $debug ||
  
  {
    tmp=`(umask 077 && mktemp -d "./confXXXXXX") 2>/dev/null` &&
@@ -3417,7 +3412,7 @@ $NetBSD$
  
  # Set up the scripts for CONFIG_FILES section.
  # No need to generate them if there are no CONFIG_FILES.
-@@ -16797,12 +16878,12 @@ if test "x$ac_cr" = x; then
+@@ -16797,12 +16876,12 @@ if test "x$ac_cr" = x; then
  fi
  ac_cs_awk_cr=`$AWK 'BEGIN { print "a\rb" }' </dev/null 2>/dev/null`
  if test "$ac_cs_awk_cr" = "a${ac_cr}b"; then
@@ -3432,7 +3427,7 @@ $NetBSD$
  _ACEOF
  
  
-@@ -16811,18 +16892,18 @@ _ACEOF
+@@ -16811,18 +16890,18 @@ _ACEOF
    echo "$ac_subst_vars" | sed 's/.*/&!$&$ac_delim/' &&
    echo "_ACEOF"
  } >conf$$subs.sh ||
@@ -3455,7 +3450,7 @@ $NetBSD$
    else
      ac_delim="$ac_delim!$ac_delim _$ac_delim!! "
    fi
-@@ -16830,7 +16911,7 @@ done
+@@ -16830,7 +16909,7 @@ done
  rm -f conf$$subs.sh
  
  cat >>$CONFIG_STATUS <<_ACEOF || ac_write_fail=1
@@ -3464,7 +3459,7 @@ $NetBSD$
  _ACEOF
  sed -n '
  h
-@@ -16844,7 +16925,7 @@ s/'"$ac_delim"'$//
+@@ -16844,7 +16923,7 @@ s/'"$ac_delim"'$//
  t delim
  :nl
  h
@@ -3473,7 +3468,7 @@ $NetBSD$
  t more1
  s/["\\]/\\&/g; s/^/"/; s/$/\\n"\\/
  p
-@@ -16858,7 +16939,7 @@ s/.\{148\}//
+@@ -16858,7 +16937,7 @@ s/.\{148\}//
  t nl
  :delim
  h
@@ -3482,7 +3477,7 @@ $NetBSD$
  t more2
  s/["\\]/\\&/g; s/^/"/; s/$/"/
  p
-@@ -16878,7 +16959,7 @@ t delim
+@@ -16878,7 +16957,7 @@ t delim
  rm -f conf$$subs.awk
  cat >>$CONFIG_STATUS <<_ACEOF || ac_write_fail=1
  _ACAWK
@@ -3491,7 +3486,7 @@ $NetBSD$
    for (key in S) S_is_set[key] = 1
    FS = ""
  
-@@ -16910,21 +16991,29 @@ if sed "s/$ac_cr//" < /dev/null > /dev/null 2>&1; then
+@@ -16910,21 +16989,29 @@ if sed "s/$ac_cr//" < /dev/null > /dev/null 2>&1; then
    sed "s/$ac_cr\$//; s/$ac_cr/$ac_cs_awk_cr/g"
  else
    cat
@@ -3530,7 +3525,7 @@ $NetBSD$
  s/^[^=]*=[	 ]*$//
  }'
  fi
-@@ -16936,7 +17025,7 @@ fi # test -n "$CONFIG_FILES"
+@@ -16936,7 +17023,7 @@ fi # test -n "$CONFIG_FILES"
  # No need to generate them if there are no CONFIG_HEADERS.
  # This happens for instance with `./config.status Makefile'.
  if test -n "$CONFIG_HEADERS"; then
@@ -3539,7 +3534,7 @@ $NetBSD$
  BEGIN {
  _ACEOF
  
-@@ -16948,11 +17037,11 @@ _ACEOF
+@@ -16948,11 +17035,11 @@ _ACEOF
  # handling of long lines.
  ac_delim='%!_!# '
  for ac_last_try in false false :; do
@@ -3554,7 +3549,7 @@ $NetBSD$
    else
      ac_delim="$ac_delim!$ac_delim _$ac_delim!! "
    fi
-@@ -17037,7 +17126,7 @@ cat >>$CONFIG_STATUS <<_ACEOF || ac_write_fail=1
+@@ -17037,7 +17124,7 @@ cat >>$CONFIG_STATUS <<_ACEOF || ac_write_fail=1
  _ACAWK
  _ACEOF
  cat >>$CONFIG_STATUS <<\_ACEOF || ac_write_fail=1
@@ -3563,7 +3558,7 @@ $NetBSD$
  fi # test -n "$CONFIG_HEADERS"
  
  
-@@ -17050,7 +17139,7 @@ do
+@@ -17050,7 +17137,7 @@ do
    esac
    case $ac_mode$ac_tag in
    :[FHL]*:*);;
@@ -3572,7 +3567,7 @@ $NetBSD$
    :[FH]-) ac_tag=-:-;;
    :[FH]*) ac_tag=$ac_tag:$ac_tag.in;;
    esac
-@@ -17069,7 +17158,7 @@ do
+@@ -17069,7 +17156,7 @@ do
      for ac_f
      do
        case $ac_f in
@@ -3581,7 +3576,7 @@ $NetBSD$
        *) # Look for the file first in the build tree, then in the source tree
  	 # (if the path is not absolute).  The absolute path cannot be DOS-style,
  	 # because $ac_f cannot contain `:'.
-@@ -17078,7 +17167,7 @@ do
+@@ -17078,7 +17165,7 @@ do
  	   [\\/$]*) false;;
  	   *) test -f "$srcdir/$ac_f" && ac_f="$srcdir/$ac_f";;
  	   esac ||
@@ -3590,7 +3585,7 @@ $NetBSD$
        esac
        case $ac_f in *\'*) ac_f=`$as_echo "$ac_f" | sed "s/'/'\\\\\\\\''/g"`;; esac
        as_fn_append ac_file_inputs " '$ac_f'"
-@@ -17104,8 +17193,8 @@ $as_echo "$as_me: creating $ac_file" >&6;}
+@@ -17104,8 +17191,8 @@ $as_echo "$as_me: creating $ac_file" >&6;}
      esac
  
      case $ac_tag in
@@ -3601,7 +3596,7 @@ $NetBSD$
      esac
      ;;
    esac
-@@ -17241,23 +17330,24 @@ s&@INSTALL@&$ac_INSTALL&;t t
+@@ -17241,23 +17328,24 @@ s&@INSTALL@&$ac_INSTALL&;t t
  s&@MKDIR_P@&$ac_MKDIR_P&;t t
  $ac_datarootdir_hack
  "
@@ -3636,7 +3631,7 @@ $NetBSD$
   ;;
    :H)
    #
-@@ -17266,21 +17356,21 @@ which seems to be undefined.  Please make sure it is d
+@@ -17266,21 +17354,21 @@ which seems to be undefined.  Please make sure it is d
    if test x"$ac_file" != x-; then
      {
        $as_echo "/* $configure_input  */" \
@@ -3666,7 +3661,7 @@ $NetBSD$
    fi
  # Compute "$ac_file"'s index in $config_headers.
  _am_arg="$ac_file"
-@@ -18560,7 +18650,7 @@ _ACEOF
+@@ -18560,7 +18648,7 @@ _ACEOF
  ac_clean_files=$ac_clean_files_save
  
  test $ac_write_fail = 0 ||
@@ -3675,7 +3670,7 @@ $NetBSD$
  
  
  # configure is writing to config.log, and then calls config.status.
-@@ -18581,7 +18671,7 @@ if test "$no_create" != yes; then
+@@ -18581,7 +18669,7 @@ if test "$no_create" != yes; then
    exec 5>>config.log
    # Use ||, not &&, to avoid exiting from the if with $? = 1, which
    # would make configure fail if this is the last instruction.
