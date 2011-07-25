@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/webcolors.py
+${PYSITELIB}/webcolors.pyc
+${PYSITELIB}/webcolors.pyo

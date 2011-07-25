@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/microhttpd.h
+info/microhttpd-tutorial.info
+info/microhttpd.info
+lib/libmicrohttpd.la
+lib/pkgconfig/libmicrohttpd.pc
+man/man3/libmicrohttpd.3
