@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.521 2011/06/19 07:36:56 taca Exp $
+# $NetBSD: Makefile,v 1.522 2011/07/11 18:27:29 jmcneill Exp $
 #
 
 COMMENT=	System utilities
@@ -236,6 +236,7 @@ SUBDIR+=	libnotify
 SUBDIR+=	libol
 SUBDIR+=	liboobs
 SUBDIR+=	libpciaccess
+SUBDIR+=	libvirt
 SUBDIR+=	lilo
 SUBDIR+=	logfinder
 SUBDIR+=	logrot
