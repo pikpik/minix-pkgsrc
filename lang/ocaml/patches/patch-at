@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-at,v 1.22 2011/07/20 14:10:09 riastradh Exp $
 
 . Include CFLAGS in bytecccompopts and LDFLAGS in bytecclinkopts.
 . Add cases for dragonfly support.
@@ -46,7 +46,7 @@ $NetBSD$
      x86_64-*-kfreebsd*)           natdynlink=true;;
      i386-*-gnu0.3)                natdynlink=true;;
 +    i[3456]86-*-netbsdelf)        natdynlink=true;;
-+    x86_64-*-netbsdelf)           natdynlink=true;;
++    x86_64-*-netbsd)              natdynlink=true;;
    esac
  fi
  
