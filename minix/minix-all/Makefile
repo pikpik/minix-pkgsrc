@@ -4,10 +4,14 @@ DISTNAME=		minix-all-20110726
 CATEGORIES=		minix meta-pkgs
 MASTER_SITES=		# empty
 DISTFILES=		# empty
+
 MAINTAINER=		tcort@minix3.org
 HOMEPAGE=		http://minix3.org/
 COMMENT=		meta package used to install all packages
+
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+DEPENDS+=		pkgin-[0-9]*:../../pkgtools/pkgin
 
 .include "../../mk/bsd.prefs.mk"
 
