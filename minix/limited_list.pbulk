@@ -109,6 +109,7 @@ math/mpfr
 math/units
 minix/clang
 minix/compiler-rt
+minix/minix-all
 minix/x11
 misc/ascii
 misc/cowsay

@@ -18,7 +18,7 @@ do-extract:
 print-PLIST:
 	@${ECHO} "@comment \$$NetBSD\$$";
 	@${ECHO} "@exec pkgin up";
-	@for package in $$(cat ../limited_list.pbulk); \
+	@for package in $$(cat ../limited_list.pbulk | grep -v minix-all); \
 	do \
 		${ECHO} "@exec pkgin -y in $$(cd ../../$${package} && bmake show-var VARNAME=PKGNAME)"; \
 	done
