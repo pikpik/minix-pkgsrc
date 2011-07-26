@@ -1,6 +1,6 @@
 $NetBSD$
 
---- utils/timings.cc.orig	Thu Jul 21 16:07:50 2011
+--- utils/timings.cc.orig	Sun Feb 27 09:07:47 2011
 +++ utils/timings.cc
 @@ -32,11 +32,11 @@ site: http://www.cs.unipr.it/ppl/ . */
  #include <cerrno>
