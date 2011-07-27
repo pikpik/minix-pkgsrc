@@ -1,0 +1,15 @@
+===========================================================================
+$NetBSD$
+
+Removing this package will not remove any packages that it installed.
+
+If there is a package conflict (i.e. two or more packages that can't
+be installed together), only one of the conflicting packages will be
+installed.
+
+If your packages weren't up to date when you tried to install this
+package, some packages may not be installed. To fix the problem: remove
+this package, perform a full-upgrade using pkgin, and then install this
+package again.
+
+===========================================================================
