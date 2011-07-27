@@ -1,4 +1,4 @@
-/*	$NetBSD: stat_flags.c,v 1.19 2004/05/25 14:54:55 hannken Exp $	*/
+/*	$NetBSD: stat_flags.c,v 1.4 2008/11/06 02:14:52 jschauma Exp $	*/
 
 /*-
  * Copyright (c) 1993
@@ -32,10 +32,12 @@
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
+#if 0
 #if HAVE_NBTOOL_CONFIG_H
 #include "nbtool_config.h"
 #else
 #define HAVE_STRUCT_STAT_ST_FLAGS 1
+#endif
 #endif
 
 #include <nbcompat.h>
@@ -46,7 +48,7 @@
 #if 0
 static char sccsid[] = "@(#)stat_flags.c	8.2 (Berkeley) 7/28/94";
 #else
-__RCSID("$NetBSD: stat_flags.c,v 1.19 2004/05/25 14:54:55 hannken Exp $");
+__RCSID("$NetBSD: stat_flags.c,v 1.4 2008/11/06 02:14:52 jschauma Exp $");
 #endif
 #endif /* not lint */
 
