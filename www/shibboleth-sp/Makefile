@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/03/15 13:15:37 pettai Exp $
+# $NetBSD: Makefile,v 1.2 2011/04/22 13:45:00 obache Exp $
 #
 
 DISTNAME=	shibboleth-sp-2.4.2
 PKGREVISION=	1
 CATEGORIES=	www
-MASTER_SITES=	http://shibboleth.internet2.edu/downloads/shibboleth/cppsp/latest/
+MASTER_SITES=	http://www.shibboleth.net/downloads/service-provider/2.4.2/
 
 MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://shibboleth.internet2.edu/
