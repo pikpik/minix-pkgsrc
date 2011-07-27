@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.96 2011/04/22 13:44:24 obache Exp $
+# $NetBSD: Makefile,v 1.97 2011/06/19 16:58:18 pettai Exp $
 
-DISTNAME=		lftp-4.2.3
+DISTNAME=		lftp-4.3.1
 CATEGORIES=		net
 MASTER_SITES=		http://ftp.yars.free.net/pub/source/lftp/ \
 			ftp://ftp.st.ryukoku.ac.jp/pub/network/ftp/lftp/ \
