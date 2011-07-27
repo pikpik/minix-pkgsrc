@@ -7,6 +7,7 @@
 # change in the pkg_* tools that pkgsrc relies on for proper operation.
 
 DISTNAME=		pkg_install-${VERSION}
+PKGREVISION=		1
 CATEGORIES=		pkgtools
 MASTER_SITES=		# empty
 DISTFILES=		# empty

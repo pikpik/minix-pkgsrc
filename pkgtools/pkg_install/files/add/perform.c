@@ -60,8 +60,6 @@ __RCSID("$NetBSD: perform.c,v 1.98 2010/09/14 22:26:18 gdt Exp $");
 #include "add.h"
 #include "version.h"
 
-#define MAX_PKG_DO_RECURSION_DEPTH (1024)
-
 struct pkg_meta {
 	char *meta_contents;
 	char *meta_comment;
@@ -128,7 +126,12 @@ static const struct pkg_meta_desc {
 	{ 0, NULL, 0, 0 },
 };
 
-static int pkg_do(const char *, int, int, int);
+struct dependency_stack {
+	struct dependency_stack *prev;
+	const char *pkgpath;
+};
+
+static int pkg_do(const char *, int, int, struct dependency_stack *);
 
 static int
 end_of_version(const char *opsys, const char *version_end)
@@ -1142,7 +1145,7 @@ check_implicit_conflict(struct pkg_task *pkg)
 }
 
 static int
-check_dependencies(struct pkg_task *pkg, int depth)
+check_dependencies(struct pkg_task *pkg, struct dependency_stack *dependency_stack)
 {
 	plist_t *p;
 	char *best_installed;
@@ -1173,7 +1176,7 @@ check_dependencies(struct pkg_task *pkg, int depth)
 				    p->name);
 				continue;
 			}
-			if (pkg_do(p->name, 1, 0, depth)) {
+			if (pkg_do(p->name, 1, 0, dependency_stack)) {
 				if (ForceDepends) {
 					warnx("Can't install dependency %s, "
 					    "continuing", p->name);
@@ -1422,16 +1425,32 @@ check_license(struct pkg_task *pkg)
  * Install a single package.
  */
 static int
-pkg_do(const char *pkgpath, int mark_automatic, int top_level, int depth)
+pkg_do(const char *pkgpath, int mark_automatic, int top_level,
+	struct dependency_stack *dependency_stack)
 {
 	char *archive_name;
 	int status, invalid_sig;
 	struct pkg_task *pkg;
 
-	if (++depth > MAX_PKG_DO_RECURSION_DEPTH) {
-		warnx("circular dependency detected");
-		return -1;
+	/* workaround 2010-12-10: prevent endless recursion for circular dependencies */
+	struct dependency_stack dependency_stack_top;
+
+	dependency_stack_top.prev = dependency_stack;
+	dependency_stack_top.pkgpath = pkgpath;
+
+	while (dependency_stack) {
+		if (strcmp(dependency_stack->pkgpath, pkgpath) == 0) {
+			fprintf(stderr, "warning: ignoring circular dependency:\n");
+			dependency_stack = &dependency_stack_top;
+			while (dependency_stack) {
+				fprintf(stderr, "- %s\n", dependency_stack->pkgpath);
+				dependency_stack = dependency_stack->prev;
+			}
+			return 0;
+		}
+		dependency_stack = dependency_stack->prev;
 	}
+	/* end workaround */
 
 	pkg = xcalloc(1, sizeof(*pkg));
 
@@ -1544,7 +1563,7 @@ pkg_do(const char *pkgpath, int mark_automatic, int top_level, int depth)
 			pkg->install_logdir_real = NULL;
 		}
 
-		if (check_dependencies(pkg, depth))
+		if (check_dependencies(pkg, &dependency_stack_top))
 			goto nuke_pkgdb;
 	} else {
 		/*
@@ -1552,7 +1571,7 @@ pkg_do(const char *pkgpath, int mark_automatic, int top_level, int depth)
 		 * Install/update dependencies first and
 		 * write the current package to disk afterwards.
 		 */ 
-		if (check_dependencies(pkg, depth))
+		if (check_dependencies(pkg, &dependency_stack_top))
 			goto clean_memory;
 
 		if (write_meta_data(pkg))
@@ -1636,7 +1655,7 @@ pkg_perform(lpkg_head_t *pkgs)
 	lpkg_t *lpp;
 
 	while ((lpp = TAILQ_FIRST(pkgs)) != NULL) {
-		if (pkg_do(lpp->lp_name, Automatic, 1, 0))
+		if (pkg_do(lpp->lp_name, Automatic, 1, NULL))
 			++errors;
 		TAILQ_REMOVE(pkgs, lpp, lp_link);
 		free_lpkg(lpp);
