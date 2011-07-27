@@ -1,8 +1,5 @@
 $NetBSD$
 
-SHA1 (ecj-4.5.jar) = 58c1d79c64c8cd718550f32a932ccfde8d1e6449
-RMD160 (ecj-4.5.jar) = d3f4da657f086b6423f74e93f001132f4855368a
-Size (ecj-4.5.jar) = 1470676 bytes
 SHA1 (gcc-4.7-20110625.tar.bz2) = 0a76d29ddf0a00fbae9a98c4a45b0cd821095a56
 RMD160 (gcc-4.7-20110625.tar.bz2) = f323091b439e8bc5aa646fc1d34290cd0f65967b
 Size (gcc-4.7-20110625.tar.bz2) = 69611282 bytes

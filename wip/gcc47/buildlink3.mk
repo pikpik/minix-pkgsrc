@@ -11,9 +11,12 @@ FIND_PREFIX:=	BUILDLINK_PREFIX.gcc47=gcc47
 _GCC47_SUBDIR=	gcc47
 _GCC47_PREFIX=	${BUILDLINK_PREFIX.gcc47}/${_GCC47_SUBDIR}
 
+# Minix gcc dependency override
+.if !defined(MINIX_GCC_NODEP)
 BUILDLINK_API_DEPENDS.gcc47+=	gcc47>=${_GCC_REQD}
 BUILDLINK_ABI_DEPENDS.gcc47?=	gcc47>=4.7.0
 BUILDLINK_PKGSRCDIR.gcc47?=	../../lang/gcc47
+.endif
 
 .if exists(${_GCC47_PREFIX}/bin/gcc)
 
@@ -56,7 +59,11 @@ BUILDLINK_DEPMETHOD.gcc47+=	full
 BUILDLINK_DEPMETHOD.gcc47?=	build
 .endif
 
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} != "Minix"
 .include "../../mk/pthread.buildlink3.mk"
+.endif
+
 .include "../../devel/gettext-lib/buildlink3.mk"
 .endif # GCC47_BUILDLINK3_MK
 
