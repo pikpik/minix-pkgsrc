@@ -8,4 +8,6 @@ SHA1 (patch-configure) = b1b568eb39be99b9685fea1a2c384866694a7d50
 SHA1 (patch-configure.ac) = f0215438d747b980c8d09a5b3ac6e2983a1a6240
 SHA1 (patch-demos_ppl__lcdd_ppl__lcdd.cc) = e4e56e43c59011b9f998796ccf7c40a1ee646dfd
 SHA1 (patch-demos_ppl__pips_ppl__pips.cc) = 3e7c037f3fe212ecfeb11b5a99b5903531a6e94a
+SHA1 (patch-doc_Makefile.am) = 8879c2e4c26afa3b668678ade07aa10292521ae3
+SHA1 (patch-doc_Makefile.in) = d91024f064945665dc8631a19f8ef9a78251e88f
 SHA1 (patch-utils_timings.cc) = dd72e825ec1ceec32e1a90c007808dbb9fdf6e1e
