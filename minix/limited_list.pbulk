@@ -34,6 +34,7 @@ devel/bmake
 devel/byacc
 devel/cmake
 devel/cscope
+devel/cvsps
 devel/diffutils
 devel/exctags
 devel/flex

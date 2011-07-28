@@ -36,6 +36,7 @@
 @exec pkgin -y in byacc-20050813nb1
 @exec pkgin -y in cmake-2.8.4nb1
 @exec pkgin -y in cscope-15.7anb1
+@exec pkgin -y in cvsps-2.1nb2
 @exec pkgin -y in diffutils-2.8.1nb5
 @exec pkgin -y in exctags-5.8
 @exec pkgin -y in flex-2.5.35nb2

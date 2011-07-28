@@ -1,6 +1,7 @@
 # $NetBSD$
 
 DISTNAME=		minix-all-20110728
+PKGREVISION=		1
 CATEGORIES=		minix meta-pkgs
 MASTER_SITES=		# empty
 DISTFILES=		# empty
