@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.8 2004/09/22 08:09:42 jlam Exp $
+@comment $NetBSD: PLIST,v 1.9 2006/03/31 23:56:28 jlam Exp $
 bin/fftw-wisdom
 bin/fftw-wisdom-to-conf
 include/fftw3.f
+include/fftw3.f03
 include/fftw3.h
 info/fftw3.info
 lib/libfftw3.la
