@@ -1,5 +1,4 @@
-@comment $NetBSD$
-bin/mfplain
+@comment $NetBSD: PLIST,v 1.1.1.1 2010/06/16 23:57:26 minskim Exp $
 share/texmf-dist/metapost/base/TEX.mp
 share/texmf-dist/metapost/base/boxes.mp
 share/texmf-dist/metapost/base/format.mp
