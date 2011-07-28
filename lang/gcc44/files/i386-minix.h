@@ -146,29 +146,3 @@ Boston, MA 02110-1301, USA.  */
 
 #undef  DEFAULT_PCC_STRUCT_RETURN
 #define DEFAULT_PCC_STRUCT_RETURN 0
-
-
-/* By default, target has a 80387, uses IEEE compatible arithmetic,
-   and returns float values in the 387.  */
-#undef TARGET_SUBTARGET_DEFAULT
-#define TARGET_SUBTARGET_DEFAULT (MASK_IEEE_FP | MASK_80387 | MASK_FLOAT_RETURNS)
-
-#undef  LONG_DOUBLE_TYPE_SIZE
-#define LONG_DOUBLE_TYPE_SIZE 64
-
-#undef  SIZE_TYPE
-#define SIZE_TYPE "unsigned int"
-
-
-/* This is how we tell the assembler that a symbol is weak.  */
-
-#undef ASM_WEAKEN_LABEL
-#define ASM_WEAKEN_LABEL(FILE,NAME)					\
-  do 									\
-    {									\
-      fputs ("\t" GLOBAL_ASM_OP "\t", FILE); assemble_name (FILE, NAME);		\
-      fputc ('\n', FILE);						\
-      fputs ("\t.weak\t", FILE); assemble_name (FILE, NAME);		\
-      fputc ('\n', FILE);						\
-    }									\
-  while (0)
