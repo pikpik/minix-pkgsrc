@@ -1651,6 +1651,11 @@ pkg_perform(lpkg_head_t *pkgs)
 		free_lpkg(lpp);
 	}
 
+	if (dependency_chain != NULL) { /* ensure stack is empty */
+		warnx("leaving pkg_perform with a non-empty stack.");
+		++errors;
+	}
+
 	return errors;
 }
 
