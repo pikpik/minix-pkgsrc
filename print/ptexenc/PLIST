@@ -1,3 +1,4 @@
 @comment $NetBSD$
 include/ptexenc/ptexenc.h
+include/ptexenc/unicode.h
 lib/libptexenc.la
