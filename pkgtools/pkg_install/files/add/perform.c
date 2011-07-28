@@ -104,6 +104,12 @@ struct pkg_task {
 	char **dependencies;
 };
 
+struct dependency_chain {
+	const char *pkgpath;
+	struct dependency_chain *next;
+};
+static struct dependency_chain *dependency_chain = NULL;
+
 static const struct pkg_meta_desc {
 	size_t entry_offset;
 	const char *entry_filename;
@@ -128,7 +134,10 @@ static const struct pkg_meta_desc {
 	{ 0, NULL, 0, 0 },
 };
 
-static int pkg_do(const char *, int, int, int);
+static int pkg_do(const char *, int, int);
+
+static int dependency_push(const char *);
+static void dependency_pop(void);
 
 static int
 end_of_version(const char *opsys, const char *version_end)
@@ -1142,7 +1151,7 @@ check_implicit_conflict(struct pkg_task *pkg)
 }
 
 static int
-check_dependencies(struct pkg_task *pkg, int depth)
+check_dependencies(struct pkg_task *pkg)
 {
 	plist_t *p;
 	char *best_installed;
@@ -1173,7 +1182,7 @@ check_dependencies(struct pkg_task *pkg, int depth)
 				    p->name);
 				continue;
 			}
-			if (pkg_do(p->name, 1, 0, depth)) {
+			if (pkg_do(p->name, 1, 0)) {
 				if (ForceDepends) {
 					warnx("Can't install dependency %s, "
 					    "continuing", p->name);
@@ -1422,16 +1431,15 @@ check_license(struct pkg_task *pkg)
  * Install a single package.
  */
 static int
-pkg_do(const char *pkgpath, int mark_automatic, int top_level, int depth)
+pkg_do(const char *pkgpath, int mark_automatic, int top_level)
 {
 	char *archive_name;
 	int status, invalid_sig;
 	struct pkg_task *pkg;
+	int rc;
 
-	if (++depth > MAX_PKG_DO_RECURSION_DEPTH) {
-		warnx("circular dependency detected");
-		return -1;
-	}
+	if ((rc = dependency_push(pkgpath)) != 1)
+		return rc;
 
 	pkg = xcalloc(1, sizeof(*pkg));
 
@@ -1544,7 +1552,7 @@ pkg_do(const char *pkgpath, int mark_automatic, int top_level, int depth)
 			pkg->install_logdir_real = NULL;
 		}
 
-		if (check_dependencies(pkg, depth))
+		if (check_dependencies(pkg))
 			goto nuke_pkgdb;
 	} else {
 		/*
@@ -1552,7 +1560,7 @@ pkg_do(const char *pkgpath, int mark_automatic, int top_level, int depth)
 		 * Install/update dependencies first and
 		 * write the current package to disk afterwards.
 		 */ 
-		if (check_dependencies(pkg, depth))
+		if (check_dependencies(pkg))
 			goto clean_memory;
 
 		if (write_meta_data(pkg))
@@ -1626,6 +1634,7 @@ clean_memory:
 	free(pkg->pkgname);
 clean_find_archive:
 	free(pkg);
+	dependency_pop();
 	return status;
 }
 
@@ -1636,7 +1645,7 @@ pkg_perform(lpkg_head_t *pkgs)
 	lpkg_t *lpp;
 
 	while ((lpp = TAILQ_FIRST(pkgs)) != NULL) {
-		if (pkg_do(lpp->lp_name, Automatic, 1, 0))
+		if (pkg_do(lpp->lp_name, Automatic, 1))
 			++errors;
 		TAILQ_REMOVE(pkgs, lpp, lp_link);
 		free_lpkg(lpp);
@@ -1644,3 +1653,72 @@ pkg_perform(lpkg_head_t *pkgs)
 
 	return errors;
 }
+
+
+/*
+ * Add an element to the dependency chain and check for circular dependency
+ * while at it.
+ * 
+ * returns 1 on success, 0 on circular dep detected, -1 on error.
+ */
+static int
+dependency_push(const char *pkgpath)
+{
+	struct dependency_chain *dep;
+	struct dependency_chain **last_pdep;
+
+	/* Check if that package is already in the chain. */
+	last_pdep = &dependency_chain;
+	for (dep = *last_pdep; dep; last_pdep = &(dep->next), dep = dep->next) {
+		if (strcmp(dep->pkgpath, pkgpath) == 0) {
+			/* Found it - that means we have a circular dependency */
+			fprintf(stderr, "warning: ignoring circular dependency:\n");
+			while (dep != NULL) {
+				fprintf(stderr, "- %s requires\n", dep->pkgpath);
+				dep = dep->next;
+			}
+			fprintf(stderr, "- %s\n", pkgpath);
+			return 0;
+		}
+	}
+
+	/* Not found. Add an entry to the end of the chain */
+	dep = (struct dependency_chain *)malloc(sizeof(struct dependency_chain));
+	if (dep == NULL) {
+		fprintf(stderr, "Out of memory in dependency_push for %s\n",
+			pkgpath);
+		return -1;
+	}
+
+	dep->pkgpath = pkgpath;
+	dep->next = NULL;
+	*last_pdep = dep;
+	return 1;
+}
+
+
+/*
+ * Remove the last entry from the dependency chain.
+ */
+static void 
+dependency_pop(void)
+{
+	struct dependency_chain *dep = dependency_chain;
+	struct dependency_chain **pdep = &dependency_chain;
+
+	/* This should never happen */
+	if (dep == NULL) {
+		fprintf(stderr, "warning: empty dependency chain on pop\n");
+		return;
+	}
+
+	while (dep->next != NULL) {
+		pdep = &(dep->next);
+		dep = dep->next;
+	}
+
+	free(dep);
+	*pdep = NULL;
+}
+
+
