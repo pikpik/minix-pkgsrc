@@ -130,7 +130,7 @@
 @exec pkgin -y in pkgdiff-1.1
 @exec pkgin -y in pkgfind-20050804
 @exec pkgin -y in pkgin-0.4.2nb2
-@exec pkgin -y in pkg_install-20110215
+@exec pkgin -y in pkg_install-20110215nb2
 @exec pkgin -y in pkg_install-info-4.5nb3
 @exec pkgin -y in pkg_leaves-1.2
 @exec pkgin -y in pkg_tarup-1.9
