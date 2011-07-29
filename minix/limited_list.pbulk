@@ -72,6 +72,7 @@ editors/ed
 editors/hexedit
 editors/mg
 editors/nano
+editors/pico
 editors/vilearn
 editors/vim
 editors/nvi
