@@ -60,8 +60,6 @@ __RCSID("$NetBSD: perform.c,v 1.98 2010/09/14 22:26:18 gdt Exp $");
 #include "add.h"
 #include "version.h"
 
-#define MAX_PKG_DO_RECURSION_DEPTH (1024)
-
 struct pkg_meta {
 	char *meta_contents;
 	char *meta_comment;
