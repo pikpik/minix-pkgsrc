@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.586 2011/06/19 09:10:43 obache Exp $
+# $NetBSD: Makefile,v 1.587 2011/07/10 12:21:47 spz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
 
+SUBDIR+=	FlightCrew
 SUBDIR+=	GutenMark
 SUBDIR+=	GutenMark-words
 SUBDIR+=	Markdown
