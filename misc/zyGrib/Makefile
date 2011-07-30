@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2011/04/22 13:44:14 obache Exp $
+# $NetBSD: Makefile,v 1.18 2011/06/17 15:57:13 plunky Exp $
 #
 
-DISTNAME=	zyGrib-4.0.1
+DISTNAME=	zyGrib-5.0.2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.zygrib.org/getfile.php?file=
 EXTRACT_SUFX=	.tgz
