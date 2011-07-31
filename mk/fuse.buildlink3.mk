@@ -34,7 +34,7 @@ BUILDLINK_PASSTHRU_DIRS+=	/usr/local/include/fuse
 
 .    include "../../filesystems/fuse/buildlink3.mk"
 
-.  elif ${OPSYS} == "NetBSD"
+.  elif (${OPSYS} == "NetBSD") || (${OPSYS} == "Minix")
 .     if !exists(/usr/include/fuse.h)
 PKG_FAIL_REASON+=	"Couldn't find fuse headers, please install librefuse."
 .     endif

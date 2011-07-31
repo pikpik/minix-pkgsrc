@@ -1,0 +1,11 @@
+--- configure.ac.orig	2011-07-31 20:32:04.126000067 +0400
++++ configure.ac	2011-07-31 20:31:18.071000067 +0400
+@@ -115,7 +115,7 @@ export PKG_CONFIG_PATH=${PKG_CONFIG_PATH
+ AC_SYS_LARGEFILE
+ 
+ case "$target_os" in
+-linux*|darwin*|netbsd*|minix*)
++linux*|darwin*|netbsd*)
+ 	PKG_CHECK_MODULES(FUSE_MODULE, fuse >= 2.6.0, [ compile_fuse_module=true ],
+ 	[
+ 	 AC_MSG_ERROR([FUSE >= 2.6.0 was not found. Either it's not fully installed (e.g. fuse, fuse-utils, libfuse, libfuse2, libfuse-dev, etc packages) or files from an old version are still present. See FUSE at http://fuse.sf.net/])

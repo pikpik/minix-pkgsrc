@@ -1,0 +1,12 @@
+--- configure.orig	2011-07-31 18:01:37.226000068 +0400
++++ configure	2011-07-31 19:11:16.823000068 +0400
+@@ -20271,6 +20271,9 @@ freebsd*)
+ echo "$as_me: error: Please see FreeBSD support at http://www.freshports.org/sysutils/fusefs-ntfs" >&2;}
+    { (exit 1); exit 1; }; }
+ 	;;
++minix*)
++	FUSE_MODULE_LIBS="-Wl,-wrap,main -lrefuse -lpuffs -lsys -lminlib"
++	;;
+ *)
+ 	{ { echo "$as_me:$LINENO: error: ntfs-3g can be built only under Linux, FreeBSD, Mac OS X, and NetBSD." >&5
+ echo "$as_me: error: ntfs-3g can be built only under Linux, FreeBSD, Mac OS X, and NetBSD." >&2;}
