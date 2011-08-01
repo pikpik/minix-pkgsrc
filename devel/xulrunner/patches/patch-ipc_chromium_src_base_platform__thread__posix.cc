@@ -18,7 +18,7 @@ $NetBSD$
 +#elif defined(OS_NETBSD)
 +  return _lwp_self();
 +#elif defined(OS_DRAGONFLY)
-+#error No DragonFly support. hint: look at FreeBSD ports.
++  return lwp_gettid();
  #elif defined(OS_LINUX)
    return syscall(__NR_gettid);
  #endif
