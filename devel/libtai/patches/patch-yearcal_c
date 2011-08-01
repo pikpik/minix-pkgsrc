@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix illegal C.
+
+--- yearcal.c~	1998-10-13 16:52:20.000000000 +0000
++++ yearcal.c
+@@ -16,7 +16,7 @@ char *montab[] = {
+ , "December"
+ } ;
+ 
+-void main(argc,argv)
++int main(argc,argv)
+ int argc;
+ char **argv;
+ {
