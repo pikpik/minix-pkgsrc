@@ -31,3 +31,4 @@ SHA1 (patch-platform.c) = fcbea87b04d07ef45af5380f9baa024fada9974f
 SHA1 (patch-readconf.c) = 869b18942f7df0a835ad7e3f7af5bc55905bfc49
 SHA1 (patch-servconf.c) = e1788c2c179dac35388b66639494fe295f81c6d1
 SHA1 (patch-ssh-keygen.c) = 666cf9f17b03375fc1c8c9824921aeaa5322884f
+SHA1 (patch-sshd__config) = 14167faebe806ab2431f3b99464815fd7d2e9968

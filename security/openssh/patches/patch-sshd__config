@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- sshd_config.orig	Fri Sep 10 01:20:12 2010
++++ sshd_config
+@@ -94,7 +94,7 @@
+ #PrintLastLog yes
+ #TCPKeepAlive yes
+ #UseLogin no
+-#UsePrivilegeSeparation yes
++UsePrivilegeSeparation no # not well supported under Minix
+ #PermitUserEnvironment no
+ #Compression delayed
+ #ClientAliveInterval 0
