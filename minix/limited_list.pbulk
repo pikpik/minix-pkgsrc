@@ -42,6 +42,7 @@ devel/gdb-6.8
 devel/gettext-lib
 devel/gettext-tools
 devel/gindent
+devel/glib
 devel/gmake
 devel/gmp
 devel/gtexinfo

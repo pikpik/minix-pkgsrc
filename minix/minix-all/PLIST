@@ -44,6 +44,7 @@
 @exec pkgin -y in gettext-lib-0.18.1.1
 @exec pkgin -y in gettext-tools-0.18.1.1
 @exec pkgin -y in gindent-2.2.9nb1
+@exec pkgin -y in glib-1.2.10nb10
 @exec pkgin -y in gmake-3.82nb2
 @exec pkgin -y in gmp-5.0.2
 @exec pkgin -y in gtexinfo-4.13nb1
