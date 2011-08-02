@@ -4,7 +4,7 @@ Only define HAS_DB if it hasn't been defined.
 Add support for NetBSD 5.x and DragonFly BSD.
 Handle closefrom() on FreeBSD.
 
---- src/util/sys_defs.h.orig	2009-11-14 23:32:37.000000000 +0000
+--- src/util/sys_defs.h.orig	Tue Mar  1 19:10:46 2011
 +++ src/util/sys_defs.h
 @@ -29,8 +29,8 @@
      || defined(BSDI2) || defined(BSDI3) || defined(BSDI4) \
@@ -13,21 +13,45 @@ Handle closefrom() on FreeBSD.
 -    || defined(NETBSD4) \
 -    || defined(EKKOBSD1)
 +    || defined(NETBSD4) || defined(NETBSD5) \
-+    || defined(EKKOBSD1) || defined(DRAGONFLY)
++    || defined(EKKOBSD1) || defined(DRAGONFLY) || defined(MINIX3)
  #define SUPPORTED
  #include <sys/types.h>
  #include <sys/param.h>
-@@ -43,7 +43,9 @@
+@@ -41,10 +41,16 @@
+ #define HAS_FCNTL_LOCK
+ #define INTERNAL_LOCK	MYFLOCK_STYLE_FLOCK
  #define DEF_MAILBOX_LOCK "flock, dotlock"
++#ifndef MINIX3
  #define HAS_SUN_LEN
++#endif
  #define HAS_FSYNC
 +#ifndef HAS_DB
  #define HAS_DB
 +#endif
++#ifndef MINIX3
  #define HAS_SA_LEN
++#endif
  #define DEF_DB_TYPE	"hash"
  #if (defined(__NetBSD_Version__) && __NetBSD_Version__ >= 104250000)
-@@ -163,9 +166,19 @@
+ #define ALIAS_DB_MAP   "hash:/etc/mail/aliases"	/* sendmail 8.10 */
+@@ -91,6 +97,11 @@
+ /* #define HAS_IPV6 find out interface lookup method */
+ #endif
+ 
++#ifdef MINIX3
++#define HAS_NWIOGIPCONF
++#define NO_UTIMES
++#endif
++
+ /* __FreeBSD_version version is major+minor */
+ 
+ #if __FreeBSD_version >= 220000
+@@ -160,13 +171,23 @@
+ #define HAS_CLOSEFROM
+ #endif
+ 
+-#if (defined(__NetBSD_Version__) && __NetBSD_Version__ >= 102000000)
++#if (defined(__NetBSD_Version__) && __NetBSD_Version__ >= 102000000) && !defined(MINIX3)
  #define HAS_FUTIMES
  #endif
  
@@ -47,7 +71,7 @@ Handle closefrom() on FreeBSD.
      || defined(USAGI_LIBINET6)
  #ifndef NO_IPV6
  # define HAS_IPV6
-@@ -174,14 +187,16 @@
+@@ -175,14 +196,16 @@
  
  #if (defined(__FreeBSD_version) && __FreeBSD_version >= 300000) \
      || (defined(__NetBSD_Version__) && __NetBSD_Version__ >= 103000000) \
@@ -66,3 +90,16 @@ Handle closefrom() on FreeBSD.
  #  define EVENTS_STYLE	EVENTS_STYLE_KQUEUE
  # endif
  #endif
+@@ -1275,10 +1298,12 @@ extern int dup2_pass_on_exec(int oldd, int newd);
+   */
+ #ifndef HAS_IPV6
+ #define EMULATE_IPV4_ADDRINFO
++#ifndef MINIX3
+ #define MISSING_INET_PTON
+ #define MISSING_INET_NTOP
+ extern const char *inet_ntop(int, const void *, char *, size_t);
+ extern int inet_pton(int, const char *, void *);
++#endif
+ 
+ #endif
+ 

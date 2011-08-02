@@ -106,6 +106,7 @@ lang/p2c
 lang/perl5
 lang/tcl
 lang/wsbasic
+mail/postfix
 math/bc
 math/mpcomplex
 math/mpfr
