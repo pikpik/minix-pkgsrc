@@ -26,6 +26,7 @@ CONFIGURE_ARGS+=	--enable-threads
 CONFIGURE_ENV+=		LIB_RUNTIME_DIR=${PREFIX}/lib
 MAKE_ENV+=		TOUCH=${TOUCH:Q}
 PTHREAD_OPTS+=		require
+USE_TOOLS+=			autoconf
 
 PRIVILEGED_STAGES+=	clean
 
@@ -46,6 +47,9 @@ INSTALLATION_DIRS+=	include/tk/generic
 INSTALLATION_DIRS+=	include/tk/unix
 
 DESTDIRPREFIX=		${DESTDIR}${PREFIX}
+
+pre-configure:
+	cd ${WRKSRC}/unix && autoconf
 
 post-install:
 	rm -f ${DESTDIRPREFIX:Q}/bin/wish
