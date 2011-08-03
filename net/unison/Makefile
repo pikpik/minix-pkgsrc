@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2011/04/22 14:40:45 obache Exp $
+# $NetBSD: Makefile,v 1.44 2011/05/02 13:25:25 wiz Exp $
 
 DISTNAME=	unison-2.40.63
 CATEGORIES=	net
@@ -12,7 +12,11 @@ LICENSE=	gnu-gpl-v3
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-BUILDLINK_API_DEPENDS.ocaml+=	ocaml>=3.08.2
+.if (${MACHINE_ARCH} == "arm")
+BUILDLINK_ABI_DEPENDS.ocaml+=	ocaml>=3.12.0nb2
+.else
+BUILDLINK_ABI_DEPENDS.ocaml+=	ocaml>=3.08.2
+.endif
 
 # docs: unison-manual.pdf/html/ps/dvi
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
@@ -23,7 +27,7 @@ MAKE_ENV+=	HOME=${WRKDIR:Q}
 .include "options.mk"
 .include "../../mk/bsd.prefs.mk"
 
-.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc")
+.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH}=="arm")
 MAKE_FLAGS+=	NATIVE=true
 .else
 MAKE_FLAGS+=	NATIVE=false
