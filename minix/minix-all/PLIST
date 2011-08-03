@@ -76,6 +76,7 @@
 @exec pkgin -y in mg-20090107
 @exec pkgin -y in nano-2.2.4nb1
 @exec pkgin -y in pico-4.10nb2
+@exec pkgin -y in vile-9.7nb2
 @exec pkgin -y in vilearn-1.0
 @exec pkgin -y in vim-7.2.446nb1
 @exec pkgin -y in nvi-1.81.6nb6
