@@ -11,3 +11,14 @@ $NetBSD$
  		return;
  
  	/* The frame is completely off-bounds */
+@@ -944,6 +944,10 @@ gif_prepare_lzw (GifContext *context)
+ 		return -1;
+ 	}
+ 
++	if (context->lzw_set_code_size > MAX_LZW_BITS) {
++		return -1;
++	}
++
+ 	context->lzw_code_size = context->lzw_set_code_size + 1;
+ 	context->lzw_clear_code = 1 << context->lzw_set_code_size;
+ 	context->lzw_end_code = context->lzw_clear_code + 1;
