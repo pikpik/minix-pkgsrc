@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/xineramaproto.pc.in.orig	Sat Jul  9 02:15:30 2011
++++ lib/minix-pkgconfig/xineramaproto.pc.in
+@@ -0,0 +1,9 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: XineramaProto
++Description: Xinerama extension headers
++Version: 1.1.1
++Cflags: -I${includedir}

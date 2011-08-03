@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/expat.pc.in.orig	Fri Jul  8 21:48:27 2011
++++ lib/minix-pkgconfig/expat.pc.in
+@@ -0,0 +1,10 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: expat XML parser
++Description: expat XML parser
++Version: 1.95.7
++Cflags: -I${includedir}
++Libs: -L${libdir} -lexpat

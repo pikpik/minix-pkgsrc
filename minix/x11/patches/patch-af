@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/xt.pc.in.orig	Fri Jul  8 21:48:24 2011
++++ lib/minix-pkgconfig/xt.pc.in
+@@ -0,0 +1,12 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: Xt
++Description: X Toolkit Library
++Version: 1.0.0
++Requires: xproto x11 sm
++Requires.private: x11 sm
++Cflags: -I${includedir}
++Libs: -L${libdir} -lXt

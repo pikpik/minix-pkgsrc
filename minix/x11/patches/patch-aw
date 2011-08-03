@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/xfont.pc.in.orig	Fri Jul  8 21:48:37 2011
++++ lib/minix-pkgconfig/xfont.pc.in
+@@ -0,0 +1,12 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: Xfont
++Description: X font Library
++Version: 1.2.0
++Requires: xproto fontsproto
++Requires.private: fontenc freetype2
++Cflags: -I${includedir}
++Libs: -L${libdir} -lXfont

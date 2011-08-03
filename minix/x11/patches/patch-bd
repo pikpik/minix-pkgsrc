@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/recordproto.pc.in.orig	Fri Jul  8 21:48:42 2011
++++ lib/minix-pkgconfig/recordproto.pc.in
+@@ -0,0 +1,9 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: RecordProto
++Description: Record extension headers
++Version: 1.13.1
++Cflags: -I${includedir}

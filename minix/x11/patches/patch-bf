@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/inputproto.pc.in.orig	Sat Jul  9 02:15:30 2011
++++ lib/minix-pkgconfig/inputproto.pc.in
+@@ -0,0 +1,9 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: InputProto
++Description: Input extension headers
++Version: 1.4
++Cflags: -I${includedir}

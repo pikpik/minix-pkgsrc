@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/renderproto.pc.in.orig	Fri Jul  8 21:48:30 2011
++++ lib/minix-pkgconfig/renderproto.pc.in
+@@ -0,0 +1,9 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: RenderProto
++Description: Render extension headers
++Version: 0.9.3nb1
++Cflags: -I${includedir}

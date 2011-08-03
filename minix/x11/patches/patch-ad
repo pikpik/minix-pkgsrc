@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/Imakefile.orig	Sun Aug  1 11:52:19 2010
++++ lib/Imakefile
+@@ -239,7 +239,7 @@ LINTSUBDIRS = $(XAULIBDIR) $(XDMCPLIBDIR) $(X11LIBDIR)
+ 	     $(WINDOWSLIBDIR) $(XEVIELIBDIR) $(XFIXESLIBDIR) $(DAMAGELIBDIR) $(COMPOSITELIBDIR)
+ 
+ SUBDIRS = $(BERKDIR) xtrans $(LINTSUBDIRS) $(FONTSUBDIR) $(FONTENCSUBDIR) \
+-          $(FONTCACHELIBDIR)
++          $(FONTCACHELIBDIR) minix-pkgconfig
+ 
+ MakeSubdirs($(SUBDIRS))
+ DependSubdirs($(SUBDIRS))

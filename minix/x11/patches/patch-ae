@@ -1,0 +1,259 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/Imakefile.orig	Fri Jul  8 21:48:24 2011
++++ lib/minix-pkgconfig/Imakefile
+@@ -0,0 +1,254 @@
++XCOMM $XFree86: xc/lib/Xevie/Imakefile,v 1.1 2001/05/23 03:29:44 keithp Exp $
++
++SUBSTVARS=prefix="$(PROJECTROOT)" \
++	  exec_prefix="$(BINDIR)" \
++	  libdir="$(USRLIBDIR)" \
++	  includedir="$(INCROOT)"
++
++#include <Library.tmpl>
++
++DependTarget()
++
++all:: 	bigreqsproto.pc		\
++	compositeproto.pc	\
++	evieproto.pc		\
++	expat.pc		\
++	fontconfig.pc		\
++	freetype2.pc		\
++	ice.pc			\
++	inputproto.pc		\
++	kbproto.pc		\
++	randrproto.pc		\
++	recordproto.pc		\
++	renderproto.pc		\
++	sm.pc			\
++	xcmiscproto.pc		\
++	xdamage.pc		\
++	xevie.pc		\
++	xext.pc			\
++	xextproto.pc		\
++	xf86bigfontproto.pc	\
++	xf86dgaproto.pc		\
++	xf86vidmodeproto.pc	\
++	xfont.pc		\
++	xinerama.pc		\
++	xineramaproto.pc	\
++	xmu.pc			\
++	xrandr.pc		\
++	xres.pc			\
++	xt.pc			\
++	xtst.pc			\
++	xv.pc
++
++bigreqsproto.pc: bigreqsproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < bigreqsproto.pc.in > $@
++
++compositeproto.pc: compositeproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < compositeproto.pc.in > $@
++
++evieproto.pc: evieproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < evieproto.pc.in > $@
++
++expat.pc: expat.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < expat.pc.in > $@
++
++fontconfig.pc: fontconfig.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < fontconfig.pc.in > $@
++
++freetype2.pc: freetype2.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < freetype2.pc.in > $@
++
++ice.pc: ice.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < ice.pc.in > $@
++
++inputproto.pc: inputproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < inputproto.pc.in > $@
++
++kbproto.pc: kbproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < kbproto.pc.in > $@
++
++randrproto.pc: randrproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < randrproto.pc.in > $@
++
++recordproto.pc: recordproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < recordproto.pc.in > $@
++
++renderproto.pc: renderproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < renderproto.pc.in > $@
++
++sm.pc: sm.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < sm.pc.in > $@
++
++xcmiscproto.pc: xcmiscproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xcmiscproto.pc.in > $@
++
++xdamage.pc: xdamage.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xdamage.pc.in > $@
++
++xevie.pc: xevie.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xevie.pc.in > $@
++
++xext.pc: xext.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xext.pc.in > $@
++
++xextproto.pc: xextproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xextproto.pc.in > $@
++
++xf86bigfontproto.pc: xf86bigfontproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xf86bigfontproto.pc.in > $@
++
++xf86dgaproto.pc: xf86dgaproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xf86dgaproto.pc.in > $@
++
++xf86vidmodeproto.pc: xf86vidmodeproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xf86vidmodeproto.pc.in > $@
++
++xfont.pc: xfont.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xfont.pc.in > $@
++
++xinerama.pc: xinerama.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xinerama.pc.in > $@
++
++xineramaproto.pc: xineramaproto.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xineramaproto.pc.in > $@
++
++xmu.pc: xmu.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xmu.pc.in > $@
++
++xrandr.pc: xrandr.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xrandr.pc.in > $@
++
++xres.pc: xres.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xres.pc.in > $@
++
++xt.pc: xt.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xt.pc.in > $@
++
++xtst.pc: xtst.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xtst.pc.in > $@
++
++xv.pc: xv.pc.in
++	RemoveFile($@)
++	sh ../Xcursor/config-subst $(SUBSTVARS) < xv.pc.in > $@
++
++InstallNonExecFile(bigreqsproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(compositeproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(evieproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(expat.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(fontconfig.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(freetype2.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(ice.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(inputproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(kbproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(randrproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(recordproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(renderproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(sm.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xcmiscproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xdamage.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xevie.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xext.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xextproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xf86bigfontproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xf86dgaproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xf86vidmodeproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xfont.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xinerama.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xineramaproto.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xmu.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xrandr.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xres.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xt.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xtst.pc,$(USRLIBDIR)/pkgconfig)
++
++InstallNonExecFile(xv.pc,$(USRLIBDIR)/pkgconfig)
++
++clean::
++	RemoveFile(bigreqsproto.pc)
++	RemoveFile(compositeproto.pc)
++	RemoveFile(evieproto.pc)
++	RemoveFile(expat.pc)
++	RemoveFile(fontconfig.pc)
++	RemoveFile(freetype2.pc)
++	RemoveFile(ice.pc)
++	RemoveFile(inputproto.pc)
++	RemoveFile(kbproto.pc)
++	RemoveFile(randrproto.pc)
++	RemoveFile(recordproto.pc)
++	RemoveFile(renderproto.pc)
++	RemoveFile(sm.pc)
++	RemoveFile(xcmiscproto.pc)
++	RemoveFile(xdamage.pc)
++	RemoveFile(xevie.pc)
++	RemoveFile(xext.pc)
++	RemoveFile(xextproto.pc)
++	RemoveFile(xf86bigfontproto.pc)
++	RemoveFile(xf86dgaproto.pc)
++	RemoveFile(xf86vidmodeproto.pc)
++	RemoveFile(xfont.pc)
++	RemoveFile(xinerama.pc)
++	RemoveFile(xineramaproto.pc)
++	RemoveFile(xmu.pc)
++	RemoveFile(xrandr.pc)
++	RemoveFile(xres.pc)
++	RemoveFile(xt.pc)
++	RemoveFile(xtst.pc)
++	RemoveFile(xv.pc)
++

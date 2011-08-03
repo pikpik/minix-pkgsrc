@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/xtst.pc.in.orig	Fri Jul  8 21:48:40 2011
++++ lib/minix-pkgconfig/xtst.pc.in
+@@ -0,0 +1,12 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++
++Name: Xtst
++Description: The Xtst Library
++Version: 1.0.1
++Requires: recordproto
++Requires.private: x11 xext
++Cflags: -I${includedir}
++Libs: -L${libdir} -lXtst

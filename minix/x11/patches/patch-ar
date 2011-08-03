@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- lib/minix-pkgconfig/xevie.pc.in.orig	Fri Jul  8 21:48:33 2011
++++ lib/minix-pkgconfig/xevie.pc.in
+@@ -0,0 +1,12 @@
++prefix=@prefix@
++exec_prefix=@exec_prefix@
++libdir=@libdir@
++includedir=@includedir@
++xlibs=-L/usr/pkg/X11R6/lib -lX11
++xcflags=-I/usr/pkg/X11R6/include 
++
++Name: Xevie
++Description: X Event Interceptor Library
++Version: 1.0.2
++Cflags: -I${includedir} ${xcflags}
++Libs: -L${libdir} -lXcursor ${xlibs}
