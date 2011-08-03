@@ -1,6 +1,6 @@
 $NetBSD$
 
---- misc/mke2fs.conf.5.in.orig	2009-08-13 01:39:57.000000000 +0000
+--- misc/mke2fs.conf.5.in.orig	Thu Aug 13 01:39:57 2009
 +++ misc/mke2fs.conf.5.in
 @@ -354,7 +354,7 @@ by
  on a per-filesystem type basis.

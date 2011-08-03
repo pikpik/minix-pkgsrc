@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/blkid/blkidP.h.orig	2009-08-13 01:39:57.000000000 +0000
+--- lib/blkid/blkidP.h.orig	Thu Aug 13 01:39:57 2009
 +++ lib/blkid/blkidP.h
 @@ -104,7 +104,11 @@ struct blkid_struct_cache
  extern char *blkid_strdup(const char *s);

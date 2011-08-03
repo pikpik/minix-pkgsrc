@@ -1,8 +1,8 @@
 $NetBSD$
 
---- doc/Makefile.in.orig	2010-02-10 23:16:03.000000000 +0000
+--- doc/Makefile.in.orig	Wed Feb 10 23:16:03 2010
 +++ doc/Makefile.in
-@@ -26,8 +26,6 @@ install-doc-libs: libext2fs.info libext2
+@@ -26,8 +26,6 @@ install-doc-libs: libext2fs.info libext2fs.dvi
  		echo "	INSTALL_DATA $(infodir)/$$i" ; \
  		$(INSTALL_DATA) $$i $(DESTDIR)$(infodir)/$$i ; \
  	done

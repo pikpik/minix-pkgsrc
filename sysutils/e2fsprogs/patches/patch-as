@@ -1,6 +1,6 @@
 $NetBSD$
 
---- misc/blkid.c.orig	2009-08-13 01:39:57.000000000 +0000
+--- misc/blkid.c.orig	Thu Aug 13 01:39:57 2009
 +++ misc/blkid.c
 @@ -52,7 +52,7 @@ static void usage(int error)
  	fprintf(out,

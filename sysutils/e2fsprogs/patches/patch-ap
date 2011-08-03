@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/blkid/libblkid.3.in.orig	2009-08-13 01:39:57.000000000 +0000
+--- lib/blkid/libblkid.3.in.orig	Thu Aug 13 01:39:57 2009
 +++ lib/blkid/libblkid.3.in
-@@ -24,7 +24,7 @@ A common use is to allow use of LABEL= a
+@@ -24,7 +24,7 @@ A common use is to allow use of LABEL= and UUID= tags 
  specific block device names into configuration files.
  .P
  Block device information is normally kept in a cache file
@@ -11,7 +11,7 @@ $NetBSD$
  and is verified to still be valid before being returned to the user
  (if the user has read permission on the raw block device, otherwise not).
  The cache file also allows unprivileged users (normally anyone other
-@@ -51,7 +51,7 @@ was written by Andreas Dilger for the ex
+@@ -51,7 +51,7 @@ was written by Andreas Dilger for the ext2 filesystem 
  from Ted Ts'o.  The library was subsequently heavily modified by Ted Ts'o.
  .SH FILES
  .TP

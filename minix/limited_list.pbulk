@@ -158,6 +158,7 @@ shells/zsh
 sysutils/bchunk
 sysutils/cpuid
 sysutils/crashme
+sysutils/e2fsprogs
 sysutils/mdf2iso
 sysutils/mktemp
 sysutils/tree

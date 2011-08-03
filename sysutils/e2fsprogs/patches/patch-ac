@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/blkid/getsize.c.orig	2008-06-30 00:05:45 +0300
+--- lib/blkid/getsize.c.orig	Thu Aug 13 01:39:57 2009
 +++ lib/blkid/getsize.c
 @@ -32,6 +32,9 @@
  #ifdef HAVE_SYS_DISKLABEL_H

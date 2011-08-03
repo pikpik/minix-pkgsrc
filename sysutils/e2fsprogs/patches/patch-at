@@ -1,6 +1,6 @@
 $NetBSD$
 
---- misc/mke2fs.8.in.orig	2010-02-06 03:51:19.000000000 +0000
+--- misc/mke2fs.8.in.orig	Sat Feb  6 03:51:19 2010
 +++ misc/mke2fs.8.in
 @@ -159,7 +159,7 @@ option was specified.
  .PP
@@ -35,7 +35,7 @@ $NetBSD$
  .sp
  If the
  .B \-O
-@@ -602,7 +602,7 @@ Specify how the filesystem is going to b
+@@ -602,7 +602,7 @@ Specify how the filesystem is going to be used, so tha
  .B mke2fs
  can choose optimal filesystem parameters for that use.  The usage
  types that are supported are defined in the configuration file

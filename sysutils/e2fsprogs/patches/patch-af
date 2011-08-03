@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/ext2fs/ismounted.c.orig	2010-05-18 03:04:39.000000000 +0000
+--- lib/ext2fs/ismounted.c.orig	Tue May 18 03:04:39 2010
 +++ lib/ext2fs/ismounted.c
-@@ -198,7 +198,11 @@ static errcode_t check_mntent(const char
+@@ -198,7 +198,11 @@ static errcode_t check_mntent(const char *file, int *m
  static errcode_t check_getmntinfo(const char *file, int *mount_flags,
  				  char *mtpt, int mtlen)
  {

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- misc/blkid.8.in.orig	2009-08-13 01:39:57.000000000 +0000
+--- misc/blkid.8.in.orig	Thu Aug 13 01:39:57 2009
 +++ misc/blkid.8.in
 @@ -55,7 +55,7 @@ more devices.
  Read from
