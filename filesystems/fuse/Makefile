@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 
-# FUSE the implementation only builds on Linux and FreeBSD.
+# FUSE the implementation only builds on Linux, FreeBSD, NetBSD and MINIX.
 ONLY_FOR_PLATFORM=	Linux-*-* FreeBSD-*-* NetBSD-*-* Minix-*-*
 # On NetBSD 4.99 after 2007-02, /usr/lib/librefuse provides the FUSE
 # interface expected by filesystem implementations and therefore this
