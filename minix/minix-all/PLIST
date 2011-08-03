@@ -108,6 +108,7 @@
 @exec pkgin -y in perl-5.12.2nb2
 @exec pkgin -y in tcl-8.4.18
 @exec pkgin -y in wsbasic-1.2.7
+@exec pkgin -y in postfix-2.8.3nb1
 @exec pkgin -y in bc-1.06nb3
 @exec pkgin -y in mpcomplex-0.9
 @exec pkgin -y in mpfr-3.0.1.3
@@ -158,6 +159,7 @@
 @exec pkgin -y in bchunk-1.2.0
 @exec pkgin -y in cpuid-3.3
 @exec pkgin -y in crashme-2.4
+@exec pkgin -y in e2fsprogs-1.41.12
 @exec pkgin -y in mdf2iso-0.3.0
 @exec pkgin -y in mktemp-1.7
 @exec pkgin -y in tree-1.5.1.1nb2
@@ -179,7 +181,9 @@
 @exec pkgin -y in fluxbox-1.1.1nb6
 @exec pkgin -y in curl-7.21.6
 @exec pkgin -y in libwww-5.4.0nb9
+@exec pkgin -y in links-gui-2.3pre2nb1
 @exec pkgin -y in lynx-2.8.7nb3
 @exec pkgin -y in neon-0.29.3nb1
 @exec pkgin -y in urlget-1.4
 @exec pkgin -y in inputproto-2.0
+@exec pkgin -y in tk-8.4.18nb1
