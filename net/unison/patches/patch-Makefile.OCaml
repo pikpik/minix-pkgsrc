@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.OCaml.orig	2011-04-16 20:35:38.000000000 +0000
++++ Makefile.OCaml
+@@ -364,7 +364,7 @@ ifeq ($(PROFILING), true)
+ else
+   OCAMLC=ocamlc
+ endif
+-OCAMLOPT=ocamlopt
++OCAMLOPT=ocamlopt.opt
+ 
+ ifeq ($(NATIVE), true)
+   ## Set up for native code compilation
