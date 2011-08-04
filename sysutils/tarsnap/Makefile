@@ -19,4 +19,8 @@ INSTALL_MAKE_FLAGS=	sysconfdir=${PREFIX}/share/examples/tarsnap
 
 CONF_FILES=	${PREFIX}/share/examples/tarsnap/tarsnap.conf.sample ${PKG_SYSCONFDIR}/tarsnap.conf
 
+LDFLAGS+= -L${SSLBASE:Q}/lib
+
+.include "../../security/openssl/buildlink3.mk"
+
 .include "../../mk/bsd.pkg.mk"

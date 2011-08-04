@@ -12,14 +12,15 @@ JAILROOTBASE=/usr/pbulk-jail
 BRANCH=minix-master
 REMOTE=pkgsrc
 COPY=0
+FSTYPE=mfs
 
 # Jail-dependent vars
 initvars() {
 	# Where to build a pbulk jail
 	if [ "$JAILDEV" ]
 	then	umount $JAILDEV || true
-		echo "mkfs $JAILDEV .."
-		mkfs.mfs $JAILDEV
+		echo "mkfs.$FSTYPE $JAILDEV .."
+		mkfs.$FSTYPE $JAILDEV
 		JAILROOT=$JAILROOTBASE.`basename $JAILDEV`
 		mkdir $JAILROOT || true
 		mount $JAILDEV $JAILROOT
@@ -39,13 +40,17 @@ mychroot() {
 
 my_help() {
 	echo "Usage: "
-	echo "  # pbulk-jail.sh [-d<dev>] [-A] [-h]"
+	echo "  # pbulk-jail.sh [-d<dev>] [-t<fstype>] [-A] [-h] [-c]"
 	echo " "
 	echo "Jail options:"
-	echo "  $0 -d<dev> mkfs and use /dev/<dev> for jail FS"
+	echo "  $0 -d<dev> mkfs and use <dev> for jail FS"
+	echo "  $0 -c copy this pkgsrc tree instead of doing git clone"
+	echo "  $0 -r<opts> pass <opts> to release script, e.g. -r-c"
+	echo "  $0 -t<fstype> use mkfs.<fstype> for jail FS; e.g. mfs, ext2"
 	echo " "
-	echo "Wipe current jail, if any, build a new jail,"
-	echo "and run a full bulk build in it:"
+	echo "Jail actions:"
+	echo "  Wipe current jail, if any, build a new jail,"
+	echo "  and run a full bulk build in it:"
 	echo "  $0 -A"
 }
 
@@ -118,7 +123,7 @@ jailall() {
 
 initvars
 
-while getopts "u:d:Ahr:c" opt
+while getopts "t:u:d:Ahr:c" opt
 do
 	case $opt in
 	c) COPY=1; ;;
@@ -126,6 +131,7 @@ do
 	d) JAILDEV=$OPTARG; initvars; ;;
 	A) jailall; ;;
 	h) my_help; ;;
+	t) FSTYPE=$OPTARG; echo fstpe $FSTYPE ;;
 	*) my_help; exit 1; ;;
 	esac
 done
