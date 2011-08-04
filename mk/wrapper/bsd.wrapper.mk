@@ -369,7 +369,7 @@ _WRAP_CMD_SINK.LD=	${WRAPPER_TMPDIR}/cmd-sink-irix-ld
 .if !empty(USE_CROSS_COMPILE:M[yY][eE][sS])
 _WRAP_CMD_SINK.CC=	${WRAPPER_TMPDIR}/cmd-sink-cross-gcc
 _WRAP_CMD_SINK.CPP=	${WRAPPER_TMPDIR}/cmd-sink-cross-cpp
-_WRAP_CMD_SINK.CXX=	${_WRAP_CMD_SINK.CC}
+_WRAP_CMD_SINK.CXX=	${WRAPPER_TMPDIR}/cmd-sink-cross-gxx
 .endif
 
 .if ${OPSYS} == "SunOS" && !empty(PKGSRC_COMPILER:Mgcc)
@@ -551,6 +551,11 @@ ${WRAPPER_TMPDIR}/cmd-sink-cross-gcc: ${WRAPPER_SRCDIR}/cmd-sink-cross-gcc
 	${_WRAP_SH_CRUNCH_FILTER} > ${.TARGET}
 
 ${WRAPPER_TMPDIR}/cmd-sink-cross-cpp: ${WRAPPER_SRCDIR}/cmd-sink-cross-cpp
+	${RUN} ${MKDIR} ${.TARGET:H}
+	${RUN} ${CAT} ${.ALLSRC} | ${_WRAP_CROSS_GCC_FILTER} |		\
+	${_WRAP_SH_CRUNCH_FILTER} > ${.TARGET}
+
+${WRAPPER_TMPDIR}/cmd-sink-cross-gxx: ${WRAPPER_SRCDIR}/cmd-sink-cross-gxx
 	${RUN} ${MKDIR} ${.TARGET:H}
 	${RUN} ${CAT} ${.ALLSRC} | ${_WRAP_CROSS_GCC_FILTER} |		\
 	${_WRAP_SH_CRUNCH_FILTER} > ${.TARGET}
