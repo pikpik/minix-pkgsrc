@@ -2,9 +2,9 @@ $NetBSD: patch-aa,v 1.6 2011/01/14 10:37:22 wiz Exp $
 
 Fix build with png-1.5.
 
---- png.c.orig	2011-04-19 15:17:49.000000000 +0000
+--- png.c.orig	Tue Apr 19 15:17:49 2011
 +++ png.c
-@@ -38,7 +38,11 @@ static void img_my_png_warning(png_struc
+@@ -38,7 +38,11 @@ static void img_my_png_warning(png_structp a, png_cons
  /* Error for from-web PNG images. */
  static void img_my_png_error(png_structp png_ptr, png_const_charp error_string)
  {
@@ -16,7 +16,7 @@ Fix build with png-1.5.
  }
  
  static void png_info_callback(png_structp png_ptr, png_infop info_ptr)
-@@ -196,7 +200,7 @@ void png_start(struct cached_image *cimg
+@@ -196,7 +200,7 @@ void png_start(struct cached_image *cimg)
  #ifdef DEBUG
  	if (!info_ptr) internal ("png_create_info_struct failed\n");
  #endif /* #ifdef DEBUG */
@@ -34,7 +34,7 @@ Fix build with png-1.5.
  	decoder=mem_alloc(sizeof(*decoder));
  	decoder->png_ptr=png_ptr;
  	decoder->info_ptr=info_ptr;
-@@ -225,7 +229,7 @@ void png_restart(struct cached_image *ci
+@@ -225,7 +229,7 @@ void png_restart(struct cached_image *cimg, unsigned c
  	png_ptr=((struct png_decoder *)(cimg->decoder))->png_ptr;
  	info_ptr=((struct png_decoder *)(cimg->decoder))->info_ptr;
  	end_callback_hit=0;

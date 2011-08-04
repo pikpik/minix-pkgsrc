@@ -13,9 +13,9 @@ the comment that explains why libpng is about to call abort() ;-)
 The attached patch fixes both problems, but links will still error
 out on a png_error (just with an OOM message, not an abort()).
 
---- dip.c.orig	2011-04-19 15:17:48.000000000 +0000
+--- dip.c.orig	Tue Apr 19 15:17:48 2011
 +++ dip.c
-@@ -1422,6 +1422,8 @@ unsigned char *png_data, int png_length,
+@@ -1422,6 +1422,8 @@ unsigned char *png_data, int png_length, struct style 
  	
  	png_ptr=png_create_read_struct(PNG_LIBPNG_VER_STRING,
  			NULL, my_png_error, my_png_warning);
@@ -24,7 +24,7 @@ out on a png_error (just with an OOM message, not an abort()).
  	info_ptr=png_create_info_struct(png_ptr);
  	png_set_read_fn(png_ptr,&work,(png_rw_ptr)&read_stored_data);
  	png_read_info(png_ptr, info_ptr);
-@@ -1448,7 +1450,7 @@ unsigned char *png_data, int png_length,
+@@ -1448,7 +1450,7 @@ unsigned char *png_data, int png_length, struct style 
  		if (color_type==PNG_COLOR_TYPE_PALETTE){
  			png_set_expand(png_ptr);
  #ifdef HAVE_PNG_SET_RGB_TO_GRAY
@@ -33,7 +33,7 @@ out on a png_error (just with an OOM message, not an abort()).
  #else
  			goto end;
  #endif
-@@ -1459,7 +1461,7 @@ unsigned char *png_data, int png_length,
+@@ -1459,7 +1461,7 @@ unsigned char *png_data, int png_length, struct style 
  		if (color_type==PNG_COLOR_TYPE_RGB ||
  			color_type==PNG_COLOR_TYPE_RGB_ALPHA){
  #ifdef HAVE_PNG_SET_RGB_TO_GRAY

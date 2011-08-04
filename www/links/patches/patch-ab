@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	Sat May 24 21:02:30 2003
+--- configure.orig	Tue Apr 19 15:36:37 2011
 +++ configure
-@@ -801,10 +801,10 @@ fi
+@@ -812,10 +812,10 @@ fi
  
  
  
