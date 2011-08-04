@@ -14,21 +14,3 @@ $NetBSD$
  /*
   * sys/ioctl.h has already been included by tclPort.h.	Including termios.h
   * or termio.h causes a bunch of warning messages because some duplicate
-@@ -2539,7 +2544,7 @@ CreateSocket(interp, port, host, server, myaddr, mypor
- 	(void) setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, (char *) &status,
- 		sizeof(status));
- 	status = bind(sock, (struct sockaddr *) &sockaddr,
--		sizeof(struct sockaddr));
-+		sizeof(struct sockaddr_in));
- 	if (status != -1) {
- 	    status = listen(sock, SOMAXCONN);
- 	} 
-@@ -2549,7 +2554,7 @@ CreateSocket(interp, port, host, server, myaddr, mypor
- 	    (void) setsockopt(sock, SOL_SOCKET, SO_REUSEADDR,
- 		    (char *) &curState, sizeof(curState));
- 	    status = bind(sock, (struct sockaddr *) &mysockaddr,
--		    sizeof(struct sockaddr));
-+		    sizeof(struct sockaddr_in));
- 	    if (status < 0) {
- 		goto bindError;
- 	    }
