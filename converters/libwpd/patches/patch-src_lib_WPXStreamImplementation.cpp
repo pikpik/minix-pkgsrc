@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-src_lib_WPXStreamImplementation.cpp,v 1.1 2011/02/04 19:53:06 adam Exp $
+
+http://bugzilla.abisource.com/show_bug.cgi?id=13127
 
 --- src/lib/WPXStreamImplementation.cpp.orig	2011-02-04 19:44:52.000000000 +0000
 +++ src/lib/WPXStreamImplementation.cpp
