@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ioport.c,v 1.1 2011/07/11 09:57:18 ryoon Exp $
 
 --- ioport.c.orig	2011-05-06 19:01:44.000000000 +0000
 +++ ioport.c
@@ -7,7 +7,7 @@ $NetBSD$
      uint64_t data;
  
 -    ioport->ops->read(ioport, addr - ioport->base, 1, &data);
-+    (ioport->ops->read)(ioport, addr - ioport->base, 1, &data);
++    (*ioport->ops->read)(ioport, addr - ioport->base, 1, &data);
      return data;
  }
  
@@ -16,7 +16,7 @@ $NetBSD$
      uint64_t data;
  
 -    ioport->ops->read(ioport, addr - ioport->base, 2, &data);
-+    (ioport->ops->read)(ioport, addr - ioport->base, 2, &data);
++    (*ioport->ops->read)(ioport, addr - ioport->base, 2, &data);
      return data;
  }
  
@@ -25,7 +25,7 @@ $NetBSD$
      uint64_t data;
  
 -    ioport->ops->read(ioport, addr - ioport->base, 4, &data);
-+    (ioport->ops->read)(ioport, addr - ioport->base, 4, &data);
++    (*ioport->ops->read)(ioport, addr - ioport->base, 4, &data);
      return data;
  }
  
