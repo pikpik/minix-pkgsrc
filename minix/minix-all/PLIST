@@ -182,6 +182,7 @@
 @exec pkgin -y in fluxbox-1.1.1nb6
 @exec pkgin -y in curl-7.21.6
 @exec pkgin -y in libwww-5.4.0nb9
+@exec pkgin -y in links-2.3pre2
 @exec pkgin -y in links-gui-2.3pre2nb1
 @exec pkgin -y in lynx-2.8.7nb3
 @exec pkgin -y in neon-0.29.3nb1
