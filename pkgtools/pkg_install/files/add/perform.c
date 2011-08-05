@@ -1,4 +1,4 @@
-/*	$NetBSD: perform.c,v 1.98 2010/09/14 22:26:18 gdt Exp $	*/
+/*	$NetBSD: perform.c,v 1.99 2010/12/12 13:18:38 wiz Exp $	*/
 #if HAVE_CONFIG_H
 #include "config.h"
 #endif
@@ -6,7 +6,7 @@
 #if HAVE_SYS_CDEFS_H
 #include <sys/cdefs.h>
 #endif
-__RCSID("$NetBSD: perform.c,v 1.98 2010/09/14 22:26:18 gdt Exp $");
+__RCSID("$NetBSD: perform.c,v 1.99 2010/12/12 13:18:38 wiz Exp $");
 
 /*-
  * Copyright (c) 2003 Grant Beattie <grant@NetBSD.org>
@@ -391,6 +391,7 @@ check_already_installed(struct pkg_task *pkg)
 	free(filename);
 	if (fd == -1)
 		return 1;
+	close(fd);
 
 	if (ReplaceSame) {
 		struct stat sb;
@@ -420,7 +421,6 @@ check_already_installed(struct pkg_task *pkg)
 		warnx("package `%s' already recorded as installed",
 		      pkg->pkgname);
 	}
-	close(fd);
 	return 0;
 
 }
