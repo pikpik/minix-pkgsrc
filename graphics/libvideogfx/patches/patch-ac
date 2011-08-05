@@ -1,4 +1,8 @@
-$NetBSD: patch-ac,v 1.1 2006/01/15 20:34:13 joerg Exp $
+$NetBSD: patch-ac,v 1.2 2010/06/12 14:05:40 wiz Exp $
+
+Be nice and include sys/types.h before sys/ipc.h.
+
+Fix build with latest XShm from xsrc. Hopefully still works with other Xs.
 
 --- libvideogfx/x11/dispimg.cc.orig	2002-05-27 14:02:43.000000000 +0000
 +++ libvideogfx/x11/dispimg.cc
