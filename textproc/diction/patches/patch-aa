@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.in.orig	2007-08-03 06:05:15.000000000 -0400
-+++ Makefile.in
-@@ -11,14 +11,14 @@ VPATH=		@srcdir@
+--- Makefile.in.orig	2007-08-03 05:05:15.000000000 -0500
++++ Makefile.in	2011-08-05 10:34:05.000000000 -0500
+@@ -11,14 +11,14 @@
  prefix=		@prefix@
  exec_prefix=	@exec_prefix@
  datarootdir=	@datarootdir@
@@ -19,7 +19,7 @@ $NetBSD$
  
  CATALOGS=	de.mo en_GB.mo nl.mo
  
-@@ -26,13 +26,13 @@ all:		diction style all-po-@USE_NLS@
+@@ -26,13 +26,13 @@
  all-po-no:
  all-po-yes:	$(CATALOGS)
  
@@ -36,11 +36,11 @@ $NetBSD$
 +
 +style:		style.o sentence.o misc.o
 +		${LIBTOOL} --mode=link --tag=CC $(CC) -o $@ $(LDFLAGS) \
-+		diction.lo sentence.lo misc.lo $(LIBM) $(LIBS)
++		style.lo sentence.lo misc.lo $(LIBM) $(LIBS)
  
  check:		diction
  		for i in $(srcdir)/test/test*; do $$i || break; done
-@@ -61,7 +61,7 @@ install-po-yes:	$(CATALOGS)
+@@ -61,7 +61,7 @@
  		done
  
  .c.o:
@@ -49,7 +49,7 @@ $NetBSD$
  
  .SUFFIXES:	.po .mo
  
-@@ -110,10 +110,8 @@ tar:		distclean
+@@ -110,10 +110,8 @@
  		(b=`pwd`; b=`basename $$b`; cd ..; tar zcvf $$b.tar.gz $$b/COPYING $$b/INSTALL $$b/Makefile.in $$b/README $$b/NEWS $$b/configure $$b/install-sh $$b/de $$b/en $$b/en_GB $$b/nl $$b/test $$b/[a-z]*.*)
  #}}}
  #{{{ dependencies
