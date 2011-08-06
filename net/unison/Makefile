@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2011/05/02 13:25:25 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2011/08/03 12:50:42 is Exp $
 
 DISTNAME=	unison-2.40.63
 CATEGORIES=	net
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .if (${MACHINE_ARCH} == "arm")
 BUILDLINK_ABI_DEPENDS.ocaml+=	ocaml>=3.12.0nb2
 .else
-BUILDLINK_ABI_DEPENDS.ocaml+=	ocaml>=3.08.2
+BUILDLINK_ABI_DEPENDS.ocaml+=	ocaml>=3.11.2
 .endif
 
 # docs: unison-manual.pdf/html/ps/dvi
