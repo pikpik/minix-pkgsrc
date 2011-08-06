@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2009/07/07 17:56:40 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2010/03/05 13:57:51 obache Exp $
 #
 
-DISTNAME=	mutagen-1.19
+DISTNAME=	mutagen-1.20
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	audio
 MASTER_SITES=	http://mutagen.googlecode.com/files/
