@@ -18,6 +18,9 @@ lib/meld/meld/filediff.pyo
 lib/meld/meld/filemerge.py
 lib/meld/meld/filemerge.pyc
 lib/meld/meld/filemerge.pyo
+lib/meld/meld/linkmap.py
+lib/meld/meld/linkmap.pyc
+lib/meld/meld/linkmap.pyo
 lib/meld/meld/matchers.py
 lib/meld/meld/matchers.pyc
 lib/meld/meld/matchers.pyo
