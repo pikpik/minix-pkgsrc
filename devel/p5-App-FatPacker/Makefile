@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/06/19 22:15:40 mspo Exp $
+# $NetBSD: Makefile,v 1.6 2011/08/07 07:47:51 adam Exp $
 
 DISTNAME=	App-FatPacker-0.009006
 PKGNAME=	p5-${DISTNAME}
@@ -15,8 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 REPLACE_PERL+=		bin/fatpack
 
 PERL5_PACKLIST=		auto/App/FatPacker/.packlist
-
-DEPENDS+=	{perl>=5.10.1,p5-File-Path>=2.07}:../../devel/p5-File-Path
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
