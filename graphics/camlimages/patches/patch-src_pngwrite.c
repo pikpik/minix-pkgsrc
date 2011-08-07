@@ -2,9 +2,9 @@ $NetBSD$
 
 Fix build with png-1.5.
 
---- png/pngwrite.c.orig	2004-03-04 17:10:00.000000000 +0000
-+++ png/pngwrite.c
-@@ -57,7 +57,7 @@ value write_png_file_rgb24( name, buffer
+--- src/pngwrite.c.orig	2011-01-25 14:10:44.000000000 +0000
++++ src/pngwrite.c	2011-04-17 13:36:21.000000000 +0000
+@@ -62,7 +62,7 @@
    }
  
    /* error handling */
@@ -13,7 +13,7 @@ Fix build with png-1.5.
      /* Free all of the memory associated with the png_ptr and info_ptr */
      png_destroy_write_struct(&png_ptr, &info_ptr);
      fclose(fp);
-@@ -166,7 +166,7 @@ value write_png_file_index( name, buffer
+@@ -171,7 +171,7 @@
    }
  
    /* error handling */
