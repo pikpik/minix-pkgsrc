@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2011/06/20 20:31:29 ryoon Exp $
+# $NetBSD: Makefile,v 1.7 2011/06/21 18:14:30 tron Exp $
 
-DISTNAME=	libvpx-v0.9.6
+DISTNAME=	libvpx-v0.9.7
 PKGNAME=	${DISTNAME:S/-v/-/}
 CATEGORIES=	multimedia
 MASTER_SITES=	http://webm.googlecode.com/files/

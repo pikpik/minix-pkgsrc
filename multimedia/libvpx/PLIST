@@ -14,3 +14,4 @@ include/vpx/vpx_encoder.h
 include/vpx/vpx_image.h
 include/vpx/vpx_integer.h
 lib/libvpx.la
+lib/pkgconfig/vpx.pc
