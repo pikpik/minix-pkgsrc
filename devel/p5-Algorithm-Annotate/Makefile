@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.11 2008/10/19 19:17:46 he Exp $
+# $NetBSD: Makefile,v 1.12 2010/08/21 16:33:09 seb Exp $
 
 DISTNAME=	Algorithm-Annotate-0.10
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	6
+PKGREVISION=	7
 SVR4_PKGNAME=	p5ext
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Algorithm/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://search.cpan.org/dist/Algorithm-Annotate/
 COMMENT=	Perl module that provides cvs-annotate-like functionality
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
