@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/utimens.c.orig	2007-01-18 00:33:34.000000000 -0800
+--- lib/utimens.c.orig	Thu Jan 18 08:33:34 2007
 +++ lib/utimens.c
 @@ -75,7 +75,7 @@ struct utimbuf
     Return 0 on success, -1 (setting errno) on failure.  */

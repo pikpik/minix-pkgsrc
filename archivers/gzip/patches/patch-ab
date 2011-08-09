@@ -1,8 +1,8 @@
 $NetBSD: patch-af,v 1.1 2006/09/23 13:52:17 adrianp Exp $
 
---- unpack.c.orig	1993-08-13 08:35:00.000000000 +0100
+--- unpack.c.orig	Mon Nov 20 08:40:34 2006
 +++ unpack.c
-@@ -12,7 +12,6 @@ static char rcsid[] = "$Id: unpack.c,v 1
+@@ -26,7 +26,6 @@ static char rcsid[] = "$Id: unpack.c,v 1.4 2006/11/20 
  #include "gzip.h"
  #include "crypt.h"
  
@@ -10,7 +10,7 @@ $NetBSD: patch-af,v 1.1 2006/09/23 13:52:17 adrianp Exp $
  /* The arguments must not have side effects. */
  
  #define MAX_BITLEN 25
-@@ -132,7 +131,7 @@ local void read_tree()
+@@ -150,7 +149,7 @@ local void read_tree()
  	/* Remember where the literals of this length start in literal[] : */
  	lit_base[len] = base;
  	/* And read the literals: */
@@ -19,7 +19,7 @@ $NetBSD: patch-af,v 1.1 2006/09/23 13:52:17 adrianp Exp $
  	    literal[base++] = (uch)get_byte();
  	}
      }
-@@ -168,7 +167,7 @@ local void build_tree()
+@@ -186,7 +185,7 @@ local void build_tree()
      prefixp = &prefix_len[1<<peek_bits];
      for (len = 1; len <= peek_bits; len++) {
  	int prefixes = leaves[len] << (peek_bits-len); /* may be 0 */

@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.in.orig	Tue Aug  9 14:11:56 2011
++++ Makefile.in
+@@ -907,7 +907,6 @@ gzip.doc.gz: gzip.doc
+ 	gzip <$? >$@
+ .in:
+ 	sed \
+-		-e 's|/bin/sh|$(SHELL)|g' \
+ 		-e 's|BINDIR|$${GZIP_BINDIR-'\''$(bindir)'\''}|g' \
+ 		-e 's|[@]VERSION@|$(VERSION)|g' \
+ 		$(srcdir)/$@.in >$@

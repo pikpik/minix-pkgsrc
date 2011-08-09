@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.am.orig	Tue Aug  9 14:11:36 2011
++++ Makefile.am
+@@ -55,7 +55,6 @@ gzip.doc.gz: gzip.doc
+ SUFFIXES = .in
+ .in:
+ 	sed \
+-		-e 's|/bin/sh|$(SHELL)|g' \
+ 		-e 's|BINDIR|$${GZIP_BINDIR-'\''$(bindir)'\''}|g' \
+ 		-e 's|[@]VERSION@|$(VERSION)|g' \
+ 		$(srcdir)/$@.in >$@

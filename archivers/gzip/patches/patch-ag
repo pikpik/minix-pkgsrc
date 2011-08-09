@@ -2,9 +2,9 @@ $NetBSD$
 
 Fix for CVE-2009-2624.
 
---- inflate.c.orig	2006-12-20 23:30:17.000000000 +0000
+--- inflate.c.orig	Wed Dec 20 23:30:17 2006
 +++ inflate.c
-@@ -335,13 +335,15 @@ int *m;                 /* maximum looku
+@@ -335,13 +335,15 @@ int *m;                 /* maximum lookup bits, return
    } while (--i);
    if (c[0] == n)                /* null input--all zero length codes */
    {
