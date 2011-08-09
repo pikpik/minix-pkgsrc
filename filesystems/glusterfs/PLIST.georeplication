@@ -1,3 +1,4 @@
+@comment $NetBSD$
 libexec/glusterfs/python/syncdaemon/README.md
 libexec/glusterfs/python/syncdaemon/__init__.py
 libexec/glusterfs/python/syncdaemon/__init__.pyc
