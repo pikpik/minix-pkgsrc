@@ -1,4 +1,4 @@
-# $NetBSD: version.mk,v 1.2 2005/05/27 22:15:34 jlam Exp $
+# $NetBSD: version.mk,v 1.3 2005/05/27 22:15:53 jlam Exp $
 #
 # Distill the PERL5_REQD list into a single value that is the highest
 # version of Perl required.
@@ -25,7 +25,7 @@ _PERL5_PKG_SATISFIES_DEP!=	\
 .          endif
 .        endfor
 .        if !empty(_PERL5_PKG_SATISFIES_DEP:M[yY][eE][sS])
-_PERL5_REQD=  ${_version_}
+_PERL5_REQD=	${_version_}
 .        endif
 .      endif
 .    endfor

@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- lib/common/WaitForEvent.cpp.orig	2006-02-23 20:47:35.000000000 +0000
++++ lib/common/WaitForEvent.cpp
+@@ -53,6 +53,7 @@
+ 
+ #include <errno.h>
+ #include <string.h>
++#include <stdlib.h>
+ 
+ #include "WaitForEvent.h"
+ 

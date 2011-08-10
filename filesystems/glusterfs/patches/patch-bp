@@ -2,8 +2,8 @@ $NetBSD$
 
 NetBSD does not have umount(2), but unmount(2)
 
---- xlators/mgmt/glusterd/src/glusterd-op-sm.c.orig	2011-06-02 10:19:31.000000000 +0200
-+++ xlators/mgmt/glusterd/src/glusterd-op-sm.c	2011-06-02 10:20:33.000000000 +0200
+--- xlators/mgmt/glusterd/src/glusterd-op-sm.c.orig	2011-07-14 14:21:10.000000000 +0200
++++ xlators/mgmt/glusterd/src/glusterd-op-sm.c	2011-07-22 09:01:26.000000000 +0200
 @@ -49,8 +49,12 @@
  #include "syscall.h"
  #include "cli1.h"

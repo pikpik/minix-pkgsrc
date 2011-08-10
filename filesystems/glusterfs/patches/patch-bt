@@ -3,8 +3,8 @@ $NetBSD$
 Fix the io-threads xlator, which forgot to initialize its pthread
 condition and mutex.
 
---- xlators/performance/io-threads/src/io-threads.c.orig
-+++ xlators/performance/io-threads/src/io-threads.c
+--- xlators/performance/io-threads/src/io-threads.c.orig	2011-07-14 14:21:10.000000000 +0200
++++ xlators/performance/io-threads/src/io-threads.c	2011-07-22 09:01:34.000000000 +0200
 @@ -2181,8 +2181,20 @@
                          "out of memory");
                  goto out;

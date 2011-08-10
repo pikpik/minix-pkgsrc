@@ -2,7 +2,7 @@ $NetBSD$
 
 Fix for CVE-2010-0001.
 
---- unlzw.c.orig	Mon Dec 11 18:54:39 2006
+--- unlzw.c.orig	2006-12-11 18:54:39.000000000 +0000
 +++ unlzw.c
 @@ -248,7 +248,8 @@ int unlzw(in, out)
  	int  o;

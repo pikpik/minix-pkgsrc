@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2011/04/22 14:40:43 obache Exp $
+# $NetBSD: Makefile,v 1.24 2011/07/13 13:25:17 hans Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc44-${GCC_VERSION}
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_GNU:=gcc/gcc-${GCC_VERSION}/}
 EXTRACT_SUFX=		.tar.bz2
@@ -14,13 +14,9 @@ LICENSE=		gnu-gpl-v2 AND gnu-gpl-v3 AND gnu-lgpl-v2 AND gnu-lgpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		awk:run bash:run perl chmod \
-			gmake:run makeinfo bison flex gm4 \
-			sed:run unzip
+USE_TOOLS+=		awk:run bash:run chmod gmake:run makeinfo sed:run
 
-DEPENDS+=		zip-[0-9]*:../../archivers/zip
-
-GCC_VERSION=		4.4.5
+GCC_VERSION=		4.4.6
 
 GCC_SUBPREFIX=		gcc44
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
@@ -81,8 +77,6 @@ REPLACE_BASH+= gcc/dbgcnt.def
 REPLACE_BASH+= gcc/testsuite/gcc.test-framework/gen_directive_tests
 REPLACE_BASH+= libstdc++-v3/scripts/run_doxygen
 
-REPLACE_PYTHON+=libjava/contrib/aot-compile.in
-
 # Optional languages - change as required
 # Ada could be added although there is a bootstrapping issue.  See
 # ../gcc34-ada for guidance
@@ -119,14 +113,14 @@ LANGS+= java
 LANGS+= objc
 .endif
 
-CONFIGURE_ARGS+=	--prefix=${GCC_PREFIX:Q}
-CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
-CONFIGURE_ARGS+=	--with-system-zlib
 .if ${OPSYS} != "Minix"
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-threads=posix
 .endif
 CONFIGURE_ARGS+=	--enable-__cxa_atexit
+CONFIGURE_ARGS+=	--prefix=${GCC_PREFIX:Q}
+CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-long-long
 CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--disable-libssp
@@ -134,20 +128,6 @@ CONFIGURE_ARGS+=	--with-gmp=${BUILDLINK_PREFIX.gmp}
 CONFIGURE_ARGS+=	--with-mpfr=${BUILDLINK_PREFIX.mpfr}
 
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL}
-
-# ${WRKSRC}/gcc-4.4.1/libjava/contrib/aotcompile.py.in stores the path to
-# a 'make' program so we need to make sure we give it the installed 'make' and not
-# the tool wrapped one.
-CONFIGURE_ENV+=		PKGSRC_MAKE=${TOOLS_PATH.gmake}
-MAKE_ENV+=		PKGSRC_MAKE=${TOOLS_PATH.gmake}
-
-# fastjar-0.93 from pkgsrc/archivers/fastjar seems to trigger a build
-# failure (seen on NetBSD-5.0/i386) when building java.  So in case
-# the fastjar package is installed, make sure the configure script
-# doesn't pick it up.
-CONFIGURE_ENV+=		JAR=no
-MAKE_ENV+=		JAR=no
-MAKE_ENV+=		ac_cv_prog_JAR=no
 
 MAKE_ENV+=		ICONVPREFIX=${BUILDLINK_PREFIX.iconv}
 MAKE_ENV+=		SHELL=${CONFIG_SHELL}
@@ -212,8 +192,6 @@ GENERATE_PLIST_SYMLINKS=	for x in ${GCC_SYMLINK_PROGRAMS}; do ${ECHO} bin/$$x; d
 GENERATE_PLIST+= { ${GENERATE_PLIST_SYMLINKS};                                                       \
 	cd ${DESTDIR}${PREFIX} && ${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print; } | ${SORT} ;
 
-.include "../../lang/python/application.mk"
 .include "../../devel/gmp/buildlink3.mk"
-.include "../../devel/zlib/buildlink3.mk"
 .include "../../math/mpfr/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

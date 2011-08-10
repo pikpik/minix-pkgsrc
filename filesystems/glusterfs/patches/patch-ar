@@ -2,8 +2,8 @@ $NetBSD$
 
 Add @GF_FUSE_LDADD@ to fuse.so library dependecies so that -lperfuse is
 added at configure time for NetBSD.
---- xlators/mount/fuse/src/Makefile.am.orig	2011-04-22 19:37:28.000000000 +0200
-+++ xlators/mount/fuse/src/Makefile.am	2011-05-19 12:39:16.000000000 +0200
+--- xlators/mount/fuse/src/Makefile.am.orig	2011-07-14 14:21:10.000000000 +0200
++++ xlators/mount/fuse/src/Makefile.am	2011-07-22 08:59:56.000000000 +0200
 @@ -15,8 +15,9 @@
  fuse_la_SOURCES = fuse-helpers.c fuse-resolve.c fuse-bridge.c \
  	$(CONTRIBDIR)/fuse-lib/misc.c $(mount_source)

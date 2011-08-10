@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gzip.c.orig	Tue Mar 20 05:09:51 2007
+--- gzip.c.orig	2007-03-19 22:09:51.000000000 -0700
 +++ gzip.c
 @@ -1637,7 +1637,7 @@ local void copy_stat(ifstat)
  	}

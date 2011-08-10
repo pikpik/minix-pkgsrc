@@ -3,8 +3,8 @@ $NetBSD$
 Actually use the Linux [lf]?(set|get|list|remove)xattr reimplementation
 we have in libglusterfs/src/compat.c
 
---- libglusterfs/src/syscall.c.orig	2011-06-25 03:34:26.000000000 +0200
-+++ libglusterfs/src/syscall.c	2011-06-25 03:39:37.000000000 +0200
+--- libglusterfs/src/syscall.c.orig	2011-07-14 14:21:10.000000000 +0200
++++ libglusterfs/src/syscall.c	2011-07-22 09:01:32.000000000 +0200
 @@ -267,9 +267,9 @@
  sys_lsetxattr (const char *path, const char *name, const void *value,
                 size_t size, int flags)

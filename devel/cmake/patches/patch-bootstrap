@@ -7,7 +7,7 @@ $NetBSD$
      cmake_init_file=`echo $a | sed "s/^--init=//"`
    fi
 -  for lib in bzip2 curl expat libarchive zlib; do
-+  for lib in bzip2 curl expat libarchive zlib idn terminfo; do
++  for lib in bzip2 curl expat libarchive zlib idn terminfo z; do
      if echo $a | grep "^--system-${lib}" > /dev/null 2> /dev/null; then
        cmake_bootstrap_system_libs="${cmake_bootstrap_system_libs} -DCMAKE_USE_SYSTEM_LIBRARY_`cmake_toupper ${lib}`=1"
        break

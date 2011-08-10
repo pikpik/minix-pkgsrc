@@ -1,7 +1,7 @@
 $NetBSD$
 
-SHA1 (sqlite-autoconf-3070603.tar.gz) = a19e4496e2854e737d55465b77c87e775a362775
-RMD160 (sqlite-autoconf-3070603.tar.gz) = dede8ea95e6e92228391750645ad4d628467ce93
-Size (sqlite-autoconf-3070603.tar.gz) = 1720314 bytes
-SHA1 (patch-ab) = 1289572ca301100f7d13a6a460daf3d82dd3a5d7
-SHA1 (patch-ac) = ea815e365055e0091ac52dd269e4bf4a5026ec8e
+SHA1 (sqlite-autoconf-3070701.tar.gz) = ee405037ab49f46f657a9b314e66eec6009d5fc6
+RMD160 (sqlite-autoconf-3070701.tar.gz) = c86c81ccc3ad1baec6f753090e5ce1d5d9e03f13
+Size (sqlite-autoconf-3070701.tar.gz) = 1748837 bytes
+SHA1 (patch-ab) = 66884502e52a619d159d0caf27a8888a933d195c
+SHA1 (patch-ac) = 4cc3f22438d0248e42929c1d20547d6318f709b3

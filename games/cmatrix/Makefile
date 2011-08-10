@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/01/07 09:13:54 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2011/06/23 12:43:50 wiz Exp $
 #
 
 DISTNAME=		cmatrix-1.2a

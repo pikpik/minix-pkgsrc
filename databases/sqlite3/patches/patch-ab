@@ -1,6 +1,8 @@
 --- shell.c	Thu May 19 13:35:13 2011
 +++ shell.c	Mon May 30 21:27:41 2011
-@@ -74,7 +74,7 @@
+--- shell.c.orig	Tue Jun 28 18:08:29 2011
++++ shell.c
+@@ -74,7 +74,7 @@ extern int isatty();
  /* True if the timer is enabled */
  static int enableTimer = 0;
  
@@ -9,20 +11,19 @@
  #include <sys/time.h>
  #include <sys/resource.h>
  
-@@ -2295,13 +2295,13 @@
+@@ -2295,13 +2295,13 @@ static int do_meta_command(char *zLine, struct callbac
      open_db(p);
      sqlite3_busy_timeout(p->db, atoi(azArg[1]));
    }else
 -    
--  if( HAS_TIMER && c=='t' && n>=5 && strncmp(azArg[0], "timer", n)==0
 +#if HAS_TIMER
-+  if( c=='t' && n>=5 && strncmp(azArg[0], "timer", n)==0
+   if( HAS_TIMER && c=='t' && n>=5 && strncmp(azArg[0], "timer", n)==0
     && nArg==2
    ){
      enableTimer = booleanValue(azArg[1]);
    }else
 -  
 +#endif
-   if( c=='w' && strncmp(azArg[0], "width", n)==0 && nArg>1 ){
-     int j;
-     assert( nArg<=ArraySize(azArg) );
+   if( c=='v' && strncmp(azArg[0], "version", n)==0 ){
+     printf("SQLite %s %s\n",
+         sqlite3_libversion(), sqlite3_sourceid());

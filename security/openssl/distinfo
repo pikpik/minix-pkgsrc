@@ -13,5 +13,5 @@ SHA1 (patch-ag) = 0490c0ae86aafec50f6f96070469bf1a4a4be326
 SHA1 (patch-ah) = e5393288b750c58c0ff82599326bbe0571cdfd88
 SHA1 (patch-ak) = ac5adf88dc4720887acbb5b0c688d1dc7f483c29
 SHA1 (patch-al) = fc8244bba61e0a3242ba1314f8ba81e0cb4aebb5
-SHA1 (patch-crypto_ecdsa_ecs__ossl.c) = 418d37342b8108521c2dc30580bcba5cefd560d8
+SHA1 (patch-crypto_ecdsa_ecs__ossl.c) = 8d2842e57451fe58ac3b7b018421e2a4e904f49d
 SHA1 (patch-ssl_t1__lib.c) = 50223597dc55a34828e56fd468a09d25f43dbb93

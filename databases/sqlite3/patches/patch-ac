@@ -1,6 +1,8 @@
 --- sqlite3.c	Thu May 19 13:35:13 2011
 +++ sqlite3.c	Mon May 30 21:21:43 2011
-@@ -24781,7 +24781,9 @@
+--- sqlite3.c.orig	Tue Jun 28 18:08:29 2011
++++ sqlite3.c
+@@ -25143,7 +25143,9 @@ static int sqliteErrorFromPosixError(int posixError, i
    case ENODEV:
    case ENXIO:
    case ENOENT:
@@ -10,12 +12,16 @@
    case ENOSYS:
      /* these should force the client to close the file and reconnect */
      
-@@ -26047,7 +26049,7 @@
-   */
+@@ -26410,10 +26412,12 @@ static int dotlockLock(sqlite3_file *id, int eFileLock
    if( pFile->eFileLock > NO_LOCK ){
      pFile->eFileLock = eFileLock;
--#if !OS_VXWORKS
-+#if !OS_VXWORKS && !defined(__minix)
      /* Always update the timestamp on the old file */
++#ifndef __minix
+ #ifdef HAVE_UTIME
+     utime(zLockFile, NULL);
+ #else
      utimes(zLockFile, NULL);
++#endif
  #endif
+     return SQLITE_OK;
+   }

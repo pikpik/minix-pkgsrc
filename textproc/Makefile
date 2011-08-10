@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.586 2011/06/19 09:10:43 obache Exp $
+# $NetBSD: Makefile,v 1.589 2011/08/06 22:56:49 ryoon Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
 
+SUBDIR+=	FlightCrew
 SUBDIR+=	GutenMark
 SUBDIR+=	GutenMark-words
 SUBDIR+=	Markdown
@@ -502,6 +503,7 @@ SUBDIR+=	py-yamcha
 SUBDIR+=	py-yaml
 SUBDIR+=	qprint
 SUBDIR+=	qsubst
+SUBDIR+=	queequeg
 SUBDIR+=	raptor
 SUBDIR+=	rarian
 SUBDIR+=	rasqal
