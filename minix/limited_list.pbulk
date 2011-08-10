@@ -113,7 +113,9 @@ math/mpcomplex
 math/mpfr
 math/units
 minix/clang
+minix/clang_new
 minix/compiler-rt
+minix/compiler-rt_new
 minix/x11
 misc/ascii
 misc/cowsay

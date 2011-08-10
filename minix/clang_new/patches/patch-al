@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- tools/clang/lib/Frontend/InitHeaderSearch.cpp.orig	Thu Aug 11 01:06:25 2011
++++ tools/clang/lib/Frontend/InitHeaderSearch.cpp
+@@ -921,7 +921,7 @@ AddDefaultCPlusPlusIncludePaths(const llvm::Triple &tr
+     break;
+   }
+   case llvm::Triple::Minix:
+-    AddGnuCPlusPlusIncludePaths("/usr/gnu/include/c++/4.4.3",
++    AddGnuCPlusPlusIncludePaths("/usr/pkg/gcc44/include/c++/4.4.3/",
+                                 "", "", "", triple);
+     break;
+   case llvm::Triple::Solaris:

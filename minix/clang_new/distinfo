@@ -1,0 +1,18 @@
+$NetBSD$
+
+SHA1 (llvm-clang-r137273.tar.gz) = d9d09880b321f4c126c854988c2cb850fa63fbc0
+RMD160 (llvm-clang-r137273.tar.gz) = 661aa056a14f5e48e2e1e70bd33af533eb5fc56c
+Size (llvm-clang-r137273.tar.gz) = 17056373 bytes
+SHA1 (patch-aa) = c5bee54bb871c9bdc185431c3ab4f3367b0d9dd9
+SHA1 (patch-ab) = d9139d273daea50e0aaa6bd1979c5981d758afb9
+SHA1 (patch-ac) = 69e72edb63d8c93babd7afcc0f1559293b5cbda6
+SHA1 (patch-ad) = 74bc7e1324bf9e7709f8d51552384d3716f0b451
+SHA1 (patch-ag) = 6b3e3c56803f77d7fc09bc58af64ac0d68109283
+SHA1 (patch-ah) = 9b5e11fbec01d41c230951a19debecf008d603bc
+SHA1 (patch-al) = ea955e34a426d624ea144aeb3d26f7bb2f3173a9
+SHA1 (patch-am) = 87062bc8e643ce929668c30f1d5e6d9e2d3b94fb
+SHA1 (patch-lib_Support_Unix_Unix.h) = d0c8315d8304ef627d3484b46c46ae26cbfa1828
+SHA1 (patch-tools_clang_lib_Driver_ToolChains.cpp) = 3c8e23d14c4b9cced8b2f691b92e4acff80fe85b
+SHA1 (patch-tools_clang_lib_Driver_ToolChains.h) = 67fc0f837ecfb3261094875fd0957df6a74d2c94
+SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 6ca8379d8f1856a9a3fe3f8153f75c61f97e9048
+SHA1 (patch-tools_clang_tools_Makefile) = 35aabe4410481885f4c2ed483c532f998118a504

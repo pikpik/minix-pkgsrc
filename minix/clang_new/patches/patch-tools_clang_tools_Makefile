@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- tools/clang/tools/Makefile.orig	Thu Aug 11 01:06:25 2011
++++ tools/clang/tools/Makefile
+@@ -13,7 +13,7 @@ DIRS := driver libclang c-index-test arcmt-test c-arcm
+ include $(CLANG_LEVEL)/../../Makefile.config
+ 
+ ifeq ($(OS), $(filter $(OS), Minix))
+-DIRS := $(filter-out libclang c-index-test, arcmt-test, $(DIRS))
++DIRS := $(filter-out libclang c-index-test arcmt-test c-arcmt-test, $(DIRS))
+ endif
+ 
+ include $(CLANG_LEVEL)/Makefile

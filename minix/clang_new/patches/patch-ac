@@ -1,0 +1,46 @@
+$NetBSD$
+
+--- include/llvm/Support/system_error.h.orig	Thu Aug 11 01:06:24 2011
++++ include/llvm/Support/system_error.h
+@@ -510,7 +510,11 @@ enum _ {
+   bad_message                         = EINVAL,
+ #endif
+   broken_pipe                         = EPIPE,
++#ifdef ECONNABORTED
+   connection_aborted                  = ECONNABORTED,
++#else
++  connection_aborted                  = EINVAL,
++#endif
+   connection_already_in_progress      = EALREADY,
+   connection_refused                  = ECONNREFUSED,
+   connection_reset                    = ECONNRESET,
+@@ -534,7 +538,11 @@ enum _ {
+   is_a_directory                      = EISDIR,
+   message_size                        = EMSGSIZE,
+   network_down                        = ENETDOWN,
++#ifdef ENETRESET
+   network_reset                       = ENETRESET,
++#else
++  network_reset                       = EINVAL,
++#endif
+   network_unreachable                 = ENETUNREACH,
+   no_buffer_space                     = ENOBUFS,
+   no_child_process                    = ECHILD,
+@@ -547,9 +555,17 @@ enum _ {
+ #ifdef ENODATA
+   no_message_available                = ENODATA,
+ #else
++#ifdef ENOMSG
+   no_message_available                = ENOMSG,
++#else
++  no_message_available                = EINVAL,
+ #endif
++#endif
++#ifdef ENOMSG
+   no_message                          = ENOMSG,
++#else
++  no_message                          = EINVAL,
++#endif
+   no_protocol_option                  = ENOPROTOOPT,
+   no_space_on_device                  = ENOSPC,
+ #ifdef ENOSR
