@@ -114,6 +114,7 @@ ${PYSITELIB}/blockdiag/noderenderer/roundedbox.pyo
 ${PYSITELIB}/blockdiag/noderenderer/textbox.py
 ${PYSITELIB}/blockdiag/noderenderer/textbox.pyc
 ${PYSITELIB}/blockdiag/noderenderer/textbox.pyo
+${PYSITELIB}/blockdiag/tests/diagrams/auto_jumping_edge.diag
 ${PYSITELIB}/blockdiag/tests/diagrams/background_url_image.diag
 ${PYSITELIB}/blockdiag/tests/diagrams/beginpoint_color.diag
 ${PYSITELIB}/blockdiag/tests/diagrams/branched.diag
