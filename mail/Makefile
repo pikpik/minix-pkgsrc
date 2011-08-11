@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.410 2011/04/08 14:42:36 hauke Exp $
+# $NetBSD: Makefile,v 1.411 2011/06/19 10:09:18 obache Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -136,6 +136,7 @@ SUBDIR+=	mailcrypt
 SUBDIR+=	maildrop
 SUBDIR+=	mailfront
 SUBDIR+=	mailgraph
+SUBDIR+=	mailhops
 SUBDIR+=	mailman
 SUBDIR+=	mailscanner
 SUBDIR+=	mailserv
