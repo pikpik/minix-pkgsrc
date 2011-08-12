@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/10/20 02:50:45 taca Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/10 05:32:01 taca Exp $
 
 DISTNAME=	deprecated-2.0.1
+PKGREVISION=	1
 CATEGORIES=	devel ruby
 
 #
