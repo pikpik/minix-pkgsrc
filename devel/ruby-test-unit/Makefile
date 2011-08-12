@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2010/12/04 04:03:03 taca Exp $
+# $NetBSD: Makefile,v 1.3 2011/06/17 13:42:56 taca Exp $
 
-DISTNAME=	test-unit-2.3.0
+DISTNAME=	test-unit-2.3.1
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
