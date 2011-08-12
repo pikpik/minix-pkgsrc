@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- klee/tools/klee/Makefile.orig	Thu Aug 11 01:14:44 2011
++++ klee/tools/klee/Makefile
+@@ -18,7 +18,7 @@ USEDLIBS = kleeCore.a kleeModule.a kleaverSolver.a kle
+ ifeq ($(ENABLE_EXT_STP),0)
+   USEDLIBS += $(STP_LIBS)
+ endif
+-LINK_COMPONENTS = jit bitreader bitwriter ipo linker engine
++LINK_COMPONENTS = jit bitreader bitwriter ipo linker engine x86
+ 
+ include $(LEVEL)/Makefile.common
+ 

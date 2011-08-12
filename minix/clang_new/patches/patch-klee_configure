@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- klee/configure.orig	Thu Aug 11 01:14:45 2011
++++ klee/configure
+@@ -2033,6 +2033,7 @@ llvm_package_version=`grep PACKAGE_VERSION= $with_llvm
+ echo "${ECHO_T}$llvm_package_version" >&6; }
+ 
+ llvm_version_split=`python -c "import re; print '\t'.join(map(str, re.match('([0-9]+).([0-9]+)(svn)?', \"$llvm_package_version\").groups()))"`
++llvm_version_split="3	0	svn"
+ 
+ { echo "$as_me:$LINENO: checking llvm version major" >&5
+ echo $ECHO_N "checking llvm version major... $ECHO_C" >&6; }

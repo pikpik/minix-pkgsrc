@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tools/clang/lib/Driver/Tools.cpp.orig	Thu Aug 11 01:06:25 2011
+--- tools/clang/lib/Driver/Tools.cpp.orig	Wed Aug 10 23:17:05 2011
 +++ tools/clang/lib/Driver/Tools.cpp
 @@ -3379,7 +3379,7 @@ void auroraux::Assemble::ConstructJob(Compilation &C, 
    }

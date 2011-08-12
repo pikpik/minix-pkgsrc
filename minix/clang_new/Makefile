@@ -1,11 +1,11 @@
 # $NetBSD$
 #
 
-PKGNAME=	clang-3.0-r${SVNREV}
+PKGNAME=	clang-klee-3.0-r${SVNREV}
 CATEGORIES=	minix
 MASTER_SITES=	http://www.shrike-systems.com/minix/
 SVNREV=		137273
-DISTNAME=	llvm-clang-r${SVNREV}
+DISTNAME=	llvm-clang-r${SVNREV}-klee-r137290
 
 # Avoid dependency on lang/gcc44
 MINIX_GCC_NODEP=yes
@@ -52,11 +52,19 @@ CONFIGURE_ARGS+= --disable-optimized
 
 TEST_TARGET=	check unittests
 
+KLEE=${WRKDIR}/llvm/klee
+
 post-extract:
 	${MV} ${WRKDIR}/clang ${WRKDIR}/llvm/tools/clang
+	${MV} ${WRKDIR}/klee ${KLEE}
+
+post-build:
+	cd ${KLEE} && ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
+	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1
 
 post-install:
 	${CP} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${PREFIX}/bin/
+	cd ${KLEE} && gmake install
 
 WRKSRC=			${WRKDIR}/llvm
 

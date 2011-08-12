@@ -1,6 +1,6 @@
 $NetBSD$
 
---- tools/clang/lib/Driver/ToolChains.h.orig	Thu Aug 11 01:06:25 2011
+--- tools/clang/lib/Driver/ToolChains.h.orig	Wed Aug 10 23:17:05 2011
 +++ tools/clang/lib/Driver/ToolChains.h
 @@ -340,7 +340,7 @@ class LLVM_LIBRARY_VISIBILITY NetBSD : public Generic_
                             const ActionList &Inputs) const;

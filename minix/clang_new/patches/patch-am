@@ -1,6 +1,6 @@
 $NetBSD$
 
---- utils/lit/lit/main.py.orig	Thu Aug 11 01:06:24 2011
+--- utils/lit/lit/main.py.orig	Wed Aug 10 23:15:09 2011
 +++ utils/lit/lit/main.py
 @@ -6,7 +6,7 @@ lit - LLVM Integrated Tester.
  See lit.pod for more information.
