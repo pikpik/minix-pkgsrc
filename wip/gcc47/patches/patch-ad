@@ -1,8 +1,8 @@
 $NetBSD: patch-ad,v 1.1.1.1 2011/05/15 00:09:56 wiz Exp $
 
---- configure.orig	2011-03-16 18:27:36.000000000 +0000
+--- configure.orig	Wed Jun 22 19:40:45 2011
 +++ configure
-@@ -5275,7 +5275,7 @@ fi
+@@ -5074,7 +5074,7 @@ fi
  
  
  if test "x$with_mpfr" != x; then

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- gcc/config.gcc.orig
+--- gcc/config.gcc.orig	Wed Jun 22 17:01:17 2011
 +++ gcc/config.gcc
 @@ -568,6 +568,33 @@ case ${target} in
    # need_64bit_hwint=yes # system compiler has this for all arch!
@@ -67,3 +67,16 @@ $NetBSD$
  	extra_options="${extra_options} netbsd.opt netbsd-elf.opt"
  	tmake_file="${tmake_file} i386/t-crtstuff"
  	;;
+@@ -1332,6 +1368,12 @@ i[34567]86-*-lynxos*)
+ 	thread_file=lynx
+ 	gnu_ld=yes
+ 	gas=yes
++	;;
++i[34567]86-*-minix)
++	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h minix-spec.h minix.h i386/minix.h"
++	gas=yes
++	gnu_ld=yes
++	extra_parts="crtbegin.o crtend.o crtbeginS.o crtendS.o"
+ 	;;
+ i[3456x]86-*-netware*)
+ 	tm_file="${tm_file} i386/unix.h i386/att.h dbxelf.h elfos.h tm-dwarf2.h i386/netware.h"

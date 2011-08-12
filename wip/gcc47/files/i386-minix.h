@@ -35,7 +35,7 @@ Boston, MA 02110-1301, USA.  */
     }                                           \
   while (0)
 
-#define TARGET_VERSION fprintf (stderr, " (i386 MINIX/ELF)");
+/* #define TARGET_VERSION fprintf (stderr, " (i386 MINIX/ELF)"); */
 
 /* Override the default comment-starter of "/".  */
 #undef  ASM_COMMENT_START

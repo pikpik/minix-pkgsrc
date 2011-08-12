@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libjava/contrib/aot-compile-rpm.in.orig
+--- libjava/contrib/aot-compile-rpm.in.orig	Mon Feb 14 16:00:28 2011
 +++ libjava/contrib/aot-compile-rpm.in
 @@ -1,4 +1,4 @@
 -#!/usr/bin/env python

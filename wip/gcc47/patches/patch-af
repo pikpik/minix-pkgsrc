@@ -1,8 +1,8 @@
 $NetBSD: patch-af,v 1.1.1.1 2011/05/15 00:09:56 wiz Exp $
 
---- libjava/configure.orig	2011-03-25 17:07:00.000000000 +0000
+--- libjava/configure.orig	Sat Jun 25 22:34:34 2011
 +++ libjava/configure
-@@ -24653,7 +24653,7 @@ $as_echo "Python modules dir: ${python_m
+@@ -24691,7 +24691,7 @@ $as_echo "Python modules dir: ${python_mod_dir_expande
  
  
  # needed for aot-compile-rpm

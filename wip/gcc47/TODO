@@ -3,4 +3,16 @@
 * TODO make java target work on NetBSD
 * TODO make quadmath work on Linux amd64
 * TODO make test and send patches to gcc
-* DONE Fixed patch-aa for NetBSD i386
+* Depends on converters/libiconv?
+Check, if buildlink/builtin provides correct PREFIX:
+CONFIGURE_ARGS+=	--with-libiconv-prefix=${PREFIX}
+* Buildlink devel/binutils?
+Check, if buildlink/builtin provides correct PREFIX:
+CONFIGURE_ARGS+=	--with-ld=${PREFIX}/bin/gnu-ld
+CONFIGURE_ARGS+=	--with-libelf=${PREFIX}
+* fix installation
+The package installs few binaries to $(LOCALBASE)/bin (cpp, gcc, c++, gcov...)
+Manual and info pages may need tweaking to avoid possible conflicts.
+* Fix PLIST
+Tweak version to avoid "${PKGVERSION}.0" (?)
+Automatize variable substitution in PLIST (see approach used in lang/erlang).

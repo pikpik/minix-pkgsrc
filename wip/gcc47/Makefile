@@ -1,12 +1,12 @@
 # $NetBSD: Makefile,v 1.1.1.1 2011/05/15 00:09:55 wiz Exp $
 
 GCC_VERSION=		4.7
-DISTNAME=		gcc-${GCC_VERSION}-20110625
+DISTNAME=		gcc-${GCC_VERSION}-20110716
 PKGNAME=		gcc47-${GCC_VERSION}
 CATEGORIES=		wip
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
-SITES.gcc-4.7-20110625.tar.bz2= \
-		ftp://ftp.fu-berlin.de/unix/languages/gcc/snapshots/4.7-20110625/
+SITES.gcc-4.7-20110716.tar.bz2= \
+		ftp://ftp.fu-berlin.de/unix/languages/gcc/snapshots/4.7-20110716/
 
 EXTRACT_SUFX=		.tar.bz2
 
@@ -15,43 +15,44 @@ HOMEPAGE=		http://gcc.gnu.org/
 COMMENT=		GNU Compiler Collection 4.7
 LICENSE=		gnu-gpl-v2 AND gnu-gpl-v3 AND gnu-lgpl-v2 AND gnu-lgpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-USE_TOOLS+=		awk:run bash:run perl chmod \
-			gmake:run makeinfo msgfmt bison flex gm4 \
-			sed:run unzip
+NOT_FOR_PLATFORM=	Interix-*-*
 
 DEPENDS+=		zip-[0-9]*:../../archivers/zip
 DEPENDS+=		libiconv-[0-9]*:../../converters/libiconv
 BUILDLINK_API_DEPENDS.mpfr+=	mpfr>=2.3.1
 
+USE_TOOLS+=		awk:run bash:run perl chmod \
+			gmake:run makeinfo msgfmt bison flex gm4 \
+			sed:run unzip
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+UNLIMIT_RESOURCES+=	datasize
+UNLIMIT_RESOURCES+=	stacksize
 
 GCC_SUBPREFIX=		gcc47
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
 FILES_SUBST+=		PKGNAME=${PKGNAME}
 MESSAGE_SUBST+=		GCC_PREFIX=${GCC_PREFIX}
 
-GCC_SYMLINK_PROGRAMS=     cpp g++ gcc gccbug gcov gfortran
-
-# To avoid GNU surprises
-CONFIG_SHELL=		${TOOLS_PATH.bash}
-
-NOT_FOR_PLATFORM=	Interix-*-*
-UNLIMIT_RESOURCES+=	datasize
-UNLIMIT_RESOURCES+=	stacksize
+GNU_CONFIGURE=		yes
+CONFIG_SHELL=		${TOOLS_PATH.bash}	# to avoid GNU surprises
+CONFIGURE_DIRS=		$(WRKDIR)/obj
+CONFIGURE_SCRIPT=	$(WRKSRC)/configure
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
 .if ${OPSYS} == "Minix"
+# Only build C
 BUILD_FORTRAN=NO
 BUILD_JAVA=NO
+BUILD_CXX=NO
 BUILD_OBJC=NO
 
-DEPENDS+= binutils>=2.21:../../wip/binutils
+DEPENDS+= binutils>=2.17:../../devel/binutils
 CONFIGURE_ARGS+=  --host=i386-pc-minix --target=i386-pc-minix --build=i386-pc-minix 
 CONFIGURE_ARGS+=  --disable-visibility
-
 .endif
 
 # Determine whether to use binutils
@@ -133,11 +134,13 @@ CONFIGURE_ARGS+=	--with-mpfr=${BUILDLINK_PREFIX.mpfr}
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${PREFIX}
 CONFIGURE_ARGS+=	--with-gxx-include-dir=${GCC_PREFIX}/include/c++/
 CONFIGURE_ARGS+=	--with-tune=generic
+.if ${OPSYS} != "Minix"
 CONFIGURE_ARGS+=	--with-ppl-include=${PREFIX}/include
 CONFIGURE_ARGS+=	--with-ppl-lib=${PREFIX}/lib
 CONFIGURE_ARGS+=	--with-cloog-include=${PREFIX}/include
 CONFIGURE_ARGS+=	--with-cloog-lib=${PREFIX}/lib
 CONFIGURE_ARGS+=	--enable-cloog-backend=isl
+.endif
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--with-ld=${PREFIX}/bin/gnu-ld
 CONFIGURE_ARGS+=	--with-libelf=${PREFIX}
@@ -187,60 +190,36 @@ CFLAGS+=		-I${BUILDLINK_DIR}/include
 
 LIBS.SunOS+=		-lgmp
 
+TEST_TARGET=	check
+
 pre-configure:
+	${MKDIR} ${WRKDIR}/obj
 .if ${OPSYS} == "DragonFly"
 	${CP} ${FILESDIR}/dragonfly.h ${WRKSRC}/gcc/config/dragonfly.h
 	${CP} ${FILESDIR}/dragonfly-spec.h ${WRKSRC}/gcc/config/dragonfly-spec.h
 	${CP} ${FILESDIR}/i386-dragonfly.h ${WRKSRC}/gcc/config/i386/dragonfly.h
 	${CP} ${FILESDIR}/i386-dragonfly64.h ${WRKSRC}/gcc/config/i386/dragonfly64.h
 .endif
-
 .if ${OPSYS} == "Minix"
 	${CP} ${FILESDIR}/minix.h ${WRKSRC}/gcc/config/
 	${CP} ${FILESDIR}/minix-spec.h ${WRKSRC}/gcc/config/
 	${CP} ${FILESDIR}/i386-minix.h ${WRKSRC}/gcc/config/i386/minix.h
-	${CP} ${FILESDIR}/gcov-minix-fs-wrapper.h ${WRKSRC}/gcc/
+	${CP} ${FILESDIR}/gcov-minix-fs-wrapper.h ${WRKSRC}/libgcc/
 .endif
-
 .if ${OPSYS} == "NetBSD"
 	${CP} ${WRKSRC}/gcc/config/freebsd-stdint.h ${WRKSRC}/gcc/config/netbsd-stdint.h
 .endif
-
-do-configure:
-	${MKDIR} ${WRKDIR}/obj
-	cd ${WRKDIR}/obj; ${SETENV} ${CONFIGURE_ENV} ${CONFIG_SHELL} ${WRKSRC}/configure ${CONFIGURE_ARGS}
-
-do-build:
-	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} -j${MAKE_JOBS:U1:Q} )
-
-do-test:
-#.if (${MACHINE_GNU_ARCH} == "x86_64")
-#	(cd ${FILESDIR} && ${CP} netbsd64macro.dfs ${WRKSRC}/gcc/testsuite/ada/acats/support/macro.dfs)
-#.endif
-	(cd ${WRKDIR}/obj && ${GMAKE} -k check)
-
-do-install:
-	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} install DESTDIR=${DESTDIR} \
-	 && ${TEST} -f ${DESTDIR}${GCC_PREFIX}/bin/cc || ${LN} -f ${DESTDIR}${GCC_PREFIX}/bin/gcc ${DESTDIR}${GCC_PREFIX}/bin/cc)
-
-post-install:
-	${MKDIR} -p ${DESTDIR}${PREFIX}/bin
-.for X in ${GCC_SYMLINK_PROGRAMS}
-	${LN} -s ${GCC_PREFIX}/bin/${X} ${DESTDIR}${PREFIX}/bin/${X}
-.endfor
-
-GENERATE_PLIST_SYMLINKS=  for x in ${GCC_SYMLINK_PROGRAMS}; do ${ECHO} bin/$$x; done
-GENERATE_PLIST+= { ${GENERATE_PLIST_SYMLINKS};							\
-+       cd ${DESTDIR}${PREFIX} && ${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print; } | ${SORT} ;
 
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../math/mpcomplex/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../math/mpfr/buildlink3.mk"
-.include "../../wip/binutils/buildlink3.mk"
+.include "../../devel/binutils/buildlink3.mk"
 .include "../../devel/libelf/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
+.if ${OPSYS} != "Minix"
 .include "../../wip/cloog/buildlink3.mk"
 .include "../../wip/ppl/buildlink3.mk"
-#.include "../../lang/python/application.mk"
+.include "../../lang/python/application.mk"
+.endif
 .include "../../mk/bsd.pkg.mk"

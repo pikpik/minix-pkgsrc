@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libjava/boehm.cc.orig
+--- libjava/boehm.cc.orig	Mon Oct 22 21:24:35 2007
 +++ libjava/boehm.cc
 @@ -747,7 +747,8 @@ _Jv_GCAttachThread ()
    // The registration interface is only defined on posixy systems and

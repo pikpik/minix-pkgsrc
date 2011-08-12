@@ -11,6 +11,7 @@
 #include <unistd.h>
 #include <sys/types.h>
 
+#include <minix/gcov.h>
 
 /* These function pointers initially point to the standard system library
  * functions (fopen, etc). All calls to these system library functions are
@@ -33,7 +34,9 @@
 
 int do_gcov_exit = 1;
 
-void gcov_exit_wrapper(void){
+static void gcov_exit_wrapper(void);
+
+static void gcov_exit_wrapper(void) {
 	if(do_gcov_exit)
 		gcov_exit();
 }

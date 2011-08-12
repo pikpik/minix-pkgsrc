@@ -1,6 +1,6 @@
 $NetBSD: patch-ag,v 1.1.1.1 2011/05/15 00:09:56 wiz Exp $
 
---- libjava/contrib/rebuild-gcj-db.in.orig	2008-07-02 13:17:54.000000000 +0000
+--- libjava/contrib/rebuild-gcj-db.in.orig	Wed Jul  2 13:17:54 2008
 +++ libjava/contrib/rebuild-gcj-db.in
 @@ -1,4 +1,4 @@
 -#!/bin/bash
@@ -8,7 +8,7 @@ $NetBSD: patch-ag,v 1.1.1.1 2011/05/15 00:09:56 wiz Exp $
  # rebuild-gcj-db
  
  ## Copyright (C) 2000, 2002, 2003, 2008 Free Software Foundation
-@@ -16,12 +16,12 @@ for i in `@prefix@/bin/gcc --print-multi
+@@ -16,12 +16,12 @@ for i in `@prefix@/bin/gcc --print-multi-lib 2>/dev/nu
     base=@prefix@/lib/$dirname
     dbLocation=`@prefix@/bin/gcj-dbtool -p $base`
     libdir=$base/gcj

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libgcc/enable-execute-stack-mprotect.c.orig
+--- libgcc/enable-execute-stack-mprotect.c.orig	Thu Jun  9 12:30:46 2011
 +++ libgcc/enable-execute-stack-mprotect.c
 @@ -62,32 +62,6 @@ check_enabling (void)
  static int need_enable_exec_stack = 1;
