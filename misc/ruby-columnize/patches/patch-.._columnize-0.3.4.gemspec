@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-.._columnize-0.3.4.gemspec,v 1.1 2011/08/12 16:55:02 taca Exp $
+
+Remove unsupported rdoc option.
 
 --- ../columnize-0.3.4.gemspec.orig	2011-08-08 00:30:06.000000000 +0000
 +++ ../columnize-0.3.4.gemspec
