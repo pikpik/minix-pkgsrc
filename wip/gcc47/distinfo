@@ -16,4 +16,6 @@ SHA1 (patch-an) = 66a26c917ac306551c839ceebbc617d0e6aba7f2
 SHA1 (patch-ao) = 5414be528aae028f11a85d93d8384dba88497b45
 SHA1 (patch-ap) = 965044897aa8eb8ead0e2acba1b8ce9655eb29a8
 SHA1 (patch-gcov.c) = 50087f2776e9d4b4d41e0d25b3455db26a47224c
+SHA1 (patch-libgcc_charset.c) = 516fb2c919a53e422dfb75db4366cb615ba3f751
+SHA1 (patch-libgcc_internal.h) = 9e2d7c7281a16d934b4696895d8f0a1ac50681cb
 SHA1 (patch-libgcc_libgcov.c) = 582d738f1d4547c5c15538a27a31d5543e28b67c

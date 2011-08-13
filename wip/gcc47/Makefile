@@ -210,6 +210,16 @@ pre-configure:
 	${CP} ${WRKSRC}/gcc/config/freebsd-stdint.h ${WRKSRC}/gcc/config/netbsd-stdint.h
 .endif
 
+do-configure:
+	${MKDIR} ${WRKDIR}/obj
+	cd ${WRKDIR}/obj; ${SETENV} ${CONFIGURE_ENV} ${CONFIG_SHELL} ${WRKSRC}/configure ${CONFIGURE_ARGS}
+
+do-build:
+	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} -j${MAKE_JOBS:U1:Q} )
+
+do-install:
+	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} install DESTDIR=${DESTDIR})
+
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../math/mpcomplex/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
