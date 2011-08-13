@@ -15,8 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS+=	python-[0-9]*
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-threads
-CONFIGURE_ARGS+=	--enable-shared
+
 CONFIGURE_ARGS+=	OPT=${CFLAGS:Q}
 CONFIGURE_ARGS+=	--with-system-ffi
 
@@ -29,11 +28,19 @@ USE_LANGUAGES=		c c++
 
 PTHREAD_OPTS+=	require
 .include "../../mk/pthread.buildlink3.mk"
+
+.include "../../mk/bsd.prefs.mk"
+
+.if (${OPSYS} == "Minix")
+CONFIGURE_ARGS+=	--without-threads
+CONFIGURE_ARGS+=	--disable-shared
+.else
+CONFIGURE_ARGS+=	--with-threads
+CONFIGURE_ARGS+=	--enable-shared
 .if ${PTHREAD_TYPE} == "pth"
 CONFIGURE_ARGS+=	--with-pth
 .endif
-
-.include "../../mk/bsd.prefs.mk"
+.endif
 
 # fdatasync()
 LIBS.SunOS+=		-lrt
