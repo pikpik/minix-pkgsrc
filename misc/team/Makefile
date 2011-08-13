@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2009/06/29 16:13:30 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2010/02/04 17:21:54 joerg Exp $
 
 DISTNAME=	team-3.1
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
