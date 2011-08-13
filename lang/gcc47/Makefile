@@ -45,12 +45,11 @@ CONFIGURE_SCRIPT=	$(WRKSRC)/configure
 
 .if ${OPSYS} == "Minix"
 # Only build C
-BUILD_FORTRAN=NO
+BUILD_FORTRAN=YES
 BUILD_JAVA=NO
-BUILD_CXX=NO
+BUILD_CXX=YES
 BUILD_OBJC=NO
 
-DEPENDS+= binutils>=2.17:../../devel/binutils
 CONFIGURE_ARGS+=  --host=i386-pc-minix --target=i386-pc-minix --build=i386-pc-minix 
 CONFIGURE_ARGS+=  --disable-visibility
 .endif
