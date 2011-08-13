@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2010/09/12 02:37:08 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/13 14:32:41 taca Exp $
 
-DISTNAME=	merb-builder-0.9.8
+DISTNAME=	merb_builder-0.9.13
+PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/_/-/g}
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
