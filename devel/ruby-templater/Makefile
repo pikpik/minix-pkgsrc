@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/08/12 16:08:19 taca Exp $
 
 DISTNAME=	templater-1.0.0
+PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
