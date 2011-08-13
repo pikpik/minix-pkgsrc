@@ -3,7 +3,7 @@
 GCC_VERSION=		4.7
 DISTNAME=		gcc-${GCC_VERSION}-20110716
 PKGNAME=		gcc47-${GCC_VERSION}
-CATEGORIES=		wip
+CATEGORIES=		lang
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
 SITES.gcc-4.7-20110716.tar.bz2= \
 		ftp://ftp.fu-berlin.de/unix/languages/gcc/snapshots/4.7-20110716/

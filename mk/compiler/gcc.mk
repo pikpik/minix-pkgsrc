@@ -369,16 +369,16 @@ _USE_GCC_SHLIB?=	yes
 .  endif
 .elif !empty(_NEED_GCC47:M[yY][eE][sS])
 #
-# We require gcc-4.7.x in the wip/gcc47 directory.
+# We require gcc-4.7.x in the lang/gcc47 directory.
 #
 _GCC_PKGBASE=		gcc47
-.  if !empty(PKGPATH:Mwip/gcc47)
+.  if !empty(PKGPATH:Mlang/gcc47)
 _IGNORE_GCC=		yes
 MAKEFLAGS+=		_IGNORE_GCC=yes
 .  endif
 .  if !defined(_IGNORE_GCC) && !empty(_LANGUAGES.gcc)
-_GCC_PKGSRCDIR=		../../wip/gcc47
-_GCC_DEPENDENCY=	gcc47>=${_GCC_REQD}:../../wip/gcc47
+_GCC_PKGSRCDIR=		../../lang/gcc47
+_GCC_DEPENDENCY=	gcc47>=${_GCC_REQD}:../../lang/gcc47
 .    if !empty(_LANGUAGES.gcc:Mc++) || \
         !empty(_LANGUAGES.gcc:Mfortran) || \
         !empty(_LANGUAGES.gcc:Mfortran77) || \
