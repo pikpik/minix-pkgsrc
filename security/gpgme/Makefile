@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.65 2011/08/11 11:15:00 adam Exp $
+# $NetBSD: Makefile,v 1.66 2011/08/14 19:47:37 wiz Exp $
 
 DISTNAME=	gpgme-1.3.1
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/gpgme/
 EXTRACT_SUFX=	.tar.bz2
@@ -53,3 +54,4 @@ BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.4
 .include "../../security/libgpg-error/buildlink3.mk"
 # we want the getenv_r() semantics of NetBSD-current
 .include "../../mk/bsd.pkg.mk"
+_UNWRAP_FILES=
