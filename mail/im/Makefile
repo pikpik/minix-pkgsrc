@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/09/06 12:19:45 taca Exp $
+# $NetBSD: Makefile,v 1.6 2011/05/28 07:54:01 obache Exp $
 
 DISTNAME=	im-151
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://tats.haun.org/im/
 
