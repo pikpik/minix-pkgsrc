@@ -70,6 +70,7 @@ devel/subversion-base
 devel/topgit
 devel/zlib
 editors/ed
+editors/elvis
 editors/hexedit
 editors/mg
 editors/nano
