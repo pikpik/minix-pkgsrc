@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/10/19 19:17:41 he Exp $
+# $NetBSD: Makefile,v 1.8 2010/08/21 16:32:45 seb Exp $
 #
 
 DISTNAME=	msnre-0.91
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=msnre/}
 
