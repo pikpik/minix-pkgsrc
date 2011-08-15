@@ -15,8 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS+=	python-[0-9]*
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-threads
-CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	OPT=${CFLAGS:M*:Q}
 
 USE_LANGUAGES=		c c++
@@ -28,6 +26,14 @@ CONFIGURE_ARGS+=	--with-pth
 .endif
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--without-threads
+CONFIGURE_ARGS+=	--disable-shared
+.else
+CONFIGURE_ARGS+=       --with-threads
+CONFIGURE_ARGS+=       --enable-shared
+.endif
 
 # fdatasync()
 LIBS.SunOS+=		-lrt
@@ -144,6 +150,13 @@ REPLACE_FILES.py24+=	Lib/test/*.py
 post-extract:
 	${MV} ${WRKSRC}/Lib/smtpd.py ${WRKSRC}/Lib/smtpd${PY_VER_SUFFIX}.py
 	${MV} ${WRKSRC}/Tools/scripts/pydoc ${WRKSRC}/Tools/scripts/pydoc${PY_VER_SUFFIX}
+
+LIBS.Minix+=		-lcrypt
+
+.if ${OPSYS} == "Minix"
+post-patch:
+	${CP} ${FILESDIR}/Setup.minix ${WRKSRC}/Modules/Setup
+.endif
 
 .if ${OPSYS} == "Darwin"
 post-build:

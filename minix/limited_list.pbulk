@@ -106,6 +106,7 @@ lang/lua
 lang/nawk
 lang/p2c
 lang/perl5
+lang/python24
 lang/tcl
 lang/wsbasic
 mail/postfix
