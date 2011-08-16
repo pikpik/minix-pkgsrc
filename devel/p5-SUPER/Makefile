@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:34:22 seb Exp $
+# $NetBSD: Makefile,v 1.6 2011/08/14 12:26:33 obache Exp $
 #
 
 DISTNAME=	SUPER-1.17
@@ -15,7 +15,6 @@ LICENSE=	${PERL5_LICENSE}
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Sub-Identify>=0.03:../../devel/p5-Sub-Identify
-BUILD_DEPENDS+=	p5-Module-Build>=0.35:../../devel/p5-Module-Build
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/SUPER/.packlist
