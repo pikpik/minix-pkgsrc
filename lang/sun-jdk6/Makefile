@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/07/09 10:27:53 abs Exp $
+# $NetBSD: Makefile,v 1.24 2011/07/12 02:58:52 obache Exp $
 
 DISTNAME=	jdk-6u26-linux-${DIST_ARCH}
 PKGNAME=	sun-jdk6-6.0.26
@@ -19,6 +19,8 @@ MAKE_JOBS_SAFE=	no
 .if !empty(MACHINE_PLATFORM:MLinux-*-x86_64)
 CHECK_SHLIBS_SUPPORTED=	no
 .endif
+
+PLIST_SRC=	PLIST.linux-${EMUL_ARCH}
 
 # Remove parts that are in common with the JRE
 #
