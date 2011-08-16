@@ -57,8 +57,6 @@ include/clang/Driver/Options.inc
 include/clang/Lex/AttrSpellings.inc
 include/clang/Serialization/AttrPCHRead.inc
 include/clang/Serialization/AttrPCHWrite.inc
-include/ffi.h
-include/ffitarget.h
 include/klee/Config/config.h
 include/llvm/Config/AsmParsers.def
 include/llvm/Config/AsmPrinters.def
@@ -146,7 +144,6 @@ lib/libclangSerialization.a
 lib/libclangStaticAnalyzerCheckers.a
 lib/libclangStaticAnalyzerCore.a
 lib/libclangStaticAnalyzerFrontend.a
-lib/libffi.la
 lib/libkleaverExpr.a
 lib/libkleaverSolver.a
 lib/libklee-libc.a
@@ -165,8 +162,6 @@ lib/libstp_c_interface.a
 lib/libstp_constantbv.a
 lib/libstp_sat.a
 lib/libstp_simplifier.a
-lib/pkgconfig/libffi.${LOWER_VENDOR}
-lib/pkgconfig/printproto.${LOWER_VENDOR}
 man/man1/bugpoint.1
 man/man1/clang.1
 man/man1/lit.1
