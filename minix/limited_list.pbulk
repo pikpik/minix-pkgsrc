@@ -183,6 +183,7 @@ textproc/xmlrpc-c
 time/cal
 time/jday
 wm/fluxbox
+www/apache
 www/curl
 www/libwww
 www/links

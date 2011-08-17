@@ -85,6 +85,11 @@ PLIST_SRC=		${PKGDIR}/PLIST.suexec
 BUILD_DEFS+=	 	APACHE_SUEXEC_DOCROOT
 .endif
 
+.if ${OPSYS} == "Minix"
+NOPIC=yes
+CONFIGURE_ENV+=		LIBS="-lcrypt -lm"
+.endif
+
 # Note that there is NO static compile module hook here.  This is intentional.
 # Under Apache 1.3, modules can be compiled to link dynamically to the server
 # using the "apxs" program.  See apxs(8).
