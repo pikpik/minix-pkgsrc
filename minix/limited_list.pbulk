@@ -110,6 +110,7 @@ lang/python24
 lang/tcl
 lang/wsbasic
 mail/postfix
+mail/mutt
 math/bc
 math/mpcomplex
 math/mpfr

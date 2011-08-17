@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- contrib/Makefile.in.orig	Wed May 23 01:17:52 2007
++++ contrib/Makefile.in
+@@ -39,10 +39,10 @@ check:
+ install:
+ 	$(top_srcdir)/mkinstalldirs $(DESTDIR)$(docdir)/samples $(DESTDIR)$(docdir)/samples/iconv
+ 	for f in $(SAMPLES) ; do \
+-		$(INSTALL) -m 644 $(srcdir)/$$f $(DESTDIR)$(docdir)/samples ;	\
++		$(INSTALL) -m 644 $(srcdir)/$$f $(DESTDIR)$(docdir)/samples/ ;	\
+ 	done
+ 	for f in $(srcdir)/iconv/*.rc ; do					\
+-		$(INSTALL) -m 644 $$f $(DESTDIR)$(docdir)/samples/iconv	  ;	\
++		$(INSTALL) -m 644 $$f $(DESTDIR)$(docdir)/samples/iconv/	  ;	\
+ 	done
+ 
+ # Nothing needs to be done - uninstall in doc removes samples as well.

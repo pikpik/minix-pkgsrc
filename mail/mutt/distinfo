@@ -14,3 +14,4 @@ SHA1 (patch-aj) = a0ee2bc9a7b9e743e313101899de3d991a9d2cad
 SHA1 (patch-ak) = 689305356812d04bd3b490c436ed898a4b308136
 SHA1 (patch-al) = d03611108f76c33e87ac89a6e7eefc012297df86
 SHA1 (patch-am) = faa80ebf308eddfcbbe5aeab2f52d2d356d540cf
+SHA1 (patch-contrib_Makefile.in) = 5f9eca9431e5042053b711ee1edd74e454f9723d
