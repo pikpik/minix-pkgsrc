@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2011/02/11 21:22:03 tnn Exp $
+# $NetBSD: Makefile,v 1.14 2011/02/28 14:52:57 wiz Exp $
 
-DISTNAME=	tmux-1.4
-PKGREVISION=	1
+DISTNAME=	tmux-1.5
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tmux/}
 
@@ -12,7 +11,7 @@ LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 USE_TERMINFO=	yes
 
 .include "../../devel/libevent/buildlink3.mk"
