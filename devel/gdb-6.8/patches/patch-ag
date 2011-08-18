@@ -1,12 +1,22 @@
 $NetBSD$
 
---- gdb/configure.host.orig	Sat Jan 19 15:03:50 2008
-+++ gdb/configure.host
-@@ -92,6 +92,7 @@ i[34567]86-*-mingw32*)	gdb_host=mingw
- 			gdb_host_obs=mingw-hdep.o
- 			;;
- i[34567]86-*-msdosdjgpp*) gdb_host=go32 ;;
-+i[34567]86-*-minix*)	gdb_host=minix ;;
- i[34567]86-*-linux*)	gdb_host=linux ;;
- i[34567]86-*-gnu*)	gdb_host=i386gnu ;;
- i[3456]86-*-nto*) 	gdb_host=nto ;;
+--- gdb/Makefile.in.orig	Mon Mar 17 12:15:08 2008
++++ gdb/Makefile.in
+@@ -30,7 +30,7 @@ libdir = @libdir@
+ tooldir = $(libdir)/$(target_alias)
+ 
+ datadir = @datadir@
+-localedir = @localedir@
++localedir = /usr/pkg/share/locale
+ mandir = @mandir@
+ man1dir = $(mandir)/man1
+ man2dir = $(mandir)/man2
+@@ -149,7 +149,7 @@ GDB_WERROR_CFLAGS = $(WERROR_CFLAGS)
+ GDB_WARN_CFLAGS_NO_FORMAT = `echo " $(GDB_WARN_CFLAGS) " | sed "s/ -Wformat-nonliteral / /g"`
+ 
+ # Where is the INTL library?  Typically in ../intl.
+-INTL = @LIBINTL@
++INTL = -L${PREFIX}/lib -R${PREFIX}/lib -lintl
+ INTL_DEPS = @LIBINTL_DEP@
+ INTL_CFLAGS = @INCINTL@
+ 

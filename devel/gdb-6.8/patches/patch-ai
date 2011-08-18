@@ -1,17 +1,41 @@
 $NetBSD$
 
---- gdb/configure.tgt.orig	Mon Feb 11 21:58:41 2008
-+++ gdb/configure.tgt
-@@ -150,6 +150,12 @@ i[34567]86-*-freebsd* | i[34567]86-*-kfreebsd*-gnu)
- 	gdb_target_obs="i386-tdep.o i387-tdep.o i386bsd-tdep.o i386fbsd-tdep.o \
- 			bsd-uthread.o corelow.o solib.o solib-svr4.o"
- 	;;
-+i[34567]86-*-minix*)
-+	# Target: MINIX3/i386
-+	gdb_target_obs="i386-tdep.o i386minix-tdep.o i387-tdep.o\
-+			solib-null.o corelow.o"
-+	# build_gdbserver=yes
-+	;;
- i[34567]86-*-netbsd* | i[34567]86-*-knetbsd*-gnu)
- 	# Target: NetBSD/i386
- 	gdb_target_obs="i386-tdep.o i387-tdep.o i386bsd-tdep.o i386nbsd-tdep.o \
+--- gdb/configure.orig	Sun Jan 13 12:23:04 2008
++++ gdb/configure
+@@ -6347,7 +6347,7 @@ fi
+ rm -f conftest.err conftest.$ac_objext \
+       conftest$ac_exeext conftest.$ac_ext
+ if test "$ac_cv_search_tgetent" = no; then
+-  for ac_lib in termcap tinfo curses ncurses; do
++  for ac_lib in termcap tinfo curses ncurses compat_minix; do
+     LIBS="-l$ac_lib  $ac_func_search_save_LIBS"
+     cat >conftest.$ac_ext <<_ACEOF
+ /* confdefs.h.  */
+@@ -11608,8 +11608,9 @@ esac
+ 
+ 
+ 
+-
+-for ac_header in curses.h cursesX.h ncurses.h ncurses/ncurses.h
++# FIXME: On MINIX -> redeclaration of fatal in gcc/inculde-fixed/ curses.h and ./defs.h
++# so do not include this header
++for ac_header in cursesX.h ncurses.h ncurses/ncurses.h
+ do
+ as_ac_Header=`echo "ac_cv_header_$ac_header" | $as_tr_sh`
+ if eval "test \"\${$as_ac_Header+set}\" = set"; then
+@@ -22994,10 +22995,12 @@ esac
+ OLD_CFLAGS=$CFLAGS
+ OLD_LDFLAGS=$LDFLAGS
+ OLD_LIBS=$LIBS
+-CFLAGS="$CFLAGS -I${srcdir}/../include -I../bfd -I${srcdir}/../bfd"
+-LDFLAGS="$LDFLAGS -L../bfd -L../libiberty"
++#XXX Overwrite $CFLAGS and $LDFLAGS -> on MINIX it generates a conflict
++#    with the existent libraries
++CFLAGS="-I${srcdir}/../include -I../bfd -I${srcdir}/../bfd"
++LDFLAGS="-L../bfd -L../libiberty -L../intl"
+ intl=`echo $LIBINTL | sed 's,${top_builddir}/,,g'`
+-LIBS="$LIBS -lbfd -liberty $intl"
++LIBS="$LIBS -lbfd -liberty -lintl"
+ echo "$as_me:$LINENO: checking for ELF support in BFD" >&5
+ echo $ECHO_N "checking for ELF support in BFD... $ECHO_C" >&6
+ if test "${gdb_cv_var_elf+set}" = set; then

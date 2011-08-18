@@ -29,6 +29,8 @@ pre-patch:
 	${CP} ${FILESDIR}/i386minix-tdep.c ${WRKSRC}/gdb
 	${CP} ${FILESDIR}/minix.mh ${WRKSRC}/gdb/config/i386
 	${CP} ${FILESDIR}/nm-minix.h ${WRKSRC}/gdb/config/i386
+	${CP} ${FILESDIR}/minix-nat.c ${WRKSRC}/gdb
+	${CP} ${FILESDIR}/minix-nat.h ${WRKSRC}/gdb
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

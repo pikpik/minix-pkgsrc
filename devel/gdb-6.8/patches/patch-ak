@@ -1,15 +1,12 @@
 $NetBSD$
 
---- gdb/eval.c.orig	Mon Feb  4 00:23:04 2008
-+++ gdb/eval.c
-@@ -1641,8 +1641,8 @@ evaluate_subexp_standard (struct type *expect_type,
- 
-     multi_f77_subscript:
-       {
--	int subscript_array[MAX_FORTRAN_DIMS];
--	int array_size_array[MAX_FORTRAN_DIMS];
-+	int subscript_array[MAX_FORTRAN_DIMS] = {0};
-+	int array_size_array[MAX_FORTRAN_DIMS] = {0};
- 	int ndimensions = 1, i;
- 	struct type *tmp_type;
- 	int offset_item;	/* The array offset where the item lives */
+--- gdb/defs.h.orig	Fri Jan 18 17:07:39 2008
++++ gdb/defs.h
+@@ -917,6 +917,7 @@ enum gdb_osabi
+   GDB_OSABI_HURD,
+   GDB_OSABI_SOLARIS,
+   GDB_OSABI_OSF1,
++  GDB_OSABI_MINIX,
+   GDB_OSABI_LINUX,
+   GDB_OSABI_FREEBSD_AOUT,
+   GDB_OSABI_FREEBSD_ELF,

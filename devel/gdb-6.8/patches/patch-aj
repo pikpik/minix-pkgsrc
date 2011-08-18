@@ -1,12 +1,17 @@
 $NetBSD$
 
---- gdb/defs.h.orig	Fri Jan 18 17:07:39 2008
-+++ gdb/defs.h
-@@ -917,6 +917,7 @@ enum gdb_osabi
-   GDB_OSABI_HURD,
-   GDB_OSABI_SOLARIS,
-   GDB_OSABI_OSF1,
-+  GDB_OSABI_MINIX,
-   GDB_OSABI_LINUX,
-   GDB_OSABI_FREEBSD_AOUT,
-   GDB_OSABI_FREEBSD_ELF,
+--- gdb/configure.tgt.orig	Mon Feb 11 21:58:41 2008
++++ gdb/configure.tgt
+@@ -150,6 +150,12 @@ i[34567]86-*-freebsd* | i[34567]86-*-kfreebsd*-gnu)
+ 	gdb_target_obs="i386-tdep.o i387-tdep.o i386bsd-tdep.o i386fbsd-tdep.o \
+ 			bsd-uthread.o corelow.o solib.o solib-svr4.o"
+ 	;;
++i[34567]86-*-minix*)
++	# Target: MINIX3/i386
++	gdb_target_obs="i386-tdep.o i386minix-tdep.o i387-tdep.o\
++			solib-null.o corelow.o"
++	# build_gdbserver=yes
++	;;
+ i[34567]86-*-netbsd* | i[34567]86-*-knetbsd*-gnu)
+ 	# Target: NetBSD/i386
+ 	gdb_target_obs="i386-tdep.o i387-tdep.o i386bsd-tdep.o i386nbsd-tdep.o \

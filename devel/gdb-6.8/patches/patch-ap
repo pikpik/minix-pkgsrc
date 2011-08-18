@@ -1,43 +1,12 @@
 $NetBSD$
 
---- gdb/ser-tcp.c.orig	Tue Jan  1 22:53:12 2008
-+++ gdb/ser-tcp.c
-@@ -50,6 +50,10 @@
- #include <signal.h>
- #include "gdb_string.h"
- 
-+#ifndef FIONBIO
-+#include <fcntl.h>
-+#endif
-+
- #ifndef HAVE_SOCKLEN_T
- typedef int socklen_t;
- #endif
-@@ -122,8 +126,13 @@ net_open (struct serial *scb, const char *name)
- 	  sizeof (struct in_addr));
- 
-   /* set socket nonblocking */
-+#ifdef FIONBIO
-   ioarg = 1;
-   ioctl (scb->fd, FIONBIO, &ioarg);
-+#else
-+  ioarg = fcntl(scb->fd, F_GETFL, 0);
-+  fcntl(scb->fd, F_SETFL, ioarg | O_NONBLOCK);
-+#endif
- 
-   /* Use Non-blocking connect.  connect() will return 0 if connected already. */
-   n = connect (scb->fd, (struct sockaddr *) &sockaddr, sizeof (sockaddr));
-@@ -215,8 +224,13 @@ net_open (struct serial *scb, const char *name)
-   } 
- 
-   /* turn off nonblocking */
-+#ifdef FIONBIO
-   ioarg = 0;
-   ioctl (scb->fd, FIONBIO, &ioarg);
-+#else
-+  ioarg = fcntl(scb->fd, F_GETFL, 0);
-+  fcntl(scb->fd, F_SETFL, ioarg & ~O_NONBLOCK);
-+#endif
- 
-   if (use_udp == 0)
-     {
+--- gdb/osabi.c.orig	Tue Jan  1 22:53:12 2008
++++ gdb/osabi.c
+@@ -55,6 +55,7 @@ static const char * const gdb_osabi_names[] =
+   "GNU/Hurd",
+   "Solaris",
+   "OSF/1",
++  "MINIX",
+   "GNU/Linux",
+   "FreeBSD a.out",
+   "FreeBSD ELF",

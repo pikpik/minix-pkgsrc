@@ -1,13 +1,12 @@
 $NetBSD$
 
---- gdb/Makefile.in.orig	Mon Mar 17 12:15:08 2008
-+++ gdb/Makefile.in
-@@ -149,7 +149,7 @@ GDB_WERROR_CFLAGS = $(WERROR_CFLAGS)
- GDB_WARN_CFLAGS_NO_FORMAT = `echo " $(GDB_WARN_CFLAGS) " | sed "s/ -Wformat-nonliteral / /g"`
- 
- # Where is the INTL library?  Typically in ../intl.
--INTL = @LIBINTL@
-+INTL = -L${PREFIX}/lib -R${PREFIX}/lib -lintl
- INTL_DEPS = @LIBINTL_DEP@
- INTL_CFLAGS = @INCINTL@
- 
+--- bfd/targets.c.orig	Thu Feb 14 15:20:26 2008
++++ bfd/targets.c
+@@ -723,6 +723,7 @@ extern const bfd_target i386linux_vec;
+ extern const bfd_target i386lynx_aout_vec;
+ extern const bfd_target i386lynx_coff_vec;
+ extern const bfd_target i386mach3_vec;
++extern const bfd_target bfd_elf32_i386_minix_vec;
+ extern const bfd_target i386msdos_vec;
+ extern const bfd_target i386netbsd_vec;
+ extern const bfd_target i386os9k_vec;

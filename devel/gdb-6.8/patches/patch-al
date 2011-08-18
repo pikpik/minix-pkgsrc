@@ -1,21 +1,15 @@
 $NetBSD$
 
---- gdb/gdb_ptrace.h.orig	Tue Jan  1 22:53:09 2008
-+++ gdb/gdb_ptrace.h
-@@ -97,12 +97,16 @@
- #ifndef PT_ATTACH
- # ifdef PTRACE_ATTACH
- #  define PT_ATTACH PTRACE_ATTACH
-+# elif T_ATTACH
-+#  define PT_ATTACH T_ATTACH
- # endif
- #endif
+--- gdb/eval.c.orig	Mon Feb  4 00:23:04 2008
++++ gdb/eval.c
+@@ -1641,8 +1641,8 @@ evaluate_subexp_standard (struct type *expect_type,
  
- #ifndef PT_DETACH
- # ifdef PTRACE_DETACH
- #  define PT_DETACH PTRACE_DETACH
-+# elif T_ATTACH
-+#  define PT_DETACH T_DETACH
- # endif
- #endif
- 
+     multi_f77_subscript:
+       {
+-	int subscript_array[MAX_FORTRAN_DIMS];
+-	int array_size_array[MAX_FORTRAN_DIMS];
++	int subscript_array[MAX_FORTRAN_DIMS] = {0};
++	int array_size_array[MAX_FORTRAN_DIMS] = {0};
+ 	int ndimensions = 1, i;
+ 	struct type *tmp_type;
+ 	int offset_item;	/* The array offset where the item lives */

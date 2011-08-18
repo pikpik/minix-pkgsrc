@@ -1,5 +1,4 @@
 # Host: Minix
 NATDEPFILES= fork-child.o inf-ptrace.o i386minix-nat.o
 
-# inftarg.o corelow.o core-aout.o
 NAT_FILE= nm-minix.h

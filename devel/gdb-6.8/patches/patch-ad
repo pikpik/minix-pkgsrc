@@ -1,28 +1,57 @@
 $NetBSD$
 
---- bfd/elf32-i386.c.orig	Tue Feb 12 11:32:30 2008
-+++ bfd/elf32-i386.c
-@@ -4042,6 +4042,11 @@ elf_i386_hash_symbol (struct elf_link_hash_entry *h)
- #undef	ELF_OSABI
- #define	ELF_OSABI			ELFOSABI_FREEBSD
+--- bfd/elf.c.orig	Sun Feb 17 23:45:23 2008
++++ bfd/elf.c
+@@ -8047,6 +8047,40 @@ elfcore_grok_netbsd_note (bfd *abfd, Elf_Internal_Note
+ }
  
-+#undef	TARGET_LITTLE_SYM
-+#define	TARGET_LITTLE_SYM		bfd_elf32_i386_minix_vec
-+#undef	TARGET_LITTLE_NAME
-+#define	TARGET_LITTLE_NAME		"elf32-i386-minix"
+ static bfd_boolean
++elfcore_grok_minix_elfcoreinfo (bfd *abfd, Elf_Internal_Note *note)
++{
++  /* Signal number at offset 0x08. */
++  elf_tdata (abfd)->core_signal
++    = bfd_h_get_32 (abfd, (bfd_byte *) note->descdata + 0x08);
 +
- /* The kernel recognizes executables as valid only if they carry a
-    "FreeBSD" label in the ELF header.  So we put this label on all
-    executables and (for simplicity) also all other object files.  */
-@@ -4066,6 +4071,11 @@ elf_i386_post_process_headers (bfd *abfd,
- #define	elf_backend_post_process_headers	elf_i386_post_process_headers
- #undef	elf32_bed
- #define	elf32_bed				elf32_i386_fbsd_bed
++  /* Process ID at offset 0x0C. */
++  elf_tdata (abfd)->core_pid
++    = bfd_h_get_32 (abfd, (bfd_byte *) note->descdata + 0x0C);
 +
-+#undef	elf_backend_post_process_headers
-+#define	elf_backend_post_process_headers	elf_i386_post_process_headers
-+#undef	elf32_bed
-+#define	elf32_bed				elf32_i386_minix_bed
- 
- #include "elf32-target.h"
- 
++  /* Command name at 0x10 (max 32 bytes, including nul). */
++  elf_tdata (abfd)->core_command
++    = _bfd_elfcore_strndup (abfd, note->descdata + 0x10, 31);
++
++  return elfcore_make_note_pseudosection (abfd, ".note.minix.elfcoreinfo",
++					  note);
++}
++
++static bfd_boolean
++elfcore_grok_minix_note (bfd *abfd, Elf_Internal_Note *note)
++{
++  switch (note->type) 
++    {
++    case NT_MINIX_ELFCORE_INFO:
++      return elfcore_grok_minix_elfcoreinfo (abfd, note);
++    case NT_MINIX_ELFCORE_GREGS:
++      return elfcore_make_note_pseudosection (abfd, ".reg", note);
++    default:
++      return TRUE;
++    }
++    /* NOTREACHED */
++}
++
++static bfd_boolean
+ elfcore_grok_nto_status (bfd *abfd, Elf_Internal_Note *note, long *tid)
+ {
+   void *ddata = note->descdata;
+@@ -8501,6 +8535,11 @@ elf_parse_notes (bfd *abfd, char *buf, size_t size, fi
+ 	  else if (CONST_STRNEQ (in.namedata, "SPU/"))
+ 	    {
+ 	      if (! elfcore_grok_spu_note (abfd, &in))
++		return FALSE;
++	    }
++          else if (CONST_STRNEQ (in.namedata, "MINIX-CORE"))
++	    {
++	      if (! elfcore_grok_minix_note (abfd, &in))
+ 		return FALSE;
+ 	    }
+ 	  else

@@ -1,5 +1,5 @@
-/* Native-dependent code for MINIX/i386.
-
+/* 
+ * Native-dependent code for MINIX/i386.
  */
 
 #include "defs.h"
@@ -10,6 +10,7 @@
 
 #include "gdb_ptrace.h"
 #include "inf-ptrace.h"
+#include "minix-nat.h"
 
 #ifdef __minix
 #include <i386/stackframe.h>
@@ -218,18 +219,11 @@ void
 _initialize_i386minix_nat (void)
 {
   struct target_ops *t = inf_ptrace_target();
-
-#if 0
-  struct target_ops *t;
-
-  t = i386minix_trad_target (i386minix_register_u_offset);
-/* FIXME: add stuff to grab correctly the 16-bit segment registers... */
-/*
-  gdb_assert (register_u_offset);
-  inf_ptrace_register_u_offset = register_u_offset;
-*/
-#endif
   t->to_fetch_registers = i386minix_fetch_registers;
   t->to_store_registers = i386minix_store_registers;
+  /*t->to_pid_to_exec_file = minix_pid_to_exec_file;
+  t->to_find_memory_regions = minix_find_memory_regions;
+  t->to_make_corefile_notes = minix_make_corefile_notes;
+  */
   add_target (t);
 }

@@ -1,4 +1,5 @@
-/* Target-dependent code for MINIX/i386.
+/* 
+ * Target-dependent code for MINIX/i386.
  */
 
 #include "defs.h"
@@ -143,7 +144,6 @@ i386minix_sigcontext_addr (struct frame_info *next_frame)
   frame_unwind_register (next_frame, I386_ESP_REGNUM, buf);
   sp = extract_unsigned_integer (buf, 4);
 
-/* #warning "Controlleer deze sp + 8" */
   return read_memory_unsigned_integer (sp + 8, 4);
 }
 

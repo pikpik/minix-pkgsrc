@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- include/elf/common.h.orig	Wed Jan 16 22:01:42 2008
++++ include/elf/common.h
+@@ -414,6 +414,11 @@
+ 
+ #define NT_SPU		1
+ 
++/* Note segments for core files on MINIX systems.  Note name
++   must start with "MINIX-CORE".  */
++#define NT_MINIX_ELFCORE_INFO		1 /* Has a struct minix_elfcore_info_t */
++#define NT_MINIX_ELFCORE_GREGS		2 /* Has a struct gregset_t (stackframe_s) */
++
+ /* Values of note segment descriptor types for object files.  */
+ 
+ #define NT_VERSION	1		/* Contains a version string.  */
