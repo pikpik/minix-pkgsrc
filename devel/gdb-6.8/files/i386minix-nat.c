@@ -221,9 +221,9 @@ _initialize_i386minix_nat (void)
   struct target_ops *t = inf_ptrace_target();
   t->to_fetch_registers = i386minix_fetch_registers;
   t->to_store_registers = i386minix_store_registers;
-  /*t->to_pid_to_exec_file = minix_pid_to_exec_file;
+  t->to_pid_to_exec_file = minix_pid_to_exec_file;
   t->to_find_memory_regions = minix_find_memory_regions;
   t->to_make_corefile_notes = minix_make_corefile_notes;
-  */
+
   add_target (t);
 }

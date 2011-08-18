@@ -3,7 +3,7 @@
  */
 
 #include "defs.h"
-#include "gdbcore.h"      /* for get_exec_file */
+#include "gdbcore.h"        /* for get_exec_file */
 #include "inferior.h"
 #include "regcache.h"
 #include "regset.h"
@@ -11,8 +11,8 @@
 #include "gdb_assert.h"
 #include "gdb_string.h"
 #include <sys/types.h>
-#include <sys/param.h>    /* for MAXPATHLEN, etc. */
-#include <sys/procfs.h>   /* for gregset_t */
+#include <sys/param.h>      /* for MAXPATHLEN, etc. */
+#include <sys/elf_core.h>   /* for gregset_t and other stuff */
 
 #include "elf-bfd.h"
 #include "minix-nat.h"
@@ -123,12 +123,31 @@ minix_make_corefile_notes (bfd *obfd, int *note_size)
   const struct regcache *regcache = get_current_regcache ();
   struct gdbarch *gdbarch = get_regcache_arch (regcache);
   gregset_t gregs;
-/*  fpregset_t fpregs; */
   char *note_data = NULL;
   Elf_Internal_Ehdr *i_ehdrp;
   const struct regset *regset;
   size_t size;
+  minix_elfcore_info_t mei;
 
+
+  /* Write the first note, containing the minix_elfcore_info_t structure */
+  mei.mei_version = MINIX_ELFCORE_VERSION;
+  mei.mei_meisize = sizeof(minix_elfcore_info_t);
+  mei.mei_signo = stop_signal;
+  mei.mei_pid = ptid_get_pid (inferior_ptid);
+  memset(mei.mei_command, 0, sizeof(mei.mei_command));
+
+  if (get_exec_file (0))
+  {
+    char *fname = strrchr (get_exec_file (0), '/') + 1;
+    strncpy(mei.mei_command, fname, sizeof(mei.mei_command));
+  }
+
+  note_data = elfcore_write_note (obfd, note_data, note_size,
+				 "MINIX-CORE", NT_MINIX_ELFCORE_INFO,
+				 &mei, sizeof (minix_elfcore_info_t));
+
+  /* Write the second note, containing the gregset_t structure */
   gdb_assert (gdbarch_regset_from_core_section_p (gdbarch));
 
   size = sizeof gregs;
@@ -136,31 +155,9 @@ minix_make_corefile_notes (bfd *obfd, int *note_size)
   gdb_assert (regset && regset->collect_regset);
   regset->collect_regset (regset, regcache, -1, &gregs, size);
 
-  note_data = elfcore_write_prstatus (obfd, note_data, note_size,
-				      ptid_get_pid (inferior_ptid),
-				      stop_signal, &gregs);
-
-/* XXX: Does MINIX work with floating point regs? */
-/*  size = sizeof fpregs;
-  regset = gdbarch_regset_from_core_section (gdbarch, ".reg2", size);
-  gdb_assert (regset && regset->collect_regset);
-  regset->collect_regset (regset, regcache, -1, &fpregs, size);
-
-  note_data = elfcore_write_prfpreg (obfd, note_data, note_size,
-				     &fpregs, sizeof (fpregs));
-*/
-
-  if (get_exec_file (0))
-    {
-      char *fname = strrchr (get_exec_file (0), '/') + 1;
-      char *psargs = xstrdup (fname);
-
-      if (get_inferior_args ())
-	psargs = reconcat (psargs, psargs, " ", get_inferior_args (), NULL);
-
-      note_data = elfcore_write_prpsinfo (obfd, note_data, note_size,
-					  fname, psargs);
-    }
+  note_data = elfcore_write_note (obfd, note_data, note_size,
+				 "MINIX-CORE", NT_MINIX_ELFCORE_GREGS,
+				 &gregs, sizeof (gregset_t));
 
   make_cleanup (xfree, note_data);
   return note_data;
