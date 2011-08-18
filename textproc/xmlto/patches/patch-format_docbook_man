@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- format/docbook/man.orig	Thu Aug 18 14:45:26 2011
++++ format/docbook/man
+@@ -8,6 +8,6 @@ stylesheet)
+   ;;
+ post-process)
+   [ -e "$XSLT_PROCESSED" ] && rm "$XSLT_PROCESSED"
+-  ${GCP_PATH:-cp} -R -P -p -- * "$OUTPUT_DIR" 
++  ${GCP_PATH:-cp} -R -p -- * "$OUTPUT_DIR" 
+   ;;
+ esac
