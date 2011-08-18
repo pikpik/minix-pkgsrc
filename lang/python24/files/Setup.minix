@@ -417,7 +417,7 @@ sha shamodule.c
 
 
 # Helper module for various ascii-encoders
-#binascii binascii.c
+binascii binascii.c
 
 # Fred Drake's interface to the Python parser
 #parser parsermodule.c
