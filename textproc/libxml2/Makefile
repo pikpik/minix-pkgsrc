@@ -35,6 +35,10 @@ MAKE_ENV+=	PAX=${PAX:Q}
 
 .include "../../mk/bsd.prefs.mk"
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ENV+=	ac_cv_header_sys_mman_h=no
+.endif
+
 TEST_TARGET=	check
 
 SUBST_CLASSES+=		cat

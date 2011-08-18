@@ -19,6 +19,9 @@ benchmarks/forkbomb
 chat/naim
 converters/libiconv
 converters/p5-MIME-Base64
+cross/avr-binutils
+cross/avr-gcc
+cross/avr-libc
 databases/db4
 databases/sqlite3
 databases/tdb
@@ -65,7 +68,7 @@ devel/pth
 devel/rcs
 devel/readline
 devel/scmcvs
-devel/scmgit-base
+devel/scmgit
 devel/subversion-base
 devel/topgit
 devel/zlib

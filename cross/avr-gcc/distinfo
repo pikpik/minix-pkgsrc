@@ -9,3 +9,4 @@ Size (gcc-g++-4.4.1.tar.bz2) = 5936040 bytes
 SHA1 (patch-aa) = 17ee1942842186c4336d72bb8223bdb3023c85c1
 SHA1 (patch-ab) = 4a3ab9719a6714933954a120ad8c594c3a4a2e1f
 SHA1 (patch-ac) = 14dbe72be88bd6fb0fd8671494454a6d4c11c4b7
+SHA1 (patch-gcc_gcov.c) = b0583bb2edb5cf4085f7f018dba31bca4955d0e8
