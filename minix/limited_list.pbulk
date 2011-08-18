@@ -65,7 +65,7 @@ devel/pth
 devel/rcs
 devel/readline
 devel/scmcvs
-devel/scmgit-base
+devel/scmgit
 devel/subversion-base
 devel/topgit
 devel/zlib
