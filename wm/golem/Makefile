@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	--enable-i18n
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${X11_TYPE} != "native" || exists(${X11BASE}/include/X11/extensions/Xinerama.h)
+.if (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic") || exists(${X11BASE}/include/X11/extensions/Xinerama.h)
 CONFIGURE_ARGS+=	--enable-xinerama
 .include "../../x11/libXinerama/buildlink3.mk"
 .endif

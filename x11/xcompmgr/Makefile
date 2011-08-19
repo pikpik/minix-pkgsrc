@@ -31,6 +31,7 @@ CPPFLAGS+=	${XCOMPMGR_DEFS}
 .include "../../mk/bsd.prefs.mk"
 
 .if defined(X11_TYPE) && !empty(X11_TYPE:MXFree86) || \
+    defined(X11_TYPE) && !empty(X11_TYPE:Mmonolithic) || \
     defined(X11_TYPE) && !empty(X11_TYPE:Mnative) || !defined(X11_TYPE)
 PKG_FAIL_REASON+=	"This package is exclusively for X.org."
 .endif

@@ -29,7 +29,7 @@ CONF_FILES=	${EGDIR}/celestia.cfg.default ${PKG_SYSCONFDIR}/celestia.cfg
 
 .include "../../mk/bsd.prefs.mk"
 
-.if exists(${X11BASE}/include/X11/extensions/Xinerama.h) || ${X11_TYPE} != "native"
+.if exists(${X11BASE}/include/X11/extensions/Xinerama.h) || (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic")
 .include "../../x11/libXinerama/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-xinerama
 .endif

@@ -18,9 +18,9 @@ USE_X11=	yes
 # Sanity checks.
 #
 
-.  if ${X11_TYPE} != "native"
+.  if ${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic"
 _WRONG_X11_TYPE:=	${X11_TYPE}
-PKG_FAIL_REASON+=	"Do not include x11.buildlink3.mk for X11_TYPE != \"native\"."
+PKG_FAIL_REASON+=	"Do not include x11.buildlink3.mk for X11_TYPE != \"native\" or X11_TYPE != \"monolithic\"."
 X11_TYPE:=		native
 X11BASE:=		/usr
 .  endif

@@ -3,9 +3,8 @@
 # Variable definitions for the Minix operating system.
 
 ECHO_N?=	${ECHO} -n
-.if !defined(X11_TYPE) || ${X11_TYPE} == "native"
+X11_TYPE?=	monolithic
 IMAKE_MAKE?=	${MAKE}	# program which gets invoked by imake
-.endif
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
 PKGLOCALEDIR?=	share
 PS?=		/usr/bin/ps

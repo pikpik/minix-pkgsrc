@@ -1057,7 +1057,7 @@ TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/${_t_}
 .if !defined(TOOLS_IGNORE.iceauth) && !empty(_USE_TOOLS:Miceauth)
 .  if !empty(PKGPATH:Mx11/iceauth)
 MAKEFLAGS+=		TOOLS_IGNORE.iceauth=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.iceauth=	${X11BASE}/bin/iceauth
 .  else
 TOOLS_DEPENDS.iceauth?=		iceauth-[0-9]*:../../x11/iceauth
@@ -1070,7 +1070,7 @@ TOOLS_CREATE.iceauth=		iceauth
 .if !defined(TOOLS_IGNORE.mkfontdir) && !empty(_USE_TOOLS:Mmkfontdir)
 .  if !empty(PKGPATH:Mfonts/mkfontdir)
 MAKEFLAGS+=		TOOLS_IGNORE.mkfontdir=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.mkfontdir=	${X11BASE}/bin/mkfontdir
 .  else
 TOOLS_DEPENDS.mkfontdir?=	mkfontdir-[0-9]*:../../fonts/mkfontdir
@@ -1083,7 +1083,7 @@ TOOLS_CREATE.mkfontdir=		mkfontdir
 .if !defined(TOOLS_IGNORE.mkfontscale) && !empty(_USE_TOOLS:Mmkfontscale)
 .  if !empty(PKGPATH:Mfonts/mkfontscale)
 MAKEFLAGS+=		TOOLS_IGNORE.mkfontscale=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.mkfontscale=	${X11BASE}/bin/mkfontscale
 .  else
 TOOLS_DEPENDS.mkfontscale?=	mkfontscale-[0-9]*:../../fonts/mkfontscale
@@ -1096,7 +1096,7 @@ TOOLS_CREATE.mkfontscale=	mkfontscale
 .if !defined(TOOLS_IGNORE.bdftopcf) && !empty(_USE_TOOLS:Mbdftopcf)
 .  if !empty(PKGPATH:Mfonts/bdftopcf)
 MAKEFLAGS+=		TOOLS_IGNORE.bdftopcf=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.bdftopcf=	${X11BASE}/bin/bdftopcf
 .  else
 TOOLS_DEPENDS.bdftopcf?=	bdftopcf-[0-9]*:../../fonts/bdftopcf
@@ -1109,7 +1109,7 @@ TOOLS_CREATE.bdftopcf=		bdftopcf
 .if !defined(TOOLS_IGNORE.ucs2any) && !empty(_USE_TOOLS:Mucs2any)
 .  if !empty(PKGPATH:Mfonts/font-util)
 MAKEFLAGS+=		TOOLS_IGNORE.ucs2any=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.ucs2any=	${X11BASE}/bin/ucs2any
 .  else
 TOOLS_DEPENDS.ucs2any?=		font-util-[0-9]*:../../fonts/font-util
@@ -1122,7 +1122,7 @@ TOOLS_CREATE.ucs2any=		ucs2any
 .if !defined(TOOLS_IGNORE.bdftruncate) && !empty(_USE_TOOLS:Mbdftruncate)
 .  if !empty(PKGPATH:Mfonts/font-util)
 MAKEFLAGS+=		TOOLS_IGNORE.bdftruncate=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.bdftruncate=	${X11BASE}/bin/bdftruncate
 .  else
 TOOLS_DEPENDS.bdftruncate?=	font-util-[0-9]*:../../fonts/font-util
@@ -1135,7 +1135,7 @@ TOOLS_CREATE.bdftruncate=	bdftruncate
 .if !defined(TOOLS_IGNORE.xauth) && !empty(_USE_TOOLS:Mxauth)
 .  if !empty(PKGPATH:Mx11/xauth)
 MAKEFLAGS+=		TOOLS_IGNORE.xauth=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.xauth=	${X11BASE}/bin/xauth
 .  else
 TOOLS_DEPENDS.xauth?=		xauth-[0-9]*:../../x11/xauth
@@ -1148,7 +1148,7 @@ TOOLS_CREATE.xauth=		xauth
 .if !defined(TOOLS_IGNORE.xinit) && !empty(_USE_TOOLS:Mxinit)
 .  if !empty(PKGPATH:Mx11/xinit)
 MAKEFLAGS+=		TOOLS_IGNORE.xinit=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.xinit=	${X11BASE}/bin/xinit
 .  else
 TOOLS_DEPENDS.xinit?=		xinit-[0-9]*:../../x11/xinit
@@ -1161,7 +1161,7 @@ TOOLS_CREATE.xinit=		xinit
 .if !defined(TOOLS_IGNORE.xmessage) && !empty(_USE_TOOLS:Mxmessage)
 .  if !empty(PKGPATH:Mx11/xmessage)
 MAKEFLAGS+=		TOOLS_IGNORE.xmessage=
-.  elif !empty(X11_TYPE:Mnative)
+.  elif !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.xmessage=	${X11BASE}/bin/xmessage
 .  else
 TOOLS_DEPENDS.xmessage?=		xmessage-[0-9]*:../../x11/xmessage
@@ -1193,10 +1193,10 @@ TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/libexec/itools/${_t_}
 TOOLS_DEPENDS.${_t_}?=	imake-[0-9]*:../../devel/imake
 TOOLS_FIND_PREFIX+=	TOOLS_PREFIX.${_t_}=imake
 TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/${_t_}
-.      else # !empty(X11_TYPE:Mnative)
+.      else # !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 .        if exists(${X11BASE}/bin/${_t_})
 TOOLS_PATH.${_t_}=	${X11BASE}/bin/${_t_}
-.        else # X11_TYPE native, but tool does not exist, so fall back
+.        else # X11_TYPE native/monolithic, but tool does not exist, so fall back
 TOOLS_DEPENDS.${_t_}?=	imake-[0-9]*:../../devel/imake
 TOOLS_FIND_PREFIX+=	TOOLS_PREFIX.${_t_}=imake
 TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/${_t_}
@@ -1220,7 +1220,7 @@ TOOLS_PATH.makedepend=	${TOOLS_PREFIX.makedepend}/libexec/itools/makedepend
 TOOLS_DEPENDS.makedepend?=	makedepend-[0-9]*:../../devel/makedepend
 TOOLS_FIND_PREFIX+=	TOOLS_PREFIX.makedepend=makedepend
 TOOLS_PATH.makedepend=	${TOOLS_PREFIX.makedepend}/bin/makedepend
-.    else # !empty(X11_TYPE:Mnative)
+.    else # !empty(X11_TYPE:Mnative) || !empty(X11_TYPE:Mmonolithic)
 TOOLS_PATH.makedepend=	${X11BASE}/bin/makedepend
 .    endif
 .  endif

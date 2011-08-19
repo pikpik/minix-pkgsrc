@@ -52,7 +52,7 @@ PLIST.jce=	yes
 # satisfied when the package is installed on the native OS.
 #
 .if defined(EMUL_IS_NATIVE)
-.  if ${X11_TYPE} == "native"
+.  if ${X11_TYPE} == "native" || ${X11_TYPE} == "monolithic"
 .    if ${EMUL_ARCH} == "x86_64"
 LIBX11=		${X11PREFIX}/lib64/libX11.so.6
 .    else

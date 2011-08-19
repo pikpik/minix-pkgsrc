@@ -24,8 +24,8 @@ CONFIGURE_ENV+=		X_LIBS=${X11_LDFLAGS:Q}
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${X11_TYPE} != "native"
-PKG_FAIL_REASON+="This package is for native X11 only; use libXrender instead."
+.if ${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic"
+PKG_FAIL_REASON+="This package is for native/monolithic X11 only; use libXrender instead."
 .endif
 
 .include "../../x11/renderproto/buildlink3.mk"

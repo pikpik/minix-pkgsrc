@@ -74,7 +74,7 @@ MAKE_ENV+=	FILEFORMAT=elf
 .  endif
 .endif
 
-.if exists(${X11BASE}/lib/libXxf86dga.a) || ${X11_TYPE} != "native"
+.if exists(${X11BASE}/lib/libXxf86dga.a) || (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic")
 CONFIGURE_ARGS+=	--with-extensions
 .endif
 

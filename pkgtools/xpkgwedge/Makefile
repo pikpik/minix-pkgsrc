@@ -87,7 +87,7 @@ SUBST_CLASSES+=		foo
 SUBST_STAGE.foo=	post-patch
 SUBST_FILES.foo=	xpkgwedge.def
 SUBST_SED.foo=		-e "s|\#define ExtraLoadFlags @X11TYPEFLAGS@||"
-.endif # X11_TYPE == native.
+.endif # X11_TYPE == native || X11_TYPE == monolithic.
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/lib/X11/config

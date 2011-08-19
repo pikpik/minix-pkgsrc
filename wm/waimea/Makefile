@@ -24,7 +24,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 
-.if ${X11_TYPE} != "native"
+.if ${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"

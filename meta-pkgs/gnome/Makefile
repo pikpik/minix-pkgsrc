@@ -55,7 +55,7 @@ DEPENDS+=	gnome-doc-utils>=0.16.1:../../textproc/gnome-doc-utils
 DEPENDS+=	gnome-games>=2.26.2:../../games/gnome-games
 DEPENDS+=	gnome-icon-theme>=2.26.0:../../graphics/gnome-icon-theme
 DEPENDS+=	gnome-keyring>=2.26.1:../../security/gnome-keyring
-.if ${X11_TYPE} != "native" || exists(${X11BASE}/lib/libXdamage.so)
+.if (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic") || exists(${X11BASE}/lib/libXdamage.so)
 DEPENDS+=	gnome-mag>=0.15.6:../../x11/gnome-mag
 .endif
 DEPENDS+=	gnome-media>=2.26.0:../../multimedia/gnome-media
@@ -63,7 +63,7 @@ DEPENDS+=	gnome-menus>=2.26.1:../../sysutils/gnome-menus
 DEPENDS+=	gnome-netstatus>=2.26.0:../../net/gnome-netstatus
 DEPENDS+=	gnome-nettool>=2.26.1:../../net/gnome-nettool
 DEPENDS+=	gnome-panel>=2.26.2:../../x11/gnome-panel
-.if ${X11_TYPE} != "native" || exists(${X11BASE}/lib/pkgconfig/xrender.pc)
+.if (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic") || exists(${X11BASE}/lib/pkgconfig/xrender.pc)
 #DEPENDS+=	gnome-power-manager>=2.26.1:../../sysutils/gnome-power-manager
 DEPENDS+=	gnome-power-manager>=2.24.2:../../sysutils/gnome-power-manager
 .endif
@@ -105,11 +105,11 @@ DEPENDS+=	librsvg>=2.26.0:../../graphics/librsvg
 DEPENDS+=	libsoup24>=2.26.2:../../net/libsoup24
 DEPENDS+=	libwnck>=2.26.1:../../devel/libwnck
 DEPENDS+=	metacity>=2.26.0:../../wm/metacity
-.if ${X11_TYPE} != "native" || exists(${X11BASE}/lib/pkgconfig/xtst.pc)
+.if (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic") || exists(${X11BASE}/lib/pkgconfig/xtst.pc)
 DEPENDS+=	mousetweaks>=2.26.2:../../misc/mousetweaks
 .endif
 DEPENDS+=	nautilus>=2.26.3:../../sysutils/nautilus
-.if ${X11_TYPE} != "native" || exists(${X11BASE}/lib/libXdamage.so)
+.if (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic") || exists(${X11BASE}/lib/libXdamage.so)
 DEPENDS+=	orca>=2.26.2:../../misc/orca
 .endif
 DEPENDS+=	${PYPKGPREFIX}-gtksourceview>=2.6.0:../../x11/py-gtksourceview

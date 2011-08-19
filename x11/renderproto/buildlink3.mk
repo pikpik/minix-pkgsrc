@@ -7,7 +7,7 @@ BUILDLINK_TREE+=	renderproto
 .if !defined(RENDERPROTO_BUILDLINK3_MK)
 RENDERPROTO_BUILDLINK3_MK:=
 
-.if ${X11_TYPE} == "native"
+.if ${X11_TYPE} == "native" || ${X11_TYPE} == "monolithic"
 . include "../../mk/x11.buildlink3.mk"
 . if ${BUILTIN_X11_TYPE.native} == "XFree86" || \
      ${BUILTIN_X11_TYPE.native} == "xorg" && \

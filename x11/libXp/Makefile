@@ -25,7 +25,7 @@ PKGCONFIG_OVERRIDE+=	xp.pc.in
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
 
-.if ${X11_TYPE} == "native"
+.if ${X11_TYPE} == "native" || ${X11_TYPE} == "monolithic"
 XPRINT_CFLAGS=	-I${X11BASE}/include
 XPRINT_LIBS=	-Wl,-rpath,${X11BASE}/lib -L${X11BASE}/lib -lX11 -lXext -lXau
 

@@ -563,14 +563,17 @@ X11BASE?=	/usr
 .  elif !empty(MACHINE_PLATFORM:MDarwin-9.*-*) || \
         !empty(MACHINE_PLATFORM:MDarwin-??.*-*)
 X11BASE?=	/usr/X11
-.  elif ${OPSYS} == "Minix"
-X11BASE?=	${LOCALBASE}/X11R6
 .  elif exists(/usr/X11R7/lib/libX11.so)
 X11BASE?=	/usr/X11R7
 .  else
 X11BASE?=	/usr/X11R6
 .  endif
 .endif
+
+.if !empty(X11_TYPE:Mmonolithic)
+X11BASE?=	${LOCALBASE}/X11R6
+.endif
+
 CROSSBASE?=	${LOCALBASE}/cross
 
 # If xpkgwedge.def is found, then clearly we're using xpkgwedge.

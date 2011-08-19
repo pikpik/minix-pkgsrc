@@ -11,6 +11,7 @@
 #	Possible:
 #	* native: use the native X11 distribution
 #	* modular: use modular Xorg from pkgsrc
+#	* monolithic: use monolithic X11R6 from pkgsrc
 #
 #	Default: native, unless defined for a specific operating system
 #	in mk/platform/${OPSYS}.mk.
@@ -38,6 +39,7 @@ _USER_VARS.x11=	X11_TYPE X11BASE
 _PKG_VARS.x11=	USE_X11BASE
 _SYS_VARS.x11=	X11_PKGSRCDIR.${X11_TYPE} BUILTIN_X11_TYPE.${X11_TYPE} BUILTIN_X11_VERSION.${X11_TYPE}
 
-X11_PKGSRCDIR.native=	../../pkgtools/x11-links
+X11_PKGSRCDIR.native=		../../pkgtools/x11-links
+X11_PKGSRCDIR.monolithic=	../../pkgtools/x11-links
 
 .include "${X11_PKGSRCDIR.${X11_TYPE}}/version.mk"

@@ -23,7 +23,7 @@ GCONF_SCHEMAS=		metacity.schemas
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${X11_TYPE} != "native"
+.if ${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic"
 .include "../../x11/libXinerama/buildlink3.mk"
 .elif !exists(${X11BASE}/lib/libXinerama.so)
 CONFIGURE_ARGS+=	--disable-xinerama

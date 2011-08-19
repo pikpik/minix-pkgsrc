@@ -21,8 +21,8 @@ USE_LANGUAGES=		# none, not even C
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${X11_TYPE} != "native"
-PKG_FAIL_REASON+="This package is for native X11 only; use libXfixes instead."
+.if ${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic"
+PKG_FAIL_REASON+="This package is for native/monolithic X11 only; use libXfixes instead."
 .endif
 
 .include "../../converters/libiconv/buildlink3.mk"

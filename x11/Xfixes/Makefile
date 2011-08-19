@@ -24,8 +24,8 @@ PKGCONFIG_OVERRIDE+=	xfixes.pc.in
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${X11_TYPE} != "native"
-PKG_FAIL_REASON+="This package is for native X11 only; use libXfixes instead."
+.if (${X11_TYPE} != "native" && ${X11_TYPE} != "monolithic")
+PKG_FAIL_REASON+="This package is for native/monolithic X11 only; use libXfixes instead."
 .endif
 
 .if (${OPSYS} == "Darwin")
