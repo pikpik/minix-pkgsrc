@@ -156,6 +156,7 @@ pkgtools/x11-links
 print/libpaper
 print/ghostscript
 security/bcrypt
+security/crypto++
 security/openssh
 security/openssl
 security/p5-Digest

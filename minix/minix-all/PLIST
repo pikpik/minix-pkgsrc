@@ -158,6 +158,7 @@
 @exec pkgin -y in libpaper-1.1.24
 @exec pkgin -y in ghostscript-8.71nb7
 @exec pkgin -y in bcrypt-1.1
+@exec pkgin -y in cryptopp-5.5.2
 @exec pkgin -y in openssh-5.8.2nb2
 @exec pkgin -y in openssl-0.9.8qnb3
 @exec pkgin -y in p5-Digest-1.16nb2
