@@ -36,4 +36,12 @@ CHECK_FILES_SKIP+=	${VARDIR}/logfile				\
 			${VARDIR}/perm					\
 			${VARDIR}/record
 
+.include "../../mk/bsd.prefs.mk"
+
+# Minix lacks the col command. Use the heirloom version for now.
+.if ${OPSYS} == "Minix"
+DEPENDS+=		heirloom-col-[0-9]*:../../textproc/heirloom-col
+PATH:=${PREFIX}/heirloom/bin:${PATH}
+.endif
+
 .include "../../mk/bsd.pkg.mk"

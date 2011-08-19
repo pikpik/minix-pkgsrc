@@ -2,7 +2,7 @@ $NetBSD$
 
 Make configurable.
 
---- sys/unix/Makefile.src.orig	2003-12-07 23:39:13.000000000 +0000
+--- sys/unix/Makefile.src.orig	Sun Dec  7 23:39:13 2003
 +++ sys/unix/Makefile.src
 @@ -36,7 +36,11 @@ SHELL=/bin/sh
  # SHELL=E:/GEMINI2/MUPFEL.TTP
@@ -16,7 +16,7 @@ Make configurable.
  
  # Pick the SYSSRC and SYSOBJ lines corresponding to your desired operating
  # system.
-@@ -154,12 +158,24 @@ GNOMEINC=-I/usr/lib/glib/include -I/usr/
+@@ -154,12 +158,24 @@ GNOMEINC=-I/usr/lib/glib/include -I/usr/lib/gnome-libs
  CFLAGS = -O -I../include
  LFLAGS = 
  
@@ -75,17 +75,17 @@ Make configurable.
  #
  # libraries for KDE (with Qt)
  WINKDELIB = -lkdecore -lkdeui -lXext
-@@ -257,6 +282,13 @@ WINBELIB = -lbe
+@@ -256,6 +281,13 @@ WINGEMLIB = -le_gem -lgem
+ WINBELIB = -lbe
  
  WINLIB = $(WINTTYLIB)
- 
++
 +.if "${GTYPE}" == "-tty"
 +.elif "${GTYPE}" == "-x11"
 +WINLIB += $(WINX11LIB)
 +.elif "${GTYPE}" == "-qt"
 +WINLIB += $(WINQTLIB)
 +.endif
-+
+ 
  # any other strange libraries your system needs (for Sysunix only -- the more
  # specialized targets should already be right)
- #

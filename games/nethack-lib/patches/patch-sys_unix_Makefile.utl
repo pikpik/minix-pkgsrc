@@ -2,7 +2,7 @@ $NetBSD$
 
 Make configurable.
 
---- sys/unix/Makefile.utl.orig	2011-05-27 15:13:59.000000000 +0000
+--- sys/unix/Makefile.utl.orig	Sun Dec  7 23:39:13 2003
 +++ sys/unix/Makefile.utl
 @@ -94,6 +94,14 @@ LFLAGS =
  

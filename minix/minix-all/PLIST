@@ -51,6 +51,7 @@
 @exec pkgin -y in gmake-3.82nb2
 @exec pkgin -y in gmp-5.0.2
 @exec pkgin -y in gtexinfo-4.13nb1
+@exec pkgin -y in heirloom-libcommon-070715
 @exec pkgin -y in lcov-1.9
 @exec pkgin -y in libelf-0.8.13
 @exec pkgin -y in libgetopt-1.4.4
@@ -94,6 +95,8 @@
 @exec pkgin -y in doom1-1.8
 @exec pkgin -y in dungeon-3.2b
 @exec pkgin -y in gnugo-3.8
+@exec pkgin -y in nethack-lib-3.4.3nb3
+@exec pkgin -y in nethack-tty-3.4.3nb2
 @exec pkgin -y in ninvaders-0.1.1
 @exec pkgin -y in sex-1.0nb1
 @exec pkgin -y in freetype2-2.4.6
@@ -169,6 +172,7 @@
 @exec pkgin -y in cpuid-3.3
 @exec pkgin -y in crashme-2.4
 @exec pkgin -y in e2fsprogs-1.41.12
+@exec pkgin -y in heirloom-doc-070715
 @exec pkgin -y in mdf2iso-0.3.0
 @exec pkgin -y in mktemp-1.7
 @exec pkgin -y in tree-1.5.1.1nb2
@@ -180,6 +184,7 @@
 @exec pkgin -y in grep-2.5.3nb1
 @exec pkgin -y in groff-1.20.1nb5
 @exec pkgin -y in gsed-4.2.1nb1
+@exec pkgin -y in heirloom-col-070715
 @exec pkgin -y in nbsed-20040821nb1
 @exec pkgin -y in rman-3.2
 @exec pkgin -y in robodoc-3.2.3nb1

@@ -1,7 +1,7 @@
 $NetBSD$
 
 Fix for Interix 3.5
---- libcommon/memalign.c.orig	Sun Jan 22 21:06:14 2006
+--- libcommon/memalign.c.orig	Sun Jan 22 19:06:14 2006
 +++ libcommon/memalign.c
 @@ -21,9 +21,6 @@
   */

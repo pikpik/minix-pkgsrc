@@ -49,6 +49,7 @@ devel/glib
 devel/gmake
 devel/gmp
 devel/gtexinfo
+devel/heirloom-libcommon
 devel/lcov
 devel/libelf
 devel/libgetopt
@@ -92,6 +93,8 @@ games/cmatrix
 games/doom1
 games/dungeon
 games/gnugo
+games/nethack-lib
+games/nethack-tty
 games/ninvaders
 games/sex
 graphics/freetype2
@@ -167,6 +170,7 @@ sysutils/bchunk
 sysutils/cpuid
 sysutils/crashme
 sysutils/e2fsprogs
+sysutils/heirloom-doc
 sysutils/mdf2iso
 sysutils/mktemp
 sysutils/tree
@@ -178,6 +182,7 @@ textproc/expat
 textproc/grep
 textproc/groff
 textproc/gsed
+textproc/heirloom-col
 textproc/nbsed
 textproc/rman
 textproc/robodoc

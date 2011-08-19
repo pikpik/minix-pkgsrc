@@ -2,7 +2,7 @@ $NetBSD: patch-aa,v 1.9 2004/03/05 15:21:01 pooka Exp $
 
 Make configurable.
 
---- include/config.h.orig	2003-12-07 23:39:13.000000000 +0000
+--- include/config.h.orig	Sun Dec  7 23:39:13 2003
 +++ include/config.h
 @@ -42,6 +42,16 @@
   * Define all of those you want supported in your binary.
@@ -50,7 +50,7 @@ Make configurable.
  /* An example of one alternative you might want to use: */
 -/* #define COMPRESS "/usr/local/bin/gzip" */	/* FSF gzip compression */
 -/* #define COMPRESS_EXTENSION ".gz" */		/* normal gzip extension */
-+#define COMPRESS "@GZIP_PROGRAM@"		/* FSF gzip compression */
++#define COMPRESS "/usr/pkg/bin/gzip"		/* FSF gzip compression */
 +#define COMPRESS_EXTENSION ".gz"		/* normal gzip extension */
  #endif
  
@@ -60,7 +60,7 @@ Make configurable.
   */
  # ifndef HACKDIR
 -#  define HACKDIR "/usr/games/lib/nethackdir"
-+#  define HACKDIR "@PREFIX@/share/nethackdir340"
++#  define HACKDIR "/usr/pkg/share/nethackdir340"
  # endif
  
  /*

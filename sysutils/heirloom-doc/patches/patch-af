@@ -1,9 +1,9 @@
 $NetBSD$
 
 Fix for Interix
---- libcommon/getdir.c.orig	Sun Jan 22 21:06:14 2006
+--- libcommon/getdir.c.orig	Sun May 14 13:24:39 2006
 +++ libcommon/getdir.c
-@@ -59,7 +59,14 @@ extern int	getdents(int, struct dirent *
+@@ -59,7 +59,14 @@ extern int	getdents(int, struct dirent *, size_t);
  #ifdef	__hpux
  #define		_KERNEL
  #endif	/* __hpux */

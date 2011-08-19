@@ -3,14 +3,14 @@ $NetBSD: patch-af,v 1.6 2006/10/09 02:06:58 ben Exp $
 Make configurable.
 Fix for BSD.
 
---- include/unixconf.h.orig	2003-12-07 23:39:13.000000000 +0000
+--- include/unixconf.h.orig	Sun Dec  7 23:39:13 2003
 +++ include/unixconf.h
 @@ -19,20 +19,21 @@
   */
  
  /* define exactly one of the following four choices */
 -/* #define BSD 1 */	/* define for 4.n/Free/Open/Net BSD  */
-+#define __NETHACK_OS__ 1
++#define BSD 1
 +/* #define BSD */	/* define for 4.n/Free/Open/Net BSD  */
  			/* also for relatives like SunOS 4.x, DG/UX, and */
  			/* older versions of Linux */

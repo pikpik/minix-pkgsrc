@@ -1,7 +1,7 @@
 $NetBSD$
 
 Improvement for build system
---- build/crossln.sh.orig	2005-03-10 18:33:13.000000000 +0200
+--- build/crossln.sh.orig	Thu Mar 10 16:33:13 2005
 +++ build/crossln.sh
 @@ -10,6 +10,12 @@ usage() {
  }

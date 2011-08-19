@@ -2,7 +2,7 @@ $NetBSD: patch-ae,v 1.5 2008/05/20 19:47:16 tnn Exp $
 
 Make configurable.
 
---- sys/unix/Makefile.doc.orig	2003-12-07 23:39:13.000000000 +0000
+--- sys/unix/Makefile.doc.orig	Sun Dec  7 23:39:13 2003
 +++ sys/unix/Makefile.doc
 @@ -41,7 +41,7 @@ Guidebook.dvi:	Guidebook.tex
  
