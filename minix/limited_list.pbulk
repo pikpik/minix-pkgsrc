@@ -16,6 +16,7 @@ archivers/unzip
 archivers/xz
 archivers/zip
 benchmarks/forkbomb
+benchmarks/pipebench
 chat/naim
 converters/libiconv
 converters/p5-MIME-Base64

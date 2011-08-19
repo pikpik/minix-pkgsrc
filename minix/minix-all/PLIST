@@ -18,6 +18,7 @@
 @exec pkgin -y in xz-5.0.3
 @exec pkgin -y in zip-3.0nb2
 @exec pkgin -y in forkbomb-1.4
+@exec pkgin -y in pipebench-0.40
 @exec pkgin -y in naim-0.11.8.3.1
 @exec pkgin -y in libiconv-1.13.1
 @exec pkgin -y in p5-MIME-Base64-3.13nb1
