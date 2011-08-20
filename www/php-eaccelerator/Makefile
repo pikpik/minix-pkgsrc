@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.12 2010/10/02 19:11:35 jdolecek Exp $
+# $NetBSD: Makefile,v 1.13 2010/12/13 13:18:20 taca Exp $
 
 MODNAME=	eaccelerator
-PECL_VERSION=	0.9.6
+PECL_VERSION=	0.9.6.1
 CATEGORIES+=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=eaccelerator/} \
 		http://bart.eaccelerator.net/source/${PECL_VERSION}/
 EXTRACT_SUFX=	.tar.bz2
 
-HOMEPAGE=	http://eaccelerator.net/
+HOMEPAGE=	http://sourceforge.net/projects/eaccelerator/
 MAINTAINER=	jdolecek@NetBSD.org
 COMMENT=	PHP accelerator, optimizer, encoder and dynamic content cache
 LICENSE=	gnu-gpl-v2
