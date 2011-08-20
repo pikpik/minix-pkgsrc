@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.810 2011/08/12 13:14:29 taca Exp $
+# $NetBSD: Makefile,v 1.811 2011/08/12 17:33:41 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -531,6 +531,7 @@ SUBDIR+=	pear-HTTP_Request
 SUBDIR+=	php-apc
 SUBDIR+=	php-curl
 SUBDIR+=	php-eaccelerator
+SUBDIR+=	php-tidy
 SUBDIR+=	php-uploadprogress
 #SUBDIR+=	plone		# only contains Makefile fragments
 SUBDIR+=	plone25
