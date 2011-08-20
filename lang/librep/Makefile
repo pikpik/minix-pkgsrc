@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2011/01/23 23:54:21 tnn Exp $
+# $NetBSD: Makefile,v 1.54 2011/04/22 13:41:58 obache Exp $
 #
 
 DISTNAME=		librep-0.91.0
@@ -26,6 +26,12 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-readline
 CONFIGURE_ARGS+=	--with-gmp
 CONFIGURE_ARGS+=	--enable-static
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${MACHINE_ARCH} == "x86_64"
+CONFIGURE_ARGS+=	--with-stack-direction=-1
+.endif
 
 REPLACE_INTERPRETER+=	rep
 REPLACE.rep.old=	.*/bin/rep
