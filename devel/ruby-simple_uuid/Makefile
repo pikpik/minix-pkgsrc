@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2010/09/23 09:22:13 taca Exp $
+# $NetBSD: Makefile,v 1.4 2011/06/17 13:40:33 taca Exp $
 
-DISTNAME=	simple_uuid-0.1.2
+DISTNAME=	simple_uuid-0.2.0
 CATEGORIES=	devel
 
 MAINTAINER=	tonnerre@NetBSD.org
 HOMEPAGE=	http://blog.evanweaver.com/files/doc/fauna/simple_uuid/
 COMMENT=	Simple, scalable UUID generation for Ruby
+LICENSE=	apache-2.0
 
 GEM_CLEANBUILD=	Makefile *.o mkmf.log
 
