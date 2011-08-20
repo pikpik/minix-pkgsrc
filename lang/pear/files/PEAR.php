@@ -26,7 +26,7 @@
  */
 
 /*
- * $NetBSD$
+ * $NetBSD: PEAR.php,v 1.1 2009/10/29 08:29:03 seb Exp $
  *
  * This is http://cvs.php.net/viewvc.cgi/pear-core/PEAR.php?view=co&pathrev=PEAR_1_4
  *
@@ -569,10 +569,10 @@ class PEAR
             $ec = 'PEAR_Error';
         }
         if ($skipmsg) {
-            $a = &new $ec($code, $mode, $options, $userinfo);
+            $a = new $ec($code, $mode, $options, $userinfo);
             return $a;
         } else {
-            $a = &new $ec($message, $code, $mode, $options, $userinfo);
+            $a = new $ec($message, $code, $mode, $options, $userinfo);
             return $a;
         }
     }
