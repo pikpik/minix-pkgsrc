@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/01/23 07:55:14 markd Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/22 13:42:35 obache Exp $
 
 DISTNAME=	kdepimlibs-${_KDE_VERSION}
 PKGREVISION=	1
@@ -12,6 +12,12 @@ CMAKE_DEPENDENCIES_REWRITE= _KDE_build/KDEPimLibsDependencies.cmake
 REPLACE_PERL+= mailtransport/kconf_update/migrate-transports.pl
 
 .include "../../meta-pkgs/kde4/kde4.mk"
+
+.include "../../mk/compiler.mk"
+# GCC 4.4 and above needs this
+.if !empty(PKGSRC_COMPILER:Mgcc) && !empty(CC_VERSION:Mgcc-4.[4-9]*)
+_WRAP_EXTRA_ARGS.CXX+=	-std=c++0x
+.endif
 
 .include "../../databases/openldap-client/buildlink3.mk"
 .include "../../devel/boost-libs/buildlink3.mk"
