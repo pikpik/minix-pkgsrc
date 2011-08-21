@@ -100,6 +100,7 @@
 @exec pkgin -y in nethack-tty-3.4.3nb2
 @exec pkgin -y in ninvaders-0.1.1
 @exec pkgin -y in sex-1.0nb1
+@exec pkgin -y in xbill-2.0nb6
 @exec pkgin -y in freetype2-2.4.6
 @exec pkgin -y in jpeg-8c
 @exec pkgin -y in png-1.5.4

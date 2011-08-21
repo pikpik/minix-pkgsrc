@@ -93,23 +93,5 @@ do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/lib/X11/config
 	${INSTALL_DATA} ${WRKSRC}/xpkgwedge.def ${DESTDIR}${PREFIX}/lib/X11/config
 	${INSTALL_SCRIPT} ${WRKSRC}/pkgxmkmf ${DESTDIR}${PREFIX}/bin/pkgxmkmf
-	@case ${OPSYS} in \
-	Darwin) \
-	if ${APPLY_DARWIN_PATCH}; then \
-	  ${INSTALL_DATA} ${X11BASE}/lib/X11/config/darwin.cf ${DESTDIR}${PREFIX}/lib/X11/config; \
-	  cd ${DESTDIR}${PREFIX}/lib/X11/config && patch ${PATCH_STRIP} < ${FILESDIR}/darwin.cf.patch; \
-	fi; \
-	;; \
-	IRIX) \
-	${INSTALL_DATA} ${X11BASE}/lib/X11/config/sgi.cf ${DESTDIR}${PREFIX}/lib/X11/config; \
-	if [ ${OS_VERSION} -ge 6 ]; then \
-		${INSTALL_DATA} ${X11BASE}/lib/X11/config/X11.rules ${DESTDIR}${PREFIX}/lib/X11/config; \
-		cd ${DESTDIR}${PREFIX}/lib/X11/config && patch ${PATCH_STRIP} < ${FILESDIR}/irix6.patch; \
-	else \
-		${INSTALL_DATA} ${X11BASE}/lib/X11/config/sgiLib.rules ${DESTDIR}${PREFIX}/lib/X11/config; \
-		cd ${DESTDIR}${PREFIX}/lib/X11/config && patch ${PATCH_STRIP} < ${FILESDIR}/irix5.patch; \
-	fi; \
-	;; \
-	esac
 
 .include "../../mk/bsd.pkg.mk"

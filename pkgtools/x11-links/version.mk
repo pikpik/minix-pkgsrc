@@ -12,7 +12,7 @@
 #	of the native X11 distribution detected on the system.
 #
 
-.if !defined(BUILTIN_X11_VERSION.native)
+.if !defined(BUILTIN_X11_VERSION.native) || ${X11_TYPE} == "monolithic"
 .  include "xorg-version.mk"
 .  include "xfree-version.mk"
 
