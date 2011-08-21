@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/26 22:17:43 minskim Exp $
 
-DISTNAME=	jekyll-0.10.0
+DISTNAME=	jekyll-0.11.0
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
