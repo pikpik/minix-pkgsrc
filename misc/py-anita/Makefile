@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2010/11/25 14:44:20 gson Exp $
+# $NetBSD: Makefile,v 1.14 2010/12/04 19:43:37 gson Exp $
 #
 
-DISTNAME=	anita-1.18
+DISTNAME=	anita-1.21
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	misc
 MASTER_SITES=	http://www.gson.org/netbsd/anita/download/
@@ -13,6 +13,7 @@ DEPENDS+=	cdrtools>=2.00.00.00:../../sysutils/cdrtools
 MAINTAINER=	gson@NetBSD.org
 HOMEPAGE=	http://www.gson.org/netbsd/anita/
 COMMENT=	Automated NetBSD Installation and Test Application
+LICENSE=	isc
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
