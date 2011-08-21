@@ -1,7 +1,7 @@
 $NetBSD$
 
---- jdk/make/java/main/java/mapfile-i586.orig	2011-06-27 17:18:37.000000000 +0000
-+++ jdk/make/java/main/java/mapfile-i586
+--- jdk/make/java/main/java/mapfile-amd64.orig	2011-06-27 17:18:36.000000000 +0000
++++ jdk/make/java/main/java/mapfile-amd64
 @@ -31,6 +31,7 @@ SUNWprivate_1.1 {
  	global:
  		main;		# Provides basic adb symbol offsets
@@ -9,4 +9,4 @@ $NetBSD$
 +		__progname;
  		_environ;
  		__environ_lock;
- 		___Argv;	# The following are private, but as they are
+ 
