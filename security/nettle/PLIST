@@ -1,4 +1,5 @@
 @comment $NetBSD$
+bin/nettle-hash
 bin/nettle-lfib-stream
 bin/pkcs1-conv
 bin/sexp-conv
@@ -18,6 +19,7 @@ include/nettle/ctr.h
 include/nettle/des-compat.h
 include/nettle/des.h
 include/nettle/dsa.h
+include/nettle/gcm.h
 include/nettle/hmac.h
 include/nettle/knuth-lfib.h
 include/nettle/macros.h
