@@ -1,0 +1,29 @@
+@cwd /usr/pkg
+@name p5-MooseX-Types-Common-0.001002nb2
+@blddep p5-Moose-2.0202
+@pkgdep p5-Moose>=0.39
+@blddep p5-MooseX-Types-0.24nb1
+@pkgdep p5-MooseX-Types>=0.04
+@blddep perl-5.14.1
+@pkgdep perl<5.16.0
+@blddep perl-5.14.1
+@pkgdep perl>=5.14.0
+@blddep digest-20080510
+@blddep p5-Test-Exception-0.29nb3
+@blddep checkperms-1.11
+@comment The following lines are automatically generated
+@comment from the installed .packlist files.
+lib/perl5/vendor_perl/5.14.0/MooseX/Types/Common.pm
+@comment MD5:ebda637786beabe1b5a54db75834f50d
+lib/perl5/vendor_perl/5.14.0/MooseX/Types/Common/Numeric.pm
+@comment MD5:2bcbe8dff6f69b819c1717c040e45113
+lib/perl5/vendor_perl/5.14.0/MooseX/Types/Common/String.pm
+@comment MD5:3ad0585900cffd87bae3b656b7cfa221
+lib/perl5/vendor_perl/5.14.0/x86_64-netbsd-thread-multi/auto/MooseX/Types/Common/.packlist
+@comment MD5:db02a33f18e74fb1f5d84f34042e4c94
+lib/perl5/vendor_perl/man/man3/MooseX::Types::Common.3
+@comment MD5:8db1eb05767e447ce24544757b4be505
+lib/perl5/vendor_perl/man/man3/MooseX::Types::Common::Numeric.3
+@comment MD5:9d69a3002643551689e8e4031ba053d3
+lib/perl5/vendor_perl/man/man3/MooseX::Types::Common::String.3
+@comment MD5:024e486d121594ef7ce94b35701e68e3

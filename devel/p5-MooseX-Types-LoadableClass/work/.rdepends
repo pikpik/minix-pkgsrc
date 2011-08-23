@@ -1,0 +1,7 @@
+bootstrap	digest>=20010302	digest-20080510
+build	p5-Test-Exception-[0-9]*	p5-Test-Exception-0.29nb3
+build	checkperms>=1.1	checkperms-1.11
+full	p5-Moose>=0.39	p5-Moose-2.0202
+full	p5-MooseX-Types>=0.04	p5-MooseX-Types-0.24nb1
+full	perl<5.16.0	perl-5.14.1
+full	perl>=5.14.0	perl-5.14.1
