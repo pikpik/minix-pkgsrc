@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2006/07/19 19:14:37 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2008/06/20 01:09:11 joerg Exp $
 #
 
 DISTNAME=	tclgdbm-0.10
 PKGNAME=	tcl-gdbm-0.10
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases tcl
 MASTER_SITES=	http://www.graphviz.org/pub/tclgdbm/
 

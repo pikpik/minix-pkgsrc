@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2010/08/21 16:33:06 seb Exp $
+# $NetBSD: Makefile,v 1.34 2010/08/27 05:32:59 sno Exp $
 
 .include "../../lang/perl5/Makefile.common"
 PKGNAME=	p5-${DISTNAME:S/perl/gdbm/}
-#PKGREVISION=	2
+PKGREVISION=	1
 SVR4_PKGNAME=	p5gdm
 CATEGORIES=	databases perl5
 
