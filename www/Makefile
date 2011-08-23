@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.813 2011/08/21 13:31:09 obache Exp $
+# $NetBSD: Makefile,v 1.814 2011/08/21 23:05:18 tnn Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -465,6 +465,7 @@ SUBDIR+=	p5-Plack-Middleware-Header
 SUBDIR+=	p5-Plack-Middleware-JSConcat
 SUBDIR+=	p5-Plack-Middleware-ReverseProxy
 SUBDIR+=	p5-Plack-Middleware-Session
+SUBDIR+=	p5-Plack-Test-ExternalServer
 SUBDIR+=	p5-Pod-POM-Web
 SUBDIR+=	p5-Reaction
 SUBDIR+=	p5-Rose-HTML-Objects
