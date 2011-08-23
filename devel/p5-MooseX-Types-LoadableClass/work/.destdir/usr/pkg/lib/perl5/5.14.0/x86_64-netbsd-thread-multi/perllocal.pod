@@ -1,0 +1,22 @@
+=head2 Tue Aug 23 10:33:38 2011: C<Module> L<MooseX::Types::Common|MooseX::Types::Common>
+
+=over 4
+
+=item *
+
+C<installed into: /usr/pkg/lib/perl5/vendor_perl/5.14.0>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.001002>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

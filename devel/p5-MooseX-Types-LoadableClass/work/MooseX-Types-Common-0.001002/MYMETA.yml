@@ -1,0 +1,27 @@
+---
+abstract: 'A library of commonly used type constraints'
+author:
+  - 'This distribution was extracted from the L<Reaction> code base by Guillermo'
+build_requires:
+  ExtUtils::MakeMaker: 0
+configure_requires:
+  ExtUtils::MakeMaker: 0
+distribution_type: module
+dynamic_config: 0
+generated_by: 'ExtUtils::MakeMaker version 6.57_05'
+license: unknown
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: MooseX-Types-Common
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  ExtUtils::MakeMaker: 6.42
+  Moose: 0.39
+  MooseX::Types: 0.04
+  Test::Exception: 0
+  Test::More: 0.62
+version: 0.001002

@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/var/obj/pkg/devel/p5-MooseX-Types-Common/work/.work.log}"
+echo "[*] "/var/obj/pkg/devel/p5-MooseX-Types-Common/work/.tools/bin/makeinfo" $@" >> $wrapperlog
+echo "<.> for arg in "$@"; do case "$arg" in --version) exit 1 ;; esac; done; /opt/netbsd/pkgsrc/mk/gnu-config/missing makeinfo "$@"" >> $wrapperlog
+for arg in "$@"; do case "$arg" in --version) exit 1 ;; esac; done; /opt/netbsd/pkgsrc/mk/gnu-config/missing makeinfo "$@"
