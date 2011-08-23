@@ -1,7 +1,0 @@
-bootstrap	digest>=20010302	../../pkgtools/digest
-build	p5-Test-Exception-[0-9]*	../../devel/p5-Test-Exception
-build	checkperms>=1.1	../../sysutils/checkperms
-full	p5-Moose>=0.39	../../devel/p5-Moose
-full	p5-MooseX-Types>=0.04	../../devel/p5-MooseX-Types
-full	perl<5.16.0	../../lang/perl5
-full	perl>=5.14.0	../../lang/perl5

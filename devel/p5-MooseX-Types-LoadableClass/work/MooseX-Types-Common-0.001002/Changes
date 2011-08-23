@@ -1,8 +1,0 @@
-0.001002 2010-02-22 17:00EST
-  - Add Test::Exception to the test_requires (RT#54357)
-  - Warning when you try to import things from MooseX::Types::Common rather
-    than one of the specific String/Numeric modules in the distribution.
-0.001001 2010-01-04
-  - POD updates
-0.001000
-  - Initial release. This is a spin off from Reaction.

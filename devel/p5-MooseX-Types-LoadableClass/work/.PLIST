@@ -1,9 +1,0 @@
-@comment The following lines are automatically generated
-@comment from the installed .packlist files.
-lib/perl5/vendor_perl/5.14.0/MooseX/Types/Common.pm
-lib/perl5/vendor_perl/5.14.0/MooseX/Types/Common/Numeric.pm
-lib/perl5/vendor_perl/5.14.0/MooseX/Types/Common/String.pm
-lib/perl5/vendor_perl/5.14.0/x86_64-netbsd-thread-multi/auto/MooseX/Types/Common/.packlist
-lib/perl5/vendor_perl/man/man3/MooseX::Types::Common.3
-lib/perl5/vendor_perl/man/man3/MooseX::Types::Common::Numeric.3
-lib/perl5/vendor_perl/man/man3/MooseX::Types::Common::String.3

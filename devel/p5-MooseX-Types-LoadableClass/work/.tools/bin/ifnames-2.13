@@ -1,5 +1,0 @@
-#!/bin/sh
-wrapperlog="${TOOLS_WRAPPER_LOG-/var/obj/pkg/devel/p5-MooseX-Types-Common/work/.work.log}"
-echo "[*] "/var/obj/pkg/devel/p5-MooseX-Types-Common/work/.tools/bin/ifnames-2.13" $@" >> $wrapperlog
-echo "<.> /opt/netbsd/pkgsrc/mk/gnu-config/missing ifnames" >> $wrapperlog
-/opt/netbsd/pkgsrc/mk/gnu-config/missing ifnames
