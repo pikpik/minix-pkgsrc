@@ -194,6 +194,7 @@ textproc/xmlrpc-c
 time/cal
 time/jday
 wm/fluxbox
+wm/jwm
 www/apache
 www/curl
 www/libwww

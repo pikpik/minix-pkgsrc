@@ -196,6 +196,7 @@
 @exec pkgin -y in cal-3.5nb1
 @exec pkgin -y in jday-1.3
 @exec pkgin -y in fluxbox-1.1.1nb6
+@exec pkgin -y in jwm-2.0.1nb4
 @exec pkgin -y in apache-1.3.42
 @exec pkgin -y in curl-7.21.7
 @exec pkgin -y in libwww-5.4.0nb9
