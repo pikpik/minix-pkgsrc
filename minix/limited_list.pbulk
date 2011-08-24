@@ -23,6 +23,11 @@ converters/p5-MIME-Base64
 cross/avr-binutils
 cross/avr-gcc
 cross/avr-libc
+cross/mingw
+cross/mingw-binutils
+cross/mingw-gcc
+cross/mingw-runtime-bin
+cross/mingw-w32api-bin
 databases/db4
 databases/sqlite3
 databases/tdb

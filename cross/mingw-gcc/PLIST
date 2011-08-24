@@ -208,8 +208,6 @@ include/c++/3.4.5/i386--mingw32/bits/gthr-single.h
 include/c++/3.4.5/i386--mingw32/bits/gthr.h
 include/c++/3.4.5/i386--mingw32/bits/messages_members.h
 include/c++/3.4.5/i386--mingw32/bits/os_defines.h
-include/c++/3.4.5/i386--mingw32/bits/stdc++.h.gch/O0g.gch
-include/c++/3.4.5/i386--mingw32/bits/stdc++.h.gch/O2g.gch
 include/c++/3.4.5/i386--mingw32/bits/time_members.h
 include/c++/3.4.5/iomanip
 include/c++/3.4.5/ios

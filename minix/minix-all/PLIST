@@ -25,6 +25,11 @@
 @exec pkgin -y in avr-binutils-2.19.1
 @exec pkgin -y in avr-gcc-4.4.1nb3
 @exec pkgin -y in avr-libc-1.6.7nb2
+@exec pkgin -y in mingw-3.3.1
+@exec pkgin -y in mingw-binutils-2.18nb1
+@exec pkgin -y in mingw-gcc-3.4.5
+@exec pkgin -y in mingw-runtime-bin-3.14
+@exec pkgin -y in mingw-w32api-bin-3.11
 @exec pkgin -y in db4-4.8.30
 @exec pkgin -y in sqlite3-3.7.7.1
 @exec pkgin -y in tdb-1.0.6nb2

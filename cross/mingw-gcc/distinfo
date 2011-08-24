@@ -10,3 +10,4 @@ SHA1 (gcc-objc-3.4.5-20060117-2-src.tar.gz) = c96f1531d9d73e9279e0b6faf085deec5c
 RMD160 (gcc-objc-3.4.5-20060117-2-src.tar.gz) = a02ad94da674760799ec945c7ff75ed99f9e8c3a
 Size (gcc-objc-3.4.5-20060117-2-src.tar.gz) = 266470 bytes
 SHA1 (patch-ab) = 7f7dfd0fd55037cc938c31b4ada03a7877e2cfc4
+SHA1 (patch-gcc_gcov.c) = 507280fe1ad8c74ff9ce7de585336f6e4ab8ea49
