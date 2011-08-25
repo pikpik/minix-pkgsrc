@@ -181,6 +181,7 @@ sysutils/e2fsprogs
 sysutils/heirloom-doc
 sysutils/mdf2iso
 sysutils/mktemp
+sysutils/tarsnap
 sysutils/tree
 sysutils/wtail
 textproc/antiword
