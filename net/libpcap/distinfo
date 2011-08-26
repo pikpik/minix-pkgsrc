@@ -5,3 +5,5 @@ RMD160 (libpcap-1.1.1.tar.gz) = 760159c594cc995c9e05c0cd8637a02a3b2725e2
 Size (libpcap-1.1.1.tar.gz) = 581984 bytes
 SHA1 (patch-aa) = 2a797ffee404d1cfd38e7d739796e47c514ec5c3
 SHA1 (patch-ac) = 5ef8c530b0fc49fff223ebfc7861868c0f1a1884
+SHA1 (patch-fad-getad.c) = 7e8b0fc3df5a5739a0c25195dc2840894b33279e
+SHA1 (patch-inet.c) = cfd02417972def2a7f708c1bcdb85a5383050e2b

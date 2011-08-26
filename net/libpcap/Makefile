@@ -33,6 +33,13 @@ PLIST.SunOS=	yes
 PLIST.std=	yes
 .endif
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--with-pcap=minix
+
+post-extract:
+	${CP} ${FILESDIR}/pcap-minix.c ${WRKSRC}
+.endif
+
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/pcap-int.h ${DESTDIR}${PREFIX}/include
 

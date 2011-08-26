@@ -139,7 +139,9 @@ misc/figlet
 misc/figlet-fonts
 net/fetch
 net/libfetch
+net/libpcap
 net/rsync
+net/tcpdump
 pkgtools/bootstrap-mk-files
 pkgtools/digest
 pkgtools/libnbcompat
