@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.22 2011/04/22 13:42:39 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.23 2011/06/10 09:39:47 obache Exp $
 
 BUILDLINK_TREE+=	libpurple
 
@@ -19,6 +19,9 @@ pkgbase := libpurple
 .endif
 .if !empty(PKG_BUILD_OPTIONS.libpurple:Mfarsight)
 .  include "../../multimedia/farsight2/buildlink3.mk"
+.endif
+.if empty(PKG_BUILD_OPTIONS.libpurple:Mgnutls)
+.  include "../../devel/nss/buildlink3.mk"
 .endif
 .endif # LIBPURPLE_BUILDLINK3_MK
 
