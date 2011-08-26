@@ -3,4 +3,4 @@ $NetBSD: distinfo,v 1.6 2010/11/22 05:54:17 dholland Exp $
 SHA1 (xmlto-0.0.23.tar.bz2) = 69aab42d941089db3edb32987299290e2472f675
 RMD160 (xmlto-0.0.23.tar.bz2) = bbf1e1ee8674a7faeb10643f74a6025d4421d66e
 Size (xmlto-0.0.23.tar.bz2) = 105201 bytes
-SHA1 (patch-format_docbook_man) = 9ea641fbc3585ff3fd904c15c39eaa54377615fb
+SHA1 (patch-format_docbook_man) = 8f34fd4082f7b27abc1577f6e8008be0577f89a3
