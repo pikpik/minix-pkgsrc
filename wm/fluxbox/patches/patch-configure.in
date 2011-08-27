@@ -1,0 +1,90 @@
+--- configure.in.orig	Sat Aug 27 17:48:19 2011
++++ configure.in	Sat Aug 27 17:51:08 2011
+@@ -185,7 +185,7 @@
+     AC_MSG_RESULT([yes])
+     AC_CHECK_LIB(Xext, XShapeCombineShape,
+       AC_DEFINE(SHAPE, 1, "shaped window support")
+-      LIBS="$LIBS -lXext")
++      LIBS="-lXext $LIBS")
+   else
+     AC_MSG_RESULT([no])
+   fi,
+@@ -193,7 +193,7 @@
+   AC_MSG_RESULT([yes])
+   AC_CHECK_LIB(Xext, XShapeCombineShape,
+     AC_DEFINE(SHAPE, 1, "shaped window support")
+-    LIBS="$LIBS -lXext")
++    LIBS="-lXext $LIBS")
+ )
+ 
+ dnl Check for the Slit
+@@ -398,14 +398,14 @@
+ 	AC_MSG_RESULT([yes])
+ 	AC_CHECK_LIB(Xrender, XRenderCreatePicture, 
+ 		AC_DEFINE(HAVE_XRENDER, 1, "Xrender support")
+-		LIBS="$LIBS -lXrender")
++		LIBS="-lXrender $LIBS")
+   else
+     AC_MSG_RESULT([no])	
+   fi,  
+   AC_MSG_RESULT([yes])
+   AC_CHECK_LIB(Xrender, XRenderCreatePicture, 
+ 	AC_DEFINE(HAVE_XRENDER, 1, "Xrender support")
+-	LIBS="$LIBS -lXrender")
++	LIBS="-lXrender $LIBS")
+ )
+ 
+ XPM=false
+@@ -418,7 +418,7 @@
+ 	AC_CHECK_LIB(Xpm, XpmReadFileToPixmap,
+ 		AC_DEFINE(HAVE_XPM, 1, "Xpm support")
+ 		XPM=true
+-		LIBS="$LIBS -lXpm")
++		LIBS="-lXpm $LIBS")
+   else
+     AC_MSG_RESULT([no])	
+   fi,  
+@@ -426,7 +426,7 @@
+   AC_CHECK_LIB(Xpm, XpmReadFileToPixmap,
+ 	AC_DEFINE(HAVE_XPM, 1, "Xpm support")
+ 	XPM=true
+-	LIBS="$LIBS -lXpm")
++	LIBS="-lXpm $LIBS")
+ )
+ 
+ AM_CONDITIONAL(XPM, test x$XPM = xtrue)
+@@ -484,14 +484,14 @@
+ 	AC_MSG_RESULT([yes])
+ 	AC_CHECK_LIB(Xrandr, XRRQueryExtension,
+ 		AC_DEFINE(HAVE_RANDR, 1, "randr support")		
+-		LIBS="$LIBS -lXrandr")
++		LIBS="-lXrandr $LIBS")
+   else
+     AC_MSG_RESULT([no])
+   fi,  
+   AC_MSG_RESULT([yes])
+   AC_CHECK_LIB(Xrandr, XRRQueryExtension,
+ 		AC_DEFINE(HAVE_RANDR, 1, "randr support")		
+-		LIBS="$LIBS -lXrandr")
++		LIBS="-lXrandr $LIBS")
+ )
+ 
+ AC_MSG_CHECKING([whether to have RANDR 1.2 support])
+@@ -520,7 +520,7 @@
+ 	AC_MSG_RESULT([yes])
+ 	AC_CHECK_LIB(Xinerama, XineramaQueryScreens,
+ 	        AC_DEFINE(XINERAMA, 1, "Xinerama support")
+-                LIBS="$LIBS -lXinerama")
++                LIBS="-lXinerama $LIBS")
+    else
+         AC_MSG_RESULT([no])
+    fi,
+@@ -528,7 +528,7 @@
+    AC_MSG_RESULT([yes])
+    AC_CHECK_LIB(Xinerama, XineramaQueryScreens,
+                 AC_DEFINE(XINERAMA, 1, "Xinerama support")
+-                LIBS="$LIBS -lXinerama")
++                LIBS="-lXinerama $LIBS")
+ )
+ 
+ AC_ARG_WITH(

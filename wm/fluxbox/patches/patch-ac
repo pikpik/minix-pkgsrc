@@ -1,15 +1,22 @@
 $NetBSD: patch-aa,v 1.10 2007/11/04 15:34:09 rillig Exp $
 
---- src/FbTk/I18n.hh.orig	Sun Apr 27 10:06:26 2008
-+++ src/FbTk/I18n.hh
-@@ -57,7 +57,9 @@ void catclose(nl_catd cat);
- #endif // __cplusplus
+--- src/fluxbox.cc.orig	2009-07-06 12:28:48.000000000 +0100
++++ src/fluxbox.cc	2009-07-06 12:35:00.000000000 +0100
+@@ -84,7 +84,7 @@
+ #ifdef SHAPE
+ #include <X11/extensions/shape.h>
+ #endif // SHAPE
+-#ifdef HAVE_RANDR
++#if !defined(__sun)
+ #include <X11/extensions/Xrandr.h>
+ #endif // HAVE_RANDR
  
- #endif // HAVE_NL_TYPES_H
--
-+#ifdef __minix
-+typedef int nl_catd;
-+#endif //__minix
- // Some defines to help out
- #ifdef NLS
- #define _FB_USES_NLS \
+@@ -1227,7 +1227,7 @@
+ }
+ 
+ void Fluxbox::saveGroupSearch(Window window, WinClient *data) {
+-    m_group_search.insert(pair<Window, WinClient *>(window, data));
++    m_group_search.insert(std::multimap<Window, WinClient *>::value_type(window, data));
+ }
+ 
+ 

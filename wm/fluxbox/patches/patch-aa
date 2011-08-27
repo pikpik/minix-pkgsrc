@@ -1,15 +1,34 @@
 $NetBSD: patch-aa,v 1.10 2007/11/04 15:34:09 rillig Exp $
 
---- src/FbTk/FbString.cc.orig	Sun Apr 27 10:06:26 2008
-+++ src/FbTk/FbString.cc
-@@ -39,8 +39,9 @@
- #endif
+* "grep -q" doesn't work everywhere.
+* Do not use the home directory of the user building the package.
+
+--- util/fluxbox-generate_menu.in.orig	2009-07-06 11:35:35.000000000 +0100
++++ util/fluxbox-generate_menu.in	2009-07-06 11:38:59.000000000 +0100
+@@ -48,7 +48,7 @@
+ [ "$WHOAMI" = root ] && PATH=/bin:/usr/bin:/usr/local/bin:/usr/X11R6/bin
  
- #include <stdio.h>
--
-+#ifndef __minix
- #include <langinfo.h>
-+#endif //__minix
- #include <locale.h>
+ # Check for Imlib2-support
+-if @pkgprefix@fluxbox@pkgsuffix@ -info 2> /dev/null | grep -q "^IMLIB"; then
++if @pkgprefix@fluxbox@pkgsuffix@ -info 2> /dev/null | grep "^IMLIB" > /dev/null; then
+     PNG_ICONS="yes"
+ else
+     # better assume to assume "no"
+@@ -308,7 +308,7 @@
+     # echo "^.${entry_exec}.[[:space:]]*<.*/${icon_base}\....>" 
+     if [ -f "$entry_icon" ]; then
+     # if icon exists and entry does not already exists, add it
+-        if ! grep -q -m 1 "^.${entry_exec}.[[:space:]]*<.*/${icon_base}\....>" $ICONMAPPING 2> /dev/null; then
++        if ! grep "^.${entry_exec}.[[:space:]]*<.*/${icon_base}\....>" $ICONMAPPING > /dev/null; then
+             echo -e "\"${entry_exec}\" \t <${entry_icon}>" >> $ICONMAPPING
+         else 
+             : echo "#    mapping already exists for ${entry_exec}" >> $ICONMAPPING
+@@ -1185,7 +1185,7 @@
+ esac
  
- #include <iostream>
+ # Set Defaults
+-USERFLUXDIR="${HOME}/.@pkgprefix@fluxbox@pkgsuffix@"
++USERFLUXDIR="\${HOME}/.@pkgprefix@fluxbox@pkgsuffix@"
+ MENUFILENAME="${MENUFILENAME:=${USERFLUXDIR}/menu}"
+ MENUTITLE="${MENUTITLE:=Fluxbox}"
+ HOMEPAGE="${HOMEPAGE:=fluxbox.org}"
