@@ -15,12 +15,14 @@ lib/gnome-settings-daemon-2.0/libfont.la
 lib/gnome-settings-daemon-2.0/libhousekeeping.la
 lib/gnome-settings-daemon-2.0/libkeybindings.la
 lib/gnome-settings-daemon-2.0/libkeyboard.la
+lib/gnome-settings-daemon-2.0/libmedia-keys.la
 lib/gnome-settings-daemon-2.0/libmouse.la
 lib/gnome-settings-daemon-2.0/libsound.la
 lib/gnome-settings-daemon-2.0/libtyping-break.la
 lib/gnome-settings-daemon-2.0/libxrandr.la
 lib/gnome-settings-daemon-2.0/libxrdb.la
 lib/gnome-settings-daemon-2.0/libxsettings.la
+lib/gnome-settings-daemon-2.0/media-keys.gnome-settings-plugin
 lib/gnome-settings-daemon-2.0/mouse.gnome-settings-plugin
 lib/gnome-settings-daemon-2.0/sound.gnome-settings-plugin
 lib/gnome-settings-daemon-2.0/typing-break.gnome-settings-plugin
