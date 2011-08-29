@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1486 2011/08/23 09:30:04 abs Exp $
+# $NetBSD: Makefile,v 1.1487 2011/08/23 09:51:51 abs Exp $
 #
 
 COMMENT=	Development utilities
@@ -342,6 +342,7 @@ SUBDIR+=	libgweather
 SUBDIR+=	libhfs
 SUBDIR+=	libiberty
 SUBDIR+=	libidn
+SUBDIR+=	libinotify
 SUBDIR+=	libixp
 SUBDIR+=	libjit
 SUBDIR+=	libjudy
