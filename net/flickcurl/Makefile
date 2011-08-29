@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/08/25 13:30:23 jakllsch Exp $
 #
 
 DISTNAME=	flickcurl-1.21
@@ -13,6 +13,8 @@ LICENSE=	gnu-lgpl-v2.1 OR gnu-gpl-v2 OR apache-2.0
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
+USE_TOOLS+=	pkg-config
 
 .include "../../www/curl/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
