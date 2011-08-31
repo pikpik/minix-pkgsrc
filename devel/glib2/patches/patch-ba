@@ -2,9 +2,9 @@ $NetBSD: patch-ba,v 1.6 2009/03/15 13:32:31 jmcneill Exp $
 
 http://bugzilla.gnome.org/show_bug.cgi?id=583330
 
---- gio/gunixmounts.c.orig	2009-03-13 00:09:53.000000000 -0400
+--- gio/gunixmounts.c.orig	Sun Jun  5 23:18:49 2011
 +++ gio/gunixmounts.c
-@@ -136,6 +136,9 @@ struct _GUnixMountMonitor {
+@@ -135,6 +135,9 @@ struct _GUnixMountMonitor {
  
    GFileMonitor *fstab_monitor;
    GFileMonitor *mtab_monitor;
@@ -14,7 +14,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  };
  
  struct _GUnixMountMonitorClass {
-@@ -147,6 +150,8 @@ static GUnixMountMonitor *the_mount_moni
+@@ -146,6 +149,8 @@ static GUnixMountMonitor *the_mount_monitor = NULL;
  static GList *_g_get_unix_mounts (void);
  static GList *_g_get_unix_mount_points (void);
  
@@ -23,7 +23,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  G_DEFINE_TYPE (GUnixMountMonitor, g_unix_mount_monitor, G_TYPE_OBJECT);
  
  #define MOUNT_POLL_INTERVAL 4000
-@@ -173,6 +178,7 @@ G_DEFINE_TYPE (GUnixMountMonitor, g_unix
+@@ -172,6 +177,7 @@ G_DEFINE_TYPE (GUnixMountMonitor, g_unix_mount_monitor
  #endif
  
  #if defined(HAVE_GETMNTINFO) && defined(HAVE_FSTAB_H) && defined(HAVE_SYS_MOUNT_H)
@@ -31,7 +31,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  #include <sys/ucred.h>
  #include <sys/mount.h>
  #include <fstab.h>
-@@ -223,20 +229,28 @@ g_unix_is_mount_path_system_internal (co
+@@ -222,20 +228,28 @@ g_unix_is_mount_path_system_internal (const char *moun
      "/",              /* we already have "Filesystem root" in Nautilus */ 
      "/bin",
      "/boot",
@@ -91,7 +91,47 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  	mount_entry->is_read_only = TRUE;
  
        mount_entry->is_system_internal =
-@@ -1056,6 +1084,10 @@ get_mounts_timestamp (void)
+@@ -656,6 +684,25 @@ _g_get_unix_mounts (void)
+ 
+   return return_list;
+ }
++#elif defined(__minix)
++
++static char *
++get_mtab_monitor_file (void)
++{
++  return "/etc/mtab";
++}
++
++static char *
++get_mtab_read_file (void)
++{
++  return "/etc/mtab";
++}
++
++static GList *
++_g_get_unix_mounts (void)
++{
++	return NULL;
++}
+ #else
+ #error No _g_get_unix_mounts() implementation for system
+ #endif
+@@ -1034,11 +1081,12 @@ _g_get_unix_mount_points (void)
+   
+   return g_list_reverse (return_list);
+ }
+-#elif defined(__INTERIX)
++#elif defined(__INTERIX) || defined(__minix)
+ static GList *
+ _g_get_unix_mount_points (void)
+ {
+   return _g_get_unix_mounts ();
++
+ }
+ #else
+ #error No g_get_mount_table() implementation for system
+@@ -1056,6 +1104,10 @@ get_mounts_timestamp (void)
        if (stat (monitor_file, &buf) == 0)
  	return (guint64)buf.st_mtime;
      }
@@ -102,7 +142,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
    return 0;
  }
  
-@@ -1196,6 +1228,13 @@ g_unix_mount_monitor_finalize (GObject *
+@@ -1198,6 +1250,13 @@ g_unix_mount_monitor_finalize (GObject *object)
        g_object_unref (monitor->mtab_monitor);
      }
  
@@ -116,7 +156,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
    the_mount_monitor = NULL;
  
    G_OBJECT_CLASS (g_unix_mount_monitor_parent_class)->finalize (object);
-@@ -1276,6 +1315,51 @@ mtab_file_changed (GFileMonitor      *mo
+@@ -1278,6 +1337,51 @@ mtab_file_changed (GFileMonitor      *monitor,
    g_signal_emit (mount_monitor, signals[MOUNTS_CHANGED], 0);
  }
  
@@ -168,16 +208,16 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  static void
  g_unix_mount_monitor_init (GUnixMountMonitor *monitor)
  {
-@@ -1298,6 +1382,12 @@ g_unix_mount_monitor_init (GUnixMountMon
+@@ -1299,6 +1403,12 @@ g_unix_mount_monitor_init (GUnixMountMonitor *monitor)
+       g_object_unref (file);
        
        g_signal_connect (monitor->mtab_monitor, "changed", (GCallback)mtab_file_changed, monitor);
-     }
++    }
 +  else
 +    {
 +      monitor->mount_poller_mounts = _g_get_unix_mounts ();
 +      mount_poller_time = (guint64)time (NULL);
 +      monitor->mount_poller_source = g_timeout_add_seconds (3, (GSourceFunc)mount_change_poller, monitor);
-+    }
+     }
  }
  
- /**

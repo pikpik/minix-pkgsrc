@@ -1,6 +1,6 @@
-$NetBSD: patch-aq,v 1.1 2011/03/09 11:22:04 drochner Exp $
+$NetBSD$
 
---- gio/gsocket.c.orig	2011-02-11 15:23:12.000000000 +0000
+--- gio/gsocket.c.orig	Sun Jun  5 23:18:49 2011
 +++ gio/gsocket.c
 @@ -33,6 +33,9 @@
  #include <signal.h>
@@ -12,10 +12,25 @@ $NetBSD: patch-aq,v 1.1 2011/03/09 11:22:04 drochner Exp $
  
  #ifndef G_OS_WIN32
  # include <fcntl.h>
-@@ -3540,6 +3543,35 @@ g_socket_get_credentials (GSocket   *soc
+@@ -748,8 +751,12 @@ g_socket_class_init (GSocketClass *klass)
+ 						     P_("Listen backlog"),
+ 						     P_("Outstanding connections in the listen queue"),
+ 						     0,
++#ifdef SOMAXCONN
+ 						     SOMAXCONN,
++#else
+ 						     10,
++#endif
++						     10,
+ 						     G_PARAM_READWRITE |
+                                                      G_PARAM_STATIC_STRINGS));
+ 
+@@ -3538,6 +3545,35 @@ g_socket_get_credentials (GSocket   *socket,
+         g_credentials_set_native (ret,
+                                   G_CREDENTIALS_TYPE_LINUX_UCRED,
                                    &native_creds);
-       }
-   }
++      }
++  }
 +#elif defined(__NetBSD__) && defined(LOCAL_PEEREID)
 +  {
 +    struct unpcbid cred;
@@ -43,8 +58,6 @@ $NetBSD: patch-aq,v 1.1 2011/03/09 11:22:04 drochner Exp $
 +	g_credentials_set_native (ret,
 +				  G_CREDENTIALS_TYPE_LINUX_UCRED,
 +				  &native_creds);
-+      }
-+  }
+       }
+   }
  #else
-   g_set_error_literal (error,
-                        G_IO_ERROR,

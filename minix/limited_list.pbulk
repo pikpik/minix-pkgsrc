@@ -53,6 +53,7 @@ devel/gettext-lib
 devel/gettext-tools
 devel/gindent
 devel/glib
+devel/glib2
 devel/gmake
 devel/gmp
 devel/gtexinfo
