@@ -2,9 +2,14 @@ $NetBSD: patch-aa,v 1.5 2007/10/13 16:27:15 adrianp Exp $
 
 Check if sp is a null pointer before parsing it.
 
---- src/fe-text/tparm.c.orig	2007-10-06 10:40:39.000000000 +0100
+--- src/fe-text/tparm.c.orig	Sat Apr  3 16:19:42 2010
 +++ src/fe-text/tparm.c
-@@ -247,7 +247,7 @@ char *tparm(const char *str, ...) {
+@@ -1,3 +1,4 @@
++#ifndef __minix
+ /*
+  * tparm.c
+  *
+@@ -247,7 +248,7 @@ char *tparm(const char *str, ...) {
  	argcnt = 0;
  	pos = 0;
  	termcap = 1;
@@ -13,3 +18,8 @@ Check if sp is a null pointer before parsing it.
  		switch(*sp) {
  		case '\\':
  			if (scan_for) {
+@@ -738,3 +739,4 @@ char *tparm(const char *str, ...) {
+ 	*dp = '\0';
+ 	return buf;
+ }
++#endif

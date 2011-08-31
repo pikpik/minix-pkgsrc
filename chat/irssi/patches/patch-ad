@@ -3,9 +3,9 @@ $NetBSD: patch-ad,v 1.8 2008/12/04 12:53:55 tonnerre Exp $
 PerlIO mutex must be initialized before trying to fiddle with the
 interpreter.
 
---- src/perl/perl-core.c.orig	2008-12-04 13:45:24.000000000 +0100
+--- src/perl/perl-core.c.orig	Sat Apr  3 16:19:31 2010
 +++ src/perl/perl-core.c
-@@ -452,6 +452,8 @@ void perl_core_init(void)
+@@ -453,6 +453,8 @@ void perl_core_init(void)
  	perl_signals_init();
          signal_add_last("script error", (SIGNAL_FUNC) sig_script_error);
  

@@ -2,9 +2,9 @@ $NetBSD: patch-ae,v 1.5 2006/03/04 06:34:13 wiz Exp $
 
 Accept ENOTCONN as indicating socket is not ready for write.
 
---- src/core/network.c.orig	2005-11-19 23:45:08.000000000 +0100
+--- src/core/network.c.orig	Sat Apr  3 16:19:38 2010
 +++ src/core/network.c
-@@ -373,7 +373,7 @@ int net_transmit(GIOChannel *handle, con
+@@ -367,7 +367,7 @@ int net_transmit(GIOChannel *handle, const char *data,
  
  	err = g_io_channel_write(handle, (char *) data, len, &ret);
  	if (err == G_IO_ERROR_AGAIN ||

@@ -19,6 +19,7 @@ benchmarks/forkbomb
 benchmarks/pipebench
 chat/naim
 chat/ircd-hybrid
+chat/irssi
 converters/libiconv
 converters/p5-MIME-Base64
 cross/avr-binutils
