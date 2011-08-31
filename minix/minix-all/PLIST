@@ -20,6 +20,8 @@
 @exec pkgin -y in forkbomb-1.4
 @exec pkgin -y in pipebench-0.40
 @exec pkgin -y in naim-0.11.8.3.1
+@exec pkgin -y in ircd-hybrid-7.2.3nb3
+@exec pkgin -y in irssi-0.8.15nb2
 @exec pkgin -y in libiconv-1.13.1
 @exec pkgin -y in p5-MIME-Base64-3.13nb1
 @exec pkgin -y in avr-binutils-2.19.1
@@ -54,6 +56,7 @@
 @exec pkgin -y in gettext-tools-0.18.1.1nb2
 @exec pkgin -y in gindent-2.2.9nb1
 @exec pkgin -y in glib-1.2.10nb10
+@exec pkgin -y in glib2-2.28.8
 @exec pkgin -y in gmake-3.82nb2
 @exec pkgin -y in gmp-5.0.2
 @exec pkgin -y in gtexinfo-4.13nb1
@@ -141,7 +144,9 @@
 @exec pkgin -y in figlet-fonts-20021023nb1
 @exec pkgin -y in fetch-1.7
 @exec pkgin -y in libfetch-2.33
+@exec pkgin -y in libpcap-1.1.1
 @exec pkgin -y in rsync-3.0.8
+@exec pkgin -y in tcpdump-4.1.1
 @exec pkgin -y in bootstrap-mk-files-20090807nb3
 @exec pkgin -y in digest-20080510
 @exec pkgin -y in libnbcompat-20090610
@@ -183,6 +188,7 @@
 @exec pkgin -y in heirloom-doc-070715
 @exec pkgin -y in mdf2iso-0.3.0
 @exec pkgin -y in mktemp-1.7
+@exec pkgin -y in tarsnap-1.0.29
 @exec pkgin -y in tree-1.5.1.1nb2
 @exec pkgin -y in wtail-0.2.2nb2
 @exec pkgin -y in antiword-0.37nb1
