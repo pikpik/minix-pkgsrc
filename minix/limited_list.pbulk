@@ -18,6 +18,7 @@ archivers/zip
 benchmarks/forkbomb
 benchmarks/pipebench
 chat/naim
+chat/ircd-hybrid
 converters/libiconv
 converters/p5-MIME-Base64
 cross/avr-binutils

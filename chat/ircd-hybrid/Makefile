@@ -118,4 +118,16 @@ post-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tools/mkpasswd \
 		${PREFIX}/bin/ircd-hybrid-mkpasswd
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS += --disable-shared-modules
+
+SUBST_CLASSES+=        ipv6
+SUBST_STAGE.ipv6=      post-configure
+SUBST_MESSAGE.ipv6=    Forcing ipv6 off for Minix.
+SUBST_FILES.ipv6=      include/setup.h
+SUBST_SED.ipv6=        -e 's,.define.*IPV6.*1,,'
+.else
+PLIST_SRC+=	PLIST.so
+.endif
+
 .include "../../mk/bsd.pkg.mk"
