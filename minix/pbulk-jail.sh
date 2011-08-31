@@ -95,6 +95,9 @@ makejailpkgsrc() {
 			git fetch $REMOTE
 			git checkout -f $REMOTE/$BRANCH
 		)
+
+		# bonus distfiles
+		cp -r $PKGSRC/distfiles/* $JAILPKGSRC/distfiles/
 	else	# copy and use our local pkgsrc repository as it is
 		synctree -f $PKGSRC $JAILPKGSRC >/dev/null
 	fi
