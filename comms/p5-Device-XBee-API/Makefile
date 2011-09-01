@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	Device-XBee-API-0.3
+DISTNAME=	Device-XBee-API-0.4
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	comms
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/J/JE/JEAGLE/
