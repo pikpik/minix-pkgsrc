@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.19 2010/06/15 03:11:52 taca Exp $
+# $NetBSD: options.mk,v 1.20 2011/02/16 17:45:08 taca Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -14,6 +14,9 @@ PKG_SUPPORTED_OPTIONS+= pam
 .if !empty(PKG_OPTIONS:Mkerberos)
 .  include "../../mk/krb5.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-kerberos5=${KRB5BASE:Q}
+.  if ${KRB5_TYPE} == "mit-krb5"
+CONFIGURE_ENV+=		ac_cv_search_k_hasafs=no
+.  endif
 .endif
 
 .if !empty(PKG_OPTIONS:Mhpn-patch)
