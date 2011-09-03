@@ -1,97 +1,49 @@
-# $NetBSD: Makefile,v 1.84 2008/06/23 20:34:20 kristerw Exp $
-#
-# This is the top-level Makefile of pkgsrc. It contains a list of the
-# categories of packages, as well as some targets that operate on the
-# whole pkgsrc system.
-#
-# User-settable variables:
-#
-# SPECIFIC_PKGS
-#	(See mk/defaults/mk.conf)
-#
-# SITE_SPECIFIC_PKGS
-# HOST_SPECIFIC_PKGS
-# GROUP_SPECIFIC_PKGS
-# USER_SPECIFIC_PKGS
-#	The specific packages that are to be built.
-#
-#	XXX: Why are there four distinct variables? The same could be
-#	achieved using just SPECIFIC_PKGS as the list of packages and
-#	leaving the remaining details to the user.
-#
-# See also:
-#	mk/misc/toplevel.mk
+# $NetBSD$
 #
 
-# Note: The tools definitions must come before bsd.prefs.mk is included.
+DISTNAME=	pgbouncer-${VERSION}
+CATEGORIES=	databases
+MASTER_SITES=	http://pgfoundry.org/frs/download.php/3085/
+EXTRACT_SUFX=	.tgz
 
-# tools used by this Makefile
-USE_TOOLS+=	[ awk cat cmp echo env expr false fgrep grep mv	rm sed	\
-		sort wc
+MAINTAINER=	pkgsrc@NetBSD.org
+HOMEPAGE=	http://wiki.postgresql.org/wiki/PgBouncer
+COMMENT=	Lightweight connection pooler for PostgreSQL
+LICENSE=	original-bsd
 
-# additional tools used by bsd.pkg.subdir.mk
-USE_TOOLS+=	basename touch
+PKG_DESTDIR_SUPPORT=	user-destdir
 
-# additional tools used by bsd.bulk-pkg.mk
-USE_TOOLS+=	egrep find ls sh tee true tsort
+VERSION=	1.4.2
+USE_LANGUAGES=	c
+USE_TOOLS=	gmake
+GNU_CONFIGURE=	yes
 
-PKGSRCTOP=	yes
+CONFIGURE_ARGS+=        --with-libevent=${BUILDLINK_PREFIX.libevent}
 
-.include "mk/bsd.prefs.mk"
+EGDIR=                  ${PREFIX}/share/examples/${PKGBASE}
+CONF_FILES=             ${EGDIR}/pgbouncer.ini ${PKG_SYSCONFDIR}/pgbouncer.ini \
+			${EGDIR}/pgbouncer.userlist ${PKG_SYSCONFDIR}/pgbouncer.userlist
 
-.if defined(SPECIFIC_PKGS)
-SUBDIR+=	${SITE_SPECIFIC_PKGS}
-SUBDIR+=	${HOST_SPECIFIC_PKGS}
-SUBDIR+=	${GROUP_SPECIFIC_PKGS}
-SUBDIR+=	${USER_SPECIFIC_PKGS}
-.else
-# Packages in the x11 category tend to require a lot more parse time
-# than the rest of the packages. Reorder it to the beginning to avoid
-# stalling parallel scans near the end of a run.
-SUBDIR+=	x11
-SUBDIR+=	archivers
-SUBDIR+=	audio
-SUBDIR+=	benchmarks
-SUBDIR+=	biology
-SUBDIR+=	cad
-SUBDIR+=	chat
-SUBDIR+=	comms
-SUBDIR+=	converters
-SUBDIR+=	cross
-SUBDIR+=	databases
-SUBDIR+=	devel
-SUBDIR+=	editors
-SUBDIR+=	emulators
-SUBDIR+=	filesystems
-SUBDIR+=	finance
-SUBDIR+=	fonts
-SUBDIR+=	games
-SUBDIR+=	geography
-SUBDIR+=	graphics
-SUBDIR+=	ham
-SUBDIR+=	inputmethod
-SUBDIR+=	lang
-SUBDIR+=	mail
-SUBDIR+=	math
-SUBDIR+=	mbone
-SUBDIR+=	meta-pkgs
-SUBDIR+=	misc
-SUBDIR+=	multimedia
-SUBDIR+=	net
-SUBDIR+=	news
-SUBDIR+=	parallel
-SUBDIR+=	pkgtools
-SUBDIR+=	print
-#SUBDIR+=	regress		# regression tests must be started manually
-SUBDIR+=	security
-SUBDIR+=	shells
-SUBDIR+=	sysutils
-SUBDIR+=	textproc
-SUBDIR+=	time
-SUBDIR+=	wm
-SUBDIR+=	www
-.endif
+RCD_SCRIPTS+=		pgbouncer
 
-SUBDIR+=	${USER_ADDITIONAL_PKGS}
+INSTALLATION_DIRS=      bin ${PKGMANDIR}/man1 ${PKGMANDIR}/man5 ${EGDIR}
 
-.include "mk/misc/toplevel.mk"
+PGUSER?=                pgsql
+PGGROUP?=               pgsql
+PKG_GROUPS=     	${PGGROUP}
+PKG_USERS=      	${PGUSER}:${PGGROUP}
+
+BUILD_DEFS+=		PGUSER PGGROUP
+FILES_SUBST+=           PGUSER=${PGUSER}
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/pgbouncer ${DESTDIR}${PREFIX}/bin/
+	${INSTALL_MAN} ${WRKSRC}/doc/pgbouncer.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/
+	${INSTALL_MAN} ${WRKSRC}/doc/pgbouncer.5 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man5/
+	${INSTALL_DATA} ${WRKSRC}/etc/pgbouncer.ini ${DESTDIR}${EGDIR}
+	${INSTALL_DATA} ${WRKSRC}/etc/userlist.txt ${DESTDIR}${EGDIR}/pgbouncer.userlist
+
+BUILDLINK_API_DEPENDS.libevent+= libevent>=2.0
+.include "../../devel/libevent/buildlink3.mk"
+
+.include "../../mk/bsd.pkg.mk"
