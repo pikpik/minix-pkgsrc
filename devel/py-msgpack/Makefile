@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/06/13 12:20:20 obache Exp $
 #
 
-DISTNAME=	msgpack-python-0.1.9
+DISTNAME=	msgpack-python-0.1.10
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/-python-/-/}
 CATEGORIES=	devel
 MASTER_SITES=	http://pypi.python.org/packages/source/m/msgpack-python/
