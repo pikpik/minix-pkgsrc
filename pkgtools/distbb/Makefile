@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/18 19:36:39 cheusov Exp $
+# $NetBSD: Makefile,v 1.2 2011/08/08 10:05:21 cheusov Exp $
 #
 
 DISTNAME=	distbb-0.40.1
@@ -48,5 +48,7 @@ post-install:
 .endfor
 
 MAKE_PROGRAM=		mkcmake
+
+.include "../../devel/mk-configure/configure.mk"
 
 .include "../../mk/bsd.pkg.mk"
