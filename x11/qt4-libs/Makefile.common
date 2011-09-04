@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.26 2011/05/16 22:13:46 cheusov Exp $
+# $NetBSD: Makefile.common,v 1.27 2011/07/21 17:07:11 joerg Exp $
 # used by x11/qt4-docs/Makefile
 # used by x11/qt4-libs/Makefile
 # used by x11/qt4-mng/Makefile
@@ -11,7 +11,6 @@
 DISTNAME=	qt-everywhere-opensource-src-${QTVERSION}
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.qt.nokia.com/qt/source/
-#EXTRACT_SUFX=	.tar.bz2
 
 .include "../../x11/qt4/Makefile.common"
 
