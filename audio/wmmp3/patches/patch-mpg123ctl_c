@@ -1,0 +1,12 @@
+$NetBSD$
+
+- add needed standard headers
+
+--- mpg123ctl.c~	2000-04-03 00:18:43.000000000 +0000
++++ mpg123ctl.c
+@@ -15,4 +15,5 @@
+  */
+ 
++#include <time.h>
+ #include "mpg123ctl.h"
+ 
