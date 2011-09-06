@@ -1,6 +1,7 @@
-$NetBSD$
+$NetBSD: patch-Xlib_xobject_cursor.py,v 1.1 2011/08/22 12:18:19 wiz Exp $
 
 Python-3.1 compatibility.
+https://sourceforge.net/tracker/?func=detail&aid=3405244&group_id=10350&atid=310350
 
 --- Xlib/xobject/cursor.py.orig	2007-06-10 14:11:59.000000000 +0000
 +++ Xlib/xobject/cursor.py
