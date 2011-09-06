@@ -1,4 +1,4 @@
-# $NetBSD: linux.mk,v 1.7 2010/09/24 17:08:35 chs Exp $
+# $NetBSD: linux.mk,v 1.8 2011/02/27 15:54:03 chs Exp $
 #
 # Linux binary emulation framework
 #
@@ -6,7 +6,13 @@
 .if ${OPSYS} == "Linux"
 EMUL_TYPE.linux?=	native
 .else
-EMUL_TYPE.linux?=	suse-${SUSE_PREFER}
+
+.for _version_ in ${EMUL_REQD:Msuse>=*:S/suse>=//}
+SUSE_VERSION_REQD?=	${_version_}
+.endfor
+SUSE_VERSION_REQD?=	${SUSE_PREFER}
+
+EMUL_TYPE.linux?=	suse-${SUSE_VERSION_REQD}
 .endif
 EMUL_MODULES.linux?=	# empty
 
