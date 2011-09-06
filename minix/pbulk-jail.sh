@@ -82,12 +82,15 @@ makejailpkgsrc() {
 		pkg_add -f -P $JAILROOT $PACKAGEURL/$p
 	done
 
+	PKGSRCMODE=755
+	mkdir -m $PKGSRCMODE -p $JAILPKGSRC
+
 	if [ $COPY -eq 0 ]
 	then	
 		# copy our own pkgsrc repository there so the new repository
 		# doesn't have to retrieve objects we already have
 		GITDIR=$JAILPKGSRC/.git
-		mkdir -p $GITDIR
+		mkdir -m $PKGSRCMODE -p $GITDIR
 		synctree -f $PKGSRC/.git $GITDIR >/dev/null
 		(	cd $JAILPKGSRC
 			git remote rm $REMOTE || true
