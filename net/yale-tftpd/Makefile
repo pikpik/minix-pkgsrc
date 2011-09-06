@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2009/02/07 16:53:46 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/06/05 10:19:10 hasso Exp $
 
 DISTNAME=	yale-tftpd-3.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cert.dfn.de/pub/tools/net/yale-tftpd/
 
