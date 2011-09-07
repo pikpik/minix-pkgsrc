@@ -100,7 +100,7 @@ makejailpkgsrc() {
 		)
 
 		# bonus distfiles
-		cp -r $PKGSRC/distfiles/* $JAILPKGSRC/distfiles/
+		cp -r $PKGSRC/distfiles/* $JAILPKGSRC/distfiles/ || true
 	else	# copy and use our local pkgsrc repository as it is
 		synctree -f $PKGSRC $JAILPKGSRC >/dev/null
 	fi
