@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/gama-g3
+bin/gama-local
+bin/gama-local-xml2sql
+bin/gama-local-xml2txt
+info/gama.info
