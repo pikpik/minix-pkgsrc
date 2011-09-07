@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/03/18 17:25:20 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/22 13:42:15 obache Exp $
 #
 
 DISTNAME=	gmime-2.4.23
@@ -24,8 +24,6 @@ CONFIGURE_ARGS+=	--enable-gtk-doc=no
 CONFIGURE_ARGS+=	--disable-mono
 PKGCONFIG_OVERRIDE+=	gmime-2.4.pc.in
 TEST_TARGET=		check
-
-.include "options.mk"
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
