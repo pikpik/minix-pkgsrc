@@ -1,11 +1,16 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2010/05/23 21:16:17 jym Exp $
+@comment $NetBSD$
 lib/php/awl/dba/awl-tables.sql
 lib/php/awl/dba/grant-minimum-permissions.sh
 lib/php/awl/dba/grant-on-all-tables.sh
 lib/php/awl/dba/schema-management.sql
 lib/php/awl/inc/AWLUtilities.php
+lib/php/awl/inc/AWLUtilities.php.in
 lib/php/awl/inc/AuthPlugin.php
 lib/php/awl/inc/AuthPlugins.php
+lib/php/awl/inc/AwlDBDialect.php
+lib/php/awl/inc/AwlDatabase.php
+lib/php/awl/inc/AwlQuery.php
+lib/php/awl/inc/AwlUpgrader.php
 lib/php/awl/inc/DataEntry.php
 lib/php/awl/inc/DataUpdate.php
 lib/php/awl/inc/EMail.php
@@ -22,7 +27,3 @@ lib/php/awl/inc/classEditor.php
 lib/php/awl/inc/iCalendar.php
 lib/php/awl/inc/vComponent.php
 lib/php/awl/inc/vEvent.php
-lib/php/awl/inc/AwlDBDialect.php
-lib/php/awl/inc/AwlDatabase.php
-lib/php/awl/inc/AwlQuery.php
-lib/php/awl/inc/AwlUpgrader.php
