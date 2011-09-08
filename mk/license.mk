@@ -1,4 +1,4 @@
-# $NetBSD: license.mk,v 1.42 2011/05/08 10:53:22 ryoon Exp $
+# $NetBSD: license.mk,v 1.43 2011/06/24 12:00:37 taca Exp $
 #
 # This file handles everything about the LICENSE variable. It is
 # included automatically by bsd.pkg.mk.
@@ -151,7 +151,7 @@ _ACCEPTABLE_LICENSE!=	\
     if test `${PKG_ADMIN} -V` -lt 20090528; then \
 	echo outdated; \
     else \
-	${SETENV} PKGSRC_ACCEPTABLE_LICENSES=${ACCEPTABLE_LICENSES:Q} \
+	${PKGSRC_SETENV} PKGSRC_ACCEPTABLE_LICENSES=${ACCEPTABLE_LICENSES:Q} \
 	PKGSRC_DEFAULT_ACCEPTABLE_LICENSES=${DEFAULT_ACCEPTABLE_LICENSES:Q} \
 	${PKG_ADMIN} check-license ${LICENSE:Q} || echo failure; \
     fi

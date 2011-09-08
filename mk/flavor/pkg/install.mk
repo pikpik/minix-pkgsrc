@@ -1,4 +1,4 @@
-# $NetBSD: install.mk,v 1.13 2008/11/29 13:54:45 rillig Exp $
+# $NetBSD: install.mk,v 1.14 2009/04/24 14:02:41 joerg Exp $
 #
 # _flavor-check-conflicts:
 #	Checks for conflicts between the package and installed packages.
@@ -53,7 +53,7 @@ _flavor-check-installed: .PHONY error-check
 	${ECHO} "      re-linking dependencies, risking various problems."
 
 _REGISTER_DEPENDENCIES=							\
-	${SETENV} PKG_DBDIR=${_PKG_DBDIR:Q}				\
+	${PKGSRC_SETENV} PKG_DBDIR=${_PKG_DBDIR:Q}				\
 		AWK=${TOOLS_AWK:Q}					\
 	${SH} ${PKGSRCDIR}/mk/flavor/pkg/register-dependencies
 

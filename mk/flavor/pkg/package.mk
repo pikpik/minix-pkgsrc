@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.20 2010/02/09 23:02:13 joerg Exp $
+# $NetBSD: package.mk,v 1.21 2011/03/19 09:45:24 wiz Exp $
 
 .if defined(PKG_SUFX)
 WARNINGS+=		"PKG_SUFX is deprecated, please use PKG_COMPRESSION"
@@ -113,7 +113,7 @@ tarup: package-remove tarup-pkg package-links
 ###
 tarup-pkg:
 	${RUN} [ -x ${_PKG_TARUP_CMD} ] || exit 1;			\
-	${SETENV} PKG_DBDIR=${_PKG_DBDIR} PKG_SUFX=${PKG_SUFX}		\
+	${PKGSRC_SETENV} PKG_DBDIR=${_PKG_DBDIR} PKG_SUFX=${PKG_SUFX}	\
 		PKGREPOSITORY=${PKGREPOSITORY}				\
 		${_PKG_TARUP_CMD} -f ${FILEBASE} ${PKGNAME}
 
