@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/01/18 22:26:28 jym Exp $
+# $NetBSD: Makefile,v 1.6 2011/07/03 11:08:29 jym Exp $
 #
 
 DISTNAME=	davical-${DAVICAL_VERSION}
-DAVICAL_VERSION=0.9.9.3
+DAVICAL_VERSION=0.9.9.4
 CATEGORIES=	www
 MASTER_SITES=	http://debian.mcmillan.net.nz/packages/davical/
 
@@ -65,6 +65,7 @@ REPLACE_INTERPRETER+=	php
 REPLACE.php.old=	.*/bin/php
 REPLACE.php.new=	${PREFIX}/bin/php
 REPLACE_FILES.php=	scripts/sync-remote-caldav.php
+REPLACE_FILES.php+=	scripts/refresh-alarms.php
 
 SUBST_CLASSES+=		conf-path
 SUBST_STAGE.conf-path=	pre-configure
