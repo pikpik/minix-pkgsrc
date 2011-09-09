@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2010/11/08 17:10:55 abs Exp $
+# $NetBSD: Makefile,v 1.33 2011/04/15 08:34:01 obache Exp $
 #
 
-DISTNAME=	vsftpd-2.3.2
+DISTNAME=	vsftpd-2.3.4
 CATEGORIES=	net
-MASTER_SITES=	ftp://vsftpd.beasts.org/users/cevans/
+MASTER_SITES=	http://security.appspot.com/downloads/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://vsftpd.beasts.org/
@@ -15,6 +15,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_SYSCONFSUBDIR=	vsftpd
 
 USE_FEATURES+=		inet6
+
+# http link redirects to https
+FETCH_USING=	curl
 
 BUILD_TARGET=	vsftpd
 RCD_SCRIPTS=	vsftpd
