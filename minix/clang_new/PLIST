@@ -156,6 +156,7 @@ lib/libkleeRuntest.so
 lib/libkleeRuntimeIntrinsic.a
 lib/libkleeRuntimeIntrinsic.bca
 lib/libkleeSupport.a
+lib/libprofile_rt.a
 lib/libstp_AST.a
 lib/libstp_bitvec.a
 lib/libstp_c_interface.a

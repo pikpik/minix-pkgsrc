@@ -38,7 +38,16 @@ $NetBSD$
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -4222,23 +4227,14 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -4212,6 +4217,8 @@ void minix::Link::ConstructJob(Compilation &C, const J
+ 
+   AddLinkerInputs(getToolChain(), Inputs, Args, CmdArgs);
+ 
++  addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
++
+   if (!Args.hasArg(options::OPT_nostdlib) &&
+       !Args.hasArg(options::OPT_nodefaultlibs)) {
+     if (D.CCCIsCXX) {
+@@ -4222,23 +4229,12 @@ void minix::Link::ConstructJob(Compilation &C, const J
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
      CmdArgs.push_back("-lc");
@@ -57,8 +66,8 @@ $NetBSD$
 -                                              "/usr/gnu/lib/libend.a")));
 -  }
 -
-   addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
- 
+-  addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
+-
    const char *Exec =
 -    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu/bin/gld"));
 +    Args.MakeArgString(getToolChain().GetProgramPath("/usr/pkg/bin/ld"));

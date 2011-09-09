@@ -21,6 +21,7 @@ SHA1 (patch-klee_tools_gen-random-bout_gen-random-bout.cpp) = 8663327ffb0c5cdf97
 SHA1 (patch-klee_tools_klee_Makefile) = 44f901a7db0a61ff7f432f0db99907de2bf8219b
 SHA1 (patch-klee_tools_klee_main.cpp) = 9542a05462eef10867bdb732fc8a720eab087489
 SHA1 (patch-lib_Support_Unix_Unix.h) = de0035d853cdb55328a952697d1be21be024ca53
+SHA1 (patch-runtime_Makefile) = 3afd4c523e7ffcec8b9afcce237677286fffb39b
 SHA1 (patch-tools_clang_lib_Driver_ToolChains.cpp) = c265ba01e767ebecb5178e95f0f006e7207c2f3e
 SHA1 (patch-tools_clang_lib_Driver_ToolChains.h) = 1bef1a0150bd1273987f69cc13fb8b4179ec8233
 SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 681c87e8be9de1c6d028917fc065dfafc6502d02
