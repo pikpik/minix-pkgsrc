@@ -5,7 +5,7 @@
     { (exit 1); exit 1; }; }
  	;;
 +minix*)
-+	FUSE_MODULE_LIBS="-Wl,-wrap,main -lrefuse -lpuffs -lsys -lminlib"
++	FUSE_MODULE_LIBS="-Wl,-wrap,main -lrefuse -lpuffs -lminixfs -lsys -lminlib"
 +	;;
  *)
  	{ { echo "$as_me:$LINENO: error: ntfs-3g can be built only under Linux, FreeBSD, Mac OS X, and NetBSD." >&5
