@@ -1,4 +1,4 @@
-# $NetBSD: NetBSD.mk,v 1.32 2009/07/26 05:32:43 agc Exp $
+# $NetBSD: NetBSD.mk,v 1.33 2010/07/08 04:57:36 dholland Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -40,6 +40,11 @@ ROOT_GROUP?=	wheel
 ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
 ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
+
+# native is only supported on NetBSD-4 and later. Need to confirm NetBSD-4.
+.if empty(MACHINE_PLATFORM:MNetBSD-[0-3].*)
+X11_TYPE?=		native
+.endif
 
 # imake installs manpages in weird places
 # these values from /usr/X11R6/lib/X11/config/NetBSD.cf

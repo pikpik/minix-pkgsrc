@@ -1,4 +1,4 @@
-# $NetBSD: UnixWare.mk,v 1.28 2009/07/26 05:32:43 agc Exp $
+# $NetBSD: UnixWare.mk,v 1.29 2010/07/08 04:57:36 dholland Exp $
 #
 # Variable definitions for the UnixWare 7 operating system.
 
@@ -26,6 +26,8 @@ ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
 ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -v `ulimit -H -v`
 USERADD?=		/usr/sbin/useradd
+
+X11_TYPE?=		native
 
 # imake installs manpages in weird places
 IMAKE_MAN_SOURCE_PATH=	share/man/man

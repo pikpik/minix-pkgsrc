@@ -1,4 +1,4 @@
-# $NetBSD: IRIX.mk,v 1.36 2010/07/08 04:57:36 dholland Exp $
+# $NetBSD: IRIX.mk,v 1.37 2011/05/07 22:16:16 cheusov Exp $
 #
 # Variable definitions for the IRIX operating system.
 
@@ -34,6 +34,8 @@ USERADD?=		${LOCALBASE}/sbin/useradd
 GROUPADD?=		${LOCALBASE}/sbin/groupadd
 _PKG_USER_HOME?=	/dev/null # to match other system accounts
 _USER_DEPENDS=		user-[0-9]*:../../sysutils/user_irix
+
+X11_TYPE?=		native
 
 # imake installs manpages in weird places
 .if !empty(OS_VERSION:M6*)

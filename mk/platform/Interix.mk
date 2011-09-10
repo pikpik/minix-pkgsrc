@@ -1,4 +1,4 @@
-# $NetBSD: Interix.mk,v 1.63 2009/12/16 19:48:09 joerg Exp $
+# $NetBSD: Interix.mk,v 1.64 2010/07/08 04:57:36 dholland Exp $
 #
 # Variable definitions for the Interix operating system.
 
@@ -104,6 +104,8 @@ TOUCH_FLAGS?=
 ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
 ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -v `ulimit -H -v`
+
+X11_TYPE?=		native
 
 # imake installs manpages in weird places
 IMAKE_MAN_SOURCE_PATH=	man/man

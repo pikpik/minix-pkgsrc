@@ -1,4 +1,4 @@
-# $NetBSD: BSDOS.mk,v 1.27 2009/07/26 05:32:43 agc Exp $
+# $NetBSD: BSDOS.mk,v 1.28 2010/07/08 04:57:36 dholland Exp $
 #
 # Variable definitions for the BSD/OS operating system.
 
@@ -33,6 +33,8 @@ ROOT_GROUP?=	wheel
 ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
 ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
+
+X11_TYPE?=		native
 
 # imake installs manpages in weird places
 # XXX: assume NetBSD defaults until somebody determines correct values
