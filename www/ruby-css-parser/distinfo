@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.3 2011/03/23 16:46:15 taca Exp $
+$NetBSD: distinfo,v 1.4 2011/06/19 03:54:24 taca Exp $
 
 SHA1 (css_parser-1.1.9.gem) = ef6c2287bb7b75dfe072164f133533aaab654133
 RMD160 (css_parser-1.1.9.gem) = da216c56508aaa623af5d6e4826251f5fc06f4b1
