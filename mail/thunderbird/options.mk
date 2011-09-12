@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.7 2011/08/19 14:39:09 tnn Exp $
+# $NetBSD: options.mk,v 1.8 2011/08/23 18:04:17 tnn Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.thunderbird
 PKG_SUPPORTED_OPTIONS=	debug mozilla-jemalloc gnome official-mozilla-branding mozilla-lightning mozilla-enigmail
@@ -38,10 +38,12 @@ CONFIGURE_ARGS+=	--disable-jemalloc
 .endif
 
 .if !empty(PKG_OPTIONS:Mdebug)
-CONFIGURE_ARGS+=	--enable-debug
+CONFIGURE_ARGS+=	--enable-debug --enable-debug-symbols
+CONFIGURE_ARGS+=	--disable-install-strip
 PLIST.debug=		yes
 .else
-CONFIGURE_ARGS+=	--disable-debug
+CONFIGURE_ARGS+=	--disable-debug --disable-debug-symbols
+CONFIGURE_ARGS+=	--enable-install-strip
 .endif
 
 .if !empty(PKG_OPTIONS:Mmozilla-jit)
