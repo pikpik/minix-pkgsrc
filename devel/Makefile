@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1489 2011/08/30 09:10:57 abs Exp $
+# $NetBSD: Makefile,v 1.1490 2011/09/01 03:41:07 jnemeth Exp $
 #
 
 COMMENT=	Development utilities
@@ -1321,6 +1321,7 @@ SUBDIR+=	ruby-loquacious
 SUBDIR+=	ruby-memcache
 SUBDIR+=	ruby-memoize
 SUBDIR+=	ruby-metaid
+SUBDIR+=	ruby-metaclass
 SUBDIR+=	ruby-mkrf
 SUBDIR+=	ruby-mocha
 SUBDIR+=	ruby-mode
