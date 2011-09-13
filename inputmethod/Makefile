@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2010/12/03 12:29:57 obache Exp $
+# $NetBSD: Makefile,v 1.50 2011/03/06 16:02:29 wiz Exp $
 #
 
 COMMENT=	Input method tools and libraries
@@ -38,10 +38,8 @@ SUBDIR+=	im-ja
 SUBDIR+=	imhangul
 SUBDIR+=	imhangul_status_applet
 SUBDIR+=	input-pad
-SUBDIR+=	ja-freewnn-dict
 SUBDIR+=	ja-freewnn-lib
 SUBDIR+=	ja-freewnn-server
-SUBDIR+=	ja-freewnn-server-bin
 SUBDIR+=	kasumi
 SUBDIR+=	kimera
 SUBDIR+=	kimera-tomoe-gtk
