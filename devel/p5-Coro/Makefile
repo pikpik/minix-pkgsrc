@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2010/12/17 02:22:36 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.5 2011/08/14 12:26:05 obache Exp $
 #
 
-DISTNAME=	Coro-5.25
+DISTNAME=	Coro-6.06
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
 CATEGORIES=	parallel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Coro/}
 
@@ -13,6 +12,8 @@ COMMENT=	Perl 5 module providing cooperative threads
 LICENSE=	${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+REPLACE_PERL=	Coro/jit-amd64-unix.pl Coro/jit-x86-unix.pl
 
 USE_LANGUAGES=	c
 PERL5_PACKLIST=	auto/Coro/.packlist
