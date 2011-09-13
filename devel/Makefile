@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1490 2011/09/01 03:41:07 jnemeth Exp $
+# $NetBSD: Makefile,v 1.1491 2011/09/12 11:47:41 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -1355,6 +1355,7 @@ SUBDIR+=	ruby-rspec1
 SUBDIR+=	ruby-setup
 SUBDIR+=	ruby-sexp-processor
 SUBDIR+=	ruby-simple_uuid
+SUBDIR+=	ruby-spruz
 SUBDIR+=	ruby-stream
 SUBDIR+=	ruby-subexec
 SUBDIR+=	ruby-subversion
