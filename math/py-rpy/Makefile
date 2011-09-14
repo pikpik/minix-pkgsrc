@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/07/30 10:36:30 asau Exp $
+# $NetBSD: Makefile,v 1.28 2011/06/29 21:18:08 alnsn Exp $
 #
 
 DISTNAME=	rpy2-2.1.3
@@ -17,6 +17,8 @@ PYDISTUTILSPKG=		YES
 USE_LANGUAGES+=		c fortran77
 
 BUILDLINK_API_DEPENDS.R+= R>=2.11.0
+
+LDFLAGS.SunOS+=		-mimpure-text
 
 .include "../../lang/python/extension.mk"
 .include "../../math/py-numpy/buildlink3.mk"
