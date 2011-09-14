@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/08/21 16:33:41 seb Exp $
+# $NetBSD: Makefile,v 1.18 2011/08/12 18:47:30 adam Exp $
 
 DISTNAME=	ExtUtils-PkgConfig-1.12
 PKGNAME=	p5-${DISTNAME}
@@ -18,7 +18,7 @@ USE_LANGUAGES=		# empty
 USE_TOOLS+=		pkg-config:run
 PERL5_PACKLIST=		auto/ExtUtils/PkgConfig/.packlist
 
-TOOLS_CMD.pkg-config=	${PREFIX}/bin/pkg-config
+TOOLS_CMD.pkg-config=	${TOOLS_PATH.pkg-config}
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
