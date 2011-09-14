@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2011/02/11 21:13:47 tnn Exp $
+# $NetBSD: Makefile,v 1.37 2011/04/23 21:17:28 jmmv Exp $
 #
 
 DISTNAME=	libevent-2.0.10-stable
@@ -20,6 +20,7 @@ TEST_TARGET=	verify
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 LIBS.SunOS+=	-lnsl -lresolv
+CPPFLAGS.SunOS+=	-D__EXTENSIONS__
 
 PKGCONFIG_OVERRIDE+=	libevent_openssl.pc.in
 PKGCONFIG_OVERRIDE+=	libevent_pthreads.pc.in
