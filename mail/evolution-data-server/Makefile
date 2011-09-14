@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2011/06/10 09:39:43 obache Exp $
+# $NetBSD: Makefile,v 1.112 2011/09/09 13:44:24 wiz Exp $
 
 DISTNAME=	evolution-data-server-2.32.3
 PKGREVISION=	1
@@ -44,6 +44,8 @@ CPPFLAGS+=	-DBIND_8_COMPAT
 .if !empty(PKGSRC_COMPILER:Msunpro)
 CFLAGS.SunOS+=	-D__FUNCTION__=__func__
 .endif
+
+CFLAGS.SunOS+=	-D__EXTENSIONS__
 
 CONFIGURE_ARGS+=	--with-openldap
 CONFIGURE_ARGS+=	--with-libdb=${BDBBASE}
