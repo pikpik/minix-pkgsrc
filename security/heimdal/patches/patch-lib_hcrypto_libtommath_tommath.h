@@ -592,9 +592,9 @@ $NetBSD$
 +#endif
 +
 +
-+/* $Source: /archive/NetBSD-CVS/pkgsrc/security/heimdal/patches/patch-lib_hcrypto_libtommath_tommath.h,v $ */
-+/* $Revision: 1.1 $ */
-+/* $Date: 2011/09/14 17:33:00 $ */
++/* $Source: /cvs/libtom/libtommath/tommath.h,v $ */
++/* $Revision: 1.8 $ */
++/* $Date: 2006/03/31 14:18:44 $ */
 --- /dev/null	1 Jan 1970 00:00:00 -0000
 +++ lib/hcrypto/libtommath/tommath_class.h	29 Oct 2010 01:14:54 -0000
 @@ -0,0 +1,1000 @@
@@ -1595,9 +1595,9 @@ $NetBSD$
 +#define LTM_LAST
 +#endif
 +
-+/* $Source: /archive/NetBSD-CVS/pkgsrc/security/heimdal/patches/patch-lib_hcrypto_libtommath_tommath.h,v $ */
-+/* $Revision: 1.1 $ */
-+/* $Date: 2011/09/14 17:33:00 $ */
++/* $Source: /cvs/libtom/libtommath/tommath_class.h,v $ */
++/* $Revision: 1.3 $ */
++/* $Date: 2005/07/28 11:59:32 $ */
 --- /dev/null	1 Jan 1970 00:00:00 -0000
 +++ lib/hcrypto/libtommath/tommath_superclass.h	29 Oct 2010 01:14:54 -0000
 @@ -0,0 +1,76 @@
@@ -1674,6 +1674,6 @@ $NetBSD$
 +
 +#endif
 +
-+/* $Source: /archive/NetBSD-CVS/pkgsrc/security/heimdal/patches/patch-lib_hcrypto_libtommath_tommath.h,v $ */
-+/* $Revision: 1.1 $ */
-+/* $Date: 2011/09/14 17:33:00 $ */
++/* $Source: /cvs/libtom/libtommath/tommath_superclass.h,v $ */
++/* $Revision: 1.3 $ */
++/* $Date: 2005/05/14 13:29:17 $ */
