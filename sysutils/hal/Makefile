@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2011/04/22 13:42:40 obache Exp $
+# $NetBSD: Makefile,v 1.56 2011/05/07 10:07:12 shattered Exp $
 
 DISTNAME=		hal-0.5.14
 PKGREVISION=		3
@@ -104,7 +104,7 @@ post-extract:
 	${CP} -r ${FILESDIR}/tools-netbsd ${WRKSRC}/tools/netbsd
 
 pre-configure:
-	cd ${WRKSRC} && autoreconf -vi
+	cd ${WRKSRC} && autoreconf -vi ${AUTORECONF_ARGS}
 
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/glib2/buildlink3.mk"
