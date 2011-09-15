@@ -1,4 +1,4 @@
-# $NetBSD: developer.mk,v 1.17 2009/08/21 23:34:42 wiz Exp $
+# $NetBSD: developer.mk,v 1.18 2009/08/23 18:09:45 joerg Exp $
 #
 # Public targets for developers:
 #
@@ -51,7 +51,7 @@
 #
 # commit-changes-entry:
 # cce:
-#	Like changes-entry, plus the CHANGES file is committed.
+#	Like changes-entry, plus the CHANGES and TODO files are committed.
 #
 # Keywords: commit update add rename changes
 #
