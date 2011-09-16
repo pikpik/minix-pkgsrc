@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/04/23 10:35:28 tron Exp $
+# $NetBSD: Makefile,v 1.5 2011/06/13 11:31:13 obache Exp $
 
 .include "dist.mk"
 
@@ -32,6 +32,13 @@ PTHREAD_OPTS+=	require
 .include "../../mk/pthread.buildlink3.mk"
 .if ${PTHREAD_TYPE} == "pth"
 CONFIGURE_ARGS+=	--with-pth
+.endif
+
+.include "../../mk/compiler.mk"
+
+# Clang needs -fwrapv
+.if !empty(PKGSRC_COMPILER:Mclang)
+CFLAGS+=	-fwrapv
 .endif
 
 .include "../../mk/bsd.prefs.mk"
