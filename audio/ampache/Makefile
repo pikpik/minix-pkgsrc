@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/01/04 20:46:06 abs Exp $
+# $NetBSD: Makefile,v 1.4 2010/03/16 16:02:20 taca Exp $
 #
 
 DISTNAME=	ampache-3.5.3
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://ampache.org/downloads/
 
