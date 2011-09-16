@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2009/07/07 19:10:37 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2010/09/10 10:56:06 taca Exp $
 
 DISTNAME=	instiki-0.9.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	http://rubyforge.org/frs/download.php/2515/
 EXTRACT_SUFX=	.tgz
