@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/08/21 04:57:36 minskim Exp $
 
 DISTNAME=	posix-spawn-0.3.6
 CATEGORIES=	textproc
@@ -8,6 +8,8 @@ HOMEPAGE=	https://github.com/github/albino
 COMMENT=	Ruby wrapper for the Pygments syntax highlighter
 
 LICENSE=	mit
+
+NOT_FOR_PLATFORM=	NetBSD-*-*
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"
