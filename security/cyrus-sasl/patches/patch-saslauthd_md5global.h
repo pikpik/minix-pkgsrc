@@ -1,7 +1,9 @@
 $NetBSD$
 
---- md5global.h.orig	Fri Mar 28 14:59:24 2003
-+++ md5global.h
+* use standard types for certain bits types.
+
+--- saslauthd/md5global.h.orig	2003-03-28 19:59:24.000000000 +0000
++++ saslauthd/md5global.h
 @@ -3,6 +3,13 @@
  #ifndef MD5GLOBAL_H
  #define MD5GLOBAL_H

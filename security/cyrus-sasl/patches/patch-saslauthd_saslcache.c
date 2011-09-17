@@ -1,7 +1,9 @@
 $NetBSD$
 
---- saslcache.c.orig	2003-03-29 04:59:24.000000000 +0900
-+++ saslcache.c
+* fixes build with gcc-4.
+
+--- saslauthd/saslcache.c.orig	2003-03-28 19:59:24.000000000 +0000
++++ saslauthd/saslcache.c
 @@ -137,7 +137,7 @@ int main(int argc, char **argv) {
  	}
  
