@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.415 2011/08/16 22:30:41 wiz Exp $
+# $NetBSD: Makefile,v 1.416 2011/09/04 04:41:01 hiramatsu Exp $
 #
 
 COMMENT=	Security tools
@@ -43,6 +43,7 @@ SUBDIR+=	cy2-ntlm
 SUBDIR+=	cy2-otp
 SUBDIR+=	cy2-plain
 SUBDIR+=	cy2-saml
+SUBDIR+=	cy2-scram
 SUBDIR+=	cy2-sql
 SUBDIR+=	cyrus-sasl
 SUBDIR+=	cyrus-saslauthd
