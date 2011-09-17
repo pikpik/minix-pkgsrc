@@ -1,0 +1,24 @@
+case $arg in
+/*/lib*.dylib)
+	dir="${arg%/lib*.dylib}"
+	lib="${arg#$dir/lib}"
+	case $lib in
+	*/*)		argok=yes; argmatch=yes ;;
+	*.dylib)	lib="${lib%.dylib}" ;;
+	esac
+	case $argmatch in
+	yes)	;;
+	*)	prepend_queue argbuf "-l$lib"
+		$debug_log $wrapperlog "    (arg-pp-darwin-gcc) pre:  -l$lib"
+		prepend_queue argbuf "-L$dir"
+		$debug_log $wrapperlog "    (arg-pp-darwin-gcc) pre:  -L$dir"
+		argmatch=yes
+		;;
+	esac
+	;;
+-dylib_file|-dylib_install_name|-install_name|-seg_addr_table_filename)
+	skipargs=1
+	argok=yes
+	argmatch=yes
+	;;
+esac

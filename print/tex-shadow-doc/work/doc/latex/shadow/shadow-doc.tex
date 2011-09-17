@@ -1,0 +1,71 @@
+\documentclass[pagesize=auto, fontsize=12pt, DIV=10, parskip=half]{scrartcl}
+
+\usepackage{fixltx2e}
+\usepackage{etex}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\newcommand*{\mail}[1]{\href{mailto:#1}{\texttt{#1}}}
+\newcommand*{\pkg}[1]{\textsf{#1}}
+\newcommand*{\cs}[1]{\texttt{\textbackslash#1}}
+\makeatletter
+\newcommand*{\cmd}[1]{\cs{\expandafter\@gobble\string#1}}
+\makeatother
+\newcommand*{\meta}[1]{\textlangle\textsl{#1}\textrangle}
+\newcommand*{\marg}[1]{\texttt{\{}\meta{#1}\texttt{\}}}
+
+\addtokomafont{title}{\rmfamily}
+
+\title{The \pkg{shadow} package\thanks{This manual corresponds to \pkg{shadow.sty}~v1.3, dated~19 February 2003.}}
+\author{Mauro Orlandini\thanks{\mail{orlandini@bo.iasf.cnr.it}}}
+\date{19 February 2003}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  \noindent
+  The command \cmd{\shabox} has the same meaning of the
+  \LaTeX\ command \cmd{\fbox} except for the fact that a
+  ``shadow'' is added to the bottom and the right side
+  of the box. It computes the right dimension of the
+  box, even if the text spans over more than one
+  line; in this case a warning messagge is given.
+\end{abstract}
+
+There are three parameters governing:
+%
+\begin{enumerate}
+\item the width of the lines delimiting the box:
+  \cmd{\sboxrule}
+\item the separation between the edge of the box and
+  its contents: \cmd{\sboxsep}
+\item the dimension of the shadow: \cmd{\sdim}
+\end{enumerate}
+
+
+\minisec{Sintax:}
+
+\cmd{\shabox}\marg{text}\\
+where \meta{text} is the text to be put in the
+framed box. It can be an entire paragraph.
+
+Adapted from the file \texttt{dropshadow.tex} by
+\mail{drstrip@cd.sandia.gov}.
+%
+\begin{labeling}{V1.1}
+\item[V1.1] Works in a double column environment.
+\item[V1.2] When there is an online shadow box, it
+  will be centered on the line (in V1.1 the
+  box was aligned with the baseline).
+  (Courtesy by Mike Piff)''
+\item[V1.3] Added a number of missing \verb|%| signs\\
+  no other cleanup done (FMi)
+\end{labeling}
+
+\end{document}
