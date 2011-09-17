@@ -1,5 +1,0 @@
---- /Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.prefix.pre	2011-09-17 15:42:01.000000000 -0700
-+++ /Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.prefix.post	2011-09-17 15:42:01.000000000 -0700
-@@ -0,0 +1,2 @@
-+/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.destdir/usr/pkg/share/texmf-dist/doc/latex/shadow/shadow-doc.pdf
-+/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.destdir/usr/pkg/share/texmf-dist/doc/latex/shadow/shadow-doc.tex

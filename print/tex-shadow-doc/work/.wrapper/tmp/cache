@@ -1,6 +1,0 @@
-cache_lookup() {
-case $arg in
--v) arg=-v; split_arg=no; cachehit=yes ;;
-*) cachehit=no ;;
-esac
-}

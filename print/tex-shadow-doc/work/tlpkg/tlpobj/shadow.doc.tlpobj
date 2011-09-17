@@ -1,8 +1,0 @@
-name shadow.doc
-category Package
-revision 20312
-shortdesc doc files of shadow
-relocated 1
-docfiles size=56
- RELOC/doc/latex/shadow/shadow-doc.pdf
- RELOC/doc/latex/shadow/shadow-doc.tex

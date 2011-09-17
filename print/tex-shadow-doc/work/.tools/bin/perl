@@ -1,5 +1,0 @@
-#!/bin/sh
-wrapperlog="${TOOLS_WRAPPER_LOG-/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.work.log}"
-echo "[*] "/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.tools/bin/perl" $@" >> $wrapperlog
-echo "<.> echo >> /Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.warning/perl "Please add USE_TOOLS+=perl to the package Makefile.";  /bin/sh /Volumes/Development/msk/NetBSD/pkgsrc-cvs/mk/scripts/fail echo 1>&2 "ERROR:" "To use this tool, add USE_TOOLS+=perl to the package Makefile."" >> $wrapperlog
-echo >> /Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.warning/perl "Please add USE_TOOLS+=perl to the package Makefile.";  /bin/sh /Volumes/Development/msk/NetBSD/pkgsrc-cvs/mk/scripts/fail echo 1>&2 "ERROR:" "To use this tool, add USE_TOOLS+=perl to the package Makefile."
