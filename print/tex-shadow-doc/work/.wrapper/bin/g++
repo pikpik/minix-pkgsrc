@@ -1,0 +1,85 @@
+#! /bin/ksh
+empty_file=""
+arg_pp="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/arg-pp-darwin-gcc"
+arg_pp_main="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/arg-pp-main"
+arg_source="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/arg-source"
+buildcmd="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/buildcmd"
+cache="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/cache"
+cache_body="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/cache-body"
+cleanup="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/empty"
+cmd_sink="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/cmd-sink"
+logic="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/logic"
+reorderlibs="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/reorderlibs"
+shell_lib="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/shell-lib"
+scan="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/scan"
+transform="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/transform-gcc"
+transform_sed=" -f /Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/transform.sed"
+wrapper_subr_sh="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.wrapper/tmp/wrapper-subr.sh"
+wrapper_abi="64"		# see ABI in mk/defaults/mk.conf
+wrapper_type="CXX"	# one of AS, CC, CXX, FC, IMAKE, LD, LIBTOOL.
+wrapperlog="${WRAPPER_LOG-/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.work.log}"
+skip_transform="${WRAPPER_SKIP_TRANSFORM-no}"
+debug="${WRAPPER_DEBUG-no}"
+cat="/bin/cat"
+echo="echo"
+expr="/bin/expr"
+mv="/bin/mv"
+sed="/usr/bin/sed"
+test="test"
+Xsed="$sed -e 1s/^X//"
+. $shell_lib
+. "$wrapper_subr_sh"
+updatecache=${WRAPPER_UPDATE_CACHE-yes}
+reorder=${WRAPPER_REORDER-no}
+case $debug in
+yes)	debug_log="msg_log" ;;
+*)	debug_log=":" ;;
+esac
+qcmd="$0"; for arg in ${1+"$@"}; do shquote "$arg"; qcmd="$qcmd $shquoted"; done
+msg_log "$wrapperlog" "[*] $0 $qcmd"
+cmd="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.compiler/bin/c++-fail-wrapper"
+case "$*" in
+--wrappee-name) $echo $cmd ; exit ;;
+esac
+libs=""
+rellpath=""
+do_transform=yes
+init_queue argbuf
+init_queue cmdbuf
+append_extra_args=yes
+. $scan
+case $append_extra_args in
+yes)
+	$debug_log $wrapperlog "    (wrapper.sh) append args: -m64 -I/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.buildlink/include -L/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.buildlink/lib"
+	set -- "$@" -m64 -I/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.buildlink/include -L/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.buildlink/lib
+	;;
+*)
+	;;
+esac
+. $arg_source
+. $logic
+. $cmd_sink
+case $reorder in
+yes)
+	if $test -n "$libs"; then
+		. $reorderlibs
+	fi
+	;;
+esac
+cmd="$cmd $libs"
+PATH="/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.buildlink/bin:/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.tools/bin:/usr/pkg/bin:/Users/msk/bin:/usr/pkg/bin:/usr/pkg/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"; export PATH
+msg_log $wrapperlog "<.>" "$cmd"
+if [ "${empty_file}" = "${cleanup}" ] && [ "$debug" != "yes" ]; then
+	eval "exec $cmd"
+	wrapper_results=$?
+else
+	wrapper_result=0
+	eval "$cmd" || wrapper_result="$?"
+fi
+. $cleanup
+[ $wrapper_result -eq 0 ] || [ "$debug" != "yes" ] || {
+	echo ""
+	echo "[wrapper.sh] note: The real command line, after the pkgsrc wrapper, was:"
+	echo "$cmd"
+} 1>&2
+exit ${wrapper_result}

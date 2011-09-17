@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.work.log}"
+echo "[*] "/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.tools/bin/intltool-extract" $@" >> $wrapperlog
+echo "<.> exit 1" >> $wrapperlog
+exit 1

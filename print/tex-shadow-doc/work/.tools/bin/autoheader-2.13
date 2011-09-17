@@ -1,0 +1,5 @@
+#!/bin/sh
+wrapperlog="${TOOLS_WRAPPER_LOG-/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.work.log}"
+echo "[*] "/Volumes/Development/msk/NetBSD/pkgsrc-cvs/print/tex-shadow-doc/work/.tools/bin/autoheader-2.13" $@" >> $wrapperlog
+echo "<.> /Volumes/Development/msk/NetBSD/pkgsrc-cvs/mk/gnu-config/missing autoheader" >> $wrapperlog
+/Volumes/Development/msk/NetBSD/pkgsrc-cvs/mk/gnu-config/missing autoheader
