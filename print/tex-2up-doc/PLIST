@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/2up/2up-doc.pdf
+share/texmf-dist/doc/generic/2up/2up-doc.tex
+share/texmf-dist/doc/generic/2up/Changes
+share/texmf-dist/doc/generic/2up/Makefile
+share/texmf-dist/doc/generic/2up/README
