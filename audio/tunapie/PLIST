@@ -1,18 +1,12 @@
-@comment $NetBSD: PLIST,v 1.2 2008/05/01 16:27:47 xtraeme Exp $
+@comment $NetBSD$
 bin/tunapie
 man/man1/tunapie.1
-share/tunapie/fave.png
-share/tunapie/find.png
-share/tunapie/info.png
-share/tunapie/play.png
-share/tunapie/radio.png
-share/tunapie/rec.png
-share/tunapie/remfave.png
-share/tunapie/stop.png
-share/tunapie/tplogo.xpm
-share/tunapie/tv.png
+share/applications/tunapie.desktop
+share/pixmaps/tplogo.xpm
 share/tunapie/AboutTuner.py
 share/tunapie/AboutTuner.pyc
+share/tunapie/AddStream.py
+share/tunapie/AddStream.pyc
 share/tunapie/RecordQueue.py
 share/tunapie/RecordQueue.pyc
 share/tunapie/RecordTime.py
@@ -25,7 +19,16 @@ share/tunapie/TunerInfoDialog.py
 share/tunapie/TunerInfoDialog.pyc
 share/tunapie/TunerPrefs.py
 share/tunapie/TunerPrefs.pyc
+share/tunapie/fave.png
+share/tunapie/find.png
+share/tunapie/info.png
+share/tunapie/play.png
+share/tunapie/radio.png
+share/tunapie/rec.png
+share/tunapie/remfave.png
+share/tunapie/stop.png
 share/tunapie/tunapie2_main.py
 share/tunapie/tunapie2_main.pyc
 share/tunapie/tuner.py
 share/tunapie/tuner.pyc
+share/tunapie/tv.png
