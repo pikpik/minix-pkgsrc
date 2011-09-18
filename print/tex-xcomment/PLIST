@@ -1,0 +1,3 @@
+@comment $NetBSD$
+share/texmf-dist/tex/generic/xcomment/xcomment.sty
+share/texmf-dist/tex/generic/xcomment/xcomment.tex
