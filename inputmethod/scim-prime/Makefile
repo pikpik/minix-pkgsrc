@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/01/13 13:38:31 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2011/04/22 13:43:57 obache Exp $
 #
 
 DISTNAME=		scim-prime-1.0.1
@@ -12,6 +12,8 @@ COMMENT=		SCIM IMEngine module for PRIME
 LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+RUBY_VERSION_SUPPORTED= 18
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
