@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.173 2011/05/18 11:00:53 drochner Exp $
+# $NetBSD: Makefile,v 1.174 2011/06/10 09:39:45 obache Exp $
 
 DISTNAME=		evolution-2.32.3
 PKGREVISION=		1
@@ -51,6 +51,12 @@ GCONF_SCHEMAS+=	evolution-mail.schemas
 
 BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
 BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "NetBSD" && !empty(OS_VERSION:M4.*)
+BUILDLINK_TRANSFORM+=	rm:-Wl,--no-undefined
+.endif
 
 .if !exists(/usr/include/semaphore.h)
 LDFLAGS+=	-lsemaphore
