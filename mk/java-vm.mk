@@ -1,4 +1,4 @@
-# $NetBSD: java-vm.mk,v 1.78 2011/04/15 14:49:40 abs Exp $
+# $NetBSD: java-vm.mk,v 1.79 2011/07/24 11:45:42 obache Exp $
 #
 # This Makefile fragment handles Java dependencies and make variables,
 # and is meant to be included by packages that require Java either at
@@ -122,6 +122,7 @@ _ONLY_FOR_PLATFORMS.kaffe= \
 _ONLY_FOR_PLATFORMS.sun-jdk6= \
 	Darwin-9.*-* \
 	Darwin-10.*-* \
+	Darwin-11.*-* \
 	DragonFly-*-i386 \
 	FreeBSD-6.*-i386 \
 	Linux-*-i[3-6]86 \
