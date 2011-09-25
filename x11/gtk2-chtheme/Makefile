@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/01/13 13:39:46 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2011/04/22 13:45:03 obache Exp $
 #
 
 DISTNAME=		gtk-chtheme-0.3.1
@@ -16,6 +16,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl pkg-config
 REPLACE_PERL=		replace
+
+BUILDLINK_TRANSFORM+=	rm:-DGTK_DISABLE_DEPRECATED
 
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
