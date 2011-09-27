@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: pgsql.sh,v 1.1.1.1 2010/09/21 07:52:57 adam Exp $
+# $NetBSD: pgsql.sh,v 1.2 2010/12/19 09:53:29 adam Exp $
 #
 # PostgreSQL database rc.d control script
 #
@@ -26,9 +26,9 @@ name="pgsql"
 rcvar=${name}
 command="@PREFIX@/bin/pg_ctl"
 procname="@PREFIX@/bin/postgres"
-pgsql_user="@PGUSER@"
-pgsql_group="@PGGROUP@"
-pgsql_home="@PGHOME@"
+: ${pgsql_user:=@PGUSER@}
+: ${pgsql_group:=@PGGROUP@}
+: ${pgsql_home:=@PGHOME@}
 
 extra_commands="initdb reload"
 initdb_cmd="pgsql_initdb"
