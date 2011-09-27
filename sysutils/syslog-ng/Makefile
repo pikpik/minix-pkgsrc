@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2009/12/09 11:12:21 obache Exp $
+# $NetBSD: Makefile,v 1.10 2011/09/21 19:33:09 bouyer Exp $
 
 VERS=		3.2.4
 DISTNAME=	syslog-ng_${VERS}
 PKGNAME=	syslog-ng-${VERS}
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.balabit.com/downloads/files/syslog-ng/open-source-edition/${VERS}/source/
 WRKSRC=		${WRKDIR}/${PKGNAME}
@@ -21,6 +22,8 @@ RCD_SCRIPTS=		syslogng
 PKG_SYSCONFSUBDIR=	syslog-ng
 
 CONFIGURE_ARGS+=	--enable-tcp-wrapper
+CONFIGURE_ARGS+=	--localstatedir=${VARBASE}/db/syslog-ng
+CONFIGURE_ARGS+=	--with-pidfile=${VARBASE}/run
 
 EGDIR=			${PREFIX}/share/examples/syslog-ng
 DOCDIR=			${PREFIX}/share/doc/syslog-ng
