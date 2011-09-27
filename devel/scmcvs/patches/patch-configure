@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- configure.orig	2008-05-07 20:12:30.000000000 +0000
++++ configure
+@@ -8098,6 +8098,7 @@ for ac_func in \
+ 	ftime \
+ 	geteuid \
+ 	getgroups \
++	getline \
+ 	getopt \
+ 	getpagesize \
+ 	getpid \
