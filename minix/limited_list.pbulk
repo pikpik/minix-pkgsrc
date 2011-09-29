@@ -138,6 +138,7 @@ minix/compiler-rt_new
 minix/x11
 misc/ascii
 misc/cowsay
+misc/dialog
 misc/figlet
 misc/figlet-fonts
 net/fetch
