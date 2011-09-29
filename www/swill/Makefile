@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2009/07/16 22:11:41 obache Exp $
+# $NetBSD: Makefile,v 1.10 2009/07/17 12:35:12 zafer Exp $
 
 DISTNAME=		swill-0.3
+PKGREVISION=		1
 CATEGORIES=		www devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=swill/}
 EXTRACT_SUFX=		.tgz
