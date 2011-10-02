@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/12/06 22:42:25 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/29 19:37:48 joerg Exp $
 #
 
 DISTNAME=		gate-2.06
@@ -16,5 +16,11 @@ BUILD_TARGET=		# empty
 
 INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} \
 			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
+
+SUBST_CLASSES+=		getline
+SUBST_STAGE.getline=	pre-configure
+SUBST_MESSAGE.getline=	Fixing conflict with POSIX getline.
+SUBST_FILES.getline=	gate.h line.c main.c spel.c subs.c
+SUBST_SED.getline=	-e 's/getline/get_line/'
 
 .include	"../../mk/bsd.pkg.mk"
