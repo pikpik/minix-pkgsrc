@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1492 2011/09/12 13:32:35 taca Exp $
+# $NetBSD: Makefile,v 1.1493 2011/09/15 09:15:43 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -456,7 +456,6 @@ SUBDIR+=	netbeans-ide
 SUBDIR+=	netbsd-iscsi-lib
 SUBDIR+=	netcdf
 SUBDIR+=	newfile
-SUBDIR+=	newt
 SUBDIR+=	noweb
 SUBDIR+=	nqc
 SUBDIR+=	nsis

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.83 2011/05/18 02:23:22 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.84 2011/08/28 06:46:56 dsainty Exp $
 #
 
 COMMENT=	Communication utilities
@@ -64,7 +64,6 @@ SUBDIR+=	ruby-termios
 SUBDIR+=	scmxx
 SUBDIR+=	snooper
 SUBDIR+=	spandsp
-SUBDIR+=	synce-dccm
 SUBDIR+=	synce-librapi2
 SUBDIR+=	synce-libsynce
 SUBDIR+=	synce-rra
