@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2011/08/28 06:46:56 dsainty Exp $
+# $NetBSD: Makefile,v 1.85 2011/10/02 14:11:51 wiz Exp $
 #
 
 COMMENT=	Communication utilities
@@ -72,6 +72,5 @@ SUBDIR+=	tkhylafax
 SUBDIR+=	tn3270
 SUBDIR+=	xisp
 SUBDIR+=	xtel
-SUBDIR+=	zaptel-netbsd
 
 .include "../mk/misc/category.mk"
