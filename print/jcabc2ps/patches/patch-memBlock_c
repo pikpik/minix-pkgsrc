@@ -1,0 +1,16 @@
+$NetBSD$
+
+Use standard headers.
+Declare functions before calling them.
+
+--- memBlock.c~	2003-04-19 15:31:57.000000000 +0000
++++ memBlock.c
+@@ -1,4 +1,8 @@
++#include <string.h>
++#include <stdlib.h>
++
+ #include "jcabc2ps.h"
++#include "memBlock.h"
+ 
+ int mempad = 0;		// Pad chars to add to mallocs
+ 

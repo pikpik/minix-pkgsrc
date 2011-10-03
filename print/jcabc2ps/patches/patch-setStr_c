@@ -1,0 +1,11 @@
+$NetBSD$
+
+Declare functions before calling them.
+
+--- setStr.c~	2003-04-19 15:21:53.000000000 +0000
++++ setStr.c
+@@ -1,3 +1,4 @@
++#include "memBlock.h"
+ 
+ /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * This is a limited substitute for the more general MakStr*() functions in the *
