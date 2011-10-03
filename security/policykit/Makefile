@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/11/18 12:09:54 obache Exp $
+# $NetBSD: Makefile,v 1.18 2011/04/22 13:42:39 obache Exp $
 #
 
 POLICYKIT_VER=		0.9
@@ -52,6 +52,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE:Q}
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 CONFIGURE_ARGS+=	--with-polkit-user=${POLICYKIT_USER}
 CONFIGURE_ARGS+=	--with-polkit-group=${POLICYKIT_GROUP}
+CONFIGURE_ARGS+=	--disable-selinux
 
 OWN_DIRS_PERMS+=	${VARBASE}/lib/PolicyKit \
 				${REAL_ROOT_USER} ${POLICYKIT_GROUP} 0770
