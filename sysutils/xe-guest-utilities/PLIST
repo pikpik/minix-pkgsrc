@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/xe-daemon
+sbin/xe-update-guest-attrs
+share/examples/rc.d/xenguest
