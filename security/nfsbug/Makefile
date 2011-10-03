@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/02/22 19:27:08 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2010/01/27 21:37:03 joerg Exp $
 
 DISTNAME=	nfsshell-1.0
 PKGREVISION=	1
@@ -15,6 +15,10 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 EXTRACT_ONLY=	nfsBugFerret.tgz
 WRKSRC=		${WRKDIR}/nfsbug
 
+SUBST_CLASSES+=		getline
+SUBST_STAGE.getline=	pre-configure
+SUBST_FILES.getline=	nfsshell.c
+SUBST_SED.getline+=	-e 's|getline|nfsbug_getline|g'
 
 INSTALLATION_DIRS=	bin
 
