@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2011/06/10 09:39:53 obache Exp $
+# $NetBSD: Makefile,v 1.43 2011/08/18 18:31:34 tnn Exp $
 
 .include "../../devel/xulrunner/dist.mk"
 PKGNAME=		nss-${NSS_RELEASE}${MOZ_BRANCH_MINOR}
@@ -13,6 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}js/src/configure
+CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}configure
 
 USE_TOOLS+=		gmake perl pax pkg-config
 
