@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.527 2011/09/21 19:30:18 bouyer Exp $
+# $NetBSD: Makefile,v 1.528 2011/10/03 11:02:48 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -463,10 +463,12 @@ SUBDIR+=	xc3028l-firmware
 SUBDIR+=	xc5k-firmware
 SUBDIR+=	xcdroast
 SUBDIR+=	xdu
+SUBDIR+=	xe-guest-utilities
 SUBDIR+=	xenkernel20
 SUBDIR+=	xenkernel3
 SUBDIR+=	xenkernel33
 SUBDIR+=	xenkernel41
+SUBDIR+=	xenstoretools
 SUBDIR+=	xentools20
 SUBDIR+=	xentools3
 SUBDIR+=	xentools3-hvm
