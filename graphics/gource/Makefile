@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/08/06 22:03:53 ryoon Exp $
 #
 
-DISTNAME=	gource-0.35
+DISTNAME=	gource-0.37
 CATEGORIES=	graphics
 MASTER_SITES=	http://gource.googlecode.com/files/
 
