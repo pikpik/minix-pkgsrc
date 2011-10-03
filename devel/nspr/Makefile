@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2011/08/18 18:31:34 tnn Exp $
+# $NetBSD: Makefile,v 1.41 2011/10/03 12:46:07 tnn Exp $
 #
 
 .include "../../devel/xulrunner/dist.mk"
-PKGNAME=	nspr-${NSPR_RELEASE}${MOZ_BRANCH_MINOR}
+PKGNAME=	nspr-${NSPR_RELEASE}.3${MOZ_BRANCH_MINOR}
 NSPR_RELEASE=	4.8.9
 CATEGORIES=	devel
 
