@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2011,v 1.2370 2011/10/03 17:03:01 sborrill Exp $
+$NetBSD: CHANGES-2011,v 1.2382 2011/10/04 12:06:23 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2011:
 
@@ -3807,6 +3807,20 @@ Changes to the packages collection and infrastructure in 2011:
 	Updated sysutils/coreutils to 8.13 [jmmv 2011-10-03]
 	Updated misc/gnuls to 8.13 [jmmv 2011-10-03]
 	Updated textproc/markdown-mode to 1.8.1 [minskim 2011-10-03]
-	Added sysutils/xenstoretools 4.1.1 [sborrill 2011-10-03]
-	Added sysutils/xe-guest-utilities 6.0.0 [sborrill 2011-10-03]
+	Added sysutils/xenstoretools version 4.1.1 [sborrill 2011-10-03]
+	Added sysutils/xe-guest-utilities version 6.0.0 [sborrill 2011-10-03]
 	Added archivers/ruby-xz version 0.0.1 [minskim 2011-10-03]
+	Updated devel/cvsd to 1.0.22 [schnoebe 2011-10-03]
+	Updated textproc/p5-XML-LibXML to 1.88 [hiramatsu 2011-10-04]
+	Updated textproc/p5-Text-CSV_XS to 0.85 [hiramatsu 2011-10-04]
+	Updated textproc/groonga to 1.2.6 [obache 2011-10-04]
+	Added sysutils/php-fileinfo version 1.0.4 [manu 2011-10-04]
+	Added www/php-phrasea2 version 3.1.4 [manu 2011-10-04]
+	Added www/phraseanet-indexer version 3.1.4 [manu 2011-10-04]
+	Added www/phraseanet version 3.1.4 [manu 2011-10-04]
+	Updated net/zeromq to 2.1.10 [obache 2011-10-04]
+	Updated misc/zyGrib to 5.0.6 [plunky 2011-10-04]
+	Updated graphics/pngcrush to 1.7.17 [adam 2011-10-04]
+	Updated www/ruby-http_parser.rb to 0.5.3 [obache 2011-10-04]
+	Renamed databases/datapkg to databases/py-datapkg [wiz 2011-01-04]
+	Updated textproc/p5-Text-CSV to 1.21 [hiramatsu 2011-10-04]
