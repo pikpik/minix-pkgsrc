@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/04 08:03:43 manu Exp $
+# $NetBSD: Makefile,v 1.2 2011/10/07 03:56:19 dholland Exp $
 #
 
 .include "../../www/phraseanet/Makefile.common"
@@ -7,6 +7,9 @@ PKGNAME=        phraseanet-${VERS}
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
+
+# php-fileinfo doesn't accept php53
+PHP_VERSIONS_ACCEPTED=52
 
 DEPENDS+=	${PHP_PKG_PREFIX}-phrasea2-[0-9]*:../../www/php-phrasea2
 DEPENDS+=	${PHP_PKG_PREFIX}-apc-[0-9]*:../../www/php-apc
