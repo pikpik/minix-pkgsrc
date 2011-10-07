@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/03 16:57:03 sborrill Exp $
 #
 
 # Values from XenServer 6.0 = 6, 0, 0, 50560
@@ -19,7 +19,7 @@ HOMEPAGE=	http://www.xenserver.com/
 COMMENT=	NetBSD VM tools for Citrix XenServer
 LICENSE=	gnu-gpl-v2
 
-DEPENDS+=	xenstoretools:../../sysutils/xenstoretools
+DEPENDS+=	xenstoretools-[0-9]*:../../sysutils/xenstoretools
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
