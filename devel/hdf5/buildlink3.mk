@@ -1,12 +1,12 @@
-# $NetBSD: buildlink3.mk,v 1.11 2007/05/30 08:54:29 rillig Exp $
+# $NetBSD$
 
 BUILDLINK_TREE+=	hdf5
 
 .if !defined(HDF5_BUILDLINK3_MK)
 HDF5_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.hdf5+=	hdf5>=1.6.2
-BUILDLINK_ABI_DEPENDS.hdf5+=	hdf5>=1.6.5nb1
+BUILDLINK_API_DEPENDS.hdf5+=	hdf5>=1.8.7
+BUILDLINK_ABI_DEPENDS.hdf5+=	hdf5>=1.8.7
 BUILDLINK_PKGSRCDIR.hdf5?=	../../devel/hdf5
 
 pkgbase := hdf5
