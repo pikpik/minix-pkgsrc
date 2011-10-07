@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: vsftpd.sh,v 1.1 2003/05/09 23:31:39 salo Exp $
+# $NetBSD: vsftpd.sh,v 1.2 2004/11/11 13:51:31 xtraeme Exp $
 #
 
 # PROVIDE: vsftpd

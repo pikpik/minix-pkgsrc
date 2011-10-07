@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: xenbackendd.sh,v 1.1.1.1 2007/06/14 19:39:45 bouyer Exp $
+# $NetBSD: xenbackendd.sh,v 1.1.1.1 2008/08/07 20:26:58 cegger Exp $
 #
 
 # PROVIDE: xenbackendd

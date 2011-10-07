@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: pflogger.sh,v 1.2 2008/07/21 12:22:15 shannonjr Exp $
 #
 
 # PROVIDE: preludepflogger

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: kdm.sh,v 1.3 2004/05/31 12:21:06 markd Exp $
+# $NetBSD: moss.sh,v 1.1.1.1 2004/08/10 06:48:21 minskim Exp $
 #
 
 # PROVIDE: moss

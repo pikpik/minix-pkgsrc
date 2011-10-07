@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: preludelml.sh,v 1.3 2006/01/31 18:25:43 shannonjr Exp $
+# $NetBSD: preludelml.sh,v 1.4 2006/05/26 11:25:22 shannonjr Exp $
 #
 
 # PROVIDE: preludelml

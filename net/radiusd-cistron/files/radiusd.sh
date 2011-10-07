@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: radiusd.sh,v 1.1 2003/05/01 18:35:47 jmmv Exp $
 #
 
 # PROVIDE: radiusd

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: innd.sh,v 1.16 2008/12/21 16:00:04 spz Exp $
+# $NetBSD: innd.sh,v 1.17 2009/03/15 15:00:51 spz Exp $
 #
 # PROVIDE: inn
 # REQUIRE: DAEMON

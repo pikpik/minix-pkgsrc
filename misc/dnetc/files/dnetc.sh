@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: dnetc.sh,v 1.1 2003/04/09 16:16:06 jmmv Exp $
 #
 
 # PROVIDE: dnetc

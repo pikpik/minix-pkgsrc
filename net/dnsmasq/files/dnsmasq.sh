@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: dnsmasq.sh$
+# $NetBSD: dnsmasq.sh,v 1.1.1.1 2005/10/18 04:41:59 minskim Exp $
 #
 
 # PROVIDE: dnsmasq

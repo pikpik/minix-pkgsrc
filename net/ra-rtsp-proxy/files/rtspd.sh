@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: nmbd.sh,v 1.1 2001/02/04 15:29:58 tron Exp $
+# $NetBSD: rtspd.sh,v 1.3 2001/02/04 16:55:47 tron Exp $
 #
 # PROVIDE: rtspd
 # REQUIRE: DAEMON
