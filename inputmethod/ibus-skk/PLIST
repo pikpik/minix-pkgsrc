@@ -20,6 +20,9 @@ share/ibus-skk/engine/nicola.pyo
 share/ibus-skk/engine/skk.py
 share/ibus-skk/engine/skk.pyc
 share/ibus-skk/engine/skk.pyo
+share/ibus-skk/engine/virtkbd.py
+share/ibus-skk/engine/virtkbd.pyc
+share/ibus-skk/engine/virtkbd.pyo
 share/ibus-skk/icons/ibus-skk.svg
 share/ibus-skk/setup/config.py
 share/ibus-skk/setup/config.pyc
