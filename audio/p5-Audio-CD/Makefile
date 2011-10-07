@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/08/21 16:32:43 seb Exp $
+# $NetBSD: Makefile,v 1.16 2011/08/06 12:31:10 adam Exp $
 
 DISTNAME=	Audio-CD-0.05
 PKGNAME=	p5-${DISTNAME}
@@ -10,6 +10,7 @@ MASTER_SITES=	http://www.vanhemert.co.uk/files/
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://www.vanhemert.co.uk/disc-cover.html
 COMMENT=	Audio-CD perl module for use with disc-cover
+LICENSE=	artistic
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
