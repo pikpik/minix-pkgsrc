@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/11/05 13:25:12 obache Exp $
+# $NetBSD: Makefile,v 1.5 2010/03/29 04:56:48 obache Exp $
 #
 
 DISTNAME=	mimetex
-PKGNAME=	${DISTNAME}-1.71
+PKGNAME=	${DISTNAME}-1.72
 CATEGORIES=	www math graphics
 MASTER_SITES=	http://www.forkosh.com/
 DIST_SUBDIR=	${PKGNAME_NOREV}
