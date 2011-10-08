@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/07/21 18:27:12 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2011/10/05 21:41:25 ryoon Exp $
 #
 
-DISTNAME=	rtmpdump-2.3
-PKGREVISION=	1
+DISTNAME=	rtmpdump-2.4
 CATEGORIES=	net multimedia
 MASTER_SITES=	http://rtmpdump.mplayerhq.hu/download/
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ryo_on@yk.rim.or.jp
 HOMEPAGE=	http://rtmpdump.mplayerhq.hu/
@@ -20,6 +18,7 @@ USE_TOOLS+=	pkg-config
 USE_LIBTOOL=	yes
 BUILD_DIRS=	. librtmp
 
+WRKSRC=		${WRKDIR}/rtmpdump
 PKGCONFIG_OVERRIDE+=	librtmp/librtmp.pc.in
 
 SUBST_CLASSES+=			fix-paths
