@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/04/08 16:31:56 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2010/02/19 21:37:47 joerg Exp $
 #
 
 DISTNAME=	xsokoban-3.3c
@@ -6,7 +6,7 @@ PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.cs.cornell.edu/andru/release/
 
-MAINTAINER=	cheusov@tut.by
+MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://www.cs.cornell.edu/andru/release/
 COMMENT=	Classic logical game
 

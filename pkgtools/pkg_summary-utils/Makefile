@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2011/09/04 18:21:27 cheusov Exp $
+# $NetBSD: Makefile,v 1.6 2011/09/12 14:35:54 cheusov Exp $
 
 DISTNAME=	pkg_summary-utils-0.56.1
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/psu/ \
 		http://www.mova.org/~cheusov/pub/pkg_summary-utils/
 
-MAINTAINER=	cheusov@tut.by
+MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://www.mova.org/~cheusov/pub/pkg_summary-utils/
 COMMENT=	Utilities for manipulating pkg_summary(5) files
 LICENSE=	2-clause-bsd

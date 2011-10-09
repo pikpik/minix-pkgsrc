@@ -1,9 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/28 09:48:07 cheusov Exp $
 
 PKGNAME=	libuxre-${HEIRLOOM_VER}
 CATEGORIES=	devel
 
-MAINTAINER=	cheusov@tut.by
+MAINTAINER=	cheusov@NetBSD.org
 COMMENT=	POSIX compatible regular expression library
 
 LICENSE=	gnu-lgpl-v2

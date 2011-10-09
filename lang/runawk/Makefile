@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/05/02 12:52:43 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/09/04 18:21:26 cheusov Exp $
 #
 
 DISTNAME=	runawk-1.3.1
@@ -7,7 +7,7 @@ CATEGORIES=	lang devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=runawk/} \
 		http://mova.org/~cheusov/pub/runawk/
 
-MAINTAINER=	cheusov@tut.by
+MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/runawk
 COMMENT=	AWK wrapper that provides support for modules
 
