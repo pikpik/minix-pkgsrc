@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1494 2011/10/02 14:11:51 wiz Exp $
+# $NetBSD: Makefile,v 1.1495 2011/10/02 14:32:31 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -258,6 +258,7 @@ SUBDIR+=	guile16-gtk
 SUBDIR+=	haskell-mode
 SUBDIR+=	hdf
 SUBDIR+=	hdf5
+SUBDIR+=	hdf5-c++
 SUBDIR+=	heirloom-getopt
 SUBDIR+=	heirloom-libcommon
 SUBDIR+=	heirloom-what
