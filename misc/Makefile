@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.361 2011/06/12 09:08:12 ryoon Exp $
+# $NetBSD: Makefile,v 1.362 2011/10/02 14:11:52 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -30,6 +30,7 @@ SUBDIR+=	cksfv
 SUBDIR+=	colorize
 SUBDIR+=	colorls
 SUBDIR+=	colortail
+SUBDIR+=	color-theme
 SUBDIR+=	cowsay
 SUBDIR+=	cstream
 SUBDIR+=	cuecat
