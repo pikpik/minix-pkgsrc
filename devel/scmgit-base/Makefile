@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/08/17 02:55:21 obache Exp $
+# $NetBSD: Makefile,v 1.35 2011/08/30 09:34:42 adam Exp $
 
 .include "../../devel/scmgit/Makefile.common"
 
@@ -39,7 +39,6 @@ GIT_TEMPLATEDIR=	templates
 
 GIT_TEMPLATES=		description info/exclude
 GIT_TEMPLATES+=		hooks/applypatch-msg.sample hooks/commit-msg.sample
-GIT_TEMPLATES+=		hooks/post-commit.sample hooks/post-receive.sample
 GIT_TEMPLATES+=		hooks/post-update.sample hooks/pre-applypatch.sample
 GIT_TEMPLATES+=		hooks/pre-commit.sample hooks/pre-rebase.sample
 GIT_TEMPLATES+=		hooks/prepare-commit-msg.sample hooks/update.sample
