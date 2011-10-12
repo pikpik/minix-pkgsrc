@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.72 2011/08/19 15:07:26 tnn Exp $
+# $NetBSD: Makefile,v 1.73 2011/09/04 21:28:35 tnn Exp $
 #
 
 DISTNAME=	thunderbird-${TB_VER}.source
 PKGNAME=	thunderbird-${TB_VER}
+PKGREVISION=	1
 TB_VER=		6.0.1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_MOZILLA:=thunderbird/releases/${TB_VER}/source/}
@@ -31,7 +32,7 @@ SUBST_MESSAGE.ext-compat=	Fixing extension compatibility
 SUBST_FILES.ext-compat=		mailnews/extensions/enigmail/package/install.rdf
 SUBST_FILES.ext-compat+=	calendar/*/install.rdf
 SUBST_FILES.ext-compat+=	calendar/*/*/install.rdf
-SUBST_SED.ext-compat=		-e 's,\(<em:maxVersion>\)5.*<,\16.0<,g'
+SUBST_SED.ext-compat=		-e 's,\(<em:maxVersion>\)5.*<,\19.0<,g'
 
 pre-configure:
 	cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} autoconf
