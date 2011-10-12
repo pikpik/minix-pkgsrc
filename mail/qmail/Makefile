@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2011/06/07 02:53:42 schmonz Exp $
+# $NetBSD: Makefile,v 1.61 2011/09/28 06:36:57 joerg Exp $
 #
 
 DISTNAME=		${PKGNAME_NOREV}
@@ -121,9 +121,11 @@ DARWINSUFX=		# empty
 
 post-extract:
 	${CP} ${FILESDIR}/README.pkgsrc ${WRKSRC}
+.if ${OPSYS} == "Darwin"
 .	for i in INSTALL SENDMAIL
 	  mv ${WRKSRC}/${i} ${WRKSRC}/${i}${DARWINSUFX}
 .	endfor
+.endif
 
 pre-install:
 .	if ${USE_DESTDIR} != "no"
