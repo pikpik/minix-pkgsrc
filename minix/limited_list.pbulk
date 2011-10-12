@@ -132,6 +132,7 @@ math/mpcomplex
 math/mpfr
 math/units
 minix/clang
+minix/netdrv_tg3
 minix/clang_new
 minix/compiler-rt
 minix/compiler-rt_new
