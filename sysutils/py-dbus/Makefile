@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/01/04 09:55:49 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/22 13:42:19 obache Exp $
 #
 
 DISTNAME=	dbus-python-0.83.1
@@ -21,6 +21,11 @@ USE_TOOLS+=	pkg-config gmake
 GNU_CONFIGURE=	yes
 
 PY_PATCHPLIST=			YES
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "SunOS"
+BUILDLINK_TRANSFORM+=	rm:-std=c9x
+.endif
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../lang/python/extension.mk"
