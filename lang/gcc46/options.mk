@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2009/10/24 20:16:02 tnn Exp $
+# $NetBSD: options.mk,v 1.1.1.1 2011/05/15 00:09:56 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gcc46
 PKG_SUPPORTED_OPTIONS=	nls
@@ -13,7 +13,9 @@ PKG_SUGGESTED_OPTIONS+=	nls
 ### Native Language Support
 ###
 .if !empty(PKG_OPTIONS:Mnls)
+USE_TOOLS+=		msgfmt
 CONFIGURE_ARGS+=	--enable-nls
+CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.libiconv}
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .else
