@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.388 2011/02/01 09:08:01 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/05 06:53:27 agc Exp $
 #
 
-DISTNAME=	mkmemstick-20090801
+DISTNAME=	mkmemstick-20111013
 CATEGORIES=	sysutils
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -25,7 +25,7 @@ do-configure:
 do-build:
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/mkmemstick ${DESTDIR}${PREFIX}/bin/mkmemstick
+	${INSTALL_SCRIPT} ${WRKSRC}/mkmemstick ${DESTDIR}${PREFIX}/sbin/mkmemstick
 
 
 .include "../../mk/bsd.pkg.mk"

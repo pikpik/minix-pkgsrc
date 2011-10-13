@@ -7,6 +7,7 @@ lib/php/awl/inc/AWLUtilities.php
 lib/php/awl/inc/AWLUtilities.php.in
 lib/php/awl/inc/AuthPlugin.php
 lib/php/awl/inc/AuthPlugins.php
+lib/php/awl/inc/AwlCache.php
 lib/php/awl/inc/AwlDBDialect.php
 lib/php/awl/inc/AwlDatabase.php
 lib/php/awl/inc/AwlQuery.php
@@ -25,5 +26,5 @@ lib/php/awl/inc/XMLElement.php
 lib/php/awl/inc/classBrowser.php
 lib/php/awl/inc/classEditor.php
 lib/php/awl/inc/iCalendar.php
+lib/php/awl/inc/vCalendar.php
 lib/php/awl/inc/vComponent.php
-lib/php/awl/inc/vEvent.php
