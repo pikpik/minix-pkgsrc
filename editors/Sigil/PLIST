@@ -1,2 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/08/06 06:23:23 wiz Exp $
+@comment $NetBSD$
 bin/sigil
+share/applications/sigil.desktop
+share/pixmaps/sigil.png
