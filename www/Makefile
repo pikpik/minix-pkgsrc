@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.820 2011/10/02 14:32:32 wiz Exp $
+# $NetBSD: Makefile,v 1.821 2011/10/03 14:23:36 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -520,8 +520,11 @@ SUBDIR+=	pear-HTTP_Request
 SUBDIR+=	php-apc
 SUBDIR+=	php-curl
 SUBDIR+=	php-eaccelerator
+SUBDIR+=	php-phrasea2
 SUBDIR+=	php-tidy
 SUBDIR+=	php-uploadprogress
+SUBDIR+=	phraseanet
+SUBDIR+=	phraseanet-indexer
 #SUBDIR+=	plone		# only contains Makefile fragments
 SUBDIR+=	plone25
 SUBDIR+=	plone3
