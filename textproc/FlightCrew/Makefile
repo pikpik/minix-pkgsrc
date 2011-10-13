@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/07/29 19:32:18 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2011/08/20 21:33:27 wiz Exp $
 #
 
-DISTNAME=	FlightCrew-0.7.1-Code
+DISTNAME=	FlightCrew-0.7.2-Code
 PKGNAME=	${DISTNAME:S/-Code//}
 CATEGORIES=	textproc
 MASTER_SITES=	http://flightcrew.googlecode.com/files/
@@ -13,6 +13,8 @@ COMMENT=	EPUB validator
 LICENSE=	gnu-lgpl-v3 AND cc-by-sa-v3.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+WRKSRC=		${WRKDIR}
 
 USE_LANGUAGES=	c c++
 USE_CMAKE=	yes
