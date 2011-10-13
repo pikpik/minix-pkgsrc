@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/04/28 09:57:05 adam Exp $
+# $NetBSD: Makefile,v 1.3 2011/10/03 10:14:19 adam Exp $
 
 DISTNAME=	CherryPy-3.2.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:tl}
@@ -16,6 +16,8 @@ USE_LANGUAGES=		# none
 EGG_NAME=		${DISTNAME}
 
 REPLACE_PYTHON=		cherrypy/cherryd
+
+PYTHON_VERSIONS_INCOMPATIBLE=	24
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/egg.mk"
