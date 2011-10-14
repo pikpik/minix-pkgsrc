@@ -2,7 +2,7 @@ $NetBSD$
 
 Add DragonFly support.
 
---- src/ZipArchive/DirEnumerator.cpp.orig	2011-10-14 14:56:42 +0000
+--- src/ZipArchive/DirEnumerator.cpp.orig	2011-10-14 18:30:31 +0000
 +++ src/ZipArchive/DirEnumerator.cpp
 @@ -73,7 +73,7 @@ bool CDirEnumerator::Start(CFileFilter& 
  				if (!entry)
