@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/06/10 21:57:07 obache Exp $
+# $NetBSD: Makefile,v 1.9 2011/09/12 15:51:02 taca Exp $
 
 DISTNAME=	thrift-${THRIFT_VERSION}
 PKGNAME=	libthrift-${THRIFT_VERSION}
@@ -12,6 +12,8 @@ COMMENT=	Cross-language data serialization library
 LICENSE=	apache-2.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=		no
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
