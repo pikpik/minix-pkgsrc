@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/02/25 09:16:06 imil Exp $
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/pytemplate.py
 ${PYSITELIB}/pytemplate.pyc
 ${PYSITELIB}/pytemplate.pyo
-share/examples/pytemplate/daemonexample.py
-share/examples/pytemplate/example.py
-share/examples/pytemplate/threadexample.py
+share/examples/${PYPKGPREFIX}-pytemplate/daemonexample.py
+share/examples/${PYPKGPREFIX}-pytemplate/example.py
+share/examples/${PYPKGPREFIX}-pytemplate/threadexample.py
