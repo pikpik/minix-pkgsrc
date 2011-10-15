@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2009/03/05 18:51:33 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2011/10/15 11:01:59 obache Exp $
 
 PYRSS2GENVER=	1.0.0
 DISTNAME=	PyRSS2Gen-${PYRSS2GENVER}
 PKGNAME=	${PYPKGPREFIX}-rss2gen-${PYRSS2GENVER}
+PKGREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://www.dalkescientific.com/Python/
 
