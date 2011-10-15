@@ -1,8 +1,8 @@
-# $NetBSD: flavor-vars.mk,v 1.15 2010/02/19 14:27:36 joerg Exp $
+# $NetBSD: pkgformat-vars.mk,v 1.16 2010/09/14 22:29:07 gdt Exp $
 #
 # This Makefile fragment is included indirectly by bsd.prefs.mk and
 # defines some variables which must be defined earlier than where
-# flavor.mk is included.
+# pkgformat.mk is included.
 #
 
 PKGSRC_MESSAGE_RECIPIENTS?=	# empty

@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.315 2011/09/08 20:17:15 abs Exp $
+# $NetBSD: bsd.prefs.mk,v 1.316 2011/09/10 16:30:02 abs Exp $
 #
 # This file includes the mk.conf file, which contains the user settings.
 #
@@ -701,8 +701,8 @@ PREPEND_PATH+=		${LOCALBASE}/bin
 # System features framework
 .include "features/features-vars.mk"
 
-# Package system flavor definitions
-.include "flavor/bsd.flavor-vars.mk"
+# Package system format definitions
+.include "pkgformat/bsd.pkgformat-vars.mk"
 
 # Make variable definitions cache
 .include "bsd.makevars.mk"

@@ -1,10 +1,10 @@
-# $NetBSD: replace.mk,v 1.32 2011/06/04 10:05:00 obache Exp $
+# $NetBSD: replace.mk,v 1.31 2010/09/14 22:30:42 gdt Exp $
 #
 
-# _flavor-replace:
+# _pkgformat-replace:
 #	Updates a package in-place on the system (USE_DESTDIR=no).
 #
-# _flavor-destdir-replace:
+# _pkgformat-destdir-replace:
 #	Updates a package in-place on the system (USE_DESTDIR=yes).
 #
 # See also:
@@ -15,7 +15,7 @@
 # currently isn't, and the check-files target for other packages
 # can be confused when a +REQUIRED_BY files suddenly disappears.
 #
-_flavor-replace: \
+_pkgformat-replace: \
 	replace-names \
 	replace-tarup \
 	replace-preserve-installed-info \
@@ -27,19 +27,19 @@ _flavor-replace: \
 	replace-fixup-installed-info \
 	.PHONY
 
-_flavor-destdir-replace: \
+_pkgformat-destdir-replace: \
 	replace-names \
 	replace-tarup \
 	replace-destdir \
 	.PHONY
 
-# _flavor-undo-replace:
-#	Undoes the actions from a previous _flavor-replace.
+# _pkgformat-undo-replace:
+#	Undoes the actions from a previous _pkgformat-replace.
 #
 # See also:
 #	undo-replace
 #
-_flavor-undo-replace: \
+_pkgformat-undo-replace: \
 	undo-replace-check \
 	replace-preserve-installed-info \
 	replace-preserve-required-by \
@@ -49,7 +49,7 @@ _flavor-undo-replace: \
 	replace-clean \
 	.PHONY
 
-_flavor-destdir-undo-replace: \
+_pkgformat-destdir-undo-replace: \
 	undo-replace-check \
 	undo-destdir-replace-install \
 	replace-clean \
