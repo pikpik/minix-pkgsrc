@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/01/29 16:19:03 drochner Exp $
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/unittest.py
 ${PYSITELIB}/unittest.pyc
 ${PYSITELIB}/unittest.pyo
