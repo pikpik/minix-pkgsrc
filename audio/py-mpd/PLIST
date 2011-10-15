@@ -2,3 +2,4 @@
 ${PYSITELIB}/mpd.py
 ${PYSITELIB}/mpd.pyc
 ${PYSITELIB}/mpd.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
