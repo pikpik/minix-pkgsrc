@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2002/01/29 16:20:47 drochner Exp $
+@comment $NetBSD$
+${PYSITELIB}/PyUnit-${PKGVERSION}-py2.6.egg-info
 ${PYSITELIB}/unittestgui.py
 ${PYSITELIB}/unittestgui.pyc
 ${PYSITELIB}/unittestgui.pyo
