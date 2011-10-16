@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2007/01/03 15:02:51 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.scapy
 
@@ -10,7 +10,7 @@ PKG_SUPPORTED_OPTIONS=	scapy-crypto gnuplot scapy-pyx
 ### Add in crypto support for WEP operations
 ###
 .if !empty(PKG_OPTIONS:Mscapy-crypto)
-.	include "../../security/py-amkCrypto/buildlink3.mk"
+DEPENDS+=	${PYPKGPREFIX}-amkCrypto-[0-9]*:../../security/py-amkCrypto
 .endif
 
 ###
