@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1499 2011/10/13 18:44:24 jmmv Exp $
+# $NetBSD: Makefile,v 1.1500 2011/10/15 17:40:34 hiramatsu Exp $
 #
 
 COMMENT=	Development utilities
@@ -23,6 +23,7 @@ SUBDIR+=	SDL_Pango
 SUBDIR+=	SDL_gfx
 SUBDIR+=	SDL_ttf
 SUBDIR+=	SDLmm
+SUBDIR+=	SOPE
 SUBDIR+=	ZenTest
 SUBDIR+=	accerciser
 SUBDIR+=	acme
@@ -352,6 +353,7 @@ SUBDIR+=	libmaa
 SUBDIR+=	libmatchbox
 SUBDIR+=	libmcs
 SUBDIR+=	libmemcache
+SUBDIR+=	libmemcached
 SUBDIR+=	libmemmgr
 SUBDIR+=	libmimedir
 SUBDIR+=	libmm

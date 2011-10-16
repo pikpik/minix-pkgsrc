@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.821 2011/10/03 14:23:36 obache Exp $
+# $NetBSD: Makefile,v 1.822 2011/10/13 07:37:51 jnemeth Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
 
+SUBDIR+=	SOGo
 SUBDIR+=	SpeedyCGI
 SUBDIR+=	adzap
 SUBDIR+=	album
