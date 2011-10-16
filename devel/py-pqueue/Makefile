@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/03/04 21:29:28 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2009/02/11 19:19:00 joerg Exp $
 #
 
 DISTNAME=		PQueue-0.2
@@ -11,6 +11,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.csse.monash.edu.au/hons/projects/1999/Andrew.Snare/
 COMMENT=		Priority-queues using fibonacci heaps
+LICENSE=		gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
