@@ -1,14 +1,16 @@
-PROG=	tg3
-SRCS=	tg3.c
+PROG=	tg
+SRCS=	tg.c
 MAN=
 
 LDADD+=	-lnetdriver -lsys -ltimers -lminlib
 
+BINDIR=$(PREFIX)/minixservices
 CONFDIR=$(PREFIX)/etc/system.d 
 
 install:
-	cp $(PROG) $(PREFIX)/sbin/
 	mkdir -p $(CONFDIR)
+	mkdir -p $(BINDIR)
+	cp $(PROG) $(BINDIR)/
 	cp tg.conf $(CONFDIR)/
 
 .include <bsd.prog.mk>

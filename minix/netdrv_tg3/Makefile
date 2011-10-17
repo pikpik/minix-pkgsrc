@@ -1,4 +1,4 @@
-DISTNAME=		netdrv_tg3
+DISTNAME=		netdrv-tg3
 CATEGORIES=		minix
 MASTER_SITES=		# empty
 DISTFILES=		# empty
