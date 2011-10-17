@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/13 07:20:48 hiramatsu Exp $
 
 DISTNAME=		Module-Runtime-0.010
 PKGNAME=		p5-${DISTNAME}
@@ -10,7 +10,7 @@ HOMEPAGE=		http://search.cpan.org/dist/Module-Runtime/
 COMMENT=		Deal with runtime handling of Perl modules
 LICENSE=		${PERL5_LICENSE}
 
-DEPENDS+=		p5-Params-Classify:../../devel/p5-Params-Classify
+DEPENDS+=		p5-Params-Classify-[0-9]*:../../devel/p5-Params-Classify
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
