@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/09/05 17:32:40 asau Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/17 16:14:58 dholland Exp $
 #
 
 DISTNAME=	aamath-0.3
@@ -16,6 +16,8 @@ INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 WRKSRC=		${WRKDIR}/aamath
 USE_LANGUAGES=	c++
 MAKE_JOBS_SAFE=	no
+
+USE_TOOLS=	yacc lex
 
 BUILD_TARGET=	aamath
 

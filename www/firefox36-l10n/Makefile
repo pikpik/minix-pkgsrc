@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/04/27 10:32:24 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2011/09/12 09:46:18 obache Exp $
 #
 
-FIREFOX_VER=	3.6.17
-PKGNAME=	firefox-l10n-${FIREFOX_VER}
+FIREFOX_VER=	3.6.22
+PKGNAME=	firefox36-l10n-${FIREFOX_VER}
 DISTNAME=	# empty
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_MOZILLA:=firefox/releases/${FIREFOX_VER}/linux-i686/xpi/}
@@ -27,7 +27,7 @@ FIREFOX_LOCALES=	af ar as ast be bg bn-BD bn-IN ca cs cy		\
 			sl sq sr sv-SE ta-LK ta te th tr uk		\
 			vi zh-CN zh-TW
 
-EXTENSIONS_DIR=		${PREFIX}/lib/firefox/extensions
+EXTENSIONS_DIR=		${PREFIX}/lib/firefox36/extensions
 XPI_FILES=		${FIREFOX_LOCALES:=.xpi}
 
 # remove head of 3 empty lines

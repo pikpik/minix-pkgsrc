@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/generic/xcomment/Changes
+share/texmf-dist/doc/generic/xcomment/Makefile
+share/texmf-dist/doc/generic/xcomment/README
+share/texmf-dist/doc/generic/xcomment/xcomment-doc.pdf
+share/texmf-dist/doc/generic/xcomment/xcomment-doc.tex

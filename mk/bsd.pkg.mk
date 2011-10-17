@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1976 2011/02/07 10:32:32 wiz Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1978 2011/09/08 20:17:15 abs Exp $
 #
 # This file is in the public domain.
 #
@@ -61,7 +61,7 @@ PKG_FAIL_REASON+=	"Circular dependency detected"
 
 .include "features/features.mk"
 
-.include "flavor/bsd.flavor-vars.mk"
+.include "pkgformat/bsd.pkgformat-vars.mk"
 .include "check/bsd.check-vars.mk"
 .include "depends/bsd.depends-vars.mk"
 .include "fetch/bsd.fetch-vars.mk"
@@ -150,6 +150,9 @@ ${_var_}+=	${${_var_}.*}
 .endfor
 
 CPPFLAGS+=	${CPP_PRECOMP_FLAGS}
+
+# To sanitise environment set PKGSRC_SETENV=${SETENV} -i
+PKGSRC_SETENV=	${SETENV}
 
 ALL_ENV+=	CC=${CC:Q}
 ALL_ENV+=	CFLAGS=${CFLAGS:M*:Q}
@@ -573,7 +576,7 @@ ${.CURDIR}/${WRKDIR_BASENAME}:
 	fi
 .endif
 
-.include "flavor/bsd.flavor.mk"
+.include "pkgformat/bsd.pkgformat.mk"
 
 .include "depends/bsd.depends.mk"
 .include "check/bsd.check.mk"
@@ -600,7 +603,7 @@ ${.CURDIR}/${WRKDIR_BASENAME}:
 # XXX: Shouldn't the $${PATH} be ${PATH} here? This may be related to
 # PR 34470.
 _ROOT_CMD=	cd ${.CURDIR} &&					\
-		${SETENV} ${PKGSRC_MAKE_ENV}				\
+		${PKGSRC_SETENV} ${PKGSRC_MAKE_ENV}				\
 			PATH="$${PATH}:"${SU_CMD_PATH_APPEND:Q}		\
 		${MAKE} ${MAKEFLAGS} _PKGSRC_BARRIER=yes		\
 			PKG_DEBUG_LEVEL=${PKG_DEBUG_LEVEL:Q}		\

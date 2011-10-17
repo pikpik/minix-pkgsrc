@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2010/11/13 11:21:05 obache Exp $
+# $NetBSD: Makefile,v 1.11 2011/04/23 21:46:59 adam Exp $
 
-DISTNAME=	lzo-2.05
+DISTNAME=	lzo-2.06
 CATEGORIES=	archivers
 MASTER_SITES=	http://ftp.uni-koeln.de/util/arc/ \
 		http://www.oberhumer.com/opensource/lzo/download/

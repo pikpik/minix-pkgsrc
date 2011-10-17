@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2010/08/21 16:33:04 seb Exp $
+# $NetBSD: Makefile,v 1.13 2010/09/07 05:57:23 sno Exp $
 
 DISTNAME=	Rose-DB-0.762
 PKGNAME=	p5-${DISTNAME}
-#PKGREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Rose/}
 

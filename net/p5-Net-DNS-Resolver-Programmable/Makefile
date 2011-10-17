@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/27 11:34:23 obache Exp $
 #
 
 DISTNAME=	Net-DNS-Resolver-Programmable-v0.003
 PKGNAME=	p5-${DISTNAME:S/-v/-/}
+PKGREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 

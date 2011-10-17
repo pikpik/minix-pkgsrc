@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/03/16 11:10:47 gdt Exp $
+# $NetBSD: Makefile,v 1.18 2011/05/23 21:40:03 cheusov Exp $
 #
 
 COMMENT=	Applications dealing with parallelism in computing
@@ -15,5 +15,6 @@ SUBDIR+=	paexec
 SUBDIR+=	parallel
 SUBDIR+=	pvm3
 SUBDIR+=	sge
+SUBDIR+=	threadingbuildingblocks
 
 .include "../mk/misc/category.mk"

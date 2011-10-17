@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.113 2011/07/18 17:06:42 drochner Exp $
+# $NetBSD: Makefile,v 1.118 2011/10/07 12:30:17 drochner Exp $
 #
 
 DISTNAME=		vlc-${VLC_VERSION}
-PKGREVISION=		2
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vlc/} \
 			http://download.videolan.org/pub/videolan/vlc/${VLC_VERSION}/
 EXTRACT_SUFX=		.tar.bz2
 
-VLC_VERSION=		1.1.10
+VLC_VERSION=		1.1.12
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.videolan.org/
@@ -45,8 +44,7 @@ BUILDLINK_API_DEPENDS.vcdimager+=	vcdimager>=0.7.20nb1
 CONFIGURE_ARGS+=	--disable-speex # needs unstable 1.1.x branch [1.2 in pkgsrc]
 CONFIGURE_ARGS+=	--disable-smb
 
-CONFIGURE_ARGS+=	--enable-cddax \
-			--enable-dvdread \
+CONFIGURE_ARGS+=	--enable-dvdread \
 			--enable-flac \
 			--enable-live555 \
 			--enable-theora \
@@ -124,7 +122,6 @@ CHECK_WRKREF_SKIP=	lib/libvlccore.a \
 .include "../../audio/liba52/buildlink3.mk"
 .include "../../audio/libcddb/buildlink3.mk"
 .include "../../audio/libid3tag/buildlink3.mk"
-.include "../../audio/libdca/buildlink3.mk"
 .include "../../audio/taglib/buildlink3.mk"
 .include "../../audio/libcddb/buildlink3.mk"
 .include "../../misc/libcdio/buildlink3.mk"

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2010/11/09 00:39:56 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/01/25 11:22:43 markd Exp $
 #
 
 DISTNAME=	libvdpau-0.4.1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://people.freedesktop.org/~aplattner/vdpau/
 
-MAINTAINER=	vle@gmx.net
+MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://http.download.nvidia.com/XFree86/vdpau/doxygen/html/index.html
 COMMENT=	Video Decode and Presentation API for Unix
 LICENSE=	mit

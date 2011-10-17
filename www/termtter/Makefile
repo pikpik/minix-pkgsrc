@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2010/09/10 13:21:33 taca Exp $
+# $NetBSD: Makefile,v 1.6 2010/09/10 23:54:14 obache Exp $
 
-DISTNAME=	termtter-1.9.0
+DISTNAME=	termtter-1.10.0
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://termtter.org/
+HOMEPAGE=	https://github.com/jugyo/termtter
 COMMENT=	Terminal based Twitter client
 LICENSE=	mit
 

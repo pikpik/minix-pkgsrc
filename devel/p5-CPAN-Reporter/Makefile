@@ -1,24 +1,19 @@
-# $NetBSD: Makefile,v 1.7 2010/08/21 16:33:16 seb Exp $
+# $NetBSD: Makefile,v 1.9 2011/08/10 10:51:31 adam Exp $
 
-DISTNAME=	CPAN-Reporter-1.1801
+DISTNAME=	CPAN-Reporter-1.2002
 PKGNAME=	p5-${DISTNAME}
-#PKGREVISION=	1
 CATEGORIES=	devel perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=CPAN/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/D/DA/DAGOLDEN/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://search.cpan.org/dist/${DISTNAME}/
+HOMEPAGE=	http://search.cpan.org/dist/CPAN-Reporter/
 COMMENT=	Adds CPAN Testers reporting to p5-CPAN
 LICENSE=	apache-2.0
-
-#MAKE_PARAMS+=	verbose
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
-
-PERL5_MODULE_TYPE=	Module::Build
 PERL5_PACKLIST=		auto/CPAN/Reporter/.packlist
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.p5-CPAN-Reporter
@@ -28,6 +23,7 @@ PKG_SUGGESTED_OPTIONS+=	#empty
 .include "../../mk/bsd.options.mk"
 
 DEPENDS+=	{perl>=5.10.1,p5-CPAN>=1.9301}:../../devel/p5-CPAN
+DEPENDS+=	p5-Capture-Tiny-[0-9]*:../../devel/p5-Capture-Tiny
 DEPENDS+=	p5-Config-Tiny>=2.12:../../devel/p5-Config-Tiny
 DEPENDS+=	p5-Devel-Autoflush>=0.04:../../devel/p5-Devel-Autoflush
 DEPENDS+=	p5-ExtUtils-MakeMaker>=6.36:../../devel/p5-ExtUtils-MakeMaker

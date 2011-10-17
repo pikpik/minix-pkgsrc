@@ -1,4 +1,4 @@
-# $NetBSD: rails.mk,v 1.6 2011/06/11 03:04:22 taca Exp $
+# $NetBSD: rails.mk,v 1.8 2011/08/17 14:11:18 taca Exp $
 
 .if !defined(_RUBY_RAILS_MK)
 _RUBY_RAILS_MK=	# defined
@@ -10,7 +10,7 @@ _RUBY_RAILS_MK=	# defined
 #	Select default Ruby on Rails version.
 #
 #	Possible values: 2 3
-#	Default: 2
+#	Default: 3
 #
 #
 # === Package-settable variables ===
@@ -25,8 +25,8 @@ _RUBY_RAILS_MK=	# defined
 #
 # current Ruby on Rails versions.
 #
-RUBY_RAILS2_VERSION?=	2.3.12
-RUBY_RAILS3_VERSION?=	3.0.9
+RUBY_RAILS2_VERSION?=	2.3.14
+RUBY_RAILS3_VERSION?=	3.0.10
 
 .if !empty(RUBY_RAILS)
 RUBY_RAILS_DEFAULT=		${RUBY_RAILS}
@@ -49,7 +49,7 @@ RUBY_RAILS_DEFAULT:=	${_RUBY_INSTALLED_RAILS}
 . endif
 .endif
 
-RUBY_RAILS_DEFAULT?=	2
+RUBY_RAILS_DEFAULT?=	3
 .if ${RUBY_RAILS_DEFAULT} == "2"
 RUBY_RAILS_VERSION:=	${RUBY_RAILS2_VERSION}
 _RUBY_RAILS_MAJOR=	2

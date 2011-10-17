@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2009/07/22 09:25:02 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2011/08/22 08:51:46 wiz Exp $
 
 DISTNAME=	binutils-2.17
 PKGREVISION=	3
@@ -8,6 +8,7 @@ MASTER_SITES=	${MASTER_SITE_GNU:=binutils/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://directory.fsf.org/project/binutils/
 COMMENT=	GNU binary utilities
+LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -33,7 +34,7 @@ BINUTILS_PREFIX=	${PREFIX}/${MACHINE_GNU_PLATFORM}
 PLIST_SRC=	${PKGDIR}/PLIST.common
 PLIST_SRC+=	${WRKDIR}/PLIST_DYNAMIC
 
-INFO_FILES=	# PLIST
+INFO_FILES=	yes
 
 # gprof (XXX: and others?) cannot be built on all platforms
 #
@@ -41,6 +42,12 @@ PLIST_VARS+=	gprof
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} != "IRIX" &&  ${OPSYS} != "Minix"
 PLIST.gprof=	yes
+.endif
+
+.include "../../mk/compiler.mk"
+.if !empty(PKGSRC_COMPILER:Mclang)
+CFLAGS+=	-Wno-unused-value -Wno-format-security \
+		-Wno-uninitialized -Wno-format
 .endif
 
 # Prevent the need to run texi2pod.pl and pod2man hence

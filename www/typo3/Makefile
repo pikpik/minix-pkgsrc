@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2011/02/26 03:02:59 taca Exp $
+# $NetBSD: Makefile,v 1.34 2011/09/14 11:49:45 taca Exp $
 #
 
 DISTNAME=	${TYPO3NAME}
@@ -19,20 +19,19 @@ DEPENDS+=	${PHP_PKG_PREFIX}-json>=5.2.0:../../textproc/php-json
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-VER=		4.5.2
+VER=		4.5.6
 NO_BUILD=	yes
 USE_TOOLS=	pax
 
 TYPO3NAME=	typo3_src-${VER}
 SITESRC=	dummy-${VER}
+WRKSRC=		${WRKDIR}/${DISTNAME}
 
 # maybe resides in lang/php/phpversion.mk
 REPLACE_INTERPRETER+=	php
 REPLACE.php.old=	.*php[^ ]*
 REPLACE.php.new=	${PREFIX}/bin/php
-REPLACE_FILES.php=	typo3/cli_dispatch.phpsh \
-			typo3/mod/user/ws/cli/ws_cli.phpsh \
-			typo3/sysext/indexed_search/cli/indexer_cli.phpsh
+REPLACE_FILES.php=	typo3/cli_dispatch.phpsh
 
 TYPO3DATADIR=	fileadmin fileadmin/_temp_ fileadmin/user_upload \
 		typo3conf typo3conf/ext typo3conf/l10n typo3temp uploads \

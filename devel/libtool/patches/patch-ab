@@ -1,4 +1,4 @@
-$NetBSD: patch-ab,v 1.69 2011/03/23 15:46:36 obache Exp $
+$NetBSD: patch-ab,v 1.70 2011/05/14 16:49:45 bsiegert Exp $
 
 The last two chunks work around bugs in ksh on NetBSD.
 The problem manifests with wl and no_builtin_flag containing newlines.

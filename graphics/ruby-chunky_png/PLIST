@@ -1,7 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.3 2011/09/14 12:22:30 taca Exp $
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/.gitignore
 ${GEM_LIBDIR}/.infinity_test
+${GEM_LIBDIR}/.travis.yml
 ${GEM_LIBDIR}/.yardopts
 ${GEM_LIBDIR}/BENCHMARKS.rdoc
 ${GEM_LIBDIR}/Gemfile
@@ -15,6 +16,8 @@ ${GEM_LIBDIR}/chunky_png.gemspec
 ${GEM_LIBDIR}/lib/chunky_png.rb
 ${GEM_LIBDIR}/lib/chunky_png/canvas.rb
 ${GEM_LIBDIR}/lib/chunky_png/canvas/adam7_interlacing.rb
+${GEM_LIBDIR}/lib/chunky_png/canvas/data_url_exporting.rb
+${GEM_LIBDIR}/lib/chunky_png/canvas/data_url_importing.rb
 ${GEM_LIBDIR}/lib/chunky_png/canvas/drawing.rb
 ${GEM_LIBDIR}/lib/chunky_png/canvas/masking.rb
 ${GEM_LIBDIR}/lib/chunky_png/canvas/operations.rb
@@ -34,6 +37,8 @@ ${GEM_LIBDIR}/lib/chunky_png/point.rb
 ${GEM_LIBDIR}/lib/chunky_png/rmagick.rb
 ${GEM_LIBDIR}/lib/chunky_png/vector.rb
 ${GEM_LIBDIR}/spec/chunky_png/canvas/adam7_interlacing_spec.rb
+${GEM_LIBDIR}/spec/chunky_png/canvas/data_url_exporting_spec.rb
+${GEM_LIBDIR}/spec/chunky_png/canvas/data_url_importing_spec.rb
 ${GEM_LIBDIR}/spec/chunky_png/canvas/drawing_spec.rb
 ${GEM_LIBDIR}/spec/chunky_png/canvas/masking_spec.rb
 ${GEM_LIBDIR}/spec/chunky_png/canvas/operations_spec.rb
@@ -279,6 +284,9 @@ ${GEM_LIBDIR}/spec/resources/bezier_three_point_flipped.png
 ${GEM_LIBDIR}/spec/resources/circles.png
 ${GEM_LIBDIR}/spec/resources/clock.png
 ${GEM_LIBDIR}/spec/resources/clock_base.png
+${GEM_LIBDIR}/spec/resources/clock_bl_xdown_ydown.png
+${GEM_LIBDIR}/spec/resources/clock_bl_xdown_yup.png
+${GEM_LIBDIR}/spec/resources/clock_bl_xup_yup.png
 ${GEM_LIBDIR}/spec/resources/clock_mask.png
 ${GEM_LIBDIR}/spec/resources/clock_mask_updated.png
 ${GEM_LIBDIR}/spec/resources/clock_nn_xdown_ydown.png

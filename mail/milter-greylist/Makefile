@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2011/04/22 14:40:43 obache Exp $
+# $NetBSD: Makefile,v 1.51 2011/05/25 07:15:32 tron Exp $
 
 DISTNAME=	milter-greylist-4.2.7
 CATEGORIES=	mail
@@ -17,6 +17,8 @@ MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=		YES
 BUILD_TARGET=		milter-greylist
+
+USE_TOOLS=		yacc lex
 
 RCD_SCRIPTS=		milter-greylist
 

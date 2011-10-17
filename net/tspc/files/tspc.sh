@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: tspc.sh,v 1.1 2005/12/28 12:10:44 ghen Exp $
 #
 
 # PROVIDE: tspc

@@ -1,0 +1,14 @@
+$NetBSD$
+
+--- config.h.in.orig	2008-05-07 20:13:06.000000000 +0000
++++ config.h.in
+@@ -115,6 +115,9 @@
+ /* Define to 1 if you have the `gethostname' function. */
+ #undef HAVE_GETHOSTNAME
+ 
++/* Define to 1 if you have the `getline' function. */
++#undef HAVE_GETLINE
++
+ /* Define to 1 if you have the `getopt' function. */
+ #undef HAVE_GETOPT
+ 

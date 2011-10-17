@@ -1,18 +1,17 @@
-# $NetBSD: Makefile,v 1.4 2011/07/30 10:46:01 cheusov Exp $
+# $NetBSD: Makefile,v 1.9 2011/09/09 22:02:19 cheusov Exp $
 
-DISTNAME=	pkgnih-0.8.0
+DISTNAME=	pkgnih-0.9.1
 PKGNAME=	${DISTNAME:S/pkgnih/nih/}
-PKGREVISION=	1
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/nih/ \
 		http://mova.org/~cheusov/pub/pkgnih/
 
-MAINTAINER=	vle@gmx.net
+MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	https://github.com/cheusov/pkgnih
 COMMENT=	Package manager for pkgsrc
 LICENSE=	2-clause-bsd
 
-DEPENDS+=	pkg_summary-utils>=0.53.2:../../pkgtools/pkg_summary-utils
+DEPENDS+=	pkg_summary-utils>=0.56.0:../../pkgtools/pkg_summary-utils
 DEPENDS+=	digest-[0-9]*:../../pkgtools/digest
 DEPENDS+=	pkg_install>=20100915:../../pkgtools/pkg_install
 
@@ -36,7 +35,7 @@ MAKE_DIRS+=		${PKG_SYSCONFDIR}/nih
 REPLACE_INTERPRETER+=	runawk
 REPLACE.runawk.old=	.*runawk
 REPLACE.runawk.new=	${PREFIX}/bin/runawk
-REPLACE_FILES.runawk=	nih/pkg_update_plan.in
+REPLACE_FILES.runawk=	nih/pkg_update_plan.in nih/cmp2hr.in
 
 MAKE_ENV+=		MANDIR=${PREFIX}/${PKGMANDIR}
 
@@ -53,5 +52,7 @@ DEPENDS+=	tnftp-[0-9]*:../../net/tnftp
 .endif
 
 MAKE_ENV+= FTP=${FTP_CMD:Q}
+
+.include "../../devel/mk-configure/configure.mk"
 
 .include "../../mk/bsd.pkg.mk"

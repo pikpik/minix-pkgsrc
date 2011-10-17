@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.38 2011/04/26 14:19:39 tnn Exp $
+# $NetBSD: Makefile,v 1.41 2011/10/03 12:46:07 tnn Exp $
 #
 
 .include "../../devel/xulrunner/dist.mk"
-PKGNAME=	nspr-${NSPR_RELEASE}${MOZ_BRANCH_MINOR}
-NSPR_RELEASE=	4.8.8
+PKGNAME=	nspr-${NSPR_RELEASE}.3${MOZ_BRANCH_MINOR}
+NSPR_RELEASE=	4.8.9
 CATEGORIES=	devel
 
 MAINTAINER=	tnn@NetBSD.org
@@ -14,6 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}js/src/configure
+CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}configure
 
 GNU_CONFIGURE=		yes
 CONFIGURE_DIRS=		nsprpub

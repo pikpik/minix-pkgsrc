@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2010/09/13 14:49:54 taca Exp $
+# $NetBSD: Makefile,v 1.6 2011/06/19 03:56:24 taca Exp $
 
-DISTNAME=	ramaze-2011.01.30
+DISTNAME=	ramaze-2011.07.25
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.11 2011/02/15 08:14:15 adam Exp $
+# $NetBSD: Makefile.common,v 1.15 2011/09/27 11:04:30 adam Exp $
 #
 # used by databases/postgresql84-adminpack/Makefile
 # used by databases/postgresql84-client/Makefile
@@ -19,7 +19,7 @@
 
 .include "../../databases/postgresql84/Makefile.mirrors"
 
-DISTNAME=	postgresql-8.4.8
+DISTNAME=	postgresql-8.4.9
 CATEGORIES=	databases
 MASTER_SITES=	${PGSQL_MIRRORS:=source/v${PKGVERSION_NOREV}/}
 EXTRACT_SUFX=	.tar.bz2
@@ -52,6 +52,7 @@ PG_TEMPLATE.${OPSYS}=	${LOWER_OPSYS}
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/postgresql
+CONFIGURE_ARGS+=	--localedir=${PREFIX}/${PKGLOCALEDIR}/locale
 CONFIGURE_ARGS+=	--with-template=${PG_TEMPLATE.${OPSYS}}
 
 CONFIGURE_ARGS+=	--enable-nls
@@ -81,6 +82,7 @@ USE_LIBLTDL?=		yes
 USE_LIBLTDL?=		no
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+LIBS.SunOS+=		-lintl
 
 .if !defined(META_PACKAGE)
 post-extract:

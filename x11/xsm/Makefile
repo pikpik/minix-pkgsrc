@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/05/24 21:45:19 tnn Exp $
+# $NetBSD: Makefile,v 1.6 2008/11/10 17:21:40 wiz Exp $
 #
 
 DISTNAME=		xsm-1.0.1
@@ -24,6 +24,8 @@ CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 .if !exists(/usr/bin/rsh)
 CONFIGURE_ENV+=		ac_cv_path_RSH=/usr/bin/rsh
 .endif
+
+MAKE_FLAGS+=		appdefaultdir=${PREFIX}/lib/X11/app-defaults
 
 .include "../../x11/libXaw/buildlink3.mk"
 

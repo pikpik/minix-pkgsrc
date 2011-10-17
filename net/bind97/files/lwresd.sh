@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: lwresd.sh,v 1.1.1.1 2010/05/26 16:11:47 taca Exp $
 #
 # PROVIDE: lwresd
 # REQUIRE: SERVERS

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2011/03/23 14:12:05 taca Exp $
+# $NetBSD: Makefile,v 1.11 2011/09/12 13:42:30 taca Exp $
 
-DISTNAME=	json_pure-1.5.2
+DISTNAME=	json_pure-1.6.0
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/_/-/g}
 CATEGORIES=	textproc
 
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://flori.github.com/json
 COMMENT=	Pure Ruby implementation of JSON
 LICENSE=	ruby-license
-
-REPLACE_RUBY=	tools/fuzz.rb tools/server.rb
 
 post-extract:
 	cd ${WRKSRC}; ${FIND} . -xdev -type f -print | ${XARGS} ${CHMOD} g-w

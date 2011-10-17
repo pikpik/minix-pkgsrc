@@ -17,6 +17,7 @@ include/matroska/KaxInfo.h
 include/matroska/KaxInfoData.h
 include/matroska/KaxSeekHead.h
 include/matroska/KaxSegment.h
+include/matroska/KaxSemantic.h
 include/matroska/KaxTag.h
 include/matroska/KaxTags.h
 include/matroska/KaxTrackAudio.h

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.589 2011/08/06 22:56:49 ryoon Exp $
+# $NetBSD: Makefile,v 1.594 2011/09/13 15:22:15 taca Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -174,6 +174,7 @@ SUBDIR+=	hunspell-sk_SK
 SUBDIR+=	hunspell-sv_SE
 SUBDIR+=	hyperestraier
 SUBDIR+=	icu
+SUBDIR+=	iksemel
 SUBDIR+=	intltool
 SUBDIR+=	ipadic
 SUBDIR+=	isearch
@@ -515,6 +516,7 @@ SUBDIR+=	robodoc
 SUBDIR+=	rtf-tools
 SUBDIR+=	rtfm
 SUBDIR+=	rubber
+SUBDIR+=	ruby-albino
 SUBDIR+=	ruby-amrita
 SUBDIR+=	ruby-bluecloth
 SUBDIR+=	ruby-builder
@@ -536,6 +538,8 @@ SUBDIR+=	ruby-htree
 SUBDIR+=	ruby-itex2MML
 SUBDIR+=	ruby-json
 SUBDIR+=	ruby-json-pure
+SUBDIR+=	ruby-json-utils
+SUBDIR+=	ruby-kramdown
 SUBDIR+=	ruby-libxml
 SUBDIR+=	ruby-markaby
 SUBDIR+=	ruby-maruku
@@ -556,6 +560,7 @@ SUBDIR+=	ruby-stringex
 SUBDIR+=	ruby-suikyo
 SUBDIR+=	ruby-syntax
 SUBDIR+=	ruby-textpow
+SUBDIR+=	ruby-tilt
 SUBDIR+=	ruby-treetop
 SUBDIR+=	ruby-ultraviolet
 SUBDIR+=	ruby-will-paginate

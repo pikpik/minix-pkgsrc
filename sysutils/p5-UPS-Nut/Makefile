@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2011/01/13 13:39:26 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2011/08/14 14:52:51 obache Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,8 +6,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGNAME=		${DISTNAME:S/nut/p5-UPS-Nut/}
 COMMENT=		Network UPS Tools perl binding
+PKGREVISION=		1
 CATEGORIES=		sysutils perl5
-PKG_DESTDIR_SUPPORT=	user-destdir
 PATCHDIR=
 
 WRKSRC= 		${WRKDIR}/${DISTNAME}/scripts/perl

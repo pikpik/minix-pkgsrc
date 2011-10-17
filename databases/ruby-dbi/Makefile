@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/09/10 04:22:08 taca Exp $
+# $NetBSD: Makefile,v 1.4 2011/06/08 14:46:05 taca Exp $
 
 DISTNAME=	dbi-0.4.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	databases ruby
 
 MAINTAINER=	taca@NetBSD.org

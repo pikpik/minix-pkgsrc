@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/06/05 23:05:58 abs Exp $
+# $NetBSD: Makefile,v 1.10 2011/06/16 13:40:06 cegger Exp $
 #
-VERSION=		4.1.1
+# VERSION is set in version.mk as it is shared with other packages
+.include		"version.mk"
+
 DISTNAME=		xen-${VERSION}
 PKGNAME=		xentools41-${VERSION}
 #PKGREVISION=		1
@@ -33,6 +35,7 @@ ONLY_FOR_PLATFORM+=	NetBSD-[5-9].*-x86_64 NetBSD-[5-9].*-i386
 CONFLICTS+=		libxen-[0-9]*
 CONFLICTS+=		xentools20-[0-9]*
 CONFLICTS+=		xentools3*
+CONFLICTS+=		xenstoretools-*
 
 WRKSRC=			${WRKDIR}/xen-${VERSION}/tools
 CHECK_PORTABILITY_SKIP=	examples/*

@@ -1,4 +1,4 @@
-#	$NetBSD: pbulk-index.mk,v 1.10 2010/06/15 19:23:55 joerg Exp $
+#	$NetBSD: pbulk-index.mk,v 1.12 2011/09/25 19:51:47 joerg Exp $
 
 # This Makefile fragment is included by bsd.pkg.mk and provides all
 # variables and targets related to the parallel bulk build
@@ -45,11 +45,14 @@ _PBULK_MULTI_DEFAULT.ruby=	_RUBY_VERSION_DEFAULT
 # don't follow the module naming conventions.
 
 .for _t in ${_PBULK_MULTI}
-.  if ${${_PBULK_MULTI_LIST.${_t}}:Unone:[\#]} != 1 && !empty(${_PBULK_MULTI_LIST.${_t}})
+.  if defined(${_PBULK_MULTI_LIST.${_t}}) && !empty(${_PBULK_MULTI_LIST.${_t}})
+.    if ${${_PBULK_MULTI_LIST.${_t}}:[\#]} != 1 || \
+        !empty(${_PBULK_MULTI_LIST.${_t}}:N${_PBULK_MULTI_DEFAULT.${_t}})
 _PBULK_MULTI_NEEDED:=	${_t} ${_PBULK_MULTI_NEEDED}
 _PBULK_SORTED_LIST.${_t}:= \
 	${${_PBULK_MULTI_LIST.${_t}}:M${${_PBULK_MULTI_DEFAULT.${_t}}}} \
 	${${_PBULK_MULTI_LIST.${_t}}:N${${_PBULK_MULTI_DEFAULT.${_t}}}}
+.    endif
 .  endif
 .endfor
 
@@ -108,4 +111,4 @@ pbulk-index-item:
 .endif
 
 pbulk-save-wrkdir:
-	${RUN} [ ! -d ${WRKDIR} ] || cd ${WRKDIR} && tar cfz ${INTO:Q} .
+	${RUN} [ ! -d ${WRKDIR} ] || cd ${WRKDIR} && ${TAR} cfz ${INTO:Q} .

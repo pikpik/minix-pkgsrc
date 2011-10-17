@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2010/05/06 06:06:47 tonnerre Exp $
+# $NetBSD: Makefile,v 1.25 2011/10/11 19:30:40 minskim Exp $
 #
 
-DISTNAME=		bbdb-2.34
+DISTNAME=		bbdb-2.35
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=		4
 CATEGORIES=		mail misc news
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=bbdb/}
 
@@ -12,13 +11,15 @@ HOMEPAGE=		http://sourceforge.net/projects/bbdb/
 COMMENT=		Insidious Big Brother DataBase, a rolodex-like database Emacs program
 
 # bbdb is included in xemacs-packages
-EMACS_VERSIONS_ACCEPTED=	emacs23 emacs22 emacs22nox emacs21 emacs21nox \
+EMACS_VERSIONS_ACCEPTED=	emacs24 emacs24nox emacs23 emacs23nox \
+				emacs22 emacs22nox emacs21 emacs21nox \
 				emacs20
 CONFLICTS+=		xemacs-packages-[0-9]*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
+CONFIGURE_ARGS+=	--enable-rmail
 GNU_CONFIGURE=		yes
 BUILD_TARGET=		all mhe
 USE_TOOLS+=		makeinfo
@@ -28,6 +29,9 @@ INSTALLATION_DIRS=	${EMACS_INFOPREFIX}
 MAKE_JOBS_SAFE=		no
 
 .include "../../editors/emacs/modules.mk"
+
+post-extract:
+	${RM} -rf ${WRKSRC}/lisp/*.elc
 
 .if ${EMACS_FLAVOR} == "xemacs"
 CONFIGURE_ARGS+=	--with-emacs=xemacs

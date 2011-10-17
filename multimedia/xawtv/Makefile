@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2010/12/23 11:44:52 dsainty Exp $
+# $NetBSD: Makefile,v 1.29 2011/08/13 04:43:51 cheusov Exp $
 #
 
 DISTNAME=	xawtv-3.95
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	http://dl.bytesex.org/releases/xawtv/
 
@@ -43,10 +43,15 @@ PKG_SUPPORTED_OPTIONS=	mmx
 CONFIGURE_ARGS+=	--enable-mmx
 .endif
 
+CFLAGS+=		-I${X11BASE}/include/X11/fonts
+
+MAKE_FLAGS+=		SUID_ROOT= FS_LIBS=-lFS
+
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/Xaw3d/buildlink3.mk"
+.include "../../x11/libFS/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/05/05 12:37:08 adam Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.20 2011/09/04 15:42:52 adam Exp $
 
 .include "../../x11/qt4-libs/Makefile.common"
 

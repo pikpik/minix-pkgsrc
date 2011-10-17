@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.orig	Wed Jun  1 22:36:22 2011
+--- Makefile.orig	2010-10-22 03:49:16.000000000 +0000
 +++ Makefile
-@@ -264,8 +264,6 @@ endif
+@@ -259,8 +259,6 @@ endif
  
  CFLAGS = -g -O2 -Wall
  LDFLAGS =
@@ -25,7 +25,7 @@ $NetBSD$
  RPMBUILD = rpmbuild
  TCL_PATH = tclsh
  TCLTK_PATH = wish
-@@ -847,9 +841,10 @@ ifeq ($(uname_S),Darwin)
+@@ -834,9 +828,10 @@ ifeq ($(uname_S),Darwin)
  	USE_ST_TIMESPEC = YesPlease
  endif
  ifeq ($(uname_S),SunOS)
@@ -37,7 +37,7 @@ $NetBSD$
  	SANE_TOOL_PATH = /usr/xpg6/bin:/usr/xpg4/bin
  	NO_STRCASESTR = YesPlease
  	NO_MEMMEM = YesPlease
-@@ -890,8 +885,6 @@ ifeq ($(uname_S),SunOS)
+@@ -880,8 +875,6 @@ ifeq ($(uname_S),SunOS)
  		NO_STRTOUMAX = YesPlease
  		GIT_TEST_CMP = cmp
  	endif
@@ -46,56 +46,7 @@ $NetBSD$
  	BASIC_CFLAGS += -D__EXTENSIONS__ -D__sun__ -DHAVE_ALLOCA_H
  endif
  ifeq ($(uname_O),Cygwin)
-@@ -1192,6 +1185,22 @@ sysconfdir = etc
- endif
- endif
- 
-+ifeq ($(uname_S),Minix)
-+# Override configure
-+	NO_IPV6 = YesPlease
-+	NO_ST_BLOCKS_IN_STRUCT_STAT = YesPlease
-+	NO_NSEC = YesPlease
-+	NEEDS_LIBGEN =
-+	NEEDS_CRYPTO_WITH_SSL = YesPlease
-+	NEEDS_IDN_WITH_CURL = YesPlease
-+	NEEDS_SSL_WITH_CURL = YesPlease
-+	NEEDS_RESOLV = 
-+	NO_HSTRERROR = YesPlease
-+	NO_MMAP = YesPlease
-+	NO_CURL =
-+	NO_EXPAT = 
-+endif
-+
- ifdef CHECK_HEADER_DEPENDENCIES
- COMPUTE_HEADER_DEPENDENCIES =
- USE_COMPUTED_HEADER_DEPENDENCIES =
-@@ -1261,6 +1270,16 @@ else
- 	else
- 		CURL_LIBCURL = -lcurl
- 	endif
-+	ifdef NEEDS_SSL_WITH_CURL
-+		CURL_LIBCURL +=	-lssl
-+	endif
-+	ifdef NEEDS_CRYPTO_WITH_SSL
-+		CURL_LIBCURL += -lcrypto
-+	endif
-+	ifdef NEEDS_IDN_WITH_CURL
-+		CURL_LIBCURL += -lidn
-+	endif
-+
- 	REMOTE_CURL_PRIMARY = git-remote-http$X
- 	REMOTE_CURL_ALIASES = git-remote-https$X git-remote-ftp$X git-remote-ftps$X
- 	REMOTE_CURL_NAMES = $(REMOTE_CURL_PRIMARY) $(REMOTE_CURL_ALIASES)
-@@ -1297,7 +1316,7 @@ ifndef NO_OPENSSL
- 		OPENSSL_LINK =
- 	endif
- 	ifdef NEEDS_CRYPTO_WITH_SSL
--		OPENSSL_LINK += -lcrypto
-+		OPENSSL_LIBSSL += -lcrypto
- 	endif
- else
- 	BASIC_CFLAGS += -DNO_OPENSSL
-@@ -1638,8 +1657,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(DEFAULT_PAGER_C
+@@ -1563,8 +1556,8 @@ DEFAULT_PAGER_CQ_SQ = $(subst ','\'',$(D
  BASIC_CFLAGS += -DDEFAULT_PAGER='$(DEFAULT_PAGER_CQ_SQ)'
  endif
  

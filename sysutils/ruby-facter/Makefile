@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.7 2010/09/10 07:56:40 taca Exp $
+# $NetBSD: Makefile,v 1.8 2011/06/19 03:23:13 taca Exp $
 
-DISTNAME=	facter-1.5.9
+DISTNAME=	facter-1.6.0
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	sysutils
 MASTER_SITES=	http://reductivelabs.com/downloads/gems/

@@ -1,0 +1,14 @@
+$NetBSD$
+
+Build test directory before use it.
+
+--- lib/erl/Makefile.in.orig	2011-08-11 13:19:02.000000000 +0000
++++ lib/erl/Makefile.in
+@@ -481,6 +481,7 @@ uninstall-am: uninstall-info-am
+ 
+ 
+ .generated: $(THRIFT_FILES)
++	$(MKDIR_P) test
+ 	for f in $(THRIFT_FILES) ; do \
+ 	  $(THRIFT) --gen erl -out test $$f ; \
+ 	done ; \

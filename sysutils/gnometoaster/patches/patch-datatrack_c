@@ -1,0 +1,15 @@
+$NetBSD$
+
+- fix LP64 problems
+
+--- datatrack.c~	2001-03-20 07:58:08.000000000 +0000
++++ datatrack.c
+@@ -125,7 +125,7 @@ tracks_trackinfo *datatrack_create(char 
+    tracks_trackinfo *dt;
+    datatrack_info *info;
+    char description[256];
+-   int tochandle=cdromlow_gettochandle(device);
++   cdromlow_tochandle *tochandle=cdromlow_gettochandle(device);
+ 
+    info=(datatrack_info*)malloc(sizeof(datatrack_info));
+    strcpy(info->device,device);

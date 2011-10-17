@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/05/22 12:53:01 obache Exp $
+# $NetBSD: Makefile,v 1.5 2009/07/17 01:10:07 jakllsch Exp $
 
 DISTNAME=	wide-dhcpv6-20080615
 CATEGORIES=	net
@@ -34,6 +34,15 @@ SUBST_STAGE.fix-paths=	pre-configure
 SUBST_MESSAGE.fix-paths=Fixing absolute paths.
 SUBST_FILES.fix-paths=	${MAN5} ${MAN8}
 SUBST_SED.fix-paths=	-e 's,/usr/local/etc,${PKG_SYSCONFDIR:Q},g'
+
+SUBST_CLASSES+=		dprintf
+SUBST_STAGE.dprintf=	post-configure
+SUBST_MESSAGE.dprintf=	Rename `dprintf' conflicting with POSIX.1-2008 one.
+SUBST_FILES.dprintf=	addrconf.c cftoken.l common.h common.c config.c
+SUBST_FILES.dprintf+=	dhcp6_ctl.c dhcp6c.c dhcp6c_script.c dhcp6c_ia.c
+SUBST_FILES.dprintf+=	dhcp6relay_script.c dhcp6relay.c dhcp6s.c lease.c if.c
+SUBST_FILES.dprintf+=	prefixconf.c timer.c
+SUBST_SED.dprintf=	-e 's/dprintf/my_dprintf/g'
 
 do-install:
 .for f in ${COMMANDS}

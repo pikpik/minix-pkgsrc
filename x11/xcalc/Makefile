@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/11/10 17:21:38 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/09/10 19:22:42 joerg Exp $
 #
 
 DISTNAME=		xcalc-1.0.3
@@ -17,6 +17,8 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 
 CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
+
+MAKE_FLAGS+=		appdefaultdir=${PREFIX}/lib/X11/app-defaults
 
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: prewikka.sh,v 1.1.1.1 2006/01/29 16:00:44 shannonjr Exp $
 #
 
 # PROVIDE: prewikka

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2008/08/11 14:29:20 is Exp $
+# $NetBSD: Makefile,v 1.23 2009/05/19 08:59:30 wiz Exp $
 
 DISTNAME=	acroread7	# overridden below
 PKGNAME=	acroread7-7.0.9
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	http://ardownload.adobe.com/pub/adobe/reader/unix/7x/7.0.9/enu/
 
@@ -18,11 +18,6 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-CONFLICTS+=	acroread-5.*
-# conflict with acroread5 due to bin/acroread
-# maybe should do ALTERNATIVES?
-CONFLICTS+=	acroread5-5.*
 
 WRKSRC=			${WRKDIR}/AdobeReader
 BUILD_DIRS=		# empty
@@ -66,7 +61,6 @@ post-install:
 	${CHMOD} +x ${DESTDIR}${PREFIX}/bin/acroread7
 	@${ECHO_MSG} "Be sure to read the license agreement in"
 	@${ECHO_MSG} "${DESTDIR}${PREFIX}/Acrobat7/Reader/Legal/ENU/License.html"
-	${LN} -sf ${PREFIX}/bin/acroread7 ${DESTDIR}${PREFIX}/bin/acroread
 	${RM} ${DESTDIR}${PREFIX}/Acrobat7/Reader/${PLATFORM}/plug_ins/PPKLite.api
 
 .include "../../mk/bsd.pkg.mk"

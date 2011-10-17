@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: $
+# $NetBSD: parpd.sh,v 1.1.1.2 2008/12/15 15:55:42 roy Exp $
 #
 
 # PROVIDE: parpd

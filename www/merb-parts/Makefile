@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2010/09/12 02:50:27 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/13 14:32:42 taca Exp $
 
-DISTNAME=	merb-parts-0.9.8
+DISTNAME=	merb_parts-0.9.14
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

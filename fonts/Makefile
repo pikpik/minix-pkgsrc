@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.201 2011/07/30 07:47:13 ryoon Exp $
+# $NetBSD: Makefile,v 1.205 2011/10/02 14:32:32 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -6,16 +6,6 @@ COMMENT=	Fonts
 SUBDIR+=	AnonymousPro
 SUBDIR+=	Xft2
 SUBDIR+=	Xg
-SUBDIR+=	acroread-chsfont
-SUBDIR+=	acroread-chtfont
-SUBDIR+=	acroread-font-share
-SUBDIR+=	acroread-jpnfont
-SUBDIR+=	acroread-korfont
-SUBDIR+=	acroread5-chsfont
-SUBDIR+=	acroread5-chtfont
-SUBDIR+=	acroread5-font-share
-SUBDIR+=	acroread5-jpnfont
-SUBDIR+=	acroread5-korfont
 SUBDIR+=	acroread7-chsfont
 SUBDIR+=	acroread7-chtfont
 SUBDIR+=	acroread7-font-share
@@ -58,6 +48,7 @@ SUBDIR+=	droid-ttf
 SUBDIR+=	ec-fonts-mftraced
 SUBDIR+=	efont-unicode
 SUBDIR+=	encodings
+SUBDIR+=	fntsample
 SUBDIR+=	font-adobe-100dpi
 SUBDIR+=	font-adobe-75dpi
 SUBDIR+=	font-adobe-utopia-100dpi
@@ -187,6 +178,8 @@ SUBDIR+=	tex-cm
 SUBDIR+=	tex-cm-doc
 SUBDIR+=	tex-cm-super
 SUBDIR+=	tex-cm-super-doc
+SUBDIR+=	tex-cm-unicode
+SUBDIR+=	tex-cm-unicode-doc
 SUBDIR+=	tex-cmcyr
 SUBDIR+=	tex-cmcyr-doc
 SUBDIR+=	tex-cmextra
@@ -242,6 +235,8 @@ SUBDIR+=	tex-mflogo
 SUBDIR+=	tex-mflogo-doc
 SUBDIR+=	tex-mfware
 SUBDIR+=	tex-ncntrsbk
+SUBDIR+=	tex-ocr-b
+SUBDIR+=	tex-ocr-b-doc
 SUBDIR+=	tex-palatino
 SUBDIR+=	tex-psnfss
 SUBDIR+=	tex-psnfss-doc

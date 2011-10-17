@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.8 2010/09/23 23:30:38 jnemeth Exp $
+# $NetBSD: options.mk,v 1.9 2010/10/06 22:39:41 jnemeth Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.asterisk
 PKG_SUPPORTED_OPTIONS=		zaptel x11 unixodbc ilbc webvmail ldap

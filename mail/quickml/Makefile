@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2011/09/16 02:26:44 obache Exp $
 #
 
 DISTNAME=	quickml-0.7
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://0xcc.net/quickml/
 
@@ -14,6 +15,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	# none
 RCD_SCRIPTS+=	quickml
+
+# Dose not care for Ruby 1.9's character encoding for now.
+RUBY_VERSION_SUPPORTED= 18
 
 QUICKML_USER=	quickml
 QUICKML_GROUP=	quickml

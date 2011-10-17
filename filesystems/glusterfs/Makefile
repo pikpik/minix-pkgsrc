@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2011/07/23 01:14:43 manu Exp $
+# $NetBSD: Makefile,v 1.17 2011/09/27 12:45:02 manu Exp $
 #
 
-DISTNAME=	glusterfs-3.2.2
+DISTNAME=	glusterfs-3.2.3
 PKGREVISION=	1
 CATEGORIES=	filesystems
-MASTER_SITES=	http://download.gluster.com/pub/gluster/glusterfs/3.2/3.2.2/
+MASTER_SITES=	http://download.gluster.com/pub/gluster/glusterfs/3.2/3.2.3/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gluster.org/
@@ -19,6 +19,7 @@ USE_TOOLS+=		flex bison
 
 PYTHON_VERSIONS_ACCEPTED= 27 26 25
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
+CONFIGURE_ARGS+=	CFLAGS=${CFLAGS:M*:Q}\ -D_INCOMPLETE_XOPEN_C063
 
 # Make sure we do not attept to link with -lfl
 # Only libfl.a is available, and libtool wants libfl.so

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2010/09/12 04:22:21 taca Exp $
+@comment $NetBSD: PLIST,v 1.2 2011/02/09 13:00:07 taca Exp $
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/CHANGELOG
 ${GEM_LIBDIR}/README.rdoc
@@ -61,6 +61,7 @@ ${GEM_LIBDIR}/lib/active_record/query_cache.rb
 ${GEM_LIBDIR}/lib/active_record/railtie.rb
 ${GEM_LIBDIR}/lib/active_record/railties/controller_runtime.rb
 ${GEM_LIBDIR}/lib/active_record/railties/databases.rake
+${GEM_LIBDIR}/lib/active_record/railties/jdbcmysql_error.rb
 ${GEM_LIBDIR}/lib/active_record/reflection.rb
 ${GEM_LIBDIR}/lib/active_record/relation.rb
 ${GEM_LIBDIR}/lib/active_record/relation/batches.rb

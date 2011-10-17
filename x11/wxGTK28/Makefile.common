@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.8 2011/01/12 11:21:40 wiz Exp $
+# $NetBSD: Makefile.common,v 1.9 2011/06/19 00:48:57 dholland Exp $
 #
 # used by x11/wxGTK28/Makefile
 # used by x11/wxGTK28-contrib/Makefile
@@ -36,6 +36,7 @@ CONFIGURE_ARGS+=	--with-zlib=sys
 CONFIGURE_ARGS+=	--with-regex=builtin
 
 DOCDIR=			${PREFIX}/share/doc/wxGTK
+PKGLOCALEDIR=		share
 
 CONFIGURE_DIRS=	${WRKSRC}/build-non-unicode ${WRKSRC}/build-unicode
 

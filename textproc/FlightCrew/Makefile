@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2011/08/20 21:33:27 wiz Exp $
 #
 
-DISTNAME=	FlightCrew-0.7.1-Code
+DISTNAME=	FlightCrew-0.7.2-Code
 PKGNAME=	${DISTNAME:S/-Code//}
 CATEGORIES=	textproc
 MASTER_SITES=	http://flightcrew.googlecode.com/files/
@@ -13,6 +13,8 @@ COMMENT=	EPUB validator
 LICENSE=	gnu-lgpl-v3 AND cc-by-sa-v3.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+WRKSRC=		${WRKDIR}
 
 USE_LANGUAGES=	c c++
 USE_CMAKE=	yes
@@ -27,6 +29,12 @@ SUBST_MESSAGE.fix-damaged=	fixing
 SUBST_FILES.fix-damaged=	src/FlightCrew/tests/misc_tests/ConvertUtf8PathToBoostPath_test.cpp
 SUBST_SED.fix-damaged+=		-e "2,2s/^/\//" # commented-out
 SUBST_SED.fix-damaged+=		-e "1,1d" # deleted
+
+.include "../../mk/compiler.mk"
+# GCC 4.4 and above needs this
+.if !empty(PKGSRC_COMPILER:Mgcc) && !empty(CC_VERSION:Mgcc-4.[4-9]*)
+_WRAP_EXTRA_ARGS.CXX+=	-std=c++0x
+.endif
 
 .include "../../devel/googletest/buildlink3.mk"
 .include "../../devel/gmock/buildlink3.mk"

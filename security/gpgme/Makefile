@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.63 2011/03/03 11:39:47 adam Exp $
+# $NetBSD: Makefile,v 1.67 2011/08/14 20:47:05 wiz Exp $
 
-DISTNAME=	gpgme-1.3.0
+DISTNAME=	gpgme-1.3.1
 PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/gpgme/
@@ -13,10 +13,10 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_LIBTOOL=		YES
-GNU_CONFIGURE=		YES
+USE_LIBTOOL=		yes
+GNU_CONFIGURE=		yes
 PTHREAD_OPTS+=		require
-INFO_FILES=		YES
+INFO_FILES=		yes
 
 SUBST_CLASSES+=		pthread
 SUBST_FILES.pthread=	src/gpgme-config.in
@@ -46,10 +46,12 @@ CONFIGURE_ARGS+=	--without-pth --without-pth-test
 CONFIGURE_ENV+=		ac_cv_lib_pthread_pthread_create=yes
 .endif
 
+# we want the getenv_r() semantics of NetBSD-current
 BUILDLINK_API_DEPENDS.librfuncs+=	librfuncs>=1.0.7nb1
 .include "../../devel/librfuncs/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libassuan+=	libassuan>=2.0.2
 .include "../../security/libassuan2/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.4
 .include "../../security/libgpg-error/buildlink3.mk"
-# we want the getenv_r() semantics of NetBSD-current
 .include "../../mk/bsd.pkg.mk"
+_UNWRAP_FILES=

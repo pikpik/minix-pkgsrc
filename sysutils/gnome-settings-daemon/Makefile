@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2011/01/13 13:39:22 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2011/08/28 07:44:29 obache Exp $
 #
 
 DISTNAME=	gnome-settings-daemon-2.32.1
-PKGREVISION=	2
+PKGREVISION=	5
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-settings-daemon/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -29,19 +29,29 @@ GCONF_SCHEMAS+=	desktop_gnome_peripherals_touchpad.schemas
 GCONF_SCHEMAS+=	desktop_gnome_peripherals_smartcard.schemas
 PKGCONFIG_OVERRIDE+=	data/gnome-settings-daemon.pc.in
 
-BUILDLINK_API_DEPENDS.libxklavier+=	libxklavier>=3.3
+PKG_OPTIONS_VAR=	PKG_OPTIONS.gnome-settings-daemon
+PKG_SUPPORTED_OPTIONS=	pulseaudio
+.include "../../mk/bsd.options.mk"
+PLIST_VARS+=		pulseaudio
 
-#.include "../../audio/pulseaudio/buildlink3.mk"
-#.include "../../audio/libcanberra/buildlink3.mk"
-.include "../../databases/gdbm/buildlink3.mk"
+.if !empty(PKG_OPTIONS:Mpulseaudio)
+PLIST.pulseaudio=	yes
+BUILDLINK_API_DEPENDS.pulseaudio+=	pulseaudio>=0.9.15
+.include "../../audio/pulseaudio/buildlink3.mk"
+.include "../../audio/libcanberra/buildlink3.mk"
+.endif
 .include "../../devel/GConf/schemas.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+BUILDLINK_API_DEPENDS.dbus-glib+=	dbus-glib>=0.74
 .include "../../sysutils/dbus-glib/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/libnotify/buildlink3.mk"
 .include "../../x11/gnome-desktop/buildlink3.mk"
+BUILDLINK_API_DEPENDS.gtk2+=		gtk2+>=2.21.2
 .include "../../x11/gtk2/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libgnomekbd+=	libgnomekbd>=2.31.2
 .include "../../x11/libgnomekbd/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libxklavier+=	libxklavier>=5.0
 .include "../../x11/libxklavier/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

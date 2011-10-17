@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.12 2011/02/25 13:28:06 drochner Exp $
+$NetBSD: distinfo,v 1.14 2011/09/08 20:06:48 wiz Exp $
 
-SHA1 (gmime-2.4.23.tar.gz) = f6f8e13735751f2760dded0e7e9325dea0175346
-RMD160 (gmime-2.4.23.tar.gz) = 4c4152d7f8ee384a69c3d31f5890b02d8c40a3be
-Size (gmime-2.4.23.tar.gz) = 1115530 bytes
+SHA1 (gmime-2.4.26.tar.xz) = e91ecae390e11b062fea8354e097195368ce11a5
+RMD160 (gmime-2.4.26.tar.xz) = 5bc32a1afd87e41134ed2381e1044aab3703fddc
+Size (gmime-2.4.26.tar.xz) = 729020 bytes

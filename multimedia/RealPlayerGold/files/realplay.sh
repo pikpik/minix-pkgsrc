@@ -1,7 +1,0 @@
-#!/bin/sh
-#
-#	$NetBSD$
-#
-HELIX_LIBS=@REALPLAYER_HOME@ ; export HELIX_LIBS
-LD_LIBRARY_PATH=${HELIX_LIBS}/lib:${HELIX_LIBS}/plugins:${HELIX_LIBS}:${LD_LIBRARY_PATH} ; export LD_LIBRARY_PATH
-exec ${HELIX_LIBS}/realplay "$@"

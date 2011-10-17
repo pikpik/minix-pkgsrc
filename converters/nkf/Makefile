@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2010/09/15 00:59:02 obache Exp $
+# $NetBSD: Makefile,v 1.15 2011/02/28 14:52:42 wiz Exp $
 
 .include "${.CURDIR}/Makefile.common"
 
-PKGNAME=	nkf-2.11
+PKGNAME=	nkf-2.12
 CATEGORIES=	japanese converters
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

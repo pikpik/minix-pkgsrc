@@ -1,8 +1,11 @@
-$NetBSD: patch-ab,v 1.1.1.1 2006/05/20 23:38:16 wiz Exp $
+$NetBSD$
 
---- configure.orig	2006-05-24 20:25:24.000000000 +0000
+Move the configuration file up one directory, no point in having a
+directory containing one file.
+
+--- configure.orig	2011-06-12 10:58:24.000000000 +0000
 +++ configure
-@@ -10610,7 +10610,7 @@ fi
+@@ -5798,7 +5798,7 @@ fi
  
  # where to find the configuration file
  # TODO: this should probably be fixed to be nicer

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/03/28 16:19:36 taca Exp $
+# $NetBSD: Makefile,v 1.12 2011/08/27 16:04:22 minskim Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -88,7 +88,7 @@ CONFIGURE_ENV+=	ac_cv_header_ucontext_h=no
 #
 # work around for getaddrinfo(3)
 #
-.if ${OPSYS} == "Linux" || ${OPSYS} == "SunOS"
+.if ${OPSYS} == "Linux" || (${OPSYS} == "SunOS" && !empty(OS_VERSION:M5.[6-9]))
 CONFIGURE_ARGS+=	--enable-wide-getaddrinfo
 .endif
 
@@ -121,6 +121,7 @@ EMPTY_DIRS=		generator/template markup/simple_markup
 pre-configure:
 	${RM} -f ${WRKSRC}/ext/curses/extconf.rb
 	${RM} -f ${WRKSRC}/ext/gdbm/extconf.rb
+	${RM} -f ${WRKSRC}/ext/fiddle/extconf.rb
 	${RM} -f ${WRKSRC}/ext/readline/extconf.rb
 	${RM} -f ${WRKSRC}/ext/tk/extconf.rb
 

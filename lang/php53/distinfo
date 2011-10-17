@@ -1,11 +1,11 @@
 $NetBSD$
 
-SHA1 (php-5.3.6/php-5.3.6.tar.bz2) = 0e0b9b4d9117f22080e2204afa9383469eb0dbbd
-RMD160 (php-5.3.6/php-5.3.6.tar.bz2) = 619bf96cf24bf6aa0988494186f8914fde94d44d
-Size (php-5.3.6/php-5.3.6.tar.bz2) = 10952171 bytes
+SHA1 (php-5.3.8/php-5.3.8.tar.bz2) = 8f29029e092f262876bfdd2ce56f6867e2b74b85
+RMD160 (php-5.3.8/php-5.3.8.tar.bz2) = f18a18e2dfd7ea7885760eec2a05b3c4a15ad9db
+Size (php-5.3.8/php-5.3.8.tar.bz2) = 11190060 bytes
 SHA1 (patch-aa) = b0dc6cd0b2103d5858280202506b33322a98496e
 SHA1 (patch-ab) = d08bb50cf074a6065ef0d1d67a713b7573cb2f5b
-SHA1 (patch-ac) = 07a3d6c9ee4c316033afd8c7db71eb21045a3afd
+SHA1 (patch-ac) = 1720f154232241c19d0c6e08a824e33252f1b690
 SHA1 (patch-ad) = 1608c58860a43b4e31df8646b5ded253ec9aa881
 SHA1 (patch-ae) = e590db60a60f4e5ef2da4e5edb786335a67a3d56
 SHA1 (patch-af) = 1618b23fd6d090ce5aa929208416028724278bfc
@@ -14,7 +14,6 @@ SHA1 (patch-ah) = b20c29c64b3099f77855a5ec28960dc1c4f65c83
 SHA1 (patch-ai) = d4766893a2c47a4e4a744248dda265b0a9a66a1f
 SHA1 (patch-aj) = d611d13fcc28c5d2b9e9586832ce4b8ae5707b48
 SHA1 (patch-al) = fbbee5502e0cd1c47c6e7c15e0d54746414ec32e
-SHA1 (patch-ext_sockets_sockets.c) = 99137af0e3307f1b379e4a4012ebd56978a88a15
-SHA1 (patch-ext_standard_crypt__blowfish.c) = aa1788e5e89bb51a6f9271bb3859386c99859c8c
-SHA1 (patch-ext_standard_string.c) = fe16ffedd894a6d580f3c998b9f571f403f4a764
-SHA1 (patch-main_rfc1867.c) = 2f7efd3ebc6eadb377ce308d5d8293bda07bbc42
+SHA1 (patch-as) = 5faa039f0ab7663e82787973e937aea685ba2dac
+SHA1 (patch-php__mssql.c) = b46c688ff2d8da33ca2f9beb0eb9182b6edf7e23
+SHA1 (patch-php__mssql.h) = fa9e349127121cf478691c108ac611563e445c40

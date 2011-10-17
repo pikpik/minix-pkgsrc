@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2010/12/07 22:23:23 abs Exp $
+# $NetBSD: Makefile,v 1.24 2011/09/05 11:46:14 joerg Exp $
 
-DISTNAME=	openjdk-7-ea-src-b92-06_may_2010
-PKGNAME=	openjdk7-1.7.0.92.20100521
-PKGREVISION=	2
+DISTNAME=	openjdk-7-fcs-src-b147-27_jun_2011
+PKGNAME=	openjdk7-1.7.0.147.20110811
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL:=openjdk7/}
 EXTRACT_SUFX=	.tar.bz2
@@ -18,7 +17,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 # diff between distfile and bsd-port branch. To check out, use:
 # "hg fclone http://hg.openjdk.java.net/bsd-port/bsd-port/"
-PATCHFILES+=	jdk-7-bsd-port-92.20100521.diff.bz2
+PATCHFILES+=	jdk-7-bsd-port-147.20110811.diff.bz2
 PATCH_SITES+=	${MASTER_SITE_LOCAL:=openjdk7/}
 
 CACERTS=	cacerts-20091013.tar.bz2
@@ -50,12 +49,14 @@ BUILDLINK_PASSTHRU_DIRS+=	${ALT_BOOTDIR}
 PREPEND_PATH+=			${ALT_BOOTDIR}/bin
 
 MAKE_ENV+=	ALT_BOOTDIR=${ALT_BOOTDIR}
+MAKE_ENV+=	ALT_DROPS_DIR=${DISTDIR}/${DIST_SUBDIR}
 MAKE_ENV+=	ALT_FREETYPE_LIB_PATH=${BUILDLINK_PREFIX.freetype2}/lib
 MAKE_ENV+=	ALT_FREETYPE_HEADERS_PATH=${BUILDLINK_PREFIX.freetype2}/include
 MAKE_ENV+=	ALT_CUPS_HEADERS_PATH=${BUILDLINK_PREFIX.cups}/include
 MAKE_ENV+=	ALT_COMPILER_PATH=${WRAPPER_DIR}/bin
 MAKE_ENV+=	ALT_PACKAGE_PATH=${PREFIX}
 MAKE_ENV+=	ALT_X11_PATH=${X11BASE}
+MAKE_ENV+=	RHINO_JAR=${WRKDIR}/${RHINO}/js.jar
 
 MAKE_ENV+=	ALT_PARALLEL_COMPILE_JOBS=${MAKE_JOBS:U1}
 
@@ -71,7 +72,17 @@ BUILDDIR=	${WRKSRC}/build/${OPSYS:C/.*BSD/bsd/:S/DragonFly/bsd/}-${MACHINE_ARCH:
 PLIST_SUBST+=	ARCH=${MACHINE_ARCH:S/x86_64/amd64/}
 PLIST_SUBST+=	LOWER_OPSYS=${LOWER_OPSYS}
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Mclang)
+_WRAP_EXTRA_ARGS.CXX+=	-Wno-parentheses -Wno-sign-conversion \
+			-Wno-shorten-64-to-32 -Wno-conversion \
+			-Wno-unused-value -Wno-switch-enum \
+			-Wno-tautological-compare \
+			-Wno-delete-non-virtual-dtor \
+			-Wno-return-type -Wno-unused-parameter \
+			-Wno-parentheses-equality
+.endif
 .include "bootstrap.mk"
 .include "icedtea-extras.mk"
 
@@ -103,13 +114,11 @@ PLIST.i386=	yes
 
 post-extract:
 	chmod +x ${ANT_BIN}/ant
-	cd ${WRKDIR}/${ICEDTEA}/plugin/icedteanp/java && pax -rw . \
+	cd ${WRKDIR}/${ICEDTEA_WEB}/plugin/icedteanp/java && pax -rw . \
 	  ${WRKSRC}/jdk/src/share/classes
-	cd ${WRKDIR}/${ICEDTEA}/netx && pax -rw . \
+	cd ${WRKDIR}/${ICEDTEA_WEB}/netx && pax -rw . \
 	  ${WRKSRC}/jdk/src/share/classes
-	${MKDIR} ${WRKSRC}/hotspot/make/bsd/makefiles
-	cp ${WRKSRC}/hotspot/make/linux/makefiles/build_vm_def.sh \
-	  ${WRKSRC}/hotspot/make/bsd/makefiles/build_vm_def.sh
+	cd ${WRKSRC} && patch -s -p1 < ${WRKDIR}/${ICEDTEA}/patches/rhino.patch
 
 do-build: ${WRKDIR}/stage3-done
 

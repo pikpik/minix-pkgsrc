@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.in.orig	2010-12-15 01:02:33.000000000 +0000
+--- configure.in.orig	2011-09-22 20:20:19.000000000 +0000
 +++ configure.in
-@@ -2076,7 +2076,7 @@ case "$target" in
+@@ -2090,7 +2090,7 @@ case "$target" in
      MOZ_FIX_LINK_PATHS='-Wl,-executable_path,$(LIBXUL_DIST)/bin'
      ;;
  
@@ -11,7 +11,7 @@ $NetBSD$
      if test `test -x /usr/bin/objformat && /usr/bin/objformat || echo elf` != "elf"; then
  	DLL_SUFFIX=".so.1.0"
  	DSO_LDOPTS="-shared"
-@@ -2084,6 +2084,9 @@ case "$target" in
+@@ -2098,6 +2098,9 @@ case "$target" in
      if test ! "$GNU_CC"; then
  	DSO_LDOPTS="-Bshareable $DSO_LDOPTS"
      fi
@@ -21,7 +21,7 @@ $NetBSD$
      ;; 
  
  ia64*-hpux*)
-@@ -3380,6 +3383,9 @@ dnl ====================================
+@@ -3305,6 +3308,9 @@ dnl ====================================
  case $target in
  *-hpux11.*)
  	;;
@@ -31,7 +31,7 @@ $NetBSD$
  *)
  	AC_CHECK_LIB(c_r, gethostbyname_r)
  	;;
-@@ -4727,6 +4733,14 @@ if test -n "$YASM"; then
+@@ -4567,6 +4573,14 @@ if test -n "$YASM"; then
    _YASM_BUILD=`        echo ${YASM_VERSION} | $AWK -F\. '{ print $4 }'`
  fi
  
@@ -46,7 +46,20 @@ $NetBSD$
  if test -z "$SKIP_LIBRARY_CHECKS"; then
  dnl system JPEG support
  dnl ========================================================
-@@ -9383,7 +9397,8 @@ rm -f confdefs.h.save
+@@ -7406,10 +7420,10 @@ else
+   *-mingw*)
+     AC_DEFINE(MOZ_MEMORY_WINDOWS)
+     dnl This is sort of awful. Will revisit if we add support for more versions
+-    if test "$CC_VERSION" == "14.00.50727.762" -o "$CC_VERSION" == "15.00.30729.01"; then
++    if test "$CC_VERSION" = "14.00.50727.762" -o "$CC_VERSION" = "15.00.30729.01"; then
+       WIN32_OLD_STYLE_JEMALLOC=1
+       AC_DEFINE(WIN32_OLD_STYLE_JEMALLOC)
+-    elif test "$CC_VERSION" == "16.00.30319.01" -o "$CC_VERSION" == "16.00.40219.01"; then
++    elif test "$CC_VERSION" = "16.00.30319.01" -o "$CC_VERSION" = "16.00.40219.01"; then
+       WIN32_NEW_STYLE_JEMALLOC=1
+       AC_DEFINE(WIN32_NEW_STYLE_JEMALLOC)
+     else        
+@@ -9323,7 +9337,8 @@ rm -f confdefs.h.save
  mv confdefs.h confdefs.h.save
  egrep -v "$_EGREP_PATTERN" confdefs.h.save > confdefs.h
  AC_OUTPUT_MAKE_DEFS()
@@ -56,9 +69,9 @@ $NetBSD$
  AC_SUBST(MOZ_DEFINES)
  rm -f confdefs.h
  mv confdefs.h.save confdefs.h
-@@ -9493,6 +9508,8 @@ if test -z "$MOZ_NATIVE_NSPR"; then
+@@ -9435,6 +9450,8 @@ if test -z "$MOZ_NATIVE_NSPR"; then
      AC_MSG_WARN([Recreating autoconf.mk with updated nspr-config output])
-     if test "$OS_ARCH" != "WINNT" -a "$OS_ARCH" != "WINCE"; then
+     if test "$OS_ARCH" != "WINNT"; then
         NSPR_LIBS=`./nsprpub/config/nspr-config --prefix=$LIBXUL_DIST --exec-prefix=$MOZ_BUILD_ROOT/dist --libdir=$LIBXUL_DIST/lib --libs`
 +       AC_MSG_WARN([pkgsrc: adding run path to NSPR_LIBS for bundled NSPR.])
 +       NSPR_LIBS="-Wl,-R${prefix}/lib/\${MOZILLA_PKG_NAME} ${NSPR_LIBS}"

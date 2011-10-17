@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2010/05/06 10:21:17 adam Exp $
+# $NetBSD: Makefile,v 1.9 2011/10/13 12:53:56 hans Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc46-${GCC_VERSION}
+PKGREVISION=		2
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_GNU:=gcc/gcc-${GCC_VERSION}/}
 EXTRACT_SUFX=		.tar.bz2
@@ -13,14 +14,9 @@ LICENSE=		gnu-gpl-v2 AND gnu-gpl-v3 AND gnu-lgpl-v2 AND gnu-lgpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		awk:run bash:run perl chmod \
-			gmake:run makeinfo msgfmt bison flex gm4 \
-			sed:run unzip
+USE_TOOLS+=		awk:run bash:run chmod gmake:run makeinfo sed:run
 
-DEPENDS+=		zip-[0-9]*:../../archivers/zip
-DEPENDS+=		libiconv-[0-9]*:../../converters/libiconv
-
-GCC_VERSION=		4.6.0
+GCC_VERSION=		4.6.1
 
 GCC_SUBPREFIX=		gcc46
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
@@ -39,6 +35,16 @@ UNLIMIT_RESOURCES+=	stacksize
 .include "options.mk"
 
 # Determine whether to use binutils
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=		OBJDUMP=/usr/sfw/bin/gobjdump
+CONFIGURE_ARGS+=	--without-gnu-ld --with-ld=/usr/ccs/bin/ld
+. if !exists(/usr/sfw/bin/gas)
+CONFIGURE_ARGS+=	--without-gnu-as --with-as=/usr/ccs/bin/as
+. else
+CONFIGURE_ARGS+=	--with-gnu-as --with-as=/usr/sfw/bin/gas
+. endif
+.endif
+
 
 # REPLACE_AWK+=	gcc/testsuite/gcc.test-framework/test-framework.awk	\
 # 		gcc/mkmap-symver.awk					\
@@ -60,53 +66,19 @@ REPLACE_BASH+= gcc/dbgcnt.def
 REPLACE_BASH+= gcc/testsuite/gcc.test-framework/gen_directive_tests
 REPLACE_BASH+= libstdc++-v3/scripts/run_doxygen
 
-# Optional languages - change as required
-# Ada could be added although there is a bootstrapping issue.  See
-# ../gcc34-ada for guidance
-BUILD_DEFS+=		BUILD_CXX BUILD_FORTRAN BUILD_JAVA BUILD_OBJC
-BUILD_CXX?=		YES
-BUILD_FORTRAN?=		YES
-BUILD_JAVA?=		NO
-BUILD_OBJC?=		YES
-
-LANGS= c
-
-#.if !empty(BUILD_CXX:M[aA][dD][aA])
-#LANGS+= ada
-#.endif
-
-.if !empty(BUILD_CXX:M[Yy][Ee][Ss])
-LANGS+= c++
-.endif
-
-.if !empty(BUILD_FORTRAN:M[Yy][Ee][Ss])
-LANGS+= fortran
-.endif
-
-.if !empty(BUILD_JAVA:M[Yy][Ee][Ss])
-LANGS+= java
-.endif
-
-.if !empty(BUILD_OBJC:M[Yy][Ee][Ss])
-LANGS+= objc
-.endif
-
 
 CONFIGURE_ARGS+=	--prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
-CONFIGURE_ARGS+=	--with-system-zlib
-CONFIGURE_ARGS+=	--disable-nls
 CONFIGURE_ARGS+=	--enable-shared
-CONFIGURE_ARGS+=	--enable-__cxa_atexit
 CONFIGURE_ARGS+=	--enable-long-long
 CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--enable-libssp
 CONFIGURE_ARGS+=	--enable-threads=posix
 CONFIGURE_ARGS+=	--with-gmp=${BUILDLINK_PREFIX.gmp}
 CONFIGURE_ARGS+=	--with-mpfr=${BUILDLINK_PREFIX.mpfr}
-CONFIGURE_ARGS+=	--with-libiconv-prefix=${PREFIX}
-CONFIGURE_ARGS+=	--with-gxx-include-dir=${GCC_PREFIX}/include/c++/
 .if ${OPSYS} == "NetBSD"
+.include "../../devel/binutils/buildlink3.mk"
+.include "../../devel/libelf/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-ld=${PREFIX}/bin/gnu-ld
 CONFIGURE_ARGS+=	--with-libelf=${PREFIX}
 MAKE_ENV+=		ac_cv_func_clock_gettime=yes
@@ -116,21 +88,6 @@ CONFIGURE_ARGS+=	--disable-libquadmath --disable-libquadmath-support
 .endif
 
 CONFIGURE_ENV+=		CONFIG_SHELL=${CONFIG_SHELL}
-
-# ${WRKSRC}/gcc-4.4.1/libjava/contrib/aotcompile.py.in stores the path to
-# a 'make' program so we need to make sure we give it the installed 'make' and not
-# the tool wrapped one.
-CONFIGURE_ENV+=		PKGSRC_MAKE=${TOOLS_PATH.gmake}
-MAKE_ENV+=		PKGSRC_MAKE=${TOOLS_PATH.gmake}
-
-
-# fastjar-0.93 from pkgsrc/archivers/fastjar seems to trigger a build
-# failure (seen on NetBSD-5.0/i386) when building java.  So in case
-# the fastjar package is installed, make sure the configure script
-# doesn't pick it up.
-CONFIGURE_ENV+=		JAR=no
-MAKE_ENV+=		JAR=no
-MAKE_ENV+=		ac_cv_prog_JAR=no
 
 MAKE_ENV+=		ICONVPREFIX=${BUILDLINK_PREFIX.iconv}
 MAKE_ENV+=		SHELL=${CONFIG_SHELL}
@@ -184,15 +141,17 @@ do-install:
 	(cd ${WRKDIR}/obj && ${SETENV} ${MAKE_ENV} ${GMAKE} install DESTDIR=${DESTDIR} \
 	 && ${TEST} -f ${DESTDIR}${GCC_PREFIX}/bin/cc || ${LN} -f ${DESTDIR}${GCC_PREFIX}/bin/gcc ${DESTDIR}${GCC_PREFIX}/bin/cc)
 
+.if ${OPSYS} == "SunOS" && ${OS_VERSION} != "5.11" && !empty(MACHINE_ARCH:M*86*)
+post-install:
+	-${SH} files/values.c ${DESTDIR}${GCC_PREFIX}/bin/gcc -m32
+	-${SH} files/values.c ${DESTDIR}${GCC_PREFIX}/bin/gcc -m64
+.endif
+
 GENERATE_PLIST+=                                                        \
 	cd ${DESTDIR}${PREFIX} && ${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print \
 	| ${SORT} ;
 
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../math/mpcomplex/buildlink3.mk"
-.include "../../devel/zlib/buildlink3.mk"
 .include "../../math/mpfr/buildlink3.mk"
-.include "../../devel/binutils/buildlink3.mk"
-.include "../../devel/libelf/buildlink3.mk"
-.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

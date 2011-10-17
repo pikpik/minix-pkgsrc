@@ -1,17 +1,18 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.6 2011/09/12 14:35:54 cheusov Exp $
 
-DISTNAME=	pkg_summary-utils-0.54.0
+DISTNAME=	pkg_summary-utils-0.56.1
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/psu/ \
 		http://www.mova.org/~cheusov/pub/pkg_summary-utils/
 
-MAINTAINER=	cheusov@tut.by
+MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://www.mova.org/~cheusov/pub/pkg_summary-utils/
 COMMENT=	Utilities for manipulating pkg_summary(5) files
 LICENSE=	2-clause-bsd
 
 DEPENDS+=	runawk>=1.1.0:../../lang/runawk
 DEPENDS+=	pipestatus-[0-9]*:../../devel/pipestatus
+DEPENDS+=	digest-[0-9]*:../../pkgtools/digest
 
 BUILD_DEPENDS+=	mk-configure>=0.20.0:../../devel/mk-configure
 
@@ -23,11 +24,16 @@ CONFLICTS+=	pkg_src_update_summary-[0-9]*
 CONFLICTS+=	pkg_update_summary-[0-9]*
 CONFLICTS+=	pkg_summary4view-[0-9]*
 
+# usage:
+#    bmake test
+#    bmake test TESTS='show-tests'
+#    bmake test TESTS='pkg_subgraph_deps pkg_bin_summary ...'
 TEST_TARGET=		test
 
 USE_LANGUAGES=		#empty
 USE_TOOLS+=		gzip:run
 
+PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 EGDIR=		${PREFIX}/share/examples/pkg_summary-utils
@@ -52,4 +58,5 @@ AUTO_MKDIRS=	yes
 
 MAKE_PROGRAM=	${PREFIX}/bin/mkcmake
 
+.include "../../devel/mk-configure/configure.mk"
 .include "../../mk/bsd.pkg.mk"

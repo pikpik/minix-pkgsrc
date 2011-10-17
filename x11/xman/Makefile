@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/11/10 17:21:39 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2011/09/24 13:14:16 joerg Exp $
 #
 
 DISTNAME=		xman-1.1.0
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
@@ -23,6 +24,10 @@ CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 CONFIGURE_ARGS+=	--with-manconfig=/etc/man.conf
 .endif
 
+MAKE_FLAGS+=		appdefaultdir=${PREFIX}/lib/X11/app-defaults
+
 .include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
+.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXprintUtil/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

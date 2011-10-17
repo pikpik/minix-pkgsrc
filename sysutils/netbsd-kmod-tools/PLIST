@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/modstat
+sbin/modload
+sbin/modunload

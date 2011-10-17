@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/07/13 13:25:17 hans Exp $
+# $NetBSD: Makefile,v 1.27 2011/10/12 15:48:40 hans Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc44-${GCC_VERSION}
@@ -49,11 +49,12 @@ CONFIGURE_ARGS+=	--disable-visibility
 .endif
 
 .if ${OPSYS} == "SunOS"
-CONFIGURE_ARGS+=	--without-gnu-ld --with-ld=/usr/bin/ld
-. if !exists(/usr/bin/gas)
-CONFIGURE_ARGS+=	--without-gnu-as --with-as=/usr/bin/as
+CONFIGURE_ENV+=		OBJDUMP=/usr/sfw/bin/gobjdump
+CONFIGURE_ARGS+=	--without-gnu-ld --with-ld=/usr/ccs/bin/ld
+. if !exists(/usr/sfw/bin/gas)
+CONFIGURE_ARGS+=	--without-gnu-as --with-as=/usr/ccs/bin/as
 . else
-CONFIGURE_ARGS+=	--with-gnu-as --with-as=/usr/bin/gas
+CONFIGURE_ARGS+=	--with-gnu-as --with-as=/usr/sfw/bin/gas
 .endif
 .endif
 

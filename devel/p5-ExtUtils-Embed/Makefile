@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/17 10:45:15 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/19 04:28:05 obache Exp $
 
 DISTNAME=	ExtUtils-Embed-1.14
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=ExtUtils/}
 
@@ -10,10 +11,10 @@ HOMEPAGE=	http://search.cpan.org/dist/ExtUtils-Embed/
 COMMENT=	Utilities for embedding Perl in C/C++ applications
 LICENSE=	${PERL5_LICENSE}
 
-USE_LANGUAGES=	# empty
-PERL5_PACKLIST=	auto/ExtUtils-Embed/.packlist
-
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_LANGUAGES=		# empty
+PERL5_PACKLIST=		auto/ExtUtils-Embed/.packlist
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/11/10 17:21:38 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2009/11/09 19:43:31 tnn Exp $
 #
 
 DISTNAME=		bitmap-1.0.4
@@ -14,6 +14,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
+
+MAKE_FLAGS+=		appdefaultdir=${PREFIX}/lib/X11/app-defaults
 
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"

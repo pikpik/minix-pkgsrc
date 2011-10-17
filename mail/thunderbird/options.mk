@@ -1,19 +1,23 @@
-# $NetBSD: options.mk,v 1.5 2010/07/12 16:49:21 tnn Exp $
+# $NetBSD: options.mk,v 1.8 2011/08/23 18:04:17 tnn Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.thunderbird
 PKG_SUPPORTED_OPTIONS=	debug mozilla-jemalloc gnome official-mozilla-branding mozilla-lightning mozilla-enigmail
 PKG_SUGGESTED_OPTIONS=	mozilla-lightning
 
-PLIST_VARS+=		branding debug gnome
+PLIST_VARS+=		branding nobranding debug gnome jit
 
 .if ${OPSYS} == "Linux" || ${OPSYS} == "SunOS"
 PKG_SUGGESTED_OPTIONS+=	mozilla-jemalloc
 .endif
 
 .if !empty(MACHINE_ARCH:Mi386) || !empty(MACHINE_ARCH:Msparc) || \
-	!empty(MACHINE_ARCH:Marm)
+	!empty(MACHINE_ARCH:Marm) || !empty(MACHINE_ARCH:Mx86_64)
 PKG_SUPPORTED_OPTIONS+=	mozilla-jit
 PKG_SUGGESTED_OPTIONS+=	mozilla-jit
+NANOJIT_ARCH.i386=	i386
+NANOJIT_ARCH.arm=	ARM
+NANOJIT_ARCH.sparc=	Sparc
+NANOJIT_ARCH.x86_64=	X64
 .endif
 
 .include "../../mk/bsd.options.mk"
@@ -34,16 +38,20 @@ CONFIGURE_ARGS+=	--disable-jemalloc
 .endif
 
 .if !empty(PKG_OPTIONS:Mdebug)
-CONFIGURE_ARGS+=	--enable-debug
+CONFIGURE_ARGS+=	--enable-debug --enable-debug-symbols
+CONFIGURE_ARGS+=	--disable-install-strip
 PLIST.debug=		yes
 .else
-CONFIGURE_ARGS+=	--disable-debug
+CONFIGURE_ARGS+=	--disable-debug --disable-debug-symbols
+CONFIGURE_ARGS+=	--enable-install-strip
 .endif
 
 .if !empty(PKG_OPTIONS:Mmozilla-jit)
-CONFIGURE_ARGS+=	--enable-jit
+PLIST.jit=		yes
+PLIST_SUBST+=		NANOJIT_ARCH=${NANOJIT_ARCH.${MACHINE_ARCH}}
+CONFIGURE_ARGS+=	--enable-tracejit
 .else
-CONFIGURE_ARGS+=	--disable-jit
+CONFIGURE_ARGS+=	--disable-tracejit
 .endif
 
 .if !empty(PKG_OPTIONS:Mmozilla-lightning)
@@ -69,4 +77,5 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 .else
 CONFIGURE_ARGS+=	--disable-official-branding
+PLIST.nobranding=	yes
 .endif

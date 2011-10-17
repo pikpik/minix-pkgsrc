@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2011/07/27 00:52:20 taca Exp $
+# $NetBSD: Makefile,v 1.10 2011/09/30 13:41:33 adam Exp $
 
 .include "../../net/samba/Makefile.mirrors"
 
 DISTNAME=	samba-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${SAMBA_MIRRORS:=stable/}
 
@@ -50,6 +51,7 @@ FILES_SUBST+=		WINBINDD_RCD_SCRIPT=${WINBINDD_RCD_SCRIPT:Q}
 USE_TOOLS+=		gmake mktemp perl:run
 REPLACE_PERL=		script/findsmb.in
 
+BROKEN_GETTEXT_DETECTION=yes
 USE_GNU_READLINE=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
@@ -86,8 +88,10 @@ PLIST.macosx=		yes
 
 .if ${_OPSYS_SHLIB_TYPE} == "dylib"
 PLIST_SUBST+=	LIBEXT=dylib
+SAMBA_LIBEXT=	dylib
 .else
 PLIST_SUBST+=	LIBEXT=so
+SAMBA_LIBEXT=	so
 .endif
 
 .if !defined(PWD_MKDB)
@@ -97,6 +101,13 @@ MAKEFLAGS+=	PWD_MKDB=${PWD_MKDB:Q}
 .endif
 FILES_SUBST+=	MKTEMP=${MKTEMP:Q}
 FILES_SUBST+=	PWD_MKDB=${PWD_MKDB:Q}
+
+.if ${OPSYS} == "NetBSD"
+.if !empty(PKG_OPTIONS:Mwinbind)
+# Install a /usr/lib/nss_winbind.so.0 -> ${PREFIX}/lib/nss_winbind.so.0 symlink
+INSTALL_TEMPLATES+=	INSTALL.nss_winbind
+.endif
+.endif
 
 INSTALLATION_DIRS+=	${DOCDIR} ${EGDIR}
 
@@ -153,8 +164,15 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/script/updatesmbpasswd.sh \
 		${DESTDIR}${PREFIX}/${EGDIR}
 	${CHMOD} ${SHAREMODE} ${DESTDIR}${PREFIX}/include/*.h
+.if ${OPSYS} == "NetBSD"
+.if !empty(PKG_OPTIONS:Mwinbind)
+	${INSTALL_LIB} ${WRKDIR}/${DISTNAME}/nsswitch/nss_winbind.${SAMBA_LIBEXT} \
+		${DESTDIR}${PREFIX}/lib/nss_winbind.${SAMBA_LIBEXT}.0
+.endif
+.endif
 
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"

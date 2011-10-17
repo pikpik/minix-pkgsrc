@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2011/01/13 13:38:44 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/22 13:44:09 obache Exp $
 #
 
 DISTNAME=	fbreader-sources-0.10.7
 PKGNAME=	${DISTNAME:S/-sources//}
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	misc
 MASTER_SITES=	http://www.fbreader.org/
 EXTRACT_SUFX=	.tgz
@@ -37,6 +37,7 @@ CPPFLAGS+=	-DDO_ICONV_CAST
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../textproc/liblinebreak/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"

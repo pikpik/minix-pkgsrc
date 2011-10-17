@@ -1,0 +1,16 @@
+$NetBSD$
+
+Use standard headers.
+
+--- buffer.c~	2006-01-06 22:48:10.000000000 +0000
++++ buffer.c
+@@ -4,6 +4,9 @@
+  *  See file jcabc2ps.c for details.
+  */
+ 
++#include <string.h>
++#include <stdlib.h>
++
+ #include "jcabc2ps.h"
+ #include "buffer.h"
+ #include "pssubs.h"

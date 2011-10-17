@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2011/04/22 13:42:34 obache Exp $
+# $NetBSD: Makefile,v 1.27 2011/09/27 10:48:20 markd Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	x11
 COMMENT=	Support libraries for the KDE integrated X11 desktop
 
@@ -50,8 +50,9 @@ SUBST_STAGE.kdelibsfix=		pre-configure
 SUBST_MESSAGE.kdelibsfix=	Fixing hardcoded paths.
 SUBST_FILES.kdelibsfix= \
 	kde3support/kdeui/k3sconfig.cpp \
+	kdeui/colors/kcolordialog.cpp \
 	kio/kssl/kopenssl.cpp
-SUBST_SED.kdelibsfix=		-e 's:@LOCALBASE@:${LOCALBASE}:g'
+SUBST_SED.kdelibsfix=		-e 's:@LOCALBASE@:${LOCALBASE}:g' -e 's:@X11BASE@:${X11BASE}:g'
 
 USE_TOOLS+=	flex gmake
 

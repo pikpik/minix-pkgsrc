@@ -1,4 +1,4 @@
-# $NetBSD: OpenBSD.mk,v 1.29 2009/07/26 05:32:43 agc Exp $
+# $NetBSD: OpenBSD.mk,v 1.30 2010/07/08 04:57:36 dholland Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
@@ -32,6 +32,8 @@ ROOT_GROUP?=	wheel
 ULIMIT_CMD_datasize?=	ulimit -d `ulimit -H -d`
 ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
+
+X11_TYPE?=		native
 
 # imake installs manpages in weird places
 # these values from /usr/X11R6/lib/X11/config/OpenBSD.cf

@@ -1,4 +1,4 @@
-# $NetBSD: mozilla-common.mk,v 1.23 2011/07/11 21:20:34 tnn Exp $
+# $NetBSD: mozilla-common.mk,v 1.25 2011/08/18 18:31:09 tnn Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 2.0.
 # 
@@ -17,6 +17,7 @@ BUILD_DEPENDS+=		zip>=2.3:../../archivers/zip
 PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
+CHECK_INTERPRETER_SKIP+=lib/xulrunner-sdk/sdk/bin/xpt.py
 PRIVILEGED_STAGES+=	clean
 
 CONFIGURE_ARGS+=	--disable-tests --disable-pedantic
@@ -35,16 +36,13 @@ CONFIGURE_ARGS+=	--enable-system-sqlite
 CONFIGURE_ARGS+=	--disable-crashreporter
 CONFIGURE_ARGS+=	--disable-libnotify
 CONFIGURE_ARGS+=	--disable-necko-wifi
+CONFIGURE_ARGS+=	--enable-chrome-format=flat
 
 SUBST_CLASSES+=			fix-paths
 SUBST_STAGE.fix-paths=		pre-configure
 SUBST_MESSAGE.fix-paths=	Fixing absolute paths.
 SUBST_FILES.fix-paths=		${MOZILLA_DIR}xpcom/build/nsXPCOMPrivate.h
-SUBST_FILES.fix-paths+=		${MOZILLA_DIR}xulrunner/app/nsRegisterGREUnix.cpp
-SUBST_FILES.fix-paths+=		${MOZILLA_DIR}xulrunner/installer/Makefile.in
-SUBST_FILES.fix-paths+=		${MOZILLA_DIR}extensions/java/xpcom/interfaces/org/mozilla/xpcom/Mozilla.java
 SUBST_FILES.fix-paths+=		${MOZILLA_DIR}xpcom/io/nsAppFileLocationProvider.cpp
-SUBST_SED.fix-paths=		-e 's,/etc/gre.d,${PREFIX}/lib/xulrunner/gre.d,g'
 SUBST_SED.fix-paths+=		-e 's,/usr/lib/mozilla/plugins,${PREFIX}/lib/netscape/plugins,g'
 
 CONFIG_GUESS_OVERRIDE+=		${MOZILLA_DIR}build/autoconf/config.guess

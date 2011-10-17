@@ -1,19 +1,19 @@
-# $NetBSD: Makefile,v 1.28 2011/02/21 07:48:20 obache Exp $
+# $NetBSD: Makefile,v 1.31 2011/08/25 10:32:52 sbd Exp $
 
 # Note: Regen distinfo with PKG_DEFAULT_OPTIONS+=sun-jre-jce
 # Note: Update DOWNLOAD_NAME when you update the JRE version
 
-DISTNAME=	jre-6u26-linux-${DIST_ARCH}
-PKGNAME=	sun-jre6-6.0.26
+DISTNAME=	jre-6u27-linux-${DIST_ARCH}
+PKGNAME=	sun-jre6-6.0.27
 MASTER_SITES=	# empty
 
 LICENSE=	sun-jre6-license
 
-DOWNLOAD_NAME=	Java Runtime Environment (JRE) 6u26
+DOWNLOAD_NAME=	Java Runtime Environment (JRE) 6u27
 
 USE_TOOLS+=	pax
 
-WRKSRC=		${WRKDIR}/jre1.6.0_26
+WRKSRC=		${WRKDIR}/jre1.6.0_27
 JAVA_WRAPPERS=	java javaws keytool orbd policytool rmid rmiregistry \
 		servertool tnameserv
 REQD_DIRS=	${JAVA_HOME}
@@ -32,7 +32,7 @@ CONF_FILES=	# empty
 CONF_FILES+=	${JAVA_HOME}/lib/${file}.default ${JAVA_HOME}/lib/${file}
 .endfor
 
-CHECK_FILES_SKIP+=	${JAVA_HOME}/lib/${EMUL_ARCH}/client/classes.jsa
+CHECK_FILES_SKIP+=	${JAVA_HOME}/lib/${JAVA_ARCH}/client/classes.jsa
 CHECK_SHLIBS_SUPPORTED=	NO
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.sun-jre6
@@ -40,7 +40,7 @@ PKG_SUPPORTED_OPTIONS=	sun-jre-jce
 
 .include "../../mk/bsd.options.mk"
 
-PLIST_SRC=	PLIST.linux-i386
+PLIST_SRC=	PLIST.linux-${EMUL_ARCH}
 
 PLIST_VARS+=	jce x11
 .if !empty(PKG_OPTIONS:Msun-jre-jce)
@@ -70,7 +70,7 @@ LIBX11=		${X11PREFIX}/lib/libX11.so.6
 .PHONY: create-library-symlinks
 post-install: create-library-symlinks
 create-library-symlinks:
-	${RUN}${LN} -fs ${LIBX11} ${DESTDIR}${JAVA_HOME}/lib/${EMUL_ARCH}
+	${RUN}${LN} -fs ${LIBX11} ${DESTDIR}${JAVA_HOME}/lib/${JAVA_ARCH}
 
 PLIST.x11=	yes
 .endif

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2009/07/07 15:51:40 sno Exp $
+# $NetBSD: Makefile,v 1.5 2011/08/14 08:18:09 obache Exp $
 
-DISTNAME=		MARC-Record-2.0.0
+DISTNAME=		MARC-Record-2.0.3
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		2
 CATEGORIES=		databases perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=MARC/}
 

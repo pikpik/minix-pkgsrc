@@ -1,2 +1,2 @@
-@comment $NetBSD$
-bin/mkmemstick
+@comment $NetBSD: PLIST,v 1.1.1.1 2011/05/05 06:53:27 agc Exp $
+sbin/mkmemstick

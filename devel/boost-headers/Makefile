@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/09/13 16:14:13 jmmv Exp $
+# $NetBSD: Makefile,v 1.14 2011/10/02 10:20:28 sbd Exp $
 
 BOOST_PACKAGE=		headers
 BOOST_COMMENT=		(build-time headers)

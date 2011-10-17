@@ -1,9 +1,9 @@
-# $NetBSD: Linux.mk,v 1.41 2011/03/20 09:00:08 obache Exp $
+# $NetBSD: Linux.mk,v 1.43 2011/08/22 15:17:53 cheusov Exp $
 #
 # Variable definitions for the Linux operating system.
 
 ECHO_N?=	${ECHO} -n
-.if !defined(X11_TYPE) || ${X11_TYPE} == "native"
+.if defined(X11_TYPE) && ${X11_TYPE} == "native"
 IMAKE_MAKE?=	${GMAKE}	# program which gets invoked by imake
 IMAKE_TOOLS=		gmake	# extra tools required when we use imake
 .endif
@@ -94,8 +94,9 @@ _OPSYS_CAN_CHECK_SHLIBS=	yes # use readelf in check/bsd.check-vars.mk
 
 # check for maximum command line length and set it in configure's environment,
 # to avoid a test required by the libtool script that takes forever.
-# FIXME: Adjust to work on this system and enable the lines below.
-#_OPSYS_MAX_CMDLEN_CMD=	/sbin/sysctl -n kern.argmax
+.if exists(/usr/bin/getconf)
+_OPSYS_MAX_CMDLEN_CMD?=	/usr/bin/getconf ARG_MAX
+.endif
 
 .if (${MACHINE_ARCH} == "x86_64")
 ABI?=	64

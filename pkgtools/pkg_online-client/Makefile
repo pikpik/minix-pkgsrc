@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2011/05/16 21:46:13 cheusov Exp $
+# $NetBSD: Makefile,v 1.5 2011/09/04 18:21:26 cheusov Exp $
 #
 
 .include "../../pkgtools/pkg_online-server/Makefile.common"
 
 PKGNAME=	${DISTNAME:C/online/online-client/}
 CATEGORIES=	pkgtools
-MAINTAINER=	cheusov@tut.by
+MAINTAINER=	cheusov@NetBSD.org
 COMMENT+=	(client tools)
 
 DEPENDS+=	dict-client>=1.10.9:../../textproc/dict-client
@@ -27,4 +27,5 @@ CONF_FILES=	${EGDIR}/pkg_online_client.conf \
 
 MAKE_PROGRAM=	mkcmake
 
+.include "../../devel/mk-configure/configure.mk"
 .include "../../mk/bsd.pkg.mk"

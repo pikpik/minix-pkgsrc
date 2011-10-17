@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.609 2011/08/06 22:05:59 ryoon Exp $
+# $NetBSD: Makefile,v 1.611 2011/08/19 06:11:02 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -131,6 +131,7 @@ SUBDIR+=	gfract
 SUBDIR+=	gif2png
 SUBDIR+=	gif320
 SUBDIR+=	giflib
+SUBDIR+=	giflib-util
 SUBDIR+=	gifsicle
 SUBDIR+=	giftrans
 SUBDIR+=	gimmage
@@ -334,7 +335,6 @@ SUBDIR+=	ploticus-examples
 SUBDIR+=	plotmtv
 SUBDIR+=	plotutils
 SUBDIR+=	png
-SUBDIR+=	png12
 SUBDIR+=	png2html
 SUBDIR+=	pngcheck
 SUBDIR+=	pngcrush

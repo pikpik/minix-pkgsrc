@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2011/05/15 10:06:11 hans Exp $
+# $NetBSD: Makefile,v 1.41 2011/09/12 20:14:06 bsiegert Exp $
 
 .include "dist.mk"
 
@@ -40,7 +40,15 @@ CONFIGURE_ARGS+=	--enable-shared
 .if ${PTHREAD_TYPE} == "pth"
 CONFIGURE_ARGS+=	--with-pth
 .endif
+
+.include "../../mk/compiler.mk"
+
+# Clang needs -fwrapv
+.if !empty(PKGSRC_COMPILER:Mclang)
+CFLAGS+=	-fwrapv
 .endif
+
+.include "../../mk/bsd.prefs.mk"
 
 # fdatasync()
 LIBS.SunOS+=		-lrt
@@ -118,7 +126,9 @@ PLIST.nis=	yes
 .  endif
 .else
 PLIST.dll=	yes
-.  if ${OPSYS} != "NetBSD" || exists(/usr/bin/ypcat)
+.  if ${OPSYS} == "MirBSD"
+# neither nis nor no-nis
+.  elif ${OPSYS} != "NetBSD" || exists(/usr/bin/ypcat)
 PLIST.nis=	yes
 .  else
 PLIST.no-nis=	yes

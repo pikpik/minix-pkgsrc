@@ -1,9 +1,8 @@
-@comment $NetBSD: PLIST,v 1.4 2010/09/10 06:39:06 taca Exp $
+@comment $NetBSD: PLIST,v 1.6 2011/08/13 01:05:17 taca Exp $
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/CHANGELOG
 ${GEM_LIBDIR}/CONTRIBUTORS
 ${GEM_LIBDIR}/MIT-LICENSE
-${GEM_LIBDIR}/README.rdoc
 ${GEM_LIBDIR}/gem-public_cert.pem
 ${GEM_LIBDIR}/lib/active_merchant.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing.rb
@@ -29,6 +28,7 @@ ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/braintree.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/braintree/braintree_common.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/braintree_blue.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/braintree_orange.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/gateways/card_save.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/card_stream.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/cyber_source.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/data_cash.rb
@@ -60,6 +60,7 @@ ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/netaxept.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/netbilling.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/nmi.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/ogone.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/gateways/optimal_payment.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/orbital.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/orbital/orbital_soft_descriptors.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/pay_junction.rb
@@ -79,6 +80,7 @@ ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/paypal/paypal_express_respons
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/paypal_ca.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/paypal_express.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/paypal_express_common.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/gateways/paystation.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/plugnpay.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/psigate.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/psl_card.rb
@@ -98,6 +100,7 @@ ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/secure_pay_au.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/secure_pay_tech.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/skip_jack.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/smart_ps.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/gateways/stripe.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/trans_first.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/transax.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/gateways/trust_commerce.rb
@@ -125,6 +128,9 @@ ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/directebanking.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/directebanking/helper.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/directebanking/notification.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/directebanking/return.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/integrations/e_payment_plans.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/integrations/e_payment_plans/helper.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/integrations/e_payment_plans/notification.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/gestpay.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/gestpay/common.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/gestpay/helper.rb
@@ -143,6 +149,9 @@ ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/nochex/helper.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/nochex/notification.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/nochex/return.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/notification.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/integrations/payflow_link.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/integrations/payflow_link/helper.rb
+${GEM_LIBDIR}/lib/active_merchant/billing/integrations/payflow_link/notification.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/paypal.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/paypal/helper.rb
 ${GEM_LIBDIR}/lib/active_merchant/billing/integrations/paypal/notification.rb

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/01/23 07:55:14 markd Exp $
+# $NetBSD: Makefile,v 1.20 2011/08/20 21:33:28 wiz Exp $
 
 DISTNAME=	kdepimlibs-${_KDE_VERSION}
 PKGREVISION=	1

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/08 21:50:48 cheusov Exp $
 #
 
 VERSION=	4.2
@@ -10,7 +10,7 @@ MASTER_SITES=	http://ftp.easysw.com/pub/epm/${VERSION}/ \
 		http://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/epm/${VERSION}/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	vle@gmx.net
+MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://epmhome.org/
 COMMENT=	ESP generates software packages from a list of files
 LICENSE=	gnu-gpl-v2

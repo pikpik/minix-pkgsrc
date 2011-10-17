@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2011/06/19 16:15:57 pettai Exp $
+# $NetBSD: Makefile,v 1.17 2011/08/20 08:12:41 obache Exp $
 
-DISTNAME=	unbound-1.4.12
+DISTNAME=	unbound-1.4.13
 CATEGORIES=	net
 MASTER_SITES=	http://www.unbound.net/downloads/
 
@@ -24,6 +24,9 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASE}
 CONFIGURE_ARGS+=	--enable-allsymbols
 
 # Add the same logic as for ldns, so sha2/gost is configured automatically
+CHECK_BUILTIN.openssl=	yes
+.include "../../security/openssl/builtin.mk"
+CHECK_BUILTIN.openssl=	no
 .include "../../security/openssl/buildlink3.mk"
 
 PLIST_VARS+=            sha2 gost

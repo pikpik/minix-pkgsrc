@@ -1,16 +1,17 @@
-# $NetBSD: Makefile,v 1.18 2008/10/19 19:18:59 he Exp $
+# $NetBSD: Makefile,v 1.20 2011/08/14 15:14:18 obache Exp $
 #
 
 DISTNAME=	XML-Grove-0.46alpha
 PKGNAME=	p5-${DISTNAME:S/alpha/.0.1/}
-PKGREVISION=	6
+PKGREVISION=	7
 SVR4_PKGNAME=	p5xgr
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=XML/}
 
 MAINTAINER=	explorer@NetBSD.org
-#HOMEPAGE=
+HOMEPAGE=	http://search.cpan.org/dist/XML-Grove/
 COMMENT=	Perl 5 module providing simple objects for parsed XML documents
+LICENSE=	artistic
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

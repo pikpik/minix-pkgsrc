@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: lwresd.sh,v 1.1.1.1 2009/01/04 00:21:36 adrianp Exp $
+# $NetBSD: lwresd.sh,v 1.2 2009/02/23 09:22:16 adrianp Exp $
 #
 # PROVIDE: lwresd
 # REQUIRE: SERVERS

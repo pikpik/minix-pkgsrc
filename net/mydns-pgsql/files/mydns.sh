@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: mydns.sh,v 1.1.1.1 2005/10/29 16:56:15 minskim Exp $
 #
 # PROVIDE: mydns
 # REQUIRE: SERVERS

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.37 2011/04/22 13:44:15 obache Exp $
+# $NetBSD: Makefile,v 1.39 2011/10/14 01:05:58 obache Exp $
 #
 
 DISTNAME=		gnash-${VER}
 VER=			0.8.9
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_GNU:=gnash/${VER}/}
 EXTRACT_SUFX=		.tar.bz2
@@ -24,6 +24,8 @@ INSTALL_TARGET=		install install-plugin
 
 # /bin/sh finds a syntax error without line number
 CONFIG_SHELL=		${TOOLS_BASH}
+CONFIGURE_ARGS+=	--with-boost-incl=${BUILDLINK_PREFIX.boost-headers}/include
+CONFIGURE_ARGS+=	--with-boost-lib=${BUILDLINK_PREFIX.boost-libs}/lib
 
 EGDIR=			${PREFIX}/share/examples/gnash
 INSTALLATION_DIRS=	${EGDIR}

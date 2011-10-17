@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.375 2011/06/09 04:38:51 jnemeth Exp $
+# $NetBSD: Makefile,v 1.380 2011/10/03 11:13:44 wiz Exp $
 #
 
 COMMENT=	Databases
@@ -198,6 +198,8 @@ SUBDIR+=	pear-MDB2_Driver_mysqli
 SUBDIR+=	pear-MDB2_Driver_pgsql
 SUBDIR+=	pear-MDB2_Driver_sqlite
 SUBDIR+=	pgadmin3
+SUBDIR+=	pgbouncer
+SUBDIR+=	pgbuildfarm
 SUBDIR+=	pgpool
 SUBDIR+=	pgtcl
 SUBDIR+=	pgtclng
@@ -260,13 +262,30 @@ SUBDIR+=	postgresql90-replicationtools
 SUBDIR+=	postgresql90-server
 SUBDIR+=	postgresql90-upgrade
 SUBDIR+=	postgresql90-uuid
+SUBDIR+=	postgresql91
+SUBDIR+=	postgresql91-adminpack
+SUBDIR+=	postgresql91-client
+SUBDIR+=	postgresql91-datatypes
+SUBDIR+=	postgresql91-dblink
+SUBDIR+=	postgresql91-docs
+SUBDIR+=	postgresql91-fuzzystrmatch
+SUBDIR+=	postgresql91-monitoring
+SUBDIR+=	postgresql91-pgcrypto
+SUBDIR+=	postgresql91-plperl
+SUBDIR+=	postgresql91-plpython
+SUBDIR+=	postgresql91-pltcl
+SUBDIR+=	postgresql91-replicationtools
+SUBDIR+=	postgresql91-server
+SUBDIR+=	postgresql91-upgrade
 SUBDIR+=	pxtools
 SUBDIR+=	py-PgSQL
 SUBDIR+=	py-bdb-xml
 SUBDIR+=	py-bsddb3
 SUBDIR+=	py-cassa
 SUBDIR+=	py-cdb
+SUBDIR+=	py-ckanclient
 SUBDIR+=	py-cx_Oracle
+SUBDIR+=	py-datapkg
 SUBDIR+=	py-elixir
 SUBDIR+=	py-gdbm
 SUBDIR+=	py-ldap

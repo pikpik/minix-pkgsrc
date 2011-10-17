@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.45 2011/04/22 13:42:27 obache Exp $
+# $NetBSD: Makefile,v 1.49 2011/09/14 15:53:35 hans Exp $
 
 # NOTE: Please send a copy of any patches that are not pkgsrc-specific
 # to <pulseaudio-discuss@mail.0pointer.de>
 
 PULSEAUDIO_VER=	0.9.21
-PKGREVISION=	9
+PKGREVISION=	10
 DISTNAME=	pulseaudio-${PULSEAUDIO_VER}
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/pulseaudio/
@@ -71,17 +71,25 @@ CONFIGURE_ENV+=		cc_cv_tls___thread=no
 BUILDLINK_TRANSFORM+=	rm:-Wl,--no-undefined
 .endif
 
-PLIST_VARS+=		evdev hal oss
+PLIST_VARS+=		evdev hal oss sun
 PLIST_SUBST+=		PULSEAUDIO_VER=${PULSEAUDIO_VER:Q}
 
 .if ${OPSYS} == "Darwin"
 BUILDLINK_TRANSFORM+=	rm:-Wl,-version-script=./map-file
 BUILDLINK_TRANSFORM+=	rm:-Wl,-no-undefined
 BUILDLINK_TRANSFORM+=	rm:-Wl,-z rm:-Wl,nodelete
+.elif ${OPSYS} == "SunOS"
+PLIST.sun=		yes
+.  if ${OS_VERSION} == "5.11"
+PLIST.hal=		yes
+PLIST.oss=		yes
+.  endif
 .else
 PLIST.hal=		yes
 PLIST.oss=		yes
 .endif
+
+CFLAGS.SunOS+=		-std=c99
 
 PKG_GROUPS=             ${PULSE_GROUP}
 PKG_GROUPS+=		${PULSE_GROUP_REALTIME}
@@ -107,7 +115,7 @@ PLIST.evdev=           yes
 .include "options.mk"
 
 pre-configure:
-	cd ${WRKSRC} && autoreconf -f
+	cd ${WRKSRC} && autoreconf -f ${AUTORECONF_ARGS}
 
 .include "../../audio/libsamplerate/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libsndfile+=	libsndfile>=1.0.20

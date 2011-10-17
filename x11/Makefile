@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.635 2011/04/20 18:40:43 hans Exp $
+# $NetBSD: Makefile,v 1.638 2011/10/02 14:11:52 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -333,8 +333,10 @@ SUBDIR+=	ruby-gnome2-gtk
 SUBDIR+=	ruby-gnome2-gtksourceview2
 SUBDIR+=	ruby-gnome2-vte
 SUBDIR+=	ruby-tk
+SUBDIR+=	ruby-wxruby
 SUBDIR+=	rxvt
 SUBDIR+=	rxvt-unicode
+SUBDIR+=	sakura
 SUBDIR+=	scrnsaverproto
 SUBDIR+=	sessreg
 SUBDIR+=	setxkbmap
@@ -350,7 +352,6 @@ SUBDIR+=	tk
 SUBDIR+=	tk-BWidget
 SUBDIR+=	tk-Tix
 SUBDIR+=	tkinfo
-SUBDIR+=	tkman
 SUBDIR+=	transset-df
 SUBDIR+=	trapproto
 SUBDIR+=	tzosdclock

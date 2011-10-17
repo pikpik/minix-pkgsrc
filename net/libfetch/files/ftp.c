@@ -1,4 +1,4 @@
-/*	$NetBSD: ftp.c,v 1.36 2010/08/20 17:56:49 joerg Exp $	*/
+/*	$NetBSD: ftp.c,v 1.38 2011/08/21 16:28:27 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * Copyright (c) 2008, 2009, 2010 Joerg Sonnenberger <joerg@NetBSD.org>
@@ -619,7 +619,6 @@ static void
 ftp_closefn(void *v)
 {
 	struct ftpio *io;
-	int r;
 
 	io = (struct ftpio *)v;
 	if (io == NULL) {
@@ -635,7 +634,7 @@ ftp_closefn(void *v)
 	fetch_close(io->dconn);
 	io->dconn = NULL;
 	io->dir = -1;
-	r = ftp_chkerr(io->cconn);
+	ftp_chkerr(io->cconn);
 	fetch_cache_put(io->cconn, ftp_disconnect);
 	free(io);
 	return;
@@ -677,14 +676,13 @@ ftp_transfer(conn_t *conn, const char *oper, const char *file, const char *op_ar
 	const char *bindaddr;
 	const char *filename;
 	int filenamelen, type;
-	int low, pasv, verbose;
+	int pasv, verbose;
 	int e, sd = -1;
 	socklen_t l;
 	char *s;
 	fetchIO *df;
 
 	/* check flags */
-	low = CHECK_FLAG('l');
 	pasv = !CHECK_FLAG('a');
 	verbose = CHECK_FLAG('v');
 
@@ -850,9 +848,9 @@ retry_mode:
 		uint16_t p;
 #if defined(IPV6_PORTRANGE) || defined(IP_PORTRANGE)
 		int arg;
+		int low = CHECK_FLAG('l');
 #endif
 		int d;
-		char *ap;
 		char hname[INET6_ADDRSTRLEN];
 
 		switch (u.ss.ss_family) {
@@ -895,7 +893,6 @@ retry_mode:
 			    (p >> 8) & 0xff, p & 0xff);
 			break;
 		case AF_INET6:
-#define UC(b)	(((int)b)&0xff)
 			e = -1;
 			u.sin6.sin6_scope_id = 0;
 			if (getnameinfo(&u.sa, l,
@@ -907,17 +904,21 @@ retry_mode:
 					goto ouch;
 			}
 			if (e != FTP_OK) {
-				ap = (char *)&u.sin6.sin6_addr;
+				unsigned char *ap = (void *)&u.sin6.sin6_addr.s6_addr;
+				uint16_t port = ntohs(u.sin6.sin6_port);
 				e = ftp_cmd(conn,
-				    "LPRT %d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\r\n",
+				    "LPRT %d,%d,%u,%u,%u,%u,%u,%u,%u,%u,"
+				    "%u,%u,%u,%u,%u,%u,%u,%u,%d,%d,%d\r\n",
 				    6, 16,
-				    UC(ap[0]), UC(ap[1]), UC(ap[2]), UC(ap[3]),
-				    UC(ap[4]), UC(ap[5]), UC(ap[6]), UC(ap[7]),
-				    UC(ap[8]), UC(ap[9]), UC(ap[10]), UC(ap[11]),
-				    UC(ap[12]), UC(ap[13]), UC(ap[14]), UC(ap[15]),
-				    2,
-				    (ntohs(u.sin6.sin6_port) >> 8) & 0xff,
-				    ntohs(u.sin6.sin6_port)        & 0xff);
+				    (unsigned)ap[0], (unsigned)ap[1],
+				    (unsigned)ap[2], (unsigned)ap[3],
+				    (unsigned)ap[4], (unsigned)ap[5],
+				    (unsigned)ap[6], (unsigned)ap[7],
+				    (unsigned)ap[8], (unsigned)ap[9],
+				    (unsigned)ap[10], (unsigned)ap[11],
+				    (unsigned)ap[12], (unsigned)ap[13],
+				    (unsigned)ap[14], (unsigned)ap[15],
+				    2, port >> 8, port & 0xff);
 			}
 			break;
 		default:

@@ -1,0 +1,15 @@
+$NetBSD$
+
+- add static to match psycho_3.c
+
+--- psycho_1.c~	2003-03-01 09:35:01.000000000 +0000
++++ psycho_1.c
+@@ -8,7 +8,7 @@
+ #include "psycho_1_priv.h"
+ 
+ #define DBTAB 1000
+-double dbtable[DBTAB];
++static double dbtable[DBTAB];
+ 
+ /**********************************************************************
+ 

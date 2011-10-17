@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2008/09/04 16:53:58 epg Exp $
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/simpletal/DummyLogger.py
 ${PYSITELIB}/simpletal/DummyLogger.pyc
 ${PYSITELIB}/simpletal/DummyLogger.pyo

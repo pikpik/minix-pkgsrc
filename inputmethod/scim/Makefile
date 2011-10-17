@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/01/13 13:36:44 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2011/04/22 13:42:00 obache Exp $
 #
 
 DISTNAME=		scim-1.4.9
@@ -40,6 +40,12 @@ INSTALL_MAKE_FLAGS+=	sysconfdir=${PREFIX}/share/examples
 
 # for DLOPEN_REQUIRE_PTHREADS
 PTHREAD_AUTO_VARS=	yes
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=		ac_cv_func_gethostbyname_r=no
+LDFLAGS.SunOS+=		-lsocket -lnsl
+.endif
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"

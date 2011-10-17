@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/04/30 18:31:08 abs Exp $
+# $NetBSD: Makefile,v 1.25 2011/09/14 17:09:47 hans Exp $
 
 DISTNAME=	akonadi-1.4.0
 PKGREVISION=	5
@@ -20,11 +20,11 @@ BUILD_DEPENDS+=	libxslt-[0-9]*:../../textproc/libxslt
 DEPENDS+=	qt4-mysql-[0-9]*:../../x11/qt4-mysql
 .include "../../mk/mysql.buildlink3.mk"
 .if ${_MYSQL_VERSION} == "55"
-DEPENDS+=	mysql-server-[0-9]*:../../databases/mysql55-server
+.include "../../databases/mysql55-server/buildlink3.mk"
 .elif ${_MYSQL_VERSION} == "51"
-DEPENDS+=	mysql-server-[0-9]*:../../databases/mysql51-server
+.include "../../databases/mysql51-server/buildlink3.mk"
 .else
-DEPENDS+=	mysql-server-[0-9]*:../../databases/mysql5-server
+.include "../../databases/mysql5-server/buildlink3.mk"
 .endif
 
 USE_TOOLS+=	pkg-config
@@ -44,6 +44,8 @@ SUBST_STAGE.mysql=	post-patch
 SUBST_MESSAGE.mysql=	Fix mysqld path.
 SUBST_FILES.mysql=	server/CMakeLists.txt
 SUBST_SED.mysql=	-e "s:MYSQLD_EXECUTABLE mysqld:MYSQLD_EXECUTABLE mysqld ${PREFIX}/libexec:"
+
+LDFLAGS.SunOS+=		-lsocket
 
 .include "../../databases/shared-mime-info/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"

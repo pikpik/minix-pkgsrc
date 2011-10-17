@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2010/03/15 08:27:06 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2011/10/13 10:39:45 hans Exp $
 
 BUILDLINK_TREE+=	gcc46
 
@@ -49,6 +49,14 @@ BUILDLINK_FILES_CMD.gcc46=	\
 	${FIND} ${_GCC46_SUBDIR}/bin ${_GCC46_SUBDIR}/libexec ${_GCC46_SUBDIR}/lib \( -type f -o -type l \) -print)
 BUILDLINK_FNAME_TRANSFORM.gcc46=	-e s:buildlink:buildlink/gcc46:
 
+# When not using the GNU linker, gcc will always link shared libraries
+# against the shared version of libgcc. Always enable _USE_GCC_SHILB on
+# platforms that don't use the GNU linker, such as SunOS.
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "SunOS"
+_USE_GCC_SHLIB= yes
+.endif
+
 # Packages that link against shared libraries need a full dependency.
 .if defined(_USE_GCC_SHLIB)
 BUILDLINK_DEPMETHOD.gcc46+=	full
@@ -57,7 +65,11 @@ BUILDLINK_DEPMETHOD.gcc46?=	build
 .endif
 
 .include "../../mk/pthread.buildlink3.mk"
+pkgbase := gcc46
+.include "../../mk/pkg-build-options.mk"
+.if !empty(PKG_BUILD_OPTIONS.gcc46:Mnls)
 .include "../../devel/gettext-lib/buildlink3.mk"
+.endif
 .endif # GCC46_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-gcc46

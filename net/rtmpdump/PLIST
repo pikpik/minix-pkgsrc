@@ -4,9 +4,7 @@ include/librtmp/amf.h
 include/librtmp/http.h
 include/librtmp/log.h
 include/librtmp/rtmp.h
-lib/librtmp.a
-lib/librtmp.so
-lib/librtmp.so.0
+lib/librtmp.la
 lib/pkgconfig/librtmp.pc
 man/man1/rtmpdump.1
 man/man3/librtmp.3

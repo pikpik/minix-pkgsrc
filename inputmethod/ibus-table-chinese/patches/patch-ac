@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 2010/12/03 12:14:29 obache Exp $
+
+* use more portable codeset names.
 
 --- tables/CMakeLists.txt.orig	2010-12-02 23:22:54.000000000 +0000
 +++ tables/CMakeLists.txt

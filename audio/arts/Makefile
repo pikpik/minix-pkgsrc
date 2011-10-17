@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2011/03/10 19:51:23 markd Exp $
+# $NetBSD: Makefile,v 1.74 2011/08/20 21:37:49 abs Exp $
 
 DISTNAME=	arts-1.5.10
 PKGREVISION=	4
@@ -7,6 +7,8 @@ HOMEPAGE=	http://multimedia.kde.org/
 COMMENT=	Analog Real-Time Synthesizer
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
+
+CFLAGS.SunOS+=	-D_XOPEN_SOURCE=500
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -29,6 +31,8 @@ LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 .include "../../mk/pthread.buildlink3.mk"
 
 .include "options.mk"
+
+CONFIGURE_ARGS+=	--enable-libsuffix=none
 
 .if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "none")
 CONFIGURE_ARGS+=	--disable-threading

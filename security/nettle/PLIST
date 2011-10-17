@@ -1,4 +1,5 @@
 @comment $NetBSD$
+bin/nettle-hash
 bin/nettle-lfib-stream
 bin/pkcs1-conv
 bin/sexp-conv
@@ -18,6 +19,7 @@ include/nettle/ctr.h
 include/nettle/des-compat.h
 include/nettle/des.h
 include/nettle/dsa.h
+include/nettle/gcm.h
 include/nettle/hmac.h
 include/nettle/knuth-lfib.h
 include/nettle/macros.h
@@ -32,6 +34,7 @@ include/nettle/nettle-types.h
 include/nettle/pgp.h
 include/nettle/pkcs1.h
 include/nettle/realloc.h
+include/nettle/ripemd160.h
 include/nettle/rsa-compat.h
 include/nettle/rsa.h
 include/nettle/serpent.h
@@ -42,3 +45,5 @@ include/nettle/yarrow.h
 info/nettle.info
 lib/libhogweed.la
 lib/libnettle.la
+lib/pkgconfig/hogweed.pc
+lib/pkgconfig/nettle.pc

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.172 2011/05/16 07:59:04 abs Exp $
+# $NetBSD: Makefile,v 1.174 2011/09/17 18:51:35 brook Exp $
 
 .include "license.mk"
 .include "Makefile.common"
@@ -229,6 +229,7 @@ PKG_SUGGESTED_OPTIONS+=		64bitauto
 .  include "../../mk/pthread.buildlink3.mk"
 CONFIGURE_ARGS+=	-Duseithreads
 CFLAGS+=		${PTHREAD_CFLAGS}
+LDFLAGS+=		${PTHREAD_LDFLAGS}
 LIBSWANTED+=		${PTHREAD_LIBS:M-l*:S/^-l//}
 .  if ${OBJECT_FMT} == "XCOFF"
 PERL5_RPATH_THREAD=-thread
@@ -323,6 +324,8 @@ SUBST_SED.dirmode=	-e "s/755/${PKGDIRMODE}/g;/umask(/d"
 
 post-extract:
 		cp ${FILESDIR}/Policy.sh ${WRKSRC}/Policy.sh
+		cp ${FILESDIR}/cpan-DB_File-hints-netbsd.pl \
+			${WRKSRC}/cpan/DB_File/hints/netbsd.pl
 
 pre-configure:
 	cd ${WRKSRC} && find `pwd` -name "*.orig" -type f -exec ${RM} -f {} \;

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.17 2011/02/15 09:06:31 adam Exp $
+# $NetBSD: Makefile.common,v 1.19 2011/09/27 11:03:59 adam Exp $
 #
 # used by databases/postgresql83-adminpack/Makefile
 # used by databases/postgresql83-client/Makefile
@@ -17,7 +17,7 @@
 
 .include "../../databases/postgresql83/Makefile.mirrors"
 
-DISTNAME=	postgresql-8.3.15
+DISTNAME=	postgresql-8.3.16
 CATEGORIES=	databases
 MASTER_SITES=	${PGSQL_MIRRORS:=source/v${PKGVERSION_NOREV}/}
 EXTRACT_SUFX=	.tar.bz2
@@ -28,8 +28,8 @@ LICENSE=	postgresql-license
 
 CONFLICTS+=	postgresql-[0-9]*
 CONFLICTS+=	postgresql7[0-9]-*
-CONFLICTS+=	postgresql8[0-2]-*
-CONFLICTS+=	postgresql8[4-9]-*
+CONFLICTS+=	postgresql8[0-24-9]-*
+CONFLICTS+=	postgresql9[0-9]-*
 
 DISTINFO_FILE?=		${.CURDIR}/../postgresql83/distinfo
 COMMON_FILESDIR?=	${.CURDIR}/../postgresql83/files
@@ -46,6 +46,8 @@ PG_TEMPLATE.IRIX=	irix5
 .if !defined(PG_TEMPLATE.${OPSYS})
 PG_TEMPLATE.${OPSYS}=	${LOWER_OPSYS}
 .endif
+
+PKGLOCALEDIR=		share
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
@@ -71,6 +73,7 @@ USE_LIBLTDL?=		yes
 USE_LIBLTDL?=		no
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+LIBS.SunOS+=		-lintl
 
 .if !defined(META_PACKAGE)
 post-extract:

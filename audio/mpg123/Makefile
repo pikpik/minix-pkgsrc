@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2010/03/30 10:29:22 martin Exp $
+# $NetBSD: Makefile,v 1.49 2010/05/12 13:16:15 martin Exp $
 
 PKGNAME=	${DISTNAME:C/[^[:alnum:]]*//}
 COMMENT=	MPEG layer 1, 2, and 3 audio player
@@ -34,6 +34,10 @@ PLIST.oss	=	yes
 LIBS+=		${LIBOSSAUDIO}
 CPPFLAGS+=	-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
 CPPFLAGS+=	-DDEVOSSSOUND="\"${DEVOSSSOUND}\""
+.endif
+
+.if ${OPSYS} == "SunOS"
+MAKE_ENV+=	SunOS_LDFLAGS="-shared -mimpure-text"
 .endif
 
 # MPG123_MODULE is not finally set yet, to avoid NOT_FOR_PLATFORM triggers

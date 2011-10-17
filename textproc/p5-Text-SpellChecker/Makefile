@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/09/19 11:04:47 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2011/08/14 15:14:14 obache Exp $
 #
 
-DISTNAME=	Text-SpellChecker-0.08
+DISTNAME=	Text-SpellChecker-0.11
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tsc
 CATEGORIES=	textproc perl5

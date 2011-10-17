@@ -1,4 +1,4 @@
-#	$NetBSD: IRIX.sys.mk,v 1.2 2006/08/06 18:59:41 schwarz Exp $
+#	$NetBSD: IRIX.sys.mk,v 1.3 2008/02/21 15:51:50 tnn Exp $
 #	@(#)sys.mk	8.2 (Berkeley) 3/21/94
 
 unix?=		We run Unix
@@ -39,7 +39,7 @@ LINK.m?=	${OBJC} ${OBJCFLAGS} ${CPPFLAGS} ${LDFLAGS}
 
 _IRIXVERS!=	uname -r
 .if !empty(_IRIXVERS:M6*)
-CPP?=		CC -E
+CPP?=		${CC} -E
 .else
 CPP?=		cpp
 .endif

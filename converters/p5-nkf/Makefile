@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2010/08/21 16:32:51 seb Exp $
+# $NetBSD: Makefile,v 1.22 2011/08/14 07:47:43 obache Exp $
 #
 
 .include "../../converters/nkf/Makefile.common"
 
-PKGNAME=	p5-nkf-2.11
+PKGNAME=	p5-nkf-2.12
 SVR4_PKGNAME=	p5nkf
 CATEGORIES=	japanese converters perl5
 

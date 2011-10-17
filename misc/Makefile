@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.360 2011/05/29 13:53:00 cheusov Exp $
+# $NetBSD: Makefile,v 1.363 2011/10/11 19:53:50 minskim Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -27,6 +27,7 @@ SUBDIR+=	celestia
 SUBDIR+=	chipmunk
 SUBDIR+=	chord
 SUBDIR+=	cksfv
+SUBDIR+=	color-theme
 SUBDIR+=	colorize
 SUBDIR+=	colorls
 SUBDIR+=	colortail
@@ -165,8 +166,6 @@ SUBDIR+=	multitail
 SUBDIR+=	nxtvepg
 SUBDIR+=	open2300
 SUBDIR+=	open2300-mysql
-SUBDIR+=	openoffice2
-SUBDIR+=	openoffice2-bin
 SUBDIR+=	openoffice3
 SUBDIR+=	openoffice3-bin
 SUBDIR+=	orca

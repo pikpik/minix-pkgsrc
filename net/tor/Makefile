@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.78 2011/02/11 21:22:03 tnn Exp $
+# $NetBSD: Makefile,v 1.82 2011/09/07 00:34:56 gdt Exp $
 #
 
-DISTNAME=		tor-0.2.1.30
+DISTNAME=		tor-0.2.2.33
 CATEGORIES=		net security
 MASTER_SITES=		http://www.torproject.org/dist/
+# MASTER_SITES redirects to https, and ftp(1) cannot handle that.
+FETCH_USING=		curl
 
 MAINTAINER=		athaba@users.sourceforge.net
 HOMEPAGE=		http://www.torproject.org/
@@ -15,6 +17,10 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../mk/bsd.prefs.mk"
 
 USE_LANGUAGES=		c99
+# tor is not documented to require GNU make, but it fails to build on
+# NetBSD 5.1 with (system) BSD make.  Reported to
+# tor-talk@lists.torproject.org on 20110907.
+USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 
@@ -58,6 +64,7 @@ CHECK_PORTABILITY_SKIP+=contrib/*
 CFLAGS+=		-c99
 .endif
 
+BUILD_DEPENDS+= asciidoc-[0-9]*:../../textproc/asciidoc
 BUILDLINK_API_DEPENDS.libevent+= libevent>=1.2
 .include "../../devel/libevent/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"

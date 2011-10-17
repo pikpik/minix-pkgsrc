@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-af,v 1.6 2010/11/10 21:00:50 adam Exp $
 
 --- lib/Makefile.in.orig	2009-06-21 11:17:33.000000000 +0000
 +++ lib/Makefile.in

@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.827 2011/05/26 20:31:47 wiz Exp $
+# $NetBSD: pkglint.pl,v 1.830 2011/09/09 15:16:26 wiz Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -1902,7 +1902,7 @@ sub get_pkg_options() {
 
 	$options = {};
 	foreach my $line (@{$lines}) {
-		if ($line->text =~ m"^([-0-9a-z_]+)(?:\s+(.*))?$") {
+		if ($line->text =~ m"^([-0-9a-z_+]+)(?:\s+(.*))?$") {
 			my ($optname, $optdescr) = ($1, $2);
 
 			$options->{$optname} = defined($optdescr)
@@ -2299,11 +2299,11 @@ sub load_shared_dirs() {
 	my $varname_to_dirs = {};
 	my $dir_to_id = {};
 
-	foreach my $pkg qw(
+	foreach my $pkg (qw(
 		misc/gnome-dirs misc/gnome1-dirs misc/gnome2-dirs
 		misc/theme-dirs
 		misc/xdg-dirs misc/xdg-x11-dirs
-		print/texmf-dirs) {
+		print/texmf-dirs)) {
 
 		$opt_debug_trace and log_debug(NO_FILE, NO_LINES, "pkg=$pkg");
 		my $dirs_mk = load_lines("$cwd_pkgsrcdir/$pkg/dirs.mk", true);
@@ -7997,7 +7997,7 @@ sub checkfile($) {
 	} elsif ($basename =~ m"^MESSAGE") {
 		$opt_check_MESSAGE and checkfile_MESSAGE($fname);
 
-	} elsif ($basename =~ m"^patch-[-A-Za-z0-9_\.]*$") {
+	} elsif ($basename =~ m"^patch-[-A-Za-z0-9_\.~]*$") {
 		$opt_check_patches and checkfile_patch($fname);
 
 	} elsif ($fname =~ m"(?:^|/)patches/manual-[^/]*$") {

@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD$
+# $NetBSD: imapproxy.sh,v 1.1 2010/03/22 08:10:36 manu Exp $
 #
 
 # PROVIDE: imapproxy

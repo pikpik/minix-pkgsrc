@@ -1,0 +1,3 @@
+@comment $NetBSD: PLIST,v 1.1.1.1 2009/10/14 11:39:25 tnn Exp $
+bin/javaws
+lib/netscape/plugins/IcedTeaPlugin.so

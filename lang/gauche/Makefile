@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.54 2010/02/25 19:07:53 joerg Exp $
+# $NetBSD: Makefile,v 1.56 2011/08/23 13:06:49 obache Exp $
 #
 
-DISTNAME=	Gauche-0.9.1
+DISTNAME=	Gauche-0.9.2
+#PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gauche/}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	uebayasi@NetBSD.org, minoura@NetBSD.org
-HOMEPAGE=	http://www.shiro.dreamhost.com/scheme/gauche/index.html
+MAINTAINER=	uebayasi@NetBSD.org
+HOMEPAGE=	http://practical-scheme.net/gauche/
 COMMENT=	R5RS Scheme implementation aimed to be a handy tool for daily works
 
 DEPENDS+=		slib-[0-9]*:../../devel/slib

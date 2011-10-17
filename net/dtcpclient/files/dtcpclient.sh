@@ -1,6 +1,6 @@
-#!/bin/sh
+#!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: dtcpclient.sh,v 1.2 2007/06/17 04:23:32 obache Exp $
+# $NetBSD: dtcpclient.sh,v 1.3 2007/07/02 09:46:52 joerg Exp $
 #
 
 # PROVIDE: dtcpclient

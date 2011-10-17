@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:55 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/10/16 20:28:06 bouyer Exp $
 
 DISTNAME=	ffproxy-1.6
 CATEGORIES=	www
@@ -8,6 +8,7 @@ PKGREVISION=	1
 MAINTAINER=	niklas@noxa.de
 HOMEPAGE=	http://faith.eu.org/programs.html\#ffproxy
 COMMENT=	Filtering HTTP/HTTPS proxy server
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

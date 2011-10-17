@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.60 2011/05/05 12:37:07 adam Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.64 2011/09/04 15:42:51 adam Exp $
 
 PKGNAME=	qt4-libs-${QTVERSION}
+PKGREVISION=	1
 COMMENT=	C++ X GUI toolkit
 
 .include "../../x11/qt4-libs/Makefile.common"
@@ -23,6 +22,9 @@ CONFIGURE_ARGS+=	-no-dbus
 CONFIGURE_ARGS+=	-no-libmng
 CONFIGURE_ARGS+=	-no-libtiff
 CONFIGURE_ARGS+=	-no-sql-sqlite
+
+# kdelibs4 requires openssl support!
+CONFIGURE_ARGS+=	-openssl-linked
 
 INSTALLATION_DIRS=	lib/pkgconfig
 INSTALLATION_DIRS+=	${QTPREFIX}/bin
@@ -127,6 +129,7 @@ do-install:
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

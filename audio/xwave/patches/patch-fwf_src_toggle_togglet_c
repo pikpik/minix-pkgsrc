@@ -1,0 +1,15 @@
+$NetBSD$
+
+fix void main
+
+--- FWF/src/Toggle/ToggleT.c.orig	1998-08-12 23:27:08.000000000 +0000
++++ FWF/src/Toggle/ToggleT.c
+@@ -72,7 +72,7 @@ static void quit(w, client_data, call_da
+ /*
+  *  Main program
+  */
+-void main(argc, argv)
++int main(argc, argv)
+     int argc;
+     String *argv;
+ {

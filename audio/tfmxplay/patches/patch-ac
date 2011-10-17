@@ -1,8 +1,20 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.4 2011/09/04 21:04:57 dholland Exp $
 
---- tfmx.c.orig	2001-08-02 13:49:40.000000000 -0500
+- needs stdlib.h
+- use valid C (string constants cannot span lines)
+- fix mismatched return statements, which clang dislikes
+
+--- tfmx.c.orig	2001-08-02 18:49:40.000000000 +0000
 +++ tfmx.c
-@@ -46,24 +46,22 @@ extern int blend,filt,over;
+@@ -9,6 +9,7 @@
+ #endif
+ #include <stdio.h>
+ #include <unistd.h>
++#include <stdlib.h>
+ #include <string.h>
+ #include "tfmxsong.h"
+ #include "player.h"
+@@ -46,24 +47,22 @@ extern int blend,filt,over;
  
  usage(char *x)
  {
@@ -43,3 +55,12 @@ $NetBSD$
  );
  
  }
+@@ -348,7 +347,7 @@ dump_pattern(int x)
+ 	}
+ }
+ 
+-do_debug()
++void do_debug()
+ {
+ 	char in[81];
+ 	int x,y;

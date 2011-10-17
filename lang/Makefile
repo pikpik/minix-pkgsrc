@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.304 2011/06/17 12:39:46 obache Exp $
+# $NetBSD: Makefile,v 1.306 2011/10/11 12:45:11 ryoon Exp $
 #
 
 COMMENT=	Programming languages
@@ -8,6 +8,7 @@ SUBDIR+=	LuaJIT
 SUBDIR+=	STk
 SUBDIR+=	SmartEiffel
 SUBDIR+=	a60
+SUBDIR+=	algol68g
 SUBDIR+=	awka
 SUBDIR+=	baci
 SUBDIR+=	boomerang
@@ -102,6 +103,7 @@ SUBDIR+=	mono-basic
 SUBDIR+=	moscow_ml
 SUBDIR+=	mpd
 SUBDIR+=	nawk
+SUBDIR+=	newlisp
 SUBDIR+=	nhc98
 SUBDIR+=	objc
 SUBDIR+=	ocaml

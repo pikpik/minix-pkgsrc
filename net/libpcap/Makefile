@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2008/11/16 15:10:10 adrianp Exp $
+# $NetBSD: Makefile,v 1.47 2011/02/11 12:11:26 adam Exp $
 
 DISTNAME=	libpcap-1.1.1
 SVR4_PKGNAME=	lpcap
@@ -28,6 +28,9 @@ CONFIGURE_ARGS+=	--enable-ipv6
 .endif
 
 .if ${OPSYS} == "SunOS"
+.if ${OS_VERSION} != "5.11"
+CONFIGURE_ARGS+=	--with-pcap=dlpi
+.endif
 PLIST.SunOS=	yes
 .else
 PLIST.std=	yes
