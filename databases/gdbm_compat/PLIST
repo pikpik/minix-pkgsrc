@@ -1,0 +1,4 @@
+@comment $NetBSD: PLIST,v 1.7 2006/03/30 03:44:41 jlam Exp $
+include/dbm.h
+include/ndbm.h
+lib/libgdbm_compat.la
