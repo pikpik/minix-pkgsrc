@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/08/21 16:36:36 seb Exp $
+# $NetBSD: Makefile,v 1.16 2011/08/14 16:05:44 obache Exp $
 
 DISTNAME=	CGI-FastTemplate-1.09
 PKGNAME=	p5-${DISTNAME}
@@ -8,7 +8,9 @@ CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=CGI/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://search.cpan.org/dist/CGI-FastTemplate
 COMMENT=	Perl5 extension for managing templates
+LICENSE=	${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
