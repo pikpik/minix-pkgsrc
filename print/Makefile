@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.499 2011/10/02 14:11:52 wiz Exp $
+# $NetBSD: Makefile,v 1.500 2011/10/18 20:33:42 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -313,6 +313,7 @@ SUBDIR+=	tex-geometry-doc
 SUBDIR+=	tex-german
 SUBDIR+=	tex-german-doc
 SUBDIR+=	tex-glossaries
+SUBDIR+=	tex-glossaries-doc
 SUBDIR+=	tex-graphics
 SUBDIR+=	tex-graphics-doc
 SUBDIR+=	tex-guide-to-latex
