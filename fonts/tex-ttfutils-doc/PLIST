@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf/doc/ttf2pk/ttf2pk.doc
+share/texmf/doc/ttf2pk/ttf2pk.txt
+share/texmf/doc/ttf2pk/ttf2tfm.txt
