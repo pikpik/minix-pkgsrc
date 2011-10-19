@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2010/09/15 09:38:43 markd Exp $
+# $NetBSD: Makefile,v 1.25 2010/10/03 00:52:24 markd Exp $
 
 PKGNAME=	gnuradio-core-${VERSION}
+PKGREVISION=	1
 COMMENT=	Runtime system and DSP blocks for GNU Radio
 
 PKG_DESTDIR_SUPPORT=	user-destdir

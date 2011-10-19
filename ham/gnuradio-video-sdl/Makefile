@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2008/07/14 12:56:06 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2009/08/12 12:21:41 markd Exp $
 
 PKGNAME=	gnuradio-video-sdl-${VERSION}
+PKGREVISION=	1
 COMMENT=	SDL bindings for GNU Radio
 
 PKG_DESTDIR_SUPPORT=	user-destdir
