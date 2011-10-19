@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2011/08/14 16:06:04 obache Exp $
+# $NetBSD: Makefile,v 1.14 2011/08/23 10:09:10 abs Exp $
 
-DISTNAME=	Plack-0.9982
+DISTNAME=	Plack-0.9984
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Plack/}
