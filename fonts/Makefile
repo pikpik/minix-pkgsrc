@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.205 2011/10/02 14:32:32 wiz Exp $
+# $NetBSD: Makefile,v 1.206 2011/10/10 22:08:57 minskim Exp $
 #
 
 COMMENT=	Fonts
@@ -45,7 +45,6 @@ SUBDIR+=	cyr-rfx-winlatin_1
 SUBDIR+=	dbz-ttf
 SUBDIR+=	dejavu-ttf
 SUBDIR+=	droid-ttf
-SUBDIR+=	ec-fonts-mftraced
 SUBDIR+=	efont-unicode
 SUBDIR+=	encodings
 SUBDIR+=	fntsample
