@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${RUBY_VENDORLIB}/fiddle.rb
+${RUBY_VENDORLIB}/fiddle/closure.rb
+${RUBY_VENDORLIB}/fiddle/function.rb
+${RUBY_VENDORARCHLIB}/fiddle.${RUBY_DLEXT}
