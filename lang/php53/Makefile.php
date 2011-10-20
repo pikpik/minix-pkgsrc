@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.7 2011/08/20 14:41:04 taca Exp $
+# $NetBSD: Makefile.php,v 1.8 2011/08/23 22:22:27 taca Exp $
 # used by lang/php53/Makefile
 # used by www/ap-php/Makefile
 
@@ -39,6 +39,7 @@ CONFIGURE_ARGS+=	--disable-dom
 CONFIGURE_ARGS+=	--disable-pdo
 CONFIGURE_ARGS+=	--disable-json
 
+#CONFIGURE_ARGS+=	--enable-fpm
 CONFIGURE_ARGS+=	--enable-xml
 CONFIGURE_ARGS+=	--with-libxml-dir=${PREFIX}
 .include "../../textproc/libxml2/buildlink3.mk"
