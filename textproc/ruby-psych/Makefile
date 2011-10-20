@@ -1,0 +1,23 @@
+# $NetBSD$
+#
+
+DISTNAME=		${RUBY_DISTNAME}
+PKGNAME=		${RUBY_PKGPREFIX}-${RUBY_EXTNAME}-${RUBY_VERSION_SUFFIX}
+RUBY_EXTNAME=		psych
+CATEGORIES=		textproc ruby
+MASTER_SITES=		${MASTER_SITE_RUBY}
+
+MAINTAINER=		taca@NetBSD.org
+HOMEPAGE=		${RUBY_HOMEPAGE}
+COMMENT=		Ruby YAML parser and emitter
+
+PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_RUBY_EXTCONF=	yes
+EXTRACT_ELEMENTS=	${RUBY_DISTNAME}/ext/psych
+WRKSRC=			${RUBY_WRKSRC}/ext/psych
+
+.include "../../lang/ruby/modules.mk"
+.include "../../lang/ruby/Makefile.common"
+.include "../../textproc/libyaml/buildlink3.mk"
+.include "../../mk/bsd.pkg.mk"
