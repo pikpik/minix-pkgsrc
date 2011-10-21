@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/10/10 08:33:24 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2011/02/17 13:54:12 ryoon Exp $
 #
 
 DISTNAME=	abcMIDI-${ABCMIDIVER}
@@ -12,17 +12,15 @@ HOMEPAGE=	http://abc.sourceforge.net/abcMIDI/
 COMMENT=	Music utilities for abc
 LICENSE=	gnu-gpl-v2
 
-ABCMIDIVER=	2011-01-01
+ABCMIDIVER=	2011-10-19
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 \
-			share/doc/${PKGBASE}/programming \
+INSTALLATION_DIRS=	share/doc/${PKGBASE}/programming \
 			share/examples/${PKGBASE}
 
 WRKSRC=		${WRKDIR}/abcmidi
-MAKE_FILE=	makefile
-INSTALL_MAKE_FLAGS+=	prefix=${PREFIX}
+GNU_CONFIGURE=	yes
 
 post-install:
 	cd ${WRKSRC}/doc/programming && ${INSTALL_DATA} abc2midi.txt \
