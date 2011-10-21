@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.121 2011/05/28 08:50:52 cheusov Exp $
+# $NetBSD: Makefile,v 1.122 2011/10/03 19:52:56 minskim Exp $
 #
 
 COMMENT=	Archivers
@@ -97,6 +97,7 @@ SUBDIR+=	xpk
 SUBDIR+=	xz
 SUBDIR+=	zip
 SUBDIR+=	zoo
+SUBDIR+=	zutils
 SUBDIR+=	zziplib
 
 .include "../mk/misc/category.mk"
