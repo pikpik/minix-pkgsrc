@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1502 2011/10/20 15:09:23 taca Exp $
+# $NetBSD: Makefile,v 1.1503 2011/10/21 10:06:57 hiramatsu Exp $
 #
 
 COMMENT=	Development utilities
@@ -297,6 +297,7 @@ SUBDIR+=	lcov
 SUBDIR+=	ldapsdk
 SUBDIR+=	ldpc
 SUBDIR+=	lemon
+SUBDIR+=	lettuce
 SUBDIR+=	libFoundation
 SUBDIR+=	libFoundation-examples
 SUBDIR+=	libarena
