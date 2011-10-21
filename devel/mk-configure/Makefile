@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2011/09/13 19:04:37 cheusov Exp $
+# $NetBSD: Makefile,v 1.5 2011/10/09 10:02:47 cheusov Exp $
 #
 
-DISTNAME=	mk-configure-0.21.1
+DISTNAME=	mk-configure-0.21.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mk-configure/} \
 		http://mova.org/~cheusov/pub/mk-configure/
