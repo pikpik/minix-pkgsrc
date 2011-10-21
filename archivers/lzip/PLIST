@@ -1,10 +1,6 @@
 @comment $NetBSD$
-bin/lzdiff
-bin/lzgrep
 bin/lzip
 bin/lziprecover
 info/lzip.info
-man/man1/lzdiff.1
-man/man1/lzgrep.1
 man/man1/lzip.1
 man/man1/lziprecover.1
