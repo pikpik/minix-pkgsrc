@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+For downloading from vimeo using curl (default), add the following line
+to your ~/.curlrc:
+
+	user-agent = "Mozilla/5.0"
+
+===========================================================================
