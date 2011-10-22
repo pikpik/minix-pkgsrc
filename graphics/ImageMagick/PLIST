@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.68 2010/12/14 10:08:40 adam Exp $
+@comment $NetBSD$
 bin/Magick++-config
 bin/Magick-config
 bin/MagickCore-config
@@ -1176,11 +1176,11 @@ share/examples/ImageMagick/log.xml
 share/examples/ImageMagick/magic.xml
 share/examples/ImageMagick/mime.xml
 share/examples/ImageMagick/policy.xml
-share/examples/ImageMagick/sRGB.icm
+share/examples/ImageMagick/sRGB.icc
 share/examples/ImageMagick/thresholds.xml
 share/examples/ImageMagick/type-dejavu.xml
 share/examples/ImageMagick/type-ghostscript.xml
 share/examples/ImageMagick/type-windows.xml
 share/examples/ImageMagick/type.xml
-@pkgdir lib/ImageMagick-${IM_MAJOR_LIB_VER}/modules-Q16/coders
 @pkgdir lib/ImageMagick-${IM_MAJOR_LIB_VER}/modules-Q16/filters
+@pkgdir lib/ImageMagick-${IM_MAJOR_LIB_VER}/modules-Q16/coders
