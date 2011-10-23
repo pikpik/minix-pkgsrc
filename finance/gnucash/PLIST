@@ -636,6 +636,7 @@ share/gnucash/accounts/zh_CN/acctchrt_spouseretire.gnucash-xea
 share/gnucash/checks/deluxe.chk
 share/gnucash/checks/liberty.chk
 share/gnucash/checks/quicken.chk
+share/gnucash/checks/quicken_check_21.chk
 share/gnucash/checks/quicken_wallet.chk
 share/gnucash/checks/voucher.chk
 share/gnucash/doc/AUTHORS
