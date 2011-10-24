@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.103 2011/04/22 13:44:29 obache Exp $
+# $NetBSD: Makefile,v 1.104 2011/10/12 17:35:15 hans Exp $
 
-DISTNAME=	wget-1.12
-PKGREVISION=	2
+DISTNAME=	wget-1.13.4
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_GNU:=wget/}
 
@@ -20,7 +19,6 @@ USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		msgfmt
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-CONFIGURE_ENV+=		ac_cv_func_sigsetjmp=yes
 
 EGDIR=			${PREFIX}/share/examples/wget
 CONF_FILES=		${EGDIR}/wgetrc ${PKG_SYSCONFDIR}/wgetrc
