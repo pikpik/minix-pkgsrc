@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2011/07/12 18:23:09 tron Exp $
+# $NetBSD: Makefile,v 1.44 2011/07/13 19:25:42 tron Exp $
 
 DISTNAME=	pixman-0.22.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=	.tar.bz2
