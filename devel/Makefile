@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1505 2011/10/24 06:43:22 sbd Exp $
+# $NetBSD: Makefile,v 1.1506 2011/10/27 07:57:34 hiramatsu Exp $
 #
 
 COMMENT=	Development utilities
@@ -1426,6 +1426,8 @@ SUBDIR+=	tcllib
 SUBDIR+=	tclreadline
 SUBDIR+=	teem
 SUBDIR+=	tet3
+SUBDIR+=	tex-etoolbox
+SUBDIR+=	tex-etoolbox-doc
 SUBDIR+=	tex-multido
 SUBDIR+=	tex-multido-doc
 SUBDIR+=	tex-pst-uml
