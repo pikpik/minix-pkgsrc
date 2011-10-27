@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- src/ntfs-3g.c.orig	Thu Oct 27 10:46:54 2011
++++ src/ntfs-3g.c
+@@ -2291,6 +2291,7 @@ int main(int argc, char *argv[])
+ 	if (S_ISBLK(sbuf.st_mode) && (fstype == FSTYPE_FUSE))
+ 		ntfs_log_info(fuse26_kmod_msg);
+ #endif	
++#ifndef __minix
+ 	if (!ctx->no_detach) {
+ 		if (daemon(0, ctx->debug))
+ 			ntfs_log_error("Failed to daemonize.\n");
+@@ -2302,6 +2303,7 @@ int main(int argc, char *argv[])
+ #endif
+ 		}
+ 	}
++#endif
+ 
+ 	ntfs_log_info("Version %s\n", VERSION);
+ 	ntfs_log_info("Mounted %s (%s, label \"%s\", NTFS %d.%d)\n",

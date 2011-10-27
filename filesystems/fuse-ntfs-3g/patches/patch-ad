@@ -1,6 +1,8 @@
 --- configure.ac.orig	2011-07-31 20:32:04.126000067 +0400
 +++ configure.ac	2011-07-31 20:31:18.071000067 +0400
-@@ -115,7 +115,7 @@ export PKG_CONFIG_PATH=${PKG_CONFIG_PATH
+--- configure.ac.orig	Mon Nov 19 00:24:24 2007
++++ configure.ac
+@@ -115,7 +115,7 @@ export PKG_CONFIG_PATH=${PKG_CONFIG_PATH}:/lib/pkgconf
  AC_SYS_LARGEFILE
  
  case "$target_os" in
