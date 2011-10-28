@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/10/22 15:00:20 ryoon Exp $
+# $NetBSD: Makefile,v 1.8 2011/10/28 00:27:57 schnoebe Exp $
 
 DISTNAME=		spectrum-1.4.8
 CATEGORIES=		chat
@@ -100,6 +100,7 @@ post-install:
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/py-readline/buildlink3.mk"
+# .include "../../devel/libev/buildlink3.mk"
 .include "../../devel/poco/buildlink3.mk"
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../lang/python/application.mk"
