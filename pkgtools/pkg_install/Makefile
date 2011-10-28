@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.182 2011/01/31 07:25:03 agc Exp $
+# $NetBSD: Makefile,v 1.183 2011/04/26 12:17:51 obache Exp $
 
 # Notes to package maintainers:
 #
@@ -133,6 +133,11 @@ CONFIG_SUB_OVERRIDE+=	${WRKDIR}/libarchive/build/autoconf/config.sub
 # (outdated) dynamic library "/usr/lib/libarchive.dylib".
 LDFLAGS+=	-Wl,-search_paths_first
 .  endif
+
+.if ${OPSYS} == SunOS
+# workaround for pkg/45491
+CONFIGURE_ENV+=	ac_cv_header_ext2fs_ext2_fs_h=no
+.endif
 
 # Hack to make sure that the libarchive version is replaced
 pre-configure: config-guess-override config-sub-override
