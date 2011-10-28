@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.19 2009/01/18 11:01:56 shattered Exp $
 
-DISTNAME=	logsurfer+-1.7
-PKGNAME=	logsurfer-1.7
+DISTNAME=	logsurfer-1.8
+PKGNAME=	logsurfer-1.8
 CATEGORIES=	misc
 MASTER_SITES=	http://kerryt.orcon.net.nz/ \
 		http://www.crypt.gen.nz/logsurfer/
