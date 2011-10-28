@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/01/13 13:37:09 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2011/10/27 14:03:17 obache Exp $
 
 DISTNAME=	pymol-v1.4.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/pymol-v/mol-/}
@@ -13,6 +13,8 @@ COMMENT=	Molecular Visualization System
 
 DEPENDS+=	${PYPKGPREFIX}-numpy-[0-9]*:../../math/py-numpy
 DEPENDS+=	${PYPKGPREFIX}-Pmw-[0-9]*:../../x11/py-Pmw
+
+PYTHON_VERSIONS_INCOMPATIBLE=	24
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
