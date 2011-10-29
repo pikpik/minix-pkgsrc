@@ -1,10 +1,11 @@
-@comment $NetBSD: PLIST,v 1.2 2003/09/14 16:43:54 recht Exp $
+@comment $NetBSD$
 ${PYSITELIB}/aes/__init__.py
 ${PYSITELIB}/aes/__init__.pyc
 ${PYSITELIB}/aes/__init__.pyo
 ${PYSITELIB}/aes/aes.py
 ${PYSITELIB}/aes/aes.pyc
 ${PYSITELIB}/aes/aes.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/cryptsock/__init__.py
 ${PYSITELIB}/cryptsock/__init__.pyc
 ${PYSITELIB}/cryptsock/__init__.pyo
