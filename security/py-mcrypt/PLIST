@@ -1,2 +1,3 @@
 @comment $NetBSD$
 ${PYSITELIB}/mcrypt.so
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
