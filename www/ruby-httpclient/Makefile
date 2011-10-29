@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2011/06/03 01:44:39 obache Exp $
+# $NetBSD: Makefile,v 1.6 2011/10/17 01:43:56 obache Exp $
 #
 
-DISTNAME=	httpclient-2.2.2
+DISTNAME=	httpclient-2.2.3
 CATEGORIES=	www
 
 MAINTAINER=	obache@NetBSD.org
