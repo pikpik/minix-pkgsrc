@@ -2,7 +2,7 @@
 #
 
 DISTNAME=	glusterfs-3.2.3
-PKGREVISION=	4
+PKGREVISION=	7
 CATEGORIES=	filesystems
 MASTER_SITES=	http://download.gluster.com/pub/gluster/glusterfs/3.2/3.2.3/
 
