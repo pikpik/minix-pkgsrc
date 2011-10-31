@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/07/08 17:44:20 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2010/02/10 19:17:43 joerg Exp $
 #
 
 DISTNAME=	UPnP-Inspector-0.2.2
@@ -9,6 +9,7 @@ MASTER_SITES=	http://coherence.beebits.net/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://coherence.beebits.net/
 COMMENT=	UPnP analyzer
+LICENSE=	mit
 
 USE_LANGUAGES=	# none
 PKG_DESTDIR_SUPPORT= user-destdir
