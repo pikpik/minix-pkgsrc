@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.43 2011/08/22 15:17:53 cheusov Exp $
+# $NetBSD: Linux.mk,v 1.44 2011/10/15 03:15:37 sbd Exp $
 #
 # Variable definitions for the Linux operating system.
 
@@ -24,6 +24,7 @@ DEF_UMASK?=		022
 DEFAULT_SERIAL_DEVICE?=	/dev/null
 EXPORT_SYMBOLS_LDFLAGS?=	# Don't add symbols to the dynamic symbol table
 GROUPADD?=		/usr/sbin/groupadd
+LIBC_BUILTINS=		iconv getopt sysexits gettext
 MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
 .if exists(/etc/ssdlinux_version)
 NOLOGIN?=		/sbin/nologin
