@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2010/08/21 16:35:05 seb Exp $
+# $NetBSD: Makefile,v 1.37 2011/08/07 08:09:01 tron Exp $
 
 DISTNAME=	MIME-tools-5.502
 PKGNAME=	p5-${DISTNAME}
@@ -17,6 +17,8 @@ DEPENDS+=	p5-File-Temp>=0.18:../../devel/p5-File-Temp
 DEPENDS+=	p5-IO-stringy-[0-9]*:../../devel/p5-IO-stringy
 DEPENDS+=	p5-MIME-Base64>=3.03:../../converters/p5-MIME-Base64
 DEPENDS+=	p5-MailTools-[0-9]*:../../mail/p5-MailTools
+# actually, test dependency
+BUILD_DEPENDS+=	p5-Test-Deep-[0-9]*:../../devel/p5-Test-Deep
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
