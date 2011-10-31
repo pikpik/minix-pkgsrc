@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.885 2011/10/16 07:33:24 ryoon Exp $
+# $NetBSD: Makefile,v 1.886 2011/10/20 03:42:30 jnemeth Exp $
 #
 
 COMMENT=	Networking tools
@@ -160,6 +160,7 @@ SUBDIR+=	gupnp
 SUBDIR+=	gupnp-av
 SUBDIR+=	gupnp-igd
 SUBDIR+=	gupnp-tools
+SUBDIR+=	haproxy
 SUBDIR+=	hesiod
 SUBDIR+=	hf6to4
 SUBDIR+=	hlfl
