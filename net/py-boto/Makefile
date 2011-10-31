@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/07/03 10:01:04 dholland Exp $
+# $NetBSD: Makefile,v 1.10 2011/10/02 16:58:57 dholland Exp $
 #
 
 DISTNAME=	boto-1.9b
@@ -10,6 +10,7 @@ MASTER_SITES=	http://boto.googlecode.com/files/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://boto.googlecode.com/
 COMMENT=	Python interface to Amazon web services
+LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
