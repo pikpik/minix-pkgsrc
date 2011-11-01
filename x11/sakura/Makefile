@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/14 16:29:42 ryoon Exp $
 #
 
 DISTNAME=	sakura-2.4.2
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://launchpad.net/sakura/trunk/2.4.2/+download/
 EXTRACT_SUFX=	.tar.bz2

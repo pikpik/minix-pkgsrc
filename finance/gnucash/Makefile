@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.158 2011/07/21 13:05:54 obache Exp $
+# $NetBSD: Makefile,v 1.159 2011/10/23 08:04:54 wiz Exp $
 #
 
 DISTNAME=		gnucash-2.4.8
+PKGREVISION=		1
 CATEGORIES=		finance
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gnucash/}
 

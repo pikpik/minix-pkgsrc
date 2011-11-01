@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2011/10/22 15:00:21 ryoon Exp $
+# $NetBSD: Makefile,v 1.23 2011/10/27 20:40:02 gls Exp $
 #
 
 DISTNAME=	calibre-0.8.24
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://status.calibre-ebook.com/dist/src/ \
 		http://calibre-ebook.googlecode.com/files/

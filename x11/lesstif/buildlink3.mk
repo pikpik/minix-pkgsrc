@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2010/01/16 09:15:25 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2011/03/06 03:52:16 dholland Exp $
 
 BUILDLINK_TREE+=	lesstif
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	lesstif
 LESSTIF_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.lesstif+=	lesstif>=0.95.0nb1
+BUILDLINK_ABI_DEPENDS.lesstif?=	lesstif>=0.95.2nb2
 BUILDLINK_PKGSRCDIR.lesstif?=	../../x11/lesstif
 
 .include "../../fonts/fontconfig/buildlink3.mk"

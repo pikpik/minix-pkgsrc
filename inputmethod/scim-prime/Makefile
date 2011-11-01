@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/04/22 13:43:57 obache Exp $
+# $NetBSD: Makefile,v 1.7 2011/09/21 21:40:20 joerg Exp $
 #
 
 DISTNAME=		scim-prime-1.0.1
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		inputmethod
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE_JP:=scim-imengine/29156/}
 

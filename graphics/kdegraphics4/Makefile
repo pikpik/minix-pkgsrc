@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2011/10/19 06:50:02 obache Exp $
+# $NetBSD: Makefile,v 1.24 2011/10/27 10:41:22 ryoon Exp $
 
 DISTNAME=	kdegraphics-${_KDE_VERSION}
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	graphics
 COMMENT=	Graphical tools for the KDE desktop
 
