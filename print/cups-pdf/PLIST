@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/cups-pdf-dispatch
+libexec/cups/backend/cups-pdf
+share/cups/model/CUPS-PDF.ppd
+share/examples/cups/cups-pdf-dispatch-ldap.conf
+share/examples/cups/cups-pdf-dispatch.conf
+share/examples/cups/cups-pdf.conf
