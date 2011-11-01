@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.35 2011/07/06 20:21:03 drochner Exp $
+# $NetBSD: buildlink3.mk,v 1.36 2011/10/22 14:55:51 ryoon Exp $
 
 BUILDLINK_TREE+=	ImageMagick
 
@@ -27,6 +27,7 @@ pkgbase := ImageMagick
 .if !empty(PKG_BUILD_OPTIONS.ImageMagick:Mx11)
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .endif
 
 .include "../../archivers/bzip2/buildlink3.mk"
