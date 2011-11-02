@@ -1,6 +1,6 @@
 $NetBSD$
 
---- unix/Makefile.in.orig	2008-02-06 15:38:26.000000000 +0000
+--- unix/Makefile.in.orig	Wed Feb  6 15:38:26 2008
 +++ unix/Makefile.in
 @@ -185,8 +185,8 @@ SHELL			= /bin/sh
  INSTALL_STRIP_PROGRAM   = -s
@@ -26,7 +26,7 @@ $NetBSD$
  #BUILD_DLTEST		=
  
  TCL_LIB_FILE		= @TCL_LIB_FILE@
-+TCL_LA_FILE		= ${TCL_LIB_FILE:@SHLIB_SUFFIX@=.la}
++TCL_LA_FILE		= ${TCL_LIB_FILE:@LIB_SUFFIX@=.la}
  #TCL_LIB_FILE		= libtcl.a
  
  # Generic lib name used in rules that apply to tcl and tk
@@ -41,7 +41,7 @@ $NetBSD$
  
  # Flags to be passed to installManPage to control whether the manpages
  # should be compressed and linked with softlinks
-@@ -469,7 +471,7 @@ SRCS = $(GENERIC_SRCS) $(UNIX_SRCS) $(NO
+@@ -469,7 +471,7 @@ SRCS = $(GENERIC_SRCS) $(UNIX_SRCS) $(NOTIFY_SRCS) $(S
  
  all: binaries libraries doc
  
