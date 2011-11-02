@@ -1,7 +1,8 @@
-# $NetBSD: options.mk,v 1.5 2008/04/12 22:43:12 jlam Exp $
+# $NetBSD: options.mk,v 1.6 2008/09/17 00:46:58 reed Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.openssl
-PKG_SUPPORTED_OPTIONS=	idea mdc2 rc5 zlib
+PKG_SUPPORTED_OPTIONS=	idea mdc2 rc5 zlib threads
+PKG_SUGGESTED_OPTIONS=	threads
 
 .include "../../mk/bsd.options.mk"
 
@@ -53,6 +54,12 @@ CONFIGURE_ARGS+=	zlib
 .include "../../devel/zlib/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	no-zlib
+.endif
+
+.if !empty(PKG_OPTIONS:Mthreads)
+CONFIGURE_ARGS+=	threads
+.else
+CONFIGURE_ARGS+=	no-threads
 .endif
 
 .if !empty(OPENSSL_LICENSE)
