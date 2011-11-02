@@ -38,4 +38,5 @@ post-install:
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
