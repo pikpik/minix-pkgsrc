@@ -1,0 +1,11 @@
+$NetBSD$
+
+--- /dev/null
++++ lib/boilerplate_mk.conf
+@@ -0,0 +1,6 @@
++### HEAD: BOILERPLATE MK.CONF SETTINGS ###
++
++SKIP_LICENSE_CHECK=             yes
++ALLOW_VULNERABLE_PACKAGES=      yes
++
++### TAIL: BOILERPLATE MK.CONF SETTINGS ###
