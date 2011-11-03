@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.100 2011/05/16 22:04:47 cheusov Exp $
+# $NetBSD: Makefile,v 1.101 2011/05/18 19:41:11 cheusov Exp $
 #
 
 COMMENT=	Tools for use in the packages collection
@@ -60,6 +60,7 @@ SUBDIR+=	rdigest
 SUBDIR+=	revbump
 SUBDIR+=	rpm2pkg
 SUBDIR+=	shlock
+SUBDIR+=	tinderbox-dragonfly
 SUBDIR+=	url2pkg
 SUBDIR+=	verifypc
 SUBDIR+=	x11-links
