@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.511 2011/10/29 14:32:43 ryoon Exp $
+# $NetBSD: Makefile,v 1.512 2011/11/01 13:50:04 roy Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -573,6 +573,8 @@ SUBDIR+=	tex-subfigure
 SUBDIR+=	tex-subfigure-doc
 SUBDIR+=	tex-substr
 SUBDIR+=	tex-substr-doc
+SUBDIR+=	tex-supertabular
+SUBDIR+=	tex-supertabular-doc
 SUBDIR+=	tex-t2
 SUBDIR+=	tex-t2-doc
 SUBDIR+=	tex-tabls
