@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2010/12/04 01:21:06 gdt Exp $
+# $NetBSD: Makefile,v 1.51 2010/12/06 13:57:28 gdt Exp $
 
 DISTNAME=		bzr-${VER}
 CATEGORIES=		devel scm
@@ -19,6 +19,7 @@ USE_TOOLS+=		gmake
 
 PY_PATCHPLIST=		yes
 PYDISTUTILSPKG=		yes
+PYTHON_VERSIONS_INCOMPATIBLE=	27 31
 
 PYTHON_PATCH_SCRIPTS=		bzr bzrlib/weave.py
 
