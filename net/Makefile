@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.886 2011/10/20 03:42:30 jnemeth Exp $
+# $NetBSD: Makefile,v 1.887 2011/10/31 23:39:07 morr Exp $
 #
 
 COMMENT=	Networking tools
@@ -413,6 +413,7 @@ SUBDIR+=	p5-SNMP-Info
 SUBDIR+=	p5-SNMP-MIB-Compiler
 SUBDIR+=	p5-SNMP_Session
 SUBDIR+=	p5-SOAP-Lite
+SUBDIR+=	p5-SOAP-Transport-TCP
 SUBDIR+=	p5-Socket6
 SUBDIR+=	p5-Test-DNS
 SUBDIR+=	p5-Test-TCP
