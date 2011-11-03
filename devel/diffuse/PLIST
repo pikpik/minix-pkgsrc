@@ -26,6 +26,7 @@ share/diffuse/syntax/patch.syntax
 share/diffuse/syntax/perl.syntax
 share/diffuse/syntax/php.syntax
 share/diffuse/syntax/python.syntax
+share/diffuse/syntax/r.syntax
 share/diffuse/syntax/ruby.syntax
 share/diffuse/syntax/sql.syntax
 share/diffuse/syntax/tcl.syntax
