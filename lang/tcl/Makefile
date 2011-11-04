@@ -20,6 +20,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 WRKSRC=			${WRKDIR}/tcl${TCL_VERSION}
 
 USE_LIBTOOL=		yes
+USE_TOOLS+=		autoconf
 GNU_CONFIGURE=		yes
 CONFIGURE_DIRS=		unix
 BUILD_DIRS=		${CONFIGURE_DIRS}
@@ -66,6 +67,9 @@ INSTALLATION_DIRS+=	include/tcl
 INSTALLATION_DIRS+=	include/tcl/unix
 INSTALLATION_DIRS+=	include/tcl/generic
 INSTALLATION_DIRS+=	lib/tcl
+
+pre-configure:
+	cd ${WRKSRC}/unix && autoconf
 
 post-install:
 	cd ${DESTDIR:Q}${PREFIX:Q}/bin && ln -s tclsh8.4 tclsh
