@@ -25,6 +25,11 @@ USE_PKGLOCALEDIR=	YES
 CFLAGS+=		-D_LINUX_SOURCE_COMPAT
 .endif
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ENV+=		ac_cv_func_malloc_0_nonnull=yes
+CONFIGURE_ENV+=		ac_cv_func_realloc_0_nonnull=yes
+.endif
+
 #.if !empty(PKGSRC_RUN_TEST:M[Yy][Ee][Ss])
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake	# bmake has problems with the test suite
