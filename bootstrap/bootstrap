@@ -613,9 +613,6 @@ Minix)
 	export CPPFLAGS="-D_NETBSD_SOURCE -D_MINIX -D_POSIX_SOURCE -D_COMPAT_MINIX"
 	export CFLAGS="-march=i586"
 	export LDFLAGS="-lcompat_minix -lminlib"
-	export AR="ar"
-	export LD="ld"
-	export NM="nm"
 	[ -z "$fetch_cmd" ] && fetch_cmd=/usr/bin/fetch
 	;;
 MirBSD)
