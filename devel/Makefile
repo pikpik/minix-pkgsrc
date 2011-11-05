@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1508 2011/10/29 10:40:53 ryoon Exp $
+# $NetBSD: Makefile,v 1.1509 2011/11/05 15:46:13 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -1431,6 +1431,8 @@ SUBDIR+=	tex-etoolbox
 SUBDIR+=	tex-etoolbox-doc
 SUBDIR+=	tex-l3kernel
 SUBDIR+=	tex-l3kernel-doc
+SUBDIR+=	tex-l3packages
+SUBDIR+=	tex-l3packages-doc
 SUBDIR+=	tex-multido
 SUBDIR+=	tex-multido-doc
 SUBDIR+=	tex-pst-uml
