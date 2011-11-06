@@ -14,13 +14,13 @@
 .if !defined(TEX_MAP_MK)
 TEX_MAP_MK=		# defined
 
-DEPENDS+=		texlive-tetex>=2008:../../print/texlive-tetex
+DEPENDS+=		tex-tetex>=3.0.24482:../../print/tex-tetex
 
-EVAL_PREFIX+=		TETEX_PREFIX=texlive-tetex
+EVAL_PREFIX+=		TETEX_PREFIX=tex-tetex
 FILES_SUBST+=		UPDMAP_SYS=${TETEX_PREFIX:Q}/bin/updmap-sys
 FILES_SUBST+=		MAP_FILES=${TEX_MAP_FILES:Q}
 FILES_SUBST+=		MIXEDMAP_FILES=${TEX_MIXEDMAP_FILES:Q}
-INSTALL_TEMPLATES+=	../../print/texlive-tetex/files/map-install.tmpl
-DEINSTALL_TEMPLATES+=	../../print/texlive-tetex/files/map-deinstall.tmpl
+INSTALL_TEMPLATES+=	../../print/tex-tetex/files/map-install.tmpl
+DEINSTALL_TEMPLATES+=	../../print/tex-tetex/files/map-deinstall.tmpl
 
 .endif	# TEX_MAP_MK

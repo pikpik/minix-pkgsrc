@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2009/10/07 17:34:53 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2011/05/26 23:50:43 minskim Exp $
 
 DISTNAME=	musixtex
 PKGNAME=	tex-${DISTNAME}-1.15
+PKGREVISION=	1
 TEXLIVE_REV=	22568
 
 MAINTAINER=	dgriffi@cs.csubak.edu

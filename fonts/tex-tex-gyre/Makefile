@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/03/08 18:33:42 minskim Exp $
 
 DISTNAME=	tex-gyre
 PKGNAME=	tex-${DISTNAME}-2.004
+PKGREVISION=	1
 TEXLIVE_REV=	18651
 
 MAINTAINER=	minskim@NetBSD.org

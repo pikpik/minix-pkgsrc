@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/19 22:08:50 minskim Exp $
 
 DISTNAME=	norasi-c90
 PKGNAME=	tex-${DISTNAME}-2011
+PKGREVISION=	1
 TEXLIVE_REV=	15878
 
 MAINTAINER=	minskim@NetBSD.org
