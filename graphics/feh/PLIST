@@ -9,6 +9,7 @@ share/doc/feh/AUTHORS
 share/doc/feh/ChangeLog
 share/doc/feh/README
 share/doc/feh/TODO
+share/doc/feh/examples/buttons
 share/doc/feh/examples/keys
 share/doc/feh/examples/themes
 share/feh/fonts/black.style
