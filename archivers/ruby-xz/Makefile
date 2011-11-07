@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/03 19:51:05 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2011/10/08 03:07:17 minskim Exp $
 
 DISTNAME=	ruby-xz-0.0.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/ruby-//}
@@ -7,6 +7,8 @@ CATEGORIES=	archivers
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	https://github.com/Quintus/ruby-xz
 COMMENT=	Ruby bindings for liblzma
+
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	xz-[0-9]*:../../archivers/xz
 DEPENDS+=	${RUBY_PKGPREFIX}-ffi-[0-9]*:../../devel/ruby-ffi
