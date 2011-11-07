@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/11/02 21:14:23 shattered Exp $
+# $NetBSD: Makefile,v 1.6 2011/07/18 19:06:02 drochner Exp $
 #
 
-DISTNAME=	boxbackup-0.10
-PKGNAME=	boxbackup-client-0.10
-PKGREVISION=	1
+DISTNAME=	boxbackup-0.11.1
+PKGNAME=	boxbackup-client-0.11.1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=boxbackup/}
 EXTRACT_SUFX=	.tgz
@@ -23,6 +22,7 @@ USE_TOOLS+=	perl:run
 REPLACE_PERL+=	bin/bbackupd/bbackupd-config
 
 INSTALLATION_DIRS+=	bin
+#INSTALL_TARGET= install-backup-client
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/parcels/boxbackup*-backup-client-*/bbackupctl ${DESTDIR}${PREFIX}/bin
