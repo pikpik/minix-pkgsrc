@@ -1,8 +1,7 @@
-@comment $NetBSD: PLIST,v 1.10 2011/06/19 03:39:05 taca Exp $
+@comment $NetBSD: PLIST,v 1.11 2011/08/18 12:50:14 taca Exp $
 bin/redcloth
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/.gemtest
-${GEM_LIBDIR}/.require_paths
 ${GEM_LIBDIR}/.rspec
 ${GEM_LIBDIR}/CHANGELOG
 ${GEM_LIBDIR}/COPYING
