@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2011/10/07 12:28:11 taca Exp $
+# $NetBSD: Makefile,v 1.4 2011/10/10 16:32:59 taca Exp $
 #
 
 DISTNAME=	contao-${CT_VERSION}
 PKGNAME=	contao${CT_VER}-${CT_PKGVER}
 CATEGORIES=	www
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=typolight/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=contao/}
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.contao.org/
