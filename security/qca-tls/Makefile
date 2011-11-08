@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/01/13 13:39:19 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2011/11/01 06:02:30 sbd Exp $
 
 DISTNAME=	qca-tls-1.0
 PKGREVISION=	10
@@ -21,6 +21,9 @@ CONFIGURE_ARGS+=	--with-openssl-inc=${SSLBASE}/include
 CONFIGURE_ARGS+=	--with-openssl-lib=${SSLBASE}/lib
 
 INSTALL_MAKE_FLAGS+=	INSTALL_ROOT=${DESTDIR:Q}
+
+pre-install:
+	mkdir -p ${DESTDIR}${PREFIX}/qt3/plugins/crypto
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../x11/qt3-libs/buildlink3.mk"
