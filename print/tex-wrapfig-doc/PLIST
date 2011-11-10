@@ -1,2 +1,4 @@
 @comment $NetBSD$
 share/texmf-dist/doc/latex/wrapfig/multiple-span.txt
+share/texmf-dist/doc/latex/wrapfig/wrapfig-doc.pdf
+share/texmf-dist/doc/latex/wrapfig/wrapfig-doc.tex
