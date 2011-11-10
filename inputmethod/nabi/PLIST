@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2008/10/20 20:48:22 minskim Exp $
+@comment $NetBSD$
 bin/nabi
 share/locale/de/LC_MESSAGES/nabi.mo
 share/locale/ko/LC_MESSAGES/nabi.mo
@@ -37,3 +37,11 @@ share/nabi/themes/keyboard/README
 share/nabi/themes/keyboard/english.png
 share/nabi/themes/keyboard/hangul.png
 share/nabi/themes/keyboard/none.png
+share/nabi/themes/ubuntu-mono-dark/README
+share/nabi/themes/ubuntu-mono-dark/english.png
+share/nabi/themes/ubuntu-mono-dark/hangul.png
+share/nabi/themes/ubuntu-mono-dark/none.png
+share/nabi/themes/ubuntu-mono-light/README
+share/nabi/themes/ubuntu-mono-light/english.png
+share/nabi/themes/ubuntu-mono-light/hangul.png
+share/nabi/themes/ubuntu-mono-light/none.png
