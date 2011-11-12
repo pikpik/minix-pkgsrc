@@ -1,9 +1,9 @@
 $NetBSD$
 
---- suite/app/Makefile.in.orig	2011-08-14 01:09:42.000000000 +0000
+--- suite/app/Makefile.in.orig	2011-09-28 23:11:01.000000000 +0000
 +++ suite/app/Makefile.in
-@@ -103,6 +103,10 @@ TK_LIBS := -framework SystemConfiguratio
- endif
+@@ -91,6 +91,10 @@ ifeq (cocoa,$(MOZ_WIDGET_TOOLKIT))
+ TK_LIBS := -framework Cocoa $(TK_LIBS)
  endif
  
 +ifeq ($(OS_ARCH),NetBSD)
