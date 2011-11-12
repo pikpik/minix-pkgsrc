@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2011/10/03 12:46:07 tnn Exp $
+# $NetBSD: Makefile,v 1.42 2011/10/03 12:52:40 tnn Exp $
 #
 
 .include "../../devel/xulrunner/dist.mk"
@@ -71,7 +71,7 @@ BUILDLINK_PASSTHRU_DIRS+=	Developer/Headers/FlatCarbon
 
 pre-configure:
 # sanity check: make sure the nspr release is what we think it is.
-	@set -e; if [ '"${NSPR_RELEASE}' !=			\
+	@set -e; if [ '"${NSPR_RELEASE}"' !=			\
 	  "`${AWK} '/PR_VERSION/ {print $$3}' <			\
 	    ${WRKSRC}/nsprpub/pr/include/prinit.h`" ]; then	\
 	  ${ECHO} "package is out of date";			\
