@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/09/14 16:56:54 hans Exp $
+# $NetBSD: Makefile,v 1.8 2011/11/01 06:01:55 sbd Exp $
 #
 
-DISTNAME=		scim-1.4.9
-PKGREVISION=		6
+DISTNAME=		scim-1.4.11
 CATEGORIES=		inputmethod
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scim/}
 
@@ -48,10 +47,10 @@ LDFLAGS.SunOS+=		-lsocket -lnsl
 .endif
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../devel/libltdl/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libICE/buildlink3.mk"
 BUILDLINK_DEPMETHOD.libXt=	build
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
