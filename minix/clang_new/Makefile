@@ -3,7 +3,7 @@
 
 PKGNAME=	clang-klee-3.0-r${SVNREV}
 CATEGORIES=	minix
-MASTER_SITES=	http://www.shrike-systems.com/minix/
+MASTER_SITES=	${MASTER_SITE_MINIX}
 SVNREV=		137273
 DISTNAME=	llvm-clang-r${SVNREV}-klee-r137290
 

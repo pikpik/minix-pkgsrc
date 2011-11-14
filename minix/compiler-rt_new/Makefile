@@ -3,7 +3,7 @@
 DISTNAME=	compiler-rt-r137288
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
-MASTER_SITES=	http://www.shrike-systems.com/minix/
+MASTER_SITES=        ${MASTER_SITE_MINIX}
 CATEGORIES=	minix
 
 BUILD_DEPENDS+=	cmake-[0-9]*:../../devel/cmake
