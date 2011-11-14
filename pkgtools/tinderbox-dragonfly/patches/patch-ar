@@ -300,6 +300,17 @@ $NetBSD$
     -cleanpackages  removes all packages already built fors the        
                     specified Build                                    
     -updateports    updates the Build's PortsTree (NOTE: dangerous if  
+@@ -452,8 +444,8 @@
+    -fetch-original ignores the distfile cache, and fetches all        
+                    distfiles from their respective sources            
+    -nolog          disables log analysis code                         
+-   -onceonly       only performs one build pass (i.e. tinderbuild     
+-                   Phase 1)                                           
++   -twice          Performs a second build pass (tinderbuild Phase 1)
++                   after a build failure.
+    -norebuild      do not force a rebuild of packages specified on    
+                    the command line                                   
+ 
 @@ -472,23 +464,23 @@
  
     To update existing Jails:

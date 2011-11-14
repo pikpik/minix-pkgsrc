@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2011/11/02 21:13:17 marino Exp $
+# $NetBSD: options.mk,v 1.2 2011/11/06 19:51:13 joerg Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.tbox-dfly
 PKG_SUPPORTED_OPTIONS=	pgsql mysql webui anybody lsof emailer
@@ -12,8 +12,7 @@ PLIST_VARS+=		WEBUI
 ########################################
 
 .if  empty(PKG_OPTIONS:Mpgsql) && empty(PKG_OPTIONS:Mmysql)
-PKG_FAIL_REASON+=	"Tinderbox requires a database or confirmation you have already installed on."
-PKG_FAIL_REASON+=	"Please select either pgsql or mysql"
+PKG_FAIL_REASON+=	"Tinderbox requires a database, so select pgsql or mysql option."
 .endif
 
 .if !empty(PKG_OPTIONS:Mpgsql)
