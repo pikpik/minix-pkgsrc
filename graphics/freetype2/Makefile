@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.83 2011/10/26 19:24:45 tez Exp $
+# $NetBSD: Makefile,v 1.84 2011/11/01 05:57:41 sbd Exp $
 
-DISTNAME=	freetype-2.4.7
+DISTNAME=	freetype-2.4.8
 PKGNAME=	${DISTNAME:S/-/2-/}
-PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=freetype/}
 EXTRACT_SUFX=	.tar.bz2
