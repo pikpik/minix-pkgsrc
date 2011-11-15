@@ -1,4 +1,4 @@
-# $NetBSD: mozilla-common.mk,v 1.25 2011/08/18 18:31:09 tnn Exp $
+# $NetBSD: mozilla-common.mk,v 1.26 2011/08/19 14:31:10 tnn Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 2.0.
 # 
@@ -8,7 +8,7 @@
 # used by www/seamonkey/Makefile
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		pkg-config perl gmake autoconf213
+USE_TOOLS+=		pkg-config perl gmake autoconf213 unzip
 USE_LANGUAGES+=		c99 c++
 UNLIMIT_RESOURCES+=	datasize
 
