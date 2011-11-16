@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.89 2011/11/01 06:02:16 sbd Exp $
+# $NetBSD: Makefile,v 1.90 2011/11/01 13:57:28 hans Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
-PKGREVISION=		9
 
 COMMENT=		Multimedia player library
 
