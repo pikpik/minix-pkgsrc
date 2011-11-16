@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.56 2011/04/12 00:49:35 mrg Exp $
+# $NetBSD: Makefile,v 1.57 2011/11/15 09:41:40 mrg Exp $
 
 DISTNAME=		ircii-${VERS}
 PKGNAME=		ircII-${VERS}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		chat
 MASTER_SITES=		ftp://ircii.warped.com/pub/ircII/ \
 			http://ircii.warped.com/pub/ircII/
