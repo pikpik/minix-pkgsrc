@@ -26,6 +26,7 @@ include/orc-0.4/orc/orcx86insn.h
 lib/liborc-0.4.la
 lib/liborc-test-0.4.la
 lib/pkgconfig/orc-0.4.pc
+share/aclocal/orc.m4
 share/gtk-doc/html/orc/ch01.html
 share/gtk-doc/html/orc/ch02.html
 share/gtk-doc/html/orc/ch03.html
