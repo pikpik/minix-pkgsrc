@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2011,v 1.2975 2011/11/19 03:29:45 hiramatsu Exp $
+$NetBSD: CHANGES-2011,v 1.2978 2011/11/19 17:15:01 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2011:
 
@@ -4704,3 +4704,13 @@ Changes to the packages collection and infrastructure in 2011:
 	Updated www/p5-HTTP-Proxy to 0.25 [hiramatsu 2011-11-19]
 	Updated www/p5-LWP-Online to 1.08 [hiramatsu 2011-11-19]
 	Updated net/wireshark to 1.6.4 [tron 2011-11-19]
+	Updated devel/ruby-activesupport3 to 3.0.11 [taca 2011-11-19]
+	Updated devel/ruby-activemodel to 3.0.11 [taca 2011-11-19]
+	Updated www/ruby-actionpack3 to 3.0.11 [taca 2011-11-19]
+	Updated databases/ruby-activerecord3 to 3.0.11 [taca 2011-11-19]
+	Updated www/ruby-activeresource3 to 3.0.11 [taca 2011-11-19]
+	Updated mail/ruby-actionmailer3 to 3.0.11 [taca 2011-11-19]
+	Updated devel/ruby-railties to 3.0.11 [taca 2011-11-19]
+	Updated www/ruby-rails3 to 3.0.11 [taca 2011-11-19]
+	Added www/apache-tomcat7 version 7.0.22 [ryoon 2011-11-19]
+	Updated security/crudesaml to 1.2 [manu 2011-11-19]
