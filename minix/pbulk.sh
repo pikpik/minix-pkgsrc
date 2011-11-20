@@ -49,7 +49,7 @@ pbulksh_bootstrap() {
 
 	cd /usr/pkgsrc
 
-	sh ./bootstrap/bootstrap --prefix=/usr/pbulk \
+	env CFLAGS="-march=i586" sh ./bootstrap/bootstrap --prefix=/usr/pbulk \
 			--varbase=/usr/pbulk/var \
 			--workdir=/usr/tmp/pbulk-bootstrap \
 			--pkgdbdir=/usr/pbulk/.pkgdb \
@@ -102,7 +102,7 @@ pbulksh_bin_kit() {
 	# Trim the .ifdef BSD_PKG_MK and .endif lines to make a "fragment"
 	sed -e '1d;$d' /usr/pkgsrc/minix/mk.conf.minix > /usr/pkgsrc/minix/mk.conf.minix.frag
 
-	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} sh ./bootstrap/bootstrap \
+	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} CFLAGS="-march=i586" sh ./bootstrap/bootstrap \
 		--mk-fragment=/usr/pkgsrc/minix/mk.conf.minix.frag \
 		--gzip-binary-kit=/usr/pkgsrc/bootstrap/bootstrap.tar.gz \
 		--varbase=/usr/var \

@@ -4,6 +4,7 @@ DIST_PATH=/usr/pkgsrc/distfiles
 AR=ar
 LD=ld
 CC= gcc
+CFLAGS+=	-march=i586
 BINUTILS_PROGRAM_PREFIX=
 COMPILER_TYPE=gnu
 PKGSRC_COMPILER=    gcc
