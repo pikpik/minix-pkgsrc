@@ -17,4 +17,6 @@ SHA1 (patch-an) = b5fe924970772bd8a5b420f8cc638ab8bf892c53
 SHA1 (patch-cmake_modules_FindTaglib.cmake) = 97baf0e5c9f53a17582d89ee41cb4d99fbd15424
 SHA1 (patch-kdeui_colors_kcolordialog.cpp) = f105006a778c42a93452fc4bf5d561aa62595a5c
 SHA1 (patch-khtml_khtml_part.cpp) = f8f5977b03463b6de909881178abed3ba351364c
+SHA1 (patch-kio_kssl_ksslcertificatebox.cpp) = 1f187968a49e251fbdbbf2569e4703ac05b474be
+SHA1 (patch-kioslave_http_http.cpp) = abd6446120fab21cd30da3e9e1fdc00218802d89
 SHA1 (patch-kjs_JSImmediate.h) = 29949739140d766362d308ece28c96aef593ed73
