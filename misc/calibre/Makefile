@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2011/11/01 06:02:04 sbd Exp $
+# $NetBSD: Makefile,v 1.25 2011/11/13 16:08:31 gls Exp $
 #
 
-DISTNAME=	calibre-0.8.26
+DISTNAME=	calibre-0.8.27
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=calibre/}
 
