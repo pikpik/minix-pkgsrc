@@ -40,7 +40,14 @@ $NetBSD$
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -3698,21 +3705,14 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -3694,25 +3701,21 @@ void minix::Link::ConstructJob(Compilation &C, const J
+       getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
+       CmdArgs.push_back("-lm");
+     }
++  }
+ 
++  if (!Args.hasArg(options::OPT_nostdlib) &&
++      !Args.hasArg(options::OPT_nostartfiles)) {
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
      CmdArgs.push_back("-lc");
