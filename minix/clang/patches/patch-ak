@@ -20,7 +20,7 @@ $NetBSD$
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
-@@ -3678,9 +3678,14 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -3678,9 +3678,16 @@ void minix::Link::ConstructJob(Compilation &C, const J
    }
  
    if (!Args.hasArg(options::OPT_nostdlib) &&
@@ -33,12 +33,14 @@ $NetBSD$
 +      CmdArgs.push_back(
 +	 Args.MakeArgString(getToolChain().GetFilePath("crti.o")));
 +      CmdArgs.push_back(
++	 Args.MakeArgString(getToolChain().GetFilePath("crtbegin.o")));
++      CmdArgs.push_back(
 +	 Args.MakeArgString(getToolChain().GetFilePath("crtn.o")));
 +  }
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -3698,21 +3703,12 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -3698,21 +3705,14 @@ void minix::Link::ConstructJob(Compilation &C, const J
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
      CmdArgs.push_back("-lc");
@@ -49,6 +51,8 @@ $NetBSD$
 -    CmdArgs.push_back("-L/usr/gnu/lib/gcc/i686-pc-minix/4.4.3");
 +    CmdArgs.push_back("-lCompilerRT-Generic");
 +    CmdArgs.push_back("-L/usr/pkg/lib");
++    CmdArgs.push_back(
++	 Args.MakeArgString(getToolChain().GetFilePath("crtend.o")));
    }
  
 -  if (!Args.hasArg(options::OPT_nostdlib) &&
