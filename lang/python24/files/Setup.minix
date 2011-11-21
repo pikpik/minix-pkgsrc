@@ -420,7 +420,7 @@ sha shamodule.c
 binascii binascii.c
 
 # Fred Drake's interface to the Python parser
-#parser parsermodule.c
+parser parsermodule.c
 
 # cStringIO and cPickle
 cStringIO cStringIO.c
