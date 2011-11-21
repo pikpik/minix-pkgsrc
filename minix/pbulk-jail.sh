@@ -125,6 +125,8 @@ jailall() {
 	echo " * Running bulk build."
 	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --all"
 ) | tee $LOGFILE
+	echo "rsync -a $JAILPKGSRC/packages $USER@kits:/usr/local/www/docs/minix3/packages.current"
+	echo "rsync -a $JAILROOT/usr/pbulk-logs $USER@kits:/usr/local/www/docs/minix3/pbulk-logs.current"
 	return 0
 }
 
