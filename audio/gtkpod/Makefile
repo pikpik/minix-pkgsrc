@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2011/11/01 06:00:37 sbd Exp $
+# $NetBSD: Makefile,v 1.36 2011/11/21 19:48:08 shattered Exp $
 #
 
 DISTNAME=	gtkpod-1.0.0
@@ -49,5 +49,6 @@ BUILDLINK_API_DEPENDS.libgpod+=	libgpod>=0.7.0
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
