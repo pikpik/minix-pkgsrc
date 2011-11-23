@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/05/14 14:28:07 obache Exp $
+# $NetBSD: Makefile,v 1.5 2011/11/01 06:00:45 sbd Exp $
 #
 
 DISTNAME=	gajim-0.14.1
@@ -20,7 +20,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 
-USE_TOOLS+=	gmake intltool pkg-config
+USE_TOOLS+=	gmake intltool pkg-config msgfmt
 GNU_CONFIGURE=	yes
 
 PYTHON_VERSIONS_ACCEPTED=	27 26 25
