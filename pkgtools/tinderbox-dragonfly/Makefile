@@ -2,6 +2,7 @@
 #
 
 DISTNAME=	tinderbox-dragonfly-${TBOX_VERSION}
+PKGREVISION=	1
 CATEGORIES=	pkgtools
 MASTER_SITES=	http://tinderbox.marcuscom.com/
 DISTFILES=	tinderbox-${TBOX_VERSION}.tar.gz
