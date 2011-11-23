@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1534 2011/11/21 14:37:48 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.1535 2011/11/23 11:43:30 hiramatsu Exp $
 #
 
 COMMENT=	Development utilities
@@ -376,7 +376,6 @@ SUBDIR+=	librfuncs
 SUBDIR+=	librlog
 SUBDIR+=	librsync
 SUBDIR+=	librxspencer
-SUBDIR+=	libscsi
 SUBDIR+=	libsexy
 SUBDIR+=	libsexymm
 SUBDIR+=	libsigc++
