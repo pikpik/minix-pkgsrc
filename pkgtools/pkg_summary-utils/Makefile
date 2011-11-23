@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2011/11/17 18:47:42 cheusov Exp $
+# $NetBSD: Makefile,v 1.12 2011/11/22 21:07:29 cheusov Exp $
 
 DISTNAME=	pkg_summary-utils-0.56.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/psu/ \
 		http://www.mova.org/~cheusov/pub/pkg_summary-utils/
