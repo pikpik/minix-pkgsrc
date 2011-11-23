@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2011/01/18 12:06:57 drochner Exp $
+# $NetBSD: Makefile,v 1.22 2011/10/30 13:30:36 obache Exp $
 #
 
-DISTNAME=	pycrypto-2.4
+DISTNAME=	pycrypto-2.4.1
 PKGNAME=	${DISTNAME:S/^py/${PYPKGPREFIX}-/}
 CATEGORIES=	security python
 MASTER_SITES=	http://ftp.dlitz.net/pub/dlitz/crypto/pycrypto/
