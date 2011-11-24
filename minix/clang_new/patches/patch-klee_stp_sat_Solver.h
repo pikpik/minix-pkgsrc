@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/stp/sat/Solver.h.orig	Thu Aug 11 01:14:45 2011
+--- klee/stp/sat/Solver.h.orig	Thu Nov 24 15:07:27 2011
 +++ klee/stp/sat/Solver.h
 @@ -315,9 +315,14 @@ static inline int64 memUsed() {
  #include <sys/resource.h>

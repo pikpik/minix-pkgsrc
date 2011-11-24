@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/tools/klee/Makefile.orig	Thu Aug 11 01:14:44 2011
+--- klee/tools/klee/Makefile.orig	Thu Nov 24 15:07:24 2011
 +++ klee/tools/klee/Makefile
 @@ -18,7 +18,7 @@ USEDLIBS = kleeCore.a kleeModule.a kleaverSolver.a kle
  ifeq ($(ENABLE_EXT_STP),0)

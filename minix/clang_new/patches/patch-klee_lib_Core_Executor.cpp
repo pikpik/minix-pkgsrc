@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/lib/Core/Executor.cpp.orig	Thu Aug 11 01:14:44 2011
+--- klee/lib/Core/Executor.cpp.orig	Thu Nov 24 15:07:25 2011
 +++ klee/lib/Core/Executor.cpp
 @@ -3268,10 +3268,14 @@ void Executor::runFunctionAsMain(Function *f,
    if (statsTracker)

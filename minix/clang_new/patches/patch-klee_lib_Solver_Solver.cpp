@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/lib/Solver/Solver.cpp.orig	Thu Aug 11 01:14:45 2011
+--- klee/lib/Solver/Solver.cpp.orig	Thu Nov 24 15:07:25 2011
 +++ klee/lib/Solver/Solver.cpp
 @@ -29,6 +29,7 @@
  #include <vector>

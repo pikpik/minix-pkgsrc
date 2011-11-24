@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/Makefile.common.orig	Thu Aug 11 01:14:45 2011
+--- klee/Makefile.common.orig	Thu Nov 24 15:07:27 2011
 +++ klee/Makefile.common
 @@ -36,7 +36,7 @@ else
    LD.Flags += -L$(PROJ_SRC_ROOT)/stp/lib

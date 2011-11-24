@@ -1,8 +1,8 @@
 $NetBSD$
 
---- klee/tools/klee/main.cpp.orig	Thu Aug 11 01:14:44 2011
+--- klee/tools/klee/main.cpp.orig	Thu Nov 24 15:07:24 2011
 +++ klee/tools/klee/main.cpp
-@@ -47,6 +47,7 @@
+@@ -51,6 +51,7 @@
  #include <fstream>
  #include <cerrno>
  #include <dirent.h>
@@ -10,7 +10,7 @@ $NetBSD$
  #include <errno.h>
  #include <sys/stat.h>
  #include <sys/wait.h>
-@@ -1209,7 +1210,11 @@ int main(int argc, char **argv, char **envp) {  
+@@ -1213,7 +1214,11 @@ int main(int argc, char **argv, char **envp) {  
        return r;
    }
  

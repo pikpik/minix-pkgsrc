@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/runtime/klee-libc/htonl.c.orig	Thu Aug 11 01:14:43 2011
+--- klee/runtime/klee-libc/htonl.c.orig	Thu Nov 24 15:07:17 2011
 +++ klee/runtime/klee-libc/htonl.c
 @@ -41,7 +41,7 @@ uint32_t htonl(uint32_t v) {
  

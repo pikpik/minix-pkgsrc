@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/configure.orig	Thu Aug 11 01:14:45 2011
+--- klee/configure.orig	Thu Nov 24 15:07:27 2011
 +++ klee/configure
 @@ -2033,6 +2033,7 @@ llvm_package_version=`grep PACKAGE_VERSION= $with_llvm
  echo "${ECHO_T}$llvm_package_version" >&6; }

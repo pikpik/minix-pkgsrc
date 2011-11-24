@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/Support/Unix/Program.inc.orig	Wed Aug 10 23:15:18 2011
+--- lib/Support/Unix/Program.inc.orig	Thu Nov 24 15:07:52 2011
 +++ lib/Support/Unix/Program.inc
 @@ -376,7 +376,11 @@ Program::Wait(const sys::Path &path,
      }

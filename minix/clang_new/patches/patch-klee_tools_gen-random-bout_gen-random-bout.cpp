@@ -1,6 +1,6 @@
 $NetBSD$
 
---- klee/tools/gen-random-bout/gen-random-bout.cpp.orig	Thu Aug 11 01:14:44 2011
+--- klee/tools/gen-random-bout/gen-random-bout.cpp.orig	Thu Nov 24 15:07:24 2011
 +++ klee/tools/gen-random-bout/gen-random-bout.cpp
 @@ -9,7 +9,7 @@
  

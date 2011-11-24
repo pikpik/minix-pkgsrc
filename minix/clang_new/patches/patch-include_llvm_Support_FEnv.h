@@ -1,6 +1,6 @@
 $NetBSD$
 
---- include/llvm/Support/FEnv.h.orig	Wed Aug 10 23:15:06 2011
+--- include/llvm/Support/FEnv.h.orig	Thu Nov 24 15:06:57 2011
 +++ include/llvm/Support/FEnv.h
 @@ -33,8 +33,10 @@ namespace sys {
  /// llvm_fenv_clearexcept - Clear the floating-point exception state.

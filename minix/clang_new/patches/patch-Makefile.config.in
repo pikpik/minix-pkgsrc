@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.config.in.orig	Wed Aug 10 23:15:19 2011
+--- Makefile.config.in.orig	Thu Nov 24 15:07:55 2011
 +++ Makefile.config.in
-@@ -83,11 +83,11 @@ LLVMMAKE := $(LLVM_SRC_ROOT)/make
+@@ -89,11 +89,11 @@ endif
  PROJ_bindir     := $(PROJ_prefix)/bin
  PROJ_libdir     := $(PROJ_prefix)/lib
  PROJ_datadir    := $(PROJ_prefix)/share
