@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/09/17 22:35:25 pettai Exp $
+# $NetBSD: Makefile,v 1.15 2011/11/18 21:42:45 pettai Exp $
 #
 
 DISTNAME=	opendnssec-1.3.3
@@ -23,7 +23,6 @@ USE_TOOLS+=	bash gmake
 CONFIG_SHELL=	${BASH}
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
-RUBY_VERSION_SUPPORTED=	18
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
@@ -71,6 +70,12 @@ OWN_DIRS+=		${VARBASE}/opendnssec/tmp
 OWN_DIRS+=		${VARBASE}/opendnssec/signconf
 OWN_DIRS+=		${VARBASE}/opendnssec/signed
 OWN_DIRS+=		${VARBASE}/opendnssec/unsigned
+
+.include "../../lang/ruby/rubyversion.mk"
+
+.if ${RUBY_VER} != 18
+DEPENDS+=	${RUBY_PKGPREFIX}-soap4r>=2.0.3:../../net/ruby-soap4r
+.endif
 
 .include "options.mk"
 
