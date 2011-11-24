@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.894 2011/11/22 22:19:01 tez Exp $
+# $NetBSD: Makefile,v 1.895 2011/11/23 23:16:55 abs Exp $
 #
 
 COMMENT=	Networking tools
@@ -522,6 +522,7 @@ SUBDIR+=	ruby-net-ping
 SUBDIR+=	ruby-netaddr
 SUBDIR+=	ruby-rubytter
 SUBDIR+=	ruby-snmp
+SUBDIR+=	ruby-soap4r
 SUBDIR+=	ruby-tweetstream
 SUBDIR+=	ruby-twitter-stream
 SUBDIR+=	samba
