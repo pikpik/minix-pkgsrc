@@ -20,7 +20,7 @@ $NetBSD$
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
-@@ -4202,9 +4202,14 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -4202,9 +4202,16 @@ void minix::Link::ConstructJob(Compilation &C, const J
    }
  
    if (!Args.hasArg(options::OPT_nostdlib) &&
@@ -33,12 +33,14 @@ $NetBSD$
 +      CmdArgs.push_back(
 +	 Args.MakeArgString(getToolChain().GetFilePath("crti.o")));
 +      CmdArgs.push_back(
++	 Args.MakeArgString(getToolChain().GetFilePath("crtbegin.o")));
++      CmdArgs.push_back(
 +	 Args.MakeArgString(getToolChain().GetFilePath("crtn.o")));
 +  }
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -4212,6 +4217,8 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -4212,33 +4219,29 @@ void minix::Link::ConstructJob(Compilation &C, const J
  
    AddLinkerInputs(getToolChain(), Inputs, Args, CmdArgs);
  
@@ -47,7 +49,13 @@ $NetBSD$
    if (!Args.hasArg(options::OPT_nostdlib) &&
        !Args.hasArg(options::OPT_nodefaultlibs)) {
      if (D.CCCIsCXX) {
-@@ -4222,23 +4229,12 @@ void minix::Link::ConstructJob(Compilation &C, const J
+       getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
+       CmdArgs.push_back("-lm");
+     }
++  }
+ 
++  if (!Args.hasArg(options::OPT_nostdlib) &&
++      !Args.hasArg(options::OPT_nostartfiles)) {
      if (Args.hasArg(options::OPT_pthread))
        CmdArgs.push_back("-lpthread");
      CmdArgs.push_back("-lc");
@@ -58,6 +66,8 @@ $NetBSD$
 -    CmdArgs.push_back("-L/usr/gnu/lib/gcc/i686-pc-minix/4.4.3");
 +    CmdArgs.push_back("-lCompilerRT-Generic");
 +    CmdArgs.push_back("-L/usr/pkg/lib");
++    CmdArgs.push_back(
++	 Args.MakeArgString(getToolChain().GetFilePath("crtend.o")));
    }
  
 -  if (!Args.hasArg(options::OPT_nostdlib) &&
