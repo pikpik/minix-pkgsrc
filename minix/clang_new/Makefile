@@ -8,7 +8,8 @@ SVNREV=		145121
 DISTNAME=	llvm-clang-klee-r${SVNREV}
 
 PYTHON_FOR_BUILD_ONLY= yes
-REPLACE_PYTHON=	utils/llvm-build/llvm-build
+REPLACE_PYTHON=	utils/llvm-build/llvm-build \
+	utils/lit/lit.py
 
 # Avoid dependency on lang/gcc44
 MINIX_GCC_NODEP=yes
@@ -35,8 +36,6 @@ INSTALLATION_DIRS=	bin lib libexec
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
 CXXFLAGS+= -D_POSIX_SOURCE
-CONFIGURE_ARGS+= --disable-jit 
-CONFIGURE_ARGS+= --enable-targets=x86
 CONFIGURE_ARGS+= --disable-shared
 CONFIGURE_ARGS+= --disable-llvm-dynamic-plugins
 CONFIGURE_ARGS+= --disable-threads
@@ -46,7 +45,6 @@ CONFIGURE_ARGS+= --disable-llvmc-dynamic-plugins
 CONFIGURE_ARGS+= --disable-libtool-lock
 CONFIGURE_ARGS+= --enable-optimized
 CONFIGURE_ARGS+= --disable-assertions
-CONFIGURE_ENV+= AR=ar AS=as LD=ld NM=nm
 .else
 # This should be changed!
 CONFIGURE_ARGS+= --enable-targets=host-only
