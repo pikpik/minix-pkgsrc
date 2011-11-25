@@ -1,14 +1,17 @@
-# $NetBSD: Makefile,v 1.5 2009/10/11 08:32:04 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2011/02/25 09:47:29 wiz Exp $
 #
 
 DISTNAME=	mechanize-0.1.11
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://wwwsearch.sourceforge.net/mechanize/src/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://wwwsearch.sourceforge.net/mechanize/
 COMMENT=	Stateful programmatic web browsing in Python
+
+DEPENDS+=	${PYPKGPREFIX}-ClientForm>=0.2.6:../../www/py-ClientForm
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
