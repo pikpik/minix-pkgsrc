@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/02/28 14:52:49 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2011/07/04 00:18:07 jym Exp $
 #
 
 DISTNAME=	asymptote-1.85
@@ -17,6 +17,8 @@ BUILD_DEPENDS+=	tex-pdftex-[0-9]*:../../print/tex-pdftex
 BUILD_DEPENDS+=	ghostscript-[0-9]*:../../print/ghostscript
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+UNLIMIT_RESOURCES=	datasize
 
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
