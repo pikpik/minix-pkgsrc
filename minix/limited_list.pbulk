@@ -228,6 +228,7 @@ textproc/xmlrpc-c
 textproc/xmlto
 time/cal
 time/jday
+wm/cwm
 wm/fluxbox
 wm/fvwm
 wm/jwm

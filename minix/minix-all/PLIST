@@ -230,6 +230,7 @@
 @exec pkgin -y in xmlto-0.0.23nb1
 @exec pkgin -y in cal-3.5nb1
 @exec pkgin -y in jday-1.3
+@exec pkgin -y in cwm-3nb2
 @exec pkgin -y in fluxbox-1.1.1nb6
 @exec pkgin -y in fvwm-2.4.20nb4
 @exec pkgin -y in jwm-2.0.1nb4

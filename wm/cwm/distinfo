@@ -3,3 +3,4 @@ $NetBSD$
 SHA1 (cwm-3.tar.gz) = 04490462ba74de2f388bbb4cb04c0f1d7c2b2921
 RMD160 (cwm-3.tar.gz) = c533065d7d8a5044f03418aea38c295450c54af1
 Size (cwm-3.tar.gz) = 137437 bytes
+SHA1 (patch-configure.in) = 0b3e4c651de1fa61314ecc996f8945c04799f509
