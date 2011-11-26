@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/05/13 17:12:19 drochner Exp $
+# $NetBSD: Makefile,v 1.12 2011/08/09 16:28:03 ryoon Exp $
 #
 
 DISTNAME=	gobject-introspection-0.10.8
@@ -19,6 +19,7 @@ DEPENDS+=	${PYPKGPREFIX}-cElementTree-[0-9]*:../../textproc/py-cElementTree
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config flex bison gmake
+GMAKE_REQD=	3.81
 
 CONFIGURE_ARGS+=	--disable-tests
 
