@@ -4,11 +4,12 @@ time_t compat fixes for NetBSD-6+
 
 --- src/lha.h.orig	2009-02-13 18:28:46.000000000 -0500
 +++ src/lha.h	2009-02-13 18:28:10.000000000 -0500
-@@ -16,6 +16,7 @@
+@@ -16,6 +16,8 @@
  #include <sys/types.h>
  #include <sys/file.h>
  #include <sys/stat.h>
 +#include <sys/time.h>
++#include <utime.h>
  
  #include <signal.h>
  

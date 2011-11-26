@@ -6,6 +6,7 @@ archivers/gtar
 archivers/gtar-base
 archivers/gtar-info
 archivers/gzip
+archivers/lha
 archivers/libarchive
 archivers/libzip
 archivers/lzo

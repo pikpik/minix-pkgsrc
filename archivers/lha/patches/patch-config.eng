@@ -1,0 +1,9 @@
+$NetBSD$
+
+--- config.eng.orig	Fri Dec 15 12:13:16 2000
++++ config.eng
+@@ -44,3 +44,4 @@ machine depended macros
+   RMDIRPATH		to use external rmdir command, define with NOMKDIR.
+   NOT_COMPATIBLE_MODE
+   HAVE_NO_LCHOWN	if your machine has no lchown(2), define this.
++  HAVE_NO_UTIMES	if your machine has no utimes(2), define this.
