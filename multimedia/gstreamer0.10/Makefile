@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2011/05/18 09:34:20 drochner Exp $
+# $NetBSD: Makefile,v 1.44 2011/07/12 08:55:07 drochner Exp $
 #
 
 DISTNAME=		gstreamer-0.10.35
@@ -26,8 +26,7 @@ CONFIGURE_ARGS+=	--disable-tests
 CONFIGURE_ENV+=		ac_cv_path_PYTHON=${TRUE:Q}
 CONFIGURE_ENV+=		ac_cv_path_XSLTPROC=${TRUE:Q}
 
-BUILD_DEPENDS+=		flex>=2.5.31:../../devel/flex
-TOOLS_PLATFORM.flex=	${LOCALBASE}/bin/flex
+FLEX_REQD=		2.5.31
 
 PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer-base-uninstalled.pc.in
 PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer-base.pc.in
