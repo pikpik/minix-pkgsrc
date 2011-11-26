@@ -129,6 +129,7 @@ lang/f2c
 lang/gawk
 lang/gcc44
 lang/guile
+lang/intercal
 lang/lua
 lang/nawk
 lang/p2c

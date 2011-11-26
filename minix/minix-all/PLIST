@@ -131,6 +131,7 @@
 @exec pkgin -y in gawk-3.1.8nb1
 @exec pkgin -y in gcc44-4.4.6nb4
 @exec pkgin -y in guile-1.8.8nb1
+@exec pkgin -y in intercal-0.29
 @exec pkgin -y in lua-5.1.4nb3
 @exec pkgin -y in nawk-20050424nb3
 @exec pkgin -y in p2c-1.20
