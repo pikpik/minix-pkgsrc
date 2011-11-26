@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10688 2011/11/24 08:23:09 obache Exp $
+$NetBSD: TODO,v 1.10690 2011/11/26 09:18:42 obache Exp $
 
 Suggested new packages
 ======================
@@ -1141,7 +1141,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o py-jersey-1.0.3 [pkg/43762]
 	o py-karaoke-0.7.3
 	o py-m2crypto-0.20.2
-	o py-mechanize-0.2.5
 	o py-mxDateTime-3.2.0
 	o py-simplejson-2.2.1
 	o py-sybase-0.37
@@ -1476,7 +1475,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o xmms-musepack-1.8.0 [http://dl.slik.org/musepack/xmms-musepack-1.8.0.tar.gz]
 	o xmodmap-1.0.5
 	o xmon-1.5.6
-	o xmp-3.4.1
 	o xmule-1.12.2
 	o xnap-2.5r3
 	o xorg-util-macros-1.10.1 [pkg/43891]
