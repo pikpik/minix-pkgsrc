@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/05/28 21:22:35 zafer Exp $
+# $NetBSD: Makefile,v 1.7 2010/08/21 15:27:31 asau Exp $
 #
 
 DISTNAME=		findlib-1.2.6
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake m4
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
+MAKE_JOBS_SAFE=		no
 CONFIGURE_ARGS+=	-bindir ${PREFIX}/bin
 CONFIGURE_ARGS+=	-mandir ${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	-config ${PKG_SYSCONFDIR}/ocamlfind.conf
