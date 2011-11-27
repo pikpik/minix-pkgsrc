@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2008/07/14 12:56:10 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2011/04/22 13:44:24 obache Exp $
 #
 
 DISTNAME=	lopster-1.2.2
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lopster/}
 
@@ -18,5 +18,6 @@ GNU_CONFIGURE=	yes
 post-extract:
 	${RM} -fr ${WRKSRC}/intl
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
