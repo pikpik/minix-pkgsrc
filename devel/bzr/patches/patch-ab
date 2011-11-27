@@ -1,5 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.7 2010/12/04 01:21:06 gdt Exp $
 
+# Honor PKGMANDIR
 --- setup.py.orig	2010-03-24 07:18:08.000000000 +0000
 +++ setup.py
 @@ -709,7 +709,7 @@ else:
