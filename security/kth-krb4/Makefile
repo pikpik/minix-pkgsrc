@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.52 2010/01/17 12:02:41 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2011/03/24 05:38:01 obache Exp $
 #
 
 DISTNAME=		krb4-1.2.2
 PKGNAME=		kth-krb4-1.2.2
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		security net
 MASTER_SITES=		ftp://ftp.pdc.kth.se/pub/krb/src/
 
@@ -66,7 +66,16 @@ CONFIGURE_ARGS+=	--with-readline=yes \
 .include "../../devel/readline/buildlink3.mk"
 .endif
 
-PLIST_VARS+=		glob
+PLIST_VARS+=	glob wantdes
+
+.if ${OPSYS} == "DragonFly" || ${OPSYS} == "FreeBSD"
+CPPFLAGS+=	-DOPENSSL_DES_LIBDES_COMPATIBILITY
+.if ${MACHINE_ARCH} == "x86_64" || ${MACHINE_ARCH} == "amd64"
+CFLAGS+=	-fPIC
+.endif
+.else
+PLIST.wantdes=	yes
+.endif
 
 post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${EXAMPLEDIR}
