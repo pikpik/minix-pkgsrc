@@ -1,7 +1,7 @@
 $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
 
---- dbus/dbus-sysdeps-unix.c.orig	2008-12-18 22:35:53 +0200
-+++ dbus/dbus-sysdeps-unix.c	2009-01-09 13:49:43 +0200
+--- dbus/dbus-sysdeps-unix.c.orig	Tue May  5 20:51:37 2009
++++ dbus/dbus-sysdeps-unix.c
 @@ -23,6 +23,7 @@
   */
  
@@ -31,12 +31,12 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
  #ifdef HAVE_ADT
  #include <bsm/adt.h>
  #endif
-@@ -87,6 +95,32 @@
+@@ -87,7 +95,33 @@
  #define socklen_t int
  #endif
  
 +#ifdef LOCAL_PEEREID
-+static dbus_bool_t
+ static dbus_bool_t
 +dbus_nb_getpeereid(int fd, pid_t *pid, uid_t *uid, gid_t *gid)
 +{
 +  struct unpcbid cred;
@@ -61,10 +61,11 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
 +}
 +#endif
 +
- static dbus_bool_t
++static dbus_bool_t
  _dbus_open_socket (int              *fd_p,
                     int               domain,
-@@ -581,7 +615,7 @@ _dbus_set_local_creds (int fd, dbus_bool
+                    int               type,
+@@ -581,7 +615,7 @@ _dbus_set_local_creds (int fd, dbus_bool_t on)
  {
    dbus_bool_t retval = TRUE;
  
@@ -73,7 +74,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
    /* NOOP just to make sure only one codepath is used 
     *      and to prefer CMSGCRED
     */
-@@ -1041,9 +1075,9 @@ write_credentials_byte (int             
+@@ -1041,9 +1075,9 @@ write_credentials_byte (int             server_fd,
    int bytes_written;
    char buf[1] = { '\0' };
  #if defined(HAVE_CMSGCRED) 
@@ -85,7 +86,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
    } cmsg;
    struct iovec iov;
    struct msghdr msg;
-@@ -1054,10 +1088,10 @@ write_credentials_byte (int             
+@@ -1054,10 +1088,10 @@ write_credentials_byte (int             server_fd,
    msg.msg_iov = &iov;
    msg.msg_iovlen = 1;
  
@@ -99,7 +100,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
    cmsg.hdr.cmsg_level = SOL_SOCKET;
    cmsg.hdr.cmsg_type = SCM_CREDS;
  #endif
-@@ -1129,15 +1163,15 @@ _dbus_read_credentials_socket  (int     
+@@ -1129,15 +1163,15 @@ _dbus_read_credentials_socket  (int              clien
    dbus_pid_t pid_read;
    int bytes_read;
    
@@ -120,7 +121,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
  #elif defined(LOCAL_CREDS)
    struct {
      struct cmsghdr hdr;
-@@ -1145,6 +1179,9 @@ _dbus_read_credentials_socket  (int     
+@@ -1145,6 +1179,9 @@ _dbus_read_credentials_socket  (int              clien
    } cmsg;
  #endif
  
@@ -130,7 +131,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
    _DBUS_ASSERT_ERROR_IS_CLEAR (error);
    
    /* The POSIX spec certainly doesn't promise this, but
-@@ -1170,11 +1207,16 @@ _dbus_read_credentials_socket  (int     
+@@ -1170,11 +1207,16 @@ _dbus_read_credentials_socket  (int              clien
    msg.msg_iov = &iov;
    msg.msg_iovlen = 1;
  
@@ -148,7 +149,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
  
   again:
    bytes_read = recvmsg (client_fd, &msg, 0);
-@@ -1210,8 +1252,12 @@ _dbus_read_credentials_socket  (int     
+@@ -1210,8 +1252,12 @@ _dbus_read_credentials_socket  (int              clien
        return FALSE;
      }
  
@@ -162,7 +163,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
      {
        dbus_set_error (error, DBUS_ERROR_FAILED,
                        "Message from recvmsg() was not SCM_CREDS");
-@@ -1238,8 +1284,21 @@ _dbus_read_credentials_socket  (int     
+@@ -1238,8 +1284,21 @@ _dbus_read_credentials_socket  (int              clien
  		       cr_len, (int) sizeof (cr), _dbus_strerror (errno));
        }
  #elif defined(HAVE_CMSGCRED)
@@ -186,7 +187,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
  #elif defined(LOCAL_CREDS)
      pid_read = DBUS_PID_UNSET;
      uid_read = cmsg.cred.sc_uid;
-@@ -1301,7 +1360,7 @@ _dbus_read_credentials_socket  (int     
+@@ -1301,7 +1360,7 @@ _dbus_read_credentials_socket  (int              clien
        }
      if (ucred != NULL)
        ucred_free (ucred);
@@ -195,7 +196,24 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
      _dbus_verbose ("Socket credentials not supported on this OS\n");
  #endif
    }
-@@ -1826,7 +1885,26 @@ _dbus_parse_uid (const DBusString      *
+@@ -1491,12 +1550,16 @@ fill_user_info (DBusUserInfo       *info,
+     struct passwd p_str;
+ 
+     /* retrieve maximum needed size for buf */
++#ifdef _SC_GETPW_R_SIZE_MAX
+     buflen = sysconf (_SC_GETPW_R_SIZE_MAX);
+ 
+     /* sysconf actually returns a long, but everything else expects size_t,
+      * so just recast here.
+      * https://bugs.freedesktop.org/show_bug.cgi?id=17061
+      */
++#else
++    buflen = -1;
++#endif
+     if ((long) buflen <= 0)
+       buflen = 1024;
+ 
+@@ -1826,8 +1889,27 @@ _dbus_parse_uid (const DBusString      *uid_str,
    return TRUE;
  }
  
@@ -204,7 +222,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
 +_dbus_atomic_inc (DBusAtomic *atomic)
 +{
 +	register dbus_int32_t old = atomic->value;
-+
+ 
 +	atomic_inc_uint((unsigned *)&atomic->value);
 +	return old;
 +}
@@ -213,16 +231,17 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
 +_dbus_atomic_dec (DBusAtomic *atomic)
 +{
 +	register dbus_int32_t old = atomic->value;
- 
++
 +	atomic_dec_uint((unsigned *)&atomic->value);
 +  	return old;
 +}
-+_DBUS_DEFINE_GLOBAL_LOCK (atomic);
-+#else
  _DBUS_DEFINE_GLOBAL_LOCK (atomic);
++#else
++_DBUS_DEFINE_GLOBAL_LOCK (atomic);
  
  #if DBUS_USE_ATOMIC_INT_486_COND
-@@ -1891,6 +1969,7 @@ _dbus_atomic_dec (DBusAtomic *atomic)
+ /* Taken from CVS version 1.7 of glibc's sysdeps/i386/i486/atomicity.h */
+@@ -1891,6 +1973,7 @@ _dbus_atomic_dec (DBusAtomic *atomic)
    return res;
  #endif
  }
@@ -230,7 +249,7 @@ $NetBSD: patch-ab,v 1.16 2009/01/06 19:00:50 hasso Exp $
  
  #ifdef DBUS_BUILD_TESTS
  /** Gets our GID
-@@ -2792,8 +2871,18 @@ int
+@@ -2792,8 +2875,18 @@ int
  _dbus_printf_string_upper_bound (const char *format,
                                   va_list     args)
  {

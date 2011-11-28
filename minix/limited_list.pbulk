@@ -200,6 +200,7 @@ shells/zsh
 sysutils/bchunk
 sysutils/cpuid
 sysutils/crashme
+sysutils/dbus
 sysutils/e2fsprogs
 sysutils/heirloom-doc
 sysutils/mdf2iso
