@@ -135,6 +135,7 @@ lang/nawk
 lang/p2c
 lang/perl5
 lang/python24
+lang/python25
 lang/tcl
 lang/wsbasic
 mail/mutt
