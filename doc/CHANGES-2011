@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2011,v 1.3068 2011/11/28 11:00:42 adam Exp $
+$NetBSD: CHANGES-2011,v 1.3076 2011/11/28 16:46:44 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2011:
 
@@ -4871,3 +4871,11 @@ Changes to the packages collection and infrastructure in 2011:
 	Updated net/p5-Net-Twitter to 3.18001 [hiramatsu 2011-11-28]
 	Updated devel/p5-Test-Most to 0.25 [hiramatsu 2011-11-28]
 	Updated www/p5-CGI-Application-Plugin-ValidateRM to 2.4 [hiramatsu 2011-11-28]
+	Updated www/libmicrohttpd to 0.9.17 [wiz 2011-11-28]
+	Updated www/links to 2.4 [wiz 2011-11-28]
+	Updated www/links-gui to 2.4 [wiz 2011-11-28]
+	Updated misc/gaupol to 0.19.2 [wiz 2011-11-28]
+	Updated security/caff to 1.1.4 [wiz 2011-11-28]
+	Updated devel/pcre to 8.20 [wiz 2011-11-28]
+	Updated audio/ocp to 0.1.21 [wiz 2011-11-28]
+	Updated pkgtools/pkglint to 4.105 [wiz 2011-11-28]
