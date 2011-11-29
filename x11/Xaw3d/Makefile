@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2009/05/03 11:50:46 tron Exp $
+# $NetBSD: Makefile,v 1.56 2011/02/17 16:59:22 gdt Exp $
 
 DISTNAME=	Xaw3d-1.5E
 PKGREVISION=	4
@@ -46,6 +46,5 @@ post-install:
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
