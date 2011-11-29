@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/06/20 01:09:21 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2010/11/01 00:08:11 wiz Exp $
 
 DISTNAME=	cdlabelgen-3.6.0
 CATEGORIES=	graphics
@@ -11,8 +11,9 @@ COMMENT=	Generate frontcards and traycards for CDs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=	perl:run
+USE_TOOLS+=	perl:run perldoc
 USE_LANGUAGES=	# empty
+REPLACE_PERL+=	cdlabelgen
 
 MAKE_ENV+=	SED=${SED:Q}
 MAKE_ENV+=	MV=${MV:Q}
