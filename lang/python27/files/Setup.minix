@@ -98,7 +98,10 @@ EXTRAMACHDEPPATH=
 # The TKPATH variable is always enabled, to save you the effort.
 TKPATH=:lib-tk
 
-COREPYTHONPATH=$(DESTPATH)$(SITEPATH)$(TESTPATH)$(MACHDEPPATH)$(EXTRAMACHDEPPATH)$(TKPATH)
+# Path component for old modules.
+OLDPATH=:lib-old
+
+COREPYTHONPATH=$(DESTPATH)$(SITEPATH)$(TESTPATH)$(MACHDEPPATH)$(EXTRAMACHDEPPATH)$(TKPATH)$(OLDPATH)
 PYTHONPATH=$(COREPYTHONPATH)
 
 
@@ -115,6 +118,7 @@ pwd pwdmodule.c			# this is needed to find out the user's home dir
 				# if $HOME is not set
 _sre _sre.c			# Fredrik Lundh's new regular expressions
 _codecs _codecsmodule.c		# access to the builtin codecs and codec registry
+_weakref _weakref.c             # weak references
 
 # The zipimport module is always imported at startup. Having it as a
 # builtin module avoids some bootstrapping problems and reduces overhead.
@@ -165,17 +169,21 @@ GLHACK=-Dclear=__GLclear
 # Modules that should always be present (non UNIX dependent):
 
 array arraymodule.c	# array objects
-cmath cmathmodule.c # -lm # complex math library functions
-math mathmodule.c # -lm # math library functions, e.g. sin()
+cmath cmathmodule.c _math.c # -lm # complex math library functions
+math mathmodule.c _math.c # -lm # math library functions, e.g. sin()
 _struct _struct.c     # binary structure packing/unpacking
 time timemodule.c # -lm # time operations and variables
 operator operator.c	# operator.add() and similar goodies
-_weakref _weakref.c	# basic weak reference support
-_testcapi _testcapimodule.c    # Python C API test module
+#_testcapi _testcapimodule.c    # Python C API test module
 _random _randommodule.c	# Random number generator
-collections collectionsmodule.c # Container types
+_collections _collectionsmodule.c # Container types
 itertools itertoolsmodule.c	# Functions creating iterators for efficient looping 
 strop stropmodule.c		# String manipulations
+_functools _functoolsmodule.c # Tools for working with functions and callable objects
+_elementtree -I$(srcdir)/Modules/expat -DHAVE_EXPAT_CONFIG_H -DUSE_PYEXPAT_CAPI _elementtree.c        # elementtree accelerator
+#_pickle _pickle.c     # pickle accelerator
+datetime datetimemodule.c     # date/time type
+_bisect _bisectmodule.c       # Bisection algorithms
 
 unicodedata unicodedata.c    # static Unicode character database
 
@@ -240,10 +248,11 @@ crypt cryptmodule.c # -lcrypt	# crypt(3); needs -lcrypt on some systems
 
 _md5 md5module.c md5.c
 
-
-# The sha module implements the SHA checksum algorithm.
-# (NIST's Secure Hash Algorithm.)
+# The _sha module implements the SHA checksum algorithms.
+# (NIST's Secure Hash Algorithms.)
 _sha shamodule.c
+_sha256 sha256module.c
+_sha512 sha512module.c
 
 
 # SGI IRIX specific modules -- off by default.
@@ -461,9 +470,7 @@ zlib zlibmodule.c -I$(prefix)/include -L$(exec_prefix)/lib -lz
 #
 # More information on Expat can be found at www.libexpat.org.
 #
-#EXPAT_DIR=/usr/local/src/expat-1.95.2
-#pyexpat pyexpat.c -DHAVE_EXPAT_H -I$(EXPAT_DIR)/lib -L$(EXPAT_DIR) -lexpat
-
+pyexpat expat/xmlparse.c expat/xmlrole.c expat/xmltok.c pyexpat.c -I$(srcdir)/Modules/expat -DHAVE_EXPAT_CONFIG_H -DUSE_PYEXPAT_CAPI
 
 # Hye-Shik Chang's CJKCodecs
 

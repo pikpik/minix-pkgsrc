@@ -15,8 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS+=	python-[0-9]*
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--with-threads
-CONFIGURE_ARGS+=	--enable-shared
+#CONFIGURE_ARGS+=	--with-threads
+#CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	OPT=${CFLAGS:Q}
 CONFIGURE_ARGS+=	--with-system-ffi
 CONFIGURE_ARGS+=	--with-dbmliborder=ndbm:bdb
@@ -42,6 +42,14 @@ CFLAGS+=	-fwrapv
 .endif
 
 .include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--without-threads
+CONFIGURE_ARGS+=	--disable-shared
+.else
+CONFIGURE_ARGS+=       --with-threads
+CONFIGURE_ARGS+=       --enable-shared
+.endif
 
 # fdatasync()
 LIBS.SunOS+=		-lrt
@@ -103,6 +111,14 @@ PLIST_VARS+=	extra-so
 .if !empty(IS_64BIT_PLATFORM:M[nN][oO])
 PLIST.extra-so=	yes
 .endif
+
+LIBS.Minix+=           -lcrypt
+
+.if ${OPSYS} == "Minix"
+post-patch:
+	${CP} ${FILESDIR}/Setup.minix ${WRKSRC}/Modules/Setup
+.endif
+
 
 # Make sure python modules can link correctly
 .if ${OPSYS} == "Darwin"
