@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2011/11/01 06:00:56 sbd Exp $
+# $NetBSD: Makefile,v 1.81 2011/11/27 05:43:25 sbd Exp $
 
 DISTNAME=	kdesdk-${_KDE_VERSION}
 PKGREVISION=	18
@@ -13,7 +13,7 @@ CONFLICTS+=	umbrello-[0-9]*
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
 BDB_ACCEPTED=		db4 db5
-USE_TOOLS+=		lex perl:run bash:run
+USE_TOOLS+=		lex perl:run bash:run pod2man
 CONFIGURE_ARGS+=	--with-db-dir=${BDBBASE}
 CONFIGURE_ARGS+=	--with-db-include=${BDB_TYPE}/db.h
 #CONFIGURE_ARGS+=	--with-db-include-dir=${BDBBASE}/include/${BDB_TYPE}
