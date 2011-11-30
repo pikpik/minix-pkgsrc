@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.64 2011/05/22 22:41:00 tron Exp $
+# $NetBSD: Makefile,v 1.65 2011/11/25 22:25:51 alnsn Exp $
 
 DISTNAME=	apr-1.4.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_APACHE:=apr/}
 EXTRACT_SUFX=	.tar.bz2
@@ -30,4 +30,5 @@ post-install:
 	${RM} ${DESTDIR}${PREFIX}/libexec/apr/libtool
 	${INSTALL_SCRIPT} ${PKG_LIBTOOL} ${DESTDIR}${PREFIX}/libexec/apr/libtool
 
+.include "../../devel/libuuid/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
