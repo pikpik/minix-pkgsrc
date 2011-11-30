@@ -51,6 +51,6 @@ MASTER_SITE_OVERRIDE=${MASTER_SITE_BACKUP}
 PYTHON_VERSION_DEFAULT=27
 PYPACKAGE=python27
 
-PREFER_PKGSRC=	MesaLib Xft2 Xrandr Xrender glu
+PREFER_PKGSRC=	MesaLib Xft2 Xrandr Xrender glu fontconfig freetype2
 
 .endif
