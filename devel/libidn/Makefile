@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.76 2011/05/02 13:09:11 wiz Exp $
+# $NetBSD: Makefile,v 1.77 2011/05/05 07:46:44 adam Exp $
 
-DISTNAME=	libidn-1.22
+DISTNAME=	libidn-1.23
 CATEGORIES=	devel
 MASTER_SITES=	ftp://alpha.gnu.org/pub/gnu/libidn/ \
 		http://ftp.gnu.org/gnu/libidn/
