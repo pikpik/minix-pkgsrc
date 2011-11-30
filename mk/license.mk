@@ -1,4 +1,4 @@
-# $NetBSD: license.mk,v 1.43 2011/06/24 12:00:37 taca Exp $
+# $NetBSD: license.mk,v 1.44 2011/09/08 20:17:15 abs Exp $
 #
 # This file handles everything about the LICENSE variable. It is
 # included automatically by bsd.pkg.mk.
@@ -119,7 +119,8 @@ DEFAULT_ACCEPTABLE_LICENSES= \
 	isc \
 	boost-license \
 	mplusfont \
-	cc-by-sa-v3.0
+	cc-by-sa-v3.0 \
+	gnu-agpl-v3
 
 # not approved by OSI, derived from BSD
 DEFAULT_ACCEPTABLE_LICENSES+=	info-zip
