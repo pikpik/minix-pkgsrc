@@ -1,4 +1,4 @@
-$NetBSD: patch-bm,v 1.1 2000/09/26 21:42:36 eeh Exp $
+$NetBSD: patch-bm,v 1.1.1.1 2003/04/11 00:31:45 uebayasi Exp $
 
 --- ./src/alloc.c.orig	Thu Sep 16 00:20:15 1999
 +++ ./src/alloc.c	Tue Sep 26 11:54:24 2000
@@ -6,7 +6,7 @@ $NetBSD: patch-bm,v 1.1 2000/09/26 21:42:36 eeh Exp $
  
  #if defined (__STDC__) && __STDC__
  #include <stddef.h>
-+#include <malloc.h>
++#include <stdlib.h>
  #define	__malloc_size_t		size_t
  #else
  #define	__malloc_size_t		unsigned int
