@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/07/18 09:27:25 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2011/10/05 18:11:55 marino Exp $
 #
 
 DISTNAME=	gnat-aux-${SNAPSHOT}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://downloads.dragonlace.net/src/ \
 		http://dragonlace.mirrors.ada.cx/src/
