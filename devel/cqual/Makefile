@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/08/06 01:44:47 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2010/01/29 17:53:56 joerg Exp $
 #
 
 DISTNAME=		cqual-0.991
@@ -19,6 +19,7 @@ USE_TOOLS+=		gmake perl:run bison m4
 REPLACE_PERL+=		bin/*
 INFO_FILES=		yes
 
+BUILDLINK_TRANSFORM=	rm:-Werror
 INSTALLATION_DIRS=	share/doc/cqual share/examples/cqual
 
 .include "options.mk"
