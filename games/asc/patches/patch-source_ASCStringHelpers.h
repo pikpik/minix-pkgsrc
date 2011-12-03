@@ -1,8 +1,14 @@
 $NetBSD$
 
---- source/ASCStringHelpers.h.orig	2011-11-23 16:20:40.000000000 +0000
+--- source/ASCStringHelpers.h.orig	2005-08-17 19:08:19.000000000 +0000
 +++ source/ASCStringHelpers.h
-@@ -9,6 +9,7 @@
+@@ -4,11 +4,13 @@
+ #include <cassert>
+ #include <cstdarg>
+ #include <cstdio>
++#include <cstdlib>
+ #include <memory>
+ #include <string>
  #include <wchar.h>
  #include <stdio.h>
  #include <ctype.h>
