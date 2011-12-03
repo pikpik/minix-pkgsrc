@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/08/31 12:42:19 gdt Exp $
+# $NetBSD: Makefile,v 1.12 2010/09/15 11:51:29 adam Exp $
 
 DISTNAME=	mod_wsgi-${VERSION}
 PKGNAME=	${APACHE_PKG_PREFIX}-${PYPKGPREFIX}-wsgi-${VERSION}
@@ -11,6 +11,8 @@ COMMENT=	WSGI module for apache
 LICENSE=	apache-2.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 APACHE_MODULE=	yes
 VERSION=	3.3

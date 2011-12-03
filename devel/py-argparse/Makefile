@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/07/24 17:25:51 gdt Exp $
+# $NetBSD: Makefile,v 1.2 2010/07/24 17:46:59 gdt Exp $
 #
 
 VERSION=	1.1
@@ -14,6 +14,7 @@ COMMENT=	Easy, declarative interface for creating command line tools
 LICENSE=	apache-2.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 USE_LANGUAGES=	# none
 

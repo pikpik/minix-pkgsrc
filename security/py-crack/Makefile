@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/03/05 18:51:31 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2011/10/29 06:15:12 obache Exp $
 #
 
 DISTNAME=	pycrack-0.01
@@ -13,6 +13,8 @@ COMMENT=	Python interface to cracklib
 LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 DEPENDS+=			crack>=5.0:../../security/crack
 

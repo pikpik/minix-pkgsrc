@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2011/10/30 13:30:36 obache Exp $
+# $NetBSD: Makefile,v 1.23 2011/11/23 19:09:01 gls Exp $
 #
 
 DISTNAME=	pycrypto-2.4.1
@@ -15,6 +15,8 @@ LICENSE=	python-software-foundation
 CONFLICTS+=	${PYPKGPREFIX}-amkCrypto-[0-9]*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 GNU_CONFIGURE=	yes
 

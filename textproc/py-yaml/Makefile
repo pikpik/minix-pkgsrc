@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/08/09 09:37:00 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2011/10/16 07:27:49 obache Exp $
 #
 
 DISTNAME=	PyYAML-3.08
@@ -13,6 +13,8 @@ COMMENT=	Collection of libraries to process YAML with Python
 LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 .include "../../lang/python/distutils.mk"
 .include "../../textproc/libyaml/buildlink3.mk"
