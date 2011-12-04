@@ -11,6 +11,12 @@ ${PYSITELIB}/fabfile/__init__.pyo
 ${PYSITELIB}/fabfile/docs.py
 ${PYSITELIB}/fabfile/docs.pyc
 ${PYSITELIB}/fabfile/docs.pyo
+${PYSITELIB}/fabfile/tag.py
+${PYSITELIB}/fabfile/tag.pyc
+${PYSITELIB}/fabfile/tag.pyo
+${PYSITELIB}/fabfile/utils.py
+${PYSITELIB}/fabfile/utils.pyc
+${PYSITELIB}/fabfile/utils.pyo
 ${PYSITELIB}/fabric/__init__.py
 ${PYSITELIB}/fabric/__init__.pyc
 ${PYSITELIB}/fabric/__init__.pyo
