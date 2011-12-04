@@ -162,7 +162,7 @@ lib/libpt.so.${PKGVERSION}
 lib/libpt_s.a
 lib/pkgconfig/ptlib.pc
 lib/${PKGNAME}/devices/sound/oss_pwplugin.so
-lib/${PKGNAME}/devices/videoinput/v4l2_pwplugin.so
+${PLIST.video4l2}lib/${PKGNAME}/devices/videoinput/v4l2_pwplugin.so
 share/ptlib/make/common.mak
 share/ptlib/make/lib.mak
 share/ptlib/make/plugins.mak
