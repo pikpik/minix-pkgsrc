@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/03/08 15:56:44 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2010/07/07 01:13:08 joerg Exp $
 #
 
 DISTNAME=		mico-2.3.12
@@ -40,6 +40,10 @@ SUBST_SED.exampledir=		-e "s@(INSTDIR)/doc/mico/examples@(SHARED_INSTDIR)/exampl
 
 INSTALL_MAKE_FLAGS+=		INSTDIR=${DESTDIR}${PREFIX} \
 				SHARED_INSTDIR=${DESTDIR}${PREFIX}/share
+
+# prevent throw.h.orig from being installed
+pre-install:
+	${RM} -f ${WRKSRC}/include/mico/throw.h.orig
 
 .include "../../mk/omf-scrollkeeper.mk"
 .include "../../mk/bsd.pkg.mk"
