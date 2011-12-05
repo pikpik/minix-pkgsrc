@@ -76,6 +76,7 @@ devel/nbpatch
 devel/ncurses
 devel/p5-Error
 devel/p5-enum
+devel/pango
 devel/patch
 devel/patchutils
 devel/pcre

@@ -53,3 +53,7 @@ BUILDLINK_API_DEPENDS.fontconfig+=	fontconfig>=2.5.0
 BUILDLINK_API_DEPENDS.Xft2+=	Xft2>=2.1.7nb3
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
+
+.if ${OPSYS} == "Minix"
+CONFIGURE_ENV+=	CAIRO_CFLAGS=-I/usr/pkg/include/cairo
+.endif
