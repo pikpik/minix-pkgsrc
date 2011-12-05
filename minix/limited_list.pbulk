@@ -18,6 +18,7 @@ archivers/xz
 archivers/zip
 benchmarks/forkbomb
 benchmarks/pipebench
+benchmarks/ubench
 chat/ircd-hybrid
 chat/irssi
 chat/naim

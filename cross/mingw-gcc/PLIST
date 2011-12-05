@@ -236,7 +236,6 @@ include/c++/3.4.5/valarray
 include/c++/3.4.5/vector
 info/cpp.info
 info/cppinternals.info
-info/dir
 info/gcc.info
 info/gccinstall.info
 info/gccint.info
