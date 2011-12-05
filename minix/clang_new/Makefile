@@ -4,7 +4,7 @@
 PKGNAME=	clang-klee-3.0-r${SVNREV}
 CATEGORIES=	minix
 MASTER_SITES=	${MASTER_SITE_MINIX}
-SVNREV=		145121
+SVNREV=		145807
 DISTNAME=	llvm-clang-klee-r${SVNREV}
 
 PYTHON_FOR_BUILD_ONLY= yes
@@ -14,11 +14,13 @@ REPLACE_PYTHON=	utils/llvm-build/llvm-build \
 # Avoid dependency on lang/gcc44
 MINIX_GCC_NODEP=yes
 
+CONFLICTS= clang*
+
 MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
 COMMENT=	Low Level Virtual Machine compiler infrastructure
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
-DEPENDS+=       compiler-rt-r137288:../../minix/compiler-rt_new
+DEPENDS+=       compiler-rt-r145807:../../minix/compiler-rt_new
 
 USE_DESTDIR=no
 
@@ -60,12 +62,12 @@ post-extract:
 	${MV} ${WRKDIR}/klee ${KLEE}
 
 post-build:
-	#cd ${KLEE} && ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
-	#cd ${KLEE} && gmake ENABLE_OPTIMIZED=1
+	cd ${KLEE} && ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
+	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1
 
 post-install:
-	#${CP} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${PREFIX}/bin/
-	#cd ${KLEE} && gmake install
+	${CP} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${PREFIX}/bin/
+	cd ${KLEE} && gmake install
 
 WRKSRC=			${WRKDIR}/llvm
 

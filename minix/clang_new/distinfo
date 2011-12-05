@@ -1,14 +1,13 @@
 $NetBSD$
 
-SHA1 (llvm-clang-klee-r145121.tar.gz) = 1585b5b1c0eafb8e3bc2a870ef317b89580f4132
-RMD160 (llvm-clang-klee-r145121.tar.gz) = 776db3c5e3ab6c6cf89f49ecdaa1f0a0897375fe
-Size (llvm-clang-klee-r145121.tar.gz) = 40998216 bytes
+SHA1 (llvm-clang-klee-r145807.tar.gz) = a7fd647bd18e7b876d2b4ed9001363e29e555671
+RMD160 (llvm-clang-klee-r145807.tar.gz) = bb04f41baf4a6876da30af5811f5481382a45c84
+Size (llvm-clang-klee-r145807.tar.gz) = 40432329 bytes
 SHA1 (patch-Makefile.config.in) = 5b45eeed9c695ca72d898412f474a626a70608c4
 SHA1 (patch-Makefile.rules) = bf5e4438541ebe9ff61e60c7cbb3dc5348af80e7
 SHA1 (patch-include_llvm_Support_FEnv.h) = 7e54996fa58cfd82baaada0d506f95bbfb317852
 SHA1 (patch-include_llvm_Support_system__error.h) = 2ddb3a89c713554ddb4f23b1a4989c1cbef38489
 SHA1 (patch-klee_Makefile.common) = f4769c88a240bdc00f348b792845e082fdcd0bcb
-SHA1 (patch-klee_configure) = d0487cf003501c3c8fd499a58630f18df648c531
 SHA1 (patch-klee_lib_Core_Executor.cpp) = e6363eac0688a6d62caf8fa01d793c041d0c2d86
 SHA1 (patch-klee_lib_Solver_Solver.cpp) = 217f79a25b7795a92f2474912c86214052d19819
 SHA1 (patch-klee_runtime_klee-libc_htonl.c) = 72c93b7f1069377a7e1a18e36d136f4c0e154e5a

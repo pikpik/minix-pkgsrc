@@ -1,6 +1,6 @@
 # Original by Brooks Davis taken from FreeBSD and modified by beng@
 
-DISTNAME=	compiler-rt-r137288
+DISTNAME=	compiler-rt-r145807
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
 MASTER_SITES=        ${MASTER_SITE_MINIX}
@@ -15,6 +15,8 @@ CONFIGURE_DIRS=	${WRKDIR}/build
 CMAKE_ARG_PATH=../${DISTNAME}
 BUILD_DIRS=		${WRKDIR}/build
 INSTALL_DIRS=		${WRKDIR}/build
+
+CONFLICTS=	compiler-rt*
 
 CMAKE_SOURCE_PATH=	${WRKSRC}
 
