@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.419 2011/10/18 01:52:40 dholland Exp $
+# $NetBSD: Makefile,v 1.420 2011/11/30 23:24:35 pettai Exp $
 #
 
 COMMENT=	Security tools
@@ -152,6 +152,7 @@ SUBDIR+=	netramet
 SUBDIR+=	nettle
 SUBDIR+=	nfsbug
 SUBDIR+=	nikto
+SUBDIR+=	oath-toolkit
 SUBDIR+=	ocaml-ssl
 SUBDIR+=	opencdk
 SUBDIR+=	openct
