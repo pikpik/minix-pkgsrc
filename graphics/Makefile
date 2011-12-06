@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.618 2011/11/01 16:45:11 ryoon Exp $
+# $NetBSD: Makefile,v 1.620 2011/12/05 17:33:31 joerg Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -74,6 +74,7 @@ SUBDIR+=	djvulibre-tools
 SUBDIR+=	dvipng
 SUBDIR+=	dx
 SUBDIR+=	dxsamples
+SUBDIR+=	edje
 SUBDIR+=	enblend-enfuse
 SUBDIR+=	eog
 SUBDIR+=	eog-plugins
@@ -93,7 +94,6 @@ SUBDIR+=	evas-software-x11
 SUBDIR+=	evas-svg
 SUBDIR+=	evas-tiff
 SUBDIR+=	evas-xpm
-SUBDIR+=	evas-xrender-x11
 SUBDIR+=	ewipe
 SUBDIR+=	exif
 SUBDIR+=	exifprobe

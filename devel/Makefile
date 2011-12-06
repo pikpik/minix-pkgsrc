@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1537 2011/12/02 05:26:11 agc Exp $
+# $NetBSD: Makefile,v 1.1538 2011/12/04 12:27:32 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -172,6 +172,7 @@ SUBDIR+=	doxygen
 SUBDIR+=	doxymacs
 SUBDIR+=	easygit
 SUBDIR+=	eclipse
+SUBDIR+=	ecore
 SUBDIR+=	edcommon
 SUBDIR+=	eet
 SUBDIR+=	eina
