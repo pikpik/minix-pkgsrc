@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2009/05/30 01:00:11 zafer Exp $
+# $NetBSD: Makefile,v 1.3 2010/02/12 00:31:52 joerg Exp $
 #
 
 DISTNAME=	calendar-2.0.4
 PKGNAME=	ocaml-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	time devel
 MASTER_SITES=	# http://www.lri.fr/~signoles/prog/calendar/
 

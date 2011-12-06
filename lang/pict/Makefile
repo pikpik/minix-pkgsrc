@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2009/10/29 10:10:57 asau Exp $
+# $NetBSD: Makefile,v 1.3 2009/12/07 22:56:02 joerg Exp $
 
 DISTNAME=	pict-4.1
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/papers/pict/pict-4.1/
 
