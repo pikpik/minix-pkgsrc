@@ -28,7 +28,7 @@ $NetBSD$
  endif
  GFX_ARCH = x
  
-@@ -67,14 +67,6 @@ OS_LIBS = -lc -framework System
+@@ -67,17 +67,12 @@ OS_LIBS = -lc -framework System
  
  ASFLAGS += -x assembler-with-cpp
  
@@ -43,3 +43,9 @@ $NetBSD$
  # Use the editline library to provide line-editing support.
  JS_EDITLINE = 1
  
+ # Don't allow Makefile.ref to use libmath
+ NO_LIBM = 1
+ 
++OS_CFLAGS += -DHAVE_VA_COPY -DVA_COPY=va_copy
++OS_CFLAGS += -DPIC -fPIC -DJS_HAVE_LONG_LONG -DHAVE_INTTYPES_H
++
