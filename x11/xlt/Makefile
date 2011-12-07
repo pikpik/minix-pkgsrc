@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2008/07/15 19:45:40 christos Exp $
+# $NetBSD: Makefile,v 1.2 2008/08/30 20:51:07 dholland Exp $
 #
 
 DISTNAME=		Xlt-13.0.13
@@ -23,7 +23,6 @@ USE_TOOLS+=		pkg-config
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 
