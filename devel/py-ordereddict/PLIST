@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/ordereddict.py
+${PYSITELIB}/ordereddict.pyc
+${PYSITELIB}/ordereddict.pyo
