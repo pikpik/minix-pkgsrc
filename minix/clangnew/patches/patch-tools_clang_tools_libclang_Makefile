@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- tools/clang/tools/libclang/Makefile.orig	Tue Nov 29 00:14:27 2011
++++ tools/clang/tools/libclang/Makefile
+@@ -12,8 +12,8 @@ LIBRARYNAME = clang
+ 
+ EXPORTED_SYMBOL_FILE = $(PROJ_SRC_DIR)/libclang.exports
+ 
+-LINK_LIBS_IN_SHARED = 1
+-SHARED_LIBRARY = 1
++#LINK_LIBS_IN_SHARED = 1
++#SHARED_LIBRARY = 1
+ 
+ LINK_COMPONENTS := support mc
+ USEDLIBS = clangARCMigrate.a clangRewrite.a clangFrontend.a clangDriver.a \

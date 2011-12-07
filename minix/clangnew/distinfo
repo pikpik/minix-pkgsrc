@@ -25,5 +25,6 @@ SHA1 (patch-tools_clang_lib_Driver_ToolChains.cpp) = e2d4720ecfb7d67931c968fd89a
 SHA1 (patch-tools_clang_lib_Driver_ToolChains.h) = 01df726b51e24ebb559db1a705255e6fd6501e59
 SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 75009b9fd407d1068f0d4a8a548d4c605be50e03
 SHA1 (patch-tools_clang_lib_Frontend_InitHeaderSearch.cpp) = fa5b52e647246fd7f01ace7b06d94d2cf12044e5
-SHA1 (patch-tools_clang_tools_Makefile) = c825208a69f19156f817b8f6fa97dcd30691480e
+SHA1 (patch-tools_clang_tools_Makefile) = af06ff765e7960342db8417bec148f06ab9e5067
+SHA1 (patch-tools_clang_tools_libclang_Makefile) = 1c00e161053e27db9061b36a03e6652885940566
 SHA1 (patch-utils_lit_lit_main.py) = 2453c537143070b52ae0804dd9468e92b38da394
