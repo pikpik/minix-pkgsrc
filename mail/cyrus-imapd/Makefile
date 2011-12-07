@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2011/06/30 13:20:46 obache Exp $
+# $NetBSD: Makefile,v 1.88 2011/08/14 13:25:21 obache Exp $
 
 DISTNAME=	cyrus-imapd-2.2.13p1
 PKGREVISION=	5
@@ -89,6 +89,12 @@ PLIST.ldap=		yes
 COMERRBASE?=		/usr
 .endif
 .if defined(COMERRBASE)
+# As com_err is a library the PREFER_* user variables should be honored.
+#
+BUILTIN_PKG:=   com_err
+.include "../../mk/buildlink3/bsd.builtin.mk"
+.endif
+.if defined(PREFER.com_err) && ${PREFER.com_err} != "pkgsrc"
 .  if exists(${COMERRBASE}/include/krb5/com_err.h)
 CPPFLAGS+=		-I${COMERRBASE}/include/krb5
 .  endif
