@@ -17,6 +17,7 @@ COMMENT=	Low Level Virtual Machine compiler infrastructure
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
 DEPENDS+=       compiler-rt-r123836nb3:../../minix/compiler-rt
 
+CONFLICTS= clang*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

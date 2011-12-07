@@ -10,6 +10,8 @@ COMMENT=	libgcc replacement
 
 BUILD_DEPENDS+=	cmake-[0-9]*:../../devel/cmake
 
+CONFLICTS=	compiler-rt*
+
 #WRKSRC=                 ${WRKDIR}/$(SVN_REPOSITORIES)
 
 INSTALL_DIRS= ${WRKDIR}/build
