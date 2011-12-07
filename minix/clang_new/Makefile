@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-PKGNAME=	clang_new
+PKGNAME=	clangnew
 CATEGORIES=	minix
 MASTER_SITES=	${MASTER_SITE_MINIX}
 SVNREV=		145807
