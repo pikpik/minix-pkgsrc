@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tools/clang/lib/Driver/Tools.cpp.orig	Thu Nov 24 15:07:23 2011
+--- tools/clang/lib/Driver/Tools.cpp.orig	Tue Dec  6 14:57:54 2011
 +++ tools/clang/lib/Driver/Tools.cpp
-@@ -3682,7 +3682,7 @@ void auroraux::Assemble::ConstructJob(Compilation &C, 
+@@ -3713,7 +3713,7 @@ void auroraux::Assemble::ConstructJob(Compilation &C, 
    }
  
    const char *Exec =
@@ -11,7 +11,7 @@ $NetBSD$
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
-@@ -4496,7 +4496,7 @@ void minix::Assemble::ConstructJob(Compilation &C, con
+@@ -4553,7 +4553,7 @@ void minix::Assemble::ConstructJob(Compilation &C, con
    }
  
    const char *Exec =
@@ -20,7 +20,7 @@ $NetBSD$
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
-@@ -4516,9 +4516,16 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -4573,9 +4573,16 @@ void minix::Link::ConstructJob(Compilation &C, const J
    }
  
    if (!Args.hasArg(options::OPT_nostdlib) &&
@@ -40,7 +40,7 @@ $NetBSD$
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -4526,33 +4533,29 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -4583,33 +4590,28 @@ void minix::Link::ConstructJob(Compilation &C, const J
  
    AddLinkerInputs(getToolChain(), Inputs, Args, CmdArgs);
  
@@ -78,9 +78,9 @@ $NetBSD$
 -
 -  addProfileRT(getToolChain(), Args, CmdArgs, getToolChain().getTriple());
 -
-   const char *Exec =
+-  const char *Exec =
 -    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu/bin/gld"));
-+    Args.MakeArgString(getToolChain().GetProgramPath("/usr/pkg/bin/ld"));
++  const char *Exec = Args.MakeArgString(getToolChain().GetProgramPath("ld"));
    C.addCommand(new Command(JA, *this, Exec, CmdArgs));
  }
  
