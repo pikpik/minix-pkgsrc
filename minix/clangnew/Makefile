@@ -4,7 +4,7 @@
 PKGNAME=	clangnew-r${SVNREV}
 CATEGORIES=	minix
 MASTER_SITES=	${MASTER_SITE_MINIX}
-SVNREV=		145807
+SVNREV=		146254
 DISTNAME=	llvm-clang-klee-r${SVNREV}
 
 USE_PYTHON=	yes
@@ -51,7 +51,7 @@ MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
 COMMENT=	Low Level Virtual Machine compiler infrastructure
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
-DEPENDS+=       compiler-rt-r145807:../../minix/compiler-rt_new
+DEPENDS+=       compiler-rt-r145807nb3:../../minix/compiler-rt_new
 
 USE_DESTDIR=no
 
@@ -98,8 +98,8 @@ post-extract:
 	${MV} ${WRKDIR}/klee ${KLEE}
 
 post-build:
-	#cd ${KLEE} && ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
-	#cd ${KLEE} && gmake ENABLE_OPTIMIZED=1
+	cd ${KLEE} && ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
+	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${PREFIX}/bin/
@@ -117,7 +117,7 @@ post-install:
 	${MKDIR} ${PREFIX}/share	
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${PREFIX}/share	
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${PREFIX}/share	
-	#cd ${KLEE} && gmake install
+	cd ${KLEE} && gmake install
 
 WRKSRC=			${WRKDIR}/llvm
 

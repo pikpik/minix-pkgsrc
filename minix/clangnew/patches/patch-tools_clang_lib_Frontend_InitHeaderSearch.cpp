@@ -7,7 +7,7 @@ $NetBSD$
    }
    case llvm::Triple::Minix:
 -    AddGnuCPlusPlusIncludePaths("/usr/gnu/include/c++/4.4.3",
-+    AddGnuCPlusPlusIncludePaths("/usr/pkg/gcc44/include/c++/4.4.3/",
++    AddGnuCPlusPlusIncludePaths("/usr/pkg/gcc44/include/c++/4.4.6",
                                  "", "", "", triple);
      break;
    case llvm::Triple::Solaris:

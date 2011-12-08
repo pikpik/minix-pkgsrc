@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- lib/Transforms/Makefile.orig	Tue Nov 29 00:14:23 2011
++++ lib/Transforms/Makefile
+@@ -13,7 +13,7 @@ PARALLEL_DIRS = Utils Instrumentation Scalar InstCombi
+ include $(LEVEL)/Makefile.config
+ 
+ # No support for plugins on windows targets
+-ifeq ($(HOST_OS), $(filter $(HOST_OS), Cygwin MingW Minix))
++ifeq ($(HOST_OS), $(filter $(HOST_OS), Cygwin MingW))
+   PARALLEL_DIRS := $(filter-out Hello, $(PARALLEL_DIRS))
+ endif
+ 
