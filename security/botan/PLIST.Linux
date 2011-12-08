@@ -1,6 +1,8 @@
-@comment $NetBSD: PLIST.Linux,v 1.1.1.1 2006/02/05 01:25:12 rillig Exp $
+@comment $NetBSD: PLIST.Linux,v 1.2 2010/03/31 10:33:46 jmmv Exp $
 include/botan/asm_macr.h
+${PLIST.x86_64}include/botan/eng_amd64.h
 include/botan/eng_sse2.h
 include/botan/es_ftw.h
+${PLIST.x86_64}include/botan/sha1_amd64.h
 include/botan/sha1_sse2.h
 include/botan/tm_posix.h
