@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/09/14 06:12:53 sno Exp $
+# $NetBSD: Makefile,v 1.4 2011/08/14 12:26:50 obache Exp $
 
-DISTNAME=	pip-1.18
+DISTNAME=	pip-1.19
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/A/AD/ADAMK/}
 
