@@ -89,6 +89,13 @@ SUBST_STAGE.python=     pre-configure
 SUBST_FILES.python=     klee/configure
 SUBST_SED.python=       -e "s,python -c ,${PYTHONBIN} -c ,"
 
+.if ${OPSYS} == "Minix"
+SUBST_CLASSES+=         sharedlibrary
+SUBST_STAGE.sharedlibrary=     pre-configure
+SUBST_FILES.sharedlibrary=     runtime/libprofile/Makefile tools/clang/tools/libclang/Makefile 
+SUBST_SED.sharedlibrary=       -e 's/SHARED_LIBRARY.*1/\#&/' -e 's/LINK_LIBS_IN_SHARED.*1/\#&/'
+.endif
+
 TEST_TARGET=	check unittests
 
 KLEE=${WRKDIR}/llvm/klee
