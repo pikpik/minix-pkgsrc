@@ -56,6 +56,7 @@ regression-test:
 	cd ${BUILD_DIRS} && make test
 
 do-install:
-	cp ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/lib/
+	${MKDIR} ${PREFIX}/compiler-rt/lib/
+	${INSTALL_LIB} ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/compiler-rt/lib/
 
 .include "../../mk/bsd.pkg.mk"
