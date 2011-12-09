@@ -1,12 +1,12 @@
 $NetBSD$
 
---- klee/stp/sat/Solver.h.orig	Thu Nov 24 15:07:27 2011
-+++ klee/stp/sat/Solver.h
+--- /usr/tmp/work/minix/clangnew/work/llvm/klee/stp/sat/Solver.h.orig	Thu Dec  8 00:55:55 2011
++++ /usr/tmp/work/minix/clangnew/work/llvm/klee/stp/sat/Solver.h
 @@ -315,9 +315,14 @@ static inline int64 memUsed() {
  #include <sys/resource.h>
  
  static inline double cpuTime(void) {
-+#ifdef __minix
++#ifndef RUSAGE_SELF
 +	return 0;
 +#else
      struct rusage ru;
@@ -22,7 +22,7 @@ $NetBSD$
  //defined(__FreeBSD__)
  
  static inline int64 memUsed(void) {
-+#ifdef __minix
++#ifndef RUSAGE_SELF
 +	return 0;
 +#else
      struct rusage ru;

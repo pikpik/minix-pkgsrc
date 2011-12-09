@@ -105,8 +105,8 @@ post-extract:
 	${MV} ${WRKDIR}/klee ${KLEE}
 
 post-build:
-	cd ${KLEE} && ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
-	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1
+	cd ${KLEE} && CPPFLAGS=-DUSE_KLEE_LIB_DIR=1 ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
+	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1 LLVMCC_OPTION=clang ENABLE_BUILT_CLANG=1
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${PREFIX}/bin/
