@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2009/02/17 13:02:20 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2010/02/01 02:37:56 joerg Exp $
 #
 
 DISTNAME=	Ngraph-6.3.30-src
-PKGREVISION=	2
+PKGREVISION=	3
 PKGNAME=	${DISTNAME:S/-src//}
 CATEGORIES=	graphics
 MASTER_SITES=	http://www2e.biglobe.ne.jp/~isizaka/bin/ \

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2007/04/13 06:47:18 xtraeme Exp $
+# $NetBSD: Makefile,v 1.49 2007/12/30 14:21:00 obache Exp $
 
 DISTNAME=	nedit-${VERS}-src
 PKGNAME=	nedit-${VERS}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_NEDIT:=v${VERS:S/./_/g}/} \
 		${MASTER_SITE_SOURCEFORGE:=nedit/}
@@ -43,7 +43,6 @@ do-install:
 .endfor
 
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

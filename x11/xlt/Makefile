@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2008/08/30 20:51:07 dholland Exp $
+# $NetBSD: Makefile,v 1.3 2011/12/07 17:21:09 drochner Exp $
 #
 
 DISTNAME=		Xlt-13.0.13
 PKGNAME=		${DISTNAME:S/Xlt/xlt/}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xlt/}
 

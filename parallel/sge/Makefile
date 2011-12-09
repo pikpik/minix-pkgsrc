@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.39 2011/02/17 08:55:11 markd Exp $
+# $NetBSD: Makefile,v 1.40 2011/07/05 01:30:52 dholland Exp $
 #
 
 PKGNAME=		sge-6.2.2.1
 DISTNAME=		ge-V62u2_1_TAG-src
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		parallel sysutils
 MASTER_SITES=		http://gridengine.sunsource.net/files/documents/7/197/
 
