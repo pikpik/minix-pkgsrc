@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+The following paths are used for SSL key, certificate and CA:
+	${PKG_SYSCONFDIR}/openssl/private/gluster.key
+	${PKG_SYSCONFDIR}/openssl/certs/gluster.crt
+	${PKG_SYSCONFDIR}/openssl/certs/gluster-ca.crt
+
+===========================================================================

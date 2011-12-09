@@ -2,6 +2,7 @@
 #
 
 DISTNAME=	glusterfs-3.2.5
+PKGREVISION=	4
 CATEGORIES=	filesystems
 MASTER_SITES=	http://download.gluster.com/pub/gluster/glusterfs/3.2/3.2.5/
 
@@ -73,6 +74,8 @@ BUILD_DEFS+=		VARBASE
 RCD_SCRIPTS=		glusterfsd glusterd
 
 PLIST_SRC=		${PLIST_SRC_DFLT}
+MESSAGE_SRC=		${PKGDIR}/MESSAGE.${OPSYS}
+
 
 post-build:
 	 cp ${WRKSRC}/doc/glusterd.vol ${WRKSRC}/doc/glusterd.vol.sample
