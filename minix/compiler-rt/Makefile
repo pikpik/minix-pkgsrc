@@ -1,6 +1,6 @@
 # Original by Brooks Davis taken from FreeBSD and modified by beng@
 
-DISTNAME=	compiler-rt-r123836
+DISTNAME=	compiler-rt-r145807
 PKGREVISION=	3
 CATEGORIES=	minix
 MASTER_SITES=	${MASTER_SITE_MINIX}

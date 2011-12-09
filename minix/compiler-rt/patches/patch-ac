@@ -1,7 +1,7 @@
 $NetBSD$
 
---- lib/endianness.h.orig	Wed Jan 19 19:07:03 2011
-+++ lib/endianness.h
+--- lib/int_endianness.h.orig	Wed Jan 19 19:07:03 2011
++++ lib/int_endianness.h
 @@ -85,6 +85,19 @@
  
  #endif /* GNU/Linux */
