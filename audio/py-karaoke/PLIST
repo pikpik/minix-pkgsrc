@@ -18,6 +18,7 @@ ${PYSITELIB}/pycdgAux.pyo
 ${PYSITELIB}/pykar.py
 ${PYSITELIB}/pykar.pyc
 ${PYSITELIB}/pykar.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/pykaraoke.py
 ${PYSITELIB}/pykaraoke.pyc
 ${PYSITELIB}/pykaraoke.pyo
