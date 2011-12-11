@@ -15,7 +15,7 @@ MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
 COMMENT=	Low Level Virtual Machine compiler infrastructure
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
-DEPENDS+=       compiler-rt-r123836nb3:../../minix/compiler-rt
+DEPENDS+=       compiler-rt-r145807nb3:../../minix/compiler-rt
 
 CONFLICTS= clang*
 
