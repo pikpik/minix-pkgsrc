@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-src_video_wscons_SDL__wsconsevents.c,v 1.1 2011/12/01 10:48:08 wiz Exp $
 
 "Port" to NetBSD.
 
@@ -10,8 +10,8 @@ $NetBSD$
    switch (private->kbdType) {
 -#ifdef WSKBD_TYPE_ZAURUS
 +#if defined(WSKBD_TYPE_ZAURUS) || defined(__NetBSD__)
-+#if defined(__NetBSD)
-+  case default:
++#if !defined(WSKBD_TYPE_ZAURUS)
++  default:
 +#else
    case WSKBD_TYPE_ZAURUS:
 +#endif
