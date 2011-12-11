@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/07/09 09:19:03 tron Exp $
+# $NetBSD: Makefile,v 1.14 2009/12/12 20:39:56 asau Exp $
 
 DISTNAME=	tvcpp0p8
 PKGNAME=	tasp-vsipl-20030710
@@ -16,6 +16,7 @@ DIST_SUBDIR=	tasp-vsipl
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_BSD_MAKEFILE=	yes
+MAKE_FLAGS+=		MKPROFILE=yes
 INSTALLATION_DIRS+=	include
 INSTALLATION_DIRS+=	lib
 INSTALLATION_DIRS+=	share/doc/tasp-vsipl
