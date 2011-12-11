@@ -9,6 +9,7 @@ DISTNAME=	llvm-clang-klee-r${SVNREV}
 
 USE_PYTHON=	yes
 PYTHON_FOR_BUILD_ONLY= yes
+PY_PATCHPLIST= yes
 REPLACE_PYTHON=	utils/llvm-build/llvm-build \
 	utils/lit/lit.py 	\
 	test/Scripts/macho-dumpx	\
@@ -51,7 +52,7 @@ MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
 COMMENT=	Low Level Virtual Machine compiler infrastructure
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
-DEPENDS+=       compiler-rt-r145807nb3:../../minix/compiler-rt_new
+DEPENDS+=       compiler-rt-r145807:../../minix/compiler-rt_new
 
 USE_DESTDIR=no
 
