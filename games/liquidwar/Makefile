@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/06/09 03:04:00 dsainty Exp $
+# $NetBSD: Makefile,v 1.8 2009/07/22 09:01:29 wiz Exp $
 #
 
 DISTNAME=	liquidwar-5.6.4
@@ -9,6 +9,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ufoot.org/liquidwar/v5
 COMMENT=	Unique multiplayer wargame
 
+NOT_FOR_PLATFORM=	DragonFly-*-x86_64     # Can't build 32-bit binaries
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
