@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.363 2011/10/11 19:53:50 minskim Exp $
+# $NetBSD: Makefile,v 1.364 2011/10/13 07:30:55 jnemeth Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -195,6 +195,7 @@ SUBDIR+=	p5-Vroom
 SUBDIR+=	parchive
 SUBDIR+=	pciids
 SUBDIR+=	pdmenu
+SUBDIR+=	php-orangehrm
 SUBDIR+=	pinfo
 SUBDIR+=	ppower
 SUBDIR+=	pty-redir
