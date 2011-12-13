@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/04/22 13:43:44 obache Exp $
+# $NetBSD: Makefile,v 1.11 2011/11/01 06:01:32 sbd Exp $
 #
 
 DISTNAME=	frameworks-0.3.7
@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config gmake autoconf
+LDFLAGS+=	-lm    # Explicit for binutils 2.22 linker
 
 SUBST_CLASSES=		xdg
 SUBST_STAGE.xdg=	pre-configure
