@@ -100,7 +100,8 @@ makejailpkgsrc() {
 		)
 
 		# bonus distfiles
-		cp -r $PKGSRC/distfiles/* $JAILPKGSRC/distfiles/ || true
+		mkdir -p $PKGSRC/distfiles
+		rsync -r $PKGSRC/distfiles/ $JAILPKGSRC/distfiles/ 
 	else	# copy and use our local pkgsrc repository as it is
 		synctree -f $PKGSRC $JAILPKGSRC >/dev/null
 	fi
@@ -125,12 +126,20 @@ jailall() {
 	echo " * Running bulk build."
 	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --all"
 ) | tee $LOGFILE
-	echo "rsync -a $JAILPKGSRC/packages $USER@kits:/usr/local/www/docs/minix3/packages.current"
-	echo "rsync -a $JAILROOT/usr/pbulk-logs $USER@kits:/usr/local/www/docs/minix3/pbulk-logs.current"
+	rsync -r $JAILPKGSRC/distfiles/ $PKGSRC/distfiles/ 
+	echo "rsync -a $JAILPKGSRC/packages/ $USER@kits:/usr/local/www/docs/minix3/pkgsrc/packages/"
+	echo "rsync -a $JAILROOT/usr/pbulk-logs/ $USER@kits:/usr/local/www/docs/minix3/pkgsrc/pbulk-logs/"
+	echo "rsync -a $PKGSRC/distfiles/ $USER@kits:/usr/local/www/docs/minix3/distfiles-backup/"
 	return 0
 }
 
 initvars
+
+if which rsync >/dev/null
+then	:
+else	echo rsync not found
+	exit 1
+fi
 
 while getopts "t:L:u:d:Ahr:c" opt
 do
