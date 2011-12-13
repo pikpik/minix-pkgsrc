@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/08/08 07:31:52 obache Exp $
+# $NetBSD: Makefile,v 1.14 2011/12/06 00:19:21 sbd Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -32,6 +32,7 @@ PLIST_VARS+=		natdynlib
 .  if !empty(MACHINE_PLATFORM:MLinux-*-*) || \
       !empty(MACHINE_PLATFORM:MDarwin-*-*) || \
       !empty(MACHINE_PLATFORM:MFreeBSD-*-*) || \
+      !empty(MACHINE_PLATFORM:MDragonFly-*-*) || \
       !empty(MACHINE_PLATFORM:MNetBSD-*-*)
 PLIST.natdynlib=		yes
 .  endif
