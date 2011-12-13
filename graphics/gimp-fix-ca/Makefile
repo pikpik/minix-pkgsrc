@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/04/22 13:43:45 obache Exp $
+# $NetBSD: Makefile,v 1.20 2011/11/01 06:01:34 sbd Exp $
 #
 
 DISTNAME=		gimp-fix-ca-3.0.1
@@ -21,6 +21,7 @@ INSTALLATION_DIRS=	lib/gimp/2.0/plug-ins
 USE_TOOLS+=		pkg-config
 
 LINK_PTHREAD=		${PTHREAD_LDFLAGS} ${PTHREAD_LIBS}
+LINK_PTHREAD+=		-lm    # Tag on, explicit for binutils 2.22 linker
 
 pre-build:
 	ln -sf ${LOCALBASE}/bin/gimptool-2.0 \
