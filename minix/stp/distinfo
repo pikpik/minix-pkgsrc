@@ -1,0 +1,9 @@
+$NetBSD$
+
+SHA1 (stp-r1434.tar.gz) = 0880b030a1f927af40cadc6f1528611b8c6949a8
+RMD160 (stp-r1434.tar.gz) = 1c3288b76adea8ffe1224ce092e15d1e969eb78d
+Size (stp-r1434.tar.gz) = 8671856 bytes
+SHA1 (patch-scripts_Makefile.in) = 2b45550db59a750143507e45356f671ce7d57afc
+SHA1 (patch-src_sat_cryptominisat2_SolverTypes.h) = 2a64ee323b6d6eca8879d700d1808e6cf9d93dbc
+SHA1 (patch-src_sat_cryptominisat2_time__mem.h) = 3b9977c529355ec16285c6130ffaa6200c637323
+SHA1 (patch-src_sat_utils_System.h) = 8c914562893c5afb71ab5db770cbe4beceb92f96

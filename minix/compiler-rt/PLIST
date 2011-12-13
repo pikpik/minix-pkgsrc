@@ -1,2 +1,2 @@
 @comment $NetBSD$
-lib/libCompilerRT-Generic.a
+compiler-rt/lib/libCompilerRT-Generic.a

@@ -1,16 +1,15 @@
 # Original by Brooks Davis taken from FreeBSD and modified by beng@
 
-DISTNAME=	compiler-rt-r145807
-PKGREVISION=	3
-CATEGORIES=	minix
-MASTER_SITES=	${MASTER_SITE_MINIX}
-
+DISTNAME=	compiler-rt-r${SVNREV}
+SVNREV=		145807
+PKGNAME=	compiler-rt-3.1
+PKGREVISION=	${SVNREV}
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
+MASTER_SITES=        ${MASTER_SITE_MINIX}
+CATEGORIES=	minix
 
 BUILD_DEPENDS+=	cmake-[0-9]*:../../devel/cmake
-
-CONFLICTS=	compiler-rt*
 
 #WRKSRC=                 ${WRKDIR}/$(SVN_REPOSITORIES)
 
@@ -58,6 +57,7 @@ regression-test:
 	cd ${BUILD_DIRS} && make test
 
 do-install:
-	cp ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/lib/
+	${MKDIR} ${PREFIX}/compiler-rt/lib/
+	${INSTALL_LIB} ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/compiler-rt/lib/
 
 .include "../../mk/bsd.pkg.mk"

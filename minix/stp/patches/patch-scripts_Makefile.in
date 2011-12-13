@@ -1,0 +1,23 @@
+$NetBSD$
+
+--- scripts/Makefile.in.orig	Tue Dec 13 02:40:13 2011
++++ scripts/Makefile.in
+@@ -65,12 +65,12 @@ FORCE:
+ 
+ .PHONY: install
+ install: all
+-	@mkdir -p $(BIN_DIR)
+-	@mkdir -p $(LIB_DIR)
+-	@mkdir -p $(INCLUDE_DIR)
+-	@cp -f $(BINARIES) $(BIN_DIR)
+-	@cp -f $(LIBRARIES) $(LIB_DIR)
+-	@cp -f $(HEADERS) $(INCLUDE_DIR)
++	@mkdir -p ${DESTDIR}$(BIN_DIR)
++	@mkdir -p ${DESTDIR}$(LIB_DIR)
++	@mkdir -p ${DESTDIR}$(INCLUDE_DIR)
++	@cp -f $(BINARIES) ${DESTDIR}$(BIN_DIR)
++	@cp -f $(LIBRARIES) ${DESTDIR}$(LIB_DIR)
++	@cp -f $(HEADERS) ${DESTDIR}$(INCLUDE_DIR)
+ 	@echo "STP installed successfully."
+ 
+ .PHONY: clean

@@ -1,10 +1,11 @@
 # $NetBSD$
 #
 
-PKGNAME=	clangnew-r${SVNREV}
+PKGNAME=	clang-3.1
 CATEGORIES=	minix
 MASTER_SITES=	${MASTER_SITE_MINIX}
-SVNREV=		146254
+SVNREV=		146353
+PKGREVISION=	${SVNREV}
 DISTNAME=	llvm-clang-klee-r${SVNREV}
 
 USE_PYTHON=	yes
@@ -18,7 +19,6 @@ REPLACE_PYTHON=	utils/llvm-build/llvm-build \
 	utils/Target/ARM/analyze-match-table.py	\
 	utils/Misc/zkill	\
 	utils/lit/lit/ProgressBar.py	\
-	utils/lit/lit/main.py.orig	\
 	utils/lit/lit/main.py	\
 	utils/llvm-lit/llvm-lit.in	\
 	utils/clang-parse-diagnostics-file	\
@@ -46,15 +46,15 @@ REPLACE_PYTHON=	utils/llvm-build/llvm-build \
 # Avoid dependency on lang/gcc44
 MINIX_GCC_NODEP=yes
 
-CONFLICTS= clang*
+CONFLICTS+= clang-[0-9]*
 
 MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
-COMMENT=	Low Level Virtual Machine compiler infrastructure
+COMMENT=	c compiler: llvm, clang and klee packaged together
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
-DEPENDS+=       compiler-rt-r145807:../../minix/compiler-rt_new
+DEPENDS+=       compiler-rt>=3.1:../../minix/compiler-rt
 
-USE_DESTDIR=no
+PKG_DESTDIR_SUPPORT=destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake perl:build chown groff
@@ -106,29 +106,31 @@ post-extract:
 	${MV} ${WRKDIR}/klee ${KLEE}
 
 post-build:
-	cd ${KLEE} && CPPFLAGS=-DUSE_KLEE_LIB_DIR=1 ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm
+	cd ${KLEE} && CPPFLAGS=-DUSE_KLEE_LIB_DIR=1 ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm --with-stp=${PREFIX}
 	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1 LLVMCC_OPTION=clang ENABLE_BUILT_CLANG=1
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${PREFIX}/bin/
+	${INSTALL_SCRIPT} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${DESTDIR}${PREFIX}/bin/
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/ccc-analyzer \
 		${WRKSRC}/tools/clang/tools/scan-build/c++-analyzer \
 		${WRKSRC}/tools/clang/tools/scan-build/scan-build \
 		${WRKSRC}/tools/clang/tools/scan-view/scan-view \
-		${PREFIX}/bin
-	${MKDIR} ${PYSITELIB}
-	${MKDIR} ${PYSITELIB}/Resources
+		${DESTDIR}${PREFIX}/bin
+	${MKDIR} ${DESTDIR}${PYSITELIB}
+	${MKDIR} ${DESTDIR}${PYSITELIB}/Resources
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-view/*.py \
-		${PYSITELIB}
+		${DESTDIR}${PYSITELIB}
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-view/Resources/* \
-		${PYSITELIB}/Resources	
-	${MKDIR} ${PREFIX}/share	
-	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${PREFIX}/share	
-	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${PREFIX}/share	
-	cd ${KLEE} && gmake install
+		${DESTDIR}${PYSITELIB}/Resources	
+	${MKDIR} ${DESTDIR}${PREFIX}/share	
+	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
+	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
+	cd ${KLEE} && gmake DESTDIR=${DESTDIR} install
 
 WRKSRC=			${WRKDIR}/llvm
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../lang/python/application.mk"
+.include "../../lang/python/extension.mk"
+.include "../../minix/stp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
