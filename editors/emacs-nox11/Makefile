@@ -15,11 +15,4 @@ CONFIGURE_ARGS+=	--without-dbus --without-m17n-flt --without-otf \
 			--without-gif --without-jpeg --without-png \
 			--without-tiff --without-xpm
 
-##  Update emacs.desktop to launch emacs-nox11 in Terminal
-SUBST_CLASSES+=		term
-SUBST_STAGE.term=	post-patch
-SUBST_MESSAGE.term=	Enabling desktop launch in Terminal 
-SUBST_FILES.term=	etc/emacs.desktop
-SUBST_SED.term=		-e 's,^Terminal=.*,Terminal=true,'
-
 .include "../../mk/bsd.pkg.mk"
