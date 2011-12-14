@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	SOPE-2.0.0b1
+DISTNAME=	SOPE-2.0.0b3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.sogo.nu/files/downloads/SOGo/Sources/
 
