@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2011/05/10 13:28:38 taca Exp $
+# $NetBSD: Makefile,v 1.4 2011/06/11 02:35:10 taca Exp $
 
-DISTNAME=	arel-2.0.10
+DISTNAME=	arel-2.2.1
 CATEGORIES=	databases
 
 # Note: databases/ruby-activerecord3 requires ruby-arel<2.1.
