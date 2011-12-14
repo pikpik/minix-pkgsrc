@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/03/03 00:51:44 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2011/02/03 14:15:12 obache Exp $
 #
 
 DISTNAME=	randread-0.2
@@ -10,7 +10,7 @@ HOMEPAGE=	http://randread.sourceforge.net/
 COMMENT=	Program to help benchmark random disk read performance
 LICENSE=	public-domain
 
-NOT_FOR_PLATFORM=	Interix-*-*
+ONLY_FOR_PLATFORM=	DragonFly-*-* FreeBSD-*-* NetBSD-*-* OpenBSD-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
