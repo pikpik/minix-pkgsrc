@@ -1,4 +1,5 @@
 @comment $NetBSD$
+man/man1/pdfetex.1
 share/texmf-dist/doc/pdftex/Announcement-1.40.2
 share/texmf-dist/doc/pdftex/NEWS
 share/texmf-dist/doc/pdftex/README
