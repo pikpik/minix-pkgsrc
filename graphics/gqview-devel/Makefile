@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2011/09/12 16:50:55 drochner Exp $
+# $NetBSD: Makefile,v 1.41 2011/11/01 06:01:35 sbd Exp $
 
 DISTNAME=	gqview-2.1.5
 PKGREVISION=	9
@@ -17,6 +17,7 @@ USE_PKGLOCALEDIR=	yes
 
 MAKE_ENV+=		builddir=.
 
+LDFLAGS+=		-lm
 LDFLAGS.SunOS+=		-lm -lsocket -lnsl
 
 .include "../../devel/gettext-lib/buildlink3.mk"
