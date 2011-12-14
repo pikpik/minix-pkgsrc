@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2010/09/12 04:07:41 taca Exp $
+@comment $NetBSD: PLIST,v 1.2 2011/02/09 12:54:35 taca Exp $
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/.document
 ${GEM_LIBDIR}/.gitignore
@@ -24,6 +24,7 @@ ${GEM_LIBDIR}/spec/fixtures/foo.txt
 ${GEM_LIBDIR}/spec/rack/test/cookie_spec.rb
 ${GEM_LIBDIR}/spec/rack/test/digest_auth_spec.rb
 ${GEM_LIBDIR}/spec/rack/test/multipart_spec.rb
+${GEM_LIBDIR}/spec/rack/test/uploaded_file_spec.rb
 ${GEM_LIBDIR}/spec/rack/test/utils_spec.rb
 ${GEM_LIBDIR}/spec/rack/test_spec.rb
 ${GEM_LIBDIR}/spec/spec_helper.rb
