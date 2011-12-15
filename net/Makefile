@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.897 2011/11/30 23:50:30 pettai Exp $
+# $NetBSD: Makefile,v 1.898 2011/12/08 07:39:55 agc Exp $
 #
 
 COMMENT=	Networking tools
@@ -515,6 +515,8 @@ SUBDIR+=	rsync
 SUBDIR+=	rtmpdump
 SUBDIR+=	rtorrent
 SUBDIR+=	ruby-addressable
+SUBDIR+=	ruby-amq-client
+SUBDIR+=	ruby-amq-protocol
 SUBDIR+=	ruby-amqp
 SUBDIR+=	ruby-dnsruby
 SUBDIR+=	ruby-icmp
