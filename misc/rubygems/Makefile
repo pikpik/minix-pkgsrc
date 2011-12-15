@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.42 2011/11/08 15:26:12 taca Exp $
+# $NetBSD: Makefile,v 1.43 2011/11/13 15:54:16 taca Exp $
 
-DISTNAME=	rubygems-1.8.11
+DISTNAME=	rubygems-1.8.12
 CATEGORIES=	misc ruby
 MASTER_SITES=	http://production.cf.rubygems.org/rubygems/ \
 		http://rubyforge.org/frs/download.php/75309/
