@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2011/06/11 02:42:44 taca Exp $
+# $NetBSD$
 
-DISTNAME=	rack-1.2.4
+DISTNAME=	rack-1.3.5
 CATEGORIES=	www
 
-# Note: www/ruby-actionpack3needs ruby-rack<1.3.
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rack.rubyforge.org/
 COMMENT=	Ruby webserver interface
