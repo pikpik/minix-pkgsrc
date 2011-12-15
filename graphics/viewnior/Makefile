@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/28 21:14:58 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2011/11/01 06:01:48 sbd Exp $
 #
 
 DISTNAME=	viewnior-1.1
@@ -18,7 +18,7 @@ MAKE_JOBS_SAFE=	no
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 
-USE_TOOLS+=	intltool pkg-config gmake
+USE_TOOLS+=	intltool pkg-config gmake msgfmt
 
 .include "../../databases/shared-mime-info/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
