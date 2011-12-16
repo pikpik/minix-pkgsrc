@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/rails
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/bin/rails
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec
