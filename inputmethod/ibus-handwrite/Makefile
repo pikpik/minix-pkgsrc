@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/04/22 13:43:54 obache Exp $
+# $NetBSD: Makefile,v 1.10 2011/11/01 06:01:51 sbd Exp $
 #
 
 DISTNAME=	ibus-handwrite-2.1.4
@@ -22,6 +22,7 @@ FIND_PREFIX:=	ZINNIA_TOMOE_DIR=zinnia-tomoe
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
+LDFLAGS+=		-lm	# list explicitly for ld v2.22
 
 CONFIGURE_ARGS+=	--enable-zinnia
 CONFIGURE_ARGS+=	--with-zinnia-tomoe=${ZINNIA_TOMOE_DIR}/lib/zinnia/model/tomoe
