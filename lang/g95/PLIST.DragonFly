@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/gcc-lib/${MACHINE_GNU_PLATFORM}/4.0.3/crtbegin.o
+lib/gcc-lib/${MACHINE_GNU_PLATFORM}/4.0.3/crtbeginS.o
+lib/gcc-lib/${MACHINE_GNU_PLATFORM}/4.0.3/crtend.o
+lib/gcc-lib/${MACHINE_GNU_PLATFORM}/4.0.3/crtendS.o
