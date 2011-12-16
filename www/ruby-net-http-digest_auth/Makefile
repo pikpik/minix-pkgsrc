@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/08/12 17:27:54 taca Exp $
 
-DISTNAME=	net-http-digest_auth-1.1.1
+DISTNAME=	net-http-digest_auth-1.2
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
