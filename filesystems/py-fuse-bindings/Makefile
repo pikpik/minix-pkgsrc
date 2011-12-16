@@ -1,17 +1,18 @@
-# $NetBSD: Makefile,v 1.4 2011/03/11 11:29:42 zafer Exp $
+# $NetBSD: Makefile,v 1.5 2011/12/16 00:50:46 gdt Exp $
 #
 
-DISTNAME=		fuse-python-0.2.1
-PKGNAME=		${PYPKGPREFIX}-fuse-bindings-0.2.1
+VERSION=		0.2.1
+DISTNAME=		fuse-python-${VERSION}
+PKGNAME=		${PYPKGPREFIX}-fuse-bindings-${VERSION}
 CATEGORIES=		filesystems python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fuse/fuse-python}/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/apps/mediawiki/fuse/index.php?title=FusePython
 COMMENT=		Python bindings for FUSE and refuse
-
 LICENSE=		gnu-lgpl-v2.1
 
+EGG_NAME=		fuse_python-${VERSION}
 PYDISTUTILSPKG=		yes
 PY_PATCHLIST=		yes
 USE_TOOLS+=		pkg-config
