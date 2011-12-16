@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/05/21 09:05:26 obache Exp $
+# $NetBSD: Makefile,v 1.24 2011/05/21 11:59:53 obache Exp $
 
 DISTNAME=	pnet-0.8.0
 #PKGREVISION=	1
@@ -19,6 +19,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Unsupported by internal libffi
 NOT_FOR_PLATFORM=	NetBSD-*-x86_64
+NOT_FOR_PLATFORM+=	DragonFly-*-*
 
 MAKE_JOBS_SAFE=	no
 
