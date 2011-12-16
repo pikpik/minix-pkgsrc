@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/12/15 22:19:10 ryoon Exp $
 #
 
 DISTNAME=	jetty-distribution-7.5.4.v20111024
 PKGNAME=	${DISTNAME:S/distribution-//:S/.v/./}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://download.eclipse.org/jetty/7.5.4.v20111024/dist/
 
