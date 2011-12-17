@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/01/17 12:02:24 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/22 13:44:03 obache Exp $
 #
 
 DISTNAME=		freepops-0.2.8
@@ -21,6 +21,7 @@ REPLACE_BASH=		configure.sh
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	configure.sh
 CONFIGURE_ARGS=		pkgsrc
+LDFLAGS+=		-lintl		# directly link, req. by ld 2.22
 
 PKG_SYSCONFSUBDIR=	freepops
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
