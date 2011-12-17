@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.386 2011/12/14 16:25:17 taca Exp $
+# $NetBSD: Makefile,v 1.387 2011/12/16 12:25:05 taca Exp $
 #
 
 COMMENT=	Databases
@@ -338,6 +338,8 @@ SUBDIR+=	ruby-dm-timestamps
 SUBDIR+=	ruby-dm-transactions
 SUBDIR+=	ruby-dm-types
 SUBDIR+=	ruby-dm-validations
+SUBDIR+=	ruby-do_mysql
+SUBDIR+=	ruby-do_postgres
 SUBDIR+=	ruby-do_sqlite3
 SUBDIR+=	ruby-gdbm
 SUBDIR+=	ruby-ldap
