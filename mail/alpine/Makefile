@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2011/05/09 12:02:59 obache Exp $
+# $NetBSD: Makefile,v 1.24 2011/05/10 01:33:12 obache Exp $
 #
 
 DISTNAME=	alpine-2.00
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/alpine/
 DIST_SUBDIR=	alpine-2.00a
@@ -36,5 +36,6 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/alpine/alpine ${DESTDIR}${PREFIX}/bin/alpine
 	${INSTALL_MAN} ${WRKSRC}/doc/alpine.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/alpine.1
 
+.include "../../mk/terminfo.buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
