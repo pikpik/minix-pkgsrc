@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2010/11/13 21:08:54 shattered Exp $
+# $NetBSD: Makefile,v 1.18 2011/03/30 21:56:32 joerg Exp $
 #
 
 DISTNAME=	xaric-0.12.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	chat
 MASTER_SITES=	http://rexfeany.com/software/xaric/releases/
 
@@ -21,4 +21,5 @@ CONFIGURE_ARGS+=	--enable-optimize
 INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} \
 			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

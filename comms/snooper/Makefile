@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2007/11/17 13:40:16 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2009/12/17 21:43:16 abs Exp $
 
 DISTNAME=	snooper-19991202
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.foretune.co.jp/pub/tools/snooper/
 
@@ -22,4 +22,5 @@ post-extract:
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/snooper
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
