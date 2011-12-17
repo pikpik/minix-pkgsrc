@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/01/17 12:02:31 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/01/22 13:22:28 joerg Exp $
 #
 
 DISTNAME=	fetch-1.7
@@ -17,6 +17,11 @@ USE_FEATURES=		nbcompat
 
 GNU_CONFIGURE=		yes
 USE_BSD_MAKEFILE=	yes
+
+.include "../../mk/bsd.prefs.mk"
+.if !empty(FETCH_USING:Mfetch)
+CHECK_PERMS=		no
+.endif
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat1 ${PKGMANDIR}/man1
 
