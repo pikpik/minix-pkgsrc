@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2011/11/01 06:01:11 sbd Exp $
+# $NetBSD: Makefile,v 1.14 2011/11/30 12:07:52 wiz Exp $
 
-DISTNAME=	yabause-0.9.11
+DISTNAME=	yabause-0.9.11.1
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yabause/}
 
@@ -15,11 +15,7 @@ USE_CMAKE=	yes
 USE_TOOLS+=	pkg-config
 USE_LANGUAGES+=	c c++
 
-SUBST_CLASSES+=			pkgmandir
-SUBST_STAGE.pkgmandir=		pre-configure
-SUBST_FILES.pkgmandir=		src/gtk/CMakeLists.txt src/qt/CMakeLists.txt
-SUBST_SED.pkgmandir=		-e "s,share/man,${PKGMANDIR},"
-SUBST_MESSAGE.pkgmandir=	Fixing hardcoded manual paths.
+CONFIGURE_ENV+=	PKGMANDIR=${PKGMANDIR:Q}
 
 .include "options.mk"
 
