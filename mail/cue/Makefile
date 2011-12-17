@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2010/01/17 12:02:23 wiz Exp $
+# $NetBSD: Makefile,v 1.61 2011/11/27 13:05:33 obache Exp $
 
 DISTNAME=	cue-snap-20100426
 PKGNAME=	${DISTNAME:S/snap-//}
@@ -9,6 +9,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# not available
 COMMENT=	Mh-e like mail user agent
 LICENSE=	modified-bsd
+
+# When cue supports OpenSSL 1.0 (e.g no MD2), remove following line:
+NOT_FOR_PLATFORM=	DragonFly-*-*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
