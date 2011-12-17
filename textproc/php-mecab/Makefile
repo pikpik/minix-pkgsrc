@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/12/19 02:13:50 taca Exp $
 #
 
 MODNAME=	mecab
 PECL_VERSION=	0.4.1
+PECL_LEGACY_VERSION_SCHEME=	yes
 CATEGORIES=	textproc japanese
 MASTER_SITES=	http://pecl.opendogs.org/get/
 

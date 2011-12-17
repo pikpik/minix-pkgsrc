@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2010/03/21 11:20:41 jdolecek Exp $
+# $NetBSD: Makefile,v 1.11 2011/08/20 14:08:12 taca Exp $
 
 MODNAME=		dbx
 PECL_VERSION=		1.1.2
+PECL_LEGACY_VERSION_SCHEME=	yes
 CATEGORIES+=		databases
 COMMENT=		PHP database abstraction layer extension
 
