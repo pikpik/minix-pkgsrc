@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2010/02/10 19:17:40 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2011/07/03 01:47:41 dholland Exp $
 
 DISTNAME=	pfe-0.33.71
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pfe/}
 EXTRACT_SUFX=	.tar.bz2
@@ -27,4 +27,5 @@ BUILD_DEPENDS=	xmlto-[0-9]*:../../textproc/xmlto	# documentation
 PYTHON_FOR_BUILD_ONLY=	# defined
 
 .include "../../lang/python/pyversion.mk"
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

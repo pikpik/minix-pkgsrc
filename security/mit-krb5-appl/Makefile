@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2011/07/05 19:48:59 tez Exp $
 
 DISTNAME=	krb5-appl-1.0.1
 PKGNAME=	mit-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://web.mit.edu/kerberos/dist/krb5-appl/1.0/
 DISTFILES=	${DISTNAME}-signed${EXTRACT_SUFX}
@@ -70,6 +70,7 @@ pre-configure:
 	cd ${WRKSRC}; autoheader -I ${WRKSRC} -f;	\
 	cd ${WRKSRC}; autoconf -I ${WRKSRC} -f;
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../security/mit-krb5/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
