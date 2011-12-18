@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.601 2011/11/14 08:09:23 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.602 2011/11/21 19:17:40 shattered Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -550,6 +550,7 @@ SUBDIR+=	ruby-libxml
 SUBDIR+=	ruby-markaby
 SUBDIR+=	ruby-maruku
 SUBDIR+=	ruby-mecab
+SUBDIR+=	ruby-multi_json
 SUBDIR+=	ruby-native-hyperestraier
 SUBDIR+=	ruby-nokogiri
 SUBDIR+=	ruby-nqxml
