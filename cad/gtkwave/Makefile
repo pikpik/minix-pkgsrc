@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/11/01 06:00:44 sbd Exp $
+# $NetBSD: Makefile,v 1.35 2011/12/16 10:58:14 drochner Exp $
 #
 
 DISTNAME=		gtkwave-3.3.28
@@ -19,6 +19,8 @@ USE_TOOLS+=		gmake pkg-config
 
 PTHREAD_AUTO_VARS=	yes
 
+.include "../../lang/tcl/buildlink3.mk"
+.include "../../x11/tk/buildlink3.mk"
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../archivers/xz/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
