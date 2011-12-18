@@ -1,7 +1,7 @@
-$NetBSD$
+$NetBSD: patch-src_main_format.c,v 1.1 2011/11/20 04:57:03 markd Exp $
 
 NetBSD does not have rintl() or floorl() so use the OpenBSD implementation
-of rintl() in that case.
+of rintl() in that case.  The same case exists for DragonFly.
 
 --- src/main/format.c.orig	2011-10-02 22:02:34.000000000 +0000
 +++ src/main/format.c
@@ -9,7 +9,7 @@ of rintl() in that case.
  # define R_nearbyintl rintl
  # else
  # define R_nearbyintl private_nearbyintl
-+# ifndef __NetBSD__
++# if !defined(__NetBSD__) && !defined(__DragonFly__)
  long double private_nearbyintl(long double x)
  {
      long double x1;
