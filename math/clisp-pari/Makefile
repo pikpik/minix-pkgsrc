@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/04/20 22:23:57 hans Exp $
+# $NetBSD: Makefile,v 1.3 2011/11/25 23:47:16 hans Exp $
 #
 
 CLISP_MODULE=	pari
@@ -16,6 +16,7 @@ MAKE_JOBS_SAFE=	no
 
 .include "../../lang/clisp/module.mk"
 .include "../../math/pari/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 
 ac_cv_libpari_libs=     -l${PARI_LIB}
 .if ${PARI_LIB} == "pari-gmp"
