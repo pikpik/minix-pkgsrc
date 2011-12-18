@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.38 2011/12/04 21:08:21 sbd Exp $
+# $NetBSD: buildlink3.mk,v 1.40 2011/12/15 07:37:38 sbd Exp $
 
 BUILDLINK_TREE+=	ncurses
 
@@ -25,7 +25,7 @@ BUILDLINK_INCDIRS.ncurses+=	include/ncurses
 # a native library), so unless this file is being included by ncursesw
 # don't allow ncursesw to be used by causing linkage failure.
 #
-.  if empty(BUILDLINK_TREE:Mncursesw)
+.  if empty(BUILDLINK_TREE:Mncursesw) && empty(PKGPATH:Mdevel/ncursesw)
 BUILDLINK_TRANSFORM+=		l:ncursesw:__nonexistent__
 .  endif
 
