@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/12/12 22:29:00 asau Exp $
+# $NetBSD: Makefile,v 1.20 2011/03/17 20:51:55 zafer Exp $
 
 DISTNAME=	dcdflib.c-1.1
 PKGREVISION=	1
@@ -16,6 +16,12 @@ MAKE_ENV+=	LIBOWN=${LIBOWN:Q} LIBGRP=${LIBGRP:Q}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	include lib share/doc/dcdflib.c
+
+.include "../../mk/bsd.prefs.mk"
+PLIST_VARS+=	plib
+.if ${OPSYS} != "DragonFly"
+PLIST.plib=	yes
+.endif
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/dcdflib.h ${DESTDIR}${PREFIX}/include
