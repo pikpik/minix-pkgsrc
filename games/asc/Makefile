@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2011/04/22 13:43:32 obache Exp $
+# $NetBSD: Makefile,v 1.48 2011/11/01 06:01:13 sbd Exp $
 
 DISTNAME=	asc-source-1.16.4.0
 PKGNAME=	${DISTNAME:S/-source//}
@@ -20,12 +20,14 @@ DISTFILES=		${DISTNAME}${EXTRACT_SUFX} frontiers.mp3 \
 SITES.${file}=	http://asc-hq.org/
 .endfor
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
+
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake perl:build pkg-config
 REPLACE_PERL=		checkfordata.pl
 GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--disable-paraguitest
 CPPFLAGS.NetBSD+=	-D_UNICODE_BROKEN_
 
 MAKE_ENV+=		top_src_dir=.
