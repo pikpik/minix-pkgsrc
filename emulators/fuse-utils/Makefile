@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2010/12/20 20:54:35 adam Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/22 13:43:28 obache Exp $
 
 DISTNAME=	fuse-utils-1.0.0
 PKGREVISION=	1
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
+
+CONFIGURE_ENV+=		ac_cv_path_AUDIOFILE_CONFIG="pkg-config audiofile"
 
 LIBS+=			-lgcrypt
 LIBS+=			-lgpg-error
