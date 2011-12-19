@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2006/10/04 20:51:40 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2008/03/03 05:33:32 jlam Exp $
 
 DISTNAME=	plp_1_8
 PKGNAME=	plp-1.8
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes
+MAKE_JOBS_SAFE=	no
 
 INSTALLATION_DIRS=	bin lib
 
