@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/03/04 06:59:05 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2011/12/17 10:15:44 sbd Exp $
 #
 
 DISTNAME=		netris-0.52
@@ -20,8 +20,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake
 HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	./Configure
-CONFIGURE_ARGS+=	--cextra ${CFLAGS:Q}
-CONFIGURE_ARGS+=	--lextra ${LDFLAGS:Q}
+CONFIGURE_ARGS+=	${!empty(CFLAGS):?--cextra ${CFLAGS:Q}:}
+CONFIGURE_ARGS+=	${!empty(LDFLAGS):?--lextra ${LDFLAGS:Q}:}
 
 .include "options.mk"
 
