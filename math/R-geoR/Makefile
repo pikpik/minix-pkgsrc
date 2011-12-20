@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2009/12/11 19:29:56 adam Exp $
+# $NetBSD: Makefile,v 1.6 2011/11/20 05:09:34 markd Exp $
 
 CATEGORIES=	math
-MASTER_SITES=	${MASTER_SITE_R_CRAN:=contrib/}
+MASTER_SITES=	${MASTER_SITE_R_CRAN:=contrib/Archive/geoR/}
 
 MAINTAINER=	mchittur@cs.nmsu.edu
 HOMEPAGE=	${R_HOMEPAGE_BASE}/geoR/
