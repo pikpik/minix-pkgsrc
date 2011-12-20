@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/10/01 22:25:53 bjs Exp $
+# $NetBSD: Makefile,v 1.35 2009/06/05 11:10:35 wiz Exp $
 
 PKGNAME=	MesaDemos-${MESA_VERSION}
 COMMENT=	OpenGL examples and Demos
@@ -40,4 +40,5 @@ post-install:
 .include "../../x11/libXi/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
