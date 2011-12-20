@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2011/04/22 13:44:07 obache Exp $
+# $NetBSD: Makefile,v 1.50 2011/11/01 06:11:55 sbd Exp $
 #
 
 DISTNAME=	pspp-0.6.2
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 PKG_SYSCONFSUBDIR=	pspp
 EGDIR=		${PREFIX}/share/examples/pspp
 CONF_FILES=	${EGDIR}/devices ${PKG_SYSCONFDIR}/devices
-INFO_FILES=	# PLIST
+INFO_FILES=	YES
 
 TEST_TARGET=	check
 
