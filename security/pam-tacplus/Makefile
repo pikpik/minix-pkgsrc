@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/03/13 09:27:26 pettai Exp $
+# $NetBSD: Makefile,v 1.3 2011/11/29 22:24:25 pettai Exp $
 #
 
-PKGNAME=        ${DISTNAME:S/_/-/}
 DISTNAME=	pam_tacplus-1.3.5
+PKGNAME=        ${DISTNAME:S/_/-/}
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tacplus/}
 
