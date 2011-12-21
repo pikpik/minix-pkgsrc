@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.22 2011/06/06 13:45:37 fhajny Exp $
+# $NetBSD: Makefile,v 1.23 2011/06/11 20:27:12 mspo Exp $
 
-DISTNAME=	ejabberd-2.1.8
+DISTNAME=	ejabberd-2.1.9
 CATEGORIES=	chat
 MASTER_SITES=	http://www.process-one.net/downloads/ejabberd/${PKGVERSION}/
 
@@ -93,8 +93,7 @@ post-patch:
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/dev.html ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/doc/features.html ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
-	${INSTALL_DATA} ${WRKSRC}/doc/features.pdf ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
-	${INSTALL_DATA} ${WRKSRC}/doc/guide.pdf ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
+	${INSTALL_DATA} ${WRKSRC}/doc/guide.html ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 
 SUBST_CLASSES+=		paths
 SUBST_MESSAGE.paths=	Localizing paths
