@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2011/04/22 13:44:10 obache Exp $
+# $NetBSD: Makefile,v 1.27 2011/11/01 06:02:05 sbd Exp $
 #
 
 DISTNAME=		kanjipad-2.0.0
@@ -13,6 +13,7 @@ COMMENT=		Japanese handwriting recognition
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl pkg-config
+LDFLAGS+=		-lm	# direct link required by ld v2.22
 
 INSTALLATION_DIRS+=	share/doc/kanjipad
 
