@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.853 2011/12/18 06:41:40 sbd Exp $
+# $NetBSD: Makefile,v 1.854 2011/12/18 07:53:09 sbd Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -128,6 +128,7 @@ SUBDIR+=	emacs-w3m
 SUBDIR+=	emacs-w3m-snapshot
 SUBDIR+=	epiphany
 SUBDIR+=	epiphany-extensions
+SUBDIR+=	erubis
 SUBDIR+=	fcgi
 SUBDIR+=	fengoffice
 SUBDIR+=	ffproxy
