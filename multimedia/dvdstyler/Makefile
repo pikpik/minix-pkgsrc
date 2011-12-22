@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2011/11/16 01:33:17 sbd Exp $
+# $NetBSD: Makefile,v 1.34 2011/11/23 21:30:50 gls Exp $
 #
 
 DISTNAME=	DVDStyler-1.8.2.1
@@ -25,6 +25,7 @@ USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config msgfmt
 GNU_CONFIGURE=		yes
+LDFLAGS+=		-ljpeg
 
 post-install:
 	cd ${WRKSRC}/templates && ${SETENV} ${INSTALL_ENV} ${GMAKE} install
