@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/04/22 13:44:17 obache Exp $
+# $NetBSD: Makefile,v 1.9 2011/11/01 06:02:14 sbd Exp $
 #
 
 DISTNAME=	pitivi-0.13.4
@@ -13,7 +13,7 @@ HOMEPAGE=	http://www.pitivi.org/
 COMMENT=	Video editor
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	pkg-config intltool gmake
+USE_TOOLS+=	pkg-config intltool gmake msgfmt
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ENV+=	ac_cv_path_PYTHON=${PYTHONBIN}
