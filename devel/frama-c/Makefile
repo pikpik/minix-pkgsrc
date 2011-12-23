@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.11 2011/11/01 06:00:55 sbd Exp $
+# $NetBSD: Makefile,v 1.12 2011/12/06 00:19:22 sbd Exp $
 #
 
 DISTNAME=	frama-c-Beryllium-20090901
 PKGNAME=	${DISTNAME:S/-Beryllium//}
 PKGREVISION=	9
 CATEGORIES=	devel
-MASTER_SITES=	http://frama-c.cea.fr/download/
+MASTER_SITES=	http://frama-c.com/download/
 
 MAINTAINER=	tonio@NetBSD.org
-HOMEPAGE=	http://frama-c.cea.fr/
+HOMEPAGE=	http://frama-c.com/
 COMMENT=	Extensible platform dedicated to source-code analysis of C software
 LICENSE=	gnu-lgpl-v2
 
