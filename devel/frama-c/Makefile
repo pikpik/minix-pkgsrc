@@ -21,7 +21,6 @@ PLIST_SRC=	${PLIST_SRC_DFLT}
 
 .include "options.mk"
 
-.include "../../devel/nspr/buildlink3.mk"
 .include "../../x11/gtksourceview/buildlink3.mk"
 .include "../../x11/lablgtk/buildlink3.mk"
 .include "../../lang/ocaml/buildlink3.mk"
