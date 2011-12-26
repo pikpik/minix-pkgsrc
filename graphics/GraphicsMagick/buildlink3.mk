@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2011/05/18 14:26:26 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2011/11/01 06:01:25 sbd Exp $
 
 BUILDLINK_TREE+=	GraphicsMagick
 
@@ -21,7 +21,7 @@ pkgbase := GraphicsMagick
 .include "../../x11/libXext/buildlink3.mk"
 .endif
 
-.if !empty(PKG_OPTIONS:Mbzip2)
+.if !empty(PKG_BUILD_OPTIONS:Mbzip2)
 .include "../../archivers/bzip2/buildlink3.mk"
 .endif
 
