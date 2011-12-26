@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.94 2011/08/23 13:06:49 obache Exp $
+# $NetBSD: Makefile,v 1.95 2011/12/01 10:48:07 wiz Exp $
 
 DISTNAME=	SDL-1.2.14
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel games
 MASTER_SITES=	http://www.libsdl.org/release/
 
