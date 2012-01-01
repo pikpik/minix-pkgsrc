@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/09/15 08:28:07 adam Exp $
+# $NetBSD: Makefile,v 1.2 2011/09/27 11:04:50 adam Exp $
 
 PKGNAME=	${DISTNAME:C/-/91-client-/}
 COMMENT=	PostgreSQL database client programs
@@ -55,6 +55,7 @@ SUBST_FILES.pgxs=	src/Makefile.global
 SUBST_SED.pgxs=		-e 's,${WRKDIR}/.tools,${PREFIX},'
 SUBST_SED.pgxs+=	-e 's,${WRKDIR}/.wrapper/bin/ld,${LD},'
 SUBST_SED.pgxs+=	-e 's,${WRKDIR}/.wrapper,${PREFIX},'
+SUBST_SED.pgxs+=	-e 's,${PREFIX}/bin/mkdir,${MKDIR:[1]},'
 SUBST_SED.pgxs+=	-e 's,${WRKSRC},/dev/null,'
 
 INSTALLATION_DIRS+=	lib/postgresql/pgxs
