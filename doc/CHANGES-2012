@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2011,v 1.3388 2011/12/31 11:16:30 dholland Exp $
+$NetBSD: CHANGES-2012,v 1.2 2012/01/01 20:09:42 ryoon Exp $
 
 ================================================================================
 README! README! README! README! README! README! README! README! README! README!
@@ -12,3 +12,5 @@ README! README! README! README! README! README! README! README! README! README!
 
 Changes to the packages collection and infrastructure in 2012:
 
+	Updated net/xnap to 2.0nb2 [ryoon 2012-01-01]
+	Updated cross/h8300-hms-gcc to 3.1nb6 [dholland 2012-01-02]
