@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/05/20 00:58:05 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2011/02/28 14:52:40 wiz Exp $
 #
 
 DISTNAME=	jack-audio-connection-kit-${JACK_VERSION}
@@ -41,6 +41,8 @@ CFLAGS.Linux+=		-D_GNU_SOURCE
 CONFIGURE_ENV+=		ac_cv_header_readline_chardefs_h=yes
 
 JACKD_DEFAULT_TMPDIR?=	/tmp
+
+PLIST_SUBST+=		LIBABISUFFIX=${LIBABISUFFIX:Q}
 
 .include "../../mk/bsd.prefs.mk"
 
