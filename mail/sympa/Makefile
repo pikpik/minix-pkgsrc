@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2011/06/19 13:50:57 bouyer Exp $
+# $NetBSD: Makefile,v 1.45 2011/08/14 13:25:28 obache Exp $
 #
 
 DISTNAME=	sympa-5.4.4
@@ -101,6 +101,7 @@ PKG_HOME.${SYMPA_USER}=		${SYMPA_VARBASE}
 
 PKG_GROUPS_VARS+=	SYMPA_GROUP
 PKG_USERS_VARS+=	SYMPA_USER
+USERGROUP_PHASE=	pre-install
 BUILD_DEFS+=		SYMPA_VARBASE
 
 .for d in sympa sympa/create_list_templates sympa/general_task_models \
