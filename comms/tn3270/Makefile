@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/01/17 18:26:28 spz Exp $
+# $NetBSD: Makefile,v 1.5 2011/11/14 01:36:46 dholland Exp $
 
 DISTNAME=	tn3270-0.20100116
 CATEGORIES=	comms net
@@ -12,7 +12,7 @@ LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-TOOLS+=			yacc
+USE_TOOLS+=		yacc
 
 INSTALLATION_DIRS+=	bin share/tn3270
 
