@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2011/09/06 09:49:01 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2011/10/10 12:31:56 wiz Exp $
 
 DISTNAME=		mdocml-1.12.0
 CATEGORIES=		textproc devel
@@ -12,4 +12,5 @@ LICENSE=		2-clause-bsd # not exactly, but near enough
 PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_FLAGS+=		PREFIX=${PREFIX}
 
+.include "../../mk/bdb.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
