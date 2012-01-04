@@ -4,6 +4,7 @@
 DISTNAME=		pkgin-0.4.3
 CATEGORIES=		pkgtools
 MASTER_SITES=		ftp://ftp.NetBSD.org/pub/NetBSD/misc/imil/
+PKGREVISION=		2
 
 MAINTAINER=		imil@NetBSD.org
 HOMEPAGE=		http://pkgin.net/
