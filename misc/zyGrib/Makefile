@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2011/10/04 08:59:02 plunky Exp $
+# $NetBSD: Makefile,v 1.21 2011/11/01 06:02:09 sbd Exp $
 #
 
 DISTNAME=	zyGrib-5.0.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.zygrib.org/getfile.php?file=
 EXTRACT_SUFX=	.tgz
@@ -141,6 +141,7 @@ do-install:
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../geography/proj/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../x11/qwt-qt4/buildlink3.mk"
