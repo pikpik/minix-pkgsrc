@@ -57,7 +57,7 @@ $NetBSD$
 -    // support libraries.
 -    CmdArgs.push_back("-L/usr/gnu/lib/gcc/i686-pc-minix/4.4.3");
 +    CmdArgs.push_back("-lCompilerRT-Generic");
-+    CmdArgs.push_back("-L/usr/pkg/lib");
++    CmdArgs.push_back("-L/usr/pkg/compiler-rt/lib");
 +    CmdArgs.push_back(
 +	 Args.MakeArgString(getToolChain().GetFilePath("crtend.o")));
    }
