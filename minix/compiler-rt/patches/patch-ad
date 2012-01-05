@@ -1,6 +1,6 @@
 $NetBSD$
 
---- test/Unit/clear_cache_test.c.orig	Thu Nov 24 17:14:43 2011
+--- test/Unit/clear_cache_test.c.orig	Tue Nov 29 00:14:28 2011
 +++ test/Unit/clear_cache_test.c
 @@ -38,7 +38,9 @@ int main()
      // make executable the page containing execution_buffer 

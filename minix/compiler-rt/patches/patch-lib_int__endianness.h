@@ -1,24 +1,13 @@
 $NetBSD$
 
---- lib/int_endianness.h.orig	Thu Nov 24 17:14:46 2011
+--- lib/int_endianness.h.orig	Tue Nov 29 00:14:28 2011
 +++ lib/int_endianness.h
-@@ -80,6 +80,19 @@
+@@ -31,7 +31,7 @@
  
- #endif /* GNU/Linux */
+ /* .. */
  
-+#if defined(__minix)
-+#include <net/hton.h>
-+#if BIG_ENDIAN
-+#define _YUGA_LITTLE_ENDIAN    0
-+#define _YUGA_BIG_ENDIAN       1
-+#elif LITTLE_ENDIAN
-+#define _YUGA_LITTLE_ENDIAN    1
-+#define _YUGA_BIG_ENDIAN       0
-+#else
-+#error No Minix endianness found
-+#endif
-+#endif
-+
- /* . */
+-#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__DragonFly__)
++#if defined(__FreeBSD__) || defined(__NetBSD__) || defined(__OpenBSD__) || defined(__DragonFly__) || defined(__minix)
+ #include <sys/endian.h>
  
- #if !defined(_YUGA_LITTLE_ENDIAN) || !defined(_YUGA_BIG_ENDIAN)
+ #if _BYTE_ORDER == _BIG_ENDIAN

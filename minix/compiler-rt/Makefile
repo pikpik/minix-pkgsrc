@@ -3,7 +3,7 @@
 DISTNAME=	compiler-rt-r${SVNREV}
 SVNREV=		145807
 PKGNAME=	compiler-rt-3.1
-PKGREVISION=	${SVNREV}
+PKGREVISION=	14580701	
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
 MASTER_SITES=        ${MASTER_SITE_MINIX}

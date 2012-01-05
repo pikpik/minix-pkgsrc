@@ -3,6 +3,6 @@ $NetBSD$
 SHA1 (compiler-rt-r145807.tar.gz) = 659e72fa300c89908b4c199a3e10ec2a7db2366a
 RMD160 (compiler-rt-r145807.tar.gz) = a80aa57d7bed38410189013dac2fb1b4970afc1c
 Size (compiler-rt-r145807.tar.gz) = 2558250 bytes
-SHA1 (patch-ad) = bbac4b2c9753b4ca4771b445ecb1a74675369321
-SHA1 (patch-lib_int__endianness.h) = b23f519f5c64c1e6fa5b8c3dd47f85cf06310d60
-SHA1 (patch-test_Unit_endianness.h) = 333653107923a0a15a89096c2702011a738a817a
+SHA1 (patch-ad) = 9af4eb6cd327ab15bdb05336963c1c5685a9b303
+SHA1 (patch-lib_int__endianness.h) = 88dbad46247b1614dde2f18b724da9d5306cfcbc
+SHA1 (patch-test_Unit_endianness.h) = 791027f1ff59cc0a352b765be4893027ccb99d79
