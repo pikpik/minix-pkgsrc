@@ -3,7 +3,7 @@
 DISTNAME=	compiler-rt-r${SVNREV}
 SVNREV=		145807
 PKGNAME=	compiler-rt-3.1
-PKGREVISION=	14580701	
+PKGREVISION=	14580702	
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
 MASTER_SITES=        ${MASTER_SITE_MINIX}
@@ -59,5 +59,6 @@ regression-test:
 do-install:
 	${MKDIR} ${PREFIX}/compiler-rt/lib/
 	${INSTALL_LIB} ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/compiler-rt/lib/
+	${INSTALL_LIB} ${BUILD_DIRS}/lib/libCompilerRT-Generic.a ${PREFIX}/lib/
 
 .include "../../mk/bsd.pkg.mk"
