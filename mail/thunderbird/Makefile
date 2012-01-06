@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2011/11/17 00:25:35 dholland Exp $
+# $NetBSD: Makefile,v 1.78 2011/12/05 13:20:36 dholland Exp $
 #
 
 DISTNAME=	thunderbird-${TB_VER}.source
@@ -23,6 +23,13 @@ CONFIG_SUB_OVERRIDE+=	ldap/sdks/c-sdk/config/autoconf/config.sub
 CONFIGURE_ARGS+=	--enable-application=mail
 
 ALL_ENV+=		MOZILLA_PKG_NAME=thunderbird
+
+.include "../../mk/bsd.prefs.mk"
+
+.if (${OPSYS} == "Linux" || ${OPSYS} == "SunOS" || ${OPSYS} == "Darwin") && \
+    (${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64")
+BUILD_DEPENDS+=		yasm>=1.1.0:../../devel/yasm
+.endif
 
 #SUBST_CLASSES+=			ext-compat
 #SUBST_STAGE.ext-compat=		pre-configure
