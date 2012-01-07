@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/06/02 12:34:02 adam Exp $
+# $NetBSD: Makefile,v 1.21 2010/09/16 08:06:15 adam Exp $
 
 DISTNAME=	libtabe-0.2.6
 PKGREVISION=	2
@@ -19,6 +19,7 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-db-inc=${BDBBASE}/include/${BDB_TYPE}
 CONFIGURE_ARGS+=	--with-db-lib=${BDBBASE}/lib
+CONFIGURE_ARGS+=	--with-db-name=${BDB_TYPE}
 
 INSTALL_MAKE_FLAGS+=	program_prefix=${DESTDIR}
 
