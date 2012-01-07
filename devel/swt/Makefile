@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/11/01 06:01:04 sbd Exp $
+# $NetBSD: Makefile,v 1.13 2012/01/02 18:56:58 dholland Exp $
 #
 
 SWTREL=		3.5.1
@@ -37,10 +37,10 @@ INSTALLATION_DIRS+=	lib/jni
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "NetBSD" && ${LOWER_ARCH} == "x86_64"
+.if ${MACHINE_ARCH} == "x86_64"
 MY_LOWER_ARCH=	amd64
 .endif
-MY_LOWER_ARCH?=	${LOWER_ARCH}
+MY_LOWER_ARCH?=	${MACHINE_ARCH}
 
 post-extract:
 	cd ${WRKSRC} && jar -xf ${WRKSRC}/src.zip
