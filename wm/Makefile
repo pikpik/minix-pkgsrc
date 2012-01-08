@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.112 2011/06/18 15:16:41 wiz Exp $
+# $NetBSD: Makefile,v 1.113 2011/06/18 15:31:16 wiz Exp $
 #
 
 COMMENT=	X11 window managers, configuration tools, and themes
@@ -53,6 +53,7 @@ SUBDIR+=	metacity
 SUBDIR+=	metisse
 SUBDIR+=	mlvwm
 SUBDIR+=	musca
+SUBDIR+=	notion
 SUBDIR+=	novawm
 SUBDIR+=	obconf
 SUBDIR+=	obpager
