@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.344 2011/03/02 12:07:25 ryoon Exp $
+# $NetBSD: Makefile,v 1.345 2011/09/16 11:15:04 ryoon Exp $
 #
 
 COMMENT=	Games
@@ -260,6 +260,7 @@ SUBDIR+=	tuxmath
 SUBDIR+=	tuxracer
 SUBDIR+=	tyrquake
 SUBDIR+=	ufoai
+SUBDIR+=	ultima4-data
 SUBDIR+=	urban
 SUBDIR+=	velena
 SUBDIR+=	vms-empire
@@ -311,6 +312,7 @@ SUBDIR+=	xsokoban
 SUBDIR+=	xsoldier
 SUBDIR+=	xtris
 SUBDIR+=	xtux
+SUBDIR+=	xu4
 SUBDIR+=	xvier
 SUBDIR+=	xworm
 SUBDIR+=	xye
