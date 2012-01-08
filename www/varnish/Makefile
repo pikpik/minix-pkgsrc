@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2011/05/09 11:11:11 fhajny Exp $
+# $NetBSD: Makefile,v 1.12 2011/11/12 20:40:16 mspo Exp $
 #
 
 DISTNAME=	varnish-3.0.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://repo.varnish-cache.org/source/
 
@@ -60,5 +60,6 @@ CONFIGURE_ENV+=	VCC_CC="gcc -fpic -shared -o %o %s"
 pre-configure:
 	cd ${WRKSRC} && autoconf
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
