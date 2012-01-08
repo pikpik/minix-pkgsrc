@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2011/04/22 13:44:38 obache Exp $
+# $NetBSD: Makefile,v 1.9 2011/11/01 06:02:29 sbd Exp $
 #
 
 DISTNAME=		pinentry-0.8.1
 PKGNAME=		pinentry-qt4-0.8.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/pinentry/
 
@@ -41,6 +41,7 @@ post-configure:
 BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/ncurses/buildlink3.mk"
 #.include "../../security/libgpg-error/buildlink3.mk"
 #.include "../../security/libksba/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
