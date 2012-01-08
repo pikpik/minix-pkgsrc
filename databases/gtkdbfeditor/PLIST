@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/gtkdbfeditor
+share/gtkdbfeditor/gtkdbfeditor.glade
+share/locale/de/LC_MESSAGES/gtkdbfeditor.mo
+share/locale/en/LC_MESSAGES/gtkdbfeditor.mo
