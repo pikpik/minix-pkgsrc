@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2011/04/22 13:44:53 obache Exp $
+# $NetBSD: Makefile,v 1.22 2011/10/25 08:00:00 ryoon Exp $
 #
 
 DISTNAME=		gcal-3.6.1
+PKGREVISION=		1
 CATEGORIES=		time
 MASTER_SITES=		${MASTER_SITE_GNU:=gcal/}
 
@@ -21,4 +22,5 @@ USE_TOOLS+=		msgfmt xgettext msgmerge awk
 CHECK_FILES_SKIP+=	lib/charset.alias
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
