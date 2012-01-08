@@ -1,9 +1,9 @@
 # Original by Brooks Davis taken from FreeBSD and modified by beng@
 
 DISTNAME=	compiler-rt-r${SVNREV}
-SVNREV=		145807
+SVNREV=		147747
 PKGNAME=	compiler-rt-3.1
-PKGREVISION=	14580702	
+PKGREVISION=	${SVNREV}00	
 MAINTAINER=	ben@minix3.org
 COMMENT=	libgcc replacement
 MASTER_SITES=        ${MASTER_SITE_MINIX}
