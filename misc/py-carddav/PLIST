@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/pc_query
+bin/pycardsyncer
+share/doc/py-carddav/README.html
+share/doc/py-carddav/README.rst
+share/examples/py-carddav/pycard.conf.sample
