@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2011/12/13 04:40:30 dholland Exp $
+# $NetBSD: Makefile,v 1.24 2011/12/20 05:00:58 dholland Exp $
 
 DISTNAME=		xdm3d-1.0
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
