@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.214 2011/10/20 11:28:59 wiz Exp $
+# $NetBSD: Makefile,v 1.215 2011/11/16 11:16:12 ryoon Exp $
 #
 
 COMMENT=	Fonts
 
 SUBDIR+=	AnonymousPro
+SUBDIR+=	EB-Garamond
 SUBDIR+=	Xft2
 SUBDIR+=	Xg
 SUBDIR+=	acroread7-chsfont
