@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2011/10/11 20:30:00 jmcneill Exp $
+# $NetBSD: Makefile,v 1.12 2011/12/16 23:21:45 asau Exp $
 
 .include "../../net/samba/Makefile.mirrors"
 
 DISTNAME=	samba-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${SAMBA_MIRRORS:=stable/}
 
@@ -21,6 +22,7 @@ DESCR_SRC=		${PKGDIR}/../../net/samba/DESCR
 MESSAGE_SRC=		${PKGDIR}/../../net/samba/MESSAGE
 WRKSRC=			${WRKDIR}/${DISTNAME}/source3
 BUILD_DEFS+=		VARBASE
+CFLAGS+=		-D__stub_utimensat
 
 .include "../../mk/bsd.prefs.mk"
 
