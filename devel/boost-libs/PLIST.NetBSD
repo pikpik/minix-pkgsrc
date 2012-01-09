@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/libboost_locale.a
+lib/libboost_locale.so
+lib/libboost_locale.so.${BOOST_VERSION}
