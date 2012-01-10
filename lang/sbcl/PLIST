@@ -178,7 +178,6 @@ lib/sbcl/sb-posix/macros.fasl
 lib/sbcl/sb-posix/macros.lisp
 lib/sbcl/sb-posix/posix-tests.fasl
 lib/sbcl/sb-posix/posix-tests.lisp
-lib/sbcl/sb-posix/posix-tests.lisp.orig
 lib/sbcl/sb-posix/sb-posix.asd
 lib/sbcl/sb-posix/sb-posix.fasl
 lib/sbcl/sb-posix/sb-posix.texinfo
