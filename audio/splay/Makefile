@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/07/22 05:54:52 rillig Exp $
+# $NetBSD: Makefile,v 1.23 2009/07/07 16:49:05 joerg Exp $
 #
 
 DISTNAME=		splay-0.8.2
@@ -17,6 +17,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-xsplay
 CONFIGURE_ARGS+=	--without-pthread
 LIBS+=			${LIBOSSAUDIO}
+LIBS.SunOS+=		-lsocket -lnsl
 
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
