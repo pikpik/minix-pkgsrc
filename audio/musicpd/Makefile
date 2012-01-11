@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2011/04/22 13:42:57 obache Exp $
+# $NetBSD: Makefile,v 1.53 2011/11/16 01:33:19 sbd Exp $
 
 DISTNAME=		mpd-0.16.2
 PKGNAME=		${DISTNAME:S/mpd/musicpd/}
@@ -21,6 +21,8 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES=		c c++
+
+CPPFLAGS.SunOS+=	-std=gnu99 -D_XOPEN_SOURCE=600 -D__EXTENSIONS__
 
 .include "options.mk"
 
