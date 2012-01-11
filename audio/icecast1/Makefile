@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/05/20 00:58:05 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2010/02/10 19:17:32 joerg Exp $
 #
 
 DISTNAME=	icecast-1.3.12
@@ -24,7 +24,6 @@ CONFIGURE_ARGS+=	--with-readline \
 CPPFLAGS+=		-I${BUILDLINK_PREFIX.readline}/include/readline
 CPPFLAGS+=		${BUILDLINK_CPPFLAGS.${PYPACKAGE}}
 LDFLAGS+=		${BUILDLINK_LDFLAGS.${PYPACKAGE}}
-LIBS+=			-lutil
 PTHREAD_OPTS+=		require
 
 EGDIR=			${PREFIX}/share/examples/icecast
@@ -35,6 +34,9 @@ CONF_FILES+=		${EGDIR}/${f}.dist ${PKG_SYSCONFDIR}/${f}
 .endfor
 
 .include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} != "SunOS"
+LIBS+=			-lutil
+.endif
 
 ICECAST_SOURCE_BUFFSIZE?=	8192
 ICECAST_CHUNKLEN?=		64
