@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/04/22 13:42:59 obache Exp $
+# $NetBSD: Makefile,v 1.31 2011/11/01 06:00:41 sbd Exp $
 #
 
 DISTNAME=		solfege-3.14.1
@@ -22,6 +22,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--disable-oss-sound
 CONFIGURE_ARGS+=	--disable-pygtk-test
 CONFIGURE_ARGS+=	--enable-docbook-stylesheet=${LOCALBASE}/share/xsl/docbook/html/chunk.xsl
+CONFIGURE_ARGS+=	--localedir=${LOCALBASE}/${PKGLOCALEDIR}/locale
 
 USE_TOOLS+=		gmake gm4 makeinfo pkg-config msgfmt bash:run
 
