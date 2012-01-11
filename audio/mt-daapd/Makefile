@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/02/01 01:17:59 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2011/08/23 13:06:46 obache Exp $
 
 DISTNAME=	mt-daapd-0.2.4.2
 PKGREVISION=	2
@@ -17,6 +17,8 @@ USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 
 .include "../../mk/bsd.prefs.mk"
+
+CPPFLAGS.SunOS+=	-std=c99 -Du_int32_t=uint32_t
 
 RCD_SCRIPTS=	mtdaapd
 EGDIR=		${PREFIX}/share/examples/${PKGBASE}
