@@ -2,6 +2,7 @@
 lib/pkgconfig/ruby-glib2.pc
 ${RUBY_VENDORLIB}/glib-mkenums.rb
 ${RUBY_VENDORLIB}/glib2.rb
+${RUBY_VENDORLIB}/glib2/deprecatable.rb
 ${RUBY_VENDORLIB}/gnome2-raketask.rb
 ${RUBY_VENDORLIB}/gnome2-win32-binary-downloader.rb
 ${RUBY_VENDORARCHLIB}/glib-enum-types.h
