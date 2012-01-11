@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/03/16 16:02:20 taca Exp $
+# $NetBSD: Makefile,v 1.5 2011/09/16 05:46:22 obache Exp $
 #
 
 DISTNAME=	ampache-3.5.3
@@ -48,7 +48,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/ampache.conf ${DESTDIR}${EGDIR}/ampache.conf
 	set -e; cd ${WRKSRC} && pax -rw -pe . ${DESTDIR}${INSTDIR}
 	${RM} -f ${DESTDIR}${INSTDIR}/ampache.conf
-	${FIND} ${DESTDIR}${INSTDIR} -name '*.orig' | ${XARGS} ${RM}
+	${FIND} ${DESTDIR}${INSTDIR} -name '*.orig' | ${XARGS} ${RM} -f
 
 .include "../../mk/apache.mk"
 .include "../../lang/php/phpversion.mk"

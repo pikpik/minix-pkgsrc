@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/02/01 01:38:42 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2011/08/28 22:30:17 dholland Exp $
 #
 
 DISTNAME=	cddbd-1.3.1
@@ -20,6 +20,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_FILE=	makefile
 
 INSTALLATION_DIRS+=	bin
+
+LDFLAGS.SunOS+=	-lsocket -lnsl
 
 do-configure:
 	cd ${WRKSRC} &&							\
