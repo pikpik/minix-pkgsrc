@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- src/pm/hydra/configure.orig	2011-09-01 18:54:46.000000000 +0000
++++ src/pm/hydra/configure
+@@ -13854,7 +13854,7 @@ fi
+ 
+ 
+ cat >>confdefs.h <<_ACEOF
+-#define HYDRA_CONFIGURE_ARGS_CLEAN "`echo $ac_configure_args`"
++#define HYDRA_CONFIGURE_ARGS_CLEAN "`echo -n $ac_configure_args`"
+ _ACEOF
+ 
+ 
