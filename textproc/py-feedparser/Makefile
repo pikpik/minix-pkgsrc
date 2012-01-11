@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/03/16 16:43:35 drochner Exp $
+# $NetBSD: Makefile,v 1.18 2012/01/11 16:50:52 schmonz Exp $
 #
 
 DISTNAME=		feedparser-5.1
@@ -20,5 +20,5 @@ PLIST_SUBST+=		PYVERSSUFFIX=${PYVERSSUFFIX}
 do-test:
 	cd ${WRKSRC}/feedparser && ${PYTHONBIN} feedparsertest.py
 
-.include "../../lang/python/distutils.mk"
+.include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
