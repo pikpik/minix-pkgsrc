@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/10/21 20:56:00 ryoon Exp $
+# $NetBSD: Makefile,v 1.5 2011/11/01 06:00:39 sbd Exp $
 #
 
 DISTNAME=		mp3splt-gtk-0.7
@@ -16,6 +16,8 @@ USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=	 	yes
 USE_TOOLS+=		pkg-config msgfmt gmake
 USE_DIRS+=		xdg-1.1
+
+LIBS.SunOS+=		-lnsl
 
 .include "options.mk"
 
