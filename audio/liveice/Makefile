@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2010/03/14 17:55:28 martin Exp $
+# $NetBSD: Makefile,v 1.17 2011/12/17 10:14:44 sbd Exp $
 #
 
 DISTNAME=	liveice
@@ -20,6 +20,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	YES
 DIST_SUBDIR=	liveice-0.20001121
 LIBS+=		${LIBOSSAUDIO}
+LIBS.SunOS+=	-lsocket
 
 INSTALLATION_DIRS=	bin
 
