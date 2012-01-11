@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/07/26 13:20:34 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2008/07/14 12:55:57 joerg Exp $
 #
 
 DISTNAME=		mkcdtoc-1.0
@@ -12,7 +12,7 @@ COMMENT=		Script to create .toc files for cdrdao
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake perl
+USE_TOOLS+=		gmake perl pod2man
 MAKE_ENV+=		PERL=${PERL5}
 
 .include "../../mk/bsd.pkg.mk"
