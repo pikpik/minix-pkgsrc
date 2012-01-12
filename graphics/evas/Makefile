@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/11/01 06:01:32 sbd Exp $
+# $NetBSD: Makefile,v 1.10 2011/12/05 17:33:32 joerg Exp $
 #
 
 PKGNAME=	evas-${EVAS_VERSION}
@@ -20,6 +20,8 @@ PLIST_SRC+=	PLIST
 .if ${OPSYS} != "NetBSD" && ${OPSYS} != "OpenBSD" && ${OPSYS} != "MirBSD"
 PLIST_SRC+=	PLIST.cserve
 .endif
+
+CPPFLAGS.SunOS+=	-std=gnu99 -D_XOPEN_SOURCE=600
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/AUTHORS ${WRKSRC}/COPYING \
