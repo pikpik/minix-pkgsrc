@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.22 2011/09/12 21:50:38 shattered Exp $
+# $NetBSD: options.mk,v 1.23 2012/01/10 12:37:32 drochner Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.vlc
 PKG_SUPPORTED_OPTIONS=		debug faad dbus hal skins sdl pulseaudio x11 gnome dts
@@ -21,6 +21,8 @@ CONFIGURE_ARGS+=	--disable-pulse
 ## SDL backend support
 
 .if !empty(PKG_OPTIONS:Msdl)
+CONFIGURE_ARGS+=	--enable-sdl
+CONFIGURE_ARGS+=	--enable-sdl-image
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
 PLIST.sdl=		yes
