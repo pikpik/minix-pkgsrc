@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2010/12/30 07:41:27 obache Exp $
+# $NetBSD: Makefile,v 1.42 2011/12/02 15:31:44 hauke Exp $
 
 DISTNAME=	iozone3_397
 PKGNAME=	iozone-3.397
@@ -20,6 +20,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}/${DISTNAME}/src/current
 MAKE_FILE=		makefile
 USE_TOOLS+=		tee perl
+
+CPPFLAGS.SunOS+=	-Dsolaris
 
 .include "../../mk/bsd.prefs.mk"
 
