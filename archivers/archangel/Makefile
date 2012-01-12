@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/02 03:48:36 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2009/05/02 13:22:35 zafer Exp $
 
 DISTNAME=	archangel-20050730
 PKGREVISION=	1
@@ -15,6 +15,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/archangel
+
+USE_FEATURES=	nbcompat
+MAKE_ENV+=	LDADD=${LIBS:Q}
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
