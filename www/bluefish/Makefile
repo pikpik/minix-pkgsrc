@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.90 2011/04/22 13:44:57 obache Exp $
+# $NetBSD: Makefile,v 1.91 2011/11/01 06:02:45 sbd Exp $
 
-DISTNAME=	bluefish-2.0.3
-PKGREVISION=	2
+DISTNAME=	bluefish-2.2.1
 CATEGORIES=	www
 MASTER_SITES=	http://bluefish.mrball.net/stable/source/               \
 		http://www.bennewitz.com/bluefish/stable/source/
@@ -21,8 +20,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-icon-path=${PREFIX:Q}/share/pixmaps
 CONFIGURE_ARGS+=	--with-freedesktop_org-menu=${PREFIX:Q}/share/applications
 CONFIGURE_ARGS+=	--with-freedesktop_org-mime=${PREFIX:Q}/share/mime
-CONFIGURE_ARGS+=	--with-gnome2_4-mime=${PREFIX:Q}/share/mime-info
-CONFIGURE_ARGS+=	--with-gnome2_4-appreg=${PREFIX:Q}/share/application-registry
 CONFIGURE_ENV+=		EXTERNAL_GREP=${TOOLS_GREP:Q}
 CONFIGURE_ENV+=		EXTERNAL_FIND=${TOOLS_FIND:Q}
 
@@ -33,6 +30,9 @@ CHECK_WRKREF_SKIP+=	lib/bluefish/about.so
 #XML_ENTRIES=	delegateURI http://bluefish.openoffice.nl/ns/bflang/2.0/ \
 #		${PREFIX}/share/xml/bluefish/2.0/
 #.include "../../textproc/xmlcatmgr/catalogs.mk"
+
+.include "../../lang/python/application.mk"
+#CONFIGURE_ARGS+=	--disable-python
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../databases/shared-mime-info/mimedb.mk"
