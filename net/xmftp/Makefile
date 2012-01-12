@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/02/15 17:24:54 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2011/12/09 14:36:33 drochner Exp $
 #
 
 DISTNAME=	xmftp-1.0.4
@@ -17,6 +17,8 @@ USE_X11BASE=	yes
 USE_TOOLS+=	gmake
 
 INSTALLATION_DIRS=	bin share/doc/xmftp
+
+LDFLAGS.SunOS+=	-lsocket -lnsl
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xmftp ${DESTDIR}${PREFIX}/bin
