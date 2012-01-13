@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/07/08 23:10:35 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:23:53 joerg Exp $
 
 BUILDLINK_TREE+=	esound
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	esound
 ESOUND_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.esound+=	esound>=0.2.18
-BUILDLINK_ABI_DEPENDS.esound+=	esound>=0.2.35nb1
+BUILDLINK_ABI_DEPENDS.esound+=	esound>=0.2.41nb1
 BUILDLINK_PKGSRCDIR.esound?=	../../audio/esound
 
 .include "../../audio/libaudiofile/buildlink3.mk"

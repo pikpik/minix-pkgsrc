@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2011/11/01 06:02:01 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2011/12/18 10:09:37 marino Exp $
 #
 
 DISTNAME=	extcalc-0.9.3-1
 PKGNAME=	extcalc-0.9.3
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=extcalc-linux/}
 

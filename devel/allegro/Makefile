@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2009/06/30 00:07:12 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2011/07/05 01:33:25 dholland Exp $
 
 DISTNAME=	allegro-4.2.2
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=alleg/}
 

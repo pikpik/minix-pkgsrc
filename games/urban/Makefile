@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2008/05/26 02:13:20 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2010/02/14 22:04:01 joerg Exp $
 #
 
 DISTNAME=	urban-1.5.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	http://urban.bengburken.net/files/linux/
 DISTFILES=	urban-1.5.3${EXTRACT_SUFX} sound${EXTRACT_SUFX}

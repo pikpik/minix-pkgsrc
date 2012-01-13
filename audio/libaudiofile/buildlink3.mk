@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.17 2011/12/22 07:47:43 sbd Exp $
+# $NetBSD: buildlink3.mk,v 1.18 2012/01/12 16:34:28 adam Exp $
 
 BUILDLINK_TREE+=	libaudiofile
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	libaudiofile
 LIBAUDIOFILE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libaudiofile+=	libaudiofile>=0.2.1
-BUILDLINK_ABI_DEPENDS.libaudiofile+=	libaudiofile>=0.2.6nb1
+BUILDLINK_ABI_DEPENDS.libaudiofile+=	libaudiofile>=0.3.3
 BUILDLINK_PKGSRCDIR.libaudiofile?=	../../audio/libaudiofile
 
 .include "../../mk/bsd.fast.prefs.mk"
