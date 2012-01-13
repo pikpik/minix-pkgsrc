@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.27 2011/11/01 06:03:07 sbd Exp $
+# $NetBSD: buildlink3.mk,v 1.28 2012/01/12 23:02:26 adam Exp $
 
 BUILDLINK_TREE+=	qt4-libs
 
@@ -33,6 +33,7 @@ PTHREAD_OPTS+=	require
 .  include "../../x11/libXinerama/buildlink3.mk"
 .  endif
 .endif
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
 pkgbase := qt4-libs
