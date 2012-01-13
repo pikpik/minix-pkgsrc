@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.309 2011/11/08 16:13:50 taca Exp $
+# $NetBSD: Makefile,v 1.310 2011/11/23 01:20:46 ryoon Exp $
 #
 
 COMMENT=	Programming languages
@@ -136,7 +136,6 @@ SUBDIR+=	pnetlib-nox11
 SUBDIR+=	polyml
 SUBDIR+=	py-basicproperty
 SUBDIR+=	py-cxfreeze
-SUBDIR+=	py-html-docs
 SUBDIR+=	py-psyco
 SUBDIR+=	py-pyrex
 SUBDIR+=	py24-html-docs
