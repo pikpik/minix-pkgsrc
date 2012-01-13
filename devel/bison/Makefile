@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.77 2011/07/12 14:12:13 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2011/08/06 17:15:42 wiz Exp $
 
 DISTNAME=		bison-2.5
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=bison/}
 EXTRACT_SUFX=		.tar.bz2
@@ -42,4 +42,5 @@ post-configure:
 	fi
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
