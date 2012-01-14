@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/06/18 15:16:24 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2011/11/01 06:02:44 sbd Exp $
 #
 
 DISTNAME=	wbar-2.2.2
@@ -28,7 +28,10 @@ SUBST_STAGE.sed=	post-extract
 SUBST_MESSAGE.sed=	Needs GNU sed.
 
 # trick pkgsrc into real gsed, needed for "sed -i"
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "NetBSD"
 TOOLS_PLATFORM.gsed=	#empty
+.endif
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"

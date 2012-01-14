@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/07/21 13:05:53 obache Exp $
+# $NetBSD: Makefile,v 1.18 2011/11/01 06:01:07 sbd Exp $
 #
 
 DISTNAME=	notecase-1.8.8_src
@@ -16,7 +16,11 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=		${WRKDIR}/notecase-1.8.8
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake msgfmt pkg-config gsed
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "NetBSD"
 TOOLS_PLATFORM.gsed= #empty, override nonsense in tools
+.endif
 
 INSTALLATION_DIRS=	share/doc/notecase share/locale/fr_CA/LC_MESSAGES \
 			share/locale/no/LC_MESSAGES
