@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2009/05/18 13:15:19 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2011/04/22 13:43:58 obache Exp $
 
 .include "Makefile.common"
 
 PKGREVISION=		2
 
-BUILD_DEPENDS+=		zip>=2.3:../../archivers/zip
-
-USE_TOOLS+=		makeinfo
+USE_TOOLS+=		makeinfo zip
 INFO_FILES=		# PLIST
 
 CONFIGURE_ARGS+=	--disable-gtk-peer

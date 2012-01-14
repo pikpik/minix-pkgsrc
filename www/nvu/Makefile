@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/03/17 13:24:07 obache Exp $
+# $NetBSD: Makefile,v 1.7 2011/04/22 13:44:59 obache Exp $
 #
 
 DISTNAME=	nvu-1.0-sources
@@ -12,14 +12,12 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nvu.com/
 COMMENT=	Web Authoring System
 
-BUILD_DEPENDS+=	zip-[0-9]*:../../archivers/zip
-
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/mozilla
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	ORBIT_CONFIG=orbit2-config
-USE_TOOLS+=	gmake perl pkg-config unzip
+USE_TOOLS+=	gmake perl pkg-config unzip zip
 USE_LANGUAGES=	c c++
 
 PKGCONFIG_OVERRIDE+=	build/unix/mozilla-gtkmozembed.pc.in

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/11/27 05:43:26 sbd Exp $
+# $NetBSD: Makefile,v 1.16 2011/12/02 07:13:50 sbd Exp $
 #
 
 DISTNAME=	opengrok-0.8.1
@@ -24,6 +24,7 @@ NO_BUILD=	YES
 
 USE_JAVA=	run
 USE_JAVA2=	yes
+USE_TOOLS+=	zip:run
 
 CONF_FILES=	${PREFIX}/share/examples/opengrok/paths.tsv \
 		${PREFIX}/share/opengrok/paths.tsv

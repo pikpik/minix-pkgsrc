@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/12/14 11:55:20 fhajny Exp $
+# $NetBSD: Makefile,v 1.4 2011/12/14 13:07:38 fhajny Exp $
 #
 
 PKGNAME=		rabbitmq-${RMQ_VERSION}
@@ -13,10 +13,9 @@ LICENSE=		mpl-1.1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		bash:run coreutils gmake unzip
+USE_TOOLS+=		bash:run coreutils gmake unzip zip
 
 BUILD_DEPENDS+=		libxslt-[0-9]*:../../textproc/libxslt
-BUILD_DEPENDS+=		zip-[0-9]*:../../archivers/zip
 BUILD_DEPENDS+=		xmlto-[0-9]*:../../textproc/xmlto
 DEPENDS+=		coreutils-[0-9]*:../../sysutils/coreutils
 DEPENDS+=		${PYPKGPREFIX}-simplejson>=2:../../converters/py-simplejson

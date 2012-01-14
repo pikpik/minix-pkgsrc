@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2009/12/24 03:49:35 dsainty Exp $
+# $NetBSD: Makefile,v 1.28 2011/10/02 22:42:39 dholland Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}
@@ -14,7 +14,7 @@ COMMENT=	Java IDE
 LICENSE=	eclipse-license
 
 DEPENDS+=	apache-ant>=1.4.1:../../devel/apache-ant
-USE_TOOLS+=	unzip
+USE_TOOLS+=	unzip zip
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -33,8 +33,6 @@ ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-x86_64 Linux-*-*
 .if ${OPSYS} == "Linux"
 DISTNAME=	eclipse-sourceBuild-srcIncluded-${VERSION}
 MASTER_SITES=	ftp://download.eclipse.org/R-3.0.1-200409161125/
-
-BUILD_DEPENDS+=	zip>=2.3:../../archivers/zip
 
 INSTALLATION_DIRS=	bin
 

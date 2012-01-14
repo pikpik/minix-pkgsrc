@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/07/14 12:56:13 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2010/07/15 12:12:10 obache Exp $
 #
 
 DISTNAME=	jdom-1.1.1
@@ -12,18 +12,13 @@ COMMENT=	Simple API for processing XML documents in Java
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-BUILD_DEPENDS+=	zip-[0-9]*:../../archivers/zip
-
 USE_LANGUAGES=	# only Java
-USE_TOOLS+=	pax
+USE_TOOLS+=	pax zip
 AUTO_MKDIRS=	yes
 WRKSRC=		${WRKDIR}/jdom
 
-FIND_PREFIX:=	ZIP_DIR=zip
-.include "../../mk/find-prefix.mk"
-
 do-build:
-	cd ${WRKSRC}/src/java && ${ZIP_DIR}/bin/zip -r ${WRKSRC}/jdom-src.zip org
+	cd ${WRKSRC}/src/java && ${TOOLS_PATH.zip} -r ${WRKSRC}/jdom-src.zip org
 
 do-install:
 	cd ${WRKSRC} && ${INSTALL_DATA} build/jdom.jar jdom-src.zip ${DESTDIR}${PREFIX}/lib/java/
