@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.98 2011/04/22 13:44:05 obache Exp $
+# $NetBSD: Makefile,v 1.99 2011/11/01 06:02:01 sbd Exp $
 #
 
 DISTNAME=		gcalctool-5.32.2
@@ -17,10 +17,8 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		HAVE_YACC=yes
 
 USE_LIBTOOL=		yes
-USE_TOOLS+=		bison gmake intltool flex msgfmt pkg-config
+USE_TOOLS+=		bison gmake gsed intltool flex msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
-
-BUILD_DEPENDS+=	gsed-[0-9]*:../../textproc/gsed
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
