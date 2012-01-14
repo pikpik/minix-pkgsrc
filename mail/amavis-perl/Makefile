@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/06/01 19:38:57 sno Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/12/24 07:21:09 kefren Exp $
 
 DISTNAME=	amavisd-${VERSION}
 PKGNAME=	amavis-perl-${VERSION}
@@ -19,7 +19,6 @@ CONFLICTS+=	amavis-perl-[0-9]*
 DEPENDS+=	uvscan-[0-9]*:../../security/uvscan
 DEPENDS+=	maildrop-[0-9]*:../../mail/maildrop
 DEPENDS+=	tnef-[0-9]*:../../mail/tnef
-DEPENDS+=	unzip-[0-9]*:../../archivers/unzip
 DEPENDS+=	unarj-[0-9]*:../../archivers/unarj
 DEPENDS+=	unrar-[0-9]*:../../archivers/unrar
 DEPENDS+=	xbin-[0-9]*:../../archivers/xbin
@@ -49,7 +48,7 @@ VIRUSMAILTO?=	security		# whom to notify about viruses
 GNU_CONFIGURE=	YES
 PLIST_SRC=	${PKGDIR}/PLIST
 
-USE_TOOLS+=	file perl:run
+USE_TOOLS+=	file perl:run unzip:run
 CONFIGURE_ENV+=	file=${TOOLS_FILE_CMD:Q}
 
 CONFIGURE_ENV+=	procmail="/usr/libexec/mail.local"

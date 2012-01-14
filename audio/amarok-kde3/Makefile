@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/11/21 19:49:19 shattered Exp $
+# $NetBSD: Makefile,v 1.14 2012/01/13 10:54:44 obache Exp $
 
 DISTNAME=		amarok-${VERSION}
 VERSION=		1.4.10
@@ -13,9 +13,7 @@ COMMENT=		KDE3 audio player
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-DEPENDS+=		unzip-[0-9]*:../../archivers/unzip
-
-USE_TOOLS+=		gmake pkg-config msgfmt
+USE_TOOLS+=		gmake pkg-config msgfmt unzip:run
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
