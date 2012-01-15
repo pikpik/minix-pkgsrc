@@ -9,6 +9,10 @@ ${RUBY_VENDORARCHLIB}/glib-enum-types.h
 ${RUBY_VENDORARCHLIB}/glib2.${RUBY_DLEXT}
 ${RUBY_VENDORARCHLIB}/rbgcompat.h
 ${RUBY_VENDORARCHLIB}/rbglib.h
+${RUBY_VENDORARCHLIB}/rbglib2conversions.h
+${RUBY_VENDORARCHLIB}/rbglibdeprecated.h
 ${RUBY_VENDORARCHLIB}/rbgobject.h
 ${RUBY_VENDORARCHLIB}/rbgutil.h
+${RUBY_VENDORARCHLIB}/rbgutil_list.h
+${RUBY_VENDORARCHLIB}/rbgutildeprecated.h
 ${RUBY_VENDORLIB}/mkmf-gnome2.rb
