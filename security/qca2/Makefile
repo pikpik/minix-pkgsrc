@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/11/01 06:02:30 sbd Exp $
+# $NetBSD: Makefile,v 1.19 2012/01/13 10:55:31 obache Exp $
 
 DISTNAME=	qca-2.0.3
 PKGNAME=	qca2-${DISTNAME:C/.*-//}
@@ -27,6 +27,7 @@ CONFIGURE_ARGS+=	--prefix=${QTDIR}
 CONFIGURE_ARGS+=	--qtdir=${QTDIR}
 CONFIGURE_ARGS+=	--disable-tests
 CONFIGURE_ARGS+=	--certstore-internal
+CONFIGURE_ARGS+=	--no-framework
 
 post-install:
 	${INSTALL_DATA} ${DESTDIR}${QTDIR}/lib/pkgconfig/qca2.pc ${DESTDIR}${PREFIX}/lib/pkgconfig/qca2.pc
