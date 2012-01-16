@@ -47,7 +47,7 @@ $NetBSD$
  if [ "$thread" = "auto" ]; then
      thread="no"
      case $SYS in
-@@ -872,7 +877,8 @@ fi
+@@ -872,10 +877,11 @@ fi
  cc_check "stdint.h" "" "uint32_t test_vec __attribute__ ((vector_size (16))) = {0,1,2,3};" && define HAVE_VECTOREXT
  
  if [ "$pic" = "yes" ] ; then
@@ -56,4 +56,8 @@ $NetBSD$
 +    PICFLAG="-prefer-pic"
      ASFLAGS="$ASFLAGS -DPIC"
      # resolve textrels in the x86 asm
-     cc_check stdio.h "-shared -Wl,-Bsymbolic" && SOFLAGS="$SOFLAGS -Wl,-Bsymbolic"
+-    cc_check stdio.h "-shared -Wl,-Bsymbolic" && SOFLAGS="$SOFLAGS -Wl,-Bsymbolic"
++    cc_check stdio.h "-Wl,-Bsymbolic" && LDFLAGS="$LDFLAGS -Wl,-Bsymbolic"
+     [ $SYS = SunOS -a "$ARCH" = "X86" ] && SOFLAGS="$SOFLAGS -mimpure-text"
+ fi
+ 
