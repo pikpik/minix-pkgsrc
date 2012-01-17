@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- plasma/generic/dataengines/rss/CMakeLists.txt.orig	2009-09-16 11:40:54.000000000 +0000
++++ plasma/generic/dataengines/rss/CMakeLists.txt
+@@ -2,6 +2,8 @@ find_package(Boost REQUIRED)
+ 
+ include_directories(${Boost_INCLUDE_DIR} ${KDEPIMLIBS_INCLUDE_DIR})
+ 
++add_definitions(${KDE4_ENABLE_EXCEPTIONS})
++
+ set(rss_engine_SRCS
+     rss.cpp
+ )
