@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/12/02 15:47:12 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2011/03/06 16:09:42 asau Exp $
 
 DISTNAME=	libev-4.04
 CATEGORIES=	devel
@@ -15,7 +15,7 @@ GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 #TEST_TARGET=	verify
 
-CONFIGURE_ARGS+=	--libdir=${PREFIX}/lib/ev
+GNU_CONFIGURE_LIBSUBDIR=ev
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/ev
 
 .include "../../mk/bsd.prefs.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2011/08/23 13:06:54 obache Exp $
+# $NetBSD: Makefile,v 1.29 2011/11/30 11:13:59 drochner Exp $
 
 DISTNAME=	lighttpd-1.4.29
 PKGREVISION=	2
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	# empty
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--libdir=${PREFIX}/lib/${PKGBASE}
+GNU_CONFIGURE_LIBSUBDIR=${PKGBASE}
 CONFIGURE_ARGS+=	--with-pcre
 
 DOCDIR=			${PREFIX}/share/doc/${PKGBASE}

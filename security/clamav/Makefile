@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/07/08 09:28:06 adam Exp $
+# $NetBSD: Makefile,v 1.5 2011/10/26 17:55:05 tez Exp $
 
 DISTNAME=	clamav-0.97.3
 CATEGORIES=	security
@@ -25,8 +25,9 @@ CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 # pkgsrc enforces a "secure" version of zlib, so don't let this check
 # bomb the build.
 CONFIGURE_ARGS+=	--disable-zlib-vcheck
-# avoid multiarch libdir on Darwin
-CONFIGURE_ARGS+=	--libdir=${PREFIX}/lib
+# XXX: avoid multiarch libdir on Darwin
+# XXX: should this be set in mk/platforms/Darwin.mk?
+GNU_CONFIGURE_LIBDIR=	${PREFIX}/lib
 
 CHECK_PORTABILITY_SKIP=	contrib/* unit_tests/*
 
