@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.45 2009/11/27 13:34:25 joerg Exp $
-#
+# $NetBSD: Makefile,v 1.46 2011/03/20 06:29:52 obache Exp $
 
 DISTNAME=	Linux-PAM-0.77
 PKGNAME=	${DISTNAME:S/Linux-//}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	http://www.kernel.org/pub/linux/libs/pam/pre/library/ \
 		ftp://ftp.kernel.org/pub/linux/libs/pam/pre/library/ \
