@@ -4,6 +4,7 @@
 # used by editors/emacs-nox11/Makefile
 
 DISTNAME=	emacs-${EMACS_VERSION}b
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_GNU:=emacs/}
 
