@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2011/12/22 07:56:18 marino Exp $
+# $NetBSD: Makefile,v 1.36 2012/01/14 02:09:37 hans Exp $
 #
 
-DISTNAME=	DVDStyler-1.8.2.1
-PKGREVISION=	4
+DISTNAME=	DVDStyler-2.1
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dvdstyler/}
 EXTRACT_SUFX=	.tar.bz2
@@ -34,6 +33,8 @@ post-install:
 .include "../../graphics/wxsvg/buildlink3.mk"
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../multimedia/mjpegtools/buildlink3.mk"
+# needs mediactrl
+BUILDLINK_API_DEPENDS.wxGTK28+= wxGTK28>=2.8.10nb14
 .include "../../x11/wxGTK28/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"
