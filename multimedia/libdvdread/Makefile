@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.19 2009/01/14 22:28:05 jmcneill Exp $
+# $NetBSD: Makefile,v 1.20 2011/08/09 20:53:15 adam Exp $
 
-DISTNAME=	libdvdread-4.1.3
-PKGREVISION=	1
+DISTNAME=	libdvdread-4.2.0
 CATEGORIES=	multimedia
-MASTER_SITES=	http://www.mplayerhq.hu/MPlayer/releases/dvdnav/
+MASTER_SITES=	http://dvdnav.mplayerhq.hu/releases/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.mplayerhq.hu/
+HOMEPAGE=	http://dvdnav.mplayerhq.hu/
 COMMENT=	DVD access library
 LICENSE=	gnu-gpl-v2
 
