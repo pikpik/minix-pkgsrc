@@ -35,6 +35,7 @@ share/gtk-doc/html/flickcurl/flickcurl-section-category.html
 share/gtk-doc/html/flickcurl/flickcurl-section-collections.html
 share/gtk-doc/html/flickcurl/flickcurl-section-comment.html
 share/gtk-doc/html/flickcurl/flickcurl-section-commons.html
+share/gtk-doc/html/flickcurl/flickcurl-section-config.html
 share/gtk-doc/html/flickcurl/flickcurl-section-contact.html
 share/gtk-doc/html/flickcurl/flickcurl-section-context.html
 share/gtk-doc/html/flickcurl/flickcurl-section-core.html
@@ -63,7 +64,6 @@ share/gtk-doc/html/flickcurl/flickcurl-section-test.html
 share/gtk-doc/html/flickcurl/flickcurl-section-upload.html
 share/gtk-doc/html/flickcurl/flickcurl-section-urls.html
 share/gtk-doc/html/flickcurl/flickcurl-section-video.html
-share/gtk-doc/html/flickcurl/flickcurl.devhelp
 share/gtk-doc/html/flickcurl/flickcurl.devhelp2
 share/gtk-doc/html/flickcurl/home.png
 share/gtk-doc/html/flickcurl/index.html
