@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2009/05/01 13:21:51 zafer Exp $
+# $NetBSD: Makefile,v 1.34 2010/02/11 23:14:14 joerg Exp $
 
 DISTNAME=	wu-ftpd-2.6.2
 PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	ftp://mirror.aarnet.edu.au/pub/wu-ftpd/wu-ftpd/ \
-		http://mirror.aarnet.edu.au/pub/wu-ftpd/wu-ftpd/ \
-		ftp://ftp.tuwien.ac.at/infosys/servers/ftp/wu-ftpd/wu-ftpd/ \
 		http://gd.tuwien.ac.at/infosys/servers/ftp/wu-ftpd/wu-ftpd/ \
 		ftp://ftp.freenet.de/pub/ftp.wu-ftpd.org/pub/wu-ftpd/ \
 		ftp://ftp.nl.uu.net/pub/unix/ftp/wu-ftpd/ \
