@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.604 2012/01/08 02:29:17 schmonz Exp $
+# $NetBSD: Makefile,v 1.605 2012/01/11 04:32:48 schmonz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -50,6 +50,7 @@ SUBDIR+=	cawf
 SUBDIR+=	cdif
 SUBDIR+=	chasen
 SUBDIR+=	chasen-base
+SUBDIR+=	cmigemo
 SUBDIR+=	coccigrep
 SUBDIR+=	convertlit
 SUBDIR+=	crimson
