@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2011/11/01 06:03:02 sbd Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2012/01/13 10:55:49 obache Exp $
 
 BUILDLINK_TREE+=	kdelibs
 
@@ -10,6 +10,7 @@ BUILDLINK_ABI_DEPENDS.kdelibs?=	kdelibs4>=4.5.5nb9
 BUILDLINK_PKGSRCDIR.kdelibs?=	../../x11/kdelibs4
 
 .include "../../archivers/bzip2/buildlink3.mk"
+.include "../../devel/libdbusmenu-qt/buildlink3.mk"
 .include "../../databases/shared-mime-info/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
