@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2011/08/16 22:03:34 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.13 2011/11/01 06:03:04 sbd Exp $
 
-DISTNAME=	Alien-wxWidgets-0.52
+DISTNAME=	Alien-wxWidgets-0.54
 PKGNAME=	p5-${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	x11 perl5
