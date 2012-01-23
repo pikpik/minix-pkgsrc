@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/08/14 15:14:13 obache Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2012/01/08 02:27:48 schmonz Exp $
 #
 
 DISTNAME=		Text-Markdown-Discount-0.02
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Markdown/Discount/.packlist
 USE_LANGUAGES=		c
+
+MAKE_JOBS_SAFE=		no
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
