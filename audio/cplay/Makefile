@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/02/10 19:17:32 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/01/23 12:01:43 obache Exp $
 
 DISTNAME=		cplay-1.49
 PKGREVISION=		4
@@ -18,6 +18,7 @@ PYTHON_PATCH_SCRIPTS=	cplay
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt
+USE_LANGUAGES=		# none
 
 PKGLOCALES=		da de hu pl
 EGDIR=			${PREFIX}/share/examples/cplay
