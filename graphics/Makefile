@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.621 2011/12/05 17:35:46 joerg Exp $
+# $NetBSD: Makefile,v 1.622 2011/12/09 21:56:39 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
 
+SUBDIR+=	AfterShotPro
 SUBDIR+=	CRWInfo
 SUBDIR+=	Cenon
 SUBDIR+=	Coin
