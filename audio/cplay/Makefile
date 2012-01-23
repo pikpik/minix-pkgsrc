@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/07/27 08:44:30 obache Exp $
+# $NetBSD: Makefile,v 1.13 2010/02/10 19:17:32 joerg Exp $
 
 DISTNAME=		cplay-1.49
 PKGREVISION=		4
@@ -8,6 +8,9 @@ MASTER_SITES=		# ${HOMEPAGE}
 MAINTAINER=		ghen@NetBSD.org
 HOMEPAGE=		http://mask.tf.hut.fi/~flu/hacks/cplay/
 COMMENT=		Curses front-end for various audio players
+LICENSE=		gnu-gpl-v2
+
+DEPENDS+=		${PYPKGPREFIX}-curses-[0-9]*:../../devel/py-curses
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -46,5 +49,4 @@ do-install:
 .endfor
 
 .include "../../lang/python/application.mk"
-.include "../../devel/py-curses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
