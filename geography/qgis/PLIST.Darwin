@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/qgis/plugins/libogrconverterplugin.so
+lib/qgis/plugins/libquickprintplugin.so
