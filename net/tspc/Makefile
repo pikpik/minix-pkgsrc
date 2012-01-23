@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2008/01/04 14:40:15 ghen Exp $
+# $NetBSD: Makefile,v 1.17 2008/02/28 11:58:48 rillig Exp $
 
 DISTNAME=		tspc-2.1.1-src
 PKGNAME=		${DISTNAME:S/-src//}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		http://www.hexago.com/files/
 EXTRACT_SUFX=		.tgz
