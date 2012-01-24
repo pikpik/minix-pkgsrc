@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/04/22 13:43:03 obache Exp $
+# $NetBSD: Makefile,v 1.19 2011/11/01 06:00:44 sbd Exp $
 #
 
 DISTNAME=	gsmc-1.1
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	gmake pkg-config
+
+LDFLAGS.DragonFly=	-lm
 
 .include "../../x11/gtk2/buildlink3.mk"
 
