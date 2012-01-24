@@ -1,3 +1,4 @@
 @comment $NetBSD$
 bin/mailqs
 bin/rmmq
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
