@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/04/05 18:35:46 drochner Exp $
+# $NetBSD: Makefile,v 1.16 2011/04/22 13:43:08 obache Exp $
 #
 
 DISTNAME=	telepathy-idle-0.1.8
@@ -18,6 +18,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake pkg-config
+
+LDFLAGS.DragonFly=	-lcrypto
 
 CONFIGURE_ARGS+=	OPENSSL_CFLAGS=-I${BUILDLINK_PREFIX.openssl}/include
 CONFIGURE_ARGS+=	OPENSSL_LIBS="-L${BUILDLINK_PREFIX.openssl}/lib ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.openssl}/lib -lssl"
