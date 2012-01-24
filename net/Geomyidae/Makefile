@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2008/08/12 14:59:44 reed Exp $
 #
 
 DISTNAME=	Geomyidae-0.12
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.r-36.net/
 EXTRACT_SUFX=	.tgz
