@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/01/13 10:54:45 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/01/24 09:10:56 sbd Exp $
 #
 
 DISTNAME=	jack-rack-1.4.7
@@ -23,6 +23,7 @@ CONFIGURE_ARGS+=	--disable-lash
 
 BUILD_DEFS+=		LADSPA_PLUGIN_PATH
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
+LDFLAGS.DragonFly=	-lm
 ###
 ### NOTE: this is a colon-delimited list like e.g. PATH.
 ###
