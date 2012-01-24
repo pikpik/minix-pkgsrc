@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/05/21 17:23:28 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2011/11/16 01:33:15 sbd Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -9,6 +9,7 @@ PKGREVISION=		13
 COMMENT=		Capture X display to individual frames or MPEG video
 
 CONFIGURE_ARGS+=	--without-gtk2
+LDFLAGS.DragonFly=	-lXt -lX11
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
