@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2011/11/01 06:11:52 sbd Exp $
+# $NetBSD: Makefile,v 1.63 2012/01/13 10:54:48 obache Exp $
 #
 
 DISTNAME=		snd-9.9
@@ -23,6 +23,7 @@ USE_TOOLS+=		gmake msgfmt pkg-config
 BUILD_TARGET=		snd
 MAKE_FILE=		makefile
 WRKSRC=			${WRKDIR}/snd-9
+LDFLAGS.DragonFly=	-lX11
 
 INSTALLATION_DIRS=	${PKGLOCALEDIR}/locale/de/LC_MESSAGES
 INSTALL_MAKE_FLAGS+=	localedir=${DESTDIR}${PREFIX}/${PKGLOCALEDIR}/locale
