@@ -1,6 +1,8 @@
 $NetBSD$
 
---- tftpyale.h.orig	1995-03-20 21:19:10.000000000 +0100
+A number of changes to make this build with no warnings under -Wall.
+
+--- tftpyale.h.orig	1995-03-20 20:19:10.000000000 +0000
 +++ tftpyale.h
 @@ -24,6 +24,10 @@ extern int	dfltDebugLevel;
  #include <stdlib.h>
