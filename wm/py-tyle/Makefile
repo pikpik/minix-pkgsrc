@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/23 09:33:25 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/01/25 12:34:30 obache Exp $
 #
 
 DISTNAME=	pytyle-0.7.5
@@ -15,6 +15,8 @@ LICENSE=	gnu-gpl-v3
 DEPENDS+=	${PYPKGPREFIX}-Xlib-[0-9]*:../../x11/py-Xlib
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_LANGUAGES=	#none
 
 PYTHON_VERSIONS_INCOMPATIBLE=	24 25 31
 
