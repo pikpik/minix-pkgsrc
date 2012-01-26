@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/01/11 17:51:21 hans Exp $
+# $NetBSD: Makefile,v 1.20 2012/01/17 21:43:18 sbd Exp $
 #
 
 DISTNAME=	jack-audio-connection-kit-${JACK_VERSION}
@@ -20,6 +20,7 @@ BUILD_DEFS+=		JACKD_DEFAULT_TMPDIR
 BUILD_DEFS+=		JACKD_PROCFS_PATH
 
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes
 
