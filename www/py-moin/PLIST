@@ -2508,6 +2508,7 @@ ${PYSITELIB}/jabberbot/xmlrpcbot.pyo
 ${PYSITELIB}/jabberbot/xmppbot.py
 ${PYSITELIB}/jabberbot/xmppbot.pyc
 ${PYSITELIB}/jabberbot/xmppbot.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 share/moin/config/logging/README
 share/moin/config/logging/logfile
 share/moin/config/logging/logfile_debug_auth
