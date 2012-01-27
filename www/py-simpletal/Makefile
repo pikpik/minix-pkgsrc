@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/09/04 16:53:58 epg Exp $
+# $NetBSD: Makefile,v 1.2 2011/10/15 10:54:25 obache Exp $
 
 DISTNAME=	SimpleTAL-4.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -12,6 +12,8 @@ COMMENT=	Stand alone implementation of the Zope TAL
 LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_LANGUAGES=	#none
 
 do-test:
 	${PYTHONBIN} ${WRKSRC}/runtests.py
