@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2011/12/03 03:44:54 sbd Exp $
+# $NetBSD: Makefile,v 1.15 2012/01/10 01:03:59 schmonz Exp $
 #
 
 DISTNAME=		xapian-omega-1.2.8
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		http://oligarchy.co.uk/xapian/1.2.8/
 
@@ -44,6 +45,7 @@ INSTALL_MAKE_FLAGS+=	${MAKE_FLAGS} sysconfdir=${EGDIR:Q}
 
 BUILD_DEFS+=		VARBASE
 
+.include "../../sysutils/file/buildlink3.mk"
 .include "../../textproc/xapian/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
