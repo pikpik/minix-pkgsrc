@@ -41,6 +41,7 @@ ${PYSITELIB}/atom/token_store.pyo
 ${PYSITELIB}/atom/url.py
 ${PYSITELIB}/atom/url.pyc
 ${PYSITELIB}/atom/url.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/gdata/Crypto/Cipher/__init__.py
 ${PYSITELIB}/gdata/Crypto/Cipher/__init__.pyc
 ${PYSITELIB}/gdata/Crypto/Cipher/__init__.pyo
