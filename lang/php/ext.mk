@@ -1,4 +1,4 @@
-# $NetBSD: ext.mk,v 1.23 2011/12/17 13:46:27 obache Exp $
+# $NetBSD: ext.mk,v 1.24 2012/01/12 18:25:50 joerg Exp $
 #
 # PHP extension package framework, for both PECL and bundled PHP extensions.
 #
@@ -35,6 +35,7 @@ WRKSRC?=		${WRKDIR}/${EXTRACT_ELEMENTS}
 DISTINFO_FILE=		${.CURDIR}/${PHPPKGSRCDIR}/distinfo
 .else
 # PECL extension
+# WARINING: following fixed version number for 5.2 and 5.3 must not be bumped!
 .if defined(PECL_LEGACY_VERSION_SCHEME) && \
 	(${PKG_PHP_VERSION} == "5" || ${PKG_PHP_VERSION} == "53")
 . if ${PKG_PHP_VERSION} == "5"
