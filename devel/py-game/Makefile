@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/12/10 14:43:37 obache Exp $
+# $NetBSD: Makefile,v 1.25 2012/01/28 11:00:52 wiz Exp $
 #
 
 DISTNAME=		pygame-1.8.1release
@@ -37,6 +37,8 @@ CFLAGS+=	-no-integrated-as
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../devel/SDL_ttf/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../lang/python/distutils.mk"
 .include "../../multimedia/smpeg/buildlink3.mk"
 
