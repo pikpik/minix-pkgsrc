@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.9 2007/07/25 23:31:08 wiz Exp $
+@comment $NetBSD$
 bin/sdl-config
 include/SDL/SDL.h
 include/SDL/SDL_active.h
@@ -33,7 +33,7 @@ include/SDL/SDL_video.h
 include/SDL/begin_code.h
 include/SDL/close_code.h
 lib/libSDL.la
-lib/libSDLmain.a
+lib/libSDLmain.la
 lib/pkgconfig/sdl.pc
 man/man3/SDLKey.3
 man/man3/SDL_ActiveEvent.3
