@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2009/09/11 11:51:52 gson Exp $
+@comment $NetBSD$
 bin/anita
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/anita.py
 ${PYSITELIB}/anita.pyc
 ${PYSITELIB}/anita.pyo
