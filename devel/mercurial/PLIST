@@ -177,6 +177,7 @@ ${PYSITELIB}/hgext/zeroconf/Zeroconf.pyo
 ${PYSITELIB}/hgext/zeroconf/__init__.py
 ${PYSITELIB}/hgext/zeroconf/__init__.pyc
 ${PYSITELIB}/hgext/zeroconf/__init__.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/mercurial/__init__.py
 ${PYSITELIB}/mercurial/__init__.pyc
 ${PYSITELIB}/mercurial/__init__.pyo
