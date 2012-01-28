@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/04/22 13:45:02 obache Exp $
+# $NetBSD: Makefile,v 1.11 2011/11/01 06:02:49 sbd Exp $
 #
 
 DISTNAME=	ftmenu-0.3
@@ -14,6 +14,7 @@ COMMENT=	Fluxbox Tray Menu
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
+LDFLAGS.DragonFly=	-lX11
 
 #XXX: Not using C++, but configure require it.
 USE_LANGUAGES+=	c c++
