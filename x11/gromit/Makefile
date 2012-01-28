@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/04/22 13:45:03 obache Exp $
+# $NetBSD: Makefile,v 1.18 2011/11/01 06:02:51 sbd Exp $
 #
 
 DISTNAME=		gromit-20041213
@@ -15,7 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		pkg-config
 INSTALLATION_DIRS=	bin
 
-LDFLAGS+=	${X11_LDFLAGS} -lX11
+LDFLAGS+=		${X11_LDFLAGS} -lX11
+LDFLAGS.DragonFly=	-lm
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gromit ${DESTDIR}${PREFIX}/bin
