@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/04/22 13:43:28 obache Exp $
+# $NetBSD: Makefile,v 1.6 2011/11/01 06:01:08 sbd Exp $
 
 DISTNAME=	xournal-0.4.5
 PKGREVISION=	4
@@ -16,6 +16,8 @@ USE_LANGUAGES=	c
 USE_TOOLS+=	pkg-config msgfmt
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+LDFLAGS.DragonFly=	-lX11 -lz -lm
 
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../print/poppler-glib/buildlink3.mk"
