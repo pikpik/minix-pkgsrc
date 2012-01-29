@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2011/04/22 13:44:46 obache Exp $
+# $NetBSD: Makefile,v 1.37 2011/11/01 06:02:37 sbd Exp $
 
 DISTNAME=	xfe-1.04
 PKGREVISION=	6
@@ -16,6 +16,7 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt
 GNU_CONFIGURE=		yes
 
+LDFLAGS.DragonFly=	-lXft -lX11
 PTHREAD_AUTO_VARS=	yes
 
 SUBST_CLASSES+=		conf
