@@ -1,6 +1,5 @@
-$NetBSD$
+$NetBSD: patch-at,v 1.1 2009/09/22 14:48:47 asau Exp $
 
-NetBSD has POSIX signals since 2.0 at least.
 Don't unpack archive, since it is hard to fix,
 unpack before patch phase instead.
 
