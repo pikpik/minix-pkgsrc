@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/04/22 13:44:43 obache Exp $
+# $NetBSD: Makefile,v 1.25 2011/10/02 01:20:55 dholland Exp $
 #
 
 DISTNAME=	gtoaster1.0Beta5
@@ -20,6 +20,8 @@ USE_TOOLS+=		gmake
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--with-oss --without-esd
 CONFIGURE_ARGS+=	--without-gnome --without-orbit
+
+LDFLAGS.DragonFly=	-lintl
 
 SUBST_CLASSES+=		paths
 SUBST_FILES.paths=	audio_oss.c
