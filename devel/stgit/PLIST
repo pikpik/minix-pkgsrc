@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2008/04/10 12:11:34 bjs Exp $
+@comment $NetBSD$
 bin/stg
 bin/stg-cvs
 bin/stg-dispatch
@@ -11,6 +11,7 @@ bin/stg-show-old
 bin/stg-swallow
 bin/stg-unnew
 bin/stg-whatchanged
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/stgit/__init__.py
 ${PYSITELIB}/stgit/__init__.pyc
 ${PYSITELIB}/stgit/__init__.pyo
