@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2011/04/22 13:44:32 obache Exp $
+# $NetBSD: Makefile,v 1.34 2011/05/28 11:32:03 obache Exp $
 
 DISTNAME=	xdvik-${XDVIK_ORIGINAL_VERS}
 PKGNAME=	ja-vfxdvik-${XDVIK_ORIGINAL_VERS}.${XDVIK_JP_PATCH_VERS}
@@ -29,6 +29,7 @@ USE_TOOLS+=		gmake
 USE_LIBTOOL=		YES
 LIBTOOL_OVERRIDE=	klibtool
 GNU_CONFIGURE=		YES
+LDFLAGS.DragonFly=	-lm
 CONFIGURE_ARGS+=--enable-local-texmf=${PREFIX}/share/texmf-dist \
 		--without-texinfo \
 		--without-dialog \
