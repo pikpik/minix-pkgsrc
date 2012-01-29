@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1554 2012/01/23 21:42:49 pettai Exp $
+# $NetBSD: Makefile,v 1.1555 2012/01/29 13:25:20 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -425,6 +425,7 @@ SUBDIR+=	lua-lrexlib-posix
 SUBDIR+=	lua-mode
 SUBDIR+=	lua-stdlib
 SUBDIR+=	lua-stdlib-doc
+SUBDIR+=	lutok
 SUBDIR+=	lwp
 SUBDIR+=	m17n-lib
 SUBDIR+=	m4
