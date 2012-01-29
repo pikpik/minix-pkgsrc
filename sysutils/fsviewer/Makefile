@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/04/22 13:44:41 obache Exp $
+# $NetBSD: Makefile,v 1.31 2011/11/01 06:02:32 sbd Exp $
 
 DISTNAME=	FSViewer.app-0.2.5
 PKGNAME=	FSViewer-0.2.5
@@ -19,6 +19,8 @@ COMMENT=	NextStep-like Filemanager for WindowMaker
 USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
+
+LDFLAGS.DragonFly=	-lintl
 
 .include "../../mk/bsd.prefs.mk"
 
