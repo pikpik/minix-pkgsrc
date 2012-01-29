@@ -29,7 +29,7 @@ MESSAGE_SUBST+=		GCC_PREFIX=${GCC_PREFIX}
 # To avoid GNU surprises
 CONFIG_SHELL=		${TOOLS_PATH.bash}
 
-NOT_FOR_PLATFORM=	Interix-*-*
+NOT_FOR_PLATFORM=	Interix-*-* DragonFly-*-*
 UNLIMIT_RESOURCES+=	datasize
 UNLIMIT_RESOURCES+=	stacksize
 
