@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${PLIST.winbind}lib/nss_winbind.${LIBEXT}.0
