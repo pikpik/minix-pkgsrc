@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1555 2012/01/29 13:25:20 obache Exp $
+# $NetBSD: Makefile,v 1.1556 2012/01/29 21:00:43 jmmv Exp $
 #
 
 COMMENT=	Development utilities
@@ -595,7 +595,6 @@ SUBDIR+=	p5-Class-WhiteHole
 SUBDIR+=	p5-Class-XML
 SUBDIR+=	p5-Class-XPath
 SUBDIR+=	p5-Class-XSAccessor
-SUBDIR+=	p5-Class-XSAccessor-Array
 SUBDIR+=	p5-Clone
 SUBDIR+=	p5-Clone-Fast
 SUBDIR+=	p5-Clone-PP
