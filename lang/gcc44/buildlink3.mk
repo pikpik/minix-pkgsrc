@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2011/04/22 13:41:57 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.6 2011/07/14 19:54:55 hans Exp $
 
 BUILDLINK_TREE+=	gcc44
 
@@ -46,8 +46,7 @@ BUILDLINK_INCDIRS.gcc44+=	${_GCC44_SUBDIR}/include ${gcc44_GCC_ARCHDIR:S/^${BUIL
 
 BUILDLINK_FILES_CMD.gcc44=	\
 	(cd  ${BUILDLINK_PREFIX.gcc44} &&	\
-	${FIND} ${_GCC44_SUBDIR}/bin ${_GCC44_SUBDIR}/libexec ${_GCC44_SUBDIR}/lib \( -type f -o -type l \) -print)
-BUILDLINK_FNAME_TRANSFORM.gcc44=	-e s:buildlink:buildlink/gcc44:
+	${FIND} ${_GCC44_SUBDIR}/bin ${_GCC44_SUBDIR}/include ${_GCC44_SUBDIR}/libexec ${_GCC44_SUBDIR}/lib \( -type f -o -type l \) -print)
 
 # When not using the GNU linker, gcc will always link shared libraries
 # against the shared version of libgcc. Always enable _USE_GCC_SHILB on
