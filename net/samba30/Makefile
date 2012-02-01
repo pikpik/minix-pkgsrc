@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/12/15 22:23:23 asau Exp $
+# $NetBSD: Makefile,v 1.2 2011/12/15 22:59:28 asau Exp $
 
 .include "../../net/samba/Makefile.mirrors"
 
@@ -70,7 +70,7 @@ USE_GNU_READLINE=	yes
 .include "../../devel/readline/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-readline=${BUILDLINK_PREFIX.readline}
 
-.include "../../net/samba/options.mk"
+.include "../../net/samba33/options.mk"
 
 # Only Linux supports mount.cifs for mounting a CIFS share into the
 # filesystem.
