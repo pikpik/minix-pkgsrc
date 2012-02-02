@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.107 2012/01/24 12:01:13 obache Exp $
+# $NetBSD: Makefile,v 1.108 2012/01/24 12:02:41 obache Exp $
 
-DISTNAME=	getmail-4.24.0
-PKGREVISION=	1
+DISTNAME=	getmail-4.25.0
 CATEGORIES=	mail
 MASTER_SITES=	${HOMEPAGE}old-versions/
 
