@@ -6,7 +6,7 @@ CATEGORIES=	minix
 MASTER_SITES=	http://www.minix3.org/distfiles-minix/
 SVNREV=		125950
 DISTNAME=	llvm-clang-r${SVNREV}
-PKGREVISION=	4
+PKGREVISION=	5
 
 # Avoid dependency on lang/gcc44
 MINIX_GCC_NODEP=yes

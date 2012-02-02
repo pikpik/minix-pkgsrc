@@ -10,6 +10,6 @@ SHA1 (patch-lib_Support_Unix_Unix.h) = b8e5b34068a18393fb9c47dcb9005bf46f11f003
 SHA1 (patch-lib_Support_raw__ostream.cpp) = dd18e26f1acb15a9031ad5299d2018feace3f95a
 SHA1 (patch-lib_Transforms_Makefile) = 677f016d0b5d2254ae6de34c92db3f428844b7c3
 SHA1 (patch-runtime_libprofile_CMakeLists.txt) = a698b61595c693711289499ff58c3d9bb96ff563
-SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 223ab86cffcd42afc3b3b79826903cbcb0fe6e12
+SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 7d91632bf92318077b315b307f378ac133af3f55
 SHA1 (patch-tools_clang_lib_Frontend_InitHeaderSearch.cpp) = a7c3046578cce3710fbcf798b5fbc39d867d0372
 SHA1 (patch-utils_lit_lit_main.py) = 2453c537143070b52ae0804dd9468e92b38da394

@@ -1,7 +1,7 @@
 $NetBSD$
 
---- tools/clang/lib/Driver/Tools.cpp.orig	Fri Feb 18 17:53:10 2011
-+++ tools/clang/lib/Driver/Tools.cpp
+--- /usr/tmp/work/minix/clang29/work/llvm/tools/clang/lib/Driver/Tools.cpp.orig	Fri Feb 18 17:53:10 2011
++++ /usr/tmp/work/minix/clang29/work/llvm/tools/clang/lib/Driver/Tools.cpp
 @@ -2892,7 +2892,7 @@ void auroraux::Assemble::ConstructJob(Compilation &C, 
    }
  
@@ -40,34 +40,36 @@ $NetBSD$
  
    Args.AddAllArgs(CmdArgs, options::OPT_L);
    Args.AddAllArgs(CmdArgs, options::OPT_T_Group);
-@@ -3694,25 +3701,21 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -3694,25 +3701,23 @@ void minix::Link::ConstructJob(Compilation &C, const J
        getToolChain().AddCXXStdlibLibArgs(Args, CmdArgs);
        CmdArgs.push_back("-lm");
      }
-+  }
- 
-+  if (!Args.hasArg(options::OPT_nostdlib) &&
-+      !Args.hasArg(options::OPT_nostartfiles)) {
-     if (Args.hasArg(options::OPT_pthread))
-       CmdArgs.push_back("-lpthread");
-     CmdArgs.push_back("-lc");
+-
+-    if (Args.hasArg(options::OPT_pthread))
+-      CmdArgs.push_back("-lpthread");
+-    CmdArgs.push_back("-lc");
 -    CmdArgs.push_back("-lgcc");
 -    CmdArgs.push_back("-L/usr/gnu/lib");
 -    // FIXME: fill in the correct search path for the final
 -    // support libraries.
 -    CmdArgs.push_back("-L/usr/gnu/lib/gcc/i686-pc-minix/4.4.3");
-+    CmdArgs.push_back("-lCompilerRT-Generic");
-+    CmdArgs.push_back("-L/usr/pkg/compiler-rt/lib");
-+    CmdArgs.push_back(
-+	 Args.MakeArgString(getToolChain().GetFilePath("crtend.o")));
    }
  
--  if (!Args.hasArg(options::OPT_nostdlib) &&
--      !Args.hasArg(options::OPT_nostartfiles)) {
+   if (!Args.hasArg(options::OPT_nostdlib) &&
+       !Args.hasArg(options::OPT_nostartfiles)) {
 -    CmdArgs.push_back(Args.MakeArgString(getToolChain().GetFilePath(
 -                                              "/usr/gnu/lib/libend.a")));
--  }
--
++      if(!Args.hasArg(options::OPT_nodefaultlibs)) {
++       if (Args.hasArg(options::OPT_pthread))
++         CmdArgs.push_back("-lpthread");
++       CmdArgs.push_back("-lc");
++       CmdArgs.push_back("-lCompilerRT-Generic");
++       CmdArgs.push_back("-L/usr/pkg/compiler-rt/lib");
++      }
++      CmdArgs.push_back(
++   	 Args.MakeArgString(getToolChain().GetFilePath("crtend.o")));
+   }
+ 
    const char *Exec =
 -    Args.MakeArgString(getToolChain().GetProgramPath("/usr/gnu/bin/gld"));
 +    Args.MakeArgString(getToolChain().GetProgramPath("/usr/pkg/bin/ld"));
