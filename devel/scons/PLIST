@@ -566,6 +566,7 @@ lib/${PKGNAME}/SCons/dblite.pyo
 lib/${PKGNAME}/SCons/exitfuncs.py
 lib/${PKGNAME}/SCons/exitfuncs.pyc
 lib/${PKGNAME}/SCons/exitfuncs.pyo
+${PLIST.eggfile}lib/${PKGNAME}/${EGG_FILE}
 man/man1/scons-time.1
 man/man1/scons.1
 man/man1/sconsign.1
