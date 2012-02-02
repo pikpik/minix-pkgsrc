@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/08/21 16:36:59 seb Exp $
+# $NetBSD: Makefile,v 1.8 2011/08/14 16:06:03 obache Exp $
 
 DISTNAME=	LWP-Authen-Negotiate-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -20,7 +20,7 @@ DEPENDS+=	{perl>=5.10,p5-MIME-Base64>=2.12}:../../converters/p5-MIME-Base64
 PERL5_PACKLIST=		auto/LWP/Authen/Negotiate/.packlist
 
 pre-configure:
-	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM}
+	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM} -f
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

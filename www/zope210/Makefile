@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/05/14 02:56:33 taca Exp $
+# $NetBSD: Makefile,v 1.11 2011/11/11 18:46:58 joerg Exp $
 # FreeBSD Id: ports/www/zope29/Makefile,v 1.86 2006/08/03 15:53:04 garga Exp
 
 DISTNAME=	Zope-${ZOPE210_VERSION}-final
@@ -82,7 +82,7 @@ post-build:
 
 pre-install:
 	${FIND} ${WRKSRC} \( -name '*.orig' -o -name svn-commit.tmp \) \
-		-print | ${XARGS} -- ${RM}
+		-print | ${XARGS} -- ${RM} -f
 
 post-install:
 	cd ${WRKSRC}/doc/ZEO; pax -rw *.txt ${DESTDIR}${ZOPE_DOC_DIR}/zeo

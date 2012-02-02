@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2011/08/14 16:06:09 obache Exp $
+# $NetBSD: Makefile,v 1.36 2012/01/22 19:38:54 abs Exp $
 
 DISTNAME=	Template-Toolkit-2.23
 PKGNAME=	p5-${DISTNAME}
@@ -24,7 +24,7 @@ MAKE_PARAMS=	TT_ACCEPT=y
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 pre-configure:
-	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM}
+	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM} -f
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

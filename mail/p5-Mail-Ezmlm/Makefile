@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/08/21 16:35:06 seb Exp $
+# $NetBSD: Makefile,v 1.9 2011/08/14 13:25:26 obache Exp $
 #
 
 DISTNAME=		Ezmlm-0.07.2
@@ -30,7 +30,7 @@ PERL5_PACKLIST=		auto/Mail/Ezmlm/.packlist
 BUILD_DEFS+=		QMAILDIR
 
 pre-configure:
-	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM}
+	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM} -f
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
