@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.185 2011/11/03 18:17:11 abs Exp $
+# $NetBSD: Makefile,v 1.186 2012/02/02 07:46:51 jnemeth Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -131,6 +131,7 @@ SUBDIR+=	replex
 SUBDIR+=	ruby-clutter-gst
 SUBDIR+=	ruby-gnome2-gstreamer
 SUBDIR+=	ruby-ming
+SUBDIR+=	schroedinger
 SUBDIR+=	smpeg
 SUBDIR+=	subtitleeditor
 SUBDIR+=	swfdec
