@@ -1,10 +1,11 @@
-@comment $NetBSD: PLIST,v 1.16 2011/07/17 02:24:13 dholland Exp $
+@comment $NetBSD$
 bin/roundup-admin
 bin/roundup-demo
 bin/roundup-gettext
 bin/roundup-mailgw
 bin/roundup-server
 bin/roundup-xmlrpc-server
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/roundup/__init__.py
 ${PYSITELIB}/roundup/__init__.pyc
 ${PYSITELIB}/roundup/__init__.pyo
