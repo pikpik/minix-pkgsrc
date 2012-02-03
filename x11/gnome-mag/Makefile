@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2011/11/01 06:02:50 sbd Exp $
+# $NetBSD: Makefile,v 1.63 2012/01/31 11:59:11 obache Exp $
 #
 
 DISTNAME=		gnome-mag-0.16.3
@@ -33,6 +33,7 @@ PY_PATCHPLIST=	yes
 .include "../../devel/py-gobject/buildlink3.mk"
 .include "../../x11/py-gtk2/buildlink3.mk"
 .include "../../x11/py-gnome2/buildlink3.mk"
+.include "../../x11/py-gnome2-desktop/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../lang/python/extension.mk"
