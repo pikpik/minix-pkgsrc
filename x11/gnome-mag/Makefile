@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2012/01/31 11:59:11 obache Exp $
+# $NetBSD: Makefile,v 1.64 2012/02/03 01:51:55 sbd Exp $
 #
 
 DISTNAME=		gnome-mag-0.16.3
@@ -27,13 +27,13 @@ SUBST_FILES.doxy=	docs/Makefile.in
 SUBST_SED.doxy=		-e 's,SUBDIRS = reference,SUBDIRS =,'
 
 # for colorblind applet
+DEPENDS+=	${PYPKGPREFIX}-gnome2-desktop-[0-9]*:../../x11/py-gnome2-desktop
 REPLACE_PYTHON=	colorblind/colorblind-applet.py
 PY_PATCHPLIST=	yes
 .include "../../misc/colorblind/buildlink3.mk"
 .include "../../devel/py-gobject/buildlink3.mk"
 .include "../../x11/py-gtk2/buildlink3.mk"
 .include "../../x11/py-gnome2/buildlink3.mk"
-.include "../../x11/py-gnome2-desktop/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../lang/python/extension.mk"
