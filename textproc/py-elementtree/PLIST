@@ -1,7 +1,5 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2005/07/21 12:13:29 wiz Exp $
-${PYSITELIB}/elementtree/__init__.py
-${PYSITELIB}/elementtree/__init__.pyc
-${PYSITELIB}/elementtree/__init__.pyo
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/elementtree/ElementInclude.py
 ${PYSITELIB}/elementtree/ElementInclude.pyc
 ${PYSITELIB}/elementtree/ElementInclude.pyo
@@ -32,3 +30,6 @@ ${PYSITELIB}/elementtree/TidyTools.pyo
 ${PYSITELIB}/elementtree/XMLTreeBuilder.py
 ${PYSITELIB}/elementtree/XMLTreeBuilder.pyc
 ${PYSITELIB}/elementtree/XMLTreeBuilder.pyo
+${PYSITELIB}/elementtree/__init__.py
+${PYSITELIB}/elementtree/__init__.pyc
+${PYSITELIB}/elementtree/__init__.pyo
