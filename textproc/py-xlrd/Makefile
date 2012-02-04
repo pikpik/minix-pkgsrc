@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/08/05 12:18:06 obache Exp $
 #
 
 DISTNAME=		xlrd-0.7.1
@@ -13,7 +13,7 @@ LICENSE=		modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYDISTUTILSPKG=		yes
+USE_LANGUAGES=		#none
 
 .include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"
