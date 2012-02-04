@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/11/01 06:00:38 sbd Exp $
+# $NetBSD: Makefile,v 1.25 2012/01/13 10:54:45 obache Exp $
 #
 
 DISTNAME=		kid3-1.6
@@ -13,6 +13,7 @@ COMMENT=		ID3 tagger for KDE 3
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		msgfmt
