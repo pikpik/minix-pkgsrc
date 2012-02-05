@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/02/04 06:45:33 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/04 10:24:37 obache Exp $
 #
 
 DISTNAME=	bml-0.5.0
@@ -28,8 +28,8 @@ LDFLAGS+=	-li386			# for i386_set_ldt
 .endif
 
 .include "../../mk/dlopen.buildlink3.mk"
-.if empty(BUILDLINK_LDADD.ldl)
+.include "../../mk/bsd.pkg.mk"
+
+.if empty(BUILDLINK_LDADD.dl)
 BUILDLINK_TRANSFORM+=	rm:-ldl
 .endif
-
-.include "../../mk/bsd.pkg.mk"
