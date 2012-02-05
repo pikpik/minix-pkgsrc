@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/ocp-vcsa
+lib/${PKGNAME}/autoload/30-cdrom.so
+lib/${PKGNAME}/playcda.so
