@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/05/01 20:45:05 wiz Exp $
 #
 
 DISTNAME=	Whoosh-0.1.13
@@ -15,7 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# none
 PYTHON_VERSIONS_INCOMPATIBLE=	24
-PYDISTUTILSPKG=		yes
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
