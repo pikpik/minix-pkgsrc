@@ -1,5 +1,6 @@
 @comment $NetBSD$
 bin/dblatex
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/dbtexmf/__init__.py
 ${PYSITELIB}/dbtexmf/__init__.pyc
 ${PYSITELIB}/dbtexmf/__init__.pyo
