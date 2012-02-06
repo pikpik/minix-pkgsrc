@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2008/06/12 02:14:39 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2011/04/15 08:34:00 obache Exp $
 
-DISTNAME=		dnstracer-1.7
+DISTNAME=		dnstracer-1.9
 CATEGORIES=		net
 MASTER_SITES=		http://www.mavetju.org/download/
 
