@@ -737,7 +737,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.tar=
 TOOLS_DEPENDS.tar?=		pax>=20040802:../../archivers/pax
 TOOLS_CREATE+=			tar
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.tar=pax
-TOOLS_PATH.tar=			${TOOLS_PREFIX.tar}/bin/${NBPAX_PROGRAM_PREFIX}tar
+TOOLS_PATH.tar=			${TOOLS_PREFIX.tar}/bin/tar
 .  endif
 .endif
 

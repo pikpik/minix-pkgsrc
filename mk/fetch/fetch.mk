@@ -266,6 +266,7 @@ _FETCH_ARGS+=	-d ${DIST_SUBDIR}
 .PHONY: do-fetch-file
 do-fetch-file: .USE
 	@${STEP_MSG} "Fetching ${.TARGET:T}"
+	${RUN} ${MKDIR} ${.TARGET:H}
 	${RUN}								\
 	for d in "" ${DIST_PATH:S/:/ /g}; do				\
 		case $$d in						\

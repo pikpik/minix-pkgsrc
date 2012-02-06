@@ -112,9 +112,6 @@ case $arg in
 # There are some packages suppressing all warnings. We don't want that.
 -w			) transform_discard ;;
 
-# Discard visibility (Sun linker won't support it)
--fvisibility=*          ) transform_discard ;;
-
 # Options specific to g++.
 -fexceptions		|\
 -fmessage-length=*	|\
