@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2011/06/12 11:43:34 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/01/11 13:47:31 obache Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gstreamer-${VERSION}
 COMMENT=		Ruby binding of GStreamer 0.10.x or later
+PKGREVISION=		1
 CATEGORIES=		multimedia
 
 CONFLICTS+=		ruby[0-9][0-9]-gnome2-gstreamer-[0-9]*

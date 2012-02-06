@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2010/06/13 22:44:33 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2011/01/13 13:38:06 wiz Exp $
 
 DISTNAME=	gocr-0.47
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=jocr/}
 

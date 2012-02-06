@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2011/07/30 10:47:54 shattered Exp $
+# $NetBSD: Makefile,v 1.27 2011/09/08 20:59:13 shattered Exp $
 
 .include "../../sysutils/gkrellm/Makefile.common"
 
 GKRELLM_PKGBASE=	gkrellm-server
-PKGREVISION=		2
+PKGREVISION=		3
 COMMENT=		Monitoring daemon remotely accessible by a GKrellM client
 DEPENDS+=		gkrellm-share-${GKRELLM_VERSION}:../../sysutils/gkrellm-share
 

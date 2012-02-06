@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2011/12/22 07:57:09 marino Exp $
+# $NetBSD: Makefile,v 1.11 2012/01/19 19:15:18 drochner Exp $
 #
 
 DISTNAME=	pitivi-0.15.0
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pitivi/0.15/}
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pitivi/}

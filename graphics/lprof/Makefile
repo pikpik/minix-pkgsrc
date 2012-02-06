@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2011/11/01 06:01:41 sbd Exp $
+# $NetBSD: Makefile,v 1.21 2012/01/29 10:15:01 marino Exp $
 #
 
 DISTNAME=		lprof-1.10.1
-PKGREVISION=		13
+PKGREVISION=		14
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=lprof/}
 

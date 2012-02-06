@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2011/05/04 11:16:23 ryoon Exp $
+# $NetBSD: Makefile,v 1.8 2011/11/23 11:00:55 ryoon Exp $
 #
 
 DISTNAME=	mypaint-1.0.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.gna.org/mypaint/
 EXTRACT_SUFX=	.tar.bz2

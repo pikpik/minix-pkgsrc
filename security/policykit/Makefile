@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2011/04/22 13:42:39 obache Exp $
+# $NetBSD: Makefile,v 1.19 2011/10/03 17:19:02 abs Exp $
 #
 
 POLICYKIT_VER=		0.9
 DISTNAME=		PolicyKit-${POLICYKIT_VER}
 PKGNAME=		policykit-${POLICYKIT_VER}
-PKGREVISION=		8
+PKGREVISION=		9
 CATEGORIES=		security
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 

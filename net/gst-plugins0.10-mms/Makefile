@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/04/22 13:45:20 obache Exp $
+# $NetBSD: Makefile,v 1.3 2011/05/18 09:49:03 drochner Exp $
 #
 
 GST_PLUGINS0.10_NAME=	mms
@@ -8,6 +8,8 @@ GST_PLUGINS0.10_DIRS=	ext/libmms
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/gst-plugins0.10-bad/Makefile.common"
+
+PKGREVISION=		1
 
 BUILDLINK_API_DEPENDS.libmms+=	libmms>=0.4
 .include "../../net/libmms/buildlink3.mk"
