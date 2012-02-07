@@ -5,4 +5,5 @@ ${PYSITELIB}/drv_libxml2.pyo
 ${PYSITELIB}/libxml2.py
 ${PYSITELIB}/libxml2.pyc
 ${PYSITELIB}/libxml2.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/libxml2mod.so
