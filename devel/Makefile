@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1558 2012/02/02 07:44:29 jnemeth Exp $
+# $NetBSD: Makefile,v 1.1559 2012/02/02 19:00:10 bouyer Exp $
 #
 
 COMMENT=	Development utilities
@@ -1362,6 +1362,7 @@ SUBDIR+=	ruby-hike
 SUBDIR+=	ruby-i18n
 SUBDIR+=	ruby-i18n_05
 SUBDIR+=	ruby-inline
+SUBDIR+=	ruby-kgio
 SUBDIR+=	ruby-linecache
 SUBDIR+=	ruby-little-plugger
 SUBDIR+=	ruby-locale
