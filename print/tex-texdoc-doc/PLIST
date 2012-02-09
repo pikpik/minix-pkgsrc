@@ -1,0 +1,6 @@
+@comment $NetBSD$
+man/man1/texdoc.1
+man/man1/texdoctk.1
+share/texmf/doc/texdoc/News
+share/texmf/doc/texdoc/texdoc.pdf
+share/texmf/doc/texdoc/texdoc.tex
