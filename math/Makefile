@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.221 2011/10/05 07:46:12 obache Exp $
+# $NetBSD: Makefile,v 1.222 2011/11/12 07:53:17 hiramatsu Exp $
 
 COMMENT=	Mathematics
 
@@ -78,6 +78,7 @@ SUBDIR+=	fricas
 SUBDIR+=	galculator
 SUBDIR+=	gap
 SUBDIR+=	gcalctool
+SUBDIR+=	gcalctool-gtk3
 SUBDIR+=	geg
 SUBDIR+=	genius
 SUBDIR+=	glpk
