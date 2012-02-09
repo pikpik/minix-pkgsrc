@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/16 05:33:56 manu Exp $
+# $NetBSD: Makefile,v 1.2 2012/02/07 11:34:00 fhajny Exp $
 #
 
 DISTNAME=	libmemcached-1.0.4
@@ -19,8 +19,9 @@ USE_LIBTOOL=	yes
 
 PKGCONFIG_OVERRIDE+=	support/libmemcached.pc.in
 
+.include "../../mk/bsd.prefs.mk"
 # Avoid building 64bit on a 32bit bootstrap (affects SunOS)
-.if empty(ABI:M64)
+.if defined(ABI) && empty(ABI:M64)
 CONFIGURE_ARGS+=	--disable-64bit
 .endif
 
