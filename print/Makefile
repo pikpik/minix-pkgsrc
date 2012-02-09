@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.518 2012/01/29 11:57:57 cheusov Exp $
+# $NetBSD: Makefile,v 1.519 2012/02/02 07:54:27 jnemeth Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -588,6 +588,8 @@ SUBDIR+=	tex-tabls-doc
 SUBDIR+=	tex-tetex
 SUBDIR+=	tex-tetex-doc
 SUBDIR+=	tex-tex
+SUBDIR+=	tex-texdoc
+SUBDIR+=	tex-texdoc-doc
 SUBDIR+=	tex-texlive-common-doc
 SUBDIR+=	tex-texlive-en-doc
 SUBDIR+=	tex-texlive-scripts
