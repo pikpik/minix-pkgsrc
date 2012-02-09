@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/01/13 10:55:18 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/02/06 12:40:55 wiz Exp $
 
 DISTNAME=		basket-1.0.2
 PKGREVISION=		14
@@ -15,6 +15,7 @@ USE_TOOLS+=		gmake msgfmt pkg-config
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 
 .include "../../security/gpgme/buildlink3.mk"
 .include "../../meta-pkgs/kde3/kde3.mk"

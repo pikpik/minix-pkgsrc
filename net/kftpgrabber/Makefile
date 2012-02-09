@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/01/13 10:55:27 obache Exp $
+# $NetBSD: Makefile,v 1.33 2012/02/06 12:41:14 wiz Exp $
 
 DISTNAME=	kftpgrabber-0.8.1
 PKGREVISION=	14
@@ -16,6 +16,7 @@ USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake msgfmt perl
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

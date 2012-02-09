@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/01/14 03:13:04 hans Exp $
+# $NetBSD: Makefile,v 1.16 2012/02/06 12:39:18 wiz Exp $
 
 DISTNAME=		amarok-${VERSION}
 VERSION=		1.4.10
@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake pkg-config msgfmt unzip:run
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_LIBTOOL=		yes
 RUBY_VERSION_SUPPORTED=	18
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/01/13 10:55:12 obache Exp $
+# $NetBSD: Makefile,v 1.26 2012/02/06 12:40:28 wiz Exp $
 #
 
 DISTNAME=		kphotoalbum-3.1.1
@@ -18,6 +18,7 @@ CONFLICTS+=		kimdaba-*
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_TOOLS+=		msgfmt pkg-config
 
 .include "../../meta-pkgs/kde3/kde3.mk"

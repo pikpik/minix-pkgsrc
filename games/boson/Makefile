@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/01/13 10:55:05 obache Exp $
+# $NetBSD: Makefile,v 1.41 2012/02/06 12:40:10 wiz Exp $
 #
 
 DISTNAME=		boson-all-0.8
@@ -15,6 +15,7 @@ COMMENT=		OpenGL real-time strategy game for KDE 3
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_TOOLS+=		gmake msgfmt
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

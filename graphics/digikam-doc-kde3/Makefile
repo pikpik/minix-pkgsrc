@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/01/13 10:55:11 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/02/06 12:40:20 wiz Exp $
 
 DISTNAME=		digikam-doc-0.9.5
 PKGREVISION=		10
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake perl
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"

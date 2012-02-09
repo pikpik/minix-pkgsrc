@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2012/01/13 10:55:16 obache Exp $
+# $NetBSD: Makefile,v 1.45 2012/02/06 12:40:50 wiz Exp $
 
 DISTNAME=	kbiff-3.9
 PKGREVISION=	10
@@ -16,6 +16,7 @@ USE_TOOLS+=		gmake perl
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 SHLIBTOOL_OVERRIDE=	# empty
 
 .include "../../meta-pkgs/kde3/kde3.mk"

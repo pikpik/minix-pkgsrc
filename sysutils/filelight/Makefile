@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/01/13 10:55:32 obache Exp $
+# $NetBSD: Makefile,v 1.25 2012/02/06 12:41:32 wiz Exp $
 #
 
 DISTNAME=	filelight-1.0
@@ -14,6 +14,7 @@ COMMENT=	Graphical filesystem usage monitor
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
+SET_LIBDIR=	yes
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 USE_TOOLS+=	perl

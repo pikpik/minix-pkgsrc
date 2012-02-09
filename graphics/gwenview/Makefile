@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2012/01/14 15:38:59 dholland Exp $
+# $NetBSD: Makefile,v 1.48 2012/02/06 12:40:26 wiz Exp $
 #
 
 DISTNAME=	gwenview-1.4.2
@@ -18,6 +18,7 @@ USE_TOOLS+=	gmake pkg-config msgfmt perl
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
+SET_LIBDIR=	YES
 
 # Enable kipi (KDE Image Plugin Interface)
 CONFIGURE_ARGS+=	--enable-kipi

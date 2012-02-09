@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2012/01/13 10:55:17 obache Exp $
+# $NetBSD: Makefile,v 1.30 2012/02/06 12:40:54 wiz Exp $
 
 DISTNAME=	qalculate-kde-0.9.5
 PKGREVISION=	15
@@ -18,6 +18,7 @@ USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_TOOLS+=		autoconf gmake msgfmt pkg-config perl
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 
 pre-configure:
 	${RUN} cd ${WRKSRC}; autoconf
