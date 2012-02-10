@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/01/17 12:02:25 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/12/17 10:16:04 sbd Exp $
 #
 
 DISTNAME=	re-alpine-2.01
@@ -19,8 +19,10 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "options.mk"
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+= --with-ssl-dir=${SSLBASE:Q}
-# TODO: is this okay?
+CONFIGURE_ARGS+= --with-ssl-dir=${SSLBASE}
+CONFIGURE_ARGS+= --with-ssl-certs-dir=${SSLCERTS:Q}
+CONFIGURE_ARGS+= --with-ssl-include-dir=${SSLBASE}/include
+CONFIGURE_ARGS+= --with-ssl-lib-dir=${SSLBASE}/lib
 CONFIGURE_ARGS+= --with-system-pinerc=${PKG_SYSCONFDIR}/pine.conf
 CONFIGURE_ARGS+= --with-system-fixed-pinerc=${PKG_SYSCONFDIR}/pine.conf.fixed
 
