@@ -7,8 +7,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
-CPPFLAGS+=	-DPIC -fPIC
-
 .if exists(/usr/include/ndbm.h) && ${OPSYS} != "Linux"
 SASL_DBTYPE?=		ndbm
 .else
