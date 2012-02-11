@@ -147,10 +147,9 @@ math/bc
 math/mpcomplex
 math/mpfr
 math/units
-minix/clang
-minix/clangnew
+minix/clang29
+minix/clang31
 minix/compiler-rt
-minix/compiler-rt_new
 minix/netdrv_tg3
 minix/x11
 misc/ascii
