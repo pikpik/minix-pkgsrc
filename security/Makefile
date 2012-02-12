@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.422 2012/01/11 20:10:44 drochner Exp $
+# $NetBSD: Makefile,v 1.423 2012/02/03 14:45:29 drochner Exp $
 #
 
 COMMENT=	Security tools
@@ -304,6 +304,7 @@ SUBDIR+=	py-openid
 SUBDIR+=	py-paramiko
 SUBDIR+=	py-prewikka
 SUBDIR+=	py-smbpasswd
+SUBDIR+=	py-ssh
 SUBDIR+=	py-tlslite
 SUBDIR+=	py-xmlsec
 SUBDIR+=	pyca
