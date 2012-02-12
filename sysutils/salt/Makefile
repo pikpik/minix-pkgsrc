@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/01/21 20:26:58 apb Exp $
+# $NetBSD: Makefile,v 1.2 2012/02/12 13:28:03 wiz Exp $
 #
 
 DISTNAME=	salt-0.9.5
@@ -6,7 +6,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	https://github.com/downloads/saltstack/salt/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	https://github.com/downloads/saltstack/salt/
+HOMEPAGE=	http://saltstack.org/
 COMMENT=	Remote execution and configuration management system
 LICENSE=	apache-2.0
 
