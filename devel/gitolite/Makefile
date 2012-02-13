@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/11/20 19:11:49 ryoon Exp $
 #
 
 DISTNAME=	sitaramc-gitolite-v2.2-0-g15b17d7
-PKGNAME=	gitolite-2.2
+PKGNAME=	${DISTNAME:S/sitaramc-gitolite-v/gitolite-/:C/-0-.*//}
 CATEGORIES=	devel net
 MASTER_SITES=	-https://github.com/sitaramc/gitolite/tarball/v2.2
 
