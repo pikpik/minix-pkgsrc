@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.90 2012/01/13 10:55:51 obache Exp $
+# $NetBSD: Makefile,v 1.91 2012/02/06 12:42:31 wiz Exp $
 
 .include "Makefile.common"
 
-PKGREVISION=	3
 COMMENT=	Like the XLock session-locker/screensaver, but with more
 
 CONFIGURE_ARGS+=	--with-opengl
@@ -23,7 +22,6 @@ PLIST_SUBST+=    LITE=""
 
 USE_TOOLS+=	pkg-config
 
-.include "../../audio/esound/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
