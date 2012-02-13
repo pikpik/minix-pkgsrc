@@ -1,3 +1,3 @@
 @comment $NetBSD$
-etc/system.d/tg.conf
+etc/system.conf.d/tg.conf
 ${LOWER_OPSYS}services/tg

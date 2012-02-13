@@ -5,7 +5,7 @@ MAN=
 LDADD+=	-lnetdriver -lsys -ltimers -lminlib
 
 BINDIR=$(PREFIX)/minixservices
-CONFDIR=$(PREFIX)/etc/system.d 
+CONFDIR=$(PREFIX)/etc/system.conf.d 
 
 install:
 	mkdir -p $(CONFDIR)
