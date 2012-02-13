@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.46 2011/04/22 13:41:57 obache Exp $
+# $NetBSD: Makefile,v 1.47 2012/02/06 12:39:45 wiz Exp $
 #
 
-DISTNAME=	shared-mime-info-0.90
-PKGREVISION=	2
+DISTNAME=	shared-mime-info-1.0
 CATEGORIES=	databases
 MASTER_SITES=	http://people.freedesktop.org/~hadess/
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/shared-mime-info
