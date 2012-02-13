@@ -1,5 +1,9 @@
-@comment $NetBSD: PLIST,v 1.2 2005/01/03 21:43:07 jmmv Exp $
+@comment $NetBSD$
+bin/desktop-file-edit
 bin/desktop-file-install
 bin/desktop-file-validate
 bin/update-desktop-database
-@comment in INSTALL script: share/applications/mimeinfo.cache
+man/man1/desktop-file-edit.1
+man/man1/desktop-file-install.1
+man/man1/desktop-file-validate.1
+man/man1/update-desktop-database.1
