@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2012/02/06 12:39:45 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2012/02/13 12:34:21 drochner Exp $
 #
 
 DISTNAME=	shared-mime-info-1.0
@@ -19,6 +19,7 @@ USE_LANGUAGES+=		c99
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config xgettext
+MAKE_JOBS_SAFE=		no
 
 CONFIGURE_ARGS+=	--disable-update-mimedb
 
