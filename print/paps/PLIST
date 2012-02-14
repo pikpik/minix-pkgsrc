@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/paps
+include/libpaps.h
+lib/libpaps.a
+man/man1/paps.1
