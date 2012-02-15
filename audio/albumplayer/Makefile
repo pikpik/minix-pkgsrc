@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/01/11 14:48:59 hans Exp $
+# $NetBSD: Makefile,v 1.14 2012/02/06 12:39:17 wiz Exp $
 #
 
 DISTNAME=	albumplayer-0.3.1
@@ -19,6 +19,12 @@ USE_TOOLS+=		pkg-config
 USE_DIRS+=		xdg-1.1
 PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+=	share/applications
+REPLACE_SH=		ap_flac_embed
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "SunOS"
+BUILDLINK_TRANSFORM+=	rm:-export-dynamic
+.endif
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "SunOS"
