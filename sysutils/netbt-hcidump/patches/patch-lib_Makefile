@@ -1,0 +1,15 @@
+$NetBSD$
+
+--- lib/Makefile.orig	2012-02-15 08:56:20.000000000 +0000
++++ lib/Makefile
+@@ -0,0 +1,10 @@
++MKLINT=no
++
++LIB=	bluez
++LIBISPRIVATE=yes
++
++SRCS=		bluetooth.c hci.c
++
++CPPFLAGS+=	-I..
++
++.include <bsd.lib.mk>
