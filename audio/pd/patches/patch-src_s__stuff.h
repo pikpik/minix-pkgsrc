@@ -1,4 +1,4 @@
-$NetBSD: patch-src_s__stuff.h,v 1.1.1.1 2011/09/15 01:05:05 wiz Exp $
+$NetBSD: patch-src_s__stuff.h,v 1.2 2011/10/05 20:02:48 wiz Exp $
 
 Use OSS on NetBSD.
 https://sourceforge.net/tracker/?func=detail&aid=3411732&group_id=55736&atid=478072
@@ -10,7 +10,7 @@ https://sourceforge.net/tracker/?func=detail&aid=3411732&group_id=55736&atid=478
  #define API_DEFSTRING "dummy audio"
  #else
 -#if defined(__linux__) || defined(__FreeBSD_kernel__)
-+#if defined(__linux__) || defined(__FreeBSD_kernel__) || defined(__NetBSD__)
++#if defined(__linux__) || defined(__FreeBSD_kernel__) || defined(__NetBSD__) || defined(__sun)
  # define API_DEFAULT API_OSS
  # define API_DEFSTRING "OSS"
  #endif
