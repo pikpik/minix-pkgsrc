@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/01/11 19:43:23 hans Exp $
+# $NetBSD: Makefile,v 1.16 2012/01/16 21:14:44 drochner Exp $
 
 DISTNAME=		mpc-0.21
 CATEGORIES=		audio
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
+
+REPLACE_SH=		doc/*.sh
 
 LIBS.SunOS+=		${BUILDLINK_LDADD.iconv}
 
