@@ -11,6 +11,6 @@ install:
 	mkdir -p $(CONFDIR)
 	mkdir -p $(BINDIR)
 	cp $(PROG) $(BINDIR)/
-	cp tg.conf $(CONFDIR)/
+	cp tg.conf $(CONFDIR)/tg
 
 .include <bsd.prog.mk>
