@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2012/01/13 10:54:45 obache Exp $
+# $NetBSD: Makefile,v 1.76 2012/01/24 09:42:35 marino Exp $
 
 DISTNAME=		esound-0.2.41
 PKGREVISION=		1
@@ -43,6 +43,9 @@ SUBST_MESSAGE.oss=	Fixing oss.
 
 LDFLAGS.IRIX+=		-lm
 LDFLAGS.DragonFly+=	-lm
+LDFLAGS.SunOS+=		-lsocket -lnsl
+
+REPLACE_SH+=		esd-config.in
 
 .include "../../audio/libaudiofile/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
