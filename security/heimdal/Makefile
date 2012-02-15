@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2011/12/30 18:59:05 tez Exp $
+# $NetBSD: Makefile,v 1.85 2012/01/18 14:45:37 adam Exp $
 
 DISTNAME=	heimdal-1.4
 PKGREVISION=	3
@@ -75,6 +75,8 @@ INFO_FILES=		yes
 GENERATE_PLIST+=	\
 	( cd ${WRKSRC}/lib/roken && ${BUILD_MAKE_CMD} print-xheaders |	\
 	  ${XARGS} -n 1 | ${SED} -e "s,^,include/krb5/roken/," );
+
+TEST_TARGET=		check
 
 # remove manpages conficting with OpenSSL keeping only the important ones
 pre-configure:
