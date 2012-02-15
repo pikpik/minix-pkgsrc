@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.468 2012/02/14 14:37:15 taca Exp $
+$NetBSD: CHANGES-2012,v 1.480 2012/02/15 13:00:26 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -684,3 +684,16 @@ Changes to the packages collection and infrastructure in 2012:
 	Added devel/p5-Test-InDistDir version 1.112071 [hiramatsu 2012-02-14]
 	Updated databases/ruby-activeldap to 3.1.1 [taca 2012-02-14]
 	Added print/paps version 0.6.8 [wiz 2012-02-14]
+	Updated print/tex-exam to 2.4 [minskim 2012-02-14]
+	Updated print/tex-exam-doc to 2.4 [minskim 2012-02-14]
+	Updated devel/scmgit-base to 1.7.9.1 [gdt 2012-02-14]
+	Added textproc/libunistring version 0.9.3 [gdt 2012-02-14]
+	Updated fonts/umefont-ttf to 0.436 [ryoon 2012-02-15]
+	Updated lang/newlisp to 10.4.0 [ryoon 2012-02-15]
+	Updated devel/mr to 1.11 [schmonz 2012-02-15]
+	Updated editors/Sigil to 0.5.2 [ryoon 2012-02-15]
+	Updated graphics/lensfun to 0.2.5nb7 [sbd 2012-02-15]
+	Updated sysutils/netbt-hcidump to 2.2 [plunky 2012-02-15]
+	Updated net/nload to 0.7.4 [obache 2012-02-15]
+	Updated misc/libreoffice3-bin to 3.5.0 [ryoon 2012-02-15]
+	Updated textproc/dblatex to 0.3.2 [gls 2012-02-15]
