@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2012/01/24 09:10:58 sbd Exp $
+# $NetBSD: Makefile,v 1.73 2012/02/06 12:39:35 wiz Exp $
 
 DISTNAME=	gnomeicu-0.99.12
 PKGREVISION=	20
@@ -17,6 +17,8 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 BROKEN_GETTEXT_DETECTION=	YES
+
+LIBS.SunOS+=		-lsocket
 
 CONFIGURE_ARGS+=	--sysconfdir=${EGDIR:Q}
 
