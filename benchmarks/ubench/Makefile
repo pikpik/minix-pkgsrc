@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/04 21:29:01 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2009/04/29 09:20:40 wiz Exp $
 #
 
 DISTNAME=	ubench-0.32
@@ -19,6 +19,8 @@ SUBST_CLASSES+=		path
 SUBST_STAGE.path=	post-configure
 SUBST_FILES.path=	Makefile
 SUBST_SED.path=		-e "s,/usr/local,${DESTDIR}${PREFIX},"
+
+CFLAGS.SunOS+=	-DSunOS
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/ubench.8 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man8
