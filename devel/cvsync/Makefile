@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.87 2010/11/21 03:48:23 dholland Exp $
+# $NetBSD: Makefile,v 1.88 2011/04/22 13:43:16 obache Exp $
 #
 
 DISTNAME=	cvsync-0.24.19
@@ -23,6 +23,7 @@ MAKE_ENV+=	PTHREAD_TYPE=${PTHREAD_TYPE:Q}
 MAKE_ENV+=	PTHREAD_PREFIX=${BUILDLINK_PREFIX.pthread}
 MAKE_ENV+=	CVSYNC_DEFAULT_CONFIG="${PKG_SYSCONFDIR}/cvsync.conf"
 MAKE_ENV+=	CVSYNCD_DEFAULT_CONFIG="${PKG_SYSCONFDIR}/cvsyncd.conf"
+MAKE_ENV+=	INSTALL=${TOOLS_PATH.install:Q}
 
 EGDIR=		${PREFIX}/share/examples/cvsync
 CONF_FILES+=	${EGDIR}/cvsync.conf ${PKG_SYSCONFDIR}/cvsync.conf
