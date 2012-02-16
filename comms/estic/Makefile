@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/03/31 17:40:16 is Exp $
+# $NetBSD: Makefile,v 1.31 2011/03/31 17:55:25 is Exp $
 
 DISTNAME=	estic-1.61
 PKGREVISION=	2
@@ -24,6 +24,13 @@ USE_TOOLS+=	patch unzip
 BUILD_TARGET=	depend all
 ESTICPATCH=	${DISTNAME}-patch-from-1.60${EXTRACT_SUFX}
 MAKE_FILE=	make/freebsd-x.mak
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "SunOS"
+CPPFLAGS+=	-DSOLARIS
+.else
+CPPFLAGS+=	-DFREEBSD
+.endif
 
 INSTALLATION_DIRS=	bin
 
