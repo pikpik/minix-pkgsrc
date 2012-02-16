@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2009/05/22 07:16:58 plunky Exp $
+# $NetBSD: Makefile,v 1.13 2009/07/20 05:56:02 hasso Exp $
 #
 
 DISTNAME=	obexftp-0.20
@@ -20,6 +20,8 @@ USE_LIBTOOL=	yes
 CONFIGURE_ARGS+=	--disable-perl
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--disable-swig
+
+LIBS.SunOS+=		-lsocket -lnsl -liconv
 
 .include "../../mk/bsd.prefs.mk"
 
