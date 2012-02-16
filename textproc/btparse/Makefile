@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/10/04 22:00:59 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/04/24 21:17:51 markd Exp $
 #
 
 DISTNAME=	btparse-0.35
@@ -12,7 +12,7 @@ COMMENT=	BibTeX parsing library
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=	perl
+USE_TOOLS+=	perl pod2man
 USE_LIBTOOL=YES
 GNU_CONFIGURE=	YES
 
