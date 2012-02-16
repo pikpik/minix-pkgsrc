@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/04/22 13:45:17 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/02/06 12:39:39 wiz Exp $
 
 .include "../../chat/xchat/Makefile.common"
 
@@ -20,7 +20,7 @@ CONFIGURE_ENV+=		ac_cv_path_pythonpath=${PYTHONBIN:Q}
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "Darwin"
+.if ${OPSYS} == "Darwin" || ${OPSYS} == "SunOS"
 SUBST_CLASSES+=		libutil
 SUBST_STAGE.libutil=	pre-configure
 SUBST_FILES.libutil=	configure
