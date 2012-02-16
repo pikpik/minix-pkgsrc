@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/04/22 13:44:49 obache Exp $
+# $NetBSD: Makefile,v 1.12 2011/08/05 15:40:47 reed Exp $
 
 DISTNAME=	diction-1.11
 PKGREVISION=	2
@@ -17,6 +17,8 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake msgfmt
 
 USE_FEATURES+=		getopt_long regcomp snprintf
+
+LIBS.SunOS+=		-lintl
 
 .include "options.mk"
 
