@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/07/14 12:56:04 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2009/02/07 17:31:29 joerg Exp $
 #
 
 DISTNAME=	xroach
@@ -13,6 +13,7 @@ COMMENT=	Cockroaches hide under your windows
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_TOOLS+=		nroff
 USE_BSD_MAKEFILE=	yes
 
 DIST_SUBDIR=	xroach-4.4
