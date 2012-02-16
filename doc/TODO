@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.10870 2012/02/14 12:04:38 obache Exp $
+$NetBSD: TODO,v 1.10875 2012/02/15 13:47:03 obache Exp $
 
 Suggested new packages
 ======================
@@ -334,7 +334,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o ROMBuild-2.14
 	o RTx-Shredder-0.05
 	o RealPlayer-11
-	o Sigil-0.5.2
 	o SmartEiffel-2.3
 	o TiffIO-130e
 	o XaoS-3.5
@@ -381,7 +380,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o ap2-auth-ldap-3.11
 	o ap2-transform-0.6.0
 	o apache-maven-3.0
-	o apache-tomcat6-6.0.33
 	o applewmproto-1.4.2
 	o appres-1.0.3 [pkg/45526]
 	o apr-util-1.4.1
@@ -521,7 +519,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o dspam-3.10.0
 	o dvtm-0.7
 	o easymenu-0.7.2p1
-	o ec-fonts-mftraced-1.0.12
 	o echinus-0.4.9
 	o eclipse-3.2.0
 	o ed-1.6
@@ -1030,7 +1027,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o ng-1.4.4
 	o nhc98-1.22 [pkg/45318]
 	o nikto-2.0.1
-	o nload-0.7.4 [pkg/45947]
 	o nmh-1.4
 	o notification-daemon-0.7.0
 	o ns-3.12.1
@@ -1180,6 +1176,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o rcs-5.8
 	o rdesktop-1.7.1
 	o rdp-1.6
+	o re-alpine-2.02 [pkg/46025]
 	o recordproto-1.14.1
 	o redland-1.0.15 [needs rasqal-0.9.22]
 	o remind-3.1.12
