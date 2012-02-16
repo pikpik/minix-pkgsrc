@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/04/22 13:43:10 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/06 12:39:42 wiz Exp $
 #
 
 DISTNAME=	libsyncml-0.4.5
@@ -18,8 +18,12 @@ USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c
 USE_LIBTOOL=	yes
 
+.include "../../mk/bsd.prefs.mk"
+
 CONFIGURE_ARGS+=	--disable-http
+.if ${OPSYS} != "SunOS"
 CONFIGURE_ARGS+=	--enable-bluetooth
+.endif
 CONFIGURE_ARGS+=	--enable-obex
 
 PKGCONFIG_OVERRIDE+=	libsyncml-1.0.pc.in
