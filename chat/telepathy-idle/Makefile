@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/01/24 23:32:24 marino Exp $
+# $NetBSD: Makefile,v 1.18 2012/02/06 12:39:38 wiz Exp $
 #
 
 DISTNAME=	telepathy-idle-0.1.8
@@ -20,6 +20,7 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake pkg-config
 
 LDFLAGS.DragonFly=	-lcrypto
+LDFLAGS.SunOS+=		-lcrypto
 
 CONFIGURE_ARGS+=	OPENSSL_CFLAGS=-I${BUILDLINK_PREFIX.openssl}/include
 CONFIGURE_ARGS+=	OPENSSL_LIBS="-L${BUILDLINK_PREFIX.openssl}/lib ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.openssl}/lib -lssl"
