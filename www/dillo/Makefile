@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2011/12/02 14:34:54 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2012/01/22 11:23:35 obache Exp $
 
 DISTNAME=	dillo-3.0.2
 CATEGORIES=	www
@@ -27,6 +27,8 @@ CONF_FILES+=	${EGDIR}/dpidrc ${PKG_SYSCONFDIR}/dpidrc
 CONF_FILES+=	${EGDIR}/keysrc ${PKG_SYSCONFDIR}/keysrc
 
 INSTALLATION_DIRS=	share/doc/dillo ${EGDIR}
+
+LIBS.SunOS+=	-liconv
 
 .include "options.mk"
 
