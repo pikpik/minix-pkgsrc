@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2010/07/24 17:46:59 gdt Exp $
+# $NetBSD: Makefile,v 1.3 2011/12/03 00:02:14 joerg Exp $
 #
 
-VERSION=	1.1
+VERSION=	1.2.1
 DISTNAME=	argparse-${VERSION}
 PKGNAME=	${PYPKGPREFIX}-argparse-${VERSION}
 CATEGORIES=	devel
 MASTER_SITES=	http://argparse.googlecode.com/files/
-EXTRACT_SUFX=	.zip
+#EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	gdt@ir.bbn.com
 HOMEPAGE=	http://code.google.com/p/argparse/
@@ -18,5 +18,5 @@ PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 USE_LANGUAGES=	# none
 
-.include "../../lang/python/distutils.mk"
+.include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
