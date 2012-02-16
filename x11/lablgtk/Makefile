@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/01/24 09:10:54 sbd Exp $
+# $NetBSD: Makefile,v 1.55 2012/02/06 12:42:18 wiz Exp $
 #
 
 DISTNAME=	lablgtk-2.14.2
@@ -33,7 +33,7 @@ PLIST_VARS+=	stubs
 
 .if ${OPSYS} == "Darwin" || ${OPSYS} == "DragonFly" || \
     ${OPSYS} == "NetBSD" || ${OPSYS} == "FreeBSD" || \
-    ${OPSYS} == "SunOS"
+    ${OPSYS} == "SunOS"  || ${OPSYS} == "Linux"
 PLIST.stubs=	yes
 .endif
 
