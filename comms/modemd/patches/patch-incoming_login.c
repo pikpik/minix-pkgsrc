@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-incoming_login.c,v 1.1 2011/11/25 21:34:34 joerg Exp $
 
 --- incoming/login.c.orig	2011-11-25 20:00:14.000000000 +0000
 +++ incoming/login.c
@@ -10,3 +10,13 @@ $NetBSD$
  #include "mcap.h"
  #include "ttio.h"
  
+@@ -70,7 +71,9 @@ void do_login (name, ttyName)
+   /* At this point, we have carrier, so it's time to log the login... */
+   strncpy (utRec.ut_line, ttyName, UT_LINESIZE);
+   strncpy (utRec.ut_name, name, UT_NAMESIZE);
++#ifndef __sun
+   utRec.ut_host [0] = 0;
++#endif
+ 
+   loginout ();
+ }
