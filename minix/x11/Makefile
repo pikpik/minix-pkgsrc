@@ -6,7 +6,6 @@ XORG_VER=	6.8.2
 CATEGORIES=	minix x11
 MASTER_SITES= ${MASTER_SITE_MINIX}
 EXTRACT_SUFX= .tar.gz
-PKGREVISION=	2
 
 MAINTAINER=	gautam.bt@gmail.com
 HOMEPAGE= http://www.x.org/

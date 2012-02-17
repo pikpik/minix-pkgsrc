@@ -1,6 +1,6 @@
 $NetBSD$
 
---- config/cf/minix3.cf.orig	Mon Feb 13 17:25:17 2012
+--- config/cf/minix3.cf.orig	Thu Jul 14 11:37:11 2011
 +++ config/cf/minix3.cf
 @@ -21,10 +21,6 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
  
@@ -35,7 +35,7 @@ $NetBSD$
  #define StandardIncludes
  
  #define BuildIPv6		NO
-@@ -72,14 +68,14 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
+@@ -72,7 +68,7 @@ XCOMM platform:  $XFree86: xc/config/cf/minix.cf,v 3.5
  #define HasStreams		NO
  #define HasVFork		NO
  #define HasNdbm			YES
@@ -44,11 +44,3 @@ $NetBSD$
  #define ExtraLoadFlags		
  #define NeedConstPrototypes	YES
  #define NeedVarargsPrototypes	YES
- #define NeedNestedPrototypes	YES
- /* #define UseCCMakeDepend		YES */	/* extremely slow */
- #define AsCmd			CcCmd -c
--#define CppCmd			/usr/lib/cpp
-+#define CppCmd			cpp
- #define LdCombineFlags		-r
- #define LexCmd			/usr/bin/flex -l
- #define YaccCmd			/usr/bin/yacc
