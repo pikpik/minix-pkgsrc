@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/robotfindskitten
+man/man6/robotfindskitten.6
+info/robotfindskitten.info
