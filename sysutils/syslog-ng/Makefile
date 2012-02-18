@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/10/14 10:52:42 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/02/06 12:41:39 wiz Exp $
 
 VERS=		3.2.4
 DISTNAME=	syslog-ng_${VERS}
@@ -57,6 +57,7 @@ BUILDLINK_API_DEPENDS.openssl+=	openssl>=0.9.8
 
 .if ${OPSYS} == "SunOS"
 CONFIGURE_ARGS+=	--enable-full-dynamic
+CONFIGURE_ARGS+=	--enable-sun-streams
 .endif
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.syslog-ng
