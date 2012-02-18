@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2011/11/01 06:11:58 sbd Exp $
+# $NetBSD: Makefile,v 1.66 2012/01/22 09:07:50 shattered Exp $
 
 DISTNAME=		apcupsd-3.14.9
 PKGREVISION=		3
@@ -71,9 +71,12 @@ PLATFORM_SUBDIR=${OPSYS:tl}
 .if ${OPSYS} == "DragonFly"
 PLATFORM_SUBDIR=netbsd
 .endif
+.if ${OPSYS} == "SunOS"
+PLATFORM_SUBDIR=sun
+.endif
 RCD_SCRIPT_SRC.apcupsd=	${WRKSRC}/platforms/${PLATFORM_SUBDIR}/apcupsd
 
-EGFILES= netbsd/apccontrol etc/changeme etc/commfailure etc/commok \
+EGFILES= ${PLATFORM_SUBDIR}/apccontrol etc/changeme etc/commfailure etc/commok \
     etc/offbattery etc/onbattery etc/multimon.conf etc/hosts.conf
 
 INSTALLATION_DIRS=	share/examples/apcupsd share/examples/rc.d \
