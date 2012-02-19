@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.423 2012/02/03 14:45:29 drochner Exp $
+# $NetBSD: Makefile,v 1.424 2012/02/12 15:07:24 gls Exp $
 #
 
 COMMENT=	Security tools
@@ -147,6 +147,7 @@ SUBDIR+=	mixminion
 SUBDIR+=	mozilla-rootcerts
 SUBDIR+=	msu
 SUBDIR+=	msudir
+SUBDIR+=	munge
 SUBDIR+=	netpgp
 SUBDIR+=	netramet
 SUBDIR+=	nettle
