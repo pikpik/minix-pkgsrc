@@ -1,0 +1,13 @@
+===========================================================================
+$NetBSD$
+
+To complete the setup, please read:
+
+	${PREFIX}/share/doc/contao${CT_VER}/README
+
+To use minify the HTML markup function, you'll have to install the
+following package:
+
+	www/php-tidy
+
+===========================================================================
