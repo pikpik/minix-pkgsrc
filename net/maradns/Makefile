@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2010/06/25 21:40:32 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2011/05/06 11:36:23 obache Exp $
 
 DISTNAME=	maradns-1.4.06
 CATEGORIES=	net
 MASTER_SITES=	http://www.maradns.org/download/1.4/${PKGVERSION_NOREV}/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	ddeus.pkgsrc@mailnull.com
 HOMEPAGE=	http://www.maradns.org/
 COMMENT=	Secure DNS server for *NIX systems
 
