@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1563 2012/02/14 13:36:22 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.1564 2012/02/16 11:57:13 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -541,6 +541,7 @@ SUBDIR+=	p5-CPAN-DistnameInfo
 SUBDIR+=	p5-CPAN-FindDependencies
 SUBDIR+=	p5-CPAN-Inject
 SUBDIR+=	p5-CPAN-Meta
+SUBDIR+=	p5-CPAN-Meta-YAML
 SUBDIR+=	p5-CPAN-Perl-Releases
 SUBDIR+=	p5-CPAN-Reporter
 SUBDIR+=	p5-Cache
