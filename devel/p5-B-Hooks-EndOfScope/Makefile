@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2010/08/21 16:33:13 seb Exp $
+# $NetBSD: Makefile,v 1.8 2011/08/09 06:52:35 adam Exp $
 
-DISTNAME=	B-Hooks-EndOfScope-0.09
+DISTNAME=	B-Hooks-EndOfScope-0.10
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=B/}
 
