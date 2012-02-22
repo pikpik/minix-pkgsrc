@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2012/01/17 21:43:19 sbd Exp $
+# $NetBSD: Makefile,v 1.58 2012/02/06 12:40:32 wiz Exp $
 
 DISTNAME=	pstoedit-3.60
 PKGREVISION=	1
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
-USE_TOOLS+=	gs:run
+USE_TOOLS+=	gs:run pkg-config
 
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
