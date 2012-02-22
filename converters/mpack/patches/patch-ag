@@ -10,6 +10,17 @@ $NetBSD$
  #include <stdio.h>
  #include <string.h>
  #include <ctype.h>
+@@ -545,8 +546,8 @@ getDispositionFilename(char *disposition
+ 	SkipWhitespace(&disposition);
+ 	if (!disposition) return 0;
+ 
+-	/* If we're looking at a ";", we found what we're looking for */
+-	if (*disposition++ == ';') break;
++	/* If we're looking at a "=", we found what we're looking for */
++	if (*disposition++ == '=') break;
+     }
+ 
+     SkipWhitespace(&disposition);
 @@ -601,7 +602,7 @@ int handlePartial(struct part *inpart, c
  {
      char *id, *dir, *p;
