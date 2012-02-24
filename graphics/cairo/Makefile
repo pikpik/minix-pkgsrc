@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.95 2012/02/06 12:40:17 wiz Exp $
+# $NetBSD: Makefile,v 1.96 2012/02/23 14:00:43 ryoon Exp $
 
 DISTNAME=	cairo-1.10.2
 PKGREVISION=	4
@@ -17,8 +17,8 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		pkg-config
 PKGCONFIG_OVERRIDE+=	src/cairo.pc.in \
-			src/cairo-features.pc.in \
-			src/cairo-tee.pc
+			src/cairo-features.pc.in
+
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-gl
 CONFIGURE_ARGS+=	--enable-pdf
