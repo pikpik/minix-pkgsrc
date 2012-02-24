@@ -12,3 +12,4 @@ bin/xenstore-write
 lib/libxenstore.so
 lib/libxenstore.so.3.0
 lib/libxenstore.so.3.0.0
+share/examples/rc.d/xendomname
