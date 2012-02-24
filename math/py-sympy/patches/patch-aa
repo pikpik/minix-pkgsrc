@@ -1,11 +1,11 @@
 $NetBSD$
 
---- setup.py.orig	2010-03-17 20:37:37.000000000 +0000
+--- setup.py.orig	2011-07-30 00:04:23.000000000 +0000
 +++ setup.py
-@@ -220,10 +220,10 @@ setup(
+@@ -235,10 +235,10 @@ setup(
        license = 'BSD',
        url = 'http://code.google.com/p/sympy',
-       packages = ['sympy'] + modules + tests + pyglet_packages,
+       packages = ['sympy'] + modules + tests,
 -      scripts = ['bin/isympy'],
 +      scripts = ['bin/isympy' + sys.version[0:3]],
        ext_modules = [],
