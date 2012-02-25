@@ -104,6 +104,7 @@ editors/vilearn
 editors/vim
 editors/vim-share
 editors/zile
+filesystems/fuse-ntfs-3g
 fonts/fontconfig
 fonts/ghostscript-fonts
 games/aop
