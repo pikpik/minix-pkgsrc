@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/10/16 12:18:00 cheusov Exp $
+# $NetBSD: Makefile,v 1.8 2012/01/09 20:57:37 cheusov Exp $
 #
 
-DISTNAME=	distbb-0.43.0
+DISTNAME=	distbb-0.44.0
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/distbb/ \
 		http://mova.org/~cheusov/pub/distbb/
@@ -26,7 +26,8 @@ REPLACE_SH+=		distbb.in distbb_diff.in slave.in stage_*.in
 REPLACE_INTERPRETER+=	runawk
 REPLACE.runawk.old=	/usr/bin/env runawk
 REPLACE.runawk.new=	${PREFIX}/bin/runawk
-REPLACE_FILES.runawk=	gen_weights.in gen_queue.in pkg_summary2build_deps.in
+REPLACE_FILES.runawk=	gen_weights.in pkg_summary2build_deps.in \
+			distbb_grep.in gen_queue.in
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
