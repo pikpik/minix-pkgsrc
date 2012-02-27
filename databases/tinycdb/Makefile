@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:11 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2010/09/11 08:26:04 obache Exp $
 #
 
 DISTNAME=		tinycdb_0.77
 PKGNAME=		${DISTNAME:S/_/-/}
+PKGREVISION=		1
 CATEGORIES=		databases
 MASTER_SITES=		http://www.corpit.ru/mjt/tinycdb/
 
@@ -16,8 +17,8 @@ CONFLICTS+=		cdb-[0-9]*
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
-BUILD_TARGET=		all sharedlib
-INSTALL_TARGET=		install install-sharedlib
+BUILD_TARGET=		all sharedlib piclib
+INSTALL_TARGET=		install install-piclib install-sharedlib
 
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	do-configure
