@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2009/10/14 08:22:35 obache Exp $
+# $NetBSD: Makefile,v 1.5 2011/10/25 08:36:20 obache Exp $
 #
 
 .include "../../textproc/mecab/Makefile.common"
 
 DISTNAME=	mecab-python-${MECAB_VERSION}
 PKGNAME=	${PYPKGPREFIX}-mecab-${MECAB_VERSION}
-PKGREVISION=	1
 CATEGORIES+=	python
 
 COMMENT=	MeCab python module

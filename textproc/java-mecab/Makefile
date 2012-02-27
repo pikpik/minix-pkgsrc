@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/10/14 08:22:35 obache Exp $
+# $NetBSD: Makefile,v 1.4 2009/12/28 01:01:19 obache Exp $
 #
 
 .include "../../textproc/mecab/Makefile.common"
@@ -27,9 +27,5 @@ BUILDLINK_API_DEPENDS.mecab+=	mecab>=${MECAB_VERSION}
 .include "../../textproc/mecab/buildlink3.mk"
 .include "../../mk/java-vm.mk"
 CXXFLAGS+=	-I${PKG_JAVA_HOME}/include
-.for d in ${PKG_JAVA_HOME}/include/*
-.  if exists(${d}/jni_md.h)
-CXXFLAGS+=	-I${d}
-.  endif
-.endfor
+CXXFLAGS+=	-I${PKG_JAVA_HOME}/include/${LOWER_OPSYS}
 .include "../../mk/bsd.pkg.mk"
