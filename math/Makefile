@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.222 2011/11/12 07:53:17 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.223 2012/02/09 12:42:21 drochner Exp $
 
 COMMENT=	Mathematics
 
@@ -55,6 +55,7 @@ SUBDIR+=	blitz++
 SUBDIR+=	calc
 SUBDIR+=	calcoo
 SUBDIR+=	capc-calc
+SUBDIR+=	cgal
 SUBDIR+=	clisp-pari
 SUBDIR+=	cln
 SUBDIR+=	dcdflib.c
