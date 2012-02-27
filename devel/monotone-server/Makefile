@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2011/04/03 08:58:00 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2011/12/04 23:37:14 riz Exp $
 #
 
 DISTNAME=	monotone-1.0
@@ -7,7 +7,7 @@ CATEGORIES=	devel scm
 MASTER_SITES=	http://monotone.ca/downloads/1.0/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://monotone.ca/
 COMMENT=	Simplifies the configuration of a dedicated Monotone server
 
