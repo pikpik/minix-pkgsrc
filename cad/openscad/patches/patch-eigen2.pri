@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-eigen2.pri,v 1.1.1.1 2012/02/27 14:44:29 reinoud Exp $
+
+Explicitly set the Eigen2 include path for pkgsrc.
 
 --- eigen2.pri.orig	2011-12-27 13:46:10.000000000 +0000
 +++ eigen2.pri
