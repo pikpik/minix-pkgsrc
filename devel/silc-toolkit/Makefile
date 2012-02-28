@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/01/16 17:57:37 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2010/08/30 11:17:16 adam Exp $
 
 DISTNAME=	silc-toolkit-1.1.10
 CATEGORIES=	devel chat security
@@ -24,6 +24,9 @@ CONFIGURE_ARGS+=	--without-iconv
 #.if ${MACHINE_ARCH} != "i386"
 #CONFIGURE_ARGS+=	--disable-asm
 #.endif
+
+CONFIGURE_ENV+=		ac_cv_lib_gmp___gmpz_init=no
+CONFIGURE_ENV+=		ac_cv_func_iconv=no
 
 PKGCONFIG_OVERRIDE+=	lib/silc.pc.in
 PKGCONFIG_OVERRIDE+=	lib/silcclient.pc.in
