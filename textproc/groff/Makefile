@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2010/02/04 13:13:57 tnn Exp $
+# $NetBSD: Makefile,v 1.59 2011/07/27 16:33:25 tez Exp $
 #
 
 DISTNAME=	groff-1.20.1
@@ -93,6 +93,5 @@ post-install:
 	  ${ECHO} "$$line" >> ${WRKDIR}/PLIST-local;			\
 	done
 
-# we only want the charset.alias file, so no buildlinkery for libiconv
-DEPENDS+=	libiconv-[0-9]*:../../converters/libiconv
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
