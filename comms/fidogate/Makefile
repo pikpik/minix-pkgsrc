@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2009/12/18 01:09:23 abs Exp $
+# $NetBSD: Makefile,v 1.62 2010/06/19 12:18:51 joerg Exp $
 #
 
 DISTNAME=	fidogate-4.4.10
@@ -35,6 +35,7 @@ SUBST_FILES.paths=	config.make
 SUBST_SED.paths=	-e "s,@PREFIX@,"${PREFIX:Q}",g"
 SUBST_SED.paths+=	-e "s,@PKG_SYSCONFDIR@,"${PKG_SYSCONFDIR:Q}",g"
 SUBST_SED.paths+=	-e "s,@PKGINFODIR@,"${PKGINFODIR:Q}",g"
+SUBST_SED.paths+=	-e "s,@PERL@,"${TOOLS_PATH.perl:Q}",g"
 SUBST_STAGE.paths=	pre-build
 
 # Too many schar/uchar issues.
