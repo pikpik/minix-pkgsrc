@@ -1,7 +1,9 @@
 $NetBSD$
 
---- kqueuemplexer.cc.orig	2009-04-21 23:45:31.000000000 +0100
-+++ kqueuemplexer.cc	2009-04-21 23:45:41.000000000 +0100
+kqueue systems normally have sys/event.h
+
+--- kqueuemplexer.cc.orig	2010-09-21 16:22:09.000000000 +0000
++++ kqueuemplexer.cc
 @@ -6,9 +6,7 @@
  #include <boost/lexical_cast.hpp>
  #include "syncres.hh"
@@ -11,4 +13,4 @@ $NetBSD$
 -#endif
  #include <sys/time.h>
  
- using namespace boost;
+ #include "namespaces.hh"
