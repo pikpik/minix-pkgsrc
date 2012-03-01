@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/01/04 11:04:04 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/02/29 18:49:40 morr Exp $
 
 DISTNAME=		rxvt-unicode-9.15
 CATEGORIES=		x11
@@ -17,6 +17,8 @@ USE_TOOLS+=		pkg-config
 USE_FEATURES+=		snprintf
 
 CONFIGURE_ENV+=		ac_cv_path_TIC=no
+
+CONFIGURE_ARGS+=       --enable-256-color
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+= 	share/doc/rxvt-unicode share/examples/rxvt-unicode
