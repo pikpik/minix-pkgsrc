@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/07/04 20:54:31 jlam Exp $
+# $NetBSD: Makefile,v 1.15 2010/02/01 01:51:50 joerg Exp $
 #
 
 DISTNAME=		ubs-0.17
@@ -18,6 +18,8 @@ GNU_CONFIGURE=		yes
 RCD_SCRIPTS=		ubs
 PKG_SYSCONFSUBDIR=	ubs
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
+
+CFLAGS.SunOS+=		-std=c99 -D_XOPEN_SOURCE=600
 
 .include "../../mk/bsd.prefs.mk"
 
