@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/16 08:56:08 wiz Exp $
 #
 
 DISTNAME=	libifp-1.0.0.2
@@ -16,6 +16,9 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-libusb=${BUILDLINK_PREFIX.libusb}
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
+USE_FEATURES+=	fts_open
+
+CFLAGS.SunOS+=	-fPIC
 
 .include "../../devel/libusb/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
