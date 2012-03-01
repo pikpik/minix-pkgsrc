@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2008/02/02 17:36:40 heinz Exp $
+# $NetBSD: Makefile,v 1.9 2009/04/09 00:48:13 joerg Exp $
 
 DISTNAME=	pkg_regress-0.2
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	rillig@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Run pkgsrc infrastructure regression test suite
 
 PKG_DESTDIR_SUPPORT=	user-destdir

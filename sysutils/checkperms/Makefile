@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.22 2009/12/14 21:25:14 gdt Exp $
+# $NetBSD: Makefile,v 1.23 2010/04/20 16:01:38 tnn Exp $
 #
 
 DISTNAME=	checkperms-1.11
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.roland-illig.de/checkperms/
 
-MAINTAINER=	rillig@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.roland-illig.de/checkperms/
 COMMENT=	Check and correct file permissions
 LICENSE=	modified-bsd
