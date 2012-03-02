@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2009/05/19 08:59:33 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2009/09/03 12:35:32 joerg Exp $
 #
 
 DISTNAME=		rsaref
@@ -22,6 +22,7 @@ CRYPTO=			yes
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_FEATURES+=		cdefs
 USE_LIBTOOL=		yes
 MAKE_FILE=		unix/makefile
 BUILD_TARGET=		librsaref.la

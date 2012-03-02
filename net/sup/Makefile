@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/05/30 14:25:26 christos Exp $
+# $NetBSD: Makefile,v 1.7 2010/02/11 22:52:52 joerg Exp $
 #
 
 DISTNAME=	sup-0.3
@@ -9,6 +9,8 @@ MAINTAINER=	christos@NetBSD.org
 COMMENT=	Network file distribution/synchronisation utility
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_FEATURES+=		cdefs
 
 INSTALLATION_DIRS+=	sbin ${PKGMANDIR}/man1 ${PKGMANDIR}/man8
 
