@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/01/09 09:31:33 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/01/12 15:38:45 hans Exp $
 #
 
 PKGNAME=	gnat-aux-${SNAPSHOT}
@@ -12,9 +12,9 @@ HOMEPAGE=	http://www.dragonlace.net/
 COMMENT=	GNAT Ada compiler based on GCC ${GCC_BRANCH}
 LICENSE=	gnu-gpl-v3 AND gnu-lgpl-v3
 
-SNAPSHOT=	20111026
+SNAPSHOT=	20120301
 GCC_BRANCH=	4.6
-GCC_POINT=	2
+GCC_POINT=	3
 GCC_VERSION=	${GCC_BRANCH}.${GCC_POINT}
 LANGS=		c
 
