@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/01/21 20:17:27 apb Exp $
 #
 
 DISTNAME=	pyzmq-2.1.10
+PKGREVISION=	1
 PKGNAME=        ${PYPKGPREFIX}-${DISTNAME:S/py//}
 CATEGORIES=	net
 MASTER_SITES=	https://github.com/zeromq/pyzmq/downloads/
