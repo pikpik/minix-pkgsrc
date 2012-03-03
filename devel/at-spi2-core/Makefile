@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/02/10 17:25:38 drochner Exp $
 #
 
 DISTNAME=	at-spi2-core-2.3.5
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/at-spi2-core/2.3/}
 EXTRACT_SUFX=	.tar.xz

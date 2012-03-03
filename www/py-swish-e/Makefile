@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/01/23 23:05:14 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2012/01/27 07:52:19 obache Exp $
 #
 
 DISTNAME=		swish-e-0.5
 PKGNAME=		${PYPKGPREFIX}-swish-e-0.5
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		textproc python
 MASTER_SITES=		http://download.berlios.de/py-swish-e/
 

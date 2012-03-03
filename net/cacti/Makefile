@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2012/02/06 12:41:10 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/09 04:46:02 asau Exp $
 #
 
 PKGNAME=		cacti-0.8.7i
 DISTNAME=		cacti-0.8.7i-PIA-3.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		http://www.cacti.net/downloads/
 
