@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/platex/japanese/README
+share/texmf-dist/doc/platex/japanese/sample.pdf
+share/texmf-dist/doc/platex/japanese/sample.tex
