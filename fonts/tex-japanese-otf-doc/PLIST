@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/fonts/japanese-otf/COPYRIGHT
+share/texmf-dist/doc/fonts/japanese-otf/readme.en.txt
+share/texmf-dist/doc/fonts/japanese-otf/readme.txt
