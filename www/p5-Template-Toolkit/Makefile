@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.36 2012/01/22 19:38:54 abs Exp $
+# $NetBSD: Makefile,v 1.37 2012/02/02 09:52:40 hans Exp $
 
-DISTNAME=	Template-Toolkit-2.23
+DISTNAME=	Template-Toolkit-2.24
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tto
 CATEGORIES=	www perl5
