@@ -4,6 +4,7 @@
 
 PKGNAME=	python27-${PY_DISTVERSION}
 CATEGORIES=	lang python
+PKGREVISION=	2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.python.org/
@@ -112,7 +113,7 @@ PLIST_VARS+=	extra-so
 PLIST.extra-so=	yes
 .endif
 
-LIBS.Minix+=           -lcrypt
+LIBS.Minix+=           -lcrypt -lbz2
 
 .if ${OPSYS} == "Minix"
 post-patch:

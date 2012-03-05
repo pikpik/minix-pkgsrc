@@ -488,5 +488,7 @@ pyexpat expat/xmlparse.c expat/xmlrole.c expat/xmltok.c pyexpat.c -I$(srcdir)/Mo
 # Example -- included for reference only:
 # xx xxmodule.c
 
+bz2 bz2module.c
+
 # Another example -- the 'xxsubtype' module shows C-level subtyping in action
 xxsubtype xxsubtype.c
