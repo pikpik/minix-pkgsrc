@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.95 2012/02/06 12:41:52 wiz Exp $
+# $NetBSD: Makefile,v 1.94 2012/01/24 09:11:16 sbd Exp $
 
 .include "../../devel/xulrunner/dist.mk"
 PKGNAME=	firefox-${FIREFOX_VER}
-PKGREVISION=	4
+# PKGREVISION=	2
 CATEGORIES=	www
 
 MAINTAINER=	tnn@NetBSD.org
@@ -20,11 +20,6 @@ ALL_ENV+=		MOZILLA_PKG_NAME=firefox
 
 .include "../../devel/xulrunner/mozilla-common.mk"
 .include "options.mk"
-
-.if (${OPSYS} == "Linux" || ${OPSYS} == "SunOS" || ${OPSYS} == "Darwin") && \
-    (${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64")
-BUILD_DEPENDS+=		yasm>=1.1.0:../../devel/yasm
-.endif
 
 MOZILLA=firefox
 MOZILLA_ICON=	${WRKSRC}/dist/firefox/chrome/icons/default/default48.png
@@ -70,7 +65,7 @@ CONFIGURE_ARGS+=	--disable-gnomevfs --disable-dbus --disable-gnomeui
 .if !empty(PKG_BUILD_OPTIONS.xulrunner:Mdebug)
 CONFIGURE_ARGS+=	--enable-debug --enable-debug-symbols
 CONFIGURE_ARGS+=	--disable-install-strip
-.else   
+.else
 CONFIGURE_ARGS+=	--disable-debug --disable-debug-symbols
 CONFIGURE_ARGS+=	--enable-install-strip
 .endif
