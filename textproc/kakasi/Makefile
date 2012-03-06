@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2009/05/01 14:59:30 zafer Exp $
+# $NetBSD: Makefile,v 1.18 2009/07/07 21:34:32 joerg Exp $
 
 DISTNAME=	kakasi-2.3.4
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	japanese textproc
 MASTER_SITES=	http://kakasi.namazu.org/stable/ 
 
@@ -18,7 +18,5 @@ INSTALLATION_DIRS=	${PKGMANDIR}/ja_JP.EUC/cat1 ${PKGMANDIR}/ja_JP.EUC/man1
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/kakasi.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/ja_JP.EUC/man1
-	${INSTALL_MAN} ${WRKSRC}/doc/kakasi.cat \
-		${DESTDIR}${PREFIX}/${PKGMANDIR}/ja_JP.EUC/cat1/kakasi.0
 
 .include "../../mk/bsd.pkg.mk"
