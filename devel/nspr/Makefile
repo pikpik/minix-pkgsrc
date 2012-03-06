@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.44 2011/11/21 21:33:13 seanb Exp $
+# $NetBSD: Makefile,v 1.45 2012/01/17 21:43:19 sbd Exp $
 #
 
 .include "../../devel/xulrunner/dist.mk"
-PKGNAME=	nspr-${NSPR_RELEASE}.3${MOZ_BRANCH_MINOR}
-NSPR_RELEASE=	4.8.9
+#PKGNAME=	nspr-${NSPR_RELEASE}.3${MOZ_BRANCH_MINOR}
+PKGNAME=	nspr-4.9${MOZ_BRANCH_MINOR}beta1
+NSPR_RELEASE=	4.9 Beta
 CATEGORIES=	devel
 
 MAINTAINER=	tnn@NetBSD.org
@@ -71,12 +72,12 @@ BUILDLINK_PASSTHRU_DIRS+=	Developer/Headers/FlatCarbon
 
 pre-configure:
 # sanity check: make sure the nspr release is what we think it is.
-	@set -e; if [ '"${NSPR_RELEASE}"' !=			\
-	  "`${AWK} '/PR_VERSION/ {print $$3}' <			\
-	    ${WRKSRC}/nsprpub/pr/include/prinit.h`" ]; then	\
-	  ${ECHO} "package is out of date";			\
-	  exit 1;						\
-	fi
+#	@set -e; if [ '"${NSPR_RELEASE}"' !=			\
+#	  "`${AWK} '/PR_VERSION/ {print $$3}' <			\
+#	    ${WRKSRC}/nsprpub/pr/include/prinit.h`" ]; then	\
+#	  ${ECHO} "package is out of date";			\
+#	  exit 1;						\
+#	fi
 	cd ${WRKSRC}/nsprpub && autoconf
 
 post-build:
