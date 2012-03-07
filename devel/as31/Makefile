@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/03/03 17:45:34 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2011/02/28 14:52:43 wiz Exp $
 
 DISTNAME=	asm.8051
 PKGNAME=	as31-19900126
@@ -18,6 +18,7 @@ EXTRACT_CMD=	${GZCAT} ${DOWNLOADED_DISTFILE} | \
 USE_TOOLS+=	yacc
 MAKE_FILE=	makefile
 BUILD_TARGET=	as31
+MAKE_JOBS_SAFE=	no
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
