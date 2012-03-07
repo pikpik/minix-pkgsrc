@@ -1,12 +1,11 @@
 $NetBSD$
 
---- src/osgPlugins/ffmpeg/FFmpegHeaders.hpp.orig	2010-03-19 08:03:02.000000000 +0000
+Point to correct header files.
+
+--- src/osgPlugins/ffmpeg/FFmpegHeaders.hpp.orig	2012-03-05 21:20:14.000000000 +0000
 +++ src/osgPlugins/ffmpeg/FFmpegHeaders.hpp
-@@ -6,11 +6,12 @@
- extern "C"
- {
- #define __STDC_CONSTANT_MACROS
-+#define FF_API_OLD_SAMPLE_FMT 0
+@@ -9,9 +9,9 @@ extern "C"
+ #define FF_API_OLD_SAMPLE_FMT 0
  #include <errno.h>    // for error codes defined in avformat.h
  #include <stdint.h>
 -#include <avcodec.h>
