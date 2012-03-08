@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2011/12/19 16:33:30 wiz Exp $
+# $NetBSD: Makefile,v 1.50 2012/01/28 11:00:53 wiz Exp $
 
 DISTNAME=	asc-source-1.16.4.0
 PKGNAME=	${DISTNAME:S/-source//}
@@ -48,6 +48,7 @@ post-install:
 .include "../../devel/SDLmm/buildlink3.mk"
 .include "../../devel/libsigc++1/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
+.include "../../graphics/jpeg/buildlink3.mk"
 .include "../../multimedia/smpeg/buildlink3.mk"
 .include "../../x11/paragui/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
