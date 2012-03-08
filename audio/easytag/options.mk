@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.3 2007/10/16 21:32:59 wiz Exp $
+# $NetBSD: options.mk,v 1.2 2007/11/21 21:40:25 drochner Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.easytag
-PKG_SUPPORTED_OPTIONS=	flac mpeg4ip ogg
-PKG_SUGGESTED_OPTIONS=	flac mpeg4ip ogg
+PKG_SUPPORTED_OPTIONS=	flac mpeg4ip ogg speex wavpack
+PKG_SUGGESTED_OPTIONS=	flac mpeg4ip ogg speex wavpack
 
 .include "../../mk/bsd.options.mk"
 
@@ -26,4 +26,18 @@ CPPFLAGS+=		-DHAVE_GTK
 CONFIGURE_ARGS+=	--enable-ogg
 .else
 CONFIGURE_ARGS+=	--disable-ogg
+.endif
+
+.if !empty(PKG_OPTIONS:Mspeex)
+.  include "../../audio/speex/buildlink3.mk"
+CONFIGURE_ARGS+=	--enable-speex
+.else
+CONFIGURE_ARGS+=	--disable-speex
+.endif
+
+.if !empty(PKG_OPTIONS:Mwavpack)
+.  include "../../audio/wavpack/buildlink3.mk"
+CONFIGURE_ARGS+=	--enable-wavpack
+.else
+CONFIGURE_ARGS+=	--disable-wavpack
 .endif
