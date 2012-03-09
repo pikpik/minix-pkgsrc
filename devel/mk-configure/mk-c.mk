@@ -1,5 +1,6 @@
 # $NetBSD$
 
+MAKE_PROGRAM=	mkcmake
 MAKE_ENV+=	MANDIR=${PREFIX}/${PKGMANDIR} INSTALL=${INSTALL:Q}
 
 do-configure:
