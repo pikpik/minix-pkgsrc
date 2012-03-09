@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/12/02 22:45:47 cheusov Exp $
+# $NetBSD: Makefile,v 1.9 2012/01/09 19:47:35 cheusov Exp $
 #
 
 DISTNAME=	lmdbg-1.0.0
@@ -30,12 +30,10 @@ REPLACE.runawk.old=	.*runawk
 REPLACE.runawk.new=	${PREFIX}/bin/runawk
 REPLACE_FILES.runawk=	scripts/lmdbg-*.in
 
-MAKE_PROGRAM=	${PREFIX}/bin/mkcmake
-
 post-install:
 	cd ${WRKSRC} && \
 	${MAKE_ENV} ${MAKE_PROGRAM} ${INSTALL_MAKE_FLAGS} install-doc
 
-.include "../../devel/mk-configure/configure.mk"
+.include "../../devel/mk-configure/mk-c.mk"
 .include "../../devel/libjudy/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
