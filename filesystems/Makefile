@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.31 2011/07/09 15:29:09 tron Exp $
+# $NetBSD: Makefile,v 1.32 2012/02/01 14:37:19 gdt Exp $
 #
 
 COMMENT=	File systems, and file system related packages
 
+SUBDIR+=	cloudfuse
 SUBDIR+=	fs-utils
 SUBDIR+=	fuse
 SUBDIR+=	fuse-afpfs-ng
