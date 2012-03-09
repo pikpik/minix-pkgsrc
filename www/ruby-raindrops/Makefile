@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/02/06 12:39:41 fhajny Exp $
 
 DISTNAME=	raindrops-0.8.0
+PKGREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc@NetBSD.org
