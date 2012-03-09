@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2010/02/10 19:17:35 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2012/01/27 10:19:16 obache Exp $
 
 DISTNAME=	Codeville-0.8.0
 PKGNAME=	codeville-0.8.0
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	devel scm
 MASTER_SITES=	http://codeville.org/download/
 
