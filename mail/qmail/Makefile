@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2011/09/28 06:36:57 joerg Exp $
+# $NetBSD: Makefile,v 1.62 2011/10/12 17:20:21 hans Exp $
 #
 
 DISTNAME=		${PKGNAME_NOREV}
@@ -67,6 +67,10 @@ INSTALLATION_DIRS+=	${EGDIR}/alias ${EGDIR}/boot ${EGDIR}/control
 INSTALLATION_DIRS+=	${EGDIR}/users
 
 .include "../../mk/bsd.prefs.mk"
+
+# XXX qmail always installs the manpages and catpages so MANINSTALL
+# XXX must be set here so thay are not removed from the PLIST. 
+MANINSTALL=		maninstall catinstall
 
 BUILD_DEFS+=		QMAILDIR QMAIL_QUEUE_DIR QMAIL_QUEUE_EXTRA
 
