@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.lightning,v 1.6 2011/11/13 16:59:58 tnn Exp $
 include/thunderbird/calIAlarm.h
 include/thunderbird/calIAlarmService.h
 include/thunderbird/calIAttachment.h
@@ -405,3 +405,7 @@ share/idl/thunderbird/calIWcapErrors.idl
 share/idl/thunderbird/calIWcapSession.idl
 share/idl/thunderbird/calIWeekInfoService.idl
 share/idl/thunderbird/calInternalInterfaces.idl
+include/thunderbird/calICalendarACLManager.h
+lib/thunderbird/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}/components/calDefaultACLManager.js
+lib/thunderbird/extensions/{e2fda1a4-762b-4020-b5ad-a41df1933103}/components/calDefaultACLManager.manifest
+share/idl/thunderbird/calICalendarACLManager.idl
