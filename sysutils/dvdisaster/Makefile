@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/02/06 12:41:32 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/03/03 00:13:55 wiz Exp $
 #
 
 DISTNAME=		dvdisaster-0.72.3
@@ -10,6 +10,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		shattered@NetBSD.org
 HOMEPAGE=		http://www.dvdisaster.net/en/
 COMMENT=		Protects data on optical media with error correcting codes
+LICENSE=		gnu-gpl-v2
 
 ONLY_FOR_PLATFORM=	Darwin-*-* FreeBSD-*-* Linux-*-*
 ONLY_FOR_PLATFORM+=	NetBSD-*-*
