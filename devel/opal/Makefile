@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/11/16 01:33:16 sbd Exp $
+# $NetBSD: Makefile,v 1.17 2011/12/06 01:21:35 marino Exp $
 #
 
 DISTNAME=		opal-3.6.6
@@ -48,7 +48,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/version.h ${DESTDIR}${PREFIX}/share/opal
 
 # pkgsrc's gsm is shlib, need additional linker flags.
-GSM_LIBS=		${LINKER_RPATH_FLAG}${BUILDLINK_PREFIX.gsm}/lib
+GSM_LIBS=		${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.gsm}/lib
 GSM_LIBS+=		-L${BUILDLINK_PREFIX.gsm}/lib -lgsm
 SUBST_CLASSES+=		gsm
 SUBST_STAGE.gsm=	pre-configure
