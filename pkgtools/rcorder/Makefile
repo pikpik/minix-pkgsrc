@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2008/06/20 01:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2009/04/09 00:48:14 joerg Exp $
 #
 
-DISTNAME=		rcorder-20031013
+DISTNAME=		rcorder-20120310
 CATEGORIES=		pkgtools sysutils
 MASTER_SITES=		# empty
 DISTFILES=		# empty
