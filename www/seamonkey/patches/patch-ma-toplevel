@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ma-toplevel,v 1.2 2011/07/11 20:46:36 tnn Exp $
 
---- config/autoconf.mk.in.orig	2011-07-06 08:40:27.000000000 +0000
+--- config/autoconf.mk.in.orig	2012-02-16 13:59:48.000000000 +0000
 +++ config/autoconf.mk.in
 @@ -60,14 +60,14 @@ MOZ_PKG_SPECIAL = @MOZ_PKG_SPECIAL@
  prefix		= @prefix@

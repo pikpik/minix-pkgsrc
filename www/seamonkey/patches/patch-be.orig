@@ -1,4 +1,4 @@
-$NetBSD: patch-be,v 1.3 2011/04/26 14:16:37 tnn Exp $
+$NetBSD: patch-be,v 1.1 2011/07/11 20:46:36 tnn Exp $
 
 Disable all sound support for now since it causes
 crashes and doesn't work correctly anyway ...
