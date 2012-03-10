@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2012/01/04 15:31:31 dholland Exp $
+# $NetBSD: Makefile,v 1.28 2012/01/18 14:47:13 adam Exp $
 
 DISTNAME=	mdocml-1.12.0
 PKGREVISION=	1
@@ -11,7 +11,7 @@ COMMENT=	Man page tool (mdoc macro compiler)
 LICENSE=	2-clause-bsd # not exactly, but near enough
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-MAKE_FLAGS+=		PREFIX=${PREFIX}
+MAKE_FLAGS+=		PREFIX=${PREFIX} DBLIB=${BDB_LIBS:Q}
 
 .include "../../mk/bdb.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
