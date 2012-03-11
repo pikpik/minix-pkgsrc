@@ -29,7 +29,7 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 .include "../../mk/bsd.prefs.mk"
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.xlockmore
-PKG_SUPPORTED_OPTIONS=	xlockmore-allow-root xlockmore-dpms
+PKG_SUPPORTED_OPTIONS=	xlockmore-allow-root xlockmore-dpms pam
 .if ${OPSYS} == "NetBSD"
 PKG_SUPPORTED_OPTIONS+=	oss
 .endif
@@ -80,6 +80,13 @@ CONFIGURE_ENV+=		ac_cv_path_dpms=${DPMS_ENV:Q}
 CONFIGURE_ARGS+=	--disable-allow-root
 .endif
 
+.if !empty(PKG_OPTIONS:Mpam)
+.  include "../../mk/pam.buildlink3.mk"
+CONFIGURE_ARGS+=	--enable-pam
+.else
+CONFIGURE_ARGS+=	--disable-pam
+.endif
+
 #
 # Special permissions of bin/xlock if any.
 #
@@ -95,6 +102,7 @@ SPECIAL_PERMS+=	bin/xlock ${REAL_ROOT_USER} shadow 2511
 # the inherited full dependency
 #BUILDLINK_DEPMETHOD.libXt?=	build
 
+.include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../x11/libICE/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
