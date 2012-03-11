@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/02/27 11:25:39 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/03/04 01:49:13 taca Exp $
 #
 
 PECL_DISTNAME=	php-${MODNAME}-${PECL_VERSION}
@@ -16,7 +16,7 @@ LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-FETCH_USING=		wget
+FETCH_USING=		curl
 EGDIR=			share/examples/php/mecab
 INSTALLATION_DIRS+=	${EGDIR}
 PLIST_SRC+=		${.CURDIR}/PLIST.extras
