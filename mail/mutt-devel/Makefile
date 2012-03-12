@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.82 2011/04/22 13:44:04 obache Exp $
+# $NetBSD: Makefile,v 1.83 2011/11/26 04:40:03 sbd Exp $
 
 DISTNAME=		mutt-1.5.21
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		mail
 MUTT_SITES=		ftp://ftp.mutt.org/mutt/ \
 			ftp://ftp.stealth.net/pub/mirrors/ftp.mutt.org/pub/mutt/ \
@@ -12,6 +12,7 @@ MASTER_SITES=		${MUTT_SITES:=devel/}
 MAINTAINER=		tonio@NetBSD.org
 HOMEPAGE=		http://www.mutt.org/
 COMMENT=		Text-based MIME mail client with PGP & S/MIME support
+LICENSE=		gnu-gpl-v2 OR gnu-gpl-v3 # or newer
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
