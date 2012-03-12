@@ -7,3 +7,4 @@ SHA1 (patch-aa) = 6a6b05d3166ce722a6da867fa1701179b9bfa6c2
 SHA1 (patch-ae) = ea154e23704cbd73e3199271e2d0d4a80b2832e8
 SHA1 (patch-ag) = 956ad89edc6dbbca499fb5b82cf2ed98589362a9
 SHA1 (patch-ah) = 61a9e9a142d6ffc3d378eebeca2b3b91148d7e78
+SHA1 (patch-libxslt_pattern.c) = 22ce9bf24c9a5cc8253586d01c97b2774ea9f94e
