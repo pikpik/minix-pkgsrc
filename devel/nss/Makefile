@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.47 2012/03/06 12:34:08 ryoon Exp $
+# $NetBSD: Makefile,v 1.48 2012/03/06 17:38:56 ryoon Exp $
 
 .include "../../devel/xulrunner/dist.mk"
 PKGNAME=		nss-${NSS_RELEASE}
 NSS_RELEASE=		3.13.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		security
 
 MAINTAINER=		tnn@NetBSD.org
@@ -74,7 +74,7 @@ do-install:
 	set -e; \
 	{ ${ECHO} "Name: NSS"; \
 	  ${ECHO} "Description: Mozilla Network Security Services"; \
-	  ${ECHO} "Version: ${PKGVERSION}"; \
+	  ${ECHO} "Version: ${PKGVERSION_NOREV}"; \
 	  ${ECHO} "Requires: nspr >= 4.8.2"; \
 	  ${ECHO} "Cflags: -I${PREFIX}/include/nss/nss -I${PREFIX}/include/nss"; \
 	  ${ECHO} "Libs: -L${PREFIX}/lib/nss" \
