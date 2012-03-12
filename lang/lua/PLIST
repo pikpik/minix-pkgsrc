@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.11 2009/06/14 18:03:36 joerg Exp $
+@comment $NetBSD$
 bin/lua
 bin/luac
 include/lauxlib.h
@@ -13,7 +13,6 @@ man/man1/luac.1
 share/doc/lua/COPYRIGHT
 share/doc/lua/HISTORY
 share/doc/lua/README
-share/doc/lua/amazon.gif
 share/doc/lua/contents.html
 share/doc/lua/logo.gif
 share/doc/lua/lua.html
