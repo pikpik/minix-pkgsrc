@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/modhex
+bin/ykgenerate
+bin/ykparse
+include/yubikey.h
+lib/libyubikey.la
