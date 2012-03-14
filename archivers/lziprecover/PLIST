@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/lziprecover
+info/lziprecover.info
+man/man1/lziprecover.1
