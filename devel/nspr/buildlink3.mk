@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.19 2012/03/06 17:38:56 ryoon Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2012/03/11 03:59:27 ryoon Exp $
 
 BUILDLINK_TREE+=	nspr
 
@@ -11,6 +11,7 @@ BUILDLINK_PKGSRCDIR.nspr?=	../../devel/nspr
 
 BUILDLINK_FILES.nspr+=          lib/nspr/*
 BUILDLINK_FILES.nspr+=          include/nspr/*
+BUILDLINK_FILES.nspr+=          include/nspr/obsolete/*
 
 BUILDLINK_LIBDIRS.nspr+=	lib/nspr
 BUILDLINK_RPATHDIRS.nspr+=	lib/nspr
