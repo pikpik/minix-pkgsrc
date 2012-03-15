@@ -1,18 +1,18 @@
-@comment $NetBSD: PLIST,v 1.3 2005/12/30 21:03:59 jlam Exp $
+@comment $NetBSD: PLIST,v 1.4 2009/06/14 17:43:16 joerg Exp $
 bin/iodbc-config
 bin/iodbctest
 bin/iodbctestw
-include/iodbcext.h
-include/iodbcinst.h
-include/iodbcunix.h
-include/isql.h
-include/isqlext.h
-include/isqltypes.h
-include/odbcinst.h
-include/sql.h
-include/sqlext.h
-include/sqltypes.h
-include/sqlucode.h
+include/iodbc/iodbcext.h
+include/iodbc/iodbcinst.h
+include/iodbc/iodbcunix.h
+include/iodbc/isql.h
+include/iodbc/isqlext.h
+include/iodbc/isqltypes.h
+include/iodbc/odbcinst.h
+include/iodbc/sql.h
+include/iodbc/sqlext.h
+include/iodbc/sqltypes.h
+include/iodbc/sqlucode.h
 lib/libiodbc.la
 lib/libiodbcinst.la
 lib/libodbc.a

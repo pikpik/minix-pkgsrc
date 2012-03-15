@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:10:39 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2009/03/20 19:24:05 joerg Exp $
 
 BUILDLINK_TREE+=	iodbc
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	iodbc
 IODBC_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.iodbc+=	iodbc>=3.52.3
+BUILDLINK_INCDIRS.iodbc?=	${PG_SUBPREFIX}/include
 BUILDLINK_PKGSRCDIR.iodbc?=	../../databases/iodbc
 
 # ODBC drivers don't need these bits, but ODBC clients do.
