@@ -1,0 +1,13 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	remmina
+
+.if !defined(REMMINA_BUILDLINK3_MK)
+REMMINA_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.remmina+=	remmina>=0.9.3
+BUILDLINK_PKGSRCDIR.remmina?=	../../net/remmina
+
+.endif	# REMMINA_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-remmina
