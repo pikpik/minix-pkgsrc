@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.913 2012/02/28 20:32:35 minskim Exp $
+# $NetBSD: Makefile,v 1.914 2012/03/07 14:26:18 taca Exp $
 #
 
 COMMENT=	Networking tools
@@ -523,6 +523,8 @@ SUBDIR+=	rancid
 SUBDIR+=	rbldnsd
 SUBDIR+=	rdesktop
 SUBDIR+=	rdist6
+SUBDIR+=	remmina
+SUBDIR+=	remmina-plugins
 SUBDIR+=	rinetd
 SUBDIR+=	rootprobe
 SUBDIR+=	rp-l2tp
