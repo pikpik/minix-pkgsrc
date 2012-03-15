@@ -1,8 +1,9 @@
 $NetBSD$
 
---- ipc/chromium/src/base/process_util_bsd.cc.orig	2012-03-11 15:20:05.625294000 +0000
-+++ ipc/chromium/src/base/process_util_bsd.cc
-@@ -0,0 +1,297 @@
+
+--- ipc/chromium/src/base/process_util_bsd.cc.orig	2012-03-08 18:52:15.229788000 +0100
++++ ipc/chromium/src/base/process_util_bsd.cc	2012-03-11 10:59:50.559480000 +0100
+@@ -0,0 +1,309 @@
 +// Copyright (c) 2008 The Chromium Authors. All rights reserved.
 +// Use of this source code is governed by a BSD-style license that can be
 +// found in the LICENSE file.
@@ -15,13 +16,23 @@ $NetBSD$
 +#include <fcntl.h>
 +#include <unistd.h>
 +#include <string>
++#if defined(OS_DRAGONFLY)
++/* DragonFly, as of v3.0.1, does not explicitly mark symbols public */
++#define PRE_SYS_INCLUDE		_Pragma("GCC visibility push(default)")
++#define POST_SYS_INCLUDE	_Pragma("GCC visibility pop")
++#else
++#define PRE_SYS_INCLUDE
++#define POST_SYS_INCLUDE
++#endif
++PRE_SYS_INCLUDE
 +#include <kvm.h>
++POST_SYS_INCLUDE
 +#include <sys/sysctl.h>
 +#include <sys/types.h>
 +#include <sys/wait.h>
 +#if defined(OS_DRAGONFLY)
-+#define HAVE_POSIX_SPAWN
 +#include <sys/user.h>
++#define HAVE_POSIX_SPAWN	1
 +#endif
 +
 +#include "base/debug_util.h"
@@ -39,7 +50,9 @@ $NetBSD$
 +#endif
 +
 +#ifdef HAVE_POSIX_SPAWN
++PRE_SYS_INCLUDE
 +#include <spawn.h>
++POST_SYS_INCLUDE
 +extern "C" char **environ __dso_public;
 +#endif
 +
