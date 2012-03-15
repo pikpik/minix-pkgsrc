@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.7 2011/06/19 13:46:29 plunky Exp $
+# $NetBSD: Makefile,v 1.8 2011/10/30 12:07:50 obache Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
-PKGREVISION=		4
+PKGREVISION=		5
 
 CONFLICTS=		bittorrent-[0-9]*
 

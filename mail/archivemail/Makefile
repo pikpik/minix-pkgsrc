@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2010/02/10 19:17:40 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2012/01/24 11:49:33 obache Exp $
 #
 
 DISTNAME=		archivemail-0.9.0
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=archivemail/}
 

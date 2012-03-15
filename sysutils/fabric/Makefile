@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2011/12/04 21:44:52 gls Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/12 15:45:34 gls Exp $
 #
 
 VERSION=		1.3.4
 DISTNAME=		Fabric-${VERSION}
 PKGNAME=		${DISTNAME:S/F/f/}
+PKGREVISION=		1
 CATEGORIES=		sysutils net
 MASTER_SITES=		http://pypi.python.org/packages/source/F/Fabric/
 

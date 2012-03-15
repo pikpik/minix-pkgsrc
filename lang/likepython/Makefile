@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/01 11:07:50 is Exp $
+# $NetBSD: Makefile,v 1.2 2010/03/03 12:25:16 is Exp $
 #
 
 VER=            0.1
 DISTNAME=       likepython_${VER}
 PKGNAME=        likepython-${VER}
+PKGREVISION=	1
 
 CATEGORIES=	lang
 MASTER_SITES=	http://www.staringispolite.com/likepython/

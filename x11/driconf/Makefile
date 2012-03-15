@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2011/04/22 13:45:02 obache Exp $
+# $NetBSD: Makefile,v 1.16 2011/10/14 12:30:53 obache Exp $
 #
 
 DISTNAME=	driconf-0.9.1
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

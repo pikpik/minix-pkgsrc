@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/11/08 11:15:32 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/02/04 12:55:45 obache Exp $
 #
 
 DISTNAME=	coccigrep-1.6
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://home.regit.org/wp-content/uploads/2011/08/
 

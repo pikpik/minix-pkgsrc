@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.41 2011/01/01 12:34:14 obache Exp $
+# $NetBSD: Makefile,v 1.42 2011/11/01 11:21:59 obache Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
 PKGNAME=	${DISTNAME:S/BitT/bitt/}
-PKGREVISION=	5
+PKGREVISION=	6
 
 CONFLICTS+=	bittornado-[0-9]*
 CONFLICTS+=	BitTornado-[0-9]*

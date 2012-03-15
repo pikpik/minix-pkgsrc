@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/01/30 00:55:59 jnemeth Exp $
 #
 
 DISTNAME=	RBTools-0.2
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.reviewboard.org/releases/RBTools/0.2/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2010/12/25 15:00:36 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2011/11/01 21:08:55 scottr Exp $
 #
 
 DISTNAME=	viewvc-1.1.11
+PKGREVISION=	1
 CATEGORIES=	devel www
 MASTER_SITES=	# http://viewvc.tigris.org/files/documents/3330/49022/
 
