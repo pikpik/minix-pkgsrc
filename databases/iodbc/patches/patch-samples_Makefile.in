@@ -1,8 +1,8 @@
 $NetBSD$
 
---- samples/Makefile.in.orig	2007-10-08 15:04:49.000000000 +0200
+--- samples/Makefile.in.orig	2009-09-10 14:34:57.000000000 +0000
 +++ samples/Makefile.in
-@@ -573,9 +573,9 @@ uninstall-am: uninstall-binPROGRAMS unin
+@@ -627,9 +627,9 @@ uninstall-am: uninstall-binPROGRAMS
  
  
  install-exec-hook:

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- include/sqltypes.h.orig	2007-10-07 15:44:49.000000000 +0200
+--- include/sqltypes.h.orig	2009-09-09 20:06:24.000000000 +0000
 +++ include/sqltypes.h
-@@ -394,18 +394,7 @@ typedef unsigned short SQLWCHAR;
+@@ -400,18 +400,7 @@ typedef unsigned short SQLWCHAR;
  #else
  #  include <stdlib.h>
  
