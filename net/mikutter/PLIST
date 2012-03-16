@@ -166,6 +166,7 @@ share/mikutter/core/retriever.rb
 share/mikutter/core/serialthread.rb
 share/mikutter/core/service.rb
 share/mikutter/core/skin/data/close.png
+share/mikutter/core/skin/data/directmessage.png
 share/mikutter/core/skin/data/etc.png
 share/mikutter/core/skin/data/fav.png
 share/mikutter/core/skin/data/followers.png
