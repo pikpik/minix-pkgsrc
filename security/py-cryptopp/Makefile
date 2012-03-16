@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/02/18 21:18:02 gls Exp $
+# $NetBSD: Makefile,v 1.6 2012/03/16 00:12:35 gdt Exp $
 #
 
 VERSION=	0.6.0.1206569328141510525648634803928199668821045408958
@@ -10,6 +10,10 @@ MASTER_SITES=	http://pypi.python.org/packages/source/p/pycryptopp/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tahoe-lafs.org/trac/pycryptopp
 COMMENT=	Python wrapper for (and copy of parts of) crypto++
+
+# GPL v2 or later.
+# or Transitive Grace Period Public Licence, version 1.0 or later.
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
