@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.614 2012/03/04 02:30:17 taca Exp $
+# $NetBSD: Makefile,v 1.615 2012/03/08 11:39:52 fhajny Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -215,6 +215,7 @@ SUBDIR+=	kdoc
 SUBDIR+=	latex2html
 SUBDIR+=	libclucene
 SUBDIR+=	libcroco
+SUBDIR+=	libexttextcat
 SUBDIR+=	liblinebreak
 SUBDIR+=	liblrdf
 SUBDIR+=	libnxml
