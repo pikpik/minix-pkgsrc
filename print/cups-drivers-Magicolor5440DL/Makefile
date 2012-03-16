@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/01/29 10:11:01 marino Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/06 12:41:20 wiz Exp $
 #
 
 DISTNAME=	5440DL_lin64bit_1_2_1
@@ -16,7 +16,7 @@ BUILD_DEPENDS+=	jbigkit>=1.6:../../graphics/jbigkit
 DEPENDS+=	cups>=1.1.14:../../print/cups
 DEPENDS+=	ghostscript>=8.0:../../print/ghostscript
 
-PKG_DESTDIR_SUPPORT=    user-destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/5440DL_64_v1.2.1/magicolor5440DL-1.2.1/
 
