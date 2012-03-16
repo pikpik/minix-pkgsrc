@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2010/02/10 19:17:31 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/01/23 12:10:25 obache Exp $
 #
 
 DISTNAME=		amaroc-0.3
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=amaroc/}
 EXTRACT_SUFX=		.tar.bz2

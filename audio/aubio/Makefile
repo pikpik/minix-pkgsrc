@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/06 11:45:47 ryoon Exp $
 #
 
 DISTNAME=	aubio-0.3.2
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://aubio.org/pub/
 
