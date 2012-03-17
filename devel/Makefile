@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1570 2012/03/11 08:21:48 markd Exp $
+# $NetBSD: Makefile,v 1.1571 2012/03/15 11:50:51 ryoon Exp $
 #
 
 COMMENT=	Development utilities
@@ -1319,7 +1319,6 @@ SUBDIR+=	qof
 SUBDIR+=	qtscriptgenerator
 SUBDIR+=	quilt
 SUBDIR+=	ragel
-SUBDIR+=	rake
 SUBDIR+=	rapidsvn
 SUBDIR+=	ratfor
 SUBDIR+=	rcs
@@ -1415,6 +1414,7 @@ SUBDIR+=	ruby-rcov
 SUBDIR+=	ruby-rcsparse
 SUBDIR+=	ruby-rd-mode
 SUBDIR+=	ruby-rdoc
+SUBDIR+=	ruby-rake
 SUBDIR+=	ruby-readline
 SUBDIR+=	ruby-rgl
 SUBDIR+=	ruby-rspec
