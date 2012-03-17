@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/12/16 12:38:43 taca Exp $
 
-DISTNAME=	multi_json-1.0.4
+DISTNAME=	multi_json-1.1.0
 CATEGORIES=	textproc
 
 MAINTAINER=	pkgsrc-userse@NetBSD.org
