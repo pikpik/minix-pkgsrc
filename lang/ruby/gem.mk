@@ -1,4 +1,4 @@
-# $NetBSD: gem.mk,v 1.11 2012/01/12 08:43:22 obache Exp $
+# $NetBSD: gem.mk,v 1.12 2012/03/02 03:46:09 taca Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # and install Ruby gems.
@@ -129,7 +129,7 @@ UPDATE_GEMSPEC=		../../lang/ruby/files/update-gemspec.rb
 .endif
 
 .if ${GEM_BUILD} == "rake"
-USE_RAKE=		YES
+USE_RAKE?=		YES
 .endif
 
 .if defined(RUBY_RAILS_SUPPORTED)
