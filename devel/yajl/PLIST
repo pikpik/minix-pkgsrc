@@ -1,0 +1,5 @@
+@comment $NetBSD$
+include/yajl/yajl_common.h
+include/yajl/yajl_gen.h
+include/yajl/yajl_parse.h
+lib/libyajl.la
