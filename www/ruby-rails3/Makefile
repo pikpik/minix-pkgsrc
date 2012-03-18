@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2011/05/30 13:08:15 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.6 2011/12/13 16:03:09 taca Exp $
 
 DISTNAME=	rails-${RUBY_RAILS_VERSION}
 CATEGORIES=	www
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://www.rubyonrails.org/
-COMMENT=	Full-stack web application framework
+COMMENT=	Full-stack web application framework, Rails 3.0
 LICENSE=	mit
 
 DEPENDS+=	${RUBY_ACTIVESUPPORT_DEPENDS}
