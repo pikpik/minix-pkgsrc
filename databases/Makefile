@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.393 2012/03/01 21:13:41 gdt Exp $
+# $NetBSD: Makefile,v 1.394 2012/03/17 14:19:35 taca Exp $
 #
 
 COMMENT=	Databases
@@ -323,6 +323,7 @@ SUBDIR+=	ruby-acts-as-versioned
 SUBDIR+=	ruby-acts-as-versioned02
 SUBDIR+=	ruby-arel
 SUBDIR+=	ruby-arel20
+SUBDIR+=	ruby-arel22
 SUBDIR+=	ruby-cassandra
 SUBDIR+=	ruby-data_objects
 SUBDIR+=	ruby-datamapper
