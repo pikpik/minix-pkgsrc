@@ -1,11 +1,11 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/12/16 12:28:37 taca Exp $
 
 DISTNAME=	activeresource-${RUBY_RAILS_VERSION}
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.rubyonrails.org/
-COMMENT=	REST modeling framework (part of Rails)
+COMMENT=	REST modeling framework (part of Rails 3.1)
 LICENSE=	mit
 
 DEPENDS+=	${RUBY_ACTIVESUPPORT_DEPENDS}
