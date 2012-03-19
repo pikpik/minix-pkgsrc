@@ -1,6 +1,6 @@
-$NetBSD: patch-mozilla_media_libvpx_vpx_config_c.c,v 1.1 2012/01/07 20:44:32 marino Exp $
+$NetBSD: patch-mozilla_media_libvpx_vpx_config_c.c,v 1.2 2012/03/10 03:26:06 ryoon Exp $
 
---- mozilla/media/libvpx/vpx_config_c.c.orig	2012-02-16 14:09:23.000000000 +0000
+--- mozilla/media/libvpx/vpx_config_c.c.orig	2012-03-13 05:33:00.000000000 +0000
 +++ mozilla/media/libvpx/vpx_config_c.c
 @@ -12,12 +12,12 @@
  /* 32 bit MacOS. */
