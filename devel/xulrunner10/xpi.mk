@@ -1,7 +1,7 @@
-# $NetBSD: xpi.mk,v 1.1 2010/04/22 17:06:19 tnn Exp $
+# $NetBSD: xpi.mk,v 1.1.1.1 2012/03/15 08:58:27 ryoon Exp $
 #
 # common logic for repackaging mozilla extensions (.xpi files)
-# Used by the {firefox,seamonkey,thunderbird}-l10n packages.
+# Used by the {firefox,seamonkey,thunderbird}10-l10n packages.
 
 USE_TOOLS+=	unzip pax
 
