@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2012/02/29 16:32:27 hans Exp $
+# $NetBSD: Makefile,v 1.14 2011/01/23 07:55:15 markd Exp $
 
 DISTNAME=	kdewebdev-${_KDE_VERSION}
-PKGREVISION=	8
+PKGNAME=	${DISTNAME:S/-4/4-4/}
 CATEGORIES=	www
 COMMENT=	HTML editor and tools suitable for experienced web developers
 
@@ -16,6 +16,6 @@ COMMENT=	HTML editor and tools suitable for experienced web developers
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../www/tidy/buildlink3.mk"
 .include "../../x11/kdelibs4/buildlink3.mk"
-.include "../../x11/kdebase-runtime4/buildlink3.mk"
+.include "../../x11/kde-runtime4/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
