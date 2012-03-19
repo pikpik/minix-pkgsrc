@@ -1,7 +1,6 @@
 # $NetBSD: Makefile,v 1.15 2011/11/01 06:57:58 sbd Exp $
 
-DISTNAME=	redland-1.0.12
-PKGREVISION=	3
+DISTNAME=	redland-1.0.15
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.librdf.org/source/
 
@@ -43,6 +42,6 @@ post-install:
 
 .include "../../devel/libltdl/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
-.include "../../textproc/raptor/buildlink3.mk"
+.include "../../textproc/raptor2/buildlink3.mk"
 .include "../../textproc/rasqal/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
