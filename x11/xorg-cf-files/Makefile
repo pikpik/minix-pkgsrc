@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/01/15 14:01:59 shattered Exp $
+# $NetBSD: Makefile,v 1.18 2012/02/15 15:25:15 hans Exp $
 #
 
 DISTNAME=		xorg-cf-files-1.0.4
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=util/}
 EXTRACT_SUFX=		.tar.bz2
@@ -38,6 +38,9 @@ pre-configure:
 		-e "s|@PKGMANDIR@|${PKGMANDIR}|"	\
 		-e "s|@MAKE@|${MAKE_PROGRAM}|"	${FILESDIR}/host.def > \
 		${WRKSRC}/host.def
+	if [ ${X11BASE} != ${PREFIX} ]; then \
+		echo '#define RealProjectRoot ${X11BASE}' >> ${WRKSRC}/host.def; \
+	fi
 
 .include "../../x11/xproto/buildlink3.mk"
 

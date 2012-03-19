@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.16 2008/01/05 17:24:12 tron Exp $
+# $NetBSD: builtin.mk,v 1.17 2008/10/05 21:36:35 cube Exp $
 
 BUILTIN_PKG:=	Xft2
 
@@ -12,11 +12,10 @@ BUILTIN_FIND_FILES.H_XFT2=	${X11BASE}/include/X11/Xft/Xft.h
 ### set IS_BUILTIN.<pkg> appropriately ("yes" or "no").
 ###
 .if !defined(IS_BUILTIN.Xft2)
-IS_BUILTIN.Xft2=	no
 .  if empty(H_XFT2:M__nonexistent__)
-BUILTIN_IMAKE_CHECK:=	Xft2:BuildXftLibrary
-.    include "../../mk/buildlink3/imake-check.mk"
-IS_BUILTIN.Xft2=	${BUILTIN_IMAKE_CHECK.Xft2}
+IS_BUILTIN.Xft2=	yes
+.  else
+IS_BUILTIN.Xft2=	no
 .  endif
 .endif
 MAKEVARS+=	IS_BUILTIN.Xft2

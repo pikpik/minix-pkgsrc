@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.10 2006/04/06 06:22:56 reed Exp $
+# $NetBSD: builtin.mk,v 1.11 2008/10/05 21:36:32 cube Exp $
 
 BUILTIN_PKG:=	Xfixes
 
@@ -12,11 +12,10 @@ BUILTIN_FIND_FILES.H_XFIXES=	${X11BASE}/include/X11/extensions/Xfixes.h
 ### set IS_BUILTIN.<pkg> appropriately ("yes" or "no").
 ###
 .if !defined(IS_BUILTIN.Xfixes)
-IS_BUILTIN.Xfixes=	no
 .  if empty(H_XFIXES:M__nonexistent__)
-BUILTIN_IMAKE_CHECK:=	Xfixes:BuildXfixesLibrary
-.    include "../../mk/buildlink3/imake-check.mk"
-IS_BUILTIN.Xfixes=	${BUILTIN_IMAKE_CHECK.Xfixes}
+IS_BUILTIN.Xfixes=	yes
+.  else
+IS_BUILTIN.Xfixes=	no
 .  endif
 .endif
 MAKEVARS+=	IS_BUILTIN.Xfixes
