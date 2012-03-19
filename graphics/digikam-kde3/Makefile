@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/02/06 12:40:20 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/03 00:13:11 wiz Exp $
 
 DISTNAME=		digikam-0.9.6
 PKGREVISION=		15
@@ -34,7 +34,7 @@ PLIST_SUBST=	HTMLDIR=${DISTNAME}
 .include "../../graphics/imlib2/buildlink3.mk"
 .include "../../graphics/jasper/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
-.include "../../graphics/libkdcraw/buildlink3.mk"
+.include "../../graphics/libkdcraw-kde3/buildlink3.mk"
 .include "../../graphics/libkexiv2/buildlink3.mk"
 .include "../../graphics/libkipi/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"

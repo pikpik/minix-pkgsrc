@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:40:28 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/03/03 00:13:16 wiz Exp $
 
 DISTNAME=	kipi-plugins-0.1.7
 PKGNAME=	kipi-plugins-calendar-0.1.7
@@ -34,7 +34,7 @@ INSTALL_DIRS=	kipi-plugins/calendar
 .include "../../graphics/libkipi/buildlink3.mk"
 .include "../../graphics/kipi-plugins-kde3/buildlink3.mk"
 .include "../../graphics/libkexiv2/buildlink3.mk"
-.include "../../graphics/libkdcraw/buildlink3.mk"
+.include "../../graphics/libkdcraw-kde3/buildlink3.mk"
 .include "../../misc/kdepim3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
