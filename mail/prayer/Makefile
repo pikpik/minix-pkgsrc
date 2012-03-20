@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2012/01/18 14:37:09 adam Exp $
+# $NetBSD: Makefile,v 1.43 2012/02/02 10:00:47 hans Exp $
 
 DISTNAME=	prayer-1.3.4
 PKGREVISION=	1
@@ -67,6 +67,7 @@ INSTALLATION_DIRS+=	${EGDIR}
 .include "../../mail/imap-uw/buildlink3.mk"
 .include "../../mk/bdb.buildlink3.mk"
 .include "../../mk/krb5.buildlink3.mk"
+.include "../../mk/pam.buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../www/tidy/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
