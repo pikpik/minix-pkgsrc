@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.3 2007/10/17 10:03:59 rillig Exp $
+
+SHA1 (parley-4.8.0.tar.bz2) = 800eea4d6339da608cc720b5d6186de9a43b70ce
+RMD160 (parley-4.8.0.tar.bz2) = 24d4f1bc85d895b14977f25dd2858538dbbb49c3
+Size (parley-4.8.0.tar.bz2) = 10544033 bytes
