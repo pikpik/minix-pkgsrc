@@ -1,9 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/28 00:29:21 cheusov Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/28 10:15:17 cheusov Exp $
 
 PKGNAME=	heirloom-cp-${HEIRLOOM_VER}
 CATEGORIES=	sysutils
 
 MAKE_FLAGS+=	SUBDIRS="build cp"
+
+NEED_LIBSOCKET=	1
 
 .include "../../sysutils/heirloom-doc/Makefile.common"
 
