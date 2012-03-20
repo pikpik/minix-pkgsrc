@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2011/06/19 01:49:27 taca Exp $
+# $NetBSD: Makefile,v 1.5 2011/08/12 16:59:14 taca Exp $
 
-DISTNAME=	launchy-2.0.5
+DISTNAME=	launchy-2.1.0
 CATEGORIES=	misc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
