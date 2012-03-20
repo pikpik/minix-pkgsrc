@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/01/23 07:55:16 markd Exp $
+# $NetBSD: Makefile,v 1.1 2012/03/19 19:44:03 markd Exp $
 
 DISTNAME=	kde-runtime-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
@@ -55,7 +55,7 @@ INSTALLATION_DIRS+=	${PKGMANDIR}/man1
 # not the libssh the package wants
 #.include "../../security/libssh/buildlink3.mk"
 .include "../../security/qca2/buildlink3.mk"
-.include "../../multmedia/phonon/buildlink3.mk"
+.include "../../multimedia/phonon/buildlink3.mk"
 .include "../../archivers/xz/buildlink3.mk"
 .include "../../graphics/exiv2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
