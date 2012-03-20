@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/12/01 16:05:18 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/03/19 19:31:24 pettai Exp $
 #
 
 DISTNAME=	pam-krb5-4.5
@@ -19,4 +19,5 @@ GNU_CONFIGURE=	yes
 CPPFLAGS.NetBSD+=       -DNO_STATIC_MODULES
 
 .include "../../mk/krb5.buildlink3.mk"
+.include "../../mk/pam.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
