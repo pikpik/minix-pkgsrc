@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/02/19 13:09:03 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/03/15 11:53:29 obache Exp $
 #
 
 DISTNAME=	offlineimap-v6.5.2.1
@@ -21,7 +21,7 @@ WRKSRC=		${WRKDIR}/offlineimap
 
 INSTALLATION_DIRS=	share/examples/offlineimap
 
-EGG_NAME=	${PKGNAME}
+EGG_NAME=	${PKGNAME_NOREV}
 
 post-install:
 .for f in offlineimap.conf offlineimap.conf.minimal
