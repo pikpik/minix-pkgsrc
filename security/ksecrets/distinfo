@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.3 2007/10/17 10:03:59 rillig Exp $
+
+SHA1 (ksecrets-4.8.0.tar.bz2) = 13852c77b7aa76286f1108024650cb61fbc2d24e
+RMD160 (ksecrets-4.8.0.tar.bz2) = 150974318aa324a3d5a82934feb1bd510b19ed72
+Size (ksecrets-4.8.0.tar.bz2) = 150676 bytes
