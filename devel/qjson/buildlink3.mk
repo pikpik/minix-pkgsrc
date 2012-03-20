@@ -1,0 +1,13 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	qjson
+
+.if !defined(QJSON_BUILDLINK3_MK)
+QJSON_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.qjson+=	qjson>=0.7.1
+BUILDLINK_PKGSRCDIR.qjson?=	../../devel/qjson
+
+.endif	# QJSON_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-qjson
