@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2011/12/28 16:40:06 taca Exp $
+# $NetBSD: Makefile,v 1.69 2012/01/20 17:05:11 joerg Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -156,5 +156,9 @@ post-install:
 .endfor
 	${RUBY_GENERATE_PLIST}
 
+.include "../../mk/bdb.buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../lang/ruby/Makefile.common"
 .include "../../mk/bsd.pkg.mk"
