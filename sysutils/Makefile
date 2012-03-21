@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.535 2012/03/08 01:11:21 joerg Exp $
+# $NetBSD: Makefile,v 1.536 2012/03/20 05:50:03 markd Exp $
 #
 
 COMMENT=	System utilities
@@ -227,6 +227,7 @@ SUBDIR+=	iwi-firmware
 SUBDIR+=	iwi-firmware3
 SUBDIR+=	iwn-firmware
 SUBDIR+=	k3b
+SUBDIR+=	k4dirstat
 SUBDIR+=	kdf
 SUBDIR+=	kdirstat
 SUBDIR+=	kfloppy
