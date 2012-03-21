@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/${LINUX_BASE}-mkpwd
+${EMULSUBDIRSLASH}etc/SuSE-release
+@pkgdir emul/${LINUX_BASE}/dev/shm
