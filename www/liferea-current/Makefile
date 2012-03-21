@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.27 2012/02/06 12:41:53 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2012/03/03 00:14:06 wiz Exp $
 
-DISTNAME=		liferea-1.6.7
-PKGREVISION=		2
+DISTNAME=		liferea-1.6.8
 CATEGORIES=		www
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=liferea/}
 
@@ -10,6 +9,7 @@ HOMEPAGE=		http://liferea.sourceforge.net/
 COMMENT=		Simple FeedReader clone for reading RSS/RDF feeds
 
 GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--disable-dbus
 PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake pkg-config msgfmt perl intltool
 USE_LIBTOOL=		yes
