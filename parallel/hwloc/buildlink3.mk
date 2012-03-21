@@ -1,0 +1,13 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	hwloc
+
+.if !defined(HWLOC_BUILDLINK3_MK)
+HWLOC_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.hwloc+=	hwloc>=1.4
+BUILDLINK_PKGSRCDIR.hwloc?=	../../parallel/hwloc
+
+.endif	# HWLOC_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-hwloc
