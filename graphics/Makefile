@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.627 2012/03/19 23:35:07 markd Exp $
+# $NetBSD: Makefile,v 1.628 2012/03/20 00:22:12 markd Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -267,6 +267,7 @@ SUBDIR+=	libkdcraw-kde3
 SUBDIR+=	libkexif
 SUBDIR+=	libkexiv2
 SUBDIR+=	libkexiv2-kde3
+SUBDIR+=	libkface
 SUBDIR+=	libkipi
 SUBDIR+=	libkipi-kde3
 SUBDIR+=	libksane
