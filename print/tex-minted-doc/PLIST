@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/minted/Makefile
+share/texmf-dist/doc/latex/minted/README
+share/texmf-dist/doc/latex/minted/minted.pdf
