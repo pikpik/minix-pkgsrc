@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2012/03/04 08:11:51 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/03/08 07:23:39 sbd Exp $
 
 .include "dist.mk"
 
 PKGNAME=	python31-${PY_DISTVERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	lang python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -161,7 +161,6 @@ SUBST_FILES.findlib=	Lib/distutils/unixccompiler.py
 SUBST_SED.findlib=	-e 's,/usr/local,${PREFIX},'
 
 post-extract:
-	${MV} ${WRKSRC}/Tools/scripts/idle3 ${WRKSRC}/Tools/scripts/idle${PY_VER_SUFFIX}
 	${MV} ${WRKSRC}/Tools/scripts/pydoc3 ${WRKSRC}/Tools/scripts/pydoc${PY_VER_SUFFIX}
 	${MV} ${WRKSRC}/Tools/scripts/2to3 ${WRKSRC}/Tools/scripts/2to3-${PY_VER_SUFFIX}
 

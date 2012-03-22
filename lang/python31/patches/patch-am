@@ -102,7 +102,7 @@ $NetBSD: patch-am,v 1.5 2011/11/08 07:30:09 sbd Exp $
  
 -          scripts = ["Tools/scripts/pydoc3", "Tools/scripts/idle3",
 -                     "Tools/scripts/2to3"]
-+          scripts = ["Tools/scripts/pydoc3.1", "Tools/scripts/idle3.1",
++          scripts = ["Tools/scripts/pydoc3.1", 
 +                     "Tools/scripts/2to3-3.1"]
          )
  
