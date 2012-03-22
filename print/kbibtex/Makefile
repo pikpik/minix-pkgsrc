@@ -1,23 +1,24 @@
-# $NetBSD: Makefile,v 1.23 2012/02/09 21:44:29 sbd Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/22 13:44:32 obache Exp $
 
-DISTNAME=		kbibtex-0.2.1
-PKGREVISION=		12
+DISTNAME=		kbibtex-0.4
 CATEGORIES=		print kde
-MASTER_SITES=		http://www.unix-ag.uni-kl.de/~fischer/kbibtex/download/
+MASTER_SITES=		http://download.gna.org/kbibtex/0.4/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		markd@NetBSD.org
-HOMEPAGE=		http://www.unix-ag.uni-kl.de/~fischer/kbibtex/
+HOMEPAGE=		http://home.gna.org/kbibtex/
 COMMENT=		BibTeX editor for KDE
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake perl msgfmt
-USE_LANGUAGES=		c c++
-USE_LIBTOOL=		yes
-GNU_CONFIGURE=		yes
-SET_LIBDIR=		yes
+BUILD_DEPENDS+=	automoc4>=0.9.87:../../devel/automoc4
 
-.include "../../meta-pkgs/kde3/kde3.mk"
-.include "../../x11/kdelibs3/buildlink3.mk"
+USE_TOOLS+=		perl msgfmt
+USE_LANGUAGES=		c c++
+
+.include "../../meta-pkgs/kde4/kde4.mk"
+.include "../../print/poppler-qt4/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
+.include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
