@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2009/06/14 18:03:37 joerg Exp $
+@comment $NetBSD$
 bin/cob-config
 bin/cobc
 bin/cobcrun
@@ -26,3 +26,4 @@ share/open-cobol/config/default.conf
 share/open-cobol/config/ibm.conf
 share/open-cobol/config/mf.conf
 share/open-cobol/config/mvs.conf
+share/open-cobol/copy/screenio.cpy
