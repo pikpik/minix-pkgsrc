@@ -44,6 +44,7 @@ BUILD_TARGET=		ROX-Filer
 CONFIGURE_DIRS=		ROX-Filer/src
 CONFIGURE_SCRIPT=	./configure.tmp
 LIBS.SunOS+=		-lm
+LDFLAGS.DragonFly+=	-lm
 
 post-patch:
 	${MV} ${WRKSRC}/ROX-Filer/src/configure ${WRKSRC}/ROX-Filer/src/${CONFIGURE_SCRIPT}
