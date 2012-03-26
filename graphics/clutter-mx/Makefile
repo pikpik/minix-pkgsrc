@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/02/06 12:40:18 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/03/03 00:12:17 wiz Exp $
 #
 
 DISTNAME=	mx-1.0.4
@@ -21,6 +21,8 @@ USE_TOOLS+=	pkg-config intltool gmake msgfmt msgmerge xgettext
 
 PKGCONFIG_OVERRIDE+=	mx-gtk.pc.in
 PKGCONFIG_OVERRIDE+=	mx.pc.in
+
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
 
 .include "../../graphics/clutter/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
