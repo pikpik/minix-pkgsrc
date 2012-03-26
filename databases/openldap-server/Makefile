@@ -9,6 +9,8 @@ DEPENDS+=	openldap-client>=2.3.27nb1:../../databases/openldap-client
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+CFLAGS.DragonFly+=	-DMDB_DSYNC=O_SYNC -DMDB_FDATASYNC=fsync
+
 # slapd options
 CONFIGURE_ARGS+=	--enable-slapd
 CONFIGURE_ARGS+=	--enable-crypt
