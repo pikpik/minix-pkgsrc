@@ -1,3 +1,5 @@
+# $NetBSD$
+
 # This package's distfile has the wonderful idea of containing
 # symlinks to various things in /usr/share/automake-1.11/. What
 # will they think of next?
