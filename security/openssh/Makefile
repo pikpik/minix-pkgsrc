@@ -2,7 +2,7 @@
 
 DISTNAME=		openssh-5.8p2
 PKGNAME=		openssh-5.8.2
-PKGREVISION=		4
+PKGREVISION=		5
 SVR4_PKGNAME=		ossh
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.openssh.com/pub/OpenBSD/OpenSSH/portable/ \
