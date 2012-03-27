@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/12/17 10:16:04 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/10 08:44:25 cheusov Exp $
 #
 
 DISTNAME=	re-alpine-2.01
@@ -40,5 +40,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/alpine.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/alpine.1
 
 .include "../../mk/terminfo.buildlink3.mk"
+.include "../../mk/pam.buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
