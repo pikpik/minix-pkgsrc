@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2012/03/06 17:39:04 ryoon Exp $
+# $NetBSD: Makefile,v 1.58 2012/03/26 12:40:26 obache Exp $
 #
 
 DISTNAME=	gnome-python-desktop-2.32.0
@@ -23,7 +23,13 @@ USE_TOOLS+=	pkg-config gmake
 
 PKGCONFIG_OVERRIDE+=	gnome-python-desktop-2.0.pc.in
 
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
+# The "real" value here is: 27 26 25
+# but because of single-version deps of gnome bits this will only
+# ever work for the python version those gnome bits were built with.
+PYTHON_VERSIONS_REALLY_ACCEPTED=27 26 25
+PYTHON_VERSIONS_ACCEPTED=	${PYTHON_VERSION_DEFAULT:M27}
+PYTHON_VERSIONS_ACCEPTED+=	${PYTHON_VERSION_DEFAULT:M26}
+PYTHON_VERSIONS_ACCEPTED+=	${PYTHON_VERSION_DEFAULT:M25}
 
 .include "../../lang/python/extension.mk"
 .include "../../devel/libwnck/buildlink3.mk"
