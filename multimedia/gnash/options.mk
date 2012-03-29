@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.16 2011/12/08 10:39:13 obache Exp $
+# $NetBSD: options.mk,v 1.17 2012/02/16 10:44:53 obache Exp $
 #
 
 #
@@ -49,7 +49,7 @@ CONFIGURE_ARGS+=	--with-plugins-install=system
 #CONFIGURE_ARGS+=	--with-kde-appsdatadir=${PREFIX}/share/kde/apps
 #CONFIGURE_ARGS+=	--with-kde4-configdir=${PREFIX}/share/kde4/config
 #CONFIGURE_ARGS+=	--with-kde4-servicesdir=${PREFIX}/share/kde4/services
-.include "../../x11/kdebase4/buildlink3.mk"
+.include "../../x11/kde-baseapps4/buildlink3.mk"
 .include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../meta-pkgs/kde4/kde4.mk"
 
