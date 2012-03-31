@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2011/01/13 13:36:54 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2012/03/19 11:39:15 markd Exp $
 
 DISTNAME=	akonadi-1.7.0
 CATEGORIES=	mail
@@ -30,6 +30,8 @@ pre-configure:
 	${MKDIR} ${WRKSRC}/_build
 
 PKGCONFIG_OVERRIDE+=	akonadi.pc.cmake
+
+LDFLAGS.SunOS+=		-lsocket
 
 .include "../../databases/shared-mime-info/buildlink3.mk"
 .include "../../devel/boost-libs/buildlink3.mk"
