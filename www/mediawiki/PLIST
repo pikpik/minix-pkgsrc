@@ -78,6 +78,7 @@ share/mediawiki/includes/ChangesList.php
 share/mediawiki/includes/Collation.php
 share/mediawiki/includes/ConfEditor.php
 share/mediawiki/includes/Credits.php
+share/mediawiki/includes/CryptRand.php
 share/mediawiki/includes/DefaultSettings.php
 share/mediawiki/includes/Defines.php
 share/mediawiki/includes/DjVuImage.php
