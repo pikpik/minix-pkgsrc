@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.225 2012/03/20 05:26:59 markd Exp $
+# $NetBSD: Makefile,v 1.226 2012/03/20 07:32:13 markd Exp $
 
 COMMENT=	Mathematics
 
@@ -10,6 +10,7 @@ SUBDIR+=	R-ISwR
 SUBDIR+=	R-PHYLOGR
 SUBDIR+=	R-R2HTML
 SUBDIR+=	R-RArcInfo
+SUBDIR+=	R-RandomFields
 SUBDIR+=	R-Rcmdr
 SUBDIR+=	R-XML
 SUBDIR+=	R-abind
