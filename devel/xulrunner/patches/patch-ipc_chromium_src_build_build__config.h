@@ -1,8 +1,8 @@
 $NetBSD$
 
---- ipc/chromium/src/build/build_config.h.orig	2011-12-20 23:28:19.000000000 +0000
+--- ipc/chromium/src/build/build_config.h.orig	2012-03-13 01:36:53.000000000 +0000
 +++ ipc/chromium/src/build/build_config.h
-@@ -19,6 +19,10 @@
+@@ -19,17 +19,23 @@
  #define OS_MACOSX 1
  #elif defined(__linux__) || defined(ANDROID)
  #define OS_LINUX 1
@@ -13,7 +13,12 @@ $NetBSD$
  #elif defined(__OpenBSD__)
  #define OS_OPENBSD 1
  #elif defined(_WIN32)
-@@ -29,7 +33,7 @@
+ #define OS_WIN 1
++#elif defined(__FreeBSD__)
++#define OS_FREEBSD 1
+ #else
+ #error Please add support for your platform in build/build_config.h
+ #endif
  
  // For access to standard POSIX features, use OS_POSIX instead of a more
  // specific macro.

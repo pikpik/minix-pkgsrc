@@ -2,11 +2,16 @@ $NetBSD$
 
 --- toolkit/library/Makefile.in.orig	2012-03-13 01:37:16.000000000 +0000
 +++ toolkit/library/Makefile.in
-@@ -554,6 +554,19 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
+@@ -554,6 +554,24 @@ EXTRA_DSO_LDOPTS += -lelf -ldemangle
  endif
  endif
  
 +ifeq ($(OS_ARCH),DragonFly)
++OS_LIBS += $(call EXPAND_LIBNAME,kvm)
++EXTRA_DSO_LDOPTS += -lplc4 -lplds4 -lnspr4 -lnssutil3
++endif
++
++ifeq ($(OS_ARCH),FreeBSD)
 +OS_LIBS += $(call EXPAND_LIBNAME,kvm)
 +EXTRA_DSO_LDOPTS += -lplc4 -lplds4 -lnspr4 -lnssutil3
 +endif
