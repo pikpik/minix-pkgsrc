@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.12 2012/01/08 09:54:14 adam Exp $
+@comment $NetBSD: PLIST,v 1.13 2012/03/21 16:48:17 brook Exp $
 bin/radclient
 bin/radconf2xml
 bin/radcrypt
@@ -578,12 +578,3 @@ share/freeradius/dictionary.wispr
 share/freeradius/dictionary.xedia
 share/freeradius/dictionary.xylan
 share/freeradius/dictionary.zyxel
-@unexec ${RMDIR} %D/etc/raddb/sql/postgresql 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb/sql/oracle 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb/sql/mysql 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb/sql/mssql 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb/sql 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb/sites-available 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb/certs/demoCA 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb/certs 2>/dev/null || ${TRUE}
-@unexec ${RMDIR} %D/etc/raddb 2>/dev/null || ${TRUE}
