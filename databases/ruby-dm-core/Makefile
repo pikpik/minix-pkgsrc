@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/11 23:48:54 taca Exp $
+# $NetBSD: Makefile,v 1.2 2011/06/19 08:21:46 taca Exp $
 
-DISTNAME=	dm-core-1.1.0
+DISTNAME=	dm-core-1.2.0
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

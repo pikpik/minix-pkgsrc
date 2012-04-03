@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.91 2011/04/22 13:43:20 obache Exp $
+# $NetBSD: Makefile,v 1.100 2012/02/06 12:39:52 wiz Exp $
 
 DISTNAME=	kdevelop_3.5.5.orig
 PKGNAME=	kdevelop-base-3.5.5
-PKGREVISION=	12
+PKGREVISION=	20
 CATEGORIES=	devel kde
 MASTER_SITES=	http://download.opensuse.org/repositories/home:/amilcarlucas/xUbuntu_6.06/
 EXTRACT_SUFX=	.tar.gz
@@ -20,7 +20,7 @@ WRKSRC=		${WRKDIR}/kdevelop-3.5.5
 DEPENDS+=		automake>=1.7:../../devel/automake
 DEPENDS+=		doxygen>=1.3.5:../../devel/doxygen
 DEPENDS+=		graphviz>=1.10nb1:../../graphics/graphviz
-DEPENDS+=		htdig>=3.2.0:../../www/htdig-devel
+DEPENDS+=		htdig>=3.2.0:../../www/htdig
 DEPENDS+=		a2ps>=4.12:../../print/a2ps
 DEPENDS+=		kdelibdocs>=3.2:../../x11/kdelibdocs3
 DEPENDS+=		qt3-docs>=3.1.1:../../x11/qt3-docs
@@ -31,6 +31,7 @@ CONFLICTS+=	kdevelop<=1.3
 BDB_ACCEPTED=		db4 db5
 USE_LANGUAGES=		c c++ fortran77
 USE_TOOLS+=		msgfmt perl:run
+MAKE_JOBS_SAFE=		no
 
 REPLACE_PERL+=		kdevprj2kdevelop
 REPLACE_PERL+=		doc/tools/index-python

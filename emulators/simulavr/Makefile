@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2009/08/25 12:32:55 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2010/01/29 22:58:10 joerg Exp $
 #
 
 DISTNAME=		simulavr-0.1.2.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		emulators
 MASTER_SITES=		http://download.savannah.nongnu.org/releases/simulavr/
 EXTRACT_SUFX=		.tar.bz2
@@ -28,4 +28,5 @@ INFO_FILES=		yes
 # gcc 2.95 gives warnings that it cannot inline all functions.
 BUILDLINK_TRANSFORM+=	rm:-Werror
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

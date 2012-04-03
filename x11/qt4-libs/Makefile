@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.64 2011/09/04 15:42:51 adam Exp $
+# $NetBSD: Makefile,v 1.71 2012/02/27 12:41:22 reinoud Exp $
 
 PKGNAME=	qt4-libs-${QTVERSION}
-PKGREVISION=	1
+PKGREVISION=	4
 COMMENT=	C++ X GUI toolkit
 
 .include "../../x11/qt4-libs/Makefile.common"
@@ -48,6 +48,12 @@ INSTALLATION_DIRS+=	${QTPREFIX}/plugins/inputmethods
 
 INSTALL_ENV+=		INSTALL_ROOT=${DESTDIR}
 
+SUBST_CLASSES+=			no-libtool
+SUBST_MESSAGE.no-libtool=	Removing unwanted libtool link command.
+SUBST_STAGE.no-libtool=		post-configure
+SUBST_FILES.no-libtool=		translations/Makefile
+SUBST_SED.no-libtool=		-e '/@: IGNORE THIS LINE/s,=.*$$,= @:,'
+
 do-install:
 .for prog in moc rcc uic
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/${prog} ${DESTDIR}${QTPREFIX}/bin/
@@ -66,12 +72,12 @@ do-install:
 	 ${LIBTOOL} --mode=install ${INSTALL_LIB} \
 		${WRKSRC}/imports/QtWebKit/libqmlwebkitplugin.la \
 		${DESTDIR}${QTPREFIX}/imports/QtWebKit/
-.for incl in corelib declarative gui multimedia network opengl qt3support script scripttools sql svg testlib xml xmlpatterns 3rdparty/webkit/WebCore
+.for incl in corelib declarative gui multimedia network opengl qt3support script scripttools sql svg testlib xml xmlpatterns 3rdparty/webkit/Source/WebKit/qt
 	cd ${WRKSRC}/src/${incl} && env ${MAKE_ENV} ${INSTALL_ENV} \
 		${MAKE_PROGRAM} install_flat_headers install_targ_headers install_class_headers
 .endfor
 	cd ${DESTDIR}${PREFIX} && find qt4/include -type f -print > ${WRKDIR}/PLIST
-.for lib in Qt3Support QtCore QtDeclarative QtGui QtMultimedia QtNetwork QtOpenGL QtScript QtScriptTools QtSql QtSvg QtTest QtWebKit QtXml QtXmlPatterns jscore
+.for lib in Qt3Support QtCore QtDeclarative QtGui QtMultimedia QtNetwork QtOpenGL QtScript QtScriptTools QtSql QtSvg QtTest QtWebKit QtXml QtXmlPatterns jscore webcore
 	${LIBTOOL} --mode=install ${INSTALL_LIB} ${WRKSRC}/lib/lib${lib}.la \
 		${DESTDIR}${QTPREFIX}/lib/
 	sed	-e "s:${WRKSRC}:${QTPREFIX}:g" \
@@ -101,7 +107,7 @@ do-install:
 	${LIBTOOL} --mode=install ${INSTALL_LIB} \
 		${WRKSRC}/plugins/iconengines/libqsvgicon.la \
 		${DESTDIR}/${QTPREFIX}/plugins/iconengines/
-.for plug in qgif qico qjpeg qsvg
+.for plug in qgif qico qjpeg qsvg qtga
 	${LIBTOOL} --mode=install ${INSTALL_LIB} \
 		${WRKSRC}/plugins/imageformats/lib${plug}.la \
 		${DESTDIR}${QTPREFIX}/plugins/imageformats/

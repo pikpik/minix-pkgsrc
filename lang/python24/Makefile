@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.57 2011/08/31 14:45:27 joerg Exp $
+# $NetBSD: Makefile,v 1.60 2012/01/18 13:59:11 adam Exp $
 
 .include "dist.mk"
 
 PKGNAME=	python24-${PY_DISTVERSION}
+PKGREVISION=	1
 CATEGORIES=	lang python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -63,6 +64,10 @@ PY_PLATNAME=	hp-ux11
 PY_PLATNAME=	${LOWER_OPSYS}${OS_VERSION:C/\..*//}
 .endif
 PLIST_SUBST+=	PY_PLATNAME=${PY_PLATNAME:Q}
+
+.if ${PY_PLATNAME} == "linux2"
+PLIST_SRC+=     ${.CURDIR}/../../lang/python24/PLIST.Linux2
+.endif
 
 .if (${MACHINE_ARCH} == "alpha") || (${MACHINE_ARCH} == "amd64") || \
     (${MACHINE_ARCH} == "sparc64") || (${MACHINE_ARCH} == "x86_64") || \
@@ -173,6 +178,10 @@ post-install:
 post-install:
 	${LN} -fs ${DESTDIR}${PREFIX}/lib/libpython2.4.sl \
 		${DESTDIR}${PREFIX}/lib/libpython2.4.sl.1.0
+.endif
+
+.if ${OPSYS} == "SunOS" && ${OS_VERSION} != "5.11"
+PREFER.openssl=		pkgsrc
 .endif
 
 USE_GNU_READLINE=	# defined

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/09/02 11:45:32 obache Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/30 17:43:42 joerg Exp $
 #
 
 DISTNAME=	camlzip-${VERSION}
 PKGNAME=	ocaml-zip-${VERSION}
 VERSION=	1.03
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	http://caml.inria.fr/distrib/bazar-ocaml/
 

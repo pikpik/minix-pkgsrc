@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.5 2012/02/06 12:41:50 wiz Exp $
 #
 
 DISTNAME=	wbar-2.2.2
+PKGREVISION=	3
 CATEGORIES=	wm
 MASTER_SITES=	http://wbar.googlecode.com/files/
 
@@ -25,9 +26,6 @@ SUBST_FILES.sed+=	configure
 SUBST_SED.sed=		-e "s/sed -i/gsed -i/"
 SUBST_STAGE.sed=	post-extract
 SUBST_MESSAGE.sed=	Needs GNU sed.
-
-# trick pkgsrc into real gsed, needed for "sed -i"
-TOOLS_PLATFORM.gsed=	#empty
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libglade/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: gem.mk,v 1.7 2011/08/12 14:35:34 taca Exp $
+# $NetBSD: gem.mk,v 1.13 2012/03/18 02:24:13 taca Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # and install Ruby gems.
@@ -6,31 +6,56 @@
 # Package-settable variables:
 #
 # RUBYGEMS_REQD
-#	Minimum version of required rubygems.  Ruby 1.9.2 coms with
-#	rubygems version 1.3.7.  If newer version of rubygems is
-#	resuiqred, set RUBYGEMS_REQD to minimum version.
+#	Minimum version of required rubygems.  Ruby base packages contain:
+#
+#		ruby18-base:	none
+#		ruby19-base:	1.3.7
+#		ruby193-base:	1.8.11
+#
+#	If newer version of rubygems is resuiqred, set RUBYGEMS_REQD to
+#	minimum version.
 #
 #	Default: not defined
 #
 # OVERRIDE_GEMSPEC
-#	Fix version of depending gem.  Specify as gem and dependency
-#	pattern as usual pkgsrc's one.
+#	Fix version of depending gem or modify files in gemspec.
 #
-#	Example:
-#	    When gemspec contains "json~>1.4.7" as runtime dependency
-#	    (i.e. json>=1.4.7<1.5) and if you want to relax it to
-#	    "json>=1.4.6" then use:
+#	(1) Specify as gem and dependency pattern as usual pkgsrc's one.
 #
-#		OVERRIDE_GEMSPEC+= json>=1.4.6
+#		Example:
+#		    When gemspec contains "json~>1.4.7" as runtime dependency
+#		    (i.e. json>=1.4.7<1.5) and if you want to relax it to
+#		    "json>=1.4.6" then use:
+#	
+#			OVERRIDE_GEMSPEC+= json>=1.4.6
+#	
+#		    If you want to change depending gem to "json_pure>=1.4.6"
+#		    then use:
+#	
+#			OVERRIDE_GEMSPEC+= json:json_pure>=1.4.6
+#	
+#		    You can also remove dependency:
+#	
+#			OVERRIDE_GEMSPEC+= json:
 #
-#	    If you want to change depending gem to "json_pure>=1.4.6"
-#	    then use:
+#	(2) Modify files in gemspec.
 #
-#		OVERRIDE_GEMSPEC+= json:json_pure>=1.4.6
+#		Example:
+#			Remove files (a.rb and b.rb) from 'files':
 #
-#	    You can also remove dependency:
+#			OVERRIDE_GEMSPEC+= :files a.rb= b.rb=
 #
-#		OVERRIDE_GEMSPEC+= json:
+#		Example:
+#			Add a file (exec.rb) to 'executables':
+#
+#			OVERRIDE_GEMSPEC+= :executables exec.rb
+#
+#		Example:
+#			Rename a file (from 'ruby' to 'ruby193') in 'files':
+#
+#			OVERRIDE_GEMSPEC+= :files ruby=ruby193
+#
+#	Note: Because of limited parser, argumetns for (1) must preceed to (2).
 #
 #	Default: (empty)
 #
@@ -81,6 +106,8 @@
 # RUBYGEM
 #	The path to the rubygems ``gem'' script.
 #
+.if !defined(_RUBYGEM_MK)
+_RUBYGEM_MK=	# defined
 
 # By default, assume that gems are capable of user-destdir installation.
 PKG_DESTDIR_SUPPORT?=	user-destdir
@@ -94,24 +121,35 @@ GEM_BUILD?=	gemspec
 
 OVERRIDE_GEMSPEC?=	# default is empty
 
+RUBYGEM_LANG?=	en_US.UTF-8
+RUBYGEM_ENV?=	LANG=${RUBYGEM_LANG} LC_CTYPE=${RUBYGEM_LANG}
+
 .if !empty(OVERRIDE_GEMSPEC)
 UPDATE_GEMSPEC=		../../lang/ruby/files/update-gemspec.rb
 .endif
 
 .if ${GEM_BUILD} == "rake"
-USE_RAKE=		YES
+USE_RAKE?=		YES
 .endif
 
-.if defined(RUBY_RAILS)
-USE_TOOLS+=		expr
-.endif
+# print-PLIST support
+PRINT_PLIST_AWK+=	/${GEM_NAME}\.(gem|gemspec)$$/ \
+			{ gsub(/${GEM_NAME}\.gem/, "$${GEM_NAME}.gem"); }
+PRINT_PLIST_AWK+=	/${GEM_NAME:S/./[.]/g}[.](gem|gemspec)$$/ \
+	{ gsub(/${PKGVERSION_NOREV:S|/|\\/|g}[.]gem/, "$${PKGVERSION}.gem"); }
+PRINT_PLIST_AWK+=	/^${GEM_LIBDIR:S|/|\\/|g}/ \
+	{ gsub(/${GEM_LIBDIR:S|/|\\/|g}/, "$${GEM_LIBDIR}"); print; next; }
+PRINT_PLIST_AWK+=	/^${GEM_DOCDIR:S|/|\\/|g}/ \
+			{ next; }
+PRINT_PLIST_AWK+=	/^${GEM_HOME:S|/|\\/|g}/ \
+			{ gsub(/${GEM_HOME:S|/|\\/|g}/, "$${GEM_HOME}"); \
+			print; next; }
+PRINT_PLIST_AWK+=	/^${RUBY_GEM_BASE:S|/|\\/|g}/ \
+		{ gsub(/${RUBY_GEM_BASE:S|/|\\/|g}/, "$${RUBY_GEM_BASE}"); \
+			print; next; }
 
 # Include this early in case some of its target are needed
 .include "../../lang/ruby/modules.mk"
-
-.if defined(RUBY_RAILS)
-.include "../../lang/ruby/rails.mk"
-.endif
 
 # Build and run-time dependencies for Ruby prior to 1.9.
 #
@@ -122,15 +160,43 @@ USE_TOOLS+=		expr
 # build tool.
 #
 
-.if defined(RUBYGEMS_REQD)
-BUILD_DEPENDS+=	${RUBY_PKGPREFIX}-rubygems>=${RUBYGEMS_REQD}:../../misc/rubygems
-DEPENDS+=	${RUBY_PKGPREFIX}-rubygems>=${RUBYGEMS_REQD}:../../misc/rubygems
-.else
-. if ${RUBY_VER} == "18"
+.if ${RUBY_VER} == "18"
 BUILD_DEPENDS+=	${RUBY_PKGPREFIX}-rubygems>=1.1.0:../../misc/rubygems
 DEPENDS+=	${RUBY_PKGPREFIX}-rubygems>=1.0.1:../../misc/rubygems
+.else # !ruby18
+. if defined(RUBYGEMS_REQD)
+
+RUBY19_RUBYGEMS_VERS=	1.3.7
+RUBY193_RUBYGEMS_VERS=	1.8.11
+
+_RUBYGEMS_REQD_MAJOR=	${RUBYGEMS_REQD:C/\.[0-9\.]+$//}
+_RUBYGEMS_REQD_MINORS=	${RUBYGEMS_REQD:C/^([0-9]+)\.*//}
+
+.  if ${RUBY_VER} == "19"
+_RUBYGEMS_MAJOR=	${RUBY19_RUBYGEMS_VERS:C/\.[0-9\.]+$//}
+_RUBYGEMS_MINORS=	${RUBY19_RUBYGEMS_VERS:C/^([0-9]+)\.*//}
+.  elif ${RUBY_VER} == "193"
+_RUBYGEMS_MAJOR=	${RUBY193_RUBYGEMS_VERS:C/\.[0-9\.]+$//}
+_RUBYGEMS_MINORS=	${RUBY193_RUBYGEMS_VERS:C/^([0-9]+)\.*//}
+.  else
+PKG_FAIL_REASON+= "Unknown Ruby version specified: ${RUBY_VER}."
+.  endif
+
+_RUBYGEMS_REQD=	NO
+
+.  if ${_RUBYGEMS_REQD_MAJOR} > ${_RUBYGEMS_MAJOR}
+_RUBYGEMS_REQD=	YES
+.  elif ${_RUBYGEMS_REQD_MAJOR} == ${_RUBYGEMS_MAJOR}
+.   if !empty(_RUBYGEMS_MINORS) && ${_RUBYGEMS_REQD_MINORS} > ${_RUBYGEMS_MINORS}
+_RUBYGEMS_REQD=	YES
+.   endif
+.  endif
+
+.  if empty(_RUBYGEMS_REQD:M[nN][oO])
+DEPENDS+=	${RUBY_PKGPREFIX}-rubygems>=${RUBYGEMS_REQD}:../../misc/rubygems
+.  endif
 . endif
-.endif
+.endif # !ruby18
 
 CATEGORIES+=	ruby
 MASTER_SITES?=	http://rubygems.org/gems/ http://gems.rubyforge.org/gems/
@@ -171,22 +237,6 @@ PLIST_SUBST+=		GEM_NAME=${GEM_NAME}
 PLIST_SUBST+=		GEM_LIBDIR=${GEM_LIBDIR}
 PLIST_SUBST+=		GEM_DOCDIR=${GEM_DOCDIR}
 
-# print-PLIST support
-PRINT_PLIST_AWK+=	/${GEM_NAME}\.(gem|gemspec)$$/ \
-			{ gsub(/${GEM_NAME}\.gem/, "$${GEM_NAME}.gem"); }
-PRINT_PLIST_AWK+=	/${GEM_NAME:S/./[.]/g}[.](gem|gemspec)$$/ \
-	{ gsub(/${PKGVERSION_NOREV:S|/|\\/|g}[.]gem/, "$${PKGVERSION}.gem"); }
-PRINT_PLIST_AWK+=	/^${GEM_LIBDIR:S|/|\\/|g}/ \
-	{ gsub(/${GEM_LIBDIR:S|/|\\/|g}/, "$${GEM_LIBDIR}"); print; next; }
-PRINT_PLIST_AWK+=	/^${GEM_DOCDIR:S|/|\\/|g}/ \
-			{ next; }
-PRINT_PLIST_AWK+=	/^${GEM_HOME:S|/|\\/|g}/ \
-			{ gsub(/${GEM_HOME:S|/|\\/|g}/, "$${GEM_HOME}"); \
-			print; next; }
-PRINT_PLIST_AWK+=	/^${RUBY_GEM_BASE:S|/|\\/|g}/ \
-		{ gsub(/${RUBY_GEM_BASE:S|/|\\/|g}/, "$${RUBY_GEM_BASE}"); \
-			print; next; }
-
 ###
 ### gem-extract
 ###
@@ -201,10 +251,11 @@ post-extract: gem-extract
 .if !target(gem-extract)
 gem-extract: fake-home
 .  for _gem_ in ${DISTFILES:M*.gem}
-	${RUN} cd ${WRKDIR} && ${SETENV} ${MAKE_ENV} \
+	${RUN} cd ${WRKDIR} && ${SETENV} ${MAKE_ENV} ${RUBYGEM_ENV} \
 		${RUBYGEM} unpack ${RUBYGEM_INSTALL_ROOT_OPTION} \
 			${_DISTDIR:Q}/${_gem_:Q}
-	${RUN} cd ${WRKDIR} && ${SETENV} ${MAKE_ENV} TZ=UTC \
+	${RUN} cd ${WRKDIR} && \
+		${SETENV} ${MAKE_ENV} TZ=UTC ${RUBYGEM_ENV} \
 		${RUBYGEM} spec ${_DISTDIR:Q}/${_gem_:Q} > ${_gem_}spec
 .  endfor
 .endif
@@ -239,7 +290,7 @@ gem-build: _gem-${GEM_BUILD}-build
 
 .PHONY: _gem-gemspec-build
 _gem-gemspec-build:
-	${RUN} cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
+	${RUN} cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${RUBYGEM_ENV} \
 		${RUBYGEM} build ${GEM_SPECFILE}
 	${RUN} ${TEST} -f ${WRKSRC}/${GEM_NAME}.gem || \
 		${FAIL_MSG} "Build of ${GEM_NAME}.gem failed."
@@ -277,8 +328,8 @@ RUBYGEM_INSTALL_ROOT_OPTION=	--install-root ${RUBYGEM_INSTALL_ROOT}
 .PHONY: _gem-build-install-root
 _gem-build-install-root:
 	@${STEP_MSG} "Installing gem into installation root"
-	${RUN} ${SETENV} ${MAKE_ENV} ${RUBYGEM} install ${RUBYGEM_OPTIONS} \
-		${_RUBYGEM_OPTIONS}
+	${RUN} ${SETENV} ${MAKE_ENV} ${RUBYGEM_ENV} \
+		${RUBYGEM} install ${RUBYGEM_OPTIONS} ${_RUBYGEM_OPTIONS}
 
 # The ``gem'' command doesn't exit with a non-zero result even if the
 # install of the gem failed, so we do the check and return the proper exit
@@ -341,3 +392,5 @@ _gem-install:
 	@${STEP_MSG} "gem install"
 	${RUN} cd ${RUBYGEM_INSTALL_ROOT}${PREFIX} && \
 		pax -rwpe . ${DESTDIR}${PREFIX}
+
+.endif

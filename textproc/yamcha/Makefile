@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2011/11/18 04:42:22 sbd Exp $
 #
 
 .include "Makefile.common"
+PKGREVISION=	1
 
 CATEGORIES=	devel
 
@@ -12,8 +13,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	perl:run
+USE_TOOLS+=	perl:run gzip:run
 
+CONFIGURE_ENV+=		ac_cv_path_GZIP=${TOOLS_PATH.gzip:Q}
 CONFIGURE_ARGS+=	--with-perl5=${PERL5:Q}
 CONFIGURE_ARGS+=	--with-svm-learn=${BUILDLINK_PREFIX.TinySVM}/bin/svm_learn
 

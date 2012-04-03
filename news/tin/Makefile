@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.44 2011/04/22 13:44:30 obache Exp $
+# $NetBSD: Makefile,v 1.48 2012/03/03 00:13:49 wiz Exp $
 #
 
-DISTNAME=	tin-1.9.4
-PKGREVISION=	3
+DISTNAME=	tin-2.0.1
+PKGREVISION=	1
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.tin.org/pub/news/clients/tin/unstable/ \
-		ftp://ftp.cs.tu-berlin.de/pub/net/news/tin/unstable/
+MASTER_SITES=	ftp://ftp.tin.org/pub/news/clients/tin/stable/ \
+		ftp://ftp.cs.tu-berlin.de/pub/net/news/tin/stable/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tin.org/
 COMMENT=	TIN newsreader (termcap based)
 # See src/nntplib.c, vms/vms.c

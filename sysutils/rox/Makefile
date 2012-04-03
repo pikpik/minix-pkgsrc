@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.54 2011/04/22 13:44:45 obache Exp $
+# $NetBSD: Makefile,v 1.58 2012/02/06 12:41:38 wiz Exp $
 #
 
 DISTNAME=	rox-filer-2.10
 PKGNAME=	rox-2.10
-PKGREVISION=	6
+PKGREVISION=	10
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tar.bz2
@@ -44,6 +44,7 @@ BUILD_TARGET=		ROX-Filer
 CONFIGURE_DIRS=		ROX-Filer/src
 CONFIGURE_SCRIPT=	./configure.tmp
 LIBS.SunOS+=		-lm
+LDFLAGS.DragonFly+=	-lm
 
 post-patch:
 	${MV} ${WRKSRC}/ROX-Filer/src/configure ${WRKSRC}/ROX-Filer/src/${CONFIGURE_SCRIPT}

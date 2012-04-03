@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.3 2012/02/06 12:39:27 wiz Exp $
 #
 
 DISTNAME=	libsmf-1.3
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libsmf/}
 
@@ -19,4 +20,5 @@ USE_TOOLS+=	pkg-config
 PKGCONFIG_OVERRIDE+=	smf.pc.in
 
 .include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/readline/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

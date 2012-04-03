@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.30 2011/01/13 13:39:09 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/03/03 00:13:49 wiz Exp $
 #
 
 DISTNAME=		ganglia-3.1.2
 PKGNAME=		ganglia-monitor-core-3.1.2
-PKGREVISION=		6
+PKGREVISION=		11
 CATEGORIES=		net parallel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ganglia/}
 
@@ -17,7 +17,7 @@ GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--with-gmetad
 USE_LIBTOOL=		yes
-USE_LANGUAGES+=		c c++ fortran77
+USE_LANGUAGES+=		c c++ c99 fortran77
 
 PLIST_VARS+=		python
 

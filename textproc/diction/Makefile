@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2011/04/22 13:44:49 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/02/16 19:49:04 hans Exp $
 
 DISTNAME=	diction-1.11
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.moria.de/~michael/diction/
 
@@ -17,6 +17,8 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake msgfmt
 
 USE_FEATURES+=		getopt_long regcomp snprintf
+
+LIBS.SunOS+=		-lintl
 
 .include "options.mk"
 

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2010/03/12 21:15:36 gdt Exp $
+# $NetBSD: Makefile,v 1.8 2012/01/08 18:39:49 gdt Exp $
 
-DISTNAME=	postgis-1.5.1
+DISTNAME=	postgis-1.5.3
 PKGNAME=	postgresql${PGSQL_VERSION}-${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	databases geography
@@ -14,7 +14,7 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PGSQL_VERSIONS_ACCEPTED=	84 83
+PGSQL_VERSIONS_ACCEPTED=	91 90 84 83
 
 DEPENDS+=		postgresql${PGSQL_VERSION}-server>=0:../../databases/postgresql${PGSQL_VERSION}-server
 
@@ -44,17 +44,19 @@ SUBST_STAGE.paths=	pre-configure
 
 INSTALLATION_DIRS=	${DOCDIR} ${DOCDIR}/images ${PKGMANDIR}/man1
 
-# libtool complexities:
-#   http://lists.gnu.org/archive/html/libtool/2006-09/msg00075.html
+MAKE_ENV+=		PERL5=${PERL5:Q}
+INSTALL_ENV+=		mkinstalldirs=${INSTALL_DATA_DIR:Q}
 
 post-install:
-	${LIBTOOL} --mode=install ${INSTALL_LIB} ${WRKSRC}/liblwgeom/liblwgeom.la ${DESTDIR}${PREFIX}/lib
 	${INSTALL_DATA} ${BUILD_DIRS:Q}/README.postgis ${DESTDIR}${DOCDIR}
 	${INSTALL_DATA} ${BUILD_DIRS:Q}/doc/html/postgis.html ${DESTDIR}${DOCDIR}
 	${INSTALL_DATA} ${BUILD_DIRS:Q}/doc/html/style.css ${DESTDIR}${DOCDIR}
 	${INSTALL_DATA} ${BUILD_DIRS:Q}/doc/html/images/* ${DESTDIR}${DOCDIR}/images
-	${INSTALL_DATA} ${BUILD_DIRS:Q}/doc/postgis_comments.sql ${DESTDIR}${PREFIX}/share/postgresql/contrib
 	${INSTALL_MAN} ${BUILD_DIRS:Q}/doc/man/*.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
+	${INSTALL_DATA} ${BUILD_DIRS:Q}/doc/postgis_comments.sql ${DESTDIR}${PREFIX}/share/postgresql/contrib/postgis-1.5
+
+# TEST_DEPENDS
+# .include "../../devel/cunit/buildlink3.mk"
 
 .include "../../geography/geos/buildlink3.mk"
 .include "../../geography/proj/buildlink3.mk"

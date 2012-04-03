@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: import.mk,v 1.4 2011/11/13 23:04:41 joerg Exp $
 #
 
 # import:
@@ -28,13 +28,16 @@
 _IMPORT_ERRORS=		# none
 
 _IMPORT_FROM=		# nothing but a leading space
-.if defined(FROM) && !empty(FROM)
+.if defined(FROM)
+.  if !empty(FROM)
 _IMPORT_FROM+=		from ${FROM}
+.  endif
 .elif !empty(PKGPATH:Mwip/*)
 _IMPORT_FROM+=		from pkgsrc-wip
 .else
 _IMPORT_ERRORS+=	"[import.mk] You must set FROM."
 .endif
+CATEGORY?=	${CATEGORIES:[1]}
 .if ${CATEGORY:U} == ""
 _IMPORT_ERRORS+=	"[import.mk] You must set CATEGORY."
 .endif
@@ -42,9 +45,11 @@ _IMPORT_ERRORS+=	"[import.mk] You must set CATEGORY."
 _IMPORT_ERRORS+=	"[import.mk] Don't import packages that have something TODO."
 .endif
 .if exists(${PKGSRCDIR}/${CATEGORY:Unonexistent}/${PKGPATH:T}/Makefile)
-_IMPORT_ERRORS+=	"[import.mk] The package ${CATEGORY}/${PKGPATH:T} already exists."
+_IMPORT_REMOVE_BEFORE_UPDATE=yes
+.else
+_IMPORT_REMOVE_BEFORE_UPDATE=no
 .endif
-.if ${_EXPERIMENTAL} != "yes"
+.if ${_EXPERIMENTAL:U""} != "yes"
 _IMPORT_ERRORS+=	"[import.mk] The \"import\" target is experimental."
 .endif
 
@@ -76,8 +81,7 @@ _import-import:
 	cvs -d cvs.netbsd.org:/cvsroot import				\
 		-m "$$import_msg"					\
 		pkgsrc/${CATEGORY}/${PKGPATH:T}				\
-		TNF pkgsrc-base;					\
-	${RM} -f "$$import_msg"
+		TNF pkgsrc-base
 
 _import-add-change:
 	@${STEP_MSG} "Adding CHANGES entry."
@@ -89,7 +93,12 @@ _import-add-change:
 	${RUN} cd ${PKGSRCDIR}/doc && cvs commit			\
 		-m "Imported ${CATEGORY}/${PKGPATH:T}${_IMPORT_FROM}."	\
 		${_IMPORT_CHANGES:T}
+.if ${_IMPORT_REMOVE_BEFORE_UPDATE} == "yes"
+	@${STEP_MSG} "Removing local copy."
+	${RUN} cd ${PKGSRCDIR}/${CATEGORY}/${PKGPATH:T} && rm -f *
+.endif
 	@${STEP_MSG} "Loading the new package from CVS."
+	${RUN} cd ${PKGSRCDIR}/${CATEGORY}/${PKGPATH:T} && rm -f *
 	${RUN} cd ${PKGSRCDIR}/${CATEGORY} && cvs update Makefile ${PKGPATH:T}
 	@${STEP_MSG} "Adding the package to the category Makefile."
 	${RUN} cd ${PKGSRCDIR}/${CATEGORY} && (pkglint -F >/dev/null || ${TRUE}) && pkglint -q

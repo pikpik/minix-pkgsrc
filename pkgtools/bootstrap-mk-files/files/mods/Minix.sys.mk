@@ -1,11 +1,9 @@
-#	$NetBSD: Linux.sys.mk,v 1.2 2009/02/19 00:51:12 abs Exp $
-#	NetBSD: sys.mk,v 1.58 2000/08/22 17:38:49 bjh21 Exp 
+#	$NetBSD$
 #	@(#)sys.mk	8.2 (Berkeley) 3/21/94
 
 unix?=		We run Unix.
 OS?=		Minix
 
-# At least Ubuntu 8.1 sets __attribute__((warn_unused_result)) on fwrite()
 # http://gcc.gnu.org/bugzilla/show_bug.cgi?id=25509
 .if !defined(NOGCCERROR)
 CFLAGS+= -Wno-error

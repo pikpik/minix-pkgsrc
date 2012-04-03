@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.52 2011/03/15 12:58:04 gdt Exp $
+# $NetBSD: Makefile,v 1.55 2012/02/07 01:32:16 gdt Exp $
 #
 
-DISTNAME=	Trac-0.12.2
+DISTNAME=	Trac-0.12.3
 PKGNAME=	${DISTNAME:tl}
 PKGREVISION=	1
 CATEGORIES=	devel www
@@ -57,8 +57,7 @@ PYTHON_PATCH_SCRIPTS+=	trac/tests/functional/*.py
 .include "../../lang/python/application.mk"
 
 .if !empty(PKG_OPTIONS:Msqlite)
-.if defined(PYPACKAGE) && \
-    (${PYPACKAGE} == "python23" || ${PYPACKAGE} == "python24")
+.if defined(PYPACKAGE) && ${PYPACKAGE} == "python24"
 DEPENDS+=	${PYPKGPREFIX}-sqlite2>=2:../../databases/py-sqlite2
 .else
 DEPENDS+=	${PYPKGPREFIX}-sqlite3>=0:../../databases/py-sqlite3

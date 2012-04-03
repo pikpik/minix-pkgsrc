@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.16 2011/03/31 16:30:11 jmmv Exp $
+# $NetBSD: Makefile,v 1.18 2012/01/16 22:26:55 jmmv Exp $
 #
 
-DISTNAME=	atf-0.14
+DISTNAME=	atf-0.15
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/jmmv/atf/0.14/
+MASTER_SITES=	http://kyua.googlecode.com/files/
 
 MAINTAINER=	jmmv@NetBSD.org
-HOMEPAGE=	http://www.NetBSD.org/~jmmv/atf/
+HOMEPAGE=	http://code.google.com/p/kyua/wiki/ATF
 COMMENT=	Automated testing framework
 LICENSE=	2-clause-bsd
 

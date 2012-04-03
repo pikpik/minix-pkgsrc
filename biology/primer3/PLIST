@@ -1,0 +1,10 @@
+@comment $NetBSD$
+bin/long_seq_tm_test
+bin/ntdpal
+bin/ntthal
+bin/oligotm
+bin/primer3_core
+share/doc/primer3/primer3_manual.htm
+share/doc/primer3/primer3_v1_1_4_default_settings.txt
+share/doc/primer3/primer3web_v0_4_0_default_settings.txt
+share/doc/primer3/example

@@ -1,10 +1,10 @@
 $NetBSD$
 
---- configure.orig	2010-04-13 01:23:37.000000000 +0000
+--- configure.orig	2012-01-12 15:53:35.000000000 +0000
 +++ configure
-@@ -23861,9 +23861,9 @@ test -z "${with_db+set}" && with_db=yes
+@@ -18863,9 +18863,9 @@ test -z "${with_db+set}" && with_db=yes
  
- { $as_echo "$as_me:$LINENO: checking for BerkeleyDB library" >&5
+ { $as_echo "$as_me:${as_lineno-$LINENO}: checking for BerkeleyDB library" >&5
  $as_echo_n "checking for BerkeleyDB library... " >&6; }
 -if test "$DB_DIR" -a "$with_db" = yes; then
 -    CPPFLAGS="$CPPFLAGS "'-I$(top_builddir)/'"$DB_DIR/dist"
@@ -12,6 +12,6 @@ $NetBSD$
 +if true; then
 +    DB_DIR="${prefix}"
 +    DB_LIB="-l${BDB_TYPE}"
-     { $as_echo "$as_me:$LINENO: result: using distribution in $DB_DIR subdirectory" >&5
+     { $as_echo "$as_me:${as_lineno-$LINENO}: result: using distribution in $DB_DIR subdirectory" >&5
  $as_echo "using distribution in $DB_DIR subdirectory" >&6; }
  elif test x"$with_db" != xno; then

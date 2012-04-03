@@ -2,6 +2,7 @@
 bin/mainloop
 bin/opt-parser
 bin/rlimit
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/gnatpython/__init__.py
 ${PYSITELIB}/gnatpython/__init__.pyc
 ${PYSITELIB}/gnatpython/__init__.pyo

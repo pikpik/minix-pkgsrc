@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.155 2011/04/01 21:02:48 tez Exp $
+# $NetBSD: Makefile,v 1.163 2012/03/13 03:11:32 taca Exp $
 
 OPENSSL_SNAPSHOT?=	# empty
 OPENSSL_STABLE?=	# empty
-OPENSSL_VERS?=		0.9.8q
+OPENSSL_VERS?=		0.9.8u
 
 .if empty(OPENSSL_SNAPSHOT)
 DISTNAME=	openssl-${OPENSSL_VERS}
@@ -22,7 +22,6 @@ MASTER_SITES=	ftp://ftp.openssl.org/snapshot/
 .endif
 
 SVR4_PKGNAME=	ossl
-PKGREVISION=	3
 CATEGORIES=	security
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openssl.org/
@@ -48,7 +47,7 @@ CONFIGURE_SCRIPT=	./config
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
 CONFIGURE_ARGS+=	--install_prefix=${DESTDIR}
 CONFIGURE_ARGS+=	--openssldir=${PKG_SYSCONFDIR:Q}
-CONFIGURE_ARGS+=	shared threads no-fips
+CONFIGURE_ARGS+=	shared no-fips
 
 .if ${OPSYS} == "SunOS"
 .  if ${MACHINE_ARCH} == "sparc"
@@ -90,6 +89,8 @@ CONFIGURE_ARGS+=	tru64-alpha-cc
 CONFIGURE_SCRIPT=	./Configure
 .  if defined(ABI) && ${ABI} == "64"
 CONFIGURE_ARGS+=	darwin64-${MACHINE_ARCH}-cc
+.  elif ${MACHINE_ARCH} == "powerpc"
+CONFIGURE_ARGS+=	darwin-ppc-cc
 .  else
 CONFIGURE_ARGS+=	darwin-${MACHINE_ARCH}-cc
 .  endif
@@ -109,9 +110,30 @@ SUBST_CLASSES+=		soname
 SUBST_STAGE.soname=	post-configure
 SUBST_FILES.soname=	Makefile.shared
 SUBST_SED.soname=	-e 's/-Wl,-soname=/-Wl,-h,/g'
+
 .elif ${OPSYS} == "Minix"
+
 CONFIGURE_SCRIPT=	./Configure
 CONFIGURE_ARGS+=	minix-elf no-threads no-shared
+
+.elif ${OPSYS} == "HPUX"
+
+CONFIGURE_SCRIPT=	./Configure
+
+.  if ${ABI} == "64"
+.    if ${MACHINE_ARCH} == "hppa"
+CONFIGURE_ARGS+=	hpux64-parisc2-${CC}
+.    else
+CONFIGURE_ARGS+=	hpux64-ia64-${CC}
+.    endif
+.  else
+.    if ${MACHINE_ARCH} == "hppa"
+CONFIGURE_ARGS+=	hpux-parisc-${CC}
+.    else
+CONFIGURE_ARGS+=	hpux-ia64-${CC}
+.    endif
+.  endif
+
 .endif
 
 .include "../../security/openssl/options.mk"

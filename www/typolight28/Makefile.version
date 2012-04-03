@@ -1,8 +1,0 @@
-# $NetBSD: Makefile.version,v 1.6 2010/05/01 23:42:56 taca Exp $
-#
-# used by www/typolight28/Makefile
-# used by www/typolight28-example/Makefile
-# used by www/typolight28-translations/Makefile
-#
-
-TL_VERSION=		2.8.4

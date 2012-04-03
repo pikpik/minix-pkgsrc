@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2010/03/10 13:38:07 obache Exp $
+# $NetBSD: Makefile,v 1.8 2011/12/06 11:06:51 obache Exp $
 #
 
-DISTNAME=	libdatrie-0.2.4
+DISTNAME=	libdatrie-0.2.5
 CATEGORIES=	devel
 MASTER_SITES=	http://linux.thai.net/pub/thailinux/software/libthai/ \
 		ftp://linux.thai.net/pub/ThaiLinux/software/libthai/
@@ -16,6 +16,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
+
+LIBS.SunOS+=	-liconv
 
 PKGCONFIG_OVERRIDE+=	datrie-0.2.pc.in
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/08 18:19:54 cheusov Exp $
+# $NetBSD: Makefile,v 1.3 2012/01/14 07:44:35 obache Exp $
 
 DISTNAME=	Mueller7GPL
 PKGNAME=	dict-mueller7-1.2
@@ -22,7 +22,12 @@ WRKSRC=		${WRKDIR}/usr/local/share/dict
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gsed perl tar gzip
+.include "../../mk/bsd.prefs.mk"
+
+USE_TOOLS+=		perl tar gzip
+.if ${OPSYS} != "NetBSD"
+USE_TOOLS+=		gsed
+.endif
 
 INSTALLATION_DIRS+=	share/dictd
 
@@ -32,7 +37,7 @@ pre-configure:
 do-build:
 	cd ${WRKSRC} && \
 	sh to-dict --src-data Mueller7GPL.koi mueller7.data > /dev/null && \
-	perl mueller2utf8 < mueller7.data > tmp_1 && \
+	${PREFIX}/bin/perl mueller2utf8 < mueller7.data > tmp_1 && \
 	${PREFIX}/bin/dictfmt --utf8 -p --columns 0 \
 		-s 'Mueller English-Russian Dictionary' \
 		-u 'http://www.chat.ru/~mueller_dic' \

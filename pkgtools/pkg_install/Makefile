@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.182 2011/01/31 07:25:03 agc Exp $
+# $NetBSD: Makefile,v 1.184 2011/10/28 21:19:42 cheusov Exp $
 
 # Notes to package maintainers:
 #
@@ -65,6 +65,7 @@ CPPFLAGS+=		-DDEF_UMASK=${DEF_UMASK}
 
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH:Q}
 MAKE_ENV+=		OPSYS=${OPSYS:Q}
+MAKE_ENV+=		MANINSTALL=${MANINSTALL:Q}
 
 PKG_DBDIR?=		/var/db/pkg
 EGDIR=			${PREFIX}/share/examples/pkg_install
@@ -140,6 +141,11 @@ CONFIG_SUB_OVERRIDE+=	${WRKDIR}/libarchive/build/autoconf/config.sub
 # (outdated) dynamic library "/usr/lib/libarchive.dylib".
 LDFLAGS+=	-Wl,-search_paths_first
 .  endif
+
+.if ${OPSYS} == SunOS
+# workaround for pkg/45491
+CONFIGURE_ENV+=	ac_cv_header_ext2fs_ext2_fs_h=no
+.endif
 
 # Hack to make sure that the libarchive version is replaced
 pre-configure: config-guess-override config-sub-override

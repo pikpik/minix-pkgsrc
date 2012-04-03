@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.own.mk.in,v 1.2 2007/08/25 09:33:57 rillig Exp $
+#	$NetBSD$
 
 .if !defined(_BSD_OWN_MK_)
 _BSD_OWN_MK_=1

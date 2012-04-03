@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2011/01/13 13:38:43 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/09 21:44:28 sbd Exp $
 
 DISTNAME=		basket-1.0.2
-PKGREVISION=		11
+PKGREVISION=		15
 CATEGORIES=		misc
 MASTER_SITES=		http://basket.kde.org/downloads/
 
@@ -15,6 +15,7 @@ USE_TOOLS+=		gmake msgfmt pkg-config
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 
 .include "../../security/gpgme/buildlink3.mk"
 .include "../../meta-pkgs/kde3/kde3.mk"

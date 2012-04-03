@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2011/04/22 13:43:52 obache Exp $
+# $NetBSD: Makefile,v 1.28 2012/03/03 00:13:19 wiz Exp $
 #
 
-DISTNAME=		veusz-1.12
+DISTNAME=		veusz-1.14
+PKGREVISION=		4
 CATEGORIES=		graphics
 MASTER_SITES=		http://download.gna.org/veusz/
 
@@ -13,6 +14,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=		yes
 USE_LANGUAGES=		c c++
+
+REPLACE_PYTHON=		examples/embedexample.py
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

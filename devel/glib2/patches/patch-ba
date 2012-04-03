@@ -1,10 +1,10 @@
-$NetBSD: patch-ba,v 1.6 2009/03/15 13:32:31 jmcneill Exp $
+$NetBSD: patch-ba,v 1.8 2012/01/29 10:46:54 drochner Exp $
 
 http://bugzilla.gnome.org/show_bug.cgi?id=583330
 
---- gio/gunixmounts.c.orig	Sun Jun  5 23:18:49 2011
+--- gio/gunixmounts.c.orig	2011-11-11 17:56:52.000000000 +0000
 +++ gio/gunixmounts.c
-@@ -135,6 +135,9 @@ struct _GUnixMountMonitor {
+@@ -153,6 +153,9 @@ struct _GUnixMountMonitor {
  
    GFileMonitor *fstab_monitor;
    GFileMonitor *mtab_monitor;
@@ -14,7 +14,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  };
  
  struct _GUnixMountMonitorClass {
-@@ -146,6 +149,8 @@ static GUnixMountMonitor *the_mount_monitor = NULL;
+@@ -164,6 +167,8 @@ static GUnixMountMonitor *the_mount_moni
  static GList *_g_get_unix_mounts (void);
  static GList *_g_get_unix_mount_points (void);
  
@@ -23,15 +23,15 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  G_DEFINE_TYPE (GUnixMountMonitor, g_unix_mount_monitor, G_TYPE_OBJECT);
  
  #define MOUNT_POLL_INTERVAL 4000
-@@ -172,6 +177,7 @@ G_DEFINE_TYPE (GUnixMountMonitor, g_unix_mount_monitor
+@@ -190,6 +195,7 @@ G_DEFINE_TYPE (GUnixMountMonitor, g_unix
  #endif
  
- #if defined(HAVE_GETMNTINFO) && defined(HAVE_FSTAB_H) && defined(HAVE_SYS_MOUNT_H)
+ #if (defined(HAVE_GETVFSSTAT) || defined(HAVE_GETFSSTAT)) && defined(HAVE_FSTAB_H) && defined(HAVE_SYS_MOUNT_H)
 +#include <sys/param.h>
  #include <sys/ucred.h>
  #include <sys/mount.h>
  #include <fstab.h>
-@@ -222,20 +228,28 @@ g_unix_is_mount_path_system_internal (const char *moun
+@@ -240,22 +246,30 @@ g_unix_is_mount_path_system_internal (co
      "/",              /* we already have "Filesystem root" in Nautilus */ 
      "/bin",
      "/boot",
@@ -43,6 +43,8 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
      "/lib",
      "/lib64",
 +    "/libexec",
+     "/live/cow",
+     "/live/image",
      "/media",
      "/mnt",
      "/opt",
@@ -58,21 +60,36 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
 +    "/usr/ports",
 +    "/usr/src",
      "/var",
-     "/var/log/audit", /* https://bugzilla.redhat.com/show_bug.cgi?id=333041 */
-     "/var/tmp",       /* https://bugzilla.redhat.com/show_bug.cgi?id=335241 */
-@@ -570,7 +584,11 @@ get_mtab_monitor_file (void)
+     "/var/crash",
+     "/var/local",
+@@ -595,7 +609,7 @@ get_mtab_monitor_file (void)
  static GList *
  _g_get_unix_mounts (void)
  {
-+#ifdef __NetBSD__
-+  struct statvfs *mntent = NULL;
-+#else
+-#if defined(HAVE_GETVFSSTAT)
++#if defined(HAVE_GETVFSSTAT) && !defined(__DragonFly__)
+   struct statvfs *mntent = NULL;
+ #elif defined(HAVE_GETFSSTAT)
    struct statfs *mntent = NULL;
-+#endif
-   int num_mounts, i;
-   GUnixMountEntry *mount_entry;
+@@ -608,7 +622,7 @@ _g_get_unix_mounts (void)
    GList *return_list;
-@@ -587,8 +605,18 @@ _g_get_unix_mounts (void)
+   
+   /* Pass NOWAIT to avoid blocking trying to update NFS mounts. */
+-#if defined(HAVE_GETVFSSTAT)
++#if defined(HAVE_GETVFSSTAT) && !defined(__DragonFly__)
+   num_mounts = getvfsstat (NULL, 0, ST_NOWAIT);
+ #elif defined(HAVE_GETFSSTAT)
+   num_mounts = getfsstat (NULL, 0, MNT_NOWAIT);
+@@ -618,7 +632,7 @@ _g_get_unix_mounts (void)
+ 
+   bufsize = num_mounts * sizeof (*mntent);
+   mntent = g_malloc (bufsize);
+-#if defined(HAVE_GETVFSSTAT)
++#if defined(HAVE_GETVFSSTAT) && !defined(__DragonFly__)
+   num_mounts = getvfsstat (mntent, bufsize, ST_NOWAIT);
+ #elif defined(HAVE_GETFSSTAT)
+   num_mounts = getfsstat (mntent, bufsize, MNT_NOWAIT);
+@@ -634,9 +648,15 @@ _g_get_unix_mounts (void)
        
        mount_entry->mount_path = g_strdup (mntent[i].f_mntonname);
        mount_entry->device_path = g_strdup (mntent[i].f_mntfromname);
@@ -80,13 +97,15 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
 +      mount_entry->filesystem_type = g_strdup ("unknown");
 +#else
        mount_entry->filesystem_type = g_strdup (mntent[i].f_fstypename);
+-#if defined(HAVE_GETVFSSTAT)
 +#endif
-+#if defined(__NetBSD__)
-+      if (mntent[i].f_flag & MNT_RDONLY)
++#if defined(HAVE_GETVFSSTAT) && !defined(__DragonFly__)
+       if (mntent[i].f_flag & ST_RDONLY)
 +#elif defined(__digital__)
 +      if (mntent[i].f_flags & M_RDONLY)
-+#else
+ #elif defined(HAVE_GETFSSTAT)
        if (mntent[i].f_flags & MNT_RDONLY)
+<<<<<<< HEAD
 +#endif
  	mount_entry->is_read_only = TRUE;
  
@@ -131,7 +150,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  }
  #else
  #error No g_get_mount_table() implementation for system
-@@ -1056,6 +1104,10 @@ get_mounts_timestamp (void)
+@@ -1111,6 +1131,10 @@ get_mounts_timestamp (void)
        if (stat (monitor_file, &buf) == 0)
  	return (guint64)buf.st_mtime;
      }
@@ -142,7 +161,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
    return 0;
  }
  
-@@ -1198,6 +1250,13 @@ g_unix_mount_monitor_finalize (GObject *object)
+@@ -1253,6 +1277,13 @@ g_unix_mount_monitor_finalize (GObject *
        g_object_unref (monitor->mtab_monitor);
      }
  
@@ -156,7 +175,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
    the_mount_monitor = NULL;
  
    G_OBJECT_CLASS (g_unix_mount_monitor_parent_class)->finalize (object);
-@@ -1278,6 +1337,51 @@ mtab_file_changed (GFileMonitor      *monitor,
+@@ -1333,6 +1364,51 @@ mtab_file_changed (GFileMonitor      *mo
    g_signal_emit (mount_monitor, signals[MOUNTS_CHANGED], 0);
  }
  
@@ -208,8 +227,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583330
  static void
  g_unix_mount_monitor_init (GUnixMountMonitor *monitor)
  {
-@@ -1299,6 +1403,12 @@ g_unix_mount_monitor_init (GUnixMountMonitor *monitor)
-       g_object_unref (file);
+@@ -1355,6 +1431,12 @@ g_unix_mount_monitor_init (GUnixMountMon
        
        g_signal_connect (monitor->mtab_monitor, "changed", (GCallback)mtab_file_changed, monitor);
 +    }

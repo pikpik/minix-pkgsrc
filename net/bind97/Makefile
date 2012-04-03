@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/07/05 13:56:35 taca Exp $
+# $NetBSD: Makefile,v 1.10 2011/11/16 21:49:56 spz Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGNAME=	${DISTNAME:S/-P/pl/}
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 
-BIND_VERSION=	9.7.4
+BIND_VERSION=	9.7.4-P1
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -74,7 +74,6 @@ INSTALLATION_DIRS=	${DOCDIR} share/doc/bind9/arm share/doc/bind9/draft \
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/doc/arm/*.html ${DOCDIR}/arm
 	${INSTALL_DATA} ${WRKSRC}/doc/arm/*.html ${DOCDIR}/arm
 	${INSTALL_DATA} ${WRKSRC}/doc/draft/draft-*.txt ${DOCDIR}/draft
 	${INSTALL_DATA} ${WRKSRC}/doc/rfc/rfc*.txt ${DOCDIR}/rfc

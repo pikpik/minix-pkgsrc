@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/02/09 12:42:37 obache Exp $
 #
 
-DISTNAME=	coverage-3.3.1
-PKGNAME=	${PYPKGPREFIX}-coverage-3.3.1
+DISTNAME=	coverage-3.5.1
+PKGNAME=	${PYPKGPREFIX}-coverage-3.5.1
 CATEGORIES=	devel python
 MASTER_SITES=	http://pypi.python.org/packages/source/c/coverage/
 
@@ -16,9 +16,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=	c
 PLIST_SUBST=	PYVERSSUFFIX=${PYVERSSUFFIX}
 
-EGG_INFODIR= ${EGG_NAME}-py${PYVERSSUFFIX}.egg-info
-post-install:
-	${CHMOD} +r ${DESTDIR}${PREFIX}/${PYSITELIB}/${EGG_INFODIR}/*
+post-extract:
+	${CHMOD} +r ${WRKSRC}/coverage.egg-info/*
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,16 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.2 2011/11/20 17:46:34 marino Exp $
 
---- daaplib/include/daap/tagoutput.h.orig	2006-07-03 10:56:28.000000000 +0100
-+++ daaplib/include/daap/tagoutput.h	2006-07-03 10:39:27.000000000 +0100
-@@ -98,9 +98,7 @@
+--- daaplib/include/daap/tagoutput.h.orig	2011-11-26 15:54:46.000000000 +0000
++++ daaplib/include/daap/tagoutput.h
+@@ -25,6 +25,7 @@
+ 	
+ 	#include <daap/basic.h>
+ 	#include <string>
++	#include <string.h>
+ 	#include <vector>
+ 	#include <assert.h>
+ 
+@@ -98,9 +99,7 @@
  			return( func( *this ));
  		}
  			
@@ -13,7 +21,7 @@ $NetBSD$
  		
  	protected:
  		typedef std::vector<u8>  DataInt8;
-@@ -125,4 +123,8 @@
+@@ -125,4 +124,8 @@
  		TagOutput( const TagOutput& );
  		TagOutput& operator = ( const TagOutput& );
  	};

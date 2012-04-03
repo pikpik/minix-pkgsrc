@@ -1,0 +1,8 @@
+@comment $NetBSD$
+share/texmf-dist/tex/plain/cweb/cwebmac.tex
+share/texmf-dist/tex/plain/cweb/pdfXcwebmac.tex
+share/texmf-dist/tex/plain/cweb/pdfcwebmac.tex
+share/texmf-dist/tex/plain/cweb/pdfdcwebmac.tex
+share/texmf-dist/tex/plain/cweb/pdffcwebmac.tex
+share/texmf-dist/tex/plain/cweb/pdficwebmac.tex
+share/texmf-dist/tex/plain/cweb/pdfwebmac.tex

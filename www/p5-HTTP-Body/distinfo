@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.5 2010/02/22 17:29:45 sno Exp $
+$NetBSD: distinfo,v 1.7 2011/11/16 08:05:53 hiramatsu Exp $
 
-SHA1 (HTTP-Body-1.09.tar.gz) = 2770e0125df6858f30b121391ecec47360282999
-RMD160 (HTTP-Body-1.09.tar.gz) = 19b7d59cdd8e089f98c37043e8090babf5c50cc3
-Size (HTTP-Body-1.09.tar.gz) = 3721113 bytes
+SHA1 (HTTP-Body-1.15.tar.gz) = c78a19386d8b7edfc219a6092192abdf6214621c
+RMD160 (HTTP-Body-1.15.tar.gz) = 6d20e2edab0d056394227cb57419adfe360b3f6b
+Size (HTTP-Body-1.15.tar.gz) = 24010 bytes

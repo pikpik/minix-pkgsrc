@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2009/09/11 16:23:29 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2012/02/29 16:32:24 hans Exp $
 
 PKGNAME=	gnuradio-core-docs-${VERSION}
 COMMENT=	GNU Radio core module documentation
-PKGREVISION=	5
+PKGREVISION=	9
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

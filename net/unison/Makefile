@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.45 2011/08/03 12:50:42 is Exp $
+# $NetBSD: Makefile,v 1.52 2012/03/03 12:54:21 wiz Exp $
 
 DISTNAME=	unison-2.40.63
+PKGREVISION=	7
 CATEGORIES=	net
 MASTER_SITES=	http://www.seas.upenn.edu/~bcpierce/unison/download/releases/stable/
 

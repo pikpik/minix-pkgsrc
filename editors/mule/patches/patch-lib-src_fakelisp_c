@@ -1,0 +1,11 @@
+$NetBSD$
+
+- use standard headers
+
+--- lib-src/fakelisp.c~	1995-01-06 12:09:02.000000000 +0000
++++ lib-src/fakelisp.c
+@@ -1,3 +1,4 @@
++#include <stdlib.h>
+ #include "fakelisp.h"
+ 
+ void *Lisp_Object_Table[4096];

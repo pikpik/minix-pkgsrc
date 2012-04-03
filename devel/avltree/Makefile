@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:21 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2011/12/19 02:04:38 dholland Exp $
 
 DISTNAME=	avltree-1.1
 CATEGORIES=	devel
@@ -10,9 +10,12 @@ COMMENT=	In-memory index w/ binary and string keys and key counts
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_TOOLS+=	nroff
+
 MANCOMPRESSED_IF_MANZ=	yes
 INSTALL_TARGET=	includes install
-MAKE_ENV+=	${BSD_MAKE_ENV}
+USE_BSD_MAKEFILE=	yes
+MAKE_FLAGS+=	MKPROFILE=yes
 
 INSTALLATION_DIRS=	include lib ${PKGMANDIR}/cat3 ${PKGMANDIR}/man3
 

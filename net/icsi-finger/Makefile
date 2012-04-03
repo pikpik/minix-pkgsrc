@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2011/01/18 12:28:25 is Exp $
+# $NetBSD: Makefile,v 1.21 2011/11/23 16:25:07 is Exp $
 #
 
-DISTNAME=	icsi-finger-1.0.27
-PKGREVISION=	4
+DISTNAME=	icsi-finger-1.0.29
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.icsi.berkeley.edu/pub/ai/stolcke/software/
+MASTER_SITES+=	http://ftp.sunet.se/pub/nir/finger/icsi-finger/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	is@NetBSD.org
@@ -68,7 +68,9 @@ do-install:
 		${INSTALL_DATA} ${WRKSRC}/support/rc.local-add ${XMPLD}
 		${INSTALL_DATA} ${WRKSRC}/support/services-add ${XMPLD}
 		${INSTALL_DATA} ${WRKSRC}/support/inetd.conf-add ${XMPLD}
-		(cd ${WRKSRC}/src; ${MAKE} install.man DESTDIR=${DESTDIR})
-		(cd ${WRKSRC}/src; ${MAKE} TARGETD=${XMPLDT} install.targets)
+		(cd ${WRKSRC}/src; ${MAKE} install.man DESTDIR=${DESTDIR} \
+			INSTALLMAN=${INSTALL_MAN:Q})
+		(cd ${WRKSRC}/src; ${MAKE} TARGETD=${XMPLDT} install.targets \
+			INSTALLSCRIPT=${INSTALL_SCRIPT:Q})
 
 .include "../../mk/bsd.pkg.mk"

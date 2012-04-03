@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/08/07 12:53:14 obache Exp $
 #
 
 DISTNAME=	tegaki-tools-0.3.1
+PKGREVISION=	1
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://www.tegaki.org/releases/${PKGVERSION_NOREV}/
 

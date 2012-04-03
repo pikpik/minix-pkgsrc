@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2011/04/22 13:43:00 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/02/15 23:07:02 hans Exp $
 #
 
 DISTNAME=	tunapie-2.1.18
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tunapie/}
 
@@ -30,6 +31,7 @@ SUBST_SED.sysconfdir=	-e 's|/etc|${PKG_SYSCONFDIR}|g'
 INSTALLATION_DIRS=	bin share/applications share/pixmaps share/tunapie
 INSTALLATION_DIRS+=	${PKGMANDIR}/man1
 
+REPLACE_SH=		tunapie
 
 # Refer ${WRKSRC}/install.sh for build&install.
 do-build:

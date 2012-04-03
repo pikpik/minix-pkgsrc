@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2010/09/10 03:20:31 taca Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2011/11/08 15:19:01 taca Exp $
 
 BUILDLINK_TREE+=	${RUBY_BASE}
 
@@ -9,7 +9,7 @@ RUBY_BUILDLINK3_MK:=
 .include "../../lang/ruby/rubyversion.mk"
 .endif
 
-BUILDLINK_API_DEPENDS.${RUBY_BASE}?=	${RUBY_BASE}>=${RUBY_REQD}
+BUILDLINK_API_DEPENDS.${RUBY_BASE}?=	${RUBY_BASE}>=${RUBY_VERSION}
 BUILDLINK_ABI_DEPENDS.${RUBY_BASE}?=	${RUBY_BASE}>=${RUBY_ABI_VERSION}
 BUILDLINK_PKGSRCDIR.${RUBY_BASE}?=	../../lang/${RUBY_BASE}
 BUILDLINK_FILES.${RUBY_BASE}+=		lib/libruby${RUBY_VER}.*
@@ -23,6 +23,15 @@ buildlink-bin-ruby:
 	if ${TEST} -f $$f; then \
 		${LN} -s $$f ${BUILDLINK_DIR}/bin/ruby; \
 	fi
+
+.if empty(RUBY_USE_PTHREAD:M[nN][oO])
+PTHREAD_OPTS+=		native
+PTHREAD_AUTO_VARS=	yes
+
+.include "../../mk/pthread.buildlink3.mk"
+.endif
+.include "../../mk/dlopen.buildlink3.mk"
+
 .endif # RUBY_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-${RUBY_BASE}

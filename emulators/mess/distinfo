@@ -1,8 +1,5 @@
-$NetBSD: distinfo,v 1.5 2011/04/21 20:43:02 wiz Exp $
+$NetBSD: distinfo,v 1.7 2011/11/24 07:43:15 wiz Exp $
 
-SHA1 (mame0143s.zip) = dd7cf43ec9f31321ee698facce3b2d3b21cebf15
-RMD160 (mame0143s.zip) = 0cfffdf5939fb740abdb030256011a8e6ca6ee54
-Size (mame0143s.zip) = 17902802 bytes
-SHA1 (mess0143s.zip) = 1a3fc63b36d36d9299ab009743770291c93aa4f4
-RMD160 (mess0143s.zip) = 525cc2384b698be736103c65dee0f0a56100c116
-Size (mess0143s.zip) = 62865545 bytes
+SHA1 (mess0145s.zip) = 147acedd255f07fe4f4e05e8c6fca1ad080ae437
+RMD160 (mess0145s.zip) = 8009daab0ead7417baa5142464c8fc8a7540fe03
+Size (mess0145s.zip) = 61648176 bytes

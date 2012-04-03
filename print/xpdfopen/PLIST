@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/pdfclose
+bin/pdfopen
+man/man1/pdfclose.1
+man/man1/pdfopen.1

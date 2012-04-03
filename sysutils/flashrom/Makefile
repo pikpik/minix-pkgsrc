@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2011/02/08 19:33:18 jakllsch Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/26 16:33:12 jakllsch Exp $
 #
 
-DISTNAME=	flashrom-0.9.4
+DISTNAME=	flashrom-0.9.5.2
 PKGNAME=	${DISTNAME:S/-r/pre/}
 CATEGORIES=	sysutils
 MASTER_SITES=	http://download.flashrom.org/releases/

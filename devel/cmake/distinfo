@@ -1,12 +1,14 @@
 $NetBSD$
 
-SHA1 (cmake-2.8.6.tar.gz) = 7c2cbd42d27e26580cd4923892197b84b2a90675
-RMD160 (cmake-2.8.6.tar.gz) = c3095a4776367496f895b8075fda373568f01878
-Size (cmake-2.8.6.tar.gz) = 5583905 bytes
+SHA1 (cmake-2.8.7.tar.gz) = d206182b454f4d1ddeb0f11d7d1be8a66e5c2464
+RMD160 (cmake-2.8.7.tar.gz) = 13b188e75152feef4e5692807e3a9e7c34b26fe3
+Size (cmake-2.8.7.tar.gz) = 5667409 bytes
 SHA1 (patch-CMakeLists.txt) = 0c8b90373d0ceb6fc1335a3207077baf255fb34c
 SHA1 (patch-Modules_FindX11.cmake) = a75a6834a376a51a314989b9996a5208cc0682ab
+SHA1 (patch-Modules_Platform_SunOS.cmake) = a873f937568744208fec90f80ebb67ca3150b49a
+SHA1 (patch-Utilities_KWIML_CMakeLists.txt) = 4e8cef0eab2ad8cb27cd7076e077bb5e7425a95c
 SHA1 (patch-aa) = 1af37a3f7bd8423785acff80d7b89c75018e5cab
-SHA1 (patch-ab) = ef595be6f88f74622d1ef0d850a626882bf9c80a
+SHA1 (patch-ab) = 85b3bf0d51d5235f57195c82fb3888d08b3d4099
 SHA1 (patch-ac) = 1f11e98d50127fae12286708215a90f118b2d2bc
 SHA1 (patch-ae) = d5c40a3aa39c8b09b3de0cb624b5b5a3be6b5126
 SHA1 (patch-af) = a8a86baf718d98a9d60e8bd917fde34616263024

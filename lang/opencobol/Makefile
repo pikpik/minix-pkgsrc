@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.21 2010/09/16 08:06:15 adam Exp $
+# $NetBSD$
+#
 
-DISTNAME=	open-cobol-1.0
-PKGNAME=	opencobol-1.0
-PKGREVISION=	2
+DISTNAME=	open-cobol-1.1
+PKGNAME=	opencobol-1.1
 CATEGORIES=	lang
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=open-cobol/}
+MASTER_SITES=	http://www.sim-basis.de/
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.opencobol.org/
+MAINTAINER=	rodo@bloerp.de
+HOMEPAGE=	http://www.sim-basis.de/
 COMMENT=	Open-source COBOL compiler
 
 PKG_DESTDIR_SUPPORT=	user-destdir

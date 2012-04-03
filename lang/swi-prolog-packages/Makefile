@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.27 2010/11/23 21:56:25 asau Exp $
+# $NetBSD: Makefile,v 1.31 2012/01/04 15:21:18 dholland Exp $
 
 .include "../../lang/swi-prolog-lite/Makefile.common"
 
 PKGNAME=		swi-prolog-packages-${SWIPLVERS}
-#PKGREVISION=		1
+PKGREVISION=		2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Packages for SWI Prolog
@@ -12,7 +12,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_GNU_READLINE=	yes	# uses rl_event_hook() interface
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
@@ -23,6 +23,7 @@ BUILD_DEPENDS+=		modular-xorg-server-[0-9]*:../../x11/modular-xorg-server
 
 CONFIGURE_ENV+=		PL=swi-prolog
 CONFIGURE_ENV+=		ARCH=${MACHINE_GNU_PLATFORM}	# make PLIST consistent
+CONFIGURE_ARGS+=	--without-jpl
 
 CONFIGURE_DIRS+=	. packages
 BUILD_DIRS+=		packages
@@ -90,6 +91,7 @@ CHECK_WRKREF_SKIP=	lib/swi-prolog-${SWIPLVERS}/xpce-${XPCE_VERSION}/lib/${MACHIN
 .include "../../devel/gmp/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"

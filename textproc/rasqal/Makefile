@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2010/12/12 12:00:30 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2011/11/01 06:56:34 sbd Exp $
 
-DISTNAME=	rasqal-0.9.21
-PKGREVISION=	1
+DISTNAME=	rasqal-0.9.28
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.librdf.org/source/
 
@@ -18,7 +17,9 @@ USE_LIBTOOL=	yes
 
 PKGCONFIG_OVERRIDE+=	rasqal.pc.in
 
-.include "../../textproc/raptor/buildlink3.mk"
+.include "../../devel/gmp/buildlink3.mk"
+.include "../../math/mpfr/buildlink3.mk"
+.include "../../textproc/raptor2/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

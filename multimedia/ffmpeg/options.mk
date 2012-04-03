@@ -1,10 +1,10 @@
-# $NetBSD: options.mk,v 1.21 2011/08/04 23:43:48 wiz Exp $
+# $NetBSD: options.mk,v 1.23 2012/01/09 17:08:52 drochner Exp $
 
 # Global and legacy options
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ffmpeg
-PKG_SUPPORTED_OPTIONS=	theora vorbis xvid faac x264 opencore-amr libvpx
-PKG_SUGGESTED_OPTIONS=	theora vorbis xvid x264 libvpx
+PKG_SUPPORTED_OPTIONS=	faac lame libvpx opencore-amr theora vorbis x264 xvid
+PKG_SUGGESTED_OPTIONS=	lame libvpx theora vorbis x264 xvid
 #PKG_OPTIONS_OPTIONAL_GROUPS=	aac-decoder
 #PKG_OPTIONS_GROUP.aac-decoder=	faac
 
@@ -67,6 +67,16 @@ CONFIGURE_ARGS+=	--enable-libvorbis
 .endif
 
 ###
+### LAME MP3 encoder
+###
+.if !empty(PKG_OPTIONS:Mlame)
+# "lame-3.98" isn't compatible with "ffmpeg" which breaks audio encoding.
+BUILDLINK_ABI_DEPENDS.lame+= lame>=3.98.2nb1
+CONFIGURE_ARGS+=	--enable-libmp3lame
+.include "../../audio/lame/buildlink3.mk"
+.endif
+
+###
 ### XviD support
 ###
 .if !empty(PKG_OPTIONS:Mxvid)
@@ -79,7 +89,7 @@ CONFIGURE_ARGS+=	--enable-libxvid
 ###
 .if !empty(PKG_OPTIONS:Mx264)
 # ABI change between 20090326 and 20100201
-BUILDLINK_API_DEPENDS.x264-devel+=	x264-devel>=20110707
+BUILDLINK_API_DEPENDS.x264-devel+=	x264-devel>=20111207
 #BUILDLINK_API_DEPENDS.x264-devel+=	x264-devel<20110102
 CONFIGURE_ARGS+=	--enable-libx264
 .include "../../multimedia/x264-devel/buildlink3.mk"

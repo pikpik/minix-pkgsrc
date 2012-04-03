@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2009/02/26 18:00:34 hasso Exp $
+# $NetBSD: Makefile.common,v 1.2 2011/02/28 14:52:39 wiz Exp $
 #
 # used by audio/akode/Makefile
 # used by audio/akode-plugins-alsa/Makefile
@@ -24,6 +24,7 @@ HOMEPAGE=		http://carewolf.com/akode/
 WRKSRC=			${WRKDIR}/akode-${AKODE_VERSION}
 
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_TOOLS+=		gmake pkg-config
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

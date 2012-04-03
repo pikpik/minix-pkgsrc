@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.25 2007/10/16 18:12:56 reed Exp $
+# $NetBSD: buildlink3.mk,v 1.26 2009/03/20 19:24:34 joerg Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
@@ -12,6 +12,7 @@ BUILDLINK_TREE+=	fontconfig
 FONTCONFIG_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.fontconfig+=	fontconfig>=2.4.2
+BUILDLINK_ABI_DEPENDS.fontconfig?=	fontconfig>=2.8.0nb2
 BUILDLINK_PKGSRCDIR.fontconfig?=	../../fonts/fontconfig
 
 .include "../../converters/libiconv/buildlink3.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.63 2011/07/21 03:32:08 taca Exp $
+# $NetBSD: Makefile,v 1.69 2012/01/20 17:05:11 joerg Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
-PKGNAME=	${RUBY_PKGPREFIX}-base-${RUBY_VERSION_SUFFIX}
+PKGNAME=	${RUBY_PKGPREFIX}-base-${RUBY_VERSION_FULL}
 CATEGORIES=	lang ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
 
@@ -11,7 +11,7 @@ HOMEPAGE=	${RUBY_HOMEPAGE}
 COMMENT=	Ruby 1.8 based release minimum package
 LICENSE=	gnu-gpl-v2 OR ruby-license
 
-RUBY_VERSION=	${RUBY18_VERSION}
+RUBY_VERSION_SUPPORTED=	18
 
 CONFLICTS=	${RUBY_PKGPREFIX}-dbm-[0-9]* \
 		${RUBY_PKGPREFIX}-digest-[0-9]* \
@@ -47,6 +47,10 @@ CONFIGURE_ENV+=	LDSHARED="${CC} -G"
 LIBS.SunOS+=	-lm
 .endif
 
+.if !empty(PKGSRC_COMPILER:Mclang)
+CONFIGURE_ARGS+=	--enable-frame-address
+.endif
+
 # Ruby build process depends on config.status's content
 CONFIG_STATUS_OVERRIDE=	# empty
 
@@ -80,7 +84,7 @@ CONFIGURE_ENV+=	ac_cv_header_ucontext_h=no
 #
 # work around for getaddrinfo(3)
 #
-.if ${OPSYS} == "Linux" || (${OPSYS} == "SunOS" && !empty(OS_VERSION:M5.[6-9]))
+.if ${OPSYS} == "SunOS" && !empty(OS_VERSION:M5.[6-9])
 CONFIGURE_ARGS+=	--enable-wide-getaddrinfo
 .endif
 
@@ -112,7 +116,6 @@ FIX_PERM=		${RUBY_ARCHLIB}/digest.h ${RUBY_ARCHLIB}/dl.h \
 			${RUBY_ARCHLIB}/dlconfig.h
 
 pre-configure:
-	${ECHO} >> ${WRKSRC}/version.h		# workaround for no EOL.
 	${RM} -f ${WRKSRC}/ext/curses/extconf.rb
 	${RM} -f ${WRKSRC}/ext/gdbm/extconf.rb
 	${RM} -f ${WRKSRC}/ext/readline/extconf.rb
@@ -153,5 +156,9 @@ post-install:
 .endfor
 	${RUBY_GENERATE_PLIST}
 
+.include "../../mk/bdb.buildlink3.mk"
+.include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../lang/ruby/Makefile.common"
 .include "../../mk/bsd.pkg.mk"

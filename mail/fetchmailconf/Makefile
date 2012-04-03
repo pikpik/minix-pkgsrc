@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.80 2011/06/09 11:52:33 obache Exp $
+# $NetBSD: Makefile,v 1.81 2011/08/26 07:19:25 tron Exp $
 
 DISTNAME=	fetchmail-6.3.21
 PKGNAME=	${DISTNAME:S/fetchmail/fetchmailconf/}
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://download.berlios.de/fetchmail/
 EXTRACT_SUFX=	.tar.bz2

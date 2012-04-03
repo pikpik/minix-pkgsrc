@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2009/08/16 13:57:43 wiz Exp $
+# $NetBSD: Makefile,v 1.76 2011/11/26 23:56:45 hans Exp $
 
 DISTNAME=		texinfo-4.13
 PKGNAME=		g${DISTNAME}
@@ -23,18 +23,10 @@ PLIST_SRC=		${PKGDIR}/PLIST
 PKGSRC_INFOPATH=	${PREFIX}/${PKGINFODIR}:${X11BASE}/${PKGINFODIR}:${LOCALBASE}/${PKGINFODIR}
 MAKE_ENV+=		PKGSRC_INFOPATH=${PKGSRC_INFOPATH:Q}
 
-.include "../../mk/bsd.prefs.mk"
+REPLACE_BASH+=		util/texi2dvi
 
-TEXINFO_LOCALE?=	yes
-BUILD_DEFS+=		TEXINFO_LOCALE
-MAKEFLAGS+=		TEXINFO_LOCALE=${TEXINFO_LOCALE:Q}
-.if !empty(TEXINFO_LOCALE:M[yY][eE][sS])
-USE_PKGLOCALEDIR=	yes
-PLIST_SRC+=		${PKGDIR}/PLIST.locale
-.  include "../../devel/gettext-lib/buildlink3.mk"
-.else
-CONFIGURE_ARGS+=	--disable-nls
-.endif
+.include "../../mk/bsd.prefs.mk"
+.include "options.mk"
 
 .include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/01/04 14:08:15 shattered Exp $
+# $NetBSD: Makefile,v 1.12 2011/02/12 11:09:30 shattered Exp $
 #
 
 DISTNAME=	dmidecode-2.11
@@ -8,6 +8,7 @@ MASTER_SITES=	http://savannah.gnu.org/download/dmidecode/
 MAINTAINER=	shattered@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/dmidecode/
 COMMENT=	Print out DMI (SMBIOS) table in human-readable format
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

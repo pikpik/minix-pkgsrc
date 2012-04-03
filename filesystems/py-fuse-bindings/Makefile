@@ -1,17 +1,18 @@
-# $NetBSD: Makefile,v 1.3 2010/02/10 19:17:37 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2011/12/16 01:07:23 gdt Exp $
 #
 
-DISTNAME=		fuse-python-0.2pre1-20060720
-PKGNAME=		${PYPKGPREFIX}-fuse-bindings-0.2pre1
-PKGREVISION=		2
+VERSION=		0.2.1
+DISTNAME=		fuse-python-${VERSION}
+PKGNAME=		${PYPKGPREFIX}-fuse-bindings-${VERSION}
 CATEGORIES=		filesystems python
-MASTER_SITES=		# http://bsd.cenkes.org/myports/
-EXTRACT_SUFX=		.tar.bz2
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fuse/fuse-python}/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://bsd.cenkes.org/myports/
+HOMEPAGE=		http://sourceforge.net/apps/mediawiki/fuse/index.php?title=FusePython
 COMMENT=		Python bindings for FUSE and refuse
+LICENSE=		gnu-lgpl-v2.1
 
+EGG_NAME=		fuse_python-${VERSION}
 PYDISTUTILSPKG=		yes
 PY_PATCHLIST=		yes
 USE_TOOLS+=		pkg-config
@@ -25,8 +26,7 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/example/xmp.py \
 		${DESTDIR}${PREFIX}/share/examples/fuse-python/
 
-.include "../../lang/python/application.mk"
-.include "../../lang/python/extension.mk"
+.include "../../lang/python/egg.mk"
 
 .include "../../mk/fuse.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

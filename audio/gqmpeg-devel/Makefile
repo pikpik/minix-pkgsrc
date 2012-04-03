@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2011/04/05 08:09:41 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/02/15 21:33:04 hans Exp $
 
 DISTNAME=		gqmpeg-0.91.1
-PKGREVISION=		12
+PKGREVISION=		15
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gqmpeg/}
 
@@ -23,7 +23,12 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-included-gettext
 CONFIGURE_ENV+=		GNOME_DATADIR=${PREFIX}/share
 
+REPLACE_SH=		plugin/gqmpeg-shoutcast-plugin.sh
+
 MAKE_ENV+=		builddir=.
+
+LIBS.SunOS+=		-lm -lX11
+LDFLAGS.DragonFly=	-lm -lX11
 
 .include "options.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/06/19 16:30:45 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2011/11/20 01:26:58 marino Exp $
 #
 
 DISTNAME=	adplug-2.1

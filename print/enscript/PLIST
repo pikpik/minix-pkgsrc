@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2009/02/13 18:53:28 abs Exp $
+@comment $NetBSD$
 bin/diffpp
 bin/enscript
 bin/mkafmmap
@@ -89,6 +89,7 @@ share/enscript/hl/diffs.st
 share/enscript/hl/diffu.st
 share/enscript/hl/elisp.st
 share/enscript/hl/enscript.st
+share/enscript/hl/f90.st
 share/enscript/hl/fortran.st
 share/enscript/hl/fortran_pp.st
 share/enscript/hl/haskell.st

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.55 2010/08/12 04:02:28 mrg Exp $
+# $NetBSD: Makefile,v 1.58 2011/11/16 08:28:29 tron Exp $
 
 DISTNAME=		ircii-${VERS}
 PKGNAME=		ircII-${VERS}
-PKGREVISION=		1
+PKGREVISION=		3
 CATEGORIES=		chat
 MASTER_SITES=		ftp://ircii.warped.com/pub/ircII/ \
 			http://ircii.warped.com/pub/ircII/
@@ -18,7 +18,7 @@ CONFLICTS=		blackened-[0-9]*
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
-VERS=			20110228
+VERS=			20111115
 PLIST_SUBST+=	VERS=${VERS:Q}
 
 .include "../../mk/bsd.prefs.mk"
@@ -63,4 +63,5 @@ post-install:
 	${SETENV} PATH=${PATH:Q} PKG_VERBOSE=${PKG_VERBOSE:Q}		\
 	${SH} ${PKGSRCDIR}/mk/plist/doc-compress ${DOC_COMPRESS_ARGS}
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

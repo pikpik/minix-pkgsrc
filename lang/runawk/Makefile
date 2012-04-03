@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2011/10/09 10:02:46 cheusov Exp $
+# $NetBSD: Makefile,v 1.6 2011/11/27 18:52:53 cheusov Exp $
 #
 
-DISTNAME=	runawk-1.3.2
+DISTNAME=	runawk-1.4.0
 CATEGORIES=	lang devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=runawk/} \
 		http://mova.org/~cheusov/pub/runawk/
@@ -37,9 +37,5 @@ MAKE_ENV+=	MANDIR=${PREFIX}/${PKGMANDIR}
 MAKE_ENV+=	EGDIR=${EGDIR}
 MAKE_ENV+=	SUBPRJ_DFLT='runawk modules a_getopt doc examples'
 
-AUTO_MKDIRS=	yes
-
-MAKE_PROGRAM=	mkcmake
-
-.include "../../devel/mk-configure/configure.mk"
+.include "../../devel/mk-configure/mk-c.mk"
 .include "../../mk/bsd.pkg.mk"

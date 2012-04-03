@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.77 2011/02/17 07:48:35 markd Exp $
+# $NetBSD: Makefile,v 1.83 2012/02/09 21:44:27 sbd Exp $
 
 DISTNAME=	kdbg-2.2.2
-PKGREVISION=	1
+PKGREVISION=	5
 CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kdbg/}
 
@@ -12,8 +12,9 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake msgfmt
+USE_TOOLS+=		gmake msgfmt perl
 GNU_CONFIGURE=		YES
+SET_LIBDIR=		YES
 USE_LIBTOOL=		YES
 USE_LANGUAGES=		c c++
 

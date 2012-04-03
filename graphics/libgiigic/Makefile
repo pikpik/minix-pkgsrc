@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/04 21:29:49 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/07/14 12:56:05 joerg Exp $
 #
 
 DISTNAME=		libgiigic-1.0.0.src
@@ -23,6 +23,10 @@ GNU_CONFIGURE=		yes
 PKG_SYSCONFSUBDIR=	ggi
 EGDIR=			${PREFIX}/share/examples/libgiigic
 CONF_FILES=		${EGDIR}/libgiigic.conf ${PKG_SYSCONFDIR}/libgiigic.conf
+
+.include "../../mk/bsd.prefs.mk"
+
+CPPFLAGS+=		-DGG_NEED_OLD_INTTYPES
 
 .include "../../graphics/libgii/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

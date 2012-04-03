@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2010/12/02 18:00:14 adam Exp $
+# $NetBSD: Makefile,v 1.33 2012/01/14 07:44:35 obache Exp $
 
 DISTNAME=	source-highlight-3.1.4
+PKGREVISION=	3
 SVR4_PKGNAME=	srchl
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU:=src-highlite/}
@@ -28,13 +29,6 @@ INFO_FILES=	YES
 # this is only really needed for the 'test' target
 USE_TOOLS+=	gmake gsed
 TEST_TARGET=	check
-
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "NetBSD"
-# We really need GNU sed not NetBSD's GNUish sed
-TOOLS_PLATFORM.gsed=	# empty
-.endif
 
 .include "../../devel/boost-libs/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,14 @@
+$NetBSD$
+
+- use standard headers
+
+--- src/dired.c~	1994-11-11 00:35:50.000000000 +0000
++++ src/dired.c
+@@ -21,6 +21,7 @@ the Free Software Foundation, 675 Mass A
+ #include <config.h>
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ 

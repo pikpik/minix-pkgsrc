@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2011/04/22 13:45:14 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/02/06 12:42:26 wiz Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-vte-${VERSION}
 COMMENT=		Ruby binding of vte
+PKGREVISION=		2
 CATEGORIES=		x11
 
 CONFLICTS+=		ruby[0-9][0-9]-gnome2-vte-[0-9]*
@@ -16,7 +17,6 @@ DEPENDS+=               ${RUBY_PKGPREFIX}-gnome2-gtk>=${VERSION}:../../x11/ruby-
 BUILDLINK_API_DEPENDS.ruby-gnome2-glib+=	${RUBY_PKGPREFIX}-gnome2-glib-${VERSION}{,nb*}
 BUILDLINK_DEPMETHOD.ruby-gnome2-glib=	build
 .include "../../devel/ruby-gnome2-glib/buildlink3.mk"
-.include "../../graphics/ruby-rcairo/buildlink3.mk"
 .include "../../x11/vte/buildlink3.mk"
 .include "../../devel/ruby-pkg-config/tool.mk"
 .include "../../meta-pkgs/ruby-gnome2/Makefile.common"

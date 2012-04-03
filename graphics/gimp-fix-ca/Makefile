@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:38:03 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/02/06 12:40:23 wiz Exp $
 #
 
 DISTNAME=		gimp-fix-ca-3.0.1
-PKGREVISION=		9
+PKGREVISION=		12
 CATEGORIES=		graphics
 MASTER_SITES=		http://registry.gimp.org/file/fix-ca.c?action=download&id=9884&file=
 EXTRACT_SUFX=		.c
@@ -21,6 +21,7 @@ INSTALLATION_DIRS=	lib/gimp/2.0/plug-ins
 USE_TOOLS+=		pkg-config
 
 LINK_PTHREAD=		${PTHREAD_LDFLAGS} ${PTHREAD_LIBS}
+LINK_PTHREAD+=		-lm    # Tag on, explicit for binutils 2.22 linker
 
 pre-build:
 	ln -sf ${LOCALBASE}/bin/gimptool-2.0 \

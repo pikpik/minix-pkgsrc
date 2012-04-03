@@ -1,2 +1,2 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.2 2012/01/23 15:11:54 ghen Exp $
 lib/pdns/libldapbackend.la

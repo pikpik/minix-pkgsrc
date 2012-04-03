@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.71 2008/07/14 12:55:58 joerg Exp $
+# $NetBSD: Makefile,v 1.74 2012/01/13 10:54:49 obache Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
-PKGREVISION=	1
+PKGREVISION=	3
 
 USE_TOOLS+=	msgfmt
 
@@ -21,6 +21,9 @@ PLIST.cdaudio=		yes
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 
+REPLACE_SH=		xmms-config.in
+
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xf86vidmodeproto/buildlink3.mk"

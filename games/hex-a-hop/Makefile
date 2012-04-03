@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/01 11:15:47 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/11/01 06:01:18 sbd Exp $
 #
 
 DISTNAME=	hex-a-hop-1.1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hexahop/}
 
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
+
+LIBS.SunOS+=	-liconv
 
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../devel/SDL_ttf/buildlink3.mk"

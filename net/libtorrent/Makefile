@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2010/06/16 13:07:03 jakllsch Exp $
+# $NetBSD: Makefile,v 1.42 2011/11/07 13:10:31 hans Exp $
 
 DISTNAME=	libtorrent-0.12.9
 CATEGORIES=	net
@@ -16,9 +16,16 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-debug
-GCC_REQD+=		3.3
 
 .include "../../mk/bsd.prefs.mk"
+.if ${MACHINE_ARCH} == "alpha" || \
+    ${MACHINE_ARCH} == "i386" || \
+    ${MACHINE_ARCH} == "powerpc" || \
+    ${MACHINE_ARCH} == "x86_64"
+GCC_REQD+=		4.1.3
+.else
+GCC_REQD+=		4.2.1
+.endif
 
 # configure check is fooled by trap & emulate of unaligned access on alpha
 .if (${MACHINE_ARCH} == "alpha")

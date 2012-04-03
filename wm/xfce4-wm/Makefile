@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/01/13 13:39:36 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2012/02/06 12:41:50 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,7 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTNAME=	xfwm4-${XFCE4_VERSION}
 PKGNAME=	xfce4-wm-${XFCE4_VERSION}
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	wm
 COMMENT=	Xfce window manager
 

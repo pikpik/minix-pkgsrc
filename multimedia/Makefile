@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.183 2011/07/13 23:43:02 jmcneill Exp $
+# $NetBSD: Makefile,v 1.189 2012/02/21 12:51:15 drochner Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -6,6 +6,7 @@ COMMENT=	Multimedia utilities
 SUBDIR+=	acidrip
 SUBDIR+=	adobe-flash-plugin
 SUBDIR+=	adobe-flash-plugin10.1
+SUBDIR+=	adobe-flash-plugin11
 SUBDIR+=	alevt
 SUBDIR+=	avidemux
 SUBDIR+=	bsdav
@@ -25,6 +26,7 @@ SUBDIR+=	dvdstyler
 SUBDIR+=	dvdview
 SUBDIR+=	farsight2
 SUBDIR+=	ffmpeg
+SUBDIR+=	ffmpeg2theora
 SUBDIR+=	ffmpegthumbnailer
 SUBDIR+=	ffplay
 SUBDIR+=	flashplayer
@@ -81,6 +83,7 @@ SUBDIR+=	libdvdread
 SUBDIR+=	libflash
 SUBDIR+=	libflashsupport
 SUBDIR+=	libflashsupport-pulse
+SUBDIR+=	libflashsupport10
 SUBDIR+=	libmatroska
 SUBDIR+=	libmp4v2
 SUBDIR+=	libmpeg2
@@ -117,6 +120,7 @@ SUBDIR+=	openquicktime
 SUBDIR+=	p5-GStreamer
 SUBDIR+=	p5-xmltv
 SUBDIR+=	phonon
+SUBDIR+=	phonon-backend-gstreamer
 SUBDIR+=	php-ming
 SUBDIR+=	pitivi
 SUBDIR+=	pspvc
@@ -129,6 +133,7 @@ SUBDIR+=	replex
 SUBDIR+=	ruby-clutter-gst
 SUBDIR+=	ruby-gnome2-gstreamer
 SUBDIR+=	ruby-ming
+SUBDIR+=	schroedinger
 SUBDIR+=	smpeg
 SUBDIR+=	subtitleeditor
 SUBDIR+=	swfdec
@@ -145,6 +150,7 @@ SUBDIR+=	ushare
 SUBDIR+=	vlc
 SUBDIR+=	vlc08
 SUBDIR+=	vlc10
+SUBDIR+=	vlc2
 SUBDIR+=	vls
 SUBDIR+=	win32-codecs
 SUBDIR+=	x264-devel

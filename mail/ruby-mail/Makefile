@@ -1,20 +1,16 @@
-# $NetBSD: Makefile,v 1.4 2011/03/23 15:02:09 taca Exp $
+# $NetBSD: Makefile,v 1.7 2011/12/15 14:56:17 taca Exp $
 
-DISTNAME=	mail-2.2.19
-CATEGORIES=	devel
+DISTNAME=	mail-2.4.4
+CATEGORIES=	mail
 
-# Note: mail/ruby-actionmailer3 needs ruby-mail<2.3.
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://github.com/mikel/mail
 COMMENT=	Mail provides a nice Ruby DSL for making, sending and reading emails
 LICENSE=	mit
 
-RUBY_RAILS=	# defined
-
-DEPENDS+=	${RUBY_ACTIVESUPPORT_DEPENDS}
-DEPENDS+=	${RUBY_PKGPREFIX}-mime-types>=1.16:../../mail/ruby-mime-types
-DEPENDS+=	${RUBY_PKGPREFIX}-treetop>=1.4.8:../../textproc/ruby-treetop
-DEPENDS+=	${RUBY_PKGPREFIX}-i18n>=0.5.0:../../devel/ruby-i18n
+DEPENDS+=	${RUBY_PKGPREFIX}-mime-types>=1.16<2:../../mail/ruby-mime-types
+DEPENDS+=	${RUBY_PKGPREFIX}-treetop>=1.4.8<1.5:../../textproc/ruby-treetop
+DEPENDS+=	${RUBY_PKGPREFIX}-i18n>=0.4.0:../../devel/ruby-i18n
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

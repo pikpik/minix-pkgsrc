@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2011/05/27 18:51:48 gls Exp $
+# $NetBSD: Makefile,v 1.30 2012/02/13 22:38:06 gls Exp $
 #
 
 DISTNAME=		asciidoc-8.6.6
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=asciidoc/}
 
@@ -31,12 +32,10 @@ SUBST_MESSAGE.ad=	Fixing hard-coded config file paths.
 SUBST_FILES.ad=		a2x.py asciidoc.py
 SUBST_SED.ad=		-e 's,^\(CONF_DIR\).*=.*,\1="${PREFIX}/share/asciidoc",'
 
-SUBST_CLASSES+=		ae
-SUBST_STAGE.ae=		pre-configure
-SUBST_MESSAGE.ae=	Fixing hard-coded Python interpreter paths.
-SUBST_FILES.ae=		a2x.py asciidoc.conf
-SUBST_FILES.ae+=	html5.conf xhtml11.conf xhtml11-quirks.conf
-SUBST_SED.ae=		-e 's,python,${PYTHONBIN},'
+REPLACE_INTERPRETER+=	python
+REPLACE.python.old=	/usr/bin/env python
+REPLACE.python.new=	${PYTHONBIN}
+REPLACE_FILES.python=	a2x.py asciidoc.conf html5.conf xhtml11.conf xhtml11-quirks.conf
 
 INSTALLATION_DIRS=	bin share/asciidoc share/asciidoc/filters \
 			share/asciidoc/docbook-xsl share/asciidoc/stylesheets \

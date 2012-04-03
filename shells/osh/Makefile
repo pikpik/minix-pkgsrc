@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/05/02 10:31:12 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2010/05/07 12:02:44 jmmv Exp $
 
 DISTNAME=	osh-20100430
 PKGREVISION=	1
@@ -20,5 +20,6 @@ INSTALL_TARGET=	install-oshall
 
 MAKE_ENV+=	MANDIR=${PREFIX}/${PKGMANDIR}/man1
 MAKE_ENV+=	SYSCONFDIR=${PKG_SYSCONFDIR}
+MAKE_ENV+=	INSTALL=${TOOLS_PATH.install:Q} BINGRP= MANGRP=
 
 .include "../../mk/bsd.pkg.mk"

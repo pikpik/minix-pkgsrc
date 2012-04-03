@@ -1,2 +1,4 @@
-@comment $NetBSD: PLIST.Linux,v 1.1.1.1 2008/11/21 17:40:29 adam Exp $
+@comment $NetBSD: PLIST.Linux,v 1.2 2011/05/02 21:23:01 adam Exp $
 bin/wine-preloader
+lib/wine/fakedlls/winejoystick.drv
+lib/wine/winejoystick.drv.so

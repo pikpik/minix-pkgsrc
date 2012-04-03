@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.67 2010/11/07 15:27:26 shattered Exp $
+# $NetBSD: Makefile,v 1.70 2012/01/28 14:17:53 wiz Exp $
 
-DISTNAME=	lame-3.98.4
-PKGREVISION=	2
+DISTNAME=	lame-3.99.5
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lame/}
 

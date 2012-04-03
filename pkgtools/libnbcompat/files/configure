@@ -4755,7 +4755,7 @@ else
 fi
 
 
-
+our_getopt_long=no
 for ac_header in getopt.h
 do :
   ac_fn_c_check_header_mongrel "$LINENO" "getopt.h" "ac_cv_header_getopt_h" "$ac_includes_default"
@@ -4773,21 +4773,11 @@ _ACEOF
 
 :
 else
-   case " $LIBOBJS " in
-  *" getopt_long.$ac_objext "* ) ;;
-  *) LIBOBJS="$LIBOBJS getopt_long.$ac_objext"
- ;;
-esac
-
+   our_getopt_long=yes
 fi
 
 else
-   case " $LIBOBJS " in
-  *" getopt_long.$ac_objext "* ) ;;
-  *) LIBOBJS="$LIBOBJS getopt_long.$ac_objext"
- ;;
-esac
-
+   our_getopt_long=yes
 
 fi
 
@@ -4796,13 +4786,25 @@ done
 
 if test "$enable_bsd_getopt" = yes; then
 	if test "$ac_cv_have_decl_optreset" = no; then
+		{ $as_echo "$as_me:${as_lineno-$LINENO}: Using included getopt and getopt_long" >&5
+$as_echo "$as_me: Using included getopt and getopt_long" >&6;}
 		case " $LIBOBJS " in
   *" getopt.$ac_objext "* ) ;;
   *) LIBOBJS="$LIBOBJS getopt.$ac_objext"
  ;;
 esac
 
+		our_getopt_long=yes
 	fi
+fi
+
+if test "$our_getopt_long" = "yes"; then
+	case " $LIBOBJS " in
+  *" getopt_long.$ac_objext "* ) ;;
+  *) LIBOBJS="$LIBOBJS getopt_long.$ac_objext"
+ ;;
+esac
+
 fi
 
 pkg_use_nbcompat_vis=yes

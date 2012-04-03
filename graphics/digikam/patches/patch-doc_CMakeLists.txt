@@ -1,0 +1,12 @@
+$NetBSD$
+
+Don't do kipi-plugins.
+
+--- doc/CMakeLists.txt.orig	2012-01-03 00:33:14.000000000 +0000
++++ doc/CMakeLists.txt
+@@ -24,4 +24,4 @@
+ 
+ MACRO_OPTIONAL_ADD_SUBDIRECTORY(digikam/digikam)
+ MACRO_OPTIONAL_ADD_SUBDIRECTORY(digikam/showfoto)
+-MACRO_OPTIONAL_ADD_SUBDIRECTORY(kipi-plugins)
++#MACRO_OPTIONAL_ADD_SUBDIRECTORY(kipi-plugins)

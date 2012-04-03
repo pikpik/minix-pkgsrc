@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.20 2009/03/20 19:24:53 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2012/03/05 13:35:20 obache Exp $
 
 BUILDLINK_TREE+=	tcl
 
@@ -18,6 +18,12 @@ BUILDLINK_TRANSFORM+=	l:tcl:tcl84
 BUILDLINK_TRANSFORM+=	l:tcl8.4:tcl84
 
 TCLCONFIG_SH?=		${BUILDLINK_PREFIX.tcl}/lib/tclConfig.sh
+
+_TOOLS_USE_PKGSRC.tclsh=	yes
+
+FIND_PREFIX:=		TOOLS_PREFIX.tclsh=tcl
+.include "../../mk/find-prefix.mk"
+TCLSH=			${TOOLS_PREFIX.tclsh}/bin/tclsh
 
 .include "../../mk/dlopen.buildlink3.mk"
 .endif # TCL_BUILDLINK3_MK

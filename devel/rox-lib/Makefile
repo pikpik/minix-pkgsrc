@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2011/01/13 13:37:27 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2011/11/01 06:01:04 sbd Exp $
 #
 
 DISTNAME=	rox-lib-2.0.2
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tgz
@@ -13,6 +13,7 @@ COMMENT=	Shared code for ROX applications
 
 DEPENDS+=	rox>=2.2.0:../../sysutils/rox
 DEPENDS+=	${PYPKGPREFIX}-expat>=0nb2:../../textproc/py-expat
+DEPENDS+=	${PYPKGPREFIX}-gtk2>=1.99.13:../../x11/py-gtk2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -48,5 +49,4 @@ do-install:
 	cd ${WRKSRC} && pax -rw . ${DESTDIR}${PREFIX}/share/rox/ROX-Lib2
 
 .include "../../lang/python/application.mk"
-.include "../../x11/py-gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

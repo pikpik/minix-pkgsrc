@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2011/02/21 16:01:23 taca Exp $
+# $NetBSD: Makefile,v 1.14 2011/02/28 15:46:38 taca Exp $
 
 DISTNAME=	mongrel-1.1.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	www
 
 MAINTAINER=	minskim@NetBSD.org

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2011/04/07 12:28:02 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/16 15:12:49 hans Exp $
 #
 
 DISTNAME=	folks-0.4.2
 PKGNAME=	lib${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/folks/0.4/}
 EXTRACT_SUFX=	.tar.bz2
@@ -17,13 +17,15 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config intltool gmake
+USE_TOOLS+=	pkg-config intltool gmake msgfmt
 USE_PKGLOCALEDIR= yes
 
 PKGCONFIG_OVERRIDE+=	backends/telepathy/lib/folks-telepathy.pc.in
 PKGCONFIG_OVERRIDE+=	folks/folks.pc.in
 
 TEST_TARGET=	check
+
+CPPFLAGS.SunOS+=	-std=c99 -D_XOPEN_SOURCE=600
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/gobject-introspection/buildlink3.mk"

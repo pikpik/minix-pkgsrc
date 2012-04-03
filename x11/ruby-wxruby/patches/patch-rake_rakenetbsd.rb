@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-rake_rakenetbsd.rb,v 1.1.1.1 2011/08/13 02:12:35 taca Exp $
 
 * Configuration for NetBSD.
 
@@ -13,7 +13,7 @@ $NetBSD$
  
 -$extra_ld_flags = '-shared'
 +# pkgsrc include dir
-+$wx_libs     = wx_config("--libs std,stc,gl")
++$wx_libs     = wx_config("--libs media,std,stc,gl")
 +$extra_cppflags = "-I@PREFIX@include"
 +
 +# This class is not available on WXGTK

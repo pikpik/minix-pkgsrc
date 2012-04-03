@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/01/12 07:57:58 adam Exp $
+# $NetBSD: Makefile,v 1.2 2011/03/27 17:01:55 joerg Exp $
 
 DISTNAME=	sk1libs-0.9.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	http://uniconvertor.googlecode.com/files/
 

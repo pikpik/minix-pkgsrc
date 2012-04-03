@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.68 2011/07/21 13:05:47 obache Exp $
+# $NetBSD: Makefile,v 1.75 2012/03/03 00:12:48 wiz Exp $
 
 DISTNAME=	gnomeicu-0.99.12
-PKGREVISION=	16
+PKGREVISION=	22
 CATEGORIES=	chat gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnomeicu/}
 EXTRACT_SUFX=	.tar.bz2
@@ -17,6 +17,8 @@ USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
 BROKEN_GETTEXT_DETECTION=	YES
+
+LIBS.SunOS+=		-lsocket
 
 CONFIGURE_ARGS+=	--sysconfdir=${EGDIR:Q}
 

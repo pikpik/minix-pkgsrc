@@ -1,10 +1,10 @@
 $NetBSD$
 
---- ext/alsa/gstalsasink.c.orig	2010-11-29 12:19:06.000000000 +0000
+--- ext/alsa/gstalsasink.c.orig	2012-01-18 01:36:56.000000000 +0000
 +++ ext/alsa/gstalsasink.c
-@@ -53,6 +53,10 @@
- 
+@@ -54,6 +54,10 @@
  #include <gst/gst-i18n-plugin.h>
+ #include "gst/glib-compat-private.h"
  
 +#ifndef ESTRPIPE
 +#define ESTRPIPE EPIPE

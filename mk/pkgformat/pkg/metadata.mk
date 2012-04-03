@@ -1,4 +1,4 @@
-# $NetBSD: metadata.mk,v 1.36 2010/12/02 11:15:10 reed Exp $
+# $NetBSD: metadata.mk,v 1.1 2011/10/15 00:23:09 reed Exp $
 
 ######################################################################
 ### The targets below are all PRIVATE.
@@ -38,7 +38,7 @@ ${_BUILD_INFO_FILE}: plist
 .if !empty(USE_TOOLS:Mgmake)
 	${RUN}${ECHO} "GMAKE=`${GMAKE} --version | ${GREP} Make`" >> ${.TARGET}.tmp
 .endif
-	${RUN}${ECHO} "PKGTOOLS_VERSION=${PKGTOOLS_VERSION}" >> ${.TARGET}.tmp
+	${RUN}${ECHO} "PKGTOOLS_VERSION=${PKGTOOLS_VERSION_REQD}" >> ${.TARGET}.tmp
 .if defined(HOMEPAGE)
 	${RUN}${ECHO} "HOMEPAGE=${HOMEPAGE}" >> ${.TARGET}.tmp
 .endif

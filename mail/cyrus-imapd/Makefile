@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.87 2011/06/30 13:20:46 obache Exp $
+# $NetBSD: Makefile,v 1.93 2012/01/05 11:52:33 obache Exp $
 
 DISTNAME=	cyrus-imapd-2.2.13p1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/OLD-VERSIONS/imap/
@@ -72,10 +72,26 @@ CONFIGURE_ARGS+=	--with-gss_impl=${GSSIMPL.${KRB5_TYPE}}
 GSSIMPL.heimdal=	heimdal
 GSSIMPL.mit-krb5=	mit
 CONFIGURE_ENV+=		COMPILE_ET=${KRB5BASE}/bin/compile_et
-COMERRBASE=		${KRB5BASE}
 .else
 CONFIGURE_ARGS+=	--without-krb
 CONFIGURE_ARGS+=	--disable-gssapi
+CHECK_BUILTIN.heimdal:=		yes
+.  include "../../security/heimdal/builtin.mk"
+CHECK_BUILTIN.heimdal:=		no
+CHECK_BUILTIN.mit-krb5:=	yes
+.  include "../../security/mit-krb5/builtin.mk"
+CHECK_BUILTIN.mit-krb5:=	no
+.  if ( !empty(USE_BUILTIN.heimdal:M[Yy][Ee][Ss]) || \
+	!empty(USE_BUILTIN.mit-krb5:M[Yy][Ee][Ss])) && \
+        exists(/usr/bin/compile_et) && exists(/usr/include/krb5/com_err.h)
+CPPFLAGS+=	-I/usr/include/krb5
+CONFIGURE_ENV+=	COMPILE_ET=/usr/bin/compile_et
+.  elif ${OPSYS} != "Linux" && \
+	exists(/usr/bin/compile_et) && exists(/usr/include/com_err.h)
+CONFIGURE_ENV+=	COMPILE_ET=/usr/bin/compile_et
+.  else
+CONFIGURE_ARGS+=	--with-com-err=yes
+.  endif
 .endif
 
 PLIST_VARS+=		ldap
@@ -83,18 +99,6 @@ PLIST_VARS+=		ldap
 CONFIGURE_ARGS+=	--with-ldap=${BUILDLINK_PREFIX.openldap-client}
 PLIST.ldap=		yes
 .  include "../../databases/openldap-client/buildlink3.mk"
-.endif
-
-.if exists(/usr/bin/compile_et)
-COMERRBASE?=		/usr
-.endif
-.if defined(COMERRBASE)
-.  if exists(${COMERRBASE}/include/krb5/com_err.h)
-CPPFLAGS+=		-I${COMERRBASE}/include/krb5
-.  endif
-CONFIGURE_ENV+=		COMPILE_ET=${COMERRBASE}/bin/compile_et
-.else
-CONFIGURE_ARGS+=	--with-com-err=yes
 .endif
 
 # CYRUS_IDLE selects the method used to implement IMAP IDLE.  Valid values

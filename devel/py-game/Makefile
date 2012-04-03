@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2011/04/22 13:42:42 obache Exp $
+# $NetBSD: Makefile,v 1.25 2012/01/28 11:00:52 wiz Exp $
 #
 
 DISTNAME=		pygame-1.8.1release
 PKGNAME=		${PYPKGPREFIX}-game-1.8.1
-PKGREVISION=		8
+PKGREVISION=		11
 CATEGORIES=		devel
 MASTER_SITES=		http://pygame.org/ftp/
 
@@ -12,10 +12,9 @@ HOMEPAGE=		http://pygame.org/
 COMMENT=		Set of Python modules designed for writing games
 LICENSE=		gnu-lgpl-v2.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+DEPENDS+=		${PYPKGPREFIX}-numpy-[0-9]*:../../math/py-numpy
 
-PY_PATCHPLIST=		yes
-PYDISTUTILSPKG=		yes
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 # XXX
 post-extract:
@@ -38,8 +37,9 @@ CFLAGS+=	-no-integrated-as
 .include "../../audio/SDL_mixer/buildlink3.mk"
 .include "../../devel/SDL_ttf/buildlink3.mk"
 .include "../../graphics/SDL_image/buildlink3.mk"
-.include "../../lang/python/extension.mk"
+.include "../../mk/jpeg.buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
+.include "../../lang/python/distutils.mk"
 .include "../../multimedia/smpeg/buildlink3.mk"
-.include "../../math/py-numpy/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

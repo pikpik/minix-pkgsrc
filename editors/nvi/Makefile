@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2010/06/02 13:24:34 adam Exp $
+# $NetBSD: Makefile,v 1.42 2011/12/28 19:34:39 ryoon Exp $
 
 DISTNAME=	nvi-1.81.6
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	editors
 MASTER_SITES=	${HOMEPAGE:Q}
 EXTRACT_SUFX=	.tar.bz2
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/build.unix
 USE_LIBTOOL=		yes
-USE_TOOLS+=		sh
+USE_TOOLS+=		sh aclocal automake autoheader autoconf
 GNU_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	../dist/configure
 CONFIGURE_ARGS+=	--program-transform-name='s,^,n,'
@@ -48,4 +48,10 @@ CONFIGURE_ARGS+=	--with-db_type=db1
 CONFIGURE_ARGS+=	--with-db-prefix=${BDBBASE}
 BUILDLINK_TRANSFORM+=	l:db:${BDB_TYPE}
 .endif
+
+pre-configure:
+	${RUN} cd ${WRKSRC}/../dist && \
+	${CHMOD} 755 configure && \
+	aclocal -I m4 && autoheader && autoconf
+
 .include "../../mk/bsd.pkg.mk"

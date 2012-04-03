@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2011/10/11 03:12:55 jnemeth Exp $
+# $NetBSD: Makefile,v 1.27 2012/03/03 12:54:16 wiz Exp $
 #
 # NOTE: when updating this package, there are two places that sound
 #       tarballs need to be checked
 
-DISTNAME=	asterisk-1.8.7.0
-PKGREVISION=	1
+DISTNAME=	asterisk-1.8.10.1
 DIST_SUBDIR=	${PKGNAME_NOREV}
 DISTFILES=	${DEFAULT_DISTFILES}
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
@@ -90,6 +89,15 @@ MAKE_FLAGS+=		WRKSRC=${WRKSRC}
 MAKE_FLAGS+=		LDOPTS=${LDFLAGS:M*:Q}
 MAKE_FLAGS+=		HTTP_DOCSDIR=${PREFIX}/share/httpd/htdocs
 MAKE_FLAGS+=		HTTP_CGIDIR=${PREFIX}/libexec/cgi-bin
+
+.if !empty(MACHINE_PLATFORM:MSunOS-*-i386)
+BUILDLINK_TRANSFORM+=	rm:-march=i386
+.endif
+
+PLIST_VARS+=	kqueue
+.if exists(/usr/include/sys/event.h)
+PLIST.kqueue=	yes
+.endif
 
 .include "options.mk"
 
@@ -181,7 +189,7 @@ post-patch:
 
 post-install:
 # check sounds directory for current versions when upgrading package
-	${TAR} xzf ${WRKSRC}/sounds/asterisk-core-sounds-en-gsm-1.4.21.tar.gz -C ${DESTDIR}${ASTDATADIR}/sounds/en
+	${TAR} xzf ${WRKSRC}/sounds/asterisk-core-sounds-en-gsm-1.4.22.tar.gz -C ${DESTDIR}${ASTDATADIR}/sounds/en
 	${TAR} xzf ${WRKSRC}/sounds/asterisk-moh-opsound-wav-2.03.tar.gz -C ${DESTDIR}${ASTDATADIR}/moh
 	${TAR} xzf ${DISTDIR}/${DIST_SUBDIR}/asterisk-extra-sounds-en-gsm-1.4.11.tar.gz -C ${DESTDIR}${ASTDATADIR}/sounds/en
 	${INSTALL_DATA} ${WRKSRC}/BUGS ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
@@ -197,13 +205,13 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/UPGRADE-1.6.txt ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/UPGRADE.txt ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/Zaptel-to-DAHDI.txt ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
-	${INSTALL_DATA} ${WRKSRC}/doc/AST.pdf ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
-	${INSTALL_DATA} ${WRKSRC}/doc/AST.txt ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/doc/IAX2-security.pdf ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/doc/IAX2-security.txt ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/doc/README.txt ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 	${INSTALL_DATA} ${WRKSRC}/doc/api-1.6.2-changes.txt ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
+	cp -r ${WRKSRC}/doc/Asterisk-Admin-Guide ${DESTDIR}${PREFIX}/share/doc/${PKGBASE}/Asterisk-Admin-Guide
 
+.include "../../databases/sqlite3/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"

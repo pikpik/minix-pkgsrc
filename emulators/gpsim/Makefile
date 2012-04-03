@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.26 2011/01/13 13:37:34 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2012/02/06 12:40:06 wiz Exp $
 #
 
 DISTNAME=	gpsim-0.21.11
-PKGREVISION=	7
+PKGREVISION=	10
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gpsim/}
 
 MAINTAINER=	snoonan@tbearsiberians.com
-HOMEPAGE=	http://www.dattalo.com/gnupic/gpsim.html
+HOMEPAGE=	http://gpsim.sourceforge.net/
 COMMENT=	PIC emulator with X interface
 
 PKG_DESTDIR_SUPPORT=	user-destdir

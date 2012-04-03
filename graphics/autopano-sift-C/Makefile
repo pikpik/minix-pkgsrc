@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2010/12/23 11:44:33 dsainty Exp $
+# $NetBSD: Makefile,v 1.10 2012/01/29 21:07:12 marino Exp $
 
 DISTNAME=	autopano-sift-C-2.5.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hugin/}
 
@@ -16,6 +16,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_CMAKE=		yes
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
+
+LDFLAGS.DragonFly=	-lm
 
 # work-around finding libpng
 post-extract:

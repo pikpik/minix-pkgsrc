@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.25 2011/07/08 11:14:43 adam Exp $
+@comment $NetBSD: PLIST,v 1.28 2012/02/06 13:11:35 adam Exp $
 bin/git
 bin/git-cvsserver
 bin/git-receive-pack
@@ -51,6 +51,9 @@ libexec/git-core/git-commit
 libexec/git-core/git-commit-tree
 libexec/git-core/git-config
 libexec/git-core/git-count-objects
+libexec/git-core/git-credential-cache
+libexec/git-core/git-credential-cache--daemon
+libexec/git-core/git-credential-store
 libexec/git-core/git-cvsexportcommit
 libexec/git-core/git-cvsimport
 libexec/git-core/git-cvsserver
@@ -234,6 +237,7 @@ ${PLIST.macosx}share/git-gui/lib/Git Gui.app/Contents/Resources/git-gui.icns
 ${PLIST.gui}share/git-gui/lib/git-gui.ico
 ${PLIST.macosx}share/git-gui/lib/git-gui.tcl
 ${PLIST.gui}share/git-gui/lib/index.tcl
+${PLIST.gui}share/git-gui/lib/line.tcl
 ${PLIST.gui}share/git-gui/lib/logo.tcl
 ${PLIST.gui}share/git-gui/lib/merge.tcl
 ${PLIST.gui}share/git-gui/lib/mergetool.tcl
@@ -273,9 +277,5 @@ ${PLIST.gui}share/gitk/lib/msgs/ja.msg
 ${PLIST.gui}share/gitk/lib/msgs/pt_br.msg
 ${PLIST.gui}share/gitk/lib/msgs/ru.msg
 ${PLIST.gui}share/gitk/lib/msgs/sv.msg
-share/gitweb/gitweb.cgi
-share/gitweb/static/git-favicon.png
-share/gitweb/static/git-logo.png
-share/gitweb/static/gitweb.css
-share/gitweb/static/gitweb.js
 @pkgdir share/examples/scmgit/templates/branches
+share/locale/is/LC_MESSAGES/git.mo

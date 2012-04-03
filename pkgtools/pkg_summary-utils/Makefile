@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2011/09/12 14:35:54 cheusov Exp $
+# $NetBSD: Makefile,v 1.15 2012/01/09 20:54:28 cheusov Exp $
 
-DISTNAME=	pkg_summary-utils-0.56.1
+DISTNAME=	pkg_summary-utils-0.57.0
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/psu/ \
 		http://www.mova.org/~cheusov/pub/pkg_summary-utils/
@@ -40,10 +40,14 @@ EGDIR=		${PREFIX}/share/examples/pkg_summary-utils
 
 CONF_FILES=	${EGDIR}/pkg_digger.conf ${PKG_SYSCONFDIR}/pkg_digger.conf
 
+REPLACE_SH=	tests/test.sh pkg_digger.in pkg_digger_backend.in \
+		pkg_summary2build_graph.in
+
 REPLACE_INTERPRETER+=	runawk
 REPLACE.runawk.old=	.*runawk
 REPLACE.runawk.new=	${PREFIX}/bin/runawk
-REPLACE_FILES.runawk=	get_processed_pkgs.in pkg_*.in XB2bin_summary.in direct_deps.in
+REPLACE_FILES.runawk=	get_processed_pkgs.in pkg_*.in XB2bin_summary.in \
+	direct_deps.in summary2multi_variants.in enrich_summary.in
 
 MAKE_ENV+=	AWKMODDIR=${PREFIX}/share/runawk
 MAKE_ENV+=	EGDIR=${EGDIR}
@@ -54,9 +58,5 @@ MAKE_ENV+=	PKGSRCDIR=${PKGSRCDIR}
 MAKE_ENV+=	PKG_SUFX=${PKG_SUFX}
 MAKE_ENV+=	PKG_INFO_CMD=${PKG_INFO:Q}
 
-AUTO_MKDIRS=	yes
-
-MAKE_PROGRAM=	${PREFIX}/bin/mkcmake
-
-.include "../../devel/mk-configure/configure.mk"
+.include "../../devel/mk-configure/mk-c.mk"
 .include "../../mk/bsd.pkg.mk"

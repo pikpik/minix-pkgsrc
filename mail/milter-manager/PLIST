@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2011/04/08 07:58:16 obache Exp $
+@comment $NetBSD$
 bin/milter-manager-log-analyzer
 bin/milter-performance-check
 bin/milter-report-statistics
@@ -195,6 +195,7 @@ share/doc/milter-manager/ja/install.html
 share/doc/milter-manager/ja/introduction.html
 share/doc/milter-manager/ja/left.png
 share/doc/milter-manager/ja/libmilter-compatible.xml
+share/doc/milter-manager/ja/log-list.html
 share/doc/milter-manager/ja/manager.xml
 share/doc/milter-manager/ja/mfapi.xml
 share/doc/milter-manager/ja/mfdef.xml
@@ -239,7 +240,6 @@ share/doc/milter-manager/ja/milter-manager-process-launcher.xml
 share/doc/milter-manager/ja/milter-manager-reply-decoder.xml
 share/doc/milter-manager/ja/milter-manager-reply-encoder.xml
 share/doc/milter-manager/ja/milter-manager-reply-protocol.xml
-share/doc/milter-manager/ja/milter-manager.devhelp
 share/doc/milter-manager/ja/milter-manager.devhelp2
 share/doc/milter-manager/ja/milter-manager.html
 share/doc/milter-manager/ja/milter-manager.xml
@@ -262,8 +262,6 @@ share/doc/milter-manager/ja/milter-version.xml
 share/doc/milter-manager/ja/milter-writer.xml
 share/doc/milter-manager/ja/mta-and-milter-manager-and-child-milter-ja.png
 share/doc/milter-manager/ja/mta-and-milter-manager-and-child-milter.png
-share/doc/milter-manager/ja/news.html
-share/doc/milter-manager/ja/readme.html
 share/doc/milter-manager/ja/reverse-dictionary.html
 share/doc/milter-manager/ja/right.png
 share/doc/milter-manager/ja/ruby-milter-configuration.html
@@ -288,11 +286,11 @@ share/doc/milter-manager/ja/upgrade-options-on-ubuntu.html
 share/doc/milter-manager/ja/upgrade.html
 share/doc/milter-manager/ja/users.html
 share/doc/milter-manager/left.png
+share/doc/milter-manager/log-list.html
 share/doc/milter-manager/milter-manager-admin-ja.png
 share/doc/milter-manager/milter-manager-admin.png
 share/doc/milter-manager/milter-manager-log-analyzer-graphs.png
 share/doc/milter-manager/milter-manager-log-analyzer.html
-share/doc/milter-manager/milter-manager.devhelp
 share/doc/milter-manager/milter-manager.devhelp2
 share/doc/milter-manager/milter-manager.html
 share/doc/milter-manager/milter-performance-check.html

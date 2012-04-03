@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/07/14 02:54:11 dholland Exp $
+# $NetBSD: Makefile,v 1.6 2011/11/17 18:22:27 drochner Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -6,7 +6,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../multimedia/xine-lib/Makefile.common"
 
 PKGNAME=	${XINE_PKGNAME:S/lib/v4l/}
-PKGREVISION=	1
 CATEGORIES=	multimedia
 COMMENT=	The v4l input plugin for xine-lib
 
@@ -16,7 +15,8 @@ NOT_FOR_PLATFORM=	NetBSD-*-*
 DEPENDS+=	xine-lib>=1rc3a:../../multimedia/xine-lib
 
 BUILD_DIRS=	${WRKSRC}/src/input
-CONFIGURE_ARGS+=	--without-x
+CONFIGURE_ARGS+=	--without-x --disable-xinerama
+CONFIGURE_ARGS+=	--disable-vcd
 
 INSTALLATION_DIRS=	lib/xine/plugins/${XINE_MOD_DIR_VER}
 

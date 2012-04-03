@@ -1,17 +1,17 @@
-# $NetBSD: Makefile,v 1.5 2011/03/23 14:50:15 taca Exp $
+# $NetBSD: Makefile,v 1.8 2011/12/15 14:24:22 taca Exp $
 
-DISTNAME=	actionmailer-${RUBY_RAILS3_VERSION}
-CATEGORIES=	mail devel
+DISTNAME=	actionmailer-${RUBY_RAILS_VERSION}
+CATEGORIES=	mail
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.rubyonrails.org/
-COMMENT=	Email composition, delivery, and receiving framework
+COMMENT=	Email composition, delivery and receiving (for Rails 3.0)
 LICENSE=	mit
 
-RUBY_RAILS=	3
-
 DEPENDS+=	${RUBY_ACTIONPACK_DEPENDS}
-DEPENDS+=	${RUBY_PKGPREFIX}-mail>=2.2.19<2.3:../../mail/ruby-mail
+DEPENDS+=	${RUBY_PKGPREFIX}-mail>=2.2.19<2.3:../../mail/ruby-mail22
+
+RUBY_RAILS_SUPPORTED=	3
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

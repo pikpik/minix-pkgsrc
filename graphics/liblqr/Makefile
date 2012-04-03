@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2009/05/22 20:30:50 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/06 12:40:30 wiz Exp $
 #
 
 DISTNAME=		liblqr-1-0.4.1
 PKGNAME=		liblqr-0.4.1
-PKGREVISION=		1
+PKGREVISION=		3
 CATEGORIES=		graphics
 MASTER_SITES=		http://liblqr.wikidot.com/local--files/en:download-page/
 EXTRACT_SUFX=		.tar.bz2

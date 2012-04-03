@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.6 2011/08/31 13:34:39 obache Exp $
+$NetBSD: distinfo,v 1.8 2012/01/18 10:27:02 obache Exp $
 
-SHA1 (spreadsheet-0.6.5.9.gem) = c6922d953dd02d2359542fc178507ba6af695bb4
-RMD160 (spreadsheet-0.6.5.9.gem) = 6f1182c67d6ce0a050b621a8e8077f7847be45f3
-Size (spreadsheet-0.6.5.9.gem) = 140800 bytes
+SHA1 (spreadsheet-0.6.8.gem) = aedf889af934d71a735f06d4955595af9d45bbc5
+RMD160 (spreadsheet-0.6.8.gem) = faf29dd29c4d7b7549731708452b02b3cf119e4e
+Size (spreadsheet-0.6.8.gem) = 151552 bytes

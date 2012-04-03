@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/10/13 11:12:52 markd Exp $
+# $NetBSD: Makefile,v 1.5 2011/11/01 06:02:00 sbd Exp $
 #
 
+PKGREVISION=		2
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_R_CRAN:=contrib/}
 

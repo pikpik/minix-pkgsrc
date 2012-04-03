@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2011/04/05 18:35:46 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2012/03/03 00:12:50 wiz Exp $
 #
 
 DISTNAME=	telepathy-idle-0.1.8
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	chat
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/telepathy-idle/
 
@@ -18,6 +18,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake pkg-config
+
+LDFLAGS.DragonFly=	-lcrypto
+LDFLAGS.SunOS+=		-lcrypto
 
 CONFIGURE_ARGS+=	OPENSSL_CFLAGS=-I${BUILDLINK_PREFIX.openssl}/include
 CONFIGURE_ARGS+=	OPENSSL_LIBS="-L${BUILDLINK_PREFIX.openssl}/lib ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.openssl}/lib -lssl"

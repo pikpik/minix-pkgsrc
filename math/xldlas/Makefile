@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2010/01/18 09:59:13 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2010/12/23 11:44:49 dsainty Exp $
 
 DISTNAME=		xldlas-0.85
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=science/visualization/}
 EXTRACT_SUFX=		-source.tgz

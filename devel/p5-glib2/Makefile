@@ -1,7 +1,9 @@
-# $NetBSD: Makefile,v 1.35 2011/08/14 12:26:49 obache Exp $
+# $NetBSD: Makefile,v 1.38 2012/02/06 12:39:56 wiz Exp $
 
-DISTNAME=	Glib-1.224
+# Not updated to 1.250 as that is an unstable/development version
+DISTNAME=	Glib-1.242
 PKGNAME=	p5-${DISTNAME:S/Glib/glib2/}
+PKGREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtk2-perl/}
 

@@ -80,6 +80,10 @@
 #define	EX_IOERR	74
 #endif
 
+#ifndef TCSASOFT
+#define TCSASOFT	0
+#endif
+
 #define MINBUFSIZE	4096
 
 /* Option flags */
@@ -668,8 +672,14 @@ fetch(char *URL, const char *path)
 					warn("%s: mkstemp failed", tmppath);
 					goto failure;
 				}
-				fchown(fd, sb.st_uid, sb.st_gid);
-				fchmod(fd, sb.st_mode & ALLPERMS);
+				if (fchown(fd, sb.st_uid, sb.st_gid) == -1) {
+					warn("%s: fchown failed", tmppath);
+					goto failure;
+				}
+				if (fchmod(fd, sb.st_mode & ALLPERMS) == -1) {
+					warn("%s: fchmod failed", tmppath);
+					goto failure;
+				}
 				of = fdopen(fd, "w");
 				if (of == NULL) {
 					close(fd);

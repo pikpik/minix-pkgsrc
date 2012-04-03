@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.90 2011/07/04 21:33:52 jym Exp $
+# $NetBSD: Makefile,v 1.93 2012/02/02 09:31:41 hans Exp $
 
 DISTNAME=		TeXmacs-1.0.6.15-src
 PKGNAME=		${DISTNAME:S/-src//}
-PKGREVISION=		9
+PKGREVISION=		11
 CATEGORIES=		editors
 MASTER_SITES=		ftp://ftp.texmacs.org/pub/TeXmacs/targz/
 MASTER_SITES+=		http://www.texmacs.org/Download/ftp/targz/
@@ -46,7 +46,7 @@ REPLACE_SH+=		plugins/xypic/bin/tm_xypic
 
 pre-install:
 	${RM} -f ${WRKSRC}/TeXmacs/doc/devel/format/.log
-	${FIND} ${WRKSRC}/plugins/ -name '*.orig' | ${XARGS} ${RM}
+	${FIND} ${WRKSRC}/plugins/ -name '*.orig' | ${XARGS} ${RM} -f
 
 # just a helper script, not worth a full perl dependency
 CHECK_INTERPRETER_SKIP=	libexec/TeXmacs/bin/bbox_add.pl

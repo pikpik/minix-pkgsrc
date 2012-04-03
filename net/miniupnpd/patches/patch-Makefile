@@ -1,0 +1,15 @@
+$NetBSD$
+
+* Honor user setting CFLAGS.
+
+--- Makefile.orig	2012-03-05 20:37:13.000000000 +0000
++++ Makefile
+@@ -11,7 +11,7 @@
+ # Linux users, please use Makefile.linux :
+ #  make -f Makefile.linux
+ 
+-CFLAGS = -pipe -Wall -Os -ansi
++CFLAGS ?= -pipe -Wall -Os -ansi
+ #CFLAGS = -pipe -Wall -O -g -DDEBUG -ansi
+ CC ?= gcc
+ RM = rm -f

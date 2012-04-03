@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2011/04/22 13:43:27 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/06 12:40:04 wiz Exp $
 #
 
 DISTNAME=		tea-16.0.5
-PKGREVISION=		9
+PKGREVISION=		13
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tea-editor/}
 EXTRACT_SUFX=		.tar.bz2
@@ -17,6 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config msgfmt
+LDFLAGS.DragonFly=	-lX11 -lm
 
 .include "options.mk"
 

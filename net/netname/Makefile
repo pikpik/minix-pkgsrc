@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/02/11 22:18:35 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2011/03/17 21:55:54 zafer Exp $
 #
 
 DISTNAME=	netname-1.7
@@ -21,5 +21,7 @@ BUILD_TARGET=	netname
 INSTALL_TARGET=	inst-all
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
+
+MAKE_ENV+=	INSTALL=${TOOLS_PATH.install:Q}
 
 .include "../../mk/bsd.pkg.mk"

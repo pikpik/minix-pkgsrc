@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2011/04/22 13:43:05 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/03/03 00:12:47 wiz Exp $
 #
 
 DISTNAME=	gajim-0.14.1
-PKGREVISION=	3
+PKGREVISION=	7
 CATEGORIES=	chat python
 MASTER_SITES=	http://www.gajim.org/downloads/0.14/
 EXTRACT_SUFX=	.tar.bz2
@@ -20,7 +20,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 
-USE_TOOLS+=	gmake intltool pkg-config
+USE_TOOLS+=	gmake intltool pkg-config msgfmt
 GNU_CONFIGURE=	yes
 
 PYTHON_VERSIONS_ACCEPTED=	27 26 25

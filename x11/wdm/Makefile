@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2011/03/09 16:30:44 drochner Exp $
+# $NetBSD: Makefile,v 1.46 2012/01/28 11:40:19 marino Exp $
 
 DISTNAME=		wdm-1.28
-PKGREVISION=		7
+PKGREVISION=		9
 CATEGORIES=		x11 windowmaker
 MASTER_SITES=		http://voins.program.ru/wdm/
 
@@ -13,6 +13,8 @@ USE_TOOLS+=		msgfmt
 USE_X11BASE=		YES
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES
+
+LDFLAGS.DragonFly=	-lintl
 
 CONFIGURE_ARGS+=	--with-wdmdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-nlsdir=${PREFIX}/${PKGLOCALEDIR}/locale

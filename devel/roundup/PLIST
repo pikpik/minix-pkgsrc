@@ -1,4 +1,11 @@
-@comment $NetBSD: PLIST,v 1.15 2009/06/14 17:49:07 joerg Exp $
+@comment $NetBSD$
+bin/roundup-admin
+bin/roundup-demo
+bin/roundup-gettext
+bin/roundup-mailgw
+bin/roundup-server
+bin/roundup-xmlrpc-server
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/roundup/__init__.py
 ${PYSITELIB}/roundup/__init__.pyc
 ${PYSITELIB}/roundup/__init__.pyo
@@ -278,12 +285,6 @@ ${PYSITELIB}/roundup/version_check.pyo
 ${PYSITELIB}/roundup/xmlrpc.py
 ${PYSITELIB}/roundup/xmlrpc.pyc
 ${PYSITELIB}/roundup/xmlrpc.pyo
-bin/roundup-admin
-bin/roundup-demo
-bin/roundup-gettext
-bin/roundup-mailgw
-bin/roundup-server
-bin/roundup-xmlrpc-server
 man/man1/roundup-admin.1
 man/man1/roundup-demo.1
 man/man1/roundup-mailgw.1

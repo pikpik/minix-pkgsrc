@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.4 2009/12/30 13:19:58 joerg Exp $
 
 --- SConstruct.orig	2006-03-15 15:22:43.000000000 +0000
 +++ SConstruct
@@ -98,7 +98,7 @@ $NetBSD$
  MacOSX_InstallPlugin('opcodes.dir')
  
 -if getPlatform() == 'linux' or getPlatform() == 'darwin':
-+if getPlatform() == 'linux' or getPlatform() == 'darwin' or getPlatform == 'netbsd' or getPlatform == 'dragonfly':
++if getPlatform() == 'linux' or getPlatform() == 'darwin' or getPlatform() == 'netbsd' or getPlatform() == 'dragonfly':
      makePlugin(pluginEnvironment, 'control', ['Opcodes/control.c'])
  makePlugin(pluginEnvironment, 'ftest', ['Opcodes/ftest.c'])
  makePlugin(pluginEnvironment, 'mixer', ['Opcodes/mixer.cpp'])

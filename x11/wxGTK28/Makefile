@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2011/04/22 13:42:05 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/02/28 15:11:39 hans Exp $
 #
 
 .include "../../x11/wxGTK28/Makefile.common"
 
-PKGREVISION=	12
+PKGREVISION=	16
 
 PKGNAME=		${DISTNAME:S/wxGTK/wxGTK28/}
 COMMENT=		GTK-based implementation of the wxWidgets GUI library
@@ -12,6 +12,8 @@ BUILD_TARGET=	all
 INSTALL_TARGET=	install
 
 INSTALLATION_DIRS=	${DOCDIR}
+
+REPLACE_SH=		wx-config.in wx-config-inplace.in
 
 post-build:
 	set -e; cd ${WRKSRC}/locale; \

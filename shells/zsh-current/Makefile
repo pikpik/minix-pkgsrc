@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2011/07/22 12:28:26 ryoon Exp $
+# $NetBSD: Makefile,v 1.25 2012/01/14 14:39:18 ryoon Exp $
 
 .include "../../shells/zsh/Makefile.common"
+PKGREVISION=1
 
-ZSH_VERSION=	4.3.12
+ZSH_VERSION=	4.3.15
 ZSH_MAINTAINER=	ryoon@NetBSD.org
 
 USE_TOOLS+=	env

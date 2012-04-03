@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2011/01/13 13:37:49 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2011/11/01 06:01:19 sbd Exp $
 
 DISTNAME=	openttd-1.0.5-source
 PKGNAME=	${DISTNAME:S/-source//}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	games x11
 MASTER_SITES=	http://binaries.openttd.org/releases/${PKGVERSION_NOREV}/
 EXTRACT_SUFX=	.tar.bz2
@@ -31,6 +31,7 @@ CONFIGURE_ARGS+=	--man-dir=${PKGMANDIR}/man6
 CONFIGURE_ARGS+=	--menu-dir=share/applications
 CONFIGURE_ARGS+=	--personal-dir=.openttd
 CONFIGURE_ARGS+=	--shared-dir=${VARBASE}/games/openttd
+CONFIGURE_ARGS+=	--with-lzo2=${BUILDLINK_PREFIX.lzo}/lib/liblzo2.so
 
 .include "../../mk/bsd.prefs.mk"
 

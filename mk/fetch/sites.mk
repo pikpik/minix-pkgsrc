@@ -1,4 +1,4 @@
-# $NetBSD: sites.mk,v 1.84 2011/04/22 09:03:53 spz Exp $
+# $NetBSD: sites.mk,v 1.88 2012/02/24 13:36:21 obache Exp $
 #
 # This Makefile fragment defines read-only MASTER_SITE_* variables
 # representing some well-known master distribution sites for software.
@@ -50,8 +50,8 @@ MASTER_SITE_TEX_CTAN+= \
 	ftp://ftp.funet.fi/pub/TeX/CTAN/ \
 	ftp://ftp.tex.ac.uk/tex-archive/ \
 	ftp://ftp.dante.de/tex-archive/ \
-	ftp://www.t.ring.gr.jp/pub/text/CTAN/ \
-	http://www.t.ring.gr.jp/archives/text/CTAN/
+	ftp://www.dnsbalance.ring.gr.jp/pub/text/CTAN/ \
+	http://www.dnsbalance.ring.gr.jp/archives/text/CTAN/
 
 MASTER_SITE_SUNSITE+=   \
 	ftp://sunsite.unc.edu/pub/Linux/ \
@@ -76,8 +76,8 @@ MASTER_SITE_GNOME+=     \
 
 MASTER_SITE_KDE+=	\
 	ftp://ftp.kde.org/pub/kde/stable/ \
-	ftp://www.t.ring.gr.jp/pub/X/kde/stable/ \
-	http://www.t.ring.gr.jp/archives/X/kde/stable/ \
+	ftp://www.dnsbalance.ring.gr.jp/pub/X/kde/stable/ \
+	http://www.dnsbalance.ring.gr.jp/archives/X/kde/stable/ \
 	ftp://ftp.kddlabs.co.jp/pub/X/kde/stable/ \
 	http://mirrors.isc.org/pub/kde/stable/ \
 	ftp://ftp.gtlib.cc.gatech.edu/pub/kde/stable/ \
@@ -110,77 +110,23 @@ MASTER_SITE_MOZILLA_ALL+=   \
 
 # see http://www.mozilla.org/mirrors.html
 MASTER_SITE_MOZILLA+=	\
-	http://ftp.mozilla.org/pub/mozilla.org/ \
-	ftp://ftp.mozilla.org/pub/mozilla.org/ \
 	http://releases.mozilla.org/pub/mozilla.org/ \
-	ftp://releases.mozilla.org/pub/mozilla.org/ \
-	http://mirror3.mirrors.tds.net/pub/mozilla.org/ \
-	http://mozilla.isc.org/pub/mozilla.org/ \
-	http://pv-mirror02.mozilla.org/pub/mozilla.org/ \
-	http://mirror.uoregon.edu/mozilla/releases/ \
-	http://mozilla.mirrors.tds.net/pub/mozilla.org/ \
-	http://mirrors.yocum.org/mozilla/ \
-	http://mozilla.ussg.indiana.edu/pub/mozilla.org/ \
 	http://mirror.atlanticmetro.net/mozilla/ \
-	http://mirror.csclub.uwaterloo.ca/pub/mozilla.org/ \
-	http://mozilla.mirror.rafal.ca/ \
-	http://mirror.cc.vt.edu/pub/mozilla/ \
-	http://mirror.its.uidaho.edu/pub/mozilla.org/ \
-	http://mozilla.mirror.facebook.net/ \
-	http://www.gtlib.gatech.edu/pub/mozilla.org/ \
-	http://mozilla.cs.utah.edu/pub/mozilla.org/ \
-	http://mirror.mcs.anl.gov/mozilla.org/ \
-	http://mirrors.gigenet.com/mozilla/ \
-	http://pv-mirror01.mozilla.org/pub/mozilla.org/ \
-	http://mirror.umoss.org/mozilla/ \
-	http://mirrors.xmission.com/mozilla.org/ \
-	http://mozilla.mirrors.hoobly.com/ \
-	http://ftp.utexas.edu/mozilla/ \
-	http://mozilla.mirror.ac.za/ \
-	http://ftp.saix.net/mozilla/ \
-	http://kyoto-mz-dl.sinet.ad.jp/pub/mozilla.org/ \
-	http://jp-nii02.mozilla.org/pub/mozilla.org/ \
-	http://ftp.cs.pu.edu.tw/pub/Mozilla/ \
-	http://mozilla.mtk.nao.ac.jp/pub/mozilla.org/ \
-	http://ftp.twaren.net/Unix/Mozilla/ \
-	http://pj-mirror01.mozilla.org/pub/mozilla.org/ \
-	http://mozilla.sakura.ad.jp/pub/mozilla.org/ \
-	http://ftp.daum.net/mozilla/ \
-	http://mozilla.stu.edu.tw/ \
-	http://mozilla.ftp.iij.ad.jp/pub/mozilla/mozilla.org/ \
-	http://mozilla-mirror.naist.jp/ \
-	http://mirror.kr.freebsd.org/mozilla.org/ \
-	http://ftp.kaist.ac.kr/pub/mozilla/ \
-	http://ftp.ncnu.edu.tw/mozilla.org/ \
-	http://ftp.yz.yamagata-u.ac.jp/pub/network/mozilla/ \
-	http://ftp.ntu.edu.tw/pub/mozilla/ \
-	http://ftp.kddilabs.jp/Mozilla/ \
-	http://mozilla.hongo.wide.ad.jp/pub/mozilla.org/ \
-	http://mozilla.hns.net.in/ \
-	http://mozilla.unpad.ac.id/ \
-	http://mirror-fpt-telecom.fpt.net/mozilla/ \
-	http://mirror.internode.on.net/pub/mozilla/ \
-	http://mozilla.mirror.ihug.co.nz/ \
-	http://mirror.waia.asn.au/pub/mozilla/ \
-	http://ftp.sunet.se/pub/www/clients/mozilla.org/ \
-	http://mozmirror01.true.nl/pub/mozilla.org/ \
-	http://ftp.uni-kl.de/pub/mozilla/ \
-	http://mirror.yandex.ru/mozilla/ \
-	http://www.mirrorservice.org/sites/releases.mozilla.org/pub/mozilla.org/ \
-	http://ftp.cvut.cz/mozilla/ \
-	http://mozilla.kn.vutbr.cz/ \
-	http://mirror.switch.ch/ftp/mirror/mozilla/ \
-	http://ftp.plusline.de/mozilla/ \
-	http://mozilla.mirrors.skynet.be/pub/ftp.mozilla.org/ \
-	http://mirrors.linux.edu.lv/mozilla.org/ \
+	ftp://releases.mozilla.org/pub/mozilla.org/ \
 	http://www.artfiles.org/mozilla.org/ \
-	http://mirrors.xservers.ro/mozilla/ \
-	http://ftp.spnet.net/mozilla/ \
-	http://ftp.ntua.gr/pub/mozilla.org/ \
+	http://ftp.plusline.de/mozilla/ \
+	http://ftp.sunet.se/pub/www/clients/mozilla.org/ \
+	http://mirror.switch.ch/ftp/mirror/mozilla/ \
+	http://mozmirror01.true.nl/pub/mozilla.org/ \
+	http://mirror.yandex.ru/mozilla/ \
+	http://ftp.cvut.cz/mozilla/ \
 	http://ftp.pwr.wroc.pl/pub/mozilla/ \
 	http://ftp.heanet.ie/mirrors/ftp.mozilla.org/pub/mozilla.org/ \
 	http://mozilla.c3sl.ufpr.br/releases/ \
-	http://mozilla.mirror.pop-sc.rnp.br/mirror/mozilla.org/
+	http://mozilla.mirror.ac.za/ \
+	http://mozilla-mirror.naist.jp/ \
+	http://mirror.waia.asn.au/pub/mozilla/ \
+	http://mozilla.mirror.ihug.co.nz/
 
 MASTER_SITE_XEMACS+=    \
 	ftp://ftp.xemacs.org/pub/xemacs/ \
@@ -188,7 +134,7 @@ MASTER_SITE_XEMACS+=    \
 	ftp://ftp.pasteur.fr/pub/computing/xemacs/ \
 	ftp://mirror.aarnet.edu.au/pub/xemacs/ \
 	ftp://mirror.cict.fr/xemacs/ \
-	ftp://ftp.t.ring.gr.jp/pub/text/xemacs/
+	ftp://ftp.dnsbalance.ring.gr.jp/pub/text/xemacs/
 
 MASTER_SITE_APACHE+=    \
 	http://www.apache.org/dist/ \
@@ -337,13 +283,13 @@ MASTER_SITE_OPENOFFICE+=	\
 	ftp://mirror.switch.ch/mirror/OpenOffice/ \
 	http://komo.vlsm.org/openoffice/ \
 	ftp://ftp.kddlabs.co.jp/office/openoffice/ \
-	ftp://ftp.t.ring.gr.jp/pub/misc/openoffice/ \
+	ftp://ftp.dnsbalance.ring.gr.jp/pub/misc/openoffice/ \
 	ftp://ftp.kr.freebsd.org/pub/openoffice/
 
 MASTER_SITE_CYGWIN+= \
 	http://mirrors.kernel.org/sources.redhat.com/cygwin/ \
 	http://mirrors.xmission.com/cygwin/ \
-	ftp://ftp.t.ring.gr.jp/pub/pc/gnu-win32/ \
+	ftp://ftp.dnsbalance.ring.gr.jp/pub/pc/gnu-win32/ \
 	ftp://ftp.funet.fi/pub/mirrors/cygwin.com/pub/cygwin/
 
 MASTER_SITE_IFARCHIVE+= \
@@ -407,11 +353,7 @@ MASTER_SITE_PGSQL+=	\
 	ftp://ftp.ch.postgresql.org/mirror/postgresql/ \
 	http://ftp3.tw.postgresql.org/postgresql/ \
 	ftp://ftp3.tw.postgresql.org/postgresql/ \
-	http://ftp9.us.postgresql.org/pub/mirrors/postgresql/ \
-	ftp://ftp9.us.postgresql.org/pub/mirrors/postgresql/ \
 	ftp://ftp5.us.postgresql.org/pub/PostgreSQL/ \
-	ftp://ftp10.us.postgresql.org/pub/postgresql/ \
-	ftp://ftp3.ua.postgresql.org/pub/mirrors/postgresql/ \
 	http://ftp2.uk.postgresql.org/sites/ftp.postgresql.org/ \
 	ftp://ftp2.uk.postgresql.org/sites/ftp.postgresql.org/
 

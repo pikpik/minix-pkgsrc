@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1 2008/07/15 19:45:40 christos Exp $
+# $NetBSD: Makefile,v 1.3 2011/12/07 17:21:09 drochner Exp $
 #
 
 DISTNAME=		Xlt-13.0.13
 PKGNAME=		${DISTNAME:S/Xlt/xlt/}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xlt/}
 
@@ -23,7 +23,6 @@ USE_TOOLS+=		pkg-config
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 

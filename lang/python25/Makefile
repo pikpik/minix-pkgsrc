@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2011/05/15 10:07:20 hans Exp $
+# $NetBSD: Makefile,v 1.37 2012/02/15 16:08:25 drochner Exp $
 
 .include "dist.mk"
 
 PKGNAME=	python25-${PY_DISTVERSION}
+PKGREVISION=	2
 CATEGORIES=	lang python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -68,6 +69,11 @@ PY_PLATNAME=	hp-ux11
 PY_PLATNAME=	${LOWER_OPSYS}${OS_VERSION:C/\..*//}
 .endif
 PLIST_SUBST+=	PY_PLATNAME=${PY_PLATNAME:Q}
+
+PLIST_VARS+=	linux2
+.if ${PY_PLATNAME} == "linux2"
+PLIST.linux2=	yes
+.endif
 
 .if (${MACHINE_ARCH} == "alpha") || (${MACHINE_ARCH} == "amd64") || \
     (${MACHINE_ARCH} == "sparc64") || (${MACHINE_ARCH} == "x86_64") || \

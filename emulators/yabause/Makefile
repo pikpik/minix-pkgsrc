@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2011/01/13 13:37:37 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/06 12:40:08 wiz Exp $
 
-DISTNAME=	yabause-0.9.10
-PKGREVISION=	5
+DISTNAME=	yabause-0.9.11.1
+PKGREVISION=	3
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=yabause/}
 
@@ -12,12 +12,15 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=	yes
-USE_TOOLS+=	gmake
+USE_CMAKE=	yes
 USE_TOOLS+=	pkg-config
+USE_LANGUAGES+=	c c++
 
+CONFIGURE_ENV+=	PKGMANDIR=${PKGMANDIR:Q}
+
+.include "options.mk"
+
+.include "../../graphics/glut/buildlink3.mk"
 .include "../../devel/SDL/buildlink3.mk"
-BUILDLINK_API_DEPENDS.gtkglext+=	gtkglext>=1.2.0nb4
-.include "../../graphics/gtkglext/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

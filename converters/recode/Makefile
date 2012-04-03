@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2011/04/22 13:41:54 obache Exp $
+# $NetBSD: Makefile,v 1.29 2011/08/26 08:13:44 wiz Exp $
 #
 
 DISTNAME=		recode-3.6
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		converters
 MASTER_SITES=		${MASTER_SITE_GNU:=recode/}
 
@@ -19,6 +19,9 @@ USE_LIBTOOL=		yes
 BROKEN_GETTEXT_DETECTION=	yes
 
 INFO_FILES=		yes
+
+post-extract:
+	${CP} ${WRKSRC}/lib/error.c ${WRKSRC}/src/error.c
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

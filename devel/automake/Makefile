@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.75 2009/12/09 14:39:18 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2012/03/10 08:00:52 sbd Exp $
 #
 
-DISTNAME=	automake-1.11.1
-PKGREVISION=	1
+DISTNAME=	automake-1.11.3
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=automake/} \
 		ftp://sources.redhat.com/pub/automake/
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/automake/automake.html

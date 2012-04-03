@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2005/10/25 17:07:27 drochner Exp $
+@comment $NetBSD$
 ${PYSITELIB}/Crypto/Cipher/AES.so
 ${PYSITELIB}/Crypto/Cipher/ARC2.so
 ${PYSITELIB}/Crypto/Cipher/ARC4.so
@@ -76,3 +76,4 @@ ${PYSITELIB}/Crypto/__init__.pyo
 ${PYSITELIB}/Crypto/test.py
 ${PYSITELIB}/Crypto/test.pyc
 ${PYSITELIB}/Crypto/test.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}

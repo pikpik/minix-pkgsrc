@@ -1,4 +1,4 @@
-$NetBSD: patch-src_s__file.c,v 1.1.1.1 2011/09/15 01:05:05 wiz Exp $
+$NetBSD: patch-src_s__file.c,v 1.2 2011/10/05 20:02:48 wiz Exp $
 
 File handling under NetBSD is the same as under Linux.
 https://sourceforge.net/tracker/?func=detail&aid=3411732&group_id=55736&atid=478072
@@ -10,7 +10,7 @@ https://sourceforge.net/tracker/?func=detail&aid=3411732&group_id=55736&atid=478
  void sys_doflags( void);
  
 -#if defined(__linux__) || defined(__CYGWIN__) || defined(__FreeBSD_kernel__) || defined(__GNU__) || defined(ANDROID)
-+#if defined(__linux__) || defined(__CYGWIN__) || defined(__FreeBSD_kernel__) || defined(__GNU__) || defined(ANDROID) || defined(__NetBSD__)
++#if defined(__linux__) || defined(__CYGWIN__) || defined(__FreeBSD_kernel__) || defined(__GNU__) || defined(ANDROID) || defined(__NetBSD__) || defined(__sun)
  
  static char *sys_prefbuf;
  static int sys_prefbufsize;

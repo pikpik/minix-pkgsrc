@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/05/10 07:06:44 minskim Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/14 00:24:39 minskim Exp $
 
 DISTNAME=	txfonts
 PKGNAME=	tex-${DISTNAME}-2009
+PKGREVISION=	1
 TEXLIVE_REV=	15878
 
 MAINTAINER=	minskim@NetBSD.org

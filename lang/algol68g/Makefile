@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/11 12:43:50 ryoon Exp $
 #
 
 DISTNAME=	algol68g-2.3.1
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://jmvdveer.home.xs4all.nl/
 EXTRACT_SUFX=	.tgz
@@ -19,4 +20,5 @@ USE_LANGUAGES=	c
 .include "options.mk"
 
 .include "../../math/gsl/buildlink3.mk"
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

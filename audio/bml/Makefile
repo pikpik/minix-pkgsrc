@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/09/10 20:16:44 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/04 10:24:37 obache Exp $
 #
 
 DISTNAME=	bml-0.5.0
@@ -18,7 +18,6 @@ USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c c++
 
 PKGCONFIG_OVERRIDE+=	libbml.pc.in
-BUILDLINK_TRANSFORM+=	rm:-ldl
 
 CFLAGS+=	-DHAVE_VSSCANF=1	# missing configure logic
 
@@ -28,4 +27,9 @@ CFLAGS+=	-DHAVE_VSSCANF=1	# missing configure logic
 LDFLAGS+=	-li386			# for i386_set_ldt
 .endif
 
+.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
+
+.if empty(BUILDLINK_LDADD.dl)
+BUILDLINK_TRANSFORM+=	rm:-ldl
+.endif

@@ -1,4 +1,4 @@
-@comment $NetBSD@
+@comment $NetBSD$
 bin/fbtv
 bin/radio
 bin/v4l-conf

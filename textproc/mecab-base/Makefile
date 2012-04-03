@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/02/04 04:58:53 obache Exp $
+# $NetBSD: Makefile,v 1.6 2011/12/16 16:49:26 hans Exp $
 #
 
 .include "../../textproc/mecab/Makefile.common"
@@ -17,9 +17,13 @@ USE_LIBTOOL=		yes
 OWN_DIRS=		${PREFIX:Q}/lib/mecab/dic
 
 .include "../../mk/bsd.prefs.mk"
+.include "../../mk/compiler.mk"
 
 .if ${OPSYS} == "SunOS"
 USE_TOOLS+=		gmake
+.  if !empty(CC_VERSION:Mgcc-4.[6-9].*)
+CFLAGS.SunOS+=		-D_XOPEN_SOURCE=600 -std=c99
+.  endif
 .endif
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
@@ -40,6 +44,17 @@ SUBST_FILES.pthread=	configure
 SUBST_SED.pthread=	-e 's|-lpthread||g'
 
 PTHREAD_AUTO_VARS=	yes
+
+# No TLS support for NetBSD.
+.if !empty(MACHINE_PLATFORM:MNetBSD-[1-5].*-*)
+SUBST_SED.pthread+=	-e 's|enable_tls=yes|enable_tls=no|g'
+.endif
+
+# require i486 features for atomic_op.
+.if ${MACHINE_ARCH} == "i386"
+CFLAGS+=	-march=i486
+CXXFLAGS+=	-march=i486
+.endif
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

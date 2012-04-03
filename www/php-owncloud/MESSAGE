@@ -1,0 +1,34 @@
+===========================================================================
+$NetBSD: MESSAGE,v 1.2 2011/12/18 08:38:14 ryoon Exp $
+
+To use ownCloud, you will need to perform the following steps.
+
+1. If you want to use with MySQL server, install databases/mysql51-*
+   and enable it, then create database.
+
+2. Install apache httpd server, for example www/apache22 and www/ap-php.
+
+3. Be sure to have the following lines in ${PREFIX}/etc/httpd/httpd.conf
+
+	DocumentRoot "${PREFIX}/share/owncloud"
+	LoadModule php5_module lib/httpd/mod_php5.so
+	AddType application/x-httpd-php .php
+	<Directory ${PREFIX}/share/owncloud>
+		Options All
+		Allow from All
+	</Directory>
+
+4. Be sure to have the following lines in ${PREFIX}/etc/php.ini.
+
+	extension=dom.so
+	extension=gd.so
+	extension=json.so
+	extension=mbstring.so
+	extension=zip.so
+	extension=sqlite.so ;if you select sqlite backend.
+	extension=mysql.so ;if you select MySQL backend.
+
+5. Start apache httpd.
+
+6. Access http://localhost/index.php and setup.
+===========================================================================

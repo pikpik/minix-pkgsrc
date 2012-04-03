@@ -1,4 +1,4 @@
-$NetBSD: patch-am,v 1.1.1.1 2011/06/17 00:10:19 reed Exp $
+$NetBSD: patch-am,v 1.5 2011/11/08 07:30:09 sbd Exp $
 
 --- setup.py.orig	2011-06-11 15:48:52.000000000 +0000
 +++ setup.py
@@ -41,7 +41,47 @@ $NetBSD: patch-am,v 1.1.1.1 2011/06/17 00:10:19 reed Exp $
  
          if (ssl_incs is not None and
              ssl_libs is not None):
-@@ -1315,6 +1319,14 @@ class PyBuildExt(build_ext):
+@@ -1037,6 +1041,30 @@ class PyBuildExt(build_ext):
+         dbm_order = ['gdbm']
+         # The standard Unix dbm module:
+         if platform not in ['cygwin']:
++
++            ## Top half based on find_file
++            def find_ndbm_h(dirs):
++                ret = None
++                if sys.platform == 'darwin':
++                    sysroot = macosx_sdk_root()
++                for dir in dirs:
++                    f = os.path.join(dir, 'ndbm.h')
++                    if sys.platform == 'darwin' and is_macosx_sdk_path(dir):
++                        f = os.path.join(sysroot, dir[1:], 'ndbm.h')
++                    if not os.path.exists(f): continue
++
++                    ret = 'True'
++                    input = text_file.TextFile(f)
++                    while 1:
++                        line = input.readline()
++                        if not line: break
++                        if re.search('This file is part of GDBM', line):
++                            ret = None
++                            break
++                    input.close()
++                    break
++                return ret
++
+             config_args = [arg.strip("'")
+                            for arg in sysconfig.get_config_var("CONFIG_ARGS").split()]
+             dbm_args = [arg for arg in config_args
+@@ -1048,7 +1076,7 @@ class PyBuildExt(build_ext):
+             dbmext = None
+             for cand in dbm_order:
+                 if cand == "ndbm":
+-                    if find_file("ndbm.h", inc_dirs, []) is not None:
++                    if find_ndbm_h(inc_dirs) is not None:
+                         # Some systems have -lndbm, others don't
+                         if self.compiler.find_library_file(lib_dirs, 'ndbm'):
+                             ndbm_libs = ['ndbm']
+@@ -1315,6 +1343,14 @@ class PyBuildExt(build_ext):
              macros = dict()
              libraries = []
  
@@ -56,13 +96,13 @@ $NetBSD: patch-am,v 1.1.1.1 2011/06/17 00:10:19 reed Exp $
          else:                                   # Linux and other unices
              macros = dict()
              libraries = ['rt']
-@@ -1831,8 +1843,8 @@ def main():
+@@ -1831,8 +1867,8 @@ def main():
            # called unless there's at least one extension module defined.
            ext_modules=[Extension('_struct', ['_struct.c'])],
  
 -          scripts = ["Tools/scripts/pydoc3", "Tools/scripts/idle3",
 -                     "Tools/scripts/2to3"]
-+          scripts = ["Tools/scripts/pydoc3.1", "Tools/scripts/idle3",
++          scripts = ["Tools/scripts/pydoc3.1", 
 +                     "Tools/scripts/2to3-3.1"]
          )
  

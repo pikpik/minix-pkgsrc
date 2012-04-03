@@ -1,8 +1,8 @@
-$NetBSD: distinfo,v 1.2 2006/05/16 13:41:57 ben Exp $
+$NetBSD: distinfo,v 1.7 2011/10/27 09:56:14 ryoon Exp $
 
-SHA1 (abcMIDI-2011-01-01.zip) = ec24dedb98ba3d2182b56e249513142b02900a6a
-RMD160 (abcMIDI-2011-01-01.zip) = ef1b710a38be7caaca5949194a7aa9192a5183dc
-Size (abcMIDI-2011-01-01.zip) = 409569 bytes
-SHA1 (patch-aa) = 3a3a477604d0f1b460a1e534917ea67fceb001f5
+SHA1 (abcMIDI-2011-10-21.zip) = 5b358d0dfd5c80e12b40cb096494816860ac2f26
+RMD160 (abcMIDI-2011-10-21.zip) = 8b420e274a04d4dead540d3ce0a10ff4d42adb8b
+Size (abcMIDI-2011-10-21.zip) = 470459 bytes
+SHA1 (patch-Makefile.in) = 46cff6cde3c32b0e54e200f2eabc148422d68f26
 SHA1 (patch-ab) = 27df5bb0d637336d7c244c5c9ac9c115bfd9ed24
 SHA1 (patch-ac) = 54e42d69173162ce991564c592e5be1fcc8cc0fa

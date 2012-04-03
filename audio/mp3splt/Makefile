@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2009/12/15 21:30:53 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2011/10/21 20:53:29 ryoon Exp $
 #
 
-DISTNAME=		mp3splt-2.2.9
+DISTNAME=		mp3splt-2.4
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mp3splt/}
 
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=	 	yes
 USE_FEATURES= 	 	getopt_long
+
+CONFIGURE_ARGS+=	--disable-nls
 
 .include "../../audio/libmp3splt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

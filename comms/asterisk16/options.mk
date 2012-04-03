@@ -1,13 +1,13 @@
-# $NetBSD: options.mk,v 1.9 2010/10/06 22:39:41 jnemeth Exp $
+# $NetBSD: options.mk,v 1.12 2011/12/12 05:05:34 jnemeth Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.asterisk
-PKG_SUPPORTED_OPTIONS=		zaptel x11 unixodbc ilbc webvmail ldap
+PKG_SUPPORTED_OPTIONS=		zaptel x11 unixodbc ilbc webvmail ldap speex
 PKG_OPTIONS_LEGACY_OPTS+=	gtk:x11
-PKG_SUGGESTED_OPTIONS=		ldap
+PKG_SUGGESTED_OPTIONS=		ldap speex
 
 .include "../../mk/bsd.options.mk"
 
-PLIST_VARS+=		zaptel x11 unixodbc ilbc webvmail ldap
+PLIST_VARS+=		zaptel x11 unixodbc ilbc webvmail ldap speex
 
 # Asterisk now uses DAHDI, not zaptel; not implemented yet...
 #.if !empty(PKG_OPTIONS:Mzaptel)
@@ -44,9 +44,9 @@ CONFIGURE_ARGS+=	--without-odbc
 .if !empty(PKG_OPTIONS:Milbc)
 DISTFILES+=		rfc3951.txt
 SITES.rfc3951.txt=	http://www.ietf.org/rfc/
-DISTFILES+=		extract-cfile.awk
-SITES.extract-cfile.awk=	http://www.ilbcfreeware.org/documentation/
-USE_TOOLS+=		awk
+DISTFILES+=		extract-cfile.txt
+SITES.extract-cfile.txt=	http://www.ilbcfreeware.org/documentation/
+USE_TOOLS+=		awk tr
 PLIST.ilbc=		yes
 .endif
 
@@ -72,8 +72,8 @@ post-configure:
 post-extract:
 .if !empty(PKG_OPTIONS:Milbc)
 	cp ${DISTDIR}/${DIST_SUBDIR}/rfc3951.txt ${WRKSRC}/codecs/ilbc
-	cp ${DISTDIR}/${DIST_SUBDIR}/extract-cfile.awk ${WRKSRC}/codecs/ilbc
-	cd ${WRKSRC}/codecs/ilbc && ${AWK} -f extract-cfile.awk < rfc3951.txt
+	cp ${DISTDIR}/${DIST_SUBDIR}/extract-cfile.txt ${WRKSRC}/codecs/ilbc
+	cd ${WRKSRC}/codecs/ilbc && ${TR} -d '\r' < extract-cfile.txt | ${AWK} -f - rfc3951.txt
 .endif
 
 .if !empty(PKG_OPTIONS:Mwebvmail)
@@ -94,4 +94,14 @@ PLIST.webvmail=		yes
 PLIST.ldap=		yes
 .else
 CONFIGURE_ARGS+=	--without-ldap
+.endif
+
+.if !empty(PKG_OPTIONS:Mspeex)
+.include "../../audio/speex/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-speex
+CONFIGURE_ARGS+=	--with-speexdsp
+PLIST.speex=		yes
+.else
+CONFIGURE_ARGS+=	--without-speex
+CONFIGURE_ARGS+=	--without-speexdsp
 .endif

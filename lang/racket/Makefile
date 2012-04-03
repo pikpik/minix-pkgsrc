@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/08/01 11:45:42 asau Exp $
+# $NetBSD: Makefile,v 1.11 2012/02/06 12:40:46 wiz Exp $
 
-PKGNAME=	racket-5.1.3
+PKGNAME=	racket-5.2.1
 DISTNAME=	$(PKGNAME_NOREV)-src-unix
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES_PLT=	http://download.racket-lang.org/installers/$(PKGVERSION_NOREV)/ \
 		http://www.eecs.northwestern.edu/racket/$(PKGVERSION_NOREV)/ \
@@ -25,17 +26,22 @@ WRKSRC=		$(WRKDIR)/$(PKGNAME_NOREV)
 
 GNU_CONFIGURE=	yes
 CONFIGURE_DIRS=	src
+CONFIGURE_ARGS=	--enable-pthread
 USE_LANGUAGES=	c c++
 USE_TOOLS=	pkg-config
 MAKE_JOBS_SAFE=	no
 UNLIMIT_RESOURCES=	datasize
 
-BUILDLINK_TRANSFORM+=	rm:-ldl
-
 REPLACE_SH=	collects/tests/framework/framework-test
 
-# No REPLACE_CSH:
-CHECK_INTERPRETER_SKIP=	lib/racket/collects/2htdp/tests/xtest
+CHECK_INTERPRETER_SKIP=	collects/meta/build/sitemap/setup.py \
+			collects/meta/build/sitemap/test_sitemap_gen.py
+
+CHECK_INTERPRETER_SKIP=	lib/racket/collects/meta/build/sitemap/setup.py \
+			lib/racket/collects/meta/build/sitemap/sitemap_gen.py \
+			lib/racket/collects/meta/build/sitemap/test_sitemap_gen.py
+
+CHECK_INTERPRETER_SKIP+=	lib/racket/collects/tests/jpr/mon-script.ss
 
 .for f in use-c-printf.rkt use-crypt.rkt use-esd.rkt use-magick.rkt use-sndfile.rkt use-tcl.rkt use-xmmsctrl.rkt use-xosd.rkt
 REPLACE_RACKET+=	collects/ffi/examples/$f
@@ -45,6 +51,9 @@ REPLACE_INTERPRETER+=	racket
 REPLACE.racket.old=	.*racket
 REPLACE.racket.new=	${LOCALBASE}/bin/racket
 REPLACE_FILES.racket=	${REPLACE_RACKET}
+
+do-test:
+	$(RUN) cd $(WRKSRC)/collects/tests/racket && $(WRKSRC)/src/racket/racket3m -f quiet.rktl
 
 .include "../../devel/pango/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"

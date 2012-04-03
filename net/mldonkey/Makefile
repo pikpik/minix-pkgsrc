@@ -1,5 +1,7 @@
-# $NetBSD: Makefile,v 1.54 2011/01/13 13:39:05 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2011/11/18 04:01:56 sbd Exp $
 #
+
+PKGREVISION=		3
 
 .include "Makefile.common"
 
@@ -32,5 +34,6 @@ FILES_SUBST+=		MLDONKEY_USER=${MLDONKEY_USER:Q}
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mlnet ${DESTDIR}${PREFIX}/libexec/mldonkey
 
+.include "../../sysutils/file/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

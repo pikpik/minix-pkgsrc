@@ -1,23 +1,25 @@
-# $NetBSD: Makefile,v 1.4 2011/02/25 09:47:27 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/02/04 05:59:35 obache Exp $
 #
 .include "../../news/hellanzb/Makefile.version"
 
 DISTNAME=		hellanzb-${HELLANZB_VERSION}.${HELLANZB_SVN_REV}
-PKGREVISION=		2
+PKGREVISION=		4
 CATEGORIES=		news
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.hellanzb.com/trac
+HOMEPAGE=		http://www.hellanzb.com/
 COMMENT=		Command line nntp file grabber
+LICENSE=		modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-twisted>=1.3:../../net/py-twisted
+DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 DEPENDS+=	par2>=0.4:../../archivers/par2
 DEPENDS+=	unrar>=3.5.4:../../archivers/unrar
 
-PYDISTUTILSPKG=	yes
+USE_LANGUAGES=	#none
 
 PYTHON_VERSIONS_ACCEPTED=	27 26 25 24
 
@@ -39,7 +41,7 @@ post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}
 	${INSTALL_DATA} ${WRKDIR}/hellanzb.conf ${DESTDIR}${EGDIR}
 
-.include "../../lang/python/extension.mk"
-.include "../../textproc/py-xml/buildlink3.mk"
+EGG_NAME=	hellanzb-${HELLANZB_VERSION}_trunk
 
+.include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

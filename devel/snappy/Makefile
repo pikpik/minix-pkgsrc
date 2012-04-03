@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.41 2009/04/09 00:48:08 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2011/11/26 04:39:47 sbd Exp $
 
-DISTNAME=	snappy-1.0.1
+DISTNAME=	snappy-1.0.5
 CATEGORIES=	devel
 MASTER_SITES=	http://snappy.googlecode.com/files/
 
@@ -15,4 +15,5 @@ GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_LANGUAGES+=	c c++
 
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

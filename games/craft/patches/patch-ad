@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.2 2001/12/19 10:26:47 tron Exp $
+
+ - use configured install prefix
 
 --- option_menu.hc.orig	Thu Sep 24 10:08:09 1998
 +++ option_menu.hc	Thu Sep 24 10:09:24 1998

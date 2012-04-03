@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2011/05/21 09:05:26 obache Exp $
+# $NetBSD: Makefile,v 1.25 2011/12/16 17:20:09 marino Exp $
 
 DISTNAME=	pnet-0.8.0
-#PKGREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://download.savannah.gnu.org/releases/dotgnu-pnet/
 
@@ -19,6 +19,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Unsupported by internal libffi
 NOT_FOR_PLATFORM=	NetBSD-*-x86_64
+NOT_FOR_PLATFORM+=	DragonFly-*-*
 
 MAKE_JOBS_SAFE=	no
 
@@ -32,6 +33,7 @@ PTHREAD_OPTS+=	require native
 
 CONFIGURE_ARGS+=	--enable-threads=posix
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

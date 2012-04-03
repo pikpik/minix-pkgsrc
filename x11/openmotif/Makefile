@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.66 2010/12/23 11:45:01 dsainty Exp $
+# $NetBSD: Makefile,v 1.70 2011/12/07 17:01:58 drochner Exp $
 
-PKGVER=		2.3.1
+PKGVER=		2.3.3
 DISTNAME=	openmotif-${PKGVER}
-PKGREVISION=	5
+PKGREVISION=	1
 CATEGORIES=	x11
-MASTER_SITES=	http://ftp.ics.com/openmotif/2.3/2.3.1/
-MASTER_SITES+=	ftp://ftp.ics.com/openmotif/2.3/2.3.1/
+MASTER_SITES=	http://ftp.ics.com/openmotif/2.3/2.3.3/
+MASTER_SITES+=	ftp://ftp.ics.com/openmotif/2.3/2.3.3/
 
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://www.opengroup.org/openmotif/
@@ -43,6 +43,8 @@ USE_TOOLS+=		flex gmake tbl pkg-config
 GNU_CONFIGURE=		yes
 MAKE_JOBS_SAFE=		no # PR 37233
 
+CFLAGS.SunOS+=		-Dsun
+
 SUBST_CLASSES+=			man_rename
 SUBST_STAGE.man_rename=		pre-configure
 SUBST_MESSAGE.man_rename=	Fixing hardcoded paths.
@@ -58,6 +60,8 @@ CONFIGURE_ARGS+= \
 		--with-libpng-includes=${BUILDLINK_PREFIX.png}/include \
 		--with-libpng-lib=${BUILDLINK_PREFIX.png}/lib \
 		--x-libraries=${X11BASE}/lib
+
+CONFIGURE_ARGS+= --disable-printing
 
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ENV+=		ac_cv_func_setpgrp_void=no
@@ -114,7 +118,6 @@ post-build:
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"

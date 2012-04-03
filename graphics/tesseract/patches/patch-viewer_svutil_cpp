@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- viewer/svutil.cpp~	2009-06-03 16:29:38.000000000 +0000
++++ viewer/svutil.cpp
+@@ -33,6 +33,7 @@
+ #include <pthread.h>
+ #include <semaphore.h>
+ #include <signal.h>
++#include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <netdb.h>

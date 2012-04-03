@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.12 2007/10/31 12:29:33 rillig Exp $
+# $NetBSD: options.mk,v 1.13 2008/04/12 22:43:09 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnupg
 PKG_SUPPORTED_OPTIONS=	curl idea ldap
@@ -29,11 +29,6 @@ CONFIGURE_ARGS+=	--without-libcurl
 
 .if !empty(PKG_OPTIONS:Midea)
 # use of IDEA as crypto function
-LICENSE=	idea-license
-RESTRICTED=	Commercial distribution is claimed to require a license.
-NO_SRC_ON_CDROM=	${RESTRICTED}
-NO_BIN_ON_CDROM=	${RESTRICTED}
-
 DISTFILES+=	idea.c.gz
 SITES.idea.c.gz=ftp://ftp.gnupg.dk/pub/contrib-dk/ \
 		http://www.gnupg.dk/contrib-dk/

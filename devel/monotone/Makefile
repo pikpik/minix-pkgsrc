@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.70 2011/04/23 21:26:40 jmmv Exp $
+# $NetBSD: Makefile,v 1.74 2012/02/27 22:46:54 jmmv Exp $
 #
 
 DISTNAME=	monotone-1.0
-PKGREVISION=	3
+PKGREVISION=	6
 CATEGORIES=	devel scm
 MASTER_SITES=	http://monotone.ca/downloads/1.0/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jmmv@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://monotone.ca/
 COMMENT=	Free distributed version control system
 
@@ -59,6 +59,7 @@ BUILDLINK_API_DEPENDS.pcre+=	pcre>=7.6
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libidn/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../lang/lua/buildlink3.mk"
 .include "../../security/botan/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

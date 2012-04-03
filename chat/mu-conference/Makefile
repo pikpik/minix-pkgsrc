@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2011/02/04 12:05:45 adam Exp $
+# $NetBSD: Makefile,v 1.25 2012/02/16 15:28:19 hans Exp $
 
 DISTNAME=	mu-conference_0.8
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	chat
 MASTER_SITES=	http://download.gna.org/mu-conference/
 
@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake pkg-config
 LDFLAGS+=		-L${BUILDLINK_PREFIX.expat}/lib
 LDFLAGS+=		-L${BUILDLINK_PREFIX.libidn}/lib
+LDFLAGS.SunOS+=		-lsocket -lnsl
 
 PKG_SYSCONFSUBDIR=	jabberd
 RCD_SCRIPTS=		muc

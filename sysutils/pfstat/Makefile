@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2011/01/13 13:39:25 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2011/04/15 11:27:04 obache Exp $
 
 DISTNAME=	pfstat-2.5
+PKGREVISION=	1
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://www.benzedrine.cx/
 

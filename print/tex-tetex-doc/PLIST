@@ -1,3 +1,6 @@
 @comment $NetBSD$
+man/man1/updmap-sys.1
+man/man1/updmap.1
+man/man5/updmap.cfg.5
 share/texmf/doc/tetex/TETEXDOC.pdf
 share/texmf/doc/tetex/teTeX-FAQ

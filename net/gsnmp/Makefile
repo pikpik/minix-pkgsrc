@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2008/06/20 01:09:31 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/06 12:41:12 wiz Exp $
 #
 
 DISTNAME=		gsnmp-0.2.0
-PKGREVISION=		1
+PKGREVISION=		3
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ibr.cs.tu-bs.de/local/gsnmp/
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2009/05/28 21:22:35 zafer Exp $
+# $NetBSD: Makefile,v 1.9 2011/12/06 00:19:23 sbd Exp $
 #
 
-DISTNAME=		findlib-1.2.6
+DISTNAME=		findlib-1.2.8
 PKGNAME=		ocaml-${DISTNAME}
 CATEGORIES=		devel
 MASTER_SITES=		http://download.camlcity.org/download/
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake m4
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
+MAKE_JOBS_SAFE=		no
 CONFIGURE_ARGS+=	-bindir ${PREFIX}/bin
 CONFIGURE_ARGS+=	-mandir ${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	-config ${PKG_SYSCONFDIR}/ocamlfind.conf
@@ -43,6 +44,9 @@ post-extract:
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/ocaml-findlib-register.sh ${DESTDIR}${PREFIX}/libexec/ocaml-findlib-register
+
+do-test:
+	${RUN} cd ${WRKSRC}; ${SH} itest
 
 .include "../../lang/ocaml/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,5 +1,6 @@
 @comment $NetBSD$
 ${PYSITELIB}/MeCab.py
 ${PYSITELIB}/MeCab.pyc
-${PYSITELIB}/_MeCab.so
 ${PYSITELIB}/MeCab.pyo
+${PYSITELIB}/_MeCab.so
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}

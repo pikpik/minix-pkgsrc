@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.118 2011/05/19 04:19:36 obache Exp $
+# $NetBSD: Makefile,v 1.120 2011/11/08 10:50:35 ryoon Exp $
 #
 
 COMMENT=	Clocks, calendars, daily planners and other time related applications
 
+SUBDIR+=	abclock
 SUBDIR+=	anacron
 SUBDIR+=	asclock
 SUBDIR+=	asclock-gtk
@@ -35,6 +36,7 @@ SUBDIR+=	ical
 SUBDIR+=	ical2rem
 SUBDIR+=	jday
 SUBDIR+=	kronolith
+SUBDIR+=	ktimer
 SUBDIR+=	leapsunpack
 SUBDIR+=	libical
 SUBDIR+=	lmclock

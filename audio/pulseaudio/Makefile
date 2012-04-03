@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.49 2011/09/14 15:53:35 hans Exp $
+# $NetBSD: Makefile,v 1.55 2012/02/15 22:38:30 hans Exp $
 
 # NOTE: Please send a copy of any patches that are not pkgsrc-specific
 # to <pulseaudio-discuss@mail.0pointer.de>
 
 PULSEAUDIO_VER=	0.9.21
-PKGREVISION=	10
+PKGREVISION=	14
 DISTNAME=	pulseaudio-${PULSEAUDIO_VER}
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/pulseaudio/
@@ -22,6 +22,11 @@ USE_TOOLS+=	pkg-config gmake m4 msgfmt intltool perl \
 		autoconf automake autoreconf
 
 AUTOCONF_REQD=	2.63
+
+REPLACE_SH+=	src/daemon/esdcompat.in
+REPLACE_SH+=	src/daemon/start-pulseaudio-x11.in
+REPLACE_SH+=	src/daemon/start-pulseaudio-kde.in
+REPLACE_SH+=	src/utils/padsp
 
 PKGCONFIG_OVERRIDE+=	libpulse-browse.pc.in
 PKGCONFIG_OVERRIDE+=	libpulse-mainloop-glib.pc.in
@@ -91,10 +96,10 @@ PLIST.oss=		yes
 
 CFLAGS.SunOS+=		-std=c99
 
-PKG_GROUPS=             ${PULSE_GROUP}
+PKG_GROUPS=		${PULSE_GROUP}
 PKG_GROUPS+=		${PULSE_GROUP_REALTIME}
 PKG_GROUPS+=		${PULSE_GROUP_ACCESS}
-PKG_USERS=              ${PULSE_USER}:${PULSE_GROUP}
+PKG_USERS=		${PULSE_USER}:${PULSE_GROUP}
 
 BUILDLINK_TRANSFORM+=	rm:-Wl,--gc-sections
 
@@ -109,7 +114,7 @@ CONFIGURE_ARGS+=	--disable-netbsd-atomic-ops
 
 # Build module-mmkbd-evdev.so under Linux
 .if ${OPSYS} == "Linux" && exists(/usr/include/linux/input.h)
-PLIST.evdev=           yes
+PLIST.evdev=		yes
 .endif
 
 .include "options.mk"

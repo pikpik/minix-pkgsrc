@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2011/01/19 22:13:04 hubertf Exp $
+# $NetBSD: Makefile,v 1.21 2011/11/23 13:30:30 hubertf Exp $
 #
 
 DISTNAME=	rfc-3.2
 PKGNAME=	rfcutil-3.2
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.dewn.com/rfc/
 EXTRACT_SUFX=	#
@@ -25,15 +25,17 @@ RFCINDEXURL=	http://www.ietf.org/download/
 
 INSTALLATION_DIRS=	bin
 
+SUBST_CLASSES+=		rfcutil
+SUBST_STAGE.rfcutil=	post-patch
+SUBST_FILES.rfcutil=	rfc
+SUBST_SED.rfcutil+=	-e 's,/usr/local,${PREFIX},'
+SUBST_SED.rfcutil+=	-e '/VIEWER=/s,w3m lynx,${RFCVIEWER},'
+SUBST_SED.rfcutil+=	-e '/viewer/s,-dump,${RFCDUMPOPT},'
+SUBST_SED.rfcutil+=	-e '/viewer/s,http://ftp.isi.edu/in-notes/,${RFCINDEXURL},'
 .include "options.mk"
 
 do-extract:
-	${SED} \
-		-e 's,/usr/local,${PREFIX},' \
-		-e '/VIEWER=/s,w3m lynx,${RFCVIEWER},' \
-		-e '/viewer/s,-dump,${RFCDUMPOPT},' \
-		-e '/viewer/s,http://ftp.isi.edu/in-notes/,${RFCINDEXURL},' \
-		<${DISTDIR}/${DISTNAME} >${WRKSRC}/rfc
+	${CP} ${DISTDIR}/${DISTNAME} ${WRKSRC}/rfc
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/rfc ${DESTDIR}${PREFIX}/bin/rfc

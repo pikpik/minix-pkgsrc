@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2011/04/22 13:43:29 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/03/03 00:13:03 wiz Exp $
 #
 
-DISTNAME=		mame0143s
+DISTNAME=		mame0145s
 PKGNAME=		${DISTNAME:S/0/-0./:S/s$//}
 MASTER_SITES=		http://mamedev.org/downloader.php?file=releases/
 
@@ -11,6 +11,11 @@ CONFLICTS=		xmame-[0-9]* sdlmame-[0-9]*
 
 DOCDIR=			share/doc/mame
 INSTALLATION_DIRS=	bin ${DOCDIR} ${PKGMANDIR}/man1
+
+# mame source is double-zipped
+post-extract:
+	cd ${WRKDIR} && ${.CURDIR}/../../mk/extract/extract mame.zip
+	rm ${WRKDIR}/mame.zip
 
 # not installed, because not found necessary so far:
 # regrep, split, src2html, srcclean, testkeys

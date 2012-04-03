@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2011/04/22 13:43:08 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/06 17:38:55 ryoon Exp $
 
-DISTNAME=		spectrum-1.4.7
-PKGREVISION=		3
+DISTNAME=		spectrum-1.4.8
+PKGREVISION=		6
 CATEGORIES=		chat
-MASTER_SITES=		http://spectrum.im/attachments/download/37/
+MASTER_SITES=		http://spectrum.im/attachments/download/43/
 
 MAINTAINER=		schnoebe@NetBSD.org
 HOMEPAGE=		http://spectrum.im/
@@ -101,6 +101,7 @@ post-install:
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/py-readline/buildlink3.mk"
+# .include "../../devel/libev/buildlink3.mk"
 .include "../../devel/poco/buildlink3.mk"
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../lang/python/application.mk"

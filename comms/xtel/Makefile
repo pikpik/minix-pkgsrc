@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/10/09 03:35:26 dholland Exp $
+# $NetBSD: Makefile,v 1.24 2011/10/09 03:53:31 dholland Exp $
 #
 
 DISTNAME=	xtel-3.3.0
@@ -35,6 +35,11 @@ INSTALLATION_DIRS=	share/examples/xtel
 INSTALL_MAKE_FLAGS=	PPPDIR=${PREFIX}/share/examples/xtel
 
 SPECIAL_PERMS+=		bin/mdmdetect ${SETUID_ROOT_PERMS}
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "SunOS"
+BUILDLINK_TRANSFORM+=	rm:-lucb
+.endif
 
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"

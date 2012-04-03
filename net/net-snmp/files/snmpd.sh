@@ -9,11 +9,12 @@ if [ -f /etc/rc.subr ]; then
 	. /etc/rc.subr
 fi
 
+: ${snmpd_flags:="-Ls d"}		# log using syslog LOG_DAEMON
+
 name="snmpd"
 rcvar=$name
 command="@PREFIX@/sbin/${name}"
 pidfile="/var/run/${name}.pid"
-snmpd_flags="-Ls d"		# log using syslog LOG_DAEMON
 command_args="-p ${pidfile}"
 
 if [ -f @PKG_SYSCONFDIR@/snmpd.conf ]; then

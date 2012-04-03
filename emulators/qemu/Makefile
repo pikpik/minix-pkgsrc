@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.82 2011/09/12 10:59:15 ryoon Exp $
+# $NetBSD: Makefile,v 1.88 2012/03/03 00:13:03 wiz Exp $
 
-DISTNAME=		qemu-0.15.0
-PKGREVISION=		1
+DISTNAME=		qemu-0.15.1
+PKGREVISION=		4
 CATEGORIES=		emulators
 MASTER_SITES=		http://wiki.qemu.org/download/
 
@@ -25,10 +25,10 @@ BUILD_DEPENDS+=		texi2html-[0-9]*:../../textproc/texi2html
 
 .include "../../mk/bsd.prefs.mk"
 
-CONFIGURE_ENV+=		mansuffix=/${PKGMANDIR}
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
 CONFIGURE_ARGS+=	--interp-prefix=${PREFIX}/share/qemu
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
+CONFIGURE_ARGS+=	--mandir=${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	--python=${PYTHONBIN}
 
 CONF_FILES=		${EGDIR}/target-x86_64.conf \
@@ -120,6 +120,8 @@ post-install:
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../lang/python/extension.mk"
+.include "../../www/curl/buildlink3.mk"
 .include "../../mk/curses.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
+.include "../../mk/terminfo.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

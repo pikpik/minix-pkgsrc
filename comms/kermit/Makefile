@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.76 2011/05/14 19:27:53 hans Exp $
+# $NetBSD: Makefile,v 1.78 2011/11/20 12:01:50 tron Exp $
 
 DISTNAME=	cku302
 PKGNAME=	kermit-9.0.302
+PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/
 
@@ -21,6 +22,8 @@ MAKE_ENV+=	KFLAGS=${KFLAGS:Q} LIBS=${LIBS:Q}
 MAKE_FILE=	makefile
 
 #KFLAGS+=	-DNODEBUG -DNOOLDMODEMS
+KFLAGS+=	${BUILDLINK_CPPFLAGS}
+LIBS+=		${BUILDLINK_LDFLAGS}
 
 .include "options.mk"
 
@@ -38,14 +41,28 @@ LIBS+=		-ltermcap
 .  endif
 .endfor
 
+.include "../../mk/curses.buildlink3.mk"
+
 .if ${OPSYS} == "Darwin"
-.  if empty(OS_VERSION:M[0-6]\.*)
-BUILD_TARGET_OPSYS=	macosx103
+.  if !empty(OS_VERSION:M??.*)
+BUILD_TARGET_OPSYS=	macosx10.6
+.  elif !empty(OS_VERSION:M9.*)
+BUILD_TARGET_OPSYS=	macosx10.5
+.  elif !empty(OS_VERSION:M8.*)
+BUILD_TARGET_OPSYS=	macosx10.4
+.  elif empty(OS_VERSION:M7.*)
+BUILD_TARGET_OPSYS=	macosx103.9
 .  else
 BUILD_TARGET_OPSYS=	macosx10
 .  endif
 .elif ${OPSYS} == "Linux"
 BUILD_TARGET_OPSYS=	linux
+MAKE_ENV+=	HAVE_LIBCURSES=-l${BUILDLINK_LIBNAME.curses}
+.  if ${CURSES_TYPE} == "ncurses"
+MAKE_ENV+=	HAVE_CURSES=-DCK_NCURSES
+.  else
+MAKE_ENV+=	HAVE_CURSES=-DCK_NCURSES
+.  endif
 .elif ${OPSYS} == "SunOS"
 BUILD_TARGET_OPSYS=	solaris11g
 .else

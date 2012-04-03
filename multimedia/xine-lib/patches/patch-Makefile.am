@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- Makefile.am.orig	2010-03-22 20:08:04.000000000 +0000
++++ Makefile.am
+@@ -111,5 +111,5 @@ maintainer-clean-generic:
+ maintainer-clean-generic-hook:
+ 	rm -f config.status
+ 
+-$(top_srcdir)/configure:  $(am__configure_deps)
+-	cd $(srcdir) && $(AUTOCONF) && $(SED) -i -e '/gnu_ld/,/;;/ s/--rpath \$${wl}/--rpath,/' $@
++#$(top_srcdir)/configure:  $(am__configure_deps)
++#	cd $(srcdir) && $(AUTOCONF) && $(SED) -i -e '/gnu_ld/,/;;/ s/--rpath \$${wl}/--rpath,/' $@

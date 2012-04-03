@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1 2005/12/12 00:26:36 joerg Exp $
 
 --- src/tX_dialog.cc.orig	2005-12-12 00:13:12.000000000 +0000
 +++ src/tX_dialog.cc
@@ -6,7 +6,7 @@ $NetBSD$
  #ifdef USE_OSS
  static GList *oss_devices=NULL;
  
-+#if defined(__DragonFly__) || defined(__FreeBSD__)
++#if defined(__FreeBSD__)
 +int oss_select_dsp_only(struct dirent *entry){
 +#else
  int oss_select_dsp_only(const struct dirent *entry){

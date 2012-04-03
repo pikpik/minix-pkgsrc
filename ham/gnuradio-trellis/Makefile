@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/07/21 12:20:54 markd Exp $
+# $NetBSD: Makefile,v 1.8 2012/02/29 16:32:24 hans Exp $
 
 PKGNAME=	gnuradio-trellis-${VERSION}
-PKGREVISION=	1
+PKGREVISION=	5
 COMMENT=	Trellis-based encoding and decoding algorithms for GNU Radio
 
 PKG_DESTDIR_SUPPORT=	user-destdir

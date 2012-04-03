@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2011/02/06 18:44:23 pettai Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/21 11:27:56 shattered Exp $
 #
 
 DISTNAME=	cfengine-3.1.4
+PKGREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://cfengine.com/tarballs/
+MASTER_SITES=	http://cfengine.com/source-code/download?file=
 
 MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://cfengine.com/pages/community

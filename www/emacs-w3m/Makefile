@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2009/08/04 20:45:19 minskim Exp $
+# $NetBSD: Makefile,v 1.27 2009/08/09 19:35:12 tonnerre Exp $
 
 DISTNAME=	emacs-w3m-1.4.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	${HOMEPAGE}
 
@@ -15,7 +15,7 @@ INSTALLATION_DIRS=	${ETCDIR}
 USE_TOOLS+=	makeinfo
 INFO_FILES=	YES
 
-DEPENDS+=	w3m>=0.5.1nb2:../../www/w3m
+DEPENDS+=	w3m{,-img}>=0.5.1nb2:../../www/w3m
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-emacs=${EMACS_BIN:Q}

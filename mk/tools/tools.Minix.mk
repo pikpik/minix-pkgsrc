@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.47 2010/02/13 08:30:59 obache Exp $
+# $NetBSD$
 #
 # System-supplied tools for the Minix operating system.
 
@@ -30,7 +30,6 @@ TOOLS_PLATFORM.install?=	/bin/install
 TOOLS_PLATFORM.lex?=		/usr/bin/lex
 TOOLS_PLATFORM.ln?=		/bin/ln
 TOOLS_PLATFORM.ls?=		/bin/ls
-#TOOLS_PLATFORM.m4?=		/usr/bin/m4
 TOOLS_PLATFORM.mail?=		/usr/bin/mail
 TOOLS_PLATFORM.mkdir?=		/bin/mkdir -p
 TOOLS_PLATFORM.mv?=		/bin/mv
@@ -39,7 +38,7 @@ TOOLS_PLATFORM.nroff?=		/usr/bin/nroff
 TOOLS_PLATFORM.pwd?=		/bin/pwd
 TOOLS_PLATFORM.rm?=		/bin/rm
 TOOLS_PLATFORM.rmdir?=		/usr/bin/rmdir
-TOOLS_PLATFORM.sed?=	/bin/sed
+TOOLS_PLATFORM.sed?=		/bin/sed
 TOOLS_PLATFORM.sh?=		/bin/sh
 TOOLS_PLATFORM.sleep?=		/usr/bin/sleep
 TOOLS_PLATFORM.strip?=		/usr/bin/strip
@@ -60,7 +59,7 @@ TOOLS_PLATFORM.egrep?=		/usr/bin/egrep
 TOOLS_PLATFORM.fgrep?=		/usr/bin/fgrep
 TOOLS_PLATFORM.printf?=		/usr/bin/printf
 TOOLS_PLATFORM.touch?=		/usr/bin/touch
-TOOLS_PLATFORM.hostname?= /usr/bin/hostname
+TOOLS_PLATFORM.hostname?=	/usr/bin/hostname
 TOOLS_PLATFORM.patch?=		/usr/bin/patch
-TOOLS_PLATFORM.diff?=	/usr/bin/diff
-TOOLS_PLATFORM.sort?=	/usr/bin/sort
+TOOLS_PLATFORM.diff?=		/usr/bin/diff
+TOOLS_PLATFORM.sort?=		/usr/bin/sort

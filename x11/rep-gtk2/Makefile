@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2011/01/23 23:56:53 tnn Exp $
+# $NetBSD: Makefile,v 1.18 2012/02/06 12:42:25 wiz Exp $
 
 DISTNAME=		rep-gtk-0.90.4
 PKGNAME=		${DISTNAME:S/gtk/gtk2/}
-PKGREVISION=		1
+PKGREVISION=		4
 CATEGORIES=		x11 lang
 MASTER_SITES=		http://download.tuxfamily.org/sawfish/rep-gtk/
 EXTRACT_SUFX=		.tar.bz2

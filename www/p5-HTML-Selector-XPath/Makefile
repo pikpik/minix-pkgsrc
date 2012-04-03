@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:36:49 seb Exp $
+# $NetBSD: Makefile,v 1.5 2011/11/17 14:15:13 hiramatsu Exp $
 
-DISTNAME=	HTML-Selector-XPath-0.04
+DISTNAME=	HTML-Selector-XPath-0.14
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTML/}
 
@@ -12,6 +11,7 @@ COMMENT=	Perl 5 CSS Selector to XPath compiler
 LICENSE=	${PERL5_LICENSE}
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+BUILD_DEPENDS+= p5-Test-Base-[0-9]*:../../devel/p5-Test-Base
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/HTML/Selector/XPath/.packlist

@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/tex/latex/csquotes/csq-compat.def
+share/texmf-dist/tex/latex/csquotes/csquotes.cfg
+share/texmf-dist/tex/latex/csquotes/csquotes.def
+share/texmf-dist/tex/latex/csquotes/csquotes.sty

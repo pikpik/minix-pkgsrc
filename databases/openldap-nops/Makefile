@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/06/02 12:17:22 adam Exp $
+# $NetBSD: Makefile,v 1.11 2012/01/24 20:36:40 joerg Exp $
 
 PKGNAME=	${DISTNAME:S/-/-nops-/}
 COMMENT=	Remove null-ops for OpenLDAP

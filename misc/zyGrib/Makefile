@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2011/07/30 21:27:36 plunky Exp $
+# $NetBSD: Makefile,v 1.26 2012/03/09 10:22:33 plunky Exp $
 #
 
-DISTNAME=	zyGrib-5.0.6
+DISTNAME=	zyGrib-5.1.3
 CATEGORIES=	misc
 MASTER_SITES=	http://www.zygrib.org/getfile.php?file=
 EXTRACT_SUFX=	.tgz
@@ -40,11 +40,15 @@ INSTALL_FILES+=	colors/colors_binary.txt
 INSTALL_FILES+=	colors/colors_cape_jkg.txt
 INSTALL_FILES+=	colors/colors_clouds_black_pc.txt
 INSTALL_FILES+=	colors/colors_clouds_white_pc.txt
+INSTALL_FILES+=	colors/colors_current_kts.txt
 INSTALL_FILES+=	colors/colors_deltatemp_celcius.txt
 INSTALL_FILES+=	colors/colors_humidrel_pc.txt
 INSTALL_FILES+=	colors/colors_rain_mmh.txt
 INSTALL_FILES+=	colors/colors_snowdepth_m.txt
 INSTALL_FILES+=	colors/colors_temp_celcius.txt
+INSTALL_FILES+=	colors/colors_waveheight_m.txt
+INSTALL_FILES+=	colors/colors_whitecap_prb.txt
+INSTALL_FILES+=	colors/colors_whitecap_prb.txt.colors
 INSTALL_FILES+=	colors/colors_wind_kts.txt
 INSTALL_FILES+=	gis/cities_10k-more.txt.gz
 INSTALL_FILES+=	gis/cities_3k-10k.txt.gz
@@ -58,6 +62,7 @@ INSTALL_FILES+=	img/anim.png
 INSTALL_FILES+=	img/back.png
 INSTALL_FILES+=	img/connect_no.png
 INSTALL_FILES+=	img/down.png
+INSTALL_FILES+=	img/drapeau_ar.png
 INSTALL_FILES+=	img/drapeau_cz.png
 INSTALL_FILES+=	img/drapeau_de.png
 INSTALL_FILES+=	img/drapeau_en.png
@@ -113,6 +118,8 @@ INSTALL_FILES+=	maps/gshhs/wdb_rivers_c.b
 INSTALL_FILES+=	maps/gshhs/wdb_rivers_i.b
 INSTALL_FILES+=	maps/gshhs/wdb_rivers_l.b
 INSTALL_FILES+=	stuff/boat_parameters.csv
+INSTALL_FILES+=	tr/zyGrib_ar.qm
+INSTALL_FILES+=	tr/zyGrib_ar.ts
 INSTALL_FILES+=	tr/zyGrib_cz.qm
 INSTALL_FILES+=	tr/zyGrib_cz.ts
 INSTALL_FILES+=	tr/zyGrib_de.qm
@@ -125,6 +132,8 @@ INSTALL_FILES+=	tr/zyGrib_it.qm
 INSTALL_FILES+=	tr/zyGrib_it.ts
 INSTALL_FILES+=	tr/zyGrib_nl.qm
 INSTALL_FILES+=	tr/zyGrib_nl.ts
+INSTALL_FILES+=	tr/zyGrib_pt.qm
+INSTALL_FILES+=	tr/zyGrib_pt.ts
 INSTALL_FILES+=	tr/zyGrib_ru.qm
 INSTALL_FILES+=	tr/zyGrib_ru.ts
 
@@ -140,7 +149,8 @@ do-install:
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../geography/proj/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
-.include "../../x11/qwt-qt4/buildlink3.mk"
+.include "../../x11/qwt6-qt4/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

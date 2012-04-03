@@ -1,4 +1,4 @@
-# $NetBSD: transform-gcc,v 1.20 2009/08/15 13:36:48 joerg Exp $
+# $NetBSD: transform-gcc,v 1.25 2012/02/06 13:03:55 bsiegert Exp $
 #
 # This file handles the transformations needed for gcc that can be done
 # looking at only one argument at a time.
@@ -30,6 +30,7 @@ case $arg in
 -ffloat-store		|\
 -fhonour-copts		|\
 -finline-functions	|\
+-fno-align-*		|\
 -fno-builtin*		|\
 -fno-common		|\
 -fno-implicit-templates	|\
@@ -40,9 +41,12 @@ case $arg in
 -fpic			|\
 -fpcc-struct-return	|\
 -freg-struct-return	|\
+-frename-registers	|\
 -fsigned-char		|\
 -funroll-loops		|\
 -funsigned-char		|\
+-fweb			|\
+-fwrapv			|\
 -ggdb			|\
 -M			|\
 -M[DFMPT]		|\
@@ -52,6 +56,10 @@ case $arg in
 -mabi=*			|\
 -march=*		|\
 -mcpu=*			|\
+-momit-leaf-frame-pointer |\
+-mpreferred-stack-boundary=* |\
+-mpush-args		|\
+-mschedule=*		|\
 -mieee-fp		|\
 -O[23s]			|\
 -pedantic		|\
@@ -77,7 +85,7 @@ case $arg in
 -Wextra			|\
 -Werror			|\
 -Werror-implicit-function-declaration |\
--Wformat=[012]		|\
+-Wformat*		|\
 -Wmissing-declarations	|\
 -Wmissing-format-attribute |\
 -Wmissing-prototypes	|\
@@ -123,6 +131,12 @@ case $arg in
 # Options specific to Objective C
 -fgnu-runtime		|\
 -fconstant-string-class=* ) transform_pass ;;
+
+# Old-style rpath specifier, may come from autoconf's AC_PATH_XTRA.
+# Our gcc re-orders -R args relative to -Wl,-R specifiers (puts -R
+# args at the front of the "ld" invocation), which messes up the relative
+# search order.  Fix this by rewriting -R to -Wl,-R.
+-R*			) transform_to "-Wl,$arg" ;;
 
 # Other compiler's options that have corresponding GCC options.
 -Kpic			|\

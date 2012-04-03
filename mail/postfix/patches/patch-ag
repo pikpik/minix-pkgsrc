@@ -1,23 +1,17 @@
-$NetBSD: patch-ag,v 1.30 2010/04/16 15:32:58 taca Exp $
-
-Only define HAS_DB if it hasn't been defined.
-Add support for NetBSD 5.x and DragonFly BSD.
-Handle closefrom() on FreeBSD.
-
---- src/util/sys_defs.h.orig	Tue Mar  1 19:10:46 2011
-+++ src/util/sys_defs.h
-@@ -29,8 +29,8 @@
-     || defined(BSDI2) || defined(BSDI3) || defined(BSDI4) \
+--- src/util/sys_defs.h.orig	Wed Nov  2 23:46:22 2011
++++ src/util/sys_defs.h	Sun Apr  1 23:23:49 2012
+@@ -30,8 +30,8 @@
      || defined(OPENBSD2) || defined(OPENBSD3) || defined(OPENBSD4) \
+     || defined(OPENBSD5) \
      || defined(NETBSD1) || defined(NETBSD2) || defined(NETBSD3) \
 -    || defined(NETBSD4) \
 -    || defined(EKKOBSD1)
-+    || defined(NETBSD4) || defined(NETBSD5) \
++    || defined(NETBSD4) || defined(NETBSD5) || defined(NETBSD6) \
 +    || defined(EKKOBSD1) || defined(DRAGONFLY) || defined(MINIX3)
  #define SUPPORTED
  #include <sys/types.h>
  #include <sys/param.h>
-@@ -41,10 +41,16 @@
+@@ -42,10 +42,16 @@
  #define HAS_FCNTL_LOCK
  #define INTERNAL_LOCK	MYFLOCK_STYLE_FLOCK
  #define DEF_MAILBOX_LOCK "flock, dotlock"
@@ -34,7 +28,7 @@ Handle closefrom() on FreeBSD.
  #define DEF_DB_TYPE	"hash"
  #if (defined(__NetBSD_Version__) && __NetBSD_Version__ >= 104250000)
  #define ALIAS_DB_MAP   "hash:/etc/mail/aliases"	/* sendmail 8.10 */
-@@ -91,6 +97,11 @@
+@@ -92,6 +98,11 @@
  /* #define HAS_IPV6 find out interface lookup method */
  #endif
  
@@ -46,7 +40,7 @@ Handle closefrom() on FreeBSD.
  /* __FreeBSD_version version is major+minor */
  
  #if __FreeBSD_version >= 220000
-@@ -160,13 +171,23 @@
+@@ -161,13 +172,23 @@
  #define HAS_CLOSEFROM
  #endif
  
@@ -71,7 +65,7 @@ Handle closefrom() on FreeBSD.
      || defined(USAGI_LIBINET6)
  #ifndef NO_IPV6
  # define HAS_IPV6
-@@ -175,14 +196,16 @@
+@@ -176,14 +197,16 @@
  
  #if (defined(__FreeBSD_version) && __FreeBSD_version >= 300000) \
      || (defined(__NetBSD_Version__) && __NetBSD_Version__ >= 103000000) \
@@ -90,7 +84,7 @@ Handle closefrom() on FreeBSD.
  #  define EVENTS_STYLE	EVENTS_STYLE_KQUEUE
  # endif
  #endif
-@@ -1275,10 +1298,12 @@ extern int dup2_pass_on_exec(int oldd, int newd);
+@@ -1276,10 +1299,12 @@
    */
  #ifndef HAS_IPV6
  #define EMULATE_IPV4_ADDRINFO

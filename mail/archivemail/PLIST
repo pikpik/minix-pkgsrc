@@ -1,5 +1,6 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2004/06/30 19:12:13 hubertf Exp $
+@comment $NetBSD$
 bin/archivemail
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 man/man1/archivemail.1
 share/archivemail/CHANGELOG
 share/archivemail/FAQ

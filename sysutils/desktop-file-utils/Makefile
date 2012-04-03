@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.25 2010/01/16 23:37:49 heinz Exp $
+# $NetBSD: Makefile,v 1.28 2012/02/13 12:29:12 drochner Exp $
 #
 
-DISTNAME=	desktop-file-utils-0.15
+DISTNAME=	desktop-file-utils-0.19
 PKGREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://freedesktop.org/software/desktop-file-utils/releases/
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/desktop-file-utils

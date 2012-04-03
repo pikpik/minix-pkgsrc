@@ -1,4 +1,4 @@
-# $NetBSD: print-plist.mk,v 1.18 2009/06/14 17:12:03 joerg Exp $
+# $NetBSD: print-plist.mk,v 1.19 2011/08/30 11:19:51 obache Exp $
 
 ###
 ### Automatic PLIST generation
@@ -20,10 +20,6 @@ _PRINT_PLIST_AWK_SUBST+=						\
 	gsub(/${MACHINE_GNU_PLATFORM}/, "$${MACHINE_GNU_PLATFORM}");	\
 	gsub(/${MACHINE_ARCH}/, "$${MACHINE_ARCH}");			\
 	gsub(/${MACHINE_GNU_ARCH}/, "$${MACHINE_GNU_ARCH}");
-.  if !empty(LOWER_VENDOR)
-_PRINT_PLIST_AWK_SUBST+=						\
-	gsub(/${LOWER_VENDOR}/, "$${LOWER_VENDOR}");
-.  endif
 _PRINT_PLIST_AWK_SUBST+=						\
 	gsub(/${LOWER_OS_VERSION:S/./\./g}/, "$${LOWER_OS_VERSION}");	\
 	gsub(/${LOWER_OPSYS}/, "$${LOWER_OPSYS}");

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2007/01/31 00:04:11 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2011/11/15 20:26:04 shattered Exp $
 #
 
 DISTVERSION=		2.02.0
@@ -15,7 +15,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.delorie.com/djgpp/
 COMMENT=		Cross-compile environment for MS-DOS on 386 and higher
 
-BUILD_DEPENDS+=		unzip-[0-9]*:../../archivers/unzip
+NOT_FOR_PLATFORM=	*-*-x86_64
 
 SITES.wmemu2b.zip=	http://ftp.delorie.com/pub/djgpp/beta/ \
 			ftp://ftp.delorie.com/pub/djgpp/beta/ \

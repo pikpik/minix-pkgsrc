@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.3 2009/02/22 12:29:42 wiz Exp $
+@comment $NetBSD: PLIST,v 1.5 2011/10/29 11:40:27 obache Exp $
 bin/ttx
 ${PYSITELIB}/FontTools.pth
 ${PYSITELIB}/FontTools/fontTools/__init__.py
@@ -263,6 +263,7 @@ ${PYSITELIB}/FontTools/fontTools/ttx.pyo
 ${PYSITELIB}/FontTools/fontTools/unicode.py
 ${PYSITELIB}/FontTools/fontTools/unicode.pyc
 ${PYSITELIB}/FontTools/fontTools/unicode.pyo
+${PLIST.eggfile}${PYSITELIB}/FontTools/${EGG_FILE}
 ${PYSITELIB}/FontTools/sstruct.py
 ${PYSITELIB}/FontTools/sstruct.pyc
 ${PYSITELIB}/FontTools/sstruct.pyo

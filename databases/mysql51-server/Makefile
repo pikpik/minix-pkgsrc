@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2010/09/08 16:24:57 taca Exp $
+# $NetBSD: Makefile,v 1.9 2012/01/23 08:44:22 sbd Exp $
 
 PKGNAME=		${DISTNAME:S/-/-server-/}
+PKGREVISION=		1
 SVR4_PKGNAME=		mysqs
 COMMENT=		MySQL 5, a free SQL database (server)
 
@@ -25,6 +26,7 @@ CONFIGURE_ARGS+=	--with-plugins=innobase,ndbcluster
 REPLACE_PERL+=		storage/ndb/tools/ndb_error_reporter \
 			storage/ndb/tools/ndb_size.pl
 PLIST.ndb=		yes
+BUILDLINK_DEPMETHOD.readline=	full
 .else
 CONFIGURE_ARGS+=	--with-plugins=innobase
 .endif
@@ -84,11 +86,12 @@ CXXFLAGS+=		-D_POSIX_C_SOURCE=199506L -D__EXTENSIONS__
 .include "../../databases/mysql51-client/buildlink3.mk"
 .include "../../security/tcp_wrappers/buildlink3.mk"
 
-# We only need readline to placate the configure script.  None of the
-# binaries are actually linked against -lreadline, so make this only
-# a build-time dependency.
+# Only 'ndb_mgm' needs readline otherwise we only need it to placate the
+# configure script.  As ndb_mgm is only build if the 'ndb-cluster' option
+# is enabled that option sets a full dependency on readline otherwise 
+# make this only a build-time dependency. 
 #
-BUILDLINK_DEPMETHOD.readline=	build
+BUILDLINK_DEPMETHOD.readline?=	build
 .include "../../devel/readline/buildlink3.mk"
 
 post-configure:

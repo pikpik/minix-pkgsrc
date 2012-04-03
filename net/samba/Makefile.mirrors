@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.mirrors,v 1.6 2009/10/11 09:18:04 wiz Exp $
+# $NetBSD: Makefile.mirrors,v 1.7 2010/06/19 14:08:56 taca Exp $
 #
 # This Makefile fragment contains the mirror sites for fetching Samba.
 

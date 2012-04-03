@@ -1,12 +1,17 @@
-@comment $NetBSD: PLIST,v 1.9 2009/03/06 00:20:27 snj Exp $
+@comment $NetBSD$
 bin/urxvt
 bin/urxvtc
 bin/urxvtd
+${PLIST.perl}lib/urxvt/perl/bell-command
 ${PLIST.perl}lib/urxvt/perl/block-graphics-to-ascii
+${PLIST.perl}lib/urxvt/perl/clipboard-osc
+${PLIST.perl}lib/urxvt/perl/confirm-paste
 ${PLIST.perl}lib/urxvt/perl/digital-clock
 ${PLIST.perl}lib/urxvt/perl/example-refresh-hooks
+${PLIST.perl}lib/urxvt/perl/keysym-list
 ${PLIST.perl}lib/urxvt/perl/kuake
 ${PLIST.perl}lib/urxvt/perl/macosx-clipboard
+${PLIST.perl}lib/urxvt/perl/macosx-clipboard-native
 ${PLIST.perl}lib/urxvt/perl/matcher
 ${PLIST.perl}lib/urxvt/perl/option-popup
 ${PLIST.perl}lib/urxvt/perl/overlay-osc

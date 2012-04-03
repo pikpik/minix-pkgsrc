@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/05/20 00:58:05 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/01/17 21:43:18 sbd Exp $
 #
 
 DISTNAME=	jack-audio-connection-kit-${JACK_VERSION}
@@ -20,6 +20,7 @@ BUILD_DEFS+=		JACKD_DEFAULT_TMPDIR
 BUILD_DEFS+=		JACKD_PROCFS_PATH
 
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes
 
@@ -37,6 +38,7 @@ CONFIGURE_ARGS+=	--enable-timestamps
 
 CFLAGS.NetBSD+=		-D_NETBSD_SOURCE
 CFLAGS.Linux+=		-D_GNU_SOURCE
+CFLAGS.SunOS+=		-std=c99 -D_XOPEN_SOURCE=600 -D__EXTENSIONS__
 
 CONFIGURE_ENV+=		ac_cv_header_readline_chardefs_h=yes
 

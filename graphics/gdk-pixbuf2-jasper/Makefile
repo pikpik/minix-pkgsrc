@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2011/04/22 13:43:44 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/06 12:40:22 wiz Exp $
 #
 
-DISTNAME=	gdk-pixbuf-2.24.0
-PKGNAME=	gdk-pixbuf2-jasper-2.24.0
+DISTNAME=	gdk-pixbuf-2.24.1
+PKGNAME=	gdk-pixbuf2-jasper-2.24.1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdk-pixbuf/2.24/}
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	ftp://ftp.gnome.org/pub/gnome/sources/gdk-pixbuf/2.24/

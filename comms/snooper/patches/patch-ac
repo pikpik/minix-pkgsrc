@@ -1,7 +1,20 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.2 2011/12/17 10:15:00 sbd Exp $
+
+- honor LDFLAGS
+- DESTDIR support
+- let the pkgsrc makefile handle the permissions
 
 --- build/Makefile.in.orig	1998-08-12 14:31:56.000000000 +0000
 +++ build/Makefile.in
+@@ -17,7 +17,7 @@ OBJS=	main.o scrn.o log.o binlog.o uucpl
+ all:		snooper
+ 
+ snooper:	$(OBJS)
+-	$(CC) -o snooper $(OBJS) @LIBS@
++	$(CC) $(LDFLAGS) -o snooper $(OBJS) @LIBS@
+ 
+ main.o:		../src/main.c
+ scrn.o:		../src/scrn.c
 @@ -29,8 +29,8 @@ depend:
  	mkdep ${CFLAGS:M-[ID]*} $(srcdir)/src/*.c
  
@@ -9,7 +22,7 @@ $NetBSD$
 -	[ -d $(bindir) ] || (mkdir $(bindir))
 -	$(INSTALL) -s -o uucp -g bin -m 4555 snooper $(bindir)
 +	[ -d $(DESTDIR)$(bindir) ] || (mkdir $(DESTDIR)$(bindir))
-+	$(INSTALL) -s -o uucp -g bin -m 4555 snooper $(DESTDIR)$(bindir)
++	$(INSTALL) -s snooper $(DESTDIR)$(bindir)
  
  clean:
  	-rm -f *.o *.core

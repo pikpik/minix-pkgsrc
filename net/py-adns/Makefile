@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:41 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2010/04/17 12:46:18 obache Exp $
 #
 
 DISTNAME=	adns-python-1.2.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	net python
 MASTER_SITES=	http://adns-python.googlecode.com/files/
 
@@ -13,9 +14,9 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYDISTUTILSPKG=		yes
+EGG_NAME=	${DISTNAME:S/-/_/}
 
 BUILDLINK_API_DEPENDS.adns+=	adns>=1.2
 .include "../../net/adns/buildlink3.mk"
-.include "../../lang/python/extension.mk"
+.include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

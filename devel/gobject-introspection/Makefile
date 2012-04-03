@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.11 2011/05/13 17:12:19 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2012/03/03 00:12:07 wiz Exp $
 #
 
-DISTNAME=	gobject-introspection-0.10.8
-PKGREVISION=	1
+DISTNAME=	gobject-introspection-1.30.0
+PKGREVISION=	3
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gobject-introspection/0.10/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gobject-introspection/1.30/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -19,6 +19,7 @@ DEPENDS+=	${PYPKGPREFIX}-cElementTree-[0-9]*:../../textproc/py-cElementTree
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config flex bison gmake
+GMAKE_REQD=	3.81
 
 CONFIGURE_ARGS+=	--disable-tests
 
@@ -43,8 +44,11 @@ SUBST_SED.timet+=	-e 's,@TIMET_CTYPE@,glong,g'
 # not executable
 CHECK_INTERPRETER_SKIP+= lib/gobject-introspection/giscanner/*.py
 
+# needed for test only
+#.include "../../graphics/cairo/buildlink3.mk"
 TEST_TARGET=	check
 
+BUILDLINK_API_DEPENDS.glib2+= glib2>=2.30.0
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libffi/buildlink3.mk"
 .include "../../lang/python/application.mk"

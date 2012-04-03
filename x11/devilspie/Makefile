@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.41 2011/01/13 13:39:42 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2012/03/03 00:14:08 wiz Exp $
 
 DISTNAME=		devilspie-0.22
-PKGREVISION=		6
+PKGREVISION=		9
 CATEGORIES=		x11
 MASTER_SITES=		http://www.burtonini.com/computing/
 
-MAINTAINER=		wiz@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.burtonini.com/blog/computers/devilspie/
 COMMENT=		Window-matching utility to customize window behavior
 LICENSE=		gnu-gpl-v2
@@ -19,6 +19,7 @@ GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 TEST_TARGET=		check
 INSTALLATION_DIRS=	share/doc/devilspie
+LDFLAGS.DragonFly=	-lX11
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/README \

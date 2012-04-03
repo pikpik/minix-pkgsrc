@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.104 2011/09/12 17:31:40 drochner Exp $
+# $NetBSD: Makefile,v 1.109 2012/01/17 14:54:19 drochner Exp $
 
-DISTNAME=	gnutls-2.12.11
+DISTNAME=	gnutls-2.12.17
 CATEGORIES=	security devel
 MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/ \
 		ftp://ftp.gnupg.org/gcrypt/gnutls/ \
@@ -49,6 +49,7 @@ post-install:
 
 .include "../../archivers/lzo/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/readline/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libcfg+/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"

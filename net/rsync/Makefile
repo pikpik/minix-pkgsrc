@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2011/04/08 12:36:24 taca Exp $
+# $NetBSD: Makefile,v 1.86 2011/10/03 09:49:56 tron Exp $
 
 DISTNAME=	rsync-3.0.9
 CATEGORIES=	net
@@ -27,7 +27,7 @@ TEST_TARGET=		test
 
 PKG_SYSCONFSUBDIR=	rsync
 
-RCD_SCRIPTS=            rsyncd
+RCD_SCRIPTS=		rsyncd
 RCD_SCRIPT_SRC.rsyncd=	files/rsyncd.sh
 
 SUBST_CLASSES+=		paths

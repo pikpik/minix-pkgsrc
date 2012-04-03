@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2009/12/15 21:30:52 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/01/26 02:45:44 sbd Exp $
 #
 
 PKGNAME=		akode-plugins-ffmpeg-${AKODE_VERSION}
-PKGREVISION=		1
+PKGREVISION=		3
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		FFMPEG decoder plugin for akode framework
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	--with-ffmpeg
 
 do-install:
 	cd ${WRKSRC}/akode/plugins/ffmpeg_decoder && ${SETENV} ${MAKE_ENV} \
-		${MAKE} prefix=${DESTDIR}${PREFIX} install
+		${MAKE} DESTDIR=${DESTDIR} install
 
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../devel/libltdl/buildlink3.mk"

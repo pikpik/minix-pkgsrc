@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/12/30 13:19:39 obache Exp $
+# $NetBSD: Makefile,v 1.21 2010/02/12 14:42:45 joerg Exp $
 #
 
 DISTNAME=	depot-5.14
@@ -11,6 +11,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Maps several separate packages into a tree without merging them
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+MAKE_JOBS_SAFE=	no
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	lex yacc

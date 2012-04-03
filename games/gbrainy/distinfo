@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.23 2011/07/12 13:44:35 wiz Exp $
+$NetBSD: distinfo,v 1.26 2011/11/29 20:52:07 wiz Exp $
 
-SHA1 (gbrainy-2.01.tar.gz) = d42bf155f6d22f4eadc0a749d3c62478a9f383d2
-RMD160 (gbrainy-2.01.tar.gz) = bef43a73e673373636b8b6b4cf993e1f793d2276
-Size (gbrainy-2.01.tar.gz) = 2331026 bytes
+SHA1 (gbrainy-2.1.2.tar.gz) = 4e7a6fa275d7db67c05fba1b990eb9614434b2e4
+RMD160 (gbrainy-2.1.2.tar.gz) = f9308115d5dc7358e7fcf9d95320ec0cb84906a2
+Size (gbrainy-2.1.2.tar.gz) = 2559136 bytes

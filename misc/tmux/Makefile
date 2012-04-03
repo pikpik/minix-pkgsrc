@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2011/02/28 14:52:57 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2011/10/25 14:55:49 shattered Exp $
 
-DISTNAME=	tmux-1.5
+DISTNAME=	tmux-1.6
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tmux/}
 
@@ -15,5 +15,6 @@ GNU_CONFIGURE=	yes
 USE_TERMINFO=	yes
 
 .include "../../devel/libevent/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libevent+=	libevent>=1.1b
 .include "../../mk/terminfo.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

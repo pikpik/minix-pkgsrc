@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.99 2011/09/12 10:57:09 joerg Exp $
+# $NetBSD: Makefile,v 1.106 2012/03/20 10:28:29 markd Exp $
 #
 
 DISTNAME=	amarok-${VERS}
-VERS=		2.4.0
-PKGREVISION=	3
+VERS=		2.5.0
+PKGREVISION=	1
 CATEGORIES=	audio multimedia
 MASTER_SITES=	ftp://ftp.kde.org/pub/kde/stable/amarok/${VERS}/src/
 EXTRACT_SUFX=	.tar.bz2
@@ -18,15 +18,16 @@ DEPENDS+=	moodbar-[0-9]*:../../audio/moodbar
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_CMAKE=	yes
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	msgfmt pkg-config
+USE_TOOLS+=	msgfmt pkg-config perl:run
 
 CMAKE_ARGS+=	-DMYSQL_INCLUDE_DIR:PATH=${BUILDLINK_PREFIX.mysql-client}/include/mysql
 CMAKE_ARGS+=	-DMYSQL_EMBEDDED_LIBRARIES:PATH=${BUILDLINK_PREFIX.mysql-server}/lib/mysql/libmysqld.a
 CMAKE_ARGS+=	-DMYSQL_EMBEDDED_FOUND:BOOL=TRUE
 CMAKE_ARGS+=	-DHAVE_MYSQL_OPT_EMBEDDED_CONNECTION:BOOL=TRUE
 CMAKE_ARGS+=	-DMYSQL_LIBRARIES:PATH=${BUILDLINK_PREFIX.mysql-client}/lib/mysql/libmysqlclient.so
+
+REPLACE_PERL+=	src/kconf_update/amarok-2.4.1-tokens_syntax_update.pl
 
 SUBST_CLASSES+=		mysql
 SUBST_STAGE.mysql=	post-patch
@@ -55,6 +56,7 @@ SUBST_SED.mysql+=	-e s:@@WLR@@:${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.mysql-se
 BUILDLINK_API_DEPENDS.taglib+=	taglib>=1.6nb1
 .include "../../audio/taglib/buildlink3.mk"
 .include "../../audio/taglib-extras/buildlink3.mk"
+.include "../../devel/qjson/buildlink3.mk"
 .include "../../devel/qtscriptgenerator/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../meta-pkgs/kde4/kde4.mk"
@@ -63,7 +65,7 @@ BUILDLINK_API_DEPENDS.taglib+=	taglib>=1.6nb1
 .include "../../security/qca2/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 # for plasma
-.include "../../x11/kdebase-workspace4/buildlink3.mk"
+.include "../../x11/kde-workspace4/buildlink3.mk"
 BUILDLINK_API_DEPENDS.kdelibs+=	kdelibs4>=4.5.0
 .include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

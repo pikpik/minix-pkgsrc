@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2010/08/21 16:33:41 seb Exp $
+# $NetBSD: Makefile,v 1.18 2012/01/31 07:44:45 sno Exp $
 
-DISTNAME=	ExtUtils-ParseXS-3.03
+DISTNAME=	ExtUtils-ParseXS-3.15
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5epx
 CATEGORIES=	devel perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/S/SM/SMUELLER/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=ExtUtils/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/ExtUtils-ParseXS/

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.65 2011/04/22 13:43:39 obache Exp $
+# $NetBSD: Makefile,v 1.72 2012/02/29 16:32:22 hans Exp $
 
 DISTNAME=	wesnoth-1.8.6
+PKGREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wesnoth/}
 EXTRACT_SUFX=	.tar.bz2
@@ -22,6 +23,7 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-boost=${BUILDLINK_PREFIX.boost-libs}
 
 UNLIMIT_RESOURCES+=	datasize
+UNLIMIT_RESOURCES+=	stacksize
 
 REPLACE_PERL+=		utils/wesnothd.pl
 USE_TOOLS+=		perl:run msgfmt

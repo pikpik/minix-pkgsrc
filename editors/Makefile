@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.144 2011/05/07 20:02:42 ryoon Exp $
+# $NetBSD: Makefile,v 1.148 2012/03/21 22:45:34 markd Exp $
 #
 
 COMMENT=	Editors
 
+SUBDIR+=	OmegaT
 SUBDIR+=	Sigil
 SUBDIR+=	TeXmacs
 SUBDIR+=	TeXmacs-devel
@@ -50,8 +51,10 @@ SUBDIR+=	jde
 SUBDIR+=	jed
 SUBDIR+=	joe
 SUBDIR+=	jove
+SUBDIR+=	kate
 SUBDIR+=	kdissert
 SUBDIR+=	kile
+SUBDIR+=	kile-kde3
 SUBDIR+=	leafpad
 SUBDIR+=	leim20
 SUBDIR+=	leim21
@@ -119,6 +122,7 @@ SUBDIR+=	ted-pl
 SUBDIR+=	ted-pt
 SUBDIR+=	ted-sv
 SUBDIR+=	texmaker
+SUBDIR+=	texworks
 SUBDIR+=	tomboy
 SUBDIR+=	uemacs
 SUBDIR+=	ve

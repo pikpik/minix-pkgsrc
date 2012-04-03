@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/02/05 22:20:42 sbd Exp $
 #
 
 DISTNAME=	pd-0.43-0.src
+PKGREVISION=	1
 PKGNAME=	${DISTNAME:S/-0.src/.0/}
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pure-data/}
@@ -21,6 +22,9 @@ USE_TOOLS+=	autoconf automake gmake msgfmt pkg-config
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES
+REPLACE_SH=	tcl/pd-gui.tcl
+
+LDFLAGS.SunOS+=		-lsocket -lnsl
 
 PKGCONFIG_OVERRIDE+=	pd.pc.in
 
@@ -54,6 +58,18 @@ SUBST_FILES.doc+=	man/pd.1
 SUBST_FILES.doc+=	src/s_main.c
 SUBST_FILES.doc+=	tcl/pd_menucommands.tcl
 SUBST_FILES.doc+=	tcl/pd_menus.tcl
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+EXTERNAL_EXTENSION=	d_fat
+.elif ${OPSYS} == "Linux"
+EXTERNAL_EXTENSION=	pd_linux
+.else
+EXTERNAL_EXTENSION=	# empty
+.endif
+
+PLIST_SUBST+=		EXTERNAL_EXTENSION=${EXTERNAL_EXTENSION:Q}
 
 pre-configure:
 	cd ${WRKSRC} && ./autogen.sh

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2007/02/22 19:26:51 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2011/12/09 14:36:35 drochner Exp $
 #
 
 DISTNAME=	yrolo-1.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	misc
 MASTER_SITES=	http://www.muquit.com/muquit/software/yrolo/
 
@@ -14,6 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/yrolo1.1
 USE_IMAKE=	yes
+LDFLAGS+=	-lX11
 
 .include "../../mk/motif.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

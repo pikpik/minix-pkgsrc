@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.47 2011/04/25 20:58:24 asau Exp $
+# $NetBSD: Makefile,v 1.49 2012/01/19 10:17:56 fhajny Exp $
 
 DISTNAME=		otp_src_${DIST_VERSION_MAJOR}${DIST_VERSION_MINOR:D-${DIST_VERSION_MINOR}}
 PKGNAME=		erlang-${ERLANG_VERSION}
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		http://www.erlang.org/download/
 
@@ -18,7 +19,7 @@ MAKE_JOBS_SAFE=		no
 GNU_CONFIGURE=		yes
 USE_GNU_CONFIGURE_HOST=	${USE_CROSS_COMPILE}
 OVERRIDE_DIRDEPTH=	4
-USE_TOOLS+=		gmake perl:run
+USE_TOOLS+=		gmake perl:run flex
 
 CONFIGURE_ARGS+=	--with-ssl=${BUILDLINK_PREFIX.openssl}
 

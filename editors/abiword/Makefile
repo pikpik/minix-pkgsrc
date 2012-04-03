@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.128 2011/04/22 13:43:24 obache Exp $
+# $NetBSD: Makefile,v 1.132 2012/02/06 12:39:59 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
-PKGREVISION=		3
+PKGREVISION=		7
 
 COMMENT=	Open Source cross-platform word processor
 
@@ -13,6 +13,7 @@ CONFLICTS=	abiword-personal-[0-9]* abiword2-[0-9]*
 USE_TOOLS+=		perl
 CONFIGURE_ARGS+=	--disable-builtin-plugins
 CONFIGURE_ARGS+=	--enable-plugins=""
+CONFIGURE_ARGS+=	--without-gnomevfs
 
 REPLACE_SH+=	${WRKDIR}/${DISTNAME}/abiword-docs/make-html.sh
 REPLACE_PERL+=	user/wp/scripts/abw2html.pl

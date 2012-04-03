@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.138 2011/07/08 17:47:58 wiz Exp $
+# $NetBSD: Makefile,v 1.147 2012/02/20 22:42:29 wiz Exp $
 
-DISTNAME=	libpng-1.5.5
+DISTNAME=	libpng-1.5.10
 PKGNAME=	${DISTNAME:S/lib//}
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libpng/} \
@@ -10,7 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.libpng.org/pub/png/libpng.html
 COMMENT=	Library for manipulating PNG images
-LICENSE=	png-license
+LICENSE=	zlib
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -19,6 +19,8 @@ GNU_CONFIGURE=	yes
 PKGCONFIG_OVERRIDE=	scripts/libpng.pc.in libpng.pc.in
 TEST_TARGET=	check
 USE_LIBTOOL=	yes
+
+CPPFLAGS+=	-DPNG_USER_CHUNK_CACHE_MAX=128 -DPNG_USER_CHUNK_MALLOC_MAX=8000000
 
 .include "../../mk/bsd.prefs.mk"
 # keep this in sync with the same code in buildlink3.mk

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2009/02/10 00:19:50 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2012/01/02 12:15:48 joerg Exp $
 #
 
-DISTNAME=	port2pkg-1.11
-PKGREVISION=	8
+DISTNAME=	port2pkg-1.13
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -32,7 +31,6 @@ REPLACE_PERL+=		port2pkg.pl
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/port2pkg.pl ${DESTDIR}${PREFIX}/bin/port2pkg
-	${INSTALL_MAN} ${WRKSRC}/port2pkg.0 ${DESTDIR}${PREFIX}/${PKGMANDIR}/cat1
 	${INSTALL_MAN} ${WRKSRC}/port2pkg.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../mk/bsd.pkg.mk"

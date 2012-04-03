@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2011/07/04 22:08:01 jym Exp $
+# $NetBSD: Makefile,v 1.9 2012/03/03 00:13:01 wiz Exp $
 
-DISTNAME=		TeXmacs-1.0.7.12-src
+DISTNAME=		TeXmacs-1.0.7.14-src
 PKGNAME=		${DISTNAME:S/-src//}
+PKGREVISION=		4
 CATEGORIES=		editors
 MASTER_SITES=		ftp://ftp.texmacs.org/TeXmacs/tmftp/source/
 
@@ -51,7 +52,7 @@ REPLACE_PERL+=		plugins/asymptote/bin/tm_asy2
 
 pre-install:
 	${RM} -f ${WRKSRC}/TeXmacs/doc/devel/format/.log
-	${FIND} ${WRKSRC}/plugins/ -name '*.orig' | ${XARGS} ${RM}
+	${FIND} ${WRKSRC}/plugins/ -name '*.orig' | ${XARGS} ${RM} -f
 
 # just a helper script, not worth a full perl dependency
 CHECK_INTERPRETER_SKIP=	libexec/TeXmacs/bin/bbox_add.pl

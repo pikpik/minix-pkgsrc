@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2009/08/19 08:41:45 ghen Exp $
+# $NetBSD: Makefile,v 1.5 2010/06/20 11:06:03 wiz Exp $
 #
 
 DISTNAME=	915resolution-0.5.3
 CATEGORIES=	sysutils
-MASTER_SITES=	${HOMEPAGE}
+MASTER_SITES=	${HOMEPAGE:Q}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.geocities.com/stomljen/
+HOMEPAGE=	http://915resolution.mango-lang.org/
 COMMENT=	BIOS VESA resolution utility for 8XX/9XX Intel chips
+LICENSE=	public-domain
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

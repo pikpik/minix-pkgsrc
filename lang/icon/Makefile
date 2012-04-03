@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2009/03/07 01:31:45 reed Exp $
+# $NetBSD: Makefile,v 1.48 2011/03/01 10:08:26 wiz Exp $
 
 DISTNAME=		icon.v943src
 PKGNAME=		icon-9.4.3
@@ -46,9 +46,9 @@ NAME=	linux
 .elif ${OPSYS} == "SunOS"
 
 .  if !empty(CC_VERSION:M*gcc*)
-NAME=	sun_gcc
+NAME=	solaris
 .  elif !empty(CC_VERSION:MSun)
-NAME=	sun_sunc
+NAME=	solaris_sunc
 .  else
 PKG_FAIL_REASON+=	"${PKGNAME} does not know about "${CC_VERSION:Q}
 .  endif

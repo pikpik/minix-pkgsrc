@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.5 2010/12/23 11:44:55 dsainty Exp $
+# $NetBSD: Makefile,v 1.8 2011/11/01 06:02:26 sbd Exp $
 #
 
-DISTNAME=	podofo-0.7.0
-PKGREVISION=	3
+DISTNAME=	podofo-0.9.1
+PKGREVISION=	2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=podofo/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://podofo.sourceforge.net/
 COMMENT=	Library to work with the PDF file format
-#LICENSE=	gnu-lgpl-v? AND gnu-gpl-v?
+LICENSE=	gnu-lgpl-v2 AND gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -28,6 +28,7 @@ CXXFLAGS+=	-fPIC
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,7 @@
+@comment $NetBSD$
+include/quvi/llst.h
+include/quvi/net.h
+include/quvi/quvi.h
+lib/libquvi.la
+lib/pkgconfig/libquvi.pc
+man/man3/libquvi.3

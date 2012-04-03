@@ -1,12 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/08/09 18:59:23 gls Exp $
+# $NetBSD: Makefile,v 1.8 2011/12/06 19:42:37 gls Exp $
 
-DISTNAME=	moodle-2.1.1
-PKGREVISION=	1
+DISTNAME=	moodle-2.1.4
 CATEGORIES=	www
-MASTER_SITES=	http://download.moodle.org/stable21/ \
-		http://download2.moodle.org/stable21/ \
-		http://download3.moodle.org/stable21/ \
-		http://download4.moodle.org/stable21/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=moodle/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	wenheping@gmail.com
@@ -42,7 +38,7 @@ APACHE_USER?=		www
 APACHE_GROUP?=		www
 BUILD_DEFS+=		APACHE_USER APACHE_GROUP
 
-PKG_SYSCONFSUBDIR?=	httpd
+PKG_SYSCONFSUBDIR=	httpd
 MESSAGE_SUBST+=		PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
 
 CONF_FILES=		${PREFIX}/${EGDIR}/moodle.conf \

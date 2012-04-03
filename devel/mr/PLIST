@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2011/06/14 21:58:11 schmonz Exp $
 bin/mr
 bin/webcheckout
 share/examples/mr/mrconfig
@@ -7,3 +7,4 @@ share/mr/git-fake-bare
 share/mr/git-subtree
 share/mr/git-svn
 share/mr/unison
+share/mr/vcsh

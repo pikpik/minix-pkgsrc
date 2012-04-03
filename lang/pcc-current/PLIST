@@ -1,7 +1,8 @@
-@comment $NetBSD: PLIST,v 1.2 2007/09/15 10:02:06 agc Exp $
+@comment $NetBSD: PLIST,v 1.2 2012/02/08 11:23:53 plunky Exp $
 bin/pcc
 libexec/ccom
 libexec/cpp
-man/man1/pcc.1
-man/man1/cpp.1
+libexec/cxxcom
 man/man1/ccom.1
+man/man1/cpp.1
+man/man1/pcc.1

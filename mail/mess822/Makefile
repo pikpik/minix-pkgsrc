@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2010/03/15 17:30:02 schmonz Exp $
+# $NetBSD: Makefile,v 1.19 2011/06/07 03:24:32 schmonz Exp $
 #
 
 DISTNAME=		mess822-0.58
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		mail
 MASTER_SITES=		http://cr.yp.to/software/
 

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.41 2011/09/12 20:14:06 bsiegert Exp $
+# $NetBSD: Makefile,v 1.45 2012/02/15 12:21:40 drochner Exp $
 
 .include "dist.mk"
 
 PKGNAME=	python26-${PY_DISTVERSION}
+PKGREVISION=	3
 CATEGORIES=	lang python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -55,12 +56,6 @@ LIBS.SunOS+=		-lrt
 
 PY_VER_SUFFIX=		2.6
 
-PLIST_SRC=	${.CURDIR}/../../lang/python26/PLIST.common
-.if exists(${.CURDIR}/../../lang/python26/PLIST.${OPSYS})
-PLIST_SRC+=	${.CURDIR}/../../lang/python26/PLIST.${OPSYS}
-.endif
-PLIST_SRC+=	${.CURDIR}/../../lang/python26/PLIST.common_end
-
 .if ${OPSYS} == "NetBSD"
 PRIVILEGED_STAGES+=	clean
 # XXX work around a botched autoconf check which ignores libintl
@@ -81,6 +76,19 @@ PY_PLATNAME=	hp-ux11
 PY_PLATNAME=	${LOWER_OPSYS}${OS_VERSION:C/\..*//}
 .endif
 PLIST_SUBST+=	PY_PLATNAME=${PY_PLATNAME:Q}
+
+# PLIST to match ${WRKSRC}/Lib/plat-linux3
+.if ${PY_PLATNAME} == "linux3"
+PL_OPSYS=${OPSYS}3
+.else
+PL_OPSYS=${OPSYS}
+.endif
+
+PLIST_SRC=	${.CURDIR}/../../lang/python26/PLIST.common
+.if exists(${.CURDIR}/../../lang/python26/PLIST.${PL_OPSYS})
+PLIST_SRC+=	${.CURDIR}/../../lang/python26/PLIST.${PL_OPSYS}
+.endif
+PLIST_SRC+=	${.CURDIR}/../../lang/python26/PLIST.common_end
 
 .if (${MACHINE_ARCH} == "alpha") || (${MACHINE_ARCH} == "amd64") || \
     (${MACHINE_ARCH} == "sparc64") || (${MACHINE_ARCH} == "x86_64") || \

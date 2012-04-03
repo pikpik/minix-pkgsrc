@@ -24,9 +24,9 @@ share/gtk-doc/html/totem-pl-parser/right.png
 share/gtk-doc/html/totem-pl-parser/style.css
 share/gtk-doc/html/totem-pl-parser/totem-pl-parser-TotemDisc.html
 share/gtk-doc/html/totem-pl-parser/totem-pl-parser-TotemPlPlaylistIter.html
-share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp
 share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp2
 share/gtk-doc/html/totem-pl-parser/up.png
+share/locale/af/LC_MESSAGES/totem-pl-parser.mo
 share/locale/am/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ar/LC_MESSAGES/totem-pl-parser.mo
 share/locale/as/LC_MESSAGES/totem-pl-parser.mo

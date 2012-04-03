@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.45 2011/01/13 13:38:24 wiz Exp $
+# $NetBSD: Makefile,v 1.50 2012/03/03 00:13:20 wiz Exp $
 #
 
 DISTNAME=	xzgv-0.9.1
-PKGREVISION=	3
+PKGREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xzgv/}
 
 MAINTAINER=	shattered@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/xzgv
 COMMENT=	Image viewer
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -16,6 +17,7 @@ USE_X11BASE=		yes
 USE_TOOLS+=		gmake makeinfo pkg-config gawk
 INFO_FILES=		yes
 INSTALLATION_DIRS=	bin ${PKGINFODIR} ${PKGMANDIR}/man1
+LDFLAGS+=		-lm -lX11	# explicitly list for ld v2.22
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/xzgv ${DESTDIR}${PREFIX}/bin

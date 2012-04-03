@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.25 2011/01/13 13:37:56 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2011/09/04 08:54:02 obache Exp $
 #
 
 DISTNAME=	aview-1.3.0rc1
 PKGNAME=	aview-1.3.0.1
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	graphics converters
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aa-project/}
 

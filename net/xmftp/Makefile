@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2010/02/11 23:21:26 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2011/12/09 14:36:33 drochner Exp $
 #
 
 DISTNAME=	xmftp-1.0.4
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	http://viraj.org/old/xmftp/
 
@@ -17,6 +17,8 @@ USE_X11BASE=	yes
 USE_TOOLS+=	gmake
 
 INSTALLATION_DIRS=	bin share/doc/xmftp
+
+LDFLAGS.SunOS+=	-lsocket -lnsl
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xmftp ${DESTDIR}${PREFIX}/bin

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2011/04/22 13:42:09 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/03/03 00:14:01 wiz Exp $
 #
 
 DISTNAME=	raptor-1.4.21
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.librdf.org/source/
 
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
+
+CONFLICTS=	raptor2-[0-9]*
 
 PKGCONFIG_OVERRIDE+=	raptor.pc.in
 CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc

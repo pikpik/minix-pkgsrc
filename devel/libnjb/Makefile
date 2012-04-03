@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/02/15 16:38:15 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/11/26 04:39:43 sbd Exp $
 #
 
 DISTNAME=		libnjb-2.2.6
+PKGREVISION=		2
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=libnjb/}
 
@@ -19,5 +20,7 @@ USE_LANGUAGES+=	c c++
 
 PKGCONFIG_OVERRIDE+=	libnjb.pc.in
 
+.include "../../mk/curses.buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
 .include "../../devel/libusb/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

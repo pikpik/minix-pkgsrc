@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2011/04/22 14:52:18 spz Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/06 12:41:18 wiz Exp $
 #
 
-DISTNAME=		xymon-4.3.2
-PKGNAME=		xymon-4.3.2
-PKGREVISION=		1
+DISTNAME=		xymon-4.3.5
+PKGREVISION=		5
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xymon/}
 
@@ -95,21 +94,14 @@ MESSAGE_SUBST+=		SECCGIDIR=${SECCGIDIR}
 EVAL_PREFIX+=		PREFIX.fping=fping
 
 CONFIGURE_ARGS+=	"--server"
+CONFIGURE_ARGS+=	"--rrdinclude" "${BUILDLINK_PREFIX.rrdtool}/include"
+CONFIGURE_ARGS+=	"--rrdlib" "${BUILDLINK_PREFIX.rrdtool}/lib"
+CONFIGURE_ARGS+=	"--pngconfig" "${BUILDLINK_PREFIX.png}/bin/libpng-config"
+CONFIGURE_ARGS+=	"--pcreinclude" "${BUILDLINK_PREFIX.pcre}/include"
+CONFIGURE_ARGS+=	"--pcrelib" "${BUILDLINK_PREFIX.pcre}/lib"
+CONFIGURE_ARGS+=	"--fping" "${PREFIX.fping}/sbin/fping"
 
-CONFIGURE_ENV+=		USERFPING=${PREFIX.fping}/sbin/fping
 CONFIGURE_ENV+=		USEXYMONPING=n
-CONFIGURE_ENV+=		RRDINC=${BUILDLINK_PREFIX.rrdtool}/include
-CONFIGURE_ENV+=		RRDLIB=${BUILDLINK_PREFIX.rrdtool}/lib/librrd.a
-CONFIGURE_ENV+=		PNGLIB=${BUILDLINK_PREFIX.png}/lib/libpng.a
-CONFIGURE_ENV+=		ENABLESSL=y
-CONFIGURE_ENV+=		OSSLINC=${BUILDLINK_PREFIX.openssl}/include
-CONFIGURE_ENV+=		OSSLLIB=${BUILDLINK_PREFIX.openssl}/lib
-CONFIGURE_ENV+=		ENABLELDAP=y
-CONFIGURE_ENV+=		ENABLELDAPSSL=y
-CONFIGURE_ENV+=		LDAPINC=${BUILDLINK_PREFIX.openldap-client}/include
-CONFIGURE_ENV+=		LDAPLIB=${BUILDLINK_PREFIX.openldap-client}/lib
-CONFIGURE_ENV+=		PCREINC=${BUILDLINK_PREFIX.pcre}/include
-CONFIGURE_ENV+=		PCRELIB=${BUILDLINK_PREFIX.pcre}/lib
 CONFIGURE_ENV+=		XYMONHOSTNAME=${XYMONSERVERNAME:Q}
 CONFIGURE_ENV+=		XYMONHOSTIP=${XYMONSERVERIP:Q}
 CONFIGURE_ENV+=		XYMONUSER=${XYMONUSER:Q}
@@ -150,6 +142,7 @@ USE_TOOLS+=	tr:run		wc:run		bash:run
 MAKE_DIRS+=		${XYMONTOPDIR}
 MAKE_DIRS+=		${XYMONHOME}
 
+
 OWN_DIRS_PERMS+=	${XYEXTDIR} ${XYMONUSER} ${XYMONGROUP} 0755
 OWN_DIRS_PERMS+=	${XYMONLOGDIR} ${XYMONUSER} ${XYMONGROUP} 0755
 OWN_DIRS_PERMS+=	${XYTMPDIR} ${XYMONUSER} ${XYMONGROUP} 0755
@@ -168,7 +161,7 @@ OWN_DIRS_PERMS+=	${XYWWWDIR}/${dir} ${XYMONUSER} ${XYMONGROUP} 0755
 OWN_DIRS_PERMS+=	${XYWWWDIR}/rep ${XYMONUSER} ${APACHE_GROUP} 0755
 OWN_DIRS_PERMS+=	${XYWWWDIR}/snap ${XYMONUSER} ${APACHE_GROUP} 0755
 
-MAKE_DIRS_PERMS+=	${SECCGIDIR} root ${XYMONGROUP} 0000
+OWN_DIRS_PERMS+=	${SECCGIDIR} ${XYMONUSER} ${XYMONGROUP} 0700
 
 # actual config files
 
@@ -186,6 +179,12 @@ CFILES2=		critical.cfg critical.cfg.bak
 CONF_FILES_PERMS+=	${EXAMPLEDIR}/${file} ${PKG_SYSCONFDIR.xymon}/${file} ${XYMONUSER} ${XYMONGROUP} 0664
 .endfor
 
+SECCGIFILES=		ackinfo.sh acknowledge.sh criticaleditor.sh
+SECCGIFILES+=		enadis.sh useradm.sh
+.for file in ${SECCGIFILES}
+SPECIAL_PERMS+=		${SECCGIDIR}/${file} ${XYMONUSER} ${XYMONGROUP} 0400
+.endfor
+
 MAKE_ENV+=		MAKE=${MAKE_PROGRAM:Q}
 MAKE_ENV+=		PKGDIR=${PREFIX}
 MAKE_ENV+=		INSTALLROOT=${DESTDIR}
@@ -199,9 +198,8 @@ post-install:
 	chmod 0644 ${DESTDIR}${EXAMPLEDIR}/www/menu/${file}
 .endfor
 
+.include "options.mk"
 .include "../../databases/rrdtool/buildlink3.mk"
-.include "../../databases/openldap-client/buildlink3.mk"
-.include "../../security/openssl/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../mk/apache.mk"

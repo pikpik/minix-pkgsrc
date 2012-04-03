@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.51 2011/04/04 08:51:34 wiz Exp $
+# $NetBSD: Makefile,v 1.58 2012/02/06 12:39:28 wiz Exp $
 
-DISTNAME=		mpd-0.16.2
+DISTNAME=		mpd-0.16.6
 PKGNAME=		${DISTNAME:S/mpd/musicpd/}
-PKGREVISION=		1
+PKGREVISION=		3
 CATEGORIES=		audio
 #MASTER_SITES=		http://musicpd.org/uploads/files/
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=musicpd/}
@@ -21,6 +21,8 @@ GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES=		c c++
+
+CPPFLAGS.SunOS+=	-std=gnu99 -D_XOPEN_SOURCE=600 -D__EXTENSIONS__
 
 .include "options.mk"
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.54 2011/04/22 13:44:50 obache Exp $
+# $NetBSD: Makefile,v 1.55 2011/08/21 11:23:14 obache Exp $
 #
 
-DISTNAME=		intltool-0.41.1
+DISTNAME=		intltool-0.50.2
 CATEGORIES=		textproc devel gnome
-MASTER_SITES=		http://launchpad.net/intltool/trunk/${PKGVERSION_NOREV}/+download/
+MASTER_SITES=		https://launchpad.net/intltool/trunk/${PKGVERSION_NOREV}/+download/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://launchpad.net/intltool/
@@ -21,6 +21,9 @@ USE_TOOLS+=		gmake perl:run
 GNU_CONFIGURE=		YES
 CHECK_INTERPRETER_SKIP=	share/intltool/*.in
 TEST_TARGET=		check
+
+# due to https
+FETCH_USING=		curl
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"

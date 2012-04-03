@@ -1,52 +1,24 @@
-# $NetBSD: Makefile,v 1.11 2010/02/16 14:51:26 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2012/01/10 01:03:28 schmonz Exp $
 #
 
-DISTNAME=	xapian-core-1.2.2
-PKGNAME=	${DISTNAME:S/-core//}
-CATEGORIES=	textproc
-MASTER_SITES=	http://oligarchy.co.uk/xapian/1.2.2/
+DISTNAME=		xapian-core-1.2.8
+PKGNAME=		${DISTNAME:S/-core//}
+CATEGORIES=		textproc
+MASTER_SITES=		http://oligarchy.co.uk/xapian/1.2.8/
 
-MAINTAINER=	schmonz@NetBSD.org
-HOMEPAGE=	http://xapian.org/
-COMMENT=	Search engine based on Probabilistic Information Retrieval
-LICENSE=	gnu-gpl-v2
+MAINTAINER=		schmonz@NetBSD.org
+HOMEPAGE=		http://xapian.org/
+COMMENT=		Probabilistic Information Retrieval search engine
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=	yes
-USE_LIBTOOL=	yes
-USE_LANGUAGES=	c c++
+GNU_CONFIGURE=		yes
+USE_LIBTOOL=		yes
+USE_LANGUAGES=		c c++
 
-TEST_TARGET=	check
+TEST_TARGET=		check
 
-.include "../../mk/bsd.prefs.mk"
-
-PKG_OPTIONS_VAR=	PKG_OPTIONS.xapian
-.if ${OPSYS} == "Darwin"
-PKG_SUPPORTED_OPTIONS=	xapian-flint-backend xapian-quartz-backend
-PKG_SUGGESTED_OPTIONS=	xapian-flint-backend xapian-quartz-backend
-.else
-PKG_SUPPORTED_OPTIONS=	xapian-flint-backend
-PKG_SUGGESTED_OPTIONS=	xapian-flint-backend
-.endif
-
-.include "../../mk/bsd.options.mk"
-
-PLIST_VARS+=		quartz
-.if !empty(PKG_OPTIONS:Mxapian-quartz-backend)
-CONFIGURE_ARGS+=	--enable-backend-quartz
-PLIST.quartz=		yes
-.else
-CONFIGURE_ARGS+=	--disable-backend-quartz
-.endif
-
-PLIST_VARS+=		flint
-.if !empty(PKG_OPTIONS:Mxapian-flint-backend)
-CONFIGURE_ARGS+=	--enable-backend-flint
-PLIST.flint=		yes
-.else
-CONFIGURE_ARGS+=	--disable-backend-flint
-.endif
-
+.include "../../devel/libuuid/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

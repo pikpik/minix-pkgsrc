@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.51 2010/11/14 14:05:57 obache Exp $
+# $NetBSD: Makefile,v 1.58 2012/02/06 12:40:32 wiz Exp $
 
-DISTNAME=	pstoedit-3.50
-PKGREVISION=	3
+DISTNAME=	pstoedit-3.60
+PKGREVISION=	1
 CATEGORIES=	converters graphics print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pstoedit/}
 
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
-USE_TOOLS+=	gs:run
+USE_TOOLS+=	gs:run pkg-config
 
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
@@ -29,7 +29,7 @@ CONFIGURE_ENV+=	ac_cv_path_GS=${TOOLS_PATH.gs}
 CONFIGURE_ARGS+=--without-emf
 
 CONFIGURE_ARGS+=--datadir=${PREFIX}/share
-CONFIGURE_ARGS+=--libdir=${PREFIX}/lib/pstoedit	# plugin dir -- unused for now
+GNU_CONFIGURE_LIBSUBDIR=pstoedit	# plugin dir -- unused for now
 BUILD_TARGET=
 
 LIBS.SunOS+=	-ldl

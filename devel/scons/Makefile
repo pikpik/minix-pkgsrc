@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/06/19 11:33:46 sborrill Exp $
+# $NetBSD: Makefile,v 1.16 2012/02/02 11:49:55 obache Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -7,5 +7,6 @@ CONFLICTS=		scons-devel-[0-9]*
 .include "../../devel/scons/Makefile.common"
 
 SCONS_VERSION=		1.3.1
+PKGREVISION=		2
 
 .include "../../mk/bsd.pkg.mk"

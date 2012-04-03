@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2011/01/13 13:36:50 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/02/06 12:41:40 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -7,7 +7,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 XFCE4_VERSION=	0.4.2
 
 DISTNAME=	xfce4-systemload-plugin-${XFCE4_VERSION}
-PKGREVISION=	6
+PKGREVISION=	9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-systemload-plugin/
 COMMENT=	Xfce system load plugin

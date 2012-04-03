@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2010/02/10 19:17:47 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2010/02/20 14:58:45 joerg Exp $
 #
 
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

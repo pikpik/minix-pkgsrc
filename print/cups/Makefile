@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.179 2011/09/16 13:44:44 christos Exp $
+# $NetBSD: Makefile,v 1.189 2012/02/07 23:16:57 sbd Exp $
 #
 # The CUPS author is very good about taking back changes into the main
 # CUPS distribution.  The correct place to send patches or bug-fixes is:
@@ -6,7 +6,7 @@
 
 DISTNAME=	cups-${DIST_VERS}-source
 PKGNAME=	cups-${DIST_VERS:S/-/./g}
-BASE_VERS=	1.4.8
+BASE_VERS=	1.5.2
 DIST_VERS=	${BASE_VERS}
 PKGREVISION=	1
 
@@ -33,7 +33,6 @@ USE_LANGUAGES=		c c++	# pdftops is a C++ application
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		aclocal autoconf automake gmake
 USE_LIBTOOL=		yes
-INSTALL_TARGET=		installcups
 # patch-a[jkl] were added for 2.60
 AUTOCONF_REQD=		2.60
 
@@ -65,19 +64,26 @@ CONFIGURE_ARGS+=	--without-python
 CONFIGURE_ARGS+=	--without-java
 CONFIGURE_ARGS+=	--disable-gssapi
 CONFIGURE_ARGS+=	--disable-gnutls
+CONFIGURE_ARGS+=	--disable-ldap
 
 CONFIGURE_ENV+=		DSOFLAGS=${LDFLAGS:M*:Q}
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=		LIBS_SSP=-lssp_nonshared
+LIBS.SunOS+=		-liconv
+.endif
+
 PLIST_VARS+=		notmac
 .if ${OPSYS} != "Darwin"
 PLIST.notmac=		yes
 .endif
 
-# CUPS_USER	username of the CUPS administrator
-# CUPS_GROUP	group of the CUPS administrator
+# CUPS_USER		user to run filter and CGI programs as
+# CUPS_GROUP		group to run filter and CGI programs as
+# CUPS_SYSTEM_GROUPS	group for system administration
 #
 CUPS_USER?=		lp
 CUPS_GROUP?=		lp
@@ -123,12 +129,6 @@ OWN_DIRS_PERMS+=	${CUPS_REQUESTS}/tmp ${REAL_ROOT_USER} ${CUPS_GROUP} 1770
 OWN_DIRS_PERMS+=	${CUPS_CACHE} ${REAL_ROOT_USER} ${CUPS_GROUP} 0775
 OWN_DIRS_PERMS+=	${CUPS_CACHE}/rss ${REAL_ROOT_USER} ${CUPS_GROUP} 0775
 
-.include "../../devel/zlib/buildlink3.mk"
-.include "../../mk/jpeg.buildlink3.mk"
-.include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/tiff/buildlink3.mk"
-.include "../../security/openssl/buildlink3.mk"
-
 SUBST_CLASSES+=		paths
 SUBST_FILES.paths=	${WRKDIR}/cups.pam
 SUBST_SED.paths+=	-e 's,@LOCALBASE@,${LOCALBASE},g'
@@ -148,7 +148,7 @@ SUBST_SED.piefix=	-e 's|@PIEFLAGS@||g'
 SUBST_STAGE.piefix=	post-patch
 .endif
 
-INSTALLATION_DIRS=	${DOCDIR} ${EGDIR} ${MIMEDIR}
+INSTALLATION_DIRS=	${DOCDIR} ${EGDIR} ${MIMEDIR} ${CUPS_CONFDIR}
 INSTALL_ENV+=		DSTROOT=${DESTDIR}
 
 pre-configure:
@@ -166,15 +166,20 @@ post-install:
 		${INSTALL_DATA} ${WRKSRC}/$${file}			\
 		     ${DESTDIR}${DOCDIR}/$${file}; \
 	done
-	set -e; cd ${WRKSRC}/conf; for file in cupsd.conf snmp.conf ; do \
-		${INSTALL_DATA} $${file} ${DESTDIR}${EGDIR}/$${file};	\
-	done
-	set -e; cd ${WRKSRC}/conf; for file in mime.convs mime.types; do \
-		${INSTALL_DATA} $${file} ${DESTDIR}${MIMEDIR}/$${file};	\
+	${RUN} for file in cupsd.conf snmp.conf ; do			\
+		${INSTALL_DATA} ${WRKSRC}/conf/$${file}			\
+			${DESTDIR}${EGDIR}/$${file};			\
 	done
 .if !empty(PKG_OPTIONS:Mpam)
 	${INSTALL_DATA} ${WRKDIR}/cups.pam ${DESTDIR}${EGDIR}
 .endif
 
+.include "../../converters/libiconv/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
+.include "../../graphics/tiff/buildlink3.mk"
+.include "../../mk/jpeg.buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../print/libpaper/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

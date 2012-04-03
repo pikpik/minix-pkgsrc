@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.24 2011/01/13 13:39:34 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/03/03 00:14:04 wiz Exp $
 #
 
 DISTNAME=	OroboROX-0.9.8
 PKGNAME=	oroborox-0.9.8
-PKGREVISION=	9
+PKGREVISION=	13
 CATEGORIES=	wm
-MASTER_SITES=	http://roxos.sunsite.dk/dev-contrib/guido/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	rxg@NetBSD.org
-HOMEPAGE=	http://roxos.sunsite.dk/dev-contrib/guido/
+HOMEPAGE=	http://roscidus.com/desktop/OroboROX
 COMMENT=	The lightweight Window Manager for the ROX Desktop
 
 PKG_DESTDIR_SUPPORT=	user-destdir

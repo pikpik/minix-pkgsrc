@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1.1.1 2008/02/26 11:47:35 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2009/03/20 19:24:43 joerg Exp $
 
 BUILDLINK_TREE+=	libotf
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	libotf
 LIBOTF_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libotf+=	libotf>=0.9.7
+BUILDLINK_ABI_DEPENDS.libotf?=	libotf>=0.9.12nb1
 BUILDLINK_PKGSRCDIR.libotf?=	../../graphics/libotf
 
 .include "../../graphics/freetype2/buildlink3.mk"

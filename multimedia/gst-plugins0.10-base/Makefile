@@ -1,8 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2011/04/24 15:31:09 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/02/28 18:28:14 drochner Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
+PKGREVISION=1
+
 #CONFIGURE_ARGS+= --disable-silent-rules
 
 COMMENT+=		base plugins

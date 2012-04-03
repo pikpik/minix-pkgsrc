@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/10/06 23:46:29 rillig Exp $
+@comment $NetBSD: PLIST,v 1.4 2012/02/22 15:39:44 wiz Exp $
 bin/checkperms
 man/cat1/checkperms.0
 man/man1/checkperms.1

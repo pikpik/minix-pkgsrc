@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/02/10 15:30:27 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/11 13:01:54 joerg Exp $
 #
 
 VERS=		0.2.5
@@ -15,6 +15,8 @@ COMMENT=	Creole <-> HTML converter
 LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_LANGUAGES=	#none
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"

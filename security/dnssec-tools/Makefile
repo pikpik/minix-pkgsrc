@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/08/14 14:42:45 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/03/08 01:14:24 joerg Exp $
 #
 
-DISTNAME=	dnssec-tools-1.10
-PKGREVISION=	2
+DISTNAME=	dnssec-tools-1.12.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.dnssec-tools.org/download/
 
@@ -52,6 +51,16 @@ CONF_FILES+=	${EGDIR}/root.hints ${PKG_SYSCONFDIR}/root.hints
 INSTALLATION_DIRS=	${EGDIR}
 
 .include "options.mk"
+
+.if ${OPSYS} == "NetBSD" && exists(/usr/sbin/dnssec-keygen)
+CONFIGURE_ARGS+=	BIND_DNSSEC_KEYGEN=/usr/sbin/dnssec-keygen
+.endif
+.if ${OPSYS} == "NetBSD" && exists(/usr/sbin/dnssec-signzone)
+CONFIGURE_ARGS+=	BIND_DNSSEC_SIGNZONE=/usr/sbin/dnssec-signzone
+.endif
+.if ${OPSYS} == "NetBSD" && exists(/usr/sbin/named-checkzone)
+CONFIGURE_ARGS+=	BIND_DNSSEC_CHECKZONE=/usr/sbin/named-checkzone
+.endif
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/validator/etc/dnsval.conf ${DESTDIR}${EGDIR}

@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2003/07/24 13:29:59 drochner Exp $
+@comment $NetBSD$
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/kjbuckets.so
 share/doc/${PYPKGPREFIX}-kjbuckets/kjbuckets.txt

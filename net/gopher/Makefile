@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2008/06/20 01:09:31 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2011/12/17 10:16:24 sbd Exp $
 #
 
 DISTNAME=		gopher_3.0.11
 PKGNAME=		${DISTNAME:S/_/-/}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		http://gopher.quux.org:70/devel/gopher/Downloads/
 
@@ -28,4 +28,5 @@ CONF_FILES+=		${EGDIR}/gopher.hlp ${PKG_SYSCONFDIR}/gopher.hlp
 CONF_FILES+=		${EGDIR}/gopher.rc ${PKG_SYSCONFDIR}/gopher.rc
 CONF_FILES+=		${EGDIR}/gopherremote.rc ${PKG_SYSCONFDIR}/gopherremote.rc
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

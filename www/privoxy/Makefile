@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.43 2010/02/24 23:22:45 mjl Exp $
+# $NetBSD: Makefile,v 1.46 2012/02/10 13:21:08 mjl Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-stable-src
-PKGNAME=	privoxy-3.0.17
+PKGNAME=	privoxy-3.0.19
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ijbswa/}
 

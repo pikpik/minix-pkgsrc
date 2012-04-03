@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.18 2009/06/14 22:00:29 joerg Exp $
+@comment $NetBSD$
 bin/neon-config
 include/neon/ne_207.h
 include/neon/ne_acl.h
@@ -60,7 +60,10 @@ man/man3/ne_i18n_init.3
 man/man3/ne_iaddr_cmp.3
 man/man3/ne_iaddr_free.3
 man/man3/ne_iaddr_make.3
+man/man3/ne_iaddr_parse.3
 man/man3/ne_iaddr_print.3
+man/man3/ne_iaddr_raw.3
+man/man3/ne_iaddr_reverse.3
 man/man3/ne_iaddr_typeof.3
 man/man3/ne_malloc.3
 man/man3/ne_oom_callback.3

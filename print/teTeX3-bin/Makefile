@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.63 2011/03/14 21:29:20 minskim Exp $
+# $NetBSD: Makefile,v 1.66 2011/10/27 19:39:34 minskim Exp $
 
 DISTNAME=	tetex-src-3.0
 PKGNAME=	${DISTNAME:C/tetex/teTeX/:C/src/bin/}
-PKGREVISION=	48
+PKGREVISION=	50
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=obsolete/systems/unix/teTeX/3.0/distrib/}
 
@@ -60,7 +60,7 @@ INSTALL_MAKE_FLAGS+=	texmf=${DESTDIR}${PREFIX}/share/texmf
 INSTALL_MAKE_FLAGS+=	infodir=${DESTDIR}${PREFIX}/${PKGINFODIR}
 INSTALL_MAKE_FLAGS+=	mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
-INSTALLATION_DIRS+=	info share/texmf/fmtutil
+INSTALLATION_DIRS+=	${PKGINFODIR} share/texmf/fmtutil
 
 TEX_TEXMF_DIRS=	${PREFIX}/share/texmf
 

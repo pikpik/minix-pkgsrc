@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/01/17 02:28:22 dholland Exp $
+# $NetBSD: Makefile,v 1.5 2011/11/14 01:36:46 dholland Exp $
 
 DISTNAME=	tn3270-0.20100116
 CATEGORIES=	comms net
@@ -11,6 +11,8 @@ COMMENT=	Utilities for connecting to IBM VM/CMS systems
 LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+USE_TOOLS+=		yacc
 
 INSTALLATION_DIRS+=	bin share/tn3270
 

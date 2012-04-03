@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/07/09 10:24:18 abs Exp $
 #
 
 DISTNAME=	libass-0.9.12
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://libass.googlecode.com/files/
 EXTRACT_SUFX=	.tar.xz

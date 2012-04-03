@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.1.1.1 2011/12/16 12:28:37 taca Exp $
+
+SHA1 (activeresource-3.1.4.gem) = 5545488c0e8c5f6b28a65b922ae36489d0f3c575
+RMD160 (activeresource-3.1.4.gem) = 1d05ea2561a8e01044dd138705795f9cd9ddff16
+Size (activeresource-3.1.4.gem) = 36352 bytes

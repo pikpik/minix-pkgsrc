@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2011/04/22 13:42:57 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/06 12:39:28 wiz Exp $
 #
 
 DISTNAME=	padevchooser-0.9.3
-PKGREVISION=	7
+PKGREVISION=	11
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/padevchooser/
 
@@ -18,6 +18,9 @@ USE_TOOLS=	pkg-config gmake
 USE_LIBTOOL=	yes
 
 CONFIGURE_ARGS+=	--disable-lynx
+
+LIBS.SunOS+=		-lX11
+LDFLAGS.DragonFly=	-lX11
 
 # XXX this test doesnt work properly
 #

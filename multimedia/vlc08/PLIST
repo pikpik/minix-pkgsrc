@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.12 2009/03/13 20:11:23 kefren Exp $
+@comment $NetBSD: PLIST,v 1.13 2009/06/14 18:08:11 joerg Exp $
 ${PLIST.skins}bin/svlc
 bin/vlc
 bin/vlc-config
@@ -94,7 +94,7 @@ lib/vlc/codec/libsubsdec_plugin.so
 lib/vlc/codec/libsvcdsub_plugin.so
 lib/vlc/codec/libtelx_plugin.so
 lib/vlc/codec/libvorbis_plugin.so
-lib/vlc/codec/libx264_plugin.so
+${PLIST.x264}lib/vlc/codec/libx264_plugin.so
 lib/vlc/control/libgestures_plugin.so
 lib/vlc/control/libhotkeys_plugin.so
 lib/vlc/control/libhttp_plugin.so

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/03/04 21:28:58 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2008/06/20 01:09:07 joerg Exp $
 #
 
 DISTNAME=	rio500-0.7
@@ -19,6 +19,8 @@ USE_TOOLS+=	gmake
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-devicepath=/dev
 CONFIGURE_ARGS+=	--with-deviceentry=urio0
+
+REPLACE_SH=		scripts/rio_add_directory
 
 .include "../../devel/glib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

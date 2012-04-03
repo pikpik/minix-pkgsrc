@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/10/28 18:12:08 tnn Exp $
+# $NetBSD: Makefile,v 1.7 2011/10/27 11:46:20 abs Exp $
 
 CATEGORIES=	multimedia www
 MASTER_SITES=	http://download.macromedia.com/pub/labs/flashplayer10/

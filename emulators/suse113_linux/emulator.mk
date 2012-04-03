@@ -1,4 +1,4 @@
-# $NetBSD: emulator.mk,v 1.3 2011/09/12 11:34:09 joerg Exp $
+# $NetBSD: emulator.mk,v 1.5 2011/12/29 22:17:20 wiz Exp $
 #
 # This file is included by linux-suse.mk in the emulator framework.
 #
@@ -26,6 +26,7 @@ DEPENDS_suse-11.3.base?=	suse_base${_SUSE_VERSION_REQD}:../../emulators/suse113_
 DEPENDS_suse-11.3.compat?=	suse_compat${_SUSE_VERSION_REQD}:../../emulators/suse113_compat
 DEPENDS_suse-11.3.cups?=	suse_libcups${_SUSE_VERSION_REQD}:../../emulators/suse113_libcups
 DEPENDS_suse-11.3.curl?=	suse_libcurl${_SUSE_VERSION_REQD}:../../emulators/suse113_libcurl
+DEPENDS_suse-11.3.drm?=		suse_libdrm${_SUSE_VERSION_REQD}:../../emulators/suse113_libdrm
 DEPENDS_suse-11.3.expat?=	suse_expat${_SUSE_VERSION_REQD}:../../emulators/suse113_expat
 DEPENDS_suse-11.3.fontconfig?=	suse_fontconfig${_SUSE_VERSION_REQD}:../../emulators/suse113_fontconfig
 DEPENDS_suse-11.3.freetype2?=	suse_freetype2${_SUSE_VERSION_REQD}:../../emulators/suse113_freetype2
@@ -41,7 +42,6 @@ DEPENDS_suse-11.3.png?=		suse_libpng${_SUSE_VERSION_REQD}:../../emulators/suse11
 DEPENDS_suse-11.3.qt4?=		suse_qt4${_SUSE_VERSION_REQD}:../../emulators/suse113_qt4
 DEPENDS_suse-11.3.slang?=	suse_slang${_SUSE_VERSION_REQD}:../../emulators/suse113_slang
 DEPENDS_suse-11.3.tiff?=	suse_libtiff${_SUSE_VERSION_REQD}:../../emulators/suse113_libtiff
-DEPENDS_suse-11.3.vmware?=	suse_vmware${_SUSE_VERSION_REQD}:../../emulators/suse113_vmware
 DEPENDS_suse-11.3.x11?=		suse_x11${_SUSE_VERSION_REQD}:../../emulators/suse113_x11
 DEPENDS_suse-11.3.xml2?=	suse_libxml2${_SUSE_VERSION_REQD}:../../emulators/suse113_libxml2
 

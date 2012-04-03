@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2010/08/21 16:35:06 seb Exp $
+# $NetBSD: Makefile,v 1.15 2011/08/14 13:25:25 obache Exp $
 
-DISTNAME=	Mail-Box-2.086
+DISTNAME=	Mail-Box-2.102
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mail/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://perl.overmeer.net/mailbox/
 COMMENT=	Set of packages which implement methods to handle e-mail
+LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-Encode>=2.26:../../textproc/p5-Encode
 DEPENDS+=	p5-TimeDate-[0-9]*:../../time/p5-TimeDate

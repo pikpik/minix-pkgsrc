@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/multicaster
+bin/multicatcher
+bin/rtt
+bin/rttcatcher
+bin/trFilelist

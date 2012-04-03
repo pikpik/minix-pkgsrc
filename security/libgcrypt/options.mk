@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.5 2009/12/18 18:54:24 drochner Exp $
+# $NetBSD: options.mk,v 1.6 2011/02/19 00:55:31 jmcneill Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.libgcrypt
 PKG_SUPPORTED_OPTIONS=	idea
@@ -27,11 +27,6 @@ CONFIGURE_ARGS+=	--disable-padlock-support
 
 .if !empty(PKG_OPTIONS:Midea)
 # use of IDEA as crypto function
-LICENSE=	idea-license
-RESTRICTED=	Commercial distribution is claimed to require a license.
-NO_SRC_ON_CDROM=	${RESTRICTED}
-NO_BIN_ON_CDROM=	${RESTRICTED}
-
 DISTFILES+=	gcrypt.tar.bz2
 SITES.gcrypt.tar.bz2=	http://www.kfwebs.com/
 CFLAGS+=	-DUSE_IDEA

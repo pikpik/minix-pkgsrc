@@ -1,7 +1,9 @@
 @comment $NetBSD$
-man/man8/postal-list.8
+bin/postal-list
+man/man1/postal-list.1
+man/man8/bhm.8
 man/man8/postal.8
 man/man8/rabid.8
+sbin/bhm
 sbin/postal
-sbin/postal-list
 sbin/rabid

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2011/05/09 11:11:11 fhajny Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/03 00:14:07 wiz Exp $
 #
 
-DISTNAME=	varnish-2.1.5
-PKGREVISION=	2
+DISTNAME=	varnish-3.0.2
+PKGREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://repo.varnish-cache.org/source/
 
@@ -19,7 +19,6 @@ USE_TOOLS+=	autoconf pkg-config gmake
 BUILD_DEFS+=	VARBASE
 
 EGDIR=			${PREFIX}/share/examples/varnish
-PKG_SYSCONFSUBDIR=	varnish
 CONF_FILES=		${EGDIR}/default.vcl ${PKG_SYSCONFDIR}/default.vcl
 
 VRNUSER?=		varnish
@@ -38,24 +37,29 @@ PKG_HOME.${VRNUSER}=	${VRNDIR}
 PKG_SHELL.${VRNUSER}=	${SH}
 PKG_GECOS.${VRNUSER}=	Varnish daemon user
 
-RCD_SCRIPTS=            varnishd varnishlog varnishncsa
+RCD_SCRIPTS=		varnishd varnishlog varnishncsa
+PYTHON_FOR_BUILD_ONLY=	yes
+
+REPLACE_PYTHON+=	lib/libvcl/generate.py
+REPLACE_PYTHON+=	lib/libvmod_std/vmod.py
 
 .include "../../lang/python/pyversion.mk"
-BUILD_DEPENDS+=       ${PYPKGPREFIX}-docutils>=0.5:../../textproc/py-docutils
+BUILD_DEPENDS+=		${PYPKGPREFIX}-docutils>=0.5:../../textproc/py-docutils
 
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "SunOS"
 .  if ${PKGSRC_COMPILER} == "sunpro"
-CONFIGURE_ENV+=	VCC="cc -Kpic -G -o %o %s"
+CONFIGURE_ENV+=	VCC_CC="cc ${_COMPILER_ABI_FLAG.${ABI}} -Kpic -G -o %o %s"
 .  else
-CONFIGURE_ENV+=	VCC_CC="gcc -fpic -shared -o %o %s"
+CONFIGURE_ENV+=	VCC_CC="gcc ${_COMPILER_ABI_FLAG.${ABI}} -fpic -shared -o %o %s"
 .  endif
 .endif
 
 pre-configure:
 	cd ${WRKSRC} && autoconf
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

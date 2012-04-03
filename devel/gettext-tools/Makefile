@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2011/07/13 20:50:05 tron Exp $
+# $NetBSD: Makefile,v 1.18 2011/08/22 21:53:40 cheusov Exp $
 
 .include "../../devel/gettext/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-tools-/}
-PKGREVISION=	2
+PKGREVISION=	3
 COMMENT=	Tools for providing messages in different languages
 
 #MAKE_JOBS_SAFE=		no
@@ -37,6 +37,7 @@ post-install:
 	${INSTALL_MAN} ${WRKSRC}/gettext-tools/man/gettextize.1 \
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

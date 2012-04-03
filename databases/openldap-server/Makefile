@@ -1,13 +1,15 @@
-# $NetBSD: Makefile,v 1.27 2010/09/16 08:04:14 adam Exp $
+# $NetBSD: Makefile,v 1.30 2011/12/02 08:53:08 sbd Exp $
 
-PKGNAME=		${DISTNAME:S/-/-server-/}
-COMMENT=		Lightweight Directory Access Protocol server suite
+PKGNAME=	${DISTNAME:S/-/-server-/}
+COMMENT=	Lightweight Directory Access Protocol server suite
 
-CONFLICTS+=		openldap<2.3.23nb1
+CONFLICTS+=	openldap<2.3.23nb1
 
-DEPENDS+=		openldap-client>=2.3.27nb1:../../databases/openldap-client
+DEPENDS+=	openldap-client>=2.3.27nb1:../../databases/openldap-client
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+CFLAGS.DragonFly+=	-DMDB_DSYNC=O_SYNC -DMDB_FDATASYNC=fsync
 
 # slapd options
 CONFIGURE_ARGS+=	--enable-slapd
@@ -54,15 +56,15 @@ DB_CONFIG=		DB_CONFIG
 
 RCD_SCRIPTS=		slapd
 
-FILES_SUBST+=		OPENLDAP_ETCDIR=${OPENLDAP_ETCDIR:Q}
+FILES_SUBST+=		OPENLDAP_ETCDIR=${OPENLDAP_ETCDIR}
 FILES_SUBST+=		SLAPD_USER=${SLAPD_USER}
 
-MESSAGE_SUBST+=		SLAPD_USER=${SLAPD_USER:Q}
-MESSAGE_SUBST+=		LDAP_GROUP=${LDAP_GROUP:Q}
-MESSAGE_SUBST+=		OPENLDAP_VARDIR=${OPENLDAP_VARDIR:Q}
-MESSAGE_SUBST+=		OPENLDAP_ETCDIR=${OPENLDAP_ETCDIR:Q}
-MESSAGE_SUBST+=		CHOWN=${CHOWN}
-MESSAGE_SUBST+=		CHMOD=${CHMOD}
+MESSAGE_SUBST+=		SLAPD_USER=${SLAPD_USER}
+MESSAGE_SUBST+=		LDAP_GROUP=${LDAP_GROUP}
+MESSAGE_SUBST+=		OPENLDAP_VARDIR=${OPENLDAP_VARDIR}
+MESSAGE_SUBST+=		OPENLDAP_ETCDIR=${OPENLDAP_ETCDIR}
+MESSAGE_SUBST+=		CHOWN=${CHOWN:Q}
+MESSAGE_SUBST+=		CHMOD=${CHMOD:Q}
 
 .include "options.mk"
 
@@ -70,4 +72,8 @@ MESSAGE_SUBST+=		CHMOD=${CHMOD}
 
 CONF_FILES_PERMS+=	${EGDIR}/DB_CONFIG ${OPENLDAP_VARDIR}/openldap-data/DB_CONFIG ${OPENLDAP_FILEPERMS}
 
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "Linux" || ${OPSYS} == "SunOS"
+.include "../../devel/libuuid/buildlink3.mk"
+.endif
 .include "../../mk/bsd.pkg.mk"

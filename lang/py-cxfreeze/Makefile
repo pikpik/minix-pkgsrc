@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/08/15 10:45:57 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/11 11:39:50 drochner Exp $
 #
 
 VERS=			4.2.2
@@ -13,6 +13,8 @@ COMMENT=		Freezing python scripts into executables
 LICENSE=		python-software-foundation
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 USE_LANGUAGES=      	c c++
 

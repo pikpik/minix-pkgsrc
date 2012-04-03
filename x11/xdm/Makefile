@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.13 2010/07/12 11:39:57 obache Exp $
+# $NetBSD: Makefile,v 1.15 2011/11/01 06:03:11 sbd Exp $
 
-DISTNAME=	xdm-1.1.10
+DISTNAME=	xdm-1.1.11
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=	.tar.bz2
@@ -16,6 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFIGURE_ARGS+=	--enable-dynamic-greeter
 CONFIGURE_ARGS+=	--enable-tcp-transport
 CONFIGURE_ARGS+=	--enable-unix-transport
+CONFIGURE_ARGS+=	--enable-xdmshell
 
 USE_TOOLS+=	pkg-config
 GNU_CONFIGURE=	yes

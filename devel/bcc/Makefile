@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/07/14 17:26:35 tnn Exp $
+# $NetBSD: Makefile,v 1.23 2010/01/29 17:46:17 joerg Exp $
 
 DISTNAME=		bcc
 PKGREVISION=		1
@@ -15,6 +15,7 @@ CONFLICTS+=		dev86-[0-9]*
 
 NOT_FOR_PLATFORM=	*-*-alpha
 NOT_FOR_PLATFORM+=	Interix-*-*		# no <a.out.h>
+NOT_FOR_PLATFORM+=	DragonFly-*-x86_64	# Cannot build 32-bit binary
 
 USE_BSD_MAKEFILE=	yes
 USE_TOOLS+=		groff nroff

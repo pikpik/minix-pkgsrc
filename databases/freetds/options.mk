@@ -1,10 +1,11 @@
-# $NetBSD: options.mk,v 1.5 2009/07/02 19:29:29 tnn Exp $
+# $NetBSD: options.mk,v 1.7 2011/10/17 03:44:54 sbd Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.freetds
 PKG_OPTIONS_OPTIONAL_GROUPS+=	odbc tls
 PKG_OPTIONS_GROUP.odbc=		iodbc unixodbc
 PKG_OPTIONS_GROUP.tls=		gnutls openssl
 PKG_SUPPORTED_OPTIONS=		kerberos
+PKG_SUGGESTED_OPTIONS=		openssl
 
 .include "../../mk/bsd.options.mk"
 
@@ -47,8 +48,8 @@ CONFIGURE_ARGS+=	--disable-odbc
 ### Use GNU TLS for TLSv1 encrypted session to MSSQL servers.
 ###
 .if !empty(PKG_OPTIONS:Mgnutls)
+USE_TOOLS+=	pkg-config
 .include "../../security/gnutls/buildlink3.mk"
-.include "../../security/gnutls/libgnutls-config.mk"
 CONFIGURE_ARGS+=	--with-gnutls
 .else
 CONFIGURE_ARGS+=	--without-gnutls

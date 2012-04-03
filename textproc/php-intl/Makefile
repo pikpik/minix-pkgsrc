@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.5 2011/02/26 02:55:28 taca Exp $
+# $NetBSD: Makefile,v 1.7 2011/10/29 13:47:03 cheusov Exp $
 
 MODNAME=		intl
 PECL_VERSION=		1.1.2
 PKGREVISION=		2
+PECL_LEGACY_VERSION_SCHEME=	yes
 CATEGORIES+=		textproc
 COMMENT=		PHP extension for i18n
-
-PHP_VERSIONS_ACCEPTED=	5
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/10/10 11:38:55 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/02/06 12:41:29 wiz Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	4
 COMMENT=	Libery Alliance Single Sign On binding for Python
 
 PKG_DESTDIR_SUPPORT=	user-destdir

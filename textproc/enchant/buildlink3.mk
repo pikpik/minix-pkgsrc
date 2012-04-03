@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2009/03/20 19:25:28 joerg Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2012/02/06 12:41:43 wiz Exp $
 
 BUILDLINK_TREE+=	enchant
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	enchant
 ENCHANT_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.enchant+=	enchant>=1.1.3
-BUILDLINK_ABI_DEPENDS.enchant+=	enchant>=1.6.0nb1
+BUILDLINK_ABI_DEPENDS.enchant+=	enchant>=1.6.0nb4
 BUILDLINK_PKGSRCDIR.enchant?=	../../textproc/enchant
 
 # spelling libraries are loaded dynamically and do not need

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.59 2011/04/14 16:22:54 drochner Exp $
+# $NetBSD: Makefile,v 1.67 2012/02/06 12:40:26 wiz Exp $
 
-DISTNAME=	gthumb-2.12.3
-PKGREVISION=	1
+DISTNAME=	gthumb-2.14.2
+PKGREVISION=	2
 CATEGORIES=	graphics
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gthumb/2.12/}
-EXTRACT_SUFX=	.tar.bz2
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gthumb/2.14/}
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://gthumb.sourceforge.net/
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		intltool msgfmt pkg-config gmake
+USE_TOOLS+=		intltool msgfmt pkg-config gmake bison
 GNU_CONFIGURE=		yes
 
 GCONF_SCHEMAS+=	gthumb.schemas

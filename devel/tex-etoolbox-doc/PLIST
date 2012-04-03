@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/etoolbox/README
+share/texmf-dist/doc/latex/etoolbox/etoolbox.pdf
+share/texmf-dist/doc/latex/etoolbox/etoolbox.tex

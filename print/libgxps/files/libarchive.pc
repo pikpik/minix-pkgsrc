@@ -1,0 +1,6 @@
+# $NetBSD$
+
+Name: libarchive
+Description: libarchive
+Version: 2.8.0
+Libs: -larchive

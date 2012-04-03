@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:38:11 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/01/29 10:15:01 marino Exp $
 #
 
 DISTNAME=		lprof-1.10.1
-PKGREVISION=		12
+PKGREVISION=		14
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=lprof/}
 
@@ -11,6 +11,7 @@ HOMEPAGE=		http://lprof.sourceforge.net/
 COMMENT=		ICC Profile generation tool (for IT8.7 targets)
 
 MAKE_JOBS_SAFE=		no
+LDFLAGS.DragonFly=	-lstdc++
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

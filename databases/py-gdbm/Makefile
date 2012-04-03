@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2011/05/04 11:38:05 obache Exp $
+# $NetBSD: Makefile,v 1.30 2011/12/03 00:02:14 joerg Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-gdbm-0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	databases python
 
 MAINTAINER=	dolecek@ics.muni.cz
@@ -10,16 +10,26 @@ HOMEPAGE=	http://www.python.org/doc/lib/module-gdbm.html
 COMMENT=	Python interface to gdbm - GNU database manager
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 EVAL_PREFIX+=	GDBMDIR=gdbm
 
 USE_TOOLS+=	patch
 
-EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/gdbmmodule.c
+.include "../../lang/python/pyversion.mk"
+.if !empty(PYPKGPREFIX:Mpy3?)
+GDBM_MODNAME=	_gdbm
+.else
+GDBM_MODNAME=	gdbm
+.endif
+
+EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/${GDBM_MODNAME}module.c
 PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes
 
 PY_SETUP_SUBST+= GDBMPREFIX=${GDBMDIR}
+PY_SETUP_SUBST+= GDBM_MODNAME=${GDBM_MODNAME}
+PLIST_SUBST+=	GDBM_MODNAME=${GDBM_MODNAME}
 PYSETUPINSTALLARGS+=	--install-lib ${PREFIX}/${PYLIB}/lib-dynload
 
 # ignore errors due to missing files (EXTRACT_ELEMENTS!)

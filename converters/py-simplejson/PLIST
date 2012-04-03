@@ -44,6 +44,9 @@ ${PYSITELIB}/simplejson/tests/test_encode_basestring_ascii.pyo
 ${PYSITELIB}/simplejson/tests/test_encode_for_html.py
 ${PYSITELIB}/simplejson/tests/test_encode_for_html.pyc
 ${PYSITELIB}/simplejson/tests/test_encode_for_html.pyo
+${PYSITELIB}/simplejson/tests/test_errors.py
+${PYSITELIB}/simplejson/tests/test_errors.pyc
+${PYSITELIB}/simplejson/tests/test_errors.pyo
 ${PYSITELIB}/simplejson/tests/test_fail.py
 ${PYSITELIB}/simplejson/tests/test_fail.pyc
 ${PYSITELIB}/simplejson/tests/test_fail.pyo

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2011/01/17 16:38:20 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/03 00:11:55 wiz Exp $
 #
 
 DISTNAME=	lensfun-0.2.5
-PKGREVISION=	5
+PKGREVISION=	9
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.berlios.de/lensfun/
 EXTRACT_SUFX=	.tar.bz2
@@ -22,9 +22,18 @@ MAKE_FILE=		GNUmakefile
 PYTHON_FOR_BUILD_ONLY=	yes
 REPLACE_PYTHON=		configure
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config gsed
 PKGCONFIG_OVERRIDE=	libs/lensfun/lensfun.pc.in
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+# Why three copys of the file?
+post-install:
+	${RM} -f ${DESTDIR}${PREFIX}/lib/liblensfun.so
+	${RM} -f ${DESTDIR}${PREFIX}/lib/liblensfun.so.0
+	${LN} -s liblensfun.so.${PKGVERSION:C/nb[0-9]*//} \
+		${DESTDIR}${PREFIX}/lib/liblensfun.so.0
+	${LN} -s liblensfun.so.${PKGVERSION:C/nb[0-9]*//} \
+		${DESTDIR}${PREFIX}/lib/liblensfun.so
 
 .include "../../devel/glib2/buildlink3.mk"
 # png: for test programs only

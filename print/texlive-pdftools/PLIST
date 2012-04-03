@@ -1,9 +1,0 @@
-@comment $NetBSD$
-bin/e2pall
-bin/epstopdf
-bin/pdfatfi
-bin/pdfclose
-bin/pdfopen
-bin/ps4pdf
-man/man1/e2pall.1
-man/man1/epstopdf.1

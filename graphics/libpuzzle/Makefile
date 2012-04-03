@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/06/13 22:44:38 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2011/11/01 06:01:40 sbd Exp $
 #
 
 DISTNAME=	libpuzzle-0.11
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.pureftpd.org/pub/pure-ftpd/misc/libpuzzle/releases/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,6 +10,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	imil@gcu.info
 HOMEPAGE=	http://libpuzzle.pureftpd.org/project/libpuzzle
 COMMENT=	Libpuzzle is designed to quickly find visually similar images
+LICENSE=	isc
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

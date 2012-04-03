@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/09/10 07:34:34 taca Exp $
+# $NetBSD: Makefile,v 1.6 2011/03/17 21:29:20 zafer Exp $
 #
 
 DISTNAME=	dnsdoctor-1.0.1
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.dnsdoctor.org/
 COMMENT=	DNS zones misconfigurations or inconsistencies diagnostic tool
 LICENSE=	gnu-gpl-v2
 
-DEPENDS+=	ruby${RUBY_VER}-base>=${RUBY_REQD}:../../lang/ruby${RUBY_VER}-base
+DEPENDS+=	ruby${RUBY_VER}-base>=${RUBY_VERSION}:../../lang/ruby${RUBY_VER}-base
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

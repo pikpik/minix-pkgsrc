@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.4 2011/11/01 11:39:59 bsiegert Exp $
 
 Config fixes.
 Destdir support.

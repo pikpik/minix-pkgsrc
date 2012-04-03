@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2011/09/27 10:48:20 markd Exp $
+# $NetBSD: Makefile,v 1.37 2012/03/19 11:28:48 markd Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
-PKGREVISION=	6
+PKGNAME=	${DISTNAME:S/-4/4-4/}
+PKGREVISION=	1
 CATEGORIES=	x11
 COMMENT=	Support libraries for the KDE integrated X11 desktop
 
@@ -17,7 +18,7 @@ CONFLICTS=	kdelibs-[0-9]*
 
 CMAKE_DEPENDENCIES_REWRITE= _KDE_build/KDELibsDependencies.cmake
 CMAKE_DEPENDENCIES_REWRITE+= _KDE_build/KDELibsDependenciesInternal.cmake
-CMAKE_MODULE_PATH_OVERRIDE+=	kjsembed/qtonly/CMakeLists.txt
+CMAKE_MODULE_PATH_OVERRIDE+= kjsembed/qtonly/CMakeLists.txt
 
 CMAKE_ARGS+=	-DKDE_DISTRIBUTION_TEXT:STRING="NetBSD pkgsrc"
 CMAKE_ARGS+=	-DWITH_Avahi:BOOL=off
@@ -50,9 +51,15 @@ SUBST_STAGE.kdelibsfix=		pre-configure
 SUBST_MESSAGE.kdelibsfix=	Fixing hardcoded paths.
 SUBST_FILES.kdelibsfix= \
 	kde3support/kdeui/k3sconfig.cpp \
-	kdeui/colors/kcolordialog.cpp \
 	kio/kssl/kopenssl.cpp
-SUBST_SED.kdelibsfix=		-e 's:@LOCALBASE@:${LOCALBASE}:g' -e 's:@X11BASE@:${X11BASE}:g'
+SUBST_SED.kdelibsfix=		-e 's:@LOCALBASE@:${LOCALBASE}:g'
+
+# XXX this is an ugly hack to avoid the WRKDIR path in the installed cmake file
+SUBST_CLASSES+=			phononrelpath
+SUBST_STAGE.phononrelpath=	post-configure
+SUBST_MESSAGE.phononrelpath=	Fixing phonon RELWITHDEBINFO path
+SUBST_FILES.phononrelpath=	_KDE_build/CMakeFiles/Export/_usr/pkg/share/kde/apps/cmake/modules/KDELibs4LibraryTargets-relwithdebinfo.cmake
+SUBST_SED.phononrelpath=	-e 's:[^"]*/\.buildlink/lib/libphonon\.so::'
 
 USE_TOOLS+=	flex gmake
 
@@ -67,14 +74,15 @@ BUILDLINK_DEPMETHOD.qt4-tools=		full
 .include "../../meta-pkgs/kde4/kde4.mk"
 
 BUILDLINK_API_DEPENDS.strigi+=	strigi>=0.5.11
-BUILDLINK_API_DEPENDS.soprano+=	soprano>=2.3.0
-BUILDLINK_API_DEPENDS.shared-desktop-ontologies+=	shared-desktop-ontologies>=0.4
+BUILDLINK_API_DEPENDS.soprano+=	soprano>=2.5.60
+BUILDLINK_API_DEPENDS.shared-desktop-ontologies+=	shared-desktop-ontologies>=0.6.5
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../archivers/xz/buildlink3.mk"
 .include "../../sysutils/strigi/buildlink3.mk"
 .include "../../textproc/soprano/buildlink3.mk"
 .include "../../databases/shared-mime-info/buildlink3.mk"
+.include "../../devel/libdbusmenu-qt/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
@@ -100,6 +108,6 @@ BUILDLINK_API_DEPENDS.shared-desktop-ontologies+=	shared-desktop-ontologies>=0.4
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXtst/buildlink3.mk"
-
 .include "../../mk/krb5.buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

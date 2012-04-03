@@ -1,4 +1,4 @@
-/* $NetBSD: sha2hl.c,v 1.6 2007/05/07 16:38:47 joerg Exp $	 */
+/* $NetBSD: sha2hl.c,v 1.7 2007/07/31 13:17:34 joerg Exp $	 */
 
 /*
  * sha2hl.c
@@ -94,7 +94,7 @@ SHA256_File(char *filename, char *buf)
 
 
 char           *
-SHA256_End(SHA256_CTX *ctx, unsigned char *buffer)
+SHA256_End(SHA256_CTX *ctx, char buffer[])
 {
 	unsigned char          digest[SHA256_DIGEST_LENGTH], *d = digest;
 	unsigned char	       *ret;

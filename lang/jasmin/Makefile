@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2009/01/23 21:14:18 jschauma Exp $
+# $NetBSD: Makefile,v 1.27 2009/03/17 21:40:46 darcy Exp $
 #
 
 DISTNAME=	jasmin-1.06
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang java
 MASTER_SITES=	http://mrl.nyu.edu/~meyer/jasmin/
 
@@ -13,12 +13,14 @@ COMMENT=	Java "assembler" interface
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_JAVA=	run
-USE_TOOLS+=	pax
+USE_TOOLS+=	pax csh:run
 
 WRKSRC=		${WRKDIR}/jasmin
 NO_BUILD=	yes
 
 INSTALLATION_DIRS=	bin
+
+REPLACE_CSH+=	bin/jasmin bin/jasmin.orig bin/runall.sh lib/cup/INSTALL
 
 post-patch:
 	${MV} ${WRKSRC}/bin/jasmin ${WRKSRC}/bin/jasmin.patch && 	\

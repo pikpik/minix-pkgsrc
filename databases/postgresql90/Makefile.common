@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.12 2011/09/27 11:04:42 adam Exp $
+# $NetBSD: Makefile.common,v 1.16 2012/03/03 14:01:11 adam Exp $
 #
 # used by databases/postgresql90-adminpack/Makefile
 # used by databases/postgresql90-client/Makefile
@@ -21,11 +21,9 @@
 #	<lang>-postgresql	client-side interface to PostgreSQL
 #	postgresql-<lang>	server-side module for PostgreSQL backend
 
-.include "../../databases/postgresql90/Makefile.mirrors"
-
-DISTNAME=	postgresql-9.0.5
+DISTNAME=	postgresql-9.0.7
 CATEGORIES=	databases
-MASTER_SITES=	${PGSQL_MIRRORS:=source/v${PKGVERSION_NOREV}/}
+MASTER_SITES=	${MASTER_SITE_PGSQL:=source/v${PKGVERSION_NOREV}/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER?=	adam@NetBSD.org
@@ -68,8 +66,8 @@ PG_LOCALE_DIR=		${PG_PREFIX}/${PKGLOCALEDIR}/locale
 PG_ETC_DIR=		${PKG_SYSCONFDIR:S/^${PREFIX}\//${PG_PREFIX}\//}
 
 GNU_CONFIGURE=		yes
+GNU_CONFIGURE_LIBDIR=	${PG_PREFIX}/lib
 CONFIGURE_ARGS+=	--bindir=${PG_PREFIX}/bin
-CONFIGURE_ARGS+=	--libdir=${PG_PREFIX}/lib
 CONFIGURE_ARGS+=	--includedir=${PG_PREFIX}/include
 CONFIGURE_ARGS+=	--sysconfdir=${PG_ETC_DIR}
 CONFIGURE_ARGS+=	--datadir=${PG_DATA_DIR}

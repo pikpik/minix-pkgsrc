@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2011/01/16 07:31:12 wiz Exp $
+# $NetBSD: Makefile,v 1.79 2011/12/28 20:07:34 adam Exp $
 
 DISTNAME=	unzip60
 PKGNAME=	unzip-6.0
@@ -7,12 +7,14 @@ MASTER_SITES=	ftp://ftp.info-zip.org/pub/infozip/src/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	wiz@NetBSD.org
-HOMEPAGE=	http://www.info-zip.org/pub/infozip/UnZip.html
+HOMEPAGE=	http://www.info-zip.org/UnZip.html
 COMMENT=	List, test and extract compressed files in a ZIP archive
 LICENSE=	info-zip
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+REPLACE_SH=	unix/zipgrep
 
 USE_TOOLS+=	gmake
 

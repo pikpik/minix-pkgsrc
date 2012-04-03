@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2011/04/22 13:43:26 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/02/06 12:40:03 wiz Exp $
 #
 
 DISTNAME=	notecase-1.8.8_src
 PKGNAME=	notecase-1.8.8
-PKGREVISION=	7
+PKGREVISION=	11
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=notecase/}
 
@@ -16,7 +16,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=		${WRKDIR}/notecase-1.8.8
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	gmake msgfmt pkg-config gsed
-TOOLS_PLATFORM.gsed= #empty, override nonsense in tools
+
+LDFLAGS.DragonFly=	-lX11
 
 INSTALLATION_DIRS=	share/doc/notecase share/locale/fr_CA/LC_MESSAGES \
 			share/locale/no/LC_MESSAGES

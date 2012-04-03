@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.160 2011/01/25 11:13:13 markd Exp $
+# $NetBSD: Makefile,v 1.166 2012/02/06 12:42:16 wiz Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
-PKGREVISION=	14
+PKGREVISION=	20
 CATEGORIES=	x11
 COMMENT=	Base modules for the KDE 3 integrated X11 desktop
 
@@ -88,7 +88,7 @@ PLIST_SRC+=		${PKGDIR}/PLIST
 BUILDLINK_API_DEPENDS.Xrandr+=	Xrandr>=1.0
 BUILDLINK_API_DEPENDS.kdelibs+=	kdelibs>=${_KDE_VERSION}
 
-DEPENDS+=		htdig>=3.2.0:../../www/htdig-devel
+DEPENDS+=		htdig>=3.2.0:../../www/htdig
 
 # Solaris 10 has libusb only for 32 bit ABI (see PR 33727).
 .if ${OPSYS} == "SunOS" && ${MACHINE_ARCH} == "x86_64"

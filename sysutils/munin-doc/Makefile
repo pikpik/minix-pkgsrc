@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/02/11 12:38:45 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2011/11/29 18:29:38 hans Exp $
 #
 
 VERS=		1.3.2
@@ -9,7 +9,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=munin/}
 
 MAINTAINER=	he@NetBSD.org
-HOMEPAGE=	http://munin.sourceforge.net/
+HOMEPAGE=	http://munin-monitoring.org/
 COMMENT=	System monitoring tool, documentation
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 BUILD_DEPENDS+=	htmldoc>=0:../../www/htmldoc
 BUILD_DEPENDS+= html2text>=0:../../textproc/html2text
 
-USE_TOOLS+=	perl
+USE_TOOLS+=	perl pod2man
 USE_TOOLS+=	gmake
 USE_PKGINSTALL=	YES
 

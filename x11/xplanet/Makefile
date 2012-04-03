@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.51 2011/04/04 11:41:28 adam Exp $
+# $NetBSD: Makefile,v 1.55 2012/02/22 12:28:06 wiz Exp $
 
 DISTNAME=	xplanet-1.2.2
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xplanet/}
 
@@ -13,7 +13,7 @@ LICENSE=	gnu-gpl-v2
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake pkg-config
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		PERL=${_ENV_PERL:Q}
 _ENV_PERL=		${TOOLS_SETENV} perl

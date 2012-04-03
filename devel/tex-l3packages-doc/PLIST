@@ -1,0 +1,6 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/l3packages/README
+share/texmf-dist/doc/latex/l3packages/l3keys2e/l3keys2e.pdf
+share/texmf-dist/doc/latex/l3packages/xfrac/xfrac.pdf
+share/texmf-dist/doc/latex/l3packages/xparse/xparse.pdf
+share/texmf-dist/doc/latex/l3packages/xtemplate/xtemplate.pdf

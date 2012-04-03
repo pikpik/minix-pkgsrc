@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2010/02/15 14:19:45 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.digikam
 PKG_SUPPORTED_OPTIONS=	lensfun liblqr marble pim
@@ -15,7 +15,7 @@ PKG_SUGGESTED_OPTIONS=	lensfun liblqr marble pim
 .endif
 
 .if !empty(PKG_OPTIONS:Mmarble)
-.include "../../misc/kdeedu4/buildlink3.mk"
+.include "../../misc/marble/buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mpim)

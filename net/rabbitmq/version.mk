@@ -1,4 +1,4 @@
-# $NetBSD: version.mk,v 1.1.1.1 2010/09/21 11:47:32 fhajny Exp $
+# $NetBSD: version.mk,v 1.5 2012/01/04 19:08:29 fhajny Exp $
 #
 
-RMQ_VERSION=	2.6.1
+RMQ_VERSION=	2.8.0

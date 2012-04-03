@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.29 2011/09/22 12:53:29 adam Exp $
+# $NetBSD: Makefile.common,v 1.32 2012/01/08 11:35:07 adam Exp $
 #
 # used by devel/boost-build/Makefile
 # used by devel/boost-docs/Makefile
@@ -9,7 +9,7 @@
 
 BOOST_PACKAGE?=		undefined
 BOOST_COMMENT?=		undefined
-BOOST_VERSION=		1.47.0
+BOOST_VERSION=		1.49.0
 BOOST_SHORT_VERSION=	${BOOST_VERSION:S/./_/:C/\..*$//}
 
 DISTNAME=		boost_${BOOST_VERSION:S/./_/g}
@@ -52,6 +52,11 @@ SUBST_FILES.darwin=	tools/build/v2/tools/*darwin.jam
 SUBST_SED.darwin=	-e 's,-install_name ",-install_name "${PREFIX}/lib/,g'
 
 .include "../../mk/bsd.prefs.mk"
+
+# On SunOS, extract using pkgsrc nbtar to avoid warnings from native gtar.
+.if ${OPSYS} == "SunOS"
+TOOLS_PLATFORM.tar=	#empty
+.endif
 
 .if ${OPSYS} == "Darwin"
 # Prevent using a pkgsrc libtool in OS X because the darwin toolset needs

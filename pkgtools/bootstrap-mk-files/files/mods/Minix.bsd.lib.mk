@@ -1,4 +1,4 @@
-#	$NetBSD: Linux.bsd.lib.mk,v 1.3 2008/03/13 17:28:23 joerg Exp $
+#	$NetBSD$
 #	@(#)bsd.lib.mk	8.3 (Berkeley) 4/22/94
 
 .if !target(__initialized__)

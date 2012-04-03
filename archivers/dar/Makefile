@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2011/04/22 13:42:49 obache Exp $
+# $NetBSD: Makefile,v 1.38 2012/01/29 02:54:18 sbd Exp $
 
 DISTNAME=	dar-2.4.1
 CATEGORIES=	archivers sysutils
@@ -32,7 +32,7 @@ PKGCONFIG_OVERRIDE=	src/libdar/libdar.pc.tmpl.in
 #
 CHECK_INTERPRETER_SKIP+=	share/dar/samples/*
 REPLACE_PERL+=			doc/samples/dar_backup
-REPLACE_BASH+=			doc/samples/*.bash doc/samples/clust*.sh
+REPLACE_BASH+=			doc/samples/*.bash doc/samples/*.sh doc/samples/*.duc
 
 ## Our threading check here is the same as the one used in devel/perl5.
 #
@@ -92,6 +92,17 @@ UNLIMIT_RESOURCES=	datasize
 ## XXX Needed for getopt() with SunPro (USE_FEATURES?)
 #
 CPPFLAGS.SunOS+=	-D__EXTENSIONS__
+
+.include "../../mk/bsd.fast.prefs.mk"
+
+## Build a static binary with threads is currently broken with glibc.
+.if ${OPSYS} == "Linux" && !empty(PKG_OPTIONS:Mthreads)
+SUBST_CLASSES+=		static
+SUBST_STAGE.static=	post-patch
+SUBST_MESSAGE.static=	Changing -all-static to -static
+SUBST_FILES.static=	src/testing/Makefile.in
+SUBST_SED.static=	-e 's,-all-static,-static,g'
+.endif
 
 .include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

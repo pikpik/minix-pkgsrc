@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.21 2009/07/13 18:37:55 tonio Exp $
+# $NetBSD: Makefile,v 1.24 2012/03/05 04:02:30 minskim Exp $
 #
 
 DISTNAME=		rubber-1.1
-PKGREVISION=		3
+PKGREVISION=		5
 CATEGORIES=		textproc
 MASTER_SITES=		http://ebeffara.free.fr/pub/
 
 MAINTAINER=		tonio@NetBSD.org
-HOMEPAGE=		http://www.pps.jussieu.fr/~beffara/soft/rubber/
+HOMEPAGE=		https://launchpad.net/rubber
 COMMENT=		Automated system for building LaTeX documents
+
+DEPENDS+=	tex-latex-bin-[0-9]*:../../print/tex-latex-bin
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -17,7 +19,6 @@ USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
 INFO_FILES=		yes
 TEXINFO_REQD=		4.6
-TEX_ACCEPTED=		teTeX3
 
 CONFIGURE_ARGS+=	--python=${PYTHONBIN:Q}
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
@@ -29,5 +30,4 @@ PLIST_SUBST+=		RUBBERVERSUFFIX=${PKGVERSION_NOREV}
 PLIST_SUBST+=		PYVERSSUFFIX=${PYVERSSUFFIX}
 
 .include "../../lang/python/application.mk"
-.include "../../mk/tex.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2010/01/16 03:37:55 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/13 04:31:08 minskim Exp $
 
-DISTNAME=	texlive-20100720-source
+DISTNAME=	texlive-20110705-source
 PKGNAME=	dviljk-2.6.5
 PKGREVISION=	3
 CATEGORIES=	print

@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.90 2011/06/21 14:11:24 reed Exp $
+# $NetBSD: pyversion.mk,v 1.95 2012/02/26 09:17:41 sbd Exp $
 
 # This file determines which Python version is used as a dependency for
 # a package.
@@ -9,7 +9,7 @@
 #	The preferred Python version to use.
 #
 #	Possible values: 24 25 26 27 31
-#	Default: 26
+#	Default: 27
 #
 # === Package-settable variables ===
 #
@@ -19,7 +19,15 @@
 #	preferred over later ones.
 #
 #	Possible values: 31 27 26 25 24
-#	Default: 31 27 26 25 24
+#	Default: (31) 27 26 25 24
+#
+# PYTHON_VERSIONS_INCLUDE_3X
+#	Wether the default PYTHON_VERSIONS_ACCEPTED should include
+#	3.x versions for for this package or not.
+#	This variable must be set before including bsd.prefs.mk.
+#
+#	Possible values: yes no
+#	Default: no
 #
 # PYTHON_VERSIONS_INCOMPATIBLE
 #	The Python versions that are NOT acceptable for the package.
@@ -39,13 +47,13 @@
 #	The prefix to use in PKGNAME for extensions which are meant
 #	to be installed for multiple Python versions.
 #
-#	Example: py26
+#	Example: py27
 #
 # PYVERSSUFFIX
 #	The suffix to executables and in the library path, equal to
 #	sys.version[0:3].
 #
-#	Example: 2.6
+#	Example: 2.7
 #
 # Keywords: python
 #
@@ -68,8 +76,12 @@ PYTHON_VERSION_REQD?= ${PKGNAME_OLD:C/(^.*-|^)py([0-9][0-9])-.*/\2/}
 BUILD_DEFS+=		PYTHON_VERSION_DEFAULT
 BUILD_DEFS_EFFECTS+=	PYPACKAGE
 
-PYTHON_VERSION_DEFAULT?=		26
+PYTHON_VERSION_DEFAULT?=		27
+.if ${PYTHON_VERSIONS_INCLUDE_3X:U:tl} == "yes"
 PYTHON_VERSIONS_ACCEPTED?=		31 27 26 25 24
+.else
+PYTHON_VERSIONS_ACCEPTED?=		27 26 25 24
+.endif
 PYTHON_VERSIONS_INCOMPATIBLE?=		# empty by default
 
 BUILDLINK_API_DEPENDS.python24?=		python24>=2.4
@@ -160,6 +172,7 @@ PYDISTUTILS_CREATES_EGGFILES=	no
 .else
 PKG_FAIL_REASON+=   "No valid Python version"
 PYDISTUTILS_CREATES_EGGFILES=	no
+PYPKGPREFIX=
 .endif
 
 PTHREAD_OPTS+=	require

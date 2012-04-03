@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.1.1.1 2011/11/15 14:05:16 sno Exp $
+
+SHA1 (MetaCPAN-API-0.42.tar.gz) = 16b04caa656a9adb95311698c60d6b225abfd151
+RMD160 (MetaCPAN-API-0.42.tar.gz) = e1f89fa620270ed359b97d59a4bb9907fd97bb2a
+Size (MetaCPAN-API-0.42.tar.gz) = 17548 bytes

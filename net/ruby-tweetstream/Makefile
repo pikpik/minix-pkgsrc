@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/05/26 10:58:00 obache Exp $
+# $NetBSD: Makefile,v 1.4 2011/11/23 05:32:59 taca Exp $
 
-DISTNAME=	tweetstream-1.0.4
+DISTNAME=	tweetstream-1.1.4
 CATEGORIES=	net
 
 MAINTAINER=	obache@NetBSD.org
@@ -8,9 +8,11 @@ HOMEPAGE=	http://github.com/intridea/tweetstream
 COMMENT=	RubyGem to access the Twitter Stream API
 LICENSE=	mit
 
-DEPENDS+=	${RUBY_PKGPREFIX}-daemons-[0-9]*:../../misc/ruby-daemons
-DEPENDS+=	${RUBY_PKGPREFIX}-twitter-stream-[0-9]*:../../net/ruby-twitter-stream
-DEPENDS+=	${RUBY_PKGPREFIX}-json-[0-9]*:../../textproc/ruby-json
+DEPENDS+=	${RUBY_PKGPREFIX}-daemons>=1.1<2:../../misc/ruby-daemons
+DEPENDS+=	${RUBY_PKGPREFIX}-twitter-stream>=0.1.14<0.2:../../net/ruby-twitter-stream
+
+RUBY_JSON_REQD=	0
 
 .include "../../lang/ruby/gem.mk"
+.include "../../lang/ruby/json.mk"
 .include "../../mk/bsd.pkg.mk"

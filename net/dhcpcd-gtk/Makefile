@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2011/04/22 13:44:21 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/02/06 15:54:29 roy Exp $
 #
 
-DISTNAME=		dhcpcd-ui-0.5.2
-PKGNAME=		dhcpcd-gtk-0.5.2
+DISTNAME=		dhcpcd-ui-0.6.0
+PKGNAME=		dhcpcd-gtk-0.6.0
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://roy.marples.name/downloads/dhcpcd/
 MASTER_SITES+=		ftp://roy.marples.name/pub/dhcpcd/
@@ -14,7 +15,7 @@ HOMEPAGE=		http://roy.marples.name/projects/dhcpcd-ui/
 COMMENT=		GTK+ systray monitor for dhcpcd
 LICENSE=		modified-bsd
 
-DEPENDS+=		dhcpcd-dbus>=0.5.0:../../net/dhcpcd-dbus
+DEPENDS+=		dhcpcd-dbus>=0.6.0:../../net/dhcpcd-dbus
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c99

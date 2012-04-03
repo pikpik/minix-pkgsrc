@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.306 2011/10/11 12:45:11 ryoon Exp $
+# $NetBSD: Makefile,v 1.313 2012/03/04 16:11:39 taca Exp $
 #
 
 COMMENT=	Programming languages
@@ -11,6 +11,7 @@ SUBDIR+=	a60
 SUBDIR+=	algol68g
 SUBDIR+=	awka
 SUBDIR+=	baci
+SUBDIR+=	basic256
 SUBDIR+=	boomerang
 SUBDIR+=	brandybasic
 SUBDIR+=	bwbasic
@@ -115,6 +116,7 @@ SUBDIR+=	openjdk7
 SUBDIR+=	openjdk7-bin
 SUBDIR+=	ossp-js
 SUBDIR+=	p2c
+SUBDIR+=	p5-Switch
 SUBDIR+=	parrot
 SUBDIR+=	pcc
 SUBDIR+=	pcc-current
@@ -134,7 +136,6 @@ SUBDIR+=	pnetlib-nox11
 SUBDIR+=	polyml
 SUBDIR+=	py-basicproperty
 SUBDIR+=	py-cxfreeze
-SUBDIR+=	py-html-docs
 SUBDIR+=	py-psyco
 SUBDIR+=	py-pyrex
 SUBDIR+=	py24-html-docs
@@ -153,11 +154,16 @@ SUBDIR+=	rcfunge
 SUBDIR+=	rexx-imc
 SUBDIR+=	rexx-regina
 SUBDIR+=	ruby
+SUBDIR+=	ruby-coffee-script
+SUBDIR+=	ruby-coffee-script-source
 SUBDIR+=	ruby-doc-stdlib
+SUBDIR+=	ruby-execjs
 SUBDIR+=	ruby18
 SUBDIR+=	ruby18-base
 SUBDIR+=	ruby19
 SUBDIR+=	ruby19-base
+SUBDIR+=	ruby193
+SUBDIR+=	ruby193-base
 SUBDIR+=	runawk
 SUBDIR+=	sablevm
 SUBDIR+=	sablevm-classpath
@@ -199,6 +205,7 @@ SUBDIR+=	ucblogo
 SUBDIR+=	umb-scheme
 SUBDIR+=	utilisp
 SUBDIR+=	vala
+SUBDIR+=	vala014
 SUBDIR+=	vscm
 SUBDIR+=	vslisp
 SUBDIR+=	wsbasic

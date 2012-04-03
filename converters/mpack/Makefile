@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2010/04/20 10:26:40 is Exp $
+# $NetBSD: Makefile,v 1.22 2012/01/10 21:09:55 tez Exp $
 
 DISTNAME=	mpack-1.6
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	converters mail news
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/mpack/
 

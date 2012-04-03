@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/08/13 09:34:21 ghen Exp $
+@comment $NetBSD: PLIST,v 1.3 2012/01/23 15:11:54 ghen Exp $
 bin/pdns_control
 bin/zone2ldap
 bin/zone2sql

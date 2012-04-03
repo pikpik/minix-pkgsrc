@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2010/11/11 21:07:13 jdolecek Exp $
+# $NetBSD: Makefile,v 1.8 2012/02/19 14:02:38 wiz Exp $
 #
 
-VERS=			1.7.2
+VERS=			1.7.5
 DISTNAME=		pysvn-${VERS}
 PKGNAME=		${PYPKGPREFIX}-pysvn-${VERS}
-PKGREVISION=		3
 CATEGORIES=		devel
-MASTER_SITES=		http://pysvn.barrys-emacs.org/source_kits/
+MASTER_SITES=	http://pysvn.barrys-emacs.org/source_kits/
 
 MAINTAINER=		helgoman@users.sourceforge.net
 HOMEPAGE=		http://pysvn.tigris.org/
@@ -18,15 +17,22 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 
 USE_LANGUAGES=		c c++
-USE_TOOLS=		gmake
+USE_TOOLS=			gmake
 
 PSVNSRC=			Source
-PYSETUP=		setup.py
+PYSETUP=			setup.py
 PYSETUPSUBDIR=		${PSVNSRC}/pysvn
 PY_PATCHPLIST=		yes
-TESTDIR=		Tests
+TESTDIR=			Tests
 
 BUILD_DIRS=		${PSVNSRC}
+INSTALLATION_DIRS=	${PYSITELIB}/pysvn
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "DragonFly"
+BUILDLINK_TRANSFORM+=	rm:-lresolv
+.endif
 
 .include "../../lang/python/pyversion.mk"
 
@@ -39,7 +45,6 @@ do-configure:
 		--svn-root-dir=${BUILDLINK_PREFIX.subversion-base}
 
 do-install:
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/${PYSITELIB}/pysvn
 	${INSTALL_DATA} \
 	${WRKSRC}/${PYSETUPSUBDIR}/*.py \
 	${WRKSRC}/${PYSETUPSUBDIR}/*.so \
@@ -51,4 +56,5 @@ do-test:
 
 .include "../../devel/subversion-base/buildlink3.mk"
 .include "../../lang/python/extension.mk"
+.include "../../mk/krb5.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

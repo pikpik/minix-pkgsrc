@@ -1,24 +1,21 @@
-# $NetBSD: mozilla-common.mk,v 1.25 2011/08/18 18:31:09 tnn Exp $
+# $NetBSD: mozilla-common.mk,v 1.31 2012/03/10 03:08:25 ryoon Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 2.0.
-# 
+#
 # used by devel/xulrunner/Makefile
 # used by mail/thunderbird/Makefile
 # used by www/firefox/Makefile
 # used by www/seamonkey/Makefile
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		pkg-config perl gmake autoconf213
+USE_TOOLS+=		pkg-config perl gmake autoconf213 unzip zip
 USE_LANGUAGES+=		c99 c++
 UNLIMIT_RESOURCES+=	datasize
-
-BUILD_DEPENDS+=		zip>=2.3:../../archivers/zip
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
 CHECK_INTERPRETER_SKIP+=lib/xulrunner-sdk/sdk/bin/xpt.py
-PRIVILEGED_STAGES+=	clean
 
 CONFIGURE_ARGS+=	--disable-tests --disable-pedantic
 CONFIGURE_ARGS+=	--enable-crypto
@@ -26,9 +23,13 @@ CONFIGURE_ARGS+=	--enable-optimize=-O2 --with-pthreads
 CONFIGURE_ARGS+=	--disable-javaxpcom
 CONFIGURE_ARGS+=	--enable-default-toolkit=cairo-gtk2
 CONFIGURE_ARGS+=	--enable-svg --enable-mathml
-# Needs tee and subpixel functions which are not shipped in stable cairo (yet?)
-CONFIGURE_ARGS+=	--disable-system-cairo
-CONFIGURE_ARGS+=	--disable-system-pixman
+CONFIGURE_ARGS+=	--enable-system-cairo
+CONFIGURE_ARGS+=	--enable-system-pixman
+CONFIGURE_ARGS+=	--with-system-libvpx=${BUILDLINK_PREFIX.libvpx}
+CONFIGURE_ARGS+=	--enable-system-hunspell
+CONFIGURE_ARGS+=	--enable-system-ffi
+CONFIGURE_ARGS+=	--with-system-nss
+CONFIGURE_ARGS+=	--with-system-nspr
 CONFIGURE_ARGS+=	--with-system-jpeg
 CONFIGURE_ARGS+=	--with-system-zlib --with-system-bz2
 CONFIGURE_ARGS+=	--with-system-libevent=${BUILDLINK_PREFIX.libevent}
@@ -83,14 +84,22 @@ PREFER.bzip2?=	pkgsrc
 .include "../../audio/alsa-lib/buildlink3.mk"
 .endif
 .include "../../archivers/bzip2/buildlink3.mk"
-BUILDLINK_API_DEPENDS.sqlite3+=	sqlite3>=3.7.5
+BUILDLINK_API_DEPENDS.sqlite3+=	sqlite3>=3.7.7.1
 CONFIGURE_ENV+=	ac_cv_sqlite_secure_delete=yes	# c.f. patches/patch-al
 .include "../../databases/sqlite3/buildlink3.mk"
+BUILDLINK_API_DEPENDS.libevent+=	libevent>=1.1
 .include "../../devel/libevent/buildlink3.mk"
+.include "../../devel/libffi/buildlink3.mk"
+.include "../../devel/nspr/buildlink3.mk"
+.include "../../devel/nss/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
+BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.10.2nb4
+.include "../../graphics/cairo/buildlink3.mk"
+.include "../../multimedia/libvpx/buildlink3.mk"
 .include "../../net/libIDL/buildlink3.mk"
+.include "../../textproc/hunspell/buildlink3.mk"
 BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.18.3nb1
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

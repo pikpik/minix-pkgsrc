@@ -1,13 +1,13 @@
-# $NetBSD: Makefile,v 1.8 2010/06/02 12:39:44 adam Exp $
+# $NetBSD: Makefile,v 1.10 2012/01/18 14:32:10 adam Exp $
 
-DISTNAME=	avenger-0.8.1
-PKGREVISION=	1
+DISTNAME=	avenger-0.8.2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.mailavenger.org/dist/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mailavenger.org/
 COMMENT=	SMTP server with filtering capabilities
+LICENSE=	gnu-gpl-v2 OR gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -20,6 +20,9 @@ CONFIGURE_ARGS+=	--with-db=${BDBBASE}
 CONFIGURE_ARGS+=	--with-etcdir=${PKG_SYSCONFDIR}
 CONFIGURE_ENV+=		BDB_TYPE="${BDB_TYPE}"
 PKG_SYSCONFSUBDIR=	avenger
+
+LDFLAGS.SunOS+=		-lsocket -lnsl
+CFLAGS.SunOS+=		-DDBM_RDONLY=O_RDONLY
 
 .include "options.mk"
 

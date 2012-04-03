@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/06/20 01:09:35 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2010/01/17 12:02:44 wiz Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV:S/-//}
@@ -16,8 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 OPSYSVARS+=	LDADD
 LDADD.SunOS=	-lnsl -lsocket
 MAKE_ENV+=	LDADD=${LDADD:Q}
-MAKE_ENV+=	BINOWN=${BINOWN:Q}
-MAKE_ENV+=	BINGRP=${BINGRP:Q}
+USE_BSD_MAKEFILE=	yes
 
 .include "../../security/openssl/buildlink3.mk"
 

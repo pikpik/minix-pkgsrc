@@ -1,10 +1,10 @@
-#       $NetBSD: configure.ac,v 1.11 2007/08/06 04:42:53 lukem Exp $
+#       $NetBSD: configure.ac,v 1.1.1.1 2007/08/06 04:42:53 lukem Exp $
 #
 # Process this file with autoconf to produce a configure script.
 
 AC_INIT([tnftp], [20070806], [lukem@NetBSD.org])
 AC_PREREQ([2.61])
-AC_REVISION([$Revision: 1.11 $])
+AC_REVISION([$Revision: 1.1.1.1 $])
 
 AS_SHELL_SANITIZE
 
@@ -84,10 +84,7 @@ AS_IF([test "$opt_editcomplete" = yes],
                       [termcap termlib curses ncurses tinfo],
                       [],
                       [AC_MSG_ERROR(
-                           [no relevant library found containing tgetent])])
-       AC_SEARCH_LIBS([el_init],
-                      [edit],
-                      [have_libedit=yes], [have_libedit=no])])
+                           [no relevant library found containing tgetent])])])
 
 AC_SEARCH_LIBS([gethostbyname], [nsl])
 AC_SEARCH_LIBS([socket],

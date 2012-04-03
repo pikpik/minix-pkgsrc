@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.25 2008/09/07 03:23:16 dholland Exp $
+# $NetBSD: Makefile,v 1.26 2008/09/07 05:12:58 dholland Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-java-${GCC_VERSION}
 COMMENT=	GNU Compiler Collection, v3 - Java compiler
 
-#PKG_DESTDIR_SUPPORT=	user-destdir	# untested
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.gcc3cxx+=	gcc3${GCC3_PKGMODIF}-c++-${GCC_VERSION}{,nb*}
 BUILDLINK_DEPMETHOD.gcc3cxx+=	full

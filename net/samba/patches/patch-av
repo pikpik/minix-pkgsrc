@@ -1,13 +1,14 @@
-$NetBSD: patch-av,v 1.2 2006/01/02 22:33:36 jlam Exp $
+$NetBSD: patch-av,v 1.2 2011/06/15 11:45:08 adam Exp $
 
---- script/installman.sh.orig	2007-03-01 13:55:02.000000000 +0900
-+++ script/installman.sh
-@@ -33,7 +33,7 @@ for lang in $langs; do
-     langdir=$MANDIR/$lang
-     for d in $MANDIR $langdir $langdir/man1 $langdir/man5 $langdir/man7 $langdir/man8; do
- 	if [ ! -d $d ]; then
--	    mkdir $d
-+	    mkdir -p $d
- 	    if [ ! -d $d ]; then
- 		echo Failed to make directory $d, does $USER have privileges?
- 		exit 1
+--- smbd/server.c.orig	2010-10-07 16:41:16.000000000 +0000
++++ smbd/server.c
+@@ -1210,6 +1210,9 @@ extern void build_options(bool screen);
+ 	if (!directory_exist(lp_lockdir()))
+ 		mkdir(lp_lockdir(), 0755);
+ 
++	if (!directory_exist(lp_statedir()))
++		mkdir(lp_statedir(), 0755);
++
+ 	if (is_daemon)
+ 		pidfile_create("smbd");
+ 

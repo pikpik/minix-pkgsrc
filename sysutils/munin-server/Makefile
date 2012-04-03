@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2010/12/03 20:24:58 abs Exp $
+# $NetBSD: Makefile,v 1.13 2011/08/14 14:52:49 obache Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV:S:-server-:_:}
@@ -8,7 +8,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=munin/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://munin.sourceforge.net/
+HOMEPAGE=	http://munin-monitoring.org/
 COMMENT=	System monitoring tool, server version
 
 PKG_DESTDIR_SUPPORT=	destdir

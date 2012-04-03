@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.56 2011/04/22 13:44:03 obache Exp $
+# $NetBSD: Makefile,v 1.62 2012/02/06 12:40:51 wiz Exp $
 #
 
 DISTNAME=	mail-notification-5.4
-PKGREVISION=	8
+PKGREVISION=	13
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://savannah.nongnu.org/download/mailnotify/
 EXTRACT_SUFX=	.tar.bz2
@@ -17,6 +17,7 @@ HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	./jb configure
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES
+LDFLAGS+=		-lX11
 
 CONFIGURE_ARGS=		prefix="${PREFIX}" destdir="${DESTDIR}" sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	cc="${CC}" cflags="${CFLAGS}" cppflags="${CPPFLAGS}" ldflags="${LDFLAGS}"

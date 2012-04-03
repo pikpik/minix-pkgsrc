@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2010/11/09 08:18:56 obache Exp $
+# $NetBSD: options.mk,v 1.5 2011/12/20 11:59:46 obache Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cyrus-imapd
@@ -28,10 +28,26 @@ CONFIGURE_ARGS+=	--with-gss_impl=${GSSIMPL.${KRB5_TYPE}}
 GSSIMPL.heimdal=	heimdal
 GSSIMPL.mit-krb5=	mit
 CONFIGURE_ENV+=		COMPILE_ET=${KRB5BASE}/bin/compile_et
-COMERRBASE=		${KRB5BASE}
 .else
 CONFIGURE_ARGS+=	--without-krb
 CONFIGURE_ARGS+=	--disable-gssapi
+CHECK_BUILTIN.heimdal:=		yes
+.  include "../../security/heimdal/builtin.mk"
+CHECK_BUILTIN.heimdal:=		no
+CHECK_BUILTIN.mit-krb5:=	yes
+.  include "../../security/mit-krb5/builtin.mk"
+CHECK_BUILTIN.mit-krb5:=	no
+.  if ( !empty(USE_BUILTIN.heimdal:M[Yy][Ee][Ss]) || \
+	!empty(USE_BUILTIN.mit-krb5:M[Yy][Ee][Ss])) && \
+        exists(/usr/bin/compile_et) && exists(/usr/include/krb5/com_err.h)
+CPPFLAGS+=	-I/usr/include/krb5
+CONFIGURE_ENV+=	COMPILE_ET=/usr/bin/compile_et
+.  elif ${OPSYS} != "Linux" && \
+	exists(/usr/bin/compile_et) && exists(/usr/include/com_err.h)
+CONFIGURE_ENV+=	COMPILE_ET=/usr/bin/compile_et
+.  else
+CONFIGURE_ARGS+=	--with-com-err=yes
+.  endif
 .endif
 
 .if !empty(PKG_OPTIONS:Mldap)

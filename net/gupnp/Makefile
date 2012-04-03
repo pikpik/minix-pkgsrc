@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2011/04/22 13:42:17 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/03/03 00:12:01 wiz Exp $
 #
 
 DISTNAME=	gupnp-0.13.3
-PKGREVISION=	3
+PKGREVISION=	7
 CATEGORIES=	net
 MASTER_SITES=	http://www.gupnp.org/sites/all/files/sources/
 
@@ -21,7 +21,7 @@ REPLACE_PYTHON=	tools/gupnp-binding-tool
 
 .include "../../mk/bsd.prefs.mk"
 
-.if !empty(OPSYS:M*BSD) || ${OPSYS} == "DragonFly"
+.if !empty(OPSYS:M*BSD) || ${OPSYS} == "DragonFly" || ${OPSYS} == "Darwin"
 pre-configure:
 	cp ${FILESDIR}/uuid.pc ${BUILDLINK_DIR}/lib/pkgconfig/
 .else

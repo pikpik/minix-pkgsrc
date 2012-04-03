@@ -1,9 +1,9 @@
-$NetBSD$
+$NetBSD: patch-de,v 1.1 2011/05/07 18:39:06 tnn Exp $
 
---- ../tools/hotplug/common/Makefile.orig	2011-03-25 10:42:50.000000000 +0000
-+++ ../tools/hotplug/common/Makefile
+--- ../tools/hotplug/common/Makefile.orig	2011-10-20 19:05:42.000000000 +0200
++++ ../tools/hotplug/common/Makefile	2011-10-26 13:57:09.000000000 +0200
 @@ -1,5 +1,6 @@
- XEN_ROOT = ../../..
+ XEN_ROOT = $(CURDIR)/../../..
  include $(XEN_ROOT)/tools/Rules.mk
 +XEN_SCRIPT_DIR = ${EGDIR}/scripts
  

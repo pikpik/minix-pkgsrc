@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2011/01/13 13:38:49 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/01/28 11:00:57 wiz Exp $
 #
 
 DISTNAME=	mnemosyne-1.2.2
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mnemosyne-proj/}
 EXTRACT_SUFX=	.tgz

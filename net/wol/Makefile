@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/06/20 01:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2011/04/22 13:44:29 obache Exp $
 
 DISTNAME=	wol-0.7.1
 PKGREVISION=	3
@@ -12,7 +12,7 @@ COMMENT=	Small Wake On Lan client
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		gmake perl
+USE_TOOLS+=		gmake perl pod2man
 USE_PKGLOCALEDIR=	yes
 INFO_FILES=		# PLIST
 

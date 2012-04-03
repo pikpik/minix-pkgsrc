@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/11/29 07:32:17 obache Exp $
 #
 
 DISTNAME=	topless-1.52
@@ -12,7 +12,7 @@ LICENSE=	2-clause-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=	perl
+USE_TOOLS+=	perl pod2man
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

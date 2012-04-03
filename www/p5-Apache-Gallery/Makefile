@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.47 2011/01/13 13:39:40 wiz Exp $
+# $NetBSD: Makefile,v 1.50 2012/02/02 09:47:19 hans Exp $
 #
 
 DISTNAME=	Apache-Gallery-0.9.1
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	14
+PKGREVISION=	16
 SVR4_PKGNAME=	p5aga
 CATEGORIES=	www graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache/}
@@ -72,7 +72,7 @@ post-patch:
 	    ${WRKSRC}/htdocs/gallery-new.css
 
 pre-configure:
-	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM}
+	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM} -f
 
 post-build:
 	@for j in default new; \

@@ -1,5 +1,0 @@
-$NetBSD: distinfo,v 1.2 2010/09/03 05:36:14 sno Exp $
-
-SHA1 (Devel-CheckLib-0.93.tar.gz) = 869572bf51e26f7a6069b569379a231f92e9459c
-RMD160 (Devel-CheckLib-0.93.tar.gz) = 1dff84b4b9a2644e648429a354e9864037f4b044
-Size (Devel-CheckLib-0.93.tar.gz) = 12515 bytes

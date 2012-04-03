@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.54 2011/05/11 11:21:36 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.59 2012/02/06 12:39:34 wiz Exp $
 #
 
-DISTNAME=	pcb-20100929
+DISTNAME=	pcb-20110918
+PKGREVISION=	2
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pcb/}
 
 MAINTAINER=	dmcmahill@NetBSD.org
-HOMEPAGE=	http://pcb.sourceforge.net/
+HOMEPAGE=	http://pcb.gpleda.org/
 COMMENT=	Printed circuit board layout system
 LICENSE=	gnu-gpl-v2
 
@@ -32,6 +33,9 @@ CONFIGURE_ARGS+=	--disable-update-mime-database
 USE_TOOLS+=		bison gm4:run gmake intltool lex wish:run pkg-config
 USE_PKGLOCALEDIR=	yes
 INFO_FILES=		yes
+LDFLAGS+=		-lstdc++  # direct link as required by ld v2.22
+
+USE_LANGUAGES=		c c++
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.pcb
 PKG_SUPPORTED_OPTIONS=		png
@@ -46,6 +50,8 @@ PKG_SUGGESTED_OPTIONS=		gtk png
 .include "../../mk/motif.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-gui=lesstif
 .elif !empty(PKG_OPTIONS:Mgtk)
+.include "../../graphics/gtkglext/buildlink3.mk"
+.include "../../graphics/glu/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-gui=gtk
 .elif !empty(PKG_OPTIONS:Mbatch)
@@ -76,6 +82,7 @@ post-install:
 	${RM} ${DESTDIR}${PREFIX}/share/pcb/tools/PCB2HPGL
 	${RM} ${DESTDIR}${PREFIX}/share/pcb/tools/tgo2pcb.tcl
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 # NOTE:  glib is needed by the core of pcb and not just the GTK gui.
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

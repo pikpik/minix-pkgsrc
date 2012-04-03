@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2011/02/12 12:24:44 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/03/03 00:12:17 wiz Exp $
 #
 
 DISTNAME=	mx-1.0.4
 PKGNAME=	clutter-mx-1.0.4
-PKGREVISION=	2
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://source.clutter-project.org/sources/mx/1.0/
 EXTRACT_SUFX=	.tar.bz2
@@ -21,6 +21,8 @@ USE_TOOLS+=	pkg-config intltool gmake msgfmt msgmerge xgettext
 
 PKGCONFIG_OVERRIDE+=	mx-gtk.pc.in
 PKGCONFIG_OVERRIDE+=	mx.pc.in
+
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
 
 .include "../../graphics/clutter/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"

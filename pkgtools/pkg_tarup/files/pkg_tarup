@@ -1,6 +1,6 @@
 #! @SH@
 #
-# $Id: pkg_tarup,v 1.23 2009/11/05 16:22:47 joerg Exp $
+# $Id: pkg_tarup,v 1.26 2012/01/03 12:57:20 joerg Exp $
 #
 # Tar up installed package
 #
@@ -136,7 +136,7 @@ create_package()
 	# It's kind of silly to jump through hoops to get stuff with spaces
 	# here, since we have no way to pass it to pkg_create, but maybe someone
 	# will care enough to fix the rest of this.
-	PKG_PREFIX=`pkg_info -qp "${PKG}" | ${HEAD} -1 | ${SED} -e's/^@cwd[[:space:]]*//'`
+	PKG_PREFIX=`pkg_info -K ${PKG_DBDIR} -qp "${PKG}" | ${HEAD} -1 | ${SED} -e's/^@cwd[[:space:]]*//'`
 
 	PKG_ARGS="${PKG_ARGS} -v"
 	PKG_ARGS="${PKG_ARGS} -f \"${PLIST}\""
@@ -164,7 +164,7 @@ add_to_list()
 	IFS="
 "
 	# Get expanded name, and escape quotes
-	for rPKG in `pkg_info -e "$1" | ${SED} -e's/\"/\\\"/g'` ; do
+	for rPKG in `pkg_info -K ${PKG_DBDIR} -e "$1" | ${SED} -e's/\"/\\\"/g'` ; do
 		if [ -z "$rPKG" -o -f "${PKG_DBDIR}/${rPKG}" ] ; then
 			${ECHO} "Error: package $1 not found"
 			usage
@@ -220,7 +220,7 @@ add_all_deps_to_list()
 	oIFS="$IFS"
 	IFS="
 "
-	for f in `pkg_info -qf "$1" | ${GREP} @pkgdep | ${SED} -e's/^@pkgdep[[:space:]]*//' ` ; do
+	for f in `pkg_info -K ${PKG_DBDIR} -qf "$1" | ${GREP} @pkgdep | ${SED} -e's/^@pkgdep[[:space:]]*//' ` ; do
 		add_to_list "$f"
 		add_all_deps_to_list "$f"
 	done
@@ -266,18 +266,8 @@ exit 0
  - maybe the squirelling away of +REQUIRED_BY should be done here
    instead of in the bsd.pkg.mk framework that normally calls this.
 
+future:
 
-mtree file considerations:
-
- - keeping uncompressed mtree file adds ~10% to the size of /var/db/pkg
-
- - could gzip file, space saving: 5kb->850b (plus some intelligence to
-   uncompress them when needed)
-
- - not keeping mtree file results in pkgs w/o mtree file (but should work)
-
-integration:
-
- - how/where?  I'd prefer not to have yet another pkg_* utility flying
-   around, integration into pkg_admin would be nice.  But how merge a
-   shell script into a C executable?  REWRITE in C of course!  ;-)
+ - this script very likely doesn't create a clean copy of the old package,
+   and therefore is rather meant to be a hack to recreate packages
+   instead of a clean way of packing up things after having them installed.

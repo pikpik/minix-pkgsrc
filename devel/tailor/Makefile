@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2010/02/10 19:17:37 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/01/28 10:43:00 obache Exp $
 #
 
 DISTNAME=		tailor-0.9.35
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		devel scm
 MASTER_SITES=		http://darcs.arstecnica.it/
 
@@ -13,7 +13,8 @@ LICENSE=		gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYDISTUTILSPKG=		yes
+USE_LANGUAGES=		#none
+
 PYTHON_PATCH_SCRIPTS=	tailor
 
 AUTO_MKDIRS=		yes

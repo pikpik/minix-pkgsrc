@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2010/01/17 12:02:14 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2011/12/06 01:21:35 marino Exp $
 #
 
 DISTNAME=		opal-3.6.6
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		devel net comms
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/opal/3.6/}
 EXTRACT_SUFX=		.tar.bz2
@@ -30,8 +30,6 @@ CONFIGURE_ARGS+=	--disable-ffmpeg-h263
 CONFIGURE_ARGS+=	--disable-localgsm
 CONFIGURE_ARGS+=	--disable-localspeex
 
-CFLAGS+=		-D__STDC_CONSTANT_MACROS
-
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 USE_TOOLS+=		pkg-config
@@ -50,7 +48,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/version.h ${DESTDIR}${PREFIX}/share/opal
 
 # pkgsrc's gsm is shlib, need additional linker flags.
-GSM_LIBS=		${LINKER_RPATH_FLAG}${BUILDLINK_PREFIX.gsm}/lib
+GSM_LIBS=		${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.gsm}/lib
 GSM_LIBS+=		-L${BUILDLINK_PREFIX.gsm}/lib -lgsm
 SUBST_CLASSES+=		gsm
 SUBST_STAGE.gsm=	pre-configure

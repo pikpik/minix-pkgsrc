@@ -1,11 +1,11 @@
-$NetBSD: distinfo,v 1.136 2011/07/27 06:04:54 taca Exp $
+$NetBSD: distinfo,v 1.141 2012/02/27 03:01:30 taca Exp $
 
-SHA1 (postfix-2.8.5.tar.gz) = 49ef711c80b5a3434258ab24ae00940932503e80
-RMD160 (postfix-2.8.5.tar.gz) = db4761f14b146c233426fa1afe49782e64f0c9e0
-Size (postfix-2.8.5.tar.gz) = 3647010 bytes
+SHA1 (postfix-2.8.9.tar.gz) = 2404d369e7ae90cdd9a0e4e185c4699a16c9fe81
+RMD160 (postfix-2.8.9.tar.gz) = db540c199ca66457e0ca65b1f95c9745249a1254
+Size (postfix-2.8.9.tar.gz) = 3648498 bytes
 SHA1 (patch-aa) = 6ab1ff5452f04c178e5700d2d02c18dd56133d62
-SHA1 (patch-ag) = 50397b82318bdb45a62229442d6e14da24ce4a50
-SHA1 (patch-ai) = 9d9cda54a1acf8ffdc6c5e5b9a274b69045a78e7
+SHA1 (patch-ag) = d6fb0113e6ffc39deb211c206874f7f40175308f
+SHA1 (patch-ai) = 07d046a0aae6d0f5b9d8351663385eb76096dcd6
 SHA1 (patch-src_flush_flush.c) = 41db7a74bb214b80239305272a3b44a232659442
 SHA1 (patch-src_postdrop_postdrop.c) = e50097197996387bb7befd891eee7936021ed4d0
 SHA1 (patch-src_postscreen_postscreen__early.c) = 093ba050d61400ffc6311fce813bd57de6c07117

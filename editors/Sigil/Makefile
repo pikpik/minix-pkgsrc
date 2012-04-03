@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2011/10/13 10:42:01 ryoon Exp $
+# $NetBSD: Makefile,v 1.29 2012/03/01 15:11:34 ryoon Exp $
 #
 
-DISTNAME=	Sigil-0.4.2-Code
+DISTNAME=	Sigil-0.5.3-Code
 PKGNAME=	${DISTNAME:S/-Code//}
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://sigil.googlecode.com/files/
 EXTRACT_SUFX=	.zip
@@ -20,13 +21,7 @@ WRKSRC=		${WRKDIR}
 
 USE_LANGUAGES=	c c++
 USE_CMAKE=	yes
-
-SUBST_CLASSES+=		d2u
-SUBST_STAGE.d2u=	post-extract
-SUBST_MESSAGE.d2u=	Removing CR end-of-line markers.
-SUBST_FILES.d2u=	*txt
-SUBST_FILES.d2u+=	src/ZipArchive/*cpp
-SUBST_FILTER_CMD.d2u=	${TR} -d '\r'
+USE_TOOLS+=	pkg-config
 
 BUILDLINK_TRANSFORM+=	l:BoostParts:boost_date_time:boost_filesystem:boost_regex:boost_system:boost_thread:boost_program_options
 BUILDLINK_TRANSFORM+=	l:Xerces:xerces-c
@@ -41,6 +36,8 @@ _WRAP_EXTRA_ARGS.CXX+=	-std=c++0x
 .include "../../textproc/xerces-c/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../devel/boost-libs/buildlink3.mk"
+.include "../../devel/pcre/buildlink3.mk"
+.include "../../textproc/hunspell/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"

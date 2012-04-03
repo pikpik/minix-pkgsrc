@@ -6,11 +6,11 @@ man/man1/skf.1
 share/doc/skf/CHANGES_ja.txt
 share/doc/skf/README.txt
 share/doc/skf/copyright
-share/doc/skf/doc/1.Introduction.txt
-share/doc/skf/doc/2.intenal_code.txt
-share/doc/skf/doc/3.charset.txt
-share/doc/skf/doc/4.moji_table.txt
-share/doc/skf/doc/5.languages.txt
+share/doc/skf/doc/1.Introduction.txt.gz
+share/doc/skf/doc/2.intenal_code.txt.gz
+share/doc/skf/doc/3.charset.txt.gz
+share/doc/skf/doc/4.moji_table.txt.gz
+share/doc/skf/doc/5.languages.txt.gz
 share/locale/ja/LC_MESSAGES/skf.mo
 share/skf/lib/${VERSION}/iIM34@.stb
 share/skf/lib/${VERSION}/iIM34E.stb
@@ -117,7 +117,6 @@ share/skf/lib/${VERSION}/iNM34O.stb
 share/skf/lib/${VERSION}/iNM34P.stb
 share/skf/lib/${VERSION}/iNM34Q.stb
 share/skf/lib/${VERSION}/iNM35C.stb
-share/skf/lib/${VERSION}/iNM35D.stb
 share/skf/lib/${VERSION}/iNM35F.stb
 share/skf/lib/${VERSION}/iNM35G.stb
 share/skf/lib/${VERSION}/iNM35J.stb
@@ -135,6 +134,7 @@ share/skf/lib/${VERSION}/iNS34W.stb
 share/skf/lib/${VERSION}/iNS34X.stb
 share/skf/lib/${VERSION}/iNS34Y.stb
 share/skf/lib/${VERSION}/iNS34Z.stb
+share/skf/lib/${VERSION}/iNS35D.stb
 share/skf/lib/${VERSION}/iNS35E.stb
 share/skf/lib/${VERSION}/iNS35F.stb
 share/skf/lib/${VERSION}/iNS35G.stb

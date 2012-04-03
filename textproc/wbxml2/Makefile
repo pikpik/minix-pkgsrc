@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/01/12 14:05:17 dillo Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/20 01:09:38 joerg Exp $
 #
 
 DISTNAME=	wbxml2-0.9.2
@@ -18,6 +18,8 @@ USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 
 PKGCONFIG_OVERRIDE+=	libwbxml2.pc.in
+
+CPPFLAGS.SunOS+=	-std=c99 -D_XOPEN_SOURCE=600
 
 pre-configure:
 	cd ${WRKSRC} && \

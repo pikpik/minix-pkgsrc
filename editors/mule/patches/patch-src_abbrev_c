@@ -1,0 +1,14 @@
+$NetBSD$
+
+- use standard headers
+
+--- src/abbrev.c~	1993-09-13 11:20:03.000000000 +0000
++++ src/abbrev.c
+@@ -20,6 +20,7 @@ the Free Software Foundation, 675 Mass A
+ 
+ #include <config.h>
+ #include <stdio.h>
++#include <stdlib.h>
+ #include "lisp.h"
+ #include "commands.h"
+ #include "buffer.h"

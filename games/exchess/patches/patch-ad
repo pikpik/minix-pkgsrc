@@ -1,8 +1,27 @@
 $NetBSD$
 
---- main.cpp.orig	2000-04-01 07:46:20.000000000 +0200
-+++ main.cpp	2004-02-14 04:58:19.000000000 +0100
-@@ -17,6 +17,7 @@
+--- main.cpp.orig	2000-04-01 07:46:20.000000000 +0000
++++ main.cpp
+@@ -3,20 +3,23 @@
+ 
+ /*  Main functions controlling program */
+ 
+-#include <iostream.h>
+-#include <iomanip.h>
++#include <iostream>
++#include <iomanip>
+ #include <stdlib.h>
+ #include <string.h>
+ #include <math.h>
+ #include <stdio.h>
+ #include <signal.h>
+-#include <fstream.h>
++#include <fstream>
+ 
+ #include "define.h"
+ 
++using namespace std;
++
  #if UNIX
   #include <sys/types.h>
   #include <sys/time.h>
@@ -10,7 +29,15 @@ $NetBSD$
  #else
   #include <windows.h>
   #include <time.h>
-@@ -56,7 +57,7 @@
+@@ -49,14 +52,14 @@ ofstream logfile;
+ int MAX_LOGS = 100;
+ 
+ // xboard flag
+-int xboard, post, ics, ALLEG = 0, hintflag = 0, count = 1;
++int xboard, post, ics, ALLEG = 0, hintflag = 0, my_count = 1;
+ int ponder_flag = 1, learn_bk, shout_book;
+ int no_book = 0;  // count of moves without a book move
+ position reset_pos;
  extern int ponder, last_ponder, learn_count, learned;
  extern unsigned long TAB_SIZE, PAWN_SIZE;
  
@@ -19,7 +46,7 @@ $NetBSD$
  char exec_path[100];
  
  // performance function
-@@ -93,16 +94,7 @@
+@@ -93,16 +96,7 @@ int main(int argc, char *argv[])
    learn_count = 0; learned = 0; learn_bk = 1; shout_book = 0;
  
  
@@ -37,7 +64,7 @@ $NetBSD$
  
   /* initializing hash tables, check tables, scoring parameters,
      and the random number seed and tablebases */
-@@ -117,7 +109,7 @@
+@@ -117,7 +111,7 @@ int main(int argc, char *argv[])
       if(li < 10) sprintf(lfile, "run_log.00%i", li);
       else if(li < 100) sprintf(lfile, "run_log.0%i", li);
       else sprintf(lfile, "run_log.%i", li);
@@ -46,3 +73,21 @@ $NetBSD$
       if(logfile) break;
      }
      if(!logfile) {
+@@ -164,7 +158,7 @@ int main(int argc, char *argv[])
+ 
+   /* main loop */   
+ 
+-  while (count > 0)
++  while (my_count > 0)
+    {
+ 
+     // find a hint move, check book first then look in pv
+@@ -745,7 +739,7 @@ void parse_command()
+   else if(!strcmp(response, "nopost")) { post = 0; }
+   else if(!strcmp(response, "probe")) { cout << probe_tb(&game_pos,0) << "\n"; }
+   else if(!strcmp(response, "save") || !strcmp(response, "SR")) { save_game(); }
+-  else if(!strcmp(response, "quit")) { game_over = 1; count = 0; }
++  else if(!strcmp(response, "quit")) { game_over = 1; my_count = 0; }
+   else if(!strcmp(response, "performance")) { performance(); }
+   else if(!strcmp(response, "setboard"))
+    { cin >> inboard >> ms >> castle >> ep; mttc = omttc; game_over = 0;

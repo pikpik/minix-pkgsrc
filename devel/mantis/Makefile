@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2010/09/30 08:27:52 obache Exp $
+# $NetBSD: Makefile,v 1.37 2011/09/16 05:46:24 obache Exp $
 
 DISTNAME=	mantisbt-1.1.7
 PKGNAME=	${DISTNAME:S/mantisbt/mantis/}
@@ -66,7 +66,7 @@ do-install:
 		${RM} ${WRKSRC}/${f}
 .	endfor
 
-	cd ${WRKSRC} && ${FIND} . -name .cvsignore -print | ${XARGS} ${RM}
+	cd ${WRKSRC} && ${FIND} . -name .cvsignore -print | ${XARGS} ${RM} -f
 	cd ${WRKSRC} && pax -rwpppm . ${DESTDIR}${MANTIS_HOME}
 
 	cd ${DESTDIR}${MANTIS_HOME} && \

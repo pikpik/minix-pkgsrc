@@ -1,7 +1,9 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.3 2012/01/26 14:14:28 cheusov Exp $
 bin/distbb
 bin/distbb_diff
 libexec/distbb/common
+libexec/distbb/distbb_chroot
+libexec/distbb/distbb_grep
 libexec/distbb/gen_queue
 libexec/distbb/gen_weights
 libexec/distbb/make-depends

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2011/06/15 15:19:44 taca Exp $
+# $NetBSD: Makefile,v 1.14 2011/12/15 16:05:58 taca Exp $
 #
 
-DISTNAME=	fengoffice_1.7.5
+DISTNAME=	fengoffice_2.0.0
 PKGNAME=	${DISTNAME:S/_/-/:C/.rc$/rc1/}
-PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=opengoo/}
 EXTRACT_SUFX=	.zip
@@ -11,7 +10,7 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://fengoffice.com/web/community/community_index.php
 COMMENT=	Easy to use Open Source Web Office
-LICENSE=	gnu-gpl-v3
+LICENSE=	gnu-agpl-v3
 
 CONFLICTS+=	opengoo-[0-9]*
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2011/02/06 17:06:17 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/03/19 22:53:57 markd Exp $
 
 DISTNAME=	kipi-plugins-0.1.7
-PKGREVISION=	13
+PKGREVISION=	18
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kipi/}
 EXTRACT_SUFX=	.tar.bz2
@@ -29,9 +29,9 @@ BUILDLINK_API_DEPENDS.libgpod+=	libgpod>=0.7.0
 .include "../../devel/libgphoto2/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 BUILDLINK_API_DEPENDS.libkdcraw+=	libkdcraw>=0.1.4
-.include "../../graphics/libkdcraw/buildlink3.mk"
-.include "../../graphics/libkexiv2/buildlink3.mk"
-.include "../../graphics/libkipi/buildlink3.mk"
+.include "../../graphics/libkdcraw-kde3/buildlink3.mk"
+.include "../../graphics/libkexiv2-kde3/buildlink3.mk"
+.include "../../graphics/libkipi-kde3/buildlink3.mk"
 .include "../../multimedia/mjpegtools/buildlink3.mk"
 # gdk from gtk2 is needed for libgpod artwork support
 BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.10.0

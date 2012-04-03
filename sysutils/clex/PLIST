@@ -1,3 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2005/12/01 03:54:26 minskim Exp $
+bin/cfg-clex
 bin/clex
+bin/kbd-test
+man/man1/cfg-clex.1
 man/man1/clex.1
+man/man1/kbd-test.1

@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.1 2007/05/30 01:22:13 schmonz Exp $
+# $NetBSD: builtin.mk,v 1.2 2008/10/05 21:36:34 cube Exp $
 
 BUILTIN_PKG:=	Xrandr
 
@@ -12,11 +12,10 @@ BUILTIN_FIND_FILES.H_XRANDR=	${X11BASE}/include/X11/extensions/Xrandr.h
 ### set IS_BUILTIN.<pkg> appropriately ("yes" or "no").
 ###
 .if !defined(IS_BUILTIN.Xrandr)
-IS_BUILTIN.Xrandr=	no
 .  if empty(H_XRANDR:M__nonexistent__)
-BUILTIN_IMAKE_CHECK:=	Xrandr:BuildRandRLibrary
-.    include "../../mk/buildlink3/imake-check.mk"
-IS_BUILTIN.Xrandr=	${BUILTIN_IMAKE_CHECK.Xrandr}
+IS_BUILTIN.Xrandr=	yes
+.  else
+IS_BUILTIN.Xrandr=	no
 .  endif
 .endif
 MAKEVARS+=	IS_BUILTIN.Xrandr

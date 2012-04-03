@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/03/16 16:02:20 taca Exp $
+# $NetBSD: Makefile,v 1.6 2012/01/11 14:50:44 hans Exp $
 #
 
 DISTNAME=	ampache-3.5.3
@@ -40,6 +40,8 @@ CONF_FILES=		${EGDIR}/ampache.conf \
 PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+=	${EGDIR}
 
+REPLACE_SH=		locale/base/gather-messages.sh
+
 post-extract:
 	${CP} ${FILESDIR}/ampache.conf ${WRKSRC}/ampache.conf
 
@@ -48,7 +50,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/ampache.conf ${DESTDIR}${EGDIR}/ampache.conf
 	set -e; cd ${WRKSRC} && pax -rw -pe . ${DESTDIR}${INSTDIR}
 	${RM} -f ${DESTDIR}${INSTDIR}/ampache.conf
-	${FIND} ${DESTDIR}${INSTDIR} -name '*.orig' | ${XARGS} ${RM}
+	${FIND} ${DESTDIR}${INSTDIR} -name '*.orig' | ${XARGS} ${RM} -f
 
 .include "../../mk/apache.mk"
 .include "../../lang/php/phpversion.mk"

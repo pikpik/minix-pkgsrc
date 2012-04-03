@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.6 2011/04/22 13:44:26 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/03/03 00:13:46 wiz Exp $
 #
 
-VERSION=	0.9.2
+VERSION=	0.9.8
 DISTNAME=	nagstamon_${VERSION}
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	6
+PKGREVISION=	2
 CATEGORIES=	net python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nagstamon/}
 
 MAINTAINER=	imil@gcu.info
-HOMEPAGE=	http://nagstamon.sf.net/
+HOMEPAGE=	http://nagstamon.ifw-dresden.de/
 COMMENT=	Nagios status monitor which takes place in systray or on desktop
 LICENSE=	gnu-gpl-v2
 
@@ -17,24 +17,26 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		# none
 PYDISTUTILSPKG=		yes
 
-# Upstream's aware of this
-SUBST_CLASSES+=		typo
-SUBST_STAGE.typo=	post-extract
-SUBST_FILES.typo=	${WRKSRC}/Nagstamon/nagstamonGUI.py
-SUBST_SED.typo=		-e 's|\#!/usr/bin/py\ .*|\#!/usr/bin/python|'
-SUBST_MESSAGE.typo=	Fixing interpreter typo.
+WRKSRC=			${WRKDIR}/Nagstamon
 
 INSTALLATION_DIRS+=	${PKGMANDIR}/man1
-REPLACE_PYTHON=		${WRKSRC}/Nagstamon/*.py
-REPLACE_PYTHON+=	${WRKSRC}/Nagstamon/nagstamon
+REPLACE_PYTHON=		${WRKSRC}/*.py
+REPLACE_PYTHON+=	${WRKSRC}/Nagstamon/Server/Multisite.py
 
 DEPENDS+=	${PYPKGPREFIX}-lxml>=2.2.4:../../textproc/py-lxml
 DEPENDS+=	${PYPKGPREFIX}-libxslt>=1.1.24:../../textproc/py-libxslt
 DEPENDS+=	sox>=14.0.1:../../audio/sox
 
+SUBST_CLASSES+=		mandir
+SUBST_STAGE.mandir=	pre-configure
+SUBST_SED.mandir=	-e s,@PKGMANDIR@,${PKGMANDIR},g
+SUBST_FILES.mandir=	setup.py
+
+# Upstream renamed script from nagstamon to nagstamon.py
+# Preserve compatibility with previous version of the package
 post-install:
-	${INSTALL_MAN} files/nagstamon.1 \
-		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/
+	${LN} -s ${DESTDIR}${PREFIX}/bin/nagstamon.py \
+		${DESTDIR}${PREFIX}/bin/nagstamon
 
 .include "../../graphics/librsvg/buildlink3.mk"
 .include "../../textproc/py-libxml2/buildlink3.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.97 2011/01/18 10:08:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.101 2012/02/06 12:40:52 wiz Exp $
 #
 
 DISTNAME=		gcalctool-5.32.2
-PKGREVISION=		3
+PKGREVISION=		6
 CATEGORIES=		math gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gcalctool/5.32/}
 EXTRACT_SUFX=		.tar.bz2
@@ -17,10 +17,8 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		HAVE_YACC=yes
 
 USE_LIBTOOL=		yes
-USE_TOOLS+=		bison gmake intltool flex msgfmt pkg-config
+USE_TOOLS+=		bison gmake gsed intltool flex msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
-
-BUILD_DEPENDS+=	gsed-[0-9]*:../../textproc/gsed
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

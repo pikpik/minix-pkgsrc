@@ -8,6 +8,7 @@ ${PYSITELIB}/FSM.pyo
 ${PYSITELIB}/fdpexpect.py
 ${PYSITELIB}/fdpexpect.pyc
 ${PYSITELIB}/fdpexpect.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/pexpect.py
 ${PYSITELIB}/pexpect.pyc
 ${PYSITELIB}/pexpect.pyo

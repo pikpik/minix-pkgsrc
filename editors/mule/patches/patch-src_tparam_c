@@ -1,0 +1,15 @@
+$NetBSD$
+
+- lp64 fixes
+
+--- src/tparam.c~	1995-02-17 07:58:11.000000000 +0000
++++ src/tparam.c
+@@ -69,7 +69,7 @@ xrealloc (ptr, size)
+   return tem;
+ }
+ #else
+-#ifdef OSF1
++#if defined(OSF1) || defined(_LP64)
+ extern long *xmalloc();
+ extern long *xrealloc();
+ #endif

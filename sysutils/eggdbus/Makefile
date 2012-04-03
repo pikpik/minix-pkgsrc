@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2011/03/29 10:18:18 adam Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/06 12:41:32 wiz Exp $
 
 DISTNAME=	eggdbus-0.6
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://cgit.freedesktop.org/~david/eggdbus/snapshot/
 EXTRACT_SUFX=	.tar.bz2

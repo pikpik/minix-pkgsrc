@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2010/02/11 21:22:17 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2012/02/06 12:41:11 wiz Exp $
 #
 
 DISTNAME=		gnet-1.1.8
 PKGNAME=		gnet1-1.1.8
-PKGREVISION=		5
+PKGREVISION=		7
 CATEGORIES=		net
 MASTER_SITES=		http://www.gnetlibrary.org/src/
 

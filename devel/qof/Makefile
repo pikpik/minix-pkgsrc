@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2010/06/11 23:22:03 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/02/06 12:39:57 wiz Exp $
 #
 
 DISTNAME=	qof-0.7.5
-PKGREVISION=	7
+PKGREVISION=	9
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qof/}
 

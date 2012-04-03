@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/04/16 16:10:59 asau Exp $
+# $NetBSD: Makefile,v 1.14 2011/05/02 11:35:18 obache Exp $
 
 DISTNAME=	tinyscheme-1.40
 CATEGORIES=	lang
@@ -17,4 +17,9 @@ MAKE_FILE=	makefile
 
 INSTALLATION_DIRS=	bin include lib share/tinyscheme
 
+MAKE_FLAGS+=		SYS_LIBS=-lm\ ${BUILDLINK_LDADD.dl:Q}
+MAKE_FLAGS+=		CC=${CC:Q} LDFLAGS=${LDFLAGS:Q} DEBUG=
+MAKE_FLAGS+=		LD=${CC:Q}
+
+.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

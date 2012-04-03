@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/06/26 09:56:36 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2011/08/14 12:26:05 obache Exp $
 #
 
 DISTNAME=	RTx-Shredder-0.03
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=RTx/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~ruz/RTx-Shredder/
 COMMENT=	Utility to clean a RT database
+
+BROKEN=		PLIST overlap with dependency (rt3)
 
 DEPENDS+=	rt>=3.4.5:../../devel/rt3
 BUILD_DEPENDS+=	p5-Test-Deep-[0-9]*:../../devel/p5-Test-Deep

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2010/01/21 17:41:07 heinz Exp $
+# $NetBSD: Makefile,v 1.46 2011/10/31 22:58:45 sbd Exp $
 #
 
 DISTNAME=	procmail-3.22
@@ -30,6 +30,10 @@ PROCMAIL_TRUSTED_IDS?=\
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${PKGMANDIR}/man5
 
+### Inlining functions (implied by -O3 or higher) cause the strstr() test
+### to enter an infinite loop so disable it.  This fixes PR pkg/30999.
+CFLAGS+=        -fno-inline-functions
+
 pre-configure:
 	${ECHO} "#define TRUSTED_IDS {${PROCMAIL_TRUSTED_IDS:Q}}"	\
 	>> ${WRKSRC}/config.h
@@ -57,7 +61,7 @@ do-install:
 	for f in procmailex.5 procmailrc.5 procmailsc.5; do		\
 		${INSTALL_MAN} $$f ${DESTDIR}${PREFIX}/${PKGMANDIR}/man5/$$f; \
 	done
-	${SH} ${WRKSRC}/suid.sh
+	DESTDIR=${DESTDIR:Q} ${SH} ${WRKSRC}/suid.sh
 .endif
 
 .include "../../mk/bsd.pkg.mk"

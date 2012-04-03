@@ -1,6 +1,5 @@
-$NetBSD: distinfo,v 1.4 2010/11/11 23:05:17 gls Exp $
+$NetBSD: distinfo,v 1.8 2011/12/15 12:29:50 wiz Exp $
 
-SHA1 (libgee-0.6.1.tar.bz2) = bc3d2b3f713558fc332d9cc0ca7da973c9bb92d7
-RMD160 (libgee-0.6.1.tar.bz2) = 0b0b39f103f8e0f189aa96c19584964e3096a32a
-Size (libgee-0.6.1.tar.bz2) = 494425 bytes
-SHA1 (patch-aa) = 034f3092ac768d08a5e582d004197dc71f763bc5
+SHA1 (libgee-0.6.4.tar.xz) = cbed7cf7bb1fe44fc03f2d7aee8090c37378777c
+RMD160 (libgee-0.6.4.tar.xz) = 6f4c3f0bf522e88fb8ea3941efeb1b46915b4577
+Size (libgee-0.6.4.tar.xz) = 432732 bytes

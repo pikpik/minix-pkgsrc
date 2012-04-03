@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.81 2011/07/12 16:30:28 drochner Exp $
+# $NetBSD: Makefile,v 1.85 2011/11/15 19:42:17 drochner Exp $
 
-DISTNAME=	freetype-2.4.6
+DISTNAME=	freetype-2.4.9
 PKGNAME=	${DISTNAME:S/-/2-/}
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=freetype/}
@@ -62,5 +62,6 @@ post-configure:
 	${MKDIR} ${WRKSRC}/.libs
 .endif
 
+.include "../../archivers/bzip2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

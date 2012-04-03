@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2011/10/07 12:28:11 taca Exp $
+# $NetBSD: Makefile,v 1.10 2012/03/14 16:35:29 taca Exp $
 #
 
 DISTNAME=	contao-${CT_VERSION}
 PKGNAME=	contao${CT_VER}-${CT_PKGVER}
+PKGREVISION=	2
 CATEGORIES=	www
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=typolight/}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=contao/}
+DIST_SUBDIR=	${CT_DIST_SUBDIR}
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.contao.org/
@@ -14,7 +16,7 @@ LICENSE=	gnu-lgpl-v3
 DEPENDS+=	${PHP_PKG_PREFIX}-dom>=5.2.0:../../textproc/php-dom
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=5.2.0:../../graphics/php-gd
 DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.2.0:../../converters/php-mbstring
-DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=5.2.0:../../databases/php-mysql
+DEPENDS+=	${PHP_PKG_PREFIX}-{mysql,mysqli}>=5.2.0:../../databases/php-mysqli
 DEPENDS+=	${PHP_PKG_PREFIX}-mcrypt>=5.2.0:../../security/php-mcrypt
 DEPENDS+=	${PHP_PKG_PREFIX}-soap>=5.2.0:../../net/php-soap
 
@@ -72,7 +74,7 @@ SUBST_SED.conf+=        -e 's|@PREFIX@|${PREFIX:Q}|g'
 SUBST_SED.conf+=        -e 's|@CT_WEBDIR@|${CT_WEBDIR:Q}|g'
 SUBST_STAGE.conf=	post-configure
 
-WWW_FILES=	CHANGELOG.txt GPL.txt INSTALL.txt LGPL.txt \
+WWW_FILES=	CHANGELOG.txt GPL.txt LGPL.txt README.md \
 		contao cron.php index.php plugins share.php templates \
 		typolight
 WWW_SYSFILES=	config/.htaccess constants.php contao.css drivers \
@@ -84,9 +86,6 @@ INSTALLATION_DIRS+=	${CT_DOCDIR} ${CT_EGDIR} ${CT_WEBDIR}/system/config
 
 PKG_GROUPS_VARS+=	APACHE_GROUP
 PKG_USERS_VARS+=	APACHE_USER
-
-post-extract:
-	${FIND} ${WRKSRC} -type f -exec ${CHMOD} -x {} \;
 
 pre-configure:
 	${CP} ${FILESDIR}/contao.conf ${WRKDIR}

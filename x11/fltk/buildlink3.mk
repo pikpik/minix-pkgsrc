@@ -1,12 +1,11 @@
-# $NetBSD: buildlink3.mk,v 1.20 2010/12/23 11:45:00 dsainty Exp $
+# $NetBSD: buildlink3.mk,v 1.22 2011/12/01 15:46:33 is Exp $
 
 BUILDLINK_TREE+=	fltk
 
 .if !defined(FLTK_BUILDLINK3_MK)
 FLTK_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.fltk+=	fltk>=1.1.5rc1
-BUILDLINK_ABI_DEPENDS.fltk+=	fltk>=1.1.10nb2
+BUILDLINK_API_DEPENDS.fltk+=	fltk>=1.1.5rc1<1.3
 BUILDLINK_PKGSRCDIR.fltk?=	../../x11/fltk
 BUILDLINK_FILES.fltk+=		include/Fl/*
 

@@ -1,14 +1,16 @@
-# $NetBSD: Makefile,v 1.2 2008/01/18 05:09:52 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2011/12/06 00:19:25 sbd Exp $
 #
 
 DISTNAME=	ocsigen-0.6.0
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://www.ocsigen.org/download/
 
 MAINTAINER=	jaapb@kerguelen.org
 HOMEPAGE=	http://www.ocsigen.org/
 COMMENT=	Web programming framework for OCaml
+
+BROKEN=		Does not support ocaml>=3.10
 
 DEPENDS+=	ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
 DEPENDS+=	ocamlnet-[0-9]*:../../net/ocamlnet

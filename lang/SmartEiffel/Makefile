@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2009/08/08 23:32:17 tnn Exp $
+# $NetBSD: Makefile,v 1.10 2011/11/25 13:30:12 joerg Exp $
 
 DISTNAME=	se
 PKGNAME=	SmartEiffel-2.0
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.loria.fr/pub/loria/SmartEiffel/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,6 +12,8 @@ HOMEPAGE=	http://smarteiffel.loria.fr/
 COMMENT=	The GNU Eiffel Compiler
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+BROKEN=		Infinite loop in the installer
 
 WRKSRC=		${WRKDIR}/SmartEiffel
 USE_TOOLS+=	pax

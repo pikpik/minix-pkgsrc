@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.18 2010/06/13 22:44:08 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.20 2011/11/01 06:01:01 sbd Exp $
 
 BUILDLINK_TREE+=	ogre
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	ogre
 OGRE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.ogre+=	ogre>=1.6.3
-BUILDLINK_ABI_DEPENDS.ogre+=	ogre>=1.6.3nb3
+BUILDLINK_ABI_DEPENDS.ogre+=	ogre>=1.6.3nb6
 BUILDLINK_PKGSRCDIR.ogre?=	../../devel/ogre
 
 .include "../../archivers/zziplib/buildlink3.mk"

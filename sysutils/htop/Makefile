@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/07/14 12:56:12 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2011/12/10 14:36:38 cheusov Exp $
 #
 
-DISTNAME=	htop-0.9
+DISTNAME=	htop-1.0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=htop/}
 
@@ -15,13 +15,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_NCURSES=	yes # uses ncurses mouse definitions
 
-USE_TOOLS+=	autoreconf autoconf automake
 USE_LIBTOOL=	yes
 
-pre-configure:
-	set -e; cd ${WRKSRC}; autoreconf --force --install
+ONLY_FOR_PLATFORM=     Linux-*-* FreeBSD-*-* NetBSD-*-*
 
-.include "../../devel/ncurses/buildlink3.mk"
+CONFIGURE_ENV+=		ac_cv_file__proc_stat=yes ac_cv_file__proc_meminfo=yes
+
+.include "../../devel/ncursesw/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
-
 .include "../../mk/bsd.pkg.mk"

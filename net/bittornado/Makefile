@@ -1,18 +1,19 @@
-# $NetBSD: Makefile,v 1.6 2010/02/10 19:17:43 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2011/10/30 12:07:50 obache Exp $
 #
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
-PKGREVISION=		3
+PKGREVISION=		5
 
 CONFLICTS=		bittorrent-[0-9]*
 
-PYDISTUTILSPKG=		yes
+DEPENDS+=	${PYPKGPREFIX}-cursespanel-[0-9]*:../../devel/py-cursespanel
+DEPENDS+=	${PYPKGPREFIX}-crypto>=2.0:../../security/py-crypto
+
+EGG_NAME=	BitTornado-T_${PKGVERSION_NOREV}._BitTornado_
 
 .include "../../lang/python/application.mk"
-.include "../../lang/python/extension.mk"
-.include "../../devel/py-cursespanel/buildlink3.mk"
-.include "../../security/py-amkCrypto/buildlink3.mk"
+.include "../../lang/python/distutils.mk"
 
 .include "../../mk/bsd.pkg.mk"

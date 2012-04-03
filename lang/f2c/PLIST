@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.6 2009/12/03 12:39:59 asau Exp $
+@comment $NetBSD: PLIST,v 1.8 2011/11/29 18:26:51 darcy Exp $
 bin/f2c
 bin/f2c-f77
 man/man1/f2c.1

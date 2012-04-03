@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2010/06/13 22:44:22 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2011/12/12 07:08:48 marino Exp $
 #
 
 DISTNAME=		orbital_eunuchs_sniper-1.30
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		games
 MASTER_SITES=		http://icculus.org/oes/
 
@@ -22,7 +22,9 @@ REPLACE.bash.old=	.*/bin/bash
 REPLACE.bash.new=	${SH}
 REPLACE_FILES.bash=	src/snipe2d.in
 
-.if ${MACHINE_ARCH} == "x86_64"
+.include "../../mk/bsd.prefs.mk"
+
+.if ${MACHINE_ARCH} == "x86_64" && ${OPSYS} != "DragonFly"
 PLIST_SUBST+=		CPU=amd64
 .else
 PLIST_SUBST+=		CPU=${MACHINE_ARCH}

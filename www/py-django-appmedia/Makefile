@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/17 18:07:29 adam Exp $
 
 DISTNAME=	django-appmedia-1.0.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -12,7 +12,6 @@ LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-#WRKSRC=			${WRKDIR}/south
 EGG_NAME=		${DISTNAME:S/-/_/}
 USE_LANGUAGES=		# empty
 

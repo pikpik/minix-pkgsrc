@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2010/08/21 16:36:53 seb Exp $
+# $NetBSD: Makefile,v 1.22 2011/08/14 16:05:58 obache Exp $
 #
 
 DISTNAME=	HTTP-Request-Form-0.952
@@ -21,7 +21,7 @@ DEPENDS+=	p5-HTML-Tree-[0-9]*:../../www/p5-HTML-Tree
 PERL5_PACKLIST=		auto/HTTP/Request/Form/.packlist
 
 pre-configure:
-	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM}
+	${FIND} ${WRKSRC} -name "*.orig" -type f | ${XARGS} ${RM} -f
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

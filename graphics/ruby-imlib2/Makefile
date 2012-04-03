@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2011/02/21 16:01:17 taca Exp $
+# $NetBSD: Makefile,v 1.26 2011/11/01 06:01:46 sbd Exp $
 
 DISTNAME=	imlib2-ruby-0.5.2
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/ruby-//}
-PKGREVISION=	12
+PKGREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	http://pablotron.org/files/gems/
 

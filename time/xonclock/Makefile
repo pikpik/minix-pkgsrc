@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2011/02/16 12:19:42 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/01/29 00:12:54 marino Exp $
 #
 
 DISTNAME=	xonclock-0.0.9.4
+PKGREVISION=	2
 CATEGORIES=	time
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xonclock/}
 
@@ -13,6 +14,8 @@ LICENSE=	gnu-gpl-v2
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
+
+LDFLAGS.DragonFly=	-lm
 
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"

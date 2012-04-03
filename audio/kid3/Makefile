@@ -1,18 +1,20 @@
-# $NetBSD: Makefile,v 1.22 2011/02/12 11:05:56 shattered Exp $
+# $NetBSD: Makefile,v 1.28 2012/03/03 00:12:40 wiz Exp $
 #
 
 DISTNAME=		kid3-1.6
-PKGREVISION=		1
+PKGREVISION=		5
 CATEGORIES=		kde audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kid3/}
 
 MAINTAINER=		shattered@NetBSD.org
 HOMEPAGE=		http://kid3.sourceforge.net/
 COMMENT=		ID3 tagger for KDE 3
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		msgfmt

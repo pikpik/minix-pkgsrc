@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.21 2011/02/28 14:52:51 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/02/06 12:40:39 wiz Exp $
 
 DISTNAME=	gpredict-0.8.0
-PKGREVISION=	7
+PKGREVISION=	10
 CATEGORIES=	ham
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=groundstation/}
 

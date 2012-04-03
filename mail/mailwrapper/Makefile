@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/01/07 09:13:58 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2008/12/18 17:28:16 joerg Exp $
 
 DISTNAME=	mailwrapper-19990412
 PKGREVISION=	4
@@ -10,6 +10,7 @@ COMMENT=	Wrapper to support arbitrary Mail Transport Agents
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+USE_FEATURES+=		cdefs
 USE_BSD_MAKEFILE=	yes
 
 WRKSRC=			${WRKDIR}/mailwrapper

@@ -3,3 +3,4 @@ ${PYSITELIB}/CaboCha.py
 ${PYSITELIB}/CaboCha.pyc
 ${PYSITELIB}/CaboCha.pyo
 ${PYSITELIB}/_CaboCha.so
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}

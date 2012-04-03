@@ -1,4 +1,4 @@
-$NetBSD: patch-am,v 1.5 2009/09/09 05:59:38 dsainty Exp $
+$NetBSD: patch-am,v 1.8 2011/10/31 06:50:53 sbd Exp $
 
 --- setup.py.orig	2006-10-08 17:41:25.000000000 +0000
 +++ setup.py
@@ -52,7 +52,7 @@ $NetBSD: patch-am,v 1.5 2009/09/09 05:59:38 dsainty Exp $
  
          if (ssl_incs is not None and
              ssl_libs is not None):
-@@ -515,168 +517,51 @@
+@@ -515,172 +517,79 @@
          # similar functionality (but slower of course) implemented in Python.
  
          # Sleepycat Berkeley DB interface.  http://www.sleepycat.com
@@ -261,25 +261,61 @@ $NetBSD: patch-am,v 1.5 2009/09/09 05:59:38 dsainty Exp $
  
          # The standard Unix dbm module:
          if platform not in ['cygwin']:
-@@ -689,11 +574,13 @@
+-            if find_file("ndbm.h", inc_dirs, []) is not None:
++
++            ## Top half based on find_file
++            def find_ndbm_h(dirs):
++                ret = None
++                if sys.platform == 'darwin':
++                    sysroot = macosx_sdk_root()
++                for dir in dirs:
++                    f = os.path.join(dir, 'ndbm.h')
++                    if sys.platform == 'darwin' and is_macosx_sdk_path(dir):
++                        f = os.path.join(sysroot, dir[1:], 'ndbm.h')
++                    if not os.path.exists(f): continue
++
++                    ret = 'True'
++                    input = text_file.TextFile(f)
++                    while 1:
++                        line = input.readline()
++                        if not line: break
++                        if re.search('This file is part of GDBM', line):
++                            ret = None
++                            break
++                    input.close()
++                    break
++                return ret
++
++            if find_ndbm_h(inc_dirs) is not None:
+                 # Some systems have -lndbm, others don't
+                 if self.compiler.find_library_file(lib_dirs, 'ndbm'):
+                     ndbm_libs = ['ndbm']
+@@ -689,13 +598,17 @@
                  exts.append( Extension('dbm', ['dbmmodule.c'],
                                         define_macros=[('HAVE_NDBM_H',None)],
                                         libraries = ndbm_libs ) )
 -            elif (self.compiler.find_library_file(lib_dirs, 'gdbm')
 -                  and find_file("gdbm/ndbm.h", inc_dirs, []) is not None):
-+            elif find_file("ndbm.h", db_incs, []) is not None:
-                 exts.append( Extension('dbm', ['dbmmodule.c'],
+-                exts.append( Extension('dbm', ['dbmmodule.c'],
 -                                       define_macros=[('HAVE_GDBM_NDBM_H',None)],
 -                                       libraries = ['gdbm'] ) )
+-            elif db_incs is not None:
+-                exts.append( Extension('dbm', ['dbmmodule.c'],
++
++            if not module_enabled(exts, 'dbm'):
++                if find_file("ndbm.h", db_incs, []) is not None:
++                    exts.append( Extension('dbm', ['dbmmodule.c'],
 +                                       library_dirs=dblib_dir,
 +                                       runtime_library_dirs=dblib_dir,
 +                                       include_dirs=db_incs,
 +                                       define_macros=[('HAVE_NDBM_H',None)],
 +                                       libraries=dblibs))
-             elif db_incs is not None:
-                 exts.append( Extension('dbm', ['dbmmodule.c'],
++                elif db_incs is not None:
++                    exts.append( Extension('dbm', ['dbmmodule.c'],
                                         library_dirs=dblib_dir,
-@@ -1224,8 +1111,8 @@
+                                        runtime_library_dirs=dblib_dir,
+                                        include_dirs=db_incs,
+@@ -1224,8 +1137,8 @@
            ext_modules=[Extension('struct', ['structmodule.c'])],
  
            # Scripts to install

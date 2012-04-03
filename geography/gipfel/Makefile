@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/01/13 13:37:54 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2011/10/19 06:50:00 obache Exp $
 #
 
 DISTNAME=	gipfel-0.3.2
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	geography graphics
 MASTER_SITES=	http://www.ecademix.com/JohannesHofmann/
 

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.15 2011/03/16 14:49:59 taca Exp $
+@comment $NetBSD: PLIST,v 1.17 2011/11/08 16:46:15 taca Exp $
 ${GEM_HOME}/cache/${GEM_NAME}.gem
 ${GEM_LIBDIR}/CHANGES
 ${GEM_LIBDIR}/LICENSE
@@ -37,6 +37,7 @@ ${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Freetown.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Gaborone.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Harare.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Johannesburg.rb
+${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Juba.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Kampala.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Khartoum.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Africa/Kigali.rb
@@ -108,6 +109,7 @@ ${GEM_LIBDIR}/lib/tzinfo/definitions/America/Chihuahua.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/America/Coral_Harbour.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/America/Cordoba.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/America/Costa_Rica.rb
+${GEM_LIBDIR}/lib/tzinfo/definitions/America/Creston.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/America/Cuiaba.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/America/Curacao.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/America/Danmarkshavn.rb
@@ -267,6 +269,7 @@ ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Dubai.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Dushanbe.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Gaza.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Harbin.rb
+${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Hebron.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Ho_Chi_Minh.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Hong_Kong.rb
 ${GEM_LIBDIR}/lib/tzinfo/definitions/Asia/Hovd.rb

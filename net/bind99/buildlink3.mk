@@ -1,0 +1,12 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	bind
+
+.if !defined(BIND_BUILDLINK3_MK)
+BIND_BUILDLINK3_MK:=
+
+BUILDLINK_API_DEPENDS.bind+=	bind>=9.9.0
+BUILDLINK_PKGSRCDIR.bind?=	../../net/bind99
+.endif # BIND_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-bind

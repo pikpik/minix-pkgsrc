@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/06/19 14:13:18 taca Exp $
+# $NetBSD: Makefile,v 1.2 2011/08/12 16:51:02 taca Exp $
 
-DISTNAME=	ttfunk-1.0.2
+DISTNAME=	ttfunk-1.0.3
 CATEGORIES=	fonts
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# unknown
 COMMENT=	TrueType Font Metrics Parser
-LICENSE=	mit
+LICENSE=	gnu-gpl-v2 OR gnu-gpl-v3 OR ruby-license
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

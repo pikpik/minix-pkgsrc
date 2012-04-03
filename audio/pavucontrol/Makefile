@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2011/04/24 13:27:57 shattered Exp $
+# $NetBSD: Makefile,v 1.16 2012/02/06 12:39:29 wiz Exp $
 #
 
 DISTNAME=	pavucontrol-0.9.10
-PKGREVISION=	1
+PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/pavucontrol/
 

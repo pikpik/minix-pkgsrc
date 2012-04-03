@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2011/07/14 19:59:45 adam Exp $
+# $NetBSD: Makefile,v 1.31 2012/01/24 09:11:17 sbd Exp $
 
 DISTNAME=	lighttpd-1.4.29
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://download.lighttpd.net/lighttpd/releases-1.4.x/
 EXTRACT_SUFX=	.tar.bz2
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	# empty
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--libdir=${PREFIX}/lib/${PKGBASE}
+GNU_CONFIGURE_LIBSUBDIR=${PKGBASE}
 CONFIGURE_ARGS+=	--with-pcre
 
 DOCDIR=			${PREFIX}/share/doc/${PKGBASE}

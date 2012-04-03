@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/07/12 14:09:39 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/02/06 12:41:02 wiz Exp $
 #
 
-DISTNAME=	gnome-mplayer-1.0.4
-PKGREVISION=	1
+DISTNAME=	gnome-mplayer-1.0.5
+PKGREVISION=	3
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gnome-mplayer.googlecode.com/files/
 
@@ -18,9 +18,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		pkg-config msgfmt
+USE_TOOLS+=		gmake pkg-config msgfmt
 
-CONFIGURE_ARGS+=	--with-gconf
 CONFIGURE_ARGS+=	--disable-gtk3
 
 GCONF_SCHEMAS+=	gnome-mplayer.schemas
@@ -29,6 +28,7 @@ GCONF_SCHEMAS+=	gnome-mplayer.schemas
 
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/gmtk/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/dbus/buildlink3.mk"

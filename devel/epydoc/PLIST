@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.3 2005/10/23 16:03:10 rillig Exp $
+@comment $NetBSD$
 bin/epydoc
 bin/epydocgui
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/epydoc/__init__.py
 ${PYSITELIB}/epydoc/__init__.pyc
 ${PYSITELIB}/epydoc/__init__.pyo
@@ -64,6 +65,8 @@ ${PYSITELIB}/epydoc/test/epytext.pyo
 ${PYSITELIB}/epydoc/uid.py
 ${PYSITELIB}/epydoc/uid.pyc
 ${PYSITELIB}/epydoc/uid.pyo
+man/man1/epydoc.1
+man/man1/epydocgui.1
 share/doc/epydoc/api/epydoc.css
 share/doc/epydoc/api/index.html
 share/doc/epydoc/api/private/UserDict.UserDict-class.html

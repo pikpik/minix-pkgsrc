@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/01/23 21:14:18 jschauma Exp $
+# $NetBSD: Makefile,v 1.6 2009/03/17 21:40:46 darcy Exp $
 #
 
 DISTNAME=	fortunes-futurama-0.2
@@ -14,6 +14,7 @@ BUILD_DEPENDS+=	fortune-strfile-[0-9]*:../../games/fortune-strfile
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+DIST_SUBDIR=	${PKGNAME_NOREV}nb1
 STRFILE=	${LOCALBASE}/bin/strfile
 WRKSRC=		${WRKDIR}
 

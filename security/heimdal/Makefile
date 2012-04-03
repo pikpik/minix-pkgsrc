@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.81 2011/07/31 21:21:01 gls Exp $
+# $NetBSD: Makefile,v 1.88 2012/03/11 11:30:06 shattered Exp $
 
-DISTNAME=	heimdal-1.4
+DISTNAME=	heimdal-1.5.2
 PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.h5l.org/dist/src/
@@ -34,7 +34,7 @@ CONFIGURE_ARGS+=	--enable-kcm
 CONFIGURE_ARGS+=	--enable-pthread-support
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/krb5
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-CONFIGURE_ARGS+=	--with-hdbdir=${HEIMDAL_HDB_DIR:H}
+CONFIGURE_ARGS+=	--with-hdbdir=${HEIMDAL_HDB_DIR}
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE:Q}
 CONFIGURE_ARGS+=	--with-sqlite3=${BUILDLINK_PREFIX.sqlite3}
 CONFIGURE_ARGS+=	--without-x
@@ -59,12 +59,15 @@ PLIST_VARS+=		afskauth hcrypto
 .if ${OPSYS} == "IRIX"
 PLIST.afskauth=		yes
 .endif
+
+.include "../../security/openssl/builtin.mk"
+
 .if ${MACHINE_PLATFORM:MNetBSD-[1-3]*} != "" || \
-    ${OPSYS} == "SunOS"
+    (${OPSYS} == "SunOS" && !empty(USE_BUILTIN.openssl:Myes))
 PLIST.hcrypto=		yes
 .endif
 
-OWN_DIRS_PERMS=		${HEIMDAL_HDB_DIR} ${REAL_ROOT_USER} ${ROOT_GROUP} 0700
+OWN_DIRS_PERMS=		${HEIMDAL_HDB_DIR} ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0700
 SPECIAL_PERMS+=		${PREFIX}/bin/otp ${SETUID_ROOT_PERMS}
 SPECIAL_PERMS=		${PREFIX}/bin/${KRB5_PREFIX}su ${SETUID_ROOT_PERMS}
 RCD_SCRIPTS=		kadmind kcm kdc kpasswdd
@@ -76,6 +79,8 @@ GENERATE_PLIST+=	\
 	( cd ${WRKSRC}/lib/roken && ${BUILD_MAKE_CMD} print-xheaders |	\
 	  ${XARGS} -n 1 | ${SED} -e "s,^,include/krb5/roken/," );
 
+TEST_TARGET=		check
+
 # remove manpages conficting with OpenSSL keeping only the important ones
 pre-configure:
 	cd ${WRKSRC}/doc/doxyout/hcrypto && \
@@ -86,5 +91,6 @@ pre-configure:
 .include "../../devel/readline/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bdb.buildlink3.mk"
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

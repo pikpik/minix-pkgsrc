@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2011/03/24 14:35:17 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2012/02/06 12:42:28 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -6,7 +6,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTNAME=	xfdesktop-${XFCE4_VERSION}
 PKGNAME=	xfce4-desktop-${XFCE4_VERSION}
-PKGREVISION=	6
+PKGREVISION=	9
 CATEGORIES=	x11
 COMMENT=	Xfce desktop background manager
 

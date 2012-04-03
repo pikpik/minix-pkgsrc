@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2011/04/04 09:28:03 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/01 12:32:12 obache Exp $
 
-DISTNAME=	pkg-config-1.1.1
+DISTNAME=	pkg-config-1.1.3
 CATEGORIES=	devel
-MASTER_SITES=	http://rubyforge.org/frs/download.php/74790/
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	http://rubygems.org/gems/ \
+		http://gems.rubyforge.org/gems/
+EXTRACT_SUFX=	.gem
 
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://github.com/rcairo/pkg-config
@@ -14,7 +15,11 @@ CONFLICTS+=	${RUBY_PKGPREFIX}-gnome2-glib<0.90.0
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_RUBY_EXTCONF=	yes
+USE_RUBY_SETUP=		yes
+
+CONFIGURE_ARGS+=	--siteruby=${PREFIX}/${RUBY_VENDORLIB_BASE} \
+			--siterubyver=${PREFIX}/${RUBY_VENDORLIB} \
+			--siterubyverarch=${PREFIX}/${RUBY_VENDORARCHLIB}
 
 #do-test:
 #		cd ${WRKSRC} && ${SETENV} ${TEST_ENV} ${RUBY} test/run-test.rb

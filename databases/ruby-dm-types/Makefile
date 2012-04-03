@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2011/08/12 16:47:08 taca Exp $
+# $NetBSD: Makefile,v 1.6 2011/12/16 14:47:17 taca Exp $
 
-DISTNAME=	dm-types-1.1.0
+DISTNAME=	dm-types-1.2.1
 PKGREVISION=	1
 CATEGORIES=	databases
 
@@ -9,14 +9,16 @@ HOMEPAGE=	http://github.com/datamapper/dm-types
 COMMENT=	DataMapper plugin providing extra data types
 LICENSE=	mit
 
-DEPENDS+=	${RUBY_PKGPREFIX}-bcrypt>=2.1.4:../../security/ruby-bcrypt
-DEPENDS+=	${RUBY_PKGPREFIX}-dm-core>=1.1.0<1.2:../../databases/ruby-dm-core
-DEPENDS+=	${RUBY_PKGPREFIX}-json-pure>=1.4.6:../../textproc/ruby-json-pure
-DEPENDS+=	${RUBY_PKGPREFIX}-uuidtools>=2.1.2<2.2:../../devel/ruby-uuidtools
-DEPENDS+=	${RUBY_PKGPREFIX}-stringex>=1.2.0:../../textproc/ruby-stringex
+DEPENDS+=	${RUBY_PKGPREFIX}-bcrypt>=3.0.0<3.1:../../security/ruby-bcrypt
+DEPENDS+=	${RUBY_PKGPREFIX}-dm-core>=1.2.0<1.3:../../databases/ruby-dm-core
 DEPENDS+=	${RUBY_PKGPREFIX}-fastercsv>=1.5.4<1.6:../../textproc/ruby-fastercsv
+DEPENDS+=	${RUBY_PKGPREFIX}-multi_json>=1.0.3<2:../../textproc/ruby-multi_json
+DEPENDS+=	${RUBY_PKGPREFIX}-stringex>=1.3.0<1.4:../../textproc/ruby-stringex
+DEPENDS+=	${RUBY_PKGPREFIX}-uuidtools>=2.1.2<2.2:../../devel/ruby-uuidtools
 
-OVERRIDE_GEMSPEC+=	json:json_pure>=1.4.6 stringex>=1.2.0 bcrypt>=2.1.4
+RUBY_JSON_REQD=		1.5.4
+OVERRIDE_GEMSPEC+=	multi_json>=1.0.3
 
 .include "../../lang/ruby/gem.mk"
+.include "../../lang/ruby/json.mk"
 .include "../../mk/bsd.pkg.mk"

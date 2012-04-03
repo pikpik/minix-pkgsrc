@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2011/03/19 21:18:06 dholland Exp $
+# $NetBSD: Makefile,v 1.19 2011/11/25 22:18:11 joerg Exp $
 
 DISTNAME=	modsecurity-apache_2.5.13
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/apache_//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www security
 MASTER_SITES=	http://www.modsecurity.org/download/
 LICENSE=	gnu-gpl-v2
@@ -14,7 +14,7 @@ COMMENT=	Intrusion detection and prevention engine for web applications
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 APACHE_MODULE=		yes
-PKG_APACHE_ACCEPTED=	apache2 apache22
+PKG_APACHE_ACCEPTED=	apache22
 USE_APR=		yes
 USE_LANGUAGES=		c++ c
 

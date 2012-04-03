@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/08/21 23:01:22 tnn Exp $
+# $NetBSD: Makefile,v 1.9 2012/03/03 00:14:06 wiz Exp $
 #
 
 DISTNAME=	61e08e67b176
 PKGNAME=	icedtea-web-1.2pre
+PKGREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	http://icedtea.classpath.org/hg/icedtea-web/archive/
 EXTRACT_SUFX=	.tar.bz2

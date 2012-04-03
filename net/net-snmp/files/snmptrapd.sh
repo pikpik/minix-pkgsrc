@@ -9,11 +9,12 @@ if [ -f /etc/rc.subr ]; then
 	. /etc/rc.subr
 fi
 
+: ${snmptrapd_flags:="-Ls 1"}	# log using syslog w/ facility LOG_LOCAL1
+
 name="snmptrapd"
 rcvar=$name
 command="@PREFIX@/sbin/${name}"
 pidfile="/var/run/${name}.pid"
-snmptrapd_flags="-Ls 1"	# log using syslog w/ facility LOG_LOCAL1
 command_args="-p ${pidfile}"
 
 if [ -f @PKG_SYSCONFDIR@/snmptrapd.conf ]; then

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.24 2011/09/12 18:17:30 drochner Exp $
+# $NetBSD: Makefile,v 1.28 2012/01/17 19:02:01 drochner Exp $
 
-DISTNAME=	sip-4.12.4
+DISTNAME=	sip-4.13.2
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	x11 devel python
 MASTER_SITES=	http://www.riverbankcomputing.com/static/Downloads/sip4/
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.riverbankcomputing.com/software/sip/intro
 COMMENT=	Tool to create Python bindings for C++ libraries
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 CONFLICTS+=	${PYPKGPREFIX}-qt2-sip-* ${PYPKGPREFIX}-qt3-sip-*
 

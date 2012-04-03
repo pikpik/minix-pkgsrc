@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2011/05/11 10:28:08 hans Exp $
+# $NetBSD: Makefile,v 1.49 2012/01/14 07:44:33 obache Exp $
 
 DISTNAME=	abcde-2.3.99.7_p235
 PKGNAME=	abcde-2.3.99.7
@@ -27,7 +27,7 @@ EXTRACT_SUFX=	.tar.bz2
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
 USE_TOOLS+=	bash:run gsed:run
-REPLACE_BASH=	abcde
+REPLACE_BASH=	abcde cddb-tool
 
 EGDIR=		${PREFIX}/share/examples/abcde
 
@@ -57,10 +57,6 @@ do-install:
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 	${INSTALL_MAN} ${WRKSRC}/cddb-tool.1 \
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
-
-.if ${OPSYS} == "NetBSD"
-TOOLS_PLATFORM.gsed=	# empty
-.endif
 
 .if ${OPSYS} == "SunOS"
 USE_TOOLS+=	ftp:run

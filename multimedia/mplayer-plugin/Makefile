@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2011/07/01 13:25:02 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/03/03 00:13:40 wiz Exp $
 #
 
 DISTNAME=		mplayerplug-in-3.55
 PKGNAME=		mplayer-plugin-3.55
-PKGREVISION=		7
+PKGREVISION=		14
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mplayerplug-in/}
 
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+=	--enable-rm
 CONFIGURE_ARGS+=	--enable-gmp
 CONFIGURE_ARGS+=	--enable-dvx
 CONFIGURE_ARGS+=	--disable-gtk1
-CONFIGURE_ENV+=		ac_cv_path_GECKO_XPIDL=${PREFIX}/lib/xulrunner/xpidl
+CONFIGURE_ENV+=		ac_cv_path_GECKO_XPIDL=${BUILDLINK_PREFIX.xulrunner192}/lib/xulrunner192/xpidl
 
 SUBST_CLASSES+=		conf
 SUBST_STAGE.conf=	post-patch
@@ -48,8 +48,8 @@ do-install:
 	${INSTALL_LIB} ${WRKSRC}/*.so	${DESTDIR}${PREFIX}/lib/netscape/plugins
 	${INSTALL_DATA} ${WRKSRC}/*.xpt	${DESTDIR}${PREFIX}/lib/netscape/plugins
 
-BUILDLINK_DEPMETHOD.xulrunner=	build
-.include "../../devel/xulrunner/buildlink3.mk"
+BUILDLINK_DEPMETHOD.xulrunner192=	build
+.include "../../devel/xulrunner192/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

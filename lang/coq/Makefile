@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2011/03/28 20:39:26 tonio Exp $
+# $NetBSD: Makefile,v 1.39 2012/03/03 00:13:25 wiz Exp $
 #
 
 DISTNAME=	coq-8.3pl1
-PKGREVISION=	1
+PKGREVISION=	8
 CATEGORIES=	lang math
 MASTER_SITES=	http://coq.inria.fr/distrib/V8.3pl1/files/
 
@@ -31,7 +31,9 @@ PLIST_SRC=	${PKGDIR}/PLIST.opt ${PKGDIR}/PLIST
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "x86_64")
 .  if !empty(MACHINE_PLATFORM:MLinux-*-*) || \
       !empty(MACHINE_PLATFORM:MDarwin-*-*) || \
-      !empty(MACHINE_PLATFORM:MFreeBSD-*-*)
+      !empty(MACHINE_PLATFORM:MDragonFly-*-*) || \
+      !empty(MACHINE_PLATFORM:MFreeBSD-*-*) || \
+      !empty(MACHINE_PLATFORM:MNetBSD-*-*)
 PLIST_SRC+=	${PKGDIR}/PLIST.natdynlink
 .  endif
 .endif

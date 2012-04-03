@@ -1,4 +1,5 @@
 @comment $NetBSD$
+bin/vp8_scalable_patterns
 bin/vpxdec
 bin/vpxenc
 include/vpx/vp8.h

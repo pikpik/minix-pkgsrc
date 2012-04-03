@@ -1,7 +1,7 @@
 # $NetBSD: Makefile,v 1.86 2011/02/28 14:53:04 wiz Exp $
 
 DISTNAME=	libxslt-1.1.26
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES+=	ftp://xmlsoft.org/libxslt/
 #MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxslt/1.1/}

@@ -1,2 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST.Darwin,v 1.1 2009/03/23 13:16:13 jmmv Exp $
+${PLIST.x86_64}include/botan/eng_sse2.h
 include/botan/es_ftw.h
+${PLIST.x86_64}include/botan/sha1_sse2.h

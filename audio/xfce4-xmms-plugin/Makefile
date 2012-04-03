@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/03/06 16:04:32 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/02/06 12:39:31 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -7,7 +7,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 XFCE4_VERSION=	0.5.1
 
 DISTNAME=	xfce4-xmms-plugin-${XFCE4_VERSION}
-PKGREVISION=	7
+PKGREVISION=	10
 CATEGORIES=	audio
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-xmms-plugin/
 COMMENT=	Xfce XMMS plugin

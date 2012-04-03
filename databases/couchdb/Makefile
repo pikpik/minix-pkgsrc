@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.6 2011/06/19 02:32:52 dholland Exp $
+# $NetBSD: Makefile,v 1.8 2011/12/20 14:08:55 fhajny Exp $
 #
 
-DISTNAME=		apache-couchdb-1.1.0
+DISTNAME=		apache-couchdb-1.1.1
 PKGNAME=		${DISTNAME:S/apache-//}
+PKGREVISION=		1
 CATEGORIES=		databases
-MASTER_SITES=		${MASTER_SITE_APACHE:=couchdb/1.1.0/}
+MASTER_SITES=		${MASTER_SITE_APACHE:=couchdb/1.1.1/}
 
 MAINTAINER=		filip@joyent.com
 HOMEPAGE=		http://couchdb.apache.org/
@@ -17,7 +18,7 @@ VERSION.ibrowse=	2.2.0
 VERSION.mochiweb=	7c2bc2
 
 GNU_CONFIGURE=		yes
-USE_LANGUAGES+=		c c++
+USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 BUILD_DEFS+=		VARBASE
@@ -65,7 +66,7 @@ CONFIGURE_ARGS+=	--with-js-lib=${BUILDLINK_PREFIX.spidermonkey}
 REPLACE_INTERPRETER+=	sh
 REPLACE.sh.old=		/bin/sh
 REPLACE.sh.new=		/bin/ksh
-REPLACE_FILES.sh=	bin/couchdb.tpl.in bin/couchjs.tpl.in
+REPLACE_FILES.sh=	bin/couchdb.tpl.in
 .endif
 
 SUBST_CLASSES+=		paths

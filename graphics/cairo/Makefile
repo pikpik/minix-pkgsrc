@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.92 2011/02/28 14:52:50 wiz Exp $
+# $NetBSD: Makefile,v 1.96 2012/02/23 14:00:43 ryoon Exp $
 
 DISTNAME=	cairo-1.10.2
-# note: PKGREVISION of 2 was used briefly in Feb 2011; next bump should use 3.
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://cairographics.org/releases/
 
@@ -17,11 +16,14 @@ USE_LANGUAGES+=		c99
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		pkg-config
-PKGCONFIG_OVERRIDE+=	src/cairo.pc.in src/cairo-features.pc.in
+PKGCONFIG_OVERRIDE+=	src/cairo.pc.in \
+			src/cairo-features.pc.in
+
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-gl
 CONFIGURE_ARGS+=	--enable-pdf
 CONFIGURE_ARGS+=	--enable-ps
+CONFIGURE_ARGS+=	--enable-tee
 
 PLIST_VARS+=		carbon
 .if exists(/System/Library/Frameworks/Carbon.framework)

@@ -1,0 +1,9 @@
+$NetBSD$
+
+SHA1 (cacti-0.8.7i-PIA-3.1.tar.gz) = 84cb6326645a2d08059dcc6767f777147a0a4607
+RMD160 (cacti-0.8.7i-PIA-3.1.tar.gz) = 691d2fad7d7071475076556ab643a480ef2ee84c
+Size (cacti-0.8.7i-PIA-3.1.tar.gz) = 2270714 bytes
+SHA1 (patch-cacti.sql) = 37e18026c4136630d939ab5a7a4d6336bf166282
+SHA1 (patch-include_global.php) = fb0d2f15596b051c60ed6032ecb9038315b7c663
+SHA1 (patch-include_global__settings.php) = 54ffd0c3fc9d927595b1568a874c45a4a6033f7b
+SHA1 (patch-install_index.php) = 84b25c39a4ce1bc6144cffcdb9e32bf257cfcae6

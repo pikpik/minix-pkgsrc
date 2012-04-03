@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.73 2008/11/20 17:42:27 wiz Exp $
+# $NetBSD: Makefile,v 1.76 2012/01/24 09:42:35 marino Exp $
 
 DISTNAME=		esound-0.2.41
+PKGREVISION=		1
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/esound/0.2/}
 EXTRACT_SUFX=		.tar.bz2
@@ -41,6 +42,10 @@ SUBST_MESSAGE.oss=	Fixing oss.
 .endif
 
 LDFLAGS.IRIX+=		-lm
+LDFLAGS.DragonFly+=	-lm
+LDFLAGS.SunOS+=		-lsocket -lnsl
+
+REPLACE_SH+=		esd-config.in
 
 .include "../../audio/libaudiofile/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2011/08/11 12:46:29 obache Exp $
+# $NetBSD: Makefile,v 1.3 2011/10/06 06:33:19 obache Exp $
 #
 
-DISTNAME=	nwdiag-0.4.2
+DISTNAME=	nwdiag-0.7.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	graphics
 MASTER_SITES=	http://pypi.python.org/packages/source/n/nwdiag/
@@ -11,9 +11,7 @@ HOMEPAGE=	http://blockdiag.com/nwdiag/build/html/
 COMMENT=	Simple network-diagram image generator
 LICENSE=	apache-2.0
 
-DEPENDS+=	${PYPKGPREFIX}-imaging>=1.1.7nb3:../../graphics/py-imaging
-DEPENDS+=	${PYPKGPREFIX}-funcparserlib>=0.3.4:../../devel/py-funcparserlib
-DEPENDS+=	${PYPKGPREFIX}-blockdiag>=0.9.1:../../graphics/py-blockdiag
+DEPENDS+=	${PYPKGPREFIX}-blockdiag>=1.1.0:../../graphics/py-blockdiag
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/03/03 09:03:59 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2010/07/21 10:09:46 joerg Exp $
 #
 
 DISTNAME=		uno_v213
@@ -10,6 +10,7 @@ MAINTAINER=		shannonjr@NetBSD.org
 HOMEPAGE=		http://spinroot.com/uno/
 COMMENT=		Tool for source code analysis
 
+NOT_FOR_PLATFORM=	DragonFly-*-x86_64	#Cannot build 32-bit binary
 WRKSRC=			${WRKDIR}/uno/src
 MAKE_FILE=		makefile
 

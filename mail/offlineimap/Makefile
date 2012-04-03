@@ -1,37 +1,32 @@
-# $NetBSD: Makefile,v 1.17 2010/02/10 19:17:40 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2012/03/15 11:53:29 obache Exp $
 #
 
-DISTNAME=	offlineimap_${_OFFLINEIMAP_VER}
-PKGNAME=	offlineimap-${_OFFLINEIMAP_VER}
+DISTNAME=	offlineimap-v6.5.2.1
+PKGNAME=	${DISTNAME:S/-v/-/}
 PKGREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	http://software.complete.org/offlineimap/static/download_area/${_OFFLINEIMAP_VER}/
+MASTER_SITES=	http://cloud.github.com/downloads/spaetz/offlineimap/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://software.complete.org/software/projects/show/offlineimap
+HOMEPAGE=	http://offlineimap.org/
 COMMENT=	Powerful IMAP/Maildir synchronization and reader support
+LICENSE=	python-software-foundation AND gnu-gpl-v2 # or later
+
+DEPENDS+=	${PYPKGPREFIX}-curses-[0-9]*:../../devel/py-curses
+DEPENDS+=	${PYPKGPREFIX}-cursespanel-[0-9]*:../../devel/py-cursespanel
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/offlineimap
 
-# This is only to placate pkglint
-_OFFLINEIMAP_VER=	4.0.16
+INSTALLATION_DIRS=	share/examples/offlineimap
 
-PYDISTUTILSPKG=			yes
-PYTHON_PATCH_SCRIPTS=		bin/offlineimap
-PLIST_SUBST+=			PYSITELIB=${PYSITELIB:Q}
-
-INSTALLATION_DIRS=	${PKGMANDIR}/man1 share/examples/offlineimap
+EGG_NAME=	${PKGNAME_NOREV}
 
 post-install:
-.for _f_ in offlineimap.conf offlineimap.conf.minimal
-	${INSTALL_DATA} ${WRKSRC}/${_f_} ${DESTDIR}${PREFIX}/share/examples/offlineimap/${_f_}
+.for f in offlineimap.conf offlineimap.conf.minimal
+	${INSTALL_DATA} ${WRKSRC}/${f} ${DESTDIR}${PREFIX}/share/examples/offlineimap/${f}
 .endfor
-	${INSTALL_MAN} ${WRKSRC}/offlineimap.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/offlineimap.1
 
-.include "../../devel/py-cursespanel/buildlink3.mk"
-.include "../../devel/py-curses/buildlink3.mk"
-.include "../../lang/python/extension.mk"
-.include "../../lang/python/application.mk"
+.include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

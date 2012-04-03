@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.118 2011/10/07 12:30:17 drochner Exp $
+# $NetBSD: Makefile,v 1.129 2012/02/11 13:31:53 shattered Exp $
 #
 
 DISTNAME=		vlc-${VLC_VERSION}
+PKGREVISION=		5
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vlc/} \
 			http://download.videolan.org/pub/videolan/vlc/${VLC_VERSION}/
 EXTRACT_SUFX=		.tar.bz2
 
-VLC_VERSION=		1.1.12
+VLC_VERSION=		1.1.13
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.videolan.org/
@@ -25,18 +26,10 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-kde-solid=${PREFIX}/share/kde/apps/solid/actions
 PTHREAD_OPTS+=		require
 USE_LANGUAGES=		c99 c++
-PLIST_VARS+=		x86simd altivec v4l2 vcd cdda
+PLIST_VARS+=		x86simd altivec v4l2
 
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
-
-.if ${OPSYS} == "NetBSD"
-CONFIGURE_ARGS+=	--disable-vcd
-.else
-PLIST.vcd=		yes
-# This may need a closer look.
-PLIST.cdda=		yes
-.endif
 
 BUILDLINK_API_DEPENDS.zlib+=		zlib>=1.2.0
 BUILDLINK_API_DEPENDS.vcdimager+=	vcdimager>=0.7.20nb1
@@ -127,6 +120,7 @@ CHECK_WRKREF_SKIP=	lib/libvlccore.a \
 .include "../../misc/libcdio/buildlink3.mk"
 
 .include "../../mk/jpeg.buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../net/liblive/buildlink3.mk"
 .include "../../converters/fribidi/buildlink3.mk"
 .include "../../devel/libebml/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/09/07 22:12:12 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2011/12/17 00:54:11 marino Exp $
 
 DISTNAME=	skkinput-2.06.4
 CATEGORIES=	japanese inputmethod
@@ -18,6 +18,8 @@ USE_IMAKE=	YES
 DOCSDIR=	share/doc/${PKGBASE}
 
 INSTALLATION_DIRS=	${DOCSDIR}
+
+PLIST_SUBST+=	IMAKE_JMAN_DIR=${IMAKE_MAN_DIR:ts/:H}/ja_JP.EUC/${IMAKE_MAN_DIR:ts/:T}
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/README.jis	${DESTDIR}${PREFIX}/${DOCSDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2011/04/22 13:42:49 obache Exp $
+# $NetBSD: Makefile,v 1.72 2012/03/09 10:13:29 fhajny Exp $
 
 DISTNAME=	tar-1.26
 PKGNAME=	${DISTNAME:S/tar/gtar-base/}
@@ -32,7 +32,8 @@ GTAR_PROGRAM_PREFIX?=	${GNU_PROGRAM_PREFIX}
 GTAR_PROGRAM_PREFIX?=	g
 .endif
 
-.if ${GTAR_PROGRAM_PREFIX} == ""
+.if ${GTAR_PROGRAM_PREFIX} == "" && \
+    (!defined(NBPAX_PROGRAM_PREFIX) || ${NBPAX_PROGRAM_PREFIX} == "")
 # pax installs a "tar" also
 CONFLICTS+=		pax-[0-9]*
 .else
@@ -69,7 +70,7 @@ post-install:
 	${INSTALL_MAN} ${FILESDIR}/gtar.1 \
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/${GTAR_PROGRAM_PREFIX}tar.1
 .if ${GTAR_PROGRAM_PREFIX} != "g"
-	${LN} -sf ${DESTDIR}${GTAR_PROGRAM_PREFIX}tar ${DESTDIR}${PREFIX}/bin/"gtar"
+	${LN} -sf ${GTAR_PROGRAM_PREFIX}tar ${DESTDIR}${PREFIX}/bin/"gtar"
 .endif
 
 .include "../../devel/gettext-lib/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/06/30 22:23:34 bjs Exp $
+# $NetBSD: Makefile,v 1.5 2011/02/28 14:52:41 wiz Exp $
 #
 
 DISTNAME=	smirk-20080111
@@ -22,6 +22,8 @@ USE_NCURSES=		yes
 DATADIR=		${PREFIX}/share/${PKGBASE}
 HELP_DIR=		${DATADIR}/help
 HELP_FILES=		clientcmnds.hlp irccmnds.hlp keys.hlp
+
+LIBS.SunOS+=		-lsocket -lnsl
 
 do-install:
 	${INSTALL_PROGRAM_DIR} ${DESTDIR}${PREFIX}/bin

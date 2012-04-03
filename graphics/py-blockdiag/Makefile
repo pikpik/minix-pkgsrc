@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2011/08/11 12:40:57 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/01/18 10:40:39 obache Exp $
 #
 
-DISTNAME=	blockdiag-0.9.2
+DISTNAME=	blockdiag-1.1.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	graphics
 MASTER_SITES=	http://pypi.python.org/packages/source/b/blockdiag/
@@ -19,5 +19,14 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 
+INSTALLATION_DIRS+=	${PKGMANDIR}/man1
+
+post-install:
+	${INSTALL_MAN} ${WRKSRC}/blockdiag.1 \
+		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
+
 .include "../../lang/python/egg.mk"
+.if ${PYPKGPREFIX} == "py26"
+DEPENDS+=	${PYPKGPREFIX}-ordereddict-[0-9]*:../../devel/py-ordereddict
+.endif
 .include "../../mk/bsd.pkg.mk"

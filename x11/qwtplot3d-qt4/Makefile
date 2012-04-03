@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/01/13 13:36:52 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/02/06 12:42:25 wiz Exp $
 #
 
 DISTNAME=	qwtplot3d-0.2.7
-PKGREVISION=	6
+PKGREVISION=	10
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qwtplot3d/}
 EXTRACT_SUFX=	.tgz
@@ -30,6 +30,7 @@ do-install:
 	${LIBTOOL} --mode=install ${INSTALL_DATA} \
 		${WRKSRC}/lib/libqwtplot3d.la ${DESTDIR}${PREFIX}/lib
 
+.include "../../graphics/glu/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

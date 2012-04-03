@@ -1,9 +1,10 @@
-@comment $NetBSD: PLIST,v 1.6 2008/06/13 04:55:53 bjs Exp $
+@comment $NetBSD$
 bin/cdv
 bin/cdv-agent
 bin/cdvpasswd
 bin/cdvserver
 bin/cdvupgrade
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/Codeville/DFS.py
 ${PYSITELIB}/Codeville/DFS.pyc
 ${PYSITELIB}/Codeville/DFS.pyo

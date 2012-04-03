@@ -1,17 +1,17 @@
-# $NetBSD: Makefile,v 1.3 2011/02/09 13:00:50 taca Exp $
+# $NetBSD: Makefile,v 1.5 2011/12/13 16:03:53 taca Exp $
 
-DISTNAME=	activeresource-${RUBY_RAILS3_VERSION}
-CATEGORIES=	devel
+DISTNAME=	activeresource-${RUBY_RAILS_VERSION}
+CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.rubyonrails.org/
-COMMENT=	REST modeling framework (part of Rails)
+COMMENT=	REST modeling framework (part of Rails 3.0)
 LICENSE=	mit
-
-RUBY_RAILS=	3
 
 DEPENDS+=	${RUBY_ACTIVESUPPORT_DEPENDS}
 DEPENDS+=	${RUBY_ACTIVEMODEL_DEPENDS}
+
+RUBY_RAILS_SUPPORTED=	3
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

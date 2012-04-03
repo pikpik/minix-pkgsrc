@@ -1,9 +1,8 @@
-# $NetBSD: options.mk,v 1.2 2008/02/22 17:04:34 jlam Exp $
+# $NetBSD: options.mk,v 1.3 2009/02/08 18:25:40 ahoka Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.hunspell
 PKG_SUPPORTED_OPTIONS=		wide-curses
 PKG_SUGGESTED_OPTIONS=		# empty
-PKG_LEGACY_OPTS+=		ncursesw:wide-curses
 
 .include "../../mk/bsd.options.mk"
 

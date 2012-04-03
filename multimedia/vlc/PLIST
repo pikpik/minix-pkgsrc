@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.43 2011/09/12 21:50:38 shattered Exp $
+@comment $NetBSD: PLIST,v 1.50 2012/01/12 15:54:00 drochner Exp $
 bin/cvlc
 ${PLIST.x11}bin/qvlc
 bin/rvlc
@@ -101,10 +101,12 @@ lib/vlc/plugins/access/libaccess_mms_plugin.la
 lib/vlc/plugins/access/libaccess_oss_plugin.la
 lib/vlc/plugins/access/libaccess_tcp_plugin.la
 lib/vlc/plugins/access/libaccess_udp_plugin.la
+lib/vlc/plugins/access/libcdda_plugin.la
 lib/vlc/plugins/access/libdvdnav_plugin.la
 lib/vlc/plugins/access/libdvdread_plugin.la
 lib/vlc/plugins/access/libfilesystem_plugin.la
 lib/vlc/plugins/access/librtp_plugin.la
+lib/vlc/plugins/access/libvcd_plugin.la
 ${PLIST.x11}lib/vlc/plugins/access/libxcb_screen_plugin.la
 lib/vlc/plugins/access/libzip_plugin.la
 lib/vlc/plugins/access_output/libaccess_output_dummy_plugin.la
@@ -135,6 +137,7 @@ lib/vlc/plugins/audio_mixer/libfloat32_mixer_plugin.la
 lib/vlc/plugins/audio_mixer/libspdif_mixer_plugin.la
 lib/vlc/plugins/audio_mixer/libtrivial_mixer_plugin.la
 lib/vlc/plugins/audio_output/libaout_file_plugin.la
+${PLIST.sdl}lib/vlc/plugins/audio_output/libaout_sdl_plugin.la
 lib/vlc/plugins/audio_output/liboss_plugin.la
 ${PLIST.pulseaudio}lib/vlc/plugins/audio_output/libpulse_plugin.la
 lib/vlc/plugins/codec/liba52_plugin.la
@@ -154,8 +157,9 @@ lib/vlc/plugins/codec/libinvmem_plugin.la
 lib/vlc/plugins/codec/liblibmpeg2_plugin.la
 lib/vlc/plugins/codec/liblpcm_plugin.la
 lib/vlc/plugins/codec/libmpeg_audio_plugin.la
-${PLIST.x11}lib/vlc/plugins/codec/libpng_plugin.la
+lib/vlc/plugins/codec/libpng_plugin.la
 lib/vlc/plugins/codec/librawvideo_plugin.la
+${PLIST.sdl}lib/vlc/plugins/codec/libsdl_image_plugin.la
 lib/vlc/plugins/codec/libspudec_plugin.la
 lib/vlc/plugins/codec/libsubsdec_plugin.la
 lib/vlc/plugins/codec/libsubsusf_plugin.la
@@ -225,7 +229,7 @@ lib/vlc/plugins/misc/libgnutls_plugin.la
 ${PLIST.dbus}lib/vlc/plugins/misc/libinhibit_plugin.la
 lib/vlc/plugins/misc/liblogger_plugin.la
 ${PLIST.dbus}lib/vlc/plugins/misc/libnotify_plugin.la
-${PLIST.x11}lib/vlc/plugins/misc/libosd_parser_plugin.la
+lib/vlc/plugins/misc/libosd_parser_plugin.la
 lib/vlc/plugins/misc/libstats_plugin.la
 ${PLIST.dbus}lib/vlc/plugins/misc/libtelepathy_plugin.la
 lib/vlc/plugins/misc/libvod_rtsp_plugin.la
@@ -317,6 +321,7 @@ lib/vlc/plugins/video_filter/libmosaic_plugin.la
 lib/vlc/plugins/video_filter/libmotionblur_plugin.la
 lib/vlc/plugins/video_filter/libmotiondetect_plugin.la
 lib/vlc/plugins/video_filter/libnoise_plugin.la
+lib/vlc/plugins/video_filter/libosdmenu_plugin.la
 ${PLIST.x11}lib/vlc/plugins/video_filter/libpanoramix_plugin.la
 lib/vlc/plugins/video_filter/libpostproc_plugin.la
 lib/vlc/plugins/video_filter/libpsychedelic_plugin.la
@@ -337,6 +342,7 @@ lib/vlc/plugins/video_filter/libwave_plugin.la
 lib/vlc/plugins/video_filter/libyuvp_plugin.la
 ${PLIST.x11}lib/vlc/plugins/video_output/libsnapshot_plugin.la
 lib/vlc/plugins/video_output/libvmem_plugin.la
+${PLIST.sdl}lib/vlc/plugins/video_output/libvout_sdl_plugin.la
 lib/vlc/plugins/video_output/libvout_wrapper_plugin.la
 ${PLIST.x11}lib/vlc/plugins/video_output/libxcb_glx_plugin.la
 ${PLIST.x11}lib/vlc/plugins/video_output/libxcb_window_plugin.la

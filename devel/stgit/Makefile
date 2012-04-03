@@ -1,28 +1,29 @@
-# $NetBSD: Makefile,v 1.13 2010/02/10 19:17:36 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/01/29 08:12:04 obache Exp $
 
 DISTNAME=	stgit-0.14.3
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	http://homepage.ntlworld.com/cmarinas/stgit/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.procode.org/stgit/
 COMMENT=	Stacked GIT
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	asciidoc-[0-9]*:../../textproc/asciidoc
 BUILD_DEPENDS+= xmlto-[0-9]*:../../textproc/xmlto
-DEPENDS+=	scmgit-base-[0-9]*:../../devel/scmgit-base
+DEPENDS+=	scmgit-base>=1.5.2:../../devel/scmgit-base
 
 AUTO_MKDIRS=	yes
 USE_TOOLS+=	bash:run perl gmake
+USE_LANGUAGES=	#none
 
 REPLACE_PERL=	Documentation/build-docdep.perl
 REPLACE_BASH=	contrib/stg-*
 
 PYTHON_PATCH_SCRIPTS=	*.py stgit/*.py stg
-PYDISTUTILSPKG=		yes
 PYSETUPINSTALLARGS=	--prefix=${PREFIX}
 
 MAKE_ENV+=	ASCIIDOC=${PREFIX}/bin/asciidoc
@@ -45,7 +46,7 @@ ASCIIDOC_EXTRA+= -a docbook-xsl-172
 .endif
 
 .include "../../lang/python/application.mk"
-.include "../../lang/python/extension.mk"
+.include "../../lang/python/distutils.mk"
 
 pre-build:
 	cd ${WRKSRC}/Documentation && \

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/04/22 13:42:49 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/02/06 12:39:17 wiz Exp $
 #
 
 PKGNAME=		akode-plugins-pulseaudio-${AKODE_VERSION}
-PKGREVISION=		3
+PKGREVISION=		6
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Pulseaudio output plugin for akode framework
@@ -19,7 +19,7 @@ CONFIGURE_ARGS+=	--with-polypaudio
 
 do-install:
 	cd ${WRKSRC}/akode/plugins/polyp_sink && ${SETENV} ${MAKE_ENV} ${MAKE} \
-		prefix=${DESTDIR}${PREFIX} install
+		DESTDIR=${DESTDIR} install
 
 .include "../../audio/pulseaudio/buildlink3.mk"
 .include "../../devel/libltdl/buildlink3.mk"

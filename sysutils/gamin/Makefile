@@ -1,16 +1,17 @@
-# $NetBSD: Makefile,v 1.17 2010/04/18 18:22:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.20 2012/03/03 00:13:55 wiz Exp $
 
 .include "../../sysutils/gamin/Makefile.common"
 
-PKGREVISION=		3
+PKGREVISION=		5
 CONFIGURE_ARGS+=	--enable-server
 
 TEST_TARGET=		check
 
 .include "options.mk"
 
+INSTALLATION_DIRS=	libexec
+
 do-install:
-	${INSTALL_LIB_DIR} ${DESTDIR}${PREFIX}/libexec
 	${INSTALL_LIB} ${WRKSRC}/server/gam_server \
 		${DESTDIR}${PREFIX}/libexec
 

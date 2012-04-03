@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.161 2011/02/10 16:25:30 wiz Exp $
+# $NetBSD: Makefile,v 1.163 2011/10/18 12:03:04 hiramatsu Exp $
 #
 
 COMMENT=	Communication programs
@@ -77,6 +77,7 @@ SUBDIR+=	mu-conference
 SUBDIR+=	naim
 SUBDIR+=	navi2ch
 SUBDIR+=	ninja
+SUBDIR+=	p5-IRC-Utils
 SUBDIR+=	p5-Net-AIM
 SUBDIR+=	p5-Net-AOLIM
 SUBDIR+=	p5-Net-Goofey

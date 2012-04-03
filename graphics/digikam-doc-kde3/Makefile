@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2011/01/13 13:37:58 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/02/09 21:44:27 sbd Exp $
 
 DISTNAME=		digikam-doc-0.9.5
-PKGREVISION=		7
+PKGREVISION=		11
 CATEGORIES=		graphics kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=digikam/}
 EXTRACT_SUFX=		.tar.bz2
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake perl
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+SET_LIBDIR=		yes
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"

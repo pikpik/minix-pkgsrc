@@ -1,6 +1,7 @@
 $NetBSD$
 
-SHA1 (racket-5.1.3-src-unix.tgz) = 7face74729cee8b36ce3df44b36b04ca23b4c986
-RMD160 (racket-5.1.3-src-unix.tgz) = 0913fdcc943d21551342bc141b4aec296ee72804
-Size (racket-5.1.3-src-unix.tgz) = 15939654 bytes
+SHA1 (racket-5.2.1-src-unix.tgz) = a4ea408818236f8eaf937291dd641fd73a997793
+RMD160 (racket-5.2.1-src-unix.tgz) = 20852c851aee25d79ee83bc3a18d45eed39aeebf
+Size (racket-5.2.1-src-unix.tgz) = 17210561 bytes
 SHA1 (patch-collects_racket_draw_unsafe_png.rkt) = 8c4d3de433537f3146bbe002fc0955a6445866ee
+SHA1 (patch-src_racket_sconfig.h) = dbfd13a85ac050eb097e8ff6c81d6585a5982178

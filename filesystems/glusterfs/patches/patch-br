@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-br,v 1.6 2011/10/06 02:19:06 manu Exp $
 
 Use linkat(2) if available so that we can make a hardlink to symlink 
 itself, instead of symlink destination, like link(2) does. This is
@@ -8,8 +8,12 @@ glusterfsd really wants to hardlink the symlink and not its target.
 If linkat(2) is inavailable, then moving a symlink on distributed
 volumes fails.
 
---- xlators/storage/posix/src/posix.c.orig	2011-08-23 14:31:42.000000000 +0200
-+++ xlators/storage/posix/src/posix.c	2011-09-17 15:45:30.000000000 +0200
+Correctly cast gfid when producing inode to avoid it getting garbled
+
+Ignore .attribute because chaos occurs if it gets distributed
+
+--- xlators/storage/posix/src/posix.c.orig	2011-11-14 14:46:03.000000000 +0100
++++ xlators/storage/posix/src/posix.c	2011-12-09 03:45:17.000000000 +0100
 @@ -36,8 +36,12 @@
  #ifndef GF_BSD_HOST_OS
  #include <alloca.h>
@@ -23,7 +27,18 @@ volumes fails.
  #include "md5.h"
  #include "checksum.h"
  #include "dict.h"
-@@ -1232,8 +1236,13 @@
+@@ -286,9 +290,9 @@
+         int i = 0;
+ 
+         /* consider least significant 8 bytes of value out of gfid */
+         for (i = 15; i > (15 - 8); i--) {
+-                temp_ino += buf->ia_gfid[i] << j;
++                temp_ino += (uint64_t)(buf->ia_gfid[i]) << j;
+                 j += 8;
+         }
+ 
+         buf->ia_ino = temp_ino;
+@@ -1311,8 +1315,13 @@
                          loc->path, strerror (op_errno));
                  goto out;
          }
@@ -37,7 +52,7 @@ volumes fails.
  
          if (op_ret == -1) {
                  op_errno = errno;
-@@ -2125,9 +2134,20 @@
+@@ -2204,9 +2213,20 @@
                          newparentpath, strerror (op_errno));
                  goto out;
          }
@@ -58,3 +73,47 @@ volumes fails.
                  op_errno = errno;
                  gf_log (this->name, GF_LOG_ERROR,
                          "link %s to %s failed: %s",
+@@ -4329,8 +4349,22 @@
+                 if ((!strcmp (real_path, base_path))
+                     && (!strcmp (entry->d_name, GF_REPLICATE_TRASH_DIR)))
+                         continue;
+ 
++#ifdef __NetBSD__
++		/*
++		 * NetBSD with UFS1 backend uses backing files for
++		 * extended attributes. They can be found in a
++		 * .attribute file located at the root of the filesystem
++		 * We hide it to glusterfs clients, since chaos will occur 
++		 * when the cluster/dht xlator decides to distribute
++		 * exended attribute backing file accross storage servers.
++		 */ 
++	        if ((!strcmp(real_path, base_path))
++	            && (!strcmp(entry->d_name, ".attribute")))
++	                continue;
++#endif /* __NetBSD__ */
++
+                 if ((!strcmp (real_path, base_path))
+                     && (!strncmp (GF_HIDDEN_PATH, entry->d_name,
+                                   strlen (GF_HIDDEN_PATH)))) {
+                         snprintf (hidden_path, PATH_MAX, "%s/%s", real_path,
+@@ -4455,14 +4489,15 @@
+ 
+         /* pick ENOENT to indicate EOF */
+         op_errno = errno;
+ 
++        list_for_each_entry (tmp_entry, &entries.list, list) {
++                strcpy (entry_path + real_path_len + 1,
++                        tmp_entry->d_name);
++                posix_lstat_with_gfid (this, entry_path, &stbuf);
++                tmp_entry->d_ino = stbuf.ia_ino;
++
+         if (whichop == GF_FOP_READDIRP) {
+-                list_for_each_entry (tmp_entry, &entries.list, list) {
+-                        strcpy (entry_path + real_path_len + 1,
+-                                tmp_entry->d_name);
+-                        posix_lstat_with_gfid (this, entry_path, &stbuf);
+-                        tmp_entry->d_ino = stbuf.ia_ino;
+                         tmp_entry->d_stat = stbuf;
+                 }
+         }
+ 

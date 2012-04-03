@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2011/04/22 13:42:34 obache Exp $
+# $NetBSD: Makefile,v 1.33 2012/02/06 12:41:30 wiz Exp $
 #
 
 DISTNAME=	brasero-2.32.1
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/brasero/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -17,11 +17,10 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 # gnome-common provides m4 files we need
 #
 BUILD_DEPENDS+=         gnome-common>=2.26.0:../../devel/gnome-common
-BUILD_DEPENDS+=		gsed-[0-9]*:../../textproc/gsed
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config gmake intltool gawk msgfmt
+USE_TOOLS+=	pkg-config gmake gsed intltool gawk msgfmt
 
 CONFIGURE_ARGS+=	--disable-inotify
 

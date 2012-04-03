@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2009/05/19 09:07:13 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2010/03/15 17:28:46 schmonz Exp $
 #
 
 .include "../../mail/ezmlm/Makefile.common"
 
 DISTNAME=		${EZMLM_VERS}
-PKGREVISION=		1
+PKGREVISION=		2
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://cr.yp.to/ezmlm.html

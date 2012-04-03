@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2010/02/11 20:47:16 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2012/02/17 14:09:05 hans Exp $
 #
 
 DISTNAME=	dtcp-20060109
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.imasy.or.jp/~ume/ipv6/ \
 		http://home.jp.FreeBSD.org/~ume/ipv6/
@@ -18,9 +19,9 @@ DEPENDS+=	qpopper-[0-9]*:../../mail/qpopper
 RCD_SCRIPTS=	dtcpc dtcps
 
 INSTALLATION_DIRS=	${PKGMANDIR}/cat8 ${PKGMANDIR}/man8 sbin
-INSTALL_MAKE_FLAGS+=	PREFIX=${DESTDIR}${PREFIX}
+INSTALL_MAKE_FLAGS+=	PREFIX=${PREFIX} DESTDIR=${DESTDIR}
 
-MAKE_ENV+=	${BSD_MAKE_ENV}
+USE_BSD_MAKEFILE=	yes
 
 .include "../../lang/ruby/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

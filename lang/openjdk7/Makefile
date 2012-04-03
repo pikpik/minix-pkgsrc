@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2011/09/05 11:46:14 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2012/02/06 12:40:46 wiz Exp $
 
 DISTNAME=	openjdk-7-fcs-src-b147-27_jun_2011
 PKGNAME=	openjdk7-1.7.0.147.20110811
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL:=openjdk7/}
 EXTRACT_SUFX=	.tar.bz2
@@ -29,11 +30,9 @@ JAVA_HOME=	${PREFIX}/java/${JAVA_NAME}
 JAVA_WRAPPERS=	jar java javac javadoc javah javap keytool orbd \
 		policytool rmid rmiregistry servertool tnameserv
 
-BUILD_DEPENDS+=		zip-[0-9]*:../../archivers/zip
-BUILD_DEPENDS+=		unzip-[0-9]*:../../archivers/unzip
-MAKE_ENV+=		PKGSRC_ZIPEXE=${PREFIX}/bin/zip
-MAKE_ENV+=		PKGSRC_UNZIP=${PREFIX}/bin/unzip
-MAKE_ENV+=		PKGSRC_UNZIPSFX=${PREFIX}/bin/unzipsfv
+MAKE_ENV+=		PKGSRC_ZIPEXE=${TOOLS_PATH.zip}
+MAKE_ENV+=		PKGSRC_UNZIP=${TOOLS_PATH.unzip}
+MAKE_ENV+=		PKGSRC_UNZIPSFX=${TOOLS_PATH.unzip}sfx
 
 DEPENDS+=		dejavu-ttf-[0-9]*:../../fonts/dejavu-ttf
 #DEPENDS+=		ja-sazanami-ttf-[0-9]*:../../fonts/ja-sazanami-ttf
@@ -41,7 +40,7 @@ DEPENDS+=		dejavu-ttf-[0-9]*:../../fonts/dejavu-ttf
 
 NO_CONFIGURE=		yes
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		gmake pax
+USE_TOOLS+=		gmake pax unzip:run zip:run
 UNLIMIT_RESOURCES=	datasize stacksize
 WRKSRC=			${WRKDIR}/openjdk
 
@@ -162,6 +161,10 @@ do-install:
 
 .if !empty(MACHINE_PLATFORM:MNetBSD-4.*-*)
 MAKE_ENV+=	PTHREAD_STACKSIZE=1024
+.endif
+
+.if ${OPSYS} == "NetBSD"
+TOOLS_PLATFORM.unzip=
 .endif
 
 .include "../../fonts/fontconfig/buildlink3.mk"

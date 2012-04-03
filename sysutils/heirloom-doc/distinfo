@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.5 2011/11/26 16:29:38 cheusov Exp $
 
 SHA1 (heirloom-070715.tar.bz2) = cc1aa6977b445ba622159b443283ccb0571be9a5
 RMD160 (heirloom-070715.tar.bz2) = 546b68b1e6c603301084d47973ca9ec47ae8ea8c
@@ -13,4 +13,8 @@ SHA1 (patch-at) = be771b9cf90c12d90079c1d040a7c69586548dcc
 SHA1 (patch-au) = c47684b7f0de87f70e9aaf551e1b61990d7f3d42
 SHA1 (patch-av) = 2360ffb6f1311fb038c0c374817d5a203bdd8298
 SHA1 (patch-aw) = c40b843c96c72176359cd4b751093b48439d37b2
+SHA1 (patch-ax) = 74949080460cb2f7c16dd22f24fb650f0ad94817
+SHA1 (patch-libcommon_Makefile.mk) = a78061c36c4351a0059a37eb4e62976cbf2df763
 SHA1 (patch-libcommon_getopt.c) = 6e5e760d225efb7d169ed08356bc2b996907d261
+SHA1 (patch-nawk_Makefile.mk) = a09833bec6a235f68888f73907dcda829cf4beb9
+SHA1 (patch-oawk_Makefile.mk) = 97e2d121103c65c41dc8cee2d9c05bb412fd0af5

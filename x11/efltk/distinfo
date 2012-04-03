@@ -18,6 +18,7 @@ SHA1 (patch-efltk_Fl__Text__Buffer.h) = 16eb6b48d0f06ac0f2074a0b61a782db7757663e
 SHA1 (patch-efltk_Fl__Widget_h) = a35acb6f3af14bd2fabbe1c67b92e80fe561a366
 SHA1 (patch-efltk_Fl__Window.h) = b97f04435b88e05ec4f642b0615575cf8d279dd7
 SHA1 (patch-efltk_db_Fl__Params_h) = 9bb8574d1558f6ca753e0d9845b6fdaebeac38b4
+SHA1 (patch-src_core_filename_list.cpp) = d58e92fefa478fee2990e06db6455fd54cc30c16
 SHA1 (patch-src_core_fl__draw__pixmap_cpp) = cd31ac6d730b257bb3e76c9525ad92f9ea0fa3aa
 SHA1 (patch-src_images_Fl__Png.cpp) = 0c2d3bf30a5542274048784aaf32256cc5466dea
 SHA1 (patch-src_widgets_Fl__Calendar_cpp) = fb44e30fbed6a48ccd0d07348440df503a7e945e

@@ -3,3 +3,4 @@ ${PYSITELIB}/YamCha.py
 ${PYSITELIB}/YamCha.pyc
 ${PYSITELIB}/YamCha.pyo
 ${PYSITELIB}/_YamCha.so
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}

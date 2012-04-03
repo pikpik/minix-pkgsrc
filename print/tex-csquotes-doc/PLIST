@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/csquotes/README
+share/texmf-dist/doc/latex/csquotes/RELEASE
+share/texmf-dist/doc/latex/csquotes/csquotes.pdf
+share/texmf-dist/doc/latex/csquotes/csquotes.tex

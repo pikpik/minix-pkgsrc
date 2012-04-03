@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2011/08/25 15:29:12 taca Exp $
+# $NetBSD: Makefile,v 1.21 2012/03/17 14:02:23 taca Exp $
 
-DISTNAME=	hoe-2.12.3
+DISTNAME=	hoe-3.0.0
 CATEGORIES=	devel
 
 MAINTAINER=	minskim@NetBSD.org
@@ -10,12 +10,8 @@ LICENSE=	mit
 
 CONFLICTS+=	ruby[1-9][0-9]-hoe-[0-9]* hoe-[0-9]*
 
-RUBYGEMS_REQD= 1.4
+RUBYGEMS_REQD=	1.4
+USE_RAKE=	RUN
 
 .include "../../lang/ruby/gem.mk"
-
-.if ${RUBY_VER} == "18"
-DEPENDS+=	${RUBY_PKGPREFIX}-rake>=0.8.7:../../devel/rake
-.endif
-
 .include "../../mk/bsd.pkg.mk"

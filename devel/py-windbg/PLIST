@@ -4,6 +4,7 @@ bin/winpdb
 ${PYSITELIB}/rpdb2.py
 ${PYSITELIB}/rpdb2.pyc
 ${PYSITELIB}/rpdb2.pyo
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/winpdb.py
 ${PYSITELIB}/winpdb.pyc
 ${PYSITELIB}/winpdb.pyo

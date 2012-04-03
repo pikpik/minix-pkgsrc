@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2009/11/22 00:46:52 jym Exp $
+# $NetBSD: Makefile,v 1.44 2011/02/28 18:39:07 wiz Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -30,6 +30,7 @@ SUBDIR+=	nettest
 SUBDIR+=	nsieve
 SUBDIR+=	nttcp
 SUBDIR+=	paranoia
+SUBDIR+=	phoronix-test-suite
 SUBDIR+=	pipebench
 SUBDIR+=	postal
 SUBDIR+=	postmark

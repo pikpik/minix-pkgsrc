@@ -104,6 +104,8 @@ ${RUBY_VENDORLIB}/rabbit/parser/ext/image.rb
 ${RUBY_VENDORLIB}/rabbit/parser/ext/inline.rb
 ${RUBY_VENDORLIB}/rabbit/parser/ext/tex.rb
 ${RUBY_VENDORLIB}/rabbit/parser/image.rb
+${RUBY_VENDORLIB}/rabbit/parser/markdown.rb
+${RUBY_VENDORLIB}/rabbit/parser/markdown/converter.rb
 ${RUBY_VENDORLIB}/rabbit/parser/pause-support.rb
 ${RUBY_VENDORLIB}/rabbit/parser/pdf.rb
 ${RUBY_VENDORLIB}/rabbit/parser/rd.rb

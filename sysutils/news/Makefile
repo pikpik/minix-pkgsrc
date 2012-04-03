@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/01/23 21:14:17 jschauma Exp $
+# $NetBSD: Makefile,v 1.10 2009/02/16 13:39:13 joerg Exp $
 #
 
 DISTNAME=		news-0.2
@@ -11,7 +11,9 @@ COMMENT=		System V news(1)
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_FEATURES=		utimes
+USE_FEATURES=		utimes fts_open
+
+MAKE_ENV+=		LIBS=${LIBS:Q}
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

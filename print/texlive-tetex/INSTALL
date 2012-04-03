@@ -1,7 +1,0 @@
-# $NetBSD$
-
-case "${STAGE}" in
-POST-INSTALL)
-	@UPDMAP_SYS@
-	;;
-esac

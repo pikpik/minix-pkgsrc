@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2009/02/09 22:56:21 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/01/23 12:10:25 obache Exp $
 #
 
 DISTNAME=		amaroc-0.3
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=amaroc/}
 EXTRACT_SUFX=		.tar.bz2
@@ -17,7 +17,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin share/doc/amaroc
 PYTHON_PATCH_SCRIPTS=	amaroc.py
 
-do-build:
+NO_BUILD=		yes
+
+USE_LANGUAGES=		# none
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/amaroc.py ${DESTDIR}${PREFIX}/bin

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.81 2011/06/05 23:10:12 pettai Exp $
-#
+# $NetBSD: Makefile,v 1.88 2012/03/08 11:43:47 wiz Exp $
 
-DISTNAME=	nmap-5.51
-PKGREVISION=	2
+DISTNAME=	nmap-5.51.6
+PKGREVISION=	3
 CATEGORIES=	net security
 MASTER_SITES=	http://nmap.org/dist/
 EXTRACT_SUFX=	.tar.bz2
@@ -15,9 +14,9 @@ LICENSE=	gnu-gpl-v2
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-BUILDLINK_API_DEPENDS.libpcap=	libpcap>=1.0.0
-BUILDLINK_API_DEPENDS.libpcre=	libpcre>=7.6
-BUILDLINK_API_DEPENDS.openssl=	openssl>=0.9.8
+BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=1.0.0
+BUILDLINK_API_DEPENDS.libpcre+=	libpcre>=7.6
+BUILDLINK_API_DEPENDS.openssl+=	openssl>=0.9.8
 
 GNU_CONFIGURE=		yes
 
@@ -30,7 +29,10 @@ BUILD_DEFS+=		IPV6_READY
 
 .include "options.mk"
 
-CHECK_INTERPRETER_SKIP+= share/zenmap/su-to-zenmap.sh
+CHECK_INTERPRETER_SKIP=	bin/uninstall_zenmap
+CHECK_INTERPRETER_SKIP+=	share/zenmap/su-to-zenmap.sh
+CHECK_INTERPRETER_SKIP+=	share/nmap/nselib/data/oracle-sids
+CHECK_INTERPRETER_SKIP+=	share/nmap/nselib/data/passwords.lst
 
 CONFIGURE_ARGS+=	--with-libpcap=${BUILDLINK_PREFIX.libpcap}
 CONFIGURE_ARGS+=	--with-libpcre=${BUILDLINK_PREFIX.pcre}

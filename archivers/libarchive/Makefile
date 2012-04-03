@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2010/03/16 17:13:47 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2011/10/26 08:32:50 cheusov Exp $
 #
 
 DISTNAME=	libarchive-2.8.4
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -21,6 +22,14 @@ CONFIGURE_ARGS+=	--disable-bsdtar --without-expat --without-xml2 \
 do-extract:
 	${CP} -r ${FILESDIR} ${WRKSRC}
 
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == SunOS
+# workaround for pkg/45491
+CONFIGURE_ENV+=	ac_cv_header_ext2fs_ext2_fs_h=no
+.endif
+
 .include "../../archivers/bzip2/buildlink3.mk"
+.include "../../archivers/xz/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

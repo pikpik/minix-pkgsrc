@@ -1,6 +1,7 @@
 @comment $NetBSD$
 bin/UTscapy
 bin/scapy
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/scapy/__init__.py
 ${PYSITELIB}/scapy/__init__.pyc
 ${PYSITELIB}/scapy/__init__.pyo

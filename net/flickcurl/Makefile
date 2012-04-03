@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/08/25 13:30:23 jakllsch Exp $
+# $NetBSD: Makefile,v 1.3 2012/01/20 12:36:26 wiz Exp $
 #
 
-DISTNAME=	flickcurl-1.21
+DISTNAME=	flickcurl-1.22
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.dajobe.org/flickcurl/
 
@@ -18,5 +19,5 @@ USE_TOOLS+=	pkg-config
 
 .include "../../www/curl/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
-.include "../../textproc/raptor/buildlink3.mk"
+.include "../../textproc/raptor2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

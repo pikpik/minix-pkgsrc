@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2010/03/05 13:57:51 obache Exp $
+# $NetBSD: Makefile,v 1.8 2011/08/06 19:16:32 gls Exp $
 #
 
 DISTNAME=	mutagen-1.20
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://mutagen.googlecode.com/files/
 
@@ -14,7 +15,6 @@ LICENSE=	gnu-gpl-v2
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
-PYDISTUTILSPKG=	yes
 
-.include "../../lang/python/extension.mk"
+.include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

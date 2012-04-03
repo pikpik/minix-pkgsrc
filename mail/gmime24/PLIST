@@ -1,6 +1,4 @@
 @comment $NetBSD$
-bin/uudecode
-bin/uuencode
 include/gmime-2.4/gmime/gmime-charset.h
 include/gmime-2.4/gmime/gmime-cipher-context.h
 include/gmime-2.4/gmime/gmime-content-type.h

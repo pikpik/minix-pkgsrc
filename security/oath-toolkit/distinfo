@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.2 2011/12/14 09:04:13 pettai Exp $
+
+SHA1 (oath-toolkit-1.10.5.tar.gz) = b3fddfbc442c7cffe854ec159466155ef6ce0cbc
+RMD160 (oath-toolkit-1.10.5.tar.gz) = 52c09b838b10df8536e3f122e1b829eec1f830f4
+Size (oath-toolkit-1.10.5.tar.gz) = 1876773 bytes

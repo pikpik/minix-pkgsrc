@@ -1,4 +1,4 @@
-# $NetBSD: mpdas.sh
+# $NetBSD: mpdas.sh$
 #
 # PROVIDE: mpdas
 # # REQUIRE: DAEMON network

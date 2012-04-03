@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/09/25 14:02:09 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2011/06/01 11:20:29 wiz Exp $
 #
 
 .include		"../../games/nethack-lib/Makefile.common"
@@ -13,6 +13,16 @@ CONFIGURE_SCRIPT=	./sys/unix/setup.sh
 BUILD_TARGET=		datastuff
 INSTALL_TARGET=		manpages install-dat
 INSTALLATION_DIRS=	${PKGMANDIR}/man6
+
+# Using 'nroff -Tascii' works better with groff and we don't want to use col
+# on linux as it removes the escape the the ansi color sequences.
+.if ${OPSYS} == "Linux"
+SUBST_CLASSES+=		nroff
+SUBST_STAGE.nroff=	pre-configure
+SUBST_MESSAGE.nroff=	Fixing Guidebook format command.
+SUBST_FILES.nroff=	sys/unix/Makefile.doc
+SUBST_SED.nroff=	-e '/^GUIDECMD/s,nroff .*$$,nroff -Tascii,'
+.endif
 
 # Special handling for the scorefiles: we do not want to delete
 # them between package installations and deinstallations.

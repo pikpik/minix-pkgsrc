@@ -27,4 +27,9 @@ SUBST_SED.prefix-fixup= \
 	-e 's|^\#\!/usr/local/bin/zsh|\#\!${PREFIX}/bin/zsh|g' \
 	-e 's|^\#\! /usr/local/bin/zsh|\#\! ${PREFIX}/bin/zsh|g'
 
+USE_TOOLS+= autoconf
+
+pre-configure:
+	cd ${WRKSRC}; autoconf
+
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2011/09/09 22:02:19 cheusov Exp $
+# $NetBSD: Makefile,v 1.14 2011/11/22 21:03:07 cheusov Exp $
 
-DISTNAME=	pkgnih-0.9.1
+DISTNAME=	pkgnih-0.10.0
+PKGREVISION=	2
 PKGNAME=	${DISTNAME:S/pkgnih/nih/}
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/nih/ \
@@ -37,10 +38,6 @@ REPLACE.runawk.old=	.*runawk
 REPLACE.runawk.new=	${PREFIX}/bin/runawk
 REPLACE_FILES.runawk=	nih/pkg_update_plan.in nih/cmp2hr.in
 
-MAKE_ENV+=		MANDIR=${PREFIX}/${PKGMANDIR}
-
-MAKE_PROGRAM=		mkcmake
-
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == NetBSD || ${OPSYS} == FreeBSD || ${OPSYS} == OpenBSD || \
@@ -53,6 +50,10 @@ DEPENDS+=	tnftp-[0-9]*:../../net/tnftp
 
 MAKE_ENV+= FTP=${FTP_CMD:Q}
 
-.include "../../devel/mk-configure/configure.mk"
+.if ${OPSYS} =="SunOS" #&& empty(OS_VERSION:M5.11*)
+REPLACE_SH+=	nih/nih.in nih/pkg_status.in
+.endif
+
+.include "../../devel/mk-configure/mk-c.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+The Xen hypervisor is installed under the following locations:
+	${XENKERNELDIR}/xen.gz		(standard hypervisor)
+	${XENKERNELDIR}/xen-debug.gz	(debug hypervisor)
+===========================================================================

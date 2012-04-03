@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2011/06/10 09:39:57 obache Exp $
+# $NetBSD: Makefile,v 1.25 2011/11/27 08:10:12 sbd Exp $
 
 DISTNAME=	mediatomb-0.12.1
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mediatomb/}
 
@@ -64,6 +64,7 @@ post-install:
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/libexif/buildlink3.mk"
 .include "../../multimedia/ffmpeg/buildlink3.mk"
+.include "../../sysutils/file/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
 

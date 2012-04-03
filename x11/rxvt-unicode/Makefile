@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2011/08/04 23:40:48 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2012/03/01 23:03:14 morr Exp $
 
-DISTNAME=		rxvt-unicode-9.06
-PKGREVISION=		3
+DISTNAME=		rxvt-unicode-9.15
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		http://dist.schmorp.de/rxvt-unicode/ \
 			http://dist.schmorp.de/rxvt-unicode/Attic/
@@ -18,6 +18,8 @@ USE_TOOLS+=		pkg-config
 USE_FEATURES+=		snprintf
 
 CONFIGURE_ENV+=		ac_cv_path_TIC=no
+
+CONFIGURE_ARGS+=       --enable-256-color
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+= 	share/doc/rxvt-unicode share/examples/rxvt-unicode

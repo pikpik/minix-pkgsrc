@@ -1,4 +1,5 @@
-@comment $NetBSD: PLIST,v 1.5 2009/07/02 05:23:18 epg Exp $
+@comment $NetBSD: PLIST,v 1.8 2012/01/27 08:53:50 obache Exp $
+${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/bzrlib/plugins/bzrtools/__init__.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/__init__.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/__init__.pyo
@@ -14,6 +15,9 @@ ${PYSITELIB}/bzrlib/plugins/bzrtools/bzrtools.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/cbranch.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/cbranch.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/cbranch.pyo
+${PYSITELIB}/bzrlib/plugins/bzrtools/check-release.py
+${PYSITELIB}/bzrlib/plugins/bzrtools/check-release.pyc
+${PYSITELIB}/bzrlib/plugins/bzrtools/check-release.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/colordiff.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/colordiff.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/colordiff.pyo
@@ -59,9 +63,6 @@ ${PYSITELIB}/bzrlib/plugins/bzrtools/patchsource.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/progress.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/progress.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/progress.pyo
-${PYSITELIB}/bzrlib/plugins/bzrtools/release.py
-${PYSITELIB}/bzrlib/plugins/bzrtools/release.pyc
-${PYSITELIB}/bzrlib/plugins/bzrtools/release.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/rspush.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/rspush.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/rspush.pyo
@@ -83,9 +84,6 @@ ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/__init__.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/blackbox.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/blackbox.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/blackbox.pyo
-${PYSITELIB}/bzrlib/plugins/bzrtools/tests/is_clean.py
-${PYSITELIB}/bzrlib/plugins/bzrtools/tests/is_clean.pyc
-${PYSITELIB}/bzrlib/plugins/bzrtools/tests/is_clean.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/shelf_tests.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/shelf_tests.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/shelf_tests.pyo
@@ -101,6 +99,9 @@ ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_dotgraph.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_fetch_ghosts.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_fetch_ghosts.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_fetch_ghosts.pyo
+${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_graph.py
+${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_graph.pyc
+${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_graph.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_link_tree.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_link_tree.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_link_tree.pyo
@@ -110,9 +111,6 @@ ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_mirror.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_patch.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_patch.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_patch.pyo
-${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_rspush.py
-${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_rspush.pyc
-${PYSITELIB}/bzrlib/plugins/bzrtools/tests/test_rspush.pyo
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/upstream_import.py
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/upstream_import.pyc
 ${PYSITELIB}/bzrlib/plugins/bzrtools/tests/upstream_import.pyo

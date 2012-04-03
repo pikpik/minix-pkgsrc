@@ -1,19 +1,25 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/04 08:01:18 manu Exp $
+# $NetBSD: Makefile,v 1.5 2011/12/18 21:09:27 dholland Exp $
 #
 
 .include "../../www/phraseanet/Makefile.common"
 
 MODNAME=		phrasea2
-PKGNAME=		${PHP_PKG_PREFIX}-${MODNAME}-${PHP_BASE_VERS}.${VERS}
+PECL_VERSION=		${VERS}
+PECL_LEGACY_VERSION_SCHEME=	yes
 PKG_DESTDIR_SUPPORT=	user-destdir
 EXTRACT_ELEMENTS=	${DISTNAME}/bin/src/php_phrasea2
 USE_LANGUAGES=		c c++
 
 .include "../../lang/php/ext.mk"
+
+# php/ext.mk trashes these, preventing the package from building,
+# so set them back again afterwards. grr
+DISTNAME=	phraseanet-v${VERS}-linux
+DIST_SUBDIR=	#empty
+
+# This seems to now be needed though it wasn't before...
+WRKSRC=${WRKDIR}/${DISTNAME}/bin/src/php_phrasea2
+
 .include "../../mk/mysql.buildlink3.mk"
 .include "../../devel/libuuid/buildlink3.mk"
-
-# php/ext.mk changes this, set it back (XXX)
-DISTINFO_FILE=${.CURDIR}/distinfo
-
 .include "../../mk/bsd.pkg.mk"

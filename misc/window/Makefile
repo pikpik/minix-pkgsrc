@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/03/09 17:38:55 jmmv Exp $
 
-DISTNAME=	window-20110309
+DISTNAME=	window-20120215
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2010/09/16 08:06:15 adam Exp $
+# $NetBSD: Makefile,v 1.30 2012/01/07 12:58:45 obache Exp $
 
 DISTNAME=	xcin-2.5.3.pre2
 PKGNAME=	xcin-2.5.3rc2
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	chinese x11
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/devel/
 
@@ -32,13 +32,31 @@ INSTALLATION_DIRS=	share/doc/xcin
 EGDIR=			${PREFIX}/share/examples/xcin
 CONF_FILES=		${EGDIR}/xcinrc ${PKG_SYSCONFDIR}/xcinrc
 
+PLIST_VARS+=	big5hk gbk
+
 .if ${OPSYS} == "NetBSD"
-EUC_LOCALE=	euccn
+GB2312_ENC=	euccn
+.elif ${OPSYS} == "Linux"
+GB2312_ENC=	gb2312
+PLIST.big5hk=	yes
+BIG5HK_ENC=	big5hkscs
+PLIST.gbk=	yes
+GBK_ENC=	gbk
+.elif ${OPSYS} == "HPUX"
+GB2312_ENC=	gb2312
+PLIST.big5hk=	yes
+BIG5HK_ENC=	hkbig5
 .else
-EUC_LOCALE=	euc
+GB2312_ENC=	euc
 .endif
 
-PLIST_SUBST+=	EUC_LOCALE=${EUC_LOCALE}
+PLIST_SUBST+=	GB2312_ENC=${GB2312_ENC}
+.if defined(PLIST.big5hk) && ${PLIST.big5hk} == "yes"
+PLIST_SUBST+=	BIG5HK_ENC=${BIG5HK_ENC}
+.endif
+.if defined(PLIST.gbk) && ${PLIST.gbk} == "yes"
+PLIST_SUBST+=	GBK_ENC=${GBK_ENC}
+.endif
 
 post-extract:
 	${CP} ${FILESDIR}/xcinrc.DRAGONFLY ${WRKSRC}/etc

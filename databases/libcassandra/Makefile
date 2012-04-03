@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/04/22 13:43:13 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/02/29 16:32:20 hans Exp $
 #
 
 DISTNAME=		libcassandra-20101010
-PKGREVISION=		2
+PKGREVISION=		5
 CATEGORIES=		databases
 MASTER_SITES=		ftp://ftp.ancient-solutions.com/pub/bsdprojects/NetBSD/packages/distfiles/
 
@@ -19,15 +19,18 @@ USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		perl
 
-.include "../../devel/boost-headers/buildlink3.mk"
-.include "../../devel/boost-libs/buildlink3.mk"
-.include "../../devel/libthrift/buildlink3.mk"
-.include "../../lang/gcc44/buildlink3.mk"
+# libthrift is not clean
+BUILDLINK_TRANSFORM+=	rm:-Wundef
 
 .include "../../mk/bsd.prefs.mk"
 
-pre-configure:
-.include "../../lang/gcc44/preconfigure.mk"
+.if ${OPSYS} != "DragonFly"
+GCC_REQD+=	4.4
+.endif
+
+.include "../../devel/boost-headers/buildlink3.mk"
+.include "../../devel/boost-libs/buildlink3.mk"
+.include "../../devel/libthrift/buildlink3.mk"
 
 CONFIGURE_ARGS+=	CPPFLAGS="-I${BUILDLINK_PREFIX.libthrift}/include/thrift -I${BUILDLINK_PREFIX.boost-headers}/include/boost"
 MAKE_ENV+=		AM_DEFAULT_VERBOSITY=1

@@ -1,7 +1,11 @@
-# $NetBSD: modules.mk,v 1.29 2010/11/06 23:44:01 obache Exp $
+# $NetBSD: modules.mk,v 1.32 2012/03/17 13:53:01 taca Exp $
 
 .if !defined(_RUBY_MODULE_MK)
 _RUBY_MODULE_MK=	# defined
+
+.if defined(RUBY_RAILS_SUPPORTED)
+USE_TOOLS+=		expr
+.endif
 
 .include "../../lang/ruby/rubyversion.mk"
 
@@ -11,9 +15,16 @@ _RUBY_MODULE_MK=	# defined
 PKGNAME?=	${RUBY_PKGPREFIX}-${DISTNAME}
 
 .if defined(NO_BUILD) && empty(NO_BUILD:M[Nn][Oo])
-DEPENDS+= ruby${RUBY_VER}-base>=${RUBY_REQD}:../../lang/ruby${RUBY_VER}-base
+DEPENDS+= ruby${RUBY_VER}-base>=${RUBY_VERSION}:../../lang/${RUBY_BASE}
 .else
 .include "../../lang/ruby/buildlink3.mk"
+.endif
+
+.if defined(RUBY_RAILS_SUPPORTED)
+.include "../../lang/ruby/rails.mk"
+.if ${RUBY_RAILS} > 3
+RUBY_RDOC_REQD?=	2.5.0
+.endif
 .endif
 
 #
@@ -178,9 +189,9 @@ ruby-simple-install:
 
 .if ${RUBY_VER} == "18"
 .if !empty(USE_RAKE:M[Rr][Uu][Nn])
-DEPENDS+=	${RUBY_PKGPREFIX}-rake>=0.8.1:../../devel/rake
+DEPENDS+=	${RUBY_PKGPREFIX}-rake>=0.8.7:../../devel/ruby-rake
 .else
-BUILD_DEPENDS+=	${RUBY_PKGPREFIX}-rake>=0.8.1:../../devel/rake
+BUILD_DEPENDS+=	${RUBY_PKGPREFIX}-rake>=0.8.7:../../devel/ruby-rake
 .endif
 .endif
 

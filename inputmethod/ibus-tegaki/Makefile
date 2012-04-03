@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/08/08 00:42:23 obache Exp $
+# $NetBSD: Makefile,v 1.2 2010/08/08 00:46:45 obache Exp $
 #
 
 DISTNAME=	ibus-tegaki-0.3.1
+PKGREVISION=	1
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://www.tegaki.org/releases/${PKGVERSION_NOREV}/
 

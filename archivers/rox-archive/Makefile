@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2009/02/09 22:56:21 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/02/15 19:23:20 hans Exp $
 #
 
 DISTNAME=	archive-2.0
 PKGNAME=	rox-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tgz
@@ -24,6 +24,7 @@ USE_TOOLS+=	pax
 NO_BUILD=	yes
 
 PYTHON_PATCH_SCRIPTS=	AppRun tests/testall.py
+REPLACE_SH=		Messages/dist Messages/update-po
 
 INSTALLATION_DIRS=	share/rox/Archive
 

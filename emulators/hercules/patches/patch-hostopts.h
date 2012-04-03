@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-hostopts.h,v 1.1 2011/05/01 23:28:59 ryoon Exp $
 
 --- hostopts.h.orig	2010-01-08 22:56:27.000000000 +0000
 +++ hostopts.h
@@ -7,7 +7,7 @@ $NetBSD$
  /* Hard-coded FreeBSD-specific features and options...               */
  /*-------------------------------------------------------------------*/
 -#elif defined(__FreeBSD__)              /* "FreeBSD" options         */
-+#elif defined(__FreeBSD__) || defined(__NetBSD__)/* "BSD" options    */
++#elif defined(__FreeBSD__) || defined(__NetBSD__) || defined(__DragonFly__)/* "BSD" options    */
  
  #define DLL_IMPORT   extern
  #define DLL_EXPORT

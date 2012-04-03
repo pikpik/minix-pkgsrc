@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2009/05/16 22:01:20 zafer Exp $
+# $NetBSD: Makefile,v 1.8 2009/06/30 00:07:10 joerg Exp $
 #
 
 DISTNAME=		azara-2.7-src
 PKGNAME=		azara-2.7
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		biology
 MASTER_SITES=		http://www.ccpn.ac.uk/download/azara/
 

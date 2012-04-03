@@ -1,7 +1,7 @@
 @comment $NetBSD$
 bin/softhsm
 bin/softhsm-keyconv
-lib/libsofthsm.la
+lib/softhsm/libsofthsm.la
 man/man1/softhsm-keyconv.1
 man/man1/softhsm.1
 man/man5/softhsm.conf.5

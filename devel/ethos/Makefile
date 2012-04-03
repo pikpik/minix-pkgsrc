@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/01/13 13:36:33 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/03/03 00:11:55 wiz Exp $
 #
 
 DISTNAME=	ethos-0.2.2
-PKGREVISION=	4
+PKGREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	http://ftp.dronelabs.com/sources/ethos/0.2/
 
@@ -15,12 +15,14 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config intltool gmake
+USE_TOOLS+=	pkg-config intltool gmake msgfmt
 
 PKGCONFIG_OVERRIDE+=	ethos-ui.pc.in
 PKGCONFIG_OVERRIDE+=	ethos.pc.in
 
 TEST_TARGET=	check
+
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

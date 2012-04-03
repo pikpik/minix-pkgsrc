@@ -9,6 +9,7 @@ share/texmf-dist/tex/latex/latexconfig/lualatex-patch-kernel.tex
 share/texmf-dist/tex/latex/latexconfig/lualatex-reset-codes.tex
 share/texmf-dist/tex/latex/latexconfig/lualatex.ini
 share/texmf-dist/tex/latex/latexconfig/lualatexiniconfig.tex
+share/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.lua
 share/texmf-dist/tex/latex/latexconfig/lualatexquotejobname.tex
 share/texmf-dist/tex/latex/latexconfig/mllatex.ini
 share/texmf-dist/tex/latex/latexconfig/pdflatex.ini

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/03/18 18:38:00 darcy Exp $
+# $NetBSD: Makefile,v 1.17 2011/10/15 11:46:04 obache Exp $
 #
 
 DISTNAME=	generate-2.6
@@ -13,6 +13,8 @@ HOMEPAGE=	http://www.druid.net/darcy/readme-generate.html
 COMMENT=	Python interface to Generate
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 MAKE_ENV+=		MANDIR=${DESTDIR}${PREFIX}/${PKGMANDIR}
 MAKE_ENV+=		BINDIR=${DESTDIR}${PREFIX}/bin

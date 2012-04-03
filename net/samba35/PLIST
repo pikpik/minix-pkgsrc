@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.2 2011/07/10 17:03:15 wiz Exp $
+@comment $NetBSD: PLIST,v 1.5 2012/01/27 14:32:02 adam Exp $
 bin/eventlogadm
 bin/findsmb
 bin/ldbadd
@@ -48,7 +48,8 @@ lib/libtdb.${LIBEXT}
 lib/libtdb.${LIBEXT}.1
 ${PLIST.winbind}lib/libwbclient.${LIBEXT}
 ${PLIST.winbind}lib/libwbclient.${LIBEXT}.0
-${PLIST.winbind}lib/nss_winbind.${LIBEXT}.0
+${PLIST.winbind}${NSS_WINBIND}
+${PLIST.winbind}${NSS_WINS}
 lib/samba/auth/script.${LIBEXT}
 lib/samba/charset/CP437.${LIBEXT}
 lib/samba/charset/CP850.${LIBEXT}
@@ -148,6 +149,7 @@ man/man8/tdbtool.8
 man/man8/umount.cifs.8
 man/man8/vfs_acl_tdb.8
 man/man8/vfs_acl_xattr.8
+man/man8/vfs_aio_fork.8
 man/man8/vfs_audit.8
 man/man8/vfs_cacheprime.8
 man/man8/vfs_cap.8

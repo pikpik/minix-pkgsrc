@@ -1,4 +1,4 @@
-# $NetBSD: motif.buildlink3.mk,v 1.12 2008/09/10 16:01:52 joerg Exp $
+# $NetBSD: motif.buildlink3.mk,v 1.14 2011/12/07 16:58:54 drochner Exp $
 #
 # Package-settable variables:
 #
@@ -29,7 +29,8 @@ BUILD_DEFS+=			MOTIF_TYPE MOTIFBASE
 # Otherwise, if ${X11BASE} is valid, then use it.  Otherwise, use the
 # Motif-2.0 specified by ${MOTIF_TYPE_DEFAULT}.
 #
-.if exists(/usr/dt/include/Xm/Xm.h) && \
+.if ${X11_TYPE} == "native" && \
+      exists(/usr/dt/include/Xm/Xm.h) && \
       exists(/usr/dt/include/Xm/Gadget.h)
 _MOTIF_TYPE=		dt
 .elif exists(${X11BASE}/lib/X11/config/OpenMotif.tmpl) || \
@@ -74,10 +75,8 @@ _MOTIFBASE=		${X11BASE}
 
 .if ${_MOTIF_TYPE} == "openmotif"
 .  include "../../x11/openmotif/buildlink3.mk"
-_MOTIFBASE=		${BUILDLINK_PREFIX.openmotif}
 .elif ${_MOTIF_TYPE} == "lesstif"
 .  include "../../x11/lesstif/buildlink3.mk"
-_MOTIFBASE=		${BUILDLINK_PREFIX.lesstif}
 .else
 #
 # Link the pre-existing Motif libraries and headers in ${_MOTIFBASE} into

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/03/05 18:51:32 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2011/05/04 11:38:06 obache Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-expat-0
@@ -10,6 +10,8 @@ HOMEPAGE=	http://www.python.org/
 COMMENT=	Python interface to expat
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 EXTRACT_ELEMENTS=	${PYSUBDIR}/Modules/pyexpat.c
 

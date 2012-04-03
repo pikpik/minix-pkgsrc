@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.85 2011/06/29 19:47:35 hans Exp $
+# $NetBSD: Makefile,v 1.86 2011/10/10 10:29:58 wiz Exp $
 
 DISTNAME=	nas-1.9.1.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -69,10 +69,7 @@ SUBST_FILES.owngrp=	clients/audio/auconvert/Makefile \
 SUBST_SED.owngrp=	-e 's/-c -o root -g wheel/-c -o ${UNPRIVILEGED_USER} -g ${UNPRIVILEGED_GROUP}/g'
 .endif
 
-.if ${OPSYS} == "SunOS"
-post-install:
-	${LN} -s libaudio.so.2.4 ${DESTDIR}${PREFIX}/lib/libaudio.so.2
-.endif
+REPLACE_SH=		clients/audio/util/checkmail
 
 PLIST_SRC=	${PKGDIR}/PLIST.clients
 

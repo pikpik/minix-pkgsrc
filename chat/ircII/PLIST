@@ -1,10 +1,10 @@
-@comment $NetBSD: PLIST,v 1.21 2009/06/14 17:37:46 joerg Exp $
+@comment $NetBSD: PLIST,v 1.23 2011/11/15 09:41:40 mrg Exp $
 bin/irc
 bin/irc-${VERS}
 bin/ircbug
 bin/ircflush
-bin/ircio
-bin/wserv
+libexec/ircio
+libexec/wserv
 man/man1/irc.1
 man/man1/ircII.1
 man/man1/ircbug.1
@@ -238,6 +238,7 @@ share/irc/help/note/wall${GZSUFFIX}
 share/irc/help/note/wallops${GZSUFFIX}
 share/irc/help/notice${GZSUFFIX}
 share/irc/help/notify${GZSUFFIX}
+share/irc/help/nuser${GZSUFFIX}
 share/irc/help/on/action${GZSUFFIX}
 share/irc/help/on/channel_nick${GZSUFFIX}
 share/irc/help/on/channel_signoff${GZSUFFIX}

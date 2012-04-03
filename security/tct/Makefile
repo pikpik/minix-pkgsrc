@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2010/01/27 21:18:13 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2010/03/08 01:21:59 dholland Exp $
 #
 
 DISTNAME=	tct-1.09
@@ -9,6 +9,8 @@ MASTER_SITES=	http://www.porcupine.org/forensics/
 MAINTAINER=	frazee.23@osu.edu
 HOMEPAGE=	http://www.porcupine.org/forensics/tct.html
 COMMENT=	Programs to aid post-mortem after a break-in
+
+NOT_FOR_PLATFORM=	NetBSD-[4-9]*-*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

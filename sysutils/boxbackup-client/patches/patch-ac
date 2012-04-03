@@ -1,76 +1,55 @@
 $NetBSD$
 
---- lib/backupclient/BackupClientFileAttributes.cpp.orig	2006-02-23 20:47:37.000000000 +0000
-+++ lib/backupclient/BackupClientFileAttributes.cpp
-@@ -481,7 +481,7 @@ void BackupClientFileAttributes::FillAtt
- 	char* buffer = static_cast<char*>(outputBlock.GetBuffer());
+avoid "make -C", not supported by older BSD make
+
+--- infrastructure/makeparcels.pl.in.orig	2011-01-08 21:35:22.000000000 +0000
++++ infrastructure/makeparcels.pl.in
+@@ -123,7 +123,7 @@ release/common/test:
  
- 	// Add the path name for the symbolic link, and add 0 termination
--	std::memcpy(buffer+oldSize, linkedTo, linkedToSize);
-+	::memcpy(buffer+oldSize, linkedTo, linkedToSize);
- 	buffer[oldSize+linkedToSize] = '\0';
- }
- #endif
-@@ -549,9 +549,9 @@ void BackupClientFileAttributes::FillExt
+ .PHONY: docs
+ docs:
+-	\$(MAKE) -C docs
++	(cd docs && \$(MAKE))
  
- 				// Store length and text for attibute name
- 				u_int16_t keyLength = htons(attrKey.size()+1);
--				std::memcpy(buffer+xattrSize, &keyLength, sizeof(u_int16_t));
-+				::memcpy(buffer+xattrSize, &keyLength, sizeof(u_int16_t));
- 				xattrSize += sizeof(u_int16_t);
--				std::memcpy(buffer+xattrSize, attrKey.c_str(), attrKey.size()+1);
-+				::memcpy(buffer+xattrSize, attrKey.c_str(), attrKey.size()+1);
- 				xattrSize += attrKey.size()+1;
+ __END_OF_FRAGMENT
  
- 				// Leave space for value size
-@@ -584,12 +584,12 @@ void BackupClientFileAttributes::FillExt
+@@ -220,7 +220,7 @@ EOF
+ 			print MAKE <<EOF;
+ .PHONY: docs/man/${name}.gz
+ docs/man/${name}.gz:
+-	\$(MAKE) -C docs man/${name}.gz
++	(cd docs && \$(MAKE) man/${name}.gz)
  
- 				// Fill in value size
- 				u_int32_t valueLength = htonl(valueSize);
--				std::memcpy(buffer+valueSizeOffset, &valueLength, sizeof(u_int32_t));
-+				::memcpy(buffer+valueSizeOffset, &valueLength, sizeof(u_int32_t));
- 			}
+ EOF
+ 			push @parcel_deps, "$dir/${name}.gz";
+@@ -238,7 +238,7 @@ EOF
+ 			print MAKE <<EOF;
+ .PHONY: docs/htmlguide/man-html/${name}.html
+ docs/htmlguide/man-html/${name}.html:
+-	\$(MAKE) -C docs htmlguide/man-html/${name}.html
++	(cd docs && \$(MAKE) htmlguide/man-html/${name}.html)
  
- 			// Fill in attribute block size
- 			u_int32_t xattrBlockLength = htonl(xattrSize-xattrBlockSizeOffset-sizeof(u_int32_t));
--			std::memcpy(buffer+xattrBlockSizeOffset, &xattrBlockLength, sizeof(u_int32_t));
-+			::memcpy(buffer+xattrBlockSizeOffset, &xattrBlockLength, sizeof(u_int32_t));
+ EOF
+ 			push @parcel_deps, "$dir/docs/${name}.html";
+@@ -249,10 +249,10 @@ EOF
+ .PHONY: $name-build $name-clean
  
- 			outputBlock.ResizeBlock(xattrSize);
- 		}
-@@ -676,7 +676,7 @@ void BackupClientFileAttributes::WriteAt
- 		}
- #endif
+ $name-build:
+-	\$(MAKE) -C $name
++	(cd $name && \$(MAKE))
  
--		xattrOffset += std::strlen(reinterpret_cast<char*>(pattr+1))+1;
-+		xattrOffset += ::strlen(reinterpret_cast<char*>(pattr+1))+1;
- 	}
- 	
- 	// If working as root, set user IDs
-@@ -817,7 +817,7 @@ void BackupClientFileAttributes::WriteEx
- 	const char* buffer = static_cast<char*>(mpClearAttributes->GetBuffer());
+ $name-clean:
+-	\$(MAKE) -C $name clean
++	(cd $name && \$(MAKE) clean)
+ EOF
+ 			push @parcel_deps, "$name-build";
+ 			push @clean_deps,  "$name-clean";
+@@ -359,7 +359,7 @@ install:
+ 	cat local/install.msg
  
- 	u_int32_t xattrBlockLength = 0;
--	std::memcpy(&xattrBlockLength, buffer+xattrOffset, sizeof(u_int32_t));
-+	::memcpy(&xattrBlockLength, buffer+xattrOffset, sizeof(u_int32_t));
- 	int xattrBlockSize = ntohl(xattrBlockLength);
- 	xattrOffset += sizeof(u_int32_t);
+ clean: @clean_deps
+-	\$(MAKE) -C docs clean
++	(cd docs && \$(MAKE) clean)
+ EOF
  
-@@ -831,7 +831,7 @@ void BackupClientFileAttributes::WriteEx
- 	while(xattrOffset<xattrEnd)
- 	{
- 		u_int16_t keyLength = 0;
--		std::memcpy(&keyLength, buffer+xattrOffset, sizeof(u_int16_t));
-+		::memcpy(&keyLength, buffer+xattrOffset, sizeof(u_int16_t));
- 		int keySize = ntohs(keyLength);
- 		xattrOffset += sizeof(u_int16_t);
- 
-@@ -839,7 +839,7 @@ void BackupClientFileAttributes::WriteEx
- 		xattrOffset += keySize;
- 
- 		u_int32_t valueLength = 0;
--		std::memcpy(&valueLength, buffer+xattrOffset, sizeof(u_int32_t));
-+		::memcpy(&valueLength, buffer+xattrOffset, sizeof(u_int32_t));
- 		int valueSize = ntohl(valueLength);
- 		xattrOffset += sizeof(u_int32_t);
- 
+ if ($build_os eq 'CYGWIN')

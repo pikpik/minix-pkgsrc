@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2009/05/19 08:59:21 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2011/12/19 07:45:19 dholland Exp $
 
 DISTNAME=	dk-milter-0.3.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dk-milter/}
 
@@ -15,7 +15,9 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_ENV+=		M4=${M4:Q}
 RCD_SCRIPTS=		dk-milter
 USE_BUILTIN.libmilter=	no
-USE_TOOLS+=		gm4
+USE_TOOLS+=		gm4 csh:run
+
+REPLACE_CSH=		dk-filter/gentxt.csh
 
 SUBST_CLASSES+=		libs
 SUBST_STAGE.libs=	pre-configure

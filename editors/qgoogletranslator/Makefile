@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/03/07 07:02:06 ryoon Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/06 12:40:04 wiz Exp $
 #
 
 DISTNAME=	qgoogletranslator-1.2.1
-PKGREVISION=	1
+PKGREVISION=	5
 CATEGORIES=	editors
 MASTER_SITES=	http://qgt.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -18,6 +18,8 @@ DEPENDS+=	mpg123-[0-9]*:../../audio/mpg123
 
 USE_LANGUAGES=	c++ c
 USE_CMAKE=	yes
+
+LDFLAGS.DragonFly=	-lX11
 
 FIND_PREFIX:=	MPG123DIR=mpg123
 .include "../../mk/find-prefix.mk"

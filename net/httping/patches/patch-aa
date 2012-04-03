@@ -1,12 +1,12 @@
 $NetBSD$
 
---- Makefile.orig	2010-07-24 10:32:07.000000000 +0000
+--- Makefile.orig	2011-08-03 16:08:08.000000000 +0000
 +++ Makefile
 @@ -17,7 +17,6 @@ include version
  TARGET=httping
  
  WFLAGS=-Wall -W
 -OFLAGS=-O2
- CFLAGS+=$(WFLAGS) $(OFLAGS) -DVERSION=\"$(VERSION)\"
+ CFLAGS+=$(WFLAGS) $(OFLAGS) -DVERSION=\"$(VERSION)\" -g
  
  PACKAGE=$(TARGET)-$(VERSION)

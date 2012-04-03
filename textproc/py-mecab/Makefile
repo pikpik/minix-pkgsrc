@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/03/05 18:51:32 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2011/10/25 08:36:20 obache Exp $
 #
 
 .include "../../textproc/mecab/Makefile.common"
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 
-PYDISTUTILSPKG=	yes
+EGG_NAME=	${DISTNAME:S/-/_/}
 
 TEST_ENV+=	PYTHONPATH=${WRKSRC:Q}/build/lib.${LOWER_OPSYS}-${OS_VERSION}-${MACHINE_ARCH}-${PYVERSSUFFIX}
 
@@ -26,5 +26,5 @@ do-test:
 BUILDLINK_API_DEPENDS.mecab+=	mecab>=${MECAB_VERSION}
 
 .include "../../textproc/mecab/buildlink3.mk"
-.include "../../lang/python/extension.mk"
+.include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2010/06/13 22:44:08 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2012/01/10 01:31:45 sbd Exp $
 
 BUILDLINK_TREE+=	libslang2
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	libslang2
 LIBSLANG2_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libslang2+=	libslang2>=2.1.3
-BUILDLINK_ABI_DEPENDS.libslang2?=	libslang2>=2.2.2nb2
+BUILDLINK_ABI_DEPENDS.libslang2?=	libslang2>=2.2.4nb1
 BUILDLINK_PKGSRCDIR.libslang2?=	../../devel/libslang2
 BUILDLINK_FNAME_TRANSFORM.libslang2+=	-e 's|include/slang2/|include/|g'
 BUILDLINK_TRANSFORM+=		l:slang:slang2
@@ -23,6 +23,7 @@ pkgbase:=	libslang2
 .  include "../../textproc/oniguruma/buildlink3.mk"
 .endif
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
 .endif # LIBSLANG2_BUILDLINK3_MK

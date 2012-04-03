@@ -1,16 +1,25 @@
 $NetBSD$
 
---- gio/Makefile.am.orig	2011-10-09 17:21:29.000000000 +0000
+--- gio/Makefile.am.orig	2012-03-11 21:44:19.000000000 +0000
 +++ gio/Makefile.am
-@@ -632,12 +632,6 @@ gdbus_LDADD = libgio-2.0.la \
- 	$(top_builddir)/glib/libglib-2.0.la 		\
- 	$(top_builddir)/gobject/libgobject-2.0.la
+@@ -2,7 +2,7 @@ include $(top_srcdir)/Makefile.decl
+ 
+ NULL =
+ 
+-SUBDIRS = gdbus-2.0/codegen
++SUBDIRS =
+ 
+ if OS_UNIX
+ SUBDIRS += libasyncns xdgmime
+@@ -635,12 +635,6 @@ gdbus_SOURCES = gdbus-tool.c
+ gdbus_LDADD = libgio-2.0.la \
+ 	$(gio_dependency_libs)
  
 -completiondir = $(sysconfdir)/bash_completion.d
--completion_SCRIPTS = \
+-completion_DATA = \
 -	gdbus-bash-completion.sh		\
 -	gsettings-bash-completion.sh
--EXTRA_DIST += $(completion_SCRIPTS)
+-EXTRA_DIST += $(completion_DATA)
 -
  # ------------------------------------------------------------------------
  

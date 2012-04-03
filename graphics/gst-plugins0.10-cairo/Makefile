@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/04/22 13:45:21 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/02/28 18:43:42 drochner Exp $
 #
 
 GST_PLUGINS0.10_NAME=	cairo
@@ -8,6 +8,7 @@ GST_PLUGINS0.10_FLAGS=	cairo
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/gst-plugins0.10-good/Makefile.common"
+PKGREVISION=1
 
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

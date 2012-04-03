@@ -1,0 +1,15 @@
+#!@SH@
+#
+# $NetBSD: INSTALL,v 1.1.1.1 2011/12/11 14:29:21 ryoon Exp $
+
+WWWGRP="@WWWGRP@"
+WWWOWN="@WWWOWN@"
+OHRDIR="@PREFIX@/@OHRDIR@"
+
+case "${STAGE}" in
+POST-INSTALL)
+	cd ${OHRDIR} &&
+		${CHOWN} -R ${WWWOWN} ${OHRDIR} &&
+		${CHGRP} -R ${WWWGRP} ${OHRDIR}
+	;;
+esac

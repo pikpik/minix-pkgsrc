@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/02/25 20:46:18 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2010/02/26 10:28:33 wiz Exp $
 #
 
 DISTNAME=	loco-0.32
@@ -11,7 +11,7 @@ COMMENT=	Colorize file or standard input and print on the standard output
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=	perl:run
+USE_TOOLS+=	perl:run pod2man pod2html
 REPLACE_PERL=	loco
 
 BUILD_TARGET=	# defined

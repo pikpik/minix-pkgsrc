@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/fonts/truetype/public/ipaex/ipaexg.ttf
+share/texmf-dist/fonts/truetype/public/ipaex/ipaexm.ttf
+share/texmf-dist/fonts/truetype/public/ipaex/ipag.ttf
+share/texmf-dist/fonts/truetype/public/ipaex/ipam.ttf

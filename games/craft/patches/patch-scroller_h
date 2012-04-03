@@ -1,0 +1,15 @@
+$NetBSD$
+
+ - const correctness demanded by recent gcc
+
+--- scroller.h~	1997-02-21 11:52:19.000000000 +0000
++++ scroller.h
+@@ -39,7 +39,7 @@ class scroller
+      button *button_incr;
+      button *button_decr;
+ 
+-     scroller  (char name [],
++     scroller  (const char name [],
+                 win  *w,
+                 int  x,
+                 int  y,

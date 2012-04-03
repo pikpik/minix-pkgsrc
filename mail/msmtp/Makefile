@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.30 2011/04/22 13:44:04 obache Exp $
+# $NetBSD: Makefile,v 1.36 2012/02/06 12:40:51 wiz Exp $
 
-DISTNAME=	msmtp-1.4.24
+DISTNAME=	msmtp-1.4.27
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=msmtp/}
 EXTRACT_SUFX=	.tar.bz2
@@ -23,6 +24,7 @@ CONF_FILES=	${EGDIR}/msmtprc-user.example \
 		${PKG_SYSCONFDIR}/msmtprc
 
 INFO_FILES=	yes
+PLIST_VARS+=	scripts
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Interix"
@@ -31,7 +33,8 @@ CPPFLAGS+=	-D__WINSOCK
 
 .include "options.mk"
 
-post-install:
+.PHONY: install-msmtp-scripts
+post-install: install-msmtp-scripts
 	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/msmtprc-user.example ${DESTDIR}${EGDIR}
 

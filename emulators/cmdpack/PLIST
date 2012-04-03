@@ -1,0 +1,20 @@
+@comment $NetBSD$
+bin/bin2iso
+bin/bincomp
+bin/brrrip
+bin/byteshuf
+bin/byteswap
+bin/cdpatch
+bin/ecm
+bin/fakecrc
+bin/hax65816
+bin/id3point
+bin/rels
+bin/screamf
+bin/subfile
+bin/uips
+bin/usfv
+bin/vb2rip
+bin/wordadd
+bin/zerofill
+share/doc/cmdpack/cmdpack.txt

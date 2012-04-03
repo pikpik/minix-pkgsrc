@@ -1,0 +1,14 @@
+$NetBSD$
+
+Uses PATH_MAX; therefore needs limits.h.
+
+--- Mowitz/MwFilesel.c~	2007-08-30 06:22:14.000000000 +0000
++++ Mowitz/MwFilesel.c
+@@ -23,6 +23,7 @@
+ #include <stdlib.h>
+ #include <string.h>
+ #include <ctype.h>
++#include <limits.h>
+ 
+ #include <dirent.h>
+ 

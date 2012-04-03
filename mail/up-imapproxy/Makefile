@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/01/17 12:02:26 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/02/04 14:21:10 joerg Exp $
 
 DISTNAME=	up-imapproxy-1.2.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	mail
 MASTER_SITES=	http://www.imapproxy.org/downloads/
 
@@ -37,4 +37,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/scripts/imapproxy.conf \
 		 ${DESTDIR}${PREFIX}/share/examples/up-imapproxy
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

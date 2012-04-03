@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/04/22 13:43:06 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/03/03 00:12:48 wiz Exp $
 #
 
 DISTNAME=	konversation-1.1
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	chat kde
 MASTER_SITES=	http://download.berlios.de/konversation/
 EXTRACT_SUFX=	.tar.bz2

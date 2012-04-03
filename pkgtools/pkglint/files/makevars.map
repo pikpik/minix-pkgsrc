@@ -1,4 +1,4 @@
-# $NetBSD: makevars.map,v 1.213 2011/06/18 10:45:32 wiz Exp $
+# $NetBSD: makevars.map,v 1.218 2012/01/06 01:26:45 wiz Exp $
 #
 
 # This file contains the guessed type of some variables, according to
@@ -475,7 +475,7 @@ MYSQL_VERSIONS_ACCEPTED	List of { 40 41 50 51 55 } [m:s]
 MYSQL_VERSION_DEFAULT	Version [$user]
 NM			ShellCommand [$system]
 NONBINMODE		FileMode [$system]
-NOT_FOR_COMPILER	List of { ccc gcc icc ido mipspro mipspro-ucode sunpro xlc } [$package]
+NOT_FOR_COMPILER	List of { ccache ccc clang distcc f2c gcc hp icc ido mipspro mipspro-ucode pcc sunpro xlc } [$package]
 NOT_FOR_PLATFORM	InternalList of PlatformTriple [$package_list]
 NOT_FOR_UNPRIVILEGED	YesNo [$package]
 NO_BIN_ON_CDROM		Restricted [m:s,c:s]
@@ -490,7 +490,7 @@ NO_INSTALL_MANPAGES	Yes [$package]
 NO_PKGTOOLS_REQD_CHECK	Yes [m:s]
 NO_SRC_ON_CDROM		Restricted [m:s,c:s]
 NO_SRC_ON_FTP		Restricted [m:s,c:s]
-ONLY_FOR_COMPILER	List of { ccc gcc icc ido mipspro mipspro-ucode sunpro xlc } [$package_list]
+ONLY_FOR_COMPILER	List of { ccc clang gcc hp icc ido mipspro mipspro-ucode pcc sunpro xlc } [$package_list]
 ONLY_FOR_PLATFORM	InternalList of PlatformTriple [$package_list]
 ONLY_FOR_UNPRIVILEGED	YesNo [$package]
 OPSYS			Identifier [$system]
@@ -518,7 +518,7 @@ PERL5_USE_PACKLIST	YesNo [$package]
 PERL5_PACKLIST		List of Perl5Packlist [m:s,o:sa]
 PERL5_PACKLIST_DIR	Pathname []
 PGSQL_PREFIX		Pathname [$system]
-PGSQL_VERSIONS_ACCEPTED	List of { 82 83 84 90 }
+PGSQL_VERSIONS_ACCEPTED	List of { 82 83 84 90 91 }
 PGSQL_VERSION_DEFAULT	Version [$user]
 PG_LIB_EXT		{ dylib so } [$system]
 PGSQL_TYPE		{ postgresql81-client postgresql80-client } [$system]
@@ -568,6 +568,7 @@ PKG_JVM			{						\
 				jdk jdk14				\
 				kaffe					\
 				sun-jdk13 sun-jdk14 sun-jdk15 sun-jdk6	\
+				openjdk7 openjdk7-bin			\
 			} [$system]
 PKG_JVMS_ACCEPTED	List of {					\
 				blackdown-jdk13				\
@@ -710,7 +711,7 @@ USE_GNU_ICONV		Yes [m:s,c:s,o:s]
 USE_GNU_READLINE	Yes [m:s,c:s,o:s]
 USE_IMAKE		Yes [m:s]
 USE_JAVA		{ run yes build } [$package]
-USE_JAVA2		{ YES yes no 1.4 1.5 } [$package]
+USE_JAVA2		{ YES yes no 1.4 1.5 6 7 } [$package]
 USE_LANGUAGES		List of { c c99 c++ fortran fortran77 java objc } [m:s,c:s,o:s]
 USE_LIBTOOL		Yes [$package]
 USE_MAKEINFO		Yes [$package]

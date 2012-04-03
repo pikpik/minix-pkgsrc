@@ -1,9 +1,9 @@
-# $NetBSD: Makefile.common,v 1.89 2010/12/14 10:08:40 adam Exp $
+# $NetBSD: Makefile.common,v 1.93 2012/02/13 11:01:06 drochner Exp $
 #
 # used by graphics/p5-PerlMagick/Makefile
 
-IM_MAJOR_VER=		6.6.9
-IM_MINOR_VER=		8
+IM_MAJOR_VER=		6.7.5
+IM_MINOR_VER=		10
 IM_MAJOR_LIB_VER=	${IM_MAJOR_VER}
 
 .if (${IM_MINOR_VER} != NONE)
@@ -36,7 +36,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-dps
 CONFIGURE_ARGS+=	--without-fpx
 CONFIGURE_ARGS+=	--without-gvc
-CONFIGURE_ARGS+=	--without-hdf
 CONFIGURE_ARGS+=	--without-jbig
 CONFIGURE_ARGS+=	--without-lqr
 CONFIGURE_ARGS+=	--without-modules

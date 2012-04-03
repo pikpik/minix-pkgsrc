@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2010/03/24 19:43:22 asau Exp $
+# $NetBSD: Makefile,v 1.31 2011/07/08 11:44:02 drochner Exp $
 
 DISTNAME=	autogen-5.12
 CATEGORIES=	devel
@@ -9,6 +9,7 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	kristerw@NetBSD.org
 HOMEPAGE=	http://autogen.sourceforge.net/
 COMMENT=	The Automated Text and Program Generation Tool
+LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

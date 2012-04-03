@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2011/04/22 13:42:17 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2012/02/06 12:41:13 wiz Exp $
 
 BUILDLINK_TREE+=	gupnp
 
@@ -6,8 +6,16 @@ BUILDLINK_TREE+=	gupnp
 GUPNP_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.gupnp+=	gupnp>=0.13.2
-BUILDLINK_ABI_DEPENDS.gupnp?=	gupnp>=0.13.3nb3
+BUILDLINK_ABI_DEPENDS.gupnp?=	gupnp>=0.13.3nb6
 BUILDLINK_PKGSRCDIR.gupnp?=	../../net/gupnp
+
+.include "../../mk/bsd.prefs.mk"
+.if !empty(OPSYS:M*BSD) || ${OPSYS} == "DragonFly"
+pre-configure:
+	cp ${BUILDLINK_PKGSRCDIR.gupnp}/files/uuid.pc ${BUILDLINK_DIR}/lib/pkgconfig/
+.else
+.include "../../devel/libuuid/buildlink3.mk"
+.endif
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../net/libsoup24/buildlink3.mk"

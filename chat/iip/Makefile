@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/03/03 02:19:51 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/04/07 17:22:11 joerg Exp $
 #
 
 DISTNAME=		iip-1.1.0
@@ -11,6 +11,8 @@ HOMEPAGE=		http://www.invisiblenet.net/iip/
 COMMENT=		The Invisible IRC Project
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+LDFLAGS.SunOS+=		-lsocket -lnsl
 
 BUILD_DIRS=		src
 MAKE_FLAGS+=		CC=${CC:Q}

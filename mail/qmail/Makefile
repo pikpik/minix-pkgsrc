@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.61 2011/09/28 06:36:57 joerg Exp $
+# $NetBSD: Makefile,v 1.63 2012/03/09 04:04:47 sbd Exp $
 #
 
 DISTNAME=		${PKGNAME_NOREV}
@@ -57,10 +57,8 @@ SETUP_PROGRAMS=		dnsfq dnsip dnsptr hostname install ipmeprint
 SETUP_SCRIPTS=		config config-fast
 
 MANDIRS=		man
-.for i in cat man
-.  for j in 1 5 7 8
-MANDIRS+=		man/${i}${j}
-.  endfor
+.for j in 1 5 7 8
+MANDIRS+=		man/man${j}
 .endfor
 INSTALLATION_DIRS=	bin ${MANDIRS} ${DOCDIR} ${SHAREDIR}
 INSTALLATION_DIRS+=	${EGDIR}/alias ${EGDIR}/boot ${EGDIR}/control

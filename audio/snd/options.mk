@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.1 2005/11/23 22:39:12 wiz Exp $
+# $NetBSD: options.mk,v 1.3 2011/12/05 19:16:57 dholland Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.snd
 PKG_SUPPORTED_OPTIONS=	esound guile
@@ -19,6 +19,7 @@ CONFIGURE_ARGS+=	--without-esd
 .if !empty(PKG_OPTIONS:Mgtk)
 CONFIGURE_ARGS+=	--with-gtk
 .include "../../x11/gtk2/buildlink3.mk"
+LDFLAGS.DragonFly=	-lX11
 .else
 CONFIGURE_ARGS+=	--without-gtk
 .endif
@@ -32,7 +33,7 @@ CONFIGURE_ARGS+=	--without-guile
 
 .if !empty(PKG_OPTIONS:Mmotif)
 CONFIGURE_ARGS+=	--with-motif
-.include "../../x11/openmotif/buildlink3.mk"
+.include "../../mk/motif.buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-motif
 .endif

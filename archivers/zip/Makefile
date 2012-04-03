@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2009/11/01 18:55:12 wiz Exp $
+# $NetBSD: Makefile,v 1.59 2011/11/22 05:49:00 enami Exp $
 
 DISTNAME=	zip30
 PKGNAME=	zip-3.0
@@ -8,7 +8,7 @@ MASTER_SITES=	ftp://ftp.info-zip.org/pub/infozip/src/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	wiz@NetBSD.org
-HOMEPAGE=	http://www.info-zip.org/pub/infozip/Zip.html
+HOMEPAGE=	http://www.info-zip.org/Zip.html
 COMMENT=	Create/update ZIP files compatible with pkzip
 LICENSE=	info-zip
 
@@ -35,7 +35,7 @@ BUILD_TARGET=	generic
 CFLAGS+=	-O
 .endif
 
-.if !empty(PKGSRC_COMPILER:Msunpro)
+.if !empty(PKGSRC_COMPILER:Msunpro) || ${OPSYS} == "SunOS"
 MAKE_FLAGS+=	DISABLE_ASM=YES
 .endif
 

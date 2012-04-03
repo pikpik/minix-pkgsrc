@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/07/14 12:56:00 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2011/04/22 13:43:12 obache Exp $
 #
 
 DISTNAME=	yencode-0.46
@@ -14,6 +14,9 @@ COMMENT=	yenc format encoder and decoder
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
+
+CFLAGS.SunOS+=	-Du_int64_t=uint64_t
+LIBS.SunOS+=	-lsocket -lnsl
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

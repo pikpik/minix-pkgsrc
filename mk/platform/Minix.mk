@@ -1,4 +1,4 @@
-# $NetBSD: Linux.mk,v 1.37 2010/03/18 22:46:01 sbd Exp $
+# $NetBSD: Minix.mk,v 1.1 2011/11/05 17:09:15 tcort Exp $
 #
 # Variable definitions for the Minix operating system.
 
@@ -8,8 +8,6 @@ IMAKE_MAKE?=	${MAKE}	# program which gets invoked by imake
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
 PKGLOCALEDIR?=	share
 PS?=		/usr/bin/ps
-# XXX: default from defaults/mk.conf.  Verify/correct for this platform
-# and remove this comment.
 SU?=		/usr/bin/su
 TYPE?=		type			# Shell builtin
 
@@ -65,22 +63,3 @@ _STRIPFLAG_CC?=		${_INSTALL_UNSTRIPPED:D:U-s}	# cc(1) option to strip
 _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U-s}	# install(1) option to strip
 
 _OPSYS_CAN_CHECK_SHLIBS=	no # can't use readelf in check/bsd.check-vars.mk
-
-# check for maximum command line length and set it in configure's environment,
-# to avoid a test required by the libtool script that takes forever.
-# FIXME: Adjust to work on this system and enable the lines below.
-#_OPSYS_MAX_CMDLEN_CMD=	/sbin/sysctl -n kern.argmax
-
-# If games are to be installed setgid, then SETGIDGAME is set to 'yes'
-# (it defaults to 'no' as per defaults/mk.conf).
-# Set the group and mode to meaningful values in that case (defaults to
-# BINOWN, BINGRP and BINMODE as per defaults/mk.conf).
-# FIXME: Adjust to work on this system and enable the lines below.
-#.if !(empty(SETGIDGAME:M[yY][eE][sS]))
-#GAMES_USER=		games
-#GAMES_GROUP=		games
-#GAMEOWN=		${GAMES_USER}
-#GAMEGRP=		${GAMES_GROUP}
-#GAMEMODE=		2555
-#GAMEDIRMODE=		0775
-#.endif

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2011/04/22 13:41:56 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2012/02/06 12:40:56 wiz Exp $
 
 BUILDLINK_TREE+=	goffice0.8
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	goffice0.8
 GOFFICE0.8_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.goffice0.8+=	goffice0.8>=0.8.0
-BUILDLINK_ABI_DEPENDS.goffice0.8?=	goffice0.8>=0.8.16nb1
+BUILDLINK_ABI_DEPENDS.goffice0.8?=	goffice0.8>=0.8.17nb4
 BUILDLINK_PKGSRCDIR.goffice0.8?=	../../misc/goffice0.8
 
 #.include "../../converters/libiconv/buildlink3.mk"
@@ -14,7 +14,6 @@ BUILDLINK_PKGSRCDIR.goffice0.8?=	../../misc/goffice0.8
 #.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/libgsf/buildlink3.mk"
-.include "../../devel/libgsf-gnome/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../graphics/libart/buildlink3.mk"

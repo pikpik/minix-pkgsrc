@@ -1,22 +1,25 @@
-# $NetBSD: Makefile,v 1.14 2011/05/28 10:33:00 asau Exp $
+# $NetBSD: Makefile,v 1.18 2012/03/10 08:04:45 sbd Exp $
 
-DISTNAME=	fossil-src-20110713230341
-PKGNAME=	fossil-1.18
+DISTNAME=	fossil-src-20120317175325
+PKGNAME=	fossil-1.22
 CATEGORIES=	devel scm
 MASTER_SITES=	http://www.fossil-scm.org/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.fossil-scm.org/index.html/doc/tip/www/index.wiki
+HOMEPAGE=	http://www.fossil-scm.org/
 COMMENT=	Simple, high-reliability, distributed software configuration management
 LICENSE=	2-clause-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=	no
+HAS_CONFIGURE=	yes
 
 INSTALLATION_DIRS+=	bin
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fossil ${DESTDIR}${PREFIX}/bin
 
+.include "../../devel/readline/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

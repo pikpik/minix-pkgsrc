@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2006/06/15 13:26:56 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2008/06/20 01:09:09 joerg Exp $
 #
 
 DISTNAME=		synce-libsynce-0.9.1
@@ -13,6 +13,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
+
+CFLAGS.SunOS+=		-D__EXTENSIONS__
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

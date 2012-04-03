@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.1.1.1 2011/10/04 08:01:18 manu Exp $
+$NetBSD: distinfo,v 1.3 2011/12/18 21:09:27 dholland Exp $
 
 SHA1 (phraseanet-v3.1.4-linux.tar.gz) = 46e423c87b4ba74a24ff8ebc9214c83ece1ec628
 RMD160 (phraseanet-v3.1.4-linux.tar.gz) = 3a2389b8effd0e6882f5d98eb70fe8fb55989114

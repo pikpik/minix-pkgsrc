@@ -1,0 +1,15 @@
+#!@SH@
+#
+# $NetBSD$
+
+WWWGRP="@WWWGRP@"
+WWWOWN="@WWWOWN@"
+TIKIDIR="@PREFIX@/@TIKIDIR@"
+
+case "${STAGE}" in
+POST-INSTALL)
+	cd ${TIKIDIR} &&
+		${CHOWN} -R ${WWWOWN} ${TIKIDIR} &&
+		${CHGRP} -R ${WWWGRP} ${TIKIDIR}
+	;;
+esac

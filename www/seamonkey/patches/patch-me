@@ -1,10 +1,11 @@
-$NetBSD: patch-me,v 1.3 2011/04/26 14:16:37 tnn Exp $
+$NetBSD: patch-me,v 1.5 2012/03/10 03:26:05 ryoon Exp $
 
 Add DragonFly support.
+Disable assembly routines in freebl on Linux (PR pkg/46056)
 
---- mozilla/security/nss/lib/freebl/Makefile.orig	2009-06-29 18:15:13.000000000 +0200
+--- mozilla/security/nss/lib/freebl/Makefile.orig	2012-03-13 05:33:09.000000000 +0000
 +++ mozilla/security/nss/lib/freebl/Makefile
-@@ -212,7 +212,7 @@ endif
+@@ -279,7 +279,7 @@ endif
  # to bind the blapi function references in FREEBLVector vector
  # (ldvector.c) to the blapi functions defined in the freebl
  # shared libraries.

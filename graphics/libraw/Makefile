@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/07/31 17:33:54 gls Exp $
+# $NetBSD: Makefile,v 1.15 2011/09/12 18:06:22 drochner Exp $
 #
 
 DISTNAME=		LibRaw-0.13.8

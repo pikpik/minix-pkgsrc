@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/09/12 15:51:02 taca Exp $
+# $NetBSD: Makefile,v 1.16 2012/03/21 18:40:00 hans Exp $
 
 DISTNAME=	thrift-${THRIFT_VERSION}
 PKGNAME=	libthrift-${THRIFT_VERSION}
+PKGREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_APACHE:=thrift/${THRIFT_VERSION}/}
 EXTRACT_SUFX=	.tar.gz
@@ -20,6 +21,7 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
 GNU_CONFIGURE=		yes
+CONFIGURE_ENV+=		LEXLIB=""
 
 WRKSRC=		${WRKDIR}/thrift-${THRIFT_VERSION}
 THRIFT_VERSION=	0.7.0
@@ -29,6 +31,7 @@ pre-build:
 
 .include "options.mk"
 
+.include "../../security/openssl/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../devel/libevent/buildlink3.mk"
 .include "../../devel/boost-libs/buildlink3.mk"
