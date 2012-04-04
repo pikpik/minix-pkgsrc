@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.6 2006/11/05 17:49:33 joerg Exp $
-#
+# $NetBSD: Makefile,v 1.7 2010/02/19 20:16:40 heinz Exp $
 
 DISTNAME=		libcfg+-0.6.2
 PKGREVISION=		3
 CATEGORIES=		devel
-MASTER_SITES=		http://platon.sk/upload/_projects/00003/
+MASTER_SITES=		http://opensource.platon.sk/upload/_projects/00003/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://platon.sk/projects/libcfg+/
+HOMEPAGE=		http://opensource.platon.sk/projects/main_page.php?project_id=3
 COMMENT=		Command line and configuration file parsing library
 LICENSE=		gnu-gpl-v2
 
