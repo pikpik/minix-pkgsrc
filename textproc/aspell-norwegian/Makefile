@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/12 02:14:47 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/22 13:44:48 obache Exp $
 #
 
 DISTNAME=	aspell-nb-0.50.1-0
@@ -15,6 +15,11 @@ COMMENT=	Norwegian language support for aspell
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	YES
+
+.include "../../mk/bsd.prefs.mk"
+.if ${PKG_FORMAT} == "pkg" && ${OPSYS} == "Linux"
+BROKEN=	Can not be packaged on Linux
+.endif
 
 .include "../../textproc/aspell/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
