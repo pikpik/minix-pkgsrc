@@ -31,6 +31,10 @@ SUBST_SED.tarexe=	-e 's:<default>tar</default>:<default>${PREFIX.gtar}/bin/${GNU
 CPPFLAGS+=             -D__NetBSD_APM__
 .endif
 
+.if ${OPSYS} == "DragonFly"
+CONFIGURE_ENV+= 	ac_cv_c_long_double=no
+.endif
+
 CONFIGURE_ARGS+=	--with-snmp=no
 CONFIGURE_ARGS+=	--with-pythondir=${LOCALBASE}
 CONFIGURE_ENV+=		PYVERSSUFFIX=${PYVERSSUFFIX:Q}
