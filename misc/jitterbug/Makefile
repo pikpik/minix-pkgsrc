@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2010/12/31 07:57:14 obache Exp $
+# $NetBSD: Makefile,v 1.34 2011/11/11 18:43:43 joerg Exp $
 
 DISTNAME=	jitterbug-1.6.2
 PKGREVISION=	2
@@ -10,6 +10,8 @@ HOMEPAGE=	http://jitterbug.samba.org/
 COMMENT=	Web-oriented bug-tracking tool
 
 PKG_DESTDIR_SUPPORT=	destdir
+
+BROKEN=	Not buildable and dead upstream.
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}/source
 CONFIGDIR=	${WRKDIR}/${PKGNAME_NOREV}/config
