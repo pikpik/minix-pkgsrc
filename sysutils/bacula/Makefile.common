@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.56 2010/12/26 18:39:45 adam Exp $
+# $NetBSD: Makefile.common,v 1.57 2012/03/10 13:20:12 shattered Exp $
 #
 # used by sysutils/bacula-clientonly/Makefile
 # used by sysutils/bacula-tray-monitor/Makefile
@@ -45,7 +45,7 @@ FILES_SUBST+=		BACULA_DIR_USER=${BACULA_DIR_USER}
 FILES_SUBST+=		BACULA_SD_USER=${BACULA_SD_USER}
 
 SUBST_CLASSES+=		egdir
-SUBST_STAGE.egdir=	post-patch
+SUBST_STAGE.egdir=	pre-configure
 SUBST_FILES.egdir=	src/dird/Makefile.in
 SUBST_FILES.egdir+=	src/console/Makefile.in
 SUBST_FILES.egdir+=	src/filed/Makefile.in
