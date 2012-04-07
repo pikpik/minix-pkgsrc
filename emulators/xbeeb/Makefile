@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/11/11 23:48:19 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2009/02/13 10:08:40 abs Exp $
 #
 
 DISTNAME=	xbeeb-0.4.1
@@ -76,7 +76,7 @@ do-build:
 	set -e; \
 	cd ${WRKSRC}/fonts; \
 	for i in *.bdf; do \
-		bdftopcf "$$i" -o `${BASENAME} "$$i" .bdf`.pcf; \
+		${TOOLS_PATH.bdftopcf} "$$i" -o `${BASENAME} "$$i" .bdf`.pcf; \
 	done
 
 do-install:
