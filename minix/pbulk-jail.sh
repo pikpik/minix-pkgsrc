@@ -106,9 +106,6 @@ makejailpkgsrc() {
 		synctree -f $PKGSRC $JAILPKGSRC >/dev/null
 	fi
 
-	# Fix GCC headers
-	mychroot "cd /usr/src && make gnu-includes"
-
 	return 0
 }
 
