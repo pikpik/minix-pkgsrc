@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1 2005/12/07 19:33:03 joerg Exp $
+
+Also handle DragonFly BSD.
 
 --- include/ogle_endian.h.orig	2005-12-07 19:00:42.000000000 +0000
 +++ include/ogle_endian.h
