@@ -1,4 +1,4 @@
-/*	$NetBSD: http.c,v 1.29 2010/01/24 19:10:35 joerg Exp $	*/
+/*	$NetBSD: http.c,v 1.30 2011/01/23 18:37:31 agc Exp $	*/
 /*-
  * Copyright (c) 2000-2004 Dag-Erling Coïdan Smørgrav
  * Copyright (c) 2003 Thomas Klausner <wiz@NetBSD.org>
@@ -133,6 +133,7 @@
 
 #define HTTP_ERROR(xyz) ((xyz) > 400 && (xyz) < 599)
 
+static int http_cmd(conn_t *, const char *, ...) __printflike(2, 3);
 
 /*****************************************************************************
  * I/O functions for decoding chunked streams
