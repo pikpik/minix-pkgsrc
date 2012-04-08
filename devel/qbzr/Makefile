@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/11/27 13:47:53 cheusov Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/15 11:53:25 obache Exp $
 
 DISTNAME=	qbzr-${VER}
 PKGREVISION=	2
@@ -20,7 +20,7 @@ USE_TOOLS+=	msgfmt
 WRKSRC=		${WRKDIR}/qbzr
 
 PYDISTUTILSPKG=	yes
-# Only this python versions are supported, see:
+# Only these python versions are supported, see:
 # http://doc.bazaar.canonical.com/bzr.dev/en/whats-new/whats-new-in-2.4.html
 PYTHON_VERSIONS_ACCEPTED=	27 26
 
