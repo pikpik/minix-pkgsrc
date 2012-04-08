@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/10/16 04:16:49 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/03/15 11:53:36 obache Exp $
 #
 
 DISTNAME=		scapy-2.1.1
@@ -17,7 +17,6 @@ DEPENDS+=	${PYPKGPREFIX}-readline-[0-9]*:../../devel/py-readline
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=			yes
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 .include "options.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1582 2012/03/21 23:11:46 markd Exp $
+# $NetBSD: Makefile,v 1.1583 2012/03/29 07:34:56 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -1263,7 +1263,6 @@ SUBDIR+=	py-checker
 SUBDIR+=	py-cheetah
 SUBDIR+=	py-compizconfig
 SUBDIR+=	py-coverage
-SUBDIR+=	py-ctypes
 SUBDIR+=	py-curses
 SUBDIR+=	py-cursespanel
 SUBDIR+=	py-cython

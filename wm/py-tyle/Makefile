@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/01/25 12:34:30 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/01/25 12:38:25 obache Exp $
 #
 
 DISTNAME=	pytyle-0.7.5
@@ -18,7 +18,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	#none
 
-PYTHON_VERSIONS_INCOMPATIBLE=	24 25 31
+PYTHON_VERSIONS_INCOMPATIBLE=	25
 
 .include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

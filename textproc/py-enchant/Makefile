@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/12/23 00:26:09 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2011/12/16 17:22:08 marino Exp $
 #
 
 DISTNAME=	pyenchant-1.6.5
@@ -15,9 +15,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/python/pyversion.mk"
 
-.if ${PYPACKAGE} && ${PYPACKAGE} == "python24"
-DEPENDS+=	${PYPKGPREFIX}-ctypes-[0-9]*:../../devel/py-ctypes
-.endif
 DEPENDS+=	enchant-[0-9]*:../../textproc/enchant
 
 USE_LANGUAGES=	# empty

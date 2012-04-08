@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/03/06 17:38:55 ryoon Exp $
+# $NetBSD: Makefile,v 1.15 2012/03/09 12:34:04 wiz Exp $
 
 DISTNAME=		spectrum-1.4.8
 PKGREVISION=		6
@@ -12,8 +12,6 @@ LICENSE=		gnu-gpl-v3
 
 DEPENDS+=		${PYPKGPREFIX}-xmpppy>=0.4.1:../../chat/py-xmpppy
 DEPENDS+=		${PYPKGPREFIX}-expat>=0nb4:../../textproc/py-expat
-
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

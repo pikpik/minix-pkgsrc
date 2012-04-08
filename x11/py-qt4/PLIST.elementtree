@@ -1,4 +1,0 @@
-@comment $NetBSD: PLIST.elementtree,v 1.1 2008/12/23 22:22:16 wiz Exp $
-${PYSITELIB}/PyQt4/elementtree/ElementPath.py
-${PYSITELIB}/PyQt4/elementtree/ElementTree.py
-${PYSITELIB}/PyQt4/elementtree/__init__.py

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2012/03/03 13:00:24 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2012/03/15 11:53:24 obache Exp $
 #
 
 DISTNAME=		meld-1.5.3
@@ -15,8 +15,6 @@ LICENSE=		gnu-gpl-v2
 DEPENDS+=		${PYPKGPREFIX}-gtk2>=2.14.0:../../x11/py-gtk2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_INCOMPATIBLE=	24
 
 USE_PKGLOCALEDIR=		YES
 USE_TOOLS+=			gmake msgfmt intltool

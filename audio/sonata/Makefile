@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/03/03 00:12:44 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/03/09 12:34:00 wiz Exp $
 #
 
 EGG_NAME=	Sonata-1.6.2.1
@@ -18,7 +18,6 @@ DEPENDS+=	${PYPKGPREFIX}-mpd-[0-9]*:../../audio/py-mpd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 USE_TOOLS+=	pkg-config msgfmt
 
 SUBST_CLASSES+=		mandir

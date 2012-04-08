@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/10/31 11:36:00 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/01/24 20:43:37 gson Exp $
 #
 
 DISTNAME=	boto-1.9b
@@ -13,8 +13,6 @@ COMMENT=	Python interface to Amazon web services
 LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
 
 REPLACE_PYTHON+=	boto/*/*.py
 
