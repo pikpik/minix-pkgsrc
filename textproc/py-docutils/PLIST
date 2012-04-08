@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.15 2011/10/05 07:47:28 obache Exp $
 bin/rst2html.py
 bin/rst2latex.py
 bin/rst2man.py
@@ -9,7 +9,7 @@ bin/rst2s5.py
 bin/rst2xetex.py
 bin/rst2xml.py
 bin/rstpep2html.py
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/docutils/__init__.py
 ${PYSITELIB}/docutils/__init__.pyc
 ${PYSITELIB}/docutils/__init__.pyo

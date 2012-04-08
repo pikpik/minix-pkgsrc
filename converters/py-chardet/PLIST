@@ -1,5 +1,5 @@
-@comment $NetBSD$
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+@comment $NetBSD: PLIST,v 1.4 2012/01/23 07:54:23 obache Exp $
+${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/chardet/__init__.py
 ${PYSITELIB}/chardet/__init__.pyc
 ${PYSITELIB}/chardet/__init__.pyo

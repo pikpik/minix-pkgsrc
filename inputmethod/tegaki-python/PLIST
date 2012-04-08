@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2010/08/07 12:49:25 obache Exp $
 ${PYSITELIB}/tegaki/__init__.py
 ${PYSITELIB}/tegaki/__init__.pyc
 ${PYSITELIB}/tegaki/__init__.pyo
@@ -32,4 +32,4 @@ ${PYSITELIB}/tegaki/recognizer.pyo
 ${PYSITELIB}/tegaki/trainer.py
 ${PYSITELIB}/tegaki/trainer.pyc
 ${PYSITELIB}/tegaki/trainer.pyo
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/${EGG_FILE}

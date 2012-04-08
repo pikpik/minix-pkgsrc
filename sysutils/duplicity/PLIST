@@ -1,7 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.8 2011/10/29 07:48:47 obache Exp $
 bin/duplicity
 bin/rdiffdir
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/duplicity/GnuPGInterface.py
 ${PYSITELIB}/duplicity/GnuPGInterface.pyc
 ${PYSITELIB}/duplicity/GnuPGInterface.pyo

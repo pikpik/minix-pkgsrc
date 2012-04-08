@@ -1,4 +1,4 @@
-@comment $NetBSD$
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+@comment $NetBSD: PLIST,v 1.3 2011/10/16 07:08:44 obache Exp $
+${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/kjbuckets.so
 share/doc/${PYPKGPREFIX}-kjbuckets/kjbuckets.txt

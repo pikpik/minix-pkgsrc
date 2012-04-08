@@ -1,5 +1,5 @@
-@comment $NetBSD$
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+@comment $NetBSD: PLIST,v 1.8 2011/10/31 11:57:00 obache Exp $
+${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/SOAPpy/Client.py
 ${PYSITELIB}/SOAPpy/Client.pyc
 ${PYSITELIB}/SOAPpy/Client.pyo
