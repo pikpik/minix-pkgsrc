@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.227 2012/04/01 17:52:14 brook Exp $
+# $NetBSD: Makefile,v 1.228 2012/04/01 18:00:02 brook Exp $
 
 COMMENT=	Mathematics
 
@@ -62,6 +62,7 @@ SUBDIR+=	capc-calc
 SUBDIR+=	cgal
 SUBDIR+=	clisp-pari
 SUBDIR+=	cln
+SUBDIR+=	cloog
 SUBDIR+=	dcdflib.c
 SUBDIR+=	dcdflib.f
 SUBDIR+=	dfftpack
