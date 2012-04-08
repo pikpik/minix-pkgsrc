@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2010/01/17 12:02:34 wiz Exp $
+# $NetBSD: Makefile,v 1.68 2011/11/16 08:23:49 sbd Exp $
 #
 
 DISTNAME=	ntp-4.2.4p8
@@ -29,6 +29,8 @@ ALL_NTP_DOCS=	${DOCDIR} ${EXAMPLESDIR}
 RCD_SCRIPTS=	ntpd ntpdate
 
 post-install:
+	${MKDIR} ${DOCDIR}
+	${MKDIR} ${EXAMPLESDIR}
 	cd ${WRKSRC}/html && pax -rw -pm . ${DOCDIR}
 	cd ${WRKSRC}/conf && pax -rw -pm . ${EXAMPLESDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${ALL_NTP_DOCS}
