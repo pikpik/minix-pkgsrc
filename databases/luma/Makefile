@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/11/01 06:00:50 sbd Exp $
+# $NetBSD: Makefile,v 1.21 2012/03/09 12:34:05 wiz Exp $
 
 DISTNAME=	luma-2.3
 PKGREVISION=	8
@@ -36,5 +36,4 @@ do-install:
 # If it is, then remove this comment.  If it is not, then remove
 # this comment and the line below, and bump PKGREVISION.
 #BUILDLINK_DEPMETHOD.qt3-tools=	full
-.include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"
