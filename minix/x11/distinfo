@@ -38,5 +38,5 @@ SHA1 (patch-bf) = 17300c66ee986c90fbf9a73cee1854da992ad4bc
 SHA1 (patch-bg) = 57c041e955463ce0b1e82669e86feb703d0e9270
 SHA1 (patch-bh) = ce4bb1b8b312995370d310605eaece1cf8b1be21
 SHA1 (patch-bi) = 0fe8c54b6d5b2c3d2e5c2cfa580d9ad153e6c712
-SHA1 (patch-lib_xtrans_Xtranssock__mnx3.c) = 939ce13a142aae5ccb075594a69404b19326dfb3
+SHA1 (patch-lib_xtrans_Xtranssock__mnx3.c) = e28411d62c25373ffd12d9ab13b2c6774f64dd7b
 SHA1 (patch-programs_Xserver_hw_xfree86_os-support_minix3_dummy.c) = 49a09182c37da08f7aaed3dbdbf951b45bc71a83
