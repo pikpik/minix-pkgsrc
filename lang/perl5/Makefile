@@ -53,11 +53,8 @@ CONFIGURE_ARGS+=	-D ldflags=${LDFLAGS:Q}
 MAKE_ENV+=		LC_ALL="C"
 
 .if ${OPSYS} == "Minix"
-CONFIGURE_ARGS+=	-Uusenm 
 CONFIGURE_ARGS+=	-Accflags="-DUSE_PERL_SBRK -DPERL_SBRK_VIA_MALLOC -D_MINIX -D_POSIX_SOURCE -D_COMPAT_MINIX -D_NETBSD_SOURCE"
 CONFIGURE_ARGS+=	-Dnoextensions="IO/Compress Sys/Syslog DB_File"
-CONFIGURE_ARGS+=	-Dusedl="false"
-CONFIGURE_ARGS+=	-Duseshrplib="false"
 .endif
 
 TEST_TARGET=		test

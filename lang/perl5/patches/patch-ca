@@ -1,6 +1,6 @@
-$NetBSD: patch-ca,v 1.10 2011/08/05 18:06:14 adam Exp $
+$NetBSD$
 
---- Configure.orig	2011-09-26 09:44:34.000000000 +0000
+--- Configure.orig	Mon Sep 26 09:44:34 2011
 +++ Configure
 @@ -3256,13 +3256,14 @@ EOM
  			osvers="$3"
@@ -55,7 +55,7 @@ $NetBSD: patch-ca,v 1.10 2011/08/05 18:06:14 adam Exp $
  		case " $libpth " in
  		*" $xxx "*) ;;
  		*) libpth="$libpth $xxx";;
-@@ -6521,7 +6522,9 @@ rp='Pathname for the site-specific libra
+@@ -6521,7 +6522,9 @@ rp='Pathname for the site-specific library files?'
  . ./getfile
  prefixvar=sitelib
  . ./setprefixvar
@@ -93,6 +93,15 @@ $NetBSD: patch-ca,v 1.10 2011/08/05 18:06:14 adam Exp $
  : Figure out where the libc is located
  case "$runnm" in
  true)
+@@ -8076,7 +8090,7 @@ EOM
+ 			      '') dflt="$dflt +vnocompatwarnings" ;;
+ 			      esac
+ 			      ;;
+-			linux|irix*|gnu*)  dflt="-shared $optimize" ;;
++			linux|irix*|gnu*|minix)  dflt="-shared $optimize" ;;
+ 			next)  dflt='none' ;;
+ 			solaris) dflt='-G' ;;
+ 			sunos) dflt='-assert nodefinitions' ;;
 @@ -8339,7 +8353,7 @@ if "$useshrplib"; then
  		# beos doesn't like the default, either.
  		;;
