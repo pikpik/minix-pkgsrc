@@ -3,7 +3,7 @@
 # Variable definitions for the Minix operating system.
 
 ECHO_N?=	${ECHO} -n
-X11_TYPE?=	monolithic
+X11_TYPE?=	modular
 IMAKE_MAKE?=	${MAKE}	# program which gets invoked by imake
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
 PKGLOCALEDIR?=	share
@@ -49,7 +49,7 @@ _OPSYS_HAS_MANZ=	no	# no MANZ for gzipping of man pages
 _OPSYS_HAS_OSSAUDIO=	no	# libossaudio is available
 _OPSYS_PERL_REQD=		# no base version of perl required
 _OPSYS_PTHREAD_AUTO=	no	# -lpthread needed for pthreads
-_OPSYS_SHLIB_TYPE=	none	# No shared libraries on Minix (yet)
+_OPSYS_SHLIB_TYPE=	ELF	# ELF shared libraries on Minix
 _PATCH_CAN_BACKUP=	yes	# native patch(1) can make backups
 _PATCH_BACKUP_ARG?= 	-b -V simple --suffix	# switch to patch(1) for backup suffix
 _USE_RPATH=		no	# add rpath to LDFLAGS
@@ -62,4 +62,4 @@ _OPSYS_NO_WHOLE_ARCHIVE_FLAG=	-Wl,--no-whole-archive
 _STRIPFLAG_CC?=		${_INSTALL_UNSTRIPPED:D:U-s}	# cc(1) option to strip
 _STRIPFLAG_INSTALL?=	${_INSTALL_UNSTRIPPED:D:U-s}	# install(1) option to strip
 
-_OPSYS_CAN_CHECK_SHLIBS=	no # can't use readelf in check/bsd.check-vars.mk
+_OPSYS_CAN_CHECK_SHLIBS=	yes # can't use readelf in check/bsd.check-vars.mk
