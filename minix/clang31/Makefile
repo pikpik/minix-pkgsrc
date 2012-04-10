@@ -70,12 +70,7 @@ INSTALLATION_DIRS=	bin lib libexec
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
 CXXFLAGS+= -D_POSIX_SOURCE
-CONFIGURE_ARGS+= --disable-shared
-CONFIGURE_ARGS+= --disable-llvm-dynamic-plugins
 CONFIGURE_ARGS+= --disable-threads
-CONFIGURE_ARGS+= --disable-pic
-CONFIGURE_ARGS+= --disable-llvmc-dynamic 
-CONFIGURE_ARGS+= --disable-llvmc-dynamic-plugins
 CONFIGURE_ARGS+= --disable-libtool-lock
 CONFIGURE_ARGS+= --enable-optimized
 CONFIGURE_ARGS+= --disable-assertions
@@ -89,13 +84,6 @@ SUBST_CLASSES+=         python
 SUBST_STAGE.python=     pre-configure
 SUBST_FILES.python=     klee/configure
 SUBST_SED.python=       -e "s,python -c ,${PYTHONBIN} -c ,"
-
-.if ${OPSYS} == "Minix"
-SUBST_CLASSES+=         sharedlibrary
-SUBST_STAGE.sharedlibrary=     pre-configure
-SUBST_FILES.sharedlibrary=     runtime/libprofile/Makefile tools/clang/tools/libclang/Makefile 
-SUBST_SED.sharedlibrary=       -e 's/SHARED_LIBRARY.*1/\#&/' -e 's/LINK_LIBS_IN_SHARED.*1/\#&/'
-.endif
 
 TEST_TARGET=	check unittests
 
