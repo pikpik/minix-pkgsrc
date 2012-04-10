@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- appl/Makefile.in.orig	Wed Jan 11 13:04:18 2012
++++ appl/Makefile.in
+@@ -397,7 +397,6 @@ SUBDIRS = \
+ 	  rcp					\
+ 	  su					\
+ 	  xnlock				\
+-	  telnet				\
+ 	  test					\
+ 	  kx					\
+ 	  kf					\
