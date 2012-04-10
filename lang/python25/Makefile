@@ -33,10 +33,11 @@ CONFIGURE_ARGS+=	--with-pth
 
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	--without-threads
+CONFIGURE_ARGS+=	--disable-shared
 .else
 CONFIGURE_ARGS+=       --with-threads
-.endif
 CONFIGURE_ARGS+=       --enable-shared
+.endif
 
 # fdatasync()
 LIBS.SunOS+=		-lrt
@@ -112,6 +113,12 @@ PLIST.oss=	yes
 .endif
 
 LIBS.Minix+=           -lcrypt
+
+.if ${OPSYS} == "Minix"
+post-patch:
+	${CP} ${FILESDIR}/Setup.minix ${WRKSRC}/Modules/Setup
+.endif
+
 
 # Make sure python modules can link correctly
 .if ${OPSYS} == "Darwin"
