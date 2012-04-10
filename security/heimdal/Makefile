@@ -31,7 +31,11 @@ HEIMDAL_HDB_DIR=	${VARBASE}/heimdal
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-kcm
+.if ${OPSYS} != "Minix"
 CONFIGURE_ARGS+=	--enable-pthread-support
+.else
+CONFIGURE_ARGS+=	--enable-pthread-support=no
+.endif
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/krb5
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--with-hdbdir=${HEIMDAL_HDB_DIR}
@@ -92,5 +96,7 @@ pre-configure:
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bdb.buildlink3.mk"
 .include "../../mk/curses.buildlink3.mk"
+.if ${OPSYS} != "Minix"
 .include "../../mk/pthread.buildlink3.mk"
+.endif
 .include "../../mk/bsd.pkg.mk"

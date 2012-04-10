@@ -138,9 +138,10 @@ else	echo rsync not found
 	exit 1
 fi
 
-while getopts "t:L:u:d:Ahr:c" opt
+while getopts "t:L:u:d:Ahr:cb:" opt
 do
 	case $opt in
+	b) BRANCH=$OPTARG ;;
 	t) FSTYPE=$OPTARG; echo fstpe $FSTYPE ;;
 	c) COPY=1; ;;
 	r) RELOPTS="$RELOPTS $OPTARG";;
