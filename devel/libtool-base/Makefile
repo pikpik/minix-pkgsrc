@@ -58,6 +58,10 @@ CONFIGURE_ARGS+=	--disable-shared
 BUILD_SHLIBTOOL=	NO
 .  endif
 
+.elif ${OPSYS} == "Minix"
+USE_GNU_CONFIGURE_HOST=        no
+CONFIGURE_ARGS+= --build=i386-pc-netbsd --host=i386-pc-netbsd
+
 .elif ${OPSYS} == "SunOS"
 .  if !empty(ABI:M64)
 CFLAGS+=		-m64
