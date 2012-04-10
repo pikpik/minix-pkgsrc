@@ -1,6 +1,6 @@
-$NetBSD: patch-al,v 1.5 2011/09/16 19:17:52 bsiegert Exp $
+$NetBSD$
 
---- configure.orig	2011-06-11 15:46:28.000000000 +0000
+--- configure.orig	Sat Jun 11 15:46:28 2011
 +++ configure
 @@ -3026,7 +3026,7 @@ case $ac_sys_system/$ac_sys_release in
    # Reconfirmed for OpenBSD 3.3 by Zachary Hamm, for 3.4 by Jason Ish.
@@ -20,7 +20,7 @@ $NetBSD: patch-al,v 1.5 2011/09/16 19:17:52 bsiegert Exp $
      # OpenBSD undoes our definition of __BSD_VISIBLE if _XOPEN_SOURCE is
      # also defined. This can be overridden by defining _BSD_SOURCE
      # As this has a different meaning on Linux, only define it on OpenBSD
-@@ -4927,15 +4927,10 @@ $as_echo "#define Py_ENABLE_SHARED 1" >>
+@@ -4927,15 +4927,10 @@ $as_echo "#define Py_ENABLE_SHARED 1" >>confdefs.h
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
            ;;
@@ -74,10 +74,11 @@ $NetBSD: patch-al,v 1.5 2011/09/16 19:17:52 bsiegert Exp $
  				   ;;
  				esac
  		fi;;
+-	NetBSD*|DragonFly*)
 +	MirBSD*)
 +		LDSHARED='$(CC) -shared $(CCSHARED)'
 +		LDCXXSHARED='$(CXX) -shared $(CCSHARED)';;
- 	NetBSD*|DragonFly*)
++	NetBSD*|DragonFly*|minix*)
  		LDSHARED='$(CC) -shared'
  		LDCXXSHARED='$(CXX) -shared';;
 +	Interix*)
@@ -91,7 +92,7 @@ $NetBSD: patch-al,v 1.5 2011/09/16 19:17:52 bsiegert Exp $
  	Linux*|GNU*) CCSHARED="-fPIC";;
  	BSD/OS*/4*) CCSHARED="-fpic";;
 -	FreeBSD*|NetBSD*|OpenBSD*|DragonFly*) CCSHARED="-fPIC";;
-+	FreeBSD*|NetBSD*|OpenBSD*|MirBSD*|DragonFly*) CCSHARED="-fPIC";;
++	FreeBSD*|NetBSD*|OpenBSD*|MirBSD*|DragonFly*|minix*) CCSHARED="-fPIC";;
 +	Interix*) CCSHARED="";;
  	OpenUNIX*|UnixWare*)
  		if test "$GCC" = "yes"
