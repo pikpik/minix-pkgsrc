@@ -30,11 +30,10 @@ CONFIGURE_ARGS+=	--with-pth
 
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	--without-threads
-CONFIGURE_ARGS+=	--disable-shared
 .else
 CONFIGURE_ARGS+=       --with-threads
-CONFIGURE_ARGS+=       --enable-shared
 .endif
+CONFIGURE_ARGS+=       --enable-shared
 
 # fdatasync()
 LIBS.SunOS+=		-lrt
@@ -158,11 +157,6 @@ post-extract:
 	${MV} ${WRKSRC}/Tools/scripts/pydoc ${WRKSRC}/Tools/scripts/pydoc${PY_VER_SUFFIX}
 
 LIBS.Minix+=		-lcrypt
-
-.if ${OPSYS} == "Minix"
-post-patch:
-	${CP} ${FILESDIR}/Setup.minix ${WRKSRC}/Modules/Setup
-.endif
 
 .if ${OPSYS} == "Darwin"
 post-build:
