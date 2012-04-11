@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2012/02/09 19:23:35 drochner Exp $
+# $NetBSD: Makefile,v 1.12 2012/03/03 00:12:12 wiz Exp $
 
-DISTNAME=	libgexiv2-0.3.1
-PKGREVISION=	4
+DISTNAME=	libgexiv2-0.4.1
 CATEGORIES=	graphics devel
-MASTER_SITES=	http://yorba.org/download/gexiv2/0.3/
+MASTER_SITES=	http://yorba.org/download/gexiv2/0.4/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
