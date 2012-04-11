@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.628 2012/03/20 00:22:12 markd Exp $
+# $NetBSD: Makefile,v 1.629 2012/03/21 20:55:02 markd Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -424,6 +424,7 @@ SUBDIR+=	scidavis
 SUBDIR+=	scigraphica
 SUBDIR+=	scrot
 SUBDIR+=	shotwell
+SUBDIR+=	shotwell-gtk3
 SUBDIR+=	showimg
 SUBDIR+=	silgraphite
 SUBDIR+=	silgraphite-ft
