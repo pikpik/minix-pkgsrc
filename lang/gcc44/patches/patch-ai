@@ -1,6 +1,8 @@
+$NetBSD$
+
 --- gcc/fortran/f95-lang.c.orig	Tue Jun 15 12:27:01 2010
-+++ gcc/fortran/f95-lang.c	Fri Jun  3 14:51:32 2011
-@@ -873,10 +873,17 @@
++++ gcc/fortran/f95-lang.c
+@@ -873,10 +873,17 @@ gfc_init_builtin_functions (void)
  
    gfc_define_builtin ("__builtin_cabsl", func_clongdouble_longdouble, 
  		      BUILT_IN_CABSL, "cabsl", true);
