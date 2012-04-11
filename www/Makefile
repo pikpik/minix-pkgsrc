@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.877 2012/03/21 20:58:22 markd Exp $
+# $NetBSD: Makefile,v 1.878 2012/03/22 14:53:57 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -172,6 +172,7 @@ SUBDIR+=	libmediawiki
 SUBDIR+=	libmicrohttpd
 SUBDIR+=	libproxy
 SUBDIR+=	librest
+SUBDIR+=	librest07
 SUBDIR+=	libwww
 SUBDIR+=	liferea
 SUBDIR+=	liferea-current
