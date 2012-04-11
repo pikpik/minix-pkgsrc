@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.27 2011/10/12 15:48:40 hans Exp $
+# $NetBSD: Makefile,v 1.30 2012/02/24 17:35:13 wiz Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc44-${GCC_VERSION}
-PKGREVISION=		4
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_GNU:=gcc/gcc-${GCC_VERSION}/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		blair.sadewitz@gmail.com
+MAINTAINER=		sbd@NetBSD.org
 HOMEPAGE=		http://gcc.gnu.org/
 COMMENT=		GNU Compiler Collection 4.4
 LICENSE=		gnu-gpl-v2 AND gnu-gpl-v3 AND gnu-lgpl-v2 AND gnu-lgpl-v3
@@ -16,18 +15,17 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		awk:run bash:run chmod gmake:run makeinfo sed:run
 
-GCC_VERSION=		4.4.6
+GCC_VERSION=		4.4.7
 
 GCC_SUBPREFIX=		gcc44
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
 FILES_SUBST+=		PKGNAME=${PKGNAME}
-MESSAGE_SUBST+=		GCC_PREFIX=${GCC_PREFIX}
 GCC_SYMLINK_PROGRAMS=	cpp g++ gcc gccbug gcov gfortran
 
 # To avoid GNU surprises
 CONFIG_SHELL=		${TOOLS_PATH.bash}
 
-NOT_FOR_PLATFORM=	Interix-*-*
+NOT_FOR_PLATFORM=	Interix-*-* DragonFly-*-*
 UNLIMIT_RESOURCES+=	datasize
 UNLIMIT_RESOURCES+=	stacksize
 
@@ -152,12 +150,7 @@ CFLAGS+=		-I${BUILDLINK_DIR}/include
 LIBS.SunOS+=		-lgmp
 
 pre-configure:
-.if ${OPSYS} == "DragonFly"
-	${CP} ${FILESDIR}/dragonfly.h ${WRKSRC}/gcc/config/dragonfly.h
-	${CP} ${FILESDIR}/dragonfly-spec.h ${WRKSRC}/gcc/config/dragonfly-spec.h
-	${CP} ${FILESDIR}/i386-dragonfly.h ${WRKSRC}/gcc/config/i386/dragonfly.h
-	${CP} ${FILESDIR}/i386-dragonfly64.h ${WRKSRC}/gcc/config/i386/dragonfly64.h
-.elif ${OPSYS} == "Minix"
+.if ${OPSYS} == "Minix"
 	${CP} ${FILESDIR}/minix.h ${WRKSRC}/gcc/config/
 	${CP} ${FILESDIR}/minix-spec.h ${WRKSRC}/gcc/config/
 	${CP} ${FILESDIR}/i386-minix.h ${WRKSRC}/gcc/config/i386/minix.h

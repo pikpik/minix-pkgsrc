@@ -1,12 +1,14 @@
+$NetBSD$
+
 --- libjava/contrib/rebuild-gcj-db.in.orig	Wed Jul  2 13:17:54 2008
-+++ libjava/contrib/rebuild-gcj-db.in	Fri Jun  3 14:16:43 2011
++++ libjava/contrib/rebuild-gcj-db.in
 @@ -1,4 +1,4 @@
 -#!/bin/bash
 +#!/bin/sh
  # rebuild-gcj-db
  
  ## Copyright (C) 2000, 2002, 2003, 2008 Free Software Foundation
-@@ -16,12 +16,12 @@
+@@ -16,12 +16,12 @@ for i in `@prefix@/bin/gcc --print-multi-lib 2>/dev/nu
     base=@prefix@/lib/$dirname
     dbLocation=`@prefix@/bin/gcj-dbtool -p $base`
     libdir=$base/gcj

@@ -1,6 +1,8 @@
---- gcc/Makefile.in.orig	Fri Jun  3 14:13:51 2011
-+++ gcc/Makefile.in	Fri Jun  3 14:16:25 2011
-@@ -310,7 +310,6 @@
+$NetBSD$
+
+--- gcc/Makefile.in.orig	Tue Sep  7 11:07:31 2010
++++ gcc/Makefile.in
+@@ -310,7 +310,6 @@ USER_H = $(srcdir)/ginclude/float.h \
  	 $(srcdir)/ginclude/iso646.h \
  	 $(srcdir)/ginclude/stdarg.h \
  	 $(srcdir)/ginclude/stdbool.h \
