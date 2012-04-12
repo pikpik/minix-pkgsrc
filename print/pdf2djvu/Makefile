@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/02/06 12:41:22 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/16 04:00:39 ryoon Exp $
 #
 
 DISTNAME=	pdf2djvu_0.7.12
@@ -21,6 +21,7 @@ USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c++ c
 USE_TOOLS+=		pkg-config gmake intltool msgfmt xgettext gsed:run
 TOOLS_DEPENDS.gsed=	gsed>=4.2:../../textproc/gsed
+CONFIGURE_ARGS+=	--localedir=${PREFIX}/${PKGLOCALEDIR}/locale
 
 .include "../../graphics/djvulibre-lib/buildlink3.mk"
 .include "../../print/poppler/buildlink3.mk"
