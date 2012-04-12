@@ -43,7 +43,7 @@ PKG_TOOLS_BIN=        ${LOCALBASE}/sbin
 RCD_SCRIPTS_DIR=${LOCALBASE}/etc/rc.d
 
 VARBASE=        /usr/var
-WRKOBJDIR?=    /usr/tmp/work
+WRKOBJDIR?=    /usr/pkgsrc/work
 
 MASTER_SITE_OVERRIDE=${MASTER_SITE_BACKUP}
 
