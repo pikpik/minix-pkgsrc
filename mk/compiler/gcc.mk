@@ -1,4 +1,4 @@
-# $NetBSD: gcc.mk,v 1.113 2012/02/28 12:57:24 hans Exp $
+# $NetBSD: gcc.mk,v 1.114 2012/03/06 11:39:55 hans Exp $
 #
 # This is the compiler definition for the GNU Compiler Collection.
 #
@@ -393,7 +393,7 @@ _USE_GCC_SHLIB?=	yes
 .  endif
 .endif
 
-.if !empty(USE_NATIVE_GCC:M[yY][eE][sS])
+.if !empty(USE_NATIVE_GCC:M[yY][eE][sS]) && !empty(_IS_BUILTIN_GCC:M[yY][eE][sS])
 _USE_PKGSRC_GCC=	no
 .endif
 
