@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/02/11 21:34:34 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2011/01/31 08:42:09 adam Exp $
 
 DISTNAME=	iperf-2.0.5
 CATEGORIES=	net benchmarks
@@ -19,6 +19,8 @@ GCC_REQD+=	3.0
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+
+LIBS.SunOS+=		-lrt
 
 INSTALLATION_DIRS+=	share/doc/${PKGBASE}
 
