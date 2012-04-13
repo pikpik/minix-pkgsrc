@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2008/11/10 17:21:36 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2012/01/22 18:11:05 asau Exp $
 
 DISTNAME=	elk-3.99.8
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://sam.zoy.org/elk/
 EXTRACT_SUFX=	.tar.bz2
@@ -18,4 +19,5 @@ GNU_CONFIGURE=		yes
 
 .include "options.mk"
 
+.include "../../databases/gdbm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
