@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/11/01 06:02:44 sbd Exp $
+# $NetBSD: Makefile,v 1.21 2012/02/06 12:41:50 wiz Exp $
 #
 
 DISTNAME=	skippy-0.5.0
@@ -15,6 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
+
+LDFLAGS.SunOS+=		-lrt
 
 INSTALLATION_DIRS=	share/examples/${PKGBASE}
 
