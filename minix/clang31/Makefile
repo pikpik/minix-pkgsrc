@@ -126,6 +126,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
 	cd ${KLEE} && gmake DESTDIR=${DESTDIR} install
+        touch ${PREFIX}/bin/clang.dynok
 
 WRKSRC=			${WRKDIR}/llvm
 

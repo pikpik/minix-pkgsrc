@@ -1,6 +1,7 @@
 @comment $NetBSD$
 bin/bugpoint
 bin/clang
+bin/clang.dynok
 bin/llc
 bin/lli
 bin/llvm-ar
