@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/05/09 21:39:17 agc Exp $
+# $NetBSD: Makefile,v 1.2 2008/06/20 01:09:35 joerg Exp $
 
 DISTNAME=	stegtunnel-0.4
 CATEGORIES=	security
@@ -12,6 +12,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
+
+LIBS.SunOS+=	-lrt
 
 .include "../../net/libdnet/buildlink3.mk"
 .include "../../net/libpcap/buildlink3.mk"
