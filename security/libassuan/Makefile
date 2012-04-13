@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/11/25 21:43:55 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2011/04/22 13:42:48 obache Exp $
 #
 
 DISTNAME=		libassuan-1.0.5
@@ -24,6 +24,8 @@ USE_LIBTOOL=		yes
 ###	to build position-independent code when possible.
 CONFIGURE_ARGS+=	--with-pic
 TEST_TARGET=		check
+
+LIBS.SunOS+=		-lrt
 
 BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
 
