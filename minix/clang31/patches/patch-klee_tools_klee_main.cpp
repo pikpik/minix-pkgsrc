@@ -1,7 +1,7 @@
 $NetBSD$
 
---- /usr/tmp/work/minix/clang31/work/llvm/klee/tools/klee/main.cpp.orig	Thu Dec  8 00:55:55 2011
-+++ /usr/tmp/work/minix/clang31/work/llvm/klee/tools/klee/main.cpp
+--- klee/tools/klee/main.cpp.orig	Thu Dec  8 00:55:55 2011
++++ klee/tools/klee/main.cpp
 @@ -1213,7 +1214,14 @@ int main(int argc, char **argv, char **envp) {  
        return r;
    }
