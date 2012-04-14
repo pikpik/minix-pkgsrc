@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2010/09/30 10:49:13 obache Exp $
+# $NetBSD: Makefile,v 1.27 2011/09/16 05:46:25 obache Exp $
 #
 
 DISTNAME=	base-1.4.3.1
@@ -12,7 +12,7 @@ COMMENT=	Analysis engine to process a database of security events
 
 PKG_DESTDIR_SUPPORT=	destdir
 
-.include "../../mk/apachever.mk"
+.include "../../mk/apache.mk"
 .include "../../lang/php/phpversion.mk"
 
 DEPENDS+=	adodb>=4.96a:../../databases/adodb

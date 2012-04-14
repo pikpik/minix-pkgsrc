@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/09/16 05:46:25 obache Exp $
+# $NetBSD: Makefile,v 1.14 2011/12/29 14:35:10 joerg Exp $
 #
 
 DISTNAME=	blur6ex-0.1.198
@@ -54,6 +54,6 @@ do-install:
 		'-s|./engine/core/db.php$$||' .			\
 		${DESTDIR}${PREFIX}/${HTTPD_ROOT}/blog
 
-.include "../../mk/apachever.mk"
+.include "../../mk/apache.mk"
 .include "../../lang/php/phpversion.mk"
 .include "../../mk/bsd.pkg.mk"
