@@ -51,6 +51,9 @@ ${PYSITELIB}/fabric/contrib/project.pyo
 ${PYSITELIB}/fabric/decorators.py
 ${PYSITELIB}/fabric/decorators.pyc
 ${PYSITELIB}/fabric/decorators.pyo
+${PYSITELIB}/fabric/exceptions.py
+${PYSITELIB}/fabric/exceptions.pyc
+${PYSITELIB}/fabric/exceptions.pyo
 ${PYSITELIB}/fabric/io.py
 ${PYSITELIB}/fabric/io.pyc
 ${PYSITELIB}/fabric/io.pyo
