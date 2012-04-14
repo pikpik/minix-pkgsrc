@@ -61,7 +61,7 @@ post-extract:
 	${MV} ${WRKDIR}/clang ${WRKDIR}/llvm/tools/clang
 
 post-install:
-	touch ${PREFIX}/bin/clang.dynok
+	touch ${DESTDIR}/${PREFIX}/bin/clang.dynok
 
 WRKSRC=			${WRKDIR}/llvm
 
