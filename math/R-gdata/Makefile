@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/10/14 07:31:26 markd Exp $
+# $NetBSD: Makefile,v 1.4 2009/12/11 19:28:43 adam Exp $
 
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_R_CRAN:=contrib/}
@@ -6,11 +6,12 @@ MASTER_SITES=	${MASTER_SITE_R_CRAN:=contrib/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	${R_HOMEPAGE_BASE}/gdata/
 COMMENT=	Various R programming tools for data manipulation
+LICENSE=	gnu-gpl-v2
 
 R_PKGNAME=	gdata
-R_PKGVER=	2.6.1
+R_PKGVER=	2.8.2
 
-DEPENDS+=	R-gtools>=2.6.1:../../math/R-gtools
+DEPENDS+=	R-gtools>=2.6.2:../../math/R-gtools
 
 USE_TOOLS+=	perl:run
 REPLACE_PERL+=	inst/bin/*.bat inst/perl/*.pl
