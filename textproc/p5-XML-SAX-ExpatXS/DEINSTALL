@@ -1,0 +1,11 @@
+# $NetBSD$
+
+case ${STAGE} in
+
+DEINSTALL)
+        ${PERL5} -I@PERL5_INSTALLVENDORLIB@ -MXML::SAX -e "XML::SAX->remove_parser(q(XML::SAX::ExpatXS))->save_parsers()"
+	${ECHO} "Removed parser from XML::SAX registry."
+	;;
+
+esac
+
