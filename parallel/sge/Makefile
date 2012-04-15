@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2012/03/20 17:07:43 asau Exp $
+# $NetBSD: Makefile,v 1.44 2012/04/15 04:07:21 markd Exp $
 #
 
 DISTNAME=		sge-8.0.0d
@@ -176,6 +176,7 @@ PLIST_SUBST+=	SGE_ARCH=${SGE_ARCH}
 .include "../../security/openssl/buildlink3.mk"
 .include "../../lang/tcl/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
+.include "../../mk/pam.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
 .if ${USE_BUILTIN.openssl} == "yes"
 SSL_PREFIX=	/usr
