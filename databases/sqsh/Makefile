@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2010/04/19 19:21:39 zafer Exp $
+# $NetBSD: Makefile,v 1.30 2011/04/22 14:40:41 obache Exp $
 
 # This section contains variables that might be overridden.
 PKGNAME?=	${PKGNAME_BASE}
@@ -15,7 +15,7 @@ CONFLICTS+=	sqsh-[0-9]*
 CONFLICTS+=	sqsh-motif-[0-9]*
 CONFLICTS+=	sqsh-x11-[0-9]*
 
-MAINTAINER=	tsarna@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sqsh.org/
 
 PKG_DESTDIR_SUPPORT=	user-destdir

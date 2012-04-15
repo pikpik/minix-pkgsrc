@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2010/02/04 16:36:05 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2010/02/06 16:08:48 taca Exp $
 
 DISTNAME=	HTTP_Request-1.4.4
 #CATEGORIES+=	www
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	PHP classes to provides an easy way to perform HTTP requests
 
 PKG_DESTDIR_SUPPORT=	user-destdir

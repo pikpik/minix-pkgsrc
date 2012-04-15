@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/08/20 15:03:42 taca Exp $
+# $NetBSD: Makefile,v 1.25 2011/09/28 06:34:44 joerg Exp $
 
 DISTNAME=	php-extensions-${PHP_BASE_VERS}
 PKGREVISION=	2
@@ -6,7 +6,7 @@ CATEGORIES=	meta-pkgs www
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.php.net/
 COMMENT=	"meta-package" for the PHP 5.2 HTML-embedded scripting language
 

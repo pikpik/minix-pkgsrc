@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2011/11/08 15:38:48 gavan Exp $
+# $NetBSD: Makefile,v 1.33 2012/02/18 01:23:59 sbd Exp $
 
 DISTNAME=	qca-tls-1.0
 PKGREVISION=	10
@@ -6,7 +6,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://delta.affinix.com/download/qca/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://delta.affinix.com/qca/
 COMMENT=	Cross-platform crypto API for QT - TLS plugin
 

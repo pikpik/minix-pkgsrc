@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.17 2011/01/13 13:39:30 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2011/11/01 06:02:40 sbd Exp $
 
 DISTNAME=	ptimetracker-1.7.3
 PKGREVISION=	8
 CATEGORIES=	time kde
 MASTER_SITES=	http://www.eggtart.plus.com/ptt/prog/
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.eggtart.plus.com/ptt/
 COMMENT=	Keep track of the time spent on projects
 

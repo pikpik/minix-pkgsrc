@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.15 2011/05/04 11:38:06 obache Exp $
+# $NetBSD: Makefile,v 1.16 2011/12/03 00:02:16 joerg Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-expat-0
 PKGREVISION=	5
 CATEGORIES=	textproc python
 
-MAINTAINER=	tsarna@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.python.org/
 COMMENT=	Python interface to expat
 
