@@ -1,4 +1,4 @@
-/*	$NetBSD: license.c,v 1.26 2012/01/04 11:53:38 wiz Exp $	*/
+/*	$NetBSD: license.c,v 1.27 2012/01/28 10:46:08 wiz Exp $	*/
 
 /*-
  * Copyright (c) 2009 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -71,6 +71,7 @@ const char *default_acceptable_licenses =
     "mplusfont "
     "cc-by-sa-v3.0 "
     "lppl-1.3c "
+    "lucent "
     "epl-v1.0";
 
 #ifdef DEBUG
