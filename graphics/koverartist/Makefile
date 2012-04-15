@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2012/02/06 12:40:28 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/01/13 10:55:12 obache Exp $
 
-DISTNAME=		koverartist-0.5
-PKGREVISION=		14
+PKGNAME=		koverartist-0.7.6
+DISTNAME=		38195-koverartist_0.7.6.orig
 CATEGORIES=		graphics kde
-MASTER_SITES=		# empty
+MASTER_SITES=		http://kde-apps.org/CONTENT/content-files/
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		markd@NetBSD.org
@@ -12,15 +12,15 @@ COMMENT=		CD/DVD case designer
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake msgfmt perl
+BUILD_DEPENDS+=	automoc4>=0.9.87:../../devel/automoc4
+
+USE_TOOLS+=		msgfmt perl
 USE_LANGUAGES=		c c++
-USE_LIBTOOL=		yes
-GNU_CONFIGURE=		yes
 
-WRKSRC=			${WRKDIR}/koverartist
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
-.include "../../meta-pkgs/kde3/kde3.mk"
+.include "../../meta-pkgs/kde4/kde4.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
-.include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../x11/kdelibs4/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
