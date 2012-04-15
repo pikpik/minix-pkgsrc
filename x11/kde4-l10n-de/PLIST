@@ -881,6 +881,7 @@ share/doc/kde/HTML/de/kmail/index.cache.bz2
 share/doc/kde/HTML/de/kmail/index.docbook
 share/doc/kde/HTML/de/kmail/intro.docbook
 share/doc/kde/HTML/de/kmail/menus.docbook
+share/doc/kde/HTML/de/kmail/troubleshooting.docbook
 share/doc/kde/HTML/de/kmail/using-kmail.docbook
 share/doc/kde/HTML/de/kmenuedit/common
 share/doc/kde/HTML/de/kmenuedit/done.png
@@ -2282,7 +2283,6 @@ share/locale/de/LC_MESSAGES/okular_tiff.mo
 share/locale/de/LC_MESSAGES/okular_xps.mo
 share/locale/de/LC_MESSAGES/palapeli.mo
 share/locale/de/LC_MESSAGES/parley.mo
-share/locale/de/LC_MESSAGES/phonon-xine.mo
 share/locale/de/LC_MESSAGES/phonon_gstreamer.mo
 share/locale/de/LC_MESSAGES/phonon_kde.mo
 share/locale/de/LC_MESSAGES/phonon_vlc.mo
