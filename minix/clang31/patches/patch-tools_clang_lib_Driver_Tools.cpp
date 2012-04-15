@@ -111,8 +111,8 @@ $NetBSD$
 +      CmdArgs.push_back("-lgcc_s");
 +      CmdArgs.push_back("--no-as-needed");
 +    }
-   }
 +#endif
+   }
 +  CmdArgs.push_back("-L/usr/pkg/compiler-rt/lib -lCompilerRT-Generic");
  
 +  if (!Args.hasArg(options::OPT_nostdlib) &&
