@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/04/22 13:43:51 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/06 12:40:36 wiz Exp $
 #
 
 DISTNAME=	spca5xx-20060402
@@ -11,7 +11,7 @@ PATCH_SITES=	http://www.medias.ne.jp/~takam/bsd/
 PATCHFILES= 	spca5xx-bsd-0.6b.patch.gz
 PATCH_DIST_STRIP=	-p3
 
-MAINTAINER=	hamajima@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.medias.ne.jp/~takam/bsd/NetBSD.html#spca561
 COMMENT=	USB Cameras based SPCA5xx Utilities
 
