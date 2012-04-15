@@ -9,6 +9,7 @@ bin/ecm
 bin/fakecrc
 bin/hax65816
 bin/id3point
+bin/pecompat
 bin/rels
 bin/screamf
 bin/subfile
