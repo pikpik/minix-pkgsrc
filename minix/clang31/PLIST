@@ -4,6 +4,7 @@ bin/c++-analyzer
 bin/c-index-test
 bin/ccc-analyzer
 bin/clang
+bin/clang.dynok
 bin/clang++
 bin/clang-tblgen
 bin/gen-random-bout

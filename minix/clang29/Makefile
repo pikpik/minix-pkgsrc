@@ -60,6 +60,9 @@ TEST_TARGET=	check unittests
 post-extract:
 	${MV} ${WRKDIR}/clang ${WRKDIR}/llvm/tools/clang
 
+post-install:
+	touch ${DESTDIR}/${PREFIX}/bin/clang.dynok
+
 WRKSRC=			${WRKDIR}/llvm
 
 .include "../../converters/libiconv/buildlink3.mk"
