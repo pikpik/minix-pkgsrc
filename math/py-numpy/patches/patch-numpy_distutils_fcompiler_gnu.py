@@ -2,9 +2,9 @@ $NetBSD$
 
 Do not run a shell command when it is "None".
 
---- numpy/distutils/fcompiler/gnu.py.orig	2010-04-22 09:35:24.000000000 +0000
+--- numpy/distutils/fcompiler/gnu.py.orig	2011-03-11 05:56:15.000000000 +0000
 +++ numpy/distutils/fcompiler/gnu.py
-@@ -249,7 +249,7 @@ class Gnu95FCompiler(GnuFCompiler):
+@@ -268,7 +268,7 @@ class Gnu95FCompiler(GnuFCompiler):
  
      def _universal_flags(self, cmd):
          """Return a list of -arch flags for every supported architecture."""
@@ -12,4 +12,4 @@ Do not run a shell command when it is "None".
 +        if not sys.platform == 'darwin' or cmd == None:
              return []
          arch_flags = []
-         for arch in ["ppc", "i686", "x86_64"]:
+         # get arches the C compiler gets.
