@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2011/04/28 20:45:48 alnsn Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/22 11:33:31 alnsn Exp $
 
 DISTNAME=	cmph-1.1
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cmph/}
 
