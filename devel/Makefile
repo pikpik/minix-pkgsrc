@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1584 2012/04/08 19:08:49 wiz Exp $
+# $NetBSD: Makefile,v 1.1585 2012/04/13 11:56:39 mspo Exp $
 #
 
 COMMENT=	Development utilities
@@ -1279,6 +1279,7 @@ SUBDIR+=	py-gobject
 SUBDIR+=	py-gobject-shared
 SUBDIR+=	py-idle
 SUBDIR+=	py-ipython
+SUBDIR+=	py-ipython012
 SUBDIR+=	py-jersey
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
