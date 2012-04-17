@@ -4,9 +4,9 @@ bin/c++-analyzer
 bin/c-index-test
 bin/ccc-analyzer
 bin/clang
-bin/clang.dynok
 bin/clang++
 bin/clang-tblgen
+bin/clang.dynok
 bin/gen-random-bout
 bin/kleaver
 bin/klee
@@ -581,7 +581,7 @@ include/llvm/CodeGen/GCMetadata.h
 include/llvm/CodeGen/GCMetadataPrinter.h
 include/llvm/CodeGen/GCStrategy.h
 include/llvm/CodeGen/GCs.h
-include/llvm/CodeGen/ISDO${LOWER_VENDOR}odes.h
+include/llvm/CodeGen/ISDOpcodes.h
 include/llvm/CodeGen/IntrinsicLowering.h
 include/llvm/CodeGen/JITCodeEmitter.h
 include/llvm/CodeGen/LatencyPriorityQueue.h
@@ -875,7 +875,7 @@ include/llvm/Target/TargetLibraryInfo.h
 include/llvm/Target/TargetLowering.h
 include/llvm/Target/TargetLoweringObjectFile.h
 include/llvm/Target/TargetMachine.h
-include/llvm/Target/TargetO${LOWER_VENDOR}odes.h
+include/llvm/Target/TargetOpcodes.h
 include/llvm/Target/TargetOptions.h
 include/llvm/Target/TargetRegisterInfo.h
 include/llvm/Target/TargetSchedule.td
@@ -907,6 +907,7 @@ include/llvm/Use.h
 include/llvm/User.h
 include/llvm/Value.h
 include/llvm/ValueSymbolTable.h
+lib/BugpointPasses.so
 lib/LLVMHello.so
 lib/clang/${PKGVERSION}/include/altivec.h
 lib/clang/${PKGVERSION}/include/arm_neon.h
@@ -1012,7 +1013,10 @@ lib/libLLVMXCoreDesc.a
 lib/libLLVMXCoreInfo.a
 lib/libLLVMipa.a
 lib/libLLVMipo.a
+lib/libLTO.a
+lib/libLTO.so
 lib/libclang.a
+lib/libclang.so
 lib/libclangARCMigrate.a
 lib/libclangAST.a
 lib/libclangAnalysis.a
@@ -1040,6 +1044,8 @@ lib/libkleeRuntest.a
 lib/libkleeRuntest.so
 lib/libkleeRuntimeIntrinsic.a
 lib/libkleeSupport.a
+lib/libprofile_rt.a
+lib/libprofile_rt.so
 man/man1/bugpoint.1
 man/man1/clang.1
 man/man1/lit.1
