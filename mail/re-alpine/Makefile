@@ -1,8 +1,7 @@
 # $NetBSD: Makefile,v 1.4 2012/02/10 08:44:25 cheusov Exp $
 #
 
-DISTNAME=	re-alpine-2.01
-PKGREVISION=	2
+DISTNAME=	re-alpine-2.02
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=re-alpine/}
 EXTRACT_SUFX=	.tar.bz2
@@ -25,6 +24,7 @@ CONFIGURE_ARGS+= --with-ssl-include-dir=${SSLBASE}/include
 CONFIGURE_ARGS+= --with-ssl-lib-dir=${SSLBASE}/lib
 CONFIGURE_ARGS+= --with-system-pinerc=${PKG_SYSCONFDIR}/pine.conf
 CONFIGURE_ARGS+= --with-system-fixed-pinerc=${PKG_SYSCONFDIR}/pine.conf.fixed
+CONFIGURE_ARGS+= --with-smime
 
 USE_LIBTOOL=	yes
 
