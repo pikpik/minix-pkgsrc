@@ -12,4 +12,5 @@ SHA1 (patch-lib_Transforms_Makefile) = 59202edd740f38a3d14c0d9c7fe98854ab0feb3a
 SHA1 (patch-runtime_Makefile) = 6189ee6df56e07d2cbbc210292cd01104685605a
 SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 1b18d796abcef0363c30c2ae7485de674fc4aed0
 SHA1 (patch-tools_clang_lib_Frontend_InitHeaderSearch.cpp) = a7c3046578cce3710fbcf798b5fbc39d867d0372
+SHA1 (patch-tools_llvm-shlib_Makefile) = c78989228bd88ee8332b5d403844af21893f98ce
 SHA1 (patch-utils_lit_lit_main.py) = 2453c537143070b52ae0804dd9468e92b38da394
