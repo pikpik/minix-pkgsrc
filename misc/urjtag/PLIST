@@ -3,6 +3,9 @@ bin/bsdl2jtag
 bin/jtag
 man/man1/bsdl2jtag.1
 man/man1/jtag.1
+share/locale/fr/LC_MESSAGES/urjtag.mo
+share/locale/rw/LC_MESSAGES/urjtag.mo
+share/locale/sk/LC_MESSAGES/urjtag.mo
 share/urjtag/MANUFACTURERS
 share/urjtag/admtek/adm5120/adm5120
 share/urjtag/altera/PARTS
