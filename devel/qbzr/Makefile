@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.14 2012/03/15 11:53:25 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/04/08 21:28:17 wiz Exp $
 
 DISTNAME=	qbzr-${VER}
 PKGREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	http://launchpad.net/qbzr/0.21/${VER}/+download/
-VER=		0.21.1
+MASTER_SITES=	http://launchpad.net/qbzr/${VER:R}/${VER}/+download/
+VER=		0.22.1
 
 MAINTAINER=	ddeus.pkgsrc@mailnull.com
 HOMEPAGE=	http://bazaar-vcs.org/QBzr
