@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-src_calibre_devices_scanner.py,v 1.1 2012/02/16 21:29:36 gls Exp $
+
+NetBSD's scanner support for Calibre is not written yet
 
 --- src/calibre/devices/scanner.py.orig	2012-02-10 04:59:10.000000000 +0000
 +++ src/calibre/devices/scanner.py
