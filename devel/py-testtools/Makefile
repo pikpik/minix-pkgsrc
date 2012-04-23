@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2011/10/07 10:45:06 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/04/08 19:08:54 wiz Exp $
 #
 
-DISTNAME=	testtools-0.9.12
+DISTNAME=	testtools-0.9.14
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel
-MASTER_SITES=	http://launchpad.net/testtools/0.9/${PKGVERSION_NOREV}/+download/
+MASTER_SITES=	http://launchpad.net/testtools/0.9/${PKGVERSION_NOREV}/+download/ \
+		http://launchpadlibrarian.net/93060290/
 
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://launchpad.net/testtools
