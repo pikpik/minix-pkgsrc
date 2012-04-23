@@ -35,7 +35,7 @@ initvars() {
 
 # How to execute commands there
 mychroot() {
-	chroot $JAILROOT "/bin/sh -c '$1'"
+	chroot $JAILROOT /bin/sh -c "$*"
 }
 
 my_help() {
