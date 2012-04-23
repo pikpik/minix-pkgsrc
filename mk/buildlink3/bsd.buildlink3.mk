@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.210 2012/01/17 22:19:22 sbd Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.211 2012/04/08 06:09:06 obache Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -291,6 +291,9 @@ BUILDLINK_PREFIX.${_pkg_}?=	/boot/common
 .    else
 # XXX: elsewhere?
 BUILDLINK_PREFIX.${_pkg_}?=	/
+.    endif
+.    if !empty(LIBABISUFFIX)
+BUILDLINK_LIBDIRS.${_pkg_}?=	lib${LIBABISUFFIX}
 .    endif
 .  endif
 #
