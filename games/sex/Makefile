@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/10/26 09:51:52 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2011/06/12 04:47:26 dholland Exp $
 
 DISTNAME=	sex-1.0
 PKGREVISION=	1
@@ -12,7 +12,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 AUTO_MKDIRS=		yes
 USE_BSD_MAKEFILE=	yes
-
-MAKE_ENV+=		MKCATPAGES=no
+INSTALLATION_DIRS+=	${PKGMANDIR}/cat6
 
 .include "../../mk/bsd.pkg.mk"
