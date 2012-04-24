@@ -71,12 +71,9 @@ INSTALLATION_DIRS=	bin lib libexec
 .if ${OPSYS} == "Minix"
 CXXFLAGS+= -D_POSIX_SOURCE
 CONFIGURE_ARGS+= --disable-threads
-#CONFIGURE_ARGS+= --disable-libtool-lock
-#CONFIGURE_ARGS+= --enable-optimized
-#CONFIGURE_ARGS+= --disable-assertions
+CONFIGURE_ARGS+= --enable-optimized
+CONFIGURE_ARGS+= --disable-assertions
 CONFIGURE_ARGS+= --enable-shared
-CONFIGURE_ARGS+= --disable-optimized
-CONFIGURE_ARGS+= --enable-assertions
 .else
 # This should be changed!
 CONFIGURE_ARGS+= --enable-targets=host-only
