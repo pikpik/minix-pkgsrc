@@ -1,8 +1,8 @@
 $NetBSD$
 
---- Makefile.rules.orig	Mon Apr 23 01:19:48 2012
+--- Makefile.rules.orig	Tue Dec 13 03:20:07 2011
 +++ Makefile.rules
-@@ -268,11 +268,13 @@ CPP.Defines :=
+@@ -268,9 +268,11 @@ CPP.Defines :=
  ifeq ($(ENABLE_OPTIMIZED),1)
    BuildMode := Release
    # Don't use -fomit-frame-pointer on Darwin or FreeBSD.
@@ -10,18 +10,7 @@ $NetBSD$
    ifneq ($(HOST_OS),FreeBSD)
    ifneq ($(HOST_OS),Darwin)
      OmitFramePointer := -fomit-frame-pointer
-   endif
-   endif
 +  endif
+   endif
+   endif
  
-   # Darwin requires -fstrict-aliasing to be explicitly enabled.
-   # Avoid -fstrict-aliasing on Darwin for now, there are unresolved issues
-@@ -1421,7 +1423,7 @@ LD.Flags += -Wl,-exported_symbol,_main
- endif
- endif
- 
--ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux NetBSD FreeBSD))
-+ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux NetBSD FreeBSD Minix))
- ifneq ($(ARCH), Mips)
-   LD.Flags += -Wl,--version-script=$(LLVM_SRC_ROOT)/autoconf/ExportMap.map
- endif
