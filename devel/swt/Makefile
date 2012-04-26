@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/03/03 00:12:58 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/03/06 17:38:56 ryoon Exp $
 #
 
 SWTREL=		3.5.1
@@ -13,7 +13,7 @@ MASTER_SITES=	http://download.eclipse.org/eclipse/downloads/drops/R-${SWTREL}-${
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.eclipse.org/
+HOMEPAGE=	http://www.eclipse.org/swt/
 COMMENT=	Open source widget toolkit for Java
 #LICENSE=	# TODO: (see mk/license.mk)
 
