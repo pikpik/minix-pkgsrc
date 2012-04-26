@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2010/09/11 18:41:09 jakllsch Exp $
+# $NetBSD: Makefile,v 1.17 2011/03/15 19:43:19 jakllsch Exp $
 #
 
 DISTNAME=	dejavu-fonts-ttf-2.33
@@ -13,7 +13,6 @@ COMMENT=	DejaVu family of TrueType fonts
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_X11BASE=	yes
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
