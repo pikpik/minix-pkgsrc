@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/04/19 09:27:36 seb Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/10 07:59:29 taca Exp $
 
-DISTNAME=	rb-appscript-0.5.1
+DISTNAME=	rb-appscript-0.6.1
 CATEGORIES=	sysutils ruby
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
