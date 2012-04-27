@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2011/12/17 13:46:28 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/04/25 18:55:39 adam Exp $
 
 MODNAME=		intl
 PECL_VERSION=		2.0.0
 PECL_LEGACY_VERSION_SCHEME=	yes
+PKGREVISION=		1
 CATEGORIES+=		textproc
 COMMENT=		PHP extension for i18n
 LICENSE=		php
