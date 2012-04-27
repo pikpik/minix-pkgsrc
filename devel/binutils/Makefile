@@ -45,6 +45,14 @@ PLIST_VARS+=	gprof
 PLIST.gprof=	yes
 .endif
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--enable-shared
+.endif
+
+.if defined(BINUTILS_PROGRAM_PREFIX)
+GNU_PROGRAM_PREFIX=	${BINUTILS_PROGRAM_PREFIX}
+.endif
+
 .include "../../mk/compiler.mk"
 .if !empty(PKGSRC_COMPILER:Mclang)
 CFLAGS+=	-Wno-unused-value -Wno-format-security \
@@ -65,5 +73,8 @@ post-install:
 	cd ${DESTDIR}${PREFIX} && find ${MACHINE_GNU_PLATFORM}/lib/ldscripts -type f -print	\
 		| sort -r						\
 		> ${WRKDIR}/PLIST_DYNAMIC
+
+.include "../../devel/gmp/buildlink3.mk"
+.include "../../math/mpfr/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"
