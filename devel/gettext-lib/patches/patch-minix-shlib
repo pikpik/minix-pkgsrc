@@ -1,0 +1,59 @@
+$NetBSD$
+
+--- gettext-runtime/configure.orig	Sun Jun  6 20:11:32 2010
++++ gettext-runtime/configure
+@@ -7470,7 +7470,7 @@ linux* | k*bsd*-gnu)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-netbsd*)
++netbsd* | minix*)
+   if echo __ELF__ | $CC -E - | $GREP __ELF__ > /dev/null; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|_pic\.a)$'
+   else
+@@ -10565,7 +10565,7 @@ _LT_EOF
+       fi
+       ;;
+ 
+-    netbsd*)
++    netbsd* | minix*)
+       if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
+ 	archive_cmds='$LD -Bshareable $libobjs $deplibs $linker_flags -o $lib'
+ 	wlarc=
+@@ -11066,7 +11066,7 @@ rm -f core conftest.err conftest.$ac_objext \
+       link_all_deplibs=yes
+       ;;
+ 
+-    netbsd*)
++    netbsd* | minix*)
+       if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
+ 	archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'  # a.out
+       else
+@@ -12031,6 +12031,18 @@ netbsd*)
+   hardcode_into_libs=yes
+   ;;
+ 
++minix*)
++  version_type=linux
++  need_lib_prefix=no
++  need_version=no
++  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
++  soname_spec='${libname}${release}${shared_ext}$major'
++  dynamic_linker='Minix ld.elf_so'
++  shlibpath_var=LD_LIBRARY_PATH
++  shlibpath_overrides_runpath=yes
++  hardcode_into_libs=yes
++  ;;
++
+ newsos6)
+   version_type=linux
+   library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major $libname${shared_ext}'
+@@ -27335,6 +27347,8 @@ do
+   case $ac_option in
+   # Handling of the options.
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
+     ac_cs_recheck=: ;;
+   --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
+     $as_echo "$ac_cs_version"; exit ;;
