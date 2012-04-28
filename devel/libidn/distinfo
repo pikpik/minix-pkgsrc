@@ -4,4 +4,5 @@ SHA1 (libidn-1.24.tar.gz) = 4251c108966375ede4df15d76a1bd9a4440f44ee
 RMD160 (libidn-1.24.tar.gz) = edccad6c09b181ebcd8360a2d3abdfd1283e5486
 Size (libidn-1.24.tar.gz) = 3325775 bytes
 SHA1 (patch-aa) = c97ade5696f5f31ed49e789155799b8de238b35e
+SHA1 (patch-ab) = 416b7c011d503a16aec3e12117418543c8915047
 SHA1 (patch-ad) = 2b8f25de31627d90829ebde6b92c24012fc1fff9
