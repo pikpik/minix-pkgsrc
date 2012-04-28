@@ -1,9 +1,9 @@
-# $NetBSD: enigmail.mk,v 1.6 2012/04/03 21:52:49 ryoon Exp $
+# $NetBSD: enigmail.mk,v 1.2 2012/04/04 20:05:09 ryoon Exp $
 #
 # This Makefile fragment hooks the Enigmail OpenPGP extension
 # (see http://www.mozilla-enigmail.org/ ) into the build.
 
-ENIGMAIL_DIST=		enigmail-1.4.tar.gz
+ENIGMAIL_DIST=		enigmail-1.4.1.tar.gz
 XPI_FILES+=		${WRKDIR}/enigmail.xpi
 .if !defined(DISTFILES)
 DISTFILES=		${DEFAULT_DISTFILES}
