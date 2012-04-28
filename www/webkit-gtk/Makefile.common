@@ -1,10 +1,10 @@
-# $NetBSD: Makefile.common,v 1.9 2012/02/04 13:24:35 drochner Exp $
+# $NetBSD: Makefile.common,v 1.10 2012/02/13 01:24:20 obache Exp $
 # used by www/webkit-gtk/Makefile
 # used by www/webkit-gtk3/Makefile
 
-DISTNAME=	webkit-1.6.3
+DISTNAME=	webkit-1.8.1
 CATEGORIES=	www
-MASTER_SITES=	http://www.webkitgtk.org/
+MASTER_SITES=	http://www.webkitgtk.org/releases/
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -26,6 +26,7 @@ GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+=	--with-target=x11 \
 			--with-font-backend=freetype
+CONFIGURE_ARGS+=	--disable-geolocation
 CONFIGURE_ENV+= ZLIB_CFLAGS=-I${BUILDLINK_PREFIX.zlib}/include ZLIB_LIBS=-lz
 
 .include "options.mk"
