@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2012/04/25 10:00:53 obache Exp $
+# $NetBSD: Makefile,v 1.39 2012/04/25 12:20:48 obache Exp $
 #
 
 DISTNAME=	ircservices-5.0.64
@@ -28,8 +28,8 @@ BUILD_DEFS=	VARBASE
 
 CONFIGURE_ARGS+=	-prefix ${PREFIX:Q}
 CONFIGURE_ARGS+=	-cc ${CC:Q}
-CONFIGURE_ARGS+=	-cflags ${CFLAGS:Q}
-CONFIGURE_ARGS+=	-lflags ${LDFLAGS:Q}
+CONFIGURE_ARGS+=	${empty(CFLAGS):?:-cflags ${CFLAGS:Q}}
+CONFIGURE_ARGS+=	${empty(LDFLAGS):?:-lflags ${LDFLAGS:Q}}
 CONFIGURE_ARGS+=	${empty(LIBS):?:-libs ${LIBS:Q}}
 
 SUBST_CLASSES+=		install
