@@ -1,0 +1,100 @@
+$NetBSD$
+
+--- configure.orig	Sun Apr 29 09:44:49 2012
++++ configure
+@@ -6542,7 +6542,7 @@ linux* | k*bsd*-gnu | kopensolaris*-gnu)
+   lt_cv_deplibs_check_method=pass_all
+   ;;
+ 
+-netbsd*)
++netbsd* | minix*)
+   if echo __ELF__ | $CC -E - | $GREP __ELF__ > /dev/null; then
+     lt_cv_deplibs_check_method='match_pattern /lib[^/]+(\.so\.[0-9]+\.[0-9]+|_pic\.a)$'
+   else
+@@ -9839,7 +9839,7 @@ _LT_EOF
+       fi
+       ;;
+ 
+-    netbsd*)
++    netbsd* | minix*)
+       if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
+ 	archive_cmds='$LD -Bshareable $libobjs $deplibs $linker_flags -o $lib'
+ 	wlarc=
+@@ -10472,7 +10472,7 @@ $as_echo "$lt_cv_irix_exported_symbol" >&6; }
+       link_all_deplibs=yes
+       ;;
+ 
+-    netbsd*)
++    netbsd* | minix*)
+       if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
+ 	archive_cmds='$LD -Bshareable -o $lib $libobjs $deplibs $linker_flags'  # a.out
+       else
+@@ -11539,6 +11539,18 @@ netbsd*)
+   hardcode_into_libs=yes
+   ;;
+ 
++minix*)
++  version_type=linux
++  need_lib_prefix=no
++  need_version=no
++  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
++  soname_spec='${libname}${release}${shared_ext}$major'
++  dynamic_linker='Minix ld.elf_so'
++  shlibpath_var=LD_LIBRARY_PATH
++  shlibpath_overrides_runpath=yes
++  hardcode_into_libs=yes
++  ;;
++
+ newsos6)
+   version_type=linux
+   library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major $libname${shared_ext}'
+@@ -13597,7 +13609,7 @@ fi
+ 	esac
+ 	;;
+ 
+-      netbsd*)
++    netbsd*)
+         if echo __ELF__ | $CC -E - | $GREP __ELF__ >/dev/null; then
+ 	  archive_cmds_CXX='$LD -Bshareable  -o $lib $predep_objects $libobjs $deplibs $postdep_objects $linker_flags'
+ 	  wlarc=
+@@ -13609,7 +13621,11 @@ fi
+ 	output_verbose_link_cmd='$CC -shared $CFLAGS -v conftest.$objext 2>&1 | $GREP conftest.$objext | $SED -e "s:-lgcc -lc -lgcc::"'
+ 	;;
+ 
+-      *nto* | *qnx*)
++	minix*)
++	  ld_shlibs_CXX=yes
++	;;
++
++    *nto* | *qnx*)
+         ld_shlibs_CXX=yes
+ 	;;
+ 
+@@ -14355,7 +14371,7 @@ lt_prog_compiler_static_CXX=
+ 	    ;;
+ 	esac
+ 	;;
+-      netbsd*)
++      netbsd* | minix*)
+ 	;;
+       *qnx* | *nto*)
+         # QNX uses GNU C++, but need to define -shared option too, otherwise
+@@ -15380,6 +15396,18 @@ netbsd*)
+     soname_spec='${libname}${release}${shared_ext}$major'
+     dynamic_linker='NetBSD ld.elf_so'
+   fi
++  shlibpath_var=LD_LIBRARY_PATH
++  shlibpath_overrides_runpath=yes
++  hardcode_into_libs=yes
++  ;;
++
++minix*)
++  version_type=linux
++  need_lib_prefix=no
++  need_version=no
++  library_names_spec='${libname}${release}${shared_ext}$versuffix ${libname}${release}${shared_ext}$major ${libname}${shared_ext}'
++  soname_spec='${libname}${release}${shared_ext}$major'
++  dynamic_linker='Minix ld.elf_so'
+   shlibpath_var=LD_LIBRARY_PATH
+   shlibpath_overrides_runpath=yes
+   hardcode_into_libs=yes
