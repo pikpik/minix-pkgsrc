@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/03/18 07:04:40 taca Exp $
 
-DISTNAME=	jquery-rails-2.0.1
+DISTNAME=	jquery-rails-2.0.2
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
