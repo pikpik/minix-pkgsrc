@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/03/17 15:42:28 taca Exp $
 
-DISTNAME=	uglifier-1.2.3
+DISTNAME=	uglifier-1.2.4
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
