@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2011/06/29 03:02:43 taca Exp $
+# $NetBSD: Makefile,v 1.16 2011/12/17 13:46:28 obache Exp $
 
 MODNAME=	apc
-PECL_VERSION=	3.1.9
-PKGREVISION=	1
+PECL_VERSION=	3.1.10
 PECL_LEGACY_VERSION_SCHEME=	yes
 CATEGORIES+=	sysutils
 
