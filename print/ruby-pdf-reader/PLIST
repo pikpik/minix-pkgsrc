@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2011/06/19 14:18:58 taca Exp $
+@comment $NetBSD: PLIST,v 1.2 2012/03/20 13:08:33 taca Exp $
 bin/pdf_callbacks
 bin/pdf_list_callbacks
 bin/pdf_object
@@ -49,6 +49,7 @@ ${GEM_LIBDIR}/lib/pdf/reader/object_cache.rb
 ${GEM_LIBDIR}/lib/pdf/reader/object_hash.rb
 ${GEM_LIBDIR}/lib/pdf/reader/object_stream.rb
 ${GEM_LIBDIR}/lib/pdf/reader/page.rb
+${GEM_LIBDIR}/lib/pdf/reader/page_state.rb
 ${GEM_LIBDIR}/lib/pdf/reader/page_text_receiver.rb
 ${GEM_LIBDIR}/lib/pdf/reader/pages_strategy.rb
 ${GEM_LIBDIR}/lib/pdf/reader/parser.rb
