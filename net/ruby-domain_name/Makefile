@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/02/28 20:31:29 minskim Exp $
 
-DISTNAME=	domain_name-0.5.2
+DISTNAME=	domain_name-0.5.3
 CATEGORIES=	net
 
 MAINTAINER=	minskim@NetBSD.org
