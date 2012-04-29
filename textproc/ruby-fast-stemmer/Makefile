@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/05/23 02:56:56 minskim Exp $
 
-DISTNAME=	fast-stemmer-1.0.0
+DISTNAME=	fast-stemmer-1.0.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc
 
