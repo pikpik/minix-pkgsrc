@@ -5,3 +5,4 @@ RMD160 (gettext-0.18.1.1.tar.gz) = 0ca0b6bf0219440404a86f0c16cbac3d1a2ecd37
 Size (gettext-0.18.1.1.tar.gz) = 15139737 bytes
 SHA1 (patch-aa) = bd69b8c279dcf917fad953c2f64348fc2128bc4b
 SHA1 (patch-ab) = c5aef1ef15c91203697cd9817b6b03713f2a8b6f
+SHA1 (patch-minix-shlib) = 97e855d5d39cead623e786cc9303d48ce303f358

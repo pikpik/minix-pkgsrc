@@ -12,3 +12,4 @@ Size (mpfr-3.0.1/patch02) = 3282 bytes
 SHA1 (mpfr-3.0.1/patch03) = 60c98873696c897e406e1106e62cff02d320d1d0
 RMD160 (mpfr-3.0.1/patch03) = df4b3c54f9ef6beaa35a88198edf9c80f35e8e41
 Size (mpfr-3.0.1/patch03) = 3347 bytes
+SHA1 (patch-minix-shlib) = 99c2b4f88401c92539c2c088d5ac39c92b14d0d6

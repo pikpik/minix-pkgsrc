@@ -4,3 +4,4 @@ SHA1 (curl-7.24.0.tar.bz2) = 2f2775a67de9fc91b47f5bb70fb7d359f7db55e7
 RMD160 (curl-7.24.0.tar.bz2) = b2b3116318813478b4683ae479cb889c4fc05cea
 Size (curl-7.24.0.tar.bz2) = 2406936 bytes
 SHA1 (patch-aa) = 29e7a24fe828c88dd2f5435edcfe6dace44f18b3
+SHA1 (patch-ab) = 0f0bd995cc0a33fe553041f41625ddf40ae85f8e

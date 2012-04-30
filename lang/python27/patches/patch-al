@@ -25,7 +25,7 @@ $NetBSD$
  	  INSTSONAME="$LDLIBRARY".$SOVERSION
            ;;
 -    Linux*|GNU*|NetBSD*|FreeBSD*|DragonFly*)
-+    Linux*|GNU*|NetBSD*|FreeBSD*|Interix*|DragonFly*|OpenBSD*|MirBSD*)
++    Linux*|GNU*|NetBSD*|FreeBSD*|Interix*|DragonFly*|OpenBSD*|MirBSD*|Minix*)
  	  LDLIBRARY='libpython$(VERSION).so'
  	  BLDLIBRARY='-L. -lpython$(VERSION)'
  	  RUNSHARED=LD_LIBRARY_PATH=`pwd`:${LD_LIBRARY_PATH}
@@ -78,7 +78,7 @@ $NetBSD$
 +	MirBSD*)
 +		LDSHARED='$(CC) -shared $(CCSHARED)'
 +		LDCXXSHARED='$(CXX) -shared $(CCSHARED)';;
-+	NetBSD*|DragonFly*|minix*)
++	NetBSD*|DragonFly*|Minix*)
  		LDSHARED='$(CC) -shared'
  		LDCXXSHARED='$(CXX) -shared';;
 +	Interix*)
@@ -92,7 +92,7 @@ $NetBSD$
  	Linux*|GNU*) CCSHARED="-fPIC";;
  	BSD/OS*/4*) CCSHARED="-fpic";;
 -	FreeBSD*|NetBSD*|OpenBSD*|DragonFly*) CCSHARED="-fPIC";;
-+	FreeBSD*|NetBSD*|OpenBSD*|MirBSD*|DragonFly*|minix*) CCSHARED="-fPIC";;
++	FreeBSD*|NetBSD*|OpenBSD*|MirBSD*|DragonFly*|Minix*) CCSHARED="-fPIC";;
 +	Interix*) CCSHARED="";;
  	OpenUNIX*|UnixWare*)
  		if test "$GCC" = "yes"
@@ -102,7 +102,7 @@ $NetBSD$
  	SCO_SV*) LINKFORSHARED="-Wl,-Bexport";;
  	ReliantUNIX*) LINKFORSHARED="-W1 -Blargedynsym";;
 -	FreeBSD*|NetBSD*|OpenBSD*|DragonFly*)
-+	FreeBSD*|NetBSD*|OpenBSD*|MirBSD*|DragonFly*)
++	FreeBSD*|NetBSD*|OpenBSD*|MirBSD*|DragonFly*|Minix*)
  		if [ "`$CC -dM -E - </dev/null | grep __ELF__`" != "" ]
  		then
  			LINKFORSHARED="-Wl,--export-dynamic"

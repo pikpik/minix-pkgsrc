@@ -13,4 +13,5 @@ SHA1 (patch-ag) = 66f5cd58ca75a19e3136bb2dedced9b406df82ce
 SHA1 (patch-ah) = 6144e12426073013ec2a4582f1b795c7de7a6c35
 SHA1 (patch-ai) = 2a692aac1a3fe191156d5ce66c13eb33e3c4fc8c
 SHA1 (patch-aj) = 49e8945703e67f7a158ed7fd496188d85c659fb3
+SHA1 (patch-minix-shlib) = 637d3bdf320fa0c95acb0aae3ff395c466a27478
 SHA1 (patch-mpn_arm_invert__limb.asm) = f0565d76c56a6547027fa85850639d2e69f72a51

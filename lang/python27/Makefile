@@ -18,7 +18,7 @@ CONFLICTS+=	python-[0-9]*
 
 GNU_CONFIGURE=		yes
 #CONFIGURE_ARGS+=	--with-threads
-#CONFIGURE_ARGS+=	--enable-shared
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	OPT=${CFLAGS:Q}
 CONFIGURE_ARGS+=	--with-system-ffi
 CONFIGURE_ARGS+=	--with-dbmliborder=ndbm:bdb
@@ -32,8 +32,12 @@ USE_LANGUAGES=		c c++
 
 PTHREAD_OPTS+=	require
 .include "../../mk/pthread.buildlink3.mk"
+
+# Threading support is broken when using pth
 .if ${PTHREAD_TYPE} == "pth"
-CONFIGURE_ARGS+=	--with-pth
+CONFIGURE_ARGS+=	--without-threads
+.else
+CONFIGURE_ARGS+=	--with-threads
 .endif
 
 .include "../../mk/compiler.mk"
@@ -44,13 +48,6 @@ CFLAGS+=	-fwrapv
 .endif
 
 .include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "Minix"
-CONFIGURE_ARGS+=	--without-threads
-.else
-CONFIGURE_ARGS+=       --with-threads
-.endif
-CONFIGURE_ARGS+=       --enable-shared
 
 # fdatasync()
 LIBS.SunOS+=		-lrt
@@ -124,7 +121,7 @@ LIBS.Minix+=           -lcrypt -lbz2
 INSTALL_UNSTRIPPED=	yes
 .endif
 
-PLIST_VARS+=	dll nis no-nis
+PLIST_VARS+=	dll nis no-nis mmap resource multiprocessing
 .if ${OPSYS} == "IRIX"
 .  if ${ABI} == "64"
 PLIST.no-nis=	yes
@@ -133,13 +130,22 @@ PLIST.nis=	yes
 .  endif
 .else
 PLIST.dll=	yes
-.  if ${OPSYS} == "MirBSD"
+.  if ${OPSYS} == "MirBSD" || ${OPSYS} == "Minix"
 # neither nis nor no-nis
 .  elif ${OPSYS} != "NetBSD" || exists(/usr/bin/ypcat)
 PLIST.nis=	yes
 .  else
 PLIST.no-nis=	yes
 .  endif
+.endif
+
+.if ${OPSYS} != "Minix"
+PLIST.mmap=	yes
+PLIST.resource=	yes
+.endif
+
+.if ${PTHREAD_TYPE} != "pth"
+PLIST.multiprocessing=	yes
 .endif
 
 .include "../../mk/bdb.buildlink3.mk"

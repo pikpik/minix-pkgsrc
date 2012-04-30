@@ -1,7 +1,7 @@
 $NetBSD$
 
---- libltdl/m4/libtool.m4.orig	Thu Apr 26 22:45:32 2012
-+++ libltdl/m4/libtool.m4
+--- ./libltdl/m4/libtool.m4.orig	Mon Nov 16 13:11:59 2009
++++ ./libltdl/m4/libtool.m4
 @@ -2503,6 +2503,18 @@ netbsd*)
    hardcode_into_libs=yes
    ;;

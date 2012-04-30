@@ -1,0 +1,23 @@
+$NetBSD$
+
+--- configure.orig	Thu Apr  6 21:49:25 2006
++++ configure
+@@ -1172,7 +1172,7 @@ if test x$enable_libgomp = x ; then
+     case "${target}" in
+     *-*-linux* | *-*-gnu* | *-*-k*bsd*-gnu)
+ 	;;
+-    *-*-netbsd* | *-*-freebsd* | *-*-openbsd*)
++    *-*-netbsd* | *-*-freebsd* | *-*-openbsd* | *-*-minix*)
+ 	;;
+     *-*-solaris2* | *-*-sysv4* | *-*-irix* | *-*-osf* | *-*-hpux*)
+ 	;;
+@@ -1236,6 +1236,9 @@ case "${target}" in
+ 	noconfigdirs="$noconfigdirs ${libgcj}"
+ 	;;
+     esac
++    ;;
++  *-*-minix*)
++    noconfigdirs="$noconfigdirs target-newlib target-libiberty target-libgloss"
+     ;;
+   *-*-netware*)
+     noconfigdirs="$noconfigdirs target-newlib target-libiberty target-libgloss ${libgcj} target-libmudflap"

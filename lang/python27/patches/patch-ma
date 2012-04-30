@@ -1,0 +1,15 @@
+$NetBSD$
+
+Minix3 does not define struct rusage, or getrusage function.
+
+--- Modules/_hotshot.c.orig	Fri Apr 27 14:22:22 2012
++++ Modules/_hotshot.c
+@@ -927,7 +927,7 @@ calibrate(void)
+ #endif
+     }
+ #if defined(MS_WINDOWS) || defined(PYOS_OS2) || \
+-    defined(__VMS) || defined (__QNX__)
++    defined(__VMS) || defined (__QNX__) || defined(_MINIX)
+     rusage_diff = -1;
+ #else
+     {
