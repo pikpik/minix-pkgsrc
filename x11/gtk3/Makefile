@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.17 2012/03/21 12:21:56 drochner Exp $
+# $NetBSD: Makefile,v 1.18 2012/03/21 19:58:47 hans Exp $
 
-DISTNAME=	gtk+-3.2.4
+DISTNAME=	gtk+-3.4.1
 PKGNAME=	${DISTNAME:S/gtk/gtk3/}
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/3.2/ \
-		${MASTER_SITE_GNOME:=sources/gtk+/3.2/}
+MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/3.4/ \
+		${MASTER_SITE_GNOME:=sources/gtk+/3.4/}
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
