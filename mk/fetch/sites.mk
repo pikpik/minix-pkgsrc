@@ -1,4 +1,4 @@
-# $NetBSD: sites.mk,v 1.89 2012/03/11 10:26:21 wiz Exp $
+# $NetBSD: sites.mk,v 1.90 2012/04/29 15:48:13 ryoon Exp $
 #
 # This Makefile fragment defines read-only MASTER_SITE_* variables
 # representing some well-known master distribution sites for software.
@@ -105,6 +105,7 @@ MASTER_SITE_SUSE+=	\
 	ftp://fr2.rpmfind.net/linux/SuSE-Linux/${MACHINE_ARCH}/update/${SUSE_VERSION}/
 
 MASTER_SITE_MOZILLA_ALL+=   \
+	http://dm-download02.mozilla.org/pub/mozilla.org/ \
 	http://ftp.mozilla.org/pub/mozilla.org/ \
 	ftp://ftp.mozilla.org/pub/mozilla.org/
 
