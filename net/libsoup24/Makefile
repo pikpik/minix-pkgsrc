@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2012/04/27 12:31:59 obache Exp $
+# $NetBSD: Makefile,v 1.40 2012/04/30 14:22:36 drochner Exp $
 
 DISTNAME=	libsoup-2.38.1
 PKGNAME=	${DISTNAME:S/libsoup/libsoup24/}
@@ -24,6 +24,12 @@ PKGCONFIG_OVERRIDE+=	libsoup-2.4.pc.in
 TEST_TARGET=	check
 
 .include "options.mk"
+
+# gcc>=4.2 specific -Werror=XXX flags will be added unconditionally.
+.include "../../mk/compiler.mk"
+.if !empty(CC_VERSION:Mgcc-4.[01].*) || !empty(CC_VERSION:Mgcc-[1-3].*)
+CONFIGURE_ARGS+= 	--disable-more-warnings
+.endif
 
 .include "../../databases/sqlite3/buildlink3.mk"
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.30.0
