@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/03/03 00:12:14 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/04/30 14:17:12 drochner Exp $
 
 DISTNAME=	librsvg-2.36.1
 CATEGORIES=	graphics gnome
@@ -28,6 +28,12 @@ TEST_TARGET=		check
 
 BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.2.0
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.24.0
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+CONFIGURE_ARGS+=	--disable-Bsymbolic
+.endif
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/pango/buildlink3.mk"
