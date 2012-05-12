@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/01/28 08:30:39 lukem Exp $
+# $NetBSD: Makefile,v 1.21 2010/03/24 14:12:44 lukem Exp $
 #
 
 DISTNAME=		tnftpd-20100324
@@ -13,6 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=		wu-ftpd-[0-9]*
 CONFLICTS+=		kth-krb4-[0-9]*
 CONFLICTS+=		lukemftpd-[0-9]*
+CONFLICTS=		man-pages-[0-9]*
 
 GNU_CONFIGURE=		YES
 MANCOMPRESSED_IF_MANZ=	YES

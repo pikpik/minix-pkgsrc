@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/04/22 13:21:04 obache Exp $
 #
 
 DISTNAME=	libskk-0.0.12
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		gmake intltool pkg-config
+USE_TOOLS+=		gmake intltool pkg-config msgfmt
 USE_PKGLOCALEDIR=	yes
 
 PKGCONFIG_OVERRIDE+=	libskk/libskk.pc.in

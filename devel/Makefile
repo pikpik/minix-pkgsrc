@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1586 2012/04/17 17:48:56 drochner Exp $
+# $NetBSD: Makefile,v 1.1592 2012/05/08 09:37:52 imil Exp $
 #
 
 COMMENT=	Development utilities
@@ -432,9 +432,11 @@ SUBDIR+=	lutok
 SUBDIR+=	lwp
 SUBDIR+=	m17n-lib
 SUBDIR+=	m4
+SUBDIR+=	mad-flute
 SUBDIR+=	makedepend
 SUBDIR+=	makedepf90
 SUBDIR+=	maketool
+SUBDIR+=	man-pages
 SUBDIR+=	mantis
 SUBDIR+=	matio
 SUBDIR+=	mdds
@@ -498,6 +500,7 @@ SUBDIR+=	p5-Algorithm-Dependency
 SUBDIR+=	p5-Algorithm-Diff
 SUBDIR+=	p5-Algorithm-HowSimilar
 SUBDIR+=	p5-Algorithm-Merge
+SUBDIR+=	p5-Algorithm-Permute
 SUBDIR+=	p5-AnnoCPAN-Perldoc
 SUBDIR+=	p5-Any-Moose
 SUBDIR+=	p5-AnyEvent
@@ -1091,6 +1094,7 @@ SUBDIR+=	p5-Test-CheckManifest
 SUBDIR+=	p5-Test-Class
 SUBDIR+=	p5-Test-ClassAPI
 SUBDIR+=	p5-Test-Cmd
+SUBDIR+=	p5-Test-Command-Simple
 SUBDIR+=	p5-Test-Compile
 SUBDIR+=	p5-Test-Deep
 SUBDIR+=	p5-Test-Differences
@@ -1466,6 +1470,7 @@ SUBDIR+=	sdcc
 SUBDIR+=	semantic
 SUBDIR+=	semi
 SUBDIR+=	sfio
+SUBDIR+=	sfslite
 SUBDIR+=	sgb
 SUBDIR+=	sgi-stl
 SUBDIR+=	sgi-stl-docs
@@ -1513,6 +1518,7 @@ SUBDIR+=	tkcvs
 SUBDIR+=	tkdiff
 SUBDIR+=	tla
 SUBDIR+=	tmake
+SUBDIR+=	tolua++
 SUBDIR+=	topgit
 SUBDIR+=	tpasm
 SUBDIR+=	tre

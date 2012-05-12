@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2008/11/10 17:21:38 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2009/07/07 20:00:27 joerg Exp $
 
 DISTNAME=	xalarm-3.06
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	time
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=utilities/}
 EXTRACT_SUFX=	.tar.gz
@@ -56,7 +56,6 @@ pre-configure:
 		-e 's|@KILL@|${KILL}|' ${FILESDIR}/fns.h.in > ${WRKSRC}/fns.h
 	${CP} ${FILESDIR}/XAlarm-color.ad ${WRKSRC}/
 
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/xaw.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

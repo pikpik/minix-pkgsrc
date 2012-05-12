@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/03/03 00:12:48 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/04/15 22:00:58 wiz Exp $
 #
 
 DISTNAME=	meanwhile-1.0.2
@@ -9,6 +9,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=meanwhile/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://meanwhile.sourceforge.net/
 COMMENT=	Lotus SameTime compatible chat protocol
+
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

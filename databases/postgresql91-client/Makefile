@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2012/01/01 03:49:48 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2012/03/22 14:46:29 hans Exp $
 
 PKGNAME=	${DISTNAME:C/-/91-client-/}
+PKGREVISION=	1
 COMMENT=	PostgreSQL database client programs
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -54,9 +55,9 @@ SUBST_MESSAGE.pgxs=	Fixing workdir tools references in pgxs Makefile
 SUBST_FILES.pgxs=	src/Makefile.global
 SUBST_SED.pgxs=		-e 's,${TOOLS_CMD.bison},${TOOLS_PATH.bison},'
 SUBST_SED.pgxs+=	-e 's,${TOOLS_CMD.lex},${TOOLS_PATH.lex},'
+SUBST_SED.pgxs+=	-e 's,${TOOLS_CMD.mkdir},${TOOLS_PATH.mkdir},'
 SUBST_SED.pgxs+=	-e 's,${WRKDIR}/.wrapper/bin/ld,${LD},'
 SUBST_SED.pgxs+=	-e 's,${WRKDIR}/.wrapper,${PREFIX},'
-SUBST_SED.pgxs+=	-e 's,${PREFIX}/bin/mkdir,${MKDIR:[1]},'
 SUBST_SED.pgxs+=	-e 's,${WRKSRC},/dev/null,'
 
 INSTALLATION_DIRS+=	lib/postgresql/pgxs

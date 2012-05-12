@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2009/02/16 18:25:20 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2010/02/26 10:28:32 wiz Exp $
 #
 
 DISTNAME=	oe2mbx-1.21
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	# none
 

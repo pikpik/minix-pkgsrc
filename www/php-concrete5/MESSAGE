@@ -1,7 +1,7 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.3 2011/12/11 13:01:50 ryoon Exp $
+$NetBSD: MESSAGE,v 1.3 2012/05/04 01:06:04 ryoon Exp $
 
-To use tiki with Apache 2.2, you will need to perform the following steps.
+To use concrete5 with Apache 2.2, you will need to perform the following steps.
 
 1. Install www/apache22 and www/ap-php
 
@@ -21,14 +21,14 @@ To use tiki with Apache 2.2, you will need to perform the following steps.
 	# ${RCD_SCRIPTS_DIR}/mysqld start
 	And see messages.
 
-5. Add MySQL user, tiki
+5. Add MySQL user, concrete5
 
 	$ mysql -u root -p
 	Enter password: YOUR_MYSQL_ROOT_PASSWORD
 	> create user concrete5 identified by 'concrete5_user_password';
 	> quit
 
-6. Create database for tiki
+6. Create database for concrete5
 
 	$ mysql -u root -p
 	Enter password: YOUR_MYSQL_ROOT_PASSWORD
@@ -53,10 +53,13 @@ To use tiki with Apache 2.2, you will need to perform the following steps.
 		Allow from All
 	</Directory>
 
-9. Access http://localhost/index.php
+9. Start Apache httpd 2.2
+	# ${RCD_SCRIPTS_DIR}/apache start
+
+10. Access http://localhost/index.php
    And setup with the following information.
 
-	database name:	concrete_db
+	database name:	concrete5_db
 	user name:	concrete5
 	password:	concrete5_password
 ===========================================================================

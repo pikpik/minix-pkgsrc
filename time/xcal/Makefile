@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2008/11/10 17:21:38 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2009/07/07 19:55:43 joerg Exp $
 #
 
 DISTNAME=		xcal41
 PKGNAME=		xcal-4.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		x11 time
 MASTER_SITES=		ftp://ftp.hillside.co.uk/xcal/
 EXTRACT_SUFX=		.tar.Z
@@ -23,6 +23,5 @@ post-extract:
 	done
 
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

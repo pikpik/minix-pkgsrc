@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.31 2012/04/27 12:31:38 obache Exp $
+# $NetBSD: Makefile,v 1.33 2012/05/04 16:06:14 joerg Exp $
 #
 # NOTE: when updating this package, there are two places that sound
 #       tarballs need to be checked
 
-DISTNAME=	asterisk-1.8.11.1
+DISTNAME=	asterisk-1.8.12.0
 DIST_SUBDIR=	${PKGNAME_NOREV}
 DISTFILES=	${DEFAULT_DISTFILES}
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
@@ -90,6 +90,7 @@ MAKE_FLAGS+=		WRKSRC=${WRKSRC}
 MAKE_FLAGS+=		LDOPTS=${LDFLAGS:M*:Q}
 MAKE_FLAGS+=		HTTP_DOCSDIR=${PREFIX}/share/httpd/htdocs
 MAKE_FLAGS+=		HTTP_CGIDIR=${PREFIX}/libexec/cgi-bin
+MAKE_FLAGS+=		OPTIMIZE=-O3
 
 .if !empty(MACHINE_PLATFORM:MSunOS-*-i386)
 BUILDLINK_TRANSFORM+=	rm:-march=i386

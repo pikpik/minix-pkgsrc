@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ipc_chromium_src_base_file__util__bsd.cc,v 1.1 2012/03/06 12:34:09 ryoon Exp $
+
+# Reported upstream: https://bugzilla.mozilla.org/show_bug.cgi?id=753046
 
 --- ipc/chromium/src/base/file_util_bsd.cc.orig	2012-01-07 18:21:18.000000000 +0000
 +++ ipc/chromium/src/base/file_util_bsd.cc

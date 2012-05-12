@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/08 11:57:36 obache Exp $
+# $NetBSD: Makefile,v 1.2 2011/03/07 08:52:46 ryoon Exp $
 #
 
 DISTNAME=	xvkbd-3.2
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://homepage3.nifty.com/tsato/xvkbd/
 
@@ -26,5 +27,4 @@ BUILDLINK_TRANSFORM+=	l:Xaw3d:neXtaw
 .endif
 
 .include "../../x11/libXtst/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

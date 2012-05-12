@@ -1,0 +1,14 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- backend/wbprivate/workbench/stdafx.h~	2011-03-17 12:48:42.000000000 +0000
++++ backend/wbprivate/workbench/stdafx.h
+@@ -39,7 +39,6 @@
+ #include <gl/glu.h>
+ 
+ #include <glib.h>
+-#include <glib/gthread.h>
+ 
+ #include "grtpp.h"
+ #include "grtpp_util.h"

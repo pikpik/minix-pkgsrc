@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.28 2010/09/01 20:17:26 sno Exp $
+# $NetBSD: Makefile,v 1.29 2011/08/10 08:34:33 adam Exp $
 
-DISTNAME=	Config-IniFiles-2.68
+DISTNAME=	Config-IniFiles-2.71
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5cif
 CATEGORIES=	devel perl5
@@ -13,6 +13,8 @@ LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+DEPENDS+=		p5-List-MoreUtils-[0-9]*:../../devel/p5-List-MoreUtils
 
 PERL5_MODULE_TYPE=	Module::Build
 PERL5_PACKLIST=		auto/Config/IniFiles/.packlist

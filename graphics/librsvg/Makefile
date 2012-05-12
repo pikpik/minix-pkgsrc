@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2012/04/30 14:17:12 drochner Exp $
+# $NetBSD: Makefile,v 1.56 2012/05/01 07:13:37 tron Exp $
 
 DISTNAME=	librsvg-2.36.1
 CATEGORIES=	graphics gnome
@@ -21,6 +21,7 @@ USE_LANGUAGES+=		c c++
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-gtk-theme --disable-tools
 CONFIGURE_ARGS+=	--disable-introspection
+CONFIGURE_ARGS+=	--enable-Bsymbolic=auto
 
 PKGCONFIG_OVERRIDE=	librsvg.pc.in
 

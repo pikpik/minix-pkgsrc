@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- drivers/viavoice/viavoicesynthesisdriver.h~	2008-12-10 13:36:00.000000000 +0000
++++ drivers/viavoice/viavoicesynthesisdriver.h
+@@ -30,7 +30,7 @@
+ #define __VIAVOICE_SYNTHESIS_DRIVER_H_
+ 
+ #include <bonobo/bonobo-object.h>
+-#include <glib/gthread.h>
++#include <glib.h>
+ #include <gnome-speech/gnome-speech.h>
+ #include <eci.h>
+ #include "viavoicespeaker.h"

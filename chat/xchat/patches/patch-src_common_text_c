@@ -1,0 +1,14 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- src/common/text.c~	2010-05-30 02:14:41.000000000 +0000
++++ src/common/text.c
+@@ -28,7 +28,6 @@
+ #include <sys/mman.h>
+ 
+ #include "xchat.h"
+-#include <glib/ghash.h>
+ #include "cfgfiles.h"
+ #include "chanopt.h"
+ #include "plugin.h"

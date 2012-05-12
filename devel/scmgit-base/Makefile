@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2012/04/08 05:31:07 dholland Exp $
+# $NetBSD: Makefile,v 1.45 2012/05/02 19:51:21 gdt Exp $
 
 .include "../../devel/scmgit/Makefile.common"
 
@@ -87,6 +87,11 @@ SUBST_SED.fix-cd-P=	-e "s/cd -P/cd/g"
 .endif
 
 LDFLAGS.SunOS+=		-lintl -lnsl
+
+post-install:
+	${INSTALL_DATA_DIR} ${DESTDIR:Q}${EGDIR:Q}
+	${INSTALL_DATA} ${WRKSRC:Q}/contrib/completion/git-completion.bash \
+		${DESTDIR:Q}${EGDIR:Q}
 
 .include "options.mk"
 

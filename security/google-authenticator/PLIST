@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/google-authenticator
+lib/security/pam_google_authenticator.so
+share/doc/google-authenticator/README

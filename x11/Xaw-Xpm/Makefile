@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.27 2008/06/12 02:14:56 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2009/07/22 09:01:51 wiz Exp $
 #
 
 DISTNAME=		Xaw-XPM-1.1
 PKGNAME=		Xaw-Xpm-1.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=libs/X/}
 
@@ -30,7 +30,6 @@ post-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

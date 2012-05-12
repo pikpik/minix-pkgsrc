@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.98 2012/02/18 23:04:44 tron Exp $
+# $NetBSD: Makefile,v 1.100 2012/05/06 09:01:10 tron Exp $
 
 DISTNAME=	phpMyAdmin-${DIST_VERSION}-all-languages
 PKGNAME=	phpmyadmin-${DIST_VERSION:S/-//}
 CATEGORIES=	databases www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=phpmyadmin/}
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.tar.xz
 
 OWNER=		tron@NetBSD.org
 HOMEPAGE=	http://www.phpmyadmin.net/
@@ -26,13 +26,11 @@ FILES_SUBST+=	CONF_INC_PHP=${CONF_INC_PHP:Q} PMCONFFILE=${PMCONFFILE:Q}
 PLIST_SUBST+=	DIST_VERSION=${DIST_VERSION:Q}
 MESSAGE_SUBST+=	CONF_INC_PHP=${CONF_INC_PHP} PMCONFFILE=${PMCONFFILE:Q} \
 		EXDIR=${EXDIR:Q}
-USE_TOOLS+=	perl:run
 
 CONF_INC_PHP=	${PREFIX}/share/phpmyadmin/config.inc.php
-DIST_VERSION=	3.4.11
-DOC_FILES=	CREDITS ChangeLog \
-		Documentation.txt INSTALL LICENSE README \
-		RELEASE-DATE-${DIST_VERSION} TODO
+DIST_VERSION=	3.5.1
+DOC_FILES=	ChangeLog Documentation.txt LICENSE README \
+		RELEASE-DATE-${DIST_VERSION}
 
 APACHE_USER?=	www
 APACHE_GROUP?=	www
@@ -46,7 +44,6 @@ PKG_GROUPS_VARS+=	APACHE_GROUP
 EXDIR=		${PREFIX}/share/examples/phpmyadmin
 PMCONFFILE=	${PKG_SYSCONFDIR}/config.inc.php
 PMDIR=		${PREFIX}/share/phpmyadmin
-REPLACE_PERL+=	scripts/convertcfg.pl
 
 PKG_SYSCONFSUBDIR?=	phpmyadmin
 
@@ -57,7 +54,21 @@ INSTALLATION_DIRS+=	${PREFIX}/share/doc/phpmyadmin \
 			${PMDIR} ${PMDIR}/scripts
 
 INSTALL_DIRS=	js
+INSTALL_DIRS+=	js/canvg
+INSTALL_DIRS+=	js/codemirror
+INSTALL_DIRS+=	js/codemirror/lib
+INSTALL_DIRS+=	js/codemirror/mode
+INSTALL_DIRS+=	js/codemirror/mode/mysql
+INSTALL_DIRS+=	js/highcharts
+INSTALL_DIRS+=	js/jquery
+INSTALL_DIRS+=	js/openlayers
+INSTALL_DIRS+=	js/openlayers/img
+INSTALL_DIRS+=	js/openlayers/theme
+INSTALL_DIRS+=	js/openlayers/theme/default
+INSTALL_DIRS+=	js/openlayers/theme/default/img
+INSTALL_DIRS+=	js/pmd
 INSTALL_DIRS+=	js/query
+INSTALL_DIRS+=	js/rte
 INSTALL_DIRS+=	libraries
 INSTALL_DIRS+=	libraries/PHPExcel
 INSTALL_DIRS+=	libraries/PHPExcel/PHPExcel
@@ -88,6 +99,7 @@ INSTALL_DIRS+=	libraries/PHPExcel/PHPExcel/Writer
 INSTALL_DIRS+=	libraries/PHPExcel/PHPExcel/Writer/Excel2007
 INSTALL_DIRS+=	libraries/auth
 INSTALL_DIRS+=	libraries/auth/swekey
+INSTALL_DIRS+=	libraries/bfShapeFiles
 INSTALL_DIRS+=	libraries/chart
 INSTALL_DIRS+=	libraries/chart/pChart
 INSTALL_DIRS+=	libraries/chart/pChart/fonts
@@ -98,6 +110,7 @@ INSTALL_DIRS+=	libraries/export
 INSTALL_DIRS+=	libraries/import
 INSTALL_DIRS+=	libraries/import/upload
 INSTALL_DIRS+=	libraries/php-gettext
+INSTALL_DIRS+=	libraries/rte
 INSTALL_DIRS+=	libraries/schema
 INSTALL_DIRS+=	libraries/tcpdf
 INSTALL_DIRS+=	libraries/tcpdf/cache
@@ -105,6 +118,7 @@ INSTALL_DIRS+=	libraries/tcpdf/config
 INSTALL_DIRS+=	libraries/tcpdf/config/lang
 INSTALL_DIRS+=	libraries/tcpdf/fonts
 INSTALL_DIRS+=	libraries/tcpdf/fonts/dejavu-fonts-ttf-2.32
+INSTALL_DIRS+=	libraries/tcpdf/fonts/dejavu-fonts-ttf-2.33
 INSTALL_DIRS+=	libraries/transformations
 INSTALL_DIRS+=	locale
 INSTALL_DIRS+=	locale/ar
@@ -183,6 +197,8 @@ INSTALL_DIRS+=	locale/sv
 INSTALL_DIRS+=	locale/sv/LC_MESSAGES
 INSTALL_DIRS+=	locale/tr
 INSTALL_DIRS+=	locale/tr/LC_MESSAGES
+INSTALL_DIRS+=	locale/uk
+INSTALL_DIRS+=	locale/uk/LC_MESSAGES
 INSTALL_DIRS+=	locale/uz
 INSTALL_DIRS+=	locale/uz/LC_MESSAGES
 INSTALL_DIRS+=	locale/uz@latin
@@ -191,21 +207,20 @@ INSTALL_DIRS+=	locale/zh_CN
 INSTALL_DIRS+=	locale/zh_CN/LC_MESSAGES
 INSTALL_DIRS+=	locale/zh_TW
 INSTALL_DIRS+=	locale/zh_TW/LC_MESSAGES
-INSTALL_DIRS+=	pmd
-INSTALL_DIRS+=	pmd/images
-INSTALL_DIRS+=	pmd/scripts
-INSTALL_DIRS+=	pmd/styles
-INSTALL_DIRS+=	pmd/styles/default
-INSTALL_DIRS+=	pmd/styles/default/images
+INSTALL_DIRS+=	scripts
+INSTALL_DIRS+=	setup/frames
+INSTALL_DIRS+=	setup/lib
 INSTALL_DIRS+=	themes
 INSTALL_DIRS+=	themes/original
 INSTALL_DIRS+=	themes/original/css
 INSTALL_DIRS+=	themes/original/img
+INSTALL_DIRS+=	themes/original/img/pmd
 INSTALL_DIRS+=	themes/original/jquery
 INSTALL_DIRS+=	themes/original/jquery/images
 INSTALL_DIRS+=	themes/pmahomme
 INSTALL_DIRS+=	themes/pmahomme/css
 INSTALL_DIRS+=	themes/pmahomme/img
+INSTALL_DIRS+=	themes/pmahomme/img/pmd
 INSTALL_DIRS+=	themes/pmahomme/jquery
 INSTALL_DIRS+=	themes/pmahomme/jquery/images
 
@@ -242,10 +257,6 @@ do-install:
 			esac;						\
 		done							\
 	done
-
-	${INSTALL_DATA} ${WRKSRC}/scripts/*.sql ${DESTDIR}${PMDIR}/scripts
-	${INSTALL_SCRIPT} ${WRKSRC}/scripts/convertcfg.pl \
-	  ${DESTDIR}${PMDIR}/scripts
 
 	cd ${WRKSRC} && \
 	${INSTALL_DATA} ${DOC_FILES} ${DESTDIR}${PREFIX}/share/doc/phpmyadmin

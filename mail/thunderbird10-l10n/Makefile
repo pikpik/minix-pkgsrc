@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/15 11:41:42 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/04/29 20:36:30 ryoon Exp $
 #
 
 TB_VER=		10.0.4
 PKGNAME=	thunderbird10-l10n-${TB_VER}
 DISTNAME=	# empty
 CATEGORIES=	mail
-MASTER_SITES=	${MASTER_SITE_MOZILLA:=thunderbird/releases/${TB_VER}esr/linux-i686/xpi/} \
-		${MASTER_SITE_MOZILLA_ALL:=thunderbird/releases/${TB_VER}esr/linux-i686/xpi/}
+MASTER_SITES=	${MASTER_SITE_MOZILLA_ESR:=thunderbird/releases/${TB_VER}esr/linux-i686/xpi/}
 
 MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://www.mozillamessaging.com/en-US/thunderbird/

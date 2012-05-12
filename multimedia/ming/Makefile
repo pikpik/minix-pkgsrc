@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2011/03/09 16:29:23 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2011/11/01 06:02:13 sbd Exp $
 #
 
 .include "Makefile.common"
 
-PKGREVISION=	4
 CATEGORIES=	multimedia
 
 MAINTAINER=	obache@NetBSD.org
@@ -27,7 +26,7 @@ PKGCONFIG_OVERRIDE+=	src/libming.pc.in
 
 .include "../../mk/bsd.prefs.mk"
 
-.if !defined(PKGSRC_RUN_TEST) && !empty(PKGSRC_RUN_TEST:M[Yy][Ee][Ss])
+.if defined(PKGSRC_RUN_TEST) && !empty(PKGSRC_RUN_TEST:M[Yy][Ee][Ss])
 # Test require perl
 USE_TOOLS+=	perl
 TEST_TARGET=	check

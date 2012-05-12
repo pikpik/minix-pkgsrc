@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/03/03 00:13:46 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/04/27 12:31:58 obache Exp $
 
 DISTNAME=	libdmapsharing-2.1.9
 PKGREVISION=	8
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 LICENSE=		gnu-lgpl-v2.1
 USE_LIBTOOL=		yes
-USE_TOOLS=		gmake pkg-config
+USE_TOOLS+=		gmake pkg-config
 
 PKGCONFIG_OVERRIDE=	libdmapsharing.pc.in
 

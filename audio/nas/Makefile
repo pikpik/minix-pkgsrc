@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.86 2011/10/10 10:29:58 wiz Exp $
+# $NetBSD: Makefile,v 1.87 2012/02/15 15:33:27 hans Exp $
 
 DISTNAME=	nas-1.9.1.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nas/}
 
@@ -90,6 +90,4 @@ pre-configure:
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

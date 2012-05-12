@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.12 2008/01/07 13:59:35 tron Exp $
+# $NetBSD: buildlink3.mk,v 1.13 2009/03/20 19:25:39 joerg Exp $
 
 .include "../../mk/bsd.fast.prefs.mk"
 
@@ -8,7 +8,7 @@ BUILDLINK_TREE+=	Xcomposite
 XCOMPOSITE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.Xcomposite+=		Xcomposite>=1.0.1
-BUILDLINK_ABI_DEPENDS.Xcomposite?=	Xcomposite>=1.0.1nb2
+BUILDLINK_ABI_DEPENDS.Xcomposite+=	Xcomposite>=1.0.1nb2
 BUILDLINK_PKGSRCDIR.Xcomposite?=	../../x11/Xcomposite
 
 .include "../../x11/libXfixes/buildlink3.mk"

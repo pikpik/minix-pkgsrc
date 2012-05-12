@@ -1,0 +1,14 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- src/mw_srvc_dir.h~	2005-12-15 00:30:28.000000000 +0000
++++ src/mw_srvc_dir.h
+@@ -22,7 +22,6 @@
+ 
+ 
+ #include <glib.h>
+-#include <glib/glist.h>
+ 
+ 
+ #ifdef __cplusplus

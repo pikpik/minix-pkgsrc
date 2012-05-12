@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2011/10/06 15:50:37 dholland Exp $
+# $NetBSD: Makefile,v 1.15 2012/04/16 04:19:16 dholland Exp $
 
 DISTNAME=	xmx-2.1alpha.pl7
 PKGNAME=	xmx-2.1a7
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.cs.brown.edu/pub/xmx/
 
@@ -25,6 +25,4 @@ USE_IMAKE=	yes
 .include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

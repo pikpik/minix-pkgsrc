@@ -1,4 +1,4 @@
-# $NetBSD$ 
+# $NetBSD$
 
 .include "../../mk/bsd.prefs.mk"
 

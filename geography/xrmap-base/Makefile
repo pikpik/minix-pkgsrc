@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2010/02/01 02:31:28 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2011/11/26 04:39:59 sbd Exp $
 #
 
 DISTNAME=		xrmap-2.29
 PKGNAME=		xrmap-base-2.29
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		geography
 MASTER_SITES=		ftp://ftp.ac-grenoble.fr/ge/geosciences/xrmap/
 EXTRACT_SUFX=		.tar.bz2

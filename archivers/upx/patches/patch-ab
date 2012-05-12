@@ -1,10 +1,10 @@
 $NetBSD$
 
---- src/acc/acc_auto.h.orig	2007-08-05 16:57:56.000000000 +0000
-+++ src/acc/acc_auto.h
-@@ -61,7 +61,6 @@
- #define HAVE_ERRNO_H 1
+--- src/miniacc.h.orig	2012-05-02 06:06:11.000000000 +0000
++++ src/miniacc.h
+@@ -1944,7 +1944,6 @@ extern "C" {
  #define HAVE_FCNTL_H 1
+ #define HAVE_FLOAT_H 1
  #define HAVE_LIMITS_H 1
 -#define HAVE_MALLOC_H 1
  #define HAVE_MEMORY_H 1

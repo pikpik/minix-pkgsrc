@@ -1,0 +1,16 @@
+$NetBSD$
+
+Actually define all the targets used by the package's upper-level
+makefiles.
+
+--- support/cpp2/Makefile.in~	2007-06-01 16:31:56.000000000 +0000
++++ support/cpp2/Makefile.in
+@@ -114,6 +114,8 @@ OBSTACK=obstack.o
+ 
+ # End of variables for you to override.
+ 
++dep: ;
++
+ install: all
+ 	mkdir -p $(DESTDIR)$(bindir)
+ 	$(INSTALL) $(TARGET) `echo $(DESTDIR)$(bindir)/sdcpp$(EXEEXT)|sed '$(transform)'`

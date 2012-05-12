@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/lha
+include/liblhasa-1.0/lha_file_header.h
+include/liblhasa-1.0/lha_input_stream.h
+include/liblhasa-1.0/lha_reader.h
+lib/liblhasa.la
+man/man1/lha.1

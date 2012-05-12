@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ipc_chromium_src_base_sys__info__posix.cc,v 1.2 2011/11/27 13:09:00 tnn Exp $
+
+# Reported upstream: https://bugzilla.mozilla.org/show_bug.cgi?id=753046
 
 --- ipc/chromium/src/base/sys_info_posix.cc.orig	2011-11-04 21:34:00.000000000 +0000
 +++ ipc/chromium/src/base/sys_info_posix.cc

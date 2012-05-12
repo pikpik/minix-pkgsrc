@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:10:59 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2009/03/20 19:24:56 joerg Exp $
 
 BUILDLINK_TREE+=	fftw2
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	fftw2
 FFTW2_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.fftw2+=	fftw2>=2.1.3
-BUILDLINK_ABI_DEPENDS.fftw2?=	fftw2>=2.1.5nb2
+BUILDLINK_ABI_DEPENDS.fftw2+=	fftw2>=2.1.5nb2
 BUILDLINK_PKGSRCDIR.fftw2?=	../../math/fftw2
 .endif # FFTW2_BUILDLINK3_MK
 

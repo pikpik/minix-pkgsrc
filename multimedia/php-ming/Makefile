@@ -1,19 +1,34 @@
-# $NetBSD: Makefile,v 1.12 2011/01/13 13:38:57 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/05/12 08:58:43 obache Exp $
 
+.include "../../multimedia/ming/Makefile.common"
+PECL_VERSION=		${MING_VERSION}
 MODNAME=		ming
-PKGREVISION=		2
 CATEGORIES+=		multimedia
+DIST_SUBDIR?=		#empty
 
 MAINTAINER=		obache@NetBSD.org
+HOMEPAGE=		http://www.libming.org/
 COMMENT=		PHP extension for Ming library
+LICENSE=		php
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-ming-[0-9]*
 
-PHP_VERSIONS_ACCEPTED=	52
-
 CONFIGURE_ARGS+=	--with-${MODNAME}=${BUILDLINK_PREFIX.ming}
+PHPSETUPSUBDIR=		php_ext
+MODULESDIR=		${WRKSRC}/${PHPSETUPSUBDIR}/modules
+CONFIGURE_DIRS=		${PHPSETUPSUBDIR}
+
+# missing in 0.4.4 release tarball.
+post-extract:
+		${CP} ${FILESDIR}/config.m4 ${WRKSRC}/${PHPSETUPSUBDIR}
+
+# to avoid downgrade version
+.include "../../lang/php/phpversion.mk"
+.if ${PKG_PHP_VERSION} == "5" || ${PKG_PHP_VERSION} == "52"
+PECL_LEGACY_VERSION_SCHEME=	yes
+.endif
 
 .include "../../lang/php/ext.mk"
 .include "../../multimedia/ming/buildlink3.mk"

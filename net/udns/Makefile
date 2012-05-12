@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2011/01/28 08:29:34 adam Exp $
+# $NetBSD: Makefile,v 1.3 2011/01/28 09:09:40 adam Exp $
 
-DISTNAME=	udns-0.1
+DISTNAME=	udns-0.2
 CATEGORIES=	net
 MASTER_SITES=	http://www.corpit.ru/mjt/udns/
 

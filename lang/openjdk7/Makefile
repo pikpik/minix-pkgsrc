@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2012/02/06 12:40:46 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/05/04 16:25:59 joerg Exp $
 
 DISTNAME=	openjdk-7-fcs-src-b147-27_jun_2011
 PKGNAME=	openjdk7-1.7.0.147.20110811
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL:=openjdk7/}
 EXTRACT_SUFX=	.tar.bz2
@@ -65,6 +65,10 @@ MAKE_ENV+=	SKIP_COMPARE_IMAGES=true
 MAKE_ENV+=	SKIP_FASTDEBUG_BUILD=yes
 MAKE_ENV+=	SKIP_DEBUG_BUILD=yes
 
+# Avoid build errors when JAVA_HOME and CLASSPATH are defined by user.
+MAKE_ENV+=	JAVA_HOME=
+MAKE_ENV+=	CLASSPATH=
+
 MAKE_ENV+=	EXTRA_CFLAGS="-DDEFAULT_LIBPATH=\\\"${PREFIX}/lib/jni:${PREFIX}/lib:/lib:/usr/lib\\\""
 
 BUILDDIR=	${WRKSRC}/build/${OPSYS:C/.*BSD/bsd/:S/DragonFly/bsd/}-${MACHINE_ARCH:S/i386/i586/:S/x86_64/amd64/}
@@ -76,11 +80,11 @@ PLIST_SUBST+=	LOWER_OPSYS=${LOWER_OPSYS}
 .if !empty(PKGSRC_COMPILER:Mclang)
 _WRAP_EXTRA_ARGS.CXX+=	-Wno-parentheses -Wno-sign-conversion \
 			-Wno-shorten-64-to-32 -Wno-conversion \
-			-Wno-unused-value -Wno-switch-enum \
+			-Wno-unused-value -Wno-switch-enum -Wno-switch \
 			-Wno-tautological-compare \
 			-Wno-delete-non-virtual-dtor \
 			-Wno-return-type -Wno-unused-parameter \
-			-Wno-parentheses-equality
+			-Wno-parentheses-equality -Wno-empty-body
 .endif
 .include "bootstrap.mk"
 .include "icedtea-extras.mk"

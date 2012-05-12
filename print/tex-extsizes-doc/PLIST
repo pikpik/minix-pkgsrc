@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/extsizes/README
+share/texmf-dist/doc/latex/extsizes/extsizes.pdf
+share/texmf-dist/doc/latex/extsizes/extsizes.tex
+share/texmf-dist/doc/latex/extsizes/readme.extsizes

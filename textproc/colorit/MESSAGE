@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+How to use example files:
+- cp -Rp ${PREFIX}/share/examples/colorit/.colorit.d ~
+- cp ${PREFIX}/share/examples/colorit/colorit_* ~
+- echo '. ~/colorit_aliases' >> ~/.shrc
+
+===========================================================================

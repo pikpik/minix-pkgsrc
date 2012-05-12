@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2005/06/26 13:11:22 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2010/03/15 02:39:36 schmonz Exp $
 #
 
 DISTNAME=	dlcompat-20030629
@@ -14,5 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 ONLY_FOR_PLATFORM=	Darwin-[56].*-*
 
 GNU_CONFIGURE=		yes
+
+CONFLICTS=		man-pages-[0-9]*
 
 .include "../../mk/bsd.pkg.mk"

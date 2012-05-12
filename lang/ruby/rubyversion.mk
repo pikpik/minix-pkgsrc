@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.78 2012/04/22 08:17:16 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.79 2012/04/22 08:23:00 taca Exp $
 #
 
 # This file determines which Ruby version is used as a dependency for
@@ -220,7 +220,8 @@ RUBY_VER?=		${RUBY_VERSION_DEFAULT}
 
 # If package support only one version, use it.
 .if ${RUBY_VERSION_SUPPORTED:[\#]} == 1
-RUBY_VER=	${RUBY_VERSION_SUPPORTED}
+RUBY_VER=		${RUBY_VERSION_SUPPORTED}
+RUBY_VERSION_DEFAULT=	${RUBY_VERSION_SUPPORTED}
 .endif
 
 .if defined(RUBY_VERSION_REQD)

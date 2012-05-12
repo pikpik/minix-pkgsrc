@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/04/30 14:22:36 drochner Exp $
+# $NetBSD: Makefile,v 1.41 2012/05/01 05:35:04 obache Exp $
 
 DISTNAME=	libsoup-2.38.1
 PKGNAME=	${DISTNAME:S/libsoup/libsoup24/}
@@ -32,7 +32,7 @@ CONFIGURE_ARGS+= 	--disable-more-warnings
 .endif
 
 .include "../../databases/sqlite3/buildlink3.mk"
-BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.30.0
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.31.7
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../www/libproxy/buildlink3.mk"

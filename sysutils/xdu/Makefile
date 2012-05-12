@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2008/06/20 01:09:37 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2008/11/10 17:21:38 wiz Exp $
 #
 
 DISTNAME=	xdu-3.0
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	sysutils x11
 MASTER_SITES=	http://sd.wareonearth.com/~phil/xdu/
 PATCH_SITES=	http://www.nn.iij4u.or.jp/~tutimura/xdu/
@@ -23,6 +23,5 @@ PATCH_DIST_STRIP.xdu-3.0.dirname.patch	= -p1
 PATCH_DIST_STRIP.xdu-3.0.i18n.patch	= -p1
 
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

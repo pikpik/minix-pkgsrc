@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.52 2012/01/11 12:06:51 ryoon Exp $
+# $NetBSD: Makefile,v 1.53 2012/01/13 16:53:28 ryoon Exp $
 
 DISTNAME=	kterm-6.2.0
-PKGREVISION=	19
+PKGREVISION=	20
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 
@@ -32,5 +32,4 @@ post-patch:
 .endif
 
 .include "../../mk/xaw.buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

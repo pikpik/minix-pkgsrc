@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- src/npplayer.cpp~	2012-01-29 11:24:40.000000000 +0000
++++ src/npplayer.cpp
+@@ -32,7 +32,7 @@ extern "C" {
+ #include <fcntl.h>
+ 
+ #include <glib/gprintf.h>
+-#include <glib/gthread.h>
++#include <glib.h>
+ #include <gdk/gdkx.h>
+ #include <gtk/gtk.h>
+ 

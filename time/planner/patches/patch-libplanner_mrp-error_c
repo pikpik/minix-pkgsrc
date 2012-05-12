@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- libplanner/mrp-error.c~	2008-07-22 13:41:46.000000000 +0000
++++ libplanner/mrp-error.c
+@@ -21,7 +21,7 @@
+  */
+ 
+ #include <config.h>
+-#include <glib/gerror.h>
++#include <glib.h>
+ #include "mrp-error.h"
+ 
+ GQuark

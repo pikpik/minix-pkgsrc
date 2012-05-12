@@ -1,4 +1,4 @@
-# $NetBSD: ext.mk,v 1.24 2012/01/12 18:25:50 joerg Exp $
+# $NetBSD: ext.mk,v 1.26 2012/05/12 08:23:34 obache Exp $
 #
 # PHP extension package framework, for both PECL and bundled PHP extensions.
 #
@@ -24,6 +24,7 @@ HOMEPAGE?=		http://pecl.php.net/package/${MODNAME}
 .include "${PHPPKGSRCDIR}/Makefile.common"
 
 PKGMODNAME?=		${MODNAME:S/-/_/}
+PHPSETUPSUBDIR?=	#empty
 MODULESDIR?=		${WRKSRC}/modules
 PLIST_SUBST+=		MODNAME=${PKGMODNAME}
 
@@ -37,8 +38,9 @@ DISTINFO_FILE=		${.CURDIR}/${PHPPKGSRCDIR}/distinfo
 # PECL extension
 # WARINING: following fixed version number for 5.2 and 5.3 must not be bumped!
 .if defined(PECL_LEGACY_VERSION_SCHEME) && \
-	(${PKG_PHP_VERSION} == "5" || ${PKG_PHP_VERSION} == "53")
-. if ${PKG_PHP_VERSION} == "5"
+	(${PKG_PHP_VERSION} == "5" || ${PKG_PHP_VERSION} == "52" \
+		|| ${PKG_PHP_VERSION} == "53")
+. if ${PKG_PHP_VERSION} == "5" || ${PKG_PHP_VERSION} == "52"
 PKGNAME?=		${PHP_PKG_PREFIX}-${MODNAME}-5.2.17.${PECL_VERSION}
 . elif ${PKG_PHP_VERSION} == "53"
 PKGNAME?=		${PHP_PKG_PREFIX}-${MODNAME}-5.3.9.${PECL_VERSION}
@@ -49,7 +51,7 @@ PKGNAME?=		${PHP_PKG_PREFIX}-${MODNAME}-${PECL_VERSION}
 MASTER_SITES?=		http://pecl.php.net/get/
 PECL_DISTNAME?=		${MODNAME}-${PECL_VERSION}
 DISTNAME=		${PECL_DISTNAME}
-DIST_SUBDIR=		php-${MODNAME}
+DIST_SUBDIR?=		php-${MODNAME}
 EXTRACT_SUFX?=		.tgz
 .endif
 
@@ -89,7 +91,7 @@ pre-configure:	phpize-module
 phpize-module:
 	@cookie=${WRKDIR}/.phpize_module_done;				\
 	if [ ! -f $${cookie} ]; then					\
-		cd ${WRKSRC} && 					\
+		cd ${WRKSRC}/${PHPSETUPSUBDIR} &&			\
 		${SETENV}						\
 			AUTOCONF=${TOOLS_DIR:Q}/bin/autoconf		\
 			AUTOHEADER=${TOOLS_DIR:Q}/bin/autoheader	\

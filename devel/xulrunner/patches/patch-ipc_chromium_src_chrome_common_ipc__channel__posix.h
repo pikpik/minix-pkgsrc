@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ipc_chromium_src_chrome_common_ipc__channel__posix.h,v 1.1 2011/07/11 12:46:14 tnn Exp $
+
+# Reported upstream: https://bugzilla.mozilla.org/show_bug.cgi?id=753046
 
 --- ipc/chromium/src/chrome/common/ipc_channel_posix.h.orig	2011-06-15 21:57:27.000000000 +0000
 +++ ipc/chromium/src/chrome/common/ipc_channel_posix.h
