@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2012/03/25 09:09:05 tron Exp $
+# $NetBSD: Makefile,v 1.47 2012/04/14 10:47:17 obache Exp $
 
 .include "dist.mk"
 
@@ -97,9 +97,9 @@ PLIST.dl=	yes
 
 # builds additional modules if OpenSSL < 0.9.8
 PLIST_VARS+=		openssl097
-CHECK_BUILTIN.openssl:=	no
-.include "../../security/openssl/builtin.mk"
 CHECK_BUILTIN.openssl:=	yes
+.include "../../security/openssl/builtin.mk"
+CHECK_BUILTIN.openssl:=	no
 .if !empty(USE_BUILTIN.openssl:M[yY][eE][sS]) && \
     !empty(BUILTIN_PKG.openssl:Mopenssl-0.9.[67]*)
 PLIST.openssl097=	yes

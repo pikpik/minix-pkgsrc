@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1512 2012/05/12 17:54:30 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.1522 2012/05/13 14:22:07 obache Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -2364,6 +2364,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated security/ruby-simple_oauth to 0.1.8 [obache 2012-05-10]
 	Updated mail/dovecot2 to 2.1.6 [ghen 2012-05-10]
 	Updated net/tacacs-shrubbery to 4.0.4.25 [schwarz 2012-05-10]
+	Updated editors/uemacs to 4.0nb2 [dholland 2012-05-10]
 	Updated mail/thunderbird to 12.0.1 [ryoon 2012-05-11]
 	Updated www/opera to 11.64 [obache 2012-05-11]
 	Updated misc/php-orangehrm to 2.7 [ryoon 2012-05-11]
@@ -2388,3 +2389,15 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated x11/pixman to 0.24.4 [wiz 2012-05-12]
 	Added security/ocaml-cryptokit version 1.5 [wiz 2012-05-12]
 	Updated www/p5-HTML-Template to 2.9.1 [wiz 2012-05-12]
+	Updated net/netatalk to 2.2.1nb5 [dholland 2012-05-12]
+	Updated lang/gauche to 0.9.3.2 [enami 2012-05-13]
+	Added www/gwt version 2.4.0 [ryoon 2012-05-13]
+	Added sysutils/conky version 1.9.0 [imil 2012-05-13]
+	Updated misc/libreoffice3-bin to 3.5.3 [ryoon 2012-05-13]
+	Updated databases/mysql51-client to 5.1.63 [taca 2012-05-13]
+	Updated databases/mysql51-server to 5.1.63 [taca 2012-05-13]
+	Updated databases/mysql55-client to 5.5.24 [taca 2012-05-13]
+	Updated databases/mysql55-server to 5.5.24 [taca 2012-05-13]
+	Updated pkgtools/pkg_chk to 2.0.1 [abs 2012-05-13]
+	Updated net/mikutter to 0.1.1.790 [obache 2012-05-13]
+	Updated lang/php5 to 5.2.17nb5 [taca 2012-05-13]
