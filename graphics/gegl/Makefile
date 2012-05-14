@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/05/07 08:35:57 adam Exp $
+# $NetBSD: Makefile,v 1.30 2012/05/14 07:52:32 sbd Exp $
 
 DISTNAME=	gegl-0.2.0
 CATEGORIES=	graphics
@@ -14,7 +14,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
-USE_TOOLS+=		gmake perl:build pkg-config intltool
+USE_TOOLS+=		gmake pkg-config intltool msgfmt
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-docs
 CONFIGURE_ENV+=		ac_cv_path_ASCIIDOC=no

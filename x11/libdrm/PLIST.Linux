@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/libkms/libkms.h
+lib/libkms.la
+lib/pkgconfig/libkms.pc

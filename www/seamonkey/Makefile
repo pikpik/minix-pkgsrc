@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2012/03/19 20:28:11 ryoon Exp $
+# $NetBSD: Makefile,v 1.70 2012/05/14 01:13:07 dholland Exp $
 #
 
 DISTNAME=	# empty
@@ -17,6 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=		${WRKDIR}/comm-release
 MOZILLA_DIR=	mozilla/
 PLIST_SRC+=	${PLIST_SRC_DFLT}
+USE_LANGUAGES+=	c c++
 
 CONFIG_GUESS_OVERRIDE+=	ldap/sdks/c-sdk/config/autoconf/config.guess
 CONFIG_SUB_OVERRIDE+=	ldap/sdks/c-sdk/config/autoconf/config.sub
@@ -47,6 +48,8 @@ do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} -j${MAKE_JOBS:U1}
 
 post-install:
+	${TOUCH} ${TOUCH_FLAGS} \
+		${DESTDIR}${PREFIX}/include/seamonkey/mozilla/throw_gcc.h
 	@${STEP_MSG} "Installing bundled seamonkey extensions."
 	rm -rf ${WRKDIR}/extensions
 	${MKDIR} ${WRKDIR}/extensions
