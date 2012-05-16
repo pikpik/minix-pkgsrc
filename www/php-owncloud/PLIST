@@ -1,4 +1,5 @@
 @comment $NetBSD$
+share/owncloud/.htaccess
 share/owncloud/3rdparty/Console/Getopt.php
 share/owncloud/3rdparty/Crypt_Blowfish/Blowfish.php
 share/owncloud/3rdparty/Crypt_Blowfish/Blowfish/DefaultKey.php
