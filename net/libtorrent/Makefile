@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.42 2011/11/07 13:10:31 hans Exp $
+# $NetBSD: Makefile,v 1.43 2012/01/11 22:41:46 tron Exp $
 
-DISTNAME=	libtorrent-0.12.9
+DISTNAME=	libtorrent-0.13.2
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE:=downloads/}
 

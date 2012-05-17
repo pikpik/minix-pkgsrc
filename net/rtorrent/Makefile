@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.48 2012/03/06 18:24:15 elric Exp $
+# $NetBSD: Makefile,v 1.49 2012/03/07 00:19:08 elric Exp $
 
-DISTNAME=	rtorrent-0.8.9
-PKGREVISION=	2
+DISTNAME=	rtorrent-0.9.2
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE:=downloads/}
 
@@ -32,10 +31,6 @@ GCC_REQD+=		4.2.1
 LDFLAGS+=	${PTHREAD_LDFLAGS}
 
 .include "options.mk"
-
-.if !empty(OPSYS:M*BSD) || ${OPSYS} == "Darwin" || ${OPSYS} == "DragonFly"
-MESSAGE_SRC=	${PKGDIR}/MESSAGE.BSD
-.endif
 
 # See http://libtorrent.rakshasa.no/ticket/77
 .include "../../mk/compiler.mk"

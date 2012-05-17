@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/10/29 20:21:43 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2011/07/05 01:39:10 dholland Exp $
 #
 
 DISTNAME=	powermanga-0.90
@@ -17,6 +17,7 @@ GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 MAKE_ENV+=		TOUCH=${TOUCH:Q} WRKSRC=${WRKSRC:Q}
+LDFLAGS.DragonFly=	-lm
 
 .include "../../mk/bsd.prefs.mk"
 

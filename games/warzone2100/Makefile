@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/01/14 02:09:36 hans Exp $
+# $NetBSD: Makefile,v 1.15 2012/01/14 03:28:32 hans Exp $
 #
 
 DISTNAME=	warzone2100-2.2.2
@@ -20,6 +20,8 @@ USE_TOOLS+=	pkg-config bison msgfmt intltool gmake gawk flex unzip zip
 FLEX_REQD=	2.5.35
 
 CONFIGURE_ARGS+=	--with-distributor=pkgsrc
+
+LDFLAGS.DragonFly=	-lX11 -lintl
 
 post-build:
 	cd ${WRKSRC}/po && ${SETENV} ${MAKE_ENV} ${MAKE} update-gmo

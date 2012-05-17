@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/11/01 06:01:15 sbd Exp $
+# $NetBSD: Makefile,v 1.24 2012/01/28 11:00:54 wiz Exp $
 #
 
 DISTNAME=	fillets-ng-0.7.3
@@ -16,6 +16,8 @@ DEPENDS+=	fillets-ng-data-0.7.1{,nb*}:../../games/fillets-ng-data
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
+
+LDFLAGS.DragonFly=	-lX11
 
 SUBST_CLASSES+=		man
 SUBST_STAGE.man=	post-patch
