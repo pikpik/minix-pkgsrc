@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/03 01:50:27 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2009/05/19 08:59:05 wiz Exp $
 #
 
 DISTNAME=	simian_man_12_98
@@ -17,6 +17,9 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
+
+# http://leaf.dragonflybsd.org/mailarchive/users/2012-05/msg00066.html
+NOT_FOR_PLATFORM+=	DragonFly-*-*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
