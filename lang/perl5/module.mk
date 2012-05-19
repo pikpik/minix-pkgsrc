@@ -1,4 +1,4 @@
-# $NetBSD: module.mk,v 1.64 2011/08/05 18:06:14 adam Exp $
+# $NetBSD: module.mk,v 1.65 2011/08/15 04:48:36 obache Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # and install perl5 modules.
@@ -26,9 +26,9 @@
 # PERL5_LDFLAGS		extra linker flags to pass on to the build
 #			process.
 #
-# PERL5_MODULE_TYPE	"MakeMaker", "Module::Build" or "Module::Install"
-#			depending on which framework is used to build/install
-#			the module.
+# PERL5_MODULE_TYPE	"MakeMaker", "Module::Build", "Module::Install"
+#			or "Module::Install::Bundled" depending on which
+#			framework is used to build/install the module.
 
 .include "../../lang/perl5/license.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2012/02/06 12:39:53 wiz Exp $
+# $NetBSD: Makefile,v 1.77 2012/03/03 00:12:32 wiz Exp $
 #
 
 DISTNAME=		libglade-2.6.4
@@ -30,7 +30,7 @@ BUILDLINK_API_DEPENDS.atk+=		atk>=1.9.0
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.6.0
 BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.6.0
 
-OWN_DIRS+=	lib/libglade/2.0
+INSTALLATION_DIRS+=	lib/libglade/2.0
 
 .include "../../devel/atk/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
