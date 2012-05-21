@@ -1,4 +1,4 @@
-# $NetBSD: tools.SunOS.mk,v 1.36 2011/12/14 03:17:25 joerg Exp $
+# $NetBSD: tools.SunOS.mk,v 1.37 2012/01/14 02:11:00 hans Exp $
 #
 # System-supplied tools for the Solaris operating system.
 #
@@ -156,7 +156,7 @@ TOOLS_PLATFORM.openssl?=	/usr/bin/openssl
 # Don't use GNU patch
 #TOOLS_PLATFORM.gpatch?=		/usr/bin/gpatch
 #TOOLS_PLATFORM.patch?=		/usr/bin/gpatch
-
+TOOLS_PLATFORM.pax?=		/bin/pax
 #.if exists(/usr/bin/perl)
 #TOOLS_PLATFORM.perl?=		/usr/bin/perl
 #TOOLS_PLATFORM.pod2man?=	/usr/perl5/bin/pod2man

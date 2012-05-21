@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1557 2012/05/20 13:38:28 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.1560 2012/05/21 12:23:26 taca Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -2449,3 +2449,6 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated games/onscripter to 20120520 [tsutsui 2012-05-20]
 	Updated audio/libaudiofile to 0.3.4 [wiz 2012-05-20]
 	Updated mail/getmail to 4.27.0 [schmonz 2012-05-20]
+	Updated sysutils/netbt-hcidump to 2.4 [plunky 2012-05-21]
+	Updated textproc/libxml2 to 2.7.8nb10 [taca 2012-05-21]
+	Updated mail/postfix to 2.8.11 [taca 2012-05-21]

@@ -1,7 +1,8 @@
 @comment $NetBSD$
+lib/aspell/castellano.alias
 lib/aspell/es.multi
 lib/aspell/es.rws
-lib/aspell/español.alias
-lib/aspell/esponol.alias
+lib/aspell/espanol.alias
 lib/aspell/spanish.alias
 share/aspell/es.dat
+share/aspell/es_affix.dat

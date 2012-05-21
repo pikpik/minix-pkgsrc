@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/yaws/priv/lib/yaws_sendfile_drv.so
