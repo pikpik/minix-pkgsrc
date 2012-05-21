@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/02/06 12:39:44 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/03/03 00:12:52 wiz Exp $
 #
 
 DISTNAME=	gtkdbfeditor-1.0.4
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		pkg-config msgfmt
 
 .include "../../devel/libglade/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

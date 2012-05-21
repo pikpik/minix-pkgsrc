@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/05/19 09:10:55 asau Exp $
+# $NetBSD: Makefile,v 1.14 2012/05/19 16:31:29 marino Exp $
 
 DISTNAME=		gprolog-1.3.1
 CATEGORIES=		lang
@@ -18,6 +18,7 @@ CONFIGURE_ARGS+=	--with-install-dir=${PREFIX}/lib/${PKGNAME_NOREV} \
 			--with-examples-dir=${PREFIX}/share/examples/gprolog \
 			--with-c-flags=${CFLAGS:Q}
 
+# Apparently build failures hang forever if multiple MAKE_JOBS are in use.
 MAKE_JOBS_SAFE= 	no
 
 .include "../../mk/bsd.pkg.mk"
