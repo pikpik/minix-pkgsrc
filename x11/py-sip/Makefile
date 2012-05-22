@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/01/17 19:02:01 drochner Exp $
+# $NetBSD: Makefile,v 1.29 2012/02/17 18:36:45 drochner Exp $
 
 DISTNAME=	sip-4.13.2
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -59,6 +59,9 @@ SUBST_SED.pyversfx=	-e "s|@PYVERSSUFFIX@|${PYVERSSUFFIX}|g"
 do-configure:
 	(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		${PYTHONBIN} configure.py ${CONFIGURE_ARGS})
+
+post-install:
+	${PY_COMPILE_ALL} ${DESTDIR}${PREFIX}/${PYSITELIB}/sipconfig.py
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
