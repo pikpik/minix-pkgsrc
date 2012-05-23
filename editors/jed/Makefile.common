@@ -1,5 +1,10 @@
-# $NetBSD: Makefile.common,v 1.9 2011/03/11 11:27:13 zafer Exp $
+# $NetBSD: Makefile.common,v 1.11 2012/05/23 04:47:13 dholland Exp $
 #
+
+# used by:
+#   editors/jed/Makefile
+#   editors/xjed/Makefile
+
 DISTNAME=		jed-0.99-16
 CATEGORIES=		editors
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/jed/v0.99/ \
@@ -28,3 +33,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/lib/jed.conf ${DESTDIR}${EGDIR}
 
 .include "../../devel/libslang/buildlink3.mk"
+.include "../../mk/termcap.buildlink3.mk"

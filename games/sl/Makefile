@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/01/07 09:13:54 rillig Exp $
+# $NetBSD: Makefile,v 1.16 2012/05/23 06:26:59 dholland Exp $
 #
 
 DISTNAME=	sl
@@ -30,4 +30,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/sl.1.euc \
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/ja_JP.EUC/man1/sl.1
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2010/04/15 09:07:37 tron Exp $
+# $NetBSD: Makefile,v 1.47 2012/02/06 06:19:18 sbd Exp $
 
 DISTNAME=	mm2.7
 PKGNAME=	metamail-2.7
@@ -58,4 +58,5 @@ pre-configure:
 		${SED} -e s/putenv.o//g Makefile.pre-sed >Makefile;	\
 	fi
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

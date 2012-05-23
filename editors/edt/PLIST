@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/edt
+share/doc/edt/Readme.txt
+share/examples/edt/edt_keypad_cygwin_laptop.xml
+share/examples/edt/edt_keypad_linux_laptop.xml
+share/examples/edt/edt_keypad_linux_pc.xml
+share/examples/edt/edt_keypad_sun.xml

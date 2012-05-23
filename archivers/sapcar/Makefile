@@ -1,10 +1,12 @@
-# $NetBSD: Makefile,v 1.3 2009/10/11 15:33:41 sno Exp $
+# $NetBSD: Makefile,v 1.4 2010/02/11 15:16:18 joerg Exp $
 
 PKGNAME=		sapcar-7.00
 CATEGORIES=		archivers
 EXTRACT_SUFX=		# empty
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+NOT_FOR_PLATFORM+=	DragonFly-*-*
 
 .include "../../emulators/sap/Makefile.common"
 
