@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- glib/Makefile.am.orig	2012-05-01 00:06:39.000000000 +0000
++++ glib/Makefile.am
+@@ -82,7 +82,7 @@ EXTRA_DIST += 			\
+ 	gconstructor.h		\
+ 	$(MIRRORING_TAB_SOURCE)
+ 
+-CLEANFILES= libglib-gdb.py
++CLEANFILES += libglib-gdb.py
+ 
+ # These may be in the builddir too
+ BUILT_EXTRA_DIST = 		\

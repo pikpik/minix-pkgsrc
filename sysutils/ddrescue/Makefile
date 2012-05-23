@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2009/05/19 08:59:34 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2010/02/25 20:21:44 wiz Exp $
 
-DISTNAME=	ddrescue-1.11
+DISTNAME=	ddrescue-1.15
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_GNU:=ddrescue/}
 
@@ -13,6 +13,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		YES
 USE_LANGUAGES=		c++
+USE_TOOLS+=		gmake
 INFO_FILES=		YES
 
 CONFIGURE_ARGS+=	CC=${CC:Q} CXX=${CXX:Q} CPPFLAGS=${CPPFLAGS:Q}
