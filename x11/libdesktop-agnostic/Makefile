@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 # Needed for launchpad
 FETCH_USING=	curl
 
-USE_TOOLS+=	intltool pkg-config
+USE_TOOLS+=	intltool pkg-config msgfmt
 
 PKGCONFIG_OVERRIDE+=	data/desktop-agnostic.pc.in
 

@@ -18,7 +18,7 @@ CONFIGURE_ENV+=	GCONF_SCHEMA_FILE_DIR=${PREFIX}/share/gconf/schemas/
 MAKE_ENV+=	GCONF_SCHEMA_FILE_DIR=${PREFIX}/share/gconf/schemas/
 
 USE_LIBTOOL=	yes
-USE_TOOLS+=	gmake intltool pkg-config
+USE_TOOLS+=	gmake intltool pkg-config msgfmt
 
 GCONF_SCHEMAS+=		gksu.schemas
 PKGCONFIG_OVERRIDE+=	libgksu/libgksu2.pc.in

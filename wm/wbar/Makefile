@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake gsed:build intltool pkg-config
+USE_TOOLS+=	gmake gsed:build intltool pkg-config msgfmt
 
 BUILDLINK_TRANSFORM+=	rm:-Werror
 PKG_SYSCONFSUBDIR=	wbar

@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		perl gmake pkg-config intltool
+USE_TOOLS+=		perl gmake pkg-config intltool msgfmt
 
 PLIST_SRC=		PLIST
 
