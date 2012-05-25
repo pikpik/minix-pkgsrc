@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- projects/sample/autoconf/config.sub.orig	2003-10-16 01:44:20.000000000 +0000
++++ projects/sample/autoconf/config.sub
+@@ -1114,6 +1114,7 @@ case $os in
+ 	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -solaris* | -sym* \
+ 	      | -amigaos* | -amigados* | -msdos* | -newsos* | -unicos* | -aof* \
+ 	      | -aos* \
++	      | -dragonfly* \
+ 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
+ 	      | -clix* | -riscos* | -uniplus* | -iris* | -rtu* | -xenix* \
+ 	      | -hiux* | -386bsd* | -netbsd* | -openbsd* | -freebsd* | -riscix* \
