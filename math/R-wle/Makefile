@@ -16,6 +16,7 @@ USE_LANGUAGES+=	c fortran
 
 DEPENDS+=	R-circular>=0.4.3:../../math/R-circular
 
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../math/R/Makefile.extension"
 .include "../../math/blas/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

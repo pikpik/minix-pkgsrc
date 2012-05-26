@@ -1,4 +1,4 @@
-# $NetBSD: tools.NetBSD.mk,v 1.44 2011/11/17 19:01:31 joerg Exp $
+# $NetBSD: tools.NetBSD.mk,v 1.45 2012/01/14 07:44:34 obache Exp $
 #
 # System-supplied tools for the NetBSD operating system.
 
@@ -53,7 +53,7 @@ TOOLS_PLATFORM.install?=	${TOOLDIR}/bin/${MACHINE_GNU_PLATFORM}-install
 .if exists(/usr/bin/install-info)
 TOOLS_PLATFORM.install-info?=	/usr/bin/install-info
 .endif
-.if exists(/sbin/ldconfig)
+.if exists(/sbin/ldconfig) && ${OBJECT_FMT} == "a.out"
 TOOLS_PLATFORM.ldconfig?=	/sbin/ldconfig
 .endif
 TOOLS_PLATFORM.ksh?=		/bin/ksh

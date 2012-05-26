@@ -13,7 +13,7 @@ PKG_DESTDIR_SUPPORT=    user-destdir
 DEPENDS+=	rdesktop>=1.6.0:../../net/rdesktop
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	intltool perl pkg-config gmake
+USE_TOOLS+=	intltool perl pkg-config gmake msgfmt
 
 .include "../../x11/libxkbfile/buildlink3.mk"
 

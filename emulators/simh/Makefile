@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2011/11/11 19:52:39 christos Exp $
+# $NetBSD: Makefile,v 1.35 2012/05/26 02:46:02 obache Exp $
 #
 
 DISTNAME=	simhv39-0
@@ -6,7 +6,6 @@ PKGNAME=	simh-3.9.0
 CATEGORIES=	emulators
 MASTER_SITES=	http://simh.trailing-edge.com/sources/
 EXTRACT_SUFX=	.zip
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://simh.trailing-edge.com/
@@ -29,6 +28,9 @@ BUILDLINK_TRANSFORM+=	rm:-O2
 INSTALLATION_DIRS=	bin share/simh share/doc/simh
 
 MAKE_FILE=		makefile
+MAKE_ENV+=		BUILDLINK_DIR=${BUILDLINK_DIR:Q}
+MAKE_ENV+=		GCC=${CC:Q}
+MAKE_ENV+=		OS_LDFLAGS=${LDFLAGS:Q} CFLAGS_O=${CFLAGS:Q}
 
 post-extract:
 	${MKDIR} ${WRKSRC}/BIN
@@ -45,4 +47,5 @@ do-install:
 	done)
 
 .include "../../net/libpcap/buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
