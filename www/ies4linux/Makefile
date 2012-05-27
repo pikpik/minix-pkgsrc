@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2012/01/14 03:16:57 hans Exp $
+# $NetBSD: Makefile,v 1.8 2012/05/27 16:11:20 marino Exp $
 #
 
 DISTNAME=	ies4linux-2.99.0.1
-PKGREVISION=	3
+PKGREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	http://www.tatanka.com.br/ies4linux/downloads/
 
@@ -23,9 +23,12 @@ USE_TOOLS+=	bash:run pax unzip:run
 SHAREDIR=		share/ies4linux
 
 SUBST_CLASSES+=		sharedir
-SUBST_STAGE.sharedir=	post-patch
+SUBST_STAGE.sharedir=	pre-configure
 SUBST_FILES.sharedir=	${WRKSRC}/ies4linux
 SUBST_SED.sharedir=	-e "s|.dirname ..0..|${PREFIX}/${SHAREDIR}|g"
+
+REPLACE_BASH=		${WRKSRC}/ies4linux \
+			${WRKSRC}/lib/install.sh ${WRKSRC}/lib/uninstall.sh
 
 INSTALLATION_DIRS	= bin ${SHAREDIR}
 
