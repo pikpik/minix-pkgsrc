@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.465 2012/03/08 09:50:26 wiz Exp $
+# $NetBSD: Makefile,v 1.466 2012/04/17 08:32:47 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -214,6 +214,7 @@ SUBDIR+=	libmpg123
 SUBDIR+=	libmtag
 SUBDIR+=	libmusepack
 SUBDIR+=	libmusicbrainz
+SUBDIR+=	libmusicbrainz5
 SUBDIR+=	libofa
 SUBDIR+=	libopenspc
 SUBDIR+=	libsamplerate

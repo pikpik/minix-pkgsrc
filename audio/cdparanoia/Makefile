@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/08/14 15:51:05 drochner Exp $
+# $NetBSD: Makefile,v 1.30 2009/09/10 19:14:46 wiz Exp $
 #
 
 DISTNAME=	cdparanoia-III-10.2
@@ -11,6 +11,7 @@ EXTRACT_SUFX=	.src.tgz
 MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://www.xiph.org/paranoia/
 COMMENT=	CDDA reading utility with extra data verification features
+LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 
 ONLY_FOR_PLATFORM=	FreeBSD-*-* NetBSD-*-* Linux-*-* DragonFly-*-* Darwin-*-*
 

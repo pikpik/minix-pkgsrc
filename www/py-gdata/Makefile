@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2012/01/27 06:30:21 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/04/08 19:09:16 wiz Exp $
 
-DISTNAME=	gdata-2.0.16
+DISTNAME=	gdata-2.0.17
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://gdata-python-client.googlecode.com/files/
 
