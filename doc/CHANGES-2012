@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1654 2012/05/29 23:11:30 cheusov Exp $
+$NetBSD: CHANGES-2012,v 1.1662 2012/05/30 11:06:40 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -2570,3 +2570,12 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated archivers/gtar-base to 1.26nb1 [cheusov 2012-05-29]
 	Updated devel/patch to 2.5.9nb1 [cheusov 2012-05-29]
 	Updated archivers/pax to 20080110nb1 [cheusov 2012-05-29]
+	Updated lang/gauche to 0.9.3.3 [enami 2012-05-30]
+	Updated security/gnutls to 2.12.19 [adam 2012-05-30]
+	Updated security/gsasl to 1.8.0 [adam 2012-05-30]
+	Updated databases/p5-DBIx-Connector to 0.52 [wiz 2012-05-30]
+	Updated devel/p5-Devel-GlobalDestruction to 0.05 [sno 2012-05-30]
+	Updated devel/p5-Log-Any-Adapter to 0.07 [sno 2012-05-30]
+	Added textproc/py-Unidecode version 0.04.9 [wiz 2012-05-30]
+	Added math/py-munkres version 1.0.5.4 [wiz 2012-05-30]
+	Updated mail/dovecot2 to 2.1.7 [ghen 2012-05-30]

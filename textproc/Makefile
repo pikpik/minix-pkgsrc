@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.621 2012/05/12 15:17:02 cheusov Exp $
+# $NetBSD: Makefile,v 1.622 2012/05/17 05:11:38 jnemeth Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -492,6 +492,7 @@ SUBDIR+=	py-Excelerator
 SUBDIR+=	py-FourSuite
 SUBDIR+=	py-HappyDoc
 SUBDIR+=	py-Tempita
+SUBDIR+=	py-Unidecode
 SUBDIR+=	py-Whoosh
 SUBDIR+=	py-X
 SUBDIR+=	py-cElementTree

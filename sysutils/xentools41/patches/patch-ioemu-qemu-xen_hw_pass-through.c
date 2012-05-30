@@ -1,7 +1,7 @@
-$NetBSD: patch-aa,v 1.2 2011/05/07 18:39:06 tnn Exp $
+$NetBSD: patch-ioemu-qemu-xen_hw_pass-through.c,v 1.1 2012/05/29 15:01:34 bouyer Exp $
 
---- /home/bouyer/pkgsrc/sysutils/xentools41/work/xen-4.1.2/tools/ioemu-qemu-xen/hw/pass-through.c.orig	2012-05-24 16:05:23.000000000 +0200
-+++ /home/bouyer/pkgsrc/sysutils/xentools41/work/xen-4.1.2/tools/ioemu-qemu-xen/hw/pass-through.c	2012-05-24 16:06:19.000000000 +0200
+--- ioemu-qemu-xen/hw/pass-through.c.orig	2012-05-24 16:05:23.000000000 +0200
++++ ioemu-qemu-xen/hw/pass-through.c	2012-05-24 16:06:19.000000000 +0200
 @@ -84,8 +84,6 @@
   */
  
