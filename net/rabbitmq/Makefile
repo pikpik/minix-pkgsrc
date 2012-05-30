@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/03/16 04:31:14 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/03/22 11:58:58 fhajny Exp $
 #
 
 PKGNAME=		rabbitmq-${RMQ_VERSION}
@@ -23,7 +23,7 @@ DEPENDS+=		${PYPKGPREFIX}-simplejson>=2:../../converters/py-simplejson
 .include "version.mk"
 .include "../../lang/python/pyversion.mk"
 
-BUILD_DEFS+=		VARBASE GNU_PROGRAM_PREFIX
+BUILD_DEFS+=		VARBASE
 
 .include		"../../mk/bsd.prefs.mk"
 
@@ -63,7 +63,7 @@ SUBST_SED.paths+=	-e 's|/var/lib|${VARBASE}/db|g'
 SUBST_SED.paths+=	-e 's|/var/log|${VARBASE}/log|g'
 SUBST_SED.paths+=	-e 's|@PREFIX@|${PREFIX}|g'
 SUBST_SED.paths+=	-e 's|erl|${PREFIX}/bin/erl|g'
-SUBST_SED.paths+=	-e 's|readlink|${PREFIX}/bin/${GNU_PROGRAM_PREFIX}readlink|g'
+SUBST_SED.paths+=	-e 's|readlink|${PREFIX}/bin/greadlink|g'
 
 REPLACE_BASH+=		${SCRIPTS_DIR}/rabbitmqctl
 REPLACE_BASH+=		${SCRIPTS_DIR}/rabbitmq-env
