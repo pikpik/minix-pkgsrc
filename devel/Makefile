@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1595 2012/05/17 05:00:27 jnemeth Exp $
+# $NetBSD: Makefile,v 1.1598 2012/05/30 15:29:13 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -405,6 +405,9 @@ SUBDIR+=	libtool-base
 SUBDIR+=	libtool-info
 SUBDIR+=	libts
 SUBDIR+=	libusb
+SUBDIR+=	libusb-compat
+SUBDIR+=	libusb1
+SUBDIR+=	libusbx
 SUBDIR+=	libuuid
 SUBDIR+=	libuxre
 SUBDIR+=	libview
