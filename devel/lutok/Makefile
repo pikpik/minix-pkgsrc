@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/01/29 20:59:59 jmmv Exp $
 #
 
-DISTNAME=	lutok-0.1
+DISTNAME=	lutok-0.2
 CATEGORIES=	devel
 MASTER_SITES=	http://lutok.googlecode.com/files/
 
