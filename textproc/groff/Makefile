@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.62 2012/02/29 13:34:24 hans Exp $
+# $NetBSD: Makefile,v 1.63 2012/03/31 20:17:13 hans Exp $
 #
 
 DISTNAME=	groff-1.20.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU:=groff/}
 
@@ -43,13 +43,6 @@ PLIST_SRC+=		${WRKDIR}/PLIST-local
 PLIST_SRC+=		PLIST
 
 .include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "SunOS"
-PLIST_SUBST+=	GNU_PREFIX="g"
-
-.else
-PLIST_SUBST+=	GNU_PREFIX=""
-.endif
 
 BUILD_DEFS+=	PAPERSIZE
 .if defined(PAPERSIZE)

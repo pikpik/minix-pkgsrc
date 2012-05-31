@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2011/08/09 07:30:08 adam Exp $
+# $NetBSD: Makefile,v 1.16 2011/10/18 01:03:06 obache Exp $
 
-DISTNAME=	Digest-CRC-0.17
+DISTNAME=	Digest-CRC-0.18
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5crc
 CATEGORIES=	security perl5
