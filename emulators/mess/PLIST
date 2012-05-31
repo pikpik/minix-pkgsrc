@@ -1,8 +1,10 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.6 2012/03/08 17:13:21 wiz Exp $
 bin/castool
+bin/chdman
 bin/floptool
 bin/imgtool
 bin/mess
+bin/unidasm
 share/doc/mess/credits.htm
 share/doc/mess/faq.htm
 share/doc/mess/howto.htm
