@@ -1,4 +1,4 @@
-# $NetBSD: configure.mk,v 1.23 2008/02/07 21:36:13 rillig Exp $
+# $NetBSD: configure.mk,v 1.24 2011/09/08 20:17:15 abs Exp $
 #
 # = Package-settable variables =
 #
@@ -205,7 +205,7 @@ do-configure-script:
 .for _dir_ in ${CONFIGURE_DIRS}
 	${RUN}${_ULIMIT_CMD}						\
 	cd ${WRKSRC} && cd ${_dir_} &&					\
-	${PKGSRC_SETENV} ${_CONFIGURE_SCRIPT_ENV}				\
+	${PKGSRC_SETENV} ${_CONFIGURE_SCRIPT_ENV}			\
 		${CONFIG_SHELL} ${CONFIG_SHELL_FLAGS}			\
 			${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS}
 .endfor
@@ -242,7 +242,7 @@ do-configure-cmake:
 .for _dir_ in ${CONFIGURE_DIRS}
 	${RUN}${_ULIMIT_CMD}						\
 	cd ${WRKSRC} && cd ${_dir_} &&					\
-	${PKGSRC_SETENV} ${_CONFIGURE_CMAKE_ENV}				\
+	${PKGSRC_SETENV} ${_CONFIGURE_CMAKE_ENV}			\
 		cmake ${CMAKE_ARGS} ${CMAKE_ARG_PATH}
 .endfor
 

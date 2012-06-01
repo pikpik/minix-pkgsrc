@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/12/14 16:56:45 taca Exp $
 
-DISTNAME=	unf_ext-0.0.4
+DISTNAME=	unf_ext-0.0.5
 CATEGORIES=	converters
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
