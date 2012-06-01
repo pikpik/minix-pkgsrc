@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.14 2010/12/12 13:10:39 wiz Exp $
+@comment $NetBSD: PLIST,v 1.15 2012/05/29 22:52:04 cheusov Exp $
 bin/gtar
 gnu/bin/tar
+gnu/man/man1/tar.1
 ${PLIST.rmt}gnu/libexec/rmt
 ${PLIST.rmt}libexec/grmt
 man/man1/gtar.1
