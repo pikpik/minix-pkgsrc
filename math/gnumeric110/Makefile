@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/03/09 12:34:19 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/05/15 03:45:22 reed Exp $
 
 DISTNAME=	gnumeric-1.10.17
 PKGREVISION=	4
@@ -26,6 +26,8 @@ REPLACE_PERL+=		plugins/perl-func/perl_func.pl
 # PLIST contains versioned directory
 GOFFICE_VERSION=	0.8.17
 PLIST_SUBST+=		GOFFICE_VERSION=${GOFFICE_VERSION}
+
+.include "options.mk"
 
 CONFIGURE_ARGS+=	--with-python
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}

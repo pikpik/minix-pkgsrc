@@ -1,6 +1,6 @@
-# $NetBSD: hacks.mk,v 1.1.1.1 2011/11/08 16:10:51 taca Exp $
+# $NetBSD: hacks.mk,v 1.2 2012/04/10 14:12:50 tsutsui Exp $
 
-.if !defined(RUBY19_BASE_HACKS_MK)
+.if !defined(RUBY193_BASE_HACKS_MK)
 RUBY19_BASE_HACKS_MK=	defined
 
 .include "../../mk/compiler.mk"
@@ -27,4 +27,4 @@ PKG_HACKS+=		optimisation
 BUILDLINK_TRANSFORM+=	rename:-Os:-O1 rm:-freorder-blocks
 .endif
 
-.endif	# RUBY19_BASE_HACKS_MK
+.endif	# RUBY193_BASE_HACKS_MK

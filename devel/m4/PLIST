@@ -1,6 +1,7 @@
-@comment $NetBSD: PLIST,v 1.14 2009/06/14 17:48:57 joerg Exp $
+@comment $NetBSD: PLIST,v 1.15 2012/05/29 21:44:45 cheusov Exp $
 bin/gm4
 gnu/bin/m4
+gnu/man/man1/m4.1
 info/m4.info
 man/man1/gm4.1
 share/examples/m4/capitalize.m4

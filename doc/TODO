@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11133 2012/06/01 12:30:05 gdt Exp $
+$NetBSD: TODO,v 1.11143 2012/06/02 13:19:30 obache Exp $
 
 Suggested new packages
 ======================
@@ -410,6 +410,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o audacity-2.0
 	o autoconvert-0.3.16
 	o autogen-5.16
+	o automake-1.12.1
 	o avcheck-0.91
 	o avidemux-2.5.6
 	o avl-2.0.2a
@@ -644,7 +645,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o font-xfree86-type1-1.0.4 [pkg/45549]
 	o fontconfig-2.9.0
 	o fontsproto-2.1.2
-	o fotoxx-12.05
+	o fotoxx-12.06.1
 	o fox-1.6.41
 	o freeciv-2.3.2
 	o freefont-20120503
@@ -747,7 +748,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o gssdp-0.10.0
 	o gst123-0.3.1
 	o gtexinfo-4.13a
-	o gthumb-2.14.4
+	o gthumb-3.0.1
 	o gthumb-3.0.1
 	o gtick-0.4.2
 	o gtk-gnutella-0.97.1
@@ -863,16 +864,16 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o libICE-1.0.8
 	o libSM-1.2.1
 	o libX11-1.4.4 [pkg/46183]
+	o libX11-1.5.0
 	o libXScrnSaver-1.2.2
 	o libXau-1.0.7
-	o libXaw-1.0.10
+	o libXaw-1.0.11
 	o libXcomposite-0.4.3
 	o libXcursor-1.1.13
 	o libXdmcp-1.1.1
 	o libXevie-1.0.3
 	o libXext-1.3.1
 	o libXfixes-5.0
-	o libXfont-1.4.5
 	o libXft-2.3.0
 	o libXi-1.6.1
 	o libXinerama-1.1.2
@@ -916,6 +917,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o libmcs-0.7.2
 	o libmemcached-1.0.8
 	o libmicrohttpd-0.9.20
+	o libmikmod-3.2.0
 	o libmilter-8.14.5
 	o libnasl-2.3.1
 	o libnids-1.24
@@ -963,16 +965,12 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o mailscanner-4.74
 	o maketool-0.8.4
 	o makeztxt-1.60
-	o mame-0.146
 	o manedit-1.2.1
 	o mantis-1.2.3
-	o mapserver-5.6.8 [pkg/46504]
 	o matchbox-panel-0.9.3
 	o mc-4.8.1.3
 	o mdocml-1.12.1
-	o mediawiki-1.19.0 [pkg/46505]
 	o mergeant-0.67
-	o mess-0.146
 	o mesure-0.7.2
 	o mgetty+sendfax-1.1.35
 	o milkytracker-0.90.85
@@ -1041,7 +1039,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o obexftp-0.23
 	o ocamlnet-2.2.4
 	o ocsigen-1.1.0 [pkg/40761]
-	o octave-3.6.1
+	o octave-3.6.2
 	o olvwm-4.5
 	o oo2c-2.1.7
 	o opal-3.8.0 [pkg/42942]
@@ -1090,7 +1088,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o pessulus-2.30.3 [GNOME 2.28]
 	o phoon-20050629
 	o photopc-3.05
-	o php-5.4.0
+	o php-5.4.3 [taca]
 	o php-jpgraph-3.0.6
 	o phppgadmin-5.0.3
 	o picp-0.6.8
@@ -1128,7 +1126,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o pulseaudio-2.0
 	o puppet-2.7.6
 	o puzzle-9173
-	o puzzles-9544
+	o puzzles-9549
 	o pv-1.2.0
 	o pwlib-1.11.1
 	o py-FourSuite-1.0.2
@@ -1139,14 +1137,12 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o py-checker-0.8.19
 	o py-dbus-1.1.0 [needs dbus>=1.4]
 	o py-game-1.9.1 [needs portmidi]
-	o py-gmpy-1.15 [pkg/46507]
 	o py-gnosis-1.2.2
 	o py-gnosis-utils-1.2.1
 	o py-gobject-3.2.2
 	o py-karaoke-0.7.3
 	o py-moin-1.9.4
 	o py-mxDateTime-3.2.0
-	o py-networkx-1.6 [pkg/46506]
 	o py-sybase-0.37
 	o py-urwid-1.0.1
 	o py-xcbgen-1.7.1
@@ -1189,7 +1185,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o rsnapshot-1.3.1
 	o rtcw-1.41.3
 	o rtty-4.0 [at ftp://ftp.isc.org/isc/rtty/]
-	o ruby-rb-appscript-0.6.1
 	o rudiments-0.36.1
 	o sabayon-2.30.1 [GNOME 2.30]
 	o sablecc-3.2
@@ -1247,7 +1242,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o stalin-0.11
 	o star-1.5.1
 	o statist-1.3.0
-	o stella-3.6.1
+	o stella-3.7
 	o stgit-0.16
 	o stlport-4.6.2
 	o stow-2.2.0
@@ -1387,8 +1382,7 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o xboard-4.5.3
 	o xcalc-1.0.4.1
 	o xcb-proto-1.7.1
-	o xcb-util-0.3.8 [NOT binary compatible to 0.3.6, so perhaps wait with update -- wiz 20110524]
-	o xcb-util-0.3.9
+	o xcb-util-0.3.9 [NOT binary compatible to 0.3.6, so perhaps wait with update -- wiz 20110524]
 	o xcircuit-3.6.85
 	o xclock-1.0.6
 	o xcmiscproto-1.2.2
