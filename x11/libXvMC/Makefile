@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/01/15 18:32:19 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2010/09/10 19:10:10 joerg Exp $
 #
 
-DISTNAME=		libXvMC-1.0.6
+DISTNAME=		libXvMC-1.0.7
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.49 2011/01/27 13:56:49 adam Exp $
+# $NetBSD: Makefile,v 1.50 2012/01/13 10:54:46 obache Exp $
 
-DISTNAME=	libmikmod-3.1.12
-PKGREVISION=	1
+DISTNAME=	libmikmod-3.2.0
 CATEGORIES=	audio
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mikmod/}
+MASTER_SITES=	http://mikmod.shlomifish.org/files/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mikmod.raphnet.net/

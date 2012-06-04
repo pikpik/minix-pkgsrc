@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2010/04/10 23:22:49 tnn Exp $
+# $NetBSD: Makefile,v 1.7 2010/10/12 19:34:00 minskim Exp $
 #
 
-DISTNAME=		libXtst-1.1.0
+DISTNAME=		libXtst-1.2.1
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2

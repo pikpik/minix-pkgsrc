@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:16 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2010/04/09 08:27:31 tnn Exp $
 #
 
-DISTNAME=		recordproto-1.14
+DISTNAME=		recordproto-1.14.2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=proto/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,3 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/11/03 22:03:23 joerg Exp $
+@comment $NetBSD$
 include/X11/extensions/XResproto.h
 lib/pkgconfig/resourceproto.pc
+share/doc/resourceproto/resproto.txt

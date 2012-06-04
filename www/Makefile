@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.883 2012/05/13 07:53:27 ryoon Exp $
+# $NetBSD: Makefile,v 1.884 2012/06/02 05:55:13 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -550,6 +550,7 @@ SUBDIR+=	py-ClientForm
 SUBDIR+=	py-HTMLgen
 SUBDIR+=	py-PasteDeploy
 SUBDIR+=	py-beautifulsoup
+SUBDIR+=	py-beautifulsoup4
 SUBDIR+=	py-blosxom
 SUBDIR+=	py-cherrypy
 SUBDIR+=	py-clearsilver

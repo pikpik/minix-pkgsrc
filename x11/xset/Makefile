@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2009/11/09 18:20:03 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2010/09/10 20:17:39 joerg Exp $
 #
 
-DISTNAME=		xset-1.2.0
+DISTNAME=		xset-1.2.2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

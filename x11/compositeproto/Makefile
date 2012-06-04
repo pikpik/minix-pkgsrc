@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2008/05/24 21:45:14 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2010/01/15 17:48:44 tnn Exp $
 #
 
-DISTNAME=		compositeproto-0.4.1
+DISTNAME=		compositeproto-0.4.2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=proto/}
 

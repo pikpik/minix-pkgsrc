@@ -107,6 +107,9 @@ share/doc/libvisio/html/classlibvisio_1_1VSDXEllipse.png
 share/doc/libvisio/html/classlibvisio_1_1VSDXEllipticalArcTo-members.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXEllipticalArcTo.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXEllipticalArcTo.png
+share/doc/libvisio/html/classlibvisio_1_1VSDXEndLayerOutputElement-members.html
+share/doc/libvisio/html/classlibvisio_1_1VSDXEndLayerOutputElement.html
+share/doc/libvisio/html/classlibvisio_1_1VSDXEndLayerOutputElement.png
 share/doc/libvisio/html/classlibvisio_1_1VSDXEndTextLineOutputElement-members.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXEndTextLineOutputElement.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXEndTextLineOutputElement.png
@@ -198,6 +201,9 @@ share/doc/libvisio/html/classlibvisio_1_1VSDXSplineKnot.png
 share/doc/libvisio/html/classlibvisio_1_1VSDXSplineStart-members.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXSplineStart.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXSplineStart.png
+share/doc/libvisio/html/classlibvisio_1_1VSDXStartLayerOutputElement-members.html
+share/doc/libvisio/html/classlibvisio_1_1VSDXStartLayerOutputElement.html
+share/doc/libvisio/html/classlibvisio_1_1VSDXStartLayerOutputElement.png
 share/doc/libvisio/html/classlibvisio_1_1VSDXStartTextLineOutputElement-members.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXStartTextLineOutputElement.html
 share/doc/libvisio/html/classlibvisio_1_1VSDXStartTextLineOutputElement.png

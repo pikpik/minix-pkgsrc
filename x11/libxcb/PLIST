@@ -21,6 +21,7 @@ include/xcb/xf86dri.h
 include/xcb/xfixes.h
 include/xcb/xinerama.h
 include/xcb/xinput.h
+include/xcb/xkb.h
 include/xcb/xprint.h
 include/xcb/xproto.h
 include/xcb/xselinux.h
