@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.622 2012/05/17 05:11:38 jnemeth Exp $
+# $NetBSD: Makefile,v 1.624 2012/06/04 13:13:38 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -255,6 +255,8 @@ SUBDIR+=	nbsed
 SUBDIR+=	ndtpd
 SUBDIR+=	nxml-mode
 SUBDIR+=	o3read
+SUBDIR+=	ocaml-text
+SUBDIR+=	ocaml-tyxml
 SUBDIR+=	oniguruma
 SUBDIR+=	openjade
 SUBDIR+=	opensp

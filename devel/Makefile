@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1599 2012/05/30 15:45:44 wiz Exp $
+# $NetBSD: Makefile,v 1.1601 2012/06/04 09:57:42 drochner Exp $
 #
 
 COMMENT=	Development utilities
@@ -214,6 +214,7 @@ SUBDIR+=	gcvs
 SUBDIR+=	gdb
 SUBDIR+=	gdb6
 SUBDIR+=	gdbada
+SUBDIR+=	gdbus-codegen
 SUBDIR+=	gdl
 SUBDIR+=	geany
 SUBDIR+=	generate
@@ -1251,6 +1252,7 @@ SUBDIR+=	pmccabe
 SUBDIR+=	poco
 SUBDIR+=	popt
 SUBDIR+=	prcs
+SUBDIR+=	protobuf
 SUBDIR+=	pstreams
 SUBDIR+=	psvn
 SUBDIR+=	pth

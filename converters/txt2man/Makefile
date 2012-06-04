@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.8 2007/05/23 09:39:13 xtraeme Exp $
+# $NetBSD: Makefile,v 1.9 2010/01/29 16:53:09 joerg Exp $
 #
 
-DISTNAME=	txt2man-1.5.5
+DISTNAME=	txt2man-1.5.6
 CATEGORIES=	converters
 MASTER_SITES=	http://mvertes.free.fr/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mvertes.free.fr/
 COMMENT=	Convert flat ASCII text to man page format
+LICENSE=	gnu-gpl-v2 # or later
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
