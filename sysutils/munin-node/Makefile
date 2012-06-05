@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/03/08 10:26:08 shattered Exp $
+# $NetBSD: Makefile,v 1.25 2012/03/15 11:53:39 obache Exp $
 #
 
 DISTNAME=	munin_${VER}
@@ -48,7 +48,6 @@ PLIST.not-sunos= yes
 
 PKG_GROUPS_VARS+=	MUNIN_GROUP
 PKG_USERS_VARS+=	MUNIN_USER
-USERGROUP_PHASE=	pre-install
 
 MUNIN_GROUP?=	munin
 MUNIN_USER?=	munin
