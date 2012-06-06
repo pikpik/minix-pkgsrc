@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2008/06/15 09:51:59 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/06/06 07:14:10 wiz Exp $
 
 DISTNAME=	# empty
-PKGNAME=	modular-xorg-apps-1.5
+PKGNAME=	modular-xorg-apps-1.7
 CATEGORIES=	meta-pkgs x11
 MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 DISTFILES=	# empty
@@ -23,6 +23,8 @@ DEPENDS+=	ico-[0-9]*:../../x11/ico
 DEPENDS+=	listres-[0-9]*:../../x11/listres
 DEPENDS+=	luit-[0-9]*:../../x11/luit
 DEPENDS+=	setxkbmap-[0-9]*:../../x11/setxkbmap
+DEPENDS+=	transset-[0-9]*:../../x11/transset
+DEPENDS+=	viewres-[0-9]*:../../x11/viewres
 DEPENDS+=	x11perf-[0-9]*:../../x11/x11perf
 DEPENDS+=	xauth-[0-9]*:../../x11/xauth
 DEPENDS+=	xbacklight-[0-9]*:../../x11/xbacklight
@@ -37,6 +39,9 @@ DEPENDS+=	xfontsel-[0-9]*:../../x11/xfontsel
 DEPENDS+=	xgamma-[0-9]*:../../x11/xgamma
 DEPENDS+=	xhost-[0-9]*:../../x11/xhost
 DEPENDS+=	xinit-[0-9]*:../../x11/xinit
+DEPENDS+=	xkbevd-[0-9]*:../../x11/xkbevd
+DEPENDS+=	xkbprint-[0-9]*:../../x11/xkbprint
+DEPENDS+=	xkbutils-[0-9]*:../../x11/xkbutils
 DEPENDS+=	xkill-[0-9]*:../../x11/xkill
 DEPENDS+=	xload-[0-9]*:../../x11/xload
 DEPENDS+=	xlogo-[0-9]*:../../x11/xlogo

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.648 2012/06/05 06:46:05 wiz Exp $
+# $NetBSD: Makefile,v 1.652 2012/06/06 09:37:54 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -365,6 +365,7 @@ SUBDIR+=	tzosdclock
 SUBDIR+=	unclutter
 SUBDIR+=	unicode-screensaver
 SUBDIR+=	videoproto
+SUBDIR+=	viewres
 SUBDIR+=	vte
 SUBDIR+=	wdm
 SUBDIR+=	wmavgload
@@ -498,7 +499,10 @@ SUBDIR+=	xjman
 SUBDIR+=	xkbcomp
 SUBDIR+=	xkbd
 SUBDIR+=	xkbdata
+SUBDIR+=	xkbevd
+SUBDIR+=	xkbprint
 SUBDIR+=	xkbset
+SUBDIR+=	xkbutils
 SUBDIR+=	xkeyboard-config
 SUBDIR+=	xkeycaps
 SUBDIR+=	xkill

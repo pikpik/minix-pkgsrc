@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1890 2012/06/05 21:53:52 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.1900 2012/06/06 09:41:18 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -2879,3 +2879,13 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated mail/roundcube to 0.7.2nb1 [jym 2012-06-05]
 	Updated misc/libreoffice to 3.5.4.2nb1 [wiz 2012-06-05]
 	Updated graphics/p5-Image-ExifTool to 8.90 [gdt 2012-06-05]
+	Updated meta-pkgs/modular-xorg-apps to 1.6 [wiz 2012-06-06]
+	Updated devel/bison to 2.5.1 [wiz 2012-06-06]
+	Added misc/xorg-docs version 1.7 [wiz 2012-06-06]
+	Added misc/xorg-sgml-doctools version 1.11 [wiz 2012-06-06]
+	Updated meta-pkgs/modular-xorg to 1.1 [wiz 2012-06-06]
+	Added x11/viewres version 1.0.3 [wiz 2012-06-06]
+	Added x11/xkbutils version 1.0.3 [wiz 2012-06-06]
+	Added x11/xkbevd version 1.1.3 [wiz 2012-06-06]
+	Added x11/xkbprint version 1.0.3 [wiz 2012-06-06]
+	Updated meta-pkgs/modular-xorg-apps to 1.7 [wiz 2012-06-06]

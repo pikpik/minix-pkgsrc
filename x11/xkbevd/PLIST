@@ -1,0 +1,3 @@
+@comment $NetBSD$
+bin/xkbevd
+man/man1/xkbevd.1
