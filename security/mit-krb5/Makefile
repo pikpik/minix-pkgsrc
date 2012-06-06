@@ -2,6 +2,7 @@
 
 DISTNAME=	krb5-1.8.6
 PKGNAME=	mit-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://web.mit.edu/kerberos/dist/krb5/1.8/
 EXTRACT_SUFX=	.tar
