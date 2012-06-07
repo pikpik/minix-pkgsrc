@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1903 2012/06/06 15:57:21 taca Exp $
+$NetBSD: CHANGES-2012,v 1.1905 2012/06/06 21:38:18 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -2897,3 +2897,5 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated net/isc-dhclient4 to 4.2.4 [taca 2012-06-06]
 	Updated net/isc-dhcpd4 to 4.2.4 [taca 2012-06-06]
 	Updated net/isc-dhcrelay4 to 4.2.4 [taca 2012-06-06]
+	Updated graphics/gdk-pixbuf2 to 2.26.1nb1 [ryoon 2012-06-06]
+	Updated devel/kyua-cli to 0.4 [jmmv 2012-06-06]

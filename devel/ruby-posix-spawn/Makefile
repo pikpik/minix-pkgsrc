@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2012/02/14 12:23:58 taca Exp $
+# $NetBSD: Makefile,v 1.4 2012/05/21 12:18:04 obache Exp $
 
 DISTNAME=	posix-spawn-0.3.6
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://github.com/github/albino
-COMMENT=	Ruby wrapper for the Pygments syntax highlighter
+COMMENT=	Ruby wrapper for the posix_spawn() system call
 
 LICENSE=	mit
 
