@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2012/01/19 13:32:05 tsutsui Exp $
+# $NetBSD: Makefile,v 1.82 2012/06/06 07:20:35 wiz Exp $
 
 DISTNAME=		bison-2.5.1
 CATEGORIES=		devel
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		grep gm4:run msgfmt
+USE_TOOLS+=		grep gm4:run msgfmt flex
 INFO_FILES=		yes
 
 CONFIGURE_ENV+=		gt_cv_func_gnugettext1_libintl=yes \
