@@ -1,4 +1,4 @@
-$NetBSD: patch-dd,v 1.6 2011/07/11 09:57:18 ryoon Exp $
+$NetBSD: patch-dd,v 1.7 2011/08/22 12:00:34 ryoon Exp $
 
 Remove confsuffix from sysconfdir so that our PKG_SYSCONFSUBDIR setting
 works.
