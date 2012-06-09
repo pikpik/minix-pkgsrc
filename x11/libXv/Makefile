@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/01/15 18:33:45 tnn Exp $
+# $NetBSD: Makefile,v 1.7 2012/06/03 17:46:52 wiz Exp $
 #
 
 DISTNAME=		libXv-1.0.7
@@ -23,6 +23,8 @@ USE_TOOLS+=		pkg-config
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/10/25 08:08:09 mef Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/03 17:22:40 wiz Exp $
 #
 
 DISTNAME=		libFS-1.0.4
@@ -24,6 +24,8 @@ PKGCONFIG_OVERRIDE+=	libfs.pc.in
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/fontsproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/11/09 18:59:19 tnn Exp $
+# $NetBSD: Makefile,v 1.7 2012/06/03 18:12:53 wiz Exp $
 #
 
 DISTNAME=	xev-1.2.0
@@ -16,6 +16,8 @@ GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
 
 CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"

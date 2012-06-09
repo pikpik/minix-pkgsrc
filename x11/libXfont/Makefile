@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2011/11/14 14:24:14 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2012/06/01 20:19:16 drochner Exp $
 #
 
 DISTNAME=		libXfont-1.4.5
@@ -20,6 +20,8 @@ USE_TOOLS+=		pkg-config
 PKGCONFIG_OVERRIDE+=	xfont.pc.in
 
 CONFIGURE_ARGS+=	--disable-devel-docs
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"

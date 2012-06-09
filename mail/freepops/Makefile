@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/12/17 12:49:27 marino Exp $
+# $NetBSD: Makefile,v 1.16 2012/01/14 07:44:34 obache Exp $
 #
 
 DISTNAME=		freepops-0.2.8
@@ -17,7 +17,7 @@ MAKE_JOBS_SAFE=		no
 .include "../../mk/bsd.prefs.mk"
 
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		bash:run bison gmake patch tar
+USE_TOOLS+=		bash:run bison gmake patch pkg-config tar
 .if ${OPSYS} != "NetBSD"
 USE_TOOLS+=		gsed
 .endif

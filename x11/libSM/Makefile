@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/09/28 12:38:50 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/03 17:24:36 wiz Exp $
 #
 
 DISTNAME=		libSM-1.2.1
@@ -22,6 +22,8 @@ PKGCONFIG_OVERRIDE+=	sm.pc.in
 CONFIGURE_ARGS+=	--without-libuuid
 
 .include "options.mk"
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/libICE/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"

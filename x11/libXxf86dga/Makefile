@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/01/15 18:26:41 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/03 17:48:03 wiz Exp $
 #
 
 DISTNAME=		libXxf86dga-1.1.3
@@ -25,6 +25,8 @@ PKGCONFIG_OVERRIDE+=	xxf86dga.pc.in
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"

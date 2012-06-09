@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.36 2010/06/15 23:10:44 pettai Exp $
+# $NetBSD: Makefile,v 1.37 2012/05/13 15:23:33 wiz Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
-DISTNAME=	courier-authlib-0.63.0
+DISTNAME=	courier-authlib-0.64.0
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2

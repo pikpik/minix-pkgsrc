@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/09/10 19:14:45 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/03 17:58:04 wiz Exp $
 #
 
 DISTNAME=		listres-1.0.3
@@ -17,6 +17,8 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 
 CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
