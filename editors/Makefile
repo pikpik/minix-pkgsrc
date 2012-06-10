@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.149 2012/03/21 23:01:19 markd Exp $
+# $NetBSD: Makefile,v 1.150 2012/05/23 12:51:48 abs Exp $
 #
 
 COMMENT=	Editors
@@ -63,6 +63,7 @@ SUBDIR+=	lpe
 SUBDIR+=	lyx
 SUBDIR+=	manedit
 SUBDIR+=	matlab-mode
+SUBDIR+=	medit
 SUBDIR+=	mflteco
 SUBDIR+=	mg
 SUBDIR+=	mg2a
