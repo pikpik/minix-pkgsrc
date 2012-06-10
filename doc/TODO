@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11275 2012/06/09 17:20:58 wiz Exp $
+$NetBSD: TODO,v 1.11280 2012/06/10 16:32:22 wiz Exp $
 
 Suggested new packages
 ======================
@@ -629,11 +629,8 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o font-screen-cyrillic-1.0.4 [pkg/45549]
 	o font-sony-misc-1.0.3 [pkg/45549]
 	o font-sun-misc-1.0.3 [pkg/45549]
-	o font-util-1.2.0 [pkg/45537]
-	o font-util-1.3.0
 	o font-winitzki-cyrillic-1.0.3 [pkg/45549]
 	o font-xfree86-type1-1.0.4 [pkg/45549]
-	o fontconfig-2.9.0
 	o fotoxx-12.06.1
 	o fox-1.6.41
 	o freeciv-2.3.2
@@ -853,7 +850,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o libcares-1.8.0
 	o libcdio-0.83
 	o libchamplain08-0.12.1
-	o libdrm-2.4.35
 	o libextractor-0.6.3
 	o libffi-3.0.11
 	o libflash-0.4.13
@@ -1152,7 +1148,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o secpanel-0.6.1
 	o sendfile-20010424
 	o ser-0.9.6
-	o sessreg-1.0.7
 	o sharity-3.7
 	o sharity-light-1.3
 	o shc-3.8
@@ -1318,7 +1313,6 @@ For possible perl packages updates, see http://www.pkgbox.org/p2c/
 	o xaric-0.13.2
 	o xbindkeys-1.8.5
 	o xbindkeys-tk-1.8.0
-	o xbitmaps-1.1.1
 	o xboard-4.5.3
 	o xcb-util-0.3.9 [NOT binary compatible to 0.3.6, so perhaps wait with update -- wiz 20110524]
 	o xcircuit-3.6.85

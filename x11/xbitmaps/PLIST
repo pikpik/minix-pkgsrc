@@ -70,4 +70,4 @@ include/X11/bitmaps/xlogo16
 include/X11/bitmaps/xlogo32
 include/X11/bitmaps/xlogo64
 include/X11/bitmaps/xsnow
-lib/pkgconfig/xbitmaps.pc
+share/pkgconfig/xbitmaps.pc
