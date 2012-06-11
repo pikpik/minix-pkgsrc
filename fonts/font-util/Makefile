@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/09/09 18:54:39 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/10 15:27:41 wiz Exp $
 #
 
 DISTNAME=		font-util-1.3.0
@@ -15,5 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 
 LDFLAGS.IRIX+=		-lgen	# for basename(3)
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../mk/bsd.pkg.mk"
