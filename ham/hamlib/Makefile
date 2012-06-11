@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2010/11/04 13:34:46 asau Exp $
+# $NetBSD: Makefile,v 1.27 2011/02/28 14:52:52 wiz Exp $
 #
 
-DISTNAME=	hamlib-1.2.12
+DISTNAME=	hamlib-1.2.15.1
 #PKGREVISION=	1
 CATEGORIES=	ham
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hamlib/}
@@ -29,4 +29,5 @@ CONFIGURE_ENV+=	PYTHON=/nonexistent
 
 INSTALLATION_DIRS=	include/hamlib
 
+.include "../../devel/libltdl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
