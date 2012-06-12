@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:21 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/09 18:26:20 joerg Exp $
 #
 
-DISTNAME=		font-cursor-misc-1.0.1
+DISTNAME=		font-cursor-misc-1.0.3
 CATEGORIES=		fonts x11
 MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2

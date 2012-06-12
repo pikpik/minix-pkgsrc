@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/10 05:50:28 obache Exp $
 #
 
-DISTNAME=	font-misc-cyrillic-1.0.1
+DISTNAME=	font-misc-cyrillic-1.0.3
 CATEGORIES=	fonts
 MASTER_SITES=	${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=	.tar.bz2

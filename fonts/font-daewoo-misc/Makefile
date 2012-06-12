@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:21 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/09 18:28:26 joerg Exp $
 #
 
-DISTNAME=		font-daewoo-misc-1.0.1
+DISTNAME=		font-daewoo-misc-1.0.3
 CATEGORIES=		fonts
 MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2

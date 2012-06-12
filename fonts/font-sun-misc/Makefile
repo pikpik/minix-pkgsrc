@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/10 06:00:21 obache Exp $
+# $NetBSD: Makefile,v 1.2 2010/12/01 19:44:23 drochner Exp $
 #
 
-DISTNAME=		font-sun-misc-1.0.1
+DISTNAME=		font-sun-misc-1.0.3
 CATEGORIES=		fonts
 MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2
