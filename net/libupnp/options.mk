@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2012/04/13 23:38:34 obache Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.libupnp
 PKG_SUPPORTED_OPTIONS=	inet6 debug
-PKG_SUGGESTED_OPTIONS=	# empty
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

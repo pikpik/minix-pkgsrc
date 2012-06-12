@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.4 2006/05/31 18:22:24 ghen Exp $
+# $NetBSD: options.mk,v 1.5 2007/12/22 21:13:46 adam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.teapop
 PKG_SUPPORTED_OPTIONS=	drac mysql apop vpop tcpd pgsql ldap inet6
-PKG_SUGGESTED_OPTIONS=	apop vpop tcpd
+PKG_SUGGESTED_OPTIONS=	apop inet6 tcpd vpop
 
 .include "../../mk/bsd.options.mk"
 

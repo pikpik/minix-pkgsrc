@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2010/02/10 18:11:46 joerg Exp $
+# $NetBSD: Makefile,v 1.52 2010/08/21 10:17:58 seb Exp $
 
 DISTNAME=	sdr-3.0
 PKGREVISION=	2
@@ -20,6 +20,7 @@ HAS_CONFIGURE=	yes
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.sdr
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.6 2008/10/17 07:31:58 adam Exp $
+# $NetBSD: options.mk,v 1.7 2009/10/30 23:54:52 jym Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.stunnel
 PKG_SUPPORTED_OPTIONS=	inet6 threads tcpwrappers
-PKG_SUGGESTED_OPTIONS=	tcpwrappers
+PKG_SUGGESTED_OPTIONS=	inet6 tcpwrappers
 CHECK_BUILTIN.pthread:=		yes
 .include "../../mk/pthread.builtin.mk"
 CHECK_BUILTIN.pthread:=		no

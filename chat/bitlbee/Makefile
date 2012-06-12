@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2012/02/21 22:10:15 sbd Exp $
+# $NetBSD: Makefile,v 1.58 2012/03/03 00:12:47 wiz Exp $
 #
 
 DISTNAME=		bitlbee-3.0.3
@@ -64,6 +64,8 @@ do-install:
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.bitlbee
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
+
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Minet6)

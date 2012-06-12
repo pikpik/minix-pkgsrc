@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.113 2012/03/06 17:38:58 ryoon Exp $
+# $NetBSD: Makefile,v 1.114 2012/04/27 12:31:54 obache Exp $
 #
 
 DISTNAME=		gnome-utils-2.32.0
@@ -25,6 +25,8 @@ CONFIGURE_ARGS+=	--enable-gtk-doc=no
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnome-utils
 PKG_SUPPORTED_OPTIONS+=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
+
 .include "../../mk/bsd.options.mk"
 .if !empty(PKG_OPTIONS:Minet6)
 CONFIGURE_ARGS+=	--enable-ipv6

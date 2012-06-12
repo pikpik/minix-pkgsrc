@@ -1,7 +1,8 @@
-# $NetBSD: options.mk,v 1.7 2009/02/28 15:44:55 manu Exp $
+# $NetBSD: options.mk,v 1.8 2010/10/18 08:42:31 pettai Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dkim-milter
 PKG_SUPPORTED_OPTIONS=	inet6 dkim-milter-arlib debug dkim-stats without-libsm vbr
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

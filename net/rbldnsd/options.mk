@@ -1,8 +1,7 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1.1.1 2006/12/08 22:14:12 cube Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.rbldnsd
 PKG_SUPPORTED_OPTIONS=	inet6 rbldnsd-master-dump zlib
-
 PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"

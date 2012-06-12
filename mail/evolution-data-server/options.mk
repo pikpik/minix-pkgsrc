@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.88 2009/05/19 08:59:21 wiz Exp $
+# $NetBSD: options.mk,v 1.1 2009/05/28 20:25:25 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.evolution-data-server
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

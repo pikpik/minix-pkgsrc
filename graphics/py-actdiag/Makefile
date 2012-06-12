@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2011/12/07 13:27:14 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/03/21 14:36:47 obache Exp $
 #
 
-DISTNAME=	actdiag-0.3.2
+DISTNAME=	actdiag-0.3.3
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	graphics
 MASTER_SITES=	http://pypi.python.org/packages/source/a/actdiag/

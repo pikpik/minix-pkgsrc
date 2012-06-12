@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2010/02/26 10:28:34 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2012/03/03 00:13:48 wiz Exp $
 
 DISTNAME=		leafnode-1.11.7
 PKGREVISION=		1
@@ -53,6 +53,7 @@ USE_TOOLS+=		gmake
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.leafnode
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

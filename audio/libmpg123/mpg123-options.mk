@@ -1,8 +1,9 @@
-# $NetBSD: options.mk,v 1.2 2008/09/19 17:49:26 ahoka Exp $
+# $NetBSD: mpg123-options.mk,v 1.1 2008/10/15 01:58:53 bjs Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mpg123
 PKG_SUPPORTED_OPTIONS=	inet6 debug
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.fast.prefs.mk"
 
