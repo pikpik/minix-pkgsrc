@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1948 2012/06/12 23:06:32 ryoon Exp $
+$NetBSD: CHANGES-2012,v 1.1957 2012/06/13 15:21:24 taca Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -2988,3 +2988,21 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated mail/thunderbird to 13.0 [ryoon 2012-06-12]
 	Updated mail/thunderbird-l10n to 13.0 [ryoon 2012-06-12]
 	Updated parallel/openmpi to 1.6 [asau 2012-06-12]
+	Updated x11/xfstt to 1.9 [mef 2012-06-13]
+	Updated chat/weechat to 0.3.8 [abs 2012-06-13]
+	Updated devel/at-spi2-atk to 2.5.2 [prlw1 2012-06-13]
+	Updated mail/pear-Mail_Mime to 1.8.5 [taca 2012-06-13]
+	Updated devel/ruby-test-unit to 2.5.0 [taca 2012-06-13]
+	Updated textproc/ruby-kramdown to 0.13.7 [taca 2012-06-13]
+	Updated textproc/ruby-nokogiri to 1.5.4 [taca 2012-06-13]
+	Updated textproc/ruby-rdtool to 0.6.37 [taca 2012-06-13]
+	Updated www/ruby-net-http-persistent to 2.7 [taca 2012-06-13]
+	Updated devel/ruby-activesupport32 to 3.2.6 [taca 2012-06-13]
+	Updated devel/ruby-activemodel32 to 3.2.6 [taca 2012-06-13]
+	Updated www/ruby-actionpack32 to 3.2.6 [taca 2012-06-13]
+	Updated databases/ruby-activerecord32 to 3.2.6 [taca 2012-06-13]
+	Updated www/ruby-activeresource32 to 3.2.6 [taca 2012-06-13]
+	Updated mail/ruby-actionmailer32 to 3.2.6 [taca 2012-06-13]
+	Updated devel/ruby-railties32 to 3.2.6 [taca 2012-06-13]
+	Updated www/ruby-rails32 to 3.2.6 [taca 2012-06-13]
+	Updated pkgtools/pkg_alternatives to 1.6 [jperkin 2012-06-13]

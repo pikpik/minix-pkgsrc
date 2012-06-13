@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/06/15 11:43:12 adam Exp $
+# $NetBSD: Makefile,v 1.11 2012/06/11 10:23:40 jperkin Exp $
 
 DISTNAME=	xz-5.0.3
 CATEGORIES=	archivers
@@ -27,6 +27,7 @@ CONFIGURE_ARGS+=	--disable-assembler
 .endif
 
 .if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=		ac_cv_have_decl_optreset=no
 CONFIGURE_ENV+=		gl_cv_cc_visibility=no
 .endif
 

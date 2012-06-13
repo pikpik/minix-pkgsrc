@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2011/06/14 13:36:34 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2012/01/09 14:53:31 drochner Exp $
 
 DISTNAME=		elinks-0.12pre5
 PKGNAME=		${DISTNAME:S/pre/rc/}
@@ -21,6 +21,13 @@ CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/${PKGBASE}
 CONFIGURE_ARGS+=	--enable-256-colors
 CONFIGURE_ARGS+=	--enable-utf-8
 CONFIGURE_ARGS+=	--without-lzma
+
+.include "../../mk/bsd.prefs.mk"
+
+# for backtrace
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/execinfo.h)
+LIBS+=	-lexecinfo
+.endif
 
 .include "options.mk"
 
