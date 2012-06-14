@@ -1,5 +1,5 @@
 ===========================================================================
-$NetBSD: MESSAGE,v 1.3 2012/02/17 16:40:23 ryoon Exp $
+$NetBSD: MESSAGE,v 1.4 2012/05/15 20:18:34 ryoon Exp $
 
 To use ownCloud, you will need to perform the following steps.
 
@@ -29,6 +29,9 @@ To use ownCloud, you will need to perform the following steps.
 	extension=zip.so
 	extension=sqlite.so ;if you select sqlite backend.
 	extension=mysql.so ;if you select MySQL backend.
+
+	extension=pdo.so
+	extension=pdo_sqlite.so ; with sqlite backend
 
 5. Start apache httpd.
 
