@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1968 2012/06/14 12:58:47 gdt Exp $
+$NetBSD: CHANGES-2012,v 1.1973 2012/06/14 15:40:45 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3018,3 +3018,23 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated devel/scmgit-docs to 1.7.10.4 [gdt 2012-06-14]
 	Updated www/gitweb to 1.7.10.4 [gdt 2012-06-14]
 	Updated www/opera to 12.00 [obache 2012-06-14]
+	Updated net/tor to 0.2.2.36 [hauke 2012-06-14]
+	updated devel/ruby-activesupport3 to 3.0.14 [taca 2012-06-14]
+	updated devel/ruby-activemodel to 3.0.14 [taca 2012-06-14]
+	updated www/ruby-actionpack3 to 3.0.14 [taca 2012-06-14]
+	updated databases/ruby-activerecord3 to 3.0.14 [taca 2012-06-14]
+	updated www/ruby-activeresource3 to 3.0.14 [taca 2012-06-14]
+	updated mail/ruby-actionmailer3 to 3.0.14 [taca 2012-06-14]
+	updated devel/ruby-railties to 3.0.14 [taca 2012-06-14]
+	updated www/ruby-rails3 to 3.0.14 [taca 2012-06-14]
+	updated devel/ruby-activesupport31 to 3.1.6 [taca 2012-06-14]
+	updated devel/ruby-activemodel31 to 3.1.6 [taca 2012-06-14]
+	updated www/ruby-actionpack31 to 3.1.6 [taca 2012-06-14]
+	updated databases/ruby-activerecord31 to 3.1.6 [taca 2012-06-14]
+	updated www/ruby-activeresource31 to 3.1.6 [taca 2012-06-14]
+	updated mail/ruby-actionmailer31 to 3.1.6 [taca 2012-06-14]
+	updated devel/ruby-railties31 to 3.1.6 [taca 2012-06-14]
+	updated www/ruby-rails31 to 3.1.6 [taca 2012-06-14]
+	Updated sysutils/ruby-facter to 1.6.10 [taca 2012-06-14]
+	Updated graphics/png to 1.5.11 [wiz 2012-06-14]
+	Updated www/contao211-translations to 201206130 [taca 2012-06-14]

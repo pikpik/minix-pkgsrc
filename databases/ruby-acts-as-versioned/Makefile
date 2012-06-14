@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2010/10/15 11:55:42 taca Exp $
+# $NetBSD: Makefile,v 1.5 2011/12/17 18:09:12 taca Exp $
 
 DISTNAME=	acts_as_versioned-0.6.0
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/_/-/g}
+PKGREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/18 06:49:06 taca Exp $
+# $NetBSD: Makefile,v 1.2 2012/04/29 12:58:23 taca Exp $
 
 DISTNAME=	activerecord-${RUBY_RAILS_VERSION}
 CATEGORIES=	databases
@@ -15,6 +15,7 @@ DEPENDS+=	${RUBY_PKGPREFIX}-arel>=3.0.2<3.1:../../databases/ruby-arel
 DEPENDS+=	${RUBY_PKGPREFIX}-tzinfo>=0.3.29<0.4:../../time/ruby-tzinfo
 
 RUBY_RAILS_SUPPORTED=	32
+RUBY_RAILS_STRICT_DEP=	yes
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

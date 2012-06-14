@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/12/16 12:34:30 taca Exp $
+# $NetBSD: Makefile,v 1.2 2012/03/18 05:43:47 taca Exp $
 
 DISTNAME=	rails-${RUBY_RAILS_VERSION}
 CATEGORIES=	www
@@ -19,6 +19,7 @@ DEPENDS+=       ${RUBY_PKGPREFIX}-bundler>=1.0<2:../../misc/ruby-bundler
 CONFLICTS+=	ruby[1-9][0-9]-rails-[0-9]*
 
 RUBY_RAILS_SUPPORTED=	31
+RUBY_RAILS_STRICT_DEP=	yes
 REPLACE_RUBY=		bin/rails
 
 post-build:
