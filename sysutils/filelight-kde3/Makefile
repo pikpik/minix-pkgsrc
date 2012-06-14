@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2012/03/03 00:13:55 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2012/03/20 05:37:49 markd Exp $
 #
 
 DISTNAME=	filelight-1.0
-PKGREVISION=	20
+PKGREVISION=	21
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.methylblue.com/filelight/packages/
 EXTRACT_SUFX=	.tar.bz2

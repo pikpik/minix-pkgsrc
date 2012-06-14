@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/10/02 22:14:20 markd Exp $
+# $NetBSD: Makefile,v 1.2 2009/10/03 07:09:23 wiz Exp $
 
 KDE_LANGUAGE=	English (Great Britain)
 KDE_LANGCODE=	en_GB
+PKGREVISION=	1
 
 .include "../../meta-pkgs/kde4/l10n.mk"
 .include "../../mk/bsd.pkg.mk"

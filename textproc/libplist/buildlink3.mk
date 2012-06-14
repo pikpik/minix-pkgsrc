@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2012/03/03 00:12:03 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2012/04/22 16:11:13 wiz Exp $
 
 BUILDLINK_TREE+=	libplist
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	libplist
 LIBPLIST_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libplist+=	libplist>=1.8
+BUILDLINK_ABI_DEPENDS.libplist?=	libplist>=1.8nb1
 BUILDLINK_PKGSRCDIR.libplist?=	../../textproc/libplist
 
 .include "../../textproc/libxml2/buildlink3.mk"

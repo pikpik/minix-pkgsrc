@@ -1,3 +1,6 @@
-# $NetBSD: hacks.mk,v 1.2 2012/03/15 08:36:43 ryoon Exp $
+# $NetBSD: hacks.mk,v 1.3 2012/03/19 10:35:57 ryoon Exp $
+
+# workround for link of thunderbird-bin etc.
+LDFLAGS+=	-Wl,-rpath,${PREFIX}/lib/seamonkey
 
 .include "../../devel/xulrunner/hacks.mk"

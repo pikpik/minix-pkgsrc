@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2006/12/03 04:17:28 markd Exp $
+# $NetBSD: Makefile,v 1.3 2008/07/14 12:56:08 joerg Exp $
 
 KOFFICE_LANGUAGE=	Danish
 KOFFICE_LANGCODE=	da
+PKGREVISION=		1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

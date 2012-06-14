@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2012/02/28 18:43:41 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2012/03/03 00:14:24 wiz Exp $
 #
 
 GST_PLUGINS0.10_NAME=	twolame
 GST_PLUGINS0.10_DIRS=	ext/twolame
+PKGREVISION=		1
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

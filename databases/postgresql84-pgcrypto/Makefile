@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2010/12/19 09:53:42 adam Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/15 08:14:16 adam Exp $
 
 PKGNAME=	${DISTNAME:C/-/84-pgcrypto-/}
+PKGREVISION=	1
 COMMENT=	Module providing cryptographic functions for PostgreSQL
 
 PKG_DESTDIR_SUPPORT=	user-destdir

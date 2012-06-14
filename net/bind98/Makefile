@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2012/05/22 03:32:31 taca Exp $
+# $NetBSD: Makefile,v 1.12 2012/06/04 13:25:53 taca Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGNAME=	${DISTNAME:S/-P/pl/}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${BIND_VERSION}/ \
 		http://ftp.belnet.be/pub/mirror/ftp.isc.org/isc/bind9/${BIND_VERSION}/

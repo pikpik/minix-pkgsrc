@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/04/22 13:42:11 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/03/21 10:04:11 wiz Exp $
 #
 
 DISTNAME=	liblrdf-0.5.0
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	# github download sucks for packaging
 
