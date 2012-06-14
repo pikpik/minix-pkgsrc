@@ -2,7 +2,7 @@ PROG=	tg
 SRCS=	tg.c
 MAN=
 
-LDADD+=	-lnetdriver -lsys -ltimers -lminlib
+LDADD+=	-lnetdriver -lsys -ltimers -lminlib -static
 
 BINDIR=$(PREFIX)/minixservices
 CONFDIR=$(PREFIX)/etc/system.conf.d 

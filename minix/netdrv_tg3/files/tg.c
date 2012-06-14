@@ -92,7 +92,7 @@
 #define FIRMWARE_TG3TSO		"tigon/tg3_tso.bin"
 #define FIRMWARE_TG3TSO5	"tigon/tg3_tso5.bin"
 
-PRIVATE char version[] =
+static char version[] =
 DRV_MODULE_NAME ".c:v" DRV_MODULE_VERSION " (" DRV_MODULE_RELDATE ")\n";
 
 #define swab32(x) \
@@ -137,7 +137,7 @@ DRV_MODULE_NAME ".c:v" DRV_MODULE_VERSION " (" DRV_MODULE_RELDATE ")\n";
 
 #define TG3_ENVVAR	"TG3ETH"
 
-PRIVATE struct pcitab {
+static struct pcitab {
 	u16_t vid;
 	u16_t did;
 	int checkclass;
@@ -149,244 +149,221 @@ PRIVATE struct pcitab {
 	{ 0x0000, 0x0000, 0 }
 };
 
-PRIVATE tg3_t tg3_state;
-PRIVATE int tg3_instance;
-PRIVATE u32_t system_hz;
-EXTERN int env_argc;
-EXTERN char **env_argv;
+static tg3_t tg3_state;
+static int tg3_instance;
+static u32_t system_hz;
+extern int env_argc;
+extern char **env_argv;
 
-_PROTOTYPE(PRIVATE int tg3_close, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_init_one, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_open, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_poll, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_rx, (message * mp, tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_set_mac_addr, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_start_transmit, (message * mp, tg3_t * tp));
-_PROTOTYPE(PRIVATE iovec_t * alloc_iovec, (int iovec_size, phys_bytes * p));
-_PROTOTYPE(PRIVATE char *tg3_bus_string, (tg3_t * tp, char *str));
-_PROTOTYPE(PRIVATE char *tg3_phy_string, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int carrier_ok, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int fiber_autoneg, (tg3_t * tp, u32_t * txflags, 
-			u32_t * rxflags));
-_PROTOTYPE(PRIVATE int is_multicast_ether_addr, (const u8_t * addr));
-_PROTOTYPE(PRIVATE int is_valid_ether_addr, (const u8_t * addr));
-_PROTOTYPE(PRIVATE int is_zero_ether_addr, (const u8_t * addr));
-_PROTOTYPE(PRIVATE int pci_find_cap, (int devind, int cap, int *addr));
-_PROTOTYPE(PRIVATE int sef_cb_init_fresh, (int type, sef_init_info_t * info));
-_PROTOTYPE(PRIVATE int tg3_5700_link_polarity, (tg3_t * tp, u32_t speed));
-_PROTOTYPE(PRIVATE int tg3_abort_hw, (tg3_t * tp, int silent));
-_PROTOTYPE(PRIVATE int tg3_adv_1000T_flowctrl_ok, (tg3_t * tp, u32_t * lcladv,
-			u32_t * rmtadv));
-_PROTOTYPE(PRIVATE int tg3_alloc_consistent, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_alloc_rx_iovec, (tg3_t * tp, u32_t opaque_key,
-			int src_idx, u32_t dest_idx_unmasked));
-_PROTOTYPE(PRIVATE int tg3_ape_lock, (tg3_t * tp, int locknum));
-_PROTOTYPE(PRIVATE int tg3_bmcr_reset, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_chip_reset, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_copper_is_advertising_all, (tg3_t * tp, u32_t mask));
-_PROTOTYPE(PRIVATE int tg3_do_mem_test, (tg3_t * tp, u32_t offset, u32_t len));
-_PROTOTYPE(PRIVATE int tg3_do_test_dma, (tg3_t * tp, u32_t * buf,
-			vir_bytes buf_dma, int size, int to_device));
-_PROTOTYPE(PRIVATE int tg3_enabled, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_fiber_aneg_smachine, (tg3_t * tp,
-			struct tg3_fiber_aneginfo * ap));
-_PROTOTYPE(PRIVATE int tg3_fw_img_is_valid, (tg3_t * tp, u32_t offset));
-_PROTOTYPE(PRIVATE int tg3_get_device_address, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_get_invariants, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_halt_cpu, (tg3_t * tp, u32_t offset));
-_PROTOTYPE(PRIVATE int tg3_halt, (tg3_t * tp, int kind, int silent));
-_PROTOTYPE(PRIVATE int tg3_init_5401phy_dsp, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_init_hw, (tg3_t * tp, int reset_phy));
-_PROTOTYPE(PRIVATE int tg3_init_rings, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_irq_sync, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_issue_otp_command, (tg3_t * tp, u32_t cmd));
-_PROTOTYPE(PRIVATE int tg3_load_5701_a0_firmware_fix, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_load_tso_firmware, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_mdio_init, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_nvram_exec_cmd, (tg3_t * tp, u32_t nvram_cmd));
-_PROTOTYPE(PRIVATE int tg3_nvram_lock, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_nvram_read_be32, (tg3_t * tp, u32_t offset,
-			u32_t * val));
-_PROTOTYPE(PRIVATE int tg3_nvram_read, (tg3_t * tp, u32_t offset, u32_t * val));
-_PROTOTYPE(PRIVATE int tg3_nvram_read_using_eeprom, (tg3_t * tp, u32_t offset,
-			u32_t * val));
-_PROTOTYPE(PRIVATE int tg3_phy_probe, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_phy_reset_5703_4_5, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_phy_reset_chanpat, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_phy_reset, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_phy_write_and_check_testpat, (tg3_t * tp,
-			int *resetp));
-_PROTOTYPE(PRIVATE int tg3_poll_fw, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_poll_work, (tg3_t * tp, int work_done));
-_PROTOTYPE(PRIVATE int tg3_probe, (tg3_t * db, int skip));
-_PROTOTYPE(PRIVATE int tg3_readphy, (tg3_t * tp, int reg, u32_t * val));
-_PROTOTYPE(PRIVATE int tg3_request_irq, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_reset_hw, (tg3_t * tp, int reset_phy));
-_PROTOTYPE(PRIVATE int tg3_restart_hw, (tg3_t * tp, int reset_phy));
-_PROTOTYPE(PRIVATE int tg3_run_loopback, (tg3_t * tp, int loopback_mode));
-_PROTOTYPE(PRIVATE int tg3_set_power_state, (tg3_t * tp, unsigned int state));
-_PROTOTYPE(PRIVATE int tg3_setup_copper_phy, (tg3_t * tp, int force_reset));
-_PROTOTYPE(PRIVATE int tg3_setup_fiber_by_hand, (tg3_t * tp, u32_t mac_status));
-_PROTOTYPE(PRIVATE int tg3_setup_fiber_hw_autoneg, (tg3_t * tp,
-			u32_t mac_status));
-_PROTOTYPE(PRIVATE int tg3_setup_fiber_mii_phy, (tg3_t * tp, int force_reset));
-_PROTOTYPE(PRIVATE int tg3_setup_fiber_phy, (tg3_t * tp, int force_reset));
-_PROTOTYPE(PRIVATE int tg3_setup_phy, (tg3_t * tp, int force_reset));
-_PROTOTYPE(PRIVATE int tg3_stop_block, (tg3_t * tp, unsigned long ofs,
-			u32_t enable_bit, int silent));
-_PROTOTYPE(PRIVATE int tg3_test_dma, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_test_interrupt, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_test_link, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_test_loopback, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_test_memory, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_test_nvram, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_test_registers, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_wait_macro_done, (tg3_t * tp));
-_PROTOTYPE(PRIVATE int tg3_writephy, (tg3_t * tp, int reg, u32_t val));
-_PROTOTYPE(PRIVATE struct subsys_tbl_ent * lookup_by_subsys, (tg3_t * tp));
-_PROTOTYPE(PRIVATE u16_t tg3_advert_flowctrl_1000T, (u8_t flow_ctrl));
-_PROTOTYPE(PRIVATE u16_t tg3_advert_flowctrl_1000X, (u8_t flow_ctrl));
-_PROTOTYPE(PRIVATE u32_t calc_crc, (unsigned char *buf, int len));
-_PROTOTYPE(PRIVATE u32_t readl, (u8_t * off));
-_PROTOTYPE(PRIVATE u32_t tg3_ape_read32, (tg3_t * tp, u32_t off));
-_PROTOTYPE(PRIVATE u32_t tg3_nvram_logical_addr, (tg3_t * tp, u32_t addr));
-_PROTOTYPE(PRIVATE u32_t tg3_nvram_phys_addr, (tg3_t * tp, u32_t addr));
-_PROTOTYPE(PRIVATE u32_t tg3_read32_mbox_5906, (tg3_t * tp, u32_t off));
-_PROTOTYPE(PRIVATE u32_t tg3_read32, (tg3_t * tp, u32_t off));
-_PROTOTYPE(PRIVATE u32_t tg3_read_indirect_mbox, (tg3_t * tp, u32_t off));
-_PROTOTYPE(PRIVATE u32_t tg3_read_indirect_reg32, (tg3_t * tp, u32_t off));
-_PROTOTYPE(PRIVATE u32_t tg3_read_otp_phycfg, (tg3_t * tp));
-_PROTOTYPE(PRIVATE u8_t mii_resolve_flowctrl_fdx, (u16_t lcladv, u16_t rmtadv));
-_PROTOTYPE(PRIVATE u8_t tg3_resolve_flowctrl_1000X, (u16_t lcladv,
-			u16_t rmtadv));
-_PROTOTYPE(PRIVATE unsigned int hweight8, (unsigned int w));
-_PROTOTYPE(PRIVATE unsigned int tg3_has_work, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void carrier_off, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void carrier_on, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void do_hard_int, (void));
-_PROTOTYPE(PRIVATE void mess_reply, (message * req, message * reply_mess));
-_PROTOTYPE(PRIVATE void pcie_set_readrq, (int devind, int rq));
-_PROTOTYPE(PRIVATE void sef_local_startup, (void));
-_PROTOTYPE(PRIVATE void tg3_ape_driver_state_change, (tg3_t * tp, int kind));
-_PROTOTYPE(PRIVATE void tg3_ape_lock_init, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_ape_send_event, (tg3_t * tp, u32_t event));
-_PROTOTYPE(PRIVATE void tg3_ape_unlock, (tg3_t * tp, int locknum));
-_PROTOTYPE(PRIVATE void tg3_ape_write32, (tg3_t * tp, u32_t off, u32_t val));
-_PROTOTYPE(PRIVATE void tg3_aux_stat_to_speed_duplex, (tg3_t * tp, u32_t val,
-			u16_t * speed, u8_t * duplex));
-_PROTOTYPE(PRIVATE void tg3_cond_int, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_confaddr, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_conf_hw, (tg3_t * db));
-_PROTOTYPE(PRIVATE void tg3_disable_ints, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_disable_nvram_access, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_dump_flags, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_dump, (message * m));
-_PROTOTYPE(PRIVATE void tg3_dump_short_state, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_enable_ints, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_enable_nvram_access, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_free_consistent, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_full_lock, (tg3_t * tp, int irq_sync));
-_PROTOTYPE(PRIVATE void tg3_full_unlock, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_generate_fw_event, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_5752_nvram_info, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_5755_nvram_info, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_5761_nvram_info, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_57780_nvram_info, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_5787_nvram_info, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_5906_nvram_info, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_eeprom_hw_cfg, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_eeprom_size, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_nvram_info, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_get_nvram_size, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_getstat_s, (message * mp));
-_PROTOTYPE(PRIVATE void tg3_init_bcm8002, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_init_bufmgr_config, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_init_coal, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_init_hw_and_addr, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_init_link_config, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_init, (message * mp));
-_PROTOTYPE(PRIVATE void tg3_irq_quiesce, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_link_report, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_mdio_start, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_nvram_init, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_nvram_unlock, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_pci_conf, (void));
-_PROTOTYPE(PRIVATE void tg3_periodic_fetch_stats, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_phy_apply_otp, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_phy_copper_begin, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_phydsp_write, (tg3_t * tp, u32_t reg, u32_t val));
-_PROTOTYPE(PRIVATE void tg3_phy_set_wirespeed, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_phy_toggle_apd, (tg3_t * tp, int enable));
-_PROTOTYPE(PRIVATE void tg3_phy_toggle_automdix, (tg3_t * tp, int enable));
-_PROTOTYPE(PRIVATE void tg3_read_bc_ver, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_read_dash_ver, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_read_fw_ver, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_read_hwsb_ver, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_read_mem, (tg3_t * tp, u32_t off, u32_t * val));
-_PROTOTYPE(PRIVATE void tg3_read_mgmtfw_ver, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_read_partno, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_read_sb_ver, (tg3_t * tp, u32_t val));
-_PROTOTYPE(PRIVATE void tg3_readv_s, (message * mp, int from_int));
-_PROTOTYPE(PRIVATE void tg3_restart_ints, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_restore_pci_state, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_save_pci_state, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_serdes_parallel_detect, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_set_bdinfo, (tg3_t * tp, u32_t bdinfo_addr,
-			vir_bytes mapping, u32_t maxlen_flags, u32_t nic_addr));
-_PROTOTYPE(PRIVATE void __tg3_set_coalesce, (tg3_t * tp, struct coalesce * ec));
-_PROTOTYPE(PRIVATE void __tg3_set_mac_addr, (tg3_t * tp, int skip_mac_1));
-_PROTOTYPE(PRIVATE void tg3_set_multi, (tg3_t * tp, unsigned int accept_all));
-_PROTOTYPE(PRIVATE void __tg3_set_rx_mode, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_setup_flow_control, (tg3_t * tp, u32_t lcladv,
-			u32_t rmtadv));
-_PROTOTYPE(PRIVATE void tg3_start, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_stop_fw, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_stop, (void));
-_PROTOTYPE(PRIVATE void tg3_switch_clocks, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_tx_recover, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_tx, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_ump_link_report, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_wait_for_event_ack, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_write32_mbox_5906, (tg3_t * tp, u32_t off,
-			u32_t val));
-_PROTOTYPE(PRIVATE void tg3_write32, (tg3_t * tp, u32_t off, u32_t val));
-_PROTOTYPE(PRIVATE void tg3_write32_tx_mbox, (tg3_t * tp, u32_t off,
-			u32_t val));
-_PROTOTYPE(PRIVATE void tg3_write_flush_reg32, (tg3_t * tp, u32_t off,
-			u32_t val));
-_PROTOTYPE(PRIVATE void tg3_write_indirect_mbox, (tg3_t * tp, u32_t off,
-			u32_t val));
-_PROTOTYPE(PRIVATE void tg3_write_indirect_reg32, (tg3_t * tp, u32_t off,
-			u32_t val));
-_PROTOTYPE(PRIVATE void tg3_write_mem, (tg3_t * tp, u32_t off, u32_t val));
-_PROTOTYPE(PRIVATE void tg3_write_sig_legacy, (tg3_t * tp, int kind));
-_PROTOTYPE(PRIVATE void tg3_write_sig_post_reset, (tg3_t * tp, int kind));
-_PROTOTYPE(PRIVATE void tg3_write_sig_pre_reset, (tg3_t * tp, int kind));
-_PROTOTYPE(PRIVATE void tg3_writev_s, (message * mp, int from_int));
-_PROTOTYPE(PRIVATE void _tw32_flush, (tg3_t * tp, u32_t off, u32_t val,
-			u32_t usec_wait));
-_PROTOTYPE(PRIVATE void tw32_mailbox_flush, (tg3_t * tp, u32_t off, u32_t val));
-_PROTOTYPE(PRIVATE void writel, (u32_t val, u8_t * off));
-_PROTOTYPE(PRIVATE u32_t tg3_interrupt_tagged, (tg3_t * tp));
-_PROTOTYPE(PRIVATE u32_t tg3_interrupt, (tg3_t * tp));
-_PROTOTYPE(PRIVATE u32_t tg3_tx_avail, (tg3_t * tp));
-_PROTOTYPE(PRIVATE unsigned int tg3_has_rx_work, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void upload_packet, (tg3_t * tp, message * mp,
-			iovec_t * iovec, int len));
-_PROTOTYPE(PRIVATE void tg3_dump_state, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_recycle_rx, (tg3_t * tp, u32_t opaque_key,
-			int src_idx, u32_t dest_idx_unmasked));
-_PROTOTYPE(PRIVATE void tg3_remove_one, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_reset_task, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_self_test, (tg3_t * tp));
-_PROTOTYPE(PRIVATE void tg3_set_txd, (tg3_t * tp, int entry, vir_bytes mapping,
-			int len, u32_t flags, u32_t mss_and_is_end));
-_PROTOTYPE(PRIVATE void tg3_timer, (tg3_t * tp));
+static int tg3_close (tg3_t * tp);
+static int tg3_init_one (tg3_t * tp);
+static int tg3_open (tg3_t * tp);
+static int tg3_poll (tg3_t * tp);
+static int tg3_rx (message * mp, tg3_t * tp);
+static int tg3_set_mac_addr (tg3_t * tp);
+static int tg3_start_transmit (message * mp, tg3_t * tp);
+static iovec_t * alloc_iovec (int iovec_size, phys_bytes * p);
+static char *tg3_bus_string (tg3_t * tp, char *str);
+static char *tg3_phy_string (tg3_t * tp);
+static int carrier_ok (tg3_t * tp);
+static int fiber_autoneg (tg3_t * tp, u32_t * txflags, u32_t * rxflags);
+static int is_multicast_ether_addr (const u8_t * addr);
+static int is_valid_ether_addr (const u8_t * addr);
+static int is_zero_ether_addr (const u8_t * addr);
+static int pci_find_cap (int devind, int cap, int *addr);
+static int sef_cb_init_fresh (int type, sef_init_info_t * info);
+static int tg3_5700_link_polarity (tg3_t * tp, u32_t speed);
+static int tg3_abort_hw (tg3_t * tp, int silent);
+static int tg3_adv_1000T_flowctrl_ok (tg3_t * tp, u32_t * lcladv, u32_t * rmtadv);
+static int tg3_alloc_consistent (tg3_t * tp);
+static int tg3_alloc_rx_iovec (tg3_t * tp, u32_t opaque_key, int src_idx, u32_t dest_idx_unmasked);
+static int tg3_ape_lock (tg3_t * tp, int locknum);
+static int tg3_bmcr_reset (tg3_t * tp);
+static int tg3_chip_reset (tg3_t * tp);
+static int tg3_copper_is_advertising_all (tg3_t * tp, u32_t mask);
+static int tg3_do_mem_test (tg3_t * tp, u32_t offset, u32_t len);
+static int tg3_do_test_dma (tg3_t * tp, u32_t * buf, vir_bytes buf_dma, int size, int to_device);
+static int tg3_enabled (tg3_t * tp);
+static int tg3_fiber_aneg_smachine (tg3_t * tp, struct tg3_fiber_aneginfo * ap);
+static int tg3_fw_img_is_valid (tg3_t * tp, u32_t offset);
+static int tg3_get_device_address (tg3_t * tp);
+static int tg3_get_invariants (tg3_t * tp);
+static int tg3_halt_cpu (tg3_t * tp, u32_t offset);
+static int tg3_halt (tg3_t * tp, int kind, int silent);
+static int tg3_init_5401phy_dsp (tg3_t * tp);
+static int tg3_init_hw (tg3_t * tp, int reset_phy);
+static int tg3_init_rings (tg3_t * tp);
+static int tg3_irq_sync (tg3_t * tp);
+static int tg3_issue_otp_command (tg3_t * tp, u32_t cmd);
+static int tg3_load_5701_a0_firmware_fix (tg3_t * tp);
+static int tg3_load_tso_firmware (tg3_t * tp);
+static int tg3_mdio_init (tg3_t * tp);
+static int tg3_nvram_exec_cmd (tg3_t * tp, u32_t nvram_cmd);
+static int tg3_nvram_lock (tg3_t * tp);
+static int tg3_nvram_read_be32 (tg3_t * tp, u32_t offset, u32_t * val);
+static int tg3_nvram_read (tg3_t * tp, u32_t offset, u32_t * val);
+static int tg3_nvram_read_using_eeprom (tg3_t * tp, u32_t offset, u32_t * val);
+static int tg3_phy_probe (tg3_t * tp);
+static int tg3_phy_reset_5703_4_5 (tg3_t * tp);
+static int tg3_phy_reset_chanpat (tg3_t * tp);
+static int tg3_phy_reset (tg3_t * tp);
+static int tg3_phy_write_and_check_testpat (tg3_t * tp, int *resetp);
+static int tg3_poll_fw (tg3_t * tp);
+static int tg3_poll_work (tg3_t * tp, int work_done);
+static int tg3_probe (tg3_t * db, int skip);
+static int tg3_readphy (tg3_t * tp, int reg, u32_t * val);
+static int tg3_request_irq (tg3_t * tp);
+static int tg3_reset_hw (tg3_t * tp, int reset_phy);
+static int tg3_restart_hw (tg3_t * tp, int reset_phy);
+static int tg3_run_loopback (tg3_t * tp, int loopback_mode);
+static int tg3_set_power_state (tg3_t * tp, unsigned int state);
+static int tg3_setup_copper_phy (tg3_t * tp, int force_reset);
+static int tg3_setup_fiber_by_hand (tg3_t * tp, u32_t mac_status);
+static int tg3_setup_fiber_hw_autoneg (tg3_t * tp, u32_t mac_status);
+static int tg3_setup_fiber_mii_phy (tg3_t * tp, int force_reset);
+static int tg3_setup_fiber_phy (tg3_t * tp, int force_reset);
+static int tg3_setup_phy (tg3_t * tp, int force_reset);
+static int tg3_stop_block (tg3_t * tp, unsigned long ofs, u32_t enable_bit, int silent);
+static int tg3_test_dma (tg3_t * tp);
+static int tg3_test_interrupt (tg3_t * tp);
+static int tg3_test_link (tg3_t * tp);
+static int tg3_test_loopback (tg3_t * tp);
+static int tg3_test_memory (tg3_t * tp);
+static int tg3_test_nvram (tg3_t * tp);
+static int tg3_test_registers (tg3_t * tp);
+static int tg3_wait_macro_done (tg3_t * tp);
+static int tg3_writephy (tg3_t * tp, int reg, u32_t val);
+static struct subsys_tbl_ent * lookup_by_subsys (tg3_t * tp);
+static u16_t tg3_advert_flowctrl_1000T (u8_t flow_ctrl);
+static u16_t tg3_advert_flowctrl_1000X (u8_t flow_ctrl);
+static u32_t calc_crc (unsigned char *buf, int len);
+static u32_t readl (u8_t * off);
+static u32_t tg3_ape_read32 (tg3_t * tp, u32_t off);
+static u32_t tg3_nvram_logical_addr (tg3_t * tp, u32_t addr);
+static u32_t tg3_nvram_phys_addr (tg3_t * tp, u32_t addr);
+static u32_t tg3_read32_mbox_5906 (tg3_t * tp, u32_t off);
+static u32_t tg3_read32 (tg3_t * tp, u32_t off);
+static u32_t tg3_read_indirect_mbox (tg3_t * tp, u32_t off);
+static u32_t tg3_read_indirect_reg32 (tg3_t * tp, u32_t off);
+static u32_t tg3_read_otp_phycfg (tg3_t * tp);
+static u8_t mii_resolve_flowctrl_fdx (u16_t lcladv, u16_t rmtadv);
+static u8_t tg3_resolve_flowctrl_1000X (u16_t lcladv, u16_t rmtadv);
+static unsigned int hweight8 (unsigned int w);
+static unsigned int tg3_has_work (tg3_t * tp);
+static void carrier_off (tg3_t * tp);
+static void carrier_on (tg3_t * tp);
+static void do_hard_int (void);
+static void mess_reply (message * req, message * reply_mess);
+static void pcie_set_readrq (int devind, int rq);
+static void sef_local_startup (void);
+static void tg3_ape_driver_state_change (tg3_t * tp, int kind);
+static void tg3_ape_lock_init (tg3_t * tp);
+static void tg3_ape_send_event (tg3_t * tp, u32_t event);
+static void tg3_ape_unlock (tg3_t * tp, int locknum);
+static void tg3_ape_write32 (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_aux_stat_to_speed_duplex (tg3_t * tp, u32_t val, u16_t * speed, u8_t * duplex);
+static void tg3_cond_int (tg3_t * tp);
+static void tg3_confaddr (tg3_t * tp);
+static void tg3_conf_hw (tg3_t * db);
+static void tg3_disable_ints (tg3_t * tp);
+static void tg3_disable_nvram_access (tg3_t * tp);
+static void tg3_dump_flags (tg3_t * tp);
+static void tg3_dump (message * m);
+static void tg3_dump_short_state (tg3_t * tp);
+static void tg3_enable_ints (tg3_t * tp);
+static void tg3_enable_nvram_access (tg3_t * tp);
+static void tg3_free_consistent (tg3_t * tp);
+static void tg3_full_lock (tg3_t * tp, int irq_sync);
+static void tg3_full_unlock (tg3_t * tp);
+static void tg3_generate_fw_event (tg3_t * tp);
+static void tg3_get_5752_nvram_info (tg3_t * tp);
+static void tg3_get_5755_nvram_info (tg3_t * tp);
+static void tg3_get_5761_nvram_info (tg3_t * tp);
+static void tg3_get_57780_nvram_info (tg3_t * tp);
+static void tg3_get_5787_nvram_info (tg3_t * tp);
+static void tg3_get_5906_nvram_info (tg3_t * tp);
+static void tg3_get_eeprom_hw_cfg (tg3_t * tp);
+static void tg3_get_eeprom_size (tg3_t * tp);
+static void tg3_get_nvram_info (tg3_t * tp);
+static void tg3_get_nvram_size (tg3_t * tp);
+static void tg3_getstat_s (message * mp);
+static void tg3_init_bcm8002 (tg3_t * tp);
+static void tg3_init_bufmgr_config (tg3_t * tp);
+static void tg3_init_coal (tg3_t * tp);
+static void tg3_init_hw_and_addr (tg3_t * tp);
+static void tg3_init_link_config (tg3_t * tp);
+static void tg3_init (message * mp);
+static void tg3_irq_quiesce (tg3_t * tp);
+static void tg3_link_report (tg3_t * tp);
+static void tg3_mdio_start (tg3_t * tp);
+static void tg3_nvram_init (tg3_t * tp);
+static void tg3_nvram_unlock (tg3_t * tp);
+static void tg3_pci_conf (void);
+static void tg3_periodic_fetch_stats (tg3_t * tp);
+static void tg3_phy_apply_otp (tg3_t * tp);
+static void tg3_phy_copper_begin (tg3_t * tp);
+static void tg3_phydsp_write (tg3_t * tp, u32_t reg, u32_t val);
+static void tg3_phy_set_wirespeed (tg3_t * tp);
+static void tg3_phy_toggle_apd (tg3_t * tp, int enable);
+static void tg3_phy_toggle_automdix (tg3_t * tp, int enable);
+static void tg3_read_bc_ver (tg3_t * tp);
+static void tg3_read_dash_ver (tg3_t * tp);
+static void tg3_read_fw_ver (tg3_t * tp);
+static void tg3_read_hwsb_ver (tg3_t * tp);
+static void tg3_read_mem (tg3_t * tp, u32_t off, u32_t * val);
+static void tg3_read_mgmtfw_ver (tg3_t * tp);
+static void tg3_read_partno (tg3_t * tp);
+static void tg3_read_sb_ver (tg3_t * tp, u32_t val);
+static void tg3_readv_s (message * mp, int from_int);
+static void tg3_restart_ints (tg3_t * tp);
+static void tg3_restore_pci_state (tg3_t * tp);
+static void tg3_save_pci_state (tg3_t * tp);
+static void tg3_serdes_parallel_detect (tg3_t * tp);
+static void tg3_set_bdinfo (tg3_t * tp, u32_t bdinfo_addr, vir_bytes mapping, u32_t maxlen_flags, u32_t nic_addr);
+static void __tg3_set_coalesce (tg3_t * tp, struct coalesce * ec);
+static void __tg3_set_mac_addr (tg3_t * tp, int skip_mac_1);
+static void tg3_set_multi (tg3_t * tp, unsigned int accept_all);
+static void __tg3_set_rx_mode (tg3_t * tp);
+static void tg3_setup_flow_control (tg3_t * tp, u32_t lcladv, u32_t rmtadv);
+static void tg3_start (tg3_t * tp);
+static void tg3_stop_fw (tg3_t * tp);
+static void tg3_stop (void);
+static void tg3_switch_clocks (tg3_t * tp);
+static void tg3_tx_recover (tg3_t * tp);
+static void tg3_tx (tg3_t * tp);
+static void tg3_ump_link_report (tg3_t * tp);
+static void tg3_wait_for_event_ack (tg3_t * tp);
+static void tg3_write32_mbox_5906 (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_write32 (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_write32_tx_mbox (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_write_flush_reg32 (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_write_indirect_mbox (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_write_indirect_reg32 (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_write_mem (tg3_t * tp, u32_t off, u32_t val);
+static void tg3_write_sig_legacy (tg3_t * tp, int kind);
+static void tg3_write_sig_post_reset (tg3_t * tp, int kind);
+static void tg3_write_sig_pre_reset (tg3_t * tp, int kind);
+static void tg3_writev_s (message * mp, int from_int);
+static void _tw32_flush (tg3_t * tp, u32_t off, u32_t val, u32_t usec_wait);
+static void tw32_mailbox_flush (tg3_t * tp, u32_t off, u32_t val);
+static void writel (u32_t val, u8_t * off);
+static u32_t tg3_interrupt_tagged (tg3_t * tp);
+static u32_t tg3_interrupt (tg3_t * tp);
+static u32_t tg3_tx_avail (tg3_t * tp);
+static unsigned int tg3_has_rx_work(tg3_t * tp);
+static void upload_packet (tg3_t * tp, message * mp, iovec_t * iovec, int len);
+static void tg3_dump_state (tg3_t * tp);
+static void tg3_recycle_rx (tg3_t * tp, u32_t opaque_key, int src_idx, u32_t dest_idx_unmasked);
+static void tg3_remove_one (tg3_t * tp);
+static void tg3_reset_task (tg3_t * tp);
+static void tg3_self_test (tg3_t * tp);
+static void tg3_set_txd (tg3_t * tp, int entry, vir_bytes mapping, int len, u32_t flags, u32_t mss_and_is_end);
+static void tg3_timer (tg3_t * tp);
 
 
 /* SEF functions and variables. */
-_PROTOTYPE(PRIVATE void sef_local_startup, (void));
-_PROTOTYPE(PRIVATE int sef_cb_init_fresh, (int type, sef_init_info_t * info));
+static void sef_local_startup(void);
+static int sef_cb_init_fresh(int type, sef_init_info_t * info);
 
 /*===========================================================================*
  *				main					     *
@@ -460,7 +437,7 @@ int main(int argc, char *argv[])
 /*===========================================================================*
  *			      sef_local_startup				     *
  *===========================================================================*/
-PRIVATE void sef_local_startup()
+static void sef_local_startup()
 {
 	/* Register init callbacks. */
 	sef_setcb_init_fresh(sef_cb_init_fresh);
@@ -473,7 +450,7 @@ PRIVATE void sef_local_startup()
 /*===========================================================================*
  *		       	   sef_cb_init_fresh   	                             *
  *===========================================================================*/
-PRIVATE int sef_cb_init_fresh(int type, sef_init_info_t * info)
+static int sef_cb_init_fresh(int type, sef_init_info_t * info)
 {
 	long v;
 	int r, fkeys, sfkeys;
@@ -504,7 +481,7 @@ PRIVATE int sef_cb_init_fresh(int type, sef_init_info_t * info)
 /*===========================================================================*
  *				tg3_stop				     *
  *===========================================================================*/
-PRIVATE void tg3_stop()
+static void tg3_stop()
 {
 	tg3_t *db = &tg3_state;
 
@@ -519,7 +496,7 @@ PRIVATE void tg3_stop()
 /*===========================================================================*
  *				tg3_dump				     *
  *===========================================================================*/
-PRIVATE void tg3_dump(message * m)
+static void tg3_dump(message * m)
 {
 	tg3_t *db = &tg3_state;
 
@@ -534,7 +511,7 @@ PRIVATE void tg3_dump(message * m)
 /*===========================================================================*
  *				do_init					     *
  *===========================================================================*/
-PRIVATE void tg3_init(message * mp)
+static void tg3_init(message * mp)
 {
 	static int first_time = 1;
 
@@ -586,7 +563,7 @@ PRIVATE void tg3_init(message * mp)
 /*===========================================================================*
  *				tg3_pci_conf				     *
  *===========================================================================*/
-PRIVATE void tg3_pci_conf()
+static void tg3_pci_conf()
 {
 	tg3_t *db;
 	static char envvar[] = TG3_ENVVAR "#";
@@ -625,7 +602,7 @@ PRIVATE void tg3_pci_conf()
 /*===========================================================================*
  *				tg3_probe				     *
  *===========================================================================*/
-PRIVATE int tg3_probe(tg3_t * db, int skip)
+static int tg3_probe(tg3_t * db, int skip)
 {
 	int i, r, devind, just_one;
 	u16_t vid, did;
@@ -709,7 +686,7 @@ PRIVATE int tg3_probe(tg3_t * db, int skip)
 /*===========================================================================*
  *			tg3_conf_hw					     *
  *===========================================================================*/
-PRIVATE void tg3_conf_hw(tg3_t * db)
+static void tg3_conf_hw(tg3_t * db)
 {
 	static eth_stat_t empty_stat = {0, 0, 0, 0, 0, 0 /* ,... */ };
 
@@ -726,7 +703,7 @@ PRIVATE void tg3_conf_hw(tg3_t * db)
 /*===========================================================================*
  *			tg3_init_hw_and_addr				     *
  *===========================================================================*/
-PRIVATE void tg3_init_hw_and_addr(tg3_t * tp)
+static void tg3_init_hw_and_addr(tg3_t * tp)
 {
 	int s, i;
 
@@ -756,7 +733,7 @@ PRIVATE void tg3_init_hw_and_addr(tg3_t * tp)
 /*===========================================================================*
  *				tg3_confaddr				     *
  *===========================================================================*/
-PRIVATE void tg3_confaddr(tg3_t * tp)
+static void tg3_confaddr(tg3_t * tp)
 {
 	static char eakey[] = TG3_ENVVAR "#_EA";
 	static char eafmt[] = "x:x:x:x:x:x";
@@ -787,7 +764,7 @@ PRIVATE void tg3_confaddr(tg3_t * tp)
 /*===========================================================================*
  *			tg3_readv_s					     *
  *===========================================================================*/
-PRIVATE void tg3_readv_s(message * mp, int from_int)
+static void tg3_readv_s(message * mp, int from_int)
 {
 	int r;
 	tg3_t *tp;
@@ -826,7 +803,7 @@ PRIVATE void tg3_readv_s(message * mp, int from_int)
 /*===========================================================================*
  *			tg3_writev_s					     *
  *===========================================================================*/
-PRIVATE void tg3_writev_s(message * mp, int from_int)
+static void tg3_writev_s(message * mp, int from_int)
 {
 	int r;
 	tg3_t *tp;
@@ -862,7 +839,7 @@ PRIVATE void tg3_writev_s(message * mp, int from_int)
 /*===========================================================================*
  *			tg3_getstat_s					     *
  *===========================================================================*/
-PRIVATE void tg3_getstat_s(message * mp)
+static void tg3_getstat_s(message * mp)
 {
 	int r;
 	eth_stat_t stats;
@@ -889,7 +866,7 @@ PRIVATE void tg3_getstat_s(message * mp)
 /*===========================================================================*
  *			mess_reply					     *
  *===========================================================================*/
-PRIVATE void mess_reply(message * req, message * reply_mess)
+static void mess_reply(message * req, message * reply_mess)
 {
 	if (send(req->m_source, reply_mess) != OK)
 		panic("unable to mess_reply");
@@ -898,7 +875,7 @@ PRIVATE void mess_reply(message * req, message * reply_mess)
 /*===========================================================================*
  *			do_hard_int					     *
  *===========================================================================*/
-PRIVATE void do_hard_int(void)
+static void do_hard_int(void)
 {
 	int s, r;
 	tg3_t *tp = &tg3_state;
@@ -924,7 +901,7 @@ PRIVATE void do_hard_int(void)
 		       s);
 }
 
-PRIVATE int tg3_start_transmit(message * mp, struct tg3 * tp)
+static int tg3_start_transmit(message * mp, struct tg3 * tp)
 {
 	int r, i, size, offset;
 	iovec_s_t vecs[NR_IOREQS];
@@ -980,7 +957,7 @@ PRIVATE int tg3_start_transmit(message * mp, struct tg3 * tp)
 	return 1;
 }
 
-PRIVATE iovec_t *alloc_iovec(int iovec_size, phys_bytes * p)
+static iovec_t *alloc_iovec(int iovec_size, phys_bytes * p)
 {
 	phys_bytes dummy;
 
@@ -995,7 +972,7 @@ PRIVATE iovec_t *alloc_iovec(int iovec_size, phys_bytes * p)
 	return r;
 }
 
-PRIVATE void upload_packet(tg3_t * tp, message * mp, iovec_t * iovec, int len)
+static void upload_packet(tg3_t * tp, message * mp, iovec_t * iovec, int len)
 {
 	int r, offset, remaining, i, size;
 	iovec_s_t vecs[NR_IOREQS];
@@ -1070,7 +1047,7 @@ PRIVATE void upload_packet(tg3_t * tp, message * mp, iovec_t * iovec, int len)
  * If both the host and chip were to write into the same ring, cache line
  * eviction could occur since both entities want it in an exclusive state.
  */
-PRIVATE int tg3_rx(message * mp, struct tg3 * tp)
+static int tg3_rx(message * mp, struct tg3 * tp)
 {
 	u32_t work_mask, rx_std_posted = 0;
 	u32_t sw_idx = tp->rx_rcb_ptr;
@@ -1156,7 +1133,7 @@ next_pkt_nopost:
 	return len;
 }
 
-PRIVATE unsigned int tg3_has_rx_work(struct tg3 * tp)
+static unsigned int tg3_has_rx_work(struct tg3 * tp)
 {
 	struct tg3_hw_status *sblk = tp->hw_status;
 
@@ -1174,7 +1151,7 @@ PRIVATE unsigned int tg3_has_rx_work(struct tg3 * tp)
  *
  * Return true if the address is all zeroes.
  */
-PRIVATE int is_zero_ether_addr(const u8_t * addr)
+static int is_zero_ether_addr(const u8_t * addr)
 {
 	return !(addr[0] | addr[1] | addr[2] | addr[3] | addr[4] | addr[5]);
 }
@@ -1186,7 +1163,7 @@ PRIVATE int is_zero_ether_addr(const u8_t * addr)
  * Return true if the address is a multicast address.
  * By definition the broadcast address is also a multicast address.
  */
-PRIVATE int is_multicast_ether_addr(const u8_t * addr)
+static int is_multicast_ether_addr(const u8_t * addr)
 {
 	return (0x01 & addr[0]);
 }
@@ -1201,7 +1178,7 @@ PRIVATE int is_multicast_ether_addr(const u8_t * addr)
  * Return true if the address is valid.
  */
 
-PRIVATE int is_valid_ether_addr(const u8_t * addr)
+static int is_valid_ether_addr(const u8_t * addr)
 {
 	/* FF:FF:FF:FF:FF:FF is a multicast address so we don't need to
 	 * explicitly check for it here. */
@@ -1215,7 +1192,7 @@ PRIVATE int is_valid_ether_addr(const u8_t * addr)
  *
  * Resolve full duplex flow control as per IEEE 802.3-2005 table 28B-3
  */
-PRIVATE u8_t mii_resolve_flowctrl_fdx(u16_t lcladv, u16_t rmtadv)
+static u8_t mii_resolve_flowctrl_fdx(u16_t lcladv, u16_t rmtadv)
 {
 	u8_t cap = 0;
 
@@ -1242,31 +1219,31 @@ PRIVATE u8_t mii_resolve_flowctrl_fdx(u16_t lcladv, u16_t rmtadv)
  *
  * The Hamming Weight of a number is the total number of bits set in it.
  */
-PRIVATE unsigned int hweight8(unsigned int w)
+static unsigned int hweight8(unsigned int w)
 {
 	unsigned int res = w - ((w >> 1) & 0x55);
 	res = (res & 0x33) + ((res >> 2) & 0x33);
 	return (res + (res >> 4)) & 0x0F;
 }
 
-PRIVATE void carrier_on(tg3_t * tp)
+static void carrier_on(tg3_t * tp)
 {
 	printf("%s: carrier up\n", tp->name);
 	tp->carrier = 1;
 }
 
-PRIVATE void carrier_off(tg3_t * tp)
+static void carrier_off(tg3_t * tp)
 {
 	tp->carrier = 0;
 	printf("%s: carrier down\n", tp->name);
 }
 
-PRIVATE int tg3_enabled(tg3_t * tp)
+static int tg3_enabled(tg3_t * tp)
 {
 	return (tp->flags & TG3_ENABLED);
 }
 
-PRIVATE int pci_find_cap(int devind, int cap, int *addr)
+static int pci_find_cap(int devind, int cap, int *addr)
 {
 	u8_t status, capptr, type, next;
 
@@ -1299,7 +1276,7 @@ PRIVATE int pci_find_cap(int devind, int cap, int *addr)
  *
  * If possible sets maximum read byte count
  */
-PRIVATE void pcie_set_readrq(int devind, int rq)
+static void pcie_set_readrq(int devind, int rq)
 {
 #define PCI_EXP_DEVCTL          8	/* Device Control */
 #define  PCI_EXP_DEVCTL_READRQ  0x7000	/* Max_Read_Request_Size */
@@ -1327,22 +1304,22 @@ PRIVATE void pcie_set_readrq(int devind, int rq)
 	}
 }
 
-PRIVATE int carrier_ok(tg3_t * tp)
+static int carrier_ok(tg3_t * tp)
 {
 	return tp->carrier;
 }
 
-PRIVATE u32_t readl(u8_t * off)
+static u32_t readl(u8_t * off)
 {
 	return *(u32_t *) off;
 }
 
-PRIVATE void writel(u32_t val, u8_t * off)
+static void writel(u32_t val, u8_t * off)
 {
 	*(u32_t *) off = val;
 }
 
-PRIVATE void tg3_dump_flags(tg3_t * tp)
+static void tg3_dump_flags(tg3_t * tp)
 {
 	printf("TG3_FLAG_TAGGED_STATUS\t\t is %d\n", 
 			!!(TG3_FLAG_TAGGED_STATUS & tp->tg3_flags));
@@ -1504,39 +1481,39 @@ PRIVATE void tg3_dump_flags(tg3_t * tp)
 			!!(TG3_FLG3_NO_NVRAM & tp->tg3_flags3));
 }
 
-PRIVATE void tg3_write32(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_write32(tg3_t * tp, u32_t off, u32_t val)
 {
 	writel(val, tp->regs + off);
 }
 
-PRIVATE u32_t tg3_read32(tg3_t * tp, u32_t off)
+static u32_t tg3_read32(tg3_t * tp, u32_t off)
 {
 	return readl(tp->regs + off);
 }
 
-PRIVATE void tg3_ape_write32(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_ape_write32(tg3_t * tp, u32_t off, u32_t val)
 {
 	writel(val, tp->aperegs + off);
 }
 
-PRIVATE u32_t tg3_ape_read32(tg3_t * tp, u32_t off)
+static u32_t tg3_ape_read32(tg3_t * tp, u32_t off)
 {
 	return (readl(tp->aperegs + off));
 }
 
-PRIVATE void tg3_write_indirect_reg32(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_write_indirect_reg32(tg3_t * tp, u32_t off, u32_t val)
 {
 	pci_attr_w32(tp->devind, TG3PCI_REG_BASE_ADDR, off);
 	pci_attr_w32(tp->devind, TG3PCI_REG_DATA, val);
 }
 
-PRIVATE void tg3_write_flush_reg32(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_write_flush_reg32(tg3_t * tp, u32_t off, u32_t val)
 {
 	writel(val, tp->regs + off);
 	readl(tp->regs + off);
 }
 
-PRIVATE u32_t tg3_read_indirect_reg32(tg3_t * tp, u32_t off)
+static u32_t tg3_read_indirect_reg32(tg3_t * tp, u32_t off)
 {
 	u32_t val;
 
@@ -1546,7 +1523,7 @@ PRIVATE u32_t tg3_read_indirect_reg32(tg3_t * tp, u32_t off)
 	return val;
 }
 
-PRIVATE void tg3_write_indirect_mbox(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_write_indirect_mbox(tg3_t * tp, u32_t off, u32_t val)
 {
 	if (off == (MAILBOX_RCVRET_CON_IDX_0 + TG3_64BIT_REG_LOW)) {
 		pci_attr_w32(tp->devind, TG3PCI_RCV_RET_RING_CON_IDX +
@@ -1572,7 +1549,7 @@ PRIVATE void tg3_write_indirect_mbox(tg3_t * tp, u32_t off, u32_t val)
 	}
 }
 
-PRIVATE u32_t tg3_read_indirect_mbox(tg3_t * tp, u32_t off)
+static u32_t tg3_read_indirect_mbox(tg3_t * tp, u32_t off)
 {
 	u32_t val;
 
@@ -1587,7 +1564,7 @@ PRIVATE u32_t tg3_read_indirect_mbox(tg3_t * tp, u32_t off)
  * GRC_LOCAL_CTRL is one example if the GPIOs are toggled to switch power.
  * TG3PCI_CLOCK_CTRL is another example if the clock frequencies are changed.
  */
-PRIVATE void _tw32_flush(tg3_t * tp, u32_t off, u32_t val, u32_t usec_wait)
+static void _tw32_flush(tg3_t * tp, u32_t off, u32_t val, u32_t usec_wait)
 {
 	if ((tp->tg3_flags & TG3_FLAG_PCIX_TARGET_HWBUG) ||
 	    (tp->tg3_flags2 & TG3_FLG2_ICH_WORKAROUND)) {
@@ -1606,7 +1583,7 @@ PRIVATE void _tw32_flush(tg3_t * tp, u32_t off, u32_t val, u32_t usec_wait)
 		micro_delay(usec_wait);
 }
 
-PRIVATE void tw32_mailbox_flush(tg3_t * tp, u32_t off, u32_t val)
+static void tw32_mailbox_flush(tg3_t * tp, u32_t off, u32_t val)
 {
 	tp->write32_mbox(tp, off, val);
 	if (!(tp->tg3_flags & TG3_FLAG_MBOX_WRITE_REORDER) &&
@@ -1614,7 +1591,7 @@ PRIVATE void tw32_mailbox_flush(tg3_t * tp, u32_t off, u32_t val)
 		tp->read32_mbox(tp, off);
 }
 
-PRIVATE void tg3_write32_tx_mbox(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_write32_tx_mbox(tg3_t * tp, u32_t off, u32_t val)
 {
 	u8_t *mbox = tp->regs + off;
 
@@ -1625,17 +1602,17 @@ PRIVATE void tg3_write32_tx_mbox(tg3_t * tp, u32_t off, u32_t val)
 		readl(mbox);
 }
 
-PRIVATE u32_t tg3_read32_mbox_5906(tg3_t * tp, u32_t off)
+static u32_t tg3_read32_mbox_5906(tg3_t * tp, u32_t off)
 {
 	return (readl(tp->regs + off + GRCMBOX_BASE));
 }
 
-PRIVATE void tg3_write32_mbox_5906(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_write32_mbox_5906(tg3_t * tp, u32_t off, u32_t val)
 {
 	writel(val, tp->regs + off + GRCMBOX_BASE);
 }
 
-PRIVATE void tg3_write_mem(tg3_t * tp, u32_t off, u32_t val)
+static void tg3_write_mem(tg3_t * tp, u32_t off, u32_t val)
 {
 	if ((GET_ASIC_REV(tp->pci_chip_rev_id) == ASIC_REV_5906) &&
 	    (off >= NIC_SRAM_STATS_BLK) && (off < NIC_SRAM_TX_BUFFER_DESC))
@@ -1656,7 +1633,7 @@ PRIVATE void tg3_write_mem(tg3_t * tp, u32_t off, u32_t val)
 	}
 }
 
-PRIVATE void tg3_read_mem(tg3_t * tp, u32_t off, u32_t * val)
+static void tg3_read_mem(tg3_t * tp, u32_t off, u32_t * val)
 {
 	if ((GET_ASIC_REV(tp->pci_chip_rev_id) == ASIC_REV_5906) &&
 	    (off >= NIC_SRAM_STATS_BLK) && (off < NIC_SRAM_TX_BUFFER_DESC)) {
@@ -1678,7 +1655,7 @@ PRIVATE void tg3_read_mem(tg3_t * tp, u32_t off, u32_t * val)
 	}
 }
 
-PRIVATE void tg3_ape_lock_init(tg3_t * tp)
+static void tg3_ape_lock_init(tg3_t * tp)
 {
 	int i;
 
@@ -1688,7 +1665,7 @@ PRIVATE void tg3_ape_lock_init(tg3_t * tp)
 				APE_LOCK_GRANT_DRIVER);
 }
 
-PRIVATE int tg3_ape_lock(tg3_t * tp, int locknum)
+static int tg3_ape_lock(tg3_t * tp, int locknum)
 {
 	int i, off;
 	int ret = 0;
@@ -1727,7 +1704,7 @@ PRIVATE int tg3_ape_lock(tg3_t * tp, int locknum)
 	return ret;
 }
 
-PRIVATE void tg3_ape_unlock(tg3_t * tp, int locknum)
+static void tg3_ape_unlock(tg3_t * tp, int locknum)
 {
 	int off;
 
@@ -1746,14 +1723,14 @@ PRIVATE void tg3_ape_unlock(tg3_t * tp, int locknum)
 	tg3_ape_write32(tp, TG3_APE_LOCK_GRANT + off, APE_LOCK_GRANT_DRIVER);
 }
 
-PRIVATE void tg3_disable_ints(tg3_t * tp)
+static void tg3_disable_ints(tg3_t * tp)
 {
 	tw32(TG3PCI_MISC_HOST_CTRL,
 	     (tp->misc_host_ctrl | MISC_HOST_CTRL_MASK_PCI_INT));
 	tw32_mailbox_f(MAILBOX_INTERRUPT_0 + TG3_64BIT_REG_LOW, 0x00000001);
 }
 
-PRIVATE void tg3_cond_int(tg3_t * tp)
+static void tg3_cond_int(tg3_t * tp)
 {
 	if (!(tp->tg3_flags & TG3_FLAG_TAGGED_STATUS) &&
 	    (tp->hw_status->status & SD_STATUS_UPDATED))
@@ -1764,7 +1741,7 @@ PRIVATE void tg3_cond_int(tg3_t * tp)
 }
 
 
-PRIVATE void tg3_enable_ints(tg3_t * tp)
+static void tg3_enable_ints(tg3_t * tp)
 {
 	tp->irq_sync = 0;
 
@@ -1778,7 +1755,7 @@ PRIVATE void tg3_enable_ints(tg3_t * tp)
 	tg3_cond_int(tp);
 }
 
-PRIVATE unsigned int tg3_has_work(tg3_t * tp)
+static unsigned int tg3_has_work(tg3_t * tp)
 {
 	struct tg3_hw_status *sblk = tp->hw_status;
 	unsigned int work_exists = 0;
@@ -1803,7 +1780,7 @@ PRIVATE unsigned int tg3_has_work(tg3_t * tp)
  *  is new work pending and can return without flushing the PIO write
  *  which reenables interrupts
  */
-PRIVATE void tg3_restart_ints(tg3_t * tp)
+static void tg3_restart_ints(tg3_t * tp)
 {
 	tw32_mailbox(MAILBOX_INTERRUPT_0 + TG3_64BIT_REG_LOW,
 		     tp->last_tag << 24);
@@ -1817,13 +1794,13 @@ PRIVATE void tg3_restart_ints(tg3_t * tp)
 		     (HOSTCC_MODE_ENABLE | HOSTCC_MODE_NOW));
 }
 
-PRIVATE void tg3_start(tg3_t * tp)
+static void tg3_start(tg3_t * tp)
 {
 	tp->hw_status->status |= SD_STATUS_UPDATED;
 	tg3_enable_ints(tp);
 }
 
-PRIVATE void tg3_switch_clocks(tg3_t * tp)
+static void tg3_switch_clocks(tg3_t * tp)
 {
 	u32_t clock_ctrl = tr32(TG3PCI_CLOCK_CTRL);
 	u32_t orig_clock_ctrl;
@@ -1857,7 +1834,7 @@ PRIVATE void tg3_switch_clocks(tg3_t * tp)
 
 #define PHY_BUSY_LOOPS	5000
 
-PRIVATE int tg3_readphy(tg3_t * tp, int reg, u32_t * val)
+static int tg3_readphy(tg3_t * tp, int reg, u32_t * val)
 {
 	u32_t frame_val;
 	unsigned int loops;
@@ -1903,7 +1880,7 @@ PRIVATE int tg3_readphy(tg3_t * tp, int reg, u32_t * val)
 	return ret;
 }
 
-PRIVATE int tg3_writephy(tg3_t * tp, int reg, u32_t val)
+static int tg3_writephy(tg3_t * tp, int reg, u32_t val)
 {
 	u32_t frame_val;
 	unsigned int loops;
@@ -1950,7 +1927,7 @@ PRIVATE int tg3_writephy(tg3_t * tp, int reg, u32_t val)
 	return ret;
 }
 
-PRIVATE int tg3_bmcr_reset(tg3_t * tp)
+static int tg3_bmcr_reset(tg3_t * tp)
 {
 	u32_t phy_control;
 	int limit, err;
@@ -1980,7 +1957,7 @@ PRIVATE int tg3_bmcr_reset(tg3_t * tp)
 	return 0;
 }
 
-PRIVATE void tg3_mdio_start(tg3_t * tp)
+static void tg3_mdio_start(tg3_t * tp)
 {
 	u32_t val;
 
@@ -2048,13 +2025,13 @@ PRIVATE void tg3_mdio_start(tg3_t * tp)
 	}
 	tw32(MAC_EXT_RGMII_MODE, val);
 }
-PRIVATE int tg3_mdio_init(struct tg3 * tp)
+static int tg3_mdio_init(struct tg3 * tp)
 {
 	tg3_mdio_start(tp);
 	return 0;
 }
 
-PRIVATE void tg3_generate_fw_event(tg3_t * tp)
+static void tg3_generate_fw_event(tg3_t * tp)
 {
 	u32_t val;
 
@@ -2065,13 +2042,13 @@ PRIVATE void tg3_generate_fw_event(tg3_t * tp)
 
 
 
-PRIVATE void tg3_wait_for_event_ack(tg3_t * tp)
+static void tg3_wait_for_event_ack(tg3_t * tp)
 {
 /*#define TG3_FW_EVENT_TIMEOUT_USEC 2500*/
 	/* In Minix we currently we don't need this. */
 }
 
-PRIVATE void tg3_ump_link_report(tg3_t * tp)
+static void tg3_ump_link_report(tg3_t * tp)
 {
 	u32_t reg;
 	u32_t val;
@@ -2118,7 +2095,7 @@ PRIVATE void tg3_ump_link_report(tg3_t * tp)
 	tg3_generate_fw_event(tp);
 }
 
-PRIVATE void tg3_link_report(tg3_t * tp)
+static void tg3_link_report(tg3_t * tp)
 {
 	if (!carrier_ok(tp)) {
 		printf("%s: Link is down.\n", tp->name);
@@ -2144,7 +2121,7 @@ PRIVATE void tg3_link_report(tg3_t * tp)
 	}
 }
 
-PRIVATE u16_t tg3_advert_flowctrl_1000T(u8_t flow_ctrl)
+static u16_t tg3_advert_flowctrl_1000T(u8_t flow_ctrl)
 {
 	u16_t miireg;
 
@@ -2160,7 +2137,7 @@ PRIVATE u16_t tg3_advert_flowctrl_1000T(u8_t flow_ctrl)
 	return miireg;
 }
 
-PRIVATE u16_t tg3_advert_flowctrl_1000X(u8_t flow_ctrl)
+static u16_t tg3_advert_flowctrl_1000X(u8_t flow_ctrl)
 {
 	u16_t miireg;
 
@@ -2176,7 +2153,7 @@ PRIVATE u16_t tg3_advert_flowctrl_1000X(u8_t flow_ctrl)
 	return miireg;
 }
 
-PRIVATE u8_t tg3_resolve_flowctrl_1000X(u16_t lcladv, u16_t rmtadv)
+static u8_t tg3_resolve_flowctrl_1000X(u16_t lcladv, u16_t rmtadv)
 {
 	u8_t cap = 0;
 
@@ -2197,7 +2174,7 @@ PRIVATE u8_t tg3_resolve_flowctrl_1000X(u16_t lcladv, u16_t rmtadv)
 	return cap;
 }
 
-PRIVATE void tg3_setup_flow_control(tg3_t * tp, u32_t lcladv, u32_t rmtadv)
+static void tg3_setup_flow_control(tg3_t * tp, u32_t lcladv, u32_t rmtadv)
 {
 	u8_t autoneg;
 	u8_t flowctrl = 0;
@@ -2234,13 +2211,13 @@ PRIVATE void tg3_setup_flow_control(tg3_t * tp, u32_t lcladv, u32_t rmtadv)
 		tw32_f(MAC_TX_MODE, tp->tx_mode);
 }
 
-PRIVATE void tg3_phydsp_write(tg3_t * tp, u32_t reg, u32_t val)
+static void tg3_phydsp_write(tg3_t * tp, u32_t reg, u32_t val)
 {
 	tg3_writephy(tp, MII_TG3_DSP_ADDRESS, reg);
 	tg3_writephy(tp, MII_TG3_DSP_RW_PORT, val);
 }
 
-PRIVATE void tg3_phy_toggle_apd(tg3_t * tp, int enable)
+static void tg3_phy_toggle_apd(tg3_t * tp, int enable)
 {
 	u32_t reg;
 
@@ -2269,7 +2246,7 @@ PRIVATE void tg3_phy_toggle_apd(tg3_t * tp, int enable)
 	tg3_writephy(tp, MII_TG3_MISC_SHDW, reg);
 }
 
-PRIVATE void tg3_phy_toggle_automdix(tg3_t * tp, int enable)
+static void tg3_phy_toggle_automdix(tg3_t * tp, int enable)
 {
 	u32_t phy;
 
@@ -2307,7 +2284,7 @@ PRIVATE void tg3_phy_toggle_automdix(tg3_t * tp, int enable)
 	}
 }
 
-PRIVATE void tg3_phy_set_wirespeed(tg3_t * tp)
+static void tg3_phy_set_wirespeed(tg3_t * tp)
 {
 	u32_t val;
 
@@ -2320,7 +2297,7 @@ PRIVATE void tg3_phy_set_wirespeed(tg3_t * tp)
 			     (val | (1 << 15) | (1 << 4)));
 }
 
-PRIVATE void tg3_phy_apply_otp(tg3_t * tp)
+static void tg3_phy_apply_otp(tg3_t * tp)
 {
 	u32_t otp, phy;
 
@@ -2363,7 +2340,7 @@ PRIVATE void tg3_phy_apply_otp(tg3_t * tp)
 	tg3_writephy(tp, MII_TG3_AUX_CTRL, phy);
 }
 
-PRIVATE int tg3_wait_macro_done(tg3_t * tp)
+static int tg3_wait_macro_done(tg3_t * tp)
 {
 	int limit = 100;
 
@@ -2381,7 +2358,7 @@ PRIVATE int tg3_wait_macro_done(tg3_t * tp)
 	return 0;
 }
 
-PRIVATE int tg3_phy_write_and_check_testpat(tg3_t * tp, int *resetp)
+static int tg3_phy_write_and_check_testpat(tg3_t * tp, int *resetp)
 {
 	static const u32_t test_pat[4][6] = {
 	  {0x00005555, 0x00000005, 0x00002aaa, 0x0000000a, 0x00003456, 0x00000003},
@@ -2444,7 +2421,7 @@ PRIVATE int tg3_phy_write_and_check_testpat(tg3_t * tp, int *resetp)
 	return 0;
 }
 
-PRIVATE int tg3_phy_reset_chanpat(tg3_t * tp)
+static int tg3_phy_reset_chanpat(tg3_t * tp)
 {
 	int chan;
 
@@ -2464,7 +2441,7 @@ PRIVATE int tg3_phy_reset_chanpat(tg3_t * tp)
 	return 0;
 }
 
-PRIVATE int tg3_phy_reset_5703_4_5(tg3_t * tp)
+static int tg3_phy_reset_5703_4_5(tg3_t * tp)
 {
 	u32_t reg32, phy9_orig;
 	int retries, do_phy_reset, err;
@@ -2541,7 +2518,7 @@ PRIVATE int tg3_phy_reset_5703_4_5(tg3_t * tp)
 /* This will reset the tigon3 PHY if there is no valid
  * link unless the FORCE argument is non-zero.
  */
-PRIVATE int tg3_phy_reset(tg3_t * tp)
+static int tg3_phy_reset(tg3_t * tp)
 {
 	u32_t cpmuctrl;
 	u32_t phy_status;
@@ -2674,7 +2651,7 @@ out:
 	return 0;
 }
 
-PRIVATE int tg3_5700_link_polarity(tg3_t * tp, u32_t speed)
+static int tg3_5700_link_polarity(tg3_t * tp, u32_t speed)
 {
 	if (tp->led_ctrl == LED_CTRL_MODE_PHY_2)
 		return 1;
@@ -2691,7 +2668,7 @@ PRIVATE int tg3_5700_link_polarity(tg3_t * tp, u32_t speed)
 #define RESET_KIND_INIT		1
 #define RESET_KIND_SUSPEND	2
 
-PRIVATE int tg3_nvram_lock(tg3_t * tp)
+static int tg3_nvram_lock(tg3_t * tp)
 {
 	if (tp->tg3_flags & TG3_FLAG_NVRAM) {
 		int i;
@@ -2715,7 +2692,7 @@ PRIVATE int tg3_nvram_lock(tg3_t * tp)
 }
 
 
-PRIVATE void tg3_nvram_unlock(tg3_t * tp)
+static void tg3_nvram_unlock(tg3_t * tp)
 {
 	if (tp->tg3_flags & TG3_FLAG_NVRAM) {
 		if (tp->nvram_lock_cnt > 0)
@@ -2725,7 +2702,7 @@ PRIVATE void tg3_nvram_unlock(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_enable_nvram_access(tg3_t * tp)
+static void tg3_enable_nvram_access(tg3_t * tp)
 {
 	if ((tp->tg3_flags2 & TG3_FLG2_5750_PLUS) &&
 	    !(tp->tg3_flags2 & TG3_FLG2_PROTECTED_NVRAM)) {
@@ -2735,7 +2712,7 @@ PRIVATE void tg3_enable_nvram_access(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_disable_nvram_access(tg3_t * tp)
+static void tg3_disable_nvram_access(tg3_t * tp)
 {
 	if ((tp->tg3_flags2 & TG3_FLG2_5750_PLUS) &&
 	    !(tp->tg3_flags2 & TG3_FLG2_PROTECTED_NVRAM)) {
@@ -2745,7 +2722,7 @@ PRIVATE void tg3_disable_nvram_access(tg3_t * tp)
 	}
 }
 
-PRIVATE int tg3_nvram_read_using_eeprom(tg3_t * tp,
+static int tg3_nvram_read_using_eeprom(tg3_t * tp,
 					 u32_t offset, u32_t * val)
 {
 	u32_t tmp;
@@ -2786,7 +2763,7 @@ PRIVATE int tg3_nvram_read_using_eeprom(tg3_t * tp,
 
 #define NVRAM_CMD_TIMEOUT 10000
 
-PRIVATE int tg3_nvram_exec_cmd(tg3_t * tp, u32_t nvram_cmd)
+static int tg3_nvram_exec_cmd(tg3_t * tp, u32_t nvram_cmd)
 {
 	int i;
 
@@ -2805,7 +2782,7 @@ PRIVATE int tg3_nvram_exec_cmd(tg3_t * tp, u32_t nvram_cmd)
 	return 0;
 }
 
-PRIVATE u32_t tg3_nvram_phys_addr(tg3_t * tp, u32_t addr)
+static u32_t tg3_nvram_phys_addr(tg3_t * tp, u32_t addr)
 {
 	if ((tp->tg3_flags & TG3_FLAG_NVRAM) &&
 	    (tp->tg3_flags & TG3_FLAG_NVRAM_BUFFERED) &&
@@ -2819,7 +2796,7 @@ PRIVATE u32_t tg3_nvram_phys_addr(tg3_t * tp, u32_t addr)
 	return addr;
 }
 
-PRIVATE u32_t tg3_nvram_logical_addr(tg3_t * tp, u32_t addr)
+static u32_t tg3_nvram_logical_addr(tg3_t * tp, u32_t addr)
 {
 	if ((tp->tg3_flags & TG3_FLAG_NVRAM) &&
 	    (tp->tg3_flags & TG3_FLAG_NVRAM_BUFFERED) &&
@@ -2839,7 +2816,7 @@ PRIVATE u32_t tg3_nvram_logical_addr(tg3_t * tp, u32_t addr)
  * returned will be exactly as it is seen in NVRAM.  On a LE
  * machine, the 32-bit value will be byteswapped.
  */
-PRIVATE int tg3_nvram_read(tg3_t * tp, u32_t offset, u32_t * val)
+static int tg3_nvram_read(tg3_t * tp, u32_t offset, u32_t * val)
 {
 	int ret;
 
@@ -2872,7 +2849,7 @@ PRIVATE int tg3_nvram_read(tg3_t * tp, u32_t offset, u32_t * val)
 }
 
 /* Ensures NVRAM data is in bytestream format. */
-PRIVATE int tg3_nvram_read_be32(tg3_t * tp, u32_t offset, u32_t * val)
+static int tg3_nvram_read_be32(tg3_t * tp, u32_t offset, u32_t * val)
 {
 	u32_t v;
 	int res = tg3_nvram_read(tp, offset, &v);
@@ -2881,7 +2858,7 @@ PRIVATE int tg3_nvram_read_be32(tg3_t * tp, u32_t offset, u32_t * val)
 	return res;
 }
 
-PRIVATE void __tg3_set_mac_addr(tg3_t * tp, int skip_mac_1)
+static void __tg3_set_mac_addr(tg3_t * tp, int skip_mac_1)
 {
 
 	u32_t addr_high, addr_low;
@@ -2917,7 +2894,7 @@ PRIVATE void __tg3_set_mac_addr(tg3_t * tp, int skip_mac_1)
 	tw32(MAC_TX_BACKOFF_SEED, addr_high);
 }
 
-PRIVATE int tg3_set_power_state(tg3_t * tp, unsigned int state)
+static int tg3_set_power_state(tg3_t * tp, unsigned int state)
 {
 	u32_t misc_host_ctrl;
 
@@ -2965,7 +2942,7 @@ PRIVATE int tg3_set_power_state(tg3_t * tp, unsigned int state)
 	return 0;
 }
 
-PRIVATE void tg3_aux_stat_to_speed_duplex(tg3_t * tp, u32_t val, u16_t * speed,
+static void tg3_aux_stat_to_speed_duplex(tg3_t * tp, u32_t val, u16_t * speed,
 			u8_t * duplex)
 {
 	switch (val & MII_TG3_AUX_STAT_SPDMASK) {
@@ -3013,7 +2990,7 @@ PRIVATE void tg3_aux_stat_to_speed_duplex(tg3_t * tp, u32_t val, u16_t * speed,
 	}
 }
 
-PRIVATE void tg3_phy_copper_begin(tg3_t * tp)
+static void tg3_phy_copper_begin(tg3_t * tp)
 {
 	u32_t new_adv;
 	int i;
@@ -3150,7 +3127,7 @@ PRIVATE void tg3_phy_copper_begin(tg3_t * tp)
 	}
 }
 
-PRIVATE int tg3_init_5401phy_dsp(tg3_t * tp)
+static int tg3_init_5401phy_dsp(tg3_t * tp)
 {
 	int err;
 
@@ -3178,7 +3155,7 @@ PRIVATE int tg3_init_5401phy_dsp(tg3_t * tp)
 	return err;
 }
 
-PRIVATE int tg3_copper_is_advertising_all(tg3_t * tp, u32_t mask)
+static int tg3_copper_is_advertising_all(tg3_t * tp, u32_t mask)
 {
 	u32_t adv_reg, all_mask = 0;
 
@@ -3214,7 +3191,7 @@ PRIVATE int tg3_copper_is_advertising_all(tg3_t * tp, u32_t mask)
 	return 1;
 }
 
-PRIVATE int tg3_adv_1000T_flowctrl_ok(tg3_t * tp, u32_t * lcladv,
+static int tg3_adv_1000T_flowctrl_ok(tg3_t * tp, u32_t * lcladv,
 			u32_t * rmtadv)
 {
 	u32_t curadv, reqadv;
@@ -3246,7 +3223,7 @@ PRIVATE int tg3_adv_1000T_flowctrl_ok(tg3_t * tp, u32_t * lcladv,
 	return 1;
 }
 
-PRIVATE int tg3_setup_copper_phy(tg3_t * tp, int force_reset)
+static int tg3_setup_copper_phy(tg3_t * tp, int force_reset)
 {
 	int current_link_up;
 	u32_t bmsr, dummy;
@@ -3515,7 +3492,7 @@ relink:
 	return 0;
 }
 
-PRIVATE int tg3_fiber_aneg_smachine(tg3_t * tp,
+static int tg3_fiber_aneg_smachine(tg3_t * tp,
 				     struct tg3_fiber_aneginfo * ap)
 {
 	u16_t flowctrl;
@@ -3769,7 +3746,7 @@ PRIVATE int tg3_fiber_aneg_smachine(tg3_t * tp,
 	return ret;
 }
 
-PRIVATE int fiber_autoneg(tg3_t * tp, u32_t * txflags, u32_t * rxflags)
+static int fiber_autoneg(tg3_t * tp, u32_t * txflags, u32_t * rxflags)
 {
 	int res = 0;
 	struct tg3_fiber_aneginfo aninfo;
@@ -3814,7 +3791,7 @@ PRIVATE int fiber_autoneg(tg3_t * tp, u32_t * txflags, u32_t * rxflags)
 	return res;
 }
 
-PRIVATE void tg3_init_bcm8002(tg3_t * tp)
+static void tg3_init_bcm8002(tg3_t * tp)
 {
 	u32_t mac_status = tr32(MAC_STATUS);
 	int i;
@@ -3861,7 +3838,7 @@ PRIVATE void tg3_init_bcm8002(tg3_t * tp)
 	tg3_writephy(tp, 0x10, 0x8011);
 }
 
-PRIVATE int tg3_setup_fiber_hw_autoneg(tg3_t * tp, u32_t mac_status)
+static int tg3_setup_fiber_hw_autoneg(tg3_t * tp, u32_t mac_status)
 {
 	u16_t flowctrl;
 	u32_t sg_dig_ctrl, sg_dig_status;
@@ -3999,7 +3976,7 @@ out:
 	return current_link_up;
 }
 
-PRIVATE int tg3_setup_fiber_by_hand(tg3_t * tp, u32_t mac_status)
+static int tg3_setup_fiber_by_hand(tg3_t * tp, u32_t mac_status)
 {
 	int current_link_up = 0;
 
@@ -4061,7 +4038,7 @@ out:
 	return current_link_up;
 }
 
-PRIVATE int tg3_setup_fiber_phy(tg3_t * tp, int force_reset)
+static int tg3_setup_fiber_phy(tg3_t * tp, int force_reset)
 {
 	u32_t orig_pause_cfg;
 	u16_t orig_active_speed;
@@ -4167,7 +4144,7 @@ PRIVATE int tg3_setup_fiber_phy(tg3_t * tp, int force_reset)
 	return 0;
 }
 
-PRIVATE int tg3_setup_fiber_mii_phy(tg3_t * tp, int force_reset)
+static int tg3_setup_fiber_mii_phy(tg3_t * tp, int force_reset)
 {
 	int current_link_up, err = 0;
 	u32_t bmsr, bmcr;
@@ -4333,7 +4310,7 @@ PRIVATE int tg3_setup_fiber_mii_phy(tg3_t * tp, int force_reset)
 	return err;
 }
 
-PRIVATE void tg3_serdes_parallel_detect(tg3_t * tp)
+static void tg3_serdes_parallel_detect(tg3_t * tp)
 {
 	if (tp->serdes_counter) {
 		/* Give autoneg time to complete. */
@@ -4389,7 +4366,7 @@ PRIVATE void tg3_serdes_parallel_detect(tg3_t * tp)
 	}
 }
 
-PRIVATE int tg3_setup_phy(tg3_t * tp, int force_reset)
+static int tg3_setup_phy(tg3_t * tp, int force_reset)
 {
 	int err;
 
@@ -4453,7 +4430,7 @@ PRIVATE int tg3_setup_phy(tg3_t * tp, int force_reset)
  * is bogus tx completions. We try to recover by setting the
  * TG3_FLAG_MBOX_WRITE_REORDER flag and resetting the chip later
  */
-PRIVATE void tg3_tx_recover(tg3_t * tp)
+static void tg3_tx_recover(tg3_t * tp)
 {
 	assert(!((tp->tg3_flags & TG3_FLAG_MBOX_WRITE_REORDER) ||
 		 tp->write32_tx_mbox == tg3_write_indirect_mbox));
@@ -4466,13 +4443,13 @@ PRIVATE void tg3_tx_recover(tg3_t * tp)
 	tp->tg3_flags |= TG3_FLAG_TX_RECOVERY_PENDING;
 }
 
-PRIVATE u32_t tg3_tx_avail(tg3_t * tp)
+static u32_t tg3_tx_avail(tg3_t * tp)
 {
 	return (tp->tx_pending -
 		((tp->tx_prod - tp->tx_cons) & (TG3_TX_RING_SIZE - 1)));
 }
 
-PRIVATE void tg3_tx(tg3_t * tp)
+static void tg3_tx(tg3_t * tp)
 {
 	u32_t hw_idx = tp->hw_status->idx[0].tx_consumer;
 	u32_t sw_idx = tp->tx_cons;
@@ -4504,7 +4481,7 @@ PRIVATE void tg3_tx(tg3_t * tp)
  * buffers the cpu only reads the last cacheline of the RX descriptor
  * (to fetch the error flags, vlan tag, checksum, and opaque cookie).
  */
-PRIVATE int tg3_alloc_rx_iovec(tg3_t * tp, u32_t opaque_key,
+static int tg3_alloc_rx_iovec(tg3_t * tp, u32_t opaque_key,
 			        int src_idx, u32_t dest_idx_unmasked)
 {
 	struct tg3_rx_buffer_desc *desc;
@@ -4564,7 +4541,7 @@ PRIVATE int tg3_alloc_rx_iovec(tg3_t * tp, u32_t opaque_key,
  * members of the RX descriptor are invariant.  See notes above
  * tg3_alloc_rx_iovec for full details.
  */
-PRIVATE void tg3_recycle_rx(tg3_t * tp, u32_t opaque_key,
+static void tg3_recycle_rx(tg3_t * tp, u32_t opaque_key,
 			     int src_idx, u32_t dest_idx_unmasked)
 {
 	struct tg3_rx_buffer_desc *src_desc, *dest_desc;
@@ -4599,7 +4576,7 @@ PRIVATE void tg3_recycle_rx(tg3_t * tp, u32_t opaque_key,
 	src_map->iovec = NULL;
 }
 
-PRIVATE int tg3_poll_work(tg3_t * tp, int work_done)
+static int tg3_poll_work(tg3_t * tp, int work_done)
 {
 	struct tg3_hw_status *sblk = tp->hw_status;
 
@@ -4633,7 +4610,7 @@ PRIVATE int tg3_poll_work(tg3_t * tp, int work_done)
 	return work_done;
 }
 
-PRIVATE int tg3_poll(tg3_t * tp)
+static int tg3_poll(tg3_t * tp)
 {
 	int work_done = 0;
 	struct tg3_hw_status *sblk = tp->hw_status;
@@ -4666,13 +4643,13 @@ tx_recovery:
 	return work_done;
 }
 
-PRIVATE void tg3_irq_quiesce(tg3_t * tp)
+static void tg3_irq_quiesce(tg3_t * tp)
 {
 	assert(!(tp->irq_sync));
 	tp->irq_sync = 1;
 }
 
-PRIVATE int tg3_irq_sync(tg3_t * tp)
+static int tg3_irq_sync(tg3_t * tp)
 {
 	return tp->irq_sync;
 }
@@ -4682,17 +4659,17 @@ PRIVATE int tg3_irq_sync(tg3_t * tp)
  * with as well.  Most of the time, this is not necessary except when
  * shutting down the device.
  */
-PRIVATE void tg3_full_lock(tg3_t * tp, int irq_sync)
+static void tg3_full_lock(tg3_t * tp, int irq_sync)
 {
 	if (irq_sync)
 		tg3_irq_quiesce(tp);
 }
 
-PRIVATE void tg3_full_unlock(tg3_t * tp)
+static void tg3_full_unlock(tg3_t * tp)
 {
 }
 
-PRIVATE u32_t tg3_interrupt(tg3_t * tp)
+static u32_t tg3_interrupt(tg3_t * tp)
 {
 	struct tg3_hw_status *sblk = tp->hw_status;
 	unsigned int handled = 1;
@@ -4736,7 +4713,7 @@ out:
 	return handled;
 }
 
-PRIVATE u32_t tg3_interrupt_tagged(tg3_t * tp)
+static u32_t tg3_interrupt_tagged(tg3_t * tp)
 {
 	struct tg3_hw_status *sblk = tp->hw_status;
 	unsigned int handled = 1;
@@ -4781,7 +4758,7 @@ out:
 }
 
 /* Restart hardware after configuration changes, self-test, etc. */
-PRIVATE int tg3_restart_hw(tg3_t * tp, int reset_phy)
+static int tg3_restart_hw(tg3_t * tp, int reset_phy)
 {
 	int err;
 
@@ -4797,7 +4774,7 @@ PRIVATE int tg3_restart_hw(tg3_t * tp, int reset_phy)
 	return err;
 }
 
-PRIVATE void tg3_reset_task(tg3_t * tp)
+static void tg3_reset_task(tg3_t * tp)
 {
 	int err;
 	unsigned int restart_timer;
@@ -4841,7 +4818,7 @@ out:
 		tg3_phy_start(tp);
 }
 
-PRIVATE void tg3_dump_short_state(tg3_t * tp)
+static void tg3_dump_short_state(tg3_t * tp)
 {
 	printf("DEBUG: MAC_TX_STATUS[%08x] MAC_RX_STATUS[%08x]\n",
 	       tr32(MAC_TX_STATUS), tr32(MAC_RX_STATUS));
@@ -4849,7 +4826,7 @@ PRIVATE void tg3_dump_short_state(tg3_t * tp)
 	       tr32(RDMAC_STATUS), tr32(WDMAC_STATUS));
 }
 
-PRIVATE void tg3_set_txd(tg3_t * tp, int entry,
+static void tg3_set_txd(tg3_t * tp, int entry,
 			  vir_bytes mapping, int len, u32_t flags,
 			  u32_t mss_and_is_end)
 {
@@ -4873,7 +4850,7 @@ PRIVATE void tg3_set_txd(tg3_t * tp, int entry,
 	txd->vlan_tag = vlan_tag << TXD_VLAN_TAG_SHIFT;
 }
 
-PRIVATE int tg3_init_rings(tg3_t * tp)
+static int tg3_init_rings(tg3_t * tp)
 {
 	u32_t i;
 
@@ -4954,7 +4931,7 @@ PRIVATE int tg3_init_rings(tg3_t * tp)
  * Must not be invoked with interrupt sources disabled and
  * the hardware shutdown down.
  */
-PRIVATE void tg3_free_consistent(tg3_t * tp)
+static void tg3_free_consistent(tg3_t * tp)
 {
 	minix_munmap(tp->rx_std_buffers, (sizeof(struct ring_info) *
 				    (TG3_RX_RING_SIZE +
@@ -4993,7 +4970,7 @@ PRIVATE void tg3_free_consistent(tg3_t * tp)
  * Must not be invoked with interrupt sources disabled and
  * the hardware shutdown down.  Can sleep.
  */
-PRIVATE int tg3_alloc_consistent(tg3_t * tp)
+static int tg3_alloc_consistent(tg3_t * tp)
 {
 	int i;
 
@@ -5080,7 +5057,7 @@ err_out:
 /* To stop a block, clear the enable bit and poll till it
  * clears.
  */
-PRIVATE int tg3_stop_block(tg3_t * tp, unsigned long ofs, u32_t enable_bit,
+static int tg3_stop_block(tg3_t * tp, unsigned long ofs, u32_t enable_bit,
 		int silent)
 {
 	unsigned int i;
@@ -5121,7 +5098,7 @@ PRIVATE int tg3_stop_block(tg3_t * tp, unsigned long ofs, u32_t enable_bit,
 	return 0;
 }
 
-PRIVATE int tg3_abort_hw(tg3_t * tp, int silent)
+static int tg3_abort_hw(tg3_t * tp, int silent)
 {
 	int i, err;
 
@@ -5183,7 +5160,7 @@ PRIVATE int tg3_abort_hw(tg3_t * tp, int silent)
 	return err;
 }
 
-PRIVATE void tg3_ape_send_event(tg3_t * tp, u32_t event)
+static void tg3_ape_send_event(tg3_t * tp, u32_t event)
 {
 	int i;
 	u32_t apedata;
@@ -5219,7 +5196,7 @@ PRIVATE void tg3_ape_send_event(tg3_t * tp, u32_t event)
 		tg3_ape_write32(tp, TG3_APE_EVENT, APE_EVENT_1);
 }
 
-PRIVATE void tg3_ape_driver_state_change(tg3_t * tp, int kind)
+static void tg3_ape_driver_state_change(tg3_t * tp, int kind)
 {
 	u32_t event;
 	u32_t apedata;
@@ -5262,7 +5239,7 @@ PRIVATE void tg3_ape_driver_state_change(tg3_t * tp, int kind)
 	tg3_ape_send_event(tp, event);
 }
 
-PRIVATE void tg3_write_sig_pre_reset(tg3_t * tp, int kind)
+static void tg3_write_sig_pre_reset(tg3_t * tp, int kind)
 {
 	tg3_write_mem(tp, NIC_SRAM_FIRMWARE_MBOX,
 		      NIC_SRAM_FIRMWARE_MBOX_MAGIC1);
@@ -5293,7 +5270,7 @@ PRIVATE void tg3_write_sig_pre_reset(tg3_t * tp, int kind)
 		tg3_ape_driver_state_change(tp, kind);
 }
 
-PRIVATE void tg3_write_sig_post_reset(tg3_t * tp, int kind)
+static void tg3_write_sig_post_reset(tg3_t * tp, int kind)
 {
 	if (tp->tg3_flags2 & TG3_FLG2_ASF_NEW_HANDSHAKE) {
 		switch (kind) {
@@ -5315,7 +5292,7 @@ PRIVATE void tg3_write_sig_post_reset(tg3_t * tp, int kind)
 		tg3_ape_driver_state_change(tp, kind);
 }
 
-PRIVATE void tg3_write_sig_legacy(tg3_t * tp, int kind)
+static void tg3_write_sig_legacy(tg3_t * tp, int kind)
 {
 	if (tp->tg3_flags & TG3_FLAG_ENABLE_ASF) {
 		switch (kind) {
@@ -5340,7 +5317,7 @@ PRIVATE void tg3_write_sig_legacy(tg3_t * tp, int kind)
 	}
 }
 
-PRIVATE int tg3_poll_fw(tg3_t * tp)
+static int tg3_poll_fw(tg3_t * tp)
 {
 	int i;
 	u32_t val;
@@ -5375,13 +5352,13 @@ PRIVATE int tg3_poll_fw(tg3_t * tp)
 }
 
 /* Save PCI command register before chip reset */
-PRIVATE void tg3_save_pci_state(tg3_t * tp)
+static void tg3_save_pci_state(tg3_t * tp)
 {
 	tp->pci_cmd = pci_attr_r16(tp->devind, PCI_CR);
 }
 
 /* Restore PCI state after chip reset */
-PRIVATE void tg3_restore_pci_state(tg3_t * tp)
+static void tg3_restore_pci_state(tg3_t * tp)
 {
 	u32_t val;
 
@@ -5422,7 +5399,7 @@ PRIVATE void tg3_restore_pci_state(tg3_t * tp)
 	}
 }
 
-PRIVATE int tg3_chip_reset(tg3_t * tp)
+static int tg3_chip_reset(tg3_t * tp)
 {
 	u32_t val;
 	void (*write_op) (tg3_t *, u32_t, u32_t);
@@ -5613,7 +5590,7 @@ PRIVATE int tg3_chip_reset(tg3_t * tp)
 	return 0;
 }
 
-PRIVATE void tg3_stop_fw(tg3_t * tp)
+static void tg3_stop_fw(tg3_t * tp)
 {
 	if ((tp->tg3_flags & TG3_FLAG_ENABLE_ASF) &&
 	    !(tp->tg3_flags3 & TG3_FLG3_ENABLE_APE)) {
@@ -5629,7 +5606,7 @@ PRIVATE void tg3_stop_fw(tg3_t * tp)
 	}
 }
 
-PRIVATE int tg3_halt(tg3_t * tp, int kind, int silent)
+static int tg3_halt(tg3_t * tp, int kind, int silent)
 {
 	int err;
 
@@ -5651,7 +5628,7 @@ PRIVATE int tg3_halt(tg3_t * tp, int kind, int silent)
 	return 0;
 }
 
-PRIVATE int tg3_halt_cpu(tg3_t * tp, u32_t offset)
+static int tg3_halt_cpu(tg3_t * tp, u32_t offset)
 {
 	int i;
 
@@ -5697,7 +5674,7 @@ PRIVATE int tg3_halt_cpu(tg3_t * tp, u32_t offset)
 	return 0;
 }
 
-PRIVATE int tg3_load_5701_a0_firmware_fix(tg3_t * tp)
+static int tg3_load_5701_a0_firmware_fix(tg3_t * tp)
 {
 	panic("TG3", "tg3_load_5701_a0_firmware_fix: \
 		TG3 Driver does not currently support loading fimrware\n", 0);
@@ -5705,7 +5682,7 @@ PRIVATE int tg3_load_5701_a0_firmware_fix(tg3_t * tp)
 }
 
 /* 5705 needs a special version of the TSO firmware.  */
-PRIVATE int tg3_load_tso_firmware(tg3_t * tp)
+static int tg3_load_tso_firmware(tg3_t * tp)
 {
 	if (tp->tg3_flags2 & TG3_FLG2_HW_TSO) {
 		return 0;
@@ -5716,7 +5693,7 @@ PRIVATE int tg3_load_tso_firmware(tg3_t * tp)
 	return 1;
 }
 
-PRIVATE int tg3_set_mac_addr(tg3_t * tp)
+static int tg3_set_mac_addr(tg3_t * tp)
 {
 	int err = 0, skip_mac_1 = 0;
 
@@ -5744,7 +5721,7 @@ PRIVATE int tg3_set_mac_addr(tg3_t * tp)
 	return err;
 }
 
-PRIVATE void tg3_set_bdinfo(tg3_t * tp, u32_t bdinfo_addr,
+static void tg3_set_bdinfo(tg3_t * tp, u32_t bdinfo_addr,
 			     vir_bytes mapping, u32_t maxlen_flags,
 			     u32_t nic_addr)
 {
@@ -5764,7 +5741,7 @@ PRIVATE void tg3_set_bdinfo(tg3_t * tp, u32_t bdinfo_addr,
 			      nic_addr);
 }
 
-PRIVATE void __tg3_set_coalesce(tg3_t * tp, struct coalesce * ec)
+static void __tg3_set_coalesce(tg3_t * tp, struct coalesce * ec)
 {
 
 	tw32(HOSTCC_RXCOL_TICKS, ec->rx_coalesce_usecs);
@@ -5787,7 +5764,7 @@ PRIVATE void __tg3_set_coalesce(tg3_t * tp, struct coalesce * ec)
 	}
 }
 
-PRIVATE int tg3_reset_hw(tg3_t * tp, int reset_phy)
+static int tg3_reset_hw(tg3_t * tp, int reset_phy)
 {
 	u32_t val, rdmac_mode;
 	int i, err, limit;
@@ -6465,7 +6442,7 @@ PRIVATE int tg3_reset_hw(tg3_t * tp, int reset_phy)
 /* Called at device open time to get the chip ready for
  * packet processing.
  */
-PRIVATE int tg3_init_hw(tg3_t * tp, int reset_phy)
+static int tg3_init_hw(tg3_t * tp, int reset_phy)
 {
 	tg3_switch_clocks(tp);
 
@@ -6481,7 +6458,7 @@ do {	u32_t __val = tr32(REG); \
 		(PSTAT)->high += 1; \
 } while (0)
 
-PRIVATE void tg3_periodic_fetch_stats(tg3_t * tp)
+static void tg3_periodic_fetch_stats(tg3_t * tp)
 {
 	struct tg3_hw_stats *sp = tp->hw_stats;
 
@@ -6522,7 +6499,7 @@ PRIVATE void tg3_periodic_fetch_stats(tg3_t * tp)
 	TG3_STAT_ADD32(&sp->rx_errors, RCVLPC_IN_ERRORS_CNT);
 }
 
-PRIVATE void tg3_timer(tg3_t * tp)
+static void tg3_timer(tg3_t * tp)
 {
 	if (tp->irq_sync) {
 		printf("SYNC - restarting timer\n");
@@ -6629,7 +6606,7 @@ restart_timer:
 	sys_setalarm(tp->timer_offset, 0);
 }
 
-PRIVATE int tg3_request_irq(tg3_t * tp)
+static int tg3_request_irq(tg3_t * tp)
 {
 	tp->irq_handler = tg3_interrupt;
 
@@ -6639,13 +6616,13 @@ PRIVATE int tg3_request_irq(tg3_t * tp)
 	return 0;
 }
 
-PRIVATE int tg3_test_interrupt(tg3_t * tp)
+static int tg3_test_interrupt(tg3_t * tp)
 {
 	/* No real need for this on Minix */
 	return 0;
 }
 
-PRIVATE int tg3_open(tg3_t * tp)
+static int tg3_open(tg3_t * tp)
 {
 	int err;
 
@@ -6725,7 +6702,7 @@ PRIVATE int tg3_open(tg3_t * tp)
 	return 0;
 }
 
-PRIVATE void tg3_dump_state(tg3_t * tp)
+static void tg3_dump_state(tg3_t * tp)
 {
 	u32_t val32, val32_2, val32_3, val32_4, val32_5;
 	u16_t val16;
@@ -6952,7 +6929,7 @@ PRIVATE void tg3_dump_state(tg3_t * tp)
 }
 
 
-PRIVATE int tg3_close(tg3_t * tp)
+static int tg3_close(tg3_t * tp)
 {
 	tg3_full_lock(tp, 1);
 #if 0
@@ -6975,7 +6952,7 @@ PRIVATE int tg3_close(tg3_t * tp)
 	return 0;
 }
 
-PRIVATE u32_t calc_crc(unsigned char *buf, int len)
+static u32_t calc_crc(unsigned char *buf, int len)
 {
 	u32_t reg;
 	u32_t tmp;
@@ -7000,7 +6977,7 @@ PRIVATE u32_t calc_crc(unsigned char *buf, int len)
 	return ~reg;
 }
 
-PRIVATE void tg3_set_multi(tg3_t * tp, unsigned int accept_all)
+static void tg3_set_multi(tg3_t * tp, unsigned int accept_all)
 {
 	/* accept or reject all multicast frames */
 	tw32(MAC_HASH_REG_0, accept_all ? 0xffffffff : 0);
@@ -7009,7 +6986,7 @@ PRIVATE void tg3_set_multi(tg3_t * tp, unsigned int accept_all)
 	tw32(MAC_HASH_REG_3, accept_all ? 0xffffffff : 0);
 }
 
-PRIVATE void __tg3_set_rx_mode(tg3_t * tp)
+static void __tg3_set_rx_mode(tg3_t * tp)
 {
 	u32_t rx_mode;
 
@@ -7048,7 +7025,7 @@ PRIVATE void __tg3_set_rx_mode(tg3_t * tp)
 #define NVRAM_SELFBOOT_HW_SIZE 0x20
 #define NVRAM_SELFBOOT_DATA_SIZE 0x1c
 
-PRIVATE int tg3_test_nvram(tg3_t * tp)
+static int tg3_test_nvram(tg3_t * tp)
 {
 	u32_t csum, magic;
 	u32_t *buf = NULL;
@@ -7185,7 +7162,7 @@ out:
 #define TG3_SERDES_TIMEOUT_SEC	2
 #define TG3_COPPER_TIMEOUT_SEC	6
 
-PRIVATE int tg3_test_link(tg3_t * tp)
+static int tg3_test_link(tg3_t * tp)
 {
 	int i, max;
 
@@ -7209,7 +7186,7 @@ PRIVATE int tg3_test_link(tg3_t * tp)
 }
 
 /* Only test the commonly used registers */
-PRIVATE int tg3_test_registers(tg3_t * tp)
+static int tg3_test_registers(tg3_t * tp)
 {
 	int i, is_5705, is_5750;
 	u32_t offset, read_mask, write_mask, val, save_val, read_val;
@@ -7546,7 +7523,7 @@ out:
 	return -EIO;
 }
 
-PRIVATE int tg3_do_mem_test(tg3_t * tp, u32_t offset, u32_t len)
+static int tg3_do_mem_test(tg3_t * tp, u32_t offset, u32_t len)
 {
 	static const u32_t test_pattern[] = {0x00000000, 0xffffffff, 0xaa55a55a};
 	int i;
@@ -7565,7 +7542,7 @@ PRIVATE int tg3_do_mem_test(tg3_t * tp, u32_t offset, u32_t len)
 	return 0;
 }
 
-PRIVATE int tg3_test_memory(tg3_t * tp)
+static int tg3_test_memory(tg3_t * tp)
 {
 	static struct mem_entry {
 		u32_t offset;
@@ -7666,7 +7643,7 @@ PRIVATE int tg3_test_memory(tg3_t * tp)
 #define TG3_MAC_LOOPBACK	0
 #define TG3_PHY_LOOPBACK	1
 
-PRIVATE int tg3_run_loopback(tg3_t * tp, int loopback_mode)
+static int tg3_run_loopback(tg3_t * tp, int loopback_mode)
 {
 	u32_t mac_mode, rx_start_idx, rx_idx, tx_idx, opaque_key;
 	u32_t desc_idx;
@@ -7830,7 +7807,7 @@ out:
 #define TG3_LOOPBACK_FAILED		(TG3_MAC_LOOPBACK_FAILED |	\
 					 TG3_PHY_LOOPBACK_FAILED)
 
-PRIVATE int tg3_test_loopback(tg3_t * tp)
+static int tg3_test_loopback(tg3_t * tp)
 {
 	int err = 0;
 	u32_t cpmuctrl = 0;
@@ -7890,7 +7867,7 @@ PRIVATE int tg3_test_loopback(tg3_t * tp)
 	return err;
 }
 
-PRIVATE void tg3_self_test(tg3_t * tp)
+static void tg3_self_test(tg3_t * tp)
 {
 	if (tp->link_config.phy_is_low_power) {
 		printf("PHY is low power. Could get unpredictable here\n");
@@ -7956,7 +7933,7 @@ PRIVATE void tg3_self_test(tg3_t * tp)
 	printf("%s Self-Test Complete\n", tp->name);
 }
 
-PRIVATE void tg3_get_eeprom_size(tg3_t * tp)
+static void tg3_get_eeprom_size(tg3_t * tp)
 {
 	u32_t cursize, val, magic;
 
@@ -7989,7 +7966,7 @@ PRIVATE void tg3_get_eeprom_size(tg3_t * tp)
 	tp->nvram_size = cursize;
 }
 
-PRIVATE void tg3_get_nvram_size(tg3_t * tp)
+static void tg3_get_nvram_size(tg3_t * tp)
 {
 	u32_t val;
 
@@ -8021,7 +7998,7 @@ PRIVATE void tg3_get_nvram_size(tg3_t * tp)
 	tp->nvram_size = TG3_NVRAM_SIZE_512KB;
 }
 
-PRIVATE void tg3_get_nvram_info(tg3_t * tp)
+static void tg3_get_nvram_info(tg3_t * tp)
 {
 	u32_t nvcfg1;
 
@@ -8072,7 +8049,7 @@ PRIVATE void tg3_get_nvram_info(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_get_5752_nvram_info(tg3_t * tp)
+static void tg3_get_5752_nvram_info(tg3_t * tp)
 {
 	u32_t nvcfg1;
 
@@ -8132,7 +8109,7 @@ PRIVATE void tg3_get_5752_nvram_info(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_get_5755_nvram_info(tg3_t * tp)
+static void tg3_get_5755_nvram_info(tg3_t * tp)
 {
 	u32_t nvcfg1, protect = 0;
 
@@ -8187,7 +8164,7 @@ PRIVATE void tg3_get_5755_nvram_info(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_get_5787_nvram_info(tg3_t * tp)
+static void tg3_get_5787_nvram_info(tg3_t * tp)
 {
 	u32_t nvcfg1;
 
@@ -8225,7 +8202,7 @@ PRIVATE void tg3_get_5787_nvram_info(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_get_5761_nvram_info(tg3_t * tp)
+static void tg3_get_5761_nvram_info(tg3_t * tp)
 {
 	u32_t nvcfg1, protect = 0;
 
@@ -8299,14 +8276,14 @@ PRIVATE void tg3_get_5761_nvram_info(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_get_5906_nvram_info(tg3_t * tp)
+static void tg3_get_5906_nvram_info(tg3_t * tp)
 {
 	tp->nvram_jedecnum = JEDEC_ATMEL;
 	tp->tg3_flags |= TG3_FLAG_NVRAM_BUFFERED;
 	tp->nvram_pagesize = ATMEL_AT24C512_CHIP_SIZE;
 }
 
-PRIVATE void tg3_get_57780_nvram_info(tg3_t * tp)
+static void tg3_get_57780_nvram_info(tg3_t * tp)
 {
 	u32_t nvcfg1;
 
@@ -8404,7 +8381,7 @@ PRIVATE void tg3_get_57780_nvram_info(tg3_t * tp)
 }
 
 /* Chips other than 5700/5701 use the NVRAM for fetching info. */
-PRIVATE void tg3_nvram_init(tg3_t * tp)
+static void tg3_nvram_init(tg3_t * tp)
 {
 	tw32_f(GRC_EEPROM_ADDR,
 	       (EEPROM_ADDR_FSM_RESET |
@@ -8465,7 +8442,7 @@ struct subsys_tbl_ent {
 	u32_t phy_id;
 };
 
-PRIVATE struct subsys_tbl_ent subsys_id_to_phy_id[] = {
+static struct subsys_tbl_ent subsys_id_to_phy_id[] = {
 
 	/* Broadcom boards. */
 	{PCI_VENDOR_ID_BROADCOM, 0x1644, PHY_ID_BCM5401},	/* BCM95700A6 */
@@ -8504,7 +8481,7 @@ PRIVATE struct subsys_tbl_ent subsys_id_to_phy_id[] = {
 	{PCI_VENDOR_ID_IBM, 0x0281, 0}						/* IBM??? */
 };
 
-PRIVATE struct subsys_tbl_ent *lookup_by_subsys(tg3_t * tp)
+static struct subsys_tbl_ent *lookup_by_subsys(tg3_t * tp)
 {
 	int i;
 
@@ -8518,7 +8495,7 @@ PRIVATE struct subsys_tbl_ent *lookup_by_subsys(tg3_t * tp)
 	return NULL;
 }
 
-PRIVATE void tg3_get_eeprom_hw_cfg(tg3_t * tp)
+static void tg3_get_eeprom_hw_cfg(tg3_t * tp)
 {
 	u32_t val;
 	u16_t pmcsr;
@@ -8723,7 +8700,7 @@ done:
 	return;
 }
 
-PRIVATE int tg3_issue_otp_command(tg3_t * tp, u32_t cmd)
+static int tg3_issue_otp_command(tg3_t * tp, u32_t cmd)
 {
 	int i;
 	u32_t val;
@@ -8746,7 +8723,7 @@ PRIVATE int tg3_issue_otp_command(tg3_t * tp, u32_t cmd)
  * configuration is a 32-bit value that straddles the alignment boundary.
  * We do two 32-bit reads and then shift and merge the results.
  */
-PRIVATE u32_t tg3_read_otp_phycfg(tg3_t * tp)
+static u32_t tg3_read_otp_phycfg(tg3_t * tp)
 {
 	u32_t bhalf_otp, thalf_otp;
 
@@ -8772,7 +8749,7 @@ PRIVATE u32_t tg3_read_otp_phycfg(tg3_t * tp)
 	return ((thalf_otp & 0x0000ffff) << 16) | (bhalf_otp >> 16);
 }
 
-PRIVATE int tg3_phy_probe(tg3_t * tp)
+static int tg3_phy_probe(tg3_t * tp)
 {
 	u32_t hw_phy_id_1, hw_phy_id_2;
 	u32_t hw_phy_id, hw_phy_id_masked;
@@ -8892,7 +8869,7 @@ skip_phy_reset:
 	return err;
 }
 
-PRIVATE void tg3_read_partno(tg3_t * tp)
+static void tg3_read_partno(tg3_t * tp)
 {
 	unsigned char vpd_data[256];	/* in little-endian format */
 	unsigned int i;
@@ -9002,7 +8979,7 @@ out_not_found:
 		strcpy(tp->board_part_number, "none");
 }
 
-PRIVATE int tg3_fw_img_is_valid(tg3_t * tp, u32_t offset)
+static int tg3_fw_img_is_valid(tg3_t * tp, u32_t offset)
 {
 	u32_t val;
 
@@ -9015,7 +8992,7 @@ PRIVATE int tg3_fw_img_is_valid(tg3_t * tp, u32_t offset)
 	return 1;
 }
 
-PRIVATE void tg3_read_bc_ver(tg3_t * tp)
+static void tg3_read_bc_ver(tg3_t * tp)
 {
 	u32_t val, offset, start, ver_offset;
 	int i;
@@ -9062,7 +9039,7 @@ PRIVATE void tg3_read_bc_ver(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_read_hwsb_ver(tg3_t * tp)
+static void tg3_read_hwsb_ver(tg3_t * tp)
 {
 	u32_t val, major, minor;
 
@@ -9078,7 +9055,7 @@ PRIVATE void tg3_read_hwsb_ver(tg3_t * tp)
 	snprintf(&tp->fw_ver[0], 32, "sb v%d.%02d", major, minor);
 }
 
-PRIVATE void tg3_read_sb_ver(tg3_t * tp, u32_t val)
+static void tg3_read_sb_ver(tg3_t * tp, u32_t val)
 {
 	u32_t offset, major, minor, build;
 
@@ -9123,7 +9100,7 @@ PRIVATE void tg3_read_sb_ver(tg3_t * tp, u32_t val)
 	}
 }
 
-PRIVATE void tg3_read_mgmtfw_ver(tg3_t * tp)
+static void tg3_read_mgmtfw_ver(tg3_t * tp)
 {
 	u32_t val, offset, start;
 	int i, vlen;
@@ -9174,7 +9151,7 @@ PRIVATE void tg3_read_mgmtfw_ver(tg3_t * tp)
 	}
 }
 
-PRIVATE void tg3_read_dash_ver(tg3_t * tp)
+static void tg3_read_dash_ver(tg3_t * tp)
 {
 	int vlen;
 	u32_t apedata;
@@ -9202,7 +9179,7 @@ PRIVATE void tg3_read_dash_ver(tg3_t * tp)
 		 (apedata & APE_FW_VERSION_BLDMSK));
 }
 
-PRIVATE void tg3_read_fw_ver(tg3_t * tp)
+static void tg3_read_fw_ver(tg3_t * tp)
 {
 	u32_t val;
 
@@ -9235,7 +9212,7 @@ PRIVATE void tg3_read_fw_ver(tg3_t * tp)
 }
 
 
-PRIVATE int tg3_get_invariants(tg3_t * tp)
+static int tg3_get_invariants(tg3_t * tp)
 {
 	u32_t misc_ctrl_reg;
 	u32_t pci_state_reg, grc_misc_cfg;
@@ -9773,7 +9750,7 @@ PRIVATE int tg3_get_invariants(tg3_t * tp)
 	return err;
 }
 
-PRIVATE int tg3_get_device_address(tg3_t * tp)
+static int tg3_get_device_address(tg3_t * tp)
 {
 	u32_t hi, lo, mac_offset;
 	int addr_ok = 0;
@@ -9832,7 +9809,7 @@ PRIVATE int tg3_get_device_address(tg3_t * tp)
 }
 
 
-PRIVATE int tg3_do_test_dma(tg3_t * tp, u32_t * buf, vir_bytes buf_dma,
+static int tg3_do_test_dma(tg3_t * tp, u32_t * buf, vir_bytes buf_dma,
 			int size, int to_device)
 {
 	struct tg3_internal_buffer_desc test_desc;
@@ -9917,7 +9894,7 @@ PRIVATE int tg3_do_test_dma(tg3_t * tp, u32_t * buf, vir_bytes buf_dma,
 
 
 
-PRIVATE int tg3_test_dma(tg3_t * tp)
+static int tg3_test_dma(tg3_t * tp)
 {
 	vir_bytes buf_dma;
 	u32_t *buf, saved_dma_rwctrl;
@@ -10060,7 +10037,7 @@ out_nofree:
 	return ret;
 }
 
-PRIVATE void tg3_init_link_config(tg3_t * tp)
+static void tg3_init_link_config(tg3_t * tp)
 {
 	tp->link_config.advertising =
 	(ADVERTISED_10baseT_Half | ADVERTISED_10baseT_Full |
@@ -10078,7 +10055,7 @@ PRIVATE void tg3_init_link_config(tg3_t * tp)
 	tp->link_config.orig_autoneg = AUTONEG_INVALID;
 }
 
-PRIVATE void tg3_init_bufmgr_config(tg3_t * tp)
+static void tg3_init_bufmgr_config(tg3_t * tp)
 {
 
 	if (tp->tg3_flags2 & TG3_FLG2_5705_PLUS) {
@@ -10120,7 +10097,7 @@ PRIVATE void tg3_init_bufmgr_config(tg3_t * tp)
 	tp->bufmgr_config.dma_high_water = DEFAULT_DMA_HIGH_WATER;
 }
 
-PRIVATE char *tg3_phy_string(tg3_t * tp)
+static char *tg3_phy_string(tg3_t * tp)
 {
 	switch (tp->phy_id & PHY_ID_MASK) {
 		case PHY_ID_BCM5400:return "5400";
@@ -10173,7 +10150,7 @@ PRIVATE char *tg3_phy_string(tg3_t * tp)
 	}
 }
 
-PRIVATE char *tg3_bus_string(tg3_t * tp, char *str)
+static char *tg3_bus_string(tg3_t * tp, char *str)
 {
 	if (tp->tg3_flags2 & TG3_FLG2_PCI_EXPRESS) {
 		strcpy(str, "PCI Express");
@@ -10209,7 +10186,7 @@ PRIVATE char *tg3_bus_string(tg3_t * tp, char *str)
 	return str;
 }
 
-PRIVATE void tg3_init_coal(tg3_t * tp)
+static void tg3_init_coal(tg3_t * tp)
 {
 
 	struct coalesce *ec = &tp->coal;
@@ -10240,7 +10217,7 @@ PRIVATE void tg3_init_coal(tg3_t * tp)
 }
 
 
-PRIVATE int tg3_init_one(tg3_t * tp)
+static int tg3_init_one(tg3_t * tp)
 {
 	static int tg3_version_printed = 0;
 	int err, pm_cap;
@@ -10434,7 +10411,7 @@ err_out_free_res:
 	return err;
 }
 
-PRIVATE void tg3_remove_one(tg3_t * tp)
+static void tg3_remove_one(tg3_t * tp)
 {
 	if (tp->fw) {
 		printf("NO FIRMWARE SUPPORT\n");
