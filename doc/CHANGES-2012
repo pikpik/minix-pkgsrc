@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.1973 2012/06/14 15:40:45 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.1980 2012/06/15 00:03:58 sbd Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3038,3 +3038,10 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated sysutils/ruby-facter to 1.6.10 [taca 2012-06-14]
 	Updated graphics/png to 1.5.11 [wiz 2012-06-14]
 	Updated www/contao211-translations to 201206130 [taca 2012-06-14]
+	Updated misc/kdepimlibs4 to 4.8.2nb2 [sbd 2012-06-14]
+	Updated lang/polyml to 5.4.1nb1 [sbd 2012-06-14]
+	Updated sysutils/coreutils to 8.13nb3 [sbd 2012-06-14]
+	Updated emulators/aranym to 0.9.13nb2 [sbd 2012-06-14]
+	Updated editors/vigor to 0.016nb4 [sbd 2012-06-14]
+	Updated editors/vigor to 0.016nb5 [sbd 2012-06-15]
+	Updated lang/gawk to 4.0.1nb2 [sbd 2012-06-15]
