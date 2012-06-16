@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.13 2008/01/04 01:25:51 rillig Exp $
+# $NetBSD: buildlink3.mk,v 1.14 2009/03/20 19:25:48 joerg Exp $
 
 BUILDLINK_TREE+=	neXtaw
 
@@ -11,7 +11,7 @@ BUILDLINK_PKGSRCDIR.neXtaw?=	../../x11/neXtaw
 
 .include "../../mk/bsd.fast.prefs.mk"
 
-.  if ${X11_TYPE} == "modular"
+.if ${X11_TYPE} == "modular"
 .PHONY: buildlink-neXtaw-inc-hack
 buildlink-neXtaw-cookie: buildlink-neXtaw-inc-hack
 
@@ -19,7 +19,7 @@ buildlink-neXtaw-inc-hack: buildlink-directories
 	[ ! -h ${BUILDLINK_DIR}/include/X11/Xaw ] && \
 		${MKDIR} ${BUILDLINK_DIR}/include/X11 && \
 		${LN} -s neXtaw ${BUILDLINK_DIR}/include/X11/Xaw
-.  endif
+.endif
 
 LIBXAW?=	-L${BUILDLINK_PREFIX.neXtaw}/lib			\
 		${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.neXtaw}/lib	\

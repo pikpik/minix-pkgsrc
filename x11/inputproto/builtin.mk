@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.2 2008/01/05 16:00:08 tron Exp $
+# $NetBSD: builtin.mk,v 1.3 2008/10/05 21:36:33 cube Exp $
 
 BUILTIN_PKG:=	inputproto
 
@@ -31,7 +31,7 @@ MAKEVARS+=	IS_BUILTIN.inputproto
 BUILTIN_VERSION.inputproto!= ${SED} -n -e 's/Version: //p' ${PC_INPUTPROTO}
 BUILTIN_PKG.inputproto= inputproto-${BUILTIN_VERSION.inputproto}
 .endif
-MAKEVARS+=      BUILTIN_PKG.inputproto
+MAKEVARS+=	BUILTIN_PKG.inputproto
 
 ###
 ### Determine whether we should use the built-in implementation if it

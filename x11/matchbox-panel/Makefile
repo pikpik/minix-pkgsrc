@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2011/04/22 13:45:13 obache Exp $
+# $NetBSD: Makefile,v 1.23 2011/11/01 06:03:03 sbd Exp $
 #
 
 DISTNAME=		matchbox-panel-0.9.2
@@ -21,7 +21,7 @@ CONFIGURE_ARGS+=	--enable-small-icons
 CONFIGURE_ARGS+=	--enable-startup-notification
 CONFIGURE_ARGS+=	--enable-nls
 
-PKG_DESTDIR_SUPPORT=  	user-destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

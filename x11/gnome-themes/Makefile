@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.84 2012/02/06 12:41:58 wiz Exp $
+# $NetBSD: Makefile,v 1.85 2012/03/03 00:14:09 wiz Exp $
 #
 
 DISTNAME=		gnome-themes-2.32.1
@@ -25,6 +25,6 @@ GNU_CONFIGURE=		yes
 BUILDLINK_API_DEPENDS.icon-naming-utils+=	icon-naming-utils>=0.8.90
 .include "../../graphics/icon-naming-utils/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
-BUILDLINK_API_DEPENDS.gtk2-engines+=    gtk2-engines>=2.15.3
+BUILDLINK_API_DEPENDS.gtk2-engines+=		gtk2-engines>=2.15.3
 .include "../../x11/gtk2-engines/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

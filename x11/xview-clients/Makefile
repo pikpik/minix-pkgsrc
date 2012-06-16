@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/12/10 20:37:36 abs Exp $
+# $NetBSD: Makefile,v 1.34 2010/04/27 22:08:42 dholland Exp $
 
 DISTNAME=		xview3.2p1-X11R6
 PKGNAME=		xview-clients-3.2.1
@@ -21,7 +21,7 @@ EXTRACT_ELEMENTS=	${DISTNAME}/clients ${DISTNAME}/images
 WRKSRC=			${WRKDIR}/${DISTNAME}/clients
 USE_IMAKE=		yes
 
-PKG_DESTDIR_SUPPORT=    user-destdir
+PKG_DESTDIR_SUPPORT=	user-destdir
 
 SUBST_CLASSES+=		xvc
 SUBST_STAGE.xvc=	pre-configure
