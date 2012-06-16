@@ -852,7 +852,7 @@ static void tg3_getstat_s(message * mp)
 	stats = tp->stat;
 
 	r = sys_safecopyto(mp->m_source, mp->DL_GRANT, 0,
-			   (vir_bytes) & stats, sizeof(stats), D);
+			   (vir_bytes) & stats, sizeof(stats));
 	if (r != OK)
 		panic("tg3", "tg3_getstat_s: sys_safecopyto failed", r);
 
@@ -914,7 +914,7 @@ static int tg3_start_transmit(message * mp, struct tg3 * tp)
 
 	r = sys_safecopyfrom(mp->m_source,
 			     mp->DL_GRANT,
-			   0, (vir_bytes) vecs, count * sizeof(iovec_s_t), D);
+			   0, (vir_bytes) vecs, count * sizeof(iovec_s_t));
 	if (r != OK)
 		panic("tg3", "tg3_writev_s: sys_safecopyfrom failed", r);
 
@@ -931,7 +931,7 @@ static int tg3_start_transmit(message * mp, struct tg3 * tp)
 
 		r = sys_safecopyfrom(mp->m_source,
 				     grant,
-				     0, (vir_bytes) (buf + offset), size, D);
+				     0, (vir_bytes) (buf + offset), size);
 		if (r != OK) {
 			printf("client %d\n\
 				grant %d\n\
@@ -982,7 +982,7 @@ static void upload_packet(tg3_t * tp, message * mp, iovec_t * iovec, int len)
 			     mp->DL_GRANT,
 			     0,
 			     (vir_bytes) vecs,
-			     mp->DL_COUNT * sizeof(iovec_s_t), D);
+			     mp->DL_COUNT * sizeof(iovec_s_t));
 	if (r != OK) {
 		printf("Client was %d\nGrant was %d\nCount was %d\n", 
 				mp->m_source, mp->DL_GRANT, mp->DL_COUNT);
@@ -1006,7 +1006,7 @@ static void upload_packet(tg3_t * tp, message * mp, iovec_t * iovec, int len)
 				   grant,
 				   0,
 				   (vir_bytes) iovec->iov_addr + offset,
-				   size < remaining ? size : remaining, D);
+				   size < remaining ? size : remaining);
 		remaining -= size < remaining ? size : remaining;
 
 		if (r != OK)
