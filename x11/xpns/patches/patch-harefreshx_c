@@ -1,0 +1,14 @@
+$NetBSD$
+
+Use standard headers.
+
+--- harefreshx.c~	1993-07-14 11:02:16.000000000 +0000
++++ harefreshx.c
+@@ -25,6 +25,7 @@
+ #include	"hastename.h"
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ 
+ #ifdef HALLO
+ 

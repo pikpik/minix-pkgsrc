@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/09/24 13:00:04 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2012/06/16 05:26:34 taca Exp $
 
 MODNAME=		pspell
 PKGREVISION=		1
@@ -10,8 +10,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=	php-pspell-[0-9]*
 
 CONFIGURE_ARGS+=	--with-${MODNAME}=shared,${BUILDLINK_PREFIX.aspell}
-
-PHP_VERSIONS_ACCEPTED=	53
 
 .include "../../lang/php/ext.mk"
 .include "../../textproc/aspell/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/02/09 17:27:40 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2009/03/18 19:18:59 darcy Exp $
 #
 
 DISTNAME=		sformat-3.5
@@ -37,5 +37,6 @@ post-extract:
 	${CP} ${WRKSRC}/RULES/os-freebsd.id ${WRKSRC}/RULES/os-dragonfly.id
 	${CP} ${WRKSRC}/RULES/os-freebsd.def ${WRKSRC}/RULES/os-dragonfly.def
 	ln -s i386-netbsd-cc.rul ${WRKSRC}/RULES/amd64-netbsd-cc.rul
+	ln -s i386-netbsd-cc.rul ${WRKSRC}/RULES/amd64-netbsd-gcc.rul
 
 .include "../../mk/bsd.pkg.mk"

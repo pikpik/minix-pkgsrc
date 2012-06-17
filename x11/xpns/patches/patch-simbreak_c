@@ -1,0 +1,14 @@
+$NetBSD$
+
+Use standard headers.
+
+--- simbreak.c~	1993-07-14 11:02:09.000000000 +0000
++++ simbreak.c
+@@ -10,6 +10,7 @@
+ ** DATUM : 14.03.93
+ **									
+ *************************************************************************/
++#include <stdlib.h>
+ #include	"simbreak.h"
+ #include	"sim.h"
+ #include	"celltype.h"

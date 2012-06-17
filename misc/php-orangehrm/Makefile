@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/12/12 17:39:06 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/05/11 10:41:26 ryoon Exp $
 #
 
 DISTNAME=	orangehrm-2.7
@@ -37,6 +37,7 @@ CHECK_INTERPRETER_SKIP+=	share/orangehrm/symfony/symfony
 CHECK_INTERPRETER_SKIP+=	share/orangehrm/upgrader/symfony
 
 do-install:
+	${FIND} ${WRKSRC} -type f -exec ${CHMOD} og-w {} \;
 	cd ${WRKSRC} && pax -rw -pmp * \
 		${DESTDIR}${PREFIX}/${OHRDIR}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/08/21 16:35:49 seb Exp $
+# $NetBSD: Makefile,v 1.7 2011/08/14 14:52:51 obache Exp $
 #
 
 DISTNAME=	Sys-Filesystem-1.30
@@ -23,6 +23,11 @@ PERL5_MODULE_TYPE=	Module::Build
 
 #pre-configure:
 #	${FIND} ${WRKSRC} -name '*.orig' -print -type f | ${XARGS} ${RM} -f
+
+CONFIGURE_ENV+=		PATH_FSTAB=${WRKDIR}/fstab.phony
+
+pre-configure:
+	${TOUCH} ${WRKDIR}/fstab.phony
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,15 @@
+$NetBSD$
+
+Use standard headers.
+
+--- filesteio.c~	1993-07-14 11:02:09.000000000 +0000
++++ filesteio.c
+@@ -18,7 +18,7 @@
+ 
+ #include	<string.h>
+ #include	<stdio.h>
+-
++#include <stdlib.h>
+ 
+ 
+ 

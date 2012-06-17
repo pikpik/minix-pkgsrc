@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/12/17 13:46:28 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/16 02:59:48 taca Exp $
 #
 
 MODNAME=		suhosin
@@ -13,6 +13,9 @@ HOMEPAGE=		http://www.hardened-php.net/suhosin/index.html
 COMMENT=		Advanced protection system for PHP installations
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+# There is no patch for PHP 5.4 yet(?). 
+PHP_VERSIONS_ACCEPTED=	53
 
 CONFIGURE_ARGS=		--enable-${MODNAME}
 

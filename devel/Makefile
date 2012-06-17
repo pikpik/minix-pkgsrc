@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1601 2012/06/04 09:57:42 drochner Exp $
+# $NetBSD: Makefile,v 1.1602 2012/06/04 13:24:29 obache Exp $
 #
 
 COMMENT=	Development utilities
@@ -1413,6 +1413,7 @@ SUBDIR+=	ruby-mode
 SUBDIR+=	ruby-ncurses
 SUBDIR+=	ruby-needle
 SUBDIR+=	ruby-ole
+SUBDIR+=	ruby-parseconfig
 SUBDIR+=	ruby-parser
 SUBDIR+=	ruby-parsetree
 SUBDIR+=	ruby-pathname2

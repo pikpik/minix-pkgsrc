@@ -1,0 +1,14 @@
+$NetBSD$
+
+Use standard headers.
+
+--- cellein.c~	1993-07-14 11:02:14.000000000 +0000
++++ cellein.c
+@@ -14,6 +14,7 @@
+ #include	"celltype.h"
+ 
+ #include <stdio.h>
++#include <stdlib.h>
+ 
+ 
+ /*************************************************************************
