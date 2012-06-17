@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2012/06/14 22:50:14 sbd Exp $
+# $NetBSD: Makefile,v 1.32 2012/06/15 00:03:48 sbd Exp $
 #
 
 DISTNAME=	vigor-0.016
@@ -58,5 +58,5 @@ post-patch:
 	${RM} -f ${WRKSRC}/include/sys/queue.h
 .endif
 
-.include "../../mk/termcap.buildlink3.mk"
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

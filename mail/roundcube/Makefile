@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2012/06/05 18:48:02 jym Exp $
+# $NetBSD: Makefile,v 1.42 2012/06/07 13:51:03 fhajny Exp $
 
 DISTNAME=	roundcubemail-0.7.2-dep
 PKGNAME=	${DISTNAME:S/mail-/-/:S/-dep//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=roundcubemail/}
 
@@ -28,7 +28,6 @@ NO_BUILD=		yes
 INSTALLATION_DIRS=	${RCDIR}/plugins ${RCDIR}/program ${RCDIR}/skins
 INSTALLATION_DIRS+=	${RCDIR}/bin ${RCDIR}/SQL ${DOCDIR} ${EGDIR}
 
-.include "../../mk/bsd.prefs.mk"
 .include "../../lang/php/phpversion.mk"
 
 PKG_SYSCONFSUBDIR?=	roundcube
