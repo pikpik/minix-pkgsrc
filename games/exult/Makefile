@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/01/29 20:40:58 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2011/11/01 06:01:15 sbd Exp $
 #
 
 DISTNAME=		exult-1.2
@@ -16,6 +16,7 @@ MAKE_JOBS_SAFE=		no
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++
+USE_TOOLS+=		yacc
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
