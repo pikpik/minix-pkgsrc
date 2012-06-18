@@ -1,0 +1,11 @@
+@comment $NetBSD$
+sbin/usbd
+sbin/usb_hid
+sbin/usb_storage
+etc/rc.d/usbd
+etc/system.conf.d/usb_hid
+etc/system.conf.d/usb_storage
+etc/system.conf.d/usbd
+etc/devmand/usb_keyboard.cfg
+etc/devmand/usb_mouse.cfg
+etc/devmand/usb_storage.cfg
