@@ -1,6 +1,6 @@
 # $NetBSD$
-PKGNAME=	dde-linux26-20
-DISTNAME=	dde-linux26-20
+PKGNAME=	dde-linux26-21
+DISTNAME=	dde-linux26-21
 MASTER_SITES=   http://www.minix3.org/distfiles-minix/
 CATEGORIES=	minix
 PKGREVISION=    # empty
