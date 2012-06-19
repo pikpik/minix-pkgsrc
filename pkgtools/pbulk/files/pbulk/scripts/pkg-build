@@ -1,5 +1,5 @@
 #!@SH@
-# $NetBSD: pkg-build,v 1.22 2010/07/23 21:19:40 joerg Exp $
+# $NetBSD: pkg-build,v 1.23 2011/09/21 11:55:15 joerg Exp $
 #
 # Copyright (c) 2007, 2008 Joerg Sonnenberger <joerg@NetBSD.org>.
 # All rights reserved.
@@ -124,7 +124,7 @@ destdir)
 	;;
 esac
 
-if [ `whoami` != "root" ]; then
+if [ `@ID@ -u` -ne 0 ]; then
 	run_build=run_direct
 	run_install=run_direct
 fi
