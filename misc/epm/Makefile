@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/10/09 10:02:46 cheusov Exp $
+# $NetBSD: Makefile,v 1.3 2012/01/21 14:04:33 cheusov Exp $
 #
 
 DISTNAME=	epm-4.2-source
@@ -15,6 +15,7 @@ COMMENT=	ESP generates software packages from a list of files
 LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=		no
 
 USE_TOOLS+=		autoconf gzip:run tar:run
 
