@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.11 2012/05/20 11:47:51 tsutsui Exp $
+# $NetBSD: Makefile,v 1.12 2012/05/27 17:08:44 tsutsui Exp $
 #
 
-DISTNAME=		onscripter-20120527
+DISTNAME=		onscripter-20120531
 CATEGORIES=		games
 MASTER_SITES=		http://onscripter.sourceforge.jp/
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
+MAINTAINER=		tsutsui@NetBSD.org
 HOMEPAGE=		http://onscripter.sourceforge.jp/onscripter.html
 COMMENT=		Interpreter to execute a script for NScripter
 LICENSE=		gnu-gpl-v2
