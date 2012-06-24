@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2006/07/23 13:57:28 rillig Exp $
+# $NetBSD: Makefile,v 1.10 2008/03/02 03:48:36 jlam Exp $
 
 DISTNAME=	afio-2.5
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.ibiblio.org/pub/Linux/system/backup/
 EXTRACT_SUFX=	.tgz

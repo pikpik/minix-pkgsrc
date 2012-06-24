@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/02/06 12:40:13 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/03/03 00:13:08 wiz Exp $
 #
 
 DISTNAME=	rftg-0.8.1
@@ -17,6 +17,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
+
+LIBS.SunOS+=	-lsocket -lnsl
 
 INSTALLATION_DIRS+=	libexec share/doc/rftg
 

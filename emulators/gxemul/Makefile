@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2010/05/13 14:48:53 tsutsui Exp $
+# $NetBSD: Makefile,v 1.44 2010/07/02 14:41:49 joerg Exp $
 #
 
 DISTNAME=	gxemul-0.6.0
@@ -18,6 +18,8 @@ USE_TOOLS+=	pax
 USE_LANGUAGES=	c c++
 HAS_CONFIGURE=	yes
 BUILD_TARGET=	build
+
+LIBS.SunOS+=	-lsocket -lnsl
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 share/doc/${PKGBASE}
 

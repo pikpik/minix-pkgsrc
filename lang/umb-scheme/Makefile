@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2007/01/07 09:13:57 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2008/03/04 16:38:13 jlam Exp $
 
 DISTNAME=		umb-scheme-3.2
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		ftp://ftp.cs.umb.edu/pub/scheme/
 EXTRACT_SUFX=		.tar.Z

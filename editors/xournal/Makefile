@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/03/03 00:13:01 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/06/23 19:18:22 dholland Exp $
 
 DISTNAME=	xournal-0.4.5
 PKGREVISION=	7
@@ -18,6 +18,7 @@ USE_TOOLS+=	pkg-config msgfmt
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 LDFLAGS.DragonFly=	-lX11 -lz -lm
+LDFLAGS.SunOS=		-lX11 -lz -lm
 
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../print/poppler-glib/buildlink3.mk"
