@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/11/01 00:08:15 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2011/08/14 14:42:45 obache Exp $
 #
 
 DISTNAME=	CSP-0.32
@@ -28,7 +28,7 @@ PERL5_PACKLIST=	auto/CSP/.packlist
 CSPHOME=	${VARBASE}/csp
 OPENSSLBIN=	${BUILDLINK_PREFIX.openssl}/bin/openssl
 OWN_DIRS=	${CSPHOME}
-INSTALLATION_DIRS=	share/doc/csp
+INSTALLATION_DIRS=	share/doc/csp ${CSPHOME}
 
 BUILD_DEFS+=	CSPHOME
 

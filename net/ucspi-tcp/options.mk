@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2011/06/09 01:47:13 schmonz Exp $
+# $NetBSD: options.mk,v 1.3 2012/06/12 15:46:02 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ucspi-tcp
 PKG_SUPPORTED_OPTIONS+=	inet6 ucspi-tcp-nodefaultrbl
@@ -13,6 +13,12 @@ PATCHFILES+=			${IPV6_PATCH}
 SITES.${IPV6_PATCH}=		http://www.fefe.de/ucspi/
 PATCH_DIST_STRIP.${IPV6_PATCH}=	-p1
 PLIST.inet6=			yes
+
+SUBST_CLASSES+=		hier
+SUBST_STAGE.hier=	post-patch
+SUBST_MESSAGE.hier=	Fixing manpage path.
+SUBST_FILES.hier=	hier.c
+SUBST_SED.hier=		-e 's,man,${PKGMANDIR},'
 .endif
 
 .if !empty(PKG_OPTIONS:Mucspi-tcp-nodefaultrbl)

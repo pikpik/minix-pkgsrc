@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/12/06 12:41:02 ryoon Exp $
+# $NetBSD: Makefile,v 1.4 2012/02/05 15:43:16 ryoon Exp $
 #
 
 DISTNAME=	aipo6030ja_linux32
@@ -26,7 +26,7 @@ USE_TOOLS+=	gunzip pax tar
 AIPO_DIR=	share/aipo
 TOMCAT_DIR=	share/tomcat
 
-INSTALLATION_DIRS=	share/tomcat/lib
+INSTALLATION_DIRS=	share/tomcat/lib ${AIPO_DIR}/webapps/aipo/WEB-INF
 
 SUBST_CLASSES+=			username
 SUBST_STAGE.username=		pre-configure

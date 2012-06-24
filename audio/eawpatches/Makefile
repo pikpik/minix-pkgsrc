@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/05/25 21:42:20 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2009/05/19 08:59:01 wiz Exp $
 #
 
 DISTNAME=	eawpats12_full
@@ -22,6 +22,8 @@ NO_BUILD=		yes
 USE_LANGUAGES=		# empty
 USE_TOOLS+=		pax
 MESSAGE_SUBST+=		PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
+
+INSTALLATION_DIRS=	share
 
 post-extract:
 	chmod go-w ${WRKSRC}/eawpats/gravis.cfg
