@@ -1,5 +1,9 @@
-@comment $NetBSD: PLIST.kmtrace,v 1.2 2004/09/22 08:09:26 jlam Exp $
+@comment $NetBSD: PLIST.kmtrace,v 1.3 2009/06/14 17:48:49 joerg Exp $
+bin/demangle
+bin/kminspector
+bin/kmmatch
 bin/kmtrace
 include/ktrace.h
 lib/libktrace.la
+lib/libktrace_s.a
 share/kde/apps/kmtrace/kde.excludes
