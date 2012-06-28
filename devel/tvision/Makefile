@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2010/02/14 19:49:50 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2011/03/07 05:58:35 obache Exp $
 #
 
 DISTNAME=		tvision-0.8
@@ -13,10 +13,9 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.sigala.it/sergio/tvision/
 COMMENT=		Turbo Vision C++ CUI library for UNIX
 
-NOT_FOR_PLATFORM+=	${LP64PLATFORMS}
-
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+MAKE_JOBS_SAFE=		no
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
