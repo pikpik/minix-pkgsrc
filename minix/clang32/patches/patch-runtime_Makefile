@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- runtime/Makefile.orig	Thu Jun 28 00:54:43 2012
++++ runtime/Makefile
+@@ -20,7 +20,7 @@ ifeq ($(ARCH), Sparc)
+ PARALLEL_DIRS := $(filter-out libprofile, $(PARALLEL_DIRS))
+ endif
+ 
+-ifeq ($(TARGET_OS), $(filter $(TARGET_OS), Cygwin MingW Minix))
++ifeq ($(TARGET_OS), $(filter $(TARGET_OS), Cygwin MingW))
+ PARALLEL_DIRS := $(filter-out libprofile, $(PARALLEL_DIRS))
+ endif
+ 

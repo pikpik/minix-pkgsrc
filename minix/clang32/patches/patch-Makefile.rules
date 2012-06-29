@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- Makefile.rules.orig	Thu Jun 28 00:55:43 2012
++++ Makefile.rules
+@@ -274,9 +274,11 @@ CPP.Defines :=
+ ifeq ($(ENABLE_OPTIMIZED),1)
+   BuildMode := Release
+   # Don't use -fomit-frame-pointer on Darwin or FreeBSD.
++  ifneq ($(HOST_OS),Minix)
+   ifneq ($(HOST_OS),FreeBSD)
+   ifneq ($(HOST_OS),Darwin)
+     OmitFramePointer := -fomit-frame-pointer
++  endif
+   endif
+   endif
+ 

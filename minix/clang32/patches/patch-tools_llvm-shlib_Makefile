@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- tools/llvm-shlib/Makefile.orig	Thu Jun 28 00:55:04 2012
++++ tools/llvm-shlib/Makefile
+@@ -63,13 +63,13 @@ ifeq ($(HOST_OS),Darwin)
+     endif
+ endif
+ 
+-ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD OpenBSD GNU))
++ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD OpenBSD GNU Minix))
+     # Include everything from the .a's into the shared library.
+     LLVMLibsOptions := -Wl,--whole-archive $(LLVMLibsOptions) \
+                        -Wl,--no-whole-archive
+ endif
+ 
+-ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD GNU))
++ifeq ($(HOST_OS), $(filter $(HOST_OS), Linux FreeBSD GNU Minix))
+     # Add soname to the library.
+     LLVMLibsOptions += -Wl,--soname,lib$(LIBRARYNAME)$(SHLIBEXT)
+ endif
