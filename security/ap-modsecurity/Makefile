@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/07/17 18:00:23 adrianp Exp $
+# $NetBSD: Makefile,v 1.8 2011/03/20 06:17:58 obache Exp $
 #
 
 DISTNAME=	modsecurity-apache_1.9.4
@@ -13,6 +13,9 @@ COMMENT=	Intrusion detection and prevention engine for web applications
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
+
+# does not compile with apache24
+PKG_APACHE_ACCEPTED=	apache13 apache2 apache22
 
 .include "../../mk/apache.mk"
 

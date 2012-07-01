@@ -1,12 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2051 2012/06/29 14:50:26 taca Exp $
-
-*****************************************************************************
-PLEASE NOTE THAT PKGSRC IS NOW IN A FREEZE FOR INFRASTRUCTURE CHANGES AND
-NEW PACKAGES.
-
-IF YOU'D LIKE TO UPDATE A PACKAGE, PLEASE MAKE SURE THAT YOU HAVE PERMISSION
-IN ADVANCE FROM A PKGSRC PMC REPRESENTATIVE: (gdt@, wiz@, schmonz@, agc@)
-*****************************************************************************
+$NetBSD: CHANGES-2012,v 1.2057 2012/07/01 07:23:12 plunky Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3222,3 +3214,9 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated security/f-prot-antivirus6-ms-bin to 6.2.1 [taca 2012-06-29]
 	Updated security/f-prot-antivirus6-ws-bin to 6.2.1 [taca 2012-06-29]
 	Updated mail/sylpheed to 3.2.0 [taca 2012-06-29]
+	Updated sysutils/p5-Sys-Filesystem to 1.30nb3 [dholland 2012-06-30]
+	mk/bsd.pkg.mk: freeze ended for pkgsrc-2012Q2 branch [agc 2012-06-30]
+	Updated www/ikiwiki to 3.20120629 [schmonz 2012-07-01]
+	Added audio/py-audiotools version 2.18 [jakllsch 2012-07-01]
+	Updated misc/zyGrib to 5.1.4 [plunky 2012-07-01]
+	Updated math/mathomatic to 16.0.0 [asau 2012-07-01]
