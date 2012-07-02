@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.44 2012/03/22 14:25:25 taca Exp $
+# $NetBSD: Makefile,v 1.45 2012/05/03 08:28:40 adam Exp $
 
 DISTNAME=	mkvtoolnix-5.0.1
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2

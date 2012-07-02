@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2008/08/17 05:10:59 dholland Exp $
+# $NetBSD: Makefile,v 1.14 2009/03/06 09:38:32 wiz Exp $
 
 DISTNAME=	libtecla-1.6.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.astro.caltech.edu/~mcs/tecla/
 
@@ -27,4 +27,5 @@ INSTALL_MAKE_FLAGS+=	MANDIR=${DESTDIR}${PREFIX}/${PKGMANDIR}
 CONFIGURE_ENV+=		tecla_cv_reentrant=no
 .endif
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

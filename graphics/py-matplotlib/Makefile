@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2012/04/17 17:17:03 drochner Exp $
+# $NetBSD: Makefile,v 1.31 2012/05/05 21:53:57 wiz Exp $
 #
 
-DISTNAME=		matplotlib-1.1.0
+DISTNAME=		matplotlib-1.1.1
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=		1
 CATEGORIES=		graphics python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=matplotlib/}
 
