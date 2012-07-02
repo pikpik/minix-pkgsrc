@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.84 2012/03/03 00:12:55 wiz Exp $
+# $NetBSD: Makefile,v 1.85 2012/06/14 07:44:11 sbd Exp $
 
 DISTNAME=	kdbg-2.2.2
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kdbg/}
 
@@ -27,4 +27,5 @@ CONFIGURE_ARGS+=	--with-kde-version=3
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

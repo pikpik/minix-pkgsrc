@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.85 2012/03/03 00:12:34 wiz Exp $
+# $NetBSD: Makefile,v 1.86 2012/06/14 07:43:43 sbd Exp $
 
 DISTNAME=	kdenetwork-${_KDE_VERSION}
-PKGREVISION=	18
+PKGREVISION=	19
 CATEGORIES=	net
 COMMENT=	Network modules for the KDE integrated X11 desktop
 
@@ -53,6 +53,7 @@ post-configure:
 .include "../../devel/libidn/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../net/openslp/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"

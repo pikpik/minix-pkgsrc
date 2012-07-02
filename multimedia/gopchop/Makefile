@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.31 2012/03/03 00:13:39 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2012/06/14 07:45:24 sbd Exp $
 #
 
 DISTNAME=		gopchop-1.1.8
-PKGREVISION=		10
+PKGREVISION=		11
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gopchop/} \
 			http://outflux.net/unix/software/GOPchop/download/
@@ -29,4 +29,5 @@ BROKEN_GETTEXT_DETECTION=	yes
 BUILDLINK_API_DEPENDS.libxml2+=	libxml2>=2.6.6
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2011/01/13 13:40:01 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2011/11/01 06:03:03 sbd Exp $
 #
 
 DISTNAME=		matchbox-desktop-0.9.1
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		x11
 MASTER_SITES=		http://matchbox-project.org/sources/matchbox-desktop/0.9/
 EXTRACT_SUFX=		.tar.bz2
@@ -27,4 +27,5 @@ CONF_FILES=		${EGDIR}/mbdesktop_modules ${PKG_SYSCONFDIR}/mbdesktop_modules
 
 .include "../../devel/libmatchbox/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.46 2012/03/03 00:12:41 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2012/06/14 07:43:58 sbd Exp $
 
 DISTNAME=	liteamp-0.2.4.2
-PKGREVISION=	27
+PKGREVISION=	28
 CATEGORIES=	audio
 MASTER_SITES=	http://kldp.net/frs/download.php/1153/
 
@@ -25,6 +25,7 @@ LDFLAGS+=		${BUILDLINK_LDADD.oss}
 .include "../../audio/libmad/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

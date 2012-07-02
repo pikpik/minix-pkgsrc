@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.55 2012/04/08 19:08:46 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2012/06/14 07:44:05 sbd Exp $
 #
 
 DISTNAME=		gramps-1.0.11
-PKGREVISION=		26
+PKGREVISION=		27
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gramps/}
 
@@ -32,4 +32,5 @@ MESSAGE_SUBST+=		PYPKGPREFIX=${PYPKGPREFIX}
 .include "../../x11/py-gtk2/buildlink3.mk"
 .include "../../x11/py-gnome2/buildlink3.mk"
 .include "../../lang/python/application.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

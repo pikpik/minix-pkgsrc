@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.157 2012/03/03 00:11:51 wiz Exp $
+# $NetBSD: Makefile,v 1.158 2012/06/14 07:43:09 sbd Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
-PKGREVISION=	16
+PKGREVISION=	17
 CATEGORIES=	x11
 COMMENT=	Support libraries for the KDE integrated X11 desktop
 
@@ -112,6 +112,7 @@ GCC_REQD+=		2.95
 .include "../../textproc/libxslt/buildlink3.mk"
 .include "../../textproc/xmlcatmgr/catalogs.mk"
 .include "../../mk/oss.buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 
 .include "../../mk/bsd.pkg.mk"
 
