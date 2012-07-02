@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.20 2012/03/15 11:53:23 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/04/08 19:08:49 wiz Exp $
 
 BOOST_PACKAGE=		python
-PKGREVISION=		1
 BOOST_COMMENT=		(Boost.Python binary library)
 BOOST_CONFIG=		installed
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+
+INSTALLATION_DIRS+=	lib
 
 .include "../../meta-pkgs/boost/Makefile.common"
 
