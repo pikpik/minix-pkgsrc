@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-src_celengine_galaxy.cpp,v 1.1 2011/11/25 22:08:30 joerg Exp $
 
---- src/celengine/galaxy.cpp.orig	2011-11-25 16:20:46.000000000 +0000
+--- src/celengine/galaxy.cpp.orig	2005-12-05 05:42:43.000000000 +0000
 +++ src/celengine/galaxy.cpp
 @@ -311,8 +311,8 @@ void Galaxy::renderGalaxyEllipsoid(const
      float discSizeInPixels = pixelSize * getRadius() / offset.length();

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/06/14 07:43:10 sbd Exp $
+# $NetBSD: Makefile,v 1.22 2012/07/01 19:05:10 dholland Exp $
 #
 
 DISTNAME=		audacious-1.5.1
@@ -30,6 +30,11 @@ PKG_SUGGESTED_OPTIONS=	inet6
 
 .if !empty(PKG_OPTIONS:Minet6)
 CONFIGURE_ARGS+=	--enable-ipv6
+.endif
+
+# for backtrace
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/execinfo.h)
+LIBS+=  -lexecinfo
 .endif
 
 LIBS.SunOS+=		-lm -lX11
