@@ -1,13 +1,15 @@
-# $NetBSD: Makefile,v 1.43 2011/11/01 06:02:00 sbd Exp $
+# $NetBSD: Makefile,v 1.44 2012/02/06 12:40:51 wiz Exp $
 
 DISTNAME=	wmbiff-0.4.26
-PKGREVISION=	14
+PKGREVISION=	15
 CATEGORIES=	mail x11 windowmaker
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wmbiff/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/wmbiff/
 COMMENT=	xbuffy like "mail-checker" for WindowMaker
+
+BROKEN=		wmbiff doesn't build with GnuTLS 3.0.
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

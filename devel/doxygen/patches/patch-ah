@@ -1,13 +1,13 @@
-$NetBSD: patch-ah,v 1.2 2006/06/14 10:24:53 adam Exp $
+$NetBSD: patch-ah,v 1.3 2008/11/11 00:44:12 wiz Exp $
 
---- src/dirdef.cpp.orig	2008-08-17 15:11:27.000000000 +0000
-+++ src/dirdef.cpp
-@@ -104,8 +104,8 @@ static QCString encodeDirName(const QCSt
- 
- QCString DirDef::getOutputFileBase() const
+
+--- src/dirdef.cpp.orig	2012-05-28 23:17:06.000000000 +0900
++++ src/dirdef.cpp	2012-06-23 11:52:57.000000000 +0900
+@@ -108,7 +108,8 @@
  {
--  return "dir_"+encodeDirName(name());
--  //return QCString().sprintf("dir_%06d",m_dirCount);
+   //printf("DirDef::getOutputFileBase() %s->dir_%s\n",
+   //    m_diskName.data(),encodeDirName(m_diskName).data());
+-  return "dir_"+encodeDirName(m_diskName);
 +  //return "dir_"+encodeDirName(name());
 +  return QCString().sprintf("dir_%06d",m_dirCount);
  }
