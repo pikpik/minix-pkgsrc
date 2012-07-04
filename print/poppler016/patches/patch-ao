@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ao,v 1.2 2009/10/21 10:18:57 drochner Exp $
 
 --- qt/Makefile.in.orig	2009-10-18 01:28:47.000000000 +0200
 +++ qt/Makefile.in

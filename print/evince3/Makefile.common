@@ -1,11 +1,11 @@
-# $NetBSD: Makefile.common,v 1.1.1.1 2012/03/21 17:40:20 drochner Exp $
+# $NetBSD: Makefile.common,v 1.2 2012/04/03 09:55:59 dholland Exp $
 #
 # used by print/evince3/Makefile
 # would probably be used by print/evince3-nautilus/Makefile if that existed
 
-DISTNAME=		evince-3.2.1
+DISTNAME=		evince-3.4.0
 CATEGORIES=		print
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/evince/3.2/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/evince/3.4/}
 EXTRACT_SUFX=		.tar.xz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org

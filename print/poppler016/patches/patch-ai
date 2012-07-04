@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ai,v 1.10 2009/10/21 10:18:57 drochner Exp $
 
 --- configure.orig	2009-10-18 01:28:46.000000000 +0200
 +++ configure

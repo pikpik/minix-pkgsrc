@@ -66,6 +66,7 @@ include/poppler/UnicodeDecompTables.h
 include/poppler/UnicodeMap.h
 include/poppler/UnicodeMapTables.h
 include/poppler/UnicodeTypeTable.h
+include/poppler/ViewerPreferences.h
 include/poppler/XRef.h
 include/poppler/XpdfPluginAPI.h
 include/poppler/goo/FixedPoint.h
@@ -78,6 +79,7 @@ include/poppler/goo/GooTimer.h
 include/poppler/goo/ImgWriter.h
 include/poppler/goo/JpegWriter.h
 include/poppler/goo/PNGWriter.h
+include/poppler/goo/TiffWriter.h
 include/poppler/goo/gfile.h
 include/poppler/goo/gmem.h
 include/poppler/goo/gstrtod.h
