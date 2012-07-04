@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.54 2012/01/20 12:29:45 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/01/20 12:31:25 wiz Exp $
 
-DISTNAME=	sox-14.3.2
+DISTNAME=	sox-14.4.0
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sox/}
 
@@ -40,5 +40,6 @@ post-install:
 .include "../../audio/libsndfile/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../sysutils/file/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
