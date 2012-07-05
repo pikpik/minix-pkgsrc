@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.52 2012/04/01 20:07:31 rhaen Exp $
+# $NetBSD: Makefile,v 1.53 2012/05/08 20:53:53 rhaen Exp $
 
-DISTNAME=	DBI-1.620
+DISTNAME=	DBI-1.622
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	databases perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DBD/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DBI/}
 
 MAINTAINER=	rhaen@NetBSD.org
 HOMEPAGE=	http://dbi.perl.org/

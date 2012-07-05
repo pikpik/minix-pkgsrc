@@ -1,21 +1,21 @@
-# $NetBSD: Makefile,v 1.16 2007/06/01 15:25:04 schmonz Exp $
+# $NetBSD: Makefile,v 1.18 2012/07/05 18:31:08 schmonz Exp $
 #
 
-DISTNAME=	qmhandle-1.2.3
-PKGNAME=	${DISTNAME:S/h/H/}
-CATEGORIES=	mail
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qmhandle/}
+DISTNAME=		qmhandle-1.3.2
+PKGNAME=		${DISTNAME:S/h/H/}
+CATEGORIES=		mail
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=qmhandle/}
 
-MAINTAINER=	schmonz@NetBSD.org
-HOMEPAGE=	http://qmhandle.sourceforge.net/
-COMMENT=	Tool to view and manage the qmail message queue
+MAINTAINER=		schmonz@NetBSD.org
+HOMEPAGE=		http://qmhandle.sourceforge.net/
+COMMENT=		Tool to view and manage the qmail message queue
+LICENSE=		gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-WRKSRC=		${WRKDIR}
-USE_TOOLS+=	perl:run
-REPLACE_PERL=	qmHandle
-NO_BUILD=	YES
+USE_TOOLS+=		perl:run
+REPLACE_PERL=		qmHandle
+NO_BUILD=		YES
 
 SUBST_CLASSES+=		config
 SUBST_STAGE.config=	do-configure
@@ -26,12 +26,11 @@ SUBST_SED.config+=	-e 's|/etc/init.d/qmail|${RCD_SCRIPTS_DIR}/qmail|g'
 SUBST_SED.config+=	-e 's|pidof|/usr/bin/pgrep|g'
 .endif
 
-INSTALLATION_DIRS=	bin
-BUILD_DEFS+=		QMAIL_QUEUE_DIR
+INSTALLATION_DIRS=	bin share/doc/qmHandle
+BUILD_DEFS+=		QMAIL_QUEUE_DIR RCD_SCRIPTS_DIR
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/qmHandle ${DESTDIR}${PREFIX}/bin
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/qmHandle
 	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${PREFIX}/share/doc/qmHandle
 
 .include "../../mk/bsd.pkg.mk"
