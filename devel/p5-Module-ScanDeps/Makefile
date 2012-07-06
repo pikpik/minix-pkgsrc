@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.25 2011/08/14 12:26:19 obache Exp $
+# $NetBSD: Makefile,v 1.26 2011/10/29 20:26:37 hiramatsu Exp $
 #
 
-DISTNAME=	Module-ScanDeps-1.04
+DISTNAME=	Module-ScanDeps-1.08
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5msd
 CATEGORIES=	devel perl5
@@ -14,8 +14,7 @@ LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Module/ScanDeps/.packlist
-#PERL5_MODULE_TYPE=	Module::Install
-MAKE_PARAMS+=		--skipdeps
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 REPLACE_PERL+=	script/scandeps.pl
 

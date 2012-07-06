@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.24 2011/08/14 15:14:03 obache Exp $
+# $NetBSD: Makefile,v 1.25 2011/11/11 04:33:32 hiramatsu Exp $
 
-DISTNAME=	Filter-1.39
+DISTNAME=	Filter-1.45
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5fil
 CATEGORIES=	textproc perl5

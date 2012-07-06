@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: buildlink3.mk,v 1.3 2011/06/15 05:25:46 uebayasi Exp $
 
 BUILDLINK_TREE+=	ocaml-findlib
 
@@ -27,8 +27,7 @@ ocaml-findlib-ldconf:
 	${CP} ${BUILDLINK_PREFIX.ocaml}/lib/ocaml/ld.conf		\
 	    ${BUILDLINK_DIR}/lib/ocaml
 
-.endif # OCAML_FINDLIB_BUILDLINK3_MK
-
 INSTALLATION_DIRS+=	lib/ocaml/site-lib
+.endif # OCAML_FINDLIB_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-ocaml-findlib

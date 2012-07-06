@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/06/14 07:45:23 sbd Exp $
+# $NetBSD: Makefile,v 1.6 2012/07/06 05:04:23 dholland Exp $
 #
 
 DISTNAME=		gcalctool-6.4.2.1
@@ -19,6 +19,8 @@ CONFIGURE_ENV+=		HAVE_YACC=yes
 USE_LIBTOOL=		yes
 USE_TOOLS+=		bison gmake gsed intltool flex msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes
+
+BUILD_DEPENDS+=		itstool-[0-9]*:../../textproc/itstool
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../devel/glib2/schemas.mk"
