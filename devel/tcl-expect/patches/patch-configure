@@ -1,0 +1,46 @@
+$NetBSD$
+
+--- configure.orig	Tue Feb  8 02:01:27 2005
++++ configure
+@@ -6382,13 +6382,14 @@ echo $ac_n "checking for type of library to build""...
+ echo "configure:6383: checking for type of library to build" >&5
+ if test "$enable_shared" = "yes" && test "x${TCL_SHLIB_SUFFIX}" != "x" ; then
+   EXP_SHLIB_CFLAGS=$TCL_SHLIB_CFLAGS
+-  eval "EXP_SHARED_LIB_FILE=libexpect${TCL_SHARED_LIB_SUFFIX}"
++  eval "EXP_SHARED_LIB_FILE=libexpect${EXP_MAJOR_VERSION}${EXP_MINOR_VERSION}.la"
+   EXP_LIB_FILE=$EXP_SHARED_LIB_FILE
+   EXP_LIB_FILES="$EXP_SHARED_LIB_FILE $EXP_UNSHARED_LIB_FILE"
+   echo "$ac_t""both shared and unshared" 1>&6
+ else
+   EXP_SHLIB_CFLAGS=
+-  EXP_SHARED_LIB_FILE="reconfigure_Tcl_for_shared_library"
++  eval "EXP_SHARED_LIB_FILE=libexpect${EXP_MAJOR_VERSION}${EXP_MINOR_VERSION}.la"
++  EXP_LIB_FILE=$EXP_SHARED_LIB_FILE
+   EXP_LIB_FILE=$EXP_UNSHARED_LIB_FILE
+   EXP_LIB_FILES="$EXP_UNSHARED_LIB_FILE"
+   echo "$ac_t""unshared" 1>&6
+@@ -6531,6 +6532,24 @@ for ac_option
+ do
+   case "\$ac_option" in
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
+     echo "running \${CONFIG_SHELL-/bin/sh} $0 $ac_configure_args --no-create --no-recursion"
+     exec \${CONFIG_SHELL-/bin/sh} $0 $ac_configure_args --no-create --no-recursion ;;
+   -version | --version | --versio | --versi | --vers | --ver | --ve | --v)

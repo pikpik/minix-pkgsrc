@@ -1,0 +1,10 @@
+$NetBSD: distinfo,v 1.14 2008/03/15 12:41:36 joerg Exp $
+
+SHA1 (expect-5.43.0.tar.bz2) = a73530772f9d735e98175c7807efa8e785c5fa60
+RMD160 (expect-5.43.0.tar.bz2) = 27966c50923700a0b491d65cf54bd0e80eb6fa39
+Size (expect-5.43.0.tar.bz2) = 419691 bytes
+SHA1 (patch-Makefile.in) = eca531308b3d28c2674b52bd9a07cad51600622f
+SHA1 (patch-configure) = c0c86e9633b3b431742e4f9afba8335541e40152
+SHA1 (patch-configure.in) = 6b7616a1e2feb7f335fa152ec8fd36b281d5b248
+SHA1 (patch-exp__command.c) = 32dd697298c5bc588ce3148baf6b4b914d62c663
+SHA1 (patch-pkgIndex.in) = 4526c1661ac8a50947b6c1e797569e853b7f51fe

@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.in.orig	Tue Feb  8 01:45:06 2005
++++ configure.in
+@@ -1158,7 +1158,7 @@ if test "$enable_shared" = "yes" && test "x${TCL_SHLIB
+   AC_MSG_RESULT(both shared and unshared)
+ else
+   EXP_SHLIB_CFLAGS=
+-  EXP_SHARED_LIB_FILE="reconfigure_Tcl_for_shared_library"
++  eval "EXP_SHARED_LIB_FILE=libexpect${TCL_SHARED_LIB_SUFFIX}"
+   EXP_LIB_FILE=$EXP_UNSHARED_LIB_FILE
+   EXP_LIB_FILES="$EXP_UNSHARED_LIB_FILE"
+   AC_MSG_RESULT(unshared)
