@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- ld/testsuite/config/default.exp.orig	Thu May 12 10:00:05 2011
++++ ld/testsuite/config/default.exp
+@@ -137,13 +137,6 @@ proc get_target_emul {} {
+     return $result
+ }
+ 
+-if [isnative] {
+-    foreach x {HOSTING_CRT0 HOSTING_LIBS} {
+-	get_link_files $x
+-    }
+-} else {
+-    foreach x {HOSTING_CRT0 HOSTING_LIBS} { set $x "" }
+-}
+ if ![info exists HOSTING_EMU] { set HOSTING_EMU "-m [get_target_emul]" }
+ 
+ #

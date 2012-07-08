@@ -1,0 +1,17 @@
+$NetBSD$
+
+--- configure.orig	Sun Aug 14 12:28:15 2011
++++ configure
+@@ -14663,6 +14663,12 @@ do
+   case $ac_option in
+   # Handling of the options.
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
+     ac_cs_recheck=: ;;
+   --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
+     $as_echo "$ac_cs_version"; exit ;;
