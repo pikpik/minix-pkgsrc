@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2207 2012/07/07 20:33:20 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.2216 2012/07/08 12:34:01 mef Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3444,3 +3444,11 @@ Changes to the packages collection and infrastructure in 2012:
 	Added games/wargames version 1.01 [abs 2012-07-07]
 	Updated editors/xournal to 0.4.7 [wiz 2012-07-07]
 	Updated devel/mercurial to 2.2.3 [wiz 2012-07-07]
+	Updated print/xfce4-print to 4.6.1nb9 [sbd 2012-07-08]
+	Updated audio/timidity to 2.14.0 [wiz 2012-07-08]
+	Updated security/sks to 1.1.2nb1 [sbd 2012-07-08]
+	Updated graphics/tgif to 4.2.5nb1 [sbd 2012-07-08]
+	Updated news/nget to 0.27.1nb4 [sbd 2012-07-08]
+	Updated news/nn to 6.7.3nb1 [sbd 2012-07-08]
+	Updated net/mikutter to 0.1.1.814 [obache 2012-07-08]
+	Updated x11/kdelibdocs3 to 3.5.10nb13 [mef 2012-07-08]
