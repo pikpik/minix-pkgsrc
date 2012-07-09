@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.832 2012/04/08 04:42:39 sbd Exp $
+# $NetBSD: pkglint.pl,v 1.834 2012/07/09 17:37:30 wiz Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -248,7 +248,7 @@ sub print_summary_and_exit($) {
 
 	if (!$quiet) {
 		if ($errors != 0 || $warnings != 0) {
-			print("$errors errors and $warnings warnings found.\n");
+			print("$errors errors and $warnings warnings found." . ($explain_flag ? "" : " (Use -e for more details.)") . "\n");
 		} else {
 			print "looks fine.\n";
 		}
@@ -1330,9 +1330,9 @@ my (@options) = (
 # Commonly used regular expressions.
 #
 
-use constant regex_dependency_gt => qr"^((?:\$\{[\w_]+\}|[\w_]|-[^\d])+)>=(.*)$";
+use constant regex_dependency_gt => qr"^((?:\$\{[\w_]+\}|[\w_\.]|-[^\d])+)>=(\d[^-]*)$";
 use constant regex_dependency_wildcard
-				=> qr"^((?:\$\{[\w_]+\}|[\w_]|-[^\d\[])+)-(?:\[0-9\]|\d.*)$";
+				=> qr"^((?:\$\{[\w_]+\}|[\w_\.]|-[^\d\[])+)-(?:\[0-9\]|\d[^-]*)$";
 use constant regex_gnu_configure_volatile_vars
 				=> qr"^(?:.*_)?(?:CFLAGS||CPPFLAGS|CXXFLAGS|FFLAGS|LDFLAGS|LIBS)$";
 use constant regex_mk_comment	=> qr"^ *\s*#(.*)$";
@@ -2042,7 +2042,7 @@ sub load_tool_names() {
 	# Some user-defined variables do not influence the binary
 	# package at all and therefore do not have to be added to
 	# BUILD_DEFS.
-	foreach my $bdvar (qw(DISTDIR FETCH_CMD FETCH_OUTPUT_ARGS GAMEOWN GAMEGRP GAMEDIRMODE)) {
+	foreach my $bdvar (qw(DISTDIR FETCH_CMD FETCH_OUTPUT_ARGS GAMES_USER GAMES_GROUP GAMEDATAMODE GAMEOWN GAMEGRP GAMEDIRMODE)) {
 		$system_build_defs->{$bdvar} = true;
 	}
 	#$system_build_defs->{"PACKAGES"} = true;
@@ -4983,8 +4983,8 @@ sub checkline_mk_vartype_basic($$$$$$$$) {
 	} elsif ($type eq "DependencyWithPath") {
 		if ($value =~ regex_unresolved) {
 			# don't even try to check anything
-		} elsif ($value =~ m":(\.\./\.\./([^/]+)/([^/]+))$") {
-			my ($relpath, $cat, $pkg) = ($1, $2, $3);
+		} elsif ($value =~ m"(.*):(\.\./\.\./([^/]+)/([^/]+))$") {
+			my ($pattern, $relpath, $cat, $pkg) = ($1, $2, $3, $4);
 
 			checkline_relative_pkgdir($line, $relpath);
 
@@ -4997,6 +4997,14 @@ sub checkline_mk_vartype_basic($$$$$$$$) {
 			} elsif ($pkg eq "gmake") {
 				$line->log_warning("Please use USE_TOOLS+=gmake instead of this dependency.");
 
+			}
+
+			if ($pattern =~ regex_dependency_gt) {
+#				($abi_pkg, $abi_version) = ($1, $2);
+			} elsif ($pattern =~ regex_dependency_wildcard) {
+#				($abi_pkg) = ($1);
+			} else {
+				$line->log_warning("Unknown dependency pattern \"${pattern}\".");
 			}
 
 		} elsif ($value =~ m":\.\./[^/]+$") {

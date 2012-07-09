@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2218 2012/07/08 19:36:10 marino Exp $
+$NetBSD: CHANGES-2012,v 1.2234 2012/07/09 18:05:44 bsiegert Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3454,3 +3454,29 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated x11/kdelibdocs3 to 3.5.10nb13 [mef 2012-07-08]
 	Added lang/gcc-aux version 20120614 [marino 2012-07-06]
 	Updated time/p5-Time-HiRes to 1.9724nb1 [wiz 2012-07-08]
+	Added print/xdvipdfmx version 0.7.8.20110705 [minskim 2012-07-09]
+	Updated print/xetex to 0.9997.5nb3 [minskim 2012-07-09]
+	Updated converters/dos2unix to 6.0 [ryoon 2012-07-09]
+	Updated audio/abcmidi to 20120704 [ryoon 2012-07-09]
+	Updated mail/msmtp to 1.4.28 [ryoon 2012-07-09]
+	Updated ham/gnuradio-core-docs to 3.3.0nb11 [mef 2012-07-09]
+	Updated ham/usrp-docs to 3.3.0nb6 [mef 2012-07-09]
+	Updated devel/qof to 0.7.5nb11 [mef 2012-07-09]
+	Updated www/tidy to 20091027nb1 [mef 2012-07-09]
+	Updated converters/libcdr to 0.0.6nb1 [mef 2012-07-09]
+	Added devel/tex-lualibs version 0.95 [minskim 2012-07-09]
+	Added devel/tex-lualibs-doc version 0.95 [minskim 2012-07-09]
+	Added devel/tex-luatexbase version 0.31 [minskim 2012-07-09]
+	Added devel/tex-luatexbase-doc version 0.31 [minskim 2012-07-09]
+	Added fonts/tex-luaotfload version 1.26 [minskim 2012-07-09]
+	Added fonts/tex-luaotfload-doc version 1.26 [minskim 2012-07-09]
+	Updated fonts/tex-fontspec to 2.2b [minskim 2012-07-09]
+	Updated fonts/tex-fontspec-doc to 2.2b [minskim 2012-07-09]
+	Updated devel/scmgit-base to 1.7.11.1 [adam 2012-07-09]
+	Updated devel/scmgit-docs to 1.7.11.1 [adam 2012-07-09]
+	Updated devel/scmgit to 1.7.11.1 [adam 2012-07-09]
+	Updated www/gitweb to 1.7.11.1 [adam 2012-07-09]
+	Updated print/tex-xetex to 2011nb1 [minskim 2012-07-09]
+	Updated pkgtools/pkglint to 4.111 [wiz 2012-07-09]
+	Updated devel/automake to 1.12.2 [bsiegert 2012-07-09]
+	Updated pkgtools/pkglint to 4.112 [wiz 2012-07-09]
