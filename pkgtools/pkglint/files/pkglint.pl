@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.836 2012/07/09 21:57:31 wiz Exp $
+# $NetBSD: pkglint.pl,v 1.839 2012/07/10 10:27:23 wiz Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -1332,12 +1332,12 @@ my (@options) = (
 
 use constant regex_dependency_gt => qr"^((?:\$\{[\w_]+\}|[\w_\.]|-[^\d])+)>=(\d[^-]*)$";
 use constant regex_dependency_wildcard
-				=> qr"^((?:\$\{[\w_]+\}|[\w_\.]|-[^\d\[])+)-(?:\[0-9\]|\d[^-]*)$";
+				=> qr"^((?:\$\{[\w_]+\}|[\w_\.]|-[^\d\[])+)-(?:\[0-9\]\*|\d[^-]*)$";
 use constant regex_gnu_configure_volatile_vars
 				=> qr"^(?:.*_)?(?:CFLAGS||CPPFLAGS|CXXFLAGS|FFLAGS|LDFLAGS|LIBS)$";
 use constant regex_mk_comment	=> qr"^ *\s*#(.*)$";
 use constant regex_mk_cond	=> qr"^\.(\s*)(if|ifdef|ifndef|else|elif|endif|for|endfor|undef)(?:\s+([^\s#][^#]*?))?\s*(?:#.*)?$";
-use constant regex_mk_dependency=> qr"^([^\s:]+(?:\s*[^\s:]+)*):\s*([^#]*?)(?:\s*#.*)?$";
+use constant regex_mk_dependency=> qr"^([^\s:]+(?:\s*[^\s:]+)*)(\s*):\s*([^#]*?)(?:\s*#.*)?$";
 use constant regex_mk_include	=> qr"^\.\s*(s?include)\s+\"([^\"]+)\"\s*(?:#.*)?$";
 use constant regex_mk_sysinclude=> qr"^\.\s*s?include\s+<([^>]+)>\s*(?:#.*)?$";
 use constant regex_mk_shellvaruse => qr"(?:^|[^\$])\$\$\{?(\w+)\}?"; # XXX: not perfect
@@ -3150,6 +3150,7 @@ sub parse_licenses($) {
 	my ($licenses) = @_;
 
 	# XXX: this is clearly cheating
+	$licenses =~ s,\${PERL5_LICENSE},gnu-gpl-v2 OR artistic,g;
 	$licenses =~ s,[()]|AND|OR,,g;
 	my @licenses = split(/\s+/, $licenses);
 	return \@licenses;
@@ -3227,11 +3228,12 @@ sub parseline_mk($) {
 		defined($comment) and $line->set("comment", $comment);
 
 	} elsif ($text =~ regex_mk_dependency) {
-		my ($targets, $sources, $comment) = ($1, $2, $3);
+		my ($targets, $whitespace, $sources, $comment) = ($1, $2, $3, $4);
 
 		$line->set("is_dependency", true);
 		$line->set("targets", $targets);
 		$line->set("sources", $sources);
+		$line->log_warning("Space before colon in dependency line: " . $line->to_string()) if ($whitespace);
 		defined($comment) and $line->set("comment", $comment);
 
 	} elsif ($text =~ regex_rcs_conflict) {
@@ -6292,7 +6294,7 @@ sub checklines_mk($) {
 			}
 
 		} elsif ($text =~ regex_mk_dependency) {
-			my ($targets, $dependencies) = ($1, $2);
+			my ($targets, $whitespace, $dependencies, $comment) = ($1, $2, $3, $4);
 
 			$opt_debug_misc and $line->log_debug("targets=${targets}, dependencies=${dependencies}");
 			$mkctx_target = $targets;
@@ -8014,7 +8016,7 @@ sub checkfile($) {
 	} elsif ($fname =~ m"(?:^|/)patches/[^/]*$") {
 		log_warning($fname, NO_LINE_NUMBER, "Patch files should be named \"patch-\", followed by letters, '-', '_', '.', and digits only.");
 
-	} elsif ($basename =~ m"^(?:.*\.mk|Makefile.*)$") {
+	} elsif ($basename =~ m"^(?:.*\.mk|Makefile.*)$" and not $fname =~ m,files/, and not $fname =~ m,patches/,) {
 		$opt_check_mk and checkfile_mk($fname);
 
 	} elsif ($basename =~ m"^PLIST") {
@@ -8345,6 +8347,8 @@ sub checkdir_package() {
 	foreach my $fname (@files) {
 		if (($fname =~ m"^((?:.*/)?Makefile\..*|.*\.mk)$")
 		&& (not $fname =~ m"patch-")
+		&& (not $fname =~ m"${pkgdir}/")
+		&& (not $fname =~ m"${filesdir}/")
 		&& (defined(my $lines = load_lines($fname, true)))) {
 			parselines_mk($lines);
 			determine_used_variables($lines);
