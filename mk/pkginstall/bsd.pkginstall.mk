@@ -1,4 +1,4 @@
-# $NetBSD: bsd.pkginstall.mk,v 1.55 2011/09/08 20:17:16 abs Exp $
+# $NetBSD: bsd.pkginstall.mk,v 1.56 2012/07/09 15:44:06 wiz Exp $
 #
 # This Makefile fragment is included by bsd.pkg.mk and implements the
 # common INSTALL/DEINSTALL scripts framework.  To use the pkginstall
@@ -223,6 +223,7 @@ SETGIDGAME?=            ${USE_GAMESGROUP}
     (defined(SETGIDGAME) && !empty(SETGIDGAME:M[yY][eE][sS]))
 PKG_GROUPS+=	${GAMES_GROUP}
 PKG_USERS+=	${GAMES_USER}:${GAMES_GROUP}
+_BUILD_DEFS+=	GAMES_GROUP GAMES_USER GAMEDATAMODE GAMEDIRMODE GAMEMODE
 .endif
 
 # Interix is very special in that users and groups cannot have the

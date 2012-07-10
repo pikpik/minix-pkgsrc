@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.834 2012/07/09 17:37:30 wiz Exp $
+# $NetBSD: pkglint.pl,v 1.836 2012/07/09 21:57:31 wiz Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -2042,7 +2042,7 @@ sub load_tool_names() {
 	# Some user-defined variables do not influence the binary
 	# package at all and therefore do not have to be added to
 	# BUILD_DEFS.
-	foreach my $bdvar (qw(DISTDIR FETCH_CMD FETCH_OUTPUT_ARGS GAMES_USER GAMES_GROUP GAMEDATAMODE GAMEOWN GAMEGRP GAMEDIRMODE)) {
+	foreach my $bdvar (qw(DISTDIR FETCH_CMD FETCH_OUTPUT_ARGS GAMES_USER GAMES_GROUP GAMEDATAMODE GAMEDIRMODE GAMEMODE GAMEOWN GAMEGRP )) {
 		$system_build_defs->{$bdvar} = true;
 	}
 	#$system_build_defs->{"PACKAGES"} = true;
@@ -4760,16 +4760,16 @@ sub checkline_mk_vardef($$$) {
 
 	my $perms = get_variable_perms($line, $varname);
 	my $needed = { "=" => "s", "!=" => "s", "?=" => "d", "+=" => "a", ":=" => "s" }->{$op};
-
+	my %full = ( "a" => "append", "d" => "default", "p" => "preprocess", "s" => "set", "t" => "runtime" );
 	if (index($perms, $needed) == -1) {
-		$line->log_warning("Permission [${needed}] requested for ${varname}, but only [${perms}] is allowed.");
+		$line->log_warning("Permission [$full{$needed}] requested for ${varname}, but only [$full{$perms}] is allowed.");
 		$line->explain_warning(
 "The available permissions are:",
-"\ta\tappend something using +=",
-"\td\tset a default value using ?=",
-"\ts\tset a variable using :=, =, !=",
-"\tp\tuse a variable during preprocessing",
-"\tu\tuse a variable at runtime",
+"\tappend\t\tappend something using +=",
+"\tdefault\t\tset a default value using ?=",
+"\tpreprocess\tuse a variable during preprocessing",
+"\truntime\t\tuse a variable at runtime",
+"\tset\t\tset a variable using :=, =, !=",
 "",
 "A \"?\" means that it is not yet clear which permissions are allowed",
 "and which aren't.");
