@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/ocaml/site-lib/ocsigenserver/extensions/deflatemod.cmo
+${OPT}lib/ocaml/site-lib/ocsigenserver/extensions/deflatemod.cmx
+${OPT}lib/ocaml/site-lib/ocsigenserver/extensions/deflatemod.cmxs
+lib/ocaml/site-lib/ocsigenserver/extensions/deflatemod.o

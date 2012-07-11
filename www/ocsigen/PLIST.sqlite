@@ -1,0 +1,5 @@
+@comment $NetBSD$
+${OPT}lib/ocaml/site-lib/ocsigenserver/extensions/ocsipersist-sqlite.a
+lib/ocaml/site-lib/ocsigenserver/extensions/ocsipersist-sqlite.cma
+${OPT}lib/ocaml/site-lib/ocsigenserver/extensions/ocsipersist-sqlite.cmxa
+${OPT}lib/ocaml/site-lib/ocsigenserver/extensions/ocsipersist-sqlite.cmxs
