@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1625 2012/07/09 13:54:36 minskim Exp $
+# $NetBSD: Makefile,v 1.1626 2012/07/09 14:07:19 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -302,6 +302,7 @@ SUBDIR+=	kdiff3
 SUBDIR+=	kdiff3-kde3
 SUBDIR+=	ko-po-check
 SUBDIR+=	kscope
+SUBDIR+=	kyua-atf-compat
 SUBDIR+=	kyua-cli
 SUBDIR+=	lcc
 SUBDIR+=	lcov
