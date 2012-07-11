@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.25 2012/01/23 20:54:09 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2012/03/30 03:53:54 taca Exp $
 
 DISTNAME=		file-5.11
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.astron.com/pub/file/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-#HOMEPAGE=
+HOMEPAGE=		http://www.darwinsys.com/file/
 COMMENT=		Tool for determining file type
 LICENSE=		2-clause-bsd
 
