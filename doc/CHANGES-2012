@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2266 2012/07/12 21:13:29 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.2283 2012/07/13 18:46:31 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3505,8 +3505,10 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated print/teTeX3-texmf to 3.0nb37 [minskim 2012-07-11]
 	Added devel/ocaml-deriving-ocsigen version 0.3c [wiz 2012-07-11]
 	Added devel/js_of_ocaml version 1.2 [wiz 2012-07-11]
+	Updated mail/p5-Mail-IMAPClient to 3.31 [wen 2012-07-11]
 	Updated databases/ipa_sdb to 1.1.1 [wiz 2012-07-11]
 	Updated www/apache24 to 2.4.2nb3 [ryoon 2012-07-11]
+	Updated misc/p5-File-MMagic to 1.29 [wen 2012-07-12]
 	Updated x11/glproto to 1.4.16 [wiz 2012-07-12]
 	Updated x11/dri2proto to 2.8 [wiz 2012-07-12]
 	Updated x11/randrproto to 1.4.0 [wiz 2012-07-12]
@@ -3518,3 +3520,19 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated news/pan to 0.139 [wiz 2012-07-12]
 	Updated misc/dialog to 1.1.20120706 [wiz 2012-07-12]
 	Added sysutils/dc-tools version 1.00 [abs 2012-07-12]
+	Updated textproc/p5-Text-Format to 0.56 [sno 2012-07-13]
+	Updated devel/p5-version to 0.9900 [sno 2012-07-13]
+	Updated devel/ruby-ole to 1.2.11.4 [obache 2012-07-13]
+	Updated math/ruby-spreadsheet to 0.7.3 [obache 2012-07-13]
+	Updated print/xdvipdfmx to 0.7.8.20120701 [minskim 2012-07-13]
+	Updated math/py-networkx to 1.7 [wen 2012-07-13]
+	Updated print/xetex to 0.9998 [minskim 2012-07-13]
+	Added x11/xcb-util036 version 0.3.6 [wiz 2012-07-13]
+	Updated x11/xcb-util to 0.3.9 [wiz 2012-07-13]
+	Updated x11/libXi to 1.6.1 [wiz 2012-07-13]
+	Updated graphics/libexif to 0.6.21 [adam 2012-07-13]
+	Updated graphics/exif to 0.6.21 [adam 2012-07-13]
+	Updated misc/libreoffice3-bin to 3.5.5 [ryoon 2012-07-13]
+	Updated graphics/opencv to 2.4.2 [prlw1 2012-07-13]
+	Updated devel/jenkins to 1.447.2 [ryoon 2012-07-13]
+	Updated textproc/p5-Text-vCard to 2.11 [kleink 2012-07-13]

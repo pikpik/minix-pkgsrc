@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/09/10 19:55:11 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/03 18:20:27 wiz Exp $
 #
 
 DISTNAME=		xlsclients-1.1.2
+PKGREVISION=		1
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

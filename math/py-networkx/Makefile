@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/08/27 03:09:18 gls Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/02 13:19:17 obache Exp $
 #
 
-DISTNAME=	networkx-1.6
+DISTNAME=	networkx-1.7
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	math python
 MASTER_SITES=	http://pypi.python.org/packages/source/n/networkx/ \
