@@ -1,6 +1,6 @@
 #! @PERL@
 
-# $NetBSD: lintpkgsrc.pl,v 1.115 2007/11/22 09:36:38 rillig Exp $
+# $NetBSD: lintpkgsrc.pl,v 1.116 2012/05/08 23:11:48 sbd Exp $
 
 # Written by David Brownlee <abs@netbsd.org>.
 #
@@ -70,7 +70,7 @@ $| = 1;
 
 # Horrible kludge to ensure we have a value for testing in conditionals, but
 # gets removed in the final evaluation
-my $magic_undefined = 'M_a_G_i_C_UNDEFINED';
+my $magic_undefined = 'M_a_G_i_C_uNdEfInEd';
 
 get_default_makefile_vars();    # $default_vars
 
@@ -83,7 +83,7 @@ if ( $opt{D} && @ARGV ) {
             fail("No such file: $file");
         }
         my ( $pkgname, $vars ) = parse_makefile_pkgsrc($file);
-        $pkgname ||= 'UNDEFINED';
+        $pkgname ||= 'uNDEFINEd';
         print "$file -> $pkgname\n";
         foreach my $varname ( sort keys %{$vars} ) {
             print "\t$varname = $vars->{$varname}\n";
@@ -281,12 +281,12 @@ sub main() {
 }
 
 sub canonicalize_pkgname($) {
-	my ($pkgname) = @_;
+    my ($pkgname) = @_;
 
-	$pkgname =~ s,^py\d+(?:pth|)-,py-,;
-	$pkgname =~ s,^ruby\d+-,ruby-,;
-	$pkgname =~ s,^php\d+-,php-,;
-	return $pkgname;
+    $pkgname =~ s,^py\d+(?:pth|)-,py-,;
+    $pkgname =~ s,^ruby\d+-,ruby-,;
+    $pkgname =~ s,^php\d+-,php-,;
+    return $pkgname;
 }
 
 # Could speed up by building a cache of package names to paths, then processing
@@ -302,7 +302,7 @@ sub check_prebuilt_packages() {
     elsif (/(.+)-(\d.*)\.t[bg]z$/) {
         my ( $pkg, $ver ) = ( $1, $2 );
 
-	$pkg = canonicalize_pkgname($pkg);
+        $pkg = canonicalize_pkgname($pkg);
 
         if ( $opt{V} && $vuln{$pkg} ) {
             foreach my $chk ( @{ $vuln{$pkg} } ) {
@@ -490,7 +490,7 @@ sub get_default_makefile_vars() {
     # Handle systems without uname -p  (NetBSD pre 1.4)
     chomp( $default_vars->{MACHINE_ARCH} = `uname -p 2>/dev/null` );
 
-    if ( !$default_vars->{MACHINE_ARCH}
+    if (  !$default_vars->{MACHINE_ARCH}
         && $default_vars->{OS_VERSION} eq 'NetBSD' )
     {
         chomp( $default_vars->{MACHINE_ARCH} = `sysctl -n hw.machine_arch` );
@@ -634,10 +634,10 @@ sub listdir($$) {
 sub list_installed_packages() {
     my (@pkgs);
 
-    open(PKG_INFO, 'pkg_info -e "*" |') || fail("Unable to run pkg_info: $!");
-    while (defined(my $pkg = <PKG_INFO>)) {
+    open( PKG_INFO, 'pkg_info -e "*" |' ) || fail("Unable to run pkg_info: $!");
+    while ( defined( my $pkg = <PKG_INFO> ) ) {
         chomp($pkg);
-        push(@pkgs, canonicalize_pkgname($pkg));
+        push( @pkgs, canonicalize_pkgname($pkg) );
     }
     close(PKG_INFO);
 
@@ -890,7 +890,7 @@ sub parse_makefile_pkgsrc($) {
             $pkgname = "pkg_install-$pkg_installver";
         }
 
-	$pkgname = canonicalize_pkgname($pkgname);
+        $pkgname = canonicalize_pkgname($pkgname);
 
         if ( defined $vars->{PKGREVISION}
             and not $vars->{PKGREVISION} =~ /^\s*$/ )
@@ -1181,7 +1181,7 @@ sub parse_makefile_vars($$) {
 
             }
             elsif ( $vars{$key} =~
-                m#\${(\w+):([CS]([^{}])[^{}\3]+\3[^{}\3]*\3[g1]*(|:[^{}]+))}# )
+                m#\${([\w.]+):([CS]([^{}])[^{}\3]+\3[^{}\3]*\3[g1]*(|:[^{}]+)|U[^{}]+)}# )
             {
                 my ( $left, $subvar, $right ) = ( $`, $1, $' );
                 my (@patterns) = split( ':', $2 );
@@ -1201,32 +1201,38 @@ sub parse_makefile_vars($$) {
                     "$file: substitutelist $key ($result) $subvar (@patterns)\n"
                 );
                 foreach (@patterns) {
-                    if ( !m#([CS])(.)([^/]+)\2([^/]*)\2([1g]*)# ) {
-                        next;
-                    }
+                    if (m#(U)(.*)#) {
+			$result ||= $2;
+                    } elsif (m#([CS])(.)([^/]+)\2([^/]*)\2([1g]*)#) {
 
-                    my ( $how, $from, $to, $global ) = ( $1, $3, $4, $5 );
+                        my ( $how, $from, $to, $global ) = ( $1, $3, $4, $5 );
 
-                    debug(
+                        debug(
 "$file: substituteglob $subvar, $how, $from, $to, $global\n"
-                    );
-                    if ( $how eq 'S' ) {
+                        );
+                        if ( $how eq 'S' ) {
 
-                        # Limited substitution - keep ^ and $
-                        $from =~ s/([?.{}\]\[*+])/\\$1/g;
+                            # Limited substitution - keep ^ and $
+                            $from =~ s/([?.{}\]\[*+])/\\$1/g;
+                        }
+                        $to =~ s/\\(\d)/\$$1/g;    # Change \1 etc to $1
+                        $to =~ s/\&/\$&/g;         # Change & to $1
+
+                        my ($notfirst);
+                        if ( $global =~ s/1// ) {
+                            ( $from, $notfirst ) = split( '\s', $from, 2 );
+                        }
+
+                        debug(
+                            "$file: substituteperl $subvar, $how, $from, $to\n"
+                        );
+                        eval "\$result =~ s/$from/$to/$global";
+                        if ( defined $notfirst ) {
+                            $result .= " $notfirst";
+                        }
                     }
-                    $to =~ s/\\(\d)/\$$1/g;    # Change \1 etc to $1
-                    $to =~ s/\&/\$&/g;         # Change & to $1
-
-                    my ($notfirst);
-                    if ( $global =~ s/1// ) {
-                        ( $from, $notfirst ) = split( '\s', $from, 2 );
-                    }
-
-                    debug("$file: substituteperl $subvar, $how, $from, $to\n");
-                    eval "\$result =~ s/$from/$to/$global";
-                    if ( defined $notfirst ) {
-                        $result .= " $notfirst";
+                    else {
+                        next;
                     }
                 }
 
@@ -1429,7 +1435,7 @@ sub pkgsrc_check_depends() {
 
             $depend =~ s/:.*// || next;
 
-	    $depend = canonicalize_pkgname($depend);
+            $depend = canonicalize_pkgname($depend);
             if ( ( $msg = invalid_version($depend) ) ) {
                 if ( !defined($err) ) {
                     print $pkgver->pkgname . " DEPENDS errors:\n";
