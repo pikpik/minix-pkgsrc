@@ -224,6 +224,7 @@ lib/asterisk/modules/chan_iax2.so
 ${PLIST.jabber}lib/asterisk/modules/chan_jingle.so
 lib/asterisk/modules/chan_local.so
 lib/asterisk/modules/chan_multicast_rtp.so
+${PLIST.mgcp}lib/asterisk/modules/chan_mgcp.so
 lib/asterisk/modules/chan_oss.so
 lib/asterisk/modules/chan_sip.so
 lib/asterisk/modules/chan_skinny.so

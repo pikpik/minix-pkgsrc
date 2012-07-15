@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.381 2012/06/06 07:39:54 wiz Exp $
+# $NetBSD: Makefile,v 1.382 2012/06/06 07:54:36 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -105,7 +105,6 @@ SUBDIR+=	iselect
 SUBDIR+=	ja-less
 SUBDIR+=	ja-man
 SUBDIR+=	jhd
-SUBDIR+=	jitterbug
 SUBDIR+=	jive
 SUBDIR+=	kaccessible
 SUBDIR+=	kalzium

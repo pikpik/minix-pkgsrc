@@ -38,7 +38,7 @@ LIBS+=  -lexecinfo
 .endif
 
 LIBS.SunOS+=		-lm -lX11
-LDFLAGS.DragonFly=	-lm -lX11 -lgmodule-2.0
+LDFLAGS.DragonFly=	-lm -lX11 -lICE -lgmodule-2.0
 
 .include "../../devel/atk/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

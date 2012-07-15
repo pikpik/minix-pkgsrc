@@ -20,6 +20,8 @@ LICENSE=	gnu-gpl-v2
 
 CONFLICTS+=	asterisk-sounds-extra-[0-9]*
 
+NOT_FOR_PLATFORM+=	DragonFly-*-*
+
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
