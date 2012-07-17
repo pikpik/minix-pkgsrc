@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: xendomains.sh,v 1.1.1.1 2007/06/14 19:39:45 bouyer Exp $
+# $NetBSD: xendomains.sh,v 1.1.1.1 2008/08/07 20:26:58 cegger Exp $
 #
 # PROVIDE: xendomains
 # REQUIRE: xenbackendd
@@ -57,8 +57,10 @@ xendomains_start()
 			cmdline=`printf "${xendomains_prehook}" $domain`
 			cmd="${cmdline%% *}"
 			if [ -x "$cmd" ]; then
-				$cmdline || echo "Pre-hook \`\`$cmdline'' failed... skipping $domain."
-				continue
+				if ! $cmdline; then
+					echo "Pre-hook \`\`$cmdline'' failed... skipping $domain."
+					continue
+				fi
 			fi
 		fi
 
