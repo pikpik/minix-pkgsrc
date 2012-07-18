@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/07/15 11:12:21 cheusov Exp $
+# $NetBSD: Makefile,v 1.8 2012/07/17 18:08:02 cheusov Exp $
 #
 
 DISTNAME=		starttls-0.10
@@ -6,7 +6,7 @@ PKGREVISION=		5
 CATEGORIES=		security
 MASTER_SITES=		ftp://opaopa.org/pub/elisp/
 
-MAINTAINER=		fun@naobsd.org
+MAINTAINER=		cheusov@NetBSD.org
 HOMEPAGE=		ftp://opaopa.org/pub/elisp/
 COMMENT=		Simple wrapper program for STARTTLS on emacsen
 LICENSE=		gnu-gpl-v2

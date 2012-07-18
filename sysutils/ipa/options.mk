@@ -1,18 +1,11 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2006/10/18 11:45:22 markd Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ipa
-PKG_SUPPORTED_OPTIONS=	ipa-memfunc-debug ipa-without-autorules \
+PKG_SUPPORTED_OPTIONS=	ipa-without-autorules \
 			ipa-without-limits ipa-without-rules \
 			ipa-without-sublimits ipa-without-thresholds
 
 .include "../../mk/bsd.options.mk"
-
-###
-### Enable ipa_memfunc debugging
-###
-.if !empty(PKG_OPTIONS:Mipa-memfunc-debug)
-CONFIGURE_ARGS+= --enable-memfunc-debug
-.endif
 
 ###
 ### Disable dynamic rules support
