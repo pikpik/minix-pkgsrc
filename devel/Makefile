@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1628 2012/07/11 15:35:57 wiz Exp $
+# $NetBSD: Makefile,v 1.1629 2012/07/15 02:35:20 dholland Exp $
 #
 
 COMMENT=	Development utilities
@@ -1046,6 +1046,7 @@ SUBDIR+=	p5-Regexp-Shellish
 SUBDIR+=	p5-Return-Value
 SUBDIR+=	p5-Role-HasMessage
 SUBDIR+=	p5-Role-Identifiable
+SUBDIR+=	p5-Role-Tiny
 SUBDIR+=	p5-Rose-Object
 SUBDIR+=	p5-SDL
 SUBDIR+=	p5-SUPER
