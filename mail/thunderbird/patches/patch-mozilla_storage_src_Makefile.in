@@ -1,9 +1,9 @@
 $NetBSD$
 
---- mozilla/storage/src/Makefile.in.orig	2012-04-20 22:40:23.000000000 +0000
+--- mozilla/storage/src/Makefile.in.orig	2012-07-12 15:25:26.000000000 +0000
 +++ mozilla/storage/src/Makefile.in
-@@ -55,6 +55,22 @@ ifeq ($(OS_ARCH),Linux)
- DEFINES += -DXP_LINUX
+@@ -67,6 +67,22 @@ DEFINES += -DMOZ_STORAGE_MEMORY
+ endif
  endif
  
 +ifeq ($(OS_ARCH),DragonFly)
