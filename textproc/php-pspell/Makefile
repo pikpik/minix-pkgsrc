@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2012/06/16 05:26:34 taca Exp $
+# $NetBSD: Makefile,v 1.12 2012/06/16 09:56:03 taca Exp $
 
 MODNAME=		pspell
-PKGREVISION=		1
 CATEGORIES+=		textproc
 COMMENT=		PHP extension for pspell support
 

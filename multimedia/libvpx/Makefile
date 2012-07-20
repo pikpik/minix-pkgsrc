@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/03/28 13:51:32 tron Exp $
+# $NetBSD: Makefile,v 1.14 2012/05/22 20:42:57 ryoon Exp $
 
 DISTNAME=	libvpx-v1.1.0
 PKGNAME=	${DISTNAME:S/-v/-/}
@@ -33,6 +33,7 @@ REPLACE_BASH=		configure \
 			build/make/configure.sh \
 			build/make/version.sh \
 			build/make/gen_asm_deps.sh \
+			build/make/rtcd.sh \
 			examples/gen_example_text.sh \
 			examples/gen_example_code.sh
 

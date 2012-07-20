@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/mosh
+bin/mosh-client
+bin/mosh-server
+man/man1/mosh-client.1
+man/man1/mosh-server.1
+man/man1/mosh.1

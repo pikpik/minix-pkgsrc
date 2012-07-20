@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2318 2012/07/19 18:16:05 ryoon Exp $
+$NetBSD: CHANGES-2012,v 1.2325 2012/07/20 14:11:58 adam Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3586,3 +3586,12 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated mail/thunderbird to 14.0 [ryoon 2012-07-19]
 	Updated mail/thunderbird-l10n to 14.0 [ryoon 2012-07-19]
 	Updated graphics/tiff to 4.0.2nb1 [wiz 2012-07-19]
+	Added net/mosh version 1.2.2 [agc 2012-07-19]
+	Updated security/tcp_wrappers to 7.6.4 [adam 2012-07-20]
+	Updated lang/php53 to 5.3.15 [taca 2012-07-20]
+	Updated lang/php54 to 5.4.5 [taca 2012-07-20]
+	Updated sysutils/smartmontools to 5.40nb1 [taca 2012-07-20]
+	Updated devel/py-pyutil to 1.9.3 [gdt 2012-07-20]
+	Updated devel/py-setuptools_trial to 0.5.12 [gdt 2012-07-20]
+	Updated www/awstats to 7.1 [adam 2012-07-20]
+	Updated editors/vile to 9.8 [marino 2012-07-20]
