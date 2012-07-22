@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/03/20 17:26:19 hans Exp $
+# $NetBSD: Makefile,v 1.10 2012/05/08 02:59:57 sbd Exp $
 
 DISTNAME=		g95_source
 VERSION=		0.92
+PKGREVISION=		1
 PKGNAME=		g95-${VERSION}
 CATEGORIES=		lang
 EXTRACT_SUFX.g95_source=	.tgz
