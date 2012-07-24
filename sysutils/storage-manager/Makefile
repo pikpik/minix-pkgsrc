@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2010/01/27 20:12:53 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2012/07/23 21:56:06 jnemeth Exp $
 
 DISTNAME=		sm_linux_v314_install
 PKGNAME=		storage-manager-3.14
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils
 MASTER_SITES=		# empty
 EXTRACT_SUFX=		.rpm
@@ -20,10 +20,6 @@ NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
-# Despite the fetch message, source is no longer available at Adaptec
-# http://leaf.dragonflybsd.org/mailarchive/users/2012-05/msg00066.html
-NOT_FOR_PLATFORM+=	DragonFly-*-*
-
 BUILD_DEPENDS+=		rpm>=2.5.4:../../misc/rpm
 
 USE_TOOLS+=	pax
@@ -36,7 +32,7 @@ INTERACTIVE_STAGE=	fetch
 _STRIPFLAG_INSTALL=	# defined
 BUILD_DIRS=		# empty
 
-DOWNLOAD=		http://www.adaptec.com/worldwide/support/driverdetail.html?cat=%2fOperating+System%2fLinux&filekey=sm_linux_v314_install.rpm
+DOWNLOAD=		http://www.adaptec.com/en-us/speed/raid/aar/unix/sm_linux_v314_install_aar.htm
 
 FETCH_MESSAGE=								\
 	"Adaptec Storage Manager 3.14 for RedHat Linux must be fetched"	\
@@ -45,7 +41,7 @@ FETCH_MESSAGE=								\
 	"from"								\
 	"    ${DOWNLOAD}"
 
-INSTALLATION_DIRS=	etc/rc.d sbin lib/dpt
+INSTALLATION_DIRS=	etc/rc.d sbin lib/dpt man/man8
 
 do-extract:
 	${MKDIR} ${WRKSRC}
