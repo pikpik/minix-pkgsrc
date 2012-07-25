@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.887 2012/07/02 16:00:52 drochner Exp $
+# $NetBSD: Makefile,v 1.889 2012/07/25 10:26:23 sno Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -442,6 +442,7 @@ SUBDIR+=	p5-LWP-Online
 SUBDIR+=	p5-LWP-Protocol-https
 SUBDIR+=	p5-LWP-UserAgent-Determined
 SUBDIR+=	p5-LWPx-ParanoidAgent
+SUBDIR+=	p5-LWPx-TimedHTTP
 SUBDIR+=	p5-MasonX-Request-WithApacheSession
 SUBDIR+=	p5-Mojolicious
 SUBDIR+=	p5-Net-FastCGI
@@ -514,6 +515,7 @@ SUBDIR+=	p5-WWW-Curl
 SUBDIR+=	p5-WWW-Facebook-API
 SUBDIR+=	p5-WWW-Mechanize
 SUBDIR+=	p5-WWW-Mechanize-GZip
+SUBDIR+=	p5-WWW-Mechanize-Timed
 SUBDIR+=	p5-WWW-Pastebin-PastebinCom-Create
 SUBDIR+=	p5-WWW-Pastebin-RafbNet-Create
 SUBDIR+=	p5-WWW-RobotRules

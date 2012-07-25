@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2364 2012/07/24 19:48:04 jperkin Exp $
+$NetBSD: CHANGES-2012,v 1.2374 2012/07/25 15:41:07 wen Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3661,3 +3661,14 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated net/isc-dhclient4 to 4.2.4p1 [taca 2012-07-25]
 	Updated net/isc-dhcp4 to 4.2.4p1 [taca 2012-07-25]
 	Updated net/isc-dhcrelay4 to 4.2.4p1 [taca 2012-07-25]
+	Added www/p5-LWPx-TimedHTTP version 1.8 [sno 2012-07-25]
+	Added www/p5-WWW-Mechanize-Timed version 0.44 [sno 2012-07-25]
+	Updated lang/parrot to 4.4.0 [he 2012-07-25]
+	Added sysutils/sysbuild version 2.0 [jmmv 2012-07-25]
+	Added sysutils/sysbuild-user version 1.0 [jmmv 2012-07-25]
+	Updated graphics/netpbm to 10.35.80nb3 [jperkin 2012-07-25]
+	Updated databases/p5-Data-Table to 1.65 [wen 2012-07-25]
+	Updated www/p5-HTTP-Lite to 2.4 [wen 2012-07-25]
+	Updated devel/p5-Test-SharedFork to 0.20 [wen 2012-07-25]
+	Updated net/p5-Test-TCP to 1.16 [wen 2012-07-25]
+	Updated textproc/xmlrpc-c to 1.16.41nb1 [jperkin 2012-07-25]

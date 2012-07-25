@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.542 2012/07/04 17:59:21 drochner Exp $
+# $NetBSD: Makefile,v 1.543 2012/07/12 23:56:37 abs Exp $
 #
 
 COMMENT=	System utilities
@@ -382,6 +382,8 @@ SUBDIR+=	su2
 SUBDIR+=	sux
 SUBDIR+=	swapd
 SUBDIR+=	swatch
+SUBDIR+=	sysbuild
+SUBDIR+=	sysbuild-user
 SUBDIR+=	sysgen
 SUBDIR+=	sysinfo
 SUBDIR+=	syslog-ng

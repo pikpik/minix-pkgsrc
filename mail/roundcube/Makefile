@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2012/06/07 13:51:03 fhajny Exp $
+# $NetBSD: Makefile,v 1.43 2012/06/17 15:17:15 taca Exp $
 
 DISTNAME=	roundcubemail-0.7.2-dep
 PKGNAME=	${DISTNAME:S/mail-/-/:S/-dep//}
@@ -123,6 +123,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/*.sh ${DESTDIR}${RCDIR}/bin/
 
 .for i in ${PAX_DIRS}
+	${INSTALL_DATA_DIR} ${DESTDIR}${RCDIR}/${i}
 	cd ${WRKSRC}/${i} && ${PAX} -rw . ${DESTDIR}${RCDIR}/${i}
 	${FIND} ${DESTDIR}${RCDIR}/${i} -type f | \
 		${XARGS} ${CHMOD} ${SHAREMODE}
