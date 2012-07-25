@@ -1,0 +1,26 @@
+$NetBSD$
+
+--- configure.orig	Thu Feb  2 10:20:32 2012
++++ configure
+@@ -5181,7 +5181,7 @@ fi
+ 
+ 
+ if test "x$with_mpfr" != x; then
+-  gmplibs="-L$with_mpfr/lib $gmplibs"
++  gmplibs="-L$with_mpfr/lib -Wl,-R${PREFIX}/lib $gmplibs"
+   gmpinc="-I$with_mpfr/include $gmpinc"
+ fi
+ if test "x$with_mpfr_include" != x; then
+@@ -15107,6 +15107,12 @@ do
+   case $ac_option in
+   # Handling of the options.
+   -recheck | --recheck | --rechec | --reche | --rech | --rec | --re | --r)
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
++	: Avoid regenerating within pkgsrc
++	exit 0
+     ac_cs_recheck=: ;;
+   --version | --versio | --versi | --vers | --ver | --ve | --v | -V )
+     $as_echo "$ac_cs_version"; exit ;;
