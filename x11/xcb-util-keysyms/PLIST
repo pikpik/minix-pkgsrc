@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/xcb/xcb_keysyms.h
+lib/libxcb-keysyms.la
+lib/pkgconfig/xcb-keysyms.pc
