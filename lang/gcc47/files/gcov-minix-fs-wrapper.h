@@ -34,9 +34,7 @@
 
 int do_gcov_exit = 1;
 
-static void gcov_exit_wrapper(void);
-
-static void gcov_exit_wrapper(void) {
+void gcov_exit_wrapper(void){
 	if(do_gcov_exit)
 		gcov_exit();
 }

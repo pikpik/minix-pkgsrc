@@ -1,16 +1,11 @@
 # $NetBSD: Makefile,v 1.1.1.1 2011/05/15 00:09:55 wiz Exp $
 
-GCC_VERSION=		4.7
-DISTNAME=		gcc-${GCC_VERSION}-20110716
-PKGNAME=		gcc47-${GCC_VERSION}
-CATEGORIES=		lang
-DISTFILES=		${DISTNAME}${EXTRACT_SUFX}
-SITES.gcc-4.7-20110716.tar.bz2= \
-		ftp://ftp.fu-berlin.de/unix/languages/gcc/snapshots/4.7-20110716/
+DISTNAME=	gcc-4.7.0
+CATEGORIES=	lang
+MASTER_SITES=	http://ftp.tsukuba.wide.ad.jp/software/gcc/releases/gcc-4.7.0/
+EXTRACT_SUFX=	.tar.bz2
 
-EXTRACT_SUFX=		.tar.bz2
-
-MAINTAINER=		kuehro@gmx.de
+MAINTAINER=		minix@minix3.org
 HOMEPAGE=		http://gcc.gnu.org/
 COMMENT=		GNU Compiler Collection 4.7
 LICENSE=		gnu-gpl-v2 AND gnu-gpl-v3 AND gnu-lgpl-v2 AND gnu-lgpl-v3
@@ -30,6 +25,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 UNLIMIT_RESOURCES+=	datasize
 UNLIMIT_RESOURCES+=	stacksize
 
+PREFIX=/usr/pkg
 GCC_SUBPREFIX=		gcc47
 GCC_PREFIX=		${PREFIX}/${GCC_SUBPREFIX}
 FILES_SUBST+=		PKGNAME=${PKGNAME}
@@ -45,13 +41,14 @@ CONFIGURE_SCRIPT=	$(WRKSRC)/configure
 
 .if ${OPSYS} == "Minix"
 # Only build C
-BUILD_FORTRAN=YES
+BUILD_FORTRAN=NO
 BUILD_JAVA=NO
 BUILD_CXX=YES
 BUILD_OBJC=NO
 
 CONFIGURE_ARGS+=  --host=i386-pc-minix --target=i386-pc-minix --build=i386-pc-minix 
 CONFIGURE_ARGS+=  --disable-visibility
+CONFIGURE_ARGS+=  --disable-initfini-array
 .endif
 
 # Determine whether to use binutils
@@ -81,9 +78,9 @@ REPLACE_BASH+= libstdc++-v3/scripts/run_doxygen
 # ../gcc34-ada for guidance
 BUILD_DEFS+=		BUILD_CXX BUILD_FORTRAN BUILD_JAVA BUILD_OBJC
 BUILD_CXX?=		YES
-BUILD_FORTRAN?=		YES
-BUILD_JAVA?=		YES
-BUILD_OBJC?=		YES
+BUILD_FORTRAN?=		NO
+BUILD_JAVA?=		NO	
+BUILD_OBJC?=		NO
 
 LANGS= c
 
@@ -115,11 +112,14 @@ CONFIGURE_ARGS+=	--with-ecj-jar=${DISTDIR}/ecj-4.5.jar
 LANGS+= objc
 .endif
 
+USE_LANGUAGES= c++
+USE_LANGUAGES+= c
 
 CONFIGURE_ARGS+=	--prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
 CONFIGURE_ARGS+=	--with-system-zlib
 CONFIGURE_ARGS+=	--disable-nls
+CONFIGURE_ARGS+=	--disable-shared
 .if ${OPSYS} != "Minix"
 CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-threads=posix
@@ -127,7 +127,7 @@ CONFIGURE_ARGS+=	--enable-threads=posix
 CONFIGURE_ARGS+=	--enable-__cxa_atexit
 CONFIGURE_ARGS+=	--enable-long-long
 CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX:Q}
-CONFIGURE_ARGS+=	--enable-libssp
+CONFIGURE_ARGS+=	--disable-libssp
 CONFIGURE_ARGS+=	--with-gmp=${BUILDLINK_PREFIX.gmp}
 CONFIGURE_ARGS+=	--with-mpfr=${BUILDLINK_PREFIX.mpfr}
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${PREFIX}
@@ -204,6 +204,7 @@ pre-configure:
 	${CP} ${FILESDIR}/minix-spec.h ${WRKSRC}/gcc/config/
 	${CP} ${FILESDIR}/i386-minix.h ${WRKSRC}/gcc/config/i386/minix.h
 	${CP} ${FILESDIR}/gcov-minix-fs-wrapper.h ${WRKSRC}/libgcc/
+	${LN} -sf ${WRKSRC}/include/* ${BUILDLINK_DIR}/include/
 .endif
 .if ${OPSYS} == "NetBSD"
 	${CP} ${WRKSRC}/gcc/config/freebsd-stdint.h ${WRKSRC}/gcc/config/netbsd-stdint.h

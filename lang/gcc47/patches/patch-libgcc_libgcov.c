@@ -1,6 +1,8 @@
---- libgcc/libgcov.c.orig	Fri May 13 15:57:20 2011
-+++ libgcc/libgcov.c	Thu Aug  4 19:23:46 2011
-@@ -40,6 +40,11 @@ see the files COPYING3 and COPYING.RUNTIME respectivel
+$NetBSD$
+
+--- libgcc/libgcov.c.orig	Wed Jan 11 18:50:21 2012
++++ libgcc/libgcov.c
+@@ -41,6 +41,11 @@ see the files COPYING3 and COPYING.RUNTIME respectivel
  #define GCOV_LINKAGE /* nothing */
  #endif
  #endif
@@ -12,7 +14,7 @@
  #include "gcov-io.h"
  
  #if defined(inhibit_libc)
-@@ -165,7 +170,7 @@ gcov_version (struct gcov_info *ptr, gcov_unsigned_t v
+@@ -269,7 +274,7 @@ gcov_version (struct gcov_info *ptr, gcov_unsigned_t v
     in two separate programs, and we must keep the two program
     summaries separate.  */
  
@@ -21,18 +23,20 @@
  gcov_exit (void)
  {
    struct gcov_info *gi_ptr;
-@@ -596,8 +601,13 @@ __gcov_init (struct gcov_info *info)
- 
-       gcov_crc32 = crc32;
+@@ -696,9 +701,13 @@ __gcov_init (struct gcov_info *info)
+       if (filename_length > gcov_max_filename)
+         gcov_max_filename = filename_length;
  
 -      if (!gcov_list)
+-	atexit (gcov_exit);
+-
 +      if (!gcov_list) {
 +#ifdef _MINIX
-+       atexit (gcov_exit_wrapper);
++          atexit (gcov_exit_wrapper);
 +#else
- 	atexit (gcov_exit);
++          atexit (gcov_exit);
 +#endif
 +      }
- 
        info->next = gcov_list;
        gcov_list = info;
+     }
