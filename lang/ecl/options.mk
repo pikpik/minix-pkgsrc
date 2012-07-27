@@ -1,7 +1,7 @@
-# $NetBSD: options.mk,v 1.5 2011/03/04 14:46:32 wiz Exp $
+# $NetBSD: options.mk,v 1.7 2012/07/26 21:09:29 asau Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.ecl
-PKG_SUPPORTED_OPTIONS+=		threads unicode ffi clx
+PKG_SUPPORTED_OPTIONS+=		debug threads unicode ffi clx
 PKG_SUGGESTED_OPTIONS+=		# empty
 # Unicode support proved to break Axioms.
 # Threads are off, since threaded ECL requires threads support
@@ -11,8 +11,12 @@ PKG_SUGGESTED_OPTIONS+=		# empty
 
 PLIST_SRC=	PLIST	# default value
 
+.if !empty(PKG_OPTIONS:Mdebug)
+CONFIGURE_ARGS+=	--enable-debug
+.endif
+
 .if !empty(PKG_OPTIONS:Mthreads)
-CONFIGURE_ARGS+=	--enable-threads --enable-debug
+CONFIGURE_ARGS+=	--enable-threads
 CONFIGURE_ENV+=		THREAD_CFLAGS=${PTHREAD_CFLAGS:Q}
 CONFIGURE_ENV+=		THREAD_LDLAGS=${BUILDLINK_LDLAGS.pthread:Q}
 CONFIGURE_ENV+=		THREAD_LIBS=${BUILDLINK_LIBS.pthread:Q}
@@ -23,11 +27,12 @@ CONFIGURE_ARGS+=	--with-__thread=no
 .endif
 PLIST_SRC+=		PLIST.threads
 .include "../../mk/pthread.buildlink3.mk"
+.else
+CONFIGURE_ARGS+=	--disable-threads
 .endif
 
 .if !empty(PKG_OPTIONS:Municode)
 CONFIGURE_ARGS+=	--enable-unicode
-PLIST_SRC+=		PLIST.unicode
 .else
 CONFIGURE_ARGS+=	--disable-unicode
 .endif
@@ -42,9 +47,9 @@ CONFIGURE_ARGS+=	--with-dffi=no
 CONFIGURE_ARGS+=	--with-clx
 .endif
 
-PLIST_VARS+=		clx
+PLIST_VARS+=		clx unicode
 
-.for option in clx
+.for option in clx unicode
 .  if !empty(PKG_OPTIONS:M${option})
 PLIST.${option}=	yes
 .  endif
@@ -54,4 +59,8 @@ PLIST.${option}=	yes
 .if !empty(PKG_OPTIONS:Mclx)
 PRINT_PLIST_AWK+=	{if ($$0 ~ /lib\/.*\/libclx.a$$/) {$$0 = "$${PLIST.clx}" $$0;}}
 PRINT_PLIST_AWK+=	{if ($$0 ~ /lib\/.*\/clx.(asd|fas)$$/) {$$0 = "$${PLIST.clx}" $$0;}}
+.endif
+
+.if !empty(PKG_OPTIONS:Municode)
+PRINT_PLIST_AWK+=	{if ($$0 ~ /lib\/.*\/encodings\//) {$$0 = "$${PLIST.unicode}" $$0;}}
 .endif

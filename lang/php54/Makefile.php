@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.1 2012/06/16 05:21:55 taca Exp $
+# $NetBSD: Makefile.php,v 1.3 2012/07/27 00:16:47 obache Exp $
 # used by lang/php54/Makefile
 # used by www/ap-php/Makefile
 
@@ -25,7 +25,6 @@ CONFIGURE_ARGS+=	--localstatedir=${VARBASE}
 CONFIGURE_ARGS+=	--with-regex=system
 
 CONFIGURE_ARGS+=	--without-mysql
-CONFIGURE_ARGS+=	--without-sqlite
 #CONFIGURE_ARGS+=	--without-sqlite3
 CONFIGURE_ARGS+=	--without-iconv
 CONFIGURE_ARGS+=	--without-pear
@@ -100,6 +99,7 @@ CONFIGURE_ARGS+=	--enable-maintainer-zts
 .endif
 
 .if !empty(PKG_OPTIONS:Mreadline)
+USE_GNU_READLINE=	yes
 .include "../../devel/readline/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-readline=${BUILDLINK_PREFIX.readline}
 .else
