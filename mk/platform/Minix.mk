@@ -3,7 +3,7 @@
 # Variable definitions for the Minix operating system.
 
 ECHO_N?=	${ECHO} -n
-X11_TYPE?=	modular
+X11_TYPE?=     monolithic
 IMAKE_MAKE?=	${MAKE}	# program which gets invoked by imake
 IMAKEOPTS+=	-DBuildHtmlManPages=NO
 PKGLOCALEDIR?=	share
