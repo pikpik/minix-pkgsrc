@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.47 2010/02/13 08:30:59 obache Exp $
+# $NetBSD: tools.Linux.mk,v 1.48 2011/12/14 03:17:25 joerg Exp $
 #
 # System-supplied tools for the Linux operating system.
 
@@ -46,6 +46,9 @@ TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
 TOOLS_PLATFORM.cp?=		/bin/cp
 .if exists(/bin/tcsh)
 TOOLS_PLATFORM.csh?=		/bin/tcsh
+.endif
+.if exists(/usr/bin/curl)
+TOOLS_PLATFORM.curl?=		/usr/bin/curl
 .endif
 .if exists(/bin/cut)
 TOOLS_PLATFORM.cut?=		/bin/cut

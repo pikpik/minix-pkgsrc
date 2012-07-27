@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2012/06/02 11:54:38 cheusov Exp $
+# $NetBSD: Makefile,v 1.43 2012/07/23 12:24:34 jperkin Exp $
 
 DISTNAME=	binutils-2.22
 CATEGORIES=	devel
@@ -21,10 +21,6 @@ REPLACE_LOCALEDIR_PATTERNS+=	Make-in
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
-
-USE_TOOLS+=		makeinfo
-TEXINFO_REQD=		4.0
-MAKEFLAGS+=		TEXINFO_LOCALE=no
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-lib-path='/lib:/usr/lib'
