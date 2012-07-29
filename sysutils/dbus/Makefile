@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2011/04/22 13:44:40 obache Exp $
+# $NetBSD: Makefile,v 1.52 2011/06/13 22:06:39 tez Exp $
 
 DISTNAME=	dbus-1.2.4.6permissive
 PKGNAME=	dbus-1.2.4.6
@@ -21,8 +21,6 @@ USE_TOOLS+=		gmake msgfmt pkg-config
 USE_LIBTOOL=		YES
 
 PKGCONFIG_OVERRIDE=	dbus-1.pc.in
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		VARBASE
 
