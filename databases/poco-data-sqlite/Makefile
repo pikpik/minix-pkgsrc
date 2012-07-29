@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/06/10 09:39:44 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/04/27 12:31:40 obache Exp $
 #
 
 PKGNAME=	poco-data-sqlite-${POCO_VERSION}
@@ -17,10 +17,8 @@ CONFIGURE_ARGS+=	--no-samples
 
 USE_TOOLS+=	pax
 
+BUILD_DIRS=		${WRKSRC}/Data/SQLite
 INSTALLATION_DIRS=	include/Poco/Data/SQLite lib
-
-do-build:
-	cd ${WRKSRC} && ${TOOLS_GMAKE} POCO_BASE=${WRKSRC} -C Data/SQLite
 
 do-install:
 	# using the same logic as Poco's Makefile install target.
