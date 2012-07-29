@@ -1,14 +1,14 @@
 $NetBSD$
 
-_XOPEN_SOURCE=600 or higher is needed on SunOS and GCC>=4.6.
---- Foundation/src/SharedMemory.cpp.orig	2011-10-20 06:59:15.850534958 +0000
+Do not mangle _XOPEN_SOURCE when GCC is used, rely on CXXFLAGS instead.
+--- Foundation/src/SharedMemory.cpp.orig	2011-09-24 08:07:00.000000000 +0000
 +++ Foundation/src/SharedMemory.cpp
-@@ -36,7 +36,7 @@
+@@ -34,7 +34,7 @@
+ //
  
- #if defined(__sun)
+ 
+-#if defined(__sun)
++#if defined(__sun) && !defined(__GNUC__)
  #undef _XOPEN_SOURCE
--#define _XOPEN_SOURCE 500
-+#define _XOPEN_SOURCE 600
+ #define _XOPEN_SOURCE 500
  #endif
- 
- 

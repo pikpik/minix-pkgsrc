@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.21 2011/03/18 09:44:37 tron Exp $
+# $NetBSD: Makefile,v 1.22 2012/03/13 19:57:11 adam Exp $
 
-DISTNAME=	openldap-2.4.30
+DISTNAME=	openldap-2.4.31
 PKGNAME=	${DISTNAME:S/-/-doc-/}
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/ \
