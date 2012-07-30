@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2012/07/02 13:37:36 adam Exp $
+# $NetBSD: Makefile,v 1.6 2012/07/07 21:29:19 prlw1 Exp $
 
-DISTNAME=	libvisio-0.0.18
-PKGREVISION=	2
+DISTNAME=	libvisio-0.0.19
 CATEGORIES=	converters
 MASTER_SITES=	http://dev-www.libreoffice.org/src/
 EXTRACT_SUFX=	.tar.xz

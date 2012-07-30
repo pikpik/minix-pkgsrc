@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11377 2012/07/28 14:27:07 wiz Exp $
+$NetBSD: TODO,v 1.11391 2012/07/30 01:48:22 dholland Exp $
 
 Suggested new packages
 ======================
@@ -355,7 +355,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o SDL_gfx-2.0.24
 	o SmartEiffel-2.3
 	o TiffIO-130e
-	o XaoS-3.5
 	o YoSucker-81
 	o ZIPIdent-2.9
 	o abcm2ps-6.6.17
@@ -377,7 +376,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o alsa-lib-1.0.25
 	o alsa-plugins-1.0.25
 	o alsa-utils-1.0.25
-	o amanda-3.1
 	o amavis-perl-0.3.12 [called just amavis]
 	o amsn-0.98.4
 	o angband-3.2
@@ -436,7 +434,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o bftpd-3.7
 	o biew-6.1.0
 	o bioperl-1.5.0
-	o bison-2.6
 	o bitlbee-3.0.5
 	o blender-2.63a
 	o bluefish-2.2.3
@@ -510,7 +507,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o dap-3.7
 	o dar-2.4.7
 	o darcs-2.4
-	o darktable-1.0.4
 	o dasher-4.11
 	o dasm-2.20.11
 	o davical-1.1.1
@@ -533,7 +529,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o digikam-2.7.0
 	o dinotrace-9.3e
 	o dinotrace-mode-9.3e
-	o dmenu-4.5
 	o doclifter-2.8
 	o dos2unix-6.0.1
 	o doxygen-1.8.1.2
@@ -607,7 +602,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o findutils-4.5.10
 	o fisg-0.3.12
 	o flashplayer-0.4.13
-	o flex-2.5.36
 	o flightgear-2.6
 	o flpsed-0.4.4
 	o fltk2-2.0pre8323
@@ -695,7 +689,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o gnomeicu-0.99.16
 	o gnopernicus-1.1.2
 	o gnu-crypto-2.1.0
-	o gnucash-2.4.11
 	o gnucash-docs-2.4.1
 	o gnuchess-6.0.1
 	o gok-2.30.1 [GNOME 2.32]
@@ -713,7 +706,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o grep-2.13
 	o grhino-0.16.1
 	o groff-1.21
-	o grub-2.0
 	o gss-1.0.2
 	o gssdp-0.10.0
 	o gtexinfo-4.13a
@@ -826,7 +818,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o lftp-4.3.7
 	o lgeneral-1.2.3
 	o libAppleWM-1.4.1
-	o libXrandr-1.4.0
 	o libcaca-0.99beta18
 	o libcanberra-0.28 [drops support for GNOME2; don't update for now -- wiz]
 	o libcares-1.8.0
@@ -851,7 +842,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o libmatheval-1.1.6
 	o libmcs-0.7.2
 	o libmemcached-1.0.9
-	o libmicrohttpd-0.9.21
 	o libmilter-8.14.5
 	o libnasl-2.3.1
 	o libnids-1.24
@@ -898,7 +888,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o mathomatic-16.0.1
 	o mawk-1.3.4.20120627
 	o mc-4.8.1.4
-	o mdds-0.6.0
 	o mdocml-1.12.1
 	o mergeant-0.67
 	o mesure-0.7.2
@@ -924,7 +913,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o mousetweaks-3.4.2
 	o mp3diags-1.0.11
 	o mpeg4ip-1.6.1
-	o mpfr-3.1.1
 	o mpg123-1.14.4
 	o mpich-1.4.1p1
 	o mpop-1.0.27
@@ -1001,7 +989,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o p5-xmltv-0.5.59
 	o packagekit-0.5.1
 	o pam-passwdqc-1.2.2
-	o pango-1.30.1
 	o paprefs-0.9.8
 	o parallel-20120622
 	o pari-2.5.1
@@ -1299,7 +1286,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o xcompmgr-1.1.6
 	o xcursorgen-1.0.5
 	o xdesktopwaves-1.3
-	o xdpyinfo-1.3.0
 	o xdriinfo-1.0.4
 	o xemacs-current-21.5.31
 	o xerces-j-2.4.0 [pkg/21725]

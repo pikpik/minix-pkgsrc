@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- Makefile.am.orig	2012-02-21 11:36:51.000000000 +0000
++++ Makefile.am
+@@ -43,7 +43,7 @@ SUBDIRS = . \
+ 	packaging \
+ 	installcheck
+ 
+-pkgdata_DATA = \
++doc_DATA = \
+ 	ReleaseNotes	\
+ 	COPYRIGHT	\
+ 	NEWS		\

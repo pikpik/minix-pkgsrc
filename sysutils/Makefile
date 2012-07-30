@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.543 2012/07/12 23:56:37 abs Exp $
+# $NetBSD: Makefile,v 1.544 2012/07/25 12:20:28 jmmv Exp $
 #
 
 COMMENT=	System utilities
@@ -147,6 +147,7 @@ SUBDIR+=	gnome-volume-manager
 SUBDIR+=	gnometoaster
 SUBDIR+=	gpart
 SUBDIR+=	grub
+SUBDIR+=	grub2
 SUBDIR+=	grun
 SUBDIR+=	gst-plugins0.10-gio
 SUBDIR+=	gst-plugins0.10-gnomevfs

@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1.1.1 1999/08/05 03:51:18 hubertf Exp $
+
+- const correctness
 
 --- xhang.c.orig	Thu Aug  5 05:07:48 1999
 +++ xhang.c	Thu Aug  5 05:08:25 1999
