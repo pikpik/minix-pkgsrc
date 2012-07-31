@@ -1,8 +1,10 @@
 $NetBSD$
 
---- xetexdir/XeTeX_ext.c.orig	2011-02-25 11:49:36.000000000 +0000
-+++ xetexdir/XeTeX_ext.c
-@@ -182,7 +182,7 @@ const UInt32 byteMark				= 0x00000080UL;
+Prepare for patching in absolute pkgsrc path to xdvipdfmx binary.
+
+--- texk/web2c/xetexdir/XeTeX_ext.c.orig	2012-03-19 08:34:01.000000000 +0000
++++ texk/web2c/xetexdir/XeTeX_ext.c
+@@ -173,7 +173,7 @@ const UInt32 byteMark				= 0x00000080UL;
  
  /* if the user specifies a paper size or output driver program */
  const char *papersize;

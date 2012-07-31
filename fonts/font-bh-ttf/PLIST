@@ -1,7 +1,6 @@
 @comment $NetBSD$
-etc/fonts/conf.avail/42-luxi-mono.conf
-etc/fonts/conf.d/42-luxi-mono.conf
 share/doc/font-bh-ttf/COPYING
+share/fontconfig/conf.avail/42-luxi-mono.conf
 share/fonts/X11/TTF/luximb.ttf
 share/fonts/X11/TTF/luximbi.ttf
 share/fonts/X11/TTF/luximr.ttf

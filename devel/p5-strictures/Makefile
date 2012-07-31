@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/11/21 06:12:25 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.2 2012/07/06 13:25:37 sno Exp $
 #
 
-DISTNAME=	strictures-1.003001
+DISTNAME=	strictures-1.004001
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/M/MS/MSTROUT/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/E/ET/ETHER/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/strictures/
