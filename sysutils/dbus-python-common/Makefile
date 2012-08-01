@@ -2,9 +2,12 @@
 #
 
 DISTNAME=	dbus-python-1.1.1
-PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/-python//}
+PKGNAME=	dbus-python-common-1.1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus-python/
+
+#BUILD_DEPENDS+= ${PYPKGPREFIX}-docutils>=0:../../textproc/py-docutils
+#DEPENDS+=	${PYPKGPREFIX}-pyrex>=0.9.3:../../lang/py-pyrex
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/Software/dbus
@@ -13,26 +16,29 @@ LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+PYTHON_FOR_BUILD_ONLY=	yes
 PYTHON_VERSIONS_INCLUDE_3X= yes
 
 USE_TOOLS+=	pkg-config gmake
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --disable-html-docs --disable-api-docs
 
-PY_PATCHPLIST=			YES
-
-# py-expat is only needed at runtime
-DEPENDS+= ${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
-
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "SunOS"
 BUILDLINK_TRANSFORM+=	rm:-std=c9x
 .endif
 
-.include "../../devel/glib2/buildlink3.mk"
-.include "../../lang/python/extension.mk"
+do-install:
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/include/dbus-1.0/dbus
+	${INSTALL_DATA} ${WRKSRC}/include/dbus-python.h \
+		${DESTDIR}${PREFIX}/include/dbus-1.0/dbus
+	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/lib/pkgconfig
+	${INSTALL_DATA} ${WRKSRC}/dbus-python.pc \
+		${DESTDIR}${PREFIX}/lib/pkgconfig
+
+.include "../../lang/python/application.mk"
 BUILDLINK_API_DEPENDS.dbus+=	dbus>=1.0
 .include "../../sysutils/dbus/buildlink3.mk"
+BUILDLINK_DEPMETHOD.dbus-glib=	build
 .include "../../sysutils/dbus-glib/buildlink3.mk"
-.include "../../sysutils/dbus-python-common/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

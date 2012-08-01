@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2010/11/07 15:24:50 shattered Exp $
+# $NetBSD: options.mk,v 1.5 2010/12/05 18:29:17 asau Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dbus
 PKG_SUPPORTED_OPTIONS+=	debug x11
@@ -15,9 +15,9 @@ PKG_SUGGESTED_OPTIONS+=	kqueue
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mdebug)
-CONFIGURE_ARGS.enable+=	asserts tests verbose-mode
+CONFIGURE_ARGS.enable+=	asserts verbose-mode
 .else
-CONFIGURE_ARGS.disable+= asserts tests verbose-mode
+CONFIGURE_ARGS.disable+= asserts verbose-mode
 .endif
 
 .if !empty(PKG_OPTIONS:Mkqueue)

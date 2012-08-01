@@ -2,8 +2,8 @@
 bin/cjpeg
 bin/djpeg
 bin/jpegtran
-bin/jpgtest
 bin/rdjpgcom
+bin/tjbench
 bin/wrjpgcom
 include/jconfig.h
 include/jerror.h
@@ -17,3 +17,10 @@ man/man1/djpeg.1
 man/man1/jpegtran.1
 man/man1/rdjpgcom.1
 man/man1/wrjpgcom.1
+share/doc/README
+share/doc/README-turbo.txt
+share/doc/example.c
+share/doc/libjpeg.txt
+share/doc/structure.txt
+share/doc/usage.txt
+share/doc/wizard.txt
