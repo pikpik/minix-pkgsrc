@@ -1,9 +1,9 @@
-$NetBSD: patch-al,v 1.1 2010/05/08 16:53:06 tez Exp $
+$NetBSD$
 
 fix build on solaris 9
 
---- hacks/asm6502.c.orig	Mon Mar 22 16:06:34 2010
-+++ hacks/asm6502.c	Mon Mar 22 16:07:18 2010
+--- hacks/asm6502.c.orig	2012-06-24 04:49:43.000000000 +0000
++++ hacks/asm6502.c
 @@ -31,7 +31,12 @@
  #include <assert.h>
  #include <ctype.h>
@@ -16,4 +16,4 @@ fix build on solaris 9
 +#endif
  #include <unistd.h>
  
- #include "asm6502.h"
+ #include "yarandom.h"

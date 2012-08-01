@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/06/19 20:17:06 bouyer Exp $
+# $NetBSD: Makefile,v 1.9 2012/08/01 12:22:28 asau Exp $
 #
 
 VERSION=	4.1.2
@@ -20,8 +20,6 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 ONLY_FOR_PLATFORM=	Linux-2.6*-i386 Linux-2.6*-x86_64
 ONLY_FOR_PLATFORM+=	NetBSD-[5-9].*-x86_64 NetBSD-[5-9].*-i386
 
-WRKSRC=		${WRKDIR}/xen-${VERSION}
-
 NO_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 
@@ -39,11 +37,11 @@ XENKERNELDIR=		${PREFIX}/${INSTALLATION_DIRS}
 MESSAGE_SUBST+=		XENKERNELDIR=${XENKERNELDIR:Q}
 
 do-build:
-	cd ${WRKSRC} && ${BUILD_MAKE_CMD} debug=n xen
-	${CP} ${WRKSRC}/dist/install/boot/xen.gz ${WRKDIR}/xen.gz
+	cd ${WRKSRC}/xen && ${BUILD_MAKE_CMD} debug=n build
+	${CP} ${WRKSRC}/xen/xen.gz ${WRKDIR}/xen.gz
 	cd ${WRKSRC}/xen && ${MAKE_PROGRAM} clean
-	cd ${WRKSRC} && ${BUILD_MAKE_CMD} debug=y xen
-	${CP} ${WRKSRC}/dist/install/boot/xen.gz ${WRKDIR}/xen-debug.gz
+	cd ${WRKSRC}/xen && ${BUILD_MAKE_CMD} debug=y build
+	${CP} ${WRKSRC}/xen/xen.gz ${WRKDIR}/xen-debug.gz
 
 do-install:
 	${INSTALL_DATA} ${WRKDIR}/xen.gz \
