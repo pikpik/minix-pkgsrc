@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.33 2012/02/29 14:22:24 hans Exp $
+# $NetBSD: Makefile.common,v 1.34 2012/07/02 07:02:25 adam Exp $
 #
 # used by devel/boost-build/Makefile
 # used by devel/boost-docs/Makefile
@@ -90,6 +90,7 @@ do-configure:
 .endif
 
 boost-install-libs:
+	${INSTALL_LIB_DIR} ${DESTDIR}${PREFIX}/lib
 	cd ${WRKSRC}/stage/lib && pax -rw -p p libboost* ${DESTDIR}${PREFIX}/lib
 
 .endif # ${BOOST_PACKAGE} == "meta-pkg"
