@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.77 2012/07/29 17:31:11 abs Exp $
+# $NetBSD: Makefile,v 1.78 2012/08/02 09:39:49 abs Exp $
 
-DISTNAME=	pkg_chk-2.0.3
+DISTNAME=	pkg_chk-2.0.4
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -8,6 +8,7 @@ DISTFILES=	# empty
 OWNER=		abs@NetBSD.org
 HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
 COMMENT=	Check installed package versions against pkgsrc
+LICENSE=	2-clause-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -18,6 +19,7 @@ USE_TOOLS+=	mktemp:run
 USE_TOOLS+=	gzcat:run
 USE_TOOLS+=	gzip:run
 NO_BUILD=	yes
+
 
 CONFLICTS=	pkgchk-[0-9]*
 

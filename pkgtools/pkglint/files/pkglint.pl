@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.843 2012/07/27 20:54:02 wiz Exp $
+# $NetBSD: pkglint.pl,v 1.844 2012/08/01 22:19:01 asau Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -2753,7 +2753,7 @@ sub determine_used_variables($) {
 
 	foreach my $line (@{$lines}) {
 		$rest = $line->text;
-		while ($rest =~ s/(?:\$\{|defined\(|empty\()([0-9+.A-Z_a-z]+)[:})]//) {
+		while ($rest =~ s/(?:\$\{|\$\(|defined\(|empty\()([0-9+.A-Z_a-z]+)[:})]//) {
 			my ($varname) = ($1);
 			use_var($line, $varname);
 			$opt_debug_unused and $line->log_debug("Variable ${varname} is used.");
