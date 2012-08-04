@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/05/24 21:45:20 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/11 23:23:29 mef Exp $
 #
 
 DISTNAME=		font-adobe-utopia-type1-1.0.4
@@ -15,8 +15,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		FCCACHE=${TOOLS_CMD.true:Q}
 
-FONTS_DIRS.type1=	lib/X11/fonts/Type1
-FONTS_DIRS.x11=		lib/X11/fonts/Type1
+FONTS_DIRS.type1=	share/fonts/X11/Type1
+FONTS_DIRS.x11=		share/fonts/X11/Type1
 
 INSTALLATION_DIRS=	share/doc/font-adobe-utopia-type1
 

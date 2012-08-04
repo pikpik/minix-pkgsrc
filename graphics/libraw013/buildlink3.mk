@@ -6,8 +6,7 @@ BUILDLINK_TREE+=	libraw
 LIBRAW_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libraw+=	libraw>=0.12.0
-BUILDLINK_ABI_DEPENDS.libraw+=	libraw>=0.14.6
-BUILDLINK_PKGSRCDIR.libraw?=	../../graphics/libraw
+BUILDLINK_PKGSRCDIR.libraw?=	../../graphics/libraw013
 
 .include "../../graphics/lcms/buildlink3.mk"
 .endif	# LIBRAW_BUILDLINK3_MK

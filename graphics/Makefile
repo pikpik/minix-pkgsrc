@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.630 2012/04/11 11:50:51 drochner Exp $
+# $NetBSD: Makefile,v 1.631 2012/05/06 08:25:38 ryoon Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -277,6 +277,7 @@ SUBDIR+=	libotf
 SUBDIR+=	libpano13
 SUBDIR+=	libpuzzle
 SUBDIR+=	libraw
+SUBDIR+=	libraw013
 SUBDIR+=	librsvg
 SUBDIR+=	libscigraphica
 SUBDIR+=	libungif

@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.96 2012/03/21 18:37:43 drochner Exp $
+# $NetBSD: Makefile,v 1.97 2012/06/14 07:44:25 sbd Exp $
 
-DISTNAME=	bluefish-2.2.2
-PKGREVISION=	1
+DISTNAME=	bluefish-2.2.3
 CATEGORIES=	www
 MASTER_SITES=	http://bluefish.mrball.net/stable/source/               \
 		http://www.bennewitz.com/bluefish/stable/source/
@@ -25,6 +24,7 @@ CONFIGURE_ENV+=		EXTERNAL_GREP=${TOOLS_GREP:Q}
 CONFIGURE_ENV+=		EXTERNAL_FIND=${TOOLS_FIND:Q}
 
 CHECK_WRKREF_SKIP+=	lib/bluefish/about.so
+REPLACE_PYTHON+=	data/lorem-ipsum-generator
 
 # XXX this doesn't work
 #XML_CATALOGS=	${PREFIX}/share/xml/bluefish/catalog.xml
