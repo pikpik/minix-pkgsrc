@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/12/04 21:55:01 marino Exp $
+# $NetBSD: Makefile,v 1.6 2012/04/21 07:37:08 taca Exp $
 #
 
 DISTNAME=	tinderbox-dragonfly-${TBOX_VERSION}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	pkgtools
 MASTER_SITES=	http://tinderbox.marcuscom.com/
 DISTFILES=	tinderbox-${TBOX_VERSION}.tar.gz

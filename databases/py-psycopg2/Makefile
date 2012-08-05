@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2012/01/26 10:49:41 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/04/17 15:44:22 adam Exp $
 
 DISTNAME=	psycopg2-2.4.5
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	http://initd.org/psycopg/tarballs/PSYCOPG-2-4/
 
