@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/03/03 00:12:08 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/08/01 18:04:26 drochner Exp $
 #
 
 DISTNAME=	dbus-python-1.1.1
@@ -13,7 +13,8 @@ LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYTHON_VERSIONS_INCLUDE_3X= yes
+PYTHON_VERSIONS_INCOMPATIBLE=	25
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 USE_TOOLS+=	pkg-config gmake
 GNU_CONFIGURE=	yes
