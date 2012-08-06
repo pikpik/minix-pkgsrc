@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.545 2012/07/29 21:47:08 gsutre Exp $
+# $NetBSD: Makefile,v 1.546 2012/08/01 18:02:27 drochner Exp $
 #
 
 COMMENT=	System utilities
@@ -390,6 +390,7 @@ SUBDIR+=	sysgen
 SUBDIR+=	sysinfo
 SUBDIR+=	syslog-ng
 SUBDIR+=	system-tools-backends
+SUBDIR+=	sysupgrade
 SUBDIR+=	tarsnap
 SUBDIR+=	tcx
 SUBDIR+=	tdir

@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/sysupgrade
+man/man5/sysupgrade.conf.5
+man/man8/sysupgrade.8
+share/examples/sysupgrade/default.conf
+${TESTS}tests/sysupgrade/Kyuafile
+${TESTS}tests/sysupgrade/config_test
+${TESTS}tests/sysupgrade/sysupgrade_test
+${TESTS}tests/sysupgrade/utils_test

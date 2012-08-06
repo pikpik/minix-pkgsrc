@@ -1,0 +1,6 @@
+# $NetBSD$
+# used by databases/openldap/Makefile
+# used by databases/openldap/Makefile.common
+# used by databases/openldap-docs/Makefile
+
+OPENLDAP_VERSION=	2.4.32
