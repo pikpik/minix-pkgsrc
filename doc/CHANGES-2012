@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2474 2012/08/06 20:05:53 gls Exp $
+$NetBSD: CHANGES-2012,v 1.2478 2012/08/07 10:42:35 imil Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3826,3 +3826,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated sysutils/fabric to 1.4.3 [gls 2012-08-06]
 	Updated textproc/asciidoc to 8.6.8 [gls 2012-08-06]
 	Updated x11/x3270 to 3.3.12ga11 [gls 2012-08-06]
+	Updated net/xymonclient to 4.3.7nb1 [sbd 2012-08-07]
+	Updated www/nginx to 1.0.15nb1 [imil 2012-08-07]
+	Updated www/nginx to 1.2.2 [imil 2012-08-07]
+	Updated ham/hamlib to 1.2.15.2 [gdt 2012-08-07]

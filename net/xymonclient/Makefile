@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2011/11/16 21:45:01 spz Exp $
+# $NetBSD: Makefile,v 1.12 2012/08/07 02:36:12 sbd Exp $
 #
 
 DISTNAME=		xymon-4.3.7
 PKGNAME=		xymonclient-4.3.7
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xymon/}
 
@@ -112,7 +113,7 @@ OWN_DIRS_PERMS+=	${XYTMPDIR}/client ${XYMONUSER} ${XYMONGROUP} 0755
 OWN_DIRS_PERMS+=	${XYMONVAR} ${XYMONUSER} ${XYMONGROUP} 0755
 OWN_DIRS_PERMS+=	${XYMONVAR}/data ${XYMONUSER} ${XYMONGROUP} 0755
 
-CFILES+=		clientlaunch.cfg xymonclient.cfg
+CFILES+=		clientlaunch.cfg localclient.cfg xymonclient.cfg
 .for file in ${CFILES}
 CONF_FILES_PERMS+=	${EXAMPLEDIR}/${file} ${PKG_SYSCONFDIR.xymon}/${file} ${XYMONUSER} ${XYMONGROUP} 0644
 .endfor
@@ -122,5 +123,10 @@ MAKE_ENV+=		PKGDIR=${PREFIX}
 MAKE_ENV+=		INSTALLROOT=${DESTDIR}
 MAKE_ENV+=		PKGBUILD=y
 MAKE_ENV+=		${TOOLS_ENV}
+
+PLIST_VARS+=		meminfo
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD" || ${OPSYS} == "FreeBSD"
+PLIST.meminfo=		yes
+.endif
 
 .include "../../mk/bsd.pkg.mk"
