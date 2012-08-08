@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.630 2012/07/06 12:31:55 sno Exp $
+# $NetBSD: Makefile,v 1.635 2012/08/08 12:11:54 sno Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -270,6 +270,7 @@ SUBDIR+=	p5-Convert-Translit
 SUBDIR+=	p5-Cz-Cstools
 SUBDIR+=	p5-Data-FormValidator
 SUBDIR+=	p5-Data-HexDump
+SUBDIR+=	p5-Dist-Zilla-Plugin-PodWeaver
 SUBDIR+=	p5-Encode
 SUBDIR+=	p5-Encode-Detect
 SUBDIR+=	p5-Encode-Locale
@@ -308,6 +309,8 @@ SUBDIR+=	p5-POD2-Base
 SUBDIR+=	p5-PPI-HTML
 SUBDIR+=	p5-Pod-Abstract
 SUBDIR+=	p5-Pod-Coverage
+SUBDIR+=	p5-Pod-Elemental
+SUBDIR+=	p5-Pod-Elemental-PerlMunger
 SUBDIR+=	p5-Pod-Escapes
 SUBDIR+=	p5-Pod-Eventual
 SUBDIR+=	p5-Pod-POM
@@ -319,6 +322,7 @@ SUBDIR+=	p5-Pod-Spell-CommonMistakes
 SUBDIR+=	p5-Pod-Strip
 SUBDIR+=	p5-Pod-Tests
 SUBDIR+=	p5-Pod-Tree
+SUBDIR+=	p5-Pod-Weaver
 SUBDIR+=	p5-Regexp-Common
 SUBDIR+=	p5-Regexp-Copy
 SUBDIR+=	p5-SGMLS
@@ -336,6 +340,7 @@ SUBDIR+=	p5-String-Formatter
 SUBDIR+=	p5-String-Koremutake
 SUBDIR+=	p5-String-RewritePrefix
 SUBDIR+=	p5-String-ShellQuote
+SUBDIR+=	p5-String-Truncate
 SUBDIR+=	p5-String-ToIdentifier-EN
 SUBDIR+=	p5-Syntax-Highlight-Engine-Kate
 SUBDIR+=	p5-Template-Declare
