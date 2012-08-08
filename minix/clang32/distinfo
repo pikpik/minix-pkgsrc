@@ -10,6 +10,7 @@ SHA1 (patch-lib_Support_Unix_Unix.h) = d4e8b51e24f4869d065efca4b3745efe9991917f
 SHA1 (patch-lib_Support_raw__ostream.cpp) = befa3e3d17cb041c78a478aa129a3374eda99f19
 SHA1 (patch-lib_Transforms_Makefile) = 655d95426a828edc26ea70970953203dbbaf0899
 SHA1 (patch-runtime_Makefile) = 1342fe18467de30d17bb534a25ce197fd63be56b
+SHA1 (patch-tools_clang_lib_Basic_Targets.cpp) = 5e7f36b415f09081952b1de44db3cca73cb454c5
 SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 9cad5c5fe4dcbb3f18accd23c9ffa0c3736779ce
 SHA1 (patch-tools_clang_lib_Frontend_InitHeaderSearch.cpp) = 26a19732933d0fe9d0ead1a2ecd78df6b288cae3
 SHA1 (patch-tools_llvm-shlib_Makefile) = bb622ca3d24fd226e73c32b8b7d6e16fb3cac9d6
