@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/abcl
+lib/abcl/abcl-contrib.jar
+lib/abcl/abcl.jar
