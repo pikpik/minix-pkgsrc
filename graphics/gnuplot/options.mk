@@ -1,12 +1,12 @@
-# $NetBSD: options.mk,v 1.3 2011/03/10 09:44:10 drochner Exp $
+# $NetBSD: options.mk,v 1.4 2011/04/29 11:41:07 obache Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnuplot
-PKG_SUPPORTED_OPTIONS=	gd lua pdf x11
+PKG_SUPPORTED_OPTIONS=	gd lua pdf x11 qt4 wxwidgets
 PKG_SUGGESTED_OPTIONS=	gd x11
 
 .include "../../mk/bsd.options.mk"
 
-PLIST_VARS+=	x11
+PLIST_VARS+=	x11 qt4
 
 .if !empty(PKG_OPTIONS:Mgd)
 .include "../../graphics/gd/buildlink3.mk"
@@ -29,4 +29,21 @@ PLIST.x11=	yes
 .include "../../x11/libXaw/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-x
+.endif
+
+.if !empty(PKG_OPTIONS:Mqt4)
+USE_LANGUAGES+=	c++
+CONFIGURE_ARGS+=	--enable-qt
+PLIST.qt4=      yes
+.include "../../x11/qt4-libs/buildlink3.mk"
+.else
+CONFIGURE_ARGS+=        --disable-qt
+.endif
+
+.if !empty(PKG_OPTIONS:Mwxwidgets)
+USE_LANGUAGES+= c++
+CONFIGURE_ARGS+=        --enable-wxwidgets
+.include "../../x11/wxGTK28/buildlink3.mk"
+.else
+CONFIGURE_ARGS+=        --disable-wxwidgets
 .endif
