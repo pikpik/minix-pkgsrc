@@ -609,7 +609,7 @@ Minix)
 	groupsprog="id -gn"
 	machine_arch=`uname -p`
 	check_compiler=yes
-	CC="gcc -D_NETBSD_SOURCE -D_MINIX -D_POSIX_SOURCE -D_COMPAT_MINIX"; export CC
+	CC="gcc -D_NETBSD_SOURCE -D_POSIX_SOURCE -D_COMPAT_MINIX"; export CC
 	LDFLAGS="-lcompat_minix -lminlib"
 	;;
 MirBSD)
