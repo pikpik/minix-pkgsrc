@@ -143,7 +143,7 @@ pbulksh_build() {
 		exit 1
 	fi
 
-	env PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} /usr/pbulk/bin/bulkbuild
+	env STRIP=strip PATH=/bin:/sbin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:/usr/bin:/usr/sbin:/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:${PATH} /usr/pbulk/bin/bulkbuild
 }
 
 # Restore the backed up /usr/pkg and /usr/var
