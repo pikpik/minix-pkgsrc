@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/zsync
+bin/zsyncmake
+man/man1/zsync.1
+man/man1/zsyncmake.1
+share/doc/zsync/COPYING
+share/doc/zsync/README

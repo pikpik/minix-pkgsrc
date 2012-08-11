@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.43 2010/09/13 12:43:16 asau Exp $
+# $NetBSD: Makefile,v 1.44 2011/05/26 20:06:13 asau Exp $
 
-DISTNAME=	chicken-4.7.0
+DISTNAME=	chicken-4.7.0.6
 CATEGORIES=	lang
-MASTER_SITES=	http://code.call-cc.org/releases/${PKGVERSION_NOREV}/
+#MASTER_SITES=	http://code.call-cc.org/releases/${PKGVERSION_NOREV}/
+MASTER_SITES=	http://code.call-cc.org/releases/4.7.0/
 
 MAINTAINER=	asau@inbox.ru #, airhead@users.sourceforge.net
 HOMEPAGE=	http://www.call-cc.org/

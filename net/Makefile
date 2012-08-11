@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.921 2012/05/10 05:00:10 jnemeth Exp $
+# $NetBSD: Makefile,v 1.923 2012/08/11 08:44:53 obache Exp $
 #
 
 COMMENT=	Networking tools
@@ -659,6 +659,7 @@ SUBDIR+=	walker
 SUBDIR+=	wap-utils
 SUBDIR+=	waste
 SUBDIR+=	wget
+SUBDIR+=	wgetpaste
 SUBDIR+=	whatmask
 SUBDIR+=	whois3
 SUBDIR+=	whoson
@@ -694,5 +695,6 @@ SUBDIR+=	youtube-dl
 SUBDIR+=	ytalk
 SUBDIR+=	ywho
 SUBDIR+=	zeromq
+SUBDIR+=	zsync
 
 .include "../mk/misc/category.mk"

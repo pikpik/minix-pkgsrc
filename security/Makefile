@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.438 2012/06/16 18:59:13 pettai Exp $
+# $NetBSD: Makefile,v 1.439 2012/06/16 22:01:17 dholland Exp $
 #
 
 COMMENT=	Security tools
@@ -50,6 +50,7 @@ SUBDIR+=	cyrus-sasl
 SUBDIR+=	cyrus-saslauthd
 SUBDIR+=	ddos-scan
 SUBDIR+=	destroy
+SUBDIR+=	dhbitty
 SUBDIR+=	dirb
 SUBDIR+=	dirmngr
 SUBDIR+=	dnssec-tools

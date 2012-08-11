@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1633 2012/08/08 12:05:35 wen Exp $
+# $NetBSD: Makefile,v 1.1634 2012/08/09 18:16:22 minskim Exp $
 #
 
 COMMENT=	Development utilities
@@ -1474,6 +1474,7 @@ SUBDIR+=	ruby-simple_uuid
 SUBDIR+=	ruby-simplecov
 SUBDIR+=	ruby-simplecov-html
 SUBDIR+=	ruby-spruz
+SUBDIR+=	ruby-stomp
 SUBDIR+=	ruby-stream
 SUBDIR+=	ruby-subexec
 SUBDIR+=	ruby-subversion

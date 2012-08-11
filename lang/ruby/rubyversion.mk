@@ -1,4 +1,4 @@
-# $NetBSD: rubyversion.mk,v 1.82 2012/07/24 16:23:37 taca Exp $
+# $NetBSD: rubyversion.mk,v 1.83 2012/07/25 14:26:57 bsiegert Exp $
 #
 
 # This file determines which Ruby version is used as a dependency for
@@ -35,7 +35,7 @@
 #
 #		Possible values: 18 192 193
 #		Compatible values: 19 (= 192)
-#		Default: 193
+#		Default: 18 192 193
 #
 # RUBY_VERSION_REQD
 #	The Ruby versions force to build (for pbulk).
