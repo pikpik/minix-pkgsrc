@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2012/03/15 11:53:26 obache Exp $
+# $NetBSD: Makefile,v 1.30 2012/06/14 07:45:18 sbd Exp $
 #
 
 DISTNAME=		openmsx-0.6.2
-PKGREVISION=		8
+PKGREVISION=		9
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=openmsx/}
 
@@ -43,6 +43,7 @@ post-build:
 
 INSTALLATION_DIRS+=	bin
 INSTALL_MAKE_FLAGS+=	OPENMSX_INSTALL=${DESTDIR}${PREFIX}/openmsx
+INSTALL_MAKE_FLAGS+=	SYMLINK_FOR_BINARY=false
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/openmsx.sh ${DESTDIR}${PREFIX}/bin/openmsx
