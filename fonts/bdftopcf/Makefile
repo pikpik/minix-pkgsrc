@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2009/11/09 17:43:58 tnn Exp $
+# $NetBSD: Makefile,v 1.6 2011/11/01 06:01:11 sbd Exp $
 #
 
-DISTNAME=		bdftopcf-1.0.2
-PKGREVISION=		1
+DISTNAME=		bdftopcf-1.0.3
 CATEGORIES=		fonts
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
