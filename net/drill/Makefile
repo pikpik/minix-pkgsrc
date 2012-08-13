@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/12/17 17:53:26 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2010/03/03 13:43:08 he Exp $
 
-VERSION=	1.6.4
+VERSION=	1.6.8
 DISTNAME=	ldns-${VERSION}
 PKGNAME=	drill-${VERSION}
 CATEGORIES=	net

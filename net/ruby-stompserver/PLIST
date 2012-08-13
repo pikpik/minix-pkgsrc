@@ -1,6 +1,7 @@
 @comment $NetBSD$
 bin/stompserver
 ${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/.gemtest
 ${GEM_LIBDIR}/History.txt
 ${GEM_LIBDIR}/Manifest.txt
 ${GEM_LIBDIR}/README.txt

@@ -2,7 +2,7 @@ $NetBSD$
 
 Buggy code made pid relative to logdir
 
---- lib/stomp_server.rb.orig	2012-08-12 15:28:59.000000000 +0000
+--- lib/stomp_server.rb.orig	2012-08-13 12:57:02.000000000 +0000
 +++ lib/stomp_server.rb
 @@ -67,7 +67,7 @@ module StompServer
        opts[:storage] = File.join(opts[:working_dir],opts[:storage])

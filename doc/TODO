@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11432 2012/08/12 16:34:24 wiz Exp $
+$NetBSD: TODO,v 1.11437 2012/08/13 15:20:34 asau Exp $
 
 Suggested new packages
 ======================
@@ -525,7 +525,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o doxygen-1.8.2
 	o dri-7.8.2 [wip]
 	o drivel-3.0.3
-	o dropbear-2012.055
 	o dspam-3.10.0
 	o dvdstyler-2.2
 	o dvtm-0.7 [pkg/46585]
@@ -568,7 +567,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o etm-891
 	o ettercap-0.7.4
 	o eukleides-1.5.4
-	o evieext-1.1.1
 	o evince-3.4.0
 	o evolution-3.0.0
 	o evolution-couchdb-0.4.5
@@ -740,7 +738,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o httptunnel-3.3
 	o hugin-2011.4.0
 	o hylafax-6.0.5
-	o hypermail-2.3.0 [pkg/46440]
 	o ical-2.3.2
 	o icdprog-0.5
 	o icewm-1.3.7
@@ -812,7 +809,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o libcaca-0.99beta18
 	o libcanberra-0.28 [drops support for GNOME2; don't update for now -- wiz]
 	o libcares-1.8.0
-	o libcdio-0.83
 	o libchamplain08-0.12.3
 	o libextractor-0.6.3
 	o libffi-3.0.11
@@ -875,7 +871,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o manedit-1.2.1
 	o mantis-1.2.3
 	o matchbox-panel-0.9.3
-	o mathomatic-16.0.2
 	o mawk-1.3.4.20120627
 	o mc-4.8.1.4
 	o mdocml-1.12.1
@@ -1017,7 +1012,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o polkit-qt-0.103.0
 	o polsms-2.1.0
 	o poppass-4.0.14
-	o poppler-0.20.3
 	o poppy-4.01
 	o posh-0.5.5
 	o postal-0.72
@@ -1246,7 +1240,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o wbm-cyrus-imapd-1.6.2
 	o wcalc-2.4
 	o webalizer-2.23.05
-	o webkit-gtk-1.8.2
 	o webmin-1.550 [security] [pkg/45066]
 	o webmin-1.590 [security]
 	o websvn-2.3.2

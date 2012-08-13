@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.26 2012/05/30 11:52:05 ghen Exp $
+# $NetBSD: Makefile,v 1.27 2012/07/27 19:37:57 drochner Exp $
 
-DISTNAME=	dovecot-2.1.8
+DISTNAME=	dovecot-2.1.9
 CATEGORIES=	mail
 MASTER_SITES=	http://www.dovecot.org/releases/2.1/
 

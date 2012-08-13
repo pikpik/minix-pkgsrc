@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.97 2012/07/01 08:02:04 asau Exp $
+# $NetBSD: Makefile,v 1.98 2012/07/01 19:05:20 dholland Exp $
 #
 
-DISTNAME=		mathomatic-16.0.0
-PKGREVISION=		1
+DISTNAME=		mathomatic-16.0.2
 CATEGORIES=		math
 MASTER_SITES=		http://mathomatic.org/
 EXTRACT_SUFX=		.tar.bz2

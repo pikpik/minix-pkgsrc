@@ -40,6 +40,7 @@ share/doc/mathomatic/html/rmath.1.html
 share/doc/mathomatic/tests/README.txt
 share/doc/mathomatic/tests/all.in
 share/doc/mathomatic/tests/all.out
+share/doc/mathomatic/tests/batman_gnuplot_bug.in
 share/doc/mathomatic/tests/batman_plot
 share/doc/mathomatic/tests/circles.in
 share/doc/mathomatic/tests/collatz.in

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/Makefile.in.orig	2003-07-04 08:23:07.000000000 +1000
+--- src/Makefile.in.orig	2007-02-16 19:53:00.000000000 +0000
 +++ src/Makefile.in
 @@ -24,15 +24,15 @@ CC=@CC@
  # Installation program to use
@@ -26,7 +26,7 @@ $NetBSD$
  	$(CC) -c $(CFLAGS) $<
  
 -all:    pcre/.libs/libpcre.a @FNV_DEP@ hypermail$(SUFFIX) mail$(SUFFIX) lang$(SUFFIX)
-+all:    @FNV_DEP@ hypermail$(SUFFIX) mail$(SUFFIX) lang$(SUFFIX)
++all:    @FNV_DEP@ hypermail$(SUFFIX) lang$(SUFFIX)
  
  pcre/.libs/libpcre.a:
- 	@cd pcre; $(MAKE) CC="$(CC)" CFLAGS="$(CFLAGS)"
+ 	@cd pcre; $(MAKE) CC="$(CC)" CFLAGS="$(CFLAGS)" ; rm -f .libs/lib*.so*
