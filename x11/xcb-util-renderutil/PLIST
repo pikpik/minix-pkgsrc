@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/xcb/xcb_renderutil.h
+lib/libxcb-render-util.la
+lib/pkgconfig/xcb-renderutil.pc
