@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11438 2012/08/13 17:52:08 drochner Exp $
+$NetBSD: TODO,v 1.11441 2012/08/14 08:37:58 wiz Exp $
 
 Suggested new packages
 ======================
@@ -462,7 +462,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o cdlabelgen-4.2.0
 	o cdrkit-1.1.10
 	o celestia-1.6.0
-	o celt-0.11.3
 	o cfengine-3.3.4
 	o cfitsio-3.310
 	o cflow-1.4
@@ -529,7 +528,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o drivel-3.0.3
 	o dspam-3.10.0
 	o dvdstyler-2.2
-	o dvtm-0.7 [pkg/46585]
 	o dvtm-0.8
 	o easymenu-0.7.2p1
 	o eboard-1.1.1
@@ -585,6 +583,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o fbreader-0.99.1
 	o fcitx-3.6.2
 	o felt-3.07
+	o fetchmail-6.3.22
 	o fetchyahoo-2.14.0
 	o ffmpeg-20120415.0.8.11
 	o ffmpeg-20120105.0.9.1
@@ -637,6 +636,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o geany-1.22
 	o gedit-3.2.6
 	o gedit-plugins-2.32.0 [GNOME 2.32]
+	o geeqie-1.1
 	o gentoo-0.19.13
 	o gfract-0.33
 	o ghc-7.0.4
@@ -1088,6 +1088,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o sabayon-2.30.1 [GNOME 2.30]
 	o sablecc-3.4
 	o samba-3.6.7
+	o samba35-3.5.17
 	o sarg-2.2.5
 	o sawfish-1.9.0
 	o saxon-9.2

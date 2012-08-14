@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/06/14 07:43:24 sbd Exp $
+# $NetBSD: Makefile,v 1.34 2012/08/14 07:56:41 tron Exp $
 
 DISTNAME=	gegl-0.2.0
 PKGREVISION=	2

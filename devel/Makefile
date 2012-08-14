@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1634 2012/08/09 18:16:22 minskim Exp $
+# $NetBSD: Makefile,v 1.1637 2012/08/14 12:10:03 imil Exp $
 #
 
 COMMENT=	Development utilities
@@ -1302,6 +1302,7 @@ SUBDIR+=	py-coverage
 SUBDIR+=	py-curses
 SUBDIR+=	py-cursespanel
 SUBDIR+=	py-cython
+SUBDIR+=	py-daemon
 SUBDIR+=	py-darcsver
 SUBDIR+=	py-decorator
 SUBDIR+=	py-distribute
@@ -1320,6 +1321,7 @@ SUBDIR+=	py-ipython012
 SUBDIR+=	py-jersey
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
+SUBDIR+=	py-lockfile
 SUBDIR+=	py-logilab-astng
 SUBDIR+=	py-logilab-common
 SUBDIR+=	py-mako
@@ -1339,6 +1341,7 @@ SUBDIR+=	py-readline
 SUBDIR+=	py-rope
 SUBDIR+=	py-setuptools
 SUBDIR+=	py-setuptools_trial
+SUBDIR+=	py-stompclient
 SUBDIR+=	py-subversion
 SUBDIR+=	py-subvertpy
 SUBDIR+=	py-sysctl

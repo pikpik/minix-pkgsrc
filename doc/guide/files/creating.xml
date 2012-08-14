@@ -1,4 +1,4 @@
-<!-- $NetBSD: creating.xml,v 1.9 2009/09/07 18:22:10 joerg Exp $ -->
+<!-- $NetBSD: creating.xml,v 1.10 2011/05/21 16:39:03 wiz Exp $ -->
 
 <chapter id="creating">
 <title>Creating a new pkgsrc package from scratch</title>
@@ -176,9 +176,10 @@ egg-aware, you only need to include
 
 <para>In order to correctly set the path to the Python interpreter, use the
 <varname>REPLACE_PYTHON</varname> variable and set it to the list of files
-that must be corrected. For example :
+(paths relative to <varname>WRKSRC</varname>) that must be corrected.
+For example :
 <programlisting>
-REPLACE_PYTHON=   ${WRKSRC}/*.py
+REPLACE_PYTHON=   *.py
 </programlisting></para>
 
 </sect2>
