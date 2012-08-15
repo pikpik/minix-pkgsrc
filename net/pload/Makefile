@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2011/12/14 09:24:41 shattered Exp $
+# $NetBSD: Makefile,v 1.25 2012/03/10 13:20:11 shattered Exp $
 #
 
 DISTNAME=	pload-0.9.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net x11
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=system/network/serial/ppp/}
 
@@ -21,5 +21,4 @@ USE_X11BASE=	YES
 INSTALL_TARGET=	install install.man
 
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
