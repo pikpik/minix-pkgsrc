@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.47 2012/04/14 10:47:17 obache Exp $
+# $NetBSD: Makefile,v 1.48 2012/05/13 09:00:43 obache Exp $
 
 .include "dist.mk"
 
 PKGNAME=	python26-${PY_DISTVERSION}
+PKGREVISION=	1
 CATEGORIES=	lang python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -48,7 +49,6 @@ LIBS.SunOS+=		-lrt
 PY_VER_SUFFIX=		2.6
 
 .if ${OPSYS} == "NetBSD"
-PRIVILEGED_STAGES+=	clean
 # XXX work around a botched autoconf check which ignores libintl
 CONFIGURE_ENV+=		ac_cv_func_bind_textdomain_codeset=yes
 .endif

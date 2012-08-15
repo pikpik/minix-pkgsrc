@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2011/03/17 09:05:32 sborrill Exp $
+# $NetBSD: Makefile,v 1.41 2012/05/19 21:40:19 marino Exp $
 
 DISTNAME=	citrix_ica-10.6.115659
 PKGREVISION=	2
@@ -23,6 +23,8 @@ EMUL_PLATFORMS=		linux-i386
 EMUL_PLATFORMS+=	solaris-sparc
 EMUL_PLATFORMS+=	solaris-i386
 EMUL_MODULES.linux=	locale motif x11
+
+PKG_DESTDIR_SUPPORT=	none
 
 .include "../../mk/bsd.prefs.mk"
 
