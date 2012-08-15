@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/05 07:43:12 obache Exp $
 #
 
 DISTNAME=	roman-1.4.0
@@ -14,8 +14,8 @@ LICENSE=	python-software-foundation
 CONFLICTS+=	${PYPKGPREFIX}-docutils<=0.7
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	# none
+PYTHON_VERSIONS_INCLUDE_3X= yes
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"
