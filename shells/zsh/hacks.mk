@@ -1,3 +1,5 @@
+# $NetBSD$
+
 .if !defined(ZSH_HACKS_MK)
 ZSH_HACKS_MK= defined
 

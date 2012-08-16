@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11445 2012/08/15 20:28:20 wiz Exp $
+$NetBSD: TODO,v 1.11450 2012/08/16 15:16:40 wiz Exp $
 
 Suggested new packages
 ======================
@@ -376,6 +376,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o alsa-lib-1.0.25
 	o alsa-plugins-1.0.25
 	o alsa-utils-1.0.25
+	o amarok-2.6.0
 	o amavis-perl-0.3.12 [called just amavis]
 	o amsn-0.98.4
 	o angband-3.2
@@ -938,7 +939,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o ntp-4.2.6p3
 	o ntp4-4.2.6p5
 	o nulib2-220
-	o nut-17.11
+	o nut-17.12
 	o nxtvepg-2.8.1
 	o obexftp-0.23
 	o ocaml-4.00.0
@@ -1083,7 +1084,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o rtcw-1.41.3
 	o rtty-4.0 [at ftp://ftp.isc.org/isc/rtty/]
 	o ruby-1.8.7.370
-	o rudiments-0.36.1
+	o rudiments-0.37
 	o sabayon-2.30.1 [GNOME 2.30]
 	o sablecc-3.4
 	o samba-3.5.17
@@ -1134,6 +1135,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o spectrewm-1.1.2 [was scrotwm]
 	o spidermonkey-1.8.5
 	o spl-1.0pre6
+	o squid-3.2.1
 	o srp_client-1.7.5
 	o ssh-askpass-1.2.4.1
 	o ssmtp-2.64 [security]
@@ -1223,7 +1225,6 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o valgrind-3.7.0
 	o vbetool-1.1
 	o vera-1.17
-	o veusz-1.16
 	o vfu-4.09
 	o vicq-0.4.2
 	o viewvc-1.1.15
@@ -1252,7 +1253,7 @@ For possible perl packages updates, see http://www.netbsd.org/~wiz/perl.html
 	o windowmaker-0.95.2 [wip]
 	o wine-1.4.1 [wait until NetBSD gains OSS 4 or bring OSS 3 support back]
 	o wine-devel-1.5.9 [wait until NetBSD gains OSS 4 or bring OSS 3 support back]
-	o wireshark-1.8.1
+	o wireshark-1.8.2
 	o wmi-11
 	o wml-2.0.11
 	o wmnd-0.4.13
