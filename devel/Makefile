@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1637 2012/08/14 12:10:03 imil Exp $
+# $NetBSD: Makefile,v 1.1638 2012/08/14 12:30:55 imil Exp $
 #
 
 COMMENT=	Development utilities
@@ -1515,6 +1515,7 @@ SUBDIR+=	sfslite
 SUBDIR+=	sgb
 SUBDIR+=	sgi-stl
 SUBDIR+=	sgi-stl-docs
+SUBDIR+=	shtk
 SUBDIR+=	silc-toolkit
 SUBDIR+=	slib
 SUBDIR+=	sml-mode

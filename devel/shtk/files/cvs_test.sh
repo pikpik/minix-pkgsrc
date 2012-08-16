@@ -26,6 +26,8 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+shtk_import cvs
+
 
 MOCK_CVSROOT=":local:$(pwd)/cvsroot"
 
@@ -55,7 +57,7 @@ atf_test_case fetch
 fetch_body() {
     init_cvsroot "${MOCK_CVSROOT}" src
 
-    cvs_fetch "${MOCK_CVSROOT}" src "" first
+    shtk_cvs_fetch "${MOCK_CVSROOT}" src "" first
     grep "first revision" first/file-in-src >/dev/null \
         || atf_fail "Unexpected version found"
 
@@ -63,7 +65,7 @@ fetch_body() {
     echo "second revision" >second/file-in-src
     ( cd second && cvs commit -m "Second commit." )
 
-    cvs_fetch "${MOCK_CVSROOT}" src "" first
+    shtk_cvs_fetch "${MOCK_CVSROOT}" src "" first
     grep "second revision" first/file-in-src >/dev/null \
         || atf_fail "Unexpected version found"
 }
@@ -72,7 +74,7 @@ fetch_body() {
 atf_test_case checkout__same_name
 checkout__same_name_body() {
     init_cvsroot "${MOCK_CVSROOT}" first second
-    cvs_checkout "${MOCK_CVSROOT}" first "" $(pwd)/a/b/c/first
+    shtk_cvs_checkout "${MOCK_CVSROOT}" first "" $(pwd)/a/b/c/first
     [ -f a/b/c/first/file-in-first ] || atf_fail "Files not checked out"
     if [ -f a/b/c/second/file-in-second ]; then
         atf_fail "Unexpected module checked out"
@@ -83,7 +85,7 @@ checkout__same_name_body() {
 atf_test_case checkout__different_name
 checkout__different_name_body() {
     init_cvsroot "${MOCK_CVSROOT}" first second
-    cvs_checkout "${MOCK_CVSROOT}" first "" $(pwd)/a/b/c/second
+    shtk_cvs_checkout "${MOCK_CVSROOT}" first "" $(pwd)/a/b/c/second
     [ -f a/b/c/second/file-in-first ] || atf_fail "Files not checked out"
 }
 
@@ -91,7 +93,8 @@ checkout__different_name_body() {
 atf_test_case checkout__already_exists
 checkout__already_exists_body() {
     mkdir usr/src
-    if ( cvs_checkout "${MOCK_CVSROOT}" src "" $(pwd)/usr/src ) >out 2>err; then
+    if ( shtk_cvs_checkout "${MOCK_CVSROOT}" src "" $(pwd)/usr/src ) >out 2>err
+    then
         atf_fail "Checkout succeeded, but should not"
     else
         grep "Cannot checkout into $(pwd)/usr/src.*exists" err >/dev/null \
@@ -108,7 +111,8 @@ checkout__permission_denied_body() {
     init_cvsroot "${MOCK_CVSROOT}" src
     mkdir usr
     chmod 555 usr
-    if ( cvs_checkout "${MOCK_CVSROOT}" src "" $(pwd)/usr/src ) >out 2>err; then
+    if ( shtk_cvs_checkout "${MOCK_CVSROOT}" src "" $(pwd)/usr/src ) >out 2>err
+    then
         atf_fail "Checkout succeeded, but should not"
     else
         grep "Failed to create $(pwd)/usr/src" err >/dev/null \
@@ -125,14 +129,14 @@ update__ok_body() {
     mv first copy
     cvs -d "${MOCK_CVSROOT}" checkout first
 
-    cvs_update "${MOCK_CVSROOT}" "" first
+    shtk_cvs_update "${MOCK_CVSROOT}" "" first
     grep "first revision" first/file-in-first >/dev/null \
         || atf_fail "Unexpected version found"
 
     echo "second revision" >copy/file-in-first
     ( cd copy && cvs commit -m "Second commit." )
 
-    cvs_update "${MOCK_CVSROOT}" "" first
+    shtk_cvs_update "${MOCK_CVSROOT}" "" first
     grep "second revision" first/file-in-first >/dev/null \
         || atf_fail "Unexpected version found"
 }
@@ -149,7 +153,7 @@ update__resume_checkout_body() {
     mv copy/CVS first/.cvs-checkout/first
     rm -rf copy
 
-    cvs_update "${MOCK_CVSROOT}" "" first
+    shtk_cvs_update "${MOCK_CVSROOT}" "" first
     grep "first revision" first/file-in-first >/dev/null \
         || atf_fail "Unexpected version found"
 }
@@ -157,7 +161,7 @@ update__resume_checkout_body() {
 
 atf_test_case update__does_not_exist
 update__does_not_exist_body() {
-    if ( cvs_update "${MOCK_CVSROOT}" "" src ) >out 2>err; then
+    if ( shtk_cvs_update "${MOCK_CVSROOT}" "" src ) >out 2>err; then
         atf_fail "Update succeeded, but should not"
     else
         grep "Cannot update src; .*not exist" err >/dev/null \

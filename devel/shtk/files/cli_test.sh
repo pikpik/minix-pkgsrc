@@ -26,20 +26,32 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+shtk_import cli
 
-atf_test_case global_progname
-global_progname_body() {
-    [ "${Utils_ProgName}" = utils_test ] \
-        || atf_fail "Invalid value in Utils_ProgName"
+
+# Saves the original value of argv[0] for testing purposes.
+_Original_Arg0="${0}"
+
+
+atf_test_case dirname
+dirname_body() {
+    atf_check_equal "$(dirname "${_Original_Arg0}")" "$(shtk_cli_dirname)"
+}
+
+
+atf_test_case progname
+progname_body() {
+    atf_check_equal "$(basename "${_Original_Arg0}")" "$(shtk_cli_progname)"
 }
 
 
 atf_test_case error
 error_body() {
-    if ( utils_error "This is" "a message"; echo "not seen" ) >out 2>err; then
-        atf_fail "utils_error did not exit with an error"
+    if ( shtk_cli_error "This is" "a message"; echo "not seen" ) >out 2>err
+    then
+        atf_fail "shtk_cli_error did not exit with an error"
     else
-        grep "utils_test: E: This is a message" err >/dev/null \
+        grep "cli_test: E: This is a message" err >/dev/null \
             || atf_fail "Expected error message not found"
         [ ! -s out ] || atf_fail "Unexpected output in stdout"
     fi
@@ -48,8 +60,8 @@ error_body() {
 
 atf_test_case info
 info_body() {
-    ( utils_info "This is" "a message"; echo "continuing" ) >out 2>err
-    grep "utils_test: I: This is a message" err >/dev/null \
+    ( shtk_cli_info "This is" "a message"; echo "continuing" ) >out 2>err
+    grep "cli_test: I: This is a message" err >/dev/null \
         || atf_fail "Expected info message not found"
     grep "continuing" out >/dev/null || atf_fail "Execution aborted"
 }
@@ -57,13 +69,13 @@ info_body() {
 
 atf_test_case usage_error
 usage_error_body() {
-    if ( utils_usage_error "This is" "a message"; echo "not seen" ) >out 2>err
+    if ( shtk_cli_usage_error "This is" "a message"; echo "not seen" ) >out 2>err
     then
-        atf_fail "utils_usage_error did not exit with an error"
+        atf_fail "shtk_cli_usage_error did not exit with an error"
     else
-        grep "utils_test: E: This is a message" err >/dev/null \
+        grep "cli_test: E: This is a message" err >/dev/null \
             || atf_fail "Expected error message not found"
-        grep "Type 'man utils_test' for help" err >/dev/null \
+        grep "Type 'man cli_test' for help" err >/dev/null \
             || atf_fail "Expected instructional message not found"
         [ ! -s out ] || atf_fail "Unexpected output in stdout"
     fi
@@ -72,74 +84,20 @@ usage_error_body() {
 
 atf_test_case warning
 warning_body() {
-    ( utils_warning "This is" "a message"; echo "continuing" ) >out 2>err
-    grep "utils_test: W: This is a message" err >/dev/null \
+    ( shtk_cli_warning "This is" "a message"; echo "continuing" ) >out 2>err
+    grep "cli_test: W: This is a message" err >/dev/null \
         || atf_fail "Expected info message not found"
     grep "continuing" out >/dev/null || atf_fail "Execution aborted"
 }
 
 
-atf_test_case run__ok
-run__ok_body() {
-    cat >helper.sh <<EOF
-#! /bin/sh
-echo "This exits cleanly:" "\${@}"
-exit 0
-EOF
-    chmod +x helper.sh
-
-    utils_run ./helper.sh one two three >out 2>err \
-        || atf_fail "Got an unexpected error code"
-
-    cat >expout <<EOF
-This exits cleanly: one two three
-EOF
-    atf_check -o file:expout cat out
-
-    cat >experr <<EOF
-utils_test: I: Running './helper.sh one two three' in $(pwd)
-utils_test: I: Command finished successfully
-EOF
-    atf_check -o file:experr cat err
-}
-
-
-atf_test_case run__fail
-run__fail_body() {
-    cat >helper.sh <<EOF
-#! /bin/sh
-echo "This exits with an error:" "\${@}"
-exit 42
-EOF
-    chmod +x helper.sh
-
-    code=0
-    utils_run ./helper.sh one two three >out 2>err || code="${?}"
-    [ ${code} -eq 42 ] \
-        || atf_fail "Did not get the expected error code; got ${code}"
-
-    cat >expout <<EOF
-This exits with an error: one two three
-EOF
-    atf_check -o file:expout cat out
-
-    cat >experr <<EOF
-utils_test: I: Running './helper.sh one two three' in $(pwd)
-utils_test: W: Command failed with code 42
-EOF
-    atf_check -o file:experr cat err
-}
-
-
 atf_init_test_cases() {
-    atf_add_test_case global_progname
+    atf_add_test_case dirname
+    atf_add_test_case progname
 
     atf_add_test_case error
     atf_add_test_case info
     atf_add_test_case warning
 
     atf_add_test_case usage_error
-
-    atf_add_test_case run__ok
-    atf_add_test_case run__fail
 }

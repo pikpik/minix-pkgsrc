@@ -26,51 +26,10 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# \file utils.subr
-# Miscellaneous utility functions and global variables.
+# \file process.subr
+# Process manipulation functions.
 
-
-# Base name of the running script.
-Utils_ProgName="${0##*/}"
-
-
-# Prints a runtime error and exits.
-#
-# \param ... The message to print.  Can be provided as multiple words and, in
-#     that case, they are joined together by a single whitespace.
-utils_error() {
-    echo "${Utils_ProgName}: E: $*" 1>&2
-    exit 1
-}
-
-
-# Prints an informational message.
-#
-# \param ... The message to print.  Can be provided as multiple words and, in
-#     that case, they are joined together by a single whitespace.
-utils_info() {
-    echo "${Utils_ProgName}: I: $*" 1>&2
-}
-
-
-# Prints a runtime warning.
-#
-# \param ... The message to print.  Can be provided as multiple words and, in
-#     that case, they are joined together by a single whitespace.
-utils_warning() {
-    echo "${Utils_ProgName}: W: $*" 1>&2
-}
-
-
-# Prints an usage error and exits.
-#
-# \param ... The message to print.  Can be provided as multiple words and, in
-#     that case, they are joined together by a single whitespace.
-utils_usage_error() {
-    echo "${Utils_ProgName}: E: $*" 1>&2
-    echo "Type 'man ${Utils_ProgName}' for help" 1>&2
-    exit 1
-}
+shtk_import cli
 
 
 # Executes a command with logging.
@@ -78,14 +37,14 @@ utils_usage_error() {
 # \param ... The command to execute.
 #
 # \return The exit code of the executed command.
-utils_run() {
-    utils_info "Running '${@}' in $(pwd)"
+shtk_process_run() {
+    shtk_cli_info "Running '${@}' in $(pwd)"
     local ret=0
     "${@}" || ret="${?}"
     if [ ${ret} -eq 0 ]; then
-        utils_info "Command finished successfully"
+        shtk_cli_info "Command finished successfully"
     else
-        utils_warning "Command failed with code ${ret}"
+        shtk_cli_warning "Command failed with code ${ret}"
     fi
     return "${ret}"
 }
