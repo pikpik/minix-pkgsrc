@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2012/03/15 11:53:27 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/07/31 15:49:37 prlw1 Exp $
 
 PKGNAME=	${DISTNAME:S/-/-share-/}
+PKGREVISION=	1
 COMMENT=	Machine independent files for Freeciv
 
 PKG_DESTDIR_SUPPORT=	user-destdir

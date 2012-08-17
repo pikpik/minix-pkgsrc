@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2608 2012/08/16 16:05:44 ryoon Exp $
+$NetBSD: CHANGES-2012,v 1.2616 2012/08/17 15:44:40 wen Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -3999,3 +3999,12 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated graphics/veusz to 1.16 [drochner 2012-08-16]
 	Updated www/php-owncloud to 4.0.7 [ryoon 2012-08-16]
 	Updated biology/gnome-chemistry-utils to 0.12.13 [ryoon 2012-08-16]
+	Updated shells/zsh to 5.0.0nb1 [wiz 2012-08-17]
+	Updated www/p5-Mojolicious to 3.31 [sno 2012-08-17]
+	Updated shells/zsh to 5.0.0nb2 [wiz 2012-08-17]
+	Updated mail/p5-Mail-IMAPClient to 3.32 [wen 2012-08-17]
+	Updated lang/php53 to 5.3.16 [taca 2012-08-17]
+	Updated lang/php54 to 5.4.6 [taca 2012-08-17]
+	Updated www/php-apc to 3.1.12 [taca 2012-08-17]
+	Updated textproc/p5-Pod-Simple to 3.23 [wen 2012-08-17]
+	Added mail/fdm version 1.6 [seb 2012-08-17]
