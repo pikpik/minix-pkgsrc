@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/04/05 00:49:07 jakllsch Exp $
+# $NetBSD: Makefile,v 1.19 2012/08/18 14:46:26 dsainty Exp $
 
 DISTNAME=		avr-libc-1.6.7
 PKGREVISION=		1
@@ -9,16 +9,17 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		wennmach@NetBSD.org
 HOMEPAGE=		http://savannah.nongnu.org/projects/avr-libc
 COMMENT=		C and math library for Atmel AVR 8-bit microcontrollers
+LICENSE=		modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		avr-binutils-[0-9]*:../../cross/avr-binutils
 BUILD_DEPENDS+=		avr-gcc-[0-9]*:../../cross/avr-gcc
-BUILD_DEPENDS+=		doxygen>=1.6.3nb1:../../devel/doxygen
+BUILD_DEPENDS+=		doxygen>=1.8.1.1nb1:../../devel/doxygen
 BUILD_DEPENDS+=		transfig-[0-9]*:../../print/transfig
 BUILD_DEPENDS+=		netpbm-[0-9]*:../../graphics/netpbm
 
-USE_TOOLS+=		gmake
+USE_TOOLS+=		aclocal autoconf autoheader automake gmake
 USE_TOOLS+=		perl
 GNU_CONFIGURE=		yes
 USE_GNU_CONFIGURE_HOST= no
@@ -29,6 +30,10 @@ CONFIGURE_ENV+=		CC=${PREFIX}/bin/avr-gcc
 CONFIGURE_ARGS+=	--build=${MACHINE_GNU_PLATFORM:Q} --host=avr
 CONFIGURE_ARGS+=	--enable-doc
 CONFIGURE_ARGS+=	--disable-versioned-doc
+
+pre-configure:
+	set -e; cd ${WRKSRC}; \
+	aclocal; autoheader; automake -a --foreign -i; autoconf
 
 post-build:
 	cd ${WRKSRC}/doc/examples/demo && ${GMAKE}

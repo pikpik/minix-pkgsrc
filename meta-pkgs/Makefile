@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.66 2012/06/16 15:04:08 taca Exp $
+# $NetBSD: Makefile,v 1.67 2012/07/21 10:04:10 wiz Exp $
 #
 
 COMMENT=	Collections of other packages
@@ -40,7 +40,6 @@ SUBDIR+=	pulseaudio-tools
 SUBDIR+=	py-gnome-bindings
 SUBDIR+=	ruby-gnome2
 SUBDIR+=	suse100
-SUBDIR+=	suse113
 SUBDIR+=	suse121
 SUBDIR+=	web-server
 SUBDIR+=	windowmaker-desktop
