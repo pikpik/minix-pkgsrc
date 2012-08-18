@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.382 2012/06/06 07:54:36 wiz Exp $
+# $NetBSD: Makefile,v 1.383 2012/07/15 02:35:21 dholland Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -254,6 +254,7 @@ SUBDIR+=	sci
 SUBDIR+=	screen
 SUBDIR+=	send-pr
 SUBDIR+=	siag
+SUBDIR+=	since
 SUBDIR+=	softmaker-office-demo
 SUBDIR+=	splitvt
 SUBDIR+=	stellarium
