@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11458 2012/08/18 11:45:08 wiz Exp $
+$NetBSD: TODO,v 1.11461 2012/08/19 12:39:31 obache Exp $
 
 Suggested new packages
 ======================
@@ -496,7 +496,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o csound5-5.13
 	o ctwm-3.8.1
 	o cups-1.6.1
-	o cutter-1.2.1
 	o cvs2p4-2.5.5 [schmonz]
 	o cwm-5.1
 	o cygwin_lib-1.5.24.2
@@ -699,6 +698,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o graphviz-2.28.0
 	o grhino-0.16.1
 	o groff-1.21
+	o groonga-2.0.5 [pthread_mutexattr_setpshared() is missing on NetBSD-5]
 	o gss-1.0.2
 	o gssdp-0.10.0
 	o gtexinfo-4.13a
@@ -1006,6 +1006,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o pingus-0.7.4
 	o pioneers-14.1
 	o pircbot-1.4.6
+	o pitivi-0.15.2
 	o pixman-0.27.2
 	o pks-0.9.6
 	o planner-0.14.6

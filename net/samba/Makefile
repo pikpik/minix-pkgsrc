@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.219 2012/05/02 14:48:00 taca Exp $
+# $NetBSD: Makefile,v 1.220 2012/07/06 23:32:59 asau Exp $
 
 .include "../../net/samba/Makefile.mirrors"
 
 DISTNAME=	samba-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${SAMBA_MIRRORS:=stable/}
 
@@ -94,13 +95,6 @@ MAKEFLAGS+=	PWD_MKDB=${PWD_MKDB:Q}
 .endif
 FILES_SUBST+=	MKTEMP=${MKTEMP:Q}
 FILES_SUBST+=	PWD_MKDB=${PWD_MKDB:Q}
-
-.if ${OPSYS} == "NetBSD"
-.  if !empty(PKG_OPTIONS:Mwinbind)
-# Install a /usr/lib/nss_winbind.so.0 -> ${PREFIX}/lib/nss_winbind.so.0 symlink
-INSTALL_TEMPLATES+=	INSTALL.nss_winbind
-.  endif
-.endif
 
 INSTALLATION_DIRS+=	${DOCDIR} ${EGDIR}
 

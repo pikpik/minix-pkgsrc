@@ -1,7 +1,7 @@
 $NetBSD$
 
---- client-common/scim-bridge-client-output.c.orig	2008-11-02 06:44:34.000000000 +0000
-+++ client-common/scim-bridge-client-output.c
+--- extras/immodules/client-common/scim-bridge-client-output.c.orig	2012-06-13 15:22:28.000000000 +0000
++++ extras/immodules/client-common/scim-bridge-client-output.c
 @@ -20,6 +20,7 @@
  #include <stdarg.h>
  #include <stdio.h>

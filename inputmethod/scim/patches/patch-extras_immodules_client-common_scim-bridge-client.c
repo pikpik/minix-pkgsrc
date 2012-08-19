@@ -1,19 +1,20 @@
 $NetBSD$
 
---- client-common/scim-bridge-client.c.orig	2008-11-02 06:44:34.000000000 +0000
-+++ client-common/scim-bridge-client.c
-@@ -29,6 +29,10 @@
- #include <sys/un.h>
- #include <sys/wait.h>
+--- extras/immodules/client-common/scim-bridge-client.c.orig	2012-06-13 15:22:28.000000000 +0000
++++ extras/immodules/client-common/scim-bridge-client.c
+@@ -38,6 +38,11 @@
+ #include "scim-bridge-path.h"
+ #include "scim-bridge-string.h"
  
 +#ifndef SUN_LEN
-+#define SUN_LEN(x) (sizeof(*(x)) - sizeof((x)->sun_path +  strlen ((x)->sun_path))
++#define SUN_LEN(su) \
++	    (sizeof(*(su)) - sizeof((su)->sun_path) + strlen((su)->sun_path))
 +#endif
 +
- #include "scim-bridge-client.h"
- #include "scim-bridge-client-imcontext.h"
- #include "scim-bridge-client-protected.h"
-@@ -1052,7 +1056,7 @@ retval_t scim_bridge_client_open_messeng
+ /* Private data type */
+ typedef struct _IMContextListElement
+ {
+@@ -1080,7 +1085,7 @@ retval_t scim_bridge_client_open_messeng
          socket_addr.sun_family = AF_UNIX;
          strcpy (socket_addr.sun_path, scim_bridge_path_get_socket ());
  
