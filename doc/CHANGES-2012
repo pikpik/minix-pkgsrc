@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2633 2012/08/19 09:27:44 obache Exp $
+$NetBSD: CHANGES-2012,v 1.2642 2012/08/20 12:50:50 wen Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4073,3 +4073,13 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated inputmethod/scim-hangul to 0.4.0 [obache 2012-08-19]
 	Updated sysutils/ruby-notify to 0.4.0 [obache 2012-08-19]
 	Updated inputmethod/scim-pinyin to 0.5.92 [obache 2012-08-19]
+	Updated net/ocamlnet to 3.6 [wiz 2012-08-20]
+	Updated security/mit-krb5 to 1.10.3 [adam 2012-08-20]
+	Updated net/wireshark to 1.8.2 [christos 2012-08-20]
+	Updated net/gtk-vnc to 0.5.1 [ryoon 2012-08-20]
+	Updated net/vinagre to 3.4.2 [ryoon 2012-08-20]
+	Added sysutils/openxenmanager version 0.0.80 [ryoon 2012-08-20]
+	Added net/freeDiameter version 1.1.2 [wiz 2012-08-20]
+	Updated www/p5-HTML-Template-Pro to 0.9509 [wen 2012-08-20]
+	Updated devel/p5-App-cpanminus to 1.5017 [wen 2012-08-20]
+	Updated graphics/gimp to 2.8.0nb3 [wiz 2012-08-20]
