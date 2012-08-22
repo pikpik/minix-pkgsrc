@@ -1,0 +1,30 @@
+$NetBSD$
+
+--- gas/configure.tgt.orig	Mon Jun 20 13:23:21 2011
++++ gas/configure.tgt
+@@ -201,7 +201,8 @@ case ${generic_target} in
+   i386-*-freebsd[12].*)			fmt=aout em=386bsd ;;
+   i386-*-freebsd[12])			fmt=aout em=386bsd ;;
+   i386-*-freebsd* \
+-  | i386-*-kfreebsd*-gnu)		fmt=elf em=freebsd ;;
++  | i386-*-kfreebsd*-gnu \
++  | i386-*-dragonfly*)		fmt=elf em=freebsd ;;
+   i386-*-sysv*)				fmt=coff ;;
+   i386-*-sco3.2v5*coff)			fmt=coff ;;
+   i386-*-isc*)				fmt=coff ;;
+@@ -226,6 +227,7 @@ case ${generic_target} in
+   i386-*-nto-qnx*)			fmt=elf ;;
+   i386-*-*nt*)				fmt=coff em=pe ;;
+   i386-*-chaos)				fmt=elf ;;
++  i386-*-minix*)                       fmt=elf em=minix ;;
+   i386-*-rdos*)				fmt=elf ;;
+   i386-*-darwin*)			fmt=macho ;;
+ 
+@@ -417,6 +419,7 @@ case ${generic_target} in
+   *-*-aout | *-*-scout)			fmt=aout ;;
+   *-*-dragonfly*)			fmt=elf em=dragonfly ;;
+   *-*-freebsd* | *-*-kfreebsd*-gnu)	fmt=elf em=freebsd ;;
++  *-*-dragonfly*)			fmt=elf em=freebsd ;;
+   *-*-bsd*)				fmt=aout em=sun3 ;;
+   *-*-generic)				fmt=generic ;;
+   *-*-xray | *-*-hms)			fmt=coff ;;

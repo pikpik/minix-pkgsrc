@@ -1,8 +1,29 @@
-$NetBSD: distinfo,v 1.11 2012/07/23 12:24:34 jperkin Exp $
+$NetBSD$
 
 SHA1 (binutils-2.22.tar.bz2) = 65b304a0b9a53a686ce50a01173d1f40f8efe404
 RMD160 (binutils-2.22.tar.bz2) = 34cebe4cdca9480d5dc6f6b00b052c48c8ac30dc
 Size (binutils-2.22.tar.bz2) = 19973532 bytes
 SHA1 (patch-aa) = 1a127f82c807cbd1ac6fee073c618f3fb48667f6
+SHA1 (patch-bfd_aoutx.h) = f8fad2dd5b744b686eb5df3808245e0654c9ae75
+SHA1 (patch-bfd_config.bfd) = 204606bd5bb5031edad2b8d387b52cace702593c
+SHA1 (patch-bfd_configure) = 3f00c68b34b89943a9e39fba6315931f2d419802
+SHA1 (patch-bfd_configure.in) = 460e136857acbafe75fb9ceef6ccf5fc700ef844
+SHA1 (patch-bfd_elf32-i386.c) = d2bdfa0d2f79bce6a9757fa70d193d2553565d17
+SHA1 (patch-bfd_i386minix.c) = 1a930fbcc9d12088741d93a2c813a833e877752d
+SHA1 (patch-bfd_targets.c) = d8731c77261822906e4c56e2bd451e619990dd4e
+SHA1 (patch-binutils_configure) = 04db08cc00cc94bfefc7a359371d4e04e806c169
+SHA1 (patch-config.guess) = 2333815847b476688e57cf90ec21af4bb589b393
 SHA1 (patch-configure.ac) = 7bd7b90e57d850705286f2cc6464ecc45e0657c0
+SHA1 (patch-gas_app.c) = bcfcc455a7f0bf5fd5a067894d0351e1de8ef130
+SHA1 (patch-gas_config_tc-i386.h) = 3dceaadda6634e22b050234a07fc987427bccfce
+SHA1 (patch-gas_config_te-minix.h) = eb181f0e1b208d346a9d601ebc796fa073f4ed80
+SHA1 (patch-gas_configure) = c5366baa573b157c952f4a6184f91f911f3e7600
+SHA1 (patch-gas_configure.tgt) = 8ce3db003fcfc2db2912a30d61f97585d529cd02
+SHA1 (patch-gprof_configure) = 902b8992d3d27314f379c2e8845b7fe91af517b3
+SHA1 (patch-ld_Makefile.in) = e6b5db01dcd854735d4df1f6aa614cf8a3f57664
+SHA1 (patch-ld_configure) = f352e4dc4bfde339944a7c0d1176e8ab209ad49c
+SHA1 (patch-ld_configure.tgt) = 506bd4188de00b4852ee9221f517d25d8a39b9a9
+SHA1 (patch-ld_emulparams_elf__i386__minix.sh) = bcc8e9ad69e5387c5f2db971a1cd5ec914276ef0
+SHA1 (patch-ld_emulparams_elf__minix.sh) = a6b7ea1a76bb8b346945a35c71a5ef4db0ee1cdb
+SHA1 (patch-ld_emulparams_i386minix.sh) = 37f1326901cb1d5607bfff67aafd5ec86742d47c
 SHA1 (patch-libiberty_Makefile.in) = 380a24a9b6b583002a7cf7b2490e3373e50c6282

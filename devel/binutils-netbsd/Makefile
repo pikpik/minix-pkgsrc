@@ -38,8 +38,12 @@ INSTALLATION_DIRS=	gnu/bin gnu/man/man1
 #
 PLIST_VARS+=	gprof
 .include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} != "IRIX"
+.if ${OPSYS} != "IRIX" &&  ${OPSYS} != "Minix"
 PLIST.gprof=	yes
+.endif
+
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--enable-shared
 .endif
 
 .include "../../mk/compiler.mk"
