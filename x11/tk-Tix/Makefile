@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2009/07/07 18:22:02 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2011/07/02 18:06:50 dholland Exp $
 #
 
 DISTNAME=	tix8.2.0b1
 PKGNAME=	tk-Tix-8.2.0b1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	x11 tcl tk
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tixlibrary/}
 

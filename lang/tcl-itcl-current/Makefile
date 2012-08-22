@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2010/02/04 01:32:00 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2010/02/11 13:58:05 joerg Exp $
 
 DISTNAME=	tcl-itcl-20040920
 PKGNAME=	${DISTNAME:S/itcl/itcl-current/}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 # 3.3RC (2005) on sourceforge

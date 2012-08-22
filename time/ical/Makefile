@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2008/02/03 19:36:33 markd Exp $
+# $NetBSD: Makefile,v 1.21 2009/07/07 20:12:01 joerg Exp $
 
 DISTNAME=	ical-2.3.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	time
 MASTER_SITES=	http://www.annexia.org/_file/
 

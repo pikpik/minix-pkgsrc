@@ -1,8 +1,10 @@
 $NetBSD$
 
---- unix/tclUnixFCmd.c.orig	2007-04-29 04:19:51.000000000 +0200
+Carried over from TCL 8.4
+
+--- unix/tclUnixFCmd.c.orig	2012-07-16 11:57:06.000000000 +0000
 +++ unix/tclUnixFCmd.c
-@@ -631,6 +631,14 @@ TclpDeleteFile(path)
+@@ -660,6 +660,14 @@ TclpDeleteFile(
   *---------------------------------------------------------------------------
   */
  
@@ -14,6 +16,6 @@ $NetBSD$
 +    return DoCreateDirectory(path);
 +}
 +
- int 
- TclpObjCreateDirectory(pathPtr)
-     Tcl_Obj *pathPtr;
+ int
+ TclpObjCreateDirectory(
+     Tcl_Obj *pathPtr)

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2012/06/14 07:45:18 sbd Exp $
+# $NetBSD: Makefile,v 1.31 2012/08/12 01:15:00 marino Exp $
 #
 
 DISTNAME=		openmsx-0.6.2
-PKGREVISION=		9
+PKGREVISION=		10
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=openmsx/}
 

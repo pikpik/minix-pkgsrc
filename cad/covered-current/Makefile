@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:15 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2011/06/19 05:33:45 dholland Exp $
 #
 
 DISTNAME=	covered-${SNAPDATE}
 PKGNAME=	covered-current-${SNAPDATE}
+PKGREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=covered/}
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2007/03/21 19:44:10 jwise Exp $
+# $NetBSD: Makefile,v 1.16 2007/12/11 22:41:54 heinz Exp $
 #
 
 DISTNAME=	ExpectPy-1.9b1
 PKGNAME=	${PYPKGPREFIX}-expect-1.9b1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=expectpy/}
 
