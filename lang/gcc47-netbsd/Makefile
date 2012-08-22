@@ -52,12 +52,17 @@ BOOT_LDFLAGS=		-static-libstdc++ -static-libgcc ${LDFLAGS_FOR_TARGET}
 ## For target librarys and libjava programs.
 CONFIGURE_ENV+=		LDFLAGS_FOR_TARGET=${LDFLAGS_FOR_TARGET:Q}
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--enable-languages=c\ c++
+CONFIGURE_ARGS+=	--disable-libssp
+.else
 CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
 CONFIGURE_ARGS+=	--enable-shared
-CONFIGURE_ARGS+=	--enable-long-long
-CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--enable-libssp
 CONFIGURE_ARGS+=	--enable-threads=posix
+.endif
+CONFIGURE_ARGS+=	--enable-long-long
+CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--with-boot-ldflags=${BOOT_LDFLAGS:Q}
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--with-gnu-ld --with-ld=/usr/bin/ld
@@ -100,6 +105,21 @@ CONFIGURE_ARGS+=	--with-gnu-as --with-as=${PREFIX}/gnu/bin/as
 pre-configure:
 	${RUN} cd ${WRKSRC} && ${MKDIR} ${OBJDIR}
 
+.if ${OPSYS} == "Minix"
+	${CP} ${FILESDIR}/minix.h ${WRKSRC}/gcc/config/
+	${CP} ${FILESDIR}/minix-spec.h ${WRKSRC}/gcc/config/
+	${CP} ${FILESDIR}/i386-minix.h ${WRKSRC}/gcc/config/i386/minix.h
+	${CP} ${FILESDIR}/gcov-minix-fs-wrapper.h ${WRKSRC}/libgcc/
+
+do-configure:
+	cd ${WRKDIR}/build; ${SETENV} ${CONFIGURE_ENV} ${CONFIG_SHELL} ${WRKSRC}/configure ${CONFIGURE_ARGS}
+
+do-build:
+	(cd ${WRKDIR}/build && ${SETENV} ${MAKE_ENV} ${GMAKE} -j${MAKE_JOBS:U1:Q} )
+
+do-install:
+	(cd ${WRKDIR}/build && ${SETENV} ${MAKE_ENV} ${GMAKE} install DESTDIR=${DESTDIR})
+.endif
 TEST_TARGET=	-k check || ${TRUE}
 pre-test:
 	${RUN} 							\
