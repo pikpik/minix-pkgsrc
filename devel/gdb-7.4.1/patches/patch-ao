@@ -1,0 +1,76 @@
+$NetBSD$
+
+--- gdb/infrun.c.orig	Fri Jan  6 04:43:17 2012
++++ gdb/infrun.c
+@@ -2927,7 +2927,13 @@ adjust_pc_after_break (struct execution_control_state 
+   if (ecs->ws.kind != TARGET_WAITKIND_STOPPED)
+     return;
+ 
+-  if (ecs->ws.value.sig != TARGET_SIGNAL_TRAP)
++  /*
++   * In MINIX, TARGET_SIGNAL_EMT is received after executing an
++   * 'int 0x3' (software break) on the i386 architecture, so we
++   * must check this here
++   */
++  if (ecs->ws.value.sig != TARGET_SIGNAL_TRAP
++	&& ecs->ws.value.sig != TARGET_SIGNAL_EMT)
+     return;
+ 
+   /* In reverse execution, when a breakpoint is hit, the instruction
+@@ -3682,6 +3688,20 @@ handle_inferior_event (struct execution_control_state 
+       if (debug_infrun)
+         fprintf_unfiltered (gdb_stdlog, "infrun: TARGET_WAITKIND_STOPPED\n");
+       ecs->event_thread->suspend.stop_signal = ecs->ws.value.sig;
++      struct regcache *regcache = get_thread_regcache (ecs->ptid);
++      stop_pc = regcache_read_pc (regcache);
++
++      /* Change SIGEMT to SIGTRAP */
++      if(breakpoint_inserted_here_p (get_regcache_aspace (regcache), stop_pc)
++              && (ecs->ws.value.sig == TARGET_SIGNAL_ILL
++                  || ecs->ws.value.sig == TARGET_SIGNAL_SEGV
++                  || ecs->ws.value.sig == TARGET_SIGNAL_EMT))
++      {
++          if (debug_infrun)
++              fprintf_unfiltered (gdb_stdlog,
++                      "infrun: Treating signal as SIGTRAP\n");
++          ecs->ws.value.sig = TARGET_SIGNAL_TRAP;
++      }
+       break;
+ 
+     case TARGET_WAITKIND_NO_HISTORY:
+@@ -4021,7 +4041,7 @@ handle_inferior_event (struct execution_control_state 
+   if (stopped_by_watchpoint
+       && (target_have_steppable_watchpoint
+ 	  || gdbarch_have_nonsteppable_watchpoint (gdbarch)))
+-    {
++  {
+       /* At this point, we are stopped at an instruction which has
+          attempted to write to a piece of memory under control of
+          a watchpoint.  The instruction hasn't actually executed
+@@ -4337,6 +4357,15 @@ process_event_stop_test:
+                                 "infrun: signal arrived while stepping over "
+                                 "breakpoint\n");
+ 
++          /* XXX: On MINIX, when resuming execution of the inferior, gdb
++	     receives signal 28, ignore it for now (Note: It might 
++	     have to do with the fact that tcsetpgrp doesn't work in 
++	     MINIX) */
++#ifdef _MINIX
++          if (ecs->event_thread->suspend.stop_signal == 28)
++	    goto temp_solution;
++#endif
++
+ 	  insert_hp_step_resume_breakpoint_at_frame (frame);
+ 	  ecs->event_thread->step_after_step_resume_breakpoint = 1;
+ 	  /* Reset trap_expected to ensure breakpoints are re-inserted.  */
+@@ -4384,6 +4413,10 @@ process_event_stop_test:
+       return;
+     }
+ 
++#ifdef _MINIX
++temp_solution:
++#endif
++ 
+   /* Handle cases caused by hitting a breakpoint.  */
+   {
+     CORE_ADDR jmp_buf_pc;

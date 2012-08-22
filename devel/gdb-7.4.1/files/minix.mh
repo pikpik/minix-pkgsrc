@@ -1,0 +1,5 @@
+# Host: Minix
+NATDEPFILES= minix-nat.o fork-child.o inf-ptrace.o i386minix-nat.o \
+	     gcore.o
+
+NAT_FILE= nm-minix.h

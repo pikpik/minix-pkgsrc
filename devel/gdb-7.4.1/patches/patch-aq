@@ -1,0 +1,45 @@
+$NetBSD$
+
+--- gdb/ser-tcp.c.orig	Fri Jan  6 04:43:29 2012
++++ gdb/ser-tcp.c
+@@ -56,6 +56,10 @@
+ #include "gdb_string.h"
+ #include "gdb_select.h"
+ 
++#ifndef FIONBIO
++#include <fcntl.h>
++#endif
++
+ #ifndef HAVE_SOCKLEN_T
+ typedef int socklen_t;
+ #endif
+@@ -216,8 +220,13 @@ net_open (struct serial *scb, const char *name)
+     return -1;
+   
+   /* Set socket nonblocking.  */
++#ifdef FIONBIO
+   ioarg = 1;
+   ioctl (scb->fd, FIONBIO, &ioarg);
++#else
++  ioarg = fcntl(scb->fd, F_GETFL, 0);
++  fcntl(scb->fd, F_SETFL, ioarg | O_NONBLOCK);
++#endif
+ 
+   /* Use Non-blocking connect.  connect() will return 0 if connected
+      already.  */
+@@ -306,9 +315,14 @@ net_open (struct serial *scb, const char *name)
+   } 
+ 
+   /* Turn off nonblocking.  */
++#ifdef FIONBIO
+   ioarg = 0;
+   ioctl (scb->fd, FIONBIO, &ioarg);
+-
++#else
++  ioarg = fcntl(scb->fd, F_GETFL, 0);
++  fcntl(scb->fd, F_SETFL, ioarg & ~O_NONBLOCK);
++#endif
++ 
+   if (use_udp == 0)
+     {
+       /* Disable Nagle algorithm.  Needed in some cases.  */

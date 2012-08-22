@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- gdb/eval.c.orig	Fri Jan  6 04:43:11 2012
++++ gdb/eval.c
+@@ -2340,7 +2340,7 @@ evaluate_subexp_standard (struct type *expect_type,
+ 
+     multi_f77_subscript:
+       {
+-	LONGEST subscript_array[MAX_FORTRAN_DIMS];
++	LONGEST subscript_array[MAX_FORTRAN_DIMS] = {0};
+ 	int ndimensions = 1, i;
+ 	struct value *array = arg1;
+ 

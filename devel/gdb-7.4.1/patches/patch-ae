@@ -1,0 +1,16 @@
+$NetBSD$
+
+--- bfd/elf32-i386.c.orig	Fri Oct 21 19:37:14 2011
++++ bfd/elf32-i386.c
+@@ -4997,6 +4997,11 @@ elf_i386_add_symbol_hook (bfd * abfd,
+ #undef	ELF_OSABI
+ #define	ELF_OSABI			ELFOSABI_FREEBSD
+ 
++#undef	TARGET_LITTLE_SYM
++#define	TARGET_LITTLE_SYM		bfd_elf32_i386_minix_vec
++#undef	TARGET_LITTLE_NAME
++#define	TARGET_LITTLE_NAME		"elf32-i386-minix"
++
+ /* The kernel recognizes executables as valid only if they carry a
+    "FreeBSD" label in the ELF header.  So we put this label on all
+    executables and (for simplicity) also all other object files.  */

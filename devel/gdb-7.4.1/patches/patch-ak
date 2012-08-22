@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- gdb/defs.h.orig	Fri Jan  6 04:43:06 2012
++++ gdb/defs.h
+@@ -897,6 +897,7 @@ enum gdb_osabi
+   GDB_OSABI_HURD,
+   GDB_OSABI_SOLARIS,
+   GDB_OSABI_OSF1,
++  GDB_OSABI_MINIX,
+   GDB_OSABI_LINUX,
+   GDB_OSABI_FREEBSD_AOUT,
+   GDB_OSABI_FREEBSD_ELF,

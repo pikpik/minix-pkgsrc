@@ -1,0 +1,22 @@
+$NetBSD$
+
+--- gdb/Makefile.in.orig	Fri Jan  6 04:43:01 2012
++++ gdb/Makefile.in
+@@ -26,7 +26,7 @@ libdir = @libdir@
+ tooldir = $(libdir)/$(target_alias)
+ 
+ datadir = @datadir@
+-localedir = @localedir@
++localedir = /usr/pkg/share/locale
+ mandir = @mandir@
+ man1dir = $(mandir)/man1
+ man2dir = $(mandir)/man2
+@@ -162,7 +162,7 @@ GDB_WARN_CFLAGS_NO_FORMAT = `echo " $(GDB_WARN_CFLAGS)
+ RDYNAMIC = @RDYNAMIC@
+ 
+ # Where is the INTL library?  Typically in ../intl.
+-INTL = @LIBINTL@
++INTL = -L${PREFIX}/lib -R${PREFIX}/lib -lintl
+ INTL_DEPS = @LIBINTL_DEP@
+ INTL_CFLAGS = @INCINTL@
+ 
