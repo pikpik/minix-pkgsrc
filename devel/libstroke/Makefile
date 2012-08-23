@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/05/28 21:10:52 zafer Exp $
+# $NetBSD: Makefile,v 1.24 2012/08/21 23:49:20 marino Exp $
 #
 
 DISTNAME=		libstroke-0.5.1
@@ -21,6 +21,5 @@ CONFIGURE_ENV+=		ac_cv_path_GTK_CONFIG=no
 
 BUILDLINK_DEPMETHOD.libX11?=	build
 
-.include "../../lang/tcl/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
