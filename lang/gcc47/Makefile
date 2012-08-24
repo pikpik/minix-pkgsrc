@@ -108,7 +108,6 @@ pre-configure:
 	${CP} ${FILESDIR}/minix.h ${WRKSRC}/gcc/config/
 	${CP} ${FILESDIR}/minix-spec.h ${WRKSRC}/gcc/config/
 	${CP} ${FILESDIR}/i386-minix.h ${WRKSRC}/gcc/config/i386/minix.h
-	${CP} ${FILESDIR}/gcov-minix-fs-wrapper.h ${WRKSRC}/libgcc/
 .endif
 
 TEST_TARGET=	-k check || ${TRUE}
@@ -141,4 +140,6 @@ GENERATE_PLIST+= \
 	cd ${DESTDIR}${PREFIX} && 					\
 	${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print | ${SORT} ;
 
+.include "../../mk/dlopen.buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
