@@ -10,7 +10,6 @@ SHA1 (patch-bfd_configure.in) = 460e136857acbafe75fb9ceef6ccf5fc700ef844
 SHA1 (patch-bfd_elf32-i386.c) = d2bdfa0d2f79bce6a9757fa70d193d2553565d17
 SHA1 (patch-bfd_targets.c) = d8731c77261822906e4c56e2bd451e619990dd4e
 SHA1 (patch-configure.ac) = 7bd7b90e57d850705286f2cc6464ecc45e0657c0
-SHA1 (patch-gas_app.c) = bcfcc455a7f0bf5fd5a067894d0351e1de8ef130
 SHA1 (patch-gas_config_tc-i386.h) = 3dceaadda6634e22b050234a07fc987427bccfce
 SHA1 (patch-gas_config_te-minix.h) = eb181f0e1b208d346a9d601ebc796fa073f4ed80
 SHA1 (patch-gas_configure) = 5954c777f00397be7a69c099ffbfa1c57330d15d
