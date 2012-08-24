@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.632 2012/08/04 14:32:13 drochner Exp $
+# $NetBSD: Makefile,v 1.633 2012/08/23 18:24:25 drochner Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -78,6 +78,7 @@ SUBDIR+=	dxsamples
 SUBDIR+=	edje
 SUBDIR+=	enblend-enfuse
 SUBDIR+=	eog
+SUBDIR+=	eog3
 SUBDIR+=	eog-plugins
 SUBDIR+=	eog-plugins-map
 SUBDIR+=	epeg
