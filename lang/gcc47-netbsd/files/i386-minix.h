@@ -22,19 +22,6 @@ along with GCC; see the file COPYING.  If not, write to
 the Free Software Foundation, 51 Franklin Street, Fifth Floor,
 Boston, MA 02110-1301, USA.  */
 
-#undef  MINIX_TARGET_CPU_CPP_BUILTINS
-#define MINIX_TARGET_CPU_CPP_BUILTINS()          \
-  do                                            \
-    {                                           \
-		builtin_define_with_int_value ("_EM_WSIZE", 4);	\
-		builtin_define_with_int_value ("_EM_PSIZE", 4);	\
-		builtin_define_with_int_value ("_EM_SSIZE", 2);	\
-		builtin_define_with_int_value ("_EM_LSIZE", 4);	\
-		builtin_define_with_int_value ("_EM_FSIZE", 4);	\
-		builtin_define_with_int_value ("_EM_DSIZE", 8);	\
-    }                                           \
-  while (0)
-
 /* #define TARGET_VERSION fprintf (stderr, " (i386 MINIX/ELF)"); */
 
 /* Override the default comment-starter of "/".  */

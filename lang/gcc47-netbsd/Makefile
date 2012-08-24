@@ -57,10 +57,10 @@ CONFIGURE_ARGS+=	--enable-languages=c\ c++
 CONFIGURE_ARGS+=	--disable-libssp
 .else
 CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
-CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-libssp
 CONFIGURE_ARGS+=	--enable-threads=posix
 .endif
+CONFIGURE_ARGS+=	--enable-shared
 CONFIGURE_ARGS+=	--enable-long-long
 CONFIGURE_ARGS+=	--with-local-prefix=${GCC_PREFIX:Q}
 CONFIGURE_ARGS+=	--with-boot-ldflags=${BOOT_LDFLAGS:Q}

@@ -2,15 +2,6 @@ $NetBSD$
 
 --- ld/Makefile.in.orig	Fri Jul 22 20:22:37 2011
 +++ ld/Makefile.in
-@@ -319,7 +319,7 @@ install_sh = @install_sh@
- installed_linker = @installed_linker@
- libdir = @libdir@
- libexecdir = @libexecdir@
--localedir = @localedir@
-+localedir = /usr/pkg/share/locale
- localstatedir = @localstatedir@
- mandir = @mandir@
- mkdir_p = @mkdir_p@
 @@ -604,6 +604,7 @@ ALL_EMULATION_SOURCES = \
  	ei386linux.c \
  	ei386lynx.c \
