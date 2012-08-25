@@ -12,7 +12,9 @@ PKG_SUGGESTED_OPTIONS+= nls
 .elif ${OPSYS} == "SunOS"
 PKG_SUGGESTED_OPTIONS+=	gcc-inplace-math
 .else
+.if ${OPSYS} != "Minix"
 PKG_SUGGESTED_OPTIONS+= gcc-java
+.endif
 .endif
 
 ###
