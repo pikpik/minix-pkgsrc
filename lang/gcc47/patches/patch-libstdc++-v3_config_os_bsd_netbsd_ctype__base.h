@@ -1,4 +1,4 @@
-$NetBSD: patch-libstdc++-v3_config_os_bsd_netbsd_ctype__base.h,v 1.1 2012/06/08 15:42:29 joerg Exp $
+$NetBSD$
 
 --- libstdc++-v3/config/os/bsd/netbsd/ctype_base.h.orig	2012-06-05 12:36:50.000000000 +0000
 +++ libstdc++-v3/config/os/bsd/netbsd/ctype_base.h

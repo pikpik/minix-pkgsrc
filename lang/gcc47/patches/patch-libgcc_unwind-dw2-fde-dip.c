@@ -1,4 +1,4 @@
-$NetBSD: patch-libgcc_unwind-dw2-fde-dip.c,v 1.1 2012/06/23 22:13:02 marino Exp $
+$NetBSD$
 
 Add dl_iterate_phdr error handling support for all BSDs.  The NetBSD and
 OpenBSD code will not run until dl_iterate_phdr detection in the configure

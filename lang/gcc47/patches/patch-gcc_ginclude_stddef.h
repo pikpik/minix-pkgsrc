@@ -1,4 +1,4 @@
-$NetBSD: patch-gcc_ginclude_stddef.h,v 1.2 2012/06/23 22:13:02 marino Exp $
+$NetBSD: patch-gcc_ginclude_stddef.h,v 1.1.1.1 2012/04/16 04:27:18 sbd Exp $
 
 Fix build on NetBSD i386/amd64 after the ansi.h header include protection
 name change.

@@ -1,4 +1,4 @@
-$NetBSD: patch-gcc_gcc.c,v 1.2 2012/04/27 04:53:03 sbd Exp $
+$NetBSD: patch-gcc_gcc.c,v 1.1.1.1 2012/04/16 04:27:18 sbd Exp $
 
 Add %M spec string.
 

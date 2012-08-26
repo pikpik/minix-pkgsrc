@@ -1,4 +1,4 @@
-$NetBSD: patch-libgcc_config.host,v 1.1 2012/06/23 22:13:02 marino Exp $
+$NetBSD$
 
 --- libgcc/config.host.orig	Mon Feb 20 21:19:55 2012
 +++ libgcc/config.host

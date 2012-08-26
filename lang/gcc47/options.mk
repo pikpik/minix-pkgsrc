@@ -149,16 +149,11 @@ MAKE_ENV+=		ac_cv_prog_JAR=no
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../lang/python/application.mk"
-.include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/java-env.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mgcc-go)
 LANGS+=			go
-.endif
-
-.if !empty(PKG_OPTIONS:Mgcc-java) || !empty(PKG_OPTIONS:Mgcc-go)
-.include "../../mk/pthread.buildlink3.mk"
 .endif
 
 .if !empty(PKG_OPTIONS:Mgcc-fortran)

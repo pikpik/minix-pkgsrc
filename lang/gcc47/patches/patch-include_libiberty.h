@@ -1,4 +1,4 @@
-$NetBSD: patch-include_libiberty.h,v 1.1 2012/06/23 22:13:02 marino Exp $
+$NetBSD$
 
 --- include/libiberty.h.orig	Wed Sep 28 19:04:30 2011
 +++ include/libiberty.h

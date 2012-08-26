@@ -1,4 +1,4 @@
-#if 0 /* $NetBSD: values.c,v 1.1.1.1 2012/04/16 04:27:18 sbd Exp $ */
+#if 0 /* $NetBSD: values.c,v 1.1 2011/10/13 10:39:45 hans Exp $ */
 #
 # This is Solaris x86 specific GCC run-time environment patch, which
 # makes it possible to reliably deploy .init snippets. Trouble is that

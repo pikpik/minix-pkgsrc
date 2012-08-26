@@ -1,4 +1,4 @@
-$NetBSD: patch-libjava_configure,v 1.1.1.1 2012/04/16 04:27:18 sbd Exp $
+$NetBSD$
 
 Avoid a reference to the wrapped make in the pkgsrc work directory from
 showing up in an installed file.

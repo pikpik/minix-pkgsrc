@@ -1,4 +1,4 @@
-$NetBSD: patch-libgcc_config_i386_dragonfly-unwind.h,v 1.1 2012/06/23 22:13:02 marino Exp $
+$NetBSD$
 
 --- libgcc/config/i386/dragonfly-unwind.h.orig	2012-06-22 10:35:29.000000000 +0000
 +++ libgcc/config/i386/dragonfly-unwind.h

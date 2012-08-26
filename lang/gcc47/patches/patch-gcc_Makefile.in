@@ -1,4 +1,4 @@
-$NetBSD: patch-gcc_Makefile.in,v 1.1.1.1 2012/04/16 04:27:18 sbd Exp $
+$NetBSD$
 
 Add gcc libdir to a programs rpath so that _this gcc's_ support librarys
 are found.

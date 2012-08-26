@@ -1,4 +1,4 @@
-$NetBSD: patch-libstdc++-v3_config_os_bsd_dragonfly_ctype__base.h,v 1.1 2012/06/23 22:13:02 marino Exp $
+$NetBSD$
 
 --- libstdc++-v3/config/os/bsd/dragonfly/ctype_base.h.orig	2012-06-22 10:35:30.000000000 +0000
 +++ libstdc++-v3/config/os/bsd/dragonfly/ctype_base.h
