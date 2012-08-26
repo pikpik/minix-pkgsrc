@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: mksandbox,v 1.55 2012/07/03 12:14:13 jperkin Exp $
+# $NetBSD: mksandbox,v 1.56 2012/07/08 21:25:44 jperkin Exp $
 #
 #
 # Copyright (c) 2002 Alistair G. Crooks.  All rights reserved.

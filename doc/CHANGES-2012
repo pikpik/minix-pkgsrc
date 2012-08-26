@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2673 2012/08/25 12:35:06 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.2684 2012/08/26 13:47:28 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4159,6 +4159,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated databases/postgresql91-upgrade to 9.1.5 [adam 2012-08-23]
 	Updated graphics/eog3 to 3.4.3 [prlw1 2012-08-23]
 	Updated textproc/mdoclint to 1.17 [wiz 2012-08-23]
+	Updated news/inn to 2.5.3 [spz 2012-08-23]
 	Updated editors/TeXmacs to 1.0.6.15nb12 [dholland 2012-08-24]
 	Updated games/onscripter to 20120721 [tsutsui 2012-08-24]
 	Updated x11/xcursorgen to 1.0.5 [wiz 2012-08-24]
@@ -4168,3 +4169,17 @@ Changes to the packages collection and infrastructure in 2012:
 	Added net/iana-etc version 1.230 [christos 2012-08-25]
 	Updated print/acroread9 to 9.5.1nb1 [wiz 2012-08-25]
 	Updated sysutils/sysbuild to 2.3 [jmmv 2012-08-25]
+	Updated emulators/openmsx to 0.9.0 [marino 2012-08-26]
+	Updated pkgtools/pkg_online-client to 0.13.0nb1 [cheusov 2012-08-26]
+	Added pkgtools/mksandbox version 1.0 [wiz 2012-08-26]
+	Added textproc/tcl-tDOM version 0.8.3 [wiz 2012-08-26]
+	Updated www/apache24 to 2.4.3 [ryoon 2012-08-26]
+	Updated misc/libreoffice3-bin to 3.6.0 [ryoon 2012-08-26]
+	Updated fonts/umefont-ttf to 0.442 [ryoon 2012-08-26]
+	Updated www/py-django-south to 0.7.6 [adam 2012-08-26]
+	Updated www/py-django-mptt to 0.5.4 [adam 2012-08-26]
+	Updated www/py-django-sekizai to 0.6.1 [adam 2012-08-26]
+	Added www/py-django-reversion version 1.6.2 [adam 2012-08-26]
+	Updated www/py-django-cms to 2.3 [adam 2012-08-26]
+	Updated pkgtools/pkglint to 4.123 [wiz 2012-08-26]
+	Added chat/irssi-xmpp version 0.52 [wiz 2012-08-26]
