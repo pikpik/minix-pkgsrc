@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2011/10/09 10:02:44 cheusov Exp $
+# $NetBSD: Makefile,v 1.9 2012/07/22 11:02:40 cheusov Exp $
 
-DISTNAME=		dictem-1.0.3
+DISTNAME=		dictem-1.0.4
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
 CATEGORIES=		textproc editors
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=dictem/} \

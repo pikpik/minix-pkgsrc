@@ -1,4 +1,4 @@
-$NetBSD: patch-ac,v 1.9 2012/01/08 12:35:45 ryoon Exp $
+$NetBSD: patch-ac,v 1.10 2012/08/12 07:20:15 ryoon Exp $
 
 --- zfuncs.h.orig	2012-08-04 11:58:30.000000000 +0000
 +++ zfuncs.h
@@ -7,7 +7,7 @@ $NetBSD: patch-ac,v 1.9 2012/01/08 12:35:45 ryoon Exp $
  #include <errno.h>
  #include <signal.h>
 +#include <sys/param.h>
-+#if defined (__linux__) || (defined (__NetBSD__) && (__NetBSD_Version__ >= 699000000))
++#if defined (HAVE_EXECINFO_H)
  #include <execinfo.h>
 +#endif
 +#include <sys/wait.h>
