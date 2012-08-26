@@ -1,4 +1,4 @@
-$NetBSD: patch-libiberty_Makefile.in,v 1.1 2012/07/23 12:24:34 jperkin Exp $
+$NetBSD$
 
 Disable multilib.
 

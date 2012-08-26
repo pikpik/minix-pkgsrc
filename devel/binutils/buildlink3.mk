@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.24 2012/07/23 12:24:34 jperkin Exp $
+# $NetBSD: buildlink3.mk,v 1.23 2009/03/20 19:24:10 joerg Exp $
 
 BUILDLINK_TREE+=	binutils
 

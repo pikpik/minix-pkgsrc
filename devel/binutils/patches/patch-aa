@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.5 2012/07/23 12:24:34 jperkin Exp $
+$NetBSD: patch-aa,v 1.4 2007/05/29 12:25:03 martti Exp $
 
 Remove etc
 

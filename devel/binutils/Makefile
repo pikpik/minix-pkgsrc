@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2012/07/27 12:34:03 jperkin Exp $
+# $NetBSD: Makefile,v 1.43 2012/07/23 12:24:34 jperkin Exp $
 
 DISTNAME=	binutils-2.22
 CATEGORIES=	devel

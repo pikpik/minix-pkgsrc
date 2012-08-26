@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.common,v 1.17 2012/07/23 12:24:34 jperkin Exp $
+@comment $NetBSD: PLIST.common,v 1.16 2012/06/02 11:54:38 cheusov Exp $
 ${MACHINE_GNU_PLATFORM}/bin/ar
 ${MACHINE_GNU_PLATFORM}/bin/as
 ${MACHINE_GNU_PLATFORM}/bin/ld

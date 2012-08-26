@@ -1,4 +1,4 @@
-# $NetBSD: builtin.mk,v 1.6 2007/08/13 12:55:22 rillig Exp $
+# $NetBSD: builtin.mk,v 1.5 2007/05/29 12:25:03 martti Exp $
 
 BINUTILS_PREFIX?=	/usr
 

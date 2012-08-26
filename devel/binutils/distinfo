@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.10 2011/08/22 08:51:46 wiz Exp $
 
 SHA1 (binutils-2.22.tar.bz2) = 65b304a0b9a53a686ce50a01173d1f40f8efe404
 RMD160 (binutils-2.22.tar.bz2) = 34cebe4cdca9480d5dc6f6b00b052c48c8ac30dc
