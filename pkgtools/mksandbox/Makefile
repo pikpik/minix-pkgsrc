@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/08/26 10:31:23 wiz Exp $
 
 DISTNAME=	mksandbox-1.0
 CATEGORIES=	pkgtools
@@ -8,7 +8,7 @@ DISTFILES=	# none
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.NetBSD.org/docs/pkgsrc/bulk.html#setting-up-a-sandbox
 COMMENT=	Tool for creating sandboxes
-LICENSE=	original-bsd
+LICENSE=	2-clause-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 

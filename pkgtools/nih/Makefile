@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2011/11/22 21:03:07 cheusov Exp $
+# $NetBSD: Makefile,v 1.15 2012/03/09 19:05:31 cheusov Exp $
 
-DISTNAME=	pkgnih-0.10.0
-PKGREVISION=	2
+DISTNAME=	pkgnih-0.10.1
 PKGNAME=	${DISTNAME:S/pkgnih/nih/}
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/nih/ \
