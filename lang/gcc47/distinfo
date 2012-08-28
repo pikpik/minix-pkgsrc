@@ -1,8 +1,5 @@
 $NetBSD: distinfo,v 1.7 2012/06/23 22:13:02 marino Exp $
 
-SHA1 (ecj-4.5.jar) = 58c1d79c64c8cd718550f32a932ccfde8d1e6449
-RMD160 (ecj-4.5.jar) = d3f4da657f086b6423f74e93f001132f4855368a
-Size (ecj-4.5.jar) = 1470676 bytes
 SHA1 (gcc-4.7.0.tar.bz2) = 03b8241477a9f8a34f6efe7273d92b9b6dd9fe82
 RMD160 (gcc-4.7.0.tar.bz2) = 4ed660b281cdb9bcf98f5c2cf2da105c71db5be4
 Size (gcc-4.7.0.tar.bz2) = 82518546 bytes
@@ -19,8 +16,6 @@ SHA1 (patch-gcc_fortran_f95-lang.c) = 06470dbee79f8c762675d3060a870b7dd9ba38f8
 SHA1 (patch-gcc_gcc.c) = f23ddf1ad4decd086dd41a70046b4a870a39516f
 SHA1 (patch-gcc_ginclude_stddef.h) = 87d7c2ff4400ad0719b2351d2f4c4b05bd257db3
 SHA1 (patch-include_libiberty.h) = 02c5545d15c004b4c23d15680a00ad3b4a1e2b36
-SHA1 (patch-libcpp_charset.c) = d8e37c49ab9672e527087824dc8159292f26be47
-SHA1 (patch-libcpp_internal.h) = 03ea059f54acc1f06eca787151049090665b6122
 SHA1 (patch-libgcc_config.host) = 282f027974a99612da158d8bf66740e222d28f9a
 SHA1 (patch-libgcc_config_i386_dragonfly-unwind.h) = 9d77252dd982495e90f95b82706bab29e581df9f
 SHA1 (patch-libgcc_crtstuff.c) = 88500ea895cd683608f8f2b7177149f11947e3b4

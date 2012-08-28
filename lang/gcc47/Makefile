@@ -55,6 +55,7 @@ CONFIGURE_ENV+=		LDFLAGS_FOR_TARGET=${LDFLAGS_FOR_TARGET:Q}
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+=	--enable-languages=c\ c++
 CONFIGURE_ARGS+=	--disable-libssp
+CPPFLAGS+=		-DST_SIZE_OFF_T=1
 .else
 CONFIGURE_ARGS+=	--enable-languages=${LANGS:Q}
 CONFIGURE_ARGS+=	--enable-libssp
