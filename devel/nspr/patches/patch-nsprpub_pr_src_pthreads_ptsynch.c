@@ -1,8 +1,8 @@
-$NetBSD: patch-nsprpub_pr_src_pthreads_ptsynch.c,v 1.1 2012/01/07 18:47:39 marino Exp $
+$NetBSD: patch-nsprpub_pr_src_pthreads_ptsynch.c,v 1.1 2012/04/18 20:57:33 ryoon Exp $
 
---- nsprpub/pr/src/pthreads/ptsynch.c.orig	2011-09-02 20:15:44.000000000 +0000
+--- nsprpub/pr/src/pthreads/ptsynch.c.orig	2012-03-06 13:14:21.000000000 +0000
 +++ nsprpub/pr/src/pthreads/ptsynch.c
-@@ -842,7 +842,7 @@ PR_IMPLEMENT(PRStatus) PR_DeleteSemaphor
+@@ -810,7 +810,7 @@ PR_IMPLEMENT(PRStatus) PR_DeleteSemaphor
   */
  #if (defined(__GNU_LIBRARY__) && !defined(_SEM_SEMUN_UNDEFINED)) \
      || defined(FREEBSD) || defined(OPENBSD) || defined(BSDI) \

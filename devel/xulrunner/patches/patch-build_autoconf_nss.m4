@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-build_autoconf_nss.m4,v 1.1 2012/03/06 12:34:09 ryoon Exp $
 
---- build/autoconf/nss.m4.orig	2012-02-16 06:40:24.000000000 +0000
+--- build/autoconf/nss.m4.orig	2012-08-08 20:19:40.000000000 +0000
 +++ build/autoconf/nss.m4
 @@ -22,18 +22,18 @@ AC_ARG_WITH(nss-exec-prefix,
  	if test -n "$nss_config_exec_prefix"; then
