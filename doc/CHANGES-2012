@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2697 2012/08/27 15:48:10 adam Exp $
+$NetBSD: CHANGES-2012,v 1.2703 2012/08/27 22:22:01 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4209,3 +4209,10 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated editors/vim-xaw to 7.3.524 [morr 2012-08-27]
 	Updated databases/py-ldap to 2.4.10 [adam 2012-08-27]
 	Updated databases/phpmyadmin to 3.5.2.2nb1 [tron 2012-08-27]
+	Updated editors/vim-share to 7.3.638 [morr 2012-08-27]
+	Updated devel/mr to 1.13 [schmonz 2012-08-27]
+	Updated www/ikiwiki to 3.20120725 [schmonz 2012-08-27]
+	Updated graphics/geeqie to 1.1 [wiz 2012-08-27]
+	Updated devel/ccache to 3.1.8 [wiz 2012-08-27]
+	Updated editors/emacs24 to 24.2 [mef 2012-08-28]
+	Updated editors/emacs24-nox11 to 24.2 [mef 2012-08-28]

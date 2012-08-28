@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2011/11/26 04:39:35 sbd Exp $
+# $NetBSD: Makefile,v 1.18 2012/01/28 15:01:00 wiz Exp $
 
-DISTNAME=	ccache-3.1.7
+DISTNAME=	ccache-3.1.8
 CATEGORIES=	devel
 MASTER_SITES=	http://samba.org/ftp/ccache/
 
