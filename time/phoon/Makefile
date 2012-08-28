@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2007/02/22 19:27:17 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:53 joerg Exp $
 #
 
-DISTNAME=	phoon_01apr1995
-PKGNAME=	phoon-19950401
+DISTNAME=	phoon_29jun2005
+PKGNAME=	phoon-20050629
 CATEGORIES=	time
 MASTER_SITES=	http://www.acme.com/software/phoon/
 
