@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2012/08/18 14:46:26 dsainty Exp $
+# $NetBSD: Makefile,v 1.21 2012/08/29 09:51:29 drochner Exp $
 
 DISTNAME=		avr-libc-1.6.7
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		cross
 MASTER_SITES=		http://savannah.nongnu.org/download/avr-libc/
 EXTRACT_SUFX=		.tar.bz2
@@ -15,7 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		avr-binutils-[0-9]*:../../cross/avr-binutils
 BUILD_DEPENDS+=		avr-gcc-[0-9]*:../../cross/avr-gcc
-BUILD_DEPENDS+=		doxygen>=1.8.1.1nb1:../../devel/doxygen
+BUILD_DEPENDS+=		doxygen>=1.8.1.1nb2:../../devel/doxygen
 BUILD_DEPENDS+=		transfig-[0-9]*:../../print/transfig
 BUILD_DEPENDS+=		netpbm-[0-9]*:../../graphics/netpbm
 

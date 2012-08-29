@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/06/14 07:43:56 sbd Exp $
+# $NetBSD: Makefile,v 1.18 2012/07/01 19:05:25 dholland Exp $
 #
 
 DISTNAME=	gnome-device-manager-0.2
@@ -27,5 +27,6 @@ USE_LIBTOOL=		YES
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/hal/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
+.include "../../mk/omf-scrollkeeper.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD: MESSAGE,v 1.3 2011/11/22 18:02:07 shattered Exp $
+
+TME loads a number of shared libraries at runtime and requires that
+LTDL_LIBRARY_PATH environment variable is set correctly, for example:
+
+export LTDL_LIBRARY_PATH=@PREFIX@/lib
+
+===========================================================================

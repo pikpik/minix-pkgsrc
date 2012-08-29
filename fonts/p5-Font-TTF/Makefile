@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2011/08/14 12:43:26 obache Exp $
+# $NetBSD: Makefile,v 1.18 2011/08/16 21:48:05 wiz Exp $
 #
 
-DISTNAME=	Font-TTF-0.48
+DISTNAME=	Font-TTF-1.00
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Font/}

@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2708 2012/08/28 15:55:08 tron Exp $
+$NetBSD: CHANGES-2012,v 1.2724 2012/08/29 16:47:43 taca Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4223,3 +4223,19 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated databases/phpmyadmin to 3.5.2.2nb2 [tron 2012-08-28]
 	Updated devel/xulrunner to 15.0nb1 [ryoon 2012-08-28]
 	Updated www/firefox to 15.0nb1 [ryoon 2012-08-28]
+	Updated devel/gettext-lib to 0.18.1.1nb1 [sbd 2012-08-29]
+	Updated print/p5-LaTeX-Encode to 0.05 [wen 2012-08-29]
+	Updated www/p5-Dancer to 1.3100 [wen 2012-08-29]
+	Updated fonts/p5-Font-TTF to 1.00 [wen 2012-08-29]
+	Updated net/nicovideo-dl to 0.0.20120212 [ryoon 2012-08-29]
+	Updated geography/p5-Geo-Distance to 0.19 [wen 2012-08-29]
+	Updated pkgtools/pkg_chk to 2.0.5 [abs 2012-08-29]
+	Updated databases/ruby-sequel to 3.38.0 [taca 2012-08-29]
+	Updated devel/ruby-fast_gettext to 0.6.9 [taca 2012-08-29]
+	Updated devel/ruby-gettext to 2.3.0 [taca 2012-08-29]
+	Updated devel/ruby-gettext_i18n_rails to 0.6.6 [taca 2012-08-29]
+	Updated devel/ruby-highline to 1.6.14 [taca 2012-08-29]
+	Updated devel/ruby-inline to 3.11.3 [taca 2012-08-29]
+	Updated devel/ruby-locale to 2.0.8 [taca 2012-08-29]
+	Updated devel/ruby-test-unit to 2.5.2 [taca 2012-08-29]
+	Updated pkgtools/rpm2pkg to 3.2.3 [marino 2012-08-29]

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/06/14 07:44:38 sbd Exp $
+# $NetBSD: Makefile,v 1.18 2012/07/01 19:05:24 dholland Exp $
 #
 
 DISTNAME=		twitux-0.69
@@ -45,6 +45,7 @@ CONFIGURE_ARGS+=	--enable-aspell=no
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/libnotify/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
+.include "../../mk/omf-scrollkeeper.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
