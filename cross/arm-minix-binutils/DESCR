@@ -1,0 +1,2 @@
+GNU binutils for MINIX on ARM.
+Prerequisite for arm-minix-eabi-gcc in a cross-compilation environment.
