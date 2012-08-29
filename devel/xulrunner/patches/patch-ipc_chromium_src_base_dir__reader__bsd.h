@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ipc/chromium/src/base/dir_reader_bsd.h.orig	2012-08-13 05:21:05.000000000 +0000
+--- ipc/chromium/src/base/dir_reader_bsd.h.orig	2012-08-28 18:53:58.000000000 +0000
 +++ ipc/chromium/src/base/dir_reader_bsd.h
 @@ -0,0 +1,108 @@
 +// Copyright (c) 2010 The Chromium Authors. All rights reserved.

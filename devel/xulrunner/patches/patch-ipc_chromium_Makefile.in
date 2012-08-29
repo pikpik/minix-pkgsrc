@@ -1,8 +1,6 @@
-$NetBSD: patch-ipc_chromium_Makefile.in,v 1.2 2012/05/08 19:29:36 martin Exp $
+$NetBSD$
 
-# Reported upstream: https://bugzilla.mozilla.org/show_bug.cgi?id=753046
-
---- ipc/chromium/Makefile.in.orig	2012-08-08 20:20:07.000000000 +0000
+--- ipc/chromium/Makefile.in.orig	2012-08-24 22:55:37.000000000 +0000
 +++ ipc/chromium/Makefile.in
 @@ -243,6 +243,34 @@ endif
  

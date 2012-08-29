@@ -1,6 +1,6 @@
 $NetBSD$
 
---- dom/plugins/ipc/PluginModuleChild.cpp.orig	2012-08-08 20:19:54.000000000 +0000
+--- dom/plugins/ipc/PluginModuleChild.cpp.orig	2012-08-24 22:55:28.000000000 +0000
 +++ dom/plugins/ipc/PluginModuleChild.cpp
 @@ -5,6 +5,7 @@
   * file, You can obtain one at http://mozilla.org/MPL/2.0/. */

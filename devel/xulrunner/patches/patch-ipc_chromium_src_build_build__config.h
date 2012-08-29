@@ -1,8 +1,6 @@
-$NetBSD: patch-ipc_chromium_src_build_build__config.h,v 1.5 2012/05/08 19:29:37 martin Exp $
+$NetBSD$
 
-# Reported upstream: https://bugzilla.mozilla.org/show_bug.cgi?id=753046
-
---- ipc/chromium/src/build/build_config.h.orig	2012-08-08 20:20:07.000000000 +0000
+--- ipc/chromium/src/build/build_config.h.orig	2012-08-24 22:55:37.000000000 +0000
 +++ ipc/chromium/src/build/build_config.h
 @@ -19,6 +19,12 @@
  #define OS_MACOSX 1
