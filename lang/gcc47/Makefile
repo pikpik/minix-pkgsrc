@@ -53,6 +53,7 @@ BOOT_LDFLAGS=		-static-libstdc++ -static-libgcc ${LDFLAGS_FOR_TARGET}
 CONFIGURE_ENV+=		LDFLAGS_FOR_TARGET=${LDFLAGS_FOR_TARGET:Q}
 
 .if ${OPSYS} == "Minix"
+GCC_SYMLINK_PROGRAMS=	c++ cc cpp g++ gcc gcov
 CONFIGURE_ARGS+=	--enable-languages=c\ c++
 CONFIGURE_ARGS+=	--disable-libssp
 CPPFLAGS+=		-DST_SIZE_OFF_T=1
@@ -137,6 +138,14 @@ post-install:
 	${SH} files/values.c ${DESTDIR}${GCC_PREFIX}/bin/gcc -m64 || ${TRUE}
 .endif
 
+.if ${OPSYS} == "Minix"
+	${MKDIR} -p ${DESTDIR}${PREFIX}/bin
+.for X in ${GCC_SYMLINK_PROGRAMS}
+	${LN} -sf ${GCC_PREFIX}/bin/${X} ${DESTDIR}${PREFIX}/bin/${X}
+.endfor
+GENERATE_PLIST_SYMLINKS=	for x in ${GCC_SYMLINK_PROGRAMS}; do ${ECHO} bin/$$x; done 
+GENERATE_PLIST+= ${GENERATE_PLIST_SYMLINKS};                                                       
+.endif
 GENERATE_PLIST+= \
 	cd ${DESTDIR}${PREFIX} && 					\
 	${FIND} ${GCC_SUBPREFIX} \( -type f -o -type l \) -print | ${SORT} ;
