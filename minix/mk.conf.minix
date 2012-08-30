@@ -16,6 +16,7 @@ MASTER_SITE_BACKUP=http://www.minix3.org/distfiles-backup/
 ALLOW_VULNERABLE_PACKAGES=      yes
 
 PKG_OPTIONS.gcc44=-gcc-java -gcc-objc
+PKG_OPTIONS.gcc47=-gcc-java -gcc-objc
 PKG_OPTIONS.groff=-x11 -groff-docs
 
 CURSES_DEFAULT?= ncurses
