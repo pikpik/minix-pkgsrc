@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/04/27 12:31:57 obache Exp $
+# $NetBSD: Makefile,v 1.33 2012/06/14 07:43:56 sbd Exp $
 #
 
 DISTNAME=		ekiga-3.2.6
@@ -52,6 +52,7 @@ USE_LANGUAGES=		c c++
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/libnotify/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
+.include "../../mk/omf-scrollkeeper.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libXv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
