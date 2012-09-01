@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.79 2012/08/03 10:35:31 abs Exp $
+# $NetBSD: Makefile,v 1.80 2012/08/28 12:12:26 abs Exp $
 
-DISTNAME=	pkg_chk-2.0.5
+DISTNAME=	pkg_chk-2.0.6
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -18,8 +18,8 @@ USE_LANGUAGES=	# empty
 USE_TOOLS+=	mktemp:run
 USE_TOOLS+=	gzcat:run
 USE_TOOLS+=	gzip:run
+USE_TOOLS+=	bzcat:run
 NO_BUILD=	yes
-
 
 CONFLICTS=	pkgchk-[0-9]*
 
