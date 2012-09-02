@@ -52,6 +52,8 @@ CFLAGS+=	-Wno-unused-value -Wno-format-security \
 		-Wno-uninitialized -Wno-format
 .endif
 
+
+
 # Prevent the need to run texi2pod.pl and pod2man which would
 # require perl as a build dependency.
 post-configure:
@@ -61,6 +63,8 @@ post-configure:
 		${TOUCH} ${WRKSRC}/${f};				\
 	fi
 .endfor
+
+BINUTILS_SYMLINKS=ld as ar addr2line gprof nm objcopy objdump ranlib strings strip
 
 post-install:
 	cd ${DESTDIR}${PREFIX} &&					\
@@ -86,3 +90,6 @@ post-install:
 	fi
 .endfor
 
+.if ${OPSYS} == "Minix"
+GENERATE_PLIST+=        for x in ${BINUTILS_SYMLINKS}; do ${ECHO} bin/$$x; done
+.endif
