@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2752 2012/09/01 22:14:10 mspo Exp $
+$NetBSD: CHANGES-2012,v 1.2775 2012/09/02 19:28:52 cheusov Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4280,3 +4280,26 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated sysutils/tarsnap to 1.0.33 [riz 2012-09-01]
 	Added devel/py-pyev version 4.04 [mspo 2012-09-01]
 	Updated www/mediawiki to 1.19.2 [wen 2012-09-02]
+	Updated net/p5-Net-Write to 1.06 [wen 2012-09-02]
+	Updated devel/p5-CPAN-Perl-Releases to 0.68 [wen 2012-09-02]
+	Updated devel/p5-IPC-Cmd to 0.78 [wen 2012-09-02]
+	Updated devel/p5-CPAN-Reporter to 1.2006 [wen 2012-09-02]
+	Updated math/p5-Statistics-Descriptive to 3.0604 [wen 2012-09-02]
+	Updated mail/thunderbird to 15.0 [ryoon 2012-09-02]
+	Updated www/firefox-l10n to 15.0 [ryoon 2012-09-02]
+	Updated devel/mercurial to 2.3.1 [wiz 2012-09-02]
+	Updated mail/thunderbird-l10n to 15.0 [ryoon 2012-09-02]
+	Updated devel/p5-Compress-Raw-Bzip2 to 2.055 [wen 2012-09-02]
+	Updated devel/p5-Compress-Raw-Zlib to 2.056 [wen 2012-09-02]
+	Updated devel/p5-Config-General to 2.51 [wen 2012-09-02]
+	Updated devel/p5-Config-GitLike to 1.09 [wen 2012-09-02]
+	Updated devel/p5-Data-Peek to 0.38 [wen 2012-09-02]
+	Updated devel/p5-Data-UUID to 1.218 [wen 2012-09-02]
+	Updated textproc/libyaml to 0.1.4 [wiz 2012-09-02]
+	Updated www/libmicrohttpd to 0.9.22 [wiz 2012-09-02]
+	Updated net/flickcurl to 1.23 [wiz 2012-09-02]
+	Updated misc/whohas to 0.29 [shattered 2012-09-02]
+	Updated emulators/stella to 3.7.2 [dholland 2012-09-02]
+	Updated pkgtools/distbb to 0.45.1 [cheusov 2012-09-02]
+	Updated devel/lmdbg to 1.1.0 [cheusov 2012-09-02]
+	Updated archivers/ark to 4.8.4nb1 [wiz 2012-09-02]
