@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2748 2012/09/01 09:35:01 cheusov Exp $
+$NetBSD: CHANGES-2012,v 1.2752 2012/09/01 22:14:10 mspo Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4276,3 +4276,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated graphics/optipng to 0.7.2 [adam 2012-09-01]
 	Updated pkgtools/pkg_summary-utils to 0.58.3 [cheusov 2012-09-01]
 	Updated pkgtools/pkg_chk to 2.0.6 [abs 2012-09-01]
+	Updated games/pysolfc to 2.0 [spz 2012-09-01]
+	Updated sysutils/tarsnap to 1.0.33 [riz 2012-09-01]
+	Added devel/py-pyev version 4.04 [mspo 2012-09-01]
+	Updated www/mediawiki to 1.19.2 [wen 2012-09-02]
