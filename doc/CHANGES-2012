@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2778 2012/09/03 10:19:38 marino Exp $
+$NetBSD: CHANGES-2012,v 1.2783 2012/09/03 15:42:27 taca Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4307,3 +4307,14 @@ Changes to the packages collection and infrastructure in 2012:
 	Added net/libktorrent version 1.2.1.2 [marino 2012-09-03]
 	Updated net/ktorrent to 4.2.1 [marino 2012-09-03]
 	Updated devel/p5-Module-Install-ReadmeFromPod to 0.18 [sno 2012-09-03]
+	Updated databases/ruby-activeldap to 3.2.2 [taca 2012-09-03]
+	Updated databases/ruby-cassandra to 0.15.0 [taca 2012-09-03]
+	Updated databases/ruby-pg to 0.14.1 [taca 2012-09-03]
+	Updated databases/ruby-sequel to 3.39.0 [taca 2012-09-03]
+	Updated devel/hoe to 3.0.8 [taca 2012-09-03]
+	Updated devel/ruby-flexmock to 1.0.0 [taca 2012-09-03]
+	Updated devel/ruby-mocha to 0.12.3 [taca 2012-09-03]
+	Updated devel/ruby-rspec-core to 2.11.1 [taca 2012-09-03]
+	Updated devel/ruby-rspec-expectations to 2.11.2 [taca 2012-09-03]
+	Updated devel/ruby-rspec-mocks to 2.11.2 [taca 2012-09-03]
+	Updated devel/ruby-rspec to 2.11.0 [taca 2012-09-03]

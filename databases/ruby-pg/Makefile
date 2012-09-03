@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2012/08/05 10:02:11 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/08/21 13:46:20 taca Exp $
 
-DISTNAME=	pg-0.14.0
+DISTNAME=	pg-0.14.1
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:C/postgres/&ql/}
-PKGREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
