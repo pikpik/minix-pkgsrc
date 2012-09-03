@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/08/13 22:33:56 marino Exp $
+# $NetBSD: Makefile,v 1.9 2012/08/29 11:22:10 obache Exp $
 #
 
 PKGNAME=	openscad-2011.12
@@ -37,7 +37,7 @@ CHECK_PORTABILITY_SKIP+=tests/compare-bitmaps.sh
 CHECK_INTERPRETER_SKIP+=share/openscad/libraries/MCAD/get_submodules.py
 
 pre-build:
-	(cd ${WRKSRC} && ${QTDIR$}/bin/qmake)
+	(cd ${WRKSRC} && ${QTDIR}/bin/qmake)
 
 # DragonFly requires FlexLexer.h from pkgsrc - base doesn't cut it.
 .include "../../devel/flex/buildlink3.mk"

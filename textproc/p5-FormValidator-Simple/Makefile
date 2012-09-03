@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2010/08/21 16:35:52 seb Exp $
+# $NetBSD: Makefile,v 1.7 2011/08/14 15:14:04 obache Exp $
 
 DISTNAME=	FormValidator-Simple-0.28
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/L/LY/LYOKATO/}
 
@@ -28,7 +28,7 @@ DEPENDS+=	p5-YAML>=0.39:../../textproc/p5-YAML
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/FormValidator/Simple/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 PKG_DESTDIR_SUPPORT=    user-destdir
 
