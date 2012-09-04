@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.106 2012/08/28 16:39:19 abs Exp $
+# $NetBSD: Makefile,v 1.107 2012/08/28 23:30:31 ryoon Exp $
 
 .include "../../devel/xulrunner/dist.mk"
 PKGNAME=	firefox-${FIREFOX_VER}
@@ -21,6 +21,7 @@ ALL_ENV+=		MOZILLA_PKG_NAME=firefox
 
 LDFLAGS.DragonFly=	-lplc4 -lnspr4
 LDFLAGS.FreeBSD=	-lplc4 -lnspr4
+LDFLAGS.Linux=		-lnspr4
 
 .include "../../devel/xulrunner/mozilla-common.mk"
 .include "options.mk"
