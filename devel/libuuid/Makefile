@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/01/08 20:40:33 markd Exp $
+# $NetBSD: Makefile,v 1.2 2011/05/12 12:26:15 adam Exp $
 
 DISTNAME=	util-linux-2.19.1
 PKGNAME=	${DISTNAME:S/util-linux/libuuid/}
@@ -39,7 +39,7 @@ BUILD_DIRS=		include shlibs/uuid
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "Darwin"
+.if ${OPSYS} == "Darwin" || ${OPSYS} == "SunOS"
 BUILDLINK_TRANSFORM+=	rm:-Wl,--version-script=../../../shlibs/uuid/src/uuid.sym
 .endif
 

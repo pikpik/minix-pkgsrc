@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2793 2012/09/04 21:31:15 gls Exp $
+$NetBSD: CHANGES-2012,v 1.2797 2012/09/05 13:12:40 dmcmahill Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4331,3 +4331,9 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated www/ap2-fcgid to 2.3.7 [taca 2012-09-04]
 	Updated sysutils/libvirt to 0.9.3nb7 [gls 2012-09-04]
 	Updated net/wireshark to 1.8.2nb2 [tron 2012-09-04]
+	Updated net/py-boto to 2.5.2 [wiz 2012-09-05]
+	Updated sysutils/duplicity to 0.6.19 [wiz 2012-09-05]
+	Removed cad/simian [dmcmahill 2012-09-05]
+	Removed cad/simian-docs [dmcmahill 2012-09-05]
+	Added devel/p5-List-AllUtils 0.0.3 [is 2012-09-05]
+	Added devel/p5-File-Slurp-Unicode 0.7.1 [is 2012-09-05]
