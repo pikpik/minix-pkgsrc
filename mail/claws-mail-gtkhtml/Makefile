@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.35 2012/06/14 07:45:17 sbd Exp $
+# $NetBSD: Makefile,v 1.36 2012/07/02 19:08:43 drochner Exp $
 #
 
 DISTNAME=	gtkhtml2_viewer-0.33
 PKGNAME=	claws-mail-gtkhtml2_viewer-0.33
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 

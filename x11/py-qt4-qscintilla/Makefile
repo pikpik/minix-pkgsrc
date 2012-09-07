@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2012/07/03 18:14:26 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2012/08/09 10:15:28 sbd Exp $
 #
 
 DISTNAME=	QScintilla-gpl-2.6.2
 PKGNAME=	${PYPKGPREFIX}-qt4-${DISTNAME:tl:S/-gpl-/-/}
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://www.riverbankcomputing.com/static/Downloads/QScintilla2/
 

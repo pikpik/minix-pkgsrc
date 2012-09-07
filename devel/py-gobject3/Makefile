@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1 2012/07/04 18:31:10 prlw1 Exp $
+# $NetBSD: Makefile,v 1.2 2012/07/06 04:36:07 dholland Exp $
 #
 
 DISTNAME=		pygobject-3.2.2
 PKGNAME=		${PYPKGPREFIX}-gobject3-3.2.2
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/pygobject/3.2/}
 EXTRACT_SUFX=		.tar.xz

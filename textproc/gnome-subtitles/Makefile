@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2012/06/14 07:43:49 sbd Exp $
+# $NetBSD: Makefile,v 1.24 2012/08/29 19:56:47 drochner Exp $
 
 DISTNAME=	gnome-subtitles-1.1
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	multimedia textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnome-subtitles/}
 

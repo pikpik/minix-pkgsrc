@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.99 2012/06/16 05:18:22 dholland Exp $
+# $NetBSD: Makefile,v 1.100 2012/06/16 22:28:56 wiz Exp $
 
 #
 # NOTE: if you are updating both mplayer and gmplayer, you must ensure
@@ -9,7 +9,7 @@
 #
 
 PKGNAME=	gmplayer-${MPLAYER_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 
 SKIN_SITES=	http://www1.mplayerhq.hu/MPlayer/skins/		\
 		http://www2.mplayerhq.hu/MPlayer/skins/		\
