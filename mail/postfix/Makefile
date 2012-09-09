@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.251 2012/05/21 14:38:33 taca Exp $
+# $NetBSD: Makefile,v 1.252 2012/08/12 16:16:21 taca Exp $
 
 DISTNAME=	postfix-2.8.12
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/official/
 MASTER_SITES+=	http://postfix.it-austria.net/releases/official/
@@ -15,7 +16,7 @@ LICENSE=	cpl-1.0
 #LICENSE=	postfix-license
 
 CONFLICTS+=	courier-mta-[0-9]* fastforward>=0.51nb2 sendmail-[0-9]*
-CONFLICTS+=	esmtp>=1.2
+CONFLICTS+=	esmtp>=1.2 nullmailer-[0-9]*
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews

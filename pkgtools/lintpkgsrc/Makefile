@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2012/05/08 23:11:48 sbd Exp $
+# $NetBSD: Makefile,v 1.7 2012/07/13 21:12:07 abs Exp $
 
-DISTNAME=	lintpkgsrc-4.84
+DISTNAME=	lintpkgsrc-4.85
 CATEGORIES=	pkgtools
 MASTER_SITES=	# none
 DISTFILES=	# none
