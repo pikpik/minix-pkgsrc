@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.48 2012/01/26 10:42:21 rhaen Exp $
+# $NetBSD: Makefile,v 1.49 2012/03/05 13:18:42 sno Exp $
 
-DISTNAME=	Archive-Tar-1.84
+DISTNAME=	Archive-Tar-1.90
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tar
 CATEGORIES=	archivers perl5

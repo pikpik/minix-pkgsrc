@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1642 2012/09/02 02:46:04 mspo Exp $
+# $NetBSD: Makefile,v 1.1645 2012/09/10 12:30:15 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -555,6 +555,7 @@ SUBDIR+=	p5-CPAN-DistnameInfo
 SUBDIR+=	p5-CPAN-FindDependencies
 SUBDIR+=	p5-CPAN-Inject
 SUBDIR+=	p5-CPAN-Meta
+SUBDIR+=	p5-CPAN-Meta-Check
 SUBDIR+=	p5-CPAN-Meta-Requirements
 SUBDIR+=	p5-CPAN-Meta-YAML
 SUBDIR+=	p5-CPAN-Perl-Releases
@@ -928,6 +929,7 @@ SUBDIR+=	p5-MooseX-Declare
 SUBDIR+=	p5-MooseX-Emulate-Class-Accessor-Fast
 SUBDIR+=	p5-MooseX-FollowPBP
 SUBDIR+=	p5-MooseX-Getopt
+SUBDIR+=	p5-MooseX-Has-Options
 SUBDIR+=	p5-MooseX-InsideOut
 SUBDIR+=	p5-MooseX-LazyRequire
 SUBDIR+=	p5-MooseX-MarkAsMethods
@@ -1121,6 +1123,7 @@ SUBDIR+=	p5-Test-Approx
 SUBDIR+=	p5-Test-Assertions
 SUBDIR+=	p5-Test-Base
 SUBDIR+=	p5-Test-CPAN-Meta-YAML
+SUBDIR+=	p5-Test-CheckDeps
 SUBDIR+=	p5-Test-CheckManifest
 SUBDIR+=	p5-Test-Class
 SUBDIR+=	p5-Test-ClassAPI

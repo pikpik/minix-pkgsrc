@@ -1,4 +1,6 @@
-# $NetBSD
+#!@RCD_SCRIPTS_SHELL@
+#
+# $NetBSD$
 #
 # PROVIDE: libvirtd
 # # REQUIRE: DAEMON network

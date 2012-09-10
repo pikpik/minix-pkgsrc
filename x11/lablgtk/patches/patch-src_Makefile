@@ -14,3 +14,18 @@ Support DESTDIR when installing
      build.ml \
      $(CLIBS) \
      $(ALLOBJS:.cmo=.cmi) $(EXTRA_OBJS:.cmo=.cmi) \
+@@ -427,11 +429,11 @@ findlib-install:
+       then \
+         echo $(CLIBS:lib%$(XA)=dll%$(XA)) ; \
+     fi`
+-	$(RANLIB) $(CLIBS:%="`ocamlfind query lablgtk2 | tr -d '\r'`"/%)
++	$(RANLIB) $(CLIBS:%=${DESTDIR}${PREFIX}/lib/ocaml/site-lib/lablgtk2/%)
+ 	@if test -f lablgtk.cmxa; \
+-	  then ($(RANLIB) $(MLLIBS:%.cma="`ocamlfind query lablgtk2 | tr -d '\r'`"/%$(XA)) $(EXTRA_MLLIBS:%.cma="`ocamlfind query lablgtk2 | tr -d '\r'`"/%$(XA)) ); fi
++	  then ($(RANLIB) $(MLLIBS:%.cma=${DESTDIR}${PREFIX}/lib/ocaml/site-lib/lablgtk2/%$(XA)) $(EXTRA_MLLIBS:%.cma=${DESTDIR}${PREFIX}/lib/ocaml/site-lib/lablgtk2/%$(XA)) ); fi
+ 	rm lablgtk2$(XB)
+-	$(MAKE) INSTALLDIR=`ocamlfind query lablgtk2 | tr -d '\r'` lablgtk2$(XB)
++	$(MAKE) INSTALLDIR=${DESTDIR}${PREFIX}/lib/ocaml/site-lib/lablgtk2 lablgtk2$(XB)
+ 	cp lablgtk2$(XB) "$(BINDIR)"
+ 	if test -f lablgladecc$(XE); then \
+ 	  cp lablgladecc$(XE) "$(BINDIR)/lablgladecc2$(XE)"; \

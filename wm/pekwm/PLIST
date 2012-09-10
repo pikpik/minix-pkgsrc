@@ -4,9 +4,13 @@ man/man1/pekwm.1
 share/examples/pekwm/autoproperties
 share/examples/pekwm/autoproperties_typerules
 share/examples/pekwm/config
+share/examples/pekwm/config_system
 share/examples/pekwm/keys
 share/examples/pekwm/menu
 share/examples/pekwm/mouse
+share/examples/pekwm/mouse_click
+share/examples/pekwm/mouse_sloppy
+share/examples/pekwm/mouse_system
 share/examples/pekwm/start
 share/examples/pekwm/vars
 share/pekwm/scripts/pekwm_themeset.sh
