@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.7 2010/08/31 05:35:36 sno Exp $
+# $NetBSD: Makefile,v 1.8 2011/08/14 12:26:40 obache Exp $
 
-DISTNAME=	Test-Class-0.36
+DISTNAME=	Test-Class-0.37
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Test/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://search.cpan.org/perldoc?Test::Class
+HOMEPAGE=	http://search.cpan.org/dist/Test-Class/
 COMMENT=	Easily create test classes in an xUnit/JUnit style
 LICENSE=	${PERL5_LICENSE}
 
@@ -22,6 +21,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Test/Class/.packlist
+PERL5_MODULE_TYPE=	Module::Build
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"
