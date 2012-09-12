@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2897 2012/09/11 13:23:26 wen Exp $
+$NetBSD: CHANGES-2012,v 1.2909 2012/09/12 14:18:23 dsainty Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4444,3 +4444,17 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated time/p5-Time-HiRes to 1.9725 [sno 2012-09-11]
 	Updated www/p5-Plack to 1.0003 [wen 2012-09-11]
 	Updated emulators/qemu to 1.2.0 [asau 2012-09-11]
+	Updated net/freeDiameter to 1.1.4 [wiz 2012-09-12]
+	Updated x11/xbacklight to 1.2.0 [wiz 2012-09-12]
+	Updated devel/p5-Spiffy to 0.31 [sno 2012-09-12]
+	Updated x11/p5-Alien-wxWidgets to 0.60 [sno 2012-09-12]
+	Updated x11/p5-Wx to 0.9911 [sno 2012-09-12]
+	Updated x11/p5-Wx-Perl-ProcessStream to 0.32 [sno 2012-09-12]
+	Updated devel/p5-Devel-Size to 0.78 [sno 2012-09-12]
+	Updated textproc/p5-YAML to 0.84 [sno 2012-09-12]
+	Updated devel/p5-Wx-Perl-DataWalker to 0.02nb13 [sno 2012-09-12]
+	Updated sysutils/xenkernel41 to 4.1.3 [drochner 2012-09-12]
+	Updated sysutils/xentools41 to 4.1.3 [drochner 2012-09-12]
+	Updated graphics/MesaLib to 7.4.4nb6 [dsainty 2012-09-12]
+	Updated devel/xulrunner to 15.0.1 [ryoon 2012-09-12]
+	Updated www/firefox to 15.0.1 [ryoon 2012-09-12]

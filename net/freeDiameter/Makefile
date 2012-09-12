@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2012/08/24 12:14:08 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/08/25 22:39:23 dholland Exp $
 #
 
-DISTNAME=	1.1.2
+DISTNAME=	1.1.4
 PKGNAME=	freeDiameter-${DISTNAME}
 CATEGORIES=	net
 MASTER_SITES=	http://www.freediameter.net/hg/freeDiameter/archive/
@@ -21,6 +21,9 @@ CMAKE_ARGS+=	-DDISABLE_SCTP:BOOL=ON
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	bison flex pkg-config
 FLEX_REQD=	2.5.35
+
+# needs libraries installed
+#TEST_TARGET=	test
 
 .include "options.mk"
 
