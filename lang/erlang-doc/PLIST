@@ -214,6 +214,7 @@ lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_hooks.html
 lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_hooks_chapter.html
 lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_master.html
 lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_master_chapter.html
+lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_netconfc.html
 lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_rpc.html
 lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_run.html
 lib/erlang/lib/common_test-${VERSION.common_test}/doc/html/ct_slave.html

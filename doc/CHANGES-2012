@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2909 2012/09/12 14:18:23 dsainty Exp $
+$NetBSD: CHANGES-2012,v 1.2916 2012/09/12 19:19:05 asau Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4458,3 +4458,10 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated graphics/MesaLib to 7.4.4nb6 [dsainty 2012-09-12]
 	Updated devel/xulrunner to 15.0.1 [ryoon 2012-09-12]
 	Updated www/firefox to 15.0.1 [ryoon 2012-09-12]
+	Added print/tex-shadethm version 20101030 [is 2012-09-12]
+	Updated x11/qt4-libs to 4.8.2nb1 [jaapb 2012-09-12]
+	Added audio/py-dynampd version 1.1.0 [wiz 2012-09-12]
+	Updated net/freeradius2 to 2.1.12nb4 [bouyer 2012-09-12]
+	Updated lang/erlang to 15.1.2 [asau 2012-09-12]
+	Updated lang/erlang-doc to 15.1.2 [asau 2012-09-12]
+	Updated lang/erlang-man to 15.1.2 [asau 2012-09-12]

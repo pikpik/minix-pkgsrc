@@ -113,6 +113,7 @@ lib/erlang/man/man3/ct_cover.3
 lib/erlang/man/man3/ct_ftp.3
 lib/erlang/man/man3/ct_hooks.3
 lib/erlang/man/man3/ct_master.3
+lib/erlang/man/man3/ct_netconfc.3
 lib/erlang/man/man3/ct_rpc.3
 lib/erlang/man/man3/ct_slave.3
 lib/erlang/man/man3/ct_snmp.3
