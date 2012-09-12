@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/05/19 08:59:01 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2011/03/11 10:13:20 zafer Exp $
 
 DISTNAME=	zoo-2.10pl1
 PKGNAME=	zoo-2.10.1
@@ -11,7 +11,6 @@ COMMENT=	Manipulate archives of files in compressed form
 LICENSE=	zoo-license
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	yes

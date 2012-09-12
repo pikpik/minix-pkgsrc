@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/08/05 11:22:38 ahoka Exp $
+# $NetBSD: Makefile,v 1.11 2009/09/09 16:40:39 drochner Exp $
 #
 
 DISTNAME=	faac-1.28
@@ -12,8 +12,6 @@ COMMENT=	AAC audio encoder
 RESTRICTED=	This software may require the payment of patent royalties
 NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 USE_TOOLS+=	automake

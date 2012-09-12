@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/11/22 00:45:54 jym Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/25 00:35:48 zafer Exp $
 #
 
 DISTNAME=	libmicro-${LIBMICRO_VERSION}
@@ -17,8 +17,6 @@ WRKSRC=		${WRKDIR}/libMicro-${LIBMICRO_VERSION}
 
 USE_TOOLS=	gmake tee
 BUILD_TARGET=	default
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin
 INSTALLATION_DIRS+=	libexec/${PKGBASE}

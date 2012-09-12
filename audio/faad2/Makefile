@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2009/08/11 11:16:37 drochner Exp $
+# $NetBSD: Makefile,v 1.46 2010/01/16 17:57:36 wiz Exp $
 
 DISTNAME=	faad2-2.7
 PKGREVISION=	1
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=faac/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.audiocoding.com/
 COMMENT=	AAC decoding library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 LICENSE=	gnu-gpl-v2
 RESTRICTED=	Dolby doesn't allow binary distributions

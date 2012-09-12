@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/06/14 07:43:55 sbd Exp $
+# $NetBSD: Makefile,v 1.22 2012/09/07 19:16:09 adam Exp $
 #
 
 DISTNAME=	jack-rack-1.4.7
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jack-rack.sourceforge.net/
 COMMENT=	Effects "rack" for JACK
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

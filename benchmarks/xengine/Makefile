@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/05/16 21:12:17 zafer Exp $
+# $NetBSD: Makefile,v 1.24 2009/07/08 14:38:28 joerg Exp $
 
 DISTNAME=	xengine-1.0.1
 PKGREVISION=	4
@@ -10,7 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Reciprocating engine for X
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	xengine

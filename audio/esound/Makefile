@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2012/01/24 09:42:35 marino Exp $
+# $NetBSD: Makefile,v 1.77 2012/02/15 21:22:21 hans Exp $
 
 DISTNAME=		esound-0.2.41
 PKGREVISION=		1
@@ -12,7 +12,6 @@ COMMENT=		The Enlightened sound daemon
 LICENSE=		gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		YES
 USE_TOOLS+=		pkg-config

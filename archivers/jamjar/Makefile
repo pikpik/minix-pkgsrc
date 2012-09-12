@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/02/10 00:03:41 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2009/07/17 04:47:27 rillig Exp $
 #
 
 DISTNAME=	jamjar-0.7.1
@@ -12,7 +12,6 @@ COMMENT=	Acunia version of the jar archiver
 BUILD_DEPENDS+=	acunia-jam>=1.0:../../devel/acunia-jam
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/jamjar
 

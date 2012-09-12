@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/05/26 02:13:22 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2010/02/26 10:28:32 wiz Exp $
 #
 
 DISTNAME=	fplsa
@@ -12,8 +12,6 @@ EXTRACT_SUFX=	.zoo
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gap-system.org/Share/fplsa.html
 COMMENT=	GAP interface to FPLSA
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/fplsa
 GAP_PKG_NAME=	fplsa

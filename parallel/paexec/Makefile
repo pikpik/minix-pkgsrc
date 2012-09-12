@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/03/09 19:00:36 cheusov Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/09 23:30:26 cheusov Exp $
 #
 
 DISTNAME=	paexec-0.17.0
@@ -13,8 +13,6 @@ LICENSE=	mit
 
 BUILD_DEPENDS+=		mk-configure>=0.20.0:../../devel/mk-configure
 DEPENDS+=		runawk>=1.4.3:../../lang/runawk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_INTERPRETER+=	runawk
 REPLACE.runawk.old=	/usr/bin/env runawk

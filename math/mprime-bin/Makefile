@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/12/13 02:01:27 asau Exp $
+# $NetBSD: Makefile,v 1.4 2009/12/21 20:10:17 joerg Exp $
 #
 
 DISTNAME=		mprime2414
@@ -9,8 +9,6 @@ MASTER_SITES=		ftp://mersenne.org/gimps/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mersenne.org/freesoft.htm
 COMMENT=		Mersenne prime tester (binary)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2012/08/28 12:12:26 abs Exp $
+# $NetBSD: Makefile,v 1.81 2012/09/01 17:52:09 abs Exp $
 
 DISTNAME=	pkg_chk-2.0.6
 CATEGORIES=	pkgtools
@@ -11,7 +11,6 @@ COMMENT=	Check installed package versions against pkgsrc
 LICENSE=	2-clause-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	# empty

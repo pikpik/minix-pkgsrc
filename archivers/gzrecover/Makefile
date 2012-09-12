@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/04/24 21:19:31 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/07/06 10:17:11 jmmv Exp $
 #
 
 DISTNAME=		gzrt-0.5
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.urbanophile.com/arenn/hacking/gzrt/
 COMMENT=		GZip Recovery Toolkit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		gzrecover
 

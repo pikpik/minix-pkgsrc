@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/08/21 16:35:12 seb Exp $
+# $NetBSD: Makefile,v 1.10 2011/08/14 13:38:23 obache Exp $
 #
 
 DISTNAME=		Math-GMP-2.06
@@ -19,8 +19,6 @@ LICENSE=		gnu-gpl-v2
 #BUILD_DEPENDS+= p5-Pod-Spell>0:../../textproc/p5-Pod-Spell
 #BUILD_DEPENDS+= p5-Test-Pod>=0.95:../../devel/p5-Test-Pod
 BUILD_DEPENDS+=	p5-Test-YAML-Meta>=0.03:../../devel/p5-Test-YAML-Meta
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Math/GMP/.packlist
 

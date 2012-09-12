@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/06/12 19:07:29 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2010/09/19 07:13:37 obache Exp $
 #
 
 DISTNAME=		${PKGNAME:S/-//}
@@ -12,7 +12,6 @@ COMMENT=		Sequence Cleanup Program
 #LICENSE=		LICENSE file say "artistic", but bit differ.
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}p
 

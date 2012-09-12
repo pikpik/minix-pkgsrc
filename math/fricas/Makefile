@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/07/08 10:18:21 asau Exp $
+# $NetBSD: Makefile,v 1.16 2012/02/23 19:24:34 asau Exp $
 
 PKGNAME=		fricas-1.1.6
 DISTNAME=		${PKGNAME_NOREV}-full
@@ -13,7 +13,6 @@ LICENSE=		modified-bsd
 
 BUILD_DEPENDS+=		noweb-[0-9]*:../../devel/noweb
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}

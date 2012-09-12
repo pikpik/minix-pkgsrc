@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/01/13 13:37:09 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2011/11/01 06:00:42 sbd Exp $
 #
 
 DISTNAME=		zelibm
@@ -11,7 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://people.redhat.com/drepper/libm/
 COMMENT=		Visual Math Library Quality Check
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin
 
 USE_TOOLS+=		gmake

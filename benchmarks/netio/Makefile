@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/01/03 23:15:47 heinz Exp $
+# $NetBSD: Makefile,v 1.18 2009/05/19 08:59:04 wiz Exp $
 
 DISTNAME=	netio126
 PKGNAME=	netio-1.26
@@ -11,7 +11,6 @@ MAINTAINER=	tron@NetBSD.org
 COMMENT=	Network benchmark for OS/2 2.x, Windows NT/2000 and Unix
 LICENSE=	no-commercial-use
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 WRKSRC=		${WRKDIR}

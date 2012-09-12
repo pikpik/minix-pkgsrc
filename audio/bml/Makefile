@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/02/04 10:24:37 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/05 09:24:19 sbd Exp $
 #
 
 DISTNAME=	bml-0.5.0
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://buzztard.sourceforge.net/
 COMMENT=	Buzz machine loader
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

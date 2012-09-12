@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/06/14 07:45:26 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2012/09/07 19:17:24 adam Exp $
 
 DISTNAME=	hwloc-1.4
 PKGREVISION=	2
@@ -9,8 +9,6 @@ MAINTAINER=	asau@inbox.ru
 HOMEPAGE=	http://www.open-mpi.org/projects/hwloc/
 COMMENT=	Portable Hardware Locality
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/12/12 20:39:56 asau Exp $
+# $NetBSD: Makefile,v 1.15 2011/12/11 20:08:00 dholland Exp $
 
 DISTNAME=	tvcpp0p8
 PKGNAME=	tasp-vsipl-20030710
@@ -12,8 +12,6 @@ COMMENT=	Vector Signal Image Processing Library
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/lib
 DIST_SUBDIR=	tasp-vsipl
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_BSD_MAKEFILE=	yes
 MAKE_FLAGS+=		MKPROFILE=yes

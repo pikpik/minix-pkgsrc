@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/03/02 06:10:31 jlam Exp $
+# $NetBSD: Makefile,v 1.22 2008/05/26 02:13:15 joerg Exp $
 
 DISTNAME=	festlex_CMU
 PKGNAME=	festlex-cmu-1.4.0
@@ -12,8 +12,6 @@ COMMENT=	CMU American English pronunciation dictionary for Festival
 
 DEPENDS+=	festival>=1.4.0:../../audio/festival
 USE_TOOLS+=	pax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/festival
 NO_BUILD=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/06/14 07:44:40 sbd Exp $
+# $NetBSD: Makefile,v 1.20 2012/09/07 19:16:06 adam Exp $
 #
 
 DISTNAME=	ario-1.5.1
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ario-player.sourceforge.net/
 COMMENT=	mpd client
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT= user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	intltool msgfmt pkg-config gmake

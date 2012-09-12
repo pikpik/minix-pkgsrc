@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/03/07 16:48:02 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2009/06/30 00:07:20 joerg Exp $
 
 DISTNAME=		xlispstat-3-52-20
 PKGNAME=		xlispstat-3.52.20
@@ -9,8 +9,6 @@ MASTER_SITES=		http://lib.stat.cmu.edu/xlispstat/Src/3-52/ \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.stat.uiowa.edu/~luke/xls/xlsinfo/
 COMMENT=		Statistics/X11-based LISP interpreter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

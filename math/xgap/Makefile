@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2008/11/10 17:21:37 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2010/02/26 10:28:32 wiz Exp $
 #
 
 DISTNAME=	xgap4r16
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.zoo
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gap-system.org/Share/xgap.html
 COMMENT=	GUI for GAP
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${GAP_PKG_NAME}
 GNU_CONFIGURE=	YES

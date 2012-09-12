@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/02/28 18:38:47 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2011/02/28 18:39:34 wiz Exp $
 #
 
 DISTNAME=		super_pi
@@ -14,8 +14,6 @@ LICENSE=		generic-nonlicense
 RESTRICTED=		${LICENSE}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=		${PKGNAME_NOREV}
 

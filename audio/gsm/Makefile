@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2009/02/03 06:09:09 obache Exp $
+# $NetBSD: Makefile,v 1.33 2009/10/31 01:29:26 wiz Exp $
 #
 
 DISTNAME=	gsm-1.0.13
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kbs.cs.tu-berlin.de/~jutta/toast.html
 COMMENT=	Audio converter and library for converting u-law to gsm encoding
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/gsm-1.0-pl13
 USE_LIBTOOL=	yes

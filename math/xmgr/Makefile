@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2011/12/09 14:36:35 drochner Exp $
+# $NetBSD: Makefile,v 1.37 2012/01/14 00:51:36 hans Exp $
 
 DISTNAME=		xmgr-4.1.2
 PKGREVISION=		6
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://plasma-gate.weizmann.ac.il/Xmgr/
 COMMENT=		Powerful XY plotting tool for workstations or X-terminals using X
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=		YES
 USE_LANGUAGES=		c fortran77

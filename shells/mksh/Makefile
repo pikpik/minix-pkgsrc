@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/02/06 20:23:15 bsiegert Exp $
+# $NetBSD: Makefile,v 1.19 2012/05/13 18:46:35 bsiegert Exp $
 
 DISTNAME=			mksh-R40f
 PKGNAME=			${DISTNAME:S/-R/-/}
@@ -16,7 +16,6 @@ WRKSRC=				${WRKDIR}/mksh
 WRKBUILD?=			${WRKSRC}
 
 PKG_INSTALLATION_TYPES=		pkgviews overwrite
-PKG_DESTDIR_SUPPORT=		user-destdir
 
 PKG_SHELL=			bin/mksh
 

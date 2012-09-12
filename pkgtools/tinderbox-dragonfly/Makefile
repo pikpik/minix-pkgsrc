@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/04/21 07:37:08 taca Exp $
+# $NetBSD: Makefile,v 1.7 2012/08/05 10:02:13 obache Exp $
 #
 
 DISTNAME=	tinderbox-dragonfly-${TBOX_VERSION}
@@ -17,7 +17,6 @@ DEPENDS+=	csup>=20100101:../../net/csup
 DEPENDS+=	scmgit>1.6:../../devel/scmgit
 
 TBOX_VERSION=		3.4.1
-PKG_DESTDIR_SUPPORT=	user-destdir
 ONLY_FOR_PLATFORM=	DragonFly-*-*
 
 USE_TOOLS+=		perl perl:run

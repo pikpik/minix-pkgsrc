@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/09/14 22:12:56 zafer Exp $
+# $NetBSD: Makefile,v 1.12 2010/09/19 08:38:14 obache Exp $
 
 DISTNAME=	tree-puzzle-5.2
 PKGNAME=	${DISTNAME:S/^tree-//}
@@ -9,8 +9,6 @@ MAINTAINER=	babafou@babafou.eu.org
 HOMEPAGE=	http://www.tree-puzzle.de/
 COMMENT=	Maximum likelihood analysis of molecular sequence data
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

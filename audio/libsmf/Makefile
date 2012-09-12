@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/02/06 12:39:27 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/03/03 00:12:41 wiz Exp $
 #
 
 DISTNAME=	libsmf-1.3
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/libsmf/
 COMMENT=	Standard MIDI File format library
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

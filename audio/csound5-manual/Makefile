@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/05/26 02:13:15 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2009/08/25 11:57:44 wiz Exp $
 #
 
 DISTNAME=		Csound${CSOUND_VERSION}_manual_html
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.csounds.com/
 COMMENT=		Csound5 Reference Manual
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CSOUND_VERSION=		5.01
 NO_BUILD=		yes

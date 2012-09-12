@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2012/08/24 19:04:58 marino Exp $
+# $NetBSD: Makefile,v 1.61 2012/08/29 19:12:07 tron Exp $
 
 DISTNAME=	rpm2pkg-3.2.3
 CATEGORIES=	pkgtools
@@ -12,8 +12,6 @@ COMMENT=	Convert RPM archives to NetBSD packages
 LICENSE=	modified-bsd
 
 CONFLICTS+=	suse-base<=6.4
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MANCOMPRESSED_IF_MANZ=	yes
 USE_BSD_MAKEFILE=	yes

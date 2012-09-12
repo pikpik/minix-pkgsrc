@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/05/04 13:43:39 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/03/02 16:36:57 hans Exp $
 #
 
 DISTNAME=	pkg_select-20090308
@@ -10,7 +10,6 @@ MAINTAINER=	imil@gcu.info
 COMMENT=	Curses based pkgsrc system browser / manager
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_FEATURES+=		cdefs
 

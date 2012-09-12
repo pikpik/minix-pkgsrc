@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.80 2010/05/07 12:02:43 jmmv Exp $
+# $NetBSD: Makefile,v 1.81 2011/04/22 13:44:39 obache Exp $
 #
 
 DISTNAME=	bash-2.05b
@@ -18,7 +18,6 @@ COMMENT=	The GNU Bourne Again Shell (version 2)
 
 CONFLICTS=	static-bash-[0-9]*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_GNU_READLINE=	yes

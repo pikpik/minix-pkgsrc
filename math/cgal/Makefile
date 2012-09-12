@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/08/29 11:22:16 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/07 19:17:04 adam Exp $
 #
 
 PKGNAME=	cgal-3.9
@@ -13,8 +13,6 @@ COMMENT=	Computational Geometry Algorithms Library
 LICENSE=	gnu-lgpl-v3
 
 FETCH_USING=	curl
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=	yes
 USE_LANGUAGES=	c c++

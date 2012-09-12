@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/04/09 00:48:13 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2011/05/23 08:28:42 cheusov Exp $
 #
 
 DISTNAME=	pkgdep-1.0
@@ -8,8 +8,6 @@ DISTFILES=	# empty
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Script for displaying dependence information on software packages
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/files
 USE_TOOLS+=	perl:run

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/05/19 08:59:02 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2011/02/10 22:08:31 zafer Exp $
 
 DISTNAME=	OGIlexicon-2.0
 PKGNAME=	festlex-ogi-2.0
@@ -15,8 +15,6 @@ DEPENDS+=	festival>=1.4.0:../../audio/festival
 DEPENDS+=	festlex-poslex>=1.4.0:../../audio/festlex-poslex
 
 USE_TOOLS+=	pax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/festival
 NO_BUILD=	yes

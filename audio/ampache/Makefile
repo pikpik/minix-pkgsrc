@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/02/15 19:48:21 hans Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/24 07:20:23 jperkin Exp $
 #
 
 DISTNAME=	ampache-3.5.3
@@ -37,7 +37,6 @@ SUBST_MESSAGE.files=	Substituting paths into apache config fragment
 CONF_FILES=		${EGDIR}/ampache.conf \
 			${PKG_SYSCONFDIR}/ampache.conf
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+=	${EGDIR} ${INSTDIR}
 
 REPLACE_SH=		locale/base/gather-messages.sh

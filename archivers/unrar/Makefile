@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2011/03/12 15:42:22 adam Exp $
+# $NetBSD: Makefile,v 1.65 2012/01/20 15:26:08 wiz Exp $
 
 DISTNAME=	unrarsrc-4.1.4
 PKGNAME=	${DISTNAME:S/src//}
@@ -22,7 +22,6 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	YES
 USE_LANGUAGES=	c++

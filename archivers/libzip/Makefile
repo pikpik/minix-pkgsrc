@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/03/18 13:50:34 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/03/20 13:04:53 wiz Exp $
 #
 
 DISTNAME=		libzip-0.10.1
@@ -10,8 +10,6 @@ OWNER=			dillo@NetBSD.org
 HOMEPAGE=		http://www.nih.at/libzip/
 COMMENT=		C library to manipulate zip archives
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

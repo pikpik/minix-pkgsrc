@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2010/05/20 21:12:13 drochner Exp $
+# $NetBSD: Makefile,v 1.30 2011/11/01 15:11:18 hans Exp $
 #
 
 DISTNAME=	id3lib-3.8.3
@@ -11,7 +11,6 @@ HOMEPAGE=	http://id3lib.sourceforge.net/
 COMMENT=	Library for manipulating ID3v1 and ID3v2 tags
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes

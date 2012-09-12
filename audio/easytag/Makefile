@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2012/03/08 09:49:26 wiz Exp $
+# $NetBSD: Makefile,v 1.73 2012/09/07 19:16:07 adam Exp $
 #
 
 DISTNAME=	easytag-2.1.7
@@ -11,8 +11,6 @@ MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://easytag.sourceforge.net/
 COMMENT=	GTK+ tag editor for MP3, Ogg Vorbis files, and others
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

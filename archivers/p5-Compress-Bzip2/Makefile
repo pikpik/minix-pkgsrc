@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/08/06 12:28:54 adam Exp $
+# $NetBSD: Makefile,v 1.16 2011/10/07 00:39:25 hiramatsu Exp $
 
 DISTNAME=	Compress-Bzip2-2.09
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Compress-Bzip2/
 COMMENT=	Perl5 interface to bzip2 compression library
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Compress/Bzip2/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/11/30 19:30:20 drochner Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2012/05/29 13:31:38 wiz Exp $
 
 DISTNAME=	libmusicbrainz-5.0.1
 PKGNAME=	${DISTNAME:S/brainz/brainz5/}
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://musicbrainz.org/doc/libmusicbrainz
 COMMENT=	MusicBrainz (user-maintained community music metadatabase) library v5
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 FETCH_USING=	curl
 

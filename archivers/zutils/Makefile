@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/10/21 21:43:29 ryoon Exp $
+# $NetBSD: Makefile,v 1.3 2012/01/30 07:26:29 sbd Exp $
 #
 
 DISTNAME=	zutils-0.9
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/zutils/zutils.html
 COMMENT=	Utilities able to deal with any combination of compressed and non-compressed files
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		lzip<1.12
 

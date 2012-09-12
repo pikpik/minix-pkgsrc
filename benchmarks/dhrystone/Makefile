@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/05/16 20:21:17 zafer Exp $
+# $NetBSD: Makefile,v 1.15 2012/06/18 01:46:07 dholland Exp $
 
 DISTNAME=		dhry2.1
 PKGNAME=		dhrystone-2.1
@@ -11,7 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Reinhold Weicker's DHRYSTONE 2.1 integer benchmark
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

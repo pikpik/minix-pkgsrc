@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/04/07 23:32:40 dholland Exp $
+# $NetBSD: Makefile,v 1.20 2012/04/07 23:35:35 dholland Exp $
 #
 
 DISTNAME=	mousetar-20021217
@@ -12,7 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	der Mouse's version of tar program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM+=	Interix-*-* # no sys/mtio.h tape support
 

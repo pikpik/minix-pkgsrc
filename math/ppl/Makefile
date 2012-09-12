@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/04/08 20:52:32 wiz Exp $
 #
 
 DISTNAME=	ppl-0.11.2
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.cs.unipr.it/ppl/
 COMMENT=	The Parma Polyhedra Library. Used by gcc for loop optimization
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=	yes
 USE_TOOLS+=	autoconf automake gmake perl
 DEPENDS+=	gsed-[0-9]*:../../textproc/gsed

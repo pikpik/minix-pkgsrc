@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.109 2012/06/14 07:44:27 sbd Exp $
+# $NetBSD: Makefile,v 1.110 2012/09/07 19:16:05 adam Exp $
 #
 
 DISTNAME=	amarok-${VERS}
@@ -15,8 +15,6 @@ LICENSE=	gnu-gpl-v2 AND gnu-fdl-v1.2 AND gnu-lgpl-v2.1
 
 BUILD_DEPENDS+=	automoc4>=0.9.83:../../devel/automoc4
 DEPENDS+=	moodbar-[0-9]*:../../audio/moodbar
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	msgfmt pkg-config perl:run

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/06/14 07:43:21 sbd Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/07 19:16:13 adam Exp $
 #
 
 DISTNAME=	openbabel-2.3.0
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://openbabel.org/
 COMMENT=	Chemistry file translation program
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 

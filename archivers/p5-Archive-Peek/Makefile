@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/10/07 00:37:02 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2012/03/22 16:06:50 sno Exp $
 
 DISTNAME=	Archive-Peek-0.35
 PKGNAME=	p5-${DISTNAME}
@@ -15,7 +15,6 @@ DEPENDS+=	p5-Moose-[0-9]*:../../devel/p5-Moose
 DEPENDS+=	p5-MooseX-Types-Path-Class-[0-9]*:../../devel/p5-MooseX-Types-Path-Class
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Archive/Peek/.packlist
 

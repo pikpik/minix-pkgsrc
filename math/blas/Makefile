@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/12/03 13:06:53 asau Exp $
+# $NetBSD: Makefile,v 1.29 2010/07/30 10:36:27 asau Exp $
 #
 
 DISTNAME=	blas
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.netlib.org/blas/
 COMMENT=	Basic Linear Algebra Subprograms (Fortran)
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=		${PKGNAME_NOREV}
 WRKSRC=			${WRKDIR}/BLAS

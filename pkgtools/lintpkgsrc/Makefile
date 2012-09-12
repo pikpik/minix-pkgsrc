@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/07/13 21:12:07 abs Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/09 20:18:46 dholland Exp $
 
 DISTNAME=	lintpkgsrc-4.85
 CATEGORIES=	pkgtools
@@ -32,8 +32,6 @@ SUBST_SED.lp+=	-e s\|@PKGSRCDIR@\|${PKGSRCDIR}\|g
 SUBST_SED.lp+=	-e s\|@PREFIX@\|${PREFIX}\|g
 SUBST_SED.lp+=	-e s\|@MAKE@\|${MAKE:Q}\|g
 SUBST_SED.lp+=	-e s\|@PERL@\|${PERL5:Q}\|g
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

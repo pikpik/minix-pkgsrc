@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/01/29 08:41:22 sbd Exp $
+# $NetBSD: Makefile,v 1.5 2012/03/14 14:39:59 wiz Exp $
 #
 
 DISTNAME=	lzip-1.13
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/lzip/lzip.html
 COMMENT=	Lossless data compressor based on the LZMA algorithm
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 HAS_CONFIGURE=		yes

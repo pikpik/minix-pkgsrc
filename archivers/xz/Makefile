@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/06/13 11:02:35 jperkin Exp $
+# $NetBSD: Makefile,v 1.13 2012/07/02 06:16:23 adam Exp $
 
 DISTNAME=	xz-5.0.4
 CATEGORIES=	archivers
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tukaani.org/xz/
 COMMENT=	XZ utilities
 LICENSE=	public-domain AND gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

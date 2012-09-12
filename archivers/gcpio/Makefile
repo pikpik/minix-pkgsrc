@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2012/05/29 20:37:08 cheusov Exp $
+# $NetBSD: Makefile,v 1.42 2012/06/02 08:38:13 cheusov Exp $
 #
 
 DISTNAME=	cpio-2.6
@@ -15,7 +15,6 @@ LICENSE=	gnu-gpl-v2
 CONFLICTS+=	gtar-base-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	makeinfo

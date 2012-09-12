@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/06/20 19:29:50 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/02/08 09:53:01 wiz Exp $
 
 DISTNAME=		revbump-2.2
 CATEGORIES=		pkgtools
@@ -11,7 +11,6 @@ COMMENT=		Tools for bumping PKGREVISIONs (for pkgsrc developers)
 LICENSE=		modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	yes

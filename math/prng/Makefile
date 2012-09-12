@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/19 13:56:53 wiz Exp $
 
 DISTNAME=	prng-3.0.2
 CATEGORIES=	math
@@ -11,7 +11,6 @@ COMMENT=	Portable, high-performance ANSI-C pseudorandom number generators
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		makeinfo
 GNU_CONFIGURE=		yes

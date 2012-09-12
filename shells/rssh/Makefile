@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2010/10/16 09:57:38 adam Exp $
+# $NetBSD: Makefile,v 1.13 2011/05/31 11:08:09 obache Exp $
 
 DISTNAME=	rssh-2.3.3
 CATEGORIES=	shells security
@@ -7,8 +7,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rssh/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pizzashack.org/rssh/
 COMMENT=	Restricted shell allowing only scp and/or sftp
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}

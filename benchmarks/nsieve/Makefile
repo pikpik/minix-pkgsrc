@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/05/16 20:46:19 zafer Exp $
+# $NetBSD: Makefile,v 1.15 2010/01/25 00:41:56 zafer Exp $
 
 DISTNAME=		nsieve.c
 PKGNAME=		nsieve-1.2b
@@ -10,7 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Sieve of Eratosthenes benchmark
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

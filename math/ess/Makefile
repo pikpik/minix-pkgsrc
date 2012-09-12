@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/09/15 08:46:21 markd Exp $
+# $NetBSD: Makefile,v 1.21 2011/11/10 21:31:49 hans Exp $
 
 DISTNAME=	ess-5.11
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://ess.r-project.org/
 COMMENT=	Emacs Speaks Statistics
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	makeinfo perl
 EMACS_MODULES=	base

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/12/22 16:32:04 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2012/08/14 20:20:55 fhajny Exp $
 
 DISTNAME=	scipy-0.7.2
 PKGNAME=	${PYPKGPREFIX}-scipy-0.7.2
@@ -9,8 +9,6 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.scipy.org/
 COMMENT=	Scientific Algorithms Library for Python
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 PLIST_SUBST+=   PYPKGPREFIX=${PYPKGPREFIX}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2011/12/28 19:19:31 joerg Exp $
+# $NetBSD: Makefile,v 1.77 2012/07/02 16:02:53 joerg Exp $
 #
 # NOTE: If you update this package, it is *mandatory* that you update
 # 	pkgsrc/pkgtools/libnbcompat/files/README to reflect the actual
@@ -13,8 +13,6 @@ DISTFILES=		# empty
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		Portable NetBSD compatibility library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 MAKE_ENV+=		LIBMODE=${LIBMODE}

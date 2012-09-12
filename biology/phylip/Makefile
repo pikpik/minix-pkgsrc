@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/05/19 08:59:04 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2010/07/10 11:26:32 obache Exp $
 
 DISTNAME=	phylip-3.69
 CATEGORIES=	biology
@@ -12,8 +12,6 @@ LICENSE=		phylip-license
 RESTRICTED=		Distribution permitted only if no fee is charged.
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 

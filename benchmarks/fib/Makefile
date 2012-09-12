@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/05/16 20:29:55 zafer Exp $
+# $NetBSD: Makefile,v 1.15 2010/01/25 00:27:48 zafer Exp $
 
 DISTNAME=		fib.c
 PKGNAME=		fib-980203
@@ -10,7 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Mathematical benchmark
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

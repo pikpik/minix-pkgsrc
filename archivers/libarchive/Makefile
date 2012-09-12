@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/10/26 08:32:50 cheusov Exp $
+# $NetBSD: Makefile,v 1.35 2011/11/01 06:43:16 sbd Exp $
 #
 
 DISTNAME=	libarchive-2.8.4
@@ -10,8 +10,6 @@ DISTFILES=	# empty
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/libarchive/
 COMMENT=	Library to read/create different archive formats
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

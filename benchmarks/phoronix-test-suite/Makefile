@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/06/16 02:50:47 taca Exp $
+# $NetBSD: Makefile,v 1.4 2012/08/15 22:08:16 marino Exp $
 #
 
 DISTNAME=	phoronix-test-suite-${PTS_VERSION}
@@ -11,8 +11,6 @@ MAINTAINER=	jym@NetBSD.org
 HOMEPAGE=	http://www.phoronix-test-suite.com/
 COMMENT=	Phoronix Benchmarking Suite
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PHP_PKG_PREFIX}-curl>=5.2:../../www/php-curl
 DEPENDS+=	${PHP_PKG_PREFIX}-dom>=5.2:../../textproc/php-dom

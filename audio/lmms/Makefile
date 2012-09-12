@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/01/13 10:54:46 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/06/04 09:29:54 wiz Exp $
 #
 
 DISTNAME=		lmms-0.2.0
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://lmms.sourceforge.net/
 COMMENT=		Linux MultiMedia Studio
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

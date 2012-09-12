@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/11/10 17:21:37 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2009/09/03 11:50:52 asau Exp $
 #
 
 DISTNAME=	abs-src-0.8
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.scarlet.be/~pin01858/abs.html
 COMMENT=	Free spreadsheet with graphical user interface
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=	YES
 MAKE_FILE=	Makefile.netBSD

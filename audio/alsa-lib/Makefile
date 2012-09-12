@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/01/02 04:06:24 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/02/15 19:43:51 hans Exp $
 #
 
 DISTNAME=	alsa-lib-1.0.22
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.alsa-project.org/
 COMMENT=	Advanced Linux Sound Architecture (ALSA)
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

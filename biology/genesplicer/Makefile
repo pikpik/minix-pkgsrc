@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/03 01:10:05 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2008/05/26 02:13:16 joerg Exp $
 #
 
 DISTNAME=		GeneSplicer
@@ -9,8 +9,6 @@ MASTER_SITES=		ftp://ftp.tigr.org/pub/software/GeneSplicer/
 MAINTAINER=		hdp@cs.nmsu.edu
 HOMEPAGE=		ftp://ftp.tigr.org/pub/software/GeneSplicer/
 COMMENT=		Computational Method for Splice Site Prediction
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		pax

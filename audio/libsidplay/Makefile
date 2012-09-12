@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/07/14 12:55:57 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2009/03/22 10:33:42 pooka Exp $
 #
 
 DISTNAME=	libsidplay-1.36.59
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tnsp.org/?p=libsidplay1
 COMMENT=	Sidplay Library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	sidplay-1.36.*
 

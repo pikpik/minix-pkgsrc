@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2005/06/16 06:57:41 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2008/03/03 01:10:06 jlam Exp $
 #
 
 DISTNAME=		stride
@@ -9,8 +9,6 @@ MASTER_SITES=		ftp://ftp.ebi.ac.uk/pub/software/unix/stride/src/
 MAINTAINER=		hdp@cs.nmsu.edu
 HOMEPAGE=		http://wolf.bi.umist.ac.uk/unix/stride.html
 COMMENT=		Protein secondary structure assignment from atomic coordinates
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 INSTALLATION_DIRS=	bin

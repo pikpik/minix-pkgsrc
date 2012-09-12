@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2010/02/10 19:17:32 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/06/14 07:45:24 sbd Exp $
 #
 
 DISTNAME=		ices-${ICES_VERSION}
@@ -11,8 +11,6 @@ MASTER_SITES=		http://svn.xiph.org/releases/ices/
 MAINTAINER=		kim@tac.nyc.ny.us
 HOMEPAGE=		http://www.icecast.org/ices.php
 COMMENT=		Source client for a streaming server
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		automake pkg-config
 USE_LIBTOOL=		yes
