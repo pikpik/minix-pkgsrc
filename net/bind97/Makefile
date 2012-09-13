@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/07/24 21:01:11 spz Exp $
+# $NetBSD: Makefile,v 1.18 2012/08/26 14:23:49 wiz Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGNAME=	${DISTNAME:S/-P/pl/}
@@ -16,7 +16,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 
-BIND_VERSION=	9.7.6-P2
+BIND_VERSION=	9.7.6-P3
 
 .include "../../mk/bsd.prefs.mk"
 
