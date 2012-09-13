@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.2921 2012/09/13 09:13:23 asau Exp $
+$NetBSD: CHANGES-2012,v 1.2946 2012/09/13 17:53:23 asau Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4476,3 +4476,28 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated lang/gcc47 to 4.7.0nb4 [sbd 2012-09-13]
 	Updated math/mathomatic to 16.0.4 [asau 2012-09-13]
 	Added lang/gcc47-libs version 4.7.0nb5 [sbd 2012-09-13]
+	Updated devel/hg-git to 0.3.3 [cegger 2012-09-13]
+	Updated finance/gnucash to 2.4.11nb2 [wiz 2012-09-13]
+	Added editors/p5-Wx-Scintilla version 0.39 [sno 2012-09-13]
+	Updated editors/p5-Padre to 0.96 [sno 2012-09-13]
+	Updated devel/p5-Const-Fast to 0.013 [sno 2012-09-13]
+	Updated devel/p5-Filesys-Notify-Simple to 0.08 [sno 2012-09-13]
+	Updated devel/p5-Git-Repository to 1.26 [sno 2012-09-13]
+	Updated devel/p5-Hash-MultiValue to 0.12 [sno 2012-09-13]
+	Updated devel/p5-IO-Compress to 2.055 [sno 2012-09-13]
+	Updated devel/p5-IO-TieCombine to 1.002 [sno 2012-09-13]
+	Updated devel/p5-Sub-Exporter-Progressive to 0.001006 [sno 2012-09-13]
+	Added devel/p5-syntax version 0.004 [sno 2012-09-13]
+	Updated math/libmatheval to 1.1.8 [asau 2012-09-13]
+	Added devel/p5-Syntax-Keyword-Junction version 0.003001 [sno 2012-09-13]
+	Updated devel/p5-Moose-Autobox to 0.13 [sno 2012-09-13]
+	Updated devel/p5-Module-ScanDeps to 1.09 [sno 2012-09-13]
+	Updated devel/p5-PadWalker to 1.9.6 [sno 2012-09-13]
+	Updated devel/p5-Perl-Tidy to 20120714 [sno 2012-09-13]
+	Updated devel/p5-Perl-Critic to 1.117 [sno 2012-09-13]
+	Updated devel/p5-Test-CPAN-Meta-YAML to 0.21 [sno 2012-09-13]
+	Updated editors/p5-Padre-Plugin-PerlCritic to 0.12 [sno 2012-09-13]
+	Updated editors/p5-Padre-Plugin-PerlTidy to 0.22 [sno 2012-09-13]
+	Updated math/mpcomplex to 1.0.1 [asau 2012-09-13]
+	Updated math/mpfr to 3.1.1p2 [asau 2012-09-13]
+	Updated math/mtl to 2.1.2.22 [asau 2012-09-13]

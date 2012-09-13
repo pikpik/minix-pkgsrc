@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.537 2012/07/11 12:58:56 minskim Exp $
+# $NetBSD: Makefile,v 1.538 2012/07/25 17:19:37 imil Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -576,6 +576,7 @@ SUBDIR+=	tex-seminar-doc
 SUBDIR+=	tex-sepnum
 SUBDIR+=	tex-sepnum-doc
 SUBDIR+=	tex-setspace
+SUBDIR+=	tex-shadethm
 SUBDIR+=	tex-shadow
 SUBDIR+=	tex-shadow-doc
 SUBDIR+=	tex-showtags
