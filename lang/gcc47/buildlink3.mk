@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.3 2012/08/20 07:19:12 sbd Exp $
+# $NetBSD: buildlink3.mk,v 1.5 2012/09/13 10:11:02 sbd Exp $
 
 BUILDLINK_TREE+=	gcc47
 
@@ -8,6 +8,7 @@ GCC47_BUILDLINK3_MK:=
 BUILDLINK_API_DEPENDS.gcc47+=	gcc47>=${_GCC_REQD}
 BUILDLINK_ABI_DEPENDS.gcc47+=	gcc47>=4.7.0
 BUILDLINK_PKGSRCDIR.gcc47=	../../lang/gcc47
+BUILDLINK_DEPMETHOD.gcc47?=	build
 
 FIND_PREFIX:=	BUILDLINK_PREFIX.gcc47=gcc47
 .include "../../mk/find-prefix.mk"
@@ -16,19 +17,10 @@ BUILDLINK_PASSTHRU_DIRS+=	${BUILDLINK_PREFIX.gcc47}/gcc47
 BUILDLINK_FILES.gcc47=		#empty
 BUILDLINK_AUTO_VARS.gcc47=	no
 
-# When not using the GNU linker, gcc will always link shared libraries
-# against the shared version of libgcc. Always enable _USE_GCC_SHILB on
-# platforms that don't use the GNU linker, such as SunOS.
-.include "../../mk/bsd.fast.prefs.mk"
-.if ${OPSYS} == "SunOS"
-_USE_GCC_SHLIB= yes
-.endif
-
 # Packages that link against shared libraries need a full dependency.
 .if defined(_USE_GCC_SHLIB)
-BUILDLINK_DEPMETHOD.gcc47+=	full
-.else
-BUILDLINK_DEPMETHOD.gcc47?=	build
+DEPENDS+=	{gcc47,gcc47-libs}>=${_GCC_REQD}:../../lang/gcc47-libs
+ABI_DEPENDS+=	{gcc47,gcc47-libs}>=4.7.0:../../lang/gcc47-libs
 .endif
 
 pkgbase := gcc47
