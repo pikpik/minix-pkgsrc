@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.73 2012/08/13 11:25:57 drochner Exp $
+# $NetBSD: Makefile,v 1.74 2012/09/07 19:16:48 adam Exp $
 
 DISTNAME=	inkscape-0.48.3.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=inkscape/}
 EXTRACT_SUFX=	.tar.bz2
@@ -65,7 +65,7 @@ BUILDLINK_API_DEPENDS.poppler-includes+= poppler-includes>=0.12.2
 .include "../../devel/pango/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
-.include "../../graphics/lcms/buildlink3.mk"
+.include "../../graphics/lcms2/buildlink3.mk"
 .include "../../graphics/libart/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../lang/python/application.mk"

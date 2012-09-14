@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.538 2012/07/25 17:19:37 imil Exp $
+# $NetBSD: Makefile,v 1.539 2012/09/13 15:23:37 jnemeth Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -89,6 +89,7 @@ SUBDIR+=	p5-LaTeX-Table
 SUBDIR+=	p5-Net-CUPS
 SUBDIR+=	p5-PostScript-MailLabels
 SUBDIR+=	p5-PostScript-Simple
+SUBDIR+=	p5-biblatex-biber
 SUBDIR+=	papersize
 SUBDIR+=	paps
 SUBDIR+=	pcps

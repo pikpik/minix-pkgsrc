@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/02/15 19:02:11 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/05/16 16:08:43 marino Exp $
 #
 
 DISTNAME=		fceu-0.98.13.src
@@ -8,7 +8,7 @@ CATEGORIES=		emulators
 MASTER_SITES=		# http://pdaxrom.theinternet.nl/fceu/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		wiz@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 #HOMEPAGE=		http://pdaxrom.theinternet.nl/fceu/
 COMMENT=		Portable NES and Famicom emulator
 

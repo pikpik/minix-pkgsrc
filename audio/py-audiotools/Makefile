@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1 2012/07/01 01:56:16 jakllsch Exp $
+# $NetBSD: Makefile,v 1.2 2012/07/01 03:52:54 dholland Exp $
 #
 
 DISTNAME=	audiotools-2.18
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISON=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=audiotools/2.18/}
 
@@ -30,6 +31,8 @@ REPLACE.bin-python.new=	${PYTHONBIN}
 REPLACE_FILES.bin-python=	audiotools/player.py
 
 EGG_NAME=	Python_Audio_Tools-${PKGVERSION_NOREV}
+
+DEPENDS+=	${PYPKGPREFIX}-urwid-[0-9]*:../../devel/py-urwid
 
 .include "../../lang/python/distutils.mk"
 .include "../../misc/libcdio/buildlink3.mk"

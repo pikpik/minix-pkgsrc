@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.14 2006/10/08 18:40:23 ben Exp $
+
+Try to dlopen the libraries straight from the directories they are in.
 
 --- src/loadso/dlopen/SDL_sysloadso.c.orig	2006-05-01 01:02:37.000000000 -0700
 +++ src/loadso/dlopen/SDL_sysloadso.c

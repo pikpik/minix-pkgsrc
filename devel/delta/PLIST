@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/delta
+bin/multidelta
+bin/topformflat

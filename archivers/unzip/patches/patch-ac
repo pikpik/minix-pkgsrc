@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.2 2010/03/03 16:27:57 wiz Exp $
+
+Fix build with -DFUNZIP.
 
 --- inflate.c.orig	2008-07-30 01:31:08.000000000 +0000
 +++ inflate.c

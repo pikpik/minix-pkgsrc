@@ -1,4 +1,6 @@
-$NetBSD: patch-Modules_FindX11.cmake,v 1.2 2011/10/15 07:24:31 adam Exp $
+$NetBSD: patch-Modules_FindX11.cmake,v 1.3 2012/08/07 16:18:26 adam Exp $
+
+Patch in pkgsrc paths for finding X.
 
 --- Modules/FindX11.cmake.orig	2011-10-04 16:09:24.000000000 +0000
 +++ Modules/FindX11.cmake
