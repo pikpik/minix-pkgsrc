@@ -2,9 +2,11 @@
 bin/xyconv
 include/xylib/brucker_raw.h
 include/xylib/cache.h
+include/xylib/canberra_cnf.h
 include/xylib/canberra_mca.h
 include/xylib/chiplot.h
 include/xylib/cpi.h
+include/xylib/csv.h
 include/xylib/dbws.h
 include/xylib/gsas.h
 include/xylib/pdcif.h
