@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2012/03/03 00:14:25 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/07/02 19:08:43 drochner Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLUGIN_NAME=	bogofilter
+PKGREVISION=	1
 .include "../../mail/claws-mail/plugins.mk"
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

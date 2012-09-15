@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.83 2012/03/03 00:12:03 wiz Exp $
+# $NetBSD: Makefile,v 1.84 2012/06/12 19:17:30 prlw1 Exp $
 
 DISTNAME=		atk-2.4.0
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/atk/2.4/}
 EXTRACT_SUFX=		.tar.xz

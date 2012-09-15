@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2009/06/30 00:07:18 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2010/11/05 13:46:44 shattered Exp $
 #
 
 DISTNAME=		japhar-0.08
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_BACKUP}
 

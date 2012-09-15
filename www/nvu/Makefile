@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:41:54 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/03/03 00:14:07 wiz Exp $
 #
 
 DISTNAME=	nvu-1.0-sources
 PKGNAME=	${DISTNAME:S/-sources//}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	http://cvs.nvu.com/download/
 EXTRACT_SUFX=	.tar.bz2

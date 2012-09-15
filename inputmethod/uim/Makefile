@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.62 2012/07/15 08:22:50 wiz Exp $
+# $NetBSD: Makefile,v 1.64 2012/09/15 10:05:18 obache Exp $
 #
 
 .include "../../inputmethod/uim/Makefile.common"
 
 COMMENT=		Multilingual input method library
+#LICENSE=		See ${WRKSRC}/COPYING
 
 CONFLICTS+=		uim-qt4-immodule-[0-9]*
 

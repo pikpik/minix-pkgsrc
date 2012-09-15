@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.44 2012/03/03 00:11:53 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2012/09/15 10:06:12 obache Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
 
 PKGNAME=		poppler-glib-${POPPLER_VERS}
+PKGREVISION=		1
 
 COMMENT=		PDF rendering library (GLib wrapper)
 MAINTAINER=		reed@reedmedia.net
@@ -47,6 +48,5 @@ post-install:
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
-.include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

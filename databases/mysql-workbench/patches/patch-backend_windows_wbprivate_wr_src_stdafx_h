@@ -2,9 +2,9 @@ $NetBSD: patch-backend_windows_wbprivate_wr_src_stdafx_h,v 1.1 2012/05/07 18:40:
 
 Fix build with latest glib2.
 
---- backend/windows/wbprivate.wr/src/stdafx.h.orig	2011-03-17 12:48:41.000000000 +0000
+--- backend/windows/wbprivate.wr/src/stdafx.h~	2011-03-17 12:48:41.000000000 +0000
 +++ backend/windows/wbprivate.wr/src/stdafx.h
-@@ -65,7 +65,7 @@
+@@ -48,7 +48,7 @@
  
  #include <gl/glu.h>
  
