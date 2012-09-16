@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.213 2012/05/11 11:09:42 joerg Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.215 2012/09/16 07:37:10 sbd Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -272,6 +272,11 @@ ${_depmethod_}+=	${_BLNK_ADD_TO.${_depmethod_}}
 #				exist before they're added to the search
 #				paths.
 #
+#  BUILDLINK_AUTO_DIRS.<pkg>	"yes" or "no" for whether BUILDLINK_{INCDIRS,
+#				LIBDIRS,RPATHDIRS}.<pkg> should automatically
+#				be added to the compiler/linker search paths.
+#				Defaults to "yes".
+#
 .for _pkg_ in ${_BLNK_PACKAGES}
 #
 # If we're using the built-in package, then provide sensible defaults.
@@ -354,10 +359,17 @@ BUILDLINK_PREFIX.${_pkg_}=	BUILDLINK_PREFIX.${_pkg_}_not_found
 MAKEVARS+=	BUILDLINK_PREFIX.${_pkg_}
 .  endif
 
+.  if empty(BUILDLINK_PREFIX.${_pkg_}:N/usr:N/boot/common:N/)
+BUILDLINK_DIR.${_pkg_}=	${BUILDLINK_PREFIX.${_pkg_}}
+.  else
+BUILDLINK_DIR.${_pkg_}= ${BUILDLINK_DIR}
+.  endif
+
 BUILDLINK_AUTO_VARS.${_pkg_}?=	yes
 BUILDLINK_CPPFLAGS.${_pkg_}?=	# empty
 BUILDLINK_LDFLAGS.${_pkg_}?=	# empty
 BUILDLINK_LIBS.${_pkg_}?=	# empty
+BUILDLINK_AUTO_DIRS.${_pkg_}?=	yes
 BUILDLINK_INCDIRS.${_pkg_}?=	include
 BUILDLINK_LIBDIRS.${_pkg_}?=	lib
 .  if !empty(BUILDLINK_DEPMETHOD.${_pkg_}:Mfull)
@@ -402,6 +414,8 @@ BUILDLINK_LIBS+=	${_flag_}
 .      endif
 .    endfor
 .  endif
+. if defined(BUILDLINK_AUTO_DIRS.${_pkg_}) && \
+     !empty(BUILDLINK_AUTO_DIRS.${_pkg_}:M[yY][eE][sS])
 .  if !empty(BUILDLINK_INCDIRS.${_pkg_})
 .    for _dir_ in ${BUILDLINK_INCDIRS.${_pkg_}:S/^/${BUILDLINK_PREFIX.${_pkg_}}\//}
 .      if exists(${_dir_})
@@ -429,6 +443,7 @@ BUILDLINK_LDFLAGS+=	${COMPILER_RPATH_FLAG}${_dir_}
 .      endif
 .    endfor
 .  endif
+. endif
 .endfor
 #
 # Add the depot directory library directory for this package to the

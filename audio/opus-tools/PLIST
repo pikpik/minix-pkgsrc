@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/opusdec
+bin/opusenc
+bin/opusinfo
+man/man1/opusdec.1
+man/man1/opusenc.1
+man/man1/opusinfo.1
