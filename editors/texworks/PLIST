@@ -1,3 +1,4 @@
+@comment $NetBSD$
 bin/texworks
 share/doc/texworks/COPYING
 share/doc/texworks/README

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/05/14 09:20:39 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/09/16 11:34:45 jaapb Exp $
 #
 
 PKGNAME=	ocaml-sqlite3-${VERSION}
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--destdir "${DESTDIR}" --prefix "${PREFIX}"
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 USE_LANGUAGES=	c
 
 SUBST_CLASSES+=	destdir

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/12/06 00:19:22 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/09/16 20:12:08 jaapb Exp $
 #
 
 DISTNAME=		ocaml-mysql-1.1.1
@@ -19,7 +19,7 @@ USE_TOOLS+=		gmake
 DOCDIR=			${PREFIX}/share/doc/ocaml-mysql
 INSTALLATION_DIRS=	${DOCDIR}
 
-BUILD_TARGET=	all doc
+BUILD_TARGET=	all htdoc
 PLIST_VARS=	opt
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \
     (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64") || \
