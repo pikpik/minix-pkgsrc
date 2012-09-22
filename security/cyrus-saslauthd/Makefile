@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.40 2010/02/19 19:23:50 joerg Exp $
+# $NetBSD: Makefile,v 1.41 2011/09/17 11:32:02 obache Exp $
 
 PKGNAME=	${DISTNAME:S/sasl/saslauthd/}
+PKGREVISION=	1
 
 CONFLICTS+=	cyrus-sasl<2.1.15nb2
 

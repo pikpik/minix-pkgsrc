@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2012/06/14 07:45:17 sbd Exp $
+# $NetBSD: Makefile,v 1.5 2012/09/12 00:24:36 asau Exp $
 #
 
 GST_PLUGINS0.10_NAME=	alsa
 GST_PLUGINS0.10_DIRS=	ext/alsa
-PKGREVISION=		1
+PKGREVISION=		2
 
 .include "../../multimedia/gst-plugins0.10-base/Makefile.common"
 

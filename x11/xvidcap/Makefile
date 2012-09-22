@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.19 2011/11/16 01:33:15 sbd Exp $
+# $NetBSD: Makefile,v 1.20 2012/01/24 23:15:58 marino Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
-PKGREVISION=		13
+PKGREVISION=		14
 COMMENT=		Capture X display to individual frames or MPEG video
 
 CONFIGURE_ARGS+=	--without-gtk2
