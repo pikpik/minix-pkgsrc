@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/07/16 22:55:25 jym Exp $
+# $NetBSD: Makefile,v 1.21 2012/09/12 11:09:32 drochner Exp $
 #
 # VERSION is set in version.mk as it is shared with other packages
 .include		"version.mk"
@@ -7,6 +7,7 @@ DISTNAME=		xen-${VERSION}
 PKGNAME=		xentools41-${VERSION}
 CATEGORIES=		sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
+PKGREVISION=	1
 
 DISTFILES=		${DISTNAME}.tar.gz
 DISTFILES+=		ipxe-git-v1.0.0.tar.gz

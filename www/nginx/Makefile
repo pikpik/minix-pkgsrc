@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/08/07 10:42:08 imil Exp $
+# $NetBSD: Makefile,v 1.25 2012/08/08 06:44:08 imil Exp $
 
 DISTNAME=		nginx-1.2.3
 CATEGORIES=		www
@@ -101,3 +101,4 @@ do-install:
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
+.include "Makefile.cflags"

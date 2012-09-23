@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/12 03:15:20 jnemeth Exp $
 #
 
 DISTNAME=	iksemel-1.4
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://iksemel.googlecode.com/files/
 

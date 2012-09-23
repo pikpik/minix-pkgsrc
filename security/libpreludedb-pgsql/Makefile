@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/04/22 13:44:36 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/08/05 10:02:13 obache Exp $
 #
 
 PKGNAME=		libpreludedb-pgsql-${VERSION}
-PKGREVISION=		4
+PKGREVISION=		5
 COMMENT=		PostgreSQL plugin for LibPreludeDB
 
 PKG_DESTDIR_SUPPORT=	user-destdir

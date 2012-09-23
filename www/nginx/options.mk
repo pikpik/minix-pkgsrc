@@ -1,9 +1,9 @@
-# $NetBSD: options.mk,v 1.15 2012/06/12 15:46:04 wiz Exp $
+# $NetBSD: options.mk,v 1.16 2012/08/06 14:31:58 imil Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.nginx
 PKG_SUPPORTED_OPTIONS=	dav flv gtools inet6 mail-proxy memcache naxsi pcre \
 			push realip ssl sub uwsgi image-filter upload debug \
-			status
+			status nginx-autodetect-cflags
 PKG_SUGGESTED_OPTIONS=	inet6 pcre ssl
 
 PLIST_VARS+=		naxsi uwsgi
