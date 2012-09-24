@@ -1,0 +1,31 @@
+@comment $NetBSD$
+@comment $NetBSD$
+${PYSITELIB}/unittest_xml_reporting-${PKGVERSION}-py2.7.egg-info/PKG-INFO
+${PYSITELIB}/unittest_xml_reporting-${PKGVERSION}-py2.7.egg-info/SOURCES.txt
+${PYSITELIB}/unittest_xml_reporting-${PKGVERSION}-py2.7.egg-info/dependency_links.txt
+${PYSITELIB}/unittest_xml_reporting-${PKGVERSION}-py2.7.egg-info/not-zip-safe
+${PYSITELIB}/unittest_xml_reporting-${PKGVERSION}-py2.7.egg-info/top_level.txt
+${PYSITELIB}/xmlrunner/__init__.py
+${PYSITELIB}/xmlrunner/__init__.pyc
+${PYSITELIB}/xmlrunner/__init__.pyo
+${PYSITELIB}/xmlrunner/extra/__init__.py
+${PYSITELIB}/xmlrunner/extra/__init__.pyc
+${PYSITELIB}/xmlrunner/extra/__init__.pyo
+${PYSITELIB}/xmlrunner/extra/djangotestrunner.py
+${PYSITELIB}/xmlrunner/extra/djangotestrunner.pyc
+${PYSITELIB}/xmlrunner/extra/djangotestrunner.pyo
+${PYSITELIB}/xmlrunner/tests/__init__.py
+${PYSITELIB}/xmlrunner/tests/__init__.pyc
+${PYSITELIB}/xmlrunner/tests/__init__.pyo
+${PYSITELIB}/xmlrunner/tests/fixtures/errord_test_case.xml
+${PYSITELIB}/xmlrunner/tests/fixtures/failed_test_case.xml
+${PYSITELIB}/xmlrunner/tests/fixtures/mixed_test_case.xml
+${PYSITELIB}/xmlrunner/tests/fixtures/successful_test_case.xml
+${PYSITELIB}/xmlrunner/tests/fixtures/unicode_error_diff.xml
+${PYSITELIB}/xmlrunner/tests/fixtures/unicode_error_nodiff.xml
+${PYSITELIB}/xmlrunner/tests/testsuite.py
+${PYSITELIB}/xmlrunner/tests/testsuite.pyc
+${PYSITELIB}/xmlrunner/tests/testsuite.pyo
+${PYSITELIB}/xmlrunner/tests/testsuite_cases.py
+${PYSITELIB}/xmlrunner/tests/testsuite_cases.pyc
+${PYSITELIB}/xmlrunner/tests/testsuite_cases.pyo
