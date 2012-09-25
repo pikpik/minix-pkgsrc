@@ -1,8 +1,8 @@
-$NetBSD$
+$NetBSD: patch-src_hash_dso_hash.h,v 1.1 2011/04/14 07:26:34 adam Exp $
 
 Fix building with Clang.
 
---- src/hash/dso_hash.h.orig	2011-04-14 07:16:11.000000000 +0000
+--- src/hash/dso_hash.h.orig	2010-03-25 14:58:07.000000000 +0000
 +++ src/hash/dso_hash.h
 @@ -100,7 +100,7 @@ public:
      inline bool remove(zmm::String key)
