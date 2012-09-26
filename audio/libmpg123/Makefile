@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/09/14 15:46:01 hans Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/12 00:24:43 asau Exp $
 #
 
 .include "../../audio/libmpg123/Makefile.common"
@@ -22,10 +22,5 @@ post-install:
 		${DESTDIR:Q}${PREFIX:Q}/lib/pkgconfig
 
 .include "mpg123-options.mk"
-
-.include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} == "SunOS"
-MAKE_ENV+=	SunOS_LDFLAGS="-shared -mimpure-text"
-.endif
 
 .include "../../mk/bsd.pkg.mk"
