@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/09/14 11:03:11 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/05/06 20:00:23 wiz Exp $
 
 DISTNAME=	xf86-input-keyboard-1.6.1
 CATEGORIES=	x11
@@ -14,6 +14,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	gmake pkg-config
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4
+.endif
 
 .include "../../x11/inputproto/buildlink3.mk"
 .include "../../x11/libxkbfile/buildlink3.mk"

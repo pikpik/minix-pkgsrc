@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2010/04/09 08:53:05 tnn Exp $
+# $NetBSD: Makefile,v 1.13 2010/09/14 11:03:17 wiz Exp $
 #
 
 DISTNAME=	xf86-video-vmware-10.16.9
@@ -16,6 +16,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4
+.endif
 
 .include "../../x11/modular-xorg-server/buildlink3.mk"
 .include "../../x11/randrproto/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2012/03/13 14:13:52 fhajny Exp $
+# $NetBSD: Makefile,v 1.68 2012/04/17 17:52:01 joerg Exp $
 #
 
 DISTNAME=	xorg-server-1.6.5
@@ -47,6 +47,9 @@ CONFIGURE_ARGS+=	--with-vendor-name-short="pkgsrc"
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--with-builder-addr="tech-x11@NetBSD.org"
 CONFIGURE_ARGS+=	--with-os-vendor="The NetBSD Foundation"
+.endif
+.if ${OPSYS} == "NetBSD"
+CONFIGURE_ARGS+=	--without-dtrace
 .endif
 .if ${OPSYS} == "FreeBSD"
 CONFIGURE_ARGS+=	--without-dtrace

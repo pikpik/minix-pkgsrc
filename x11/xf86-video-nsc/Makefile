@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/09/14 11:03:14 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/15 23:06:06 dholland Exp $
 #
 
 DISTNAME=	xf86-video-nsc-2.8.3
@@ -18,6 +18,12 @@ GNU_CONFIGURE=	yes
 USE_TOOLS+=	autoconf autoheader automake autoreconf pkg-config
 
 BUILD_DEPENDS+=	xorg-util-macros>=1.2.0:../../devel/xorg-util-macros
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4
+.endif
 
 post-extract:
 	cp ${FILESDIR}/assyntax.h ${WRKSRC}/src/

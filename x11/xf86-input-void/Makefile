@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/06/07 11:24:35 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/09/14 11:03:11 wiz Exp $
 
 DISTNAME=	xf86-input-void-1.2.0
 PKGREVISION=	2
@@ -15,6 +15,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	pkg-config
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4
+.endif
 
 .include "../../x11/inputproto/buildlink3.mk"
 .include "../../x11/modular-xorg-server/buildlink3.mk"

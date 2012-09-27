@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/02/13 11:58:11 obache Exp $
+# $NetBSD: Makefile,v 1.11 2010/09/14 11:03:11 wiz Exp $
 
 DISTNAME=	xf86-input-vmmouse-12.6.6
 PKGREVISION=	1
@@ -15,6 +15,12 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	pkg-config
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4
+.endif
 
 .include "../../x11/randrproto/buildlink3.mk"
 .include "../../x11/inputproto/buildlink3.mk"
