@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.102 2012/09/22 13:48:20 ryoon Exp $
+# $NetBSD: Makefile,v 1.103 2012/09/23 05:36:24 obache Exp $
 
 PKGREVISION=	2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
+MAKE_JOBS_SAFE=		no
 
 .include "Makefile.common"
 
