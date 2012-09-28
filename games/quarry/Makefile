@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/09/07 19:16:38 adam Exp $
+# $NetBSD: Makefile,v 1.19 2012/09/15 10:04:43 obache Exp $
 #
 
 DISTNAME=	quarry-0.2.0
@@ -16,6 +16,7 @@ GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
 
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../databases/shared-mime-info/mimedb.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

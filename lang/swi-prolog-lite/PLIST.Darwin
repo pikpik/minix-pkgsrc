@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/swi-prolog-${PKGVERSION}/lib/${MACHINE_GNU_PLATFORM}/libswipl.so
+lib/swi-prolog-${PKGVERSION}/lib/${MACHINE_GNU_PLATFORM}/libswipl.so.${PKGVERSION}
