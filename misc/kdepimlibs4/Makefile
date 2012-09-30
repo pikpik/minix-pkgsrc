@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/09/07 19:17:09 adam Exp $
+# $NetBSD: Makefile,v 1.37 2012/09/15 10:05:39 obache Exp $
 
 DISTNAME=	kdepimlibs-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
@@ -12,7 +12,7 @@ CMAKE_DEPENDENCIES_REWRITE= _KDE_build/KDEPimLibsDependencies.cmake
 
 REPLACE_PERL+= mailtransport/kconf_update/migrate-transports.pl
 
-BUILDLINK_API_DEPENDS.akonadi+=  akonadi>=1.5.52
+BUILDLINK_API_DEPENDS.akonadi+=	akonadi>=1.5.52
 
 .include "../../meta-pkgs/kde4/kde4.mk"
 

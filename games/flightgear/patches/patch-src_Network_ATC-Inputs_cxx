@@ -1,0 +1,23 @@
+$NetBSD$
+
+Fix build failure.
+
+--- src/Network/ATC-Inputs.cxx~	2012-08-16 14:20:57.000000000 +0000
++++ src/Network/ATC-Inputs.cxx
+@@ -27,14 +27,14 @@
+ 
+ #include <simgear/compiler.h>
+ 
+-#if defined( unix ) || defined( __CYGWIN__ )
++//#if defined( unix ) || defined( __CYGWIN__ )
+ #  include <sys/types.h>
+ #  include <sys/stat.h>
+ #  include <fcntl.h>
+ #  include <stdlib.h>
+ #  include <unistd.h>
+ #  include <istream>
+-#endif
++//#endif
+ 
+ #include <errno.h>
+ #include <math.h>

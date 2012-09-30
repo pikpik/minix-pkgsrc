@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: url2pkg.pl,v 1.17 2010/02/24 22:27:11 joerg Exp $
+# $NetBSD: url2pkg.pl,v 1.18 2011/05/30 07:28:23 cheusov Exp $
 #
 
 # Copyright (c) 2010 The NetBSD Foundation, Inc.
@@ -337,9 +337,6 @@ sub generate_initial_package($) {
 		["HOMEPAGE", $homepage],
 		["COMMENT", "TODO: Short description of the package"],
 		["#LICENSE", "# TODO: (see mk/license.mk)"],
-	]);
-	print_section(*MF, [
-		["PKG_DESTDIR_SUPPORT", "user-destdir"],
 	]);
 	print MF ("# url2pkg-marker (please do not remove this line.)\n");
 	print MF (".include \"../../mk/bsd.pkg.mk\"\n");
