@@ -1,7 +1,7 @@
 $NetBSD$
 
---- iodev/soundosx.cc.orig	2011-02-14 21:14:20.000000000 +0000
-+++ iodev/soundosx.cc
+--- iodev/sound/soundosx.cc.orig	2012-09-02 11:30:10.000000000 +0000
++++ iodev/sound/soundosx.cc
 @@ -21,7 +21,7 @@
  // This file (SOUNDOSX.CC) written and donated by Brian Huffman
  

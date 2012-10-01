@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3065 2012/09/30 22:09:29 adam Exp $
+$NetBSD: CHANGES-2012,v 1.3080 2012/10/01 13:28:28 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4745,3 +4745,19 @@ Changes to the packages collection and infrastructure in 2012:
 	Added devel/userspace-rcu version 0.7.3 [pettai 2012-09-30]
 	Updated benchmark/thrulay to 0.9 [adam 2012-10-01]
 	Updated misc/rlwrap to 0.37 [dholland 2012-09-30]
+	Updated mail/dovecot2 to 2.1.10 [ghen 2012-10-01]
+	Updated mail/dovecot2-pigeonhole to 0.3.3 [ghen 2012-10-01]
+	Updated net/libquvi-scripts to 0.4.9 [wiz 2012-10-01]
+	Updated fonts/misaki-fonts to 1.0.20120603 [ryoon 2012-10-01]
+	Updated fonts/vlgothic-ttf to 20120928 [ryoon 2012-10-01]
+	Updated fonts/kanjistrokeorders-ttf to 3.000 [ryoon 2012-10-01]
+	Updated fonts/freefont-ttf to 20120503 [ryoon 2012-10-01]
+	Updated fonts/liberation-ttf to 2.00.0 [ryoon 2012-10-01]
+	Updated fonts/sourcesans-fonts to 1.036 [ryoon 2012-10-01]
+	Updated www/aipo to 7.0.1 [ryoon 2012-10-01]
+	Updated converters/dos2unix to 6.0.2 [ryoon 2012-10-01]
+	Updated misc/fbreader to 0.99.2 [ryoon 2012-10-01]
+	Updated graphics/fotoxx to 12.10 [ryoon 2012-10-01]
+	Updated textproc/coccigrep to 1.11 [ryoon 2012-10-01]
+	Updated misc/libreoffice3-bin to 3.6.1 [ryoon 2012-10-01]
+	Updated emulators/bochs to 2.6 [ryoon 2012-10-01]

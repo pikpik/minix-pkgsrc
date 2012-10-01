@@ -1,4 +1,6 @@
-$NetBSD: patch-ab,v 1.9 2012/08/24 12:48:11 ryoon Exp $
+$NetBSD: patch-ab,v 1.10 2012/08/24 20:35:39 ryoon Exp $
+
+* Add non-execinfo.h platform support.
 
 --- zfuncs.cc.orig	2012-08-04 11:58:30.000000000 +0000
 +++ zfuncs.cc

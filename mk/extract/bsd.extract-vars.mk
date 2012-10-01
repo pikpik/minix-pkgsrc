@@ -1,4 +1,4 @@
-# $NetBSD: bsd.extract-vars.mk,v 1.12 2009/07/08 13:27:52 minskim Exp $
+# $NetBSD: bsd.extract-vars.mk,v 1.13 2010/12/22 09:33:30 tron Exp $
 #
 # This Makefile fragment is included separately by bsd.pkg.mk and
 # defines some variables which must be defined earlier than where
@@ -83,3 +83,7 @@ USE_TOOLS+=	rpm2pkg
 .if !empty(EXTRACT_ONLY:M*.gem)
 USE_TOOLS+=	gem
 .endif
+.if !empty(EXTRACT_ONLY:M*.7z)
+USE_TOOLS+=    7za
+.endif
+

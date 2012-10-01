@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11536 2012/09/30 22:11:45 dholland Exp $
+$NetBSD: TODO,v 1.11542 2012/10/01 13:14:20 ryoon Exp $
 
 Suggested new packages
 ======================
@@ -368,7 +368,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o adtool-1.3
 	o aewm++-1.0.27
 	o afterstep-2.2.11
-	o aipo-7.0.1
 	o akonadi-1.8.0
 	o alacarte-0.13.2
 	o album-4.08
@@ -482,7 +481,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o clustalw-2.0.12 [pkg/43395]
 	o clutter-1.12.0
 	o clutter-gst-1.6.0
-	o coccigrep-1.11
 	o colorize-0.3.4
 	o colortail-0.3.3
 	o connect-1.96
@@ -529,7 +527,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o dinotrace-mode-9.3e
 	o dnsmasq-2.63
 	o doclifter-2.9
-	o dos2unix-6.0.2
 	o dovecot2-2.1.10
 	o dovecot2-pigeonhole-0.3.3
 	o dri-7.8.2 [wip]
@@ -587,7 +584,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o faces-1.7.7
 	o fakeroot-1.6.5
 	o farsight2-0.0.31
-	o fbreader-0.99.2
 	o fcitx-3.6.2
 	o feh-2.6.3
 	o felt-3.07
@@ -606,7 +602,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o flashplayer-0.4.13
 	o flpsed-0.4.4
 	o fltk2-2.0pre8323
-	o fotoxx-12.09.1
 	o fox-1.6.41
 	o freeciv-2.3.2
 	o freefont-20120503
@@ -858,7 +853,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o libquantum-1.1.0 [pkg/43728, development release]
 	o libraw-0.14.8
 	o libreoffice-3.6.1
-	o libreoffice3-bin-3.6.1
 	o librep-0.92.2.1
 	o libspf2-1.2.9.1
 	o libssh-0.5.2 [www.libssh.org]
