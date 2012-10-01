@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.894 2012/09/16 00:37:25 taca Exp $
+# $NetBSD: Makefile,v 1.895 2012/09/20 06:44:29 jaapb Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -344,6 +344,7 @@ SUBDIR+=	p5-HTML-Table
 SUBDIR+=	p5-HTML-TableExtract
 SUBDIR+=	p5-HTML-Tagset
 SUBDIR+=	p5-HTML-Template
+SUBDIR+=	p5-HTML-Template-Expr
 SUBDIR+=	p5-HTML-Template-Pro
 SUBDIR+=	p5-HTML-Tiny
 SUBDIR+=	p5-HTML-TokeParser-Simple

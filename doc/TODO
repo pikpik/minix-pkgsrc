@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11532 2012/09/30 16:11:13 wiz Exp $
+$NetBSD: TODO,v 1.11536 2012/09/30 22:11:45 dholland Exp $
 
 Suggested new packages
 ======================
@@ -547,7 +547,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o efax-gtk-3.2.9
 	o egtk-0.3.6.2
 	o eigen3-3.1.1
-	o ejabberd-2.1.11
 	o ekiga-3.2.7
 	o electric-9.03
 	o electricfence-2.4.16
@@ -605,7 +604,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o findutils-4.5.10
 	o fisg-0.3.12
 	o flashplayer-0.4.13
-	o flightgear-2.6
 	o flpsed-0.4.4
 	o fltk2-2.0pre8323
 	o fotoxx-12.09.1
@@ -736,6 +734,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o gworkspace-0.9.1
 	o gxine-0.5.907
 	o gzip-1.5
+	o h323plus-1.24.0 [replaces openh323, from http://www.h323plus.org/]
 	o hackbot-2.21
 	o hamster-applet-2.32.1 [GNOME 2.32]
 	o hanzim-3.5
@@ -978,7 +977,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o open-vm-tools-2010.09.19.301124
 	o opendkim-2.6.7
 	o opengrok-0.11.1
-	o openh323-1.19.1
 	o openmortal-0.7.1
 	o openmpi-1.6.2
 	o openoffice-3.4
@@ -1058,6 +1056,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o psmisc-22.18
 	o ptlib-2.8.0 [pkg/42941]
 	o ptlib-2.8.3
+	o ptlib-2.10.7
 	o puf-1.0.0
 	o pulseaudio-2.0
 	o puppet-2.7.6
@@ -1104,7 +1103,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o riece-7.0.1 [pkg/43970]
 	o rio500-0.8.1
 	o ripmime-1.4.0.9
-	o rlwrap-0.37 [pkg/46078]
 	o robodoc-4.99.6
 	o root-5.34.01
 	o root-tail-1.2
