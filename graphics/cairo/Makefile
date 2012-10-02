@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2012/09/09 01:28:06 dholland Exp $
+# $NetBSD: Makefile,v 1.106 2012/10/02 17:11:07 tron Exp $
 
 DISTNAME=	cairo-1.12.2
 PKGREVISION=	2

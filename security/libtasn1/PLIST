@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.11 2008/11/24 15:36:03 adam Exp $
+@comment $NetBSD$
 bin/asn1Coding
 bin/asn1Decoding
 bin/asn1Parser
@@ -36,6 +36,7 @@ man/man3/asn1_parser2array.3
 man/man3/asn1_parser2tree.3
 man/man3/asn1_perror.3
 man/man3/asn1_print_structure.3
+man/man3/asn1_read_node_value.3
 man/man3/asn1_read_tag.3
 man/man3/asn1_read_value.3
 man/man3/asn1_strerror.3

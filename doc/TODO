@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11545 2012/10/01 15:56:19 adam Exp $
+$NetBSD: TODO,v 1.11555 2012/10/02 17:31:33 wiz Exp $
 
 Suggested new packages
 ======================
@@ -420,7 +420,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o audacity-2.0
 	o autoconvert-0.3.16
 	o autogen-5.16.2
-	o automake-1.12.4
 	o avcheck-0.91
 	o avidemux-2.6
 	o avl-2.0.2a
@@ -490,7 +489,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o covered-current-20090802
 	o cpio-2.9
 	o cpmtools-2.6
-	o cppunit-1.13.1
 	o cross-h8300-hms-binutils-2.17
 	o crossfire-client-gtk2-1.60.0
 	o cryptopp-5.6.0
@@ -857,7 +855,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o libssh-0.5.2 [www.libssh.org]
 	o libssh2-1.4.2
 	o libstree-0.4.3pre2 [pkg/43748]
-	o libtasn1-2.14
 	o libtcl-nothread-8.5.1
 	o libthrift-0.8.0
 	o libtool-2.4.2
@@ -892,7 +889,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o matchbox-panel-0.9.3
 	o mawk-1.3.4.20120627
 	o mc-4.8.1.4
-	o mdds-0.6.1
 	o mdocml-1.12.1
 	o mergeant-0.67
 	o mess-0.147
@@ -1023,7 +1019,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o planner-0.14.6
 	o ploticus-2.41
 	o ploticus-examples-230
-	o png-1.5.13
 	o po4a-0.41
 	o pokerth-0.9.3
 	o polkit-qt-0.103.0
@@ -1069,8 +1064,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o py-libxml2-2.9.0
 	o py-moin-1.9.5
 	o py-mpd-0.3.0
-	o py-pytz-2012f
-	o py-simplejson-2.6.2
 	o py-sybase-0.37
 	o py-urwid-1.0.2
 	o python33-3.3.0
@@ -1186,7 +1179,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o t1utils-1.36
 	o tacacs-4.0.4.14
 	o tads-3.0.16
-	o taglib-1.8
 	o taskjuggler-3.3.0
 	o tcpdpriv-0.9
 	o tcpdstat-0.9
@@ -1358,7 +1350,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o xinput-1.6.0
 	o xjman-0.7
 	o xkbset-0.5
-	o xkeyboard-config-2.7
 	o xli-2006.11.10
 	o xlog-2.0.5
 	o xlsatoms-1.1.1 [unpackaged]
@@ -1384,7 +1375,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o xscope-1.3.1 [unpackaged]
 	o xsd-3.3.0
 	o xsoldier-1.4
-	o xterm-282
 	o xtraceroute-0.9.1
 	o xtux-20030306
 	o xvidcap-1.1.7
