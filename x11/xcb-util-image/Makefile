@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1 2012/07/24 18:02:07 drochner Exp $
+# $NetBSD: Makefile,v 1.1 2012/08/12 21:19:06 wiz Exp $
 #
 
 DISTNAME=	xcb-util-image-0.3.9
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	http://xcb.freedesktop.org/dist/
 EXTRACT_SUFX=	.tar.bz2

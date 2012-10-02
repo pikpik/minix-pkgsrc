@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.329 2012/09/13 10:05:25 sbd Exp $
+# $NetBSD: Makefile,v 1.330 2012/09/16 15:14:12 taca Exp $
 #
 
 COMMENT=	Programming languages
@@ -144,7 +144,6 @@ SUBDIR+=	py-basicproperty
 SUBDIR+=	py-cxfreeze
 SUBDIR+=	py-psyco
 SUBDIR+=	py-pyrex
-SUBDIR+=	py24-html-docs
 SUBDIR+=	py25-html-docs
 SUBDIR+=	py26-html-docs
 SUBDIR+=	py27-html-docs

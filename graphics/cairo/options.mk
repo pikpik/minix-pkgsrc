@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.6 2010/10/13 00:11:21 spz Exp $
+# $NetBSD: options.mk,v 1.8 2012/10/02 07:39:30 tron Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cairo
 PKG_SUPPORTED_OPTIONS=	x11 xcb

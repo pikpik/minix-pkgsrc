@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.41 2012/09/07 19:16:41 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.43 2012/10/02 07:39:30 tron Exp $
 
 BUILDLINK_TREE+=	cairo
 
