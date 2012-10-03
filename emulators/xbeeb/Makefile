@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/04/07 11:38:17 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2012/04/18 00:05:13 joerg Exp $
 #
 
 DISTNAME=	xbeeb-0.4.1
@@ -23,8 +23,6 @@ FONTS_DIRS.x11=	${PREFIX}/lib/X11/fonts/xbeeb
 REQD_DIRS=	${PREFIX}/lib/X11/fonts/xbeeb
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "options.mk"
 

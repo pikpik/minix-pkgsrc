@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/05/25 11:25:56 gdt Exp $
+# $NetBSD: Makefile,v 1.13 2012/07/07 00:34:18 gdt Exp $
 #
 
 VERSION=	1.9.2
@@ -18,8 +18,6 @@ COMMENT=	Distributed fault-tolerant least-authority filesystem
 LICENSE=	gnu-gpl-v2
 
 USE_TOOLS=	gmake
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # $WRKDIR/Makefile has 'python' hardcoded; this works after hand-patching
 TEST_TARGET=	test

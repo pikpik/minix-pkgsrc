@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2012/07/02 13:37:40 adam Exp $
+# $NetBSD: Makefile,v 1.20 2012/08/29 11:22:16 obache Exp $
 
 PKGNAME=	usrp-${VERSION}
 PKGREVISION=	7
 COMMENT=	Non GNU Radio specific part of the USRP code base
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 

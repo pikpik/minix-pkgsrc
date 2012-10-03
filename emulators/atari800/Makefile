@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2012/05/23 05:03:56 dholland Exp $
+# $NetBSD: Makefile,v 1.47 2012/08/26 19:42:09 marino Exp $
 
 DISTNAME=	atari800-2.2.1
 CATEGORIES=	emulators
@@ -9,8 +9,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://atari800.sourceforge.net/
 COMMENT=	Atari 800, 800XL, 130XE and 5200 emulator
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=		copyrighted ROM images
 NO_BIN_ON_CDROM=	${RESTRICTED}

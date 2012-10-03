@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.72 2011/08/07 02:40:32 jnemeth Exp $
+# $NetBSD: Makefile,v 1.73 2012/06/09 18:44:51 dholland Exp $
 
 DISTNAME=	asterisk-1.2.37
 PKGREVISION=	3
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.asterisk.org/
 COMMENT=	The Asterisk Software PBX
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2010/01/29 16:27:13 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2011/04/22 13:43:09 obache Exp $
 #
 
 DISTNAME=	gsmlib-1.10
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.pxh.de/fs/gsmlib/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pxh.de/fs/gsmlib/
 COMMENT=	Library to access GSM mobile phones through GSM modems or IrDA devices
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt
 USE_LANGUAGES=		c c++

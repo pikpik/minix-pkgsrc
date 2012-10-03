@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2011/07/13 20:51:41 plunky Exp $
+# $NetBSD: Makefile,v 1.29 2012/06/16 19:28:19 plunky Exp $
 #
 
 DISTNAME=	obexapp-1.4.15
@@ -12,8 +12,6 @@ COMMENT=	Obex application to transfer objects to mobile equipment
 LICENSE=	modified-bsd
 
 ONLY_FOR_PLATFORM=	FreeBSD-*-* NetBSD-[4-9].*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		VARBASE
 

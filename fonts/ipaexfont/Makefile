@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/07/17 03:06:51 obache Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/14 11:04:41 ryoon Exp $
 #
 
 DISTNAME=	IPAexfont00103
@@ -12,8 +12,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://ossipedia.ipa.go.jp/ipafont/
 COMMENT=	IPAex fonts (fixed JIS X0213 Kanji, and proportional ASCII)
 LICENSE=	ipafont
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=	YES
 NO_CONFIGURE=	YES

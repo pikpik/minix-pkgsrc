@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2012/04/08 00:47:26 dholland Exp $
+# $NetBSD: Makefile,v 1.80 2012/04/08 01:28:35 dholland Exp $
 
 DISTNAME=	mgetty1.1.37-Jun05
 PKGNAME=	mgetty-1.1.37
@@ -16,8 +16,6 @@ MAKE_JOBS_SAFE=		no
 BUILD_DEPENDS+=	texi2roff-[0-9]*:../../textproc/texi2roff
 
 CONFLICTS=	hylafax-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 

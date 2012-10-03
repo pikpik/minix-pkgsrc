@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2011/12/08 20:40:32 marino Exp $
+# $NetBSD: Makefile,v 1.43 2012/06/14 07:44:37 sbd Exp $
 
 DISTNAME=	emacs-20.7
 PKGREVISION=	15
@@ -22,8 +22,6 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	dholland@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
 COMMENT=	GNU editing macros (editor)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM=	Darwin-*-* DragonFly-*-*
 

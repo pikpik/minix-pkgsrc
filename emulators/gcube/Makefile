@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/12/23 11:44:29 dsainty Exp $
+# $NetBSD: Makefile,v 1.18 2012/05/16 18:35:28 marino Exp $
 #
 
 DISTNAME=		gcube-0.4-src
@@ -13,7 +13,6 @@ HOMEPAGE=		http://gcube.exemu.net/
 COMMENT=		Opensource Nintendo GameCube(TM) emulator
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 WRKSRC=			${WRKDIR}/0.4

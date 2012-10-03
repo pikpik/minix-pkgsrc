@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/03/03 19:21:37 jlam Exp $
+# $NetBSD: Makefile,v 1.25 2009/08/25 11:56:36 wiz Exp $
 #
 
 DISTNAME=		dutil232
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.logiqx.com/Tools/DatUtil/DatUtil.php
 COMMENT=		Create and convert emulator rom checksum files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 WRKSRC=			${WRKDIR}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2011/04/22 13:43:32 obache Exp $
+# $NetBSD: Makefile,v 1.26 2011/07/28 21:09:54 minskim Exp $
 
 DISTNAME=	texlive-20110705-source
 PKGNAME=	ttf2pk-1.5
@@ -13,8 +13,6 @@ COMMENT=	TrueType to TeX PK font converter
 
 EXTRACT_ELEMENTS=	${DISTNAME}/build-aux \
 			${DISTNAME}/texk/ttf2pk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

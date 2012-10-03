@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2012/06/14 07:44:10 sbd Exp $
+# $NetBSD: Makefile,v 1.61 2012/09/15 10:04:36 obache Exp $
 
 DISTNAME=	kmymoney2-1.0.5
 PKGREVISION=	10
@@ -10,8 +10,6 @@ MAINTAINER=	gary@duzan.org
 HOMEPAGE=	http://kmymoney2.sourceforge.net/
 COMMENT=	Personal finance manager for KDE
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt perl pkg-config bash
 USE_LANGUAGES=		c c++

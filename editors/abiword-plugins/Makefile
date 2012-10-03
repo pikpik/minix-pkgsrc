@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2012/09/15 10:04:24 obache Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.48 2012/10/02 17:10:53 tron Exp $
 
 .include "../../editors/abiword/Makefile.common"
 

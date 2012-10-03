@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3105 2012/10/02 17:36:12 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.3108 2012/10/03 12:13:03 asau Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4788,3 +4788,8 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated x11/xkeyboard-config to 2.7 [wiz 2012-10-02]
 	Updated security/libtasn1 to 2.14 [wiz 2012-10-02]
 	Added net/knot version 1.1.0 [pettai 2012-10-02]
+	Updated security/clamav to 0.97.6 [adam 2012-10-03]
+	Updated lang/chicken to 4.8.0 [asau 2012-10-03]
+	Updated graphics/pngcrush to 1.7.38 [adam 2012-10-03]
+	Updated graphics/gdk-pixbuf2 to 2.26.4 [adam 2012-10-03]
+	Updated x11/gtk2 to 2.24.13 [adam 2012-10-03]

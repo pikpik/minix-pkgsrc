@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2012/09/15 10:04:23 obache Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/02 17:10:53 tron Exp $
 #
 
 DISTNAME=	Sigil-0.5.3-Code
@@ -14,8 +14,6 @@ COMMENT=	Multi-platform WYSIWYG ebook editor (for the ePub format)
 LICENSE=	gnu-gpl-v3
 
 MAKE_JOBS_SAFE=	NO
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 

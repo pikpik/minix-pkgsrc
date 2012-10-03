@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2011/03/06 10:22:31 ryoon Exp $
+# $NetBSD: Makefile,v 1.42 2012/05/03 09:55:29 obache Exp $
 
 DISTNAME=	spim-8.0
 PKGREVISION=	1
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://spimsimulator.sourceforge.net/
 COMMENT=	MIPS R2000 Simulator
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 CONFIGURE_DIRS=		xspim

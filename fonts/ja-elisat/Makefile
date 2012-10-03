@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/05/21 00:30:54 zafer Exp $
+# $NetBSD: Makefile,v 1.14 2012/04/18 00:06:12 joerg Exp $
 
 DISTNAME=		elisat10
 PKGNAME=		ja-elisat-1.0
@@ -9,8 +9,6 @@ MAINTAINER=		tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=		http://www.tea.forus.or.jp/toshi/exhibition/elisat10.html
 COMMENT=		8x8 dots X11 bitmap font for JIS X 0208
 LICENSE=		no-commercial-use
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 USE_X11BASE=		YES

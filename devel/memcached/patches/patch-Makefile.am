@@ -1,0 +1,15 @@
+$NetBSD$
+
+List test prerequisite.
+
+--- Makefile.am.orig	2012-01-06 18:19:50.000000000 +0000
++++ Makefile.am
+@@ -73,7 +73,7 @@ EXTRA_DIST = doc scripts t memcached.spe
+ 
+ MOSTLYCLEANFILES = *.gcov *.gcno *.gcda *.tcov
+ 
+-test:	memcached-debug sizes testapp
++test:	memcached-debug sizes testapp timedrun
+ 	$(srcdir)/sizes
+ 	$(srcdir)/testapp
+ 	prove $(srcdir)/t

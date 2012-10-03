@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/08/16 19:58:06 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/04/01 18:56:54 rhaen Exp $
 #
 
 DISTNAME=	Device-Gsm-1.60
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Device-Gsm/
 COMMENT=	Perl module to interface GSM cellular / modems
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Device-Modem>=1.47:../../comms/p5-Device-Modem
 DEPENDS+=	p5-Device-SerialPort-[0-9]*:../../comms/p5-Device-SerialPort

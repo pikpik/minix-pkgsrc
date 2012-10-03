@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2011/11/18 04:42:22 sbd Exp $
+# $NetBSD: Makefile,v 1.3 2011/11/18 09:01:27 obache Exp $
 #
 
 .include "Makefile.common"
-PKGREVISION=	1
+PKGREVISION=	2
 
 CATEGORIES=	devel
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/07/01 19:05:16 dholland Exp $
+# $NetBSD: Makefile,v 1.37 2012/09/15 10:04:27 obache Exp $
 #
 
 DISTNAME=		kdissert-1.0.7
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://freehackers.org/~tnagy/kdissert/
 COMMENT=		Mindmapping-like tool to generate text templates
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++

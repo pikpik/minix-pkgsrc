@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/12/27 13:37:36 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2010/01/30 00:02:54 joerg Exp $
 #
 
 DISTNAME=	x48_041
@@ -10,8 +10,6 @@ MASTER_SITES=	http://home.earthlink.net/~rmmlgetz/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.earthlink.net/~rmmlgetz/
 COMMENT=	HP48 emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_IMAKE=	YES

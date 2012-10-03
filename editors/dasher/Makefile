@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2012/09/15 10:04:24 obache Exp $
+# $NetBSD: Makefile,v 1.70 2012/10/02 17:10:53 tron Exp $
 
 DISTNAME=	dasher-4.10.1
 PKGREVISION=	18
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.inference.phy.cam.ac.uk/dasher/
 COMMENT=	Easy typing without using keyboard
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

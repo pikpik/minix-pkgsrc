@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/05/29 21:51:15 cheusov Exp $
+# $NetBSD: Makefile,v 1.14 2012/06/02 07:10:57 cheusov Exp $
 
 DISTNAME=		ed-1.1
 PKGREVISION=		2
@@ -10,8 +10,6 @@ MAINTAINER=		reed@reedmedia.net
 HOMEPAGE=		http://www.gnu.org/software/ed/ed.html
 COMMENT=		GNU version of line-oriented text editor
 LICENSE=		gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 

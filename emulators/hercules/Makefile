@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2011/07/04 21:37:34 dholland Exp $
+# $NetBSD: Makefile,v 1.27 2012/03/25 05:27:42 ryoon Exp $
 
 DISTNAME=		hercules-3.07
 PKGREVISION=		1
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.hercules-390.org/
 COMMENT=		S370 emulator
 LICENSE=		qpl-v1.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		hercules-images-[0-9]*:../../emulators/hercules-images
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.82 2012/09/15 10:04:36 obache Exp $
+# $NetBSD: Makefile,v 1.83 2012/10/02 17:11:00 tron Exp $
 #
 
 DISTNAME=	gucharmap-2.32.1
@@ -12,8 +12,6 @@ HOMEPAGE=	http://live.gnome.org/Gucharmap
 COMMENT=	Unicode/ISO10646 character map and font viewer
 # unicode-license = BSD style?
 #LICENSE=	gnu-gpl-v2 AND unicode-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes

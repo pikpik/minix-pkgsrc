@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2012/02/06 12:40:05 wiz Exp $
+# $NetBSD: Makefile,v 1.76 2012/04/27 14:37:37 hauke Exp $
 
 PKGNAME?=	${DISTNAME}
 COMMENT?=	*BETA* XEmacs text editor version ${PKGVERSION_NOREV}
@@ -16,8 +16,6 @@ HOMEPAGE=	http://www.xemacs.org/
 CONFLICTS+=	gnuclient-[0-9]*
 CONFLICTS+=	xemacs-[0-9]*
 CONFLICTS+=	xemacs-nox11-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
 GCC_REQD+=		2.95.3

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/09/23 09:54:45 tron Exp $
+# $NetBSD: Makefile,v 1.18 2011/10/29 11:40:27 obache Exp $
 #
 
 DISTNAME=		fonttools-2.3
@@ -12,8 +12,6 @@ COMMENT=		Library for manipulating fonts
 
 DEPENDS+=	${PYPKGPREFIX}-numpy-[0-9]*:../../math/py-numpy
 DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SUBST_CLASSES+=		fix-mandir
 SUBST_STAGE.fix-mandir=	pre-configure

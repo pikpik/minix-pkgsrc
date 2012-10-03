@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/03/03 19:21:37 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2009/08/25 11:56:36 wiz Exp $
 #
 
 DISTNAME=		rinfo27
@@ -17,8 +17,6 @@ MAKE_FILE=		makefile
 BUILD_TARGET=		rominfo
 EXTRACT_OPTS_ZIP=	-aaqo
 INSTALLATION_DIRS=	bin
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-extract:
 	${MKDIR} ${WRKSRC}/obj

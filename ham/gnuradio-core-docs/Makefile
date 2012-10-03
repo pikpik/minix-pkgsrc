@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2012/08/29 11:22:15 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/09/02 12:10:20 marino Exp $
 
 PKGNAME=	gnuradio-core-docs-${VERSION}
 COMMENT=	GNU Radio core module documentation
 PKGREVISION=	13
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 

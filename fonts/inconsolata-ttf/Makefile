@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/02/26 11:27:36 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2011/02/28 14:52:49 wiz Exp $
 #
 
 DISTNAME=	Inconsolata.otf
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.levien.com/type/myfonts/inconsolata.html
 COMMENT=	Inconsolata TrueType font
 LICENSE=	open-font-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	inconsolata-[0-9]*
 

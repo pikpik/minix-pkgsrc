@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/04/14 15:53:04 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/01 11:08:31 ryoon Exp $
 #
 
 DISTNAME=	croscorefonts-1.21.0
@@ -9,8 +9,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://fedoraproject.org/wiki/Google_Croscore_fonts
 COMMENT=	Google Croscore fonts
 LICENSE=	open-font-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=	yes
 NO_CONFIGURE=	yes

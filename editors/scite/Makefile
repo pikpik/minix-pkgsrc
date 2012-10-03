@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/09/15 10:04:29 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/02 17:10:57 tron Exp $
 #
 
 DISTNAME=	scite229
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://scintilla.sourceforge.net/
 COMMENT=	Source code editor
 #LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/scite
 USE_LANGUAGES=	c c++

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/09/09 18:48:52 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/12 02:10:26 mef Exp $
 #
 
 DISTNAME=		font-sony-misc-1.0.3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Standard X11 "sony" PCF fonts
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config bdftopcf ucs2any gzip

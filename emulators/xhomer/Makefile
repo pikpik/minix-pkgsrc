@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/12/06 13:10:34 obache Exp $
+# $NetBSD: Makefile,v 1.3 2011/07/05 01:34:59 dholland Exp $
 
 DISTNAME=	xhomer-9-16-06
 PKGNAME=	xhomer-9.16.06
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xhomer.isani.org/xhomer/
 COMMENT=	DEC Pro 350/380 emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 

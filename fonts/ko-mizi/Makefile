@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/07/25 15:12:27 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2009/12/17 17:23:36 abs Exp $
 #
 
 DISTNAME=	xfntmizi-1.1-2.noarch
@@ -14,7 +14,6 @@ COMMENT=	X11 fonts for KSC 5601 standard
 BUILD_DEPENDS+=	rpm-[0-9]*:../../misc/rpm
 
 CONFLICTS+=	ksc5601fonts-[0-9]*
-PKG_DESTDIR_SUPPORT= user-destdir
 
 USE_X11BASE=		yes
 USE_TOOLS+=		gzip gunzip

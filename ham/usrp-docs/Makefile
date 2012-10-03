@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/07/09 12:15:08 mef Exp $
+# $NetBSD: Makefile,v 1.18 2012/09/01 10:18:54 marino Exp $
 
 PKGNAME=	usrp-docs-${VERSION}
 PKGREVISION=	7
 COMMENT=	Documentation for the usrp module
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 

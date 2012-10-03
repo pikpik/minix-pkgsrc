@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/01/12 04:17:38 bjs Exp $
+# $NetBSD: Makefile,v 1.13 2011/04/22 13:43:24 obache Exp $
 
 DISTNAME=	fe-1.8
 PKGREVISION=	1
@@ -8,8 +8,6 @@ MASTER_SITES=	http://www.moria.de/~michael/fe/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.moria.de/~michael/fe/
 COMMENT=	Folding editor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	msgfmt

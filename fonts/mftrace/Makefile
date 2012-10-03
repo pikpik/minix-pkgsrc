@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2010/02/10 19:17:37 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2012/03/15 11:53:27 obache Exp $
 
 DISTNAME=	mftrace-1.2.15
 PKGREVISION=	2
@@ -14,8 +14,6 @@ DEPENDS+=	autotrace>=0.31:../../graphics/autotrace
 DEPENDS+=	potrace>=1.5:../../graphics/potrace
 DEPENDS+=	fontforge>=20041115:../../fonts/fontforge
 DEPENDS+=	t1utils>=1.27:../../fonts/t1utils
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes

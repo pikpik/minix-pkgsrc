@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:34:49 seb Exp $
+# $NetBSD: Makefile,v 1.3 2011/08/14 12:38:56 obache Exp $
 #
 
 DISTNAME=	Acme-Padre-PlayCode-0.13
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Acme-Padre-PlayCode/
 COMMENT=	Acme::PlayCode Plugin for Padre
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	p5-Locale-Msgfmt>=0.14:../../devel/p5-Locale-Msgfmt
 

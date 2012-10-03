@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/08/05 13:13:32 obache Exp $
+# $NetBSD: Makefile,v 1.7 2011/10/20 11:32:11 wiz Exp $
 #
 
 DISTNAME=	thaixfonts-1.2.5
@@ -8,8 +8,6 @@ MASTER_SITES=	http://linux.thai.net/pub/thailinux/software/thaixfonts/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linux.thai.net/projects/thaixfonts
 COMMENT=	The collection of Thai X fonts
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake bdftopcf gzip
 GNU_CONFIGURE=	yes

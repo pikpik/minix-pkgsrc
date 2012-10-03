@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/09/15 10:04:31 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/02 17:10:58 tron Exp $
 
 DISTNAME=	e-uae-0.8.28
 PKGREVISION=	15
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.rcdrummond.net/uae/
 COMMENT=	Enhanced Ubiquitous Amiga Emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/10/03 04:20:34 dholland Exp $
+# $NetBSD: Makefile,v 1.6 2012/05/27 17:47:29 marino Exp $
 #
 
 DISTNAME=	handy_sdl-0.5-src
@@ -12,7 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sdlemu.ngemu.com/handysdl.php
 COMMENT=	Atari Lynx emulator
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 MAKE_FILE=	Makefile-0.95

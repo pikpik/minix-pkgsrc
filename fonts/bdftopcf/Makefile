@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/11/01 06:01:11 sbd Exp $
+# $NetBSD: Makefile,v 1.7 2012/08/12 16:03:24 wiz Exp $
 #
 
 DISTNAME=		bdftopcf-1.0.3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		BDF to PCF font converter for X11
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes

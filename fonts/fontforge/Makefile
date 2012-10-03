@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.79 2012/09/15 10:04:36 obache Exp $
+# $NetBSD: Makefile,v 1.80 2012/10/02 17:11:00 tron Exp $
 
 DISTNAME=	fontforge_full-${VERSION}
 PKGNAME=	fontforge-${VERSION}
@@ -13,8 +13,6 @@ COMMENT=	Postscript font editor
 LICENSE=	modified-bsd
 
 VERSION=	20110222
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 

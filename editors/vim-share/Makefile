@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2011/04/28 15:54:59 jmmv Exp $
+# $NetBSD: Makefile,v 1.29 2012/08/27 14:45:37 morr Exp $
 
 PKGNAME=		vim-share-${VIM_VERSION}.${VIM_PATCHLEVEL}
 
 COMMENT=		Data files for the vim editor (vi clone)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include		"Makefile.common"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/07/01 19:05:16 dholland Exp $
+# $NetBSD: Makefile,v 1.4 2012/09/15 10:04:28 obache Exp $
 
 DISTNAME=		kile-2.0.2
 PKGREVISION=		16
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		markd@NetBSD.org
 HOMEPAGE=		http://kile.sourceforge.net/
 COMMENT=		LaTeX source editor - TeX shell - Gnuplot front end
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl msgfmt
 USE_LANGUAGES=		c c++

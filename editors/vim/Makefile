@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.70 2011/04/22 13:43:28 obache Exp $
+# $NetBSD: Makefile,v 1.71 2012/08/27 14:45:36 morr Exp $
 
 PKGNAME=		vim-${VIM_VERSION}.${VIM_PATCHLEVEL}
 
 COMMENT=		Vim editor (vi clone) without GUI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include		"../../editors/vim-share/Makefile.common"
 

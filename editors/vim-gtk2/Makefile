@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.49 2012/09/15 10:04:30 obache Exp $
+# $NetBSD: Makefile,v 1.50 2012/10/02 17:10:57 tron Exp $
 
 PKGNAME=		vim-gtk2-${VIM_VERSION}.${VIM_PATCHLEVEL}
 PKGREVISION=		2
 
 COMMENT=		Vim editor (vi clone) with X11 GTK2 GUI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_SUPPORTED_OPTIONS+=	gnome
 

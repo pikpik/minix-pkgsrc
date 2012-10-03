@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2012/07/16 00:19:14 abs Exp $
+# $NetBSD: Makefile,v 1.47 2012/07/26 22:10:28 abs Exp $
 
 DISTNAME=	gxemul-0.6.0
 PKGREVISION=	3
@@ -10,7 +10,6 @@ HOMEPAGE=	http://gxemul.sourceforge.net/
 COMMENT=	Framework for full-system computer architecture emulation
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

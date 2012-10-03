@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.30 2012/09/15 10:05:10 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/02 17:11:20 tron Exp $
 
 PKGNAME=	gnuradio-examples-${VERSION}
 PKGREVISION=	14
 COMMENT=	GUI framework for GNU Radio based on wxPython
 COMMENT=	Examples for GNU Radio
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/gnuradio/Makefile.common"
 

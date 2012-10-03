@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2012/09/15 10:04:31 obache Exp $
+# $NetBSD: Makefile,v 1.46 2012/10/02 17:10:58 tron Exp $
 
 DISTNAME=	fuse-1.0.0.1a
 PKGREVISION=	7
@@ -9,8 +9,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://fuse-emulator.sourceforge.net/
 COMMENT=	ZX Spectrum Emulator
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl pkg-config
 GNU_CONFIGURE=		yes

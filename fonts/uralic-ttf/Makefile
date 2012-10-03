@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/09/01 21:04:31 wiz Exp $
 #
 
 DISTNAME=	uralic-ttf-0.0.20040603
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://peoples.org.ru/eng_uralic.html
 COMMENT=	Font for Uralic languages with Russian-based writing systems
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	# none

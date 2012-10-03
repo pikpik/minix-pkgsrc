@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2012/09/15 10:04:30 obache Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/02 17:10:57 tron Exp $
 #
 
 DISTNAME=		tomboy-1.2.1
@@ -10,8 +10,6 @@ MAINTAINER=		rhaen@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/projects/tomboy
 COMMENT=		Gnome desktop note application
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=  yes
 USE_LIBTOOL=    yes

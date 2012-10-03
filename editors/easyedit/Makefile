@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/02/07 17:33:51 abs Exp $
+# $NetBSD: Makefile,v 1.14 2011/10/03 00:45:47 dholland Exp $
 #
 
 DISTNAME=	ee-1.4.6.src
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mahon.cwx.net/
 COMMENT=	Easy to use text editor with onscreen instructions
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE= 	no
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}

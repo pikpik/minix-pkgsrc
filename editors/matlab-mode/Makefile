@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/10/11 09:31:56 uebayasi Exp $
+# $NetBSD: Makefile,v 1.12 2009/08/06 01:44:51 minskim Exp $
 #
 
 DISTNAME=		matlab.el
@@ -14,8 +14,6 @@ EXTRACT_SUFX=
 MAINTAINER=		dmcmahill@NetBSD.org
 HOMEPAGE=		http://www.mathworks.com/matlabcentral/fileexchange/loadFile.do?objectId=104&objectType=file
 COMMENT=		Matlab mode for Emacs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 DIST_SUBDIR=		${BASEPKGNAME}

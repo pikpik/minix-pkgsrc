@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/11/13 21:08:57 shattered Exp $
+# $NetBSD: Makefile,v 1.11 2012/05/16 14:38:05 marino Exp $
 #
 
 DISTNAME=		sms_sdl-0.9.4a-r7.1-src
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://membres.multimania.fr/cyxdown/smssdl/
 COMMENT=		SMS Plus emulator port to SDL
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/sms_sdl-0.9.4a-r7.1
 BUILD_DIRS=		sdl

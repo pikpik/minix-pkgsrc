@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2012/09/15 10:04:28 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/02 17:10:55 tron Exp $
 
 DISTNAME=	leafpad-0.8.17
 PKGREVISION=	12
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tarot.freeshell.org/leafpad/
 COMMENT=	Simple and light text editor using GTK+
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		intltool msgfmt pkg-config gmake
 GNU_CONFIGURE=		YES
