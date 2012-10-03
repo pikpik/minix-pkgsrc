@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/09/04 21:20:06 dholland Exp $
+# $NetBSD: Makefile,v 1.20 2012/06/22 16:24:55 adam Exp $
 
 DISTNAME=	toolame-02l
 PKGREVISION=	4
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/toolame/
 COMMENT=	Optimized MPEG 1/2 layer 2 audio encoder
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 

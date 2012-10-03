@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2009/02/17 13:02:20 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2010/02/08 05:18:37 dholland Exp $
 
 DISTNAME=		binutils-2.12.1
 PKGNAME=		cross-h8300-hms-binutils-2.12.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		# empty
 COMMENT=		h8300-hms cross utility
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 H8300_PREFIX=		${PREFIX}/libexec/cross-h8300-hms
 

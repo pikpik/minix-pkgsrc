@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/03/15 11:53:21 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/08/21 23:49:19 marino Exp $
 #
 
 DISTNAME=		amsn-0.98.3
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.amsn-project.net/
 COMMENT=		Alvaro\'s MSN messenger client
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}/lib
 USE_LANGUAGES=		c c++

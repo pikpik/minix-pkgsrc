@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/09/07 06:06:54 sno Exp $
+# $NetBSD: Makefile,v 1.8 2011/08/14 08:18:10 obache Exp $
 
 DISTNAME=	Rose-DBx-Garden-0.18
 PKGNAME=	p5-${DISTNAME}
@@ -23,8 +23,6 @@ DEPENDS+=	p5-Rose-HTMLx-Form-Field-Serial-[0-9]*:../../www/p5-Rose-HTMLx-Form-Fi
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Rose/DBx/Garden/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

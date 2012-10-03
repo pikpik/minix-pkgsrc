@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.46 2012/01/24 00:28:17 abs Exp $
+# $NetBSD: Makefile,v 1.47 2012/01/24 02:44:30 sbd Exp $
 
 .include "Makefile.common"
 
 COMMENT=	The GNU database manager
 PKGREVISION=	3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 INFO_FILES=		yes

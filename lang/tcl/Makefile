@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2012/08/21 21:31:47 marino Exp $
+# $NetBSD: Makefile,v 1.68 2012/08/22 22:03:16 marino Exp $
 
 DISTNAME=	tcl${TCL_VERSION}-src
 PKGNAME=	tcl-${TCL_VERSION}
@@ -12,8 +12,6 @@ COMMENT=	Tool Command Language, a dynamic language
 LICENSE=	2-clause-bsd
 
 .include "../../lang/tcl/Makefile.version"
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/tcl${TCL_VERSION}
 

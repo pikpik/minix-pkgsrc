@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2010/05/19 11:55:43 asau Exp $
+# $NetBSD: Makefile,v 1.24 2011/04/19 19:18:40 asau Exp $
 #
 
 DISTNAME=	Maude-2.6
@@ -12,7 +12,6 @@ HOMEPAGE=	http://maude.cs.uiuc.edu/
 COMMENT=	System for equational and rewriting logic specification/programming
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/01/28 19:32:48 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/16 13:46:52 hans Exp $
 #
 
 DISTNAME=	atheme-services-3.0.4
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tbz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.atheme.org/
 COMMENT=	Flexible IRC services system with proven scalability
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

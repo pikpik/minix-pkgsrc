@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/03/15 14:50:56 abs Exp $
+# $NetBSD: Makefile,v 1.21 2012/04/22 15:06:57 wiz Exp $
 
 DISTNAME=	libiodbc-3.52.8
 PKGNAME=	${DISTNAME:S/^lib//}
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.iodbc.org/dataspace/iodbc/wiki/iODBC/
 COMMENT=	ODBC 3.x driver manager
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

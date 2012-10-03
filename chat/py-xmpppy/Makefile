@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/06 21:06:08 schnoebe Exp $
 #
 
 DISTNAME=	xmpppy-0.5.0rc1
@@ -14,8 +14,6 @@ LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PYPKGPREFIX}-dns>=1.7.1:../../net/py-dns
 DEPENDS+=	${PYPKGPREFIX}-expat>=0nb4:../../textproc/py-expat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

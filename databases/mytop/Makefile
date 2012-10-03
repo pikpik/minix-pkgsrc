@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2010/08/21 16:32:52 seb Exp $
+# $NetBSD: Makefile,v 1.19 2011/08/14 08:18:04 obache Exp $
 #
 
 DISTNAME=	mytop-1.6
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jeremy.zawodny.com/mysql/mytop/
 COMMENT=	Console-based tool for monitoring the threads and performance of MySQL
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-DBI-[0-9]*:../../databases/p5-DBI
 DEPENDS+=	p5-Term-ANSIColor-[0-9]*:../../devel/p5-Term-ANSIColor

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/08/28 07:48:15 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/01/21 01:45:41 zafer Exp $
 #
 DISTNAME=	milkytracker-0.90.80
 CATEGORIES=	audio
@@ -12,8 +12,6 @@ COMMENT=	Music tracker inspired by Fast Tracker 2
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	gawk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

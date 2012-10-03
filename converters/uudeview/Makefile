@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2010/01/29 16:54:40 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2010/11/02 09:36:03 wiz Exp $
 #
 
 DISTNAME=	uudeview-0.5.20
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fpx.de/fp/Software/UUDeview/
 COMMENT=	Program for uu/xx/Base64/BinHex de-/encoding
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-inews=inews --disable-tcl

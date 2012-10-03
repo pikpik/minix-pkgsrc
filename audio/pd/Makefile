@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/02/05 22:20:42 sbd Exp $
+# $NetBSD: Makefile,v 1.3 2012/02/15 22:36:38 hans Exp $
 #
 
 DISTNAME=	pd-0.43-0.src
@@ -14,8 +14,6 @@ LICENSE=	modified-bsd
 
 DEPENDS+=	tcl-[0-9]*:../../lang/tcl
 DEPENDS+=	tk-[0-9]*:../../x11/tk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/pd-0.43-0
 USE_TOOLS+=	autoconf automake gmake msgfmt pkg-config

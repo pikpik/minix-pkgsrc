@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2011/09/08 16:29:48 bsiegert Exp $
+# $NetBSD: Makefile,v 1.61 2012/05/12 07:37:50 wiz Exp $
 
 DISTNAME=	libiconv-1.14
 PKGREVISION=	2
@@ -11,7 +11,6 @@ COMMENT=	Character set conversion library
 LICENSE=	gnu-gpl-v3 AND gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES+=		c c++
 USE_LIBTOOL=		yes

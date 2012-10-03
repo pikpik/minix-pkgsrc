@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2012/06/18 00:32:07 dholland Exp $
+# $NetBSD: Makefile,v 1.34 2012/09/23 10:47:46 obache Exp $
 
 DISTNAME=	weechat-0.3.8
 PKGREVISION=	1
@@ -12,7 +12,6 @@ LICENSE=	gnu-gpl-v3
 EXTRACT_SUFX=	.tar.bz2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt pkg-config

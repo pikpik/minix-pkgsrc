@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/02/18 10:56:09 abs Exp $
+# $NetBSD: Makefile,v 1.3 2009/10/20 11:02:55 abs Exp $
 #
 
 DISTNAME=		postgresql-jdbc-8.3-${PGBUILD}.src
@@ -16,7 +16,6 @@ JARDIST=		postgresql-8.3-${PGBUILD}.jdbc3.jar
 JARFILE=		postgresql83.jar
 EXTRACT_ONLY=           ${DISTFILES:N*.jar}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	lib/java ${DOCDIR}
 
 USE_JAVA=		run

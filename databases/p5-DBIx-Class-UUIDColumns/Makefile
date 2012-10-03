@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 08:18:07 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/22 10:20:00 hiramatsu Exp $
 
 DISTNAME=	DBIx-Class-UUIDColumns-0.02006
 PKGNAME=	p5-${DISTNAME}
@@ -18,8 +18,6 @@ BUILD_DEPENDS+= p5-DBD-SQLite>=1.11:../../databases/p5-DBD-SQLite
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/DBIx/Class/UUIDColumns/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

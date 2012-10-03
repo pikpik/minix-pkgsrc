@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2012/01/04 15:21:18 dholland Exp $
+# $NetBSD: Makefile,v 1.32 2012/03/10 21:36:14 markd Exp $
 
 .include "../../lang/swi-prolog-lite/Makefile.common"
 
@@ -7,8 +7,6 @@ PKGREVISION=		2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Packages for SWI Prolog
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_GNU_READLINE=	yes	# uses rl_event_hook() interface

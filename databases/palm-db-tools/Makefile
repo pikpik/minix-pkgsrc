@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/05/19 08:59:07 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/08/18 13:25:54 dsainty Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV:S/./_/g}
@@ -11,8 +11,6 @@ MAINTAINER=	dsainty@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/palm-db-tools/
 COMMENT=	Conversion utilities for PalmOS flat-file database programs
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/palm-db-tools
 GNU_CONFIGURE=	yes

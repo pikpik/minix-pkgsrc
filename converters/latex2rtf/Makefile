@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/03/20 18:15:37 jlam Exp $
+# $NetBSD: Makefile,v 1.21 2009/12/17 21:56:22 abs Exp $
 #
 
 DISTNAME=	latex2rtf-1.9.16a
@@ -14,7 +14,6 @@ USE_TOOLS+=	perl
 MAKE_FLAGS+=	XCFLAGS=${CFLAGS:M*:Q}
 INFO_FILES=	YES # PLIST
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	share/doc/latex2rtf ${PKGINFODIR}
 
 post-install:

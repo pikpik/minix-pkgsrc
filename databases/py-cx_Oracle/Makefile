@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/04/25 20:39:13 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/11 13:13:24 joerg Exp $
 #
 
 DISTNAME=	cx_Oracle-5.0.2
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cx-oracle/}
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://cx-oracle.sourceforge.net
 COMMENT=	Oracle binding for Python
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 

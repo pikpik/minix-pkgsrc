@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/12/18 16:54:08 dholland Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/05 04:04:09 dholland Exp $
 
 DISTNAME=	p2c-1.20
 PKGREVISION=	1
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Pascal to C compiler (translates Pascal to C)
 LICENSE=	gnu-gpl-v1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/src
 CFLAGS+=	-Dunix=1

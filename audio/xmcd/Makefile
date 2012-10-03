@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2012/05/04 16:01:53 joerg Exp $
+# $NetBSD: Makefile,v 1.76 2012/09/28 09:55:49 dholland Exp $
 
 DISTNAME=	xmcd-3.0.2
 PKGREVISION=	13
@@ -12,8 +12,6 @@ COMMENT=	Motif CD player
 PATCH_SITES=		${HOMEPAGE}
 PATCHFILES=		xmcd-3.0.2-proxyauth-patch
 PATCH_DIST_STRIP=	-p1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/xmcd-3.0
 

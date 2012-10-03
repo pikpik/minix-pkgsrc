@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/07/14 12:55:57 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2012/01/11 19:03:09 hans Exp $
 #
 
 DISTNAME=		mkcdtoc-1.0
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/mkcdtoc/
 COMMENT=		Script to create .toc files for cdrdao
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl pod2man
 MAKE_ENV+=		PERL=${PERL5}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/08/26 14:06:19 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/09/15 10:03:50 obache Exp $
 #
 
 DISTNAME=	irssi-xmpp-0.52
@@ -13,8 +13,6 @@ COMMENT=	Irssi plugin to connect to the Jabber network
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	irssi>=${IRSSI_VERSION}:../../chat/irssi
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../chat/irssi/Makefile.common"

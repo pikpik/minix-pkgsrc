@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/11/17 14:29:32 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/01/23 07:54:23 obache Exp $
 
 DISTNAME=	python2-chardet-2.0.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/python2-//}
@@ -11,8 +11,6 @@ MAINTAINER=	bartosz.kuzma@gmail.com
 HOMEPAGE=	http://chardet.feedparser.org/
 COMMENT=	Character encoding auto-detection in Python
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EGG_NAME=	${DISTNAME:S/python2-//}
 

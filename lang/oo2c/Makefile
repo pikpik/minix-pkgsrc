@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2007/03/24 19:21:25 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2011/05/27 13:16:04 obache Exp $
 
 DISTNAME=		oo2c_${BITS}-2.0.11
 PKGNAME=		oo2c-2.0.11
@@ -13,8 +13,6 @@ COMMENT=		Optimizing Oberon-2 Compiler
 
 DEPENDS+=		libtool-base-[0-9]*:../../devel/libtool-base
 DEPENDS+=		libxslt-[0-9]*:../../textproc/libxslt
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .if ${MACHINE_ARCH} == alpha || ${MACHINE_ARCH} == sparc64 \
 	|| ${MACHINE_ARCH} == x86_64

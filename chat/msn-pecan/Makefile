@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/09/15 10:03:52 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/02 17:10:40 tron Exp $
 #
 
 DISTNAME=	msn-pecan-0.0.18
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://msn-pecan.googlecode.com/files/
 COMMENT=	Alternate MSN protocol plugin for libpurple
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config gmake
 

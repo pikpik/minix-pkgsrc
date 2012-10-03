@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/02/12 18:49:08 abs Exp $
+# $NetBSD: Makefile,v 1.2 2012/04/01 19:09:33 rhaen Exp $
 
 DISTNAME=	Unicode-Collate-0.89
 PKGNAME=	p5-${DISTNAME}
@@ -12,8 +12,6 @@ LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=	c
 PERL5_PACKLIST=	auto/Unicode/Collate/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

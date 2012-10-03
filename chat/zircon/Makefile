@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/03/07 02:19:51 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/08/21 21:41:03 marino Exp $
 #
 
 DISTNAME=	zircon-1.18.245
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://catless.ncl.ac.uk/Programs/Zircon/
 COMMENT=	X11 interface to Internet Relay Chat
 LICENSE=	original-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes

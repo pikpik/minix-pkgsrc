@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2011/08/29 01:24:02 dholland Exp $
+# $NetBSD: Makefile,v 1.43 2012/04/15 22:07:36 wiz Exp $
 
 DISTNAME=	ircd-hybrid-7.2.3
 PKGREVISION=	3
@@ -11,8 +11,6 @@ HOMEPAGE=	http://www.ircd-hybrid.com/
 COMMENT=	IRC server with many options
 
 CONFLICTS+=	ircu-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

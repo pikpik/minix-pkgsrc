@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/10/25 23:39:01 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2011/06/17 12:27:09 obache Exp $
 #
 
 VERS=		2.6.7
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.python.org/doc/
 COMMENT=	HTML Documentation for Python
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=	python
 

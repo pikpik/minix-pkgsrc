@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2012/09/15 10:04:00 obache Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/02 17:10:42 tron Exp $
 
 DISTNAME=		tex2rtf-2.01-source
 PKGNAME=		tex2rtf-2.01
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.wxwidgets.org/tex2rtf/index.htm
 COMMENT=		LaTex-to-RTF translator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 MAKE_FILE=		makefile.unx

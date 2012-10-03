@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/09/15 10:05:18 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/02 17:11:25 tron Exp $
 #
 
 DISTNAME=	basic256_0.9.6.71
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.basic256.org/
 COMMENT=	BASIC language with traditional control structures
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 

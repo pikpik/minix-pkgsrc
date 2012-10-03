@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/05/19 21:00:02 drochner Exp $
+# $NetBSD: Makefile,v 1.12 2011/12/08 12:53:20 obache Exp $
 #
 
 DISTNAME=		pyao-0.82
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://vorbis.com/
 COMMENT=		Python bindings for libao
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 CONFIG_SHELL=		${PYTHONBIN}

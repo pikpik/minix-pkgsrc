@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/10/16 21:26:02 kefren Exp $
 
 DISTNAME=	mysql-connector-net-6.3.5-noinstall
 PKGNAME=	csharp-mysql-6.3.5
@@ -12,8 +12,6 @@ COMMENT=	Fully managed ADO.NET driver for MySQL
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	mono>=2.0:../../lang/mono
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_DIR=	${WRKDIR}/${PKGNAME}
 WRKSRC=		${EXTRACT_DIR}

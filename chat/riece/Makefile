@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2009/08/06 01:44:46 minskim Exp $
+# $NetBSD: Makefile,v 1.19 2011/10/09 02:25:24 kim Exp $
 #
 
 DISTNAME=	riece-5.0.0
@@ -11,7 +11,6 @@ MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/riece/
 COMMENT=	IRC client for Emacs
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	${EMACS_LISPPREFIX:C|^${PREFIX}/||}/riece \
 			${EMACS_INFOPREFIX:C|^${PREFIX}/||}
 

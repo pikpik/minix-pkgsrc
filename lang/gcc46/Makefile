@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/06/08 15:42:29 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/08/07 15:16:35 marino Exp $
 
 DISTNAME=		gcc-${GCC_VERSION}
 PKGNAME=		gcc46-${GCC_VERSION}
@@ -11,8 +11,6 @@ MAINTAINER=		sbd@NetBSD.org
 HOMEPAGE=		http://gcc.gnu.org/
 COMMENT=		GNU Compiler Collection 4.6
 LICENSE=		gnu-gpl-v2 AND gnu-gpl-v3 AND gnu-lgpl-v2 AND gnu-lgpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		awk:run bash:run chmod gmake:run makeinfo sed:run
 

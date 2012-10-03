@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2012/08/05 10:02:10 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/08/17 15:35:24 taca Exp $
 
 MODNAME=		pdo_pgsql
 CATEGORIES+=		databases
 COMMENT=		PHP extension for PHP Data Objects (PostgreSQL)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_PHP_EXT_PATCHES=	yes
 
 .include "../../mk/bsd.prefs.mk"

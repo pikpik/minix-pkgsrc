@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/09/15 10:03:45 obache Exp $
+# $NetBSD: Makefile,v 1.55 2012/10/02 17:10:36 tron Exp $
 #
 
 DISTNAME=	sweep-0.9.3
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sweep/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.metadecks.org/software/sweep/
 COMMENT=	Full-featured digital sound editor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		YES
 USE_TOOLS+=		gmake msgfmt pkg-config

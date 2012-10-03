@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/03/04 16:38:13 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2012/06/23 21:17:17 dholland Exp $
 
 DISTNAME=		umb-scheme-3.2
 PKGREVISION=		1
@@ -8,8 +8,6 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		UMB Scheme interpreter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/scheme-3.2
 BUILD_TARGET=		default

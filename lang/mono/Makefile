@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.124 2012/06/14 07:44:46 sbd Exp $
+# $NetBSD: Makefile,v 1.125 2012/09/16 15:27:03 cheusov Exp $
 
 DISTNAME=	mono-2.10.6
 PKGREVISION=	5
@@ -10,7 +10,6 @@ MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/
 COMMENT=	Open source implementation of the .NET Development Framework
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 LICENSE=	mit AND gnu-gpl-v2 AND gnu-lgpl-v2 AND x11

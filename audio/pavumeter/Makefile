@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/09/15 10:03:43 obache Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/02 17:10:35 tron Exp $
 #
 
 DISTNAME=	pavumeter-0.9.3
@@ -15,8 +15,6 @@ USE_LANGUAGES=	c c++
 USE_TOOLS+=	pkg-config gmake intltool perl
 
 CONFIGURE_ARGS+=	--disable-lynx
-
-PKG_DESTDIR_SUPPORT=  user-destdir
 
 .include "../../audio/libcanberra/buildlink3.mk"
 .include "../../audio/pulseaudio/buildlink3.mk"

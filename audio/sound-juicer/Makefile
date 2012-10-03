@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/09/23 05:36:23 obache Exp $
+# $NetBSD: Makefile,v 1.55 2012/10/02 17:10:36 tron Exp $
 #
 
 DISTNAME=		sound-juicer-2.28.2
@@ -10,8 +10,6 @@ MASTER_SITES=		http://www.burtonini.com/computing/ \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.burtonini.com/computing/
 COMMENT=		CD ripping tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

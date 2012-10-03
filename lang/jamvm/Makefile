@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/07/06 10:17:13 jmmv Exp $
+# $NetBSD: Makefile,v 1.9 2012/09/15 10:05:19 obache Exp $
 #
 
 DISTNAME=		jamvm-1.5.1
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=jamvm/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://jamvm.sourceforge.net/
 COMMENT=		Compact Java Virtual Machine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		classpath>=0.19:../../lang/classpath
 

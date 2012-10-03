@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2011/02/18 23:56:48 shattered Exp $
+# $NetBSD: Makefile,v 1.23 2011/04/22 13:43:12 obache Exp $
 #
 
 DISTNAME=	abook-0.6.0pre2
@@ -12,7 +12,6 @@ HOMEPAGE=	http://abook.sourceforge.net/
 COMMENT=	Text-based addressbook program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		msgfmt

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/12/17 10:15:52 sbd Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/20 05:28:48 asau Exp $
 
 DISTNAME=	pfe-0.33.71
 PKGREVISION=	3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	asau@inbox.ru
 HOMEPAGE=	http://pfe.sourceforge.net/
 COMMENT=	Portable FORTH Environment
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

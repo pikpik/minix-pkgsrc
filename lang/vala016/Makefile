@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/07/02 16:23:21 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2012/09/15 10:05:22 obache Exp $
 #
 
 DISTNAME=	vala-0.16.1
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/Vala
 COMMENT=	Compiler for the GObject type system
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --enable-vapigen

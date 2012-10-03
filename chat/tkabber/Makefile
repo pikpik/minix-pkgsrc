@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/01/03 00:21:19 schnoebe Exp $
+# $NetBSD: Makefile,v 1.7 2012/08/21 23:49:19 marino Exp $
 #
 
 # TODO: gnupg support, ssl support, others
@@ -19,8 +19,6 @@ USE_TOOLS+=	pax wish:run
 EGDIR=		${PREFIX}/share/examples/tkabber
 DATADIR=	${PREFIX}/share/tkabber
 DOCDIR=		${PREFIX}/share/doc/tkabber
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 AUTO_MKDIRS=		yes
 

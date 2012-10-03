@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2012/08/05 10:02:10 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/08/17 15:35:24 taca Exp $
 
 MODNAME=		pgsql
 CATEGORIES+=		databases
 COMMENT=		PHP extension for PostgreSQL databases
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-pgsql-[0-9]*
 

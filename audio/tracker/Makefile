@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2008/08/09 09:28:19 obache Exp $
+# $NetBSD: Makefile,v 1.44 2009/06/30 00:07:10 joerg Exp $
 
 DISTNAME=		tracker-5.3
 PKGREVISION=		1
@@ -15,7 +15,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

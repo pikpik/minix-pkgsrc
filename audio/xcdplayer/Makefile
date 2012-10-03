@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2011/09/04 22:05:39 dholland Exp $
+# $NetBSD: Makefile,v 1.26 2012/05/03 09:55:29 obache Exp $
 
 DISTNAME=	xcdplayer-2.2
 PKGREVISION=	6
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	CD player for X
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	SunOS-*-* IRIX-*-* DragonFly-*-* FreeBSD-*-* NetBSD-*-* OpenBSD-*-*
 

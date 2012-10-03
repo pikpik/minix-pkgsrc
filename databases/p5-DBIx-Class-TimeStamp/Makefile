@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/08/14 08:18:07 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/03 11:16:26 sno Exp $
 
 DISTNAME=	DBIx-Class-TimeStamp-0.14
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DBIx-Class-TimeStamp/
 COMMENT=	DBIx::Class component to automatically handle timestamp fields
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_MODULE_TYPE=	Module::Install::Bundled
 USE_LANGUAGES=	# empty

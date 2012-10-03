@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2012/01/24 03:39:22 sbd Exp $
+# $NetBSD: Makefile,v 1.51 2012/04/12 12:14:12 asau Exp $
 
 DISTNAME=		otp_src_${DIST_VERSION_MAJOR}${DIST_VERSION_MINOR:D-${DIST_VERSION_MINOR}}
 PKGNAME=		erlang-${ERLANG_VERSION}
@@ -12,7 +12,6 @@ LICENSE=		erlang-public-license
 
 DIST_SUBDIR=		erlang
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=		yes

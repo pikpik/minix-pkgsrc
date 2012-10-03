@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/07/08 13:55:58 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2010/02/07 17:47:28 zafer Exp $
 #
 
 DISTNAME=	metakit-2.4.9.7
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.equi4.com/pub/mk/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.equi4.com/metakit/
 COMMENT=	Embedded database library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PATCHDIR=	${.CURDIR}/../metakit-lib/patches
 DISTINFO_FILE=	${.CURDIR}/../metakit-lib/distinfo

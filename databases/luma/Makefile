@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/04/08 18:05:44 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/06/22 05:01:38 sbd Exp $
 
 DISTNAME=	luma-2.3
 PKGREVISION=	8
@@ -10,7 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://luma.sourceforge.net/
 COMMENT=	LDAP browser
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 AUTO_MKDIRS=		yes
 
 SUBST_CLASSES+=		luma

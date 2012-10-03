@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/08/14 08:18:09 obache Exp $
+# $NetBSD: Makefile,v 1.15 2011/10/16 22:41:39 hiramatsu Exp $
 #
 
 DISTNAME=	MARC-1.15
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://marcpm.sourceforge.net/
 COMMENT=	Perl5 module for manipulating MARC (MAchine Readable Cataloging) data
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/MARC/.packlist
 

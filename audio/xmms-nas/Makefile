@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/01/13 10:54:51 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/04 09:29:56 wiz Exp $
 #
 
 DISTNAME=	xmms-nas-0.2
@@ -12,8 +12,6 @@ COMMENT=	XMMS output plugin for Network Audio System (NAS)
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../audio/nas/buildlink3.mk"
 .include "../../audio/xmms/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/05/26 02:13:21 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/20 10:01:50 jperkin Exp $
 #
 
 DISTNAME=		vs233
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		is@NetBSD.org
 HOMEPAGE=		http://www.cs.arizona.edu/sr/
 COMMENT=		The SR language compiler and run time system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gzcat pax
 

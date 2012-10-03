@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2012/09/15 10:03:54 obache Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/02 17:10:40 tron Exp $
 
 DISTNAME=	pidgin-icb-20070505
 PKGREVISION=	22
@@ -13,7 +13,6 @@ USE_TOOLS+=	pkg-config
 
 USE_LIBTOOL=	yes
 NO_CONFIGURE=	yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CFLAGS+=	`pkg-config pidgin --cflags`
 LDFLAGS+=	-module -avoid-version -rpath ${PIDGIN_PLUGIN_DIR}	\

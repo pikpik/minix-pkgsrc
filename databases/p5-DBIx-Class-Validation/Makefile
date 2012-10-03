@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/08/14 08:18:07 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/03 11:16:26 sno Exp $
 
 DISTNAME=	DBIx-Class-Validation-0.02005
 PKGNAME=	p5-${DISTNAME}
@@ -21,8 +21,6 @@ BUILD_DEPENDS+=	p5-DateTime-Format-SQLite-[0-9]*:../../time/p5-DateTime-Format-S
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/DBIx/Class/Validation/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

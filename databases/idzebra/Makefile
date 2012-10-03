@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/06/14 07:43:23 sbd Exp $
+# $NetBSD: Makefile,v 1.5 2012/08/21 23:49:19 marino Exp $
 #
 
 DISTNAME=	idzebra-2.0.47
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://www.indexdata.com/zebra
 COMMENT=	Structured text indexing and retrieval engine
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

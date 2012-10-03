@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/09/23 22:13:39 sno Exp $
+# $NetBSD: Makefile,v 1.11 2011/08/14 08:18:08 obache Exp $
 
 DISTNAME=	DBM-Deep-2.0004
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DBM-Deep/
 COMMENT=	Pure perl multi-level hash/array DBM that supports transactions
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/DBM/Deep/.packlist

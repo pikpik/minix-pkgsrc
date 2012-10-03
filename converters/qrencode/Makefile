@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/07/20 19:08:14 ryoon Exp $
+# $NetBSD: Makefile,v 1.7 2011/12/13 21:44:36 ryoon Exp $
 #
 
 DISTNAME=	qrencode-3.2.0
@@ -9,8 +9,6 @@ MAINTAINER=	alaric@kitten-technologies.co.uk
 HOMEPAGE=	http://fukuchi.org/works/qrencode/index.en.html
 COMMENT=	QR Code generator
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

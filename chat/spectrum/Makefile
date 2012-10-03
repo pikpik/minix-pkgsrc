@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/09/15 10:03:55 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/02 17:10:41 tron Exp $
 
 DISTNAME=		spectrum-1.4.8
 PKGREVISION=		12
@@ -12,8 +12,6 @@ LICENSE=		gnu-gpl-v3
 
 DEPENDS+=		${PYPKGPREFIX}-xmpppy>=0.4.1:../../chat/py-xmpppy
 DEPENDS+=		${PYPKGPREFIX}-expat>=0nb4:../../textproc/py-expat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config msgfmt xgettext
 USE_CMAKE=		yes

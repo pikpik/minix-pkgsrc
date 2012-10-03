@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/05/14 07:42:35 dholland Exp $
+# $NetBSD: Makefile,v 1.17 2012/05/23 06:53:32 dholland Exp $
 #
 
 DISTNAME=	joos-0.2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.brics.dk/~mis/dOvs/index.html
 COMMENT=	Java Object Oriented Subset
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

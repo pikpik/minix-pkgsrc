@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/01/17 02:54:16 obache Exp $
+# $NetBSD: Makefile,v 1.16 2010/08/06 04:51:24 obache Exp $
 #
 
 DISTNAME=	tokyotyrant-ruby-1.13
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://fallabs.com/tokyotyrant/rubydoc/
 COMMENT=	Pure Ruby Interface of Tokyo Tyrant
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# none
 USE_TOOLS+=		pax

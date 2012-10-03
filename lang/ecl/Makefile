@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/07/26 21:09:29 asau Exp $
+# $NetBSD: Makefile,v 1.14 2012/09/15 10:05:19 obache Exp $
 
 DISTNAME=		ecl-12.7.1
 PKGREVISION=		1
@@ -10,7 +10,6 @@ HOMEPAGE=		http://ecls.sourceforge.net/
 COMMENT=		Embeddable Common Lisp
 LICENSE=		gnu-lgpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 USE_PKGLOCALEDIR=	yes

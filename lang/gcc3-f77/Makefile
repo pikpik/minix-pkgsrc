@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2006/12/07 11:24:28 markd Exp $
+# $NetBSD: Makefile,v 1.20 2009/11/07 18:03:55 asau Exp $
 
 PKGNAME=	gcc3${GCC3_PKGMODIF}-f77-${GCC_VERSION}
 COMMENT=	GNU Compiler Collection, v3 - F77 compiler
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INFO_FILES=	# PLIST
 

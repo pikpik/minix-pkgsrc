@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2010/11/05 13:46:44 shattered Exp $
+# $NetBSD: Makefile,v 1.29 2012/09/15 10:05:19 obache Exp $
 #
 
 DISTNAME=		japhar-0.08
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_BACKUP}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.hungry.com/old-hungry/products/japhar/
 COMMENT=		Java Virtual Machine, currently JDK 1.1.5-level
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/03/03 02:19:52 jlam Exp $
+# $NetBSD: Makefile,v 1.20 2009/05/19 08:59:05 wiz Exp $
 #
 
 DISTNAME=	icb.2.1.4
@@ -20,7 +20,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/01/28 11:00:52 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/06/03 22:44:51 wiz Exp $
 #
 
 DISTNAME=	pykaraoke-0.7.5
@@ -17,8 +17,6 @@ LICENSE=	gnu-lgpl-v2.1
 DEPENDS+=	${PYPKGPREFIX}-wxWidgets>=2.6:../../x11/py-wxWidgets
 DEPENDS+=	${PYPKGPREFIX}-mutagen-[0-9]*:../../audio/py-mutagen
 DEPENDS+=	${PYPKGPREFIX}-Numeric-[0-9]*:../../math/py-Numeric
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PYTHON+=	performer_prompt.py
 REPLACE_PYTHON+=	pycdg.py

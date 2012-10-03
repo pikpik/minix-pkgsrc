@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/01/12 16:18:23 drochner Exp $
 
 PKGNAME=		mp3gain-1.5.2
 DISTNAME=		${PKGNAME:S/./_/g}-src
@@ -12,7 +12,6 @@ COMMENT=		Loudness normalizer for MP3 files
 
 WRKSRC=			${WRKDIR}
 USE_TOOLS+=		gmake
-PKG_DESTDIR_SUPPORT=	user-destdir
 LICENSE=		gnu-lgpl-v2
 
 do-install:

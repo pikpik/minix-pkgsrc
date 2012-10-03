@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:32:44 seb Exp $
+# $NetBSD: Makefile,v 1.5 2011/08/06 13:04:14 adam Exp $
 
 DISTNAME=	MPEG-Audio-Frame-0.09
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Class for weeding out MPEG audio frames out of a file handle
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/MPEG/Audio/Frame/.packlist
 

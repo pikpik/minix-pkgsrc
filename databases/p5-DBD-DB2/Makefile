@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:32:55 seb Exp $
+# $NetBSD: Makefile,v 1.3 2011/08/14 08:18:05 obache Exp $
 
 DISTNAME=	DBD-DB2-1.78
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DBD-DB2/
 COMMENT=	Perl DBI/DBD driver for DB2 databases
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/DBD/DB2/.packlist
 

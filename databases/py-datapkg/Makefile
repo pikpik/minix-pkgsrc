@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/10/14 04:48:57 dholland Exp $
+# $NetBSD: Makefile,v 1.6 2012/04/08 19:08:47 wiz Exp $
 #
 
 DISTNAME=	datapkg-0.8
@@ -12,8 +12,6 @@ COMMENT=	Tool for distributing, discovering, and installing data packages
 LICENSE=	mit
 
 DEPENDS+=	${PYPKGPREFIX}-ckanclient-[0-9]*:../../databases/py-ckanclient
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	datapkg-[0-9]*
 

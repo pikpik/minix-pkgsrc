@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/11/10 17:21:36 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2009/11/26 16:40:55 joerg Exp $
 
 DISTNAME=		eag-2.3
 PKGREVISION=		3
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.cs.ru.nl/~kees/eag/
 COMMENT=		Transducer generator using affix grammars
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

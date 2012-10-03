@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/08/05 10:02:10 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/08/21 23:49:19 marino Exp $
 #
 
 DISTNAME=	pgtcl1.5
@@ -11,8 +11,6 @@ MASTER_SITES=	ftp://gborg.postgresql.org/pub/pgtcl/stable/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gborg.postgresql.org/project/pgtcl/projdisplay.php
 COMMENT=	TCL interface to PostgreSQL
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/15 18:34:36 asau Exp $
+# $NetBSD: Makefile,v 1.2 2010/06/24 20:06:28 asau Exp $
 
 DISTNAME=	binutils-2.18
 PKGNAME=	mingw-${DISTNAME:S/-src//}
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mingw.sourceforge.net/
 COMMENT=	GNU binutils for win32 cross-development
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

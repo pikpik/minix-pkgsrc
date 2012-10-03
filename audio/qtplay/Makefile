@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/05/13 13:13:41 schmonz Exp $
+# $NetBSD: Makefile,v 1.3 2008/03/02 06:10:33 jlam Exp $
 #
 
 DISTNAME=	qtplay1.3.1
@@ -11,8 +11,6 @@ HOMEPAGE=	http://rainbowflight.googlepages.com/
 COMMENT=	QuickTime command-line player
 
 ONLY_FOR_PLATFORM=	Darwin-*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2011/11/23 00:36:54 marino Exp $
+# $NetBSD: Makefile,v 1.30 2011/12/09 14:36:33 drochner Exp $
 
 DISTNAME=	xmradio-1.2
 PKGREVISION=	4
@@ -8,8 +8,6 @@ MASTER_SITES=	http://core.de/~coto/radio/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://core.de/~coto/xmradio.html
 COMMENT=	Radio application for Brooktree 848 compatible TV cards
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	sox>=12.16:../../audio/sox
 

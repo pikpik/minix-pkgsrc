@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/07/05 15:06:28 schnoebe Exp $
+# $NetBSD: Makefile,v 1.16 2012/04/27 12:31:51 obache Exp $
 
 DISTNAME=	mono-basic-2.10
 PKGREVISION=	2
@@ -10,8 +10,6 @@ MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/
 COMMENT=	Visual Basic .NET support for mono
 LICENSE=	gnu-lgpl-v2 AND mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES+=		# empty

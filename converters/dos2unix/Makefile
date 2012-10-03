@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/07/31 16:11:02 ryoon Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/01 12:30:16 ryoon Exp $
 #
 
 DISTNAME=	dos2unix-6.0.2
@@ -9,8 +9,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://waterlan.home.xs4all.nl/dos2unix.html
 COMMENT=	DOS/Mac to Unix and vice versa text file format converter
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	unix2dos-[0-9]*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:32:59 seb Exp $
+# $NetBSD: Makefile,v 1.6 2011/08/14 08:18:07 obache Exp $
 
 DISTNAME=	DBIx-Class-RDBOHelpers-0.09
 PKGNAME=	p5-${DISTNAME}
@@ -18,8 +18,6 @@ BUILD_DEPENDS+=	p5-DBIx-Class-[0-9]*:../../databases/p5-DBIx-Class
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/DBIx/Class/RDBOHelpers/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/09/16 20:12:08 jaapb Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/17 11:45:43 jaapb Exp $
 #
 
 DISTNAME=		ocaml-mysql-1.1.1
@@ -9,8 +9,6 @@ MAINTAINER=		jaapb@NetBSD.org
 HOMEPAGE=		http://ocaml-mysql.forge.ocamlcore.org/
 COMMENT=		Ocaml library for MySQL database access
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 08:18:09 obache Exp $
+# $NetBSD: Makefile,v 1.6 2011/08/16 20:11:31 wiz Exp $
 
 DISTNAME=		MARC-Record-2.0.3
 PKGNAME=		p5-${DISTNAME}
@@ -10,7 +10,6 @@ HOMEPAGE=		http://search.cpan.org/dist/MARC-Record/
 COMMENT=		MARC record handling package
 LICENSE=		${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 PERL5_PACKLIST=	auto/MARC/Record/.packlist

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/09/15 10:03:41 obache Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/02 17:10:33 tron Exp $
 
 DISTNAME=	MP3Diags-1.0.09.063
 PKGNAME=	${DISTNAME:S/MP3D/mp3d/}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://mp3diags.sourceforge.net/
 COMMENT=	MP3 diagnosis tool and tag editor
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin
 
 USE_LANGUAGES=	c++

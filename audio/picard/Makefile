@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/04/08 19:08:44 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/09/22 13:48:15 ryoon Exp $
 #
 
 DISTNAME=	picard-0.16
@@ -13,8 +13,6 @@ LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PYPKGPREFIX}-qt4>=4.5:../../x11/py-qt4
 DEPENDS+=	${PYPKGPREFIX}-mutagen>=1.20:../../audio/py-mutagen
-
-PKG_DESTDIR_SUPPORT= user-destdir
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	msgfmt pkg-config

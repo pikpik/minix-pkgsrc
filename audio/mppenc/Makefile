@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/01/25 19:34:22 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2008/01/04 20:17:47 markd Exp $
 #
 
 DISTNAME=	mppenc-1.16
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.musepack.net/
 COMMENT=	Musepack encoder
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=	yes
 

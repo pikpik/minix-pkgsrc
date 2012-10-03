@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2011/06/17 15:40:33 taca Exp $
+# $NetBSD: Makefile,v 1.32 2011/11/17 12:44:02 obache Exp $
 
 DISTNAME=	phpldapadmin-${VERSION}
 CATEGORIES=	databases www
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://phpldapadmin.sourceforge.net/
 COMMENT=	Set of PHP-scripts to administer an LDAP directory over the WWW
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../lang/php/phpversion.mk"

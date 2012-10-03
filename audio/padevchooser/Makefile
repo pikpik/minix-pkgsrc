@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/09/15 10:03:42 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/02 17:10:34 tron Exp $
 #
 
 DISTNAME=	padevchooser-0.9.3
@@ -9,8 +9,6 @@ MASTER_SITES=	http://0pointer.de/lennart/projects/padevchooser/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://0pointer.de/lennart/projects/padevchooser/
 COMMENT=	Tray area icon for the PulseAudio sound server
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++

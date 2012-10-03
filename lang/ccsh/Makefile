@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/03/04 16:38:11 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2010/07/06 10:17:13 jmmv Exp $
 #
 
 DISTNAME=		ccsh-0.0.4
@@ -11,7 +11,6 @@ HOMEPAGE=		http://ccsh.sourceforge.net/
 COMMENT=		C-like syntax scripting
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 

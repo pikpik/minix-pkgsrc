@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/09/13 10:49:04 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2011/09/15 09:04:26 wiz Exp $
 #
 
 DISTNAME=		build-farm-4_5
@@ -11,8 +11,6 @@ MAINTAINER=		nico@orgrim.net
 HOMEPAGE=		http://www.pgbuildfarm.org/
 COMMENT=		PostgreSQL Build Farm client
 LICENSE=		postgresql-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		scmgit-base>=1.6:../../devel/scmgit-base
 DEPENDS+=		p5-libwww>=5.0:../../www/p5-libwww

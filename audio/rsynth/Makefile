@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/01/24 09:10:57 sbd Exp $
+# $NetBSD: Makefile,v 1.19 2012/02/06 02:50:44 sbd Exp $
 
 DISTNAME=	rsynth-2.0
 PKGREVISION=	5
@@ -24,7 +24,6 @@ CONFIGURE_ARGS+=--without-bDict
 CONFIGURE_ENV+=	ac_cv_lib_audio=yes XLIBS=-lXt
 
 INSTALLATION_DIRS+= bin share/rsynth
-PKG_DESTDIR_SUPPORT= user-destdir
 
 pre-configure:
 	${GZCAT} ${DISTDIR}/${DIST_SUBDIR}/cmudict.0.4.Z > ${WRKDIR}/cmudict.0.4

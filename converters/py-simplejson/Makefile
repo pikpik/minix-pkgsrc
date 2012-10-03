@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/08/12 16:08:08 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/02 17:29:48 wiz Exp $
 #
 
 DISTNAME=	simplejson-2.6.2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://undefined.org/python/#simplejson
 COMMENT=	Simplejson is a simple, fast, extensible JSON encoder/decoder
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c
 

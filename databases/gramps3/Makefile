@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2012/09/15 10:04:01 obache Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/02 17:10:43 tron Exp $
 #
 
 DISTNAME=		gramps-3.4.1
@@ -12,8 +12,6 @@ COMMENT=		Genealogical Research and Analysis Management Programming System V3
 LICENSE=		gnu-gpl-v2
 
 DEPENDS+=		xdg-utils-[0-9]*:../../misc/xdg-utils
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		msgfmt pkg-config intltool msgconv
 USE_PKGLOCALEDIR=	yes

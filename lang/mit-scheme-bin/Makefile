@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/03/04 16:38:12 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/05/26 02:13:21 joerg Exp $
 #
 
 DISTNAME=		mit-scheme-7.7.1-ix86-gnu-linux
@@ -12,8 +12,6 @@ COMMENT=		MIT/GNU Scheme (Linux binary)
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 INSTALLATION_DIRS=	bin libexec

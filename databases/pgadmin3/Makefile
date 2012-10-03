@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2012/09/15 10:04:03 obache Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/02 17:10:44 tron Exp $
 
 DISTNAME=	pgadmin3-1.12.1
 PKGREVISION=	11
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_PGSQL:=pgadmin3/release/v${PKGVERSION_NOREV}/src/}
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.pgadmin.org/
 COMMENT=	Graphical PostgreSQL client and administration tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PGSQL_VERSIONS_ACCEPTED=90 84 83
 

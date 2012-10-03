@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2012/07/25 13:20:30 fhajny Exp $
+# $NetBSD: Makefile,v 1.34 2012/08/17 15:32:31 taca Exp $
 
 #
 # We can't omit PKGNAME here to handle PKG_OPTIONS.
@@ -11,7 +11,6 @@ COMMENT=		PHP Hypertext Preprocessor version 5
 LICENSE=		php
 
 TEST_TARGET=		test
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake lex pkg-config
 LIBTOOL_OVERRIDE=	# empty

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/01/18 13:49:23 adam Exp $
+# $NetBSD: Makefile,v 1.7 2012/04/01 19:42:31 rhaen Exp $
 
 DISTNAME=	BDB-1.9
 PKGNAME=	p5-BDB-1.90
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/BDB/
 COMMENT=	Perl 5 module providing asynchronous Berkeley DB access
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BDB_ACCEPTED=		db5 db4 db3 db2
 PERL5_PACKLIST=		auto/BDB/.packlist

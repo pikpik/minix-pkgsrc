@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/02/28 14:52:53 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2011/03/11 12:50:38 zafer Exp $
 #
 
 DISTNAME=	js-1.6.20070208
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.ossp.org/pkg/lib/js/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ossp.org/pkg/lib/js/
 COMMENT=	Sanitized distribution of Mozilla's JavaScript implementation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ###
 ### XXX This could be eliminated with buildlinkery, but I do not have time

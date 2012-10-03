@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/07/02 13:37:36 adam Exp $
+# $NetBSD: Makefile,v 1.13 2012/08/29 11:22:10 obache Exp $
 #
 
 DISTNAME=		libcassandra-20101010
@@ -9,8 +9,6 @@ MASTER_SITES=		ftp://ftp.ancient-solutions.com/pub/bsdprojects/NetBSD/packages/d
 MAINTAINER=		tonnerre@NetBSD.org
 HOMEPAGE=		http://github.com/posulliv/libcassandra/
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 COMMENT=		C++ interface to Cassandra
 

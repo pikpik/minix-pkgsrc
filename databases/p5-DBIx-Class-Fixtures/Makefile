@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/10/21 04:03:40 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/03 11:16:26 sno Exp $
 
 DISTNAME=	DBIx-Class-Fixtures-1.001013
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DBIx-Class-Fixtures/
 COMMENT=	Perl 5 module to handle databases fixtures using DBIx::Class schema
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Class-Accessor-Grouped>=0.06:../../devel/p5-Class-Accessor-Grouped
 DEPENDS+=	p5-Config-Any>=0.08:../../devel/p5-Config-Any
