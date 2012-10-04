@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.18 2012/10/03 13:01:43 asau Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:56:16 wiz Exp $
 #
 
-DISTNAME=	fldigi-3.21.52
-PKGREVISION=	1
+DISTNAME=	fldigi-3.21.53
 CATEGORIES=	ham
 MASTER_SITES=	http://www.w1hkj.com/downloads/fldigi/
 LICENSE=	gnu-gpl-v3
 
-MAINTAINER=	pkgsrc-users@NetBSD.org
+MAINTAINER=	makoto@ki.nu
 HOMEPAGE=	http://www.w1hkj.com/Fldigi.html
 #HOMEPAGE=	http://lists.berlios.de/mailman/listinfo/fldigi-devel
 COMMENT=	Digital radio modem
