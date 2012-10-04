@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/06/12 02:14:16 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2011/04/13 14:47:18 drochner Exp $
 #
 
 DISTNAME=	myhdl-0.7
@@ -13,7 +13,6 @@ COMMENT=	Hardware description in Python
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
-PYTHON_VERSIONS_ACCEPTED=	26 27
 
 do-test:
 	cd ${WRKSRC}/myhdl/test/core && ${PYTHONBIN} test_all.py

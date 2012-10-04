@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/09/15 10:04:44 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/02 17:11:05 tron Exp $
 #
 
 DISTNAME=	libchamplain-0.4.7
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://projects.gnome.org/libchamplain/
 COMMENT=	Map widget
 #LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

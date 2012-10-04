@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/06/14 09:48:21 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/01/27 08:23:06 obache Exp $
 #
 
 DISTNAME=		pyproj-1.8.3
@@ -11,8 +11,6 @@ MAINTAINER=		gdt@NetBSD.org
 HOMEPAGE=		http://code.google.com/p/pyproj/
 COMMENT=		Python wrapper for proj
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	share/doc/${PKGNAME_NOREV}
 

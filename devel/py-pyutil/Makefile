@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/02/12 20:10:42 gls Exp $
+# $NetBSD: Makefile,v 1.7 2012/07/20 00:41:11 gdt Exp $
 #
 
 DISTNAME=	pyutil-1.9.3
@@ -13,11 +13,9 @@ LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-PYTHON_VERSIONS_ACCEPTED=	27 26
-
 DEPENDS+=	${PYPKGPREFIX}-setuptools_trial-[0-9]*:../../devel/py-setuptools_trial
-DEPENDS+=      ${PYPKGPREFIX}-simplejson-[0-9]*:../../converters/py-simplejson
-DEPENDS+=      ${PYPKGPREFIX}-zbase32-[0-9]*:../../converters/py-zbase32
+DEPENDS+=	${PYPKGPREFIX}-simplejson-[0-9]*:../../converters/py-simplejson
+DEPENDS+=	${PYPKGPREFIX}-zbase32-[0-9]*:../../converters/py-zbase32
 
 USE_LANGUAGES=	# none
 

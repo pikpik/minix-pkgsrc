@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/08/29 14:20:23 wen Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:56:06 wiz Exp $
 #
 
 DISTNAME=	Geo-Distance-0.19
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~bluefeet/Geo-Distance-0.11/Distance.pm
 COMMENT=	Calculate Distances and Closest Locations
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Geo/Distance/.packlist
 #PERL5_MODULE_TYPE=	Module::Install::Bundled

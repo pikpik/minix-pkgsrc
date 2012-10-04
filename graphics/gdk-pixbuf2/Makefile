@@ -1,4 +1,5 @@
-# $NetBSD: Makefile,v 1.18 2012/09/15 10:04:51 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 14:36:10 adam Exp $
+# Remember to also update graphics/gdk-pixbuf2-xlib
 
 DISTNAME=	gdk-pixbuf-2.26.4
 PKGNAME=	${DISTNAME:S/pixbuf/pixbuf2/}

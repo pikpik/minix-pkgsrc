@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.2 2011/10/14 17:22:06 marino Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gps
 PKG_SUPPORTED_OPTIONS=	syslog python sqlite 
@@ -57,7 +57,6 @@ CONFIGURE_ARGS+= --with-python=${PREFIX}
 CONFIGURE_ARGS+= --enable-shared-python=no
 CONFIGURE_ARGS+= --enable-pygtk
 PLIST.pysupport= yes
-PYTHON_VERSIONS_ACCEPTED= 27 26
 .include "../../lang/python/pyversion.mk"
 .include "../../x11/py-gtk2/buildlink3.mk"
 .else

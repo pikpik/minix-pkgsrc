@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/10/02 17:11:06 tron Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/03 21:56:06 wiz Exp $
 
 DISTNAME=	qgis-1.7.4
 PKGREVISION=	8
@@ -10,8 +10,6 @@ MAINTAINER=	brook@nmsu.edu
 HOMEPAGE=	http://www.qgis.org/
 COMMENT=	Geographic Information System (GIS)
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=		yes
 USE_LANGUAGES=		c c++ fortran77

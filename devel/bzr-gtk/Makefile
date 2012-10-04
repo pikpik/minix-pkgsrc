@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/03/15 11:53:23 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/04/08 21:28:17 wiz Exp $
 
 DISTNAME=	bzr-gtk-${VER}
 PKGREVISION=	1
@@ -18,9 +18,6 @@ DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.8:../../x11/py-gtk2
 
 PYDISTUTILSPKG=	yes
 REPLACE_PYTHON=	create-credits.py info.py
-# Only these python versions are supported, see:
-# http://doc.bazaar.canonical.com/bzr.dev/en/whats-new/whats-new-in-2.4.html
-PYTHON_VERSIONS_ACCEPTED=	27 26
 
 USE_TOOLS+=	msgfmt
 

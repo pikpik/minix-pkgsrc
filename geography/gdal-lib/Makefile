@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2012/06/02 16:31:29 drochner Exp $
+# $NetBSD: Makefile,v 1.47 2012/08/05 10:02:11 obache Exp $
 
 VERSION=	1.9.1
 DISTNAME=	gdal-${VERSION}
@@ -16,8 +16,6 @@ LICENSE=	mit
 # is not a generated file, apparently caused by an odd make path that
 # fails to use the right includes.
 MAKE_JOBS_SAFE=		no
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++ fortran77
 USE_LIBTOOL=		yes

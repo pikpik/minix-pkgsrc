@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/08/25 11:57:45 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/03/04 01:48:39 gdt Exp $
 #
 
 DISTNAME=		epsg-v${VERS}sql-PostgreSQL
@@ -16,8 +16,6 @@ MAINTAINER=		brook@nmsu.edu
 HOMEPAGE=		http://www.epsg.org/
 COMMENT=		EPSG geodetic parameters database
 LICENSE=		epsg-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 
