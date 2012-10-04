@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:34 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2011/12/16 16:55:25 hans Exp $
 #
 
 DISTNAME=		fix-mime-charset-0.5.3
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		mail converters
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fix-mime-chr/}
 

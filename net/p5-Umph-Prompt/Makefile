@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/11/08 20:21:30 ryoon Exp $
 #
 
 DISTNAME=	Umph-Prompt-0.1.0
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://umph.googlecode.com/files/
 

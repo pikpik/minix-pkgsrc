@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2007/09/25 10:07:06 hira Exp $
+# $NetBSD: Makefile,v 1.16 2010/02/16 18:16:26 joerg Exp $
 #
 
 DISTNAME=	cronolog-1.6.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://cronolog.org/download/
 

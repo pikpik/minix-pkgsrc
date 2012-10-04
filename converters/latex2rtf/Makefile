@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2009/12/17 21:56:22 abs Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/03 00:20:11 asau Exp $
 #
 
 DISTNAME=	latex2rtf-1.9.16a
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=latex2rtf/}	\
 		${MASTER_SITE_TEX_CTAN:=support/latex2rtf/}

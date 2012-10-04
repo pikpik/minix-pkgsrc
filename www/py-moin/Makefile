@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2012/04/08 19:09:17 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 23:40:35 cheusov Exp $
 #
 
 VER=		1.9.4
 DISTNAME=	moin-${VER}
 PKGNAME=	${PYPKGPREFIX}-moin-${VER}
+PKGREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://static.moinmo.in/files/
 
@@ -23,6 +24,8 @@ REPLACE_PYTHON=	MoinMoin/i18n/tools/markup15to16.py \
 		wiki/server/moin*
 
 REPLACE_PERL=	MoinMoin/web/static/htdocs/applets/FCKeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.pl
+
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/distutils.mk"
 .include "../../lang/python/application.mk"

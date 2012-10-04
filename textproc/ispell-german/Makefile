@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2009/02/17 14:43:05 abs Exp $
+# $NetBSD: Makefile,v 1.16 2012/08/15 20:28:05 wiz Exp $
 #
 
 DISTNAME=	igerman98-20120607
 PKGNAME=	ispell-german-20120607
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://j3e.de/ispell/igerman98/dict/
 EXTRACT_SUFX=	.tar.bz2

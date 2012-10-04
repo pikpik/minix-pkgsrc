@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 15:14:10 obache Exp $
+# $NetBSD: Makefile,v 1.6 2011/10/08 03:40:41 hiramatsu Exp $
 
 DISTNAME=	Template-Tiny-1.12
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Template/}
 

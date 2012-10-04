@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2008/04/24 21:17:51 markd Exp $
+# $NetBSD: Makefile,v 1.15 2012/02/16 19:48:22 hans Exp $
 #
 
 DISTNAME=	btparse-0.35
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/A/AM/AMBS/btparse/}
 

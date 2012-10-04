@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/09/11 05:01:08 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2008/09/17 00:14:23 bjs Exp $
 #
 
 DISTNAME=		cvsutils-0.2.5
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://www.red-bean.com/cvsutils/releases/
 

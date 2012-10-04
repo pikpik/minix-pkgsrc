@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:33:33 seb Exp $
+# $NetBSD: Makefile,v 1.4 2011/08/12 06:56:59 adam Exp $
 
 DISTNAME=	Declare-Constraints-Simple-0.03
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/P/PH/PHAYLON/}
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.99 2012/10/02 17:10:44 tron Exp $
+# $NetBSD: Makefile,v 1.100 2012/10/02 21:25:51 asau Exp $
 
 DISTNAME=	rrdtool-1.4.7
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	databases graphics net
 MASTER_SITES=	http://oss.oetiker.ch/rrdtool/pub/
 

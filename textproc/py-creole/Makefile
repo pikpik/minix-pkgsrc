@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/02/11 13:01:54 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 23:40:39 cheusov Exp $
 #
 
 VERS=		0.2.5
 DISTNAME=	python-creole-${VERS}
 PKGNAME=	${PYPKGPREFIX}-creole-${VERS}
+PKGREVISION=	1
 EGG_NAME=	python_creole-${VERS}
 CATEGORIES=	textproc www python
 MASTER_SITES=	http://pypi.python.org/packages/source/p/python-creole/
@@ -16,7 +17,9 @@ LICENSE=	gnu-gpl-v3
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_LANGUAGES=	#none
+USE_LANGUAGES=		#none
+
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"

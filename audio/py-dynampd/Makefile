@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.1 2012/09/12 17:21:20 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 23:40:37 cheusov Exp $
 #
 
 DISTNAME=	dynampd
 VERSION=	1.1.0
 PKGNAME=	${PYPKGPREFIX}-dynampd-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://dynampd.ubitux.fr/
 EXTRACT_SUFX=	.py
@@ -21,6 +22,8 @@ WRKSRC=			${WRKDIR}
 USE_LANGUAGES=		# none
 INSTALLATION_DIRS=	bin
 REPLACE_PYTHON=		dynampd.py
+
+PYTHON_SELF_CONFLICT=	yes
 
 do-build:
 

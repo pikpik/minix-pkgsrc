@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/22 17:14:33 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/31 21:15:25 joerg Exp $
 #
 
 DISTNAME=	freehdl-0.0.7
+PKGREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	http://seul.org/~enaroska/
 

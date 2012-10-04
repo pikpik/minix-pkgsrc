@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2011/08/06 14:51:55 adam Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/02 21:25:24 asau Exp $
 
 DISTNAME=	AddressBook-0.16
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=AddressBook/}
 

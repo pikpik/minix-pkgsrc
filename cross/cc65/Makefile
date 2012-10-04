@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2011/03/08 11:33:35 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 00:10:29 asau Exp $
 #
 
 DISTNAME=	cc65-sources-2.12.0
 PKGNAME=	${DISTNAME:S/-sources//}
+PKGREVISION=	1
 CATEGORIES=	cross lang
 MASTER_SITES=	ftp://ftp.musoftware.de/pub/uz/cc65/
 EXTRACT_SUFX=	.tar.bz2

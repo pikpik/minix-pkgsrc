@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2011/06/12 11:59:20 schnoebe Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/03 23:40:36 cheusov Exp $
 #
 
 DISTNAME=		aaronsw-${GHNAME}-${GHVERSION}-0-g${GHCOMMIT}
+PKGREVISION=		1
 GHNAME=			html2text
 GHVERSION=		3.02
 GHCOMMIT=		d9bf7d6
@@ -19,6 +20,7 @@ FETCH_USING=		curl
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
+PYTHON_SELF_CONFLICT=		yes
 
 WRKSRC=			${WRKDIR}/aaronsw-${GHNAME}-${GHCOMMIT}
 

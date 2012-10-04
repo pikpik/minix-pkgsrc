@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/01/11 20:08:39 drochner Exp $
 #
 
 DISTNAME=		racoon2-20100526a
+PKGREVISION=		1
 CATEGORIES=		security net
 MASTER_SITES=		ftp://ftp.racoon2.wide.ad.jp/pub/racoon2/
 EXTRACT_SUFX=		.tgz

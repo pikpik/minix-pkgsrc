@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/08/28 01:23:41 bjs Exp $
+# $NetBSD: Makefile,v 1.2 2011/02/28 14:52:56 wiz Exp $
 #
 
 DISTNAME=	teseq-1.0.0
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://ftp.gnu.org/gnu/teseq/
 EXTRACT_SUFX=	.tar.bz2

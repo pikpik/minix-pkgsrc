@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2012/04/08 19:08:55 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 23:40:37 cheusov Exp $
 #
 
 VERSION=	0.4.0
 DISTNAME=	fs-${VERSION}
 PKGNAME=	${PYPKGPREFIX}-filesystem-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	filesystems
 MASTER_SITES=	http://pyfilesystem.googlecode.com/files/
 
@@ -13,6 +14,8 @@ COMMENT=	Python filesystem access library
 LICENSE=	modified-bsd
 
 USE_LANGUAGES=	# none
+
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

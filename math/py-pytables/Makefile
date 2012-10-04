@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/06/16 05:40:05 dholland Exp $
+# $NetBSD: Makefile,v 1.25 2012/09/11 23:04:32 asau Exp $
 #
 
 DISTNAME=		tables-2.2.1
@@ -15,8 +15,6 @@ PKG_OPTIONS_VAR=	PKG_OPTIONS.pytables
 PKG_SUPPORTED_OPTIONS=	lzo
 PKG_SUGGESTED_OPTIONS=
 .include "../../mk/bsd.options.mk"
-
-PYTHON_VERSIONS_INCOMPATIBLE=	25
 
 PYDISTUTILSPKG=		yes
 PYSETUPBUILDARGS=	--hdf5=${BUILDLINK_PREFIX.hdf5}

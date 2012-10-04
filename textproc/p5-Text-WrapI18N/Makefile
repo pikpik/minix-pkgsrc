@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/08/14 15:14:15 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/02/02 09:44:58 hans Exp $
 
 DISTNAME=	Text-WrapI18N-0.06
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
 

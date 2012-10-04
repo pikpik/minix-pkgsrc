@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2012/01/26 20:03:05 rhaen Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/02 21:25:33 asau Exp $
 #
 
 DISTNAME=	Net-MySQL-0.11
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/T/TS/TSUCCHI/
 

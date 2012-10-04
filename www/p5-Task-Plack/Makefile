@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2012/01/22 20:14:03 abs Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/02 18:54:32 dholland Exp $
 
 DISTNAME=	Task-Plack-0.25
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Task/}
 

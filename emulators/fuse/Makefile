@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.46 2012/10/02 17:10:58 tron Exp $
+# $NetBSD: Makefile,v 1.47 2012/10/03 12:55:12 asau Exp $
 
 DISTNAME=	fuse-1.0.0.1a
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fuse-emulator/}
 

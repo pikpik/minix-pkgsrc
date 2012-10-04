@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2007/02/17 20:59:49 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2008/03/03 17:45:36 jlam Exp $
 #
 
 DISTNAME=	p4pr
 PKGNAME=	${DISTNAME}-20010504
+PKGREVISION=	1
 CATEGORIES=	devel scm
 MASTER_SITES=	ftp://ftp.perforce.com/pub/perforce/contrib/misc/
 EXTRACT_SUFX=	.perl

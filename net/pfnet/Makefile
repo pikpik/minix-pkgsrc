@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2006/10/04 21:53:17 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/06/12 02:14:41 joerg Exp $
 #
 
 DISTNAME=	fnet.pl-1.4
 PKGNAME=	pfnet-1.4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	chat net
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

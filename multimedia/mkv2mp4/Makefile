@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/03/15 11:53:34 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/22 13:48:19 ryoon Exp $
 #
 
 SVNREV=		11
@@ -20,8 +20,6 @@ COMMENT=	Remux mkv files to mp4 files compatible with standalone players
 WRKSRC=		${WRKDIR}
 
 REPLACE_PYTHON=	${DISTNAME}.py
-# uses subprocess.check_call, which is new in 2.5
-PYTHON_VERSIONS_ACCEPTED=	25 27 26
 
 INSTALLATION_DIRS=	bin share/doc/mkv2mp4
 

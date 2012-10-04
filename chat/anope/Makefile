@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2010/06/25 08:58:38 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/07/03 18:18:20 joerg Exp $
 
 DISTNAME=	anope-1.7.21
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=anope/}
 

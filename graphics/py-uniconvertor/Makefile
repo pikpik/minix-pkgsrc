@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2011/03/28 18:01:40 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 23:40:36 cheusov Exp $
 
 DISTNAME=	uniconvertor-1.1.5
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	graphics python
 MASTER_SITES=	http://uniconvertor.googlecode.com/files/
 
@@ -14,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 PYDISTUTILSPKG=		yes
+PYTHON_SELF_CONFLICT=	yes
 
 DEPENDS+=	${PYPKGPREFIX}-sk1libs-[0-9]*:../../graphics/py-sk1libs
 

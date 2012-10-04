@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:33:27 seb Exp $
+# $NetBSD: Makefile,v 1.3 2011/08/10 08:40:57 adam Exp $
 
 DISTNAME=	Context-Preserve-0.01
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../../authors/id/J/JR/JROCKWAY/}
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.135 2011/09/14 17:51:51 hans Exp $
+# $NetBSD: Makefile,v 1.136 2011/12/18 09:13:11 obache Exp $
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
 PKGNAME=	apache-${APACHE_VERSION}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 
 HOMEPAGE=	http://httpd.apache.org/

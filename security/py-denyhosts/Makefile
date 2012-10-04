@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2008/04/25 20:39:11 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 23:40:37 cheusov Exp $
 #
 
 VER=		2.6
 DISTNAME=	DenyHosts-${VER}
 PKGNAME=	${PYPKGPREFIX}-denyhosts-${VER}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=denyhosts/}
 
@@ -29,6 +29,8 @@ SUBST_FILES.cf=	setup.py denyhosts.cfg-dist daemon-control-dist
 REPLACE_PYTHON=	daemon-control-dist plugins/test_deny.py setup.py
 REPLACE_PYTHON+= scripts/restricted_from_invalid.py
 REPLACE_PYTHON+= scripts/restricted_from_passwd.py
+
+PYTHON_SELF_CONFLICT=	yes
 
 RCD_SCRIPTS+=	denyhosts
 

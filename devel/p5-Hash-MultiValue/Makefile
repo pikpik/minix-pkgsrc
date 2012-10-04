@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2012/02/18 15:10:23 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/13 15:04:59 sno Exp $
 #
 
 DISTNAME=		Hash-MultiValue-0.12
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Hash/}
 

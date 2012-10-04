@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/08/14 15:14:12 obache Exp $
+# $NetBSD: Makefile,v 1.10 2011/10/12 15:49:17 hiramatsu Exp $
 
 DISTNAME=	Text-Glob-0.09
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5tgl
 
 CATEGORIES=	textproc perl5

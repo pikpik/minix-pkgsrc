@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2011/08/14 16:05:44 obache Exp $
+# $NetBSD: Makefile,v 1.29 2011/10/25 09:14:07 hiramatsu Exp $
 
 DISTNAME=		CGI-Application-4.50
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 SVR4_PKGNAME=		p5cga
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=CGI/}

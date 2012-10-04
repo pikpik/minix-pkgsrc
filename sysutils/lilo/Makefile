@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2008/08/30 08:10:29 dholland Exp $
+# $NetBSD: Makefile,v 1.5 2010/01/27 19:13:37 joerg Exp $
 
 DISTNAME=		lilo-22.8.src
-PKGREVISION=		1
+PKGREVISION=		2
 PKGNAME=		${DISTNAME:S/.src//}
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=system/boot/lilo/} \

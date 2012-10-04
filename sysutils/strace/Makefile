@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2011/09/01 13:00:49 christos Exp $
+# $NetBSD: Makefile,v 1.18 2012/04/08 03:37:30 dholland Exp $
 #
 
 DISTNAME=		strace-4.5.15
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=strace/}
 EXTRACT_SUFX=		.tar.bz2

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.330 2012/09/16 15:14:12 taca Exp $
+# $NetBSD: Makefile,v 1.331 2012/10/02 08:03:02 wiz Exp $
 #
 
 COMMENT=	Programming languages
@@ -144,11 +144,9 @@ SUBDIR+=	py-basicproperty
 SUBDIR+=	py-cxfreeze
 SUBDIR+=	py-psyco
 SUBDIR+=	py-pyrex
-SUBDIR+=	py25-html-docs
 SUBDIR+=	py26-html-docs
 SUBDIR+=	py27-html-docs
 #SUBDIR+=	python		# only contains Makefile fragments
-SUBDIR+=	python25
 SUBDIR+=	python26
 SUBDIR+=	python27
 SUBDIR+=	python31

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/03/03 13:40:32 gdt Exp $
 #
 
 DISTNAME=	colordiff-1.0.9
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://colordiff.sourceforge.net/
 

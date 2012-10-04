@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2009/03/17 21:40:47 darcy Exp $
+# $NetBSD: Makefile,v 1.14 2009/05/21 21:43:18 zafer Exp $
 #
 
 DISTNAME=		pinepgp-0.18.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		security mail
 MASTER_SITES=		http://hany.sk/~hany/_data/pinepgp/	\
 			http://terminus.sk/~hany/_data/pinepgp/

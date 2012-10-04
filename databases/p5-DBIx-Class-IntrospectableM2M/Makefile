@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 08:18:06 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/02 21:25:30 asau Exp $
 
 DISTNAME=	DBIx-Class-IntrospectableM2M-0.001001
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DBIx/}
 

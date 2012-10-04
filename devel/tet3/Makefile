@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2011/03/07 05:37:41 obache Exp $
+# $NetBSD: Makefile,v 1.18 2011/12/11 11:57:08 marino Exp $
 
 DISTNAME=	tet3.7-unsup.src
 PKGNAME=	tet3-3.7
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://tetworks.opengroup.org/tet/
 EXTRACT_SUFX=	.tgz

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2006/10/04 21:47:16 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/04 17:57:18 jlam Exp $
 #
 
 DISTNAME=	mailserv
 PKGNAME=	${DISTNAME}-3.29
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.barelyfitz.com/projects/mailserv/
 

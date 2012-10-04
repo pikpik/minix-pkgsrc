@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/08/25 15:31:46 drochner Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/02 20:11:50 asau Exp $
 
 DISTNAME=	psyco-1.6-src
 EGG_NAME=	${DISTNAME:S/-src//}
@@ -14,7 +14,7 @@ LICENSE=	mit
 
 WRKSRC=		${WRKDIR}/${EGG_NAME}
 
-PYTHON_VERSIONS_ACCEPTED=	26 25
+PYTHON_VERSIONS_ACCEPTED=	26
 ONLY_FOR_PLATFORM=		*-*-i386
 
 .include "../../lang/python/distutils.mk"

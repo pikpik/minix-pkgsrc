@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2010/01/27 18:45:27 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2011/03/18 20:36:46 zafer Exp $
 #
 
 DISTNAME=		cpogm-1.0
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=	# ftp://ftp.gw.com/pub/people/kim/
 

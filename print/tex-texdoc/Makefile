@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/02/09 21:20:31 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2012/04/25 15:47:49 minskim Exp $
 
 DISTNAME=	texdoc
 PKGNAME=	tex-${DISTNAME:S/./-/}-2011
+PKGREVISION=	1
 TEXLIVE_REV=	24354
 
 MAINTAINER=	minskim@NetBSD.org

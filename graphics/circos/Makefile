@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2009/07/09 19:48:23 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/06/08 13:52:57 wiz Exp $
 #
 
 DISTNAME=	circos-0.49
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://mkweb.bcgsc.ca/circos/distribution/
 EXTRACT_SUFX=	.tgz

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2012/03/22 14:04:49 sno Exp $
+# $NetBSD: Makefile,v 1.1 2012/07/05 11:50:48 sno Exp $
 
 DISTNAME=	Role-HasMessage-0.005
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/R/RJ/RJBS/}
 

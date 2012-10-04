@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/07/28 18:08:45 prlw1 Exp $
+# $NetBSD: Makefile,v 1.4 2012/09/15 10:04:19 obache Exp $
 #
 
 DISTNAME=	pyatspi-2.5.4
@@ -18,8 +18,6 @@ DEPENDS+=	at-spi2-core>=2.3.90:../../devel/at-spi2-core
 DEPENDS+=	at-spi2-atk-[0-9]*:../../devel/at-spi2-atk
 
 PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_INCOMPATIBLE=	25
 
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config

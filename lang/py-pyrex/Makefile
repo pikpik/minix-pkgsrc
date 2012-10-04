@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2012/04/15 22:01:01 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/03 23:40:38 cheusov Exp $
 
 DISTNAME=	Pyrex-0.9.9
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/P/p/}
+PKGREVISION=	1
 CATEGORIES=	lang python
 MASTER_SITES=	http://www.cosc.canterbury.ac.nz/greg.ewing/python/Pyrex/
 
@@ -12,6 +13,8 @@ LICENSE=	apache-2.0
 
 PYDISTUTILSPKG= 	yes
 USE_TOOLS+= 	 	pax
+
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

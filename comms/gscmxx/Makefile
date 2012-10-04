@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2011/08/14 07:43:02 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 11:24:40 asau Exp $
 #
 
 DISTNAME=	gscmxx-0.4.1
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	comms x11 perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gscmxx/}
 

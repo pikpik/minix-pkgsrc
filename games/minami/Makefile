@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2009/05/20 00:58:17 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2009/09/02 08:34:13 wiz Exp $
 #
 
 DISTNAME=	minami-1.0.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.guru.gr.jp/pub/minami/
 EXTRACT_SUFX=	.tgz

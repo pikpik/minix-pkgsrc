@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/01/31 02:45:46 mspo Exp $
+# $NetBSD: Makefile,v 1.2 2012/02/04 02:34:59 sbd Exp $
 #
 
 DISTNAME=	Perlbal-1.79
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/D/DO/DORMANDO/
 

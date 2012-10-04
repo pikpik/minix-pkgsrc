@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2009/07/17 18:00:13 adrianp Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 00:02:34 asau Exp $
 
 DISTNAME=	bitchbot-1.0.2
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.r1ch.net/projects/bitchbot/download/
 

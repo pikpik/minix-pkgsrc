@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2009/05/19 08:59:11 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 23:40:38 cheusov Exp $
 #
 
 DISTNAME=		InlineEgg-1.08
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		devel
 MASTER_SITES=		http://oss.corest.com/repo/
 
@@ -18,6 +18,8 @@ PYTHON_PATCH_SCRIPTS=		examples/example1.py examples/example2.py \
 				examples/example3.py examples/example4.py \
 				examples/example5.py examples/example6.py \
 				xored_shell_client.py
+
+PYTHON_SELF_CONFLICT=		yes
 
 INSTALLATION_DIRS=	share/doc/InlineEgg share/examples/InlineEgg
 

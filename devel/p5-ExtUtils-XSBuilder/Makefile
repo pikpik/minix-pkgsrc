@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2010/08/21 16:33:41 seb Exp $
+# $NetBSD: Makefile,v 1.12 2011/08/12 18:49:34 adam Exp $
 
 DISTNAME=	ExtUtils-XSBuilder-0.28
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 SVR4_PKGNAME=	p5exs
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=ExtUtils/}

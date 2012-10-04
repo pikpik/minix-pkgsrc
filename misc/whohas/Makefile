@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 13:45:17 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/02 15:42:20 shattered Exp $
 #
 
 DISTNAME=	whohas-0.29
+PKGREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.philippwesche.org/200811/whohas/
 

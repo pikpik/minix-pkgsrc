@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/07/24 17:46:59 gdt Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2011/12/02 05:25:12 agc Exp $
 #
 
 DISTNAME=	libpgm-5.1.118
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://openpgm.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2

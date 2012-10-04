@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2010/01/27 19:54:41 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2012/08/11 18:30:12 ryoon Exp $
 #
 
 DISTNAME=	rsnapshot-1.3.1
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.rsnapshot.org/downloads/
 

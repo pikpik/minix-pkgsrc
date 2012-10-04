@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.641 2012/09/16 14:46:58 taca Exp $
+# $NetBSD: Makefile,v 1.643 2012/10/03 22:09:48 wiz Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -502,7 +502,6 @@ SUBDIR+=	psgml-mode
 SUBDIR+=	pxp
 SUBDIR+=	py-4Suite
 SUBDIR+=	py-Excelerator
-SUBDIR+=	py-FourSuite
 SUBDIR+=	py-HappyDoc
 SUBDIR+=	py-Tempita
 SUBDIR+=	py-Unidecode
@@ -519,7 +518,6 @@ SUBDIR+=	py-empy
 SUBDIR+=	py-enchant
 SUBDIR+=	py-expat
 SUBDIR+=	py-feedparser
-SUBDIR+=	py-gdick
 SUBDIR+=	py-gnosis-utils
 SUBDIR+=	py-html2text
 SUBDIR+=	py-html5lib

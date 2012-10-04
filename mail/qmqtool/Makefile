@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/06/15 14:57:10 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2008/03/04 17:57:19 jlam Exp $
 #
 
 DISTNAME=	qmqtool-current
 PKGNAME=	${DISTNAME:S/-current/-1.13/}
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz

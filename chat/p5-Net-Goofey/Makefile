@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2011/10/24 05:23:58 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 00:02:41 asau Exp $
 
 DISTNAME=	Net-Goofey-1.5
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	chat perl5
 MASTER_SITES=	http://notdoneliving.net/code/Net-Goofey/
 

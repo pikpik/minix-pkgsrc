@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2011/12/18 17:09:07 ryoon Exp $
+# $NetBSD: Makefile,v 1.3 2012/09/11 23:19:39 asau Exp $
 #
 
 DISTNAME=	pkgsrc-todo-1.1
+PKGREVISION=	1
 CATEGORIES=	pkgtools
 MASTER_SITES=	# none
 DISTFILES=	# none

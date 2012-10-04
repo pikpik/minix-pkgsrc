@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/09/14 08:11:10 morr Exp $
 #
 
 DISTNAME=	delta-2006.08.03
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.tigris.org/files/documents/3103/33566/
 

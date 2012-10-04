@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2008/10/11 22:01:13 schwarz Exp $
+# $NetBSD: Makefile,v 1.19 2012/09/11 20:32:13 asau Exp $
 #
 
 DISTNAME=		MUMmer3.20
 PKGNAME=		mummer-3.20
+PKGREVISION=		1
 CATEGORIES=		biology
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mummer/}
 

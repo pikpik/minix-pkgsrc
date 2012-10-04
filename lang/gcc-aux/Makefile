@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2012/10/01 17:26:52 marino Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/02 20:11:40 asau Exp $
 #
 
 PKGNAME=	gcc-aux-${SNAPSHOT}
 DISTNAME=	gcc-${GCC_VERSION}
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU:=gcc/gcc-${GCC_VERSION}/}
 DISTFILES=	${DISTNAME}.tar.bz2

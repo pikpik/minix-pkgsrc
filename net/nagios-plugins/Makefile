@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2012/05/24 15:20:25 marino Exp $
+# $NetBSD: Makefile,v 1.28 2012/07/25 12:01:54 fhajny Exp $
 #
 
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net sysutils
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

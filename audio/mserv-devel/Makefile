@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2009/12/17 19:58:19 abs Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/02 23:48:00 asau Exp $
 #
 
 DISTNAME=	mserv-0.39a
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mserv/}
 

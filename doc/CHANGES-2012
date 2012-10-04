@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3108 2012/10/03 12:13:03 asau Exp $
+$NetBSD: CHANGES-2012,v 1.3113 2012/10/03 22:18:24 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4743,7 +4743,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated games/flightgear-data to 2.8.0 [dholland 2012-09-30]
 	Updated chat/ejabberd to 2.1.11 [tron 2012-09-30]
 	Added devel/userspace-rcu version 0.7.3 [pettai 2012-09-30]
-	Updated benchmark/thrulay to 0.9 [adam 2012-10-01]
+	Updated benchmarks/thrulay to 0.9 [adam 2012-10-01]
 	Updated misc/rlwrap to 0.37 [dholland 2012-09-30]
 	Updated mail/dovecot2 to 2.1.10 [ghen 2012-10-01]
 	Updated mail/dovecot2-pigeonhole to 0.3.3 [ghen 2012-10-01]
@@ -4793,3 +4793,11 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated graphics/pngcrush to 1.7.38 [adam 2012-10-03]
 	Updated graphics/gdk-pixbuf2 to 2.26.4 [adam 2012-10-03]
 	Updated x11/gtk2 to 2.24.13 [adam 2012-10-03]
+	Updated lang/perl5 to 5.16.1 [adam 2012-10-03]
+	Removed lang/python25 [wiz 2012-10-03]
+	Removed lang/py25-html-docs [wiz 2012-10-03]
+	Removed databases/gramps [wiz 2012-10-03]
+	Removed databases/gramps2 [wiz 2012-10-03]
+	Removed textproc/py-FourSuite [wiz 2012-10-03]
+	Removed textproc/py-gdick [wiz 2012-10-03]
+	Updated pkgtools/pkglint to 4.126 [wiz 2012-10-03]

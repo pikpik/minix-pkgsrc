@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2009/04/11 23:15:20 sno Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2011/04/13 10:23:47 bouyer Exp $
 #
 
 DISTNAME=		snmptt_1.3
 EXTRACT_SUFX=		.tgz
 PKGNAME=		snmptt-1.3
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=snmptt/}
 

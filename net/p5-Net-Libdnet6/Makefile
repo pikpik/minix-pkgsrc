@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/02/17 01:39:43 hiramatsu Exp $
 #
 
 DISTNAME=	Net-Libdnet6-0.24
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	perl5 net
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 

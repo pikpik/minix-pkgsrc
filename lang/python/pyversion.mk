@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.100 2012/08/01 19:07:20 drochner Exp $
+# $NetBSD: pyversion.mk,v 1.103 2012/10/03 23:39:21 cheusov Exp $
 
 # This file determines which Python version is used as a dependency for
 # a package.
@@ -8,13 +8,14 @@
 # PYTHON_VERSION_DEFAULT
 #	The preferred Python version to use.
 #
-#	Possible values: 25 26 27 31 32
+#	Possible values: 26 27 31 32
 #	Default: 27
 #
+# === Infrastructure variables ===
+#
 # PYTHON_VERSION_REQD
-#	Python version to use. This is a user variable and
-#	should not be set in packages.
-#	Normally it is used by bulk build tools.
+#	Python version to use. This variable should not be set in
+#	packages.  Normally it is used by bulk build tools.
 #
 #	Possible: ${PYTHON_VERSIONS_ACCEPTED}
 #	Default:  ${PYTHON_VERSION_DEFAULT}
@@ -26,8 +27,8 @@
 #	order of the entries matters, since earlier entries are
 #	preferred over later ones.
 #
-#	Possible values: 32 31 27 26 25
-#	Default: (32 31) 27 26 25
+#	Possible values: 32 31 27 26
+#	Default: (32 31) 27 26
 #
 # PYTHON_VERSIONS_INCLUDE_3X
 #	Wether the default PYTHON_VERSIONS_ACCEPTED should include
@@ -40,7 +41,7 @@
 # PYTHON_VERSIONS_INCOMPATIBLE
 #	The Python versions that are NOT acceptable for the package.
 #
-#	Possible values: 25 26 27 31 32
+#	Possible values: 26 27 31 32
 #	Default: (depends on the platform)
 #
 # PYTHON_FOR_BUILD_ONLY
@@ -48,6 +49,13 @@
 #
 #	Possible values: (defined) (undefined)
 #	Default: (undefined)
+#
+# PYTHON_SELF_CONFLICT
+#	If set to "yes", additional CONFLICTS entries are added for
+#	registering a conflict between pyNN-<modulename> packages.
+#
+#	Possible values: yes no
+#	Default: no
 #
 # === Defined variables ===
 #
@@ -86,13 +94,12 @@ BUILD_DEFS_EFFECTS+=	PYPACKAGE
 
 PYTHON_VERSION_DEFAULT?=		27
 .if ${PYTHON_VERSIONS_INCLUDE_3X:U:tl} == "yes"
-PYTHON_VERSIONS_ACCEPTED?=		32 31 27 26 25
+PYTHON_VERSIONS_ACCEPTED?=		32 31 27 26
 .else
-PYTHON_VERSIONS_ACCEPTED?=		27 26 25
+PYTHON_VERSIONS_ACCEPTED?=		27 26
 .endif
 PYTHON_VERSIONS_INCOMPATIBLE?=		# empty by default
 
-BUILDLINK_API_DEPENDS.python25?=		python25>=2.5.1
 BUILDLINK_API_DEPENDS.python26?=		python26>=2.6
 BUILDLINK_API_DEPENDS.python27?=		python27>=2.7
 BUILDLINK_API_DEPENDS.python31?=		python31>=3.1
@@ -142,6 +149,14 @@ MULTI+=	PYTHON_VERSION_REQD=${_PYTHON_VERSION}
 _PYTHON_VERSION=	none
 .endif
 
+# Additional CONFLICTS
+.if ${PYTHON_SELF_CONFLICT:U:tl} == "yes"
+.for i in ${PYTHON_VERSIONS_ACCEPTED:N${_PYTHON_VERSION}}
+CONFLICTS +=	${PKGNAME:S/py${_PYTHON_VERSION}/py${i}/:C/-[0-9].*$/-[0-9]*/}
+.endfor
+.endif # PYCONFLICTS
+
+#
 PLIST_VARS+=	py2x py3x
 
 .if ${_PYTHON_VERSION} == "32"
@@ -171,13 +186,6 @@ PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python26}:${PYPKGSRCDIR}
 PYPACKAGE=	python26
 PYVERSSUFFIX=	2.6
 PYPKGPREFIX=	py26
-PLIST.py2x=	yes
-.elif ${_PYTHON_VERSION} == "25"
-PYPKGSRCDIR=	../../lang/python25
-PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python25}:${PYPKGSRCDIR}
-PYPACKAGE=	python25
-PYVERSSUFFIX=	2.5
-PYPKGPREFIX=	py25
 PLIST.py2x=	yes
 .else
 PKG_FAIL_REASON+=   "No valid Python version"

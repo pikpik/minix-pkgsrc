@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/04/22 13:44:35 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/23 10:47:48 obache Exp $
 #
 
 PKGNAME=		libpreludedb-perl-${VERSION}
-PKGREVISION=		4
+PKGREVISION=		5
 COMMENT=		Perl bindings for LibPreludeDB libraries
 
 PKG_DESTDIR_SUPPORT=	user-destdir

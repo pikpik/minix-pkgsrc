@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/10/03 23:40:37 cheusov Exp $
 #
 
 DISTNAME=	markdown2-2.0.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://pypi.python.org/packages/source/m/markdown2/
 EXTRACT_SUFX=	.zip
@@ -17,6 +18,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=	# none
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
+PYTHON_SELF_CONFLICT=		yes
 
 do-test:
 	${RUN}cd ${WRKSRC}/test; ${SETENV} ${TEST_ENV} ${PYTHONBIN} test.py

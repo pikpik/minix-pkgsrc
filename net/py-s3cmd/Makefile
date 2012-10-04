@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2012/04/08 19:09:10 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 23:40:37 cheusov Exp $
 
 DISTNAME=	s3cmd-1.0.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	python net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=s3tools/}
 
@@ -13,6 +14,8 @@ LICENSE=	gnu-gpl-v2
 PKG_DESTDIR_SUPPORT=	user-destdir
 PYDISTUTILSPKG=		yes
 MAKE_ENV+=		S3CMD_INSTPATH_MAN=${PKGMANDIR}
+
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/pyversion.mk"
 

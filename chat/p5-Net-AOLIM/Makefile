@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2011/10/21 04:29:32 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 00:02:41 asau Exp $
 
 DISTNAME=	Net-AOLIM-1.61
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	chat perl5
 MASTER_SITES=	${HOMEPAGE}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2007/03/24 07:05:26 schmonz Exp $
+# $NetBSD: Makefile,v 1.13 2008/03/04 17:57:19 jlam Exp $
 #
 
 DISTNAME=	qmail-lint-0.55
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	#
