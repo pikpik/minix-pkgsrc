@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/10/01 12:40:36 ryoon Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/02 17:11:33 tron Exp $
 #
 
 DISTNAME=	fbreader-sources-0.99.2
@@ -17,7 +17,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake pkg-config
 
 MAKE_ENV+=	INSTALLDIR=${PREFIX}
 MAKE_ENV+=	DESTDIR=${DESTDIR}

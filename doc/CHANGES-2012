@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3116 2012/10/04 10:49:33 asau Exp $
+$NetBSD: CHANGES-2012,v 1.3121 2012/10/04 20:31:26 pettai Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4804,3 +4804,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated devel/p5-Module-CoreList to 2.73 [wiz 2012-10-04]
 	Updated devel/memcached to 1.4.15 [asau 2012-10-04]
 	Updated ham/fldigi to 3.21.53 [mef 2012-10-04]
+	Updated net/wireshark to 1.8.3 [tron 2012-10-04]
+	Updated textproc/py-pdf-parser to 0.3.9 [wiz 2012-10-04]
+	Updated security/validns to 0.6 [pettai 2012-10-04]
+	Updated multimedia/kdemultimedia4 to 4.8.4nb5 [wiz 2012-10-04]
