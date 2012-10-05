@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.643 2012/10/03 22:09:48 wiz Exp $
+# $NetBSD: Makefile,v 1.645 2012/10/05 02:22:24 jnemeth Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
