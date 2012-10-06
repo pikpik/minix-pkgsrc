@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/11/02 20:22:15 shattered Exp $
+# $NetBSD: Makefile,v 1.31 2012/02/06 12:40:34 wiz Exp $
 
 DISTNAME=	rayshade.4.0.6
 PKGNAME=	rayshade-4.0.6
@@ -11,7 +11,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Extensible system for creating ray-traced images
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 HAS_CONFIGURE=		yes

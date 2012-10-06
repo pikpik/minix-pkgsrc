@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2012/04/28 06:56:42 adam Exp $
+# $NetBSD: Makefile,v 1.44 2012/04/29 22:49:31 dholland Exp $
 
 DISTNAME=	openttd-1.2.0-source
 PKGNAME=	${DISTNAME:S/-source//}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openttd.org/
 COMMENT=	Open source clone of Transport Tycoon Deluxe
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=		c c++

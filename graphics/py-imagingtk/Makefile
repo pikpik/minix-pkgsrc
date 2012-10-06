@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2010/01/18 09:59:07 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/08/21 23:49:22 marino Exp $
 #
 
 DISTNAME=	Imaging-1.1.7
@@ -17,7 +17,6 @@ BUILDLINK_API_DEPENDS.python20+=	python20>=2.0.1nb4
 PY_PATCHPLIST=	yes
 
 PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX:Q}
-PKG_DESTDIR_SUPPORT= user-destdir
 
 post-install:
 	${INSTALL_DATA_DIR} \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2011/11/01 06:01:33 sbd Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/03 21:56:09 wiz Exp $
 
 DISTNAME=		g2-0.50
 PKGREVISION=		9
@@ -8,8 +8,6 @@ MASTER_SITES=		http://g2.sourceforge.net/pub/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://g2.sourceforge.net/
 COMMENT=		Powerful, easy to use 2D graphics library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

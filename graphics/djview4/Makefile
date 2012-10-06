@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/09/15 10:04:50 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/02 17:11:09 tron Exp $
 #
 
 DISTNAME=	djview-4.8
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://djvu.sourceforge.net/
 COMMENT=	Portable DjVu viewer and browser plugin
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/07/05 01:39:10 dholland Exp $
+# $NetBSD: Makefile,v 1.24 2012/05/16 15:02:41 marino Exp $
 #
 
 DISTNAME=	powermanga-0.90
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linux.tlk.fr/games/Powermanga/
 COMMENT=	Arcade 2D shoot-em-up game
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	yes

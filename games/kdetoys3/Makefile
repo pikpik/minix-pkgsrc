@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.58 2012/07/01 19:05:18 dholland Exp $
+# $NetBSD: Makefile,v 1.59 2012/09/15 10:04:41 obache Exp $
 
 DISTNAME=	kdetoys-${_KDE_VERSION}
 PKGREVISION=	15
 CATEGORIES=	games
 COMMENT=	Toys for the KDE integrated X11 desktop
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"

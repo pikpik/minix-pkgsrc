@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/09/15 10:05:05 obache Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/02 17:11:17 tron Exp $
 #
 
 DISTNAME=		matplotlib-1.1.1
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=matplotlib/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://matplotlib.sourceforge.net/
 COMMENT=		GTK frontend for matplotlib
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 PY_PATCHPLIST=		yes

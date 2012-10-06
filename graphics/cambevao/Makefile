@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/09/12 19:06:42 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2010/12/23 11:44:34 dsainty Exp $
 #
 
 DISTNAME=		cambevao-2.2
@@ -19,7 +19,6 @@ RCD_SCRIPT_SRC.cambevao=	${WRKSRC}/cambevao.rc.d
 INSTALLATION_DIRS=	bin share/examples/cambevao share/examples/rc.d
 
 ONLY_FOR_PLATFORM=	NetBSD-*-* FreeBSD-*-* DragonFly-*-*
-PKG_DESTDIR_SUPPORT= 	user-destdir
 
 INSTALLATION_DIRS+=	${PREFIX}/share/examples/cambevao
 INSTALLATION_DIRS+=	${PREFIX}/share/doc

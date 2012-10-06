@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/03/09 12:34:07 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/15 19:12:55 dholland Exp $
 #
 
 DISTNAME=	duckmaze-pc-0.2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://duckmaze.sourceforge.net/
 COMMENT=	Puzzle game
-
-PKG_DESTDIR_SUPPORT=user-destdir
 
 USE_LANGUAGES=	# none
 USE_TOOLS+=	pax

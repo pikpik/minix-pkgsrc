@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/11/01 06:01:40 sbd Exp $
+# $NetBSD: Makefile,v 1.8 2012/03/12 14:51:39 wiz Exp $
 #
 
 DISTNAME=	libpuzzle-0.11
@@ -17,8 +17,6 @@ USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
 
 EGDIR=		${PREFIX}/share/doc/libpuzzle
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	${EGDIR} ${PKGMANDIR}/man3 ${PKGMANDIR}/man8
 

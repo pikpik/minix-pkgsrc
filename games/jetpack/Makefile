@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/01/19 09:16:21 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2010/01/29 23:23:21 joerg Exp $
 
 DISTNAME=	jetpack
 PKGNAME=	jetpack-1.0
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Arcade action game for X Windows
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes

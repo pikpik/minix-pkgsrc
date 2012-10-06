@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2012/09/15 10:04:50 obache Exp $
+# $NetBSD: Makefile,v 1.72 2012/10/02 17:11:09 tron Exp $
 #
 
 DISTNAME=	eog-2.32.1
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Eye of GNOME: an image viewing and cataloging program
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/09/15 10:05:04 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/02 17:11:16 tron Exp $
 
 DISTNAME=	nvtv-0.4.7
 PKGREVISION=	18
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nv-tv-out/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/nv-tv-out/
 COMMENT=	Tool to manipulate TV-Out settings on NVidia cards
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	*-*-i386
 

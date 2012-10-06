@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2006/06/05 17:25:23 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2008/03/04 15:39:10 jlam Exp $
 #
 
 DISTNAME=		metacam-1.2
@@ -9,8 +9,6 @@ MASTER_SITES=		ftp://ftp.cheeseplant.org/pub/
 MAINTAINER=		simonb@NetBSD.org
 HOMEPAGE=		http://www.cheeseplant.org/~daniel/pages/metacam.html
 COMMENT=		Digital camera image meta-information reader
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 USE_TOOLS+=		gmake

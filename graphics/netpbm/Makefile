@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.177 2012/07/25 14:42:02 jperkin Exp $
+# $NetBSD: Makefile,v 1.178 2012/10/03 21:56:11 wiz Exp $
 
 DISTNAME=	netpbm-10.35.80
 PKGREVISION=	4
@@ -13,7 +13,6 @@ LICENSE=	gnu-gpl-v2
 
 MAKE_JOBS_SAFE=	no
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	bash:run gmake lex pax perl
 USE_FEATURES=	snprintf

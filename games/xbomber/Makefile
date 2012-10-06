@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/01/19 09:16:23 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2011/05/24 12:03:37 obache Exp $
 #
 
 DISTNAME=	xbomber.0.8
@@ -10,8 +10,6 @@ MASTER_SITES=	ftp://ftp.billsgames.com/unix/x/xbomber/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.newbreedsoftware.com/xbomber/
 COMMENT=	Colorful game where you blow other people/robots up
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/xbomber
 MAKE_FILE=	makefile

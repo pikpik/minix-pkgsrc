@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/09/30 01:50:15 dholland Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/02 17:11:04 tron Exp $
 
 DISTNAME=	simgear-2.8.0
 PKGREVISION=	1
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://simgear.sourceforge.net/
 COMMENT=	Simulator Construction Tools
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

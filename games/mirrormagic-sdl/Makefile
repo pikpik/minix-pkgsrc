@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2011/01/13 13:37:48 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/01/28 11:00:55 wiz Exp $
 #
 
 DISTNAME=		mirrormagic-2.0.2
@@ -12,8 +12,6 @@ HOMEPAGE=		http://www.artsoft.org/mirrormagic/
 COMMENT=		Nice little puzzle game with color graphics and sound
 
 CONFLICTS=		mirrormagic-[1-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake pax
 PLIST_SRC=		${WRKDIR}/PLIST PLIST

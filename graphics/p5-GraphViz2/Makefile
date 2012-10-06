@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/08 11:31:31 fhajny Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:56:13 wiz Exp $
 #
 
 DISTNAME=	GraphViz2-1.12
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/GraphViz2/
 COMMENT=	Wrapper for AT&T\'s Graphviz
 LICENSE=	artistic-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	p5-Test-Pod-[0-9]*:../../devel/p5-Test-Pod
 DEPENDS+=	graphviz-[0-9]*:../../graphics/graphviz

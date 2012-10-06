@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/06/25 10:28:11 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2012/09/15 10:05:03 obache Exp $
 #
 
 DISTNAME=	libkexiv2-0.1.9
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kipi-plugins.org/
 COMMENT=	KDE wrapper for exiv2
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

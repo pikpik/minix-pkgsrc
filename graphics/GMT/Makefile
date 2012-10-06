@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2009/06/05 10:10:28 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2011/10/11 22:56:33 zafer Exp $
 
 DISTNAME=	GMT4.1.4
 PKGNAME=	GMT-4.1.4
@@ -17,7 +17,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gmt.soest.hawaii.edu/
 COMMENT=	Generic Mapping Tools
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 EXTRACT_SUFX=	.tar.bz2

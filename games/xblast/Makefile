@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2011/05/24 12:38:43 obache Exp $
+# $NetBSD: Makefile,v 1.30 2012/05/21 14:55:10 marino Exp $
 #
 
 DISTNAME=		xblast-2.10.4
@@ -16,8 +16,6 @@ MAINTAINER=		dsainty@NetBSD.org
 HOMEPAGE=		http://xblast.sourceforge.net/
 COMMENT=		2-6 player kill the other guy with bombs game. A real blast!
 LICENSE=		gnu-gpl-v2 # or later
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-sound

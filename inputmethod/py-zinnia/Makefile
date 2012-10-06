@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/05/20 09:07:34 obache Exp $
+# $NetBSD: Makefile,v 1.2 2010/08/14 14:30:39 obache Exp $
 #
 
 .include "../../inputmethod/zinnia/Makefile.common"
@@ -7,8 +7,6 @@ PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES+=	python
 
 COMMENT=	Zinnia python module
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c c++

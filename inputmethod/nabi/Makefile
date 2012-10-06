@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/09/15 10:05:14 obache Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/02 17:11:22 tron Exp $
 #
 
 DISTNAME=		nabi-0.99.9
@@ -10,8 +10,6 @@ MAINTAINER=		minskim@NetBSD.org
 HOMEPAGE=		http://kldp.net/projects/nabi/
 COMMENT=		X Input Method for Korean
 LICENSE=		gnu-gpl-v2 # or later
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config msgfmt
 GNU_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2011/01/13 13:36:51 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2012/02/06 12:40:37 wiz Exp $
 
 DISTNAME=	urt
 PKGNAME=	urt-3.1b1
@@ -16,8 +16,6 @@ HOMEPAGE=	http://www.cs.utah.edu/gdc/projects/urt/
 COMMENT=	Toolkit and library for raster image processing
 
 EXTRACT_ONLY=	urt-3.1b.tar.Z
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LIBTOOL=	yes

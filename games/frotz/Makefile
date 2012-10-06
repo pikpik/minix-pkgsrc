@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/08/19 04:04:40 yyamano Exp $
+# $NetBSD: Makefile,v 1.26 2011/11/28 11:03:51 wiz Exp $
 
 DISTNAME=	frotz-2.43
 PKGREVISION=	3
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=frotz/} \
 MAINTAINER=	seebs@plethora.net
 HOMEPAGE=	http://frotz.sourceforge.net/
 COMMENT=	Curses-based interpreter for Infocom-compatible games
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

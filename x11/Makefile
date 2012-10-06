@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.661 2012/08/30 07:42:04 jnemeth Exp $
+# $NetBSD: Makefile,v 1.662 2012/08/31 19:43:49 prlw1 Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -18,6 +18,7 @@ SUBDIR+=	applewmproto
 SUBDIR+=	appres
 SUBDIR+=	asnap
 SUBDIR+=	aterm
+SUBDIR+=	autocutsel
 SUBDIR+=	avant-window-navigator
 SUBDIR+=	bbapm
 SUBDIR+=	beforelight

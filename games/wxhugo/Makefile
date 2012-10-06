@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2012/09/15 10:04:44 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/02 17:11:05 tron Exp $
 #
 
 DISTNAME=	hugov31_unix_source
@@ -14,8 +14,6 @@ COMMENT=	Interactive fiction interpreter with sound and graphics support
 
 DISTFILE_WX=	hugov31_wxwin_source${EXTRACT_SUFX}
 #EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=	hugo-3.1.02
 USE_LANGUAGES=	c c++

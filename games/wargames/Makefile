@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/07/07 20:19:39 abs Exp $
+# $NetBSD: Makefile,v 1.2 2012/07/16 20:47:03 abs Exp $
 
 VERSION=	1.02
 DISTNAME=	abs0-wargames-${VERSION}-0-g0e9f20e
@@ -14,7 +14,5 @@ LICENSE=	2-clause-bsd
 FETCH_USING=	curl
 
 WRKSRC=	${WRKDIR}/${DISTNAME:C:[^-]*-0-g::}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.pkg.mk"

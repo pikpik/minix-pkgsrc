@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/05/03 12:17:50 hauke Exp $
+# $NetBSD: Makefile,v 1.18 2012/06/18 04:45:47 dholland Exp $
 #
 
 DISTNAME=	tscp181
@@ -19,7 +19,6 @@ NO_BIN_ON_FTP= ${RESTRICTED}
 NO_SRC_ON_CDROM= ${RESTRICTED}
 NO_SRC_ON_FTP= ${RESTRICTED}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin share/doc
 
 do-build:

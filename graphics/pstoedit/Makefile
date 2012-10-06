@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.60 2012/06/14 07:45:10 sbd Exp $
+# $NetBSD: Makefile,v 1.61 2012/08/18 08:49:41 ryoon Exp $
 
 DISTNAME=	pstoedit-3.60
 PKGREVISION=	3
@@ -11,8 +11,6 @@ COMMENT=	Convert PostScript / PDF into various vector graphic formats
 #LICENSE=	gnu-gpl-v2
 # man page indicates that there are many licenses and one has to read all
 # the source files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

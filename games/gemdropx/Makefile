@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/01/19 09:16:21 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:20 joerg Exp $
 #
 
 DISTNAME=	gemdropx-0.9
@@ -9,8 +9,6 @@ MASTER_SITES=	ftp://ftp.billsgames.com/unix/x/gemdropx/src/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.newbreedsoftware.com/gemdropx/
 COMMENT=	Color puzzle game for X11 similar to Gem Drop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 

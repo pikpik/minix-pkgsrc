@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/09/15 10:05:05 obache Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/02 17:11:17 tron Exp $
 #
 
 DISTNAME=	pyclutter-gtk-0.10.0
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.clutter-project.org/
 COMMENT=	Python modules for Clutter-Gtk
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

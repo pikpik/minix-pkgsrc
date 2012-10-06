@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/09/15 10:05:12 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/09/28 06:04:14 obache Exp $
 #
 
 DISTNAME=	ibus-pinyin-1.4.0
@@ -11,8 +11,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/ibus/
 COMMENT=	Chinese Pinyin and Bopomofo engines for IBus input platform
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

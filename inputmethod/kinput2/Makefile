@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2011/09/13 07:28:48 mef Exp $
+# $NetBSD: Makefile,v 1.22 2012/05/03 09:55:30 obache Exp $
 
 DISTNAME=	kinput2-v3.1
 PKGNAME=	kinput2-3.1
@@ -8,8 +8,6 @@ MASTER_SITES=	ftp://ftp.sra.co.jp/pub/x11/kinput2/
 
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 COMMENT=	Input server of Japanese text
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	NO
 USE_IMAKE=	YES

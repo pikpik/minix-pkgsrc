@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2012/09/30 10:04:33 dholland Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/02 17:11:01 tron Exp $
 
 DISTNAME=	flightgear-2.8.0
 PKGREVISION=	1
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.flightgear.org/
 COMMENT=	The FlightGear Simulator
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/03/15 11:53:28 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/09/15 10:05:01 obache Exp $
 #
 
 DISTNAME=	lensfun-0.2.5
@@ -24,7 +24,6 @@ REPLACE_PYTHON=		configure
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake pkg-config gsed
 PKGCONFIG_OVERRIDE=	libs/lensfun/lensfun.pc.in
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Why three copys of the file?
 post-install:

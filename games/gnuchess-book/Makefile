@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/03/04 21:29:41 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2008/03/04 06:59:04 jlam Exp $
 #
 
 DISTNAME=		book_1.01.pgn
@@ -15,8 +15,6 @@ COMMENT=		Chess opening book for GNU Chess (default)
 DEPENDS+=		gnuchess>=5.07:../../games/gnuchess
 
 CONFLICTS+=		gnuchess-book-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 CHESS_ENGINE=		gnuchess

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/09/15 10:05:13 obache Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/02 17:11:22 tron Exp $
 
 DISTNAME=	imhangul-2.0.0
 PKGREVISION=	4
@@ -10,8 +10,6 @@ MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://kldp.net/projects/imhangul/
 COMMENT=	GTK+-2.0 Hangul Input Module
 LICENSE=	gnu-gpl-v2 # or later
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config msgfmt
 GNU_CONFIGURE=		YES

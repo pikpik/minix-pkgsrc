@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/06/14 07:45:08 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/09/15 10:04:44 obache Exp $
 
 DISTNAME=	warmux-11.01
 PKGREVISION=	7
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.warmux.org/
 COMMENT=	Battle game
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

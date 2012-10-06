@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/12/27 13:37:37 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2010/02/14 22:06:02 joerg Exp $
 #
 
 DISTNAME=		xjig-2.4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Jigsaw puzzle
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=		yes
 USE_LANGUAGES=		c c++

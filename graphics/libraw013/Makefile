@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/10/24 17:14:05 gls Exp $
+# $NetBSD: Makefile,v 1.1 2012/08/04 14:31:27 drochner Exp $
 #
 
 DISTNAME=		LibRaw-0.13.8
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.libraw.org/
 COMMENT=	Raw decoding/processing library
 LICENSE=	gnu-lgpl-v2.1 OR cddl-1.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	yes

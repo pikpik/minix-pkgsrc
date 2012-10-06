@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/03/04 15:39:10 jlam Exp $
+# $NetBSD: Makefile,v 1.3 2011/03/23 10:56:55 adam Exp $
 
 DISTNAME=	pngcheck-2.3.0
 CATEGORIES=	graphics
@@ -9,7 +9,6 @@ HOMEPAGE=	http://www.libpng.org/pub/png/apps/pngcheck.html
 COMMENT=	Verify the integrity of PNG, JNG, and MNG files
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin share/doc/pngcheck
 
 do-build:

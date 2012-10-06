@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/09/15 10:05:07 obache Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/02 17:11:18 tron Exp $
 #
 
 DISTNAME=		shotwell-0.11.6
@@ -11,8 +11,6 @@ MAINTAINER=		pkgrsc-users@NetBSD.org
 HOMEPAGE=		http://yorba.org/shotwell/
 COMMENT=		Shotwell is a photo organizer for the GNOME desktop
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 USE_TOOLS+=		gmake bash pkg-config msgfmt

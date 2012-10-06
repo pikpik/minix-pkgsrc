@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/03/10 10:56:14 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/15 10:05:13 obache Exp $
 #
 
 DISTNAME=	ibus-table-1.3.0.20100621
@@ -12,8 +12,6 @@ COMMENT=	The Table engine for IBus platform
 LICENSE=	gnu-lgpl-v2.1
 
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake pkg-config msgfmt

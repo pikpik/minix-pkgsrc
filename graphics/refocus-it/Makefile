@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/20 01:09:22 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2011/04/22 13:43:50 obache Exp $
 #
 
 DISTNAME=		refocus-it-2.0.0
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=refocus-it/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://refocus-it.sourceforge.net/
 COMMENT=		Refocus images
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 #just build the command line tool

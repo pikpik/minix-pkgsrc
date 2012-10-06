@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/09/15 10:04:52 obache Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/02 17:11:10 tron Exp $
 #
 
 DISTNAME=	geeqie-1.1
@@ -10,8 +10,6 @@ MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://geeqie.sourceforge.net/
 COMMENT=	Image viewer
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-gps

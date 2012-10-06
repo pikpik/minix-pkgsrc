@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2012/03/08 01:00:59 joerg Exp $
+# $NetBSD: Makefile,v 1.52 2012/10/03 21:56:04 wiz Exp $
 
 DISTNAME=	asc-source-1.16.4.0
 PKGNAME=	${DISTNAME:S/-source//}
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.asc-hq.org/
 COMMENT=	Turn based strategy game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=		asc
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX} frontiers.mp3 \

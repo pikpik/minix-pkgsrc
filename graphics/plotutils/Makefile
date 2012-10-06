@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2011/01/13 13:36:05 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2011/02/08 13:08:06 adam Exp $
 
 DISTNAME=	plotutils-2.6
 PKGREVISION=	3
@@ -13,7 +13,6 @@ LICENSE=	gnu-gpl-v3
 CONFLICTS+=	plotutils-nox11-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

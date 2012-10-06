@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2012/10/03 23:40:36 cheusov Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/04 00:21:59 cheusov Exp $
 #
 
 DISTNAME=		py2cairo-1.8.10
@@ -11,8 +11,6 @@ MAINTAINER=		leuzi@trash.net
 HOMEPAGE=		http://cairographics.org/pycairo/
 COMMENT=		Python bindings for cairo
 LICENSE=		gnu-lgpl-v2.1 OR mpl-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME:S/py2/py/}
 

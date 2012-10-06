@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/04/22 14:00:44 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/15 10:05:12 obache Exp $
 #
 
 DISTNAME=	ibus-hangul-1.4.1
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/ibus/
 COMMENT=	Hangul engine for IBus input platform
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

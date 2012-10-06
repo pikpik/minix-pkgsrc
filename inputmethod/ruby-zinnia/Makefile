@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/09/10 06:58:50 taca Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/21 16:01:18 taca Exp $
 #
 
 .include "../../inputmethod/zinnia/Makefile.common"
@@ -7,8 +7,6 @@ PKGREVISION=	1
 CATEGORIES+=	ruby
 
 COMMENT=	Zinnia ruby module
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c c++

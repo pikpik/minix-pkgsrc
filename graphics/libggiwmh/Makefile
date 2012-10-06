@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/07/14 12:56:05 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2010/01/30 15:36:36 tnn Exp $
 #
 
 DISTNAME=		libggiwmh-0.3.2.src
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ggi-project.org/packages/libggiwmh.html
 COMMENT=		Windows Manager hints library for GGI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_PKGLOCALEDIR=	yes

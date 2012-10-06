@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2009/05/19 08:59:15 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2011/03/11 12:16:31 zafer Exp $
 
 DISTNAME=	linuxq3apoint-1.32b.x86
 PKGREVISION=	3
@@ -23,8 +23,6 @@ CONFLICTS=	quake3arena-demo-[0-9]*
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base x11 glx
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gtar gunzip pax tail
 

@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2012/06/14 07:43:45 sbd Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/06 08:18:53 ryoon Exp $
 #
 
-DISTNAME=	gupnp-igd-0.1.7
-PKGREVISION=	8
+DISTNAME=	gupnp-igd-0.2.1
 CATEGORIES=	net devel
-MASTER_SITES=	http://www.gupnp.org/sources/gupnp-igd/
+#MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gupnp-igd/0.2/}
+MASTER_SITES=	http://pkgs.fedoraproject.org/repo/pkgs/gupnp-igd/gupnp-igd-0.2.1.tar.gz/03be8a80e2862cf72b2c50d65043828c/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gupnp.org/

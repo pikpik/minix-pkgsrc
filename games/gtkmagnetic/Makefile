@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2012/09/15 10:04:40 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/02 17:11:03 tron Exp $
 #
 
 DISTNAME=		Magnetic22Src
@@ -13,8 +13,6 @@ DIST_SUBDIR=		${PKGNAME_NOREV}
 MAINTAINER=		dillo@NetBSD.org
 HOMEPAGE=		http://www.if-legends.org/~msmemorial/magnetic.htm
 COMMENT=		Interpreter for text adventures from Magnetic Scrolls
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake pkg-config
 BUILD_TARGET=		gtkmagnetic

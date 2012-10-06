@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/01/18 09:59:07 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2010/12/23 11:44:44 dsainty Exp $
 #
 
 DISTNAME=	resize_image-0.6
@@ -9,8 +9,6 @@ MASTER_SITES=	http://lab.erasme.org/resize_image/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lab.erasme.org/resize_image/
 COMMENT=	Fast image resizing tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 CFLAGS+=	-DUNIX

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/09/15 10:04:51 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/04 11:53:03 abs Exp $
 
 DISTNAME=	gdk-pixbuf-2.26.4
 PKGNAME=	gdk-pixbuf2-xlib-2.26.4
@@ -18,7 +18,6 @@ BUILD_DIRS=	contrib/gdk-pixbuf-xlib
 INSTALL_DIRS=	contrib/gdk-pixbuf-xlib
 
 CONFLICTS+=	gtk2+<2.22
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-libtiff --without-libjpeg --without-libpng

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/05/28 11:06:34 obache Exp $
+# $NetBSD: Makefile,v 1.12 2011/12/07 16:07:14 roy Exp $
 
 PKGREVISION=	3
 CANNA_MODULE=	canuum
@@ -6,8 +6,6 @@ CANNA_MODULE=	canuum
 .include "../../inputmethod/canna/Makefile.common"
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	${PKGMANDIR}/ja_JP.EUC/man1
 

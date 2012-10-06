@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/01/03 07:58:43 dsainty Exp $
+# $NetBSD: Makefile,v 1.7 2012/07/26 10:58:46 bsiegert Exp $
 
 DISTNAME=	ilmbase-1.0.2
 PKGREVISION=	2
@@ -9,8 +9,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.openexr.com/
 COMMENT=	High dynamic-range (HDR) image file format library and tools
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++

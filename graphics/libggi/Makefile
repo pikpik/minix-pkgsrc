@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2011/07/05 02:14:12 dholland Exp $
+# $NetBSD: Makefile,v 1.51 2012/01/23 20:19:00 sbd Exp $
 #
 
 DISTNAME=	libggi-2.2.2.src
@@ -13,7 +13,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ggi-project.org/
 COMMENT=	General Graphics Interface library is a flexible drawing library
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}

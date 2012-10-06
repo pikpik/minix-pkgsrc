@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/09/15 10:05:11 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/02 17:11:21 tron Exp $
 #
 
 DISTNAME=	ibus-1.4.2
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/ibus/
 COMMENT=	Intelligent Input Bus
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-xdg-[0-9]*:../../devel/py-xdg
 DEPENDS+=	${PYPKGPREFIX}-notify>=0.1.1nb3:../../sysutils/py-notify

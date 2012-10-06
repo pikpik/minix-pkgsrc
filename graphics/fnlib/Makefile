@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2011/04/22 13:42:43 obache Exp $
+# $NetBSD: Makefile,v 1.45 2012/02/06 12:40:22 wiz Exp $
 #
 
 DISTNAME=		fnlib-0.5
@@ -8,8 +8,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Color font rendering library for X11R6
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # XXX Added to stop old distfiles conflicting due to the authors updating
 # XXX fnlib-0.5.tar.gz without changing the filename.

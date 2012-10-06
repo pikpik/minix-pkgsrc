@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/03/29 13:55:34 obache Exp $
+# $NetBSD: Makefile,v 1.15 2008/05/26 02:13:19 joerg Exp $
 #
 
 DISTNAME=	et-linux-2.56-2.x86
@@ -14,8 +14,6 @@ COMMENT=	Wolfenstein: Enemy Territory for Linux
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base glx
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gtar pax
 EXTRACT_CMD=	${TAIL} +356 ${DOWNLOADED_DISTFILE} | ${GTAR} xzf - \

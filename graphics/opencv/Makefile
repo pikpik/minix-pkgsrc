@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/09/15 10:05:04 obache Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/02 17:11:16 tron Exp $
 
 DISTNAME=	OpenCV-2.4.2
 PKGNAME=	${DISTNAME:S/OpenCV/opencv/:S/a$//}
@@ -11,8 +11,6 @@ MAINTAINER=	anthony.mallet@laas.fr
 HOMEPAGE=	http://code.opencv.org/projects/OpenCV/wiki/WikiStart
 COMMENT=	Library for computer vision problems
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=		yes
 USE_LANGUAGES=		c c++

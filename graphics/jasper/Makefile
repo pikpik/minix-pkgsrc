@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2011/06/21 16:20:51 tez Exp $
+# $NetBSD: Makefile,v 1.34 2011/12/22 16:17:57 drochner Exp $
 
 DISTNAME=	jasper-1.900.1
 PKGREVISION=	6
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.ece.uvic.ca/~mdadams/jasper/
 COMMENT=	Software-based reference implementation of the JPEG-2000 codec
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c99
 USE_LIBTOOL=		yes

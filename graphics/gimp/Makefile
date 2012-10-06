@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.221 2012/10/02 17:11:10 tron Exp $
+# $NetBSD: Makefile,v 1.222 2012/10/03 21:56:09 wiz Exp $
 
 DISTNAME=	gimp-2.8.2
 PKGREVISION=	4
@@ -12,8 +12,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.gimp.org/
 COMMENT=	The GNU image manipulation program
 LICENSE=	gnu-lgpl-v2.1 AND gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	p5-XML-Parser>=2.31nb1:../../textproc/p5-XML-Parser
 CONFLICTS+=	gimp<=1.2.3

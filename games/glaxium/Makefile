@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/01/13 13:37:44 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/05/16 20:41:08 marino Exp $
 #
 
 DISTNAME=	glaxium_0.5
@@ -10,8 +10,6 @@ MASTER_SITES=	http://xhosxe.free.fr/glaxium/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xhosxe.free.fr/glaxium/
 COMMENT=	Space-ship OpenGL shoot them up
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake

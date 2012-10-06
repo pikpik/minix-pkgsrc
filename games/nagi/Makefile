@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/09/09 02:42:00 obache Exp $
+# $NetBSD: Makefile,v 1.14 2008/03/04 06:59:05 jlam Exp $
 #
 
 DISTNAME=		nagi_src_-_2002-11-14
@@ -10,8 +10,6 @@ MASTER_SITES=		http://www.agidev.com/dl_files/nagi/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.agidev.com/projects/nagi/
 COMMENT=		Clone of Sierra's AGI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/src
 USE_TOOLS+=	gmake

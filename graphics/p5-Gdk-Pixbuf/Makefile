@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.29 2012/02/06 12:40:31 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/03 21:56:13 wiz Exp $
 #
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "../../x11/p5-gtk/Makefile.common"

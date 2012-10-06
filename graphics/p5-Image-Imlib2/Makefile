@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2012/02/06 12:40:32 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/03 21:56:14 wiz Exp $
 #
 
 DISTNAME=	Image-Imlib2-2.03
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Image-Imlib2/
 COMMENT=	Interface to the Imlib2 image library
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # versions before that contained a broken imlib2-config
 BUILDLINK_API_DEPENDS.imlib2+=	imlib2>=1.2.0nb2

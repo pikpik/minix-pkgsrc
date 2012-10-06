@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/12/15 16:41:12 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2011/10/25 09:24:21 obache Exp $
 #
 
 DISTNAME=	gnuplot-py-1.8
@@ -13,8 +13,6 @@ COMMENT=	Python package that interfaces to gnuplot
 LICENSE=	gnu-lgpl-v2.1
 
 DEPENDS+=	${PYPKGPREFIX}-numpy-[0-9]*:../../math/py-numpy
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 EGG_NAME=	${DISTNAME:S/-/_/}

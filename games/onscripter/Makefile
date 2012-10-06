@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/08/24 14:51:41 tsutsui Exp $
+# $NetBSD: Makefile,v 1.15 2012/09/07 15:02:44 tsutsui Exp $
 #
 
 DISTNAME=		onscripter-20120901
@@ -9,8 +9,6 @@ MAINTAINER=		tsutsui@NetBSD.org
 HOMEPAGE=		http://onscripter.sourceforge.jp/onscripter.html
 COMMENT=		Interpreter to execute a script for NScripter
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 

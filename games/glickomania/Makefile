@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/06/20 01:09:20 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2011/04/22 13:43:36 obache Exp $
 #
 
 DISTNAME=	glickomania-1.0
@@ -9,8 +9,6 @@ MASTER_SITES=	http://hibase.cs.hut.fi/~cessu/glickomania/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://hibase.cs.hut.fi/~cessu/glickomania/
 COMMENT=	Clear a board by removing groups of identical, adjacent tiles
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 

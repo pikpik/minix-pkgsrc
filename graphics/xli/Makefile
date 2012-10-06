@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2010/12/23 11:44:47 dsainty Exp $
+# $NetBSD: Makefile,v 1.41 2011/01/13 13:38:23 wiz Exp $
 
 DISTNAME=	xli-2005-02-27
 PKGNAME=	xli-1.17.0
@@ -9,8 +9,6 @@ MASTER_SITES=	http://pantransit.reptiles.org/prog/xli/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pantransit.reptiles.org/prog/
 COMMENT=	X11 Image Loading Utility
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=		YES
 INSTALLATION_DIRS+=	lib/X11/app-defaults

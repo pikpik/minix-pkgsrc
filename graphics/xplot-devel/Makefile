@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/10/03 01:19:44 dholland Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:56:16 wiz Exp $
 
 DISTNAME=	xplot-0.90.8
 PKGREVISION=	4
@@ -8,8 +8,6 @@ HOMEPAGE=	http://www.xplot.org/
 
 MAINTAINER=	gdt@NetBSD.org
 COMMENT=	Plotting program (development snapshot)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=	yes
 GNU_CONFIGURE=	yes

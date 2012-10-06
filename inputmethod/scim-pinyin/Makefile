@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/09/15 10:05:16 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/02 17:11:24 tron Exp $
 #
 
 DISTNAME=		scim-pinyin-0.5.92
@@ -10,8 +10,6 @@ MAINTAINER=		obache@NetBSD.org
 HOMEPAGE=		http://www.scim-im.org/
 COMMENT=		SCIM IMEngine module for smart pinyin
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

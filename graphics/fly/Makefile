@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2011/11/01 06:01:32 sbd Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/03 21:56:08 wiz Exp $
 
 DISTNAME=	fly-1.6.5
 PKGREVISION=	15
@@ -10,8 +10,6 @@ HOMEPAGE=	http://www.unimelb.edu.au/fly/fly.html
 COMMENT=	Command-file interface for creating and modifying PNG images
 
 BUILD_DEPENDS+=	gif2png>=2.4.2:../../graphics/gif2png
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl:run
 REPLACE_PERL=	examples/cgi-perl-example.pl \

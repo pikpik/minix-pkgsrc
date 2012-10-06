@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/01/19 09:16:20 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2008/06/12 02:14:29 joerg Exp $
 
 DISTNAME=		abuse_pd
 PKGNAME=		abuse-2.0
@@ -10,8 +10,6 @@ DISTFILES=		${DISTNAME}.tgz abuse_data.tar.gz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		# AWOL
 COMMENT=		Full color 320x200 arcade quality platform shooter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/08/21 23:49:21 marino Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/01 19:44:33 spz Exp $
 
 DISTNAME=	PySolFC-2.0
 PKGNAME=	${DISTNAME:tl}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pysolfc.sourceforge.net/
 COMMENT=	Over 1000 solitaire games
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 

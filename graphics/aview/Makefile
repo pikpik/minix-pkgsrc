@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2011/09/04 08:54:02 obache Exp $
+# $NetBSD: Makefile,v 1.27 2012/02/06 12:40:17 wiz Exp $
 #
 
 DISTNAME=	aview-1.3.0rc1
@@ -11,8 +11,6 @@ MAINTAINER=	salo@Xtrmntr.org
 HOMEPAGE=	http://aa-project.sourceforge.net/aview/
 COMMENT=	ASCII Art image viewer
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	aview-x11-[0-9]*
 

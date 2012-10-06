@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2012/05/16 14:25:36 marino Exp $
+# $NetBSD: Makefile,v 1.24 2012/06/04 09:29:57 wiz Exp $
 #
 
 DISTNAME=		stratagus-2.1-src
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=stratagus/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://stratagus.sourceforge.net/
 COMMENT=		Real-time strategy engine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/08/08 01:09:36 obache Exp $
+# $NetBSD: Makefile,v 1.2 2012/03/10 10:56:14 obache Exp $
 #
 
 DISTNAME=	scim-tegaki-0.1
@@ -13,8 +13,6 @@ LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	tegaki-pygtk>=0.2:../../inputmethod/tegaki-pygtk
 DEPENDS+=	scim-python>=0.1.13rc1:../../inputmethod/scim-python
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

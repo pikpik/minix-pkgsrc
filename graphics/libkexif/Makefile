@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/06/14 07:43:42 sbd Exp $
+# $NetBSD: Makefile,v 1.37 2012/09/15 10:05:02 obache Exp $
 
 DISTNAME=	libkexif-0.2.5
 PKGREVISION=	18
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kipi-plugins.org/drupal/
 COMMENT=	Image EXIF information library manipulation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake pkg-config msgfmt
 USE_LANGUAGES=		c c++

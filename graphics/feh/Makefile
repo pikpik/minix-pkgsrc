@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2012/05/01 14:58:46 gls Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/03 21:56:08 wiz Exp $
 #
 
 DISTNAME=	feh-2.5
@@ -11,8 +11,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://feh.finalrewind.org/
 COMMENT=	Advanced image viewer
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 #GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--program-transform-name=s,cam,feh_cam,

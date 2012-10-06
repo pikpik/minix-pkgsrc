@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2011/12/16 05:14:27 dholland Exp $
+# $NetBSD: Makefile,v 1.69 2012/02/06 12:40:38 wiz Exp $
 
 DISTNAME=	xpaint-2.7.8.1
 PKGREVISION=	8
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://sf-xpaint.sourceforge.net/
 COMMENT=	Simple paint program
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 USE_TOOLS+=		gmake

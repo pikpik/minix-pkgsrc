@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/09/15 10:04:49 obache Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/02 17:11:08 tron Exp $
 
 DISTNAME=	darktable-1.0.5
 PKGREVISION=	4
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://darktable.sourceforge.net/
 COMMENT=	Photography workflow application
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=		yes
 USE_LANGUAGES=		c c++

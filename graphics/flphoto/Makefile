@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/01/29 15:49:17 marino Exp $
+# $NetBSD: Makefile,v 1.21 2012/02/06 12:40:22 wiz Exp $
 #
 
 DISTNAME=		flphoto-1.2-source
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.easysw.com/~mike/flphoto/index.html
 COMMENT=		Image management and display program
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/flphoto-1.2
 USE_PKGLOCALEDIR=	yes

@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11564 2012/10/05 19:45:44 wiz Exp $
+$NetBSD: TODO,v 1.11568 2012/10/06 09:38:35 ryoon Exp $
 
 Suggested new packages
 ======================
@@ -444,7 +444,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o brasero-3.4.0
 	o bugzilla-3.6
 	o byacc-20120115
-	o bzr-2.5.1
 	o c4-1.10 [schmonz]
 	o cacti-0.8.8a [pkg/46399]
 	o cal3d-0.11.0
@@ -715,9 +714,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o gtranslator-1.9.6
 	o guile-2.0.6
 	o guile-gtk-2.0
-	o gupnp-0.18.4
-	o gupnp-av-0.10.3
-	o gupnp-igd-0.2.1
 	o gv-3.7.3
 	o gvfs-1.6.7
 	o gwaei-3.6.1

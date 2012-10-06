@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/09/15 10:05:18 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/02 17:11:25 tron Exp $
 #
 
 DISTNAME=	uim-tomoe-gtk-0.6.0
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://tomoe.sourceforge.jp/
 COMMENT=	UIM helper program for Tomoe
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/09/15 10:05:07 obache Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.55 2012/10/02 17:11:18 tron Exp $
 
 .include "../../graphics/sane-backends/Makefile.common"
 

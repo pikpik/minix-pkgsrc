@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/09/15 10:05:07 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/02 17:11:18 tron Exp $
 #
 
 DISTNAME=	scidavis-0.2.4
@@ -12,7 +12,6 @@ HOMEPAGE=	http://scidavis.sourceforge.net/
 COMMENT=	Data analysis and visualization package
 
 USE_LANGUAGES=	c c++
-PKG_DESTDIR_SUPPORT= user-destdir
 INSTALL_MAKE_FLAGS+= INSTALL_ROOT=${DESTDIR}
 
 do-configure:

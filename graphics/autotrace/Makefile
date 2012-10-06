@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2012/06/14 07:45:10 sbd Exp $
+# $NetBSD: Makefile,v 1.49 2012/08/18 08:49:41 ryoon Exp $
 #
 
 DISTNAME=	autotrace-0.31.1
@@ -15,7 +15,6 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
 PKGCONFIG_OVERRIDE=	autotrace.pc.in
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

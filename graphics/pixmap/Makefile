@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2008/11/30 08:43:16 obache Exp $
+# $NetBSD: Makefile,v 1.33 2011/12/09 14:36:35 drochner Exp $
 
 DISTNAME=		pixmap2.6
 PKGNAME=		pixmap-2.6.4
@@ -14,8 +14,6 @@ PATCHFILES=		pixmap_2.6.patch1.gz \
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Pixmap editor based on XPM library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/pixmap
 USE_IMAKE=		YES

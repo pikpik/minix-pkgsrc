@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2012/05/03 09:55:30 obache Exp $
+# $NetBSD: Makefile,v 1.57 2012/05/27 18:32:50 marino Exp $
 #
 
 DISTNAME=	xart19980415
@@ -14,8 +14,6 @@ COMMENT=	Paint program (enhanced xpaint)
 # quite like isc, but copyright needs to mention in documentation as well
 # see the bottom of the included "Help.txt" file
 #LICENSE=	isc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/19980415
 USE_IMAKE=	YES

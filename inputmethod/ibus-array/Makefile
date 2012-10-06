@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/04/22 14:09:09 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/15 10:05:11 obache Exp $
 #
 
 DISTNAME=	ibus-array-0.0.2
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/ibus-array/
 COMMENT=	Array 30 Input Method for iBus
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

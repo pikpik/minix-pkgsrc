@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/09/15 10:05:15 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/02 17:11:23 tron Exp $
 #
 
 DISTNAME=		scim-canna-1.0.1
@@ -10,8 +10,6 @@ MAINTAINER=		obache@NetBSD.org
 HOMEPAGE=		http://scim-imengine.sourceforge.jp/
 COMMENT=		SCIM IMEngine module for Canna
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

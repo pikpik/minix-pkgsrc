@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/12/27 04:58:10 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/04/18 17:47:22 hans Exp $
 
 DISTNAME=	libv4l-0.4.3
 PKGREVISION=	2
@@ -8,8 +8,6 @@ MASTER_SITES=	http://people.atrpms.net/~hdegoede/
 MAINTAINER=	tech-multimedia@NetBSD.org
 HOMEPAGE=	http://people.atrpms.net/~hdegoede/
 COMMENT=	Video4Linux userspace library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 

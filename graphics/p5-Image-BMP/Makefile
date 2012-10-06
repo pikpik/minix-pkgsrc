@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 12:59:50 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:56:13 wiz Exp $
 #
 
 DISTNAME=	Image-BMP-1.16
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Image-BMP/
 COMMENT=	Read BMP file information
 #LICENSE=	non commercial use?
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Image/BMP/.packlist
 

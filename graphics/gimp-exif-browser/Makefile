@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/09/15 10:04:53 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/02 17:11:10 tron Exp $
 #
 
 DISTNAME=	exif-browser
@@ -13,7 +13,6 @@ HOMEPAGE=	http://registry.gimp.org/node/8839
 COMMENT=	EXIF data browser plugin
 #LICENSE=	# TODO: (see mk/license.mk)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=	intltool pkg-config
 
 GNU_CONFIGURE=	yes

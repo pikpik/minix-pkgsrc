@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/01/28 11:00:56 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/05/23 06:15:37 dholland Exp $
 #
 
 DISTNAME=	qonk-0.3.1
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://qonk.sourceforge.net/
 COMMENT=	Small space build-and-conquer strategy game
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++

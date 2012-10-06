@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/03/21 14:25:33 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/12 13:37:00 obache Exp $
 #
 
 DISTNAME=	blockdiag-1.1.6
@@ -14,8 +14,6 @@ LICENSE=	apache-2.0
 DEPENDS+=	${PYPKGPREFIX}-imaging>=1.1.7nb3:../../graphics/py-imaging
 DEPENDS+=	${PYPKGPREFIX}-funcparserlib>=0.3.4:../../devel/py-funcparserlib
 DEPENDS+=	${PYPKGPREFIX}-webcolors-[0-9]*:../../www/py-webcolors
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

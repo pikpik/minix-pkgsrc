@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/09/15 10:04:41 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/02 17:11:03 tron Exp $
 
 DISTNAME=	kanatest-0.4.8
 PKGREVISION=	12
@@ -9,8 +9,6 @@ LICENSE=	gnu-gpl-v2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://clayo.org/kanatest/
 COMMENT=	Flash-card program to memorise Japanese kana
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake msgfmt pkg-config

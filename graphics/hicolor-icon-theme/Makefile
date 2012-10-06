@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/10/31 01:31:09 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2010/01/20 13:43:45 wiz Exp $
 #
 
 DISTNAME=	hicolor-icon-theme-0.12
@@ -11,7 +11,6 @@ COMMENT=	Standard icon theme called hicolor
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 NO_BUILD=	YES

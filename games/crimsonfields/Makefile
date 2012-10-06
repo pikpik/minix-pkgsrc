@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2011/11/01 06:01:14 sbd Exp $
+# $NetBSD: Makefile,v 1.39 2012/07/01 19:05:17 dholland Exp $
 #
 
 DISTNAME=		crimson-0.5.2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://crimson.seul.org/
 COMMENT=		Tactical war game in the tradition of Battle Isle
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake

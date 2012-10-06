@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/09/15 10:04:36 obache Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/02 17:11:00 tron Exp $
 #
 
 DISTNAME=		atomix-2.14.0
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_GNOME:=sources/atomix/2.14/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://jens.triq.net/atomix.php
 COMMENT=		Puzzle game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

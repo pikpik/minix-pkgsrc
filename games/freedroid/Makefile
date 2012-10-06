@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/01/13 13:37:43 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/01/28 11:00:54 wiz Exp $
 #
 
 DISTNAME=		freedroid-1.0.2
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=freedroid/}
 MAINTAINER=		dillo@NetBSD.org
 HOMEPAGE=		http://freedroid.sourceforge.net/
 COMMENT=		Clone of the C64 game Paradroid
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

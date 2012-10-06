@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/07/13 19:47:38 adam Exp $
+# $NetBSD: Makefile,v 1.13 2012/03/21 18:20:52 hans Exp $
 
 DISTNAME=	glew-1.6.0
 CATEGORIES=	graphics
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://glew.sourceforge.net/
 COMMENT=	OpenGL Extension Wrangler Library
 LICENSE=	modified-bsd AND mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake

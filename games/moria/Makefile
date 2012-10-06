@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/05/23 06:05:39 dholland Exp $
+# $NetBSD: Makefile,v 1.14 2012/05/23 16:46:15 dholland Exp $
 
 DISTNAME=		um5.5.2
 PKGNAME=		moria-5.5.2
@@ -12,8 +12,6 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		simonb@NetBSD.org
 HOMEPAGE=		http://www-math.bgsu.edu/~grabine/moria.html
 COMMENT=		Rogue-like game with a different sense of scale than Rogue
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/umoria
 MAKE_FLAGS+=		CURSES=-lncurses VARBASE=${VARBASE}

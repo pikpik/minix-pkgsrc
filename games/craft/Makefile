@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2009/07/08 17:20:52 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2011/12/20 16:18:16 dholland Exp $
 
 DISTNAME=	craftcc35
 PKGNAME=	craft-3.5
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://set.gmd.de/~hua/
 COMMENT=	Warcraft-like game for X11
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	c c++

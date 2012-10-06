@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/08/07 12:57:11 obache Exp $
 #
 
 DISTNAME=	tegaki-wagomu-simplified-chinese-0.3
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.tegaki.org/
 COMMENT=	Tegaki project handwriting model for Wagomu-Simplified-Chinese(all)
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

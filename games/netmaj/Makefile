@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/09/02 08:34:13 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:56:05 wiz Exp $
 #
 
 DISTNAME=		netmaj-2.0.7
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.sfc.wide.ad.jp/~kusune/netmaj/files/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.sfc.wide.ad.jp/~kusune/netmaj/
 COMMENT=		Mahjongg game with network and 1-4 player(s) support
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/netmaj
 USE_TOOLS+=		perl:run

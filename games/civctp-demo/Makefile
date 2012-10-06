@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2009/02/18 10:56:55 abs Exp $
+# $NetBSD: Makefile,v 1.19 2009/06/29 22:42:31 joerg Exp $
 
 DISTNAME=	civctp-demo-10251999
 PKGNAME=	civctp-demo-19991025
@@ -16,7 +16,6 @@ COMMENT=	Civilization: Call to Power - graphical strategy (linux demo)
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	x11
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin ${LIBDIR} ${SHAREDIR}
 
 USE_TOOLS+=	pax

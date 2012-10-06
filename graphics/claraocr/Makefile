@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/02/01 02:51:29 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:56:08 wiz Exp $
 #
 
 DISTNAME=	clara-0.9.9
@@ -14,8 +14,6 @@ MASTER_SITES=	ftp://carroll.cac.psu.edu/pub/linux/distributions/mandrake-devel/p
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.geocities.com/claraocr/
 COMMENT=	Optical Character Recognition (OCR) program for books
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	netpbm-[0-9]*:../../graphics/netpbm
 

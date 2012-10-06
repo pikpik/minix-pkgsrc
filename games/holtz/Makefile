@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/15 10:04:40 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/02 17:11:03 tron Exp $
 #
 
 DISTNAME=	holtz-1.3.1
@@ -10,8 +10,6 @@ MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://holtz.sourceforge.net/
 COMMENT=	Engine for the abstract strategy games Zèrtz and Dvonn
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

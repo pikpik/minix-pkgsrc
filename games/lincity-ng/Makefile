@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/01/28 11:00:55 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/06/14 07:45:20 sbd Exp $
 #
 
 DISTNAME=	lincity-ng-2.0
@@ -11,8 +11,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://lincity-ng.berlios.de/wiki/index.php/Main_Page
 COMMENT=	Open source SimCity like game
 LICENSE=	gnu-gpl-v2 #AND cc-by-sa-v2.0 AND Bitstream Vera Fonts
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
