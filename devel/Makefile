@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1652 2012/09/30 22:07:01 pettai Exp $
+# $NetBSD: Makefile,v 1.1654 2012/10/06 22:04:01 jmmv Exp $
 #
 
 COMMENT=	Development utilities
@@ -441,6 +441,7 @@ SUBDIR+=	lwp
 SUBDIR+=	m17n-lib
 SUBDIR+=	m4
 SUBDIR+=	mad-flute
+SUBDIR+=	magit
 SUBDIR+=	makedepend
 SUBDIR+=	makedepf90
 SUBDIR+=	maketool
@@ -1360,6 +1361,7 @@ SUBDIR+=	py-unit
 SUBDIR+=	py-unitgui
 SUBDIR+=	py-urwid
 SUBDIR+=	py-usb
+SUBDIR+=	py-virtualenv
 SUBDIR+=	py-windbg
 SUBDIR+=	py-xdg
 SUBDIR+=	py-zconfig
