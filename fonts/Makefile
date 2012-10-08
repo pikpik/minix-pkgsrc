@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.223 2012/07/14 21:18:42 wiz Exp $
+# $NetBSD: Makefile,v 1.224 2012/08/06 14:29:00 ryoon Exp $
 #
 
 COMMENT=	Fonts
@@ -96,6 +96,7 @@ SUBDIR+=	gbdfed
 SUBDIR+=	gentium-ttf
 SUBDIR+=	geoslab703-ttf
 SUBDIR+=	ghostscript-cidfonts
+SUBDIR+=	ghostscript-cidfonts-ryumin
 SUBDIR+=	ghostscript-cmaps
 SUBDIR+=	ghostscript-fonts
 SUBDIR+=	gsftopkk

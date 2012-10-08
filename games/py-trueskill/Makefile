@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2012/10/03 22:14:01 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/06 11:54:50 asau Exp $
 #
 
-DISTNAME=	trueskill-0.1.3
+DISTNAME=	trueskill-0.1.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	games devel
 MASTER_SITES=	http://pypi.python.org/packages/source/t/trueskill/
