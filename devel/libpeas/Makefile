@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/10/08 21:34:14 prlw1 Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/08 23:01:06 adam Exp $
 #
 
 DISTNAME=	libpeas-1.6.0
@@ -26,6 +26,5 @@ PKGCONFIG_OVERRIDE+=	data/libpeas-1.0.pc.in
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/gobject-introspection/buildlink3.mk"
 .include "../../devel/py-gobject3/buildlink3.mk"
-.include "../../lang/vala016/buildlink3.mk"
 .include "../../x11/gtk3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
