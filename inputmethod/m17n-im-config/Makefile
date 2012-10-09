@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/10/02 17:11:22 tron Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/06 14:25:14 asau Exp $
 #
 
 DISTNAME=	m17n-im-config-0.9.0
-PKGREVISION=	14
+PKGREVISION=	15
 CATEGORIES=	inputmethod devel
 MASTER_SITES=	http://www.m17n.org/m17n-lib-download/
 

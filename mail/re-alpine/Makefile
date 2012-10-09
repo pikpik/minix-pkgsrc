@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/02/10 08:44:25 cheusov Exp $
+# $NetBSD: Makefile,v 1.6 2012/04/18 20:50:21 wiz Exp $
 #
 
 DISTNAME=	re-alpine-2.02
@@ -12,8 +12,6 @@ COMMENT=	Console-based mail and news client
 LICENSE=	apache-2.0
 
 CONFLICTS=	alpine-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

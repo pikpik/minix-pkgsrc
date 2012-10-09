@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/06/04 17:00:14 gdt Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:57:20 wiz Exp $
 
 DISTNAME=	PDFlib-Lite-7.0.5
 PKGNAME=	pdflib-lite-7.0.5
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.pdflib.com/binaries/PDFlib/705/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pdflib.com/
 COMMENT=	C library to produce PDF files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	pdflib-[0-9]*
 

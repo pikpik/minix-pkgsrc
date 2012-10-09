@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.98 2012/09/15 10:05:29 obache Exp $
+# $NetBSD: Makefile,v 1.100 2012/10/08 12:19:33 asau Exp $
 #
 
 DISTNAME=	# empty
 PKGNAME=	thunderbird-${TB_VER}
 TB_VER=		15.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_MOZILLA:=thunderbird/releases/${TB_VER}/source/} \
 		${MASTER_SITE_MOZILLA_ALL:=thunderbird/releases/${TB_VER}/source/}
@@ -16,8 +16,6 @@ EXTRACT_DIR.lightning-1.7.source.tar.bz2=	${WRKSRC}/lightning
 MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://www.mozillamessaging.com/en-US/thunderbird/
 COMMENT=	Organize, secure and customize your mail
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	unzip pax
 WRKSRC=		${WRKDIR}/comm-release

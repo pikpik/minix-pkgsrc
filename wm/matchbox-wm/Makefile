@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/01/13 13:39:33 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2011/11/01 06:02:43 sbd Exp $
 #
 
 DISTNAME=		matchbox-window-manager-1.1
@@ -10,8 +10,6 @@ MASTER_SITES=		http://projects.o-hand.com/matchbox/sources/matchbox-window-manag
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://projects.o-hand.com/matchbox/
 COMMENT=		Window manager designed for computers with small displays
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		yes

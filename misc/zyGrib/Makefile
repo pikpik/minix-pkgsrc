@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2012/09/15 10:05:45 obache Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/08 09:57:42 asau Exp $
 #
 
 DISTNAME=	zyGrib-6.0.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	misc
 MASTER_SITES=	http://www.zygrib.org/getfile.php?file=
 EXTRACT_SUFX=	.tgz
@@ -19,8 +19,6 @@ USE_LANGUAGES=	c c++
 USE_TOOLS+=	make
 
 CONFIGURE_ENV+=	QTDIR=${QTDIR}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	post-patch

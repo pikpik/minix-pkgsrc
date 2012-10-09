@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/03/15 11:53:30 obache Exp $
+# $NetBSD: Makefile,v 1.29 2012/04/04 14:27:41 wiz Exp $
 #
 
 DISTNAME=		rss2email-2.71
@@ -14,8 +14,6 @@ LICENSE=		gnu-gpl-v2
 
 DEPENDS+=		${PYPKGPREFIX}-feedparser-[0-9]*:../../textproc/py-feedparser
 DEPENDS+=		${PYPKGPREFIX}-html2text-[0-9]*:../../textproc/py-html2text
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 PYTHON_PATCH_SCRIPTS=	*.py

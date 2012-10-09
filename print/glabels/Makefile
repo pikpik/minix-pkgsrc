@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.58 2012/09/15 10:06:10 obache Exp $
+# $NetBSD: Makefile,v 1.60 2012/10/08 13:45:38 asau Exp $
 #
 
 DISTNAME=		glabels-2.2.8
-PKGREVISION=		20
+PKGREVISION=		21
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=glabels/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://glabels.sourceforge.net/
 COMMENT=		Program for creating labels and business cards for GNOME
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

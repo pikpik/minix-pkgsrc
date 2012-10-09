@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/02/28 16:14:45 hans Exp $
+# $NetBSD: Makefile,v 1.26 2012/08/21 23:49:18 marino Exp $
 #
 
 DISTNAME=	magic-7.5.188
@@ -13,7 +13,6 @@ COMMENT=	Integrated circuit layout system
 LICENSE=	magic-license
 
 MAKE_JOBS_SAFE=		no
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake printf
 USE_GNU_READLINE=yes	# uses rl_*_completion_function

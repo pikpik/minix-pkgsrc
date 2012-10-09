@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/02/10 19:17:46 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/03/15 11:53:41 obache Exp $
 #
 
 DISTNAME=		wxRemind-0.6.18
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.duke.edu/~dgraham/wxRemind/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.duke.edu/~dgraham/wxRemind/
 COMMENT=		Graphical front-end to Remind
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		${PYPKGPREFIX}-wxWidgets>=2.6.1:../../x11/py-wxWidgets
 

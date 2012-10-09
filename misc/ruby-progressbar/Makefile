@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/05/15 23:59:59 obache Exp $
+# $NetBSD: Makefile,v 1.4 2010/05/16 12:19:11 obache Exp $
 #
 
 DISTNAME=	ruby-progressbar-0.9
@@ -11,8 +11,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://0xcc.net/ruby-progressbar/
 COMMENT=	Text Progress Bar Library for Ruby
 LICENSE=	ruby-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

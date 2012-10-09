@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/11/01 06:02:26 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/02/06 12:41:22 wiz Exp $
 #
 
 DISTNAME=	podofo-0.9.1
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://podofo.sourceforge.net/
 COMMENT=	Library to work with the PDF file format
 LICENSE=	gnu-lgpl-v2 AND gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=	yes
 USE_LANGUAGES=	c c++

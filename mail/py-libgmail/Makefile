@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/06/14 11:33:27 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/01/24 10:59:03 obache Exp $
 #
 
 DISTNAME=	libgmail-0.1.11
@@ -12,8 +12,6 @@ COMMENT=	Python bindings to access Gmail
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PYPKGPREFIX}-mechanize-[0-9]*:../../www/py-mechanize
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

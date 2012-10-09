@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2012/06/09 11:54:50 adam Exp $
+# $NetBSD: Makefile,v 1.71 2012/10/03 21:56:34 wiz Exp $
 
 DISTNAME=	sqwebmail-5.5.3
 PKGREVISION=	1
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.courier-mta.org/sqwebmail/
 
 DEPENDS+=	courier-maildir>=${COURIER_VERSION}:../../mail/courier-maildir
 DEPENDS+=	maildrop>=2.5.0:../../mail/maildrop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		env gmake gzip:run perl:run
 USE_LANGUAGES=		c c++

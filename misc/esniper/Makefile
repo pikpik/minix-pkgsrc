@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2010/05/16 15:05:07 heinz Exp $
+# $NetBSD: Makefile,v 1.20 2011/04/22 13:44:08 obache Exp $
 #
 
 DISTNAME=		esniper-2-23-0
@@ -14,7 +14,6 @@ COMMENT=		Simple, lightweight tool for sniping ebay auctions
 LICENSE=		2-clause-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

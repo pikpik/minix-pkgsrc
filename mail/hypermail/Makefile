@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/03/03 00:13:29 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/08/13 12:41:10 obache Exp $
 #
 
 DISTNAME=	hypermail-2.3.0
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.hypermail-project.org/
 COMMENT=	Creates indexed, threaded HTML archives of email
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGBASE}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/11/01 14:47:09 bsiegert Exp $
+# $NetBSD: Makefile,v 1.35 2012/06/12 15:45:57 wiz Exp $
 #
 
 DISTNAME=	cucipop-1.31
@@ -13,8 +13,6 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	The Cubic Circle POP3 mail server
 LICENSE=	cucipop-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REQD_DIRS+=	${PREFIX}/share/cucipop/bulletins
 

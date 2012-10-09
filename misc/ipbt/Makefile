@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/01/02 00:20:14 dholland Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:56:43 wiz Exp $
 #
 
 DISTNAME=	ipbt-r8765
@@ -15,8 +15,6 @@ DIST_SUBDIR=	ipbt-20100101
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.chiark.greenend.org.uk/~sgtatham/ipbt/
 COMMENT=	High-tech ttyrec player
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl
 REPLACE_PERL=		ttydump ttygrep

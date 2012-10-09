@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2012/09/15 10:07:09 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 10:32:13 wiz Exp $
 #
 
 DISTNAME=	libunique-1.1.6
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libunique/1.1/}
 
@@ -18,6 +18,8 @@ USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config gmake
 
 PKGCONFIG_OVERRIDE+=	unique.pc.in
+
+BUILDLINK_TRANSFORM+=	rm:-Werror
 
 # Workaround for Upstream Bug#562310.
 # for more detail, see also PR#41475.

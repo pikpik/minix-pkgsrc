@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 21:46:44 abs Exp $
+# $NetBSD: Makefile,v 1.10 2008/10/02 18:31:13 joerg Exp $
 #
 
 DISTNAME=		pine-pgp-filters-1.6
@@ -9,8 +9,6 @@ MASTER_SITES=		http://dougbarton.us/PGP/scripts/ppf/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://dougbarton.us/PGP/scripts/ppf/
 COMMENT=		Filters to integrate Pine with gnupg or pgp
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}

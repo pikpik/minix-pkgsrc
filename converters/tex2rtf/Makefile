@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2012/10/02 17:10:42 tron Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/03 00:20:17 asau Exp $
 
 DISTNAME=		tex2rtf-2.01-source
 PKGNAME=		tex2rtf-2.01
-PKGREVISION=		19
+PKGREVISION=		20
 CATEGORIES=		converters textproc
 MASTER_SITES=		ftp://biolpc22.york.ac.uk/pub/tex2rtf/
 EXTRACT_SUFX=		.tar.bz2

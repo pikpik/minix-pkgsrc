@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/01/19 08:23:43 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2010/01/31 22:47:34 joerg Exp $
 #
 
 DISTNAME=		wmzcalock-0.1
@@ -11,8 +11,6 @@ COMMENT=		Dockapp calendar clock
 LICENSE=		gnu-gpl-v2
 
 EXTRACT_SUFX=		.tgz
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pax
 INSTALLATION_DIRS=	bin share/wmzcalock/theme

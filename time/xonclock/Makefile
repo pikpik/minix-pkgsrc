@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/04/13 23:33:34 hans Exp $
+# $NetBSD: Makefile,v 1.14 2012/07/12 20:44:32 marino Exp $
 #
 
 DISTNAME=	xonclock-0.0.9.4
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xonclock.sourceforge.net/
 COMMENT=	Analog clock
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

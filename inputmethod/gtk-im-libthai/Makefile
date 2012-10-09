@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2012/10/02 17:11:21 tron Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/06 14:25:11 asau Exp $
 #
 
 DISTNAME=	gtk-im-libthai-0.2.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://linux.thai.net/pub/thailinux/software/libthai/ \
 		ftp://linux.thai.net/pub/ThaiLinux/software/libthai/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/06/06 07:39:55 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2012/06/06 07:45:32 wiz Exp $
 #
 
 DISTNAME=		xorg-sgml-doctools-1.11
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Xorg documentation that does not fit anywhere else
 #LICENSE=		mit?
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2012/09/15 10:05:47 obache Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/08 09:21:02 asau Exp $
 #
 
 DISTNAME=		gopchop-1.1.8
-PKGREVISION=		14
+PKGREVISION=		15
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gopchop/} \
 			http://outflux.net/unix/software/GOPchop/download/
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gopchop/} \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://outflux.net/unix/software/GOPchop/
 COMMENT=		MPEG2 GOP-accurate editor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

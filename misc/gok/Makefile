@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.78 2012/09/15 10:05:36 obache Exp $
+# $NetBSD: Makefile,v 1.80 2012/10/08 09:57:23 asau Exp $
 #
 
 DISTNAME=		gok-2.28.1
-PKGREVISION=		14
+PKGREVISION=		15
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gok/2.28/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://library.gnome.org/devel/gok/
 COMMENT=		GNOME On-Screen Keyboard
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt pkg-config intltool
 USE_PKGLOCALEDIR=	yes

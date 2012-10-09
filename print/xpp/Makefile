@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2011/01/13 13:39:16 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2012/02/06 12:41:24 wiz Exp $
 
 DISTNAME=	xpp-1.5
 PKGREVISION=	7
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=cups/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cups.sourceforge.net/xpp/index.html
 COMMENT=	X Printing Panel
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes

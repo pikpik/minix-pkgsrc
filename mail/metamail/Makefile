@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2012/02/06 06:19:18 sbd Exp $
+# $NetBSD: Makefile,v 1.48 2012/05/23 03:59:33 dholland Exp $
 
 DISTNAME=	mm2.7
 PKGNAME=	metamail-2.7
@@ -14,7 +14,6 @@ COMMENT=	Implementation of MIME, the Multipurpose Internet Mail Extensions
 CONFLICTS+=	mm-2.7
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 

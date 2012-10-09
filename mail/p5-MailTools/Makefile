@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/09/09 13:17:58 abs Exp $
+# $NetBSD: Makefile,v 1.55 2012/10/03 21:56:31 wiz Exp $
 
 DISTNAME=	MailTools-2.11
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Perl5 modules related to mail applications
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	p5-Net>=1.09:../../net/p5-Net
 DEPENDS+=	p5-TimeDate-[0-9]*:../../time/p5-TimeDate

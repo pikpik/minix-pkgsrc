@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2011/04/22 13:42:07 obache Exp $
+# $NetBSD: Makefile,v 1.72 2012/10/03 21:57:16 wiz Exp $
 
 DISTNAME=		a2ps-4.14
 PKGREVISION=		3
@@ -11,8 +11,6 @@ HOMEPAGE=		http://www-inf.enst.fr/~demaille/a2ps/
 COMMENT=		Formats an ascii file for printing on a postscript printer
 
 DEPENDS+=		psutils>=1.17:../../print/psutils
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 STRIP=			# empty
 

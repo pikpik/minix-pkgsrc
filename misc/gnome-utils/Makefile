@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.120 2012/10/02 17:11:34 tron Exp $
+# $NetBSD: Makefile,v 1.122 2012/10/08 09:57:23 asau Exp $
 #
 
 DISTNAME=		gnome-utils-2.32.0
-PKGREVISION=		17
+PKGREVISION=		18
 CATEGORIES=		misc gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-utils/2.32/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Set of useful GNOME2 utilities and applications
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config

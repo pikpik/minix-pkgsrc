@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.36 2012/02/05 08:40:46 obache Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/03 21:54:32 wiz Exp $
 
-DISTNAME=	libsigc++-2.2.10
-PKGREVISION=	1
+DISTNAME=	libsigc++-2.2.11
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libsigc++/2.2/}
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	bsieker@freenet.de
 HOMEPAGE=	http://libsigc.sourceforge.net/

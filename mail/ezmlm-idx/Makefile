@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2011/06/07 03:25:51 schmonz Exp $
+# $NetBSD: Makefile,v 1.34 2012/03/12 04:32:11 joerg Exp $
 #
 
 .include "../../mail/ezmlm/Makefile.common"
@@ -18,7 +18,6 @@ CONFLICTS=		ezmlm-[0-9]*
 DISTFILES+=		${EZMLM_VERS}.tar.gz
 PLIST_SRC+=		PLIST.idx
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 DJB_RESTRICTED=		no

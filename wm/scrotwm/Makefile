@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/02/18 12:03:23 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/07/27 18:52:29 wiz Exp $
 #
 
 DISTNAME=	scrotwm-0.9.22
@@ -13,7 +13,6 @@ COMMENT=	Small dynamic tiling window manager for X11
 DEPENDS+=	dmenu-[0-9]*:../../x11/dmenu
 
 BUILDLINK_TRANSFORM+=	rm:-Werror
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/05/26 02:13:23 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/02/12 00:10:15 joerg Exp $
 #
 
 # fix install so it uses ${prefix}
@@ -11,8 +11,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rtf2latex2e/}
 MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://sourceforge.net/projects/rtf2latex2e/
 COMMENT=	RTF to LaTeX2e converter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # ImageMagick is an optional component
 

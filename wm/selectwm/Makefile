@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.20 2012/09/15 10:06:43 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 12:42:23 asau Exp $
 #
 
 DISTNAME=     selectwm-0.4.1
-PKGREVISION=  17
+PKGREVISION=  18
 CATEGORIES=   wm
 MASTER_SITES= http://ordiluc.net/selectwm/
 
 MAINTAINER=   tonio@NetBSD.org
 HOMEPAGE=     http://ordiluc.net/selectwm/
 COMMENT=      Simple GTK2 application to select window manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=       pkg-config
 USE_PKGLOCALEDIR= yes

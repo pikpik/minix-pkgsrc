@@ -1,10 +1,10 @@
 # $NetBSD: Makefile,v 1.11 2012/10/04 11:53:03 abs Exp $
 
-DISTNAME=	gdk-pixbuf-2.26.4
-PKGNAME=	gdk-pixbuf2-xlib-2.26.4
+DISTNAME=	gdk-pixbuf-${PIXBUF2_VERSION}
+PKGNAME=	gdk-pixbuf2-xlib-${PIXBUF2_VERSION}
 PKGREVISION=	1
 CATEGORIES=	graphics
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdk-pixbuf/2.26/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdk-pixbuf/${MSITE_VERSION}/}
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -18,6 +18,8 @@ BUILD_DIRS=	contrib/gdk-pixbuf-xlib
 INSTALL_DIRS=	contrib/gdk-pixbuf-xlib
 
 CONFLICTS+=	gtk2+<2.22
+
+.include "../../graphics/gdk-pixbuf2/Makefile.version"
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-libtiff --without-libjpeg --without-libpng

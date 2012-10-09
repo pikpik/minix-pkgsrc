@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/06/03 22:03:24 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/08/21 19:50:53 drochner Exp $
 #
 
 DISTNAME=	mupdf-1.1-source
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mupdf.com/
 COMMENT=	Lightweight PDF viewer and toolkit
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config gmake
 

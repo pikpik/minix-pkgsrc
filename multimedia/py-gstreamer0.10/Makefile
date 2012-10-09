@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2012/06/14 07:44:15 sbd Exp $
+# $NetBSD: Makefile,v 1.30 2012/09/15 10:05:52 obache Exp $
 #
 
 DISTNAME=		gst-python-0.10.22
@@ -12,8 +12,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://gstreamer.freedesktop.org/
 COMMENT=		Python bindings for gstreamer0.10
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		gst-python-[0-9]*
 

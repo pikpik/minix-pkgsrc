@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2012/10/02 17:11:17 tron Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/06 14:11:18 asau Exp $
 #
 
 DISTNAME=	qiviewer-0.5.0
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://qiviewer.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2

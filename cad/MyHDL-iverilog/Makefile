@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/04/01 17:26:06 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2011/04/13 16:14:10 drochner Exp $
 #
 
 DISTNAME=	myhdl-0.7
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=myhdl/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jandecaluwe.com/Tools/MyHDL/Overview.html
 COMMENT=	Icarus Verilog cosimulation support for py-MyHDL
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DIRS+=	cosimulation/icarus
 

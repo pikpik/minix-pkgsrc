@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/03/14 14:31:48 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/22 13:48:17 ryoon Exp $
 
 PKGNAME=	${DISTNAME:S/ffmpeg/ffplay/}
 PKGREVISION=	1
@@ -7,8 +7,6 @@ HOMEPAGE=	http://ffmpeg.mplayerhq.hu/
 COMMENT=	Simple SDL frontend for FFmpeg
 
 DISTINFO_FILE=		${.CURDIR}/../ffmpeg/distinfo
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 CONFIGURE_ARGS+=        --enable-ffplay \
 			--disable-ffmpeg \

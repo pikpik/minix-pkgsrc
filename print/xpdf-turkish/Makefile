@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2006/03/14 01:14:33 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2010/01/27 15:14:01 joerg Exp $
 #
 
 DISTNAME=	xpdf-turkish-2002-apr-10
@@ -11,8 +11,6 @@ MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.foolabs.com/xpdf/
 COMMENT=	Xpdf support files for Turkish
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	xpdf>=2.02:../../print/xpdf
 

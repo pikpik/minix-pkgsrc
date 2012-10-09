@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3177 2012/10/07 22:18:05 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.3203 2012/10/09 01:36:45 jnemeth Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -4950,3 +4950,20 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated x11/libxcb to 1.9 [wiz 2012-10-07]
 	Updated graphics/cairo to 1.12.4 [wiz 2012-10-07]
 	Updated graphics/cairo-gobject to 1.12.4 [wiz 2012-10-07]
+	Updated devel/tcllib to 1.14 [minskim 2012-10-07]
+	Updated graphics/cairo to 1.12.4nb1 [tron 2012-10-08]
+	Updated games/gbrainy to 2.15 [wiz 2012-10-08]
+	Updated devel/p5-Mouse to 1.02 [wen 2012-10-08]
+	Updated net/drill to 1.6.13 [he 2012-10-08]
+	Updated net/drill to 1.6.13nb1 [he 2012-10-08]
+	Updated lang/polyml to 5.5 [asau 2012-10-08]
+	Updated time/p5-DateTime to 0.77 [wen 2012-10-08]
+	Updated lang/ocaml to 4.00.1 [jaapb 2012-10-08]
+	Updated archivers/ocaml-zip to 1.04nb1 [jaapb 2012-10-08]
+	Updated devel/frama-c to 20120901 [jaapb 2012-10-08]
+	Updated devel/libsigc++ to 2.2.11 [adam 2012-10-08]
+	Updated lang/camlp5 to 6.06 [jaapb 2012-10-08]
+	Updated print/tex-texlive.infra to 2012.27610 [minskim 2012-10-08]
+	Updated comms/asterisk18 to 1.8.17.0 [jnemeth 2012-10-08]
+	Updated comms/asterisk10 to 10.9.0 [jnemeth 2012-10-09]
+	Updated net/libfetch to 2.34 [sbd 2012-10-09]

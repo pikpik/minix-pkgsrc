@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/04/10 10:35:16 abs Exp $
+# $NetBSD: Makefile,v 1.16 2009/08/22 21:44:27 abs Exp $
 
 DISTNAME=	lsdvd-0.16
 PKGREVISION=	5
@@ -11,7 +11,6 @@ HOMEPAGE=	http://sourceforge.net/projects/lsdvd/
 COMMENT=	Application displaying the contents of DVDs
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		autoconf

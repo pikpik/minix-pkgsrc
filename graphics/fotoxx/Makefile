@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2012/10/03 21:56:09 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/06 14:10:49 asau Exp $
 #
 
 DISTNAME=	fotoxx-12.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.kornelix.com/uploads/1/3/0/3/13035936/
 

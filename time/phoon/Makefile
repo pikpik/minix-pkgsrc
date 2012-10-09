@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:53 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2012/08/28 17:14:13 is Exp $
 #
 
 DISTNAME=	phoon_29jun2005
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.acme.com/software/phoon/
 MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://www.acme.com/software/phoon/
 COMMENT=	Show phase of the moon on ASCII terminal
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/phoon
 

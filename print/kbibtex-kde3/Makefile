@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/15 10:06:10 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:18 wiz Exp $
 
 DISTNAME=		kbibtex-0.2.1
 PKGREVISION=		16
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		markd@NetBSD.org
 HOMEPAGE=		http://www.unix-ag.uni-kl.de/~fischer/kbibtex/
 COMMENT=		BibTeX editor for KDE
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl msgfmt
 USE_LANGUAGES=		c c++

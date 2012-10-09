@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/07/05 18:32:02 schmonz Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 21:56:33 wiz Exp $
 #
 
 DISTNAME=		qmhandle-1.3.2
@@ -11,8 +11,6 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://qmhandle.sourceforge.net/
 COMMENT=		Tool to view and manage the qmail message queue
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run
 REPLACE_PERL=		qmHandle

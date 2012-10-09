@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2012/03/03 00:13:48 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2012/06/12 15:46:02 wiz Exp $
 
 DISTNAME=		leafnode-1.11.7
 PKGREVISION=		1
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://leafnode.sourceforge.net/
 COMMENT=		NNTP server for small (dialup) sites
 LICENSE=		mit AND gnu-gpl-v2 AND gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		cyrus-imapd<2.2.10nb2
 

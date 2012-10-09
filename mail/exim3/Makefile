@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/08/05 10:02:12 obache Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/03 21:56:23 wiz Exp $
 
 DISTNAME=	exim-3.36
 PKGREVISION=	10
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.exim.org/
 COMMENT=	The Exim mail transfer agent, a replacement for sendmail
 
-PKG_DESTDIR_SUPPORT =	user-destdir
 MAKE_JOBS_SAFE=		no
 
 CONFLICTS+=	exim-exiscan-[0-9]*

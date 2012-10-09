@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/07/22 09:01:45 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2011/10/18 20:46:07 minskim Exp $
 
 DISTNAME=	resume
 PKGNAME=	tex-${DISTNAME}-20010823
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.ctan.org/tex-archive/macros/latex/contrib/resume/
 COMMENT=	Resume document style
 
 DEPENDS+=	tex-latex-bin-[0-9]*:../../print/tex-latex-bin
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 

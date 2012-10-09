@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2012/02/04 04:41:56 obache Exp $
+# $NetBSD: Makefile,v 1.44 2012/02/04 04:46:34 obache Exp $
 
 DISTNAME=	reportlab-2.5
 DISTFILES=	${DEFAULT_DISTFILES} pfbfer.zip
@@ -15,8 +15,6 @@ LICENSE=	modified-bsd
 
 DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 DEPENDS+=	${PYPKGPREFIX}-imaging-[0-9]*:../../graphics/py-imaging
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_DIR.pfbfer.zip=	${WRKSRC}/src/reportlab/fonts
 

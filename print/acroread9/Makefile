@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/04/12 14:31:30 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/08/25 12:34:53 wiz Exp $
 
 DISTNAME=	acroread9	# overridden below
 PKGNAME=	acroread9-9.5.1
@@ -16,8 +16,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/AdobeReader
 BUILD_DIRS=		# empty

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2012/08/13 17:23:37 drochner Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/03 21:56:43 wiz Exp $
 
 DISTNAME=	libcdio-0.83
 PKGREVISION=	1
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.gnu.org/software/libcdio/
 COMMENT=	CD-ROM access library
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_PKGLOCALEDIR=	yes

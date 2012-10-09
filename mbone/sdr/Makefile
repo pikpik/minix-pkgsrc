@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2010/08/21 10:17:58 seb Exp $
+# $NetBSD: Makefile,v 1.53 2012/06/12 15:45:59 wiz Exp $
 
 DISTNAME=	sdr-3.0
 PKGREVISION=	2
@@ -8,8 +8,6 @@ MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/3.0/
 MAINTAINER=	is@NetBSD.org
 HOMEPAGE=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/
 COMMENT=	MBone Session Directory
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BROKEN=		Depends on TCL/TK 8.3
 

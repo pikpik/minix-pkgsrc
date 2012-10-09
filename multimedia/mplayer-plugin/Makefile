@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2012/09/15 10:05:51 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/08 09:21:09 asau Exp $
 #
 
 DISTNAME=		mplayerplug-in-3.55
 PKGNAME=		mplayer-plugin-3.55
-PKGREVISION=		18
+PKGREVISION=		19
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=mplayerplug-in/}
 
@@ -12,8 +12,6 @@ HOMEPAGE=		http://mplayerplug-in.sourceforge.net/
 COMMENT=		Mplayer plug-in for Gecko-based browsers
 
 DEPENDS+=		mplayer>=0.92:../../multimedia/mplayer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake pkg-config msgfmt

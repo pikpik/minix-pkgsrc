@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.60 2012/07/01 19:05:21 dholland Exp $
+# $NetBSD: Makefile,v 1.61 2012/09/15 10:05:38 obache Exp $
 
 DISTNAME=	kdeadmin-${_KDE_VERSION}
 PKGREVISION=	14
 CATEGORIES=	misc
 COMMENT=	System administration tools for the KDE integrated X11 desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 

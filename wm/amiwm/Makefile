@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/09/12 20:06:29 gdt Exp $
+# $NetBSD: Makefile,v 1.25 2009/05/19 08:59:36 wiz Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -16,8 +16,6 @@ RESTRICTED=	Distribution limited to non-commercial purposes, unmodified binaries
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	ksh:run yacc lex
 REPLACE_KSH=	Xsession.in Xsession2.in

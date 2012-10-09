@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/03/17 21:40:48 darcy Exp $
+# $NetBSD: Makefile,v 1.24 2011/04/22 13:44:55 obache Exp $
 #
 
 DISTNAME=	blackbox-0.65.0
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=blackboxwm/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://blackboxwm.sourceforge.net/
 COMMENT=	Tools to set the root windows background
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/05/17 10:07:02 mlelstv Exp $
+# $NetBSD: Makefile,v 1.4 2009/02/18 08:00:37 mlelstv Exp $
 #
 
 DISTNAME=		replex-0.1.6.8
@@ -12,6 +12,5 @@ COMMENT=		Remultiplexes transport streams from a DVB source
 USE_TOOLS+=		gmake
 
 INSTALLATION_DIRS=      bin share/doc
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../mk/bsd.pkg.mk"

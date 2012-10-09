@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2012/10/02 17:11:18 tron Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/06 14:11:20 asau Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-clutter-gtk-${VERSION}
 COMMENT=		Ruby binding for Clutter GTK+ widget
-PKGREVISION=		14
+PKGREVISION=		15
 CATEGORIES=		graphics
 
 DEPENDS+=	${RUBY_PKGPREFIX}-clutter-core>=${VERSION}:../../graphics/ruby-clutter-core

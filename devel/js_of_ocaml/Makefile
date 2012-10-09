@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1 2012/07/11 15:35:06 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/07/20 20:08:25 wiz Exp $
 #
 
 DISTNAME=	js_of_ocaml-1.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://ocsigen.org/download/
 

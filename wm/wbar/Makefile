@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2012/09/15 10:06:44 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 12:42:24 asau Exp $
 #
 
 DISTNAME=	wbar-2.2.2
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	wm
 MASTER_SITES=	http://wbar.googlecode.com/files/
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/wbar/
 COMMENT=	Simple and highly customizable quick-launch tool
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++

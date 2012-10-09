@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/07/25 17:15:45 imil Exp $
 #
 
 DISTNAME=	foo2zjs
@@ -10,8 +10,6 @@ MAINTAINER=	imil@NetBSD.org
 HOMEPAGE=	http://foo2zjs.rkkda.com/
 COMMENT=	Printer driver for Zenographics ZjStream wire protocol
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/11/02 23:42:41 dholland Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:57:17 wiz Exp $
 
 COMMENT=		PDF backend for CUPS
 
@@ -10,7 +10,6 @@ HOMEPAGE=		http://www.cups-pdf.de/
 MASTER_SITES=		${HOMEPAGE}src/
 DISTFILES=		${DISTNAME:S/pdf-/pdf_/}.tar.gz
 LICENSE=		gnu-gpl-v2
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		cups-[0-9]*:../../print/cups
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/11/01 06:02:26 sbd Exp $
+# $NetBSD: Makefile,v 1.10 2012/07/04 20:26:58 drochner Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
@@ -12,7 +12,6 @@ CONFLICTS+=		poppler-0.5.1 poppler-0.5.1nb1 poppler-0.5.1nb2
 
 GNU_CONFIGURE=		yes
 NO_BUILD=		yes
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 INCDIR=${DESTDIR}${PREFIX}/include
 

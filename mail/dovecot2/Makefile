@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/08/13 13:57:46 ghen Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/01 07:10:14 ghen Exp $
 
 DISTNAME=	dovecot-2.1.10
 CATEGORIES=	mail
@@ -10,7 +10,6 @@ COMMENT=	Secure IMAP and POP3 server
 LICENSE=	mit AND gnu-lgpl-v2.1 AND modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config rpcgen

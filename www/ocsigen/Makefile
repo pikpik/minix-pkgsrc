@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2012/03/03 00:14:07 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/07/11 10:40:46 wiz Exp $
 #
 
 VERSION=	2.1
 PKGNAME=	ocsigen-${VERSION}
 DISTNAME=	ocsigenserver-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.ocsigen.org/download/
 

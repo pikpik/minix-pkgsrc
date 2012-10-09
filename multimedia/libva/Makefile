@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/07/03 08:22:12 dholland Exp $
+# $NetBSD: Makefile,v 1.3 2012/06/25 11:51:27 joerg Exp $
 #
 
 # libva-1.0.7+ needs libdrm-2.4.23
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/vaapi
 COMMENT=	Video Acceleration API
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/11/23 13:09:55 adam Exp $
+# $NetBSD: Makefile,v 1.6 2011/11/26 09:17:30 sbd Exp $
 
 DISTNAME=	MediaInfo_CLI_0.7.51_GNU_FromSource
 PKGNAME=	mediainfo-0.7.51
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mediainfo.sourceforge.net/
 COMMENT=	Utility to supply technical information about audio and video files
 LICENSE=	gnu-lgpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/MediaInfo_CLI_GNU_FromSource
 USE_TOOLS+=		pkg-config

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/09/03 11:16:22 sno Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:56:29 wiz Exp $
 #
 
 DISTNAME=	MIME-Charset-1.009.1
@@ -11,8 +11,6 @@ MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/MIME-Charset/
 COMMENT=	Perl5 module containing charset Informations for MIME
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # extra requirement for:
 # extended mappings by Japanese codepages

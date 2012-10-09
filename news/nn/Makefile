@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/04/07 22:49:54 dholland Exp $
+# $NetBSD: Makefile,v 1.41 2012/07/08 10:16:32 sbd Exp $
 
 DISTNAME=	nn-6.7.3
 PKGREVISION=	1
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nndev.org/
 COMMENT=	NN newsreader
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_SYSCONFSUBDIR=	nntp
 

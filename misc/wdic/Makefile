@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/03/07 14:48:09 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2008/03/04 19:21:12 jlam Exp $
 #
 
 DISTNAME=		wdic_wob_v3.0
@@ -11,7 +11,6 @@ HOMEPAGE=		http://kldp.net/projects/wdic/
 COMMENT=		English dictionary for Korean
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

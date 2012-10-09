@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2012/10/02 17:11:51 tron Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/08 13:45:39 asau Exp $
 #
 
 DISTNAME=		hplip-3.12.6
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=hplip/}
 
@@ -10,8 +10,6 @@ MAINTAINER=		schnoebe@NetBSD.org
 HOMEPAGE=		http://hplipopensource.com/
 COMMENT=		HP Linux Imaging and Printing
 LICENSE=		gnu-gpl-v2 AND mit AND modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		hpijs-[0-9]*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/02/22 19:22:25 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:43 joerg Exp $
 #
 
 DISTNAME=	psify-19980216
@@ -9,8 +9,6 @@ DISTFILES=	Makefile psify.c psify.lex psify.man
 MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://mit.edu/~mkgray/jik/sipbsrc/src/psify/
 COMMENT=	Pretty print C, CLU, SCHEME, Java and ARGUS source files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	psify

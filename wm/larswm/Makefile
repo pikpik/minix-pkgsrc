@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/01/23 21:14:17 jschauma Exp $
+# $NetBSD: Makefile,v 1.16 2009/02/16 13:48:03 joerg Exp $
 #
 
 DISTNAME=	larswm-7.5.3
@@ -10,8 +10,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DOCFILES}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.earthlink.net/~lab1701/larswm/
 COMMENT=	9wm-like window manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/02/22 19:26:50 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/04 19:21:11 jlam Exp $
 #
 
 DISTNAME=	mmv_1.01b.orig
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/m/mmv/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# none
 COMMENT=	Move, copy, append or link multiple files using wildcard patterns
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/mmv-1.01b.orig
 BUILD_TARGET=	mmv

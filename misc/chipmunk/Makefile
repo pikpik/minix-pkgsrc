@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/03/04 19:21:11 jlam Exp $
+# $NetBSD: Makefile,v 1.24 2009/05/20 00:58:23 wiz Exp $
 #
 
 DISTNAME=	chipmunk-1.4
@@ -11,8 +11,6 @@ HOMEPAGE=	http://www.bitwizard.nl/chipmunk/index.html
 COMMENT=	Shell-like tool for hardware debugging
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	chipmunk
 MAKE_ENV+=	CONFIG_OPTIONS=${CPPFLAGS:M*:Q}

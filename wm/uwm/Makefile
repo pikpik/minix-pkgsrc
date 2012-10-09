@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/07/07 19:32:25 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/06/18 06:19:19 dholland Exp $
 
 DISTNAME=	X.V11R3uwm
 PKGNAME=	uwm-19881027
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://www.x.org/
 COMMENT=	X11R3 window manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/X.V11R3/clients/uwm
 USE_IMAKE=	yes

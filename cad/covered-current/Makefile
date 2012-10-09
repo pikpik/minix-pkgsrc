@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/06/19 05:33:45 dholland Exp $
+# $NetBSD: Makefile,v 1.18 2012/08/21 23:49:18 marino Exp $
 #
 
 DISTNAME=	covered-${SNAPDATE}
@@ -12,7 +12,6 @@ HOMEPAGE=	http://covered.sourceforge.net/
 COMMENT=	Verilog code coverage analyzer (development snapshot)
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	verilog{,-current}-[0-9]*:../../cad/verilog
 

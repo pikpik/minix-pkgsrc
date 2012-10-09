@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2012/10/02 17:11:42 tron Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/08 09:21:11 asau Exp $
 #
 
 DISTNAME=	pitivi-0.15.0
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pitivi/0.15/}
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pitivi/}
@@ -14,7 +14,6 @@ COMMENT=	Video editor
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config intltool gmake msgfmt
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ENV+=	ac_cv_path_PYTHON=${PYTHONBIN}
 PYTHON_PATCH_SCRIPTS=	bin/pitivi.in

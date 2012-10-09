@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2012/06/09 11:50:20 adam Exp $
+# $NetBSD: Makefile,v 1.57 2012/10/03 21:56:24 wiz Exp $
 
 DISTNAME=	maildrop-2.5.5
 PKGREVISION=	1
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Courier mail delivery agent with filtering abilities
 HOMEPAGE=	http://www.courier-mta.org/maildrop/
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	courier-maildir>=${COURIER_VERSION}:../../mail/courier-maildir
 

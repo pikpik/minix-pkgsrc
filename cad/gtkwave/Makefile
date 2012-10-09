@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.42 2012/09/15 10:03:48 obache Exp $
+# $NetBSD: Makefile,v 1.44 2012/10/08 13:25:13 asau Exp $
 #
 
 DISTNAME=		gtkwave-3.3.28
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		cad
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gtkwave/}
 #MASTER_SITES=		http://home.nc.rr.com/gtkwave/
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gtkwave/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://gtkwave.sourceforge.net/
 COMMENT=		Electronic waveform viewer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		gperf-[0-9]*:../../devel/gperf
 

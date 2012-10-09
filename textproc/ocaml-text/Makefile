@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/08/15 08:23:10 wiz Exp $
 #
 
 DISTNAME=	ocaml-text-0.6
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/937/
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.139 2012/09/15 10:05:28 obache Exp $
+# $NetBSD: Makefile,v 1.141 2012/10/08 12:19:33 asau Exp $
 
 DISTNAME=	sylpheed-3.2.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	mail news x11
 MASTER_SITES=	http://sylpheed.sraoss.jp/sylpheed/v3.2/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,7 +10,6 @@ MAINTAINER=	ahoka@NetBSD.org
 HOMEPAGE=	http://sylpheed.sraoss.jp/en/
 COMMENT=	Gtk based e-mail and netnews client
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=		sylpheed-claws-[0-9]*
 
 USE_PKGLOCALEDIR=	yes

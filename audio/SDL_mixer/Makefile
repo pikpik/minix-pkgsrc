@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2012/09/11 23:59:21 asau Exp $
+# $NetBSD: Makefile,v 1.47 2012/09/15 10:03:30 obache Exp $
 
 DISTNAME=	SDL_mixer-1.2.12
 PKGREVISION=	5
@@ -28,9 +28,9 @@ INSTALLATION_DIRS=	bin
 
 post-install:
 	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} \
-		${WRKSRC}/build/playmus ${DESTDIR:Q}${PREFIX:Q}/bin
+		${WRKSRC}/build/playmus ${DESTDIR}${PREFIX}/bin
 	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} \
-		${WRKSRC}/build/playwave ${DESTDIR:Q}${PREFIX:Q}/bin
+		${WRKSRC}/build/playwave ${DESTDIR}${PREFIX}/bin
 
 BUILDLINK_API_DEPENDS.SDL+=	SDL>=1.2.10
 

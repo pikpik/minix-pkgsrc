@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/11/09 12:56:00 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2011/01/17 19:44:58 drochner Exp $
 #
 
 .include "Makefile.common"
@@ -7,7 +7,6 @@ PKGREVISION=		2
 PKGCONFIG_OVERRIDE=	theora.pc.in theoradec.pc.in theoraenc.pc.in
 USE_LIBTOOL=		YES
 TEST_TARGET=		check
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # disable doxygen, see libtheora-docs package
 # also, disable transfig, and *tex.

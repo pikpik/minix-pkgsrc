@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/02/16 15:45:10 heinz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:56:25 wiz Exp $
 #
 
 DISTNAME=		mb2md-3.20.pl
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.gz
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://batleth.sapienti-sat.org/projects/mb2md/
 COMMENT=		Converts one or more mboxes to maildirs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-TimeDate-[0-9]*:../../time/p5-TimeDate
 

@@ -1,0 +1,2 @@
+@comment $NetBSD$
+include/harfbuzz/hb-coretext.h

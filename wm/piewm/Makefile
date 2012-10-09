@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/09/29 12:13:02 obache Exp $
+# $NetBSD: Makefile,v 1.13 2007/12/10 11:35:08 obache Exp $
 
 DISTNAME=	piewm-1.04
 CATEGORIES=	wm
@@ -10,8 +10,6 @@ COMMENT=	Minimalist window manager based on tvtwm with pie menus
 
 USE_IMAKE=	yes
 USE_TOOLS+=	lex yacc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"

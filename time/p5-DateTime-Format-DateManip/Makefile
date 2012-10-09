@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 15:28:45 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:18 wiz Exp $
 
 DISTNAME=	DateTime-Format-DateManip-0.04
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,6 @@ DEPENDS+=	p5-DateTime>0:../../time/p5-DateTime
 DEPENDS+=	p5-Date-Manip>0:../../devel/p5-Date-Manip
 
 PERL5_MODULE_TYPE=     Module::Build
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=	#
 
 PERL5_PACKLIST=	auto/DateTime/Format/DateManip/.packlist

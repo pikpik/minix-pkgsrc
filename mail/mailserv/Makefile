@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/03/04 17:57:18 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:56:25 wiz Exp $
 #
 
 DISTNAME=	mailserv
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.barelyfitz.com/projects/mailserv/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.barelyfitz.com/projects/mailserv/
 COMMENT=	WWW interface to several types of mailing list servers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	${PKGNAME_NOREV}

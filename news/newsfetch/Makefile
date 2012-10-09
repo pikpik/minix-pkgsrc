@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/10/29 22:40:23 tnn Exp $
+# $NetBSD: Makefile,v 1.10 2010/03/07 07:28:22 dholland Exp $
 #
 
 DISTNAME=	newsfetch-1.3
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	jay.fink@gmail.com
 HOMEPAGE=	http://www.systhread.net/coding
 COMMENT=	Downloads newsgroup messages in mail file format
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/newsfetch
 

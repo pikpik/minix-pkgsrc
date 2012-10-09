@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/08/30 20:04:53 dholland Exp $
+# $NetBSD: Makefile,v 1.18 2009/12/10 20:38:07 abs Exp $
 #
 
 DISTNAME=	olvwm4.src4
@@ -14,7 +14,6 @@ COMMENT=	Open Look Virtual Window Manager
 DEPENDS+=	xview-clients>=3.2.1:../../x11/xview-clients
 
 LICENSE=		sun-openlook-license
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_IMAKE=	yes

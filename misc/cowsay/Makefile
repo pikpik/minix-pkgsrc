@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/05/18 10:48:34 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:56:42 wiz Exp $
 
 DISTNAME=		cowsay-3.03
 PKGREVISION=		2
@@ -8,8 +8,6 @@ MASTER_SITES=		# ftp://ftp.nog.net/pub/tony/cowsay/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.nog.net/~tony/warez/cowsay.shtml
 COMMENT=		Configurable talking cow
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run
 

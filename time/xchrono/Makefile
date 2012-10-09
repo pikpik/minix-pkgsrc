@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/11/12 13:18:50 obache Exp $
+# $NetBSD: Makefile,v 1.10 2009/07/07 19:52:35 joerg Exp $
 #
 
 DISTNAME=		xchrono
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.shar
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Multi-timezone X11-based clock
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=		yes
 

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.33 2012/09/15 10:05:25 obache Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/08 12:19:05 asau Exp $
 #
 
 DISTNAME=	rssyl-0.33
 PKGNAME=	claws-mail-rssyl-0.33
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Read RSS 1.0, 2.0 and Atom feeds in Claws-Mail
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLIST_SRC+=	PLIST
 

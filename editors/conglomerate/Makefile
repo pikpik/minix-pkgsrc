@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.77 2012/10/03 11:43:31 asau Exp $
+# $NetBSD: Makefile,v 1.78 2012/10/03 21:55:57 wiz Exp $
 #
 
 DISTNAME=	conglomerate-0.9.1
-PKGREVISION=	28
+PKGREVISION=	29
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=conglomerate/}
 

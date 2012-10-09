@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 13:25:27 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:56:32 wiz Exp $
 #
 
 DISTNAME=	Net-validMX-2.2.0
@@ -11,8 +11,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~kmcgrail/Net-validMX-2.2.0/
 COMMENT=	Use DNS and/or regular expressions to verify a email address
 LICENSE=	artistic
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Net-DNS>=0.53:../../net/p5-Net-DNS
 

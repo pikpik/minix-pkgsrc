@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2012/02/06 12:40:59 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2012/03/03 00:13:37 wiz Exp $
 
 DISTNAME=		root_v5.26.00b.source
 PKGNAME=		root-5.26
@@ -10,7 +10,6 @@ MAINTAINER=		drochner@NetBSD.org
 HOMEPAGE=		http://root.cern.ch/
 COMMENT=		OO framework for data analysis and visualisation
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 WRKSRC=			${WRKDIR}/root
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++ #fortran f2c lacks LOC()

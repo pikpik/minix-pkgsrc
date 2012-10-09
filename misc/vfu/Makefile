@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2008/10/02 14:33:58 joerg Exp $
+# $NetBSD: Makefile,v 1.48 2012/10/03 21:56:48 wiz Exp $
 #
 
 DISTNAME=	vfu-3.04
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cade.datamax.bg/vfu/
 COMMENT=	Small, handy, easy-to-use file manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	perl:run

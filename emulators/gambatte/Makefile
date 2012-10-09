@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2012/10/02 17:10:58 tron Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 12:55:12 asau Exp $
 #
 
 DISTNAME=	gambatte_src-0.4.1
 PKGNAME=	${DISTNAME:S/_src//}
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gambatte/}
 

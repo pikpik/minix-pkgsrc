@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/11/10 17:21:36 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2010/02/04 14:42:33 joerg Exp $
 #
 
 DISTNAME=	xmailbox-2.5
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 
 MAINTAINER=	bouyer@NetBSD.org
 COMMENT=	Enhanced xbiff, with pixmap and sound support
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	YES
 

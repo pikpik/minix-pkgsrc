@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2012/10/02 17:10:58 tron Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 12:55:10 asau Exp $
 #
 
 DISTNAME=	blinkensim-2.2
-PKGREVISION=	17
+PKGREVISION=	18
 CATEGORIES=	emulators graphics
 MASTER_SITES=	http://sven.gimp.org/blinkenlights/old/
 

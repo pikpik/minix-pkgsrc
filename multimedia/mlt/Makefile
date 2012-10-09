@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2012/09/22 13:48:19 ryoon Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/08 09:21:09 asau Exp $
 #
 
 DISTNAME=	mlt-0.5.10
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.sourceforge.net/project/mlt/mlt/
 
@@ -10,8 +10,6 @@ MAINTAINER=	abs@NetBSD.org
 HOMEPAGE=	http://www.mltframework.org/twiki/bin/view/MLT/
 COMMENT=	Open source multimedia framework
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config gmake
 USE_LANGUAGES=	c c++

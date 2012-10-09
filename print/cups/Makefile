@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.191 2012/09/18 07:17:28 bouyer Exp $
+# $NetBSD: Makefile,v 1.192 2012/10/03 21:57:17 wiz Exp $
 #
 # The CUPS author is very good about taking back changes into the main
 # CUPS distribution.  The correct place to send patches or bug-fixes is:
@@ -20,8 +20,6 @@ MAINTAINER=	sbd@NetBSD.org
 HOMEPAGE=	http://www.cups.org/
 COMMENT=	Common UNIX Printing System
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	LPRng-[0-9]* LPRng-core-[0-9]*
 

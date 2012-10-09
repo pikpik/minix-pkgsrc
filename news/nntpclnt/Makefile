@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2010/01/31 21:12:20 zafer Exp $
+# $NetBSD: Makefile,v 1.36 2010/03/13 05:20:24 obache Exp $
 
 DISTNAME=	nntpclnt-1.6.1
 PKGREVISION=	6
@@ -16,8 +16,6 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
 CONFLICTS+=	inn-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	inews
 PKG_GROUPS=	news

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.29 2012/09/15 10:05:22 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/08 12:19:04 asau Exp $
 #
 
 DISTNAME=	attachwarner-0.2.24
 PKGNAME=	claws-mail-attachwarner-0.2.24
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Warns if a message mentions an attachment without attaching files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLIST_SRC+=	PLIST
 

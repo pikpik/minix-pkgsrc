@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2012/09/15 10:05:50 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/08 09:21:05 asau Exp $
 #
 
 DISTNAME=	kdenlive-0.7.8
-PKGREVISION=	11
+PKGREVISION=	12
 CATEGORIES=	multimedia
 MASTER_SITES=	http://downloads.sourceforge.net/project/kdenlive/kdenlive/0.7.8/
 
@@ -13,8 +13,6 @@ LICENSE=	gnu-gpl-v2
 
 BUILD_DEPENDS+=	automoc4>=0.9.83:../../devel/automoc4
 DEPENDS+=	dvdauthor>=0.6.18:../../multimedia/dvdauthor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # INSTALL_UNSTRIPPED=no
 # LDFLAGS=-g

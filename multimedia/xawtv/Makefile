@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2011/11/01 06:02:16 sbd Exp $
+# $NetBSD: Makefile,v 1.32 2012/10/03 21:56:51 wiz Exp $
 #
 
 DISTNAME=	xawtv-3.95
@@ -9,8 +9,6 @@ MASTER_SITES=	http://dl.bytesex.org/releases/xawtv/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linux.bytesex.org/xawtv/
 COMMENT=	TV application for Brooktree 848 compatible cards
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=		YES

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2012/10/02 17:11:08 tron Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/06 14:10:44 asau Exp $
 #
 
 DISTNAME=	clutter-cairo-0.8.2
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.clutter-project.org/sources/clutter-cairo/0.8/
 

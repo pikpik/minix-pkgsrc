@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2012/09/15 10:05:35 obache Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 09:57:22 asau Exp $
 #
 
 DISTNAME=	gelemental-1.2.0
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	misc
 MASTER_SITES=	http://www.kdau.com/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kdau.com/projects/gelemental/
 COMMENT=	Periodic table viewer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

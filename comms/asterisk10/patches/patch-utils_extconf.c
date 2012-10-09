@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-utils_extconf.c,v 1.1.1.1 2012/01/15 18:36:21 jnemeth Exp $
 
---- utils/extconf.c.orig	2011-07-14 20:25:31.000000000 +0000
+--- utils/extconf.c.orig	2012-08-01 02:26:09.000000000 +0000
 +++ utils/extconf.c
 @@ -795,6 +795,10 @@ static void  __attribute__((destructor))
  #include "libkern/OSAtomic.h"

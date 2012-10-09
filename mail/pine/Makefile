@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.123 2010/01/17 12:02:25 wiz Exp $
+# $NetBSD: Makefile,v 1.124 2012/08/03 12:59:10 sborrill Exp $
 
 DISTNAME=	pine4.64
 PKGNAME=	pine-4.64
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@netbsd.org
 HOMEPAGE=	http://www.washington.edu/pine/
 COMMENT=	Program for Internet News and E-mail
 LICENSE=	pine-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONF_FILES=    ${PREFIX}/share/examples/pine/pine.conf ${PKG_SYSCONFDIR}/pine.conf
 

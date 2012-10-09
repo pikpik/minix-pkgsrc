@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/01/24 11:49:33 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/15 11:53:29 obache Exp $
 #
 
 DISTNAME=		archivemail-0.9.0
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://archivemail.sourceforge.net/
 COMMENT=		Tool for archiving and compressing old email in mailboxes
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# none
 

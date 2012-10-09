@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/05/26 02:13:24 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/07/07 20:04:53 joerg Exp $
 #
 
 DISTNAME=		saytime_11nov1995
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.acme.com/software/saytime/
 MAINTAINER=		is@NetBSD.org
 HOMEPAGE=		http://www.acme.com/software/saytime/
 COMMENT=		Talking clock
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

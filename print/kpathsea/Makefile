@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/11/07 08:27:35 minskim Exp $
+# $NetBSD: Makefile,v 1.16 2012/07/10 22:32:13 minskim Exp $
 
 DISTNAME=	texlive-20120701-source
 PKGNAME=	kpathsea-6.1.0
@@ -17,8 +17,6 @@ CONFLICTS+=	texlive-tetex<2010
 
 EXTRACT_ELEMENTS=	${DISTNAME}/build-aux \
 			${DISTNAME}/texk/kpathsea
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 INFO_FILES=	yes

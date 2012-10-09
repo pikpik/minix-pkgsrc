@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 13:25:23 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:56:27 wiz Exp $
 
 DISTNAME=	Email-Find-0.10
 PKGNAME=	p5-${DISTNAME}
@@ -16,8 +16,6 @@ DEPENDS+=	p5-MailTools-[0-9]*:../../mail/p5-MailTools
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Email/Find/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

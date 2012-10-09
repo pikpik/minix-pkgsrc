@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/06/04 13:13:14 wiz Exp $
 #
 
 DISTNAME=	tyxml-2.1
 PKGNAME=	ocaml-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://ocsigen.org/download/
 

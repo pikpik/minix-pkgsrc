@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2012/09/15 10:05:45 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 09:57:42 asau Exp $
 #
 
 DISTNAME=		yelp-3.4.2
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		misc gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/yelp/3.4/}
 EXTRACT_SUFX=		.tar.xz
@@ -11,8 +11,6 @@ MAINTAINER=		prlw1@cam.ac.uk
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Mallard capable help browser
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes

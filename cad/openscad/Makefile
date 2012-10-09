@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2012/09/15 10:03:48 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/08 13:25:15 asau Exp $
 #
 
 PKGNAME=	openscad-2011.12
 DISTNAME=	openscad-2011.12.src
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	cad
 MASTER_SITES=	https://github.com/downloads/openscad/openscad/
 
@@ -13,8 +13,6 @@ COMMENT=	OpenSCAD - The Programmers Solid 3D CAD Modeller
 LICENSE=	gnu-gpl-v2
 
 FETCH_USING=	curl
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/openscad-2011.12
 USE_LANGUAGES=	c c++

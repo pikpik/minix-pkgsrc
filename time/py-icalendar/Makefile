@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/01/20 12:08:47 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/09/13 20:12:16 wiz Exp $
 #
 
 DISTNAME=	icalendar-3.1
@@ -12,8 +12,6 @@ COMMENT=	Python parser/generator for iCalendar files, as per RFC2445
 LICENSE=	gnu-lgpl-v2.1
 
 DEPENDS+=	${PYPKGPREFIX}-pytz-[0-9]*:../../time/py-pytz
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"

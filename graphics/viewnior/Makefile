@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2012/10/02 17:11:19 tron Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/06 14:11:24 asau Exp $
 #
 
 DISTNAME=	viewnior-1.1
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	http://cloud.github.com/downloads/xsisqox/Viewnior/
 

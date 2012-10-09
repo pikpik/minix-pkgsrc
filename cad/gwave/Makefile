@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.47 2012/10/02 17:10:38 tron Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/08 13:25:13 asau Exp $
 #
 
 DISTNAME=	gwave2-20090213
 PKGNAME=	${DISTNAME:S/gwave2/gwave/}
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gwave/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://gwave.sourceforge.net
 COMMENT=	Viewer for spice-like simulator output and other analog data
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

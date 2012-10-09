@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2012/08/16 11:50:46 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/09/11 19:46:58 asau Exp $
 #
 
 PKGNAME=	ocaml-zip-${VERSION}
 DISTNAME=	camlzip-${VERSION}
 VERSION=	1.04
+PKGREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/328/
 LICENSE=	gnu-lgpl-v2.1
@@ -16,7 +17,8 @@ BUILD_TARGET=	all
 
 PLIST_VARS+=	opt
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \
-    (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64")
+    (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64") || \
+    (${MACHINE_ARCH} == "arm")
 BUILD_TARGET+=	allopt
 PLIST.opt=	yes
 .endif

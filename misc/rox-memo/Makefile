@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/02/10 19:17:42 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/03/15 11:53:34 obache Exp $
 #
 
 DISTNAME=	Memo-1.9.5
@@ -15,8 +15,6 @@ COMMENT=	Reminds you about things
 DEPENDS+=	rox-lib>=2.0.2nb2:../../devel/rox-lib
 
 USE_TOOLS+=	pax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Memo
 DIST_SUBDIR=	rox

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/04/22 13:44:33 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:57:20 wiz Exp $
 #
 
 DISTNAME=		pslib-0.2.6
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pslib/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://pslib.sourceforge.net/
 COMMENT=		C-library to create PostScript files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		p5-XML-Parser-[0-9]*:../../textproc/p5-XML-Parser
 

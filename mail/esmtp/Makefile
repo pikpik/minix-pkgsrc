@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/01/17 12:02:23 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2010/03/12 13:12:08 obache Exp $
 #
 
 DISTNAME=	esmtp-1.2
@@ -13,8 +13,6 @@ LICENSE=	gnu-gpl-v2
 
 CONFLICTS+=	courier-mta-[0-9]* fastforward>=0.51nb2 postfix-[0-9]*
 CONFLICTS+=	sendmail-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		bison flex

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/08/14 11:36:25 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/09/14 12:19:31 drochner Exp $
 
 DISTNAME=	luatex-beta-0.70.1
 PKGNAME=	${DISTNAME:S/-beta//:S/-source//}
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.luatex.org/
 COMMENT=	Extended version of pdfTeX using Lua
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=no
 
 CONFLICTS+=	web2c<=7.5.7nb3

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2009/05/20 00:58:06 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2009/12/17 20:31:37 abs Exp $
 
 DISTNAME=		felt-3.05.src
 PKGNAME=		felt-3.05
@@ -26,7 +26,6 @@ USE_GNU_READLINE=	YES # uses remove_history() and history_list()
 
 INSTALLATION_DIRS+=	lib/X11/app-defaults share/doc/felt share/examples/felt
 INSTALLATION_DIRS+=	share/examples/felt share/doc/felt
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-extract:
 	${GZCAT} ${DISTDIR}/felt-3.05.ps.gz > ${WRKSRC}/felt.ps

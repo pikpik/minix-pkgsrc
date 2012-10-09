@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.19 2012/09/15 10:06:42 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 12:42:18 asau Exp $
 #
 
 PKGVER=		0.8.4
 PKGNAME=	compiz-fusion-plugins-extra-${PKGVER}
 DISTNAME=	compiz-plugins-extra-${PKGVER}
-PKGREVISION=	14
+PKGREVISION=	15
 CATEGORIES=	wm x11
 MASTER_SITES=	http://releases.compiz.org/${PKGVER}/
 
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://compiz.org/
 COMMENT=	Compositing window manager - extra plugins
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		intltool pkg-config msgfmt gmake

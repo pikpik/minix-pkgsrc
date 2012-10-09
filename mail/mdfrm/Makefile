@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/02/26 10:28:31 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:56:25 wiz Exp $
 #
 
 DISTNAME=	mdfrm.pl
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Print a summary of mail in a Maildir waiting to be read
 
 DEPENDS+=	p5-TimeDate-[0-9]*:../../time/p5-TimeDate
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_TOOLS+=	perl:run

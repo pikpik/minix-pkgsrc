@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/07/01 16:03:02 heinz Exp $
+# $NetBSD: Makefile,v 1.21 2008/08/07 18:23:18 drochner Exp $
 
 DISTNAME=	libmpeg2-0.5.1
 PKGNAME=	libmpeg2-0.5.1
@@ -9,7 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://libmpeg2.sourceforge.net/
 COMMENT=	Library for decoding mpeg-2 and mpeg-1 video streams
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=	yes

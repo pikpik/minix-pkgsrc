@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2012/04/22 08:11:54 taca Exp $
+# $NetBSD: Makefile,v 1.48 2012/04/28 13:52:45 taca Exp $
 
 DISTNAME=	rubygems-1.8.24
 CATEGORIES=	misc ruby
@@ -10,8 +10,6 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.rubygems.org/
 COMMENT=	Ruby standard for publishing and managing third party libraries
 LICENSE=	gnu-gpl-v2 OR ruby-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	rubygems-[0-9]*
 

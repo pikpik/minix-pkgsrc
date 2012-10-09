@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/05/03 09:55:31 obache Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/03 21:58:24 wiz Exp $
 #
 
 DISTNAME=		titrax-1.98
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.alvestrand.no/titrax/TimeTracker.html
 COMMENT=		Little X11 tool to track project times
 LICENSE=		titrax-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=		Do not sell for "real money".
 # XXX Arguably NO_*_ON_CDROM is not necessary, because "real money" seems

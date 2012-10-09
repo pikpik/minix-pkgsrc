@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/06/07 03:24:32 schmonz Exp $
+# $NetBSD: Makefile,v 1.20 2012/03/26 14:04:00 joerg Exp $
 #
 
 DISTNAME=		mess822-0.58
@@ -21,7 +21,6 @@ USE_TOOLS+=		nroff
 # ${PREFIX}, and patch strerr_sys.c to build on Mac OS X.
 DJB_RESTRICTED=		YES
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 EGDIR=			${PREFIX}/share/examples/mess822

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/06/14 07:43:09 sbd Exp $
+# $NetBSD: Makefile,v 1.17 2012/09/15 10:05:51 obache Exp $
 #
 
 DISTNAME=		libassetml-1.2.1
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ofset/}
 MAINTAINER=		reed@reedmedia.net
 HOMEPAGE=		http://www.ofset.org/assetml/
 COMMENT=		Library for sharing image and audio files between projects
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake pkg-config texi2html msgfmt
 USE_PKGLOCALEDIR=	yes

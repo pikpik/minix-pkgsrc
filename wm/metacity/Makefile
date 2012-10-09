@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.102 2012/09/15 10:06:43 obache Exp $
+# $NetBSD: Makefile,v 1.104 2012/10/08 12:42:21 asau Exp $
 #
 
 DISTNAME=	metacity-2.34.1
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	wm x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/metacity/2.34/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/softwaremap/projects/Metacity/
 COMMENT=	GNOME-compliant window manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

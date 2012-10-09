@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2012/10/02 17:12:06 tron Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/08 12:42:21 asau Exp $
 #
 
 DISTNAME=	metisse-0.4.1
-PKGREVISION=	18
+PKGREVISION=	19
 CATEGORIES=	wm x11
 MASTER_SITES=	http://insitu.lri.fr/metisse/download/metisse/
 EXTRACT_SUFX=	.tar.bz2
@@ -13,8 +13,6 @@ COMMENT=	Window manager with novel features
 LICENSE=	gnu-gpl-v3
 
 CONFLICTS+=	fvwm-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config msgfmt perl

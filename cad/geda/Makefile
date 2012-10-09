@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.79 2012/10/02 17:10:38 tron Exp $
+# $NetBSD: Makefile,v 1.81 2012/10/08 13:25:12 asau Exp $
 #
 
 DISTNAME=	geda-gaf-1.6.2
 PKGNAME=	${DISTNAME:S/-gaf-/-/}
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	cad
 MASTER_SITES=	ftp://ftp.geda.seul.org/pub/geda/release/v1.6/${PKGVERSION_NOREV}/ \
 		http://geda.seul.org/release/v1.6/${PKGVERSION_NOREV}/
@@ -12,8 +12,6 @@ MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.gpleda.org/
 COMMENT=	Toolset for automating electronic design
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Older versions of the gEDA suite had each of the tools as a standalone tarball and build.
 # Beginning with 1.6, the build system has been unified.

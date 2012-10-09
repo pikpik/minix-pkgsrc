@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2012/08/18 08:49:42 ryoon Exp $
+# $NetBSD: Makefile,v 1.77 2012/09/22 13:48:19 ryoon Exp $
 
 DISTNAME=	transcode-1.1.5
 PKGREVISION=	15
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tcforge.berlios.de/
 COMMENT=	Command line video-stream processing tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
