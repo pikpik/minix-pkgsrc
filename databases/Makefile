@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.409 2012/10/05 21:09:02 adam Exp $
+# $NetBSD: Makefile,v 1.410 2012/10/07 18:52:16 bad Exp $
 #
 
 COMMENT=	Databases
@@ -127,6 +127,7 @@ SUBDIR+=	p5-DBICx-TestDatabase
 SUBDIR+=	p5-DBIWrapper
 SUBDIR+=	p5-DBIx-Abstract
 SUBDIR+=	p5-DBIx-Class
+SUBDIR+=	p5-DBIx-Class-Candy
 SUBDIR+=	p5-DBIx-Class-Cursor-Cached
 SUBDIR+=	p5-DBIx-Class-DigestColumns
 SUBDIR+=	p5-DBIx-Class-DynamicDefault

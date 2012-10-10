@@ -1,5 +1,6 @@
 @comment $NetBSD$
 share/texmf-dist/fonts/map/dvips/cm/cmtext-bsr-interpolated.map
+share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/black.pk
 share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmbx10.pk
 share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmex10.pk
 share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmmi10.pk
@@ -14,7 +15,7 @@ share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsl10.pk
 share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy10.pk
 share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmsy7.pk
 share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/cmti10.pk
-share/texmf-dist/fonts/pk/ljfour/public/cm/dpi720/cmbx12.pk
+share/texmf-dist/fonts/pk/ljfour/public/cm/dpi600/gray.pk
 share/texmf-dist/fonts/source/public/cm/accent.mf
 share/texmf-dist/fonts/source/public/cm/bigacc.mf
 share/texmf-dist/fonts/source/public/cm/bigdel.mf

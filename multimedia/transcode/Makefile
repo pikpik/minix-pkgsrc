@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.77 2012/09/22 13:48:19 ryoon Exp $
+# $NetBSD: Makefile,v 1.78 2012/10/08 09:21:13 asau Exp $
 
-DISTNAME=	transcode-1.1.5
-PKGREVISION=	15
+DISTNAME=	transcode-1.1.7
 CATEGORIES=	multimedia
-MASTER_SITES=	http://download.berlios.de/tcforge/
+#MASTER_SITES=	http://download.berlios.de/tcforge/
+MASTER_SITES=	http://bitbucket.org/france/transcode-tcforge/downloads/
 EXTRACT_SUFX=	.tar.bz2
+FETCH_USING=	curl
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tcforge.berlios.de/

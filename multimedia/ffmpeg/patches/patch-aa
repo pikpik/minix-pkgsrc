@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-aa,v 1.1 2012/09/14 14:52:35 drochner Exp $
 
 --- libavutil/x86/cpu.c.orig	2011-07-07 20:46:02.000000000 +0000
 +++ libavutil/x86/cpu.c

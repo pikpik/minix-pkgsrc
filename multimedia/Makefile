@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.190 2012/03/19 10:14:43 markd Exp $
+# $NetBSD: Makefile,v 1.192 2012/10/10 13:35:35 drochner Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -26,7 +26,6 @@ SUBDIR+=	dvdstyler
 SUBDIR+=	dvdview
 SUBDIR+=	farsight2
 SUBDIR+=	ffmpeg
-SUBDIR+=	ffmpeg010
 SUBDIR+=	ffmpeg2theora
 SUBDIR+=	ffmpegthumbnailer
 SUBDIR+=	ffplay
@@ -91,6 +90,7 @@ SUBDIR+=	libmpeg2
 SUBDIR+=	libmpeg3
 SUBDIR+=	libnms
 SUBDIR+=	libogg
+SUBDIR+=	libquicktime
 SUBDIR+=	libtheora
 SUBDIR+=	libtheora-docs
 SUBDIR+=	libva

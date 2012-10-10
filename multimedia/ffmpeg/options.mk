@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.23 2012/01/09 17:08:52 drochner Exp $
+# $NetBSD: options.mk,v 1.1 2012/09/14 14:52:34 drochner Exp $
 
 # Global and legacy options
 

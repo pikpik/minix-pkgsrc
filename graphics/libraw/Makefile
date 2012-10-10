@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.18 2012/08/04 14:36:42 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/06 14:11:05 asau Exp $
 #
 
 DISTNAME=		LibRaw-0.14.7
 PKGNAME=		${DISTNAME:tl}
+PKGREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=	http://www.libraw.org/data/
 
@@ -24,5 +25,5 @@ CONFIGURE_ARGS+=	--disable-demosaic-pack-gpl3
 PKGCONFIG_OVERRIDE+=	libraw.pc.in
 PKGCONFIG_OVERRIDE+=	libraw_r.pc.in
 
-.include "../../graphics/lcms/buildlink3.mk"
+.include "../../graphics/lcms2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
