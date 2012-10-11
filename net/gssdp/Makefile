@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2012/10/06 08:12:33 ryoon Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:16 adam Exp $
 #
 
 DISTNAME=	gssdp-0.12.2.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gssdp/0.12/}
 EXTRACT_SUFX=	.tar.xz
@@ -14,12 +14,14 @@ LICENSE=	gnu-lgpl-v2
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	pkg-config gmake
 PKG_DESTDIR_SUPPORT= user-destdir
 
 PKGCONFIG_OVERRIDE+=	gssdp-1.0.pc.in
 
 .include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/gobject-introspection/buildlink3.mk"
+.include "../../lang/vala018/buildlink3.mk"
 .include "../../net/libsoup24/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
