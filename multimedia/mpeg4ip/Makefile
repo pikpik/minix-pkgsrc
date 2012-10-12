@@ -48,5 +48,7 @@ CFLAGS+=		-fno-strict-aliasing
 pre-configure:
 	cd ${WRKSRC} && autoconf
 
+BUILDLINK_TRANSFORM+=	rm:-Werror
+
 .include "../../devel/SDL/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

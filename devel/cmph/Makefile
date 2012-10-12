@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/05/22 11:33:31 alnsn Exp $
+# $NetBSD: Makefile,v 1.3 2012/04/17 17:41:40 joerg Exp $
 
 DISTNAME=	cmph-1.1
 PKGREVISION=	1
@@ -17,5 +17,7 @@ GNU_CONFIGURE=	yes
 
 TEST_DIRS=		tests
 TEST_TARGET=	check
+
+BUILDLINK_TRANSFORM+=	rm:-Werror
 
 .include "../../mk/bsd.pkg.mk"

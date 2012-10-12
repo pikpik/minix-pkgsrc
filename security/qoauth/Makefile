@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/10/07 12:31:13 obache Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/02 17:11:55 tron Exp $
 #
 
 PKGNAME=	qoauth-1.0.1

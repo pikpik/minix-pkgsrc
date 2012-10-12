@@ -65,9 +65,7 @@ pre-configure:
 	cd ${WRKSRC} && autoconf -f
 
 .include "../../mk/compiler.mk"
-.if !empty(PKGSRC_COMPILER:Mclang)
 BUILDLINK_TRANSFORM+=	rm:-Werror
-.endif
 
 .include "../../databases/shared-mime-info/mimedb.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
