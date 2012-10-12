@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.81 2012/10/03 21:55:56 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/08 23:00:57 adam Exp $
 
 .include "dist.mk"
 PKGNAME=	xulrunner-${MOZ_BRANCH}${MOZ_BRANCH_MINOR}
-PKGREVISION=	5
 CATEGORIES=	devel www
 
 MAINTAINER=	tnn@NetBSD.org
@@ -46,6 +45,7 @@ pre-configure:
 
 post-install:
 	# XXX fix the pkg-config files instead
+	mkdir ${DESTDIR}${PREFIX}/lib/xulrunner-sdk/sdk/lib
 	rm -f ${DESTDIR}${PREFIX}/lib/xulrunner/libxpcomglue.a
 	ln -s ${PREFIX}/lib/xulrunner-sdk/sdk/lib/libxpcomglue.a	\
 	  ${DESTDIR}${PREFIX}/lib/xulrunner/libxpcomglue.a
@@ -63,5 +63,7 @@ post-install:
 		${DESTDIR}${PREFIX}/lib/xulrunner
 	${INSTALL_LIB} ${WRKSRC}/mozglue/build/libmozglue.a		\
 		${DESTDIR}${PREFIX}/lib/xulrunner-sdk/sdk/lib
+	ln -s ${PREFIX}/lib/xulrunner/lib \
+	  ${DESTDIR}${PREFIX}/lib/xulrunner-sdk/lib
 
 .include "../../mk/bsd.pkg.mk"
