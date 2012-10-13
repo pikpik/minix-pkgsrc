@@ -20,6 +20,10 @@ USE_TOOLS+=		pkg-config
 
 CONFIGURE_ENV+=		LIB_MAN_SUFFIX=3
 
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--disable-xthreads
+.endif
+
 PKGCONFIG_OVERRIDE+=	xau.pc.in
 
 CPPFLAGS.OSF1+=		-pthread # Required by compiler if including pthread.h
