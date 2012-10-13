@@ -1,11 +1,11 @@
-#	$NetBSD: Makefile,v 1.1.1.1 2011/07/27 09:20:57 cherry Exp $
+#	$NetBSD: Makefile,v 1.2 2012/10/03 12:55:17 asau Exp $
 
 DISTNAME=		ski-0.9.81-l6-i686
 PKGNAME=		ski-0.9.81.6
 CATEGORIES=		emulators
 MASTER_SITES=		# empty
 
-MAINTAINER=		skrll@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.hpl.hp.com/research/linux/ski/
 COMMENT=		The Hewlett-Packard IA-64 instruction set simulator for Linux/x86
 
