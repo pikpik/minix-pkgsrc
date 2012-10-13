@@ -6,7 +6,7 @@ $NetBSD$
  #include "tclPort.h"	/* Portability features for Tcl. */
  #include "tclIO.h"	/* To get Channel type declaration. */
  
-+#ifdef _MINIX
++#ifdef __minix
 +   #define TIOCMGET 0x5415
 +   #define TIOCMSET 0x5418
 +#endif

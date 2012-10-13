@@ -15,4 +15,4 @@ SHA1 (patch-ai) = b0f7818adedd53a123c6ab809bbec28924b3f07b
 SHA1 (patch-aj) = 74d5d7f0d47f39241068c98a316104da94f1cdb9
 SHA1 (patch-generic_tclCmdMZ.c) = 7779f4e1e8696774821c59d51e2afa32fad821d8
 SHA1 (patch-generic_tclPosixStr.c) = 8b1d4408eb2ca28557ed1a03bbe5e348353a9d0b
-SHA1 (patch-unix_tclUnixChan.c) = 1ed943bfa3804fd8f76cf3cd4d7c2025e24d298c
+SHA1 (patch-unix_tclUnixChan.c) = 003809bf270afbb048b694599fd9a4ed001176d8
