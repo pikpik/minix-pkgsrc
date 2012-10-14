@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tcfmgr.orig	2008-05-08 01:16:38.000000000 -0700
-+++ tcfmgr
-@@ -46,7 +46,7 @@ setupMap()
+--- texmf/texconfig/tcfmgr.orig	2010-05-20 18:50:17.000000000 +0000
++++ texmf/texconfig/tcfmgr
+@@ -47,7 +47,7 @@ setupMap()
    esac
    
    case $TFC_MAP in
@@ -11,7 +11,7 @@ $NetBSD$
    esac
  
    case $TFC_MAP in
-@@ -83,7 +83,7 @@ setupTemp()
+@@ -84,7 +84,7 @@ setupTemp()
  setupTexmfConfig()
  {
    case $TFC_TEXMFCONFIG in
@@ -20,7 +20,7 @@ $NetBSD$
      *) (exit 0); return 0;;
    esac
    case $TFC_TEXMFCONFIG in
-@@ -94,7 +94,7 @@ setupTexmfConfig()
+@@ -95,7 +95,7 @@ setupTexmfConfig()
  setupMktexDir()
  {
    case $TFC_MKTEXDIR in
@@ -29,7 +29,7 @@ $NetBSD$
    esac
  
    case $TFC_MKTEXDIR in
-@@ -105,7 +105,7 @@ setupMktexDir()
+@@ -106,7 +106,7 @@ setupMktexDir()
  setupMktexupd()
  {
    case $TFC_MKTEXUPD in
@@ -38,7 +38,7 @@ $NetBSD$
    esac
  
    case $TFC_MKTEXUPD in
-@@ -192,7 +192,7 @@ check_out()
+@@ -193,7 +193,7 @@ check_out()
      case "$orig" in
        "")
            get_info
@@ -47,7 +47,7 @@ $NetBSD$
            ;;
        *)
            test -f "$orig" || orig=
-@@ -307,7 +307,7 @@ check_in()
+@@ -308,7 +308,7 @@ check_in()
  find_file()
  {
    get_info

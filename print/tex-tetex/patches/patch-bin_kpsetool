@@ -1,7 +1,7 @@
 $NetBSD$
 
---- kpsetool.orig	2006-01-17 13:41:51.000000000 -0800
-+++ kpsetool
+--- bin/kpsetool.orig	2012-10-09 17:39:16.000000000 +0000
++++ bin/kpsetool
 @@ -109,10 +109,10 @@ esac
  case "$action" in
    kpsewhich)

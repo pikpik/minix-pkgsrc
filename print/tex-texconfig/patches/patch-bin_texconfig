@@ -1,7 +1,7 @@
 $NetBSD$
 
---- texconfig.orig	2011-01-07 11:45:38.000000000 +0000
-+++ texconfig
+--- bin/texconfig.orig	2012-10-09 17:17:14.000000000 +0000
++++ bin/texconfig
 @@ -91,7 +91,7 @@ echoShowKpseVariable()
    for eskv
    do
@@ -221,3 +221,21 @@ $NetBSD$
                fi
                ;;
              "") echo "$help" >&2; rc=1;;
+@@ -1314,7 +1314,7 @@ Valid PAPER settings:
+       ;;
+ 
+     rehash)
+-      mktexlsr
++      @MKTEXLSR@
+       ;;
+     
+     # 
+@@ -1417,7 +1417,7 @@ Valid PAPER settings:
+ ###############################################################################
+ tcInteractive()
+ {
+-  texconfig-dialog
++  @TEXCONFIG_DIALOG@
+ }
+ 
+ ###############################################################################

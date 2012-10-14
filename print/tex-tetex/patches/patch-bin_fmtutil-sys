@@ -1,7 +1,7 @@
-$NetBSD: patch-af,v 1.1 2009/09/20 03:33:43 minskim Exp $
+$NetBSD$
 
---- fmtutil-sys.orig	2006-01-17 13:41:51.000000000 -0800
-+++ fmtutil-sys
+--- bin/fmtutil-sys.orig	2012-10-09 17:39:16.000000000 +0000
++++ bin/fmtutil-sys
 @@ -19,11 +19,11 @@ unset RUNNING_BSH
  test -n "${ZSH_VERSION+set}" && alias -g '${1+"$@"}'='"$@"'
  export PATH

@@ -1,7 +1,7 @@
 $NetBSD$
 
---- texconfig-sys.orig	2007-09-30 11:06:26.000000000 -0700
-+++ texconfig-sys
+--- bin/texconfig-sys.orig	2012-10-09 17:39:16.000000000 +0000
++++ bin/texconfig-sys
 @@ -21,8 +21,8 @@ export PATH
  # hack around a bug in zsh:
  test -n "${ZSH_VERSION+set}" && alias -g '${1+"$@"}'='"$@"'
