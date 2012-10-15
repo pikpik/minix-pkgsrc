@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2012/02/18 23:50:33 elric Exp $
+# $NetBSD: Makefile,v 1.15 2012/06/15 23:06:08 dholland Exp $
 
 .include "../../x11/xlockmore/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-lite-/}
-PKGREVISION=	1
+PKGREVISION=	2
 COMMENT=	"lite" version of xlockmore
 
 CONFIGURE_ARGS+=	--without-xpm

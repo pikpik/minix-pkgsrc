@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.108 2012/10/06 14:10:42 asau Exp $
+# $NetBSD: Makefile,v 1.111 2012/10/08 21:54:05 wiz Exp $
 
 DISTNAME=	cairo-1.12.2
 PKGREVISION=	2
@@ -37,6 +37,11 @@ PLIST.carbon=		yes
 CPPFLAGS.SunOS+=		-D__EXTENSIONS__ -D_POSIX_PTHREAD_SEMANTICS
 
 TEST_TARGET=			check
+
+# Workaround for FreeBSD (noticed on 9.0):
+.if ${OPSYS} == "FreeBSD"
+BUILDLINK_TRANSFORM+=	rm:-ldl
+.endif
 
 # PR#43928
 .include "../../mk/compiler.mk"
