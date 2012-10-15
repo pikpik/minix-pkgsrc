@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.16 2012/10/08 13:45:48 asau Exp $
+# $NetBSD: package.mk,v 1.17 2012/10/14 17:48:34 minskim Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # TeX Live packages.
@@ -9,7 +9,7 @@
 #	A list of texlua scripts to be installed, relative to ${WRKSRC}.
 #
 # TEX_FORMATS
-#	See ../../print/texlive-tetex/format.mk.
+#	See ../../print/tex-tetex/format.mk.
 #
 # TEX_HYPHEN_DAT
 #	See ../../print/texlive-tetex/hyphen.mk.
