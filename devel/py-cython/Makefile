@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/08/13 14:38:37 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/16 06:48:14 wiz Exp $
 #
 
 DISTNAME=	Cython-0.17.1
@@ -15,6 +15,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c
 PYDISTUTILSPKG= yes
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 PLIST_VARS=	cygdb
@@ -22,12 +23,6 @@ PLIST_VARS=	cygdb
 REPLACE_PYTHON+=	Cython/Debugger/Cygdb.py
 REPLACE_PYTHON+=	Cython/Debugger/libpython.py
 REPLACE_PYTHON+=	cython.py
-
-.include "../../lang/python/pyversion.mk"
-
-.if ${PYVERSSUFFIX} != "2.5"
-PLIST.cygdb=	yes
-.endif
 
 post-extract:
 	cd ${WRKSRC}/bin && ${MV} cython cython${PYVERSSUFFIX}
