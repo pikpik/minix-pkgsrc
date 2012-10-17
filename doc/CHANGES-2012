@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3278 2012/10/16 08:01:26 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.3295 2012/10/16 22:10:58 minskim Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5089,3 +5089,30 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated math/py-scipy to 0.7.2nb1 [wiz 2012-10-16]
 	Updated graphics/py-pyfits to 2.4.0nb1 [wiz 2012-10-16]
 	Updated textproc/p5-Text-vCard to 2.12 [kleink 2012-10-16]
+	Updated converters/latex2rtf to 1.9.19 [shattered 2012-10-16]
+	Added devel/pangox-compat version 0.0.1 [wiz 2012-10-16]
+	Updated graphics/gtkglext to 1.2.0nb18 [wiz 2012-10-16]
+	Updated print/tex-ifluatex to 1.3pl26725 [minskim 2012-10-16]
+	Updated print/tex-ifluatex-doc to 1.3pl26725 [minskim 2012-10-16]
+	Updated print/tex-latexconfig to 2012 [minskim 2012-10-16]
+	Updated print/tex-pdftex to 1.40.11pl27932 [minskim 2012-10-16]
+	Updated print/tex-pdftex-doc to 1.40.11pl27932 [minskim 2012-10-16]
+	Updated print/tex-luatex to 0.70.1pl26689 [minskim 2012-10-16]
+	Updated print/tex-luatex-doc to 0.70.1pl26689 [minskim 2012-10-16]
+	Updated print/tex-latex to 2012 [minskim 2012-10-16]
+	Updated print/tex-latex-doc to 2012 [minskim 2012-10-16]
+	Updated print/tex-latex-bin to 2012 [minskim 2012-10-16]
+	Updated print/tex-latex-bin-doc to 2012 [minskim 2012-10-16]
+	Updated print/tex-pdftex-def to 0.06d [minskim 2012-10-16]
+	Updated print/tex-graphics-doc to 1.0onb3 [minskim 2012-10-16]
+	Updated print/tex-tools to 2012 [minskim 2012-10-16]
+	Updated print/tex-tools-doc to 2012 [minskim 2012-10-16]
+	Updated print/tex-amsmath-doc to 2.13pl26389 [minskim 2012-10-16]
+	Updated print/tex-oberdiek to 2012 [minskim 2012-10-16]
+	Updated print/tex-oberdiek-doc to 2012 [minskim 2012-10-16]
+	Added print/tex-ifplatform version 0.3a [minskim 2012-10-16]
+	Added print/tex-ifplatform-doc version 0.3a [minskim 2012-10-16]
+	Added graphics/tex-auto-pst-pdf version 0.6 [minskim 2012-10-16]
+	Added graphics/tex-auto-pst-pdf-doc version 0.6 [minskim 2012-10-16]
+	Updated graphics/tex-pstricks to 2.33 [minskim 2012-10-16]
+	Updated graphics/tex-pstricks-doc to 2.33 [minskim 2012-10-16]

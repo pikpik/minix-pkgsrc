@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/10/02 23:47:56 asau Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/08 15:18:20 jaapb Exp $
 
 PKGNAME=	ocaml-bz2-${VERSION}
 DISTNAME=	camlbz2-${VERSION}
@@ -15,6 +15,8 @@ LICENSE=	gnu-lgpl-v2.1
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 MAKE_JOBS_SAFE=	no
+
+.include "../../mk/bsd.prefs.mk"
 
 PLIST_VARS+=	opt
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \

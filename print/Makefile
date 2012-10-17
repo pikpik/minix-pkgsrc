@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.544 2012/10/13 22:32:56 minskim Exp $
+# $NetBSD: Makefile,v 1.545 2012/10/14 17:52:44 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -416,6 +416,8 @@ SUBDIR+=	tex-ifluatex
 SUBDIR+=	tex-ifluatex-doc
 SUBDIR+=	tex-ifmtarg
 SUBDIR+=	tex-ifmtarg-doc
+SUBDIR+=	tex-ifplatform
+SUBDIR+=	tex-ifplatform-doc
 SUBDIR+=	tex-ifxetex
 SUBDIR+=	tex-ifxetex-doc
 SUBDIR+=	tex-igo

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.635 2012/08/30 07:30:03 jnemeth Exp $
+# $NetBSD: Makefile,v 1.636 2012/09/16 06:39:22 taca Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -444,6 +444,8 @@ SUBDIR+=	tex-a2ping
 SUBDIR+=	tex-a2ping-doc
 SUBDIR+=	tex-asyfig
 SUBDIR+=	tex-asyfig-doc
+SUBDIR+=	tex-auto-pst-pdf
+SUBDIR+=	tex-auto-pst-pdf-doc
 SUBDIR+=	tex-dvipng-doc
 SUBDIR+=	tex-eepic
 SUBDIR+=	tex-eepic-doc
