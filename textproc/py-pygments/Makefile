@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/02/04 12:35:12 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/04/17 17:35:25 drochner Exp $
 #
 
 DISTNAME=	Pygments-1.5
@@ -14,6 +14,8 @@ LICENSE=	2-clause-bsd
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		#none
+
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 .include "../../mk/bsd.prefs.mk"
 
