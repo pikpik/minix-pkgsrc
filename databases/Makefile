@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.410 2012/10/07 18:52:16 bad Exp $
+# $NetBSD: Makefile,v 1.412 2012/10/19 07:56:21 sno Exp $
 #
 
 COMMENT=	Databases
@@ -133,6 +133,7 @@ SUBDIR+=	p5-DBIx-Class-DigestColumns
 SUBDIR+=	p5-DBIx-Class-DynamicDefault
 SUBDIR+=	p5-DBIx-Class-EncodedColumn
 SUBDIR+=	p5-DBIx-Class-Fixtures
+SUBDIR+=	p5-DBIx-Class-Helpers
 SUBDIR+=	p5-DBIx-Class-InflateColumn-IP
 SUBDIR+=	p5-DBIx-Class-IntrospectableM2M
 SUBDIR+=	p5-DBIx-Class-Loader
@@ -150,6 +151,7 @@ SUBDIR+=	p5-DBIx-SearchBuilder
 SUBDIR+=	p5-DBM-Deep
 SUBDIR+=	p5-DB_File
 SUBDIR+=	p5-DB_File-Lock
+SUBDIR+=	p5-Dancer-Plugin-DBIC
 SUBDIR+=	p5-Data-Table
 SUBDIR+=	p5-DublinCore-Record
 SUBDIR+=	p5-Fsdb

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1656 2012/10/16 17:42:31 wiz Exp $
+# $NetBSD: Makefile,v 1.1658 2012/10/19 07:48:28 sno Exp $
 #
 
 COMMENT=	Development utilities
@@ -847,6 +847,7 @@ SUBDIR+=	p5-IPC-SharedCache
 SUBDIR+=	p5-IPC-Signal
 SUBDIR+=	p5-IPC-SysV
 SUBDIR+=	p5-IPC-System-Simple
+SUBDIR+=	p5-Import-Into
 SUBDIR+=	p5-Inline
 SUBDIR+=	p5-InlineX-C2XS
 SUBDIR+=	p5-Internals
@@ -999,6 +1000,7 @@ SUBDIR+=	p5-Package-DeprecationManager
 SUBDIR+=	p5-Package-Generator
 SUBDIR+=	p5-Package-Stash
 SUBDIR+=	p5-Package-Stash-XS
+SUBDIR+=	p5-Package-Variant
 SUBDIR+=	p5-PadWalker
 SUBDIR+=	p5-Parallel-ForkManager
 SUBDIR+=	p5-Parallel-Prefork

@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3312 2012/10/18 19:21:52 prlw1 Exp $
+$NetBSD: CHANGES-2012,v 1.3321 2012/10/19 08:03:08 sno Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5136,3 +5136,12 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated www/typo3_47 to 4.7.5 [taca 2012-10-18]
 	Updated x11/gtk3 to 3.6.1 [prlw1 2012-10-18]
 	Added devel/libwnck3 version 3.4.3 [prlw1 2012-10-18]
+	Updated filesystems/glusterfs to 3.3.1 [manu 2012-10-19]
+	Added math/p5-Math-Prime-Util version 0.11 [sno 2012-10-19]
+	Updated devel/p5-Devel-NYTProf to 4.09 [sno 2012-10-19]
+	Updated devel/p5-Parse-RecDescent to 1.967.9 [sno 2012-10-19]
+	Added devel/p5-Import-Into version 1.001000 [sno 2012-10-19]
+	Added devel/p5-Package-Variant version 1.001002 [sno 2012-10-19]
+	Added databases/p5-DBIx-Class-Helpers version 2.015001 [sno 2012-10-19]
+	Added databases/p5-Dancer-Plugin-DBIC version 0.1601 [sno 2012-10-19]
+	Updated databases/p5-SQL-Translator to 0.11016 [sno 2012-10-19]
