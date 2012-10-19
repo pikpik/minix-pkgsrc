@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1 2012/08/23 13:44:49 prlw1 Exp $
+@comment $NetBSD$
 bin/peas-demo
 include/libpeas-1.0/libpeas-gtk/peas-gtk-configurable.h
 include/libpeas-1.0/libpeas-gtk/peas-gtk-plugin-manager-view.h
@@ -86,6 +86,7 @@ share/locale/hu/LC_MESSAGES/libpeas.mo
 share/locale/id/LC_MESSAGES/libpeas.mo
 share/locale/it/LC_MESSAGES/libpeas.mo
 share/locale/ja/LC_MESSAGES/libpeas.mo
+share/locale/kn/LC_MESSAGES/libpeas.mo
 share/locale/ko/LC_MESSAGES/libpeas.mo
 share/locale/lt/LC_MESSAGES/libpeas.mo
 share/locale/lv/LC_MESSAGES/libpeas.mo
