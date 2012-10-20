@@ -28,8 +28,6 @@ BUILDLINK_DEPMETHOD.libXt?=	build # only for configure
 CONFIGURE_ARGS+=	--enable-xcb
 PLIST.xcb=		yes
 .  include "../../x11/libxcb/buildlink3.mk"
-.  else
-CONFIGURE_ARGS+=	--disable-xcb
 .  endif
 
 .else
