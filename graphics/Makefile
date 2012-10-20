@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.636 2012/09/16 06:39:22 taca Exp $
+# $NetBSD: Makefile,v 1.637 2012/10/16 22:10:58 minskim Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -324,8 +324,6 @@ SUBDIR+=	p5-GDGraph
 SUBDIR+=	p5-GDGraph-boxplot
 SUBDIR+=	p5-GDTextUtil
 SUBDIR+=	p5-GIFgraph
-SUBDIR+=	p5-Gdk-Imlib
-SUBDIR+=	p5-Gdk-Pixbuf
 SUBDIR+=	p5-Gnome2-Canvas
 SUBDIR+=	p5-GraphViz
 SUBDIR+=	p5-GraphViz2

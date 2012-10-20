@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.663 2012/10/06 06:00:12 ryoon Exp $
+# $NetBSD: Makefile,v 1.664 2012/10/18 09:43:01 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -280,7 +280,6 @@ SUBDIR+=	p5-Tk
 SUBDIR+=	p5-Wx
 SUBDIR+=	p5-Wx-Perl-ProcessStream
 SUBDIR+=	p5-X11-Protocol
-SUBDIR+=	p5-gtk
 SUBDIR+=	p5-gtk2
 SUBDIR+=	paragui
 SUBDIR+=	pixman

@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/07/25 19:05:51 drochner Exp $
 #
 
-DISTNAME=	distribute-0.6.28
-PKGNAME=	${PYPKGPREFIX}-distribute-0.6.28
+DISTNAME=	distribute-0.6.29
+PKGNAME=	${PYPKGPREFIX}-distribute-0.6.29
 CATEGORIES=	devel
 MASTER_SITES=	http://pypi.python.org/packages/source/d/distribute/
 
