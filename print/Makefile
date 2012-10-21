@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.545 2012/10/14 17:52:44 minskim Exp $
+# $NetBSD: Makefile,v 1.547 2012/10/21 17:48:26 minskim Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -549,6 +549,8 @@ SUBDIR+=	tex-printlen
 SUBDIR+=	tex-printlen-doc
 SUBDIR+=	tex-prosper
 SUBDIR+=	tex-prosper-doc
+SUBDIR+=	tex-psfrag
+SUBDIR+=	tex-psfrag-doc
 SUBDIR+=	tex-pslatex
 SUBDIR+=	tex-pspicture
 SUBDIR+=	tex-pspicture-doc
@@ -661,6 +663,8 @@ SUBDIR+=	tex-ukrhyph
 SUBDIR+=	tex-ukrhyph-doc
 SUBDIR+=	tex-ulem
 SUBDIR+=	tex-ulem-doc
+SUBDIR+=	tex-umlaute
+SUBDIR+=	tex-umlaute-doc
 SUBDIR+=	tex-underscore
 SUBDIR+=	tex-underscore-doc
 SUBDIR+=	tex-url

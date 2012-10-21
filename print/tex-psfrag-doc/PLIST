@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/doc/latex/psfrag/00readme.txt
+share/texmf-dist/doc/latex/psfrag/announce.txt
+share/texmf-dist/doc/latex/psfrag/example.eps
+share/texmf-dist/doc/latex/psfrag/pfgguide.pdf
+share/texmf-dist/doc/latex/psfrag/pfgguide.tex
+share/texmf-dist/doc/latex/psfrag/testfig.eps

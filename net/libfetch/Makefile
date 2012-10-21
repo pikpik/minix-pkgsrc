@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2012/10/09 02:48:04 sbd Exp $
+# $NetBSD: Makefile,v 1.44 2012/10/15 21:27:08 joerg Exp $
 #
 
 DISTNAME=	libfetch-2.34
@@ -22,9 +22,6 @@ MAKE_JOBS_SAFE=		NO
 .include "../../mk/bsd.prefs.mk"
 .if !empty(FETCH_USING:Mfetch)
 CHECK_PERMS=		no
-.endif
-.if ${OPSYS} == "Linux"
-CFLAGS+=	-fPIC
 .endif
 
 INSTALLATION_DIRS=	include lib ${PKGMANDIR}/cat3 ${PKGMANDIR}/man3

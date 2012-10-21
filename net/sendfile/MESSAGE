@@ -1,3 +1,5 @@
+===========================================================================
+$NetBSD$
 To complete installation, you must
 
 - add to /etc/services or equivalent, if missing:
@@ -13,3 +15,4 @@ To complete installation, you must
 
 - Users should add to their .login or .profile:
 	${PREFIX}/bin/check_sendfile
+===========================================================================

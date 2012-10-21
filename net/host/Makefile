@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2010/09/29 12:27:47 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/21 15:49:07 cheusov Exp $
 
 DISTNAME=	host-20040812
+PKGREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.weird.com/pub/local/
+MASTER_SITES=	ftp://ftp.planix.com/pub/Planix/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.weird.com/~woods/projects/host.html
@@ -10,6 +11,8 @@ COMMENT=	Powerful DNS query and testing tool
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${PKGMANDIR}/cat1
 NO_CONFIGURE =	yes
+
+CONFLICTS+=	bind-[0-9]*
 
 USE_BSD_MAKEFILE=	yes
 MAKE_FILE=	Makefile.BSD

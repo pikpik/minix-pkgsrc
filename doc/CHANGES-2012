@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3332 2012/10/20 15:43:08 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.3342 2012/10/21 18:14:44 minskim Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5164,3 +5164,16 @@ Changes to the packages collection and infrastructure in 2012:
 	Removed graphics/p5-Gdk-Pixbuf [wiz 2012-10-20]
 	Removed x11/p5-gtk [wiz 2012-10-20]
 	Updated devel/py-distribute to 0.6.29 [wiz 2012-10-20]
+	Added devel/p5-IO-HTML version 0.04 [wen 2012-10-21]
+	Updated www/p5-HTTP-Message to 6.06 [wen 2012-10-21]
+	Removed comms/gscmxx [wiz 2012-10-21]
+	Updated fonts/terminus-font to 4.38 [cheusov 2012-10-21]
+	Updated misc/tmux to 1.7 [wen 2012-10-21]
+	Added print/tex-umlaute version 2.1 [minskim 2012-10-21]
+	Added print/tex-umlaute-doc version 2.1 [minskim 2012-10-21]
+	Added print/tex-psfrag version 3.04 [minskim 2012-10-21]
+	Added print/tex-psfrag-doc version 3.04 [minskim 2012-10-21]
+	Updated print/teTeX3-texmf to 3.0nb38 [minskim 2012-10-21]
+	Added audio/freeswitch-sounds-en version 1.0.22 [darcy 2012-10-21]
+	Added audio/freeswitch-sounds-fr version 1.0.18 [darcy 2012-10-21]
+	Added audio/freeswitch-sounds-ru version 1.0.13 [darcy 2012-10-21]

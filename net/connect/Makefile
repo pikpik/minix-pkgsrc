@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2008/05/25 14:45:17 tron Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/21 17:52:31 cheusov Exp $
 
 DISTNAME=	connect
 PKGNAME=	${DISTNAME}-1.95
+PKGREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	http://zippo.taiyo.co.jp/~gotoh/ssh/
 EXTRACT_SUFX=	.c
@@ -9,6 +10,9 @@ EXTRACT_SUFX=	.c
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://zippo.taiyo.co.jp/~gotoh/ssh/connect.html
 COMMENT=	Open a TCP connection using a SOCKS4/5 or HTTP proxy server
+LICENSE=	gnu-gpl-v2
+
+CONFLICTS=	azara-[0-9]*
 
 EXTRACT_ONLY=	# empty
 DIST_SUBDIR=	${PKGNAME_NOREV}
@@ -21,8 +25,8 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 
 do-build:
 	${MKDIR} ${WRKSRC}
-	${LINK.c} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} -o ${WRKSRC}/connect ${LIBS}
-	${EGREP} '^ \*(| .*)$$' ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES} | \
+	${LINK.c} ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES:Q} -o ${WRKSRC}/connect ${LIBS}
+	${EGREP} '^ \*(| .*)$$' ${DISTDIR}/${DIST_SUBDIR}/${DISTFILES:Q} | \
 	${CUT} -c 4- >${WRKSRC}/README
 
 do-install:
