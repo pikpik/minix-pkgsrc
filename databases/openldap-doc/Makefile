@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/08/06 13:33:38 adam Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/02 21:25:23 asau Exp $
 
 .include "../../databases/openldap/Makefile.version"
 
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/OpenLDAP/openldap-release/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ghen@NetBSD.org
+MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.openldap.org/
 COMMENT=	Lightweight Directory Access Protocol documentation
 LICENSE=	modified-bsd

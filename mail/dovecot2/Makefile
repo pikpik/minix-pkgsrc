@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.29 2012/10/01 07:10:14 ghen Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/08 12:19:08 asau Exp $
 
 DISTNAME=	dovecot-2.1.10
 CATEGORIES=	mail
 MASTER_SITES=	http://www.dovecot.org/releases/2.1/
 
-MAINTAINER=	ghen@NetBSD.org
+MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.dovecot.org/
 COMMENT=	Secure IMAP and POP3 server
 LICENSE=	mit AND gnu-lgpl-v2.1 AND modified-bsd

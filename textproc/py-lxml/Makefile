@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/06/14 07:44:41 sbd Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/21 21:34:42 wiz Exp $
 #
 
 DISTNAME=	lxml-3.0.1
@@ -14,6 +14,7 @@ LICENSE=	modified-bsd
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
+TEST_TARGET=	test_inplace
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 .include "../../lang/python/egg.mk"

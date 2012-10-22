@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.23 2010/02/04 16:15:14 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/08 09:57:15 asau Exp $
 #
 
-DISTNAME=		Addresses-0.4.6
-PKGREVISION=		8
+DISTNAME=		Addresses-0.4.8
 CATEGORIES=		misc gnustep
-MASTER_SITES=		http://giesler.biz/bjoern/downloads/
+MASTER_SITES=		http://savannah.nongnu.org/download/gap/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://giesler.biz/bjoern/en/sw_addr.html
