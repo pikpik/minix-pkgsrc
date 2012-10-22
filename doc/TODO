@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11619 2012/10/21 13:01:17 cheusov Exp $
+$NetBSD: TODO,v 1.11626 2012/10/21 21:26:19 wiz Exp $
 
 Suggested new packages
 ======================
@@ -380,7 +380,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o amsn-0.98.4
 	o angband-3.2
 	o anjuta-2.32.1.1 [GNOME 2.32]
-	o anjuta-3.6.0
+	o anjuta-3.6.1
 	o anjuta-extras-2.32.1.1 [GNOME 2.32]
 	o anope-1.8.7
 	o antiright-8.6
@@ -896,8 +896,8 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o modular-xorg-server-1.13.0
 	o molden-4.8 [after which PR 40252 can be closed]
 	o monit-5.1.1
-	o mono-2.11.4
 	o moserial-2.30.0 [GNOME 2.30]
+	o mosh-1.2.3
 	o mousetweaks-2.32.1 [GNOME 2.32]
 	o mousetweaks-3.6.0
 	o mp3diags-1.0.11
@@ -1253,7 +1253,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o wxRemind-101
 	o wyrd-1.4.4 [pkg/43792]
 	o wyrd-1.4.5
-	o x264-devel-20121013
+	o x264-devel-20121020
 	o xanalyser-1.30
 	o xaric-0.13.2
 	o xbindkeys-1.8.5
