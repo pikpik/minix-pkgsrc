@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/03/11 10:20:07 zafer Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/02 23:48:13 asau Exp $
 
 DISTNAME=	WMmp-0.10.0
 CATEGORIES=	audio
@@ -14,5 +14,4 @@ GNU_CONFIGURE=	yes
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

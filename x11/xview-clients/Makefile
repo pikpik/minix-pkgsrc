@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2010/04/27 22:08:42 dholland Exp $
+# $NetBSD: Makefile,v 1.35 2012/06/15 23:06:09 dholland Exp $
 
 DISTNAME=		xview3.2p1-X11R6
 PKGNAME=		xview-clients-3.2.1
@@ -31,6 +31,5 @@ SUBST_SED.xvc=		-e "s,@PREFIX@,${PREFIX},g"
 SUBST_SED.xvc+=		-e "s,@X11BASE@,${X11BASE},g"
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xview-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

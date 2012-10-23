@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/09/10 19:33:05 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 18:13:21 wiz Exp $
 #
 
 DISTNAME=	xeyes-1.1.1
@@ -22,6 +22,4 @@ CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

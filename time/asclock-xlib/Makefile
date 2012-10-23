@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:38 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/08 13:04:16 asau Exp $
 #
 
 DISTNAME=	asclock-xlib-2.0.11
@@ -34,5 +34,4 @@ post-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

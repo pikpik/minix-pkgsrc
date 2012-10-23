@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/04/22 13:44:54 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 12:42:17 asau Exp $
 
 DISTNAME=	amaterus-0.34.1
 PKGREVISION=	6
@@ -19,6 +19,5 @@ post-install:
 .include "../../textproc/libxml/buildlink3.mk"
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2010/12/30 08:33:47 obache Exp $
+# $NetBSD: Makefile,v 1.32 2012/09/11 20:32:14 asau Exp $
 
 DISTNAME=	RasMol_2.7.3
 PKGNAME=	rasmol-2.7.3
@@ -59,5 +59,4 @@ post-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXi/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

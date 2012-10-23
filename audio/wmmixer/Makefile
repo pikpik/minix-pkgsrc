@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/06/20 01:09:08 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/02 23:48:12 asau Exp $
 #
 
 DISTNAME=	wmmixer-1.0-beta1
@@ -24,6 +24,5 @@ pre-build:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

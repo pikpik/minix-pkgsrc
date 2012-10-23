@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/06/03 18:11:57 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/07/29 19:48:35 wiz Exp $
 #
 
 DISTNAME=	xdpyinfo-1.3.0
@@ -26,5 +26,4 @@ USE_TOOLS+=	pkg-config
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86misc/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

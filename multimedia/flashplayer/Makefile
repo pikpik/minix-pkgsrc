@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/02/11 20:01:50 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 09:21:00 asau Exp $
 #
 
 .include "../../multimedia/libflash/Makefile.common"
@@ -22,5 +22,4 @@ INSTALLATION_DIRS+=	bin
 
 .include "../../multimedia/libflash/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

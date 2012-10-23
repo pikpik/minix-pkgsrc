@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/02/16 13:48:03 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/08 12:42:21 asau Exp $
 #
 
 DISTNAME=	larswm-7.5.3
@@ -39,5 +39,4 @@ post-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

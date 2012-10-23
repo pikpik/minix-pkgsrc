@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/08/30 09:42:41 obache Exp $
 #
 
 DISTNAME=	libfakekey-0.1
@@ -20,5 +20,4 @@ PKGCONFIG_OVERRIDE+=	libfakekey.pc.in
 
 .include "../../x11/libXtst/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

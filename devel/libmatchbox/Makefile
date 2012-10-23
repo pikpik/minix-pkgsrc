@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2011/01/13 13:36:14 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2011/11/01 06:00:59 sbd Exp $
 #
 
 DISTNAME=	libmatchbox-1.9
@@ -21,6 +21,5 @@ USE_TOOLS+=	pkg-config
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

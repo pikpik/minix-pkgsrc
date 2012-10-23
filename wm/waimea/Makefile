@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/10/03 21:58:25 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/08 12:42:24 asau Exp $
 #
 
 DISTNAME=	waimea-0.4.0
@@ -27,7 +27,6 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .else
 .  if !exists(${X11BASE}/include/X11/extensions/Xinerama.h)
 CONFIGURE_ARGS+=	--disable-xinerama

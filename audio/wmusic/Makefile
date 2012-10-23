@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/06/04 09:29:54 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/02 23:48:13 asau Exp $
 
 DISTNAME=	wmusic-1.5.0
 PKGREVISION=	5
@@ -23,5 +23,4 @@ do-install:
 .include "../../audio/xmms/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

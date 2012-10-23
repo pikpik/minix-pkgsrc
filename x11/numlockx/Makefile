@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2007/02/20 01:04:27 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2009/07/07 18:10:38 joerg Exp $
 #
 
 DISTNAME=		numlockx-1.1
@@ -29,5 +29,4 @@ CONFIGURE_ARGS+=	--x-libraries=${BUILDLINK_PREFIX.libX11:Q}/lib${LIBABISUFFIX:Q}
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXtst/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

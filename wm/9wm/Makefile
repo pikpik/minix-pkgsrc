@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/06/12 02:14:53 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/08 12:42:17 asau Exp $
 
 DISTNAME=		9wm-1.1
 PKGREVISION=		2
@@ -14,6 +14,4 @@ WRKSRC=			${WRKDIR}
 USE_IMAKE=		yes
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

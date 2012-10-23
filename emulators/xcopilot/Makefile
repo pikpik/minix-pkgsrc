@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/06/30 00:07:15 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 12:55:21 asau Exp $
 #
 
 DISTNAME=		xcopilot-0.6.6
@@ -22,5 +22,4 @@ post-extract:
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

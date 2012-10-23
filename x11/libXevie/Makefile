@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/12/25 00:14:42 jmcneill Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 17:41:04 wiz Exp $
 #
 
 DISTNAME=		libXevie-1.0.3
@@ -31,7 +31,6 @@ pre-configure:
 .include "../../x11/evieext/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2011/12/07 17:01:58 drochner Exp $
+# $NetBSD: Makefile,v 1.71 2012/01/12 16:01:46 hans Exp $
 
 PKGVER=		2.3.3
 DISTNAME=	openmotif-${PKGVER}
@@ -121,5 +121,4 @@ post-build:
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

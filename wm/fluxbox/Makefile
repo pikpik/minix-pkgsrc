@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2012/04/17 20:08:06 bsiegert Exp $
+# $NetBSD: Makefile,v 1.57 2012/10/08 12:42:19 asau Exp $
 #
 
 DISTNAME=	fluxbox-1.3.2
@@ -36,5 +36,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

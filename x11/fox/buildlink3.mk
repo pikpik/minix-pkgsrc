@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.24 2012/02/06 12:41:56 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.25 2012/05/07 01:54:07 dholland Exp $
 
 BUILDLINK_TREE+=	fox
 
@@ -20,7 +20,6 @@ BUILDLINK_INCDIRS.fox?=		include/fox-1.6
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .endif # FOX_BUILDLINK3_MK
 
 BUILDLINK_TREE+=	-fox

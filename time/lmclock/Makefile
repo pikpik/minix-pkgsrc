@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/05/30 00:56:11 zafer Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 13:04:20 asau Exp $
 #
 
 DISTNAME=	lmclock-1.2
@@ -16,5 +16,4 @@ post-extract:
 USE_IMAKE=		YES
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

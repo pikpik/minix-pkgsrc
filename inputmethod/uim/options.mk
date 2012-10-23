@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.25 2012/02/18 11:46:14 obache Exp $
+# $NetBSD: options.mk,v 1.26 2012/07/22 06:15:22 obache Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.uim
 PKG_SUPPORTED_OPTIONS=	anthy canna curl eb expat ffi gnome gnome3 gtk gtk3 m17nlib openssl prime sj3 sqlite uim-fep wnn4 xim
@@ -27,7 +27,6 @@ PLIST_VARS+=		anthy curl eb expat ffi gnome gnome3 gtk gtk3 kde kde3 m17nlib ope
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-x
 PLIST.xim=		yes
 .else

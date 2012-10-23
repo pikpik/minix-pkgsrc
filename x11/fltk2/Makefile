@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/11/01 06:02:49 sbd Exp $
+# $NetBSD: Makefile,v 1.10 2011/12/17 00:56:06 marino Exp $
 
 VERS=		6129
 PKGREVISION=	6
@@ -34,6 +34,5 @@ LDFLAGS+=		-lfontconfig -lXrender -lfreetype
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXi/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

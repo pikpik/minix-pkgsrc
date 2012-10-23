@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/11/01 06:02:49 sbd Exp $
+# $NetBSD: Makefile,v 1.31 2012/02/06 12:41:56 wiz Exp $
 #
 
 DISTNAME=	fbdesk-1.4.1
@@ -32,5 +32,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/04/28 13:15:33 obache Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/06 11:54:51 asau Exp $
 #
 
 DISTNAME=	quake2-0.3
@@ -45,7 +45,6 @@ CONFIGURE_ENV+=		ac_cv_header_sys_audioio_h=no
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

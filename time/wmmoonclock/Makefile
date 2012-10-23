@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2010/02/12 00:28:36 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/08 13:04:30 asau Exp $
 
 DISTNAME=	wmMoonClock-1.27
 PKGREVISION=	1
@@ -25,5 +25,4 @@ INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

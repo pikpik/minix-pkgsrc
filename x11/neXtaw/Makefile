@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2008/01/04 01:25:51 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2009/07/07 18:22:37 joerg Exp $
 
 DISTNAME=	neXtaw-0.15.1
 PKGREVISION=	3
@@ -40,5 +40,4 @@ post-install:
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

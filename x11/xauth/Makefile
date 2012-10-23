@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/11/09 19:19:47 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 18:07:30 wiz Exp $
 #
 
 DISTNAME=		xauth-1.0.7
@@ -17,5 +17,4 @@ USE_TOOLS+=		pkg-config
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

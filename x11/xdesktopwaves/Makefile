@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/07/07 17:56:35 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2009/07/22 09:01:55 wiz Exp $
 #
 
 DISTNAME=	xdesktopwaves-1.1
@@ -26,5 +26,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/xdesktopwaves.xpm ${DESTDIR}${PREFIX}/share/pixmaps/
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

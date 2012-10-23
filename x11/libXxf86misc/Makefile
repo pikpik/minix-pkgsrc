@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/01/15 18:29:15 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 17:48:28 wiz Exp $
 #
 
 DISTNAME=		libXxf86misc-1.0.3
@@ -27,7 +27,6 @@ CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 
 .include "../../x11/xproto/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xf86miscproto/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 

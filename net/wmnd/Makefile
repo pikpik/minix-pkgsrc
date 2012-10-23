@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/06/20 01:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2011/03/17 22:12:09 zafer Exp $
 
 DISTNAME=	wmnd-0.4.12
 PKGREVISION=	1
@@ -17,5 +17,4 @@ GNU_CONFIGURE=	YES
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

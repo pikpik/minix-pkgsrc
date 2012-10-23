@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/07/07 17:38:13 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/06/16 03:21:22 dholland Exp $
 
 DISTNAME=	magicpoint-1.09a
 PKGNAME=	xmindpath-1.09a
@@ -38,5 +38,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXtst/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

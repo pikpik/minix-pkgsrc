@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2011/01/13 13:38:23 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/06 14:11:26 asau Exp $
 
 DISTNAME=	xli-2005-02-27
 PKGNAME=	xli-1.17.0
@@ -17,5 +17,4 @@ INSTALLATION_DIRS+=	lib/X11/app-defaults
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/06/03 17:47:14 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/06/09 07:00:49 obache Exp $
 #
 
 DISTNAME=		libXvMC-1.0.7
@@ -31,6 +31,5 @@ CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXv/buildlink3.mk"
 .include "../../x11/videoproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2012/01/03 07:17:01 obache Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/03 12:55:22 asau Exp $
 #
 
 DISTNAME=		xm71020s
@@ -37,6 +37,5 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

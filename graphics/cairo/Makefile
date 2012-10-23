@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.113 2012/10/20 00:55:05 wiz Exp $
+# $NetBSD: Makefile,v 1.115 2012/10/23 07:58:26 wiz Exp $
 
 DISTNAME=	cairo-1.12.6
 CATEGORIES=	graphics

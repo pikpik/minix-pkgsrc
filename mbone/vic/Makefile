@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2012/08/21 21:49:30 marino Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/08 09:25:50 asau Exp $
 
 DISTNAME=	vicsrc-2.8
 PKGNAME=	${DISTNAME:S/src//}
@@ -32,6 +32,5 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/tk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

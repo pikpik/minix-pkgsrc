@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/05/05 18:45:43 zafer Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/02 23:47:57 asau Exp $
 #
 
 DISTNAME=	Mixer.app-1.8.0
@@ -27,6 +27,5 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

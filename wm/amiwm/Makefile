@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/05/19 08:59:36 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/08 12:42:17 asau Exp $
 #
 
 DISTNAME=	amiwm0.20pl48
@@ -39,5 +39,4 @@ INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} \
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

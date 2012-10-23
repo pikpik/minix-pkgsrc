@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/02/06 12:40:27 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/06 14:11:00 asau Exp $
 
 DISTNAME=	ivtools-1.2.8
 PKGREVISION=	1
@@ -40,5 +40,4 @@ pre-install:
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

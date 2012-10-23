@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/07/12 20:44:32 marino Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 13:04:31 asau Exp $
 #
 
 DISTNAME=	xonclock-0.0.9.4
@@ -25,5 +25,4 @@ LDFLAGS.SunOS+=		-lm -lrt
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

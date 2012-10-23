@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/12/10 11:35:08 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/08 12:42:22 asau Exp $
 
 DISTNAME=	piewm-1.04
 CATEGORIES=	wm
@@ -16,6 +16,5 @@ USE_TOOLS+=	lex yacc
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

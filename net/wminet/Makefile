@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/02/11 23:13:17 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2010/02/14 19:25:24 joerg Exp $
 
 DISTNAME=	wmnet-1.2
 PKGNAME=	wminet-1.2
@@ -24,5 +24,4 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

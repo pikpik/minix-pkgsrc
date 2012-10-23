@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/08/21 19:50:53 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/08 13:45:42 asau Exp $
 #
 
 DISTNAME=	mupdf-1.1-source
@@ -34,5 +34,4 @@ post-install:
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/openjpeg/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

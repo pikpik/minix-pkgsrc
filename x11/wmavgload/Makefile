@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2007/02/22 19:27:27 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2009/12/23 19:22:28 abs Exp $
 
 DISTNAME=	wmavgload-0.7.0
 PKGREVISION=	1
@@ -15,5 +15,4 @@ NO_INSTALL_MANPAGES=	YES
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

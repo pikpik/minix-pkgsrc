@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2011/04/05 11:56:34 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2012/02/06 12:41:41 wiz Exp $
 
 DISTNAME=	xnc-5.0.4.src
 PKGNAME=	xnc-5.0.4
@@ -30,6 +30,5 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

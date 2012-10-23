@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2012/03/07 19:10:30 hans Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/03 12:55:18 asau Exp $
 
 SNESVER=		1.43
 DISTNAME=		snes9x-${SNESVER}-src
@@ -92,7 +92,6 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

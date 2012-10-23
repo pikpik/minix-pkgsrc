@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/02/19 21:21:20 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2010/10/31 23:38:32 wiz Exp $
 
 DISTNAME=		torsmo-0.18
 PKGREVISION=		2
@@ -45,5 +45,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

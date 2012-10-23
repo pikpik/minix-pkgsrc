@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/02/22 19:23:42 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/06/20 01:09:37 joerg Exp $
 #
 
 DISTNAME=	wmmemmon-1.0.1
@@ -19,5 +19,4 @@ post-extract:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

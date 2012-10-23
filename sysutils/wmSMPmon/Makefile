@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/07/03 11:23:16 obache Exp $
+# $NetBSD: Makefile,v 1.10 2010/01/27 20:41:16 joerg Exp $
 
 DISTNAME=	wmSMPmon-2.3
 PKGREVISION=	1
@@ -21,5 +21,4 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/08/20 17:59:10 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2011/01/21 23:17:12 wiz Exp $
 #
 
 DISTNAME=		libXp-1.0.1
@@ -36,6 +36,5 @@ CONFIGURE_ARGS+=	XPRINT_CFLAGS=${XPRINT_CFLAGS:Q} \
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/printproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

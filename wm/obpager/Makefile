@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/07/29 19:30:35 tnn Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/08 12:42:22 asau Exp $
 #
 
 DISTNAME=	obpager-1.8
@@ -24,5 +24,4 @@ do-install:
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/08/21 23:49:22 marino Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/06 14:10:45 asau Exp $
 #
 
 DISTNAME=		cqcam-0.91
@@ -38,5 +38,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/tk/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

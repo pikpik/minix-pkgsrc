@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2007/02/22 19:01:28 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2008/09/16 12:42:03 joerg Exp $
 
 DISTNAME=	xteddy-1.1
 PKGREVISION=	1
@@ -21,5 +21,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

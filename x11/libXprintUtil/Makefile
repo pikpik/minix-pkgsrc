@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/04/12 15:05:24 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2008/05/24 21:45:19 tnn Exp $
 #
 
 DISTNAME=		libXprintUtil-1.0.1
@@ -21,6 +21,5 @@ PKGCONFIG_OVERRIDE+=	xprintutil.pc.in
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

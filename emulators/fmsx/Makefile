@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2012/07/18 23:23:20 marino Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/03 12:55:12 asau Exp $
 
 DISTNAME=	fMSX351
 PKGNAME=	fmsx-3.5.1
@@ -62,6 +62,5 @@ do-install:
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

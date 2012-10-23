@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2010/03/21 16:29:39 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/06 11:55:00 asau Exp $
 
 DISTNAME=	xfreecell-1.0.5b
 PKGREVISION=	2
@@ -22,5 +22,4 @@ NO_CONFIGURE=	YES
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

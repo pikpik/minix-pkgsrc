@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/01/24 23:15:58 marino Exp $
+# $NetBSD: Makefile,v 1.21 2012/09/22 13:48:21 ryoon Exp $
 #
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -12,6 +12,5 @@ CONFIGURE_ARGS+=	--without-gtk2
 LDFLAGS.DragonFly=	-lXt -lX11
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

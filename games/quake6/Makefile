@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2008/06/20 01:09:20 joerg Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/06 11:54:52 asau Exp $
 
 DISTNAME=	quake-v6-bsd-kame
 PKGNAME=	quake6-0.0
@@ -40,6 +40,5 @@ CONFIGURE_ARGS+=	--x-includes=${X11BASE:Q}/include
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

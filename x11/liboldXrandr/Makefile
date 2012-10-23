@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/02/22 19:27:25 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2007/05/30 01:22:12 schmonz Exp $
 #
 
 DISTNAME=		libXrandr-1.0.2
@@ -28,6 +28,5 @@ BUILDLINK_API_DEPENDS.Xrender+=	Xrender>=0.8
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
 .include "../../x11/randrproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

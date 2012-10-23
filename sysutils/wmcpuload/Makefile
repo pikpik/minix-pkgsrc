@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/01/04 08:00:50 obache Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/20 01:09:37 joerg Exp $
 #
 
 DISTNAME=	wmcpuload-1.0.1
@@ -20,5 +20,4 @@ post-extract:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

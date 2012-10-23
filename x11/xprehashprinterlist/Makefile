@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/06/19 09:39:14 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:19 tnn Exp $
 #
 
 DISTNAME=		xprehashprinterlist-1.0.1
@@ -20,6 +20,5 @@ CONFIGURE_ENV+=		APP_MAN_SUFFIX=1
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXp/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

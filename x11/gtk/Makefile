@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.126 2011/04/22 13:42:06 obache Exp $
+# $NetBSD: Makefile,v 1.127 2012/10/03 21:59:06 wiz Exp $
 
 DISTNAME=		gtk+-1.2.10
 PKGREVISION=		11
@@ -68,5 +68,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXi/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

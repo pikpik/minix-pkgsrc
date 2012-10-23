@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/06/12 02:14:53 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/08 12:42:17 asau Exp $
 #
 
 DISTNAME=	aewm++-1.0.24
@@ -16,5 +16,4 @@ USE_LANGUAGES=	c c++
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

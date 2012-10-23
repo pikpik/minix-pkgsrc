@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2010/02/04 14:42:33 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/08 12:19:35 asau Exp $
 #
 
 DISTNAME=	xmailbox-2.5
@@ -25,5 +25,4 @@ post-install:
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

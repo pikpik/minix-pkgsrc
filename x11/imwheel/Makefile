@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/02/16 18:21:24 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2010/02/26 10:28:35 wiz Exp $
 #
 
 DISTNAME=	imwheel-0.9.9
@@ -20,5 +20,4 @@ CONFIGURE_ARGS+=	--disable-gpm
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXtst/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
