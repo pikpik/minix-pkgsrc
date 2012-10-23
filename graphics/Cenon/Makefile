@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2010/01/24 13:26:10 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/06 14:10:39 asau Exp $
 #
 
-DISTNAME=		Cenon-3.83
-PKGREVISION=		3
+DISTNAME=		Cenon-3.9.6
 CATEGORIES=		graphics cad gnustep
 MASTER_SITES=		http://www.vhf-group.com/vhfInterservice/download/source/
 EXTRACT_SUFX=		.tar.bz2
@@ -16,7 +15,6 @@ USE_LANGUAGES=		objc
 
 WRKSRC=			${WRKDIR}/Cenon
 NO_CONFIGURE=		yes
-MAKE_JOBS_SAFE=		no
 
 INSTALLATION_DIRS+=	share/doc/Cenon
 INSTALLATION_DIRS+=	share/GNUstep/Library/Cenon
