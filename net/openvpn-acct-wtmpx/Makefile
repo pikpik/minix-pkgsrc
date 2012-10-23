@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/07/14 04:46:18 manu Exp $
+# $NetBSD: Makefile,v 1.2 2011/11/23 23:31:22 joerg Exp $
 #
 
 DISTNAME=	openvpn-acct-wtmpx-20091110
@@ -12,8 +12,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	manu@NetBSD.org
 HOMEPAGE=	http://ftp.espci.fr/pub/openvpn-acct-wtmpx/
 COMMENT=	Log OpenVPN logins and logouts to wtmpx
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 USE_TOOLS+=	install

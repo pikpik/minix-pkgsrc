@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2012/10/02 17:11:48 tron Exp $
+# $NetBSD: Makefile,v 1.75 2012/10/08 23:02:17 adam Exp $
 
 DISTNAME=	mtr-0.82
 PKGREVISION=	6
@@ -11,7 +11,6 @@ COMMENT=	Traceroute and ping in a single graphical network diagnostic tool
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake

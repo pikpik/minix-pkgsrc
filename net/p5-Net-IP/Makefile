@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/08/14 14:14:44 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:57:02 wiz Exp $
 #
 
 DISTNAME=	Net-IP-1.25
@@ -13,7 +13,6 @@ COMMENT=	Perl extension for manipulating IPv4/IPv6 addresses
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Net/IP/.packlist
 

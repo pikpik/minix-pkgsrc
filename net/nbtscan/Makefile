@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2009/01/25 13:40:27 obache Exp $
+# $NetBSD: Makefile,v 1.13 2009/01/25 14:21:13 obache Exp $
 #
 
 DISTNAME=	nbtscan-1.5.1
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.inetcat.net/software/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.inetcat.net/software/nbtscan.html
 COMMENT=	NetBIOS name network scanner
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

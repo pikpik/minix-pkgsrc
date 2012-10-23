@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.119 2012/10/10 11:44:30 drochner Exp $
+# $NetBSD: Makefile,v 1.120 2012/10/12 15:37:12 adam Exp $
 
 DISTNAME=	gnutls-3.0.24
 CATEGORIES=	security devel
@@ -13,7 +13,6 @@ COMMENT=	GNU Transport Layer Security library
 LICENSE=	gnu-gpl-v3 AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

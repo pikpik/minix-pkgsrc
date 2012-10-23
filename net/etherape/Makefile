@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.70 2012/10/02 17:11:45 tron Exp $
+# $NetBSD: Makefile,v 1.71 2012/10/08 23:02:15 adam Exp $
 
 DISTNAME=	etherape-0.9.12
 PKGREVISION=	11
@@ -22,8 +22,6 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 EGDIR=		${PREFIX}/share/examples/etherape
 
 CONF_FILES=	${EGDIR}/services ${PKG_SYSCONFDIR}/services
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}

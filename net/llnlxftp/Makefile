@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/02/11 22:05:43 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2011/12/09 14:36:32 drochner Exp $
 #
 
 DISTNAME=		llnlxftp2.1
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		tor@stormwall.org
 HOMEPAGE=		http://www.llnl.gov/icc/sdd/img/xftp.html
 COMMENT=		Motif FTP client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/llnlxftp2.1/sources

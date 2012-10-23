@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 14:14:48 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:57:07 wiz Exp $
 #
 
 DISTNAME=	RT-Client-REST-0.41
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/RT-Client-REST/
 COMMENT=	Perl 5 module to talk to RT using REST protocol
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/RT/Client/REST/.packlist

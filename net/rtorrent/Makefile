@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2012/03/07 00:19:08 elric Exp $
+# $NetBSD: Makefile,v 1.50 2012/05/16 17:42:37 tron Exp $
 
 DISTNAME=	rtorrent-0.9.2
 CATEGORIES=	net
@@ -8,8 +8,6 @@ OWNER=		tron@NetBSD.org
 HOMEPAGE=	http://libtorrent.rakshasa.no/
 COMMENT=	Ncurses based torrent client with support for sessions
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

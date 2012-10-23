@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.206 2012/05/31 11:58:37 imil Exp $
+# $NetBSD: Makefile,v 1.207 2012/10/03 21:57:25 wiz Exp $
 
 DISTNAME=		openssh-5.8p2
 PKGNAME=		openssh-5.8.2
@@ -23,8 +23,6 @@ CONFLICTS+=		ssh-[0-9]* ssh6-[0-9]*
 CONFLICTS+=		ssh2-[0-9]* ssh2-nox11-[0-9]*
 CONFLICTS+=		openssh+gssapi-[0-9]*
 CONFLICTS+=		lsh>2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl
 

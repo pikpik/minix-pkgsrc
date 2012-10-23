@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/23 13:35:30 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2010/01/17 12:02:35 wiz Exp $
 #
 
 DISTNAME=	proxytunnel-1.9.0
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://proxytunnel.sourceforge.net/
 COMMENT=	Connect stdin/stdout to a remote host through a standard HTTPS proxy
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

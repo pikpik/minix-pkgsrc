@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 14:14:44 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:57:02 wiz Exp $
 #
 
 DISTNAME=	Net-Google-Code-0.19
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-Google-Code/
 COMMENT=	Perl 5 simple client library for google code
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Net/Google/Code/.packlist

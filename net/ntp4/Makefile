@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2012/04/08 16:58:05 bsiegert Exp $
+# $NetBSD: Makefile,v 1.70 2012/10/03 21:56:57 wiz Exp $
 #
 
 DISTNAME=	ntp-4.2.4p8
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.ntp.org/
 COMMENT=	Network Time Protocol Version 4
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	openntpd-[0-9]*
 

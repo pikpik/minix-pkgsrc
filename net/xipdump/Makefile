@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2010/02/11 23:18:29 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2012/03/31 08:52:31 dholland Exp $
 #
 
 DISTNAME=	xipdump-1.5.4
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.lse.epita.fr/twiki/bin/view/Projects/XipDump
 COMMENT=	Displays IP packets using X Window System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLIST_SRC=	${WRKDIR}/PLIST
 

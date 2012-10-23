@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/06/23 09:21:37 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/03/22 12:30:42 obache Exp $
 #
 
 DISTNAME=		darkstat-3.0.715
@@ -10,8 +10,6 @@ MAINTAINER=		bartosz.kuzma@gmail.com
 HOMEPAGE=		http://unix4lyfe.org/darkstat/
 COMMENT=		Network statistics gatherer
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		darkstat
 

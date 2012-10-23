@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2010/02/19 19:31:59 joerg Exp $
+# $NetBSD: Makefile,v 1.42 2011/07/03 01:36:58 dholland Exp $
 
 DISTNAME=	delegate9.9.1
 PKGNAME=	delegate-9.9.1
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.delegate.org/delegate/
 COMMENT=	General purpose TCP/IP proxy system
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"

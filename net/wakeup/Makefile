@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/20 01:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/02/16 19:34:47 hans Exp $
 #
 
 DISTNAME=	hpwake
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.c.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.berens-partner.de/wann/computer/wol.html
 COMMENT=	Wakeup On LAN client for remote power-up of machines
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gunzip
 USE_BSD_MAKEFILE=	yes

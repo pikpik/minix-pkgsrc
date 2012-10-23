@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.168 2012/10/03 21:57:25 wiz Exp $
+# $NetBSD: Makefile,v 1.169 2012/10/05 09:36:31 wiz Exp $
 
 OPENSSL_SNAPSHOT?=	# empty
 OPENSSL_STABLE?=	# empty
@@ -34,7 +34,6 @@ CONFLICTS=	SSLeay-[0-9]* ssleay-[0-9]*
 CRYPTO=		yes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	p5-Perl4-CoreLibs-[0-9]*:../../devel/p5-Perl4-CoreLibs
 

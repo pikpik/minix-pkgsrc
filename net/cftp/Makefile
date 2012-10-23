@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/05/25 13:16:11 dillo Exp $
+# $NetBSD: Makefile,v 1.18 2009/12/31 08:37:31 wiz Exp $
 #
 
 DISTNAME=	cftp-0.12
@@ -10,8 +10,6 @@ MASTER_SITES=	http://ftp.giga.or.at/pub/nih/cftp/ \
 OWNER=		dillo@NetBSD.org
 HOMEPAGE=	http://ftp.giga.or.at/pub/nih/cftp/
 COMMENT=	Comfortable FTP, a full screen ftp client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # bin/cftp
 CONFLICTS=	py[0-9]*-twisted-[0-9]*

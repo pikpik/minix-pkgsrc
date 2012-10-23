@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2011/11/11 23:43:43 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2012/03/26 11:56:12 obache Exp $
 
 DISTNAME=	gated-3-5-11
 PKGNAME=	gated-3.5.11
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gated.org/
 COMMENT=	Routing protocol daemon
 LICENSE=	gated-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SPECIAL_PERMS+=		bin/gdc ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 4510 \
 			bin/ospf_monitor ${SETUID_ROOT_PERMS}

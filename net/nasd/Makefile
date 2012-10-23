@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/03/21 02:33:14 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:56:57 wiz Exp $
 
 DISTNAME=		repackaged-${PKGNAME_NOREV}
 PKGNAME=		nasd-1.3
@@ -11,8 +11,6 @@ HOMEPAGE=		http://www.pdl.cmu.edu/NASD/Downloads/NASDcode.html
 COMMENT=		Prototype storage implementation
 
 ONLY_FOR_PLATFORM=	NetBSD-*-* SunOS-*-* Linux-*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=		yes
 USE_TOOLS+=		perl makedepend

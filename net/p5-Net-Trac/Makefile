@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 14:14:47 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:57:05 wiz Exp $
 #
 
 DISTNAME=	Net-Trac-0.15
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-Trac/
 COMMENT=	Perl 5 module to interact with a remote Trac instance
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Net/Trac/.packlist

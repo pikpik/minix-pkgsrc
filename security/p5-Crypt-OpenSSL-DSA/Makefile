@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/10/03 21:57:28 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/20 14:25:58 wen Exp $
 #
 
 DISTNAME=		Crypt-OpenSSL-DSA-0.14
@@ -11,8 +11,6 @@ MAINTAINER=		heinz@NetBSD.org
 HOMEPAGE=		http://perl-openssl.sourceforge.net/
 COMMENT=		Perl5 wrapper module for the OpenSSL DSA functions
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Crypt/OpenSSL/DSA/.packlist
 

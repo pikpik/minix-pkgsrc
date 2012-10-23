@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/03/31 18:37:34 agc Exp $
+# $NetBSD: Makefile,v 1.4 2011/04/22 13:41:58 obache Exp $
 #
 
 DISTNAME=	pakchois-0.4
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.manyfish.co.uk/pakchois/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.manyfish.co.uk/pakchois/
 COMMENT=	PKCS\#11 wrapper library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

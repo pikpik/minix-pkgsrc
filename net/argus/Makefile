@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/02/19 19:08:13 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:56:52 wiz Exp $
 
 DISTNAME=	argus-3.6
 PKGREVISION=	2
@@ -10,8 +10,6 @@ MAINTAINER=	argus@tcp4me.com
 HOMEPAGE=	http://argus.tcp4me.com/
 COMMENT=	System and Network Monitoring Application
 LICENSE=	artistic
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=	VARBASE
 

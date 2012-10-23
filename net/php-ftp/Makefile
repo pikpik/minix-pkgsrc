@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2010/01/17 12:02:34 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/02/27 03:35:12 taca Exp $
 
 MODNAME=		ftp
 CATEGORIES+=		net
 COMMENT=		PHP extension for FTP access
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-ftp-[0-9]*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 14:14:46 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:04 wiz Exp $
 #
 
 DISTNAME=	Net-SNMP-Mixin-0.12
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Net-SNMP-Mixin/
 COMMENT=	Perl 5 module providing a mixin framework for Net::SNMP
 
 MAKE_ENV+=		PERL_MM_USE_DEFAULT=1
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	Module::Build
 
 DEPENDS+=	p5-Net-SNMP-[0-9]*:../../net/p5-Net-SNMP

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/06/18 06:12:02 dholland Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:11 wiz Exp $
 #
 
 DISTNAME=	tacacs+-F4.0.4.25
@@ -13,8 +13,6 @@ COMMENT=	Cisco AAA protocol (tacacs+) daemon (Shrubbery Networks version)
 LICENSE=	cisco-license
 
 CONFLICTS+=	tacacs-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	id # used in options.mk
 MAKE_JOBS_SAFE=	no

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2011/11/11 08:31:44 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/03 21:57:01 wiz Exp $
 #
 
 DISTNAME=	Net-Daemon-0.48
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-Daemon/
 COMMENT=	Perl5 module for writing networking daemons
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 #WRKSRC=		${WRKDIR}/Net-Daemon/
 

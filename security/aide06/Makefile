@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/06/12 02:14:44 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/01/14 00:51:36 hans Exp $
 #
 
 DISTNAME=	aide-0.6
@@ -9,8 +9,6 @@ MASTER_SITES=	ftp://ftp.cs.tut.fi/pub/src/gnu/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cs.tut.fi/~rammer/aide.html
 COMMENT=	Older intrusion detection system for checking file integrity
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	bison flex

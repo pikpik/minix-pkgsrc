@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2009/10/27 16:28:30 zafer Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/03 21:57:33 wiz Exp $
 #
 
 DISTNAME=	pgp50i-unix-src
@@ -13,8 +13,6 @@ HOMEPAGE=	http://www.pgpi.org/
 COMMENT=	Public-key encryption and digital signature utilities (v5)
 # use of IDEA as crypto function
 LICENSE=	idea-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

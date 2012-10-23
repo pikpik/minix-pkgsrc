@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/10/21 04:47:22 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:26 wiz Exp $
 #
 
 DISTNAME=	Authen-PluggableCaptcha-0.05
@@ -37,8 +37,6 @@ REPLACE_PERL+=	lib/Authen/PluggableCaptcha/Render/Text/HTML.pm
 REPLACE_PERL+=	lib/Authen/PluggableCaptcha/Render/Text/Plain.pm
 REPLACE_PERL+=	lib/Authen/PluggableCaptcha/StandardAttributesObject.pm
 REPLACE_PERL+=	lib/Authen/PluggableCaptcha/ValidityObject.pm
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Authen/PluggableCaptcha/.packlist
 

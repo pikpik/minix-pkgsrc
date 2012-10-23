@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/06/23 03:16:50 taca Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/23 10:24:09 wiz Exp $
 #
 
 DISTNAME=		synergy-1.3.7-Source
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://synergy-foss.org/
 COMMENT=		Let a user share a mouse and keyboard among computers
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 

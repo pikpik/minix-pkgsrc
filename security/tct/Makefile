@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/08/29 09:05:31 dholland Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/03 21:57:35 wiz Exp $
 #
 
 DISTNAME=	tct-1.09
@@ -12,8 +12,6 @@ COMMENT=	Programs to aid post-mortem after a break-in
 
 NOT_FOR_PLATFORM=	NetBSD-[4-9]*-*
 MAKE_JOBS_SAFE=		no
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Date-Manip-[0-9]*:../../devel/p5-Date-Manip
 

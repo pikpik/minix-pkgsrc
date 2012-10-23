@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/01/29 13:26:45 roy Exp $
+# $NetBSD: Makefile,v 1.7 2012/02/28 10:49:27 roy Exp $
 #
 
 DISTNAME=		pdns-recursor-3.3
@@ -15,7 +15,6 @@ MAKE_JOBS_SAFE=		no
 
 USE_TOOLS=		gmake
 USE_LANGUAGES=		c c++
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RCD_SCRIPTS+=		pdns_recursor
 

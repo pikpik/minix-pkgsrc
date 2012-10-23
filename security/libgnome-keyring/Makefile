@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/09/12 11:29:23 jperkin Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/15 10:06:16 obache Exp $
 #
 
 DISTNAME=	libgnome-keyring-3.4.1
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	GNOME password and secret manager
 
 CONFLICTS+=	gnome-keyring<2.30
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config xgettext
 GNU_CONFIGURE=		YES

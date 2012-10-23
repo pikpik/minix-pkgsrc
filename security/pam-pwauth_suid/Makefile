@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/07/17 18:00:58 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2009/04/09 00:48:15 joerg Exp $
 
 DISTNAME=	pam-pwauth_suid-1.2
 CATEGORIES=	security
@@ -11,8 +11,6 @@ WRKSRC=		${WRKDIR}
 
 PAMDEF+= -DPATH_HELPER=\"${PREFIX}/libexec/pwauth_suid_helper\"
 PAMDEF+= -DNO_STATIC_MODULES
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	lib/security libexec share/examples/pam-pwauth_suid
 

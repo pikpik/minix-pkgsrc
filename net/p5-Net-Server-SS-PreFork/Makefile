@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/03 11:16:23 sno Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:05 wiz Exp $
 #
 
 DISTNAME=	Net-Server-SS-PreFork-0.05
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Net-Server-SS-PreFork/
 COMMENT=	Hot-deployable variant of Perl 5 module Net::Server::PreFork
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 USE_LANGUAGES=		# empty

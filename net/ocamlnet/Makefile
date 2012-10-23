@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/08/20 08:11:58 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/08 15:18:23 jaapb Exp $
 #
 
 DISTNAME=		ocamlnet-3.6
@@ -10,7 +10,6 @@ MAINTAINER=		jaapb@kerguelen.org
 HOMEPAGE=		http://projects.camlcity.org/projects/ocamlnet.html
 COMMENT=		Library focusing on application-level network protocols (OCaml)
 LICENSE=		zlib AND gnu-gpl-v2
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

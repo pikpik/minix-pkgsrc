@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/12/15 05:54:08 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:02 wiz Exp $
 #
 
 DISTNAME=	Net-GitHub-0.30
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-GitHub/
 COMMENT=	Perl 5 interface for github.com
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Net/GitHub/.packlist

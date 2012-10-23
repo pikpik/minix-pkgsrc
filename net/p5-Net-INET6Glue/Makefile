@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/08/14 14:14:44 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:57:02 wiz Exp $
 
 DISTNAME=	Net-INET6Glue-0.5
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Make common Perl modules IPv6 ready by hotpatching
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-IO-Socket-INET6>=2.54:../../net/p5-IO-Socket-INET6
 

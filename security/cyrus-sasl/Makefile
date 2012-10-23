@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.61 2012/02/22 15:31:34 wiz Exp $
+# $NetBSD: Makefile,v 1.63 2012/03/03 12:54:21 wiz Exp $
 
 SVR4_PKGNAME=	csasl
 COMMENT=	Simple Authentication and Security Layer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 

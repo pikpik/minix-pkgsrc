@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/12/21 20:44:05 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/22 13:44:34 obache Exp $
 #
 
 DISTNAME=		gss-0.0.15
@@ -14,7 +14,6 @@ COMMENT=		GNU Generic Security Service Library
 CONFLICTS+=		heimdal-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config msgfmt
 GNU_CONFIGURE=		yes

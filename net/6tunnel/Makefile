@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2010/02/26 10:28:33 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2011/10/13 11:40:05 ghen Exp $
 #
 
 DISTNAME=	6tunnel-0.11rc2
@@ -8,8 +8,6 @@ MASTER_SITES=	http://toxygen.net/6tunnel/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://toxygen.net/6tunnel/
 COMMENT=	v4/v6 protocol translation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM+= Interix-*-* # no IPv6 support
 

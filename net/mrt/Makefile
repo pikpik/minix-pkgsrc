@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/06/30 00:07:21 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2011/03/21 04:53:49 obache Exp $
 #
 
 DISTNAME=	mrt-2.2.2a-Aug11
@@ -10,8 +10,6 @@ MASTER_SITES=	ftp://ftp.merit.edu/net-research/mrt/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mrtd.net/
 COMMENT=	Multi-threaded Routing Toolkit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

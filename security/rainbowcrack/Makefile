@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/08/25 11:57:45 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/01/17 12:02:44 wiz Exp $
 #
 
 PKGNAME=		rainbowcrack-1.2
@@ -13,8 +13,6 @@ DISTFILES=		rainbowcrack-1.2-src.zip \
 MAINTAINER=		dhowland@users.sourceforge.net
 HOMEPAGE=		http://www.antsight.com/zsl/rainbowcrack/
 COMMENT=		Hash cracker
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DIRS=		src
 USE_LANGUAGES=		c c++

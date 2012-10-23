@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2010/02/10 19:17:44 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/03/15 11:53:37 obache Exp $
 
 DISTNAME=	flawfinder-1.27
 PKGREVISION=	3
@@ -8,8 +8,6 @@ MASTER_SITES=	http://www.dwheeler.com/flawfinder/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dwheeler.com/flawfinder/
 COMMENT=	Python program to find flaws in C/C++ programs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 PYTHON_PATCH_SCRIPTS=	flawfinder

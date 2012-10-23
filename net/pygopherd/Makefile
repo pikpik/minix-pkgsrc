@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2011/10/31 08:47:33 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/03/15 11:53:36 obache Exp $
 #
 
 DISTNAME=	pygopherd_2.0.16
@@ -11,8 +11,6 @@ MAINTAINER=	metaridley@mchsi.com
 HOMEPAGE=	http://gopher.quux.org:70/devel/gopher/pygopherd/
 COMMENT=	Gopher server
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_SYSCONFSUBDIR=	pygopherd
 EXAMPLEDIR=	${PREFIX}/share/examples/pygopherd

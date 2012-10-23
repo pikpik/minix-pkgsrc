@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/10/02 17:11:45 tron Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/08 23:02:15 adam Exp $
 
 DISTNAME=		gitso-0.6
 PKGREVISION=		4
@@ -13,8 +13,6 @@ LICENSE=		gnu-gpl-v3
 
 DEPENDS+=		vncviewer-[0-9]*:../../net/vncviewer
 DEPENDS+=		x11vnc-[0-9]*:../../x11/x11vnc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/Gitso
 

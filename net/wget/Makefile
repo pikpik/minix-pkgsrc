@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2012/08/12 16:05:41 wiz Exp $
+# $NetBSD: Makefile,v 1.112 2012/10/03 21:57:12 wiz Exp $
 
 DISTNAME=	wget-1.14
 PKGREVISION=	1
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/wget/wget.html
 COMMENT=	Retrieve files from the 'net via HTTP and FTP
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl pod2man
 

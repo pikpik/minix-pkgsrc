@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/09/12 18:37:09 bouyer Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 21:56:54 wiz Exp $
 
 DISTNAME=	freeradius-server-${RADVER}
 PKGNAME=	${DISTNAME:S/-server//}
@@ -18,7 +18,6 @@ USE_TOOLS+=		gmake perl:run
 USE_LIBTOOL=		yes
 USE_OLD_DES_API=	yes
 MAKE_JOBS_SAFE=		no
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

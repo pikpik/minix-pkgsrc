@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2010/01/17 12:02:34 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2012/06/12 15:46:01 wiz Exp $
 
 DISTNAME=		pchar-1.5
 PKGREVISION=		2
@@ -8,8 +8,6 @@ MASTER_SITES=		http://www.kitchenlab.org/www/bmah/Software/pchar/
 MAINTAINER=		soren@NetBSD.org
 HOMEPAGE=		http://www.kitchenlab.org/www/bmah/Software/pchar/
 COMMENT=		Tool for measuring Internet path characteristics
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

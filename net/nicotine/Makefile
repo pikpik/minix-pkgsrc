@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2012/01/23 08:28:46 obache Exp $
+# $NetBSD: Makefile,v 1.40 2012/03/15 11:53:35 obache Exp $
 #
 
 DISTNAME=	nicotine-1.0.8
@@ -13,8 +13,6 @@ COMMENT=	Client for soulseek, a peer-to-peer network for music
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PYPKGPREFIX}-gtk2>=1.99.16:../../x11/py-gtk2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		# empty

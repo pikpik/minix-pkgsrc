@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/11/22 03:36:49 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:57:08 wiz Exp $
 #
 
 DISTNAME=	Test-DNS-0.13
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Test-DNS/
 COMMENT=	Perl 5 module to test DNS queries and zone configuration
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	Module::Build
 
 USE_LANGUAGES=		# empty

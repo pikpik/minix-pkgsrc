@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2012/04/27 12:32:01 obache Exp $
+# $NetBSD: Makefile,v 1.46 2012/06/14 07:43:18 sbd Exp $
 #
 
 DISTNAME=	yaz-4.1.6
@@ -10,8 +10,6 @@ MAINTAINER=	phil@NetBSD.org
 HOMEPAGE=	http://indexdata.dk/yaz/
 COMMENT=	C/C++ toolkit for the development of Z39.50v3/SRW clients and servers
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES

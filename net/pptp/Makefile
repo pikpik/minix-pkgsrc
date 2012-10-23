@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/10/24 16:55:03 pettai Exp $
+# $NetBSD: Makefile,v 1.16 2012/07/22 00:21:22 dholland Exp $
 
 DISTNAME=	pptp-1.7.1
 PKGREVISION=	1
@@ -10,7 +10,6 @@ HOMEPAGE=	http://pptpclient.sourceforge.net/
 COMMENT=	PPTP client package for Microsoft VPN servers
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 NOT_FOR_PLATFORM=	Interix-*-*

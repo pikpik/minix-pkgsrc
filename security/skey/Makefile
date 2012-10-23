@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/02/08 09:05:33 obache Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/03 21:57:34 wiz Exp $
 #
 
 DISTNAME=		skey-1.1.5
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Port of OpenBSD s/key implementation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl:run
 GNU_CONFIGURE=		yes

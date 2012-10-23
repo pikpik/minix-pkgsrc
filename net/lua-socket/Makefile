@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/21 10:08:48 fhajny Exp $
 #
 
 DISTNAME=		luasocket-2.0.2
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://w3.impa.br/~diego/software/luasocket/
 COMMENT=		Network support for the Lua language
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=		makefile
 USE_TOOLS+=		gmake

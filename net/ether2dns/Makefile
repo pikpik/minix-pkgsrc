@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/01/26 21:39:09 is Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/28 20:28:33 is Exp $
 #
 
 DISTNAME=		ether2dns-1.6
@@ -11,8 +11,6 @@ HOMEPAGE=		http://theory.cs.uni-bonn.de/~ignatios/
 COMMENT=		Converter from /etc/ethers to IPv6 DNS records
 
 WRKSRC=			${WRKDIR}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		lex
 USE_LANGUAGES=		c

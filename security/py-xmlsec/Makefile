@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/04/22 13:44:38 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/06/14 07:45:08 sbd Exp $
 #
 
 DISTNAME=	pyxmlsec-0.3.0
@@ -13,8 +13,6 @@ COMMENT=	Python bindings for XMLSec Library
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PYPKGPREFIX}-libxml2-[0-9]*:../../textproc/py-libxml2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 

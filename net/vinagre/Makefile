@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/10/02 17:11:49 tron Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/08 23:02:18 adam Exp $
 #
 
 DISTNAME=	vinagre-3.4.2
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://projects.gnome.org/vinagre/
 COMMENT=	VNC client for GNOME
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	itstool-[0-9]*:../../textproc/itstool
 

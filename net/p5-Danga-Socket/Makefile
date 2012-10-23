@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/01/31 02:42:47 mspo Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:56:58 wiz Exp $
 #
 
 DISTNAME=	Danga-Socket-1.61
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/CPAN/authors/id/B/BR/BRADFITZ/
 COMMENT=	Event loop and event-driven async socket base class
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Sys-Syscall>=0:../../devel/p5-Sys-Syscall
 DEPENDS+=	p5-Time-HiRes>=0:../../time/p5-Time-HiRes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/10/02 17:11:54 tron Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/08 23:02:22 adam Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-src
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://freeworld.thc.org/thc-hydra/
 COMMENT=	Login password cracker
 LICENSE=	hydra-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

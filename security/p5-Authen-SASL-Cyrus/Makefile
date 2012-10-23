@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/10/03 21:57:26 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/21 22:16:43 wiz Exp $
 #
 
 DISTNAME=	Authen-SASL-Cyrus-0.13
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Authen/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Authen-SASL-Cyrus/
 COMMENT=	Perl module to handle Cyrus protocol for SASL authentication
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Authen-SASL-[0-9]*:../../security/p5-Authen-SASL
 

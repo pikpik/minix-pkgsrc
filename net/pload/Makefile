@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/03/10 13:20:11 shattered Exp $
+# $NetBSD: Makefile,v 1.26 2012/08/15 06:02:47 dholland Exp $
 #
 
 DISTNAME=	pload-0.9.5
@@ -12,7 +12,6 @@ COMMENT=	Network interface monitor for X11, monitoring totals and in/out rates
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 HAS_CONFIGURE=	YES

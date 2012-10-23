@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2011/03/24 12:32:59 obache Exp $
+# $NetBSD: Makefile,v 1.38 2011/04/08 12:19:17 drochner Exp $
 
 DISTNAME=	openslp-1.2.1
 PKGREVISION=	4
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openslp/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openslp.org/
 COMMENT=	Open-source implementation of the Service Location Protocol
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Needs pkgviews-enabled automake
 # PKG_INSTALLATION_TYPES=	overwrite pkgviews

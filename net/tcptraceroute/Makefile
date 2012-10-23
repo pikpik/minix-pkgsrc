@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/02/11 23:00:57 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2011/12/22 19:06:22 is Exp $
 #
 
 DISTNAME=		tcptraceroute-1.4
@@ -9,8 +9,6 @@ MASTER_SITES=		http://michael.toren.net/code/tcptraceroute/
 MAINTAINER=		kim@tac.nyc.ny.us
 HOMEPAGE=		http://michael.toren.net/code/tcptraceroute/
 COMMENT=		Traceroute implementation using TCP packets
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		tcptraceroute
 BUILDLINK_API_DEPENDS.libnet10+=	libnet10>=1.0.2anb1

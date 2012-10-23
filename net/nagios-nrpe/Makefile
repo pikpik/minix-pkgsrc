@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/02/22 15:23:43 gdt Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:56:56 wiz Exp $
 #
 
 DISTNAME=		nrpe-2.12
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=nagios/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/nagios/
 COMMENT=		Nagios remote program execution daemon
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

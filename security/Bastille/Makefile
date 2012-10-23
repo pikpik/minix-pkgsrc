@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/06/14 07:45:13 sbd Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:57:22 wiz Exp $
 #
 
 DISTNAME=	Bastille-3.0.9
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bastille-linux.sourceforge.net/
 COMMENT=	System hardening tool focusing on educating the user
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/Bastille
 CONFIGURE_ENV+=		GCONF_SCHEMA_FILE_DIR=${PREFIX:Q}/share/gconf/schemas/

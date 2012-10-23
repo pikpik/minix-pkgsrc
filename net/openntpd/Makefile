@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2010/02/11 22:30:40 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2010/04/17 10:39:33 zafer Exp $
 
 DISTNAME=		openntpd-3.9p1
 PKGREVISION=		2
@@ -12,7 +12,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.openntpd.org/
 COMMENT=		Free implementation of the Network Time Protocol
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CONFLICTS+=		ntp-[0-9]*

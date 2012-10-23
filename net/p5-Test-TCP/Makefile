@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/07/25 15:39:31 wen Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:57:08 wiz Exp $
 #
 
 DISTNAME=	Test-TCP-1.16
@@ -13,8 +13,6 @@ COMMENT=	Perl 5 module to test TCP program
 LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-Test-SharedFork>=0.19:../../devel/p5-Test-SharedFork
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Test/TCP/.packlist

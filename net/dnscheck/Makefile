@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/05/08 22:39:39 pettai Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:56:53 wiz Exp $
 #
 
 DISTNAME=	dotse-dnscheck-1.2.6-0-g86a5c69
@@ -11,8 +11,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	https://github.com/dotse/dnscheck/
 COMMENT=	DNSCheck is a DNS quality checker
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 FETCH_USING=	curl
 

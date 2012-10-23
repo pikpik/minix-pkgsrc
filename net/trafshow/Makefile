@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2011/03/17 22:09:52 zafer Exp $
+# $NetBSD: Makefile,v 1.34 2012/06/12 15:46:02 wiz Exp $
 
 DISTNAME=	trafshow-5.2.3
 CATEGORIES=	net
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://soft.risp.ru/trafshow/index.shtml
 COMMENT=	Full screen visualization of the network traffic
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	trafshow
 GNU_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/05/18 06:29:31 pettai Exp $
+# $NetBSD: Makefile,v 1.28 2010/09/28 13:21:32 wiz Exp $
 
 DISTNAME=	keychain-2.7.1
 CATEGORIES=	security
@@ -15,7 +15,6 @@ DEPENDS+=	openssh-[0-9]*:../../security/openssh
 .endif
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 

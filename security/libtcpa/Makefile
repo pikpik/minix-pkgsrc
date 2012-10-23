@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/01/17 12:02:41 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2010/01/27 17:11:31 joerg Exp $
 #
 
 DISTNAME=		tpm-1.1b
@@ -13,7 +13,6 @@ HOMEPAGE=		http://www.research.ibm.com/gsal/tcpa/
 COMMENT=		TCPA libraries and test programs from IBM
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/TPM
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/04/25 15:50:51 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2012/08/06 13:57:23 mspo Exp $
 #
 
 DISTNAME=	c-ares-1.9.1
@@ -12,8 +12,6 @@ COMMENT=	Asynchronous resolver library, c-ares
 LICENSE=	mit
 
 CONFLICTS+=	libares-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 

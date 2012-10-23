@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2012/01/19 13:26:55 adam Exp $
+# $NetBSD: Makefile,v 1.45 2012/03/06 17:39:00 ryoon Exp $
 
 DISTNAME=	openvpn-2.2.2
 PKGREVISION=	1
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://openvpn.net/
 COMMENT=	Easy-to-use SSL VPN daemon
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		grep:run

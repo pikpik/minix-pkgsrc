@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.55 2012/10/03 21:56:51 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2012/10/08 23:02:14 adam Exp $
 
 DISTNAME=	aMule-2.2.6
 PKGNAME=	${DISTNAME:S/aMule/amule/}
@@ -11,8 +11,6 @@ MAINTAINER=	tripledes@eslack.org
 HOMEPAGE=	http://www.amule.org/
 COMMENT=	Another Emule P2P client
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		xmule-[0-9]*
 

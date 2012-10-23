@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/10/02 17:11:53 tron Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/08 23:02:22 adam Exp $
 #
 
 DISTNAME=	gpa-0.7.0
@@ -9,8 +9,6 @@ MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/
 MAINTAINER=	pr@alles.prima.de
 HOMEPAGE=	http://www.gnupg.org/related_software/gpa/
 COMMENT=	GUI frontend to gnupg
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2012/10/15 21:27:08 joerg Exp $
+# $NetBSD: Makefile,v 1.45 2012/10/21 09:00:16 joerg Exp $
 #
 
 DISTNAME=	libfetch-2.34
@@ -10,8 +10,6 @@ MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.FreeBSD.org/
 COMMENT=	Library to access HTTP/FTP server
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_FEATURES=		nbcompat
 

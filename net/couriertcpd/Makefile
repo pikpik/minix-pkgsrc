@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/03/03 00:14:27 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/06/09 11:45:39 adam Exp $
 
 DISTNAME=	courier-${COURIER_VERSION}
 PKGNAME=	${DISTNAME:S/-/tcpd-/}
@@ -11,8 +11,6 @@ COMMENT=	Courier TCP socket and TLS servers
 HOMEPAGE=	http://www.courier-mta.org/
 
 CONFLICTS=	courier-imap<4.1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++

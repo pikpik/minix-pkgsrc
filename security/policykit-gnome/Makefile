@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/10/03 21:57:34 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:23 adam Exp $
 #
 
 POLICYKIT_GNOME_VER=	0.9.2
@@ -13,8 +13,6 @@ MAINTAINER=		netbsd-desktop@NetBSD.org
 HOMEPAGE=		http://hal.freedesktop.org/
 COMMENT=		GNOME dialogs for PolicyKit
 LICENSE=		gnu-gpl-v2 AND gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		VARBASE
 

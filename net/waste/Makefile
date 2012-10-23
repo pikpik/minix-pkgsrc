@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/01/23 21:14:17 jschauma Exp $
+# $NetBSD: Makefile,v 1.17 2009/03/17 21:40:47 darcy Exp $
 #
 
 DISTNAME=	waste-source
@@ -12,8 +12,6 @@ MASTER_SITES=	http://slackerbitch.free.fr/waste/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://waste.2mbit.com/index2.html
 COMMENT=	Secure file sharing network
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/waste
 

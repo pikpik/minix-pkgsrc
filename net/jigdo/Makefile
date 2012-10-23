@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2012/10/02 17:11:47 tron Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/08 23:02:16 adam Exp $
 
 DISTNAME=		jigdo-0.7.3
 PKGREVISION=		16
@@ -11,8 +11,6 @@ HOMEPAGE=		http://atterer.org/jigdo/
 COMMENT=		Tool to ease downloading of large files from the Internet
 
 DEPENDS+=		wget-[0-9]*:../../net/wget
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

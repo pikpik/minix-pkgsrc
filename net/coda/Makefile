@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/08/03 10:32:54 marino Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:56:53 wiz Exp $
 #
 
 DISTNAME=	coda-6.9.5
@@ -12,7 +12,6 @@ COMMENT=	Coda distributed fileystem
 
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 NOT_FOR_PLATFORM+=	DragonFly-*-*
 
 # See http://coda.wikidev.net/Quick_Client_Action for hints on how

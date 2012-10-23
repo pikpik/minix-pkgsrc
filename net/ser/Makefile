@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/06/01 00:26:36 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/03/20 11:46:34 obache Exp $
 #
 
 DISTNAME=	ser-0.8.14_src
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.iptel.org/ser/
 COMMENT=	SIP express router
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 

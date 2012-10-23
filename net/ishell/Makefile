@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/02/11 21:43:39 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2010/07/06 10:17:14 jmmv Exp $
 #
 
 DISTNAME=	ish-v${VERSION}
@@ -11,8 +11,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=icmpshell/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://icmpshell.sourceforge.net/
 COMMENT=	Allow remote shell using ICMP
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 VERSION=	0.2
 

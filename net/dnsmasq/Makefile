@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/06/12 15:45:59 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/07/04 08:26:37 roy Exp $
 #
 
 DISTNAME=		dnsmasq-2.62
@@ -14,7 +14,6 @@ RCD_SCRIPTS=		dnsmasq
 CONF_FILES=		${PREFIX}/share/examples/dnsmasq/dnsmasq.conf.example \
 			${PKG_SYSCONFDIR}/dnsmasq.conf
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dnsmasq
 PKG_SUPPORTED_OPTIONS=	dbus inet6
 PKG_SUGGESTED_OPTIONS=	inet6

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.221 2012/08/19 07:28:36 sbd Exp $
+# $NetBSD: Makefile,v 1.222 2012/10/03 21:57:10 wiz Exp $
 
 .include "../../net/samba/Makefile.mirrors"
 
@@ -14,8 +14,6 @@ LICENSE=	gnu-gpl-v3
 
 VERSION=	3.6.6
 CONFLICTS+=	ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 FILESDIR=		${PKGDIR}/../../net/samba/files
 DESCR_SRC=		${PKGDIR}/../../net/samba/DESCR

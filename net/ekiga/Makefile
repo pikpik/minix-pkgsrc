@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2012/10/02 17:11:45 tron Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/08 23:02:15 adam Exp $
 #
 
 DISTNAME=		ekiga-3.2.6
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.ekiga.org/
 COMMENT=		VoIP and video conferencing application for GNOME
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PREV_PKGPATH=		net/ekiga-devel
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

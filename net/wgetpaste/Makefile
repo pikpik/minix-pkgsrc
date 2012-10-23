@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/08/11 08:43:45 obache Exp $
 
 DISTNAME=	wgetpaste-2.20
 CATEGORIES=	net www
@@ -12,7 +12,6 @@ LICENSE=	public-domain
 
 DEPENDS+=	wget>=1.13.4:../../net/wget
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin share/examples/wgetpaste etc
 NO_BUILD=		yes
 

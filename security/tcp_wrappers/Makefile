@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2012/06/12 15:46:03 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2012/07/20 09:58:36 adam Exp $
 
 DISTNAME=	tcp_wrappers_7.6-ipv6.4
 PKGNAME=	${DISTNAME:S/_7.6-ipv6/-7.6/}
@@ -10,7 +10,6 @@ HOMEPAGE=	ftp://ftp.porcupine.org/pub/security/index.html
 COMMENT=	Monitor and filter incoming requests for network services
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/03/22 11:58:58 fhajny Exp $
+# $NetBSD: Makefile,v 1.8 2012/05/29 22:58:52 cheusov Exp $
 #
 
 PKGNAME=		rabbitmq-${RMQ_VERSION}
@@ -10,8 +10,6 @@ MAINTAINER=		filip@joyent.com
 HOMEPAGE=		http://www.rabbitmq.com/server.html
 COMMENT=		Implementation of AMQP that provides robust messaging for applications
 LICENSE=		mpl-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		bash:run coreutils gmake unzip zip
 

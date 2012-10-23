@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/07/27 22:30:31 pettai Exp $
+# $NetBSD: Makefile,v 1.8 2011/07/28 22:44:36 pettai Exp $
 
 DISTNAME=	opensaml-2.4.3
 CATEGORIES=	security
@@ -8,8 +8,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://www.opensaml.org/
 COMMENT=	Security Assertion Markup Language (SAML)
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

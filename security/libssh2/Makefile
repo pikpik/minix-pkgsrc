@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/01/17 12:02:41 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2011/02/28 14:53:01 wiz Exp $
 #
 
 DISTNAME=	libssh2-1.2.2
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.libssh2.org/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://libssh2.sourceforge.net/
 COMMENT=	SSH2 protocol library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

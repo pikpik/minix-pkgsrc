@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2012/10/08 23:02:15 adam Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/14 16:04:44 wiz Exp $
 #
 
 VERSION=	3.5.0
@@ -13,8 +13,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://filezilla-project.org/
 COMMENT=	FTP, FTPS and SFTP client with intuitive GUI
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++

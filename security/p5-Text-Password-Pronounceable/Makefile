@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/09/03 11:16:23 sno Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:33 wiz Exp $
 
 DISTNAME=	Text-Password-Pronounceable-0.30
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Generate pronounceable passwords
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Password/Pronounceable/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled

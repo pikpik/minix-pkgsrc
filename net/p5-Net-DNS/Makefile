@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2012/10/03 21:57:00 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2012/10/21 22:12:09 wiz Exp $
 
 DISTNAME=		Net-DNS-0.68
 PKGNAME=		p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=		Perl5 module for DNS resolution
 LICENSE=		${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		{p5-Test-Simple>=0.44,perl{,-thread}>=5.8.0}:../../devel/p5-Test-Simple
 DEPENDS+=		p5-Digest-HMAC>=1.0:../../security/p5-Digest-HMAC

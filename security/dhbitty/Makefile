@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/01/25 00:27:48 zafer Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2012/08/11 17:43:46 agc Exp $
 
 DISTNAME=		dhbitty.c
 PKGNAME=		dhbitty-20120806
@@ -12,7 +12,6 @@ HOMEPAGE=		http://cipherdev.org/dhbitty.html
 LICENSE=		public-domain
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

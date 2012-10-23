@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2010/03/24 14:12:44 lukem Exp $
+# $NetBSD: Makefile,v 1.22 2012/05/12 07:37:51 wiz Exp $
 #
 
 DISTNAME=		tnftpd-20100324
@@ -7,8 +7,6 @@ MASTER_SITES=		ftp://ftp.NetBSD.org/pub/NetBSD/misc/tnftp/
 
 MAINTAINER=		lukem@NetBSD.org
 COMMENT=		The NetBSD FTP Daemon
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		wu-ftpd-[0-9]*
 CONFLICTS+=		kth-krb4-[0-9]*

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/06/20 01:09:31 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2010/01/16 17:48:02 wiz Exp $
 #
 
 DISTNAME=		socket++-1.12.10
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.linuxhacker.at/linux/downloads/src/
 MAINTAINER=		mchittur@cs.nmsu.edu
 HOMEPAGE=		http://www.linuxhacker.at/socketxx/
 COMMENT=		C++ class library for UNIX Sockets with exception handling
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INFO_FILES=		# PLIST
 USE_LANGUAGES=		c c++

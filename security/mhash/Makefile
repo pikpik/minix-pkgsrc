@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/11/08 13:47:11 bjs Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 21:57:25 wiz Exp $
 
 DISTNAME=	mhash-0.9.9
 PKGREVISION=	3
@@ -12,8 +12,6 @@ PATCH_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mhash.sourceforge.net/
 COMMENT=	Hash algorithms library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl autoconf
 USE_LIBTOOL=		yes

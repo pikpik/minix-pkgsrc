@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/02/28 14:53:00 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2011/11/02 12:51:16 obache Exp $
 #
 
 DISTNAME=	ZSI-2.0
@@ -12,8 +12,6 @@ HOMEPAGE=	http://pywebsvcs.sourceforge.net/
 COMMENT=	SOAP implementation
 
 DEPENDS+=	${PYPKGPREFIX}-xml>=0.8.3:../../textproc/py-xml
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

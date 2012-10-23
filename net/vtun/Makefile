@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2011/03/18 10:39:07 adam Exp $
+# $NetBSD: Makefile,v 1.46 2012/03/02 18:31:40 hans Exp $
 
 DISTNAME=	vtun-3.0.2
 CATEGORIES=	net
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://vtun.sourceforge.net/
 COMMENT=	Virtual Tunnels over TCP/IP networks with traffic shaping
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/12/05 19:43:28 ryoon Exp $
+# $NetBSD: Makefile,v 1.15 2012/07/31 00:37:09 wiz Exp $
 #
 
 DISTNAME=	quvi-0.4.2
@@ -10,8 +10,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://quvi.sourceforge.net/
 COMMENT=	Command line tool for parsing video links
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

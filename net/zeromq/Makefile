@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/10/04 07:59:04 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/01/26 05:40:30 obache Exp $
 #
 
 DISTNAME=	zeromq-2.1.11
@@ -9,8 +9,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.zeromq.org/
 COMMENT=	The ZeroMQ messaging library
 LICENSE=	gnu-lgpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

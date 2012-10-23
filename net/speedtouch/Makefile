@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.30 2010/02/11 22:50:54 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2010/03/15 14:25:07 joerg Exp $
 
 DISTNAME=		speedtouch-1.3.1
 PKGREVISION=		4
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=speedtouch/}
 DISTFILES=		${DISTNAME}.tar.bz2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 #
 # Firmware license and link from:

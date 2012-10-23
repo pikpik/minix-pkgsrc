@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2010/01/17 12:02:44 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/02/16 19:42:04 hans Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV:S/-//}
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.rickk.com/sslwrap/
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.rickk.com/sslwrap/
 COMMENT=	Simple SSL wrapper
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 OPSYSVARS+=	LDADD
 LDADD.SunOS=	-lnsl -lsocket

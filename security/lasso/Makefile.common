@@ -1,9 +1,9 @@
-# $NetBSD: Makefile.common,v 1.5 2011/04/04 08:30:30 manu Exp $
+# $NetBSD: Makefile.common,v 1.6 2012/09/28 11:52:22 obache Exp $
 #
 # used by security/lasso/Makefile
 # used by security/py-lasso/Makefile
 
-DISTNAME=	lasso-2.3.5
+DISTNAME=	lasso-2.3.6
 CATEGORIES=	security
 MASTER_SITES=	http://dev.entrouvert.org/lasso/
 

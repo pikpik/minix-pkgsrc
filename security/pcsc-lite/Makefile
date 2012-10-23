@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/10/02 12:36:13 hasso Exp $
+# $NetBSD: Makefile,v 1.9 2010/12/17 17:00:35 shannonjr Exp $
 #
 
 DISTNAME=	pcsc-lite-1.5.5
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://pcsclite.alioth.debian.org/
 COMMENT=	Middleware to access a smart card using SCard API (PC/SC)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

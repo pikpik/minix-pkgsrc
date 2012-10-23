@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/03/17 21:54:18 zafer Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:56:57 wiz Exp $
 #
 
 DISTNAME=	check_spamd-1.4.pl
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	# empty
 MAINTAINER=	heinz@NetBSD.org
 HOMEPAGE=	http://www.jhweiss.de/software/nagios.html
 COMMENT=	Nagios plugin for monitoring the SpamAssassin daemon
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		nagios-plugins-[0-9]*:../../net/nagios-plugins
 

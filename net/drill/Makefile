@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/10/08 13:30:43 he Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/08 13:58:48 he Exp $
 
 VERSION=	1.6.13
 DISTNAME=	ldns-${VERSION}
@@ -13,8 +13,6 @@ COMMENT=	DNSSEC debugging tool a'la dig
 LICENSE=	modified-bsd
 
 USE_TOOLS+=	gmake
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

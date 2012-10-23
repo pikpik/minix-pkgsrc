@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/10/04 21:53:16 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/02/11 21:58:38 joerg Exp $
 
 DISTNAME=	LambdaCore-12Apr99.db
 PKGNAME=	lambdamoo-core-990412
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/lambdamoo/
 COMMENT=	Generic core classes for lambdamoo
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gunzip
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2012/09/15 10:06:02 obache Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/03 21:56:54 wiz Exp $
 
 DISTNAME=	kftpgrabber-0.8.1
 PKGREVISION=	19
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.kftp.org/
 COMMENT=	Graphical FTP client for KDE
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake msgfmt perl

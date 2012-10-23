@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/01/27 17:38:46 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2011/11/30 23:57:59 pettai Exp $
 #
 
 DISTNAME=	tac_plus.F4.0.4.alpha
@@ -12,8 +12,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.shrubbery.net/tac_plus/
 COMMENT=	Cisco authentication, authorization, and accounting protocol daemon
 LICENSE=	cisco-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	tac_plus
 

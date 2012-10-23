@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/02/02 09:43:40 hans Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/03 21:57:27 wiz Exp $
 #
 
 DISTNAME=		Crypt-DSA-1.17
@@ -14,7 +14,6 @@ COMMENT=		Perl5 module for the DSA public key algorithm
 LICENSE=		${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-Data-Buffer>=0.01:../../devel/p5-Data-Buffer
 DEPENDS+=		p5-Digest-SHA1-[0-9]*:../../security/p5-Digest-SHA1

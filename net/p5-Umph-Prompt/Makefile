@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/11/08 20:21:30 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:57:08 wiz Exp $
 #
 
 DISTNAME=	Umph-Prompt-0.1.0
@@ -11,8 +11,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/umph/
 COMMENT=	Youtube feeds parsing module for umph
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Umph/Prompt/.packlist
 USE_LANGUAGES=	# none

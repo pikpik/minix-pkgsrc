@@ -1,7 +1,5 @@
-# $NetBSD: Makefile,v 1.21 2012/10/02 17:11:49 tron Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:19 adam Exp $
 #
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../net/wistumbler2/Makefile.common"
 

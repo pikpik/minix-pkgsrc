@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/06/14 07:45:08 sbd Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/02 15:12:51 wiz Exp $
 #
 
 DISTNAME=	flickcurl-1.23
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://download.dajobe.org/flickcurl/
 COMMENT=	Flickr API library
 LICENSE=	gnu-lgpl-v2.1 OR gnu-gpl-v2 OR apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/10/02 17:11:53 tron Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/08 23:02:21 adam Exp $
 #
 
 DISTNAME=		MyPasswordSafe-20061216
@@ -10,8 +10,6 @@ DISTFILES=		${DISTNAME}.src.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.semanticgap.com/myps/
 COMMENT=		Easy-to-use password manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

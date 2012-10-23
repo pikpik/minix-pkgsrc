@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/09/29 20:48:19 spz Exp $
+# $NetBSD: Makefile,v 1.6 2012/08/15 15:30:04 spz Exp $
 #
 
 VERSION=		5.0.1
@@ -12,8 +12,6 @@ COMMENT=		The Internet Routing Registry Toolset - client to IRRd
 LICENSE=		gnu-gpl-v2 AND mit AND modified-bsd
 
 CONFLICTS=		IRRToolSet-4.*{,nb*}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

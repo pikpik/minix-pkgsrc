@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/10/04 21:53:17 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2010/02/11 21:59:11 joerg Exp $
 
 DISTNAME=	lambdamoo-doc-1.8.0p6
 CATEGORIES=	net
@@ -10,8 +10,6 @@ DISTFILES=	ProgrammersManual.texinfo HelpSystem-02Jun93.txt
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/lambdamoo/
 COMMENT=	Documentation for lambdamoo
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_ONLY=	ProgrammersManual.texinfo
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/12 06:32:45 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/09/15 15:03:24 obache Exp $
 #
 
 DISTNAME=	1.1.4
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freediameter.net/trac/
 COMMENT=	Open source Diameter protocol implementation
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=	freeDiameter
 

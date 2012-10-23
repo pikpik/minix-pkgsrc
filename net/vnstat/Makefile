@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/11/01 06:11:57 sbd Exp $
+# $NetBSD: Makefile,v 1.6 2012/04/17 21:35:56 gls Exp $
 
 DISTNAME=	vnstat-1.11
 CATEGORIES=	net
@@ -9,8 +9,6 @@ MAINTAINER=	sborrill@NetBSD.org
 HOMEPAGE=	http://humdi.net/vnstat/
 COMMENT=	Small network traffic monitor
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 

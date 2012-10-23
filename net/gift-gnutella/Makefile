@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/12/21 20:34:06 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2012/06/14 07:45:22 sbd Exp $
 #
 
 DISTNAME=		gift-gnutella-0.0.11
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://gift.sourceforge.net/
 COMMENT=		Gnutella plugin for giFT
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

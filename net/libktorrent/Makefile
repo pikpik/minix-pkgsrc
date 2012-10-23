@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/10/03 21:56:55 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/08 23:01:04 adam Exp $
 
 DISTNAME=	libktorrent-${LIBKTORRENT_VER}
 PKGREVISION=	5
@@ -13,7 +13,6 @@ HOMEPAGE=	http://ktorrent.org/
 COMMENT=	Torrent library split from KTorrent
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_OPTIONS_VAR=	PKG_OPTIONS.libktorrent
 PKG_SUPPORTED_OPTIONS=	docs
 PLIST_VARS+=		docs

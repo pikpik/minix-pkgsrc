@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/01/22 14:48:00 schwarz Exp $
+# $NetBSD: Makefile,v 1.4 2012/05/05 22:44:19 schwarz Exp $
 
 DISTNAME=	traceroute-nanog_6.4.2.orig
 PKGNAME=	${DISTNAME:S/.orig//:S/_/-/}
@@ -10,8 +10,6 @@ MASTER_SITES=	ftp://unix.hensa.ac.uk/sites/archive.ubuntu.com/ubuntu/pool/univer
 # for the man page:
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	traceroute-nanog_6.4.2-1.diff.gz
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 COMMENT=	Traceroute implementation with extend features
 MAINTAINER=	schwarz@NetBSD.org

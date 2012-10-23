@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 14:42:51 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:33 wiz Exp $
 #
 
 DISTNAME=		OpenSSL-0.09
@@ -12,8 +12,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/OpenSSL/
 COMMENT=		Perl5 wrapper module for the OpenSSL functions
 #LICENSE=		gnu-gpl-v2 # under same terms as Perl
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 

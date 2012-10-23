@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/05/31 08:53:04 sno Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:57:32 wiz Exp $
 #
 
 DISTNAME=		Net-OpenSSH-0.57
@@ -12,7 +12,6 @@ HOMEPAGE=		http://search.cpan.org/dist/Net-OpenSSH/
 COMMENT=		Perl SSH client package implemented on top of OpenSSH
 LICENSE=		${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		# empty
 
 PERL5_PACKLIST=		auto/Net/OpenSSH/.packlist

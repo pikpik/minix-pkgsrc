@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/02/17 06:58:54 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/03 21:56:58 wiz Exp $
 #
 
 DISTNAME=	Geo-IP-1.40
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.maxmind.com/geoip/api/perl.shtml
 COMMENT=	Gets country name by IP or hostname
 LICENSE=  ${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=	c

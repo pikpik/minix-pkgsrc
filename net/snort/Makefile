@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2012/03/03 00:13:47 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2012/09/12 13:16:38 obache Exp $
 #
 
 DISTNAME=		snort-2.8.5.1
@@ -13,8 +13,6 @@ HOMEPAGE=		http://www.snort.org/
 COMMENT=		The Open Source Network Intrusion Detection System
 
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		snort-mysql-[0-9]*
 CONFLICTS+=		snort-pgsql-[0-9]*

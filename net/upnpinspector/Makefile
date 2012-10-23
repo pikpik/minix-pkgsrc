@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/10/31 08:52:14 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/03/15 11:53:36 obache Exp $
 #
 
 DISTNAME=	UPnP-Inspector-0.2.2
@@ -12,7 +12,6 @@ COMMENT=	UPnP analyzer
 LICENSE=	mit
 
 USE_LANGUAGES=	# none
-PKG_DESTDIR_SUPPORT= user-destdir
 EGG_NAME=	UPnP_Inspector-0.2.2
 
 .include "../../lang/python/egg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/09/15 10:06:00 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/06 08:46:43 ryoon Exp $
 #
 
 DISTNAME=	libnice-0.1.2
@@ -14,8 +14,6 @@ LICENSE=	gnu-lgpl-v2.1 OR mpl-1.1
 
 PATCHDIR=	${.CURDIR}/../../net/libnice/patches
 DISTINFO_FILE=	${.CURDIR}/../../net/libnice/distinfo
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	libnice<0.0.13
 

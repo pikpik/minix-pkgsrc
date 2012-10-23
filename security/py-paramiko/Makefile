@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/04/05 08:36:41 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2011/07/22 14:03:30 obache Exp $
 #
 
 DISTNAME=		paramiko-1.7.7.1
@@ -12,8 +12,6 @@ COMMENT=		SSH2 protocol library
 LICENSE=		gnu-lgpl-v2.1
 
 DEPENDS+=   ${PYPKGPREFIX}-crypto>=2.1:../../security/py-crypto
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 REPLACE_PYTHON=	paramiko/rng*.py

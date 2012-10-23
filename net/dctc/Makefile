@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2012/09/15 10:05:57 obache Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/03 21:56:53 wiz Exp $
 
 DISTNAME=	dctc-0.85.9
 PKGREVISION=	8
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ac2i.homelinux.com/dctc/
 COMMENT=	Direct Connect clone (Direct Connect Text Client)
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BDB_ACCEPTED=		db4 db5
 USE_LIBTOOL=		yes

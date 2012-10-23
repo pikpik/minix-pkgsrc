@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/05/10 14:01:10 taca Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 21:56:55 wiz Exp $
 #
 # todo: set location of [md-]whois.conf and fix in man page too
 # todo: build and install the po/ files and add to PLIST
@@ -21,7 +21,6 @@ WRKSRC=		${WRKDIR}/whois-${VERSION}
 USE_TOOLS+=	gmake perl
 
 INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

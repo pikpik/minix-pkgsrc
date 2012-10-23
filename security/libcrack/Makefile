@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/10/28 18:50:53 drochner Exp $
+# $NetBSD: Makefile,v 1.16 2009/12/10 23:30:53 abs Exp $
 #
 
 DISTNAME=	cracklib,2.7
@@ -12,7 +12,6 @@ HOMEPAGE= http://www.crypticide.com/alecm/security/cracklib/cracklib,2.7.txt
 COMMENT=	Password checking library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=user-destdir
 
 USE_LIBTOOL=	YES
 

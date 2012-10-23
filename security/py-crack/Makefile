@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/10/29 06:15:12 obache Exp $
+# $NetBSD: Makefile,v 1.10 2011/12/03 00:02:16 joerg Exp $
 #
 
 DISTNAME=	pycrack-0.01
@@ -11,8 +11,6 @@ MAINTAINER=	darcy@NetBSD.org
 HOMEPAGE=	http://www.digitalevacuation.org/
 COMMENT=	Python interface to cracklib
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 

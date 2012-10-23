@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/07/27 13:08:54 sborrill Exp $
+# $NetBSD: Makefile,v 1.11 2012/08/14 11:14:40 sborrill Exp $
 #
 
 DISTNAME=		istgt-20120811
@@ -9,8 +9,6 @@ MAINTAINER=		sborrill@NetBSD.org
 HOMEPAGE=		http://shell.peach.ne.jp/aoyama/
 COMMENT=		Configurable iSCSI target
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

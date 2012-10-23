@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/10/30 19:55:30 jym Exp $
+# $NetBSD: Makefile,v 1.2 2009/11/03 21:13:24 jym Exp $
 #
 
 DISTNAME=	cntlm-0.35.1
@@ -11,8 +11,6 @@ COMMENT=	NTLM/NTLMv2 authenticating HTTP proxy
 LICENSE=	gnu-gpl-v2
 
 HAS_CONFIGURE=	yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CNTLM_USER?=	cntlm
 CNTLM_GROUP?=	cntlm

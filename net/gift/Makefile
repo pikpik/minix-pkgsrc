@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/12/21 20:34:05 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:56:54 wiz Exp $
 #
 
 DISTNAME=	gift-0.11.8.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	alex@catbull.com
 HOMEPAGE=	http://gift.sourceforge.net/
 COMMENT=	Modular daemon that abstracts filesharing protocols
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run pkg-config
 USE_PKGLOCALEDIR=	yes

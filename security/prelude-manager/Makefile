@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/06/14 07:45:30 sbd Exp $
+# $NetBSD: Makefile,v 1.37 2012/07/05 16:07:18 drochner Exp $
 #
 
 DISTNAME=		prelude-manager-0.9.15
@@ -11,8 +11,6 @@ MASTER_SITES=		http://www.prelude-ids.com/download/releases/prelude-manager/ \
 MAINTAINER=		shannonjr@NetBSD.org
 HOMEPAGE=		http://www.prelude-ids.org/download/releases/
 COMMENT=		Prelude IDS manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 
