@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2006/11/13 15:00:56 obache Exp $
+# $NetBSD: Makefile,v 1.9 2008/08/25 14:46:29 joerg Exp $
 #
 
 DISTNAME=	855resolution-0.4
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://perso.orange.fr/apoirier/
 COMMENT=	BIOS VESA resolution utility for 855/865/915 Intel chips
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	NetBSD-*-i386 NetBSD-*-x86_64 Linux-*-i386
 

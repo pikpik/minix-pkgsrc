@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/10/02 17:12:00 tron Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/08 23:00:55 adam Exp $
 #
 
 DISTNAME=	notify-python-0.1.1
@@ -12,8 +12,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.galago-project.org/
 COMMENT=	Python bindings for libnotify
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

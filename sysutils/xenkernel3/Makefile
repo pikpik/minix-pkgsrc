@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2011/09/10 18:35:51 bouyer Exp $
+# $NetBSD: Makefile,v 1.22 2011/11/20 03:48:10 jym Exp $
 #
 
 VERSION=	3.1.4
@@ -52,7 +52,6 @@ PLIST_SRC=		PLIST.i386 PLIST
 PLIST_SRC=		PLIST
 .endif
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+= 	xen3-kernel
 XENKERNELDIR=		${PREFIX}/xen3-kernel
 

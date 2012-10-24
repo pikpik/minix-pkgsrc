@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/05/29 22:58:52 cheusov Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/01 21:19:44 cheusov Exp $
 #
 
 DISTNAME=	9base-6
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tools.suckless.org/9base
 COMMENT=	Port of various original plan9 tools
 #LICENSE=	lucent-public-v1.02 AND mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

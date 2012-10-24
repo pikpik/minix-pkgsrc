@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/08/12 09:15:57 imil Exp $
 #
 
 DISTNAME=	mcollective-2.1.1
@@ -10,8 +10,6 @@ MAINTAINER=	imil@NetBSD.org
 HOMEPAGE=	http://puppetlabs.com/mcollective/
 COMMENT=	Framework to build server orchestration
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${RUBY_PKGPREFIX}-stomp>=1.2.5:../../devel/ruby-stomp
 

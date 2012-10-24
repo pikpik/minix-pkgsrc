@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/02/10 12:01:04 abs Exp $
+# $NetBSD: Makefile,v 1.17 2011/07/03 13:59:53 shattered Exp $
 #
 
 DISTNAME=	cpuburn_1_4
@@ -16,7 +16,6 @@ ONLY_FOR_PLATFORM= *-*-i[3456]86
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
-PKG_DESTDIR_SUPPORT= 	user-destdir
 INSTALLATION_DIRS=	bin share/doc/cpuburn
 
 do-install:

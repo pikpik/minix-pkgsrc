@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/07/01 19:30:11 gls Exp $
+# $NetBSD: Makefile,v 1.22 2012/08/06 19:53:50 gls Exp $
 #
 
 VERSION=		1.4.3
@@ -11,8 +11,6 @@ MAINTAINER=		gls@NetBSD.org
 HOMEPAGE=		http://fabfile.org/
 COMMENT=		Simple Pythonic remote deployment tool
 LICENSE=		2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		${PYPKGPREFIX}-ssh>=1.7.8:../../security/py-ssh
 

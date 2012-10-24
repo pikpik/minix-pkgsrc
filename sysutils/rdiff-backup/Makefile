@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2011/04/22 13:44:45 obache Exp $
+# $NetBSD: Makefile,v 1.43 2012/03/15 11:53:39 obache Exp $
 
 DISTNAME=	rdiff-backup-1.2.8
 PKGREVISION=	5
@@ -8,8 +8,6 @@ MASTER_SITES=	http://savannah.nongnu.org/download/rdiff-backup/
 MAINTAINER=	snj@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/rdiff-backup/
 COMMENT=	Remote incremental backup utility
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/01/07 09:14:11 rillig Exp $
+# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:45 joerg Exp $
 #
 
 DISTNAME=	pacpidump
@@ -10,8 +10,6 @@ MASTER_SITES=	http://people.freebsd.org/~takawata/
 MAINTAINER=	uebayasi@NetBSD.org
 HOMEPAGE=	${MASTER_SITES}	# Just a directory list. :-)
 COMMENT=	Portable ACPI table dumper
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 BUILD_TARGET=	# null

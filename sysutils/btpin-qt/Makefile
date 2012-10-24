@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/10/02 17:11:56 tron Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/08 23:02:24 adam Exp $
 
 DISTNAME=		btpin-qt-1.5
 PKGREVISION=		5
@@ -11,8 +11,6 @@ COMMENT=		Bluetooth PIN Client
 LICENSE=		2-clause-bsd
 
 ONLY_FOR_PLATFORM=	NetBSD-[4-9].*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 

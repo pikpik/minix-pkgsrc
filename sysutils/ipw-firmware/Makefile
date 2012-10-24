@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/05/19 08:59:34 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/05/19 15:06:00 marino Exp $
 
 DISTNAME=	ipw2100-fw-1.2
 PKGNAME=	ipw-firmware-1.0
@@ -19,8 +19,6 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 
 # http://leaf.dragonflybsd.org/mailarchive/users/2012-05/msg00066.html
 NOT_FOR_PLATFORM+=	DragonFly-*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 

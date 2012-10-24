@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/10/03 21:57:41 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/08 23:00:58 adam Exp $
 #
 
 DISTNAME=	Gnome2-VFS-1.081
@@ -14,8 +14,6 @@ COMMENT=	Perl bindings for the Gnome virtual file system
 
 DEPENDS+=	p5-ExtUtils-Depends>=0.300:../../devel/p5-ExtUtils-Depends
 DEPENDS+=	p5-ExtUtils-PkgConfig>=1.00:../../devel/p5-ExtUtils-PkgConfig
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 

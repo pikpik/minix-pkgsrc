@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2011/10/02 01:20:55 dholland Exp $
+# $NetBSD: Makefile,v 1.26 2012/01/29 00:16:38 marino Exp $
 #
 
 DISTNAME=	gtoaster1.0Beta5
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gnometoaster.rulez.org/
 COMMENT=	CD recording frontend for X/GTK+
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/gtoaster
 USE_TOOLS+=		gmake

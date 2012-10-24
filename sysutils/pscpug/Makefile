@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/06/12 02:14:46 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/03/21 17:35:06 snj Exp $
 
 DISTNAME=		pscpug035
 PKGNAME=		pscpug-0.3.5
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		bartosz.kuzma@gmail.com
 HOMEPAGE=		http://www.diablonet.net/~mercadal/projects/pscpug/
 COMMENT=		Graph a given process's CPU usage
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

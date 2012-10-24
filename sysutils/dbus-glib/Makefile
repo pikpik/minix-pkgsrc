@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2012/09/15 10:06:22 obache Exp $
+# $NetBSD: Makefile,v 1.32 2012/09/30 21:52:32 dholland Exp $
 #
 
 DISTNAME=	dbus-glib-0.100
@@ -12,7 +12,6 @@ COMMENT=	GLib bindings for the D-BUS message bus system
 LICENSE=	gnu-gpl-v2
 
 MAKE_JOBS_SAFE=		NO
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake msgfmt pkg-config

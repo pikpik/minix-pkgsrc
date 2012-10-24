@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2010/09/10 07:58:44 taca Exp $
+# $NetBSD: Makefile,v 1.21 2011/02/21 16:01:19 taca Exp $
 #
 
 DISTNAME=	ruby-quota-0.5.1
@@ -15,7 +15,6 @@ LICENSE=	modified-bsd
 USE_RUBY_EXTCONF=	yes
 INSTALL_TARGET=		site-install
 INSTALLATION_DIRS=	${RUBY_VENDORLIB} ${RUBY_DOC}/quota
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DOCS=		ChangeLog README
 

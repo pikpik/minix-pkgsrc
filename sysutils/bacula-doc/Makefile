@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2010/12/26 18:39:46 adam Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/06 17:54:53 christos Exp $
 
 DISTNAME=	bacula-docs-5.2.12
 PKGNAME=	${DISTNAME:S/docs/doc/}
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.bacula.org/
 COMMENT=	Documentation for Bacula - The Network Backup Solution
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes

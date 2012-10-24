@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/01/27 19:13:37 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:39 wiz Exp $
 
 DISTNAME=		lilo-22.8.src
 PKGREVISION=		2
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE:=system/boot/lilo/} \
 MAINTAINER=		reed@reedmedia.net
 HOMEPAGE=		http://lilo.go.dyndns.org/
 COMMENT=		Generic boot loader for Linux
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # This is LInux LOader; it can load different operating systems.
 # Build untested on other operating systems.

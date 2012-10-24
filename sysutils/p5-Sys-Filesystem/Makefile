@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/06/30 05:10:51 dholland Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:57:42 wiz Exp $
 #
 
 DISTNAME=	Sys-Filesystem-1.30
@@ -16,7 +16,6 @@ DEPENDS+=	{perl>=5.10.1,p5-Module-Pluggable>=3.9}:../../devel/p5-Module-Pluggabl
 DEPENDS+=	p5-Params-Util>=1.00:../../devel/p5-Params-Util
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Sys/Filesystem/.packlist
 PERL5_MODULE_TYPE=	Module::Build

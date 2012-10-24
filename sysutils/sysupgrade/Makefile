@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/07 12:48:32 jmmv Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/11 00:16:46 jmmv Exp $
 
 DISTNAME=	sysupgrade-1.4
 CATEGORIES=	sysutils
@@ -10,7 +10,6 @@ COMMENT=	Automate upgrades of NetBSD
 LICENSE=	modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		YES

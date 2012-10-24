@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/03/03 00:13:59 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/09/15 10:06:32 obache Exp $
 
 VERS=		3.2.4
 DISTNAME=	syslog-ng_${VERS}
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.balabit.com/network-security/syslog-ng/
 COMMENT=	Syslog-ng tries to fill the gaps original syslogd's were lacking
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	flex pkg-config gmake awk:run
 USE_LIBTOOL=	YES

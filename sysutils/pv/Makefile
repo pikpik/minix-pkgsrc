@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/06/12 02:14:47 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2011/04/22 13:44:45 obache Exp $
 #
 
 DISTNAME=		pv-0.9.6
@@ -10,8 +10,6 @@ MASTER_SITES+=		${MASTER_SITE_SOURCEFORGE:=pipeviewer/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ivarch.com/programs/pv.shtml
 COMMENT=		Monitor the progress of data through a pipeline
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake msgfmt

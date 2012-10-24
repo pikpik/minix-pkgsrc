@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/10/03 21:57:38 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:25 adam Exp $
 #
 
 DISTNAME=		gnome-system-tools-2.22.2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		System administraton tools for the GNOME desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnome-system-tools
 PKG_SUPPORTED_OPTIONS=	hal

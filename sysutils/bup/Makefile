@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/09/04 13:43:14 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:57:36 wiz Exp $
 #
 
 DISTNAME=	bup-0.25rc1
@@ -22,8 +22,6 @@ LICENSE=	gnu-gpl-v2
 DEPENDS+=	par2-[0-9]*:../../archivers/par2
 DEPENDS+=	${PYPKGPREFIX}-readline-[0-9]*:../../devel/py-readline
 DEPENDS+=	scmgit-base-[0-9]*:../../devel/scmgit-base
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # needs changing on each update
 DOCDIR=		${WRKDIR}/lelutin-bup-7e0bc2e

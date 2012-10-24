@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/01/21 18:57:42 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2009/02/10 12:49:56 abs Exp $
 #
 
 DISTNAME=	fix4SA110rev2-1.0
@@ -13,7 +13,6 @@ COMMENT=	Modify arm32 binaries to work around SA rev2 problems
 
 WRKSRC=		${WRKDIR}
 
-PKG_DESTDIR_SUPPORT= 	user-destdir
 INSTALLATION_DIRS=	bin share/doc
 
 do-build:

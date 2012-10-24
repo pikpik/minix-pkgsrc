@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/15 10:06:21 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/02 17:11:57 tron Exp $
 #
 
 DISTNAME=	conky-1.9.0
@@ -11,8 +11,6 @@ MAINTAINER=	imil@NetBSD.org
 HOMEPAGE=	http://conky.sourceforge.net/
 COMMENT=	Free, light-weight system monitor for X
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

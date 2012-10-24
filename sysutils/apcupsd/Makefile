@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2012/02/18 21:10:48 bouyer Exp $
+# $NetBSD: Makefile,v 1.68 2012/05/07 12:55:23 shattered Exp $
 
 DISTNAME=		apcupsd-3.14.9
 PKGREVISION=		4
@@ -8,8 +8,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=apcupsd/}
 MAINTAINER=		bouyer@NetBSD.org
 HOMEPAGE=		http://www.apcupsd.org/
 COMMENT=		UPS power management for APCC Products
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt sh makedepend
 USE_LANGUAGES=		c c++

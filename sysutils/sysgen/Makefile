@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/01/07 09:14:13 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2009/02/13 22:24:14 abs Exp $
 #
 
 DISTNAME=	sysgen
@@ -14,7 +14,6 @@ WRKSRC=		${WRKDIR}
 BUILD_TARGET=	sysgen
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sysgen ${DESTDIR}${PREFIX}/bin

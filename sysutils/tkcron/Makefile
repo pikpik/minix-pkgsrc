@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/01/27 20:20:06 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2011/03/18 20:47:06 zafer Exp $
 #
 
 DISTNAME=	tkcron-2.12
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tcl.gz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Graphical frontend to crontab
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	tk>=8.3.2:../../x11/tk
 

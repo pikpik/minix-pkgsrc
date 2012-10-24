@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/10/28 02:18:08 obache Exp $
+# $NetBSD: Makefile,v 1.25 2009/07/07 19:58:19 joerg Exp $
 #
 
 DISTNAME=	skill-4.1.4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	kim@tac.nyc.ny.us
 HOMEPAGE=	http://mysite.verizon.net/jforys/jeffware.html
 COMMENT=	Signal processes given user names, ttys, commands, or pids
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM+= Interix-*-* # currently no machdep support
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/08/29 17:17:24 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2012/09/18 07:56:52 drochner Exp $
 #
 
 DISTNAME=	microcode-20120606
@@ -11,8 +11,6 @@ MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://downloadmirror.intel.com/21385/eng/
 COMMENT=	Firmware updates for Intel x86 processors
 #LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM+=	NetBSD-6.99.*-i386
 ONLY_FOR_PLATFORM+=	NetBSD-6.99.*-x86_64

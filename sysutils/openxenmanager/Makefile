@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/08/20 11:41:46 ryoon Exp $
 #
 
 DISTNAME=	openxenmanager_0.r80+dfsg.orig
@@ -10,8 +10,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/openxenmanager/
 COMMENT=	Open source XenServer/Xen Cloud Platform interface
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	# none

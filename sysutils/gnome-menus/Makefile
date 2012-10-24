@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/03/03 00:11:53 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/09/15 10:06:24 obache Exp $
 #
 
 DISTNAME=	gnome-menus-2.30.5
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Implementation of the desktop menu specification for GNOME
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

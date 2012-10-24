@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/03/15 11:53:39 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:57:45 wiz Exp $
 #
 
 VERSION=		3.1.4
@@ -11,8 +11,6 @@ MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
 MAINTAINER=		bouyer@NetBSD.org
 HOMEPAGE=		http://xen.org/
 COMMENT=		Tools for Virtual Machine Extensions support in Xen
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	dev86-[0-9]*:../../devel/dev86 # needed to build firmware
 

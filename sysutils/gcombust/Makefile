@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2009/07/22 09:01:46 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2011/04/22 13:44:41 obache Exp $
 #
 
 DISTNAME=		gcombust-0.1.54
@@ -9,8 +9,6 @@ MASTER_SITES=		${HOMEPAGE}
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.abo.fi/~jmunsin/gcombust/
 COMMENT=		Graphical frontend for CD mastering (mkisofs, cdrecord, ...)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		cdrtools>=1.10:../../sysutils/cdrtools
 DEPENDS+=		cdlabelgen-[0-9]*:../../graphics/cdlabelgen

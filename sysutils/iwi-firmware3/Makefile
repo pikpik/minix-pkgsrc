@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/05/19 08:59:34 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/05/19 15:07:46 marino Exp $
 #
 
 DISTNAME=		ipw2200-fw-3.0
@@ -22,8 +22,6 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NOT_FOR_PLATFORM+=	DragonFly-*-*
 
 CONFLICTS+=		iwi-firmware-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes

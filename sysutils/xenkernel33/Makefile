@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/01/05 12:02:38 cegger Exp $
+# $NetBSD: Makefile,v 1.18 2012/07/28 12:02:16 drochner Exp $
 #
 
 VERSION=	3.3.2
@@ -14,8 +14,6 @@ HOMEPAGE=	http://xen.org/
 COMMENT=	Xen 3.3.2 Kernel
 
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	Linux-2.6*-i386 Linux-2.6*-x86_64
 ONLY_FOR_PLATFORM+=	NetBSD-[5-9].*-x86_64 NetBSD-[5-9].*-i386

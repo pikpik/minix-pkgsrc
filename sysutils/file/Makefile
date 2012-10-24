@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/03/30 03:53:54 taca Exp $
+# $NetBSD: Makefile,v 1.27 2012/07/11 19:01:00 wiz Exp $
 
 DISTNAME=		file-5.11
 CATEGORIES=		sysutils
@@ -8,8 +8,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.darwinsys.com/file/
 COMMENT=		Tool for determining file type
 LICENSE=		2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2012/01/29 00:20:33 marino Exp $
+# $NetBSD: Makefile,v 1.39 2012/02/06 12:41:41 wiz Exp $
 
 DISTNAME=	xfe-1.04
 PKGREVISION=	7
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xfe/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://roland65.free.fr/xfe/
 COMMENT=	Fast MS-Explorer like filemanager for X
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/09/15 10:06:21 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:57:36 wiz Exp $
 #
 
 CONSOLEKIT_VER=		0.3.0
@@ -14,7 +14,6 @@ HOMEPAGE=	http://www.freedesktop.org/wiki/Software/ConsoleKit
 COMMENT=	Framework for defining and tracking users, login sessions, and seats
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_SYSCONFSUBDIR=	ConsoleKit
 
 EGDIR=		${PREFIX}/share/examples/consolekit

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/06/16 08:55:54 dholland Exp $
+# $NetBSD: Makefile,v 1.14 2012/06/28 05:15:38 dholland Exp $
 #
 
 DISTNAME=		sformat-3.5
@@ -11,7 +11,6 @@ HOMEPAGE=		http://freshmeat.net/projects/sformat
 COMMENT=		SCSI disk maintainance, formating, and ultimative repair tool with support for NetBSD labels
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

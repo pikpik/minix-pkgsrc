@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/06/14 07:44:42 sbd Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/15 10:06:29 obache Exp $
 #
 
 DISTNAME=	DeviceKit-003
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/DeviceKit
 COMMENT=	Modular hardware abstraction layer
 LICENSE=	gnu-lgpl-v2 AND gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

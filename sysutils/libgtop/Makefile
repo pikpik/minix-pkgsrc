@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/09/15 10:06:29 obache Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/03 21:57:39 wiz Exp $
 
 DISTNAME=		libgtop-2.28.4
 PKGREVISION=		4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Library to retrieve system information, used in GNOME2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 OSVERSION_SPECIFIC=	YES
 

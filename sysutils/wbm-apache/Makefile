@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2009/05/16 17:10:40 kefren Exp $
+# $NetBSD: Makefile,v 1.9 2010/07/11 17:41:01 joerg Exp $
 
 WBM_NAME=	apache
 
 COMMENT=	Webmin module for configuring Apache servers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 

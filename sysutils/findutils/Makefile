@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2012/05/29 22:02:31 cheusov Exp $
+# $NetBSD: Makefile,v 1.30 2012/06/01 20:16:06 cheusov Exp $
 
 DISTNAME=	findutils-4.2.33
 PKGREVISION=	3
@@ -12,7 +12,6 @@ LICENSE=	gnu-gpl-v3
 
 GNU_CONFIGURE=		YES
 INFO_FILES=		YES
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_PKGLOCALEDIR=	YES
 
 LDFLAGS.IRIX+=		-lgen

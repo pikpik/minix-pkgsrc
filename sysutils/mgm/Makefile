@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/01/27 19:24:27 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:57:40 wiz Exp $
 
 DISTNAME=	mgm-1.1
 PKGREVISION=	3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linuxmafia.com/mgm/
 COMMENT=	Moaning Goat Meter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Tk-[0-9]*:../../x11/p5-Tk
 

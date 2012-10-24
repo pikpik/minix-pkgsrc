@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/05/31 09:16:58 sno Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:41 wiz Exp $
 
 DISTNAME=	Linux-Inotify2-1.22
 PKGNAME=	p5-${DISTNAME:S/22/2.2/}
@@ -14,8 +14,6 @@ LICENSE=	${PERL5_LICENSE}
 DEPENDS+=	p5-common-sense-[0-9]*:../../devel/p5-common-sense
 
 ONLY_FOR_PLATFORM=	Linux-*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 

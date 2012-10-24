@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/07/29 21:45:39 abs Exp $
+# $NetBSD: Makefile,v 1.8 2012/07/29 21:46:45 abs Exp $
 
 DISTNAME=	dc-tools-1.4
 CATEGORIES=	sysutils
@@ -14,8 +14,6 @@ COMMENT=	Dreamcast bootable CDs tools (mainly from Marcus Comstedt)
 #LICENSE=	# TODO: (see mk/license.mk)
 
 DCBURN_DISTFILE=abs0-dc-burn-netbsd-1.4-0-g1004515
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	cdrtools>=2.01:../../sysutils/cdrtools
 

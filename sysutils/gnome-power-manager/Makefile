@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/10/03 21:57:38 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/08 23:02:25 adam Exp $
 #
 
 DISTNAME=	gnome-power-manager-2.24.4
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://projects.gnome.org/gnome-power-manager/
 COMMENT=	GNOME desktop session daemon for managing power management
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	xmlto-[0-9]*:../../textproc/xmlto
 

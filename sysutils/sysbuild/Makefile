@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/08/25 19:20:53 jmmv Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/13 18:40:33 jmmv Exp $
 
 DISTNAME=	sysbuild-2.4
 CATEGORIES=	sysutils
@@ -10,7 +10,6 @@ COMMENT=	Automates builds of NetBSD and manages source trees
 LICENSE=	modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/10/03 21:57:35 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/08 23:02:23 adam Exp $
 #
 
 DISTNAME=		amtterm-1.3
@@ -12,8 +12,6 @@ COMMENT=		Active Management Technology (AMT) tools
 LICENSE=		gnu-gpl-v2
 
 DEPENDS+=		p5-SOAP-Lite-[0-9]*:../../net/p5-SOAP-Lite
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake pkg-config perl:run
 
