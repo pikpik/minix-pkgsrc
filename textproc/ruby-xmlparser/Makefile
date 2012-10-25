@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/09/10 08:48:31 taca Exp $
+# $NetBSD: Makefile,v 1.15 2011/02/21 16:01:22 taca Exp $
 
 DISTNAME=	xmlparser-0.7.1
 PKGREVISION=	1
@@ -8,8 +8,6 @@ MASTER_SITES=	http://www.yoshidam.net/
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.yoshidam.net/Ruby.html#xmlparser
 COMMENT=	Ruby bindings to the Expat XML parsing library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME:C/-.*//}
 USE_RUBY_EXTCONF=	YES

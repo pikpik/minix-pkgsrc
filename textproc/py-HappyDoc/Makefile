@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/10/16 07:56:15 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/02/04 11:48:08 obache Exp $
 
 DISTNAME=	HappyDoc_r2_1
 PKGNAME=	${PYPKGPREFIX}-HappyDoc-2.1
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=happydoc/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://happydoc.sourceforge.net/
 COMMENT=	Python tool to generate Python API documents
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	#none
 

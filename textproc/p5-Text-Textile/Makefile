@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 15:14:15 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:06 wiz Exp $
 #
 
 DISTNAME=	Text-Textile-2.12
@@ -11,8 +11,6 @@ MAINTAINER=	heinz@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Text-Textile/
 COMMENT=	Perl impementation of the Textile formatting language
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Textile/.packlist
 USE_LANGUAGES=		# none

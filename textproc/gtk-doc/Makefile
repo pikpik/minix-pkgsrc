@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2012/06/14 07:44:41 sbd Exp $
+# $NetBSD: Makefile,v 1.48 2012/10/03 21:57:48 wiz Exp $
 #
 
 DISTNAME=	gtk-doc-1.18
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gtk.org/gtk-doc/
 COMMENT=	Tools for authors of the GTK+ reference documentation
 LICENSE=	gnu-gpl-v3 AND gnu-fdl-v1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	docbook-xml>=4.4nb1:../../textproc/docbook-xml
 DEPENDS+=	docbook-xsl>=1.68.1:../../textproc/docbook-xsl

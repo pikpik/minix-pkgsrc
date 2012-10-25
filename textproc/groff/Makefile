@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2012/10/03 21:57:48 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2012/10/21 21:23:45 cheusov Exp $
 #
 
 DISTNAME=	groff-1.20.1
@@ -16,7 +16,6 @@ CONFLICTS=		mdocml-[0-9]* ja-groff-[0-9]*
 CHECK_PERMS=		NO
 MAKE_JOBS_SAFE=		NO
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	share/groff/site-tmac
 
 USE_LANGUAGES=		c c++

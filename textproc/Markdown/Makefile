@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/04/15 22:01:04 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:46 wiz Exp $
 #
 
 DISTNAME=	Markdown_1.0.1
@@ -12,8 +12,6 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://daringfireball.net/projects/markdown/
 COMMENT=	Text-to-HTML conversion tool for web writers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 NO_BUILD=	yes

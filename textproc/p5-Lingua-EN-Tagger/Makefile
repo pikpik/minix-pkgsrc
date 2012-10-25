@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/07 09:55:34 sno Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:53 wiz Exp $
 #
 
 DISTNAME=	Lingua-EN-Tagger-0.20
@@ -19,8 +19,6 @@ DEPENDS+=	p5-Memoize-ExpireLRU>=0.55:../../devel/p5-Memoize-ExpireLRU
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Lingua/EN/Tagger/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

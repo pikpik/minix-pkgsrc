@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/06/12 02:14:52 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2009/07/08 13:56:00 joerg Exp $
 #
 
 DISTNAME=		cmTemplate-0.3.2
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.bouncingchairs.net/oss/
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://www.bouncingchairs.net/oss/
 COMMENT=		Simple and fast Python template engine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PY_PATCHPLIST=	# empty
 PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 15:14:17 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:08 wiz Exp $
 #
 
 DISTNAME=	XML-Elemental-2.11
@@ -15,7 +15,6 @@ LICENSE=	artistic
 DEPENDS+=	p5-XML-SAX>=0:../../textproc/p5-XML-SAX
 BUILD_DEPENDS+=	p5-Task-Weaken>=1.02:../../devel/p5-Task-Weaken
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_PACKLIST=	auto/XML/Elemental/.packlist
 
 .include "../../lang/perl5/module.mk"

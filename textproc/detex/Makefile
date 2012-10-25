@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/11/20 02:19:26 chuck Exp $
+# $NetBSD: Makefile,v 1.13 2009/07/07 22:20:41 joerg Exp $
 #
 
 DISTNAME=	detex-2.8
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cs.purdue.edu/homes/trinkle/detex/
 COMMENT=	Remove LaTeX commands
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	lex
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2006/12/15 14:34:21 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2009/07/07 22:08:13 joerg Exp $
 #
 
 DISTNAME=		helpdeco-2.1.3
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=helpdeco/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/helpdeco/
 COMMENT=		Windows .hlp to .rtf converter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

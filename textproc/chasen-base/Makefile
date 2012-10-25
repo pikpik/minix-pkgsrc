@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/05/21 13:49:59 obache Exp $
+# $NetBSD: Makefile,v 1.21 2011/12/11 14:26:27 taca Exp $
 #
 
 DISTNAME=		chasen-${CHASEN_VERSION}
@@ -19,8 +19,6 @@ GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 OWN_DIRS=		${PREFIX}/${CHASEN_DICDIR}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../textproc/chasen/Makefile.common"
 .include "../../converters/libiconv/buildlink3.mk"

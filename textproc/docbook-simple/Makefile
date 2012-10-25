@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/06/14 22:58:09 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2009/10/31 23:41:56 jmmv Exp $
 #
 
 DISTNAME=	docbook-simple-1.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://docbook.org/xml/simple/
 COMMENT=	Simplified DocBook XML DTD
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 NO_CONFIGURE=	YES

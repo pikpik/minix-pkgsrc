@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/10/11 09:31:58 uebayasi Exp $
+# $NetBSD: Makefile,v 1.3 2009/08/06 01:44:56 minskim Exp $
 #
 
 .include "../../textproc/suikyo/Makefile.common"
@@ -9,8 +9,6 @@ PKGREVISION=	1
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://taiyaki.org/suikyo/elisp/index.html
 COMMENT=	Suikyo for Emacs Lisp
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	suikyo-conv-table>=${SUIKYO_VER}:../../textproc/suikyo-conv-table
 DEPENDS+=	suikyo-docs>=${SUIKYO_VER}:../../textproc/suikyo-docs

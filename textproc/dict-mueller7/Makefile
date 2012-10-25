@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/03/20 21:08:23 cheusov Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:47 wiz Exp $
 
 DISTNAME=	Mueller7GPL
 PKGNAME=	dict-mueller7-1.2
@@ -20,8 +20,6 @@ BUILD_DEPENDS+=	p5-Unicode-Map8-[0-9]*:../../converters/p5-Unicode-Map8
 BUILD_DEPENDS+= coreutils-[0-9]*:../../sysutils/coreutils # we need GNU fmt
 
 WRKSRC=		${WRKDIR}/usr/local/share/dict
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

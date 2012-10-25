@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2012/09/07 11:37:50 sno Exp $
+# $NetBSD: Makefile,v 1.40 2012/10/03 21:58:01 wiz Exp $
 #
 
 DISTNAME=	Text-CSV_XS-0.91
@@ -13,8 +13,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Text-CSV_XS/
 COMMENT=	Routines for composition and decomposition of comma-separated values
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/CSV_XS/.packlist
 

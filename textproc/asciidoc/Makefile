@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2012/06/14 07:44:46 sbd Exp $
+# $NetBSD: Makefile,v 1.34 2012/08/06 20:05:27 gls Exp $
 #
 
 DISTNAME=		asciidoc-8.6.8
@@ -9,8 +9,6 @@ MAINTAINER=		gls@NetBSD.org
 HOMEPAGE=		http://www.methods.co.nz/asciidoc/
 COMMENT=		ASCII to formatted document converter
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		docbook-xsl-[0-9]*:../../textproc/docbook-xsl
 DEPENDS+=		getopt-[0-9]*:../../misc/getopt

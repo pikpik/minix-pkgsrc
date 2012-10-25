@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/08/14 15:14:13 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:58:04 wiz Exp $
 #
 
 DISTNAME=		Text-Reflow-1.09
@@ -14,7 +14,6 @@ COMMENT=		Reflowing of text using Knuth's paragraphing algorithm
 LICENSE=		${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Reflow/.packlist
 

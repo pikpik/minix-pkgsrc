@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/09/06 16:20:10 snj Exp $
+# $NetBSD: Makefile,v 1.18 2009/11/17 03:17:01 snj Exp $
 
 DISTNAME=	diffstat-1.51
 CATEGORIES=	textproc
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	snj@NetBSD.org
 HOMEPAGE=	http://invisible-island.net/diffstat/diffstat.html
 COMMENT=	Display a histogram of diff changes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2012/10/03 23:40:36 cheusov Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/04 00:21:59 cheusov Exp $
 #
 
 DISTNAME=		aaronsw-${GHNAME}-${GHVERSION}-0-g${GHCOMMIT}
@@ -16,8 +16,6 @@ COMMENT=		Convert HTML into easy-to-read plain ASCII text
 LICENSE=		gnu-gpl-v2
 
 FETCH_USING=		curl
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 PYTHON_SELF_CONFLICT=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 15:14:08 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:57:58 wiz Exp $
 
 DISTNAME=	Snowball-Norwegian-1.2
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Snowball-Norwegian/
 COMMENT=	Porters stemming algorithm for Norwegian
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Lingua/Stem/Snowball/No/.packlist
 PERL5_MODULE_TYPE=	Module::Build

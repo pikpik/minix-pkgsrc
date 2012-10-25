@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/10/21 21:34:42 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/22 10:52:03 drochner Exp $
 #
 
 DISTNAME=	lxml-3.0.1
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lxml.de/
 COMMENT=	Python binding for libxml2 and libxslt
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 TEST_TARGET=	test_inplace
 PYTHON_VERSIONS_INCLUDE_3X=	yes

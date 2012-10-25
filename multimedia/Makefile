@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.192 2012/10/10 13:35:35 drochner Exp $
+# $NetBSD: Makefile,v 1.193 2012/10/10 14:29:41 drochner Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -101,6 +101,7 @@ SUBDIR+=	mediainfo
 SUBDIR+=	mediatomb
 SUBDIR+=	mencoder
 SUBDIR+=	ming
+SUBDIR+=	minidlna
 SUBDIR+=	mjpegtools
 SUBDIR+=	mkv2mp4
 SUBDIR+=	mkvtoolnix

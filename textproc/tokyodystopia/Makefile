@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/06/18 10:12:05 obache Exp $
+# $NetBSD: Makefile,v 1.16 2010/08/06 04:43:23 obache Exp $
 #
 
 DISTNAME=	tokyodystopia-0.9.15
@@ -9,8 +9,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://fallabs.com/tokyodystopia/
 COMMENT=	Full-text search system
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake pkg-config

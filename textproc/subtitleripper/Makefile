@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2011/01/13 13:39:28 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/02/06 12:41:45 wiz Exp $
 #
 
 DISTNAME=	subtitleripper-0.3-4
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/subtitleripper/
 COMMENT=	Subtitle ripping program
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	gocr-[0-9]*:../../graphics/gocr
 

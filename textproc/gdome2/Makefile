@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/06/14 07:43:11 sbd Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/15 10:06:36 obache Exp $
 
 DISTNAME=	gdome2-0.8.1
 PKGREVISION=	7
@@ -8,8 +8,6 @@ MASTER_SITES=	http://gdome2.cs.unibo.it/tarball/
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://gdome2.cs.unibo.it/
 COMMENT=	Gnome DOM (Document Object Model) engine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config

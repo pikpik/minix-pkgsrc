@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/04/15 01:50:08 obache Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:58:12 wiz Exp $
 #
 
 DISTNAME=	XML-SAX-ExpatXS-1.31
@@ -16,7 +16,6 @@ LICENSE=	${PERL5_LICENSE}
 DEPENDS+=	p5-XML-SAX>=0.13:../../textproc/p5-XML-SAX
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/XML/SAX/ExpatXS/.packlist
 MAKE_PARAMS+=		EXPATLIBPATH=${BUILDLINK_PREFIX.expat}/lib

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/07/05 11:04:38 sno Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:57:59 wiz Exp $
 #
 
 DISTNAME=		String-Formatter-0.102082
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/String-Formatter/
 COMMENT=		Perl 5 module to build sprintf-like functions of your own
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Params-Util-[0-9]*:../../devel/p5-Params-Util
 DEPENDS+=	p5-Sub-Exporter-[0-9]*:../../devel/p5-Sub-Exporter

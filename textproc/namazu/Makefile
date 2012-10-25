@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/07/24 14:31:34 mef Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:57:50 wiz Exp $
 
 DISTNAME=	namazu-2.0.21
 PKGREVISION=	1
@@ -21,7 +21,6 @@ GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c
 USE_LIBTOOL=		yes
 TEST_TARGET=		check
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		PKG_SYSCONFBASE
 CONFIGURE_ARGS+=	--localstatedir=${PREFIX}/${DATADIR} \

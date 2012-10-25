@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/08/14 15:14:20 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:58:12 wiz Exp $
 #
 
 DISTNAME=	XML-SemanticDiff-1.0000
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/XML-SemanticDiff/
 COMMENT=	Perl extension for comparing XML documents
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-XML-Parser-[0-9]*:../../textproc/p5-XML-Parser
 

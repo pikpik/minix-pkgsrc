@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/08/14 15:14:14 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 21:58:05 wiz Exp $
 #
 
 DISTNAME=		Text-Shellwords-1.08
@@ -12,7 +12,6 @@ HOMEPAGE=		http://search.cpan.org/dist/Text-Shellwords/
 COMMENT=		Wrapper around shellwords.pl package
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Shellwords/.packlist
 

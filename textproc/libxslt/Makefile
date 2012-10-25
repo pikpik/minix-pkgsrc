@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.90 2012/09/15 10:26:02 adam Exp $
+# $NetBSD: Makefile,v 1.91 2012/10/03 21:57:49 wiz Exp $
 
 DISTNAME=	libxslt-1.1.27
 PKGREVISION=	1
@@ -12,7 +12,6 @@ COMMENT=	XSLT parser library from the GNOME project
 LICENSE=	mit # with advertisement clause
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake perl

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 15:14:07 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:56 wiz Exp $
 
 DISTNAME=	PPI-HTML-1.08
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/PPI-HTML/
 COMMENT=	Perl 5 module to generate syntax-hightlighted HTML for Perl
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/PPI/HTML/.packlist

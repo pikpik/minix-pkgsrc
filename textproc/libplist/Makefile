@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/06/14 07:43:08 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/09/29 08:39:22 dholland Exp $
 #
 
 DISTNAME=	libplist-1.8
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.libimobiledevice.org/
 COMMENT=	Handle Apple Binary and XML Property Lists
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=	yes
 USE_TOOLS+=	gmake pkg-config

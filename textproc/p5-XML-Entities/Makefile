@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/08/14 15:14:17 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:58:08 wiz Exp $
 
 DISTNAME=	XML-Entities-1.0000
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Decode strings with XML entities
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/XML-Entities
 

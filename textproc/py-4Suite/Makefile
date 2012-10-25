@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/02/06 11:47:25 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 23:40:36 cheusov Exp $
 #
 
 VER=		1.0.2
@@ -11,8 +11,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://4suite.org/
 COMMENT=	Open-source platform for XML and RDF processing
 LICENSE=	apache-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2012/10/02 17:12:03 tron Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/08 23:00:42 adam Exp $
 
 DISTNAME=	gnome-spell-1.0.8
 PKGREVISION=	19
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Spell checking as you type like gtkspell
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES

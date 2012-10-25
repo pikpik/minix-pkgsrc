@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/02/24 09:39:43 fhajny Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:58:00 wiz Exp $
 #
 
 DISTNAME=	Text-Affixes-0.07
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Text-Affixes/
 COMMENT=	Prefixes and suffixes analysis of text
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Text/Affixes/.packlist
 USE_LANGUAGES=	# none

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 15:14:12 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:03 wiz Exp $
 
 DISTNAME=	Text-German-0.06
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Text-German/
 COMMENT=	German grundform reduction
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PERL+=		lib/Text/German.pm
 

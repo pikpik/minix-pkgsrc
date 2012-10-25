@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/06/10 09:39:42 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/04/27 12:32:04 obache Exp $
 
 DISTNAME=		sublib-0.9
 PKGREVISION=		5
@@ -13,8 +13,6 @@ COMMENT=		Library that eases the development of subtitling applications
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES=		# empty
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SUBST_CLASSES+=			fix-prefix
 SUBST_STAGE.fix-prefix=		pre-configure

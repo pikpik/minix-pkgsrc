@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/01/26 20:49:58 rhaen Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:58:11 wiz Exp $
 
 DISTNAME=	XML-Parser-Lite-Tree-0.14
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/XML-Parser/
 COMMENT=	Perl extension for a lightweight XML tree builder
 LICENSE=	(${PERL5_LICENSE}) AND artistic-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/XML/Parser/Lite/Tree/.packlist
 

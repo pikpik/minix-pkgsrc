@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/11/11 22:49:47 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 21:57:51 wiz Exp $
 #
 
 DISTNAME=		Convert-PEM-0.08
@@ -14,7 +14,6 @@ COMMENT=		Perl5 module to read/write ASN.1-encoded PEM files
 LICENSE=		${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-MIME-Base64-[0-9]*:../../converters/p5-MIME-Base64
 DEPENDS+=		p5-Convert-ASN1>=0.10:../../textproc/p5-Convert-ASN1

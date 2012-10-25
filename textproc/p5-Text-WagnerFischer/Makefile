@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/08/14 15:14:15 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:58:06 wiz Exp $
 #
 
 DISTNAME=	Text-WagnerFischer-0.04
@@ -13,7 +13,6 @@ COMMENT=	Perl module for configurable edit distance calculations
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/WagnerFischer/.packlist
 

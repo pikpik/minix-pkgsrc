@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/05/05 21:47:22 dholland Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 22:14:03 wiz Exp $
 #
 
 DISTNAME=	cssutils-0.9.9
@@ -12,8 +12,6 @@ MAINTAINER=	rhialto@falu.nl
 HOMEPAGE=	http://cthedot.de/cssutils/
 COMMENT=	Cascading Style Sheets parser and library for Python
 LICENSE=	gnu-lgpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	#none
 

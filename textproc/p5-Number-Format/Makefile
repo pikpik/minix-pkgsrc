@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/08/14 15:14:05 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 21:57:54 wiz Exp $
 #
 
 DISTNAME=		Number-Format-1.73
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Number-Format/
 COMMENT=		Perl extension for formatting numbers
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Number/Format/.packlist
 

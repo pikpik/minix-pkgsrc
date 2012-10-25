@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/12/16 16:49:26 hans Exp $
+# $NetBSD: Makefile,v 1.7 2012/02/27 11:53:07 obache Exp $
 #
 
 .include "../../textproc/mecab/Makefile.common"
@@ -8,8 +8,6 @@ PKGNAME=		mecab-base-${MECAB_VERSION}
 
 COMMENT=		Yet Another Part-of-Speech and Morphological Analyzer
 LICENSE=		gnu-gpl-v2 OR gnu-lgpl-v2.1 OR modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

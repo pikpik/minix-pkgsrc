@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/08/14 15:14:05 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:57:54 wiz Exp $
 
 DISTNAME=	Lingua-Stem-Snowball-0.952
 PKGNAME=	p5-${DISTNAME}
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Lingua/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Lingua-Stem-Snowball/
 COMMENT=	Lingua::Stem::Snowball - Perl interface to Snowball stemmers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_MODULE_TYPE=	Module::Build
 PERL5_REQD+=	5.8.0

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/08 11:26:53 fhajny Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:58:12 wiz Exp $
 #
 
 DISTNAME=	XML-Tiny-2.06
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/XML-Tiny/
 COMMENT=	Simple lightweight parser for a subset of XML
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/XML/Tiny/.packlist
 USE_LANGUAGES=	# none

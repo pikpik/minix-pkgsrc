@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/06/20 01:09:38 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2012/02/16 19:54:38 hans Exp $
 #
 
 DISTNAME=	wbxml2-0.9.2
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wbxmllib/}
 MAINTAINER=	dillo@NetBSD.org
 HOMEPAGE=	http://wbxmllib.sourceforge.net/
 COMMENT=	Library to handle WAP binary XML files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 USE_TOOLS+=	aclocal autoheader automake autoconf

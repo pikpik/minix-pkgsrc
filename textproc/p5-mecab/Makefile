@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/02/27 11:53:07 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:58:15 wiz Exp $
 #
 
 .include "../../textproc/mecab/Makefile.common"
@@ -10,8 +10,6 @@ CATEGORIES+=		perl5
 
 COMMENT=		MeCab perl module
 LICENSE=		gnu-gpl-v2 OR gnu-lgpl-v2.1 OR modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_CONFIGURE=	yes
 USE_LANGUAGES=		c++

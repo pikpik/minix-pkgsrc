@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2010/01/26 18:37:01 drochner Exp $
+# $NetBSD: Makefile,v 1.26 2012/04/01 08:52:43 obache Exp $
 #
 
 DISTNAME=	expat-2.1.0
@@ -11,7 +11,6 @@ COMMENT=	XML parser library written in C
 LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

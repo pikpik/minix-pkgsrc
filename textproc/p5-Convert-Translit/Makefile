@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 15:14:03 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:51 wiz Exp $
 #
 
 DISTNAME=		Convert-Translit-1.03
@@ -12,7 +12,6 @@ HOMEPAGE=		http://search.cpan.org/dist/Convert-Translit/
 COMMENT=		Perl5 module to transliterate various character sets
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Convert/Translit/.packlist

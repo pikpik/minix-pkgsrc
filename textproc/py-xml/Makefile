@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2010/05/08 15:28:02 drochner Exp $
+# $NetBSD: Makefile,v 1.19 2012/02/04 13:02:41 obache Exp $
 #
 
 DISTNAME=	PyXML-0.8.4
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyxml/}
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://pyxml.sourceforge.net/
 COMMENT=	Collection of libraries to process XML with Python
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	PyXML-[0-9]*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/04/22 13:44:52 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/02/14 12:04:22 obache Exp $
 #
 
 DISTNAME=	uni2ascii-4.18
@@ -10,8 +10,6 @@ MAINTAINER=	bartosz.kuzma@gmail.com
 HOMEPAGE=	http://billposer.org/Software/uni2ascii.html
 COMMENT=	Convert between UTF-8 Unicode and 7-bit ASCII equivalents
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BROKEN_GETTEXT_DETECTION=	yes
 GNU_CONFIGURE=	yes

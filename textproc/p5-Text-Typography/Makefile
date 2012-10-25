@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/01/11 04:31:37 schmonz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:58:06 wiz Exp $
 #
 
 DISTNAME=		Text-Typography-0.01
@@ -11,8 +11,6 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Text-Typography
 COMMENT=		Markup ASCII text with correct typography for HTML
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Text/Typography/.packlist
 

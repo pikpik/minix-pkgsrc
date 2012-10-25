@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/08/15 08:23:10 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/08 15:18:24 jaapb Exp $
 #
 
 DISTNAME=	ocaml-text-0.6
@@ -13,7 +13,6 @@ LICENSE=	modified-bsd
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+= 	--prefix ${PREFIX} --destdir ${DESTDIR}
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=       ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
 

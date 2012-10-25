@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/06/04 13:13:14 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/08 15:18:24 jaapb Exp $
 #
 
 DISTNAME=	tyxml-2.1
@@ -11,8 +11,6 @@ MAINTAINER=	jaapb@kerguelen.org
 HOMEPAGE=	http://ocsigen.org/download/
 COMMENT=	OCaml XML typing library
 LICENSE=	gnu-lgpl-v2.1 # with openssl exemption
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c
 USE_TOOLS=	gmake

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/02/22 19:27:13 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2008/06/20 01:09:37 joerg Exp $
 #
 
 DISTNAME=	biblook
@@ -9,8 +9,6 @@ MASTER_SITES=	http://compgeom.cs.uiuc.edu/~jeffe/files/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://compgeom.cs.uiuc.edu/~jeffe/biblook.html
 COMMENT=	Indexing and searching tools for BibTeX bibliography databases
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 MAKE_ENV+=	MANDIR=${PREFIX}/${PKGMANDIR}/man1

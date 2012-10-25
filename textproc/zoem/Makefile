@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/08 18:47:44 cheusov Exp $
+# $NetBSD: Makefile,v 1.2 2011/10/09 10:02:44 cheusov Exp $
 #
 
 DISTNAME=	zoem-10-265
@@ -10,8 +10,6 @@ MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://www.micans.org/zoem/
 COMMENT=	Interpretive macro/programming language
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 
