@@ -1,4 +1,6 @@
-$NetBSD: patch-aa,v 1.1.1.1 2007/05/19 12:39:30 wiz Exp $
+$NetBSD: patch-aa,v 1.2 2008/06/21 18:38:01 wiz Exp $
+
+https://sourceforge.net/tracker/?func=detail&aid=3579878&group_id=150840&atid=779049
 
 --- po/Makefile.in.in.orig	2008-06-09 15:07:36.000000000 +0000
 +++ po/Makefile.in.in
