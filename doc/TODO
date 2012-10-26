@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11632 2012/10/25 08:52:34 asau Exp $
+$NetBSD: TODO,v 1.11635 2012/10/26 11:12:20 prlw1 Exp $
 
 Suggested new packages
 ======================
@@ -358,7 +358,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o abcm2ps-6.6.20
 	o abcmidi-20120808
 	o accerciser-1.12.2 [GNOME 2.32]
-	o accerciser-3.6.0
 	o acme-091 [pkg/44771]
 	o acpica-utils-20110623
 	o acr-0.5.2
@@ -694,7 +693,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o gtick-0.4.2
 	o gtk-gnutella-0.97.1
 	o gtk-systrace-20030623
-	o gtk3-3.6.1
 	o gtkmm-3.4.0
 	o gtkmm-documentation-2.16.0 [GNOME 2.26]
 	o gtkwave-3.3.38
@@ -1030,7 +1028,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o py-creole-1.0.4 [pkg/46593]
 	o py-game-1.9.1 [needs portmidi]
 	o py-gnosis-1.2.2
-	o py-gobject3-3.4.1
 	o py-moin-1.9.5
 	o py-sybase-0.37
 	o py-sympy-0.7.2

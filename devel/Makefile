@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1662 2012/10/22 13:49:48 wiz Exp $
+# $NetBSD: Makefile,v 1.1663 2012/10/25 20:22:23 cheusov Exp $
 #
 
 COMMENT=	Development utilities
@@ -25,6 +25,7 @@ SUBDIR+=	SDLmm
 SUBDIR+=	SOPE
 SUBDIR+=	ZenTest
 SUBDIR+=	accerciser
+SUBDIR+=	accerciser3
 SUBDIR+=	acme
 SUBDIR+=	acr
 SUBDIR+=	acunia-jam
