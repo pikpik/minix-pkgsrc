@@ -63,6 +63,7 @@ share/doc/hdf5/COPYING
 share/doc/hdf5/HISTORY-1_0-1_8_0_rc3.txt
 share/doc/hdf5/HISTORY-1_8.txt
 share/doc/hdf5/RELEASE.txt
+share/examples/hdf5/README
 share/examples/hdf5/c/h5_attribute.c
 share/examples/hdf5/c/h5_chunk_read.c
 share/examples/hdf5/c/h5_compound.c
