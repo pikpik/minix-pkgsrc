@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2012/10/19 18:01:13 drochner Exp $
+# $NetBSD: Makefile,v 1.46 2012/10/23 17:18:34 asau Exp $
 
 DISTNAME=	libsoup-2.40.1
 PKGNAME=	${DISTNAME:S/libsoup/libsoup24/}
@@ -11,7 +11,7 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	HTTP library implementation in C
 LICENSE=	gnu-lgpl-v2
 
-USE_TOOLS+=		pkg-config gmake intltool
+USE_TOOLS+=		pkg-config gmake intltool msgfmt
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 

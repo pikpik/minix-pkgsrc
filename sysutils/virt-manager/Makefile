@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/10/08 23:02:27 adam Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/23 19:51:29 asau Exp $
 #
 
 DISTNAME=	virt-manager-0.9.4
@@ -14,7 +14,7 @@ LICENSE=	gnu-gpl-v2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-libvirt-package-names=libvirt
 
-USE_TOOLS+=		gmake intltool
+USE_TOOLS+=		gmake intltool msgfmt
 USE_PKGLOCALEDIR=	yes
 
 GCONF_SCHEMAS+=	virt-manager.schemas
