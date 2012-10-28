@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/09/25 08:53:37 obache Exp $
+# $NetBSD: Makefile,v 1.20 2012/04/04 11:34:27 obache Exp $
 
 DISTNAME=	apache-tomcat-${TOMCAT_VERSION}
 CATEGORIES=	www java
@@ -10,8 +10,6 @@ HOMEPAGE=	http://tomcat.apache.org/
 COMMENT=	The Apache Project's Java Servlet 2.4 and JSP 2.0 server
 
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 TOMCAT_VERSION=	5.5.35
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.116 2012/10/03 21:58:28 wiz Exp $
+# $NetBSD: Makefile,v 1.117 2012/10/12 07:36:11 adam Exp $
 
 DISTNAME=	curl-7.28.0
 CATEGORIES=	www
@@ -13,7 +13,6 @@ COMMENT=	Client that groks URLs
 LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # list it into IPv6-ready packages
 BUILD_DEFS+=	IPV6_READY

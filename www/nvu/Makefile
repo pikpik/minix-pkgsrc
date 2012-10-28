@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/09/15 10:06:48 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:58:32 wiz Exp $
 #
 
 DISTNAME=	nvu-1.0-sources
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nvu.com/
 COMMENT=	Web Authoring System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/mozilla
 GNU_CONFIGURE=	yes

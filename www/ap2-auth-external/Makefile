@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/02/12 21:15:26 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/02/20 14:58:45 joerg Exp $
 #
 
 DISTNAME=	mod_auth_external-${DISTVERS}
@@ -10,8 +10,6 @@ MASTER_SITES=	http://mod-auth-external.googlecode.com/files/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/mod-auth-external/
 COMMENT=	Apache module for external program authentication
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_APACHE_ACCEPTED=	apache2 apache22
 

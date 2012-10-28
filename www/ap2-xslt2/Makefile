@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/03/03 00:14:05 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2012/06/14 07:44:42 sbd Exp $
 #
 
 DISTNAME=	modxslt-${DIST_VER}
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.mod-xslt2.com/software/archive/${DIST_VER}/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mod-xslt2.com/
 COMMENT=	Apache module able to apply stylesheets to XML data on the fly
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/07/07 19:06:13 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:58:31 wiz Exp $
 #
 
 DISTNAME=	make_album_1_6
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.burren.cx/david/files/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.burren.cx/david/make_album.html
 COMMENT=	Generate HTML albums of images
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 

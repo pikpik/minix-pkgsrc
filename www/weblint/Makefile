@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:43 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 21:59:05 wiz Exp $
 #
 
 DISTNAME=	weblint-1.020
@@ -12,7 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	HTML validator and sanity checker
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run
 INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/11/25 08:14:37 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:58:40 wiz Exp $
 
 DISTNAME=	Catalyst-Plugin-Server-0.28
 PKGNAME=	p5-${DISTNAME}
@@ -18,8 +18,6 @@ DEPENDS+=	p5-Clone-Fast-[0-9]*:../../devel/p5-Clone-Fast
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Catalyst/Plugin/Server/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

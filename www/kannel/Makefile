@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2012/06/14 07:45:19 sbd Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/03 21:58:30 wiz Exp $
 #
 
 DISTNAME=	gateway-${KANNEL_VER}
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kannel.org/
 COMMENT=	Open source WAP and SMS gateway
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 KANNEL_VER=	1.4.0
 

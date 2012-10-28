@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 16:05:55 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:58:45 wiz Exp $
 
 DISTNAME=	HTML-StripScripts-1.05
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/HTML-StripScripts/
 COMMENT=	Perl5 module to strip scripting constructs out of HTML
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/HTML/StripScripts/.packlist
 

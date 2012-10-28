@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/11/17 08:04:22 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:58:45 wiz Exp $
 #
 
 DISTNAME=		HTML-StickyQuery-0.13
@@ -14,7 +14,6 @@ COMMENT=		Add sticky QUERY_STRING to a tag href attributes
 LICENSE=		${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-HTML-Parser>=3.34:../../www/p5-HTML-Parser
 DEPENDS+=		p5-URI>=1.27:../../www/p5-URI

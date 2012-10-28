@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/03/04 11:02:26 rillig Exp $
+# $NetBSD: Makefile,v 1.4 2009/07/07 18:55:44 joerg Exp $
 #
 
 DISTNAME=		squirm-1.0betaB
@@ -8,8 +8,6 @@ MASTER_SITES=		http://squirm.foote.com.au/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://squirm.foote.com.au/
 COMMENT=		Redirector for the Squid Internet Object Cache
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes

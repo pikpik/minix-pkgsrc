@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2012/01/25 13:19:57 obache Exp $
+# $NetBSD: Makefile,v 1.42 2012/01/28 13:12:06 obache Exp $
 
 DISTNAME=	pycurl-7.19.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/py//}
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pycurl.sourceforge.net/
 COMMENT=	Python module interface to the cURL library
 LICENSE=	gnu-lgpl-v2.1 OR mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 

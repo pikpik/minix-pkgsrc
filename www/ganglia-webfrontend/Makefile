@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/09/16 05:46:26 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/04/14 16:25:11 adam Exp $
 #
 
 DISTNAME=	ganglia-3.1.2
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ganglia/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ganglia.sourceforge.net/
 COMMENT=	PHP based frontend for the Ganglia Cluster Monitor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${APACHE_PKG_PREFIX}-${PHP_PKG_PREFIX}>=4.1:../../www/ap-php
 DEPENDS+=	ganglia-monitor-core>=3.1.2:../../parallel/ganglia-monitor-core

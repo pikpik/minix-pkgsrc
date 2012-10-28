@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/08/17 15:39:17 taca Exp $
+# $NetBSD: Makefile,v 1.20 2012/09/04 16:03:56 taca Exp $
 
 MODNAME=	apc
 PECL_VERSION=	3.1.13
@@ -11,8 +11,6 @@ LICENSE=	php
 
 
 CONFLICTS=		php-apc-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--enable-${MODNAME}
 WRKSRC=			${WRKDIR}/APC-${PECL_VERSION}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/07/12 16:21:53 roy Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/16 07:41:51 wiz Exp $
 
 DISTNAME=	uwsgi-1.2.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -9,8 +9,6 @@ MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://projects.unbit.it/uwsgi
 COMMENT=	Feature-rich WSGI server
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2012/03/15 11:53:44 obache Exp $
+# $NetBSD: Makefile,v 1.57 2012/04/08 19:09:17 wiz Exp $
 #
 
 DISTNAME=	Trac-0.12.3
@@ -12,8 +12,6 @@ MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://trac.edgewall.org/
 COMMENT=	Subversion repository browser, wiki, and issue tracking system
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Maintainer notes:
 #

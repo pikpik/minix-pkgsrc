@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/09/30 10:49:13 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/15 15:03:26 obache Exp $
 #
 
 DISTNAME=	apache-roller-${ROLLER_VER}
@@ -16,7 +16,6 @@ USE_JAVA=	run
 USE_JAVA2=	1.5
 ROLLER_VER=	4.0.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PLIST_SUBST+=		PKGNAME_NOREV=${PKGNAME_NOREV:Q}
 
 .include "options.mk"

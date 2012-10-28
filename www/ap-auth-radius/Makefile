@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/03/22 04:53:40 manu Exp $
+# $NetBSD: Makefile,v 1.7 2010/02/20 14:58:44 joerg Exp $
 #
 
 DISTNAME=	mod_auth_radius-1.5.7
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freeradius.org/mod_auth_radius/
 COMMENT=	Radius authentication module for Apache
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ap-auth-radius-[0-9]*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/11/11 08:28:38 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:58:36 wiz Exp $
 
 DISTNAME=		CGI-Session-4.48
 PKGNAME=		p5-${DISTNAME}
@@ -12,7 +12,6 @@ HOMEPAGE=		http://search.cpan.org/dist/CGI-Session/
 COMMENT=		Perl5 module providing session management across HTTP requests
 LICENSE=		${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 PERL5_MODULE_TYPE=	Module::Build
 

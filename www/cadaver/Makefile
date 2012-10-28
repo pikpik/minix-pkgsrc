@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2011/01/01 03:10:10 obache Exp $
+# $NetBSD: Makefile,v 1.43 2011/04/22 13:44:57 obache Exp $
 
 DISTNAME=		cadaver-0.23.3
 PKGREVISION=		1
@@ -8,8 +8,6 @@ MASTER_SITES=		http://www.webdav.org/cadaver/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.webdav.org/cadaver/
 COMMENT=		Command-line WebDAV client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		cadaver
 GNU_CONFIGURE=		YES

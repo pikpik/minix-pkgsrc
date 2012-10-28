@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/10/02 17:12:09 tron Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/08 23:01:05 adam Exp $
 #
 
 PKGNAME=	libmediawiki-2.5.0
@@ -14,8 +14,6 @@ COMMENT=	Mediawiki C++ interface for KDE
 LICENSE=	gnu-gpl-v2
 
 BUILD_DEPENDS+=	automoc4>=0.9.83:../../devel/automoc4
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		pkg-config

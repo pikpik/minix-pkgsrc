@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2011/09/28 13:17:28 obache Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/03 21:58:43 wiz Exp $
 #
 
 DISTNAME=	FCGI-0.74
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.fastcgi.com/
 COMMENT=	Perl5 library for FastCGI, a fast startup alternative to CGI
 
 USE_LANGUAGES=		c
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_PACKLIST=		auto/FCGI/.packlist
 
 .include "../../lang/perl5/module.mk"

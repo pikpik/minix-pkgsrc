@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2012/01/26 14:17:08 rhaen Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 21:58:48 wiz Exp $
 #
 
 DISTNAME=	HTTP-DAV-0.46
@@ -13,8 +13,6 @@ HOMEPAGE=	http://webdav.org/perldav/
 #HOMEPAGE=	http://search.cpan.org/dist/HTTP-DAV/
 COMMENT=	HTTP::DAV interface and 'dave'
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PERL+=	bin/dave
 

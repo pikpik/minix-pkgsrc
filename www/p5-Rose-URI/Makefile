@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 16:06:07 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:58:58 wiz Exp $
 
 DISTNAME=	Rose-URI-1.00
 PKGNAME=	p5-${DISTNAME}0
@@ -16,8 +16,6 @@ DEPENDS+=	p5-URI-[0-9]*:../../www/p5-URI
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Rose/URI/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

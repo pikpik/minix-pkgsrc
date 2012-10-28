@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/08/26 13:32:17 adam Exp $
 
 DISTNAME=	django-reversion-1.6.2
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -9,8 +9,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	https://github.com/etianen/django-reversion/
 COMMENT=	Version control facilities for Django
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 #EGG_NAME=		${DISTNAME:S/-/_/:S/-/_/}

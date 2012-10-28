@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/03/22 22:40:18 asau Exp $
+# $NetBSD: Makefile,v 1.20 2012/09/22 13:48:20 ryoon Exp $
 #
 
 DISTNAME=	cherokee-1.2.101
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cherokee-project.com/
 COMMENT=	Flexible and fast web server
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/03/03 00:14:06 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/08/01 11:25:22 fhajny Exp $
 
 DISTNAME=	lighttpd-1.4.31
 CATEGORIES=	www
@@ -9,8 +9,6 @@ MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.lighttpd.net/
 COMMENT=	Fast, light-footprint HTTP server
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 SHLIBTOOL_OVERRIDE=	# empty

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 16:05:43 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:34 wiz Exp $
 
 DISTNAME=		CGI-Ajax-0.707
 PKGNAME=		p5-${DISTNAME}
@@ -11,8 +11,6 @@ HOMEPAGE=		http://search.cpan.org/dist/CGI-Ajax/
 COMMENT=		Call perl asynchronously from javascript
 
 DEPENDS+=	p5-Class-Accessor>=0:../../devel/p5-Class-Accessor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/CGI/Ajax/.packlist
 

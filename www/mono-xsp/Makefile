@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2011/06/10 09:39:42 obache Exp $
+# $NetBSD: Makefile,v 1.27 2012/04/27 12:32:06 obache Exp $
 
 DISTNAME=	xsp-2.10.2
 PKGNAME=	mono-${DISTNAME}
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/ASP.NET
 COMMENT=	Standalone web server written in C\#
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake pkg-config

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/03/20 16:25:51 dholland Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:59:06 wiz Exp $
 #
 
 DISTNAME=		yaws-1.91
@@ -12,8 +12,6 @@ COMMENT=		High perfomance HTTP 1.1 webserver written in Erlang
 LICENSE=		modified-bsd
 
 BUILD_DEFS+=		VARBASE
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl pax autoconf
 GNU_CONFIGURE=		yes

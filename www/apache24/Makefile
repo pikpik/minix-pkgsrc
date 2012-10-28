@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/08/26 12:37:34 ryoon Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:58:27 wiz Exp $
 
 DISTNAME=	httpd-2.4.3
 PKGNAME=	${DISTNAME:S/httpd/apache/}
@@ -13,8 +13,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://httpd.apache.org/
 COMMENT=	Apache HTTP (Web) server, version 2.4
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=	IPV6_READY
 BUILD_DEFS+=	VARBASE

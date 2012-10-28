@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2009/05/01 15:09:17 zafer Exp $
+# $NetBSD: Makefile,v 1.60 2009/06/14 08:33:21 wiz Exp $
 
 DISTNAME=	analog-6.0
 PKGREVISION=	2
@@ -10,8 +10,6 @@ MASTER_SITES=	${HOMEPAGE} \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.analog.cx/
 COMMENT=	Extremely fast program for analysing WWW logfiles
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDISTDIR}/src
 BUILD_TARGET=	analog

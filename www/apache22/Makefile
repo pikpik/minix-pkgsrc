@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.81 2012/09/16 03:33:10 taca Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/03 21:58:27 wiz Exp $
 
 DISTNAME=	httpd-2.2.23
 
@@ -14,8 +14,6 @@ MAINTAINER=	tron@NetBSD.org
 HOMEPAGE=	http://httpd.apache.org/
 COMMENT=	Apache HTTP (Web) server, version 2.2
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=	IPV6_READY
 BUILD_DEFS+=	VARBASE

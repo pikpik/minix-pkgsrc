@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/07/07 18:46:17 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2009/10/29 22:29:16 tnn Exp $
 #
 
 DISTNAME=		urlget-1.4
@@ -7,8 +7,6 @@ MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Simple command-line tool to retrieve an HTTP URL
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

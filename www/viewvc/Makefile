@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/11/01 21:08:55 scottr Exp $
+# $NetBSD: Makefile,v 1.16 2012/03/15 11:53:44 obache Exp $
 #
 
 DISTNAME=	viewvc-1.1.11
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.viewvc.org/
 COMMENT=	Viewing the content of CVS/SVN repositories with a Webbrowser
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_PATCH_SCRIPTS=	viewvc-install bin/* bin/cgi/*.cgi lib/*.py
 

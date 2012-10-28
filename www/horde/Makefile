@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2012/02/23 10:34:07 obache Exp $
+# $NetBSD: Makefile,v 1.74 2012/04/14 16:25:11 adam Exp $
 
 DISTNAME=	horde-3.3.13
 CATEGORIES=	www
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.horde.org/
 COMMENT=	PHP application framework
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	horde-2.*{,nb*}
 

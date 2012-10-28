@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/02/16 19:16:57 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2011/02/28 14:53:06 wiz Exp $
 #
 
 DISTNAME=	cgilib-0.5
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.infodrom.org/projects/cgilib/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.infodrom.org/projects/cgilib/
 COMMENT=	Common gateway interface library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	include lib ${PKGMANDIR}/man3 ${PKGMANDIR}/man5
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2011/09/16 05:46:26 obache Exp $
+# $NetBSD: Makefile,v 1.34 2011/11/13 15:52:24 taca Exp $
 #
 
 DISTNAME=	geeklog-${VER}
@@ -10,8 +10,6 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://www.geeklog.net/
 COMMENT=	PHP/MySQL based application for managing dynamic web content
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${APACHE_PKG_PREFIX}-${PHP_PKG_PREFIX}>=4.3.3:../../www/ap-php
 DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=4.3.0:../../databases/php-mysql

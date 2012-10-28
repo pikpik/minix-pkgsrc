@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 16:06:06 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:58:57 wiz Exp $
 
 DISTNAME=	Rose-HTMLx-Form-Field-Autocomplete-0.02
 PKGNAME=	p5-${DISTNAME}
@@ -14,8 +14,6 @@ DEPENDS+=	p5-Rose-HTML-Objects>=0.01:../../www/p5-Rose-HTML-Objects
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Rose/HTMLx/Form/Field/Autocomplete/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

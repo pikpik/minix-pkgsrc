@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/06/16 05:27:12 taca Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:29 wiz Exp $
 #
 
 DISTNAME=	gallery-1.5.10
@@ -10,8 +10,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://gallery.sourceforge.net/
 COMMENT=	Web-based photo gallery written in PHP
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PHP_VERSIONS_ACCEPTED=	53 54
 

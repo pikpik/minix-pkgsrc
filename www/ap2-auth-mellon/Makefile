@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/06/14 07:44:54 sbd Exp $
+# $NetBSD: Makefile,v 1.22 2012/09/15 10:06:44 obache Exp $
 #
 
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/mod_//:S/_/-/}
@@ -11,8 +11,6 @@ MAINTAINER=	manu@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/modmellon/
 COMMENT=	SAML 2.0 authentication for Apache
 LICENSE=	gnu-gpl-v2 # or later
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES

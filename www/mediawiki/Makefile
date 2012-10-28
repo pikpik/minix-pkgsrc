@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/09/02 00:29:34 wen Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/03 21:58:31 wiz Exp $
 
 DISTNAME=	mediawiki-${VER}.${PVER}
 PKGREVISION=	1
@@ -13,7 +13,6 @@ LICENSE=	gnu-gpl-v2
 EGDIR=			share/examples/mediawiki
 MEDIAWIKI=		${PREFIX}/share/mediawiki
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	${EGDIR} share/mediawiki
 
 .include "../../mk/bsd.prefs.mk"

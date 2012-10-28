@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/08/14 16:06:11 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:59:01 wiz Exp $
 
 DISTNAME=	URI-Escape-XS-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -12,8 +12,6 @@ COMMENT=	Escape and unescape unsafe characters in URIs
 LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-URI>=1.35:../../www/p5-URI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/URI/Escape/XS/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/11/17 07:58:01 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:55 wiz Exp $
 
 DISTNAME=	Net-FastCGI-0.13
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-FastCGI/
 COMMENT=	Perl 5 module to build and parse FastCGI messages
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/Net/FastCGI/.packlist

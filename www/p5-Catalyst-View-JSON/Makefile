@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/11/15 09:10:35 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:58:41 wiz Exp $
 
 DISTNAME=	Catalyst-View-JSON-0.33
 PKGNAME=	p5-${DISTNAME}
@@ -20,8 +20,6 @@ BUILD_DEPENDS+=	p5-YAML-[0-9]*:../../textproc/p5-YAML
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/Catalyst/View/JSON/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

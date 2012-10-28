@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2012/10/02 17:12:08 tron Exp $
+# $NetBSD: Makefile,v 1.53 2012/10/08 23:02:32 adam Exp $
 #
 # PKGNAME derives from the supported API (still from
 # release 3.14). See also PLIST.
@@ -15,8 +15,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Lightweight HTML rendering/printing/editing engine
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-deprecated_warning_flags

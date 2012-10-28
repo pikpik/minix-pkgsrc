@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/11/17 09:10:28 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:58:49 wiz Exp $
 
 DISTNAME=	HTTP-Parser-0.06
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/HTTP-Parser/
 COMMENT=	Perl 5 module to parse HTTP request into HTTP::Request/Response object
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/HTTP/Parser/.packlist

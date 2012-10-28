@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2012/07/10 06:53:41 tron Exp $
+# $NetBSD: Makefile,v 1.39 2012/08/31 14:25:49 wiz Exp $
 
 DISTNAME=	tidy-20091027
 PKGREVISION=	3
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tidy.sourceforge.net/
 COMMENT=	Fixes and tidies up HTML files
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	libxslt>=1.1.0:../../textproc/libxslt
 

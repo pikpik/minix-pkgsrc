@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/08/08 06:44:08 imil Exp $
+# $NetBSD: Makefile,v 1.26 2012/09/23 12:46:15 shattered Exp $
 
 DISTNAME=		nginx-1.2.3
 CATEGORIES=		www
@@ -10,7 +10,6 @@ HOMEPAGE=		http://nginx.org/
 COMMENT=		Lightweight HTTP server and mail proxy server
 LICENSE=		2-clause-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 .include "../../mk/bsd.prefs.mk"
 
 NGINX_USER?=		nginx

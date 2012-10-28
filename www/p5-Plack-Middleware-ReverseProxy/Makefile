@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/11/11 04:32:49 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:58:57 wiz Exp $
 
 DISTNAME=	Plack-Middleware-ReverseProxy-0.11
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Plack-Middleware-ReverseProxy/
 COMMENT=	Plack middleware to support reverse proxy
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/Plack/Middleware/ReverseProxy/.packlist

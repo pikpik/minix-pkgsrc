@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 16:05:44 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:34 wiz Exp $
 
 DISTNAME=	CGI-Application-PSGI-1.00
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/CGI-Application-PSGI/
 COMMENT=	Perl 5 module PSGI adapter for CGI::Application
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/CGI/Application/PSGI/.packlist

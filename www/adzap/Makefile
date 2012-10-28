@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2008/10/30 01:28:53 simonb Exp $
+# $NetBSD: Makefile,v 1.64 2012/10/03 21:58:26 wiz Exp $
 #
 
 DISTNAME=	adzap-20080508
@@ -11,8 +11,6 @@ MASTER_SITES=	http://adzapper.sourceforge.net/
 MAINTAINER=	simonb@NetBSD.org
 HOMEPAGE=	http://adzapper.sourceforge.net/
 COMMENT=	Filter out animated ad banners from web pages
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/adzap
 NO_BUILD=	yes

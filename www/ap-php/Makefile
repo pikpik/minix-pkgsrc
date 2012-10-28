@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.26 2011/09/21 13:10:25 adam Exp $
+# $NetBSD: Makefile,v 1.27 2012/07/20 12:30:37 taca Exp $
 
 PKGNAME=		${APACHE_PKG_PREFIX}-${PHP_PKG_PREFIX}-${PHP_BASE_VERS}
 COMMENT=		Apache (${PKG_APACHE}) module for ${PKG_PHP}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		ap-php-[0-9]*
 

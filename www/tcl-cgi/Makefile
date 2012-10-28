@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2005/12/05 20:51:14 rillig Exp $
+# $NetBSD: Makefile,v 1.14 2009/07/07 18:53:17 joerg Exp $
 #
 
 DISTNAME=	cgi.tcl
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_BACKUP}
 MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://expect.nist.gov/cgi.tcl/
 COMMENT=	Library of Tcl procedures to assist in writing CGI scripts
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	tcl>=8.3.2:../../lang/tcl
 

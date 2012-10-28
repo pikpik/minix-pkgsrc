@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2012/06/25 09:00:26 jperkin Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/03 21:58:29 wiz Exp $
 
 DISTNAME=	drupal-6.26
 PKGREVISION=	1
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://drupal.org/
 COMMENT=	Open source content management system
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=4.3.5:../../graphics/php-gd
 

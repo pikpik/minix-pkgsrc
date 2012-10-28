@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 16:05:47 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:37 wiz Exp $
 
 DISTNAME=	Catalyst-Authentication-Credential-HTTP-Proxy-0.06
 PKGNAME=	p5-${DISTNAME}
@@ -21,7 +21,6 @@ BUILD_DEPENDS+=	p5-Test-MockObject-[0-9]*:../../devel/p5-Test-MockObject
 
 PERL5_PACKLIST= 	auto/Catalyst/Authentication/Credential/HTTP/Proxy/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

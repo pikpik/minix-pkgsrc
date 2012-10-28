@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2007/05/23 12:23:11 ghen Exp $
+# $NetBSD: Makefile,v 1.22 2008/06/12 02:14:54 joerg Exp $
 
 DISTNAME=		mod_dav-1.0.3-1.3.6
 PKGNAME=		ap13-dav-1.0.3
@@ -8,8 +8,6 @@ MASTER_SITES=		http://www.webdav.org/mod_dav/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.webdav.org/mod_dav/
 COMMENT=		Apache WebDAV module
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		ap-dav-[0-9]*
 
