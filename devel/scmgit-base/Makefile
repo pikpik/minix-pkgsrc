@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2012/10/03 21:55:55 wiz Exp $
+# $NetBSD: Makefile,v 1.52 2012/10/27 20:26:17 christos Exp $
 
 .include "../../devel/scmgit/Makefile.common"
 
