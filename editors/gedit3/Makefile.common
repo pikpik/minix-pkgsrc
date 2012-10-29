@@ -1,10 +1,10 @@
-# $NetBSD: Makefile.common,v 1.1 2012/08/31 19:52:18 prlw1 Exp $
+# $NetBSD: Makefile.common,v 1.2 2012/10/03 11:43:34 asau Exp $
 # used by editors/gedit3/Makefile
 # used by editors/gedit3-spell/Makefile
 
-DISTNAME=	gedit-3.4.2
+DISTNAME=	gedit-3.6.1
 CATEGORIES=	editors gnome
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gedit/3.4/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gedit/3.6/}
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	prlw1@cam.ac.uk
