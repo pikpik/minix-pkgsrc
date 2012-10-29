@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/01/22 12:59:01 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/05/25 21:00:26 reed Exp $
 #
 
 DISTNAME=	dmenu-4.5
@@ -9,8 +9,6 @@ MAINTAINER=	leot1990@users.sourceforge.net
 HOMEPAGE=	http://tools.suckless.org/dmenu
 COMMENT=	Dynamic menu for X
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 

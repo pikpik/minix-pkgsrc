@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/04/17 17:52:29 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2012/06/03 18:16:51 wiz Exp $
 #
 
 DISTNAME=		xinit-1.3.2
@@ -10,8 +10,6 @@ MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X init program
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-xinit=${PREFIX}/bin/xinit

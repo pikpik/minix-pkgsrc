@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/02/28 14:53:08 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/09/07 21:51:47 shattered Exp $
 #
 
 DISTNAME=	rendercheck-1.4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	XRender test application
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_FEATURES=	err

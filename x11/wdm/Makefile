@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2012/01/28 11:40:19 marino Exp $
+# $NetBSD: Makefile,v 1.48 2012/07/15 17:37:04 marino Exp $
 
 DISTNAME=		wdm-1.28
 PKGREVISION=		9
@@ -28,7 +28,6 @@ CONFIGURE_ENV+=		SYSTEM_SHELL=${SH:Q}
 RCD_SCRIPTS=		wdm
 
 PKG_SYSCONFSUBDIR=	wdm
-PKG_DESTDIR_SUPPORT= user-destdir
 
 OWN_DIRS_PERMS=		${PKG_SYSCONFDIR}/authdir			\
 			${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 700

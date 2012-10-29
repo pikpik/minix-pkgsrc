@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/11/09 18:23:44 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 18:25:01 wiz Exp $
 #
 
 DISTNAME=		xrefresh-1.0.4
@@ -11,7 +11,6 @@ HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X Refresher
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

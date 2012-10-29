@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.149 2012/10/03 21:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.150 2012/10/08 23:00:52 adam Exp $
 #
 
 DISTNAME=		gnome-panel-2.32.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		drochner@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME2 panel application
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # depends on policykit
 #EGDIR=		${PREFIX}/share/examples/gnome-panel

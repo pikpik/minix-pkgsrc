@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/09/20 10:34:03 plunky Exp $
+# $NetBSD: Makefile,v 1.10 2012/08/21 23:49:27 marino Exp $
 
 DISTNAME=	BWidget-1.9.0
 PKGNAME=	tk-${DISTNAME}
@@ -16,7 +16,6 @@ DEPENDS+=	tcl>=8.4:../../lang/tcl
 DEPENDS+=	tk>=8.4:../../x11/tk
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	YES
 NO_CONFIGURE=	YES

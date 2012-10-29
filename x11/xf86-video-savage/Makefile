@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/06/15 23:06:07 dholland Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/27 10:06:31 jperkin Exp $
 #
 
 DISTNAME=	xf86-video-savage-2.3.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg S3 Savage video driver
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--enable-dri
 

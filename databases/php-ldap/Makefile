@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2010/02/27 03:35:11 taca Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/02 21:25:38 asau Exp $
 
 MODNAME=		ldap
+PKGREVISION=		1
 CATEGORIES+=		databases
 COMMENT=		PHP extension for LDAP database access
 

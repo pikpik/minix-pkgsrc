@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/07/01 19:05:28 dholland Exp $
+# $NetBSD: Makefile,v 1.14 2012/07/15 08:23:00 wiz Exp $
 #
 
 DISTNAME=		matchbox-desktop-0.9.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://matchbox-project.org/
 COMMENT=		Desktop manager for Matchbox
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

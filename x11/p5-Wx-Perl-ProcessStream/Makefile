@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/10/03 21:59:08 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 23:02:37 adam Exp $
 
 DISTNAME=	Wx-Perl-ProcessStream-0.32
 PKGNAME=	p5-${DISTNAME}
@@ -12,8 +12,6 @@ COMMENT=	Access IO of external processes via events from WxWidgets
 LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-Wx>=0.50:../../x11/p5-Wx
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl
 

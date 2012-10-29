@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/06/03 17:48:28 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/23 10:24:20 wiz Exp $
 #
 
 DISTNAME=		libXxf86misc-1.0.3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Library for the XFree86-Misc X extension
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	xxf86misc.pc.in

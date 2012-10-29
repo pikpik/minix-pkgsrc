@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/10/23 18:06:50 dholland Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/03 18:14:03 wiz Exp $
 #
 
 DISTNAME=		xfontsel-1.0.4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X font selector
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

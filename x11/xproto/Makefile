@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/06/03 19:57:33 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/09/05 16:46:55 jperkin Exp $
 #
 
 DISTNAME=		xproto-7.0.23
@@ -13,7 +13,6 @@ COMMENT=		X protocol and ancillary headers from Xorg X11
 LICENSE=		mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE+=	xproto.pc.in

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/05/19 08:59:39 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2009/07/07 17:58:05 joerg Exp $
 #
 
 DISTNAME=	xcruise-0.24
@@ -10,8 +10,6 @@ MAINTAINER=	minoura@NetBSD.org
 HOMEPAGE=	http://xcruiser.sourceforge.net/
 COMMENT=	Navigate through a three-dimensional view of a file system
 #LICENSE=	GPL
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/06/03 18:15:21 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/23 10:24:22 wiz Exp $
 #
 
 DISTNAME=		xgamma-1.0.5
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Alter gamma correction
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

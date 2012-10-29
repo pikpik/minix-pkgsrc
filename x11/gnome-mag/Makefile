@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.73 2012/10/02 17:12:12 tron Exp $
+# $NetBSD: Makefile,v 1.74 2012/10/08 23:00:50 adam Exp $
 #
 
 DISTNAME=		gnome-mag-0.16.3
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME screen magnifier
 LICENSE=		gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes

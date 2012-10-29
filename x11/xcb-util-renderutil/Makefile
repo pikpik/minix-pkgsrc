@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/08/12 21:23:26 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/02 12:09:42 tron Exp $
 #
 
 DISTNAME=	xcb-util-renderutil-0.3.8
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xcb.freedesktop.org/
 COMMENT=	Convenience functions for the Render extension
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config gmake

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/03/17 23:38:28 zafer Exp $
+# $NetBSD: Makefile,v 1.15 2012/05/03 09:55:33 obache Exp $
 
 DISTNAME=	xp-1.2b10
 PKGREVISION=	4
@@ -7,8 +7,6 @@ MASTER_SITES=	# ftp://ftp.ncl.ac.uk/pub/users/ngmt/X11/
 
 MAINTAINER=	jdc@NetBSD.org
 COMMENT=	Fast X11 text file viewer using Athena widgets
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 MAKE_FLAGS+=	MANPATH=${PREFIX}/${PKGMANDIR}

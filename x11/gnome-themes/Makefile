@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2012/10/02 17:12:12 tron Exp $
+# $NetBSD: Makefile,v 1.90 2012/10/08 23:02:35 adam Exp $
 #
 
 DISTNAME=		gnome-themes-2.32.1
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Collection of themes and icons for GNOME 2
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		clearlooks-metacity-[0-9]*
 

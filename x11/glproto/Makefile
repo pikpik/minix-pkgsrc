@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/06/03 18:36:41 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/07/12 14:15:55 wiz Exp $
 #
 
 DISTNAME=		glproto-1.4.16
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		GL extension headers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGCONFIG_OVERRIDE+=	glproto.pc.in
 USE_TOOLS+=		pkg-config

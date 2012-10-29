@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/08/29 15:30:49 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/06/03 18:38:41 wiz Exp $
 #
 
 DISTNAME=		xcmiscproto-1.2.2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		XCMisc extension headers from X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		xextensions-[0-9]*
 

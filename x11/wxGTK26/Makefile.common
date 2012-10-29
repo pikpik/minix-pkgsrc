@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.4 2011/01/12 11:21:28 wiz Exp $
+# $NetBSD: Makefile.common,v 1.5 2012/10/24 15:48:32 joerg Exp $
 #
 # used by x11/wxGTK26/Makefile
 # used by x11/wxGTK26-contrib/Makefile
@@ -16,8 +16,6 @@ DISTINFO_FILE=		${.CURDIR}/../../x11/wxGTK26/distinfo
 
 PATCHFILES=		${DISTNAME}-libtool.diff3.bz2
 PATCH_SITES=		${MASTER_SITE_LOCAL}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config msgfmt
 USE_LIBTOOL=		yes

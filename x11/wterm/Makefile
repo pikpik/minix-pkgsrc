@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2012/02/06 12:42:27 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2012/06/15 23:06:04 dholland Exp $
 
 DISTNAME=	wterm-6.2.9
 PKGREVISION=	16
@@ -9,7 +9,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://wterm.sourceforge.net/
 COMMENT=	NeXTStep(tm) style X11 terminal emulator for WindowMaker
 
-PKG_DESTDIR_SUPPORT= user-destdir
 MAKE_JOBS_SAFE=	no
 
 GNU_CONFIGURE=	YES

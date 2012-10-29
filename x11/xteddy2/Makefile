@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/02/06 12:42:32 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/23 10:24:23 wiz Exp $
 
 DISTNAME=	xteddy-2.0.1
 PKGREVISION=	17
@@ -8,8 +8,6 @@ MASTER_SITES=	http://staffwww.itn.liu.se/~stegu/xteddy/
 MAINTAINER=	johnam@mail.kemper.org
 HOMEPAGE=	http://staffwww.itn.liu.se/~stegu/xteddy/
 COMMENT=	Teddy bear for your desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	xteddy-1.*
 

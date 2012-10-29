@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/12/17 17:48:42 abs Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/23 10:24:21 wiz Exp $
 #
 
 DISTNAME=	wmfire-0.0.3.9pre4
@@ -9,7 +9,6 @@ MASTER_SITES=	http://staff.xmms.org/zinx/misc/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Displays generated fire according to system load
-PKG_DESTDIR_SUPPORT= user-destdir
 
 GNU_CONFIGURE=	YES
 INSTALLATION_DIRS+= share/doc/wmfire

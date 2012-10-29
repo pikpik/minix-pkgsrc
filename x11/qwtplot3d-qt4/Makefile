@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/10/02 17:12:20 tron Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/08 23:01:02 adam Exp $
 #
 
 DISTNAME=	qwtplot3d-0.2.7
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://qwtplot3d.sourceforge.net/
 COMMENT=	3D-widgets for qt4
 #LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/qwtplot3d
 USE_LANGUAGES=	c c++

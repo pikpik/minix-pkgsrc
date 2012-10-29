@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/08/21 23:49:27 marino Exp $
+# $NetBSD: Makefile,v 1.18 2012/08/28 11:46:32 he Exp $
 #
 
 DISTNAME=	Tix${TIX_VERSION}-src
@@ -11,8 +11,6 @@ MAINTAINER=	he@NetBSD.org
 HOMEPAGE=	http://tix.sourceforge.net/
 COMMENT=	Powerful widget library for Tcl/Tk
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 WRKSRC=			${WRKDIR}/Tix8.4.3

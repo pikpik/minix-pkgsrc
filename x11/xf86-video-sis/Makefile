@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/06/15 23:06:07 dholland Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/27 10:06:31 jperkin Exp $
 #
 
 DISTNAME=	xf86-video-sis-0.10.2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg SiS and XGI video driver
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--enable-dri
 

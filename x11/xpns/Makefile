@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/02/07 06:42:56 sbd Exp $
+# $NetBSD: Makefile,v 1.27 2012/06/16 04:00:53 dholland Exp $
 
 DISTNAME=	pns_source
 PKGNAME=	xpns-1.0
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	pgiffuni@fps.biblos.unal.edu.co
 HOMEPAGE=	http://robotics.ee.uwa.edu.au/pns/
 COMMENT=	Petri-Net Simulator for Xwindows
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 MAKE_FILE=	makefile

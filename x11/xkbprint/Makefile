@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/06/06 09:32:44 wiz Exp $
+# $NetBSD: Makefile,v 1.1 2012/06/06 09:41:07 wiz Exp $
 #
 
 DISTNAME=		xkbprint-1.0.3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Generate printable description of a XKB keyboard description
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

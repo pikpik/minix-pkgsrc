@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/08/12 21:19:06 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/02 12:09:41 tron Exp $
 #
 
 DISTNAME=	xcb-util-image-0.3.9
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xcb.freedesktop.org/
 COMMENT=	XCB port of Xlib's XImage and XShmImage
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config gmake

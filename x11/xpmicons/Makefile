@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2008/01/19 09:16:26 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2009/07/07 17:16:35 joerg Exp $
 
 DISTNAME=	xpmicons-1.0
 PKGREVISION=	5
@@ -13,8 +13,6 @@ DISTFILES=	icons.tar.gz KDEicons.tgz \
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Huge collection of icons for any windowmanager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 DIST_SUBDIR=	icons

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/05/01 15:33:43 zafer Exp $
+# $NetBSD: Makefile,v 1.20 2012/07/30 04:23:23 dholland Exp $
 #
 
 DISTNAME=		xworld-2.0
@@ -8,8 +8,6 @@ MASTER_SITES=		ftp://ftp.Uni-Koeln.DE/misc/
 
 MAINTAINER=		wennmach@NetBSD.org
 COMMENT=		Earth as seen from the direction of the sun
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 USE_TOOLS+=		csh

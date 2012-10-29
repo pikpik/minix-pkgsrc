@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/06/22 11:39:44 sbd Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.17 2012/10/08 15:18:26 jaapb Exp $
 
 .include "../../lang/ocaml/Makefile.common"
 DISTINFO_FILE= ${PKGDIR}/../../lang/ocaml/distinfo

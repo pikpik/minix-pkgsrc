@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/10/02 17:12:19 tron Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:01:02 adam Exp $
 #
 
 DISTNAME=	QScintilla-gpl-2.6.2
@@ -11,8 +11,6 @@ MAINTAINER=	helgoman@users.sourceforge.net
 HOMEPAGE=	http://www.riverbankcomputing.co.uk/software/qscintilla/intro
 COMMENT=	Scintilla C++ editor class for Qt
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Qt4Qt5
 

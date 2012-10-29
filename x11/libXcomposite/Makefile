@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/09/10 18:40:44 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/06/03 17:38:31 wiz Exp $
 #
 
 DISTNAME=		libXcomposite-0.4.3
@@ -12,7 +12,6 @@ COMMENT=		X Composite Library
 LICENSE=		mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

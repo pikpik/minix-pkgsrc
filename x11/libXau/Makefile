@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/06/03 17:25:09 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/06/09 07:00:47 obache Exp $
 #
 
 DISTNAME=		libXau-1.0.7
@@ -12,7 +12,6 @@ COMMENT=		Authorization Protocol for X from X.org
 LICENSE=		mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

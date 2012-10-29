@@ -1,7 +1,5 @@
-# $NetBSD: Makefile,v 1.12 2007/01/07 09:14:16 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2009/07/07 17:58:21 joerg Exp $
 #
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/xbindkeys/Makefile.common"
 

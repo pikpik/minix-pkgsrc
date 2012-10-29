@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/09/24 13:14:15 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/03 17:56:44 wiz Exp $
 #
 
 DISTNAME=		editres-1.0.5
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Dynamic resource editor for libXt applications
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

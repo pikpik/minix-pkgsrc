@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/07/29 20:37:06 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/23 10:24:19 wiz Exp $
 #
 
 DISTNAME=		libXrandr-1.4.0
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X RandR Library from X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		Xrandr-[0-9]*
 

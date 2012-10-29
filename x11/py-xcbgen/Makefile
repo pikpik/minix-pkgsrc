@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/06/03 17:28:23 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/07 22:08:43 wiz Exp $
 #
 
 DISTNAME=	xcb-proto-1.8
@@ -15,7 +15,6 @@ LICENSE=	mit # with no-advertising clause
 DEPENDS+=	${PYPKGPREFIX}-cElementTree-[0-9]*:../../textproc/py-cElementTree
 
 CONFLICTS+=	xcb-proto<1.4nb1
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

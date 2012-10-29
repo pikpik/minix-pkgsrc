@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/09/14 11:03:17 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2012/09/27 10:06:33 jperkin Exp $
 #
 
 DISTNAME=	xf86-video-vmware-10.16.9
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg VMware virtual video driver
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes

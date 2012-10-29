@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/06/03 17:38:55 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/09 07:00:48 obache Exp $
 #
 
 DISTNAME=		libXrender-0.9.7
@@ -10,8 +10,6 @@ MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X Render Library
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		Xrender-[0-9]*
 

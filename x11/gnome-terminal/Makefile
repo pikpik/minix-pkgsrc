@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2012/10/03 21:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2012/10/08 23:02:35 adam Exp $
 #
 
 DISTNAME=		gnome-terminal-2.32.1
@@ -12,8 +12,6 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Xterm like terminal program for GNOME 2
 
 BUILD_DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		gnome-core-[0-9]* gnome2-terminal-[0-9]*
 

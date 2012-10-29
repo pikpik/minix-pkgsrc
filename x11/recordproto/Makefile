@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/04/09 08:27:31 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 19:49:38 wiz Exp $
 #
 
 DISTNAME=		recordproto-1.14.2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Record extension headers from X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE+=	recordproto.pc.in

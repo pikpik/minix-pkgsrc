@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/09/24 13:14:17 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/03 18:26:25 wiz Exp $
 #
 
 DISTNAME=		xsm-1.0.2
@@ -11,7 +11,6 @@ HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X Session Manager
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

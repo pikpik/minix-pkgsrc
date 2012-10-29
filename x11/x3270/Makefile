@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/11/24 20:07:48 gls Exp $
+# $NetBSD: Makefile,v 1.31 2012/08/06 20:12:17 gls Exp $
 
 DISTNAME=	suite3270-3.3.12ga11-src
 PKGNAME=	x3270-3.3.12ga11
@@ -12,7 +12,6 @@ COMMENT=	3270 Terminal emulator
 LICENSE=	modified-bsd
 
 GNU_CONFIGURE=	yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/x3270-3.3
 USE_IMAKE=	yes

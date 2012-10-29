@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/09/10 19:07:49 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 18:37:15 wiz Exp $
 #
 
 DISTNAME=		kbproto-1.0.6
@@ -10,8 +10,6 @@ MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		KB extension headers from X.org
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		xextensions-[0-9]*
 

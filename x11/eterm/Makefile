@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.68 2012/10/03 21:59:06 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2012/10/23 10:24:16 wiz Exp $
 
 DISTNAME=	Eterm-0.9.5
 PKGNAME=	${DISTNAME:S/^E/e/}
@@ -11,8 +11,6 @@ PIXMAP_FILES=	${DISTNAME:S/Eterm-/Eterm-bg-/}.tar.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.eterm.org/
 COMMENT=	Enlightened terminal emulator for the X Window System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run
 USE_LIBTOOL=		YES

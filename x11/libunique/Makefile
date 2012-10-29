@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/10/08 10:32:13 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/08 23:00:42 adam Exp $
 #
 
 DISTNAME=	libunique-1.1.6
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/LibUnique
 COMMENT=	Library for writing single instance applications
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/11/09 18:50:16 tnn Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/03 17:51:53 wiz Exp $
 #
 
 DISTNAME=		xkbcomp-1.2.4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		XKBD keymap compiler
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/07/13 14:22:59 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/02 12:09:41 tron Exp $
 
 DISTNAME=		startup-notification-0.10
 PKGREVISION=		3
@@ -11,7 +11,6 @@ COMMENT=		X11 application startup notification library
 LICENSE=		mit AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes

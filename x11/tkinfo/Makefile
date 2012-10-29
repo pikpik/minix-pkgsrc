@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2007/01/07 09:14:16 rillig Exp $
+# $NetBSD: Makefile,v 1.26 2009/12/17 18:02:29 abs Exp $
 
 DISTNAME=	tkinfo-2.8
 PKGREVISION=	1
@@ -14,7 +14,6 @@ DEPENDS+=	tk>=8.3.2:../../x11/tk
 NO_BUILD=	yes
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-patch:
 	cd ${WRKSRC}; \

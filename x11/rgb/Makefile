@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2008/06/08 14:35:42 bjs Exp $
+# $NetBSD: Makefile,v 1.5 2012/07/01 17:02:26 wiz Exp $
 #
 
 DISTNAME=		rgb-1.0.4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		RGB color database
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

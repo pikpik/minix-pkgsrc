@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/10/02 17:12:12 tron Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/08 23:00:51 adam Exp $
 #
 
 DISTNAME=	gnome-sharp-2.24.2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/GtkSharp
 COMMENT=	C\# bindings for the GNOME platform
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

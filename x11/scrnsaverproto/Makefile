@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/08/26 11:53:59 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/03 19:55:47 wiz Exp $
 #
 
 DISTNAME=		scrnsaverproto-1.2.2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		ScrnSaver extension headers from X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE+=	scrnsaverproto.pc.in

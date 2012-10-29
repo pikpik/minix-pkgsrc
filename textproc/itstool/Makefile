@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2012/03/10 10:56:15 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/25 06:56:00 asau Exp $
 #
 
-DISTNAME=	itstool-1.1.2
-PKGREVISION=	1
+DISTNAME=	itstool-1.2.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://files.itstool.org/itstool/
 EXTRACT_SUFX=	.tar.bz2

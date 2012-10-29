@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.105 2012/10/02 17:12:11 tron Exp $
+# $NetBSD: Makefile,v 1.106 2012/10/08 23:02:34 adam Exp $
 #
 
 DISTNAME=		gnome-applets-2.32.1.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME2 panel applets
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

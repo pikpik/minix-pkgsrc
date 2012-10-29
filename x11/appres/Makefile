@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/11/09 19:45:01 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2012/06/03 17:53:08 wiz Exp $
 #
 
 DISTNAME=		appres-1.0.3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Print resources seen by an application
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

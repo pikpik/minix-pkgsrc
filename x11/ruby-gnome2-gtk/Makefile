@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2012/10/02 17:12:20 tron Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/08 23:00:49 adam Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-gtk-${VERSION}
@@ -8,8 +8,6 @@ CATEGORIES=		x11
 
 CONFLICTS+=		ruby-gnome2-gtk-[0-9]*
 CONFLICTS+=		ruby[0-9][0-9]-gnome2-gtk-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RUBY_EXTCONF_SUBDIRS=	gtk2
 

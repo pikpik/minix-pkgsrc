@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/06/15 23:06:06 dholland Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/27 10:06:30 jperkin Exp $
 #
 
 DISTNAME=	xf86-video-nvxbox-${VER}
@@ -9,7 +9,6 @@ MASTER_SITES=	${MASTER_SITE_BACKUP}
 MAINTAINER=	joerg@NetBSD.org
 COMMENT=	Modular Xorg NVidia Xbox video driver
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 BROKEN=		Doesn't build with modular Xorg server 1.7.x
 
 VER=		20070409

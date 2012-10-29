@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/06/13 08:15:13 mef Exp $
+# $NetBSD: Makefile,v 1.33 2012/06/13 08:23:26 mef Exp $
 #
 
 DISTNAME=		xfstt-1.9
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://developer.berlios.de/projects/xfstt/
 COMMENT=		TrueType font server for X11
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_X11BASE=		YES

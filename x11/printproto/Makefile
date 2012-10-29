@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/06/26 10:37:53 jperkin Exp $
+# $NetBSD: Makefile,v 1.6 2012/07/02 16:03:46 joerg Exp $
 #
 
 DISTNAME=		printproto-1.0.5
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Print extension headers from X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes

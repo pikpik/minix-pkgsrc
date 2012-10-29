@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2012/10/03 21:59:08 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:37 adam Exp $
 
 DISTNAME=	Alien-wxWidgets-0.60
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Alien-wxWidgets/
 COMMENT=	Building, finding and using wxWidgets binaries
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	{perl>=5.10.1,p5-ExtUtils-CBuilder>=0.24}:../../devel/p5-ExtUtils-CBuilder
 

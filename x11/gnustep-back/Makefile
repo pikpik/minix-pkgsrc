@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2012/10/22 02:25:15 rh Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/23 10:24:17 wiz Exp $
 
 DISTNAME=	gnustep-back-0.22.0
 CATEGORIES=	x11 gnustep
@@ -8,8 +8,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	X11 AppKit backend for GNUstep
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		objc
 USE_TOOLS+=		pkg-config

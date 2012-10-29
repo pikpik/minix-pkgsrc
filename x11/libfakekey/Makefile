@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/08/30 09:42:41 obache Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/23 10:28:47 wiz Exp $
 #
 
 DISTNAME=	libfakekey-0.1
@@ -9,8 +9,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://matchbox-project.org/
 COMMENT=	X Virtual Keyboard Library
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

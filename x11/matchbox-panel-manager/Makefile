@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/10/02 17:12:17 tron Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/08 23:02:37 adam Exp $
 #
 
 DISTNAME=	matchbox-panel-manager-0.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://matchbox-project.org/
 COMMENT=	Manager panel for the Matchbox desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 GNU_CONFIGURE=	yes

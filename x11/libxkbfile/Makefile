@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/06/03 17:49:53 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/09 07:00:49 obache Exp $
 #
 
 DISTNAME=		libxkbfile-1.0.8
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		The xkbfile Library from modular X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 PKGCONFIG_OVERRIDE+=	xkbfile.pc.in

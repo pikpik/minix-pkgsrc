@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/07/07 18:10:38 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/23 10:24:20 wiz Exp $
 #
 
 DISTNAME=		numlockx-1.1
@@ -9,8 +9,6 @@ MASTER_SITES=		http://ktown.kde.org/~seli/numlockx/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://ktown.kde.org/~seli/numlockx/
 COMMENT=		Allows you to start X with numlock turned on
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

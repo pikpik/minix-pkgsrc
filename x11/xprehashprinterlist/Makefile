@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:19 tnn Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/23 10:24:22 wiz Exp $
 #
 
 DISTNAME=		xprehashprinterlist-1.0.1
@@ -11,7 +11,6 @@ HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Recompute Xprint server list
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

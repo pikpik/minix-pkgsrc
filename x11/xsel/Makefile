@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2008/04/05 13:07:35 obache Exp $
 #
 
 DISTNAME=	xsel-1.2.0
@@ -8,8 +8,6 @@ MASTER_SITES=	http://www.vergenet.net/~conrad/software/xsel/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.vergenet.net/~conrad/software/xsel/
 COMMENT=	Manipulate the X selection
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

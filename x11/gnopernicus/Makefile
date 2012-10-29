@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.78 2012/10/02 17:12:12 tron Exp $
+# $NetBSD: Makefile,v 1.79 2012/10/08 23:02:35 adam Exp $
 #
 
 DISTNAME=		gnopernicus-1.1.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Collection of accessibility apps for GNOME 2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes

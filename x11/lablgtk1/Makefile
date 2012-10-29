@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/12/06 00:19:22 sbd Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/08 15:18:25 jaapb Exp $
 
 DISTNAME=	lablgtk-1.2.7
 PKGNAME=	lablgtk1-1.2.7
@@ -9,8 +9,6 @@ MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/571/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://wwwfun.kurims.kyoto-u.ac.jp/soft/olabl/lablgtk.html
 COMMENT=	GTK+ bindings for ocaml
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 

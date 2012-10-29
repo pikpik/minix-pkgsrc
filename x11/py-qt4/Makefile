@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.56 2012/10/08 23:02:38 adam Exp $
+# $NetBSD: Makefile,v 1.57 2012/10/10 16:53:38 drochner Exp $
 
 PKGNAME=	${PYPKGPREFIX}-qt4-${PYQT_VERSION}
 PYQT_VERSION=	4.9.5
@@ -13,8 +13,6 @@ HOMEPAGE=	http://www.riverbankcomputing.com/software/pyqt/intro
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config
 USE_LANGUAGES=		c c++
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	-b ${PREFIX}/bin
 CONFIGURE_ARGS+=	-d ${PREFIX}/${PYSITELIB}

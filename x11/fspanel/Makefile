@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2009/07/07 18:25:09 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2011/11/01 06:02:49 sbd Exp $
 #
 
 DISTNAME=	fspanel-0.8beta1
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.chatjunkies.org/fspanel/
 COMMENT=	F***ing Small Panel for listing X11 windows
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	YES
 

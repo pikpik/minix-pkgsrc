@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/11/01 06:03:06 sbd Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.13 2012/08/05 10:02:14 obache Exp $
 
 .include "../../x11/qt3-libs/Makefile.common"
 

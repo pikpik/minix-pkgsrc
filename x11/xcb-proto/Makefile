@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/06/14 07:45:22 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/07 22:08:43 wiz Exp $
 #
 
 DISTNAME=	xcb-proto-1.8
@@ -10,8 +10,6 @@ MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://xcb.freedesktop.org/
 COMMENT=	XCB protocol descriptions (in XML)
 LICENSE=	mit # with no-advertising clause
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

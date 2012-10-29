@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/07/07 21:35:23 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2012/06/05 06:45:29 wiz Exp $
 #
 
 DISTNAME=	transset-1.0.0
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Utility for setting opacity property
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

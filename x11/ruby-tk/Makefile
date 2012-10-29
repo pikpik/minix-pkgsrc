@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/11/08 15:24:59 taca Exp $
+# $NetBSD: Makefile,v 1.35 2012/08/21 23:49:27 marino Exp $
 
 DISTNAME=		${RUBY_DISTNAME}
 PKGNAME=		${RUBY_PKGPREFIX}-${RUBY_EXTNAME}-${RUBY_VERSION_FULL}
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_RUBY}
 MAINTAINER=		taca@NetBSD.org
 HOMEPAGE=		${RUBY_HOMEPAGE}
 COMMENT=		Ruby interface to the Tk widget set
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 USE_TOOLS+=		pax

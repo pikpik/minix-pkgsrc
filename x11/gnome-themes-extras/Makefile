@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2012/10/02 17:12:12 tron Exp $
+# $NetBSD: Makefile,v 1.59 2012/10/08 23:02:35 adam Exp $
 #
 
 DISTNAME=	gnome-themes-extras-2.22.0
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Collection of metathemes for the GNOME desktop environment
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

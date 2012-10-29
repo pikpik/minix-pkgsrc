@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/09/10 19:19:06 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/15 23:06:04 dholland Exp $
 #
 
 DISTNAME=		videoproto-2.3.1
@@ -10,8 +10,6 @@ MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Video extension headers from modular X.org X11
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGCONFIG_OVERRIDE+=	videoproto.pc.in
 GNU_CONFIGURE=		yes

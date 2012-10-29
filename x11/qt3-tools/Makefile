@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.63 2011/11/01 06:03:07 sbd Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.64 2012/02/06 12:42:23 wiz Exp $
 
 .include "../../mk/bsd.prefs.mk"
 # XXX: hack - work round an ICE with GCC 3.3 on sparc

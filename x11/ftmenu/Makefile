@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/10/02 17:12:11 tron Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 23:02:34 adam Exp $
 #
 
 DISTNAME=	ftmenu-0.3
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ftmenu/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ftmenu.sourceforge.net/
 COMMENT=	Fluxbox Tray Menu
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 LDFLAGS.DragonFly=	-lX11
