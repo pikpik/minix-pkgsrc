@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.4 2008/12/19 11:41:25 tron Exp $
+# $NetBSD: options.mk,v 1.5 2008/12/19 13:05:06 tron Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.SDL
 PKG_SUPPORTED_OPTIONS=	aalib arts esound nas pulseaudio
-PKG_SUGGESTED_OPTIONS=	aalib arts esound nas pulseaudio
+PKG_SUGGESTED_OPTIONS=	esound nas pulseaudio
 
 .include "../../mk/bsd.options.mk"
 
