@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11639 2012/10/29 14:40:46 prlw1 Exp $
+$NetBSD: TODO,v 1.11642 2012/10/30 20:18:50 drochner Exp $
 
 Suggested new packages
 ======================
@@ -1174,7 +1174,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o tomboy-1.10.2
 	o top-3.8beta1
 	o totem-3.4.1
-	o totem-pl-parser-3.4.1
 	o tpasm-1.2
 	o tpb-0.6.4
 	o tree-1.6.0
@@ -1210,14 +1209,12 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o vm-8.0.7.522 [pkg/37707]
 	o vnc-4.0 [http://www.realvnc.com/download.html|pkgsrc-wip]
 	o vp-1.6
-	o vttest-20120506
 	o wMosaic-3.8.22
 	o wap-utils-1.4.1
 	o warzone2100-2.3.8
 	o wbm-cyrus-imapd-1.6.2
 	o wcalc-2.4
 	o webalizer-2.23.05
-	o webkit-gtk-1.10.1
 	o webkit-gtk3-1.10.1
 	o webmin-1.550 [security] [pkg/45066]
 	o webmin-1.600 [security]

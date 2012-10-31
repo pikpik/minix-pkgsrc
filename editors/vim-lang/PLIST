@@ -91,6 +91,7 @@ share/vim/${VIM_SUBDIR}/keymap/README.txt
 share/vim/${VIM_SUBDIR}/keymap/accents.vim
 share/vim/${VIM_SUBDIR}/keymap/arabic.vim
 share/vim/${VIM_SUBDIR}/keymap/arabic_utf-8.vim
+share/vim/${VIM_SUBDIR}/keymap/belarusian-jcuken.vim
 share/vim/${VIM_SUBDIR}/keymap/bulgarian-bds.vim
 share/vim/${VIM_SUBDIR}/keymap/bulgarian-phonetic.vim
 share/vim/${VIM_SUBDIR}/keymap/canfr-win.vim
@@ -299,6 +300,7 @@ share/vim/${VIM_SUBDIR}/lang/menu_zh_tw.big5.vim
 share/vim/${VIM_SUBDIR}/lang/menu_zh_tw.cp950.vim
 share/vim/${VIM_SUBDIR}/lang/menu_zh_tw.utf-8.vim
 share/vim/${VIM_SUBDIR}/lang/nb/LC_MESSAGES/vim.mo
+share/vim/${VIM_SUBDIR}/lang/nl/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/no/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/pl/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/pt_BR/LC_MESSAGES/vim.mo

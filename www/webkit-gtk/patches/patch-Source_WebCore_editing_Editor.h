@@ -1,10 +1,10 @@
 $NetBSD$
 
---- Source/WebCore/editing/Editor.h.orig	2012-10-23 16:11:11.000000000 +0000
+--- Source/WebCore/editing/Editor.h.orig	2012-10-16 15:22:38.000000000 +0000
 +++ Source/WebCore/editing/Editor.h
-@@ -385,7 +385,7 @@ public:
-     void deviceScaleFactorChanged();
- 
+@@ -398,7 +398,7 @@ public:
+     Vector<String> dictationAlternativesForMarker(const DocumentMarker*);
+     void applyDictationAlternativelternative(const String& alternativeString);
  private:
 -    virtual void willDetachPage() OVERRIDE;
 +    virtual void willDetachPage();
