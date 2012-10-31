@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2011/02/19 00:42:21 minskim Exp $
+# $NetBSD: Makefile,v 1.44 2012/10/12 08:15:26 obache Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
@@ -29,8 +29,6 @@ DEPENDS+=		tk>=8.0:../../x11/tk
 USE_TOOLS+=	pax
 
 EMUL_PLATFORMS+=	linux-i386 solaris-sparc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 VERSION=		3.2

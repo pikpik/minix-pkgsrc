@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/09/13 16:03:16 sno Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 21:55:29 wiz Exp $
 #
 
 DISTNAME=	Perl-Tidy-20120714
@@ -15,7 +15,6 @@ COMMENT=	Parses and beautifies perl source
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Perl/Tidy/.packlist
 

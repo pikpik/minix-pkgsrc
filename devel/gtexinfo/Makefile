@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.77 2012/03/09 14:28:19 fhajny Exp $
+# $NetBSD: Makefile,v 1.78 2012/09/18 18:30:58 jperkin Exp $
 
 DISTNAME=		texinfo-4.13
 PKGNAME=		g${DISTNAME}
@@ -12,8 +12,6 @@ COMMENT=		GNU info documentation utilities
 LICENSE=		gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		bash
 GNU_CONFIGURE=		yes

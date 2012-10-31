@@ -1,4 +1,4 @@
-# $NetBSD: mozilla-common.mk,v 1.29 2012/01/14 02:09:35 hans Exp $
+# $NetBSD: mozilla-common.mk,v 1.1 2012/02/22 11:00:07 obache Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 2.0.
 # 
@@ -10,7 +10,6 @@ USE_TOOLS+=		pkg-config perl gmake autoconf213 unzip zip
 USE_LANGUAGES+=		c99 c++
 UNLIMIT_RESOURCES+=	datasize
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
 CHECK_INTERPRETER_SKIP+=lib/xulrunner-sdk/sdk/bin/xpt.py

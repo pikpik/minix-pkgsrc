@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/08/14 12:26:07 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:55:05 wiz Exp $
 
 DISTNAME=	Getopt-Simple-1.52
 PKGNAME=	p5-${DISTNAME}
@@ -15,7 +15,6 @@ LICENSE=	artistic
 USE_TOOLS+=	perl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Getopt/Simple/.packlist
 PERL5_MODULE_TYPE=	Module::Build

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/03/22 16:25:30 sno Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:42 wiz Exp $
 
 DISTNAME=	Test-Fatal-0.010
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-Try-Tiny>=0.07:../../devel/p5-Try-Tiny
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_PACKLIST=		auto/Test/Fatal/.packlist
 
 .include "../../lang/perl5/module.mk"

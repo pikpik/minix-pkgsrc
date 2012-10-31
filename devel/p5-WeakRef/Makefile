@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/08/14 12:26:48 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:55:50 wiz Exp $
 
 DISTNAME=	WeakRef-0.01
 PKGNAME=	p5-${DISTNAME}
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Provide weak references in Perl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/WeakRef/.packlist
 

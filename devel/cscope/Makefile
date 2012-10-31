@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.52 2010/12/18 13:06:04 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2012/10/25 08:28:20 asau Exp $
 
 DISTNAME=	cscope-15.8a
 CATEGORIES=	devel
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cscope.sourceforge.net/
 COMMENT=	Interactive C program browser
 LICENSE=	original-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		byacc lex

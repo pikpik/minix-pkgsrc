@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/10/03 00:02:46 dholland Exp $
+# $NetBSD: Makefile,v 1.3 2012/04/08 19:08:53 wiz Exp $
 #
 
 DISTNAME=	multiprocessing-2.6.2.1
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pypi.python.org/pypi/multiprocessing/
 COMMENT=	Python threading package
 #LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 

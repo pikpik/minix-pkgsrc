@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/08/07 05:41:13 adam Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:54:34 wiz Exp $
 
 DISTNAME=	Algorithm-C3-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -15,8 +15,6 @@ PERL5_MODULE_TYPE=	Module::Build
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/Algorithm/C3/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

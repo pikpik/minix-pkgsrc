@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/29 10:39:31 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:55:54 wiz Exp $
 #
 
 DISTNAME=	pstreams-0.7.0
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pstreams.sourceforge.net/
 COMMENT=	POSIX Process Control in C++
 LICENSE=	gnu-lgpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 

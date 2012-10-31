@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/03/03 17:45:36 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2012/08/07 23:41:23 dsainty Exp $
 #
 
 PKGNAME=		picprg-2.3d
@@ -16,8 +16,6 @@ COMMENT=		Parallel port PIC programmer
 # via the i386_set_ioperm() interface.
 #
 ONLY_FOR_PLATFORM=	NetBSD-*-i386
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 

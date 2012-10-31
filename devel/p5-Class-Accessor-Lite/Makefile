@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/27 07:56:16 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:54:41 wiz Exp $
 
 DISTNAME=	Class-Accessor-Lite-0.05
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Minimalistic variant of Class::Accessor
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Class/Accessor/Lite/.packlist
 

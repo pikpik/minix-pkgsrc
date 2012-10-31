@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/07/25 15:33:46 wen Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:55:45 wiz Exp $
 
 DISTNAME=	Test-SharedFork-0.20
 PKGNAME=	p5-${DISTNAME}
@@ -13,8 +13,6 @@ LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Test/SharedFork/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Test-Requires>=0:../../devel/p5-Test-Requires
 

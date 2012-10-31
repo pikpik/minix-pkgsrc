@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/10 06:45:27 adam Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:54:46 wiz Exp $
 
 DISTNAME=	Compress-PPMd-0.11
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Compress-PPMd/
 COMMENT=	Perl 5 module interface to the Dmitry Shkarin PPMd compression library
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 PERL5_PACKLIST=		auto/Compress/PPMd/.packlist

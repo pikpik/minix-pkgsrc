@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/10 06:33:10 adam Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:54:45 wiz Exp $
 
 DISTNAME=	Class-Throwable-0.11
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Class-Throwable/
 COMMENT=	Minimal lightweight exception class
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Class/Throwable/.packlist
 

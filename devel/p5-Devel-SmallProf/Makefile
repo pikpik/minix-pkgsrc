@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/08/12 11:45:31 adam Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 21:54:55 wiz Exp $
 
 DISTNAME=	Devel-SmallProf-2.02
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Perl5 module for line-by-line profiling perl programs
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Time-HiRes>=1.20:../../time/p5-Time-HiRes
 

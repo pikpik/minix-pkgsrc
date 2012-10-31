@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 12:26:37 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:55:37 wiz Exp $
 #
 
 DISTNAME=		TAP-Formatter-HTML-0.09
@@ -19,7 +19,6 @@ DEPENDS+=	p5-accessors>=0.2:../../devel/p5-accessors
 
 PERL5_MODULE_TYPE=	Module::Build
 PERL5_PACKLIST=		auto/TAP/Formatter/HTML/.packlist
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

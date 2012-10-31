@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/08/14 12:26:39 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:39 wiz Exp $
 
 DISTNAME=	Term-Screen-1.03
 PKGNAME=	p5-Term-Screen-1.03
@@ -11,7 +11,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Term-Screen/
 COMMENT=	Term::Cap based screen positioning module
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Term/Screen/.packlist
 

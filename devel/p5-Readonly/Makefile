@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/12/08 02:16:19 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:32 wiz Exp $
 #
 
 DISTNAME=	Readonly-1.03
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Readonly/
 COMMENT=	Perl 5 module for creating read-only scalars, arrays and hashes
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PERL=	benchmark.pl
 

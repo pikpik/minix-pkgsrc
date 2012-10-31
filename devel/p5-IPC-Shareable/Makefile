@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/10/21 06:10:21 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:55:10 wiz Exp $
 #
 
 DISTNAME=	IPC-Shareable-0.60
@@ -15,7 +15,6 @@ LICENSE=	gnu-gpl-v2
 DEPENDS+=	p5-Storable>=1.0.14:../../devel/p5-Storable
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/IPC/Shareable/.packlist
 

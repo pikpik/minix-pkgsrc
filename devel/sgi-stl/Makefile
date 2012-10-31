@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/03/04 21:29:29 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/03 17:45:37 jlam Exp $
 
 DISTNAME=		stl
 PKGNAME=		sgi-stl-3.3
@@ -8,8 +8,6 @@ MASTER_SITES=		http://www.sgi.com/tech/stl/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.sgi.com/tech/stl/
 COMMENT=		SGI Standard Template Library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 DIST_SUBDIR=		${PKGNAME_NOREV}

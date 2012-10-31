@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/07/06 09:11:22 sno Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 21:54:42 wiz Exp $
 
 DISTNAME=	Class-C3-0.24
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Class-C3/
 COMMENT=	Pragma to use the C3 method resolution order algortihm
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Algorithm-C3-[0-9]*:../../devel/p5-Algorithm-C3
 

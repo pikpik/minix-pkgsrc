@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/08/16 07:31:04 adam Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:55:03 wiz Exp $
 
 DISTNAME=	File-Type-0.22
 PKGNAME=	p5-${DISTNAME}
@@ -11,7 +11,6 @@ COMMENT=	Perl module for determining file type
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/File/Type/.packlist
 

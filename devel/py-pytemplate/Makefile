@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/10/14 06:27:42 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/04/08 19:08:54 wiz Exp $
 #
 
 DISTNAME=	pytemplate-1.5.1
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.bulot.org/downloads/
 MAINTAINER=	imil@gcu.info
 HOMEPAGE=	http://bulot.org/wiki/doku.php?id=projects:python:pytemplate
 COMMENT=	Pytemplate gives python developpers a starting framework
-
-PKG_DESTDIR_SUPPORT=		user-destdir
 
 USE_LANGUAGES=			# none
 

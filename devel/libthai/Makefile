@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/12/06 11:21:11 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/08 18:05:58 adam Exp $
 
 DISTNAME=	libthai-0.1.18
 CATEGORIES=	devel
@@ -9,8 +9,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://linux.thai.net/projects/libthai
 COMMENT=	Thai language support routines
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config

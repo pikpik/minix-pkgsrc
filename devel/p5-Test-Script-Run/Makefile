@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 12:26:44 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:45 wiz Exp $
 #
 
 DISTNAME=	Test-Script-Run-0.04
@@ -13,7 +13,6 @@ COMMENT=	Perl 5 module to test scripts
 LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=		# empty
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Test/Script/Run/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled

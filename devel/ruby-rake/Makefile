@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/03/17 13:57:59 taca Exp $
+# $NetBSD: Makefile,v 1.3 2012/05/11 10:01:58 sbd Exp $
 
 DISTNAME=	rake-0.9.2.2
 CATEGORIES=	devel
@@ -7,8 +7,6 @@ MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://rubyforge.org/projects/rake/
 COMMENT=	Ruby Make
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	 rake-[0-9]*
 

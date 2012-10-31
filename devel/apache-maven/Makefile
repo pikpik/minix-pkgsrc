@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/07/29 17:45:59 yyamano Exp $
+# $NetBSD: Makefile,v 1.4 2009/11/07 00:14:53 yyamano Exp $
 #
 
 DISTNAME=	apache-maven-2.2.1
@@ -10,8 +10,6 @@ DISTFILES=	${DISTNAME}-bin${EXTRACT_SUFX}
 MAINTAINER=	yyamano@NetBSD.org
 HOMEPAGE=	http://maven.apache.org/
 COMMENT=	Apache Project's software project management and comprehension tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_JAVA=	run
 USE_JAVA2=	1.5

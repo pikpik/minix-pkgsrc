@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/08/10 04:19:40 adam Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:54:44 wiz Exp $
 
 DISTNAME=	Class-Loader-2.03
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Perl5 module for module loading and on-demand object creation
 LICENSE=	artistic
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Class/Loader/.packlist

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/12/04 21:59:36 marino Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/13 00:49:37 darcy Exp $
 
 DISTNAME=	ptlib-2.10.7
 CATEGORIES=	devel
@@ -10,8 +10,6 @@ HOMEPAGE=	http://www.ekiga.net/
 COMMENT=	Portable Windows Libary
 # modified-bsd stands for Spencer's regex license, quite similar
 LICENSE=	mpl-1.0 AND modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	pwlib-[0-9]*
 

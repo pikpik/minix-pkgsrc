@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/08/09 09:34:45 adam Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:54:41 wiz Exp $
 
 DISTNAME=	Carp-Assert-0.20
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/search?dist=Carp-Assert
 COMMENT=	Executable comments like the ANSI C library assert.h
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Carp/Assert/.packlist
 

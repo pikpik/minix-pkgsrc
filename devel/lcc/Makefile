@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/03/03 17:45:35 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2010/11/13 21:08:56 shattered Exp $
 
 DISTNAME=	lcc-4.1
 CATEGORIES=	devel lang
@@ -14,8 +14,6 @@ MAKE_ENV+=	BUILDDIR=${WRKSRC}/bin HOSTFILE=etc/netbsd.c
 # it builds and runs on others (like alpha) but still
 # seems to emit i386 assembler
 ONLY_FOR_PLATFORM=	*-*-i386
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

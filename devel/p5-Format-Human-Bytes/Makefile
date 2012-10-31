@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 12:26:06 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:55:04 wiz Exp $
 #
 
 DISTNAME=	Format-Human-Bytes-0.06
@@ -13,7 +13,6 @@ COMMENT=	Perl 5 module to format a bytecount and make it human readable
 LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=		# empty
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Format/Human/Bytes/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled

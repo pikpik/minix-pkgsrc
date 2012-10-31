@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/03/08 09:54:41 sno Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:17 wiz Exp $
 
 DISTNAME=		Module-Runtime-0.013
 PKGNAME=		p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Module-Runtime/
 COMMENT=		Deal with runtime handling of Perl modules
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_MODULE_TYPE=	Module::Build
 PERL5_PACKLIST=		auto/Module/Runtime/.packlist

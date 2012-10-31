@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/09/02 13:03:05 wen Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 21:54:47 wiz Exp $
 
 DISTNAME=	Config-General-2.51
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Perl Generic Config module
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Config/General/.packlist
 

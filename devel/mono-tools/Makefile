@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2012/10/02 17:10:50 tron Exp $
+# $NetBSD: Makefile,v 1.45 2012/10/08 23:01:23 adam Exp $
 
 DISTNAME=	mono-tools-2.10
 PKGREVISION=	16
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/
 COMMENT=	Tools for use with the Mono runtime
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKGCONFIG_OVERRIDE+=	create-native-map/lib/pkgconfig/create-native-map.pc.in
 PKGCONFIG_OVERRIDE+=	gendarme/framework/gendarme-framework.pc.in

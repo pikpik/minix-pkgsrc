@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2012/01/04 15:00:54 dholland Exp $
+# $NetBSD: Makefile,v 1.33 2012/02/06 12:39:55 wiz Exp $
 #
 
 DISTNAME=	ogre-v1-6-3
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ogre.sourceforge.net/
 COMMENT=	Object-Oriented Graphics Rendering Engine
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/ogre
 GNU_CONFIGURE=		yes

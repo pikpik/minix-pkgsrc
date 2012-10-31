@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/07/21 10:09:46 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2011/12/07 08:19:57 marino Exp $
 #
 
 DISTNAME=		uno_v213
@@ -14,7 +14,6 @@ NOT_FOR_PLATFORM=	DragonFly-*-x86_64	#Cannot build 32-bit binary
 WRKSRC=			${WRKDIR}/uno/src
 MAKE_FILE=		makefile
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 USE_TOOLS+=		bison gmake flex

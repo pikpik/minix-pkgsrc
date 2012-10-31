@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/02/10 19:17:36 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/03/15 11:53:25 obache Exp $
 #
 
 DISTNAME=		ncc-2.8
@@ -9,8 +9,6 @@ MASTER_SITES=		http://students.ceid.upatras.gr/~sxanth/ncc/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://students.ceid.upatras.gr/~sxanth/ncc/index.html
 COMMENT=		Compiler that produces program analysis information
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		tout
 CFLAGS+=		-DNOGNU='"${PREFIX}/share/ncc/nognu"'

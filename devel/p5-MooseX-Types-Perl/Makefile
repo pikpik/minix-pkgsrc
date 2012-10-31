@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/07/05 16:53:29 sno Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:55:23 wiz Exp $
 #
 
 DISTNAME=	MooseX-Types-Perl-0.101341
@@ -13,7 +13,6 @@ COMMENT=	Moose types that check against Perl syntax
 LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=		# empty
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/MooseX/Types/Perl/.packlist
 

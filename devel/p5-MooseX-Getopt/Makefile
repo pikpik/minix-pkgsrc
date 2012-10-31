@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/09/10 10:24:08 sno Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 21:55:19 wiz Exp $
 #
 
 DISTNAME=	MooseX-Getopt-0.47
@@ -22,8 +22,6 @@ BUILD_DEPENDS+=	p5-Test-Requires>=0.05:../../devel/p5-Test-Requires
 BUILD_DEPENDS+=	{perl>=5.10.1,p5-Test-Simple>=0.88}:../../devel/p5-Test-Simple
 BUILD_DEPENDS+=	p5-Test-Trap-[0-9]*:../../devel/p5-Test-Trap
 BUILD_DEPENDS+=	p5-Test-Warn>=0.21:../../devel/p5-Test-Warn
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/MooseX/Getopt/.packlist

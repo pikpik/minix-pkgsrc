@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/10/08 20:31:27 prlw1 Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/18 10:19:01 prlw1 Exp $
 #
 
 DISTNAME=	at-spi2-atk-2.6.1
@@ -10,8 +10,6 @@ MAINTAINER=	prlw1@cam.ac.uk
 HOMEPAGE=	http://www.linuxfoundation.org/collaborate/workgroups/accessibility/atk/at-spi/at-spi_on_d-bus
 COMMENT=	Assistive Technology Service Provider Interface A11y Toolkit
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=     gmake intltool msgfmt pkg-config

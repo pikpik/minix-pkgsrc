@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/09/26 08:19:32 jperkin Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/08 19:16:17 dholland Exp $
 #
 
 DISTNAME=	libusb-1.0.9
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.libusb.org/wiki/libusb-1.0
 COMMENT=	USB Access Library (version 1)
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM=	DragonFly-*-* SunOS-*-*
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/02/23 19:10:43 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:55:38 wiz Exp $
 #
 
 DISTNAME=	Term-Animation-2.6
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/~kbaucom/Term-Animation/
 COMMENT=	ASCII sprite animation package
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Curses>=1.06:../../devel/p5-Curses
 

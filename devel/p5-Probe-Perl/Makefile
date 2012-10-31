@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 12:26:31 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:30 wiz Exp $
 
 DISTNAME=		Probe-Perl-0.01
 PKGNAME=		p5-${DISTNAME}
@@ -11,7 +11,6 @@ HOMEPAGE=		http://search.cpan.org/dist/Probe-Perl/
 COMMENT=		Information about the currently running perl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Probe/Perl/.packlist
 

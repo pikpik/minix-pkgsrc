@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/11/13 21:08:56 shattered Exp $
+# $NetBSD: Makefile,v 1.4 2012/06/16 07:46:55 dholland Exp $
 
 DISTNAME=		electric-fence_2.1.13-0.1
 PKGNAME=		electric-fence-2.1.13.0.1
@@ -14,7 +14,6 @@ CONFLICTS+=		ElectricFence-[0-9]*
 PREV_PKGPATH=		devel/electricfence
 SUPERSEDES=		ElectricFence<=2.1.13.0.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=		yes
 WRKSRC=			${WRKDIR}/${DISTNAME:C/-0.1//1:C/_/-/1}
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.16 2011/04/06 14:02:47 adam Exp $
+# $NetBSD: Makefile.common,v 1.17 2012/06/08 13:21:10 fhajny Exp $
 #
 # used by devel/ncursesw/Makefile
 
@@ -14,7 +14,6 @@ HOMEPAGE=	http://invisible-island.net/ncurses/ncurses.html
 LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

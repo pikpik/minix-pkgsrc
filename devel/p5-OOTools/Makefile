@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/08/14 12:26:25 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:55:24 wiz Exp $
 
 DISTNAME=	OOTools-2.21
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/~domizio/OOTools/
 COMMENT=	Perl module collection to easily create constructors methods
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/OOTools/.packlist
 

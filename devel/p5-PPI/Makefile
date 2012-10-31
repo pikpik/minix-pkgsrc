@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/08/16 22:48:24 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:55:26 wiz Exp $
 #
 
 DISTNAME=	PPI-1.215
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/PPI/
 COMMENT=	Perl 5 module to parse, analyze and manipulate Perl (without perl)
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Before update this package, please check $XS_COMPATIBLE in lib/PPI.pm.
 # If it is greater than version of devel/p5-PPI-XS, p5-PPI-XS should be updated.

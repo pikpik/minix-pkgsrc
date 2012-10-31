@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/11/14 09:39:57 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:55:22 wiz Exp $
 #
 
 DISTNAME=	MooseX-Singleton-0.27
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/MooseX-Singleton/
 COMMENT=	Perl 5 module to turn Moose class into a singleton
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/MooseX/Singleton/.packlist

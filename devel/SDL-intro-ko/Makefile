@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/07/21 19:52:59 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2008/03/03 17:45:33 jlam Exp $
 #
 
 DISTNAME=	SDL-1.0-korean-intro
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.libsdl.org/archives/
 MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://www.libsdl.org/docs.php
 COMMENT=	Simple DirectMedia Layer introduction (Korean)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/intro.ko
 DEST=		${PREFIX}/share/doc/SDL-intro.ko

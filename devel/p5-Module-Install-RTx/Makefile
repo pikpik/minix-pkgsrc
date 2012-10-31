@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/11/06 02:45:13 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:55:16 wiz Exp $
 
 DISTNAME=	Module-Install-RTx-0.29
 PKGNAME=	p5-${DISTNAME}
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Module-Install-RTx/
 COMMENT=	Perl5 module for building and installing RT extensions
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Module-Install-[0-9]*:../../devel/p5-Module-Install
 

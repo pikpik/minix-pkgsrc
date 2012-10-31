@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2012/05/29 21:01:25 cheusov Exp $
+# $NetBSD: Makefile,v 1.28 2012/06/02 08:18:35 cheusov Exp $
 #
 
 DISTNAME=		diffutils-3.2
@@ -12,7 +12,6 @@ COMMENT=		GNU diff utilities - find the differences between files
 LICENSE=		gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 INFO_FILES=		YES # PLIST

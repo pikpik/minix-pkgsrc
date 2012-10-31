@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/21 12:35:30 reed Exp $
+# $NetBSD: Makefile,v 1.2 2012/04/08 19:08:50 wiz Exp $
 #
 
 DISTNAME=	lettuce-0.1.33
@@ -9,8 +9,6 @@ MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://lettuce.it/
 COMMENT=	Behaviour-driven development test tool
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 

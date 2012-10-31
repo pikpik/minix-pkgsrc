@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/08/12 07:27:10 adam Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:54:53 wiz Exp $
 
 DISTNAME=	Devel-Events-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Devel-Events/
 COMMENT=	Perl 5 module providing an extensible instrumentation framework
 LICENSE=	mit OR ${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Devel/Events/.packlist

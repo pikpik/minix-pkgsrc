@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/10/24 09:35:25 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:55:34 wiz Exp $
 
 DISTNAME=	Scope-Upper-0.18
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Scope-Upper/
 COMMENT=	Perl5 module to act on upper scopes
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Scope/Upper/.packlist
 

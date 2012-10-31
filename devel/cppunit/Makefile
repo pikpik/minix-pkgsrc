@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/08/12 16:01:34 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/02 17:17:45 wiz Exp $
 
 DISTNAME=	cppunit-1.13.1
 CATEGORIES=	devel
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/cppunit
 COMMENT=	C++ unit testing framework
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

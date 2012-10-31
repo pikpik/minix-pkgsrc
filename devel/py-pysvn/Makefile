@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/04/27 12:31:46 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/16 07:08:13 wiz Exp $
 #
 
 VERS=			1.7.5
@@ -12,8 +12,6 @@ MAINTAINER=		helgoman@users.sourceforge.net
 HOMEPAGE=		http://pysvn.tigris.org/
 COMMENT=		Python interface to Subversion
 LICENSE=		apache-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 

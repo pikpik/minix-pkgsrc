@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/08/14 12:26:47 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:55:49 wiz Exp $
 #
 
 DISTNAME=	Tree-Simple-1.18
@@ -15,7 +15,6 @@ DEPENDS+=	{perl>=5.10,p5-Scalar-List-Utils>=1.18}:../../devel/p5-Scalar-List-Uti
 DEPENDS+=	p5-Test-Exception>=0.20:../../devel/p5-Test-Exception
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Tree/Simple/.packlist
 

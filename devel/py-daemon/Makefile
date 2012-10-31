@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/08/14 12:29:50 imil Exp $
 #
 
 DISTNAME=	python-daemon-1.5.5
@@ -13,8 +13,6 @@ COMMENT=	Library to implement a well-behaved Unix daemon process
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	${PYPKGPREFIX}-lockfile>=0.9:../../devel/py-lockfile
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/python-daemon-1.5.5
 USE_LANGUAGES=	# none

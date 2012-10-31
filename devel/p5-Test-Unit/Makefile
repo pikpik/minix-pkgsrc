@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/08/14 12:26:44 obache Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 21:55:46 wiz Exp $
 
 DISTNAME=	Test-Unit-0.25
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ HOMEPAGE=	http://cpan.uwinnipeg.ca/dist/Test-Unit
 COMMENT=	Perl extension module for Unit Tests
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Class-Inner-[0-9]*:../../devel/p5-Class-Inner
 DEPENDS+=	p5-Devel-Symdump-[0-9]*:../../devel/p5-Devel-Symdump

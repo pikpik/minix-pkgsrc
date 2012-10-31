@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/11/12 01:21:16 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:55:17 wiz Exp $
 #
 
 DISTNAME=	Module-Refresh-0.17
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Module-Refresh/
 COMMENT=	Perl5 module providing %INC files refreshing when updated on disk
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Module/Refresh/.packlist
 

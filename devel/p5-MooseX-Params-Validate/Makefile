@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/11/17 14:13:39 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:55:21 wiz Exp $
 #
 
 DISTNAME=	MooseX-Params-Validate-0.16
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/perldoc?MooseX::Params::Validate
 COMMENT=	Extension of Params::Validate for using Moose's types
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/MooseX/Params/Validate/.packlist

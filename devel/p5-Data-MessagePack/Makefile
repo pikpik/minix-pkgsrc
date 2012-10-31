@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/03/14 23:09:38 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:54:50 wiz Exp $
 #
 
 DISTNAME=	Data-MessagePack-0.39
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Data-MessagePack/
 COMMENT=	MessagePack serialising/deserialising
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Test-Requires>=0:../../devel/p5-Test-Requires
 

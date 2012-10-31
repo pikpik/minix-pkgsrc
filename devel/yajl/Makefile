@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/03/18 23:22:03 abs Exp $
+# $NetBSD: Makefile,v 1.3 2012/03/19 01:43:36 obache Exp $
 
 DISTNAME=	2.0.1
 PKGNAME=	yajl-${DISTNAME}
@@ -14,8 +14,6 @@ COMMENT=	Small JSON library written in ANSI C
 LICENSE=	modified-bsd
 
 WRKSRC=		${WRKDIR}/lloyd-yajl-f4b2b1a
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c
 USE_LIBTOOL=	yes

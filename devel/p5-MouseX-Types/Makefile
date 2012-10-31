@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/02/17 06:58:32 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:55:23 wiz Exp $
 
 DISTNAME=	MouseX-Types-0.06
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/MouseX-Types/
 COMMENT=	Perl 5 module to organize Mouse types in libraries
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=	auto/MouseX/Types/.packlist

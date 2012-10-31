@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/09/13 16:10:47 sno Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 21:55:29 wiz Exp $
 #
 
 DISTNAME=	Perl-Critic-1.117
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Perl-Critic/
 COMMENT=	Perl 5 module providing a static Perl source code analysis engine
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PERL=	lib/Test/Perl/Critic/Policy.pm
 

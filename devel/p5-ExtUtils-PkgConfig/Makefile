@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/07/06 10:26:46 sno Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 21:54:59 wiz Exp $
 
 DISTNAME=	ExtUtils-PkgConfig-1.13
 PKGNAME=	p5-${DISTNAME}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://gtk2-perl.sourceforge.net/
 COMMENT=	Simplistic perl interface to pkg-config
 LICENSE=	gnu-lgpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		# empty

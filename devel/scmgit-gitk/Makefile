@@ -1,9 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/09/16 21:50:16 cheusov Exp $
 
 PKGNAME=	scmgit-gitk-${GIT_VERSION}
 COMMENT=	GIT Tree History Storage Tool (gitk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		scmgit-base<1.7.12nb1
 DEPENDS+=		scmgit-base>=1.7.12nb1:../../devel/scmgit-base

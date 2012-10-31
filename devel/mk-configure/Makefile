@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/10/21 17:17:01 cheusov Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/21 17:24:58 cheusov Exp $
 #
 
 DISTNAME=	mk-configure-0.23.0
@@ -13,8 +13,6 @@ COMMENT=	Lightweight but powerful replacement for GNU autotools
 LICENSE=	modified-bsd
 
 DEPENDS+=	bmake-[0-9]*:../../devel/bmake
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# no languages
 

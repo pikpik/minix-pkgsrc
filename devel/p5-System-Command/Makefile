@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/07/06 14:07:11 sno Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:37 wiz Exp $
 
 DISTNAME=	System-Command-1.07
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Object for running system commands
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/System/Command/.packlist

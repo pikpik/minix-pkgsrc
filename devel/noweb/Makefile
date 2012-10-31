@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.38 2009/12/11 00:17:55 asau Exp $
+# $NetBSD: Makefile,v 1.39 2010/11/13 21:08:56 shattered Exp $
 
 DISTNAME=		noweb-2.11b
 CATEGORIES=		devel
@@ -10,8 +10,6 @@ HOMEPAGE=		http://www.cs.tufts.edu/~nr/noweb/
 COMMENT=		Simple, extensible literate-programming tool
 
 DEPENDS+=		icon>=9.3:../../lang/icon
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DIRS=		src
 

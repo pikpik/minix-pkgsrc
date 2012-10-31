@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 16:26:57 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:55:11 wiz Exp $
 #
 
 DISTNAME=	Lexical-SealRequireHints-0.005
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Lexical-SealRequireHints/
 COMMENT=	Perl5 module to prevent leakage of lexical hints
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 PERL5_PACKLIST=		auto/Lexical/SealRequireHints/.packlist

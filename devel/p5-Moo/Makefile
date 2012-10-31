@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:18 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/22 13:39:42 wen Exp $
 
 DISTNAME=	Moo-1.000004
 PKGNAME=	p5-${DISTNAME}
@@ -15,8 +15,6 @@ DEPENDS+=	p5-Devel-GlobalDestruction>=0.09:../../devel/p5-Devel-GlobalDestructio
 DEPENDS+=	p5-Module-Runtime>=0.012:../../devel/p5-Module-Runtime
 DEPENDS+=	p5-Role-Tiny>=1.001003:../../devel/p5-Role-Tiny
 DEPENDS+=	p5-strictures>=1.001001:../../devel/p5-strictures
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Moo/.packlist
 

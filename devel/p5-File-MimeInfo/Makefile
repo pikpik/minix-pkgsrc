@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/08/13 08:00:36 adam Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:55:01 wiz Exp $
 
 DISTNAME=	File-MimeInfo-0.15
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Perl module for the freedesktop shared MIME database
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-File-BaseDir-[0-9]*:../../devel/p5-File-BaseDir
 DEPENDS+=	p5-File-DesktopEntry-[0-9]*:../../devel/p5-File-DesktopEntry

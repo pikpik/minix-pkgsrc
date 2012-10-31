@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/07/24 17:13:00 tonnerre Exp $
+# $NetBSD: Makefile,v 1.10 2010/11/13 21:08:55 shattered Exp $
 #
 
 DISTNAME=	byacc-20050813
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://invisible-island.net/byacc/byacc.html
 COMMENT=	Berkeley Yacc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 MAKE_FILE=	makefile

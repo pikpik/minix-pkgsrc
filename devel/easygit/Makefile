@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/11/13 21:08:55 shattered Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:54:29 wiz Exp $
 
 DISTNAME=		easygit-1.6.5.3
 PKGREVISION=		1
@@ -12,8 +12,6 @@ HOMEPAGE=		http://people.gnome.org/~newren/eg/
 COMMENT=		Git porcelain wrapper in Perl
 
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		scmgit>=1.6.1:../../devel/scmgit
 WRKSRC=			${WRKDIR}

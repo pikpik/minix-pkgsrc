@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/10/19 08:10:25 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:12 wiz Exp $
 #
 
 DISTNAME=	Log-Any-0.14
@@ -13,7 +13,6 @@ COMMENT=	Perl5 module to bring loggers and listeners together
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Log/Any/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled

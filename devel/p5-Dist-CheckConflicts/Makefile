@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/08/16 20:50:54 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:54:56 wiz Exp $
 
 DISTNAME=	Dist-CheckConflicts-0.02
 PKGNAME=	p5-${DISTNAME}
@@ -14,8 +14,6 @@ LICENSE=	${PERL5_LICENSE}
 DEPENDS+=	p5-List-MoreUtils>=0.12:../../devel/p5-List-MoreUtils
 DEPENDS+=	p5-Sub-Exporter-[0-9]*:../../devel/p5-Sub-Exporter
 DEPENDS+=	p5-Test-Fatal-[0-9]*:../../devel/p5-Test-Fatal
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Dist/CheckConflicts/.packlist
 

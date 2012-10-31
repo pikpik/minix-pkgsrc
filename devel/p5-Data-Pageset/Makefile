@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/08/12 06:29:11 adam Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:54:50 wiz Exp $
 
 DISTNAME=	Data-Pageset-1.06
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Data-Pageset/
 COMMENT=	Page numbering and page sets
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Data-Page>=2.00:../../devel/p5-Data-Page
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/06/03 13:18:58 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/09/10 14:01:28 wen Exp $
 #
 
 DISTNAME=	pip-1.2.1
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pip-installer.org/
 COMMENT=	Installs Python packages as an easy_install replacement
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PLIST_SUBST+=		PYVERSSUFFIX="${PYVERSSUFFIX}"
 

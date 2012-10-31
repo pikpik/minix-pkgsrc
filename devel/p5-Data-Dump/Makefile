@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/01/26 18:45:10 rhaen Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:54:50 wiz Exp $
 
 DISTNAME=	Data-Dump-1.21
 PKGNAME=	p5-${DISTNAME}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Data-Dump/
 COMMENT=	Pretty printing of data structures
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		# empty

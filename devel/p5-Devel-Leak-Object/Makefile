@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/12 07:42:49 adam Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:54:54 wiz Exp $
 
 DISTNAME=	Devel-Leak-Object-1.01
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Devel-Leak-Object/
 COMMENT=	Perl module to detect leaks of objects
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Devel/Leak/Object/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled

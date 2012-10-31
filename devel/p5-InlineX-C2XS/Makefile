@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/06/04 12:28:17 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:11 wiz Exp $
 #
 
 DISTNAME=	InlineX-C2XS-0.22
@@ -13,8 +13,6 @@ COMMENT=	Convert from Inline C code to XS
 LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-Inline>=0.47:../../devel/p5-Inline
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/InlineX/C2XS/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/07/11 15:33:51 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/08 15:18:21 jaapb Exp $
 #
 
 DISTNAME=	deriving-ocsigen-0.3c
@@ -13,8 +13,6 @@ HOMEPAGE=	http://ocsigen.org/eliom/install/
 LICENSE=	mit
 
 DEPENDS+=	ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c
 USE_TOOLS=	gmake

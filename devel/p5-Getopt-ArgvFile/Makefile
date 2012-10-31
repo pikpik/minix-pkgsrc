@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/08/16 07:57:18 adam Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:04 wiz Exp $
 
 DISTNAME=	Getopt-ArgvFile-1.11
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Interpolates script options from files into @ARGV or another array
 LICENSE=	artistic
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Getopt/ArgvFile/.packlist
 

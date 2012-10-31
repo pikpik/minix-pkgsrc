@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/09/15 14:47:53 wen Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:47 wiz Exp $
 #
 
 DISTNAME=		Test-Weaken-3.020000
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Test-Weaken/
 COMMENT=		Test that freed memory objects were, indeed, freed
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Test/Weaken/.packlist

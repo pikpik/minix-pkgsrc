@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/05/12 12:26:15 adam Exp $
+# $NetBSD: Makefile,v 1.3 2012/09/05 13:03:04 jperkin Exp $
 
 DISTNAME=	util-linux-2.19.1
 PKGNAME=	${DISTNAME:S/util-linux/libuuid/}
@@ -12,8 +12,6 @@ COMMENT=	Generate unique identifiers for objects
 LICENSE=	modified-bsd
 
 CONFLICTS=	ossp-uuid-[0-9]* # libuuid.* uuid.pc uuid.3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/08/26 18:10:25 adam Exp $
+# $NetBSD: Makefile,v 1.26 2012/08/26 18:36:08 adam Exp $
 
 DISTNAME=	pkg-config-0.27.1
 CATEGORIES=	devel
@@ -10,7 +10,6 @@ COMMENT=	System for managing library compile/link flags
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

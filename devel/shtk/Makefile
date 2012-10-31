@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/08/15 21:18:13 jmmv Exp $
 
 DISTNAME=	shtk-1.0
 CATEGORIES=	devel
@@ -10,7 +10,6 @@ COMMENT=	Shell-scripting modules that provide common functionality
 LICENSE=	modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 NO_CONFIGURE=		YES

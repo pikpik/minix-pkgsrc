@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2012/02/02 11:49:55 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/03/16 04:31:16 obache Exp $
 #
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=		scons-devel-[0-9]*
 
 .include "../../devel/scons/Makefile.common"

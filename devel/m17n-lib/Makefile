@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/06/14 07:43:07 sbd Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/13 01:35:43 obache Exp $
 #
 
 DISTNAME=	m17n-lib-1.6.2
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/m17n/
 COMMENT=	Multilingualization library
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 GNU_CONFIGURE=	yes

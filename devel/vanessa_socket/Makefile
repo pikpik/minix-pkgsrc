@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2010/06/02 12:43:37 adam Exp $
+# $NetBSD: Makefile,v 1.9 2011/04/22 13:42:44 obache Exp $
 
 DISTNAME=	vanessa_socket-0.0.10
 PKGREVISION=	1
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.vergenet.net/linux/vanessa/
 COMMENT=	Library that simplifies TCP/IP socket operations
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

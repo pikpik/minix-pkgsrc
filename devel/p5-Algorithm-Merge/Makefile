@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/08/07 05:49:30 adam Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:54:34 wiz Exp $
 
 DISTNAME=	Algorithm-Merge-0.08
 PKGNAME=	p5-${DISTNAME}
@@ -15,7 +15,6 @@ LICENSE=	${PERL5_LICENSE}
 DEPENDS+=	p5-Algorithm-Diff-[0-9]*:../../devel/p5-Algorithm-Diff
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Algorithm/Merge/.packlist
 

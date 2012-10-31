@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/09/25 09:02:42 jaapb Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/08 15:18:21 jaapb Exp $
 #
 
 DISTNAME=		findlib-1.3.3
@@ -11,8 +11,6 @@ MAINTAINER=		jaapb@kerguelen.org
 HOMEPAGE=		http://www.camlcity.org/
 COMMENT=		Library finder for OCaml
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake m4 bash
 USE_PKGLOCALEDIR=	yes

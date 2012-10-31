@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/12/02 16:10:34 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2011/04/22 13:43:16 obache Exp $
 #
 
 DISTNAME=	confuse-2.7
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.nongnu.org/confuse/
 COMMENT=	Configuration file parser library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--enable-shared

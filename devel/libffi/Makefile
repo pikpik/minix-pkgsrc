@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/09/14 23:45:27 asau Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/11 19:37:47 drochner Exp $
 #
 
 DISTNAME=	libffi-3.0.11
@@ -10,8 +10,6 @@ MAINTAINER=	asau@inbox.ru
 HOMEPAGE=	http://sources.redhat.com/libffi/
 COMMENT=	Foreign function interface
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/08/13 08:38:59 adam Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 21:55:02 wiz Exp $
 
 DISTNAME=	File-PathConvert-0.9
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ COMMENT=	Convert paths and URLs from absolute to relative and vice versa
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/File/PathConvert/.packlist
 

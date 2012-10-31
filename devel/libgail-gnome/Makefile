@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2012/10/02 17:10:48 tron Exp $
+# $NetBSD: Makefile,v 1.50 2012/10/08 23:00:42 adam Exp $
 #
 
 DISTNAME=	libgail-gnome-1.20.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://developer.gnome.org/projects/gap/
 COMMENT=	GNOME Accessibility Implementation Library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

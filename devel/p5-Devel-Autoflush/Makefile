@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/12 07:02:28 adam Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:54:52 wiz Exp $
 
 DISTNAME=	Devel-Autoflush-0.05
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Perl module to set autoflush from the command line
 LICENSE=	apache-2.0
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Devel/Autoflush/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.169 2012/10/08 23:00:35 adam Exp $
+# $NetBSD: Makefile,v 1.170 2012/10/09 12:16:31 drochner Exp $
 
 DISTNAME=	pango-1.32.1
 PKGREVISION=	1
@@ -12,7 +12,6 @@ COMMENT=	Library for layout and rendering of text
 LICENSE=	gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		help2man-[0-9]*:../../converters/help2man
 

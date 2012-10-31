@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/10/02 17:10:52 tron Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 23:00:43 adam Exp $
 #
 
 DISTNAME=	scintilla229
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://scintilla.sourceforge.net/
 COMMENT=	Source code editing component
 #LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/scintilla
 USE_LANGUAGES=	c c++

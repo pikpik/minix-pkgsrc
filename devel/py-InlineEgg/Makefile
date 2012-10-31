@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/10/03 23:40:38 cheusov Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/04 00:22:00 cheusov Exp $
 #
 
 DISTNAME=		InlineEgg-1.08
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://oss.corest.com/projects/inlineegg.html
 COMMENT=		Python module for writing inline assembler programs
 LICENSE=		inlineegg-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_PATCH_SCRIPTS=		examples/example1.py examples/example2.py \
 				examples/example3.py examples/example4.py \

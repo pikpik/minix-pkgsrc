@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/08/29 11:22:11 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/02 17:27:02 wiz Exp $
 #
 
 DISTNAME=	mdds_0.6.1
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/multidimalgorithm/
 COMMENT=	Collection of multi-dimensional data structure and indexing algorithms
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 GNU_CONFIGURE=		yes

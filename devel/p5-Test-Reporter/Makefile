@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 12:26:43 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:45 wiz Exp $
 #
 
 DISTNAME=	Test-Reporter-1.57
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Test-Base/
 COMMENT=	Perl module which sends test results to cpan-testers@perl.org
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Test/Reporter/.packlist

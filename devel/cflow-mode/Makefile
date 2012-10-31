@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/10/11 09:31:55 uebayasi Exp $
+# $NetBSD: Makefile,v 1.6 2009/08/06 01:44:47 minskim Exp $
 
 DISTNAME=	cflow-1.1
 PKGNAME=	cflow-mode-1.1
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_GNU:=cflow/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/cflow/
 COMMENT=	Emacs mode for GNU cflow output
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../editors/emacs/modules.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 12:26:48 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:49 wiz Exp $
 #
 
 DISTNAME=	UUID-Tiny-1.03
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/UUID-Tiny/
 COMMENT=	Pure Perl UUID Support With Functional Interface
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/UUID/Tiny/.packlist

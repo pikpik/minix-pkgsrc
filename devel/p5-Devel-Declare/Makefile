@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/09/03 11:16:20 sno Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 21:54:53 wiz Exp $
 
 DISTNAME=	Devel-Declare-0.006011
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Devel-Declare/
 COMMENT=	Declarator magic for perl
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-B-Hooks-EndOfScope>0.05:../../devel/p5-B-Hooks-EndOfScope
 DEPENDS+=	p5-Sub-Name-[0-9]*:../../devel/p5-Sub-Name

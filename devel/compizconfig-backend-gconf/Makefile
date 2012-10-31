@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/10/02 17:10:45 tron Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 23:01:21 adam Exp $
 #
 
 PKGVER=		0.8.4
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://compiz.org/
 COMMENT=	Plugin (gconf) for the compiz configuration backend
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

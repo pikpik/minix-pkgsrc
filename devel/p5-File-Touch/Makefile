@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 12:26:05 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:03 wiz Exp $
 #
 
 DISTNAME=	File-Touch-0.08
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/dist/File-Touch/
 COMMENT=	Perl 5 module to "touch" files
 
 USE_LANGUAGES=		# empty
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/File/Touch/.packlist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/03/06 09:38:32 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/07/02 17:27:23 asau Exp $
 
 DISTNAME=	libtecla-1.6.1
 PKGREVISION=	3
@@ -9,7 +9,6 @@ MAINTAINER=	kristerw@NetBSD.org
 HOMEPAGE=	http://www.astro.caltech.edu/~mcs/tecla/
 COMMENT=	Interactive command line editing facilities
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/${PKGBASE}

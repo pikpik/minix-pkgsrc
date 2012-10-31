@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/09/10 10:08:04 sno Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:19 wiz Exp $
 
 DISTNAME=	MooseX-ConfigFromFile-0.04
 PKGNAME=	p5-${DISTNAME}
@@ -17,8 +17,6 @@ DEPENDS+=	p5-Try-Tiny-[0-9]*:../../devel/p5-Try-Tiny
 DEPENDS+=	p5-namespace-autoclean-[0-9]*:../../devel/p5-namespace-autoclean
 
 BUILD_DEPENDS+=	p5-Test-Fatal-[0-9]*:../../devel/p5-Test-Fatal
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 

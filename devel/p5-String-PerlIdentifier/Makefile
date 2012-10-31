@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 12:26:37 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:36 wiz Exp $
 #
 
 DISTNAME=	String-PerlIdentifier-0.05
@@ -13,7 +13,6 @@ COMMENT=	Generate a random name for a Perl variable
 #LICENSE=	${PERL_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/String/PerlIdentifier/.packlist
 

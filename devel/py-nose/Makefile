@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/02/17 18:30:23 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2012/08/16 15:07:42 drochner Exp $
 #
 
 DISTNAME=	nose-1.1.2
@@ -16,8 +16,6 @@ LICENSE=	gnu-lgpl-v2.1
 
 # only needed for a plugin
 #DEPENDS+=	${PYPKGPREFIX}-coverage>=3.0:../../devel/py-coverage
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 PYTHON_VERSIONS_INCLUDE_3X= yes

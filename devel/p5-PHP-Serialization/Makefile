@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/08/14 12:26:26 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:25 wiz Exp $
 #
 
 DISTNAME=	PHP-Serialization-0.34
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/PHP-Serialization/
 COMMENT=	Perl 5 module providing PHP-like (de)serialization
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/PHP/Serialization/.packlist

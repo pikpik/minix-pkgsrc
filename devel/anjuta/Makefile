@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.94 2012/10/03 21:54:27 wiz Exp $
+# $NetBSD: Makefile,v 1.95 2012/10/08 23:01:21 adam Exp $
 
 DISTNAME=	anjuta-2.24.2
 PKGREVISION=	28
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.anjuta.org/
 COMMENT=	Gnome based IDE for C and C++
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	autogen-[0-9]*:../../devel/autogen
 DEPENDS+=	autoconf>=2.59:../../devel/autoconf

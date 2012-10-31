@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.53 2012/10/01 11:25:52 ryoon Exp $
+# $NetBSD: Makefile,v 1.54 2012/10/03 21:54:33 wiz Exp $
 #
 
 DISTNAME=	nspr-${NSPR_RELEASE}
@@ -12,7 +12,6 @@ MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://www.mozilla.org/projects/nspr/index.html
 COMMENT=	Platform-neutral API for system level and libc like functions
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}js/src/configure

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/02/19 20:16:40 heinz Exp $
+# $NetBSD: Makefile,v 1.8 2012/04/04 17:58:24 tron Exp $
 
 DISTNAME=		libcfg+-0.6.2
 PKGREVISION=		3
@@ -11,7 +11,6 @@ COMMENT=		Command line and configuration file parsing library
 LICENSE=		gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake

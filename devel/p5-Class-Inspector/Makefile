@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/03/05 13:26:06 sno Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:54:44 wiz Exp $
 
 DISTNAME=	Class-Inspector-1.27
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Provides information about Classes
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Class/Inspector/.packlist
 

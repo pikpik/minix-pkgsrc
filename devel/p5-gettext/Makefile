@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/08/16 08:03:13 adam Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 21:55:51 wiz Exp $
 
 DISTNAME=	gettext-1.05
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/dist/gettext/
 COMMENT=	Perl5 module interface to C I18N functions
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		c

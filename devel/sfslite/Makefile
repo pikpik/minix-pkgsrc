@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/05/07 07:25:54 agc Exp $
+# $NetBSD: Makefile,v 1.2 2012/06/18 03:28:55 dholland Exp $
 
 DISTNAME=	sfslite-1.2.7
 PKGREVISION=	1
@@ -16,7 +16,6 @@ USE_TOOLS=	gmake bison
 USE_LANGUAGES+=	c c++
 USE_LIBTOOL=	yes
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 AUTO_MKDIRS=	yes
 
 .include "../../devel/gmp/buildlink3.mk"

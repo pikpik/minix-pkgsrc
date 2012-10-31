@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2011/08/14 12:26:12 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:55:10 wiz Exp $
 #
 
 DISTNAME=	IPC-ShareLite-0.17
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/IPC-ShareLite/
 COMMENT=	Light-weight interface to shared memory
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		c

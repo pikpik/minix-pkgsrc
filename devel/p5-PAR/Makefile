@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/12/04 20:52:25 gls Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 21:55:25 wiz Exp $
 #
 
 DISTNAME=		PAR-1.005
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/PAR/
 COMMENT=		Cross-Platform Packaging and Debugging Tool
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-Archive-Zip>=1:../../archivers/p5-Archive-Zip
 DEPENDS+=		{perl>=5.10.1,p5-AutoLoader>5.66}:../../devel/p5-AutoLoader

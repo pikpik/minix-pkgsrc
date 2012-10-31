@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/04/08 19:08:54 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/04/15 22:01:00 wiz Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
@@ -8,8 +8,6 @@ CATEGORIES=	devel misc python
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.python.org/doc/current/tut/node15.html
 COMMENT=	Line editing support for Python
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 

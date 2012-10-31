@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2011/11/01 06:00:59 sbd Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/23 10:24:03 wiz Exp $
 #
 
 DISTNAME=	libmatchbox-1.9
@@ -9,8 +9,6 @@ MASTER_SITES=	http://matchbox-project.org/sources/libmatchbox/1.9/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://matchbox-project.org/
 COMMENT=	Library for matchbox window manager for computers with small displays
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes

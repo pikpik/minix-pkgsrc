@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/10/31 02:54:34 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2010/02/19 15:04:51 he Exp $
 #
 
 DISTNAME=		libdaemon-0.14
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://0pointer.de/lennart/projects/libdaemon/
 COMMENT=		C library that eases the writing of UNIX daemons
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2011/11/18 08:06:09 sbd Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/03 21:54:33 wiz Exp $
 
 DISTNAME=	nasm-2.07
 PKGREVISION=	1
@@ -13,7 +13,7 @@ COMMENT=	General-purpose x86 assembler
 LICENSE=	modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
+
 AUTO_MKDIRS=		yes
 
 USE_TOOLS+=		gmake makeinfo perl

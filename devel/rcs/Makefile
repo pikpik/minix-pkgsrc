@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/12/11 01:41:53 asau Exp $
+# $NetBSD: Makefile,v 1.29 2012/05/30 11:57:27 cheusov Exp $
 #
 
 DISTNAME=		rcs-5.7
@@ -10,7 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.cs.purdue.edu/homes/trinkle/RCS/
 COMMENT=		GNU Revision Control System - version control software
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"

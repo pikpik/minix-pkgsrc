@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/01/20 13:33:13 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/03 17:45:36 jlam Exp $
 
 DISTNAME=	ode-0.5
 PKGREVISION=	3
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ode.org/
 COMMENT=	Library for the simulation of Rigid Body Dynamics
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 USE_LIBTOOL=	yes

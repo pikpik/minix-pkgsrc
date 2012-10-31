@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/03/10 20:36:57 markd Exp $
+# $NetBSD: Makefile,v 1.19 2012/09/22 13:48:16 ryoon Exp $
 #
 
 DISTNAME=		opal-3.6.6
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.opalvoip.org/
 COMMENT=		Open Phone Abstraction Library
 LICENSE=		mpl-1.0
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PREV_PKGPATH=		devel/opal-devel
 
 OPALLIBDIR=		${DISTNAME}

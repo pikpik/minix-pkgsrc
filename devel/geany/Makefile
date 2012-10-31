@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2012/10/03 21:54:30 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/08 23:01:22 adam Exp $
 
 DISTNAME=	geany-0.20
 PKGREVISION=	8
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.geany.org/
 COMMENT=	Geany integrated development environment (IDE)
 #LICENSE=	gnu-gpl-v2 (or later) AND internal scintilla License.
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

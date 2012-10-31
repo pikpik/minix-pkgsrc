@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/12/08 00:40:08 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:55:27 wiz Exp $
 
 DISTNAME=	Package-Stash-XS-0.25
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,6 @@ LICENSE=	${PERL5_LICENSE}
 DEPENDS+=	p5-Test-Fatal-[0-9]*:../../devel/p5-Test-Fatal
 
 USE_LANGUAGES=	c
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Package/Stash/XS/.packlist
 

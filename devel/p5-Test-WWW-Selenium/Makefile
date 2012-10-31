@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/08/31 12:06:36 wen Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:55:46 wiz Exp $
 #
 
 DISTNAME=	Test-WWW-Selenium-1.33
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Test-WWW-Selenium/
 COMMENT=	Perl 5 module to test applications using Selenium Remote Control
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Test/WWW/Selenium/.packlist

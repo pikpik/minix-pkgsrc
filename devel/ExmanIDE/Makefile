@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/09/25 19:41:38 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/03/15 11:53:23 obache Exp $
 
 DISTNAME=	ExmanIDE-0.9.4
 PKGREVISION=	7
@@ -8,8 +8,6 @@ MASTER_SITES=	http://kldp.net/download.php/715/
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://exmanide.kldp.net/
 COMMENT=	Integrated development environment for Python
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-wxWidgets>=2.6:../../x11/py-wxWidgets
 

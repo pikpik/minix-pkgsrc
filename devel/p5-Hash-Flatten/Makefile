@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/17 09:42:44 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:06 wiz Exp $
 #
 
 DISTNAME=	Hash-Flatten-1.19
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Hash-Flatten/
 COMMENT=	Perl 5 module to flatten/unflatten complex data hashes
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	p5-Log-Trace-[0-9]*:../../devel/p5-Log-Trace
 BUILD_DEPENDS+=	p5-Test-Assertions-[0-9]*:../../devel/p5-Test-Assertions

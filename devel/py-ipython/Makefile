@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/10/03 23:40:37 cheusov Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/04 00:21:59 cheusov Exp $
 #
 
 DISTNAME=	ipython-0.10.2
@@ -14,8 +14,6 @@ LICENSE=	modified-bsd
 
 DEPENDS+=	${PYPKGPREFIX}-readline-[0-9]*:../../devel/py-readline
 DEPENDS+=	${PYPKGPREFIX}-pexpect-[0-9]*:../../devel/py-pexpect
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_SELF_CONFLICT=	yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/03/04 09:42:31 asau Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 15:18:22 jaapb Exp $
 
 DISTNAME=		pcre-ocaml-6.2.5
 PKGREVISION=		1
@@ -8,8 +8,6 @@ MASTER_SITES=		http://www.ocaml.info/ocaml_sources/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ocaml.info/ocaml_sources/
 COMMENT=		Perl compatible regular expressions for OCaml
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
 

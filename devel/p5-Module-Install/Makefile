@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/07/06 11:14:32 sno Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/03 21:55:16 wiz Exp $
 
 DISTNAME=	Module-Install-1.06
 PKGNAME=	p5-${DISTNAME}
@@ -28,8 +28,6 @@ DEPENDS+=	p5-YAML-Tiny>=1.38:../../textproc/p5-YAML-Tiny
 
 PERL5_PACKLIST=		auto/Module/Install/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALL_MAKE_FLAGS+=	VENDORARCHEXP=${DESTDIR}${PERL5_INSTALLVENDORARCH}
 

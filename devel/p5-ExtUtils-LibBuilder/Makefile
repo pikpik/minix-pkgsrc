@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/11 08:18:59 markd Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:54:58 wiz Exp $
 
 DISTNAME=	ExtUtils-LibBuilder-0.04
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/ExtUtils-LibBuilder/
 COMMENT=	Perl5 module for building C libraries
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		{perl>=5.14.1,p5-ExtUtils-CBuilder>=0.23}:../../devel/p5-ExtUtils-CBuilder
 

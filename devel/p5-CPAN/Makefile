@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/08/10 09:52:50 adam Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:54:39 wiz Exp $
 
 DISTNAME=	CPAN-1.9800
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Perl module to query, download and build perl modules from CPAN sites
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 MAKE_PARAMS+=		verbose

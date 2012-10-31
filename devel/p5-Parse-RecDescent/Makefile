@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2011/08/14 12:26:29 obache Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/19 07:42:25 sno Exp $
 #
 
 DISTNAME=	Parse-RecDescent-1.967009
@@ -11,7 +11,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Parse-RecDescent/
 COMMENT=	Perl5 module to generate recursive-descent parsers
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 DEPENDS+=	p5-Text-Balanced-[0-9]*:../../textproc/p5-Text-Balanced

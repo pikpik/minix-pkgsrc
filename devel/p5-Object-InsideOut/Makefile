@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/11/12 02:56:44 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 21:55:24 wiz Exp $
 #
 
 DISTNAME=	Object-InsideOut-3.84
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Object-InsideOut/
 COMMENT=	Perl 5 module providing comprehensive inside-out object support
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Exception-Class>=1.29:../../devel/p5-Exception-Class
 DEPENDS+=	p5-Scalar-List-Utils>=1.23:../../devel/p5-Scalar-List-Utils

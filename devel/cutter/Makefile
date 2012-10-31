@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/10/02 17:10:45 tron Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 23:01:21 adam Exp $
 #
 
 DISTNAME=	cutter-1.2.1
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://cutter.sourceforge.net/
 COMMENT=	Unit Testing Framework for C and C++
 LICENSE=	gnu-lgpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/08/10 04:21:29 adam Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:54:44 wiz Exp $
 
 DISTNAME=	Class-MakeMethods-1.01
 PKGNAME=	p5-${DISTNAME}0 # developer uses three-digit versions
@@ -12,7 +12,6 @@ COMMENT=	Getter/setter OO method maker for class elements
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 PERL5_PACKLIST=		auto/Class/MakeMethods/.packlist

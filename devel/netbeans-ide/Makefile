@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/05/26 02:13:17 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2011/08/16 08:38:07 abs Exp $
 #
 
 DISTNAME=	NetBeansIDE-release351
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	drue@users.sourceforge.net
 HOMEPAGE=	http://www.netbeans.org/
 COMMENT=	NetBeans Java IDE
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 USE_JAVA=	run

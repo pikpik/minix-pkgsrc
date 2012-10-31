@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/12 19:14:17 adam Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:00 wiz Exp $
 
 DISTNAME=	File-Find-Rule-Age-0.2
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Rule to match on file age
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-DateTime>=0.42:../../time/p5-DateTime
 DEPENDS+=	p5-File-Find-Rule>=0.30:../../devel/p5-File-Find-Rule

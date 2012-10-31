@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2012/01/28 11:00:52 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/01/28 17:27:29 wiz Exp $
 #
 
 DISTNAME=		pygame-1.8.1release
@@ -13,8 +13,6 @@ COMMENT=		Set of Python modules designed for writing games
 LICENSE=		gnu-lgpl-v2.1
 
 DEPENDS+=		${PYPKGPREFIX}-numpy-[0-9]*:../../math/py-numpy
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # XXX
 post-extract:

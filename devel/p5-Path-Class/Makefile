@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/07/06 11:29:08 sno Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:55:28 wiz Exp $
 #
 
 DISTNAME=	Path-Class-0.26
@@ -13,7 +13,6 @@ COMMENT=	Cross-platform path specification manipulation
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_MODULE_TYPE=	Module::Build
 PERL5_PACKLIST=	auto/Path/Class/.packlist

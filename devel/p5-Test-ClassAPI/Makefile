@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/09/03 11:16:20 sno Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:55:40 wiz Exp $
 
 DISTNAME=		Test-ClassAPI-1.06
 PKGNAME=		p5-${DISTNAME}
@@ -16,7 +16,6 @@ DEPENDS+=		p5-Config-Tiny>=2.0:../../devel/p5-Config-Tiny
 DEPENDS+=		p5-Params-Util>=1.00:../../devel/p5-Params-Util
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Test/ClassAPI/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled

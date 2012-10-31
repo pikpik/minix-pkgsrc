@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/09/11 08:06:02 sno Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:54:42 wiz Exp $
 
 DISTNAME=	Class-Base-0.05
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Class-Base/
 COMMENT=	Useful base class for deriving other modules
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Class/Base/.packlist

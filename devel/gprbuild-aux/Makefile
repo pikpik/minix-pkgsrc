@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/02/03 19:04:02 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2012/07/08 20:08:42 marino Exp $
 #
 
 DISTNAME=	gprbuild-aux-${SNAPSHOT}
@@ -11,8 +11,6 @@ MAINTAINER=	draco@marino.st
 HOMEPAGE=	http://www.adacore.com/home/products/gnatpro/toolsuite/gprbuild/
 COMMENT=	Adacore multi-language software build tool
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SNAPSHOT=		20120510
 GNU_CONFIGURE=		yes

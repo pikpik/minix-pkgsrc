@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/07/17 18:00:15 adrianp Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:54:32 wiz Exp $
 
 DISTNAME=	libwhisker2-2.4
 PKGREVISION=	1
@@ -10,8 +10,6 @@ HOMEPAGE=	http://www.wiretrip.net/rfp/lw.asp
 COMMENT=	Perl module geared specifically for HTTP testing
 
 DEPENDS+=	p5-Net-SSLeay>=1.20:../../security/p5-Net-SSLeay
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl:run
 REPLACE_PERL=	scripts/api_demo.pl scripts/crawl_demo.pl \

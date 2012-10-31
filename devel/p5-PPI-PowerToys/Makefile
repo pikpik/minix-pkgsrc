@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 12:26:26 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:26 wiz Exp $
 #
 
 DISTNAME=	PPI-PowerToys-0.14
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/PPI-PowerToys/
 COMMENT=	Handy collection of small PPI-based utilities
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-File-Find-Rule>=0.30:../../devel/p5-File-Find-Rule
 DEPENDS+=	p5-File-Find-Rule-Perl>=0.03:../../devel/p5-File-Find-Rule-Perl

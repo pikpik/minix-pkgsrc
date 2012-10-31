@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/09/13 15:51:53 sno Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:55:18 wiz Exp $
 #
 
 DISTNAME=	Moose-Autobox-0.13
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Moose-Autobox/
 COMMENT=	Perl 5 module providing autoboxed wrappers for native datatypes
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Moose/Autobox/.packlist

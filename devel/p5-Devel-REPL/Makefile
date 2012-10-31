@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/09/03 11:16:20 sno Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:54:55 wiz Exp $
 
 DISTNAME=	Devel-REPL-1.003012
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Devel-REPL/
 COMMENT=	Modern Perl interactive shell
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-File-HomeDir-[0-9]*:../../devel/p5-File-HomeDir
 DEPENDS+=	p5-Moose>=0.74:../../devel/p5-Moose

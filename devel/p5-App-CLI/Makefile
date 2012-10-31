@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/08/07 06:58:43 adam Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:54:35 wiz Exp $
 
 DISTNAME=	App-CLI-0.313
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,7 @@ COMMENT=	Dispatcher module for command line interface programs
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
+
 USE_LANGUAGES=	# empty
 
 PERL5_PACKLIST=	auto/App/CLI/.packlist

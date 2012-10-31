@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 12:26:45 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:47 wiz Exp $
 #
 
 DISTNAME=	Tie-Array-AsHash-0.11
@@ -13,7 +13,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Tie-Array-AsHash/
 COMMENT=	Perl module to access array(s) like hashes
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Params-Util>=0.35:../../devel/p5-Params-Util
 

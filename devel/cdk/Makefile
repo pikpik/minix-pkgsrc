@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2008/12/08 17:24:19 tnn Exp $
+# $NetBSD: Makefile,v 1.34 2010/03/08 13:21:37 joerg Exp $
 #
 
 DISTNAME=		latestCDK
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.vexus.ca/products/CDK/
 COMMENT=		Curses Development Kit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_NCURSES=		yes # uses ncurses internals

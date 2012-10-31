@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2011/09/16 05:46:24 obache Exp $
+# $NetBSD: Makefile,v 1.38 2012/02/02 09:59:39 hans Exp $
 
 DISTNAME=	mantisbt-1.1.7
 PKGNAME=	${DISTNAME:S/mantisbt/mantis/}
@@ -12,8 +12,6 @@ COMMENT=	PHP/MySQL/web based bugtracking system
 
 DEPENDS+=	${APACHE_PKG_PREFIX}-${PHP_PKG_PREFIX}>=4.0.6:../../www/ap-php
 DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=4.0.6:../../databases/php-mysql
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	YES
 

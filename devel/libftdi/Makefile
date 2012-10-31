@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/10/23 15:26:46 jakllsch Exp $
+# $NetBSD: Makefile,v 1.2 2011/11/17 18:17:48 jakllsch Exp $
 
 DISTNAME=	libftdi-0.19
 CATEGORIES=	devel
@@ -8,8 +8,6 @@ MAINTAINER=	jakllsch@NetBSD.org
 HOMEPAGE=	http://www.intra2net.com/en/developer/libftdi/
 COMMENT=	userland driver library for FTDI USB chips
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

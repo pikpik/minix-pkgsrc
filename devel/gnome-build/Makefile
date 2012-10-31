@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2012/10/03 21:54:30 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/08 23:00:38 adam Exp $
 #
 
 DISTNAME=	gnome-build-2.24.1
@@ -14,8 +14,6 @@ COMMENT=	GNOME build tools
 CONFLICTS+=	anjuta>=2.28
 
 DEPENDS+=	p5-gettext-[0-9]*:../../devel/p5-gettext
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

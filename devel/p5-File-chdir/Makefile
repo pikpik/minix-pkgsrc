@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/11/16 08:14:45 sno Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:55:03 wiz Exp $
 
 DISTNAME=	File-chdir-0.1006
 PKGNAME=	p5-${DISTNAME}
@@ -14,7 +14,6 @@ LICENSE=	${PERL5_LICENSE}
 DEPENDS+=	{perl>=5.10.0,p5-PathTools>=3.27}:../../devel/p5-PathTools
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/File/chdir/.packlist
 

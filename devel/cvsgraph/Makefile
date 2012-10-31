@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.36 2011/01/13 13:37:21 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2011/11/01 06:00:54 sbd Exp $
 #
 
 DISTNAME=	cvsgraph-1.6.1
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.akhphd.au.dk/~bertho/cvsgraph/release/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.akhphd.au.dk/~bertho/cvsgraph/
 COMMENT=	Graphically represents CVS/RCS branches and file revisions
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		bison lex
 GNU_CONFIGURE=		YES

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/11/11 07:45:28 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 21:54:38 wiz Exp $
 
 DISTNAME=	B-Hooks-OP-Check-0.19
 PKGNAME=	p5-${DISTNAME}
@@ -13,8 +13,6 @@ LICENSE=	${PERL5_LICENSE}
 
 BUILD_DEPENDS+=	p5-ExtUtils-Depends>=0.302:../../devel/p5-ExtUtils-Depends
 DEPENDS+=	p5-parent>0:../../devel/p5-parent
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 PERL5_PACKLIST=		auto/B/Hooks/OP/Check/.packlist

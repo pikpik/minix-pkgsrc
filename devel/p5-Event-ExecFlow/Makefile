@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/08/12 12:13:52 adam Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:54:57 wiz Exp $
 
 DISTNAME=	Event-ExecFlow-0.64
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.exit1.org/Event-ExecFlow/
 COMMENT=	High level API for event-based execution flow control
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-AnyEvent>=0.4:../../devel/p5-AnyEvent
 DEPENDS+=	p5-Test-Simple>=0.62:../../devel/p5-Test-Simple

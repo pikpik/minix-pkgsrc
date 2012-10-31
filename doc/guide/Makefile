@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2011/04/09 08:03:49 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2011/12/01 22:23:33 minskim Exp $
 #
 
 DISTNAME=		pkgsrc-guide-${PKGVERSION}
@@ -9,8 +9,6 @@ DISTFILES=		htdocs-share-20111201.tar.gz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/docs/pkgsrc/
 COMMENT=		The pkgsrc guide
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # To regenerate pkgsrc/doc/pkgsrc.{html,txt} and
 # htdocs/docs/pkgsrc, just run "make regen".

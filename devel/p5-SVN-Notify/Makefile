@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2012/01/26 12:18:43 rhaen Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:55:33 wiz Exp $
 
 DISTNAME=	SVN-Notify-2.83
 PKGNAME=	p5-${DISTNAME}
@@ -13,7 +13,6 @@ LICENSE=	${PERL5_LICENSE}
 
 PERL5_PACKLIST=		auto/SVN/Notify/.packlist
 PERL5_MODULE_TYPE=	Module::Build
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Recommended dependencies
 DEPENDS+=	p5-HTML-Parser-[0-9]*:../../www/p5-HTML-Parser

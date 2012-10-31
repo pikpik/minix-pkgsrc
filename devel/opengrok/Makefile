@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/01/14 03:13:04 hans Exp $
+# $NetBSD: Makefile,v 1.19 2012/04/27 12:31:46 obache Exp $
 #
 
 DISTNAME=	opengrok-0.8.1
@@ -11,8 +11,6 @@ HOMEPAGE=	http://hub.opensolaris.org/bin/view/Project+opengrok/
 COMMENT=	Fast and usable source code search and cross reference engine
 
 DEPENDS+=	exctags-[0-9]*:../../devel/exctags
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

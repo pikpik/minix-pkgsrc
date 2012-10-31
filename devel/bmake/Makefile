@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2012/06/15 09:54:41 jperkin Exp $
+# $NetBSD: Makefile,v 1.58 2012/07/24 13:18:00 jperkin Exp $
 #
 
 DISTNAME=	bmake-20110606
@@ -16,7 +16,6 @@ LICENSE=	modified-bsd
 
 DEPENDS+=	bootstrap-mk-files-[0-9]*:../../pkgtools/bootstrap-mk-files
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 BOOTSTRAP_PKG=	yes
 
 WRKSRC=		${WRKDIR}/bmake

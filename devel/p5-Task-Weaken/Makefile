@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/09/03 11:16:20 sno Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:55:38 wiz Exp $
 #
 
 DISTNAME=	Task-Weaken-1.04
@@ -12,7 +12,6 @@ HOMEPAGE=	http://search.cpan.org/dist//Task-Weaken/
 COMMENT=	Perl 5 module to ensure that a platform has weaken support
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	Module::Install::Bundled
 PERL5_PACKLIST=	auto/Task/Weaken/.packlist
 

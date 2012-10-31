@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/07/08 16:23:59 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2011/12/22 00:26:02 joerg Exp $
 #
 
 DISTNAME=	libjit-0.1.2
@@ -8,8 +8,6 @@ MASTER_SITES=	http://download.savannah.gnu.org/releases/dotgnu-pnet/libjit-relea
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.southern-storm.com.au/libjit.html
 COMMENT=	Just-In-Time compilation functionality
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 LICENSE=	gnu-lgpl-v2.1
 

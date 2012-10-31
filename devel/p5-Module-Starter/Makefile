@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/11/16 08:05:06 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:55:17 wiz Exp $
 #
 
 DISTNAME=	Module-Starter-1.58
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Module-Starter/
 COMMENT=	Perl 5 module acting as a simple starter kit for any module
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Module/Starter/.packlist
 

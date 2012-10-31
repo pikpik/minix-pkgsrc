@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/08/27 21:58:49 schmonz Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:54:33 wiz Exp $
 #
 
 DISTNAME=		mr_1.13
@@ -11,8 +11,6 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://kitenet.net/~joey/code/mr/
 COMMENT=		Treat multiple repositories as one combined repository
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-libwww-[0-9]*:../../www/p5-libwww
 DEPENDS+=		p5-HTML-Parser-[0-9]*:../../www/p5-HTML-Parser

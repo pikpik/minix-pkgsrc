@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/07/22 04:46:15 rillig Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/03 17:45:35 jlam Exp $
 #
 
 DISTNAME=	fastdep-0.16
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.irule.be/bvh/c++/fastdep/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.irule.be/bvh/c++/fastdep/
 COMMENT=	Dependency generator for C/C++ files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++

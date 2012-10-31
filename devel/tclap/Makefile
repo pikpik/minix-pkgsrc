@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/10/10 13:15:31 adam Exp $
 
 DISTNAME=	tclap-1.2.1
 CATEGORIES=	devel
@@ -8,8 +8,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://tclap.sourceforge.net/
 COMMENT=	Templatized C++ Command Line Parser Library
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

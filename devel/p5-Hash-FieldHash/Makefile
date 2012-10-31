@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/08 11:21:35 fhajny Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:55:05 wiz Exp $
 #
 
 DISTNAME=	Hash-FieldHash-0.12
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Hash-FieldHash/
 COMMENT=	Lightweight field hash for inside-out objects
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Test-LeakTrace>=0:../../devel/p5-Test-LeakTrace
 

@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2012/07/02 07:02:25 adam Exp $
+# $NetBSD: Makefile,v 1.23 2012/08/15 18:28:20 jdc Exp $
 
 BOOST_PACKAGE=		libs
 BOOST_COMMENT=		(binary libraries)
 BOOST_CONFIG=		installed
 BOOST_INSTALL_LIBS=	yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/boost/Makefile.common"
 

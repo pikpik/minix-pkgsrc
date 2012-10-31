@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/11/16 08:03:48 sno Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:49 wiz Exp $
 #
 
 DISTNAME=	Try-Tiny-0.11
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Try-Tiny/
 COMMENT=	Perl module providing minimal try/catch
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Try/Tiny/.packlist

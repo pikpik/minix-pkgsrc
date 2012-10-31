@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/07/06 10:49:51 sno Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:05 wiz Exp $
 
 DISTNAME=	Git-CPAN-Patch-0.8.0
 PKGNAME=	p5-${DISTNAME}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://search.cpan.org/dist/Git-CPAN-Patch/
 COMMENT=	Patch CPAN modules using Git
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	Module::Build
 
 DEPENDS+=	p5-BackPAN-Index>=0.39:../../devel/p5-BackPAN-Index

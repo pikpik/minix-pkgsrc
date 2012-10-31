@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/10/02 17:10:50 tron Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/08 23:00:41 adam Exp $
 #
 
 DISTNAME=	libview-0.6.4
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://view.sourceforge.net/
 COMMENT=	GTK+ widget collection
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/08/10 04:15:29 adam Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:54:44 wiz Exp $
 
 DISTNAME=	Class-Inner-0.200001
 PKGNAME=	p5-${DISTNAME:S/200001/200.001/}
@@ -12,7 +12,6 @@ COMMENT=	Perlish implementation of Java like inner classes
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Class/Inner/.packlist
 

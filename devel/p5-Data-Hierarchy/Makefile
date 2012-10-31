@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/08/12 06:15:06 adam Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 21:54:50 wiz Exp $
 
 DISTNAME=	Data-Hierarchy-0.34
 PKGNAME=	p5-${DISTNAME}
@@ -12,7 +12,6 @@ COMMENT=	Perl module for handling data in a hierarchical structure
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Data/Hierarchy/.packlist
 

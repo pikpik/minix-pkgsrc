@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2012/01/28 10:52:58 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/03/15 11:53:23 obache Exp $
 #
 
 DISTNAME=	diffuse-0.4.6
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://diffuse.sourceforge.net/
 COMMENT=	Graphical tool for merging and comparing text files
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.10:../../x11/py-gtk2
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2009/07/08 16:19:08 joerg Exp $
+# $NetBSD: Makefile,v 1.38 2010/01/17 12:02:13 wiz Exp $
 #
 
 DISTNAME=	isect-1.6.2
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=isectd/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://isectd.sourceforge.net/
 COMMENT=	Open source middleware daemon
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

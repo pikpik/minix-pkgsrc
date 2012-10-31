@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2009/10/11 15:33:27 sno Exp $
+# $NetBSD: Makefile,v 1.4 2010/02/11 15:16:18 joerg Exp $
 
 PKGNAME=		sapnwrfcsdk-7.11
 CATEGORIES=		devel
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../emulators/sap/Makefile.common"
 

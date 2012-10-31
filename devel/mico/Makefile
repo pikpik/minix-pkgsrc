@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/07/07 01:13:08 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2011/12/05 13:53:07 dholland Exp $
 #
 
 DISTNAME=		mico-2.3.12
@@ -9,8 +9,6 @@ WRKSRC=			${WRKDIR}/mico
 
 MAINTAINER=		tonnerre@NetBSD.org
 COMMENT=		High performance and rubustness CORBA ORB
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt intltool
 GNU_CONFIGURE=		YES

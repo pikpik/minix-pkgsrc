@@ -1,4 +1,4 @@
-# $NetBSD: termcap.builtin.mk,v 1.6 2009/03/20 19:25:01 joerg Exp $
+# $NetBSD: termcap.builtin.mk,v 1.7 2010/02/07 09:46:14 roy Exp $
 
 BUILTIN_PKG:=	termcap
 
@@ -19,7 +19,7 @@ BUILTIN_FIND_GREP.H_TERMLIB:=	tgetent
 ###
 .if !defined(IS_BUILTIN.termcap)
 IS_BUILTIN.termcap=	no
-.  if !empty(BUILTIN_LIB_FOUND.terminfo:M[yY[eE][sS]) || \
+.  if !empty(BUILTIN_LIB_FOUND.terminfo:M[yY][eE][sS]) || \
       !empty(BUILTIN_LIB_FOUND.curses:M[yY][eE][sS]) || \
       !empty(BUILTIN_LIB_FOUND.termcap:M[yY][eE][sS]) || \
       !empty(BUILTIN_LIB_FOUND.termlib:M[yY][eE][sS]) || \

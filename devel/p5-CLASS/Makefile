@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/09 09:37:21 adam Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:54:39 wiz Exp $
 
 DISTNAME=	CLASS-1.00
 PKGNAME=	p5-${DISTNAME}
@@ -10,8 +10,6 @@ MAINTAINER=	he@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/CLASS/
 COMMENT=	Alias for __PACKAGE__
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/CLASS/.packlist
 

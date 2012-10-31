@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2011/08/14 12:26:33 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:32 wiz Exp $
 
 DISTNAME=		Return-Value-1.666001
 PKGNAME=		p5-${DISTNAME:S/666001/666.001/}
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Return-Value/
 COMMENT=		Polymorphic Return Values
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		{perl>=5.7.3,p5-Test-Simple>=0.47}:../../devel/p5-Test-Simple
 

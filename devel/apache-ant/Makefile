@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2012/03/12 16:02:32 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/05/28 08:10:05 tonio Exp $
 #
 
 DISTNAME=	apache-ant-1.8.4-bin
@@ -14,8 +14,6 @@ LICENSE=	apache-2.0
 
 # Up to version 1.5.1 inclusive this was known as "jakarta-ant".
 CONFLICTS=	jakarta-ant>=0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
