@@ -43,7 +43,6 @@ devel/autoconf213
 devel/automake
 devel/automake14
 devel/binutils
-devel/binutils-2.22
 devel/bison
 devel/bmake
 devel/byacc
