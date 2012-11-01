@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.58 2012/07/24 13:18:00 jperkin Exp $
+# $NetBSD: Makefile,v 1.59 2012/10/31 11:16:40 asau Exp $
 #
 
 DISTNAME=	bmake-20110606
@@ -37,7 +37,7 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-defshell=/usr/bin/bash
 .elif ${OPSYS} == "SunOS" && ${OS_VERSION} == "5.11"
 CONFIGURE_ARGS+=	--with-defshell=/bin/ksh
-.elif ${OPSYS} == "SunOS" || ${OPSYS} == "OSF1"
+.elif ${OPSYS} == "SunOS" || ${OPSYS} == "OSF1" || ${OPSYS} == "IRIX"
 DEPENDS+=		pdksh-[0-9]*:../../shells/pdksh
 CONFIGURE_ARGS+=	--with-defshell=${PREFIX}/bin/pdksh
 .endif
