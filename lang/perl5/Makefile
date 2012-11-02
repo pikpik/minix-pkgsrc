@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.182 2012/10/03 19:59:47 adam Exp $
+# $NetBSD: Makefile,v 1.186 2012/11/02 08:18:50 sbd Exp $
 
 .include "license.mk"
 .include "Makefile.common"
@@ -63,8 +63,6 @@ SUBST_VARS.policysh+=	CFLAGS
 SUBST_VARS.policysh+=	PERL5_PREFIX
 SUBST_VARS.policysh+=	PERL5_SITEPREFIX
 SUBST_VARS.policysh+=	PERL5_VENDORPREFIX
-PERL5_SCRIPTDIR=	${PERL5_PERLBASE}/bin
-SUBST_VARS.policysh+=	PERL5_SCRIPTDIR
 SUBST_VARS.policysh+=	PERL5_PERLBASE
 SUBST_VARS.policysh+=	PERL5_SITEBASE
 SUBST_VARS.policysh+=	PERL5_SITEBIN
@@ -72,8 +70,6 @@ SUBST_VARS.policysh+=	PERL5_VENDORBASE
 SUBST_VARS.policysh+=	PERL5_PRIVLIB
 SUBST_VARS.policysh+=	PERL5_SITELIB
 SUBST_VARS.policysh+=	PERL5_VENDORLIB
-PERL5_MAN1DIR=		${PERL5_PERLBASE}/${PKGMANDIR}/man1
-SUBST_VARS.policysh+=	PERL5_MAN1DIR
 SUBST_VARS.policysh+=	PKGMANDIR
 SUBST_VARS.policysh+=	LOCALBASE
 SUBST_VARS.policysh+=	PTHREAD_LDFLAGS
@@ -166,17 +162,6 @@ CHECK_BUILTIN.pthread:=	no
 PERL5_BUILD_THREADS_SUPPORT=	yes
 .else
 PERL5_BUILD_THREADS_SUPPORT=	${DLOPEN_REQUIRE_PTHREADS}
-.endif
-
-### [Sat Dec 18 17:29:44 EST 2004 : jlam]
-### Native threading on VAX isn't ready for primetime in NetBSD>=2.0.
-### Build Perl without threads-support until VAX native threads are
-### known to work.
-###
-.if !empty(MACHINE_PLATFORM:MNetBSD-*-vax) && \
-    !empty(USE_BUILTIN.pthread:M[yY][eE][sS])
-PKG_HACKS+=			broken-vax-pthreads
-PERL5_BUILD_THREADS_SUPPORT=	no
 .endif
 
 .if !empty(MACHINE_PLATFORM:MMirBSD*)
@@ -333,7 +318,6 @@ PERL5_PACKLIST=		.packlist
 PERL5_PACKLIST_DESTDIR=	no
 FILES_SUBST+=		PERL5_COMMENT=\#
 FILES_SUBST+=		PERL5_PACKLIST=
-PLIST_SRC=		${WRKDIR}/.PLIST_SRC
 
 post-install: perl5-post-install
 
@@ -341,17 +325,16 @@ perl5-post-install:
 	${RUN}if ${TEST} -x ${DESTDIR}${PREFIX}/bin/a2p; then		\
 		strip ${DESTDIR}${PREFIX}/bin/a2p;			\
 	fi
-	${RUN}${INSTALL_SCRIPT} ${WRKDIR}/perllink.sh ${DESTDIR}${PERL5_SCRIPTDIR}/perllink;	\
-	${INSTALL_MAN} ${FILESDIR}/perllink.1 ${DESTDIR}${PERL5_MAN1DIR}/perllink.1;	\
-	${RM} -f ${DESTDIR}${PREFIX}/bin/perllink				\
-		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/perllink.1;		\
-	${LN} -s ${PERL5_SCRIPTDIR}/perllink ${DESTDIR}${PREFIX}/bin/perllink;	\
-	${LN} -s ${PERL5_MAN1DIR}/perllink.1					\
-		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/perllink.1;	\
-	{ ${CAT} ${PKGDIR}/PLIST;					\
-	  ${ECHO} "${PERL5_SCRIPTDIR}/perllink";			\
-	  ${ECHO} "${PERL5_MAN1DIR}/perllink.1";			\
-	} | ${SED} -e "s,^"${PREFIX:Q}"/,," > ${PLIST_SRC}
+	${INSTALL_SCRIPT} ${WRKDIR}/perllink.sh 			\
+		${DESTDIR}${PERL5_PERLBASE}/bin/perllink
+	${INSTALL_MAN} ${FILESDIR}/perllink.1				\
+		${DESTDIR}${PERL5_PERLBASE}/${PKGMANDIR}/man1/perllink.1
+	${RM} -f ${DESTDIR}${PREFIX}/bin/perllink			\
+		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/perllink.1
+	${LN} -s ${PERL5_PERLBASE}/bin/perllink 			\
+		${DESTDIR}${PREFIX}/bin/perllink
+	${LN} -s ${PERL5_PERLBASE}/${PKGMANDIR}/man1/perllink.1		\
+		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/perllink.1
 .if ${OPSYS} == "Haiku"
 	${CHMOD} a+x ${DESTDIR}${PREFIX}/bin/perl
 .endif

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/10/02 21:25:38 asau Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:54:25 wiz Exp $
 #
 
 DISTNAME=		build-farm-4_5
@@ -38,8 +38,6 @@ SUBST_MESSAGE.conf=	Fixing default value for build-farm.conf
 
 INSTALLATION_DIRS+= ${PMDIR}
 INSTALLATION_DIRS+= ${EGDIR}
-
-.include "../../lang/perl5/dirs.mk"
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/*.pl ${DESTDIR}${PREFIX}/bin
