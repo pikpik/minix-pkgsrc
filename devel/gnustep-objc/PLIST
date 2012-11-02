@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.5 2012/10/22 02:13:06 rh Exp $
 include/objc/Availability.h
 include/objc/Object.h
 include/objc/Protocol.h
@@ -17,4 +17,4 @@ include/objc/runtime.h
 include/objc/slot.h
 include/objc/toydispatch.h
 lib/libobjc.so
-lib/libobjc.so.4.${OS_VERSION}
+lib/libobjc.so.4.6.0

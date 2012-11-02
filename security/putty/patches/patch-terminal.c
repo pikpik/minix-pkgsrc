@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-terminal.c,v 1.1 2012/02/22 15:27:16 wiz Exp $
 
 Make the home/end keys work on BSD servers as well as Linux ones
 
@@ -32,7 +32,7 @@ Make the home/end keys work on BSD servers as well as Linux ones
 +		he = keysym == PK_HOME ? "\x1B[7~" : "\x1B[8~";
 +	    else
 +		he = keysym == PK_HOME ? "\x1BOH" : "\x1BOF";
-+	    p += sprintf((char *) p, he);
++	    p += sprintf((char *) p, "%s", he);
 +	    goto done;
 +	}
 +
