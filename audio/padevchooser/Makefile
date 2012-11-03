@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2012/10/02 23:48:04 asau Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/08 23:01:12 adam Exp $
 #
 
 DISTNAME=	padevchooser-0.9.3
-PKGREVISION=	17
+PKGREVISION=	18
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/padevchooser/
 
