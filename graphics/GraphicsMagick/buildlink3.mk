@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.24 2012/02/06 12:40:16 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.25 2012/05/07 01:53:31 dholland Exp $
 
 BUILDLINK_TREE+=	GraphicsMagick
 
@@ -32,7 +32,7 @@ pkgbase := GraphicsMagick
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../devel/libltdl/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
-.include "../../graphics/lcms/buildlink3.mk"
+.include "../../graphics/lcms2/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .endif # GRAPHICSMAGICK_BUILDLINK3_MK
 

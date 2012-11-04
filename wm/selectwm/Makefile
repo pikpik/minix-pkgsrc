@@ -1,20 +1,20 @@
-# $NetBSD: Makefile,v 1.22 2012/10/08 12:42:23 asau Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/08 23:02:31 adam Exp $
 #
 
-DISTNAME=     selectwm-0.4.1
-PKGREVISION=  18
-CATEGORIES=   wm
-MASTER_SITES= http://ordiluc.net/selectwm/
+DISTNAME=	selectwm-0.4.1
+PKGREVISION=	18
+CATEGORIES=	wm
+MASTER_SITES=	http://ordiluc.net/selectwm/
 
-MAINTAINER=   tonio@NetBSD.org
-HOMEPAGE=     http://ordiluc.net/selectwm/
-COMMENT=      Simple GTK2 application to select window manager
+MAINTAINER=	tonio@NetBSD.org
+HOMEPAGE=	http://ordiluc.net/selectwm/
+COMMENT=	Simple GTK2 application to select window manager
 
-USE_TOOLS+=       pkg-config
-USE_PKGLOCALEDIR= yes
-GNU_CONFIGURE=    yes
+USE_TOOLS+=		pkg-config
+USE_PKGLOCALEDIR=	yes
+GNU_CONFIGURE=		yes
 
-CONFIGURE_ARGS+=  --without-included-gettext
+CONFIGURE_ARGS+=	--without-included-gettext
 
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

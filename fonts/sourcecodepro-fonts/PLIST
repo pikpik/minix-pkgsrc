@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/fonts/sourcecodepro/SourceCodePro-Black.otf
+share/fonts/sourcecodepro/SourceCodePro-Bold.otf
+share/fonts/sourcecodepro/SourceCodePro-ExtraLight.otf
+share/fonts/sourcecodepro/SourceCodePro-Light.otf
+share/fonts/sourcecodepro/SourceCodePro-Regular.otf
+share/fonts/sourcecodepro/SourceCodePro-Semibold.otf

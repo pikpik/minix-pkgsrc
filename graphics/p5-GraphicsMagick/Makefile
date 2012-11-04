@@ -1,19 +1,18 @@
-# $NetBSD: Makefile,v 1.9 2012/10/03 21:56:13 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/06 14:11:11 asau Exp $
 
 .include "../../graphics/GraphicsMagick/Makefile.common"
 
 PKGNAME=	p5-GraphicsMagick-${DISTVERSION}
-PKGREVISION=	1
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.graphicsmagick.org/perl.html
 COMMENT=	Object-oriented Perl interface to GraphicMagick
+LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-
 CONFIGURE_ARGS+=	--with-perl=${PERL5:Q}
 
 PERL5_CONFIGURE=	no
