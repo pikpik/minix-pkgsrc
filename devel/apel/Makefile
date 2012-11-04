@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2011/10/04 03:05:37 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/31 11:16:35 asau Exp $
 
 DISTNAME=	apel-10.8
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -6,7 +6,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://kanji.zinbun.kyoto-u.ac.jp/~tomo/lemi/dist/apel/
 
 MAINTAINER=	uebayasi@NetBSD.org
-HOMEPAGE=	http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/elisp/APEL/
+HOMEPAGE=	http://git.chise.org/elisp/apel/
 COMMENT=	Portable Emacs library
 LICENSE=	gnu-gpl-v2 OR gnu-gpl-v3
 
