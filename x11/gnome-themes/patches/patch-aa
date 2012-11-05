@@ -1,4 +1,4 @@
-$NetBSD: patch-aa,v 1.4 2008/11/08 18:20:27 wiz Exp $
+$NetBSD: patch-aa,v 1.5 2009/05/19 23:54:49 wiz Exp $
 
 http://bugzilla.gnome.org/show_bug.cgi?id=583283
 
@@ -9,7 +9,7 @@ http://bugzilla.gnome.org/show_bug.cgi?id=583283
  
  	# Skip lines beginning with '#'
 -	if [ ! "${NEXTLINE:0:1}" == '#' ]; then
-+	if [ ! X"`echo ${NEXTLINE} | head -c 1`" = X'#' ]; then
++	if [ ! X"`echo ${NEXTLINE} | cut -c 1`" = X'#' ]; then
  		#Extract first field, minus its trailing colon
  		ORIG_FILE=`echo $NEXTLINE | awk '/:/{print $1}' | sed -e 's/://'`
  
