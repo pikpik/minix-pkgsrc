@@ -1,12 +1,12 @@
 $NetBSD$
 
---- ConfigFile.cc.orig	2008-12-16 11:20:56.000000000 +0000
+--- ConfigFile.cc.orig	2012-10-19 21:40:21.000000000 +0000
 +++ ConfigFile.cc
-@@ -25,6 +25,7 @@
+@@ -27,6 +27,7 @@
  ----------------------------------------------------------------------------*/
  
  #include "ConfigFile.h"
 +#include <cstdio>
  
- CConfigFile::CConfigFile()
- {
+ #include <stdio.h>
+ #include <strings.h>
