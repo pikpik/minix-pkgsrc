@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3524 2012/11/08 13:26:35 taca Exp $
+$NetBSD: CHANGES-2012,v 1.3526 2012/11/08 19:27:27 jakllsch Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5388,3 +5388,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated www/typo3_45 to 4.5.21 [taca 2012-11-08]
 	Updated www/typo3_46 to 4.6.14 [taca 2012-11-08]
 	Updated www/typo3_47 to 4.7.6 [taca 2012-11-08]
+	Updated net/py-boto to 2.6.0 [jakllsch 2012-11-08]
+	Updated multimedia/x264-devel to 20121107 [adam 2012-11-08]
+	Updated multimedia/ffmpeg to 20121028.1.0 [adam 2012-11-08]
+	Updated multimedia/ffplay to 1.0 [adam 2012-11-08]
