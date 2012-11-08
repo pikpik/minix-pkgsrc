@@ -1,9 +1,9 @@
 $NetBSD$
 
---- common/putilimp.h.orig	Fri Jun 22 08:38:46 2012
+--- common/putilimp.h.orig	2012-11-05 17:14:50.000000000 +0000
 +++ common/putilimp.h
-@@ -119,6 +119,8 @@ typedef size_t uintptr_t;
- #   define U_TIMEZONE _timezone
+@@ -123,6 +123,8 @@ typedef size_t uintptr_t;
+    /* not defined */
  #elif U_PLATFORM == U_PF_OS400
     /* not defined */
 +#elif defined(__MirBSD__)
