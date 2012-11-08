@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.898 2012/10/14 21:58:02 mspo Exp $
+# $NetBSD: Makefile,v 1.899 2012/10/14 22:10:36 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -109,6 +109,8 @@ SUBDIR+=	clisp-fastcgi
 SUBDIR+=	contao211
 SUBDIR+=	contao211-example
 SUBDIR+=	contao211-translations
+SUBDIR+=	contao30
+SUBDIR+=	contao30-example
 SUBDIR+=	crawl
 SUBDIR+=	cronolog
 SUBDIR+=	curl

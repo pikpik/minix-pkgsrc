@@ -1,0 +1,11 @@
+#!@SH@
+#
+# $NetBSD$
+
+CT_WEBDIR="@PREFIX@/@CT_WEBDIR@"
+CT_DATA="files/music_academy"
+
+case "${STAGE}" in
+DEINSTALL)
+	cd ${CT_WEBDIR} && ${RM} -rf ${CT_DATA}
+esac

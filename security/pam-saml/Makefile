@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2012/09/15 10:06:17 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/23 18:16:49 asau Exp $
 #
 
 PKGNAME=	${DISTNAME:S/crudesaml-/pam-saml-/}
-PKGREVISION=	5
 COMMENT=	Crude SAML assertion validator for bridging WebSSO and PAM
 
 INSTALLATION_DIRS=	lib/security ${PKGMANDIR}/man5
