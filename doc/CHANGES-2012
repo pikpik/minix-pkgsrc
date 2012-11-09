@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3526 2012/11/08 19:27:27 jakllsch Exp $
+$NetBSD: CHANGES-2012,v 1.3528 2012/11/09 14:28:52 gdt Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5392,3 +5392,5 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated multimedia/x264-devel to 20121107 [adam 2012-11-08]
 	Updated multimedia/ffmpeg to 20121028.1.0 [adam 2012-11-08]
 	Updated multimedia/ffplay to 1.0 [adam 2012-11-08]
+	Added devel/swig2 version 2.0.8nb1 [gdt 2012-11-09]
+	Updated fonts/ipaexfont to 00201 [ryoon 2012-11-09]
