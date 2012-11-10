@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.664 2012/10/18 09:43:01 wiz Exp $
+# $NetBSD: Makefile,v 1.665 2012/10/20 15:43:08 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -262,6 +262,7 @@ SUBDIR+=	matchbox-themes-extra
 SUBDIR+=	mlterm
 SUBDIR+=	modeline
 SUBDIR+=	modular-xorg-server
+SUBDIR+=	motif
 SUBDIR+=	mowitz
 SUBDIR+=	mrxvt
 SUBDIR+=	multi-aterm

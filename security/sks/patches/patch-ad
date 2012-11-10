@@ -1,9 +1,10 @@
 $NetBSD$
 
---- bdb/Makefile.orig	2011-02-18 10:14:32.000000000 +0000
+--- bdb/Makefile.orig	2012-10-07 21:59:39.000000000 +0200
 +++ bdb/Makefile
-@@ -15,3 +15,3 @@
- 
+@@ -15 +15 @@
+-include ../Makefile.local
++#include ../Makefile.local
+@@ -17 +17 @@
 -CINCLUDES=-I`ocamlc -where` $(BDBINCLUDE)
 +CINCLUDES=-I${PREFIX}/lib/ocaml $(BDBINCLUDE)
- CC=gcc
