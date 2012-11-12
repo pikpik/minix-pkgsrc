@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1666 2012/11/07 10:14:16 wiz Exp $
+# $NetBSD: Makefile,v 1.1667 2012/11/09 14:26:39 gdt Exp $
 #
 
 COMMENT=	Development utilities
@@ -1327,6 +1327,7 @@ SUBDIR+=	py-distribute
 SUBDIR+=	py-dulwich
 SUBDIR+=	py-expect
 SUBDIR+=	py-fann
+SUBDIR+=	py-filechunkio
 SUBDIR+=	py-funcparserlib
 SUBDIR+=	py-game
 SUBDIR+=	py-generate
