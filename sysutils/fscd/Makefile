@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2012/05/09 22:44:06 jdf Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/23 19:51:02 asau Exp $
 #
 
-DISTNAME=	fscd-1.0.1
+DISTNAME=	fscd-1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://komkon2.de/
 
