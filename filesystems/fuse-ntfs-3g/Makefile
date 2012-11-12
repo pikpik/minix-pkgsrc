@@ -19,6 +19,7 @@ USE_TOOLS+=	gmake pkg-config
 
 CONFIGURE_ARGS+=	--exec-prefix=${PREFIX}
 CONFIGURE_ARGS+=	--disable-ldconfig
+CONFIGURE_ARGS+=	--enable-really-static
 
 .include "../../mk/fuse.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
