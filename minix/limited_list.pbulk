@@ -71,6 +71,7 @@ devel/libiberty
 devel/libidn
 devel/libmm
 devel/libtool-base
+devel/libuuid
 devel/m4
 devel/nasm
 devel/nbpatch
@@ -206,6 +207,7 @@ sysutils/e2fsprogs
 sysutils/heirloom-doc
 sysutils/mdf2iso
 sysutils/mktemp
+sysutils/ntfsprogs
 sysutils/tarsnap
 sysutils/tree
 sysutils/wtail
