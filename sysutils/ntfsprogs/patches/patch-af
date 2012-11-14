@@ -1,15 +1,15 @@
 $NetBSD$
 
---- ntfsprogs/ntfsclone.c.orig	2007-09-19 18:51:09.000000000 +0200
+--- ntfsprogs/ntfsclone.c.orig	Wed Nov 14 14:41:16 2012
 +++ ntfsprogs/ntfsclone.c
 @@ -61,6 +61,19 @@
   */
  #define NTFS_DO_NOT_CHECK_ENDIANS
  
-+#ifdef __NetBSD__
++#if defined(__NetBSD__) || defined(__minix)
 +#  include <sys/param.h>
 +   /* NetBSD versions later than 2.99.9 have statvfs(2) instead of statfs(2) */
-+#  if __NetBSD_Version__ >= 299000900
++#  if __NetBSD_Version__ >= 299000900 || defined(__minix)
 +#    include <sys/statvfs.h>
 +#    define F_TYPE	f_fsid
 +#  else
@@ -22,11 +22,12 @@ $NetBSD$
  #include "debug.h"
  #include "types.h"
  #include "support.h"
-@@ -116,7 +129,11 @@ static struct {
+@@ -116,7 +129,12 @@ static struct {
  	int restore_image;
  	char *output;
  	char *volume;
-+#if defined(__NetBSD__) && (__NetBSD_Version__ >= 299000900)
++#if (defined(__NetBSD__) && (__NetBSD_Version__ >= 299000900)) ||
++	defined(__minix)
 +	struct statvfs stfs;
 +#else
  	struct statfs stfs;
@@ -34,7 +35,7 @@ $NetBSD$
  } opt;
  
  struct bitmap {
-@@ -590,7 +607,7 @@ static void copy_cluster(int rescue, u64
+@@ -590,7 +608,7 @@ static void copy_cluster(int rescue, u64 rescue_lcn)
  	if (write_all(&fd_out, buff, csize) == -1) {
  		int err = errno;
  		perr_printf("Write failed");
@@ -43,7 +44,7 @@ $NetBSD$
  			Printf("Apparently you tried to clone to a remote "
  			       "Windows computer but they don't\nhave "
  			       "efficient sparse file handling by default. "
-@@ -1492,7 +1509,7 @@ static void set_filesize(s64 filesize)
+@@ -1492,7 +1510,7 @@ static void set_filesize(s64 filesize)
  		Printf("WARNING: Couldn't get filesystem type: "
  		       "%s\n", strerror(errno));
  	else
