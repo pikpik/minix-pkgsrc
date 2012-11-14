@@ -4,4 +4,4 @@ SHA1 (util-linux-2.19.1.tar.bz2) = 96af5d4a37c42296dae5365ba533316216a6b347
 RMD160 (util-linux-2.19.1.tar.bz2) = e4763d21a3a32029ccc525a0222e271f0946a4fd
 Size (util-linux-2.19.1.tar.bz2) = 4396543 bytes
 SHA1 (patch-aa) = 07d66ef414f5781d75159b446d6c822b1e543477
-SHA1 (patch-shlibs_uuid_src_gen__uuid.c) = 5acb3165ddf3b5e3fa94160cf0d8eb81d2d0dcd2
+SHA1 (patch-shlibs_uuid_src_gen__uuid.c) = 914476f162427e90e59b3f071d51c7249f8010af
