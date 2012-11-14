@@ -1,4 +1,4 @@
-
+# $NetBSD$
 
 BUILDLINK_TREE+=	gtk3
 

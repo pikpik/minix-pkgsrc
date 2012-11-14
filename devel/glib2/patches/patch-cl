@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-cl,v 1.8 2012/07/24 18:23:38 drochner Exp $
 
 --- gio/Makefile.am.orig	2012-07-14 20:33:13.000000000 +0000
 +++ gio/Makefile.am
@@ -11,7 +11,7 @@ $NetBSD$
  
  if OS_UNIX
  SUBDIRS += xdgmime
-@@ -715,13 +715,6 @@ gdbus_LDADD = libgio-2.0.la \
+@@ -722,13 +722,6 @@ gdbus_LDADD = libgio-2.0.la \
  	$(top_builddir)/glib/libglib-2.0.la 		\
  	$(top_builddir)/gobject/libgobject-2.0.la
  
