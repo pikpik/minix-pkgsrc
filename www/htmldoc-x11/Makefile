@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.17 2010/01/24 13:26:12 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/28 06:30:17 asau Exp $
 
 PKGNAME=	${PKGNAME_BASE:S/-/-x11-/}
-PKGREVISION=	1
+PKGREVISION=	2
 
 FILESDIR=	${.CURDIR}/../../www/htmldoc/files
 PATCHDIR=	${.CURDIR}/../../www/htmldoc/patches

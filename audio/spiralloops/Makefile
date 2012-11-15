@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.33 2012/02/15 22:47:31 hans Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/02 23:48:09 asau Exp $
 #
 
 DISTNAME=		SpiralLoops-2.0.0
 PKGNAME=		spiralloops-2.0.0
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		audio
 MASTER_SITES=		http://www.pawfal.org/Software/SpiralLoops/dload/
 
@@ -29,6 +29,6 @@ INSTALLATION_DIRS=	bin
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/SpiralLoops ${DESTDIR}${PREFIX}/bin
 
-.include "../../x11/fltk/buildlink3.mk"
+.include "../../x11/fltk13/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
