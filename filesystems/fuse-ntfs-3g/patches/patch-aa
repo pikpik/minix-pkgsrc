@@ -1,6 +1,6 @@
 $NetBSD$
 
---- libntfs-3g/unix_io.c.orig	Fri Jun  8 21:35:33 2007
+--- libntfs-3g/unix_io.c.orig	Thu Nov 15 09:47:33 2012
 +++ libntfs-3g/unix_io.c
 @@ -60,6 +60,7 @@
  #include "device.h"
@@ -34,38 +34,24 @@ $NetBSD$
  }
  
  /**
-@@ -243,7 +260,18 @@ static s64 ntfs_device_unix_io_write(struct ntfs_devic
+@@ -243,7 +260,11 @@ static s64 ntfs_device_unix_io_write(struct ntfs_devic
  static s64 ntfs_device_unix_io_pread(struct ntfs_device *dev, void *buf,
  		s64 count, s64 offset)
  {
 +#ifdef __minix 
-+	u32_t low, high;
-+	u64_t seekpos;
-+
-+	low = offset & 0xFFFFFFFF;
-+	high = offset >> 32;
-+	seekpos = make64(low, high);
-+
-+	return pread64(DEV_FD(dev), buf, count, seekpos);
++	return pread64(DEV_FD(dev), buf, (size_t) count, (u64_t) offset);
 +#else
  	return pread(DEV_FD(dev), buf, count, offset);
 +#endif
  }
  
  /**
-@@ -265,7 +293,18 @@ static s64 ntfs_device_unix_io_pwrite(struct ntfs_devi
+@@ -265,7 +286,11 @@ static s64 ntfs_device_unix_io_pwrite(struct ntfs_devi
  		return -1;
  	}
  	NDevSetDirty(dev);
 +#ifdef __minix
-+	u32_t low, high;
-+	u64_t seekpos;
-+
-+	low = offset & 0xFFFFFFFF;
-+	high = offset >> 32;
-+	seekpos = make64(low, high);
-+
-+	return pwrite64(DEV_FD(dev), buf, count, seekpos);
++	return pwrite64(DEV_FD(dev), buf, (size_t) count, (u64_t) offset);
 +#else
  	return pwrite(DEV_FD(dev), buf, count, offset);
 +#endif
