@@ -150,7 +150,9 @@ math/units
 minix/clang29
 minix/clang31
 minix/compiler-rt
+minix/git-review
 minix/netdrv_tg3
+minix/py-unittest-xml-reporting
 minix/x11
 misc/ascii
 misc/cowsay
