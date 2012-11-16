@@ -1,0 +1,7 @@
+@comment $NetBSD$
+share/texmf-dist/bibtex/bst/index/xagsm.bst
+share/texmf-dist/bibtex/bst/index/xplain.bst
+share/texmf-dist/makeindex/index/bibref.ist
+share/texmf-dist/tex/latex/index/autind.sty
+share/texmf-dist/tex/latex/index/bibref.sty
+share/texmf-dist/tex/latex/index/index.sty
