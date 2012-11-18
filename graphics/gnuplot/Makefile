@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2012/11/07 19:22:04 he Exp $
+# $NetBSD: Makefile,v 1.70 2012/11/12 22:02:43 bad Exp $
 
 DISTNAME=	gnuplot-4.6.1
 PKGREVISION=	1
@@ -23,6 +23,7 @@ CONFIGURE_ARGS+=	--with-plot=${PREFIX}
 CONFIGURE_ARGS+=	--without-latex
 CONFIGURE_ARGS+=	--without-lisp-files
 CONFIGURE_ARGS+=	--without-tutorial
+CONFIGURE_ARGS+=	ac_cv_prog_EMACS=
 INFO_FILES=		yes
 USE_LANGUAGES=		c
 
