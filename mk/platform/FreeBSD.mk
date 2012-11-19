@@ -1,4 +1,4 @@
-# $NetBSD: FreeBSD.mk,v 1.27 2010/07/08 04:57:36 dholland Exp $
+# $NetBSD: FreeBSD.mk,v 1.28 2012/03/19 12:34:17 joerg Exp $
 #
 # Variable definitions for the FreeBSD operating system.
 
@@ -19,7 +19,7 @@ EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
 .else
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,--export-dynamic
 .endif
-MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
+MOTIF_TYPE_DEFAULT?=	motif	# default 2.0 compatible libs type
 NOLOGIN?=		/sbin/nologin
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c

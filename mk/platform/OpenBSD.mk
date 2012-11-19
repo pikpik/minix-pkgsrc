@@ -1,4 +1,4 @@
-# $NetBSD: OpenBSD.mk,v 1.34 2012/05/04 11:46:02 obache Exp $
+# $NetBSD: OpenBSD.mk,v 1.35 2012/05/13 08:20:11 obache Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
@@ -26,7 +26,7 @@ EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
 .else
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,--export-dynamic
 .endif
-MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
+MOTIF_TYPE_DEFAULT?=	motif	# default 2.0 compatible libs type
 NOLOGIN?=		/sbin/nologin
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
