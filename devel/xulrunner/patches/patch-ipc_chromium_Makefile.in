@@ -1,8 +1,8 @@
 $NetBSD$
 
---- ipc/chromium/Makefile.in.orig	2012-08-24 22:55:37.000000000 +0000
+--- ipc/chromium/Makefile.in.orig	2012-10-23 19:42:37.000000000 +0000
 +++ ipc/chromium/Makefile.in
-@@ -243,6 +243,34 @@ endif
+@@ -240,6 +240,33 @@ endif
  
  endif # } OS_LINUX
  
@@ -10,7 +10,6 @@ $NetBSD$
 +
 +CPPSRCS += \
 +  atomicops_internals_x86_gcc.cc \
-+  file_util_linux.cc \
 +  process_util_bsd.cc \
 +  time_posix.cc \
 +  $(NULL)

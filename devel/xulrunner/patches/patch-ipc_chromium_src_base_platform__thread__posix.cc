@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ipc/chromium/src/base/platform_thread_posix.cc.orig	2012-08-24 22:55:37.000000000 +0000
+--- ipc/chromium/src/base/platform_thread_posix.cc.orig	2012-11-19 17:13:26.000000000 +0000
 +++ ipc/chromium/src/base/platform_thread_posix.cc
 @@ -9,16 +9,30 @@
  
@@ -60,7 +60,7 @@ $NetBSD$
  #elif defined(OS_LINUX)
    return syscall(__NR_gettid);
  #endif
-@@ -83,10 +108,10 @@ void PlatformThread::SetName(const char*
+@@ -83,9 +108,9 @@ void PlatformThread::SetName(const char*
    // Note that glibc also has a 'pthread_setname_np' api, but it may not be
    // available everywhere and it's only benefit over using prctl directly is
    // that it can set the name of threads other than the current thread.
@@ -68,9 +68,7 @@ $NetBSD$
 +#if defined(OS_BSD) && !defined(OS_NETBSD)
    pthread_set_name_np(pthread_self(), name);
 -#elif defined(__NetBSD__)
--  pthread_setname_np(pthread_self(), "%s", name);
 +#elif defined(OS_NETBSD)
-+  pthread_setname_np(pthread_self(), "%s", (void *)name);
+   pthread_setname_np(pthread_self(), "%s", (void *)name);
  #else
    prctl(PR_SET_NAME, reinterpret_cast<uintptr_t>(name), 0, 0, 0); 
- #endif
