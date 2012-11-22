@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3597 2012/11/21 02:09:38 gdt Exp $
+$NetBSD: CHANGES-2012,v 1.3602 2012/11/22 00:16:20 bad Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5524,3 +5524,8 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated ham/xlog to 2.0.5 [gdt 2012-11-21]
 	Updated devel/xulrunner to 17.0 [ryoon 2012-11-21]
 	Updated www/firefox to 17.0 [ryoon 2012-11-21]
+	Updated www/firefox10-l10n to 10.0.11 [ryoon 2012-11-21]
+	Updated www/firefox-l10n to 17.0 [ryoon 2012-11-21]
+	Updated devel/nspr to 4.9.3.3 [ryoon 2012-11-21]
+	Added math/py-pandas version 0.9.1 [bad 2012-11-22]
+	Updated security/pkcs11-helper to 1.10 [gdt 2012-11-22]
