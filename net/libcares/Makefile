@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2012/08/06 13:57:23 mspo Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/23 17:18:33 asau Exp $
 #
 
 DISTNAME=	c-ares-1.9.1
 PKGNAME=	libcares-1.9.1
 CATEGORIES=	net
-MASTER_SITES=	http://c-ares.haxx.se/
+MASTER_SITES=	http://c-ares.haxx.se/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://c-ares.haxx.se/
