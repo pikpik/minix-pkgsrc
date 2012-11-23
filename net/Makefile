@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.939 2012/11/03 14:19:11 imil Exp $
+# $NetBSD: Makefile,v 1.940 2012/11/08 07:18:25 jnemeth Exp $
 #
 
 COMMENT=	Networking tools
@@ -162,6 +162,8 @@ SUBDIR+=	gnome-vfs-smb
 SUBDIR+=	gnugk
 SUBDIR+=	gofish
 SUBDIR+=	gopher
+SUBDIR+=	grilo
+SUBDIR+=	grilo-plugins
 SUBDIR+=	gsnmp
 SUBDIR+=	gssdp
 SUBDIR+=	gst-plugins0.10-libnice

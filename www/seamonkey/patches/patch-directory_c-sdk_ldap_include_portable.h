@@ -1,6 +1,6 @@
 $NetBSD$
 
---- ldap/sdks/c-sdk/ldap/include/portable.h.orig	2012-08-27 04:49:45.000000000 +0000
+--- ldap/sdks/c-sdk/ldap/include/portable.h.orig	2012-11-18 10:20:06.000000000 +0000
 +++ ldap/sdks/c-sdk/ldap/include/portable.h
 @@ -122,8 +122,11 @@
   * some systems don't have the BSD re_comp and re_exec routines

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2012/10/29 14:29:26 prlw1 Exp $
+# $NetBSD: Makefile,v 1.8 2012/11/07 15:38:26 joerg Exp $
 #
 
-DISTNAME=	gnome-desktop-3.6.1
+DISTNAME=	gnome-desktop-3.6.2
 PKGNAME=	${DISTNAME:S/desktop/desktop3/}
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-desktop/3.6/}

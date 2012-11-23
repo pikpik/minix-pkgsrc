@@ -1,4 +1,4 @@
-/* $NetBSD: pbulk.h,v 1.2 2007/06/25 21:38:44 joerg Exp $ */
+/* $NetBSD: pbulk.h,v 1.3 2009/01/31 23:25:38 joerg Exp $ */
 
 /*-
  * Copyright (c) 2007, 2009 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -91,3 +91,6 @@ char		*xstrndup(const char *, size_t);
 
 int		 pkg_match(const char *, const char *);
 const char	*pkg_order(const char *, const char *);
+
+size_t		 djb_hash(const char *);
+size_t		 djb_hash2(const char *, const char *);
