@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2010/01/22 22:30:05 tonio Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/31 11:16:56 asau Exp $
 #
 
 DISTNAME=	ctags-5.8
@@ -38,6 +38,7 @@ SUBST_FILES.rename=	c.c eiffel.c general.h lregex.c lua.c main.c \
 SUBST_SED.rename=	-e 's|__unused__|__unused_|g'
 
 INSTALL_MAKE_FLAGS+=	prefix=${DESTDIR}${PREFIX} \
+			libdir=${DESTDIR}${PREFIX}/lib \
 			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 .include "../../mk/bsd.pkg.mk"

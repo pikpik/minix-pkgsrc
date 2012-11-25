@@ -1,5 +1,5 @@
-# $NetBSD$
+# $NetBSD: Makefile.version,v 1.9 2012/08/21 21:31:47 marino Exp $
 
 TCL_SONUM=	85
 TCL_BASEVER=	8.5
-TCL_VERSION=	8.5.12
+TCL_VERSION=	8.5.13
