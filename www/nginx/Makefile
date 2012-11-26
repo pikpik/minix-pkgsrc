@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.26 2012/09/23 12:46:15 shattered Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/28 06:30:23 asau Exp $
 
-DISTNAME=		nginx-1.2.3
+DISTNAME=		nginx-1.2.5
 CATEGORIES=		www
 MASTER_SITES=		http://nginx.org/download/
 DISTFILES=		${DEFAULT_DISTFILES}

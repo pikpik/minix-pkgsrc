@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3636 2012/11/25 20:51:18 cheusov Exp $
+$NetBSD: CHANGES-2012,v 1.3646 2012/11/26 17:37:36 adam Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5583,3 +5583,14 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated pkgtools/pkg_summary-utils to 0.60.0 [cheusov 2012-11-25]
 	Updated pkgtools/pkg_online-server to 0.13.1 [cheusov 2012-11-25]
 	Updated x11/xkbset to 0.5 [shattered 2012-11-25]
+	Updated security/softhsm to 1.3.4 [pettai 2012-11-26]
+	Added net/py-netifaces version 0.8 [ryoon 2012-11-26]
+	Updated misc/calibre to 0.9.7 [ryoon 2012-11-26]
+	Updated devel/jenkins to 1.480.1 [ryoon 2012-11-26]
+	Added databases/jdbc-postgresql92 version 1002 [ryoon 2012-11-26]
+	Updated www/aipo to 7.0.2 [ryoon 2012-11-26]
+	Updated lang/sun-jre6 to 6.0.37 [ryoon 2012-11-26]
+	Updated lang/sun-jdk6 to 6.0.37 [ryoon 2012-11-26]
+	Updated editors/emacs24 to 24.2nb4 [martin 2012-11-26]
+	Updated math/fftw to 3.3.3 [adam 2012-11-26]
+	Updated net/tor to 0.2.3.25 [drochner 2012-11-26]
