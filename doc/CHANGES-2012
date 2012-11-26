@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3633 2012/11/25 16:54:13 ryoon Exp $
+$NetBSD: CHANGES-2012,v 1.3636 2012/11/25 20:51:18 cheusov Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5580,3 +5580,6 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated fonts/migu-ttf to 20121030 [ryoon 2012-11-25]
 	Updated fonts/ricty-ttf to 3.2.1 [ryoon 2012-11-25]
 	Updated graphics/libwebp to 0.2.1 [ryoon 2012-11-25]
+	Updated pkgtools/pkg_summary-utils to 0.60.0 [cheusov 2012-11-25]
+	Updated pkgtools/pkg_online-server to 0.13.1 [cheusov 2012-11-25]
+	Updated x11/xkbset to 0.5 [shattered 2012-11-25]
