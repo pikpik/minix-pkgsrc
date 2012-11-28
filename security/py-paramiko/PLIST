@@ -67,6 +67,9 @@ ${PYSITELIB}/paramiko/pkey.pyo
 ${PYSITELIB}/paramiko/primes.py
 ${PYSITELIB}/paramiko/primes.pyc
 ${PYSITELIB}/paramiko/primes.pyo
+${PYSITELIB}/paramiko/proxy.py
+${PYSITELIB}/paramiko/proxy.pyc
+${PYSITELIB}/paramiko/proxy.pyo
 ${PYSITELIB}/paramiko/resource.py
 ${PYSITELIB}/paramiko/resource.pyc
 ${PYSITELIB}/paramiko/resource.pyo
