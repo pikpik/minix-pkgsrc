@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2012/08/06 19:53:50 gls Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/23 19:51:01 asau Exp $
 #
 
-VERSION=		1.4.3
+VERSION=		1.5.1
 DISTNAME=		Fabric-${VERSION}
 PKGNAME=		${DISTNAME:S/F/f/}
 CATEGORIES=		sysutils net
@@ -12,7 +12,7 @@ HOMEPAGE=		http://fabfile.org/
 COMMENT=		Simple Pythonic remote deployment tool
 LICENSE=		2-clause-bsd
 
-DEPENDS+=		${PYPKGPREFIX}-ssh>=1.7.8:../../security/py-ssh
+DEPENDS+=		${PYPKGPREFIX}-paramiko>=1.9.0:../../security/py-paramiko
 
 USE_TOOLS+=		pax
 
