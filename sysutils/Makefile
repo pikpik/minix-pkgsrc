@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.554 2012/09/05 21:15:59 gls Exp $
+# $NetBSD: Makefile,v 1.555 2012/11/25 11:15:27 imil Exp $
 #
 
 COMMENT=	System utilities
@@ -153,6 +153,7 @@ SUBDIR+=	grun
 SUBDIR+=	gsettings-desktop-schemas
 SUBDIR+=	gst-plugins0.10-gio
 SUBDIR+=	gst-plugins0.10-gnomevfs
+SUBDIR+=	gst-plugins1-gio
 SUBDIR+=	gtk-send-pr
 SUBDIR+=	gvfs
 SUBDIR+=	gworkspace

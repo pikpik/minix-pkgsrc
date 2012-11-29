@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1667 2012/11/09 14:26:39 gdt Exp $
+# $NetBSD: Makefile,v 1.1668 2012/11/11 21:19:00 jakllsch Exp $
 #
 
 COMMENT=	Development utilities
@@ -256,6 +256,7 @@ SUBDIR+=	gps
 SUBDIR+=	gputils
 SUBDIR+=	gsoap
 SUBDIR+=	gst-plugins0.10-pango
+SUBDIR+=	gst-plugins1-pango
 SUBDIR+=	gtexinfo
 SUBDIR+=	gtl
 SUBDIR+=	guile-fcgi
