@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3668 2012/11/29 14:22:43 wen Exp $
+$NetBSD: CHANGES-2012,v 1.3678 2012/11/30 15:51:34 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5654,3 +5654,16 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated devel/cppcheck to 1.57 [ryoon 2012-11-29]
 	Updated devel/p5-File-Util to 3.32 [wen 2012-11-29]
 	Updated net/youtube-dl to 20121129 [ryoon 2012-11-29]
+	Updated www/contao211 to 2.11.7 [taca 2012-11-30]
+	Updated www/contao211-example to 2.11.7 [taca 2012-11-30]
+	Updated www/contao30 to 3.0.1 [taca 2012-11-30]
+	Updated www/contao30-example to 3.0.1 [taca 2012-11-30]
+	Updated www/moodle to 2.3.3 [wen 2012-11-30]
+	Updated www/mediawiki to 1.20.1 [wen 2012-11-30]
+	Updated math/p5-Math-Prime-Util to 0.14 [wen 2012-11-30]
+	Updated math/R-xts to 0.8.8 [wen 2012-11-30]
+	Updated math/R-wle to 0.9.7 [wen 2012-11-30]
+	Updated math/R-statmod to 1.4.16 [wen 2012-11-30]
+	Updated security/opensc to 0.12.2 [gdt 2012-11-30]
+	Added security/libsecret version 0.12 [ryoon 2012-11-30]
+	Updated net/vinagre to 3.6.2 [ryoon 2012-11-30]

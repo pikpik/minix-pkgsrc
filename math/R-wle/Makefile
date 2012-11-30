@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/05/26 14:38:38 marino Exp $
+# $NetBSD: Makefile,v 1.9 2012/08/14 17:07:57 asau Exp $
 #
 
 CATEGORIES=	math
@@ -10,7 +10,7 @@ COMMENT=	Weighted Likelihood Estimation
 LICENSE=	gnu-gpl-v2
 
 R_PKGNAME=	wle
-R_PKGVER=	0.9-4
+R_PKGVER=	0.9-7
 
 PKG_DESTDIR_SUPPORT=	none
 
