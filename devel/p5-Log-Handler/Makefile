@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2012/10/03 21:55:13 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/31 11:18:28 asau Exp $
 #
 
-DISTNAME=	Log-Handler-0.72
+DISTNAME=	Log-Handler-0.76
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Log/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.1 2012/09/14 14:52:34 drochner Exp $
+# $NetBSD: options.mk,v 1.3 2012/11/28 15:50:03 ryoon Exp $
 
 # Global and legacy options
 
-PKG_OPTIONS_VAR=	PKG_OPTIONS.ffmpeg
+PKG_OPTIONS_VAR=	PKG_OPTIONS.ffmpeg010
 PKG_SUPPORTED_OPTIONS=	faac lame libvpx opencore-amr theora vorbis x264 xvid
 PKG_SUGGESTED_OPTIONS=	lame libvpx theora vorbis x264 xvid
 #PKG_OPTIONS_OPTIONAL_GROUPS=	aac-decoder
