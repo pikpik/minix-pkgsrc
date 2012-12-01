@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/10/28 06:31:00 asau Exp $
+# $NetBSD: Makefile,v 1.11 2012/11/25 08:51:07 adam Exp $
 
 DISTNAME=	django-cms-2.3.4
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -21,6 +21,7 @@ DEPENDS+=	${PYPKGPREFIX}-django-appmedia-[0-9]*:../../www/py-django-appmedia
 DEPENDS+=	${PYPKGPREFIX}-django-mptt-[0-9]*:../../www/py-django-mptt
 DEPENDS+=	${PYPKGPREFIX}-django-sekizai-[0-9]*:../../www/py-django-sekizai
 DEPENDS+=	${PYPKGPREFIX}-django-reversion-[0-9]*:../../www/py-django-reversion
+DEPENDS+=	${PYPKGPREFIX}-html5lib-[0-9]*:../../textproc/py-html5lib
 
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"

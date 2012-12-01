@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-plugins_vidinput_bsd_vidinput_bsd.h,v 1.1 2011/12/04 21:59:37 marino Exp $
+
+- Add Dragonfly support
 
 --- plugins/vidinput_bsd/vidinput_bsd.h.orig	2009-09-21 00:25:31.000000000 +0000
 +++ plugins/vidinput_bsd/vidinput_bsd.h

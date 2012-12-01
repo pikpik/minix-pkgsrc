@@ -1,4 +1,4 @@
-$NetBSD: patch-include_ptclib_pldap.h,v 1.1 2012/04/19 12:34:43 hans Exp $
+$NetBSD: patch-include_ptclib_pldap.h,v 1.2 2012/10/13 00:49:38 darcy Exp $
 
 - Allow building on Solaris
 
@@ -17,4 +17,3 @@ $NetBSD: patch-include_ptclib_pldap.h,v 1.1 2012/04/19 12:34:43 hans Exp $
      };
 
      /**Start encrypted connection
-

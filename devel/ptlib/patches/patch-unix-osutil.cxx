@@ -1,6 +1,6 @@
-$NetBSD: patch-unix-osutil.cxx,v 1.1 2011/12/04 21:59:37 marino Exp $
+$NetBSD: patch-unix-osutil.cxx,v 1.2 2012/10/13 00:49:38 darcy Exp $
 
-Add DragonFly support
+- Add DragonFly support
 
 --- src/ptlib/unix/osutil.cxx.orig	2012-08-23 02:12:27.000000000 +0000
 +++ src/ptlib/unix/osutil.cxx
