@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.89 2012/10/21 12:07:02 wiz Exp $
+# $NetBSD: Makefile,v 1.90 2012/11/21 00:02:35 dsainty Exp $
 #
 
 COMMENT=	Communication utilities
@@ -34,6 +34,7 @@ SUBDIR+=	libopensync-plugin-file
 SUBDIR+=	libopensync-plugin-kdepim
 SUBDIR+=	libopensync-plugin-syncml
 SUBDIR+=	libsyncml
+SUBDIR+=	lirc
 SUBDIR+=	lrzsz
 SUBDIR+=	malsync
 SUBDIR+=	mgetty+sendfax
