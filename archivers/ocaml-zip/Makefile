@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2012/09/11 19:46:58 asau Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/08 15:21:18 jaapb Exp $
 #
 
 PKGNAME=	ocaml-zip-${VERSION}
 DISTNAME=	camlzip-${VERSION}
 VERSION=	1.04
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	archivers
 MASTER_SITES=	http://forge.ocamlcore.org/frs/download.php/328/
 LICENSE=	gnu-lgpl-v2.1

@@ -1,10 +1,10 @@
 $NetBSD$
 
---- intern/guardedalloc/BLO_sys_types.h.orig	2009-09-02 03:20:29.000000000 +1200
-+++ intern/guardedalloc/BLO_sys_types.h
-@@ -109,7 +109,7 @@ typedef unsigned long uintptr_t;
- #ifndef ntohl
+--- intern/guardedalloc/MEM_sys_types.h.orig	2012-10-09 18:34:13.000000000 +0000
++++ intern/guardedalloc/MEM_sys_types.h
+@@ -131,7 +131,7 @@ unsigned long __attribute__((__stdcall__
  #define ntohl(x) correctByteOrder(x)
+ #endif
  #endif
 -#elif defined (__FreeBSD__) || defined (__OpenBSD__) 
 +#elif defined (__FreeBSD__) || defined (__OpenBSD__) || defined (__NetBSD__)
