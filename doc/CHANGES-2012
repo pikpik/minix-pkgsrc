@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3714 2012/12/03 22:27:03 wiz Exp $
+$NetBSD: CHANGES-2012,v 1.3721 2012/12/04 15:05:07 prlw1 Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5465,6 +5465,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated devel/qtscriptgenerator to 0.2.0 [markd 2012-11-17]
 	Updated audio/amarok to 2.6.0 [markd 2012-11-17]
 	Updated print/hplip to 3.12.10a [schnoebe 2012-11-18]
+	Updated devel/tex-luatexbase to 0.31nb1 [dholland 2012-11-18]
 	Updated graphics/optipng to 0.7.4 [taca 2012-11-18]
 	Updated databases/phpmyadmin to 3.5.4 [tron 2012-11-18]
 	Updated x11/qt4-libs to 4.8.3nb5 [ryoon 2012-11-19]
@@ -5665,3 +5666,9 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated wm/pekwm to 0.1.16 [gls 2012-12-03]
 	Added multimedia/mp4v2 version 2.0.0 [wiz 2012-12-03]
 	Updated audio/easytag to 2.1.7nb5 [wiz 2012-12-03]
+	Updated mail/dovecot2 to 2.1.11 [tron 2012-12-04]
+	Updated mail/dovecot2 to 2.1.12 [adam 2012-12-04]
+	Added benchmarks/ramspeed version 2.6.0 [msaitoh 2012-12-04]
+	Updated mail/fml4 to 4.0.3.20040215nb3 [taca 2012-12-04]
+	Updated devel/py-gobject3 to 3.4.2 [prlw1 2012-12-04]
+	Added textproc/py-sphinx-theme-cloud version 1.5 [darcy 2012-12-04]

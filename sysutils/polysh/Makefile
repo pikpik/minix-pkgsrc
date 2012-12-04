@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/11/25 11:14:14 imil Exp $
 #
 
 DISTNAME=	polysh-0.4
@@ -10,8 +10,6 @@ MAINTAINER=	imil@NetBSD.org
 HOMEPAGE=	http://guichaz.free.fr/polysh/
 COMMENT=	Aggregate several remote shells into one
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

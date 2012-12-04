@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/11/21 00:00:51 dsainty Exp $
+# $NetBSD: Makefile,v 1.2 2012/11/21 00:13:25 dsainty Exp $
 #
 
 DISTNAME=	Data-AMF-0.09
@@ -13,8 +13,6 @@ LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-Any-Moose-[0-9]*:../../devel/p5-Any-Moose
 DEPENDS+=	p5-UNIVERSAL-require-[0-9]*:../../devel/p5-UNIVERSAL-require
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/06/14 07:45:21 sbd Exp $
+# $NetBSD: Makefile,v 1.7 2012/11/24 14:06:43 manu Exp $
 #
 
 DISTNAME=	SOGo-2.0.2a
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sogo.nu/
 COMMENT=	Groupware server supporting CalDAV, CardDAV and GroupDAV
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	yes
 USE_LANGUAGES=	c

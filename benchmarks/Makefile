@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.45 2011/12/07 00:23:09 jym Exp $
+# $NetBSD: Makefile,v 1.46 2012/07/02 17:45:49 asau Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -35,6 +35,7 @@ SUBDIR+=	phoronix-test-suite
 SUBDIR+=	pipebench
 SUBDIR+=	postal
 SUBDIR+=	postmark
+SUBDIR+=	ramspeed
 SUBDIR+=	randread
 SUBDIR+=	skampi
 SUBDIR+=	super_pi
