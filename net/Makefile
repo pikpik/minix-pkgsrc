@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.943 2012/11/29 09:40:41 ryoon Exp $
+# $NetBSD: Makefile,v 1.944 2012/11/30 22:35:20 wiz Exp $
 #
 
 COMMENT=	Networking tools
@@ -140,6 +140,7 @@ SUBDIR+=	freeradius2
 SUBDIR+=	ftplibpp
 SUBDIR+=	ftpproxy
 SUBDIR+=	gated
+SUBDIR+=	get-flash-videos
 SUBDIR+=	gethost
 SUBDIR+=	gift
 SUBDIR+=	gift-fasttrack
