@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2012/07/04 08:26:37 roy Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/23 17:18:17 asau Exp $
 #
 
-DISTNAME=		dnsmasq-2.62
+DISTNAME=		dnsmasq-2.64
 CATEGORIES=		net
 MASTER_SITES=		http://www.thekelleys.org.uk/dnsmasq/
 LICENSE=		gnu-gpl-v3

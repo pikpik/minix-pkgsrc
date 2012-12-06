@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2012/06/02 08:05:59 cheusov Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/31 11:17:00 asau Exp $
 #
 
 DISTNAME=	indent-2.2.9
@@ -22,10 +22,12 @@ MAKE_JOBS_SAFE=		no
 
 AUTO_MKDIRS=		yes
 
+.include "../../mk/bsd.prefs.mk"
+
 post-install:
-	${LN} -sf ${PREFIX}/bin/gindent ${DESTDIR}${PREFIX}/gnu/bin/indent
-	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gindent.1 ${DESTDIR}${PREFIX}/gnu/man/man1/indent.1
-	${LN} -sf ${PREFIX}/bin/gtexinfo2man ${DESTDIR}${PREFIX}/gnu/bin/texinfo2man
+	${LN} -sf ${PREFIX}/bin/gindent ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/indent
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gindent.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/indent.1
+	${LN} -sf ${PREFIX}/bin/gtexinfo2man ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/texinfo2man
 
 CONFIGURE_ARGS+=	--program-prefix=g
 

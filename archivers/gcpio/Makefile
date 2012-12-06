@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2012/09/11 19:46:54 asau Exp $
+# $NetBSD: Makefile,v 1.44 2012/11/20 17:07:05 jperkin Exp $
 #
 
 DISTNAME=	cpio-2.6
@@ -37,10 +37,12 @@ PLIST_VARS+=	rmt
 PLIST.rmt=	yes
 .endif
 
+.include "../../mk/bsd.prefs.mk"
+
 post-install:
-	${LN} -sf ${PREFIX}/bin/gcpio ${DESTDIR}${PREFIX}/gnu/bin/cpio
-	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gcpio.1 ${DESTDIR}${PREFIX}/gnu/man/man1/cpio.1
-	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gmt.1 ${DESTDIR}${PREFIX}/gnu/man/man1/mt.1
+	${LN} -sf ${PREFIX}/bin/gcpio ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/cpio
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gcpio.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/cpio.1
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gmt.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/mt.1
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

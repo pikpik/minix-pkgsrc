@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2012/06/15 11:32:57 sbd Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/03 21:57:36 wiz Exp $
 
 .include "../../sysutils/coreutils/Makefile.common"
 
@@ -46,10 +46,10 @@ post-install:
 .for f in ${PROGS}
 	set -e; \
 	if ${TEST} -f ${DESTDIR}${PREFIX}/bin/g${f:Q}; then \
-	  ${LN} -sf ${PREFIX}/bin/g${f:Q} ${DESTDIR}${PREFIX}/gnu/bin/${f:Q}; \
+	  ${LN} -sf ${PREFIX}/bin/g${f:Q} ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/${f:Q}; \
 	fi; \
 	if ${TEST} -f ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/g${f:Q}.1; then \
-	  ${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/g${f:Q}.1 ${DESTDIR}${PREFIX}/gnu/man/man1/${f:Q}.1; \
+	  ${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/g${f:Q}.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/${f:Q}.1; \
 	fi
 .endfor
 

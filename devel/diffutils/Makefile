@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/06/02 08:18:35 cheusov Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/31 11:16:53 asau Exp $
 #
 
 DISTNAME=		diffutils-3.2
@@ -28,8 +28,8 @@ AUTO_MKDIRS=		yes
 
 post-install:
 .for f in cmp diff diff3 sdiff
-	${LN} -sf ${PREFIX}/bin/g${f} ${DESTDIR}${PREFIX}/gnu/bin/${f}
-	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/g${f}.1 ${DESTDIR}${PREFIX}/gnu/man/man1/${f}.1
+	${LN} -sf ${PREFIX}/bin/g${f} ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/${f}
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/g${f}.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/${f}.1
 .endfor
 
 CONFIGURE_ARGS+=	--program-prefix=g
