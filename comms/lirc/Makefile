@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/12/02 01:21:50 cheusov Exp $
 #
 
 DISTNAME=	lirc-0.9.0
+PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lirc/}
 EXTRACT_SUFX=	.tar.bz2
@@ -37,4 +38,5 @@ PKG_FAIL_REASON=	"lirc is not available for this platform"
 
 .include "options.mk"
 
+.include "../../devel/libusb/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
