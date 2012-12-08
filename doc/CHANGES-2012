@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3753 2012/12/08 12:14:00 wen Exp $
+$NetBSD: CHANGES-2012,v 1.3757 2012/12/08 19:00:37 asau Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5776,3 +5776,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated converters/p5-Unicode-Collate to 0.95 [wen 2012-12-08]
 	Updated devel/p5-Log-Dispatch to 2.33 [wen 2012-12-08]
 	Updated lang/ecl to 12.12.1 [asau 2012-12-08]
+	Added www/libmrss version 0.19.2nb1 [ryoon 2012-12-08]
+	Added net/podcastdl version 0.3.0 [ryoon 2012-12-08]
+	Updated math/fricas to 1.1.8 [asau 2012-12-08]
+	Updated fonts/gbdfed to 1.6 [shattered 2012-12-08]

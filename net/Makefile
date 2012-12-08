@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.944 2012/11/30 22:35:20 wiz Exp $
+# $NetBSD: Makefile,v 1.945 2012/12/05 02:21:46 dsainty Exp $
 #
 
 COMMENT=	Networking tools
@@ -482,6 +482,7 @@ SUBDIR+=	php-yaz
 SUBDIR+=	pim6dd
 SUBDIR+=	pim6sd
 SUBDIR+=	pload
+SUBDIR+=	podcastdl
 SUBDIR+=	poink
 SUBDIR+=	polsms
 SUBDIR+=	poptop
