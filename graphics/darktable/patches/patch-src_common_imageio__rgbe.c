@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-src_common_imageio__rgbe.c,v 1.1 2012/05/05 19:18:33 jakllsch Exp $
 
---- src/common/imageio_rgbe.c.orig	2012-04-27 20:25:52.000000000 +0000
+--- src/common/imageio_rgbe.c.orig	2012-11-23 23:23:21.000000000 +0000
 +++ src/common/imageio_rgbe.c
 @@ -189,7 +189,7 @@ int RGBE_ReadHeader(FILE *fp, int *width
      info->valid |= RGBE_VALID_PROGRAMTYPE;
