@@ -18,4 +18,4 @@ prevent modification of the underlying collection.
 libgee is written in Vala and can be used like any GObject-based C library.
 It's planned to provide bindings for further languages.
 
-This package contains the older 0.6 branch of the library.
+This package contains the 0.8 branch of the library.

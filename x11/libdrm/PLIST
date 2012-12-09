@@ -24,6 +24,7 @@ include/libdrm/radeon_surface.h
 include/libdrm/savage_drm.h
 include/libdrm/sis_drm.h
 include/libdrm/via_drm.h
+include/libdrm/vmwgfx_drm.h
 include/xf86drm.h
 include/xf86drmMode.h
 lib/libdrm.la
@@ -34,3 +35,6 @@ lib/pkgconfig/libdrm.pc
 lib/pkgconfig/libdrm_intel.pc
 lib/pkgconfig/libdrm_nouveau.pc
 lib/pkgconfig/libdrm_radeon.pc
+man/man3/drmAvailable.3
+man/man3/drmHandleEvent.3
+man/man3/drmModeGetResources.3

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1668 2012/11/11 21:19:00 jakllsch Exp $
+# $NetBSD: Makefile,v 1.1669 2012/11/29 09:40:41 ryoon Exp $
 #
 
 COMMENT=	Development utilities
@@ -345,6 +345,7 @@ SUBDIR+=	libftdi
 SUBDIR+=	libgail-gnome
 SUBDIR+=	libgcroots
 SUBDIR+=	libgee
+SUBDIR+=	libgee0.8
 SUBDIR+=	libgetopt
 SUBDIR+=	libglade
 SUBDIR+=	libglademm

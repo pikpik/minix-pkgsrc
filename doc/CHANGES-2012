@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3757 2012/12/08 19:00:37 asau Exp $
+$NetBSD: CHANGES-2012,v 1.3767 2012/12/08 23:53:22 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5780,3 +5780,18 @@ Changes to the packages collection and infrastructure in 2012:
 	Added net/podcastdl version 0.3.0 [ryoon 2012-12-08]
 	Updated math/fricas to 1.1.8 [asau 2012-12-08]
 	Updated fonts/gbdfed to 1.6 [shattered 2012-12-08]
+	Updated x11/xterm to 287 [wiz 2012-12-08]
+	Added graphics/openjpeg15 version 1.5.1 [adam 2012-12-08]
+	Updated graphics/openimageio to 1.1.2 [adam 2012-12-08]
+	Updated x11/libdrm to 2.4.40 [wiz 2012-12-08]
+	Added devel/libgee0.8 version 0.8.2 [wiz 2012-12-08]
+	Updated time/py-icalendar to 3.2 [wiz 2012-12-08]
+	Updated sysutils/cdrtools to 3.01alpha09 [wiz 2012-12-08]
+	Updated converters/libvisio to 0.0.22 [wiz 2012-12-08]
+	Updated devel/global to 6.2.5 [wiz 2012-12-08]
+	Updated devel/bison to 2.6.5 [wiz 2012-12-08]
+	Updated print/mupdf to 1.1nb1 [adam 2012-12-08]
+	Updated graphics/vigra to 1.9.0 [adam 2012-12-08]
+	Updated graphics/enblend-enfuse to 4.1 [adam 2012-12-08]
+	Updated devel/hdf5 to 1.8.10 [adam 2012-12-08]
+	Updated devel/hdf5-c++ to 1.8.10 [adam 2012-12-08]
