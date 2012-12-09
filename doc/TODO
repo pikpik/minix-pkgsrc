@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11707 2012/12/09 00:14:58 adam Exp $
+$NetBSD: TODO,v 1.11720 2012/12/09 17:35:03 ryoon Exp $
 
 Suggested new packages
 ======================
@@ -351,7 +351,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o RealPlayer-11
 	o SDL_gfx-2.0.24
 	o SOGo-2.0.3
-	o Sigil-0.6.2
 	o SmartEiffel-2.3
 	o TiffIO-130e
 	o YoSucker-81
@@ -416,7 +415,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o audacity-2.0
 	o autoconvert-0.3.16
 	o autogen-5.16.2
-	o automake-1.12.5
 	o avcheck-0.91
 	o avidemux-2.6
 	o avl-2.0.2a
@@ -433,7 +431,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o binutils-2.23.1
 	o bioperl-1.5.0
 	o bitlbee-3.0.6
-	o blender-2.64
 	o blur6ex-0.3.462
 	o bmon-2.1.0
 	o bomberclone-0.11.9
@@ -460,7 +457,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o cfengine-3.3.8 [pkg/47249]
 	o cfengine-3.4.0
 	o cfitsio-3.310
-	o check-0.9.9
 	o cheese-2.32.0 [GNOME 2.32]
 	o cheese-3.6.2
 	o chkrootkit-0.49
@@ -671,7 +667,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o goocanvas-2.0
 	o gossip-0.31
 	o gourmet-0.13.3
-	o gpac-0.5.0
 	o gpredict-1.3
 	o gpsdrive-2.11
 	o gpsim-0.26.1
@@ -794,13 +789,11 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o libcares-1.8.0
 	o libchamplain08-0.12.3
 	o libextractor-1.0.0
-	o libexttextcat-3.4.0
 	o libflash-0.4.13
 	o libfolks-0.8.0
 	o libgda-4.2.1 [GNOME 2.32]
 	o libgda-4.2.5
 	o libgdata-0.13.1
-	o libgee-0.8.2
 	o libgiigic-1.1.2
 	o libgnome-keyring-3.6.0
 	o libgnomedb-3.1.2
@@ -811,7 +804,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o libltdl-2.4.2
 	o libmcs-0.7.2
 	o libmemcached-1.0.14
-	o libmicrohttpd-0.9.23
 	o libmms-0.6.2
 	o libmilter-8.14.5
 	o libnasl-2.3.1
@@ -979,7 +971,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o pbzip2-1.1.6
 	o pcal-4.8
 	o pcmanfm-0.5.2 [pkg/42451]
-	o pcre-8.32
 	o pdmenu-1.2.87
 	o pen-0.17.3
 	o pessulus-2.30.3 [GNOME 2.28]
@@ -1004,7 +995,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o polkit-qt-0.103.0
 	o polsms-2.1.0
 	o poppass-4.0.14
-	o poppler-data-0.4.6
 	o poppy-4.01
 	o posh-0.5.5
 	o postal-0.72
@@ -1035,7 +1025,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o py-gobject-3.4.2
 	o py-httplib2-0.7.7
 	o py-moin-1.9.5
-	o py-pytz-2012h
 	o py-sip-4.14.1
 	o py-sybase-0.37
 	o py-sympy-0.7.2
@@ -1076,7 +1065,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o rtcw-1.41.3
 	o rtty-4.0 [at ftp://ftp.isc.org/isc/rtty/]
 	o ruby-1.8.7.370
-	o rudiments-0.38
+	o rudiments-0.39
 	o sabayon-2.30.1 [GNOME 2.30]
 	o sablecc-3.7
 	o samba-3.5.19
@@ -1152,7 +1141,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o system-tools-backends-2.10.1 [needs polkit>=1.0?|GNOME 2.30]
 	o systrace-1.6e
 	o t-prot-2.101
-	o t1utils-1.36
 	o tacacs-4.0.4.14
 	o tads-3.0.16
 	o taskjuggler-3.3.0
@@ -1206,7 +1194,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o ufoai-2.3.1
 	o unicap-0.9.8
 	o unicode-screensaver-0.4
-	o unison-2.40.102
 	o ups-nut-2.6.2
 	o userppp-030706
 	o utilisp-1.14
@@ -1320,7 +1307,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o xmbdfed-4.6
 	o xmcd-3.3.2
 	o xml2-0.5
-	o xmlstarlet-1.4.0
+	o xmlstarlet-1.4.1
 	o xmlto-2.0
 	o xmms-crossfade-0.3.14
 	o xmms-musepack-1.8.0 [http://dl.slik.org/musepack/xmms-musepack-1.8.0.tar.gz]
@@ -1354,7 +1341,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o zenicb-1.31 (needs merge with lots of local changes)
 	o zephyr-20070719
 	o zile-2.4.9
-	o zim-0.57
 	o zircon-1.18.256
 	o zoom-1.1.3
 	o zopeedit-0.8
