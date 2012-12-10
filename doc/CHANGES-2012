@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3783 2012/12/09 21:20:49 gls Exp $
+$NetBSD: CHANGES-2012,v 1.3790 2012/12/10 14:51:14 wen Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5854,3 +5854,10 @@ Changes to the packages collection and infrastructure in 2012:
 	Added www/py-django-tagging version 0.3.1 [adam 2012-12-09]
 	Added www/py-django-photologue version 2.4 [adam 2012-12-09]
 	Added comms/py-serial version 2.6 [tsarna 2012-12-09]
+	Added lang/python33 version 3.3.0 [tsarna 2012-12-09]
+	Updated fonts/sourcecodepro-fonts to 1.013 [ryoon 2012-12-10]
+	Updated graphics/sane-backends to 1.0.23 [ryoon 2012-12-10]
+	Updated devel/p5-Clone to 0.34 [wen 2012-12-10]
+	Updated math/p5-Math-Prime-Util to 0.15 [wen 2012-12-10]
+	Updated devel/p5-Class-XSAccessor to 1.16 [wen 2012-12-10]
+	Updated devel/p5-Class-Accessor-Grouped to 0.10009 [wen 2012-12-10]

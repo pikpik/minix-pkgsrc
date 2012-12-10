@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2012/09/24 23:10:59 wiz Exp $
-
-PKGREVISION=	3
+# $NetBSD: Makefile,v 1.58 2012/10/06 14:11:20 asau Exp $
 
 .include "Makefile.common"
 COMMENT=	API for access to scanners, digital cameras, frame grabbers etc.
