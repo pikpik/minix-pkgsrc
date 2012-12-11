@@ -1,6 +1,6 @@
 #!@RCD_SCRIPTS_SHELL@
 #
-# $NetBSD: asterisk.sh,v 1.3 2008/07/10 08:23:20 sborrill Exp $
+# $NetBSD: asterisk.sh,v 1.1.1.1 2012/01/15 18:36:21 jnemeth Exp $
 #
 # PROVIDE: asterisk
 # REQUIRE: DAEMON
@@ -18,11 +18,25 @@ fi
 name="asterisk"
 rcvar=$name
 command="@PREFIX@/sbin/asterisk"
+pidfile=@ASTVARRUNDIR@/${name}.pid
 required_files="@PKG_SYSCONFDIR@/asterisk.conf"
 extra_commands="reload"
+start_precmd=asterisk_prestart
 
-stop_cmd="$command -r -x 'stop gracefully' >/dev/null"
-reload_cmd="$command -r -x 'reload' >/dev/null"
+auser="@ASTERISK_USER@"
+agroup="@ASTERISK_GROUP@"
+command_args="-U $auser -G $agroup -n"
+
+asterisk_prestart() {
+	if test ! -d @ASTVARRUNDIR@; then
+		mkdir @ASTVARRUNDIR@
+	fi
+	chown $auser:$agroup @ASTVARRUNDIR@
+	chmod 0755 @ASTVARRUNDIR@
+}
+
+stop_cmd="$command -nr -x 'core stop gracefully' >/dev/null"
+reload_cmd="$command -nr -x 'core reload' >/dev/null"
 asterisk_nice="-20"
 
 load_rc_config $name
