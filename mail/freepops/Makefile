@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.18 2012/06/23 22:07:50 dholland Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/08 12:19:12 asau Exp $
 #
 
-DISTNAME=		freepops-0.2.8
-PKGREVISION=		2
+DISTNAME=		freepops-0.2.9
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=freepops/}
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://www.freepops.org/
 COMMENT=		POP3 gateway to AOL, Gmail, Hotmail, Juno, Yahoo, etc.
+LICENSE=		gnu-gpl-v2
 
 MAKE_JOBS_SAFE=		no
 

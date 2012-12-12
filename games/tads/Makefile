@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2010/05/29 14:31:23 dillo Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/06 11:54:56 asau Exp $
 #
 
 DISTNAME=	tads23-unix
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.tads.org/t3dl/
 
-MAINTAINER=	dillo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tads.org/
 COMMENT=	TADS compiler and interpreter
 

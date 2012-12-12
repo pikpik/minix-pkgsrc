@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2012/09/16 15:30:45 taca Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/08 09:57:24 asau Exp $
 
-DISTNAME=	howm-1.3.9.1
-PKGREVISION=	1
+DISTNAME=	howm-1.4.0
 CATEGORIES=	misc
 MASTER_SITES=	http://howm.sourceforge.jp/a/
 

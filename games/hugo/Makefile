@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/03/04 06:59:04 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/06 11:54:43 asau Exp $
 #
 
 DISTNAME=	hugov31_unix_source
@@ -8,7 +8,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_IFARCHIVE:=programming/hugo/source/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} hugolib.zip
 
-MAINTAINER=	dillo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.generalcoffee.com/hugo.html
 COMMENT=	Interactive fiction design system and interpreter
 

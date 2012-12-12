@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/09/02 18:35:19 dholland Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/03 12:55:18 asau Exp $
 
 STELLA_VERSION=	3.7.2
 DISTNAME=	stella-${STELLA_VERSION}-src
@@ -6,7 +6,7 @@ PKGNAME=	stella-${STELLA_VERSION}
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=stella/}
 
-MAINTAINER=	dillo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://stella.sourceforge.net/
 COMMENT=	Multi-platform Atari 2600 VCS emulator
 LICENSE=	gnu-gpl-v2

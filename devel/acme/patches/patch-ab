@@ -1,13 +1,13 @@
 $NetBSD$
 
---- platform/std.c.orig	Thu Mar 22 15:17:38 2001
-+++ platform/std.c
-@@ -27,7 +27,7 @@
-     psLibPath = (char *) ALLOC_PROCESS(c + 1);
-     strcpy(psLibPath, pPathname);
-   } else {
--    psLibPath = NULL;
-+    psLibPath = DEFAULT_ACME_LIB "/";
-   }
- }
+--- src/_std.c.orig	2006-03-26 20:37:02.000000000 +0300
++++ src/_std.c	2011-03-17 10:27:51.000000000 +0200
+@@ -12,7 +12,7 @@
  
+ 
+ // Variables
+-char	*AnyOS_lib_prefix	= NULL;	// header string of library tree
++char	*AnyOS_lib_prefix	= DEFAULT_ACME_LIB;	// header string of library tree
+ 
+ 
+ // Functions

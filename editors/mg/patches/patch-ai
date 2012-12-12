@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ai,v 1.1 2009/11/26 18:10:14 joerg Exp $
 
---- configure.orig	2009-11-26 19:05:06.000000000 +0100
+--- configure.orig	2011-09-05 18:36:16.000000000 +0000
 +++ configure
 @@ -163,32 +163,6 @@ else
      echo 'Fails.'
