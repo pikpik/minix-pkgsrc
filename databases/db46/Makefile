@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2012/08/29 08:17:50 dholland Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/02 21:25:16 asau Exp $
 
 DISTNAME=	db-4.6.21
 PKGNAME=	${DISTNAME:S/db/db46/}
@@ -9,6 +9,7 @@ MASTER_SITES=	http://download.oracle.com/berkeley-db/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.oracle.com/database/berkeley-db/db/index.html
 COMMENT=	Berkeley DB version 4 from Oracle
+LICENSE=	sleepycat-license # minus ASM stanza
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
