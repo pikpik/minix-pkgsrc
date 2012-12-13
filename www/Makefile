@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.901 2012/12/08 16:54:49 ryoon Exp $
+# $NetBSD: Makefile,v 1.902 2012/12/09 20:37:40 adam Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -517,6 +517,7 @@ SUBDIR+=	php-eaccelerator
 SUBDIR+=	php-fpm
 SUBDIR+=	php-owncloud
 SUBDIR+=	php-phrasea2
+SUBDIR+=	php-soycms
 SUBDIR+=	php-tidy
 SUBDIR+=	php-tiki6
 SUBDIR+=	php-uploadprogress
