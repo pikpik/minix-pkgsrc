@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2012/11/23 17:10:24 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2012/12/08 23:20:37 wiz Exp $
 #
 
-DISTNAME=	libgee-0.6.6.1
+DISTNAME=	libgee-0.6.7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgee/0.6/}
 EXTRACT_SUFX=	.tar.xz

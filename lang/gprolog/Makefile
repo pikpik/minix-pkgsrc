@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.15 2012/05/20 20:44:35 dholland Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/02 20:11:42 asau Exp $
 
-DISTNAME=		gprolog-1.3.1
+DISTNAME=		gprolog-1.4.2
 CATEGORIES=		lang
 MASTER_SITES=		${HOMEPAGE}
 
 MAINTAINER=		brook@nmsu.edu
 HOMEPAGE=		http://www.gprolog.org/
 COMMENT=		GNU prolog compiler and interpreter
+LICENSE=		gnu-lgpl-v3 OR gnu-gpl-v2
 
 GNU_CONFIGURE=		yes
 CONFIGURE_DIRS=		src

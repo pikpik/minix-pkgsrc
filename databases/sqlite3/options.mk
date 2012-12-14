@@ -1,12 +1,13 @@
-# $NetBSD: options.mk,v 1.3 2010/12/17 00:37:34 agc Exp $
+# $NetBSD: options.mk,v 1.4 2011/05/17 11:23:53 adam Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.sqlite3
 PKG_SUPPORTED_OPTIONS=		fts icu rtree
+PKG_SUGGESTED_OPTIONS=		fts # enabled in NetBSD builtin version
 
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mfts)
-CFLAGS+=	-DSQLITE_ENABLE_FTS3=1 -DSQLITE_ENABLE_FTS3_PARENTHESIS=1
+CFLAGS+=	-DSQLITE_ENABLE_FTS4=1 -DSQLITE_ENABLE_FTS3_PARENTHESIS=1
 .endif
 
 .if !empty(PKG_OPTIONS:Micu)
