@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3850 2012/12/14 18:54:19 manu Exp $
+$NetBSD: CHANGES-2012,v 1.3854 2012/12/15 00:31:23 pettai Exp $
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5927,3 +5927,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated devel/libpeas to 1.6.2 [drochner 2012-12-14]
 	Updated devel/libgee to 0.6.7 [drochner 2012-12-14]
 	Updated graphics/darktable to 1.1.1 [drochner 2012-12-14]
+	Updated pkgtools/pkgin to 0.6.3.1 [imil 2012-12-14]
+	Updated security/pcsc-lite to 1.7.4 [pettai 2012-12-14]
+	Updated security/ccid to 1.4.5 [pettai 2012-12-15]
+	Updated security/pcsc-tools to 1.4.21 [pettai 2012-12-15]

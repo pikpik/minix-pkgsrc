@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2012/11/30 14:44:34 gdt Exp $
+# $NetBSD: Makefile,v 1.13 2012/12/03 20:14:14 gdt Exp $
 
 OPENSC_PKG_VERSION=	0.12.2
 DISTNAME=		opensc-${OPENSC_PKG_VERSION}
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.opensc-project.org/files/opensc/
 
