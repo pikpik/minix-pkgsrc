@@ -1,8 +1,16 @@
 $NetBSD$
 
---- src/Helpers.cpp.orig	2011-09-10 19:51:46.000000000 +0200
-+++ src/Helpers.cpp	2012-01-02 11:31:20.777472032 +0100
-@@ -914,7 +914,7 @@ QString getSystemInfo() //ttt2 perhaps s
+--- src/Helpers.cpp.orig	2011-09-10 17:51:46.000000000 +0000
++++ src/Helpers.cpp
+@@ -20,6 +20,7 @@
+  ***************************************************************************/
+ 
+ 
++#include  <unistd.h>
+ #include  <iostream>
+ #include  "fstream_unicode.h"
+ #include  <sstream>
+@@ -914,7 +915,7 @@ QString getSystemInfo() //ttt2 perhaps s
      filters << "*-release" << "*_version";
      dir.setNameFilters(filters);
      QStringList lFiles (dir.entryList(QDir::Files));

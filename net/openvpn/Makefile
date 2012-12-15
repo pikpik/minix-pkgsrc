@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.45 2012/03/06 17:39:00 ryoon Exp $
+# $NetBSD: Makefile,v 1.46 2012/10/23 17:18:44 asau Exp $
 
 DISTNAME=	openvpn-2.2.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://swupdate.openvpn.net/community/releases/
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1 2012/10/21 04:22:26 wen Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/31 11:18:20 asau Exp $
 
 DISTNAME=	IO-HTML-0.04
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=authors/id/C/CJ/CJM/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IO/}
 
 MAINTAINER=	wen@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/IO-HTML/

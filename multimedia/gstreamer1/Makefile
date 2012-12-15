@@ -3,7 +3,7 @@
 
 DISTNAME=	gstreamer-1.0.3
 PKGNAME=	${DISTNAME:S/gstreamer/gstreamer1/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	multimedia
 MASTER_SITES=	http://gstreamer.freedesktop.org/src/gstreamer/
 EXTRACT_SUFX=	.tar.xz
@@ -15,9 +15,10 @@ LICENSE=	gnu-lgpl-v2
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		bison gmake perl pkg-config
+USE_TOOLS+=		bison flex gmake perl pkg-config
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++
+FLEX_REQD=		2.5.31
 
 .include "options.mk"
 
@@ -27,6 +28,5 @@ PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer-net.pc.in
 PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer.pc.in
 PKGCONFIG_OVERRIDE+=	pkgconfig/gstreamer-base.pc.in
 
-.include "../../devel/flex/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
