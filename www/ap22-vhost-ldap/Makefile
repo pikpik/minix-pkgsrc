@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2011/12/02 07:13:50 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/28 06:30:09 asau Exp $
 
 MVL_VERSION=		1.2.0
 DISTNAME=		mod-vhost-ldap_${MVL_VERSION}.orig
 PKGNAME=		${APACHE_PKG_PREFIX}-vhost-ldap-${MVL_VERSION}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		www databases
 MASTER_SITES=		${MASTER_SITE_DEBIAN:=pool/main/m/mod-vhost-ldap/}
 

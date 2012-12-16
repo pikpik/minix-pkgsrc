@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2012/09/11 20:36:18 asau Exp $
+# $NetBSD: Makefile,v 1.50 2012/10/03 21:57:14 wiz Exp $
 #
 
 DISTNAME=		sge-8.0.0d
@@ -78,12 +78,21 @@ SGE_ARCH=		darwin
 SGE_BUILDARCH=		DARWIN
 .elif ${OPSYS} == "Linux"
 AIMK+=			-no-dump
+.  if ${MACHINE_ARCH} == "i386"
 SGE_ARCH=		lx-x86
 SGE_BUILDARCH=		LINUX86
+.  else
+SGE_ARCH=		lx-amd64
+SGE_BUILDARCH=		LINUXAMD64
+.  endif
 .else
 PKG_FAIL_REASON+=	"SGE_ARCH and SGE_BUILDARCH need to be configured for your OS"
 .endif
 SGE_BUILDARCH?=		${SGE_BUILDARCH_cmd:sh}
+
+JAVA_ARGS=		-no-java -no-jni
+#JAVA_ARGS=		-no-gui-inst -no-herd
+#.include "../../mk/java-vm.mk"
 
 # Some hacks to get it properly linked:
 MAKE_ENV+=	SGE_ARCH=${SGE_ARCH} SGE_ROOT=${SGE_ROOT}
@@ -127,11 +136,11 @@ do-configure:
 .endfor
 
 do-build:
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni -no-hwloc -only-depend
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc -only-depend
 	cd ${WRKSRC}/source && ${SETENV} ${MAKE_ENV} ./scripts/zerodepend
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni -no-hwloc -no-qmake -no-qtcsh depend
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni -no-hwloc
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni -no-hwloc -man
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc -no-qmake -no-qtcsh depend
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc -man
 
 CHECK_INTERPRETER_SKIP=	sge/bin/process-scheduler-log \
 			sge/bin/qsched \

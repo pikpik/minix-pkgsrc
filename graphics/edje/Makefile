@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/12/05 17:35:03 joerg Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/06 14:10:46 asau Exp $
 #
 
 DISTNAME=	edje-1.1.0
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.enlightenment.org/releases/
 EXTRACT_SUFX=	.tar.bz2

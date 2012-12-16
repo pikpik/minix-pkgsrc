@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.136 2012/05/16 14:49:55 taca Exp $
+# $NetBSD: Makefile,v 1.137 2012/10/23 18:17:00 asau Exp $
 #
 
 DISTNAME=		sudo-1.7.9p1
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.sudo.ws/dist/ \
 			ftp://ftp.sudo.ws/pub/sudo/ \

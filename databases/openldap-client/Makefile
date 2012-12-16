@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2012/03/13 19:57:11 adam Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/02 21:25:23 asau Exp $
 
 PKGNAME=	${DISTNAME:S/-/-client-/}
+PKGREVISION=	1
 COMMENT=	Lightweight Directory Access Protocol libraries and client programs
 
 CONFLICTS+=		openldap<2.3.23nb1

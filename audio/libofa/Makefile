@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/08/06 19:43:21 gls Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/12 00:24:43 asau Exp $
 #
 
 DISTNAME=		libofa-0.9.3
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		audio
 MASTER_SITES=		http://distfiles.aydogan.net/audio/ \
 					http://musicip-libofa.googlecode.com/files/

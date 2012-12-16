@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.66 2012/09/15 10:05:38 obache Exp $
+# $NetBSD: Makefile,v 1.67 2012/10/08 09:57:26 asau Exp $
 
 DISTNAME=	kdeartwork-${_KDE_VERSION}
-PKGREVISION=	16
+PKGREVISION=	17
 CATEGORIES=	misc
 COMMENT=	Artwork for the KDE integrated X11 desktop
 

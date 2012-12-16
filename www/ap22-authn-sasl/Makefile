@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/02/20 14:58:46 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/28 06:30:08 asau Exp $
 
 DISTNAME=	mod_authn_sasl-${DISTVERS}
 #PKGREVISION=	1
 PKGNAME=	${APACHE_PKG_PREFIX}-authn-sasl-${DISTVERS}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mod-authn-sasl/}
 EXTRACT_SUFX=	.tar.bz2

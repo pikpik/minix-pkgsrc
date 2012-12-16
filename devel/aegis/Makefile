@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2012/10/03 21:54:27 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/31 11:16:34 asau Exp $
 #
 
 DISTNAME=	aegis-4.24.2
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel scm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aegis/}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2012/10/28 06:30:24 asau Exp $
+# $NetBSD: Makefile,v 1.35 2012/11/04 00:00:21 dholland Exp $
 #
 
 DISTNAME=	nspluginwrapper-1.2.2
-PKGREVISION=	16
+PKGREVISION=	17
 CATEGORIES=	www
 MASTER_SITES=	http://gwenole.beauchesne.info/projects/nspluginwrapper/files/
 EXTRACT_SUFX=	.tar.bz2
