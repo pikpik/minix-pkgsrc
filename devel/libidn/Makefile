@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.81 2012/10/03 21:54:32 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/31 11:17:16 asau Exp $
 
-DISTNAME=	libidn-1.25
-PKGREVISION=	1
+DISTNAME=	libidn-1.26
 CATEGORIES=	devel
 MASTER_SITES=	ftp://alpha.gnu.org/pub/gnu/libidn/ \
 		http://ftp.gnu.org/gnu/libidn/

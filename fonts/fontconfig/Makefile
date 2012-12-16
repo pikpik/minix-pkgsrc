@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.76 2012/07/31 18:12:28 drochner Exp $
+# $NetBSD: Makefile,v 1.77 2012/10/03 18:28:22 asau Exp $
 
-DISTNAME=	fontconfig-2.10.1
+DISTNAME=	fontconfig-2.10.2
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.fontconfig.org/release/
 
