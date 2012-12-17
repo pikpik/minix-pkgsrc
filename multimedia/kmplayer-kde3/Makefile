@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/10/03 21:56:50 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 09:21:05 asau Exp $
 #
 
 DISTNAME=	kmplayer-0.10.0c
@@ -7,7 +7,7 @@ CATEGORIES=	multimedia kde
 MASTER_SITES=	http://kmplayer.kde.org/pkgs/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	markd@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kmplayer.kde.org/
 COMMENT=	KDE frontend to mplayer
 

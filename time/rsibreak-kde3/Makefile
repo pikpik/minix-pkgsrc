@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2012/10/03 21:58:24 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/08 13:04:29 asau Exp $
 
 DISTNAME=		rsibreak-0.8.0
 PKGNAME=		rsibreak-0.8.0
@@ -7,7 +7,7 @@ CATEGORIES=		time kde
 MASTER_SITES=		http://www.rsibreak.org/files/
 EXTRACT_SUFX=           .tar.bz2
 
-MAINTAINER=		markd@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.rsibreak.org/
 COMMENT=		RSI management tool
 

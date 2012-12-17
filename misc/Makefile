@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.383 2012/07/15 02:35:21 dholland Exp $
+# $NetBSD: Makefile,v 1.385 2012/12/17 11:57:04 wiz Exp $
 #
 
 COMMENT=	Miscellaneous utilities
@@ -222,6 +222,7 @@ SUBDIR+=	ppower
 SUBDIR+=	pty-redir
 SUBDIR+=	py-anita
 SUBDIR+=	py-anki
+SUBDIR+=	py-anki2
 SUBDIR+=	py-carddav
 SUBDIR+=	py-libanki
 SUBDIR+=	qbrew
@@ -246,6 +247,7 @@ SUBDIR+=	ruby-progressbar
 SUBDIR+=	ruby-sprockets
 SUBDIR+=	ruby-sprockets20
 SUBDIR+=	ruby-sprockets21
+SUBDIR+=	ruby-sprockets22
 SUBDIR+=	ruby-transaction-simple
 SUBDIR+=	rubygems
 SUBDIR+=	rump

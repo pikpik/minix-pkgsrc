@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.902 2012/12/09 20:37:40 adam Exp $
+# $NetBSD: Makefile,v 1.905 2012/12/17 15:26:38 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -117,6 +117,7 @@ SUBDIR+=	curl
 SUBDIR+=	cvsweb
 SUBDIR+=	dansguardian
 SUBDIR+=	davical
+SUBDIR+=	deforaos-surfer
 SUBDIR+=	dillo
 SUBDIR+=	dojo
 SUBDIR+=	drivel
@@ -592,8 +593,7 @@ SUBDIR+=	ruby-httpclient
 SUBDIR+=	ruby-innate
 SUBDIR+=	ruby-jekyll
 SUBDIR+=	ruby-journey
-SUBDIR+=	ruby-jquery-rails10
-SUBDIR+=	ruby-jquery-rails20
+SUBDIR+=	ruby-jquery-rails
 SUBDIR+=	ruby-jsmin
 SUBDIR+=	ruby-liquid
 SUBDIR+=	ruby-mechanize

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.557 2012/12/06 08:06:27 apb Exp $
+# $NetBSD: Makefile,v 1.558 2012/12/12 15:26:34 wiz Exp $
 #
 
 COMMENT=	System utilities
@@ -73,6 +73,7 @@ SUBDIR+=	dc-tools
 SUBDIR+=	dd_rescue
 SUBDIR+=	dd_rhelp
 SUBDIR+=	ddrescue
+SUBDIR+=	deforaos-browser
 SUBDIR+=	depot
 SUBDIR+=	desktop-file-utils
 SUBDIR+=	detox

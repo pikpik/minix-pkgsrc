@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1670 2012/12/08 23:20:50 wiz Exp $
+# $NetBSD: Makefile,v 1.1673 2012/12/17 01:10:06 khorben Exp $
 #
 
 COMMENT=	Development utilities
@@ -154,6 +154,7 @@ SUBDIR+=	darts
 SUBDIR+=	dconf
 SUBDIR+=	dconf-editor
 SUBDIR+=	ddd
+SUBDIR+=	deforaos-libsystem
 SUBDIR+=	dejagnu
 SUBDIR+=	delta
 SUBDIR+=	dev86
@@ -1340,6 +1341,7 @@ SUBDIR+=	py-hgtools
 SUBDIR+=	py-idle
 SUBDIR+=	py-ipython
 SUBDIR+=	py-ipython012
+SUBDIR+=	py-ipython013
 SUBDIR+=	py-jersey
 SUBDIR+=	py-kjbuckets
 SUBDIR+=	py-kqueue
@@ -1546,6 +1548,7 @@ SUBDIR+=	silc-toolkit
 SUBDIR+=	slib
 SUBDIR+=	sml-mode
 SUBDIR+=	snappy
+SUBDIR+=	sofia-sip
 SUBDIR+=	sparse
 SUBDIR+=	sparsehash
 SUBDIR+=	spiff
