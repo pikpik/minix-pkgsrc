@@ -1,4 +1,8 @@
-$NetBSD: CHANGES-2012,v 1.3968 2012/12/17 16:53:57 taca Exp $
+$NetBSD: CHANGES-2012,v 1.3973 2012/12/17 21:48:00 asau Exp $
+
+# PLEASE NOTE THAT THE PKGSRC REPOSITORY IS FROZEN FOR INFRASTRUCTURE
+# CHANGES, CHANGES TO NON-LEAF PACKAGES, and FOR NEW PACKAGES.
+# Mon Dec 17 23:59:40 UTC 2012
 
 Changes to the packages collection and infrastructure in 2012:
 
@@ -5928,6 +5932,8 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated devel/libgee to 0.6.7 [drochner 2012-12-14]
 	Updated graphics/darktable to 1.1.1 [drochner 2012-12-14]
 	Updated pkgtools/pkgin to 0.6.3.1 [imil 2012-12-14]
+	Updated x11/xlockmore to 5.41nb2 [is 2012-12-14]
+	Updated x11/xlockmore-lite to 5.41nb2 [is 2012-12-14]
 	Updated security/pcsc-lite to 1.7.4 [pettai 2012-12-14]
 	Updated security/ccid to 1.4.5 [pettai 2012-12-15]
 	Updated security/pcsc-tools to 1.4.21 [pettai 2012-12-15]
@@ -5946,6 +5952,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated net/ns to 2.35 [markd 2012-12-15]
 	Updated net/nam to 1.15 [markd 2012-12-15]
 	Updated mail/getmail to 4.36.0 [schmonz 2012-12-15]
+	Updated x11/modular-xorg-server to 1.6.5nb14 [is 2012-10-15]
 	Updated security/cyrus-sasl to 2.1.26 [obache 2012-12-16]
 	Updated security/cy2-anonymous to 2.1.26 [obache 2012-12-16]
 	Updated security/cy2-crammd5 to 2.1.26 [obache 2012-12-16]
@@ -6084,3 +6091,6 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated www/thin to 1.5.0 [taca 2012-12-17]
 	Updated devel/ruby-rake to 10.0.3 [taca 2012-12-17]
 	Updated net/mikutter to 0.2.0.1089 [tsutsui 2012-12-17]
+	Updated math/maxima to 5.29.1 [asau 2012-12-17]
+	Updated lang/abcl to 1.1.0 [asau 2012-12-17]
+	mk/bsd.pkg.mk: freeze started for pkgsrc-2012Q4 branch [agc 2012-12-17]
