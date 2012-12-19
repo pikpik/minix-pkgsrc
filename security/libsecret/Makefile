@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/11/30 15:49:47 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/12/12 16:04:16 ryoon Exp $
 #
 
 DISTNAME=	libsecret-0.12
@@ -15,7 +15,7 @@ BUILD_DEPENDS+=	libxslt-[0-9]*:../../textproc/libxslt
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	gmake intltool pkg-config
+USE_TOOLS+=	gmake intltool pkg-config msgfmt
 
 PKGCONFIG_OVERRIDE+=	libsecret/libsecret-unstable.pc.in
 PKGCONFIG_OVERRIDE+=	libsecret/libsecret.pc.in

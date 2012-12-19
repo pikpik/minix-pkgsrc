@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.29 2012/10/23 18:16:40 asau Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/30 14:35:37 wen Exp $
 
-DISTNAME=		Crypt-CBC-2.31
+DISTNAME=		Crypt-CBC-2.32
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5cbc
 CATEGORIES=		security perl5
