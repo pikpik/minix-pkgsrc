@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2007/06/06 11:05:21 markd Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/08 13:45:44 asau Exp $
 
 DISTNAME=	poster-20060221
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.kde.org/pub/kde/printing/
 EXTRACT_SUFX=	.tar.bz2

@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3984 2012/12/19 12:33:31 is Exp $
+$NetBSD: CHANGES-2012,v 1.3987 2012/12/20 12:37:31 gdt Exp $
 
 # PLEASE NOTE THAT THE PKGSRC REPOSITORY IS FROZEN FOR INFRASTRUCTURE
 # CHANGES, CHANGES TO NON-LEAF PACKAGES, and FOR NEW PACKAGES.
@@ -6038,7 +6038,7 @@ Changes to the packages collection and infrastructure in 2012:
 	Added editors/deforaos-editor version 0.2.1 [khorben 2012-12-17]
 	Added www/deforaos-surfer version 0.2.6 [khorben 2012-12-17]
 	Added print/deforaos-pdfviewer version 0.0.1 [khorben 2012-12-17]
-	Added todo/deforaos-todo version 0.1.2 [khorben 2012-12-17]
+	Added time/deforaos-todo version 0.1.2 [khorben 2012-12-17]
 	Added meta-pkgs/deforaos-desktop version 0.0.1 [khorben 2012-12-17]
 	Updated math/R to 2.15.1 [wen 2012-12-17]
 	Updated graphics/py-matplotlib to 1.2.0 [drochner 2012-12-17]
@@ -6105,4 +6105,6 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated devel/p5-Proc-Simple to 1.31 [wen 2012-12-19]
 	Updated net/p5-Geo-IPfree to 1.122880 [wen 2012-12-19]
 	Updated sysutils/xentools41 to 4.1.3nb4 [is 2012-12-19]
-	Removed devel/guile16-gtk successor devel/guile16-gtk [gdt 2012-12-20]
+	Removed devel/guile16-gtk successor devel/guile-gtk [gdt 2012-12-20]
+	Updated www/drupal7 to 7.18 [taca 2012-12-20]
+	Updated www/drupal6 to 6.27 [taca 2012-12-20]

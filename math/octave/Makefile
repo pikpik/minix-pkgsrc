@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.105 2012/10/27 13:01:35 asau Exp $
+# $NetBSD: Makefile,v 1.106 2012/12/16 01:52:23 obache Exp $
 
 DISTNAME=	octave-${OCTAVE_VER}
 PKGREVISION=	3
@@ -35,6 +35,8 @@ USE_LANGUAGES=		c c++ fortran77
 CONFIGURE_ARGS+=	--enable-dl
 CONFIGURE_ARGS+=	--enable-static
 CONFIGURE_ARGS+=	--enable-shared
+
+CONFIGURE_ARGS+=	--without-opengl
 
 .include "options.mk"
 
