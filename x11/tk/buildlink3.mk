@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.27 2012/08/21 21:32:34 marino Exp $
+# $NetBSD: buildlink3.mk,v 1.28 2012/12/19 14:58:45 wiz Exp $
 
 BUILDLINK_TREE+=	tk
 
@@ -37,3 +37,4 @@ pkgbase := tk
 .include "../../x11/libX11/buildlink3.mk"
 .endif # TK_BUILDLINK3_MK
 
+BUILDLINK_TREE+=	-tk

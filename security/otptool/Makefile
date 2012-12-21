@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2012/11/10 22:13:47 pettai Exp $
+# $NetBSD: Makefile,v 1.2 2012/12/16 01:52:33 obache Exp $
 
 DISTNAME=	mod_authn_otp-${DISTVERS}
 PKGNAME=	otptool-${DISTVERS}
@@ -12,6 +12,8 @@ HOMEPAGE=	http://mod-authn-otp.googlecode.com/
 COMMENT=	One-Time Password command line utility
 
 PKG_APACHE_ACCEPTED=	apache22
+
+USE_LIBTOOL=	yes
 
 .include "../../mk/apache.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2012/09/08 12:36:57 shattered Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/06 17:54:53 christos Exp $
 
 #PKGREVISION=		3
 
@@ -25,6 +25,7 @@ OWN_DIRS_PERMS+=	${BACULA_WORKINGDIR} ${ROOT_USER} ${BACULA_GROUP} 770
 PKG_USERS=		${BACULA_DIR_USER}:${BACULA_GROUP}
 PKG_USERS+=		${BACULA_SD_USER}:${BACULA_GROUP}
 PKG_GROUPS=		${BACULA_GROUP}
+USERGROUP_PHASE=	pre-install
 
 CONF_FILES+=		${EXAMPLESDIR}/bacula-fd.conf ${PKG_SYSCONFDIR}/bacula-fd.conf
 CONF_FILES+=		${EXAMPLESDIR}/bconsole.conf ${PKG_SYSCONFDIR}/bconsole.conf
