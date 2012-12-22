@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/07/11 17:41:03 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 19:51:31 asau Exp $
 
 WBM_NAME=	dovecot
+PKGREVISION=	1
 
 COMMENT=	Webmin module for configuring the Dovecot IMAP/POP3 server
 

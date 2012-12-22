@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/07/11 17:41:02 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 19:51:30 asau Exp $
 
 WBM_NAME=	change-user
+PKGREVISION=	1
 
 COMMENT=	Webmin module to personalize Webmin user sessions
 
