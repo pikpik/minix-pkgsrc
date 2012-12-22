@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2012,v 1.3989 2012/12/21 11:55:10 dholland Exp $
+$NetBSD: CHANGES-2012,v 1.4000 2012/12/22 13:35:30 imil Exp $
 
 # PLEASE NOTE THAT THE PKGSRC REPOSITORY IS FROZEN FOR INFRASTRUCTURE
 # CHANGES, CHANGES TO NON-LEAF PACKAGES, and FOR NEW PACKAGES.
@@ -6154,3 +6154,14 @@ Changes to the packages collection and infrastructure in 2012:
 	Updated sysutils/wbm-telnet to 1.600nb1 [dholland 2012-12-22]
 	Updated sysutils/wbm-tunnel to 1.600nb1 [dholland 2012-12-22]
 	Updated sysutils/wbm-cluster-passwd to 1.600nb1 [dholland 2012-12-22]
+	Updated mail/milter-manager to 1.8.5 [obache 2012-12-22]
+	Updated devel/ruby-ole to 1.2.11.5 [obache 2012-12-22]
+	Updated inputmethod/ibus-chewing to 1.4.3 [obache 2012-12-22]
+	Updated inputmethod/ibus-table-chinese to 1.4.6 [obache 2012-12-22]
+	Updated databases/phpmyadmin to 3.5.5 [tron 2012-12-22]
+	Updated editors/emacs to 23.4nb10 [tron 2012-12-22]
+	Updated databases/mysql55-client to 5.5.28nb2 [tron 2012-12-22]
+	Updated x11/motif to 2.3.4nb1 [tron 2012-12-22]
+	Updated net/net-snmp to 5.6.1.1nb5 [tron 2012-12-22]
+	Updated net/py-irclib to 3.4.2 [imil 2012-12-22]
+	Updated www/contao30 to 3.0.1nb1 [taca 2012-12-22]

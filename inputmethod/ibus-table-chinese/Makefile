@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2012/09/10 11:53:40 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/06 14:25:12 asau Exp $
 #
 
-DISTNAME=	ibus-table-chinese-1.4.0-Source
+DISTNAME=	ibus-table-chinese-1.4.6-Source
 PKGNAME=	${DISTNAME:S/-Source//}
 CATEGORIES=	inputmethod chinese
 MASTER_SITES=	http://ibus.googlecode.com/files/
