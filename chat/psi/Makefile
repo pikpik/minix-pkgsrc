@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.71 2012/10/08 23:01:18 adam Exp $
+# $NetBSD: Makefile,v 1.72 2012/12/07 23:52:09 schnoebe Exp $
 
 DISTNAME=	psi-0.15
 CATEGORIES=	chat
@@ -15,7 +15,7 @@ DEPENDS+=	qca2-ossl>=2.0.0beta3:../../security/qca2-ossl
 DIST_SUBDIR=	${DISTNAME}
 DISTFILES=	${DEFAULT_DISTFILES} ${LANG_FILES}
 
-USE_TOOLS+=	gmake unzip
+USE_TOOLS+=	gmake unzip pkg-config
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 HAS_CONFIGURE=	yes

@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-Makefile,v 1.2 2012/10/04 20:30:57 pettai Exp $
 
 Add (PKG_)PREFIX support
 
@@ -18,7 +18,7 @@ Add (PKG_)PREFIX support
  	    dname.o tlsa.o nid.o l32.o l64.o lp.o \
  	    ipseckey.o \
 -	    -L/usr/local/lib -L/opt/local/lib -lJudy -lcrypto
-+	    -L/usr/lib -L${PREFIX}/lib -lJudy -lcrypto -R${PREFIX}/lib
++	    -L/usr/lib -L${PREFIX}/lib -lJudy -lcrypto -Wl,-R${PREFIX}/lib
  
  clean:
  	-rm -f validns main.o carp.o mempool.o textparse.o
