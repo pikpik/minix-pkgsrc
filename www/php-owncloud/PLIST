@@ -3868,6 +3868,7 @@ share/owncloud/lib/connector/sabre/file.php
 share/owncloud/lib/connector/sabre/locks.php
 share/owncloud/lib/connector/sabre/node.php
 share/owncloud/lib/connector/sabre/principal.php
+share/owncloud/lib/connector/sabre/quotaplugin.php
 share/owncloud/lib/db.php
 share/owncloud/lib/eventsource.php
 share/owncloud/lib/filecache.php
