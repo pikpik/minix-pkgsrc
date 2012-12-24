@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.31 2012/10/21 21:24:44 cheusov Exp $
+# $NetBSD: Makefile,v 1.33 2012/12/24 12:53:17 ryoon Exp $
 
 DISTNAME=	mdocml-1.12.0
 PKGREVISION=	2

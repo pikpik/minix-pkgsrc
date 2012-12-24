@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2012/10/18 14:31:23 taca Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/28 06:30:15 asau Exp $
 #
 
 DISTNAME=	fengoffice_2.2.0
@@ -43,6 +43,7 @@ PRINT_PLIST_AWK+= \
 .include "../../mk/bsd.prefs.mk"
 
 FO_DIR?=	share/fengoffice
+INSTALLATION_DIRS=	${FO_DIR}
 
 post-extract:
 	cd ${WRKSRC}; ${FIND} . -type f -exec ${CHMOD} -x {} \;

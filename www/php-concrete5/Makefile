@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2012/10/28 06:30:57 asau Exp $
+# $NetBSD: Makefile,v 1.6 2012/12/24 01:35:19 ryoon Exp $
 #
 
 DISTNAME=	concrete5.6.0.2
+PKGREVISION=	1
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME:S/concrete5/concrete5-5/}
 CATEGORIES=	www
 MASTER_SITES=	http://www.concrete5.org/download_file/-/view/44326/8497/
@@ -25,6 +26,16 @@ BUILD_DEFS+=	APACHE_GROUP APACHE_USER
 
 C5DIR=			share/concrete5
 INSTALLATION_DIRS=	${C5DIR}
+
+.include "../../mk/bsd.prefs.mk"
+
+APACHE_USER?=	www
+APACHE_GROUP?=	www
+PKG_GROUPS=	${APACHE_GROUP}
+PKG_USERS=	${APACHE_USER}:${APACHE_GROUP}
+
+PKG_USERS_VARS=		APACHE_USER
+PKG_GROUPS_VARS=	APACHE_GROUP
 
 FILES_SUBST+=	WWWGRP=${APACHE_GROUP} WWWOWN=${APACHE_USER} \
 		C5DIR=${C5DIR}

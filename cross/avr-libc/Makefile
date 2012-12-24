@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/10/03 00:10:29 asau Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 21:54:11 wiz Exp $
 
 DISTNAME=		avr-libc-1.6.7
 PKGREVISION=		3
@@ -28,6 +28,7 @@ CONFIGURE_ENV+=		CC=${PREFIX}/bin/avr-gcc
 CONFIGURE_ARGS+=	--build=${MACHINE_GNU_PLATFORM:Q} --host=avr
 CONFIGURE_ARGS+=	--enable-doc
 CONFIGURE_ARGS+=	--disable-versioned-doc
+MAKE_JOBS_SAFE=		no
 
 pre-configure:
 	set -e; cd ${WRKSRC}; \

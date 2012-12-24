@@ -1,4 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1 2012/10/06 22:04:02 jmmv Exp $
+etc/emacs/site-start.d/50magit.el
 ${EMACS_LISPPREFIX}/magit-bisect.el
 ${EMACS_LISPPREFIX}/magit-bisect.elc
 ${EMACS_LISPPREFIX}/magit-blame.el
