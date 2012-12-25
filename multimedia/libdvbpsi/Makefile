@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/11/05 15:59:48 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/08 09:21:05 asau Exp $
 
 DISTNAME=	libdvbpsi-0.2.2
 CATEGORIES=	multimedia
@@ -14,5 +14,7 @@ USE_TOOLS+=		gmake
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE=	libdvbpsi.pc.in
+
+LIBS.SunOS+=	-lsocket -lnsl
 
 .include "../../mk/bsd.pkg.mk"

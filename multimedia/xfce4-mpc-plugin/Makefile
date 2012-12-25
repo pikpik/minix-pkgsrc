@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/10/08 09:21:15 asau Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 23:00:52 adam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
@@ -10,6 +10,8 @@ CATEGORIES=	multimedia
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-mpc-plugin/
 EXTRACT_SUFX=	.tar.gz
 COMMENT=	Xfce Music Player Client plugin
+
+LIBS.SunOS+=	-lsocket -lnsl
 
 .include "../../x11/xfce4-panel/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
