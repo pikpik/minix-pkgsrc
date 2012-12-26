@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.2 2004/06/29 02:20:17 snj Exp $
+
+- Fix build bug with cc -g, patch submitted by john heasley.
 
 --- gsl/gsl_math.h.orig	2004-06-10 14:17:35.000000000 -0700
 +++ gsl/gsl_math.h	2004-06-28 12:44:15.000000000 -0700

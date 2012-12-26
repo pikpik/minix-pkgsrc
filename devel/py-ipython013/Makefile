@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/04/18 09:16:15 dholland Exp $
+# $NetBSD: Makefile,v 1.1 2012/12/17 11:57:44 drochner Exp $
 #
 
 DISTNAME=	ipython-0.13.1
@@ -12,8 +12,6 @@ COMMENT=	Interactive computing environment for Python
 LICENSE=	modified-bsd
 
 DEPENDS+=	${PYPKGPREFIX}-readline-[0-9]*:../../devel/py-readline
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCOMPATIBLE=	25
 PYTHON_VERSIONS_INCLUDE_3X=	yes
