@@ -1,5 +1,6 @@
-$NetBSD$
+$NetBSD: patch-OMakefile,v 1.1 2011/08/07 20:36:20 wiz Exp $
 
+Use pkgsrc build variables, correct detection of libpng
 --- OMakefile.orig	2011-06-22 18:04:32.000000000 +0000
 +++ OMakefile	2011-08-06 17:23:47.000000000 +0000
 @@ -25,8 +25,10 @@
