@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.54 2012/10/08 12:19:17 asau Exp $
+# $NetBSD: Makefile,v 1.55 2012/12/16 01:52:21 obache Exp $
 
 DISTNAME=	milter-greylist-4.2.7
 PKGREVISION=	2
@@ -17,7 +17,7 @@ MAKE_JOBS_SAFE=		no
 GNU_CONFIGURE=		YES
 BUILD_TARGET=		milter-greylist
 
-USE_TOOLS=		yacc lex
+USE_TOOLS=		bison lex
 
 RCD_SCRIPTS=		milter-greylist
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/10/31 11:16:51 asau Exp $
+# $NetBSD: Makefile,v 1.16 2012/11/06 18:52:24 drochner Exp $
 #
 
 DISTNAME=	dconf-0.14.1
@@ -18,7 +18,7 @@ PATCHDIR=	${.CURDIR}/../../devel/dconf/patches
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --enable-editor
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config gmake intltool
+USE_TOOLS+=	pkg-config gmake intltool msgfmt
 
 BUILD_DIRS=	editor
 INSTALL_DIRS=	editor
