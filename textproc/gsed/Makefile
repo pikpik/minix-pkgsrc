@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2012/10/25 06:55:52 asau Exp $
+# $NetBSD: Makefile,v 1.42 2012/12/06 11:43:24 jperkin Exp $
 #
 
 DISTNAME=	sed-4.2.1
@@ -19,7 +19,7 @@ GNU_CONFIGURE=		YES
 INFO_FILES=		YES
 TEST_TARGET=		check
 
-INSTALLATION_DIRS=	gnu/bin gnu/man/man1
+INSTALLATION_DIRS=	${PKGGNUDIR}bin ${PKGGNUDIR}${PKGMANDIR}/man1
 
 # at least Solaris-2.9 has issues with grep/egrep
 USE_TOOLS+=		grep makeinfo

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2012/11/21 07:46:40 jperkin Exp $
+# $NetBSD: Makefile,v 1.50 2012/12/06 11:40:57 jperkin Exp $
 
 DISTNAME=	binutils-2.22
 PKGREVISION=	1
@@ -31,7 +31,7 @@ PLIST_SRC+=	${WRKDIR}/PLIST_DYNAMIC
 
 INFO_FILES=	yes
 
-INSTALLATION_DIRS=	gnu/bin gnu/man/man1
+INSTALLATION_DIRS=	${PKGGNUDIR}bin ${PKGGNUDIR}${PKGMANDIR}/man1
 
 # gprof (XXX: and others?) cannot be built on all platforms
 #
