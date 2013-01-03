@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.550 2012/11/16 14:38:35 jaapb Exp $
+# $NetBSD: Makefile,v 1.552 2013/01/03 13:35:06 ryoon Exp $
 #
 
 COMMENT=	Desktop publishing
@@ -32,6 +32,7 @@ SUBDIR+=	dvidvi
 SUBDIR+=	dviljk
 SUBDIR+=	dvipdfmx
 SUBDIR+=	dvipsk
+SUBDIR+=	electrix
 SUBDIR+=	enscript
 SUBDIR+=	epdfview
 SUBDIR+=	epstool
@@ -124,6 +125,7 @@ SUBDIR+=	py-cups
 SUBDIR+=	py-pisa
 SUBDIR+=	py-pslib
 SUBDIR+=	py-reportlab
+SUBDIR+=	qpdfview
 SUBDIR+=	rlpr
 SUBDIR+=	rtf2latex
 SUBDIR+=	rtf2latex2e

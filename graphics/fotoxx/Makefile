@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.32 2012/10/08 23:01:42 adam Exp $
+# $NetBSD: Makefile,v 1.33 2012/12/05 16:37:59 ryoon Exp $
 #
 
-DISTNAME=	fotoxx-12.12.1
+DISTNAME=	fotoxx-13.01
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.kornelix.com/uploads/1/3/0/3/13035936/
 

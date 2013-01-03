@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.905 2012/12/17 15:26:38 taca Exp $
+# $NetBSD: Makefile,v 1.912 2013/01/03 14:30:12 ryoon Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -518,9 +518,11 @@ SUBDIR+=	php-eaccelerator
 SUBDIR+=	php-fpm
 SUBDIR+=	php-owncloud
 SUBDIR+=	php-phrasea2
+SUBDIR+=	php-piwigo
 SUBDIR+=	php-soycms
 SUBDIR+=	php-tidy
 SUBDIR+=	php-tiki6
+SUBDIR+=	php-tt-rss
 SUBDIR+=	php-uploadprogress
 SUBDIR+=	phraseanet
 SUBDIR+=	phraseanet-indexer
@@ -531,15 +533,19 @@ SUBDIR+=	py-HTMLgen
 SUBDIR+=	py-PasteDeploy
 SUBDIR+=	py-beautifulsoup
 SUBDIR+=	py-beautifulsoup4
+SUBDIR+=	py-bleach
 SUBDIR+=	py-blosxom
 SUBDIR+=	py-bottle
 SUBDIR+=	py-cherrypy
 SUBDIR+=	py-clearsilver
 SUBDIR+=	py-curl
 SUBDIR+=	py-django
+SUBDIR+=	py-django-appconf
 SUBDIR+=	py-django-appmedia
 SUBDIR+=	py-django-classy-tags
 SUBDIR+=	py-django-cms
+SUBDIR+=	py-django-mezzanine-filebrowser
+SUBDIR+=	py-django-mezzanine-grappelli
 SUBDIR+=	py-django-mptt
 SUBDIR+=	py-django-photologue
 SUBDIR+=	py-django-registration
@@ -554,6 +560,7 @@ SUBDIR+=	py-genshi
 SUBDIR+=	py-httplib2
 SUBDIR+=	py-jonpy
 SUBDIR+=	py-mechanize
+SUBDIR+=	py-mezzanine
 SUBDIR+=	py-moin
 SUBDIR+=	py-nevow
 SUBDIR+=	py-paste

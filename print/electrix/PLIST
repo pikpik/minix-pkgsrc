@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/electrix
+share/applications/electrix.desktop
+share/locale/ru/LC_MESSAGES/electrix.mo
+share/locale/sv/LC_MESSAGES/electrix.mo
+share/locale/tr/LC_MESSAGES/electrix.mo
