@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.1 2012/09/15 10:30:39 sbd Exp $
+# $NetBSD: buildlink3.mk,v 1.2 2012/09/25 06:43:42 sbd Exp $
 
 BUILDLINK_TREE+=	gcc47-libs
 
@@ -30,6 +30,7 @@ ${SPECS_LIBGCC}:
 
 _WRAP_EXTRA_ARGS.CC+=	-specs ${SPECS_LIBGCC}
 _WRAP_EXTRA_ARGS.CXX+=	-specs ${SPECS_LIBGCC}
+_WRAP_EXTRA_ARGS.FC+=	-specs ${SPECS_LIBGCC}
 .endif
 
 .include "../../mk/dlopen.buildlink3.mk"
