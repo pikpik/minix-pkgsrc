@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.76 2012/10/25 06:55:56 asau Exp $
+# $NetBSD: Makefile,v 1.77 2012/11/07 20:59:50 adam Exp $
 
-DISTNAME=	icu4c-50_1-src
+DISTNAME=	icu4c-50_1_1-src
 PKGNAME=	${DISTNAME:S/4c//:S/-src//:S/_/./g}
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.icu-project.org/files/icu4c/${PKGVERSION_NOREV}/
