@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/docx2txt
+share/doc/docx2txt/README
+share/doc/docx2txt/docx2txt.config
