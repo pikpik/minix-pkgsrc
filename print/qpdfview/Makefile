@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2013/01/03 13:38:55 ryoon Exp $
 #
 
 VER=		0.3.7
@@ -24,6 +24,7 @@ SUBST_FILES.prefix+=	qpdfview.pri
 SUBST_VARS.prefix+=	DESTDIR PREFIX PKGMANDIR
 
 USE_LANGUAGES=	c c++
+USE_TOOLS+=	pkg-config
 
 do-configure:
 	cd ${WRKSRC} && QTDIR=${QTDIR} \
