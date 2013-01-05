@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2012/08/19 07:54:11 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/28 06:31:03 asau Exp $
 #
 
-DISTNAME=	httpclient-2.2.7
+DISTNAME=	httpclient-2.3.2
 CATEGORIES=	www
 
 MAINTAINER=	obache@NetBSD.org
@@ -13,6 +13,8 @@ USE_LANGUAGES=	# none
 
 # OK with ruby-1.9 buitin one, but not with ruby18's one.
 RUBY_RDOC_REQD=	2.5.8
+
+RUBYGEM_OPTIONS+=	--format-executable
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: install.mk,v 1.64 2012/07/28 21:33:48 reed Exp $
+# $NetBSD: install.mk,v 1.65 2012/12/06 11:36:31 jperkin Exp $
 #
 # This file provides the code for the "install" phase.
 #
@@ -293,6 +293,7 @@ install-dirs-from-PLIST:
 	${CAT} ${PLIST_SRC}						\
 	| sed -n							\
 		-e 's,\\,\\\\,'						\
+		-e 's,^gnu/man/,${PKGGNUDIR}${PKGMANDIR}/,'		\
 		-e 's,^gnu/,${PKGGNUDIR},'				\
 		-e 's,^man/,${PKGMANDIR}/,'				\
 		-e 's,^info/,${PKGINFODIR}/,'				\
