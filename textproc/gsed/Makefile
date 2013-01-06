@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.42 2012/12/06 11:43:24 jperkin Exp $
+# $NetBSD: Makefile,v 1.43 2012/12/31 00:27:37 sbd Exp $
 #
 
-DISTNAME=	sed-4.2.1
+DISTNAME=	sed-4.2.2
 PKGNAME=	g${DISTNAME}
 PKGREVISION=	4
 CATEGORIES=	textproc editors

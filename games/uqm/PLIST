@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/uqm
+lib/uqm/uqm
+share/doc/uqm/manual.txt
+share/uqm/content/packages/${PKGNAME}-content.uqm
+share/uqm/content/version
