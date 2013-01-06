@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/02/19 15:04:51 he Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/31 11:17:11 asau Exp $
 #
 
 DISTNAME=		libdaemon-0.14
@@ -25,6 +25,6 @@ post-install:
 
 .include "../../mk/bsd.pkg.mk"
 
-.if ${OPSYS} == "NetBSD" && ${OS_VERSION:M4.*} != ""
+.if (${OPSYS} == "NetBSD" && ${OS_VERSION:M4.*} != "") || (${OPSYS} == "OpenBSD")
 BUILDLINK_TRANSFORM+=	rm:-Wl,--no-undefined
 .endif

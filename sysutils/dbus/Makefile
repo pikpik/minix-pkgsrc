@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.57 2012/10/07 21:35:13 wiz Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/23 19:50:57 asau Exp $
 
 DISTNAME=	dbus-1.6.8
 CATEGORIES=	sysutils
@@ -104,6 +104,10 @@ BUILDLINK_TRANSFORM+=	rm:-Wl,--gc-sections
 # mean that we universally can *run* the executables
 BUILDLINK_TRANSFORM+=	rm:-fPIE
 BUILDLINK_TRANSFORM+=	rm:-pie
+
+.if ${OPSYS} == "OpenBSD"
+BUILDLINK_TRANSFORM+=	rm:-lrt
+.endif
 
 .include "options.mk"
 

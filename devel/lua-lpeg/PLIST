@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/lua/5.1/lpeg.so
+share/doc/lua-lpeg/lpeg.html
+share/doc/lua-lpeg/re.html
+share/lua/5.1/re.lua

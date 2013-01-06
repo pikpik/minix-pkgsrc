@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/05/30 20:33:26 cheusov Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/11 23:25:07 asau Exp $
 #
 
 DISTNAME=	dash-0.5.7
@@ -6,7 +6,7 @@ CATEGORIES=	shells
 MASTER_SITES=	http://gondor.apana.org.au/~herbert/dash/files/
 
 MAINTAINER=	cheusov@NetBSD.org
-HOMEPAGE=	http://gondor.apana.org.au/~herbert/dash/files/
+HOMEPAGE=	http://gondor.apana.org.au/~herbert/dash/
 COMMENT=	Debian Almquist shell, POSIX-compliant shell faster than bash
 LICENSE=	modified-bsd AND gnu-gpl-v2
 

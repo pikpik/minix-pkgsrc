@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2012/10/25 06:56:33 asau Exp $
+# $NetBSD: Makefile,v 1.17 2012/12/30 12:57:37 kleink Exp $
 
 DISTNAME=	Text-vCard-2.13
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5tva
 CATEGORIES=	textproc perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/L/LL/LLAP/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
 
 MAINTAINER=	kleink@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Text-vCard/
