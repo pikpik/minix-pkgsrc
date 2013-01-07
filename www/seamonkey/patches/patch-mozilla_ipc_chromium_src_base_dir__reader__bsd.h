@@ -1,6 +1,6 @@
 $NetBSD: patch-mozilla_ipc_chromium_src_base_dir__reader__bsd.h,v 1.2 2012/09/29 16:30:19 ryoon Exp $
 
---- mozilla/ipc/chromium/src/base/dir_reader_bsd.h.orig	2012-11-23 10:13:58.000000000 +0000
+--- mozilla/ipc/chromium/src/base/dir_reader_bsd.h.orig	2012-11-23 07:37:19.000000000 +0000
 +++ mozilla/ipc/chromium/src/base/dir_reader_bsd.h
 @@ -0,0 +1,112 @@
 +// Copyright (c) 2010 The Chromium Authors. All rights reserved.
