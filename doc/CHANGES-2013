@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.82 2013/01/06 16:11:05 pettai Exp $
+$NetBSD: CHANGES-2013,v 1.91 2013/01/07 14:33:15 taca Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -110,3 +110,14 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated security/pcsc-lite to 1.8.7 [pettai 2013-01-06]
 	Updated security/ccid to 1.4.8 [pettai 2013-01-06]
 	Updated fonts/urw-fonts to 1.0.7pre44 [wiz 2013-01-06]
+	Updated fonts/umefont-ttf to 0.447 [ryoon 2013-01-07]
+	Added devel/reposurgeon version 2.12 [ryoon 2013-01-07]
+	Updated lang/tcl-itcl to 3.4.1nb1 [wiz 2013-01-07]
+	Updated sysutils/tkdesk to 2.0nb3 [wiz 2013-01-07]
+	Updated cad/tnt-mmtl to 1.2.2nb7 [wiz 2013-01-07]
+	Updated lang/php53 to 5.3.20 [taca 2013-01-07]
+	Updated lang/php54 to 5.4.10 [taca 2013-01-07]
+	Updated www/contao211 to 2.11.8 [taca 2013-01-07]
+	Updated www/contao211-example to 2.11.8 [taca 2013-01-07]
+	Updated www/contao30 to 3.0.2 [taca 2013-01-07]
+	Updated www/contao30-example to 3.0.2 [taca 2013-01-07]
