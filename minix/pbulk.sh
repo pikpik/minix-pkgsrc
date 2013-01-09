@@ -8,6 +8,7 @@
 
 # Stop execution when an error occurs
 set -e
+set -x
 
 # Set output verbosity (0=quiet, 1=normal, 2=debug)
 PKG_DEBUG_LEVEL=2
@@ -117,7 +118,7 @@ pbulksh_bin_kit() {
 	mkdir temp
 	mv bootstrap.tar.gz temp
 	cd temp
-	tar xf bootstrap.tar.gz
+	tar xzf bootstrap.tar.gz
 	cp /usr/pkgsrc/minix/mk.conf.minix usr/pkg/etc/mk.conf
 	tar hzcf ../bootstrap.tar.gz usr
 	cd ..
