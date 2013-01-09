@@ -127,7 +127,6 @@ ${PLIST.gprof}share/locale/id/LC_MESSAGES/gprof.mo
 share/locale/id/LC_MESSAGES/bfd.mo
 share/locale/id/LC_MESSAGES/binutils.mo
 share/locale/id/LC_MESSAGES/gas.mo
-share/locale/id/LC_MESSAGES/ld.mo
 share/locale/id/LC_MESSAGES/opcodes.mo
 share/locale/ja/LC_MESSAGES/bfd.mo
 share/locale/ja/LC_MESSAGES/binutils.mo
@@ -143,7 +142,6 @@ ${PLIST.gprof}share/locale/ro/LC_MESSAGES/gprof.mo
 share/locale/ro/LC_MESSAGES/opcodes.mo
 share/locale/ru/LC_MESSAGES/bfd.mo
 share/locale/ru/LC_MESSAGES/binutils.mo
-share/locale/ru/LC_MESSAGES/gas.mo
 ${PLIST.gprof}share/locale/ru/LC_MESSAGES/gprof.mo
 share/locale/rw/LC_MESSAGES/bfd.mo
 share/locale/rw/LC_MESSAGES/binutils.mo

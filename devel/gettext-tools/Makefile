@@ -37,7 +37,7 @@ post-install:
 	${INSTALL_MAN} ${WRKSRC}/gettext-tools/man/gettextize.1 \
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
-USE_TOOLS+= gsed
+USE_TOOLS+= gsed perl
 
 .include "../../mk/termcap.buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
