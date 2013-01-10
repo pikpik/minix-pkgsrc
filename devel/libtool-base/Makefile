@@ -74,8 +74,6 @@ CONFIGURE_ARGS+=	--disable-ltdl-install
 
 USE_TOOLS+=		echo
 
-USE_TOOLS+=            autoconf
-
 .PHONY: fix-libtool
 fix-libtool:
 	cd ${WRKSRC}; for f in libtool; do				\
