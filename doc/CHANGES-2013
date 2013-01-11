@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.138 2013/01/10 22:14:44 prlw1 Exp $
+$NetBSD: CHANGES-2013,v 1.142 2013/01/11 13:33:22 taca Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -194,3 +194,10 @@ Changes to the packages collection and infrastructure in 2013:
 	Added www/firefox17-l10n version 17.0.2 [ryoon 2013-01-10]
 	Updated devel/at-spi2-core to 2.6.3 [prlw1 2013-01-10]
 	Removed devel/guile-fcgi [gdt 2013-01-11]
+	Updated pkgtools/x11-links to 0.72 [ryoon 2013-01-11]
+	Updated mail/milter-greylist to 4.4.2nb1 [tron 2013-01-11]
+	Updated www/squid31 to 3.1.23 [taca 2013-01-11]
+	Updated net/isc-dhcp4 to 4.2.5 [taca 2013-01-11]
+	Updated net/isc-dhclient4 to 4.2.5 [taca 2013-01-11]
+	Updated net/isc-dhcpd4 to 4.2.5 [taca 2013-01-11]
+	Updated net/isc-dhcrelay4 to 4.2.5 [taca 2013-01-11]

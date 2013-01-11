@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.22 2012/01/09 05:25:36 manu Exp $
+# $NetBSD: options.mk,v 1.23 2012/05/31 11:58:37 imil Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -17,7 +17,7 @@ CONFIGURE_ENV+=		ac_cv_search_k_hasafs=no
 
 .if !empty(PKG_OPTIONS:Mhpn-patch)
 PATCHFILES=		openssh-5.8p1-hpn13v11.diff.gz
-PATCH_SITES=		http://www.psc.edu/networking/projects/hpn-ssh/
+PATCH_SITES=		http://www.shatow.net/freebsd/
 PATCH_DIST_STRIP=	-p1
 .endif
 

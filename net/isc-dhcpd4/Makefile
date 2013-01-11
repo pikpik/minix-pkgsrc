@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/04/08 14:09:24 taca Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/23 17:18:29 asau Exp $
 #
 
 PKGNAME=	isc-dhcpd-${DHVER}
@@ -16,7 +16,8 @@ FILES_SUBST+=	DHCP_HOME=${DHCP_HOME}
 INSTALLATION_DIRS+=	${EGDIR}
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/server/dhcpd.conf ${DESTDIR}${EGDIR}
+	${INSTALL_DATA} ${WRKSRC}/server/dhcpd.conf.example \
+		${DESTDIR}${EGDIR}/dhcpd.conf
 
 .include "../../net/isc-dhcp4/Makefile.common"
 .include "../../net/isc-dhcp4/buildlink3.mk"
