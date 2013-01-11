@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/08/08 18:37:07 marino Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/23 19:51:34 asau Exp $
 #
 
 DISTNAME=	whowatch-1.4
@@ -16,6 +16,8 @@ GNU_CONFIGURE=	YES
 INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
 INSTALL_MAKE_FLAGS+=	bindir=${DESTDIR}${PREFIX}/bin \
 			mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}	
+
+CFLAGS.NetBSD+=	-D_KMEMUSER
 
 .include "../../devel/ncurses/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

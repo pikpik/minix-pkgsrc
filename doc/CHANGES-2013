@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.134 2013/01/10 17:13:41 adam Exp $
+$NetBSD: CHANGES-2013,v 1.138 2013/01/10 22:14:44 prlw1 Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -179,6 +179,7 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated net/mikutter to 0.2.1.1117 [obache 2013-01-10]
 	Updated devel/xulrunner to 18.0 [ryoon 2013-01-10]
 	Updated www/firefox to 18.0 [ryoon 2013-01-10]
+	Updated devel/xulrunner10 to 10.0.12 [is 2013-01-10]
 	Updated www/firefox10 to 10.0.12 [is 2013-01-10]
 	Updated databases/p5-SQL-Statement to 1.402 [wen 2013-01-10]
 	Updated textproc/p5-Text-CSV_XS to 0.94 [wen 2013-01-10]
@@ -189,3 +190,7 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated databases/sqlite3-docs to 3.7.15.2 [adam 2013-01-10]
 	Updated databases/sqlite3-tcl to 3.7.15.2 [adam 2013-01-10]
 	Updated sysutils/logrotate to 3.8.2 [wiz 2013-01-10]
+	Updated sysutils/mtools to 4.0.18 [is 2013-01-10]
+	Added www/firefox17-l10n version 17.0.2 [ryoon 2013-01-10]
+	Updated devel/at-spi2-core to 2.6.3 [prlw1 2013-01-10]
+	Removed devel/guile-fcgi [gdt 2013-01-11]

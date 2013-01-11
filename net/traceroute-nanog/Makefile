@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/05/05 22:44:19 schwarz Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 17:19:14 asau Exp $
 
 DISTNAME=	traceroute-nanog_6.4.2.orig
 PKGNAME=	${DISTNAME:S/.orig//:S/_/-/}
@@ -19,9 +19,6 @@ NO_CONFIGURE=	YES
 USE_FEATURES+=	snprintf
 
 .include "../../mk/bsd.prefs.mk"
-.if empty(PKGSRC_COMPILER:Mgcc*)
-CPPFLAGS+=	-D__attribute__=
-.endif
 
 .if ${OPSYS} == "SunOS"
 .if ${OS_VERSION} >= 5.0
