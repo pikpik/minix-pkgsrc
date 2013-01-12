@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2012/10/08 12:42:20 asau Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/23 10:24:14 wiz Exp $
 
 DISTNAME=	fvwm-${FVWM_VER}
 PKGREVISION=	5
@@ -38,6 +38,8 @@ CONFIGURE_ARGS+=	--with-imagepath=${PREFIX:Q}/lib/X11/fvwm2/pixmaps:${X11BASE:Q}
 
 # We don't want to have CPP from the buildlink directory
 CONFIGURE_ENV+=		ac_cv_path_FVWM_CPP=${CPP:Q}
+
+LDFLAGS.DragonFly+=	-lX11
 
 post-extract:
 	mkdir ${WRKDIR:Q}/icons
