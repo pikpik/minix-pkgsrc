@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.8 2009/09/22 14:02:56 tron Exp $
+# $NetBSD: options.mk,v 1.9 2009/09/22 16:52:02 tron Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.milter-greylist
 PKG_OPTIONS_REQUIRED_GROUPS=	mta
@@ -33,6 +33,18 @@ CONFIGURE_ARGS+=	--disable-drac
 DRACD_DB?=		/etc/mail/dracd.db
 
 CONFIGURE_ARGS+=	--enable-drac --with-drac-db=${DRACD_DB}
+
+USE_DB185=	yes
+.  if ${OPSYS} == "SunOS"
+BDB_ACCEPTED=	db2 db3 db4 db5
+BDB185_DEFAULT=	${BDB_DEFAULT}
+.  endif
+.  include "../../mk/bdb.buildlink3.mk"
+.  if ${BDB_TYPE} != "db1"
+CPPFLAGS+=	-DUSE_DB185_EMULATION
+.  endif
+LIBS+=		${BDB_LIBS}
+
 .endif
 
 ###
