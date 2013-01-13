@@ -3,3 +3,4 @@ $NetBSD: distinfo,v 1.2 2008/08/17 21:09:12 markd Exp $
 SHA1 (GSSAPI-0.28.tar.gz) = c857485532e92e266a75b56ed247284f94b2d3d4
 RMD160 (GSSAPI-0.28.tar.gz) = 849d01d39851ec2726559d4f2b92832758a333ad
 Size (GSSAPI-0.28.tar.gz) = 67915 bytes
+SHA1 (patch-Makefile.PL) = 3b10bd908676b518d0f70b192addd948859b3cf6
