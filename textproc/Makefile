@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.650 2012/12/04 18:15:41 darcy Exp $
+# $NetBSD: Makefile,v 1.651 2012/12/29 20:09:03 dholland Exp $
 #
 
 COMMENT=	Text processing utilities (does not include desktop publishing)
@@ -650,6 +650,7 @@ SUBDIR+=	tokyodystopia
 SUBDIR+=	trang
 SUBDIR+=	troffcvt
 SUBDIR+=	unac
+SUBDIR+=	uncrustify
 SUBDIR+=	uni2ascii
 SUBDIR+=	unroff
 SUBDIR+=	untex
