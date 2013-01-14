@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2012/05/26 16:51:59 schmonz Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/25 06:56:49 asau Exp $
 #
 
-DISTNAME=		feedparser-5.1.2
+DISTNAME=		feedparser-5.1.3
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=		textproc python
 MASTER_SITES=		http://feedparser.googlecode.com/files/
