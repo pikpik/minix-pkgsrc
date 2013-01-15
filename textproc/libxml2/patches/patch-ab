@@ -63,6 +63,15 @@ $NetBSD$
      esac
      if test "$WITH_THREADS" = "1" ; then
  	THREAD_CFLAGS="$THREAD_CFLAGS -D_REENTRANT"
+@@ -14787,7 +14791,7 @@ else
+     TEST_SAX=SAXtests
+ fi
+ 
+- if test "${WITH_TRIO}" = "1"; then
++ if test "${WITH_SAX1}" = "1"; then
+   WITH_SAX1_SOURCES_TRUE=
+   WITH_SAX1_SOURCES_FALSE='#'
+ else
 @@ -15209,10 +15213,6 @@ case "$host" in
  
  $as_echo "#define _WINSOCKAPI_ 1" >>confdefs.h

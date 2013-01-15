@@ -1,4 +1,4 @@
-$NetBSD: patch-ad,v 1.5 2009/07/07 20:25:27 joerg Exp $
+$NetBSD: patch-ad,v 1.6 2011/03/23 14:09:31 obache Exp $
 
 --- Imakefile.orig	1999-09-02 14:33:47.000000000 +0000
 +++ Imakefile
@@ -24,7 +24,7 @@ $NetBSD: patch-ad,v 1.5 2009/07/07 20:25:27 joerg Exp $
  # ifdef	USE_XAW3D
        DEPXAWLIB = $(USRLIBDIR)/libXaw3d.a
 -         XAWLIB = -lXaw3d
-+         XAWLIB = ${LIBXAW}
++         XAWLIB = -lXaw
  # endif	/* USE_XAW3D */
  
    SYS_LIBRARIES = SoundLibrary -lm
