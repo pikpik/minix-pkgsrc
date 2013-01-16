@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-src_throb_throb.cxx,v 1.1 2012/11/19 23:23:39 joerg Exp $
+
+Don't use variable length arrays of non-POD types
 
 --- src/throb/throb.cxx.orig	2012-11-19 16:10:27.000000000 +0000
 +++ src/throb/throb.cxx
