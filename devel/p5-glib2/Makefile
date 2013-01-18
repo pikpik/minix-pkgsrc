@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2012/10/03 21:55:52 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2012/10/31 11:19:18 asau Exp $
 
 DISTNAME=	Glib-1.262
 PKGNAME=	p5-${DISTNAME:S/Glib/glib2/}
@@ -18,6 +18,9 @@ DEPENDS+=	p5-ExtUtils-Depends>=0.300:../../devel/p5-ExtUtils-Depends
 DEPENDS+=	p5-ExtUtils-PkgConfig>=1.00:../../devel/p5-ExtUtils-PkgConfig
 
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.12.0
+
+# "Can't locate Glib/ParseXSDoc.pm in @INC .."
+MAKE_JOBS_SAFE=	no
 
 USE_TOOLS+=		pkg-config
 PERL5_PACKLIST=		auto/Glib/.packlist
