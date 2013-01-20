@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2012/11/03 22:56:25 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/12/10 09:17:24 ryoon Exp $
 #
 
-DISTNAME=	SourceCodePro_FontsOnly-1.013
+DISTNAME=	SourceCodePro_FontsOnly-1.017
 PKGNAME=	${DISTNAME:S/SourceCodePro_FontsOnly/sourcecodepro-fonts/}
 CATEGORIES=	fonts
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sourcecodepro.adobe/}

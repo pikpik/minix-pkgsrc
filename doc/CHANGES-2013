@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.217 2013/01/19 21:55:25 reed Exp $
+$NetBSD: CHANGES-2013,v 1.227 2013/01/20 13:35:45 morr Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -292,3 +292,18 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated x11/p5-Wx to 0.9916 [schmonz 2013-01-19]
 	Renamed misc/git to sysutils/gnuit [reed 2013-01-19]
 	Updated devel/p5-Test-Trap to 0.2.2 [schmonz 2013-01-19]
+	Updated wm/fvwm to 2.6.5 [mef 2013-01-20]
+	Updated www/seamonkey to 2.15 [ryoon 2013-01-20]
+	Updated www/ja-trac to 1.0pl1 [obache 2013-01-20]
+	Updated fonts/sourcecodepro-fonts to 1.017 [ryoon 2013-01-20]
+	Updated fonts/vlgothic-ttf to 20121230 [ryoon 2013-01-20]
+	Updated chat/bitlbee to 3.2 [tonio 2013-01-20]
+	Updated devel/xulrunner to 18.0.1 [ryoon 2013-01-20]
+	Updated www/firefox to 18.0.1 [ryoon 2013-01-20]
+	Updated devel/subversion to 1.6.20 [ryoon 2013-01-20]
+	Updated devel/subversion-base to 1.6.20 [ryoon 2013-01-20]
+	Updated x11/rxvt-unicode to 9.16 [morr 2013-01-20]
+	Updated devel/p5-subversion to 1.6.20 [ryoon 2013-01-20]
+	Updated devel/ruby-subversion to 1.6.20 [ryoon 2013-01-20]
+	Updated devel/py-subversion to 1.6.20 [ryoon 2013-01-20]
+	Updated devel/java-subversion to 1.6.20 [ryoon 2013-01-20]
