@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2011/12/09 14:36:36 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/29 05:06:41 asau Exp $
 
 DISTNAME=	mxterm_129
-PKGREVISION=	3
+PKGREVISION=	4
 PKGNAME=	${DISTNAME:S/_/-/}
 CATEGORIES=	x11
 MASTER_SITES=	http://www.unixdev.net/downloads/mxterm/129/
@@ -15,5 +15,8 @@ GNU_CONFIGURE=	YES
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 
+.include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

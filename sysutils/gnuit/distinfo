@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.5 2006/01/26 17:58:18 reed Exp $
+$NetBSD: distinfo,v 1.6 2010/01/18 02:23:52 christos Exp $
 
 SHA1 (gnuit-4.9.5.tar.gz) = 9ee138ca9dd08d3b97d066b2e4c9d2281e49bd0e
 RMD160 (gnuit-4.9.5.tar.gz) = e6d5201ab82c0a7ede7f379b61e65c85ef4b5b81

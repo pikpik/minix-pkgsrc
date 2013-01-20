@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.17 2012/02/16 10:44:53 obache Exp $
+# $NetBSD: options.mk,v 1.18 2012/03/29 19:17:39 markd Exp $
 #
 
 #
@@ -24,6 +24,7 @@ PLIST_VARS+=	gtk kde kde3 kde4 plugin gstreamer
 .if !empty(PKG_OPTIONS:Mgtk)
 GNASH_GUIS+=		gtk
 PLIST.gtk=		yes
+.include "../../devel/pangox-compat/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libXv/buildlink3.mk"
 .endif
