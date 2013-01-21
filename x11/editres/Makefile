@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2012/06/03 17:56:44 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/29 05:06:10 asau Exp $
 #
 
-DISTNAME=		editres-1.0.5
+DISTNAME=		editres-1.0.6
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

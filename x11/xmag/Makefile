@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2012/06/03 18:21:12 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/29 05:07:15 asau Exp $
 #
 
-DISTNAME=		xmag-1.0.4
+DISTNAME=		xmag-1.0.5
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

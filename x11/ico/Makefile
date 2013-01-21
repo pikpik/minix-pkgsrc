@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2012/06/03 17:57:45 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/29 05:06:21 asau Exp $
 #
 
-DISTNAME=		ico-1.0.3
+DISTNAME=		ico-1.0.4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

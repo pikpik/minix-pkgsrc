@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2012/06/07 00:50:49 dholland Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/29 05:06:54 asau Exp $
 #
 
-DISTNAME=		viewres-1.0.3
-PKGREVISION=		1
+DISTNAME=		viewres-1.0.4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

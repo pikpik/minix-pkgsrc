@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2012/10/25 06:55:49 asau Exp $
+# $NetBSD: Makefile,v 1.4 2013/01/06 00:31:44 wiz Exp $
 #
 
-DISTNAME=		enca-1.13
+DISTNAME=		enca-1.14
 CATEGORIES=		converters
 MASTER_SITES=		http://dl.cihar.com/enca/
 EXTRACT_SUFX=		.tar.bz2
