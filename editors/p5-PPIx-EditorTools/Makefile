@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/10/03 11:43:39 asau Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:58 wiz Exp $
 #
 
 DISTNAME=	PPIx-EditorTools-0.17
@@ -19,7 +19,7 @@ BUILD_DEPENDS+= p5-Test-NoWarnings>=0.084:../../devel/p5-Test-NoWarnings
 
 DEPENDS+=	p5-Class-XSAccessor>=1.02:../../devel/p5-Class-XSAccessor
 DEPENDS+=	p5-PPI>=1.215:../../devel/p5-PPI
-DEPENDS+=	p5-Try-Tiny>=0.11:../../devel/p5-PPI
+DEPENDS+=	p5-Try-Tiny>=0.11:../../devel/p5-Try-Tiny
 
 PERL5_PACKLIST=		auto/PPIx/EditorTools/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled
