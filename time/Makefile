@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.121 2012/03/20 06:18:32 markd Exp $
+# $NetBSD: Makefile,v 1.123 2013/01/22 04:10:04 jakllsch Exp $
 #
 
 COMMENT=	Clocks, calendars, daily planners and other time related applications

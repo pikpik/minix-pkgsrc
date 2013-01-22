@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.197 2012/12/03 22:26:54 wiz Exp $
+# $NetBSD: Makefile,v 1.201 2013/01/22 11:45:56 wiz Exp $
 #
 
 COMMENT=	Multimedia utilities
@@ -91,6 +91,7 @@ SUBDIR+=	libassetml
 SUBDIR+=	libdv
 SUBDIR+=	libdv-tools
 SUBDIR+=	libdvbpsi
+SUBDIR+=	libdvbpsi0
 SUBDIR+=	libdvdcss
 SUBDIR+=	libdvdnav
 SUBDIR+=	libdvdplay
@@ -166,10 +167,7 @@ SUBDIR+=	tstools
 SUBDIR+=	tvtime
 SUBDIR+=	ushare
 SUBDIR+=	vlc
-SUBDIR+=	vlc08
-SUBDIR+=	vlc10
 SUBDIR+=	vlc2
-SUBDIR+=	vls
 SUBDIR+=	win32-codecs
 SUBDIR+=	x264-devel
 SUBDIR+=	xanim
