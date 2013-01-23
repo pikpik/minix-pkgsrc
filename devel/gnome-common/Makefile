@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2012/10/28 08:23:16 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/31 11:17:02 asau Exp $
 
 DISTNAME=	gnome-common-3.6.0
+PKGREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-common/3.6/}
 EXTRACT_SUFX=	.tar.xz

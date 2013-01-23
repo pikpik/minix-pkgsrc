@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.14 2012/10/03 21:58:31 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/11/30 07:19:44 wen Exp $
 
-DISTNAME=	moodle-2.3.3
+DISTNAME=	moodle-2.3.4
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=moodle/}
 EXTRACT_SUFX=	.tgz
@@ -89,7 +89,6 @@ WRKSRC=			${WRKDIR}/moodle
 
 post-extract:
 	${CP} ${FILESDIR}/moodle.conf ${WRKDIR}/moodle.conf
-	${RM} ${WRKSRC}/.gitignore
 
 do-install:
 	cd ${WRKSRC} && ${FIND} . -type d -exec ${INSTALL_DATA_DIR} \

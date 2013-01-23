@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.274 2013/01/22 15:32:21 jaapb Exp $
+$NetBSD: CHANGES-2013,v 1.280 2013/01/23 01:15:57 wen Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -357,3 +357,9 @@ Changes to the packages collection and infrastructure in 2013:
 	Added multimedia/libdvbpsi0 version 0.2.2 [wiz 2013-01-22]
 	Removed multimedia/vlc10 [wiz 2013-01-22]
 	Updated lang/coq to 8.4pl1 [jaapb 2013-01-22]
+	Updated devel/gnome-common to 3.6.0nb1 [wiz 2013-01-22]
+	Updated geography/geos to 3.3.7 [gdt 2013-01-23]
+	Updated www/moodle to 2.3.4 [wen 2013-01-23]
+	Updated devel/p5-Test-Compile to 0.23 [wen 2013-01-23]
+	Updated textproc/p5-String-Approx to 3.27 [wen 2013-01-23]
+	Updated textproc/p5-PDF-API2 to 2.020 [wen 2013-01-23]
