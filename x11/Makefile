@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.672 2012/12/17 00:33:35 khorben Exp $
+# $NetBSD: Makefile,v 1.674 2013/01/23 21:57:04 wiz Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -112,6 +112,7 @@ SUBDIR+=	gtksourceview2
 SUBDIR+=	gtksourceview3
 SUBDIR+=	gtkstep
 SUBDIR+=	gtkterm2
+SUBDIR+=	gxmessage
 SUBDIR+=	hanterm
 SUBDIR+=	hot-babe
 SUBDIR+=	hsetroot
@@ -369,6 +370,7 @@ SUBDIR+=	tk
 SUBDIR+=	tk-BWidget
 SUBDIR+=	tk-Tix
 SUBDIR+=	tkinfo
+SUBDIR+=	tktable
 SUBDIR+=	transset
 SUBDIR+=	trapproto
 SUBDIR+=	tzosdclock

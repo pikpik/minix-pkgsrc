@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.43 2012/12/31 00:27:37 sbd Exp $
-#
+# $NetBSD: Makefile,v 1.44 2013/01/06 00:35:40 wiz Exp $
 
 DISTNAME=	sed-4.2.2
 PKGNAME=	g${DISTNAME}
 PKGREVISION=	4
 CATEGORIES=	textproc editors
 MASTER_SITES=	${MASTER_SITE_GNU:=sed/}
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/sed/sed.html

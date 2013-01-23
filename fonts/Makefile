@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.227 2012/11/03 22:56:57 ryoon Exp $
+# $NetBSD: Makefile,v 1.228 2012/12/17 12:29:51 wiz Exp $
 #
 
 COMMENT=	Fonts
@@ -29,6 +29,7 @@ SUBDIR+=	baekmuk-ttf
 SUBDIR+=	bakoma-fonts
 SUBDIR+=	bdftopcf
 SUBDIR+=	biznet-iso8859_2
+SUBDIR+=	cantarell-fonts
 SUBDIR+=	chkfontpath
 SUBDIR+=	croscorefonts
 SUBDIR+=	cyberbase-ttf

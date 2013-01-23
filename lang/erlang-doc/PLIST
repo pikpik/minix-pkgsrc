@@ -467,9 +467,11 @@ lib/erlang/lib/dialyzer-${VERSION.dialyzer}/info
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter.eix
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter.html
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_app.html
+lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_codec.html
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_dict.html
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_examples.html
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_intro.html
+lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_make.html
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_sctp.html
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_soc.html
 lib/erlang/lib/diameter-${VERSION.diameter}/doc/html/diameter_tcp.html

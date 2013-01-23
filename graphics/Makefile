@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.642 2012/12/16 16:12:29 ryoon Exp $
+# $NetBSD: Makefile,v 1.644 2013/01/23 21:53:55 wiz Exp $
 #
 
 COMMENT=	Graphics tools and libraries
@@ -154,6 +154,7 @@ SUBDIR+=	gimp-docs-sv
 SUBDIR+=	gimp-docs-zh_CN
 SUBDIR+=	gimp-exif-browser
 SUBDIR+=	gimp-fix-ca
+SUBDIR+=	gimp-high-pass-filter
 SUBDIR+=	gimp-liquid-rescale
 SUBDIR+=	gimp-rawphoto
 SUBDIR+=	gimp-refocus-it
@@ -395,6 +396,7 @@ SUBDIR+=	py-pyfits
 SUBDIR+=	py-seqdiag
 SUBDIR+=	py-sk1libs
 SUBDIR+=	py-uniconvertor
+SUBDIR+=	qcomicbook
 SUBDIR+=	qimageblitz
 SUBDIR+=	qiv
 SUBDIR+=	qiviewer
