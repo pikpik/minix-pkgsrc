@@ -1,6 +1,6 @@
 # $NetBSD$
 #
-DISTNAME=	git-review-1.19
+DISTNAME=	git-review-1.21
 CATEGORIES=	devel
 MASTER_SITES=	http://www.minix3.org/distfiles-minix/
 
