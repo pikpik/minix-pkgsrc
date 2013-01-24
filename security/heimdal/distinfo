@@ -20,3 +20,4 @@ SHA1 (patch-lib_kadm5_ipropd__common.c) = 57b5ae4c652bce3dae7c2a32847f906198a29e
 SHA1 (patch-lib_kadm5_ipropd__slave.c) = a0ae5ad71cc51d23a50c00466e88de8ba7b5368b
 SHA1 (patch-lib_krb5_get__addrs.c) = c2353f8653b927a019a810e28b2ecb4f1eda8bfd
 SHA1 (patch-lib_otp_Makefile.in) = 0fe1426000824614f0e31d3ab2348948f3f414d3
+SHA1 (patch-lib_roken_getifaddrs.c) = e2b9e400e4e05d8f0cb7f74ef15e1dbd5a2140ae
