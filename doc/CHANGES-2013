@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.327 2013/01/25 12:07:34 obache Exp $
+$NetBSD: CHANGES-2013,v 1.333 2013/01/25 22:36:51 imil Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -412,3 +412,12 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated print/lilypond to 2.16.2 [wiz 2013-01-25]
 	Updated inputmethod/libskk to 1.0.0 [obache 2013-01-25]
 	Updated inputmethod/tegaki-wagomu to 0.3.1nb6 [obache 2013-01-25]
+	Updated www/php-owncloud to 4.5.6 [ryoon 2013-01-25]
+	Updated devel/gitolite to 3.04 [ryoon 2013-01-25]
+	Updated www/apache-tomcat7 to 7.0.35 [ryoon 2013-01-25]
+	Updated devel/lua-lrexlib to 2.7.2 [ryoon 2013-01-25]
+	Updated devel/lua-lrexlib-onig to 2.7.2 [ryoon 2013-01-25]
+	Updated devel/lua-lrexlib-pcre to 2.7.2nb1 [ryoon 2013-01-25]
+	Updated devel/lua-lrexlib-posix to 2.7.2 [ryoon 2013-01-25]
+	Added www/py-tornado version 2.4.1 [imil 2013-01-25]
+	Updated databases/p5-DBD-mysql to 4.022 [rhaen 2013-01-26]

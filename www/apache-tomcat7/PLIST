@@ -100,6 +100,7 @@ share/tomcat/webapps/docs/cgi-howto.html
 share/tomcat/webapps/docs/changelog.html
 share/tomcat/webapps/docs/class-loader-howto.html
 share/tomcat/webapps/docs/cluster-howto.html
+share/tomcat/webapps/docs/comments.html
 share/tomcat/webapps/docs/config/ajp.html
 share/tomcat/webapps/docs/config/cluster-channel.html
 share/tomcat/webapps/docs/config/cluster-deployer.html

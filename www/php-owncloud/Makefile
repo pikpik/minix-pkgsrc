@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2012/12/24 01:27:35 ryoon Exp $
+# $NetBSD: Makefile,v 1.24 2012/12/24 01:40:59 ryoon Exp $
 #
 
-DISTNAME=	owncloud-4.5.5
+DISTNAME=	owncloud-4.5.6
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME}
 CATEGORIES=	www
 MASTER_SITES=	http://owncloud.org/releases/
