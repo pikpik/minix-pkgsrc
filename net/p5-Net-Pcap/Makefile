@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/10/03 21:57:04 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2013/01/27 02:55:36 obache Exp $
 #
 
 DISTNAME=	Net-Pcap-0.16
@@ -10,6 +10,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-Pcap/
 COMMENT=	Perl interface to pcap(3) LBL packet capture library
+LICENSE=	${PERL5_LICENSE}
 
 DEPENDS+=	p5-IO-Interface-[0-9]*:../../net/p5-IO-Interface
 # Used during test, doesn't work properly:
@@ -18,6 +19,9 @@ DEPENDS+=	p5-IO-Interface-[0-9]*:../../net/p5-IO-Interface
 BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=0.9.5
 
 PERL5_PACKLIST=	auto/Net/Pcap/.packlist
+
+MAKE_PARAMS+=	INC=-I${BUILDLINK_PREFIX.libpcap}/include
+MAKE_PARAMS+=	LIBS='-L${BUILDLINK_PREFIX.libpcap}/lib ${COMPILER_RPATH_FLAG}${BUILDLINK_PREFIX.libpcap}/lib -lpcap'
 
 .include "../../lang/perl5/module.mk"
 .include "../../net/libpcap/buildlink3.mk"

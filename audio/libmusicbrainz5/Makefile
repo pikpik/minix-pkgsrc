@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/05/29 13:31:38 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/09/12 00:24:43 asau Exp $
 
 DISTNAME=	libmusicbrainz-5.0.1
 PKGNAME=	${DISTNAME:S/brainz/brainz5/}
 CATEGORIES=	audio
-MASTER_SITES=	https://github.com/downloads/metabrainz/libmusicbrainz/
+MASTER_SITES=	http://cloud.github.com/downloads/metabrainz/libmusicbrainz/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://musicbrainz.org/doc/libmusicbrainz
 COMMENT=	MusicBrainz (user-maintained community music metadatabase) library v5
 LICENSE=	gnu-lgpl-v2.1
-
-FETCH_USING=	curl
 
 USE_CMAKE=		yes
 USE_LANGUAGES=		c c++
