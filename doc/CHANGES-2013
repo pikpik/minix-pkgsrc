@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.382 2013/01/27 10:49:51 rhaen Exp $
+$NetBSD: CHANGES-2013,v 1.386 2013/01/27 16:51:42 kleink Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -441,7 +441,7 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated devel/p5-AnyEvent to 7.04 [rhaen 2013-01-26]
 	Updated devel/p5-EV to 4.11 [rhaen 2013-01-26]
 	Added devel/p5-Safe-Isa version 1.000002 [rhaen 2013-01-26]
-	Updated www/p5-Catalyst to 5.90019 [rhaen 2013-01-26]
+	Updated www/p5-Catalyst-Runtime to 5.90019 [rhaen 2013-01-26]
 	Updated www/p5-Mojolicious to 3.82 [rhaen 2013-01-26]
 	Updated x11/mlterm to 3.1.7 [tsutsui 2013-01-26]
 	Updated mail/dovecot2 to 2.1.13nb1 [bouyer 2013-01-26]
@@ -475,3 +475,6 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated www/p5-CGI-Application-Plugin-ValidateRM to 2.5 [rhaen 2013-01-27]
 	Updated www/p5-HTML-Mason to 1.50 [rhaen 2013-01-27]
 	Updated www/p5-Starman to 0.3006 [rhaen 2013-01-27]
+	Added mail/mimp version 1.1.4 [bouyer 2013-01-27]
+	Updated www/py-wtforms to 1.0.3 [kleink 2013-01-27]
+	Updated www/py-django-photologue to 2.5 [adam 2013-01-27]
