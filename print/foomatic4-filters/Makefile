@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2012/10/03 21:57:17 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 13:45:38 asau Exp $
 
 DISTNAME=	foomatic-filters-4.0.9
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	http://www.openprinting.org/download/foomatic/
 

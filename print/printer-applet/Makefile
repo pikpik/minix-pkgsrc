@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2012/10/02 17:11:52 tron Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/08 23:02:21 adam Exp $
 
 DISTNAME=	printer-applet-${_KDE_VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	print
 COMMENT=	KDE printer applet
 

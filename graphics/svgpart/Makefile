@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2012/10/02 17:11:19 tron Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/08 23:01:49 adam Exp $
 
 DISTNAME=	svgpart-${_KDE_VERSION}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 COMMENT=	KDE svg part
 

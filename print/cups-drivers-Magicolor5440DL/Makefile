@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2012/03/16 01:09:44 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/08 13:45:36 asau Exp $
 #
 
 DISTNAME=	5440DL_lin64bit_1_2_1
 PKGNAME=	cups-drivers-Magicolor5440DL-1.2.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	print
 MASTER_SITES=	http://printer.konicaminolta.net/drivers/linux/
 EXTRACT_SUFX=	.zip

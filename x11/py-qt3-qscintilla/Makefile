@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.32 2011/11/01 06:03:05 sbd Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/29 05:06:45 asau Exp $
 #
 
 .include "../../x11/py-qt3-base/Makefile.common"
 
 PKGNAME=		${PYPKGPREFIX}-qt3-qscintilla-${PYQT_VERSION}
-PKGREVISION=		8
+PKGREVISION=		9
 
 COMMENT=		Python binding for QScintilla
 

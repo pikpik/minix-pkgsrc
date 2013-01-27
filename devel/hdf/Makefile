@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.37 2012/10/31 11:17:05 asau Exp $
+# $NetBSD: Makefile,v 1.38 2013/01/11 00:15:39 joerg Exp $
 
 DISTNAME=	HDF4.2r4
 PKGNAME=	hdf-4.2r4
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.hdfgroup.org/HDF/HDF_Current/src/
 EXTRACT_USING=	bsdtar

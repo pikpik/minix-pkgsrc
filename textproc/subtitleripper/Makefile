@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2012/02/06 12:41:45 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/25 06:57:01 asau Exp $
 #
 
 DISTNAME=	subtitleripper-0.3-4
 PKGNAME=	subtitleripper-0.3.4
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	textproc graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=subtitleripper/}
 EXTRACT_SUFX=	.tgz

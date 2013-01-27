@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.72 2012/12/07 23:52:09 schnoebe Exp $
+# $NetBSD: Makefile,v 1.73 2012/12/22 20:00:11 joerg Exp $
 
 DISTNAME=	psi-0.15
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=psi/}
 EXTRACT_SUFX=	.tar.bz2

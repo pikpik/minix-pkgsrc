@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/10/25 06:56:03 asau Exp $
+# $NetBSD: Makefile,v 1.8 2012/12/16 01:52:35 obache Exp $
 #
 
 DISTNAME=	liblrdf-0.5.0
@@ -15,13 +15,13 @@ WRKSRC=		${WRKDIR}/swh-LRDF-7ebc032
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		aclocal autoconf autoheader automake pkg-config
+USE_TOOLS+=		autoreconf aclocal autoconf autoheader automake pkg-config
 USE_LANGUAGES=		c
 
 PKGCONFIG_OVERRIDE+=	lrdf.pc.in
 
 pre-configure:
-	cd ${WRKSRC} && aclocal && autoheader && libtoolize && autoconf && automake -acf
+	cd ${WRKSRC} && rm m4/* && autoreconf -fi
 
 .include "../../audio/ladspa/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"

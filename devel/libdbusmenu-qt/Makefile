@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2012/10/08 23:01:01 adam Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/31 11:17:12 asau Exp $
 #
 
 DISTNAME=	libdbusmenu-qt-0.9.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel
 MASTER_SITES=	http://launchpad.net/libdbusmenu-qt/trunk/0.9.2/+download/
 EXTRACT_SUFX=	.tar.bz2

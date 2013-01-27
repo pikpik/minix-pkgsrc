@@ -1,0 +1,14 @@
+$NetBSD$
+
+automake-1.13 compat.
+
+--- gnome-pty-helper/configure.in.orig	2012-03-08 20:37:13.000000000 +0000
++++ gnome-pty-helper/configure.in
+@@ -8,7 +8,6 @@ AC_CONFIG_SRCDIR([gnome-pty.h])
+ AC_ISC_POSIX
+ AC_PROG_CC
+ AC_STDC_HEADERS
+-AM_PROG_CC_STDC
+ 
+ if test -z "$enable_maintainer_mode"; then
+   enable_maintainer_mode=yes

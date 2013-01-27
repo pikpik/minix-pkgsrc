@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/09/14 12:19:31 drochner Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 13:45:42 asau Exp $
 
 DISTNAME=	luatex-beta-0.70.1
 PKGNAME=	${DISTNAME:S/-beta//:S/-source//}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	print
 MASTER_SITES=	http://foundry.supelec.fr/gf/download/frsrelease/392/1730/
 EXTRACT_SUFX=	.tar.bz2

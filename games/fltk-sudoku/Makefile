@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2011/01/13 13:37:43 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/06 11:54:37 asau Exp $
 
 DISTNAME=	fltk-1.1.7-source
 PKGNAME=	fltk-sudoku-1.1.7
-PKGREVISION=	5
+PKGREVISION=	6
 VERS=		${DISTNAME:S/fltk-//:S/-source//}
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fltk/} \
