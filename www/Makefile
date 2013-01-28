@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.928 2013/01/25 22:35:04 imil Exp $
+# $NetBSD: Makefile,v 1.929 2013/01/26 08:54:25 obache Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -547,6 +547,9 @@ SUBDIR+=	py-django-appconf
 SUBDIR+=	py-django-appmedia
 SUBDIR+=	py-django-classy-tags
 SUBDIR+=	py-django-cms
+SUBDIR+=	py-django-cmsplugin_gallery
+SUBDIR+=	py-django-easy-thumbnails
+SUBDIR+=	py-django-inline-ordering
 SUBDIR+=	py-django-mezzanine-filebrowser
 SUBDIR+=	py-django-mezzanine-grappelli
 SUBDIR+=	py-django-mptt
