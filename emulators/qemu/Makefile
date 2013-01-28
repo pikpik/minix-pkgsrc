@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.104 2013/01/16 05:44:49 taca Exp $
+# $NetBSD: Makefile,v 1.105 2013/01/24 17:52:01 ryoon Exp $
 
 DISTNAME=		qemu-1.3.0
 CATEGORIES=		emulators
@@ -126,6 +126,7 @@ post-install:
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../lang/python/extension.mk"
+.include "../../x11/pixman/buildlink3.mk"
 .include "../../mk/curses.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
