@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.560 2013/01/19 21:53:47 reed Exp $
+# $NetBSD: Makefile,v 1.561 2013/01/30 12:30:14 obache Exp $
 #
 
 COMMENT=	System utilities
@@ -272,6 +272,7 @@ SUBDIR+=	memtest86
 SUBDIR+=	memtester
 SUBDIR+=	memtestplus
 SUBDIR+=	mencvcd
+SUBDIR+=	menu-cache
 SUBDIR+=	mesure
 SUBDIR+=	mgm
 SUBDIR+=	mklivecd
