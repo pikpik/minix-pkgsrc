@@ -1,9 +1,16 @@
-@comment $NetBSD: PLIST,v 1.2 2006/02/05 00:27:16 adrianp Exp $
-include/libssh/config.h
-include/libssh/crypto.h
+@comment $NetBSD$
+lib/pkgconfig/libssh.pc
+lib/pkgconfig/libssh_threads.pc
+include/libssh/callbacks.h
 include/libssh/libssh.h
-include/libssh/server.h
+include/libssh/ssh2.h
+include/libssh/legacy.h
 include/libssh/sftp.h
+include/libssh/server.h
+@comment, XXX PLIST lib handling seems to be broke
+lib/libssh.so.4.2.4
+lib/libssh.so.4
 lib/libssh.so
-share/doc/libssh/API.html
-share/doc/libssh/README
+lib/libssh_threads.so.4.2.4
+lib/libssh_threads.so.4
+lib/libssh_threads.so

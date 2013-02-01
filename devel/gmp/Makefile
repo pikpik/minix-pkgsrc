@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.64 2012/10/31 11:17:01 asau Exp $
+# $NetBSD: Makefile,v 1.65 2013/01/31 20:30:25 adam Exp $
 
 DISTNAME=	gmp-5.1.0
 CATEGORIES=	devel math
 MASTER_SITES=	ftp://ftp.gmplib.org/pub/${DISTNAME}/
-EXTRACT_SUFX=	.tar.xz
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gmplib.org/
