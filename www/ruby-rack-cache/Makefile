@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/12/15 15:28:36 taca Exp $
+# $NetBSD: Makefile,v 1.2 2012/03/05 12:58:01 taca Exp $
 
 DISTNAME=	rack-cache-1.2
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://rack.rubyforge.org/
+HOMEPAGE=	http://rack.github.com/
 COMMENT=	HTTP Caching for Rack
 LICENSE=	mit
 

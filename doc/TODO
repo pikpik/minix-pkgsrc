@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11899 2013/01/31 10:25:56 wiz Exp $
+$NetBSD: TODO,v 1.11902 2013/01/31 21:48:01 adam Exp $
 
 Suggested new packages
 ======================
@@ -603,7 +603,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o gap-4r4p9
 	o gated-3.6
 	o gaupol-0.21.1
-	o gawk-4.0.2
 	o gcin-1.5.5
 	o gcombust-0.1.55
 	o gcpio-2.10
@@ -619,9 +618,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o gedit-plugins-2.32.0 [GNOME 2.32]
 	o genius-1.0.16
 	o gentoo-0.19.13
-	o gettext-0.18.2
-	o gettext-lib-0.18.2
-	o gettext-m4-0.18.2
 	o gfract-0.33
 	o ghc-7.6
 	o ghostscript-9.06 [wip]
@@ -635,8 +631,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o glade3-3.14.2
 	o gle-4.2.4
 	o glom-1.14.2 [GNOME 2.26]
-	o glpk-4.48
-	o gmp-5.1.0
 	o gnet1-1.1.9
 	o gnetman-20050429
 	o gnome-3.6.1
@@ -936,7 +930,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o opal-3.8.0 [pkg/42942]
 	o opal-3.8.3
 	o open-vm-tools-2010.09.19.301124
-	o opencv-2.4.3
 	o opendkim-2.7.4
 	o opengrok-0.11.1
 	o openmortal-0.7.1

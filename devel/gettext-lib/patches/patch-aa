@@ -1,8 +1,8 @@
 $NetBSD$
 
---- gettext-runtime/intl/localcharset.c.orig	2010-06-06 12:49:57.000000000 +0000
+--- gettext-runtime/intl/localcharset.c.orig	2012-12-24 00:33:38.000000000 +0000
 +++ gettext-runtime/intl/localcharset.c
-@@ -21,6 +21,10 @@
+@@ -19,6 +19,10 @@
  
  #include <config.h>
  
@@ -13,7 +13,7 @@ $NetBSD$
  /* Specification.  */
  #include "localcharset.h"
  
-@@ -547,3 +551,4 @@ locale_charset (void)
+@@ -556,3 +560,4 @@ locale_charset (void)
  
    return codeset;
  }

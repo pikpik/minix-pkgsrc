@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.420 2013/01/31 10:26:11 wiz Exp $
+$NetBSD: CHANGES-2013,v 1.428 2013/01/31 22:02:35 adam Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -532,3 +532,22 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated security/mozilla-rootcerts to 1.0.20121229 [wiz 2013-01-31]
 	Updated pkgtools/pkg_install to 20130131 [wiz 2013-01-31]
 	Updated net/wireshark to 1.8.5 [tron 2013-01-31]
+	Updated databases/ruby-dm-active_model to 1.2.1nb2 [taca 2013-01-31]
+	Updated databases/ruby-dm-rails to 1.2.1nb2 [taca 2013-01-31]
+	Updated lang/ruby193-base to 1.9.3p374 [taca 2013-01-31]
+	Updated databases/ruby-gdbm to 1.9.3p374nb2 [taca 2013-01-31]
+	Updated devel/ruby-curses to 1.9.3p374 [taca 2013-01-31]
+	Updated devel/ruby-fiddle to 1.9.3p374 [taca 2013-01-31]
+	Updated devel/ruby-readline to 1.9.3p374nb2 [taca 2013-01-31]
+	Updated x11/ruby-tk to 1.9.3p374nb1 [taca 2013-01-31]
+	Updated lang/ruby193 to 1.9.3p374 [taca 2013-01-31]
+	Updated devel/ruby-mode to 1.9.3p374 [taca 2013-01-31]
+	Updated devel/gmp to 5.1.0 [adam 2013-01-31]
+	Updated math/glpk to 4.48 [adam 2013-01-31]
+	Added print/qpdf version 4.0.1 [wiz 2013-01-31]
+	Updated devel/gettext to 0.18.2 [adam 2013-01-31]
+	Updated devel/gettext-asprintf to 0.18.2 [adam 2013-01-31]
+	Updated devel/gettext-lib to 0.18.2 [adam 2013-01-31]
+	Updated devel/gettext-m4 to 0.18.2 [adam 2013-01-31]
+	Updated lang/gawk to 4.0.2 [adam 2013-01-31]
+	Added x11/lxsession version 0.4.6.1nb1 [reed 2013-02-01]
