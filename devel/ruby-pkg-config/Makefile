@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/02/01 12:32:12 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/02/01 12:48:17 obache Exp $
 
 DISTNAME=	pkg-config-1.1.3
 CATEGORIES=	devel
@@ -12,8 +12,6 @@ COMMENT=	pkg-config implemented by pure Ruby
 LICENSE=	gnu-lgpl-v2.1
 
 CONFLICTS+=	${RUBY_PKGPREFIX}-gnome2-glib<0.90.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_RUBY_SETUP=		yes
 

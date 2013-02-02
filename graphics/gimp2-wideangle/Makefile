@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2012/02/06 12:40:24 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/08 23:01:43 adam Exp $
 #
 
 DISTNAME=	wideangle
 PKGNAME=	gimp2-wideangle-1.0
-PKGREVISION=	24
+PKGREVISION=	31
 CATEGORIES=	graphics
 MASTER_SITES=	http://members.ozemail.com.au/~hodsond/
 EXTRACT_SUFX=	.c
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.c
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://members.ozemail.com.au/~hodsond/wideangle.html
 COMMENT=	GIMP plugin for wideangle lens distortions
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pkg-config
 

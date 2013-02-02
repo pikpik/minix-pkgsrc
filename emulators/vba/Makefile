@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.22 2010/06/13 22:44:15 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 12:55:20 asau Exp $
 
 DISTNAME=		VisualBoyAdvance-src-1.7.2
 PKGNAME=		vba-1.7.2
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		emulators
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vba/}
 
-MAINTAINER=		dillo@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://vba.ngemu.com/
 COMMENT=		Gameboy advance emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/VisualBoyAdvance-1.7.2
 USE_TOOLS+=		gmake

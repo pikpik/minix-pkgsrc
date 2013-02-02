@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.46 2011/11/01 06:02:49 sbd Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/29 05:06:12 asau Exp $
 
 DISTNAME=	fox-1.6.33
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	x11
 MASTER_SITES=	http://www.fox-toolkit.org/ftp/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fox-toolkit.org/
 COMMENT=	Fast and extensive C++ GUI toolkit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -45,5 +43,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

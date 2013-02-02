@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.16 2011/08/09 09:54:15 obache Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/31 11:17:45 asau Exp $
 
-DISTNAME=	Class-Accessor-Grouped-0.10006
+DISTNAME=	Class-Accessor-Grouped-0.10009
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Class/}
@@ -10,19 +10,18 @@ HOMEPAGE=	http://search.cpan.org/dist/Class-Accessor-Grouped/
 COMMENT=	Lets you build groups of accessors
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+=	p5-Class-Inspector-[0-9]*:../../devel/p5-Class-Inspector
-DEPENDS+=	p5-Sub-Name>=0.04:../../devel/p5-Sub-Name
+DEPENDS+=	p5-Sub-Name>=0.05:../../devel/p5-Sub-Name
 
 # For test target
 BUILD_DEPENDS+=	p5-Sub-Identify-[0-9]*:../../devel/p5-Sub-Identify
 BUILD_DEPENDS+=	p5-Test-Exception-[0-9]*:../../devel/p5-Test-Exception
 BUILD_DEPENDS+=	{perl>=5.12.0,p5-Test-Simple>=0.94}:../../devel/p5-Test-Simple
+BUILD_DEPENDS+=	p5-Class-XSAccessor>=1.15:../../devel/p5-Class-XSAccessor
 
-USE_LANGUAGES=		# empty
+USE_LANGUAGES=		c
 PERL5_PACKLIST=		auto/Class/Accessor/Grouped/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

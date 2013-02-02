@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.173 2011/11/29 17:06:45 hans Exp $
+# $NetBSD: bootstrap,v 1.181 2012/10/02 21:02:21 cheusov Exp $
 #
 # Copyright (c) 2001-2011 Alistair Crooks <agc@NetBSD.org>
 # All rights reserved.
@@ -39,6 +39,10 @@ BOOTSTRAP_VERSION=20060721
 MAKECONF=/dev/null
 export MAKECONF
 
+# No vulnerability checks since there might be an incompatible checker installed
+NO_PKGTOOLS_REQD_CHECK=yes
+export NO_PKGTOOLS_REQD_CHECK
+
 unprivileged=no
 
 preserve_path=no
@@ -60,6 +64,7 @@ usage="Usage: $0 "'
     [ --mk-fragment <mk.conf> ]
     [ --pkgdbdir <pkgdbdir> ]
     [ --pkgmandir <pkgmandir> ]
+    [ --prefer-pkgsrc <list|yes|no> ]
     [ --prefix <prefix> ]
     [ --preserve-path ]
     [ --quiet ]
@@ -242,15 +247,15 @@ is_root()
 		if [ `uname -r` -lt 6  -a -z "$ID" ]; then
 	# older version of IRIX have an id command with limited features
 			if [ "`$idprog`" != "uid=0(root) gid=0(sys)" ]; then
-				return 0
+				return 1
 			fi
-			return 1
+			return 0
 		fi
 	fi
 	if [ `$idprog -u` != 0 ]; then
-		return 0
+		return 1
 	fi
-	return 1
+	return 0
 }
 
 # run a command, abort if it fails
@@ -386,12 +391,15 @@ while [ $# -gt 0 ]; do
 	--abi=*)	abi=`get_optarg "$1"` ;;
 	--abi)		abi="$2"; shift ;;
 	--unprivileged | --ignore-user-check) unprivileged=yes ;;
+	--prefer-pkgsrc=*)
+			prefer_pkgsrc=`get_optarg "$1"` ;;
+	--prefer-pkgsrc)
+			prefer_pkgsrc="$2"; shift ;;
 	--preserve-path) preserve_path=yes ;;
 	--mk-fragment=*)
 			mk_fragment=`get_optarg "$1"` ;;
 	--mk-fragment)
 			mk_fragment="$2"; shift ;;
-
 	--binary-kit=*)
 			binary_kit=`get_optarg "$1"` ;;
 	--binary-kit)
@@ -498,7 +506,7 @@ FreeBSD)
 	machine_arch=`uname -p`
 	;;
 Haiku)
-	root_user=user
+	root_user=`id -un`
 	root_group=root
 	need_bsd_install=no
 	need_awk=no
@@ -527,9 +535,9 @@ HPUX)
 Interix)
 	is_root () {
 		if id -G | grep -q 131616; then
-			return 1
+			return 0
 		fi
-		return 0
+		return 1
 	}
 	mkdir_p () {
 		mkdir -p "$@" # allows umask to take effect
@@ -675,9 +683,6 @@ QNX)
 	machine_arch=`uname -p | sed -e 's/x86/i386/'`
 	;;
 SunOS)
-	if [ -d "/usr/xpg4/bin" ]; then
-		overpath="/usr/xpg4/bin:$overpath"
-	fi
 	root_group=root
 	need_bsd_install=yes
 	if [ -x "/usr/gnu/bin/awk" ]; then
@@ -690,10 +695,24 @@ SunOS)
 	else
 		need_sed=yes
 	fi
-	need_ksh=yes
+	if [ "`uname -r`" = "5.11" ]; then
+		case "`uname -v`" in
+		joyent_*)
+			bootstrap_sh=${SH:-/usr/bin/bash}
+			bootstrap_sh_set=set
+			;;
+		*)
+			bootstrap_sh=${SH:-/bin/ksh}
+			bootstrap_sh_set=set
+			;;
+		esac
+	else
+		need_ksh=yes
+	fi
 	set_opsys=no
-	groupsprog="/usr/xpg4/bin/id -gn"
-	whoamiprog="/usr/xpg4/bin/id -un"
+	idprog="/usr/xpg4/bin/id"
+	groupsprog="${idprog} -gn"
+	whoamiprog="${idprog} -un"
 	machine_arch=`uname -p | sed -e 's/i86pc/i386/'`
 	check_compiler=yes
 	;;
@@ -815,15 +834,7 @@ run_cmd "$sedprog -e 's|@DEFAULT_INSTALL_MODE@|'${default_install_mode-0755}'|' 
 run_cmd "$chmodprog +x $wrkdir/bin/install-sh"
 install_sh="$shprog $wrkdir/bin/install-sh"
 
-is_root
-if [ $? = 1 ]; then
-	user=$root_user
-	group=$root_group
-else
-	if [ $unprivileged = "no" ]; then
-		die "You must be either root to install bootstrap-pkgsrc or use the --unprivileged option."
-	fi
-
+if [ $unprivileged = "yes" ]; then
 	user=`$whoamiprog`
 	group=`$groupsprog | $awkprog '{print $1}'`
 	echo_msg "building as unprivileged user $user/$group"
@@ -835,6 +846,11 @@ LIBOWN=$user
 LIBGRP=$group
 MANOWN=$user
 MANGRP=$group" > ${wrkdir}/Makefile.inc
+elif is_root; then
+	user=$root_user
+	group=$root_group
+else
+	die "You must be either root to install bootstrap-pkgsrc or use the --unprivileged option."
 fi
 
 # export the proper environment
@@ -873,6 +889,9 @@ sunpro)
 	echo "CPP=			\${CC} -E" >> ${TARGET_MKCONF}
 	;;
 esac
+if [ -n "$GCCBASE" ]; then
+	echo "GCCBASE=		$GCCBASE" >> ${TARGET_MKCONF}
+fi
 if [ -n "$SUNWSPROBASE" ]; then
 	echo "SUNWSPROBASE=		$SUNWSPROBASE" >> ${TARGET_MKCONF}
 fi
@@ -893,6 +912,11 @@ fi
 echo "PKG_TOOLS_BIN=		$prefix/sbin" >> ${TARGET_MKCONF}
 echo "PKGMANDIR=		$pkgmandir" >> ${TARGET_MKCONF}
 echo "" >> ${TARGET_MKCONF}
+
+if [ -n "$prefer_pkgsrc" ]; then
+	echo "PREFER_PKGSRC=		$prefer_pkgsrc" >> ${TARGET_MKCONF}
+	echo "" >> ${TARGET_MKCONF}
+fi
 
 BOOTSTRAP_MKCONF=${wrkdir}/mk.conf
 cp ${TARGET_MKCONF} ${BOOTSTRAP_MKCONF}

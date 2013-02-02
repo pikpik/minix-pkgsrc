@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2011/07/28 04:37:32 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 13:45:42 asau Exp $
 
 DISTNAME=	luatex-beta-0.70.1
 PKGNAME=	${DISTNAME:S/-beta//:S/-source//}
-PKGREVISION=	1
+PKGREVISION=	5
 CATEGORIES=	print
 MASTER_SITES=	http://foundry.supelec.fr/gf/download/frsrelease/392/1730/
 EXTRACT_SUFX=	.tar.bz2
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.luatex.org/
 COMMENT=	Extended version of pdfTeX using Lua
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=no
 
 CONFLICTS+=	web2c<=7.5.7nb3
@@ -104,7 +103,11 @@ CONFIGURE_ARGS+=--with-system-poppler \
 		--with-poppler-libdir=${BUILDLINK_PREFIX.poppler}/lib
 CONFIGURE_DIRS+=. texk/web2c
 MAKE_FLAGS+=	LIBTOOL=${LIBTOOL:Q}
-CFLAGS+=	-DLUA_ROOT=\"${PREFIX}/\"
+
+SUBST_CLASSES+=		prefix
+SUBST_STAGE.prefix=	post-configure
+SUBST_FILES.prefix=	texk/web2c/luatexdir/lua51/luaconf.h
+SUBST_VARS.prefix=	PREFIX
 
 INSTALLATION_DIRS+=	bin
 

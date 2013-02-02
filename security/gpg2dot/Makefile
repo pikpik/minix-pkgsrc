@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2009/04/09 00:48:15 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:57:23 wiz Exp $
 #
 
 DISTNAME=	gpg2dot-1.5
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -9,8 +10,6 @@ DISTFILES=	# empty
 MAINTAINER=	lukem@NetBSD.org
 HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
 COMMENT=	Converts your GnuPG keyring to a graph of associations
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 USE_TOOLS+=	perl:run

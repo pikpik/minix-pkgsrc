@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/01/08 15:11:37 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 22:14:02 wiz Exp $
 
 DISTNAME=	calypso-1.0
 PKGREVISION=	1
@@ -13,13 +13,10 @@ LICENSE=	gnu-gpl-v3
 DEPENDS+=	${PYPKGPREFIX}-vobject>=0.8.1c:../../textproc/py-vobject
 DEPENDS+=	scmgit-base-[0-9]*:../../devel/scmgit-base
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 #WRKSRC=		${WRKDIR}/calypso
 
 PYDISTUTILSPKG=			yes
 PYTHON_VERSIONS_INCLUDE_3X=	yes
-PYTHON_VERSIONS_INCOMPATIBLE=	24 25
 
 INSTALLATION_DIRS=	share/examples/calypso
 

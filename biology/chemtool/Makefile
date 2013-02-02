@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.36 2012/02/06 12:39:32 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/02 17:10:37 tron Exp $
 
 DISTNAME=	chemtool-1.6.13
-PKGREVISION=	2
+PKGREVISION=	6
 CATEGORIES=	biology
 MASTER_SITES=	http://ruby.chemie.uni-freiburg.de/~martin/chemtool/
 
@@ -10,7 +10,6 @@ HOMEPAGE=	http://ruby.chemie.uni-freiburg.de/~martin/chemtool/
 COMMENT=	Program for drawing organic molecules
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config

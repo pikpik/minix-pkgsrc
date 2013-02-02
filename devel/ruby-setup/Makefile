@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/02/16 16:39:36 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/10 06:26:00 taca Exp $
 # $FreeBSD: ports/devel/ruby-setup.rb/Makefile,v 1.20 2006/06/08 20:25:19 sem Exp $
 
 DISTNAME=	setup-3.4.1
@@ -16,7 +16,6 @@ DOCS_EN=	doc.en/* NEWS.en Usage_en.txt README.en ChangeLog TODO
 DOCS_JA=	doc.ja/* NEWS.ja Usage_ja.txt README.ja
 REPLACE_RUBY=	setup.rb
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin ${RUBY_DOC}/setup/ja ${RUBY_EG}/setup \
 			${RUBY_VENDORLIB}
 

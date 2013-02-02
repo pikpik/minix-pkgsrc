@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/11/24 17:58:22 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2012/12/16 16:07:53 wiz Exp $
 #
 
-DISTNAME=	Cython-0.13
-PKGNAME=	${PYPKGPREFIX}-cython-0.13
+DISTNAME=	Cython-0.17.4
+PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/Cy/cy/}
 CATEGORIES=	lang python
 MASTER_SITES=	http://cython.org/release/
 
@@ -11,22 +11,27 @@ HOMEPAGE=	http://cython.org/
 COMMENT=	C-Extensions for Python
 LICENSE=	apache-1.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	c
 PYDISTUTILSPKG= yes
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
+PLIST_VARS=	cygdb
+
+REPLACE_PYTHON+=	Cython/Debugger/Cygdb.py
+REPLACE_PYTHON+=	Cython/Debugger/libpython.py
+REPLACE_PYTHON+=	cython.py
 
 post-extract:
 	cd ${WRKSRC}/bin && ${MV} cython cython${PYVERSSUFFIX}
+	cd ${WRKSRC}/bin && ${MV} cygdb cygdb${PYVERSSUFFIX}
 
 # for test only
 #USE_LANGUAGES+= c++
 do-test:
 	(cd ${WRKSRC} && ${PYTHONBIN} runtests.py)
 
+.include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 # for test only
 #.include "../../math/py-numpy/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/07/08 14:12:30 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/01/23 09:39:52 wiz Exp $
 
 DISTNAME=	dbench-3.04
 PKGREVISION=	1
@@ -10,7 +10,6 @@ HOMEPAGE=	http://samba.org/ftp/tridge/dbench/README
 COMMENT=	Simulation of the Ziff-Davis netbench benchmark
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.113 2012/02/06 12:39:17 wiz Exp $
+# $NetBSD: Makefile,v 1.122 2012/10/03 21:53:53 wiz Exp $
 #
 
 DISTNAME=	file-roller-2.32.2
-PKGREVISION=	3
+PKGREVISION=	11
 CATEGORIES=	archivers gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/file-roller/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fileroller.sourceforge.net/
 COMMENT=	Front-end to archiving programs like tar and zip
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

@@ -1,10 +1,10 @@
-$NetBSD: patch-bd,v 1.1 2011/08/19 14:39:09 tnn Exp $
+$NetBSD: patch-bd,v 1.4 2012/07/19 17:57:30 ryoon Exp $
 
---- mozilla/js/src/ctypes/CTypes.cpp.orig	2012-02-16 10:25:02.000000000 +0000
+--- mozilla/js/src/ctypes/CTypes.cpp.orig	2012-08-25 00:31:11.000000000 +0000
 +++ mozilla/js/src/ctypes/CTypes.cpp
-@@ -36,6 +36,22 @@
-  *
-  * ***** END LICENSE BLOCK ***** */
+@@ -5,6 +5,23 @@
+ 
+ #include "mozilla/FloatingPoint.h"
  
 +#if defined(__NetBSD__)
 +#include <stdint.h>
@@ -20,6 +20,7 @@ $NetBSD: patch-bd,v 1.1 2011/08/19 14:39:09 tnn Exp $
 +#define int64_t int64_t
 +#define intptr_t intptr_t
 +#define uintptr_t uintptr_t
++#define off_t off_t
 +#endif
 +
  #include "CTypes.h"

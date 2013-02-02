@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.43 2012/02/09 21:44:29 sbd Exp $
+# $NetBSD: Makefile,v 1.48 2012/12/17 18:37:08 markd Exp $
 
 DISTNAME=	kdirstat-2.4.4
-PKGREVISION=	14
+PKGREVISION=	17
 CATEGORIES=	sysutils kde
 MASTER_SITES=	http://kdirstat.sourceforge.net/download/
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	markd@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kdirstat.sourceforge.net/
 COMMENT=	Graphical disk usage utility
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt
 USE_LANGUAGES=		c c++

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2006/10/28 21:29:47 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2010/02/20 14:58:45 joerg Exp $
 #
 
 DISTNAME=	mod_gzip-1.3.26.1a
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/mod-gzip/
 COMMENT=	On-the-fly GZIP compression for Apache 1.3.x
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ap-gzip-[0-9]*
 

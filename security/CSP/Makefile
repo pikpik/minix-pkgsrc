@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2010/11/01 00:08:15 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:57:22 wiz Exp $
 #
 
 DISTNAME=	CSP-0.32
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.su.se/pub/users/leifj/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${CSPGUIDE}
@@ -10,8 +10,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${CSPGUIDE}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://devel.it.su.se/pub/jsp/polopoly.jsp?d=1026&a=3290
 COMMENT=	Simple PKI Toolkit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Date-Calc>=5.4:../../devel/p5-Date-Calc
 DEPENDS+=	p5-IPC-Run>=0.79:../../devel/p5-IPC-Run
@@ -28,7 +26,7 @@ PERL5_PACKLIST=	auto/CSP/.packlist
 CSPHOME=	${VARBASE}/csp
 OPENSSLBIN=	${BUILDLINK_PREFIX.openssl}/bin/openssl
 OWN_DIRS=	${CSPHOME}
-INSTALLATION_DIRS=	share/doc/csp
+INSTALLATION_DIRS=	share/doc/csp ${CSPHOME}
 
 BUILD_DEFS+=	CSPHOME
 

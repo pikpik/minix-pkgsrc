@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2012/02/06 12:40:52 wiz Exp $
+# $NetBSD: Makefile,v 1.48 2012/10/03 21:56:36 wiz Exp $
 #
 
-DISTNAME=		genius-1.0.14
-PKGREVISION=		3
+DISTNAME=		genius-1.0.15
+PKGREVISION=		6
 CATEGORIES=		math
 MASTER_SITES=		http://ftp.5z.com/pub/genius/
 
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.jirka.org/genius.html
 COMMENT=		Calculator and math tool
 LICENSE=		gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 USE_PKGLOCALEDIR=	yes

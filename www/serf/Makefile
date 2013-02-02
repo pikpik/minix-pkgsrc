@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2011/11/27 05:42:50 sbd Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/28 06:31:04 asau Exp $
 #
 
 DISTNAME=	serf-0.3.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://serf.googlecode.com/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/serf/
 COMMENT=	High-performance asynchronous HTTP client library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 

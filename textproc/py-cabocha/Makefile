@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/05/19 12:37:04 obache Exp $
+# $NetBSD: Makefile,v 1.2 2012/02/07 11:05:00 obache Exp $
 #
 
 .include "../../textproc/cabocha/Makefile.common"
@@ -8,8 +8,6 @@ PKGREVISION=	1
 CATEGORIES+=	python
 
 COMMENT=	CaboCha python module
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 

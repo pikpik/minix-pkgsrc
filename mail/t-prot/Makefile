@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2009/09/02 12:11:21 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:56:35 wiz Exp $
 #
 
 DISTNAME=	t-prot-2.15
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.escape.de/users/tolot/mutt/t-prot/downloads/
 
@@ -10,8 +11,6 @@ HOMEPAGE=	http://www.escape.de/users/tolot/mutt/t-prot/
 COMMENT=	TOFU enhancement to mutt for condensing quoted text
 
 DEPENDS+=	p5-Getopt-Mixed>=1.10:../../devel/p5-Getopt-Mixed
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PERL+=	t-prot
 

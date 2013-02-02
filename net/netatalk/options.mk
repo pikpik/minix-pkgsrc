@@ -1,7 +1,7 @@
-# $NetBSD: options.mk,v 1.1 2009/02/22 07:35:16 taca Exp $
+# $NetBSD: options.mk,v 1.3 2012/05/16 12:11:17 hauke Exp $
 #
 PKG_OPTIONS_VAR=	PKG_OPTIONS.netatalk
-PKG_SUPPORTED_OPTIONS=	cups kerberos pam slp
+PKG_SUPPORTED_OPTIONS=	cups debug kerberos pam slp ldap
 
 .include "../../mk/bsd.options.mk"
 
@@ -10,6 +10,16 @@ PKG_SUPPORTED_OPTIONS=	cups kerberos pam slp
 CONFIGURE_ARGS+=	--enable-cups
 .else
 CONFIGURE_ARGS+=	--disable-cups
+.endif
+
+PLIST_VARS+=		debug
+.if !empty(PKG_OPTIONS:Mdebug)
+# Debugging
+CONFIGURE_ARGS+=	--enable-debug1
+CONFIGURE_ARGS+=	--enable-debug
+CONFIGURE_ARGS+=	--enable-debugging
+CFLAGS+=		-g3
+INSTALL_UNSTRIPPED=	yes
 .endif
 
 PLIST_VARS+=		gssapi
@@ -37,4 +47,11 @@ CONFIGURE_ARGS+=	--without-pam
 CONFIGURE_ARGS+=	--enable-srvloc
 .else
 CONFIGURE_ARGS+=	--disable-srvloc
+.endif
+
+.if !empty(PKG_OPTIONS:Mldap)
+.include "../../databases/openldap-client/buildlink3.mk"
+CONFIGURE_ARGS+=       --with-ldap=yes
+.else
+CONFIGURE_ARGS+=       --with-ldap=no
 .endif

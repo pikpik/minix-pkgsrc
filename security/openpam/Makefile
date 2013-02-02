@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.15 2008/02/18 16:48:12 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:57:25 wiz Exp $
 
 DISTNAME=	openpam-20071221
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openpam/}
-PKGREVISION=	1
 
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.openpam.org/
 COMMENT=	Open-source PAM library
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	PAM-[0-9]*
 

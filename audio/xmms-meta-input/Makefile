@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.17 2011/04/22 13:42:12 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/06/04 09:29:55 wiz Exp $
 #
 
 DISTNAME=		xmms-meta-input-0.4
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		audio
 MASTER_SITES=		http://www.corbac.com/Data/Sources/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.corbac.com/page3.html
 COMMENT=		XMMS plugin wrapper for shell scripts
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	lib/xmms/Input
 REQD_DIRS+=		lib/xmms/Input/Meta

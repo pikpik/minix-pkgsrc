@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2012/02/09 21:44:28 sbd Exp $
+# $NetBSD: Makefile,v 1.29 2012/11/19 02:57:15 joerg Exp $
 #
 
 DISTNAME=	kchm-0.6.5
-PKGREVISION=	20
+PKGREVISION=	23
 CATEGORIES=	kde misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kchmnew/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://kchmnew.sourceforge.net/
 COMMENT=	KDE CHM file viewer
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	YES
 SET_LIBDIR=	YES
 USE_LANGUAGES=	c c++
@@ -20,6 +18,8 @@ USE_LIBTOOL=	YES
 USE_TOOLS+=	gmake
 
 CONFLICTS=	chmlib-[0-9]*
+
+BUILDLINK_TRANSFORM+=	rm:-fno-exceptions
 
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/15 09:02:43 ryoon Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/13 10:16:23 ryoon Exp $
 
 .include "../../devel/xulrunner10/dist.mk"
 PKGNAME=	firefox10-${FIREFOX_VER}
+PKGREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	tnn@NetBSD.org
-HOMEPAGE=	http://www.mozilla.com/en-US/firefox/
+HOMEPAGE=	http://www.mozilla.org/en-US/firefox/organizations/
 COMMENT=	Web browser with support for extensions
 LICENSE=	mpl-1.1
 

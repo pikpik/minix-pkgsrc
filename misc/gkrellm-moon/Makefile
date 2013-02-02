@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.31 2012/02/06 12:40:56 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/08 09:57:23 asau Exp $
 #
 
 DISTNAME=		gkrellmoon-0.6
 PKGNAME=		gkrellm-moon-0.6
-PKGREVISION=		16
+PKGREVISION=		20
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gkrellmoon/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://gkrellmoon.sourceforge.net/
 COMMENT=		GKrellM2 moonclock plugin
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 BUILD_TARGET=		gkrellmoon.so

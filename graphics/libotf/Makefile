@@ -1,17 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2010/10/16 06:30:35 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/13 01:35:44 obache Exp $
 #
 
-DISTNAME=	libotf-0.9.12
-PKGREVISION=	1
+DISTNAME=	libotf-0.9.13
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.m17n.org/libotf/
+MASTER_SITES=	http://download.savannah.gnu.org/releases/m17n/
 
 MAINTAINER=	obache@NetBSD.org
-HOMEPAGE=	http://www.m17n.org/libotf/
+HOMEPAGE=	https://savannah.nongnu.org/projects/m17n
 COMMENT=	Library for handling OpenType fonts (OTF)
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

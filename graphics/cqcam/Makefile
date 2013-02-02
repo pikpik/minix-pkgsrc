@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.34 2010/01/18 09:58:57 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/06 14:10:45 asau Exp $
 #
 
 DISTNAME=		cqcam-0.91
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		graphics x11
 MASTER_SITES=		http://piki.org/patrick/cqcam/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://piki.org/patrick/cqcam/
 COMMENT=		Free Color QuickCam control program
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -40,5 +38,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/tk/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

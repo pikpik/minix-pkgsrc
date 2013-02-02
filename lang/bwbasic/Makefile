@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/03/03 12:38:28 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/01/15 15:29:31 ryoon Exp $
 
 DISTNAME=	bwbasic-2.50
 CATEGORIES=	lang
@@ -9,8 +9,6 @@ MAINTAINER=	jspath@bcpl.net
 HOMEPAGE=	http://sourceforge.net/projects/bwbasic/
 COMMENT=	The Bywater Basic interpreter
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 GNU_CONFIGURE=	yes

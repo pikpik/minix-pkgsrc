@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2011/02/28 14:53:02 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/07/14 23:42:12 wiz Exp $
 #
 
-DISTNAME=	libpciaccess-0.11.0
-PKGREVISION=	1
+DISTNAME=	libpciaccess-0.13.1
 CATEGORIES=	sysutils x11
 MASTER_SITES=	${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	PCI access utility library from X.org
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 ###
 ### XXX This list is probably not exhaustive.
 ###

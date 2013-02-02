@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.48 2012/02/06 12:41:46 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2012/10/08 23:02:29 adam Exp $
 
 DISTNAME=	gnotime-2.3.0
-PKGREVISION=	17
+PKGREVISION=	24
 CATEGORIES=	time gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gttr/}
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gttr.sourceforge.net/
 COMMENT=	Time tracker for GNOME2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
@@ -35,4 +33,5 @@ MAKE_ENV+=		GCONF_SCHEMAS_DIR=${GCONF_SCHEMAS_DIR:Q}
 .include "../../www/gtkhtml314/buildlink3.mk"
 .include "../../x11/libXScrnSaver/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

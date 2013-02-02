@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2012/01/13 10:54:52 obache Exp $
+# $NetBSD: Makefile,v 1.52 2012/12/16 01:52:00 obache Exp $
 #
 
 DISTNAME=	konversation-1.4
+PKGREVISION=	12
 CATEGORIES=	chat kde
 MASTER_SITES=	${MASTER_SITE_KDE:=konversation/1.4/src/}
 EXTRACT_SUFX=	.tar.xz
@@ -10,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://konversation.kde.org/
 COMMENT=	KDE IRC Client
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+= automoc4>=0.9.87:../../devel/automoc4
 
@@ -39,4 +38,5 @@ DEPENDS+=		psmisc>=20.1:../../sysutils/psmisc
 .include "../../security/qca2/buildlink3.mk"
 .include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../x11/libXScrnSaver/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,8 @@
-$NetBSD: distinfo,v 1.7 2010/09/10 19:12:13 joerg Exp $
+$NetBSD: distinfo,v 1.9 2012/06/03 17:29:41 wiz Exp $
 
-SHA1 (libxcb-1.7.tar.bz2) = 7540f0587907bce421914f0ddb813810cb2f36f8
-RMD160 (libxcb-1.7.tar.bz2) = f6748b9751e339c2669a6b9322b421abbbff7afb
-Size (libxcb-1.7.tar.bz2) = 318619 bytes
+SHA1 (libxcb-1.9.tar.bz2) = ad2fb95eeec41ba3d39502a4f7460c3b64fdf061
+RMD160 (libxcb-1.9.tar.bz2) = 8558eee4a0f550e019c30388bf6d0feddaaaac0c
+Size (libxcb-1.9.tar.bz2) = 387612 bytes
 SHA1 (patch-aa) = f099c6a56e965950e38cd451595a8c897fd824d1
-SHA1 (patch-ab) = 5c3600ef18cbe53a766c020d3dd6db5880a1921c
+SHA1 (patch-ab) = 5b4ec005b76dd10730edb6acb9f6b9dd48ef9b2e
 SHA1 (patch-ai) = 637affb3aa2f7d40e0aada4dadab8c695ea74b6f

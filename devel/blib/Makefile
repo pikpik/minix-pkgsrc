@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.23 2012/02/06 12:39:47 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/08 23:00:47 adam Exp $
 #
 
 DISTNAME=		blib-1.0.2
-PKGREVISION=		15
+PKGREVISION=		19
 CATEGORIES=		devel graphics
 MASTER_SITES=		http://sven.gimp.org/blinkenlights/old/
 
 MAINTAINER=		salo@NetBSD.org
 HOMEPAGE=		http://www.blinkenlights.de/
 COMMENT=		Blinkenlights library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		YES

@@ -1,24 +1,29 @@
-# $NetBSD: Makefile,v 1.2 2012/01/08 16:26:57 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.6 2012/08/12 19:24:31 tron Exp $
 
-DISTNAME=	Radicale-0.6.4
-PKGREVISION=	1
-CATEGORIES=	www time
+DISTNAME=	Radicale-0.7.1
+CATEGORIES=	net time www
 MASTER_SITES=	http://pypi.python.org/packages/source/R/Radicale/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://radicale.org/
-COMMENT=	Simple Calendar Server written in Python
+COMMENT=	CalDAV (calendar) and CardDAV (contact) server
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+PYDISTUTILSPKG=		yes
+EGDIR=			share/examples/radicale
 
-USE_LANGUAGES=	# none
-
-PYDISTUTILSPKG=			yes
 PYTHON_VERSIONS_INCLUDE_3X=	yes
-PYTHON_VERSIONS_INCOMPATIBLE=	24 25
+INSTALLATION_DIRS=	${EGDIR}
+OWN_DIRS=		${PKG_SYSCONFDIR}/radicale
+CONF_FILES+=		${EGDIR}/config ${PKG_SYSCONFDIR}/radicale/config
 
-.include "../../lang/python/application.mk"
+post-build:
+	${SED} -e "s#/etc#${PKG_SYSCONFDIR}#" -e "s#apache2/#httpd/#" \
+	  ${WRKSRC}/config >${WRKSRC}/config.pkgsrc
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/config.pkgsrc \
+	  ${DESTDIR}${PREFIX}/${EGDIR}/config
+
 .include "../../lang/python/extension.mk"
 .include "../../mk/bsd.pkg.mk"

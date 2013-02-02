@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2008/03/04 17:57:18 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:56:24 wiz Exp $
 #
 
 DISTNAME=	fromto-1.5
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/lang/perl/sra-scripts/
 EXTRACT_SUFX=	#empty
@@ -13,8 +14,6 @@ LICENSE=	fromto-license  # XXX missing
 RESTRICTED=	Redistribution allowed for non-commercial purposes only
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_TOOLS+=	perl:run

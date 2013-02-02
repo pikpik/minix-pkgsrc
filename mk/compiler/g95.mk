@@ -1,4 +1,4 @@
-# $NetBSD: g95.mk,v 1.2 2010/07/30 07:58:59 asau Exp $
+# $NetBSD: g95.mk,v 1.3 2011/09/28 19:31:09 markd Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -70,6 +70,7 @@ _USE_G95=	YES
 .if !empty(_USE_G95:M[yY][eE][sS])
 EVAL_PREFIX+=		_G95BASE=g95
 _G95BASE_DEFAULT=	${LOCALBASE}
+FC=		g95
 
 _G95_DIR=	${WRKDIR}/.g95
 _G95_VARS=	# empty

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/10/06 13:15:01 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 11:43:41 asau Exp $
 #
 
-DISTNAME=	Padre-Plugin-PerlCritic-0.08
+DISTNAME=	Padre-Plugin-PerlCritic-0.12
 PKGNAME=	p5-${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	editors devel perl5
@@ -12,13 +12,13 @@ HOMEPAGE=	http://search.cpan.org/dist/Padre-Plugin-PerlCritic/
 COMMENT=	Analyze perl files in Padre with Perl::Critic
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+BUILD_DEPENDS+=	p5-Locale-Msgfmt>=0.15:../../devel/p5-Locale-Msgfmt
 
-DEPENDS+=	p5-Padre>=0.54:../../editors/p5-Padre
+DEPENDS+=	p5-Padre>=0.57:../../editors/p5-Padre
 DEPENDS+=	p5-Perl-Critic-[0-9]*:../../devel/p5-Perl-Critic
 
 PERL5_PACKLIST=		auto/Padre/Plugin/PerlCritic/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Build
 
 #pre-configure:
 #	cd ${WRKSRC} && find `pwd` -name "*.orig" -type f | xargs rm

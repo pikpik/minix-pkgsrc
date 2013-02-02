@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2008/03/03 17:45:36 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/18 06:32:57 sbd Exp $
 #
 
 DISTNAME=	p4
 HOMEPAGE=	http://www.perforce.com/perforce/products/p4.html
 COMMENT=	Perforce SCM command-line client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 P4BINONLY=	yes
 

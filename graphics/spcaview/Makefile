@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2011/04/22 13:43:51 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/06 14:11:22 asau Exp $
 #
 
 DISTNAME=	spca5xx-20060402
 PKGNAME=	spcaview-0.6b
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://mxhaard.free.fr/spca50x/Download/oldrelease/
 
@@ -11,11 +11,10 @@ PATCH_SITES=	http://www.medias.ne.jp/~takam/bsd/
 PATCHFILES= 	spca5xx-bsd-0.6b.patch.gz
 PATCH_DIST_STRIP=	-p3
 
-MAINTAINER=	hamajima@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.medias.ne.jp/~takam/bsd/NetBSD.html#spca561
 COMMENT=	USB Cameras based SPCA5xx Utilities
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/drivers/usb

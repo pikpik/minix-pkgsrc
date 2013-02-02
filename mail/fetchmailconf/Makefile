@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.81 2011/08/26 07:19:25 tron Exp $
+# $NetBSD: Makefile,v 1.84 2012/10/08 12:19:11 asau Exp $
 
-DISTNAME=	fetchmail-6.3.21
+DISTNAME=	fetchmail-6.3.22
 PKGNAME=	${DISTNAME:S/fetchmail/fetchmailconf/}
-PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://download.berlios.de/fetchmail/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fetchmail.berlios.de/
 COMMENT=	Configuration tool for fetchmail
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${DISTNAME}{,nb*}:../../mail/fetchmail
 

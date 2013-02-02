@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.52 2012/03/03 12:54:21 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2012/12/15 10:36:31 ryoon Exp $
 
-DISTNAME=	unison-2.40.63
-PKGREVISION=	7
+DISTNAME=	unison-2.40.102
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://www.seas.upenn.edu/~bcpierce/unison/download/releases/stable/
 
@@ -11,13 +11,13 @@ COMMENT=	File-synchronization tool
 LICENSE=	gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .if (${MACHINE_ARCH} == "arm")
 BUILDLINK_ABI_DEPENDS.ocaml+=	ocaml>=3.12.0nb2
 .else
 BUILDLINK_ABI_DEPENDS.ocaml+=	ocaml>=3.11.2
 .endif
+BUILDLINK_API_DEPENDS.lablgtk+= lablgtk>=2.16.0
 
 # docs: unison-manual.pdf/html/ps/dvi
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
@@ -28,7 +28,7 @@ MAKE_ENV+=	HOME=${WRKDIR:Q}
 .include "options.mk"
 .include "../../mk/bsd.prefs.mk"
 
-.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH}=="arm")
+.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH}=="arm") || (${MACHINE_ARCH} == "x86_64")
 MAKE_FLAGS+=	NATIVE=true
 .else
 MAKE_FLAGS+=	NATIVE=false
@@ -39,6 +39,8 @@ MAKE_FLAGS+=	NATIVE=false
 .if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} != "none")
 MAKE_FLAGS+=	THREADS=true
 .endif
+
+BUILD_TARGET=	buildexecutable
 
 INSTALLATION_DIRS=	bin
 INSTALLATION_DIRS+=	share/doc/unison

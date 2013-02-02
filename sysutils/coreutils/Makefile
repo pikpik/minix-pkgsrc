@@ -1,24 +1,19 @@
-# $NetBSD: Makefile,v 1.51 2011/04/22 13:44:40 obache Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/03 21:57:36 wiz Exp $
 
 .include "../../sysutils/coreutils/Makefile.common"
 
+PKGREVISION=	5
+
+CONFIGURE_ARGS+=	--without-gmp
+
 CONFLICTS=	fileutils-[0-9]* gnuls-[0-9]* linuxls-[0-9]* sh-utils-[0-9]* textutils-[0-9]*
 
-# if GNU_PROGRAM_PREFIX == 'g'
 # devel/id-utils installs a 'gid' program, so conflict with it
 # databases/geneweb a 'gwc' program, so conflict with it
 # graphics/graphviz installs a 'gpr' program, so conflict with it
-.if ${GNU_PROGRAM_PREFIX} == "g"
 CONFLICTS+=		id-utils-[0-9]* gnome-utils<1.4.1.2nb2
 CONFLICTS+=		geneweb-[0-9]*
 CONFLICTS+=		graphviz<1.12
-.endif
-# print/teTeX-bin installed a 'readlink' program, so
-# conflict with it if GNU_PROGRAM_PREFIX == '' (no problem in teTeX3-bin)
-.if empty(GNU_PROGRAM_PREFIX)
-CONFLICTS+=		teTeX-bin<3
-CONFLICTS+=		mktemp-[0-9]*
-.endif
 
 INFO_FILES=		yes
 
@@ -27,9 +22,36 @@ PLIST_VARS+=		hostid stdbuf
 .if ${OPSYS} != "Interix"
 PLIST.hostid=		yes
 .endif
-.if ${OBJECT_FMT} == "ELF" && !empty(PKGSRC_COMPILER:Mgcc)
+
+.include "../../mk/compiler.mk"
+
+.if ${OBJECT_FMT} == "ELF" && \
+    (!empty(PKGSRC_COMPILER:Mgcc) || !empty(PKGSRC_COMPILER:Mclang))
 PLIST.stdbuf=		yes
 .endif
+
+PROGS=	[ base64 basename cat chcon chgrp chmod chown chroot cksum comm \
+	cp csplit cut date dd df dir dircolors dirname du hostid echo env \
+	expand expr factor false fmt fold groups head id install join kill \
+	link ln logname ls md5sum mkdir mkfifo mknod mktemp mv nice nl \
+	nohup nproc od paste pathchk pinky pr printenv printf ptx pwd \
+	readlink rm rmdir runcon seq sha1sum sha224sum sha256sum sha384sum \
+	sha512sum shred shuf sleep sort split stat stdbuf stty sum sync tac \
+	tail tee test timeout touch tr true truncate tsort tty uname \
+	unexpand uniq unlink uptime users vdir wc who whoami yes
+
+AUTO_MKDIRS=	yes
+
+post-install:
+.for f in ${PROGS}
+	set -e; \
+	if ${TEST} -f ${DESTDIR}${PREFIX}/bin/g${f:Q}; then \
+	  ${LN} -sf ${PREFIX}/bin/g${f:Q} ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/${f:Q}; \
+	fi; \
+	if ${TEST} -f ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/g${f:Q}.1; then \
+	  ${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/g${f:Q}.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/${f:Q}.1; \
+	fi
+.endfor
 
 #CONFIGURE_ARGS+=	--enable-install-program=su
 #.if ${OPSYS} == "NetBSD" ||  ${OPSYS} == "FreeBSD" || \

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/12/29 09:52:10 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2010/01/29 20:24:16 joerg Exp $
 
 DISTNAME=	defendguin-0.0.10
 PKGREVISION=	7
@@ -8,8 +8,6 @@ MASTER_SITES=	ftp://ftp.billsgames.com/unix/x/defendguin/src/
 MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://www.newbreedsoftware.com/defendguin/
 COMMENT=	Clone of the arcade game Defender
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:34:18 seb Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:30 wiz Exp $
 
 DISTNAME=	Perl6-Export-Attrs-0.0.3
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/D/DC/DCONWAY/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Perl6-Export-Attrs/
 COMMENT=	Perl 5 module implementing Perl 6 symbol export mechanism
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	{p5-Attribute-Handlers>=0,perl>=5.10.0}:../../devel/p5-Attribute-Handlers
 DEPENDS+=	p5-version-[0-9]*:../../devel/p5-version

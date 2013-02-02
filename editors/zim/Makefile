@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2012/03/01 17:03:18 ryoon Exp $
+# $NetBSD: Makefile,v 1.10 2012/12/01 10:36:12 ryoon Exp $
 #
 
-DISTNAME=	zim-0.54
+DISTNAME=	zim-0.59
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://zim-wiki.org/downloads/
 
@@ -12,11 +11,8 @@ HOMEPAGE=	http://zim-wiki.org/
 COMMENT=	Zim brings the concept of a wiki to your desktop
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	# none
 
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 REPLACE_PYTHON=	${WRKSRC}/zim.py
 PYDISTUTILSPKG=	YES
 
@@ -44,11 +40,6 @@ SUBST_CLASSES+=			man-path
 SUBST_STAGE.man-path=		pre-configure
 SUBST_FILES.man-path+=		setup.py
 SUBST_SED.man-path=		-e s,share/man/man1,${PKGMANDIR}/man1,
-
-.include "../../lang/python/pyversion.mk"
-.if ${PYPKGPREFIX} == "py25"
-DEPENDS+=	${PYPKGPREFIX}-simplejson-[0-9]*:../../converters/py-simplejson
-.endif
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

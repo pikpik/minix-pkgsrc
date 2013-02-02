@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2010/01/18 09:58:55 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/04 09:19:19 asau Exp $
 #
 
 DISTNAME=	libdrg-0.0.81
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	geography
 MASTER_SITES=	http://www.lexort.com/software/
 
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.lexort.com/software/
 COMMENT=	Library for reading and merging DRG files.
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

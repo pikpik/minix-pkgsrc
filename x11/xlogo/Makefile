@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/09/24 13:14:16 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/03 18:18:49 wiz Exp $
 #
 
-DISTNAME=		xlogo-1.0.2
-PKGREVISION=		1
+DISTNAME=		xlogo-1.0.4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X Window System logo
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

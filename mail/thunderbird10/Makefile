@@ -1,19 +1,17 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/15 09:45:26 ryoon Exp $
+# $NetBSD: Makefile,v 1.19 2013/01/10 16:09:59 ryoon Exp $
 #
 
 DISTNAME=	thunderbird-${TB_VER}esr.source
 PKGNAME=	thunderbird10-${TB_VER}
-TB_VER=		10.0.3
+TB_VER=		10.0.12
+PKGREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	${MASTER_SITE_MOZILLA:=thunderbird/releases/${TB_VER}esr/source/} \
-		${MASTER_SITE_MOZILLA_ALL:=thunderbird/releases/${TB_VER}esr/source/}
+MASTER_SITES=	${MASTER_SITE_MOZILLA_ESR:=thunderbird/releases/${TB_VER}esr/source/}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	tnn@NetBSD.org
-HOMEPAGE=	http://www.mozillamessaging.com/en-US/thunderbird/
+HOMEPAGE=	http://www.mozilla.org/en-US/thunderbird/organizations/
 COMMENT=	Organize, secure and customize your mail
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	unzip pax
 WRKSRC=		${WRKDIR}/comm-esr10
@@ -29,6 +27,7 @@ ALL_ENV+=		MOZILLA_PKG_NAME=thunderbird10
 
 # workround for link of xulrunner-bin etc.
 LDFLAGS+=		-Wl,-rpath,${PREFIX}/lib/thunderbird10
+LDFLAGS.DragonFly=	-lplc4 -lplds4 -lnspr4 -lnssutil3
 
 .include "../../mk/bsd.prefs.mk"
 

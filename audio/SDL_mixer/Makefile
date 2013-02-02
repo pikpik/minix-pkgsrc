@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2012/02/06 12:39:17 wiz Exp $
+# $NetBSD: Makefile,v 1.47 2012/09/15 10:03:30 obache Exp $
 
 DISTNAME=	SDL_mixer-1.2.12
-PKGREVISION=	3
+PKGREVISION=	5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_mixer/release/
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.libsdl.org/projects/SDL_mixer/
 COMMENT=	Multi-channel audio mixer library
 LICENSE=	zlib
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		SDL-mixer-[0-9]*
 
@@ -30,9 +28,9 @@ INSTALLATION_DIRS=	bin
 
 post-install:
 	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} \
-		${WRKSRC}/build/playmus ${DESTDIR:Q}${PREFIX:Q}/bin
+		${WRKSRC}/build/playmus ${DESTDIR}${PREFIX}/bin
 	${LIBTOOL} --mode=install ${INSTALL_PROGRAM} \
-		${WRKSRC}/build/playwave ${DESTDIR:Q}${PREFIX:Q}/bin
+		${WRKSRC}/build/playwave ${DESTDIR}${PREFIX}/bin
 
 BUILDLINK_API_DEPENDS.SDL+=	SDL>=1.2.10
 

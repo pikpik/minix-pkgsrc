@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2012/02/28 18:43:40 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/12 00:24:36 asau Exp $
 #
 
 GST_PLUGINS0.10_NAME=	dts
 GST_PLUGINS0.10_DIRS=	ext/dts
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "../../multimedia/gst-plugins0.10-bad/Makefile.common"
-PKGREVISION=		1
+PKGREVISION=		3
 
 .include "../../audio/libdca/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

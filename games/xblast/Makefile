@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2008/06/06 07:45:56 dsainty Exp $
+# $NetBSD: Makefile,v 1.30 2012/05/21 14:55:10 marino Exp $
 #
 
 DISTNAME=		xblast-2.10.4
+PKGREVISION=		1
 CATEGORIES=		games x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xblast/}
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX} \
@@ -15,8 +16,6 @@ MAINTAINER=		dsainty@NetBSD.org
 HOMEPAGE=		http://xblast.sourceforge.net/
 COMMENT=		2-6 player kill the other guy with bombs game. A real blast!
 LICENSE=		gnu-gpl-v2 # or later
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-sound
@@ -46,6 +45,10 @@ SUBST_FILES.xbsndsrv=	x11_sound.c
 SUBST_SED.xbsndsrv=	-e 's|"xbsndsrv"|"${PREFIX}/bin/xbsndsrv"|'
 
 INSTALLATION_DIRS=	${PKGMANDIR}/man6
+
+post-extract:
+	${MV} ${WRKDIR}/levels-2005-01-06/reconstruct?on2.xal \
+	      ${WRKDIR}/levels-2005-01-06/reconstruction2.xal
 
 pre-build:
 	${MV} ${WRKDIR}/images-2005-01-06 ${WRKSRC}/image

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/07/04 20:54:52 jlam Exp $
+# $NetBSD: Makefile,v 1.4 2009/02/24 00:58:10 cube Exp $
 #
 
 DISTNAME=	rbldnsd_0.996b
@@ -12,8 +12,6 @@ COMMENT=	Efficient DNS daemon to serve DNSBL zones
 
 WRKSRC=		${WRKDIR}/rbldnsd-0.996b
 HAS_CONFIGURE=	yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

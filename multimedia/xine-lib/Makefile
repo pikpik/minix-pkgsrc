@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.96 2012/03/21 16:37:15 drochner Exp $
+# $NetBSD: Makefile,v 1.109 2012/10/23 10:24:09 wiz Exp $
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=	5
 
 .include "Makefile.common"
 
@@ -12,6 +12,7 @@ CONFIGURE_ARGS+=	--disable-v4l
 CONFIGURE_ARGS+=	--disable-v4l2
 CONFIGURE_ARGS+=	--disable-real-codecs
 CONFIGURE_ARGS+=	--disable-aalib
+CONFIGURE_ARGS+=	--disable-mlib
 
 BUILDLINK_API_DEPENDS.vcdimager+= vcdimager>=0.7.20nb1
 
@@ -40,6 +41,9 @@ PLIST.oss=	yes
 .endif
 .endif
 
+CPPFLAGS.SunOS+=	-D__u32=uint32_t -DHAVE_SYSI86
+LDFLAGS.SunOS+=		-lresolv
+
 # flac is supported internally; don't know what the plugin is good for
 #.include "../../audio/flac/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
@@ -61,5 +65,4 @@ CONFIGURE_ARGS+=	--disable-opengl
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libxcb/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2012/02/06 12:40:42 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 23:00:43 adam Exp $
 #
 
-DISTNAME=		scim-1.4.11
-PKGREVISION=		2
+DISTNAME=		scim-1.4.14
+PKGREVISION=		6
 CATEGORIES=		inputmethod
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scim/}
 
@@ -11,7 +11,7 @@ HOMEPAGE=		http://www.scim-im.org/
 COMMENT=		Smart Common Input Method
 LICENSE=		gnu-lgpl-v2.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+SUPERSEDES+=		scim-bridge-[0-9]*
 
 PKG_SYSCONFSUBDIR=	scim
 
@@ -29,8 +29,8 @@ PKGCONFIG_OVERRIDE+=	scim.pc.in
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
-# dlopen c++ so module from c gtk2 apps cause some troubles.
-CONFIGURE_ARGS+=	--disable-gtk2-immodule
+
+.include "options.mk"
 
 EGDIR=			${PREFIX}/share/examples/scim
 CONF_FILES=		${EGDIR}/config ${PKG_SYSCONFDIR}/config
@@ -49,8 +49,6 @@ LDFLAGS.SunOS+=		-lsocket -lnsl
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libltdl/buildlink3.mk"
-.include "../../sysutils/desktop-file-utils/desktopdb.mk"
-.include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libICE/buildlink3.mk"
 BUILDLINK_DEPMETHOD.libXt=	build
 .include "../../x11/libXt/buildlink3.mk"

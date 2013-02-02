@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/05/21 10:58:05 zafer Exp $
+# $NetBSD: Makefile,v 1.16 2010/02/14 21:23:50 joerg Exp $
 
 DISTNAME=		svb
 PKGNAME=		svb-1.0
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.shar.Z
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Spy Vs. Bob, the timeless classic
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 USE_IMAKE=		yes

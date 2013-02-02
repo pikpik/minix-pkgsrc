@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/04/21 05:23:01 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 19:51:31 asau Exp $
 
 WBM_NAME=	inetd
+PKGREVISION=	1
 
 COMMENT=	Webmin module to configure inetd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.3 2010/09/10 08:08:14 taca Exp $
+# $NetBSD: Makefile,v 1.4 2011/06/19 03:37:12 taca Exp $
 
-DISTNAME=	fastercsv-1.5.4
+DISTNAME=	fastercsv-1.5.5
 CATEGORIES=	textproc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

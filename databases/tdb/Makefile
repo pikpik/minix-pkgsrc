@@ -1,22 +1,29 @@
-# $NetBSD: Makefile,v 1.13 2006/10/04 20:53:46 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/31 13:09:48 wiz Exp $
 #
 
-DISTNAME=	tdb-1.0.6
-PKGREVISION=	2
+DISTNAME=	tdb-1.2.11
 CATEGORIES=	databases
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tdb/}
+MASTER_SITES=	http://www.samba.org/ftp/tdb/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/tdb/
 COMMENT=	Small database system which uses files to store data
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+BUILD_DEPENDS+=	libxslt-[0-9]*:../../textproc/libxslt
+BUILD_DEPENDS+=	docbook-xsl-[0-9]*:../../textproc/docbook-xsl
 
 # both install tdbtool and tdbdump
-CONFLICTS+=	samba-[0-9]*
+CONFLICTS+=	samba<3.6.6nb3
 
-GNU_CONFIGURE=		YES
+HAS_CONFIGURE=		YES
+CONFIGURE_ARGS+=	--disable-python
+CONFIGURE_ARGS+=	--mandir=${PREFIX}/${PKGMANDIR}
 USE_TOOLS+=		gmake
-USE_LIBTOOL=		YES
 
+PKGCONFIG_OVERRIDE=	tdb.pc.in
+
+PYTHON_FOR_BUILD_ONLY=	yes
+REPLACE_PYTHON+= buildtools/bin/waf
+
+.include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"

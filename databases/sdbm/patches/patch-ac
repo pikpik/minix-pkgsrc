@@ -1,4 +1,7 @@
-$NetBSD: patch-ac,v 1.1 2000/09/26 03:47:10 hubertf Exp $
+$NetBSD: patch-ac,v 1.2 2008/08/12 13:11:30 agc Exp $
+
+- Use standard headers.
+- Don't provide own definitions of now-standard symbols.
 
 --- tune.h.orig	Mon Sep 25 23:22:26 2000
 +++ tune.h

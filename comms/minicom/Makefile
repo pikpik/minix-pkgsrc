@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.59 2011/08/01 09:30:33 adam Exp $
+# $NetBSD: Makefile,v 1.61 2012/10/03 11:24:42 asau Exp $
 
-DISTNAME=	minicom-2.5
-PKGREVISION=	1
+DISTNAME=	minicom-2.6.1
 CATEGORIES=	comms
-MASTER_SITES=	http://alioth.debian.org/frs/download.php/3487/
+MASTER_SITES=	http://alioth.debian.org/frs/download.php/3700/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://alioth.debian.org/projects/minicom/
@@ -13,7 +12,6 @@ LICENSE=	gnu-gpl-v2
 DEPENDS+=	gkermit-[0-9]*:../../comms/gkermit
 DEPENDS+=	lrzsz-[0-9]*:../../comms/lrzsz
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 INSTALLATION_DIRS=	share/examples/minicom
 
@@ -41,6 +39,8 @@ SUBST_MESSAGE.minicom=	Fixing hardcoded paths.
 SUBST_STAGE.minicom=	post-patch
 SUBST_FILES.minicom=	src/rwconf.c
 SUBST_VARS.minicom=	PREFIX GKERMIT_PREFIX LRZSZ_PREFIX
+
+.include "options.mk"
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

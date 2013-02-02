@@ -1,8 +1,8 @@
 $NetBSD$
 
---- configure.orig	2012-01-31 14:25:33.000000000 +0000
+--- configure.orig	2012-08-23 18:41:09.000000000 +0000
 +++ configure
-@@ -18549,13 +18549,13 @@ if (eval "$ac_cpp conftest.$ac_ext") 2>&
+@@ -19098,13 +19098,13 @@ if (eval "$ac_cpp conftest.$ac_ext") 2>&
    gimp_ok=yes
  fi
  rm -f conftest*
@@ -17,7 +17,16 @@ $NetBSD$
    { $as_echo "$as_me:${as_lineno-$LINENO}: result: $gimp_ok" >&5
  $as_echo "$gimp_ok" >&6; }
    if test "x$gimp_ok" = xno; then
-@@ -22231,7 +22231,7 @@ fi
+@@ -22886,7 +22886,7 @@ fi
+     have_xvfb_run="no (not found)"
+   fi
+ fi
+- if test "x$have_xvfb_run" == "xyes"; then
++ if test "x$have_xvfb_run" = "xyes"; then
+   HAVE_XVFB_RUN_TRUE=
+   HAVE_XVFB_RUN_FALSE='#'
+ else
+@@ -23309,7 +23309,7 @@ fi
  
  gimpdatadir="$datadir/$PACKAGE/2.0"
  gimpplugindir="$libdir/$PACKAGE/2.0"

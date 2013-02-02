@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2011/01/13 13:37:52 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/06/04 09:29:57 wiz Exp $
 #
 
 DISTNAME=		stratagus-2.1-src
 PKGNAME=		${DISTNAME:S/-src//}
-PKGREVISION=		14
+PKGREVISION=		15
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=stratagus/}
 
@@ -11,19 +11,24 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://stratagus.sourceforge.net/
 COMMENT=		Real-time strategy engine
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/stratagus-040702
 USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
-MAKE_ENV+=		X11_LDFLAGS=${X11_LDFLAGS:M*:Q}
+MAKE_ENV+=		X11_LDFLAGS=${X_LDFLAGS:M*:Q}
 
 CONFIGURE_ARGS+=	--with-flac --with-mad
 
 INSTALLATION_DIRS=	bin
+
+.include "../../mk/bsd.prefs.mk"
+.if ${OPSYS} == "DragonFly"
+X_LDFLAGS=	${X11_LDFLAGS} -lX11
+.else
+X_LDFLAGS=	${X11_LDFLAGS}
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/stratagus ${DESTDIR}${PREFIX}/bin

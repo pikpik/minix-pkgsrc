@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/03/03 20:17:12 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2012/04/18 00:06:12 joerg Exp $
 
 DISTNAME=		elisau10
 PKGNAME=		ja-elisau-1.0
@@ -19,8 +19,6 @@ SITES.elisau10${EXTRACT_SUFX}=	\
 			http://hp.vector.co.jp/authors/VA004814/freesoft/
 SITES.clR5x8.bdf=	ftp://ftp.jp.NetBSD.org/pub/NetBSD-jp/tut-jp/fonts/
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=			${WRKDIR}
 USE_TOOLS+=		bdftopcf gzip patch
 USE_X11BASE=		YES
@@ -38,7 +36,7 @@ do-build:
 	cd ${WRKSRC}; \
 	for i in *.bdf; do \
 		p=`basename $$i .bdf`.pcf; \
-		bdftopcf -o $$p $$i; \
+		${TOOLS_PATH.bdftopcf} -o $$p $$i; \
 		${GZIP_CMD} -c $$p > $$p.gz; \
 	done
 

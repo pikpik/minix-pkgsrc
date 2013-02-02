@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.8 2012/01/18 10:27:02 obache Exp $
+# $NetBSD: Makefile,v 1.16 2013/01/16 12:20:21 obache Exp $
 #
 
-DISTNAME=	spreadsheet-0.6.8
+DISTNAME=	spreadsheet-0.7.7
 CATEGORIES=	math
 
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://spreadsheet.rubyforge.org/
 COMMENT=	Ruby Spreadsheet Library to read and write Spreadsheet Documents
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${RUBY_PKGPREFIX}-ole>=1.0:../../devel/ruby-ole
 

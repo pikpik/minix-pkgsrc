@@ -1,4 +1,4 @@
-# $NetBSD: test.mk,v 1.15 2008/11/05 23:44:55 rillig Exp $
+# $NetBSD: test.mk,v 1.17 2012/05/02 13:44:27 obache Exp $
 #
 # After the "build" phase, many packages provide some sort of self-test
 # that can be run on the not-yet installed package. To enable these
@@ -47,7 +47,7 @@ TEST_ENV+=		${MAKE_ENV}
 TEST_MAKE_FLAGS?=	# none
 
 TEST_MAKE_CMD= \
-	${PKGSRC_SETENV} ${MAKE_ENV}					\
+	${PKGSRC_SETENV} ${TEST_ENV}					\
 		${MAKE_PROGRAM} ${MAKE_FLAGS} ${TEST_MAKE_FLAGS}	\
 			-f ${MAKE_FILE}
 
@@ -84,6 +84,15 @@ ${_COOKIE.test}:
 .else
 ${_COOKIE.test}: real-test
 .endif
+
+######################################################################
+### retest (PUBLIC)
+######################################################################
+### retest is a special target to re-run the test target.
+###
+.PHONY: retest
+retest: test-clean
+	${RUN} ${RECURSIVE_MAKE} ${MAKEFLAGS} test
 
 ######################################################################
 ### real-test (PRIVATE)
@@ -164,3 +173,13 @@ test-cookie:
 	${RUN}${TEST} ! -f ${_COOKIE.test} || ${FALSE}
 	${RUN}${MKDIR} ${_COOKIE.test:H}
 	${RUN}${ECHO} ${PKGNAME} > ${_COOKIE.test}
+
+######################################################################
+### test-clean (PRIVATE)
+######################################################################
+### test-clean removes the state files for the "test" and
+### later phases so that the "test" target may be re-invoked.
+###
+.PHONY: test-clean
+test-clean:
+	${RUN} ${RM} -f ${_COOKIE.test}

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:33:09 seb Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:54:34 wiz Exp $
 
 DISTNAME=	Acme-PlayCode-0.12
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Acme/}
 #MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/S/SA/SARTAK/}
@@ -19,7 +19,6 @@ DEPENDS+=	p5-PPI>=1.201:../../devel/p5-PPI
 DEPENDS+=	p5-Path-Class>=0.16:../../devel/p5-Path-Class
 
 PERL5_PACKLIST=		auto/Acme/PlayCode/.packlist
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	Module::Build
 
 .include "../../lang/perl5/module.mk"

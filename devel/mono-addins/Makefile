@@ -1,17 +1,14 @@
-# $NetBSD: Makefile,v 1.16 2011/04/25 14:02:30 kefren Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/31 11:17:29 asau Exp $
 
-DISTNAME=	mono-addins-0.6.1
+DISTNAME=	mono-addins-1.0
 PKGREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	http://ftp.novell.com/pub/mono/sources/mono-addins/
-EXTRACT_SUFX=	.tar.bz2
+MASTER_SITES=	-http://download-codeplex.sec.s-msft.com/Download/Release?ProjectName=monoaddins&DownloadId=509482&FileTime=129948574181430000&Build=19556
 
 MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/Mono.Addins
 COMMENT=	Framework for creating extensible applications
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake pkg-config

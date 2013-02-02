@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.85 2012/01/01 04:03:33 sbd Exp $
+# $NetBSD: Makefile,v 1.91 2012/12/18 07:58:05 wiz Exp $
 
-DISTNAME=	cdrtools-3.01a07
+DISTNAME=	cdrtools-3.01a11
 PKGNAME=	${DISTNAME:S/a/alpha/:S/-pre/pre/}
 CATEGORIES=	sysutils
 #MASTER_SITES=	ftp://ftp.berlios.de/pub/cdrecord/ \
@@ -17,7 +17,6 @@ COMMENT=	Software for creating ISO9660 images and writing CD/DVD/Blu-ray
 CONFLICTS=	mkisofs-[0-9]* cdrtools-ossdvd-[0-9]* cdrecord-[0-9]* cdrkit-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME:C/a[0-9]*//}
 
@@ -141,4 +140,5 @@ do-install:
 		${DESTDIR}${PREFIX}/share/examples/cdrtools/cdrecord
 
 .include "../../mk/oss.buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

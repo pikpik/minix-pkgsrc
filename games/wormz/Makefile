@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2008/01/19 09:16:22 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/23 10:24:05 wiz Exp $
 #
 
 DISTNAME=		Wormz-1.0b5
 PKGNAME=		wormz-1.0b5
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		games x11
 MASTER_SITES=		http://lide.punknet.cz/miri/
 
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://lide.punknet.cz/miri/Wormz.html
 COMMENT=		Networked game for X11
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/Wormz
 USE_LANGUAGES=		c c++
@@ -28,5 +26,4 @@ do-configure:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} depend
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

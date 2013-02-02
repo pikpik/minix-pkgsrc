@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2010/02/12 20:42:33 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/08 12:42:25 asau Exp $
 
 DISTNAME=		wmii-3.6
 PKGREVISION=		4
@@ -8,8 +8,6 @@ MASTER_SITES=		http://code.suckless.org/dl/wmii/
 MAINTAINER=		ghen@NetBSD.org
 HOMEPAGE=		http://wmii.suckless.org/
 COMMENT=		Modular and keyboard-friendly window manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		dmenu>=3.7:../../x11/dmenu
 
@@ -40,7 +38,6 @@ post-build:
 	${TBL} ${WRKSRC}/man/wmii.tbl > ${WRKSRC}/man/wmii.1
 
 .include "../../devel/libixp/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/07/08 14:28:28 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2010/05/06 11:14:01 adam Exp $
 
 DISTNAME=	netperf-2.4.5
 CATEGORIES=	benchmarks
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.netperf.org/
 COMMENT=	Rick Jones' network performance benchmarking package
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes

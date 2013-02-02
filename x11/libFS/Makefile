@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2009/07/18 10:30:19 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/06/09 07:00:46 obache Exp $
 #
 
-DISTNAME=		libFS-1.0.3
+DISTNAME=		libFS-1.0.4
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,7 +11,6 @@ HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X Font Server Interface Library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
@@ -24,6 +23,8 @@ PKGCONFIG_OVERRIDE+=	libfs.pc.in
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/fontsproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"

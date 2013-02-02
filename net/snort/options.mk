@@ -1,11 +1,15 @@
-# $NetBSD: options.mk,v 1.4 2007/10/21 00:22:53 adrianp Exp $
+# $NetBSD: options.mk,v 1.6 2012/06/12 15:46:01 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.snort
 
 PKG_SUPPORTED_OPTIONS=	debug snort-prelude ssl snmp snort-gre
 PKG_SUPPORTED_OPTIONS+=	snort-dynamicplugin snort-timestats
 PKG_SUPPORTED_OPTIONS+=	snort-rulestate inet6
-PKG_SUGGESTED_OPTIONS=
+# does not work on SunOS
+.if ${OPSYS} != "SunOS"
+PKG_SUGGESTED_OPTIONS=	inet6
+.endif
+
 
 PKG_OPTIONS_OPTIONAL_GROUPS=	flex
 PKG_OPTIONS_GROUP.flex=		snort-flexresp snort-flexresp2

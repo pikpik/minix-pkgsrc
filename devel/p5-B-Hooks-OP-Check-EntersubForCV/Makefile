@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/11/15 16:05:35 sno Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:54:38 wiz Exp $
 
 DISTNAME=	B-Hooks-OP-Check-EntersubForCV-0.09
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=B/}
 
@@ -15,7 +16,6 @@ DEPENDS+=	p5-B-Utils>=0.19:../../devel/p5-B-Utils
 # requires parent, Scalar::Util
 PERL5_REQD+=	5.10.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 USE_LANGUAGES=		c

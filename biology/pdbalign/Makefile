@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/02/22 19:26:09 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2008/03/03 01:10:06 jlam Exp $
 #
 
 DISTNAME=		pdbalign
@@ -9,8 +9,6 @@ MASTER_SITES=		ftp://ftp.ebi.ac.uk/pub/software/unix/pdbalign/
 MAINTAINER=		hdp@cs.nmsu.edu
 HOMEPAGE=		#empty
 COMMENT=		Prediction of Protein Secondary Structure and Active Sites
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 INSTALLATION_DIRS=	bin

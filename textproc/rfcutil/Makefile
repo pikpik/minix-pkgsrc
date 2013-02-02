@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2011/11/23 13:30:30 hubertf Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/03 21:58:16 wiz Exp $
 #
 
 DISTNAME=	rfc-3.2
 PKGNAME=	rfcutil-3.2
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.dewn.com/rfc/
 EXTRACT_SUFX=	#
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	#
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dewn.com/rfc/
 COMMENT=	Search for RFCs and do ports, services & protocol lookups
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 EXTRACT_ONLY=	#

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:39:56 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 23:01:24 adam Exp $
 
 DISTNAME=	Gtk2-GladeXML-1.007
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	12
+PKGREVISION=	18
 CATEGORIES=	x11 perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtk2-perl/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gtk2-perl.sourceforge.net/
 COMMENT=	Perl bindings for Glade (2)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

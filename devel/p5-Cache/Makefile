@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:33:17 seb Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:54:40 wiz Exp $
 
 DISTNAME=	Cache-2.04
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Cache/} \
 		${MASTER_SITE_SOURCEFORGE:=perl-cache/}
@@ -13,7 +13,6 @@ COMMENT=	The Cache interface
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-File-NFSLock>=1.20:../../devel/p5-File-NFSLock
 DEPENDS+=	p5-Heap>=0.01:../../devel/p5-Heap

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2012/02/06 12:40:14 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/09 15:26:45 marino Exp $
 #
 
 DISTNAME=	geoclue-0.12.0
-PKGREVISION=	7
+PKGREVISION=	12
 CATEGORIES=	geography
 MASTER_SITES=	http://folks.o-hand.com/jku/geoclue-releases/
 
@@ -11,13 +11,13 @@ HOMEPAGE=	http://www.freedesktop.org/wiki/Software/GeoClue
 COMMENT=	Geoinformation service API and base providers
 #LICENSE=	# TODO: (see mk/license.mk)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config gmake
 
 PKGCONFIG_OVERRIDE+=	geoclue.pc.in
+
+BUILDLINK_TRANSFORM+=	rm:-Werror
 
 # for documentation build
 BUILD_DEPENDS+=	libxslt-[0-9]*:../../textproc/libxslt

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/02/16 19:07:09 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2010/02/26 10:28:35 wiz Exp $
 
 DISTNAME=	rtfm-1.0
 CATEGORIES=	textproc
@@ -7,8 +7,6 @@ MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/	\
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	NetBSD documentation and GNU Texinfo files search mechanism
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

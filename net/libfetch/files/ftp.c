@@ -1,4 +1,4 @@
-/*	$NetBSD: ftp.c,v 1.39 2011/10/02 19:15:34 marino Exp $	*/
+/*	$NetBSD: ftp.c,v 1.42 2012/04/07 15:27:21 joerg Exp $	*/
 /*-
  * Copyright (c) 1998-2004 Dag-Erling Coïdan Smørgrav
  * Copyright (c) 2008, 2009, 2010 Joerg Sonnenberger <joerg@NetBSD.org>
@@ -98,6 +98,7 @@
 #include "common.h"
 #include "ftperr.h"
 
+static int ftp_cmd(conn_t *, const char *, ...) LIBFETCH_PRINTFLIKE(2, 3);
 #define FTP_ANONYMOUS_USER	"anonymous"
 
 #define FTP_CONNECTION_ALREADY_OPEN	125
@@ -145,7 +146,11 @@ unmappedaddr(struct sockaddr_in6 *sin6, socklen_t *len)
 	    !IN6_IS_ADDR_V4MAPPED(&sin6->sin6_addr))
 		return;
 	sin4 = (struct sockaddr_in *)sin6;
-	addr = *(uint32_t *)&sin6->sin6_addr.s6_addr[12];
+#ifdef s6_addr32
+	addr = sin6->sin6_addr.s6_addr32[3];
+#else
+	memcpy(&addr, &sin6->sin6_addr.s6_addr[12], sizeof(addr));
+#endif
 	port = sin6->sin6_port;
 	memset(sin4, 0, sizeof(struct sockaddr_in));
 	sin4->sin_addr.s_addr = addr;
@@ -387,7 +392,7 @@ ftp_cwd(conn_t *conn, const char *path, int subdir)
 			++beg, ++i;
 		for (++i; dst + i < end && dst[i] != '/'; ++i)
 			/* nothing */ ;
-		e = ftp_cmd(conn, "CWD %.*s\r\n", dst + i - beg, beg);
+		e = ftp_cmd(conn, "CWD %.*s\r\n", (int)(dst + i - beg), beg);
 		if (e != FTP_FILE_ACTION_OK) {
 			free(dst);
 			ftp_seterr(e);

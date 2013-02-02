@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2010/08/21 16:34:48 seb Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:55:53 wiz Exp $
 
 DISTNAME=	signatures-0.06
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/F/FL/FLORA/}
 
@@ -21,8 +21,6 @@ DEPENDS+=	p5-B-Hooks-EndOfScope>=0.08:../../devel/p5-B-Hooks-EndOfScope
 
 BUILDLINK_API_DEPENDS.p5-B-Hooks-OP-Check+=	p5-B-Hooks-OP-Check>=0.17
 BUILDLINK_API_DEPENDS.p5-B-Hooks-Parser+=	p5-B-Hooks-Parser>=0.07
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../devel/p5-B-Hooks-OP-Check/buildlink3.mk"
 .include "../../devel/p5-B-Hooks-OP-PPAddr/buildlink3.mk"

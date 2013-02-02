@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:36:28 seb Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:58:23 wiz Exp $
 #
 
 DISTNAME=	Time-Interval-1.22
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	time
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/A/AH/AHICOX/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/CPAN/authors/id/A/AH/AHICOX/
 COMMENT=	Converts time intervals of days, hours, minutes, and seconds
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-DateTime-[0-9]*:../../time/p5-DateTime
 

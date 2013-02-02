@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2010/12/25 08:08:06 taca Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:44 wiz Exp $
 
 DISTNAME=	smbldap-tools-${VERS}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils net databases
 MASTER_SITES=	http://download.gna.org/smbldap-tools/sources/${VERS}/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://gna.org/projects/smbldap-tools/
 COMMENT=	Set of ldap administration scripts for samba
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 VERS=		0.9.6
 

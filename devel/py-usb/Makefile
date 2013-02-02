@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/10/11 08:32:50 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2011/10/16 06:38:39 obache Exp $
 
 VERSION=	0.4.2
 DISTNAME=	pyusb-${VERSION}
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyusb/}
 MAINTAINER=	wiml@hhhh.org
 HOMEPAGE=	http://pyusb.berlios.de/
 COMMENT=	Python interface to USB via libusb
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../devel/libusb/buildlink3.mk"
 .include "../../lang/python/distutils.mk"

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.174 2011/04/05 11:43:08 tron Exp $
+# $NetBSD: Makefile,v 1.179 2012/10/06 14:11:08 asau Exp $
 
 DISTNAME=	netpbm-10.35.80
-PKGREVISION=	1
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=netpbm/}
 EXTRACT_SUFX=	.tgz
@@ -13,7 +13,6 @@ LICENSE=	gnu-gpl-v2
 
 MAKE_JOBS_SAFE=	no
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	bash:run gmake lex pax perl
 USE_FEATURES=	snprintf

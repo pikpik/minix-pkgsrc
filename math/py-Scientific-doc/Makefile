@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/03/04 18:12:59 jlam Exp $
+# $NetBSD: Makefile,v 1.8 2008/05/26 02:13:22 joerg Exp $
 
 DISTNAME=	ScientificPython-2.4.5
 PKGNAME=	py-${DISTNAME:S/Python/-doc/}
@@ -11,8 +11,6 @@ HOMEPAGE=	http://starship.python.net/crew/hinsen/scientific.html
 COMMENT=	Python modules for scientific computing
 
 CONFLICTS+=	py-Scientific-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 

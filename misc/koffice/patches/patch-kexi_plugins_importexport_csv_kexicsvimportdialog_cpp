@@ -1,0 +1,12 @@
+$NetBSD$
+
+Upstream patch from: https://bugs.kde.org/show_bug.cgi?id=149906
+
+--- kexi/plugins/importexport/csv/kexicsvimportdialog.cpp.orig
++++ kexi/plugins/importexport/csv/kexicsvimportdialog.cpp
+@@ -1660,3 +1660,5 @@
+ }
+ 
+ #include "kexicsvimportdialog.moc"
++
++#undef _ERR

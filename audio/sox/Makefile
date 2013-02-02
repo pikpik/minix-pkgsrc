@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.54 2012/01/20 12:29:45 wiz Exp $
+# $NetBSD: Makefile,v 1.56 2012/07/04 09:27:37 adam Exp $
 
-DISTNAME=	sox-14.3.2
+DISTNAME=	sox-14.4.0
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sox/}
 
@@ -10,7 +10,6 @@ COMMENT=	SOund eXchange - universal sound sample translator
 LICENSE=	gnu-lgpl-v2.1 AND gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 #USE_CMAKE=		yes
 USE_LANGUAGES=		c c++
@@ -40,5 +39,6 @@ post-install:
 .include "../../audio/libsndfile/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../sysutils/file/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

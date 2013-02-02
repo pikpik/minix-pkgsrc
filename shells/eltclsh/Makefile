@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.3 2007/02/22 19:01:24 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/08/21 23:49:25 marino Exp $
 
 DISTNAME=	eltclsh-1.9
+PKGREVISION=	1
 CATEGORIES=	shells
 MASTER_SITES=	http://softs.laas.fr/openrobots/php/download.php/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://softs.laas.fr/openrobots/wiki/eltclsh
 COMMENT=	Interactive TCL shell with editline facilities
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}/lib

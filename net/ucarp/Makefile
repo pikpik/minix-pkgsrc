@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/04/22 13:44:28 obache Exp $
+# $NetBSD: Makefile,v 1.13 2011/11/02 01:13:04 hubertf Exp $
 #
 
 DISTNAME=		ucarp-1.5.2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joel@carnat.net
 HOMEPAGE=		http://www.ucarp.org/project/ucarp
 COMMENT=		Common Address Redundancy Protocol (CARP) for Unix
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	YES
 GNU_CONFIGURE=		YES

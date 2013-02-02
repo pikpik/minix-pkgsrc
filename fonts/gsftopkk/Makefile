@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/09/13 04:21:26 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2012/03/04 17:46:15 minskim Exp $
 
 DISTNAME=	texlive-20110705-source
 PKGNAME=	gsftopkk-1.19.2
@@ -15,8 +15,6 @@ CONFLICTS+=	teTeX-bin<=3.0nb34
 
 EXTRACT_ELEMENTS=	${DISTNAME}/build-aux \
 			${DISTNAME}/texk/gsftopk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 INFO_FILES=	yes

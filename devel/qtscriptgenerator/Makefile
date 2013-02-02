@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2012/03/03 00:12:26 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/11/17 21:51:49 markd Exp $
 #
 
-DISTNAME=	qtscriptgenerator-src-0.1.0
+DISTNAME=	qtscriptgenerator-src-0.2.0
 PKGNAME=	${DISTNAME:S/-src//}
-PKGREVISION=	15
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://qtscriptgenerator.googlecode.com/files/
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/qtscriptgenerator/
 COMMENT=	Tool that generates Qt bindings for Qt Script
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 USE_LIBTOOL=	yes
@@ -47,7 +45,7 @@ do-install:
 		${DESTDIR}${PREFIX}/share/doc/qtscriptgenerator/examples/images
 
 .include "../../multimedia/phonon/buildlink3.mk"
-.include "../../www/webkit-gtk/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
+BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

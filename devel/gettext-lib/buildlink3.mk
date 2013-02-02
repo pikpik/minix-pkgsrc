@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.32 2011/04/12 17:41:28 adam Exp $
+# $NetBSD: buildlink3.mk,v 1.34 2012/08/29 09:01:01 sbd Exp $
 
 BUILDLINK_TREE+=	gettext
 
@@ -34,6 +34,9 @@ CHECK_BUILTIN.gettext:=	no
 # A built-in gettext is always going to use a built-in iconv.
 .if !empty(USE_BUILTIN.gettext:M[yY][eE][sS])
 USE_BUILTIN.iconv=	yes
+.else
+BUILDLINK_INCDIRS.gettext+= include/gettext
+BUILDLINK_FNAME_TRANSFORM.gettext+=    -e 's|include/gettext/|include/|'
 .endif
 
 .include "../../converters/libiconv/buildlink3.mk"

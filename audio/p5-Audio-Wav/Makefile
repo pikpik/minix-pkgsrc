@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2010/09/06 10:40:16 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/02 23:48:03 asau Exp $
 
-DISTNAME=	Audio-Wav-0.12
+DISTNAME=	Audio-Wav-0.13
 PKGNAME=	p5-${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	audio perl5
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Audio-Wav/
 COMMENT=	Perl modules for reading & writing Microsoft WAV files
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Audio/Wav/.packlist
 

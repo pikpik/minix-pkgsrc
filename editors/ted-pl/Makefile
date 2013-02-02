@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/06/08 18:41:22 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2008/03/03 18:25:53 jlam Exp $
 
 DISTNAME=	Ted_pl_PL
 PKGNAME=	ted-pl-2.16
@@ -11,8 +11,6 @@ HOMEPAGE=	http://www.nllgg.nl/Ted/
 COMMENT=	Polish spelling dictionary for the Ted word processor
 
 DEPENDS+=	ted>=2.6:../../editors/ted
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_X11BASE=	YES

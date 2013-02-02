@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/02/25 02:34:13 obache Exp $
 #
 
 DISTNAME=	memoize-1.3.1
@@ -9,8 +9,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.rubyforge.org/projects/shards
 COMMENT=	Speeds up methods at the cost of memory (or disk space)
 LICENSE=	artistic-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 NO_BUILD=	yes

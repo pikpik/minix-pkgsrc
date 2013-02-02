@@ -1,11 +1,14 @@
-# $NetBSD: Makefile,v 1.19 2012/02/06 12:41:17 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/12/16 01:52:31 obache Exp $
 
 .include "../../net/samba/Makefile.mirrors"
 
 DISTNAME=		samba-${VERSION}
-PKGREVISION=		3
+PKGREVISION=		7
 CATEGORIES=		net
 MASTER_SITES=		${SAMBA_MIRRORS:=old-versions/}
+PATCH_SITES=		http://www.samba.org/samba/ftp/patches/security/
+PATCHFILES=		samba-3.3.16-CVE-2012-1182.patch
+PATCH_DIST_STRIP=	 -p2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.samba.org/
@@ -16,8 +19,6 @@ VERSION=		3.3.16
 CONFLICTS+=		ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]*	\
 			winbind-[0-9]*
 MAKE_JOBS_SAFE=		NO
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 FILESDIR=		${PKGDIR}/../samba/files
 DESCR_SRC=		${PKGDIR}/../samba/DESCR

@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.32 2010/01/27 19:53:23 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/03 21:57:44 wiz Exp $
 #
 
 DISTNAME=		roller-1.20
 #PKGREVISION=		1
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		# ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Roll log files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		cpogm-[0-9]*:../../sysutils/cpogm
 DEPENDS+=		logtime-[0-9]*:../../time/logtime

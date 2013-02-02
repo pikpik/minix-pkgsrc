@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/08/15 06:01:13 snj Exp $
+# $NetBSD: Makefile,v 1.8 2010/02/26 10:28:31 wiz Exp $
 
 DISTNAME=	0verkill-0.16
 PKGREVISION=	1
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://artax.karlin.mff.cuni.cz/~brain/0verkill/
 COMMENT=	0verkill is bloody 2D action deathmatch-like game in ASCII-ART
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 

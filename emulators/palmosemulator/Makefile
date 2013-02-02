@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.34 2011/01/13 13:37:35 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/03 21:56:01 wiz Exp $
 #
 
 DISTNAME=	emulator_src_${POSE_VERSION}
 PKGNAME=	palmosemulator-${POSE_VERSION}
-PKGREVISION=	12
+PKGREVISION=	14
 CATEGORIES=	emulators x11
 MASTER_SITES=	http://www.palmos.com/dev/tools/emulator/sources/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -13,8 +13,6 @@ MAINTAINER=	dsainty@NetBSD.org
 HOMEPAGE=	http://www.palmos.com/dev/tools/emulator/
 COMMENT=	Palm OS Emulator
 #LICENSE=       GPL
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 

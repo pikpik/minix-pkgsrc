@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/10/16 07:27:49 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/22 11:43:28 obache Exp $
 #
 
-DISTNAME=	PyYAML-3.08
+DISTNAME=	PyYAML-3.10
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/PyYAML/yaml/}
 PKGREVISION=	1
 CATEGORIES=	textproc python
@@ -11,8 +11,6 @@ MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.pyyaml.org/
 COMMENT=	Collection of libraries to process YAML with Python
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 

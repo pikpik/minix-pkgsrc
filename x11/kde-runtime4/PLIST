@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2010/11/03 20:08:45 markd Exp $
+@comment $NetBSD: PLIST,v 1.3 2012/06/16 04:45:38 markd Exp $
 bin/kcmshell4
 bin/kde-cp
 bin/kde-mv
@@ -143,7 +143,7 @@ lib/kde4/kio_cgi.so
 lib/kde4/kio_desktop.so
 lib/kde4/kio_filter.so
 lib/kde4/kio_finger.so
-lib/kde4/kio_fish.so
+${PLIST.md5}lib/kde4/kio_fish.so
 lib/kde4/kio_floppy.so
 lib/kde4/kio_info.so
 lib/kde4/kio_man.so
@@ -256,6 +256,8 @@ lib/libmolletnetwork.so.4
 lib/libmolletnetwork.so.4.8.0
 lib/libnepomukcommon.so
 lib/libnepomukdatamanagement.so
+lib/libnepomukdatamanagement.so.4
+lib/libnepomukdatamanagement.so.4.8.0
 lib/libnepomuksync.so
 lib/libnepomuksync.so.4
 lib/libnepomuksync.so.4.8.0
@@ -367,6 +369,11 @@ share/doc/kde/HTML/en/kcontrol/icons/install-theme.png
 share/doc/kde/HTML/en/kcontrol/icons/main.png
 share/doc/kde/HTML/en/kcontrol/icons/size.png
 share/doc/kde/HTML/en/kcontrol/icons/use-of-icons.png
+share/doc/kde/HTML/en/kcontrol/kcm_ssl/common
+share/doc/kde/HTML/en/kcontrol/kcm_ssl/details.png
+share/doc/kde/HTML/en/kcontrol/kcm_ssl/index.cache.bz2
+share/doc/kde/HTML/en/kcontrol/kcm_ssl/index.docbook
+share/doc/kde/HTML/en/kcontrol/kcm_ssl/module.png
 share/doc/kde/HTML/en/kcontrol/kcmcgi/common
 share/doc/kde/HTML/en/kcontrol/kcmcgi/index.cache.bz2
 share/doc/kde/HTML/en/kcontrol/kcmcgi/index.docbook
@@ -717,6 +724,7 @@ share/kde/apps/kcm_phonon/listview-background.png
 share/kde/apps/kcmlocale/pics/background.png
 share/kde/apps/kconf_update/devicepreference.upd
 share/kde/apps/kconf_update/kuriikwsfilter.upd
+share/kde/apps/kconf_update/nepomukstrigiservice-migrate.upd
 share/kde/apps/kde/kde.notifyrc
 share/kde/apps/kglobalaccel/kglobalaccel.notifyrc
 share/kde/apps/khelpcenter/glossary.html.in
@@ -796,7 +804,7 @@ share/kde4/services/emoticons.desktop
 share/kde4/services/exrthumbnail.desktop
 share/kde4/services/filetypes.desktop
 share/kde4/services/finger.protocol
-share/kde4/services/fish.protocol
+${PLIST.md5}share/kde4/services/fish.protocol
 share/kde4/services/fixhosturifilter.desktop
 share/kde4/services/floppy.protocol
 share/kde4/services/gzip.protocol

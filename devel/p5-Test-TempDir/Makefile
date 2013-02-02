@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:34:38 seb Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:46 wiz Exp $
 
 DISTNAME=	Test-TempDir-0.05
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Test/}
 
@@ -22,8 +22,6 @@ DEPENDS+=	p5-namespace-clean>=0.08:../../devel/p5-namespace-clean
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Test/TempDir/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

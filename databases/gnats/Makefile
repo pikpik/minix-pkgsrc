@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2011/02/28 14:52:42 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2012/06/18 02:11:13 dholland Exp $
 
 DISTNAME=	gnats-4.1.0
 PKGREVISION=	3
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gnats/
 COMMENT=	GNATS bug tracking system
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gm4 gmake makeinfo bison
@@ -58,7 +56,7 @@ REQD_DIRS+=		${PREFIX}/libexec/gnats
 REQD_DIRS+=		${EGDIR}
 OWN_DIRS_PERMS+=	${GNATS_HOME} ${GNATS_USER} ${GNATS_GROUP} 755
 
-INSTALLATION_DIRS=	bin libexec/gnats info share
+INSTALLATION_DIRS=	bin libexec/gnats ${PKGINFODIR} share
 INSTALLATION_DIRS+=	share/examples share/examples/gnats
 INSTALLATION_DIRS+=	share/gnats share/gnats/defaults
 INSTALLATION_DIRS+=	${PKGMANDIR}/man1 ${PKGMANDIR}/man5

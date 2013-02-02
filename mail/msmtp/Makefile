@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.36 2012/02/06 12:40:51 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/08 12:19:18 asau Exp $
 
-DISTNAME=	msmtp-1.4.27
+DISTNAME=	msmtp-1.4.29
 PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=msmtp/}
@@ -10,8 +10,6 @@ MAINTAINER=	bcv@hub3.net
 HOMEPAGE=	http://msmtp.sourceforge.net/
 COMMENT=	SMTP plugin for MUAs
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

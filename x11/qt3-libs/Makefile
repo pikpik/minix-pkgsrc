@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.81 2011/11/01 06:03:06 sbd Exp $
+# $NetBSD: Makefile,v 1.83 2012/10/29 05:06:46 asau Exp $
 
 PKGNAME=	qt3-libs-${QTVERSION}
-PKGREVISION=	19
+PKGREVISION=	20
 MAINTAINER=	adam@NetBSD.org
 COMMENT=	C++ X GUI toolkit
 
 LIBQT=			${WRKSRC}/lib/libqt-mt.la
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 # XXX: hack - work round an ICE with GCC 3.3 on sparc

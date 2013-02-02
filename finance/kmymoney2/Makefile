@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.56 2012/02/06 12:40:09 wiz Exp $
+# $NetBSD: Makefile,v 1.64 2012/12/16 01:52:13 obache Exp $
 
 DISTNAME=	kmymoney2-1.0.5
-PKGREVISION=	6
+PKGREVISION=	13
 CATEGORIES=	finance kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kmymoney2/}
 EXTRACT_SUFX=  .tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	gary@duzan.org
 HOMEPAGE=	http://kmymoney2.sourceforge.net/
 COMMENT=	Personal finance manager for KDE
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt perl pkg-config bash
 USE_LANGUAGES=		c c++
@@ -46,4 +44,5 @@ REPLACE_PERL+=	admin/fixuifiles
 BUILDLINK_ABI_DEPENDS.qt3-libs+=	qt3-libs>=3.3.8nb9
 .endif
 .include "../../x11/qt3-libs/buildlink3.mk"
+.include "../../databases/sqlite3/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

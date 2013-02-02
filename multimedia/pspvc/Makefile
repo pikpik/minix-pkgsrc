@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2012/02/06 12:41:06 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 09:21:11 asau Exp $
 #
 
 DISTNAME=	pspvc-install-0.3
 PSPVCVER=	pspvc-0.3
 PKGNAME=	${PSPVCVER}
-PKGREVISION=	12
+PKGREVISION=	18
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pspvc/}
 
@@ -12,7 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pspvc.sf.net/
 COMMENT=	PSP video converter
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	share/applications share/pspvc/bin
 
 USE_LANGUAGES=	c
@@ -31,4 +30,5 @@ post-install:
 
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

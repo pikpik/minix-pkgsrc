@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/01/13 13:38:23 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/01/28 11:00:57 wiz Exp $
 #
 
 DISTNAME=		vp-1.5
@@ -9,8 +9,6 @@ MASTER_SITES=		http://math.smsu.edu/~erik/files/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://math.smsu.edu/~erik/software.php?id=63
 COMMENT=		Image viewer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

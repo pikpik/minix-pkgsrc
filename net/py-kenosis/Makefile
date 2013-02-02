@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/06/14 08:48:09 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/01/23 10:38:05 obache Exp $
 #
 
 DISTNAME=		kenosis-0.96
@@ -13,8 +13,6 @@ COMMENT=		P2P RPC system
 LICENSE=		mit
 
 DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 

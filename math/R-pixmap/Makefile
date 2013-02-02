@@ -1,14 +1,15 @@
-# $NetBSD: Makefile,v 1.5 2008/10/14 05:35:47 markd Exp $
+# $NetBSD: Makefile,v 1.6 2009/12/11 19:37:53 adam Exp $
 
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_R_CRAN:=contrib/}
 
-MAINTAINER=	mchittur@cs.nmsu.edu
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	${R_HOMEPAGE_BASE}/pixmap/
 COMMENT=	Functions for manipulations of bitmaps with R
+LICENSE=	gnu-gpl-v2
 
 R_PKGNAME=	pixmap
-R_PKGVER=	0.4-10
+R_PKGVER=	0.4-11
 
 .include "../../math/R/Makefile.extension"
 .include "../../mk/bsd.pkg.mk"

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2010/01/24 13:26:09 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/31 11:16:31 asau Exp $
 
-DISTNAME=	gorm-1.2.12
-PKGNAME=	Gorm-1.2.12
+DISTNAME=	gorm-1.2.18
+PKGNAME=	Gorm-1.2.18
+PKGREVISION=	1
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=dev-apps/}
 
@@ -9,8 +10,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	Graphical user interface builder for GNUstep
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	objc
 

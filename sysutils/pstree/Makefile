@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2010/01/16 15:28:57 sno Exp $
+# $NetBSD: Makefile,v 1.25 2010/09/17 10:04:45 sborrill Exp $
 #
 
 DISTNAME=	pstree-2.33
@@ -10,8 +10,6 @@ MASTER_SITES=	ftp://ftp.thp.uni-duisburg.de/pub/source/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Display processes in a tree
 HOMEPAGE=	http://www.thp.uni-duisburg.de/pstree/
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 

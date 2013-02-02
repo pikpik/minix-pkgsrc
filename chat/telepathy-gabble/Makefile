@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2012/03/03 00:12:50 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/12/16 01:52:00 obache Exp $
 #
 
 DISTNAME=	telepathy-gabble-0.11.10
-PKGREVISION=	5
+PKGREVISION=	11
 CATEGORIES=	chat
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/telepathy-gabble/
 
@@ -12,8 +12,6 @@ COMMENT=	Jabber/XMPP connection manager for Telepathy
 LICENSE=	gnu-lgpl-v2.1 AND mit
 
 BUILD_DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

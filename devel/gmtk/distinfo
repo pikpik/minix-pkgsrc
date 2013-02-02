@@ -1,5 +1,7 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2012/04/13 12:57:33 obache Exp $
 
-SHA1 (gmtk-1.0.5.tar.gz) = a08083a5d6b2848a354fe62693a6a2522afe38bf
-RMD160 (gmtk-1.0.5.tar.gz) = 932065002008b5469777a37688a4f156f58529e2
-Size (gmtk-1.0.5.tar.gz) = 391118 bytes
+SHA1 (gmtk-1.0.7.tar.gz) = 6bebe7bb5d247472eb6f4d7b0a34ad3b94b29dc2
+RMD160 (gmtk-1.0.7.tar.gz) = eebfc01875b6b89331e2ef889c378ff6672e9b80
+Size (gmtk-1.0.7.tar.gz) = 405357 bytes
+SHA1 (patch-src_Makefile.am) = 2484c730e3fe06c6826aa65128f95e3b2207b7af
+SHA1 (patch-src_Makefile.in) = aed5db1941d3e2fbed0d5545a8cc7b761d47f72c

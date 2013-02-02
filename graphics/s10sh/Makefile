@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/10/04 21:44:47 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2008/03/04 15:39:10 jlam Exp $
 #
 
 DISTNAME=	s10sh-0.2.0
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.kyuzz.org/antirez/s10sh-src/
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://www.kyuzz.org/antirez/s10sh/
 COMMENT=	USB/serial userspace driver for Canon PowerShot cameras
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV+=	LOCALBASE=${LOCALBASE:Q}

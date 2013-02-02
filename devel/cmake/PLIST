@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.25 2011/10/15 07:24:30 adam Exp $
+@comment $NetBSD: PLIST,v 1.28 2012/08/11 11:10:54 marino Exp $
 bin/ccmake
 bin/cmake
 bin/cpack
@@ -18,6 +18,7 @@ share/cmake-${CMAKE_API}/Modules/.NoDartCoverage
 share/cmake-${CMAKE_API}/Modules/AddFileDependencies.cmake
 share/cmake-${CMAKE_API}/Modules/AutomocInfo.cmake.in
 share/cmake-${CMAKE_API}/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+share/cmake-${CMAKE_API}/Modules/BasicConfigVersion-ExactVersion.cmake.in
 share/cmake-${CMAKE_API}/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
 share/cmake-${CMAKE_API}/Modules/BundleUtilities.cmake
 share/cmake-${CMAKE_API}/Modules/CMake.cmake
@@ -26,6 +27,9 @@ share/cmake-${CMAKE_API}/Modules/CMakeASMCompiler.cmake.in
 share/cmake-${CMAKE_API}/Modules/CMakeASMInformation.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeASM_MASMInformation.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeASM_NASMInformation.cmake
+share/cmake-${CMAKE_API}/Modules/CMakeAddFortranSubdirectory.cmake
+share/cmake-${CMAKE_API}/Modules/CMakeAddFortranSubdirectory/build_mingw.cmake.in
+share/cmake-${CMAKE_API}/Modules/CMakeAddFortranSubdirectory/config_mingw.cmake.in
 share/cmake-${CMAKE_API}/Modules/CMakeAddNewLanguage.txt
 share/cmake-${CMAKE_API}/Modules/CMakeBackwardCompatibilityC.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeBackwardCompatibilityCXX.cmake
@@ -39,6 +43,7 @@ share/cmake-${CMAKE_API}/Modules/CMakeCXXCompiler.cmake.in
 share/cmake-${CMAKE_API}/Modules/CMakeCXXCompilerABI.cpp
 share/cmake-${CMAKE_API}/Modules/CMakeCXXCompilerId.cpp.in
 share/cmake-${CMAKE_API}/Modules/CMakeCXXInformation.cmake
+share/cmake-${CMAKE_API}/Modules/CMakeClDeps.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeCommonLanguageInclude.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeCompilerABI.h
 share/cmake-${CMAKE_API}/Modules/CMakeConfigurableFile.in
@@ -49,6 +54,7 @@ share/cmake-${CMAKE_API}/Modules/CMakeDetermineASM_MASMCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineASM_NASMCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineCCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineCXXCompiler.cmake
+share/cmake-${CMAKE_API}/Modules/CMakeDetermineCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineCompilerABI.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineCompilerId.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineFortranCompiler.cmake
@@ -56,6 +62,7 @@ share/cmake-${CMAKE_API}/Modules/CMakeDetermineJavaCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineRCCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineSystem.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeDetermineVSServicePack.cmake
+share/cmake-${CMAKE_API}/Modules/CMakeExpandImportedTargets.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeExportBuildSettings.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeFindBinUtils.cmake
@@ -79,6 +86,8 @@ share/cmake-${CMAKE_API}/Modules/CMakeJavaInformation.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeMSYSFindMake.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeMinGWFindMake.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeNMakeFindMake.cmake
+share/cmake-${CMAKE_API}/Modules/CMakeNinjaFindMake.cmake
+share/cmake-${CMAKE_API}/Modules/CMakePackageConfigHelpers.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeParseArguments.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeParseImplicitLinkInfo.cmake
 share/cmake-${CMAKE_API}/Modules/CMakePlatformId.h.in
@@ -95,11 +104,9 @@ share/cmake-${CMAKE_API}/Modules/CMakeTestASM_NASMCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeTestCCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeTestCXXCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeTestCompilerCommon.cmake
-share/cmake-${CMAKE_API}/Modules/CMakeTestForFreeVC.cxx
 share/cmake-${CMAKE_API}/Modules/CMakeTestFortranCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeTestGNU.c
 share/cmake-${CMAKE_API}/Modules/CMakeTestJavaCompiler.cmake
-share/cmake-${CMAKE_API}/Modules/CMakeTestNMakeCLVersion.c
 share/cmake-${CMAKE_API}/Modules/CMakeTestRCCompiler.cmake
 share/cmake-${CMAKE_API}/Modules/CMakeTestWatcomVersion.c
 share/cmake-${CMAKE_API}/Modules/CMakeUnixFindMake.cmake
@@ -128,13 +135,17 @@ share/cmake-${CMAKE_API}/Modules/CPack.cmake
 share/cmake-${CMAKE_API}/Modules/CPack.distribution.dist.in
 share/cmake-${CMAKE_API}/Modules/CPackBundle.cmake
 share/cmake-${CMAKE_API}/Modules/CPackComponent.cmake
+share/cmake-${CMAKE_API}/Modules/CPackCygwin.cmake
+share/cmake-${CMAKE_API}/Modules/CPackDMG.cmake
 share/cmake-${CMAKE_API}/Modules/CPackDeb.cmake
 share/cmake-${CMAKE_API}/Modules/CPackNSIS.cmake
+share/cmake-${CMAKE_API}/Modules/CPackPackageMaker.cmake
 share/cmake-${CMAKE_API}/Modules/CPackRPM.cmake
 share/cmake-${CMAKE_API}/Modules/CPackZIP.cmake
 share/cmake-${CMAKE_API}/Modules/CTest.cmake
 share/cmake-${CMAKE_API}/Modules/CTestScriptMode.cmake
 share/cmake-${CMAKE_API}/Modules/CTestTargets.cmake
+share/cmake-${CMAKE_API}/Modules/CTestUseLaunchers.cmake
 share/cmake-${CMAKE_API}/Modules/CheckCCompilerFlag.cmake
 share/cmake-${CMAKE_API}/Modules/CheckCSourceCompiles.cmake
 share/cmake-${CMAKE_API}/Modules/CheckCSourceRuns.cmake
@@ -151,6 +162,7 @@ share/cmake-${CMAKE_API}/Modules/CheckIncludeFile.cmake
 share/cmake-${CMAKE_API}/Modules/CheckIncludeFile.cxx.in
 share/cmake-${CMAKE_API}/Modules/CheckIncludeFileCXX.cmake
 share/cmake-${CMAKE_API}/Modules/CheckIncludeFiles.cmake
+share/cmake-${CMAKE_API}/Modules/CheckLanguage.cmake
 share/cmake-${CMAKE_API}/Modules/CheckLibraryExists.cmake
 share/cmake-${CMAKE_API}/Modules/CheckLibraryExists.lists.in
 share/cmake-${CMAKE_API}/Modules/CheckPrototypeDefinition.c.in
@@ -164,8 +176,10 @@ share/cmake-${CMAKE_API}/Modules/CheckTypeSizeMap.cmake.in
 share/cmake-${CMAKE_API}/Modules/CheckVariableExists.c
 share/cmake-${CMAKE_API}/Modules/CheckVariableExists.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/Absoft-Fortran.cmake
+share/cmake-${CMAKE_API}/Modules/Compiler/Clang-ASM.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/Clang-C.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/Clang-CXX.cmake
+share/cmake-${CMAKE_API}/Modules/Compiler/Clang.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/Cray-C.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/Cray-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/Cray-Fortran.cmake
@@ -211,6 +225,12 @@ share/cmake-${CMAKE_API}/Modules/Compiler/XL-C.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/XL-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/XL-Fortran.cmake
 share/cmake-${CMAKE_API}/Modules/Compiler/XL.cmake
+share/cmake-${CMAKE_API}/Modules/CompilerId/VS-10.vcxproj.in
+share/cmake-${CMAKE_API}/Modules/CompilerId/VS-6.dsp.in
+share/cmake-${CMAKE_API}/Modules/CompilerId/VS-7.vcproj.in
+share/cmake-${CMAKE_API}/Modules/CompilerId/Xcode-1.pbxproj.in
+share/cmake-${CMAKE_API}/Modules/CompilerId/Xcode-2.pbxproj.in
+share/cmake-${CMAKE_API}/Modules/CompilerId/Xcode-3.pbxproj.in
 share/cmake-${CMAKE_API}/Modules/Dart.cmake
 share/cmake-${CMAKE_API}/Modules/DartConfiguration.tcl.in
 share/cmake-${CMAKE_API}/Modules/DeployQt4.cmake
@@ -252,6 +272,7 @@ share/cmake-${CMAKE_API}/Modules/FindFreetype.cmake
 share/cmake-${CMAKE_API}/Modules/FindGCCXML.cmake
 share/cmake-${CMAKE_API}/Modules/FindGDAL.cmake
 share/cmake-${CMAKE_API}/Modules/FindGIF.cmake
+share/cmake-${CMAKE_API}/Modules/FindGLEW.cmake
 share/cmake-${CMAKE_API}/Modules/FindGLU.cmake
 share/cmake-${CMAKE_API}/Modules/FindGLUT.cmake
 share/cmake-${CMAKE_API}/Modules/FindGTK.cmake
@@ -264,6 +285,7 @@ share/cmake-${CMAKE_API}/Modules/FindGnuplot.cmake
 share/cmake-${CMAKE_API}/Modules/FindHDF5.cmake
 share/cmake-${CMAKE_API}/Modules/FindHSPELL.cmake
 share/cmake-${CMAKE_API}/Modules/FindHTMLHelp.cmake
+share/cmake-${CMAKE_API}/Modules/FindHg.cmake
 share/cmake-${CMAKE_API}/Modules/FindITK.cmake
 share/cmake-${CMAKE_API}/Modules/FindImageMagick.cmake
 share/cmake-${CMAKE_API}/Modules/FindJNI.cmake
@@ -275,6 +297,7 @@ share/cmake-${CMAKE_API}/Modules/FindKDE4.cmake
 share/cmake-${CMAKE_API}/Modules/FindLAPACK.cmake
 share/cmake-${CMAKE_API}/Modules/FindLATEX.cmake
 share/cmake-${CMAKE_API}/Modules/FindLibArchive.cmake
+share/cmake-${CMAKE_API}/Modules/FindLibLZMA.cmake
 share/cmake-${CMAKE_API}/Modules/FindLibXml2.cmake
 share/cmake-${CMAKE_API}/Modules/FindLibXslt.cmake
 share/cmake-${CMAKE_API}/Modules/FindLua50.cmake
@@ -341,7 +364,9 @@ share/cmake-${CMAKE_API}/Modules/FindosgGA.cmake
 share/cmake-${CMAKE_API}/Modules/FindosgIntrospection.cmake
 share/cmake-${CMAKE_API}/Modules/FindosgManipulator.cmake
 share/cmake-${CMAKE_API}/Modules/FindosgParticle.cmake
+share/cmake-${CMAKE_API}/Modules/FindosgPresentation.cmake
 share/cmake-${CMAKE_API}/Modules/FindosgProducer.cmake
+share/cmake-${CMAKE_API}/Modules/FindosgQt.cmake
 share/cmake-${CMAKE_API}/Modules/FindosgShadow.cmake
 share/cmake-${CMAKE_API}/Modules/FindosgSim.cmake
 share/cmake-${CMAKE_API}/Modules/FindosgTerrain.cmake
@@ -388,6 +413,7 @@ share/cmake-${CMAKE_API}/Modules/MacOSXFrameworkInfo.plist.in
 share/cmake-${CMAKE_API}/Modules/MacroAddFileDependencies.cmake
 share/cmake-${CMAKE_API}/Modules/NSIS.InstallOptions.ini.in
 share/cmake-${CMAKE_API}/Modules/NSIS.template.in
+share/cmake-${CMAKE_API}/Modules/Platform/AIX-GNU-ASM.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/AIX-GNU-C.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/AIX-GNU-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/AIX-GNU-Fortran.cmake
@@ -419,6 +445,7 @@ share/cmake-${CMAKE_API}/Modules/Platform/BlueGeneP-static-XL-C.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/BlueGeneP-static-XL-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/BlueGeneP-static-XL-Fortran.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/BlueGeneP-static.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/CYGWIN-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/CYGWIN-GNU-C.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/CYGWIN-GNU-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/CYGWIN-GNU-Fortran.cmake
@@ -427,6 +454,10 @@ share/cmake-${CMAKE_API}/Modules/Platform/CYGWIN-windres.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/CYGWIN.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Catamount.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Darwin-Absoft-Fortran.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Darwin-CXX.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Darwin-Clang-C.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Darwin-Clang-CXX.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Darwin-Clang.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Darwin-GNU-C.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Darwin-GNU-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Darwin-GNU-Fortran.cmake
@@ -464,6 +495,7 @@ share/cmake-${CMAKE_API}/Modules/Platform/Haiku.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/IRIX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/IRIX64.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Linux-Absoft-Fortran.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Linux-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Linux-Clang-C.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Linux-Clang-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Linux-GNU-C.cmake
@@ -514,7 +546,10 @@ share/cmake-${CMAKE_API}/Modules/Platform/UnixPaths.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/UnixWare.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-Borland-C.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-Borland-CXX.cmake
-share/cmake-${CMAKE_API}/Modules/Platform/Windows-Borland.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Windows-CXX.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Windows-Embarcadero-C.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Windows-Embarcadero-CXX.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Windows-Embarcadero.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-G95-Fortran.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-GNU-C-ABI.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-GNU-C.cmake
@@ -528,16 +563,20 @@ share/cmake-${CMAKE_API}/Modules/Platform/Windows-Intel-C.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-Intel-CXX.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-Intel-Fortran.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-Intel.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Windows-MSVC-C.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Windows-MSVC-CXX.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/Windows-MSVC.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-NMcl.cmake
-share/cmake-${CMAKE_API}/Modules/Platform/Windows-cl.cmake
-share/cmake-${CMAKE_API}/Modules/Platform/Windows-cl.cmake.in
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-df.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-wcl386.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows-windres.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Windows.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/WindowsCE-MSVC-C.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/WindowsCE-MSVC-CXX.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/WindowsCE-MSVC.cmake
+share/cmake-${CMAKE_API}/Modules/Platform/WindowsCE.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/WindowsPaths.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/Xenix.cmake
-share/cmake-${CMAKE_API}/Modules/Platform/cl.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/eCos.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/gas.cmake
 share/cmake-${CMAKE_API}/Modules/Platform/kFreeBSD.cmake
@@ -602,6 +641,13 @@ share/cmake-${CMAKE_API}/Templates/UtilityHeader.dsptemplate
 share/cmake-${CMAKE_API}/Templates/cygwin-package.sh.in
 share/cmake-${CMAKE_API}/Templates/staticLibFooter.dsptemplate
 share/cmake-${CMAKE_API}/Templates/staticLibHeader.dsptemplate
+share/cmake-${CMAKE_API}/completions/cmake
+share/cmake-${CMAKE_API}/completions/cpack
+share/cmake-${CMAKE_API}/completions/ctest
+share/cmake-${CMAKE_API}/editors/emacs/cmake-mode.el
+share/cmake-${CMAKE_API}/editors/vim/cmake-help.vim
+share/cmake-${CMAKE_API}/editors/vim/cmake-indent.vim
+share/cmake-${CMAKE_API}/editors/vim/cmake-syntax.vim
 share/cmake-${CMAKE_API}/include/cmCPluginAPI.h
 share/doc/cmake-${CMAKE_API}/Copyright.txt
 share/doc/cmake-${CMAKE_API}/ccmake.docbook

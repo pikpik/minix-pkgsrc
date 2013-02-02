@@ -1,0 +1,2 @@
+@comment $NetBSD: PLIST,v 1.1 2012/11/23 11:51:14 drochner Exp $
+bin/grilo-test-ui-0.2

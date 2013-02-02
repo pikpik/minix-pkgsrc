@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2012/02/06 12:41:09 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/08 09:21:15 asau Exp $
 #
 
 DISTNAME=		xfmedia-0.9.2
-#PKGREVISION=		1
-PKGREVISION=		9
+PKGREVISION=		16
 CATEGORIES=		multimedia
 MASTER_SITES=		http://spuriousinterrupt.org/projects/xfmedia/files/
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		dhowland@users.sourceforge.net
 HOMEPAGE=		http://spuriousinterrupt.org/projects/xfmedia/
 COMMENT=		Xfce media player based on xine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
@@ -28,7 +25,7 @@ post-install:
 	${INSTALL} ${WRKSRC}/src/keybindings.rc \
 	    ${DESTDIR}${PREFIX}/share/xfmedia/keybindings.rc
 
-BUILDLINK_DEPMETHOD.libXt?=	build
+BUILDLINK_DEPMETHOD.libXt=	build
 
 .include "../../audio/taglib/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
@@ -40,4 +37,5 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/libxfce4gui/buildlink3.mk"
 .include "../../x11/xfce4-exo/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

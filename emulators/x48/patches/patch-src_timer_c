@@ -1,0 +1,14 @@
+$NetBSD$
+
+time.h is required on Linux.
+
+--- src/timer.c~	1999-06-28 22:12:29.000000000 +0000
++++ src/timer.c
+@@ -43,6 +43,7 @@
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <unistd.h>
++#include <time.h>
+ #include <sys/time.h>
+ 
+ #include "timer.h"

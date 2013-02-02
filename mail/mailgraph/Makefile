@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2008/03/04 17:57:18 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:56:24 wiz Exp $
 #
 
 DISTNAME=	mailgraph-1.13
 #PKGREVISION=	1
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://mailgraph.schweikert.ch/pub/	\
 		http://mailgraph.schweikert.ch/pub/old
@@ -13,8 +14,6 @@ COMMENT=	RRDtool frontend for mail statistics
 
 DEPENDS+=	rrdtool>=1:../../databases/rrdtool
 DEPENDS+=	p5-File-Tail-[0-9]*:../../misc/p5-File-Tail
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl:run
 

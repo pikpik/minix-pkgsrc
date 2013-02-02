@@ -1,29 +1,29 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:39:53 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/12/08 23:20:37 wiz Exp $
 #
 
-DISTNAME=	libgee-0.6.4
-PKGREVISION=	2
+DISTNAME=	libgee-0.6.7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgee/0.6/}
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/Libgee
-COMMENT=	Library providing GObject-based interfaces and classes
+COMMENT=	Library providing GObject-based interfaces and classes (v0.6)
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=		pkg-config gmake
 
 # to regenerate after patches
-#BUILD_DEPENDS+=	vala-[0-9]*:../../lang/vala
+#BUILDLINK_DEPMETHOD.vala:= build
+#.include "../../lang/vala018/buildlink3.mk"
 
 PKGCONFIG_OVERRIDE+=	gee-1.0.pc.in
 
 TEST_TARGET=	check
 
+BUILDLINK_DEPMETHOD.gobject-introspection:= build
+.include "../../devel/gobject-introspection/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2008/05/25 14:45:16 tron Exp $
+# $NetBSD: Makefile,v 1.17 2012/03/10 13:20:12 shattered Exp $
 
 DISTNAME=	mp3check-0.8.3
 CATEGORIES=	audio
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jo.ath.cx/soft/mp3check/
 COMMENT=	Check MP3 files for consistency
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++

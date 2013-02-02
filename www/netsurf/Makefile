@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2012/02/06 12:41:54 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/12/16 01:52:39 obache Exp $
 #
 
 DISTNAME=	netsurf-1.2-src
 PKGNAME=	${DISTNAME:S/-src$//}
-PKGREVISION=	11
+PKGREVISION=	20
 CATEGORIES=	www
 MASTER_SITES=	http://www.netsurf-browser.org/downloads/releases/
 
@@ -12,9 +12,7 @@ HOMEPAGE=	http://www.netsurf-browser.org/
 COMMENT=	Web browser for RISC OS and UNIX-like platforms
 
 BUILD_DEPENDS+=	lemon>=1.0:../../devel/lemon
-BUILD_DEPENDS+=	re2c>=0.12.*:../../devel/re2c
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+BUILD_DEPENDS+=	re2c>=0.12:../../devel/re2c
 
 # current codebase needs strndup
 NOT_FOR_PLATFORM=	NetBSD-[0-3]*-*

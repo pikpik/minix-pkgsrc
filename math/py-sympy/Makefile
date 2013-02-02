@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/02/25 09:47:25 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/09/11 23:04:32 asau Exp $
 #
 
-DISTNAME=	sympy-0.7.1
-PKGNAME=	${PYPKGPREFIX}-sympy-0.7.1
+DISTNAME=	sympy-0.7.2
+PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	math
 MASTER_SITES=	http://sympy.googlecode.com/files/
 
@@ -11,12 +11,22 @@ HOMEPAGE=	http://code.google.com/p/sympy/
 COMMENT=	Python library for symbolic mathematics
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	# none
 PYDISTUTILSPKG=	yes
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
+
+SUBST_CLASSES+=		python
+SUBST_STAGE.python=	post-patch
+SUBST_MESSAGE.python=	Fixing python path
+SUBST_FILES.python+=    sympy/galgebra/GA.py
+SUBST_FILES.python+=	sympy/galgebra/tests/test_GA.py
+SUBST_SED.python=	-e "s,/usr/bin/python,${PYTHONBIN},"
+
+SUBST_CLASSES+=		python2
+SUBST_STAGE.python2=	post-patch
+SUBST_MESSAGE.python2=	Fixing python path
+SUBST_FILES.python2+=	sympy/mpmath/tests/runtests.py
+SUBST_SED.python2=	-e "s,/usr/bin/env python,${PYTHONBIN},"
 
 post-extract:
 	${CP} ${WRKSRC}/bin/isympy ${WRKSRC}/bin/isympy${PYVERSSUFFIX}

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2009/05/19 08:59:16 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/22 22:59:47 rh Exp $
 #
 
-DISTNAME=		Cenon-3.83
-PKGREVISION=		3
+DISTNAME=		Cenon-3.9.6
+PKGREVISION=		1
 CATEGORIES=		graphics cad gnustep
 MASTER_SITES=		http://www.vhf-group.com/vhfInterservice/download/source/
 EXTRACT_SUFX=		.tar.bz2
@@ -12,13 +12,10 @@ HOMEPAGE=		http://www.cenon.info/
 COMMENT=		Vector graphics / CAD / DTP program
 LICENSE=		vhf-public-license
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=		objc
 
 WRKSRC=			${WRKDIR}/Cenon
 NO_CONFIGURE=		yes
-MAKE_JOBS_SAFE=		no
 
 INSTALLATION_DIRS+=	share/doc/Cenon
 INSTALLATION_DIRS+=	share/GNUstep/Library/Cenon

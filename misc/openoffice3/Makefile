@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.66 2012/03/15 11:53:34 obache Exp $
+# $NetBSD: Makefile,v 1.80 2013/01/25 19:18:09 reed Exp $
 
 OO_VER=			3.1.1
 OO_TAG=			OOO310_m19
 DISTNAME=		openoffice-${OO_VER}
 PKGNAME=		openoffice3-${OO_VER}
-PKGREVISION=		24
+PKGREVISION=		37
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_OPENOFFICE:=stable/${OO_VER}/}
 DIST_SUBDIR=		${DISTNAME}
@@ -19,8 +19,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.openoffice.org/
 COMMENT=		Integrated office productivity suite (version 3)
 LICENSE=		gnu-lgpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		p5-Archive-Zip-[0-9]*:../../archivers/p5-Archive-Zip
 
@@ -205,11 +203,13 @@ post-install:
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../security/openssl/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../textproc/hunspell/buildlink3.mk"
 .include "../../textproc/icu/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
+.include "../../textproc/raptor2/buildlink3.mk"
 .include "../../www/curl/buildlink3.mk"
 .include "../../www/neon/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"

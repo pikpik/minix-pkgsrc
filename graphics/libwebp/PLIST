@@ -1,8 +1,7 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.1.1.1 2011/10/28 13:48:00 ryoon Exp $
 bin/cwebp
 bin/dwebp
 include/webp/decode.h
-include/webp/decode_vp8.h
 include/webp/encode.h
 include/webp/types.h
 lib/libwebp.la

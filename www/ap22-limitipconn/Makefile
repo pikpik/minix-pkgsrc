@@ -1,10 +1,10 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/10/28 06:30:09 asau Exp $
 #
 
 DISTNAME=		mod_limitipconn-0.23
 EXTRACT_SUFX=		.tar.bz2
 PKGNAME=		${DISTNAME:S/mod_/ap22-/}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		www
 MASTER_SITES=		http://dominia.org/djao/limit/
 LICENSE=		apache-2.0
@@ -20,7 +20,6 @@ COMMENT=		Limits per-IP connections to an Apache 2 server
 APACHE_MODULE=		yes
 MAKE_FLAGS+=		APXS=${APXS:Q}
 USE_LIBTOOL=		yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS+=	lib/httpd
 

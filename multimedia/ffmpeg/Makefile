@@ -1,14 +1,10 @@
-# $NetBSD: Makefile,v 1.84 2012/02/01 17:56:07 drochner Exp $
+# $NetBSD: Makefile,v 1.99 2013/01/21 13:25:07 wiz Exp $
 
-# XXX This is release 0.7.11 but we had date-based pkgnames before.
-PKGNAME=	ffmpeg-20120112.${DISTVERSION}
-PKGREVISION=	3
+PKGNAME=	ffmpeg-20130120.${DISTVERSION}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ffmpeg.mplayerhq.hu/
 COMMENT=	Decoding, encoding and streaming software
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--enable-avfilter
 #CONFIGURE_ARGS+=	--enable-avfilter-lavf
@@ -21,15 +17,14 @@ CONF_FILES+=	${PREFIX}/share/examples/ffmpeg/ffserver.conf \
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "Darwin"
+.if !empty(MACHINE_PLATFORM:MDarwin-*-i386) \
+ || !empty(MACHINE_PLATFORM:MSunOS-*-i386)
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 
 TEST_TARGET=	check
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/README ${WRKSRC}/doc/TODO \
-		${DESTDIR}${PREFIX}/share/doc/ffmpeg
 	${INSTALL_DATA} ${WRKSRC}/doc/*.txt \
 		${DESTDIR}${PREFIX}/share/doc/ffmpeg
 	${INSTALL_DATA} ${WRKSRC}/doc/ffserver.conf \

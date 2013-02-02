@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/05/19 12:10:10 obache Exp $
+# $NetBSD: Makefile,v 1.2 2012/02/05 13:19:32 obache Exp $
 #
 
 .include "../../textproc/yamcha/Makefile.common"
@@ -8,8 +8,6 @@ PKGREVISION=	1
 CATEGORIES+=	python
 
 COMMENT=	YamCha python module
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 

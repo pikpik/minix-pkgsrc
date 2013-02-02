@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.66 2012/03/03 00:13:15 wiz Exp $
+# $NetBSD: Makefile,v 1.81 2012/12/18 14:01:06 drochner Exp $
 
-DISTNAME=	inkscape-0.48.2
-PKGREVISION=	6
+DISTNAME=	inkscape-0.48.4
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=inkscape/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://www.inkscape.org/
 COMMENT=	Scalable Vector Graphics (SVG) editor
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .if !exists (/usr/bin/iconv)
 BUILD_DEPENDS+=		libiconv-[0-9]*:../../converters/libiconv
@@ -26,6 +24,7 @@ USE_TOOLS+=		gmake intltool msgfmt perl:run pkg-config
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		MSGFMT=${TOOLS_DIR}/bin/msgfmt
 CONFIGURE_ENV+=		GMSGFMT=${TOOLS_DIR}/bin/msgfmt
+CONFIGURE_ARGS+=	--with-python
 
 REPLACE_PERL+=		share/extensions/*.p[lm]
 REPLACE_PERL+=		share/extensions/svg_dropshadow
@@ -34,6 +33,8 @@ BUILDLINK_API_DEPENDS.boehm-gc+=	boehm-gc>=6.4
 BUILDLINK_API_DEPENDS.poppler+=		poppler>=0.5.9
 
 UNLIMIT_RESOURCES=	datasize
+
+LDFLAGS.DragonFly=	-lX11
 
 SUBST_CLASSES+= pypath
 SUBST_STAGE.pypath= pre-configure
@@ -62,7 +63,7 @@ BUILDLINK_API_DEPENDS.poppler-includes+= poppler-includes>=0.12.2
 .include "../../devel/pango/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
-.include "../../graphics/lcms/buildlink3.mk"
+.include "../../graphics/lcms2/buildlink3.mk"
 .include "../../graphics/libart/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../lang/python/application.mk"

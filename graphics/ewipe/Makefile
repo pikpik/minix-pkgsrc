@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/01/31 15:47:58 reed Exp $
+# $NetBSD: Makefile,v 1.2 2008/03/04 15:39:09 jlam Exp $
 #
 
 DISTNAME=	ewipe-1.2.0
@@ -8,8 +8,6 @@ MASTER_SITES=	http://www.jnet-jp.to/~sekisita/ewipe/
 MAINTAINER=	reed@reedmedia.net
 HOMEPAGE=	http://www.jnet-jp.to/~sekisita/ewipe/index-e.html
 COMMENT=	Presentation editor and viewer based on Tcl/Tk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 NO_CONFIGURE=	yes

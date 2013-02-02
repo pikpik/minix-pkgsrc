@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.27 2010/12/17 14:12:10 rhaen Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/31 11:18:03 asau Exp $
 
-DISTNAME=	Devel-StackTrace-1.27
+DISTNAME=	Devel-StackTrace-1.30
 PKGNAME=	p5-${DISTNAME}00
 SVR4_PKGNAME=	p5dst
 CATEGORIES=	devel perl5
@@ -10,8 +10,6 @@ MAINTAINER=	rhaen@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Devel-StackTrace/
 COMMENT=	Perl5 module for stack trace and stack trace frame objects
 LICENSE=	artistic-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Devel/StackTrace/.packlist
 

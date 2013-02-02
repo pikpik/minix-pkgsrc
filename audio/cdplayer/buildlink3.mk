@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.7 2006/07/08 23:10:35 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2009/03/20 19:23:52 joerg Exp $
 
 BUILDLINK_TREE+=	cdplayer
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	cdplayer
 CDPLAYER_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.cdplayer+=	cdplayer>=0.4.2
-BUILDLINK_ABI_DEPENDS.cdplayer?=	cdplayer>=0.4.2nb3
+BUILDLINK_ABI_DEPENDS.cdplayer+=	cdplayer>=0.4.2nb3
 BUILDLINK_PKGSRCDIR.cdplayer?=	../../audio/cdplayer
 
 .include "../../audio/libcdaudio/buildlink3.mk"

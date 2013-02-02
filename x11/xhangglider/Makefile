@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/12/27 13:37:45 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2012/07/30 03:04:32 dholland Exp $
 #
 
 DISTNAME=	xhangglider-0.94.0
@@ -9,11 +9,10 @@ MASTER_SITES=	http://www.netfort.gr.jp/~take/linux/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.netfort.gr.jp/~take/linux/xhang-en.html
 COMMENT=	Hanggliders fly in the background of the X screen
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	gnu-gpl-v2
 
 USE_IMAKE=		yes
-PKGSRC_MAKE_ENV+=	PREFIX=${PREFIX}
+MAKE_ENV+=		PREFIX=${PREFIX}
 
 post-extract:
 	${RM} ${WRKSRC}/Makefile

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2010/09/10 05:03:12 taca Exp $
+# $NetBSD: Makefile,v 1.20 2010/09/13 14:39:30 taca Exp $
 #
 
 DISTNAME=	newfile-1.0.14
@@ -10,8 +10,6 @@ MAINTAINER=	flynn@energyhq.es.eu.org
 HOMEPAGE=	http://newfile.sourceforge.net/
 COMMENT=	Tool for creating starter files in various languages
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	ruby[1-9][0-9]-newfile-* newfile-*
 

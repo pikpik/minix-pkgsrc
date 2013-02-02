@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/09/13 04:24:27 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2011/07/28 04:53:03 minskim Exp $
 
 DISTNAME=	texlive-20110705-source
 PKGNAME=	ps2pkm-1.5
@@ -16,8 +16,6 @@ DEPENDS+=	kpathsea>=6.0.1:../../print/kpathsea
 
 EXTRACT_ELEMENTS=	${DISTNAME}/build-aux \
 			${DISTNAME}/texk/ps2pkm
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2009/12/06 23:32:56 dholland Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:56:43 wiz Exp $
 #
 
 DISTNAME=	ipbt-r8765
 PKGNAME=	ipbt-8765
+PKGREVISION=	1
 CATEGORIES=	misc
 # The upstream distfile is apparently rebuilt every night with
 # newly regenerated docs that have different timestamps. Use the
@@ -14,8 +15,6 @@ DIST_SUBDIR=	ipbt-20100101
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.chiark.greenend.org.uk/~sgtatham/ipbt/
 COMMENT=	High-tech ttyrec player
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl
 REPLACE_PERL=		ttydump ttygrep

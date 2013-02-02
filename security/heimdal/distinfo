@@ -1,15 +1,16 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.35 2012/08/07 13:54:21 obache Exp $
 
 SHA1 (heimdal-1.5.2.tar.gz) = dd0920a181d18236432e4b3e5eab6e468cda4b89
 RMD160 (heimdal-1.5.2.tar.gz) = 1ab2f835309a916dfbba667d3d0d38a57c312fde
 Size (heimdal-1.5.2.tar.gz) = 6798615 bytes
-SHA1 (patch-ad) = 37c2a7cdc4dba695a84057b40aae3c5a971cb546
+SHA1 (patch-ad) = 8f30b685cbfe37bf202f6cc501fc336a36b60c00
 SHA1 (patch-al) = 022d5f3723bd1db7fe5e92eea5d0106851a5d424
 SHA1 (patch-appl_Makefile.in) = 0f97c53e4228305a282c445e11b1ca2a1faea368
 SHA1 (patch-appl_login_limits__conf.c) = 1c96ea0f6a414d6bbce129c45267f9d68e50cce1
 SHA1 (patch-appl_login_login.c) = d9dfb2a3e9e5ba3f6e35e7254e10faee34f4f903
 SHA1 (patch-appl_rcp_rcp.c) = f6ba7fd12f6d287357c9dd9ddc86e92940e44991
 SHA1 (patch-appl_rsh_limits__conf.c) = fec3a6d79f738243f876f998fda953e46c3af814
+SHA1 (patch-cf_install-catman.sh) = 8eb8ea0c0c8b281c080c85eefc3abbc7dcbe6746
 SHA1 (patch-kadmin_kadm__conn.c) = d79632ffa369536afca2f2e6b8905592e5d3ef99
 SHA1 (patch-kdc_version-script.map) = 42b0417a16b19a680f30ae34cfffd082f609d4a6
 SHA1 (patch-lib_hcrypto_libtommath_tommath.h) = 60f223bb23145854f2a144da9e0a9484728b618a

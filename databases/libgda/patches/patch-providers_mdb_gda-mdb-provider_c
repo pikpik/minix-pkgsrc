@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- providers/mdb/gda-mdb-provider.c~	2007-04-24 21:13:17.000000000 +0000
++++ providers/mdb/gda-mdb-provider.c
+@@ -22,7 +22,7 @@
+  */
+ 
+ #include <stdlib.h>
+-#include <glib/gbacktrace.h>
++#include <glib.h>
+ #include <libgda/gda-data-model-array.h>
+ #include <libgda/gda-data-model-private.h>
+ #include <glib/gi18n-lib.h>

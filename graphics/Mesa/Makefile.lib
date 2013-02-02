@@ -1,8 +1,12 @@
-# $NetBSD: Makefile.lib,v 1.12 2008/05/29 12:43:39 tnn Exp $
+# $NetBSD: Makefile.lib,v 1.13 2008/07/27 00:03:42 bjs Exp $
 #
 # This Makefile fragment is included by all packages that build libraries
 # from the Mesa sources.
 #
+# used by graphics/glu/Makefile
+# used by graphics/glut/Makefile
+# used by graphics/MesaDemos/Makefile
+# used by graphics/MesaLib/Makefile
 
 .include "../../graphics/Mesa/Makefile.common"
 

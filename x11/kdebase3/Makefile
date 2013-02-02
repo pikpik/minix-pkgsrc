@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.166 2012/02/06 12:42:16 wiz Exp $
+# $NetBSD: Makefile,v 1.172 2012/12/16 01:52:40 obache Exp $
 
 DISTNAME=	kdebase-${_KDE_VERSION}
-PKGREVISION=	20
+PKGREVISION=	24
 CATEGORIES=	x11
 COMMENT=	Base modules for the KDE 3 integrated X11 desktop
 
 #PATCH_SITES=	ftp://ftp.kde.org/pub/kde/security_patches/ \
 #		http://mirrors.isc.org/pub/kde/security_patches/
 #PATCHFILES=	post-3.5.7-kdebase-konqueror-2.diff post-3.5.7-kdebase-kdm.diff
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
@@ -92,7 +90,7 @@ DEPENDS+=		htdig>=3.2.0:../../www/htdig
 
 # Solaris 10 has libusb only for 32 bit ABI (see PR 33727).
 .if ${OPSYS} == "SunOS" && ${MACHINE_ARCH} == "x86_64"
-CONFIGURE_ARGS+=       --without-libusb
+CONFIGURE_ARGS+=	--without-libusb
 .endif
 
 PLIST_VARS+=		usbview
@@ -116,11 +114,11 @@ SUBST_CLASSES+=		varlock
 SUBST_STAGE.varlock=	post-patch
 SUBST_MESSAGE.varlock=	Fix lock directory path.
 SUBST_FILES.varlock=	kcheckpass/kcheckpass.c
-.if ${OPSYS} == "SunOS"
+.  if ${OPSYS} == "SunOS"
 SUBST_SED.varlock=	-e s:/var/lock:/var/spool/locks:
-.else
+.  else
 SUBST_SED.varlock=	-e s:/var/lock:/var/spool/lock:
-.endif
+.  endif
 .endif
 
 SUBST_CLASSES+=		htdig

@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:41:51 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/08 23:02:31 adam Exp $
 #
 
 DISTNAME=	mod_dnssd-0.5
 PKGNAME=	${APACHE_PKG_PREFIX}-${DISTNAME:S/mod_//}
-PKGREVISION=	11
+PKGREVISION=	15
 CATEGORIES=	www
 MASTER_SITES=	http://0pointer.de/lennart/projects/mod_dnssd/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://0pointer.de/lennart/projects/mod_dnssd/
 COMMENT=	Apache module which adds Zeroconf support via DNS-SD using Avahi
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS=	pkg-config gmake

@@ -1,21 +1,18 @@
-# $NetBSD: Makefile,v 1.4 2011/09/13 08:16:12 apb Exp $
-#
+# $NetBSD: Makefile,v 1.6 2012/05/01 18:45:53 adam Exp $
 
 .include "../../devel/glib2/Makefile.common"
 
-PKGNAME:=		${PKGNAME:S/glib2/gio-fam/}
-PKGREVISION=		1
-CATEGORIES=		sysutils
+PKGNAME:=	${PKGNAME:S/glib2/gio-fam/}
+CATEGORIES=	sysutils
 
-COMMENT=		FAM backend for GIO, the glib VFS API
+COMMENT=	FAM backend for GIO, the glib VFS API
 
 NOT_FOR_PLATFORM=	HPUX-*-* OSF1-*-*
 
 FAM_ACCEPTED=		fam gamin
 FAM_SERVER=		no
 
-USE_TOOLS+=		msgfmt
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		msgfmt perl:run pkg-config
 
 CONFIGURE_ARGS+=	--enable-fam
 

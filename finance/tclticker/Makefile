@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/05/26 02:13:18 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2009/05/21 10:51:43 zafer Exp $
 #
 
 DISTNAME=	tclticker-1.1
@@ -14,7 +14,6 @@ DEPENDS+=	tk>=8.3.2:../../x11/tk
 USE_TOOLS+=	pax
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes

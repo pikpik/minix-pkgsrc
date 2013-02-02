@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.13 2010/02/11 22:50:43 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:57:11 wiz Exp $
 #
 
 DISTNAME=		stripes-2.1
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		# ftp://ftp.gw.com/sw/stripes/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 HOMEPAGE=		http://www.gw.com/sw/stripes/
 COMMENT=		Looking Glass for Zebra and Cisco Routers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		{p5-CGI>=2.66,perl>=5.6.1nb2}:../../www/p5-CGI
 DEPENDS+=		p5-Net-Telnet>=3.02:../../net/p5-Net-Telnet

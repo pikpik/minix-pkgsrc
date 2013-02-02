@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:40:41 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 23:01:53 adam Exp $
 #
 
 DISTNAME=	kimera-2.11
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	inputmethod japanese
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=kimera/37271/}
 
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://kimera.sourceforge.jp/
 COMMENT=	Kanji Input MEthod for RAgamuffins
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 

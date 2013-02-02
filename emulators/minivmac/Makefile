@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/03/03 19:21:38 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2009/09/02 08:34:13 wiz Exp $
 
 DISTNAME=	minivmac-0.1.7.src
 PKGNAME=	minivmac-0.1.7
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://minivmac.sourceforge.net/
 COMMENT=	Miniature Macintosh emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/minivmac
 

@@ -1,18 +1,16 @@
-# $NetBSD: Makefile,v 1.8 2011/11/29 18:29:38 hans Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:57:40 wiz Exp $
 #
 
 VERS=		1.3.2
 DISTNAME=	munin_${VERS}
 PKGNAME=	munin-doc-${VERS}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=munin/}
 
 MAINTAINER=	he@NetBSD.org
 HOMEPAGE=	http://munin-monitoring.org/
 COMMENT=	System monitoring tool, documentation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	htmldoc>=0:../../www/htmldoc
 BUILD_DEPENDS+= html2text>=0:../../textproc/html2text

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.18 2012/02/06 12:39:21 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/09/11 23:59:37 asau Exp $
 
-DISTNAME=	fluidsynth-1.1.5
-PKGREVISION=	2
+DISTNAME=	fluidsynth-1.1.6
+PKGREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fluidsynth/}
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fluidsynth.org/
@@ -11,7 +12,6 @@ COMMENT=	Software synthesizer based on SoundFont2
 LICENSE=	gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config

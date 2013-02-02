@@ -1,4 +1,4 @@
-<!-- $NetBSD: platforms.xml,v 1.64 2010/09/02 02:37:59 obache Exp $ -->
+<!-- $NetBSD: platforms.xml,v 1.72 2012/07/25 21:20:51 tez Exp $ -->
 
 <chapter id="platforms">
   <title>Using pkgsrc on systems other than &os;</title>
@@ -60,7 +60,7 @@
     <sect2 id="freebsd">
       <title>FreeBSD</title>
 
-      <para>FreeBSD 4.7 and 5.0 have been tested and are supported,
+      <para>FreeBSD 8.3 and 9.0 have been tested and are supported,
       other versions may work.</para>
 
       <para>Care should be taken so that the tools that this kit installs do not conflict
@@ -369,37 +369,28 @@ PKGSRC_COMPILER=        mipspro
       directory:</para>
 
       <programlisting>
-env CC=/opt/intel_cc_80/bin/icc LDFLAGS=-static-libcxa \
-ac_cv___attribute__=yes ./bootstrap
+env ICCBASE=/opt/intel/cc/10.1.008 ./bootstrap --compiler=icc
       </programlisting>
 
       <note>
-	<para>icc 8.1 needs the `-i-static' argument instead of -static-libcxa.</para>
+	<para>For icc 8.0 you must add `LDFLAGS=-static-libcxa' to this.</para>
+	<para>For icc 8.1 you must add `LDFLAGS=-i-static' instead.</para>
+	<para>For icc 10.1 neither of these appears to be necessary.</para>
       </note>
 
-      <para>icc supports __attribute__, but the GNU configure test uses a nested
-      function, which icc does not support. #undef'ing __attribute__ has the
-      unfortunate side-effect of breaking many of the Linux header files, which
-      cannot be compiled properly without __attribute__. The test must be
-      overridden so that __attribute__ is assumed supported by the
-      compiler.</para>
-
-      <para>After bootstrapping, you should set <varname>PKGSRC_COMPILER</varname>
-      in &mk.conf;:</para>
+      <para>Use a value for ICCBASE that corresponds to the directory
+      where icc is installed. After bootstrapping, set
+      <varname>ICCBASE</varname> in &mk.conf;:</para>
 
       <programlisting>
-PKGSRC_COMPILER=        icc
+ICCBASE=                /opt/intel/cc/10.1.008
       </programlisting>
 
-      <para>The default installation directory for icc is
-      <filename>/opt/intel_cc_80</filename>, which
-      is also the pkgsrc default. If you have installed it into a different
-      directory, set <varname>ICCBASE</varname> in
-      &mk.conf;:</para>
-
-      <programlisting>
-ICCBASE=                /opt/icc
-      </programlisting>
+      <para>The pkgsrc default for <varname>ICCBASE</varname> is
+      <filename>/opt/intel_cc_80</filename>. This is the default
+      install directory for icc 8.0. If you are using a more recent
+      version, be sure to set the correct path explicitly.
+      </para>
 
       <para>pkgsrc uses the static linking method of the runtime libraries
       provided by icc, so binaries can be run on other systems which do not
@@ -418,7 +409,8 @@ ICCBASE=                /opt/icc
     <sect2 id="openbsd">
       <title>OpenBSD</title>
 
-      <para>OpenBSD 3.0 and 3.2 are tested and supported.</para>
+      <para>OpenBSD 5.1 has been tested and supported,
+      other versions may work.</para>
 
       <para>Care should be taken so that the tools that this kit installs do not conflict
       with the OpenBSD userland tools. There are several steps:</para>
@@ -467,8 +459,8 @@ ICCBASE=                /opt/icc
     <sect2 id="solaris">
       <title>Solaris</title>
 
-      <para>Solaris 2.6 through 9 are supported on both x86 and sparc.
-      You will need a working C compiler. Both gcc 2.95.3 and
+      <para>Solaris 2.6 through 10 are supported on both x86 and sparc.
+      You will need a working C compiler. Both gcc 4.5.3 and
       Sun WorkShop 5 have been tested.</para>
 
       <para>The following packages are required on Solaris 8 for the bootstrap
@@ -498,7 +490,7 @@ ICCBASE=                /opt/icc
 
 	<para>It is recommended that an external gcc be used only for bootstrapping,
 	then either build gcc from
-	<filename role="pkg">lang/gcc</filename> or install a binary gcc
+	<filename role="pkg">lang/gcc46</filename> or install a binary gcc
 	package, then remove gcc used during bootstrapping.</para>
 
 	<para>Binary packages of gcc can be found through <ulink

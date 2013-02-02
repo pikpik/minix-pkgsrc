@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.16 2012/02/17 18:38:41 drochner Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/29 05:06:47 asau Exp $
 #
 
-DISTNAME=	QScintilla-gpl-2.6.1
+DISTNAME=	QScintilla-gpl-2.6.2
 PKGNAME=	qt4-${DISTNAME:tl:S/-gpl-/-/}
-PKGREVISION=	1
+PKGREVISION=	5
 CATEGORIES=	x11
 MASTER_SITES=	http://www.riverbankcomputing.com/static/Downloads/QScintilla2/
 
@@ -12,9 +12,7 @@ HOMEPAGE=	http://www.riverbankcomputing.co.uk/software/qscintilla/intro
 COMMENT=	Scintilla C++ editor class for Qt
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-WRKSRC=		${WRKDIR}/${DISTNAME}/Qt4
+WRKSRC=		${WRKDIR}/${DISTNAME}/Qt4Qt5
 
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes

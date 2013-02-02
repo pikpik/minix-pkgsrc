@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.91 2011/11/01 06:02:44 sbd Exp $
+# $NetBSD: Makefile,v 1.95 2012/10/23 10:24:16 wiz Exp $
 
 DISTNAME=	WindowMaker-0.92.0
 PKGNAME=	${DISTNAME:S/WindowMaker/windowmaker/}
-PKGREVISION=	18
+PKGREVISION=	20
 CATEGORIES=	x11 wm windowmaker
 MASTER_SITES=	http://windowmaker.info/pub/source/release/ \
 	ftp://ftp.dti.ad.jp/pub/X/WindowMaker/source/release/
@@ -27,8 +27,6 @@ CONFIGURE_ENV+=		LINGUAS=yes
 CONFIGURE_ENV+=		CPP_PATH=${CPP:Q}
 USE_TOOLS+=		perl:run
 REPLACE_PERL+=		util/wkdemenu.pl
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	share/WindowMaker/SoundSets
 INSTALLATION_DIRS+=	share/WindowMaker/Sounds
@@ -112,5 +110,4 @@ post-install:
 .include "../../x11/libXpm/buildlink3.mk"
 BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

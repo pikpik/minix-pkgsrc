@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2011/02/11 11:50:02 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/07/17 21:00:34 asau Exp $
 #
 
-DISTNAME=	ipa-2.1.1
+DISTNAME=	ipa-2.1.2
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ipa-system/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	simon@comsys.ntu-kpi.kiev.ua
 HOMEPAGE=	http://ipa-system.sourceforge.net/
 COMMENT=	Pluggable accounting system
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

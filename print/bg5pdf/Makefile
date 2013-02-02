@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2012/02/06 12:41:19 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2013/01/05 13:34:31 gdt Exp $
 
 DISTNAME=	bg5pdf-1.0.0
-PKGREVISION=	12
+PKGREVISION=	14
 CATEGORIES=	print chinese
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
@@ -9,7 +9,14 @@ MAINTAINER=	rxg@NetBSD.org
 # HOMEPAGE=	http://students.washington.edu/cschin/bg5ps/bg5pdf/
 COMMENT=	Wrap big5 encoding text file into PDF file by using PDFlib
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+# The package is a confusing mix of GPL and pdflib license.
+# Err on the side of caution until this is understood.
+LICENSE=		bg5pdf-license
+RESTRICTED=		"No clear permission to redistribute".
+NO_SOURCE_ON_FTP=	${RESTRICTED}
+NO_SOURCE_ON_CDROM=	${RESTRICTED}
+NO_BIN_ON_FTP=		${RESTRICTED}
+NO_BIN_ON_CDROM=	${RESTRICTED}
 
 WRKSRC=				${WRKDIR}/bg5pdf
 PY_PATCHPLIST=			yes

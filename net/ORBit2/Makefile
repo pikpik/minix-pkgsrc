@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.76 2012/02/06 12:41:09 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2012/09/15 10:05:56 obache Exp $
 #
 
 DISTNAME=		ORBit2-2.14.19
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/ORBit2/2.14/}
 EXTRACT_SUFX=		.tar.bz2
@@ -13,7 +13,6 @@ COMMENT=		High-performance CORBA ORB with C language support
 LICENSE=		gnu-gpl-v2 AND gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		linc>=1.1
 

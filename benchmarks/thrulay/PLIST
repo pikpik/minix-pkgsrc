@@ -1,5 +1,8 @@
-@comment $NetBSD: PLIST,v 1.2 2006/08/14 13:31:21 rpaulo Exp $
+@comment $NetBSD: PLIST,v 1.3 2007/02/22 19:01:15 wiz Exp $
 bin/thrulay
+include/thrulay/client.h
+include/thrulay/server.h
+lib/libthrulay.la
 man/man1/thrulay.1
 man/man8/thrulayd.8
 sbin/thrulayd

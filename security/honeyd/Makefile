@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2012/02/06 12:41:26 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/08 23:02:22 adam Exp $
 #
 
 DISTNAME=	honeyd-1.5b
-PKGREVISION=	18
+PKGREVISION=	23
 CATEGORIES=	security net
 MASTER_SITES=	http://www.citi.umich.edu/u/provos/honeyd/
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.honeyd.org/
 COMMENT=	Small daemon that creates virtual hosts on a network
 LICENSE=	gnu-gpl-v2 # or later
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	honeyd-arpd>=0.2:../../security/honeyd-arpd
 

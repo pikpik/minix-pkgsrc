@@ -1,19 +1,21 @@
-# $NetBSD: Makefile,v 1.61 2012/02/29 13:33:00 hans Exp $
+# $NetBSD: Makefile,v 1.66 2012/10/21 21:23:45 cheusov Exp $
 #
 
 DISTNAME=	groff-1.20.1
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU:=groff/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/groff/groff.html
 COMMENT=	GNU roff text processing suite
+LICENSE=	gnu-gpl-v3
+
+CONFLICTS=		mdocml-[0-9]* ja-groff-[0-9]*
 
 CHECK_PERMS=		NO
 MAKE_JOBS_SAFE=		NO
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	share/groff/site-tmac
 
 USE_LANGUAGES=		c c++
@@ -21,8 +23,6 @@ GNU_CONFIGURE=		YES
 CONFIGURE_ENV+=		PERLPATH=${PERL5:Q}
 USE_TOOLS+=		perl:run sed:run awk:run
 USE_FEATURES=		getopt_long
-
-CFLAGS.SunOS+=		-std=c99 -D_XOPEN_SOURCE=600
 
 INFO_FILES=		YES
 
@@ -46,16 +46,14 @@ PLIST_SRC+=		PLIST
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "SunOS"
-PLIST_SUBST+=	GNU_PREFIX="g"
-
-.else
-PLIST_SUBST+=	GNU_PREFIX=""
-.endif
-
 BUILD_DEFS+=	PAPERSIZE
 .if defined(PAPERSIZE)
 CONFIGURE_ENV+=	PAGE=${PAPERSIZE:Q}
+.endif
+
+.include "../../mk/compiler.mk"
+.if !empty(CC_VERSION:Mgcc-4.[6-9].*)
+CFLAGS.SunOS+=		-std=c99 -D_XOPEN_SOURCE=600
 .endif
 
 # Usually the mdoc.local "volume-operating-system" definition is for
@@ -68,7 +66,7 @@ post-patch:
 	${SED}	-e "s,@@VOLUME_OPERATING_SYSTEM@@,${OPSYS},g"	\
 		-e "s,@@OPERATING_SYSTEM@@,pkgsrc,g"	\
 		${FILESDIR}/mdoc.local > ${WRKDIR}/mdoc.local
-	@${RM} ${WRKSRC}/doc/groff.info-2.orig
+	${RM} ${WRKSRC}/doc/groff.info-2.orig
 
 # Groff installs its own man and ms macros as mgan and mgs if the
 # configure script thinks replacing the system ones is not safe. Since

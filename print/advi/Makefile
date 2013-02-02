@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.44 2012/03/03 00:13:49 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/12/15 10:36:31 ryoon Exp $
 
 DISTNAME=		advi-1.10.1
-PKGREVISION=		7
+PKGREVISION=		17
 CATEGORIES=		print
 MASTER_SITES=		http://gallium.inria.fr/advi/
 
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://gallium.inria.fr/advi/
 COMMENT=		Active-DVI Presenter
 LICENSE=		gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		ocaml>=3.04:../../lang/ocaml
 BUILD_DEPENDS+=		ocaml-findlib>=1.2.6:../../devel/ocaml-findlib

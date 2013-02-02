@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2010/01/29 23:24:15 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2011/12/09 14:36:34 drochner Exp $
 
 DISTNAME=		imaze1.3
 PKGNAME=		imaze-1.3
@@ -10,8 +10,6 @@ DISTFILES=		imaze-sounds.tar imaze1.3.tar.Z
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://home.tu-clausthal.de/student/iMaze/
 COMMENT=		Multiplayer, networked, action,x 3D maze game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EXTRACT_ONLY=		imaze1.3.tar.Z
 

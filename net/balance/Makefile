@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2007/12/20 14:00:07 obache Exp $
+# $NetBSD: Makefile,v 1.4 2010/07/06 10:17:14 jmmv Exp $
 #
 
 DISTNAME=	balance-3.15
@@ -12,8 +12,6 @@ COMMENT=	TCP loadbalancer with roundrobin and failover
 BUILD_TARGET=	balance
 
 INSTALLATION_DIRS=	sbin ${PKGMANDIR}/man1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/balance ${DESTDIR}${PREFIX}/sbin/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/01/24 17:11:19 heinz Exp $
+# $NetBSD: Makefile,v 1.8 2011/01/18 10:34:38 markd Exp $
 #
 
 DISTNAME=		libvolume_id-0.81.1
@@ -11,7 +11,6 @@ HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Library to provide file system type information
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	include lib lib/pkgconfig
 USE_TOOLS+=		gmake pkg-config
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2012/02/06 12:40:44 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/06 14:25:17 asau Exp $
 #
 
 DISTNAME=	scim-thai-0.1.2
-PKGREVISION=	4
+PKGREVISION=	8
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://linux.thai.net/pub/thailinux/software/libthai/ \
 		ftp://linux.thai.net/pub/ThaiLinux/software/libthai/
@@ -11,8 +11,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://linux.thai.net/projects/scim-thai
 COMMENT=	SCIM IMEngine module for Thai
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.57 2012/02/06 12:40:57 wiz Exp $
+# $NetBSD: Makefile,v 1.63 2012/12/16 01:52:24 obache Exp $
 
 DISTNAME=	kdeadmin-${_KDE_VERSION}
-PKGREVISION=	11
+PKGREVISION=	16
 CATEGORIES=	misc
 COMMENT=	System administration tools for the KDE integrated X11 desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
@@ -25,4 +23,5 @@ REPLACE_PERL+=	knetworkconf/backends/*.pl.in \
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

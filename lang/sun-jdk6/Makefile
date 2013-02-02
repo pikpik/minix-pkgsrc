@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.27 2011/10/20 12:28:09 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/08/31 11:34:01 obache Exp $
 
-DISTNAME=	jdk-6u31-linux-${DIST_ARCH}
-PKGNAME=	sun-jdk6-6.0.31
+DISTNAME=	jdk-6u37-linux-${DIST_ARCH}
+PKGNAME=	sun-jdk6-6.0.37
 MASTER_SITES=	# empty
 
 LICENSE=	sun-jdk6-license
 
 DEPENDS+=	${PKGNAME_NOREV:S/jdk/jre/}*:../../lang/sun-jre6
 
-WRKSRC=		${WRKDIR}/jdk1.6.0_31
+WRKSRC=		${WRKDIR}/jdk1.6.0_37
 JAVA_WRAPPERS=	appletviewer apt extcheck idlj jar jarsigner \
 		javac javadoc javah javap jdb rmic serialver
 
@@ -50,8 +50,6 @@ pre-install:
 		${WRKSRC}/db/bin/setNetworkServerCP.bat \
 		${WRKSRC}/db/bin/startNetworkServer.bat \
 		${WRKSRC}/db/bin/stopNetworkServer.bat \
-		${WRKSRC}/db/bin/sysinfo.bat \
-		${WRKSRC}/sample/scripting/scriptpad/src/scripts/memory.sh
-
+		${WRKSRC}/db/bin/sysinfo.bat
 
 .include "../../mk/bsd.pkg.mk"

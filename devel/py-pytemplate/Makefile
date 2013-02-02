@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/25 09:16:06 imil Exp $
+# $NetBSD: Makefile,v 1.3 2012/04/08 19:08:54 wiz Exp $
 #
 
 DISTNAME=	pytemplate-1.5.1
@@ -11,11 +11,8 @@ MAINTAINER=	imil@gcu.info
 HOMEPAGE=	http://bulot.org/wiki/doku.php?id=projects:python:pytemplate
 COMMENT=	Pytemplate gives python developpers a starting framework
 
-PKG_DESTDIR_SUPPORT=		user-destdir
-
 USE_LANGUAGES=			# none
 
-PYTHON_VERSIONS_INCOMPATIBLE=	31
 REPLACE_PYTHON=			${WRKSRC}/*.py
 
 EGDIR=				${PREFIX}/share/examples/${PYPKGPREFIX}-pytemplate

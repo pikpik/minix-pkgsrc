@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.91 2012/02/06 12:40:38 wiz Exp $
+# $NetBSD: Makefile,v 1.100 2012/12/10 12:32:40 ryoon Exp $
 
 DISTNAME=	xsane-0.998
 PKGNAME=	xsane-0.99.8
-PKGREVISION=	3
+PKGREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.xsane.org/download/old/ \
 		ftp://ftp.u-aizu.ac.jp/pub/misc/device/scsi/scanner/sane/xsane/ \
@@ -13,8 +13,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.xsane.org/
 COMMENT=	New improved frontend for SANE
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES

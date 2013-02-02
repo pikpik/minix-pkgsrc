@@ -1,17 +1,18 @@
-# $NetBSD: Makefile,v 1.41 2012/03/09 17:02:14 adam Exp $
+# $NetBSD: Makefile,v 1.55 2012/12/16 01:52:12 obache Exp $
 
 .include "../../devel/scmgit/Makefile.common"
 
 PKGNAME=	scmgit-base-${GIT_VERSION}
 COMMENT=	GIT Tree History Storage Tool (base package)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFLICTS+=		git<4.9.5nb1		# misc/git
 
 DEPENDS+=		p5-Error>=0.17015:../../devel/p5-Error
 # for git-send-email
 DEPENDS+=		p5-MIME-Base64>=3.13:../../converters/p5-MIME-Base64
+DEPENDS+=		p5-Email-Valid>=0.190:../../mail/p5-Email-Valid
+DEPENDS+=		p5-MailTools>=2.11:../../mail/p5-MailTools
+DEPENDS+=		p5-Net-SMTP-SSL>=1.01:../../mail/p5-Net-SMTP-SSL
 DEPENDS+=		p5-Authen-SASL>=1.0:../../security/p5-Authen-SASL
 
 USE_LANGUAGES=		c99
@@ -29,7 +30,9 @@ CONFIGURE_ARGS+=	--with-curl=${BUILDLINK_PREFIX.curl}
 CONFIGURE_ARGS+=	--with-expat=${BUILDLINK_PREFIX.expat}
 CONFIGURE_ARGS+=	--with-iconv=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--with-openssl=${SSLBASE}
+CONFIGURE_ARGS+=	--with-perl=${PERL5:Q}
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
+CONFIGURE_ARGS+=	--without-tcltk
 
 BUILD_TARGET=		all
 
@@ -88,6 +91,11 @@ SUBST_SED.fix-cd-P=	-e "s/cd -P/cd/g"
 .endif
 
 LDFLAGS.SunOS+=		-lintl -lnsl
+
+post-install:
+	${INSTALL_DATA_DIR} ${DESTDIR}${EGDIR}
+	${INSTALL_DATA} ${WRKSRC}/contrib/completion/git-completion.bash \
+		${DESTDIR}${EGDIR}
 
 .include "options.mk"
 

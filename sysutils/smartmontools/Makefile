@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2010/11/13 10:10:45 tnn Exp $
+# $NetBSD: Makefile,v 1.20 2012/07/20 12:35:00 taca Exp $
 
 DISTNAME=		smartmontools-5.40
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=smartmontools/}
 
@@ -12,7 +13,6 @@ LICENSE=		gnu-gpl-v2
 ONLY_FOR_PLATFORM=	Darwin-*-* DragonFly-*-* FreeBSD-*-* Linux-*-*
 ONLY_FOR_PLATFORM+=	NetBSD-*-* OpenBSD-*-* SunOS-*-*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_LANGUAGES=		c c++

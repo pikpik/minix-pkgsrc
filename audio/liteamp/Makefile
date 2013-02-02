@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.45 2012/02/06 12:39:27 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2012/10/08 23:01:12 adam Exp $
 
 DISTNAME=	liteamp-0.2.4.2
-PKGREVISION=	26
+PKGREVISION=	34
 CATEGORIES=	audio
 MASTER_SITES=	http://kldp.net/frs/download.php/1153/
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://kldp.net/projects/liteamp/
 COMMENT=	Light-weight Music Player for GNOME2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
@@ -25,6 +23,7 @@ LDFLAGS+=		${BUILDLINK_LDADD.oss}
 .include "../../audio/libmad/buildlink3.mk"
 .include "../../audio/libvorbis/buildlink3.mk"
 .include "../../devel/libgnomeui/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

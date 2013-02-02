@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2012/03/03 00:12:51 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/08 23:01:19 adam Exp $
 #
 
 DISTNAME=	multisync-gui-0.91.0
-PKGREVISION=	12
+PKGREVISION=	19
 CATEGORIES=	comms
 MASTER_SITES=	http://www.opensync.org/raw-attachment/wiki/releases/0.2x/download/
 
@@ -10,12 +10,12 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.opensync.org/
 COMMENT=	GUI for libopensync
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=	pkg-config
 HAS_CONFIGURE=	yes
 
 REPLACE_PYTHON= waf
+
+LDFLAGS.DragonFly=	-lgthread-2.0
 
 .include "../../lang/python/application.mk"
 .include "../../devel/glib2/buildlink3.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.53 2011/11/01 06:02:47 sbd Exp $
+# $NetBSD: Makefile,v 1.55 2012/10/28 06:31:08 asau Exp $
 
 DISTNAME=	webalizer-2.21-02-src
 PKGNAME=	webalizer-2.21.2
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.mrunix.net/pub/webalizer/ \
 		http://webalizer.linux-mirror.org/pub/webalizer/ \
@@ -14,7 +14,6 @@ HOMEPAGE=	http://www.webalizer.org/
 COMMENT=	Web server log file analysis program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME:S/-src//}
 BDB_ACCEPTED=		db4 db5

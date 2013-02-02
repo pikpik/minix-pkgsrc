@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.11 2011/11/20 22:11:23 sbd Exp $
+# $NetBSD: Makefile,v 1.15 2012/12/16 01:52:17 obache Exp $
 #
 
 DISTNAME=	pfstools-1.7.0
-PKGREVISION=	11
+PKGREVISION=	14
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pfstools/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pfstools.sourceforge.net/
 COMMENT=	Tools for manipulating HDR images and video frames
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

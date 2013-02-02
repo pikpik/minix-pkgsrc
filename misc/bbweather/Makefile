@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2009/01/23 21:14:17 jschauma Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 21:56:42 wiz Exp $
 #
 
 DISTNAME=	bbweather-0.6.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.netmeister.org/apps/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.netmeister.org/apps/bbweather/
 COMMENT=	Show current weather conditions
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	wget>=1.7:../../net/wget
 

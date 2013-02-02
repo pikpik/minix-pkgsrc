@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/04/22 13:43:48 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/02/16 18:57:49 hans Exp $
 
 DISTNAME=		jpegpixi-1.1.1
 PKGREVISION=		3
@@ -10,7 +10,6 @@ HOMEPAGE=		http://www.zero-based.org/software/jpegpixi/
 COMMENT=		Low-loss JPEG interpolator to remove bad pixels
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

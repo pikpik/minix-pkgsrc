@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:40:09 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/06 11:54:31 asau Exp $
 #
 
 DISTNAME=	bluemoon-1.3.2
-PKGREVISION=	9
+PKGREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	http://keldon.net/bluemoon/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://keldon.net/bluemoon/
 COMMENT=	Blue Moon game with AI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2012/02/29 21:19:02 apb Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/06 18:28:13 adam Exp $
 
 .include "../../devel/scmgit/Makefile.version"
 
@@ -11,10 +11,9 @@ MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://git.or.cz/
 COMMENT=	Web interface for GIT repositories
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 #DEPENDS+=	apache{,2,22}-[0-9]*:../../www/apache22
 DEPENDS+=	scmgit-base>=${GIT_VERSION}:../../devel/scmgit-base
+DEPENDS+=	p5-Time-HiRes>=1.9725:../../time/p5-Time-HiRes
 
 DISTINFO_FILE=	${.CURDIR}/../../devel/scmgit-base/distinfo
 

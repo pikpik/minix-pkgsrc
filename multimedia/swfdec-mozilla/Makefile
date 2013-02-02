@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/02/13 11:36:43 martin Exp $
+# $NetBSD: Makefile,v 1.26 2012/11/03 01:58:37 ryoon Exp $
 #
 
 DISTNAME=	swfdec-mozilla-0.8.2
-PKGREVISION=	15
+PKGREVISION=	23
 CATEGORIES=	multimedia
 MASTER_SITES=	http://swfdec.freedesktop.org/download/swfdec-mozilla/0.8/
 
@@ -10,8 +10,6 @@ MAINTAINER=	martin@NetBSD.org
 HOMEPAGE=	http://swfdec.freedesktop.org/
 COMMENT=	Mozilla plugin for swfdec
 LICENSE=	gnu-lgpl-v2.1 # or later
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

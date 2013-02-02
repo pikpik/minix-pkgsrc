@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.3 2008/11/12 12:25:27 obache Exp $
+$NetBSD: distinfo,v 1.5 2012/07/22 11:02:40 cheusov Exp $
 
-SHA1 (dictem-1.0.2.tar.gz) = 544c7f60c1f7aa12a4c1202a0b2521d5e76ad7cf
-RMD160 (dictem-1.0.2.tar.gz) = d6b12f1b2f35b1c8cb62eba731da79bfcf8374e3
-Size (dictem-1.0.2.tar.gz) = 34354 bytes
+SHA1 (dictem-1.0.4.tar.gz) = 4ccba9d22969397e2902b5fe9e01fae6cfc03145
+RMD160 (dictem-1.0.4.tar.gz) = 7d16c8697a2d614649e24c9aa5867040f07df81c
+Size (dictem-1.0.4.tar.gz) = 22376 bytes

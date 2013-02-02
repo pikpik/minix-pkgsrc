@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.10 2010/01/16 14:41:25 tnn Exp $
+@comment $NetBSD$
 include/nss/dbm/cdefs.h
 include/nss/dbm/mcom_db.h
 include/nss/dbm/ncompat.h
@@ -93,6 +93,9 @@ include/nss/nss/ssl.h
 include/nss/nss/sslerr.h
 include/nss/nss/sslproto.h
 include/nss/nss/sslt.h
+include/nss/nss/utilmodt.h
+include/nss/nss/utilpars.h
+include/nss/nss/utilparst.h
 include/nss/nss/utilrename.h
 lib/nss/libcrmf.a
 lib/nss/libfreebl3.${SO_SUFFIX}

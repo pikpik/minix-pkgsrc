@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2011/07/05 02:14:12 dholland Exp $
+# $NetBSD: Makefile,v 1.52 2012/10/06 14:11:04 asau Exp $
 #
 
 DISTNAME=	libggi-2.2.2.src
@@ -13,7 +13,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ggi-project.org/
 COMMENT=	General Graphics Interface library is a flexible drawing library
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
@@ -63,5 +62,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

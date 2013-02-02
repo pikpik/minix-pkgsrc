@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2010/12/23 11:44:51 dsainty Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/08 09:21:10 asau Exp $
 
 DISTNAME=	ogle-0.9.2
-PKGREVISION=	6
+PKGREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.dtek.chalmers.se/groups/dvd/dist/
 
@@ -9,7 +9,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dtek.chalmers.se/groups/dvd/
 COMMENT=	DVD player with menus
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	gnu-gpl-v2
 
 ONLY_FOR_PLATFORM=	NetBSD-1.5.[23]*-i386 NetBSD-1.5[Y-Z]*-i386
 ONLY_FOR_PLATFORM+=	NetBSD-1.6*-i386 NetBSD-[2-9]*-i386
@@ -39,6 +39,8 @@ WRAPPER_TRANSFORM_CMDS+=	opt:-mcpu=pentiumpro:-mtune=pentiumpro
 
 MESSAGE_SUBST+=		PKGBASE=${PKGBASE}
 
+BUILDLINK_API_DEPENDS.libdvdread+=      libdvdread>=4.1.3
+
 .include "../../audio/liba52/buildlink3.mk"
 .include "../../audio/libmad/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
@@ -49,5 +51,4 @@ MESSAGE_SUBST+=		PKGBASE=${PKGBASE}
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libXv/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

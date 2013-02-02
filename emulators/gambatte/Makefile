@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2012/02/06 12:40:06 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/08 23:01:31 adam Exp $
 #
 
 DISTNAME=	gambatte_src-0.4.1
 PKGNAME=	${DISTNAME:S/_src//}
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gambatte/}
 
@@ -12,8 +12,6 @@ HOMEPAGE=	http://gambatte.sourceforge.net/
 COMMENT=	Game Boy Color emulator
 
 BUILD_DEPENDS+=	scons-[0-9]*:../../devel/scons
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 INSTALLATION_DIRS=	bin share/doc/gambatte

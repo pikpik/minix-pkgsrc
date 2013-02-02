@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2011/09/29 08:24:42 dholland Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/29 05:07:10 asau Exp $
 #
 
-DISTNAME=	xfd-1.0.1
-PKGREVISION=	3
+DISTNAME=	xfd-1.1.1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Display all the characters in an X font
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
@@ -21,4 +18,6 @@ MAKE_FLAGS+=		appdefaultdir=${PREFIX}/lib/X11/app-defaults
 
 .include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
+.include "../../x11/libXrender/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

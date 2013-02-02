@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2012/01/28 11:00:54 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/15 19:12:55 dholland Exp $
 #
 
 DISTNAME=	duckmaze-pc-0.2
@@ -10,9 +10,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://duckmaze.sourceforge.net/
-COMMENT=	A puzzle
-
-PKG_DESTDIR_SUPPORT=user-destdir
+COMMENT=	Puzzle game
 
 USE_LANGUAGES=	# none
 USE_TOOLS+=	pax
@@ -30,7 +28,7 @@ do-build:
 do-install:
 	${INSTALL_PROGRAM_DIR} ${DESTDIR}${PREFIX}/bin
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/duckmaze
-	cd ${WRKSRC}; ${PAX} -rw . ${DESTDIR}${PREFIX}/share/duckmaze
+	cd ${WRKSRC} && ${PAX} -rw . ${DESTDIR}${PREFIX}/share/duckmaze
 	${INSTALL_SCRIPT} ${DM} ${DESTDIR}${PREFIX}/bin
 
 .include "../../lang/python/application.mk"

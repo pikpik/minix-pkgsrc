@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2012/02/06 17:43:18 adam Exp $
+# $NetBSD: Makefile,v 1.30 2012/12/16 01:52:36 obache Exp $
 
-DISTNAME=	xmlrpc-c-1.16.40
+DISTNAME=	xmlrpc-c-1.16.44
 # the "super stable" branch
 PKGNAME=	${DISTNAME:S/-c-/-c-ss-/}
+PKGREVISION=	1
 CATEGORIES=	textproc devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xmlrpc-c/}
 EXTRACT_SUFX=	.tgz
@@ -14,8 +15,6 @@ LICENSE=	modified-bsd
 
 CONFLICTS+=	xmlrpc-c-[0-9]*
 SUPERSEDES+=	xmlrpc-c-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Sometimes can't open ../xmltok/libxmlrpc_xmltok.la
 MAKE_JOBS_SAFE=		no
@@ -38,6 +37,8 @@ SUBST_MESSAGE.pthread=	Fixing config scripts.
 SUBST_FILES.pthread=	xmlrpc-c-config.* xmlrpc-c-config.test.*
 SUBST_SED.pthread=	-e 's/-lpthread/${PTHREAD_LINKFLAGS:Q}/'
 SUBST_SED.pthread+=	-e 's/-L\(.\)libdir/-L\1libdir ${COMPILER_RPATH_FLAG}\1libdir/'
+
+LDFLAGS.OpenBSD+=	${PTHREAD_LINKFLAGS}
 
 .include "../../www/curl/buildlink3.mk"
 .include "../../www/libwww/buildlink3.mk"

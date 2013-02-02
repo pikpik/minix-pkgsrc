@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2011/01/18 12:06:57 drochner Exp $
+# $NetBSD: Makefile,v 1.27 2011/10/30 11:46:48 obache Exp $
 #
 
 DISTNAME=	pycrypto-2.0.1
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.amk.ca/python/code/crypto.html
 COMMENT=	Cryptographic and hash functions for Python
 
 CONFLICTS+=	${PYPKGPREFIX}-crypto-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../lang/python/distutils.mk"

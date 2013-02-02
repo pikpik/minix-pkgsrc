@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 14:14:43 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/23 17:18:48 asau Exp $
 #
 
-DISTNAME=	Net-GitHub-0.30
+DISTNAME=	Net-GitHub-0.49
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	net devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-GitHub/
 COMMENT=	Perl 5 interface for github.com
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Net/GitHub/.packlist

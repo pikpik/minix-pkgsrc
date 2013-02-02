@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/21 10:45:56 fhajny Exp $
 #
 
 DISTNAME=		luasec-0.4
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.inf.puc-rio.br/~brunoos/luasec/
 COMMENT=		Lua binding for OpenSSL library
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

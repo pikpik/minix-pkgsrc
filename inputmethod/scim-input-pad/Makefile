@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2012/02/06 12:40:43 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/06 14:25:16 asau Exp $
 #
 
 DISTNAME=	scim-input-pad-0.1.3
-PKGREVISION=	4
+PKGREVISION=	8
 CATEGORIES=	inputmethod
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scim/}
 
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.scim-im.org/
 COMMENT=	SCIM onscreen input pad
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

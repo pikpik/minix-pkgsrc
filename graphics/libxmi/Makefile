@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/09/01 14:33:39 adam Exp $
+# $NetBSD: Makefile,v 1.2 2011/01/29 14:46:48 adam Exp $
 
 DISTNAME=	libxmi-1.2
 CATEGORIES=	graphics
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/libxmi/
 COMMENT=	C/C++ function library for rasterizing 2D vector graphics
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 USE_LIBTOOL=		yes

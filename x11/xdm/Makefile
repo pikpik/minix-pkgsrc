@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2011/11/01 06:03:11 sbd Exp $
+# $NetBSD: Makefile,v 1.19 2012/04/29 08:04:56 sbd Exp $
 
 DISTNAME=	xdm-1.1.11
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,12 +12,22 @@ COMMENT=	X Display Manager from modular X.org
 
 DEPENDS+=	sessreg-[0-9]*:../../x11/sessreg
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKG_SYSCONFSUBDIR=	xdm
+CONFIGURE_ARGS+=	--with-xdmconfigdir=${PKG_SYSCONFDIR:Q}
+
+EGDIR=			${PREFIX}/share/examples/xdm
+INSTALL_MAKE_FLAGS+=	xdmconfigdir=${EGDIR:Q}
+
+CONF_FILES+=		${EGDIR}/xdm-config	${PKG_SYSCONFDIR}/xdm-config
+CONF_FILES+=		${EGDIR}/Xaccess	${PKG_SYSCONFDIR}/Xaccess
+CONF_FILES+=		${EGDIR}/Xresources	${PKG_SYSCONFDIR}/Xresources
+CONF_FILES+=		${EGDIR}/Xservers	${PKG_SYSCONFDIR}/Xservers
 
 CONFIGURE_ARGS+=	--enable-dynamic-greeter
 CONFIGURE_ARGS+=	--enable-tcp-transport
 CONFIGURE_ARGS+=	--enable-unix-transport
 CONFIGURE_ARGS+=	--enable-xdmshell
+CONFIGURE_ARGS+=	--with-appdefaultdir=${PREFIX}/lib/X11/app-defaults
 
 USE_TOOLS+=	pkg-config
 GNU_CONFIGURE=	yes
@@ -25,6 +36,8 @@ USE_LIBTOOL=	yes
 RCD_SCRIPTS=	xdm
 
 BUILD_DEFS+=		VARBASE
+CONFIGURE_ARGS+=	--with-logdir=${VARBASE}/log
+CONFIGURE_ARGS+=	--with-piddir=${VARBASE}/run
 CONFIGURE_ARGS+=	--with-authdir=${VARBASE}/lib/xdm
 OWN_DIRS_PERMS+=	${VARBASE}/lib/xdm \
 			  ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 0755
@@ -35,7 +48,10 @@ OWN_DIRS_PERMS+=	${VARBASE}/lib/xdm \
 CFLAGS+=	-fno-strict-aliasing
 .endif
 
-.if empty(PKGSRC_COMPILER:Mgcc)
+.if !empty(PKGSRC_COMPILER:Mclang)
+BUILD_DEPENDS+=		ucpp-[0-9]*:../../devel/ucpp
+CONFIGURE_ENV+=		ac_cv_path_RAWCPP="${PREFIX}/bin/ucpp -t -c90 -Uunix"
+.elif empty(PKGSRC_COMPILER:Mgcc)
 CONFIGURE_ENV+=		ac_cv_path_RAWCPP="cc -E -Uunix -"
 .endif
 
@@ -60,8 +76,6 @@ CONFIGURE_ARGS+=	--with-random-device=/dev/urandom
     (${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64")
 CONFIGURE_ARGS+=	--with-default-vt=vt05
 .endif
-
-MAKE_FLAGS+=		appdefaultdir=${PREFIX}/lib/X11/app-defaults
 
 .include "options.mk"
 

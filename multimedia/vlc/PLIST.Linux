@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/vlc/plugins/access/libdvb_plugin.la
+lib/vlc/plugins/access/libv4l2_plugin.la
+lib/vlc/plugins/video_filter/libatmo_plugin.la
+lib/vlc/plugins/video_output/libfb_plugin.la

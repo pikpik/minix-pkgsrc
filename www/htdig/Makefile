@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/12/01 09:56:39 wiz Exp $
+# $NetBSD: Makefile,v 1.40 2012/05/20 06:24:54 marino Exp $
 
 DISTNAME=	htdig-3.2.0b6
 PKGREVISION=	1
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://htdig.sourceforge.net/
 COMMENT=	WWW indexing and searching system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -27,6 +25,7 @@ CONFIGURE_ENV+=		PDF_PARSER="${LOCALBASE}/bin/acroread"
 CXXFLAGS+=		-Wno-deprecated
 
 PKG_SYSCONFSUBDIR=	htdig
+INSTALLATION_DIRS+=	share/htdig/common
 
 DBDIR?=		${VARBASE}/db/htdig
 MESSAGE_SUBST+=	DBDIR=${DBDIR}

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2011/08/14 13:25:22 obache Exp $
+# $NetBSD: Makefile,v 1.52 2012/10/03 21:56:25 wiz Exp $
 
 DISTNAME=		mimedefang-2.73
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		http://www.mimedefang.org/static/
 
@@ -17,8 +18,6 @@ DEPENDS+=		p5-MailTools>=1.44:../../mail/p5-MailTools
 DEPENDS+=		p5-MIME-Base64>=3.03:../../converters/p5-MIME-Base64
 DEPENDS+=		p5-MIME-tools>=5.413:../../mail/p5-MIME-tools
 DEPENDS+=		spamassassin>=2.31:../../mail/spamassassin
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.74 2009/07/22 21:56:13 sketch Exp $
+# $NetBSD: Makefile,v 1.81 2012/09/01 17:52:09 abs Exp $
 
-DISTNAME=	pkg_chk-2.0
-PKGREVISION=	1
+DISTNAME=	pkg_chk-2.0.6
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -9,15 +8,16 @@ DISTFILES=	# empty
 OWNER=		abs@NetBSD.org
 HOMEPAGE=	ftp://ftp.NetBSD.org/pub/NetBSD/packages/pkgsrc/doc/pkgsrc.html
 COMMENT=	Check installed package versions against pkgsrc
+LICENSE=	2-clause-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	# empty
 USE_TOOLS+=	mktemp:run
-USE_TOOLS+= 	gzcat:run
-USE_TOOLS+= 	gzip:run
+USE_TOOLS+=	gzcat:run
+USE_TOOLS+=	gzip:run
+USE_TOOLS+=	bzcat:run
 NO_BUILD=	yes
 
 CONFLICTS=	pkgchk-[0-9]*
@@ -30,7 +30,7 @@ SUBST_CLASSES+=		vars
 SUBST_STAGE.vars=	pre-configure
 SUBST_MESSAGE.vars=	Configuring sources.
 SUBST_FILES.vars=	pkg_chk.sh pkg_chk.8
-SUBST_VARS.vars=	AWK GREP GZCAT GZIP_CMD ID MAKE MAKECONF MKTEMP \
+SUBST_VARS.vars=	AWK BZCAT GREP GZCAT GZIP_CMD ID MAKE MAKECONF MKTEMP \
 			PKG_ADD PKG_ADMIN PKG_DELETE PKG_INFO \
 			SED SH SORT TSORT PREFIX PKG_DBDIR XARGS
 

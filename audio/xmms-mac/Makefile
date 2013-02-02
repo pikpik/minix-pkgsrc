@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.6 2011/04/22 13:43:01 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/04 09:29:55 wiz Exp $
 #
 
 DISTNAME=	xmms-mac-0.3.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	# http://bsd.cenkes.org/myports/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://sourceforge.net/projects/mac-port/
 COMMENT=	XMMS plugin for Monkey's Audio files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

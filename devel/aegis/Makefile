@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2010/02/13 06:28:21 obache Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/31 11:16:34 asau Exp $
 #
 
 DISTNAME=	aegis-4.24.2
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	devel scm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=aegis/}
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://aegis.sourceforge.net/
 COMMENT=	Aegis is a transaction base software configuration management system
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=		yes

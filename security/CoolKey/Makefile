@@ -1,21 +1,23 @@
-# $NetBSD: Makefile,v 1.2 2008/06/12 02:14:44 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/23 18:16:20 asau Exp $
 #
 
 DISTNAME=	coolkey-1.1.0
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://directory.fedora.redhat.com/download/coolkey/
 
 MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://directory.fedora.redhat.com/wiki/CoolKey
 COMMENT=	Driver support for the CoolKey and CAC products
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	gnu-lgpl-v2
 
 # Only for NetBSD>=4.99.0
 NOT_FOR_PLATFORM=	NetBSD-[0-3].*-* NetBSD-4.[0-9].*-*
 NOT_FOR_PLATFORM+=	NetBSD-4.[0-8]*.*-* NetBSD-4.9[0-8].*-*
 
 .include "../../mk/bsd.prefs.mk"
+
+BUILD_DEFS=	VARBASE
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

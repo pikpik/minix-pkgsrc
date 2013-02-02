@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2012/02/06 11:04:46 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/04 00:22:01 cheusov Exp $
 #
 
 DISTNAME=	PyX-0.9
 PKGNAME=	${PYPKGPREFIX}-X-0.9
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyx/}
 
@@ -17,8 +17,6 @@ DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
 DEPENDS+=	tex-latex-bin-[0-9]*:../../print/tex-latex-bin
 DEPENDS+=	tex-tex-[0-9]*:../../print/tex-tex
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	#none
 
 CONF_FILES=	${PREFIX}/share/examples/PyX/pyxrc \
@@ -31,6 +29,8 @@ SUBST_FILES.conf=	setup.py
 SUBST_SED.conf+=	-e "s|@PKG_SYSCONFDIR@|${PKG_SYSCONFDIR}|g"
 
 INSTALLATION_DIRS=	share/examples/PyX
+
+PYTHON_SELF_CONFLICT=	yes
 
 pre-install:
 	${CP} ${WRKSRC}/pyxrc ${WRKSRC}/pyxrc.default

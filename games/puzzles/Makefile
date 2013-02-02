@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2012/02/06 12:40:13 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/06 11:54:50 asau Exp $
 #
 
-DISTNAME=	puzzles-r9306
+DISTNAME=	puzzles-r9455
 PKGNAME=	${DISTNAME:S/-r/-/}
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	games
 # distfile changes daily
 MASTER_SITES=	# http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.chiark.greenend.org.uk/~sgtatham/puzzles/
 COMMENT=	Collection of small one-player puzzle games by Simon Tatham
 LICENSE=	mit
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin share/doc/puzzles
 
 USE_TOOLS+=	gmake pkg-config

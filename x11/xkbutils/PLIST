@@ -1,0 +1,7 @@
+@comment $NetBSD$
+bin/xkbbell
+bin/xkbvleds
+bin/xkbwatch
+man/man1/xkbbell.1
+man/man1/xkbvleds.1
+man/man1/xkbwatch.1

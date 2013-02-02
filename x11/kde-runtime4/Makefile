@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2012/03/20 01:39:55 dholland Exp $
+# $NetBSD: Makefile,v 1.14 2012/11/03 01:58:37 ryoon Exp $
 
 DISTNAME=	kde-runtime-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
-PKGREVISION=	1
+PKGREVISION=	7
 CATEGORIES=	x11
 COMMENT=	Runtime requirements for the KDE integrated X11 desktop
 
@@ -19,6 +19,12 @@ DEPENDS+=	oxygen-icons-[0-9]*:../../graphics/oxygen-icons
 USE_TOOLS+=		gmake
 
 .include "options.mk"
+
+# Some files are conditional on 'md5sum' or 'md5' being present.
+PLIST_VARS+=	md5
+.if ${OPSYS} != "SunOS"
+PLIST.md5=	yes
+.endif
 
 SUBST_CLASSES+=		htdig
 SUBST_STAGE.htdig=	post-patch
@@ -45,6 +51,8 @@ CONF_FILES+=	${PREFIX}/share/examples/kde-runtime4/kde-information.menu \
                 ${PKG_SYSCONFDIR}/xdg/menus/kde-information.menu
 CONF_FILES+=	${PREFIX}/share/examples/kde4-dbus/org.kde.kcontrol.kcmremotewidgets.conf \
 		${PKG_SYSCONFDIR}/dbus-1/system.d/org.kde.kcontrol.kcmremotewidgets.conf
+
+BUILDLINK_DEPMETHOD.qt4-tools=	full
 
 INSTALLATION_DIRS+=	${PKGMANDIR}/man1
 

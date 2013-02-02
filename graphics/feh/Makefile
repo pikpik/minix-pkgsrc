@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.46 2012/02/10 18:48:19 drochner Exp $
+# $NetBSD: Makefile,v 1.53 2012/12/16 01:52:16 obache Exp $
 #
 
-DISTNAME=	feh-2.4
+DISTNAME=	feh-2.7
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://feh.finalrewind.org/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +12,6 @@ HOMEPAGE=	http://feh.finalrewind.org/
 COMMENT=	Advanced image viewer
 LICENSE=	mit
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 #GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--program-transform-name=s,cam,feh_cam,
 
@@ -20,8 +19,6 @@ USE_TOOLS+=	bash:run perl:run gmake
 
 REPLACE_BASH=		cam/gen-cam-menu
 REPLACE_PERL=		scripts/*.pl cam/feh-cam
-
-CFLAGS+=			-std=c99
 
 LDFLAGS.SunOS+=		-lnsl -lsocket
 

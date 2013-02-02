@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/02/19 19:51:17 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2009/12/10 23:42:14 asau Exp $
 
 DISTNAME=	ucblogo-5.3
 PKGREVISION=	2
@@ -10,8 +10,6 @@ MASTER_SITES=	ftp://ftp.cs.berkeley.edu/pub/ucblogo/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://http.cs.berkeley.edu/~bh/logo.html
 COMMENT=	Brian Harvey's logo language interpreter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=	makefile
 GNU_CONFIGURE=	yes

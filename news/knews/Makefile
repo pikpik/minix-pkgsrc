@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.59 2012/03/03 23:33:55 tron Exp $
+# $NetBSD: Makefile,v 1.61 2012/06/12 15:46:02 wiz Exp $
 
 DISTNAME=	knews-1.0b.1
 PKGNAME=	knews-1.0
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://www.matematik.su.se/~kjj/
 COMMENT=	X11 newsreader with support for threading and MIME
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFLICTS=	knews-1.0b0
 
 USE_IMAKE=	YES
@@ -22,6 +20,7 @@ BUILD_DEFS+=	KNEWS_DOMAIN_NAME KNEWS_DOMAIN_FILE
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.knews
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

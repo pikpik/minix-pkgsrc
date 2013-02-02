@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.74 2011/11/27 05:43:24 sbd Exp $
+# $NetBSD: Makefile,v 1.79 2012/12/16 01:52:12 obache Exp $
 
 PKGNAME=	subversion-base-${SVNVER}
-PKGREVISION=	3
 COMMENT=	Version control system, base programs and libraries
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # on at least solaris, configure fails to figure out
 # that you need -lintl
@@ -53,6 +51,8 @@ SUBST_STAGE.paths=	pre-configure
 SUBST_FILES.paths=	contrib/cgi/tweak-log.cgi
 SUBST_SED.paths=	-e "s|/usr/local/bin/|${PREFIX}/bin|g"
 SUBST_MESSAGE.paths=	Fixing hardcoded /usr/local/bin paths.
+
+RCD_SCRIPTS=	svnserve
 
 post-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${SVNDOC}

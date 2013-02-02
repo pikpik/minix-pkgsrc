@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.419 2012/03/18 06:54:45 taca Exp $
+# $NetBSD: Makefile,v 1.423 2012/12/17 01:00:40 khorben Exp $
 #
 
 COMMENT=	Electronic mail utilities
@@ -59,6 +59,7 @@ SUBDIR+=	cyrus-imapd23
 SUBDIR+=	cyrus-imapd24
 SUBDIR+=	dbmail
 SUBDIR+=	dcc
+SUBDIR+=	deforaos-mailer
 SUBDIR+=	deliver
 SUBDIR+=	demime
 SUBDIR+=	distribute
@@ -89,6 +90,7 @@ SUBDIR+=	ezmlm
 SUBDIR+=	ezmlm-idx
 SUBDIR+=	faces
 SUBDIR+=	fastforward
+SUBDIR+=	fdm
 SUBDIR+=	fetchmail
 SUBDIR+=	fetchmailconf
 SUBDIR+=	fetchyahoo
@@ -138,6 +140,7 @@ SUBDIR+=	mailgraph
 SUBDIR+=	mailhops
 SUBDIR+=	mailman
 SUBDIR+=	mailserv
+SUBDIR+=	mailsort
 SUBDIR+=	mailsync
 SUBDIR+=	mailwrapper
 SUBDIR+=	mairix
@@ -153,6 +156,7 @@ SUBDIR+=	milter-manager
 SUBDIR+=	milter-regex
 SUBDIR+=	mime-construct
 SUBDIR+=	mimedefang
+SUBDIR+=	mimp
 SUBDIR+=	mini_sendmail
 SUBDIR+=	mpop
 SUBDIR+=	msmtp

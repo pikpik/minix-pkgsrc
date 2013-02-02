@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.112 2012/01/24 09:11:06 sbd Exp $
+# $NetBSD: Makefile,v 1.119 2012/12/16 01:52:20 obache Exp $
 
-DISTNAME=	exim-4.77
+DISTNAME=	exim-4.80.1
 PKGREVISION=	2
 CATEGORIES=	mail net
 MASTER_SITES=	ftp://ftp.exim.org/pub/exim/exim4/ \
@@ -21,8 +21,6 @@ MAKE_ENV+=	SSLBASE=${SSLBASE:Q}
 MAKE_ENV+=	INST_CHOWN=${CHOWN:Q}
 MAKE_FLAGS+=	FULLECHO=''
 MAKE_JOBS_SAFE=	no
-
-PKG_DESTDIR_SUPPORT =	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

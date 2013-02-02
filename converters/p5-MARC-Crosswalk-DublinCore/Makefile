@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2011/05/19 05:27:30 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 00:20:14 asau Exp $
 
 DISTNAME=	MARC-Crosswalk-DublinCore-0.02
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	converters databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=MARC/}
 
@@ -15,8 +15,6 @@ DEPENDS+=	p5-DublinCore-Record-[0-9]*:../../databases/p5-DublinCore-Record
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/MARC/Crosswalk/DublinCore/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

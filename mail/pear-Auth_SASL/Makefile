@@ -1,13 +1,12 @@
-# $NetBSD: Makefile,v 1.4 2010/02/06 15:53:11 taca Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/04 11:46:01 obache Exp $
 
-DISTNAME=	Auth_SASL-1.0.4
+DISTNAME=	Auth_SASL-1.0.6
 CATEGORIES=	mail
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pear.php.net/package/Auth_SASL
 COMMENT=	Abstraction of various SASL mechanism responses
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	modified-bsd
 
 .include "../../lang/php/pear.mk"
 .include "../../mk/bsd.pkg.mk"

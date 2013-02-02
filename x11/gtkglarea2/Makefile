@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.21 2012/02/06 12:42:01 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/08 23:00:54 adam Exp $
 
 DISTNAME=	gtkglarea-2.0.1
 PKGNAME=	${DISTNAME:S/gtkglarea/gtkglarea2/}
-PKGREVISION=	5
+PKGREVISION=	9
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gtkglarea/2.0/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	OpenGL widget for the GTK+2 GUI toolkit
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

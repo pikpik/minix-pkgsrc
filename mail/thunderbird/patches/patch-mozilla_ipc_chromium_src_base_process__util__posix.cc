@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-mozilla_ipc_chromium_src_base_process__util__posix.cc,v 1.2 2012/04/28 16:56:59 ryoon Exp $
 
---- mozilla/ipc/chromium/src/base/process_util_posix.cc.orig	2012-02-16 10:25:01.000000000 +0000
+--- mozilla/ipc/chromium/src/base/process_util_posix.cc.orig	2012-08-25 00:31:11.000000000 +0000
 +++ mozilla/ipc/chromium/src/base/process_util_posix.cc
 @@ -116,6 +116,11 @@ void CloseSuperfluousFds(const base::Inj
  #elif defined(OS_MACOSX)

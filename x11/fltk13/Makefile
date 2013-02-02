@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.75 2011/03/01 09:53:16 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/11/05 15:24:12 gdt Exp $
 
 DISTNAME=	fltk-1.3.0-source
 PKGNAME=	${DISTNAME:S/-source//}
 VERS=		${DISTNAME:S/fltk-//:S/-source//}
-PKGREVISION=	5
+PKGREVISION=	9
 CATEGORIES=	x11
 MASTER_SITES=	http://ftp.easysw.com/pub/fltk/${VERS}/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/fltk/${VERS}/ \
@@ -15,8 +15,7 @@ HOMEPAGE=	http://www.fltk.org/
 COMMENT=	Fast Light Tool Kit for graphical user interfaces
 LICENSE=	gnu-lgpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-CONFLICTS=      fltk-1.[012].*
+CONFLICTS=		fltk-1.[012].*
 
 WRKSRC=			${WRKDIR}/${DISTNAME:S/-source//}
 USE_LANGUAGES=		c c++
@@ -73,6 +72,5 @@ CONFIGURE_ARGS+=	--disable-localjpeg --disable-localzlib --disable-localpng
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

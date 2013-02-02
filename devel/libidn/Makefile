@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.78 2011/11/30 20:43:53 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/31 11:17:16 asau Exp $
 
-DISTNAME=	libidn-1.24
+DISTNAME=	libidn-1.26
 CATEGORIES=	devel
 MASTER_SITES=	ftp://alpha.gnu.org/pub/gnu/libidn/ \
 		http://ftp.gnu.org/gnu/libidn/
@@ -11,7 +11,6 @@ COMMENT=	Internationalized Domain Names command line tool
 LICENSE=	gnu-gpl-v3 AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

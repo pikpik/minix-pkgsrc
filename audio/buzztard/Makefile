@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:39:20 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/02 17:10:30 tron Exp $
 #
 
 DISTNAME=	buzztard-0.5.0
-PKGREVISION=	12
+PKGREVISION=	18
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=buzztard/}
 
@@ -13,8 +13,6 @@ LICENSE=	gnu-gpl-v3 AND gnu-fdl-v1.1
 
 BUILD_DEPENDS+=	libxslt-[0-9]*:../../textproc/libxslt
 BUILD_DEPENDS+=	aspell-[0-9]*:../../textproc/aspell
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

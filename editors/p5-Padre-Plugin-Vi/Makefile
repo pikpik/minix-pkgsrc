@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/08/20 19:15:28 sno Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 11:43:42 asau Exp $
 #
 
 DISTNAME=	Padre-Plugin-Vi-0.23.0
 PKGNAME=	p5-${DISTNAME:S/.0//}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	editors perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Padre/}
 WRKSRC=		${WRKDIR}/${DISTNAME:S/.0//}
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Padre-Plugin-Vi/
 COMMENT=	Padre plugin proving a vi keyboard
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	NO
 

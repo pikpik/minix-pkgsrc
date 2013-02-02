@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/08/07 13:02:19 obache Exp $
 #
 
 DISTNAME=	tegaki-zinnia-traditional-chinese-light-0.3
@@ -12,8 +12,6 @@ COMMENT=	Tegaki project handwriting model for Zinnia-Traditional-Chinese (light)
 LICENSE=	gnu-lgpl-v2.1
 
 CONFLICTS+=	tegaki-zinnia-traditional-chinese-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

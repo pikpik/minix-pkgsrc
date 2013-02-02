@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.24 2012/03/07 09:11:43 adam Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/06 14:11:09 asau Exp $
 
-DISTNAME=	optipng-0.7.1
+DISTNAME=	optipng-0.7.4
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=optipng/}
 
@@ -8,8 +8,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://optipng.sourceforge.net/
 COMMENT=	Advanced PNG Optimizer
 LICENSE=	zlib
-
-PKG_DESTDIR_SUPPORT=		user-destdir
 
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	-prefix=${PREFIX}

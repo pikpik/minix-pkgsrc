@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2011/12/20 16:38:30 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2012/08/15 17:16:37 drochner Exp $
 #
 
-DISTNAME=	numpy-1.4.1
-PKGREVISION=	3
+DISTNAME=	numpy-1.6.2
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	math python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=numpy/}
@@ -12,9 +11,8 @@ HOMEPAGE=	http://numpy.scipy.org/
 COMMENT=	Array processing for numbers, strings, records, and objects
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-USE_LANGUAGES+=	c fortran77
+USE_LANGUAGES+=	c fortran
+PYTHON_VERSIONS_INCLUDE_3X= yes
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 MAKE_ENV+=	ATLAS=None
 
@@ -40,6 +38,14 @@ PYSETUPBUILDARGS+= --fcompiler=gnu95
 .elif !empty(PKGSRC_COMPILER:Mgcc)
 PYSETUPBUILDARGS+= --fcompiler=gnu
 .endif
+
+# According to http://projects.scipy.org/numpy/ticket/1101,
+# LDFLAGS should either not be set or include -shared.
+LDFLAGS+=		-shared
+
+# This package bypasses the wrappers and calls the compilers directly when
+# linking, so ensure that we pass through requisite options.
+LDFLAGS+=		${_COMPILER_ABI_FLAG.${ABI}}
 
 # needs devel/py-nose
 #do-test:

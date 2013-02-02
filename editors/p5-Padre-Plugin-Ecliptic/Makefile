@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:34:50 seb Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 11:43:40 asau Exp $
 #
 
 DISTNAME=	Padre-Plugin-Ecliptic-0.19
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Padre/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Padre-Plugin-Ecliptic/
 COMMENT=	Padre plugin that provides Eclipse-like useful features
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Class-XSAccessor>=1.05:../../devel/p5-Class-XSAccessor
 DEPENDS+=	p5-File-Which>=0.05:../../devel/p5-File-Which

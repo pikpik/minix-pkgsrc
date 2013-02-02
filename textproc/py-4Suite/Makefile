@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/07/03 21:25:50 jym Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 23:40:36 cheusov Exp $
 #
 
 VER=		1.0.2
@@ -11,8 +11,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://4suite.org/
 COMMENT=	Open-source platform for XML and RDF processing
 LICENSE=	apache-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 
@@ -28,6 +26,8 @@ SUBST_FILES.python+=	test/Xml/XPath/Core/*.py
 SUBST_FILES.python+=	test/test.py
 SUBST_STAGE.python=	post-build
 SUBST_SED.python=	-e 's,\#![^ ]* python,\#! ${PYTHONBIN},'
+
+#PYTHON_SELF_CONFLICT=	yes
 
 do-configure:
 	cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} \

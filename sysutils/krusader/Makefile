@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.36 2012/02/09 21:44:29 sbd Exp $
+# $NetBSD: Makefile,v 1.44 2012/12/22 02:31:33 joerg Exp $
 #
 
 DISTNAME=	krusader-1.90.0
-PKGREVISION=	13
+PKGREVISION=	20
 CATEGORIES=	kde sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=krusader/}
 
 MAINTAINER=	ianzag@mail.ru
 HOMEPAGE=	http://krusader.sourceforge.net/
 COMMENT=	Advanced twin-panel (commander-style) file-manager for KDE 3.x
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake perl msgfmt
 USE_LANGUAGES=	c c++
@@ -32,4 +30,5 @@ CONFIGURE_ARGS+= --without-acl
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

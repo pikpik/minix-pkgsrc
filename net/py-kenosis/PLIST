@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.4 2011/06/14 08:48:09 obache Exp $
 ${PYSITELIB}/bt/BitTorrent/Choker.py
 ${PYSITELIB}/bt/BitTorrent/Choker.pyc
 ${PYSITELIB}/bt/BitTorrent/Choker.pyo
@@ -221,7 +221,7 @@ ${PYSITELIB}/ds/testall.pyo
 ${PYSITELIB}/ds/ui.py
 ${PYSITELIB}/ds/ui.pyc
 ${PYSITELIB}/ds/ui.pyo
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/kenosis/BeautifulSoup.py
 ${PYSITELIB}/kenosis/BeautifulSoup.pyc
 ${PYSITELIB}/kenosis/BeautifulSoup.pyo

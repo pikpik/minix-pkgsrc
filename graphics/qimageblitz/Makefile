@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:40:33 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 23:01:03 adam Exp $
 
 DISTNAME=	qimageblitz-0.0.6
-PKGREVISION=	7
+PKGREVISION=	12
 CATEGORIES=	graphics
 MASTER_SITES=   ${MASTER_SITE_KDE:=qimageblitz/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ COMMENT=	Interm graphical effect and filter library for KDE4.0
 
 USE_LANGUAGES+= c c++
 USE_CMAKE= yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 #BUILD_MAKE_FLAGS+= VERBOSE=1
 

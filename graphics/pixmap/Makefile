@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2008/11/30 08:43:16 obache Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/06 14:11:14 asau Exp $
 
 DISTNAME=		pixmap2.6
 PKGNAME=		pixmap-2.6.4
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_XCONTRIB:=applications/pixmap/}
 
@@ -14,8 +14,6 @@ PATCHFILES=		pixmap_2.6.patch1.gz \
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Pixmap editor based on XPM library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/pixmap
 USE_IMAKE=		YES
@@ -40,7 +38,10 @@ SUBST_VARS.rgb=		RGBTXT
 post-extract:
 	rm -rf ${WRKSRC}/X11
 
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

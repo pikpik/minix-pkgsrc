@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.60 2012/02/06 12:41:51 wiz Exp $
+# $NetBSD: Makefile,v 1.68 2012/12/16 01:52:38 obache Exp $
 #
 
 DISTNAME=	drivel-2.0.3
-PKGREVISION=	23
+PKGREVISION=	30
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=drivel/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dropline.net/drivel/
 COMMENT=	LiveJournal client for the GNOME Desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

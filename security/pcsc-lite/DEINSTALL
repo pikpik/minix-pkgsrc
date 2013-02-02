@@ -1,8 +1,0 @@
-#!/bin/sh
-# $NetBSD$
-
-case ${STAGE} in
-POST-DEINSTALL)
-	${RM} -f @PKG_SYSCONFDIR@/reader.conf
-	;;
-esac

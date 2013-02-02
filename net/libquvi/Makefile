@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/16 07:30:01 ryoon Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/23 17:18:34 asau Exp $
 #
 
-DISTNAME=	libquvi-0.4.0
+DISTNAME=	libquvi-0.4.1
 PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=quvi/}
@@ -11,8 +11,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://quvi.sourceforge.net/
 COMMENT=	Library for quvi
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	quvi<=0.2.19
 

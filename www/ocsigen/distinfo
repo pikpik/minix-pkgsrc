@@ -1,7 +1,7 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2012/07/11 10:40:47 wiz Exp $
 
-SHA1 (ocsigen-0.6.0.tar.gz) = f1be751468325dc322d11454e92b0cdc1165a0aa
-RMD160 (ocsigen-0.6.0.tar.gz) = 2b6b9d4dbcebfc2fa2f160a0cf5d246f3cc02635
-Size (ocsigen-0.6.0.tar.gz) = 984754 bytes
-SHA1 (patch-aa) = a6bc20b5d27b77261c7d08101a50a244c6ec88a8
-SHA1 (patch-ab) = 34afdaa574df350254c2685e9d198cce9b599f24
+SHA1 (ocsigenserver-2.2.0.tar.gz) = 9402b0518fd1701b0a50cb307853293ceae22605
+RMD160 (ocsigenserver-2.2.0.tar.gz) = f6683ab488e6bb9fed65a1e99706440c49c52fcd
+Size (ocsigenserver-2.2.0.tar.gz) = 1259122 bytes
+SHA1 (patch-Makefile) = c91c9f739462e3ef79bcd3ee4f05acfcff1e4518
+SHA1 (patch-src_Makefile) = acbd4a0e9b6c4a853f18fdacd1625ee142b5c423

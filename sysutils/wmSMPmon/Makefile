@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/07/03 11:23:16 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/23 10:24:11 wiz Exp $
 
 DISTNAME=	wmSMPmon-2.3
 PKGREVISION=	1
@@ -8,8 +8,6 @@ MASTER_SITES=	http://lancre.ribbrock.org/binabit/wmSMPmon/src/
 MAINTAINER=	joel@carnat.net
 HOMEPAGE=	http://lancre.ribbrock.org/binabit/wmSMPmon/
 COMMENT=	Dockable CPU (SMP) monitor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/wmSMPmon-2.x/wmSMPmon
 
@@ -21,5 +19,4 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

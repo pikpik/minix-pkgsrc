@@ -1,4 +1,4 @@
-$NetBSD: distinfo,v 1.16 2008/05/20 19:47:16 tnn Exp $
+$NetBSD: distinfo,v 1.17 2011/06/01 11:20:29 wiz Exp $
 
 SHA1 (nethack-343-src.tgz) = c26537093c38152bc0fbcec20468d975b35f59fd
 RMD160 (nethack-343-src.tgz) = 42f600d24715a0b7e631b357c135761410b3ca95
@@ -13,3 +13,4 @@ SHA1 (patch-ag) = 08ec13824a0e561e32784a98a176809f1c439aea
 SHA1 (patch-ai) = 37cadc573bf52d0b3a67a3ce80af2c18f7c75f8c
 SHA1 (patch-sys_unix_Makefile.src) = a88067c2023b6977b24551eb3821031ee68320eb
 SHA1 (patch-sys_unix_Makefile.utl) = 18bfe3c039230cf4571573761dc1b48cb7eace18
+SHA1 (patch-util_makedefs.c) = 63faf92a7f511fcf73317789a3008350cdd404d9

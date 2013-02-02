@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/03/03 19:21:37 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2009/08/25 11:56:36 wiz Exp $
 #
 
 DISTNAME=		rbuild29
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.logiqx.com/Tools/ROMBuild/ROMBuild.php
 COMMENT=		Arcade ROM manipulation tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 WRKSRC=			${WRKDIR}

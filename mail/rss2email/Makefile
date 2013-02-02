@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2011/06/09 06:21:58 schmonz Exp $
+# $NetBSD: Makefile,v 1.29 2012/04/04 14:27:41 wiz Exp $
 #
 
 DISTNAME=		rss2email-2.71
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}
 EXTRACT_SUFX=		.zip
@@ -14,8 +14,6 @@ LICENSE=		gnu-gpl-v2
 
 DEPENDS+=		${PYPKGPREFIX}-feedparser-[0-9]*:../../textproc/py-feedparser
 DEPENDS+=		${PYPKGPREFIX}-html2text-[0-9]*:../../textproc/py-html2text
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 PYTHON_PATCH_SCRIPTS=	*.py

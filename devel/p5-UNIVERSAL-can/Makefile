@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/08/14 12:26:47 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:55:49 wiz Exp $
 
-DISTNAME=	UNIVERSAL-can-1.20110617
+DISTNAME=	UNIVERSAL-can-1.20120726
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=UNIVERSAL/}
 
@@ -16,8 +17,6 @@ BUILD_DEPENDS+=	{perl>=5.10,p5-Test-Simple>=0.60}:../../devel/p5-Test-Simple
 USE_LANGUAGES=	# empty
 #PERL5_MODULE_TYPE=	Module::Build
 PERL5_PACKLIST= auto/UNIVERSAL/can/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/12/15 14:47:09 taca Exp $
+# $NetBSD: Makefile,v 1.3 2012/09/16 07:25:02 taca Exp $
 
-DISTNAME=	amq-protocol-0.9.0
+DISTNAME=	amq-protocol-1.0.1
 CATEGORIES=	net
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

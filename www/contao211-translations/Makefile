@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2012/03/12 15:43:13 taca Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/13 00:57:37 taca Exp $
 #
 
 DISTNAME=	contao${CT_VER}-translations-${VERS}
@@ -12,19 +12,16 @@ HOMEPAGE=	http://www.contao.org/download.html
 COMMENT=	Language files for Contao CMS
 LICENSE=	gnu-lgpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+=	contao${CT_VER}>=${CT_PKGVER}:../../www/contao${CT_VER}
 
 # Use time stamp of latest translation.
-VERS=		201203160
+VERS=		201301180
 CT_VERS=	211
 
 USE_TOOLS=	pax
+FETCH_USING=	wget
 NO_BUILD=	yes
 NO_CONFIGURE=	yes
-
-INSTALL_TEMPLATES?=	${.CURDIR}/../../www/contao/INSTALL.translations
 PLIST_SRC=	${WRKDIR}/PLIST
 
 .include "options.mk"

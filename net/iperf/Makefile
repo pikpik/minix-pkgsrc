@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2010/02/11 21:34:34 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2012/04/13 22:52:53 hans Exp $
 
 DISTNAME=	iperf-2.0.5
 CATEGORIES=	net benchmarks
@@ -9,8 +9,6 @@ HOMEPAGE=	http://iperf.sourceforge.net/
 COMMENT=	TCP and UDP bandwidth performance measurement tool
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "../../mk/bsd.prefs.mk"
 
 .if !empty(MACHINE_PLATFORM:MNetBSD-*-sparc64)
@@ -19,6 +17,8 @@ GCC_REQD+=	3.0
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
+
+LIBS.SunOS+=		-lrt
 
 INSTALLATION_DIRS+=	share/doc/${PKGBASE}
 

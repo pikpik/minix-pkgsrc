@@ -10,6 +10,7 @@ share/texmf-dist/tex/generic/pstricks/config/README
 share/texmf-dist/tex/generic/pstricks/config/distiller.cfg
 share/texmf-dist/tex/generic/pstricks/config/dvips.cfg
 share/texmf-dist/tex/generic/pstricks/config/dvipsone.cfg
+share/texmf-dist/tex/generic/pstricks/config/gastex.cfg
 share/texmf-dist/tex/generic/pstricks/config/textures.cfg
 share/texmf-dist/tex/generic/pstricks/config/vtex.cfg
 share/texmf-dist/tex/generic/pstricks/config/xdvipdfmx.cfg
@@ -20,6 +21,7 @@ share/texmf-dist/tex/generic/pstricks/pstricks.con
 share/texmf-dist/tex/generic/pstricks/pstricks.tex
 share/texmf-dist/tex/generic/pstricks/pstricks97.tex
 share/texmf-dist/tex/latex/pstricks/pst-all.sty
+share/texmf-dist/tex/latex/pstricks/pst-doc.cls
 share/texmf-dist/tex/latex/pstricks/pst-key.sty
 share/texmf-dist/tex/latex/pstricks/pstcol.sty
 share/texmf-dist/tex/latex/pstricks/pstricks.sty

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2005/03/02 00:41:35 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.8 2010/01/27 19:29:47 joerg Exp $
 #
 
 DISTNAME=	mksunbootcd-1.0
@@ -9,8 +9,6 @@ MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/mksunbootcd/
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.NetBSD.org/
 COMMENT=	Combines filesystems for Sun computers to make bootable CD-ROM images
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=YES
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2011/04/22 13:43:21 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/31 11:17:30 asau Exp $
 #
 
 DISTNAME=	nant-0.86-beta1-src
 PKGNAME=	nant-0.86beta1
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nant/}
 
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nant.sourceforge.net/
 COMMENT=	Free .NET build tool similar to Apache Ant
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=	no
 
 WRKSRC=		${WRKDIR}/nant-0.86-beta1

@@ -1,8 +1,11 @@
-# $NetBSD: OpenBSD.mk,v 1.32 2012/01/19 10:53:56 obache Exp $
+# $NetBSD: OpenBSD.mk,v 1.35 2012/05/13 08:20:11 obache Exp $
 #
 # Variable definitions for the OpenBSD operating system.
 
 ECHO_N?=	${ECHO} -n
+LDD?=		/usr/bin/ldd
+LDD_ENV?=	LD_TRACE_LOADED_OBJECTS_FMT1='\t-l%o => %p\n' \
+		LD_TRACE_LOADED_OBJECTS_FMT2=
 IMAKE_MAKE?=	${MAKE}		# program which gets invoked by imake
 PKGLOCALEDIR?=	share
 PS?=		/bin/ps
@@ -23,7 +26,7 @@ EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
 .else
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,--export-dynamic
 .endif
-MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
+MOTIF_TYPE_DEFAULT?=	motif	# default 2.0 compatible libs type
 NOLOGIN?=		/sbin/nologin
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
@@ -34,6 +37,8 @@ ULIMIT_CMD_stacksize?=	ulimit -s `ulimit -H -s`
 ULIMIT_CMD_memorysize?=	ulimit -m `ulimit -H -m`
 
 X11_TYPE?=		native
+
+_OPSYS_SYSTEM_RPATH?=	/usr/lib
 
 .if exists(/usr/include/netinet6)
 _OPSYS_HAS_INET6=	yes	# IPv6 is standard
@@ -88,7 +93,7 @@ SERIAL_DEVICES?=	/dev/null
 PKG_HAVE_KQUEUE=	# defined
 .endif
 
-_OPSYS_CAN_CHECK_SHLIBS=	no # can't use readelf in check/bsd.check-vars.mk
+_OPSYS_CAN_CHECK_SHLIBS=	yes # use readelf in check/bsd.check-vars.mk
 
 # check for maximum command line length and set it in configure's environment,
 # to avoid a test required by the libtool script that takes forever.

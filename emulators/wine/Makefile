@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.165 2012/02/06 12:40:08 wiz Exp $
+# $NetBSD: Makefile,v 1.172 2012/12/16 01:52:13 obache Exp $
 
 DISTNAME=	wine-1.2.3
-PKGREVISION=	4
+PKGREVISION=	10
 CATEGORIES=	emulators
 MASTER_SITES=	http://ibiblio.org/pub/linux/system/emulators/wine/ \
 		${MASTER_SITE_SOURCEFORGE:=wine/}
@@ -16,8 +16,6 @@ BUILD_DEPENDS+=	fontforge-[0-9]*:../../fonts/fontforge
 
 ONLY_FOR_PLATFORM+=	*-*-i386
 #ONLY_FOR_PLATFORM+=	*-*-x86_64
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 USE_LIBTOOL=		yes

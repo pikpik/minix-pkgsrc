@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.88 2012/03/11 11:30:06 shattered Exp $
+# $NetBSD: Makefile,v 1.95 2012/12/16 01:52:32 obache Exp $
 
 DISTNAME=	heimdal-1.5.2
-PKGREVISION=	1
+PKGREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	http://www.h5l.org/dist/src/
 
@@ -14,8 +14,7 @@ CONFLICTS+=	arla-[0-9]*
 CONFLICTS+=	mit-krb5-[0-9]*
 CONFLICTS+=	openafs-[0-9]*
 CONFLICTS+=	gss-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+CONFLICTS+=	kth-krb4-[0-9]*
 
 MAKE_JOBS_SAFE=		no
 
@@ -90,6 +89,10 @@ pre-configure:
 	cd ${WRKSRC}/doc/doxyout/hcrypto && \
 	${GREP} -e /hcrypto_ -e /page_ manpages > manpages.new && \
 	mv manpages.new manpages
+
+# Avoid 'cat: cannot open ./localefiles: No such file or directory'
+pre-build:
+	${TOUCH} ${WRKSRC}/po/localefiles
 
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"

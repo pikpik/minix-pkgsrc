@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2009/05/20 00:58:08 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2012/05/07 01:53:16 dholland Exp $
 
 BUILDLINK_TREE+=	gale
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	gale
 GALE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.gale+=	gale>=0.99f
-BUILDLINK_ABI_DEPENDS.gale?=	gale>=0.99fnb4
+BUILDLINK_ABI_DEPENDS.gale+=	gale>=0.99fnb6
 BUILDLINK_PKGSRCDIR.gale?=	../../chat/gale
 
 .include "../../devel/boehm-gc/buildlink3.mk"

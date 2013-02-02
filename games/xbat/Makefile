@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/10 13:20:00 obache Exp $
+# $NetBSD: Makefile,v 1.14 2010/02/19 22:04:25 joerg Exp $
 
 DISTNAME=	xev111
 PKGNAME=	xbat-1.11
@@ -9,8 +9,6 @@ MASTER_SITES=	http://www.nemoto.ecei.tohoku.ac.jp/~wai/Xbat/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nemoto.ecei.tohoku.ac.jp/~wai/index_e.html
 COMMENT=	XEVIOUS like shooting game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=	Possible copyright infringement
 NO_SRC_ON_CDROM=	${RESTRICTED}

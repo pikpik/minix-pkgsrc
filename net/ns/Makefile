@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2008/10/02 18:08:19 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/23 17:18:42 asau Exp $
 
-DISTNAME=	ns-2.33
+DISTNAME=	ns-src-2.35
+PKGNAME=	ns-2.35
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nsnam/}
 
@@ -9,12 +10,8 @@ HOMEPAGE=	http://nsnam.isi.edu/nsnam/
 COMMENT=	The UCB/LBNL Network Simulator Version 2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
-BUILDLINK_API_DEPENDS.tcl+=	tcl>=8.4.12nb1
-BUILDLINK_API_DEPENDS.tk+=	tk>=8.4.12nb2
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=	c99 c++
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
@@ -24,9 +21,9 @@ PTHREAD_OPTS+=	require
 
 CONFIGURE_ARGS+=	LIBS="`${CONFIG_SHELL} -c '. ${TCLCONFIG_SH}; ${ECHO} $$TCL_LIBS'`"
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}
-CONFIGURE_ARGS+=	--with-tcl-ver=8.4
+CONFIGURE_ARGS+=	--with-tcl-ver=8.5
 CONFIGURE_ARGS+=	--with-tk=${BUILDLINK_PREFIX.tk}
-CONFIGURE_ARGS+=	--with-tk-ver=8.4
+CONFIGURE_ARGS+=	--with-tk-ver=8.5
 CONFIGURE_ARGS+=	--with-otcl=${BUILDLINK_PREFIX.tcl-otcl}
 CONFIGURE_ARGS+=	--with-tclcl=${BUILDLINK_PREFIX.tcl-tclcl}
 CONFIGURE_ENV+=		X11LIBDIR=${X11PREFIX}/lib${LIBABISUFFIX}

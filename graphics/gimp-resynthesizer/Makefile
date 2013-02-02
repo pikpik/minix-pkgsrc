@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:40:24 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/08 23:01:43 adam Exp $
 #
 
 DISTNAME=	resynthesizer-0.16
 PKGNAME=	gimp-${DISTNAME}
-PKGREVISION=	8
+PKGREVISION=	15
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.logarithmic.net/pfh-files/resynthesizer/
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.logarithmic.net/pfh/resynthesizer
 COMMENT=	Gimp plug-in for texture synthesis
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 USE_TOOLS+=	pkg-config

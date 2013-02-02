@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2007/02/22 19:26:09 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/11 20:32:12 asau Exp $
 #
 
 DISTNAME=		glimmer213
+PKGREVISION=		1
 PKGNAME=		glimmer-2.13
 CATEGORIES=		biology
 MASTER_SITES=		ftp://ftp.tigr.org/pub/software/Glimmer/
@@ -10,7 +11,7 @@ MAINTAINER=		hdp@cs.nmsu.edu
 HOMEPAGE=		ftp://ftp.tigr.org/pub/software/Glimmer/
 COMMENT=		System for finding genes in microbial DNA
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+CONFLICTS+=		generate-[0-9]*
 
 USE_LANGUAGES=		c c++
 

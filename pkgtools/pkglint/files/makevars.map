@@ -1,4 +1,4 @@
-# $NetBSD: makevars.map,v 1.218 2012/01/06 01:26:45 wiz Exp $
+# $NetBSD: makevars.map,v 1.229 2012/12/11 14:58:00 ryoon Exp $
 #
 
 # This file contains the guessed type of some variables, according to
@@ -88,6 +88,7 @@ DISTDIR				Pathname [$user]
 DIST_PATH			Pathlist [$user]
 DEFAULT_VIEW			Unchecked [$user]
 FETCH_CMD			ShellCommand [$user]
+FETCH_USING			{ curl custom fetch ftp manual wget } [$user]
 FETCH_RESUME_ARGS		List of ShellWord [$user]
 FETCH_OUTPUT_ARGS		List of ShellWord [$user]
 LIBTOOLIZE_PLIST		YesNo [$user]
@@ -113,7 +114,7 @@ PKG_FC				ShellCommand [$user]
 IMAKE				ShellCommand [$user]
 IMAKEOPTS			List of ShellWord [$user]
 PRE_ROOT_CMD			ShellCommand [$user]
-SETGIDGAME			YesNo [$user]
+USE_GAMESGROUP			YesNo [$package]
 SU_CMD				ShellCommand [$user]
 SU_CMD_PATH_APPEND		Pathlist [$user]
 FATAL_OBJECT_FMT_SKEW		YesNo [$user]
@@ -301,10 +302,10 @@ EMACS_PKGNAME_PREFIX	Identifier [$system]
 # ^^ or the empty string.
 EMACS_TYPE		{ emacs xemacs } [$system]
 EMACS_USE_LEIM		Yes
-EMACS_VERSIONS_ACCEPTED	List of { emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:s]
+EMACS_VERSIONS_ACCEPTED	List of { emacs24 emacs24nox emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:s]
 EMACS_VERSION_MAJOR	Integer [$system]
 EMACS_VERSION_MINOR	Integer [$system]
-EMACS_VERSION_REQD	List of { emacs24 emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:as]
+EMACS_VERSION_REQD	List of { emacs24 emacs24nox emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox emacs20 xemacs215 xemacs214 } [m:as]
 EMULDIR			Pathname [$system]
 EMULSUBDIR		Pathname [$system]
 OPSYS_EMULDIR		Pathname [$system]
@@ -351,9 +352,9 @@ FILES_SUBST_SED		List of ShellWord
 FIX_RPATH		List of Varname [$package_list]
 FONTS_DIRS.*		List of Pathname [m:as,c:a]
 GAMEDATAMODE		FileMode [$system]
-GAMEGRP			UserGroupName [$system]
+GAMES_GROUP		UserGroupName [$system]
 GAMEMODE		FileMode [$system]
-GAMEOWN			UserGroupName [$system]
+GAMES_USER		UserGroupName [$system]
 GCC_REQD		List of Version [$package_list]
 GENERATE_PLIST		List of ShellWord [$package_list]
 # ^^ List of Shellcommand, terminated with a semicolon
@@ -361,7 +362,6 @@ GNU_ARCH		{ mips }
 GNU_CONFIGURE		Yes [c:s,m:s]
 GNU_CONFIGURE_MANDIR	Pathname [m:s,c:s]
 GNU_CONFIGURE_PREFIX	Pathname [m:s]
-GNU_PROGRAM_PREFIX	Identifier [$user]
 HAS_CONFIGURE		Yes [m:s,c:s]
 HEADER_TEMPLATES	List of Pathname [$package_list]
 HOMEPAGE		URL [$package]
@@ -524,6 +524,7 @@ PG_LIB_EXT		{ dylib so } [$system]
 PGSQL_TYPE		{ postgresql81-client postgresql80-client } [$system]
 PGPKGSRCDIR		Pathname [$system]
 PHASE_MSG		ShellCommand [$system]
+PHP_VERSION_REQD	Version [$user]
 PKGBASE			Identifier [$system]
 PKGCONFIG_OVERRIDE	List of Pathmask [m:as,c:a]
 PKGCONFIG_OVERRIDE_STAGE	Stage [$package]
@@ -568,19 +569,21 @@ PKG_JVM			{						\
 				jdk jdk14				\
 				kaffe					\
 				sun-jdk13 sun-jdk14 sun-jdk15 sun-jdk6	\
-				openjdk7 openjdk7-bin			\
+				openjdk7 openjdk7-bin sun-jdk7		\
 			} [$system]
 PKG_JVMS_ACCEPTED	List of {					\
 				blackdown-jdk13				\
 				jdk jdk14				\
 				kaffe					\
 				sun-jdk13 sun-jdk14 sun-jdk15 sun-jdk6	\
+				openjdk7 openjdk7-bin sun-jdk7		\
 			} [m:s,c:ds]
 PKG_JVM_DEFAULT		{						\
 				blackdown-jdk13				\
 				jdk jdk14				\
 				kaffe					\
 				sun-jdk13 sun-jdk14 sun-jdk15 sun-jdk6	\
+				openjdk7 openjdk7-bin sun-jdk7		\
 			} [$user]
 PKG_LEGACY_OPTIONS	List of Option
 PKG_LIBTOOL		Pathname [m:s]
@@ -629,13 +632,14 @@ PTHREAD_LIBS		List of LdFlag [$system]
 PTHREAD_OPTS		List of { native optional require } [m:as,c:a,b:a]
 PTHREAD_TYPE		Identifier [$system]
 # ^^ or "native" or "none".
-PY_PATCHLIST		Yes [$package]
-PYPKGPREFIX		{ py24 py25 py26 py27 py31 } [*:pu, pyversion.mk:s, *:]
+PY_PATCHPLIST		Yes [$package]
+PYPKGPREFIX		{ py26 py27 py31 py32 } [*:pu, pyversion.mk:s, *:]
 PYTHON_FOR_BUILD_ONLY	Yes [$package]
 PYTHON_PATCH_SCRIPTS	List of Pathmask [$package_list]
 PYTHON_VERSIONS_ACCEPTED List of Version [$package]
 PYTHON_VERSIONS_INCOMPATIBLE List of Version [$package]
 PYTHON_VERSION_DEFAULT	Version [$user]
+PYTHON_VERSION_REQD	Version [$user]
 RANLIB			ShellCommand [$system]
 RCD_SCRIPTS		List of Filename [$package_list]
 RCD_SCRIPT_SRC.*	List of Pathname [m:s]
@@ -658,6 +662,7 @@ REQD_FILES_PERMS	List of ShellWord [$package_list]
 RESTRICTED		Message [$package]
 ROOT_USER		UserGroupName [$user]
 ROOT_GROUP		UserGroupName [$user]
+RUBY_VERSION_REQD	Version [$user]
 RUN			ShellCommand [$system]
 SCRIPTS_ENV		List of ShellWord [m:a,c:a]
 SETUID_ROOT_PERMS	List of ShellWord [$user]
@@ -712,7 +717,7 @@ USE_GNU_READLINE	Yes [m:s,c:s,o:s]
 USE_IMAKE		Yes [m:s]
 USE_JAVA		{ run yes build } [$package]
 USE_JAVA2		{ YES yes no 1.4 1.5 6 7 } [$package]
-USE_LANGUAGES		List of { c c99 c++ fortran fortran77 java objc } [m:s,c:s,o:s]
+USE_LANGUAGES		List of { ada c c99 c++ fortran fortran77 java objc } [m:s,c:s,o:s]
 USE_LIBTOOL		Yes [$package]
 USE_MAKEINFO		Yes [$package]
 USE_MSGFMT_PLURALS	Yes [$package]

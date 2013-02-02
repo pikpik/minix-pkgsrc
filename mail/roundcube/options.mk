@@ -1,14 +1,18 @@
-# $NetBSD: options.mk,v 1.4 2009/01/19 20:15:49 abs Exp $
+# $NetBSD: options.mk,v 1.6 2012/06/17 15:17:15 taca Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.roundcube
 
 PKG_OPTIONS_REQUIRED_GROUPS=	db
-PKG_OPTIONS_GROUP.db=		mysql pgsql sqlite
+PKG_OPTIONS_GROUP.db=		mysql pgsql
 
 PKG_SUPPORTED_OPTIONS=		iconv ldap multibyte mcrypt sockets gd
 # Following the recommendations in INSTALL the iconv, multibyte, gd and
 # mcrypt PHP extensions are all 'recommended' requirements
 PKG_SUGGESTED_OPTIONS=		mysql iconv multibyte mcrypt sockets gd
+
+.if ${PKG_PHP_VERSION} == "53"
+PKG_OPTIONS_GROUP.db+=		sqlite
+.endif
 
 .include "../../mk/bsd.options.mk"
 
@@ -16,7 +20,6 @@ PKG_SUGGESTED_OPTIONS=		mysql iconv multibyte mcrypt sockets gd
 ### Use mysql backend
 ###
 .if !empty(PKG_OPTIONS:Mmysql)
-.	include "../../mk/mysql.buildlink3.mk"
 DEPENDS+=	${PHP_PKG_PREFIX}-mysql>=4.3.1:../../databases/php-mysql
 DEPENDS+=	${PHP_PKG_PREFIX}-pear-MDB2_Driver_mysql>1.5:../../databases/pear-MDB2_Driver_mysql
 .endif
@@ -25,7 +28,6 @@ DEPENDS+=	${PHP_PKG_PREFIX}-pear-MDB2_Driver_mysql>1.5:../../databases/pear-MDB2
 ### Use postgresql backend
 ###
 .if !empty(PKG_OPTIONS:Mpgsql)
-.	include "../../mk/pgsql.buildlink3.mk"
 DEPENDS+=	${PHP_PKG_PREFIX}-pgsql>=4.3.1:../../databases/php-pgsql
 DEPENDS+=	${PHP_PKG_PREFIX}-pear-MDB2_Driver_pgsql>=1.5:../../databases/pear-MDB2_Driver_pgsql
 .endif
@@ -34,7 +36,6 @@ DEPENDS+=	${PHP_PKG_PREFIX}-pear-MDB2_Driver_pgsql>=1.5:../../databases/pear-MDB
 ### Use sqlite backend
 ###
 .if !empty(PKG_OPTIONS:Msqlite)
-.	include "../../databases/sqlite/buildlink3.mk"
 DEPENDS+=	${PHP_PKG_PREFIX}-sqlite-[0-9]*:../../databases/php-sqlite
 DEPENDS+=	${PHP_PKG_PREFIX}-pear-MDB2_Driver_sqlite>1.5:../../databases/pear-MDB2_Driver_sqlite
 .endif

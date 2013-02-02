@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/06/04 22:19:15 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/29 05:07:20 asau Exp $
 #
 
 DISTNAME=	xscript.tar
@@ -13,10 +13,14 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ee.ryerson.ca/~elf/xapps/Q-XVIII.html
 COMMENT=	X Window system script recording and playback
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=		${WRKDIR}/test-distrib/src
 USE_IMAKE=	YES
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Mclang)
+MAKE_FLAGS+=	CCOPTIONS=-Wno-error=return-type
+.endif
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"

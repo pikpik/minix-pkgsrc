@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.45 2012/02/06 12:41:10 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/03 21:56:53 wiz Exp $
 
 DISTNAME=	dctc-0.85.9
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	net
 MASTER_SITES=	http://ac2i.homelinux.com/dctc/
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ac2i.homelinux.com/dctc/
 COMMENT=	Direct Connect clone (Direct Connect Text Client)
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BDB_ACCEPTED=		db4 db5
 USE_LIBTOOL=		yes

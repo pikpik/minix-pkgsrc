@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/09/16 02:26:44 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/09/16 15:30:44 taca Exp $
 #
 
 DISTNAME=	quickml-0.7
@@ -11,13 +11,11 @@ HOMEPAGE=	http://0xcc.net/quickml/
 COMMENT=	Easy-to-use mailing list system
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	# none
 RCD_SCRIPTS+=	quickml
 
-# Dose not care for Ruby 1.9's character encoding for now.
-RUBY_VERSION_SUPPORTED= 18
+RUBY_VERSION_SUPPORTED= 193
 
 QUICKML_USER=	quickml
 QUICKML_GROUP=	quickml

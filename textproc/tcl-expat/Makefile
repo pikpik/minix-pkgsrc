@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2009/07/07 20:43:58 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/08/23 17:03:53 marino Exp $
 #
 
 DISTNAME=	TclExpat-1.1
 PKGNAME=	tcl-expat-1.1
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	textproc www tcl
 MASTER_SITES=	http://www.zveno.com/in-tclxml/
 
@@ -11,14 +11,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.zveno.com/zm.cgi/in-tclxml/
 COMMENT=	XML parser implemented entirely in Tcl
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LIBTOOL=	yes
 
 MAKE_ENV+=	SHLIBTOOL=${SHLIBTOOL:Q}
-
-pre-install:
-	${INSTALL_DATA_DIR} ${PREFIX}/lib/tcl
 
 INSTALLATION_DIRS=	share/doc/tcl/TclExpat
 

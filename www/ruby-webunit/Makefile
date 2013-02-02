@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/07/14 12:56:14 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2012/06/24 07:42:45 jperkin Exp $
 
 DISTNAME=	webunit-${VERSION}
 PKGREVISION=	3
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.xpenguin.biz/download/webunit/index-en.html
 COMMENT=	HTTP unit testing framework for Ruby
 LICENSE=	gnu-gpl-v2 OR ruby-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+= ${RUBY_PKGPREFIX}-html-parser>=19990912p1:../../textproc/ruby-html-parser
 DEPENDS+= ${RUBY_PKGPREFIX}-htmlsplit>=1.0.2:../../www/ruby-htmlsplit
@@ -23,6 +21,8 @@ VERSION=	20040429++
 
 CONFIGURE_ARGS=	--site-ruby=${PREFIX}/${RUBY_VENDORLIB} \
 		--so-dir=${PREFIX}/${RUBY_VENDORARCHLIB}
+
+INSTALLATION_DIRS+=	${RUBY_DOC}/webunit ${RUBY_EG}/webunit
 
 pre-patch:
 	cd ${WRKSRC}/lib; \

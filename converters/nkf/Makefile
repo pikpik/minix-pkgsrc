@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2011/02/28 14:52:42 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 00:20:12 asau Exp $
 
 .include "${.CURDIR}/Makefile.common"
 
 PKGNAME=	nkf-2.12
+PKGREVISION=	1
 CATEGORIES=	japanese converters
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -10,7 +11,6 @@ COMMENT=	Convert between various Japanese character encodings
 #LICENSE=	zlib-license
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

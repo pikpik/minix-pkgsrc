@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/02/22 08:12:58 bjs Exp $
+# $NetBSD: Makefile,v 1.3 2011/02/28 14:52:45 wiz Exp $
 #
 
 DISTNAME=	libarena-${SNAPSHOT_DATE}
@@ -10,8 +10,6 @@ SNAPSHOT_DATE=	20080221
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.25thandclement.com/~william/projects/libarena.html
 COMMENT=	Memory allocator API and implementation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	pic
 USE_FEATURES=	getenv vsnprintf # XXX strsep should be added to USE_FEATURES

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.37 2009/09/11 21:26:18 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.38 2010/06/02 12:06:21 adam Exp $
 
 BUILDLINK_TREE+=	db4
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	db4
 DB4_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.db4+=	db4>=4.8.30
-BUILDLINK_ABI_DEPENDS.db4?=	db4>=4.8.30
+BUILDLINK_ABI_DEPENDS.db4+=	db4>=4.8.30
 BUILDLINK_PKGSRCDIR.db4?=	../../databases/db4
 BUILDLINK_INCDIRS.db4?=		include/db4
 BUILDLINK_LDADD.db4=		-ldb4

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2010/02/26 10:28:31 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/12 08:00:03 marino Exp $
 #
 
 DISTNAME=	arcem-1.00-src
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=arcem/}
 NOT_FOR_PLATFORM+=	${LP64PLATFORMS}
 
 EXTRACT_SUFX=	.tgz
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 LINUX_FILES=	\
 		linux.rom.gz \
@@ -35,6 +33,8 @@ MAKE_ENV+=	SYSTEM=X
 
 INSTALLATION_DIRS+=	bin share/arcem
 
+BUILDLINK_TRANSFORM+=	rm:-Werror
+
 post-install:
 	${INSTALL_DATA} ${WRKDIR}/linux.rom \
 		${DESTDIR}${PREFIX}/share/arcem/ROM
@@ -46,5 +46,4 @@ post-install:
 		${DESTDIR}${PREFIX}/share/arcem/hexcmos
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

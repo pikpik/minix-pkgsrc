@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2006/10/25 21:06:14 rillig Exp $
+# $NetBSD: Makefile,v 1.27 2012/05/16 15:16:09 marino Exp $
 #
 
 DISTNAME=	ketm-0.0.6
@@ -11,13 +11,13 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.t-online.de/home/haslbeck/ketm/
 COMMENT=	Old-school 2d-scrolling shooter
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 BUILD_TARGET=	ketm
 
 USE_TOOLS+=	gmake
 
 INSTALLATION_DIRS=	bin share/ketm/data
+
+LDFLAGS.DragonFly=	-lm
 
 SUBST_CLASSES+=		ketm
 SUBST_STAGE.ketm=	pre-configure

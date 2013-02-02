@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.40 2010/09/09 21:12:07 sno Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/02 21:25:36 asau Exp $
 
 DISTNAME=	perl-ldap-0.4001
 PKGNAME=	p5-${DISTNAME:S/4001/40.01/}
-PKGREVISION=	1
+PKGREVISION=	2
 SVR4_PKGNAME=	pldap
 CATEGORIES=	databases net devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=LWP/}
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ldap.perl.org/
 COMMENT=	Perl class to access LDAP servers
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=	IPV6_READY
 
@@ -24,8 +22,10 @@ DEPENDS+=	p5-XML-SAX-Writer-[0-9]*:../../textproc/p5-XML-SAX-Writer
 
 MAKE_PARAMS+=	--skip	# skip CPAN auto installation of modules
 
-PKG_SUPPORTED_OPTIONS=	sasl inet6
 PKG_OPTIONS_VAR=	PKG_OPTIONS.p5-perl-ldap
+PKG_SUPPORTED_OPTIONS=	sasl inet6
+PKG_SUGGESTED_OPTIONS=	inet6
+
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Msasl)

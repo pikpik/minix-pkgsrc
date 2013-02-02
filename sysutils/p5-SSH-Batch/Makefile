@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 14:52:51 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:57:42 wiz Exp $
 
-DISTNAME=	SSH-Batch-0.028
+DISTNAME=	SSH-Batch-0.029
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	sysutils net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/A/AG/AGENT/}
 
@@ -10,11 +11,9 @@ HOMEPAGE=	http://search.cpan.org/dist/SSH-Batch/
 COMMENT=	Cluster operations based on parallel SSH, set and interval arithmetic
 LICENSE=	original-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/SSH/Batch/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 REPLACE_PERL+=	bin/atnodes
 REPLACE_PERL+=	bin/fornodes

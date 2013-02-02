@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2010/08/21 16:33:20 seb Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/03 21:54:43 wiz Exp $
 
 DISTNAME=	Class-Fields-0.204
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5clf
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Class/}
@@ -12,7 +13,6 @@ COMMENT=	Set of modules to operate with class fields and members access
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Class/Fields/.packlist
 

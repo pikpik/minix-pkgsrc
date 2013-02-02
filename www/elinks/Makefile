@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.46 2011/06/14 13:36:34 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/28 06:30:14 asau Exp $
 
-DISTNAME=		elinks-0.12pre5
+DISTNAME=		elinks-0.12pre6
 PKGNAME=		${DISTNAME:S/pre/rc/}
 CATEGORIES=		www
 MASTER_SITES=		http://elinks.or.cz/download/ \
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://elinks.or.cz/
 COMMENT=		Extended/Enhanced Links
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake pkg-config
@@ -21,6 +19,13 @@ CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/${PKGBASE}
 CONFIGURE_ARGS+=	--enable-256-colors
 CONFIGURE_ARGS+=	--enable-utf-8
 CONFIGURE_ARGS+=	--without-lzma
+
+.include "../../mk/bsd.prefs.mk"
+
+# for backtrace
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/execinfo.h)
+LIBS+=	-lexecinfo
+.endif
 
 .include "options.mk"
 

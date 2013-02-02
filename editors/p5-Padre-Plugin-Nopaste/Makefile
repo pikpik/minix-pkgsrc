@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:34:50 seb Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 11:43:41 asau Exp $
 #
 
 DISTNAME=	Padre-Plugin-Nopaste-0.2.1
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Padre/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Padre-Plugin-Nopaste/
 COMMENT=	Send code on a nopaste website from padre
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-App-Nopaste-[0-9]*:../../www/p5-App-Nopaste
 DEPENDS+=	p5-Module-Util-[0-9]*:../../devel/p5-Module-Util

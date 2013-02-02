@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2011/02/21 16:01:11 taca Exp $
+# $NetBSD: Makefile,v 1.11 2011/11/08 15:37:33 taca Exp $
 
 DISTNAME=	ruby-odbc-0.99994
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME:S/ruby-//}
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ch-werner.de/rubyodbc/
 COMMENT=	ODBC binding for Ruby
 LICENSE=	gnu-gpl-v2 OR ruby-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS=	--disable-dlopen
 

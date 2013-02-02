@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.49 2011/06/16 15:17:59 taca Exp $
+# $NetBSD: Makefile,v 1.51 2012/09/16 15:24:18 taca Exp $
 
 DISTNAME=	# empty
 PKGNAME=	ruby-${RUBY_VERSION_FULL}
@@ -13,8 +13,6 @@ COMMENT=	Wrapper package for Ruby programming language
 
 CONFLICTS=	pkg_alternatives-[0-9]*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 NO_CONFIGURE=	yes
 NO_BUILD=	yes
 
@@ -25,7 +23,7 @@ DEPENDS+= ${RUBY_PKGPREFIX}-base>=${RUBY_VERSION}:../../lang/${RUBY_PKGPREFIX}-b
 RUBY_COMMANDS=	erb irb ruby testrb
 .if ${RUBY_VER} == "18"
 RUBY_COMMANDS+=	h2rb
-.elif ${RUBY_VER} == "19" || ${RUBY_VER} == "193"
+.elif ${RUBY_VER} == "193"
 RUBY_COMMANDS+=	gem rake
 .endif
 

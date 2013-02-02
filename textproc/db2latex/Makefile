@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2009/07/13 11:32:25 minskim Exp $
+# $NetBSD: Makefile,v 1.17 2009/07/28 16:27:11 minskim Exp $
 
 DISTNAME=	db2latex-xsl-0.8pre1
 PKGNAME=	${DISTNAME:S/xsl-//}
@@ -11,7 +11,6 @@ HOMEPAGE=	http://db2latex.sourceforge.net/
 COMMENT=	Set of XSLT stylesheets converting DocBook to LaTeX2e
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	yes
 NO_BUILD=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.2 2000/03/23 23:15:26 dmcmahill Exp $
+# $NetBSD: Makefile.common,v 1.4 2012/06/15 23:06:04 dholland Exp $
 #
 # Paths for Qt headers and library
 #
@@ -9,7 +9,7 @@ QTLIB=$(QTDIR)/lib
 MOC=$(QTDIR)/bin/moc
 
 #
-# Paths for Qwt headers and library 
+# Paths for Qwt headers and library
 # 	QWTDIR is set autometically
 #
 QWTINC = $(QWTDIR)/include
@@ -19,7 +19,7 @@ QWTLIB = $(QWTDIR)/lib
 # Library Names
 #
 LIBSTATIC = libqwt.a
-LIBSHARED =  libqwt.so
+LIBSHARED = libqwt.so
 LIBSHARED_0 = libqwt.so.0
 LIBSHARED_1 = libqwt.so.0.2
 

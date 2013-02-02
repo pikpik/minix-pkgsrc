@@ -1,18 +1,18 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:35:45 seb Exp $
-#
+# $NetBSD: Makefile,v 1.9 2012/10/23 18:16:47 asau Exp $
 
-DISTNAME=	pcsc-perl-1.4.7
+DISTNAME=	pcsc-perl-1.4.12
 PKGNAME=	p5-${DISTNAME}
 PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://ludovic.rousseau.free.fr/softwares/pcsc-perl/
 COMMENT=	Allows communication with a smart card from a Perl script
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PERL5_MODULE_TYPE=	MakeMaker
+LICENSE=		gnu-gpl-v2
 
 SUBST_CLASSES+=		perl
 SUBST_STAGE.perl=	post-patch

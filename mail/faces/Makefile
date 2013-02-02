@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.55 2009/05/19 08:59:21 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2012/10/03 21:56:23 wiz Exp $
 
 DISTNAME=	faces-1.6.1
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/faces/faces/faces-1.6.1/
 EXTRACT_SUFX=	.tar.Z
@@ -17,8 +17,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 DEPENDS+=	netpbm>=9.2:../../graphics/netpbm
 
 CONFLICTS=	compface-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/faces
 USE_X11BASE=		YES

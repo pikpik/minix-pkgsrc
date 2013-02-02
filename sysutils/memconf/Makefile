@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2010/12/21 22:43:17 shattered Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:57:40 wiz Exp $
 #
 
 DISTNAME=		memconf
 PKGNAME=		memconf-2.16
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.4schmidts.com/unix/
 DIST_SUBDIR=		${PKGNAME_NOREV}
@@ -15,7 +15,6 @@ HOMEPAGE=		http://www.4schmidts.com/memconf.html
 COMMENT=		Physical memory information utility
 
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	SunOS-*-* HPUX-*-*
 ONLY_FOR_PLATFORM+=	NetBSD-*-i386 NetBSD-*-x86_64

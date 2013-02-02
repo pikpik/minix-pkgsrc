@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2012/02/17 18:32:57 drochner Exp $
+# $NetBSD: Makefile,v 1.14 2012/04/08 19:08:50 wiz Exp $
 #
 
 DISTNAME=		Pyro4-4.12
@@ -10,10 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://pyro.sourceforge.net/
 COMMENT=		Distributed Object Technology system in Python
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_INCOMPATIBLE=	24
 
 # only needed for test
 #DEPENDS+= ${PYPKGPREFIX}-nose-[0-9]*:../../devel/py-nose

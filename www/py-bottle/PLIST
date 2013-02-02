@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/bottle.py
+${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/bottle.py
+${PYSITELIB}/bottle.pyc
+${PYSITELIB}/bottle.pyo

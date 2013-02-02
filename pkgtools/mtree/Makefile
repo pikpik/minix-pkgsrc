@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/02/10 00:11:53 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2012/03/08 01:11:21 joerg Exp $
 #
 
 DISTNAME=		mtree-20120308
@@ -9,8 +9,6 @@ DISTFILES=		# empty
 MAINTAINER=		sbd@NetBSD.org
 HOMEPAGE=		http://www.NetBSD.org/
 COMMENT=		Utility for mapping and checking directory hierarchies
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

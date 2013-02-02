@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2012/01/17 15:53:13 adam Exp $
+# $NetBSD: Makefile,v 1.60 2013/01/10 17:12:30 adam Exp $
 
-DISTNAME=	sqlite-autoconf-3071100
-PKGNAME=	sqlite3-3.7.11
+DISTNAME=	sqlite-autoconf-3071502
+PKGNAME=	sqlite3-3.7.15.2
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://www.hwaci.com/sw/sqlite/ \
 		http://www.sqlite.org/
@@ -10,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sqlite.org/
 COMMENT=	SQL Database Engine in a C Library
 LICENSE=	public-domain
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 
@@ -42,6 +41,9 @@ CONFIGURE_ARGS+=	--enable-readline=no
 # This define includes the sqlite3_unlock_notify() API in the build.
 # It is required by Firefox 4.x.
 CFLAGS+=		-DSQLITE_ENABLE_UNLOCK_NOTIFY=1
+# The following are defined in the NetBSD builtin version.
+CFLAGS+=		-DSQLITE_ENABLE_COLUMN_METADATA
+CFLAGS+=		-DSQLITE_ENABLE_LOAD_EXTENSION
 
 # Uses dlopen and friends but doesn't use -ldl on Linux.
 # See http://www.sqlite.org/cvstrac/tktview?tn=3555

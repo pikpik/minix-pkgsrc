@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2011/01/13 13:37:46 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/01/28 11:00:54 wiz Exp $
 #
 
 DISTNAME=		interLOGIC-src-0.30
@@ -11,8 +11,6 @@ MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=interlogic/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sourceforge.net/projects/interlogic/
 COMMENT=		Logic/puzzle game based on the old Amiga game "Balls"
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/interlogic
 USE_PKGLOCALEDIR=	yes

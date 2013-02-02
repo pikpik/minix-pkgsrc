@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/markdown2
+${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/markdown2.py
+${PYSITELIB}/markdown2.pyc
+${PYSITELIB}/markdown2.pyo

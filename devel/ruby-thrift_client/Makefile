@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/12 16:38:48 taca Exp $
+# $NetBSD: Makefile,v 1.7 2012/05/06 10:12:20 wiz Exp $
 
 DISTNAME=	thrift_client-0.7.1
 CATEGORIES=	devel

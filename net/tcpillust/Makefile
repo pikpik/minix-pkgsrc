@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.19 2007/12/02 13:04:13 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/08/21 23:49:24 marino Exp $
 
 DISTNAME=	tcpillust-1.0a
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.sonycsl.co.jp/CSL/nishida/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sonycsl.co.jp/person/nishida/tcpillust.html
 COMMENT=	Graphical TCP connection analysis tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 GNU_CONFIGURE=	yes

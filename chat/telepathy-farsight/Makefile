@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2012/03/03 00:12:17 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/08 23:00:55 adam Exp $
 #
 
 DISTNAME=	telepathy-farsight-0.0.16
-PKGREVISION=	6
+PKGREVISION=	14
 CATEGORIES=	chat multimedia
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/telepathy-farsight/
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://telepathy.freedesktop.org/doc/telepathy-farsight/
 COMMENT=	Library for the telepathy part of a voice/video call
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

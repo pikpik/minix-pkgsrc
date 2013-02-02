@@ -1,5 +1,5 @@
 #! @PERL@
-# $NetBSD: pkglint.pl,v 1.830 2011/09/09 15:16:26 wiz Exp $
+# $NetBSD: pkglint.pl,v 1.848 2013/01/19 22:51:11 schmonz Exp $
 #
 
 # pkglint - static analyzer and checker for pkgsrc packages
@@ -248,7 +248,7 @@ sub print_summary_and_exit($) {
 
 	if (!$quiet) {
 		if ($errors != 0 || $warnings != 0) {
-			print("$errors errors and $warnings warnings found.\n");
+			print("$errors errors and $warnings warnings found." . ($explain_flag ? "" : " (Use -e for more details.)") . "\n");
 		} else {
 			print "looks fine.\n";
 		}
@@ -1326,18 +1326,20 @@ my (@options) = (
 	  } ],
 );
 
+our $program		= $0;
+
 #
 # Commonly used regular expressions.
 #
 
-use constant regex_dependency_gt => qr"^((?:\$\{[\w_]+\}|[\w_]|-[^\d])+)>=(.*)$";
+use constant regex_dependency_gt => qr"^((?:\$\{[\w_]+\}|[\w_\.]|-[^\d])+)>=(\d[^-]*)$";
 use constant regex_dependency_wildcard
-				=> qr"^((?:\$\{[\w_]+\}|[\w_]|-[^\d\[])+)-(?:\[0-9\]|\d.*)$";
+				=> qr"^((?:\$\{[\w_]+\}|[\w_\.]|-[^\d\[])+)-(?:\[0-9\]\*|\d[^-]*)$";
 use constant regex_gnu_configure_volatile_vars
 				=> qr"^(?:.*_)?(?:CFLAGS||CPPFLAGS|CXXFLAGS|FFLAGS|LDFLAGS|LIBS)$";
 use constant regex_mk_comment	=> qr"^ *\s*#(.*)$";
 use constant regex_mk_cond	=> qr"^\.(\s*)(if|ifdef|ifndef|else|elif|endif|for|endfor|undef)(?:\s+([^\s#][^#]*?))?\s*(?:#.*)?$";
-use constant regex_mk_dependency=> qr"^([^\s:]+(?:\s*[^\s:]+)*):\s*([^#]*?)(?:\s*#.*)?$";
+use constant regex_mk_dependency=> qr"^([^\s:]+(?:\s*[^\s:]+)*)(\s*):\s*([^#]*?)(?:\s*#.*)?$";
 use constant regex_mk_include	=> qr"^\.\s*(s?include)\s+\"([^\"]+)\"\s*(?:#.*)?$";
 use constant regex_mk_sysinclude=> qr"^\.\s*s?include\s+<([^>]+)>\s*(?:#.*)?$";
 use constant regex_mk_shellvaruse => qr"(?:^|[^\$])\$\$\{?(\w+)\}?"; # XXX: not perfect
@@ -1454,7 +1456,7 @@ my @todo_items;			# The list of directory entries that still need
 
 sub help($$$) {
 	my ($out, $exitval, $show_all) = @_;
-	my ($prog) = (basename($0));
+	my ($prog) = (basename($program, '.pl'));
 	print $out ("usage: $prog [options] [package_directory]\n\n");
 
 	my (@option_table) = ();
@@ -1684,9 +1686,9 @@ sub get_vartypes_basictypes() {
 		return $get_vartypes_basictypes_result;
 	}
 
-	my $lines = load_file($0);
+	my $lines = load_file($program);
 	my $types = {};
-	assert($lines, "Couldn't load pkglint.pl from $0");
+	assert($lines, "Couldn't load pkglint.pl from $program");
 	foreach my $line (@$lines) {
 		if ($line->text =~ m"^\s+\} elsif \(\$type eq \"(\w+)\"\) \{$") {
 			$types->{$1} = 1;
@@ -2042,7 +2044,7 @@ sub load_tool_names() {
 	# Some user-defined variables do not influence the binary
 	# package at all and therefore do not have to be added to
 	# BUILD_DEFS.
-	foreach my $bdvar (qw(DISTDIR FETCH_CMD FETCH_OUTPUT_ARGS GAMEOWN GAMEGRP GAMEDIRMODE)) {
+	foreach my $bdvar (qw(DISTDIR FETCH_CMD FETCH_OUTPUT_ARGS GAMES_USER GAMES_GROUP GAMEDATAMODE GAMEDIRMODE GAMEMODE GAMEOWN GAMEGRP )) {
 		$system_build_defs->{$bdvar} = true;
 	}
 	#$system_build_defs->{"PACKAGES"} = true;
@@ -2511,9 +2513,9 @@ sub resolve_relative_path($$) {
 	$relpath =~ s,\$\{PKGSRCDIR\},$cur_pkgsrcdir,;
 	$relpath =~ s,\$\{\.CURDIR\},.,;
 	$relpath =~ s,\$\{\.PARSEDIR\},.,;
-	$relpath =~ s,\$\{PHPPKGSRCDIR\},../../lang/php5,;
+	$relpath =~ s,\$\{PHPPKGSRCDIR\},../../lang/php53,;
 	$relpath =~ s,\$\{SUSE_DIR_PREFIX\},suse100,;
-	$relpath =~ s,\$\{PYPKGSRCDIR\},../../lang/python26,;
+	$relpath =~ s,\$\{PYPKGSRCDIR\},../../lang/python27,;
 	$relpath =~ s,\$\{FILESDIR\},$filesdir, if defined($filesdir);
 	if ($adjust_depth && $relpath =~ m"^\.\./\.\./([^.].*)$") {
 		$relpath = "${cur_pkgsrcdir}/$1";
@@ -2753,7 +2755,7 @@ sub determine_used_variables($) {
 
 	foreach my $line (@{$lines}) {
 		$rest = $line->text;
-		while ($rest =~ s/(?:\$\{|defined\(|empty\()([0-9+.A-Z_a-z]+)[:})]//) {
+		while ($rest =~ s/(?:\$\{|\$\(|defined\(|empty\()([0-9+.A-Z_a-z]+)[:})]//) {
 			my ($varname) = ($1);
 			use_var($line, $varname);
 			$opt_debug_unused and $line->log_debug("Variable ${varname} is used.");
@@ -3150,6 +3152,7 @@ sub parse_licenses($) {
 	my ($licenses) = @_;
 
 	# XXX: this is clearly cheating
+	$licenses =~ s,\${PERL5_LICENSE},gnu-gpl-v2 OR artistic,g;
 	$licenses =~ s,[()]|AND|OR,,g;
 	my @licenses = split(/\s+/, $licenses);
 	return \@licenses;
@@ -3227,11 +3230,12 @@ sub parseline_mk($) {
 		defined($comment) and $line->set("comment", $comment);
 
 	} elsif ($text =~ regex_mk_dependency) {
-		my ($targets, $sources, $comment) = ($1, $2, $3);
+		my ($targets, $whitespace, $sources, $comment) = ($1, $2, $3, $4);
 
 		$line->set("is_dependency", true);
 		$line->set("targets", $targets);
 		$line->set("sources", $sources);
+		$line->log_warning("Space before colon in dependency line: " . $line->to_string()) if ($whitespace);
 		defined($comment) and $line->set("comment", $comment);
 
 	} elsif ($text =~ regex_rcs_conflict) {
@@ -4028,12 +4032,13 @@ sub checkline_mk_text($$) {
 		}
 	}
 
-	$rest = $text;
-	while ($rest =~ s/(?:^|[^\$])\$\(([-A-Z0-9a-z_]+)(?::[^\}]+)?\)//) {
-		my ($varname) = ($1);
+	# Don't enforce purely aesthetic changes before more correct behaviour is implemented:
+	# $rest = $text;
+	# while ($rest =~ s/(?:^|[^\$])\$\(([-A-Z0-9a-z_]+)(?::[^\}]+)?\)//) {
+	# 	my ($varname) = ($1);
 
-		$line->log_warning("Please use \${${varname}\} instead of \$(${varname}).");
-	}
+	# 	$line->log_warning("Please use \${${varname}\} instead of \$(${varname}).");
+	# }
 
 }
 
@@ -4740,6 +4745,16 @@ sub checkline_mk_shellcmd($$) {
 	checkline_mk_shelltext($line, $shellcmd);
 }
 
+sub expand_permission($) {
+    my ($perm) = @_;
+    # wiz 20120826: IIUC, "u" is the permission for the variable to be used at all here; no need to expand it
+    my %fullperm = ( "a" => "append", "d" => "default", "p" => "preprocess", "s" => "set", "t" => "runtime", "?" => "unknown", "u" => "" );
+    my $result = join(", ", map { $fullperm{$_} } split //, $perm);
+    $result =~ s/, $//g;
+
+    return $result;
+}
+
 sub checkline_mk_vardef($$$) {
 	my ($line, $varname, $op) = @_;
 
@@ -4760,16 +4775,15 @@ sub checkline_mk_vardef($$$) {
 
 	my $perms = get_variable_perms($line, $varname);
 	my $needed = { "=" => "s", "!=" => "s", "?=" => "d", "+=" => "a", ":=" => "s" }->{$op};
-
 	if (index($perms, $needed) == -1) {
-		$line->log_warning("Permission [${needed}] requested for ${varname}, but only [${perms}] is allowed.");
+		$line->log_warning("Permission [" . expand_permission($needed) . "] requested for ${varname}, but only [" . expand_permission($perms) . "] is allowed.");
 		$line->explain_warning(
 "The available permissions are:",
-"\ta\tappend something using +=",
-"\td\tset a default value using ?=",
-"\ts\tset a variable using :=, =, !=",
-"\tp\tuse a variable during preprocessing",
-"\tu\tuse a variable at runtime",
+"\tappend\t\tappend something using +=",
+"\tdefault\t\tset a default value using ?=",
+"\tpreprocess\tuse a variable during preprocessing",
+"\truntime\t\tuse a variable at runtime",
+"\tset\t\tset a variable using :=, =, !=",
 "",
 "A \"?\" means that it is not yet clear which permissions are allowed",
 "and which aren't.");
@@ -4983,13 +4997,13 @@ sub checkline_mk_vartype_basic($$$$$$$$) {
 	} elsif ($type eq "DependencyWithPath") {
 		if ($value =~ regex_unresolved) {
 			# don't even try to check anything
-		} elsif ($value =~ m":(\.\./\.\./([^/]+)/([^/]+))$") {
-			my ($relpath, $cat, $pkg) = ($1, $2, $3);
+		} elsif ($value =~ m"(.*):(\.\./\.\./([^/]+)/([^/]+))$") {
+			my ($pattern, $relpath, $cat, $pkg) = ($1, $2, $3, $4);
 
 			checkline_relative_pkgdir($line, $relpath);
 
 			if ($pkg eq "msgfmt" || $pkg eq "gettext") {
-				$line->log_warning("Please use BUILD_USES_MSGFMT=yes instead of this dependency.");
+				$line->log_warning("Please use USE_TOOLS+=msgfmt instead of this dependency.");
 
 			} elsif ($pkg =~ m"^perl\d+") {
 				$line->log_warning("Please use USE_TOOLS+=perl:run instead of this dependency.");
@@ -4997,6 +5011,14 @@ sub checkline_mk_vartype_basic($$$$$$$$) {
 			} elsif ($pkg eq "gmake") {
 				$line->log_warning("Please use USE_TOOLS+=gmake instead of this dependency.");
 
+			}
+
+			if ($pattern =~ regex_dependency_gt) {
+#				($abi_pkg, $abi_version) = ($1, $2);
+			} elsif ($pattern =~ regex_dependency_wildcard) {
+#				($abi_pkg) = ($1);
+			} else {
+				$line->log_warning("Unknown dependency pattern \"${pattern}\".");
 			}
 
 		} elsif ($value =~ m":\.\./[^/]+$") {
@@ -5164,7 +5186,7 @@ sub checkline_mk_vartype_basic($$$$$$$$) {
 		if ($value ne $value_novar) {
 			$opt_debug_unchecked and $line->log_debug("Unchecked option name \"${value}\".");
 
-		} elsif ($value_novar =~ m"^-?([a-z][-0-9a-z]*)$") {
+		} elsif ($value_novar =~ m"^-?([a-z][-0-9a-z\+]*)$") {
 			my ($optname) = ($1);
 
 			if (!exists(get_pkg_options()->{$optname})) {
@@ -5176,7 +5198,7 @@ sub checkline_mk_vartype_basic($$$$$$$$) {
 "tech-pkg\@NetBSD.org mailing list.");
 			}
 
-		} elsif ($value_novar =~ m"^-?([a-z][-0-9a-z_]*)$") {
+		} elsif ($value_novar =~ m"^-?([a-z][-0-9a-z_\+]*)$") {
 			my ($optname) = ($1);
 
 			$line->log_warning("Use of the underscore character in option names is deprecated.");
@@ -6284,7 +6306,7 @@ sub checklines_mk($) {
 			}
 
 		} elsif ($text =~ regex_mk_dependency) {
-			my ($targets, $dependencies) = ($1, $2);
+			my ($targets, $whitespace, $dependencies, $comment) = ($1, $2, $3, $4);
 
 			$opt_debug_misc and $line->log_debug("targets=${targets}, dependencies=${dependencies}");
 			$mkctx_target = $targets;
@@ -7077,10 +7099,6 @@ sub checkfile_package_Makefile($$) {
 
 	checkperms($fname);
 
-	if (!exists($pkgctx_vardef->{"PKG_DESTDIR_SUPPORT"}) && !exists($pkgctx_vardef->{"META_PACKAGE"})) {
-		log_warning($fname, NO_LINE_NUMBER, "This package has not set PKG_DESTDIR_SUPPORT.");
-	}
-
 	if (!exists($pkgctx_vardef->{"PLIST_SRC"})
 	    && !exists($pkgctx_vardef->{"GENERATE_PLIST"})
 	    && !exists($pkgctx_vardef->{"META_PACKAGE"})
@@ -7396,12 +7414,12 @@ sub checkfile_patch($) {
 			#
 		}], [PST_TEXT, re_patch_cfd, PST_CFA, sub() {
 			if (!$seen_comment) {
-				$line->log_warning("Comment expected.");
+				$line->log_error("Comment expected.");
 			}
 			$line->log_warning("Please use unified diffs (diff -u) for patches.");
 		}], [PST_TEXT, re_patch_ufd, PST_UFA, sub() {
 			if (!$seen_comment) {
-				$line->log_warning("Comment expected.");
+				$line->log_error("Comment expected.");
 			}
 		}], [PST_TEXT, re_patch_text, PST_TEXT, sub() {
 			$seen_comment = true;
@@ -7413,14 +7431,14 @@ sub checkfile_patch($) {
 			if ($seen_comment) {
 				$opt_warn_space and $line->log_note("Empty line expected.");
 			} else {
-				$line->log_warning("Comment expected.");
+				$line->log_error("Comment expected.");
 			}
 			$line->log_warning("Please use unified diffs (diff -u) for patches.");
 		}], [PST_CENTER, re_patch_ufd, PST_UFA, sub() {
 			if ($seen_comment) {
 				$opt_warn_space and $line->log_note("Empty line expected.");
 			} else {
-				$line->log_warning("Comment expected.");
+				$line->log_error("Comment expected.");
 			}
 		}], [PST_CENTER, undef, PST_TEXT, sub() {
 			$opt_warn_space and $line->log_note("Empty line expected.");
@@ -8006,7 +8024,7 @@ sub checkfile($) {
 	} elsif ($fname =~ m"(?:^|/)patches/[^/]*$") {
 		log_warning($fname, NO_LINE_NUMBER, "Patch files should be named \"patch-\", followed by letters, '-', '_', '.', and digits only.");
 
-	} elsif ($basename =~ m"^(?:.*\.mk|Makefile.*)$") {
+	} elsif ($basename =~ m"^(?:.*\.mk|Makefile.*)$" and not $fname =~ m,files/, and not $fname =~ m,patches/,) {
 		$opt_check_mk and checkfile_mk($fname);
 
 	} elsif ($basename =~ m"^PLIST") {
@@ -8337,6 +8355,8 @@ sub checkdir_package() {
 	foreach my $fname (@files) {
 		if (($fname =~ m"^((?:.*/)?Makefile\..*|.*\.mk)$")
 		&& (not $fname =~ m"patch-")
+		&& (not $fname =~ m"${pkgdir}/")
+		&& (not $fname =~ m"${filesdir}/")
 		&& (defined(my $lines = load_lines($fname, true)))) {
 			parselines_mk($lines);
 			determine_used_variables($lines);
@@ -8477,4 +8497,4 @@ sub main() {
 	PkgLint::Logging::print_summary_and_exit($opt_quiet);
 }
 
-main();
+main() unless caller();

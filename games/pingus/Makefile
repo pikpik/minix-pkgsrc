@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2012/01/28 11:00:55 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/11/23 12:35:01 joerg Exp $
 
 DISTNAME=	pingus-0.7.3
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	http://pingus.seul.org/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,10 +10,8 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pingus.seul.org/
 COMMENT=	Lemmings(TM) Clone
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 BUILD_DEPENDS+=		scons>=0.96:../../devel/scons
-USE_LANGUAGES+=		c++
+USE_LANGUAGES+=		c c++
 
 SUBST_CLASSES+=			fix-prefix
 SUBST_STAGE.fix-prefix=		post-patch
@@ -23,9 +21,23 @@ SUBST_SED.fix-prefix=		-e 's,BUILDLINK_DIR,${BUILDLINK_DIR},'
 
 MAKE_JOBS?=	1
 
+.include "../../mk/compiler.mk"
+.if !empty(PKGSRC_COMPILER:Mclang)
+SCONS_CXX=	${CXX} -std=c++11
+.else
+SCONS_CXX=	${CXX}
+.endif
+
+MAKE_ENV+=	CPPPATH=${BUILDLINK_DIR}/include \
+		LIBPATH=${BUILDLINK_DIR}/lib 
+
+do-configure:
+	cd ${WRKSRC} && \
+	${PKGSRC_SETENV} ${MAKE_ENV} scons configure CXX=${SCONS_CXX:Q}
+
 do-build:
 	cd ${WRKSRC} && \
-	CPPPATH=${BUILDLINK_DIR}/include LIBPATH=${BUILDLINK_DIR}/lib scons -j ${MAKE_JOBS}
+	${PKGSRC_SETENV} ${MAKE_ENV} scons ${_MAKE_JOBS}
 
 do-install:
 	cd ${WRKSRC} && ./install.sh ${DESTDIR}${PREFIX}

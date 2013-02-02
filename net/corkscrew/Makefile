@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/05/12 12:27:20 martti Exp $
+# $NetBSD: Makefile,v 1.8 2010/09/28 13:21:32 wiz Exp $
 
 DISTNAME=	corkscrew-2.0
 CATEGORIES=	net
@@ -10,7 +10,6 @@ COMMENT=	Tool for tunneling SSH through HTTP proxies
 LICENSE=	gnu-gpl-v2
 
 INSTALLATION_DIRS=	share/doc/corkscrew
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

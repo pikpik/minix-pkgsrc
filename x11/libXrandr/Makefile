@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2008/07/13 23:31:51 bjs Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/23 10:24:19 wiz Exp $
 #
 
-DISTNAME=		libXrandr-1.3.0
+DISTNAME=		libXrandr-1.4.0
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X RandR Library from X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		Xrandr-[0-9]*
 
@@ -32,6 +30,5 @@ CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .include "../../x11/libXrender/buildlink3.mk"
 .include "../../x11/randrproto/buildlink3.mk"
 .include "../../x11/renderproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

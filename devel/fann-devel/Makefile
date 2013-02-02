@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/10/12 18:30:22 gdt Exp $
+# $NetBSD: Makefile,v 1.2 2009/02/11 00:39:10 gdt Exp $
 
 .include "Makefile.common"
 
 COMMENT=		Fast Artificial Neural Network
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

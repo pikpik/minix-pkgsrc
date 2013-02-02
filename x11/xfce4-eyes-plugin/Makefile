@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.10 2012/02/06 12:42:29 wiz Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.16 2012/10/08 23:00:53 adam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=	4.4.0
 
 DISTNAME=	xfce4-eyes-plugin-${XFCE4_VERSION}
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	x11
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-eyes-plugin/
 COMMENT=	Xfce eyes plugin

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.83 2012/02/09 21:44:27 sbd Exp $
+# $NetBSD: Makefile,v 1.90 2012/12/16 01:52:10 obache Exp $
 
 DISTNAME=	kdbg-2.2.2
-PKGREVISION=	5
+PKGREVISION=	11
 CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kdbg/}
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kdbg.org/
 COMMENT=	Graphical User Interface around gdb using KDE
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt perl
 GNU_CONFIGURE=		YES
@@ -27,4 +25,5 @@ CONFIGURE_ARGS+=	--with-kde-version=3
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

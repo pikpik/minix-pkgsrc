@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2012/03/01 15:11:34 ryoon Exp $
+# $NetBSD: Makefile,v 1.41 2012/12/09 17:34:20 ryoon Exp $
 #
 
-DISTNAME=	Sigil-0.5.3-Code
+DISTNAME=	Sigil-0.6.2-Code
 PKGNAME=	${DISTNAME:S/-Code//}
 PKGREVISION=	1
 CATEGORIES=	editors
@@ -14,8 +14,6 @@ COMMENT=	Multi-platform WYSIWYG ebook editor (for the ePub format)
 LICENSE=	gnu-gpl-v3
 
 MAKE_JOBS_SAFE=	NO
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 

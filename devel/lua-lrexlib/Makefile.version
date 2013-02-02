@@ -1,3 +1,5 @@
-# $NetBSD$
+# $NetBSD: Makefile.version,v 1.1.1.1 2011/07/24 08:51:26 cheusov Exp $
 
-VERSION=2.4.0
+V=	2.7
+MINORV=	.2
+VERSION=${V}${MINORV}

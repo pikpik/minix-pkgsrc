@@ -1,4 +1,4 @@
-# $NetBSD: install.mk,v 1.62 2011/09/08 20:17:16 abs Exp $
+# $NetBSD: install.mk,v 1.65 2012/12/06 11:36:31 jperkin Exp $
 #
 # This file provides the code for the "install" phase.
 #
@@ -29,7 +29,7 @@
 #	This option is not supported by all packages.
 #
 # STRIP_DEBUG
-#	If set to "yes", call ${STRI} -g to remove debug information
+#	If set to "yes", call ${STRIP} -g to remove debug information
 #	from all files. The symbol tables are still preserved.
 #
 # Keywords: strip unstripped
@@ -39,8 +39,9 @@
 # INSTALLATION_DIRS
 #	A list of directories that should be created at the very
 #	beginning of the install phase. These directories are relative
-#	to ${PREFIX}. As a convenience, a leading man/ is transformed
-#	to ${PKGMANDIR}, to save package authors from typing too much.
+#	to ${PREFIX}. As a convenience, a leading gnu/ is transformed
+#	to ${PKGGNUDIR} and a leading man/ is transformed to
+#	${PKGMANDIR}, to save package authors from typing too much.
 #
 # AUTO_MKDIRS
 # INSTALLATION_DIRS_FROM_PLIST
@@ -268,7 +269,7 @@ install-makedirs:
 .if defined(INSTALLATION_DIRS) && !empty(INSTALLATION_DIRS)
 	@${STEP_MSG} "Creating installation directories"
 	${RUN}								\
-	for dir in ${INSTALLATION_DIRS:C,^man/,${PKGMANDIR}/,}; do	\
+	for dir in ${INSTALLATION_DIRS:C,^gnu/,${PKGGNUDIR},:C,^man/,${PKGMANDIR}/,}; do \
 		case "$$dir" in						\
 		${PREFIX}/*)						\
 			dir=`${ECHO} "$$dir" | ${SED} "s|^${PREFIX}/||"` ;; \
@@ -292,6 +293,8 @@ install-dirs-from-PLIST:
 	${CAT} ${PLIST_SRC}						\
 	| sed -n							\
 		-e 's,\\,\\\\,'						\
+		-e 's,^gnu/man/,${PKGGNUDIR}${PKGMANDIR}/,'		\
+		-e 's,^gnu/,${PKGGNUDIR},'				\
 		-e 's,^man/,${PKGMANDIR}/,'				\
 		-e 's,^info/,${PKGINFODIR}/,'				\
 		-e 's,^share/locale/,${PKGLOCALEDIR}/locale/,'		\

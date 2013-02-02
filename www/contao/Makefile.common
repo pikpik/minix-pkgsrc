@@ -1,29 +1,29 @@
-# $NetBSD: Makefile.common,v 1.13 2012/03/14 16:24:35 taca Exp $
+# $NetBSD: Makefile.common,v 1.26 2013/01/08 11:43:18 taca Exp $
 #
-# used by www/contao210/Makefile
-# used by www/contao210-example/Makefile
-# used by www/contao210-translations/Makefile
+# used by www/contao/Makefile.example"
 # used by www/contao211/Makefile
-# used by www/contao211-example/Makefile
 # used by www/contao211-translations/Makefile
 #
 
 # current release
-CT210_VERSION=	2.10.4
-CT211_VERSION=	2.11.2
+CT211_VERSION=	2.11.8
+CT300_VERSION=	3.0.3
 
-CT_VERS?=	210
+CT_VERS?=	211
 
-.if ${CT_VERS} == "210"
-CT_VERSION=	${CT210_VERSION}
-CT_DIST_SUBDIR=	contao210-201201020
-.elif ${CT_VERS} == "211"
+.if ${CT_VERS} == "211"
 CT_VERSION=	${CT211_VERSION}
+CT_FILES=	tl_files
+.elif ${CT_VERS} == "30"
+CT_VERSION=	${CT300_VERSION}
+CT_FILES=	files
+CT_DIST_SUBDIR=	contao-20120109
 .else
 .error "Illegal version specified: ${CT_VERS}"
 .endif
 
-CT_VER?=	${CT_VERSION:C/([0-9]+)\.([0-9]+)\..*/\1\2/}
+CT_VER=		${CT_VERSION:C/([0-9]+)\.([0-9]+)\..*/\1\2/}
+CT_VERBASE=	${CT_VERSION:C/([0-9]+)\.([0-9]+)\..*/\1.\2/}
 CT_PKGVER=	${CT_VERSION:S/.RC/rc/}
 
 FILES_SUBST+=	PAX=${PAX} CT_EGDIR=${CT_EGDIR:Q} CT_WEBDIR=${CT_WEBDIR:Q} \

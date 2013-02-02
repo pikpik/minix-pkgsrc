@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2012/02/29 16:32:20 hans Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/08 23:01:12 adam Exp $
 
 DISTNAME=	MP3Diags-1.0.09.063
 PKGNAME=	${DISTNAME:S/MP3D/mp3d/}
-PKGREVISION=	7
+PKGREVISION=	14
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mp3diags/}
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://mp3diags.sourceforge.net/
 COMMENT=	MP3 diagnosis tool and tag editor
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin
 
 USE_LANGUAGES=	c++

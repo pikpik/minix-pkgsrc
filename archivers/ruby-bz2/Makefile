@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/02/15 10:24:00 obache Exp $
+# $NetBSD: Makefile,v 1.2 2011/02/21 16:01:10 taca Exp $
 #
 
 DISTNAME=	bz2-0.2.2
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://rubyforge.org/projects/bz2/
 COMMENT=	Ruby interface to the library libbzip2
 LICENSE=	ruby-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_RUBY_EXTCONF=	yes
 

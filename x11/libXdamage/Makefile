@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2010/01/15 18:47:45 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/29 05:06:34 asau Exp $
 #
 
-DISTNAME=		libXdamage-1.1.3
+DISTNAME=		libXdamage-1.1.4
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Xdamage extension (Library)
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

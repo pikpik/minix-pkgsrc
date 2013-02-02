@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/06/14 22:58:09 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/08 13:04:16 asau Exp $
 
 DISTNAME=	asclock-classic-1.0
 PKGNAME=	asclock-1.0
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}	# www.asclock.org is no more
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	NeXTstep-like clock and calendar
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 
@@ -69,5 +67,4 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

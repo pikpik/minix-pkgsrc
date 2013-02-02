@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.5 2011/10/15 08:50:22 obache Exp $
 ${PYSITELIB}/pygoogle.pth
 ${PYSITELIB}/pygoogle/GoogleSOAPFacade.py
 ${PYSITELIB}/pygoogle/GoogleSOAPFacade.pyc
@@ -12,4 +12,4 @@ ${PYSITELIB}/pygoogle/google.pyo
 ${PYSITELIB}/pygoogle/googletest.py
 ${PYSITELIB}/pygoogle/googletest.pyc
 ${PYSITELIB}/pygoogle/googletest.pyo
-${PLIST.eggfile}${PYSITELIB}/pygoogle/${EGG_FILE}
+${PYSITELIB}/pygoogle/${EGG_FILE}

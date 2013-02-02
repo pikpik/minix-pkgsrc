@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/05/09 13:13:49 cheusov Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/23 10:24:24 wiz Exp $
 
 DISTNAME=	xxkb-1.11-src
 PKGNAME=	${DISTNAME:S/-src//}
@@ -11,8 +11,6 @@ MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://pascal.tsu.ru/other/xxkb/
 COMMENT=	XXKB - switches and indicates a current keyboard layout
 LICENSE=	artistic
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		xmkmf
 USE_IMAKE=		yes
@@ -32,5 +30,4 @@ post-install:
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

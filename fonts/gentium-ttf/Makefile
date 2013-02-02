@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/05/26 21:12:59 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2006/11/03 07:13:31 joerg Exp $
 #
 
 DISTNAME=	Gentium_102_W
@@ -11,8 +11,6 @@ WRKSRC=		${WRKDIR}/Gentium102
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://scripts.sil.org/
 COMMENT=	Free TrueType fonts from Bitstream, useful for web viewing
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

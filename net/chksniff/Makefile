@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2005/10/29 01:05:17 minskim Exp $
+# $NetBSD: Makefile,v 1.2 2009/03/02 17:40:02 joerg Exp $
 #
 
 DISTNAME=	chksniff-0.2
@@ -8,8 +8,6 @@ MASTER_SITES=	http://virtus.ath.cx/chksniff/
 MAINTAINER=	virtus@wanadoo.nl
 HOMEPAGE=	http://virtus.ath.cx/chksniff/
 COMMENT=	Small tool to check for promiscuous interfaces
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin
 

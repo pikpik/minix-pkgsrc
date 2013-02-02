@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2010/12/23 11:44:34 dsainty Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/06 14:10:45 asau Exp $
 #
 
-DISTNAME=	dcraw-9.04
+DISTNAME=	dcraw-9.16
 PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.cybercom.net/~dcoffin/dcraw/archive/
@@ -10,14 +10,12 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cybercom.net/~dcoffin/dcraw/
 COMMENT=	Raw digital camera decoder
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_PKGLOCALEDIR=	yes
 WRKSRC=			${WRKDIR}/${PKGBASE}
 USE_TOOLS+=		msgfmt
 USE_LANGUAGES=		c
 
-LIBS+=		-lm -ljpeg
+LIBS+=		-lm -ljasper -ljpeg
 CFLAGS+=	-DLOCALEDIR=\"${PREFIX}/${PKGLOCALEDIR}/locale\"
 
 DCRAW_MANS=		ca cs da de eo es fr hu it pl pt ru sv zh_CN zh_TW
@@ -66,5 +64,6 @@ do-install:
 .endfor
 
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../graphics/jasper/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

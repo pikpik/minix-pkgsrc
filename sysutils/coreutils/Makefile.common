@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.2 2008/10/29 22:34:18 tron Exp $
+# $NetBSD: Makefile.common,v 1.5 2012/07/20 17:59:14 marino Exp $
 # used by sysutils/coreutils/Makefile
 # used by misc/gnuls/Makefile
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.gnu.org/software/coreutils/
 COMMENT=	GNU basic file, shell and text manipulation utilities
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 NOT_FOR_PLATFORM=	NetBSD-2.0[D-H]-*
 
 PATCHDIR=		${.CURDIR}/../../sysutils/coreutils/patches
@@ -29,8 +28,12 @@ TEST_TARGET=		check
 CONFIGURE_ENV+=		ac_list_mounted_fs=found
 .endif
 
+.if ${OPSYS} == "DragonFly"
+CONFIGURE_ENV+= 	gl_cv_search_pthread_join=-lpthread
+.endif
+
 .if !empty(MACHINE_PLATFORM:MDarwin-[9].*-*)
-CONFIGURE_ENV+=		 ac_cv_header_sys_acl_h=no jm_cv_func_svid_putenv=yes
+CONFIGURE_ENV+=		ac_cv_header_sys_acl_h=no jm_cv_func_svid_putenv=yes
 .endif
 
 # XXX - this hack is bound to cause fallout on some platform at some point.
@@ -40,10 +43,7 @@ CONFIGURE_ENV+=		gt_cv_func_gnugettext3_libintl=yes
 .endif
 CONFIGURE_ENV+=		MKDIR_P=${MKDIR:Q}
 
-CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX:Q}
-
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
-BUILD_DEFS+=		GNU_PROGRAM_PREFIX
+CONFIGURE_ARGS+=	--program-prefix=g
 
 #CONFIGURE_ARGS+=	--enable-install-program=su
 #.if ${OPSYS} == "NetBSD" ||  ${OPSYS} == "FreeBSD" || \

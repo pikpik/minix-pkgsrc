@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.75 2010/06/02 13:34:34 hauke Exp $
+# $NetBSD: Makefile,v 1.76 2011/12/09 14:36:34 drochner Exp $
 #
 
 DISTNAME=	ddd-3.3.12
@@ -24,8 +24,6 @@ GCC_REQD+=		3.0
 
 CONFIGURE_ARGS+=	--with-ncurses=no
 CONFIGURE_ENV+=		COMPFACE=${FALSE:Q}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

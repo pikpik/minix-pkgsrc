@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2004/11/05 16:44:46 agc Exp $
+# $NetBSD: Makefile,v 1.21 2011/05/28 17:27:08 cheusov Exp $
 #
 
 DISTNAME=	gensolpkg-1.10
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MAINTAINER=	agc@NetBSD.org
 COMMENT=	Utility to generate a Solaris package
 LICENSE=	original-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_BSD_MAKEFILE=	yes
 

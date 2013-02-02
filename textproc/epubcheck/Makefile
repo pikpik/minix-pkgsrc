@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/11/22 18:20:30 gls Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/05 12:51:18 wiz Exp $
 #
 
 DISTNAME=	epubcheck-${VER}
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://epubcheck.googlecode.com/
 COMMENT=	Tool to validate IDPF Epub files
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_JAVA=	run

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2011/07/13 19:47:38 adam Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/06 14:10:55 asau Exp $
 
-DISTNAME=	glew-1.6.0
+DISTNAME=	glew-1.9.0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=glew/}
 EXTRACT_SUFX=	.tgz
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://glew.sourceforge.net/
 COMMENT=	OpenGL Extension Wrangler Library
 LICENSE=	modified-bsd AND mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
@@ -21,8 +19,8 @@ INSTALL_TARGET=		install.all
 INSTALLATION_DIRS+=	lib/pkgconfig
 
 post-patch:
-	${LN} -s Makefile.netbsdelf ${WRKSRC}/config/Makefile.dragonfly
-	${LN} -s Makefile.netbsdelf ${WRKSRC}/config/Makefile.netbsd
+	${LN} -sf Makefile.netbsdelf ${WRKSRC}/config/Makefile.dragonfly
+	${LN} -sf Makefile.netbsdelf ${WRKSRC}/config/Makefile.netbsd
 
 .include "../../mk/bsd.prefs.mk"
 

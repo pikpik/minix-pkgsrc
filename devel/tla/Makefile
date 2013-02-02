@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2011/02/28 14:52:47 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2012/05/30 11:55:54 cheusov Exp $
 #
 
 DISTNAME=	tla-1.3.5
@@ -14,7 +14,6 @@ DEPENDS+=	patch-[0-9]*:../../devel/patch
 DEPENDS+=	diffutils-[0-9]*:../../devel/diffutils
 DEPENDS+=	gtar-base-[0-9]*:../../archivers/gtar-base
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CHECK_PORTABILITY_SKIP+=	\
@@ -33,10 +32,10 @@ OVERRIDE_DIRDEPTH=	3
 CONFIGURE_DIRS=		src/=build
 CONFIGURE_SCRIPT=	../configure
 CONFIGURE_ARGS+=	--prefix=${PREFIX}
-CONFIGURE_ARGS+=	--with-gnu-diff=${PREFIX}/bin/${GNU_PROGRAM_PREFIX}diff
-CONFIGURE_ARGS+=	--with-gnu-diff3=${PREFIX}/bin/${GNU_PROGRAM_PREFIX}diff3
-CONFIGURE_ARGS+=	--with-gnu-patch=${PREFIX}/bin/${GNU_PROGRAM_PREFIX}patch
-CONFIGURE_ARGS+=	--with-gnu-tar=${PREFIX}/bin/${GNU_PROGRAM_PREFIX}tar
+CONFIGURE_ARGS+=	--with-gnu-diff=${PREFIX}/bin/gdiff
+CONFIGURE_ARGS+=	--with-gnu-diff3=${PREFIX}/bin/gdiff3
+CONFIGURE_ARGS+=	--with-gnu-patch=${PREFIX}/bin/gpatch
+CONFIGURE_ARGS+=	--with-gnu-tar=${PREFIX}/bin/gtar
 
 DOCDIR=			${PREFIX}/share/doc/tla
 

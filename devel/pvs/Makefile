@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.42 2011/02/14 23:31:34 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2012/10/12 08:15:26 obache Exp $
 #
 
 DISTNAME=		pvs-${VERSION}
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
 PKGREVISION=		3
 CATEGORIES=		devel lang
-MASTER_SITES=		ftp://pvs.csl.sri.com/pub/pvs/pvs${VERSION}/ \
-			ftp://ftp.cs.york.ac.uk/pub/pvs/pvs${VERSION}/ \
-			ftp://ftp.informatik.uni-ulm.de/pub/KI/pvs/pvs${VERSION}/
+MASTER_SITES=		ftp://ftp.csl.sri.com/pub/pvs/pvs${VERSION}/
 EXTRACT_SUFX=		.tgz
 DISTFILES=		${DISTNAME}-${MAINFILEEXT}${EXTRACT_SUFX} \
 			pvs-${VERSION}-system${EXTRACT_SUFX} \
@@ -31,8 +29,6 @@ DEPENDS+=		tk>=8.0:../../x11/tk
 USE_TOOLS+=	pax
 
 EMUL_PLATFORMS+=	linux-i386 solaris-sparc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 VERSION=		3.2

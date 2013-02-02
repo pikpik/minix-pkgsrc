@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-stream_dvb_tune.c,v 1.1 2011/07/09 15:51:52 jmcneill Exp $
+
+Add support for dvb capture on NetBSD.
 
 --- stream/dvb_tune.c.orig	2010-03-02 19:57:17.000000000 +0000
 +++ stream/dvb_tune.c

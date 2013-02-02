@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.31 2011/12/18 03:10:29 sbd Exp $
+# $NetBSD: Makefile,v 1.33 2012/08/15 17:47:56 drochner Exp $
 #
 
-DISTNAME=		pinentry-0.8.1
-PKGREVISION=		2
+DISTNAME=		pinentry-0.8.2
 CATEGORIES=		security
 MASTER_SITES=		ftp://ftp.gnupg.org/gcrypt/pinentry/
+EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		shannonjr@NetBSD.org
 HOMEPAGE=		ftp://ftp.gnupg.org/gcrypt/pinentry/
 COMMENT=		Applications for entering PINs or Passphrases
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-libiconv-prefix=${BUILDLINK_PREFIX.iconv}

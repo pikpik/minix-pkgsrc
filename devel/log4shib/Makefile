@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/07/27 22:23:43 pettai Exp $
+# $NetBSD: Makefile,v 1.6 2011/07/28 21:54:08 pettai Exp $
 #
 
 DISTNAME=	log4shib-1.0.4
@@ -10,8 +10,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://shibboleth.internet2.edu/
 COMMENT=	C++ library for flexible logging, modeled after Log4j
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=	VARBASE
 

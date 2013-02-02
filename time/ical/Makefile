@@ -1,16 +1,18 @@
-# $NetBSD: Makefile,v 1.20 2008/02/03 19:36:33 markd Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/08 13:04:19 asau Exp $
 
-DISTNAME=	ical-2.3.1
-PKGREVISION=	3
+VER=		3.0.2
+DISTNAME=	ical-${VER}
+EXTRACT_SUFFIX=	.tar.gz
+#PKGREVISION=	1
 CATEGORIES=	time
-MASTER_SITES=	http://www.annexia.org/_file/
+MASTER_SITES=	https://launchpad.net/ical-tcl/3.x/${VER}/+download/
+FETCH_USING=	curl
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.annexia.org/freeware/ical
+HOMEPAGE=	https://launchpad.net/ical-tcl/
 COMMENT=	Calendar application
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	yes
@@ -19,10 +21,13 @@ CONFIGURE_ARGS+= --prefix=${PREFIX:Q} \
 		--with-tclsh=${BUILDLINK_PREFIX.tcl}/bin/tclsh \
 		--with-tkconfig=${BUILDLINK_PREFIX.tk}/lib
 
+USE_TOOLS+=	gmake gsed
+
+PLIST_SUBS+=	"PKGVERSION=${VER}"
+
 post-configure:
 	${TOUCH} ${WRKDIR}/${DISTNAME}/Makefile \
 	         ${WRKDIR}/${DISTNAME}/calendar/Makefile \
-	         ${WRKDIR}/${DISTNAME}/startup.tcl \
 	         ${WRKDIR}/${DISTNAME}/time/Makefile
 
 .include "../../lang/tcl/buildlink3.mk"

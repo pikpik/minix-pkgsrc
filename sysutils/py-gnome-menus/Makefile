@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2012/02/06 12:41:38 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/09/15 10:06:32 obache Exp $
 #
 
 DISTNAME=	gnome-menus-2.30.5
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-menus/2.30/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Python bindings for gnome-menus
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTINFO_FILE=	${.CURDIR}/../gnome-menus/distinfo
 PATCHDIR=	${.CURDIR}/../gnome-menus/patches

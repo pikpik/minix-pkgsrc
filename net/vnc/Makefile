@@ -1,22 +1,17 @@
-# $NetBSD: Makefile,v 1.44 2009/04/04 20:44:58 joerg Exp $
+# $NetBSD: Makefile,v 1.47 2012/10/23 17:19:17 asau Exp $
 
 DISTNAME=		vnc-3.3.3r2
 PKGNAME=		vnc-3.3.3.2
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		net x11
 MASTER_SITES=		ftp://ftp.uk.research.att.com/pub/vnc/dist/
 DISTFILES=		vnc-3.3.3r2_unixsrc.tgz \
 			vnc-3.3.2r2_doc.tgz
 
-PATCH_SITES=		ftp://ftp.kame.net/pub/kame/misc/
-PATCHFILES=		vnc-3.3.3r2-v6-20010421.diff.gz
-PATCH_DIST_STRIP=	-p1
-
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.uk.research.att.com/vnc/
 COMMENT=		Display X and Win32 desktops on remote X/Win32/Java displays
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 DEPENDS+=		vncviewer-[0-9]*:../../net/vncviewer
@@ -32,6 +27,23 @@ BUILD_TARGET=		World
 
 MAKE_ENV+= CC=${CC:Q}	#for make imake in Xvnc/config/imake
 
+PKG_OPTIONS_VAR=        PKG_OPTIONS.vnc
+PKG_SUPPORTED_OPTIONS=  inet6
+PKG_SUGGESTED_OPTIONS=  inet6
+
+.include "../../mk/bsd.options.mk"
+
+.if !empty(PKG_OPTIONS:Minet6)
+PATCH_SITES=		ftp://ftp.kame.net/pub/kame/misc/
+PATCHFILES=		vnc-3.3.3r2-v6-20010421.diff.gz
+PATCH_DIST_STRIP=	-p1
+USE_TOOLS+=		patch
+post-patch: patch-sockets
+.PHONY: patch-sockets
+patch-sockets:
+	cd ${WRKSRC} && ${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-sockets.c
+.endif                
+                
 # We have to frob a few things, and we want our own permissions, so it's easier
 # to do the install ourselves.
 

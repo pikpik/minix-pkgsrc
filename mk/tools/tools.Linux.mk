@@ -1,4 +1,4 @@
-# $NetBSD: tools.Linux.mk,v 1.47 2010/02/13 08:30:59 obache Exp $
+# $NetBSD: tools.Linux.mk,v 1.49 2012/07/27 14:38:26 jperkin Exp $
 #
 # System-supplied tools for the Linux operating system.
 
@@ -46,6 +46,9 @@ TOOLS_PLATFORM.cmp?=		/usr/bin/cmp
 TOOLS_PLATFORM.cp?=		/bin/cp
 .if exists(/bin/tcsh)
 TOOLS_PLATFORM.csh?=		/bin/tcsh
+.endif
+.if exists(/usr/bin/curl)
+TOOLS_PLATFORM.curl?=		/usr/bin/curl
 .endif
 .if exists(/bin/cut)
 TOOLS_PLATFORM.cut?=		/bin/cut
@@ -242,3 +245,7 @@ TOOLS_PLATFORM.xgettext?=	/usr/bin/xgettext
 .if exists(/usr/bin/yacc)
 TOOLS_PLATFORM.yacc?=		/usr/bin/yacc
 .endif
+.if exists(/usr/bin/xzcat)
+TOOLS_PLATFORM.xzcat?=		/usr/bin/xzcat
+.endif
+

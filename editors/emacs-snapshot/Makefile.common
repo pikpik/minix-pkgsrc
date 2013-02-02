@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.50 2012/03/21 23:05:02 minskim Exp $
+# $NetBSD: Makefile.common,v 1.52 2012/06/16 21:06:17 dholland Exp $
 
 DISTNAME=	emacs-snapshot_20120319.orig
 PKGNAME=	${DISTNAME:S/snapshot_/${EMACS_VERSION}./:S/.orig//}
@@ -11,9 +11,10 @@ HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
 COMMENT=	GNU editing macros (development version)
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 SETGIDGAME=		yes
 MAKE_JOBS_SAFE=		no
+
+BROKEN=	emacs24 has been released; emacs25 snapshots are not yet available.
 
 CONFLICTS+=	emacs-nox11-[0-9]*
 

@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:57:01 wiz Exp $
 
 DISTNAME=	Net-Frame-1.07
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
@@ -17,7 +18,6 @@ DEPENDS+=	p5-Bit-Vector-[0-9]*:../../devel/p5-Bit-Vector
 SUPERSEDES+=	p5-Net-Packet-[0-9]*
 
 PKG_INSTALLATION_TYPES=		overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Net/Frame/.packlist
 

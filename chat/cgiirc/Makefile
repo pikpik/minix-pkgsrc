@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2009/07/17 18:00:13 adrianp Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 00:02:34 asau Exp $
 
 DISTNAME=	cgiirc-0.5.10
 #PKGREVISION=	2
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://cgiirc.org/releases/
 
@@ -9,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cgiirc.org/
 COMMENT=	Access IRC from a web browser
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl:run
 NO_BUILD=	YES
@@ -22,6 +21,7 @@ CONF_FILES+=	${PREFIX}/share/examples/cgiirc/cgiirc.config \
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.cgiirc
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

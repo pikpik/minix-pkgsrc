@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 12:26:47 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:55:49 wiz Exp $
 
 DISTNAME=	TryCatch-1.003000
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	2
 SVR4_PKGNAME=	p5sto
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/A/AS/ASH/}
@@ -26,10 +27,9 @@ BUILD_DEPENDS+=	p5-ExtUtils-Depends>=0.302:../../devel/p5-ExtUtils-Depends
 BUILD_DEPENDS+=	{perl>=5.10.1,p5-Test-Simple>=0.88}:../../devel/p5-Test-Simple
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/TryCatch/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 .include "../../devel/p5-B-Hooks-OP-Check/buildlink3.mk"
 .include "../../devel/p5-B-Hooks-OP-PPAddr/buildlink3.mk"

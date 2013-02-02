@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2011/01/03 20:45:27 markd Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/06 14:11:05 asau Exp $
 #
 
 DISTNAME=	libkexiv2-0.1.9
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kipi/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,12 +12,11 @@ HOMEPAGE=	http://www.kipi-plugins.org/
 COMMENT=	KDE wrapper for exiv2
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
+SET_LIBDIR=	yes
 
 PKGCONFIG_OVERRIDE+=	libkexiv2/libkexiv2.pc.in
 

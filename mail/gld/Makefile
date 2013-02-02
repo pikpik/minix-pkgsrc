@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2010/02/19 20:04:17 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2012/09/15 15:03:24 obache Exp $
 #
 
 DISTNAME=		gld-1.7
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		mail
 MASTER_SITES=		http://www.gasmi.net/down/
 EXTRACT_SUFX=		.tgz
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gasmi.net/
 COMMENT=		Standalone greylisting server for Postfix
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

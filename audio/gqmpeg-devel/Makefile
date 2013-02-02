@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.33 2012/02/15 21:33:04 hans Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/02 17:10:32 tron Exp $
 
 DISTNAME=		gqmpeg-0.91.1
-PKGREVISION=		15
+PKGREVISION=		20
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gqmpeg/}
 
@@ -9,8 +9,6 @@ MAINTAINER=		sekiya@NetBSD.org
 HOMEPAGE=		http://gqmpeg.sourceforge.net/
 COMMENT=		GTK+ front end to mpg123
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		mpg123{,-esound,-nas}>=0.59.18:../../audio/mpg123
 DEPENDS+=		vorbis-tools>=1.0.0.6:../../audio/vorbis-tools
@@ -34,5 +32,6 @@ LDFLAGS.DragonFly=	-lm -lX11
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 
 .include "../../mk/bsd.pkg.mk"

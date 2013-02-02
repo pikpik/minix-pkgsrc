@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.118 2011/07/13 12:22:43 taca Exp $
+# $NetBSD: Makefile,v 1.121 2012/10/08 12:19:32 asau Exp $
 
-DISTNAME=	squirrelmail-webmail-1.4.22
+DISTNAME=	squirrelmail-webmail-1.4.23pre14345
 PKGNAME=	${DISTNAME:S/-webmail//}
-PKGREVISION=	1
 CATEGORIES=	mail www
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=squirrelmail/}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	taca@NetBSD.org
@@ -18,8 +17,6 @@ CONFLICTS+=	ja-squirrelspell-[0-9]*
 CONFLICTS+=	ja-squirrelmail-[0-9]*
 
 DEPENDS+=	${PHP_PKG_PREFIX}-gettext>=4.3.3:../../devel/php-gettext
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 NO_BUILD=	yes

@@ -1,11 +1,9 @@
-$NetBSD$
-
---- configure.ac.orig	Thu Jun 23 11:43:01 2011
-+++ configure.ac
-@@ -1104,7 +1104,7 @@ AC_CHECK_FUNCS(strftime difftime gettimeofday \
+--- configure.ac.orig	Sun Sep  9 18:26:47 2012
++++ configure.ac	Fri Feb  1 22:04:57 2013
+@@ -1219,7 +1219,7 @@
  	       initgroups nis_list \
  	       setuid seteuid setreuid setresuid setsid \
- 	       memcpy memmove strstr strerror \
+ 	       memcpy memmove strstr strerror strtoul \
 -	       getrlimit getrusage \
 +	       getrlimit setrlimit getrusage \
  	       setlocale \

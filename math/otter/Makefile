@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2006/10/04 21:47:58 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2008/03/04 18:12:59 jlam Exp $
 
 DISTNAME=	otter-3.0.6
 CATEGORIES=	math
@@ -7,8 +7,6 @@ MASTER_SITES=	ftp://info.mcs.anl.gov/pub/Otter/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www-unix.mcs.anl.gov/AR/otter/
 COMMENT=	Automated Deduction System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	otter
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}/source

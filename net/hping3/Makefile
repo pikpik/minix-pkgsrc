@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/03/14 18:39:38 pettai Exp $
+# $NetBSD: Makefile,v 1.4 2012/08/21 23:49:24 marino Exp $
 #
 
 DISTNAME=		hping3-alpha-2
 PKGNAME=		hping3-3a2
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://wiki.hping.org/uploadedfiles/101/
 
@@ -10,8 +11,6 @@ MAINTAINER=		pettai@NetBSD.org
 HOMEPAGE=		http://wiki.hping.org/
 COMMENT=		Command-line oriented TCP/IP packet assembler/analyzer
 LICENSE=		gnu-gpl-v2 AND original-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SUBST_CLASSES+=		paths
 SUBST_FILES.paths=	${WRKSRC}/configure

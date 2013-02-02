@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2006/03/04 21:30:52 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2009/07/07 20:31:33 joerg Exp $
 #
 
 DISTNAME=	${W2L}beta2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.hj-gym.dk/~hj/writer2latex/
 COMMENT=	Convert OpenOffice.org/StarOffice documents to LaTeX and other formats
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${W2L}
 USE_JAVA2=	yes

@@ -1,22 +1,21 @@
-# $NetBSD: Makefile,v 1.21 2011/11/16 22:26:07 spz Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/23 17:18:11 asau Exp $
 
 DISTNAME=	bind-${BIND_VERSION}
 PKGNAME=	${DISTNAME:S/-ESV/.3.1.ESV/:S/-R/./:S/-P/pl/}
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${BIND_VERSION}/ \
 		http://ftp.belnet.be/pub/mirror/ftp.isc.org/isc/bind9/${BIND_VERSION}/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.isc.org/software/bind
-COMMENT=	Version 9 of the Berkeley Internet Name Daemon, implementation of DNS
+HOMEPAGE=	http://www.isc.org/software/bind/
+COMMENT=	Version 9.6 of the Berkeley Internet Name Daemon, implementation of DNS
 
-CONFLICTS+=	bind<9.6.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+CONFLICTS+=	host-[0-9]*
 
 MAKE_JOBS_SAFE=	no
 
-BIND_VERSION=	9.6-ESV-R5-P1
+BIND_VERSION=	9.6-ESV-R7-P4
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -60,6 +59,8 @@ FILES_SUBST+=		BIND_GROUP=${BIND_GROUP:Q} \
 			BIND_USER=${BIND_USER:Q} PAX=${PAX:Q}
 MESSAGE_SUBST+=		BIND_DIR=${BIND_DIR} BIND_USER=${BIND_USER}
 DOCDIR=			${DESTDIR}${PREFIX}/share/doc/bind9
+MISCDOC=		dnssec ipv6 migration migration-4to9 options \
+			rfc-compliance roadmap sdb
 
 # include/isc/ipv6.h is installed on non-ipv6 platforms
 PLIST_VARS+=	inet6
@@ -69,15 +70,13 @@ PLIST.inet6=	yes
 
 RCD_SCRIPTS=		lwresd named9
 
-INSTALLATION_DIRS=	${DOCDIR} share/doc/bind9/arm share/doc/bind9/draft \
-			share/doc/bind9/rfc
+INSTALLATION_DIRS=	${DOCDIR} share/doc/bind9/arm share/doc/bind9/misc
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/NSEC3-NOTES ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/doc/arm/*.html ${DOCDIR}/arm
-	${INSTALL_DATA} ${WRKSRC}/doc/draft/draft-*.txt ${DOCDIR}/draft
-	${INSTALL_DATA} ${WRKSRC}/doc/rfc/rfc*.txt ${DOCDIR}/rfc
+	cd ${WRKSRC}/doc/misc && ${INSTALL_DATA} ${MISCDOC} ${DOCDIR}/misc
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

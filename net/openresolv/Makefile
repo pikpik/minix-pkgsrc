@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/06/13 10:59:33 roy Exp $
+# $NetBSD: Makefile,v 1.17 2012/02/16 19:33:55 hans Exp $
 #
 
 DISTNAME=		openresolv-3.4.2
@@ -11,8 +11,6 @@ MAINTAINER=		roy@NetBSD.org
 HOMEPAGE=		http://roy.marples.name/projects/openresolv/
 COMMENT=		Framework for managing /etc/resolv.conf
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# none
 HAS_CONFIGURE=		yes

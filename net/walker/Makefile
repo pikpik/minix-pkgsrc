@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/04/21 21:40:25 reed Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:57:12 wiz Exp $
 #
 
 DISTNAME=	walker-3.8
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://josefsson.org/walker/releases/
 
@@ -14,7 +15,6 @@ DEPENDS+=	p5-Net-DNS-SEC>=0.12:../../security/p5-Net-DNS-SEC
 
 INSTALLATION_DIRS+=	${PKGMANDIR}/man1 bin
 NO_BUILD=	yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 REPLACE_PERL=	walker
 USE_LANGUAGES=	# none
 USE_TOOLS+=	perl:run

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2008/11/13 14:21:05 tron Exp $
+# $NetBSD: Makefile,v 1.31 2010/01/17 12:02:24 wiz Exp $
 #
 
 DISTNAME=	mailsync_5.2.1.orig
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mailsync/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mailsync.sourceforge.net/
 COMMENT=	Mailsync is a way of synchronizing a collection of mailboxes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_TOOLS+=	gmake

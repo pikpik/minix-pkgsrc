@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2012/02/06 12:40:33 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/06 14:11:16 asau Exp $
 #
 
 DISTNAME=	pygoocanvas-0.14.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/^py//}
-PKGREVISION=	11
+PKGREVISION=	16
 CATEGORIES=	graphics python
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pygoocanvas/0.14/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/PyGoocanvas
 COMMENT=	Python bindings for GooCanvas
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
@@ -23,10 +21,6 @@ PKGCONFIG_OVERRIDE+=	pygoocanvas.pc.in
 CONFIGURE_ARGS+=	--disable-docs
 
 PY_PATCHPLIST=	yes
-
-# This restriction came from py-gtk2 and py-cairo,
-# pygoocanvas itself just require >=22.
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
 
 .include "../../lang/python/pyversion.mk"
 

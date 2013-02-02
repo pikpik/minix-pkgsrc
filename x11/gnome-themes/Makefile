@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.84 2012/02/06 12:41:58 wiz Exp $
+# $NetBSD: Makefile,v 1.90 2012/10/08 23:02:35 adam Exp $
 #
 
 DISTNAME=		gnome-themes-2.32.1
-PKGREVISION=		5
+PKGREVISION=		9
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-themes/2.32/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Collection of themes and icons for GNOME 2
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		clearlooks-metacity-[0-9]*
 
@@ -25,6 +23,6 @@ GNU_CONFIGURE=		yes
 BUILDLINK_API_DEPENDS.icon-naming-utils+=	icon-naming-utils>=0.8.90
 .include "../../graphics/icon-naming-utils/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
-BUILDLINK_API_DEPENDS.gtk2-engines+=    gtk2-engines>=2.15.3
+BUILDLINK_API_DEPENDS.gtk2-engines+=		gtk2-engines>=2.15.3
 .include "../../x11/gtk2-engines/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

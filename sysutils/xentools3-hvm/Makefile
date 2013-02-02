@@ -1,18 +1,16 @@
-# $NetBSD: Makefile,v 1.15 2011/10/03 17:01:24 sborrill Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:57:45 wiz Exp $
 #
 
 VERSION=		3.1.4
 DISTNAME=		xen-${VERSION}
 PKGNAME=		xentools3-hvm-${VERSION}
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
 
 MAINTAINER=		bouyer@NetBSD.org
 HOMEPAGE=		http://xen.org/
 COMMENT=		Tools for Virtual Machine Extensions support in Xen
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	dev86-[0-9]*:../../devel/dev86 # needed to build firmware
 

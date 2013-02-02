@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.97 2011/03/06 03:52:16 dholland Exp $
+# $NetBSD: Makefile,v 1.99 2012/10/23 10:24:18 wiz Exp $
 
 DISTNAME=	lesstif-0.95.2
 PKGREVISION=	2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.lesstif.org/
 COMMENT=	API compatible clone of the OSF/Motif toolkit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	openmotif-[0-9]*
 
@@ -70,5 +68,4 @@ post-patch:
 .include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

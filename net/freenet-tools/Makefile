@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/03/19 16:40:28 tv Exp $
+# $NetBSD: Makefile,v 1.13 2010/02/11 20:54:51 joerg Exp $
 #
 
 DISTNAME=		ft-0.2.25
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://entropy.stop1984.com/
 COMMENT=		Freenet Tools, freesite manipulation tools for Freenet and Entropy
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 

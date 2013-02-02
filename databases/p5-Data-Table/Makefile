@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2010/09/28 13:21:29 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/02 21:25:32 asau Exp $
 
-DISTNAME=	Data-Table-1.54
+DISTNAME=	Data-Table-1.65
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Data/}
 
@@ -12,7 +12,6 @@ COMMENT=	Data type related to database tables, spreadsheets, etc
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Data/Table/.packlist
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2008/03/04 06:59:03 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/06 11:54:35 asau Exp $
 
 DISTNAME=		mapit.v1-16
 PKGNAME=		dipmap-1.16
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.ugcs.caltech.edu/pub/diplomacy/Sources/
 EXTRACT_SUFX=		.tar.Z
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		njohnston@globaltetrahedron.com
 HOMEPAGE=		http://www.diplom.org/Online/mapsoftware.html
 COMMENT=		Generate postscript maps from results of play-by-email Diplomacy games
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=		makefile
 USE_TOOLS+=		csh:run

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2010/01/17 12:02:31 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/23 17:18:19 asau Exp $
 #
 
 DISTNAME=	echoping-6.0.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.internatif.org/pub/unix/echoping/ \
 		${MASTER_SITE_SOURCEFORGE:=echoping/}
@@ -10,8 +10,6 @@ MASTER_SITES=	ftp://ftp.internatif.org/pub/unix/echoping/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://echoping.sourceforge.net/
 COMMENT=	Test performance of a remote TCP service
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

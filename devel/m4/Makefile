@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.65 2011/03/16 14:31:46 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2012/10/31 11:17:27 asau Exp $
 
 DISTNAME=	m4-1.4.16
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU:=m4/}
 
@@ -11,36 +11,25 @@ COMMENT=	GNU version of UNIX m4 macro language processor
 LICENSE=	gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
 
 TEST_TARGET=		check
 
+CONFIGURE_ARGS+=	--program-prefix=g
+
 .include "../../mk/bsd.prefs.mk"
-
-.if defined(GNU_PROGRAM_PREFIX)
-CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX:Q}
-.endif
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
-BUILD_DEFS+=		GNU_PROGRAM_PREFIX
-
-PLIST_VARS+=		gm4
-
-.if !defined(GNU_PROGRAM_PREFIX) || ${GNU_PROGRAM_PREFIX} != "g"
-PLIST.gm4=		yes
-.endif
 
 .if ${LOWER_OPSYS} == "aix"
 CFLAGS+=	-D_LINUX_SOURCE_COMPAT
 .endif
 
+AUTO_MKDIRS=		yes
+
 post-install:
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/examples/m4
 	${INSTALL_DATA} ${WRKSRC}/examples/*.m4 ${DESTDIR}${PREFIX}/share/examples/m4
-.if !defined(GNU_PROGRAM_PREFIX) || ${GNU_PROGRAM_PREFIX} != "g"
-	${LN} -sf ${GNU_PROGRAM_PREFIX}m4 ${DESTDIR}${PREFIX}/bin/gm4
-.endif
+	${LN} -sf ${PREFIX}/bin/gm4 ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/m4
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gm4.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/m4.1
 
 .include "../../mk/bsd.pkg.mk"

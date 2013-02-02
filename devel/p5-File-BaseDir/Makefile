@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2010/08/24 05:35:10 seb Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 21:54:59 wiz Exp $
 
 DISTNAME=	File-BaseDir-0.03
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
 
@@ -12,7 +12,6 @@ COMMENT=	Perl module for the XDG Base Directory Specification
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_MODULE_TYPE=	Module::Build
 PERL5_PACKLIST=		auto/File/BaseDir/.packlist

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2009/11/30 18:32:53 heinz Exp $
+# $NetBSD: Makefile,v 1.36 2012/12/06 11:40:59 jperkin Exp $
 
 DISTNAME=	patch-2.5.9
+PKGREVISION=	2
 CATEGORIES=	devel
 # We keep an uncompressed tar archive of the sources on
 # ${MASTER_SITE_LOCAL} so that we won't need gzcat to extract the
@@ -17,26 +18,17 @@ COMMENT=	Patch files using diff output
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=	yes
+GNU_CONFIGURE=		yes
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(GNU_PROGRAM_PREFIX)
-CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX:Q}
-.endif
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
-BUILD_DEFS+=		GNU_PROGRAM_PREFIX
-
-PLIST_VARS+=		gpatch
-
-.if !defined(GNU_PROGRAM_PREFIX) || ${GNU_PROGRAM_PREFIX} != "g"
-PLIST.gpatch=		yes
-.endif
+CONFIGURE_ARGS+=	--program-prefix=g
 
 INSTALL_MAKE_FLAGS=	bindir=${DESTDIR}${PREFIX}/bin \
 			man1dir=${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
+
+INSTALLATION_DIRS=	${PKGGNUDIR}bin ${PKGGNUDIR}${PKGMANDIR}/man1
 
 do-patch:
 	${MV} ${WRKSRC}/pch.c ${WRKSRC}/pch.c.orig
@@ -47,9 +39,11 @@ do-patch:
 		< ${WRKSRC}/pch.c.orig 					\
 		> ${WRKSRC}/pch.c
 
-.if !defined(GNU_PROGRAM_PREFIX) || ${GNU_PROGRAM_PREFIX} != "g"
+SYMLINKS	= bin/gpatch ${PKGGNUDIR}bin/patch \
+		man/man1/gpatch.1 ${PKGGNUDIR}${PKGMANDIR}/man1/patch.1
 post-install:
-	${LN} -sf ${GNU_PROGRAM_PREFIX}patch ${DESTDIR}${PREFIX}/bin/gpatch
-.endif
+.for o n in ${SYMLINKS}
+	${LN} -sf ${PREFIX}/${o} ${DESTDIR}${PREFIX}/${n}
+.endfor
 
 .include "../../mk/bsd.pkg.mk"

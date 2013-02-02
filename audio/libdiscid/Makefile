@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/09/20 21:40:37 sno Exp $
+# $NetBSD: Makefile,v 1.7 2011/03/27 07:28:24 obache Exp $
 
 DISTNAME=	libdiscid-0.2.2
 CATEGORIES=	audio
@@ -17,6 +17,5 @@ USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
 
 PKGCONFIG_OVERRIDE+=	libdiscid.pc.in
-PKG_DESTDIR_SUPPORT= user-destdir
 
 .include "../../mk/bsd.pkg.mk"

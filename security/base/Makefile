@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2010/09/30 10:49:13 obache Exp $
+# $NetBSD: Makefile,v 1.29 2012/09/15 15:03:25 obache Exp $
 #
 
 DISTNAME=	base-1.4.3.1
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=secureideas/}
 
@@ -12,7 +12,7 @@ COMMENT=	Analysis engine to process a database of security events
 
 PKG_DESTDIR_SUPPORT=	destdir
 
-.include "../../mk/apachever.mk"
+.include "../../mk/apache.mk"
 .include "../../lang/php/phpversion.mk"
 
 DEPENDS+=	adodb>=4.96a:../../databases/adodb

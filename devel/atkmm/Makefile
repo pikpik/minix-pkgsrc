@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2012/02/06 12:39:46 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:54:27 wiz Exp $
 
 DISTNAME=	atkmm-2.22.6
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/atkmm/${PKGVERSION_NOREV:R}/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ COMMENT=	C++ bindings for atk
 LICENSE=	gnu-lgpl-v2.1 AND gnu-gpl-v2
 
 CONFLICTS+=	gtkmm<2.22.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		autoconf gmake perl pkg-config
 USE_LIBTOOL=		yes

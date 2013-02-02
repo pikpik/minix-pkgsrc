@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.15 2010/08/21 16:35:50 seb Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:57:47 wiz Exp $
 #
 
 DISTNAME=	dtdparse-2.0beta6
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=dtdparse/}
 
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://dtdparse.sourceforge.net/
 COMMENT=	Reads an SGML or XML DTD and constructs an XML database
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-XML-Parser-[0-9]*:../../textproc/p5-XML-Parser
 DEPENDS+=	p5-XML-DOM-[0-9]*:../../textproc/p5-XML-DOM

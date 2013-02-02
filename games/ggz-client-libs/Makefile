@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.7 2009/07/22 09:01:28 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/09/23 10:47:46 obache Exp $
 #
 
 DISTNAME=	ggz-client-libs-0.0.14.1
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	games
 MASTER_SITES=	http://mirrors.ibiblio.org/pub/mirrors/ggzgamingzone/ggz/0.0.14.1/
 
 MAINTAINER=	mrohrer@users.sourceforge.net
 HOMEPAGE=	http://www.ggzgamingzone.org/
 COMMENT=	GGZ Gaming Zone libraries
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2012/02/28 18:43:43 drochner Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/23 17:18:25 asau Exp $
 #
 
 GST_PLUGINS0.10_NAME=	soup
 GST_PLUGINS0.10_DIRS=	ext/soup
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		4
 
 .include "../../multimedia/gst-plugins0.10-good/Makefile.common"
-PKGREVISION=1
 
 .include "../../net/libsoup24/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

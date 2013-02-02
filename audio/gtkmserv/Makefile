@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/05/05 18:43:30 zafer Exp $
+# $NetBSD: Makefile,v 1.20 2011/04/22 13:42:54 obache Exp $
 #
 
 DISTNAME=	gtkmserv-0.5.2
@@ -9,9 +9,6 @@ MASTER_SITES=	# http://projects.ubertechnique.com/downloads/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://projects.ubertechnique.com/index.html
 COMMENT=	Gtk-based GUI client for the audio/mserv package
-
-PKG_DESTDIR_SUPPORt=	user-destdir
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 GNU_CONFIGURE=		YES

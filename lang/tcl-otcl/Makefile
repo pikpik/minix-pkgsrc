@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.20 2007/04/26 15:28:42 minskim Exp $
+# $NetBSD: Makefile,v 1.23 2012/09/28 10:02:21 sbd Exp $
 
-DISTNAME=	otcl-src-1.13
+DISTNAME=	otcl-src-1.14
 PKGNAME=	tcl-${DISTNAME:S/-src//}
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=otcl-tclcl/}
@@ -10,15 +10,19 @@ HOMEPAGE=	http://otcl-tclcl.sourceforge.net/otcl/
 COMMENT=	MIT Object Tcl
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-src//}
 
+.include "../../lang/tcl/Makefile.version"
+.include "../../x11/tk/Makefile.version"
+
 CONFIGURE_ARGS+=	V_LIBS="`${CONFIG_SHELL} -c '. ${TCLCONFIG_SH}; ${ECHO} $$TCL_LIBS'`"
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}
 CONFIGURE_ARGS+=	--with-tk=${BUILDLINK_PREFIX.tk}
+CONFIGURE_ARGS+=	--with-tcl-ver=${TCL_VERSION}
+CONFIGURE_ARGS+=	--with-tk-ver=${TK_VERSION}
 
 CPPFLAGS+=	-I${BUILDLINK_PREFIX.tcl}/include/tcl/generic
 

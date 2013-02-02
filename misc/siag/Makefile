@@ -1,16 +1,17 @@
-# $NetBSD: Makefile,v 1.56 2009/12/15 21:58:38 joerg Exp $
+# $NetBSD: Makefile,v 1.59 2012/10/21 11:35:51 cheusov Exp $
 #
 
-DISTNAME=       siag-3.6.1
-PKGREVISION=    3
-CATEGORIES=     misc editors math textproc
-MASTER_SITES=   http://siag.nu/pub/siag/
+DISTNAME=	siag-3.6.1
+PKGREVISION=	4
+CATEGORIES=	misc editors math textproc
+MASTER_SITES=	http://siag.nu/pub/siag/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=       http://siag.nu/
+HOMEPAGE=	http://siag.nu/
 COMMENT=	Poor man's office suite with spreadsheet, word processor, etc
+LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+CONFLICTS=	siod-[0-9]*
 
 #DEPENDS+=	gv>=3.5.8nb1:../../print/gv
 #DEPENDS+=	gnuplot>=3.7:../../graphics/gnuplot
@@ -18,7 +19,7 @@ PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-x
 CONFIGURE_ARGS+=--with-guile
-CONFIGURE_ARGS+=--with-docdir=${PREFIX:Q}/share/doc/siag
+CONFIGURE_ARGS+=--with-docdir=${PREFIX}/share/doc/siag
 USE_TOOLS+=	gmake
 
 .include "../../mk/bsd.prefs.mk"

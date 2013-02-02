@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2008/03/04 06:59:04 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2011/04/22 13:43:37 obache Exp $
 #
 
 DISTNAME=	icebreaker-1.9.7
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mattdm.org/icebreaker/
 COMMENT=	Penguin capturing simulation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 MAKE_ENV+=	mandir="${PREFIX}/man" highscoredir="/var/games"

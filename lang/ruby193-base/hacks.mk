@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: hacks.mk,v 1.3 2012/06/02 02:14:39 taca Exp $
 
-.if !defined(RUBY19_BASE_HACKS_MK)
+.if !defined(RUBY193_BASE_HACKS_MK)
 RUBY19_BASE_HACKS_MK=	defined
 
 .include "../../mk/compiler.mk"
@@ -16,6 +16,22 @@ RUBY19_BASE_HACKS_MK=	defined
 PKG_HACKS+=		optimisation
 BUILDLINK_TRANSFORM+=	rm:-O[0-9]*
 .  endif
+### ruby193 binary built on NetBSD/sparc64 with gcc 4.5.1 and the default -O2
+### dumps core during generating RDocs.
+### Using -O1 works around.
+.  if !empty(CC_VERSION:Mgcc-4.5.*)
+PKG_HACKS+=		optimisation
+BUILDLINK_TRANSFORM+=	rename:-O2:-O1
+.  endif
 .endif
 
-.endif	# RUBY19_BASE_HACKS_MK
+# On NetBSD/sh3el 6.0, the default -Os causes an error on compiling node.c:
+#  {standard input}: Assembler messages: {standard input}:1458: \
+#  Error: pcrel too far
+# and -O1 works around.
+.if !empty(MACHINE_PLATFORM:MNetBSD-*-sh3*) && !empty(CC_VERSION:Mgcc-4.5.*)
+PKG_HACKS+=		optimisation
+BUILDLINK_TRANSFORM+=	rename:-Os:-O1 rm:-freorder-blocks
+.endif
+
+.endif	# RUBY193_BASE_HACKS_MK

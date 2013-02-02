@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2011/04/24 15:31:09 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/12 00:24:36 asau Exp $
 #
 
 GST_PLUGINS0.10_NAME=	cdparanoia
 GST_PLUGINS0.10_DIRS=	ext/cdparanoia
 GST_PLUGINS0.10_FLAGS=	cdparanoia
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		2
 
 .include "../../multimedia/gst-plugins0.10-base/Makefile.common"
 

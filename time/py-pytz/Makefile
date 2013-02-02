@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2012/01/20 13:42:01 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/21 20:42:23 wiz Exp $
 #
 
-DISTNAME=	pytz-2012b
+DISTNAME=	pytz-2012h
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	time python
 MASTER_SITES=	http://pypi.python.org/packages/source/p/pytz/
@@ -12,12 +12,12 @@ HOMEPAGE=	http://pytz.sourceforge.net/
 COMMENT=	World timezone definitions, modern and historical
 LICENSE=	mit
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	# none
 
-# py-setuptools needed, but not available; package itself is ready
-#PYTHON_VERSIONS_INCLUDE_3X=	yes
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
+REPLACE_PYTHON=	pytz/tzfile.py
+
+.include "../../lang/python/application.mk"
 .include "../../lang/python/egg.mk"
 .include "../../mk/bsd.pkg.mk"

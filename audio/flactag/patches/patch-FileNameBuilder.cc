@@ -1,10 +1,10 @@
 $NetBSD$
 
---- FileNameBuilder.cc.orig	2012-02-04 08:44:33.120854935 +0000
+--- FileNameBuilder.cc.orig	2012-10-19 21:40:21.000000000 +0000
 +++ FileNameBuilder.cc
-@@ -27,6 +27,7 @@
- #include "FileNameBuilder.h"
+@@ -30,6 +30,7 @@
  
+ #include <stdio.h>
  #include <stdlib.h>
 +#include <cstdio>
  

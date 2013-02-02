@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2012/01/18 14:47:13 adam Exp $
+# $NetBSD: Makefile,v 1.33 2012/12/24 12:53:17 ryoon Exp $
 
 DISTNAME=	mdocml-1.12.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://mdocml.bsd.lv/snapshots/
 
@@ -10,8 +10,9 @@ HOMEPAGE=	http://mdocml.bsd.lv/
 COMMENT=	Man page tool (mdoc macro compiler)
 LICENSE=	2-clause-bsd # not exactly, but near enough
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_FLAGS+=		PREFIX=${PREFIX} DBLIB=${BDB_LIBS:Q}
+
+CONFLICTS=		man-pages-[0-9]* groff-[0-9]*
 
 .include "../../mk/bdb.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

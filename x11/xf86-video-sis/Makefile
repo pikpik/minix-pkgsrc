@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/10/25 12:15:55 tnn Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/27 10:06:31 jperkin Exp $
 #
 
 DISTNAME=	xf86-video-sis-0.10.2
@@ -11,17 +11,23 @@ MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/
 COMMENT=	Modular Xorg SiS and XGI video driver
 
-PKG_DESTDIR_SUPPORT=    user-destdir
-
 CONFIGURE_ARGS+=	--enable-dri
 
-USE_LIBTOOL=    yes
-GNU_CONFIGURE=  yes
-USE_TOOLS+=     pkg-config
+USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
+USE_TOOLS+=	pkg-config
 
-.include "../../mk/compiler.mk"
-.if empty(PKGSRC_COMPILER:Mgcc)
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(PKGSRC_COMPILER:Mclang)
+BUILD_DEPENDS+=		ucpp-[0-9]*:../../devel/ucpp
+CONFIGURE_ENV+=		ac_cv_path_RAWCPP="${PREFIX}/bin/ucpp -t -c90 -Uunix"
+.elif empty(PKGSRC_COMPILER:Mgcc)
 CONFIGURE_ENV+=		ac_cv_path_RAWCPP="cc -E -Uunix -"
+.endif
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4
 .endif
 
 .include "../../graphics/MesaLib/buildlink3.mk"

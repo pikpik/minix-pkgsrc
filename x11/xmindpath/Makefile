@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/05/12 21:11:14 zafer Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/23 10:24:22 wiz Exp $
 
 DISTNAME=	magicpoint-1.09a
 PKGNAME=	xmindpath-1.09a
@@ -6,12 +6,9 @@ PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.riken.go.jp/pub/misc/Japan/MagicPoint/ \
 				ftp://ftp.icm.edu.pl/packages/mgp/
-				
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	MindPath PocketPoint user-level driver for X11
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/contrib/xmindpath
 GNU_CONFIGURE=	yes
@@ -39,5 +36,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXtst/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

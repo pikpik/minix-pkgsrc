@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:41:31 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/23 19:50:53 asau Exp $
 #
 
 DISTNAME=	brasero-2.32.1
 PKGNAME=	brasero-nautilus-2.32.1
-PKGREVISION=	6
+PKGREVISION=	15
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/brasero/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://projects.gnome.org/brasero/
 COMMENT=	Nautilus plugin for brasero
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTINFO_FILE=	${.CURDIR}/../brasero/distinfo
 PATCHDIR=	${.CURDIR}/../brasero/patches

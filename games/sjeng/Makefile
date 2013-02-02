@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/08/23 13:06:49 obache Exp $
+# $NetBSD: Makefile,v 1.18 2012/01/24 09:11:04 sbd Exp $
 
 DISTNAME=	Sjeng-Free-11.0
 PKGNAME=	sjeng-11.0
@@ -10,8 +10,6 @@ MASTER_SITES=	http://sjeng.sourceforge.net/ftp/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sjeng.org/
 COMMENT=	Engine for chess variations (bughouse, suicide, etc.)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++

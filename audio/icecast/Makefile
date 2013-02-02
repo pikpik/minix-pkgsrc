@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.49 2010/01/17 12:02:05 wiz Exp $
+# $NetBSD: Makefile,v 1.52 2012/09/12 00:24:39 asau Exp $
 #
 
 DISTNAME=		icecast-2.3.2
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		audio
 MASTER_SITES=		http://downloads.xiph.org/releases/icecast/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 HOMEPAGE=		http://www.icecast.org/
 COMMENT=		Live streaming audio server
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

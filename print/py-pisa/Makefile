@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/02/10 15:30:27 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2011/04/15 09:00:57 adam Exp $
 
 DISTNAME=	pisa-3.0.33
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
@@ -9,8 +9,6 @@ MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.htmltopdf.org/
 COMMENT=	HTML2pdf converter
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-Pdf-[0-9]*:../../print/py-Pdf
 DEPENDS+=	${PYPKGPREFIX}-reportlab>=2.2:../../print/py-reportlab

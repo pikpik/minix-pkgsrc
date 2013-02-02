@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2006/07/27 18:48:04 jlam Exp $
+# $NetBSD: Makefile,v 1.10 2008/06/12 02:14:47 joerg Exp $
 #
 
 DISTNAME=	GutenMark-words-20030107
@@ -9,8 +9,6 @@ DISTFILES=	${WORDLISTS} GutenMark.cfg
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sandroid.org/GutenMark/
 COMMENT=	Word lists for GutenMark
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WORDLISTS=	special.words.gz english.names.gz US.places.gz \
 		french.names.gz english.words.gz french.words.gz \

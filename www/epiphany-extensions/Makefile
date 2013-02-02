@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.70 2012/03/03 00:14:05 wiz Exp $
+# $NetBSD: Makefile,v 1.79 2012/12/15 10:36:33 ryoon Exp $
 #
 
 DISTNAME=	epiphany-extensions-2.32.0
-PKGREVISION=	8
+PKGREVISION=	16
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/epiphany-extensions/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/epiphany/extensions.html
 COMMENT=	Extensions for the Epiphany web browser
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake intltool msgfmt pkg-config

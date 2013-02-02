@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.125 2012/03/20 00:56:40 markd Exp $
+# $NetBSD: Makefile,v 1.127 2012/05/02 12:19:59 wiz Exp $
 #
 
 COMMENT=	Archivers
@@ -35,6 +35,7 @@ SUBDIR+=	jamjar
 SUBDIR+=	lbrate
 SUBDIR+=	lcab
 SUBDIR+=	lha
+SUBDIR+=	lhasa
 SUBDIR+=	libarchive
 SUBDIR+=	libcomprex
 SUBDIR+=	liblzo
@@ -51,6 +52,7 @@ SUBDIR+=	mousetar
 SUBDIR+=	mscompress
 SUBDIR+=	nomarch
 SUBDIR+=	nulib2
+SUBDIR+=	ocaml-bz2
 SUBDIR+=	ocaml-zip
 SUBDIR+=	p5-Archive-Any
 SUBDIR+=	p5-Archive-Peek

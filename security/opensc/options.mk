@@ -1,7 +1,11 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.2 2012/11/30 14:44:34 gdt Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.opensc
-PKG_SUPPORTED_OPTIONS=	openct pcsc-lite
+
+# Arguably these should be selectable individually, but upstream requires
+# that exactly one be chosen.
+PKG_OPTIONS_REQUIRED_GROUPS=	cardreader
+PKG_OPTIONS_GROUP.cardreader=	pcsc-lite openct
 PKG_SUGGESTED_OPTIONS=	pcsc-lite
 
 .include "../../mk/bsd.options.mk"

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.22 2011/08/14 16:05:58 obache Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 21:58:49 wiz Exp $
 #
 
 DISTNAME=	HTTP-Request-Form-0.952
 PKGNAME=	p5-${DISTNAME:S/952/9.5.2/}
-PKGREVISION=	4
+PKGREVISION=	5
 SVR4_PKGNAME=	p5htt
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTTP/}
@@ -11,8 +11,6 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTTP/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/HTTP-Request-Form/
 COMMENT=	Construct HTTP::Request objects for form processing
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-libwww-[0-9]*:../../www/p5-libwww
 DEPENDS+=	p5-URI-[0-9]*:../../www/p5-URI

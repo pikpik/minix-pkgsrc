@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2012/03/10 03:27:07 ryoon Exp $
+# $NetBSD: Makefile,v 1.16 2012/11/23 17:35:08 ryoon Exp $
 #
 
-SM_VER=		2.8
+SM_VER=		2.14.1
 PKGNAME=	seamonkey-l10n-${SM_VER}
 DISTNAME=	# empty
 CATEGORIES=	www
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_MOZILLA:=seamonkey/releases/${SM_VER}/langpack/}
 MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://www.seamonkey-project.org/
 COMMENT=	Language packs for www/seamonkey
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=	${PKGNAME_NOREV}
 DISTFILES=	${XPI_FILES}

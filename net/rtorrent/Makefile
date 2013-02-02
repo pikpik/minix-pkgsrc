@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.48 2012/03/06 18:24:15 elric Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/23 17:19:06 asau Exp $
 
-DISTNAME=	rtorrent-0.8.9
-PKGREVISION=	2
+DISTNAME=	rtorrent-0.9.2
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE:=downloads/}
 
@@ -9,8 +9,6 @@ OWNER=		tron@NetBSD.org
 HOMEPAGE=	http://libtorrent.rakshasa.no/
 COMMENT=	Ncurses based torrent client with support for sessions
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -32,10 +30,6 @@ GCC_REQD+=		4.2.1
 LDFLAGS+=	${PTHREAD_LDFLAGS}
 
 .include "options.mk"
-
-.if !empty(OPSYS:M*BSD) || ${OPSYS} == "Darwin" || ${OPSYS} == "DragonFly"
-MESSAGE_SRC=	${PKGDIR}/MESSAGE.BSD
-.endif
 
 # See http://libtorrent.rakshasa.no/ticket/77
 .include "../../mk/compiler.mk"

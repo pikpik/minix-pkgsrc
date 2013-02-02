@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.43 2010/02/12 20:58:37 joerg Exp $
+# $NetBSD: Makefile,v 1.44 2010/02/20 14:58:44 joerg Exp $
 #
 # There are a few more mod_auth_cookie's out there doing slightly
 # different things.  This one pkg would be a good place to dump them all in
@@ -13,8 +13,6 @@ EXTRACT_SUFX=	# empty
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://raburton.lunarpages.com/apache/mod_auth_cookie/
 COMMENT=	Cookie-based authentication for Apache
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ap-auth-cookie-[0-9]*
 

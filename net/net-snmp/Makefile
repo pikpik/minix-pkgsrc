@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.86 2011/05/30 10:21:43 tron Exp $
+# $NetBSD: Makefile,v 1.92 2012/10/23 17:18:40 asau Exp $
 
 DISTNAME=	net-snmp-5.6.1.1
-PKGREVISION=	2
+PKGREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=net-snmp/}
 
@@ -13,8 +13,6 @@ LICENSE=	modified-bsd
 CONFLICTS=	ucd-snmp-[0-9]*
 CONFLICTS+=	nocol-[0-9]*	# bin/snmpget bin/snmpwalk
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 
@@ -24,6 +22,9 @@ MAKE_JOBS_SAFE=	no
 .include "../../mk/bsd.prefs.mk"
 
 .include "options.mk"
+
+# Don't compress manual pages as they include each other.
+.undef MANZ
 
 .if ${OPSYS} == "DragonFly"
 MAKE_ENV+=	MIB_SYSTEM_LIBS=-lkinfo
@@ -68,7 +69,7 @@ CONFIGURE_ARGS+=	--with-persistent-directory=${NET_SNMP_PERSISTENTDIR}
 .if !empty(NET_SNMP_MIBDIRS)
 CONFIGURE_ARGS+=	--with-mibdirs=${NET_SNMP_MIBDIRS:Q}
 .endif
-.if ${OPSYS} == "NetBSD"
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "SunOS"
 CONFIGURE_ARGS+=	--with-mib-modules="smux host ucd-snmp/diskio"
 .else
 CONFIGURE_ARGS+=	--with-mib-modules="smux host"

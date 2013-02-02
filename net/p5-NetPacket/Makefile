@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2011/11/17 14:13:04 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:57:06 wiz Exp $
 
 DISTNAME=	NetPacket-1.3.1
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=NetPacket/}
 
@@ -13,7 +14,6 @@ LICENSE=	${PERL5_LICENSE} # source doc wins over changelog
 USE_LANGUAGES=	c
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/NetPacket/.packlist
 PERL5_MODULE_TYPE=	Module::Build

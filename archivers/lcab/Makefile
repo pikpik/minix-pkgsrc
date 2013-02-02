@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/05/22 18:25:20 zafer Exp $
+# $NetBSD: Makefile,v 1.12 2010/10/04 07:59:17 plunky Exp $
 #
 
 DISTNAME=		lcab-1.0b12
@@ -10,7 +10,6 @@ HOMEPAGE=		http://ohnopub.net/~ohnobinki/lcab
 COMMENT=		Microsoft cabinet (.CAB) file creator
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.9 2012/03/03 00:13:01 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/08 23:01:25 adam Exp $
 
-DISTNAME=		TeXmacs-1.0.7.14-src
+DISTNAME=		TeXmacs-1.0.7.16-src
 PKGNAME=		${DISTNAME:S/-src//}
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		editors
 MASTER_SITES=		ftp://ftp.texmacs.org/TeXmacs/tmftp/source/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.texmacs.org/
 COMMENT=		GNU TeXmacs (free scientific text editor)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		TEXMACS
 
@@ -50,6 +48,10 @@ REPLACE_SH+=		plugins/xypic/bin/tm_xypic
 REPLACE_PERL+=		plugins/asymptote/bin/perl-tm_asy
 REPLACE_PERL+=		plugins/asymptote/bin/tm_asy2
 
+post-extract:
+	${RM} -f ${WRKSRC}/plugins/eukleides/bin/tm_eukleides.old
+	${RM} -f ${WRKSRC}/plugins/maxima/bin/maxima_filter
+
 pre-install:
 	${RM} -f ${WRKSRC}/TeXmacs/doc/devel/format/.log
 	${FIND} ${WRKSRC}/plugins/ -name '*.orig' | ${XARGS} ${RM} -f
@@ -68,10 +70,13 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../lang/guile/buildlink3.mk"
 .include "../../lang/python/application.mk"
-.include "../../mk/tex.buildlink3.mk"
+#.include "../../mk/tex.buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.include "../../databases/shared-mime-info/mimedb.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
+.include "../../graphics/gnome-icon-theme/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

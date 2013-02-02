@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2009/04/19 08:19:37 rh Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/22 21:37:02 rh Exp $
 #
 
 DISTNAME=	cddb.bundle-0.2
 PKGNAME=	${DISTNAME:S/./-/}
-PKGREVISION=	3
+PKGREVISION=	5
 CATEGORIES=	audio gnustep
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gsburn/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gsburn.sourceforge.net/
 COMMENT=	CDDB client bundle
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/cddb.bundle
 NO_CONFIGURE=	yes

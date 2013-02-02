@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2012/02/06 12:40:29 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/06 14:11:03 asau Exp $
 
 DISTNAME=	libexif-gtk-0.3.5
-PKGREVISION=	13
+PKGREVISION=	17
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libexif/}
 EXTRACT_SUFX=	.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://libexif.sourceforge.net/
 COMMENT=	EXIF file library (GTK2 interface)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 USE_PKGLOCALEDIR=	YES

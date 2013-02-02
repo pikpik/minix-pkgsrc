@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.210 2012/02/06 12:40:23 wiz Exp $
+# $NetBSD: Makefile,v 1.226 2012/11/23 15:43:13 drochner Exp $
 
-DISTNAME=	gimp-2.6.12
-PKGREVISION=	2
+DISTNAME=	gimp-2.8.2
+PKGREVISION=	8
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/v2.6/ \
-		${MASTER_SITE_GNU:=gimp/v2.6/} \
-		ftp://ftp.gwdg.de/pub/misc/grafik/gimp/gimp/v2.6/
+MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/v${PKGVERSION_NOREV:R}/ \
+		${MASTER_SITE_GNU:=gimp/v${PKGVERSION_NOREV:R}/} \
+		ftp://ftp.gwdg.de/pub/misc/grafik/gimp/gimp/v${PKGVERSION_NOREV:R}/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
@@ -14,46 +14,36 @@ COMMENT=	The GNU image manipulation program
 LICENSE=	gnu-lgpl-v2.1 AND gnu-gpl-v2
 
 BUILD_DEPENDS+=	p5-XML-Parser>=2.31nb1:../../textproc/p5-XML-Parser
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-CONFLICTS+=		gimp<=1.2.3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+CONFLICTS+=	gimp<=1.2.3
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
-
-PKG_SYSCONFSUBDIR=	gimp/2.0
-
-PKGCONFIG_OVERRIDE=	gimp.pc.in
-
-.include "../../mk/bsd.prefs.mk"
-
-BUILDLINK_API_DEPENDS.fontconfig+=	fontconfig>=2.2.0
-BUILDLINK_API_DEPENDS.lcms+=		lcms>=1.12
-
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-perl
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--without-linux-input
+CONFIGURE_ARGS+=	--without-mac-twain
 
+PKG_SYSCONFSUBDIR=	gimp/2.0
+PKGCONFIG_OVERRIDE=	gimp.pc.in
 UNLIMIT_RESOURCES+=	datasize
 
+.include "../../mk/bsd.prefs.mk"
+
 EGDIR=			${PREFIX}/share/examples/gimp-2.0
-.for f in controllerrc gimprc gtkrc menurc ps-menurc sessionrc templaterc unitrc
+.for f in controllerrc gimprc gtkrc menurc sessionrc templaterc unitrc
 CONF_FILES+=		${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .endfor
 
 # Ensure we export symbols in the linked shared object.
 LDFLAGS+=		${EXPORT_SYMBOLS_LDFLAGS}
 
-PLIST_VARS+=		remote twain
-.if exists(/System/Library/Frameworks/TWAIN.framework)
-PLIST.twain=		yes
-.endif
+PLIST_VARS+=		remote
+
+BUILDLINK_API_DEPENDS.fontconfig+=	fontconfig>=2.2.0
+BUILDLINK_API_DEPENDS.lcms+=		lcms>=1.12
 
 .include "options.mk"
 

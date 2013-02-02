@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.70 2010/10/28 23:21:52 tron Exp $
+# $NetBSD: Makefile,v 1.72 2012/10/03 21:57:16 wiz Exp $
 
 DISTNAME=		a2ps-4.14
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_GNU:=a2ps/} \
 			ftp://ftp.enst.fr/pub/unix/a2ps/
@@ -11,8 +11,6 @@ HOMEPAGE=		http://www-inf.enst.fr/~demaille/a2ps/
 COMMENT=		Formats an ascii file for printing on a postscript printer
 
 DEPENDS+=		psutils>=1.17:../../print/psutils
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 STRIP=			# empty
 

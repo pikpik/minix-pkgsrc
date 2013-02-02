@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.79 2011/12/14 02:03:25 sbd Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/03 21:54:27 wiz Exp $
 
-DISTNAME=		autoconf-2.68
-PKGREVISION=		2
+DISTNAME=		autoconf-2.69
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU:=autoconf/}
 
@@ -23,7 +23,6 @@ CONFLICTS+=		gdb<5.3
 CONFLICTS+=		gdb>6<6.2.1nb5
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 GNU_CONFIGURE=		YES

@@ -1,29 +1,22 @@
-# $NetBSD: Makefile,v 1.3 2012/02/29 16:32:20 hans Exp $
+# $NetBSD: Makefile,v 1.13 2013/01/26 21:37:06 adam Exp $
 #
 
-DISTNAME=	LibreCAD-LibreCAD-v1.0.0-0-g22839a7
-PKGNAME=	librecad-1.0.0
-PKGREVISION=	3
+DISTNAME=	LibreCAD-LibreCAD-v1.0.2-0-ga6826ad
+PKGNAME=	librecad-1.0.2
+PKGREVISION=	6
 CATEGORIES=	cad
-MASTER_SITES=	-https://github.com/LibreCAD/LibreCAD/zipball/v1.0.0
-EXTRACT_SUFX=	.zip
+MASTER_SITES=	-http://nodeload.github.com/LibreCAD/LibreCAD/legacy.tar.gz/v1.0.2
 
 MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://librecad.org/
 COMMENT=	Free Open Source personal CAD application
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-# Force using "curl" for fetching the distribution file. It is only available
-# over HTTPS and "curl" is the only fetch program which always supports HTTPS.
-FETCH_USING=	curl
-
-WRKSRC=		${WRKDIR}/LibreCAD-LibreCAD-2d7f866
+WRKSRC=		${WRKDIR}/LibreCAD-LibreCAD-a5c34b2
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	pax
+USE_TOOLS+=	bash pax
 
-REPLACE_SH=	scripts/postprocess-unix.sh
+REPLACE_BASH=	scripts/postprocess-unix.sh
 
 SUBST_CLASSES+=		qtdir
 SUBST_STAGE.qtdir=	pre-configure
@@ -52,6 +45,7 @@ do-install:
 		${DESTDIR}${PREFIX}/${LIBRECADDIR}
 
 .include "../../devel/boost-libs/buildlink3.mk"
+.include "../../math/muparser/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
 BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../x11/qt4-tools/buildlink3.mk"

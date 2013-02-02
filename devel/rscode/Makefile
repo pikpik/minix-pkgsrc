@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/04/18 18:09:36 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/31 11:19:40 asau Exp $
 #
 
 DISTNAME=	rscode-1.0
@@ -9,9 +9,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rscode.sourceforge.net/
 COMMENT=	Reed Solomon error correction code library
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 INSTALLATION_DIRS=	bin lib share/doc/rscode
+
+MAKE_JOBS_SAFE=	no
 
 do-install:
 	${INSTALL_LIB} ${WRKSRC}/libecc.a ${DESTDIR}${PREFIX}/lib/

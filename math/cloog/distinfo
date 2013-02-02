@@ -1,0 +1,6 @@
+$NetBSD$
+
+SHA1 (cloog-0.16.2.tar.gz) = 3bdccfe24e5bd5850cbd28eec70c6aeaa94747ab
+RMD160 (cloog-0.16.2.tar.gz) = 2b915298832aa7cbd584a4f6f4991b2d931b773e
+Size (cloog-0.16.2.tar.gz) = 1850841 bytes
+SHA1 (patch-isl_Makefile.in) = af18659c4f7d0b7765f905e79ad08cb9858d0d1f

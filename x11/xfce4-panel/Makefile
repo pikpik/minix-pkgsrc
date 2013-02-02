@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2012/02/06 12:42:29 wiz Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.52 2012/10/08 23:00:59 adam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
-PKGREVISION=		9
+PKGREVISION=		15
 
 XFCE4_VERSION=		4.6.2
 
@@ -25,10 +23,10 @@ MAKE_DIRS+=	${XFCE4_EGBASE:Q} ${PREFIX}/share/xfce4
 MAKE_DIRS+=	${PREFIX}/share/xfce4/doc ${PREFIX}/share/xfce4/doc/C
 MAKE_DIRS+=	${PREFIX}/share/xfce4/doc/C/images
 OWN_DIRS+=	${PKG_SYSCONFDIR}
-OWN_DIRS+=	${PREFIX}/libexec/xfce4/panel-plugins
+OWN_DIRS+=	${PREFIX}/share/xfce4/panel-plugins
 # The following are not used in this pkg, but here is a good place to rmdir them
 MAKE_DIRS+=	${PREFIX}/libexec/xfce4
-OWN_DIRS+=	${PREFIX}/share/xfce4/panel-plugins
+MAKE_DIRS+=	${PREFIX}/libexec/xfce4/panel-plugins
 
 .for f in clock-14.rc launcher-10.rc launcher-7.rc launcher-8.rc launcher-9.rc \
 	panels.xml systray-4.rc xfce4-menu-5.rc

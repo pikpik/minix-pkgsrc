@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2010/09/10 06:02:57 taca Exp $
+# $NetBSD: Makefile,v 1.10 2012/05/20 17:32:34 marino Exp $
 
 DISTNAME=	ncurses-ruby-${VER}
 PKGNAME=	${RUBY_PKGPREFIX}-ncurses-${VER}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://download.berlios.de/ncurses-ruby/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,6 @@ LICENSE=	gnu-lgpl-v2.1 OR gnu-lgpl-v3
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ncurses-ruby.berlios.de/
 COMMENT=	Ruby interface to ncurses
-
-PKG_DESTDIR_SUPPORT?=	user-destdir
 
 VER=			1.2.4
 USE_NCURSES=		YES	# mouse functions

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/06/30 10:25:14 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2012/04/08 19:08:47 wiz Exp $
 
 DISTNAME=	pycassa-0.3.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/^py//}
@@ -10,9 +10,6 @@ MAINTAINER=	tonnerre@NetBSD.org
 HOMEPAGE=	http://github.com/vomjom/pycassa/
 COMMENT=	Python client library for Cassandra
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
 PYDISTUTILSPKG=		yes
 
 .include "../../lang/python/extension.mk"

@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.21 2012/03/03 00:13:42 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/08 23:02:13 adam Exp $
 #
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../multimedia/totem/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/totem/totem-nautilus/}
-PKGREVISION=	7
+PKGREVISION=	16
 
 # override Makefile.common
 PLIST_SRC=      ${.CURDIR}/PLIST
@@ -14,8 +12,6 @@ GCONF_SCHEMAS=	# none
 CONFIGURE_ARGS+= --with-plugins=properties
 
 COMMENT+=	(nautilus plugin)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	lib/nautilus/extensions-2.0
 

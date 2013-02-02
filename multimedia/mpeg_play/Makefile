@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2006/12/27 13:37:39 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/08 09:21:09 asau Exp $
 
 DISTNAME=	mpeg_play-2.4-patched
 PKGNAME=	mpeg_play-2.4patched
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bmrc.berkeley.edu/research/mpeg/mpeg_play.html
 COMMENT=	Program to play mpeg movies on X displays
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=		${WRKDIR}/mpeg_play
 USE_IMAKE=	yes
 
@@ -21,5 +19,4 @@ pre-configure:
 	${MV} -f ${WRKSRC}/mpeg_play.1 ${WRKSRC}/mpeg_play.man
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

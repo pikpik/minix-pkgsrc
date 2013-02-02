@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.15 2010/08/21 16:35:19 seb Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:56:49 wiz Exp $
 #
 
 DISTNAME=	acidrip-0.14
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=acidrip/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://untrepid.com/acidrip/
 COMMENT=	Gtk2::Perl application for ripping and encoding DVDs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	lsdvd-[0-9]*:../../multimedia/lsdvd
 DEPENDS+=	mencoder-[0-9]*:../../multimedia/mencoder

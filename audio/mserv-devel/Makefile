@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2009/08/10 11:32:40 drochner Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/02 23:48:00 asau Exp $
 #
 
 DISTNAME=	mserv-0.39a
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mserv/}
 
@@ -20,7 +20,6 @@ REPLACE_PERL=		support/mservedit webclient/main.cgi \
 USE_TOOLS+=		perl:run pkg-config
 
 INSTALLATION_DIRS+= share/doc/mserv share/mserv/webclient
-PKG_DESTDIR_SUPPORT= user-destdir
 
 post-configure:
 	${MV} ${WRKSRC}/mserv/soundcard.h ${WRKSRC}/mserv/mservsoundcard.h

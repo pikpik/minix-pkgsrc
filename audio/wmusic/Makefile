@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.19 2011/04/22 13:43:00 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/02 23:48:13 asau Exp $
 
 DISTNAME=	wmusic-1.5.0
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://home.jtan.com/~john/wmusic/
 
 MAINTAINER=	joel@carnat.net
 HOMEPAGE=	http://home.jtan.com/~john/wmusic/
 COMMENT=	WindowMaker dockable remote for XMMS
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
@@ -25,5 +23,4 @@ do-install:
 .include "../../audio/xmms/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

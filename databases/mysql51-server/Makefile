@@ -1,13 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2012/01/23 08:44:22 sbd Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/02 21:25:22 asau Exp $
 
-PKGNAME=		${DISTNAME:S/-/-server-/}
-PKGREVISION=		1
-SVR4_PKGNAME=		mysqs
-COMMENT=		MySQL 5, a free SQL database (server)
+PKGNAME=	${DISTNAME:S/-/-server-/}
+SVR4_PKGNAME=	mysqs
+COMMENT=	MySQL 5, a free SQL database (server)
 
 CONFLICTS=		{mysql-server-[0-9]*,mysql3-server-[0-9]*}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../databases/mysql51-client/Makefile.common"
 
@@ -88,9 +85,8 @@ CXXFLAGS+=		-D_POSIX_C_SOURCE=199506L -D__EXTENSIONS__
 
 # Only 'ndb_mgm' needs readline otherwise we only need it to placate the
 # configure script.  As ndb_mgm is only build if the 'ndb-cluster' option
-# is enabled that option sets a full dependency on readline otherwise 
-# make this only a build-time dependency. 
-#
+# is enabled that option sets a full dependency on readline otherwise
+# make this only a build-time dependency.
 BUILDLINK_DEPMETHOD.readline?=	build
 .include "../../devel/readline/buildlink3.mk"
 

@@ -1,4 +1,4 @@
-# $Id: Makefile.in,v 1.2 2012/03/10 16:10:56 joerg Exp $
+# $Id: Makefile.in,v 1.1 2004/08/27 03:06:07 jlam Exp $
 
 @SET_MAKE@
 SHELL = @SHELL@

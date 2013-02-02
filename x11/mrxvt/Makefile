@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2011/01/17 21:28:09 tnn Exp $
+# $NetBSD: Makefile,v 1.25 2011/11/01 06:03:04 sbd Exp $
 #
 
 DISTNAME=	mrxvt-0.5.4
@@ -13,7 +13,6 @@ HOMEPAGE=	http://materm.sourceforge.net/
 COMMENT=	Multi-tabbed terminal emulator with Xft support
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake

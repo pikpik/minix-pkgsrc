@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2011/04/22 13:42:55 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/12 00:24:43 asau Exp $
 #
 
 DISTNAME=		libofa-0.9.3
-PKGREVISION=		4
+PKGREVISION=		5
 CATEGORIES=		audio
 MASTER_SITES=		http://distfiles.aydogan.net/audio/ \
 					http://musicip-libofa.googlecode.com/files/
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://code.google.com/p/musicip-libofa/
 COMMENT=		Open Fingerprint Architecture library
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++

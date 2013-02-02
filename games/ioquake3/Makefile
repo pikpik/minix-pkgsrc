@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/01/13 00:12:29 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2009/06/06 22:04:50 wiz Exp $
 #
 
 DISTNAME=	ioquake3-1.36
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ioquake3.org/
 COMMENT=	Open source Quake 3 distribution
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 BUILD_TARGET=	release

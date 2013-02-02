@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.22 2009/04/11 23:15:20 sno Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:57:11 wiz Exp $
 #
 
 DISTNAME=		snmptt_1.3
 EXTRACT_SUFX=		.tgz
 PKGNAME=		snmptt-1.3
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=snmptt/}
 
@@ -21,8 +22,6 @@ DEPENDS+=		p5-Digest-MD5-[0-9]*:../../security/p5-Digest-MD5
 WRKSRC=			${WRKDIR}/${DISTNAME}
 
 PKG_SYSCONFSUBDIR=	snmptt
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS+= sbin
 

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.38 2011/09/14 16:33:45 hans Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/31 11:17:13 asau Exp $
 
-DISTNAME=	libevent-2.0.14-stable
+DISTNAME=	libevent-2.0.21-stable
 PKGNAME=	${DISTNAME:S/-stable//}
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=levent/}
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://libevent.org/
 COMMENT=	Asynchronous event notification library
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	libev<3.9nb1
 

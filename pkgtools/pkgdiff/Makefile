@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.74 2011/06/26 12:11:39 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2012/09/16 18:09:53 dholland Exp $
 #
 
-DISTNAME=	pkgdiff-1.3
+DISTNAME=	pkgdiff-1.4
+PKGREVISION=	1
 CATEGORIES=	pkgtools devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -12,7 +13,6 @@ COMMENT=	Tools to create, maintain, and send back patches for pkgsrc
 LICENSE=	2-clause-bsd AND original-bsd
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	yes
 
@@ -28,7 +28,7 @@ BUILD_DEFS+=	MANINSTALL
 
 .if ${OPSYS} == "SunOS" || ${OPSYS} == "OSF1"
 DEPENDS+=	diffutils-[0-9]*:../../devel/diffutils
-DIFF?=		${PREFIX}/bin/${GNU_PROGRAM_PREFIX}diff
+DIFF?=		${PREFIX}/bin/gdiff
 .else
 DIFF?=		diff
 .endif

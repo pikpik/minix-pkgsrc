@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2010/09/06 12:03:51 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:57:06 wiz Exp $
 #
 
 DISTNAME=	POE-Component-Client-DNS-1.051
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=POE/}
 
@@ -17,7 +17,6 @@ DEPENDS+=	p5-Net-DNS>=0.59:../../net/p5-Net-DNS
 DEPENDS+=	p5-Test-NoWarnings>=0.084:../../devel/p5-Test-NoWarnings
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/POE/Component/Client/DNS/.packlist
 

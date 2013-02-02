@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2011/10/08 06:09:33 dsainty Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 17:19:06 asau Exp $
 #
 
 DISTNAME=	rtmpdump-2.4
@@ -10,8 +10,6 @@ HOMEPAGE=	http://rtmpdump.mplayerhq.hu/
 COMMENT=	Tools for handling RTMP stream
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LIBTOOL=	yes
 
 USE_TOOLS+=	pkg-config
@@ -20,6 +18,8 @@ BUILD_DIRS=	. librtmp
 
 WRKSRC=		${WRKDIR}/rtmpdump
 PKGCONFIG_OVERRIDE+=	librtmp/librtmp.pc.in
+
+LDFLAGS.SunOS+=	-lnsl -lsocket
 
 SUBST_CLASSES+=			fix-paths
 SUBST_STAGE.fix-paths=		pre-configure

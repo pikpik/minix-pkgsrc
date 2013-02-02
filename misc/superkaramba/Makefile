@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.16 2011/01/23 07:55:13 markd Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/08 23:02:09 adam Exp $
 
 DISTNAME=	superkaramba-${_KDE_VERSION}
+PKGREVISION=	5
 CATEGORIES=	misc
 COMMENT=	KDE desktop widgets
 
 .include "../../meta-pkgs/kde4/Makefile.kde4"
 
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
 #make sure cmake picks up the same Python version as pkgsrc
 CMAKE_ARGS+=	-DPYTHON_EXECUTABLE:FILEPATH=${PYTHONBIN}
 

@@ -1,19 +1,14 @@
 @comment $NetBSD$
+bin/mubusy
+bin/mudraw
 bin/mupdf
-bin/mupdf-pdfinfo
-bin/pdfclean
-bin/pdfdraw
-bin/pdfextract
-bin/pdfshow
-bin/xpsdraw
 include/fitz.h
+include/memento.h
+include/mucbz.h
 include/mupdf.h
 include/muxps.h
 lib/libfitz.la
-lib/libmupdf.la
-lib/libmuxps.la
 lib/pkgconfig/mupdf.pc
+man/man1/mubusy.1
+man/man1/mudraw.1
 man/man1/mupdf.1
-man/man1/pdfclean.1
-man/man1/pdfdraw.1
-man/man1/pdfshow.1

@@ -1,27 +1,46 @@
-# $NetBSD: Makefile,v 1.4 2010/01/30 19:43:18 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/08 15:18:23 jaapb Exp $
 #
 
-DISTNAME=		ocamlnet-1.1.2
+DISTNAME=		ocamlnet-3.6
 PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://download.camlcity.org/download/
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
+MAINTAINER=		jaapb@kerguelen.org
 HOMEPAGE=		http://projects.camlcity.org/projects/ocamlnet.html
 COMMENT=		Library focusing on application-level network protocols (OCaml)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		zlib AND gnu-gpl-v2
 
 MAKE_JOBS_SAFE=		no
 
-DEPENDS+=		pcre-ocaml-[0-9]*:../../devel/pcre-ocaml
-DEPENDS+=		equeue-[0-9]*:../../devel/equeue
+DEPENDS+=		ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
 
 HAS_CONFIGURE=		yes
-CONFIGURE_DIRS=		src
+CONFIGURE_ARGS+=	-without-nethttpd -without-rpc-auth-dh -disable-gtk2 \
+			-disable-tcl -disable-apache -enable-pcre
 USE_TOOLS+=		gmake
-BUILD_TARGET=		all opt
-PLIST_SRC=		PLIST.opt PLIST
+BUILD_TARGET=		all
 
+PLIST_VARS=		opt ssl
+.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \
+    (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64")
+BUILD_TARGET+=		opt
+PLIST.opt=		yes
+.endif
+
+SUBPKGDIRS=		equeue netcgi2-plex netplex pop rpc-ssl equeue-ssl \
+			netclient netshm rpc shell netcamlbox netgssapi \
+			netstring rpc-auth-local smtp netcgi2 netmulticore \
+			netsys rpc-generator
+
+INSTALLATION_DIRS=	lib/ocaml/site-lib
+
+pre-install:
+.for i in ${SUBPKGDIRS};
+	${RM} -rf ${DESTDIR}/${PREFIX}/lib/ocaml/site-lib/${i}
+.endfor
+
+.include "options.mk"
+.include "../../devel/pcre-ocaml/buildlink3.mk"
 .include "../../lang/ocaml/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

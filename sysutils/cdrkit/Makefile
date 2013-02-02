@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2009/06/07 22:02:24 hasso Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:57:36 wiz Exp $
 #
 
 DISTNAME=	cdrkit-1.1.9
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://cdrkit.org/releases/
 
@@ -10,8 +11,6 @@ HOMEPAGE=	http://cdrkit.org/
 COMMENT=	Portable command-line CD/DVD recorder software
 
 CONFLICTS=	cdrtools-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=	yes
 USE_TOOLS+=	perl:run

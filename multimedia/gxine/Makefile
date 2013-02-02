@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.58 2012/03/03 00:13:39 wiz Exp $
+# $NetBSD: Makefile,v 1.67 2012/10/08 23:02:11 adam Exp $
 
 DISTNAME=	gxine-0.5.905
-PKGREVISION=	12
+PKGREVISION=	20
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xine/}
 EXTRACT_SUFX=	.tar.bz2
@@ -29,8 +29,6 @@ PKG_SYSCONFSUBDIR=	gxine
 .for f in gtkrc keypad.xml startup toolbar-fullscreen.xml toolbar-window.xml
 CONF_FILES+=	${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f}
 .endfor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../devel/glib2/buildlink3.mk"

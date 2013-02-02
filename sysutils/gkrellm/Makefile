@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.67 2012/02/06 12:41:33 wiz Exp $
+# $NetBSD: Makefile,v 1.72 2012/10/08 23:00:42 adam Exp $
 .include "Makefile.common"
 
-PKGREVISION=		10
+PKGREVISION=		14
 
 GKRELLM_PKGBASE=	gkrellm
 WRKSRC=			${GKRELLM_SRCDIR}
@@ -9,8 +9,6 @@ WRKSRC=			${GKRELLM_SRCDIR}
 COMMENT=		GTK2 based system monitor
 
 DEPENDS+=		gkrellm-share-${GKRELLM_VERSION}:../../sysutils/gkrellm-share
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 

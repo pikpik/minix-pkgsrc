@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2009/02/21 16:53:33 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/21 11:28:25 cheusov Exp $
 #
 
 DISTNAME=	libowfat-0.28
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://dl.fefe.de/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +12,7 @@ HOMEPAGE=	http://www.fefe.de/libowfat/
 COMMENT=	Library of general purpose APIs
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+CONFLICTS=	libtai-[0-9]*
 
 MAKE_FILE=	GNUmakefile
 USE_TOOLS+=	gmake

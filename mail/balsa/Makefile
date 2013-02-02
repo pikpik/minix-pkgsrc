@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.84 2012/02/06 12:40:47 wiz Exp $
+# $NetBSD: Makefile,v 1.94 2012/12/16 01:52:17 obache Exp $
 
 DISTNAME=	balsa-2.4.8
-PKGREVISION=	12
+PKGREVISION=	21
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://pawsa.fedorapeople.org/balsa/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pawsa.fedorapeople.org/balsa/
 COMMENT=	GNOME2 EMail client
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		yes

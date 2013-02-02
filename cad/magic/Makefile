@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2010/03/08 17:24:24 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.26 2012/08/21 23:49:18 marino Exp $
 #
 
 DISTNAME=	magic-7.5.188
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	cad
 MASTER_SITES=	http://opencircuitdesign.com/magic/archive/
 EXTRACT_SUFX=	.tgz
@@ -13,7 +13,6 @@ COMMENT=	Integrated circuit layout system
 LICENSE=	magic-license
 
 MAKE_JOBS_SAFE=		no
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake printf
 USE_GNU_READLINE=yes	# uses rl_*_completion_function

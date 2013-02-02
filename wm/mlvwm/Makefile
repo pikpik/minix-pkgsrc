@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2008/02/23 02:24:05 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/08 12:42:21 asau Exp $
 #
 
 DISTNAME=	mlvwm091
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www2u.biglobe.ne.jp/~y-miyata/mlvwm/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www2u.biglobe.ne.jp/~y-miyata/mlvwm.html
 COMMENT=	Macintosh Like Virtual Window Manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 
@@ -35,5 +33,4 @@ SUBST_MESSAGE.xpm=	Fixing configuration file.
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

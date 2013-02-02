@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/05/02 11:35:18 obache Exp $
+# $NetBSD: Makefile,v 1.15 2011/12/06 13:22:17 cheusov Exp $
 
 DISTNAME=	tinyscheme-1.40
 CATEGORIES=	lang
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tinyscheme.sourceforge.net/home.html
 COMMENT=	R5RS small embeddable scheme implementation
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 

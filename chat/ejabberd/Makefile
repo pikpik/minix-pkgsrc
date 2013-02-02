@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.24 2011/12/21 13:42:36 fhajny Exp $
+# $NetBSD: Makefile,v 1.29 2012/09/30 21:38:04 tron Exp $
 
-DISTNAME=	ejabberd-2.1.10
+DISTNAME=	ejabberd-2.1.11
 CATEGORIES=	chat
-MASTER_SITES=	http://www.process-one.net/downloads/ejabberd/${PKGVERSION}/
+MASTER_SITES=	http://www.process-one.net/downloads/ejabberd/${PKGVERSION_NOREV}/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ejabberd.im/
 COMMENT=	Free and Open Source distributed fault-tolerant Jabber server
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	jabberd-[0-9]*
 
@@ -31,6 +30,7 @@ CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 CONFIGURE_ARGS+=	--with-expat=${BUILDLINK_PREFIX.expat}
 CONFIGURE_ARGS+=	--with-libiconv=${BUILDLINK_PREFIX.iconv}
 CONFIGURE_ARGS+=	--with-erlang=${BUILDLINK_PREFIX.erlang}
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFBASEDIR}
 
 CONFIGURE_DIRS+=	src
 BUILD_DIRS+=		src
@@ -52,11 +52,11 @@ PKG_SYSCONFSUBDIR=	ejabberd
 
 .include "../../mk/bsd.prefs.mk"
 
-EJABBERD_USER=		ejabberd
-EJABBERD_GROUP=		ejabberd
-EJABBERD_PIDDIR=	${VARBASE}/run/ejabberd
-EJABBERD_LOGDIR=	${VARBASE}/log/ejabberd
-EJABBERD_DB=		${VARBASE}/spool/ejabberd
+EJABBERD_USER?=		ejabberd
+EJABBERD_GROUP?=	ejabberd
+EJABBERD_PIDDIR?=	${VARBASE}/run/ejabberd
+EJABBERD_LOGDIR?=	${VARBASE}/log/ejabberd
+EJABBERD_DB?=		${VARBASE}/spool/ejabberd
 EJABBERD_EXDIR=		share/examples/ejabberd
 
 OWN_DIRS+=		${EJABBERD_PIDDIR}

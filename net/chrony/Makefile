@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/05/20 00:58:25 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2010/02/26 09:27:43 hannken Exp $
 
 DISTNAME=	chrony-1.24
 CATEGORIES=	net
@@ -7,8 +7,6 @@ MASTER_SITES=	http://download.tuxfamily.org/chrony/
 MAINTAINER=	hannken@NetBSD.org
 HOMEPAGE=	http://chrony.tuxfamily.org/
 COMMENT=	Daemon for maintaining the accuracy of computer clocks
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 HAS_CONFIGURE=		YES

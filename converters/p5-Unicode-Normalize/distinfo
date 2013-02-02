@@ -1,5 +1,5 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2012/04/01 19:11:52 rhaen Exp $
 
-SHA1 (Unicode-Normalize-1.13.tar.gz) = cfec620bb393e6dd8d62d1ecbfdf7829f62f50d4
-RMD160 (Unicode-Normalize-1.13.tar.gz) = 3fdf8cedb978a7228896d3339d648999e6976097
-Size (Unicode-Normalize-1.13.tar.gz) = 26638 bytes
+SHA1 (Unicode-Normalize-1.16.tar.gz) = 5a00158bd37ef0d7deeb1001ad08028597d6bc00
+RMD160 (Unicode-Normalize-1.16.tar.gz) = 7399a61aa854a6421d088e02a692e69856eda8fc
+Size (Unicode-Normalize-1.16.tar.gz) = 27341 bytes

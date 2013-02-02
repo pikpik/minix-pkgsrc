@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2011/11/27 14:20:18 cheusov Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/04 07:05:53 wiz Exp $
 
 DISTNAME=	bzr-gtk-${VER}
 PKGREVISION=	1
@@ -11,16 +11,11 @@ HOMEPAGE=	http://bazaar-vcs.org/bzr-gtk
 COMMENT=	Various GTK+ frontends to Bazaar commands
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+=	${PYPKGPREFIX}-cairo>=1.0:../../graphics/py-cairo
 DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.8:../../x11/py-gtk2
 
 PYDISTUTILSPKG=	yes
 REPLACE_PYTHON=	create-credits.py info.py
-# Only this python versions are supported, see:
-# http://doc.bazaar.canonical.com/bzr.dev/en/whats-new/whats-new-in-2.4.html
-PYTHON_VERSIONS_ACCEPTED=	27 26
 
 USE_TOOLS+=	msgfmt
 

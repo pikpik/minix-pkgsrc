@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 13:38:22 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/11 23:04:26 asau Exp $
 
 DISTNAME=	Math-Base85-0.2
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Math/}
 
@@ -12,7 +12,6 @@ COMMENT=	Perl extension for base 85 numbers, as referenced by RFC 1924
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Math/Base85/.packlist
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2010/08/21 16:36:19 seb Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 21:58:15 wiz Exp $
 
 DISTNAME=	libxml-perl-0.08
 PKGNAME=	p5-libxml-0.08
-PKGREVISION=	6
+PKGREVISION=	7
 SVR4_PKGNAME=	p5lxm
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=XML/}
@@ -14,7 +14,6 @@ COMMENT=	Perl module collection for working with XML
 DEPENDS+=	p5-XML-Parser>=2.29:../../textproc/p5-XML-Parser
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/libxml-perl/.packlist
 

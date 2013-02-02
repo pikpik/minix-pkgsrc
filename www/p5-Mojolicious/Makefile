@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.11 2012/02/12 15:06:16 mspo Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/28 06:30:47 asau Exp $
 
-DISTNAME=	Mojolicious-2.62
+DISTNAME=	Mojolicious-3.82
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	www perl5
-#MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mojolicious/SRI/}
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/T/TE/TEMPIRE/}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Mojolicious/SRI/}
+#MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/T/TE/TEMPIRE/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mojolicious.org/
 COMMENT=	Perl web framework: The Web In A Box!
 LICENSE=	artistic-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/Mojolicious/.packlist

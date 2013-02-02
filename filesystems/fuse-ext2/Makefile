@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/07/09 17:22:43 tron Exp $
+# $NetBSD: Makefile,v 1.4 2012/05/10 10:49:49 wiz Exp $
 
 DISTNAME=	fuse-ext2-0.0.7
 PKGREVISION=	1
@@ -12,12 +12,11 @@ LICENSE=	gnu-gpl-v2
 
 ONLY_FOR_PLATFORM=	Linux-*-* NetBSD-*-*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	autoheader automake autoreconf gmake pkg-config
 USE_LANGUAGES=	c c++
+INSTALLATION_DIRS=	lib/umview/modules
 
 pre-configure:
 	cd ${WRKSRC} && autoreconf --verbose --install --force

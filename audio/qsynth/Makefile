@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2012/02/06 12:39:30 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/02 23:48:07 asau Exp $
 
 DISTNAME=	qsynth-0.2.4
-PKGREVISION=	13
+PKGREVISION=	15
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qsynth/}
 
@@ -10,7 +10,6 @@ HOMEPAGE=	http://qsynth.sourceforge.net/
 COMMENT=	Qt GUI Interface to FluidSynth
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

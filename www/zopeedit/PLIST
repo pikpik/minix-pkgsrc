@@ -1,5 +1,5 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.4 2012/01/25 12:41:42 obache Exp $
 bin/zopeedit.py
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/${EGG_FILE}
 man/man1/zopeedit.1
 share/doc/zopeedit/README.txt

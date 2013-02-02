@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2012/03/03 00:14:04 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/08 12:42:22 asau Exp $
 #
 
 DISTNAME=	OroboROX-0.9.8
 PKGNAME=	oroborox-0.9.8
-PKGREVISION=	13
+PKGREVISION=	18
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://roscidus.com/desktop/OroboROX
 COMMENT=	The lightweight Window Manager for the ROX Desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	rox-lib>=2.0.2nb2:../../devel/rox-lib
 

@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.158 2011/06/14 09:37:17 tron Exp $
+# $NetBSD: Makefile,v 1.162 2012/12/16 01:52:20 obache Exp $
 
 DOVECOT_VERSION=	1.2
 DOVECOT_SUBVERSION=	.17
 SIEVE_VERSION=		0.1.19
 MANAGESIEVE_VERSION=	0.11.13
 DISTNAME=		dovecot-${DOVECOT_VERSION}${DOVECOT_SUBVERSION}
-PKGREVISION=		3
+PKGREVISION=		6
 CATEGORIES=		mail
 MASTER_SITES=		http://www.dovecot.org/releases/${DOVECOT_VERSION}/
 DOVECOT_SIEVE_SITES=	http://www.rename-it.nl/dovecot/${DOVECOT_VERSION}/
@@ -20,7 +20,6 @@ COMMENT=		Secure IMAP and POP3 server
 LICENSE=		mit AND gnu-lgpl-v2.1 AND modified-bsd
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config rpcgen

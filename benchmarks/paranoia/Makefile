@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/03/03 00:51:44 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2009/02/22 14:15:28 asau Exp $
 
 DISTNAME=		paranoia
 PKGNAME=		paranoia-960101
@@ -10,7 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Highly paranoid test of IEEE 754 conformance
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

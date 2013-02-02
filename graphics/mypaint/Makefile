@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2012/03/03 00:13:16 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/15 10:05:04 obache Exp $
 #
 
 DISTNAME=	mypaint-1.0.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.gna.org/mypaint/
 EXTRACT_SUFX=	.tar.bz2
@@ -12,9 +12,6 @@ HOMEPAGE=	http://mypaint.intilinux.com/
 COMMENT=	Fast and easy open-source graphics application for digital painters
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 USE_LANGUAGES=	c++
 
 USE_TOOLS+=	bash:run msgfmt pkg-config

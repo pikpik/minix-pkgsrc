@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2009/10/07 15:38:03 joerg Exp $
+# $NetBSD: Makefile,v 1.34 2009/11/15 01:29:33 dholland Exp $
 
 DISTNAME=		xgalaga-2.0.34
 PKGREVISION=		4
@@ -7,8 +7,6 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Very fast true-to-the-original port of galaga for X11
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_SRC_ON_FTP=		"already in MASTER_SITE_LOCAL"
 

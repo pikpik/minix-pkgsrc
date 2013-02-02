@@ -1,12 +1,14 @@
 $NetBSD$
 
---- memtrack.c.orig	2007-08-01 20:40:51.000000000 +0000
+use standard includes
+
+--- memtrack.c.orig	2012-03-26 13:10:43.000000000 +0000
 +++ memtrack.c
 @@ -21,9 +21,6 @@
  
  #define _GNU_SOURCE
  
--#if !defined(SYS_FREEBSD) && !defined(SYS_DARWIN)   /* FreeBSD declares malloc() in stdlib.h */
+-#if !defined(SYS_FREEBSD)   /* FreeBSD declares malloc() in stdlib.h */
 - #include <malloc.h>
 -#endif
  #include <stdio.h>

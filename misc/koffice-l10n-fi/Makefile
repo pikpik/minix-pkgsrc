@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.1 2006/12/03 04:17:28 markd Exp $
+# $NetBSD: Makefile,v 1.3 2012/06/14 07:45:07 sbd Exp $
 
 KOFFICE_LANGUAGE=	Finnish
 KOFFICE_LANGCODE=       fi
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		1
 
 .include "../../misc/koffice/l10n.mk"
 .include "../../mk/bsd.pkg.mk"

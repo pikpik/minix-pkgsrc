@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.68 2011/01/13 13:36:12 wiz Exp $
+# $NetBSD: Makefile,v 1.71 2012/10/06 14:11:06 asau Exp $
 
 DISTNAME=	libwmf-0.2.8.4
-PKGREVISION=	10
+PKGREVISION=	12
 CATEGORIES=	graphics devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=wvware/}
 
@@ -11,7 +11,6 @@ COMMENT=	Library for reading and converting WMF (Windows Meta Files)
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config

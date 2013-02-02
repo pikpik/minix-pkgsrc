@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.8 2012/02/06 12:41:47 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/12/17 18:37:08 markd Exp $
 
 DISTNAME=		rsibreak-0.8.0
 PKGNAME=		rsibreak-0.8.0
-PKGREVISION=		14
+PKGREVISION=		19
 CATEGORIES=		time kde
 MASTER_SITES=		http://www.rsibreak.org/files/
 EXTRACT_SUFX=           .tar.bz2
 
-MAINTAINER=		markd@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.rsibreak.org/
 COMMENT=		RSI management tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
@@ -24,5 +22,6 @@ GNU_CONFIGURE=		yes
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../x11/libXScrnSaver/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 
 .include "../../mk/bsd.pkg.mk"

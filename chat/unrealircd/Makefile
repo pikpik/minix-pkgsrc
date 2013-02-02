@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2011/04/22 13:43:08 obache Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/03 00:02:46 asau Exp $
 
-DISTNAME=	Unreal3.2.8.1
-PKGNAME=	unrealircd-3.2.8.1
+DISTNAME=	Unreal3.2.9
+PKGNAME=	unrealircd-3.2.9
 PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://unrealircd.com/downloads/
@@ -12,27 +12,17 @@ COMMENT=	Advanced IRC server with IPv6 and SSL support
 
 CONFLICTS+=	ircu-[0-9]*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	YES
 USE_TOOLS+=	pkg-config gmake
-TRE_NEEDED=	0.7.5
-CARES_NEEDED=	1.6.0
 
 CHECK_PORTABILITY_SKIP=	update
 
 WRKSRC=		${WRKDIR}/Unreal3.2
 
-BUILDLINK_API_DEPENDS.tre+=		tre>=${TRE_NEEDED}
-BUILDLINK_API_DEPENDS.libcares+=	libcares-${CARES_NEEDED}
-
 .include "../../mk/bsd.prefs.mk"
 
-CONFIGURE_ENV+=		tre_version=${TRE_NEEDED:Q}
-CONFIGURE_ENV+=		TREINCDIR=-I${BUILDLINK_PREFIX.tre}/include
-CONFIGURE_ENV+=		cares_version=${CARES_NEEDED:Q}
-CONFIGURE_ENV+=		CARESINCDIR='${BUILDLINK_PREFIX.libcares}/include'
-CONFIGURE_ENV+=		CARESLIBDIR='-L${BUILDLINK_PREFIX.libcares}/lib'
+CONFIGURE_ARGS+=	--with-system-cares
+CONFIGURE_ARGS+=	--with-system-tre
 
 CONFIGURE_ARGS+=	--with-dpath=${UIRCD_HOME:Q}
 CONFIGURE_ARGS+=	--with-spath=${PREFIX:Q}/sbin/ircd

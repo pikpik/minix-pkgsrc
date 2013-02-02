@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.39 2012/02/06 12:39:35 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2012/10/08 23:01:17 adam Exp $
 
 DISTNAME=	gg2-2.3.0
-PKGREVISION=	15
+PKGREVISION=	20
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ggadu/}
 EXTRACT_SUFX=	.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://ggadu.sourceforge.net/
 COMMENT=	Instant messenger software for Poland; Jabber plugin included
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes

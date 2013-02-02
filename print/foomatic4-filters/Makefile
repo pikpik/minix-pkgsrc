@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2012/01/26 11:49:23 drochner Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 13:45:38 asau Exp $
 
 DISTNAME=	foomatic-filters-4.0.9
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	http://www.openprinting.org/download/foomatic/
 
@@ -17,8 +17,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--disable-file-converter-check
 CONFIGURE_ARGS+=	--disable-dbus
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.foomatic
 PKG_SUPPORTED_OPTIONS=	cups

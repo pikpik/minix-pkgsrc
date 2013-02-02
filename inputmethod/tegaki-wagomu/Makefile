@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2012/03/03 00:13:25 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/06 14:25:19 asau Exp $
 #
 
 DISTNAME=	tegaki-wagomu-0.3.1
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://www.tegaki.org/releases/${PKGVERSION_NOREV}/ \
 		http://www.tegaki.org/releases/0.3/
@@ -14,9 +14,7 @@ COMMENT=	Simple handwriting recognition engine based on DTW
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	tegaki-python>=0.3:../../inputmethod/tegaki-python
-DEPENDS+=	swig-[0-9]*:../../devel/swig
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+BUILD_DEPENDS+=	swig-1.[0-9]*:../../devel/swig
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	pkg-config

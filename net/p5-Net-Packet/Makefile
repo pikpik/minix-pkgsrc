@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2010/08/21 16:35:27 seb Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:57:04 wiz Exp $
 
 DISTNAME=	Net-Packet-3.27
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
@@ -21,7 +21,6 @@ DEPENDS+=	p5-Net-Write>=1.0:../../net/p5-Net-Write
 DEPENDS+=	p5-Socket6-[0-9]*:../../net/p5-Socket6
 
 PKG_INSTALLATION_TYPES=		overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=0.9.3nb2
 

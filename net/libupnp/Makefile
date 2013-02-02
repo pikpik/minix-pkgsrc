@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2009/02/24 09:36:23 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/11/06 18:59:08 drochner Exp $
 #
 
-DISTNAME=		libupnp-1.6.6
-PKGREVISION=		2
+DISTNAME=		libupnp-1.6.18
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pupnp/}
 EXTRACT_SUFX=		.tar.bz2
@@ -21,17 +20,9 @@ CONFIGURE_ARGS+=	--with-documentation
 
 PKGCONFIG_OVERRIDE+=	libupnp.pc.in
 
-BUILDLINK_TRANSFORM+=	rm:-lcompat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 TEST_TARGET=		check
 
-.include "../../mk/bsd.prefs.mk"
+.include "options.mk"
+
 .include "../../mk/pthread.buildlink3.mk"
-
-.if ${OPSYS} == "NetBSD" && exists(/usr/include/sys/pset.h)
-PTHREAD_LIBS+=		-lrt
-.endif
-
 .include "../../mk/bsd.pkg.mk"

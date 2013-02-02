@@ -1,15 +1,11 @@
-# $NetBSD: Makefile,v 1.84 2012/02/06 12:41:05 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2012/12/16 01:52:26 obache Exp $
 
 DISTNAME=	kdemultimedia-${_KDE_VERSION}
-PKGREVISION=	16
+PKGREVISION=	23
 CATEGORIES=	multimedia
 COMMENT=	Multimedia tools for the KDE integrated X11 desktop
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "../../meta-pkgs/kde3/Makefile.kde3"
-
-DEPENDS+=	xine-arts>=1rc0a:../../audio/xine-arts
 
 USE_TOOLS+=		pkg-config bash:run
 
@@ -55,6 +51,7 @@ UNLIMIT_RESOURCES+=	datasize
 .include "../../multimedia/xine-lib/buildlink3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2011/07/03 06:59:56 dholland Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/08 12:19:11 asau Exp $
 #
 
-DISTNAME=	fml-7.98.15-${FML_STAMP}
-PKGREVISION=	1
+DISTNAME=	fml-7.98.18-${FML_STAMP}
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.fml.org/pub/fml8/
 
@@ -11,11 +10,10 @@ HOMEPAGE=	http://www.fml.org/software/fml8/index.html.en
 COMMENT=	FML mailing list server development version
 LICENSE=	gnu-gpl-v2 OR artistic
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USERGROUP_PHASE=	pre-install
 
 # development version
-FML_STAMP=	20100306
+FML_STAMP=	20121230
 
 GNU_CONFIGURE=	yes
 USE_TOOLS=	perl:run

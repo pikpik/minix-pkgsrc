@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.47 2012/02/17 13:46:46 hans Exp $
+# $NetBSD: Makefile,v 1.53 2012/10/03 21:54:01 wiz Exp $
 #
 
 DISTNAME=	kmess-1.4.3
-PKGREVISION=	17
+PKGREVISION=	22
 CATEGORIES=	chat kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kmess/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kmess.org/
 COMMENT=	MSN Messenger Client for KDE3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 SET_LIBDIR=		yes
@@ -27,5 +25,6 @@ MAKE_FLAGS+=		KPHONEDIR=${PREFIX}/include
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

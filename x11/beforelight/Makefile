@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/11/10 17:21:38 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/29 05:06:08 asau Exp $
 #
 
-DISTNAME=		beforelight-1.0.3
-PKGREVISION=		1
+DISTNAME=		beforelight-1.0.5
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Simple screen saver
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config

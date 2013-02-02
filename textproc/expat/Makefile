@@ -1,21 +1,22 @@
-# $NetBSD: Makefile,v 1.24 2009/09/10 09:59:20 drochner Exp $
+# $NetBSD: Makefile,v 1.26 2012/04/01 08:52:43 obache Exp $
 #
 
-DISTNAME=	expat-2.0.1
-PKGREVISION=	2
+DISTNAME=	expat-2.1.0
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=expat/}
 
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://expat.sourceforge.net/
 COMMENT=	XML parser library written in C
+LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_TOOLS+=		gmake
+
+PKGCONFIG_OVERRIDE+=	expat.pc.in
 
 DOCDIR=	${PREFIX}/share/doc/html/expat
 

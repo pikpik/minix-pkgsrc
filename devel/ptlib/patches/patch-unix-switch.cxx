@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-unix-switch.cxx,v 1.1 2011/12/04 21:59:37 marino Exp $
+
+- Add Dragonfly support
 
 --- src/ptlib/unix/switch.cxx.orig	2009-09-21 00:25:17.000000000 +0000
 +++ src/ptlib/unix/switch.cxx

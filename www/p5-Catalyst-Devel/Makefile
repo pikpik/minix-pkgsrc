@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2011/10/06 12:42:41 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 21:58:38 wiz Exp $
 
 DISTNAME=	Catalyst-Devel-1.36
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Catalyst/}
 
@@ -35,8 +36,6 @@ BUILD_DEPENDS+=	{perl>=5.12.0,p5-Test-Simple>=0.94}:../../devel/p5-Test-Simple
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST= 	auto/Catalyst/Devel/.packlist
 PERL5_MODULE_TYPE=	Module::Install::Bundled
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

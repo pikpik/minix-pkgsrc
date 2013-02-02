@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/08/30 20:04:53 dholland Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/08 12:42:22 asau Exp $
 #
 
 DISTNAME=	olvwm4.src4
@@ -14,7 +14,6 @@ COMMENT=	Open Look Virtual Window Manager
 DEPENDS+=	xview-clients>=3.2.1:../../x11/xview-clients
 
 LICENSE=		sun-openlook-license
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_IMAKE=	yes
@@ -22,6 +21,5 @@ USE_IMAKE=	yes
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xview-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

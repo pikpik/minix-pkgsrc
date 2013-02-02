@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2011/02/03 14:15:12 obache Exp $
+# $NetBSD: Makefile,v 1.12 2011/12/14 09:22:44 shattered Exp $
 #
 
 DISTNAME=	randread-0.2
@@ -13,7 +13,6 @@ LICENSE=	public-domain
 ONLY_FOR_PLATFORM=	DragonFly-*-* FreeBSD-*-* NetBSD-*-* OpenBSD-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	randread
 WRKSRC=		${WRKDIR}/${DISTNAME}

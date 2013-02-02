@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2008/05/24 21:45:21 tnn Exp $
+# $NetBSD: Makefile,v 1.5 2012/06/12 02:10:23 mef Exp $
 #
 
-DISTNAME=		font-bh-lucidatypewriter-100dpi-1.0.1
+DISTNAME=		font-bh-lucidatypewriter-100dpi-1.0.3
 CATEGORIES=		fonts
 MASTER_SITES=		${MASTER_SITE_XORG:=font/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		100dpi Bigelow & Holmes Lucida Typewriter PCF fonts
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config bdftopcf ucs2any gzip

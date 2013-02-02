@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v $
+# $NetBSD: Makefile,v 1.4 2012/12/12 11:49:53 wiz Exp $
 #
 
-DISTNAME=	HTTP-Server-EV-0.2
+DISTNAME=	HTTP-Server-EV-0.5
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=HTTP/}
 
@@ -11,7 +12,14 @@ HOMEPAGE=	http://search.cpan.org/dist/HTTP-Server-EV/
 COMMENT=	Asynchronous HTTP server using EV event loop
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+PERL5_REQD+=	5.8
+
+DEPENDS+=	{perl>=5.10.1,p5-Scalar-List-Utils-[0-9]*}:../../devel/p5-Scalar-List-Utils # List::Util::XS
+DEPENDS+=	p5-File-Util-[0-9]*:../../devel/p5-File-Util
+DEPENDS+=	p5-Guard-[0-9]*:../../devel/p5-Guard
+# actually, test dependencies
+BUILD_DEPENDS+=	p5-AnyEvent-HTTP-[0-9]*:../../www/p5-AnyEvent-HTTP
+BUILD_DEPENDS+=	p5-HTTP-Message-[0-9]*:../../www/p5-HTTP-Message
 
 PERL5_PACKLIST=		auto/HTTP/Server/EV/.packlist
 

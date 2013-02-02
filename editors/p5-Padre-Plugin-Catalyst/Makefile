@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2010/09/08 06:39:08 sno Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 11:43:39 asau Exp $
 #
 
 DISTNAME=	Padre-Plugin-Catalyst-0.09
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	editors perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Padre/}
 
@@ -13,8 +13,6 @@ COMMENT=	Catalyst helper interface for Padre
 LICENSE=	${PERL5_LICENSE}
 
 MAKE_JOBS_SAFE=	NO
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Catalyst-Devel>=1:../../www/p5-Catalyst-Devel
 DEPENDS+=	p5-Catalyst-Runtime>=5.70000:../../www/p5-Catalyst-Runtime

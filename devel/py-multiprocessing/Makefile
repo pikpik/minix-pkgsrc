@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/11/02 19:20:16 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2012/04/08 19:08:53 wiz Exp $
 #
 
 DISTNAME=	multiprocessing-2.6.2.1
@@ -11,16 +11,7 @@ HOMEPAGE=	http://pypi.python.org/pypi/multiprocessing/
 COMMENT=	Python threading package
 #LICENSE=	# TODO: (see mk/license.mk)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 PYDISTUTILSPKG=	yes
-
-.include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "NetBSD"
-# Does not like netbsd's mremap()
-PYTHON_VERSIONS_INCOMPATIBLE=	24
-.endif
 
 do-test:
 	${PYTHONBIN} -c "from multiprocessing import tests;tests.test_main()"

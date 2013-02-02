@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2012/03/03 13:00:24 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/21 20:41:25 wiz Exp $
 #
 
-DISTNAME=		meld-1.5.3
-PKGREVISION=		1
+DISTNAME=		meld-1.6.1
 CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/meld/1.5/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/meld/1.6/}
 EXTRACT_SUFX=		.tar.xz
 
 MAINTAINER=		dieter.NetBSD@pandora.be
@@ -13,10 +12,6 @@ COMMENT=		Visual diff and merge tool
 LICENSE=		gnu-gpl-v2
 
 DEPENDS+=		${PYPKGPREFIX}-gtk2>=2.14.0:../../x11/py-gtk2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_INCOMPATIBLE=	24
 
 USE_PKGLOCALEDIR=		YES
 USE_TOOLS+=			gmake msgfmt intltool

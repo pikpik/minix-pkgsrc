@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:39:17 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/09/15 10:03:30 obache Exp $
 #
 
 PKGNAME=		akode-plugins-pulseaudio-${AKODE_VERSION}
-PKGREVISION=		6
+PKGREVISION=		8
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Pulseaudio output plugin for akode framework
@@ -12,8 +12,6 @@ LICENSE=		gnu-lgpl-v2
 
 DISTINFO_FILE=		${.CURDIR}/../../audio/akode/distinfo
 PATCHDIR=		${.CURDIR}/../../audio/akode/patches
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--with-polypaudio
 

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2007/05/29 01:22:17 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:56:15 wiz Exp $
 
 DISTNAME=	ps2eps-1.68
+PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.tm.uka.de/~bless/
 EXTRACT_SUFX=	.zip
@@ -8,8 +9,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	minskim@NetBSD.org
 HOMEPAGE=	http://www.tm.uka.de/~bless/ps2eps
 COMMENT=	Tool for generating EPS Format files from one-page PS documents
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl:run
 WRKSRC=		${WRKDIR}/ps2eps

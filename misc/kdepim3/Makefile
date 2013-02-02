@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.95 2012/02/06 12:40:58 wiz Exp $
+# $NetBSD: Makefile,v 1.103 2012/12/16 01:52:24 obache Exp $
 
 DISTNAME=	kdepim-${_KDE_VERSION}
-PKGREVISION=	14
+PKGREVISION=	21
 CATEGORIES=	misc
 COMMENT=	Personal Information Management tools for the KDE desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
@@ -57,4 +55,5 @@ BUILDLINK_DEPMETHOD.qt3-tools=	full
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

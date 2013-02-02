@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.85 2011/11/01 06:11:57 sbd Exp $
+# $NetBSD: Makefile,v 1.91 2012/10/16 10:10:17 rumko Exp $
 
-DISTNAME=	ghostscript-8.71
-PKGREVISION=	9
+DISTNAME=	ghostscript-${GS_VERSION}
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ghostscript/}
 MASTER_SITES+=	http://ghostscript.com/releases/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ghostscript.sourceforge.net/
@@ -13,15 +14,16 @@ COMMENT=	Postscript interpreter
 # Plus adobe verbatim for Resources/CMap.
 LICENSE=	gnu-gpl-v3
 
+.include	"Makefile.common"
+
 DEPENDS+=		ghostscript-fonts>=6.0:../../fonts/ghostscript-fonts
 
 CONFLICTS+=		ghostscript-afpl-[0-9]*
 CONFLICTS+=		ghostscript-esp{,-nox11}-[0-9]*
 CONFLICTS+=		ghostscript-gnu{,-nox11,-x11}-[0-9]*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		gmake perl:run lex pkg-config
+USE_LANGUAGES+=		c c++
 GNU_CONFIGURE=		yes
 UNLIMIT_RESOURCES+=	datasize	# gsromfs1.c
 
@@ -29,9 +31,17 @@ BUILD_TARGET=		so
 INSTALL_TARGET=		soinstall
 CONFIGURE_ARGS+=	-with-omni=no	# otherwise pulls in libstdc++
 
-REPLACE_PERL+=		lib/fixmswrd.pl
+REPLACE_PERL+=		toolbin/localcluster/clusterpush.pl
+REPLACE_PERL+=		toolbin/checkdeps.pl
+REPLACE_PERL+=		toolbin/pscet_status.pl
+REPLACE_PERL+=		toolbin/performance.pl
+REPLACE_PERL+=		toolbin/squeeze2html.pl
+REPLACE_PERL+=		toolbin/bugsByEngineer.pl
+REPLACE_PERL+=		toolbin/htmldiff.pl
 
 GS_RESOURCEDIR=		${PREFIX}/share/ghostscript/${PKGVERSION}/Resource
+# MESSAGE file substitution
+MESSAGE_SUBST+=		GS_RESOURCEDIR=${GS_RESOURCEDIR}
 
 # XXX make sure the local jpeg headers are found before those pulled
 # in indirectly by cups bl3
@@ -90,25 +100,33 @@ LDFLAGS+=		-lfontconfig   -lexpat -liconv -lfreetype -lz
 BUILDLINK_TRANSFORM+=	l:fontconfig:fontconfig:iconv
 .endif
 
-CONFIGURE_ENV+=	LPLIBDIR=${LOCALBASE}/lib 
+CONFIGURE_ENV+=	LPLIBDIR=${PREFIX}/lib
+
+.include "options.mk"
 
 post-extract:
 	${MKDIR} ${WRKSRC}/bin
 	${MKDIR} ${WRKSRC}/obj
 #	${RM} -rf ${WRKSRC}/jasper
 	${RM} -rf ${WRKSRC}/libpng
-	${RM} -rf ${WRKSRC}/tiff
+#	${RM} -rf ${WRKSRC}/tiff
 #	${RM} -rf ${WRKSRC}/zlib
+	${RM} -rf ${WRKSRC}/freetype
+#
+#  To allow outside customization, rename cidfmap
+#	 (if you look at inside of the file, it is logically empty)
+.if !empty(PKG_OPTIONS:Mdisable-compile-inits)
+	(cd  ${WRKSRC}/Resource/Init/; ${MV} cidfmap cidfmap.dist)
+.endif
 
 post-install:
 	${LN} -sf gsc ${DESTDIR}${PREFIX}/bin/gs
-
-.include "options.mk"
 
 .include "../../print/libpaper/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/freetype2/buildlink3.mk"
 # pkgsrc jasper is too new
 #.include "../../graphics/jasper/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

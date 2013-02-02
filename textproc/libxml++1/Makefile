@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2008/01/05 23:24:46 heinz Exp $
+# $NetBSD: Makefile,v 1.4 2012/06/14 07:43:21 sbd Exp $
 #
 
 DISTNAME=		libxml++-1.0.5
 PKGNAME=		libxml++1-1.0.5
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/libxml++/1.0/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +12,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://libxmlplusplus.sourceforge.net/
 COMMENT=		C++ wrapper for the libxml XML parser library
 LICENSE=		gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++

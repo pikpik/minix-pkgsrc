@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2012/01/20 17:05:11 joerg Exp $
+# $NetBSD: Makefile,v 1.75 2012/10/06 16:30:28 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
@@ -18,8 +18,6 @@ CONFLICTS=	${RUBY_PKGPREFIX}-dbm-[0-9]* \
 		${RUBY_PKGPREFIX}-iconv-[0-9]* \
 		${RUBY_PKGPREFIX}-openssl-[0-9]* \
 		${RUBY_PKGPREFIX}-tcltk-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c
 USE_TOOLS+=	pax yacc
@@ -49,6 +47,11 @@ LIBS.SunOS+=	-lm
 
 .if !empty(PKGSRC_COMPILER:Mclang)
 CONFIGURE_ARGS+=	--enable-frame-address
+.endif
+
+# Avoid segfaults as per https://bugs.ruby-lang.org/issues/6383
+.if !empty(CC_VERSION:Mgcc-4.[7-9].*)
+CFLAGS+=	-fno-tree-dce -fno-optimize-sibling-calls
 .endif
 
 # Ruby build process depends on config.status's content

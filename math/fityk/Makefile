@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:40:52 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 23:02:01 adam Exp $
 
 DISTNAME=	fityk-0.9.7
-PKGREVISION=	5
+PKGREVISION=	10
 CATEGORIES=	math
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=fityk/}
 MASTER_SITES=	https://cloud.github.com/downloads/wojdyr/fityk/
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fityk.sourceforge.net/
 COMMENT=	Peak fitting software
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

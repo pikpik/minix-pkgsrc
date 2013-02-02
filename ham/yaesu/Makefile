@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.6 2006/01/14 11:45:46 wulf Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 13:01:46 asau Exp $
 #
 
 DISTNAME=	yaesu-0.13
+PKGREVISION=	1
 CATEGORIES=	ham
 MASTER_SITES=	${MASTER_SITE_SUNSITE:=apps/ham/}
 
 MAINTAINER=	dawszy@arhea.net
 #HOMEPAGE=	not known
 COMMENT=	Control interface for Yaesu FT-890 HF transceiver
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/yaesu
 NO_CONFIGURE=	yes

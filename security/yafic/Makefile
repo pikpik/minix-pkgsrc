@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/12/13 08:42:26 martti Exp $
+# $NetBSD: Makefile,v 1.6 2010/09/28 13:21:32 wiz Exp $
 
 DISTNAME=	yafic-1.2.2
 CATEGORIES=	security
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.saddi.com/software/yafic/
 COMMENT=	File integrity checker
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/12/20 15:46:29 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/07/22 01:08:23 dholland Exp $
 
 DISTNAME=	lush-1.2.1
 PKGREVISION=	2
@@ -9,8 +9,6 @@ MAINTAINER=	dauphin@enst.fr
 HOMEPAGE=	http://lush.sourceforge.net/
 COMMENT=	Lisp interpreter/compiler with a seamless interface to C
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes
@@ -18,7 +16,7 @@ USE_GNU_READLINE=	yes # rl_getc, rl_basic_quote_characters, rl_insert_close
 
 CONFIGURE_ARGS+=	--without-bfd
 
-WRKSRC=		$(WRKDIR)/lush
+WRKSRC=		${WRKDIR}/lush
 
 post-install:
 	${RM} ${DESTDIR}${PREFIX}/share/lush/lsh/libc/*.lsh.orig

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2011/01/13 13:38:14 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/06 14:11:13 asau Exp $
 #
 
 DISTNAME=		PerceptualDiff-1.0.1
 PKGNAME=		pdiff-1.0.1
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pdiff/}
 
@@ -12,7 +12,6 @@ HOMEPAGE=		http://pdiff.sourceforge.net/
 COMMENT=		Image comparison through perceptually based image metric
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_CMAKE=		yes

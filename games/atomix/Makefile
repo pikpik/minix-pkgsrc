@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.21 2012/02/06 12:40:09 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/08 23:01:33 adam Exp $
 #
 
 DISTNAME=		atomix-2.14.0
-PKGREVISION=		18
+PKGREVISION=		25
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/atomix/2.14/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://jens.triq.net/atomix.php
 COMMENT=		Puzzle game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
@@ -24,4 +22,5 @@ LDFLAGS.DragonFly=	-lm
 .include "../../graphics/libgnomecanvas/buildlink3.mk"
 .include "../../devel/libbonoboui/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

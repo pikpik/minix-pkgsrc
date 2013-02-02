@@ -1,6 +1,7 @@
-$NetBSD: distinfo,v 1.5 2010/11/29 18:33:29 drochner Exp $
+$NetBSD: distinfo,v 1.8 2012/11/30 16:02:32 ryoon Exp $
 
-SHA1 (vinagre-2.30.3.tar.gz) = ec039950356b7fc6c82f97951b6b18bccd65942c
-RMD160 (vinagre-2.30.3.tar.gz) = 37337f98445ba88e1aa7f736b1e65e83c6894c21
-Size (vinagre-2.30.3.tar.gz) = 2986840 bytes
-SHA1 (patch-aa) = 147fdf31b80e111a9f314329c554f4e704721541
+SHA1 (vinagre-3.6.2.tar.xz) = 380f7f7197d062f4db78365ab1b8e3115476e3a2
+RMD160 (vinagre-3.6.2.tar.xz) = 091c45059f778dd9342a9488318a2fe9da43ee24
+Size (vinagre-3.6.2.tar.xz) = 2497324 bytes
+SHA1 (patch-configure) = d9622874fbeba6705c1dcbbf01aed7a6588afce0
+SHA1 (patch-vinagre_pty__open.c) = dfc8bd7235a65353b506ee6acf726cb15706c5d3

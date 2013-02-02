@@ -227,6 +227,9 @@ ${PYSITELIB}/pyutil/test/out_of_shape/test_zlibutil.pyo
 ${PYSITELIB}/pyutil/testutil.py
 ${PYSITELIB}/pyutil/testutil.pyc
 ${PYSITELIB}/pyutil/testutil.pyo
+${PYSITELIB}/pyutil/time_comparisons.py
+${PYSITELIB}/pyutil/time_comparisons.pyc
+${PYSITELIB}/pyutil/time_comparisons.pyo
 ${PYSITELIB}/pyutil/time_format.py
 ${PYSITELIB}/pyutil/time_format.pyc
 ${PYSITELIB}/pyutil/time_format.pyo

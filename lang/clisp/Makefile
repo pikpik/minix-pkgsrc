@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.86 2012/02/06 12:40:46 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2012/10/02 20:11:37 asau Exp $
 #
 
 DISTNAME=		clisp-2.49
-PKGREVISION=		9
+PKGREVISION=		13
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clisp/}
 #EXTRACT_SUFX=		.tar.bz2
@@ -19,8 +19,6 @@ NOT_FOR_PLATFORM+=	*-*-arm
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 MAKE_JOBS_SAFE=		no
 
 GNU_CONFIGURE=		yes
@@ -28,7 +26,7 @@ CONFIGURE_DIRS=		.
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 BUILD_DIRS=		src
-USE_TOOLS+=		dvipdf
+USE_TOOLS+=		dvipdf groff
 UNLIMIT_RESOURCES=	datasize stacksize
 
 USE_GNU_CONFIGURE_HOST=	NO	# work around broken reasoning: "configure --host=..." => cross-building

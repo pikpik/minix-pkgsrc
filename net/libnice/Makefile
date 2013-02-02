@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2012/02/06 12:41:15 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/23 17:18:34 asau Exp $
 #
 # Also update gst-plugins0.10-libnice when you update this!
 
-DISTNAME=	libnice-0.1.1
-PKGREVISION=	2
+DISTNAME=	libnice-0.1.2
+PKGREVISION=	5
 CATEGORIES=	net devel
 MASTER_SITES=	http://nice.freedesktop.org/releases/
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nice.freedesktop.org/wiki/
 COMMENT=	IETF's draft Interactice Connectivity Establishment standard implementation
 LICENSE=	gnu-lgpl-v2.1 OR mpl-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

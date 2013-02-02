@@ -1,15 +1,13 @@
-$NetBSD$
-
---- Src/Builtins/rlimits.c.orig	Tue Oct 30 09:33:09 2007
-+++ Src/Builtins/rlimits.c
-@@ -422,11 +422,20 @@ do_limit(char *nam, int lim, rlim_t val, int hard, int
- 		     NULL, lim);
+--- Src/Builtins/rlimits.c.orig	Fri Feb  1 21:54:52 2013
++++ Src/Builtins/rlimits.c	Fri Feb  1 21:56:52 2013
+@@ -454,11 +454,20 @@
+ 		     lim);
  	    return 1;
  	}
 +#ifdef HAVE_SETRLIMIT
  	else if (setrlimit(lim, &vals) < 0)
  	{
- 	    zwarnnam(nam, "setrlimit failed: %e", NULL, errno);
+ 	    zwarnnam(nam, "setrlimit failed: %e", errno);
  	    return 1;
  	}
 +#else
@@ -23,15 +21,15 @@ $NetBSD$
      } else {
  	/* new limit is valid and has been interpreted; apply it to the
  	specified resource */
-@@ -594,10 +603,19 @@ do_unlimit(char *nam, int lim, int hard, int soft, int
- 		     "warning: unrecognised limit %d, use -s to set",
- 		     NULL, lim);
+@@ -627,10 +636,19 @@
+ 	    zwarnnam(nam,
+ 		     "warning: unrecognised limit %d, use -s to set", lim);
  	    return 1;
 -	} else if (setrlimit(lim, &vals) < 0) {
-+	}
++	} 
 +#ifdef HAVE_SETRLIMIT
 +	else if (setrlimit(lim, &vals) < 0) {
- 	    zwarnnam(nam, "setrlimit failed: %e", NULL, errno);
+ 	    zwarnnam(nam, "setrlimit failed: %e", errno);
  	    return 1;
  	}
 +#else

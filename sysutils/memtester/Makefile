@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2010/10/26 20:22:04 zafer Exp $
+# $NetBSD: Makefile,v 1.22 2012/06/21 21:08:11 schmonz Exp $
 #
 
-DISTNAME=		memtester-4.2.2
+DISTNAME=		memtester-4.3.0
 CATEGORIES=		sysutils
 MASTER_SITES=		${HOMEPAGE}old-versions/
 
@@ -12,7 +12,6 @@ LICENSE=		gnu-gpl-v2
 
 NOT_FOR_PLATFORM=	Interix-*-* # no m[un]lock(2), so not useful anyway
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 DJB_RESTRICTED=		NO

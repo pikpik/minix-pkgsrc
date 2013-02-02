@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.40 2011/02/23 08:32:41 adam Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/25 06:57:06 asau Exp $
 
 DISTNAME=	xerces-c-3.1.1
 CATEGORIES=	textproc
@@ -10,7 +10,6 @@ COMMENT=	Validating C++ XML parser with DOM and SAX support
 LICENSE=	apache-2.0
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -33,6 +32,7 @@ CONFIGURE_ARGS+=	--enable-transcoder-iconv
 PLIST.gnuiconv=		yes
 CONFIGURE_ARGS+=	--enable-transcoder-gnuiconv
 .include "../../converters/libiconv/buildlink3.mk"
+LDFLAGS+=		-liconv
 .endif
 
 .include "../../mk/pthread.buildlink3.mk"

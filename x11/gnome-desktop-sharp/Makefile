@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.30 2012/03/03 00:12:14 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/12/15 10:36:22 ryoon Exp $
 #
 
 DISTNAME=	gnome-desktop-sharp-2.26.0
-PKGREVISION=	25
+PKGREVISION=	35
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-desktop-sharp/2.26/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/GtkSharp
 COMMENT=	C\# bindings for the GNOME platform, Desktop part
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

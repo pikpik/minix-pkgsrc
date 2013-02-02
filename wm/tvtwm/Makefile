@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2007/09/29 12:08:20 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/08 12:42:23 asau Exp $
 
 DISTNAME=	tvtwm.pl11
 PKGNAME=	tvtwm-11
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB:=window_managers/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Classic twm with virtual desktop support
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=		${WRKDIR}/tvtwm
 USE_IMAKE=	YES
 USE_TOOLS+=	lex yacc
@@ -20,5 +18,4 @@ USE_TOOLS+=	lex yacc
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/02/15 10:18:06 adam Exp $
+# $NetBSD: Makefile,v 1.10 2011/04/22 13:43:05 obache Exp $
 
 DISTNAME=	climm-0.7.1
 PKGREVISION=	1
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.climm.org/
 COMMENT=	Text-mode ICQ client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake

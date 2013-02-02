@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.46 2011/08/06 20:11:02 adam Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/03 21:54:17 wiz Exp $
 
-DISTNAME=	DBD-mysql-4.020
+DISTNAME=	DBD-mysql-4.022
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5dmy
 CATEGORIES=	databases perl5
@@ -10,8 +10,6 @@ MAINTAINER=	bad@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DBD-mysql/
 COMMENT=	Perl DBI/DBD driver for MySQL databases
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Data-ShowTable>=3.3:../../devel/p5-Data-ShowTable
 

@@ -1,0 +1,15 @@
+$NetBSD$
+
+Use standard headers.
+
+--- lib/misc.c~	1999-11-05 22:34:12.000000000 +0000
++++ lib/misc.c
+@@ -49,6 +49,8 @@
+ #include "nocol.h"
+ 
+ #include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ #include <signal.h>				/* signal numbers	*/
+ #include <sys/file.h>
+ #include <errno.h>

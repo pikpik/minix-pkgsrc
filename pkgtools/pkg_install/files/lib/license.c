@@ -1,4 +1,4 @@
-/*	$NetBSD: license.c,v 1.26 2012/01/04 11:53:38 wiz Exp $	*/
+/*	$NetBSD: license.c,v 1.29 2012/04/29 01:46:48 christos Exp $	*/
 
 /*-
  * Copyright (c) 2009 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -64,6 +64,7 @@ const char *default_acceptable_licenses =
     "zlib "
     "zpl "
     "python-software-foundation "
+    "ibm-public-license-1.0 "
     "ipafont "
     "isc "
     "info-zip "
@@ -71,7 +72,9 @@ const char *default_acceptable_licenses =
     "mplusfont "
     "cc-by-sa-v3.0 "
     "lppl-1.3c "
-    "epl-v1.0";
+    "lucent "
+    "epl-v1.0 "
+    "sleepycat-public";
 
 #ifdef DEBUG
 static size_t hash_collisions;

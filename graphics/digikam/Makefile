@@ -1,12 +1,13 @@
-# $NetBSD: Makefile,v 1.70 2012/01/13 10:55:11 obache Exp $
+# $NetBSD: Makefile,v 1.88 2012/12/16 01:52:16 obache Exp $
 #
 
 DISTNAME=	digikam-2.5.0
+PKGREVISION=	12
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=digikam/}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	wiz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.digikam.org/
 COMMENT=	Advanced digital photo management application (KDE4)
 LICENSE=	gnu-gpl-v2 AND gnu-fdl-v1.2 AND gnu-lgpl-v2.1
@@ -14,7 +15,6 @@ LICENSE=	gnu-gpl-v2 AND gnu-fdl-v1.2 AND gnu-lgpl-v2.1
 BUILD_DEPENDS+=	automoc4>=0.9.83:../../devel/automoc4
 DEPENDS+=	qt4-sqlite3-[0-9]*:../../x11/qt4-sqlite3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_PKGLOCALEDIR=	yes
 USE_LANGUAGES=		c c++
 

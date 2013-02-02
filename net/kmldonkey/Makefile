@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2012/02/06 12:41:14 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/23 17:18:31 asau Exp $
 #
 
 DISTNAME=	kmldonkey-2.0.2-kde4.4.0
 PKGNAME=	${DISTNAME:S/-kde/./}
-PKGREVISION=	10
+PKGREVISION=	16
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_KDE:=4.4.0/src/extragear/}
 EXTRACT_SUFX=	.tar.bz2
@@ -14,8 +14,6 @@ COMMENT=	KDE4 interface for mldonkey
 LICENSE=	gnu-gpl-v2
 
 BUILD_DEPENDS+=	automoc4>=0.9.87:../../devel/automoc4
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_CMAKE=	yes

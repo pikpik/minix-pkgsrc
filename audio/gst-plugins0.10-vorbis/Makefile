@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2011/04/24 15:31:09 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/12 00:24:38 asau Exp $
 #
 
 GST_PLUGINS0.10_NAME=	vorbis
 GST_PLUGINS0.10_DIRS=	ext/vorbis
 GST_PLUGINS0.10_FLAGS=	vorbis
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		2
 
 .include "../../multimedia/gst-plugins0.10-base/Makefile.common"
 

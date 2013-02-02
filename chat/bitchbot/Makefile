@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2009/03/21 20:01:11 adrianp Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 00:02:34 asau Exp $
 
 DISTNAME=	bitchbot-1.0.2
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://www.r1ch.net/projects/bitchbot/download/
 
@@ -9,7 +10,6 @@ HOMEPAGE=	http://www.r1ch.net/projects/bitchbot/
 COMMENT=	Bitchbot is a perl-based IRC bot
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl:run
 

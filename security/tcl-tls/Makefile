@@ -1,17 +1,16 @@
-# $NetBSD: Makefile,v 1.7 2010/01/17 12:02:44 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/23 18:17:00 asau Exp $
 #
 
 DISTNAME=		tls1.5.0-src
 PKGNAME=		tcl-tls-1.5.0
-PKGREVISION=		2
+PKGREVISION=		4
 CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=tls/}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://tls.sourceforge.net/
 COMMENT=		TLS (aka SSL) Channel for the Tcl language
+LICENSE=		2-clause-bsd
 
 WRKSRC=			${WRKDIR}/tls1.5
 
@@ -21,6 +20,11 @@ CONFIGURE_ENV+=		LOCALBASE=${LOCALBASE:Q}
 MAKE_ENV+=		TCLLIB="${BUILDLINK_PREFIX.tcl}/lib"
 
 TEST_TARGET=		test
+
+.include "../../lang/tcl/Makefile.version"
+
+PLIST_SUBST+=		TCL_SONUM=${TCL_SONUM}
+
 
 .include "../../lang/tcl/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"

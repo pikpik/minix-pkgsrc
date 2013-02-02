@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:36:34 seb Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:34 wiz Exp $
 #
 
 DISTNAME=	Apache2-AuthCASSimple-0.10
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	www security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Apache2/}
 
@@ -12,11 +12,9 @@ HOMEPAGE=	http://search.cpan.org/dist/Apache2-AuthCASSimple/
 COMMENT=	Apache2 module to authenticate through a CAS server
 #LICENSE=	artistic OR gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Apache2/AuthCASSimple/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 DEPENDS+=	p5-Apache-Session-Wrapper-[0-9]*:../../www/p5-Apache-Session-Wrapper
 DEPENDS+=	p5-Authen-CAS-Client-[0-9]*:../../security/p5-Authen-CAS-Client

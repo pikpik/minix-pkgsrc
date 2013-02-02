@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.45 2012/02/06 12:41:43 wiz Exp $
+# $NetBSD: Makefile,v 1.50 2012/10/08 23:00:45 adam Exp $
 
 DISTNAME=	gtkspell-2.0.16
-PKGREVISION=	8
+PKGREVISION=	12
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://gtkspell.sourceforge.net/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gtkspell.sourceforge.net/
 COMMENT=	Spell checking GtkTextView widget
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LIBTOOL=		yes

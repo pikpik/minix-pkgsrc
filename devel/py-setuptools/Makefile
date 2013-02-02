@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/10/31 02:10:34 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 22:14:01 wiz Exp $
 
 EGG_VERSION=		0.6c11
 DISTNAME=		setuptools-${EGG_VERSION}
@@ -11,8 +11,6 @@ MASTER_SITES=		http://pypi.python.org/packages/source/s/setuptools/
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://peak.telecommunity.com/DevCenter/setuptools
 COMMENT=		New Python packaging system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=		yes
 
@@ -36,16 +34,7 @@ PYSETUPINSTALLARGS+=	--root=/
 FILES_SUBST+=	PYSITELIB=${PREFIX}/${PYSITELIB}
 FILES_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX}
 
-PLIST_VARS+=	py24 py25
-
-.if ${PYPKGPREFIX} == "py24"
-PLIST.py24=		yes
-.else
-PLIST.py25=		yes
-.endif
-
-.if ${OPSYS} == "Darwin" && \
-    (${PYPKGPREFIX} != "py24" && ${PYPKGPREFIX} != "py25")
+.if ${OPSYS} == "Darwin"
 DEPENDS+=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 .endif
 

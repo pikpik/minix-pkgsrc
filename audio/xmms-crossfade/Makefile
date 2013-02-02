@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.32 2011/04/22 13:43:01 obache Exp $
+# $NetBSD: Makefile,v 1.34 2012/06/04 09:29:55 wiz Exp $
 #
 
 DISTNAME=		xmms-crossfade-0.2.9
-PKGREVISION=		8
+PKGREVISION=		9
 CATEGORIES=		audio
 MASTER_SITES=		http://www.eisenlohr.org/xmms-crossfade/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.eisenlohr.org/xmms-crossfade/
 COMMENT=		Crossfading/Gapless Plugin for XMMS
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

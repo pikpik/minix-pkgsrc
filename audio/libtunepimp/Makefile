@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2011/04/22 13:42:10 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/09/12 00:24:44 asau Exp $
 
 DISTNAME=		libtunepimp-0.5.3
-PKGREVISION=		9
+PKGREVISION=		10
 CATEGORIES=		audio
 MASTER_SITES=		ftp://ftp.musicbrainz.org/pub/musicbrainz/ \
 			http://ftp.musicbrainz.org/pub/musicbrainz/
@@ -13,8 +13,6 @@ COMMENT=		Library to support MusicBrainz enabled tagging
 # would need to disable some plugins; so the pkgsrc version currently
 # falls under gnu-gpl-v2
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2011/10/09 10:02:45 cheusov Exp $
+# $NetBSD: Makefile,v 1.9 2012/09/11 20:36:18 asau Exp $
 #
 
-DISTNAME=	paexec-0.16.1
-PKGREVISION=	1
+DISTNAME=	paexec-0.17.0
 CATEGORIES=	parallel sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=paexec/} \
 		http://mova.org/~cheusov/pub/paexec/
@@ -13,9 +12,7 @@ COMMENT=	Distributes tasks over network or CPUs
 LICENSE=	mit
 
 BUILD_DEPENDS+=		mk-configure>=0.20.0:../../devel/mk-configure
-DEPENDS+=		runawk>=0.20.0:../../lang/runawk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+DEPENDS+=		runawk>=1.4.3:../../lang/runawk
 
 REPLACE_INTERPRETER+=	runawk
 REPLACE.runawk.old=	/usr/bin/env runawk
@@ -26,7 +23,6 @@ TEST_TARGET=		test
 
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 
-MAKE_ENV+=		MANDIR=${PREFIX}/${PKGMANDIR}
 MAKE_ENV+=		AWK=${AWK:Q}
 MAKE_ENV+=		SUBPRJ_DFLT="paexec doc examples"
 MAKE_ENV+=		EGDIR=${EGDIR}

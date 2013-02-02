@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.88 2012/03/08 11:43:47 wiz Exp $
+# $NetBSD: Makefile,v 1.99 2012/12/16 01:52:30 obache Exp $
 
-DISTNAME=	nmap-5.51.6
-PKGREVISION=	3
+DISTNAME=	nmap-6.01
+PKGREVISION=	6
 CATEGORIES=	net security
 MASTER_SITES=	http://nmap.org/dist/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,7 @@ HOMEPAGE=	http://insecure.org/nmap/
 COMMENT=	Network/port scanner with OS detection
 LICENSE=	gnu-gpl-v2
 
-PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
+#PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 BUILDLINK_API_DEPENDS.libpcap+=	libpcap>=1.0.0
 BUILDLINK_API_DEPENDS.libpcre+=	libpcre>=7.6
@@ -31,12 +30,16 @@ BUILD_DEFS+=		IPV6_READY
 
 CHECK_INTERPRETER_SKIP=	bin/uninstall_zenmap
 CHECK_INTERPRETER_SKIP+=	share/zenmap/su-to-zenmap.sh
+CHECK_INTERPRETER_SKIP+=	share/nmap/nselib/data/oracle-default-accounts.lst
 CHECK_INTERPRETER_SKIP+=	share/nmap/nselib/data/oracle-sids
 CHECK_INTERPRETER_SKIP+=	share/nmap/nselib/data/passwords.lst
+CHECK_INTERPRETER_SKIP+=	share/nmap/nselib/data/rtsp-urls.txt
+CHECK_INTERPRETER_SKIP+=	share/nmap/nselib/data/snmpcommunities.lst
 
 CONFIGURE_ARGS+=	--with-libpcap=${BUILDLINK_PREFIX.libpcap}
 CONFIGURE_ARGS+=	--with-libpcre=${BUILDLINK_PREFIX.pcre}
 CONFIGURE_ARGS+=	--with-openssl=${BUILDLINK_PREFIX.openssl}
+CONFIGURE_ARGS+=	--without-subversion
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -71,5 +74,6 @@ post-build:
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../net/libpcap/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
+#.include "../../devel/subversion-base/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

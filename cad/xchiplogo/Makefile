@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.21 2010/12/23 11:44:25 dsainty Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/08 13:25:17 asau Exp $
 #
 
 DISTNAME=	xchiplogo
 PKGNAME=	xchiplogo-19991222
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	cad
 MASTER_SITES=	http://www.eleceng.adelaide.edu.au/Personal/moini/
 
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://www.eleceng.adelaide.edu.au/Personal/moini/chiplogo.html
 COMMENT=	Program for generating pretty logos on VLSI chips
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin
 

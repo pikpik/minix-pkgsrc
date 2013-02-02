@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.82 2010/03/07 15:13:37 zafer Exp $
+# $NetBSD: Makefile,v 1.84 2012/09/15 09:14:53 apb Exp $
 
 DISTNAME=	screen-4.0.3
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	misc shells
 MASTER_SITES=	ftp://ftp.uni-erlangen.de/pub/utilities/screen/ \
 		http://people.freebsd.org/~cy/distfiles/
@@ -13,7 +13,6 @@ COMMENT=	Multi-screen window manager
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:33:04 seb Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/02 21:25:35 asau Exp $
 #
 
 DISTNAME=	SQL-Abstract-Limit-0.141
 PKGNAME=	p5-SQL-Abstract-Limit-0.14.1
-PKGREVISION=	2
+PKGREVISION=	3
 SVR4_PKGNAME=	p5qal
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=SQL/}
@@ -17,8 +17,6 @@ BUILD_DEPENDS+=	p5-Test-Deep-[0-9]*:../../devel/p5-Test-Deep
 
 DEPENDS+=	p5-SQL-Abstract>=1.2:../../databases/p5-SQL-Abstract
 DEPENDS+=	p5-DBI-[0-9]*:../../databases/p5-DBI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/SQL/Abstract/Limit/.packlist
 

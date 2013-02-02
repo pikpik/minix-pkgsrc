@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/07/30 10:36:27 asau Exp $
+# $NetBSD: Makefile,v 1.15 2011/03/17 20:52:55 zafer Exp $
 
 DISTNAME=	dcdflib.f-1.1
 PKGREVISION=	3
@@ -13,7 +13,6 @@ WRKSRC=		${WRKDIR}/dcdflib.f
 BUILD_DIRS=	src
 USE_LANGUAGES=	c fortran77
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	lib share/doc/dcdflib.f
 
 post-install:

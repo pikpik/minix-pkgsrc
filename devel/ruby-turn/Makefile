@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/04/29 13:20:48 taca Exp $
 
-DISTNAME=	turn-0.9.4
+DISTNAME=	turn-0.9.6
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

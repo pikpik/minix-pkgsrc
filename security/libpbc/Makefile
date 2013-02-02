@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/07/08 16:24:53 joerg Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/11/09 03:33:28 agc Exp $
 
 DISTNAME=		pbc-0.5.10
 CATEGORIES=		security
@@ -9,7 +9,6 @@ HOMEPAGE=		http://crypto.stanford.edu/pbc/
 COMMENT=		Pair-based cryptographic library based on Gap Diffie Helman groups
 LICENSE=		gnu-lgpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 AUTO_MKDIRS=		yes
 
 GNU_CONFIGURE=		yes

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.66 2012/02/06 12:42:20 wiz Exp $
+# $NetBSD: Makefile,v 1.78 2013/01/26 18:18:05 tsutsui Exp $
 
-DISTNAME=	mlterm-3.0.6
-PKGREVISION=	3
+DISTNAME=	mlterm-3.1.7
+PKGREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mlterm/}
 
@@ -10,7 +10,6 @@ HOMEPAGE=	http://mlterm.sourceforge.net/
 COMMENT=	Multilingual terminal emulator
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 # CODESET is only supported on NetBSD in 1.5T and later - see <langinfo.h>
@@ -51,6 +50,7 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
+.include "../../graphics/gdk-pixbuf2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"

@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2012/02/09 04:46:02 asau Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/23 17:18:13 asau Exp $
 #
 
-PKGNAME=		cacti-0.8.7i
-DISTNAME=		cacti-0.8.7i-PIA-3.1
-PKGREVISION=		2
+DISTNAME=		cacti-0.8.8a
 CATEGORIES=		net
 MASTER_SITES=		http://www.cacti.net/downloads/
 
@@ -15,7 +13,6 @@ LICENSE=		gnu-gpl-v2
 USE_LANGUAGES=		# none
 USE_TOOLS+=		pax
 NO_BUILD=		yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		${PHP_PKG_PREFIX}-mysql-[0-9]*:../../databases/php-mysql
 DEPENDS+=		${PHP_PKG_PREFIX}-snmp-[0-9]*:../../net/php-snmp
@@ -46,6 +43,8 @@ REPLACE_INTERPRETER+=   php
 REPLACE.php.old=        .*php[^ ]*
 REPLACE.php.new=        ${PREFIX}/bin/php
 REPLACE_FILES.php=      cli/*.php
+
+REPLACE_PERL+=         scripts/*.pl
 
 MESSAGE_SUBST+=         CACTIDIR=${CACTIDIR}
 MESSAGE_SUBST+=         CACTI_LOGDIR=${CACTI_LOGDIR}

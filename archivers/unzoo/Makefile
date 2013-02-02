@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/03/02 03:48:37 jlam Exp $
+# $NetBSD: Makefile,v 1.12 2010/02/26 10:28:30 wiz Exp $
 #
 
 DISTNAME=	unzoo.c
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Extract zoo archives
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 NO_CONFIGURE=	YES

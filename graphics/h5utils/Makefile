@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2011/10/06 20:26:28 alnsn Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/06 14:10:59 asau Exp $
 #
 
 DISTNAME=		h5utils-1.12.1
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		graphics
 MASTER_SITES=		http://ab-initio.mit.edu/h5utils/
 
@@ -14,7 +14,6 @@ LICENSE=		mit AND gnu-gpl-v2
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-octave
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 pre-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/h5utils/colormaps

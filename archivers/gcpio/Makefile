@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.39 2010/06/27 17:51:07 joerg Exp $
+# $NetBSD: Makefile,v 1.44 2012/11/20 17:07:05 jperkin Exp $
 #
 
 DISTNAME=	cpio-2.6
 PKGNAME=	g${DISTNAME}
-PKGREVISION=	8
+PKGREVISION=	10
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_GNU:=cpio/}
 
@@ -15,26 +15,34 @@ LICENSE=	gnu-gpl-v2
 CONFLICTS+=	gtar-base-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	makeinfo
 INFO_FILES=	yes
 
-TEST_TARGET=	check
+AUTO_MKDIRS=	yes
 
-CONFIGURE_ENV+=	gt_cv_func_gnugettext1_libintl=yes
+TEST_TARGET=		check
+
+CONFIGURE_ENV+=		gt_cv_func_gnugettext1_libintl=yes
+
+CONFIGURE_ARGS+=	--program-prefix=g
+
+PLIST_VARS+=	rmt
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(GNU_PROGRAM_PREFIX) && ${GNU_PROGRAM_PREFIX} == ""
-# pax installs a "cpio" also
-CONFLICTS+=	pax-[0-9]*
+# don't include rmt if gtar won't build it
+.if ${OPSYS} != "Interix" && ${OPSYS} != "Darwin"
+PLIST.rmt=	yes
 .endif
 
-BUILD_DEFS+=		GNU_PROGRAM_PREFIX
-CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX:Q}
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
+.include "../../mk/bsd.prefs.mk"
+
+post-install:
+	${LN} -sf ${PREFIX}/bin/gcpio ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/cpio
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gcpio.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/cpio.1
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/gmt.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/mt.1
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

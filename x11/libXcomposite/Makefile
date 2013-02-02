@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/01/15 18:49:22 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/29 05:06:34 asau Exp $
 #
 
-DISTNAME=		libXcomposite-0.4.2
+DISTNAME=		libXcomposite-0.4.4
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -12,7 +12,6 @@ COMMENT=		X Composite Library
 LICENSE=		mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

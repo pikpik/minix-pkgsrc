@@ -8,5 +8,5 @@ include/X11/Xtrans/Xtranstli.c
 include/X11/Xtrans/Xtransutil.c
 include/X11/Xtrans/transport.c
 share/aclocal/xtrans.m4
+share/doc/xtrans/xtrans.xml
 share/pkgconfig/xtrans.pc
-@pkgdir share/doc/xtrans

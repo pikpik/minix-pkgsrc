@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/06/17 16:00:17 plunky Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/10 10:04:03 plunky Exp $
 #
 
 DISTNAME=	zyGrib-maps-2.4
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	misc
 MASTER_SITES=	http://www.zygrib.org/getfile.php?file=
 DISTFILES=	zyGrib_maps2.4.tgz
@@ -13,8 +13,6 @@ COMMENT=	High resolution map files for zyGrib
 LICENSE=	gnu-gpl-v3
 
 DEPENDS+=	zyGrib>=2.0:../../misc/zyGrib
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS+=	share/zyGrib/maps/gshhs
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/10/02 22:26:19 markd Exp $
+# $NetBSD: Makefile,v 1.3 2012/06/14 07:44:54 sbd Exp $
 
 KDE_LANGUAGE=	Netherlands
 KDE_LANGCODE=	nl

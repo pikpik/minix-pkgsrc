@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2008/01/06 20:08:24 heinz Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:54:33 wiz Exp $
 #
 
 DISTNAME=		uuid-1.6.2
 PKGNAME=		ossp-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.ossp.org/pkg/lib/uuid/
 
 MAINTAINER=		heinz@NetBSD.org
 HOMEPAGE=		http://www.ossp.org/pkg/lib/uuid/
 COMMENT=		C-API and command line tool for generating UUIDs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # conflicts with packages in pkgsrc-wip
 #CONFLICTS=		e2fsprogs>1.32 libuuid-[0-9]* # libuuid.* uuid.pc uuid.3

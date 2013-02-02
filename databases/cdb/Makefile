@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/07/08 16:01:04 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2009/07/23 12:43:18 schmonz Exp $
 
 DISTNAME=		cdb-0.75
 CATEGORIES=		databases
@@ -10,7 +10,6 @@ COMMENT=		Creates and reads constant databases
 LICENSE=		public-domain
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		tinycdb-[0-9]*
 

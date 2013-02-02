@@ -1,4 +1,4 @@
-# $NetBSD: bsd.prefs.mk,v 1.320 2012/01/17 20:43:25 sbd Exp $
+# $NetBSD: bsd.prefs.mk,v 1.329 2012/12/15 21:21:27 markd Exp $
 #
 # This file includes the mk.conf file, which contains the user settings.
 #
@@ -73,6 +73,11 @@ UNAME=echo Unknown
 OPSYS:=			${:!${UNAME} -s!:S/-//g:S/\///g}
 MAKEFLAGS+=		OPSYS=${OPSYS:Q}
 .endif
+
+# OS_VARIANT is used to differentiate operating systems which have a common
+# basis but offer contrasting environments, for example Linux distributions
+# or illumos forks.
+OS_VARIANT?=		# empty
 
 # The _CMD indirection allows code below to modify these values
 # without executing the commands at all.  Later, recursed make
@@ -255,13 +260,17 @@ LOWER_OPSYS_VERSUFFIX?=	${OS_VERSION}
 LOWER_VENDOR?=		hp
 
 .elif ${OPSYS} == "SunOS"
+ABI?=			32
 .  if ${MACHINE_ARCH} == "sparc"
 SPARC_TARGET_ARCH?=	sparcv7
 .  elif ${MACHINE_ARCH} == "sun4"
 MACHINE_ARCH=		sparc
 SPARC_TARGET_ARCH?=	sparcv7
-.  elif ${MACHINE_ARCH} == "i86pc" || ${MACHINE_ARCH} == "i86xpv"
-MACHINE_ARCH=		i386
+.  elif ${MACHINE_ARCH} == "i86pc" || ${MACHINE_ARCH} == "i86xpv" || ${MACHINE_ARCH} == "i386"
+LOWER_ARCH.32=		i386
+LOWER_ARCH.64=		x86_64
+LOWER_ARCH=		${LOWER_ARCH.${ABI}}
+MACHINE_ARCH=		${LOWER_ARCH}
 .  elif ${MACHINE_ARCH} == "unknown"
 .    if !defined(LOWER_ARCH)
 LOWER_ARCH!=		${UNAME} -p
@@ -271,6 +280,10 @@ MAKEFLAGS+=		LOWER_ARCH=${LOWER_ARCH:Q}
 LOWER_VENDOR?=		sun
 LOWER_OPSYS?=		solaris
 LOWER_OPSYS_VERSUFFIX=	2.${OS_VERSION:C/5.//}
+_UNAME_V!=		${UNAME} -v
+.  if !empty(_UNAME_V:Mjoyent_*)
+OS_VARIANT=		SmartOS
+.  endif
 
 .elif ${OPSYS} == "Minix"
 OS_VERSION!= echo `${UNAME} -v`
@@ -429,10 +442,10 @@ do-install:
 
 # After 2011Q1, the default is to use DESTDIR.
 USE_DESTDIR?=		yes
-# PKG_DESTDIR_SUPPORT can only be one of "destdir" or "user-destdir".
-PKG_DESTDIR_SUPPORT?=	# empty
+# PKG_DESTDIR_SUPPORT can only be one of "none", "destdir", or "user-destdir".
+PKG_DESTDIR_SUPPORT?=	user-destdir
 
-.if empty(PKG_DESTDIR_SUPPORT) || empty(USE_DESTDIR:M[Yy][Ee][Ss])
+.if ${PKG_DESTDIR_SUPPORT} == "none" || empty(USE_DESTDIR:M[Yy][Ee][Ss])
 .  if empty(USE_DESTDIR:M[Yy][Ee][Ss]) && empty(USE_DESTDIR:M[Nn][Oo])
 PKG_FAIL_REASON+=	"USE_DESTDIR must be either \`\`yes'' or \`\`no''"
 .  endif
@@ -442,12 +455,12 @@ _USE_DESTDIR=		user-destdir
 .elif ${PKG_DESTDIR_SUPPORT} == "destdir"
 _USE_DESTDIR=		destdir
 .else
-PKG_FAIL_REASON+=	"PKG_DESTDIR_SUPPORT must be \`\`destdir'' or \`\`user-destdir''."
+PKG_FAIL_REASON+=	"PKG_DESTDIR_SUPPORT must be \`\`none'', \`\`destdir'', or \`\`user-destdir''."
 .endif
 
 # This stanza serves to warn the user; deciding to not build
 # non-DESTDIR-capable packages when not in DESTDIR mode is above.
-.if empty(PKG_DESTDIR_SUPPORT)
+.if ${PKG_DESTDIR_SUPPORT} == "none"
 WARNINGS+=	"[bsd.prefs.mk] The package ${PKGNAME} is missing DESTDIR support."
 .endif
 
@@ -550,8 +563,11 @@ X11BASE?=	/usr/openwin
 .  elif ${OPSYS} == "IRIX" || ${OPSYS} == "OSF1" || ${OPSYS} == "HPUX"
 X11BASE?=	/usr
 .  elif !empty(MACHINE_PLATFORM:MDarwin-9.*-*) || \
-        !empty(MACHINE_PLATFORM:MDarwin-??.*-*)
+        !empty(MACHINE_PLATFORM:MDarwin-10.*-*) || \
+        !empty(MACHINE_PLATFORM:MDarwin-11.*-*)
 X11BASE?=	/usr/X11
+.  elif !empty(MACHINE_PLATFORM:MDarwin-??.*-*)
+X11BASE?=	/opt/X11
 .  elif ${OPSYS} == "NetBSD" && ${X11FLAVOUR:U} == "Xorg"
 X11BASE?=	/usr/X11R7
 .  elif exists(/usr/X11R7/lib/libX11.so)
@@ -580,7 +596,11 @@ X11BASE=		${LOCALBASE}
 X11PREFIX=		${LOCALBASE}
 
 # Default directory for font encodings
+.if ${X11_TYPE} == "modular"
+X11_ENCODINGSDIR?=	${X11BASE}/share/fonts/X11/encodings
+.else
 X11_ENCODINGSDIR?=	${X11BASE}/lib/X11/fonts/encodings
+.endif
 
 IMAKE_MAN_SOURCE_PATH=	man/man
 IMAKE_MAN_SUFFIX=	1

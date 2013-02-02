@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/01/24 23:21:23 marino Exp $
+# $NetBSD: Makefile,v 1.9 2012/02/15 19:46:30 hans Exp $
 #
 
 DISTNAME=	alsa-utils-1.0.22
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	ftp://ftp.alsa-project.org/pub/utils/
 COMMENT=	Advanced Linux Sound Architecture (ALSA) utilities
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS=		pkg-config gmake bash:run

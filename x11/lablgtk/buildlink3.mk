@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.14 2012/03/03 00:12:16 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.24 2012/12/15 10:36:22 ryoon Exp $
 
 BUILDLINK_TREE+=	lablgtk
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	lablgtk
 LABLGTK_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.lablgtk+=	lablgtk>=2.6.0nb3
-BUILDLINK_ABI_DEPENDS.lablgtk?=	lablgtk>=2.14.2nb15
+BUILDLINK_ABI_DEPENDS.lablgtk+=	lablgtk>=2.16.0nb6
 BUILDLINK_PKGSRCDIR.lablgtk?=	../../x11/lablgtk
 
 # gnome-panel must be exposed if and only if we built with it

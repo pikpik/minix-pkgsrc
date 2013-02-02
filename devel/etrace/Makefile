@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2011/06/19 19:40:36 dholland Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:54:29 wiz Exp $
 #
 
 DISTNAME=	etrace-2.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://ndevilla.free.fr/etrace/
 
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://ndevilla.free.fr/etrace/
 COMMENT=	Function call tracing
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	perl:run
 

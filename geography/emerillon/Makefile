@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2012/02/06 12:40:14 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 23:01:38 adam Exp $
 #
 
 DISTNAME=	emerillon-0.1.2
-PKGREVISION=	5
+PKGREVISION=	12
 CATEGORIES=	geography
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/emerillon/0.1/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ HOMEPAGE=	http://projects.gnome.org/emerillon/
 COMMENT=	Map browser
 
 BUILD_DEPENDS+=	gnome-common-[0-9]*:../../devel/gnome-common
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config intltool gmake msgfmt
@@ -25,6 +23,10 @@ GCONF_SCHEMAS=		emerillon.schemas
 #PKGCONFIG_OVERRIDE=	data/emerillon.pc.in
 
 BUILD_DEPENDS+=	vala-[0-9]*:../../lang/vala
+
+CONFIGURE_ARGS+=	VALAC=${PREFIX}/bin/valac-0.12
+
+BUILDLINK_TRANSFORM+=	rm:-DG_DISABLE_DEPRECATED
 
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"

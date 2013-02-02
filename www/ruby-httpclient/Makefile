@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/10/29 02:18:17 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/28 06:31:03 asau Exp $
 #
 
-DISTNAME=	httpclient-2.2.4
+DISTNAME=	httpclient-2.3.2
 CATEGORIES=	www
 
 MAINTAINER=	obache@NetBSD.org
@@ -9,12 +9,12 @@ HOMEPAGE=	https://github.com/nahi/httpclient
 COMMENT=	HTTP accessing library for Ruby
 LICENSE=	ruby-license
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	# none
 
 # OK with ruby-1.9 buitin one, but not with ruby18's one.
 RUBY_RDOC_REQD=	2.5.8
+
+RUBYGEM_OPTIONS+=	--format-executable
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

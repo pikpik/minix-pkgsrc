@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.21 2012/02/06 12:41:18 wiz Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.27 2012/10/08 23:00:59 adam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=	0.5.4
 
 DISTNAME=	xfce4-wavelan-plugin-${XFCE4_VERSION}
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	sysutils
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-wavelan-plugin/
 EXTRACT_SUFX=	.tar.gz

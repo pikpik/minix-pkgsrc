@@ -1,0 +1,9 @@
+@comment $NetBSD$
+include/QtOAuth/QtOAuth
+include/QtOAuth/interface.h
+include/QtOAuth/qoauth_global.h
+include/QtOAuth/qoauth_namespace.h
+lib/libqoauth.la
+lib/libqoauth.prl
+lib/pkgconfig/qoauth.pc
+qt4/mkspecs/features/oauth.prf

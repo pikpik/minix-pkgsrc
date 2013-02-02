@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.17 2008/11/10 17:21:35 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/05/03 09:55:29 obache Exp $
 #
 
 DISTNAME=		xfinans-5.9
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		finance x11
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=apps/financial/accounting/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.io.com/~acroyear/xfinans/
 COMMENT=		Xfinans is a useful financial tracking, and account balancing tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		gnuplot>=3.7:../../graphics/gnuplot
 
@@ -36,5 +34,4 @@ post-install:
 	${RM} -f ${DESTDIR}${PREFIX}/${PKGMANDIR}/cat1/xfinans.0
 
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/03/22 08:00:10 obache Exp $
+# $NetBSD: Makefile,v 1.17 2011/11/01 06:02:14 sbd Exp $
 
 DISTNAME=	ming-ruby-${VER}
 PKGNAME=	${RUBY_PKGPREFIX}-ming-${VER}
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://mingruby.rubyforge.org/
 COMMENT=	Ruby extension to drive the Ming SWF library
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pax
 USE_RUBY_SETUP=		yes

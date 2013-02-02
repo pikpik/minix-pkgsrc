@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2011/10/09 03:53:31 dholland Exp $
+# $NetBSD: Makefile,v 1.26 2012/05/03 09:55:29 obache Exp $
 #
 
 DISTNAME=	xtel-3.3.0
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	comms x11
 MASTER_SITES=	http://pficheux.free.fr/xtel/download/
 
@@ -13,8 +13,6 @@ PATCH_DIST_STRIP= -p1
 MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://pficheux.free.fr/xtel/
 COMMENT=	Minitel(r) emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 
@@ -44,7 +42,5 @@ BUILDLINK_TRANSFORM+=	rm:-lucb
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

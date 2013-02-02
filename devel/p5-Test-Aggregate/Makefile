@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 12:26:39 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:40 wiz Exp $
 
 DISTNAME=	Test-Aggregate-0.364
 PKGNAME=	p5-${DISTNAME:S/363/36.3/}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Test/}
 
@@ -20,8 +21,6 @@ DEPENDS+=	p5-Test-Simple>=0.94:../../devel/p5-Test-Simple
 
 BUILD_DEPENDS+=	p5-Test-Most>=0.21:../../devel/p5-Test-Most
 BUILD_DEPENDS+=	p5-Test-Simple>=0.94:../../devel/p5-Test-Simple
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Test/Aggregate/.packlist
 

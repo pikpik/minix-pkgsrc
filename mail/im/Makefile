@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2011/05/28 07:54:01 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:56:24 wiz Exp $
 
 DISTNAME=	im-151
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	http://tats.haun.org/im/
 
@@ -9,8 +9,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://tats.haun.org/im/
 COMMENT=	E-Mail and NetNews user interface commands
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	perl:run

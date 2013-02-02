@@ -1,9 +1,9 @@
-# $NetBSD: options.mk,v 1.21 2011/09/01 19:24:01 shattered Exp $
+# $NetBSD: options.mk,v 1.23 2012/05/31 11:58:37 imil Exp $
 
 .include "../../mk/bsd.prefs.mk"
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.openssh
-PKG_SUPPORTED_OPTIONS=	kerberos hpn-patch pam
+PKG_SUPPORTED_OPTIONS=	kerberos hpn-patch ldap pam
 
 .include "../../mk/bsd.options.mk"
 
@@ -17,7 +17,7 @@ CONFIGURE_ENV+=		ac_cv_search_k_hasafs=no
 
 .if !empty(PKG_OPTIONS:Mhpn-patch)
 PATCHFILES=		openssh-5.8p1-hpn13v11.diff.gz
-PATCH_SITES=		http://www.psc.edu/networking/projects/hpn-ssh/
+PATCH_SITES=		http://www.shatow.net/freebsd/
 PATCH_DIST_STRIP=	-p1
 .endif
 
@@ -27,4 +27,20 @@ CONFIGURE_ARGS+=	--with-pam
 PLIST_SRC+=		${.CURDIR}/PLIST.pam
 MESSAGE_SRC+=		${.CURDIR}/MESSAGE.pam
 MESSAGE_SUBST+=		EGDIR=${EGDIR}
+.endif
+
+.if !empty(PKG_OPTIONS:Mldap)
+.include "../../databases/openldap-client/buildlink3.mk"
+USE_TOOLS+=		autoconf
+CONFIGURE_ARGS+=	--with-ldap
+LPK_CONFS+=		lpk-user-example.txt		\
+			openssh-lpk_openldap.schema	\
+			openssh-lpk_sun.schema
+PLIST_SRC+=		${.CURDIR}/PLIST.ldap
+
+LPK_VERS=		0.3.14
+OPENSSH_VERS=		${DISTNAME:S/openssh-//}
+PATCHFILES=		openssh-lpk-${OPENSSH_VERS}-${LPK_VERS}.patch.gz
+PATCH_SITES=		http://gentoo.mirrors.tera-byte.com/distfiles/
+PATCH_DIST_STRIP=	-p1
 .endif

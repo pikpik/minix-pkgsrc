@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2007/09/19 06:46:52 tron Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/08 13:04:30 asau Exp $
 
 DISTNAME=	wmMoonClock-1.27
 PKGREVISION=	1
@@ -8,8 +8,6 @@ MASTER_SITES=	http://reality.sgiweb.org/freeware/source/wmMoonClock/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 # HOMEPAGE=	http://nis-www.lanl.gov/~mgh/WindowMaker/DockApps.shtml
 COMMENT=	Shows lunar ephemeris to fairly high accuracy
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Src
 USE_TOOLS+=	gmake
@@ -27,5 +25,4 @@ INSTALLATION_DIRS+=	bin ${PKGMANDIR}/man1
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

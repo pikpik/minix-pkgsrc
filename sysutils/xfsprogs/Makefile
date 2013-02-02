@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/02/03 12:41:47 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2010/10/12 16:43:00 joerg Exp $
 
 DISTNAME=	xfsprogs-2.7.3.src
 PKGNAME=	${DISTNAME:S/.src//}
@@ -9,8 +9,6 @@ MASTER_SITES=	ftp://oss.sgi.com/projects/xfs/cmd_tars/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://oss.sgi.com/projects/xfs/
 COMMENT=	XFS filesystem manipulation utilities
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake autoconf msgfmt

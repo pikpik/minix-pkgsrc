@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.61 2008/08/27 11:59:13 markd Exp $
+# $NetBSD: Makefile,v 1.63 2012/10/03 21:56:41 wiz Exp $
 
 DISTNAME=	kde-3.5.10
+PKGREVISION=	1
 CATEGORIES=	meta-pkgs x11 kde
 MASTER_SITES=	# empty
 
-MAINTAINER=	markd@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kde.org/
 COMMENT=	"meta-package" for the KDE integrated X11 desktop
 

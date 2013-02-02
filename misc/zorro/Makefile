@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/01/04 05:36:35 obache Exp $
+# $NetBSD: Makefile,v 1.27 2008/01/04 05:40:57 obache Exp $
 
 DISTNAME=	zorro-1.1p8
 PKGNAME=	zorro-1.1.8
@@ -21,8 +21,6 @@ REPLACE_INTERPRETER+=	wish
 REPLACE.wish.old=	[^[:space:]]*wish
 REPLACE.wish.new=	${WISH}
 REPLACE_FILES.wish=	zorro
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin share/zorro
 

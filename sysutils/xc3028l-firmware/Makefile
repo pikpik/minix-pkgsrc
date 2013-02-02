@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/07/11 18:26:29 jmcneill Exp $
 #
 
 DISTNAME=		xc3028L-v36.fw
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		# none
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Firmware binary image for Xceive XC3028L tuners
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes

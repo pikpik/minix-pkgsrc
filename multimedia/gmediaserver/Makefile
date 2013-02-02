@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2010/08/31 19:18:14 drochner Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:56:49 wiz Exp $
 
 DISTNAME=		gmediaserver-0.13.0
-PKGREVISION=		2
+PKGREVISION=		4
 CATEGORIES=		multimedia net
 MASTER_SITES=		http://download.savannah.gnu.org/releases/gmediaserver/
 
@@ -14,8 +14,6 @@ USE_TOOLS+=		perl pkg-config gmake makeinfo msgfmt
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
 USE_PKGLOCALEDIR=	yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--with-id3lib=${BUILDLINK_PREFIX.id3lib}
 CONFIGURE_ARGS+=	--with-libupnp=${BUILDLINK_PREFIX.libupnp}

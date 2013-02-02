@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/08/06 22:55:34 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/03/15 11:53:40 obache Exp $
 #
 
 DISTNAME=	queequeg-0.91
@@ -10,8 +10,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://queequeg.sourceforge.net/index-e.html
 COMMENT=	Tiny English grammar checker for non-native speakers
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PYPKGPREFIX}-cdb-[0-9]*:../../databases/py-cdb
 BUILD_DEPENDS+=	WordNet-[0-9]*:../../textproc/WordNet

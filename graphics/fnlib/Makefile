@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.44 2011/04/22 13:42:43 obache Exp $
+# $NetBSD: Makefile,v 1.47 2012/10/23 10:24:06 wiz Exp $
 #
 
 DISTNAME=		fnlib-0.5
-PKGREVISION=		17
+PKGREVISION=		18
 CATEGORIES=		x11 graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=enlightenment/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Color font rendering library for X11R6
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # XXX Added to stop old distfiles conflicting due to the authors updating
 # XXX fnlib-0.5.tar.gz without changing the filename.
@@ -31,6 +29,5 @@ post-install:
 .include "../../graphics/imlib/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile.common,v 1.10 2013/01/06 01:12:33 wiz Exp $
 # used by net/Transmission/Makefile
 # used by net/Transmission-gui/Makefile
 
-DISTNAME=		transmission-2.42
+DISTNAME=		transmission-2.76
 
 CATEGORIES=		net
 MASTER_SITES=		http://download.m0k.org/transmission/files/
@@ -12,7 +12,6 @@ MAINTAINER=		tnn@NetBSD.org
 HOMEPAGE=		http://www.transmissionbt.com/
 COMMENT=		Free, lightweight BitTorrent client
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config intltool msgfmt
@@ -20,7 +19,8 @@ EXTRACT_USING=		bsdtar
 
 LICENSE=		gnu-gpl-v2 AND mit
 
-PATCHDIR=		../../net/Transmission/patches
+PATCHDIR=		${.CURDIR}/../../net/Transmission/patches
+DISTINFO_FILE=		${.CURDIR}/../../net/Transmission/distinfo
 
 GNU_CONFIGURE=		yes
 LDFLAGS+=		${BUILDLINK_LDADD.getopt} ${BUILDLINK_LDADD.gettext}

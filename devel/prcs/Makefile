@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2011/10/04 20:52:09 shattered Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/03 21:55:54 wiz Exp $
 
 DISTNAME=		prcs-1.3.3
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		devel scm
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=prcs/}
 
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://prcs.sourceforge.net/
 COMMENT=		Project Revision Control System
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV+=		lispdir=${PREFIX}/share/examples/prcs

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/06/21 13:03:39 schnoebe Exp $
+# $NetBSD: Makefile,v 1.5 2011/09/30 08:33:54 fhajny Exp $
 #
 
 DISTNAME=		prosody-0.8.2
@@ -10,8 +10,6 @@ MAINTAINER=		filip@joyent.com
 HOMEPAGE=		http://prosody.im/
 COMMENT=		Flexible communications server for Jabber/XMPP written in Lua
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		lua-filesystem>=1.0:../../devel/lua-filesystem
 DEPENDS+=		lua-expat>=1.2:../../textproc/lua-expat

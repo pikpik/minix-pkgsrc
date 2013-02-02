@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2012/02/06 12:42:19 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/08 23:02:37 adam Exp $
 #
 
 DISTNAME=	libunique-3.0.2
 PKGNAME=	${DISTNAME:S/libunique/libunique3/}
-PKGREVISION=	3
+PKGREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libunique/3.0/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/LibUnique
 COMMENT=	Library for writing single instance applications
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

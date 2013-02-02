@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2010/08/21 16:32:47 seb Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/03 00:02:46 asau Exp $
 
 DISTNAME=	vicq-0.4.1
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	chat
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tar.bz2
@@ -13,7 +13,6 @@ COMMENT=	Simple icq client written in perl
 DEPENDS+=	p5-Term-ReadLine>=1.11:../../devel/p5-Term-ReadLine
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/vicq/Net/vICQ
 TEST_TARGET=		# disabled

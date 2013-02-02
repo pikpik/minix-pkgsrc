@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2012/01/08 02:41:35 schmonz Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:54:33 wiz Exp $
 #
 
-DISTNAME=		mr_1.11
+DISTNAME=		mr_1.13
 PKGNAME=		${DISTNAME:S/_/-/}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_DEBIAN:=pool/main/m/mr/}
 
@@ -11,10 +12,9 @@ HOMEPAGE=		http://kitenet.net/~joey/code/mr/
 COMMENT=		Treat multiple repositories as one combined repository
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+=		p5-libwww-[0-9]*:../../www/p5-libwww
 DEPENDS+=		p5-HTML-Parser-[0-9]*:../../www/p5-HTML-Parser
+DEPENDS+=		p5-ack-[0-9]*:../../textproc/p5-ack
 
 NO_BUILD=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2009/12/03 13:06:55 asau Exp $
+# $NetBSD: Makefile,v 1.27 2012/05/20 06:45:54 marino Exp $
 
 DISTNAME=	molden4.6
 PKGNAME=	${DISTNAME:S/molden/&-/}
@@ -18,8 +18,8 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 
+DIST_SUBDIR=		${PKGNAME_NOREV}
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=	makefile
 BUILD_TARGET=	molden

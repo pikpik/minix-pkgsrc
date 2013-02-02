@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/09/08 10:20:15 manu Exp $
 #
 
 PKGNAME=	pluged-0.1
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://plug.gnux.info/
 COMMENT=	USB plug/unplug monitoring daemon
 #LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_TRANSFORM=	rm:-Werror
 

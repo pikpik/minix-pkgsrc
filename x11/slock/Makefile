@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.2 2009/07/07 18:14:15 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2012/05/23 17:10:50 reed Exp $
 
-DISTNAME=		slock-0.7
+DISTNAME=		slock-1.0
 CATEGORIES=		x11
-MASTER_SITES=		http://suckless.org/download/
+MASTER_SITES=		http://dl.suckless.org/tools/
 
 MAINTAINER=		reed@reedmedia.net
-HOMEPAGE=		http://www.suckless.org/wiki/tools/xlib
+HOMEPAGE=		http://tools.suckless.org/slock
 COMMENT=		Simple X11 screen locker
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		mit
 
 NO_CONFIGURE=		yes
 INSTALLATION_DIRS=	bin share/doc/slock
@@ -23,7 +22,7 @@ CFLAGS+=-DHAVE_SHADOW_H
 LIBS+=	-lcrypt
 
 do-build:
-	cd ${WRKSRC} && ${CC} -c -DVERSION=\"0.7\" ${CFLAGS} slock.c && \
+	cd ${WRKSRC} && ${CC} -c -DVERSION=\"1.0\" ${CFLAGS} slock.c && \
 		${CC} -o slock slock.o -lc ${LIBS} ${X11_LDFLAGS} -lX11
 
 SPECIAL_PERMS+=	bin/slock ${SETUID_ROOT_PERMS}

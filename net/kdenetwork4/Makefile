@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2011/04/04 09:18:07 obache Exp $
+# $NetBSD: Makefile,v 1.45 2012/12/16 01:52:29 obache Exp $
 
 DISTNAME=	kdenetwork-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
+PKGREVISION=	10
 CATEGORIES=	net
 COMMENT=	Network modules for the KDE integrated X11 desktop
 
@@ -15,6 +16,7 @@ CONFLICTS=	kopete-[0-9]*
 UNLIMIT_RESOURCES+=	datasize memorysize stacksize
 
 CMAKE_ARGS+=	-DWITH_Xmms:BOOL=OFF
+CMAKE_ARGS+=	-DWITH_LibOTR:BOOL=OFF
 #CMAKE_ARGS+=	-DWITH_LibV4L2:BOOL=OFF
 
 REPLACE_PERL+= \
@@ -36,7 +38,6 @@ REPLACE_SH+= \
 .include "../../audio/alsa-lib/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libmsn+=  libmsn>=4.1
 .include "../../chat/libmsn/buildlink3.mk"
-.include "../../chat/libotr/buildlink3.mk"
 .include "../../chat/meanwhile/buildlink3.mk"
 .include "../../databases/sqlite3/buildlink3.mk"
 .include "../../devel/libidn/buildlink3.mk"

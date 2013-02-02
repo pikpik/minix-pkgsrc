@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.2 2007/04/21 05:23:03 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/11/20 20:01:45 morr Exp $
 
 WBM_NAME=	passwd
+WBM_MOD_REV=	5
+PKGREVISION=	1
 
 WBM_DEPEND_MODULES+=	useradmin
 
 COMMENT=	Webmin module to change users' system passwords
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

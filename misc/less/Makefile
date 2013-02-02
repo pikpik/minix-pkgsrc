@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2011/07/08 10:42:53 tron Exp $
+# $NetBSD: Makefile,v 1.21 2012/03/03 12:54:19 wiz Exp $
 
 DISTNAME=	less-444
 PKGREVISION=	1
@@ -9,8 +9,6 @@ MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://www.greenwoodsoftware.com/less/
 COMMENT=	Pager similar to more and pg
 LICENSE=	modified-bsd OR gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

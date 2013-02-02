@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2009/04/09 00:48:11 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2012/03/08 01:09:35 joerg Exp $
 
 DISTNAME=	genrpm-1.2
 CATEGORIES=	pkgtools
@@ -13,8 +13,6 @@ DEPENDS+=	pkg_tarup-[0-9]*:../../pkgtools/pkg_tarup
 DEPENDS+=	rpm-[0-9]*:../../misc/rpm
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 

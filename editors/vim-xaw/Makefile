@@ -1,11 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2009/02/06 06:28:53 martti Exp $
+# $NetBSD: Makefile,v 1.55 2013/01/14 23:30:34 morr Exp $
 
 PKGNAME=		vim-xaw-${VIM_VERSION}.${VIM_PATCHLEVEL}
-PKGREVISION=		1
-
 COMMENT=		Vim editor (vi clone) with X11 Athena GUI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include		"../../editors/vim-share/Makefile.common"
 
@@ -23,17 +19,7 @@ INSTALLATION_DIRS+=	${PKGMANDIR}/man1
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(XAW_TYPE) && (${XAW_TYPE} == "3d" || ${XAW_TYPE} == "xpm")
-MAKE_ENV+=		XAW_LIB="Xaw3d"
-.else
-XAW_TYPE=		standard
-MAKE_ENV+=		XAW_LIB="Xaw"
-.endif
-
-LIBS+=			-lXaw
-
-CHECK_INTERPRETER_SKIP+=${PKGMANDIR}/man1/gvim.1 ${PKGMANDIR}/man1/gview.1
-CHECK_INTERPRETER_SKIP+=${PKGMANDIR}/man1/rgvim.1 ${PKGMANDIR}/man1/rgview.1
+MAKE_ENV+=		XAW_LIB="-lXaw"
 
 post-install:
 .for f in gvim.1 gview.1 rgvim.1 rgview.1
@@ -47,7 +33,6 @@ post-install:
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
-.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/xaw.buildlink3.mk"
 .include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

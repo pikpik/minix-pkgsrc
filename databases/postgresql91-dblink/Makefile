@@ -1,9 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.4 2012/10/02 21:25:47 asau Exp $
 
 PKGNAME=	${DISTNAME:C/-/91-dblink-/}
+PKGREVISION=	1
 COMMENT=	Dblink module for remote database connections
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	postgresql91-server>=${PKGVERSION_NOREV}:../../databases/postgresql91-server
 

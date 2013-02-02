@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/02/28 11:58:48 rillig Exp $
+# $NetBSD: Makefile,v 1.18 2012/01/23 00:30:30 joerg Exp $
 
 DISTNAME=		tspc-2.1.1-src
 PKGNAME=		${DISTNAME:S/-src//}
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		ghen@NetBSD.org
 COMMENT=		Tunnel Setup Protocol Client for Freenet6
 HOMEPAGE=		http://www.hexago.com/
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	NetBSD-*-*
 ONLY_FOR_PLATFORM+=	OpenBSD-*-*

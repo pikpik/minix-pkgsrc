@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.21 2011/07/03 21:36:20 jym Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/04 09:19:18 asau Exp $
 
 DISTNAME=	gpsdrive-1.31
-PKGREVISION=	17
+PKGREVISION=	19
 CATEGORIES=	geography
 MASTER_SITES=	http://gpsdrive.kraftvoll.at/
 
-MAINTAINER=	tsarna@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gpsdrive.de/index.shtml
 COMMENT=	GPS Navigation system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	gpsd>=1.07:../../geography/gpsd
 DEPENDS+=	wget>=1:../../net/wget

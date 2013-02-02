@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2010/03/24 21:35:12 sbd Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/03 21:57:11 wiz Exp $
 
 DISTNAME=		tightvnc-1.3.10
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		net x11
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vnc-tight/}
 DISTFILES=		${DISTNAME}_unixsrc.tar.bz2
@@ -11,7 +11,6 @@ HOMEPAGE=		http://www.tightvnc.com/
 COMMENT=		Display X and Win32 desktops on remote X/Win32/Java displays
 
 CONFLICTS=		vnc-[0-9]* vncviewer-[0-9]*
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/vnc_unixsrc
 CRYPTO=			yes
@@ -35,7 +34,7 @@ RGBPATH=		${PREFIX}/share/X11/rgb
 .else
 RGBPATH=		${X11BASE}/lib/X11/rgb
 .endif
-FONTPATH=		${X11BASE}/lib/X11/fonts/misc,${X11BASE}/lib/X11/fonts/75dpi
+FONTPATH=		${X11BASE}/share/fonts/X11/misc,${X11BASE}/share/fonts/X11/75dpi,${X11BASE}/lib/X11/fonts/misc,${X11BASE}/lib/X11/fonts/75dpi
 
 SUBST_CLASSES+=		hpath
 SUBST_STAGE.hpath=	pre-configure

@@ -1,16 +1,12 @@
-# $NetBSD: Makefile,v 1.27 2012/02/06 12:40:07 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/08 23:01:32 adam Exp $
 #
 
 DISTNAME=		tme-0.8
-PKGREVISION=		8
+PKGREVISION=		14
 CATEGORIES=		emulators
 MASTER_SITES=		http://csail.mit.edu/~fredette/tme/
 
-MAINTAINER=		skrll@NetBSD.org
-# Please do not assign PR's for this package to skrll.
-# Instead, assign them to the package author, fredette.
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+MAINTAINER=		pkgsrc-users@NetBSD.org
 
 MAKE_JOBS_SAFE=		no
 

@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.24 2011/03/18 20:38:37 zafer Exp $
+# $NetBSD: Makefile,v 1.27 2012/07/11 19:01:00 wiz Exp $
 
-DISTNAME=		file-5.03
-PKGREVISION=		1
+DISTNAME=		file-5.11
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.astron.com/pub/file/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-#HOMEPAGE=
+HOMEPAGE=		http://www.darwinsys.com/file/
 COMMENT=		Tool for determining file type
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		2-clause-bsd
 
 USE_LIBTOOL=		YES
 

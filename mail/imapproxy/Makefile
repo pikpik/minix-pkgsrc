@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/04 17:57:18 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2010/03/22 08:10:36 manu Exp $
 #
 
 DISTNAME=	up-imapproxy-1.2.7
@@ -11,8 +11,6 @@ HOMEPAGE=	http://www.imapproxy.org/
 COMMENT=	Simple connection caching IMAP proxy daemon
 
 GNU_CONFIGURE=	YES
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=--exec_prefix=${DESTDIR}${PREFIX}
 BUILD_DEFS+=	VARBASE

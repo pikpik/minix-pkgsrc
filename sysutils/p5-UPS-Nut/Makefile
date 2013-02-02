@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.3 2011/09/29 14:46:22 joerg Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:43 wiz Exp $
 
 .include "../../sysutils/ups-nut/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/nut/p5-UPS-Nut/}
 COMMENT=		Network UPS Tools perl binding
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		sysutils perl5
 PATCHDIR=		${.CURDIR}/patches
 

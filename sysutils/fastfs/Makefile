@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2006/03/04 21:30:41 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2010/01/27 18:51:33 joerg Exp $
 #
 
 DISTNAME=		fastfs.c
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		# empty
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Turn on/off delayed IO on a file system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	SunOS-*-*
 

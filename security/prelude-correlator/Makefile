@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/03/23 18:01:47 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2012/03/15 11:53:37 obache Exp $
 #
 
 DISTNAME=	prelude-correlator-0.9.0-beta8
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.prelude-ids.com/download/releases/prelude-correlator/
 MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://www.prelude-ids.com/download/releases/prelude-correlator/
 COMMENT=	Intrusion event correlation engine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		VARBASE
 

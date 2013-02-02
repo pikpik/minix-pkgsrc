@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:34:07 seb Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:21 wiz Exp $
 #
 
 DISTNAME=	MooseX-Param-0.02
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=MooseX/}
 
@@ -13,8 +13,6 @@ COMMENT=	Simple role to provide a standard param method
 
 BUILD_DEPENDS+=	p5-Test-Exception>=0.21:../../devel/p5-Test-Exception
 DEPENDS+=	p5-Moose>=0.32:../../devel/p5-Moose
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/MooseX/Param/.packlist

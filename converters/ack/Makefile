@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.6 2007/01/07 09:13:49 rillig Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 00:20:09 asau Exp $
 
 DISTNAME=	ack139
 PKGNAME=	ack-1.39
+PKGREVISION=	1
 CATEGORIES=	japanese converters
 MASTER_SITES=	ftp://ftp.tohoku.ac.jp/pub/unix/ack/
 
 MAINTAINER=	kei_sun@ba2.so-net.ne.jp
 COMMENT=	Japanese code converter
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-BUILD_TARGET=     ack
+BUILD_TARGET=	ack
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/ja_JP.EUC/man1
 

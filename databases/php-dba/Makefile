@@ -1,11 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2011/08/23 13:06:48 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/07/20 12:30:36 taca Exp $
 
 MODNAME=		dba
-PKGREVISION=		2
 CATEGORIES+=		databases
 COMMENT=		PHP extension for DBM database access
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-dba-[0-9]*
 

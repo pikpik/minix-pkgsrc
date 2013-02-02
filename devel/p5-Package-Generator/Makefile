@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:34:14 seb Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:55:26 wiz Exp $
 #
 
 DISTNAME=	Package-Generator-0.103
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Package/}
 
@@ -12,10 +12,8 @@ HOMEPAGE=	http://search.cpan.org/dist/Package-Generator/
 COMMENT=	Perl 5 module to generate new packages
 LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 PERL5_PACKLIST=		auto/Package/Generator/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

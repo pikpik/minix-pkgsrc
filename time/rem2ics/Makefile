@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:36:29 seb Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:24 wiz Exp $
 #
 
 DISTNAME=	rem2ics-0.93
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	time
 MASTER_SITES=	http://mark.atwood.name/code/rem2ics/
 EXTRACT_SUFX=	.zip
@@ -12,7 +12,6 @@ HOMEPAGE=	https://launchpad.net/rem2ics/
 COMMENT=	Convert remind output into RFC2445 iCalendar format
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 
 WRKSRC=		${WRKDIR}

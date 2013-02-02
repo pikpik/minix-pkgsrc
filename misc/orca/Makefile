@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2012/01/31 12:05:04 obache Exp $
+# $NetBSD: Makefile,v 1.34 2012/03/10 10:56:15 obache Exp $
 #
 
 DISTNAME=	orca-2.32.1
@@ -23,8 +23,6 @@ DEPENDS+=	${PYPKGPREFIX}-gnome2>=2.28:../../x11/py-gnome2
 DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.22:../../x11/py-gtk2
 DEPENDS+=	gnome-speech>=0.4.25:../../audio/gnome-speech
 DEPENDS+=	gnome-mag>=0.16.2:../../x11/gnome-mag
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

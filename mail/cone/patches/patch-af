@@ -1,8 +1,8 @@
 $NetBSD$
 
---- libmail/mail.H.orig	Wed Jun 23 00:55:25 2004
+--- libmail/mail.H.orig	2011-04-04 11:58:20.000000000 +0000
 +++ libmail/mail.H
-@@ -11,10 +11,10 @@
+@@ -10,10 +10,10 @@
  #include <time.h>
  #include <string>
  

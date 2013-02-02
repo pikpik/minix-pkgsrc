@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2011/02/28 14:52:42 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/05/29 22:58:53 cheusov Exp $
 #
 
 DISTNAME=	geneweb-5.01
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	databases
 EXTRACT_SUFX=	.tgz
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/cristal/geneweb/Src/ \
@@ -31,11 +31,8 @@ RCD_SCRIPTS=	geneweb
 
 .include "../../mk/bsd.prefs.mk"
 
-# sysutils/coreutils a 'gwc' program, so conflict with it if
-# ${GNU_PROGRAM_PREFIX} == "g"
-.if ${GNU_PROGRAM_PREFIX} == "g"
+# sysutils/coreutils installs a 'gwc' program, so conflict with it
 CONFLICTS+=	coreutils-[0-9]*
-.endif
 
 # Stripped OCAML binaries don't seem to work any more.
 # Installing unstripped binaries until this is fixed.

@@ -1,0 +1,13 @@
+@comment $NetBSD$
+bin/fidentify
+bin/photorec
+bin/testdisk
+man/man8/fidentify.8
+man/man8/photorec.8
+man/man8/testdisk.8
+share/doc/${PKGNAME}/AUTHORS
+share/doc/${PKGNAME}/ChangeLog
+share/doc/${PKGNAME}/NEWS
+share/doc/${PKGNAME}/README
+share/doc/${PKGNAME}/THANKS
+@pkgdir share/doc/${PKGNAME}/html

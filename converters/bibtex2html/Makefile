@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2011/12/06 00:19:22 sbd Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/03 21:54:06 wiz Exp $
 
 DISTNAME=	bibtex2html-1.97
+PKGREVISION=	2
 CATEGORIES=	converters
 MASTER_SITES=	http://www.lri.fr/~filliatr/ftp/bibtex2html/
 
@@ -18,8 +19,6 @@ BUILD_DEPENDS+=	tex-preprint-[0-9]*:../../print/tex-preprint
 BUILD_DEPENDS+=	tex-url-[0-9]*:../../print/tex-url
 DEPENDS+=	tex-bibtex-[0-9]*:../../print/tex-bibtex
 DEPENDS+=	web2c-[0-9]*:../../print/web2c
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	perl:run

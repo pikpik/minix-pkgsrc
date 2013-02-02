@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2010/09/06 12:18:19 taca Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 00:20:11 asau Exp $
 
 DISTNAME=	jcode.pl-2.13
 PKGNAME=	${DISTNAME:S/jcode.pl/jcode-perl/}
-PKGREVISION=	4
+PKGREVISION=	5
 SVR4_PKGNAME=	jcopl
 CATEGORIES=	japanese converters perl5
 MASTER_SITES=	ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/ \
@@ -14,8 +14,6 @@ HOMEPAGE=	http://www.srekcah.org/jcode/
 COMMENT=	Perl library for Japanese character code conversion
 
 CONFLICTS+=	p5-jcode-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 

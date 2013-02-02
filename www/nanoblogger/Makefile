@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/06/24 07:40:01 jperkin Exp $
 #
 
 DISTNAME=	nanoblogger-3.4.2
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nanoblogger.sourceforge.net/
 COMMENT=	Small weblog engine for the UNIX command line
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	tidy-[0-9]*:../../www/tidy
 
@@ -27,7 +25,7 @@ SUBST_SED.fix-paths+=		-e 's,NB_BASE_DIR=`dirname $$0`,NB_BASE_DIR=${PREFIX}/sha
 
 REPLACE_BASH=	nb
 
-INSTALLATION_DIRS=	bin
+INSTALLATION_DIRS=	bin share/nanoblogger
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/nb ${DESTDIR}${PREFIX}/bin

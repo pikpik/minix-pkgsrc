@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.80 2012/02/06 12:40:25 wiz Exp $
+# $NetBSD: Makefile,v 1.85 2012/10/06 14:10:57 asau Exp $
 
 DISTNAME=	gqview-2.0.4
-PKGREVISION=	10
+PKGREVISION=	14
 CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gqview/}
 
 MAINTAINER=	drochner@NetBSD.org
 HOMEPAGE=	http://gqview.sourceforge.net/
 COMMENT=	GTK2-based graphic file viewer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		msgfmt pkg-config
 GNU_CONFIGURE=		yes

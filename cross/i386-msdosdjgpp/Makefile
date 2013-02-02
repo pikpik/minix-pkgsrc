@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2011/11/15 20:26:04 shattered Exp $
+# $NetBSD: Makefile,v 1.30 2012/01/14 03:13:04 hans Exp $
 #
 
 DISTVERSION=		2.02.0
@@ -22,6 +22,8 @@ SITES.wmemu2b.zip=	http://ftp.delorie.com/pub/djgpp/beta/ \
 			ftp://ftp.iij.ad.jp/pub/djgpp/beta/ \
 			ftp://gd.tuwien.ac.at/pc/dos/djgpp/beta/ \
 			http://gd.tuwien.ac.at/pc/dos/djgpp/beta/
+
+PKG_DESTDIR_SUPPORT=	none
 
 WRKSRC=			${WRKDIR}/djgpp
 USE_CROSS_BINUTILS=	yes

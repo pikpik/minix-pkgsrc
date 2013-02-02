@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/03/21 06:12:19 obache Exp $
+# $NetBSD: Makefile,v 1.9 2011/03/21 06:32:33 obache Exp $
 
 DISTNAME=	leim-${VERSION}
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
@@ -10,8 +10,6 @@ DISTFILES=	emacs-${VERSION}a${EXTRACT_SUFX} ${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/emacs/emacs.html
 COMMENT=	Libraries of Emacs Input Methods (for emacs21)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/emacs-${VERSION}
 GNU_CONFIGURE=	yes

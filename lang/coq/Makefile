@@ -1,22 +1,24 @@
-# $NetBSD: Makefile,v 1.39 2012/03/03 00:13:25 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2013/01/26 21:38:05 adam Exp $
 #
 
-DISTNAME=	coq-8.3pl1
-PKGREVISION=	8
+DISTNAME=	coq-8.4pl1
+PKGREVISION=	1
 CATEGORIES=	lang math
-MASTER_SITES=	http://coq.inria.fr/distrib/V8.3pl1/files/
+MASTER_SITES=	http://coq.inria.fr/distrib/V${PKGVERSION_NOREV}/files/
 
-MAINTAINER=	richards+netbsd@CS.Princeton.EDU
+MAINTAINER=	jaapb@NetBSD.org
 HOMEPAGE=	http://coq.inria.fr/
 COMMENT=	Theorem prover which extracts programs from proofs
 LICENSE=	gnu-lgpl-v2.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		gmake
-HAS_CONFIGURE=		YES
+HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	-prefix ${PREFIX}
 CONFIGURE_ARGS+=	-emacslib ${PREFIX}/share/emacs/site-lisp
+CONFIGURE_ARGS+=	-mandir ${PREFIX}/${PKGMANDIR}
+CONFIGURE_ARGS+=	-configdir ${PKG_SYSCONFDIR}/xdg/coq
+CONFIGURE_ARGS+=	-docdir ${PREFIX}/share/doc/coq
+CONFIGURE_ARGS+=	-coqdocdir ${PREFIX}/share/texmf/tex/latex/coq
 BUILD_TARGET=		world
 
 BUILDLINK_API_DEPENDS.ocaml+=	ocaml>=3.10
@@ -24,17 +26,20 @@ BUILDLINK_API_DEPENDS.ocaml+=	ocaml>=3.10
 .include "../../mk/bsd.prefs.mk"
 
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \
-	(${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64")
-PLIST_SRC=	${PKGDIR}/PLIST.opt ${PKGDIR}/PLIST
+    (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64") || \
+    (${MACHINE_ARCH} == "arm")
+PLIST.opt=	yes
+PLIST_SUBST+=	COQIDE_TYPE="opt"
+.else
+PLIST_SUBST+=	COQIDE_TYPE="byte"
 .endif
 
 .if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "x86_64")
 .  if !empty(MACHINE_PLATFORM:MLinux-*-*) || \
-      !empty(MACHINE_PLATFORM:MDarwin-*-*) || \
       !empty(MACHINE_PLATFORM:MDragonFly-*-*) || \
       !empty(MACHINE_PLATFORM:MFreeBSD-*-*) || \
       !empty(MACHINE_PLATFORM:MNetBSD-*-*)
-PLIST_SRC+=	${PKGDIR}/PLIST.natdynlink
+PLIST.natdynlink=	yes
 .  endif
 .endif
 
@@ -49,15 +54,12 @@ _STRIPFLAG_INSTALL=
 REPLACE_SH=	configure install.sh
 INSTALL_ENV+=	COQINSTALLPREFIX=${DESTDIR}
 
-PLIST_VARS=		coqide
-PKG_OPTIONS_VAR=	PKG_OPTIONS.coq
-PKG_SUPPORTED_OPTIONS=	coqide
-.include "../../mk/bsd.options.mk"
-.if !empty(PKG_OPTIONS:Mcoqide)
-.include "../../x11/lablgtk/buildlink3.mk"
-.include "../../x11/gtk2/buildlink3.mk"
-PLIST.coqide=		yes
-.endif
+PLIST_VARS=		coqide opt natdynlink doc
+
+.include "options.mk"
+
+EGDIR=		${PREFIX}/share/coq/examples
+CONF_FILES=	${EGDIR}/coqide-gtk2rc ${PKG_SYSCONFDIR}/xdg/coq/coqide-gtk2rc
 
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../lang/ocaml/buildlink3.mk"

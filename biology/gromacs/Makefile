@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2011/03/23 05:36:29 asau Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/11 20:32:12 asau Exp $
 #
 
 DISTNAME=		gromacs-4.5.5
+PKGREVISION=		2
 CATEGORIES=		biology
 MASTER_SITES=		ftp://ftp.gromacs.org/pub/gromacs/
 
@@ -9,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gromacs.org/
 COMMENT=		Molecular dynamics package
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Official recommendation is not to use the gcc 4.1.x set of compilers.
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/04/22 13:43:09 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 11:24:40 asau Exp $
 #
 
 .include "Makefile.common"
-PKGREVISION=	2
+PKGREVISION=	3
 
 COMMENT=	Command line utility and library to work with mobile phones
 
@@ -10,8 +10,6 @@ COMMENT=	Command line utility and library to work with mobile phones
 #BUILD_DEPENDS+=	doxygen-[0-9]*:../../devel/doxygen
 # for gammu-config
 DEPENDS+=	dialog-[0-9]*:../../misc/dialog
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=	yes
 CMAKE_ARGS+=	-DBUILD_SHARED_LIBS=ON

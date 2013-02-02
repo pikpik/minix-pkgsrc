@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/libusb-config
+include/usb.h
+lib/libusb.la
+lib/pkgconfig/libusb.pc

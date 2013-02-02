@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.31 2012/03/03 00:13:56 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/23 19:51:03 asau Exp $
 #
 
 DISTNAME=		gnome-commander-1.2.8.15
-PKGREVISION=		5
+PKGREVISION=		12
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-commander/1.2/}
 EXTRACT_SUFX=		.tar.xz
@@ -16,7 +16,6 @@ USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config perl
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 #Problem with heimdal, on which this package depends via another packages.
 #Simple solution is delete link to fnmatch.h from work directory of package

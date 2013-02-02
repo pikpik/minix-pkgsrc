@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/09/13 10:49:04 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:54:25 wiz Exp $
 #
 
 DISTNAME=		build-farm-4_5
 PKGNAME=		${DISTNAME:S/build-farm/pgbuildfarm/:S/_/./}
+PKGREVISION=		1
 CATEGORIES=		databases
 MASTER_SITES=		http://pgfoundry.org/frs/download.php/3028/
 EXTRACT_SUFX=		.tgz
@@ -11,8 +12,6 @@ MAINTAINER=		nico@orgrim.net
 HOMEPAGE=		http://www.pgbuildfarm.org/
 COMMENT=		PostgreSQL Build Farm client
 LICENSE=		postgresql-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		scmgit-base>=1.6:../../devel/scmgit-base
 DEPENDS+=		p5-libwww>=5.0:../../www/p5-libwww
@@ -39,8 +38,6 @@ SUBST_MESSAGE.conf=	Fixing default value for build-farm.conf
 
 INSTALLATION_DIRS+= ${PMDIR}
 INSTALLATION_DIRS+= ${EGDIR}
-
-.include "../../lang/perl5/dirs.mk"
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/*.pl ${DESTDIR}${PREFIX}/bin

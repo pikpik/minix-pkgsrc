@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/03/11 11:22:22 zafer Exp $
+# $NetBSD: Makefile,v 1.9 2012/03/02 16:25:39 hans Exp $
 #
 
 DISTNAME=	error-0.0
@@ -7,8 +7,6 @@ MASTER_SITES=	# ftp://ftp.gw.com/pub/people/christos/
 
 MAINTAINER=	christos@NetBSD.org
 COMMENT=	Insert compiler errors in source files as comments
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_FEATURES+=		cdefs
 USE_BSD_MAKEFILE=	yes

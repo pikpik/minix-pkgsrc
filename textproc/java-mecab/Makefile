@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/12/28 01:01:19 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/27 11:53:06 obache Exp $
 #
 
 .include "../../textproc/mecab/Makefile.common"
@@ -9,8 +9,6 @@ CATEGORIES+=	java
 
 COMMENT=	MeCab java module
 LICENSE=	gnu-gpl-v2 OR gnu-lgpl-v2.1 OR modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 

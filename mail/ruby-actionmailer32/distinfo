@@ -1,5 +1,5 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.8 2013/01/05 14:22:02 taca Exp $
 
-SHA1 (actionmailer-3.2.2.gem) = c7677ace3048dc167cc0ba301eb69263d5f8ccea
-RMD160 (actionmailer-3.2.2.gem) = c72f0a549860920367c7dda5350d73f2a6ca9eb2
-Size (actionmailer-3.2.2.gem) = 27136 bytes
+SHA1 (actionmailer-3.2.11.gem) = 933cd2821b30cdff4a2e0b5cc63f4d2c6b29affe
+RMD160 (actionmailer-3.2.11.gem) = d395e459827271e3be2cdca5c37914d7c5fdc0f2
+Size (actionmailer-3.2.11.gem) = 22016 bytes

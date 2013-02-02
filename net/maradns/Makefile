@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2012/02/20 14:08:07 cheusov Exp $
+# $NetBSD: Makefile,v 1.25 2012/02/28 21:55:27 cheusov Exp $
 
 DISTNAME=	maradns-2.0.05
 CATEGORIES=	net
@@ -10,8 +10,6 @@ HOMEPAGE=	http://www.maradns.org/
 COMMENT=	Secure DNS server for *NIX systems
 
 USE_TOOLS+=	awk:build
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 PTHREAD_OPTS+=		require

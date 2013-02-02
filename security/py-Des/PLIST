@@ -1,0 +1,4 @@
+@comment $NetBSD$
+${PYSITELIB}/pyDes.py
+${PYSITELIB}/pyDes.pyc
+${PYSITELIB}/pyDes.pyo

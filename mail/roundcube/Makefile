@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.38 2012/01/16 13:08:14 taca Exp $
+# $NetBSD: Makefile,v 1.49 2012/12/05 15:38:01 taca Exp $
 
-DISTNAME=	roundcubemail-0.7.2-dep
+DISTNAME=	roundcubemail-0.8.4-dep
 PKGNAME=	${DISTNAME:S/mail-/-/:S/-dep//}
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=roundcubemail/}
+PKGREVISION=	1
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	http://roundcube.net/
 COMMENT=	Browser-based multilingual IMAP client
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PHP_PKG_PREFIX}-pear-Net_SMTP>=1.4.2:../../net/pear-Net_SMTP
 DEPENDS+=	${PHP_PKG_PREFIX}-pear-Mail_Mime>=1.8.1:../../mail/pear-Mail_Mime
@@ -25,9 +24,8 @@ USE_TOOLS+=		pax
 NO_BUILD=		yes
 
 INSTALLATION_DIRS=	${RCDIR}/plugins ${RCDIR}/program ${RCDIR}/skins
-INSTALLATION_DIRS+=	${EGDIR}/SQL ${DOCDIR} ${RCDIR}/bin
+INSTALLATION_DIRS+=	${RCDIR}/bin ${RCDIR}/SQL ${DOCDIR} ${EGDIR}
 
-.include "../../mk/bsd.prefs.mk"
 .include "../../lang/php/phpversion.mk"
 
 PKG_SYSCONFSUBDIR?=	roundcube
@@ -42,7 +40,7 @@ BUILD_DEFS+=		VARBASE WWW_USER WWW_GROUP APACHE_USER APACHE_GROUP
 RCDIR=			${PREFIX}/share/roundcube
 EGDIR=			${PREFIX}/share/examples/roundcube
 DOCDIR=			${PREFIX}/share/doc/roundcube
-PAX_DIRS=		plugins program skins installer bin
+PAX_DIRS=		plugins program skins installer
 
 CONF_PLUGINS=		acl additional_message_headers enigma help \
 			jqueryui managesieve newmail_notifier password \
@@ -101,19 +99,18 @@ pre-install:
 	${FIND} ${WRKSRC} -name "*.orig" -print | ${XARGS} ${RM} -f
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/roundcube.conf \
-		${DESTDIR}${EGDIR}/roundcube.conf
 	${INSTALL_DATA} ${WRKSRC}/INSTALL ${DESTDIR}${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/LICENSE ${DESTDIR}${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/README ${DESTDIR}${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.md ${DESTDIR}${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/UPGRADING ${DESTDIR}${DOCDIR}
-
-	${INSTALL_DATA} ${WRKSRC}/SQL/*.sql ${DESTDIR}${EGDIR}/SQL/
 
 	${INSTALL_DATA} ${WRKSRC}/.htaccess ${DESTDIR}${RCDIR}/
 	${INSTALL_DATA} ${WRKSRC}/index.php ${DESTDIR}${RCDIR}/
 	${INSTALL_DATA} ${WRKSRC}/robots.txt ${DESTDIR}${RCDIR}/
+	${INSTALL_DATA} ${WRKSRC}/SQL/*.sql ${DESTDIR}${RCDIR}/SQL/
 
+	${INSTALL_DATA} ${WRKSRC}/roundcube.conf \
+		${DESTDIR}${EGDIR}/roundcube.conf
 	${INSTALL_DATA} ${WRKSRC}/config/mimetypes.php \
 		${DESTDIR}${EGDIR}/mimetypes.php
 	${INSTALL_DATA} ${WRKSRC}/config/db.inc.php.dist \
@@ -121,7 +118,10 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/config/main.inc.php.dist \
 		${DESTDIR}${EGDIR}/main.inc.php.dist
 
+	${INSTALL_SCRIPT} ${WRKSRC}/bin/*.sh ${DESTDIR}${RCDIR}/bin/
+
 .for i in ${PAX_DIRS}
+	${INSTALL_DATA_DIR} ${DESTDIR}${RCDIR}/${i}
 	cd ${WRKSRC}/${i} && ${PAX} -rw . ${DESTDIR}${RCDIR}/${i}
 	${FIND} ${DESTDIR}${RCDIR}/${i} -type f | \
 		${XARGS} ${CHMOD} ${SHAREMODE}
@@ -132,7 +132,7 @@ do-install:
 
 .for f in ${CONF_PLUGINS}
 	${MKDIR} ${DESTDIR}${EGDIR}/plugins/${f}
-	test -f ${DESTDIR}${EGDIR}/plugins/${f}/config.inc.php ] ||
+	test -f ${DESTDIR}${EGDIR}/plugins/${f}/config.inc.php || \
 		${MV} ${DESTDIR}${RCDIR}/plugins/${f}/config.inc.php.dist \
 			${DESTDIR}${EGDIR}/plugins/${f}/config.inc.php
 .endfor

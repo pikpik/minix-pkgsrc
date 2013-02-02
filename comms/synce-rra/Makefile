@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/06/20 01:09:09 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/02/16 17:54:26 hans Exp $
 #
 
 DISTNAME=		synce-rra-0.9.1
@@ -12,8 +12,6 @@ PATCH_SITES=		http://synce.sourceforge.net/tmp/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://synce.sourceforge.net/
 COMMENT=		Remote Replication Agent Connection protocol library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

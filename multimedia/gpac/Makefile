@@ -1,22 +1,19 @@
-# $NetBSD: Makefile,v 1.21 2012/03/06 17:38:59 ryoon Exp $
+# $NetBSD: Makefile,v 1.27 2012/11/03 01:58:36 ryoon Exp $
 #
 
-DISTNAME=	gpac-0.4.5
-PKGREVISION=	15
+DISTNAME=	gpac-0.5.0
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gpac/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://gpac.sourceforge.net/
+HOMEPAGE=	http://gpac.wp.mines-telecom.fr/
 COMMENT=	Open source multimedia framework
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=		${WRKDIR}/gpac
-USE_TOOLS+=	gmake
+USE_TOOLS+=	gmake grep gsed
 USE_LANGUAGES=	c c++
 # not really GNU configure, but close enough
 GNU_CONFIGURE=	yes

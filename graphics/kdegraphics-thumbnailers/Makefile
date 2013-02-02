@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2011/01/23 07:55:13 markd Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/08 23:01:46 adam Exp $
 
 DISTNAME=	kdegraphics-thumbnailers-${_KDE_VERSION}
+PKGREVISION=	5
 CATEGORIES=	graphics
 COMMENT=	graphics file format thumbnailers for KDE
 

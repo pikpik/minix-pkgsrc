@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.13 2011/10/17 10:32:54 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:57:00 wiz Exp $
 
 DISTNAME=	Net-Amazon-S3-0.54
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-Amazon-S3/
 COMMENT=	Framework for accessing amazon.com via SOAP and XML/HTTP
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Class-Accessor>=0:../../devel/p5-Class-Accessor
 DEPENDS+=	p5-Data-Stream-Bulk>=0:../../net/p5-Data-Stream-Bulk

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2007/12/02 12:59:11 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2009/07/25 10:26:17 obache Exp $
 #
 
 DISTNAME=	dnstop-20090128
@@ -8,8 +8,6 @@ MASTER_SITES=	http://dns.measurement-factory.com/tools/dnstop/src/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://dns.measurement-factory.com/tools/dnstop/
 COMMENT=	Diagnose tcpdump trace for DNS queries/replies
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

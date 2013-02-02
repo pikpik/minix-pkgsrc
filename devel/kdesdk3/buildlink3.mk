@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.32 2012/02/06 12:39:52 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.37 2012/12/16 01:52:10 obache Exp $
 
 BUILDLINK_TREE+=	kdesdk
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	kdesdk
 KDESDK_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.kdesdk+=	kdesdk>=3.5.0nb1
-BUILDLINK_ABI_DEPENDS.kdesdk?=	kdesdk>=3.5.10nb23
+BUILDLINK_ABI_DEPENDS.kdesdk+=	kdesdk>=3.5.10nb32
 BUILDLINK_PKGSRCDIR.kdesdk?=	../../devel/kdesdk3
 
 BDB_ACCEPTED?=		db4 db5

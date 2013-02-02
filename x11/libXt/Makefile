@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2010/09/10 19:01:46 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2012/06/03 17:33:41 wiz Exp $
 #
 
-DISTNAME=		libXt-1.0.8
+DISTNAME=		libXt-1.1.3
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -12,7 +12,6 @@ COMMENT=		X Toolkit Intrinsics library
 LICENSE=		mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

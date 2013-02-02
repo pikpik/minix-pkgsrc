@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.39 2012/03/03 00:14:01 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2012/10/08 13:04:18 asau Exp $
 #
 
 DISTNAME=		gDeskCal-0_57_1
 PKGNAME=		gdeskcal-0.57.1
-PKGREVISION=		15
+PKGREVISION=		20
 CATEGORIES=		time
 MASTER_SITES=		http://www.pycage.de/download/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.pycage.de/\#gdeskcal
 COMMENT=		Desktop calendar
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/gDeskCal-0.57.1
 NO_BUILD=	yes

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2010/04/01 06:34:14 obache Exp $
+# $NetBSD: Makefile,v 1.26 2012/09/11 22:37:11 asau Exp $
 #
 
 DISTNAME=	bonnie++-1.03e
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.coker.com.au/bonnie++/
 EXTRACT_SUFX=	.tgz
@@ -12,7 +12,6 @@ HOMEPAGE=	http://www.coker.com.au/bonnie++/
 COMMENT=	Enhanced performance Test of Filesystem I/O
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		YES

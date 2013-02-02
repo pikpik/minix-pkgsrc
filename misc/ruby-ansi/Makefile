@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/03/01 15:10:40 taca Exp $
 
-DISTNAME=	ansi-1.4.2
+DISTNAME=	ansi-1.4.3
 CATEGORIES=	misc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

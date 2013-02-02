@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2008/09/06 20:54:31 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/02 21:25:16 asau Exp $
 
 DISTNAME=	cstore0.2
 PKGNAME=	cstore-0.2
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	databases
 MASTER_SITES=	http://db.lcs.mit.edu/projects/cstore/ \
 		http://db.csail.mit.edu/data/
@@ -11,8 +11,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} data4.tar.gz D6.data.ros.gz
 MAINTAINER=	agc@NetBSD.org
 HOMEPAGE=	http://db.lcs.mit.edu/projects/cstore/
 COMMENT=	Read-optimised column store relational DBMS
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BDB_ACCEPTED=		db4
 USE_LANGUAGES=		c c++

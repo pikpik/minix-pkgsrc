@@ -1,4 +1,4 @@
-# $NetBSD: extension.mk,v 1.28 2010/07/24 00:57:17 gdt Exp $
+# $NetBSD: extension.mk,v 1.30 2012/05/13 12:54:54 obache Exp $
 
 .include "../../lang/python/pyversion.mk"
 
@@ -44,10 +44,16 @@ do-install:
 # appears to be that creating egg info files was new in Python 2.5.
 PY_NO_EGG?=		yes
 .if !empty(PY_NO_EGG:M[yY][eE][sS])
-# see python25/patches/patch-av
+# see python26/patches/patch-av
 INSTALL_ENV+=		PKGSRC_PYTHON_NO_EGG=defined
 .endif
 
 .if defined(PY_PATCHPLIST)
 PLIST_SUBST+=	PYINC=${PYINC} PYLIB=${PYLIB} PYSITELIB=${PYSITELIB}
+.endif
+
+# prepare Python>=32 bytecode file location change
+.if empty(_PYTHON_VERSION:M2?) && ${_PYTHON_VERSION} != "31"
+PLIST_AWK+=	-f ${PKGSRCDIR}/lang/python/plist-python.awk
+PLIST_AWK_ENV+=	PYTHON_SOABI="cpython-${_PYTHON_VERSION}"
 .endif

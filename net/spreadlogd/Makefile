@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2011/02/11 21:22:03 tnn Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:57:11 wiz Exp $
 #
 
 DISTNAME=	spreadlogd
 PKGNAME=	spreadlogd-2.0.0
-PKGREVISION=	11
+PKGREVISION=	12
 CATEGORIES=	net
 MASTER_SITES=	http://www.backhand.org/mod_log_spread/
 DIST_SUBDIR=	${PKGNAME_NOREV}
@@ -11,8 +11,6 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 MAINTAINER=	mark@exonetric.com
 HOMEPAGE=	http://www.backhand.org/mod_log_spread/
 COMMENT=	Daemon to log to file, messages from spread toolkit clients
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	perl:run yacc

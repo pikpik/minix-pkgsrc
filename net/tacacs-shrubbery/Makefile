@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/11/30 23:47:29 pettai Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/23 17:19:11 asau Exp $
 #
 
-DISTNAME=	tacacs+-F4.0.4.22
+DISTNAME=	tacacs+-F4.0.4.26
 PKGNAME=	${DISTNAME:S,-F,-,}
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.shrubbery.net/pub/tac_plus/
@@ -13,8 +13,6 @@ LICENSE=	cisco-license
 
 CONFLICTS+=	tacacs-[0-9]*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=	id # used in options.mk
 MAKE_JOBS_SAFE=	no
 
@@ -22,7 +20,7 @@ MAKE_JOBS_SAFE=	no
 .include "options.mk"
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	bison perl
+USE_TOOLS+=	bison flex perl
 USE_LIBTOOL=    yes
 USE_LANGUAGES=	c c++
 USE_FEATURES+=	snprintf
@@ -35,10 +33,6 @@ BUILD_DEFS+=		VARBASE
 
 .if !empty(LOWER_OPSYS:Mirix5*)
 CPPFLAGS+=		-Duint16_t=u_int16_t -Duint32_t=u_int32_t
-.endif
-
-.if exists(/usr/include/pam/pam_appl.h) # MacOS X prior to 10.6
-CPPFLAGS+=		-DPAM-PAM
 .endif
 
 INSTALLATION_DIRS=	lib sbin ${PKGMANDIR}/man3 ${PKGMANDIR}/man5 \

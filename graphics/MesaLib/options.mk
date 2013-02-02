@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.15 2009/08/25 05:27:57 hasso Exp $
+# $NetBSD: options.mk,v 1.18 2012/09/28 11:33:47 jperkin Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.MesaLib
 PKG_SUPPORTED_OPTIONS=
@@ -34,7 +34,7 @@ PKG_SUPPORTED_OPTIONS+=		dri
 PKG_SUGGESTED_OPTIONS+=		dri
 .endif
 
-.if ${OPSYS} == "DragonFly"
+.if ${OPSYS} == "DragonFly" || (${OPSYS} == "SunOS" && ${OS_VERSION} == "5.11")
 PKG_SUGGESTED_OPTIONS+=		dri
 .endif
 
@@ -53,6 +53,7 @@ BUILD_TARGET_SUFFIX=	# empty
 BUILD_TARGET=	pkgsrc-dri${BUILD_TARGET_SUFFIX}
 PLIST.dri=	yes
 BUILDLINK_API_DEPENDS.libdrm+= libdrm>=2.4.9
+.  include "../../sysutils/libpciaccess/buildlink3.mk"
 .  include "../../graphics/MesaLib/dri.mk"
 .else
 BUILD_TARGET=	pkgsrc

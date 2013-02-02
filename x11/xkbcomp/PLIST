@@ -1,3 +1,4 @@
 @comment $NetBSD$
 bin/xkbcomp
+lib/pkgconfig/xkbcomp.pc
 man/man1/xkbcomp.1

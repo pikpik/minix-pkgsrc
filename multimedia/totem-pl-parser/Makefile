@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.34 2012/02/06 12:41:08 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/30 20:05:51 drochner Exp $
 #
 
-DISTNAME=	totem-pl-parser-2.32.6
-PKGREVISION=	3
+DISTNAME=	totem-pl-parser-3.4.3
+PKGREVISION=	1
 CATEGORIES=	multimedia
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/totem-pl-parser/2.32/}
-EXTRACT_SUFX=	.tar.bz2
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/totem-pl-parser/3.4/}
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	totem playlist parser
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	DATADIRNAME=share
@@ -25,7 +23,6 @@ PKGCONFIG_OVERRIDE+=	totem-plparser.pc.in
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../mail/gmime24/buildlink3.mk"
-.include "../../x11/gtk2/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../net/libsoup24/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

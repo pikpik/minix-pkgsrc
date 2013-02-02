@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/11/12 09:10:00 martti Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/28 06:30:08 asau Exp $
 
 DISTNAME=	mod_authn_sasl-${DISTVERS}
 #PKGREVISION=	1
 PKGNAME=	${APACHE_PKG_PREFIX}-authn-sasl-${DISTVERS}
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mod-authn-sasl/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mod-authn-sasl.sourceforge.net/
 COMMENT=	Apache module for SASL authentication
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_APACHE_ACCEPTED=	apache22
 

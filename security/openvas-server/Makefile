@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2012/02/06 12:41:27 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/15 10:06:17 obache Exp $
 #
 
 DISTNAME=	openvas-server-2.0.0
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	http://wald.intevation.org/frs/download.php/550/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openvas.org/
 COMMENT=	Server for the Open Vulnerability Assessment System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

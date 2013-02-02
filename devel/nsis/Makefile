@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/02/03 15:29:46 sborrill Exp $
+# $NetBSD: Makefile,v 1.14 2010/11/01 00:08:10 wiz Exp $
 #
 
 DISTNAME=	nsis-${NSIS_VER}
@@ -16,8 +16,6 @@ COMMENT=	Scriptable system to build Windows installers
 DEPENDS+=	scons>=0.96.91:../../devel/scons
 
 USE_TOOLS+=	pax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NSIS_SRC=	${DISTNAME:=-src}
 NSIS_VER=	2.12

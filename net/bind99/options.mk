@@ -1,9 +1,12 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.3 2012/07/10 10:23:03 sbd Exp $
 
 PKG_OPTIONS_VAR=        PKG_OPTIONS.bind99
 PKG_SUPPORTED_OPTIONS=  bind-dig-sigchase bind-xml-statistics-server
-PKG_SUPPORTED_OPTIONS+=	inet6 threads mysql pgsql ldap dlz-filesystem
+PKG_SUPPORTED_OPTIONS+=	inet6 threads readline mysql pgsql ldap dlz-filesystem
+PKG_SUPPORTED_OPTIONS+=	rrl
+PKG_SUGGESTED_OPTIONS+=	readline
 
+PTHREAD_OPTS+=		native
 .include "../../mk/pthread.buildlink3.mk"
 
 .if defined(PTHREAD_TYPE) && (${PTHREAD_TYPE} == "none") || \
@@ -51,6 +54,11 @@ CONFIGURE_ARGS+=	--with-dlz-ldap=${BUILDLINK_PREFIX.openldap-client}
 CONFIGURE_ARGS+=	--with-dlz-filesystem
 .endif
 
+.if !empty(PKG_OPTIONS:Mrrl)
+PATCHFILES=rl-9.9.2.patch
+PATCH_SITES=http://ss.vix.com/~vixie/
+.endif
+
 ###
 ### The statistics server in bind99 and later needs libxml2
 ###
@@ -74,9 +82,20 @@ CONFIGURE_ARGS+=	--disable-ipv6
 ### pthreads support (also see magic above)
 ###
 .if !empty(PKG_OPTIONS:Mthreads)
+PTHREAD_AUTO_VARS=	yes
 CONFIGURE_ARGS+=	--enable-threads
 .else
 CONFIGURE_ARGS+=	--disable-threads
+.endif
+
+###
+### readline support in dig(1) and nsupdate(1).
+###
+.if !empty(PKG_OPTIONS:Mreadline)
+.include "../../devel/readline/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-readline
+.else
+CONFIGURE_ARGS+=	--without-readline
 .endif
 
 ###

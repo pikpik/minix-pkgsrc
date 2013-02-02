@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2012/02/06 12:40:15 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2012/12/16 01:52:15 obache Exp $
 #
 
 DISTNAME=	merkaartor-0.17.2
-PKGREVISION=	6
+PKGREVISION=	15
 CATEGORIES=	geography
 MASTER_SITES=	http://merkaartor.be/attachments/download/253/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +11,6 @@ MAINTAINER=	jkunz@NetBSD.org
 HOMEPAGE=	http://www.merkaartor.be/
 COMMENT=	Merkaartor is an OpenStreetMap mapping program
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 QMAKE=			${QTDIR}/bin/qmake
@@ -44,4 +43,5 @@ do-configure:
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
+.include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

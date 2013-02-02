@@ -1,4 +1,4 @@
-# $NetBSD: bsd.buildlink3.mk,v 1.209 2010/12/03 18:59:20 abs Exp $
+# $NetBSD: bsd.buildlink3.mk,v 1.215 2012/09/16 07:37:10 sbd Exp $
 #
 # Copyright (c) 2004 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -272,6 +272,11 @@ ${_depmethod_}+=	${_BLNK_ADD_TO.${_depmethod_}}
 #				exist before they're added to the search
 #				paths.
 #
+#  BUILDLINK_AUTO_DIRS.<pkg>	"yes" or "no" for whether BUILDLINK_{INCDIRS,
+#				LIBDIRS,RPATHDIRS}.<pkg> should automatically
+#				be added to the compiler/linker search paths.
+#				Defaults to "yes".
+#
 .for _pkg_ in ${_BLNK_PACKAGES}
 #
 # If we're using the built-in package, then provide sensible defaults.
@@ -291,6 +296,9 @@ BUILDLINK_PREFIX.${_pkg_}?=	/boot/common
 .    else
 # XXX: elsewhere?
 BUILDLINK_PREFIX.${_pkg_}?=	/
+.    endif
+.    if !empty(LIBABISUFFIX)
+BUILDLINK_LIBDIRS.${_pkg_}?=	lib${LIBABISUFFIX}
 .    endif
 .  endif
 #
@@ -351,10 +359,17 @@ BUILDLINK_PREFIX.${_pkg_}=	BUILDLINK_PREFIX.${_pkg_}_not_found
 MAKEVARS+=	BUILDLINK_PREFIX.${_pkg_}
 .  endif
 
+.  if empty(BUILDLINK_PREFIX.${_pkg_}:N/usr:N/boot/common:N/)
+BUILDLINK_DIR.${_pkg_}=	${BUILDLINK_PREFIX.${_pkg_}}
+.  else
+BUILDLINK_DIR.${_pkg_}= ${BUILDLINK_DIR}
+.  endif
+
 BUILDLINK_AUTO_VARS.${_pkg_}?=	yes
 BUILDLINK_CPPFLAGS.${_pkg_}?=	# empty
 BUILDLINK_LDFLAGS.${_pkg_}?=	# empty
 BUILDLINK_LIBS.${_pkg_}?=	# empty
+BUILDLINK_AUTO_DIRS.${_pkg_}?=	yes
 BUILDLINK_INCDIRS.${_pkg_}?=	include
 BUILDLINK_LIBDIRS.${_pkg_}?=	lib
 .  if !empty(BUILDLINK_DEPMETHOD.${_pkg_}:Mfull)
@@ -399,6 +414,8 @@ BUILDLINK_LIBS+=	${_flag_}
 .      endif
 .    endfor
 .  endif
+. if defined(BUILDLINK_AUTO_DIRS.${_pkg_}) && \
+     !empty(BUILDLINK_AUTO_DIRS.${_pkg_}:M[yY][eE][sS])
 .  if !empty(BUILDLINK_INCDIRS.${_pkg_})
 .    for _dir_ in ${BUILDLINK_INCDIRS.${_pkg_}:S/^/${BUILDLINK_PREFIX.${_pkg_}}\//}
 .      if exists(${_dir_})
@@ -426,6 +443,7 @@ BUILDLINK_LDFLAGS+=	${COMPILER_RPATH_FLAG}${_dir_}
 .      endif
 .    endfor
 .  endif
+. endif
 .endfor
 #
 # Add the depot directory library directory for this package to the
@@ -732,7 +750,7 @@ _BLNK_LT_ARCHIVE_FILTER_SED_SCRIPT.${_pkg_}+=				\
 	-e "/^libdir=/s,/usr\(/lib/[^${_BLNK_SEP}]*\),${BUILDLINK_DIR}\\1,g" \
 	-e "/^libdir=/s,${DEPOTBASE}/[^/${_BLNK_SEP}]*\(/[^${_BLNK_SEP}]*\),${BUILDLINK_DIR}\\1,g"
 
-.    if ${X11_TYPE} == "modular"
+.    if ${X11_TYPE} != "modular"
 _BLNK_LT_ARCHIVE_FILTER_SED_SCRIPT.${_pkg_}+=				\
 	-e "/^libdir=/s,${X11BASE}\(/[^${_BLNK_SEP}]*\),${BUILDLINK_X11_DIR}\\1,g"
 .    endif
@@ -825,10 +843,10 @@ _BLNK_PASSTHRU_RPATHDIRS+=	${X11BASE}/lib
 #
 _BLNK_PASSTHRU_RPATHDIRS+=	${BUILDLINK_PASSTHRU_RPATHDIRS}
 #
-# Strip out /usr/lib as it's always automatically in the runtime library
-# search path.
+# Strip out /usr/lib (and /usr/lib${LIBABISUFFIX}}) as it's always 
+# automatically in the runtime library search path.
 #
-_BLNK_PASSTHRU_RPATHDIRS:=	${_BLNK_PASSTHRU_RPATHDIRS:N/usr/lib}
+_BLNK_PASSTHRU_RPATHDIRS:=	${_BLNK_PASSTHRU_RPATHDIRS:N/usr/lib:N/usr/lib${LIBABISUFFIX}}
 
 _BLNK_MANGLE_DIRS=	# empty
 _BLNK_MANGLE_DIRS+=	${BUILDLINK_DIR}
@@ -899,6 +917,10 @@ _BLNK_PHYSICAL_PATH.${_var_}!=						\
 MAKEVARS+=	_BLNK_PHYSICAL_PATH.${_var_}
 .endfor
 
+#
+# Add any package specified transformations (l:, etc.)
+#
+_BLNK_TRANSFORM+=	${BUILDLINK_TRANSFORM}
 # Transform all references to the physical paths to some important
 # directories into their given names.
 #
@@ -1008,10 +1030,6 @@ _BLNK_TRANSFORM+=	untransform:sub-mangle:${LOCALBASE}:${_BLNK_MANGLE_DIR.${LOCAL
 .if defined(USE_X11) && ${X11_TYPE} != "modular"
 _BLNK_TRANSFORM+=	untransform:sub-mangle:${X11BASE}:${_BLNK_MANGLE_DIR.${X11BASE}}
 .endif
-#
-# Add any package specified transformations (l:, etc.)
-#
-_BLNK_TRANSFORM+=	${BUILDLINK_TRANSFORM}
 #
 # Explicitly remove everything else that's an absolute path, since we've
 # already protected the ones we care about.

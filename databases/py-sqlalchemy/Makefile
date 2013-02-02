@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2009/11/18 14:53:28 he Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/02 21:25:50 asau Exp $
 
-SQLALCHEMYVERS=	0.6.0
+SQLALCHEMYVERS=	0.6.9
 DISTNAME=	SQLAlchemy-${SQLALCHEMYVERS}
 PKGNAME=	${PYPKGPREFIX}-sqlalchemy-${SQLALCHEMYVERS}
 EGG_NAME=	${DISTNAME}
@@ -10,10 +10,10 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sqlalchemy/}
 MAINTAINER=	tonnerre@NetBSD.org
 HOMEPAGE=	http://www.sqlalchemy.org/
 COMMENT=	Python SQL toolkit and Object Relational Mapper
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	mit
 
 PYDISTUTILSPKG=		yes
+PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 .include "options.mk"
 

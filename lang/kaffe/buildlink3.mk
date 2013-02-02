@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.15 2006/07/08 23:10:55 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.16 2009/03/20 19:24:50 joerg Exp $
 
 BUILDLINK_TREE+=	kaffe
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	kaffe
 KAFFE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.kaffe+=	kaffe>=1.1.7
-BUILDLINK_ABI_DEPENDS.kaffe?=	kaffe>=1.1.7
+BUILDLINK_ABI_DEPENDS.kaffe+=	kaffe>=1.1.7
 BUILDLINK_PKGSRCDIR.kaffe?=	../../lang/kaffe
 BUILDLINK_JAVA_PREFIX.kaffe=	${PREFIX}/java/kaffe
 

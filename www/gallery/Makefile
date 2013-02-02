@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/07/12 00:08:02 dholland Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:29 wiz Exp $
 #
 
 DISTNAME=	gallery-1.5.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	www graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gallery/}
 
@@ -11,9 +11,7 @@ HOMEPAGE=	http://gallery.sourceforge.net/
 COMMENT=	Web-based photo gallery written in PHP
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-PHP_VERSIONS_ACCEPTED=	53
+PHP_VERSIONS_ACCEPTED=	53 54
 
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=4.1.0:../../graphics/php-gd
 DEPENDS+=	${PHP_PKG_PREFIX}-gettext>=4.1.0:../../devel/php-gettext

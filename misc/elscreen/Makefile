@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/08/06 01:44:54 minskim Exp $
+# $NetBSD: Makefile,v 1.18 2011/09/17 12:02:17 mef Exp $
 #
 
 DISTNAME=	elscreen-1.4.6
@@ -23,7 +23,6 @@ HOMEPAGE=	http://www.morishima.net/~naoto/software/elscreen/
 COMMENT=	Window manager within Emacs
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES+=	c
 
 NO_BUILD=	yes

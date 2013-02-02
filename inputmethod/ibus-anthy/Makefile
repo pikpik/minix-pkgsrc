@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2011/05/17 11:58:44 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/04/22 13:58:21 obache Exp $
 #
 
-DISTNAME=	ibus-anthy-1.2.6
-PKGREVISION=	1
+DISTNAME=	ibus-anthy-1.2.7
 CATEGORIES=	inputmethod japanese
 MASTER_SITES=	http://ibus.googlecode.com/files/
 
@@ -10,8 +9,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/ibus/
 COMMENT=	Anthy engine for IBus input platform
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	kasumi>=2.1:../../inputmethod/kasumi
 DEPENDS+=	ibus>=1.2.0.20100111:../../inputmethod/ibus

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/07/08 16:02:05 drochner Exp $
+# $NetBSD: Makefile,v 1.3 2011/10/15 10:37:18 obache Exp $
 #
 
 DISTNAME=	libmtag-python-0.3.0
@@ -10,8 +10,6 @@ MASTER_SITES=	http://libmtag.googlecode.com/files/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/libmtag/
 COMMENT=	Python binding for libmtag
-
-PKG_DESTDIR_SUPPORT= user-destdir
 
 USE_TOOLS+=	pkg-config
 

@@ -1,0 +1,14 @@
+$NetBSD$
+
+Use standard headers.
+
+--- filekaio.c~	1993-07-14 11:02:10.000000000 +0000
++++ filekaio.c
+@@ -19,6 +19,7 @@
+ 
+ #include	<string.h>
+ #include	<stdio.h>
++#include <stdlib.h>
+ 
+ 
+ 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2010/08/21 16:33:47 seb Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/03 21:55:04 wiz Exp $
 #
 
 DISTNAME=	FileKGlob
 PKGNAME=	p5-FileKGlob-1.2
-PKGREVISION=	6
+PKGREVISION=	7
 SVR4_PKGNAME=	p5fkg
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
@@ -12,7 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Expand a Unix file glob into a list of matching file names
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/File
 PERL5_PACKLIST=		auto/File/KGlob/.packlist

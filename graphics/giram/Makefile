@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.61 2012/02/06 12:40:24 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2012/10/06 14:10:54 asau Exp $
 #
 
 DISTNAME=	giram-0.3.5
-PKGREVISION=	16
+PKGREVISION=	20
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.giram.org/downloads/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.giram.org/
 COMMENT=	Giram Is Really A Modeller
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	povray-[0-9]*:../../graphics/povray
 

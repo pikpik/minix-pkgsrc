@@ -1,14 +1,14 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.8 2012/09/11 23:19:40 asau Exp $
 #
 
 DISTNAME=	tinderbox-dragonfly-${TBOX_VERSION}
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	pkgtools
 MASTER_SITES=	http://tinderbox.marcuscom.com/
 DISTFILES=	tinderbox-${TBOX_VERSION}.tar.gz
 
 MAINTAINER=	draco@marino.st
-HOMEPAGE=	http://tinderbox/marcuscom.com
+HOMEPAGE=	http://tinderbox.marcuscom.com/
 COMMENT=	Tinderbox package building system (pkgsrc)
 LICENSE=	modified-bsd
 
@@ -17,7 +17,6 @@ DEPENDS+=	csup>=20100101:../../net/csup
 DEPENDS+=	scmgit>1.6:../../devel/scmgit
 
 TBOX_VERSION=		3.4.1
-PKG_DESTDIR_SUPPORT=	user-destdir
 ONLY_FOR_PLATFORM=	DragonFly-*-*
 
 USE_TOOLS+=		perl perl:run

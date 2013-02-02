@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2008/05/26 02:13:16 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2009/08/25 11:56:34 wiz Exp $
 
 DISTNAME=		sewer
 PKGNAME=		sewer-2.6
@@ -12,7 +12,6 @@ HOMEPAGE=		http://iubio.bio.indiana.edu/webapps/SeWeR/
 COMMENT=		SEquence Analysis using WEb Resources
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

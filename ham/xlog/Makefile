@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.43 2012/02/06 12:40:39 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2012/11/21 02:09:06 gdt Exp $
 #
 
-DISTNAME=	xlog-2.0.4
-PKGREVISION=	5
+DISTNAME=	xlog-2.0.5
+PKGREVISION=	1
 CATEGORIES=	ham
 MASTER_SITES=	http://download.savannah.gnu.org/releases/xlog/
 
@@ -11,8 +11,6 @@ HOMEPAGE=	http://www.nongnu.org/xlog/
 COMMENT=	Amateur Radio logging program
 
 DEPENDS+=	xdg-utils-[0-9]*:../../misc/xdg-utils
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_PKGLOCALEDIR=yes

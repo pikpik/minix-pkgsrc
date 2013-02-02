@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2012/03/03 00:14:03 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/08 12:42:18 asau Exp $
 #
 
 DISTNAME=	bmpanel2-2.1pre1
-PKGREVISION=	5
+PKGREVISION=	9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://bmpanel2.googlecode.com/files/
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://code.google.com/p/bmpanel2/
 COMMENT=	NETWM-compatible panel for X11
 LICENSE=	mit
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_CMAKE=	yes
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	pkg-config gzip

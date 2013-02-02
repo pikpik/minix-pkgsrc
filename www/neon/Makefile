@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.53 2011/04/22 13:44:59 obache Exp $
+# $NetBSD: Makefile,v 1.56 2012/10/03 21:58:31 wiz Exp $
 
 DISTNAME=	neon-0.29.6
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/neon/
 
@@ -10,7 +11,6 @@ COMMENT=	HTTP and WebDAV client library
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config msgfmt
@@ -31,6 +31,14 @@ PKGCONFIG_OVERRIDE=	neon.pc.in
 TEST_TARGET=		check
 #selftest needs perl
 USE_TOOLS+=		perl
+
+post-build:
+	cd ${WRKSRC}/doc/man && \
+	for i in ne_*3; do \
+		if grep -q '^.so ' $$i >/dev/null; then \
+			sed -e "s_.so _.so man3/_" $$i > $$i.new && mv $$i.new $$i; \
+		fi; \
+	done
 
 .include "options.mk"
 

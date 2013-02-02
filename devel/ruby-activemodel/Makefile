@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2011/12/14 16:21:53 taca Exp $
+# $NetBSD: Makefile,v 1.10 2012/03/18 05:23:30 taca Exp $
 
 DISTNAME=	activemodel-${RUBY_RAILS_VERSION}
 CATEGORIES=	devel
@@ -13,6 +13,7 @@ DEPENDS+=	${RUBY_PKGPREFIX}-builder>=2.1.2:../../textproc/ruby-builder
 DEPENDS+=	${RUBY_PKGPREFIX}-i18n>=0.5.0<0.6:../../devel/ruby-i18n_05
 
 RUBY_RAILS_SUPPORTED=	3
+RUBY_RAILS_STRICT_DEP=	yes
 
 OVERRIDE_GEMSPEC+=	builder>=2.1.2 i18n>=0.5.0
 

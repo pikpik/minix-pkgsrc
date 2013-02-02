@@ -1,26 +1,27 @@
-# $NetBSD: Makefile,v 1.160 2012/02/10 15:50:45 drochner Exp $
+# $NetBSD: Makefile,v 1.174 2012/12/19 03:02:50 obache Exp $
 
-DISTNAME=		pango-1.29.4
-PKGREVISION=		3
-CATEGORIES=		devel fonts
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/pango/1.29/}
-EXTRACT_SUFX=		.tar.xz
+DISTNAME=	pango-1.32.5
+CATEGORIES=	devel fonts
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pango/${PKGVERSION_NOREV:R}/}
+EXTRACT_SUFX=	.tar.xz
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.pango.org/
-COMMENT=		Library for layout and rendering of text
-LICENSE=		gnu-lgpl-v2
+MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://www.pango.org/
+COMMENT=	Library for layout and rendering of text
+LICENSE=	gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake pkg-config
-GNU_CONFIGURE=		yes
+BUILD_DEPENDS+=		help2man-[0-9]*:../../converters/help2man
+
 TEST_TARGET=		check
 USE_LIBTOOL=		yes
 USE_LANGUAGES=		c c++
-
-BUILD_DEPENDS+=		help2man-[0-9]*:../../converters/help2man
+USE_TOOLS+=		gmake pkg-config
+GNU_CONFIGURE=		yes
+CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/libdata
+# Carbon has been obsoleted; force turning it off
+#CONFIGURE_ENV+=		ac_cv_header_Carbon_Carbon_h=no
 
 PKGCONFIG_OVERRIDE=	pango-uninstalled.pc.in
 PKGCONFIG_OVERRIDE+=	pango.pc.in
@@ -35,30 +36,33 @@ PKGCONFIG_OVERRIDE+=	pangox.pc.in
 PKGCONFIG_OVERRIDE+=	pangoxft-uninstalled.pc.in
 PKGCONFIG_OVERRIDE+=	pangoxft.pc.in
 
-CONFIGURE_ARGS+=	--sysconfdir=${PREFIX}/libdata
-# Carbon has been obsoleted; force turning it off
-CONFIGURE_ENV+=		ac_cv_header_Carbon_Carbon_h=no
-
 CHECK_FILES_SKIP+=	${PREFIX}/libdata/pango/pango.modules
+CHECK_PORTABILITY_SKIP+= docs/check.docs
 
 PLIST_VARS+=		coretext
 
 .include "options.mk"
 
+.include "../../mk/bsd.prefs.mk"
+
 .if ${OPSYS} == "Darwin"
-PLIST.coretext=	yes
+PLIST.coretext=		yes
+.else
+BUILDLINK_API_DEPENDS.Xft2+=	Xft2>=2.1.7nb3
 .endif
 
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.32.1
+.include "../../devel/glib2/buildlink3.mk"
 BUILDLINK_DEPMETHOD.gobject-introspection:= build
 .include "../../devel/gobject-introspection/buildlink3.mk"
-BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.24.0
-.include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.8.0
-.include "../../graphics/cairo/buildlink3.mk"
 BUILDLINK_API_DEPENDS.fontconfig+=	fontconfig>=2.5.0
 .include "../../fonts/fontconfig/buildlink3.mk"
-BUILDLINK_API_DEPENDS.Xft2+=	Xft2>=2.1.7nb3
+BUILDLINK_API_DEPENDS.harfbuzz+= harfbuzz>=0.9.9
+.include "../../fonts/harfbuzz/buildlink3.mk"
+BUILDLINK_API_DEPENDS.cairo+=	cairo>=1.8.0
+.include "../../graphics/cairo/buildlink3.mk"
+.include "../../graphics/cairo-gobject/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
 

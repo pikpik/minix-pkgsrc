@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.60 2012/03/03 00:12:59 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/12/17 18:37:07 markd Exp $
 
 DISTNAME=		kile-2.0.2
-PKGREVISION=		13
+PKGREVISION=		20
 CATEGORIES=		editors kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kile/}
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		markd@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://kile.sourceforge.net/
 COMMENT=		LaTeX source editor - TeX shell - Gnuplot front end
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl msgfmt
 USE_LANGUAGES=		c c++
@@ -31,4 +29,5 @@ REPLACE_PERL=		src/kile1.6_upd.pl \
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../graphics/kdegraphics3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.20 2012/03/03 00:12:54 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/12/15 10:36:26 ryoon Exp $
 #
 
-DISTNAME=	frama-c-Nitrogen-20111001
-PKGNAME=	${DISTNAME:S/-Nitrogen//}
-PKGREVISION=	5
+DISTNAME=	frama-c-Oxygen-20120901
+PKGNAME=	${DISTNAME:S/-Oxygen//}
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://frama-c.com/download/
 
@@ -11,8 +11,6 @@ MAINTAINER=	tonio@NetBSD.org
 HOMEPAGE=	http://frama-c.com/
 COMMENT=	Extensible platform dedicated to source-code analysis of C software
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes

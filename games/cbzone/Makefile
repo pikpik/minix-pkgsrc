@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/01/19 09:16:20 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2011/03/16 08:47:37 obache Exp $
 
 DISTNAME=		cbzone-sound
 PKGNAME=		cbzone-2.0c
@@ -8,8 +8,6 @@ MASTER_SITES=		ftp://ftp.cdrom.com/pub/X11/R5contrib/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Simple classic game of 3D tank warfare
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/cbzone
 USE_TOOLS+=		gmake

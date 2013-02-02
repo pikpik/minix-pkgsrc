@@ -1,16 +1,13 @@
-# $NetBSD: Makefile,v 1.18 2012/02/06 12:39:51 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/12/12 10:44:08 wiz Exp $
 
-DISTNAME=	gob2-2.0.18
-PKGREVISION=	4
+DISTNAME=	gob2-2.0.19
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://ftp.5z.com/pub/gob/
 
-MAINTAINER=	dillo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.5z.com/jirka/gob.html
 COMMENT=	GNOME object builder for glib2
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		lex pkg-config
 GNU_CONFIGURE=		yes

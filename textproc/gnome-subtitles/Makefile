@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2012/02/06 12:41:43 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/25 06:55:51 asau Exp $
 
 DISTNAME=	gnome-subtitles-1.1
-PKGREVISION=	8
+PKGREVISION=	15
 CATEGORIES=	multimedia textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnome-subtitles/}
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gnome-subtitles.sourceforge.net/
 COMMENT=	Subtitle editor for the GNOME desktop
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
@@ -29,6 +27,7 @@ DEPENDS+=	gtkspell>=2.0:../../textproc/gtkspell
 .include "../../multimedia/gst-plugins0.10-base/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
+.include "../../mk/omf-scrollkeeper.mk"
 # for gconf-sharp
 .include "../../x11/gnome-sharp/buildlink3.mk"
 .include "../../x11/gtk-sharp/buildlink3.mk"

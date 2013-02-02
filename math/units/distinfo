@@ -1,5 +1,6 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2012/09/13 23:27:05 asau Exp $
 
-SHA1 (units-1.86.tar.gz) = f6386d7fb476ffc808c6658af53a66f8f1027b1f
-RMD160 (units-1.86.tar.gz) = d54d8074445bbe60832301174544c40192a50dd7
-Size (units-1.86.tar.gz) = 232898 bytes
+SHA1 (units-2.01.tar.gz) = 80e7f1a2e70769bfac93702924871843b85f12d4
+RMD160 (units-2.01.tar.gz) = 2d3670658414ae77ae885c133880c515991d28ad
+Size (units-2.01.tar.gz) = 709368 bytes
+SHA1 (patch-Makefile.in) = a7517c0f4ea9b0d5f9452ec111db86e36d960d79

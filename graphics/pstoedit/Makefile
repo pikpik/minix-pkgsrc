@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.58 2012/02/06 12:40:32 wiz Exp $
+# $NetBSD: Makefile,v 1.62 2012/10/06 14:11:15 asau Exp $
 
 DISTNAME=	pstoedit-3.60
-PKGREVISION=	1
+PKGREVISION=	4
 CATEGORIES=	converters graphics print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pstoedit/}
 
@@ -11,8 +11,6 @@ COMMENT=	Convert PostScript / PDF into various vector graphic formats
 #LICENSE=	gnu-gpl-v2
 # man page indicates that there are many licenses and one has to read all
 # the source files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

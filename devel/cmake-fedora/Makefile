@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/12/07 10:21:29 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2011/12/07 10:43:58 obache Exp $
 #
 
 DISTNAME=	cmake-fedora-0.8.1-modules-only
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	https://fedorahosted.org/cmake-fedora/
 COMMENT=	Set of cmake modules for fedora developers
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/Modules
 USE_LANGUAGES=	# none

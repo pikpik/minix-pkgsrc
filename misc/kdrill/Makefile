@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.17 2008/11/10 17:21:37 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/05/03 09:55:30 obache Exp $
 #
 
 DISTNAME=	kdrill5.11.6
 PKGNAME=	kdrill-5.11.6
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	japanese misc
 MASTER_SITES=	http://www.bolthole.com/kdrill/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.bolthole.com/kdrill/
 COMMENT=	Kanji quiz and japanese dictionary
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	edict-[0-9]*:../../misc/edict
 DEPENDS+=	kanjidic-[0-9]*:../../misc/kanjidic
@@ -34,5 +32,4 @@ post-install:
 		${DESTDIR}${PREFIX}/share/kdrill/kanjidic.gz
 
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

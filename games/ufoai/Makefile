@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2011/04/22 13:43:39 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/06 11:54:57 asau Exp $
 
 DISTNAME=		ufoai-2.2.1
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=ufoai/}
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		games
 
 DISTFILES=	${DISTNAME}-source.tar.bz2
@@ -14,8 +14,6 @@ WRKSRC=		${WRKDIR}/${DISTNAME}-source
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	UFO Alien Invasion
 HOMEPAGE=	http://ufoai.sourceforge.net/
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	tar gmake bzip2 msgfmt

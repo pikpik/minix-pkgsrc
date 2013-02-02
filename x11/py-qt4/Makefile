@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.43 2012/02/17 18:37:41 drochner Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/29 05:06:45 asau Exp $
 
 PKGNAME=	${PYPKGPREFIX}-qt4-${PYQT_VERSION}
-PYQT_VERSION=	4.9.1
+PYQT_VERSION=	4.9.5
 PKGREVISION=	1
 CATEGORIES=	x11 python
-MASTER_SITES=	http://www.riverbankcomputing.com/static/Downloads/PyQt4/
+#MASTER_SITES=	http://www.riverbankcomputing.com/static/Downloads/PyQt4/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyqt/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Python binding for Qt4
@@ -13,8 +14,6 @@ HOMEPAGE=	http://www.riverbankcomputing.com/software/pyqt/intro
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake pkg-config
 USE_LANGUAGES=		c c++
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	-b ${PREFIX}/bin
 CONFIGURE_ARGS+=	-d ${PREFIX}/${PYSITELIB}
@@ -27,6 +26,18 @@ INSTALL_ENV+=		INSTALL_ROOT=${DESTDIR}
 
 PY_PATCHPLIST=		yes
 PLIST_SUBST+=		PYVERSSUFFIX=${PYVERSSUFFIX:Q}
+PYTHON_VERSIONS_INCLUDE_3X=	yes
+
+BUILDLINK_TRANSFORM+=	rm:-Wl,-R${WRKSRC}/qpy/QtCore
+BUILDLINK_TRANSFORM+=	rm:-Wl,-R${WRKSRC}/qpy/QtDeclarative
+BUILDLINK_TRANSFORM+=	rm:-Wl,-R${WRKSRC}/qpy/QtDesigner
+BUILDLINK_TRANSFORM+=	rm:-Wl,-R${WRKSRC}/qpy/QtGui
+BUILDLINK_TRANSFORM+=	rm:-Wl,-R${WRKSRC}/qpy/QtOpenGL
+BUILDLINK_TRANSFORM+=	rm:-Wl,-rpath,${WRKSRC}/qpy/QtCore
+BUILDLINK_TRANSFORM+=	rm:-Wl,-rpath,${WRKSRC}/qpy/QtDeclarative
+BUILDLINK_TRANSFORM+=	rm:-Wl,-rpath,${WRKSRC}/qpy/QtDesigner
+BUILDLINK_TRANSFORM+=	rm:-Wl,-rpath,${WRKSRC}/qpy/QtGui
+BUILDLINK_TRANSFORM+=	rm:-Wl,-rpath,${WRKSRC}/qpy/QtOpenGL
 
 # This is a hack. CPPFLAGS and CXXFLAGS from the environment are ignored,
 # however, so I don't know a better way to fix it.
@@ -52,22 +63,20 @@ DISTNAME=		PyQt-x11-gpl-${PYQT_VERSION}
 PLIST_SRC+=		${PKGDIR}/PLIST.X11
 .endif
 .include "../../lang/python/extension.mk"
-.if ${PYPKGPREFIX} == "py24"
-PLIST_SRC+=		${PKGDIR}/PLIST.elementtree
-.endif
 
 CONFIGURE_ARGS+=	--verbose
 do-configure:
 	(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} \
 		${PYTHONBIN} configure.py ${CONFIGURE_ARGS})
 
+BUILDLINK_API_DEPENDS.py-sip+= ${PYPKGPREFIX}-sip>=4.14
 .include "../../x11/py-sip/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
 .include "../../sysutils/py-dbus/buildlink3.mk"
-.include "../../textproc/py-elementtree/buildlink3.mk"
 # needs the QtXmlPatterns fix
 BUILDLINK_API_DEPENDS.qt4-libs+=	qt4-libs>=4.6.1nb3
 .include "../../x11/qt4-libs/buildlink3.mk"
 BUILDLINK_API_DEPENDS.qt4-tools+=	qt4-tools>=4.4.0nb1
+BUILDLINK_DEPMETHOD.qt4-tools=		full
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2010/11/27 13:24:47 roy Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/23 17:18:17 asau Exp $
 #
 
-DISTNAME=		dnsmasq-2.59
+DISTNAME=		dnsmasq-2.64
 CATEGORIES=		net
 MASTER_SITES=		http://www.thekelleys.org.uk/dnsmasq/
+LICENSE=		gnu-gpl-v3
 
 MAINTAINER=		roy@NetBSD.org
 HOMEPAGE=		http://www.thekelleys.org.uk/dnsmasq/doc.html
@@ -13,9 +14,9 @@ RCD_SCRIPTS=		dnsmasq
 CONF_FILES=		${PREFIX}/share/examples/dnsmasq/dnsmasq.conf.example \
 			${PKG_SYSCONFDIR}/dnsmasq.conf
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_OPTIONS_VAR=	PKG_OPTIONS.dnsmasq
 PKG_SUPPORTED_OPTIONS=	dbus inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 PLIST_VARS+=	dbus
 
 .include "../../mk/bsd.options.mk"

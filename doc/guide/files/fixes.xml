@@ -1,4 +1,4 @@
-<!-- $NetBSD: fixes.xml,v 1.105 2011/05/29 15:15:07 kano Exp $ -->
+<!-- $NetBSD: fixes.xml,v 1.110 2012/09/30 09:16:56 asau Exp $ -->
 
 <chapter id="fixes"> <?dbhtml filename="fixes.html"?>
 <title>Making your package work</title>
@@ -128,14 +128,34 @@ INTERACTIVE_STAGE=      configure install
     <varname>ACCEPTABLE_LICENSES</varname> variable with "=" instead
     of "+=".  The licenses accepted by default are:
     <programlisting>
-    public-domain
-    gnu-gpl-v2 gnu-lgpl-v2
-    gnu-gpl-v3 gnu-lgpl-v3
-    original-bsd modified-bsd
-    x11
-    apache-2.0
-    cddl-1.0
-    open-font-license
+        public-domain unlicense
+        gnu-fdl-v1.1 gnu-fdl-v1.2 gnu-fdl-v1.3
+        gnu-gpl-v1
+        gnu-gpl-v2 gnu-lgpl-v2 gnu-lgpl-v2.1
+        gnu-gpl-v3 gnu-lgpl-v3
+        original-bsd modified-bsd 2-clause-bsd
+        x11 mit miros
+        apache-1.1 apache-2.0
+        artistic artistic-2.0
+        cddl-1.0
+        cpl-1.0
+        open-font-license
+        mpl-1.0 mpl-1.1 mpl-2.0
+        php png-license
+        postgresql-license
+        zlib
+        zpl
+        python-software-foundation
+        ipafont
+        ibm-public-license-1.0
+        isc
+        boost-license
+        mplusfont
+        cc-by-sa-v3.0
+        lppl-1.3c
+        lucent
+        epl-v1.0
+	info-zip
     </programlisting>
     </para>
 
@@ -278,6 +298,12 @@ ACCEPTABLE_LICENSES+=xv-license
 	the distfile(s) will not be mirrored on ftp.NetBSD.org.</para>
       </listitem>
     </itemizedlist>
+
+    <para>Please note that packages will to be removed from pkgsrc
+    when the distfiles are not distributable and cannot be obtained
+    for a period of one full quarter branch. Packages with manual /
+    interactive fetch must have a maintainer and it is his/her
+    responsibility to ensure this.</para>
   </sect2>
 
 
@@ -484,13 +510,14 @@ CONFLICTS=      Xaw3d-[0-9]*
 
     <para>When a vulnerability is found, this should be noted in
     <filename>localsrc/security/advisories/pkg-vulnerabilities</filename>,
-    and after committing that file, use <command>make upload</command>
-    in the same directory to update the file on ftp.NetBSD.org.</para>
+    and after committing that file, ask pkgsrc-security@NetBSD.org to
+    update the file on ftp.NetBSD.org.</para>
 
     <para>After fixing the vulnerability by a patch, its
-    <varname>PKGREVISION</varname> should be increased (this
-    is of course not necessary if the problem is fixed by using
-    a newer release of the software).</para>
+    <varname>PKGREVISION</varname> should be increased (this is of
+    course not necessary if the problem is fixed by using a newer
+    release of the software), and the pattern in the
+    pkg-vulnerabilities file must be updated.</para>
 
     <para>Also, if the fix should be applied to the stable pkgsrc
     branch, be sure to submit a pullup request!</para>
@@ -1035,6 +1062,18 @@ pre-configure:
     about handling perl modules.</para>
   </sect2>
 
+  <sect2 id="shell-scripts">
+    <title>Packages containing shell scripts</title>
+
+    <para><varname>REPLACE_SH</varname>,
+    <varname>REPLACE_BASH</varname>, <varname>REPLACE_CSH</varname>,
+    and <varname>REPLACE_KSH</varname> can be used to replace shell
+    hash bangs in files. Please use the appropriate one, prefering
+    <varname>REPLACE_SH</varname> in case this shell is sufficient.
+    When using <varname>REPLACE_BASH</varname>, don't forget to add
+    <filename>bash</filename> to <varname>USE_TOOLS</varname>.</para>
+  </sect2>
+
   <sect2 id="other-programming-languages">
     <title>Other programming languages</title>
 
@@ -1285,16 +1324,13 @@ ${INSTALL_DATA_DIR} ${PREFIX}/dir2
     a score file that allows all users on the system to record their
     highscores.  In order for this to work, the binaries need to be
     installed setgid and the score files owned by the appropriate
-    group and/or owner (traditionally the "games" user/group).  The
+    group and/or owner (traditionally the "games" user/group).  Set
+    <varname>USE_GAMESGROUP</varname> to yes to support this. The
     following variables, documented in more detail in
     <filename>mk/defaults/mk.conf</filename>, control this
-    behaviour: <varname>SETGIDGAME</varname>,
-    <varname>GAMEDATAMODE</varname>, <varname>GAMEGRP</varname>,
-    <varname>GAMEMODE</varname>, <varname>GAMEOWN</varname>.</para>
-
-    <para>Note that per default, setgid installation of games is
-    disabled;  setting <varname>SETGIDGAME=YES</varname> will set all
-    the other variables accordingly.</para>
+    behaviour: <varname>GAMEDATAMODE</varname>,
+    <varname>GAMEDIRMODE</varname>, <varname>GAMES_GROUP</varname>,
+    <varname>GAMEMODE</varname>, <varname>GAME_USER</varname>.</para>
 
     <para>A package should therefore never hard code file ownership or
     access permissions but rely on <varname>INSTALL_GAME</varname> and
@@ -1314,8 +1350,10 @@ ${INSTALL_DATA_DIR} ${PREFIX}/dir2
 
     <itemizedlist>
       <listitem><para><varname>PKG_DESTDIR_SUPPORT</varname> has to be
-      set to <quote>destdir</quote> or <quote>user-destdir</quote>. If
-      bsd.prefs.mk is included in the Makefile,
+      set to <quote>none</quote>, <quote>destdir</quote>, or
+      <quote>user-destdir</quote>. By default <varname>PKG_DESTDIR_SUPPORT</varname>
+      is set to <quote>user-destdir</quote> to help catching more
+      potential packaging problems. If bsd.prefs.mk is included in the Makefile,
       <varname>PKG_DESTDIR_SUPPORT</varname> needs to be set before
       the inclusion.</para></listitem>
 

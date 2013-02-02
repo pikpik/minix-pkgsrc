@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/03/03 00:12:10 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/12 08:02:35 marino Exp $
 #
 
 DISTNAME=	PackageKit-0.4.0
-PKGREVISION=	15
+PKGREVISION=	22
 PKGNAME=	${DISTNAME:S/PackageKit/packagekit/}
 CATEGORIES=	pkgtools
 MASTER_SITES=	http://www.packagekit.org/releases/
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.packagekit.org/
 COMMENT=	System activated daemon for managing software updates
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config gmake intltool msgfmt autoconf
@@ -20,6 +18,10 @@ USE_LANGUAGES=	c c++
 
 BUILD_DEFS+=	VARBASE
 BUILD_DEFS+=	PKG_SYSCONFBASE
+
+PKCACHEDIR=	${VARBASE}/cache/PackageKit/downloads
+PKLOGDIR=	${VARBASE}/log/PackageKit
+PKETCDIR=	${LOCALBASE}/etc/PackageKit
 
 EGDIR=		${PREFIX}/share/examples/packagekit
 CONF_FILES=	${EGDIR}/CommandNotFound.conf \
@@ -52,11 +54,18 @@ REPLACE_PYTHON=	backends/test/helpers/PackageKitDbusTest.py	\
 		lib/python/packagekit/filter.py		\
 		lib/python/packagekit/misc.py
 
+OWN_DIRS+=	${PKCACHEDIR}
+OWN_DIRS+=	${PKLOGDIR}
+OWN_DIRS+=	${PKETCDIR}
+
 post-extract:
 	cp -r ${FILESDIR}/backends-pkgsrc ${WRKSRC}/backends/pkgsrc
 
 pre-configure:
 	cd ${WRKSRC} && autoconf -f
+
+.include "../../mk/compiler.mk"
+BUILDLINK_TRANSFORM+=	rm:-Werror
 
 .include "../../databases/shared-mime-info/mimedb.mk"
 .include "../../databases/sqlite3/buildlink3.mk"

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:36:01 seb Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:58:00 wiz Exp $
 #
 
 DISTNAME=	Template-Plugin-Latex-3.02
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Template/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Template-Plugin-Latex/
 COMMENT=	Latex support for the Template Toolkit
 LICENSE=	gnu-gpl-v2 # OR artistic
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Template-Toolkit>=2.16:../../www/p5-Template-Toolkit
 DEPENDS+=	p5-LaTeX-Driver>=0.07:../../print/p5-LaTeX-Driver

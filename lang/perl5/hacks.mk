@@ -1,4 +1,4 @@
-# $NetBSD: hacks.mk,v 1.4 2010/11/02 07:54:31 wiz Exp $
+# $NetBSD: hacks.mk,v 1.6 2012/10/03 19:59:47 adam Exp $
 
 .if !defined(PERL5_HACKS_MK)
 PERL5_HACKS_MK=	defined
@@ -38,6 +38,17 @@ PKG_HACKS+=		powerpc-codegen
 BUILDLINK_TRANSFORM+=	rm:-O[0-9]*
 .endif
 
+### [Sat Dec 18 17:29:44 EST 2004 : jlam]
+### Native threading on VAX isn't ready for primetime in NetBSD>=2.0.
+### Build Perl without threads-support until VAX native threads are
+### known to work.
+###
+.if !empty(MACHINE_PLATFORM:MNetBSD-*-vax) && \
+    !empty(USE_BUILTIN.pthread:M[yY][eE][sS])
+PKG_HACKS+=			broken-vax-pthreads
+PERL5_BUILD_THREADS_SUPPORT=	no
+.endif
+
 ### [Mon May 9 15:35:44 UTC 2005 : jlam]
 ### On NetBSD/arm, skipping one part of the optimization pass empirically
 ### "fixes" the build of perl using gcc-3.x.
@@ -50,18 +61,18 @@ CFLAGS+=	-fno-cse-skip-blocks
 ### [ Fri Oct 11 10:00:00 UTC 2011 : hauke ]
 ###
 ### On m68k, gcc creates short assembler branch insns, and expects
-### the assembler to adapt them to the distance. m68k gas appears not to 
-### do that for fpu branch insns, resulting in an out-of-range FPU 
+### the assembler to adapt them to the distance. m68k gas appears not to
+### do that for fpu branch insns, resulting in an out-of-range FPU
 ### assembler branch instruction error in "ext/re/re_exec.c".
 ###
-### As a workaround, building with "-Os" instead of "-O2" reduces 
+### As a workaround, building with "-Os" instead of "-O2" reduces
 ### the size of the object file enough to allow short branches.
-### 
+###
 ### See PR toolchain/45439.
 
-.  if ${OPSYS} == "NetBSD" && ${MACHINE_ARCH} == "m68k"
+.if ${OPSYS} == "NetBSD" && ${MACHINE_ARCH} == "m68k"
 PKG_HACKS+=		m68k-codegen
 BUILDLINK_TRANSFORM+=	rename:-O[0-9]*:-Os
-.  endif
+.endif
 
 .endif  # PERL5_HACKS_MK

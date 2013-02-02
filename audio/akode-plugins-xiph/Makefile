@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/02/28 14:52:39 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/01/26 02:45:45 sbd Exp $
 #
 
 PKGNAME=		akode-plugins-xiph-${AKODE_VERSION}
@@ -12,8 +12,6 @@ LICENSE=		gnu-lgpl-v2
 
 DISTINFO_FILE=		${.CURDIR}/../../audio/akode/distinfo
 PATCHDIR=		${.CURDIR}/../../audio/akode/patches
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_ARGS+=	--with-vorbis
 CONFIGURE_ARGS+=	--with-flac

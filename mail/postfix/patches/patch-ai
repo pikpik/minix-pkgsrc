@@ -1,10 +1,15 @@
---- makedefs.orig	Wed Nov  2 23:46:22 2011
-+++ makedefs	Sun Apr  1 23:17:56 2012
-@@ -146,6 +146,8 @@
+$NetBSD: patch-ai,v 1.27 2012/02/27 03:01:30 taca Exp $
+
+Make this pkgsrc friendly.
+Add support for NetBSD 5.x, NetBSD 6.x and DragonFly BSD.
+
+--- makedefs.orig	2012-12-12 22:49:32.000000000 +0000
++++ makedefs
+@@ -148,6 +148,8 @@ case "$SYSTEM.$RELEASE" in
  		;;
-   FreeBSD.8*)	SYSTYPE=FREEBSD8
+   FreeBSD.9*)	SYSTYPE=FREEBSD9
  		;;
-+ DragonFly.*)	SYSTYPE=DRAGONFLY
++  DragonFly.*)	SYSTYPE=DRAGONFLY
 +		;;
    OpenBSD.2*)	SYSTYPE=OPENBSD2
  		;;
@@ -23,7 +28,7 @@
     BSD/OS.2*)	SYSTYPE=BSDI2
  		;;
     BSD/OS.3*)	SYSTYPE=BSDI3
-@@ -216,13 +225,6 @@
+@@ -218,13 +224,6 @@ case "$SYSTEM.$RELEASE" in
  		esac
  		;;
     ULTRIX.4*)	SYSTYPE=ULTRIX4
@@ -37,7 +42,7 @@
  		for l in syslog resolv; do
  		    if [ -f /usr/local/lib/lib$l.a ]; then
  			SYSLIBS="$SYSLIBS -l$l"
-@@ -260,25 +262,8 @@
+@@ -262,25 +261,8 @@ case "$SYSTEM.$RELEASE" in
  		esac;;
  		# Tested with RedHat 3.03 on 20020729.
      Linux.1*)	SYSTYPE=LINUX1
@@ -63,7 +68,7 @@
  		# GDBM locks the DBM .pag file after open. This breaks postmap.
  		# if [ -f /usr/include/gdbm-ndbm.h ]
  		# then
-@@ -289,7 +274,6 @@
+@@ -291,7 +273,6 @@ case "$SYSTEM.$RELEASE" in
  		#     CCARGS="$CCARGS -DHAS_DBM -DPATH_NDBM_H='<gdbm/ndbm.h>'"
  		#     GDBM_LIBS=gdbm
  		# fi
@@ -71,7 +76,7 @@
  		for name in nsl resolv $GDBM_LIBS
  		do
  		    for lib in /usr/lib64 /lib64 /usr/lib /lib
-@@ -418,25 +402,13 @@
+@@ -420,25 +401,13 @@ EOF
  HP-UX.A.09.*)	SYSTYPE=HPUX9
  		SYSLIBS=-ldbm
  		CCARGS="$CCARGS -DMISSING_USLEEP"

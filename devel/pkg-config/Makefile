@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.17 2010/09/23 07:07:46 adam Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/31 11:19:25 asau Exp $
 
-DISTNAME=	pkg-config-0.25
-PKGREVISION=	1
+DISTNAME=	pkg-config-0.28
 CATEGORIES=	devel
 MASTER_SITES=	http://pkgconfig.freedesktop.org/releases/
 
@@ -11,23 +10,16 @@ COMMENT=	System for managing library compile/link flags
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--disable-threads
+CONFIGURE_ARGS+=	--with-internal-glib
+CONFIGURE_ARGS+=	--disable-host-tool
 
 # old name of the package
 CONFLICTS=		pkgconfig-[0-9]*
 
 .include "../../mk/bsd.prefs.mk"
-
-.if ${OPSYS} == "FreeBSD"
-.  if ${OS_VERSION:R} < 5
-# configure checks but does not fail on warning
-CONFIGURE_ENV+=		glib_cv_va_copy=no
-.  endif
-.endif
 
 .if ${OPSYS} == "IRIX"
 # configure bails out in subdir after re-parsing the cache
@@ -35,9 +27,18 @@ CONFIGURE_ARGS+=	--cache-file=/dev/null
 .endif
 
 .if ${OPSYS} == "NetBSD"
-CONFIGURE_ARGS+=	glib_cv_sane_realloc=yes glib_cv_uscore=no
-CONFIGURE_ARGS+=	glib_cv_rtldglobal_broken=no
+post-configure:
+	cd ${WRKSRC}/glib; \
+	${GREP} -v HAVE_DTRACE config.h >config.h.new; \
+	${MV} config.h.new config.h
 .endif
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ARGS+=	--disable-dtrace
+.endif
+
+CONFIGURE_ARGS+=	${CONFIGURE_ARGS.${ICONV_TYPE}-iconv}
+CONFIGURE_ARGS.gnu-iconv=	--with-libiconv=gnu
 
 PKGCONFIG_EXTRA_PATHS=	# empty
 
@@ -51,12 +52,13 @@ PKGCONFIG_EXTRA_PATHS+=	/usr/lib/pkgconfig
 
 .if !empty(PKGCONFIG_EXTRA_PATHS)
 # First part of the value is taken from configure.in
-CONFIGURE_ARGS+=	--with-pc-path='$${libdir}/pkgconfig:$${datadir}/pkgconfig:${PKGCONFIG_EXTRA_PATHS:ts:}'
+CONFIGURE_ARGS+=	--with-pc-path='$${libdir}/pkgconfig:$${datadir}/pkgconfig:${PKGCONFIG_EXTRA_PATHS:ts::Q}'
 .endif
 
 # needed for fifth test case
-BUILDLINK_PASSTHRU_DIRS= /private-dep /public-dep /requires-test
+BUILDLINK_PASSTHRU_DIRS+=	/private-dep /public-dep /requires-test
 TEST_TARGET=		check
 
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

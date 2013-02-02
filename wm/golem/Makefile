@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2009/11/26 17:16:47 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/08 12:42:20 asau Exp $
 #
 
 DISTNAME=	golem-0.0.5
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=golem/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://golem.sourceforge.net/
 COMMENT=	Fast and lightweight yet customizable window manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake yacc lex
 GNU_CONFIGURE=	YES
@@ -60,5 +58,4 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/12/24 07:21:09 kefren Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:56:20 wiz Exp $
 
 DISTNAME=	amavisd-${VERSION}
 PKGNAME=	amavis-perl-${VERSION}
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	mail security
 MASTER_SITES=	http://www.amavis.org/dist/perl/ \
 		${MASTER_SITE_SOURCEFORGE:=amavis/}
@@ -10,8 +10,6 @@ MASTER_SITES=	http://www.amavis.org/dist/perl/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.amavis.org/
 COMMENT=	Mail virus scanner
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	amavis-[0-9]*
 CONFLICTS+=	amavis-perl-[0-9]*

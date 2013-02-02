@@ -1,8 +1,8 @@
-# $NetBSD: options.mk,v 1.17 2011/11/30 12:01:58 wiz Exp $
+# $NetBSD: options.mk,v 1.18 2011/11/30 13:53:19 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.musicpd
 PKG_SUPPORTED_OPTIONS=	audiofile bzip2 curl faad ffmpeg flac fluidsynth id3 inet6 libao lame jack libmms libwildmidi mikmod modplug musepack musicpd-lastfm ogg shout sqlite3 wavpack zziplib
-PKG_SUGGESTED_OPTIONS=	audiofile curl faad flac id3 libao musepack ogg
+PKG_SUGGESTED_OPTIONS=	audiofile curl faad flac id3 inet6 libao musepack ogg
 
 PKG_OPTIONS_LEGACY_OPTS=	libmikmod:mikmod
 PKG_OPTIONS_LEGACY_OPTS=	aac:faad

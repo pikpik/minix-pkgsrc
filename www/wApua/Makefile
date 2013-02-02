@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.17 2010/08/21 16:37:12 seb Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:59:05 wiz Exp $
 #
 
 DISTNAME=	wApua-0.05.1
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	www
 MASTER_SITES=	http://fsinfo.cs.uni-sb.de/~abe/wApua/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://fsinfo.cs.uni-sb.de/~abe/wApua/
 COMMENT=	Web browser for WAP WML
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-URI>=1.03:../../www/p5-URI
 DEPENDS+=	p5-libwww>=5.47:../../www/p5-libwww

@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.43 2011/06/15 12:52:59 uebayasi Exp $
 
 DISTNAME=	guile-slib-3.2.2
 PKGREVISION=	2
@@ -9,8 +9,6 @@ DISTFILES=	# empty
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://swissnet.ai.mit.edu/~jaffer/SLIB.html
 COMMENT=	SLIB glue files for guile 1.8
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	slib>=3.2.2:../../devel/slib
 

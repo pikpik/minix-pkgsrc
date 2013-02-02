@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/12/07 10:47:50 fhajny Exp $
+# $NetBSD: Makefile,v 1.2 2010/09/10 05:51:37 taca Exp $
 
-DISTNAME=	locale-2.0.5
+DISTNAME=	locale-2.0.8
 CATEGORIES=	devel
 
 MAINTAINER=	filip@joyent.com
-HOMEPAGE=	http://www.yotabanana.com/hiki/ruby-locale.html
+HOMEPAGE=	http://ruby-gettext.github.com/
 COMMENT=	Pure ruby library which provides basic APIs for localization
-LICENSE=	ruby-license
+LICENSE=	ruby-license OR gnu-lgpl-v3
 
 pre-configure:
 	${CHMOD} -R g-w ${WRKSRC}

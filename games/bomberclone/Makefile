@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/01/13 13:37:40 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2012/05/16 14:35:34 marino Exp $
 
 DISTNAME=		bomberclone-0.11.7
 PKGREVISION=		5
@@ -10,13 +10,13 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.bomberclone.de/
 COMMENT=		Multi-player Bomberman clone
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFLICTS=		bomberclone-data-[0-9]*
 
 BUILDLINK_TRANSFORM+=	rm:-Werror
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
+
+LDFLAGS.DragonFly=	-lm
 
 post-install:
 	${RM} -fr ${DESTDIR}${PREFIX}/share/bomberclone/*/CVS

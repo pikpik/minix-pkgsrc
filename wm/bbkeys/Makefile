@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.22 2009/01/23 21:14:17 jschauma Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 21:58:24 wiz Exp $
 #
 
 DISTNAME=	bbkeys-0.8.6
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11 wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bbkeys/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bbkeys.sourceforge.net/
 COMMENT=	General X Window keygrabber
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	bbkeys09-*
 

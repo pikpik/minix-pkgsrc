@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/05/26 02:13:15 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2009/05/19 08:59:02 wiz Exp $
 
 DISTNAME=	festvox_ellpc11k
 PKGNAME=	festvox-el11-1.4.0
@@ -14,8 +14,6 @@ LICENSE=	no-commercial-use
 DEPENDS+=	festival>=1.4.1:../../audio/festival
 
 USE_TOOLS+=	pax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/festival
 NO_BUILD=	yes

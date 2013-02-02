@@ -1,18 +1,16 @@
-# $NetBSD: Makefile,v 1.19 2012/02/06 12:41:45 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/25 06:57:03 asau Exp $
 #
 
 DISTNAME=		tex2page
 DIST_SUBDIR=		tex2page-20060131
 PKGNAME=		tex2page-20060131
-PKGREVISION=		13
+PKGREVISION=		14
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.ccs.neu.edu/home/dorai/tex2page/
 
 MAINTAINER=		gdt@NetBSD.org
 HOMEPAGE=		http://www.ccs.neu.edu/home/dorai/tex2page/
 COMMENT=		Converts TeX manuscripts into (HTML) web pages
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
 DEPENDS+=	makeindexk-[0-9]*:../../textproc/makeindexk

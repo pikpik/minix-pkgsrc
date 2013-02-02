@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.70 2012/02/06 12:41:16 wiz Exp $
+# $NetBSD: Makefile,v 1.75 2012/10/08 23:02:17 adam Exp $
 
 DISTNAME=	mtr-0.82
-PKGREVISION=	2
+PKGREVISION=	6
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/
 
@@ -11,7 +11,6 @@ COMMENT=	Traceroute and ping in a single graphical network diagnostic tool
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake

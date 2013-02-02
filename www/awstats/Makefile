@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.46 2012/02/05 23:58:07 minskim Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/03 21:58:27 wiz Exp $
 
-DISTNAME=	awstats-7.0
-PKGREVISION=	4
+DISTNAME=	awstats-7.1
+PKGREVISION=	1
 CATEGORIES=	www
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=awstats/}
+MASTER_SITES=	http://www.awstats.org/files/
 
 MAINTAINER=	minskim@NetBSD.org
-HOMEPAGE=	http://awstats.sourceforge.net/
+HOMEPAGE=	http://www.awstats.org/
 COMMENT=	Free real-time logfile analyzer to get advanced web statistics
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=		${PKGNAME_NOREV}
 
@@ -32,7 +30,7 @@ PKG_GROUPS_VARS+=	APACHE_GROUP
 PKG_USERS_VARS=		APACHE_USER
 BUILD_DEFS+=		VARBASE
 
-# OWN_DIRS=		${VARBASE}/awstats
+#OWN_DIRS=		${VARBASE}/awstats
 OWN_DIRS_PERMS+=	${VARBASE}/awstats ${APACHE_USER} ${APACHE_GROUP} 0700
 PKG_SYSCONFSUBDIR=	awstats
 

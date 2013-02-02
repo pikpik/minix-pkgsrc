@@ -1,20 +1,19 @@
-# $NetBSD: Makefile,v 1.86 2011/10/02 14:32:32 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2012/12/09 15:26:29 tsarna Exp $
 #
 
 COMMENT=	Communication utilities
 
 SUBDIR+=	asterisk
 SUBDIR+=	asterisk-sounds-de-x9media
-SUBDIR+=	asterisk-sounds-extra
 SUBDIR+=	asterisk-sounds-native
 SUBDIR+=	asterisk10
-SUBDIR+=	asterisk16
 SUBDIR+=	asterisk18
 SUBDIR+=	binkd
 SUBDIR+=	birda
 SUBDIR+=	bthfp
 SUBDIR+=	conserver
 SUBDIR+=	conserver8
+SUBDIR+=	deforaos-phone
 SUBDIR+=	dl-ezkit
 SUBDIR+=	efax
 SUBDIR+=	efax-gtk
@@ -23,7 +22,6 @@ SUBDIR+=	fidogate
 SUBDIR+=	gammu
 SUBDIR+=	gkermit
 SUBDIR+=	gnome-pilot
-SUBDIR+=	gscmxx
 SUBDIR+=	gsmlib
 SUBDIR+=	hylafax
 SUBDIR+=	jpilot
@@ -37,6 +35,7 @@ SUBDIR+=	libopensync-plugin-file
 SUBDIR+=	libopensync-plugin-kdepim
 SUBDIR+=	libopensync-plugin-syncml
 SUBDIR+=	libsyncml
+SUBDIR+=	lirc
 SUBDIR+=	lrzsz
 SUBDIR+=	malsync
 SUBDIR+=	mgetty+sendfax
@@ -49,6 +48,7 @@ SUBDIR+=	obexftp
 SUBDIR+=	op_panel
 SUBDIR+=	openobex
 SUBDIR+=	p5-Asterisk
+SUBDIR+=	p5-Data-AMF
 SUBDIR+=	p5-Device-Gsm
 SUBDIR+=	p5-Device-Modem
 SUBDIR+=	p5-Device-SerialPort
@@ -60,6 +60,7 @@ SUBDIR+=	pilot-link-libs
 SUBDIR+=	pilotmgr
 SUBDIR+=	plp
 SUBDIR+=	py-gammu
+SUBDIR+=	py-serial
 SUBDIR+=	qpage
 SUBDIR+=	ruby-termios
 SUBDIR+=	scmxx

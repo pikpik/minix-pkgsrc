@@ -1,8 +1,10 @@
---- src/core/modules/Skybright.cpp.orig	2011-07-02 15:22:18.000000000 +0200
-+++ src/core/modules/Skybright.cpp	2011-11-01 17:14:24.676826514 +0100
-@@ -29,6 +29,8 @@
- #include "Skybright.hpp"
- #include "StelUtils.hpp"
+$NetBSD$
+
+--- src/core/modules/Skybright.cpp.orig	2012-08-26 10:23:18.000000000 +0000
++++ src/core/modules/Skybright.cpp
+@@ -33,6 +33,8 @@
+ #undef FS
+ #endif
  
 +#undef FS
 +

@@ -1,4 +1,4 @@
-# $NetBSD: replace.mk,v 1.245 2012/02/23 13:09:55 hans Exp $
+# $NetBSD: replace.mk,v 1.251 2012/07/27 10:48:36 jperkin Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -205,6 +205,17 @@ _TOOLS_USE_PKGSRC.${_t_}?=	yes
 # command, e.g., TOOLS_TBL, TOOLS_YACC, etc., provided that "TOOL" has
 # been associated with <tool>.
 #
+.if !defined(TOOLS_IGNORE.7za) && !empty(_USE_TOOLS:M7za)
+.  if !empty(PKGPATH:Marchivers/p7zip)
+MAKEFLAGS+=			TOOLS_IGNORE.7za=
+.  elif !empty(_TOOLS_USE_PKGSRC.7za:M[yY][eE][sS])
+TOOLS_DEPENDS.7za?=		p7zip>=9.04:../../archivers/p7zip
+TOOLS_CREATE+=			7za
+TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.7za=7za
+TOOLS_PATH.7za=			${TOOLS_PREFIX.7za}/bin/7za
+.  endif
+.endif
+
 .if !defined(TOOLS_IGNORE.awk) && !empty(_USE_TOOLS:Mawk)
 .  if !empty(PKGPATH:Mlang/nawk)
 MAKEFLAGS+=			TOOLS_IGNORE.awk=
@@ -281,7 +292,8 @@ TOOLS_CMD.byacc=		${TOOLS_DIR}/bin/yacc
 .  endif
 .endif
 
-.for _t_ in bzip2 bzcat
+_TOOLS.bzip2=	bzip2 bzcat
+.for _t_ in ${_TOOLS.bzip2}
 .  if !defined(TOOLS_IGNORE.${_t_}) && !empty(_USE_TOOLS:M${_t_})
 .    if !empty(PKGPATH:Marchivers/bzip2)
 MAKEFLAGS+=			TOOLS_IGNORE.${_t_}=
@@ -305,7 +317,8 @@ TOOLS_PATH.chrpath=		${TOOLS_PREFIX.chrpath}/bin/chrpath
 .  endif
 .endif
 
-.for _t_ in cmake cpack
+_TOOLS.cmake=	cmake cpack
+.for _t_ in ${_TOOLS.cmake}
 .  if !defined(TOOLS_IGNORE.${_t_}) && !empty(_USE_TOOLS:M${_t_})
 .    if !empty(PKGPATH:Mdevel/cmake)
 MAKEFLAGS+=			TOOLS_IGNORE.${_t_}=
@@ -326,6 +339,16 @@ TOOLS_DEPENDS.csh?=		tcsh-[0-9]*:../../shells/tcsh
 TOOLS_CREATE+=			csh
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.csh=tcsh
 TOOLS_PATH.csh=			${TOOLS_PREFIX.csh}/bin/tcsh
+.  endif
+.endif
+
+.if !defined(TOOLS_IGNORE.curl) && !empty(_USE_TOOLS:Mcurl)
+.  if !empty(PKGPATH:Mwww/curl)
+MAKEFLAGS+=			TOOLS_IGNORE.curl=
+.  elif !empty(_TOOLS_USE_PKGSRC.curl:M[yY][eE][sS])
+TOOLS_DEPENDS.curl?=		curl-[0-9]*:../../www/curl
+TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.curl=curl
+TOOLS_PATH.curl=		${TOOLS_PREFIX.curl}/bin/curl
 .  endif
 .endif
 
@@ -357,7 +380,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.find=
 TOOLS_DEPENDS.find?=		findutils>=4.1:../../sysutils/findutils
 TOOLS_CREATE+=			find
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.find=findutils
-TOOLS_PATH.find=		${TOOLS_PREFIX.find}/bin/${GNU_PROGRAM_PREFIX}find
+TOOLS_PATH.find=		${TOOLS_PREFIX.find}/bin/gfind
 .  endif
 .endif
 
@@ -395,7 +418,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.gawk=
 TOOLS_DEPENDS.gawk?=		gawk>=3.1.1:../../lang/gawk
 TOOLS_CREATE+=			gawk
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.gawk=gawk
-TOOLS_PATH.gawk=		${TOOLS_PREFIX.gawk}/bin/${GNU_PROGRAM_PREFIX}awk
+TOOLS_PATH.gawk=		${TOOLS_PREFIX.gawk}/bin/gawk
 .  endif
 TOOLS_ALIASES.gawk=		awk
 .endif
@@ -445,7 +468,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.gsed=
 TOOLS_DEPENDS.gsed?=		gsed>=3.0.2:../../textproc/gsed
 TOOLS_CREATE+=			gsed
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.gsed=gsed
-TOOLS_PATH.gsed=		${TOOLS_PREFIX.gsed}/bin/${GNU_PROGRAM_PREFIX}sed
+TOOLS_PATH.gsed=		${TOOLS_PREFIX.gsed}/bin/gsed
 .  endif
 TOOLS_ALIASES.gsed=		sed
 .endif
@@ -457,13 +480,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.gtar=
 TOOLS_DEPENDS.gtar?=		gtar-base>=1.13.25:../../archivers/gtar-base
 TOOLS_CREATE+=			gtar
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.gtar=gtar-base
-.    if defined(GTAR_PROGRAM_PREFIX)
-TOOLS_PATH.gtar=		${TOOLS_PREFIX.gtar}/bin/${GTAR_PROGRAM_PREFIX}tar
-.    elif defined(GNU_PROGRAM_PREFIX) && ${GNU_PROGRAM_PREFIX} != ""
-TOOLS_PATH.gtar=		${TOOLS_PREFIX.gtar}/bin/${GNU_PROGRAM_PREFIX}tar
-.    else
 TOOLS_PATH.gtar=		${TOOLS_PREFIX.gtar}/bin/gtar
-.    endif
 .  endif
 .endif
 
@@ -676,7 +693,7 @@ TOOLS_PATH.pax=			${TOOLS_PREFIX.pax}/bin/${NBPAX_PROGRAM_PREFIX}pax
 .  if !empty(PKGPATH:Mdevel/pkg-config)
 MAKEFLAGS+=			TOOLS_IGNORE.pkg-config=
 .  elif !empty(_TOOLS_USE_PKGSRC.pkg-config:M[yY][eE][sS])
-TOOLS_DEPENDS.pkg-config?=	pkg-config>=0.19:../../devel/pkg-config
+TOOLS_DEPENDS.pkg-config?=	pkg-config>=0.25:../../devel/pkg-config
 TOOLS_CREATE+=			pkg-config
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.pkg-config=pkg-config
 TOOLS_PATH.pkg-config=		${TOOLS_PREFIX.pkg-config}/bin/pkg-config
@@ -836,7 +853,7 @@ MAKEFLAGS+=			TOOLS_IGNORE.xargs=
 TOOLS_DEPENDS.xargs?=		findutils>=4.1:../../sysutils/findutils
 TOOLS_CREATE+=			xargs
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.xargs=findutils
-TOOLS_PATH.xargs=		${TOOLS_PREFIX.xargs}/bin/${GNU_PROGRAM_PREFIX}xargs
+TOOLS_PATH.xargs=		${TOOLS_PREFIX.xargs}/bin/gxargs
 TOOLS_ARGS.xargs=		-r	# don't run command if stdin is empty
 .  endif
 .endif
@@ -871,7 +888,8 @@ TOOLS_VALUE_GNU.yacc=		${TOOLS_CMDLINE.yacc}
 .  endif
 .endif
 
-.for _t_ in zip zipcloak zipnote zipsplit
+_TOOLS.zip=	zip zipcloak zipnote zipsplit
+.for _t_ in ${_TOOLS.zip}
 .  if !defined(TOOLS_IGNORE.${_t_}) && !empty(_USE_TOOLS:M${_t_})
 .    if !empty(PKGPATH:Marchivers/zip)
 MAKEFLAGS+=			TOOLS_IGNORE.${_t_}=
@@ -895,8 +913,10 @@ _TOOLS.perl=			perl perldoc pod2html pod2man pod2text
 .  if !defined(TOOLS_IGNORE.${_t_}) && !empty(_USE_TOOLS:M${_t_})
 .    if !empty(PKGPATH:Mlang/perl5)
 MAKEFLAGS+=			TOOLS_IGNORE.${_t_}=
-.    elif !empty(_TOOLS_USE_PKGSRC.${_t_}:M[yY][eE][sS])
+.    elif !empty(_TOOLS_USE_PKGSRC.${_t_}:M[yY][eE][sS]) || \
+     !empty(DEPENDS:Mp5-*) || !empty(PERL5_PREFIX:M${PREFIX})
 .      include "../../lang/perl5/version.mk"
+_TOOLS_USE_PKGSRC.perl=		yes
 TOOLS_DEPENDS.${_t_}?=		perl>=${PERL5_REQD}:../../lang/perl5
 TOOLS_CREATE+=			${_t_}
 TOOLS_FIND_PREFIX+=		TOOLS_PREFIX.${_t_}=perl
@@ -921,7 +941,7 @@ MAKEFLAGS+=		TOOLS_IGNORE.${_t_}=
 TOOLS_DEPENDS.${_t_}?=	coreutils>=5.2.1:../../sysutils/coreutils
 TOOLS_CREATE+=		${_t_}
 TOOLS_FIND_PREFIX+=	TOOLS_PREFIX.${_t_}=coreutils
-TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/${GNU_PROGRAM_PREFIX}${_t_}
+TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/g${_t_}
 .    endif
 .  endif
 .endfor
@@ -936,7 +956,7 @@ MAKEFLAGS+=		TOOLS_IGNORE.[=
 TOOLS_DEPENDS.[?=	coreutils>=5.2.1:../../sysutils/coreutils
 TOOLS_CREATE+=		[
 TOOLS_FIND_PREFIX+=	TOOLS_PREFIX.[=coreutils
-TOOLS_PATH.[=		${TOOLS_PREFIX.[}/bin/${GNU_PROGRAM_PREFIX}[
+TOOLS_PATH.[=		${TOOLS_PREFIX.[}/bin/g[
 .  endif
 .endif
 
@@ -955,7 +975,7 @@ MAKEFLAGS+=		TOOLS_IGNORE.${_t_}=
 TOOLS_DEPENDS.${_t_}?=	grep>=2.5.1:../../textproc/grep
 TOOLS_CREATE+=		${_t_}
 TOOLS_FIND_PREFIX+=	TOOLS_PREFIX.${_t_}=grep
-TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/${GNU_PROGRAM_PREFIX}${_t_}
+TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/g${_t_}
 .    endif
 .  endif
 .endfor
@@ -1024,7 +1044,7 @@ MAKEFLAGS+=		TOOLS_IGNORE.${_t_}=
 TOOLS_DEPENDS.${_t_}?=	diffutils>=2.8.1:../../devel/diffutils
 TOOLS_CREATE+=		${_t_}
 TOOLS_FIND_PREFIX+=	TOOLS_PREFIX.${_t_}=diffutils
-TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/${GNU_PROGRAM_PREFIX}${_t_}
+TOOLS_PATH.${_t_}=	${TOOLS_PREFIX.${_t_}}/bin/g${_t_}
 .    endif
 .  endif
 .endfor

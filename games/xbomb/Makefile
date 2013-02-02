@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/11/21 16:48:33 adam Exp $
+# $NetBSD: Makefile,v 1.15 2010/02/19 21:57:51 joerg Exp $
 
 DISTNAME=	xbomb-2.2
 CATEGORIES=	games x11
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.gedanken.demon.co.uk/xbomb/
 COMMENT=	Square, hexagonal, and triangual minesweeper clone
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 BUILD_TARGET=		xbomb

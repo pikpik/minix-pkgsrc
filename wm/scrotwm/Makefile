@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/21 15:15:29 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/07/27 18:52:29 wiz Exp $
 #
 
 DISTNAME=	scrotwm-0.9.22
 CATEGORIES=	wm
-MASTER_SITES=	http://scrotwm.org/snapshot/
+MASTER_SITES=	https://opensource.conformal.com/snapshots/scrotwm/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -13,7 +13,6 @@ COMMENT=	Small dynamic tiling window manager for X11
 DEPENDS+=	dmenu-[0-9]*:../../x11/dmenu
 
 BUILDLINK_TRANSFORM+=	rm:-Werror
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

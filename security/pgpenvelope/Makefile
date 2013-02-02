@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.12 2010/08/21 16:35:46 seb Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/03 21:57:33 wiz Exp $
 #
 
 DISTNAME=		pgpenvelope-2.10.2
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		security mail
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=pgpenvelope/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://pgpenvelope.sourceforge.net/
 COMMENT=		GnuPG and Pine/Procmail integration tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-AppConfig>=1.52:../../devel/p5-AppConfig
 DEPENDS+=		p5-Class-MakeMethods>=1.010:../../devel/p5-Class-MakeMethods

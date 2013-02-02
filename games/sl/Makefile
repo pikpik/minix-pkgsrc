@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/01/07 09:13:54 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2012/05/23 08:11:18 dholland Exp $
 #
 
 DISTNAME=	sl
@@ -19,7 +19,6 @@ DIST_SUBDIR=	${PKGNAME_NOREV}
 
 BUILD_DEPENDS+=	nkf-[0-9]*:../../converters/nkf
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/ja_JP.EUC/man1
 
 post-build:
@@ -30,4 +29,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/sl.1.euc \
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/ja_JP.EUC/man1/sl.1
 
+.include "../../mk/curses.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

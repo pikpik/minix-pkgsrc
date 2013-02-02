@@ -1,21 +1,21 @@
-# $NetBSD: Makefile,v 1.8 2011/12/20 14:08:55 fhajny Exp $
+# $NetBSD: Makefile,v 1.13 2012/12/16 01:52:01 obache Exp $
 #
 
-DISTNAME=		apache-couchdb-1.1.1
+DISTNAME=		apache-couchdb-1.2.0
 PKGNAME=		${DISTNAME:S/apache-//}
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		databases
-MASTER_SITES=		${MASTER_SITE_APACHE:=couchdb/1.1.1/}
+MASTER_SITES=		${MASTER_SITE_APACHE:=couchdb/releases/1.2.0/}
 
 MAINTAINER=		filip@joyent.com
 HOMEPAGE=		http://couchdb.apache.org/
 COMMENT=		Document database server, accessible via a RESTful JSON API
 LICENSE=		apache-2.0
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
+VERSION.ejson=		0.1.0
 VERSION.ibrowse=	2.2.0
-VERSION.mochiweb=	7c2bc2
+VERSION.mochiweb=	1.4.1
+VERSION.snappy=		1.0.3
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++
@@ -85,8 +85,10 @@ SUBST_STAGE.unstrip=	post-configure
 SUBST_FILES.unstrip+=	src/couchdb/priv/Makefile
 SUBST_SED.unstrip=	-e '/^INSTALL_PROGRAM =/s, -s,,'
 
+PLIST_SUBST+=		VERSION.ejson=${VERSION.ejson}
 PLIST_SUBST+=		VERSION.ibrowse=${VERSION.ibrowse}
 PLIST_SUBST+=		VERSION.mochiweb=${VERSION.mochiweb}
+PLIST_SUBST+=		VERSION.snappy=${VERSION.snappy}
 
 .include "../../lang/erlang/buildlink3.mk"
 .include "../../lang/spidermonkey/buildlink3.mk"

@@ -1,12 +1,10 @@
-$NetBSD: distinfo,v 1.11 2007/12/02 12:55:09 wiz Exp $
+$NetBSD: distinfo,v 1.13 2012/05/25 17:08:46 asau Exp $
 
-SHA1 (INIT.2006-02-14.tgz) = 4661c72187bff2cd5fa3558ee7c0c22dd3ba5f39
-RMD160 (INIT.2006-02-14.tgz) = 68649532a15c34dcb20d61a544c1594d030c5f3f
-Size (INIT.2006-02-14.tgz) = 317116 bytes
-SHA1 (ast-ksh.2006-02-14.tgz) = 70edb56100f77bc53dcfe664b6479fa96c640d1b
-RMD160 (ast-ksh.2006-02-14.tgz) = e4ac75119e4678af2c90cb3a1a28805ad380e9dd
-Size (ast-ksh.2006-02-14.tgz) = 1575902 bytes
-SHA1 (patch-aa) = dd3e5cc9b80ae6e24faed3f15af354cf34fb16a0
-SHA1 (patch-ab) = adbbdb5deeb15c1eeb38bec5685d9e6331b2b964
-SHA1 (patch-ac) = ee5c19ead4e27b4b2ac8430e1a98d77ea991b4a1
+SHA1 (INIT.2012-08-01.tgz) = 0b472a615db384fe707042baaa3347dc1aa1c81e
+RMD160 (INIT.2012-08-01.tgz) = 48f1830bc85a26125dd986256d38be435668d445
+Size (INIT.2012-08-01.tgz) = 377769 bytes
+SHA1 (ast-ksh.2012-08-01.tgz) = 316428e9937806183a134aa1669dea40c3a73695
+RMD160 (ast-ksh.2012-08-01.tgz) = 74bf4735182a6b527e3eb5c5ae6d7854ea72d78b
+Size (ast-ksh.2012-08-01.tgz) = 2053532 bytes
+SHA1 (patch-ab) = 98ec5d5e90f3f9bf45bdbd7199f85e932e07eada
 SHA1 (patch-ad) = a85c7ac72c3443e4c140ee36bbc35b2a4eb42062

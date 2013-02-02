@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.44 2012/02/06 12:40:54 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/08 23:02:03 adam Exp $
 
 DISTNAME=	qalculate-gtk-0.9.7
-PKGREVISION=	12
+PKGREVISION=	18
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qalculate/}
 
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://qalculate.sourceforge.net/
 COMMENT=	Modern multi-purpose desktop calculator (GNOME version)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

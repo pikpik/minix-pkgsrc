@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2009/07/06 16:08:30 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2012/04/21 04:18:02 dholland Exp $
 
 DISTNAME=	LPRng-3.8.28
 PKGNAME=	LPRng-core-3.8.28
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.lprng.com/
 COMMENT=	Enhanced Printer Spooler
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
@@ -28,8 +26,8 @@ CONFIGURE_ARGS+=	--with-printcap_path=${PRINTCAP_PATH:Q}
 CONFIGURE_ARGS+=	--with-filterdir=${FILTER_DIR:Q}
 CONFIGURE_ARGS+=	--with-filter_path=${FILTER_PATH:Q}
 CONFIGURE_ARGS+=	--with-ld_library_path=${FILTER_LD_PATH:Q}
-CONFIGURE_ENV+=		CHGRP=${TOOLS_CHGRP:Q}
-CONFIGURE_ENV+=		CHOWN=${TOOLS_CHOWN:Q}
+CONFIGURE_ENV+=		ac_cv_path_CHGRP=${TOOLS_CHGRP:Q}
+CONFIGURE_ENV+=		ac_cv_path_CHOWN=${TOOLS_CHOWN:Q}
 
 .include "options.mk"
 
@@ -56,6 +54,12 @@ SPECIAL_PERMS+=		bin/lpq ${SETUID_ROOT_PERMS} \
 			bin/lprm ${SETUID_ROOT_PERMS} \
 			bin/lpstat ${SETUID_ROOT_PERMS} \
 			sbin/lpc ${SETUID_ROOT_PERMS} \
+
+.include "../../mk/compiler.mk"
+
+.if !empty(PKGSRC_COMPILER:Mclang)
+BUILDLINK_TRANSFORM+=	rm:-Werror
+.endif
 
 pre-patch:
 	${MV} ${WRKSRC:Q}/man/lpd.conf.n ${WRKSRC:Q}/man/lpd.conf.n.in

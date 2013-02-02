@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.112 2012/03/03 00:13:34 wiz Exp $
+# $NetBSD: Makefile,v 1.124 2012/12/15 10:36:29 ryoon Exp $
 #
 
 DISTNAME=		gnome-utils-2.32.0
-PKGREVISION=		10
+PKGREVISION=		20
 CATEGORIES=		misc gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-utils/2.32/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		rh@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Set of useful GNOME2 utilities and applications
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
@@ -25,6 +23,8 @@ CONFIGURE_ARGS+=	--enable-gtk-doc=no
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnome-utils
 PKG_SUPPORTED_OPTIONS+=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
+
 .include "../../mk/bsd.options.mk"
 .if !empty(PKG_OPTIONS:Minet6)
 CONFIGURE_ARGS+=	--enable-ipv6

@@ -1,4 +1,4 @@
-# $NetBSD: Haiku.mk,v 1.5 2011/09/10 16:30:02 abs Exp $
+# $NetBSD: Haiku.mk,v 1.6 2012/03/19 12:34:17 joerg Exp $
 #
 # Variable definitions for the Haiku operating system.
 
@@ -19,7 +19,7 @@ DEF_UMASK?=		022
 DEFAULT_SERIAL_DEVICE?=	/dev/tty
 EXPORT_SYMBOLS_LDFLAGS?=	# Don't add symbols to the dynamic symbol table
 #GROUPADD?=		/bin/groupadd
-MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
+MOTIF_TYPE_DEFAULT?=	motif	# default 2.0 compatible libs type
 NOLOGIN?=		/bin/false
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c

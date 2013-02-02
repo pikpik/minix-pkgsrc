@@ -1,11 +1,11 @@
-# $NetBSD: Makefile.common,v 1.35 2011/01/11 12:47:55 drochner Exp $
+# $NetBSD: Makefile.common,v 1.4 2012/10/19 18:39:05 drochner Exp $
 #
-# used by print/evince/Makefile
-# used by print/evince-nautilus/Makefile
+# used by print/evince3/Makefile
+# would probably be used by print/evince3-nautilus/Makefile if that existed
 
-DISTNAME=		evince-3.2.1
+DISTNAME=		evince-3.6.1
 CATEGORIES=		print
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/evince/3.2/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/evince/3.6/}
 EXTRACT_SUFX=		.tar.xz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
@@ -20,6 +20,9 @@ USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_LANGUAGES=		c c++
+
+BUILD_DEPENDS+=	gdbus-codegen-[0-9]*:../../devel/gdbus-codegen
+BUILD_DEPENDS+=	itstool-[0-9]*:../../textproc/itstool
 
 # XXX fake for "configure" to allow build w/o a gs installed
 # (avoid hard dependency on a specific version)

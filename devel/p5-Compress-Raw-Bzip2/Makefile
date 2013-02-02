@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2012/01/31 08:07:48 sno Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:54:46 wiz Exp $
 
-DISTNAME=	Compress-Raw-Bzip2-2.049
+DISTNAME=	Compress-Raw-Bzip2-2.055
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Compress/}
 
@@ -11,7 +12,6 @@ COMMENT=	Perl5 low-level interface to bzip2 compression library
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 PERL5_PACKLIST=		auto/Compress/Raw/Bzip2/.packlist

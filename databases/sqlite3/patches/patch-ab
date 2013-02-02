@@ -1,11 +1,11 @@
---- shell.c.orig	Sun Apr  1 22:10:33 2012
-+++ shell.c	Sun Apr  1 22:11:45 2012
-@@ -90,7 +90,7 @@
+--- shell.c.orig	Fri Feb  1 02:12:19 2013
++++ shell.c
+@@ -90,7 +90,7 @@ static int enableTimer = 0;
  #define IsDigit(X)  isdigit((unsigned char)X)
  #define ToLower(X)  (char)tolower((unsigned char)X)
  
--#if !defined(_WIN32) && !defined(WIN32) && !defined(__OS2__) && !defined(__RTP__) && !defined(_WRS_KERNEL)
-+#if !defined(_WIN32) && !defined(WIN32) && !defined(__OS2__) && !defined(__RTP__) && !defined(_WRS_KERNEL) && !defined(__minix)
+-#if !defined(_WIN32) && !defined(WIN32) && !defined(_WRS_KERNEL)
++#if !defined(_WIN32) && !defined(WIN32) && !defined(_WRS_KERNEL) && !defined(__minix)
  #include <sys/time.h>
  #include <sys/resource.h>
  

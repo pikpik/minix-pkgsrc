@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2012/03/03 00:12:53 wiz Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/31 11:16:40 asau Exp $
 #
 
 VERSION=		0.6.1
 DISTNAME=		boa-constructor-${VERSION}.src
 PKGNAME=		boa-constructor-${VERSION}
-PKGREVISION=		11
+PKGREVISION=		16
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=boa-constructor/}
 EXTRACT_SUFX=		.zip
@@ -15,12 +15,11 @@ COMMENT=		Python IDE
 
 DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PREV_PKGPATH=		devel/boaconstructor
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 BOADIR=			${PREFIX}/share/boa-constructor-${VERSION}
-INSTALLATION_DIRS+=	${BOADIR}
+INSTALLATION_DIRS=	bin ${BOADIR}
 
 SEDSUBSTS=	-e "s|@PYTHONBIN@|${PYTHONBIN}|"
 SEDSUBSTS+=	-e "s|@PREFIX@|${PREFIX}|"
@@ -35,8 +34,6 @@ REPLACE_PYTHON+=	ExternalLib/ndiff.py
 REPLACE_PYTHON+=	ExternalLib/pylint.py
 REPLACE_PYTHON+=	ExternalLib/reindent.py
 REPLACE_PYTHON+=	ExternalLib/tarfile.py
-
-INSTALLATION_DIRS=	bin
 
 USE_TOOLS+=	pax
 

@@ -16,6 +16,7 @@ lib/php/awl/inc/DataEntry.php
 lib/php/awl/inc/DataUpdate.php
 lib/php/awl/inc/EMail.php
 lib/php/awl/inc/MenuSet.php
+lib/php/awl/inc/Multipart.php
 lib/php/awl/inc/PgQuery.php
 lib/php/awl/inc/Session.php
 lib/php/awl/inc/Translation.php

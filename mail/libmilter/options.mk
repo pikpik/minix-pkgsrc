@@ -1,8 +1,8 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1 2007/09/25 20:05:24 jlam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.libmilter
 PKG_SUPPORTED_OPTIONS=	inet6
-PKG_SUGGESTED_OPTIONS=	# empty
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

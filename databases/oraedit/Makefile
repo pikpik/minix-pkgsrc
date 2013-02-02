@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2011/06/19 18:53:19 dholland Exp $
+# $NetBSD: Makefile,v 1.21 2012/04/15 22:00:59 wiz Exp $
 
 DISTNAME=	oraedit-0.1.4
 PKGREVISION=	4
@@ -6,10 +6,8 @@ CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Editor of PL/SQL source stored in Oracle database
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 

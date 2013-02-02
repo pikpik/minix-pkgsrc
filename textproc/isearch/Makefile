@@ -1,18 +1,14 @@
-# $NetBSD: Makefile,v 1.12 2010/10/12 22:15:42 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/25 06:55:57 asau Exp $
 
 DISTNAME=		Isearch-1.47.01
 PKGNAME=		isearch-1.47.01
+PKGREVISION=		1
 CATEGORIES=		textproc databases
 MASTER_SITES=		# http://www.etymon.com/pub/Isearch/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.etymon.com/Isearch/
 COMMENT=		Advanced text indexing and searching system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-# Pointer casts are errors in C++
-NOT_FOR_PLATFORM+=	${LP64PLATFORMS}
 
 MAKE_JOBS_SAFE=		no
 

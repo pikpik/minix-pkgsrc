@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2008/06/20 01:09:38 joerg Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/08 13:04:16 asau Exp $
 #
 
 DISTNAME=	asclock-gtk-2.1.10beta
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}	# www.asclock.org is no more
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Dockable clock and calendar with themes for GTK+
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_SRC_ON_FTP=	Already in MASTER_SITE_LOCAL
 
@@ -40,5 +38,4 @@ do-install:
 .include "../../x11/gtk/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

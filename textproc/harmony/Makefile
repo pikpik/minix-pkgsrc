@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2012/03/03 00:14:00 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/25 20:18:36 cheusov Exp $
 #
 
 DISTNAME=	harmony-stable-${VERSION}
 PKGNAME=	harmony-${VERSION}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	misc
 MASTER_SITES=	http://alliance.seas.upenn.edu/~harmony/download/
 
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://alliance.seas.upenn.edu/~harmony/
 COMMENT=	Generic framework for reconciling disconnected updates to heterogeneous, replicated XML data
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 BUILD_DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
@@ -20,8 +19,6 @@ BUILD_DEPENDS+=	tex-latex-bin-[0-9]*:../../print/tex-latex-bin
 BUILD_DEPENDS+=	tex-preprint-[0-9]*:../../print/tex-preprint
 BUILD_DEPENDS+=	tex-psnfss-[0-9]*:../../fonts/tex-psnfss
 DEPENDS+=	ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
-DEPENDS+=	equeue-[0-9]*:../../devel/equeue
-DEPENDS+=	ocamlnet-[0-9]*:../../net/ocamlnet
 DEPENDS+=	pxp-[0-9]*:../../textproc/pxp
 
 VERSION=20060526
@@ -49,4 +46,5 @@ do-install:
 
 .include "../../lang/ocaml/buildlink3.mk"
 .include "../../devel/pcre-ocaml/buildlink3.mk"
+.include "../../net/ocamlnet/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

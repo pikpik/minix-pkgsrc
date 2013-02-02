@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.63 2012/03/03 00:12:16 wiz Exp $
+# $NetBSD: Makefile,v 1.75 2012/12/15 10:36:21 ryoon Exp $
 #
 
 DISTNAME=		gnome-pilot-2.0.17
-PKGREVISION=		16
+PKGREVISION=		27
 CATEGORIES=		comms gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-pilot/2.0/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Handheld synchronisation for GNOME
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		gob2-[0-9]*:../../devel/gob2
 
@@ -32,4 +30,5 @@ CONFIGURE_ARGS+=	--with-vfs
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../mk/omf-scrollkeeper.mk"
 .include "../../x11/gnome-panel/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

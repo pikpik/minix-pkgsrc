@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-frontend_linux_linux_utilities_toolbar_manager.cpp,v 1.1.1.1 2011/05/16 12:40:50 adam Exp $
 
 Fix building with newer Gtkmm.
 

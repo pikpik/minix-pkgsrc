@@ -4,6 +4,7 @@ man/de/man1/pdf2djvu.1
 man/man1/pdf2djvu.1
 man/pl/man1/pdf2djvu.1
 man/ru/man1/pdf2djvu.1
+man/uk/man1/pdf2djvu.1
 share/locale/de/LC_MESSAGES/pdf2djvu.mo
 share/locale/pl/LC_MESSAGES/pdf2djvu.mo
 share/locale/ru/LC_MESSAGES/pdf2djvu.mo

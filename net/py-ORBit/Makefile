@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.39 2012/02/06 12:41:17 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2012/10/23 17:19:01 asau Exp $
 #
 
 DISTNAME=	pyorbit-2.24.0
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/pyorbit/ORBit/}
-PKGREVISION=	3
+PKGREVISION=	5
 CATEGORIES=	net python
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/pyorbit/2.24/}
 EXTRACT_SUFX=	.tar.bz2
@@ -13,8 +13,6 @@ HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Python bindings for ORBit2
 LICENSE=	gnu-lgpl-v2.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 PY_PATCHPLIST=	YES
 USE_TOOLS+=	gmake pkg-config
 USE_LIBTOOL=	YES
@@ -22,9 +20,9 @@ PKGCONFIG_OVERRIDE+=	pyorbit-2.pc.in
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	PYTHON=${PYTHONBIN:Q}
 
+PYTHON_SELF_CONFLICT=	YES
+
 BUILDLINK_API_DEPENDS.python26+= python26>=2.6.2nb4
-BUILDLINK_API_DEPENDS.python25+= python25>=2.5.4nb2
-BUILDLINK_API_DEPENDS.python24+= python24>=2.4.5nb4
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "SunOS"

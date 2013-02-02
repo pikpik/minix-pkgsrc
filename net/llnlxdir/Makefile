@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2010/02/11 22:05:00 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2011/12/09 14:36:32 drochner Exp $
 #
 
 DISTNAME=		llnlxdir2_1_2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tar.Z
 MAINTAINER=		tor@stormwall.org
 HOMEPAGE=		http://www.llnl.gov/icc/sdd/img/xdir.html
 COMMENT=		Advanced graphical FTP client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/llnlxdir2_1_2/sources

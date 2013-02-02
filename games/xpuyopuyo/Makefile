@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.41 2011/04/22 13:43:40 obache Exp $
+# $NetBSD: Makefile,v 1.43 2012/06/04 09:29:57 wiz Exp $
 
 DISTNAME=		xpuyopuyo-0.9.1
-PKGREVISION=		8
+PKGREVISION=		9
 CATEGORIES=		games x11
 MASTER_SITES=		http://chaos2.org/xpuyopuyo/ \
 			http://lenin.dabney.caltech.edu./~justins/xpuyopuyo/
@@ -9,8 +9,6 @@ MASTER_SITES=		http://chaos2.org/xpuyopuyo/ \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://chaos2.org/xpuyopuyo/
 COMMENT=		Tetris-like puzzle game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		automake autoconf gmake
 USE_X11BASE=		YES

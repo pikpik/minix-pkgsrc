@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/08/28 22:30:17 dholland Exp $
+# $NetBSD: Makefile,v 1.16 2012/01/11 14:52:19 hans Exp $
 #
 
 DISTNAME=	cddbd-1.3.1
@@ -14,8 +14,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedb.org/en/download__server_software.4.html
 COMMENT=	Internet CD Database Server
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=	makefile
 

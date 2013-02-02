@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2010/03/30 11:17:45 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/02/15 12:30:06 obache Exp $
 #
 
 DISTNAME=		nload-0.7.4
@@ -9,8 +9,6 @@ MAINTAINER=		bartosz.kuzma@gmail.com
 HOMEPAGE=		http://www.roland-riegel.de/nload/
 COMMENT=		Monitoring network traffic and bandwidth usage
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 MANCOMPRESSED=		yes

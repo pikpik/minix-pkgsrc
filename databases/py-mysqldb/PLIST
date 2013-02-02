@@ -1,8 +1,8 @@
-@comment $NetBSD: PLIST,v 1.5 2008/08/06 17:16:49 mjl Exp $
-${PYSITELIB}/MySQL_python-${DIST_VERSION}-py${PYVERSSUFFIX}.egg-info/PKG-INFO
-${PYSITELIB}/MySQL_python-${DIST_VERSION}-py${PYVERSSUFFIX}.egg-info/SOURCES.txt
-${PYSITELIB}/MySQL_python-${DIST_VERSION}-py${PYVERSSUFFIX}.egg-info/dependency_links.txt
-${PYSITELIB}/MySQL_python-${DIST_VERSION}-py${PYVERSSUFFIX}.egg-info/top_level.txt
+@comment $NetBSD$
+${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
+${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
+${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
+${PYSITELIB}/${EGG_INFODIR}/top_level.txt
 ${PYSITELIB}/MySQLdb/__init__.py
 ${PYSITELIB}/MySQLdb/__init__.pyc
 ${PYSITELIB}/MySQLdb/__init__.pyo

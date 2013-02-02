@@ -1,0 +1,15 @@
+$NetBSD$
+
+Adapt for pkgsrc.
+
+--- Makefile.orig	2012-05-10 20:13:19.000000000 +0000
++++ Makefile
+@@ -5,7 +5,7 @@
+ 
+ DESTDIR=
+ prefix?=/usr
+-MANDIR=$(prefix)/share/man
++MANDIR=$(prefix)/$(PKGMANDIR)
+ 
+ GZIP=gzip -9
+ BZIP2=bzip2 -9

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2007/03/19 16:40:28 tv Exp $
+# $NetBSD: Makefile,v 1.27 2010/02/11 20:53:53 joerg Exp $
 #
 
 DISTNAME=		entropy_rsa-${ENTROPY_VERSION}
@@ -12,8 +12,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://entropy.stop1984.com/
 COMMENT=		Anonymous peer-to-peer networking node (similar to Freenet)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		autoconf gmake

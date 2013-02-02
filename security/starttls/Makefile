@@ -1,21 +1,20 @@
-# $NetBSD: Makefile,v 1.5 2009/08/06 01:44:55 minskim Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/14 13:20:22 cheusov Exp $
 #
 
 DISTNAME=		starttls-0.10
-PKGREVISION=		3
+PKGREVISION=		6
 CATEGORIES=		security
 MASTER_SITES=		ftp://opaopa.org/pub/elisp/
 
-MAINTAINER=		fun@naobsd.org
+MAINTAINER=		cheusov@NetBSD.org
 HOMEPAGE=		ftp://opaopa.org/pub/elisp/
 COMMENT=		Simple wrapper program for STARTTLS on emacsen
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		gnu-gpl-v2
 
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
-.include "../../editors/emacs/modules.mk"
+MAKE_FLAGS=		lisp_LISP=
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

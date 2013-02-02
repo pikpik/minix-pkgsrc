@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2007/03/16 20:07:43 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2007/12/20 12:24:11 obache Exp $
 #
 
 DISTNAME=	asr.pages
@@ -15,8 +15,6 @@ NO_CONFIGURE=	yes
 NO_BUILD=	yes
 DIST_SUBDIR=	${PKGNAME_NOREV}
 INSTALLATION_DIRS=	${PKGMANDIR}/man1 ${PKGMANDIR}/man2 ${PKGMANDIR}/man3 ${PKGMANDIR}/man5 ${PKGMANDIR}/man8
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 do-install:
 	${INSTALL_MAN} ${WRKDIR}/bosskill.8	${DESTDIR}${PREFIX}/${PKGMANDIR}/man8

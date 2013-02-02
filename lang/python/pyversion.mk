@@ -1,4 +1,4 @@
-# $NetBSD: pyversion.mk,v 1.95 2012/02/26 09:17:41 sbd Exp $
+# $NetBSD: pyversion.mk,v 1.104 2012/10/03 23:48:00 cheusov Exp $
 
 # This file determines which Python version is used as a dependency for
 # a package.
@@ -8,8 +8,17 @@
 # PYTHON_VERSION_DEFAULT
 #	The preferred Python version to use.
 #
-#	Possible values: 24 25 26 27 31
+#	Possible values: 26 27 31 32 33
 #	Default: 27
+#
+# === Infrastructure variables ===
+#
+# PYTHON_VERSION_REQD
+#	Python version to use. This variable should not be set in
+#	packages.  Normally it is used by bulk build tools.
+#
+#	Possible: ${PYTHON_VERSIONS_ACCEPTED}
+#	Default:  ${PYTHON_VERSION_DEFAULT}
 #
 # === Package-settable variables ===
 #
@@ -18,8 +27,8 @@
 #	order of the entries matters, since earlier entries are
 #	preferred over later ones.
 #
-#	Possible values: 31 27 26 25 24
-#	Default: (31) 27 26 25 24
+#	Possible values: 33 32 31 27 26
+#	Default: (33 32 31) 27 26
 #
 # PYTHON_VERSIONS_INCLUDE_3X
 #	Wether the default PYTHON_VERSIONS_ACCEPTED should include
@@ -32,7 +41,7 @@
 # PYTHON_VERSIONS_INCOMPATIBLE
 #	The Python versions that are NOT acceptable for the package.
 #
-#	Possible values: 24 25 26 27 31
+#	Possible values: 26 27 31 32 33
 #	Default: (depends on the platform)
 #
 # PYTHON_FOR_BUILD_ONLY
@@ -40,6 +49,13 @@
 #
 #	Possible values: (defined) (undefined)
 #	Default: (undefined)
+#
+# PYTHON_SELF_CONFLICT
+#	If set to "yes", additional CONFLICTS entries are added for
+#	registering a conflict between pyNN-<modulename> packages.
+#
+#	Possible values: yes no
+#	Default: no
 #
 # === Defined variables ===
 #
@@ -78,17 +94,17 @@ BUILD_DEFS_EFFECTS+=	PYPACKAGE
 
 PYTHON_VERSION_DEFAULT?=		27
 .if ${PYTHON_VERSIONS_INCLUDE_3X:U:tl} == "yes"
-PYTHON_VERSIONS_ACCEPTED?=		31 27 26 25 24
+PYTHON_VERSIONS_ACCEPTED?=		33 32 31 27 26
 .else
-PYTHON_VERSIONS_ACCEPTED?=		27 26 25 24
+PYTHON_VERSIONS_ACCEPTED?=		27 26
 .endif
 PYTHON_VERSIONS_INCOMPATIBLE?=		# empty by default
 
-BUILDLINK_API_DEPENDS.python24?=		python24>=2.4
-BUILDLINK_API_DEPENDS.python25?=		python25>=2.5.1
 BUILDLINK_API_DEPENDS.python26?=		python26>=2.6
 BUILDLINK_API_DEPENDS.python27?=		python27>=2.7
 BUILDLINK_API_DEPENDS.python31?=		python31>=3.1
+BUILDLINK_API_DEPENDS.python32?=		python32>=3.2
+BUILDLINK_API_DEPENDS.python33?=		python33>=3.3
 
 # transform the list into individual variables
 .for pv in ${PYTHON_VERSIONS_ACCEPTED}
@@ -134,44 +150,53 @@ MULTI+=	PYTHON_VERSION_REQD=${_PYTHON_VERSION}
 _PYTHON_VERSION=	none
 .endif
 
-.if ${_PYTHON_VERSION} == "31"
+# Additional CONFLICTS
+.if ${PYTHON_SELF_CONFLICT:U:tl} == "yes"
+.for i in ${PYTHON_VERSIONS_ACCEPTED:N${_PYTHON_VERSION}}
+CONFLICTS +=	${PKGNAME:S/py${_PYTHON_VERSION}/py${i}/:C/-[0-9].*$/-[0-9]*/}
+.endfor
+.endif # PYCONFLICTS
+
+#
+PLIST_VARS+=	py2x py3x
+
+.if ${_PYTHON_VERSION} == "33"
+PYPKGSRCDIR=	../../lang/python33
+PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python33}:${PYPKGSRCDIR}
+PYPACKAGE=	python33
+PYVERSSUFFIX=	3.3
+PYPKGPREFIX=	py33
+PLIST.py3x=	yes
+.elif ${_PYTHON_VERSION} == "32"
+PYPKGSRCDIR=	../../lang/python32
+PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python32}:${PYPKGSRCDIR}
+PYPACKAGE=	python32
+PYVERSSUFFIX=	3.2
+PYPKGPREFIX=	py32
+PLIST.py3x=	yes
+.elif ${_PYTHON_VERSION} == "31"
 PYPKGSRCDIR=	../../lang/python31
 PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python31}:${PYPKGSRCDIR}
 PYPACKAGE=	python31
 PYVERSSUFFIX=	3.1
 PYPKGPREFIX=	py31
-PYDISTUTILS_CREATES_EGGFILES=	yes
+PLIST.py3x=	yes
 .elif ${_PYTHON_VERSION} == "27"
 PYPKGSRCDIR=	../../lang/python27
 PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python27}:${PYPKGSRCDIR}
 PYPACKAGE=	python27
 PYVERSSUFFIX=	2.7
 PYPKGPREFIX=	py27
-PYDISTUTILS_CREATES_EGGFILES=	yes
+PLIST.py2x=	yes
 .elif ${_PYTHON_VERSION} == "26"
 PYPKGSRCDIR=	../../lang/python26
 PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python26}:${PYPKGSRCDIR}
 PYPACKAGE=	python26
 PYVERSSUFFIX=	2.6
 PYPKGPREFIX=	py26
-PYDISTUTILS_CREATES_EGGFILES=	yes
-.elif ${_PYTHON_VERSION} == "25"
-PYPKGSRCDIR=	../../lang/python25
-PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python25}:${PYPKGSRCDIR}
-PYPACKAGE=	python25
-PYVERSSUFFIX=	2.5
-PYPKGPREFIX=	py25
-PYDISTUTILS_CREATES_EGGFILES=	yes
-.elif ${_PYTHON_VERSION} == "24"
-PYPKGSRCDIR=	../../lang/python24
-PYDEPENDENCY=	${BUILDLINK_API_DEPENDS.python24}:${PYPKGSRCDIR}
-PYPACKAGE=	python24
-PYVERSSUFFIX=	2.4
-PYPKGPREFIX=	py24
-PYDISTUTILS_CREATES_EGGFILES=	no
+PLIST.py2x=	yes
 .else
 PKG_FAIL_REASON+=   "No valid Python version"
-PYDISTUTILS_CREATES_EGGFILES=	no
 PYPKGPREFIX=
 .endif
 

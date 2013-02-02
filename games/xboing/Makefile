@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2008/02/12 08:03:49 rillig Exp $
+# $NetBSD: Makefile,v 1.27 2010/02/14 21:52:53 joerg Exp $
 #
 
 DISTNAME=		xboing2.4
@@ -10,8 +10,6 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB:=games/}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.techrescue.org/xboing/
 COMMENT=		Breakout style game for X11
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/xboing
 USE_IMAKE=		YES

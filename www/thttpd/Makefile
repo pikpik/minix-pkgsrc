@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2007/09/07 22:12:26 jlam Exp $
+# $NetBSD: Makefile,v 1.43 2009/12/13 17:42:36 asau Exp $
 
 DISTNAME=	thttpd-2.25b
 PKGREVISION=	5
@@ -30,7 +30,6 @@ EGDIR=		${PREFIX}/share/examples
 CONF_FILES=	${EGDIR}/thttpd.conf ${PKG_SYSCONFDIR}/thttpd.conf
 RCD_SCRIPTS=	thttpd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	$(PKGMANDIR)/man1 share/thttpd
 
 SUBST_CLASSES+=		paths

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2011/04/22 13:44:50 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:57:50 wiz Exp $
 
 DISTNAME=	namazu-2.0.21
+PKGREVISION=	1
 CATEGORIES=	japanese textproc www
 MASTER_SITES=	http://www.namazu.org/stable/
 
@@ -20,7 +21,6 @@ GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c
 USE_LIBTOOL=		yes
 TEST_TARGET=		check
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		PKG_SYSCONFBASE
 CONFIGURE_ARGS+=	--localstatedir=${PREFIX}/${DATADIR} \

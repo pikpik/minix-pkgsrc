@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2012/02/13 12:29:12 drochner Exp $
+# $NetBSD: Makefile,v 1.32 2012/10/14 18:13:18 wiz Exp $
 #
 
-DISTNAME=	desktop-file-utils-0.19
-PKGREVISION=	1
+DISTNAME=	desktop-file-utils-0.21
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://freedesktop.org/software/desktop-file-utils/releases/
 EXTRACT_SUFX=	.tar.xz
@@ -11,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/wiki/Software/desktop-file-utils
 COMMENT=	Utilities to manage desktop entries
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		YES

@@ -1,0 +1,9 @@
+# $NetBSD$
+
+case ${STAGE} in
+POST-INSTALL)
+	if ${TEST} ! -f @AMANDA_VAR@/amandates ;then
+		${TOUCH} @AMANDA_VAR@/amandates
+	fi
+	;;
+esac

@@ -1,21 +1,21 @@
-# $NetBSD: Makefile,v 1.47 2012/03/06 17:38:56 ryoon Exp $
+# $NetBSD: Makefile,v 1.56 2012/11/21 21:43:03 ryoon Exp $
 #
 
-.include "../../devel/xulrunner/dist.mk"
-#PKGNAME=	nspr-${NSPR_RELEASE}.3${MOZ_BRANCH_MINOR}
-PKGNAME=	nspr-4.9.3
-NSPR_RELEASE=	4.9.0
+DISTNAME=	nspr-${NSPR_RELEASE}
+NSPR_RELEASE=	4.9.4
 CATEGORIES=	devel
+MASTER_SITES=	${MASTER_SITE_MOZILLA_ALL:=nspr/releases/v${NSPR_RELEASE}/src/}
 
 MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://www.mozilla.org/projects/nspr/index.html
 COMMENT=	Platform-neutral API for system level and libc like functions
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}js/src/configure
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}configure
+
+WRKSRC=			${WRKDIR}/${DISTNAME}/mozilla
 
 GNU_CONFIGURE=		yes
 GNU_CONFIGURE_LIBSUBDIR=nspr
@@ -35,6 +35,14 @@ SUBST_STAGE.nspr-config=	pre-configure
 SUBST_MESSAGE.nspr-config=	Fixing nspr-config run path
 SUBST_FILES.nspr-config=	nsprpub/config/nspr-config.in
 SUBST_SED.nspr-config=		-e 's|-L$$libdir|"${COMPILER_RPATH_FLAG}$$libdir -L$$libdir"|g'
+
+.if ${OPSYS} == "Darwin"
+SUBST_CLASSES+=			exec_path
+SUBST_STAGE.exec_path=		pre-configure
+SUBST_MESSAGE.exec_path=	Fixing @executable_path
+SUBST_FILES.exec_path=		nsprpub/configure.in
+SUBST_SED.exec_path=		-e 's,@executable_path,${PREFIX}/lib/nspr,g'
+.endif
 
 .if ${OBJECT_FMT} == "ELF"
 SO_SUFFIX=		so
@@ -71,13 +79,6 @@ BUILDLINK_PASSTHRU_DIRS+=	Developer/Headers/FlatCarbon
 .endif
 
 pre-configure:
-# sanity check: make sure the nspr release is what we think it is.
-#	@set -e; if [ '"${NSPR_RELEASE}"' !=			\
-#	  "`${AWK} '/PR_VERSION/ {print $$3}' <			\
-#	    ${WRKSRC}/nsprpub/pr/include/prinit.h`" ]; then	\
-#	  ${ECHO} "package is out of date";			\
-#	  exit 1;						\
-#	fi
 	cd ${WRKSRC}/nsprpub && autoconf
 
 post-build:

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/06/13 22:45:29 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/01/13 13:39:31 wiz Exp $
 
 DISTNAME=	xtide-2.8.3
 PKGREVISION=	4
@@ -9,8 +9,6 @@ DISTFILES=	${DISTNAME}.tar.bz2 ${HARMONICS_FILE}.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.flaterco.com/
 COMMENT=	X11 tide predictor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++

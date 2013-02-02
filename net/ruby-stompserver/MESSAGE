@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+stompserver is not capable of handling absolute paths from its
+configuration file. By default, everything is installed in
+${STOMPSERVER_WRKDIR}.
+Feel free to modify this variable using your mk.conf file.
+
+===========================================================================

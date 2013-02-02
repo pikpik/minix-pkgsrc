@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.86 2011/11/01 06:00:54 sbd Exp $
+# $NetBSD: Makefile,v 1.95 2013/01/06 01:00:58 wiz Exp $
 
-DISTNAME=	doxygen-1.6.3.src
+DISTNAME=	doxygen-1.8.3.1.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	8
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.stack.nl/pub/users/dimitri/ \
 		http://ftp.stack.nl/pub/users/dimitri/
@@ -11,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.doxygen.org/
 COMMENT=	Documentation system for C++, Java, IDL and C
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 UNLIMIT_RESOURCES+=	datasize
@@ -28,7 +25,11 @@ CONFIGURE_ARGS+=	--docdir ${PREFIX}/share/doc/doxygen
 MAKE_ENV+=		PKGSRC_CFLAGS=${CFLAGS:Q}
 MAKE_FLAGS+=		MAN1DIR=${PKGMANDIR}/man1
 
+# Case Insensitive fs or Sensitive
 PLIST_VARS+=		ci cs
+
+# pangocairo: basic ps/pdf support via PKG_BUILD_OPTIONS.graphviz
+PLIST_VARS+=		pangocairo nopangocairo
 
 SUBST_CLASSES+=		path
 SUBST_STAGE.path=	pre-configure
@@ -48,8 +49,6 @@ SUBST_MESSAGE.epstopdf=	Fixing path to epstopdf
 SUBST_FILES.epstopdf=	src/diagram.cpp src/docparser.cpp src/dot.cpp \
 			src/msc.cpp
 SUBST_SED.epstopdf=	-e 's,"epstopdf","${LOCALBASE}/bin/epstopdf",g'
-
-PRIVILEGED_STAGES+=	clean
 
 # Just install the binary and the man page.  (If the latex option
 # is enabled, this target will be augmented.)
@@ -75,5 +74,11 @@ BUILDLINK_API_DEPENDS.graphviz+=	graphviz>=2.12nb1
 .include "options.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../graphics/graphviz/buildlink3.mk"
+
+.if !empty(PKG_BUILD_OPTIONS.graphviz:Mpangocairo)
+PLIST.pangocairo=       yes
+.else
+PLIST.nopangocairo=       yes
+.endif
 .include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"

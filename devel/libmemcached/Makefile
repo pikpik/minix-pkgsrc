@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/02/07 11:34:00 fhajny Exp $
+# $NetBSD: Makefile,v 1.4 2012/07/09 19:08:46 joerg Exp $
 #
 
 DISTNAME=	libmemcached-1.0.4
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://libmemcached.org/
 COMMENT=	C/C++ client library and tools for the memcached server
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config gmake
@@ -23,6 +21,11 @@ PKGCONFIG_OVERRIDE+=	support/libmemcached.pc.in
 # Avoid building 64bit on a 32bit bootstrap (affects SunOS)
 .if defined(ABI) && empty(ABI:M64)
 CONFIGURE_ARGS+=	--disable-64bit
+.endif
+
+# for backtrace
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/execinfo.h)
+LIBS+=	-lexecinfo
 .endif
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,9 @@
+===========================================================================
+$NetBSD$
+
+If you experience java.net.SocketException errors, disable IPv6 in the
+broker script by adding the following:
+
+export JMX_OPTS="-Djava.net.preferIPv4Stack=true"
+
+===========================================================================

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2011/09/17 07:03:57 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/08/14 11:14:40 sborrill Exp $
 #
 
-DISTNAME=		istgt-20111008
+DISTNAME=		istgt-20120811
 CATEGORIES=		net
 MASTER_SITES=		http://www.peach.ne.jp/archives/istgt/
 
@@ -9,8 +9,6 @@ MAINTAINER=		sborrill@NetBSD.org
 HOMEPAGE=		http://shell.peach.ne.jp/aoyama/
 COMMENT=		Configurable iSCSI target
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

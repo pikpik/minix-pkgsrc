@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2008/03/04 06:59:03 jlam Exp $
+# $NetBSD: Makefile,v 1.16 2009/01/04 14:08:14 shattered Exp $
 
 DISTNAME=	adom-111-elf
 PKGNAME=	adom-1.1.1
@@ -12,8 +12,6 @@ COMMENT=	Ancient Domains of Mystery - yet another roguelike game
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/adom
 BUILD_DIRS=		# empty

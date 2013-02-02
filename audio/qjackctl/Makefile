@@ -1,17 +1,14 @@
-# $NetBSD: Makefile,v 1.15 2012/02/06 12:39:29 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:01:13 adam Exp $
 #
 
 DISTNAME=	qjackctl-0.3.3
-PKGREVISION=	12
+PKGREVISION=	18
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qjackctl/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://qjackctl.sourceforge.net/
 COMMENT=	JACK Audio Connection Kit Qt4 GUI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
@@ -26,4 +23,5 @@ CONFIGURE_ARGS+=	--without-alsa
 .include "../../audio/jack/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

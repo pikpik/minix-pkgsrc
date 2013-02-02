@@ -1,24 +1,36 @@
-# $NetBSD: Makefile,v 1.9 2011/12/06 00:19:23 sbd Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/08 15:18:21 jaapb Exp $
 #
 
-DISTNAME=		findlib-1.2.8
+DISTNAME=		findlib-1.3.3
 PKGNAME=		ocaml-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		http://download.camlcity.org/download/
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
+MAINTAINER=		jaapb@kerguelen.org
 HOMEPAGE=		http://www.camlcity.org/
 COMMENT=		Library finder for OCaml
+LICENSE=		mit
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-USE_TOOLS+=		gmake m4
+USE_TOOLS+=		gmake m4 bash
 USE_PKGLOCALEDIR=	yes
 HAS_CONFIGURE=		yes
 MAKE_JOBS_SAFE=		no
 CONFIGURE_ARGS+=	-bindir ${PREFIX}/bin
 CONFIGURE_ARGS+=	-mandir ${PREFIX}/${PKGMANDIR}
 CONFIGURE_ARGS+=	-config ${PKG_SYSCONFDIR}/ocamlfind.conf
+CONFIGURE_ARGS+=	-sitelib ${PREFIX}/lib/ocaml/site-lib
+
+BUILD_TARGET=		all
+PLIST_SRC=		PLIST
+
+PLIST_VARS=		opt
+.include "../../mk/bsd.prefs.mk"
+.if (${MACHINE_ARCH} == "i386") || (${MACHINE_ARCH} == "powerpc") || \
+    (${MACHINE_ARCH} == "sparc") || (${MACHINE_ARCH} == "x86_64")
+PLIST.opt=		yes
+BUILD_TARGET+=		opt
+.endif
 
 EGDIR=			${PREFIX}/share/examples/ocaml-findlib
 INSTALL_MAKE_FLAGS+=	OCAMLFIND_CONF=${EGDIR}/ocamlfind.conf

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/07/07 19:49:51 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2009/10/16 20:26:04 jakllsch Exp $
 #
 
 DISTNAME=		xdaliclock-2.30
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.jwz.org/xdaliclock/
 COMMENT=		Animated digital clock
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/X11
 GNU_CONFIGURE=		yes

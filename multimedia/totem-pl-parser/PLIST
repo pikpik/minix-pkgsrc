@@ -28,6 +28,7 @@ share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp2
 share/gtk-doc/html/totem-pl-parser/up.png
 share/locale/af/LC_MESSAGES/totem-pl-parser.mo
 share/locale/am/LC_MESSAGES/totem-pl-parser.mo
+share/locale/an/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ar/LC_MESSAGES/totem-pl-parser.mo
 share/locale/as/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ast/LC_MESSAGES/totem-pl-parser.mo
@@ -68,6 +69,7 @@ share/locale/is/LC_MESSAGES/totem-pl-parser.mo
 share/locale/it/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ja/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ka/LC_MESSAGES/totem-pl-parser.mo
+share/locale/km/LC_MESSAGES/totem-pl-parser.mo
 share/locale/kn/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ko/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ku/LC_MESSAGES/totem-pl-parser.mo
@@ -108,6 +110,7 @@ share/locale/th/LC_MESSAGES/totem-pl-parser.mo
 share/locale/tr/LC_MESSAGES/totem-pl-parser.mo
 share/locale/ug/LC_MESSAGES/totem-pl-parser.mo
 share/locale/uk/LC_MESSAGES/totem-pl-parser.mo
+share/locale/uz@cyrillic/LC_MESSAGES/totem-pl-parser.mo
 share/locale/vi/LC_MESSAGES/totem-pl-parser.mo
 share/locale/wa/LC_MESSAGES/totem-pl-parser.mo
 share/locale/xh/LC_MESSAGES/totem-pl-parser.mo

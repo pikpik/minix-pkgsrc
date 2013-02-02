@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.35 2009/07/07 16:43:50 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/03 21:58:29 wiz Exp $
 #
 
 DISTNAME=		cvsweb-3.0.6
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		www
 MASTER_SITES=		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/scop/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.freebsd.org/projects/cvsweb.html
 COMMENT=		Web interface for browsing a CVS repository
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-File-Temp>=0.12:../../devel/p5-File-Temp
 DEPENDS+=		p5-IPC-Run>=0.74:../../devel/p5-IPC-Run

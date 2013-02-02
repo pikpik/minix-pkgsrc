@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.10 2012/02/10 15:41:40 drochner Exp $
-#
+# $NetBSD: Makefile,v 1.22 2012/10/08 08:04:28 marino Exp $
 
-DISTNAME=	gdk-pixbuf-2.24.1
-PKGNAME=	gdk-pixbuf2-2.24.1
-PKGREVISION=	3
+DISTNAME=	gdk-pixbuf-${PIXBUF2_VERSION}
+PKGNAME=	${DISTNAME:S/pixbuf/pixbuf2/}
+PKGREVISION=	1
 CATEGORIES=	graphics
-MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdk-pixbuf/2.24/}
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gdk-pixbuf/${MSITE_VERSION}/}
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -14,7 +13,8 @@ COMMENT=	Image loaders for gtk2
 LICENSE=	gnu-gpl-v2
 
 CONFLICTS+=	gtk2+<2.22
-PKG_DESTDIR_SUPPORT=	user-destdir
+
+.include "../../graphics/gdk-pixbuf2/Makefile.version"
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
@@ -33,7 +33,7 @@ _BUILDING_GTK2= yes
 post-install:
 	${RM} -f ${DESTDIR}${GDK_PIXBUF_LOADERS_DB}
 
-BUILDLINK_API_DEPENDS.glib2+= glib2>=2.26.0
+BUILDLINK_API_DEPENDS.glib2+= glib2>=2.32.1
 .include "../../devel/glib2/buildlink3.mk"
 BUILDLINK_DEPMETHOD.gobject-introspection:= build
 .include "../../devel/gobject-introspection/buildlink3.mk"

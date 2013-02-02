@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.21 2012/02/06 12:39:25 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/02 17:10:32 tron Exp $
 #
 
 DISTNAME=	gtick-0.3.10
-PKGREVISION=	11
+PKGREVISION=	15
 CATEGORIES=	audio
 MASTER_SITES=	http://www.antcom.de/gtick/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.antcom.de/gtick/
 COMMENT=	Metronome application using GTK2+
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

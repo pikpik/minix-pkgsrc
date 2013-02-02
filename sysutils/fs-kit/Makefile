@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/05/19 08:59:34 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2010/01/27 18:56:54 joerg Exp $
 
 DISTNAME=	fs-kit-0.4
 CATEGORIES=	sysutils
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nobius.org/~dbg/
 COMMENT=	User-level filesystem testing kit
 LICENSE=	fs-kit-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=		No commercial use.
 NO_SRC_ON_CDROM=	${RESTRICTED}

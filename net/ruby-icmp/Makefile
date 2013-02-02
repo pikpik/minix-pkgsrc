@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/02/15 03:27:01 taca Exp $
+# $NetBSD: Makefile,v 1.11 2010/09/10 07:37:25 taca Exp $
 
 DISTNAME=	icmp-0.2.2
 PKGREVISION=	3
@@ -16,7 +16,6 @@ NO_BUILD=		yes
 REPLACE_RUBY=		sample/ping.rb sample/traceroute.rb
 EXAMPLES=		sample/ping.rb sample/traceroute.rb
 INSTALLATION_DIRS=	${RUBY_EG}/icmp ${RUBY_VENDORLIB}
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-install:
 .for f in ${EXAMPLES}

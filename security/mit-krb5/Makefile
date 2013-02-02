@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.55 2011/10/23 19:58:16 tez Exp $
+# $NetBSD: Makefile,v 1.62 2012/10/23 18:16:36 asau Exp $
 
-DISTNAME=	krb5-1.8.6
+DISTNAME=	krb5-1.10.3
 PKGNAME=	mit-${DISTNAME}
+PKGREVISION=	2
 CATEGORIES=	security
-MASTER_SITES=	http://web.mit.edu/kerberos/dist/krb5/1.8/
+MASTER_SITES=	http://web.mit.edu/kerberos/dist/krb5/${PKGVERSION_NOREV:R}/
 EXTRACT_SUFX=	.tar
 DISTFILES=	${DISTNAME}-signed${EXTRACT_SUFX}
 
@@ -14,7 +15,6 @@ MAINTAINER=	tez@NetBSD.org
 HOMEPAGE=	http://web.mit.edu/kerberos/
 COMMENT=	MIT Kerberos 5 authentication system
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
@@ -26,8 +26,9 @@ BUILD_TARGET=	generate-files-mac all
 CONFLICTS+=	heimdal-[0-9]*
 CONFLICTS+=	kth-krb4-[0-9]*
 
+USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
-USE_TOOLS+=		autoconf gmake m4 perl yacc
+USE_TOOLS+=		autoconf gmake m4 perl yacc msgfmt
 MAKE_PROGRAM=		gmake
 GNU_CONFIGURE=		yes
 

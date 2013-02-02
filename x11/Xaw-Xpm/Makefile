@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.27 2008/06/12 02:14:56 joerg Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/23 10:24:16 wiz Exp $
 #
 
 DISTNAME=		Xaw-XPM-1.1
 PKGNAME=		Xaw-Xpm-1.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_SUNSITE:=libs/X/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.zip.com.au/~bb/XawXpm/
 COMMENT=		Enhanced 3-D widgets based on the Athena Widget set and Xaw3d
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		Xaw3d-[0-9]*
 
@@ -30,7 +28,5 @@ post-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,19 +1,19 @@
-$NetBSD$
+$NetBSD: patch-hw_ppc__newworld.c,v 1.3 2012/09/11 17:13:45 asau Exp $
 
 Avoid conflicts with round_page() macro in DragonFly's <cpu/param.h>
 
---- hw/ppc_newworld.c.orig	2011-08-08 18:28:42 +0000
+--- hw/ppc_newworld.c.orig	2012-12-03 19:37:05.000000000 +0000
 +++ hw/ppc_newworld.c
-@@ -120,7 +120,7 @@ static uint64_t translate_kernel_address
+@@ -115,7 +115,7 @@ static uint64_t translate_kernel_address
      return (addr & 0x0fffffff) + KERNEL_LOAD_ADDR;
  }
  
--static target_phys_addr_t round_page(target_phys_addr_t addr)
-+static target_phys_addr_t round_pageq(target_phys_addr_t addr)
+-static hwaddr round_page(hwaddr addr)
++static hwaddr round_pageq(hwaddr addr)
  {
      return (addr + TARGET_PAGE_SIZE - 1) & TARGET_PAGE_MASK;
  }
-@@ -225,7 +225,7 @@ static void ppc_core99_init (ram_addr_t 
+@@ -234,7 +234,7 @@ static void ppc_core99_init(QEMUMachineI
          }
          /* load initrd */
          if (initrd_filename) {
@@ -22,7 +22,7 @@ Avoid conflicts with round_page() macro in DragonFly's <cpu/param.h>
              initrd_size = load_image_targphys(initrd_filename, initrd_base,
                                                ram_size - initrd_base);
              if (initrd_size < 0) {
-@@ -233,11 +233,11 @@ static void ppc_core99_init (ram_addr_t 
+@@ -242,11 +242,11 @@ static void ppc_core99_init(QEMUMachineI
                           initrd_filename);
                  exit(1);
              }

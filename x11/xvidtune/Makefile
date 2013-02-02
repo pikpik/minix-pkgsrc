@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/09/10 20:21:23 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2011/09/29 08:21:38 dholland Exp $
 #
 
 DISTNAME=	xvidtune-1.0.2
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xorg.freedesktop.org/releases/individual/app/
 COMMENT=	Client interface to the X server video mode extension
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config

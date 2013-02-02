@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.35 2012/02/06 12:41:26 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2012/12/16 01:52:32 obache Exp $
 #
 
 DISTNAME=	${PKGNAME_NOREV}-src
 PKGNAME=	hydra-5.4
-PKGREVISION=	15
+PKGREVISION=	22
 CATEGORIES=	security
 MASTER_SITES=	http://freeworld.thc.org/releases/
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://freeworld.thc.org/thc-hydra/
 COMMENT=	Login password cracker
 LICENSE=	hydra-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

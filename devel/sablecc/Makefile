@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2006/10/04 21:36:00 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2008/03/03 17:45:37 jlam Exp $
 #
 
 DISTNAME=	sablecc-2.16.2
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sablecc/}
 MAINTAINER=	hag@linnaean.org
 HOMEPAGE=	http://sablecc.org/
 COMMENT=	Java based Compiler Compiler
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_JAVA=	run
 USE_JAVA2=	yes

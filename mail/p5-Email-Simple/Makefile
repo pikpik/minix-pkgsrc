@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2011/08/14 13:25:24 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 12:19:21 asau Exp $
 
-DISTNAME=		Email-Simple-2.101
+DISTNAME=		Email-Simple-2.102
 PKGNAME=		p5-${DISTNAME}
 SVR4_PKGNAME=		p5ems
 CATEGORIES=		mail perl5
@@ -10,8 +10,6 @@ MAINTAINER=		rhaen@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Email-Simple/
 COMMENT=		Perl5 module for simple parsing of RFC2822 message format and headers
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # versions before 1.857 meddled in the guts of Email::Simple
 CONFLICTS+=		p5-Email-MIME<1.857

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2006/02/05 23:10:47 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2010/01/27 21:28:11 joerg Exp $
 #
 
 DISTNAME=		secpanel-0.5.1
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.pingx.net/secpanel/
 MAINTAINER=		dhowland@users.sourceforge.net
 HOMEPAGE=		http://www.pingx.net/secpanel/
 COMMENT=		GUI front-end for SSH
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		tk>=8.4:../../x11/tk
 

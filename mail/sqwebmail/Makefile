@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.68 2011/04/22 13:44:04 obache Exp $
+# $NetBSD: Makefile,v 1.71 2012/10/03 21:56:34 wiz Exp $
 
-DISTNAME=	sqwebmail-5.4.3
-PKGREVISION=	2
+DISTNAME=	sqwebmail-5.5.3
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.courier-mta.org/sqwebmail/
 
 DEPENDS+=	courier-maildir>=${COURIER_VERSION}:../../mail/courier-maildir
 DEPENDS+=	maildrop>=2.5.0:../../mail/maildrop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		env gmake gzip:run perl:run
 USE_LANGUAGES=		c c++
@@ -51,7 +49,6 @@ MIME_TYPES=		${PKG_SYSCONFDIR}/mime.types:${PKG_SYSCONFBASEDIR}/httpd/mime.types
 
 # This is used by the sqwebmail configure script to set the location of
 # the sqwebmaild socket file and lockfile.
-#
 CONFIGURE_ARGS+=	--localstatedir=${SQWEBMAIL_STATEDIR}
 
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/courier
@@ -116,7 +113,6 @@ post-build:
 
 # The sqwebmail install target incorrectly overwrites the mode on
 # the webmail directory, so fix it back to the right value.
-#
 fix-perms:
 	${CHMOD} 0700 ${DESTDIR}${LIBEXECDIR}/webmail
 

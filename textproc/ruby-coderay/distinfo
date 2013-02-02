@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.5 2011/12/15 16:00:42 taca Exp $
+$NetBSD: distinfo,v 1.8 2012/09/16 09:26:10 taca Exp $
 
-SHA1 (coderay-1.0.5.gem) = c7791611196e967368c6ce4c53ba07de8882a3ef
-RMD160 (coderay-1.0.5.gem) = ef526c2eaa34bbf8ad778b7a18e24ca630c95714
-Size (coderay-1.0.5.gem) = 98304 bytes
+SHA1 (coderay-1.0.8.gem) = 4bd30a50a6474568c73b43308db74ed09afda45c
+RMD160 (coderay-1.0.8.gem) = 39e26a9b569343e2faa1d8cfd3805d57cf48df93
+Size (coderay-1.0.8.gem) = 88576 bytes

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:41:17 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/23 17:19:15 asau Exp $
 #
 
 DISTNAME=		twitux-0.69
-PKGREVISION=		10
+PKGREVISION=		18
 CATEGORIES=		net gnome
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=twitux/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://live.gnome.org/DanielMorales/Twitux
 COMMENT=		GTK+ Twitter client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
@@ -42,8 +40,10 @@ CONFIGURE_ARGS+=	--enable-aspell=no
 .include "../../security/gnome-keyring/buildlink3.mk"
 .include "../../sysutils/dbus/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/libnotify/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
+.include "../../mk/omf-scrollkeeper.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2007/08/19 01:36:22 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.3 2009/03/20 19:25:10 joerg Exp $
 
 BUILDLINK_TREE+=	libupnp
 
@@ -6,6 +6,7 @@ BUILDLINK_TREE+=	libupnp
 LIBUPNP_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libupnp+=	libupnp>=1.4.6
+BUILDLINK_ABI_DEPENDS.libupnp+=	libupnp>=1.6.14
 BUILDLINK_PKGSRCDIR.libupnp?=	../../net/libupnp
 .endif # LIBUPNP_BUILDLINK3_MK
 

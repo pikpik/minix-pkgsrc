@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/08/22 12:40:38 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/04/08 19:09:13 wiz Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-cElementTree-0
@@ -8,8 +8,6 @@ CATEGORIES=	textproc python
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.effbot.org/zone/celementtree.htm
 COMMENT=	C implementation of Python ElementTree API
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 
@@ -21,7 +19,6 @@ PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes
 PY_SETUP_SUBST+= EXPATPREFIX=${BUILDLINK_DIR}
 PY_SETUP_SUBST+= EXPATRTPREFIX=${BUILDLINK_PREFIX.expat}
-PYTHON_VERSIONS_INCOMPATIBLE=	24
 
 PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 PYSETUPINSTALLARGS+=	--install-lib ${PREFIX}/${PYLIB}/lib-dynload

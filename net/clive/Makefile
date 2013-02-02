@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2011/10/22 18:07:19 wiz Exp $
+# $NetBSD: Makefile,v 1.44 2012/10/03 21:56:52 wiz Exp $
 #
 
-DISTNAME=	clive-2.3.1.1
-PKGREVISION=	3
+DISTNAME=	clive-2.3.3
+PKGREVISION=	1
 CATEGORIES=	net multimedia www
 MASTER_SITES=	http://clive.googlecode.com/files/
 
@@ -17,8 +17,6 @@ DEPENDS+=	curl-[0-9]*:../../www/curl
 DEPENDS+=	p5-JSON-XS>=2.3:../../converters/p5-JSON-XS
 DEPENDS+=	p5-Getopt-ArgvFile>=1.11:../../devel/p5-Getopt-ArgvFile
 DEPENDS+=	p5-version>=0.77:../../devel/p5-version
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/clive/.packlist
 INSTALLATION_DIRS=	share/examples/clive

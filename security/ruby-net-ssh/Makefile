@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2011/08/25 15:32:05 taca Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/02 01:01:29 taca Exp $
 
-DISTNAME=	net-ssh-2.3.0
+DISTNAME=	net-ssh-2.6.2
 CATEGORIES=	net security
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

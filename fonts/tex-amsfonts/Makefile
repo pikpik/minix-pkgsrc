@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.4 2010/09/24 20:28:58 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2011/11/06 08:43:29 minskim Exp $
 
 DISTNAME=	amsfonts
-PKGNAME=	tex-${DISTNAME}-3.0
-PKGREVISION=	2
-TEXLIVE_REV=	15878
+PKGNAME=	tex-${DISTNAME}-3.03
+TEXLIVE_REV=	26315
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	TeX fonts from the American Mathematical Society
+LICENSE=	open-font-license
 
 CONFLICTS+=	teTeX-texmf<=3.0nb13
 CONFLICTS+=	tex-cm<2009

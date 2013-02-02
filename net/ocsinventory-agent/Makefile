@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 14:14:40 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:56:58 wiz Exp $
 #
 VERS=			1.1.2.1
-PKGREVISION=		3
+PKGREVISION=		4
 DISTNAME=		Ocsinventory-Agent-${VERS}
 PKGNAME=		ocsinventory-agent-${VERS}
 CATEGORIES=		net
@@ -25,8 +25,6 @@ WRKSRC=			${WRKDIR}/Ocsinventory-Agent-${VERS}
 
 BUILD_DEFS+=		VARBASE
 AUTO_MKDIRS=yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

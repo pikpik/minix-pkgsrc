@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.76 2012/03/04 09:06:46 asau Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.80 2012/10/08 15:05:32 jaapb Exp $
 
 .include "Makefile.common"
 

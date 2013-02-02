@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.48 2011/04/07 02:12:48 rh Exp $
+# $NetBSD: Makefile,v 1.52 2012/10/29 05:06:16 asau Exp $
 
-DISTNAME=	gnustep-back-0.18.0
+DISTNAME=	gnustep-back-0.22.0
 PKGREVISION=	1
 CATEGORIES=	x11 gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
@@ -9,8 +9,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	X11 AppKit backend for GNUstep
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		objc
 USE_TOOLS+=		pkg-config
@@ -22,18 +20,17 @@ MAKE_FILE=		GNUmakefile
 pre-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${GNUSTEP_ROOT}/lib/GNUstep/Fonts
 
-.include "../../mk/bsd.prefs.mk"
+.include "../../devel/gnustep-make/gnustep.mk"
 
 PREFER_PKGSRC+=	freetype2
 
+.include "../../x11/gnustep-gui/buildlink3.mk"
 .include "../../graphics/MesaLib/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/libart/buildlink3.mk"
-.include "../../x11/gnustep-gui/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXft/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

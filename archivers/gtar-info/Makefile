@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/05/11 07:49:59 adam Exp $
+# $NetBSD: Makefile,v 1.31 2012/01/06 11:49:31 obache Exp $
 
 DISTNAME=	tar-1.26
 PKGNAME=	${DISTNAME:S/tar/gtar-info/}
@@ -13,7 +13,6 @@ HOMEPAGE=	http://www.gnu.org/software/tar/tar.html
 COMMENT=	Info format documentation for the GNU tape archiver
 LICENSE=	gnu-fdl-v1.1
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 NO_CONFIGURE=		yes

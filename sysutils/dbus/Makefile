@@ -1,8 +1,6 @@
-# $NetBSD: Makefile,v 1.51 2011/04/22 13:44:40 obache Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/23 19:50:57 asau Exp $
 
-DISTNAME=	dbus-1.2.4.6permissive
-PKGNAME=	dbus-1.2.4.6
-PKGREVISION=	4
+DISTNAME=	dbus-1.6.8
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus/
 
@@ -10,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.freedesktop.org/Software/dbus
 COMMENT=	Message bus system
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	dbus-glib<0.71
 CONFLICTS+=	py*-dbus<0.71
@@ -22,8 +18,6 @@ USE_LIBTOOL=		YES
 
 PKGCONFIG_OVERRIDE=	dbus-1.pc.in
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 BUILD_DEFS+=		VARBASE
 
 OWN_DIRS_PERMS+=	${VARBASE}/db/dbus ${DBUS_USER} ${DBUS_GROUP} 0755
@@ -31,8 +25,12 @@ SPECIAL_PERMS+=		libexec/dbus-daemon-launch-helper ${REAL_ROOT_USER} ${DBUS_GROU
 
 .include "../../mk/bsd.prefs.mk"
 
+# Disable man2html detection forcibly
+CONFIGURE_ENV+=		ac_cv_path_MAN2HTML=
+
 CONFIGURE_ARGS+=	--localstatedir=${VARBASE:Q}
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
+#CONFIGURE_ARGS+=	--enable-embedded-tests
 
 #CFLAGS.NetBSD+=		-D_NETBSD_SOURCE
 
@@ -106,6 +104,10 @@ BUILDLINK_TRANSFORM+=	rm:-Wl,--gc-sections
 # mean that we universally can *run* the executables
 BUILDLINK_TRANSFORM+=	rm:-fPIE
 BUILDLINK_TRANSFORM+=	rm:-pie
+
+.if ${OPSYS} == "OpenBSD"
+BUILDLINK_TRANSFORM+=	rm:-lrt
+.endif
 
 .include "options.mk"
 

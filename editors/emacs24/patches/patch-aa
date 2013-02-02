@@ -1,0 +1,71 @@
+$NetBSD: patch-aa,v 1.4 2012/11/26 16:56:16 martin Exp $
+
+Add DragonFly
+
+--- configure.in.orig	2012-08-23 05:33:42.000000000 +0000
++++ configure.in
+@@ -469,6 +469,14 @@ case "${canonical}" in
+       vax-*)       machine=vax ;;
+     esac
+   ;;
++  ## DragonFly ports
++  *-*-dragonfly*)
++    opsys=dragonfly
++    case "${canonical}" in
++      i[3456]86-*-dragonfly*)     machine=intel386 ;;
++      amd64-*-dragonfly*|x86_64-*-dragonfly*) machine=amdx86-64 ;;
++    esac
++  ;;
+ 
+   ## OpenBSD ports
+   *-*-openbsd* )
+@@ -955,7 +955,7 @@
+   ## IBM's X11R5 uses -lIM and -liconv in AIX 3.2.2.
+   aix4-2) LIBS_SYSTEM="-lrts -lIM -liconv" ;;
+ 
+-  freebsd) LIBS_SYSTEM="-lutil" ;;
++  freebsd|netbsd|openbsd|dragonfly) LIBS_SYSTEM="-lutil" ;;
+ 
+   hpux*) LIBS_SYSTEM="-l:libdld.sl" ;;
+ 
+@@ -999,6 +1007,11 @@ case $opsys in
+     LIB_MATH=
+     START_FILES='pre-crt0.o'
+     ;;
++  dragonfly )
++    # This base version is appended below
++    LIB_STANDARD='-lc $(CRT_DIR)/crtn.o'
++    START_FILES='$(CRT_DIR)/crt1.o $(CRT_DIR)/crti.o'
++    ;;
+   freebsd )
+     LIB_STANDARD='-lgcc -lc -lgcc $(CRT_DIR)/crtend.o $(CRT_DIR)/crtn.o'
+     START_FILES='pre-crt0.o $(CRT_DIR)/crt1.o $(CRT_DIR)/crti.o $(CRT_DIR)/crtbegin.o'
+@@ -1095,6 +1108,28 @@ fi                              # crt_fi
+ AC_SUBST(CRT_DIR)
+ 
+ case $opsys in
++  dragonfly )
++    if test "x${GCC}" = xyes ; then
++      libgcc_file=`$CC --print-libgcc-file-name 2>/dev/null`
++      case "$libgcc_file" in
++         */*)
++           crt_gcc_subdir=`AS_DIRNAME(["$libgcc_file"])`
++           ;;
++         *)
++           AC_MSG_ERROR([Cannot determine CRT $CC subdirectory.]) 
++           ;;
++      esac
++      for f in crtbegin.o crtend.o; do
++        if test ! -f $crt_gcc_subdir/$f; then
++          AC_MSG_ERROR([Required file not found: $f])
++        fi
++      done
++      LIB_STANDARD="$crt_gcc_subdir/crtend.o $LIB_STANDARD"
++      START_FILES="$START_FILES $crt_gcc_subdir/crtbegin.o"
++    else
++      AC_MSG_WARN([Correct CRT file list unknown for ${CC}.])
++    fi 
++    ;;
+   netbsd | openbsd )
+     if test -f $CRT_DIR/crti.o; then
+ 

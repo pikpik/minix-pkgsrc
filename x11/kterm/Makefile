@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.52 2012/01/11 12:06:51 ryoon Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/29 05:06:32 asau Exp $
 
 DISTNAME=	kterm-6.2.0
-PKGREVISION=	19
+PKGREVISION=	23
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB:=applications/}
 
@@ -17,20 +17,12 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	# none
 COMMENT=	Multi-lingual terminal emulator for X
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_IMAKE=	YES
 
 SPECIAL_PERMS=	${PREFIX:Q}/bin/kterm ${SETUID_ROOT_PERMS}
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(XAW_TYPE) && (${XAW_TYPE} == "3d" || ${XAW_TYPE} == "xpm" || ${XAW_TYPE} == "neXtaw")
-post-patch:
-	@${ECHO_MSG}  "===>  Applying Xaw scrollbar patch"
-	@${PATCH} ${PATCH_ARGS} < ${FILESDIR:Q}/patch-xaw3d
-.endif
-
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/xaw.buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

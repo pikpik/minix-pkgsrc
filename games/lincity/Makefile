@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2010/01/29 23:39:30 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2011/04/22 13:43:37 obache Exp $
 
 DISTNAME=	lincity-1.12.1
 PKGREVISION=	2
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lincity/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lincity.sourceforge.net/
 COMMENT=	Free clone of SimCity for X11
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt
 USE_PKGLOCALEDIR=	yes

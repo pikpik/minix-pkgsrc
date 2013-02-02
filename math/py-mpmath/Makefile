@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2010/08/10 18:04:30 drochner Exp $
+# $NetBSD: Makefile,v 1.5 2012/04/08 19:09:07 wiz Exp $
 #
 
 DISTNAME=	mpmath-0.17
@@ -13,8 +13,6 @@ LICENSE=	modified-bsd
 
 USE_LANGUAGES=	# none
 PYDISTUTILSPKG=	yes
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
-PKG_DESTDIR_SUPPORT= user-destdir
 
 TEST_ENV+=	PYTHONPATH=${WRKSRC}/build/lib
 do-test:

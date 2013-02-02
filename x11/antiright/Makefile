@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2012/02/06 12:41:55 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:33 adam Exp $
 #
 
 DISTNAME=	antiright-3.4
-PKGREVISION=	12
+PKGREVISION=	16
 CATEGORIES=	x11
 MASTER_SITES=	http://download.savannah.nongnu.org/releases/antiright/
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.nongnu.org/antiright/
 COMMENT=	The gtkshell GUI creator, gshterm, and ACE desktop implementation
 
 MAKE_JOBS_SAFE=		no
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=	YES
 USE_LANGUAGES=	c
@@ -39,7 +37,7 @@ TOOLS_DEPENDS.pkg-config=	pkg-config>=0.20:../../devel/pkg-config
 BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.6.0
 
 INSTALL_MAKE_FLAGS+=		PREFIX=${DESTDIR}${PREFIX} \
-				mandir=${DESTDIR}${PREFIX}/${PKGMANDIR} \
+				mandir=${DESTDIR}${PREFIX}/${PKGMANDIR}
 
 .include "../../x11/vte/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"

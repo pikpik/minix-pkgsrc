@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2010/02/11 20:22:22 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2011/04/22 13:44:23 obache Exp $
 
 DISTNAME=	IglooFTP-0.6.1
 PKGREVISION=	6
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://www.littleigloo.org/iglooftp.php3
 COMMENT=	Easy to use FTP client for X Window System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DIRS=	src
 

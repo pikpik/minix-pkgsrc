@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.25 2007/12/22 12:39:57 obache Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/03 21:57:09 wiz Exp $
 
 DISTNAME=	radiusd-cistron-1.6.8
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/radius/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.radius.cistron.nl/
 COMMENT=	RADIUS-compliant remote authentication and accounting server
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	freeradius-[0-9]*
 

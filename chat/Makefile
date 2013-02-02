@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.163 2011/10/18 12:03:04 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.167 2012/08/26 14:06:44 wiz Exp $
 #
 
 COMMENT=	Communication programs
 
-SUBDIR+=	aim
 SUBDIR+=	amsn
 SUBDIR+=	anope
 SUBDIR+=	atheme
@@ -13,7 +12,6 @@ SUBDIR+=	bitlbee
 SUBDIR+=	blackened
 SUBDIR+=	bnc
 SUBDIR+=	bsflite
-SUBDIR+=	centericq
 SUBDIR+=	centerim
 SUBDIR+=	cgiirc
 SUBDIR+=	climm
@@ -23,6 +21,7 @@ SUBDIR+=	dircproxy
 SUBDIR+=	eggdrop
 SUBDIR+=	ejabberd
 SUBDIR+=	ekg
+SUBDIR+=	emacs-jabber
 SUBDIR+=	emech
 SUBDIR+=	empathy
 SUBDIR+=	epic4
@@ -53,6 +52,7 @@ SUBDIR+=	ircu
 SUBDIR+=	iroffer
 SUBDIR+=	irssi
 SUBDIR+=	irssi-icb
+SUBDIR+=	irssi-xmpp
 SUBDIR+=	jabberd
 SUBDIR+=	jabberd2
 SUBDIR+=	kadu
@@ -130,7 +130,6 @@ SUBDIR+=	xchat
 SUBDIR+=	xchat-perl
 SUBDIR+=	xchat-python
 SUBDIR+=	xchat-systray-integration
-SUBDIR+=	ymessenger
 SUBDIR+=	ysm
 SUBDIR+=	zenicb
 SUBDIR+=	zenirc

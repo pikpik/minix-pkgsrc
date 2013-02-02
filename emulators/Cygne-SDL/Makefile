@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/03/03 19:21:37 jlam Exp $
+# $NetBSD: Makefile,v 1.17 2012/04/14 03:47:37 dholland Exp $
 #
 
 DISTNAME=		Cygne-SDL-0.1-src
@@ -12,8 +12,6 @@ HOMEPAGE=		http://icculus.org/Cygne-SDL/
 COMMENT=		Bandai Wonderswan Color handheld emulator
 
 BUILD_DEPENDS+=		nasm>=0.98:../../devel/nasm
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/Cygne-SDL-0.1
 MAKE_FILE=		Makefiles/Makefile.unix
@@ -29,7 +27,7 @@ INSTALLATION_DIRS=	bin
 
 post-build:
 	cd ${WRKSRC}/WonderSnake && \
-		${LOCALBASE}/bin/zip Wondersnake.zip Wondersnake.wsc
+		${TOOLS_PATH.zip} Wondersnake.zip Wondersnake.wsc
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/cygne ${DESTDIR}${PREFIX}/bin/Cygne-SDL

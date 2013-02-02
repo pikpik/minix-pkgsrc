@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2007/08/08 17:21:15 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2012/08/21 23:49:21 marino Exp $
 #
 
 DISTNAME=	tuxracer-0.61
-PKGREVISION=	12
+PKGREVISION=	13
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tuxracer/}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -13,7 +13,6 @@ HOMEPAGE=	http://tuxracer.sourceforge.net/
 COMMENT=	3D penguin racing game using OpenGL
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 

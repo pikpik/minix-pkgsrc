@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2010/08/21 16:36:27 seb Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:58:22 wiz Exp $
 
 DISTNAME=      	Time-Duration-1.06
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5 time
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Time/}
 
@@ -12,8 +12,6 @@ COMMENT=	Perl5 module for rounded or exact English expression of durations
 
 BUILD_DEPENDS+=	p5-Test-Pod-[0-9]*:../../devel/p5-Test-Pod
 BUILD_DEPENDS+=	p5-Test-Pod-Coverage-[0-9]*:../../devel/p5-Test-Pod-Coverage
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Time/Duration/.packlist
 

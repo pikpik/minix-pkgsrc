@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.40 2011/02/05 13:38:14 ryoon Exp $
+# $NetBSD: Makefile,v 1.42 2012/05/03 09:55:29 obache Exp $
 
 DISTNAME=	spim-8.0
+PKGREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://pages.cs.wisc.edu/~larus/SPIM/
 
@@ -8,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://spimsimulator.sourceforge.net/
 COMMENT=	MIPS R2000 Simulator
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		yes
 CONFIGURE_DIRS=		xspim
@@ -46,6 +45,5 @@ post-install:
 		${DESTDIR}${PREFIX}/share/doc/${PKGBASE}
 
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

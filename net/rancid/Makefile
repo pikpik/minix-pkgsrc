@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/01/24 14:54:57 pettai Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:09 wiz Exp $
 #
 
 DISTNAME=		rancid-2.3.8
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.shrubbery.net/pub/rancid/
 
@@ -11,8 +12,6 @@ COMMENT=		Really Awesome New Cisco confIg Differ
 LICENSE=		original-bsd
 
 DEPENDS+=		tcl-expect>=5.4:../../lang/tcl-expect
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEFS+=		VARBASE
 

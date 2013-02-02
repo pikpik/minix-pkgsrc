@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.21 2008/03/04 06:59:06 jlam Exp $
+# $NetBSD: Makefile,v 1.23 2012/05/03 09:55:30 obache Exp $
 #
 
 DISTNAME=	xscrabble-1.0
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	X version of the popular board game, for 1 to 4 players
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/xscrabble
 USE_IMAKE=	YES
@@ -45,5 +43,4 @@ do-install:
 
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,15 +1,11 @@
-# $NetBSD: Makefile,v 1.2 2011/10/07 03:56:19 dholland Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:59:03 wiz Exp $
 #
 
 .include "../../www/phraseanet/Makefile.common"
 PKGNAME=        phraseanet-${VERS}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=	1
 
 USE_TOOLS+=	pax
-
-# php-fileinfo doesn't accept php53
-PHP_VERSIONS_ACCEPTED=52
 
 DEPENDS+=	${PHP_PKG_PREFIX}-phrasea2-[0-9]*:../../www/php-phrasea2
 DEPENDS+=	${PHP_PKG_PREFIX}-apc-[0-9]*:../../www/php-apc
@@ -17,25 +13,22 @@ DEPENDS+=	${PHP_PKG_PREFIX}-mbstring-[0-9]*:../../converters/php-mbstring
 DEPENDS+=	${PHP_PKG_PREFIX}-gettext-[0-9]*:../../devel/php-gettext
 DEPENDS+=	${PHP_PKG_PREFIX}-dom-[0-9]*:../../textproc/php-dom
 DEPENDS+=	${PHP_PKG_PREFIX}-exif-[0-9]*:../../graphics/php-exif
-DEPENDS+=	${PHP_PKG_PREFIX}-fileinfo-[0-9]*:../../sysutils/php-fileinfo
 DEPENDS+=	${PHP_PKG_PREFIX}-ftp-[0-9]*:../../net/php-ftp
 DEPENDS+=	${PHP_PKG_PREFIX}-curl-[0-9]*:../../www/php-curl
 DEPENDS+=	${PHP_PKG_PREFIX}-gd-[0-9]*:../../graphics/php-gd
 DEPENDS+=	${PHP_PKG_PREFIX}-json-[0-9]*:../../textproc/php-json
 DEPENDS+=	${PHP_PKG_PREFIX}-iconv-[0-9]*:../../converters/php-iconv
 DEPENDS+=	${PHP_PKG_PREFIX}-mysql-[0-9]*:../../databases/php-mysql
-DEPENDS+=	${PHP_PKG_PREFIX}-phrasea2-[0-9]*:../../www/php-phrasea2
 DEPENDS+=	${PHP_PKG_PREFIX}-sockets-[0-9]*:../../net/php-sockets
 DEPENDS+=	${PHP_PKG_PREFIX}-xsl-[0-9]*:../../textproc/php-xsl
 DEPENDS+=	${PHP_PKG_PREFIX}-zip-[0-9]*:../../archivers/php-zip
 DEPENDS+=	${PHP_PKG_PREFIX}-zlib-[0-9]*:../../archivers/php-zlib
 DEPENDS+=	${PHP_PKG_PREFIX}-memcache-[0-9]*:../../devel/php-memcache
-DEPENDS+=	phraseanet-indexer-${VERS}:../../www/phraseanet-indexer
+DEPENDS+=	phraseanet-indexer-${VERS}{,nb*}:../../www/phraseanet-indexer
 DEPENDS+=	${APACHE_PKG_PREFIX}-${PHP_PKG_PREFIX}>=5.2:../../www/ap-php
 DEPENDS+=	ImageMagick-[0-9]*:../../graphics/ImageMagick
 DEPENDS+=	p5-Image-ExifTool-[0-9]*:../../graphics/p5-Image-ExifTool
 
-.include "../../mk/bsd.prefs.mk"
 
 PHRASEANETDIR?=		${PREFIX}/share/phraseanet
 APACHE_USER?=		www
@@ -66,7 +59,6 @@ MAKE_DIRS_PERMS+= ${PHRASEANETDIR}/tmp/download ${APACHE_DIRS_PERMS}
 MAKE_DIRS_PERMS+= ${PHRASEANETDIR}/tmp/batches ${APACHE_DIRS_PERMS}
 
 do-build:
-	# nothing
 
 pre-install:
 	${FIND} ${WRKSRC:Q} -name "*.orig*" -exec ${RM} -f {} \;
@@ -83,7 +75,6 @@ do-install:
 	       -e "s|@VARBASE@|${VARBASE}|g" ${FILESDIR}/phrasea.conf >	\
 		${DESTDIR}${PREFIX}/share/examples/phraseanet/phrasea.conf
 
-
-.include "../../mk/apache.mk"
 .include "../../lang/php/phpversion.mk"
+.include "../../mk/apache.mk"
 .include "../../mk/bsd.pkg.mk"

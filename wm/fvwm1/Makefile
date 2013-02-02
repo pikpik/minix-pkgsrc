@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2009/07/07 19:41:54 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/23 10:24:14 wiz Exp $
 
 DISTNAME=	fvwm-1.24r
 PKGNAME=	${DISTNAME:S/fvwm/fvwm1/}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	x11 wm
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.fvwm.org/
 COMMENT=	Virtual window manager for X
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	xpmroot-2.*:../../x11/xpmroot
 
@@ -37,7 +35,13 @@ post-patch:
 	cd ${WRKSRC}; \
 	${MV} configure.h configure.h.old; \
 	${SED} -e 's#$${PREFIX}#${PREFIX}#g' \
-	  -e 's#$${X11BASE}#${X11BASE}#g' configure.h.old >configure.h
+	  -e 's#$${X11BASE}#${X11BASE}#g' configure.h.old >configure.h; \
+	${MV} sample.fvwmrc/system.fvwmrc sample.fvwmrc/system.fvwmrc.old; \
+	${SED} -e 's#$${PREFIX}#${PREFIX}#g' \
+	  -e 's#$${X11BASE}#${X11BASE}#g' sample.fvwmrc/system.fvwmrc.old >sample.fvwmrc/system.fvwmrc; \
+	${MV} sample.fvwmrc/mwm.fvwmrc sample.fvwmrc/mwm.fvwmrc.old; \
+	${SED} -e 's#$${PREFIX}#${PREFIX}#g' \
+	  -e 's#$${X11BASE}#${X11BASE}#g' sample.fvwmrc/mwm.fvwmrc.old >sample.fvwmrc/mvm.fvwmrc
 
 INSTALLATION_DIRS=	lib/X11/fvwm/pixmaps lib/X11/fvwm/bitmaps
 
@@ -53,5 +57,4 @@ post-install:
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../x11/xbitmaps/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

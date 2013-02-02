@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2011/11/26 04:39:47 sbd Exp $
+# $NetBSD: Makefile,v 1.3 2012/03/14 18:15:27 abs Exp $
 
 DISTNAME=	snappy-1.0.5
 CATEGORIES=	devel
@@ -8,8 +8,6 @@ MAINTAINER=	agc@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/snappy/
 COMMENT=	General purpose data compression library
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

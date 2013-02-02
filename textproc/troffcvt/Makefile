@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2009/07/07 20:35:27 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 21:58:16 wiz Exp $
 #
 
 DISTNAME=		troffcvt-1.04
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		textproc
 MASTER_SITES=		http://www.snake.net/software/troffcvt/
 
@@ -10,7 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		Troff/groff to RTF/HTML/TEXT converter
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 USE_TOOLS+=		perl:run

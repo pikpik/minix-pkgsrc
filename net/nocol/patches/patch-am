@@ -1,4 +1,8 @@
-$NetBSD$
+$NetBSD: patch-am,v 1.4 2012/09/09 19:26:38 dholland Exp $
+
+- use pkgsrc to handle -lresolv config
+- recognize NetBSD correctly
+- recognize DragonFly
 
 --- Configure.orig	2000-01-19 04:34:04.000000000 +0000
 +++ Configure
@@ -24,7 +28,7 @@ $NetBSD$
  		PING=`which ping`     # can do ping -c cnt host
  		;; 
 -  FREEBSD|FreeBSD\ 2*|FreeBSD\ 3*|NETBSD|NetBSD\ 1*)
-+  FREEBSD|FreeBSD\ 2*|FreeBSD\ 3*|NETBSD|NetBSD\ 1*|NetBSD\ 2*|NetBSD\ 3*| NetBSD\ 4*|DragonFly*)
++  FREEBSD|FreeBSD\ 2*|FreeBSD\ 3*|NETBSD|NetBSD*|DragonFly*)
  		OS_CFLAGS="-DFREEBSD"
  		OS_LIBS="${LIBRESOLV} -lcrypt" # some hosts -lresolv not needed
  		PING=`which ping`     # can do ping -c cnt host

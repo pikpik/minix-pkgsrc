@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2012/03/03 00:13:09 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/06 11:54:58 asau Exp $
 
 DISTNAME=	warmux-11.01
-PKGREVISION=	5
+PKGREVISION=	8
 CATEGORIES=	games
 MASTER_SITES=	http://download.gna.org/warmux/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.warmux.org/
 COMMENT=	Battle game
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes

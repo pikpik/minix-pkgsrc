@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix build with latest glib2.
+
+--- src/plugins/ario-plugin-info.c~	2011-02-27 15:07:28.000000000 +0000
++++ src/plugins/ario-plugin-info.c
+@@ -27,7 +27,7 @@
+ 
+ #include <string.h>
+ #include <glib/gi18n.h>
+-#include <glib/gkeyfile.h>
++#include <glib.h>
+ 
+ #include "plugins/ario-plugin-info-priv.h"
+ #include "ario-debug.h"

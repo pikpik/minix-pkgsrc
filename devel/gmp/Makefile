@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.61 2011/11/16 21:30:07 is Exp $
+# $NetBSD: Makefile,v 1.63 2012/05/11 14:08:59 drochner Exp $
 
-DISTNAME=	gmp-5.0.4
+DISTNAME=	gmp-5.0.5
 CATEGORIES=	devel math
 MASTER_SITES=	${MASTER_SITE_GNU:=gmp/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,7 +10,6 @@ HOMEPAGE=	http://gmplib.org/
 COMMENT=	Library for arbitrary precision arithmetic
 LICENSE=	gnu-lgpl-v3 AND gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 GNU_CONFIGURE=		yes

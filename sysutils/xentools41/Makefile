@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.15 2012/02/03 17:00:25 bouyer Exp $
+# $NetBSD: Makefile,v 1.27 2013/01/18 11:27:43 drochner Exp $
 #
 # VERSION is set in version.mk as it is shared with other packages
 .include		"version.mk"
 
 DISTNAME=		xen-${VERSION}
 PKGNAME=		xentools41-${VERSION}
-PKGREVISION=		4
+PKGREVISION=		1
 CATEGORIES=		sysutils
 MASTER_SITES=	http://bits.xensource.com/oss-xen/release/${VERSION}/
 
@@ -19,13 +19,10 @@ COMMENT=		Userland Tools for Xen 4.1.x
 
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 #DEPENDS+=		${PYPKGPREFIX}-readline-[0-9]*:../../devel/py-readline
 
 # XXX add version check: Xen requires dev86 >= 0.16.14
 BUILD_DEPENDS+= dev86-[0-9]*:../../devel/dev86 # needed to build firmware
-BUILD_DEPENDS+= ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
 .if !exists(/usr/bin/iasl)
 BUILD_DEPENDS+= acpica-utils-[0-9]*:../../sysutils/acpica-utils
 .endif
@@ -54,6 +51,8 @@ MAKE_ENV+=		EGDIR=${EGDIR:Q}
 MAKE_ENV+=		BASH_COMPLETION_DIR=${EGDIR:Q}
 MAKE_ENV+=		MV=${MV:Q} PYTHON=${PYTHONBIN:Q} SED=${SED:Q}
 MAKE_ENV+=		VARBASE=${VARBASE}
+MAKE_ENV+=		XEN_CONFIG_DIR=${PKG_SYSCONFDIR}
+MAKE_ENV+=		V=YES
 
 #MAKE_ENV+=		INSTALL_DIR=${BSD_INSTALL_DATA_DIR}
 #MAKE_ENV+=		INSTALL_DATA=${BSD_INSTALL_DATA}
@@ -173,5 +172,7 @@ CPPFLAGS+=	-Dshm_open=open -Dshm_unlink=unlink
 .include "../../devel/ncurses/buildlink3.mk"
 #.include "../../devel/SDL/buildlink3.mk"
 .include "../../lang/ocaml/buildlink3.mk"
+.include "../../devel/ocaml-findlib/buildlink3.mk"
+.include "../../sysutils/pciutils/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

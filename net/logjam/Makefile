@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2012/02/06 12:41:15 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2012/12/16 01:52:29 obache Exp $
 #
 
 DISTNAME=	logjam-4.5.3
-PKGREVISION=	20
+PKGREVISION=	31
 CATEGORIES=	net
 MASTER_SITES=	http://logjam.danga.com/download/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://logjam.danga.com/download/
 COMMENT=	GTK client for LiveJournal.com
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-xmms
@@ -25,4 +23,5 @@ USE_TOOLS+=		perl pkg-config intltool msgfmt
 .include "../../textproc/gtkspell/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

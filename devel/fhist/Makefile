@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2010/01/29 17:59:06 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/31 11:16:57 asau Exp $
 #
 
 DISTNAME=		fhist-1.16
@@ -10,11 +10,10 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://fhist.sourceforge.net/
 COMMENT=		File history and comparison tools
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		gsoelim msgfmt yacc
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
+MAKE_JOBS_SAFE=		no
 
 CONFIGURE_ARGS+=	--with-nlsdir=${PREFIX}/${PKGLOCALEDIR}/locale
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share/doc

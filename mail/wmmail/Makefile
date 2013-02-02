@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2009/09/03 12:03:37 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/08 12:19:34 asau Exp $
 
 DISTNAME=	WMMail.app-0.64
 PKGNAME=	wmmail-0.64
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	xbiff like "mail-checker" for WindowMaker
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	windowmaker>=0.80.0nb1:../../wm/windowmaker
 
@@ -25,5 +23,4 @@ CONFIGURE_ARGS+=	--with-PL-incs="-I${LOCALBASE}/include" \
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

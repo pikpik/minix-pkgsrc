@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/08/16 22:30:06 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:57:31 wiz Exp $
 
 DISTNAME=	Digest-Perl-MD5-1.8
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Digest/}
 
@@ -9,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Digest-Perl-MD5/
 COMMENT=	Perl implementation of Ron Rivests MD5 Algorithm
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CHECK_INTERPRETER_SKIP+= ${PERL5_SUB_INSTALLVENDORLIB}/Digest/Perl/MD5.pm
 

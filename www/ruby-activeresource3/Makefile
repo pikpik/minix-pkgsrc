@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/12/13 16:03:53 taca Exp $
+# $NetBSD: Makefile,v 1.6 2012/03/18 05:27:10 taca Exp $
 
 DISTNAME=	activeresource-${RUBY_RAILS_VERSION}
 CATEGORIES=	www
@@ -12,6 +12,7 @@ DEPENDS+=	${RUBY_ACTIVESUPPORT_DEPENDS}
 DEPENDS+=	${RUBY_ACTIVEMODEL_DEPENDS}
 
 RUBY_RAILS_SUPPORTED=	3
+RUBY_RAILS_STRICT_DEP=	yes
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

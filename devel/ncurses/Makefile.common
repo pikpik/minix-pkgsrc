@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.15 2011/02/28 11:02:46 adam Exp $
+# $NetBSD: Makefile.common,v 1.17 2012/06/08 13:21:10 fhajny Exp $
 #
 # used by devel/ncursesw/Makefile
 
@@ -14,7 +14,6 @@ HOMEPAGE=	http://invisible-island.net/ncurses/ncurses.html
 LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -48,6 +47,10 @@ CONFIGURE_ARGS+=	--without-manpage-tbl
 .endif
 
 .if ${OPSYS} == "SunOS"
+.include "../../mk/compiler.mk"
+. if !empty(CC_VERSION:Mgcc-4.[6-9].*)
+BUILDLINK_TRANSFORM+=	rm:-D_XOPEN_SOURCE_EXTENDED
+. endif
 TERMINFO_SRC=	${WRKSRC}/misc/terminfo.src
 TERMINFODIR=	share/lib/terminfo
 .else

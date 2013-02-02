@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2008/06/12 02:14:29 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/04 00:22:00 cheusov Exp $
 
 DISTNAME=	pyunit-1.4.1
 PKGNAME=	${PYPKGPREFIX}-unit-1.4.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyunit/}
 
@@ -10,9 +10,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pyunit.sourceforge.net/
 COMMENT=	Unit testing framework for python
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 EGG_NAME=	PyUnit-${PKGVERSION_NOREV}
+
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

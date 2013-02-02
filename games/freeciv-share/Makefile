@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2011/04/22 13:43:35 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/08/17 18:42:43 prlw1 Exp $
 
 PKGNAME=	${DISTNAME:S/-/-share-/}
-PKGREVISION=	2
+PKGREVISION=	1
 COMMENT=	Machine independent files for Freeciv
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../games/freeciv-share/Makefile.common"
 

@@ -1,0 +1,15 @@
+$NetBSD$
+
+Fix symbol name conflict with POSIX getline().
+
+--- sformat/defect.c	Sat Jun 16 04:48:53 2012 -0400
++++ sformat/defect.c	Sat Jun 16 04:50:37 2012 -0400
+@@ -238,7 +238,7 @@
+ 	for (;;) {
+ 		printf("def> ");
+ 		flush();
+-		if ((n = getline(line, 80)) == 0)
++		if ((n = get_line(line, 80)) == 0)
+ /*			return (FALSE);*/
+ 			continue;
+ 		if (n == EOF)

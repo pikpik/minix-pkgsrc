@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2012/02/06 12:42:25 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/29 05:06:47 asau Exp $
 
 DISTNAME=	qwt-5.2.2
-PKGREVISION=	3
+PKGREVISION=	9
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qwt/}
 EXTRACT_SUFX=	.tar.bz2
@@ -19,7 +19,6 @@ USE_LIBTOOL=	yes
 CONFLICTS=	qwtlib-[0-9]*
 
 AUTO_MKDIRS=			yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALL_MAKE_FLAGS+=	INSTALL_ROOT=${DESTDIR}
 
 do-configure:
@@ -28,5 +27,6 @@ do-configure:
 .include "../../x11/qt4-libs/buildlink3.mk"
 # needs fix for "silent" qmake feature flag
 BUILDLINK_API_DEPENDS.qt4-tools+= qt4-tools>=4.6.3nb1
+BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

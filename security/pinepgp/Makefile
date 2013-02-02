@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2009/03/17 21:40:47 darcy Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:57:34 wiz Exp $
 #
 
 DISTNAME=		pinepgp-0.18.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		security mail
 MASTER_SITES=		http://hany.sk/~hany/_data/pinepgp/	\
 			http://terminus.sk/~hany/_data/pinepgp/
@@ -10,8 +10,6 @@ MASTER_SITES=		http://hany.sk/~hany/_data/pinepgp/	\
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://hany.sk/~hany/software/pinepgp/stable.html
 COMMENT=		PGP display and sending filters for pine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		bash>=2:../../shells/bash2
 

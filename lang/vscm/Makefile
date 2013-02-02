@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2009/06/30 00:07:18 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/02 20:11:57 asau Exp $
 
 DISTNAME=	vscmV1R2
 PKGNAME=	vscm-1.4
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=vscm/} \
 	ftp://ftp.cs.indiana.edu/pub/scheme-repository/imp/vscm/
@@ -9,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=vscm/} \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://www.cs.princeton.edu/~blume/vscm/
 COMMENT=	Portable scheme implementation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

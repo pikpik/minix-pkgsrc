@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.6 2009/09/18 11:04:07 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/23 19:51:30 asau Exp $
 
 WBM_NAME=	bind8
 
 COMMENT=	Webmin module for managing ISC BIND 8.x DNS servers
 
-PKGREVISION=	1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=	2
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

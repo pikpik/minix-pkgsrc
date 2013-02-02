@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:39:29 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/08 23:01:13 adam Exp $
 #
 
 DISTNAME=	paprefs-0.9.7
-PKGREVISION=	11
+PKGREVISION=	19
 CATEGORIES=	audio
 MASTER_SITES=	http://0pointer.de/lennart/projects/paprefs/
 
@@ -16,13 +16,12 @@ USE_TOOLS+=	pkg-config gmake intltool perl msgfmt
 
 CONFIGURE_ARGS+=	--disable-lynx
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "../../audio/pulseaudio/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/gconfmm/buildlink3.mk"
 .include "../../devel/libglademm/buildlink3.mk"
 .include "../../devel/libsigc++/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/gtkmm/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: wbm.mk,v 1.8 2007/10/08 08:47:09 obache Exp $
+# $NetBSD: wbm.mk,v 1.10 2012/05/13 08:10:12 sbd Exp $
 #
 # Makefile fragment for Webmin modules
 #
@@ -40,7 +40,7 @@ CATEGORIES+=	sysutils www
 MAINTAINER?=	pkgsrc-users@NetBSD.org
 HOMEPAGE?=	http://www.webmin.com/standard.html
 
-USE_TOOLS+=	perl:run
+USE_TOOLS+=	perl:run perl
 DEPENDS+=	webmin>=${WBM_VERSION}:../../sysutils/webmin
 
 .for m in ${WBM_DEPEND_MODULES}
@@ -90,7 +90,7 @@ INSTALLATION_DIRS+=	${WBM_DIR} ${WBM_EGDIR}
 wbm-install:
 	${CP} -R ${WBMSRC} ${DESTDIR}${WBM_DIR}/.
 	${PERL5} ${WEBMIN_DIR}/copyconfig.pl				\
-		${WEBMIN_OSTYPE_cmd:sh:Q} ${WEBMIN_OSVERSION_cmd:sh:Q}	\
+		${WEBMIN_OSTYPE_cmd:sh:Q} ${WEBMIN_OSVERSION_cmd:sh:Q:S/^$/''/}\
 		${DESTDIR}${WBM_DIR} ${DESTDIR}${WBM_EGDIR} ${WBM_NAME}
 
 do-configure: wbm-configure

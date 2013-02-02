@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.4 2012/02/19 16:31:08 taca Exp $
+# $NetBSD: Makefile,v 1.15 2012/12/20 12:45:58 taca Exp $
 
-DISTNAME=	drupal-7.12
-PKGREVISION=	1
+DISTNAME=	drupal-7.19
 CATEGORIES=	www
 MASTER_SITES=	http://drupal.org/files/projects/
 
@@ -10,13 +9,6 @@ HOMEPAGE=	http://drupal.org/
 COMMENT=	Open source content management system
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-.include "../../lang/php/phpversion.mk"
-
-.if ${PKG_PHP_VERSION} == "5"
-DEPENDS+=	php>=5.2.0<5.3:../../lang/php5
-.endif
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=5.2.0:../../graphics/php-gd
 DEPENDS+=	${PHP_PKG_PREFIX}-json>=5.2.0:../../textproc/php-json
 
@@ -50,6 +42,10 @@ REPLACE_INTERPRETER+=	php
 REPLACE.php.old=	.*php[^ ]*
 REPLACE.php.new=	${PREFIX}/bin/php
 REPLACE_FILES.php=	scripts/drupal.sh scripts/password-hash.sh
+REPLACE_FILES.php+=	scripts/dump-database-d6.sh
+REPLACE_FILES.php+=	scripts/dump-database-d7.sh
+REPLACE_FILES.php+=	scripts/generate-d6-content.sh
+REPLACE_FILES.php+=	scripts/generate-d6-content.sh
 
 SUBST_CLASSES+=		conf
 SUBST_STAGE.conf=	pre-install
@@ -58,8 +54,11 @@ SUBST_SED.conf=		-e "s|@DRUPAL@|${DRUPAL}|g"
 SUBST_SED.conf+=	-e "s|@PREFIX@|${PREFIX}|g"
 SUBST_MESSAGE.conf=	Fixing configuration files.
 
-INSTALLATION_DIRS+=	${DRUPAL}/files ${DRUPAL}/sites/all \
+INSTALLATION_DIRS+=	${DRUPAL}/files ${DRUPAL}/sites \
 			share/doc/drupal share/examples/drupal
+.for i in ${PAX_DIRS}
+INSTALLATION_DIRS+=	${DRUPAL}/${i}
+.endfor
 
 .include "options.mk"
 
@@ -68,8 +67,6 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/robots.txt ${DESTDIR}${PREFIX}/${DRUPAL}
-	${INSTALL_DATA} ${WRKSRC}/sites/all/README.txt \
-		${DESTDIR}${PREFIX}/${DRUPAL}/sites/all
 	${INSTALL_DATA} ${WRKSRC}/drupal.conf \
 		${DESTDIR}${PREFIX}/share/examples/drupal
 	${INSTALL_DATA} ${WRKSRC}/sites/default/default.settings.php \
@@ -86,4 +83,5 @@ post-install:
 	${FIND} ${DESTDIR}${PREFIX}/${DRUPAL} \
 		\( -name '*.jpg' -o -name '*.png' \) | ${XARGS} ${CHMOD} 0644
 
+.include "../../lang/php/phpversion.mk"
 .include "../../mk/bsd.pkg.mk"

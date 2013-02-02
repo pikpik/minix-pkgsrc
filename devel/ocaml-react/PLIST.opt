@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/ocaml/site-lib/react/react.a
+lib/ocaml/site-lib/react/react.cma
+lib/ocaml/site-lib/react/react.cmx
+lib/ocaml/site-lib/react/react.cmxa

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.35 2011/08/14 12:26:17 obache Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/04 06:38:22 wiz Exp $
 #
 
-DISTNAME=	Module-CoreList-2.57
+DISTNAME=	Module-CoreList-2.73
 PKGNAME=	p5-${DISTNAME}
 SVR4_PKGNAME=	p5mcl
 CATEGORIES=	devel perl5
@@ -14,8 +14,6 @@ LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Module/CoreList/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

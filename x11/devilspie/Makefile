@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.46 2012/03/03 00:14:08 wiz Exp $
+# $NetBSD: Makefile,v 1.54 2012/10/29 05:06:09 asau Exp $
 
 DISTNAME=		devilspie-0.22
-PKGREVISION=		9
+PKGREVISION=		15
 CATEGORIES=		x11
 MASTER_SITES=		http://www.burtonini.com/computing/
 
@@ -12,14 +12,13 @@ LICENSE=		gnu-gpl-v2
 
 BUILD_DEPENDS+=		libxslt>=1.0:../../textproc/libxslt
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		intltool msgfmt pkg-config
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES
 TEST_TARGET=		check
 INSTALLATION_DIRS=	share/doc/devilspie
 LDFLAGS.DragonFly=	-lX11
+LDFLAGS.SunOS+=		-lX11
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/README \

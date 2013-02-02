@@ -1,7 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2012/03/06 04:53:24 sbd Exp $
 #
 
-DISTNAME=		logrotate-3.8.1
+DISTNAME=		logrotate-3.8.2
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_GENTOO:=distfiles/}
 MASTER_SITES+=		${MASTER_SITE_FREEBSD:=distfiles/}
@@ -11,15 +11,13 @@ HOMEPAGE=		https://fedorahosted.org/logrotate/
 COMMENT=		Daemon to rotate, compress, remove and mail system log files
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		gmake gzip:run gunzip:run mail:run
 NO_EXPORT_CPP=		yes
 
 CFLAGS+=		-DSTATEFILE=\"${VARBASE}/db/logrotate.status\"
-CFLAGS+=		-DDEFAULT_MAIL_COMMAND=\"${MAIL_CMD}\"
-CFLAGS+=		-DCOMPRESS_COMMAND=\"${GZIP_CMD:[1]}\"
-CFLAGS+=		-DUNCOMPRESS_COMMAND=\"${GUNZIP_CMD:[1]}\"
+CFLAGS+=		-DDEFAULT_MAIL_COMMAND=\"${MAIL_CMD:Q}\"
+CFLAGS+=		-DCOMPRESS_COMMAND=\"${GZIP_CMD:[1]:Q}\"
+CFLAGS+=		-DUNCOMPRESS_COMMAND=\"${GUNZIP_CMD:[1]:Q}\"
 
 MAKE_ENV+=		RPM_OPT_FLAGS=${CFLAGS:Q}
 
@@ -28,7 +26,7 @@ EGDIR=			${PREFIX}/share/examples/logrotate
 CONF_FILES=		${EGDIR}/logrotate.conf ${PKG_SYSCONFDIR}/logrotate.conf
 OWN_DIRS=		${PKG_SYSCONFDIR}/logrotate.d
 MESSAGE_SUBST+=		EGDIR=${EGDIR}
-
+INSTALLATION_DIRS+=	${EGDIR} ${PKG_SYSCONFDIR} ${OWN_DIRS}
 AUTO_MKDIRS=		yes
 
 SUBST_CLASSES+=		paths

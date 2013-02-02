@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2010/06/13 22:44:10 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/05/23 03:35:27 dholland Exp $
 #
 
 DISTNAME=		teem-1.8.0-src
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://teem.sourceforge.net/
 COMMENT=		Libraries for manipulation of Structured Scientific Data
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		gmake pax
 
 .include "../../mk/bsd.prefs.mk"
@@ -24,6 +22,8 @@ LARCH=32
 .  elif ${MACHINE_ARCH} == "x86_64"
 NARCH=64
 LARCH=amd64
+.  else
+PKG_FAIL_REASON+=	"Need configuration rules for ${MACHINE_ARCH}."
 .  endif
 
 TEEM_ARCH=netbsd.${NARCH}

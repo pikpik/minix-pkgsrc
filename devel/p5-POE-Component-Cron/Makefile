@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2010/09/06 11:58:24 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:55:25 wiz Exp $
 
 DISTNAME=	POE-Component-Cron-0.021
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/C/CF/CFEDDE/}
 
@@ -19,8 +19,6 @@ DEPENDS+=	p5-DateTime>=0:../../time/p5-DateTime
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/POE/Component/Cron/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

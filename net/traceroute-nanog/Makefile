@@ -1,28 +1,24 @@
-# $NetBSD: Makefile,v 1.2 2010/03/20 00:04:21 schwarz Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 17:19:14 asau Exp $
 
-DISTNAME=	traceroute-nanog-6.4.2
+DISTNAME=	traceroute-nanog_6.4.2.orig
+PKGNAME=	${DISTNAME:S/.orig//:S/_/-/}
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.login.com/pub/software/traceroute/
-DISTFILES=	traceroute.c
-DIST_SUBDIR=	traceroute-nanog
+MASTER_SITES=	ftp://unix.hensa.ac.uk/sites/archive.ubuntu.com/ubuntu/pool/universe/t/traceroute-nanog/ \
+		http://www.ftp.uni-erlangen.de/pub/pc/TheOpenCD/old-images/ubuntu/pool/universe/t/traceroute-nanog/ \
+		http://traceroute-nanog.sourcearchive.com/downloads/6.4.2-1/
 
 # for the man page:
-PATCH_SITES=	${MASTER_SITE_DEBIAN:=pool/main/t/traceroute-nanog/}
+PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	traceroute-nanog_6.4.2-1.diff.gz
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 COMMENT=	Traceroute implementation with extend features
 MAINTAINER=	schwarz@NetBSD.org
 
-WRKSRC=		${WRKDIR}
+WRKSRC=		${WRKDIR}/${DISTNAME:S/_/-/}
 NO_CONFIGURE=	YES
 USE_FEATURES+=	snprintf
 
 .include "../../mk/bsd.prefs.mk"
-.if empty(PKGSRC_COMPILER:Mgcc*)
-CPPFLAGS+=	-D__attribute__=
-.endif
 
 .if ${OPSYS} == "SunOS"
 .if ${OS_VERSION} >= 5.0
@@ -50,13 +46,11 @@ CPPFLAGS+=	-Dsocklen_t=int
 
 INSTALLATION_DIRS=	sbin ${PKGMANDIR}/man8
 
-do-extract:
-		${CP} ${DISTDIR}/${DIST_SUBDIR}/traceroute.c ${WRKSRC}
 do-build:
 		cd ${WRKSRC} && ${CC} ${CPPFLAGS} ${CFLAGS} traceroute.c -o traceroute-nanog ${LDFLAGS} -lm ${LIBS}
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/traceroute-nanog ${DESTDIR}${PREFIX}/sbin
-		${INSTALL_MAN} ${WRKDIR}/traceroute-nanog-6.4.2/debian/traceroute-nanog.genuine.8 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man8/traceroute-nanog.8
+		${INSTALL_MAN} ${WRKSRC}/${PKGNAME}/debian/traceroute-nanog.genuine.8 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man8/traceroute-nanog.8
 
 .include "../../mk/bsd.pkg.mk"

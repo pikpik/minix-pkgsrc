@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2012/03/03 00:14:06 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/28 06:30:17 asau Exp $
 #
 
 DISTNAME=	61e08e67b176
 PKGNAME=	icedtea-web-1.2pre
-PKGREVISION=	6
+PKGREVISION=	12
 CATEGORIES=	www
 MASTER_SITES=	http://icedtea.classpath.org/hg/icedtea-web/archive/
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://icedtea.classpath.org/
 COMMENT=	Java browser plugin and Web Start launcher
 #LICENSE=	# GPL2 + Classpath exception
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES+=		c c++

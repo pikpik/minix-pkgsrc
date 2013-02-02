@@ -1,15 +1,12 @@
 $NetBSD$
 
-SHA1 (mpfr-3.0.1/mpfr-3.0.1.tar.gz) = caa0609934c0d2ffa29bd11bfa9c05fbade130eb
-RMD160 (mpfr-3.0.1/mpfr-3.0.1.tar.gz) = cff7306c13e5a858d9188450ecf0e4efcfbfcce8
-Size (mpfr-3.0.1/mpfr-3.0.1.tar.gz) = 1478243 bytes
-SHA1 (mpfr-3.0.1/patch01) = 88bffb4c5588072e1e56f026b092a873e46a4bfc
-RMD160 (mpfr-3.0.1/patch01) = 0e4d56846156369de6ce3cd3984cb060cbd3720a
-Size (mpfr-3.0.1/patch01) = 3899 bytes
-SHA1 (mpfr-3.0.1/patch02) = 3a4d9617e15d1fc3ecbf5f8f945dc5e6e76abdb7
-RMD160 (mpfr-3.0.1/patch02) = 2ad3e67f5626d1ef5735121b6d5baf0a7bb4e892
-Size (mpfr-3.0.1/patch02) = 3282 bytes
-SHA1 (mpfr-3.0.1/patch03) = 60c98873696c897e406e1106e62cff02d320d1d0
-RMD160 (mpfr-3.0.1/patch03) = df4b3c54f9ef6beaa35a88198edf9c80f35e8e41
-Size (mpfr-3.0.1/patch03) = 3347 bytes
+SHA1 (mpfr-3.1.1/mpfr-3.1.1.tar.bz2) = f632d43943ff9f13c184fa13b9a6e8c7f420f4dd
+RMD160 (mpfr-3.1.1/mpfr-3.1.1.tar.bz2) = 9b083c109a9ebd00afdb1fb88dd6aa779d78a881
+Size (mpfr-3.1.1/mpfr-3.1.1.tar.bz2) = 1218825 bytes
+SHA1 (mpfr-3.1.1/patch01) = 36839d1ce4952d96cf403528d5eba72df66c745b
+RMD160 (mpfr-3.1.1/patch01) = 85434fe0b6e038cfc442192644924923ee0b646b
+Size (mpfr-3.1.1/patch01) = 7535 bytes
+SHA1 (mpfr-3.1.1/patch02) = 83f65bf904d187449879b0ccf04a5dbea8422b3b
+RMD160 (mpfr-3.1.1/patch02) = 47646390186d9d76bad7b1f799c2dfa94501627e
+Size (mpfr-3.1.1/patch02) = 5460 bytes
 SHA1 (patch-minix-shlib) = 99c2b4f88401c92539c2c088d5ac39c92b14d0d6

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.45 2007/03/17 20:43:24 rillig Exp $
+# $NetBSD: Makefile,v 1.47 2012/10/03 11:24:44 asau Exp $
 
 DISTNAME=	pilotmgr-1.109
+PKGREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pilotmanager/}
 EXTRACT_SUFX=	.tgz
@@ -12,8 +13,6 @@ COMMENT=	Synchronize databases on any 3Com Palm device
 DEPENDS+=	p5-Digest-MD5-[0-9]*:../../security/p5-Digest-MD5
 DEPENDS+=	p5-Tk-[0-9]*:../../x11/p5-Tk
 DEPENDS+=	p5-pilot-link-[0-9]*:../../comms/p5-pilot-link
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		YES
 NO_BUILD=		YES

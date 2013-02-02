@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.62 2009/12/27 14:17:37 obache Exp $
+# $NetBSD: Makefile,v 1.63 2012/03/22 14:13:28 taca Exp $
 #
 
 DISTNAME=		qpopper${VERSION}
@@ -13,8 +13,6 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=		mellon@fugue.com
 HOMEPAGE=		${QPOPPER_HOMEPAGE}
 COMMENT=		Qualcomm's POP server for Eudora
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 

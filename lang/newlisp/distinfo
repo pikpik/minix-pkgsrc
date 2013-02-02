@@ -1,6 +1,6 @@
-$NetBSD: distinfo,v 1.1.1.1 2011/10/11 13:03:18 ryoon Exp $
+$NetBSD: distinfo,v 1.3 2012/10/06 10:49:42 ryoon Exp $
 
-SHA1 (newlisp-10.4.0.tgz) = c84074a169062fc88c2cf502e733ddf59a3e40a6
-RMD160 (newlisp-10.4.0.tgz) = a9920ed7ab8368b1542483b536f4f519e7fc132d
-Size (newlisp-10.4.0.tgz) = 1531894 bytes
+SHA1 (newlisp-10.4.5.tgz) = 8e81b73b8d141250ab773952259cd69b228ae824
+RMD160 (newlisp-10.4.5.tgz) = 6be646d9feb5edf761b98bca077de186cbbbc75b
+Size (newlisp-10.4.5.tgz) = 1553279 bytes
 SHA1 (patch-configure-alt) = f8669b8432fe460af18d0f2d3d1135debfd74654

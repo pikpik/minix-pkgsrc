@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.137 2012/03/06 17:39:03 ryoon Exp $
+# $NetBSD: Makefile,v 1.152 2012/12/15 10:36:20 ryoon Exp $
 #
 
 DISTNAME=		gnome-panel-2.32.1
-PKGREVISION=		11
+PKGREVISION=		22
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-panel/2.32/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		drochner@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME2 panel application
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # depends on policykit
 #EGDIR=		${PREFIX}/share/examples/gnome-panel
@@ -22,7 +20,8 @@ GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake intltool msgfmt perl:run pkg-config
 USE_PKGLOCALEDIR=	YES
 USE_LIBTOOL=		YES
-PKGCONFIG_OVERRIDE=	libpanel-applet/libpanelapplet-2.0.pc.in
+PKGCONFIG_OVERRIDE+=	bonobo/libpanel-applet/libpanelapplet-2.0.pc.in
+PKGCONFIG_OVERRIDE+=	libpanel-applet/libpanelapplet-3.0.pc.in
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN}
 
 # XXX this pkg installs a gio module to ${PREFIX}/lib/gnome-panel/modules

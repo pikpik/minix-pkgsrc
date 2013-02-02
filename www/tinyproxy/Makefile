@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.26 2010/01/16 17:57:38 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/12/12 13:01:23 wiz Exp $
 #
 
-DISTNAME=	tinyproxy-1.6.2
-PKGREVISION=	6
+DISTNAME=	tinyproxy-1.8.3
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tinyproxy/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tinyproxy.sourceforge.net/
 COMMENT=	Lightweight HTTP/SSL proxy
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	gnu-gpl-v2
 
 GNU_CONFIGURE=	YES
 
@@ -19,6 +18,7 @@ PKG_SYSCONFSUBDIR=	tinyproxy
 
 .include "../../mk/bsd.prefs.mk"
 
+BUILD_DEPENDS+=		asciidoc-[0-9]*:../../textproc/asciidoc
 BUILD_DEFS+=		VARBASE
 
 TINYPROXY_USER?=	tinyproxy
@@ -31,6 +31,7 @@ FILES_SUBST+=		TINYPROXY_USER=${TINYPROXY_USER:Q}
 FILES_SUBST+=		TINYPROXY_GROUP=${TINYPROXY_GROUP:Q}
 
 CONFIGURE_ARGS+=	--with-config=${PKG_SYSCONFDIR}/tinyproxy.conf
+CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 CONFIGURE_ARGS+=	--enable-transparent-proxy
 
 .include "options.mk"
@@ -41,19 +42,18 @@ CONF_FILES=	${EGDIR}/tinyproxy.conf.default ${PKG_SYSCONFDIR}/tinyproxy.conf
 
 SUBST_CLASSES+=		docs
 SUBST_STAGE.docs=	pre-configure
-SUBST_FILES.docs=	doc/tinyproxy.8 doc/tinyproxy.conf
+SUBST_FILES.docs=	docs/man5/tinyproxy.conf.txt.in docs/man8/tinyproxy.txt.in etc/tinyproxy.conf.in
 SUBST_SED.docs+=	-e 's,@TINYPROXY_USER@,${TINYPROXY_USER},g'
 SUBST_SED.docs+=	-e 's,@TINYPROXY_GROUP@,${TINYPROXY_GROUP},g'
 SUBST_SED.docs+=	-e 's,@PKG_SYSCONFDIR@,${PKG_SYSCONFDIR},g'
-SUBST_SED.docs+=	-e 's,@DATADIR@,${PREFIX}/share/tinyproxy,g'
 SUBST_SED.docs+=	-e 's,@VARBASE@,${VARBASE},g'
 
 INSTALLATION_DIRS=	${EGDIR} share/doc/tinyproxy
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/doc/tinyproxy.conf \
+	${INSTALL_DATA} ${WRKSRC}/etc/tinyproxy.conf \
 		${DESTDIR}${EGDIR}/tinyproxy.conf.default
-	${INSTALL_DATA} ${WRKSRC}/doc/filter-howto.txt \
+	${INSTALL_DATA} ${WRKSRC}/docs/filter-howto.txt \
 		${DESTDIR}${PREFIX}/share/doc/tinyproxy/
 
 .include "../../security/openssl/buildlink3.mk"

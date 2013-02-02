@@ -1,26 +1,26 @@
-# $NetBSD: Makefile,v 1.10 2011/05/07 16:54:56 adam Exp $
+# $NetBSD: Makefile,v 1.19 2013/01/06 22:27:17 wiz Exp $
 
-DISTNAME=	clang-3.0
+DISTNAME=	clang-3.2
 CATEGORIES=	lang
 MASTER_SITES=	http://llvm.org/releases/${PKGVERSION_NOREV}/
-DISTFILES=	llvm-${PKGVERSION_NOREV}.tar.gz clang-${PKGVERSION_NOREV}.tar.gz
+DISTFILES=	llvm-${PKGVERSION_NOREV}.src.tar.gz \
+		clang-${PKGVERSION_NOREV}.src.tar.gz
 
 MAINTAINER=	adam.hoka@gmail.com
 HOMEPAGE=	http://llvm.org/
 COMMENT=	Low Level Virtual Machine compiler infrastructure
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=			${WRKDIR}/llvm-${PKGVERSION_NOREV}.src
 
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		chown perl:build gmake
+USE_TOOLS+=		chown gmake groff pod2html
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-assertions
 CONFIGURE_ARGS+=	--disable-bindings	# disable OCaml
 CONFIGURE_ARGS+=	--disable-timestamps
 CONFIGURE_ARGS+=	--enable-optimized
+#CONFIGURE_ARGS+=	--enable-shared
 
 MAKE_DIRS+=		etc/llvm
 
@@ -38,13 +38,14 @@ PLIST_SUBST+=		SOEXT="dylib"
 PLIST_SUBST+=		SOEXT="so"
 .endif
 
-SUBST_CLASSES+=		perl
-SUBST_MESSAGE.perl=	Fixing llvm-configure PERL path
-SUBST_STAGE.perl=	post-patch
-SUBST_FILES.perl=	tools/llvm-config/llvm-config.in.in
-SUBST_SED.perl=		-e 's,@PERL@,${PERL5},'
+CFLAGS.SunOS+=		-mimpure-text
 
 post-extract:
 	mv ${WRKDIR}/clang-${PKGVERSION_NOREV}.src ${WRKSRC}/tools/clang
+.if ${OPSYS} == "SunOS"
+	${ECHO} "int sun_ld_needs_a_symbol=0;" >> ${WRKSRC}/lib/Target/NVPTX/InstPrinter/NVPTXInstPrinter.cpp
+.endif
 
+.include "../../lang/python/tool.mk"
+.include "../../textproc/libxml2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

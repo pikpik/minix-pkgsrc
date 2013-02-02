@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2010/01/31 21:24:03 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 11:43:33 asau Exp $
 #
 
 DISTNAME=	ex-040103
 PKGNAME=	ex-20040103
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ex-vi/files/ex-vi/040103/}
 
@@ -12,7 +12,11 @@ HOMEPAGE=	http://ex-vi.sourceforge.net/
 COMMENT=	Berkeley vi 3.7
 LICENSE=	original-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+SUBST_CLASSES+=		getline
+SUBST_STAGE.getline=	post-extract
+SUBST_MESSAGE.getline=	Changing 'getline' to 'get_line'
+SUBST_FILES.getline=	ex*.c ex_proto.h
+SUBST_SED.getline=	-e "s,getline,get_line,g"
 
 MAKE_DIRS_PERMS+=	${VARBASE}/tmp/vi.recover ${REAL_ROOT_USER} ${REAL_ROOT_GROUP} 1777
 

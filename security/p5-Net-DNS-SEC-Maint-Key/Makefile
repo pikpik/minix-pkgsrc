@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:35:44 seb Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:57:32 wiz Exp $
 #
 
 DISTNAME=		Net-DNS-SEC-Maint-Key-0.013
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		3
+PKGREVISION=		4
 SVR4_PKGNAME=		p5dsk
 CATEGORIES=		security net perl5
 MASTER_SITES=		http://www.ripe.net/disi/dnssec_maint_tool/
@@ -11,8 +11,6 @@ MASTER_SITES=		http://www.ripe.net/disi/dnssec_maint_tool/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ripe.net/disi/dnssec_maint_tool/
 COMMENT=		DNSSEC key and key-set maintenance classes and tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-Net-DNS>=0.44:../../net/p5-Net-DNS
 DEPENDS+=		p5-Net-DNS-SEC>=0.12:../../security/p5-Net-DNS-SEC

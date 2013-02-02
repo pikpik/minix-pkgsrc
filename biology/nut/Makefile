@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.26 2009/08/09 23:15:43 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2010/09/19 07:52:19 obache Exp $
 
 DISTNAME=	nut-15.8
 CATEGORIES=	biology
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nut.sourceforge.net/
 COMMENT=	Record what you eat and analyze your meals
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=	nut
 USE_TOOLS+=	gmake

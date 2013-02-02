@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2011/02/12 02:52:34 obache Exp $
+# $NetBSD: Makefile,v 1.47 2012/10/03 11:43:39 asau Exp $
 
 DISTNAME=	nvi-1.79
 PKGNAME=	nvi-m17n-1.79.20040608
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://www.bostic.com/files/
 
@@ -12,8 +13,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Clone of vi/ex, with multilingual patch
 
 CONFLICTS=	vigor-[0-9]* nvi-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFIGURE_DIRS=	${WRKSRC}/build
 GNU_CONFIGURE=	YES
@@ -50,14 +49,16 @@ ENCODINGS+=	euc-jp euc-cn euc-kr sjis big5 euc-tw hz
 
 .include "../../mk/bsd.prefs.mk"
 
-.if ${OPSYS} == "NetBSD"
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "DragonFly"
 # XXX ignore NetBSD 2.0F and later's grantpt(3) and SysV pty for just now
 CONFIGURE_ENV+=		vi_cv_sys5_pty=no
 .endif
 
 post-patch:
-.if ${OPSYS} == "NetBSD" || ${OPSYS} == "DragonFly" || \
-    ${OPSYS} == "FreeBSD" || ${OPSYS} == "OpenBSD"
+# DragonFly has no CIRCLEQ_* so it wants the provided <sys/queue.h>
+.if ${OPSYS} == "NetBSD" || \
+    ${OPSYS} == "FreeBSD" || \
+    ${OPSYS} == "OpenBSD"
 	${RM} -f ${WRKSRC}/include/sys/queue.h
 .endif
 

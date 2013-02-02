@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.1.1.1 2008/10/30 13:01:00 obache Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.heirloom-mailx
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.10 2007/11/16 12:03:42 dillo Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/23 19:50:52 asau Exp $
 
 DISTNAME=	bchunk-1.2.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://he.fi/bchunk/
 
-MAINTAINER=	dillo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://he.fi/bchunk/
 COMMENT=	".bin/.cue" CD image converter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FLAGS+=	CC=${CC:Q} LD=${CC:Q} CFLAGS=${CFLAGS:M*:Q}
 

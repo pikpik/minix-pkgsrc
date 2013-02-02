@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.34 2011/03/17 21:52:23 zafer Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/03 21:56:55 wiz Exp $
 
 DISTNAME=	mirror-2.9
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	# ftp://src.doc.ic.ac.uk/computing/archiving/mirror/
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.sunsite.org.uk/packages/mirror/
 COMMENT=	Mirror packages on remote sites
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 MAKE_FILE=	makefile

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2011/04/24 09:51:29 asau Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/11 19:37:47 drochner Exp $
 #
 
-DISTNAME=	libffi-3.0.9
+DISTNAME=	libffi-3.0.11
 PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sourceware.org/pub/libffi/
@@ -10,8 +10,6 @@ MAINTAINER=	asau@inbox.ru
 HOMEPAGE=	http://sources.redhat.com/libffi/
 COMMENT=	Foreign function interface
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include
@@ -34,6 +32,7 @@ pre-build:
 
 .if !empty(PKGSRC_RUN_TEST:M[Yy][Ee][Ss])
 TEST_TARGET=	check
+TEST_ENV=	
 BUILD_DEPENDS+=	dejagnu-[0-9]*:../../devel/dejagnu
 .endif
 

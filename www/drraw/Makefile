@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2009/03/04 13:19:36 kleink Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:58:29 wiz Exp $
 #
 
 DISTNAME=		drraw-2.2b2
+PKGREVISION=		1
 CATEGORIES=		databases graphics www
 MASTER_SITES=		http://web.taranis.org/drraw/dist/
 
 MAINTAINER=		kleink@NetBSD.org
 HOMEPAGE=		http://web.taranis.org/drraw/
 COMMENT=		Simple web based presentation front-end for RRDtool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 USE_TOOLS+=		perl:run

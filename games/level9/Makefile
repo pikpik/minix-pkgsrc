@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/02/05 23:09:19 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/06 11:54:45 asau Exp $
 
 DISTNAME=		Level9_4.0_Source
 PKGNAME=		level9-4.0
@@ -7,11 +7,9 @@ CATEGORIES=		games
 MASTER_SITES=		http://www.ifarchive.org/if-archive/level9/interpreters/level9/
 EXTRACT_SUFX=		.zip
 
-MAINTAINER=		dillo@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ifarchive.org/if-archive/level9/interpreters/level9/
 COMMENT=		Curses port of the Level 9 text adventure interpreter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/Unix
 # uses halfkey (present since 1.6M)

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/12/17 22:38:50 abs Exp $
+# $NetBSD: Makefile,v 1.21 2010/03/24 19:43:28 asau Exp $
 #
 
 DISTNAME=	dhid-5.2
@@ -13,7 +13,6 @@ COMMENT=	Dynamic Host Information System client daemon
 RCD_SCRIPTS=	dhid
 
 INSTALLATION_DIRS=	sbin share/doc/dhid
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dhid ${DESTDIR}${PREFIX}/sbin

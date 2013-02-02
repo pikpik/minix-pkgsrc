@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2011/08/14 16:05:44 obache Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/03 21:58:34 wiz Exp $
 
 DISTNAME=		CGI-Application-4.50
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 SVR4_PKGNAME=		p5cga
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=CGI/}
@@ -15,7 +16,6 @@ DEPENDS+=		{p5-CGI>=2.66,perl>=5.6.1nb2}:../../www/p5-CGI
 DEPENDS+=		p5-HTML-Template-[0-9]*:../../www/p5-HTML-Template
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/CGI/Application/.packlist
 

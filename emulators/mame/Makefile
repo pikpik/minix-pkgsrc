@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.8 2012/03/03 00:13:03 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.16 2012/10/08 23:01:31 adam Exp $
 
-DISTNAME=		mame0145s
-PKGNAME=		${DISTNAME:S/0/-0./:S/s$//}
-MASTER_SITES=		http://mamedev.org/downloader.php?file=releases/
+DISTNAME=	mame0148s
+PKGNAME=	${DISTNAME:S/0/-0./:S/s$//}
+MASTER_SITES=	http://mamedev.org/downloader.php?file=releases/
 
-COMMENT=		Multiple Arcade Machine Emulator
+COMMENT=	Multiple Arcade Machine Emulator
 
 CONFLICTS=		xmame-[0-9]* sdlmame-[0-9]*
 
 DOCDIR=			share/doc/mame
-INSTALLATION_DIRS=	bin ${DOCDIR} ${PKGMANDIR}/man1
+INSTALLATION_DIRS=	bin ${DOCDIR} ${PKGMANDIR}/man1 ${PKGMANDIR}/man6
 
 # mame source is double-zipped
 post-extract:
@@ -32,9 +31,10 @@ do-install:
 # skipped: ldplayer man page exists, but no binary?
 # skipped: testkeys, binary not installed
 	set -e; \
-	for man in chdman.1 jedutil.1 ldverify.1 mame.1 romcmp.1; \
+	for man in chdman.1 jedutil.1 ldverify.1 romcmp.1; \
 	do \
 		${INSTALL_DATA} ${WRKSRC}/src/osd/sdl/man/"$$man" ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1; \
 	done
+	${INSTALL_DATA} ${WRKSRC}/src/osd/sdl/man/mame.6 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man6; \
 
 .include "Makefile.common"

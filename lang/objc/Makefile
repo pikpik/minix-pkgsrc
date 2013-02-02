@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2006/09/09 02:43:09 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/05/24 09:14:58 asau Exp $
 
-DISTNAME=	objc-3.2.6
+DISTNAME=	objc-3.2.10
 CATEGORIES=	lang
 MASTER_SITES=	http://users.pandora.be/stes/
 DISTFILES=	${DIST_BS}${EXTRACT_SUFX} ${DISTNAME}${EXTRACT_SUFX}
@@ -9,7 +9,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://users.pandora.be/stes/compiler.html
 COMMENT=	Portable Object Compiler
 
-DIST_BS=	objc-bootstrap-3.1.33
+DIST_BS=	objc-bootstrap-3.2.8
 WRKSRC_BS=	${WRKDIR}/${DIST_BS}
 
 MAKE_JOBS_SAFE=		no
@@ -32,6 +32,12 @@ SUBST_SED.mflags=	-e 's,MFLAGS,MMFLAGS,g'
 SUBST_FILES.mflags=	configure configure.in manual.html \
 			*/Makefile* src/*/Makefile*
 
+SUBST_CLASSES+=		mandir
+SUBST_STAGE.mandir=	post-configure
+SUBST_MESSAGE.mandir=	Making mandir=${PKGMANDIR} 
+SUBST_SED.mandir=	-e '/$$(TAR)/s,man,${PKGMANDIR},' 
+SUBST_FILES.mandir=	Makefile
+
 pre-configure:
 	${ECHO} >> ${WRKSRC_BS}/configure \
 	'${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} ${BUILD_MAKE_FLAGS} -f ${MAKE_FILE} ${BUILD_TARGET}'
@@ -42,5 +48,13 @@ post-configure:
 		-e 's|${PREFIX}|${WRKSRC_BS}|g'
 	${MV} ${WRKDIR}/oc.tmp ${WRKSRC_BS}/objc
 	${CHMOD} +x ${WRKSRC_BS}/objc
+
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(PKGMANDIR:M*/*)
+post-build:
+	${MKDIR} ${WRKSRC}/${PKGMANDIR:H}
+	${MV} ${WRKSRC}/man ${WRKSRC}/${PKGMANDIR}
+.endif
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2011/12/14 19:47:45 morr Exp $
+# $NetBSD: Makefile,v 1.29 2012/12/16 22:20:27 morr Exp $
 
 DISTNAME=		wordpress-${VERSION}
-VERSION=		3.3.1
+VERSION=		3.5.1
 CATEGORIES=		www
 MASTER_SITES=		http://wordpress.org/
 
@@ -9,8 +9,6 @@ MAINTAINER=		morr@NetBSD.org
 HOMEPAGE=		http://wordpress.org/
 COMMENT=		Blogging tool written in php
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pax
 

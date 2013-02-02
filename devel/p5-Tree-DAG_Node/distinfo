@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.2 2005/02/23 22:24:29 agc Exp $
+$NetBSD: distinfo,v 1.4 2012/11/04 13:45:23 wen Exp $
 
-SHA1 (Tree-DAG_Node-1.06.tar.gz) = 8f412087b33942df06f20ca7c2e8ea0bd2354742
-RMD160 (Tree-DAG_Node-1.06.tar.gz) = b3011e10cbfe8b1dbc7d3ee191e6dbe692b18d46
-Size (Tree-DAG_Node-1.06.tar.gz) = 32843 bytes
+SHA1 (Tree-DAG_Node-1.09.tgz) = b4944ebcb2367bc9880a708381f7257e2fc88791
+RMD160 (Tree-DAG_Node-1.09.tgz) = a27722ab8d4e0020194c6adc6b3a509f5eca6307
+Size (Tree-DAG_Node-1.09.tgz) = 43450 bytes

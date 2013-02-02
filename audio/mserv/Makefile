@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2009/05/19 06:54:51 abs Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/02 23:48:00 asau Exp $
 #
 
 DISTNAME=	mserv-0.35
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	audio
 MASTER_SITES=	http://www.mserv.org/download/
 
@@ -27,7 +27,6 @@ LDFLAGS.SunOS+=	-lnsl -lsocket
 post-configure:
 	${MV} ${WRKSRC}/mserv/soundcard.h ${WRKSRC}/mserv/mservsoundcard.h
 
-PKG_DESTDIR_SUPPORT=    user-destdir
 INSTALLATION_DIRS+=	share/doc/mserv share/mserv/webclient
 
 post-install:

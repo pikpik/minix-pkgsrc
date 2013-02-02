@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2011/01/23 07:55:14 markd Exp $
+# $NetBSD: Makefile,v 1.36 2012/12/16 01:52:25 obache Exp $
 
 DISTNAME=	kdeplasma-addons-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
+PKGREVISION=	8
 CATEGORIES=	misc
 COMMENT=	Plasmoids
 
@@ -10,6 +11,8 @@ COMMENT=	Plasmoids
 MAKE_JOBS_SAFE=	no
 
 # BUILD_MAKE_FLAGS+= VERBOSE=1
+
+CMAKE_ARGS+=	-D BUILD_ibus:BOOL=OFF
 
 .include "../../meta-pkgs/kde4/kde4.mk"
 

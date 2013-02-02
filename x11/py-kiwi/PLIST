@@ -1,8 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.4 2012/02/04 10:36:53 obache Exp $
 bin/kiwi-i18n
 bin/kiwi-ui-test
 lib/glade3/modules/kiwiwidgets.py
-${PLIST.eggfile}${PYSITELIB}/${EGG_FILE}
+${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/kiwi/__init__.py
 ${PYSITELIB}/kiwi/__init__.pyc
 ${PYSITELIB}/kiwi/__init__.pyo

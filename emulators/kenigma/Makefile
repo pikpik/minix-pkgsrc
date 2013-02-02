@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.19 2012/03/03 00:13:02 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/12/16 01:52:12 obache Exp $
 
 DISTNAME=	28107-kenigma-1.2.1
 PKGNAME=	kenigma-1.2.1
-PKGREVISION=	18
+PKGREVISION=	23
 CATEGORIES=	emulators security
 MASTER_SITES=	http://www.kde-apps.org/content/files/
 
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.kde-apps.org/content/show.php?content=28107
 COMMENT=	Replica of the German enigma code machine used in WW2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/kenigma
 
@@ -39,4 +37,5 @@ do-install:
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../lang/ruby/buildlink3.mk"
 .include "../../x11/kdebindings-ruby/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

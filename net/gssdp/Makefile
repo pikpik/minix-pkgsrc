@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:41:12 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/23 17:18:24 asau Exp $
 #
 
-DISTNAME=	gssdp-0.7.2
-PKGREVISION=	9
+DISTNAME=	gssdp-0.12.2.1
+PKGREVISION=	3
 CATEGORIES=	net
-MASTER_SITES=	http://www.gupnp.org/sources/gssdp/
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gssdp/0.12/}
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gupnp.org/
@@ -13,12 +14,13 @@ LICENSE=	gnu-lgpl-v2
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-USE_TOOLS+=	pkg-config
-PKG_DESTDIR_SUPPORT= user-destdir
+USE_TOOLS+=	pkg-config gmake
 
 PKGCONFIG_OVERRIDE+=	gssdp-1.0.pc.in
 
 .include "../../devel/glib2/buildlink3.mk"
+.include "../../devel/gobject-introspection/buildlink3.mk"
+.include "../../lang/vala018/buildlink3.mk"
 .include "../../net/libsoup24/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

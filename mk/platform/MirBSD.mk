@@ -1,4 +1,4 @@
-# $NetBSD: MirBSD.mk,v 1.4 2011/09/18 19:11:29 bsiegert Exp $
+# $NetBSD: MirBSD.mk,v 1.7 2012/06/16 20:13:06 bsiegert Exp $
 #
 # Variable definitions for the MirOS BSD operating system.
 
@@ -10,14 +10,14 @@ RSH?=		/usr/bin/false	# not delivered with MirOS any more
 SU?=		/usr/bin/su
 TYPE?=		type				# Shell builtin
 
-USERADD?=	${LOCALBASE}/sbin/useradd
-GROUPADD?=	${LOCALBASE}/sbin/groupadd
-_USER_DEPENDS=	user>=20000313:../../sysutils/user	#XXX make this work
+#USERADD?=	${LOCALBASE}/sbin/useradd
+#GROUPADD?=	${LOCALBASE}/sbin/groupadd
+#_USER_DEPENDS=	user>=20000313:../../sysutils/user	#XXX make this work
 
 CPP_PRECOMP_FLAGS?=	# unset
 DEF_UMASK?=		0022
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
-MOTIF_TYPE_DEFAULT?=	openmotif
+MOTIF_TYPE_DEFAULT?=	motif
 NOLOGIN?=		/sbin/nologin
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		/usr/bin/sudo /bin/mksh -c
@@ -40,6 +40,8 @@ _OPSYS_SHLIB_TYPE=	ELF	# shared lib type
 _PATCH_CAN_BACKUP=	yes	# native patch(1) can make backups
 _PATCH_BACKUP_ARG?=	-V simple -z 	# switch to patch(1) for backup suffix
 _USE_RPATH=		yes	# add rpath to LDFLAGS
+
+BUILDLINK_TRANSFORM+=	rm:-ldl	# libdl.a is an empty static library
 
 # flags passed to the linker to extract all symbols from static archives.
 # this is GNU ld.

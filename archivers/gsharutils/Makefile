@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2009/02/09 23:53:52 joerg Exp $
+# $NetBSD: Makefile,v 1.48 2012/09/11 19:46:55 asau Exp $
 
 DISTNAME=	sharutils-4.11.1
+PKGREVISION=	2
 PKGNAME=	g${DISTNAME}
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_GNU:=sharutils/}
@@ -11,7 +12,8 @@ COMMENT=	Allow packing and unpacking of shell archives
 LICENSE=	gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
+
+AUTO_MKDIRS=		yes
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
@@ -21,15 +23,17 @@ INFO_FILES=		yes
 USE_TOOLS+=		makeinfo msgfmt sh:run
 
 CONFIGURE_ARGS+=	--disable-uucode
-CONFIGURE_ENV+=		SH=${TOOLS_SH:Q}
+CONFIGURE_ENV+=		SH=${TOOLS_SH}
+
+CONFIGURE_ARGS+=	--program-prefix=g
 
 .include "../../mk/bsd.prefs.mk"
 
-.if defined(GNU_PROGRAM_PREFIX)
-CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX:Q}
-.endif
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
-BUILD_DEFS+=		GNU_PROGRAM_PREFIX
+post-install:
+.for f in shar unshar
+	${LN} -sf ${PREFIX}/bin/g${f} ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/${f}
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/g${f}.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/${f}.1
+.endfor
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

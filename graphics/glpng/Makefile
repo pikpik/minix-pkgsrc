@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/06/13 22:44:33 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2011/01/13 13:36:12 wiz Exp $
 #
 
 DISTNAME=	glpng-1.45.20081203
@@ -8,8 +8,6 @@ MASTER_SITES=	#
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Load PNG images directly as OpenGL textures
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_CMAKE=		yes
 INSTALLATION_DIRS+=	share/doc/glpng

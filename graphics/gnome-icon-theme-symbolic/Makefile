@@ -1,18 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2010/10/20 20:26:30 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/30 12:53:05 drochner Exp $
 #
 
-DISTNAME=		gnome-icon-theme-symbolic-2.30.0
-PKGREVISION=		2
+DISTNAME=		gnome-icon-theme-symbolic-3.6.2
 CATEGORIES=		graphics gnome
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-icon-theme-symbolic/2.30/}
-EXTRACT_SUFX=		.tar.bz2
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-icon-theme-symbolic/3.6/}
+EXTRACT_SUFX=		.tar.xz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Symbolic icons for the GNOME icon sets
 #LICENSE=		Creative Commons Attribution-Share Alike 3.0 United States License
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake pkg-config

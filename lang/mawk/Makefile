@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.23 2011/10/09 10:02:46 cheusov Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/03 12:58:34 asau Exp $
 #
 
-DISTNAME=	mawk-1.3.4-20100625
+DISTNAME=	mawk-1.3.4-20121129
 PKGNAME=	${DISTNAME:S/-20/.20/}
 CATEGORIES=	lang
 MASTER_SITES=	ftp://invisible-island.net/mawk/
@@ -12,15 +12,11 @@ HOMEPAGE=	http://www.invisible-island.net/mawk/
 COMMENT=	AWK clone by Mike Brennan
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 INSTALLATION_DIRS=	${PKGMANDIR}/man1
 
 GNU_CONFIGURE=		yes
 
 TEST_TARGET=		mawk_test fpe_test
-PKG_DESTDIR_SUPPORT=	user-destdir
-MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -30,5 +26,12 @@ CFLAGS:=	${CFLAGS:S/-ffast-math//}
 .if ${OPSYS} == "SunOS"
 MAKE_ENV+=		CPPFLAGS=
 .endif
+
+DOCDIR=			${PREFIX}/share/doc/mawk
+INSTALLATION_DIRS=	${DOCDIR}
+
+post-install:
+	set -e; cd ${WRKSRC}; \
+	${INSTALL_DATA} README CHANGES ${DESTDIR}${DOCDIR}/
 
 .include "../../mk/bsd.pkg.mk"

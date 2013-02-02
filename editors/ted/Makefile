@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2012/02/16 18:48:52 hans Exp $
+# $NetBSD: Makefile,v 1.55 2013/01/19 20:31:14 riastradh Exp $
 
 DISTNAME=	ted-2.21.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	5
+PKGREVISION=	7
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/
 
@@ -12,10 +12,9 @@ COMMENT=	X11 based WordPad-like word processor
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
-USE_TOOLS+=	gtar
+USE_TOOLS+=	bsdtar
 MAKE_JOBS_SAFE=	no
 
 WRKSRC=		${WRKDIR}/Ted-2.21
@@ -38,6 +37,8 @@ CONFIGURE_ENV+=	ac_zlib_includes="${BUILDLINK_PREFIX.zlib}/include"
 CONFIGURE_ENV+=	ac_zlib_libraries="${BUILDLINK_PREFIX.zlib}/lib"
 
 LDFLAGS.SunOS+=	-liconv
+LDFLAGS+=	-lXft
+LDFLAGS+=	-lfontconfig
 
 MAKE_FLAGS+=	CONFIGURE_OPTIONS=--x-libraries=${X11BASE}/lib\ --with-MOTIF
 
@@ -53,7 +54,7 @@ INSTALL_TARGET=	install.shared
 INSTALLATION_DIRS=	bin lib/X11/app-defaults ${AFMDIR} ${INDDIR} ${INFODIR}
 
 post-extract:
-	@cd ${WRKSRC} ; ${GTAR} xf tedPackage/TedBindist.tar
+	@cd ${WRKSRC} ; ${TOOLS_PATH.bsdtar} xf tedPackage/TedBindist.tar
 
 post-patch:
 	@cd ${WRKSRC}/Ted ; \
@@ -70,11 +71,14 @@ do-install:
 	${INSTALL_DATA}	${WRKSRC}/Ted/Ted.ad \
 		${DESTDIR}${PREFIX}/lib/X11/app-defaults/Ted
 
+.include "../../converters/libiconv/buildlink3.mk"
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
+.include "../../x11/libXft/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 

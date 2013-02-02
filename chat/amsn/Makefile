@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2011/08/01 01:16:50 dholland Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 00:02:33 asau Exp $
 #
 
 DISTNAME=		amsn-0.98.3
-PKGREVISION=	4
+PKGREVISION=	6
 CATEGORIES=		chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=amsn/}
 DISTFILES=		${DISTNAME}-src.tar.bz2
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.amsn-project.net/
 COMMENT=		Alvaro\'s MSN messenger client
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-tcl=${BUILDLINK_PREFIX.tcl}/lib
 USE_LANGUAGES=		c c++

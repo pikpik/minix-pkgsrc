@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/01/27 21:34:09 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2010/07/10 11:38:57 obache Exp $
 #
 
 DISTNAME=	rid-1.11
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.theorygroup.com/Software/RID/
 COMMENT=	Remote Intrusion Detection to track down compromised hosts
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

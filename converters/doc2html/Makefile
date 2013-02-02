@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2006/03/04 21:29:06 jlam Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 00:20:10 asau Exp $
 #
 
 DISTNAME=	doc2html
 PKGNAME=	doc2html-3.0
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	converters
 MASTER_SITES=	http://www.htdig.org/files/contrib/parsers/
 
@@ -15,8 +15,6 @@ DEPENDS+=	xlhtml-[0-9]*:../../converters/xlhtml
 DEPENDS+=	rtf2html-[0-9]*:../../converters/rtf2html
 DEPENDS+=	xpdf-[0-9]*:../../print/xpdf
 DEPENDS+=	catdoc-[0-9]*:../../textproc/catdoc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gs:run perl:run
 

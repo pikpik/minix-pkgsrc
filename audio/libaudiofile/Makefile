@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.54 2011/12/29 16:19:25 rumko Exp $
+# $NetBSD: Makefile,v 1.56 2012/05/20 13:38:20 wiz Exp $
 
-DISTNAME=	audiofile-0.3.3
+DISTNAME=	audiofile-0.3.4
 PKGNAME=	lib${DISTNAME}
 CATEGORIES=	audio
 MASTER_SITES=	http://www.68k.org/~michael/audiofile/
@@ -11,7 +11,6 @@ COMMENT=	Sound library for SGI audio file
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LANGUAGES=		c c++

@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2010/02/06 15:56:35 taca Exp $
+# $NetBSD: Makefile,v 1.10 2012/04/15 22:01:02 wiz Exp $
 
 DISTNAME=	Net_DIME-1.0.2
 CATEGORIES+=	net
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	PHP classes that implements DIME encoding
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-pear-Net_DIME-[0-9]*
 

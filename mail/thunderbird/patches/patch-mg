@@ -1,8 +1,8 @@
-$NetBSD: patch-mg,v 1.2 2010/07/12 16:49:22 tnn Exp $
+$NetBSD: patch-mg,v 1.4 2012/04/28 16:56:58 ryoon Exp $
 
 Add DragonFly support.
 
---- mozilla/security/coreconf/DragonFly.mk.orig	2012-03-09 12:27:39.000000000 +0000
+--- mozilla/security/coreconf/DragonFly.mk.orig	2012-08-31 13:21:43.000000000 +0000
 +++ mozilla/security/coreconf/DragonFly.mk
 @@ -0,0 +1,83 @@
 +#

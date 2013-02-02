@@ -1,20 +1,23 @@
-# $NetBSD: Makefile,v 1.21 2010/01/29 20:20:53 joerg Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/03 12:55:09 asau Exp $
 #
 
-DISTNAME=			aranym-0.9.10
+DISTNAME=			aranym_0.9.14.orig
+PKGNAME=			${DISTNAME:S/_/-/:S/.orig//}
 CATEGORIES=			emulators
 MASTER_SITES=			${MASTER_SITE_SOURCEFORGE:=aranym/}
-SITES.emutos-512k-0.8.5.zip=	${MASTER_SITE_SOURCEFORGE:=emutos/}
-DISTFILES=			${DEFAULT_DISTFILES} emutos-512k-0.8.5.zip
+SITES.emutos-512k-0.8.7.zip=	${MASTER_SITE_SOURCEFORGE:=emutos/}
+DISTFILES=			${DEFAULT_DISTFILES} emutos-512k-0.8.7.zip
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://aranym.sourceforge.net/
 COMMENT=		Atari Running on Any Machine
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 
-USE_TOOLS+=		gmake gzip
+AUTOCONF_REQD=		2..50
+
+USE_TOOLS+=		autoconf gmake gzip
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes
 MANCOMPRESSED=		yes
@@ -22,7 +25,7 @@ MANCOMPRESSED=		yes
 CONFIGURE_ARGS+=	--enable-fullmmu
 CONFIGURE_ARGS+=	--enable-atc=full
 
-EMUTOS_WRKSRC=		${WRKDIR}/emutos-512k-0.8.5
+EMUTOS_WRKSRC=		${WRKDIR}/emutos-512k-0.8.7
 EMUTOS_DOC_DIR=		${PREFIX}/share/doc/aranym/emutos
 EMUTOS_ROM_DIR=		${PREFIX}/share/aranym
 
@@ -48,7 +51,18 @@ CONFIGURE_ARGS+=	--enable-jit-compiler
 CONFIGURE_ARGS+=	--enable-jit-fpu
 .endif
 
+# This appears if it thinks it can use tun/tap interfaces.
+# (While NetBSD has these, the configure test rejects it.)
+PLIST_VARS+=		aratapif
+.if !empty(MACHINE_PLATFORM:MLinux-*-*) || \
+	!empty(MACHINE_PLATFORM:MDarwin-*-*)
+PLIST.aratapif=		yes
+.endif
+
 INSTALLATION_DIRS+=	${EMUTOS_DOC_DIR} ${EMUTOS_ROM_DIR}
+
+pre-configure:
+	cd ${WRKSRC} && autoconf
 
 post-install:
 	${INSTALL_DATA} ${EMUTOS_WRKSRC}/etos512k.img ${DESTDIR}${EMUTOS_ROM_DIR}
@@ -60,4 +74,5 @@ post-install:
 	${INSTALL_DATA} ${EMUTOS_WRKSRC}/doc/status.txt ${DESTDIR}${EMUTOS_DOC_DIR}
 
 .include "../../devel/SDL/buildlink3.mk"
+.include "../../math/mpfr/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

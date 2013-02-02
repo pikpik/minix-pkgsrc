@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/08/25 12:32:55 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2011/03/11 11:24:34 zafer Exp $
 #
 
 DISTNAME=	pcl-cvs-2.9.9
@@ -10,8 +10,6 @@ MASTER_SITES=	# ftp://rum.cs.yale.edu/pub/monnier/pcl-cvs/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=
 COMMENT=	Front-end to CVS for emacs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	emacs20-elib>=1.0:../../devel/emacs20-elib
 

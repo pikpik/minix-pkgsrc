@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.67 2012/02/06 12:42:32 wiz Exp $
+# $NetBSD: Makefile,v 1.72 2012/10/08 23:02:41 adam Exp $
 #
 
 DISTNAME=	zenity-2.32.1
-PKGREVISION=	5
+PKGREVISION=	9
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/zenity/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/
 COMMENT=	Display GNOME dialogs from the command line
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

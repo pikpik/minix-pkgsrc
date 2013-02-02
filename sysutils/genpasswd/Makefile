@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/10/29 21:34:12 tnn Exp $
+# $NetBSD: Makefile,v 1.6 2011/03/18 20:40:08 zafer Exp $
 #
 
 DISTNAME=		genpasswd-1.5
@@ -7,8 +7,6 @@ MASTER_SITES=		# ftp://ftp.gw.com/pub/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Random password generator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 INSTALL_TARGET=		install install.man		\

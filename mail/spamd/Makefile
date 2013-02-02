@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/06/26 20:59:51 peter Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/06 23:27:15 joerg Exp $
 
 DISTNAME=		spamd-20060330
 PKGREVISION=		1
@@ -10,8 +10,6 @@ HOMEPAGE=		http://www.benzedrine.cx/relaydb.html
 COMMENT=		OpenBSD spam deferral daemon
 
 ONLY_FOR_PLATFORM=	NetBSD-*-* OpenBSD-*-* FreeBSD-*-* DragonFly-*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 

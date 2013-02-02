@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.49 2012/02/06 12:41:09 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2012/10/23 17:18:09 asau Exp $
 
 DISTNAME=	aMule-2.2.6
 PKGNAME=	${DISTNAME:S/aMule/amule/}
-PKGREVISION=	8
+PKGREVISION=	15
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=amule/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=	tripledes@eslack.org
 HOMEPAGE=	http://www.amule.org/
 COMMENT=	Another Emule P2P client
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		xmule-[0-9]*
 

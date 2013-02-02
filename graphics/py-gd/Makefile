@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2011/11/01 06:01:43 sbd Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/06 14:11:16 asau Exp $
 
 DISTNAME=	gdmodule.c
 PKGNAME=	${PYPKGPREFIX}-gd-1.3
-PKGREVISION=	14
+PKGREVISION=	15
 CATEGORIES=	graphics python
 MASTER_SITES=	# on ftp.NetBSD.org
 EXTRACT_SUFX=
@@ -11,9 +11,6 @@ MAINTAINER=	darcy@NetBSD.org
 HOMEPAGE=	http://newcenturycomputers.net/projects/gdmodule.html
 COMMENT=	Python interface to gd graphics library
 LICENSE=	original-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-PYTHON_VERSIONS_ACCEPTED=   27 26 25
 
 WRKSRC=		${WRKDIR}
 BUILD_TARGET=	default

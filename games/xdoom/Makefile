@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.47 2010/02/22 22:07:48 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/06 11:55:00 asau Exp $
 
 DISTNAME=	linuxdoom-1.10
 PKGNAME=	xdoom-1.10
@@ -15,8 +15,6 @@ COMMENT=	3D shoot-em-up for 8-bit X11 displays
 LICENSE=	xdoom-license
 
 DEPENDS+=	doom1-[0-9]*:../../games/doom1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_X11BASE=	yes
@@ -54,6 +52,5 @@ do-install:
 		${DESTDIR}${PREFIX}/bin/sndserver
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

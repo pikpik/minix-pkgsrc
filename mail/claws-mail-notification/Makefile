@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.26 2012/02/06 12:40:48 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/08 12:19:05 asau Exp $
 #
 
-DISTNAME=	notification_plugin-0.28
-PKGNAME=	claws-mail-notification-0.28
-PKGREVISION=	3
+DISTNAME=	notification_plugin-0.30
+PKGNAME=	claws-mail-notification-0.30
+PKGREVISION=	4
 CATEGORIES=	mail
 MASTER_SITES=	http://claws-mail.org/downloads/plugins/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Provides various ways to notify the user of new and unread email
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	claws-mail-${CLAWS_VERSION}{,nb[0-9]*}:../../mail/claws-mail
 

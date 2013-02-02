@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2007/02/22 19:30:06 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2009/03/21 09:44:19 tnn Exp $
 #
 
 DISTNAME=	zidrav4unix-1.2.0
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=zidrav/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/zidrav
 COMMENT=	File corruption detection and repair program
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 BUILD_TARGET=	zidrav

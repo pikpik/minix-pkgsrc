@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:41:14 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/23 17:18:31 asau Exp $
 
 DISTNAME=	kmldonkey-0.11
-PKGREVISION=	10
+PKGREVISION=	14
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_KDE:=apps/KDE3.x/network/}
 
 MAINTAINER=	gallegos@csxxi.net.mx
 HOMEPAGE=	http://www.kmldonkey.org/
 COMMENT=	KDE3 Frontend for MLDonkey
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	YES

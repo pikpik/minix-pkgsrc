@@ -1,14 +1,10 @@
-$NetBSD: distinfo,v 1.6 2011/11/20 01:16:23 dholland Exp $
+$NetBSD: distinfo,v 1.15 2012/12/14 19:49:42 drochner Exp $
 
-SHA1 (darktable-1.0.tar.gz) = 3142beea51d5d5ae6f0089a11cf1b342a48a69f7
-RMD160 (darktable-1.0.tar.gz) = ef787b4b3276594e6e1e51272abaa374ea494aeb
-Size (darktable-1.0.tar.gz) = 2535774 bytes
+SHA1 (darktable-1.1.2.tar.gz) = 5f3e97f176543d2dc2222fd98fba385e98aed549
+RMD160 (darktable-1.1.2.tar.gz) = 8c4594334f884866b789fedf87093f232c3fb4b4
+Size (darktable-1.1.2.tar.gz) = 3432009 bytes
 SHA1 (patch-cmake_modules_FindGTK2.cmake) = de1273594801ab82da31b624845e0b36a77b53b3
-SHA1 (patch-data_CMakeLists.txt) = f40f99c07ccbd3d025e7865cf7647c7b218c7d56
-SHA1 (patch-doc_CMakeLists.txt) = 7b7af1dda752725d5b42ba4395de1cd5390c64fd
-SHA1 (patch-src_CMakeLists.txt) = 51a332f2e66b5f00f37af45b74f994f90da2d03f
-SHA1 (patch-src_LibRaw_libraw_libraw__alloc.h) = 1217d6bf0b14b538d39e9bfe9fa70e2f7bffbfc5
-SHA1 (patch-src_control_jobs_control__jobs.c) = 77bfbc6450d848d720bfabcef66b7a0199c9d67c
-SHA1 (patch-src_develop_blend.c) = 7411edf0903bbed7b4afcb82bc5c650100f23755
-SHA1 (patch-src_rawspeed_RawSpeed_Common.h) = c7dfc4e65ea46e7318d3d5ebdab6dcb5491c1c48
-SHA1 (patch-tools_create__preferences.sh.in) = f66cf9b653156e521a053b499abbde07a30852a3
+SHA1 (patch-src_LibRaw_libraw_libraw__alloc.h) = 8227a7180383cd4379313b07ff964bb7fb9ce694
+SHA1 (patch-src_common_imageio__rgbe.c) = 5c396754d6dbb7390062e78afde315ee293215d6
+SHA1 (patch-src_develop_blend.c) = d847c5d6a9f2c0e914d1fced8eb76ce79f127f70
+SHA1 (patch-src_iop_lens.c) = 28b5462311f778184143152bdef4e59ee18a6a3f

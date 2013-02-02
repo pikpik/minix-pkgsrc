@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.4 2010/04/18 11:27:12 zafer Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/15 15:03:24 obache Exp $
 
 DISTNAME=	barnyard-0.2.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=barnyard/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.snort.org/
 COMMENT=	Fast output system for snort
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 

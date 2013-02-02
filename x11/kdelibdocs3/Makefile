@@ -1,17 +1,16 @@
-# $NetBSD: Makefile,v 1.64 2012/02/06 12:42:17 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2012/10/29 05:06:31 asau Exp $
 
 DISTNAME=	kdelibs-${_KDE_VERSION}
 PKGNAME=	kdelibdocs-${_KDE_VERSION}
-PKGREVISION=	11
+PKGREVISION=	15
 CATEGORIES=	x11 devel
+LICENSE=	gnu-gpl-v2
 
 COMMENT=	KDE library documentation
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
-BUILD_DEPENDS+=		doxygen>=1.4.7:../../devel/doxygen
+BUILD_DEPENDS+=		doxygen>=1.8.1.1:../../devel/doxygen
 BUILD_DEPENDS+=		graphviz-[0-9]*:../../graphics/graphviz
 BUILD_DEPENDS+=		qt3-docs>=3.1.1:../../x11/qt3-docs
 

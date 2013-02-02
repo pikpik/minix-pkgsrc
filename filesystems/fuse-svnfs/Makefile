@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2011/11/27 05:43:25 sbd Exp $
+# $NetBSD: Makefile,v 1.16 2012/12/16 01:52:13 obache Exp $
 #
 
 DISTNAME=	svnfs-0.4
-PKGREVISION=	8
+PKGREVISION=	12
 CATEGORIES=	filesystems
 MASTER_SITES=	http://www.jmadden.eu/wp-content/uploads/svnfs/
 EXTRACT_SUFX=	.tgz
@@ -12,10 +12,10 @@ HOMEPAGE=	http://www.jmadden.eu/
 COMMENT=	FUSE filesystem for accessing SVN repositories
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	perl
+
+LDFLAGS.DragonFly+=	-lsvn_subr-1
 
 REPLACE_PERL=	svn-config.pl
 

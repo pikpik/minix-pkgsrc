@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.133 2011/11/26 04:40:23 sbd Exp $
+# $NetBSD: Makefile,v 1.137 2012/10/23 18:17:00 asau Exp $
 #
 
-DISTNAME=		sudo-1.7.8p1
+DISTNAME=		sudo-1.7.9p1
 PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		http://www.sudo.ws/dist/ \
@@ -21,7 +21,6 @@ USE_LIBTOOL=		yes
 OWN_DIRS+=		${VARBASE}/run
 GNU_CONFIGURE=		yes
 BUILD_DEFS+=		VARBASE
-PKG_DESTDIR_SUPPORT=	user-destdir
 PLIST_VARS+=		ldap
 
 .include "../../mk/bsd.prefs.mk"

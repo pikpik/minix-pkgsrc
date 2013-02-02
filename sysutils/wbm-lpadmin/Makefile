@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/04/21 05:23:02 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 19:51:32 asau Exp $
 
 WBM_NAME=	lpadmin
+PKGREVISION=	1
 
 COMMENT=	Webmin module to manage local and remote printers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

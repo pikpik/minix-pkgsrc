@@ -1,29 +1,29 @@
-$NetBSD$
+$NetBSD: patch-mozilla_ipc_chromium_src_base_process__util__bsd.cc,v 1.5 2012/09/03 15:47:49 marino Exp $
 
---- mozilla/ipc/chromium/src/base/process_util_bsd.cc.orig	2012-03-09 12:27:38.000000000 +0000
+--- mozilla/ipc/chromium/src/base/process_util_bsd.cc.orig	2012-11-22 19:23:30.000000000 +0000
 +++ mozilla/ipc/chromium/src/base/process_util_bsd.cc
-@@ -0,0 +1,298 @@
+@@ -0,0 +1,367 @@
 +// Copyright (c) 2008 The Chromium Authors. All rights reserved.
 +// Use of this source code is governed by a BSD-style license that can be
 +// found in the LICENSE file.
 +
 +// derived from process_util_linux.cc and process_util_mac.cc
 +
-+// TODO: - add code for FreeBSD/DragonFly/MirBSD (?) to use kvm_getprocx
-+
 +#include "base/process_util.h"
++
++#include <sys/param.h>
++#include <sys/sysctl.h>
++#include <sys/wait.h>
++#if defined(OS_DRAGONFLY) || defined(OS_FREEBSD)
++#include <sys/user.h>
++#endif
 +
 +#include <ctype.h>
 +#include <fcntl.h>
-+#include <unistd.h>
-+#include <string>
 +#include <kvm.h>
-+#include <sys/sysctl.h>
-+#include <sys/types.h>
-+#include <sys/wait.h>
-+#if defined(OS_DRAGONFLY)
-+#include <sys/user.h>
-+#endif
++#include <unistd.h>
++
++#include <string>
 +
 +#include "base/debug_util.h"
 +#include "base/eintr_wrapper.h"
@@ -32,11 +32,31 @@ $NetBSD$
 +#include "base/string_tokenizer.h"
 +#include "base/string_util.h"
 +
-+#ifdef __NetBSD__
-+#include <sys/param.h>
-+#if __NetBSD_Version__ >= 600000000
++#if (defined(_POSIX_SPAWN) && _POSIX_SPAWN > 0) \
++  || (defined(OS_NETBSD) && __NetBSD_Version__ >= 599006500)
 +#define HAVE_POSIX_SPAWN	1
 +#endif
++
++/*
++ * On platforms that are not gonk based, we fall back to an arbitrary
++ * UID. This is generally the UID for user `nobody', albeit it is not
++ * always the case.
++ */
++
++#if defined(OS_NETBSD) || defined(OS_OPENBSD)
++# define CHILD_UNPRIVILEGED_UID 32767
++# define CHILD_UNPRIVILEGED_GID 32767
++#else
++# define CHILD_UNPRIVILEGED_UID 65534
++# define CHILD_UNPRIVILEGED_GID 65534
++#endif
++
++#ifndef __dso_public
++# ifdef __exported
++#  define __dso_public	__exported
++# else
++#  define __dso_public	__attribute__((__visibility__("default")))
++# endif
 +#endif
 +
 +#ifdef HAVE_POSIX_SPAWN
@@ -77,6 +97,17 @@ $NetBSD$
 +bool LaunchApp(const std::vector<std::string>& argv,
 +               const file_handle_mapping_vector& fds_to_remap,
 +               const environment_map& env_vars_to_set,
++               bool wait, ProcessHandle* process_handle,
++               ProcessArchitecture arch) {
++  return LaunchApp(argv, fds_to_remap, env_vars_to_set,
++                   SAME_PRIVILEGES_AS_PARENT,
++                   wait, process_handle);
++}
++
++bool LaunchApp(const std::vector<std::string>& argv,
++               const file_handle_mapping_vector& fds_to_remap,
++               const environment_map& env_vars_to_set,
++               ChildPrivileges privs,
 +               bool wait, ProcessHandle* process_handle,
 +               ProcessArchitecture arch) {
 +  bool retval = true;
@@ -193,6 +224,17 @@ $NetBSD$
 +               const environment_map& env_vars_to_set,
 +               bool wait, ProcessHandle* process_handle,
 +               ProcessArchitecture arch) {
++  return LaunchApp(argv, fds_to_remap, env_vars_to_set,
++                   SAME_PRIVILEGES_AS_PARENT,
++                   wait, process_handle);
++}
++
++bool LaunchApp(const std::vector<std::string>& argv,
++               const file_handle_mapping_vector& fds_to_remap,
++               const environment_map& env_vars_to_set,
++               ChildPrivileges privs,
++               bool wait, ProcessHandle* process_handle,
++               ProcessArchitecture arch) {
 +  scoped_array<char*> argv_cstr(new char*[argv.size() + 1]);
 +  // Illegal to allocate memory after fork and before execvp
 +  InjectiveMultimap fd_shuffle1, fd_shuffle2;
@@ -215,19 +257,32 @@ $NetBSD$
 +
 +    CloseSuperfluousFds(fd_shuffle2);
 +
++    for (size_t i = 0; i < argv.size(); i++)
++      argv_cstr[i] = const_cast<char*>(argv[i].c_str());
++    argv_cstr[argv.size()] = NULL;
++
++    if (privs == UNPRIVILEGED) {
++      if (setgid(CHILD_UNPRIVILEGED_GID) != 0) {
++        DLOG(ERROR) << "FAILED TO setgid() CHILD PROCESS, path: " << argv_cstr[0];
++        _exit(127);
++      }
++      if (setuid(CHILD_UNPRIVILEGED_UID) != 0) {
++        DLOG(ERROR) << "FAILED TO setuid() CHILD PROCESS, path: " << argv_cstr[0];
++        _exit(127);
++      }
++      if (chdir("/") != 0)
++        gProcessLog.print("==> could not chdir()\n");
++    }
++
 +    for (environment_map::const_iterator it = env_vars_to_set.begin();
 +         it != env_vars_to_set.end(); ++it) {
 +      if (setenv(it->first.c_str(), it->second.c_str(), 1/*overwrite*/))
 +        _exit(127);
 +    }
-+
-+    for (size_t i = 0; i < argv.size(); i++)
-+      argv_cstr[i] = const_cast<char*>(argv[i].c_str());
-+    argv_cstr[argv.size()] = NULL;
-+    execvp(argv_cstr[0], argv_cstr.get());
++    execv(argv_cstr[0], argv_cstr.get());
 +    // if we get here, we're in serious trouble and should complain loudly
 +    DLOG(ERROR) << "FAILED TO exec() CHILD PROCESS, path: " << argv_cstr[0];
-+    exit(127);
++    _exit(127);
 +  } else {
 +    gProcessLog.print("==> process %d launched child process %d\n",
 +                      GetCurrentProcId(), pid);
@@ -257,11 +312,12 @@ $NetBSD$
 +  kvm_t *kvm;
 +  std::string exe(WideToASCII(executable_name));
 +
-+#if defined(OS_DRAGONFLY)
++#if defined(OS_DRAGONFLY) || defined(OS_FREEBSD)
 +  kvm  = kvm_open(NULL, NULL, NULL, O_RDONLY, NULL);
 +  struct kinfo_proc* procs = kvm_getprocs(kvm, KERN_PROC_UID, getuid(), &numEntries);
 +  if (procs != NULL && numEntries > 0) {
 +    for (int i = 0; i < numEntries; i++) {
++#  if defined(OS_DRAGONFLY)
 +    if (exe != procs[i].kp_comm) continue;
 +      if (filter && !filter->Includes(procs[i].kp_pid, procs[i].kp_ppid)) continue;
 +      ProcessEntry e;
@@ -269,9 +325,22 @@ $NetBSD$
 +      e.ppid = procs[i].kp_ppid;
 +      strlcpy(e.szExeFile, procs[i].kp_comm, sizeof e.szExeFile);
 +      content.push_back(e);
++#  elif defined(OS_FREEBSD)
++    if (exe != procs[i].ki_comm) continue;
++      if (filter && !filter->Includes(procs[i].ki_pid, procs[i].ki_ppid)) continue;
++      ProcessEntry e;
++      e.pid = procs[i].ki_pid;
++      e.ppid = procs[i].ki_ppid;
++      strlcpy(e.szExeFile, procs[i].ki_comm, sizeof e.szExeFile);
++      content.push_back(e);
++#  endif
 +#else
 +  kvm  = kvm_open(NULL, NULL, NULL, KVM_NO_FILES, NULL);
++#if defined(OS_OPENBSD)
++  struct kinfo_proc* procs = kvm_getprocs(kvm, KERN_PROC_UID, getuid(), sizeof(struct kinfo_proc), &numEntries);
++#else
 +  struct kinfo_proc2* procs = kvm_getproc2(kvm, KERN_PROC_UID, getuid(), sizeof(struct kinfo_proc2), &numEntries);
++#endif
 +  if (procs != NULL && numEntries > 0) {
 +    for (int i = 0; i < numEntries; i++) {
 +    if (exe != procs[i].p_comm) continue;

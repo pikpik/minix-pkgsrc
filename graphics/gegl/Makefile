@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.26 2012/02/14 14:48:07 hans Exp $
+# $NetBSD: Makefile,v 1.41 2012/11/06 14:03:00 drochner Exp $
 
-DISTNAME=	gegl-0.1.8
-PKGREVISION=	2
+DISTNAME=	gegl-0.2.0
+PKGREVISION=	8
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.gimp.org/pub/gegl/0.1/
+MASTER_SITES=	ftp://ftp.gimp.org/pub/gegl/${PKGVERSION_NOREV:R}/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	adam@NetBSD.org
@@ -11,11 +11,9 @@ HOMEPAGE=	http://gegl.org/
 COMMENT=	Graph based image processing framework
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
-USE_TOOLS+=		pkg-config gmake
+USE_TOOLS+=		gmake pkg-config intltool msgfmt
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--disable-docs
 CONFIGURE_ENV+=		ac_cv_path_ASCIIDOC=no

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/10/11 09:31:54 uebayasi Exp $
+# $NetBSD: Makefile,v 1.13 2012/04/15 22:00:58 wiz Exp $
 #
 
 DISTNAME=	zenirc-2.112
@@ -7,11 +7,9 @@ PKGREVISION=	2
 CATEGORIES=	chat
 MASTER_SITES=	ftp://ftp.splode.com/pub/zenirc/
 
-MAINTAINER=	thorpej@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.splode.com/~friedman/software/emacs-lisp/zenirc/
 COMMENT=	IRC client for Emacs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 CONFIGURE_HAS_MANDIR=	NO

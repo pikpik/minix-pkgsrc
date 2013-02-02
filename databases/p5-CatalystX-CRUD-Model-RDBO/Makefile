@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2010/08/21 16:32:53 seb Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/02 21:25:25 asau Exp $
 
 DISTNAME=	CatalystX-CRUD-Model-RDBO-0.22
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=CatalystX/}
 
@@ -21,8 +21,6 @@ DEPENDS+=	p5-Sort-SQL>=0.05:../../databases/p5-Sort-SQL
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/CatalystX/CRUD/Model/RDBO/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

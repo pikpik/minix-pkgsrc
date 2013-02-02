@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.42 2012/02/09 21:44:27 sbd Exp $
+# $NetBSD: Makefile,v 1.47 2012/12/16 01:52:13 obache Exp $
 #
 
 DISTNAME=		boson-all-0.8
 PKGNAME=		${DISTNAME:S/-all//}
-PKGREVISION=		29
+PKGREVISION=		33
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=boson/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://boson.eu.org/
 COMMENT=		OpenGL real-time strategy game for KDE 3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 SET_LIBDIR=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/18 09:09:02 obache Exp $
+# $NetBSD: Makefile,v 1.2 2011/06/18 02:45:13 obache Exp $
 #
 
 DISTNAME=	gigabase-3.82
@@ -9,8 +9,6 @@ MAINTAINER=	gpr@mail.ru
 HOMEPAGE=	http://garret.ru/gigabase.html
 COMMENT=	Object-Relational Database Management System
 #LICENSE=	mit # like in the bottom of GigaBASE.htm
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/gigabase
 GNU_CONFIGURE=		yes

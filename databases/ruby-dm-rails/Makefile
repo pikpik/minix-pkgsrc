@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/12/17 17:35:27 taca Exp $
+# $NetBSD: Makefile,v 1.2 2012/03/20 10:17:02 taca Exp $
 
 DISTNAME=	dm-rails-1.2.1
+PKGREVISION=	1
 CATEGORIES=	databases
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

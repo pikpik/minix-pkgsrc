@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.6 2012/01/17 21:43:21 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 10:39:13 adam Exp $
 
-DISTNAME=	clamav-0.97.3
+DISTNAME=	clamav-0.97.6
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=clamav/}
 
@@ -10,7 +10,6 @@ COMMENT=	Anti-virus toolkit
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
@@ -24,7 +23,7 @@ CONFIGURE_ARGS+=	--with-ltdl-include=${BUILDLINK_PREFIX.libltdl}/include
 CONFIGURE_ARGS+=	--with-ltdl-lib=${BUILDLINK_PREFIX.libltdl}/lib
 CONFIGURE_ARGS+=	--with-zlib=${BUILDLINK_PREFIX.zlib}
 # pkgsrc enforces a "secure" version of zlib, so don't let this check
-# bomb the build.
+# bomb the build
 CONFIGURE_ARGS+=	--disable-zlib-vcheck
 
 CHECK_PORTABILITY_SKIP=	contrib/* unit_tests/*
@@ -58,10 +57,6 @@ CONF_FILES=		# empty
 CONF_FILES_PERMS=	# empty
 .for i in clamd.conf freshclam.conf
 CONF_FILES+=		${EGDIR}/${i} ${PKG_SYSCONFDIR}/${i}
-.endfor
-.for i in daily.cvd main.cvd
-CONF_FILES_PERMS+=	${EGDIR}/${i} ${CLAMAV_DBDIR}/${i}	\
-			${CLAMAV_USER} ${CLAMAV_GROUP} 0664
 .endfor
 
 INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} CFGINST=${EGDIR} DBINST=${EGDIR}

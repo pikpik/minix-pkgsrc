@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2012/01/09 20:54:28 cheusov Exp $
+# $NetBSD: Makefile,v 1.25 2012/11/06 20:48:46 cheusov Exp $
 
-DISTNAME=	pkg_summary-utils-0.57.0
+DISTNAME=	pkg_summary-utils-0.60.0
 CATEGORIES=	pkgtools
 MASTER_SITES=	ftp://ftp.NetBSD.org/pub/NetBSD/misc/cheusov/psu/ \
 		http://www.mova.org/~cheusov/pub/pkg_summary-utils/
@@ -16,7 +16,7 @@ DEPENDS+=	digest-[0-9]*:../../pkgtools/digest
 
 BUILD_DEPENDS+=	mk-configure>=0.20.0:../../devel/mk-configure
 
-CONFLICTS+=	paexec<0.15.0
+CONFLICTS+=	paexec<0.17.0
 CONFLICTS+=	awk-pkgsrc-dewey-[0-9]*
 CONFLICTS+=	pkg_src_summary-[0-9]*
 CONFLICTS+=	pkg_cmp_summary-[0-9]*
@@ -34,7 +34,6 @@ USE_LANGUAGES=		#empty
 USE_TOOLS+=		gzip:run
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EGDIR=		${PREFIX}/share/examples/pkg_summary-utils
 
@@ -47,7 +46,8 @@ REPLACE_INTERPRETER+=	runawk
 REPLACE.runawk.old=	.*runawk
 REPLACE.runawk.new=	${PREFIX}/bin/runawk
 REPLACE_FILES.runawk=	get_processed_pkgs.in pkg_*.in XB2bin_summary.in \
-	direct_deps.in summary2multi_variants.in enrich_summary.in
+	direct_deps.in summary2multi_variants.in enrich_summary.in \
+	makefiles2deps.in
 
 MAKE_ENV+=	AWKMODDIR=${PREFIX}/share/runawk
 MAKE_ENV+=	EGDIR=${EGDIR}
@@ -57,6 +57,7 @@ MAKE_ENV+=	DISTDIR=${DISTDIR}
 MAKE_ENV+=	PKGSRCDIR=${PKGSRCDIR}
 MAKE_ENV+=	PKG_SUFX=${PKG_SUFX}
 MAKE_ENV+=	PKG_INFO_CMD=${PKG_INFO:Q}
+MAKE_ENV+=	PKG_DBDIR=${PKG_DBDIR}
 
 .include "../../devel/mk-configure/mk-c.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2012/02/06 12:42:24 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/08 23:02:38 adam Exp $
 
 .include "../../x11/qt4-libs/Makefile.common"
 
 PKGNAME=	qt4-pgsql-${QTVERSION}
-PKGREVISION=	2
 COMMENT=	QT postgresql driver
 
 CONFIGURE_ARGS+=	-I${QTDIR}/include

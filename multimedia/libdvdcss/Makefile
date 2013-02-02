@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.23 2011/02/28 14:52:57 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/08/10 15:44:42 drochner Exp $
 #
 # In order to ensure compliance with U.S. and international law, please
 # do not modify this file to provide pointers to the source or homepage
 # for this software or submit any PRs telling us the contents of the
 # HOMEPAGE or MASTER_SITES definitions in this Makefile.
 
-DISTNAME=	libdvdcss-1.2.11
+DISTNAME=	libdvdcss-1.2.12
 CATEGORIES=	multimedia
 MASTER_SITES=	${LIBDVDCSS_MASTER_SITES}/${DISTNAME:S/libdvdcss-//}/
 EXTRACT_SUFX=	.tar.bz2
@@ -22,7 +22,6 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKGCONFIG_OVERRIDE=	src/libdvdcss.pc.in
 
 GNU_CONFIGURE=		YES

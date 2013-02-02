@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:55:25 wiz Exp $
 
 DISTNAME=	POE-Component-Syndicator-0.06
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=POE/}
 
@@ -15,8 +16,6 @@ DEPENDS+=	p5-Object-Pluggable>=1.29:../../devel/p5-Object-Pluggable
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST= auto/POE/Component/Syndicator/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,20 +1,18 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.7 2012/10/17 03:11:44 asau Exp $
 
-DISTNAME=	hwloc-1.4
+DISTNAME=	hwloc-1.5
 CATEGORIES=	parallel
-MASTER_SITES=	http://www.open-mpi.org/software/hwloc/v1.4/downloads/
+MASTER_SITES=	http://www.open-mpi.org/software/hwloc/v1.5/downloads/
 
 MAINTAINER=	asau@inbox.ru
 HOMEPAGE=	http://www.open-mpi.org/projects/hwloc/
 COMMENT=	Portable Hardware Locality
-LICENCE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	modified-bsd
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS=	pkg-config
-USE_TOOLS+=	aclocal automake autoconf
+USE_TOOLS+=	aclocal automake autoconf autoreconf
 
 CONFIGURE_ARGS+=	--enable-debug --enable-picky
 

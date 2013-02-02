@@ -1,0 +1,15 @@
+$NetBSD$
+
+- Use standard headers.
+
+--- sn_cfgfile.c~	1997-04-18 09:33:58.000000000 +0000
++++ sn_cfgfile.c
+@@ -3,6 +3,8 @@
+ 
+ #include "sn_config.h"
+ #include <stdio.h>
++#include <stdlib.h>
++#include <string.h>
+ #include "sn_defines.h"
+ #include "sn_structs.h"
+ #include "sn_cfgfile.h"           

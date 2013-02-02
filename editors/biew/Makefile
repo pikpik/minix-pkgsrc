@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2006/09/09 02:41:58 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/04/13 22:47:47 hans Exp $
 #
 
 DISTNAME=	biew562
@@ -14,13 +14,14 @@ COMMENT=	Binary viewer/editor
 
 ONLY_FOR_PLATFORM=	*-*-i386
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=	gmake
 MAKE_FILE=	makefile
 WRKSRC=		${WRKDIR}/biew-562
 
 INSTALLATION_DIRS=	bin
+
+LIBS.SunOS+=	-lrt
+MAKE_ENV+=	OS_LIBS=${LIBS:Q}
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/biew

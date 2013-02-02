@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2011/07/08 11:44:02 drochner Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/03 21:54:27 wiz Exp $
 
 DISTNAME=	autogen-5.12
+PKGREVISION=	2
 CATEGORIES=	devel
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=autogen/}
 MASTER_SITES=	ftp://ftp.gnu.org/gnu/autogen/rel5.12/
@@ -10,8 +11,6 @@ MAINTAINER=	kristerw@NetBSD.org
 HOMEPAGE=	http://autogen.sourceforge.net/
 COMMENT=	The Automated Text and Program Generation Tool
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake makeinfo perl:run
 GNU_CONFIGURE=		yes

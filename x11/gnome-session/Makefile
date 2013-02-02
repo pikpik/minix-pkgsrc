@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.131 2012/03/03 00:14:09 wiz Exp $
+# $NetBSD: Makefile,v 1.143 2012/12/15 10:36:34 ryoon Exp $
 #
 
 DISTNAME=		gnome-session-2.26.2
-PKGREVISION=		16
+PKGREVISION=		27
 CATEGORIES=		x11 gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-session/2.26/}
 SITES.gnome-splash-2.16.0.png=	${MASTER_SITE_LOCAL:=gnome-splash/}
@@ -14,8 +14,6 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		GNOME2 session management utilities
 
 BUILD_DEPENDS+=		xmlto-[0-9]*:../../textproc/xmlto
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		gnome-core<1.4.2nb4
 
@@ -66,4 +64,5 @@ BUILDLINK_API_DEPENDS.gtk2+=	gtk2+>=2.11.1
 .include "../../x11/libXau/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
 .include "../../x11/startup-notification/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

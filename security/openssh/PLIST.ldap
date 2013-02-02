@@ -1,0 +1,5 @@
+@comment $NetBSD$
+share/doc/openssh/README.lpk
+share/examples/openssh/lpk-user-example.txt
+share/examples/openssh/openssh-lpk_openldap.schema
+share/examples/openssh/openssh-lpk_sun.schema

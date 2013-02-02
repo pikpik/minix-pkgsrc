@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2011/08/06 13:08:26 adam Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 00:02:41 asau Exp $
 
 DISTNAME=	Net-AOLIM-1.61
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	chat perl5
 MASTER_SITES=	${HOMEPAGE}
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.phonon.net/pub/Net-AOLIM/
 COMMENT=	Perl5 module for connecting to AOL IM (TOC protocol)
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/Net-AOLIM
 PERL5_PACKLIST=	auto/Net/AOLIM/.packlist

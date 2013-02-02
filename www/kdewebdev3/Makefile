@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.38 2012/02/06 12:41:52 wiz Exp $
+# $NetBSD: Makefile,v 1.45 2012/12/16 01:52:38 obache Exp $
 
 DISTNAME=	kdewebdev-${_KDE_VERSION}
-PKGREVISION=	12
+PKGREVISION=	18
 CATEGORIES=	www
 COMMENT=	HTML editor and tools suitable for experienced web developers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
@@ -24,4 +22,5 @@ SUBST_SED.xmlpath=	-e s:/usr/include/libxml2:${PREFIX}/include/libxml2:
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

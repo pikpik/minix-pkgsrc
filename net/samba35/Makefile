@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2012/02/01 08:32:01 sbd Exp $
+# $NetBSD: Makefile,v 1.25 2012/12/17 12:01:34 taca Exp $
 
 .include "../../net/samba/Makefile.mirrors"
 
@@ -11,10 +11,8 @@ HOMEPAGE=	http://www.samba.org/
 COMMENT=	SMB/CIFS protocol server suite
 LICENSE=	gnu-gpl-v3
 
-VERSION=	3.5.13
+VERSION=	3.5.21
 CONFLICTS+=	ja-samba-[0-9]* pam-smbpass-[0-9]* tdb-[0-9]* winbind-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 FILESDIR=		${PKGDIR}/../../net/samba/files
 DESCR_SRC=		${PKGDIR}/../../net/samba/DESCR
@@ -101,13 +99,6 @@ MAKEFLAGS+=	PWD_MKDB=${PWD_MKDB:Q}
 .endif
 FILES_SUBST+=	MKTEMP=${MKTEMP:Q}
 FILES_SUBST+=	PWD_MKDB=${PWD_MKDB:Q}
-
-.if ${OPSYS} == "NetBSD"
-.  if !empty(PKG_OPTIONS:Mwinbind)
-# Install a /usr/lib/nss_winbind.so.0 -> ${PREFIX}/lib/nss_winbind.so.0 symlink
-INSTALL_TEMPLATES+=	INSTALL.nss_winbind
-.  endif
-.endif
 
 INSTALLATION_DIRS+=	${DOCDIR} ${EGDIR}
 

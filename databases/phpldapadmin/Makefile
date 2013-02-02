@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2011/06/17 15:40:33 taca Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/02 21:25:40 asau Exp $
 
 DISTNAME=	phpldapadmin-${VERSION}
+PKGREVISION=	1
 CATEGORIES=	databases www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=phpldapadmin/}
 EXTRACT_SUFX=	.tgz
@@ -9,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://phpldapadmin.sourceforge.net/
 COMMENT=	Set of PHP-scripts to administer an LDAP directory over the WWW
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../lang/php/phpversion.mk"
@@ -50,8 +49,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/index.php \
 		${DESTDIR}${PREFIX}/share/phpldapadmin
 .for i in ${PAX_DIRS}
-	cd ${WRKSRC}/${i:Q} && pax \
-		-rwppm . ${DESTDIR}${PREFIX}/share/phpldapadmin/${i:Q}
+	cd ${WRKSRC}/${i:Q} && ${FIND} . -type f \! -name '*.orig' -print | \
+		 pax -rwppm  ${DESTDIR}${PREFIX}/share/phpldapadmin/${i:Q}
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/INSTALL \
 		${DESTDIR}${PREFIX}/share/doc/phpldapadmin

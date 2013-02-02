@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.3 2007/10/17 10:03:59 rillig Exp $
+$NetBSD: distinfo,v 1.5 2012/04/15 05:54:57 markd Exp $
 
-SHA1 (kstars-4.8.0.tar.bz2) = 249f80cdd5198c5c22ce75cea4d1718d5865a3c9
-RMD160 (kstars-4.8.0.tar.bz2) = 6dfb58d2cb8827a57370159ecd0213bbcc719c8b
-Size (kstars-4.8.0.tar.bz2) = 13256459 bytes
+SHA1 (kstars-4.8.4.tar.xz) = 579cec66cfb172258d2967872a2b9c32d4514c75
+RMD160 (kstars-4.8.4.tar.xz) = 2e93c0c81515293cca7a13353475de58a73cf642
+Size (kstars-4.8.4.tar.xz) = 12345052 bytes

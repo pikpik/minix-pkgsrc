@@ -1,5 +1,6 @@
-$NetBSD: distinfo,v 1.1.1.1 2006/05/02 01:00:19 jlam Exp $
+$NetBSD: distinfo,v 1.2 2009/07/19 10:06:28 sno Exp $
 
 SHA1 (XML-AutoWriter-0.4.tar.gz) = 9ee99f5e168cbe39109e19136fd3fbdf0fb4910a
 RMD160 (XML-AutoWriter-0.4.tar.gz) = dca751c46fbb9726c9d58aa9179784b314b0c41c
 Size (XML-AutoWriter-0.4.tar.gz) = 48672 bytes
+SHA1 (patch-Makefile.PL) = 0976d7e6d473f3f5789255c9dd51a4248f150dac

@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/05/23 08:03:18 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 17:18:33 asau Exp $
 #
 
-DISTNAME=	libdlna-0.2.3
-PKGREVISION=	1
+DISTNAME=	libdlna-0.2.4
 CATEGORIES=	net
 MASTER_SITES=	http://libdlna.geexbox.org/releases/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://libdlna.geexbox.org/
 COMMENT=	Reference DLNA open-source implementation
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c
 HAS_CONFIGURE=	yes
@@ -25,6 +22,11 @@ CONFIGURE_ARGS+=	--prefix=${PREFIX}
 CONFIGURE_ARGS+=	--with-ffmpeg-dir=${BUILDLINK_PREFIX.ffmpeg}
 
 MAKE_JOBS_SAFE=		no
+
+SUBST_CLASSES+=		config
+SUBST_STAGE.config=	pre-configure
+SUBST_FILES.config=	configure
+SUBST_SED.config=	-e 's,/usr/bin/install,${INSTALL},'
 
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

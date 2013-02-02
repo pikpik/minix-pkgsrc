@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/12/24 07:19:35 kefren Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:56:20 wiz Exp $
 
 DISTNAME=	amavisd-new-${VERSION}${PATCHLEVEL}
 PKGNAME=	amavisd-new-${VERSION}${PATCHLEVEL:S/-//}
+PKGREVISION=	1
 CATEGORIES=	mail security
 MASTER_SITES=	http://www.ijs.si/software/amavisd/ \
 		http://mirrors.catpipe.net/amavisd-new/ \
@@ -16,8 +17,6 @@ LICENSE=	gnu-gpl-v2
 
 VERSION=	2.7.0
 PATCHLEVEL=	# empty
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Archive-Tar-[0-9]*:../../archivers/p5-Archive-Tar
 DEPENDS+=	p5-Archive-Zip>=1.14:../../archivers/p5-Archive-Zip
@@ -67,6 +66,13 @@ PKG_USERS=	${AMAVIS_USER}:${AMAVIS_GROUP}
 PKG_GECOS.${AMAVIS_USER}=	AMaViS Virus Scanning Account
 PKG_HOME.${AMAVIS_USER}=	${AMAVIS_DIR}
 PKG_SHELL.${AMAVIS_USER}=	${SH}
+
+OWN_DIRS+=			${AMAVIS_DIR} ${AMAVIS_DIR}/db ${AMAVIS_DIR}/tmp
+OWN_DIRS+=			${AMAVIS_QUARANTINE}
+OWN_DIRS_PERMS+=		${AMAVIS_DIR} ${AMAVIS_USER} ${AMAVIS_GROUP} 750
+OWN_DIRS_PERMS+=		${AMAVIS_DIR}/db ${AMAVIS_USER} ${AMAVIS_GROUP} 750
+OWN_DIRS_PERMS+=		${AMAVIS_DIR}/tmp ${AMAVIS_USER} ${AMAVIS_GROUP} 750
+OWN_DIRS_PERMS+=		${AMAVIS_QUARANTINE} ${AMAVIS_USER} ${AMAVIS_GROUP} 750
 
 RCD_SCRIPTS=	amavisd
 CONF_FILES=	${EGDIR}/amavisd.conf-minimal ${PKG_SYSCONFDIR}/amavisd.conf

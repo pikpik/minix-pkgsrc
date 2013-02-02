@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2012/03/12 12:32:26 fhajny Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/06 16:20:35 taca Exp $
 #
 
 DISTNAME=	${RUBY_DISTNAME}
 PKGNAME=	${RUBY_PKGPREFIX}-base-${RUBY_VERSION_FULL}
-PKGREVISION=	1
 CATEGORIES=	lang ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
-DIST_SUBDIR=	ruby193-base-201202170
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	${RUBY_HOMEPAGE}
@@ -15,8 +13,7 @@ LICENSE=	${RUBY_LICENSE}
 
 RUBY_VERSION_SUPPORTED=	193
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
+MAKE_JOBS_SAFE=		no
 USE_LANGUAGES=		c
 USE_TOOLS+=		pax yacc
 GNU_CONFIGURE=		yes
@@ -45,6 +42,12 @@ LIBS.SunOS+=	-lm
 
 .if ${OPSYS} == "SunOS"
 CONFIGURE_ENV+=	OBJCOPY=:
+CONFIGURE_ENV+=	ac_cv_prog_PKG_CONFIG=""
+.endif
+
+.if ${OPSYS} == "MirBSD"
+# if present, an unsupported sysconf call is used
+CONFIGURE_ENV+=	ac_cv_func_getgrnam_r=no
 .endif
 
 # Ruby build process depends on config.status's content
@@ -67,11 +70,12 @@ SUBST_MESSAGE.conf=	Fixing configuration files.
 .include "../../lang/ruby/rubyversion.mk"
 
 .if !empty(RUBY_SUFFIX)
-CONFIGURE_ARGS+=	--program-suffix=${RUBY_SUFFIX}
-CONFIGURE_ARGS+=	--with-soname=${RUBY_NAME}
-CONFIGURE_ARGS+=	--with-sitedir=${PREFIX}/${RUBY_SITELIB_BASE}
-CONFIGURE_ARGS+=	--with-vendordir=${PREFIX}/${RUBY_VENDORLIB_BASE}
-CONFIGURE_ARGS+=	--with-ruby-version=${RUBY_VERSION}
+CONFIGURE_ARGS+= --program-suffix=${RUBY_SUFFIX}
+CONFIGURE_ARGS+= --with-soname=${RUBY_NAME}
+CONFIGURE_ARGS+= --with-sitedir=${PREFIX}/${RUBY_SITELIB_BASE}
+CONFIGURE_ARGS+= --with-vendordir=${PREFIX}/${RUBY_VENDORLIB_BASE}
+CONFIGURE_ARGS+= --with-ruby-version=${RUBY_VERSION}
+CONFIGURE_ARGS+= --with-ruby-pc="ruby-${RUBY_VERSION}.pc"
 .endif
 
 #
@@ -87,13 +91,6 @@ PLIST.io=	yes
 #
 .if ${OPSYS} == "DragonFly" && ${OS_VERSION} == "1.8.0"
 CONFIGURE_ENV+=	ac_cv_header_ucontext_h=no
-.endif
-
-#
-# work around for getaddrinfo(3)
-#
-.if ${OPSYS} == "SunOS" && !empty(OS_VERSION:M5.[6-9])
-CONFIGURE_ARGS+=	--enable-wide-getaddrinfo
 .endif
 
 #
@@ -121,7 +118,8 @@ REPLACE_RUBY=		bin/erb bin/gem bin/irb bin/rake bin/rdoc \
 			bin/ri bin/testrb
 REPLACE_RUBY_DIRS=	ext lib sample
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 \
-			${RUBY_DOC}/irb ${RUBY_EG}/bigdecimal ${RUBY_EG}/pty
+			${RUBY_DOC}/irb ${RUBY_DOC}/ripper ${RUBY_DOC}/stringio \
+			${RUBY_EG}/bigdecimal ${RUBY_EG}/pty
 # ${RUBY_ARCHINC} ${RUBY_ARCHLIB}
 EMPTY_DIRS=		generator/template markup/simple_markup
 

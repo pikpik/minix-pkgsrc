@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2007/01/07 09:13:59 rillig Exp $
+# $NetBSD: Makefile,v 1.13 2008/03/04 17:57:19 jlam Exp $
 
 DISTNAME=	sigrot_1.2-1
 PKGNAME=	sigrot-1.2
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_DEBIAN:=pool/main/s/sigrot/}
 MAINTAINER=	drue@users.sourceforge.net
 HOMEPAGE=	http://packages.debian.org/oldstable/mail/sigrot
 COMMENT=	Signature file rotation program
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_TOOLS+=	gmake

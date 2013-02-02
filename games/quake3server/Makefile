@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/03/10 07:21:53 hasso Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/06 11:54:51 asau Exp $
 
 DISTNAME=	linuxq3apoint-1.32b.x86
 PKGNAME=	quake3server-1.32b
@@ -11,12 +11,10 @@ EXTRACT_SUFX=	.run
 MAINTAINER=	david@silicium.ath.cx
 COMMENT=	Quake III Arena Dedicated Server for Linux
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "../../games/quake3server/Makefile.common"
 
-USE_TOOLS+=	gtar
-EXTRACT_CMD=	${SED} '1,265d' ${DOWNLOADED_DISTFILE} | ${GTAR} xzf -
+USE_TOOLS+=	bsdtar
+EXTRACT_CMD=	${SED} '1,265d' ${DOWNLOADED_DISTFILE} | ${TOOLS_PATH.bsdtar} xzf -
 NO_BUILD=	yes
 
 WRKSRC=		${WRKDIR}
@@ -24,11 +22,6 @@ BASEDOCDIR=	${PREFIX}/share/doc/lokigames/quake3server
 RCD_SCRIPTS=	quake3server
 
 .include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} == "DragonFly"
-# DragonFly sed(1) adds trailing newline and it confuses gzip(1). Bsdtar,
-# which doesn't use gzip but zlib, extracts the archive fine though.
-TOOLS_PLATFORM.gtar=    /usr/bin/bsdtar
-.endif
 
 SPECIAL_PERMS+=	${Q3ROOTDIR}/q3ded nobody nogroup 0500
 

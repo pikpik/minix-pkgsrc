@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.35 2012/06/26 09:57:27 sbd Exp $
 #
 
 DISTNAME=	allegro-4.4.2
@@ -10,13 +10,12 @@ HOMEPAGE=	http://alleg.sourceforge.net/
 COMMENT=	Allegro game programming library
 #LICENSE=	# TODO: (see mk/license.mk)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_CMAKE=	yes
 USE_TOOLS+=	pkg-config makeinfo
 USE_LANGUAGES=	c c++
 
 INFO_FILES=	yes
+CMAKE_ARGS+=	-DINFODIR=${PKGINFODIR:Q}
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -34,19 +33,20 @@ PKGCONFIG_OVERRIDE+=	misc/allegrogl.pc.in
 PKGCONFIG_OVERRIDE+=	misc/jpgalleg.pc.in
 PKGCONFIG_OVERRIDE+=	misc/allegro.pc.in
 
+.include "../../audio/libvorbis/buildlink3.mk"
+.include "../../devel/zlib/buildlink3.mk"
+.include "../../graphics/glu/buildlink3.mk"
+.include "../../graphics/png/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
-.include "../../x11/libX11/buildlink3.mk"
-.include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/libXcursor/buildlink3.mk"
-.include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/libXxf86vm/buildlink3.mk"
-.include "../../x11/libXxf86dga/buildlink3.mk"
-.include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/png/buildlink3.mk"
 .include "../../multimedia/libogg/buildlink3.mk"
-.include "../../audio/libvorbis/buildlink3.mk"
 .include "../../x11/libICE/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXcursor/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/libXxf86dga/buildlink3.mk"
+.include "../../x11/libXxf86vm/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

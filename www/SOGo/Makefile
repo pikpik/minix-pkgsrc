@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2011/12/15 05:37:31 dholland Exp $
+# $NetBSD: Makefile,v 1.9 2012/12/16 01:52:36 obache Exp $
 #
 
-DISTNAME=	SOGo-2.0.0b3
+DISTNAME=	SOGo-2.0.2a
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://www.sogo.nu/files/downloads/SOGo/Sources/
 
@@ -10,9 +11,6 @@ HOMEPAGE=	http://www.sogo.nu/
 COMMENT=	Groupware server supporting CalDAV, CardDAV and GroupDAV
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-WRKSRC=		${WRKDIR}/SOGo
 HAS_CONFIGURE=	yes
 USE_LANGUAGES=	c
 USE_TOOLS+=     gmake zip:run
@@ -62,6 +60,7 @@ pre-install:
 .include "../../devel/SOPE/buildlink3.mk"
 .include "../../devel/libmemcached/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
+.include "../../www/curl/buildlink3.mk"
 
 
 .include "../../mk/bsd.pkg.mk"

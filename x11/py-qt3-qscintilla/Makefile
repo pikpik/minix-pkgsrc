@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.31 2011/01/13 13:40:02 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/29 05:06:45 asau Exp $
 #
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/py-qt3-base/Makefile.common"
 
 PKGNAME=		${PYPKGPREFIX}-qt3-qscintilla-${PYQT_VERSION}
-PKGREVISION=		8
+PKGREVISION=		9
 
 COMMENT=		Python binding for QScintilla
 

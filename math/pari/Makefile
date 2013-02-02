@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.50 2011/01/13 13:53:29 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/11/21 00:47:52 gdt Exp $
 
 DISTNAME=	pari-2.3.5
-PKGREVISION=	7
+PKGREVISION=	11
 CATEGORIES=	math
 MASTER_SITES=	http://pari.math.u-bordeaux.fr/pub/pari/unix/
 
@@ -11,8 +11,6 @@ COMMENT=	Software package for computer-aided number theory
 LICENSE=	gnu-gpl-v2
 
 MAKE_JOBS_SAFE=	no
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		perl:run

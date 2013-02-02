@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2011/11/01 06:02:25 sbd Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 13:45:41 asau Exp $
 
-DISTNAME=	libspectre-0.2.6
-PKGREVISION=	3
+DISTNAME=	libspectre-0.2.7
+PKGREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	http://libspectre.freedesktop.org/releases/
 
@@ -9,8 +9,6 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://libspectre.freedesktop.org/wiki/
 COMMENT=	Small library for rendering Postscript documents
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

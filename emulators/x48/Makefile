@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/12/27 13:37:36 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/23 10:24:04 wiz Exp $
 #
 
 DISTNAME=	x48_041
@@ -11,12 +11,12 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.earthlink.net/~rmmlgetz/
 COMMENT=	HP48 emulator
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_IMAKE=	YES
 
 INSTALLATION_DIRS+=	share/doc/x48/romdump
+
+CPPFLAGS+=	-DHAVE_STDLIB
 
 post-install:
 	cd ${WRKSRC}/doc && \
@@ -28,5 +28,4 @@ post-install:
 			${DESTDIR}${PREFIX}/share/doc/x48/romdump
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

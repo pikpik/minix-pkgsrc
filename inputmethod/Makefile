@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2011/03/06 16:02:29 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2012/08/19 08:14:38 obache Exp $
 #
 
 COMMENT=	Input method tools and libraries
@@ -24,6 +24,7 @@ SUBDIR+=	ibus-handwrite
 SUBDIR+=	ibus-hangul
 SUBDIR+=	ibus-input-pad
 SUBDIR+=	ibus-m17n
+SUBDIR+=	ibus-mozc
 SUBDIR+=	ibus-pinyin
 SUBDIR+=	ibus-qt
 SUBDIR+=	ibus-skk
@@ -47,8 +48,11 @@ SUBDIR+=	kinput2
 SUBDIR+=	libchewing
 SUBDIR+=	libchewing02
 SUBDIR+=	libhangul
+SUBDIR+=	libskk
 SUBDIR+=	libtabe
 SUBDIR+=	m17n-im-config
+SUBDIR+=	mozc-server
+SUBDIR+=	mozc-tool
 SUBDIR+=	multiskkserv
 SUBDIR+=	nabi
 SUBDIR+=	novel-pinyin
@@ -62,7 +66,6 @@ SUBDIR+=	ruby-zinnia
 SUBDIR+=	scim
 SUBDIR+=	scim-anthy
 SUBDIR+=	scim-array
-SUBDIR+=	scim-bridge
 SUBDIR+=	scim-canna
 SUBDIR+=	scim-ccinput
 SUBDIR+=	scim-chewing

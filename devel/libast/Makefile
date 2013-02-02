@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.32 2012/02/06 12:39:52 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/31 11:17:10 asau Exp $
 
 DISTNAME=	libast-0.7
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	devel
 MASTER_SITES=	http://www.eterm.org/download/
 
 MAINTAINER=	gendalia@NetBSD.org
 HOMEPAGE=	http://freshmeat.net/projects/libast/
 COMMENT=	The Library of Assorted Spiffy Things
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		YES
 GNU_CONFIGURE=		YES

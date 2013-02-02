@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.18 2012/02/06 12:41:03 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/08 09:21:02 asau Exp $
 #
 
 DISTNAME=		gst-ffmpeg-0.10.13
-PKGREVISION=		2
+PKGREVISION=		6
 CATEGORIES=		multimedia
 MASTER_SITES=		http://gstreamer.freedesktop.org/src/gst-ffmpeg/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://gstreamer.freedesktop.org/src/gst-ffmpeg/
 COMMENT=		ffmpeg plugin for gstreamer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
@@ -24,7 +22,7 @@ PKGSRC_MAKE_ENV+=	PERL=${PERL5}
 # the upstream developers only want to support building against
 # the included ffmpeg version, since the ffmpeg API/ABI is unstable
 # and there are no releases
-.include "../../multimedia/ffmpeg/buildlink3.mk"
+.include "../../multimedia/ffmpeg010/buildlink3.mk"
 CONFIGURE_ARGS+= --with-system-ffmpeg
 .include "../../devel/orc/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

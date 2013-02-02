@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.62 2012/02/06 12:40:51 wiz Exp $
+# $NetBSD: Makefile,v 1.73 2012/12/16 01:52:21 obache Exp $
 #
 
 DISTNAME=	mail-notification-5.4
-PKGREVISION=	13
+PKGREVISION=	22
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://savannah.nongnu.org/download/mailnotify/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/mailnotify/
 COMMENT=	Status icon that provides new mail notifications
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 HAS_CONFIGURE=		YES
 CONFIGURE_SCRIPT=	./jb configure
@@ -29,7 +27,7 @@ CONFIGURE_ARGS+=	evolution=no
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mail-notification
 PKG_SUPPORTED_OPTIONS=	inet6 sasl ssl
-PKG_SUGGESTED_OPTIONS=	ssl
+PKG_SUGGESTED_OPTIONS=	inet6 ssl
 
 .include "../../mk/bsd.options.mk"
 
@@ -71,4 +69,5 @@ do-install:
 .include "../../sysutils/libnotify/buildlink3.mk"
 .include "../../mk/omf-scrollkeeper.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

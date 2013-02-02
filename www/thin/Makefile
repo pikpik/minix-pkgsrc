@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.9 2011/06/19 08:08:33 taca Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/16 13:40:12 taca Exp $
 
-DISTNAME=	thin-1.3.1
+DISTNAME=	thin-1.5.0
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

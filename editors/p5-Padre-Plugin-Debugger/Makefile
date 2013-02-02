@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:34:49 seb Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 11:43:40 asau Exp $
 #
 
 DISTNAME=	Padre-Plugin-Debugger-0.3
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	editors devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Padre/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Padre-Plugin-Debugger/
 COMMENT=	Debug Perl code from Padre editor
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Devel-ebug>=0.49:../../devel/p5-Devel-ebug
 DEPENDS+=	p5-Padre>=0.28:../../editors/p5-Padre

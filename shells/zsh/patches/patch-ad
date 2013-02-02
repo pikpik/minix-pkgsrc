@@ -1,32 +1,31 @@
-$NetBSD$
-
---- Src/exec.c.orig	Tue Dec 11 09:35:25 2007
-+++ Src/exec.c
-@@ -131,6 +131,9 @@ mod_export Funcstack funcstack;
- 
- #define execerr() if (!forked) { lastval = 1; goto done; } else _exit(1)
+--- Src/exec.c.orig	Fri Feb  1 21:57:53 2013
++++ Src/exec.c	Fri Feb  1 22:00:36 2013
+@@ -191,6 +191,9 @@
+ 	}					\
+     } while (0)
  
 +#ifndef HAVE_SETPGRP
 +int setpgrp(int a, int b) { return 0; }
 +#endif
- static LinkList args;
  static int doneps4;
  static char *STTYval;
-@@ -184,11 +187,18 @@ zsetlimit(int limnum, char *nam)
+ static char *blank_env[] = { NULL };
+@@ -246,11 +249,19 @@
  {
      if (limits[limnum].rlim_max != current_limits[limnum].rlim_max ||
  	limits[limnum].rlim_cur != current_limits[limnum].rlim_cur) {
 +#ifdef HAVE_SETRLIMIT
  	if (setrlimit(limnum, limits + limnum)) {
  	    if (nam)
- 		zwarnnam(nam, "setrlimit failed: %e", NULL, errno);
+ 		zwarnnam(nam, "setrlimit failed: %e", errno);
  	    return -1;
  	}
 +#else
-+   if (nam)
++	if (nam)
 +		zwarnnam(nam, "setrlimit is not supported on your platform.",
 +								NULL, 0);
-+   return -1;
++	return -1;
++
 +#endif
  	current_limits[limnum] = limits[limnum];
      }

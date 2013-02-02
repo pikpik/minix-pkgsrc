@@ -1,0 +1,13 @@
+$NetBSD$
+
+Use standard headers.
+
+--- netconsole/utils.c~	2000-01-19 03:51:20.000000000 +0000
++++ netconsole/utils.c
+@@ -16,4 +16,6 @@
+ #endif
+ 
++#include <stdlib.h>
++
+ #include  "netconsole.h"
+ 

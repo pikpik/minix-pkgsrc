@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.31 2012/03/03 00:14:01 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/25 06:56:53 asau Exp $
 #
 
 DISTNAME=	raptor-1.4.21
-PKGREVISION=	4
+PKGREVISION=	7
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.librdf.org/source/
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://librdf.org/raptor/
 COMMENT=	RDF Parser Toolkit written in C
 LICENSE=	gnu-lgpl-v2.1 OR apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	YES
 GNU_CONFIGURE=	YES

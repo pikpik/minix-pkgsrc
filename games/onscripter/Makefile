@@ -1,17 +1,14 @@
-# $NetBSD: Makefile,v 1.9 2011/11/01 06:01:19 sbd Exp $
+# $NetBSD: Makefile,v 1.19 2012/12/14 17:17:54 tsutsui Exp $
 #
 
-DISTNAME=		onscripter-20111025
-PKGREVISION=		2
+DISTNAME=		onscripter-20130120
 CATEGORIES=		games
 MASTER_SITES=		http://onscripter.sourceforge.jp/
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
+MAINTAINER=		tsutsui@NetBSD.org
 HOMEPAGE=		http://onscripter.sourceforge.jp/onscripter.html
 COMMENT=		Interpreter to execute a script for NScripter
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 
@@ -23,6 +20,8 @@ BUILD_TARGET=	ALL
 
 USE_TOOLS+=	pkg-config
 
+.include "options.mk"
+
 SUBST_CLASSES+=		fix
 SUBST_STAGE.fix=	pre-configure
 SUBST_FILES.fix=	${MAKE_FILE}
@@ -30,6 +29,7 @@ SUBST_SED.fix=		-e 's!@RM@!${RM}!g'
 SUBST_SED.fix+=		-e 's!@CXX@!${CXX:Q}!g'
 SUBST_SED.fix+=		-e 's!@LD@!${LD:Q}!g'
 SUBST_SED.fix+=		-e 's!@CXXFLAGS@!${CXXFLAGS:Q}!g'
+SUBST_SED.fix+=		-e 's!@PDA_DEFS@!${PDA_DEFS:Q}!g'
 
 do-install:
 .for f in nsaconv nsadec onscripter sarconv sardec

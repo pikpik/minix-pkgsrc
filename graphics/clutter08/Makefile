@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:40:18 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2012/10/06 14:10:44 asau Exp $
 #
 
 DISTNAME=	clutter-0.8.8
 PKGNAME=	${DISTNAME:S/clutter/clutter08/}
-PKGREVISION=	9
+PKGREVISION=	13
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.clutter-project.org/sources/clutter/0.8/
 
@@ -11,8 +11,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://clutter-project.org/
 COMMENT=	Open GL based interactive canvas library
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	clutter-0.8.*{,nb*}
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2012/03/10 08:33:07 obache Exp $
+# $NetBSD: Makefile,v 1.32 2012/09/15 10:03:55 obache Exp $
 #
 
 DISTNAME=	telepathy-glib-0.14.3
-PKGREVISION=	5
+PKGREVISION=	7
 CATEGORIES=	chat
 MASTER_SITES=	http://telepathy.freedesktop.org/releases/telepathy-glib/
 
@@ -12,8 +12,6 @@ COMMENT=	GObject-based C binding for the Telepathy D-Bus API
 LICENSE=	gnu-gpl-v2 AND modified-bsd
 
 BUILD_DEPENDS+=		${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --enable-vala-bindings

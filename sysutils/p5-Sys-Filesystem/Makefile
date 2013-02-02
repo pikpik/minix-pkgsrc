@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2010/08/21 16:35:49 seb Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:57:42 wiz Exp $
 #
 
 DISTNAME=	Sys-Filesystem-1.30
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	sysutils devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Sys/}
 
@@ -16,13 +16,17 @@ DEPENDS+=	{perl>=5.10.1,p5-Module-Pluggable>=3.9}:../../devel/p5-Module-Pluggabl
 DEPENDS+=	p5-Params-Util>=1.00:../../devel/p5-Params-Util
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Sys/Filesystem/.packlist
 PERL5_MODULE_TYPE=	Module::Build
 
 #pre-configure:
 #	${FIND} ${WRKSRC} -name '*.orig' -print -type f | ${XARGS} ${RM} -f
+
+CONFIGURE_ENV+=		PATH_FSTAB=${WRKDIR}/fstab.phony
+
+pre-configure:
+	${TOUCH} ${WRKDIR}/fstab.phony
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

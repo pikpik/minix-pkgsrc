@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.87 2012/02/06 12:41:37 wiz Exp $
+# $NetBSD: Makefile,v 1.91 2012/10/23 19:51:11 asau Exp $
 
 DISTNAME=	mc-4.7.0.10
-PKGREVISION=	7
+PKGREVISION=	10
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.midnight-commander.org/downloads/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.midnight-commander.org/
 COMMENT=	User-friendly file manager and visual shell
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 USE_TOOLS+=		pkg-config unzip:run

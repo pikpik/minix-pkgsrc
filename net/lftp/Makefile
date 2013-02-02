@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.98 2011/07/27 04:57:47 pettai Exp $
+# $NetBSD: Makefile,v 1.100 2012/10/03 21:56:55 wiz Exp $
 
 DISTNAME=		lftp-4.3.3
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://ftp.yars.free.net/pub/source/lftp/ \
 			ftp://ftp.st.ryukoku.ac.jp/pub/network/ftp/lftp/ \
@@ -14,7 +15,6 @@ COMMENT=		Powerful command line file transfer client
 LICENSE=		gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		bison
 MAKE_JOBS_SAFE=		no

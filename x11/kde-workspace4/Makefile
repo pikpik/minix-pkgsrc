@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2011/03/06 16:04:33 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/12/16 01:52:40 obache Exp $
 
 DISTNAME=	kde-workspace-${_KDE_VERSION}
 PKGNAME=	${DISTNAME:S/-4/4-4/}
+PKGREVISION=	8
 CATEGORIES=	x11
 COMMENT=	Base workspace for the KDE 4 integrated X11 desktop
 
@@ -56,7 +57,7 @@ PY_PATCHPLIST=	yes
 .include "options.mk"
 
 PLIST_VARS+=	utempter noutempter
-.if ${OPSYS} == "Linux"
+.if ${OPSYS} == "Linux" && exists(/usr/include/utempter.h)
 PLIST.utempter=		yes
 .else
 PLIST.noutempter=	yes
@@ -112,7 +113,6 @@ post-install:
 BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../meta-pkgs/kde4/kde4.mk"
 
-PYTHON_VERSIONS_ACCEPTED= 27 26 25 # because kdebindings4-python
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
 .include "../../devel/libusb/buildlink3.mk"

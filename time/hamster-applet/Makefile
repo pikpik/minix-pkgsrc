@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2012/03/03 00:14:02 wiz Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/08 13:04:19 asau Exp $
 #
 
 DISTNAME=	hamster-applet-2.28.1
-PKGREVISION=	12
+PKGREVISION=	17
 CATEGORIES=	time
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/hamster-applet/2.28/}
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://projecthamster.wordpress.com/
 COMMENT=	Time tracking applet for GNOME
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
@@ -29,11 +27,7 @@ SUBST_SED.python=	-e 's@/usr/bin/env python@${PYTHONBIN}@g'
 .include "../../lang/python/extension.mk"
 .include "../../lang/python/pyversion.mk"
 
-.if ${PYPKGPREFIX} == "py24"
-.include "../../databases/py-sqlite2/buildlink3.mk"
-.else
 DEPENDS+=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
-.endif
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libbonobo/buildlink3.mk"

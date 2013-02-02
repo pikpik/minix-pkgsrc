@@ -1,0 +1,14 @@
+$NetBSD$
+
+Fix error with empty PACKAGES variable
+--- tools/src/m2parsergen/Makefile.orig	2012-06-11 11:15:30.000000000 +0000
++++ tools/src/m2parsergen/Makefile
+@@ -10,6 +10,8 @@ include $(TOP_DIR)/Makefile.rules
+ SRC = ast.ml lexer.ml parser.ml generator.ml
+ OBJ = $(SRC:.ml=.cmo)
+ 
++PACKAGES = stdlib
++
+ #----------------------------------------------------------------------
+ 
+ .PHONY: all

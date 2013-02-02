@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2012/03/03 00:12:01 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/23 17:18:26 asau Exp $
 #
 
-DISTNAME=	gupnp-0.13.3
-PKGREVISION=	7
+DISTNAME=	gupnp-0.18.4
+PKGREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	http://www.gupnp.org/sites/all/files/sources/
+MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gupnp/0.18/}
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gupnp.org/
@@ -14,7 +15,6 @@ LICENSE=	gnu-lgpl-v2
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config
-PKG_DESTDIR_SUPPORT= user-destdir
 
 PKGCONFIG_OVERRIDE+=	gupnp-1.0.pc.in
 REPLACE_PYTHON=	tools/gupnp-binding-tool

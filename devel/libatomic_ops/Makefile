@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/01/31 20:05:57 sketch Exp $
+# $NetBSD: Makefile,v 1.5 2011/10/04 18:15:29 bsiegert Exp $
 #
 .include "Makefile.version"
 
@@ -11,8 +11,6 @@ LICENSE=	gnu-gpl-v2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bdwgc.sourceforge.net/
 COMMENT=	Multi-platform library of atomic operations by Hans Boehm
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/libatomic_ops
 GNU_CONFIGURE=	yes

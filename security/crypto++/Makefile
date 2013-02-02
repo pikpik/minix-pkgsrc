@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2009/08/25 11:57:45 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2009/08/29 10:42:55 obache Exp $
 #
 
 DISTNAME=		cryptopp552
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.cryptopp.com/
 COMMENT=		Free C++ class library of Cryptographic Primitives
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 MAKE_FILE=		GNUmakefile

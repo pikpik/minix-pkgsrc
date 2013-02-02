@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.110 2012/01/26 11:25:55 drochner Exp $
+# $NetBSD: Makefile,v 1.120 2012/12/16 01:52:38 obache Exp $
 
-DISTNAME=	curl-7.24.0
+DISTNAME=	curl-7.28.1
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://curl.haxx.se/download/ \
 		ftp://ftp.sunet.se/pub/www/utilities/curl/
@@ -13,7 +14,6 @@ COMMENT=	Client that groks URLs
 LICENSE=	mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # list it into IPv6-ready packages
 BUILD_DEFS+=	IPV6_READY
@@ -52,7 +52,6 @@ post-install:
 			${DESTDIR}${PREFIX}/share/examples/curl;	\
 	done
 
-.include "../../devel/libidn/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

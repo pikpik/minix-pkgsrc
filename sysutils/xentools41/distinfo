@@ -1,11 +1,12 @@
-$NetBSD: distinfo,v 1.16 2012/01/26 11:19:23 cegger Exp $
+$NetBSD: distinfo,v 1.24 2013/01/18 11:27:43 drochner Exp $
 
 SHA1 (ipxe-git-v1.0.0.tar.gz) = da052c8de5f3485fe0253c19cf52ed6d72528485
 RMD160 (ipxe-git-v1.0.0.tar.gz) = dcd9b6eaafa1ce05c1ebf2a15f2f73ad7a8c5547
 Size (ipxe-git-v1.0.0.tar.gz) = 1996881 bytes
-SHA1 (xen-4.1.2.tar.gz) = db584cb0a0cc614888d7df3b196d514fdb2edd6e
-RMD160 (xen-4.1.2.tar.gz) = 457797ec4be286afbbcad940a9ce04e44f3f40d6
-Size (xen-4.1.2.tar.gz) = 10365786 bytes
+SHA1 (xen-4.1.4.tar.gz) = d5f1e9c9eeb96202dd827c196750530ffc64baab
+RMD160 (xen-4.1.4.tar.gz) = e3cb379954c985354dfd7dfbed15eae43e73254d
+Size (xen-4.1.4.tar.gz) = 10387283 bytes
+SHA1 (patch-CVE-2012-6075) = 9de84238489875d94245d4f6ce3689629bb318ee
 SHA1 (patch-aa) = 9b53ba4a809dad7a1de34c8fa0dbe493d7256ada
 SHA1 (patch-ab) = 0906a5ec3a7450fc987b01289e2560e60966d00d
 SHA1 (patch-ac) = c3cc5335a1d6b066307c5f03fe72f513a9eb2bdb
@@ -29,14 +30,21 @@ SHA1 (patch-ce) = 613f4c4605af860e5f88b68c49a0e7870ba6ecde
 SHA1 (patch-cf) = c8740b1c9cfac686f2e4e32c7613b5f02206459d
 SHA1 (patch-cg) = 119029fda1d4ecee90d0a108151596cb3ef0ec74
 SHA1 (patch-ch) = 84e816c95167828314ef901e324772249a407c41
+SHA1 (patch-config_StdGNU.mk) = bbded4d6da3fae55bfd8dad42ac9b45721ee1ebe
 SHA1 (patch-da) = 1a7ecd9536340deac2945786b9faae55680525ca
 SHA1 (patch-db) = 4766f9925462023332793bcea4321072758e289d
 SHA1 (patch-dc) = d860fe3725978227278d58f09e7d5157001e463e
 SHA1 (patch-dd) = e66d9cc0028ba922b050fc142862b4095cd018f3
 SHA1 (patch-de) = fae94b61a430a1a7dd98c9a6a04e4513824c6d8d
 SHA1 (patch-df) = d20bf9d3fd05f5334f77c9154bf0fb9944c1292c
+SHA1 (patch-ioemu-qemu-xen_hw_pass-through.c) = 76185c239078f29cb42b953d6c2cd1f59e240989
+SHA1 (patch-ioemu-qemu-xen_hw_pass-through.h) = 98c26798d1ad99d3eee8b33deb08f747c958c886
+SHA1 (patch-ioemu-qemu-xen_hw_piix4acpi.c) = ca19457e9bde2d844a86a866960ac6de1f3d084c
+SHA1 (patch-ioemu-qemu-xen_hw_pt-graphics.c) = 3c03404f1d711c667559a1332e717a5f1b5ceda8
+SHA1 (patch-ioemu-qemu-xen_hw_pt-msi.c) = 2dcebc65f591988bb95dea74c3b21f7066154a9f
+SHA1 (patch-ioemu-qemu-xen_hw_pt-msi.h) = d1bb1a8ad90d6577056f11df96f5469ffe74a3b0
+SHA1 (patch-ioemu-qemu-xen_xen-hooks.mak) = a00d9a9fd0fbb9fd89788b9dfaf5b389a28d47e2
 SHA1 (patch-libxl_libxl_create.c) = 02b661ca684609939c6ef762c0ddd1c5e62ad4d0
-SHA1 (patch-ocaml-include-path) = 959df25b0aae78d525b25f223190203d3c1185a6
-SHA1 (patch-qemu-e1000-CVSE-2012-0029) = 064ba74795e7a1ceb863d1f7bc171f3841c81b8a
+SHA1 (patch-libxl_libxl_internal.h) = e126e5e998117903f0c66cc370d350c504ed33d9
 SHA1 (patch-qemu-phy-devices) = fef90e50ef0a58db2f2b49b6c23218f371791de5
 SHA1 (patch-xenstore_Makefile) = 4fa0ed7b76a96011c3cca9c5017be4b5151489f7

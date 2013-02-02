@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/09/25 12:29:26 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2009/09/29 17:19:11 wiz Exp $
 #
 # Note to packagers:
 # packages installing additional completion files should drop
@@ -14,8 +14,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bash-completion.alioth.debian.org/
 COMMENT=	Programmable completion specifications for bash
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	bash:run
 

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.linux-x86_64,v 1.4 2011/09/26 13:06:52 abs Exp $
+@comment $NetBSD: PLIST.linux-x86_64,v 1.9 2012/11/26 16:25:34 ryoon Exp $
 bin/sun6-java
 bin/sun6-javaws
 bin/sun6-keytool
@@ -255,7 +255,15 @@ java/sun-6/lib/security/local_policy.jar
 java/sun-6/lib/security/trusted.libraries
 java/sun-6/lib/servicetag/jdk_header.png
 java/sun-6/lib/sound.properties.default
-${PLIST.x11}java/sun-6/lib/amd64/libX11.so.6
+${PLIST.native}java/sun-6/lib/amd64/libX11.so.6
+${PLIST.native}java/sun-6/lib/amd64/jli/libX11.so.6
+${PLIST.native}java/sun-6/lib/amd64/libXext.so.6
+${PLIST.native}java/sun-6/lib/amd64/libXi.so.6
+${PLIST.native}java/sun-6/lib/amd64/libXt.so.6
+${PLIST.native}java/sun-6/lib/amd64/libXtst.so.6
+${PLIST.native}java/sun-6/lib/amd64/libasound.so.2
+${PLIST.native}java/sun-6/lib/amd64/libodbc.so
+${PLIST.native}java/sun-6/lib/amd64/libodbcinst.so
 java/sun-6/lib/zi/Africa/Abidjan
 java/sun-6/lib/zi/Africa/Accra
 java/sun-6/lib/zi/Africa/Addis_Ababa
@@ -346,6 +354,7 @@ java/sun-6/lib/zi/America/Cayman
 java/sun-6/lib/zi/America/Chicago
 java/sun-6/lib/zi/America/Chihuahua
 java/sun-6/lib/zi/America/Costa_Rica
+java/sun-6/lib/zi/America/Creston
 java/sun-6/lib/zi/America/Cuiaba
 java/sun-6/lib/zi/America/Curacao
 java/sun-6/lib/zi/America/Danmarkshavn

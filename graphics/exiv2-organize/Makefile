@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2012/01/09 02:54:26 obache Exp $
+# $NetBSD: Makefile,v 1.18 2012/08/29 11:22:14 obache Exp $
 
-DISTNAME=	exiv2-0.22
-PKGNAME=	exiv2-organize-0.22
+DISTNAME=	exiv2-0.23
+PKGNAME=	exiv2-organize-0.23
 PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.exiv2.org/
@@ -10,8 +10,6 @@ MAINTAINER=	gdt@NetBSD.org
 HOMEPAGE=	http://www.exiv2.org/
 COMMENT=	Image metadata manipulation
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

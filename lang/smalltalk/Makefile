@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.64 2012/02/06 12:40:46 wiz Exp $
+# $NetBSD: Makefile,v 1.71 2012/10/02 20:11:53 asau Exp $
 
 DISTNAME=	smalltalk-3.2.4
-PKGREVISION=	5
+PKGREVISION=	10
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU:=smalltalk/}
 
@@ -10,8 +10,6 @@ HOMEPAGE=	http://www.smalltalk.org/versions/GNUSmalltalk.html
 COMMENT=	GNU Smalltalk: A smalltalk-80 implementation
 
 ONLY_FOR_PLATFORM=	*-*-i386 *-*-x86_64 *-*-sparc *-*-powerpc
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
@@ -43,6 +41,13 @@ REPLACE_INTERPRETER+=	sys-sed
 REPLACE.sys-sed.old=	[^[:space:]]*sed
 REPLACE.sys-sed.new=	${SED}
 REPLACE_FILES.sys-sed=	${REPLACE_SED}
+
+.include "../../mk/bsd.prefs.mk"
+
+# for backtrace
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/execinfo.h)
+LIBS+=	-lexecinfo
+.endif
 
 post-extract:
 	sed -e "s/long double/double/g" -e "s/1.0L/1.0/g" -e  "s/0.0L/0.0/g" \

@@ -1,24 +1,28 @@
-# $NetBSD: Makefile,v 1.67 2012/03/19 10:35:57 ryoon Exp $
+# $NetBSD: Makefile,v 1.85 2013/01/20 08:33:13 ryoon Exp $
 #
 
 DISTNAME=	# empty
 PKGNAME=	seamonkey-${SM_VER}
-SM_VER=		2.8
+SM_VER=		2.15
+LIGHTNINGVER=	1.9
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_MOZILLA:=seamonkey/releases/${SM_VER}/source/} \
-		${MASTER_SITE_LOCAL}
-DISTFILES=	seamonkey-${SM_VER}.source.tar.bz2 \
-		comm-release-f60c071e187b.tar.bz2
+		${MASTER_SITE_MOZILLA_ALL:=seamonkey/releases/${SM_VER}/source/}
+DISTFILES=	seamonkey-${SM_VER}.source.tar.bz2
+#		lightning-${LIGHTNINGVER}.source.tar.bz2
+#SITES.lightning-${LIGHTNINGVER}.source.tar.bz2=	${MASTER_SITE_MOZILLA:=calendar/lightning/releases/${LIGHTNINGVER}/source/}
+EXTRACT_DIR.lightning-${LIGHTNINGVER}.source.tar.bz2=	${WRKSRC}/lightning
 
 MAINTAINER=	tnn@NetBSD.org
 HOMEPAGE=	http://www.seamonkey-project.org/
 COMMENT=	Full-featured gecko-based browser
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=		${WRKDIR}/comm-release
 MOZILLA_DIR=	mozilla/
 PLIST_SRC+=	${PLIST_SRC_DFLT}
+USE_LANGUAGES+=	c c++
+USE_TOOLS+=	unzip
 
 CONFIG_GUESS_OVERRIDE+=	ldap/sdks/c-sdk/config/autoconf/config.guess
 CONFIG_SUB_OVERRIDE+=	ldap/sdks/c-sdk/config/autoconf/config.sub
@@ -26,8 +30,6 @@ CONFIG_SUB_OVERRIDE+=	ldap/sdks/c-sdk/config/autoconf/config.sub
 CONFIGURE_ARGS+=	--enable-application=suite
 
 ALL_ENV+=		MOZILLA_PKG_NAME=seamonkey
-
-LDFLAGS+=		-Wl,-rpath,${PREFIX}/lib/seamonkey
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -37,18 +39,26 @@ LDFLAGS+=		-Wl,-rpath,${PREFIX}/lib/seamonkey
 BUILD_DEPENDS+=		yasm>=1.1.0:../../devel/yasm
 .endif
 
+#post-extract:
+#	cd ${WRKSRC} && ${RM} -r calendar
+#	${CP} -r ${EXTRACT_DIR.lightning-${LIGHTNINGVER}.source.tar.bz2}/comm-beta/calendar ${WRKSRC}
+#	${RM} -r ${EXTRACT_DIR.lightning-${LIGHTNINGVER}.source.tar.bz2}
+
 pre-configure:
 	cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} autoconf
 	cd ${WRKSRC}/mozilla && ${SETENV} ${CONFIGURE_ENV} autoconf
 	cd ${WRKSRC}/mozilla/js/src && ${SETENV} ${CONFIGURE_ENV} autoconf
 	cd ${WRKSRC}/mozilla/nsprpub && ${SETENV} ${CONFIGURE_ENV} autoconf
 	cd ${WRKSRC}/ldap/sdks/c-sdk && ${SETENV} ${CONFIGURE_ENV} autoconf
+	mkdir ${WRKSRC}/mozilla/js/src/.deps
 
 do-build:
 # XXX for some reason it doesn't work unless -j is explicitly specified
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} -j${MAKE_JOBS:U1}
 
 post-install:
+	${TOUCH} ${TOUCH_FLAGS} \
+		${DESTDIR}${PREFIX}/include/seamonkey/mozilla/throw_gcc.h
 	@${STEP_MSG} "Installing bundled seamonkey extensions."
 	rm -rf ${WRKDIR}/extensions
 	${MKDIR} ${WRKDIR}/extensions

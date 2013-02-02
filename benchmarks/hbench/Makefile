@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.46 2011/09/12 11:15:33 dholland Exp $
+# $NetBSD: Makefile,v 1.49 2012/09/11 22:37:12 asau Exp $
 
 DISTNAME=		hbench-OS-1.1
 PKGNAME=		hbench-1.1
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		benchmarks
 MASTER_SITES=		http://www.eecs.harvard.edu/vino/perf/hbench/
 
@@ -17,7 +17,6 @@ COMMENT=		Suite of portable benchmarks to measure the OS and the hardware
 DEPENDS+=		gnuplot>=3.7:../../graphics/gnuplot
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/HBenchOS
 OSVERSION_SPECIFIC=	YES
@@ -27,7 +26,7 @@ OVERRIDE_GNU_CONFIG_SCRIPTS=	yes
 MAKE_JOBS_SAFE=		no
 
 GET_ARCH_CMD=		${PKGSRCDIR:Q}/mk/gnu-config/config.guess | ${SED} -e 's/-.*-.*$$//'
-GET_OS_CMD=		${PKGSRCDIR:Q}/mk/gnu-config/config.guess | ${SED} -e 's/^.*-.*-//'
+GET_OS_CMD=		${PKGSRCDIR:Q}/mk/gnu-config/config.guess | ${SED} -e 's/^[^-]*-[^-]*-//;s/-.*$$//'
 PLIST_SUBST+=		PLATFORM=${GET_OS_CMD:sh:Q}-${GET_ARCH_CMD:sh:Q}
 
 .include "../../mk/bsd.prefs.mk"

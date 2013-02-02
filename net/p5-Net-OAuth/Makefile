@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2010/09/09 06:16:11 sno Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:57:04 wiz Exp $
 #
 
 DISTNAME=	Net-OAuth-0.27
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
@@ -13,7 +13,6 @@ COMMENT=	Perl5 extension for OAuth protocol support
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Class-Accessor>=0.31:../../devel/p5-Class-Accessor
 DEPENDS+=	p5-Class-Data-Inheritable>=0.06:../../devel/p5-Class-Data-Inheritable

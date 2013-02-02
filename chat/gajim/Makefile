@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2012/03/03 00:12:47 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 00:02:36 asau Exp $
 #
 
-DISTNAME=	gajim-0.14.1
-PKGREVISION=	7
+DISTNAME=	gajim-0.15
+PKGREVISION=	5
 CATEGORIES=	chat python
-MASTER_SITES=	http://www.gajim.org/downloads/0.14/
+MASTER_SITES=	http://www.gajim.org/downloads/0.15/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	vsevolod@highsecure.ru
@@ -16,14 +16,10 @@ DEPENDS=	${PYPKGPREFIX}-expat-[0-9]*:../../textproc/py-expat
 DEPENDS=	${PYPKGPREFIX}-dbus>=0.81:../../sysutils/py-dbus
 DEPENDS=	${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "options.mk"
 
 USE_TOOLS+=	gmake intltool pkg-config msgfmt
 GNU_CONFIGURE=	yes
-
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.php,v 1.12 2012/01/20 03:22:08 taca Exp $
+# $NetBSD: Makefile.php,v 1.27 2013/01/07 14:23:57 taca Exp $
 # used by lang/php53/Makefile
 # used by www/ap-php/Makefile
 
@@ -14,9 +14,6 @@ BUILD_DEFS+=		VARBASE
 PLIST_VARS+=		suhosin
 
 CONFIGURE_ENV+=		EXTENSION_DIR="${PREFIX}/${PHP_EXTENSION_DIR}"
-
-PHP_EXTENSION_DIR=	lib/php/20090630
-PLIST_SUBST+=		PHP_EXTENSION_DIR=${PHP_EXTENSION_DIR}
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -47,7 +44,7 @@ CONFIGURE_ARGS+=	--with-libxml-dir=${PREFIX}
 # Note: This expression is the same as ${PKGBASE}, but the latter is
 # not defined yet, so we cannot use it here.
 PKG_OPTIONS_VAR=	PKG_OPTIONS.${PKGNAME:C/-[0-9].*//}
-PKG_SUPPORTED_OPTIONS+=	inet6 ssl maintainer-zts suhosin
+PKG_SUPPORTED_OPTIONS+=	inet6 ssl maintainer-zts suhosin readline
 PKG_SUGGESTED_OPTIONS+=	inet6 ssl
 
 #SUBST_CLASSES+=		ini
@@ -60,19 +57,19 @@ PKG_SUGGESTED_OPTIONS+=	inet6 ssl
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Msuhosin)
-SUHOSIN_PHPVER=		5.3.9
-.  if ${SUHOSIN_PHPVER} != ${PHP_BASE_VERS} && ${PHP_BASE_VERS} != 5.3.10
+SUHOSIN_PHPVER=		5.3.21
+.  if ${SUHOSIN_PHPVER} != ${PHP_BASE_VERS} && ${PHP_BASE_VERS} != 5.3.21
 PKG_FAIL_REASON+=	"The suhosin patch is currently not available for"
 PKG_FAIL_REASON+=	"this version of PHP.  You may have to wait until"
 PKG_FAIL_REASON+=	"an updated patch is released or temporarily"
 PKG_FAIL_REASON+=	"build this package without the suhosin option."
 .  else
-PATCH_SITES=		http://download.suhosin.org/
-PATCHFILES+=		suhosin-patch-${SUHOSIN_PHPVER}-0.9.10.patch.gz
-PATCH_DIST_STRIP=	-p1
+PATCH_SITES=		${MASTER_SITE_LOCAL}
+PATCHFILES+=		suhosin-patch-${SUHOSIN_PHPVER}-0.9.10.patch.bz2
 PLIST.suhosin=		yes
 MESSAGE_SRC=		${.CURDIR}/../../lang/php53/MESSAGE
 MESSAGE_SRC+=		${.CURDIR}/../../lang/php53/MESSAGE.suhosin
+
 .  endif
 .endif
 
@@ -96,6 +93,14 @@ CONFIGURE_ARGS+=	--without-openssl
 
 .if !empty(PKG_OPTIONS:Mmaintainer-zts)
 CONFIGURE_ARGS+=	--enable-maintainer-zts
+.endif
+
+.if !empty(PKG_OPTIONS:Mreadline)
+USE_GNU_READLINE=	yes
+.include "../../devel/readline/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-readline=${BUILDLINK_PREFIX.readline}
+.else
+CONFIGURE_ARGS+=	--without-readline
 .endif
 
 DL_AUTO_VARS=		yes

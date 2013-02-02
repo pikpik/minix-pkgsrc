@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/04/08 19:08:50 wiz Exp $
 #
 
 DISTNAME=	lettuce-0.1.33
@@ -10,13 +10,7 @@ HOMEPAGE=	http://lettuce.it/
 COMMENT=	Behaviour-driven development test tool
 LICENSE=	gnu-gpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=		${WRKDIR}
 
-# not ported yet
-PYTHON_VERSIONS_INCOMPATIBLE=	31
-
 .include "../../lang/python/egg.mk"
-
 .include "../../mk/bsd.pkg.mk"

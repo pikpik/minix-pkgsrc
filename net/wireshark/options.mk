@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.4 2010/05/15 20:27:28 tron Exp $
+# $NetBSD: options.mk,v 1.5 2010/06/29 07:45:24 obache Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.wireshark
 PKG_SUPPORTED_OPTIONS=	gtk2 lua

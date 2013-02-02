@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2012/02/06 12:41:47 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/08 23:02:29 adam Exp $
 #
 
 DISTNAME=	planner-0.14.4
-PKGREVISION=	16
+PKGREVISION=	22
 CATEGORIES=	time x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/planner/0.14/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/Planner
 COMMENT=	Project management tool for the GNOME desktop
 LICENSE=	gnu-gpl-v2 # OR any later version
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

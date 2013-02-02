@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.22 2009/07/07 20:25:27 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/08 13:04:17 asau Exp $
 #
 
 DISTNAME=	emiclock-2.0.2
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	x11 time
 MASTER_SITES=	${MASTER_SITE_FREEBSD}
 
 MAINTAINER=	minoura@NetBSD.org
 COMMENT=	Analog clock with image in the middle
 LICENSE=	emiclock-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=	Do not distribute
 NO_SRC_ON_FTP=${RESTRICTED}
@@ -36,6 +34,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/resources/R6/EUC/EmiClock.ad \
 		${DESTDIR}${PREFIX}/lib/X11/ja_JP.eucJP/app-defaults/EmiClock
 
+.include "../../x11/libXpm/buildlink3.mk"
 .include "../../mk/xaw.buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

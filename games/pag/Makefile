@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2009/05/21 00:34:38 zafer Exp $
+# $NetBSD: Makefile,v 1.15 2010/07/06 10:17:13 jmmv Exp $
 #
 
 DISTNAME=	pag-0.92
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_BACKUP}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://pancake.host.sk/
 COMMENT=	Platform Arcade Game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 USE_NCURSES=	yes # missing function stdscr

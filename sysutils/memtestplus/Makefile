@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/02/28 14:53:02 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2011/05/30 19:58:07 jakllsch Exp $
 #
 
 # Note -- version number also in the do-install rule
@@ -23,8 +23,6 @@ SUBST_STAGE.delcr=	post-build
 SUBST_MESSAGE.delcr=	Deleting CRs
 SUBST_FILES.delcr=	README
 SUBST_SED.delcr=	-e 's/.$$//g'
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

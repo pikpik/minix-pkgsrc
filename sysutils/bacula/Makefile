@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.37 2011/06/26 14:24:55 shattered Exp $
+# $NetBSD: Makefile,v 1.43 2013/01/19 20:51:13 riastradh Exp $
 
-PKGREVISION=		1
+PKGREVISION=		2
 
 CONFLICTS+=		bacula-client-[0-9]* bacula-clientonly-[0-9]*
 
@@ -15,6 +15,9 @@ PLIST_SUBST+=		BACULA_DB=${BACULA_DB}
 MESSAGE_SUBST+=		PREFIX=${PREFIX}
 MESSAGE_SUBST+=		PKGNAME_NOREV=${PKGNAME_NOREV}
 
+# For make_catalog_backup.pl.in.
+USE_TOOLS+=		perl:run
+
 CONFIGURE_ARGS+=	--with-dir-group=${BACULA_GROUP}
 CONFIGURE_ARGS+=	--with-dir-user=${BACULA_DIR_USER}
 CONFIGURE_ARGS+=	--with-sd-group=${BACULA_GROUP}
@@ -25,6 +28,7 @@ OWN_DIRS_PERMS+=	${BACULA_WORKINGDIR} ${ROOT_USER} ${BACULA_GROUP} 770
 PKG_USERS=		${BACULA_DIR_USER}:${BACULA_GROUP}
 PKG_USERS+=		${BACULA_SD_USER}:${BACULA_GROUP}
 PKG_GROUPS=		${BACULA_GROUP}
+USERGROUP_PHASE=	pre-install
 
 CONF_FILES+=		${EXAMPLESDIR}/bacula-fd.conf ${PKG_SYSCONFDIR}/bacula-fd.conf
 CONF_FILES+=		${EXAMPLESDIR}/bconsole.conf ${PKG_SYSCONFDIR}/bconsole.conf
@@ -34,8 +38,6 @@ CONF_FILES+=		${EXAMPLESDIR}/bacula-sd.conf ${PKG_SYSCONFDIR}/bacula-sd.conf
 RCD_SCRIPTS=		bacula bacula-dir bacula-sd bacula-fd
 
 REPLACE_PERL+=		src/cats/make_catalog_backup.pl.in
-
-CHECK_INTERPRETER_SKIP=	libexec/bacula/make_catalog_backup.pl
 
 .include "Makefile.common"
 

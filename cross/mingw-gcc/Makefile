@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/15 18:34:37 asau Exp $
+# $NetBSD: Makefile,v 1.2 2011/03/31 20:56:28 asau Exp $
 #
 
 DISTNAME=		mingw-gcc-${DIST_VERSION}
@@ -12,8 +12,6 @@ DISTFILES=		gcc-core-${DIST_VERSION}-src.tar.gz \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://mingw.sourceforge.net/
 COMMENT=		GNU C Compiler for win32 cross-development
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_PKGLOCALEDIR=	yes

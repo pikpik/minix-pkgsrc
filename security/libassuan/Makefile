@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/11/25 21:43:55 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2012/04/13 23:04:11 hans Exp $
 #
 
 DISTNAME=		libassuan-1.0.5
@@ -12,7 +12,6 @@ HOMEPAGE=		ftp://ftp.gnupg.org/gcrypt/libassuan/
 COMMENT=		The IPC library used by some GnuPG related software
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 INFO_FILES=		yes
@@ -24,6 +23,8 @@ USE_LIBTOOL=		yes
 ###	to build position-independent code when possible.
 CONFIGURE_ARGS+=	--with-pic
 TEST_TARGET=		check
+
+LIBS.SunOS+=		-lrt
 
 BUILDLINK_API_DEPENDS.libgpg-error+=	libgpg-error>=1.0.0
 

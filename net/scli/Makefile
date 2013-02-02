@@ -1,17 +1,14 @@
-# $NetBSD: Makefile,v 1.26 2012/02/06 12:41:17 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/09/15 10:06:07 obache Exp $
 #
 
 DISTNAME=		scli-0.3.1
-#PKGREVISION=
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.ibr.cs.tu-bs.de/local/scli/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ibr.cs.tu-bs.de/projects/scli/
 COMMENT=		SNMP command line interface
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config gmake

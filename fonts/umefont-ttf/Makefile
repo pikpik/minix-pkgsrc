@@ -1,18 +1,18 @@
-# $NetBSD: Makefile,v 1.25 2012/02/15 03:37:00 ryoon Exp $
+# $NetBSD: Makefile,v 1.35 2012/12/05 14:59:47 ryoon Exp $
 #
 
-DISTNAME=	umefont_437
-PKGNAME=	${DISTNAME:S/_/-ttf-0./}
+DISTNAME=	ege-umefont_447
+PKGNAME=	${DISTNAME:C/([a-z]+)-//:S/_/-ttf-0./}
 CATEGORIES=	fonts japanese
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE_JP:=ume-font/22212/}
-EXTRACT_SUFX=	.tar.xz
+EXTRACT_SUFX=	.7z
 
 MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://sourceforge.jp/projects/ume-font/wiki/FrontPage
 COMMENT=	Ume 18 Japanese fonts (Mincho and Gothic)
 LICENSE=	mplusfont
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+WRKSRC=		${WRKDIR}/${DISTNAME:C/([a-z]+)-//}
 
 CONFLICTS=	umefont<=0.421
 SUPERSEDES=	umefont<=0.421

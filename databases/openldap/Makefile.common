@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.29 2011/03/20 20:27:55 wiz Exp $
+# $NetBSD: Makefile.common,v 1.34 2012/10/21 09:00:55 joerg Exp $
 #
 # used by databases/openldap-client/Makefile
 # used by databases/openldap-cloak/Makefile
@@ -6,8 +6,9 @@
 # used by databases/openldap-server/Makefile
 # used by databases/openldap-smbk5pwd/Makefile
 
-# please stick to the "stable" releases as much as possible!
-DISTNAME=	openldap-2.4.30
+.include "../../databases/openldap/Makefile.version"
+
+DISTNAME=	openldap-${OPENLDAP_VERSION}
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/ \
 		http://www.openldap.org/software/download/OpenLDAP/openldap-release/ \
@@ -20,7 +21,7 @@ MASTER_SITES=	ftp://ftp.openldap.org/pub/OpenLDAP/openldap-release/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/OpenLDAP/openldap-release/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ghen@NetBSD.org
+MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.openldap.org/
 LICENSE=	modified-bsd
 
@@ -85,6 +86,8 @@ CONF_FILES_PERMS+=	${EGDIR}/${file} ${OPENLDAP_ETCDIR}/${file} ${OPENLDAP_FILEPE
 DB_CONFIG?=		# empty
 
 PTHREAD_OPTS+=		require
+
+CONFIGURE_ARGS+=	--without-fetch
 
 .include "../../security/openssl/buildlink3.mk"
 .include "../../security/tcp_wrappers/buildlink3.mk"

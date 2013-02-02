@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2012/02/06 12:39:57 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/02 17:10:51 tron Exp $
 
 PKGNAME=		py-gobject-shared-2.28.6
-PKGREVISION=		3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		6
 
 .include "../../devel/py-gobject/Makefile.common"
 

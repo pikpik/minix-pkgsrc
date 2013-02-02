@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.73 2012/03/03 00:13:35 wiz Exp $
+# $NetBSD: Makefile,v 1.80 2012/12/16 01:52:24 obache Exp $
 
 DISTNAME=	kdeaddons-${_KDE_VERSION}
-PKGREVISION=	15
+PKGREVISION=	21
 CATEGORIES=	misc
 COMMENT=	Add ons for the KDE integrated X11 desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../meta-pkgs/kde3/Makefile.kde3"
 
@@ -31,4 +29,5 @@ REPLACE_PYTHON+= \
 .include "../../multimedia/kdemultimedia3/buildlink3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

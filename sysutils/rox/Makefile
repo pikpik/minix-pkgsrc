@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.58 2012/02/06 12:41:38 wiz Exp $
+# $NetBSD: Makefile,v 1.65 2012/10/08 23:02:27 adam Exp $
 #
 
 DISTNAME=	rox-filer-2.10
 PKGNAME=	rox-2.10
-PKGREVISION=	10
+PKGREVISION=	15
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,7 +12,6 @@ MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://rox.sourceforge.net/
 COMMENT=	RISC OS-like filer for X
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 CONFLICTS=	rox-base-[0-9]*
 
 WRKSRC=		${WRKDIR}/${DISTNAME}

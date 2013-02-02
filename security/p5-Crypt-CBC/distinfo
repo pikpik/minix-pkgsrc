@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.12 2008/07/17 20:28:08 heinz Exp $
+$NetBSD: distinfo,v 1.14 2012/10/30 14:35:37 wen Exp $
 
-SHA1 (Crypt-CBC-2.30.tar.gz) = fd8c984fc76aee67dc812c8ac10f8979526fd687
-RMD160 (Crypt-CBC-2.30.tar.gz) = ceb53db52b10837b85d99f07f5469dd66b782ddf
-Size (Crypt-CBC-2.30.tar.gz) = 22639 bytes
+SHA1 (Crypt-CBC-2.32.tar.gz) = ce0d6e18b8f0e3df70d679b0a8400f99cf0a526f
+RMD160 (Crypt-CBC-2.32.tar.gz) = b51aaa5999dc664a0b453f825bce6e783f87a3be
+Size (Crypt-CBC-2.32.tar.gz) = 23331 bytes

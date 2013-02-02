@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/12/15 16:17:44 abs Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:31 wiz Exp $
 #
 
 DISTNAME=	mserv-php-090
 PKGNAME=	mserv-php-0.90
+PKGREVISION=	1
 CATEGORIES=	audio www
 MASTER_SITES=	http://dougiamas.com/mserv/src/
 EXTRACT_SUFX=	.tgz
@@ -12,7 +13,7 @@ HOMEPAGE=	http://dougiamas.com/mserv/
 COMMENT=	Quick web interface to mserv audio jukebox
 
 DEPENDS+=       mserv-[0-9]*:../../audio/mserv
-DEPENDS+=	php>=4.0.6:../../lang/php5
+DEPENDS+=	php>=4.0.6:../../lang/php53
 
 WRKSRC=		${WRKDIR}/mserv-php
 
@@ -26,7 +27,6 @@ SUBST_FILES.paths=	${WRKDIR}/config.php
 SUBST_SED.paths+=	-e 's,@PREFIX@,${PREFIX},g'
 SUBST_STAGE.paths=	post-build
 
-PKG_DESTDIR_SUPPORT = user-destdir
 INSTALLATION_DIRS += share/mserv-php share/mserv-php/image share/doc/mserv-php
 
 do-build:

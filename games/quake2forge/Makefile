@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/02/19 19:16:09 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/06 11:54:51 asau Exp $
 #
 
 DISTNAME=	quake2-0.3
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.quakeforge.net/
 COMMENT=	Enhanced Quake II engine
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 USE_LIBTOOL=	yes
@@ -33,7 +31,7 @@ SUBST_SED.snd=		-e "s,/dev/dsp,${DEVOSSAUDIO},g"
 SUBST_MESSAGE.snd=	Fixing hardcoded audio device.
 SUBST_STAGE.data=	post-patch
 SUBST_FILES.data=	configure
-SUBST_SED.data=		-e "s|PACKAGE=\'quake2\'|PACKAGE=\'${PKGBASE}\'|g"
+SUBST_SED.data=		-e s,PACKAGE=\'quake2\',PACKAGE=\'${PKGBASE}\',g
 SUBST_MESSAGE.data=	Fixing installation directories.
 
 .include "../../mk/bsd.prefs.mk"
@@ -47,7 +45,6 @@ CONFIGURE_ENV+=		ac_cv_header_sys_audioio_h=no
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

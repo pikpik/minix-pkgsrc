@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.71 2010/11/05 14:16:39 adam Exp $
+# $NetBSD: Makefile,v 1.74 2012/10/03 21:56:21 wiz Exp $
 
-DISTNAME=	courier-imap-4.8.1
+DISTNAME=	courier-imap-4.10.0
 PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=courier/}
@@ -13,8 +13,6 @@ HOMEPAGE=	http://www.courier-mta.org/imap/
 DEPENDS+=	courier-maildir>=0.65.0:../../mail/courier-maildir
 DEPENDS+=	couriertcpd>=0.65.0:../../net/couriertcpd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		env gmake perl
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -23,15 +21,13 @@ USE_LIBTOOL=		yes
 
 .include "../../mail/courier-mta/Makefile.common"
 
-CONFIGURE_ENV+=		CERTTOOL=${COURIER_CERTTOOL:Q}
-CONFIGURE_ENV+=		OPENSSL=${COURIER_OPENSSL:Q}
-
 CONFIGURE_ARGS+=	--datadir=${DATADIR}
 CONFIGURE_ARGS+=	--libexecdir=${LIBEXECDIR}
-
 CONFIGURE_ARGS+=	--with-mailuser=${REAL_ROOT_USER}
 CONFIGURE_ARGS+=	--with-piddir=${COURIER_STATEDIR}/tmp
 CONFIGURE_ARGS+=	--program-transform-name='s/\.rc$$//'
+CONFIGURE_ENV+=		CERTTOOL=${COURIER_CERTTOOL:Q}
+CONFIGURE_ENV+=		OPENSSL=${COURIER_OPENSSL:Q}
 
 # The rfc1035 and tcpd bits are built and installed by net/couriertcpd.
 # However, we still need to build in these directories because there
@@ -39,7 +35,6 @@ CONFIGURE_ARGS+=	--program-transform-name='s/\.rc$$//'
 # imap code.  We configure without IPv6 support because those necessary
 # convenience libraries don't have any IPv6 code, and we want to avoid
 # breakage due to IPv6 mis-detection.
-#
 CONFIGURE_ARGS+=	--without-ipv6
 
 INSTALL_AM_MAKEFLAGS=	sysconfdir=${EGDIR:Q}

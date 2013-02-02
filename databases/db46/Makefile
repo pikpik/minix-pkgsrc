@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1 2008/09/09 22:23:32 tron Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/02 21:25:16 asau Exp $
 
 DISTNAME=	db-4.6.21
 PKGNAME=	${DISTNAME:S/db/db46/}
@@ -9,13 +9,13 @@ MASTER_SITES=	http://download.oracle.com/berkeley-db/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.oracle.com/database/berkeley-db/db/index.html
 COMMENT=	Berkeley DB version 4 from Oracle
+LICENSE=	sleepycat-license # minus ASM stanza
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
-USE_TOOLS+=		pax
+USE_TOOLS+=		pax rpcgen
 GNU_CONFIGURE=		yes
 CONFIGURE_DIRS=		build_unix
 CONFIGURE_SCRIPT=	../dist/configure

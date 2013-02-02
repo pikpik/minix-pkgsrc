@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.46 2012/02/09 21:44:27 sbd Exp $
+# $NetBSD: Makefile,v 1.51 2012/12/16 01:52:14 obache Exp $
 
 DISTNAME=	knights-0.6
-PKGREVISION=	22
+PKGREVISION=	26
 CATEGORIES=	games kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=knights/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://knights.sourceforge.net/
 COMMENT=	Chess interface for KDE
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++

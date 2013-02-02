@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2011/04/22 13:42:30 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/25 06:57:01 asau Exp $
 
 DISTNAME=		sublib-0.9
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		multimedia textproc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=sublib/}
 EXTRACT_SUFX=		.zip
@@ -13,8 +13,6 @@ COMMENT=		Library that eases the development of subtitling applications
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config
 USE_LANGUAGES=		# empty
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SUBST_CLASSES+=			fix-prefix
 SUBST_STAGE.fix-prefix=		pre-configure

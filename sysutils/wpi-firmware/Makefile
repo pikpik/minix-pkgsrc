@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2006/07/02 13:35:55 rpaulo Exp $
+# $NetBSD: Makefile,v 1.2 2008/09/08 13:37:33 joerg Exp $
 #
 
 DISTNAME=		ipw3945-ucode-1.13
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://bughost.org/ipw3945/
 COMMENT=		Firmware binary images for wpi(4) driver
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes

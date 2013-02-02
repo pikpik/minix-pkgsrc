@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2007/04/21 05:23:07 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/23 19:51:33 asau Exp $
 
 WBM_NAME=	time
+PKGREVISION=	1
 
 COMMENT=	Webmin module to set the system time
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

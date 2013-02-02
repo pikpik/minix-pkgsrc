@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/12/21 12:07:27 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2011/04/14 19:34:09 asau Exp $
 
 DISTNAME=		otp_doc_html_${DIST_VERSION_MAJOR}${DIST_VERSION_MINOR:D-${DIST_VERSION_MINOR}}
 PKGNAME=		erlang-doc-${ERLANG_VERSION}
@@ -13,8 +13,6 @@ DIST_SUBDIR=		erlang
 
 # needs erlang installed for its directory structure
 DEPENDS+=		erlang-${ERLANG_VERSION}{,nb*}:../../lang/erlang
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes

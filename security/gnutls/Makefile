@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.109 2012/01/17 14:54:19 drochner Exp $
+# $NetBSD: Makefile,v 1.122 2012/11/06 19:01:36 drochner Exp $
 
-DISTNAME=	gnutls-2.12.17
+DISTNAME=	gnutls-3.0.25
 CATEGORIES=	security devel
-MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnutls/ \
+MASTER_SITES=	ftp://ftp.gnutls.org/pub/gnu/gnutls/ \
 		ftp://ftp.gnupg.org/gcrypt/gnutls/ \
 		${MASTER_SITE_GNU:=gnutls/}
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnutls.org/
@@ -13,16 +13,16 @@ COMMENT=	GNU Transport Layer Security library
 LICENSE=	gnu-gpl-v3 AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake perl
+USE_TOOLS+=		gmake perl pkg-config
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--without-p11-kit
 # this library duplicates (and conflicts with) openssl
 CONFIGURE_ARGS+=	--disable-openssl-compatibility
+CONFIGURE_ARGS+=	--disable-guile
 
 TEST_TARGET=		check
 INFO_FILES=		yes
@@ -43,8 +43,6 @@ EGDIR=		${PREFIX}/share/examples/gnutls
 INSTALLATION_DIRS=	${DOCDIR} ${EGDIR} include/gnutls
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/doc/TODO ${DESTDIR}${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/doc/gnutls.ps ${DESTDIR}${DOCDIR}
 	cd ${WRKSRC}/doc/examples && ${INSTALL_DATA} *.c ${DESTDIR}${EGDIR}
 
 .include "../../archivers/lzo/buildlink3.mk"

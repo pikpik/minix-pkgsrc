@@ -1,5 +1,5 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2012/12/03 15:03:02 wen Exp $
 
-SHA1 (Text-Xslate-1.5007.tar.gz) = 46d9f46fe9813663b2ca880f4004f8f56532be04
-RMD160 (Text-Xslate-1.5007.tar.gz) = 7c073a439163226c1f86cbf573abe38ac2cd38cc
-Size (Text-Xslate-1.5007.tar.gz) = 206946 bytes
+SHA1 (Text-Xslate-1.6001.tar.gz) = 18640b0cea4791c97642cc86813b019627551091
+RMD160 (Text-Xslate-1.6001.tar.gz) = 8538f9359c344b9cbe3bacb35d92fc4c039de8e9
+Size (Text-Xslate-1.6001.tar.gz) = 217747 bytes

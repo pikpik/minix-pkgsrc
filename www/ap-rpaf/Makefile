@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2007/03/19 16:35:51 tv Exp $
+# $NetBSD: Makefile,v 1.8 2012/06/21 05:35:03 dholland Exp $
 #
 
 DISTNAME=		mod_rpaf-0.5
@@ -10,12 +10,13 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://stderr.net/apache/rpaf/
 COMMENT=		Remaps reverse-proxied connections to "real" requesting IPs
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFLICTS=		ap-rpaf-[0-9]*
 
 APACHE_MODULE=		yes
 INSTALLATION_DIRS=	share/doc
+
+# does not compile with apache24
+PKG_APACHE_ACCEPTED=	apache13 apache2 apache22
 
 .include "../../mk/apache.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2006/12/27 13:37:37 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/06 11:55:01 asau Exp $
 #
 
 DISTNAME=		xjig-2.4
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		Jigsaw puzzle
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=		yes
 USE_LANGUAGES=		c c++
@@ -23,5 +21,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/tina.gif ${DESTDIR}${PREFIX}/lib/xjig
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

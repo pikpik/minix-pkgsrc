@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/06/15 14:57:10 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:56:34 wiz Exp $
 #
 
 DISTNAME=	qmqtool-current
 PKGNAME=	${DISTNAME:S/-current/-1.13/}
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${HOMEPAGE}
 EXTRACT_SUFX=	.tgz
@@ -10,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://jeremy.kister.net/code/qmqtool/
 COMMENT=	View and safely modify qmail queue
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=	# none

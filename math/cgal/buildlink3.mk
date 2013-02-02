@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.2 2012/02/29 16:32:25 hans Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2012/10/08 23:01:02 adam Exp $
 
 BUILDLINK_TREE+=	cgal
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	cgal
 CGAL_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.cgal+=	cgal>=3.9
-BUILDLINK_ABI_DEPENDS.cgal?=	cgal>=3.9nb3
+BUILDLINK_ABI_DEPENDS.cgal+=	cgal>=3.9nb11
 BUILDLINK_PKGSRCDIR.cgal?=	../../math/cgal
 
 .include "../../devel/boost-headers/buildlink3.mk"

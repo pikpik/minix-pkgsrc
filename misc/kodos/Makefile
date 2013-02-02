@@ -1,14 +1,13 @@
-# $NetBSD: Makefile,v 1.17 2011/11/01 06:02:07 sbd Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/08 09:57:26 asau Exp $
 
 DISTNAME=	kodos-2.4.9
+PKGREVISION=	1
 CATEGORIES=	misc python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kodos/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://kodos.sourceforge.net/
 COMMENT=	GUI for creating, testing and debugging Python REs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYDISTUTILSPKG=	yes
 USE_LANGUAGES=

@@ -1,0 +1,6 @@
+@comment $NetBSD$
+include/xcb/xcb_bitops.h
+include/xcb/xcb_image.h
+include/xcb/xcb_pixel.h
+lib/libxcb-image.la
+lib/pkgconfig/xcb-image.pc

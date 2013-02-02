@@ -1,18 +1,17 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:33:35 seb Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:54:54 wiz Exp $
 
-DISTNAME=	Devel-GlobalDestruction-0.04
+DISTNAME=	Devel-GlobalDestruction-0.09
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5 net
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Devel/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Devel-GlobalDestruction/
 COMMENT=	Perl 5 package exposing the flag which marks global destruction
+LICENSE=	${PERL5_LICENSE}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-BUILD_DEPENDS+=	p5-Scope-Guard-[0-9]*:../../devel/p5-Scope-Guard
-DEPENDS+=	p5-Sub-Exporter-[0-9]*:../../devel/p5-Sub-Exporter
+DEPENDS+=	p5-Sub-Exporter-Progressive>=0.001.002:../../devel/p5-Sub-Exporter-Progressive
 
 USE_LANGUAGES=		c
 PERL5_PACKLIST=		auto/Devel/GlobalDestruction/.packlist

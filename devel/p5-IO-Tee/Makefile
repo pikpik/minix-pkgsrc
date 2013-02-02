@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.10 2010/08/21 16:33:53 seb Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:55:08 wiz Exp $
 #
 
 DISTNAME=	IO-Tee-0.64
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	5
+PKGREVISION=	6
 SVR4_PKGNAME=	p5ite
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=IO/}
@@ -13,7 +13,6 @@ HOMEPAGE=	http://search.cpan.org/search?module=IO::Tee
 COMMENT=	Multiplex output to multiple output handles
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/IO/Tee/.packlist

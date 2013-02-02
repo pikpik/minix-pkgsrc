@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2010/09/19 11:31:12 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:58:19 wiz Exp $
 
 DISTNAME=	DateTime-Format-Epoch-0.13
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	time perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=DateTime/}
 
@@ -11,8 +11,6 @@ HOMEPAGE=	http://datetime.perl.org/
 #HOMEPAGE=	http://search.cpan.org/dist/DateTime-Format-Epoch/
 COMMENT=	Convert DateTimes to/from epoch seconds
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-DateTime>=0.31:../../time/p5-DateTime
 

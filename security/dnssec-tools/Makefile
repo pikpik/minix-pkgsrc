@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2012/03/08 01:14:24 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:57:23 wiz Exp $
 #
 
-DISTNAME=	dnssec-tools-1.12.1
+DISTNAME=	dnssec-tools-1.12.2
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://www.dnssec-tools.org/download/
 
@@ -10,10 +11,10 @@ HOMEPAGE=	http://www.dnssec-tools.org/
 COMMENT=	Toolkit to ease the deployment of DNSSEC related technologies
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+=	p5-Net-DNS-SEC-[0-9]*:../../security/p5-Net-DNS-SEC
 DEPENDS+=	p5-Text-Diff-[0-9]*:../../textproc/p5-Text-Diff
+
+CONFLICTS=	gethost-[0-9]*
 
 BUILD_DEFS+=	IPV6_READY
 
@@ -33,7 +34,7 @@ PERL5_PACKLIST+=	auto/convertar/.packlist
 PERL5_PACKLIST+=	auto/dnssec-tools/.packlist
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=        --with-nsec3
+CONFIGURE_ARGS+=	--with-nsec3
 CONFIGURE_ARGS+=	--with-resolv-conf=${PKG_SYSCONFDIR}/dnssec-tools/resolv.conf
 CONFIGURE_ARGS+=	--with-root-hints=${PKG_SYSCONFDIR}/dnssec-tools/root.hints
 CONFIGURE_ARGS+=	--with-perl-build-args=${MAKE_PARAMS:Q}
@@ -41,8 +42,8 @@ CONFIGURE_ARGS+=	--with-perl-build-args=${MAKE_PARAMS:Q}
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
 
-EGDIR=		${PREFIX}/share/examples/dnssec-tools
-PKG_SYSCONFSUBDIR?=     dnssec-tools
+EGDIR=			${PREFIX}/share/examples/dnssec-tools
+PKG_SYSCONFSUBDIR?=	dnssec-tools
 
 CONF_FILES=	${EGDIR}/dnsval.conf ${PKG_SYSCONFDIR}/dnsval.conf
 CONF_FILES+=	${EGDIR}/resolv.conf ${PKG_SYSCONFDIR}/resolv.conf

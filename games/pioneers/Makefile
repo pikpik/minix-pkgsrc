@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.29 2012/02/06 12:40:13 wiz Exp $
+# $NetBSD: Makefile,v 1.37 2012/10/06 11:54:49 asau Exp $
 #
 
 DISTNAME=	pioneers-0.11.3
-PKGREVISION=	14
+PKGREVISION=	21
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pio/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pio.sourceforge.net/
 COMMENT=	GNOME version of the Settlers of Catan board game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake pkg-config msgfmt
@@ -29,4 +27,5 @@ SUBST_SED.paths=	-e s,/usr/share/,${PREFIX}/share/,
 .include "../../graphics/librsvg/buildlink3.mk"
 .include "../../mk/omf-scrollkeeper.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

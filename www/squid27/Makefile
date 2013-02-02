@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2010/12/16 13:47:19 sborrill Exp $
+# $NetBSD: Makefile,v 1.19 2012/12/16 01:52:39 obache Exp $
 
 DISTNAME=	squid-2.7.STABLE9
-PKGREVISION=	2
+PKGREVISION=	5
 
 PKGNAME=	${DISTNAME:S/STABLE//}
 CATEGORIES=	www
@@ -19,5 +19,8 @@ GNU_CONFIGURE=		yes
 MESSAGE_SRC=		../squid/MESSAGE MESSAGE
 
 .include "../../www/squid/Makefile.squid"
+
+CONFIGURE_ARGS+=	--enable-auth=basic,digest,ntlm
+
 .include "../../www/squid/options.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2008/06/20 01:09:29 joerg Exp $
+# $NetBSD: Makefile,v 1.33 2008/09/25 14:02:09 wiz Exp $
 #
 
 DISTNAME=	arpwatch-2.1a15
@@ -8,8 +8,6 @@ MASTER_SITES=	ftp://ftp.ee.lbl.gov/
 
 MAINTAINER=	bouyer@NetBSD.org
 COMMENT=	Monitor ARP activity on a network, maintaining a database
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RCD_SCRIPTS=	arpwatch
 

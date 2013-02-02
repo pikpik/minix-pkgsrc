@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2008/05/25 21:42:20 joerg Exp $
+# $NetBSD: Makefile,v 1.24 2012/06/24 07:38:38 jperkin Exp $
 #
 
 DISTNAME=	eawpats12_full
@@ -15,13 +15,13 @@ RESTRICTED=	Some patches are copyrighted, some marked no-commercial-use
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=			${WRKDIR}
 NO_BUILD=		yes
 USE_LANGUAGES=		# empty
 USE_TOOLS+=		pax
 MESSAGE_SUBST+=		PKG_SYSCONFDIR=${PKG_SYSCONFDIR}
+
+INSTALLATION_DIRS=	share
 
 post-extract:
 	chmod go-w ${WRKSRC}/eawpats/gravis.cfg

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2010/08/21 16:36:30 seb Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/03 21:58:28 wiz Exp $
 #
 
 DISTNAME=	checkbot-1.79
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	www net perl5
 MASTER_SITES=	http://degraaff.org/checkbot/
 
@@ -17,7 +17,6 @@ DEPENDS+=	p5-URI>=1.10:../../www/p5-URI
 DEPENDS+=	p5-libwww>=5.76:../../www/p5-libwww
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/checkbot/.packlist
 

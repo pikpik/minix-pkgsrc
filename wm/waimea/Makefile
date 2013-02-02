@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.38 2011/11/01 06:02:44 sbd Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/23 10:24:15 wiz Exp $
 #
 
 DISTNAME=	waimea-0.4.0
-PKGREVISION=	19
+PKGREVISION=	21
 CATEGORIES=	wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=waimea/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/waimea/
 COMMENT=	Fast and highly customizable virtual window manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LANGUAGES=	c c++
@@ -29,7 +27,6 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXinerama/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .else
 .  if !exists(${X11BASE}/include/X11/extensions/Xinerama.h)
 CONFIGURE_ARGS+=	--disable-xinerama

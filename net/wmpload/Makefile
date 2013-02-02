@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2007/03/14 17:25:02 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/23 10:24:10 wiz Exp $
 #
 
 DISTNAME=	wmpload-0.9.5
@@ -10,12 +10,9 @@ MAINTAINER=	abs@NetBSD.org
 #HOMEPAGE=	http://www.engr.utk.edu/~mdsmith/pload/
 COMMENT=	PPP monitor for X11, totals and current in/out rates in 64x64 cube
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 HAS_CONFIGURE=	YES
 USE_IMAKE=	YES
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

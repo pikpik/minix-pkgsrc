@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.40 2011/07/15 13:31:29 obache Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/06 14:11:17 asau Exp $
 
 DISTNAME=	Imaging-1.1.7
 PKGNAME=	${PYPKGPREFIX}-imaging-1.1.7
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics python
 MASTER_SITES=	http://effbot.org/media/downloads/
 
-MAINTAINER=	tsarna@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pythonware.com/products/pil/
 COMMENT=	PIL, the Python Imaging Library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=	python
 EGG_NAME=	PIL-${PKGVERSION_NOREV}

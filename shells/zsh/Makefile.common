@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.63 2011/09/20 13:58:01 ryoon Exp $
+# $NetBSD: Makefile.common,v 1.66 2012/08/16 13:30:27 wiz Exp $
 # used by shells/zsh/Makefile
 # used by shells/zsh-current/Makefile
 
@@ -14,15 +14,13 @@ MAINTAINER=	${ZSH_MAINTAINER}
 HOMEPAGE=	http://zsh.sourceforge.net/
 COMMENT=	The Z shell
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ARGS+=	--enable-etcdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	zsh_cv_path_errno_h=/usr/include/errno.h
 
 USE_TOOLS+=		makeinfo
-INFO_FILES=		# PLIST
+INFO_FILES=		yes
 TEXINFO_REQD=		4.0
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
@@ -34,6 +32,11 @@ PKG_INSTALLATION_TYPES=	overwrite pkgviews
 INSTALL_UNSTRIPPED=	yes
 .endif
 
+PLIST_VARS+=	xattr
+.if exists(/usr/include/sys/xattr.h)
+PLIST.xattr=	yes
+.endif
+
 # Handle any PKG_OPTIONS that this package might have.
 .sinclude "options.mk"
 
@@ -41,7 +44,7 @@ BUILD_DEFS+=	ZSH_STATIC
 MAKE_JOBS_SAFE=	no
 INSTALL_TARGET=	install install.info
 PKG_SHELL=	bin/zsh
-PLIST_VARS=	dynamic terminfo curses
+PLIST_VARS+=	dynamic terminfo curses
 
 ################################################################################
 
@@ -122,10 +125,10 @@ PLIST.dynamic=	yes
 .undef MANZ
 
 pre-install:
-	@cd ${WRKSRC}/Completion; ${FIND} . -name \*.orig -exec ${RM} \{\} \;
+	cd ${WRKSRC}/Completion; ${FIND} . -name \*.orig -exec ${RM} \{\} \;
 
+INSTALLATION_DIRS+=	share/doc/zsh
 post-install:
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/doc/zsh
 	cd ${WRKSRC}/Etc && ${INSTALL_DATA} BUGS FAQ 	\
 		${DESTDIR}${PREFIX}/share/doc/zsh
 	cd ${WRKSRC} && ${INSTALL_DATA} FEATURES NEWS	\
@@ -139,15 +142,15 @@ post-install:
 do-test: do-su-test
 
 do-su-test:
-	@${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}								\
 	${ECHO_MSG} "*** Warning: This test needs to be run as root"
-	@${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}								\
 	realtarget="real-su-test";					\
 	action="install";						\
 	${_SU_TARGET}
 
 real-su-test:
-	@${_PKG_SILENT}${_PKG_DEBUG}					\
+	${RUN}								\
 	${ECHO_MSG} "${_PKGSRC_IN}> Testing for ${PKGNAME}"
-	@cd ${WRKSRC} && ${MAKE} check
-	@cd ${WRKSRC}/Test && ${MAKE} clean
+	cd ${WRKSRC} && ${MAKE} check
+	cd ${WRKSRC}/Test && ${MAKE} clean

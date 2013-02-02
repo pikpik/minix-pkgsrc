@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.84 2011/10/19 18:32:50 ryoon Exp $
+# $NetBSD: Makefile,v 1.88 2013/01/20 20:05:18 ryoon Exp $
 
-DISTNAME=	mew-6.4
+DISTNAME=	mew-6.5
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
 PKGREVISION=	1
 CATEGORIES=	mail
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.mew.org/
 COMMENT=	Messaging in the Emacs World
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	${MEW_CONTRIB_DIR:C|^${PREFIX}/||}
 
 DEPENDS+=	${RUBY_PKGPREFIX}-sqlite3>=1.1:../../databases/ruby-sqlite3
@@ -22,7 +21,7 @@ INFO_FILES=	yes
 
 GNU_CONFIGURE=	yes
 
-EMACS_VERSIONS_ACCEPTED=	emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox
+EMACS_VERSIONS_ACCEPTED=	emacs24 emacs24nox emacs23 emacs23nox emacs22 emacs22nox emacs21 emacs21nox
 EMACS_MODULES+=			base
 
 MAKE_FLAGS+=	DESTDIR=${DESTDIR:Q}

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:39:24 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/09/12 00:24:37 asau Exp $
 #
 
 DISTNAME=		gst-fluendo-mp3-0.10.15
-PKGREVISION=		3
+PKGREVISION=		5
 CATEGORIES=		audio
 MASTER_SITES=		http://core.fluendo.com/gstreamer/src/gst-fluendo-mp3/
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.fluendo.com/shop/product/fluendo-mp3-decoder/
 COMMENT=		MP3 decoder for gstreamer
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

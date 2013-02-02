@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/05/25 21:42:22 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/05/24 17:13:54 marino Exp $
 #
 
 DISTNAME=	ofl06trial
@@ -18,7 +18,7 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+NOT_FOR_PLATFORM+=	DragonFly-*-*
 
 WRKSRC=		${WRKDIR}/officetrial
 USE_LANGUAGES=	# none

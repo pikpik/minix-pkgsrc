@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/10/15 23:07:24 spz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/11 18:42:19 spz Exp $
 #
 
-DISTNAME=		xymon-4.3.5
-PKGNAME=		xymonclient-4.3.5
-PKGREVISION=		1
+DISTNAME=		xymon-4.3.10
+PKGNAME=		xymonclient-4.3.10
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xymon/}
 
@@ -13,7 +12,6 @@ COMMENT=		Network services monitor a la Big Brother
 
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		NO
 
 CONFLICTS+=		hobbitmon-[0-9]*
@@ -93,7 +91,7 @@ USE_TOOLS+=	awk:run		cat:run		cp:run
 USE_TOOLS+=	cut:run		date:run	egrep:run
 USE_TOOLS+=	expr:run	find:run	grep:run
 USE_TOOLS+=	head:run	id:run		ls:run
-USE_TOOLS+=	mv:run		rm:run		sed:run
+USE_TOOLS+=	mv:run		rm:run		sed
 USE_TOOLS+=	sort:run	tail:run	touch:run
 USE_TOOLS+=	tr:run		wc:run
 
@@ -113,7 +111,7 @@ OWN_DIRS_PERMS+=	${XYTMPDIR}/client ${XYMONUSER} ${XYMONGROUP} 0755
 OWN_DIRS_PERMS+=	${XYMONVAR} ${XYMONUSER} ${XYMONGROUP} 0755
 OWN_DIRS_PERMS+=	${XYMONVAR}/data ${XYMONUSER} ${XYMONGROUP} 0755
 
-CFILES+=		clientlaunch.cfg xymonclient.cfg
+CFILES+=		clientlaunch.cfg localclient.cfg xymonclient.cfg
 .for file in ${CFILES}
 CONF_FILES_PERMS+=	${EXAMPLEDIR}/${file} ${PKG_SYSCONFDIR.xymon}/${file} ${XYMONUSER} ${XYMONGROUP} 0644
 .endfor
@@ -123,5 +121,18 @@ MAKE_ENV+=		PKGDIR=${PREFIX}
 MAKE_ENV+=		INSTALLROOT=${DESTDIR}
 MAKE_ENV+=		PKGBUILD=y
 MAKE_ENV+=		${TOOLS_ENV}
+
+PLIST_VARS+=		meminfo
+.if ${OPSYS} == "NetBSD" || ${OPSYS} == "OpenBSD" || ${OPSYS} == "FreeBSD"
+PLIST.meminfo=		yes
+.endif
+
+post-patch:
+	${CP} ${WRKSRC}/build/Makefile.FreeBSD \
+	      ${WRKSRC}/build/Makefile.DragonFly
+	# Add dragonfly-meminfo support later (placeholder)
+	${SED} -e 's|freebsd-meminfo|dragonfly-meminfo|' \
+	      ${WRKSRC}/client/xymonclient-freebsd.sh > \
+	      ${WRKSRC}/client/xymonclient-dragonfly.sh
 
 .include "../../mk/bsd.pkg.mk"

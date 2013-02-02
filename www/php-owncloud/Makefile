@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2011/12/20 01:59:44 gdt Exp $
+# $NetBSD: Makefile,v 1.24 2012/12/24 01:40:59 ryoon Exp $
 #
 
-DISTNAME=	owncloud-3.0.0
+DISTNAME=	owncloud-4.5.6
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME}
 CATEGORIES=	www
 MASTER_SITES=	http://owncloud.org/releases/
@@ -12,13 +12,14 @@ HOMEPAGE=	http://owncloud.org/
 COMMENT=	Web services under your control
 LICENSE=	gnu-agpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+DEPENDS+=	${PHP_PKG_PREFIX}-dom>=5.3.0:../../textproc/php-dom
+DEPENDS+=	${PHP_PKG_PREFIX}-gd>=5.3.0:../../graphics/php-gd
+DEPENDS+=	${PHP_PKG_PREFIX}-iconv>=5.3.0:../../converters/php-iconv
+DEPENDS+=	${PHP_PKG_PREFIX}-json>=5.3.0:../../textproc/php-json
+DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.3.0:../../converters/php-mbstring
+DEPENDS+=	${PHP_PKG_PREFIX}-zip>=5.3.0:../../archivers/php-zip
+DEPENDS+=	${PHP_PKG_PREFIX}-zlib>=5.3.0:../../archivers/php-zlib
 
-DEPENDS+=	${PHP_PKG_PREFIX}-dom>=5.2.0:../../textproc/php-dom
-DEPENDS+=	${PHP_PKG_PREFIX}-gd>=5.2.0:../../graphics/php-gd
-DEPENDS+=	${PHP_PKG_PREFIX}-json>=5.2.0:../../textproc/php-json
-DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.2.0:../../converters/php-mbstring
-DEPENDS+=	${PHP_PKG_PREFIX}-zip>=5.2.0:../../archivers/php-zip
 .include "options.mk"
 
 WRKSRC=		${WRKDIR}/owncloud
@@ -31,13 +32,23 @@ USE_TOOLS+=	pax
 OC_DIR=		share/owncloud
 INSTALLATION_DIRS=	${OC_DIR}
 
+.include "../../mk/bsd.prefs.mk"
+
+APACHE_USER?=	www
+APACHE_GROUP?=	www
+PKG_GROUPS=	${APACHE_GROUP}
+PKG_USERS=	${APACHE_USER}:${APACHE_GROUP}
+
+PKG_USERS_VARS=		APACHE_USER
+PKG_GROUPS_VARS=	APACHE_GROUP
+
 BUILD_DEFS+=	APACHE_GROUP APACHE_USER
 FILES_SUBST+=	WWWGRP=${APACHE_GROUP} WWWOWN=${APACHE_USER} \
 		OC_DIR=${OC_DIR}
 
 do-install:
-	cd ${WRKSRC} && pax -rw -pmp * \
-		${DESTDIR}${PREFIX}/${OC_DIR}
+	cd ${WRKDIR} && pax -rw -pmp owncloud \
+		${DESTDIR}${PREFIX}/share
 
 .include "../../lang/php/phpversion.mk"
 .include "../../mk/bsd.pkg.mk"

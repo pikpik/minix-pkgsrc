@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2010/05/04 18:33:35 gdt Exp $
+# $NetBSD: Makefile,v 1.34 2011/07/03 08:26:55 obache Exp $
 #
 
 DISTNAME=		jabber-1.4.2
@@ -14,7 +14,6 @@ COMMENT=		Instant messaging server
 CONFLICTS=		jabberd2-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # A self-made configure script, and GNU ones in subdirectories.
 HAS_CONFIGURE=			yes

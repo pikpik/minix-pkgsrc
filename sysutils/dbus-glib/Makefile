@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.28 2012/02/06 12:41:31 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2012/09/30 21:52:32 dholland Exp $
 #
 
-DISTNAME=	dbus-glib-0.92
-PKGREVISION=	3
+DISTNAME=	dbus-glib-0.100
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://dbus.freedesktop.org/releases/dbus-glib/
 
@@ -12,7 +12,6 @@ COMMENT=	GLib bindings for the D-BUS message bus system
 LICENSE=	gnu-gpl-v2
 
 MAKE_JOBS_SAFE=		NO
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake msgfmt pkg-config
@@ -35,7 +34,7 @@ CONFIGURE_ARGS+=	--with-xml=expat
 .include "../../devel/gettext-lib/buildlink3.mk"
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.26
 .include "../../devel/glib2/buildlink3.mk"
-BUILDLINK_API_DEPENDS.dbus+=	dbus>=1.1
+BUILDLINK_API_DEPENDS.dbus+=	dbus>=1.2.16
 .include "../../sysutils/dbus/buildlink3.mk"
 .include "../../textproc/expat/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

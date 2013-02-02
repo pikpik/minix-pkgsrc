@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.121 2012/03/10 10:56:15 obache Exp $
+# $NetBSD: Makefile,v 1.130 2013/01/25 16:59:42 jperkin Exp $
 
-DISTNAME=	mono-2.10.6
-PKGREVISION=	2
+DISTNAME=	mono-2.10.9
+PKGREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://download.mono-project.com/sources/mono/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,27 +10,27 @@ MAINTAINER=	kefren@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/
 COMMENT=	Open source implementation of the .NET Development Framework
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 LICENSE=	mit AND gnu-gpl-v2 AND gnu-lgpl-v2 AND x11
 
 BUILD_DEPENDS+=	p5-XML-Parser-[0-9]*:../../textproc/p5-XML-Parser
 
-CONFLICTS=	pnet-[0-9]*
+CONFLICTS=	pnet-[0-9]* mcsim-[0-9]* lc-[0-9]*
 
 ALL_ENV+=		MONO_SHARED_DIR=${WRKDIR:Q}
 
-USE_TOOLS+=		bison gmake gtar perl:run pkg-config bash:run msgfmt
+USE_TOOLS+=		bison gmake perl:run pkg-config bash:run msgfmt
 USE_LIBTOOL=		yes
 USE_LANGUAGES+=		c c++
-EXTRACT_USING=		gtar
+EXTRACT_USING=		bsdtar
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-icu=yes
 CONFIGURE_ARGS+=	--with-preview=yes
 CONFIGURE_ARGS+=	--with-libgdiplus=installed
+CONFIGURE_ARGS+=	--disable-dtrace
 
 .include "options.mk"
 

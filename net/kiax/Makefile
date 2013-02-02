@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:39:04 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/23 17:18:30 asau Exp $
 
 DISTNAME=	kiax-0.8.51-src
 PKGNAME=	${DISTNAME:S/-src//}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	comms net audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kiax/}
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.kiax.org/
 COMMENT=	Open internet telephony system
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin
 
 USE_LIBTOOL=		yes
@@ -36,7 +35,8 @@ SUBST_FILES.path=	src/src.pro bin/Makefile
 SUBST_SED.path=		-e 's:/usr/local:${PREFIX}:g'
 
 .include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} == "NetBSD" && exists(/usr/include/sys/pset.h)
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/sys/pset.h) || \
+    ${OPSYS} == "SunOS"
 RT_LIB_SCHED=		-lrt
 .else
 RT_LIB_SCHED=		# empty

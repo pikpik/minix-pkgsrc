@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.14 2011/11/30 10:44:46 drochner Exp $
+# $NetBSD: Makefile,v 1.17 2012/06/27 14:15:31 asau Exp $
 #
 
 DISTNAME=		xmlstarlet-1.3.1
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xmlstar/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://xmlstar.sourceforge.net/
 COMMENT=		Command line utilities for XML manipulation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		mit
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

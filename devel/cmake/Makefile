@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.61 2011/11/01 06:50:28 sbd Exp $
+# $NetBSD: Makefile,v 1.66 2012/11/15 19:31:54 adam Exp $
 
-DISTNAME=	cmake-${CMAKE_API}.7
+DISTNAME=	cmake-${CMAKE_API}.10
+PKGREVISION=	1
 CATEGORIES=	devel
-MASTER_SITES=	http://www.cmake.org/files/v2.8/
+MASTER_SITES=	http://www.cmake.org/files/v${CMAKE_API}/
 
 CMAKE_API=	2.8
 
@@ -10,8 +11,6 @@ MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.cmake.org/
 COMMENT=	Cross platform make
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.28 2010/02/04 16:10:47 taca Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/31 11:19:48 asau Exp $
 
 DISTNAME=	swig-1.3.36
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=swig/}
 
@@ -11,6 +11,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=swig/}
 # breaks gnuradio.  Please try to contact gdt@netbsd.org before
 # updating to 1.3.37.  See message on discuss-gnuradio:
 # Message-Id: <FA0E4567-C660-4C30-B604-2FA000330874@alum.mit.edu>
+# As of 2012-10, gnuradio is known to work with swig 2.
 #
 # x11/ruby-wxruby-2.0.1 requires 1.3.32 for Ruby 1.8 and 1.3.37 for
 # Ruby 1.9.  And SWIG 1.3.39 introduced some incompatibility with
@@ -19,10 +20,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=swig/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.swig.org/
-COMMENT=	Simplified Wrapper and Interface Generator
+COMMENT=	Simplified Wrapper and Interface Generator (version 1)
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		swig-build-[0-9]*
 

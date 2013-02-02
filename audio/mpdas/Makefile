@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2012/02/06 12:39:28 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/02 23:48:00 asau Exp $
 #
 
 DISTNAME=			mpdas-0.3.0
-PKGREVISION=			3
+PKGREVISION=			5
 CATEGORIES=			audio
 MASTER_SITES=		http://50hz.ws/mpdas/
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=			gls@NetBSD.org
 HOMEPAGE=			http://50hz.ws/mpdas/
 COMMENT=			Mpdas is an AudioScrobbler client for MPD written in C++
 LICENSE=			modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=			pkg-config
 USE_LANGUAGES=		c++

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.57 2011/11/29 20:53:49 wiz Exp $
+# $NetBSD: Makefile,v 1.60 2012/10/08 09:57:19 asau Exp $
 
-DISTNAME=	dialog-1.1-20120215
+DISTNAME=	dialog-1.2-20121230
 PKGNAME=	${DISTNAME:C/-2/.2/}
 CATEGORIES=	misc
 MASTER_SITES=	ftp://invisible-island.net/dialog/
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://invisible-island.net/dialog/dialog.html
 COMMENT=	Display dialog boxes from shell scripts
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 MAKE_FILE=	makefile

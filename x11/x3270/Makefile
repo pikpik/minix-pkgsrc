@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.29 2011/10/09 05:26:08 dholland Exp $
+# $NetBSD: Makefile,v 1.31 2012/08/06 20:12:17 gls Exp $
 
-DISTNAME=	suite3270-3.3.12ga7-src
-PKGNAME=	x3270-3.3.12ga7
-PKGREVISION=	1
+DISTNAME=	suite3270-3.3.12ga11-src
+PKGNAME=	x3270-3.3.12ga11
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=x3270/}
 EXTRACT_SUFX=	.tgz
@@ -13,7 +12,6 @@ COMMENT=	3270 Terminal emulator
 LICENSE=	modified-bsd
 
 GNU_CONFIGURE=	yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/x3270-3.3
 USE_IMAKE=	yes

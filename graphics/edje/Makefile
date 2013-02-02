@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.3 2012/12/16 01:52:16 obache Exp $
 #
 
 DISTNAME=	edje-1.1.0
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.enlightenment.org/releases/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,7 +11,6 @@ MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://enlightenment.org/
 COMMENT=	Interface Abstraction Library and Toolset
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 # epp binary is GPL
 LICENSE=		2-clause-bsd AND gnu-gpl-v2
 

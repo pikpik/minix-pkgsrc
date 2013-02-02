@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2008/03/03 19:21:38 jlam Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/03 12:55:12 asau Exp $
 
 DISTNAME=	fMSX351
 PKGNAME=	fmsx-3.5.1
+PKGREVISION=	1
 CATEGORIES=	emulators x11
 MASTER_SITES=	http://fms.komkon.org/fMSX/
 EXTRACT_SUFX=	.zip
@@ -15,8 +16,6 @@ NO_BIN_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_SRC_ON_FTP=		${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=	${WRKDIR}
 
@@ -63,6 +62,5 @@ do-install:
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

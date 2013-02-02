@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.54 2012/01/22 11:23:35 obache Exp $
+# $NetBSD: Makefile,v 1.57 2012/10/28 06:30:13 asau Exp $
 
 DISTNAME=	dillo-3.0.2
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://www.dillo.org/download/
 EXTRACT_SUFX=	.tar.bz2
@@ -8,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.dillo.org/
 COMMENT=	Very small and fast graphical web-browser
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 GNU_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2007/02/22 19:26:31 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2008/03/04 06:59:06 jlam Exp $
 #
 
 DISTNAME=	xrick-021212
@@ -16,8 +16,6 @@ NO_BIN_ON_CDROM=    ${RESTRICTED}
 NO_SRC_ON_CDROM=    ${RESTRICTED}
 NO_BIN_ON_FTP=	    ${RESTRICTED}
 NO_SRC_ON_FTP=	    ${RESTRICTED}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake gunzip
 

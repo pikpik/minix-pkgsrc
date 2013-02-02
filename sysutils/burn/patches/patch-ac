@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ac,v 1.1 2009/04/25 12:07:04 rh Exp $
+
+Prevent a crash if item is nil.
 
 --- DriversPrefs.m.orig	2005-05-13 01:58:49.000000000 +1000
 +++ DriversPrefs.m

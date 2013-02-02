@@ -1,15 +1,15 @@
-# $NetBSD: Makefile,v 1.7 2010/02/14 20:00:12 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2012/07/18 20:04:08 cheusov Exp $
 #
 
 DISTNAME=	unfs3-0.9.22
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=unfs3/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://unfs3.sourceforge.net/
 COMMENT=	Userspace NFSv3 server
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	modified-bsd
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	flex bison

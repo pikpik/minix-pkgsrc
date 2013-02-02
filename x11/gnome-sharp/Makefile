@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2012/02/06 12:41:57 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/29 05:06:15 asau Exp $
 #
 
 DISTNAME=	gnome-sharp-2.24.2
-PKGREVISION=	10
+PKGREVISION=	17
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-sharp/2.24/}
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mono-project.com/GtkSharp
 COMMENT=	C\# bindings for the GNOME platform
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
@@ -21,11 +19,11 @@ MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == NetBSD
-.if !empty(OS_VERSION:M5.99.*) || !empty(OS_VERSION:M[6789].*)
+.  if !empty(OS_VERSION:M5.99.*) || !empty(OS_VERSION:M[6789].*)
 CONFIGURE_ENV+=		EXTRACSDEFINES=-define:TIMET_IS_64BITS
-.else
+.  else
 CONFIGURE_ENV+=		EXTRACSDEFINES=-define:TIMET_IS_32BITS
-.endif
+.  endif
 .endif
 
 PKGCONFIG_OVERRIDE+=	art/art-sharp-2.0.pc.in

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/03/05 17:17:52 jlam Exp $
+# $NetBSD: Makefile,v 1.11 2009/04/09 00:48:16 joerg Exp $
 
 DISTNAME=	mtscan-20050129
 PKGREVISION=	1
@@ -11,8 +11,6 @@ HOMEPAGE=	http://mail-index.NetBSD.org/port-i386/2005/01/29/0011.html
 COMMENT=	Magtape scanner - reports record and file-mark structure
 
 NOT_FOR_PLATFORM=	Interix-*-* # no local tape ioctls
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CPPFLAGS+=	-DMTIO
 

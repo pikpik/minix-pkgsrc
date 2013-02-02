@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2011/10/01 20:39:28 dholland Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/04 00:22:00 cheusov Exp $
 #
 
 DISTNAME=	pyexcelerator-${VERSION}
 PKGNAME=	${PYPKGPREFIX}-Excelerator-${VERSION}
+PKGREVISION=	1
 VERSION=	0.6.4.1
 CATEGORIES=	textproc python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pyexcelerator/}
@@ -11,8 +12,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://sourceforge.net/projects/pyexcelerator/
 COMMENT=	Python library for generating Excel 97/2000/XP/2003 files
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	#none
 
@@ -36,6 +35,8 @@ REPLACE_PYTHON+=	pyExcelerator/Worksheet.py
 REPLACE_PYTHON+=	pyExcelerator/__init__.py
 
 INSTALLATION_DIRS=	share/doc/py-Excelerator share/examples/py-Excelerator
+
+PYTHON_SELF_CONFLICT=	yes
 
 post-install:
 	for f in CHANGES.txt LICENSE.txt README.txt THANKS.txt TODO.txt ; do \

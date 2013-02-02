@@ -1,12 +1,12 @@
-# $NetBSD: buildlink3.mk,v 1.10 2006/12/02 10:15:46 wulf Exp $
+# $NetBSD: buildlink3.mk,v 1.11 2009/03/20 19:24:30 joerg Exp $
 
 BUILDLINK_TREE+=	swig
 
 .if !defined(SWIG_BUILDLINK3_MK)
 SWIG_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.swig+=	swig>=1.3.24
-BUILDLINK_ABI_DEPENDS.swig+=	swig>=1.3.31
+BUILDLINK_API_DEPENDS.swig+=	swig>=1.3.24<2.0
+BUILDLINK_ABI_DEPENDS.swig+=	swig>=1.3.31<2.0
 BUILDLINK_PKGSRCDIR.swig?=	../../devel/swig
 # only contains a static library
 BUILDLINK_DEPMETHOD.swig?=	build

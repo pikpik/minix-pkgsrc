@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.54 2011/01/31 16:55:28 drochner Exp $
-#
-
-PKGREVISION=		1
+# $NetBSD: Makefile,v 1.57 2012/09/14 12:15:01 drochner Exp $
 
 .include "../../print/poppler/Makefile.common"
+
+PKGREVISION=		1
 
 COMMENT=		PDF rendering library
 MAINTAINER=		reed@reedmedia.net
@@ -23,8 +22,6 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--enable-splash-output
 # Don't build the cairo graphics backend.
 CONFIGURE_ARGS+=	--disable-cairo-output
-# Don't compile poppler qt wrapper.
-CONFIGURE_ARGS+=	--disable-poppler-qt
 # Don't compile GTK+ test program.
 CONFIGURE_ARGS+=	--disable-gtk-test
 # Don't compile GLib wrapper which also needs gtk2
@@ -40,7 +37,7 @@ PKG_SUGGESTED_OPTIONS=	poppler-cms
 
 .if !empty(PKG_OPTIONS:Mpoppler-cms)
 CONFIGURE_ARGS+=	--enable-cms
-.include "../../graphics/lcms/buildlink3.mk"
+.include "../../graphics/lcms2/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--disable-cms
 .endif

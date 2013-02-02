@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2009/07/07 20:49:20 joerg Exp $
+# $NetBSD: Makefile,v 1.23 2011/10/06 21:56:15 dholland Exp $
 #
 
 DISTNAME=		RTF-1.10
@@ -15,8 +15,6 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		${MASTER_SITES}
 COMMENT=		RTF to troff/groff/text converter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/rtf
 INSTALL_TARGET=		install install.man

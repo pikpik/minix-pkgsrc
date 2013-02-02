@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2008/11/04 14:27:37 reed Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 11:43:32 asau Exp $
 
 DISTNAME=		ed-1.1
+PKGREVISION=		2
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_GNU:=ed/}
 EXTRACT_SUFX=		.tar.bz2
@@ -8,21 +9,24 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		reed@reedmedia.net
 HOMEPAGE=		http://www.gnu.org/software/ed/ed.html
 COMMENT=		GNU version of line-oriented text editor
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		gnu-gpl-v3
 
 GNU_CONFIGURE=		YES
 
-.include "../../mk/bsd.prefs.mk"
+INFO_FILES=		yes
 
-INFO_FILES=		# PLIST
-
-.if defined(GNU_PROGRAM_PREFIX)
-CONFIGURE_ARGS+=	--program-prefix=${GNU_PROGRAM_PREFIX:Q}
-.endif
-PLIST_SUBST+=		GNU_PROGRAM_PREFIX=${GNU_PROGRAM_PREFIX:Q}
-BUILD_DEFS+=		GNU_PROGRAM_PREFIX
+CONFIGURE_ARGS+=	--program-prefix=g
 
 INSTALL_TARGET=		install install-man
+
+AUTO_MKDIRS=		yes
+
+.include "../../mk/bsd.prefs.mk"
+
+post-install:
+.for f in ed red
+	${LN} -sf ${PREFIX}/bin/g${f} ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/${f}
+	${LN} -sf ${PREFIX}/${PKGMANDIR}/man1/g${f}.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/${f}.1
+.endfor
 
 .include "../../mk/bsd.pkg.mk"

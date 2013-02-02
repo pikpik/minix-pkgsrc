@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2009/08/06 01:44:51 minskim Exp $
+# $NetBSD: Makefile,v 1.32 2012/10/31 11:19:45 asau Exp $
 #
 
 DISTNAME=	semi-1.14.6
@@ -13,13 +13,12 @@ PATCHFILES=		semi-1.14.6-pgg-gpg.patch
 PATCH_DIST_STRIP=	-p0
 
 MAINTAINER=	uebayasi@NetBSD.org
-HOMEPAGE=	http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/elisp/SEMI/
+HOMEPAGE=	http://git.chise.org/elisp/semi/
 COMMENT=	Emacs lisp library to provide MIME feature
 LICENSE=	gnu-gpl-v2 OR gnu-gpl-v3
 
 BUILD_DEPENDS+=	qkc-[0-9]*:../../converters/qkc
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+=	${EMACS_LISPPREFIX:C|^${PREFIX}/||}/semi \
 			${EMACS_INFOPREFIX:C|^${PREFIX}/||}
 

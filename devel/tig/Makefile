@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2011/02/28 14:52:47 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2011/04/10 10:24:47 ryoon Exp $
 #
 
 DISTNAME=	tig-0.17
@@ -8,8 +8,6 @@ MASTER_SITES=	http://jonas.nitro.dk/tig/releases/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jonas.nitro.dk/tig/
 COMMENT=	Ncurses-based GIT repository tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	asciidoc-[0-9]*:../../textproc/asciidoc
 BUILD_DEPENDS+=	xmlto-[0-9]*:../../textproc/xmlto

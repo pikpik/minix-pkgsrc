@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2008/03/02 03:48:36 jlam Exp $
+# $NetBSD: Makefile,v 1.29 2011/03/11 09:59:57 zafer Exp $
 
 DISTNAME=	ha0999
 PKGNAME=	ha-0.999b
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	The HA archiver using the HSC compression method
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 

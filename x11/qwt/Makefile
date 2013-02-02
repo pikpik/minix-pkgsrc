@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.35 2009/06/30 00:07:25 joerg Exp $
+# $NetBSD: Makefile,v 1.36 2009/12/17 18:48:39 abs Exp $
 
 DISTNAME=	qwt-5.0.2
 CATEGORIES=	x11
@@ -19,7 +19,6 @@ USE_LIBTOOL=	yes
 CONFLICTS=	qwtlib-[0-9]*
 
 AUTO_MKDIRS=		yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_ENV+=	INSTALL_ROOT=${DESTDIR:Q}
 

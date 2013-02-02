@@ -1,12 +1,12 @@
-# $NetBSD: Makefile,v 1.4 2008/10/15 01:58:53 bjs Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/26 13:20:11 jperkin Exp $
 #
 
 .include "../../audio/libmpg123/Makefile.common"
 
 PKGNAME=	libmpg123-${LIBMPG123_VERSION}
 COMMENT=	MPEG layer 1, 2, and 3 decoder library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+MAINTAINER=	pkgsrc-users@NetBSD.org
+LICENSE=	gnu-lgpl-v2
 
 PKGCONFIG_OVERRIDE+=	libmpg123.pc.in
 
@@ -17,17 +17,12 @@ INSTALL_DIRS=		src/libmpg123
 
 post-extract:
 	${ECHO} "#!${CONFIG_SHELL}${.newline}${TRUE}" > \
-		${WRKSRC:Q}/libltdl/configure
+		${WRKSRC}/libltdl/configure
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC:Q}/libmpg123.pc \
-		${DESTDIR:Q}${PREFIX:Q}/lib/pkgconfig
+	${INSTALL_DATA} ${WRKSRC}/libmpg123.pc \
+		${DESTDIR}${PREFIX}/lib/pkgconfig
 
-.include "mpg123-options.mk"
-
-.include "../../mk/bsd.prefs.mk"
-.if ${OPSYS} == "SunOS"
-MAKE_ENV+=	SunOS_LDFLAGS="-shared -mimpure-text"
-.endif
+.include "options.mk"
 
 .include "../../mk/bsd.pkg.mk"

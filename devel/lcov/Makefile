@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/01/26 01:05:04 reed Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:54:31 wiz Exp $
 #
 
 DISTNAME=	lcov-1.9
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ltp/}
 
@@ -11,7 +12,6 @@ COMMENT=	Front-end for GCC's coverage testing tool gcov
 
 NO_BUILD=		yes
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1 ${PKGMANDIR}/man5 share/examples/lcov
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		perl
 
 REPLACE_PERL=		bin/gendesc bin/genhtml bin/geninfo bin/genpng bin/lcov

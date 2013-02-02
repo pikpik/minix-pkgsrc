@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.27 2011/12/05 10:46:07 wiz Exp $
+# $NetBSD: Makefile,v 1.29 2012/07/01 17:36:16 wiz Exp $
 
-DISTNAME=	jhead-2.95
+DISTNAME=	jhead-2.96
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.sentex.net/~mwandel/jhead/
 
@@ -10,7 +10,6 @@ COMMENT=	Extract EXIF header from JPEG image
 LICENSE=	public-domain
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FILE=	makefile
 

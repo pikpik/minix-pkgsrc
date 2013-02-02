@@ -1,0 +1,8 @@
+@comment $NetBSD$
+bin/xnp2
+man/ja/man1/xnp2.1
+man/man1/xnp2.1
+share/doc/xnp2/README.ja
+share/xnp2/fddseek.wav
+share/xnp2/fddseek1.wav
+share/xnp2/np2tool.d88

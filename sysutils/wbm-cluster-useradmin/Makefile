@@ -1,12 +1,11 @@
-# $NetBSD: Makefile,v 1.3 2007/09/01 06:35:01 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 19:51:31 asau Exp $
 
 WBM_NAME=	cluster-useradmin
+PKGREVISION=	1
 
 WBM_DEPEND_MODULES=     useradmin
 
 COMMENT=	Webmin module to manage users & groups within a Webmin cluster
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

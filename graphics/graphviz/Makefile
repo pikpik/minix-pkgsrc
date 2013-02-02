@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.97 2012/03/04 11:37:48 obache Exp $
+# $NetBSD: Makefile,v 1.110 2012/11/17 22:37:40 markd Exp $
 
 DISTNAME=	graphviz-2.26.3
-PKGREVISION=	9
+PKGREVISION=	19
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.graphviz.org/pub/graphviz/stable/SOURCES/
 
@@ -11,7 +11,6 @@ COMMENT=	Graph Drawing Programs from AT&T Research and Lucent Bell Labs
 LICENSE=	cpl-1.0
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CHECK_FILES_SKIP+=	${PREFIX}/lib/graphviz/config6
 
@@ -26,6 +25,8 @@ CONFIGURE_ARGS+=	--disable-php
 CONFIGURE_ARGS+=	--disable-python
 CONFIGURE_ARGS+=	--disable-ruby
 CONFIGURE_ARGS+=	--disable-sharp
+CONFIGURE_ARGS+=	--disable-r
+CONFIGURE_ARGS+=	--with-gts=no
 # build fails when PHP and/or Ruby are also installed
 CONFIGURE_ENV+=		ac_cv_prog_PHP=
 CONFIGURE_ENV+=		ac_cv_prog_RUBY=

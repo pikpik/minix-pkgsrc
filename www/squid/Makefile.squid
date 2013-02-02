@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.squid,v 1.18 2010/07/29 03:04:16 taca Exp $
+# $NetBSD: Makefile.squid,v 1.20 2012/10/28 06:31:05 asau Exp $
 #
 # used by www/squid27/Makefile
 # used by www/squid31/Makefile
@@ -19,7 +19,6 @@ MAKE_ENV+=	PKG_PREFIX=${PREFIX:Q} VARBASE=${VARBASE:Q}
 CONFIGURE_ARGS=	--sysconfdir=${PKG_SYSCONFDIR:Q} \
 		--localstatedir=${SQUID_DATADIR:Q} \
 		--datarootdir=${PREFIX}/share/squid \
-		--enable-auth=basic,digest,ntlm \
 		--enable-cachemgr-hostname=localhost \
 		--enable-delay-pools \
 		--enable-icmp \
@@ -62,8 +61,6 @@ INSTALLATION_DIRS=	bin libexec ${PKGMANDIR}/man8 sbin \
 			share/squid share/squid/errors share/squid/icons \
 			${DOCDIR} ${EGDIR}
 SPECIAL_PERMS+=		libexec/pinger ${SETUID_ROOT_PERMS}
-
-PKG_DESTDIR_SUPPORT?=	user-destdir
 
 POST_INSTALL_EXTRA?=
 

@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2010/08/21 16:36:06 seb Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:58:04 wiz Exp $
 #
 
 DISTNAME=	Text-Quoted-2.06
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Text/}
 
@@ -15,7 +15,6 @@ LICENSE=	${PERL5_LICENSE}
 DEPENDS+=	p5-Text-Autoformat>=1.04:../../textproc/p5-Text-Autoformat
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Text/Quoted/.packlist

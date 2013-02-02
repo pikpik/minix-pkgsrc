@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.23 2008/06/12 02:14:52 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/03 21:58:15 wiz Exp $
 #
 
 DISTNAME=	postgresql_autodoc-1.30
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc databases
 MASTER_SITES=	http://www.rbt.ca/autodoc/binaries/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.rbt.ca/autodoc/
 COMMENT=	Generate HTML, DOT, and XML description of database structure
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Term-ReadKey-[0-9]*:../../devel/p5-Term-ReadKey
 DEPENDS+=	p5-DBD-postgresql-[0-9]*:../../databases/p5-DBD-postgresql

@@ -1,11 +1,10 @@
-@comment $NetBSD: PLIST,v 1.28 2012/02/06 13:11:35 adam Exp $
+@comment $NetBSD: PLIST,v 1.38 2012/11/16 21:18:38 adam Exp $
 bin/git
 bin/git-cvsserver
 bin/git-receive-pack
 bin/git-shell
 bin/git-upload-archive
 bin/git-upload-pack
-${PLIST.gui}bin/gitk
 ${PERL5_SUB_INSTALLVENDORLIB}/Git.pm
 lib/perl5/vendor_perl/${PKGMANDIR}/man3/Git.3
 ${PLIST.python}${PYSITELIB}/git_remote_helpers/__init__.py
@@ -44,13 +43,14 @@ libexec/git-core/git-checkout
 libexec/git-core/git-checkout-index
 libexec/git-core/git-cherry
 libexec/git-core/git-cherry-pick
-${PLIST.gui}libexec/git-core/git-citool
 libexec/git-core/git-clean
 libexec/git-core/git-clone
+libexec/git-core/git-column
 libexec/git-core/git-commit
 libexec/git-core/git-commit-tree
 libexec/git-core/git-config
 libexec/git-core/git-count-objects
+libexec/git-core/git-credential
 libexec/git-core/git-credential-cache
 libexec/git-core/git-credential-cache--daemon
 libexec/git-core/git-credential-store
@@ -78,8 +78,6 @@ libexec/git-core/git-fsck-objects
 libexec/git-core/git-gc
 libexec/git-core/git-get-tar-commit-id
 libexec/git-core/git-grep
-${PLIST.gui}libexec/git-core/git-gui
-${PLIST.gui}libexec/git-core/git-gui--askpass
 libexec/git-core/git-hash-object
 libexec/git-core/git-help
 libexec/git-core/git-http-backend
@@ -115,6 +113,7 @@ libexec/git-core/git-mktree
 libexec/git-core/git-mv
 libexec/git-core/git-name-rev
 libexec/git-core/git-notes
+libexec/git-core/git-p4
 libexec/git-core/git-pack-objects
 libexec/git-core/git-pack-redundant
 libexec/git-core/git-pack-refs
@@ -142,6 +141,7 @@ libexec/git-core/git-remote-ftps
 libexec/git-core/git-remote-http
 libexec/git-core/git-remote-https
 libexec/git-core/git-remote-testgit
+libexec/git-core/git-remote-testsvn
 libexec/git-core/git-repack
 libexec/git-core/git-replace
 libexec/git-core/git-repo-config
@@ -187,7 +187,9 @@ libexec/git-core/git-whatchanged
 libexec/git-core/git-write-tree
 libexec/git-core/mergetools/araxis
 libexec/git-core/mergetools/bc3
+libexec/git-core/mergetools/codecompare
 libexec/git-core/mergetools/defaults
+libexec/git-core/mergetools/deltawalker
 libexec/git-core/mergetools/diffuse
 libexec/git-core/mergetools/ecmerge
 libexec/git-core/mergetools/emerge
@@ -200,6 +202,7 @@ libexec/git-core/mergetools/tkdiff
 libexec/git-core/mergetools/tortoisemerge
 libexec/git-core/mergetools/vim
 libexec/git-core/mergetools/xxdiff
+share/examples/scmgit/git-completion.bash
 share/examples/scmgit/templates/description
 share/examples/scmgit/templates/hooks/applypatch-msg.sample
 share/examples/scmgit/templates/hooks/commit-msg.sample
@@ -210,72 +213,13 @@ share/examples/scmgit/templates/hooks/pre-rebase.sample
 share/examples/scmgit/templates/hooks/prepare-commit-msg.sample
 share/examples/scmgit/templates/hooks/update.sample
 share/examples/scmgit/templates/info/exclude
-${PLIST.gui}share/git-gui/lib/about.tcl
-${PLIST.gui}share/git-gui/lib/blame.tcl
-${PLIST.gui}share/git-gui/lib/branch.tcl
-${PLIST.gui}share/git-gui/lib/branch_checkout.tcl
-${PLIST.gui}share/git-gui/lib/branch_create.tcl
-${PLIST.gui}share/git-gui/lib/branch_delete.tcl
-${PLIST.gui}share/git-gui/lib/branch_rename.tcl
-${PLIST.gui}share/git-gui/lib/browser.tcl
-${PLIST.gui}share/git-gui/lib/checkout_op.tcl
-${PLIST.gui}share/git-gui/lib/choose_font.tcl
-${PLIST.gui}share/git-gui/lib/choose_repository.tcl
-${PLIST.gui}share/git-gui/lib/choose_rev.tcl
-${PLIST.gui}share/git-gui/lib/class.tcl
-${PLIST.gui}share/git-gui/lib/commit.tcl
-${PLIST.gui}share/git-gui/lib/console.tcl
-${PLIST.gui}share/git-gui/lib/database.tcl
-${PLIST.gui}share/git-gui/lib/date.tcl
-${PLIST.gui}share/git-gui/lib/diff.tcl
-${PLIST.gui}share/git-gui/lib/encoding.tcl
-${PLIST.gui}share/git-gui/lib/error.tcl
-${PLIST.macosx}share/git-gui/lib/Git Gui.app/Contents/Info.plist
-${PLIST.macosx}share/git-gui/lib/Git Gui.app/Contents/MacOS/${WISH_APP}
-${PLIST.macosx}share/git-gui/lib/Git Gui.app/Contents/Resources/Scripts/AppMain.tcl
-${PLIST.macosx}share/git-gui/lib/Git Gui.app/Contents/Resources/git-gui.icns
-${PLIST.gui}share/git-gui/lib/git-gui.ico
-${PLIST.macosx}share/git-gui/lib/git-gui.tcl
-${PLIST.gui}share/git-gui/lib/index.tcl
-${PLIST.gui}share/git-gui/lib/line.tcl
-${PLIST.gui}share/git-gui/lib/logo.tcl
-${PLIST.gui}share/git-gui/lib/merge.tcl
-${PLIST.gui}share/git-gui/lib/mergetool.tcl
-${PLIST.gui}share/git-gui/lib/msgs/de.msg
-${PLIST.gui}share/git-gui/lib/msgs/el.msg
-${PLIST.gui}share/git-gui/lib/msgs/fr.msg
-${PLIST.gui}share/git-gui/lib/msgs/hu.msg
-${PLIST.gui}share/git-gui/lib/msgs/it.msg
-${PLIST.gui}share/git-gui/lib/msgs/ja.msg
-${PLIST.gui}share/git-gui/lib/msgs/nb.msg
-${PLIST.gui}share/git-gui/lib/msgs/pt_br.msg
-${PLIST.gui}share/git-gui/lib/msgs/ru.msg
-${PLIST.gui}share/git-gui/lib/msgs/sv.msg
-${PLIST.gui}share/git-gui/lib/msgs/zh_cn.msg
-${PLIST.gui}share/git-gui/lib/option.tcl
-${PLIST.gui}share/git-gui/lib/remote.tcl
-${PLIST.gui}share/git-gui/lib/remote_add.tcl
-${PLIST.gui}share/git-gui/lib/remote_branch_delete.tcl
-${PLIST.gui}share/git-gui/lib/search.tcl
-${PLIST.gui}share/git-gui/lib/shortcut.tcl
-${PLIST.gui}share/git-gui/lib/spellcheck.tcl
-${PLIST.gui}share/git-gui/lib/sshkey.tcl
-${PLIST.gui}share/git-gui/lib/status_bar.tcl
-${PLIST.gui}share/git-gui/lib/tclIndex
-${PLIST.gui}share/git-gui/lib/themed.tcl
-${PLIST.gui}share/git-gui/lib/tools.tcl
-${PLIST.gui}share/git-gui/lib/tools_dlg.tcl
-${PLIST.gui}share/git-gui/lib/transport.tcl
-${PLIST.gui}share/git-gui/lib/win32.tcl
-${PLIST.gui}share/git-gui/lib/win32_shortcut.js
-${PLIST.gui}share/gitk/lib/msgs/de.msg
-${PLIST.gui}share/gitk/lib/msgs/es.msg
-${PLIST.gui}share/gitk/lib/msgs/fr.msg
-${PLIST.gui}share/gitk/lib/msgs/hu.msg
-${PLIST.gui}share/gitk/lib/msgs/it.msg
-${PLIST.gui}share/gitk/lib/msgs/ja.msg
-${PLIST.gui}share/gitk/lib/msgs/pt_br.msg
-${PLIST.gui}share/gitk/lib/msgs/ru.msg
-${PLIST.gui}share/gitk/lib/msgs/sv.msg
 @pkgdir share/examples/scmgit/templates/branches
+share/locale/da/LC_MESSAGES/git.mo
+share/locale/de/LC_MESSAGES/git.mo
 share/locale/is/LC_MESSAGES/git.mo
+share/locale/it/LC_MESSAGES/git.mo
+share/locale/nl/LC_MESSAGES/git.mo
+share/locale/pt_PT/LC_MESSAGES/git.mo
+share/locale/sv/LC_MESSAGES/git.mo
+share/locale/vi/LC_MESSAGES/git.mo
+share/locale/zh_CN/LC_MESSAGES/git.mo

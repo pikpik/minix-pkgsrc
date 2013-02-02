@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2009/05/19 08:59:26 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/05/19 21:40:19 marino Exp $
 
 DISTNAME=	citrix_ica-10.6.115659
 PKGREVISION=	2
@@ -16,10 +16,15 @@ NO_BIN_ON_FTP=		${RESTRICTED}
 NO_SRC_ON_CDROM=	${RESTRICTED}
 NO_BIN_ON_CDROM=	${RESTRICTED}
 
+# "Abort Traps" indefinitely in pbulk
+NOT_FOR_PLATFORM+=	DragonFly-*-*
+
 EMUL_PLATFORMS=		linux-i386
 EMUL_PLATFORMS+=	solaris-sparc
 EMUL_PLATFORMS+=	solaris-i386
 EMUL_MODULES.linux=	locale motif x11
+
+PKG_DESTDIR_SUPPORT=	none
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.27 2008/02/15 15:48:46 gdt Exp $
+# $NetBSD: Makefile,v 1.29 2012/05/30 11:57:27 cheusov Exp $
 #
 
 DISTNAME=		rcs-5.7
@@ -10,7 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.cs.purdue.edu/homes/trinkle/RCS/
 COMMENT=		GNU Revision Control System - version control software
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
@@ -18,7 +17,7 @@ MAKE_JOBS_SAFE=		no
 DEPENDS+=		diffutils>=2.7:../../devel/diffutils
 CONFIGURE_ARGS+=	--with-diffutils
 # the native diff/diff3 is not sufficient for rcs
-TOOLS_PLATFORM.diff=	${LOCALBASE}/bin/${GNU_PROGRAM_PREFIX}diff
+TOOLS_PLATFORM.diff=	${LOCALBASE}/bin/gdiff
 .endif
 
 GNU_CONFIGURE=		yes

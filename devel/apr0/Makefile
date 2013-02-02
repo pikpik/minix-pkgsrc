@@ -1,15 +1,14 @@
-# $NetBSD: Makefile,v 1.6 2009/08/12 03:37:28 taca Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/31 11:16:37 asau Exp $
 
 .include "../../www/apache2/Makefile.common"
 
 PKGNAME=	apr-${APR_VERSION}.${APACHE_VERSION}
+PKGREVISION=	1
 CATEGORIES=	devel
 
 HOMEPAGE=	http://apr.apache.org/
 COMMENT=	Apache Portable Runtime
 LICENSE=	apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Don't bump this when apache upgrades; it is only apache2-2.0.45 and
 # under that includes its own apr.  apr was split out in 2.0.45nb1.

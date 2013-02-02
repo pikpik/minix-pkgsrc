@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.24 2012/02/06 12:40:53 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/02 17:11:32 tron Exp $
 
 DISTNAME=	qalculate-currency-0.9.4
-PKGREVISION=	11
+PKGREVISION=	17
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=qalculate/}
 
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://qalculate.sourceforge.net/
 COMMENT=	Utility for conversion between currencies using Qalculate
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -21,4 +19,5 @@ pre-configure:
 
 .include "../../math/qalculate/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

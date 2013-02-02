@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.19 2011/08/14 07:43:02 obache Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/03 11:24:43 asau Exp $
 #
 
-DISTNAME=	Device-Modem-1.54
+DISTNAME=	Device-Modem-1.56
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5dmd
 CATEGORIES=	comms perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Device/}
@@ -11,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Device-Modem/
 COMMENT=	Perl module to talk to modem devices connected via serial port
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Device-SerialPort>=0.19:../../comms/p5-Device-SerialPort
 

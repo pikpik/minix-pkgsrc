@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2006/06/20 23:41:14 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2009/07/07 21:09:14 joerg Exp $
 #
 
 DISTNAME=	${PKGNAME}b-src
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gutenpalm/}
 MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://gutenpalm.sourceforge.net/makeztxt.php
 COMMENT=	ASCII text to Palm zTXT database converter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}b
 

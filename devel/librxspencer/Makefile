@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/03/21 16:07:03 darcy Exp $
+# $NetBSD: Makefile,v 1.4 2011/10/09 10:02:48 cheusov Exp $
 
 DISTNAME=	rxspencer-alpha3.8.g4
 PKGNAME=	librxspencer-3.8.4
@@ -19,7 +19,6 @@ TEST_TARGET=		check
 DOCDIR=			${PREFIX}/share/doc/${PKGBASE}
 
 AUTO_MKDIRS=		yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-install:
 	set -e; \

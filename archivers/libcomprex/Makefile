@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2011/04/22 13:42:10 obache Exp $
+# $NetBSD: Makefile,v 1.26 2012/09/11 19:46:56 asau Exp $
 
 DISTNAME=	libcomprex-0.3.3
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	archivers
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gnupdate/}
 
@@ -10,7 +10,6 @@ HOMEPAGE=	http://www.gnupdate.org/components/libcomprex/index.xml
 COMMENT=	Library to handle (de)compression of files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config

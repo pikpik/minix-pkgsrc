@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2010/08/21 16:34:58 seb Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:56:15 wiz Exp $
 #
 
 DISTNAME=	Template-GD-2.66
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	graphics
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/A/AB/ABW/
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/CPAN/authors/id/A/AB/ABW/
 COMMENT=	GD plugin(s) for the Template Toolkit
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Template/GD/.packlist
 USE_LANGUAGES=	# none

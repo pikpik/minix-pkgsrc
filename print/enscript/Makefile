@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.45 2011/04/22 13:44:31 obache Exp $
+# $NetBSD: Makefile,v 1.47 2012/10/03 21:57:17 wiz Exp $
 #
 
 DISTNAME=		enscript-1.6.5.2
+PKGREVISION=		1
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_GNU:=enscript/}
 
@@ -24,7 +25,6 @@ INSTALL_MAKE_FLAGS=	${MAKE_FLAGS} sysconfdir=${EGDIR}
 MAKE_ENV+=		prefix=${PREFIX}
 BUILD_DEFS+=		PAPERSIZE
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS+=	share/enscript/afm share/enscript/hl
 
 .include "../../mk/bsd.prefs.mk"

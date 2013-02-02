@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2007/11/11 23:48:19 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2012/04/18 00:05:13 joerg Exp $
 #
 
 DISTNAME=	xbeeb-0.4.1
@@ -23,8 +23,6 @@ FONTS_DIRS.x11=	${PREFIX}/lib/X11/fonts/xbeeb
 REQD_DIRS=	${PREFIX}/lib/X11/fonts/xbeeb
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "options.mk"
 
@@ -76,7 +74,7 @@ do-build:
 	set -e; \
 	cd ${WRKSRC}/fonts; \
 	for i in *.bdf; do \
-		bdftopcf "$$i" -o `${BASENAME} "$$i" .bdf`.pcf; \
+		${TOOLS_PATH.bdftopcf} "$$i" -o `${BASENAME} "$$i" .bdf`.pcf; \
 	done
 
 do-install:
@@ -85,7 +83,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/roms/xdfs0.90.rom ${DESTDIR}${PREFIX}/${XBEEBROOT}/roms/xdfs0.90.rom
 	cd ${WRKSRC}/doc && ${INSTALL_DATA} * ${DESTDIR}${PREFIX}/${XBEEBROOT}/docs
 	cd ${WRKSRC}/fonts && ${INSTALL_DATA} *.pcf ${DESTDIR}${PREFIX}/lib/X11/fonts/xbeeb
-	mkfontdir ${DESTDIR}${PREFIX}/lib/X11/fonts/xbeeb
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"

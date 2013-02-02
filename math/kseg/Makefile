@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/01/13 13:38:41 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/11 23:04:22 asau Exp $
 #
 
 DISTNAME=	kseg-0.403
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	http://www.mit.edu/~ibaran/
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.mit.edu/~ibaran/kseg.html
 COMMENT=	Interactive geometry program
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/kseg
 USE_LANGUAGES=	c++

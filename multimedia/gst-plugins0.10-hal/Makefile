@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.5 2012/02/28 18:43:42 drochner Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/15 10:05:48 obache Exp $
 #
 
 GST_PLUGINS0.10_NAME=	hal
 GST_PLUGINS0.10_DIRS=	ext/hal
 GST_PLUGINS0.10_FLAGS=	hal
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		2
 
 .include "../../multimedia/gst-plugins0.10-good/Makefile.common"
-PKGREVISION=1
 
 .include "../../sysutils/hal/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

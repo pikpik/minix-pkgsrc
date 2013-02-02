@@ -1,21 +1,14 @@
-$NetBSD: distinfo,v 1.88 2012/02/22 11:10:17 drochner Exp $
+$NetBSD: distinfo,v 1.96 2012/12/15 12:39:24 drochner Exp $
 
-SHA1 (libxml2-2.7.8.tar.gz) = 859dd535edbb851cc15b64740ee06551a7a17d40
-RMD160 (libxml2-2.7.8.tar.gz) = 30709622cfe3e2175e73d6701b7e19a25ab5ac47
-Size (libxml2-2.7.8.tar.gz) = 4881808 bytes
-SHA1 (patch-CVE-2012-0841-aa) = b5fcb53c69ab808aafbaa81e9a4bef3f69057ff8
-SHA1 (patch-CVE-2012-0841-ab) = 2fd0d1a610bc517c4062f5ba30ec546d153eb5a1
-SHA1 (patch-CVE-2012-0841-ac) = 3ee79a6ecaf498ae0db4f64a10e22cc3e515e1e3
-SHA1 (patch-aa) = 965bfc2226828b5161a4541cf73f5b5ef9a7e88e
-SHA1 (patch-ab) = d8dfd5bd9632d32c7e32e35e4d4735e510fc438f
-SHA1 (patch-ac) = 264c75cf9fff5319105b971c122cdf5fc103c04e
+SHA1 (libxml2-2.9.0.tar.gz) = a43d7c0a8e463ac5a7846254f2a732a9af146fab
+RMD160 (libxml2-2.9.0.tar.gz) = d025639320bb34adbc45a43f46354190f6bbb7b5
+Size (libxml2-2.9.0.tar.gz) = 5161069 bytes
+SHA1 (patch-CVE-2012-5134) = 22caaed2b03334d42253b2b1c5a43473e6c8b4dc
+SHA1 (patch-aa) = 6fcfb2e1ac374a7a047ee188a61ef218106ee54a
+SHA1 (patch-ab) = 8a7a5ae0c9d129826485c74f29cf4de3199212e7
+SHA1 (patch-ac) = 101cd554fd22e8e9817e21591240eb784b1219b5
 SHA1 (patch-ad) = cd45da492b02cce9983c46762839f68b8b1e0177
-SHA1 (patch-ae) = b8d8e0275cab3caafd98275ac22b63951fc4b5fd
-SHA1 (patch-ag) = ab4aeeb8ca696b88285274760ab3ef08800773a0
-SHA1 (patch-aj) = 24eb4a08ea4c40be6d75a72cd0bb5280514f73d4
-SHA1 (patch-ak) = 5e0e9807d7ae0bc93a5583a61bb88a49ec1751e8
-SHA1 (patch-al) = 45f984fef5cf5d04c46e940867707897396a9c9f
-SHA1 (patch-am) = ae7ab69b7bba2271d2d996161cc8b9956d0b06fa
-SHA1 (patch-include_libxml_xpath.h) = 3fc74551a7843668cf9ffee19b1f20ccb674e153
-SHA1 (patch-testapi.c) = 63a0a34c8ca98d9214c4d3391e97d9a9ca4569f8
-SHA1 (patch-xpointer.c) = fa720fd515bab3f99bb11bf56320b3ad8e5fb211
+SHA1 (patch-ae) = 035e015abf401b15af9bf052a108a1c7b8db6c79
+SHA1 (patch-ag) = 19afd69713298ecbd247ba733a7c0c13464ae572
+SHA1 (patch-aj) = 988c30b4b09a1cbaf9e7db02bb8981da0f1beaa7
+SHA1 (patch-threads.c) = ed7339037e857707cf20217fa4c191d071e492f3

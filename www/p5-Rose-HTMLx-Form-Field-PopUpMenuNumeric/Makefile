@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:37:04 seb Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:58 wiz Exp $
 
 DISTNAME=	Rose-HTMLx-Form-Field-PopUpMenuNumeric-0.001
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Rose/}
 
@@ -15,8 +15,6 @@ DEPENDS+=	p5-Rose-HTML-Objects-[0-9]*:../../www/p5-Rose-HTML-Objects
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Rose/HTMLx/Form/Field/PopUpMenuNumeric/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

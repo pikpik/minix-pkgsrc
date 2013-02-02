@@ -1,17 +1,21 @@
-# $NetBSD: Makefile,v 1.9 2012/03/03 00:14:25 wiz Exp $
-#
+# $NetBSD: Makefile,v 1.20 2012/10/08 23:01:31 adam Exp $
 
-DISTNAME=		mess0145s
-PKGNAME=		${DISTNAME:S/0/-0./:S/s$//}
-MASTER_SITES=		http://www.mess.org/_media/downloads:
+DISTNAME=	mame0148s
+PKGNAME=	${DISTNAME:S/mame0/mess-0./:S/s$//}
+MASTER_SITES=	http://mamedev.org/downloader.php?file=releases/
 
-COMMENT=		Multi Emulator Super System
+COMMENT=	Multi Emulator Super System
 
 CONFLICTS=		xmess-[0-9]* sdlmess-[0-9]*
 
 DOCDIR=			share/doc/mess
 SHAREDIR=		share/mess
 INSTALLATION_DIRS=	bin ${DOCDIR} ${SHAREDIR}/artwork ${SHAREDIR}/hash
+
+# mame source is double-zipped
+post-extract:
+	cd ${WRKDIR} && ${.CURDIR}/../../mk/extract/extract mame.zip
+	rm ${WRKDIR}/mame.zip
 
 # to build mess, not mame
 MAKE_FLAGS=		TARGET=mess
@@ -25,7 +29,7 @@ do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/"$$prg" ${DESTDIR}${PREFIX}/bin; \
 	done
 	set -e; \
-	for doc in credits.htm faq.htm howto.htm imgtool.txt license.txt; do \
+	for doc in imgtool.txt license.txt; do \
 		${INSTALL_DATA} ${WRKSRC}/docs/"$$doc" ${DESTDIR}${PREFIX}/${DOCDIR}; \
 	done
 	${INSTALL_DATA} ${WRKSRC}/artwork/* \

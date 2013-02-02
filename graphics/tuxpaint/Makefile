@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.62 2012/02/06 12:40:37 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2012/10/06 14:11:23 asau Exp $
 #
 
 DISTNAME=	tuxpaint-0.9.17
-PKGREVISION=	16
+PKGREVISION=	22
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tuxpaint/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.tuxpaint.org/
 COMMENT=	Drawing program for small children
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake msgfmt pkg-config
 USE_PKGLOCALEDIR=	YES

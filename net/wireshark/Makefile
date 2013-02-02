@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.75 2012/03/03 00:13:48 wiz Exp $
+# $NetBSD: Makefile,v 1.91 2012/10/23 17:19:19 asau Exp $
 
-DISTNAME=		wireshark-1.6.6
+DISTNAME=		wireshark-1.8.4
 CATEGORIES=		net
 MASTER_SITES=		http://www.wireshark.org/download/src/ \
 			${MASTER_SITE_SOURCEFORGE:=wireshark/}
@@ -10,8 +10,6 @@ OWNER=			tron@NetBSD.org
 HOMEPAGE=		http://www.wireshark.org/
 COMMENT=		Network protocol analyzer
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		ethereal-[0-9]*
 

@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.11 2011/07/26 16:05:27 dholland Exp $
+# $NetBSD: Makefile,v 1.14 2012/06/09 07:00:46 obache Exp $
 
-DISTNAME=		imake-1.0.3
-PKGREVISION=		1
+DISTNAME=		imake-1.0.5
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=util/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,8 +8,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Imake and other utilities from modular X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config makedepend:run
@@ -41,6 +38,8 @@ SUBST_MESSAGE.xmkmf=	Fixing "xmkmf" script.
 SUBST_STAGE.xmkmf=	post-build
 SUBST_FILES.xmkmf=	xmkmf
 SUBST_SED.xmkmf=	-e "s/^configdirspec= */configdirspec=/"
+
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
 
 .include "../../x11/xproto/buildlink3.mk"
 

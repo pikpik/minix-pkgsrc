@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2010/12/31 21:55:50 dmcmahill Exp $
+# $NetBSD: Makefile,v 1.23 2011/03/03 21:05:42 minskim Exp $
 #
 
 DISTNAME=	latex-mk-2.1
@@ -17,7 +17,6 @@ BUILD_DEPENDS+=	tex-latex-fonts-[0-9]*:../../fonts/tex-latex-fonts
 DEPENDS+=	tex-latex-bin-[0-9]*:../../print/tex-latex-bin
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	awk echo env false find grep gzcat gzip makeinfo rm rmdir tar
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2006/10/19 23:56:13 rillig Exp $
+# $NetBSD: Makefile,v 1.12 2010/01/27 20:22:54 joerg Exp $
 
 DISTNAME=	tob-0.25
 PKGREVISION=	2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tinyplanet.ca/projects/tob/
 COMMENT=	General driver for making and maintaining backups
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EGDIR=		${PREFIX}/share/examples/tob
 CONF_FILES=	${EGDIR}/tob.rc ${PKG_SYSCONFDIR}/tob/tob.rc

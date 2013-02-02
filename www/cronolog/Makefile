@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.15 2007/09/25 10:07:06 hira Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:58:28 wiz Exp $
 #
 
 DISTNAME=	cronolog-1.6.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www
 MASTER_SITES=	http://cronolog.org/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://cronolog.org/
 COMMENT=	Web log rotation utility that provides datestamp filenames
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 INFO_FILES=	yes

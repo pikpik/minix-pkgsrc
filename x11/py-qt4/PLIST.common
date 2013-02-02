@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST.common,v 1.16 2011/05/13 16:43:02 drochner Exp $
+@comment $NetBSD$
 bin/pylupdate4
 bin/pyrcc4
 bin/pyuic4
@@ -25,7 +25,7 @@ ${PYSITELIB}/PyQt4/uic/Compiler/__init__.py
 ${PYSITELIB}/PyQt4/uic/Compiler/compiler.py
 ${PYSITELIB}/PyQt4/uic/Compiler/indenter.py
 ${PYSITELIB}/PyQt4/uic/Compiler/misc.py
-${PYSITELIB}/PyQt4/uic/Compiler/proxy_type.py
+${PYSITELIB}/PyQt4/uic/Compiler/proxy_metaclass.py
 ${PYSITELIB}/PyQt4/uic/Compiler/qobjectcreator.py
 ${PYSITELIB}/PyQt4/uic/Compiler/qtproxies.py
 ${PYSITELIB}/PyQt4/uic/Loader/__init__.py
@@ -88,6 +88,7 @@ share/sip${PYVERSSUFFIX}/QtCore/qelapsedtimer.sip
 share/sip${PYVERSSUFFIX}/QtCore/qeventloop.sip
 share/sip${PYVERSSUFFIX}/QtCore/qeventtransition.sip
 share/sip${PYVERSSUFFIX}/QtCore/qfile.sip
+share/sip${PYVERSSUFFIX}/QtCore/qfiledevice.sip
 share/sip${PYVERSSUFFIX}/QtCore/qfileinfo.sip
 share/sip${PYVERSSUFFIX}/QtCore/qfilesystemwatcher.sip
 share/sip${PYVERSSUFFIX}/QtCore/qfinalstate.sip
@@ -273,6 +274,7 @@ share/sip${PYVERSSUFFIX}/QtGui/qgraphicsview.sip
 share/sip${PYVERSSUFFIX}/QtGui/qgraphicswidget.sip
 share/sip${PYVERSSUFFIX}/QtGui/qgridlayout.sip
 share/sip${PYVERSSUFFIX}/QtGui/qgroupbox.sip
+share/sip${PYVERSSUFFIX}/QtGui/qguiapplication.sip
 share/sip${PYVERSSUFFIX}/QtGui/qheaderview.sip
 share/sip${PYVERSSUFFIX}/QtGui/qicon.sip
 share/sip${PYVERSSUFFIX}/QtGui/qiconengine.sip
@@ -307,6 +309,7 @@ share/sip${PYVERSSUFFIX}/QtGui/qmessagebox.sip
 share/sip${PYVERSSUFFIX}/QtGui/qmime.sip
 share/sip${PYVERSSUFFIX}/QtGui/qmouseeventtransition.sip
 share/sip${PYVERSSUFFIX}/QtGui/qmovie.sip
+share/sip${PYVERSSUFFIX}/QtGui/qpagedpaintdevice.sip
 share/sip${PYVERSSUFFIX}/QtGui/qpagesetupdialog.sip
 share/sip${PYVERSSUFFIX}/QtGui/qpaintdevice.sip
 share/sip${PYVERSSUFFIX}/QtGui/qpaintengine.sip
@@ -381,6 +384,7 @@ share/sip${PYVERSSUFFIX}/QtGui/qtoolbar.sip
 share/sip${PYVERSSUFFIX}/QtGui/qtoolbox.sip
 share/sip${PYVERSSUFFIX}/QtGui/qtoolbutton.sip
 share/sip${PYVERSSUFFIX}/QtGui/qtooltip.sip
+share/sip${PYVERSSUFFIX}/QtGui/qtouchdevice.sip
 share/sip${PYVERSSUFFIX}/QtGui/qtransform.sip
 share/sip${PYVERSSUFFIX}/QtGui/qtreeview.sip
 share/sip${PYVERSSUFFIX}/QtGui/qtreewidget.sip
@@ -420,6 +424,7 @@ share/sip${PYVERSSUFFIX}/QtNetwork/QtNetworkmod.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qabstractnetworkcache.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qabstractsocket.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qauthenticator.sip
+share/sip${PYVERSSUFFIX}/QtNetwork/qdnslookup.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qftp.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qhostaddress.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qhostinfo.sip
@@ -440,6 +445,7 @@ share/sip${PYVERSSUFFIX}/QtNetwork/qnetworkrequest.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qnetworksession.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qssl.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qsslcertificate.sip
+share/sip${PYVERSSUFFIX}/QtNetwork/qsslcertificateextension.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qsslcipher.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qsslconfiguration.sip
 share/sip${PYVERSSUFFIX}/QtNetwork/qsslerror.sip

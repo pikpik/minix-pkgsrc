@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/09/19 06:20:07 tron Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/23 10:24:10 wiz Exp $
 
 DISTNAME=	wmnet-1.06
 PKGREVISION=	5
@@ -14,8 +14,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.katharineosborne.com/wmnet/
 COMMENT=	Dockable network monitor
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_IMAKE=	YES
 
 .include "../../mk/bsd.prefs.mk"
@@ -26,5 +24,4 @@ SPECIAL_PERMS+=	bin/wmnet ${BINOWN} kmem 2555
 .endif
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

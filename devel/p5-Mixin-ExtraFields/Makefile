@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:34:00 seb Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:55:15 wiz Exp $
 #
 
 DISTNAME=	Mixin-ExtraFields-0.100971
 PKGNAME=	p5-Mixin-ExtraFields-0.100.971
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/R/RJ/RJBS/}
 
@@ -13,7 +13,6 @@ COMMENT=	Perl 5 module to add extra stashes of data to your objects
 LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=		# empty
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-String-RewritePrefix-[0-9]*:../../textproc/p5-String-RewritePrefix
 DEPENDS+=	p5-Sub-Exporter>=0.972:../../devel/p5-Sub-Exporter

@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.27 2012/03/22 15:33:43 obache Exp $
+# $NetBSD: Makefile,v 1.34 2012/12/16 01:52:40 obache Exp $
 
 DISTNAME=	kdebindings-${_KDE_VERSION}
 PKGNAME=	kdebindings-ruby-${_KDE_VERSION}
-PKGREVISION=	15
+PKGREVISION=	21
 CATEGORIES=	x11
 COMMENT=	Ruby bindings for the KDE integrated X11 desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 
@@ -25,6 +23,7 @@ REPLACE_RUBY+= \
 
 .include "../../lang/ruby/buildlink3.mk"
 .include "../../lang/ruby/replace.mk"
+BUILDLINK_DEPMETHOD.qt3-tools=	full
 .include "../../meta-pkgs/kde3/kde3.mk"
 .include "../../x11/kdebase3/buildlink3.mk"
 .include "../../x11/kdelibs3/buildlink3.mk"

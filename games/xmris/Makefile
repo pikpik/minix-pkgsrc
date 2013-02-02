@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2011/05/23 12:05:53 obache Exp $
+# $NetBSD: Makefile,v 1.17 2011/05/25 04:42:58 obache Exp $
 
 DISTNAME=		xmris.4.0.5
 PKGNAME=		xmris-4.05
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.planetfall.pwp.blueyonder.co.uk/xmris/
 COMMENT=		Version of the Mr Do video arcade game for X
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_IMAKE=		yes
 USE_GAMESGROUP=		yes

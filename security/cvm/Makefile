@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2009/06/30 00:07:22 joerg Exp $
+# $NetBSD: Makefile,v 1.16 2010/02/03 07:06:12 schmonz Exp $
 #
 
 DISTNAME=		cvm-0.96
@@ -9,8 +9,6 @@ MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://untroubled.org/cvm/
 COMMENT=		Credential Validation Modules
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

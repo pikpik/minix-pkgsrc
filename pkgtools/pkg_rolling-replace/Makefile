@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.31 2010/12/20 15:39:09 gdt Exp $
+# $NetBSD: Makefile,v 1.33 2012/04/30 13:59:38 gdt Exp $
 
-DISTNAME=	pkg_rolling-replace-0.24
+DISTNAME=	pkg_rolling-replace-0.24.1
 CATEGORIES=	pkgtools
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -12,7 +12,6 @@ DEPENDS+=	pkg_chk>=1.76:../../pkgtools/pkg_chk
 DEPENDS+=	pkg_tarup>=1.6.6:../../pkgtools/pkg_tarup
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	patch
 

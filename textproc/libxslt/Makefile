@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.86 2011/02/28 14:53:04 wiz Exp $
+# $NetBSD: Makefile,v 1.92 2012/10/25 06:56:04 asau Exp $
 
-DISTNAME=	libxslt-1.1.26
-PKGREVISION=	2
+DISTNAME=	libxslt-1.1.28
 CATEGORIES=	textproc
-MASTER_SITES+=	ftp://xmlsoft.org/libxslt/
-#MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxslt/1.1/}
+MASTER_SITES=	ftp://xmlsoft.org/libxslt/ \
+		http://xmlsoft.org/sources/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xmlsoft.org/XSLT/
@@ -12,18 +11,16 @@ COMMENT=	XSLT parser library from the GNOME project
 LICENSE=	mit # with advertisement clause
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
-USE_TOOLS+=		gmake perl
 USE_LIBTOOL=		yes
-PKGCONFIG_OVERRIDE=	libxslt.pc.in
-PKGCONFIG_OVERRIDE+=	libexslt.pc.in
-
+USE_TOOLS+=		gmake perl
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-libxml-prefix=${BUILDLINK_PREFIX.libxml2}
 CONFIGURE_ARGS+=	--without-python
 CONFIGURE_ARGS+=	--with-html-subdir=libxslt
 
+PKGCONFIG_OVERRIDE=	libxslt.pc.in
+PKGCONFIG_OVERRIDE+=	libexslt.pc.in
 TEST_TARGET=		check
 
 .include "../../mk/bsd.prefs.mk"

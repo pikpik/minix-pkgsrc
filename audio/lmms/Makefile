@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2011/11/01 06:00:39 sbd Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 21:53:55 wiz Exp $
 #
 
 DISTNAME=		lmms-0.2.0
-PKGREVISION=		11
+PKGREVISION=		14
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=lmms/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://lmms.sourceforge.net/
 COMMENT=		Linux MultiMedia Studio
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes

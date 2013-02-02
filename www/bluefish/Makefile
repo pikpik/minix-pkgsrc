@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.95 2012/03/15 11:53:42 obache Exp $
+# $NetBSD: Makefile,v 1.103 2012/10/08 23:02:31 adam Exp $
 
-DISTNAME=	bluefish-2.2.2
+DISTNAME=	bluefish-2.2.3
+PKGREVISION=	5
 CATEGORIES=	www
 MASTER_SITES=	http://bluefish.mrball.net/stable/source/               \
 		http://www.bennewitz.com/bluefish/stable/source/
@@ -9,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bluefish.openoffice.nl/
 COMMENT=	GTK HTML editor for the experienced web designer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		weblint-[0-9]*:../../www/weblint
 
@@ -24,6 +23,7 @@ CONFIGURE_ENV+=		EXTERNAL_GREP=${TOOLS_GREP:Q}
 CONFIGURE_ENV+=		EXTERNAL_FIND=${TOOLS_FIND:Q}
 
 CHECK_WRKREF_SKIP+=	lib/bluefish/about.so
+REPLACE_PYTHON+=	data/lorem-ipsum-generator
 
 # XXX this doesn't work
 #XML_CATALOGS=	${PREFIX}/share/xml/bluefish/catalog.xml

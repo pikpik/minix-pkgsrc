@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2012/03/03 00:12:36 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/12/16 01:51:57 obache Exp $
 #
 
 DISTNAME=	ario-1.5.1
-PKGREVISION=	4
+PKGREVISION=	12
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ario-player/1.5.1/}
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://ario-player.sourceforge.net/
 COMMENT=	mpd client
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT= user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	intltool msgfmt pkg-config gmake

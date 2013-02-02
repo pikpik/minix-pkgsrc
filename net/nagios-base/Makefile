@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.33 2011/08/14 14:14:40 obache Exp $
+# $NetBSD: Makefile,v 1.37 2012/12/14 18:53:40 manu Exp $
 #
 
-DISTNAME=		nagios-3.3.1
+DISTNAME=		nagios-3.4.3
 PKGNAME=		${DISTNAME:S/-/-base-/}
-PKGREVISION=		2
+#PKGREVISION=		0
+PKGREVISION=		1
 CATEGORIES=		net sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=nagios/}
 
@@ -11,8 +12,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.nagios.org/
 COMMENT=		Network monitor
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 .include "../../net/nagios-base/Makefile.common"

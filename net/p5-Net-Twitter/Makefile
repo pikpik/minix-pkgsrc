@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2011/11/28 13:04:54 hiramatsu Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:57:05 wiz Exp $
 #
 
 DISTNAME=	Net-Twitter-3.18001
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-Twitter/
 COMMENT=	Perl interface to the Twitter API
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Crypt-SSLeay>=0.5:../../security/p5-Crypt-SSLeay
 DEPENDS+=	p5-Data-Visitor-[0-9]*:../../devel/p5-Data-Visitor

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2009/02/15 18:49:54 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/01/20 15:05:05 wiz Exp $
 #
 
 DISTNAME=		dccserver-0.5
@@ -13,7 +13,6 @@ LICENSE=		2-clause-bsd AND modified-bsd
 
 GNU_CONFIGURE=		yes
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 # just a contrib script, don't want to incur a perl dependency for that
 REPLACE_PERL=		contrib/dccsend.pl
 

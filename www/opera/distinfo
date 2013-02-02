@@ -1,14 +1,14 @@
 $NetBSD$
 
-SHA1 (opera-11.62-1347.amd64.freebsd.tar.xz) = c08de2ffefa82073b3676c25d9ce6271131a0f42
-RMD160 (opera-11.62-1347.amd64.freebsd.tar.xz) = 73778da4571ddaa578427e53b50a5e09729a4a7c
-Size (opera-11.62-1347.amd64.freebsd.tar.xz) = 12097500 bytes
-SHA1 (opera-11.62-1347.i386.freebsd.tar.xz) = 9b0d113d2baaa03e398ef94495da4ea7a2a0a84b
-RMD160 (opera-11.62-1347.i386.freebsd.tar.xz) = 064af004ced3751a0ad2cf2885490f9e511ade7a
-Size (opera-11.62-1347.i386.freebsd.tar.xz) = 11529504 bytes
-SHA1 (opera-11.62-1347.i386.linux.tar.xz) = 6bfb8a2768a51e4189337e0a40e9fcb0fcbf44ba
-RMD160 (opera-11.62-1347.i386.linux.tar.xz) = 2ad8c94e2deafad2a540bf119cbbce560807f6c7
-Size (opera-11.62-1347.i386.linux.tar.xz) = 11496852 bytes
-SHA1 (opera-11.62-1347.x86_64.linux.tar.xz) = d943d07027ba0f40e6f7f964f14918a04169601a
-RMD160 (opera-11.62-1347.x86_64.linux.tar.xz) = f7413539de20f2178b3558acdfb95555016a2070
-Size (opera-11.62-1347.x86_64.linux.tar.xz) = 12322128 bytes
+SHA1 (opera-12.12-1707.amd64.freebsd.tar.xz) = 37f2e4f9276f9d458b10d3e0d76c4d179d6a62e9
+RMD160 (opera-12.12-1707.amd64.freebsd.tar.xz) = 54d2ccb0debe17eb73818e09a365aa4d4a544b8f
+Size (opera-12.12-1707.amd64.freebsd.tar.xz) = 13441188 bytes
+SHA1 (opera-12.12-1707.i386.freebsd.tar.xz) = ce1e7fcbfccbe49f8df1b887b5d70d16e36320e1
+RMD160 (opera-12.12-1707.i386.freebsd.tar.xz) = ab16814c2e87863e241567a28d775384adb90354
+Size (opera-12.12-1707.i386.freebsd.tar.xz) = 13517344 bytes
+SHA1 (opera-12.12-1707.i386.linux.tar.xz) = 13744435f0be1623bf46e61e8d8eae10e8eedb54
+RMD160 (opera-12.12-1707.i386.linux.tar.xz) = bf087c25c83f8a132ebcba94284532952cc7c07c
+Size (opera-12.12-1707.i386.linux.tar.xz) = 13522976 bytes
+SHA1 (opera-12.12-1707.x86_64.linux.tar.xz) = 5d51230f41bcc0865ca7f41d6368dd1e289140c2
+RMD160 (opera-12.12-1707.x86_64.linux.tar.xz) = 8d6fbfa9b66bf84f4f15f1509114a9dc62ed2d8d
+Size (opera-12.12-1707.x86_64.linux.tar.xz) = 13642760 bytes

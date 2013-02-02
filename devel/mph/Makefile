@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/03/03 17:45:36 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/04/07 17:44:00 joerg Exp $
 #
 
 DISTNAME=	mph-1.2
@@ -8,8 +8,6 @@ MASTER_SITES=	http://www.ibiblio.org/pub/Linux/devel/lang/c/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	none
 COMMENT=	Minimal perfect hashing functionality
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin share/doc
 

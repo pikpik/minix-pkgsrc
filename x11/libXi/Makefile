@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2010/09/10 18:52:06 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/29 05:06:35 asau Exp $
 #
 
-DISTNAME=		libXi-1.4.3
+DISTNAME=		libXi-1.6.2
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -12,7 +12,6 @@ COMMENT=		X Input extension library
 LICENSE=		mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
@@ -21,14 +20,19 @@ USE_TOOLS+=		pkg-config
 CONFIGURE_ENV+=		LIB_MAN_SUFFIX=3 ac_cv_path_ASCIIDOC= ac_cv_path_XMLTO=
 PKGCONFIG_OVERRIDE+=	xi.pc.in
 
+SUBST_CLASSES+=		sosubdir
+SUBST_STAGE.sosubdir=	pre-configure
+SUBST_FILES.sosubdir=	man/*.man
+SUBST_SED.sosubdir=	-e 's|\.so X|.so manlibmansuffix/X|'
+
 .include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} == "NetBSD"
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
 
-BUILDLINK_API_DEPENDS.inputproto+=	inputproto>=2.0
-BUILDLINK_API_DEPENDS.libX11+=		libX11>=1.3
+BUILDLINK_API_DEPENDS.inputproto+=	inputproto>=2.2
+BUILDLINK_API_DEPENDS.libX11+=		libX11>=1.5
 BUILDLINK_API_DEPENDS.libXext+=		libXext>=1.1
 BUILDLINK_API_DEPENDS.xextproto+=	xextproto>=7.0.3
 BUILDLINK_API_DEPENDS.xproto+=		xproto>=7.0.13

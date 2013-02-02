@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2012/02/06 12:40:24 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/21 08:56:48 cheusov Exp $
 #
 
 DISTNAME=		refocus-it-2.0.0
 PKGNAME=		gimp-refocus-it-2.0.0
-PKGREVISION=		24
+PKGREVISION=		32
 CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=refocus-it/}
 
@@ -11,14 +11,15 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://refocus-it.sourceforge.net/
 COMMENT=		Refocus images
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+DEPENDS+=		refocus-it-[0-9]*:../../graphics/refocus-it
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 #just build the plugin
 CONFIGURE_ARGS+=	--without-cmdline
 USE_FEATURES=		asprintf
-USE_TOOLS+=		intltool msgfmt pkg-config
+USE_TOOLS+=		intltool pkg-config
+MAKE_FLAGS=		SUBDIRS='src gimp-plugin'
 
 PTHREAD_AUTO_VARS=	yes
 

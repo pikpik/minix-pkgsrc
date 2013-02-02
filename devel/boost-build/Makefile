@@ -1,10 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2010/11/26 20:46:59 adam Exp $
+# $NetBSD: Makefile,v 1.13 2011/10/11 10:02:07 adam Exp $
 
 BOOST_PACKAGE=		build
 BOOST_COMMENT=		(Boost.Build framework)
 BOOST_CONFIG=		no
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

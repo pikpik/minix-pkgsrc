@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.154 2012/03/03 00:13:31 wiz Exp $
+# $NetBSD: Makefile,v 1.163 2012/10/08 23:02:02 adam Exp $
 #
 
 DISTNAME=		gnumeric-1.8.4
-PKGREVISION=		21
+PKGREVISION=		28
 CATEGORIES=		math gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnumeric/1.8/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,7 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/projects/gnumeric/
 COMMENT=		Spreadsheet program from the GNOME project (development version)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		gnu-gpl-v2
 
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl:run pkg-config
@@ -22,6 +21,8 @@ CONFIGURE_ARGS+=	--without-gnome
 PKGCONFIG_OVERRIDE=	libspreadsheet.pc.in
 
 REPLACE_PERL+=		plugins/perl-func/perl_func.pl
+
+.include "options.mk"
 
 CONFIGURE_ARGS+=	--with-python
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}

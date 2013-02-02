@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:41:27 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/08 23:02:23 adam Exp $
 #
 
 DISTNAME=	openvas-client-2.0.1
-PKGREVISION=	10
+PKGREVISION=	14
 CATEGORIES=	security
 MASTER_SITES=	http://wald.intevation.org/frs/download.php/552/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.openvas.org/
 COMMENT=	Client for the Open Vulnerability Assessment System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake pkg-config
 GNU_CONFIGURE=	YES

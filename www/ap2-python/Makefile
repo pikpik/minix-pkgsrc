@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2008/06/12 02:14:54 joerg Exp $
+# $NetBSD: Makefile,v 1.27 2012/05/16 06:12:46 obache Exp $
 
 DISTNAME=	mod_python-${VERSION}
 PKGNAME=	${APACHE_PKG_PREFIX}-${PYPKGPREFIX}-python-${VERSION}
@@ -9,8 +9,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.modpython.org/
 COMMENT=	Apache module that embeds the Python interpreter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	apache-2.0
 
 MAKE_JOBS_SAFE=	no
 

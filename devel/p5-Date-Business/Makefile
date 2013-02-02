@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2010/08/21 16:33:32 seb Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:54:52 wiz Exp $
 
 DISTNAME=	Date-Business-1.2
 PKGNAME=	${DISTNAME:S/Date-Business/p5-Date-Business/}
-PKGREVISION=	5
+PKGREVISION=	6
 SVR4_PKGNAME=	p5dbu
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Date/}
@@ -13,7 +13,6 @@ COMMENT=	Perl5 module for fast calendar and business date calculations
 LICENSE=	morganstanley-license
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Date/Business/.packlist
 

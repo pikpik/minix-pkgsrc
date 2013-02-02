@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2011/03/17 22:08:37 zafer Exp $
+# $NetBSD: Makefile,v 1.15 2012/03/07 18:27:30 hans Exp $
 
 DISTNAME=	tcpd-tools-0.8
 PKGNAME=	tcpdstat-0.8
@@ -7,8 +7,6 @@ MASTER_SITES=	# ftp://tracer.csl.sony.co.jp/pub/mawi/tools/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Analyze tcpdump output
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM=	Interix-*-*
 

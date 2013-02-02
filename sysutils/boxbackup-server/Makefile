@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2011/07/18 19:18:09 drochner Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:57:36 wiz Exp $
 #
 
 DISTNAME=	boxbackup-0.11.1
 PKGNAME=	boxbackup-server-0.11.1
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=boxbackup/}
 EXTRACT_SUFX=	.tgz
@@ -10,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.boxbackup.org/
 COMMENT=	Backup tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PATCHDIR=	${.CURDIR}/../../sysutils/boxbackup-client/patches
 DISTINFO_FILE=	${.CURDIR}/../../sysutils/boxbackup-client/distinfo
@@ -26,6 +25,13 @@ REPLACE_PERL+=	bin/bbstored/bbstored-certs bin/bbstored/bbstored-config
 REPLACE_PERL+=	lib/raidfile/raidfile-config
 
 INSTALLATION_DIRS+=	bin
+
+.include "../../mk/bsd.prefs.mk"
+
+# for backtrace
+.if ${OPSYS} == "NetBSD" && exists(/usr/include/execinfo.h)
+LIBS+=  -lexecinfo
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/parcels/boxbackup*-backup-server-*/bbstoreaccounts ${DESTDIR}${PREFIX}/bin

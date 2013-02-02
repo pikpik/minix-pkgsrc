@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.33 2010/12/29 02:02:02 dholland Exp $
+# $NetBSD: Makefile,v 1.34 2012/01/09 23:08:56 sbd Exp $
 #
 
 DISTNAME=	epic4-2.2
@@ -13,8 +13,6 @@ MASTER_SITES=	ftp://ftp.epicsol.org/pub/epic/EPIC4-PRODUCTION/ \
 		ftp://ftp.archive.de.uu.net/pub/unix/irc/epic/EPIC4-PRODUCTION/ \
 		ftp://ftp.nl.uu.net/pub/unix/irc/epic/EPIC4-PRODUCTION/
 EXTRACT_SUFX=	.tar.bz2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.epicsol.org/

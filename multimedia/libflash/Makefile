@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2010/02/11 20:01:50 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/08 09:21:06 asau Exp $
 #
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 
 PKGNAME=	lib${DISTNAME}
-PKGREVISION=	8
+PKGREVISION=	9
 COMMENT=	Open source Flash(tm) library
 
 USE_LIBTOOL=	yes

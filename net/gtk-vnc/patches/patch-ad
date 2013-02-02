@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.1 2009/09/14 10:07:04 tnn Exp $
 
---- src/npupp.h.orig	2009-09-14 11:50:07.000000000 +0200
+--- src/npupp.h.orig	2012-08-18 14:28:53.000000000 +0000
 +++ src/npupp.h
 @@ -0,0 +1,1292 @@
 +/* -*- Mode: C; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 2 -*- */

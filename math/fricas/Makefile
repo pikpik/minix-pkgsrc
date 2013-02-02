@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.15 2011/07/08 10:18:21 asau Exp $
+# $NetBSD: Makefile,v 1.18 2012/09/15 10:05:30 obache Exp $
 
-PKGNAME=		fricas-1.1.6
+PKGNAME=		fricas-1.1.8
 DISTNAME=		${PKGNAME_NOREV}-full
 CATEGORIES=		math
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=fricas/}
@@ -13,7 +13,6 @@ LICENSE=		modified-bsd
 
 BUILD_DEPENDS+=		noweb-[0-9]*:../../devel/noweb
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}

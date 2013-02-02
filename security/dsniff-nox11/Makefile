@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2012/02/06 12:41:25 wiz Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.10 2012/09/15 10:06:13 obache Exp $
 
 .include "../../security/dsniff/Makefile.common"
 
 PKGNAME=	dsniff-nox11-${VERS}
-PKGREVISION=	5
+PKGREVISION=	6
 COMMENT=	Password sniffer
 
 CONFIGURE_ARGS+=	--without-x

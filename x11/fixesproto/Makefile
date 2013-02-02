@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2010/04/09 08:15:48 tnn Exp $
+# $NetBSD: Makefile,v 1.10 2011/10/25 07:30:54 mef Exp $
 #
 
 DISTNAME=		fixesproto-5.0
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Fixes extension headers from X.org
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		fixesext-[0-9]*
 

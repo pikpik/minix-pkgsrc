@@ -1,19 +1,19 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/08/05 12:18:06 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/25 06:56:52 asau Exp $
 #
 
-DISTNAME=		xlrd-0.7.1
+DISTNAME=		xlrd-0.8.0
 PKGNAME=		${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=		textproc python
-MASTER_SITES=		http://cheeseshop.python.org/packages/source/x/xlrd/
+MASTER_SITES=		http://pypi.python.org/packages/source/x/xlrd/
 
 MAINTAINER=		obache@NetBSD.org
 HOMEPAGE=		http://www.lexicon.net/sjmachin/xlrd.htm
 COMMENT=		Python library to extract data from Microsoft Excel spread sheet files
 LICENSE=		modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=		#none
+
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

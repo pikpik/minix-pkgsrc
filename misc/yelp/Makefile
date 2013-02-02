@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.104 2012/03/03 00:13:37 wiz Exp $
+# $NetBSD: Makefile,v 1.112 2012/10/08 23:02:09 adam Exp $
 #
 
 DISTNAME=		yelp-2.30.2
-PKGREVISION=		12
+PKGREVISION=		19
 CATEGORIES=		misc gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/yelp/2.30/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Help browser for GNOME 2 desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		docbook>=4.2:../../textproc/docbook
 

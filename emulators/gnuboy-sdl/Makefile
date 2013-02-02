@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/04/07 17:17:00 joerg Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 12:55:13 asau Exp $
 
 DISTNAME=	gnuboy-1.0.3
 PKGNAME=	${DISTNAME:S/-/-sdl-/}
@@ -6,11 +6,9 @@ PKGREVISION=	5
 CATEGORIES=	emulators
 MASTER_SITES=	http://gnuboy.unix-fu.org/src/
 
-MAINTAINER=	dillo@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gnuboy.unix-fu.org/
 COMMENT=	SDL port of Gameboy emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-sdl

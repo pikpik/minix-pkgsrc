@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2008/06/20 01:09:16 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2011/10/28 11:23:21 fhajny Exp $
 #
 
 DISTNAME=		rudiments-0.34
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://rudiments.sourceforge.net/
 COMMENT=		C++ class library for client/server/daemon applications
 LICENSE=		gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.26 2012/03/03 00:14:20 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2012/10/08 23:02:39 adam Exp $
 #
 
 DISTNAME=	rox-session-0.28
-PKGREVISION=	15
+PKGREVISION=	20
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tar.bz2
@@ -35,7 +35,6 @@ SUBST_FILES.lib=	findrox.py
 SUBST_SED.lib=		-e 's,/usr/local/lib,${PREFIX}/share/rox,g'
 
 USE_TOOLS+=	pax
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 pre-install:
 	${RM} -f ${WRKSRC}/wm.py.orig

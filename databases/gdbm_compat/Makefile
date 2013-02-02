@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2012/01/10 04:40:03 obache Exp $
+# $NetBSD: Makefile,v 1.3 2012/01/24 09:10:51 sbd Exp $
 #
 
 .include "../../databases/gdbm/Makefile.common"
@@ -10,7 +10,6 @@ COMMENT+=	dbm and ndbm compat library
 
 DEPENDS+=	gdbm-${PKGVERSION_NOREV}{,nb[0-9]*}:../../databases/gdbm
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 CONFIGURE_ARGS+=	--enable-libgdbm-compat

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2008/05/26 02:13:19 joerg Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/06 11:54:46 asau Exp $
 
 DISTNAME=		Maelstrom-1.4.3-L2.0.6-src.tar.gz
 PKGNAME=		maelstrom-x11-2.0.6
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		games x11
 MASTER_SITES+=		ftp://ftp.devolution.com/pub/maelstrom/
 MASTER_SITES+=		ftp://ftp.devolution.com/pub/maelstrom/Maelstrom-binaries/
@@ -12,8 +12,6 @@ DISTFILES=		${DISTNAME} ${STREK} ${SWARS} ${ESOUND}
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ambrosiasw.com/Products/Maelstrom.html
 COMMENT=	High resolution graphics version of Asteroids (X11 version)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ESOUND=			Maelstrom-Sounds-L2.0.0.tar.gz
 STREK=			Star_Trek.tar.gz
@@ -27,6 +25,8 @@ WRKSRC=			${WRKDIR}/Maelstrom
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		pax
 USE_X11BASE=		YES
+LIBS.SunOS+=		-lsocket
+MAKE_FLAGS+=		EXTRALIBS=${LIBS:Q}
 MAKE_ENV+=		BINOWN=${BINOWN:Q} BINGRP=${BINGRP:Q} XPMDIR=${BUILDLINK_PREFIX.libXpm}
 MAKE_ENV+=		GAMEOWN=${GAMEOWN} GAMEGRP=${GAMEGRP}
 MAKE_ENV+=		GAMEMODE=${GAMEMODE} GAMEDATAMODE=${GAMEDATAMODE}
@@ -55,6 +55,5 @@ post-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

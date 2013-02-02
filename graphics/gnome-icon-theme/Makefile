@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.74 2012/02/06 12:40:24 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/06 14:10:56 asau Exp $
 #
 
 DISTNAME=		gnome-icon-theme-2.30.3
-PKGREVISION=		7
+PKGREVISION=		14
 CATEGORIES=		graphics gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-icon-theme/2.30/}
 EXTRACT_SUFX=		.tar.bz2
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Theme consisting of a set of icons for GNOME
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 NOT_FOR_BULK_PLATFORM=	HPUX-*-*
 
 GNU_CONFIGURE=		yes

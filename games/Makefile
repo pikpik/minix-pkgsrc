@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.349 2012/02/23 19:17:31 drochner Exp $
+# $NetBSD: Makefile,v 1.356 2012/12/12 16:27:17 wiz Exp $
 #
 
 COMMENT=	Games
@@ -132,6 +132,7 @@ SUBDIR+=	gtkmagnetic
 SUBDIR+=	gturing
 SUBDIR+=	heretic2-demo
 SUBDIR+=	hex-a-hop
+SUBDIR+=	holtz
 SUBDIR+=	hugo
 SUBDIR+=	icbm3d
 SUBDIR+=	icebreaker
@@ -172,6 +173,7 @@ SUBDIR+=	ltris
 SUBDIR+=	maelstrom-sdl
 SUBDIR+=	maelstrom-x11
 SUBDIR+=	majesty-demo
+SUBDIR+=	marathon-evil
 SUBDIR+=	marathon-trilogy
 SUBDIR+=	minami
 SUBDIR+=	mirrormagic
@@ -209,6 +211,7 @@ SUBDIR+=	powermanga
 SUBDIR+=	powwow
 SUBDIR+=	prboom
 SUBDIR+=	puzzles
+SUBDIR+=	py-trueskill
 SUBDIR+=	pysolfc
 SUBDIR+=	pytraffic
 SUBDIR+=	qnetwalk
@@ -261,15 +264,17 @@ SUBDIR+=	teg
 SUBDIR+=	tetrinetx
 SUBDIR+=	thew
 SUBDIR+=	tileworld
+SUBDIR+=	toppler
 SUBDIR+=	tscp
 SUBDIR+=	tuxmath
 SUBDIR+=	tuxracer
 SUBDIR+=	tyrquake
 SUBDIR+=	ufoai
-SUBDIR+=	ultima4-data
+SUBDIR+=	uqm
 SUBDIR+=	urban
 SUBDIR+=	velena
 SUBDIR+=	vms-empire
+SUBDIR+=	wargames
 SUBDIR+=	warmux
 SUBDIR+=	warzone2100
 SUBDIR+=	wesnoth
@@ -286,6 +291,7 @@ SUBDIR+=	xbomb
 SUBDIR+=	xbomber
 SUBDIR+=	xbreaky
 SUBDIR+=	xconq
+SUBDIR+=	xcowsay
 SUBDIR+=	xdemineur
 SUBDIR+=	xdoom
 SUBDIR+=	xemeraldia

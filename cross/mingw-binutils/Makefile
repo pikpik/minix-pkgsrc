@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/15 18:34:36 asau Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/09 07:48:20 marino Exp $
 
 DISTNAME=	binutils-2.18
 PKGNAME=	mingw-${DISTNAME:S/-src//}
@@ -11,13 +11,13 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mingw.sourceforge.net/
 COMMENT=	GNU binutils for win32 cross-development
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 USE_CROSSBASE=		yes
 USE_TOOLS+=		pax
 INFO_FILES=		yes
+
+BUILDLINK_TRANSFORM+=	rm:-Werror
 
 post-install:
 .for f in windres dllwrap

@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:42:30 wiz Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.19 2012/10/08 23:02:40 adam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=		4.6.5
 
 DISTNAME=		xfce4-settings-${XFCE4_VERSION}
-PKGREVISION=		8
+PKGREVISION=		14
 CATEGORIES=		x11
 COMMENT=		Xfce settings manager
 

@@ -1,4 +1,6 @@
-$NetBSD$
+$NetBSD: patch-ah,v 1.1 2008/08/12 13:13:34 agc Exp $
+
+Use standard headers
 
 --- dba.c	2008/08/12 11:32:24	1.1
 +++ dba.c	2008/08/12 11:32:58

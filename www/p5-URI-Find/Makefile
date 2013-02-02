@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/08/14 16:06:11 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:59:01 wiz Exp $
 
 DISTNAME=		URI-Find-20111103
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=URI/}
 
@@ -9,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/URI-Find/
 COMMENT=		Perl5 module to find URIs in arbitrary text
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # requires URI::URL 5.00 - oldest available URI on CPAN contains 5.03
 DEPENDS+=		p5-URI>=1.40:../../www/p5-URI

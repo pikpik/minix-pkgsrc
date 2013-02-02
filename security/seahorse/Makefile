@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.99 2012/02/06 12:41:29 wiz Exp $
+# $NetBSD: Makefile,v 1.107 2012/10/23 18:16:57 asau Exp $
 
 DISTNAME=	seahorse-2.32.0
-PKGREVISION=	8
+PKGREVISION=	15
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/seahorse/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/seahorse/
 COMMENT=	GnuPG front end and bonobo component for GNOME
 #LICENSE=	gnu-gpl-v2 AND gnu-fdl-v1.1 AND gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .if exists(/usr/bin/ssh) && exists(/usr/bin/ssh-add) && exists(/usr/bin/ssh-keygen)
 SSH_PATH=/usr/bin/ssh

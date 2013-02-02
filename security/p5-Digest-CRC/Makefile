@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2011/08/09 07:30:08 adam Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 21:57:30 wiz Exp $
 
-DISTNAME=	Digest-CRC-0.17
+DISTNAME=	Digest-CRC-0.18
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5crc
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Digest/}
@@ -12,7 +13,6 @@ COMMENT=	Perl5 extension interface for cyclic redundancy check algorithms
 LICENSE=	public-domain
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Digest/CRC/.packlist
 

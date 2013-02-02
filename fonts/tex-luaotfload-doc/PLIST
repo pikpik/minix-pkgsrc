@@ -1,0 +1,4 @@
+@comment $NetBSD$
+share/texmf-dist/doc/luatex/luaotfload/NEWS
+share/texmf-dist/doc/luatex/luaotfload/README
+share/texmf-dist/doc/luatex/luaotfload/luaotfload.pdf

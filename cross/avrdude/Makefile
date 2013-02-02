@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2011/11/08 20:41:40 minskim Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/03 00:10:29 asau Exp $
 
 DISTNAME=		avrdude-5.11
+PKGREVISION=		1
 CATEGORIES=		cross
 MASTER_SITES=		http://download.savannah.gnu.org/releases/avrdude/
 
@@ -13,7 +14,6 @@ BUILD_DEPENDS+=	dvipsk-[0-9]*:../../print/dvipsk
 BUILD_DEPENDS+=	tex-latex-fonts-[0-9]*:../../fonts/tex-latex-fonts
 BUILD_DEPENDS+=	tex-pdftex-[0-9]*:../../print/tex-pdftex
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 USE_GNU_READLINE=	yes
@@ -21,6 +21,7 @@ USE_GNU_READLINE=	yes
 .include "../../mk/bsd.prefs.mk"
 
 GNU_CONFIGURE=		yes
+TEXINFO_REQD=		4.9
 USE_TOOLS+=		autoconf automake autoreconf makeinfo texi2html yacc lex
 INFO_FILES=		yes
 EGDIR=			${PREFIX}/share/examples/avrdude
@@ -43,6 +44,7 @@ pre-configure:
 BUILD_DEPENDS+=		gtexinfo-[0-9]*:../../devel/gtexinfo
 .endif
 
+.include "../../devel/libftdi/buildlink3.mk"
 .include "../../devel/libusb/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

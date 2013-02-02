@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.26 2010/12/23 11:44:26 dsainty Exp $
+# $NetBSD: Makefile,v 1.29 2012/10/02 21:25:55 asau Exp $
 #
 
 DISTNAME=	xsqlmenu-2.10
-PKGREVISION=	10
+PKGREVISION=	12
 CATEGORIES=	databases
 MASTER_SITES=	http://www.jlab.org/~saw/xsqlmenu/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.jlab.org/~saw/xsqlmenu/
 COMMENT=	X based GUI for MySQL
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 MAKE_ENV+=	MAKE=${MAKE_PROGRAM:Q}

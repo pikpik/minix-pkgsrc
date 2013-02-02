@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.13 2009/10/25 22:54:03 tron Exp $
+# $NetBSD: Makefile,v 1.19 2012/12/13 14:31:03 is Exp $
 
 .include "../../x11/xlockmore/Makefile.common"
 
 PKGNAME=	${DISTNAME:S/-/-lite-/}
-PKGREVISION=	1
 COMMENT=	"lite" version of xlockmore
+
+PKGREVISION=	2
 
 CONFIGURE_ARGS+=	--without-xpm
 CONFIGURE_ARGS+=	--without-gltt
@@ -18,6 +19,6 @@ CONFIGURE_ARGS+=	--without-esound
 CONFIGURE_ARGS+=	--without-gtk2
 CONFIGURE_ARGS+=	--without-gtk
 
-PLIST_SUBST+=    LITE="@comment Not in lite version: "
+PLIST_SUBST+=	LITE="@comment Not in lite version: "
 
 .include "../../mk/bsd.pkg.mk"

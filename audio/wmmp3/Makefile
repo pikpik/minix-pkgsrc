@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/09/04 21:38:03 dholland Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/02 23:48:13 asau Exp $
 
 DISTNAME=	wmmp3-0.12
 PKGREVISION=	3
@@ -15,7 +15,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--x-includes=${X11BASE:Q}/include
 CONFIGURE_ARGS+=	--x-libraries=${X11BASE:Q}/lib${LIBABISUFFIX:Q}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	share/examples
 
 post-patch:
@@ -29,5 +28,4 @@ post-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2010/02/15 15:57:44 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/03/15 11:53:37 obache Exp $
 #
 
 DISTNAME=		Mixminion-0.0.8alpha3
@@ -11,8 +11,6 @@ MAINTAINER=		athaba@inode.at
 HOMEPAGE=		http://mixminion.net/
 COMMENT=		Anonymous Type 3 remailer
 LICENSE=		mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PYTHON=	lib/mixminion/Main.py
 PYDISTUTILSPKG=	yes

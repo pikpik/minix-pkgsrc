@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.87 2011/01/13 13:36:07 wiz Exp $
+# $NetBSD: Makefile,v 1.90 2012/10/06 14:10:50 asau Exp $
 
 DISTNAME=	gd-2.0.35
-PKGREVISION=	9
+PKGREVISION=	11
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libgd.org/releases/
 EXTRACT_SUFX=	.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.libgd.org/
 COMMENT=	Graphics library for the dynamic creation of images
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "options.mk"
 

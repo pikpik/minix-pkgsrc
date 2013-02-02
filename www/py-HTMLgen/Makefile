@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/02/16 19:44:28 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2011/07/03 12:19:12 jym Exp $
 #
 
 DISTNAME=	HTMLgen
@@ -12,8 +12,6 @@ DIST_SUBDIR=	py-HTMLgen-2.2.2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://starship.python.net/crew/friedrich/HTMLgen/html/main.html
 COMMENT=	Class library for the generation of HTML documents
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	yes
 MAKE_ENV+=	PYTHONBIN=${PYTHONBIN:Q}

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:35:10 seb Exp $
+# $NetBSD: Makefile,v 1.6 2012/09/11 23:04:26 asau Exp $
 
 DISTNAME=	Excel-Template-Plus-0.05
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Excel/}
 
@@ -20,8 +20,6 @@ DEPENDS+=	p5-Template-Toolkit-[0-9]*:../../www/p5-Template-Toolkit
 DEPENDS+=	p5-Test-Deep-[0-9]*:../../devel/p5-Test-Deep
 
 BUILD_DEPENDS+=	p5-Test-Exception>=0.21:../../devel/p5-Test-Exception
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Excel/Template/Plus/.packlist

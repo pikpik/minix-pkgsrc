@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2007/06/03 23:27:23 wiz Exp $
+# $NetBSD: Makefile,v 1.33 2012/08/21 23:49:18 marino Exp $
 
 DISTNAME=	xcircuit-3.4.26
+PKGREVISION=	1
 CATEGORIES=	cad graphics
 MASTER_SITES=	http://opencircuitdesign.com/xcircuit/archive/
 EXTRACT_SUFX=	.tgz
@@ -8,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	shaun@inerd.com
 HOMEPAGE=	http://opencircuitdesign.com/xcircuit/
 COMMENT=	Drawing program for X11 (especially for circuits)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 USE_TOOLS+=	gs:run

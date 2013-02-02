@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.24 2012/03/08 10:26:08 shattered Exp $
+# $NetBSD: Makefile,v 1.26 2012/06/05 09:30:19 jym Exp $
 #
 
 DISTNAME=	munin_${VER}
 VER=		1.3.2
 PKGNAME=	munin-node-${VER}
-PKGREVISION=	11
+PKGREVISION=	12
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=munin/}
 
@@ -48,7 +48,6 @@ PLIST.not-sunos= yes
 
 PKG_GROUPS_VARS+=	MUNIN_GROUP
 PKG_USERS_VARS+=	MUNIN_USER
-USERGROUP_PHASE=	pre-install
 
 MUNIN_GROUP?=	munin
 MUNIN_USER?=	munin

@@ -1,0 +1,9 @@
+#!@SH@
+#
+# $NetBSD$
+
+case "${STAGE}" in
+POST-INSTALL)
+	${CHOWN} -R @TOMCAT_USER@:@TOMCAT_GROUP@ ${PKG_PREFIX}/share/tomcat/webapps
+	;;
+esac

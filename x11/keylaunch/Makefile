@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/03/08 19:49:16 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2009/12/17 18:32:51 abs Exp $
 #
 
 DISTNAME=	keylaunch_1.3.3
@@ -15,7 +15,6 @@ USE_TOOLS+=	gmake
 GNU_CONFIGURE=	yes
 
 INSTALLATION_DIRS+=	bin share/examples/keylaunch
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/keylaunch ${DESTDIR}${PREFIX}/bin

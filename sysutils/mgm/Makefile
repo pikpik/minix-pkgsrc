@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2006/09/07 21:27:30 dan Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:57:40 wiz Exp $
 
 DISTNAME=	mgm-1.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.xiph.org/mgm/
 EXTRACT_SUFX=	.tgz
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linuxmafia.com/mgm/
 COMMENT=	Moaning Goat Meter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Tk-[0-9]*:../../x11/p5-Tk
 

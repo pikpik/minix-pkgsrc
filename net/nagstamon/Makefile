@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.13 2012/03/03 00:13:46 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 23:02:17 adam Exp $
 #
 
-VERSION=	0.9.8
+VERSION=	0.9.9
 DISTNAME=	nagstamon_${VERSION}
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	net python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nagstamon/}
 
@@ -13,7 +13,6 @@ HOMEPAGE=	http://nagstamon.ifw-dresden.de/
 COMMENT=	Nagios status monitor which takes place in systray or on desktop
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		# none
 PYDISTUTILSPKG=		yes
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2009/06/15 10:49:16 hasso Exp $
+# $NetBSD: Makefile,v 1.9 2012/09/27 10:06:30 jperkin Exp $
 #
 
 DISTNAME=	xf86-video-imstt-1.1.0
@@ -13,11 +13,15 @@ COMMENT=	Modular Xorg IMS Twin Turbo 128 video driver
 
 BROKEN=		Broken with xserver 1.6 and up
 
-PKG_DESTDIR_SUPPORT=    user-destdir
+USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
+USE_TOOLS+=	pkg-config
 
-USE_LIBTOOL=    yes
-GNU_CONFIGURE=  yes
-USE_TOOLS+=     pkg-config
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "SunOS"
+CONFIGURE_ENV+=	DRIVER_MAN_SUFFIX=4
+.endif
 
 .include "../../x11/modular-xorg-server/buildlink3.mk"
 .include "../../x11/randrproto/buildlink3.mk"

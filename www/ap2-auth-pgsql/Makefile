@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.20 2010/02/10 19:34:07 joerg Exp $
+# $NetBSD: Makefile,v 1.22 2012/08/05 10:02:14 obache Exp $
 
 DISTNAME=		mod_auth_pgsql-2.0.3
 PKGNAME=		${APACHE_PKG_PREFIX}-auth-pgsql-2.0.3
-PKGREVISION=		6
+PKGREVISION=		7
 CATEGORIES=		www databases
 MASTER_SITES=		http://www.giuseppetanzilli.it/mod_auth_pgsql2/dist/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.giuseppetanzilli.it/mod_auth_pgsql2/
 COMMENT=		Allows users to use PostgreSQL databases for user authentication
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		ap-auth-postgresql-*
 

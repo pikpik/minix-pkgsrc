@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.9 2009/06/14 17:50:27 joerg Exp $
+@comment $NetBSD: PLIST,v 1.12 2012/10/30 22:39:07 morr Exp $
 man/fr.ISO8859-1/man1/evim.1
 man/fr.ISO8859-1/man1/ex.1
 man/fr.ISO8859-1/man1/rview.1
@@ -91,6 +91,7 @@ share/vim/${VIM_SUBDIR}/keymap/README.txt
 share/vim/${VIM_SUBDIR}/keymap/accents.vim
 share/vim/${VIM_SUBDIR}/keymap/arabic.vim
 share/vim/${VIM_SUBDIR}/keymap/arabic_utf-8.vim
+share/vim/${VIM_SUBDIR}/keymap/belarusian-jcuken.vim
 share/vim/${VIM_SUBDIR}/keymap/bulgarian-bds.vim
 share/vim/${VIM_SUBDIR}/keymap/bulgarian-phonetic.vim
 share/vim/${VIM_SUBDIR}/keymap/canfr-win.vim
@@ -100,6 +101,7 @@ share/vim/${VIM_SUBDIR}/keymap/croatian_iso-8859-2.vim
 share/vim/${VIM_SUBDIR}/keymap/croatian_utf-8.vim
 share/vim/${VIM_SUBDIR}/keymap/czech.vim
 share/vim/${VIM_SUBDIR}/keymap/czech_utf-8.vim
+share/vim/${VIM_SUBDIR}/keymap/dvorak.vim
 share/vim/${VIM_SUBDIR}/keymap/esperanto.vim
 share/vim/${VIM_SUBDIR}/keymap/esperanto_utf-8.vim
 share/vim/${VIM_SUBDIR}/keymap/greek.vim
@@ -164,6 +166,7 @@ share/vim/${VIM_SUBDIR}/lang/fr/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/ga/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/it/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/ja/LC_MESSAGES/vim.mo
+share/vim/${VIM_SUBDIR}/lang/ko.UTF-8/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/ko/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/menu_af.latin1.vim
 share/vim/${VIM_SUBDIR}/lang/menu_af.utf-8.vim
@@ -182,6 +185,7 @@ share/vim/${VIM_SUBDIR}/lang/menu_cs.latin1.vim
 share/vim/${VIM_SUBDIR}/lang/menu_cs_cz.cp1250.vim
 share/vim/${VIM_SUBDIR}/lang/menu_cs_cz.iso_8859-2.vim
 share/vim/${VIM_SUBDIR}/lang/menu_cs_cz.latin1.vim
+share/vim/${VIM_SUBDIR}/lang/menu_cs_cz.utf-8.vim
 share/vim/${VIM_SUBDIR}/lang/menu_czech_czech_republic.1250.vim
 share/vim/${VIM_SUBDIR}/lang/menu_czech_czech_republic.1252.vim
 share/vim/${VIM_SUBDIR}/lang/menu_czech_czech_republic.ascii.vim
@@ -269,6 +273,10 @@ share/vim/${VIM_SUBDIR}/lang/menu_sl_si.utf-8.vim
 share/vim/${VIM_SUBDIR}/lang/menu_slovak_slovak_republic.1250.vim
 share/vim/${VIM_SUBDIR}/lang/menu_spanish_spain.850.vim
 share/vim/${VIM_SUBDIR}/lang/menu_sr.utf-8.vim
+share/vim/${VIM_SUBDIR}/lang/menu_sr_rs.ascii.vim
+share/vim/${VIM_SUBDIR}/lang/menu_sr_rs.iso_8859-2.vim
+share/vim/${VIM_SUBDIR}/lang/menu_sr_rs.iso_8859-5.vim
+share/vim/${VIM_SUBDIR}/lang/menu_sr_rs.utf-8.vim
 share/vim/${VIM_SUBDIR}/lang/menu_sr_yu.ascii.vim
 share/vim/${VIM_SUBDIR}/lang/menu_sr_yu.iso_8859-2.vim
 share/vim/${VIM_SUBDIR}/lang/menu_sr_yu.iso_8859-5.vim
@@ -292,6 +300,8 @@ share/vim/${VIM_SUBDIR}/lang/menu_zh_cn.utf-8.vim
 share/vim/${VIM_SUBDIR}/lang/menu_zh_tw.big5.vim
 share/vim/${VIM_SUBDIR}/lang/menu_zh_tw.cp950.vim
 share/vim/${VIM_SUBDIR}/lang/menu_zh_tw.utf-8.vim
+share/vim/${VIM_SUBDIR}/lang/nb/LC_MESSAGES/vim.mo
+share/vim/${VIM_SUBDIR}/lang/nl/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/no/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/pl/LC_MESSAGES/vim.mo
 share/vim/${VIM_SUBDIR}/lang/pt_BR/LC_MESSAGES/vim.mo

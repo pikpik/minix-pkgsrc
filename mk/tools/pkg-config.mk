@@ -1,4 +1,4 @@
-# $NetBSD: pkg-config.mk,v 1.9 2008/04/20 19:32:31 jmmv Exp $
+# $NetBSD: pkg-config.mk,v 1.10 2010/08/24 19:08:29 bad Exp $
 #
 # Copyright (c) 2005 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -43,7 +43,7 @@ _PKG_CONFIG_LIBDIR?=	${BUILDLINK_DIR}/lib/pkgconfig:${BUILDLINK_DIR}/share/pkgco
 _PKG_CONFIG_LOG?=	${WRKDIR}/.pkg-config.log
 
 TOOLS_SCRIPT.pkg-config=	\
-	PKG_CONFIG_LIBDIR=${_PKG_CONFIG_LIBDIR:Q} PKG_CONFIG_PATH= ${TOOLS_SCRIPT_DFLT.pkg-config}
+	PKG_CONFIG_LIBDIR=${_PKG_CONFIG_LIBDIR:Q} ${TOOLS_SCRIPT_DFLT.pkg-config}
 
 CONFIGURE_ENV+=	PKG_CONFIG=${TOOLS_CMD.pkg-config:Q}
 CONFIGURE_ENV+=	PKG_CONFIG_LIBDIR=${_PKG_CONFIG_LIBDIR:Q}

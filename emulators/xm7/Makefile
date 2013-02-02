@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/01/03 03:24:45 dholland Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/03 12:55:22 asau Exp $
 #
 
 DISTNAME=		xm71020s
@@ -20,7 +20,6 @@ NO_SRC_ON_FTP=		${RESTRICTED}
 
 BUILD_DEPENDS+=		nkf>=1.7:../../converters/nkf
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 NOT_FOR_BULK_PLATFORM=	Linux-*-*
 
 EXTRACT_OPTS_ZIP=	-aqoLL	# lower-case filenames are expected
@@ -38,6 +37,5 @@ do-install:
 
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

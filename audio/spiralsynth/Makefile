@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.28 2011/01/13 13:37:08 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2012/11/15 13:44:14 gdt Exp $
 #
 
 DISTNAME=		SpiralSynth-2.0.0
 PKGNAME=		spiralsynth-2.0.0
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		audio
 MASTER_SITES=		http://www.pawfal.org/Software/SpiralSynth/dload/
 
@@ -15,8 +15,6 @@ COMMENT=		Polyphonic analogue softsynth
 ONLY_FOR_PLATFORM=	*-*-alpha *-*-arc *-*-cobalt *-*-dreamcast \
 			*-*-hpcmips *-*-hpcsh *-*-i386 *-*-pc532 *-*-pmax \
 			*-*-vax *-*-x86_64
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
@@ -32,7 +30,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/.SpiralPatches.bank \
 		${WRKSRC}/.Spiralrc ${DESTDIR}${PREFIX}/share/spiralsynth
 
-.include "../../x11/fltk/buildlink3.mk"
+.include "../../x11/fltk13/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

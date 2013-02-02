@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2012/02/01 19:17:15 rhaen Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/21 22:36:35 wiz Exp $
 
-DISTNAME=	Class-Load-XS-0.04
+DISTNAME=	Class-Load-XS-0.06
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Class/}
@@ -17,7 +17,6 @@ BUILD_DEPENDS+=	p5-Test-Fatal-[0-9]*:../../devel/p5-Test-Fatal
 BUILD_DEPENDS+=	p5-Test-Requires-[0-9]*:../../devel/p5-Test-Requires
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c
 PERL5_PACKLIST=		auto/Class/Load/XS/.packlist

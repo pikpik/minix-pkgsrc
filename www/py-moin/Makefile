@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.16 2011/03/07 20:51:40 gls Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/28 06:31:01 asau Exp $
 #
 
-VER=		1.9.3
+VER=		1.9.6
 DISTNAME=	moin-${VER}
 PKGNAME=	${PYPKGPREFIX}-moin-${VER}
-PKGREVISION=	2
+#PKGREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	http://static.moinmo.in/files/
 
@@ -13,22 +13,35 @@ HOMEPAGE=	http://moinmo.in/
 COMMENT=	MoinMoin, a Python clone of WikiWiki
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-#Only for Python 2.4, which isn't recommended anyway
-#DEPENDS+=	${PYPKGPREFIX}-xml-[0-9]*:../../textproc/py-xml
-
 USE_LANGUAGES=	# none
 
-PYTHON_VERSIONS_ACCEPTED=	27 26 25 24
+REPLACE_PYTHON=	jabberbot/bot.py \
+		MoinMoin/version.py \
+		MoinMoin/filter/EXIF.py \
+		MoinMoin/i18n/msgfmt.py \
+		MoinMoin/i18n/tools/*.py \
+		MoinMoin/script/moin.py \
+		MoinMoin/script/old/*.py \
+		MoinMoin/script/old/xmlrpc-tools/*.py \
+		MoinMoin/script/migration/1050800.py \
+		MoinMoin/script/migration/1059997.py \
+		MoinMoin/script/migration/1059998.py \
+		MoinMoin/script/migration/1059999.py \
+		MoinMoin/script/migration/1089999.py \
+		MoinMoin/script/old/migration/*.py \
+		MoinMoin/support/difflib.py \
+		MoinMoin/support/tarfile.py \
+		MoinMoin/support/parsedatetime/*.py \
+		MoinMoin/support/xappy/*.py \
+		MoinMoin/web/static/htdocs/applets/FCKeditor/editor/filemanager/connectors/py/*.py \
+		wiki/server/moin* \
+		wiki/server/test.wsgi
 
-REPLACE_PYTHON=	MoinMoin/i18n/tools/markup15to16.py \
-		MoinMoin/i18n/tools/po2wiki.py \
-		MoinMoin/i18n/tools/prepend.py \
-		MoinMoin/i18n/tools/wiki2po.py \
-		wiki/server/moin*
+REPLACE_PERL=	MoinMoin/web/static/htdocs/applets/FCKeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.pl \
+		MoinMoin/web/static/htdocs/applets/FCKeditor/editor/filemanager/connectors/perl/connector.cgi \
+		MoinMoin/web/static/htdocs/applets/FCKeditor/editor/filemanager/connectors/perl/upload.cgi
 
-REPLACE_PERL=	MoinMoin/web/static/htdocs/applets/FCKeditor/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.pl
+PYTHON_SELF_CONFLICT=	yes
 
 .include "../../lang/python/distutils.mk"
 .include "../../lang/python/application.mk"

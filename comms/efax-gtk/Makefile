@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.55 2012/02/16 16:42:17 hans Exp $
+# $NetBSD: Makefile,v 1.61 2012/10/08 23:01:19 adam Exp $
 
 DISTNAME=	efax-gtk-3.2.3.src
 PKGNAME=	efax-gtk-3.2.3
-PKGREVISION=	8
+PKGREVISION=	13
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=efax-gtk/}
 EXTRACT_SUFX=	.tgz
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://efax-gtk.sourceforge.net/
 COMMENT=	GTK frontend for efax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=		c c++

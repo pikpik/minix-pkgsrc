@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-cl,v 1.8 2012/07/24 18:23:38 drochner Exp $
 
---- gio/Makefile.am.orig	2012-03-11 21:44:19.000000000 +0000
+--- gio/Makefile.am.orig	2012-07-14 20:33:13.000000000 +0000
 +++ gio/Makefile.am
 @@ -2,7 +2,7 @@ include $(top_srcdir)/Makefile.decl
  
@@ -10,17 +10,18 @@ $NetBSD$
 +SUBDIRS =
  
  if OS_UNIX
- SUBDIRS += libasyncns xdgmime
-@@ -635,12 +635,6 @@ gdbus_SOURCES = gdbus-tool.c
- gdbus_LDADD = libgio-2.0.la \
- 	$(gio_dependency_libs)
+ SUBDIRS += xdgmime
+@@ -722,13 +722,6 @@ gdbus_LDADD = libgio-2.0.la \
+ 	$(top_builddir)/glib/libglib-2.0.la 		\
+ 	$(top_builddir)/gobject/libgobject-2.0.la
  
--completiondir = $(sysconfdir)/bash_completion.d
+-completiondir = $(datadir)/bash-completion/completions
 -completion_DATA = \
--	gdbus-bash-completion.sh		\
--	gsettings-bash-completion.sh
+-	completion/gdbus				\
+-	completion/gsettings				\
+-	completion/gresource
 -EXTRA_DIST += $(completion_DATA)
 -
  # ------------------------------------------------------------------------
+ # gresource tool
  
- dist-hook: $(BUILT_EXTRA_DIST) ../build/win32/vs9/gio.vcproj ../build/win32/vs10/gio.vcxproj ../build/win32/vs10/gio.vcxproj.filters

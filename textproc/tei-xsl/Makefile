@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2008/11/18 14:13:08 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2008/11/18 16:08:12 dillo Exp $
 #
 
 DISTNAME=	tei-xsl-5.14
@@ -13,7 +13,6 @@ COMMENT=	XSLT Stylesheets to convert TEI to FO, HTML, and LaTeX
 USE_LANGUAGES=	# none
 NO_CONFIGURE=	YES
 NO_BUILD=	YES
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 TEIXSLDIR=	${PREFIX}/share/xsl/tei-xsl
 DOCDIR=		${PREFIX}/share/doc/tei-xsl

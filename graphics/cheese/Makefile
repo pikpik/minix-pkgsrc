@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.27 2012/03/03 00:13:10 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2012/12/15 10:36:27 ryoon Exp $
 
 DISTNAME=	cheese-2.26.3
-PKGREVISION=	13
+PKGREVISION=	24
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/cheese/2.26/}
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/cheese/
 COMMENT=	Use your webcam to take photos and videos
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	gettext-m4-[0-9]*:../../devel/gettext-m4
 DEPENDS+= gst-plugins0.10-theora>=0.10.1:../../multimedia/gst-plugins0.10-theora

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2010/08/21 16:35:17 seb Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:56:46 wiz Exp $
 
 DISTNAME=		Locale-Maketext-Simple-0.21
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		4
 CATEGORIES=		misc perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Locale/}
 
@@ -12,11 +12,10 @@ COMMENT=		Simple interface to Locale::Maketext::Lexicon
 LICENSE=		mit
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# empty
 PERL5_PACKLIST=		auto/Locale/Maketext/Simple/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

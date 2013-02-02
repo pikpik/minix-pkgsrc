@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/05/20 00:58:20 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/05/29 20:50:35 asau Exp $
 #
 # Convert the version number as follows 2d2 -> 2.4.2, where the d is
 # changed to a 4, representing the 4th letter.
@@ -8,7 +8,7 @@
 
 DISTNAME=	scm5e3
 PKGNAME=	scm-5.5.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	http://swissnet.ai.mit.edu/ftpdir/scm/
 EXTRACT_SUFX=	.zip
@@ -16,8 +16,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.swiss.ai.mit.edu/~jaffer/SCM
 COMMENT=	Portable scheme interpreter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	slib>=3.1.1:../../devel/slib
 

@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.5 2012/02/06 12:39:53 wiz Exp $
+# $NetBSD: buildlink3.mk,v 1.8 2012/09/15 10:04:14 obache Exp $
 
 BUILDLINK_TREE+=	libgee
 
@@ -6,7 +6,8 @@ BUILDLINK_TREE+=	libgee
 LIBGEE_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libgee+=	libgee>=0.5.3
-BUILDLINK_ABI_DEPENDS.libgee?=	libgee>=0.6.4nb2
+BUILDLINK_ABI_DEPENDS.libgee+=	libgee>=0.6.5nb1
+BUILDLINK_ABI_DEPENDS.libgee+=	libgee<0.8
 BUILDLINK_PKGSRCDIR.libgee?=	../../devel/libgee
 
 .include "../../devel/glib2/buildlink3.mk"

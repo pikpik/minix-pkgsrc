@@ -1,4 +1,4 @@
-# $NetBSD: package.mk,v 1.14 2012/01/30 19:08:58 sno Exp $
+# $NetBSD: package.mk,v 1.17 2012/10/14 17:48:34 minskim Exp $
 #
 # This Makefile fragment is intended to be included by packages that build
 # TeX Live packages.
@@ -9,7 +9,7 @@
 #	A list of texlua scripts to be installed, relative to ${WRKSRC}.
 #
 # TEX_FORMATS
-#	See ../../print/texlive-tetex/format.mk.
+#	See ../../print/tex-tetex/format.mk.
 #
 # TEX_HYPHEN_DAT
 #	See ../../print/texlive-tetex/hyphen.mk.
@@ -33,13 +33,11 @@ MASTER_SITES?=	${MASTER_SITE_TEX_CTAN:=systems/texlive/tlnet/archive/}
 .if empty(TEXLIVE_REV)
 DIST_SUBDIR?=	${PKGNAME_NOREV}
 .else
-DIST_SUBDIR?=	${PKGBASE:S/-doc//}-${TEXLIVE_REV}
+DIST_SUBDIR?=	${PKGBASE:C/-doc$$//}-${TEXLIVE_REV}
 .endif
 EXTRACT_SUFX?=	.tar.xz
 
 HOMEPAGE?=	http://www.tug.org/texlive/
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

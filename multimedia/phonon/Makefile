@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2011/01/13 13:36:53 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/08 23:01:04 adam Exp $
 
 DISTNAME=	phonon-4.5.1
+PKGREVISION=	6
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_KDE:=phonon/4.5.1/src/}
 EXTRACT_SUFX=	.tar.xz
@@ -9,8 +10,6 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://phonon.kde.org
 COMMENT=	Multimedia API for KDE and QT
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # BUILD_MAKE_FLAGS+= VERBOSE=1
 
@@ -30,6 +29,7 @@ pre-configure:
 	${MKDIR} ${WRKSRC}/_build
 
 .include "../../x11/qt4-libs/buildlink3.mk"
+BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../x11/qt4-qdbus/buildlink3.mk"
 

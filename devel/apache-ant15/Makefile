@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2008/05/26 02:13:17 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2009/08/20 15:24:58 jwise Exp $
 #
 # NOTE: if you are depending on ant from another package, please be aware that
 # the ant team has CHANGED the version numbering scheme.  A previous version
@@ -20,8 +20,6 @@ DEPENDS+=	crimson>=1.1.3:../../textproc/crimson
 
 # Up to version 1.5.1 inclusive this was known as "jakarta-ant".
 CONFLICTS=	jakarta-ant*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_JAVA=	run

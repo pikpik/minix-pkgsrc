@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2012/03/03 00:13:15 wiz Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/06 14:10:58 asau Exp $
 #
 
 DISTNAME=	gwenview-i18n-1.4.2
-PKGREVISION=	11
+PKGREVISION=	14
 CATEGORIES=	kde graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gwenview/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gwenview.sourceforge.net/
 COMMENT=	Translations for gwenview image viewer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake msgfmt
 USE_LANGUAGES=	c c++

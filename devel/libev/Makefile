@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/03/06 16:09:42 asau Exp $
+# $NetBSD: Makefile,v 1.9 2012/01/17 21:43:19 sbd Exp $
 
 DISTNAME=	libev-4.04
 CATEGORIES=	devel
@@ -8,8 +8,6 @@ MAINTAINER=	tonio@NetBSD.org
 HOMEPAGE=	http://software.schmorp.de/pkg/libev.html
 COMMENT=	Full-featured and high-performance event loop
 LICENSE=	2-clause-bsd OR gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

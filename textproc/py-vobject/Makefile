@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2009/09/23 09:54:46 tron Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 23:55:20 cheusov Exp $
 #
 
 DISTNAME=	vobject-0.8.1c
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc python
 MASTER_SITES=	http://vobject.skyhouseconsulting.com/
 
@@ -12,10 +12,8 @@ HOMEPAGE=	http://vobject.skyhouseconsulting.com/
 COMMENT=	Python iCalendar (ics) and vCard library
 LICENSE=	apache-2.0
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-DEPENDS+=	${PYPKGPREFIX}-dateutil>=1.1:../../time/py-dateutil
-
+DEPENDS+=		${PYPKGPREFIX}-dateutil>=1.1:../../time/py-dateutil
+PYTHON_SELF_CONFLICT=	yes
 
 PYDISTUTILSPKG=	yes
 PY_PATCHPLIST=	yes

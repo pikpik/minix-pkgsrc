@@ -1,11 +1,13 @@
-# $NetBSD: Policy.sh,v 1.1 2010/08/19 20:47:10 seb Exp $
+# $NetBSD: Policy.sh,v 1.4 2012/11/07 02:46:19 sbd Exp $
 #
 # Site-wide policy settings for pkgsrc Perl
 #
 archname='@MACHINE_ARCH@-@LOWER_OPSYS@'
 cc='@CC@'
-if $test -n '@CFLAGS@'; then
-	optimize='@CFLAGS@'
+ccflags='@CFLAGS@'
+ldflags='@LDFLAGS@'
+if $test -n "$ccflags"; then
+	optimize="$ccflags"
 fi
 i_malloc='undef'
 installusrbinperl='undef'
@@ -28,7 +30,7 @@ vendorprefix='@PERL5_VENDORPREFIX@'
 
 # The Perl Configure script will install scripts into "*/script"
 # directories if they exist, so override with explicit settings.
-scriptdir='@PERL5_SCRIPTDIR@'
+scriptdir='@PERL5_PERLBASE@/bin'
 sitescript='@PERL5_SITEBASE@/bin'
 vendorscript='@PERL5_VENDORBASE@/bin'
 
@@ -51,7 +53,7 @@ vendorlib_stem='@PERL5_VENDORBASE@'
 # Avoid manpage conflicts between the standard Perl library, 3rd-party
 # modules, and other packages.
 man1ext='1'
-man1dir='@PERL5_MAN1DIR@'
+man1dir='@PERL5_PERLBASE@/@PKGMANDIR@/man1'
 siteman1dir='@PERL5_SITEBASE@/@PKGMANDIR@/man1'
 vendorman1dir='@PERL5_VENDORBASE@/@PKGMANDIR@/man1'
 man3ext='3'
@@ -83,10 +85,11 @@ cat > UU/pkgsrc.cbu <<EOCBU
 # This script UU/pkgsrc.cbu will get 'called-back' by Configure
 # *after* all hints
 
-# Sets the correct LDFLAGS for linking against pkgsrc-installed
-# libraries
-ldflags="@LOCLIBRPATHFLAGS@ \$ldflags"
-lddlflags="@LOCLIBRPATHFLAGS@ \$lddlflags"
+# XCOFF targets need the path specified where libperl.a resides.
+if $test "@OBJECT_FMT@" = "XCOFF"; then
+	ldflags="@COMPILER_RPATH_FLAG@\${shrpdir} \$ldflags"
+	lddlflags="@COMPILER_RPATH_FLAG@\${shrpdir} \$lddlflags"
+fi
 
 # Set pkgsrc defaults for library and header search paths:
 # nail down the directories in which headers and libraries of

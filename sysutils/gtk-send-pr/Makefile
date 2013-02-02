@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.38 2012/02/06 12:41:35 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/08 23:02:26 adam Exp $
 #
 
 DISTNAME=		gtk-send-pr-0.4.9
-PKGREVISION=		11
+PKGREVISION=		15
 CATEGORIES=		sysutils
 MASTER_SITES=		http://download.berlios.de/gtk-send-pr/
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		mmendez@energyhq.be
 HOMEPAGE=		http://gtk-send-pr.berlios.de/index.html
 COMMENT=		GTK+ based problem report tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 

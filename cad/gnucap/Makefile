@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2009/05/20 00:58:06 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2010/09/29 22:54:38 minskim Exp $
 #
 
 DISTNAME=	gnucap-2006-07-08
@@ -16,7 +16,6 @@ BUILD_DEPENDS+=	dvipdfmx>=20100328:../../print/dvipdfmx
 BUILD_DEPENDS+=	tex-hyperref>=6.81pnb2:../../print/tex-hyperref
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	gnucap-2006-07-[0-9]*
 

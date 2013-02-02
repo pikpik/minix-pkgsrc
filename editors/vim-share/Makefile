@@ -1,11 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2007/12/18 08:15:03 martti Exp $
+# $NetBSD: Makefile,v 1.29 2012/08/27 14:45:37 morr Exp $
 
 PKGNAME=		vim-share-${VIM_VERSION}.${VIM_PATCHLEVEL}
-#PKGREVISION=		1
 
 COMMENT=		Data files for the vim editor (vi clone)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include		"Makefile.common"
 
@@ -19,7 +16,7 @@ INSTALL_MAKE_FLAGS+=	${MAKE_FLAGS} TOOLS_AWK=${TOOLS_AWK} TOOLS_SETENV=${TOOLS_S
 
 PLIST_SUBST+=		VIM_SUBDIR=${VIM_SUBDIR}
 
-CHECK_INTERPRETER_SKIP+=	share/vim/vim72/doc/*.pl
-CHECK_INTERPRETER_SKIP+=	share/vim/vim72/tools/*.pl
+CHECK_INTERPRETER_SKIP+=	share/vim/vim73/doc/*.pl
+CHECK_INTERPRETER_SKIP+=	share/vim/vim73/tools/*.pl
 
 .include "../../mk/bsd.pkg.mk"

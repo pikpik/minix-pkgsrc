@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.21 2011/11/16 08:23:48 sbd Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 21:56:05 wiz Exp $
 
 DISTNAME=	xscorch-0.2.0
-PKGREVISION=	5
+PKGREVISION=	7
 CATEGORIES=	games
 MASTER_SITES=	http://www.xscorch.org/releases/
 
 MAINTAINER=	snj@NetBSD.org
 HOMEPAGE=	http://www.xscorch.org/
 COMMENT=	Multiplayer tank shoot-em-up
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		YES
 USE_TOOLS+=		perl

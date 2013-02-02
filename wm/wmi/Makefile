@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2011/11/01 06:02:44 sbd Exp $
+# $NetBSD: Makefile,v 1.18 2011/12/08 22:13:14 dholland Exp $
 #
 
 DISTNAME=	wmi-10
@@ -12,8 +12,6 @@ COMMENT=	Minimalist, flexible and highly customizable window manager
 
 USE_LANGUAGES=	c c++
 GNU_CONFIGURE=	yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_DEPMETHOD.libXt?=	build
 

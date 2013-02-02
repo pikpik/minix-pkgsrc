@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2011/02/28 14:52:50 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/05/07 08:33:26 adam Exp $
 
-DISTNAME=	babl-0.1.6
+DISTNAME=	babl-0.1.10
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.gimp.org/pub/babl/0.1/ \
-		http://ftp.gwdg.de/pub/misc/grafik/gimp/babl/0.1/
+MASTER_SITES=	ftp://ftp.gimp.org/pub/babl/${PKGVERSION_NOREV:R}/ \
+		http://ftp.gwdg.de/pub/misc/grafik/gimp/babl/${PKGVERSION_NOREV:R}/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -13,7 +13,6 @@ LICENSE=	gnu-gpl-v3
 
 # NOTE: to build documentation (which requires additional dependencies)
 #	define BUILD_DOCS in MAKE_ENV.
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config gmake

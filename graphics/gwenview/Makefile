@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.16 2011/01/23 07:55:13 markd Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/08 23:01:45 adam Exp $
 
 DISTNAME=	gwenview-${_KDE_VERSION}
+PKGREVISION=	5
 CATEGORIES=	graphics
 COMMENT=	KDE image viewer
 

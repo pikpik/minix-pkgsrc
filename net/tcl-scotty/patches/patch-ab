@@ -1,4 +1,4 @@
-$NetBSD$
+$NetBSD: patch-ab,v 1.6 2012/08/21 21:54:19 marino Exp $
 
 Put installed files under lib/tcl, so that tcl more easily picks it
 up using e.g. "package require Tnm".

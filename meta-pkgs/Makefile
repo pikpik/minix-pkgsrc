@@ -1,12 +1,16 @@
-# $NetBSD: Makefile,v 1.63 2011/05/26 23:27:44 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2013/01/17 03:51:05 dholland Exp $
 #
 
 COMMENT=	Collections of other packages
 
 SUBDIR+=	boost
+SUBDIR+=	bulk-large
+SUBDIR+=	bulk-medium
+SUBDIR+=	bulk-small
 SUBDIR+=	c++-gnome-bindings
 SUBDIR+=	compiz-fusion
 SUBDIR+=	courier
+SUBDIR+=	deforaos-desktop
 SUBDIR+=	desktop-gnome
 SUBDIR+=	fxtv-capture
 SUBDIR+=	gimp-docs
@@ -26,20 +30,20 @@ SUBDIR+=	modular-xorg-apps
 SUBDIR+=	modular-xorg-drivers
 SUBDIR+=	modular-xorg-fonts
 SUBDIR+=	modular-xorg-libs
+SUBDIR+=	modular-xorg-protos
 SUBDIR+=	mono-gnome-bindings
 SUBDIR+=	netbsd-doc
 SUBDIR+=	netbsd-doc-print
 SUBDIR+=	netbsd-www
 SUBDIR+=	p5-gnome-bindings
-SUBDIR+=	php5-extensions
 SUBDIR+=	php53-extensions
+SUBDIR+=	php54-extensions
 SUBDIR+=	pkg_developer
 SUBDIR+=	pkgsrc-guide-tools
 SUBDIR+=	pulseaudio-tools
 SUBDIR+=	py-gnome-bindings
 SUBDIR+=	ruby-gnome2
 SUBDIR+=	suse100
-SUBDIR+=	suse113
 SUBDIR+=	suse121
 SUBDIR+=	web-server
 SUBDIR+=	windowmaker-desktop

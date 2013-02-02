@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:41:05 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/12/21 05:33:47 dholland Exp $
 #
 
 DISTNAME=	HandBrake-0.9.3
 PKGNAME=	${DISTNAME:S/HandBrake/handbrake/}
-PKGREVISION=	10
+PKGREVISION=	17
 CATEGORIES=	multimedia
 MASTER_SITES=	http://download.m0k.org/handbrake/releases/ \
 		http://download.m0k.org/handbrake/contrib/
@@ -43,8 +43,6 @@ NO_BIN_ON_FTP=	${RESTRICTED}
 NO_SRC_ON_CDROM=${RESTRICTED}
 NO_SRC_ON_FTP=	${RESTRICTED}
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake perl intltool msgfmt pkg-config bash
 USE_TOOLS+=	autoconf automake aclocal autoreconf m4
@@ -54,8 +52,19 @@ USE_LANGUAGES=	c c++
 BUILD_DEPENDS+=	jam>=2.5.2:../../devel/jam
 BUILD_DEPENDS+=	nasm>=2.05.01:../../devel/nasm
 BUILD_DEPENDS+=	yasm>=0.6.1:../../devel/yasm
+BUILD_DEPENDS+=	gettext-m4-[0-9]*:../../devel/gettext-m4
 
 CLI_CONFIGURE_ARGS=	--release
+
+# harfbuzz, which is now separate from pango, installs a header file
+# called hb.h, and the include path plopped out by autocrap causes it
+# to be included instead of handbrake's own hb.h. Hack around it by
+# changing the include name to point specifically at the right hb.h.
+SUBST_CLASSES+=		inchack
+SUBST_STAGE.inchack=	pre-configure
+SUBST_FILES.inchack=	gtk/src/*.[ch]
+SUBST_SED.inchack=	-e "/^.include \"hb\.h\"/s,hb,../../libhb/hb,"
+SUBST_MESSAGE.inchack=	Working around harfbuzz header conflict.
 
 post-extract:
 	cp ${FILESDIR}/patch-ffmpeg-nodocs.patch \
@@ -66,7 +75,7 @@ post-extract:
 .endfor
 
 pre-configure:
-	cd ${WRKSRC}/gtk && ./autogen.sh
+	cd ${WRKSRC}/gtk && autoreconf -fi
 
 do-configure:
 	cd ${WRKSRC} && ./configure ${CLI_CONFIGURE_ARGS}
@@ -83,4 +92,5 @@ do-install:
 .include "../../sysutils/hal/buildlink3.mk"
 .include "../../www/gtkhtml314/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

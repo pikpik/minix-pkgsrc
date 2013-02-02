@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/12/09 14:59:37 is Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:57:13 wiz Exp $
 #
 
 DISTNAME=		cleanscore-0.9.8.1
-PKGREVISION=		2
+PKGREVISION=		3
 LICENSE=		gnu-gpl-v2
 CATEGORIES=		news
 MASTER_SITES=		http://slrn.sourceforge.net/cleanscore/
@@ -10,8 +10,6 @@ MASTER_SITES=		http://slrn.sourceforge.net/cleanscore/
 MAINTAINER=		is@NetBSD.org
 HOMEPAGE=		http://slrn.sourceforge.net/cleanscore/
 COMMENT=		Clean SLRN's score file
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS=		perl
 REPLACE_PERL=		cleanscore

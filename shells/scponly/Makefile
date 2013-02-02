@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/03/06 00:12:28 snj Exp $
+# $NetBSD: Makefile,v 1.14 2010/05/07 12:02:44 jmmv Exp $
 
 DISTNAME=	scponly-4.8
 PKGREVISION=	1
@@ -11,8 +11,6 @@ HOMEPAGE=	http://sublimation.org/scponly/wiki/
 COMMENT=	Shell that only permits sftp
 
 GNU_CONFIGURE=	yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		chgrp chmod chown echo id ln ls mkdir mv pwd rm rmdir
 CONFIGURE_ENV+=		scponly_PROG_CHGRP=${TOOLS_CHGRP:Q}

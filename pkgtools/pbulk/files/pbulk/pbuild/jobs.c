@@ -1,4 +1,4 @@
-/* $NetBSD: jobs.c,v 1.12 2010/05/05 00:07:07 joerg Exp $ */
+/* $NetBSD: jobs.c,v 1.13 2011/11/27 19:53:30 joerg Exp $ */
 
 /*-
  * Copyright (c) 2007, 2009, 2011 Joerg Sonnenberger <joerg@NetBSD.org>.
@@ -536,10 +536,7 @@ finish_build(const char *report_file)
 static size_t
 hash_item(const char *s, size_t len)
 {
-	size_t h = 5381;
-	while (len--)
-		h = h * 33 + *s++;
-	return h & (HASH_SIZE - 1);
+	return djb_hash2(s, s + len) % HASH_SIZE;
 }
 
 static struct buildhash hash_table[HASH_SIZE];

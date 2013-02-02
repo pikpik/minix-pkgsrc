@@ -1,19 +1,17 @@
-# $NetBSD: Makefile,v 1.8 2010/11/02 15:45:13 drochner Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/08 13:45:44 asau Exp $
 #
 
 .include "../../print/poppler/Makefile.common"
 
 PKGNAME=		poppler-includes-${POPPLER_VERS}
-PKGREVISION=		1
 
 COMMENT=		Poppler Xpdf includes (unsupported)
-MAINTAINER=		dillo@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 
 CONFLICTS+=		poppler-0.5.1 poppler-0.5.1nb1 poppler-0.5.1nb2
 
 GNU_CONFIGURE=		yes
 NO_BUILD=		yes
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 INCDIR=${DESTDIR}${PREFIX}/include
 

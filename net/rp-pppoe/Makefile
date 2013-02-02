@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.38 2009/01/11 02:50:46 jmcneill Exp $
+# $NetBSD: Makefile,v 1.40 2012/08/23 13:10:52 is Exp $
 
 DISTNAME=	rp-pppoe-3.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	net
 MASTER_SITES=	http://www.roaringpenguin.com/files/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.roaringpenguin.com/products/pppoe
 COMMENT=	Roaring Penguin's PPP over Ethernet client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NOT_FOR_PLATFORM+=	Interix-*-* # no userland protocol stack support
 

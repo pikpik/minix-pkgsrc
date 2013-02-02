@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.17 2008/05/26 02:13:24 joerg Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/23 19:51:26 asau Exp $
 #
 
 DISTNAME=	tkdesk-2.0
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://tkdesk.sourceforge.net/dist/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://tkdesk.sourceforge.net/
 COMMENT=	Graphical file manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

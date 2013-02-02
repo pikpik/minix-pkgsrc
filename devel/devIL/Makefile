@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.29 2011/03/10 10:35:03 drochner Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/31 11:16:52 asau Exp $
 #
 
 DISTNAME=	DevIL-${DEVIL_VERSION}
 PKGNAME=	${DISTNAME:S/D/d/}
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=openil/}
 
@@ -12,8 +12,6 @@ DEVIL_VERSION=	1.7.8
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://openil.sourceforge.net/
 COMMENT=	Developer's Image Library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/devil-${DEVIL_VERSION}
 GNU_CONFIGURE=		yes

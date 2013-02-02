@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.4 2009/06/12 22:53:34 wiz Exp $
+$NetBSD: distinfo,v 1.6 2012/04/26 10:50:43 wiz Exp $
 
-SHA1 (dri2proto-2.3.tar.bz2) = 6c9e2c822e777db435a43616067f8dd21cc00a53
-RMD160 (dri2proto-2.3.tar.bz2) = d893c5ddec5cf83de04f30ee51cae90d59a83eff
-Size (dri2proto-2.3.tar.bz2) = 95466 bytes
+SHA1 (dri2proto-2.8.tar.bz2) = 2bc4e8f00778b1f3fe58b4c4f93607ac2adafbbf
+RMD160 (dri2proto-2.8.tar.bz2) = 61d47793b3abbb04016824c68decc1a313976f25
+Size (dri2proto-2.8.tar.bz2) = 108746 bytes

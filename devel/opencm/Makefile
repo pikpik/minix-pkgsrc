@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.48 2010/01/29 19:12:10 joerg Exp $
+# $NetBSD: Makefile,v 1.49 2011/12/19 13:58:13 wiz Exp $
 #
 
 DISTNAME=	${OPENCM_VERSION}-2-src
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.opencm.org/
 COMMENT=	Secure, high-integrity replacement for CVS
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${OPENCM_VERSION}/base
 USE_TOOLS+=	gmake gzip makeinfo lex

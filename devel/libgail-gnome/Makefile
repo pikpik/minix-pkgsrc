@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.42 2012/03/03 00:12:16 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2012/12/15 10:36:22 ryoon Exp $
 #
 
-DISTNAME=	libgail-gnome-1.20.1
-PKGREVISION=	15
+DISTNAME=	libgail-gnome-1.20.4
+PKGREVISION=	2
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libgail-gnome/1.20/}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,14 +11,14 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://developer.gnome.org/projects/gap/
 COMMENT=	GNOME Accessibility Implementation Library
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 USE_TOOLS+=		pkg-config gmake
 
 PKGCONFIG_OVERRIDE=	libgail-gnome.pc.in
+GCONF_SCHEMAS=		libgail-gnome.schemas
 
+.include "../../devel/GConf/schemas.mk"
 .include "../../devel/at-spi/buildlink3.mk"
 .include "../../devel/atk/buildlink3.mk"
 .include "../../devel/libbonobo/buildlink3.mk"

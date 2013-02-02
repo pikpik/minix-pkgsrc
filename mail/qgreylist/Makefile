@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.10 2007/03/24 06:53:16 schmonz Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/03 21:56:33 wiz Exp $
 #
 
 DISTNAME=		qgreylist-0.3
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${HOMEPAGE}
 
@@ -11,8 +12,6 @@ COMMENT=		Simple greylisting for qmail
 
 DEPENDS_QMAIL=		qmail>=1.03nb8:../../mail/qmail
 DEPENDS+=		${DEPENDS_QMAIL}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/qgreylist
 

@@ -1,2 +1,9 @@
 @comment $NetBSD$
 bin/uwsgi-${PYVERSSUFFIX}
+${PYSITELIB}/${EGG_INFODIR}/PKG-INFO
+${PYSITELIB}/${EGG_INFODIR}/SOURCES.txt
+${PYSITELIB}/${EGG_INFODIR}/dependency_links.txt
+${PYSITELIB}/${EGG_INFODIR}/top_level.txt
+${PYSITELIB}/uwsgidecorators.py
+${PYSITELIB}/uwsgidecorators.pyc
+${PYSITELIB}/uwsgidecorators.pyo

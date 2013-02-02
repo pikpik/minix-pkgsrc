@@ -1,15 +1,14 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/08/14 07:02:09 wiz Exp $
 #
 
-DISTNAME=	celt-0.5.0
+DISTNAME=	celt-0.11.3
 CATEGORIES=	audio
 MASTER_SITES=	http://downloads.us.xiph.org/releases/celt/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://downloads.us.xiph.org/releases/celt/
 COMMENT=	Ultra-low-delay, high-quality audio codec (experimental)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	2-clause-bsd
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

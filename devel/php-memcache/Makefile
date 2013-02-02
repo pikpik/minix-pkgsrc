@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.8 2010/12/19 03:00:52 taca Exp $
+# $NetBSD: Makefile,v 1.10 2012/09/25 14:23:51 taca Exp $
 #
 
 MODNAME=		memcache
-PECL_VERSION=		2.2.6
+PECL_VERSION=		2.2.7
 PECL_LEGACY_VERSION_SCHEME=	yes
 CATEGORIES+=		devel
 COMMENT=		PHP extension for memcached
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		php-memcache-[0-9]*
 

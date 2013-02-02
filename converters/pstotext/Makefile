@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/04/25 12:46:19 obache Exp $
+# $NetBSD: Makefile,v 1.2 2010/04/28 07:32:40 obache Exp $
 #
 
 DISTNAME=	pstotext-1.9
@@ -10,8 +10,6 @@ MAINTAINER=	schaecsn@gmx.net
 HOMEPAGE=	http://pages.cs.wisc.edu/~ghost/doc/pstotext.htm
 COMMENT=	Postscript to text converter
 #LICENSE=	see the end of pstotext.txt.
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gs:run
 USE_TOOLS+=	gmake

@@ -1,4 +1,4 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.29 2012/12/10 12:31:34 ryoon Exp $
 bin/gamma4scanimage
 bin/sane-config
 bin/sane-find-scanner
@@ -6,6 +6,7 @@ bin/scanimage
 include/sane/sane.h
 include/sane/saneopts.h
 lib/libsane.la
+lib/pkgconfig/sane-backends.pc
 lib/sane/libsane-abaton.la
 lib/sane/libsane-agfafocus.la
 lib/sane/libsane-apple.la
@@ -43,6 +44,7 @@ lib/sane/libsane-hpljm1005.la
 lib/sane/libsane-hs2p.la
 lib/sane/libsane-ibm.la
 lib/sane/libsane-kodak.la
+lib/sane/libsane-kodakaio.la
 lib/sane/libsane-kvs1025.la
 lib/sane/libsane-kvs20xx.la
 lib/sane/libsane-leo.la
@@ -125,6 +127,7 @@ man/man5/sane-hpljm1005.5
 man/man5/sane-hs2p.5
 man/man5/sane-ibm.5
 man/man5/sane-kodak.5
+man/man5/sane-kodakaio.5
 man/man5/sane-kvs1025.5
 man/man5/sane-kvs20xx.5
 man/man5/sane-leo.5
@@ -152,7 +155,7 @@ man/man5/sane-s9036.5
 man/man5/sane-sceptre.5
 man/man5/sane-scsi.5
 man/man5/sane-sharp.5
-man/man5/sane-sm3600.5
+${PLIST.sm3600}man/man5/sane-sm3600.5
 man/man5/sane-sm3840.5
 man/man5/sane-snapscan.5
 man/man5/sane-sp15c.5
@@ -288,6 +291,7 @@ share/examples/sane/hp5400.conf
 share/examples/sane/hs2p.conf
 share/examples/sane/ibm.conf
 share/examples/sane/kodak.conf
+share/examples/sane/kodakaio.conf
 share/examples/sane/leo.conf
 share/examples/sane/lexmark.conf
 share/examples/sane/ma1509.conf

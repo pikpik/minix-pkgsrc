@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2008/03/03 20:17:12 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2012/04/18 00:06:12 joerg Exp $
 
 DISTNAME=		kaname_k12_bdf
 PKGNAME=		ja-kaname-0.0.0.20030112
@@ -9,8 +9,6 @@ MASTER_SITES=		${MASTER_SITE_LOCAL} # original site was closed.
 MAINTAINER=		tech-pkg-ja@jp.NetBSD.org
 COMMENT=		12x12 dots X11 bitmap font for JIS X 0208
 #LICENSE=		no-commercial-use
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 USE_X11BASE=		YES
@@ -23,7 +21,7 @@ do-build:
 	cd ${WRKSRC}; \
 	for i in *.bdf; do \
 		p=`basename $$i .bdf`.pcf; \
-		bdftopcf -o $$p $$i; \
+		${TOOLS_PATH.bdftopcf} -o $$p $$i; \
 		${GZIP_CMD} -c $$p > $$p.gz; \
 	done
 

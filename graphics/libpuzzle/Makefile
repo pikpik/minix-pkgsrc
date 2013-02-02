@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2011/11/01 06:01:40 sbd Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/06 14:11:05 asau Exp $
 #
 
 DISTNAME=	libpuzzle-0.11
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.pureftpd.org/pub/pure-ftpd/misc/libpuzzle/releases/
 EXTRACT_SUFX=	.tar.bz2
@@ -17,8 +17,6 @@ USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
 
 EGDIR=		${PREFIX}/share/doc/libpuzzle
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	${EGDIR} ${PKGMANDIR}/man3 ${PKGMANDIR}/man8
 

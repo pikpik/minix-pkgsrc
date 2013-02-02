@@ -1,0 +1,9 @@
+@comment $NetBSD$
+bin/rar
+lib/default.sfx
+share/doc/rar/license.txt
+share/doc/rar/rar.txt
+share/doc/rar/rarfiles.lst
+share/doc/rar/readme.txt
+share/doc/rar/technote.txt
+share/doc/rar/whatsnew.txt

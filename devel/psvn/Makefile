@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/10/11 09:31:55 uebayasi Exp $
+# $NetBSD: Makefile,v 1.7 2009/08/06 01:44:49 minskim Exp $
 #
 
 DISTNAME=	psvn.el
@@ -13,8 +13,6 @@ FETCH_BEFORE_ARGS+=  -o ${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.xsteve.at/prg/emacs/
 COMMENT=	Subversion interface for Emacs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 VER=		25241
 WRKSRC=		${WRKDIR}

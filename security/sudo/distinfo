@@ -1,12 +1,13 @@
 $NetBSD$
 
-SHA1 (sudo-1.7.8p1.tar.gz) = e5d9016b7d3a4449b724483fe165dc13198ce44c
-RMD160 (sudo-1.7.8p1.tar.gz) = a89e0c2d709cc8d8cbe4360f3e08d7459bca0a4c
-Size (sudo-1.7.8p1.tar.gz) = 1157350 bytes
-SHA1 (patch-aa) = 70aa1a1da2d0cd9c8c8d9cbeab747b85028511f7
+SHA1 (sudo-1.7.9p1.tar.gz) = cbca68bae8b85e8518690d78685ca67d0696ce15
+RMD160 (sudo-1.7.9p1.tar.gz) = 1ec37d34bad3ab3a27ec123da81d33e2ac3deb72
+Size (sudo-1.7.9p1.tar.gz) = 1173934 bytes
+SHA1 (patch-aa) = 014a8a634abb3c61f63e3e127a4ebf20f5a0e4bf
 SHA1 (patch-ad) = 7590b1e330b34719ebeaa8afa8de55580b70ace3
 SHA1 (patch-af) = 148635d49b13f2f93c9bf2737147bc625c60105c
 SHA1 (patch-ag) = 70d3f36977dc9b2d2c7e1b08871605873c86e087
 SHA1 (patch-exec__pty.c) = 7552918b9df79ca6c18db3c04f626bef603aa99a
 SHA1 (patch-logging.c) = 26608d7423b77f71f17b37cc87f4b2e75978d7cb
+SHA1 (patch-pwutil.c) = 9f157c50ea44d5b421001ae8dad985e9c01a8211
 SHA1 (patch-set__perms.c) = 5f0570a58063d7087921f7f1f73aa453351564b5

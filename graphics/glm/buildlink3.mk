@@ -1,0 +1,14 @@
+# $NetBSD$
+
+BUILDLINK_TREE+=	glm
+
+.if !defined(GLM_BUILDLINK3_MK)
+GLM_BUILDLINK3_MK:=
+
+BUILDLINK_DEPMETHOD.glm?=	build
+
+BUILDLINK_API_DEPENDS.glm+=	glm>=0.9.3.2
+BUILDLINK_PKGSRCDIR.glm?=	../../graphics/glm
+.endif	# GLM_BUILDLINK3_MK
+
+BUILDLINK_TREE+=	-glm

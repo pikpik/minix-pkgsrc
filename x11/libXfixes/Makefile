@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2010/04/09 08:38:28 tnn Exp $
+# $NetBSD: Makefile,v 1.6 2012/06/03 17:37:56 wiz Exp $
 #
 
-DISTNAME=		libXfixes-4.0.5
+DISTNAME=		libXfixes-5.0
 CATEGORIES=		x11 devel
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -14,7 +14,6 @@ LICENSE=		mit
 CONFLICTS+=		Xfixes-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

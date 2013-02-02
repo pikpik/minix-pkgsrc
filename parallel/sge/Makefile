@@ -1,21 +1,21 @@
-# $NetBSD: Makefile,v 1.41 2011/12/09 14:36:36 drochner Exp $
+# $NetBSD: Makefile,v 1.50 2012/10/03 21:57:14 wiz Exp $
 #
 
 DISTNAME=		sge-8.0.0d
 PKGNAME=		sge-8.0.0.4
+PKGREVISION=		4
 CATEGORIES=		parallel sysutils
 MASTER_SITES=		http://arc.liv.ac.uk/downloads/SGE/releases/8.0.0d/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		https://arc.liv.ac.uk/trac/SGE
 COMMENT=		Son of Grid Engine distributed resource management system
-
-BUILD_DEPENDS+=		{standalone-tcsh,tcsh}-[0-9]*:../../shells/tcsh
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		sun-iss AND 2-clause-bsd AND gnu-gpl-v2 AND gnu-lgpl-v2
 
 GNU_CONFIGURE=		YES
-USE_TOOLS+=		gmake perl:run
+USE_TOOLS+=		gmake csh perl:run
+
+MANINSTALL=		maninstall catinstall
 
 CFLAGS+=		-D${UPPER_OPSYS}
 CONFIGURE_ENV+=		REMOTE=sge
@@ -34,7 +34,7 @@ PKG_USERS_VARS+=	SGE_USER
 
 EVAL_PREFIX+=	PKGSRC_SSL_PREFIX=openssl
 
-AIMK=	${SETENV} ${MAKE_ENV} tcsh -fb ${WRKSRC}/source/aimk
+AIMK=	${SETENV} ${MAKE_ENV} ${CSH} -fb ${WRKSRC}/source/aimk
 
 CONFIG_GUESS_OVERRIDE=	source/3rdparty/qmake/config.guess \
 		source/3rdparty/qtcsh/config.guess
@@ -46,8 +46,6 @@ REPLACE.tclsh.old=	.*tclsh
 REPLACE.tclsh.new=	${PREFIX}/bin/tclsh
 REPLACE_FILES.tclsh=	source/dist/util/resources/jsv/jsv.tcl
 REPLACE_PERL+=		source/dist/util/resources/jsv/jsv.pl
-
-CHECK_INTERPRETER_SKIP+=	sge/ckpt/cpr_* sge/mpi/myrinet/* sge/util/resources/loadsensors/interix-loadsensor.sh
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -80,17 +78,26 @@ SGE_ARCH=		darwin
 SGE_BUILDARCH=		DARWIN
 .elif ${OPSYS} == "Linux"
 AIMK+=			-no-dump
-SGE_ARCH=		lx26-x86
+.  if ${MACHINE_ARCH} == "i386"
+SGE_ARCH=		lx-x86
 SGE_BUILDARCH=		LINUX86
+.  else
+SGE_ARCH=		lx-amd64
+SGE_BUILDARCH=		LINUXAMD64
+.  endif
 .else
 PKG_FAIL_REASON+=	"SGE_ARCH and SGE_BUILDARCH need to be configured for your OS"
 .endif
 SGE_BUILDARCH?=		${SGE_BUILDARCH_cmd:sh}
 
-# Some hacks to get it properly linked:
-MAKE_ENV+=	SGE_ARCH=$(SGE_ARCH) SGE_ROOT=$(SGE_ROOT)
+JAVA_ARGS=		-no-java -no-jni
+#JAVA_ARGS=		-no-gui-inst -no-herd
+#.include "../../mk/java-vm.mk"
 
-LDFLAGS+=	-R${SGE_ROOT}/lib/${SGE_ARCH}
+# Some hacks to get it properly linked:
+MAKE_ENV+=	SGE_ARCH=${SGE_ARCH} SGE_ROOT=${SGE_ROOT}
+
+LDFLAGS+=	${COMPILER_RPATH_FLAG}${SGE_ROOT}/lib/${SGE_ARCH}
 BUILDLINK_PASSTHRU_RPATHDIRS+=	${SGE_ROOT}/lib/${SGE_ARCH}
 
 SGE_ROOT=	${PREFIX}/sge
@@ -112,11 +119,12 @@ post-patch:
 	${ECHO} "set PERL = ${PERL5}" ) > ${WRKSRC}/source/aimk.private
 	( ${ECHO} "OPENSSLBASE=${SSL_PREFIX}" ; \
 	${ECHO} "BERKELEYDBBASE=${BUILDLINK_PREFIX.db4}" ) > ${WRKSRC}/source/distinst.private
+	rm ${WRKSRC}/source/dist/util/*.orig
 
 SUBST_CLASSES+=		paths
 SUBST_STAGE.paths=	post-patch
 SUBST_FILES.paths=	source/dist/util/arch_variables
-SUBST_SED.paths=	-e 's;@rcd_dir@;${RCD_SCRIPTS_DIR};' 
+SUBST_SED.paths=	-e 's;@rcd_dir@;${RCD_SCRIPTS_DIR};'
 
 do-configure:
 .for __prog__ in qmake qtcsh
@@ -128,22 +136,25 @@ do-configure:
 .endfor
 
 do-build:
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni -only-depend
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc -only-depend
 	cd ${WRKSRC}/source && ${SETENV} ${MAKE_ENV} ./scripts/zerodepend
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni -no-qmake -no-qtcsh depend
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni
-	cd ${WRKSRC}/source && ${AIMK} -no-java -no-jni -man -sunman
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc -no-qmake -no-qtcsh depend
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc
+	cd ${WRKSRC}/source && ${AIMK} ${JAVA_ARGS} -no-hwloc -man
 
 CHECK_INTERPRETER_SKIP=	sge/bin/process-scheduler-log \
 			sge/bin/qsched \
 			sge/bin/status \
+			sge/ckpt/cpr_* \
 			sge/examples/drmaa/ruby/* \
 			sge/hadoop/pestart.sh \
 			sge/hadoop/pestop.sh \
 			sge/hadoop/setup.pl \
 			sge/hadoop/wait.sh \
+			sge/mpi/myrinet/* \
 			sge/util/resources/drmaa4ruby/* \
 			sge/util/resources/drmaa4ruby/samples/* \
+			sge/util/resources/loadsensors/interix-loadsensor.sh \
 			sge/util/resources/wrappers/rshd-wrapper
 
 do-install:
@@ -153,9 +164,9 @@ do-install:
 	cd ${WRKSRC}/source && \
 		${ECHO} "Y" | ${SETENV} LOCALBASE=${LOCALBASE} DESTDIR=${DESTDIR} SGE_ROOT=${SGE_ROOT} ./scripts/distinst -local -all -nobdb -noopenssl -mansrc sge ${SGE_ARCH} -- doc man
 	for f in archive checkpoint deadlock dump load printlog recover stat upgrade verify ; do \
-		ln -s ${DESTDIR}${LOCALBASE}/bin/db4_$${f} ${DESTDIR}${SGE_ROOT}/utilbin/${SGE_ARCH}/db_$${f} ; done
-	ln -s ${DESTDIR}${LOCALBASE}/bin/berkeley_db4_svc ${DESTDIR}${SGE_ROOT}/utilbin/${SGE_ARCH}/berkeley_db_svc
-	ln -s ${DESTDIR}${SSL_PREFIX}/bin/openssl ${DESTDIR}${SGE_ROOT}/utilbin/${SGE_ARCH}/openssl
+		ln -s ${LOCALBASE}/bin/db4_$${f} ${DESTDIR}${SGE_ROOT}/utilbin/${SGE_ARCH}/db_$${f} ; done
+	ln -s ${LOCALBASE}/bin/berkeley_db4_svc ${DESTDIR}${SGE_ROOT}/utilbin/${SGE_ARCH}/berkeley_db_svc
+	ln -s ${SSL_PREFIX}/bin/openssl ${DESTDIR}${SGE_ROOT}/utilbin/${SGE_ARCH}/openssl
 	cd ${DESTDIR}${SGE_ROOT} && ${SETENV} SGE_ROOT=${SGE_ROOT} DESTDIR=${DESTDIR} ./util/setfileperm.sh -auto \
 		${SGE_ROOT}
 	for f in ${DESTDIR}${SGE_ROOT}/bin/${SGE_ARCH}/q* ; do \
@@ -171,6 +182,7 @@ PLIST_SUBST+=	SGE_ARCH=${SGE_ARCH}
 .include "../../security/openssl/buildlink3.mk"
 .include "../../lang/tcl/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
+.include "../../mk/pam.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
 .if ${USE_BUILTIN.openssl} == "yes"
 SSL_PREFIX=	/usr

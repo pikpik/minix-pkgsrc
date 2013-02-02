@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2009/02/04 12:30:14 is Exp $
+# $NetBSD: Makefile,v 1.10 2012/02/16 18:48:05 hans Exp $
 
 DISTNAME=	pmccabe-2.5-CVS20081026
 PKGNAME=	pmccabe-2.5
@@ -8,8 +8,6 @@ MASTER_SITES=	http://cvs.parisc-linux.org/download/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.parisc-linux.org/~bame/pmccabe/
 COMMENT=	Measures the McCabe cyclomatic complexity of C and C++
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/pmccabe
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.118 2012/03/06 17:38:57 ryoon Exp $
+# $NetBSD: Makefile,v 1.128 2012/12/16 01:52:20 obache Exp $
 
 DISTNAME=	evolution-data-server-2.32.3
-PKGREVISION=	7
+PKGREVISION=	16
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/evolution-data-server/2.32/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/evolution/
 COMMENT=	Evolution data server
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BDB_ACCEPTED=		db4 db5
 USE_TOOLS+=		bison gmake intltool msgfmt pkg-config

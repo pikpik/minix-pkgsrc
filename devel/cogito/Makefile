@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2009/09/03 10:01:45 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:54:28 wiz Exp $
 #
 
 DISTNAME=		cogito-0.18.2
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		devel
 MASTER_SITES=		http://www.kernel.org/pub/software/scm/cogito/
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://git.or.cz/cogito/
 COMMENT=		Version control system of the Linux kernel
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		scmgit-[0-9]*:../../devel/scmgit
 
@@ -40,7 +38,7 @@ REPLACE_PERL+=		cg-Xfollowrenames
 .if ${OPSYS} == "SunOS"
 
 DEPENDS+=	findutils>=4.1:../../sysutils/findutils
-TOOLS_PLATFORM.xargs=	${LOCALBASE}/bin/${GNU_PROGRAM_PREFIX}xargs
+TOOLS_PLATFORM.xargs=	${LOCALBASE}/bin/gxargs
 
 .endif
 

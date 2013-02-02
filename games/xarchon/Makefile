@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.47 2011/11/01 06:01:23 sbd Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/06 11:54:58 asau Exp $
 #
 
 DISTNAME=	xarchon-0.60
-PKGREVISION=	10
+PKGREVISION=	12
 CATEGORIES=	games x11
 MASTER_SITES=	http://xarchon.seul.org/ \
 		ftp://xarchon.seul.org/pub/xarchon/
@@ -10,8 +10,6 @@ MASTER_SITES=	http://xarchon.seul.org/ \
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xarchon.seul.org/
 COMMENT=	Chess-like strategy game with battle options
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 GNU_CONFIGURE=	YES
@@ -23,8 +21,12 @@ USE_LANGUAGES=	c c++
 CONFIGURE_ENV+=	CC=${CC:Q}
 .endif
 
+LDFLAGS.DragonFly=	-lX11
+LIBS.SunOS+=		-lX11 -lsocket -lnsl
+
 .include "../../audio/esound/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/qt3-libs/buildlink3.mk"
 .include "../../graphics/glu/buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"

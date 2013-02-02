@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.24 2010/07/01 22:21:29 joerg Exp $
+# $NetBSD: Makefile,v 1.28 2012/12/21 02:59:04 dholland Exp $
 
 DISTNAME=	ivtools-1.2.8
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ivtools/}
 EXTRACT_SUFX=	.tgz
@@ -11,9 +11,6 @@ HOMEPAGE=	http://www.ivtools.org/ivtools/
 COMMENT=	Drawing editors for PostScript, TeX, and web graphics
 
 CONFLICTS+=	dclock-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-NOT_FOR_PLATFORM=	${LP64PLATFORMS}
 
 DEPENDS+=	pstoedit>=3.0:../../graphics/pstoedit
 DEPENDS+=	wget>=1.0:../../net/wget
@@ -41,5 +38,4 @@ pre-install:
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

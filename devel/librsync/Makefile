@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/07/14 12:56:02 joerg Exp $
+# $NetBSD: Makefile,v 1.18 2011/04/22 13:42:01 obache Exp $
 
 DISTNAME=	librsync-0.9.7
 PKGREVISION=	3
@@ -8,8 +8,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=librsync/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://librsync.sourceforge.net/
 COMMENT=	Checksum-based differencing library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

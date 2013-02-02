@@ -7,10 +7,15 @@ share/doc/mathomatic/NEWS
 share/doc/mathomatic/README.txt
 share/doc/mathomatic/VERSION
 share/doc/mathomatic/examples/README.txt
+share/doc/mathomatic/examples/compile.limits
+share/doc/mathomatic/examples/compile.roots
 share/doc/mathomatic/examples/fact.c
 share/doc/mathomatic/examples/fact.py
 share/doc/mathomatic/examples/factorial
 share/doc/mathomatic/examples/intfact.c
+share/doc/mathomatic/examples/limits.c
+share/doc/mathomatic/examples/roots.c
+share/doc/mathomatic/examples/testprimes
 share/doc/mathomatic/html/README.txt
 share/doc/mathomatic/html/am.html
 share/doc/mathomatic/html/doc.css
@@ -35,6 +40,7 @@ share/doc/mathomatic/html/rmath.1.html
 share/doc/mathomatic/tests/README.txt
 share/doc/mathomatic/tests/all.in
 share/doc/mathomatic/tests/all.out
+share/doc/mathomatic/tests/batman_gnuplot_bug.in
 share/doc/mathomatic/tests/batman_plot
 share/doc/mathomatic/tests/circles.in
 share/doc/mathomatic/tests/collatz.in
@@ -59,6 +65,7 @@ share/doc/mathomatic/tests/fraction.in
 share/doc/mathomatic/tests/heart.in
 share/doc/mathomatic/tests/heron.in
 share/doc/mathomatic/tests/how_limit_works.in
+share/doc/mathomatic/tests/hypertrig.in
 share/doc/mathomatic/tests/limits.in
 share/doc/mathomatic/tests/linear.in
 share/doc/mathomatic/tests/pie.in
@@ -76,5 +83,6 @@ share/doc/mathomatic/tests/test2.in
 share/doc/mathomatic/tests/test3.in
 share/doc/mathomatic/tests/test6.in
 share/doc/mathomatic/tests/trig
+share/doc/mathomatic/tests/trig.in
 share/pixmaps/mathomatic.png
 share/pixmaps/mathomatic.xpm

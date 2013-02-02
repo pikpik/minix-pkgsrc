@@ -1,13 +1,14 @@
-# $NetBSD: Makefile,v 1.2 2012/03/03 00:13:42 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2013/01/26 21:38:29 adam Exp $
 #
 
 DISTNAME=		vlc-${VLC_VERSION}
+PKGREVISION=		2
 CATEGORIES=		multimedia
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vlc/} \
 			http://download.videolan.org/pub/videolan/vlc/${VLC_VERSION}/
 EXTRACT_SUFX=		.tar.xz
 
-VLC_VERSION=		2.0.1
+VLC_VERSION=		2.0.5
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.videolan.org/
@@ -16,10 +17,11 @@ LICENSE=		gnu-gpl-v2
 
 CONFLICTS=		vlc07-[0-9]* vlc08-[0-9]*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LIBTOOL=		yes
 USE_TOOLS+=		gmake perl pkg-config \
 			autoconf automake autoreconf
+# for autopoint
+BUILD_DEPENDS+=		gettext-tools-[0-9]*:../../devel/gettext-tools
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-kde-solid=${PREFIX}/share/kde/apps/solid/actions
@@ -39,7 +41,7 @@ CONFIGURE_ARGS+=	--disable-smb
 CONFIGURE_ARGS+=	--enable-dvdread \
 			--enable-flac \
 			--enable-theora \
-			--enable-lua=no
+			--disable-lua
 
 # Build optimalized modules
 .if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64"
@@ -74,7 +76,7 @@ INSTALLATION_DIRS+=	share/vlc/http/dialogs share/vlc/http/images \
 			share/vlc/skins2/fonts \
 			${PKGMANDIR}/man1
 pre-configure:
-	cd ${WRKSRC} && autoreconf -f
+	cd ${WRKSRC} && autoreconf -if
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/vlc.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
@@ -127,7 +129,7 @@ CHECK_WRKREF_SKIP=	lib/libvlccore.a \
 
 .include "../../multimedia/ffmpeg/buildlink3.mk"
 .include "../../multimedia/libdvdplay/buildlink3.mk"
-.include "../../multimedia/libdvbpsi/buildlink3.mk"
+.include "../../multimedia/libdvbpsi0/buildlink3.mk"
 .include "../../multimedia/libdvdnav/buildlink3.mk"
 .include "../../multimedia/libdvdread/buildlink3.mk"
 .include "../../multimedia/libmatroska/buildlink3.mk"
@@ -140,6 +142,8 @@ BUILDLINK_API_DEPENDS.libX11+=	libX11>=1.3.5
 # needs x264_encoder_delayed_frames
 BUILDLINK_API_DEPENDS.x264-devel+= x264-devel>=20100201
 .include "../../multimedia/x264-devel/buildlink3.mk"
+#.include "../../lang/lua/buildlink3.mk"
+.include "../../net/libupnp/buildlink3.mk"
 
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/oss.buildlink3.mk"

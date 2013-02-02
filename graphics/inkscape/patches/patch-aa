@@ -1,6 +1,6 @@
 $NetBSD$
 
---- src/inkview.cpp.orig	2007-02-13 14:01:14.000000000 +0000
+--- src/inkview.cpp.orig	2012-02-14 03:22:17.000000000 +0000
 +++ src/inkview.cpp
 @@ -31,13 +31,10 @@
  # include "config.h"
@@ -15,5 +15,5 @@ $NetBSD$
  #include <locale.h>
 +#include <unistd.h>
  
- #include <glib/gmem.h>
+ #include <glib.h>
  #include <libnr/nr-macros.h>

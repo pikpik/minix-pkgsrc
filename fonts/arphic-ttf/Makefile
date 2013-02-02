@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/10/09 11:40:30 rillig Exp $
+# $NetBSD: Makefile,v 1.17 2008/03/03 20:17:11 jlam Exp $
 #
 
 DISTNAME=	arphic-ttf-2.11
@@ -14,8 +14,6 @@ CONFLICTS=	arphicttf-[0-9]*
 
 FONT_FILES=	bkai00mp.ttf bsmi00lp.ttf gbsn00lp.ttf gkai00mp.ttf
 MISC_FILES=	ARPHICPL.TXT logo.gif release.txt
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DIST_SUBDIR=	arphic-ttf
 WRKSRC=		${WRKDIR}

@@ -1,16 +1,16 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.4 2012/11/10 19:17:26 pettai Exp $
 
-DISTNAME=	ykclient-2.7
+DISTNAME=	ykclient-2.9
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://yubico-c-client.googlecode.com/files/
 
 MAINTAINER=	pettai@NetBSD.org
-HOMEPAGE=	http://code.google.com/p/yubico-c/
+HOMEPAGE=	http://code.google.com/p/yubico-c-client/
 COMMENT=	Libraries for online validation of Yubikey OTPs
 
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
 

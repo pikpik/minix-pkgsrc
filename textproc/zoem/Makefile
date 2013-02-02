@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/05/08 18:47:44 cheusov Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/25 06:57:09 asau Exp $
 #
 
-DISTNAME=	zoem-10-265
-PKGNAME=	${DISTNAME:S/10-/10./}
+DISTNAME=	${PKGNAME:S/./-/}
+PKGNAME=	zoem-11.166
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.micans.org/zoem/src/
 
@@ -10,8 +10,6 @@ MAINTAINER=	cheusov@NetBSD.org
 HOMEPAGE=	http://www.micans.org/zoem/
 COMMENT=	Interpretive macro/programming language
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

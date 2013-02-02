@@ -1,26 +1,25 @@
-# $NetBSD: Makefile,v 1.9 2008/03/04 18:12:59 jlam Exp $
+# $NetBSD$
 
 DISTNAME=		galdata
-PKGNAME=		pari-galdata-2.1
-PKGREVISION=		2
+PKGNAME=		pari-galdata-2.2
 CATEGORIES=		math
-MASTER_SITES=		ftp://www.gn-50uma.de/gn/gn-50uma.de/pari/
+MASTER_SITES=		ftp://pari.math.u-bordeaux.fr/pub/pari/packages/
+EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.parigp-home.de/
+HOMEPAGE=		http://pari.math.u-bordeaux.fr/
 COMMENT=		Galois group data for pari
 
-DEPENDS+=		pari-[0-9]*:../../math/pari
+DEPENDS+=		pari>=2.2.7:../../math/pari
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+WRKSRC=			${WRKDIR}/data/galdata
 
-WRKSRC=			${WRKDIR}
-DIST_SUBDIR=		pari-2.1
+DIST_SUBDIR=		pari-2.2
 
 NO_BUILD=		yes
 INSTALLATION_DIRS=	share/pari/galdata
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/[CR]* ${DESTDIR}${PREFIX}/share/pari/galdata
+	${INSTALL_DATA} ${WRKSRC}/* ${DESTDIR}${PREFIX}/share/pari/galdata
 
 .include "../../mk/bsd.pkg.mk"

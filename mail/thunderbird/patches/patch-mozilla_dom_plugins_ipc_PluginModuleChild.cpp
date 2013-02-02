@@ -1,8 +1,16 @@
-$NetBSD$
+$NetBSD: patch-mozilla_dom_plugins_ipc_PluginModuleChild.cpp,v 1.3 2012/09/02 06:43:41 ryoon Exp $
 
---- mozilla/dom/plugins/ipc/PluginModuleChild.cpp.orig	2012-02-16 10:24:53.000000000 +0000
+--- mozilla/dom/plugins/ipc/PluginModuleChild.cpp.orig	2012-11-19 22:42:16.000000000 +0000
 +++ mozilla/dom/plugins/ipc/PluginModuleChild.cpp
-@@ -236,7 +236,7 @@ PluginModuleChild::Init(const std::strin
+@@ -5,6 +5,7 @@
+  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
+ #ifdef MOZ_WIDGET_QT
++#include <unistd.h> // for _exit()
+ #include <QtCore/QTimer>
+ #include "nsQAppInstance.h"
+ #include "NestedLoopTimer.h"
+@@ -196,7 +197,7 @@ PluginModuleChild::Init(const std::strin
  
      // TODO: use PluginPRLibrary here
  
@@ -11,7 +19,7 @@ $NetBSD$
      mShutdownFunc =
          (NP_PLUGINSHUTDOWN) PR_FindFunctionSymbol(mLibrary, "NP_Shutdown");
  
-@@ -1824,7 +1824,7 @@ PluginModuleChild::AnswerNP_GetEntryPoin
+@@ -1827,7 +1828,7 @@ PluginModuleChild::AnswerNP_GetEntryPoin
      PLUGIN_LOG_DEBUG_METHOD;
      AssertPluginThread();
  
@@ -20,8 +28,8 @@ $NetBSD$
      return true;
  #elif defined(OS_WIN) || defined(OS_MACOSX)
      *_retval = mGetEntryPointsFunc(&mFunctions);
-@@ -1851,7 +1851,7 @@ PluginModuleChild::AnswerNP_Initialize(N
-     SendBackUpXResources(FileDescriptor(xSocketFd, false/*don't close*/));
+@@ -1856,7 +1857,7 @@ PluginModuleChild::AnswerNP_Initialize(c
+     SendBackUpXResources(FileDescriptor(xSocketFd));
  #endif
  
 -#if defined(OS_LINUX)

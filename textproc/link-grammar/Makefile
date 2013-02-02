@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.3 2009/06/30 00:07:23 joerg Exp $
+# $NetBSD: Makefile,v 1.4 2010/11/26 14:43:31 adam Exp $
 
 DISTNAME=	link-grammar-4.7.0
 CATEGORIES=	textproc
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.abisource.com/projects/link-grammar/
 COMMENT=	Syntactic parsing library
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=	yes
 USE_TOOLS+=	pkg-config

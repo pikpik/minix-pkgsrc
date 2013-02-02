@@ -1,16 +1,16 @@
-# $NetBSD: Makefile,v 1.27 2012/02/06 12:41:54 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/11/04 00:00:21 dholland Exp $
 #
 
-DISTNAME=       nspluginwrapper-1.2.2
-PKGREVISION=    12
-CATEGORIES=     www
-MASTER_SITES=   http://gwenole.beauchesne.info/projects/nspluginwrapper/files/
-EXTRACT_SUFX=   .tar.bz2
+DISTNAME=	nspluginwrapper-1.2.2
+PKGREVISION=	17
+CATEGORIES=	www
+MASTER_SITES=	http://gwenole.beauchesne.info/projects/nspluginwrapper/files/
+EXTRACT_SUFX=	.tar.bz2
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME:S/-/-i386-/}-1.x86_64.rpm
 
-MAINTAINER=     abs@NetBSD.org
-HOMEPAGE=       http://gwenole.beauchesne.info/projects/nspluginwrapper/
-COMMENT=        Use Netscape compatible plugins from other platforms
+MAINTAINER=	abs@NetBSD.org
+HOMEPAGE=	http://gwenole.beauchesne.info/projects/nspluginwrapper/
+COMMENT=	Use Netscape compatible plugins from other platforms
 LICENSE=	gnu-gpl-v2
 
 EMUL_PLATFORMS=		linux-i386
@@ -27,12 +27,13 @@ PLUGIN_SUBDIR=		lib/nspluginwrapper/i386/linux
 PLUGIN_INSTDIR=		${PREFIX}/${PLUGIN_SUBDIR}
 PLUGIN_SRCDIR=		${WRKDIR}/usr/${PLUGIN_SUBDIR}
 
+LDFLAGS.DragonFly=	-lgmodule-2.0
+
 SUBST_CLASSES+=		npviewer
 SUBST_STAGE.npviewer=	post-build
 SUBST_FILES.npviewer=	${PLUGIN_SRCDIR}/npviewer
 SUBST_SED.npviewer=	-e "s|/usr/|${PREFIX}/|g"
 
-PKG_DESTDIR_SUPPORT= 	user-destdir
 INSTALLATION_DIRS=	${PLUGIN_INSTDIR}
 
 post-install:

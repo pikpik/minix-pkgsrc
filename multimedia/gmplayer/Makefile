@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.96 2012/03/03 00:13:38 wiz Exp $
+# $NetBSD: Makefile,v 1.106 2012/11/03 09:04:10 tron Exp $
 
 #
 # NOTE: if you are updating both mplayer and gmplayer, you must ensure
@@ -9,18 +9,17 @@
 #
 
 PKGNAME=	gmplayer-${MPLAYER_VERSION}
-PKGREVISION=	13
+PKGREVISION=	7
 
 SKIN_SITES=	http://www1.mplayerhq.hu/MPlayer/skins/		\
 		http://www2.mplayerhq.hu/MPlayer/skins/		\
 		ftp://ftp1.mplayerhq.hu/MPlayer/skins/		\
 		ftp://ftp2.mplayerhq.hu/MPlayer/skins/		\
 		http://ftp5.mplayerhq.hu/MPlayer/skins/		\
-		ftp://ftp5.mplayerhq.hu/MPlayer/skins/		\
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+		ftp://ftp5.mplayerhq.hu/MPlayer/skins/
 
 .include "../../multimedia/mplayer-share/Makefile.common"
+SKIN_EXTRACT_SUFX=	.tar.bz2
 
 .if ${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64"
 BUILD_DEPENDS+=		yasm-[0-9]*:../../devel/yasm
@@ -28,32 +27,30 @@ BUILD_DEPENDS+=		yasm-[0-9]*:../../devel/yasm
 
 COMMENT=	Fast, cross-platform movie player with GTK2+ interface
 
-SKINS +=	AlienMind-1.2${EXTRACT_SUFX}			\
-		Blue-1.7${EXTRACT_SUFX}				\
-		BlueHeart-1.5${EXTRACT_SUFX}			\
-		CornerMP-1.2${EXTRACT_SUFX}			\
-		CornerMP-aqua-1.4${EXTRACT_SUFX}		\
-		Cyrus-1.2${EXTRACT_SUFX}			\
-		MidnightLove-1.6${EXTRACT_SUFX}			\
-		WMP6-2.2${EXTRACT_SUFX}				\
-		avifile-1.6${EXTRACT_SUFX}			\
-		gnome-1.1${EXTRACT_SUFX}			\
-		hayraphon-1.0${EXTRACT_SUFX}			\
-		hwswskin-1.1${EXTRACT_SUFX}			\
-		mentalic-1.2${EXTRACT_SUFX}			\
-		neutron-1.5${EXTRACT_SUFX}			\
-		phony-1.1${EXTRACT_SUFX}			\
-		plastic-1.2${EXTRACT_SUFX}			\
-		proton-1.2${EXTRACT_SUFX}			\
-		slim-1.2${EXTRACT_SUFX}				\
-		xanim-1.6${EXTRACT_SUFX}			\
-		xine-lcd-1.2${EXTRACT_SUFX}
+SKINS+=		AlienMind-1.2${SKIN_EXTRACT_SUFX}		\
+		Blue-1.7${SKIN_EXTRACT_SUFX}			\
+		BlueHeart-1.5${SKIN_EXTRACT_SUFX}		\
+		CornerMP-1.2${SKIN_EXTRACT_SUFX}		\
+		CornerMP-aqua-1.4${SKIN_EXTRACT_SUFX}		\
+		Cyrus-1.2${SKIN_EXTRACT_SUFX}			\
+		MidnightLove-1.6${SKIN_EXTRACT_SUFX}		\
+		WMP6-2.2${SKIN_EXTRACT_SUFX}			\
+		avifile-1.6${SKIN_EXTRACT_SUFX}			\
+		gnome-1.1${SKIN_EXTRACT_SUFX}			\
+		hayraphon-1.0${SKIN_EXTRACT_SUFX}		\
+		hwswskin-1.1${SKIN_EXTRACT_SUFX}		\
+		mentalic-1.2${SKIN_EXTRACT_SUFX}		\
+		neutron-1.5${SKIN_EXTRACT_SUFX}			\
+		phony-1.1${SKIN_EXTRACT_SUFX}			\
+		plastic-1.2${SKIN_EXTRACT_SUFX}			\
+		proton-1.2${SKIN_EXTRACT_SUFX}			\
+		slim-1.2${SKIN_EXTRACT_SUFX}			\
+		xanim-1.6${SKIN_EXTRACT_SUFX}			\
+		xine-lcd-1.2${SKIN_EXTRACT_SUFX}
 
-.if !defined(SITES_AlienMind-1.2.tar.bz2)
-.  for skin in ${SKINS}
+.for skin in ${SKINS}
 SITES.${skin}= ${SKIN_SITES}
-.  endfor
-.endif
+.endfor
 
 DISTFILES+=	${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=	${SKINS}
@@ -65,22 +62,20 @@ CONFIGURE_ARGS+=	--enable-gui --disable-mencoder \
 			--confdir=${PREFIX}/share/mplayer
 CONFIGURE_ARGS+=	--enable-xvmc
 
-INSTALLATION_DIRS=	bin
+INSTALLATION_DIRS=	bin share/mplayer/skins
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mplayer ${DESTDIR}${PREFIX}/bin/gmplayer
-	${INSTALL_DATA_DIR} ${DESTDIR}${PREFIX}/share/mplayer/Skin
 .for skin in ${SKINS}
 	@${ECHO_MSG} "Installing skin ${skin}..."
 	${BZCAT} ${DISTDIR}/${DIST_SUBDIR}/${skin} |	\
-	  ${GTAR} xCmf ${DESTDIR}${PREFIX}/share/mplayer/Skin -
+	  ${GTAR} xCmf ${DESTDIR}${PREFIX}/share/mplayer/skins -
 .endfor
-	${CHMOD} -R a+r ${DESTDIR}${PREFIX}/share/mplayer/Skin
-	${CHMOD} a+rx ${DESTDIR}${PREFIX}/share/mplayer/Skin/*
-	${RM} -f ${DESTDIR}${PREFIX}/share/mplayer/Skin/default
-	${LN} -s Blue ${DESTDIR}${PREFIX}/share/mplayer/Skin/default
-	${RM} -rf ${DESTDIR}${PREFIX}/share/mplayer/Skin/Blue/.svn
-	${RM} -rf ${DESTDIR}${PREFIX}/share/mplayer/Skin/Blue/icons/.svn
+	${CHMOD} -R a+rX ${DESTDIR}${PREFIX}/share/mplayer/skins
+	${RM} -f ${DESTDIR}${PREFIX}/share/mplayer/skins/default
+	${LN} -s Blue ${DESTDIR}${PREFIX}/share/mplayer/skins/default
+	${RM} -rf ${DESTDIR}${PREFIX}/share/mplayer/skins/Blue/.svn
+	${RM} -rf ${DESTDIR}${PREFIX}/share/mplayer/skins/Blue/icons/.svn
 
 .include "../../x11/libXScrnSaver/buildlink3.mk"
 .include "../../multimedia/libdvdnav/buildlink3.mk"

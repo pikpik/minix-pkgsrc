@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.12 2012/01/27 08:37:01 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/31 11:16:47 asau Exp $
 
-DISTNAME=	coccinelle-0.2.5
-PKGREVISION=	2
+DISTNAME=	coccinelle-1.0.0-rc15
+PKGNAME=	${DISTNAME:S/-rc/rc/}
 CATEGORIES=	devel
 MASTER_SITES=	http://coccinelle.lip6.fr/distrib/
 EXTRACT_SUFX=	.tgz
@@ -14,18 +14,12 @@ LICENSE=	gnu-gpl-v2
 BUILD_DEPENDS+=	ocaml-findlib-[0-9]*:../../devel/ocaml-findlib
 DEPENDS+=	menhir>=20071212:../../devel/menhir
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
-HAS_CONFIGURE=	yes
-USE_TOOLS+=	gmake perl
+GNU_CONFIGURE=	yes
+USE_TOOLS+=	gmake pkg-config
 REPLACE_PERL=	configure
 BUILD_TARGET=	all all.opt
-
-CONFIGURE_ARGS+=	--prefix=${PREFIX}
-CONFIG_SHELL=	${PERL5}
-
-PYTHON_VERSIONS_ACCEPTED=	27 26 25 24
 
 SUBST_CLASSES+=		man
 SUBST_FILES.man+=	configure

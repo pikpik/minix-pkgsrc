@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/03/03 20:17:12 jlam Exp $
+# $NetBSD: Makefile,v 1.6 2008/12/21 00:26:11 minskim Exp $
 
 DISTNAME=	un-fonts-extra-1.0.2-080608
 PKGNAME=	${DISTNAME:S/fonts-extra/extra-ttf/:S/-0/.200/}
@@ -10,8 +10,6 @@ HOMEPAGE=	http://kldp.net/projects/unfonts/
 COMMENT=	Extra set of Un Korean TrueType fonts
 
 CONFLICTS+=	un-ttf-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/un-fonts
 USE_X11BASE=	YES

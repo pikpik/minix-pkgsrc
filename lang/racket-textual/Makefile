@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2011/12/06 22:21:00 asau Exp $
+# $NetBSD: Makefile,v 1.13 2012/09/24 20:52:23 asau Exp $
 
-PKGNAME=	racket-textual-5.2.1
+PKGNAME=	racket-textual-5.3
+PKGREVISION=	1
 DISTNAME=	$(PKGNAME_NOREV)-src-unix
 CATEGORIES=	lang
 MASTER_SITES_PLT=	http://download.racket-lang.org/installers/$(PKGVERSION_NOREV)/ \
@@ -17,8 +18,6 @@ HOMEPAGE=	http://racket-lang.org/
 COMMENT=	Scheme-based dialect of Lisp
 LICENSE=	gnu-lgpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFLICTS+=	drscheme-[0-9]* mzscheme-[0-9]* racket-[0-9]*
 
 PATCHDIR=	$(.CURDIR)/../../lang/racket/patches
@@ -32,6 +31,8 @@ USE_LANGUAGES=	c c++
 MAKE_JOBS_SAFE=	no
 UNLIMIT_RESOURCES=	datasize
 
+LDFLAGS.DragonFly+=	-rdynamic
+
 CHECK_INTERPRETER_SKIP=	lib/racket/collects/meta/build/sitemap/setup.py \
 			lib/racket/collects/meta/build/sitemap/sitemap_gen.py \
 			lib/racket/collects/meta/build/sitemap/test_sitemap_gen.py
@@ -44,8 +45,8 @@ REPLACE_RACKET+=	collects/ffi/examples/$f
 
 REPLACE_INTERPRETER+=	racket
 REPLACE.racket.old=	.*racket
-REPLACE.racket.new=	${LOCALBASE}/bin/racket
-REPLACE_FILES.racket=	${REPLACE_RACKET}
+REPLACE.racket.new=	$(LOCALBASE)/bin/racket
+REPLACE_FILES.racket=	$(REPLACE_RACKET)
 
 
 PTHREAD_AUTO_VARS=	yes

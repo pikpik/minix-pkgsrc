@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.47 2011/04/07 01:55:14 rh Exp $
+# $NetBSD: Makefile,v 1.53 2012/10/31 11:17:02 asau Exp $
 
-DISTNAME=	gnustep-base-1.20.1
+DISTNAME=	gnustep-base-1.24.0
 PKGREVISION=	1
 CATEGORIES=	devel gnustep
 MASTER_SITES=	${MASTER_SITE_GNUSTEP:=core/}
@@ -9,8 +9,6 @@ MAINTAINER=	rh@NetBSD.org
 HOMEPAGE=	http://www.gnustep.org/
 COMMENT=	GNUstep foundation classes
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		objc
 GNU_CONFIGURE=		yes
@@ -23,6 +21,7 @@ GNUSTEP_OVERRIDE_INSTALL=	YES
 pre-configure:
 	sed 's|@PREFIX@|${PREFIX}|g' <${FILESDIR}/openapp >${WRKDIR}/openapp
 
+.include "../../devel/gnustep-make/gnustep.mk"
 .include "../../mk/compiler.mk"
 .include "../../mk/pthread.buildlink3.mk"
 
@@ -37,8 +36,6 @@ SUBST_STAGE.pthread=	pre-configure
 SUBST_FILES.pthread=	configure base.make.in
 SUBST_SED.pthread=	-e 's|@PTHREAD_LIBS@|${PTHREAD_LIBS:M*:Q}|g'
 
-.include "../../devel/gnustep-make/gnustep.mk"
-
 CONFIGURE_ARGS+=	--with-library-flags=${GNUSTEP_LDFLAGS:Q}
 
 INSTALLATION_DIRS+=	share/GNUstep/Bundles
@@ -52,4 +49,5 @@ INSTALLATION_DIRS+=	share/GNUstep/Frameworks
 .include "../../security/gnutls/buildlink3.mk"
 .include "../../textproc/libxml2/buildlink3.mk"
 .include "../../textproc/libxslt/buildlink3.mk"
+.include "../../textproc/icu/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

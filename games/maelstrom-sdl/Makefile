@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2010/03/23 16:02:39 joerg Exp $
+# $NetBSD: Makefile,v 1.21 2012/04/13 04:33:19 dholland Exp $
 #
 
 DISTNAME=	Maelstrom-3.0.5
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.devolution.com/~slouken/Maelstrom/
 COMMENT=	High resolution version of Asteroids (SDL version)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFLICTS=		maelstrom-x11-[0-9]* maelstrom-[0-9]*
 
 GNU_CONFIGURE=		YES
@@ -20,6 +18,7 @@ USE_LANGUAGES=		c c++
 USE_GAMESGROUP=		yes
 
 MAKE_ENV+=		CP=${CP:Q}
+LIBS.SunOS+=		-lsocket
 
 .if 0
 # setgid

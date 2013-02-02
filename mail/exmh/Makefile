@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.47 2008/03/04 17:57:18 jlam Exp $
+# $NetBSD: Makefile,v 1.49 2012/08/21 23:49:23 marino Exp $
 
 DISTNAME=	exmh-2.7.2
+PKGREVISION=	1
 CATEGORIES=	mail tk
 MASTER_SITES=	ftp://ftp.tcl.tk/pub/tcl/exmh/
 
@@ -10,8 +11,6 @@ COMMENT=	X11/TK based mail reader front end to MH
 
 DEPENDS+=	nmh>=1.0:../../mail/nmh
 DEPENDS+=	metamail>=2.7:../../mail/metamail
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	tclsh
 USE_TOOLS+=	wish:run

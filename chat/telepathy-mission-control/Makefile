@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2012/03/03 00:12:04 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/03 00:02:45 asau Exp $
 #
 
 DISTNAME=	telepathy-mission-control-4.67
-PKGREVISION=	12
+PKGREVISION=	18
 CATEGORIES=	chat
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mission-control/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mission-control.sourceforge.net/
 COMMENT=	Telepathy component providing abstractions for "end-user" applications
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

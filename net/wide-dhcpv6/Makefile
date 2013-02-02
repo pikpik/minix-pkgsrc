@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2009/07/17 01:10:07 jakllsch Exp $
+# $NetBSD: Makefile,v 1.6 2011/09/03 08:19:57 obache Exp $
 
 DISTNAME=	wide-dhcpv6-20080615
 CATEGORIES=	net
@@ -8,8 +8,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://wide-dhcpv6.sourceforge.net/
 COMMENT=	DHCP6 client, server and relay agent by WIDE project
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	lex yacc
 GNU_CONFIGURE=	yes

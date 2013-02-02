@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:40:23 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/08 23:01:42 adam Exp $
 #
 
 DISTNAME=	exif-browser
 PKGNAME=	gimp-exif-browser-0.1.0
 DIST_SUBDIR=	gimp-exif-browser-0.1.0
-PKGREVISION=	9
+PKGREVISION=	16
 CATEGORIES=	graphics
 MASTER_SITES=	http://registry.gimp.org/files/
 
@@ -13,7 +13,6 @@ HOMEPAGE=	http://registry.gimp.org/node/8839
 COMMENT=	EXIF data browser plugin
 #LICENSE=	# TODO: (see mk/license.mk)
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=	intltool pkg-config
 
 GNU_CONFIGURE=	yes

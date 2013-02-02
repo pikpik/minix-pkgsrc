@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2012/02/29 16:32:22 hans Exp $
+# $NetBSD: Makefile,v 1.28 2012/12/16 01:52:14 obache Exp $
 
 DISTNAME=	PokerTH-0.7.1-src
 PKGNAME=	pokerth-0.7.1
-PKGREVISION=	16
+PKGREVISION=	24
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pokerth/}
 EXTRACT_SUFX=	.tar.bz2
@@ -15,7 +15,6 @@ USE_TOOLS=	gmake
 USE_LIBTOOL=	yes
 USE_LANGUAGES=	c c++
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 INSTALLATION_DIRS=	bin lib ${PKGMANDIR}/man1 share/pokerth \
 			share/pixmaps share/applications
 

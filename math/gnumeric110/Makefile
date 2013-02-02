@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2012/03/03 00:13:31 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/08 23:02:02 adam Exp $
 
 DISTNAME=	gnumeric-1.10.17
-PKGREVISION=	4
+PKGREVISION=	11
 CATEGORIES=	math gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnumeric/1.10/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.gnome.org/projects/gnumeric/
 COMMENT=	Spreadsheet program from the GNOME project
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt perl:run pkg-config
 USE_LIBTOOL=		yes
@@ -27,6 +25,8 @@ REPLACE_PERL+=		plugins/perl-func/perl_func.pl
 GOFFICE_VERSION=	0.8.17
 PLIST_SUBST+=		GOFFICE_VERSION=${GOFFICE_VERSION}
 
+.include "options.mk"
+
 CONFIGURE_ARGS+=	--with-python
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
 .include "../../lang/python/application.mk"
@@ -39,7 +39,7 @@ CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
 #BUILDLINK_API_DEPENDS.libgda+=	libgda>=3.1.1
 #.include "../../databases/libgda/buildlink3.mk"
 #.include "../../databases/libgnomedb/buildlink3.mk"
-BUILDLINK_API_DEPENDS.libgsf+=	libgsf>=1.14.6
+BUILDLINK_API_DEPENDS.libgsf+=	libgsf>=1.14.18
 .include "../../devel/libgsf/buildlink3.mk"
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"

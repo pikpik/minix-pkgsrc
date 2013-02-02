@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.24 2009/12/11 21:40:30 drochner Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/06 14:11:17 asau Exp $
 #
 
 DISTNAME=	Imaging-1.1.7
 PKGNAME=	${PYPKGPREFIX}-imagingtk-1.1.7
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	graphics python
 MASTER_SITES=	http://effbot.org/downloads/
 
@@ -17,7 +17,6 @@ BUILDLINK_API_DEPENDS.python20+=	python20>=2.0.1nb4
 PY_PATCHPLIST=	yes
 
 PLIST_SUBST+=	PYPKGPREFIX=${PYPKGPREFIX:Q}
-PKG_DESTDIR_SUPPORT= user-destdir
 
 post-install:
 	${INSTALL_DATA_DIR} \

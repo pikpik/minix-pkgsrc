@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.8 2011/11/01 06:02:27 sbd Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 13:45:48 asau Exp $
 
-DISTNAME=	texlive-20110705-source
-PKGNAME=	xetex-0.9997.5
-PKGREVISION=	2
+DISTNAME=	texlive-20120701-source
+PKGNAME=	xetex-0.9998
+PKGREVISION=	5
 CATEGORIES=	print
-MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=systems/texlive/Source/}
+MASTER_SITES=	ftp://tug.org/historic/systems/texlive/2012/
 EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	minskim@NetBSD.org
@@ -12,25 +12,24 @@ HOMEPAGE=	http://www.tug.org/xetex/
 COMMENT=	TeX system with Unicode and modern font technologies
 
 CONFLICTS+=	web2c<=7.5.7
+DEPENDS+=	xdvipdfmx-[0-9]*:../../print/xdvipdfmx
 
 EXTRACT_ELEMENTS=	${DISTNAME}/build-aux \
 			${DISTNAME}/libs/graphite ${DISTNAME}/libs/icu \
 			${DISTNAME}/libs/xpdf ${DISTNAME}/libs/obsdcompat \
 			${DISTNAME}/texk/web2c
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
 USE_TOOLS+=	gmake lex perl pkg-config yacc
-WRKSRC=		${WRKDIR}/${DISTNAME}/texk/web2c
-
 CONFIGURE_ARGS+=	--disable-aleph --disable-etex --disable-pdftex \
 			--disable-luatex --disable-mf --disable-mf-nowin \
-			--disable-mp --disable-ptex --disable-eptex \
+			--disable-mp \
+			--disable-ptex --disable-eptex --disable-uptex --disable-euptex \
 			--disable-web-progs \
 			--enable-web2c --enable-xetex
+CONFIGURE_ARGS+=	--with-system-poppler
 CONFIGURE_ARGS+= \
 	--with-fontconfig-includes=${BUILDLINK_PREFIX.fontconfig}/include \
 	--with-fontconfig-libdir=${BUILDLINK_PREFIX.fontconfig}/lib
@@ -48,11 +47,19 @@ CONFIGURE_ARGS+=	--with-system-teckit \
 	--with-teckit-includes=${BUILDLINK_PREFIX.TECkit}/include/teckit \
 	--with-teckit-libdir=${BUILDLINK_PREFIX.TECkit}/lib
 
-CONFIGURE_DIRS=	${WRKDIR}/${DISTNAME}/libs/graphite \
-		${WRKDIR}/${DISTNAME}/libs/icu \
-		${WRKDIR}/${DISTNAME}/libs/xpdf \
-		${WRKDIR}/${DISTNAME}/libs/obsdcompat \
-		${WRKDIR}/${DISTNAME}/texk/web2c
+CONFIGURE_DIRS=		libs/graphite
+CONFIGURE_DIRS+=	libs/icu
+CONFIGURE_DIRS+=	libs/xpdf
+CONFIGURE_DIRS+=	libs/obsdcompat
+CONFIGURE_DIRS+=	texk/web2c
+
+EVAL_PREFIX+=	XDVIPDFMX_PREFIX=xdvipdfmx
+
+SUBST_CLASSES+=		paths
+SUBST_MESSAGE.paths=	Setting paths to commands.
+SUBST_STAGE.paths=	pre-configure
+SUBST_FILES.paths=	texk/web2c/xetexdir/XeTeX_ext.c
+SUBST_SED.paths=	-e 's,@XDVIPDFMX@,${XDVIPDFMX_PREFIX}/bin/xdvipdfmx,g'
 
 INSTALLATION_DIRS+=	bin
 
@@ -63,14 +70,18 @@ INSTALLATION_DIRS+=	bin
 CONFIGURE_ENV+=	kpse_cv_have_Carbon=no
 .endif
 
+CFLAGS.SunOS+= -std=gnu99 -D_XOPEN_SOURCE_EXTENDED=0
+
 .include "../../converters/TECkit/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../print/kpathsea/buildlink3.mk"
+.include "../../print/poppler/buildlink3.mk"
+.include "../../print/poppler-includes/buildlink3.mk"
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/xetex ${DESTDIR}${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/texk/web2c/xetex ${DESTDIR}${PREFIX}/bin
 
 .include "../../mk/bsd.pkg.mk"

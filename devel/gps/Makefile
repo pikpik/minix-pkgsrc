@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/03/03 00:12:55 wiz Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/31 11:17:03 asau Exp $
 #
 
 DISTNAME=	gps-${GPS_VERSION}
-PKGREVISION=	4
+PKGREVISION=	13
 CATEGORIES=	devel
 MASTER_SITES=	http://downloads.dragonlace.net/src/ \
 		http://dragonlace.mirrors.ada.cx/src/
@@ -13,23 +13,18 @@ HOMEPAGE=	http://www.adacore.com/home/products/gnatpro/toolsuite/gps/
 COMMENT=	GNAT Programming Studio - IDE for Ada and many other languages
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake sed perl awk pkg-config
 
 GPS_VERSION=		5.0.1
-MY_CONFIGURE_ENV+=	CC=gnatgcc
+USE_LANGUAGES=		c ada c++ fortran
+MY_CONFIGURE_ENV+=	ADA_PROJECT_PATH=${APP}
 MY_CONFIGURE_ENV+=	PYTHON=${PREFIX}/bin/python${PYVERSSUFFIX}
 APP=			${PREFIX}/lib/gnat
 
 .include "options.mk"
 
 CONFIGURE_ARGS+=	--with-gmp=${PREFIX}
-
-post-wrapper:
-	${RM} -rf ${WRKDIR}/.wrapper/bin
-	${RM} -rf ${WRKDIR}/.gcc/bin
 
 do-configure:
 	cd ${WRKSRC} && ${SETENV} ${MY_CONFIGURE_ENV} ./configure ${CONFIGURE_ARGS}

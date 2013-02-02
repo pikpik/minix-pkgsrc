@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.70 2012/02/06 12:39:59 wiz Exp $
+# $NetBSD: Makefile,v 1.79 2012/10/08 23:01:26 adam Exp $
 #
 
 DISTNAME=	conglomerate-0.9.1
-PKGREVISION=	22
+PKGREVISION=	30
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=conglomerate/}
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.conglomerate.org/
 COMMENT=	XML editor for GNOME2
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		docbook-xsl>=1.64.1:../../textproc/docbook-xsl
 DEPENDS+=		docbook-xml>=4.2nb6:../../textproc/docbook-xml
@@ -28,6 +26,7 @@ CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 GCONF_SCHEMAS=		conglomerate.schemas
 
 .include "../../devel/GConf/schemas.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/libbonobo/buildlink3.mk"
 .include "../../devel/libbonoboui/buildlink3.mk"

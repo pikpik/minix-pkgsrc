@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2011/03/11 11:36:28 obache Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/03 21:55:55 wiz Exp $
 
 DISTNAME=	sdcc-src-2.8.0
 PKGNAME=	${DISTNAME:S/-src//}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sdcc/}
 EXTRACT_SUFX=	.tar.bz2
@@ -13,8 +13,6 @@ COMMENT=	Cross compile 8051 code
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	gputils-[0-9]*:../../devel/gputils
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

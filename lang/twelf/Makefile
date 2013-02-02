@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.20 2009/08/06 01:44:53 minskim Exp $
+# $NetBSD: Makefile,v 1.21 2010/02/04 01:21:39 joerg Exp $
 #
 
 DISTNAME=	twelf-1-4
@@ -11,8 +11,6 @@ MAINTAINER=	richards+netbsd@CS.Princeton.EDU
 HOMEPAGE=	http://www.cs.cmu.edu/~twelf/
 COMMENT=	Meta-language for proving properties of languages and logics
 LICENSE=	generic-nonlicense
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 RESTRICTED=	License terms not specified; assume no redistribution rights
 NO_SRC_ON_FTP=		${RESTRICTED}

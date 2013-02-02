@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2010/02/19 21:31:56 joerg Exp $
+# $NetBSD: Makefile,v 1.37 2012/07/05 16:07:18 drochner Exp $
 #
 
 DISTNAME=		prelude-manager-0.9.15
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		security
 MASTER_SITES=		http://www.prelude-ids.com/download/releases/prelude-manager/ \
 			http://www.prelude-ids.org/download/releases/ \
@@ -11,8 +11,6 @@ MASTER_SITES=		http://www.prelude-ids.com/download/releases/prelude-manager/ \
 MAINTAINER=		shannonjr@NetBSD.org
 HOMEPAGE=		http://www.prelude-ids.org/download/releases/
 COMMENT=		Prelude IDS manager
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

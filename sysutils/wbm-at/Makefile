@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2007/04/21 05:22:58 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 19:51:30 asau Exp $
 
 WBM_NAME=	at
+PKGREVISION=	1
 
 COMMENT=	Webmin module to schedule execution of commands
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../sysutils/webmin/wbm.mk"
 .include "../../mk/bsd.pkg.mk"

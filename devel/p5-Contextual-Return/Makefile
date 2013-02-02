@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/09/02 20:47:05 sno Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:54:49 wiz Exp $
 
-DISTNAME=	Contextual-Return-0.003001
-PKGNAME=	p5-${DISTNAME:S/003001/003.001/}
+DISTNAME=	Contextual-Return-0.004003
+PKGNAME=	p5-${DISTNAME:S/004003/004.003/}
 PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/D/DC/DCONWAY/}
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Contextual-Return/
 COMMENT=	Perl 5 module to create context-senstive return values
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	{perl>=5.10.0,p5-version-[0-9]*}:../../devel/p5-version
 DEPENDS+=	p5-Want-[0-9]*:../../devel/p5-Want

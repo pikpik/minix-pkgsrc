@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.5 2009/10/27 19:41:11 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/23 10:47:46 obache Exp $
 #
 
 DISTNAME=	obby-0.4.7
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	http://releases.0x539.de/obby/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://gobby.0x539.de/
 COMMENT=	Library for distributed editing
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

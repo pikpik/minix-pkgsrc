@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/09 22:46:25 abs Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 16:08:30 asau Exp $
 
 DISTNAME=	1003a82
 PKGNAME=	cloudfuse-20120124
+PKGREVISION=	2
 CATEGORIES=	filesystems
 MASTER_SITES=	https://github.com/redbo/cloudfuse/tarball/
 DIST_SUBDIR=	cloudfuse
@@ -12,8 +13,6 @@ COMMENT=	Filesystem (fuse) implemented on Mosso's Cloud Files
 EXTRACT_SUFX=
 EXTRACT_CMD=	${TAR} -xzf ${DISTDIR}/${DIST_SUBDIR}/${DISTNAME}${EXTRACT_SUFX}
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config tar

@@ -1,9 +1,9 @@
-# $NetBSD: options.mk,v 1.4 2005/08/06 06:19:04 jlam Exp $
+# $NetBSD: options.mk,v 1.5 2008/07/13 12:04:11 tonnerre Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.silc-client
 PKG_SUPPORTED_OPTIONS=	debug inet6 perl
-PKG_SUGGESTED_OPTIONS=	perl
+PKG_SUGGESTED_OPTIONS=	inet6 perl
 
 .include "../../mk/bsd.options.mk"
 

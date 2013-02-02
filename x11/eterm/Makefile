@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.66 2012/02/06 12:41:56 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2012/10/29 05:06:11 asau Exp $
 
 DISTNAME=	Eterm-0.9.5
 PKGNAME=	${DISTNAME:S/^E/e/}
-PKGREVISION=	7
+PKGREVISION=	9
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=eterm/}
 DISTFILES=	${DEFAULT_DISTFILES} ${PIXMAP_FILES}
@@ -11,8 +11,6 @@ PIXMAP_FILES=	${DISTNAME:S/Eterm-/Eterm-bg-/}.tar.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.eterm.org/
 COMMENT=	Enlightened terminal emulator for the X Window System
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		perl:run
 USE_LIBTOOL=		YES
@@ -47,6 +45,5 @@ SPECIAL_PERMS=		${PREFIX}/bin/Eterm ${SETUID_ROOT_PERMS}
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXres/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.9 2009/12/15 22:10:40 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2012/07/05 16:09:18 drochner Exp $
 #
 
 DISTNAME=	prelude-pflogger-0.9.0-rc2
 PKGNAME=	prelude-pflogger-0.9.0
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	security
 MASTER_SITES=	http://prelude-ids.org/download/releases/
 
 MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://prelude-ids.org/download/releases/
 COMMENT=	Prelude sensor for Packet Filter (pf)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

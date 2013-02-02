@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2008/04/16 13:03:43 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/31 11:16:45 asau Exp $
 #
 
-DISTNAME=	check-0.9.8
+DISTNAME=	check-0.9.9
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=check/}
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://check.sourceforge.net/
 COMMENT=	Unit test framework for C
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

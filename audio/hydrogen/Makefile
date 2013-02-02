@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.24 2012/02/06 12:39:25 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2013/01/11 13:23:33 joerg Exp $
 
-DISTNAME=	hydrogen-0.9.4.2
-PKGREVISION=	4
+DISTNAME=	hydrogen-0.9.5.1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=hydrogen/}
 
-MAINTAINER=	chris.wareham@btinternet.com
+MAINTAINER=	mrg@eterna.com.au
 HOMEPAGE=	http://www.hydrogen-music.org/
 COMMENT=	Real time drum machine/sequencer
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_LIBTOOL=	yes
@@ -19,7 +17,15 @@ BUILD_DEPENDS+=		scons>=0.98:../../devel/scons
 BUILD_DEPENDS+=		subversion-base>=1.0:../../devel/subversion-base
 
 MAKE_ENV+=	QTDIR=${PREFIX}/qt4 PATH=$$PATH:${PREFIX}/qt4/bin
-SCONS_ARGS=	libarchive=1 jack=0 lrdf=0 alsa=0 QTDIR=${QTDIR}
+SCONS_ARGS=	libarchive=1 jack=0 lrdf=0 QTDIR=${QTDIR}
+
+.include "../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Linux"
+SCONS_ARGS+=	alsa=1
+.else
+SCONS_ARGS+=	alsa=0
+.endif
 
 do-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/scons DESTDIR=${DESTDIR} prefix=${PREFIX} ${SCONS_ARGS}
@@ -27,8 +33,11 @@ do-build:
 do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PREFIX}/bin/scons DESTDIR=${DESTDIR} prefix=${PREFIX} ${SCONS_ARGS} install
 
-.include "../../mk/bsd.prefs.mk"
 
+.include "../../archivers/libarchive/buildlink3.mk"
+.if ${OPSYS} == "Linux"
+.  include "../../audio/alsa-lib/buildlink3.mk"
+.endif
 .include "../../audio/libsndfile/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../x11/libSM/buildlink3.mk"

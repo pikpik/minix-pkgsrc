@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/11/01 06:01:25 sbd Exp $
+# $NetBSD: Makefile,v 1.7 2012/05/05 00:55:46 wiz Exp $
 #
 
 DISTNAME=	agg-2.5
@@ -9,8 +9,7 @@ MASTER_SITES=	http://www.antigrain.com/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.antigrain.com/
 COMMENT=	High Quality Rendering Engine for C++
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	gnu-gpl-v2
 
 MAKE_JOBS_SAFE=		no
 USE_TOOLS+=	gmake msgfmt pkg-config aclocal autoheader \

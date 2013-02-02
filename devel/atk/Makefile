@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.82 2012/02/10 15:24:10 drochner Exp $
+# $NetBSD: Makefile,v 1.85 2012/09/15 10:04:05 obache Exp $
 
-DISTNAME=		atk-2.2.0
-PKGREVISION=		3
+DISTNAME=		atk-2.6.0
 CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_GNOME:=sources/atk/2.2/}
+MASTER_SITES=		${MASTER_SITE_GNOME:=sources/atk/2.6/}
 EXTRACT_SUFX=		.tar.xz
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
@@ -12,7 +11,6 @@ COMMENT=		Set of interfaces for accessibility
 LICENSE=		gnu-lgpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake pkg-config msgfmt
 GNU_CONFIGURE=		yes
@@ -25,7 +23,7 @@ PKGCONFIG_OVERRIDE=	atk.pc.in
 UNLIMIT_RESOURCES=	stacksize
 
 .include "../../devel/gettext-lib/buildlink3.mk"
-BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.5.7
+BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.31.2
 .include "../../devel/glib2/buildlink3.mk"
 BUILDLINK_DEPMETHOD.gobject-introspection:= build
 .include "../../devel/gobject-introspection/buildlink3.mk"

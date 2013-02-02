@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2009/05/21 11:32:01 zafer Exp $
+# $NetBSD: Makefile,v 1.3 2009/06/30 00:07:20 joerg Exp $
 #
 
 DISTNAME=	tstools-1_11
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tech-multimedia@NetBSD.org
 HOMEPAGE=	http://tstools.berlios.de/
 COMMENT=	Cross-platform command line tools for working with MPEG data
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

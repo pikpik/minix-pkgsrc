@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.6 2012/02/06 12:41:12 wiz Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/23 17:18:24 asau Exp $
 #
 
-DISTNAME=	libnice-0.1.1
+DISTNAME=	libnice-0.1.2
 PKGNAME=	gst-plugins0.10-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	5
 CATEGORIES=	net devel
 MASTER_SITES=	http://nice.freedesktop.org/releases/
 
@@ -14,8 +14,6 @@ LICENSE=	gnu-lgpl-v2.1 OR mpl-1.1
 
 PATCHDIR=	${.CURDIR}/../../net/libnice/patches
 DISTINFO_FILE=	${.CURDIR}/../../net/libnice/distinfo
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	libnice<0.0.13
 

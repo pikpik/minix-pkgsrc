@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.51 2011/07/13 21:21:52 adam Exp $
+# $NetBSD: Makefile,v 1.53 2012/04/03 15:00:30 adam Exp $
 
 DISTNAME=	libgcrypt-1.5.0
 CATEGORIES=	security
@@ -15,7 +15,6 @@ COMMENT=	GNU cryptographic library
 LICENSE=	gnu-gpl-v2 AND gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
@@ -34,6 +33,10 @@ INFO_FILES=		yes # PLIST
 CONFIGURE_ARGS+=	--disable-asm
 .endif
 CONFIGURE_ARGS+=	--disable-aesni-support
+
+.if !empty(PKGSRC_COMPILER:Mclang)
+CFLAGS+=		-fheinous-gnu-extensions
+.endif
 
 .include "options.mk"
 

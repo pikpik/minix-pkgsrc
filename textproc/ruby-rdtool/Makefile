@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.29 2010/09/10 08:35:16 taca Exp $
+# $NetBSD: Makefile,v 1.34 2012/10/25 06:56:58 asau Exp $
 
-DISTNAME=	rdtool-0.6.31
+DISTNAME=	rdtool-0.6.38
 CATEGORIES=	textproc ruby
 
 MAINTAINER=	taca@NetBSD.org
 HOMEPAGE=	https://github.com/uwabami/rdtool
 COMMENT=	RD (Ruby Document) converter to HTML/man/etc
 LICENSE=	gnu-gpl-v2 OR ruby-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # Since rd2 commands depends its name and it can't rename, we cannot
 # install multiple ruby??-rd2 package (unless supported by pkgview.

@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.in.orig	2003-02-14 05:57:37.000000000 +1100
+--- Makefile.in.orig	2003-02-13 18:57:37.000000000 +0000
 +++ Makefile.in
 @@ -28,9 +28,9 @@ INSTALL_PROG=@INSTALL@
   

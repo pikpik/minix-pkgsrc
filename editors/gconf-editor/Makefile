@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.76 2012/02/06 12:40:00 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/03 11:43:33 asau Exp $
 #
 
 DISTNAME=		gconf-editor-2.32.0
-PKGREVISION=		5
+PKGREVISION=		10
 CATEGORIES=		editors gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gconf-editor/2.32/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		Editor for the GConf configuration system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

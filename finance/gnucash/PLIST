@@ -94,6 +94,7 @@ include/gnucash/gnc-entry-quickfill.h
 include/gnucash/gnc-euro.h
 include/gnucash/gnc-event.h
 include/gnucash/gnc-exp-parser.h
+include/gnucash/gnc-features.h
 include/gnucash/gnc-file.h
 include/gnucash/gnc-frequency.h
 include/gnucash/gnc-general-search.h
@@ -264,6 +265,12 @@ lib/libgnc-core-utils.la
 lib/libgnc-gnome.la
 lib/libgnc-module.la
 lib/libgnc-qof.la
+${PYSITELIB}/gnucash/__init__.py
+${PYSITELIB}/gnucash/_gnucash_core_c.la
+${PYSITELIB}/gnucash/function_class.py
+${PYSITELIB}/gnucash/gnucash_business.py
+${PYSITELIB}/gnucash/gnucash_core.py
+${PYSITELIB}/gnucash/gnucash_core_c.py
 libexec/gnucash/overrides/gnucash-env
 libexec/gnucash/overrides/gnucash-make-guids
 libexec/gnucash/overrides/guile
@@ -608,6 +615,8 @@ share/gnucash/accounts/sk/acctchrt_renter.gnucash-xea
 share/gnucash/accounts/sk/acctchrt_retiremt.gnucash-xea
 share/gnucash/accounts/sk/acctchrt_spouseinc.gnucash-xea
 share/gnucash/accounts/sk/acctchrt_spouseretire.gnucash-xea
+share/gnucash/accounts/sv_SE/bas_2012.gnucash-xea
+share/gnucash/accounts/sv_SE/swedish_small_business.gnucash-xea
 share/gnucash/accounts/tr_TR/acctchrt_TEKDUZ.gnucash-xea
 share/gnucash/accounts/tr_TR/acctchrt_brokerage.gnucash-xea
 share/gnucash/accounts/tr_TR/acctchrt_carloan.gnucash-xea

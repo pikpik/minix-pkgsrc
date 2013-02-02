@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2010/05/10 05:59:58 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2010/09/12 22:38:46 minskim Exp $
 
 DISTNAME=	misc
-PKGNAME=	tex-${DISTNAME}-2010
-TEXLIVE_REV=	17497
+PKGNAME=	tex-${DISTNAME}-2012
+TEXLIVE_REV=	24955
 
 MAINTAINER=	minskim@NetBSD.org
 COMMENT=	Miscellaneous files for TeX

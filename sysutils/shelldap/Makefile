@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2011/03/31 20:45:56 zafer Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:57:44 wiz Exp $
 #
 
-PKGNAME=	shelldap-0.4
-DISTNAME=	d7975e514b2a
+PKGNAME=	shelldap-0.5
+DISTNAME=	c6a3abc56c74
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://code.martini.nu/shelldap/archive/
 EXTRACT_SUFX=	.zip
@@ -19,9 +20,7 @@ DEPENDS+=	p5-Algorithm-Diff>=1.1902:../../devel/p5-Algorithm-Diff
 DEPENDS+=	p5-perl-ldap>=0.40.01:../../databases/p5-perl-ldap
 DEPENDS+=	p5-Term-ReadLine>=1.20:../../devel/p5-Term-ReadLine
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-WRKSRC=		${WRKDIR}/shelldap-d7975e514b2a
+WRKSRC=		${WRKDIR}/shelldap-c6a3abc56c74
 USE_LANGUAGES=	# none
 
 NO_BUILD=	yes

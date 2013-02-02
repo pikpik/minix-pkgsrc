@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2008/06/12 02:14:44 joerg Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:57:22 wiz Exp $
 #
 
 DISTNAME=		antonym-1.9
+PKGREVISION=		1
 CATEGORIES=		security mail
 MASTER_SITES=		http://subwiki.honeypot.net/pub/Computing/AntoNym/
 
@@ -18,7 +19,6 @@ USE_TOOLS+=		perl:run
 REPLACE_PERL=		antonym
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin share/examples/antonym
 

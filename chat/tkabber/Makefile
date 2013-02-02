@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.5 2009/12/13 17:29:19 abs Exp $
+# $NetBSD: Makefile,v 1.7 2012/08/21 23:49:19 marino Exp $
 #
 
 # TODO: gnupg support, ssl support, others
 
 DISTNAME=	tkabber-0.11.1
+PKGREVISION=	1
 CATEGORIES=	chat
 MASTER_SITES=	http://files.jabber.ru/tkabber/
 
@@ -18,8 +19,6 @@ USE_TOOLS+=	pax wish:run
 EGDIR=		${PREFIX}/share/examples/tkabber
 DATADIR=	${PREFIX}/share/tkabber
 DOCDIR=		${PREFIX}/share/doc/tkabber
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 AUTO_MKDIRS=		yes
 

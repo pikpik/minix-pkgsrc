@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2008/03/04 15:39:11 jlam Exp $
+# $NetBSD: Makefile,v 1.5 2008/05/26 02:13:20 joerg Exp $
 #
 
 DISTNAME=	VTKData-4.2
 PKGNAME=	vtk-data-4.2
 PKGREVISION=	1
 COMMENT=	Example data for VTK
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/VTKData-release-4-2
 NO_BUILD=	yes

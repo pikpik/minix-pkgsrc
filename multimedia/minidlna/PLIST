@@ -1,0 +1,4 @@
+@comment $NetBSD$
+sbin/minidlna
+share/examples/minidlna/minidlna.conf
+share/examples/rc.d/minidlna

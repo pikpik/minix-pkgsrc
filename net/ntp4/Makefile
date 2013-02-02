@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.67 2010/01/17 12:02:34 wiz Exp $
+# $NetBSD: Makefile,v 1.70 2012/10/03 21:56:57 wiz Exp $
 #
 
 DISTNAME=	ntp-4.2.4p8
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net time
 MASTER_SITES=	http://www.eecis.udel.edu/~ntp/ntp_spool/ntp4/ntp-4.2/
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.ntp.org/
 COMMENT=	Network Time Protocol Version 4
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	openntpd-[0-9]*
 
@@ -29,6 +28,8 @@ ALL_NTP_DOCS=	${DOCDIR} ${EXAMPLESDIR}
 RCD_SCRIPTS=	ntpd ntpdate
 
 post-install:
+	${MKDIR} ${DOCDIR}
+	${MKDIR} ${EXAMPLESDIR}
 	cd ${WRKSRC}/html && pax -rw -pm . ${DOCDIR}
 	cd ${WRKSRC}/conf && pax -rw -pm . ${EXAMPLESDIR}
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${ALL_NTP_DOCS}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2007/06/08 18:34:38 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2010/01/16 17:57:37 wiz Exp $
 #
 
 DISTNAME=	libmad-0.15.1b
@@ -13,7 +13,6 @@ COMMENT=	High-quality MPEG audio decoder
 CONFLICTS=	mad<0.15
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES

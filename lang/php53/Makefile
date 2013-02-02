@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2012/02/02 16:00:40 taca Exp $
+# $NetBSD: Makefile,v 1.34 2012/08/17 15:32:31 taca Exp $
 
 #
 # We can't omit PKGNAME here to handle PKG_OPTIONS.
@@ -11,7 +11,6 @@ COMMENT=		PHP Hypertext Preprocessor version 5
 LICENSE=		php
 
 TEST_TARGET=		test
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake lex pkg-config
 LIBTOOL_OVERRIDE=	# empty
@@ -26,7 +25,7 @@ CONFIGURE_ENV+=		lt_cv_path_SED=${SED:Q}
 MAKE_ENV+=		INSTALL_ROOT=${DESTDIR}
 
 CONF_FILES=		${EGDIR}/php.ini-production ${PKG_SYSCONFDIR}/php.ini
-OWN_DIRS=		${PREFIX}/${PHP_EXTENSION_DIR}
+PLIST_SUBST+=		PHPEXTDIR="${PHP_EXTENSION_DIR}"
 
 SUBST_CLASSES+=		path
 SUBST_MESSAGE.path=	Fixing common paths.
@@ -36,7 +35,7 @@ SUBST_FILES.path+=	php.ini-development php.ini-production run-tests.php
 SUBST_SED.path=		-e 's,@CGIDIR@,${CGIDIR},g'
 SUBST_SED.path+=	-e 's,@PREFIX@,${PREFIX},g'
 
-INSTALLATION_DIRS+=	${CGIDIR} ${EGDIR} share/php
+INSTALLATION_DIRS+=	${CGIDIR} ${EGDIR} share/php ${PHP_EXTENSION_DIR}
 
 # Make sure modules can link correctly
 .if ${OPSYS} == "Darwin"

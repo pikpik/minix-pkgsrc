@@ -1,8 +1,8 @@
 $NetBSD$
 
---- docs/Makefile.orig	2011-02-11 07:43:27.000000000 +0000
+--- docs/Makefile.orig	2012-12-22 12:26:15.000000000 +0000
 +++ docs/Makefile
-@@ -53,13 +53,12 @@ endif
+@@ -52,11 +52,10 @@ endif
  # 'make generated BUILD_FOR_WEBSITE=1'
  generated:: $(generated_targets)
  
@@ -10,9 +10,7 @@ $NetBSD$
 +install-html:
  	$(Echo) Installing HTML documentation
  	$(Verb) $(MKDIR) $(DESTDIR)$(PROJ_docsdir)/html
- 	$(Verb) $(MKDIR) $(DESTDIR)$(PROJ_docsdir)/html/img
  	$(Verb) $(DataInstall) $(HTML) $(DESTDIR)$(PROJ_docsdir)/html
- 	$(Verb) $(DataInstall) $(IMAGES) $(DESTDIR)$(PROJ_docsdir)/html/img
 -	$(Verb) $(DataInstall) $(PROJ_OBJ_DIR)/html.tar.gz $(DESTDIR)$(PROJ_docsdir)
  
  $(PROJ_OBJ_DIR)/html.tar.gz: $(HTML)

@@ -1,8 +1,13 @@
-$NetBSD$
+$NetBSD: patch-ad,v 1.2 2012/06/11 00:17:58 gdt Exp $
 
---- rpcrot/rpcrotd.c.orig	Thu Jul 24 01:04:54 2003
-+++ rpcrot/rpcrotd.c	Thu Jul 24 01:05:25 2003
-@@ -45,6 +45,12 @@
+This patch was added in 2003, to "make this work with rpcgen that
+exports _rpcsvcdirty incorrectly".
+
+It is not known to be reported upstream.
+
+--- rpcrot/rpcrotd.c.orig	2012-01-08 02:54:30.000000000 +0000
++++ rpcrot/rpcrotd.c
+@@ -43,6 +43,12 @@
  
  #include <hamlib/rotator.h>
  
@@ -13,5 +18,5 @@ $NetBSD$
 +#endif
 +#endif
  
- /* 
+ /*
   * Prototypes

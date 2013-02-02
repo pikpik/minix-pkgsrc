@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/07/18 18:43:50 degroote Exp $
+# $NetBSD: Makefile,v 1.3 2007/10/23 14:11:51 joerg Exp $
 #
 
 VERSION=		2.14.4
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://intellinuxwireless.org/
 COMMENT=		Firmware binary images for wpi(4) driver
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 NO_BUILD=		yes

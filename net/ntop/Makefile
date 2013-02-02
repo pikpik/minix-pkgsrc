@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.74 2012/03/03 00:13:47 wiz Exp $
+# $NetBSD: Makefile,v 1.80 2012/10/08 23:02:18 adam Exp $
 
 DISTNAME=	ntop-4.1.0
-PKGREVISION=	6
+PKGREVISION=	11
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ntop/}
 
@@ -9,8 +9,6 @@ MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://www.ntop.org/products/ntop/
 COMMENT=	Shows network usage (similar to "top" for processes)
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ntop-[0-9]*
 DEPENDS+=	${PYPKGPREFIX}-mako-[0-9]*:../../devel/py-mako

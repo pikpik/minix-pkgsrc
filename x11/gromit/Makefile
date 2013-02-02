@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.20 2012/02/06 12:41:58 wiz Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/08 23:02:35 adam Exp $
 #
 
 DISTNAME=		gromit-20041213
-PKGREVISION=		12
+PKGREVISION=		16
 CATEGORIES=		x11
 MASTER_SITES=		http://www.home.unix-ag.org/simon/gromit/
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.home.unix-ag.org/simon/gromit/
 COMMENT=		Text marker tool for the X11 screen
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 INSTALLATION_DIRS=	bin

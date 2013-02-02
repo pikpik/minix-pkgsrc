@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.49 2012/02/06 12:39:44 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/12/16 01:52:02 obache Exp $
 
 DISTNAME=	kmysqladmin-0.7.2
-PKGREVISION=	13
+PKGREVISION=	18
 CATEGORIES=	databases kde
 MASTER_SITES=	http://www.alwins-world.de/programs/download/kmysqladmin/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.alwins-world.de/programs/kmysqladmin/
 COMMENT=	MySQL administration GUI
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.53 2011/01/13 13:37:11 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/10/08 13:25:17 asau Exp $
 #
 
 DISTNAME=	ViPEC-3.2.0
-PKGREVISION=	9
+PKGREVISION=	10
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=vipec/}
 
 MAINTAINER=	dmcmahill@NetBSD.org
 HOMEPAGE=	http://vipec.sourceforge.net/
 COMMENT=	Network analyser for electrical networks
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 USE_TOOLS+=		gmake

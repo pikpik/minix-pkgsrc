@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.64 2011/03/12 15:42:22 adam Exp $
+# $NetBSD: Makefile,v 1.66 2012/09/11 19:47:02 asau Exp $
 
-DISTNAME=	unrarsrc-4.1.4
+DISTNAME=	unrarsrc-4.2.4
 PKGNAME=	${DISTNAME:S/src//}
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.rarlab.com/rar/
@@ -22,7 +22,6 @@ NO_SRC_ON_CDROM=${RESTRICTED}
 NO_BIN_ON_CDROM=${RESTRICTED}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	YES
 USE_LANGUAGES=	c++

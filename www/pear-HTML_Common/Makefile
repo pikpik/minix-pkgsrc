@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2008/06/12 02:14:56 joerg Exp $
+# $NetBSD: Makefile,v 1.17 2012/04/15 22:01:04 wiz Exp $
 
 DISTNAME=	HTML_Common-1.2.5
 CATEGORIES=	www
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Base PHP class for other HTML classes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-pear-HTML_Common-[0-9]*
 

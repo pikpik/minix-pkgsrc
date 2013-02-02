@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/10/03 21:57:03 wiz Exp $
 #
 
 DISTNAME=	Net-Libdnet6-0.24
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	perl5 net
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
@@ -13,8 +14,6 @@ LICENSE=	artistic
 
 DEPENDS+=	p5-Net-Libdnet-[0-9]*:../../net/p5-Net-Libdnet
 DEPENDS+=	p5-Net-IPv6Addr-[0-9]*:../../net/p5-Net-IPv6Addr
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Net/Libdnet6/.packlist
 

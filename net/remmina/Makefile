@@ -1,6 +1,7 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.9 2012/10/23 17:19:05 asau Exp $
 
 DISTNAME=	remmina-0.9.3
+PKGREVISION=	7
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=remmina/}
 
@@ -8,12 +9,10 @@ MAINTAINER=	pkgsrc-users@netbsd.org
 HOMEPAGE=	http://remmina.sourceforge.net/
 COMMENT=	Remmina is a remote desktop client based on GTK+
 
-PKG_DESTDIR_SUPPORT=    user-destdir
-
 DEPENDS+=	rdesktop>=1.6.0:../../net/rdesktop
 
 GNU_CONFIGURE=	yes
-USE_TOOLS+=	intltool perl pkg-config gmake
+USE_TOOLS+=	intltool perl pkg-config gmake msgfmt
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"

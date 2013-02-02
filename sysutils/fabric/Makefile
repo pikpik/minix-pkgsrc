@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2012/02/12 15:45:34 gls Exp $
+# $NetBSD: Makefile,v 1.24 2012/11/28 17:48:45 gls Exp $
 #
 
-VERSION=		1.3.4
+VERSION=		1.5.2
 DISTNAME=		Fabric-${VERSION}
 PKGNAME=		${DISTNAME:S/F/f/}
-PKGREVISION=		1
 CATEGORIES=		sysutils net
 MASTER_SITES=		http://pypi.python.org/packages/source/F/Fabric/
 
@@ -13,9 +12,7 @@ HOMEPAGE=		http://fabfile.org/
 COMMENT=		Simple Pythonic remote deployment tool
 LICENSE=		2-clause-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-DEPENDS+=		${PYPKGPREFIX}-ssh>=1.7.8:../../security/py-ssh
+DEPENDS+=		${PYPKGPREFIX}-paramiko>=1.9.0:../../security/py-paramiko
 
 USE_TOOLS+=		pax
 

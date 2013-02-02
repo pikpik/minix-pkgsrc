@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.52 2012/03/03 00:12:31 wiz Exp $
+# $NetBSD: Makefile,v 1.60 2012/10/08 23:00:48 adam Exp $
 #
 
 DISTNAME=	streamtuner-0.99.99
-PKGREVISION=	18
+PKGREVISION=	25
 CATEGORIES=	audio www
 MASTER_SITES=	http://savannah.nongnu.org/download/streamtuner/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/streamtuner/
 COMMENT=	Stream directory browser
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	hicolor-icon-theme-[0-9]*:../../graphics/hicolor-icon-theme
 
@@ -29,5 +27,6 @@ CONFIGURE_ARGS+=	--with-html-dir=${PREFIX}/share/doc
 .include "../../mk/omf-scrollkeeper.mk"
 .include "../../www/curl/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

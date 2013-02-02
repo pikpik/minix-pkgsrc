@@ -1,8 +1,6 @@
-$NetBSD$
-
---- dbus/dbus-sysdeps-util-unix.c.orig	Wed May  6 17:26:48 2009
-+++ dbus/dbus-sysdeps-util-unix.c
-@@ -871,6 +871,7 @@ fill_group_info (DBusGroupInfo    *info,
+--- dbus/dbus-sysdeps-util-unix.c.orig	Fri Sep 28 19:17:25 2012
++++ dbus/dbus-sysdeps-util-unix.c	Fri Feb  1 23:28:42 2013
+@@ -798,6 +798,7 @@
      struct group g_str;
      dbus_bool_t b;
  
@@ -10,7 +8,7 @@ $NetBSD$
      /* retrieve maximum needed size for buf */
      buflen = sysconf (_SC_GETGR_R_SIZE_MAX);
  
-@@ -878,8 +879,12 @@ fill_group_info (DBusGroupInfo    *info,
+@@ -805,8 +806,12 @@
       * so just recast here.
       * https://bugs.freedesktop.org/show_bug.cgi?id=17061
       */
@@ -23,10 +21,3 @@ $NetBSD$
  
      result = -1;
      while (1)
-@@ -1233,4 +1238,4 @@ fail:
-   _dbus_string_free (&cmdline);
-   _dbus_string_free (&path);
-   return FALSE;
--}
-\ No newline at end of file
-+}

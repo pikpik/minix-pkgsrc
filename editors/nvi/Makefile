@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.42 2011/12/28 19:34:39 ryoon Exp $
+# $NetBSD: Makefile,v 1.44 2012/10/03 11:43:39 asau Exp $
 
 DISTNAME=	nvi-1.81.6
 PKGREVISION=	7
@@ -10,11 +10,9 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kotnet.org/~skimo/nvi/devel/
 COMMENT=	Berkeley nvi with additional features
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 .include "options.mk"
 
-WRKSRC=			${WRKDIR}/${DISTNAME}/build.unix
+CONFIGURE_DIRS=		build.unix
 USE_LIBTOOL=		yes
 USE_TOOLS+=		sh aclocal automake autoheader autoconf
 GNU_CONFIGURE=		yes
@@ -50,7 +48,7 @@ BUILDLINK_TRANSFORM+=	l:db:${BDB_TYPE}
 .endif
 
 pre-configure:
-	${RUN} cd ${WRKSRC}/../dist && \
+	${RUN} cd ${WRKSRC}/dist && \
 	${CHMOD} 755 configure && \
 	aclocal -I m4 && autoheader && autoconf
 

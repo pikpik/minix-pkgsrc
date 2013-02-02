@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:34:41 seb Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:55:48 wiz Exp $
 
 DISTNAME=	Tie-ToObject-0.03
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Tie/}
 
@@ -12,8 +12,6 @@ COMMENT=	Tie to an existing object
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Tie/ToObject/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

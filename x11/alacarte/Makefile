@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.35 2012/03/03 00:14:07 wiz Exp $
+# $NetBSD: Makefile,v 1.43 2012/10/08 23:02:33 adam Exp $
 #
 
 DISTNAME=	alacarte-0.13.1
-PKGREVISION=	10
+PKGREVISION=	16
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/alacarte/0.13/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +12,6 @@ HOMEPAGE=	http://www.realistanew.com/projects/alacarte/
 COMMENT=	Menu editor for the GNOME desktop
 LICENSE=	gnu-lgpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	intltool perl pkg-config gmake msgfmt
 
@@ -22,7 +20,8 @@ PY_PATCHPLIST=	yes
 SUBST_CLASSES+=	paths
 SUBST_STAGE.paths=	pre-configure
 SUBST_FILES.paths=	Alacarte/util.py
-SUBST_SED.paths=	-e "s;@PREFIX@;${PREFIX};g" -e "s;@PKG_SYSCONFBASE@;${PKG_SYSCONFBASE};g"
+SUBST_SED.paths=	-e "s;@PREFIX@;${PREFIX};g"
+SUBST_SED.paths+=	-e "s;@PKG_SYSCONFBASE@;${PKG_SYSCONFBASE};g"
 
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"

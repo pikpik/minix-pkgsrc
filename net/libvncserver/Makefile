@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2011/10/13 10:50:56 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/23 17:18:35 asau Exp $
 #
 
-DISTNAME=		LibVNCServer-0.9.8.2
-PKGNAME=		libVNCServer-0.9.8.2
+DISTNAME=		LibVNCServer-0.9.9
+PKGNAME=		libVNCServer-0.9.9
+PKGREVISION=		2
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=libvncserver/}
 
@@ -10,8 +11,6 @@ MAINTAINER=		pierrick@bs-network.net
 HOMEPAGE=		http://libvncserver.sourceforge.net/
 COMMENT=		Easy API to write one's own vnc server
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

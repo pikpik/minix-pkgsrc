@@ -1,10 +1,13 @@
 $NetBSD$
 
---- saytime.c.orig	1995-11-11 02:04:52.000000000 +0100
+--- saytime.c.orig	1995-11-11 01:04:52.000000000 +0000
 +++ saytime.c
-@@ -497,10 +497,10 @@ saynumber( int n, int leadingzero )
+@@ -495,12 +495,12 @@ saynumber( int n, int leadingzero )
+     }
  
- main( int argc, char* argv )
+ 
+-main( int argc, char* argv )
++main( int argc, char** argv )
      {
 -    long clock;
 +    time_t clock;

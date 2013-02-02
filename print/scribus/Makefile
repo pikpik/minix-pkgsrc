@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.76 2012/02/06 12:41:23 wiz Exp $
+# $NetBSD: Makefile,v 1.82 2012/10/08 13:45:46 asau Exp $
 
 DISTNAME=		scribus-1.3.3.14
-PKGREVISION=		6
+PKGREVISION=		11
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scribus/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +11,6 @@ HOMEPAGE=		http://www.scribus.net/
 COMMENT=		Publishing layout with graphical interface
 # plus exceptions for qt3 and Windows GDI+ linkage
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES

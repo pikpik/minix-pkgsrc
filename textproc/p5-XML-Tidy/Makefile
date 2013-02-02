@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/08/21 16:36:16 seb Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:58:12 wiz Exp $
 #
 
 DISTNAME=	XML-Tidy-1.6.A7RJKwl
 PKGNAME=	p5-${DISTNAME:C:\.[^.]*$::}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../by-authors/id/P/PI/PIP/}
 EXTRACT_SUFX=	.tgz
@@ -17,7 +17,6 @@ DEPENDS+=    	p5-XML-XPath-[0-9]*:../../textproc/p5-XML-XPath
 DEPENDS+=    	p5-Math-BaseCnv-[0-9]*:../../math/p5-Math-BaseCnv
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/XML/Tidy/.packlist
 

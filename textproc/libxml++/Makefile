@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2012/03/03 00:12:29 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 21:57:49 wiz Exp $
 
 DISTNAME=	libxml++-2.34.2
-# PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/libxml++/2.34/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	evaldo@gardenali.biz
 HOMEPAGE=	http://libxmlplusplus.sourceforge.net/
 COMMENT=	C++ wrapper for the libxml XML parser library
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes

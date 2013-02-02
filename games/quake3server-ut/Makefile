@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2008/03/04 06:59:05 jlam Exp $
+# $NetBSD: Makefile,v 1.7 2011/03/11 12:08:04 zafer Exp $
 
 DISTNAME=	urbanterror3
 PKGNAME=	quake3server-ut-3.0
@@ -10,8 +10,6 @@ MASTER_SITES=	http://distfiles.aydogan.net/games/
 
 MAINTAINER=	david@silicium.ath.cx
 COMMENT=	Quake III Arena Mod: Urban Terror 3 for Linux
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../games/quake3server/Makefile.common"
 

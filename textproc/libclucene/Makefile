@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.2 2009/07/07 21:27:17 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/25 06:56:02 asau Exp $
 
 DISTNAME=		clucene-core-0.9.21b
 PKGNAME=		lib${DISTNAME:S/-core-/-/}
+PKGREVISION=		1
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=clucene/}
 
-MAINTAINER=		mkirby@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://clucene.sourceforge.net/index.php/Main_Page
 COMMENT=		Text search engine written in C++
 LICENSE=		gnu-lgpl-v2.1 OR apache-2.0
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake
 USE_LANGUAGES=		c c++

@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.11 2010/08/21 16:36:12 seb Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/03 21:58:09 wiz Exp $
 
 DISTNAME=	XML-Filter-DetectWS-0.01
 PKGNAME=	p5-${DISTNAME}
 #SVR4_PKGNAME=
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/T/TJ/TJMATHER/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/XML-Filter-DetectWS-0.01/
 COMMENT=	PerlSAX filter that detects ignorable whitespace
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	p5-libxml-enno-[0-9]*
 

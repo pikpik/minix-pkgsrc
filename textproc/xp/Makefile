@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.23 2009/08/20 15:25:00 jwise Exp $
+# $NetBSD: Makefile,v 1.24 2009/09/29 16:58:49 wiz Exp $
 #
 
 DISTNAME=	xp
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.zip
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.jclark.com/xml/
 COMMENT=	James Clark's non-validating XML Parser for Java
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax unzip
 EXTRACT_ONLY=	# empty

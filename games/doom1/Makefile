@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.46 2010/02/22 21:58:47 wiz Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2010/02/22 22:12:52 wiz Exp $
 
 DISTNAME=	doom-1.8.wad
 PKGNAME=	doom1-1.8
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 # HOMEPAGE=	http://www.idsoftware.com/archives/doomarc.html
 # AWOL
 COMMENT=	Shareware levels for Doom
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	xdoom<1.10nb4
 WRKSRC=		${WRKDIR}

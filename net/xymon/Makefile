@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/02/06 12:41:18 wiz Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/23 17:19:21 asau Exp $
 #
 
-DISTNAME=		xymon-4.3.5
-PKGREVISION=		5
+DISTNAME=		xymon-4.3.10
+PKGREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xymon/}
 
@@ -11,13 +11,12 @@ HOMEPAGE=		http://sourceforge.net/projects/xymon/
 COMMENT=		Network services monitor a la Big Brother
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		NO
 
 CONFLICTS+=		hobbitmon-[0-9]*
 CONFLICTS+=		hobbitclient-[0-9]*
 
-DEPENDS+=		fping>2:../../net/fping
+DEPENDS+=		fping>=2:../../net/fping
 	# xymonclient ought to be the same version as the server, modulo nbN
 DEPENDS+=		xymonclient>=4.3.0b2:../../net/xymonclient
 
@@ -193,6 +192,11 @@ MAKE_ENV+=		${TOOLS_ENV}
 
 MENUFILES=		b2t-blue.gif b2t-grey.gif t2b-blue.gif t2b-grey.gif
 MENUFILES+=		xymonmenu-blue.css xymonmenu-grey.css
+
+post-patch:
+	${CP} ${WRKSRC}/build/Makefile.FreeBSD \
+	      ${WRKSRC}/build/Makefile.DragonFly
+
 post-install:
 .for file in ${MENUFILES}
 	chmod 0644 ${DESTDIR}${EXAMPLEDIR}/www/menu/${file}

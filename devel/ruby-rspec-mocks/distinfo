@@ -1,5 +1,5 @@
-$NetBSD: distinfo,v 1.3 2012/03/17 15:08:21 taca Exp $
+$NetBSD: distinfo,v 1.7 2012/12/16 16:45:06 taca Exp $
 
-SHA1 (rspec-mocks-2.9.0.gem) = 2a8720d4a1b5ab897eb537541193a44941ec9609
-RMD160 (rspec-mocks-2.9.0.gem) = c282ce69af9edf539270d20ce43c317cd6877759
-Size (rspec-mocks-2.9.0.gem) = 53760 bytes
+SHA1 (rspec-mocks-2.12.1.gem) = d523a5e60f02eb436872e94dab6a61c192cc5dce
+RMD160 (rspec-mocks-2.12.1.gem) = c9841743264671b40f3f153150ba5091d77711c8
+Size (rspec-mocks-2.12.1.gem) = 71168 bytes

@@ -1,6 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2011/02/21 16:01:11 taca Exp $
+# $NetBSD: Makefile,v 1.11 2012/12/05 12:12:23 taca Exp $
 
 DISTNAME=	ruby-ldap-0.9.12
+PKGNAME=	${DISTNAME:S/^ruby-/${RUBY_PKGPREFIX}-/}
+PKGREVISION=	1
 CATEGORIES=	databases ruby
 
 MAINTAINER=	obache@NetBSD.org
@@ -8,12 +10,10 @@ HOMEPAGE=	http://github.com/alexey-chebotar/ruby-ldap
 COMMENT=	LDAP extension module for Ruby
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFIGURE_ARGS+=	--with-openldap2
 CONFIGURE_ARGS+=	--with-ldap-dir=${BUILDLINK_PREFIX.openldap-client}
 
-GEM_CLEANBUILD=	*.o ldap.${RUBY_DLEXT} mkmf.log
+GEM_CLEANBUILD=	*.o *.time ldap.${RUBY_DLEXT} mkmf.log
 
 .include "../../databases/openldap-client/buildlink3.mk"
 .include "../../security/cyrus-sasl/buildlink3.mk"

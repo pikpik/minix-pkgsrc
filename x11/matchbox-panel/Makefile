@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2011/04/22 13:45:13 obache Exp $
+# $NetBSD: Makefile,v 1.25 2012/07/15 08:23:00 wiz Exp $
 #
 
 DISTNAME=		matchbox-panel-0.9.2
-PKGREVISION=		7
+PKGREVISION=		8
 CATEGORIES=		x11
 MASTER_SITES=		http://matchbox-project.org/sources/matchbox-panel/0.9/
 EXTRACT_SUFX=		.tar.bz2
@@ -20,8 +20,6 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--enable-small-icons
 CONFIGURE_ARGS+=	--enable-startup-notification
 CONFIGURE_ARGS+=	--enable-nls
-
-PKG_DESTDIR_SUPPORT=  	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

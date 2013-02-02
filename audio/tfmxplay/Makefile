@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2008/03/02 06:10:34 jlam Exp $
+# $NetBSD: Makefile,v 1.14 2009/05/05 18:47:53 zafer Exp $
 #
 
 DISTNAME=	tfmxplay-0.6
@@ -13,7 +13,6 @@ COMMENT=	Console TFMX (amiga games sound file format) player
 NOT_FOR_PLATFORM=	Interix-*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin
 

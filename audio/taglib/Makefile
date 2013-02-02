@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.25 2012/02/15 22:59:13 hans Exp $
+# $NetBSD: Makefile,v 1.30 2012/12/17 11:10:42 obache Exp $
 #
 
-DISTNAME=	taglib-1.7.1
+DISTNAME=	taglib-1.8
+PKGREVISION=	1
 CATEGORIES=	audio
-MASTER_SITES=	http://developer.kde.org/~wheeler/files/src/
+MASTER_SITES=	http://cloud.github.com/downloads/taglib/taglib/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://developer.kde.org/~wheeler/taglib.html
+HOMEPAGE=	http://taglib.github.com/
 COMMENT=	Library for accessing id tags in various media files
 LICENSE=	gnu-lgpl-v2.1 OR mpl-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 
@@ -26,6 +25,15 @@ SUBST_FILES.pc=		taglib-config.cmake
 SUBST_STAGE.pc=		pre-configure
 SUBST_SED.pc=		-e 's|-L\([ 	]*[^ 	]*\)|${COMPILER_RPATH_FLAG}\1 -L\1|g'
 SUBST_MESSAGE.pc=	Fixing rpath in taglib-config.
+
+.include "../../mk/compiler.mk"
+#
+# depends on builtin functions which enabled with i486 and later with GCC.
+#
+.if ${OPSYS} == "NetBSD" && !empty(CC_VERSION:M[4-9]*) && !empty(MACHINE_ARCH:Mi386)
+GNU_ARCH.i386=		i486
+CFLAGS+=		-march=i486
+.endif
 
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

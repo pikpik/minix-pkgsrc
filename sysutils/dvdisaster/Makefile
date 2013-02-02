@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2012/03/03 00:13:55 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:24 adam Exp $
 #
 
-DISTNAME=		dvdisaster-0.72.3
-PKGREVISION=		2
+DISTNAME=		dvdisaster-0.72.4
+PKGREVISION=		4
 CATEGORIES=		sysutils
 MASTER_SITES=		http://dvdisaster.net/downloads/
 EXTRACT_SUFX=		.tar.bz2
@@ -14,8 +14,6 @@ LICENSE=		gnu-gpl-v2
 
 ONLY_FOR_PLATFORM=	Darwin-*-* FreeBSD-*-* Linux-*-*
 ONLY_FOR_PLATFORM+=	NetBSD-*-*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		gettext-tools>=0.14:../../devel/gettext-tools
 

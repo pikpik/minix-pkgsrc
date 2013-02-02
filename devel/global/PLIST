@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.12 2009/06/14 17:48:46 joerg Exp $
+@comment $NetBSD$
 bin/global
 bin/globash
 bin/gozilla
@@ -6,9 +6,8 @@ bin/gtags
 bin/gtags-cscope
 bin/htags
 info/global.info
-lib/gtags/exuberant-ctags.a
 lib/gtags/exuberant-ctags.la
-lib/gtags/exuberant-ctags.so
+lib/gtags/user-custom.la
 man/man1/global.1
 man/man1/globash.1
 man/man1/gozilla.1
@@ -18,6 +17,7 @@ man/man1/htags.1
 share/gtags/AUTHORS
 share/gtags/BOKIN_MODEL
 share/gtags/BOKIN_MODEL_FAQ
+share/gtags/BUILD_TOOLS
 share/gtags/COPYING
 share/gtags/ChangeLog
 share/gtags/DONORS
@@ -29,6 +29,8 @@ share/gtags/README
 share/gtags/THANKS
 share/gtags/bless.sh.tmpl
 share/gtags/completion.cgi.tmpl
+share/gtags/elvis-2.2_0.patch
+share/gtags/elvis.rc
 share/gtags/ghtml.cgi.tmpl
 share/gtags/global.cgi.tmpl
 share/gtags/globash.rc
@@ -37,6 +39,7 @@ share/gtags/gtags.conf
 share/gtags/gtags.el
 share/gtags/gtags.pl
 share/gtags/gtags.vim
+share/gtags/head.in
 share/gtags/icons/back.png
 share/gtags/icons/bottom.png
 share/gtags/icons/c.png
@@ -78,4 +81,12 @@ share/gtags/jquery/jquery.treeview.css
 share/gtags/jquery/jquery.treeview.js
 share/gtags/jscode_suggest.tmpl
 share/gtags/jscode_treeview.tmpl
+share/gtags/mainpage.dox
+share/gtags/script/README
+share/gtags/script/elvis-global
+share/gtags/script/global-client
+share/gtags/script/gtags-client
+share/gtags/script/htags-client
+share/gtags/script/less-global
 share/gtags/style.css.tmpl
+@pkgdir var/gtags/sitekeys

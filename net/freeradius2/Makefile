@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2012/03/21 16:48:17 brook Exp $
+# $NetBSD: Makefile,v 1.27 2012/11/23 01:31:18 jnemeth Exp $
 
 DISTNAME=	freeradius-server-${RADVER}
 PKGNAME=	${DISTNAME:S/-server//}
-PKGREVISION=	2
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.freeradius.org/pub/freeradius/
 EXTRACT_SUFX=	.tar.bz2
@@ -18,7 +18,6 @@ USE_TOOLS+=		gmake perl:run
 USE_LIBTOOL=		yes
 USE_OLD_DES_API=	yes
 MAKE_JOBS_SAFE=		no
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -46,8 +45,8 @@ OWN_DIRS_PERMS+=	${VARBASE}/log/radiusd \
 OWN_DIRS_PERMS+=	${VARBASE}/log/radiusd/radacct \
 			${RADIUS_USER} ${RADIUS_GROUP} 0750
 
-RADVER=			2.1.12
-EGDIR=			${DESTDIR}${PREFIX}/share/examples/freeradius
+RADVER=			2.2.0
+EGDIR=			${PREFIX}/share/examples/freeradius
 
 BUILDLINK_API_DEPENDS.openssl+=	openssl>=0.9.7
 
@@ -64,7 +63,8 @@ CONFIGURE_ARGS+=	--without-rlm_sql_oracle
 CONFIGURE_ARGS+=	--without-rlm_sql_unixodbc
 MAKE_ENV+=		R=${DESTDIR}
 
-REPLACE_PERL=		scripts/radsqlrelay
+REPLACE_PERL=		src/modules/rlm_counter/rad_counter
+REPLACE_PERL+=		scripts/radsqlrelay
 
 SUBST_CLASSES+=		make
 SUBST_STAGE.make=	post-patch
@@ -128,7 +128,7 @@ CONF_FILES_PERMS+=	${EGDIR}/${f} ${PKG_SYSCONFDIR}/${f} \
 .endfor
 
 .for d in ${EGDIRS}
-INSTALLATION_DIRS+=	${PKG_SYSCONFDIR}/${d}
+INSTALLATION_DIRS+=	${EGDIR}/${d}
 .endfor
 
 OWN_DIRS_PERMS+=	${PKG_SYSCONFDIR}/certs ${RADIUS_USER} \
@@ -164,14 +164,10 @@ post-build:
 .endif
 
 post-install:
-	${INSTALL_DATA_DIR} ${EGDIR}
-.for d in ${EGDIRS}
-	${INSTALL_DATA_DIR} ${EGDIR}/${d}
-.endfor
 .for f in ${EGFILES}
-	${INSTALL_DATA} ${WRKSRC}/raddb/${f} ${EGDIR}/${f}
+	${INSTALL_DATA} ${WRKSRC}/raddb/${f} ${DESTDIR}${EGDIR}/${f}
 .endfor
-	${INSTALL_DATA} ${WRKSRC}/src/modules/rlm_perl/example.pl ${EGDIR}
+	${INSTALL_DATA} ${WRKSRC}/src/modules/rlm_perl/example.pl ${DESTDIR}${EGDIR}
 
 .include "../../devel/libltdl/buildlink3.mk"
 .include "../../net/libpcap/buildlink3.mk"

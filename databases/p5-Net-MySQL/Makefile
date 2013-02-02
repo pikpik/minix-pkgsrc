@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2011/08/14 08:18:09 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/02 21:25:33 asau Exp $
 #
 
 DISTNAME=	Net-MySQL-0.11
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/T/TS/TSUCCHI/
 
@@ -11,8 +12,6 @@ HOMEPAGE=	http://search.cpan.org/CPAN/authors/id/O/OY/OYAMA/
 COMMENT=	Net::MySQL - Pure Perl MySQL network protocol interface
 
 DEPENDS+=       p5-Digest-SHA1-[0-9]*:../../security/p5-Digest-SHA1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/Net/MySQL/.packlist
 USE_LANGUAGES=	# none

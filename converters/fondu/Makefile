@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2010/02/07 17:12:34 zafer Exp $
+# $NetBSD: Makefile,v 1.11 2010/02/07 17:15:54 zafer Exp $
 #
 
 DISTNAME=	fondu_src-060102
@@ -14,7 +14,6 @@ LICENSE=	original-bsd
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=	YES
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

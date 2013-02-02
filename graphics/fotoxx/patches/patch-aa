@@ -1,23 +1,24 @@
-$NetBSD: patch-aa,v 1.7 2011/11/20 00:00:28 ryoon Exp $
+$NetBSD: patch-aa,v 1.12 2012/12/05 16:38:00 ryoon Exp $
 
---- Makefile.orig	2012-01-04 08:47:11.000000000 +0000
+* Pass LDFLAGS from pkgsrc's Makefile
+
+--- Makefile.orig	2013-01-01 07:43:06.000000000 +0000
 +++ Makefile
 @@ -13,7 +13,7 @@ SHAREDIR = $(PREFIX)/share/fotoxx
  ICONDIR = $(SHAREDIR)/icons
  LOCALESDIR = $(SHAREDIR)/locales
  DOCDIR = $(PREFIX)/share/doc/fotoxx
 -MANDIR = $(PREFIX)/share/man/man1
-+MANDIR = $(PREFIX)/man/man1
++MANDIR = $(PREFIX)/${PKGMANDIR}/man1
  MENUFILE = $(PREFIX)/share/applications/kornelix-fotoxx.desktop
  
- CFLAGS = $(CXXFLAGS) -c `pkg-config --cflags gtk+-2.0`
-@@ -23,8 +23,7 @@ fotoxx:  fotoxx.o f.file.o f.tools.o f.s
-          f.transform.o f.art.o f.comp.o f.navi.o zfuncs.o 
- 	$(CXX) $(LDFLAGS) -o fotoxx fotoxx.o f.file.o f.tools.o f.select.o f.info.o \
-          f.retouch.o f.transform.o f.art.o f.comp.o f.navi.o zfuncs.o \
--         $(LIBS) -ltiff 
--	@ ./dependencies.sh
-+         $(LIBS) -ltiff -lcompat
+ CFLAGS = $(CXXFLAGS) -c `pkg-config --cflags gtk+-3.0`
+@@ -23,7 +23,7 @@ ALLFILES = fotoxx.o f.menus.o f.file.o f
+            f.xform.o f.retouch.o f.retouch2.o f.art.o f.comp.o zfuncs.o
  
- fotoxx.o: fotoxx-$(VERSION) fotoxx.h
- 	$(CXX) $(CFLAGS) -o fotoxx.o fotoxx-$(VERSION)
+ fotoxx: $(ALLFILES)
+-	$(CXX) $(LDFLAGS) -o fotoxx $(ALLFILES) $(LIBS) -ltiff -lpng
++	$(CXX) $(LDFLAGS) -o fotoxx $(ALLFILES) $(LIBS) -ltiff -lpng ${LDFLAGS}
+ 
+ fotoxx.o: $(FOTOXX) fotoxx.h
+ 	$(CXX) $(CFLAGS) -o fotoxx.o $(FOTOXX)

@@ -1,4 +1,4 @@
-# $NetBSD: module.mk,v 1.1 2010/07/09 18:08:05 asau Exp $
+# $NetBSD: module.mk,v 1.2 2011/04/20 18:51:38 hans Exp $
 
 # Used variables:
 # CLISP_MODULE - name of module and subdirectory in "modules"
@@ -12,7 +12,6 @@ NOT_FOR_PLATFORM=	*-*-sparc64
 NOT_FOR_PLATFORM+=	*-*-arm
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 
 CONFIGURE_DIRS=		modules/$(CLISP_MODULE)

@@ -1,4 +1,9 @@
-$NetBSD: patch-al,v 1.8 2011/09/12 20:14:06 bsiegert Exp $
+$NetBSD: patch-al,v 1.9 2011/09/14 17:07:01 hans Exp $
+
+- recognize OpenBSD, MirBSD, Interix, Solaris 11
+- remove special-case library version hack for FreeBSD
+- honor pkgsrc LDFLAGS
+- other stuff not previously commented (XXX)
 
 --- configure.orig	2010-05-25 02:27:03.000000000 +0000
 +++ configure	2011-09-06 18:58:15.336443123 +0200

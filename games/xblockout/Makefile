@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2011/06/25 11:32:09 obache Exp $
+# $NetBSD: Makefile,v 1.7 2011/12/15 04:18:16 dholland Exp $
 #
 
 DISTNAME=	xbl-1.1.6
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www710.univ-lyon1.fr/ftp/xbl/xbl.html
 COMMENT=	3D-tetris-like game
 LICENSE=	gnu-gpl-v1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	imake
 GNU_CONFIGURE=	yes

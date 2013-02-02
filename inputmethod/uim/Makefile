@@ -1,14 +1,14 @@
-# $NetBSD: Makefile,v 1.58 2012/02/18 11:46:14 obache Exp $
+# $NetBSD: Makefile,v 1.70 2012/12/16 01:52:17 obache Exp $
 #
 
 .include "../../inputmethod/uim/Makefile.common"
-PKGREVISION=1
+
+PKGREVISION=		5
 
 COMMENT=		Multilingual input method library
+#LICENSE=		See ${WRKSRC}/COPYING
 
 CONFLICTS+=		uim-qt4-immodule-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		YES
 USE_PKGLOCALEDIR=	YES

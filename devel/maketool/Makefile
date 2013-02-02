@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.39 2010/01/29 19:03:44 joerg Exp $
+# $NetBSD: Makefile,v 1.40 2011/04/22 13:43:20 obache Exp $
 #
 
 DISTNAME=	maketool-0.7-src
@@ -10,8 +10,6 @@ MASTER_SITES=	http://home.alphalink.com.au/~gnb/maketool/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://home.alphalink.com.au/~gnb/maketool/
 COMMENT=	Graphical front end to GNU make
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/01/12 08:53:52 adam Exp $
+# $NetBSD: Makefile,v 1.36 2012/06/12 15:46:00 wiz Exp $
 
 DISTNAME=	mDNSResponder-258.14
 CATEGORIES=	net
@@ -14,8 +14,6 @@ BUILD_DIRS=		mDNSPosix
 BUILDDIR=		${WRKSRC}/mDNSPosix/build/prod
 AUTO_MKDIRS=		yes
 MAKE_JOBS_SAFE=		no
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -58,6 +56,7 @@ LDFLAGS.SunOS+=	-lsocket
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.mDNSResponder
 PKG_SUPPORTED_OPTIONS=	inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 .include "../../mk/bsd.options.mk"
 

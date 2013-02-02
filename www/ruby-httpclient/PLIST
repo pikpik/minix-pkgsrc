@@ -1,5 +1,8 @@
-@comment $NetBSD$
+@comment $NetBSD: PLIST,v 1.6 2012/08/19 07:54:11 obache Exp $
+bin/httpclient${RUBY_VER}
 ${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/README.txt
+${GEM_LIBDIR}/bin/httpclient
 ${GEM_LIBDIR}/lib/hexdump.rb
 ${GEM_LIBDIR}/lib/http-access2.rb
 ${GEM_LIBDIR}/lib/http-access2/cookie.rb
@@ -7,10 +10,10 @@ ${GEM_LIBDIR}/lib/http-access2/http.rb
 ${GEM_LIBDIR}/lib/httpclient.rb
 ${GEM_LIBDIR}/lib/httpclient/auth.rb
 ${GEM_LIBDIR}/lib/httpclient/cacert.p7s
-${GEM_LIBDIR}/lib/httpclient/cacert_sha1.p7s
 ${GEM_LIBDIR}/lib/httpclient/connection.rb
 ${GEM_LIBDIR}/lib/httpclient/cookie.rb
 ${GEM_LIBDIR}/lib/httpclient/http.rb
+${GEM_LIBDIR}/lib/httpclient/include_client.rb
 ${GEM_LIBDIR}/lib/httpclient/session.rb
 ${GEM_LIBDIR}/lib/httpclient/ssl_config.rb
 ${GEM_LIBDIR}/lib/httpclient/timeout.rb
@@ -24,6 +27,7 @@ ${GEM_LIBDIR}/sample/dav.rb
 ${GEM_LIBDIR}/sample/howto.rb
 ${GEM_LIBDIR}/sample/oauth_buzz.rb
 ${GEM_LIBDIR}/sample/oauth_friendfeed.rb
+${GEM_LIBDIR}/sample/oauth_salesforce_10.rb
 ${GEM_LIBDIR}/sample/oauth_twitter.rb
 ${GEM_LIBDIR}/sample/ssl/0cert.pem
 ${GEM_LIBDIR}/sample/ssl/0key.pem
@@ -35,6 +39,7 @@ ${GEM_LIBDIR}/sample/ssl/webrick_httpsd.rb
 ${GEM_LIBDIR}/sample/stream.rb
 ${GEM_LIBDIR}/sample/thread.rb
 ${GEM_LIBDIR}/sample/wcat.rb
+${GEM_LIBDIR}/test/ca-chain.cert
 ${GEM_LIBDIR}/test/ca.cert
 ${GEM_LIBDIR}/test/client.cert
 ${GEM_LIBDIR}/test/client.key
@@ -48,7 +53,9 @@ ${GEM_LIBDIR}/test/sslsvr.rb
 ${GEM_LIBDIR}/test/subca.cert
 ${GEM_LIBDIR}/test/test_auth.rb
 ${GEM_LIBDIR}/test/test_cookie.rb
+${GEM_LIBDIR}/test/test_hexdump.rb
 ${GEM_LIBDIR}/test/test_http-access2.rb
 ${GEM_LIBDIR}/test/test_httpclient.rb
+${GEM_LIBDIR}/test/test_include_client.rb
 ${GEM_LIBDIR}/test/test_ssl.rb
 ${GEM_HOME}/specifications/${GEM_NAME}.gemspec

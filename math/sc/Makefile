@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/02/22 19:26:47 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2009/12/12 20:22:01 asau Exp $
 
 DISTNAME=               sc-6.21
 PKGREVISION=		2
@@ -8,8 +8,6 @@ EXTRACT_SUFX=		.tar.Z
 
 MAINTAINER=		eric@fox.phoenix.az.us
 COMMENT=		Curses-based spreadsheet program
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}
 USE_TOOLS+=		yacc

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2012/01/07 12:58:45 obache Exp $
+# $NetBSD: Makefile,v 1.32 2012/10/03 21:56:17 wiz Exp $
 
 DISTNAME=	xcin-2.5.3.pre2
 PKGNAME=	xcin-2.5.3rc2
-PKGREVISION=	11
+PKGREVISION=	12
 CATEGORIES=	chinese x11
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/devel/
 
@@ -10,8 +10,6 @@ MAINTAINER=	rxg@NetBSD.org
 HOMEPAGE=	http://xcin.linux.org.tw/
 COMMENT=	Chinese XIM server
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=	no
 

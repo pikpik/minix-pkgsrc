@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.12 2008/03/02 03:48:36 jlam Exp $
+# $NetBSD: Makefile,v 1.13 2008/06/01 14:28:37 obache Exp $
 #
 
 DISTNAME=	nomarch-1.4
@@ -10,7 +10,6 @@ HOMEPAGE=	http://rus.members.beeb.net/nomarch.html
 COMMENT=	Free replacement for the arc program
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_FLAGS+=	PREFIX=${PREFIX:Q}
 MAKE_FLAGS+=	CC=${CC:Q}

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/11/18 14:57:42 he Exp $
+# $NetBSD: Makefile,v 1.3 2012/04/08 19:08:47 wiz Exp $
 #
 
 DISTNAME=	Elixir-0.7.0
@@ -11,8 +11,6 @@ HOMEPAGE=	http://elixir.ematia.de/trac/wiki
 COMMENT=	Elixir is a declarative layer on top of the SQLAlchemy library
 LICENSE=	mit
 
-PKG_DESTDIR_SUPPORT=   user-destdir
-
 USE_LANGUAGES=	# none
 
 DEPENDS+=	${PYPKGPREFIX}-sqlalchemy-[0-9]*:../../databases/py-sqlalchemy/
@@ -20,8 +18,6 @@ DEPENDS+=	${PYPKGPREFIX}-sqlite2-[0-9]*:../../databases/py-sqlite2/
 DEPENDS+=	${PYPKGPREFIX}-amkCrypto-[0-9]*:../../security/py-amkCrypto
 
 # Python stuff
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
-
 PYDISTUTILSPKG=		yes
 
 .include "../../lang/python/egg.mk"

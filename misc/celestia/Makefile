@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.34 2012/02/06 12:40:55 wiz Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/08 23:02:04 adam Exp $
 
 DISTNAME=	celestia-1.4.1
-PKGREVISION=	20
+PKGREVISION=	27
 CATEGORIES=	misc x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=celestia/}
 
 MAINTAINER=	cesar_catrian@yahoo.com
 HOMEPAGE=	http://www.shatters.net/celestia/
 COMMENT=	Free real-time 3D space simulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DISTINFO_FILE=	${.CURDIR}/../../misc/celestia/distinfo
 PATCHDIR=	${.CURDIR}/../../misc/celestia/patches
@@ -55,4 +53,5 @@ post-install:
 .include "../../lang/lua/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

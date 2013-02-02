@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2012/03/19 22:53:57 markd Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/08 23:01:46 adam Exp $
 
 DISTNAME=	kipi-plugins-0.1.7
-PKGREVISION=	18
+PKGREVISION=	26
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=kipi/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.kipi-plugins.org/drupal/
 COMMENT=	Kipi (KDE Image Plugin Interface) plugins (KDE3)
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake perl pkg-config msgfmt bash:run
 USE_LANGUAGES=		c c++
@@ -28,7 +26,7 @@ BUILDLINK_API_DEPENDS.libgpod+=	libgpod>=0.7.0
 .include "../../audio/libgpod/buildlink3.mk"
 .include "../../devel/libgphoto2/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
-BUILDLINK_API_DEPENDS.libkdcraw+=	libkdcraw>=0.1.4
+BUILDLINK_API_DEPENDS.libkdcraw+=	libkdcraw>=0.1.4<4.0
 .include "../../graphics/libkdcraw-kde3/buildlink3.mk"
 .include "../../graphics/libkexiv2-kde3/buildlink3.mk"
 .include "../../graphics/libkipi-kde3/buildlink3.mk"

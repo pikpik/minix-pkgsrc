@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:41:34 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:25 adam Exp $
 #
 
 DISTNAME=		gnome-system-tools-2.22.2
-PKGREVISION=		9
+PKGREVISION=		18
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gnome-system-tools/2.22/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/
 COMMENT=		System administraton tools for the GNOME desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.gnome-system-tools
 PKG_SUPPORTED_OPTIONS=	hal
@@ -33,6 +31,7 @@ GCONF_SCHEMAS+=		gnome-system-tools.schemas
 .include "../../devel/GConf/schemas.mk"
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/liboobs/buildlink3.mk"
 .include "../../sysutils/nautilus/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.76 2011/11/01 06:11:55 sbd Exp $
+# $NetBSD: Makefile,v 1.80 2012/10/23 10:24:06 wiz Exp $
 
 DISTNAME=		magicpoint-1.13a
-PKGREVISION=		10
+PKGREVISION=		12
 CATEGORIES=		x11 graphics
 MASTER_SITES=		ftp://sh.wide.ad.jp/WIDE/free-ware/mgp/
 
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://member.wide.ad.jp/wg/mgp/
 COMMENT=		X11 based presentation tool
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		mgp-[0-9]*
 
@@ -78,6 +76,5 @@ post-install:
 .include "../../graphics/netpbm/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/libXmu/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

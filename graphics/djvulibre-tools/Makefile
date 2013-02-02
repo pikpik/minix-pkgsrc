@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.12 2011/10/27 10:34:08 ryoon Exp $
+# $NetBSD: Makefile,v 1.15 2012/12/17 13:55:48 drochner Exp $
 
-DISTNAME=		djvulibre-3.5.24
+DISTNAME=		djvulibre-3.5.25.3
 PKGNAME=		${DISTNAME:S/-/-tools-/}
 PKGREVISION=		1
 CATEGORIES=		graphics
@@ -11,8 +11,6 @@ HOMEPAGE=		http://djvu.sourceforge.net/
 COMMENT=		Compression library for scanned documents
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 PATCHDIR=		${.CURDIR}/../djvulibre-lib/patches
 DISTINFO_FILE=		${.CURDIR}/../djvulibre-lib/distinfo
 
@@ -22,6 +20,7 @@ USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		bash:run pkg-config
 GNU_CONFIGURE=		yes
 
+WRKSRC=			${WRKDIR}/djvulibre-3.5.25
 MAKE_ENV+=		INSTALL_SCRIPT=${INSTALL_SCRIPT:Q}
 BUILD_DIRS=		tools xmltools
 INSTALL_DIRS=		tools xmltools

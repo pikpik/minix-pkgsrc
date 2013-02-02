@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2012/03/03 00:13:51 wiz Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/08 23:02:21 adam Exp $
 
-DISTNAME=		scribus-1.4.0
-PKGREVISION=		4
+DISTNAME=		scribus-1.4.1
+PKGREVISION=		7
 CATEGORIES=		print
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=scribus/}
 EXTRACT_SUFX=		.tar.bz2
@@ -10,8 +10,7 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.scribus.net/
 COMMENT=		Publishing layout with graphical interface
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
+WRKSRC=			${WRKDIR}/Scribus
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		YES
 USE_TOOLS+=		gmake perl pkg-config
@@ -39,7 +38,7 @@ post-install:
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
-.include "../../graphics/lcms/buildlink3.mk"
+.include "../../graphics/lcms2/buildlink3.mk"
 BUILDLINK_API_DEPENDS.libart+= libart>=2.3.19nb1
 .include "../../graphics/libart/buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.74 2012/01/24 09:11:03 sbd Exp $
+# $NetBSD: Makefile,v 1.78 2012/12/16 01:52:12 obache Exp $
 
 PKGNAME?=	${DISTNAME}
 COMMENT?=	*BETA* XEmacs text editor version ${PKGVERSION_NOREV}
@@ -6,7 +6,7 @@ COMMENT?=	*BETA* XEmacs text editor version ${PKGVERSION_NOREV}
 DISTNAME=	xemacs-21.5.27
 EMACSVERSION=	21.5-b27
 EMACS_DISTNAME=	xemacs-${EMACSVERSION}
-PKGREVISION=	12
+PKGREVISION=	15
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XEMACS:=${DISTNAME:C/[.][^.]*$//}/}
 
@@ -16,8 +16,6 @@ HOMEPAGE=	http://www.xemacs.org/
 CONFLICTS+=	gnuclient-[0-9]*
 CONFLICTS+=	xemacs-[0-9]*
 CONFLICTS+=	xemacs-nox11-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .if ${MACHINE_ARCH} == "arm" || ${MACHINE_ARCH} == "arm32"
 GCC_REQD+=		2.95.3

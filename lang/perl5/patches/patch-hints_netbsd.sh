@@ -1,15 +1,20 @@
 $NetBSD$
 
-* NetBSD-6.x is same condition as older releases.
-
---- hints/netbsd.sh.orig	2011-09-19 13:18:22.000000000 +0000
+--- hints/netbsd.sh~	2012-10-11 18:20:45.000000000 +0000
 +++ hints/netbsd.sh
-@@ -89,7 +89,7 @@ case "$osvers" in
- 	;;
- esac
- case "$osvers" in
--0.9*|1.*|2.*|3.*|4.*|5.*)
-+0.9*|1.*|2.*|3.*|4.*|5.*|6.*)
- 	d_getprotoent_r="$undef"
- 	d_getprotobyname_r="$undef"
- 	d_getprotobynumber_r="$undef"
+@@ -186,10 +186,12 @@ esac
+ EOCBU
+ 
+ # Set sensible defaults for NetBSD: look for local software in
+-# /usr/pkg (NetBSD Packages Collection) and in /usr/local.
++# /usr/local, plus the build prefix, which might or might not be
++# /usr/pkg.
+ #
+-loclibpth="/usr/pkg/lib /usr/local/lib"
+-locincpth="/usr/pkg/include /usr/local/include"
++loclibpth="/usr/local/lib ${prefix}/lib"
++locincpth="/usr/local/include ${prefix}/include"
++
+ case "$rpathflag" in
+ '')
+ 	ldflags=

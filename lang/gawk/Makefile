@@ -1,9 +1,10 @@
-# $NetBSD: Makefile,v 1.45 2011/04/22 13:43:59 obache Exp $
+# $NetBSD: Makefile,v 1.52 2012/12/06 11:42:05 jperkin Exp $
 
-DISTNAME=	gawk-4.0.0
+DISTNAME=	gawk-4.0.1
+PKGREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU:=gawk/}
-EXTRACT_SUFX=	.tar.bz2
+EXTRACT_SUFX=	.tar.xz
 
 MAINTAINER=	bouyer@NetBSD.org
 HOMEPAGE=	http://www.gnu.org/software/gawk/gawk.html
@@ -13,7 +14,6 @@ LICENSE=	gnu-gpl-v3
 CONFLICTS=	ja-gawk-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
@@ -29,18 +29,17 @@ CPPFLAGS.OSF1+=		-D_OSF_SOURCE
 
 .include "../../mk/bsd.prefs.mk"
 
-PKG_OPTIONS_VAR=	PKG_OPTIONS.gawk
-PKG_SUPPORTED_OPTIONS=	portals
-
-.include "../../mk/bsd.options.mk"
-
-.if !empty(PKG_OPTIONS:Mportals)
-CONFIGURE_ARGS+=	--enable-portals
-.endif
+.include "options.mk"
 
 .if !empty(MACHINE_PLATFORM:MDarwin-*-x86_64)
 CFLAGS+=	-Dvm_region=vm_region_64
 .endif
+
+INSTALLATION_DIRS+=	${PKGGNUDIR}bin ${PKGGNUDIR}${PKGMANDIR}/man1
+
+post-install:
+	${LN} -s ${PREFIX}/bin/gawk ${DESTDIR}${PREFIX}/${PKGGNUDIR}bin/awk
+	${LN} -s ${PREFIX}/${PKGMANDIR}/man1/gawk.1 ${DESTDIR}${PREFIX}/${PKGGNUDIR}${PKGMANDIR}/man1/awk.1
 
 BUILDLINK_API_DEPENDS.gettext+=	gettext-lib>=0.10.36
 

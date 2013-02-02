@@ -1,16 +1,15 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.4 2012/07/19 18:30:18 jmmv Exp $
 #
 
-DISTNAME=	lutok-0.1
+DISTNAME=	lutok-0.2
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://lutok.googlecode.com/files/
 
 MAINTAINER=	jmmv@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/kyua/
 COMMENT=	Lightweight C++ API for Lua
-LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	modified-bsd
 
 GNU_CONFIGURE=		yes
 MAKE_JOBS_SAFE=		yes
@@ -35,7 +34,7 @@ PKGCONFIG_OVERRIDE=	lutok.pc.in
 .if $(PKG_OPTIONS:Mtests)
 CONFIGURE_ARGS+=	--with-atf
 PLIST_SUBST+=		TESTS=
-.  include "../../devel/atf/buildlink3.mk"
+.  include "../../devel/atf-libs/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-atf
 PLIST_SUBST+=		TESTS=@comment

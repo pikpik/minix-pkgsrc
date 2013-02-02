@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2010/01/30 16:28:00 heinz Exp $
+# $NetBSD: Makefile,v 1.9 2012/06/14 07:44:45 sbd Exp $
 #
 
 DISTNAME=	rarian-0.8.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc
 MASTER_SITES=	http://rarian.freedesktop.org/Releases/
 MASTER_SITES+=	${MASTER_SITE_GNOME:=sources/rarian/0.8/}
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rarian.freedesktop.org/
 COMMENT=	Documentation metadata library
 LICENSE=	gnu-lgpl-v2.1 AND gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	scrollkeeper-[0-9]*
 

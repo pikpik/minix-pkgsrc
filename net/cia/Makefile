@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2010/02/11 20:27:45 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2012/03/08 10:35:24 hans Exp $
 
 DISTNAME=	cia-20030922
 CATEGORIES=	net
@@ -7,8 +7,6 @@ EXTRACT_SUFX=	.tar.bz2
 
 OWNER=		tron@NetBSD.org
 COMMENT=	Simple IP accounting software
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DOC_DIR=	${PREFIX}/share/doc/cia
 EXAMPLES_DIR=	${PREFIX}/share/examples/cia

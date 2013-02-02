@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/10/16 07:23:48 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/03/22 09:23:07 markd Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-idle-0
@@ -10,8 +10,6 @@ HOMEPAGE=	http://www.python.org/idle/
 COMMENT=	IDLE - The Integrated DeveLopment Environment for Python
 
 DEPENDS+=	${PYPKGPREFIX}-Tk-[0-9]*:../../x11/py-Tk
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 

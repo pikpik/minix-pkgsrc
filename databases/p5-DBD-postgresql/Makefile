@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.59 2011/05/04 09:46:37 adam Exp $
+# $NetBSD: Makefile,v 1.64 2012/10/03 21:54:17 wiz Exp $
 
-DISTNAME=	DBD-Pg-2.18.1
+DISTNAME=	DBD-Pg-2.19.3
 PKGNAME=	p5-${DISTNAME:C/-Pg-/-postgresql-/}
 SVR4_PKGNAME=	p5dpo
 CATEGORIES=	databases perl5
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/DBD-Pg/
 COMMENT=	Perl DBI/DBD driver for PostgreSQL databases
 LICENSE=	${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	{p5-version-[0-9]*,perl>=5.10.0}:../../devel/p5-version
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.103 2012/02/20 15:07:46 jdc Exp $
+# $NetBSD: Makefile,v 1.109 2012/10/31 11:16:32 asau Exp $
 
 DISTNAME=	SDL-1.2.15
-PKGREVISION=	3
+PKGREVISION=	6
 CATEGORIES=	devel games
 MASTER_SITES=	http://www.libsdl.org/release/
 
@@ -9,8 +9,6 @@ MAINTAINER=	wiz@NetBSD.org
 HOMEPAGE=	http://www.libsdl.org/
 COMMENT=	Simple DirectMedia Layer, a cross-platform multimedia library
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -57,8 +55,9 @@ CONFIGURE_ARGS+=	--disable-x11-shared
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXrandr/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"
+.else
+CONFIGURE_ARGS+=	--without-x
 .endif
 .include "../../mk/pthread.buildlink3.mk"
 

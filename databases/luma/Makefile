@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.20 2011/11/01 06:00:50 sbd Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/02 21:25:21 asau Exp $
 
 DISTNAME=	luma-2.3
-PKGREVISION=	8
+PKGREVISION=	9
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=luma/}
 EXTRACT_SUFX=	.tar.bz2
@@ -10,7 +10,7 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://luma.sourceforge.net/
 COMMENT=	LDAP browser
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+AUTO_MKDIRS=		yes
 
 SUBST_CLASSES+=		luma
 SUBST_STAGE.luma=	pre-configure
@@ -27,6 +27,8 @@ do-build:
 do-install:
 	rm ${WRKSRC}/bin/luma.orig
 	cd ${WRKSRC} && ${PYTHONBIN} install.py --prefix=${DESTDIR}${PREFIX}
+	cd ${WRKSRC} && \
+	   ${INSTALL_MAN} man/man1/luma.1 ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 
 .include "../../databases/py-ldap/buildlink3.mk"
 .include "../../lang/python/application.mk"
@@ -36,5 +38,4 @@ do-install:
 # If it is, then remove this comment.  If it is not, then remove
 # this comment and the line below, and bump PKGREVISION.
 #BUILDLINK_DEPMETHOD.qt3-tools=	full
-.include "../../lang/python/application.mk"
 .include "../../mk/bsd.pkg.mk"

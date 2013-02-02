@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.44 2010/05/09 20:53:15 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2012/10/03 21:59:04 wiz Exp $
 #
 
 DISTNAME=	surfraw-2.2.8
+PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://surfraw.alioth.debian.org/dist/
 
@@ -11,8 +12,6 @@ COMMENT=	Shell Users' Revolutionary Front Rage Against the Web
 LICENSE=	public-domain
 
 CONFLICTS+=	surfaw-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}

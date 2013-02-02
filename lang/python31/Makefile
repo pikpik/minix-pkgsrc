@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2012/03/08 07:23:39 sbd Exp $
+# $NetBSD: Makefile,v 1.12 2012/09/15 10:05:20 obache Exp $
 
 .include "dist.mk"
 
 PKGNAME=	python31-${PY_DISTVERSION}
-PKGREVISION=	5
+PKGREVISION=	1
 CATEGORIES=	lang python
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -11,8 +11,6 @@ HOMEPAGE=	http://www.python.org/
 COMMENT=	Interpreted, interactive, object-oriented programming language
 
 LICENSE=	python-software-foundation
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	python-[0-9]*
 
@@ -89,9 +87,9 @@ PLIST.dl=	yes
 
 # builds additional modules if OpenSSL < 0.9.8
 PLIST_VARS+=		openssl097
-CHECK_BUILTIN.openssl:=	no
-.include "../../security/openssl/builtin.mk"
 CHECK_BUILTIN.openssl:=	yes
+.include "../../security/openssl/builtin.mk"
+CHECK_BUILTIN.openssl:=	no
 .if !empty(USE_BUILTIN.openssl:M[yY][eE][sS]) && \
     !empty(BUILTIN_PKG.openssl:Mopenssl-0.9.[67]*)
 PLIST.openssl097=	yes

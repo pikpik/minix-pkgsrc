@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2011/08/14 13:25:21 obache Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/08 12:19:07 asau Exp $
 
 DISTNAME=	courier-${COURIER_VERSION}
 PKGNAME=	${DISTNAME:S/-/-mta-/}
@@ -17,7 +17,6 @@ DEPENDS+=	courier-maildir>=${COURIER_VERSION}:../../mail/courier-maildir
 DEPENDS+=	couriertcpd>=${COURIER_VERSION}:../../net/couriertcpd
 DEPENDS+=	maildrop>=2.5.0:../../mail/maildrop
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_TOOLS+=		gmake perl:run
 USE_LANGUAGES=		c c++
 GCC_REQD+=		3.0	# need Standard C++ Library
@@ -50,7 +49,6 @@ CONFIGURE_ARGS+=	--with-transport=${COURIER_TRANSPORTS:M*:Q}
 # This argument is actually here just to make the "webmail" configure
 # script work.  The value is not actually used since in reality, we are
 # using the sqwebmail package to provide the Courier webmail component.
-#
 CONFIGURE_ARGS+=	--enable-mimetypes=/nonexistent
 
 INSTALL_DIRS=		webadmin courier
@@ -78,7 +76,7 @@ SUBST_STAGE.courier=	pre-configure
 
 SUBST_CLASSES+=		perms
 SUBST_FILES.perms=	courier/perms.sh.in
-SUBST_SED.perms+=	-e "s,@REAL_ROOT_USER@,"${REAL_ROOT_USER}",g"	\
+SUBST_SED.perms=	-e "s,@REAL_ROOT_USER@,"${REAL_ROOT_USER}",g"	\
 			-e "s,@ROOT_USER@,"${ROOT_USER}",g"		\
 			-e "s,@ROOT_GROUP@,"${ROOT_GROUP}",g"
 SUBST_STAGE.perms=	pre-configure

@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.48 2011/08/14 16:05:39 obache Exp $
+# $NetBSD: Makefile,v 1.50 2012/10/03 21:58:26 wiz Exp $
 #
 
 DISTNAME=		mod_perl-1.31
 PKGNAME=		ap13-perl-1.31
+PKGREVISION=		1
 CATEGORIES=		www perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Apache/} \
 			http://perl.apache.org/dist/
@@ -11,8 +12,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://perl.apache.org/
 COMMENT=		Module that embeds a Perl interpreter into Apache
 LICENSE=		apache-1.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=		ap-perl-[0-9]*
 CONFLICTS+=		ap2-perl-[0-9]*

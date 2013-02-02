@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.18 2010/08/21 16:34:56 seb Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 21:56:13 wiz Exp $
 
 DISTNAME=	GDTextUtil-0.86
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	6
+PKGREVISION=	7
 SVR4_PKGNAME=	p5gdt
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=GD/}
@@ -10,8 +10,6 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=GD/}
 MAINTAINER=	damon@brodiefamily.org
 HOMEPAGE=	http://theoryx5.uwinnipeg.ca/CPAN/data/GDTextUtil/Text.html
 COMMENT=	Perl 5 text utilities for use with the GD drawing package
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-GD>=1.30:../../graphics/p5-GD
 

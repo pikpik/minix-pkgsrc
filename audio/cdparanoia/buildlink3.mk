@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.9 2006/07/08 23:10:35 jlam Exp $
+# $NetBSD: buildlink3.mk,v 1.10 2009/03/20 19:23:52 joerg Exp $
 
 BUILDLINK_TREE+=	cdparanoia
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	cdparanoia
 CDPARANOIA_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.cdparanoia+=		cdparanoia>=3.0
-BUILDLINK_ABI_DEPENDS.cdparanoia?=	cdparanoia>=3.0.9.8nb5
+BUILDLINK_ABI_DEPENDS.cdparanoia+=	cdparanoia>=3.0.9.8nb5
 BUILDLINK_PKGSRCDIR.cdparanoia?=	../../audio/cdparanoia
 .endif # CDPARANOIA_BUILDLINK3_MK
 

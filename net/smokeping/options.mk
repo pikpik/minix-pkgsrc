@@ -1,8 +1,9 @@
-# $NetBSD: options.mk,v 1.1 2006/08/09 21:48:53 adrianp Exp $
+# $NetBSD: options.mk,v 1.2 2007/11/22 22:56:01 adrianp Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.smokeping
 
 PKG_SUPPORTED_OPTIONS=	smokeping-speedycgi inet6
+PKG_SUGGESTED_OPTIONS=	inet6
 
 ###
 ### Just here to ease migration to the options framework

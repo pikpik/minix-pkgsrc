@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2012/01/13 10:55:34 obache Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/08 23:02:29 adam Exp $
 
 DISTNAME=		rsibreak-0.11
+PKGREVISION=		8
 CATEGORIES=		time kde
 MASTER_SITES=		http://www.rsibreak.org/files/
 EXTRACT_SUFX=           .tar.bz2
@@ -9,8 +10,6 @@ MAINTAINER=		markd@NetBSD.org
 HOMEPAGE=		http://www.rsibreak.org/
 COMMENT=		RSI management tool
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		automoc4>=0.9.87:../../devel/automoc4
 
@@ -21,5 +20,6 @@ USE_LANGUAGES=		c c++
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../x11/kdelibs4/buildlink3.mk"
 .include "../../x11/libXScrnSaver/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 
 .include "../../mk/bsd.pkg.mk"

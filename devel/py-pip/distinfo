@@ -1,5 +1,5 @@
-$NetBSD$
+$NetBSD: distinfo,v 1.2 2012/06/03 13:18:58 obache Exp $
 
-SHA1 (pip-1.0.2.tar.gz) = bb137ac723389651e6cf56c0c95af0a6547443b6
-RMD160 (pip-1.0.2.tar.gz) = 2a398d35c63f62194528aa16ce989ce532f6b895
-Size (pip-1.0.2.tar.gz) = 105820 bytes
+SHA1 (pip-1.2.1.tar.gz) = 35db84983ef3f66a8a161d320e61d192afc233d9
+RMD160 (pip-1.2.1.tar.gz) = 521e61926ae16666e3c994e3e46e9d92a4b04634
+Size (pip-1.2.1.tar.gz) = 102413 bytes

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.46 2011/11/20 22:11:21 sbd Exp $
+# $NetBSD: Makefile,v 1.50 2012/10/06 14:10:41 asau Exp $
 #
 
 DISTNAME=	autotrace-0.31.1
-PKGREVISION=	21
+PKGREVISION=	24
 CATEGORIES=	graphics cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=autotrace/}
 
@@ -15,7 +15,6 @@ GNU_CONFIGURE=		YES
 USE_LIBTOOL=		YES
 
 PKGCONFIG_OVERRIDE=	autotrace.pc.in
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../graphics/ImageMagick/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"

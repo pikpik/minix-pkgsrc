@@ -1,0 +1,15 @@
+$NetBSD$
+
+Use valid C.
+
+--- src/stk/kernel/stk_debug.h~	2001-07-15 21:26:19.000000000 +0000
++++ src/stk/kernel/stk_debug.h
+@@ -14,7 +14,7 @@
+ 
+ // The information msg
+ #ifndef DEBUG
+-#define STK_INFORMATION (msg)
++#define STK_INFORMATION(msg)
+ #else
+ #define STK_INFORMATION(msg)        \
+      printf("Information %s %d\n",__FILE__,__LINE__); \

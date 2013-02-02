@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.9 2011/04/22 13:44:30 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/07/08 10:11:44 sbd Exp $
 #
 
 DISTNAME=		nget-0.27.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		news
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=nget/}
 
 MAINTAINER=		joel@carnat.net
 HOMEPAGE=		http://nget.sourceforge.net/
 COMMENT=		Command line nntp file grabber
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes
@@ -36,4 +34,5 @@ post-install:
 .include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/popt/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

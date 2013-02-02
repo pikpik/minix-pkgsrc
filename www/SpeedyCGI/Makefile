@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2010/08/21 16:36:30 seb Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/03 21:58:26 wiz Exp $
 
 DISTNAME=	CGI-SpeedyCGI-2.22
 PKGNAME=	SpeedyCGI-2.22
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	www
 MASTER_SITES=	http://daemoninc.com/SpeedyCGI/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://daemoninc.com/SpeedyCGI/
 COMMENT=	Speed up perl scripts by running them persistently
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAKE_JOBS_SAFE=		no
 

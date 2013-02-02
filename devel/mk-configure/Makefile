@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/10/21 23:30:31 cheusov Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/21 17:24:58 cheusov Exp $
 #
 
-DISTNAME=	mk-configure-0.22.0
+DISTNAME=	mk-configure-0.23.0
+PKGREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mk-configure/} \
 		http://mova.org/~cheusov/pub/mk-configure/
@@ -13,19 +14,20 @@ LICENSE=	modified-bsd
 
 DEPENDS+=	bmake-[0-9]*:../../devel/bmake
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=		# no languages
 
-DOC_FILES=		README NEWS ChangeLog TODO FAQ COPYRIGHT \
-			doc/presentation.pdf
+DOC_FILES=		doc/presentation.pdf
 
-MAKE_ENV+=		MANDIR=${PREFIX}/${PKGMANDIR} BMAKE=${PREFIX}/bin/bmake
+MAKE_ENV+=		MANDIR=${PREFIX}/${PKGMANDIR} \
+			SYSCONFDIR=${PKG_SYSCONFDIR} \
+			BMAKE=${PREFIX}/bin/bmake
 
 AUTO_MKDIRS=		yes
 
 PKGDOCDIR=		share/doc/mk-configure
 EGDIR=			share/examples/mk-configure
+
+#TEST_TARGET=		test
 
 post-install:
 .for i in ${DOC_FILES}

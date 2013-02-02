@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2008/07/13 23:18:19 bjs Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/23 10:24:20 wiz Exp $
 #
 
-DISTNAME=		libXxf86vm-1.1.0
+DISTNAME=		libXxf86vm-1.1.2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=		.tar.bz2
 MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		Library for the XFree86-VidMode X extension
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_LIBTOOL=		yes
@@ -26,9 +24,10 @@ CONFIGURE_ENV+=		LIB_MAN_SUFFIX=3
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
 
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
+
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/xf86vidmodeproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"
 

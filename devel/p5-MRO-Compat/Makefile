@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.7 2010/08/21 16:33:59 seb Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:55:14 wiz Exp $
 
 DISTNAME=	MRO-Compat-0.11
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/F/FL/FLORA/}
 
@@ -13,8 +13,6 @@ LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/MRO/Compat/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

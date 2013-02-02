@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/08/31 10:57:13 drochner Exp $
+# $NetBSD: Makefile,v 1.4 2012/04/08 19:08:54 wiz Exp $
 #
 
 VERS=		0.9.3
@@ -11,10 +11,6 @@ MAINTAINER=	helgoman@users.sourceforge.net
 HOMEPAGE=	http://rope.sourceforge.net/
 COMMENT=	Rope is a python refactoring library
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-PYTHON_VERSIONS_ACCEPTED= 27 26 25
 
 # XXX tests in contrib.codeassisttest fail
 do-test:

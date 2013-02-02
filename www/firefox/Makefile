@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.99 2012/03/11 12:34:26 marino Exp $
+# $NetBSD: Makefile,v 1.117 2013/01/20 11:17:58 ryoon Exp $
 
 .include "../../devel/xulrunner/dist.mk"
-PKGNAME=	firefox-${FIREFOX_VER}
+PKGNAME=	firefox-${MOZ_BRANCH}${MOZ_BRANCH_MINOR}
+PKGREVISION=	1
 CATEGORIES=	www
 
 MAINTAINER=	tnn@NetBSD.org
@@ -11,13 +12,16 @@ LICENSE=	mpl-1.1
 
 MOZILLA_DIR=	# empty
 
+# Note: when updating remember to conditionalise about-background.png in PLIST
 CONFIGURE_ARGS+=	--enable-application=browser
-CONFIGURE_ARGS+=	--with-libxul-sdk=${PREFIX}/lib/xulrunner-sdk
+CONFIGURE_ARGS+=	--with-libxul-sdk=${PREFIX}/lib/xulrunner
 CONFIGURE_ARGS+=	--with-system-libxul
 
 ALL_ENV+=		MOZILLA_PKG_NAME=firefox
 
 LDFLAGS.DragonFly=	-lplc4 -lnspr4
+LDFLAGS.FreeBSD=	-lplc4 -lnspr4
+LDFLAGS.Linux=		-lnspr4
 
 .include "../../devel/xulrunner/mozilla-common.mk"
 .include "options.mk"

@@ -1,5 +1,9 @@
 @comment $NetBSD$
-bin/${GNU_PROGRAM_PREFIX}units
+bin/gunits
+bin/gunits_cur
+gnu/bin/units
 info/units.info
-man/man1/${GNU_PROGRAM_PREFIX}units.1
-share/units.dat
+man/man1/gunits.1
+share/units/currency.units
+share/units/definitions.units
+share/units/locale.map

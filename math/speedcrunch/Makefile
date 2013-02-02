@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:40:54 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/08 23:02:03 adam Exp $
 #
 
 DISTNAME=	speedcrunch-0.10.1
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	math
 MASTER_SITES=	http://speedcrunch.googlecode.com/files/
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.speedcrunch.org/
 COMMENT=	Calculator
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/speedcrunch-0.10.1/src
 USE_LANGUAGES=	c c++

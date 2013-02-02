@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.2 2012/04/13 11:56:33 obache Exp $
 
 DISTNAME=	suse_freetype2-${SUSE_VERSION}
+PKGREVISION=	2
 CATEGORIES=	emulators
-RPMUPDPKGS+=	libfreetype6-2.4.7-3.1.${SUSE_ARCH}
+RPMUPDPKGS+=	libfreetype6-2.4.7-9.1.${SUSE_ARCH}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Linux compatibility package for freetype-2.x

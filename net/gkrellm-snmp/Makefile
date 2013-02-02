@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.34 2012/02/06 12:41:11 wiz Exp $
+# $NetBSD: Makefile,v 1.39 2012/10/08 23:02:15 adam Exp $
 #
 
 DISTNAME=	gkrellm_snmp-0.21
 PKGNAME=	${DISTNAME:S/_/-/}
-PKGREVISION=	16
+PKGREVISION=	20
 CATEGORIES=	net
 MASTER_SITES=	http://triq.net/gkrellm/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://triq.net/gkrellm_snmp.html
 COMMENT=	GKrellM plugin to display values collected from a SNMP agent
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 

@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.22 2012/02/06 12:41:38 wiz Exp $
+# $NetBSD: Makefile,v 1.28 2012/10/08 23:02:27 adam Exp $
 
 DISTNAME=	screentest-2.0
-PKGREVISION=	8
+PKGREVISION=	13
 CATEGORIES=	sysutils x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=screentest/}
 
@@ -14,8 +14,6 @@ USE_TOOLS+=	pkg-config msgfmt
 USE_PKGLOCALEDIR=	yes
 
 INSTALLATION_DIRS+=	share/doc/screentest
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-install:
 .for f in AUTHORS ChangeLog NEWS README

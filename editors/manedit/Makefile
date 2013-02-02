@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2009/04/28 21:01:14 zafer Exp $
+# $NetBSD: Makefile,v 1.33 2011/04/22 13:43:26 obache Exp $
 #
 
 DISTNAME=	manedit-0.8.1
@@ -10,8 +10,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://wolfpack.twu.net/ManEdit/
 COMMENT=	UNIX Manual (man, manpage) page editor, viewer, and browser for X11
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/manedit
 

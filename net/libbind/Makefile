@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2010/05/06 13:13:11 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/05/12 07:37:51 wiz Exp $
 #
 
 DISTNAME=	libbind-6.0
@@ -11,7 +11,7 @@ HOMEPAGE=	https://www.isc.org/software/libbind
 COMMENT=	ISC Standard Resolver Library
 LICENSE=	isc
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+CONFLICTS=		man-pages-[0-9]*
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

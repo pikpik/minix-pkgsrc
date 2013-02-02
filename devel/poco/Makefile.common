@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.4 2011/10/16 08:18:52 obache Exp $
+# $NetBSD: Makefile.common,v 1.8 2012/07/29 16:02:45 fhajny Exp $
 #
 # used by devel/poco/Makefile
 # used by databases/poco-data/Makefile
@@ -14,7 +14,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=poco/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pocoproject.org/
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 LICENSE=		boost-license
 
 PATCHDIR=	${.CURDIR}/../../devel/poco/patches
@@ -37,5 +36,24 @@ CONFIGURE_ARGS+=	--config=FreeBSD
 .if ${OPSYS} == "NetBSD"
 # NetBSD doesn't have fenv.h. We should add one.
 CONFIGURE_ARGS+=	--no-fpenvironment
-CONFIGURE_ARGS+=	--no-shaedmemory
+CONFIGURE_ARGS+=	--no-sharedmemory
 .endif
+
+.if ${OPSYS} == "SunOS"
+.include "../../mk/compiler.mk"
+. if ${PKGSRC_COMPILER} == "sunpro"
+CONFIGURE_ARGS+=	--config=SunOS-SunStudio
+. elif ${PKGSRC_COMPILER} == "gcc"
+CONFIGURE_ARGS+=	--config=SunOS-GCC
+# GCC 4.6 and newer forces c99 for C++, need _XOPEN_SOURCE=600
+.  if !empty(CC_VERSION:Mgcc-4.[6-9].*)
+MAKE_ENV+=		XOPEN_SOURCE=600
+.  else
+MAKE_ENV+=		XOPEN_SOURCE=500
+.  endif
+. else
+CONFIGURE_ARGS+=	--config=SunOS
+. endif
+.endif
+
+MAKE_FLAGS+=		POCO_BASE=${WRKSRC}

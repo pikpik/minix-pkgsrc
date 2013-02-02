@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.54 2012/02/06 12:40:38 wiz Exp $
+# $NetBSD: Makefile,v 1.58 2012/10/06 14:11:25 asau Exp $
 #
 
 DISTNAME=	xart19980415
 PKGNAME=	xart-19980415
-PKGREVISION=	16
+PKGREVISION=	18
 CATEGORIES=	graphics x11
 MASTER_SITES=	http://linux01.gwdg.de/~rhohen/linux/
 EXTRACT_SUFX=	.tgz
@@ -15,19 +15,17 @@ COMMENT=	Paint program (enhanced xpaint)
 # see the bottom of the included "Help.txt" file
 #LICENSE=	isc
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 WRKSRC=		${WRKDIR}/19980415
 USE_IMAKE=	YES
 
 post-extract:
-	chmod -R u+rwX,go+rX ${WRKSRC}
+	${FIND} ${WRKSRC} -type d -exec ${CHMOD} 755 {} \;
+	${FIND} ${WRKSRC} -type f -exec ${CHMOD} 644 {} \;
 
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

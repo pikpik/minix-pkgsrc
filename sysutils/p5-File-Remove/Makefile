@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2011/08/14 14:52:49 obache Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 21:57:40 wiz Exp $
 
-DISTNAME=	File-Remove-1.50
+DISTNAME=	File-Remove-1.52
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	perl5 sysutils
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=File/}
 
@@ -11,7 +12,6 @@ COMMENT=	Remove files and directories
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/File/Remove/.packlist
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2010/08/21 16:36:21 seb Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/03 21:58:17 wiz Exp $
 
 DISTNAME=		Data-ICal-0.16
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		4
 CATEGORIES=		time perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Data/}
 
@@ -10,8 +10,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Data-ICal
 COMMENT=		Generates iCalendar (RFC 2445) calendar files
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		p5-Class-Accessor>=0.30:../../devel/p5-Class-Accessor
 DEPENDS+=		p5-Class-ReturnValue>=0.53:../../devel/p5-Class-ReturnValue
@@ -25,7 +23,7 @@ BUILD_DEPENDS+=		p5-Test-Warn-[0-9]*:../../devel/p5-Test-Warn
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
 
 PERL5_PACKLIST=		auto/Data/ICal/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

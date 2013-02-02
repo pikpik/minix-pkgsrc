@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2009/03/08 05:58:07 minskim Exp $
 
 DISTNAME=	topgit_0.7.orig
 PKGNAME=	${DISTNAME:S/_/-/:S/.orig//}
@@ -23,8 +23,6 @@ SUBST_STAGE.sedsyntax=   post-patch
 .endif
 
 DEPENDS+=	scmgit-base-[0-9]*:../../devel/scmgit-base
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_LANGUAGES=	# none

@@ -1,6 +1,5 @@
-$NetBSD: distinfo,v 1.55 2012/03/02 14:01:17 wiz Exp $
+$NetBSD: distinfo,v 1.66 2012/12/16 15:38:57 wiz Exp $
 
-SHA1 (mercurial-2.1.1.tar.gz) = d6cc4b649b6705113732e62756788542897ba008
-RMD160 (mercurial-2.1.1.tar.gz) = e17a995a069d1a7a46537a49189520df953acb6f
-Size (mercurial-2.1.1.tar.gz) = 3313261 bytes
-SHA1 (patch-setup.py) = cb22596142587a60c61fa7a9a4c60a7a388d0e54
+SHA1 (mercurial-2.4.2.tar.gz) = ade387c4c907abff235e887a9b4678450363c756
+RMD160 (mercurial-2.4.2.tar.gz) = 6534d7b2716e8171a56c294b550e6614987db26b
+Size (mercurial-2.4.2.tar.gz) = 3613392 bytes

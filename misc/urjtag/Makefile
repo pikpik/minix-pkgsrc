@@ -1,21 +1,19 @@
-# $NetBSD: Makefile,v 1.3 2010/08/03 15:22:27 drochner Exp $
+# $NetBSD: Makefile,v 1.7 2012/04/22 01:17:58 mef Exp $
 #
 
 DISTNAME=	urjtag-0.10
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	misc
-MASTER_SITES=	http://downloads.sourceforge.net/project/urjtag/urjtag/0.10/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=urjtag/urjtag/0.10/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://downloads.sourceforge.net/project/urjtag/urjtag/0.10/
+HOMEPAGE=	http://www.urjtag.org/
 COMMENT=	JTAG tool
-#LICENSE=	# TODO: (see mk/license.mk)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=	gnu-gpl-v2
 
 GNU_CONFIGURE=		yes
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		gmake
+USE_TOOLS+=		gmake msgfmt
 REPLACE_SH=		src/bsdl2jtag
 
 post-extract:
@@ -23,4 +21,6 @@ post-extract:
 
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/libusb/buildlink3.mk"
+.include "../../devel/libftdi/buildlink3.mk"
+.include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

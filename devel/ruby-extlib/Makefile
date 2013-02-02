@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/09/11 06:53:54 taca Exp $
+# $NetBSD: Makefile,v 1.2 2011/08/12 16:11:33 taca Exp $
 
-DISTNAME=	extlib-0.9.15
-PKGREVISION=	1
+DISTNAME=	extlib-0.9.16
 CATEGORIES=	devel
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

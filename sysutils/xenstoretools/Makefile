@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/10/03 16:55:34 sborrill Exp $
+# $NetBSD: Makefile,v 1.2 2012/02/24 15:26:28 drochner Exp $
 #
 
 # VERSION is set in xentool41/version.mk
@@ -20,8 +20,6 @@ BUILD_DIRS=		xenstore
 BUILD_TARGET=		clients
 INSTALL_TARGET=		installclients
 INSTALL_DIRS=		xenstore
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PKG_SYSCONFSUBDIR=	xen
 WRKSRC=			${WRKDIR}/xen-${VERSION}/tools

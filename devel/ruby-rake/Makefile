@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/17 13:51:36 taca Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/31 11:19:42 asau Exp $
 
-DISTNAME=	rake-0.9.2.2
+DISTNAME=	rake-10.0.3
 CATEGORIES=	devel
 
 MAINTAINER=	taca@NetBSD.org
@@ -8,13 +8,10 @@ HOMEPAGE=	http://rubyforge.org/projects/rake/
 COMMENT=	Ruby Make
 LICENSE=	mit
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 CONFLICTS+=	 rake-[0-9]*
 
 USE_TOOLS+=	gzip
-FIX_PERM=	doc/release_notes/rake-0.7.3.rdoc \
-		lib/rake/ruby182_test_unit_fix.rb
+FIX_PERM=	doc/release_notes/rake-0.7.3.rdoc
 
 FILES_SUBST+=	GEM_NAME=${GEM_NAME} RAKE_HACK=${RAKE_HACK} RAKEBIN=${RAKEBIN}
 PLIST_SUBST+=	RAKE_HACK=${RAKE_HACK} RAKEBIN=${RAKEBIN}
@@ -38,7 +35,7 @@ RAKE_SPEC=	${GEM_HOME}/specifications/${GEM_NAME}.gemspec
 
 # rake.1.gz has one extra byte at EOF.
 pre-configure:
-	cd ${WRKSRC}/doc && (gzip -d rake.1.gz 2>/dev/null || ${TRUE})
+	cd ${WRKSRC}/doc && (gzip -dc rake.1.gz >rake.1 2>/dev/null || ${TRUE})
 	cd ${WRKSRC}; ${CHMOD} -x ${FIX_PERM}
 	cd ${WRKSRC}/bin && ${MV} rake ${RAKEBIN}
 

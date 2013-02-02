@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.21 2008/01/04 07:12:30 obache Exp $
+# $NetBSD: Makefile,v 1.22 2010/02/11 19:20:55 joerg Exp $
 #
 
 DISTNAME=		iselect-1.2.0
@@ -10,8 +10,6 @@ MASTER_SITES=		ftp://ftp.ossp.org/pkg/tool/iselect/ \
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ossp.org/pkg/tool/iselect/
 COMMENT=		Curses based Interactive Selection Tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 

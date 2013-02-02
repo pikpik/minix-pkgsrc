@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.21 2011/01/13 13:37:36 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/03 12:55:17 asau Exp $
 #
 
 DISTNAME=	raines-0.43.3
 PKGNAME=	${DISTNAME:S/raines/raine/}
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	emulators
 MASTER_SITES=	http://rainemu.swishparty.co.uk/html/archive/
 EXTRACT_SUFX=	.tar.bz2
@@ -13,8 +13,6 @@ HOMEPAGE=	http://rainemu.swishparty.co.uk/
 COMMENT=	680x0 Arcade Emulator
 
 BUILD_DEPENDS+=	nasm-[0-9]*:../../devel/nasm
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 USE_TOOLS+=	gmake perl:run pkg-config

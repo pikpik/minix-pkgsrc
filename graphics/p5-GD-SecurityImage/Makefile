@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 12:59:49 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:56:12 wiz Exp $
 #
 
 DISTNAME=	GD-SecurityImage-1.71
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 SVR4_PKGNAME=	p5gsi
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=GD/}
@@ -14,8 +15,6 @@ LICENSE=	gnu-gpl-v2 # OR artistic
 
 DEPENDS+=	p5-GD>0:../../graphics/p5-GD
 DEPENDS+=	p5-PerlMagick>=6.0.4:../../graphics/p5-PerlMagick
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=	auto/GD/SecurityImage/.packlist
 

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.19 2010/08/21 16:35:46 seb Exp $
+# $NetBSD: Makefile,v 1.21 2012/09/11 23:25:09 asau Exp $
 
 DISTNAME=	psh-1.8
 PKGNAME=	perlsh-1.8
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	shells perl5
 MASTER_SITES=	http://www.focusresearch.com/gregor/download/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.focusresearch.com/gregor/sw/psh/
 COMMENT=	The Perl Shell
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Term-ReadKey>=2.21:../../devel/p5-Term-ReadKey
 DEPENDS+=	p5-Term-ReadLine>=1.12:../../devel/p5-Term-ReadLine

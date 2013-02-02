@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.48 2012/03/20 11:53:23 markd Exp $
+# $NetBSD: Makefile,v 1.60 2012/12/16 01:52:26 obache Exp $
 #
 
 DISTNAME=	tellico-2.3.5
-PKGREVISION=	1
+PKGREVISION=	12
 CATEGORIES=	misc
 MASTER_SITES=	http://tellico-project.org/files/
 EXTRACT_SUFX=	.tar.bz2
@@ -13,8 +13,6 @@ COMMENT=	Collection manager for KDE
 LICENSE=	gnu-gpl-v2
 
 BUILD_DEPENDS+=	automoc4-[0-9]*:../../devel/automoc4
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PERL+=		src/core/tellico-1-3-update.pl
 REPLACE_PYTHON+=	src/fetch/scripts/*.py

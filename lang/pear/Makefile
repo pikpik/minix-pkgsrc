@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2011/12/17 15:26:49 taca Exp $
+# $NetBSD: Makefile,v 1.22 2012/04/29 16:34:49 taca Exp $
 #
 
 DISTNAME=	PEAR-1.9.4
-PKGREVISION=	2
+PKGREVISION=	3
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME:S/PEAR/pear/}
 CATEGORIES=	lang
 MASTER_SITES=	http://download.pear.php.net/package/
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://pear.php.net/
 COMMENT=	PEAR Base System for PHP
 LICENSE=	2-clause-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 EXTRACT_ONLY=	# none
@@ -34,7 +32,7 @@ PEAR_SRCS=		${DISTNAME}${EXTRACT_SUFX}
 DISTFILES+=		${PEAR_SRCS}
 EXTRACT_ONLY+=		${PEAR_SRCS}
 
-ARCHIVE_SRCS=		Archive_Tar-1.3.9${EXTRACT_SUFX}
+ARCHIVE_SRCS=		Archive_Tar-1.3.10${EXTRACT_SUFX}
 ARCHIVE_WRKSRC=		${WRKDIR}/${ARCHIVE_SRCS:S/${EXTRACT_SUFX}//}
 DISTFILES+=		${ARCHIVE_SRCS}
 EXTRACT_ONLY+=		${ARCHIVE_SRCS}

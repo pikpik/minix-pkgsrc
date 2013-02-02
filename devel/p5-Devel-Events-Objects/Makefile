@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.4 2010/08/21 16:33:34 seb Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:54:53 wiz Exp $
 
 DISTNAME=	Devel-Events-Objects-0.05
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Devel/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Devel-Events-Objects/
 COMMENT=	Perl 5 module providing object tracking support for Devel::Events
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=	p5-Test-use-ok-[0-9]*:../../devel/p5-Test-use-ok
 DEPENDS+=	p5-Devel-Events>=0.03:../../devel/p5-Devel-Events

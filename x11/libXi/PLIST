@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.4 2010/09/10 18:52:06 joerg Exp $
+@comment $NetBSD$
 include/X11/extensions/XInput.h
 include/X11/extensions/XInput2.h
 lib/libXi.la
@@ -44,6 +44,7 @@ man/man3/XIGrabDevice.3
 man/man3/XIGrabEnter.3
 man/man3/XIGrabFocusIn.3
 man/man3/XIGrabKeycode.3
+man/man3/XIGrabTouchBegin.3
 man/man3/XIListProperties.3
 man/man3/XIQueryDevice.3
 man/man3/XIQueryPointer.3
@@ -57,6 +58,7 @@ man/man3/XIUngrabDevice.3
 man/man3/XIUngrabEnter.3
 man/man3/XIUngrabFocusIn.3
 man/man3/XIUngrabKeycode.3
+man/man3/XIUngrabTouchBegin.3
 man/man3/XIWarpPointer.3
 man/man3/XListDeviceProperties.3
 man/man3/XListInputDevices.3
@@ -72,7 +74,6 @@ man/man3/XSetDeviceValuators.3
 man/man3/XUngrabDevice.3
 man/man3/XUngrabDeviceButton.3
 man/man3/XUngrabDeviceKey.3
-share/doc/libXi/doc/porting.xml
-share/doc/libXi/specs/encoding.xml
-share/doc/libXi/specs/inputlib.xml
-share/doc/libXi/specs/library.xml
+share/doc/libXi/encoding.xml
+share/doc/libXi/inputlib.xml
+share/doc/libXi/library.xml

@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.6 2010/01/08 12:47:44 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2012/08/21 23:49:21 marino Exp $
 
 DISTNAME=		vtcl-1.6.0
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=vtcl/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://vtcl.sourceforge.net/
 COMMENT=		Visual Tcl/Tk application development environment
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax wish:run
 HAS_CONFIGURE=		yes

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2011/12/03 00:02:14 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2012/01/24 09:10:59 sbd Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-gdbm-0
@@ -9,7 +9,6 @@ MAINTAINER=	dolecek@ics.muni.cz
 HOMEPAGE=	http://www.python.org/doc/lib/module-gdbm.html
 COMMENT=	Python interface to gdbm - GNU database manager
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 
 EVAL_PREFIX+=	GDBMDIR=gdbm

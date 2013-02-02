@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/X11/fonts/TTF/Everson Mono Bold Oblique.ttf
+lib/X11/fonts/TTF/Everson Mono Bold.ttf
+lib/X11/fonts/TTF/Everson Mono Oblique.ttf
+lib/X11/fonts/TTF/Everson Mono.ttf
+share/doc/evermono-ttf/emono-licence.txt

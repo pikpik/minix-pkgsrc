@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.37 2010/07/25 13:13:25 obache Exp $
+# $NetBSD: Makefile,v 1.40 2012/10/06 11:54:32 asau Exp $
 
 DISTNAME=	bzflag-2.0.16
-PKGREVISION=	1
+PKGREVISION=	3
 CATEGORIES=	games x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bzflag/}
 
 MAINTAINER=	blymn@NetBSD.org
 HOMEPAGE=	http://www.bzflag.org/
 COMMENT=	OpenGL tank game
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake perl

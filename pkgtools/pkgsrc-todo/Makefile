@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/08/30 10:40:34 wiz Exp $
+# $NetBSD: Makefile,v 1.3 2012/09/11 23:19:39 asau Exp $
 #
 
 DISTNAME=	pkgsrc-todo-1.1
+PKGREVISION=	1
 CATEGORIES=	pkgtools
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -11,8 +12,6 @@ HOMEPAGE=	http://www.NetBSD.org/docs/pkgsrc/
 COMMENT=	Tools for maintaing pkgsrc/doc/TODO
 
 DEPENDS+=	p5-pkgsrc-Dewey-[0-9]*:../../pkgtools/p5-pkgsrc-Dewey
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 NO_BUILD=	yes

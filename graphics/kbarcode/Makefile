@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.35 2012/02/09 21:44:28 sbd Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/06 14:11:01 asau Exp $
 
 DISTNAME=		kbarcode-2.0.7
-PKGREVISION=		12
+PKGREVISION=		17
 CATEGORIES=		graphics kde
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=kbarcode/}
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.kbarcode.net/
 COMMENT=		KDE barcode and label printing application
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake gs:run perl
 USE_LANGUAGES=		c c++
@@ -28,4 +26,5 @@ BUILDLINK_API_DEPENDS.kdelibs+=	kdelibs>=3.3.0
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

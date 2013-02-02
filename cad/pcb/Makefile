@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.59 2012/02/06 12:39:34 wiz Exp $
+# $NetBSD: Makefile,v 1.66 2012/10/16 17:47:20 wiz Exp $
 #
 
 DISTNAME=	pcb-20110918
-PKGREVISION=	2
+PKGREVISION=	8
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=pcb/}
 
@@ -12,7 +12,6 @@ COMMENT=	Printed circuit board layout system
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	gettext-tools>=0.14.6:../../devel/gettext-tools
 

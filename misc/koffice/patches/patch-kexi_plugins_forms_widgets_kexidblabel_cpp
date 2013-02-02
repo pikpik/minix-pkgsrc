@@ -1,0 +1,12 @@
+$NetBSD$
+
+Upstream patch from: https://bugs.kde.org/show_bug.cgi?id=149906
+
+--- kexi/plugins/forms/widgets/kexidblabel.cpp.orig
++++ kexi/plugins/forms/widgets/kexidblabel.cpp
+@@ -648,3 +648,5 @@
+ #define SuperClassName QLabel
+ #include "kexiframeutils_p.cpp"
+ #include "kexidblabel.moc"
++#undef ClassName
++#undef SuperClassName

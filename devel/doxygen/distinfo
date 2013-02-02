@@ -1,15 +1,11 @@
-$NetBSD: distinfo,v 1.43 2011/08/20 15:29:01 joerg Exp $
+$NetBSD: distinfo,v 1.47 2013/01/06 01:00:58 wiz Exp $
 
-SHA1 (doxygen-1.6.3.src.tar.gz) = 36e4f479a136a439307456e539a4bd6c2fefa8b7
-RMD160 (doxygen-1.6.3.src.tar.gz) = 3c205185316675a78dba390ef83942d5abda0815
-Size (doxygen-1.6.3.src.tar.gz) = 3986440 bytes
+SHA1 (doxygen-1.8.3.1.src.tar.gz) = 289fc809f44b8025d45279deefbaee7680efd88f
+RMD160 (doxygen-1.8.3.1.src.tar.gz) = a3221d71eb190820e6352e96d8e94e5869f071d5
+Size (doxygen-1.8.3.1.src.tar.gz) = 6196887 bytes
 SHA1 (patch-aa) = 74aa6e068c150d2e40c5a73723afd24d510f4538
-SHA1 (patch-ab) = 951ad787ec32cf5dd3915d91df1fb45bc199ec79
-SHA1 (patch-ac) = 872608c4f2ca74179ce807616646148a2a6ddcd5
+SHA1 (patch-ab) = 1bd196c38786bb6b0b1817bb9575924ca234aee3
+SHA1 (patch-ac) = 87c68a2ce598c10d90d775764f4c05739eb51435
 SHA1 (patch-af) = 0942cc0fdcb49e74ce018d7e790dba36b21b4d08
-SHA1 (patch-ag) = a7cf7cd0b510e9a8293e5f8a43517cfc80a60d15
-SHA1 (patch-ah) = 8ec4502a6324cbdb4821887bcfe808f086aaa78b
-SHA1 (patch-ai) = 5c2d68e4755fa2e5cedfc9fdbf09d528e565bf7f
-SHA1 (patch-aj) = 13e3e441fb47e02e83097145c8e7dfa76a4eb6f9
-SHA1 (patch-ak) = 2090eb6cd3146374993f352cbf82744db0c1bb60
-SHA1 (patch-qtools-qvaluestack.h) = decb0cbb297f09010d1c03eb6caf235520e5dd5f
+SHA1 (patch-ah) = db6f117bf1faa3a1ed0b2ca9af81fc4f8d0913f9
+SHA1 (patch-aj) = c022f1fb0b9ad631c62076d29bc47718697a9a8a

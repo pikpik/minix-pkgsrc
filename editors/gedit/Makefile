@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.113 2012/02/06 12:40:00 wiz Exp $
+# $NetBSD: Makefile,v 1.120 2012/10/03 21:55:57 wiz Exp $
 #
 
 DISTNAME=		gedit-2.30.4
-PKGREVISION=		6
+PKGREVISION=		12
 CATEGORIES=		editors gnome
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/gedit/2.30/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gnome.org/projects/gedit/
 COMMENT=		Lightweight GNOME2 text editor
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	YES
 USE_TOOLS+=		gmake intltool msgfmt perl pkg-config

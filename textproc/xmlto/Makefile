@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2011/04/22 13:44:52 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/06/14 07:44:46 sbd Exp $
 
 DISTNAME=	xmlto-0.0.25
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	https://fedorahosted.org/releases/x/m/xmlto/
 EXTRACT_SUFX=	.tar.bz2
@@ -10,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	https://fedorahosted.org/xmlto/
 COMMENT=	Tool to help transform XML documents into other formats
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		getopt-[0-9]*:../../misc/getopt
 DEPENDS+=		docbook-xsl>=1.67.0nb1:../../textproc/docbook-xsl

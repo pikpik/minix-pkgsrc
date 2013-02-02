@@ -1,7 +1,9 @@
-# $NetBSD: options.mk,v 1.6 2008/08/01 06:36:26 dsainty Exp $
+# $NetBSD: options.mk,v 1.9 2012/10/12 07:36:11 adam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.curl
-PKG_SUPPORTED_OPTIONS=	inet6 libssh2 gssapi ldap rtmp
+PKG_SUPPORTED_OPTIONS=	inet6 libssh2 gssapi ldap rtmp libidn
+PKG_SUGGESTED_OPTIONS=	inet6 libidn
+
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == NetBSD
 # Kerberos is built in - no additional dependency
@@ -17,7 +19,7 @@ CONFIGURE_ARGS+=	--disable-ipv6
 .endif
 
 .if !empty(PKG_OPTIONS:Mlibssh2)
-CONFIGURE_ARGS+= 	--with-libssh2=${BUILDLINK_PREFIX.libssh2:Q}
+CONFIGURE_ARGS+=	--with-libssh2=${BUILDLINK_PREFIX.libssh2}
 .  include "../../security/libssh2/buildlink3.mk"
 .else
 CONFIGURE_ARGS+=	--without-libssh2
@@ -44,4 +46,11 @@ CONFIGURE_ARGS+=	--disable-ldap
 CONFIGURE_ARGS+=	--with-librtmp
 .else
 CONFIGURE_ARGS+=	--without-librtmp
+.endif
+
+.if !empty(PKG_OPTIONS:Mlibidn)
+.include "../../devel/libidn/buildlink3.mk"
+CONFIGURE_ARGS+=	--with-libidn
+.else
+CONFIGURE_ARGS+=	--without-libidn
 .endif

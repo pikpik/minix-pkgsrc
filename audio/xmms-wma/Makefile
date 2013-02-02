@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2011/04/22 13:43:02 obache Exp $
+# $NetBSD: Makefile,v 1.11 2012/06/04 09:29:56 wiz Exp $
 #
 
 DISTNAME=	xmms-wma-1.0.5
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_BACKUP}
 EXTRACT_SUFX=	.tar.bz2
@@ -11,7 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://mcmcc.bat.ru/xmms-wma/
 COMMENT=	WMA input plugin for XMMS
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 ONLY_FOR_PLATFORM=  *-*-i386 # Doesn't seem to be very portable...
 
 USE_TOOLS+=	gmake

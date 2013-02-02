@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2011/11/29 18:16:56 darcy Exp $
+# $NetBSD: Makefile,v 1.10 2012/04/08 19:09:17 wiz Exp $
 #
 
 DISTNAME=		web.py-0.36
@@ -12,11 +12,7 @@ HOMEPAGE=		http://webpy.org/
 COMMENT=		Simple, public domain web publishing system
 LICENSE=		public-domain
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=		#none
-
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 
 .include "../../lang/python/distutils.mk"
 .include "../../mk/bsd.pkg.mk"

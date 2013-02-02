@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.23 2010/12/17 22:49:27 rhaen Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/03 21:55:42 wiz Exp $
 
 DISTNAME=		Test-Inline-2.212
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		1
+PKGREVISION=		3
 SVR4_PKGNAME=		p5tin
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Test/}
@@ -11,8 +11,6 @@ MAINTAINER=		rhaen@NetBSD.org
 HOMEPAGE=		http://search.cpan.org/dist/Test-Inline/
 COMMENT=		Inlining your tests next to the code being tested
 LICENSE=		${PERL5_LICENSE}
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_DEPENDS+=		p5-Test-ClassAPI>=1.02:../../devel/p5-Test-ClassAPI
 BUILD_DEPENDS+=		p5-Test-Script>=1.02:../../devel/p5-Test-Script
@@ -29,7 +27,7 @@ DEPENDS+=		p5-Params-Util>=0.21:../../devel/p5-Params-Util
 DEPENDS+=		p5-Pod-Tests>=0.18:../../textproc/p5-Pod-Tests
 
 PERL5_PACKLIST=		auto/Test/Inline/.packlist
-PERL5_MODULE_TYPE=	Module::Install
+PERL5_MODULE_TYPE=	Module::Install::Bundled
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

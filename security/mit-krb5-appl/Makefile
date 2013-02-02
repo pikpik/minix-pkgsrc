@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.4 2011/12/23 16:44:24 tez Exp $
+# $NetBSD: Makefile,v 1.6 2012/07/16 19:13:23 adam Exp $
 
 DISTNAME=	krb5-appl-1.0.3
 PKGNAME=	mit-${DISTNAME}
 CATEGORIES=	security
-MASTER_SITES=	http://web.mit.edu/kerberos/dist/krb5-appl/1.0/
+MASTER_SITES=	http://web.mit.edu/kerberos/dist/krb5-appl/${PKGVERSION_NOREV:R}/
 EXTRACT_SUFX=	.tar
 DISTFILES=	${DISTNAME}-signed${EXTRACT_SUFX}
 
@@ -14,7 +14,6 @@ MAINTAINER=	tez@NetBSD.org
 HOMEPAGE=	http://web.mit.edu/kerberos/
 COMMENT=	MIT Kerberos 5 authentication system applications
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"

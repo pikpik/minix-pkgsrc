@@ -1,13 +1,11 @@
-# $NetBSD: Makefile,v 1.24 2012/02/06 12:42:29 wiz Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.30 2012/10/08 23:01:00 adam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=	1.6.0
 
 DISTNAME=	xfce4-notes-plugin-${XFCE4_VERSION}
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	sysutils
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-notes-plugin/
 COMMENT=	Xfce notes plugin

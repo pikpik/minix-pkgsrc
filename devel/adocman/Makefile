@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2010/08/21 16:33:09 seb Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:54:27 wiz Exp $
 #
 
 DISTNAME=	adocman-0.10
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=sitedocs/}
 
@@ -12,8 +12,6 @@ COMMENT=	DocManager operation automation tool
 
 DEPENDS+=	p5-Term-ReadKey>=2.21:../../devel/p5-Term-ReadKey
 DEPENDS+=	p5-Crypt-SSLeay>=0.47:../../security/p5-Crypt-SSLeay
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=		yes
 PERL5_CONFIGURE=	no

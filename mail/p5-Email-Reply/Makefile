@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.6 2010/08/21 16:35:03 seb Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/03 21:56:28 wiz Exp $
 #
 
 DISTNAME=	Email-Reply-1.202
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	mail
 MASTER_SITES=	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/CPAN/authors/id/R/RJ/RJBS/
 COMMENT=	Reply to a Message
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Email-Abstract>=2.01:../../mail/p5-Email-Abstract
 DEPENDS+=	p5-Email-Address>=1.80:../../mail/p5-Email-Address

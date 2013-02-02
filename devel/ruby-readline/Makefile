@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.30 2011/11/08 16:34:47 taca Exp $
+# $NetBSD: Makefile,v 1.33 2012/05/13 08:37:03 sbd Exp $
 #
 
 DISTNAME=		${RUBY_DISTNAME}
 PKGNAME=		${RUBY_PKGPREFIX}-${RUBY_EXTNAME}-${RUBY_VERSION_FULL}
+PKGREVISION=		2
 RUBY_EXTNAME=		readline
 CATEGORIES=		devel ruby
 MASTER_SITES=		${MASTER_SITE_RUBY}
@@ -10,8 +11,6 @@ MASTER_SITES=		${MASTER_SITE_RUBY}
 MAINTAINER=		taca@NetBSD.org
 HOMEPAGE=		${RUBY_HOMEPAGE}
 COMMENT=		Ruby extension to readline library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_RUBY_EXTCONF=	yes
 DISTINFO_FILE=		${RUBY_DISTINFO_FILE}
@@ -27,7 +26,7 @@ post-install:
 .endfor
 
 .include "options.mk"
-.include "../../devel/readline/buildlink3.mk"
 .include "../../lang/ruby/modules.mk"
 .include "../../lang/ruby/Makefile.common"
+.include "../../devel/readline/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

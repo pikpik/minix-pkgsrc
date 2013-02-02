@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2012/02/19 13:03:11 gls Exp $
+# $NetBSD: Makefile,v 1.9 2012/04/12 19:44:21 gls Exp $
 #
 
-DISTNAME=	lshell-0.9.14
-PKGREVISION=	1
+DISTNAME=	lshell-0.9.15.1
 CATEGORIES=	shells python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lshell/}
 
@@ -13,8 +12,6 @@ LICENSE=	gnu-gpl-v3
 
 PKG_GROUPS=	lshellg
 PKG_SHELL=	bin/lshell
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		# none
 

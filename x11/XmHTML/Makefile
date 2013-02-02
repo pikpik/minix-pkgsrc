@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.50 2011/01/29 14:50:24 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2013/01/19 23:11:38 riastradh Exp $
 #
 
 DISTNAME=	XmHTML-1.1.7
-PKGREVISION=	11
+PKGREVISION=	13
 CATEGORIES=	x11
 MASTER_SITES=	# http://www.xs4all.nl/~ripley/XmHTML/dist/
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 #HOMEPAGE=	http://www.xs4all.nl/~ripley/XmHTML/
 COMMENT=	Motif Widget capable of displaying HTML 3.2 conforming text
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=	YES
 USE_TOOLS+=	gmake
@@ -26,7 +24,13 @@ do-install:
 
 .include "../../mk/jpeg.buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
+.include "../../x11/libICE/buildlink3.mk"
+.include "../../x11/libSM/buildlink3.mk"
+.include "../../x11/libX11/buildlink3.mk"
+.include "../../x11/libXext/buildlink3.mk"
+.include "../../x11/libXmu/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
+.include "../../x11/libXt/buildlink3.mk"
 .include "../../mk/motif.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

@@ -1,0 +1,14 @@
+$NetBSD$
+
+Use standard headers. (Required on Solaris for time_t.)
+
+--- os-support.c~	2009-09-17 06:44:27.000000000 +0000
++++ os-support.c
+@@ -28,6 +28,7 @@
+ #include <errno.h>
+ #include <string.h>
+ #include <ctype.h>
++#include <time.h>
+ 
+ #include "main.h"
+ 

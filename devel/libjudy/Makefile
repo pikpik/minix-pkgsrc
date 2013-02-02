@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2011/05/07 09:59:16 cheusov Exp $
+# $NetBSD: Makefile,v 1.6 2011/10/09 10:02:48 cheusov Exp $
 
 DISTNAME=	Judy-1.0.5
 PKGNAME=	${DISTNAME:S/Judy/libjudy/}
@@ -22,7 +22,6 @@ TEST_TARGET=		check
 
 DOCDIR=			${PREFIX}/share/doc/${PKGBASE}
 AUTO_MKDIRS=		yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 post-install:
 .for i in AUTHORS ChangeLog COPYING README

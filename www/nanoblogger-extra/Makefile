@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/11/05 15:53:45 ryoon Exp $
 #
 
 DISTNAME=	nanoblogger-extra-3.4.2
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nanoblogger.sourceforge.net/
 COMMENT=	Collection of various contributions and add-ons for nanoblogger
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	nanoblogger-3.4.2:../../www/nanoblogger
 

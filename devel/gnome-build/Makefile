@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.27 2012/02/06 12:39:51 wiz Exp $
+# $NetBSD: Makefile,v 1.35 2012/10/31 11:17:01 asau Exp $
 #
 
 DISTNAME=	gnome-build-2.24.1
-PKGREVISION=	14
+PKGREVISION=	21
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/gnome-build/2.24/}
 EXTRACT_SUFX=	.tar.bz2
@@ -14,8 +14,6 @@ COMMENT=	GNOME build tools
 CONFLICTS+=	anjuta>=2.28
 
 DEPENDS+=	p5-gettext-[0-9]*:../../devel/p5-gettext
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

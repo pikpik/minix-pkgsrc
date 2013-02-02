@@ -1,8 +1,8 @@
-$NetBSD: patch-ac,v 1.25 2010/05/06 07:33:41 adam Exp $
-
---- configure.orig	2011-10-23 22:05:54.000000000 +0000
+$NetBSD$
+Ensure the correct linker flags are used on Solaris/GCC.
+--- configure.orig	2012-06-14 22:05:51.000000000 +0000
 +++ configure
-@@ -3867,7 +3867,7 @@ fi
+@@ -3976,7 +3976,7 @@ fi
  
  
  if test "${want_R_shlib}" = yes; then
@@ -11,27 +11,28 @@ $NetBSD: patch-ac,v 1.25 2010/05/06 07:33:41 adam Exp $
  else
    LIBR=
  fi
-@@ -22728,6 +22728,11 @@ fi
+@@ -4040,7 +4040,7 @@ fi
+ if test "x${want_lto}" != xno; then
+   LTO=-flto
+ fi
+-if test "x${want_lto}" == xyes; then
++if test "x${want_lto}" = xyes; then
+   LTOALL=-flto
+ fi
+ 
+@@ -22963,6 +22963,11 @@ fi
  	  done
  	  ;;
  	-[lLR]*)
-+	    case $ac_arg in
-+	    -R*)
-+		ac_arg="${wl}$ac_arg"
-+		;;
-+	    esac
++            case $ac_arg in
++            -R*)
++                ac_arg="${wl}$ac_arg"
++                ;;
++            esac
  	    ac_exists=false
    for ac_i in $ac_cv_f77_libs; do
      if test x"$ac_arg" = x"$ac_i"; then
-@@ -23613,6 +23618,7 @@ cat > conftest.c <<EOF
- #else
- # define F77_SYMBOL(x)   x
- #endif
-+int MAIN__ () { return 0; }
- int main () {
-   exit(0);
- }
-@@ -23689,6 +23695,9 @@ cat > conftest.c <<EOF
+@@ -23928,6 +23933,9 @@ cat > conftest.c <<EOF
  
  extern void F77_SYMBOL(cftest)(int *a, int *b, double *x, double *y);
  
@@ -41,7 +42,7 @@ $NetBSD: patch-ac,v 1.25 2010/05/06 07:33:41 adam Exp $
  int main () {
    int a[3] = {17, 237, 2000000000}, b[2], res = 0;
    double x[3] = {3.14159265, 123.456789, 2.3e34}, z[3];
-@@ -23784,6 +23793,9 @@ typedef struct {
+@@ -24023,6 +24031,9 @@ typedef struct {
  
  extern void F77_SYMBOL(cftest)(Rcomplex *x);
  
@@ -51,38 +52,66 @@ $NetBSD: patch-ac,v 1.25 2010/05/06 07:33:41 adam Exp $
  int main () {
      Rcomplex z[3];
  
-@@ -25970,7 +25982,7 @@ $as_echo "$as_me: WARNING: Use of flat n
+@@ -26224,7 +26235,7 @@ $as_echo "$as_me: WARNING: Use of flat n
        SHLIB_LIBADD="-lcc_dynamic"
      fi
      ;;
 -  freebsd*)
-+  freebsd* | dragonfly*)
++  freebsd*|dragonfly*)
      main_ldflags="-export-dynamic"
      shlib_ldflags="-shared"
      ;;
-@@ -26058,6 +26070,12 @@ $as_echo "$as_me: WARNING: Use of flat n
+@@ -26312,6 +26323,13 @@ $as_echo "$as_me: WARNING: Use of flat n
      fcpicflags=
      ;;
    netbsd*)
-+    fpicflags="-fPIC"
-+    case "${host_cpu}" in
-+      powerpc*)
-+	cpicflags="-fPIC"
-+	;;
-+    esac
++     fpicflags="-fPIC"
++     case "${host_cpu}" in
++       powerpc*)
++        cpicflags="-fPIC"
++        ;;
++     esac
++
      if ${CPP} - -dM < /dev/null | grep __ELF__ >/dev/null ; then
        main_ldflags="-export-dynamic"
        shlib_ldflags="-shared"
-@@ -26156,7 +26174,7 @@ fi
- : ${FPICFLAGS="${fpicflags}"}
- if test -z "${FPICFLAGS}"; then
+@@ -26335,22 +26353,22 @@ $as_echo "$as_me: WARNING: Use of flat n
+   solaris*)
+ ## SPARC has only an 8k global object table, 1024 entries on 64-bit,
+ ## so need PIC not pic.  They are the same on other Solaris platforms.
+-    shlib_ldflags="-G"
+-    shlib_cxxldflags="-G"
+    if test "${GCC}" = yes; then
++      shlib_ldflags="-shared"
++      shlib_cxxldflags="-shared"
+       cpicflags="-fPIC"
+       ld=`${CC} -print-prog-name=ld`
+       ldoutput=`${ld} -v 2>&1 | grep GNU`
+       if test -n "${ldoutput}"; then
+ 	main_ldflags="-Wl,-export-dynamic"
+-	shlib_ldflags="-shared"
+-        shlib_cxxldflags="-shared"
+       else
+         ## it seems gcc c 4.6.2 needs this with Solaris linker
+ 	shlib_ldflags="-shared"
+         shlib_cxxldflags="-shared"
+       fi
+     else
++      shlib_ldflags="-G"
++      shlib_cxxldflags="-G"
+       cpicflags="-KPIC"
+       if test "`basename ${CXX}`" = "CC" ; then
+         ## Forte version 7 needs -lCstd: Forte 6 does not.
+@@ -26407,7 +26425,7 @@ fi
+ : ${CPICFLAGS="${cpicflags}"}
+ if test -z "${CPICFLAGS}"; then
    case "${host_os}" in
 -    aix*|cygwin*|irix*|mingw*|osf*)
 +    aix*|cygwin*|irix*|mingw*|osf*|darwin*)
        ;;
      *)
-       { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: I could not determine FPICFLAGS." >&5
-@@ -29275,6 +29293,15 @@ cat > conftest.c <<EOF
+       { $as_echo "$as_me:${as_lineno-$LINENO}: WARNING: I could not determine CPICFLAGS." >&5
+@@ -29539,6 +29557,15 @@ cat > conftest.c <<EOF
  #endif
  extern void F77_SYMBOL(test1)(int *iflag);
  
@@ -98,7 +127,7 @@ $NetBSD: patch-ac,v 1.25 2010/05/06 07:33:41 adam Exp $
  int main () {
    int iflag;
    F77_SYMBOL(test1)(&iflag);
-@@ -29342,6 +29369,14 @@ else
+@@ -29606,6 +29633,14 @@ else
  #else
  # define F77_SYMBOL(x)   x
  #endif

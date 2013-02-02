@@ -1,11 +1,22 @@
-$NetBSD: patch-aa,v 1.13 2008/10/16 10:55:09 drochner Exp $
+$NetBSD: patch-aa,v 1.15 2012/09/07 15:24:03 adam Exp $
 
---- src/Makefile.in.orig	2010-09-06 16:16:41.000000000 +0000
+revision 1.6
+date: 2005/12/06 23:14:11;  author: joerg;  state: Exp;  lines: +2 -2
+Fix a bug in the thread linkage I introduced earlier. This was most
+noticable on NetBSD 1.6, where PTHREAD_LDFLAGS is not set at all.
+----------------------------
+revision 1.5
+date: 2005/10/02 10:54:37;  author: jmmv;  state: Exp;  lines: +21 -168
+Cairo uses pthreads, so link it against the threading library.
+Fixes build problems of other packages using cairo (nothing could be linked
+with -lcairo before), at least under NetBSD 2.0.  Bump PKGREVISION to 2.
+
+--- src/Makefile.in.orig	2012-04-29 18:49:55.000000000 +0000
 +++ src/Makefile.in
-@@ -821,9 +821,9 @@ AWK = @AWK@
+@@ -928,9 +928,9 @@ AUTOMAKE = @AUTOMAKE@
+ AWK = @AWK@
  BFD_LIBS = @BFD_LIBS@
  CAIROBOILERPLATE_LIBS = @CAIROBOILERPLATE_LIBS@
- CAIROPERF_LIBS = @CAIROPERF_LIBS@
 -CAIRO_CFLAGS = @CAIRO_CFLAGS@
 +CAIRO_CFLAGS = @CAIRO_CFLAGS@ ${PTHREAD_CFLAGS}
  CAIRO_LDFLAGS = @CAIRO_LDFLAGS@

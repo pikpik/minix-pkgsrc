@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:39:58 wiz Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.15 2012/10/08 23:01:25 adam Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 DISTNAME=	xfconf-${XFCE4_VERSION}
-PKGREVISION=	9
+PKGREVISION=	14
 CATEGORIES=	devel
 COMMENT=	Xfce client-server configuration storage and query system
 

@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.12 2011/01/03 15:06:38 obache Exp $
+# $NetBSD: Makefile,v 1.15 2012/05/23 06:23:02 dholland Exp $
 
 DISTNAME=	powwow-1.2.5
 PKGREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://hoopajoo.net/static/powwow-mirror/powwow/
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://hoopajoo.net/projects/powwow.html
 COMMENT=	Client to play MUDs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 POWWOW_DIR=	${PREFIX}/share/powwow
@@ -17,7 +15,8 @@ POWWOW_DIR=	${PREFIX}/share/powwow
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man6
 
 do-build:
-	cd ${WRKSRC} && POWWOW_DIR=${POWWOW_DIR} CFLAGS=${CFLAGS:Q} ./make_it
+	cd ${WRKSRC} && POWWOW_DIR=${POWWOW_DIR} CFLAGS=${CFLAGS:Q} \
+		LDFLAGS=${LDFLAGS:Q} ./make_it
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/powwow ${DESTDIR}${PREFIX}/bin

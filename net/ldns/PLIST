@@ -1,12 +1,14 @@
-@comment $NetBSD: PLIST,v 1.3 2009/08/18 12:48:04 he Exp $
+@comment $NetBSD$
 bin/ldns-config
 include/ldns/buffer.h
 include/ldns/common.h
+include/ldns/dane.h
 include/ldns/dname.h
 include/ldns/dnssec.h
 include/ldns/dnssec_sign.h
 include/ldns/dnssec_verify.h
 include/ldns/dnssec_zone.h
+include/ldns/duration.h
 include/ldns/error.h
 include/ldns/higher.h
 include/ldns/host2str.h
@@ -80,6 +82,12 @@ man/man3/ldns_buffer_write_u8.3
 man/man3/ldns_buffer_write_u8_at.3
 man/man3/ldns_calc_keytag.3
 man/man3/ldns_create_nsec.3
+man/man3/ldns_dane_cert2rdf.3
+man/man3/ldns_dane_create_tlsa_owner.3
+man/man3/ldns_dane_create_tlsa_rr.3
+man/man3/ldns_dane_select_certificate.3
+man/man3/ldns_dane_verify.3
+man/man3/ldns_dane_verify_rr.3
 man/man3/ldns_dname.3
 man/man3/ldns_dname2canonical.3
 man/man3/ldns_dname_cat.3

@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.45 2012/03/03 00:13:22 wiz Exp $
+# $NetBSD: Makefile,v 1.55 2012/12/15 10:36:27 ryoon Exp $
 #
 
 DISTNAME=		imhangul_status_applet-0.3
-PKGREVISION=		29
+PKGREVISION=		38
 CATEGORIES=		korean inputmethod
 MASTER_SITES=		http://download.kldp.net/imhangul/imhangul_status_applet/0.3/
 
 MAINTAINER=		minskim@NetBSD.org
 HOMEPAGE=		http://imhangul.kldp.net/\#APPLET
 COMMENT=		GNOME2 applet to show imhangul status
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		imhangul>=0.9.6:../../inputmethod/imhangul
 

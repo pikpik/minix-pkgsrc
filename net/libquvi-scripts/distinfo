@@ -1,6 +1,5 @@
-$NetBSD: distinfo,v 1.2 2011/12/05 19:34:12 ryoon Exp $
+$NetBSD: distinfo,v 1.4 2012/07/31 00:41:33 wiz Exp $
 
-SHA1 (libquvi-scripts-0.4.2.tar.bz2) = a2109327f629f513a57d10efbf825d129d8fef8f
-RMD160 (libquvi-scripts-0.4.2.tar.bz2) = b58d24f4ac19f3e2851b5157016f4f19eb56a010
-Size (libquvi-scripts-0.4.2.tar.bz2) = 100302 bytes
-SHA1 (patch-share_lua_website_youtube.lua) = 6cdb6176eb7f5a50ae7037fb033db9f697915e59
+SHA1 (libquvi-scripts-0.4.9.tar.xz) = babeceb964ef583928a3ddb389566432200c9342
+RMD160 (libquvi-scripts-0.4.9.tar.xz) = 0412217834fb1447cbf851f9d74a8b26a1ab82ef
+Size (libquvi-scripts-0.4.9.tar.xz) = 109300 bytes

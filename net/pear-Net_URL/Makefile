@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:41 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2012/04/15 22:01:02 wiz Exp $
 
 DISTNAME=	Net_URL-1.0.15
 CATEGORIES+=	net
 
-MAINTAINER=	jdolecek@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	PHP classes to easy parsing of URLs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	php-pear-Net_URL-[0-9]*
 

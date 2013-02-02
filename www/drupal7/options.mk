@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: options.mk,v 1.2 2012/04/14 16:25:11 adam Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.drupal
 
@@ -39,7 +39,7 @@ DEPENDS+=	${PHP_PKG_PREFIX}-dom>=5.2.7:../../textproc/php-dom
 ### Support for unicode
 ###
 .if !empty(PKG_OPTIONS:Municode)
-EPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.2.7:../../converters/php-mbstring
+DEPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.2.7:../../converters/php-mbstring
 .endif
 
 ###
@@ -47,7 +47,7 @@ EPENDS+=	${PHP_PKG_PREFIX}-mbstring>=5.2.7:../../converters/php-mbstring
 ###
 .if !empty(PKG_OPTIONS:Mapache)
 DEPENDS+=	${APACHE_PKG_PREFIX}-${PHP_PKG_PREFIX}>=5.2.7:../../www/ap-php
-.	include "../../mk/apachever.mk"
+.	include "../../mk/apache.mk"
 WWW_USER?=	${APACHE_USER}
 WWW_GROUP?=	${APACHE_GROUP}
 .else

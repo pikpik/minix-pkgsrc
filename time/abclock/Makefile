@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2011/11/08 10:49:35 ryoon Exp $
 
 DISTNAME=	abclock-1.0d
 CATEGORIES=	time
@@ -8,8 +8,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://odur.let.rug.nl/~kleiweg/abclock/
 COMMENT=	Analogue Bitmap Clock
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin
 

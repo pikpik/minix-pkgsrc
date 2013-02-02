@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.72 2012/02/06 12:41:12 wiz Exp $
+# $NetBSD: Makefile,v 1.79 2012/10/08 23:02:16 adam Exp $
 
 DISTNAME=	gtk-gnutella-0.96.6
-PKGREVISION=	9
+PKGREVISION=	15
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gtk-gnutella/}
 EXTRACT_SUFX=	.tar.bz2
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	adam@NetBSD.org
 HOMEPAGE=	http://gtk-gnutella.sourceforge.net/
 COMMENT=	GTK-based gnutella client
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt pkg-config

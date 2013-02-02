@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.30 2011/08/14 07:53:03 cheusov Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/08 09:21:15 asau Exp $
 #
 
 DISTNAME=	xawtv-3.95
-PKGREVISION=	7
+PKGREVISION=	8
 CATEGORIES=	multimedia
 MASTER_SITES=	http://dl.bytesex.org/releases/xawtv/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://linux.bytesex.org/xawtv/
 COMMENT=	TV application for Brooktree 848 compatible cards
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
 GNU_CONFIGURE=		YES
@@ -61,7 +59,6 @@ MAKE_FLAGS+=		SUID_ROOT= FS_LIBS=-lFS
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
 .include "../../x11/xf86vidmodeproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 .include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

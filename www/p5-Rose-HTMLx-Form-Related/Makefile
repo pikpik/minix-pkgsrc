@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2010/09/21 21:31:41 sno Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/03 21:58:58 wiz Exp $
 
 DISTNAME=	Rose-HTMLx-Form-Related-0.22
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Rose/}
 
@@ -27,8 +27,6 @@ BUILD_DEPENDS+=	p5-DBIx-Class-RDBOHelpers-[0-9]*:../../databases/p5-DBIx-Class-R
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Rose/HTMLx/Form/Related/.packlist
-
-PKG_DESTDIR_SUPPORT=    user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

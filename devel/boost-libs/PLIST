@@ -1,7 +1,10 @@
-@comment $NetBSD: PLIST,v 1.13 2011/10/11 10:02:08 adam Exp $
+@comment $NetBSD: PLIST,v 1.17 2012/11/07 21:04:11 adam Exp $
 lib/libboost_chrono.a
 lib/libboost_chrono.so
 lib/libboost_chrono.so.${BOOST_VERSION}
+lib/libboost_context.a
+lib/libboost_context.so
+lib/libboost_context.so.${BOOST_VERSION}
 lib/libboost_date_time.a
 lib/libboost_date_time.so
 lib/libboost_date_time.so.${BOOST_VERSION}

@@ -1,23 +1,35 @@
-# $NetBSD: Makefile,v 1.49 2012/03/12 09:12:59 ryoon Exp $
+# $NetBSD: Makefile,v 1.63 2013/01/05 19:02:45 ryoon Exp $
 
-.include "../../devel/xulrunner/dist.mk"
-PKGNAME=		nss-${NSS_RELEASE}
-NSS_RELEASE=		3.13.3
+DISTNAME=		nss-${NSS_RELEASE}
+NSS_RELEASE=		3.14.1
+PKGREVISION=		1
 CATEGORIES=		security
+MASTER_SITES=		${MASTER_SITE_MOZILLA_ALL:=security/nss/releases/NSS_${NSS_RELEASE:S/./_/g}_RTM/src/}
 
 MAINTAINER=		tnn@NetBSD.org
 HOMEPAGE=		http://www.mozilla.org/projects/security/pki/nss/
 COMMENT=		Libraries to support development of security-enabled applications
+LICENSE=		mpl-2.0
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}js/src/configure
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}configure
 
+WRKSRC=			${WRKDIR}/${DISTNAME}/mozilla
+
 USE_TOOLS+=		gmake perl pax pkg-config
 
 .include		"../../mk/bsd.prefs.mk"
+
+.if ${OPSYS} == "Darwin"
+SUBST_CLASSES+=			exec_path
+SUBST_STAGE.exec_path=		pre-configure
+SUBST_MESSAGE.exec_path=	Fixing @executable_path
+SUBST_FILES.exec_path=		security/nss/lib/freebl/config.mk
+SUBST_FILES.exec_path=		security/coreconf/Darwin.mk
+SUBST_SED.exec_path=		-e 's,@executable_path,${PREFIX}/lib/nss,g'
+.endif
 
 .if ${OPSYS} == "Linux"
 MAKE_ENV+=	FREEBL_NO_DEPEND=0
@@ -48,14 +60,9 @@ MAKE_ENV+=	INCLUDES=-I${BUILDLINK_PREFIX.nspr}/include/nspr
 MAKE_ENV+=	NSS_USE_SYSTEM_SQLITE=1
 MAKE_ENV+=	EXTRA_SHARED_LIBS="-Wl,-R${BUILDLINK_PREFIX.nspr}/lib/nspr -Wl,-R,${PREFIX}/lib/nss -L${BUILDLINK_PREFIX.nspr}/lib/nspr -lplc4 -lplds4 -lnspr4"
 
-pre-configure:
-# sanity check: make sure the nss release is what we think it is.
-#	@set -e; if [ '"${NSS_RELEASE}"' !=			\
-#	  "`${AWK} '/NSS_VERSION/ {print $$3}' <		\
-#	  ${WRKSRC}/security/nss/lib/nss/nss.h`" ]; then	\
-#	  ${ECHO} "package is out of date";			\
-#	  exit 1;						\
-#	fi
+post-extract:
+	find ${WRKSRC} -type f | xargs ${CHMOD} 644
+	find ${WRKSRC} -type d | xargs ${CHMOD} 755
 
 do-build:
 	cd ${WRKSRC}/security/nss && ${SETENV} ${MAKE_ENV} ${MAKE_PROGRAM} \
@@ -65,9 +72,9 @@ INSTALLATION_DIRS=	include/nss lib/nss lib/pkgconfig
 DIST=	${WRKSRC}/dist
 
 do-install:
-	(cd ${DIST}/public && pax -Lrwpe . ${DESTDIR}${PREFIX}/include/nss/ )
+	(cd ${DIST}/public && pax -Lrw . ${DESTDIR}${PREFIX}/include/nss/ )
 	(cd ${DIST}/*_OPT.OBJ/lib && \
-		pax -Lrwpe *.${SO_SUFFIX} ${DESTDIR}${PREFIX}/lib/nss/ )
+		pax -Lrw *.${SO_SUFFIX} ${DESTDIR}${PREFIX}/lib/nss/ )
 	${INSTALL_LIB} ${DIST}/*_OPT.OBJ/lib/libcrmf.a \
 		${DESTDIR}${PREFIX}/lib/nss/
 	set -e; \
@@ -78,7 +85,8 @@ do-install:
 	  ${ECHO} "Cflags: -I${PREFIX}/include/nss/nss -I${PREFIX}/include/nss"; \
 	  ${ECHO} "Libs: -L${PREFIX}/lib/nss" \
 	      "${COMPILER_RPATH_FLAG}${PREFIX}/lib/nss" \
-	      "-lnss3 -lsmime3 -lssl3 -lsoftokn3 "${BUILDLINK_LIBS.pthread:Q}; \
+	      "-lnss3 -lsmime3 -lssl3 -lsoftokn3 -lnssutil3" \
+	      ${BUILDLINK_LIBS.pthread:Q}; \
 	} >${DESTDIR}${PREFIX}/lib/pkgconfig/nss.pc
 
 .include "../../databases/sqlite3/buildlink3.mk"

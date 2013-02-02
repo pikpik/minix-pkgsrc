@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.25 2008/10/11 09:31:56 uebayasi Exp $
+# $NetBSD: Makefile,v 1.26 2009/08/05 08:45:11 minskim Exp $
 #
 
 DISTNAME=	jde-2.3.2
@@ -19,8 +19,6 @@ DEPENDS+=	${EMACS_PKGNAME_PREFIX}semantic>=1.4rc13:../../devel/semantic
 DEPENDS+=	${EMACS_PKGNAME_PREFIX}elib>=1.0:../../devel/elib
 
 USE_TOOLS+=	pax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/lisp
 

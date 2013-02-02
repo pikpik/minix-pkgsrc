@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/08/14 12:26:50 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/03 21:55:52 wiz Exp $
 
 DISTNAME=	pip-1.19
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/A/AD/ADAMK/}
 
@@ -11,7 +12,6 @@ COMMENT=	Perl Installation Program, for scripted+3rd-party distribution installa
 LICENSE=	${PERL5_LICENSE}
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Archive-Zip>=1.29:../../archivers/p5-Archive-Zip
 DEPENDS+=	p5-CPAN-Inject>=0.07:../../devel/p5-CPAN-Inject

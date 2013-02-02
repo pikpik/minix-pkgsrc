@@ -336,7 +336,8 @@ II. The pkgsrc developer's guide
             19.4.1. C, C++, and Fortran
             19.4.2. Java
             19.4.3. Packages containing perl scripts
-            19.4.4. Other programming languages
+            19.4.4. Packages containing shell scripts
+            19.4.5. Other programming languages
 
         19.5. Fixing problems in the build phase
 
@@ -376,7 +377,7 @@ II. The pkgsrc developer's guide
         21.1. Submitting binary packages
         21.2. Submitting source packages (for non-NetBSD-developers)
         21.3. General notes when adding, updating, or removing packages
-        21.4. Committing: Importing a package into CVS
+        21.4. Committing: Adding a package to CVS
         21.5. Updating a package to a newer version
         21.6. Renaming a package in pkgsrc
         21.7. Moving a package in pkgsrc
@@ -869,7 +870,7 @@ $ ftp ftp://ftp.NetBSD.org/pub/pkgsrc/current/pkgsrc.tar.gz
 
 To fetch a specific pkgsrc stable branch, run:
 
-$ cd /usr && cvs -q -z3 -d anoncvs@anoncvs.NetBSD.org:/cvsroot checkout -r pkgsrc-20xxQy -P pkgsrc
+$ cd /usr && cvs -q -z2 -d anoncvs@anoncvs.NetBSD.org:/cvsroot checkout -r pkgsrc-20xxQy -P pkgsrc
 
 Where pkgsrc-20xxQy is the stable branch to be checked out, for example, "
 pkgsrc-2009Q1"
@@ -879,13 +880,14 @@ package source will be stored under /usr/pkgsrc/.
 
 To fetch the pkgsrc current branch, run:
 
-$ cd /usr && cvs -q -z3 -d anoncvs@anoncvs.NetBSD.org:/cvsroot checkout -P pkgsrc
+$ cd /usr && cvs -q -z2 -d anoncvs@anoncvs.NetBSD.org:/cvsroot checkout -P pkgsrc
 
-Refer to list of available CVS mirrors to choose faster one.
+Refer to the list of available mirrors to choose a faster CVS mirror, if
+needed.
 
 If you get error messages from rsh, you need to set CVS_RSH variable. E.g.:
 
-$ cd /usr && env CVS_RSH=ssh cvs -q -z3 -d anoncvs@anoncvs.NetBSD.org:/cvsroot checkout -P pkgsrc
+$ cd /usr && env CVS_RSH=ssh cvs -q -z2 -d anoncvs@anoncvs.NetBSD.org:/cvsroot checkout -P pkgsrc
 
 Refer to documentation on your command shell how to set CVS_RSH=ssh
 permanently. For Bourne shells, you can set it in your .profile or better
@@ -902,7 +904,7 @@ headache and some bug reports, so we strongly recommend it. You can find an
 explanation of this file in the CVS documentation.
 
 # recommended CVS configuration file from the pkgsrc guide
-cvs -q -z3
+cvs -q -z2
 checkout -P
 update -dP
 diff -upN
@@ -1017,7 +1019,7 @@ packages that use the X11 Window System.
 
 3.3.2. FreeBSD
 
-FreeBSD 4.7 and 5.0 have been tested and are supported, other versions may
+FreeBSD 8.3 and 9.0 have been tested and are supported, other versions may
 work.
 
 Care should be taken so that the tools that this kit installs do not conflict
@@ -1265,31 +1267,26 @@ Compiler). gcc is the default. icc 8.0 and 8.1 on i386 have been tested.
 
 To bootstrap using icc, assuming the default icc installation directory:
 
-env CC=/opt/intel_cc_80/bin/icc LDFLAGS=-static-libcxa \
-ac_cv___attribute__=yes ./bootstrap
+env ICCBASE=/opt/intel/cc/10.1.008 ./bootstrap --compiler=icc
 
 
 Note
 
-icc 8.1 needs the `-i-static' argument instead of -static-libcxa.
+For icc 8.0 you must add `LDFLAGS=-static-libcxa' to this.
 
-icc supports __attribute__, but the GNU configure test uses a nested function,
-which icc does not support. #undef'ing __attribute__ has the unfortunate
-side-effect of breaking many of the Linux header files, which cannot be
-compiled properly without __attribute__. The test must be overridden so that
-__attribute__ is assumed supported by the compiler.
+For icc 8.1 you must add `LDFLAGS=-i-static' instead.
 
-After bootstrapping, you should set PKGSRC_COMPILER in mk.conf:
+For icc 10.1 neither of these appears to be necessary.
 
-PKGSRC_COMPILER=        icc
+Use a value for ICCBASE that corresponds to the directory where icc is
+installed. After bootstrapping, set ICCBASE in mk.conf:
+
+ICCBASE=                /opt/intel/cc/10.1.008
 
 
-The default installation directory for icc is /opt/intel_cc_80, which is also
-the pkgsrc default. If you have installed it into a different directory, set
-ICCBASE in mk.conf:
-
-ICCBASE=                /opt/icc
-
+The pkgsrc default for ICCBASE is /opt/intel_cc_80. This is the default install
+directory for icc 8.0. If you are using a more recent version, be sure to set
+the correct path explicitly.
 
 pkgsrc uses the static linking method of the runtime libraries provided by icc,
 so binaries can be run on other systems which do not have the shared libraries
@@ -1303,7 +1300,7 @@ libraries until this is fixed in libtool.
 
 3.3.6. OpenBSD
 
-OpenBSD 3.0 and 3.2 are tested and supported.
+OpenBSD 5.1 has been tested and supported, other versions may work.
 
 Care should be taken so that the tools that this kit installs do not conflict
 with the OpenBSD userland tools. There are several steps:
@@ -1336,8 +1333,8 @@ with the OpenBSD userland tools. There are several steps:
 
 3.3.7. Solaris
 
-Solaris 2.6 through 9 are supported on both x86 and sparc. You will need a
-working C compiler. Both gcc 2.95.3 and Sun WorkShop 5 have been tested.
+Solaris 2.6 through 10 are supported on both x86 and sparc. You will need a
+working C compiler. Both gcc 4.5.3 and Sun WorkShop 5 have been tested.
 
 The following packages are required on Solaris 8 for the bootstrap process and
 to build packages.
@@ -1365,8 +1362,8 @@ It makes life much simpler if you only use the same gcc consistently for
 building all packages.
 
 It is recommended that an external gcc be used only for bootstrapping, then
-either build gcc from lang/gcc or install a binary gcc package, then remove gcc
-used during bootstrapping.
+either build gcc from lang/gcc46 or install a binary gcc package, then remove
+gcc used during bootstrapping.
 
 Binary packages of gcc can be found through http://www.sunfreeware.com/.
 
@@ -2352,11 +2349,11 @@ bulk build inside a chroot environment.
 The first step is to set up a chroot sandbox, e.g. /usr/sandbox. This can be
 done by using null mounts, or manually.
 
-There is a shell script called pkgsrc/mk/bulk/mksandbox which will set up the
-sandbox environment using null mounts. It will also create a script called
-sandbox in the root of the sandbox environment, which will allow the null
-mounts to be activated using the sandbox mount command and deactivated using
-the sandbox umount command.
+There is a shell script called mksandbox installed by the pkgtools/mksandbox
+package, which will set up the sandbox environment using null mounts. It will
+also create a script called sandbox in the root of the sandbox environment,
+which will allow the null mounts to be activated using the sandbox mount
+command and deactivated using the sandbox umount command.
 
 To set up a sandbox environment by hand, after extracting all the sets from a
 NetBSD installation or doing a make distribution DESTDIR=/usr/sandbox in /usr/
@@ -3303,7 +3300,8 @@ Table of Contents
         19.4.1. C, C++, and Fortran
         19.4.2. Java
         19.4.3. Packages containing perl scripts
-        19.4.4. Other programming languages
+        19.4.4. Packages containing shell scripts
+        19.4.5. Other programming languages
 
     19.5. Fixing problems in the build phase
 
@@ -3343,7 +3341,7 @@ Table of Contents
     21.1. Submitting binary packages
     21.2. Submitting source packages (for non-NetBSD-developers)
     21.3. General notes when adding, updating, or removing packages
-    21.4. Committing: Importing a package into CVS
+    21.4. Committing: Adding a package to CVS
     21.5. Updating a package to a newer version
     21.6. Renaming a package in pkgsrc
     21.7. Moving a package in pkgsrc
@@ -3476,7 +3474,7 @@ If the default Python versions are not supported by the software, set the
 PYTHON_VERSIONS_ACCEPTED variable to the Python versions the software is known
 to work with, from the most recent to the older one, e.g.
 
-PYTHON_VERSIONS_ACCEPTED=       25 24
+PYTHON_VERSIONS_ACCEPTED=       31 27 26
 
 If the packaged software is a Python module, include "../../lang/python/
 extension.mk". In this case, the package directory should be called "
@@ -3492,10 +3490,10 @@ If the packaged software, either it is an application or a module, is
 egg-aware, you only need to include "../../lang/python/egg.mk".
 
 In order to correctly set the path to the Python interpreter, use the
-REPLACE_PYTHON variable and set it to the list of files that must be corrected.
-For example :
+REPLACE_PYTHON variable and set it to the list of files (paths relative to
+WRKSRC) that must be corrected. For example :
 
-REPLACE_PYTHON=   ${WRKSRC}/*.py
+REPLACE_PYTHON=   *.py
 
 10.2. Examples
 
@@ -3994,7 +3992,7 @@ out-of-the box on NetBSD. Furthermore, any user that gets newer distfiles will
 get the fixes straight from the packaged code.
 
 This generally involves cleaning up the patches (because sometimes the patches
-that are added to pkgsrc are quick hacks), filling bug reports in the
+that are added to pkgsrc are quick hacks), filing bug reports in the
 appropriate trackers for the projects and working with the mainstream authors
 to accept your changes. It is extremely important that you do it so that the
 packages in pkgsrc are kept simple and thus further changes can be done without
@@ -4668,8 +4666,9 @@ issues:
   * oss.buildlink3.mk defines several variables that may be used by packages
     that use the Open Sound System (OSS) API.
 
-  * pgsql.buildlink3.mk will accept either Postgres 8.0, 8.1, or 8.2, whichever
-    is found installed. See the file for more information.
+  * pgsql.buildlink3.mk will accept any of the Postgres versions in the
+    variable PGSQL_VERSIONS_ACCEPTED and default to the version
+    PGSQL_VERSION_DEFAULT. See the file for more information.
 
   * pthread.buildlink3.mk uses the value of PTHREAD_OPTS and checks for native
     pthreads or adds a dependency on devel/pth as needed.
@@ -5031,7 +5030,7 @@ will call the former the master file in the following paragraphs, which
 describe the variables that can be used to automatically and consistently
 handle files outside the installation prefix:
 
-  * CONF_FILES and SUPPORT_FILES are pairs of master and target files. During
+  * CONF_FILES and REQD_FILES are pairs of master and target files. During
     installation time, the master file is copied to the target one if and only
     if the latter does not exist. Upon deinstallation, the target file is
     removed provided that it was not modified by the installation.
@@ -5040,12 +5039,12 @@ handle files outside the installation prefix:
     to remove any files that may be left after deinstallation (because they
     were not empty), while the former does not.
 
-  * CONF_FILES_PERMS and SUPPORT_FILES_PERMS contain tuples describing master
+  * CONF_FILES_PERMS and REQD_FILES_PERMS contain tuples describing master
     files as well as their target locations. For each of them, it also
     specifies their owner, their group and their numeric permissions, in this
     order. For example:
 
-    SUPPORT_FILES_PERMS+= ${PREFIX}/share/somefile ${VARBASE}/somefile ${ROOT_USER} ${ROOT_GROUP} 0700
+    REQD_FILES_PERMS+= ${PREFIX}/share/somefile ${VARBASE}/somefile ${ROOT_USER} ${ROOT_GROUP} 0700
 
     The difference between the two is exactly the same as their non-PERMS
     counterparts.
@@ -5871,6 +5870,11 @@ CONFIGURE_ENV and arguments CONFIGURE_ARGS. The variables CONFIGURE_ENV,
 CONFIGURE_SCRIPT (default: "./configure") and CONFIGURE_ARGS may all be changed
 by the package.
 
+If the program uses the Perl way of configuration (mainly Perl modules, but not
+only), i.e. a file called Makefile.PL, it should include ../../lang/perl5/
+module.mk. To set any parameter for Makefile.PL use the MAKE_PARAMS variable
+(e.g., MAKE_PARAMS+=foo=bar
+
 If the program uses an Imakefile for configuration, the appropriate steps can
 be invoked by setting USE_IMAKE to "yes". (If you only want the package
 installed in ${X11PREFIX} but xmkmf not being run, set USE_X11BASE instead.)
@@ -6423,7 +6427,8 @@ Table of Contents
     19.4.1. C, C++, and Fortran
     19.4.2. Java
     19.4.3. Packages containing perl scripts
-    19.4.4. Other programming languages
+    19.4.4. Packages containing shell scripts
+    19.4.5. Other programming languages
 
 19.5. Fixing problems in the build phase
 
@@ -6543,14 +6548,34 @@ the other. The free licenses are added to the default ACCEPTABLE_LICENSES
 variable. The user can override the default by setting the ACCEPTABLE_LICENSES
 variable with "=" instead of "+=". The licenses accepted by default are:
 
-    public-domain
-    gnu-gpl-v2 gnu-lgpl-v2
-    gnu-gpl-v3 gnu-lgpl-v3
-    original-bsd modified-bsd
-    x11
-    apache-2.0
-    cddl-1.0
-    open-font-license
+        public-domain unlicense
+        gnu-fdl-v1.1 gnu-fdl-v1.2 gnu-fdl-v1.3
+        gnu-gpl-v1
+        gnu-gpl-v2 gnu-lgpl-v2 gnu-lgpl-v2.1
+        gnu-gpl-v3 gnu-lgpl-v3
+        original-bsd modified-bsd 2-clause-bsd
+        x11 mit miros
+        apache-1.1 apache-2.0
+        artistic artistic-2.0
+        cddl-1.0
+        cpl-1.0
+        open-font-license
+        mpl-1.0 mpl-1.1 mpl-2.0
+        php png-license
+        postgresql-license
+        zlib
+        zpl
+        python-software-foundation
+        ipafont
+        ibm-public-license-1.0
+        isc
+        boost-license
+        mplusfont
+        cc-by-sa-v3.0
+        lppl-1.3c
+        lucent
+        epl-v1.0
+        info-zip
 
 
 The license tag mechanism is intended to address copyright-related issues
@@ -6652,6 +6677,11 @@ variables that can be set to note these restrictions:
     Distfiles may not made available via FTP at no charge. In this case, set
     this variable to ${RESTRICTED}. If this variable is set, the distfile(s)
     will not be mirrored on ftp.NetBSD.org.
+
+Please note that packages will to be removed from pkgsrc when the distfiles are
+not distributable and cannot be obtained for a period of one full quarter
+branch. Packages with manual / interactive fetch must have a maintainer and it
+is his/her responsibility to ensure this.
 
 19.1.6. Handling dependencies
 
@@ -6789,12 +6819,13 @@ option is used.
 19.1.10. Handling packages with security problems
 
 When a vulnerability is found, this should be noted in localsrc/security/
-advisories/pkg-vulnerabilities, and after committing that file, use make upload
-in the same directory to update the file on ftp.NetBSD.org.
+advisories/pkg-vulnerabilities, and after committing that file, ask
+pkgsrc-security@NetBSD.org to update the file on ftp.NetBSD.org.
 
 After fixing the vulnerability by a patch, its PKGREVISION should be increased
 (this is of course not necessary if the problem is fixed by using a newer
-release of the software).
+release of the software), and the pattern in the pkg-vulnerabilities file must
+be updated.
 
 Also, if the fix should be applied to the stable pkgsrc branch, be sure to
 submit a pullup request!
@@ -7170,7 +7201,14 @@ version number. The default is "5.0".
 See Section 19.6.6, "Packages installing perl modules" for information about
 handling perl modules.
 
-19.4.4. Other programming languages
+19.4.4. Packages containing shell scripts
+
+REPLACE_SH, REPLACE_BASH, REPLACE_CSH, and REPLACE_KSH can be used to replace
+shell hash bangs in files. Please use the appropriate one, prefering REPLACE_SH
+in case this shell is sufficient. When using REPLACE_BASH, don't forget to add
+bash to USE_TOOLS.
+
+19.4.5. Other programming languages
 
 Currently, there is no special handling for other languages in pkgsrc. If a
 compiler package provides a buildlink3.mk file, include that, otherwise just
@@ -7348,12 +7386,10 @@ gtk-doc is preferred though.)
 Certain packages, most of them in the games category, install a score file that
 allows all users on the system to record their highscores. In order for this to
 work, the binaries need to be installed setgid and the score files owned by the
-appropriate group and/or owner (traditionally the "games" user/group). The
-following variables, documented in more detail in mk/defaults/mk.conf, control
-this behaviour: SETGIDGAME, GAMEDATAMODE, GAMEGRP, GAMEMODE, GAMEOWN.
-
-Note that per default, setgid installation of games is disabled; setting
-SETGIDGAME=YES will set all the other variables accordingly.
+appropriate group and/or owner (traditionally the "games" user/group). Set
+USE_GAMESGROUP to yes to support this. The following variables, documented in
+more detail in mk/defaults/mk.conf, control this behaviour: GAMEDATAMODE,
+GAMEDIRMODE, GAMES_GROUP, GAMEMODE, GAME_USER.
 
 A package should therefore never hard code file ownership or access permissions
 but rely on INSTALL_GAME and INSTALL_GAME_DATA to set these correctly.
@@ -7366,9 +7402,10 @@ for installation as usual. There are two ways: Either the package must install
 as root ("destdir") or the package can install as non-root user ("user-destdir"
 ).
 
-  * PKG_DESTDIR_SUPPORT has to be set to "destdir" or "user-destdir". If
-    bsd.prefs.mk is included in the Makefile, PKG_DESTDIR_SUPPORT needs to be
-    set before the inclusion.
+  * PKG_DESTDIR_SUPPORT has to be set to "none", "destdir", or "user-destdir".
+    By default PKG_DESTDIR_SUPPORT is set to "user-destdir" to help catching
+    more potential packaging problems. If bsd.prefs.mk is included in the
+    Makefile, PKG_DESTDIR_SUPPORT needs to be set before the inclusion.
 
   * All installation operations have to be prefixed with ${DESTDIR}.
 
@@ -7644,13 +7681,13 @@ into ${PREFIX}/share/texmf-dist, not ${PREFIX}/share/texmf.
     trees that need database update.
 
     If your package also installs font map files that need to be registered
-    using updmap, include ../../print/texlive-tetex/map.mk and set
-    TEX_MAP_FILES and/or TEX_MIXEDMAP_FILES to the list of all such font map
-    files. Then updmap will be run automatically at installation/deinstallation
-    to enable/disable font map files for TeX output drivers.
+    using updmap, include ../../print/tex-tetex/map.mk and set TEX_MAP_FILES
+    and/or TEX_MIXEDMAP_FILES to the list of all such font map files. Then 
+    updmap will be run automatically at installation/deinstallation to enable/
+    disable font map files for TeX output drivers.
 
  3. Make sure that none of ls-R databases are included in PLIST, as they will
-    be removed only by the teTeX-bin package.
+    be removed only by the kpathsea package.
 
 19.6.18. Packages supporting running binaries in emulation
 
@@ -7796,7 +7833,7 @@ Table of Contents
 21.1. Submitting binary packages
 21.2. Submitting source packages (for non-NetBSD-developers)
 21.3. General notes when adding, updating, or removing packages
-21.4. Committing: Importing a package into CVS
+21.4. Committing: Adding a package to CVS
 21.5. Updating a package to a newer version
 21.6. Renaming a package in pkgsrc
 21.7. Moving a package in pkgsrc
@@ -7862,27 +7899,34 @@ changes-entry-commit! If you are not using a checkout directly from
 cvs.NetBSD.org, but e.g. a local copy of the repository, you can set
 USE_NETBSD_REPO=yes. This makes the cvs commands use the main repository.
 
-21.4. Committing: Importing a package into CVS
+21.4. Committing: Adding a package to CVS
 
 This section is only of interest for pkgsrc developers with write access to the
-pkgsrc repository. Please remember that cvs imports files relative to the
-current working directory, and that the pathname that you give the cvs import
-command is so that it knows where to place the files in the repository. Newly
-created packages should be imported with a vendor tag of "TNF" and a release
-tag of "pkgsrc-base", e.g:
+pkgsrc repository.
 
-$ cd .../pkgsrc/category/pkgname
-$ cvs import pkgsrc/category/pkgname TNF pkgsrc-base
+When the package is finished, "cvs add" the files. Start by adding the
+directory and then files in the directory. Don't forget to add the new package
+to the category's Makefile. Make sure you don't forget any files; you can check
+by running "cvs status". An example:
 
-Remember to move the directory from which you imported out of the way, or cvs
-will complain the next time you "cvs update" your source tree. Also don't
-forget to add the new package to the category's Makefile.
+$ cd .../pkgsrc/category
+$ cvs add pkgname
+$ cd pkgname
+$ cvs add DESCR Makefile PLIST distinfo buildlink3.mk patches
+$ cvs add patches/p*
+$ cvs status | less
+$ cvs commit
+$ cd ..
+$ vi Makefile # add SUBDIRS+=pkgname line
+$ cvs commit Makefile
 
 The commit message of the initial import should include part of the DESCR file,
 so people reading the mailing lists know what the package is/does.
 
-For new packages, "cvs import" is preferred to "cvs add" because the former
-gets everything with a single command, and provides a consistent tag.
+Also mention the new package in pkgsrc/doc/CHANGES-20xx.
+
+Previously, "cvs import" was suggested, but it was much easier to get wrong
+than "cvs add".
 
 21.5. Updating a package to a newer version
 
@@ -8783,7 +8827,7 @@ DISTNAME=       bison-1.25
 CATEGORIES=     devel
 MASTER_SITES=   ${MASTER_SITE_GNU}
 
-MAINTAINER=     thorpej@NetBSD.org
+MAINTAINER=     pkgsrc-users@NetBSD.org
 HOMEPAGE=       http://www.gnu.org/software/bison/bison.html
 COMMENT=        GNU yacc clone
 

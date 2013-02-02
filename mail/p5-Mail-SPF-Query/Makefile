@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.13 2010/08/21 16:35:07 seb Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/03 21:56:31 wiz Exp $
 
 DISTNAME=		Mail-SPF-Query-1.999
 PKGNAME=		p5-${DISTNAME}
-PKGREVISION=		3
+PKGREVISION=		4
 SVR4_PKGNAME=		p5msq
 CATEGORIES=		mail perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Mail/}
@@ -18,7 +18,6 @@ DEPENDS+=		p5-Sys-Hostname-Long-[0-9]*:../../sysutils/p5-Sys-Hostname-Long
 DEPENDS+=		p5-URI>=1.18:../../www/p5-URI
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Mail/SPF/Query/.packlist
 USE_LANGUAGES=		# empty

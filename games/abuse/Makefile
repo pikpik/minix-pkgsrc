@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2008/01/19 09:16:20 wiz Exp $
+# $NetBSD: Makefile,v 1.26 2012/10/06 11:54:29 asau Exp $
 
 DISTNAME=		abuse_pd
 PKGNAME=		abuse-2.0
@@ -10,8 +10,6 @@ DISTFILES=		${DISTNAME}.tgz abuse_data.tar.gz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		# AWOL
 COMMENT=		Full color 320x200 arcade quality platform shooter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=		yes
 GNU_CONFIGURE=		yes
@@ -29,5 +27,4 @@ post-extract:
 	&& ${GTAR} xfz ${DISTDIR}/abuse_data.tar.gz
 
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

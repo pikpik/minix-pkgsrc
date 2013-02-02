@@ -1,16 +1,14 @@
-# $NetBSD: Makefile,v 1.33 2010/02/10 19:34:07 joerg Exp $
+# $NetBSD: Makefile,v 1.35 2012/08/05 10:02:13 obache Exp $
 
 DISTNAME=	AuthPG-1.4
 PKGNAME=	ap13-auth-postgresql-1.4
-PKGREVISON=	3
+PKGREVISION=	1
 CATEGORIES=	www databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=authpg/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://authpg.sourceforge.net/
 COMMENT=	Module to allow apache authentication against a Postgresql database
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS=	ap-auth-postgresql-[0-9]*
 CONFLICTS+=	ap-auth-pgsql-[0-9]*

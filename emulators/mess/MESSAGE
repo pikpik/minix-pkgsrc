@@ -1,0 +1,7 @@
+===========================================================================
+$NetBSD$
+
+chdman, jedutil, ldresample, ldverify, romcmd and unidasm utilities are
+installed by the emulators/mame package.
+
+===========================================================================

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.42 2011/11/07 13:10:31 hans Exp $
+# $NetBSD: Makefile,v 1.45 2012/07/02 07:01:51 tron Exp $
 
-DISTNAME=	libtorrent-0.12.9
+DISTNAME=	libtorrent-0.13.2
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${HOMEPAGE:=downloads/}
 
@@ -8,8 +9,6 @@ OWNER=		tron@NetBSD.org
 HOMEPAGE=	http://libtorrent.rakshasa.no/
 COMMENT=	BitTorrent library written in C++ for *nix
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c c++
 USE_LIBTOOL=		yes
@@ -42,6 +41,10 @@ CONFIGURE_ARGS+=	--with-kqueue
 .if !empty(CC_VERSION:Mgcc-4.*)
 CXXFLAGS+=	-fpermissive -fno-strength-reduce -fno-thread-jumps \
 		-fno-inline -fforce-addr
+.endif
+
+.if !empty(CC_VERSION:Mgcc-*) && !empty(MACHINE_ARCH:Mi?86)
+CXXFLAGS+=	-march=i486
 .endif
 
 .include "../../security/openssl/buildlink3.mk"

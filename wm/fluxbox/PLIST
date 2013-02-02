@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.18 2009/06/14 18:18:58 joerg Exp $
+@comment $NetBSD$
 bin/fbrun
 bin/fbsetbg
 bin/fbsetroot
@@ -10,11 +10,13 @@ bin/startfluxbox
 man/man1/fbrun.1
 man/man1/fbsetbg.1
 man/man1/fbsetroot.1
-man/man1/fluxbox.1
 man/man1/fluxbox-remote.1
-man/man1/fluxstyle.1
+man/man1/fluxbox.1
 man/man1/startfluxbox.1
+man/man5/fluxbox-apps.5
 man/man5/fluxbox-keys.5
+man/man5/fluxbox-menu.5
+man/man5/fluxbox-style.5
 share/fluxbox/apps
 share/fluxbox/init
 share/fluxbox/keys
@@ -148,3 +150,4 @@ share/fluxbox/styles/qnx-photon
 share/fluxbox/styles/zimek_bisque/theme.cfg
 share/fluxbox/styles/zimek_darkblue/theme.cfg
 share/fluxbox/styles/zimek_green/theme.cfg
+share/fluxbox/windowmenu

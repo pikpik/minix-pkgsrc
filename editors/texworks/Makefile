@@ -1,16 +1,15 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:36:54 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/28 03:33:45 markd Exp $
 
-DISTNAME=	texworks-0.4.3-r858
-PKGNAME=	texworks-0.4.3
+DISTNAME=	texworks-0.4.4-r1004
+PKGNAME=	texworks-0.4.4
+PKGREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://texworks.googlecode.com/files/
 
 MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://www.tug.org/texworks/
-COMMENT=	a simple TeX front-end program
+COMMENT=	Simple TeX front-end program
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_TOOLS+=	pkg-config gmake
@@ -29,7 +28,7 @@ pre-configure:
 	${LN} -sf ${QTDIR}/bin/qmake ${BUILDLINK_DIR}/bin/
 
 do-configure:
-	cd ${WRKSRC}; env QTDIR=${QTDIR} qmake INSTALL_PREFIX=${PREFIX}
+	cd ${WRKSRC}; env QTDIR=${QTDIR} qmake INSTALL_PREFIX=${PREFIX} TW_DICPATH=${BUILDLINK_PREFIX.hunspell}/share/hunspell
 
 BUILDLINK_DEPMETHOD.qt4-tools=	full
 
@@ -39,4 +38,5 @@ BUILDLINK_DEPMETHOD.qt4-tools=	full
 .include "../../x11/qt4-libs/buildlink3.mk"
 .include "../../x11/qt4-tools/buildlink3.mk"
 .include "../../x11/qt4-qdbus/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.7 2010/10/25 20:55:28 markd Exp $
+@comment $NetBSD: PLIST,v 1.11 2012/04/15 05:54:53 markd Exp $
 bin/checkXML
 bin/kbuildsycoca4
 bin/kconfig_compiler
@@ -221,6 +221,7 @@ include/KDE/KArchiveDirectory
 include/KDE/KArchiveEntry
 include/KDE/KArchiveFile
 include/KDE/KArrowButton
+include/KDE/KAscii
 include/KDE/KAssistantDialog
 include/KDE/KAuth/Action
 include/KDE/KAuth/ActionReply
@@ -602,6 +603,7 @@ include/KDE/KRandomSequence
 include/KDE/KRatingWidget
 include/KDE/KRecentDocument
 include/KDE/KRecentFilesAction
+include/KDE/KRecursiveFilterProxyModel
 include/KDE/KRemoteEncoding
 include/KDE/KReplace
 include/KDE/KReplaceDialog
@@ -1904,6 +1906,10 @@ include/threadweaver/ThreadWeaver.h
 include/threadweaver/WeaverInterface.h
 include/threadweaver/WeaverObserver.h
 include/threadweaver/threadweaver_export.h
+lib/cmake/KDeclarative/KDeclarativeConfig.cmake
+lib/cmake/KDeclarative/KDeclarativeConfigVersion.cmake
+lib/cmake/KDeclarative/KDeclarativeLibraryTargets-relwithdebinfo.cmake
+lib/cmake/KDeclarative/KDeclarativeLibraryTargets.cmake
 lib/kde4/emoticonstheme_adium.so
 lib/kde4/emoticonstheme_kde.so
 lib/kde4/emoticonstheme_pidgin.so
@@ -1935,6 +1941,7 @@ lib/kde4/libexec/fileshareset
 lib/kde4/libexec/kauth-policy-gen
 lib/kde4/libexec/kconf_update
 lib/kde4/libexec/kdesu_stub
+${PLIST.kgrantpty}lib/kde4/libexec/kgrantpty
 lib/kde4/libexec/kio_http_cache_cleaner
 lib/kde4/libexec/kioslave
 lib/kde4/libexec/klauncher
@@ -2090,12 +2097,14 @@ lib/libthreadweaver.so
 lib/libthreadweaver.so.4
 lib/libthreadweaver.so.4.8.0
 man/man1/checkXML.1
+man/man1/kconfig_compiler.1
 man/man1/kde4-config.1
 man/man1/kdecmake.1
 man/man1/kjs.1
 man/man1/kjscmd.1
 man/man1/kross.1
 man/man1/makekdewidgets.1
+man/man1/preparetips.1
 man/man7/kdeoptions.7
 man/man7/qtoptions.7
 man/man8/kbuildsycoca4.8

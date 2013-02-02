@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2010/01/17 12:02:57 wiz Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/29 05:06:55 asau Exp $
 #
 
 DISTNAME=	wmweather-2.4.2
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	x11
 MASTER_SITES=	http://people.debian.org/~godisch/wmweather/
 
@@ -14,7 +14,6 @@ WRKSRC=			${WRKDIR}/${DISTNAME}/src
 
 GNU_CONFIGURE=		yes
 USE_TOOLS+=		gmake xmessage:run
-PKG_DESTDIR_SUPPORT= 	user-destdir
 
 CONFIGURE_ARGS+=	--with-sysconfdir=${PKG_SYSCONFDIR:Q}
 CONFIGURE_ARGS+=	--with-xmessage=${TOOLS_PATH.xmessage}
@@ -30,6 +29,5 @@ BUILDLINK_DEPMETHOD.libXt?=	build
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

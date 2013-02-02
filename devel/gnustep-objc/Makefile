@@ -1,19 +1,16 @@
-# $NetBSD: Makefile,v 1.20 2009/05/19 08:59:09 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/22 02:13:05 rh Exp $
 #
 
-DISTNAME=	gnustep-objc-1.6.0
-PKGREVISION=	2
+DISTNAME=	libobjc2-1.6.1
+PKGNAME=	${DISTNAME:S/libobjc2/gnustep-objc/}
 CATEGORIES=	devel gnustep
-MASTER_SITES=	${MASTER_SITE_GNUSTEP:=libs/}
+MASTER_SITES=	http://download.gna.org/gnustep/
+EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	rh@NetBSD.org
-HOMEPAGE=	http://www.gnustep.org/
+HOMEPAGE=	https://github.com/gnustep/gnustep-libobjc2
 COMMENT=	Objective-C runtime
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=		user-destdir
-
-MAKE_JOBS_SAFE=	no
 
 USE_LANGUAGES=			objc
 USE_TOOLS+=			gmake

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.18 2008/06/20 01:09:32 joerg Exp $
+# $NetBSD: Makefile,v 1.19 2011/04/22 13:44:29 obache Exp $
 #
 
 DISTNAME=	ap-utils-1.3.2
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	wojtek@tensor.3miasto.net
 HOMEPAGE=	http://ap-utils.polesye.net/
 COMMENT=	Wireless access points UNIX management tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 USE_PKGLOCALEDIR=	YES

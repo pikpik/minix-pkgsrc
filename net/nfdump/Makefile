@@ -1,17 +1,14 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:41:16 wiz Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/08 23:02:17 adam Exp $
 #
 
-DISTNAME=	nfdump-1.5.7
-#PKGREVISION=	1
-PKGREVISION=	7
+DISTNAME=	nfdump-1.6.6
+PKGREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nfdump/}
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://nfdump.sourceforge.net/
 COMMENT=	Tools to collect and process netflow data
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 TEST_TARGET=	test

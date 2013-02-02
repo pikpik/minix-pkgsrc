@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2011/01/29 14:53:14 gdt Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/31 11:19:32 asau Exp $
 #
 
-DISTNAME=	mock-0.8.0
+DISTNAME=	mock-1.0.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	devel
 MASTER_SITES=	http://pypi.python.org/packages/source/m/mock/
@@ -10,8 +10,6 @@ MAINTAINER=	gdt@ir.bbn.com
 HOMEPAGE=	http://pypi.python.org/pypi/mock
 COMMENT=	Python testing framework
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

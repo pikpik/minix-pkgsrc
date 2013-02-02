@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/04/12 15:05:24 joerg Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/23 10:24:19 wiz Exp $
 #
 
 DISTNAME=		libXprintUtil-1.0.1
@@ -10,8 +10,6 @@ MAINTAINER=		joerg@NetBSD.org
 HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X Print Utility Library
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LIBTOOL=		yes
 USE_TOOLS+=		pkg-config
 GNU_CONFIGURE=		yes
@@ -21,6 +19,5 @@ PKGCONFIG_OVERRIDE+=	xprintutil.pc.in
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXp/buildlink3.mk"
 .include "../../x11/libXt/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

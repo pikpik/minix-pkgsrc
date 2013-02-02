@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.38 2011/04/22 13:44:46 obache Exp $
+# $NetBSD: Makefile,v 1.40 2012/10/23 19:51:36 asau Exp $
 #
 
 DISTNAME=		xen-2.0.7-src
 PKGNAME=		xentools20-2.0.7
-PKGREVISION=		15
+PKGREVISION=		16
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.cl.cam.ac.uk/research/srg/netos/xen/downloads/
 EXTRACT_SUFX=		.tgz
@@ -17,8 +17,6 @@ LICENSE=		gnu-gpl-v2
 DEPENDS+=		${PYPKGPREFIX}-twisted-[0-9]*:../../net/py-twisted
 
 PKG_SYSCONFSUBDIR=	xen
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM=	Linux-2.[46]*-i386 NetBSD-*-i386
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/11/13 19:23:56 adrianp Exp $
+# $NetBSD: Makefile,v 1.19 2012/06/16 03:25:41 taca Exp $
 
 DISTNAME=	jpgraph-1.18
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME}
@@ -6,7 +6,7 @@ CATEGORIES=	graphics www
 MASTER_SITES=	http://members.chello.se/jpgraph/jpgdownloads/
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://www.aditus.nu/jpgraph/index.php
+HOMEPAGE=	http://jpgraph.net/
 COMMENT=	Object Oriented class library for PHP
 
 CONFLICTS=	php-jgraph-[0-9]*
@@ -14,8 +14,6 @@ CONFLICTS=	php-jgraph-[0-9]*
 DEPENDS+=	${PHP_PKG_PREFIX}-gd>=4.3.1:../../graphics/php-gd
 
 USE_TOOLS+=	pax
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=	YES
 NO_BUILD=	YES

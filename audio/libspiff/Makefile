@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2008/10/31 22:36:28 bjs Exp $
+# $NetBSD: Makefile,v 1.6 2011/02/28 14:52:40 wiz Exp $
 #
 
 DISTNAME=	libspiff-1.0.0
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tar.bz2
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://libspiff.sourceforge.net/
 COMMENT=	XML Shareable Playlist Format (XSPF) library
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes

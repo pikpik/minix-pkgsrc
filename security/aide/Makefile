@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2010/09/13 13:09:20 pettai Exp $
+# $NetBSD: Makefile,v 1.33 2012/03/12 14:18:44 fhajny Exp $
 #
 
 DISTNAME=	aide-0.15.1
@@ -9,8 +9,6 @@ MAINTAINER=	pettai@NetBSD.org
 HOMEPAGE=	http://www.cs.tut.fi/~rammer/aide.html
 COMMENT=	Free intrusion detection system for checking file integrity
 LICENSE=	artistic
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILDLINK_API_DEPENDS.mhash?=	mhash>=0.8.17
 

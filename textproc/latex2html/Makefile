@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.36 2011/07/09 14:19:30 bsiegert Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/03 21:57:49 wiz Exp $
 
 DISTNAME=	latex2html-2008
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc converters
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN:=support/latex2html/}
 
 MAINTAINER=	wennmach@NetBSD.org
 HOMEPAGE=	http://www.latex2html.org/
 COMMENT=	LaTeX to HTML converter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	tex-graphics-[0-9]*:../../print/tex-graphics
 DEPENDS+=	tex-hyperref-[0-9]*:../../print/tex-hyperref
@@ -21,7 +19,6 @@ DEPENDS+=	netpbm>=10.29nb2:../../graphics/netpbm
 
 USE_TOOLS+=		gs:run perl:run
 GNU_CONFIGURE=		yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

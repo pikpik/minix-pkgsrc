@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/03/09 23:20:01 snj Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/06 11:54:57 asau Exp $
 
 DISTNAME=	tyrquake-0.61
 CATEGORIES=	games x11
@@ -9,8 +9,6 @@ HOMEPAGE=	http://disenchant.net/engine.html
 COMMENT=	Conservative branch of Quake
 
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 
@@ -32,7 +30,6 @@ do-install:
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/libXxf86vm/buildlink3.mk"
 .include "../../x11/xf86dgaproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/oss.buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

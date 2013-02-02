@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.61 2010/08/21 16:34:51 seb Exp $
+# $NetBSD: Makefile,v 1.64 2012/10/03 11:43:48 asau Exp $
 
-DISTNAME=		vile-9.7
+DISTNAME=		vile-9.8
 PKGNAME=		x${DISTNAME}
-PKGREVISION=		4
+PKGREVISION=		1
 CATEGORIES=		editors
 MASTER_SITES=		ftp://invisible-island.net/vile/
 EXTRACT_SUFX=		.tgz
@@ -10,8 +10,7 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://invisible-island.net/vile/
 COMMENT=		VI Like Emacs, X11 version -- a fully "X aware" vi work-alike
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		gnu-gpl-v2
 
 DISTINFO_FILE=		${.CURDIR}/../../editors/vile/distinfo
 PATCHDIR=		${.CURDIR}/../../editors/vile/patches
@@ -26,6 +25,8 @@ MAKE_FILE=		makefile
 INSTALL_TARGET=		install install-doc install-perl
 
 REPLACE_PERL=		perl/vileget
+REPLACE_PERL+=		macros/lxvile
+REPLACE_PERL+=		macros/lxvile-fonts
 USE_TOOLS+=		perl:run
 
 DATADIR=		${PREFIX}/share/xvile

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/01/29 13:32:20 obache Exp $
+# $NetBSD: Makefile,v 1.19 2012/06/14 07:45:13 sbd Exp $
 #
 
 DISTNAME=	accerciser-1.12.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/accerciser/1.12/}
 EXTRACT_SUFX=	.tar.bz2
@@ -16,8 +16,6 @@ DEPENDS+=	${PYPKGPREFIX}-gnome2-desktop-[0-9]*:../../x11/py-gnome2-desktop
 DEPENDS+=	${PYPKGPREFIX}-gtk2>=2.8:../../x11/py-gtk2
 DEPENDS+=	${PYPKGPREFIX}-at-spi>=1.23.4:../../devel/py-at-spi
 DEPENDS+=	${PYPKGPREFIX}-ipython-[0-9]*:../../devel/py-ipython
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
 USE_PKGLOCALEDIR=	yes

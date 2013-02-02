@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.61 2011/11/21 01:35:29 marino Exp $
+# $NetBSD: Makefile,v 1.63 2012/09/11 23:59:32 asau Exp $
 
 DISTNAME=	festival-2.1-release
 PKGNAME=	festival-2.1
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	http://festvox.org/packed/festival/2.1/
 DISTFILES=	${DISTNAME}.tar.gz \
@@ -12,8 +12,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.cstr.ed.ac.uk/projects/festival/
 COMMENT=	Advanced multi-lingual speech synthesis system
 LICENSE=	original-bsd	
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	c c++

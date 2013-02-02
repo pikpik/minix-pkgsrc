@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2011/01/13 13:36:54 wiz Exp $
+# $NetBSD: Makefile,v 1.32 2012/12/16 01:52:36 obache Exp $
 
 DISTNAME=	soprano-2.7.4
+PKGREVISION=	7
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=soprano/}
 EXTRACT_SUFX=	.tar.bz2
@@ -9,8 +10,6 @@ MAINTAINER=	markd@NetBSD.org
 HOMEPAGE=	http://soprano.sourceforge.net/
 COMMENT=	QT based RDF framework
 LICENSE=	gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c c++
 USE_CMAKE=	yes

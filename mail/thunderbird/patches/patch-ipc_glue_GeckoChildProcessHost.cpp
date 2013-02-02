@@ -1,17 +1,31 @@
-$NetBSD: patch-ipc_glue_GeckoChildProcessHost.cpp,v 1.1 2012/03/06 12:34:09 ryoon Exp $
+$NetBSD: patch-ipc_glue_GeckoChildProcessHost.cpp,v 1.3 2012/09/02 06:43:40 ryoon Exp $
 
---- mozilla/ipc/glue/GeckoChildProcessHost.cpp.orig	2011-12-20 23:28:19.000000000 +0000
+--- mozilla/ipc/glue/GeckoChildProcessHost.cpp.orig	2012-11-19 22:42:22.000000000 +0000
 +++ mozilla/ipc/glue/GeckoChildProcessHost.cpp
-@@ -430,7 +430,7 @@
+@@ -4,7 +4,13 @@
+  * License, v. 2.0. If a copy of the MPL was not distributed with this
+  * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+ 
++#if defined(__NetBSD__)
++_Pragma("GCC visibility push(default)")
++#endif
+ #include "GeckoChildProcessHost.h"
++#if defined(__NetBSD__)
++_Pragma("GCC visibility pop")
++#endif
+ 
+ #include "base/command_line.h"
+ #include "base/path_service.h"
+@@ -437,7 +443,7 @@ GeckoChildProcessHost::PerformAsyncLaunc
    // and passing wstrings from one config to the other is unsafe.  So
    // we split the logic here.
  
 -#if defined(OS_LINUX) || defined(OS_MACOSX)
 +#if defined(OS_LINUX) || defined(OS_MACOSX) || defined(OS_BSD)
    base::environment_map newEnvVars;
-   // XPCOM may not be initialized in some subprocesses.  We don't want
-   // to initialize XPCOM just for the directory service, especially
-@@ -445,8 +445,8 @@
+   base::ChildPrivileges privs = kLowRightsSubprocesses ?
+                                 base::UNPRIVILEGED :
+@@ -455,8 +461,8 @@ GeckoChildProcessHost::PerformAsyncLaunc
        if (NS_SUCCEEDED(rv)) {
          nsCString path;
          greDir->GetNativePath(path);
@@ -22,7 +36,7 @@ $NetBSD: patch-ipc_glue_GeckoChildProcessHost.cpp,v 1.1 2012/03/06 12:34:09 ryoo
          path += "/lib";
  #  endif  // MOZ_WIDGET_ANDROID
          const char *ld_library_path = PR_GetEnv("LD_LIBRARY_PATH");
-@@ -557,7 +557,7 @@
+@@ -575,7 +581,7 @@ GeckoChildProcessHost::PerformAsyncLaunc
    childArgv.push_back(pidstring);
  
  #if defined(MOZ_CRASHREPORTER)
@@ -31,13 +45,12 @@ $NetBSD: patch-ipc_glue_GeckoChildProcessHost.cpp,v 1.1 2012/03/06 12:34:09 ryoo
    int childCrashFd, childCrashRemapFd;
    if (!CrashReporter::CreateNotificationPipeForChild(
          &childCrashFd, &childCrashRemapFd))
-@@ -594,7 +594,7 @@
+@@ -612,7 +618,7 @@ GeckoChildProcessHost::PerformAsyncLaunc
  #endif
  
    base::LaunchApp(childArgv, mFileMap,
 -#if defined(OS_LINUX) || defined(OS_MACOSX)
 +#if defined(OS_LINUX) || defined(OS_MACOSX) || defined(OS_BSD)
-                   newEnvVars,
+                   newEnvVars, privs,
  #endif
                    false, &process, arch);
-

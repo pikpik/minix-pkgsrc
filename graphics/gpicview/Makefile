@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2012/02/06 12:40:25 wiz Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/06 14:10:57 asau Exp $
 
 DISTNAME=	gpicview-0.2.2
-PKGREVISION=	2
+PKGREVISION=	6
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=lxde/}
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://lxde.sourceforge.net/gpicview/
 COMMENT=	Lightweight image viewer
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	pkg-config gmake intltool msgfmt

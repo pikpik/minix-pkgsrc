@@ -1,5 +1,7 @@
 @comment $NetBSD$
+share/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 share/texmf-dist/tex/latex/fontspec/fontspec-patches.sty
+share/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 share/texmf-dist/tex/latex/fontspec/fontspec.cfg
 share/texmf-dist/tex/latex/fontspec/fontspec.lua
 share/texmf-dist/tex/latex/fontspec/fontspec.sty

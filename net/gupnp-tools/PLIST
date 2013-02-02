@@ -1,4 +1,5 @@
 @comment $NetBSD$
+bin/gssdp-discover
 bin/gupnp-av-cp
 bin/gupnp-network-light
 bin/gupnp-universal-cp

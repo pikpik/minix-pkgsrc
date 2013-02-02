@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.50 2011/09/14 15:46:49 hans Exp $
+# $NetBSD: Makefile,v 1.52 2012/09/26 13:06:17 jperkin Exp $
 
 PKGNAME=	${DISTNAME:C/[^[:alnum:]]*//}
 PKGREVISION=	1
@@ -13,8 +13,6 @@ MAKE_ENV+=		MPG123_PROGRAM=mpg123
 MAKE_ENV+=		EXTRA_INSTALL_TARGETS="install-exec-am install-data-am"
 
 MPG123_BUILDING_BASE=	# empty
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 
@@ -35,10 +33,6 @@ PLIST.oss	=	yes
 LIBS+=		${LIBOSSAUDIO}
 CPPFLAGS+=	-DDEVOSSAUDIO="\"${DEVOSSAUDIO}\""
 CPPFLAGS+=	-DDEVOSSSOUND="\"${DEVOSSSOUND}\""
-.endif
-
-.if ${OPSYS} == "SunOS"
-MAKE_ENV+=	SunOS_LDFLAGS="-shared -mimpure-text"
 .endif
 
 # MPG123_MODULE is not finally set yet, to avoid NOT_FOR_PLATFORM triggers

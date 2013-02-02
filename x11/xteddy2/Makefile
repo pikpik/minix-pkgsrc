@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.35 2011/04/22 13:45:17 obache Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/29 05:07:22 asau Exp $
 
 DISTNAME=	xteddy-2.0.1
-PKGREVISION=	17
+PKGREVISION=	18
 CATEGORIES=	x11 games
 MASTER_SITES=	http://staffwww.itn.liu.se/~stegu/xteddy/
 
 MAINTAINER=	johnam@mail.kemper.org
 HOMEPAGE=	http://staffwww.itn.liu.se/~stegu/xteddy/
 COMMENT=	Teddy bear for your desktop
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	xteddy-1.*
 
@@ -27,5 +25,4 @@ SUBST_SED.prefix=	-e 's|@PREFIX@|${PREFIX}|g'
 .include "../../graphics/imlib/buildlink3.mk"
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

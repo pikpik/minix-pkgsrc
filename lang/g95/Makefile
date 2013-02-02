@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2011/01/23 09:42:10 markd Exp $
+# $NetBSD: Makefile,v 1.11 2012/07/21 22:01:17 dholland Exp $
 
 DISTNAME=		g95_source
 VERSION=		0.92
+PKGREVISION=		1
 PKGNAME=		g95-${VERSION}
 CATEGORIES=		lang
 EXTRACT_SUFX.g95_source=	.tgz
@@ -15,8 +16,6 @@ MAINTAINER=		wennmach@NetBSD.org
 HOMEPAGE=		http://www.g95.org/
 COMMENT=		Fortran 95 compiler from g95.org
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=		YES
 USE_TOOLS+=		gmake gtar
 WRKSRC=			${WRKDIR}/${PKGNAME_NOREV}
@@ -27,6 +26,7 @@ GCC_G95_DIR=		${GCC_DIR}/g95
 GCC_CONFIGURE_SCRIPT=	../configure
 GCC_CONFIGURE_ARGS=	${CONFIGURE_ARGS}
 GCC_CONFIGURE_ARGS+=	--enable-languages=c
+GCC_CONFIGURE_ARGS+=	--disable-multilib
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "SunOS"

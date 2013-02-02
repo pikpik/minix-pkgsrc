@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/03/06 11:09:06 sborrill Exp $
+# $NetBSD: Makefile,v 1.7 2012/06/05 12:58:53 sborrill Exp $
 #
 
 # Values from XenServer 6.0.2 = 6, 0, 2, 52898
@@ -10,7 +10,7 @@ XENTEENY=	2
 XENBUILD=	52898
 
 VERSION=	${XENMAJOR}.${XENMINOR}.${XENTEENY}
-PKGREVISION=	1
+PKGREVISION=	3
 DISTNAME=	xe-guest-utilities_5.6.0-595
 CATEGORIES=	sysutils
 PKGNAME=	xe-guest-utilities-${VERSION}
@@ -22,8 +22,6 @@ COMMENT=	NetBSD VM tools for Citrix XenServer
 LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	xenstoretools-[0-9]*:../../sysutils/xenstoretools
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 ONLY_FOR_PLATFORM+=	NetBSD-[5-9].*-x86_64 NetBSD-[5-9].*-i386
 

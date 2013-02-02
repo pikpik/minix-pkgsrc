@@ -1,17 +1,12 @@
-# $NetBSD: Makefile,v 1.7 2011/10/29 13:47:03 cheusov Exp $
+# $NetBSD: Makefile,v 1.13 2012/07/20 12:30:37 taca Exp $
 
 MODNAME=		intl
-PECL_VERSION=		1.1.2
-PKGREVISION=		2
-PECL_LEGACY_VERSION_SCHEME=	yes
 CATEGORIES+=		textproc
 COMMENT=		PHP extension for i18n
+LICENSE=		php
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
+USE_LANGUAGES=		c c++
 CONFIGURE_ARGS+=	--enable-${MODNAME}=shared,${BUILDLINK_DIR}
-
-USE_LANGUAGES+=		c c++
 
 .include "../../lang/php/ext.mk"
 .include "../../textproc/icu/buildlink3.mk"

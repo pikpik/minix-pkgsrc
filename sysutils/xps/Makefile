@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.37 2011/12/09 14:36:36 drochner Exp $
+# $NetBSD: Makefile,v 1.40 2012/10/23 19:51:39 asau Exp $
 
 DISTNAME=	xps-4.2
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=motif-pstree/}
 
@@ -9,11 +9,11 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://motif-pstree.sourceforge.net/
 COMMENT=	Displays the Unix process list as a hierarchical tree
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_TOOLS+=		gmake perl pod2man pod2html
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	x_applibdir=${PREFIX}/lib/X11/app-defaults
+
+CFLAGS.NetBSD+=	-D_KMEMUSER
 
 post-extract:
 	${LN} -s FreeBSD ${WRKSRC}/src/DragonFly

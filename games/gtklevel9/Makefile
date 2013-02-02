@@ -1,18 +1,16 @@
-# $NetBSD: Makefile,v 1.16 2012/02/06 12:40:12 wiz Exp $
+# $NetBSD: Makefile,v 1.22 2012/10/08 23:01:35 adam Exp $
 
 DISTNAME=		Level9_4.0_Source
 PKGNAME=		gtklevel9-4.0
-PKGREVISION=		12
+PKGREVISION=		16
 CATEGORIES=		games
 MASTER_SITES=		http://www.ifarchive.org/if-archive/level9/interpreters/level9/
 EXTRACT_SUFX=		.zip
 DIST_SUBDIR=		${PKGNAME_NOREV}
 
-MAINTAINER=		dillo@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ifarchive.org/if-archive/level9/interpreters/level9/
 COMMENT=		GTK+ port of the Level 9 text adventure interpreter
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/Gtk
 

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.67 2008/02/04 14:42:15 wiz Exp $
+# $NetBSD: Makefile,v 1.69 2012/09/15 09:04:12 cheusov Exp $
 
 DISTNAME=	xosview-1.8.3
 PKGREVISION=	2
@@ -10,18 +10,17 @@ HOMEPAGE=	http://xosview.sourceforge.net/
 COMMENT=	X11 graphical display of OS statistics
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_X11BASE=		YES
 USE_LANGUAGES=		c c++
 
 HAS_CONFIGURE=		YES
-CONFIGURE_ARGS+=	--prefix=${PREFIX:Q}
-CONFIGURE_ARGS+=	--x-includes=${X11BASE:Q}/include
-CONFIGURE_ARGS+=	--x-libraries=${X11BASE:Q}/lib
+CONFIGURE_ARGS+=	--prefix=${PREFIX}
+CONFIGURE_ARGS+=	--x-includes=${X11BASE}/include
+CONFIGURE_ARGS+=	--x-libraries=${X11BASE}/lib
 
 INSTALLATION_DIRS=	bin lib/X11/app-defaults ${PKGMANDIR}/man1
-INSTALL_MAKE_FLAGS+=	MANDIR=${DESTDIR}${PREFIX:Q}/${PKGMANDIR:Q}/man1
+INSTALL_MAKE_FLAGS+=	MANDIR=${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
 INSTALL_MAKE_FLAGS+=	PREFIX_TO_USE=${DESTDIR}${PREFIX}
 
 .include "../../mk/bsd.prefs.mk"
@@ -34,7 +33,7 @@ BUILD_DEFS+=	UVM
 .  endif
 .elif ${OPSYS} == "SunOS"
 USE_TOOLS+=	gmake
-CPPFLAGS+=	-I${X11BASE:Q}/include
+CPPFLAGS+=	-I${X11BASE}/include
 LIBS+=		-lsocket -lnsl
 .elif ${OPSYS} == "Linux"
 USE_TOOLS+=	gmake

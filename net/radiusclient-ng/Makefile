@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2007/10/14 01:42:27 heinz Exp $
+# $NetBSD: Makefile,v 1.3 2009/05/21 11:34:56 zafer Exp $
 
 DISTNAME=	radiusclient-ng-0.5.5.1
 CATEGORIES=	net
@@ -7,8 +7,6 @@ MASTER_SITES=	http://download.berlios.de/radiusclient-ng/
 MAINTAINER=	bouyer@NetBSD.org
 COMMENT=	Client library and basic utilities for Radius authenticated login
 HOMEPAGE=	http://developer.berlios.de/projects/radiusclient-ng/
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.21 2010/03/07 08:52:27 lukem Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/23 17:19:05 asau Exp $
 #
 
-DISTNAME=	freerdist-0.92
-PKGREVISION=	4
+DISTNAME=	freerdist-0.94
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.astron.com/pub/freerdist/
 
@@ -18,11 +18,5 @@ INSTALL_TARGET=	install install.man
 MAKE_ENV+=	RDIST6_NAME=${RDIST6_NAME:Q}
 
 CONFLICTS=	rdist6-[0-9]*
-
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-post-extract:
-	${CP} ${FILESDIR}/os-dragonfly.h ${WRKSRC}/config
-	${ECHO} LIB_SYS=-lcompat > ${WRKSRC}/config/mf.dragonfly
 
 .include "../../mk/bsd.pkg.mk"

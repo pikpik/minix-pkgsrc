@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2009/08/09 13:19:35 tonnerre Exp $
+# $NetBSD: Makefile,v 1.20 2010/02/02 23:36:16 joerg Exp $
 #
 
 DISTNAME=	irssi-icb-0.14
@@ -11,8 +11,6 @@ DISTFILES=	${DISTNAME}.tar.gz ${SILC_CLIENT_DISTFILE}
 MAINTAINER=	salo@NetBSD.org
 HOMEPAGE=	http://www.silcnet.org/
 COMMENT=	silc-client plugin to access ICB networks
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	silc-client>=${SILC_CLIENT_VERSION}:../../chat/silc-client
 

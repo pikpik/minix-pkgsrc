@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2012/02/29 16:32:21 hans Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/02 17:27:02 wiz Exp $
 #
 
-DISTNAME=	mdds_0.5.4
+DISTNAME=	mdds_0.6.1
 PKGNAME=	${DISTNAME:S/_/-/}
 CATEGORIES=	devel
 MASTER_SITES=	http://multidimalgorithm.googlecode.com/files/
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/multidimalgorithm/
 COMMENT=	Collection of multi-dimensional data structure and indexing algorithms
 LICENSE=	mit
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 GNU_CONFIGURE=		yes
@@ -24,6 +22,7 @@ do-install:
 	for i in ${WRKSRC}/include/mdds/*.*; do \
 		${INSTALL_DATA} $$i ${DESTDIR}${PREFIX}/include/mdds; \
 	done
+	rm -f ${DESTDIR}${PREFIX}/include/mdds/*orig
 	for i in ${WRKSRC}/include/mdds/hash_container/*.*; do \
 		${INSTALL_DATA} $$i \
 			${DESTDIR}${PREFIX}/include/mdds/hash_container; \

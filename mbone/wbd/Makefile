@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2010/01/25 20:55:45 is Exp $
+# $NetBSD: Makefile,v 1.5 2012/08/21 21:51:07 marino Exp $
 #
 
 DISTNAME=		wbd-1.0ucl4
 PKGNAME=		wbd-1.0p4
-PKGREVISION=		1
+PKGREVISION=		2
 CATEGORIES=		mbone tk
 MASTER_SITES=		http://www-mice.cs.ucl.ac.uk/multimedia/software/wbd/1.0ucl4/
 
@@ -15,7 +15,6 @@ MAKE_FILE=		makefile
 WRKSRC=			${WRKDIR}/wbd
 BUILD_TARGET=		wbd
 NO_CONFIGURE=		yes
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin
 

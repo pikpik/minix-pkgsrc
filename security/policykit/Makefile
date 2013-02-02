@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.20 2012/02/06 12:41:28 wiz Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/03 21:57:34 wiz Exp $
 #
 
 POLICYKIT_VER=		0.9
 DISTNAME=		PolicyKit-${POLICYKIT_VER}
 PKGNAME=		policykit-${POLICYKIT_VER}
-PKGREVISION=		10
+PKGREVISION=		13
 CATEGORIES=		security
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 
@@ -13,7 +13,6 @@ HOMEPAGE=		http://hal.freedesktop.org/
 COMMENT=		Framework for managing admin policies and privileges
 LICENSE=		mit
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 BUILD_DEPENDS+=		libxslt-[0-9]*:../../textproc/libxslt
 BUILD_DEPENDS+=		docbook-xsl-[0-9]*:../../textproc/docbook-xsl
 

@@ -1,13 +1,12 @@
-$NetBSD: distinfo,v 1.4 2009/11/26 18:10:14 joerg Exp $
+$NetBSD: distinfo,v 1.5 2011/12/19 00:52:09 dholland Exp $
 
-SHA1 (mg-20090107.tar.gz) = 3191c6dea4996347b6d40b34fa4c88a57e5ef42e
-RMD160 (mg-20090107.tar.gz) = d35cc894d2be7bfafb1943fefb5529c2dcbc2002
-Size (mg-20090107.tar.gz) = 136530 bytes
-SHA1 (patch-aa) = f339158b220d8cce9e2603e99dbb4dfd9948fb37
-SHA1 (patch-ab) = c356d5bc27db78e953051b5776ef87784e569809
-SHA1 (patch-ad) = afc99771b03d3f572c5c62d24d69c4bbd52e38c4
-SHA1 (patch-af) = 408d17157a3661490549ebfa7787823f15f8e604
-SHA1 (patch-ag) = 276ded2eb9c45458bf7b9a91f70f0f25c97cec21
-SHA1 (patch-ah) = 7415253c9c4e929b8749a4551ebbbb5fc7b7f502
-SHA1 (patch-ai) = 671dad25d5467d976355c9d55df0589b9c5dbb69
+SHA1 (mg-20110905.tar.gz) = 51d2bac801cab33c9b552c36db5f8637fbbe9363
+RMD160 (mg-20110905.tar.gz) = 721b2a2e9059ddf6ea637dafd205575150b58c8c
+Size (mg-20110905.tar.gz) = 138805 bytes
+SHA1 (patch-ab) = 2deb4c7e78d580434cfedfe9ea23add3b19cc300
+SHA1 (patch-ad) = fe5a106f84b95dc3c913fee6a818d767e5c6fecc
+SHA1 (patch-af) = 3c36053fe5ad58751b26ea23672f6107d2fa3046
+SHA1 (patch-ag) = f6ac048ea94517fd0c4e3fb9b72045b8eca063fd
+SHA1 (patch-ah) = 6a2f1c636fdf0a8ad0e04b64462207bd5a77dd7c
+SHA1 (patch-ai) = bc9950469e4792867532dcaddba331f07131215c
 SHA1 (patch-tty.c) = 280b10d531e4cf6932a8bba73ebd251d5c0f91fb

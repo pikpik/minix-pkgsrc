@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.94 2012/02/23 07:57:55 asau Exp $
+# $NetBSD: Makefile,v 1.100 2012/09/11 23:04:23 asau Exp $
 #
 
-DISTNAME=		mathomatic-15.8.1
+DISTNAME=		mathomatic-16.0.4
 CATEGORIES=		math
 MASTER_SITES=		http://mathomatic.org/
 EXTRACT_SUFX=		.tar.bz2
@@ -12,7 +12,6 @@ COMMENT=		Small portable symbolic math program
 LICENSE=		gnu-lgpl-v2.1
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_CONFIGURE=		yes
 MAKE_FILE=		makefile
@@ -26,5 +25,5 @@ TEST_TARGET=		test
 BUILDLINK_API_DEPENDS.readline+=	readline>=5.1pl1nb1
 .include "../../devel/readline/buildlink3.mk"
 #.include "../../devel/ncurses/buildlink3.mk"
-#.include "../../sysutils/desktop-file-utils/desktopdb.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"

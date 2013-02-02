@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.94 2012/02/06 12:39:45 wiz Exp $
+# $NetBSD: Makefile,v 1.101 2012/10/03 21:54:26 wiz Exp $
 
 DISTNAME=	rrdtool-1.4.7
-PKGREVISION=	2
+PKGREVISION=	8
 CATEGORIES=	databases graphics net
 MASTER_SITES=	http://oss.oetiker.ch/rrdtool/pub/
 
@@ -9,8 +9,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://oss.oetiker.ch/rrdtool/
 COMMENT=	Data analysis tool generating graphical representations
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		dejavu-ttf>=2.26:../../fonts/dejavu-ttf
 

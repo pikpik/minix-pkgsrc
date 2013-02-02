@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2012/02/06 12:40:40 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/06 14:25:13 asau Exp $
 #
 
-DISTNAME=	ibus-unikey-0.6.0
-PKGREVISION=	2
+DISTNAME=	ibus-unikey-0.6.1
+PKGREVISION=	4
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://ibus-unikey.googlecode.com/files/
 
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://code.google.com/p/ibus-unikey/
 COMMENT=	Vietnamese Input Method Engine for IBUS using Unikey IME
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes

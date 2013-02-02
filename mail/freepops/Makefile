@@ -1,23 +1,22 @@
-# $NetBSD: Makefile,v 1.15 2011/12/17 12:49:27 marino Exp $
+# $NetBSD: Makefile,v 1.20 2012/12/12 12:52:10 wiz Exp $
 #
 
-DISTNAME=		freepops-0.2.8
-PKGREVISION=		2
+DISTNAME=		freepops-0.2.9
+PKGREVISION=		1
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=freepops/}
 
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://www.freepops.org/
 COMMENT=		POP3 gateway to AOL, Gmail, Hotmail, Juno, Yahoo, etc.
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+LICENSE=		gnu-gpl-v2
 
 MAKE_JOBS_SAFE=		no
 
 .include "../../mk/bsd.prefs.mk"
 
 USE_LANGUAGES=		c c++
-USE_TOOLS+=		bash:run bison gmake patch tar
+USE_TOOLS+=		bash:run bison gmake patch pkg-config tar
 .if ${OPSYS} != "NetBSD"
 USE_TOOLS+=		gsed
 .endif
@@ -27,6 +26,7 @@ HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	configure.sh
 CONFIGURE_ARGS=		pkgsrc
 LDFLAGS+=		-lintl		# directly link, req. by ld 2.22
+LIBS.SunOS+=		-lsocket -lnsl
 
 PKG_SYSCONFSUBDIR=	freepops
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}

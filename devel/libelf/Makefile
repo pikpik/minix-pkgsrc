@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2010/08/28 05:25:31 cherry Exp $
+# $NetBSD: Makefile,v 1.15 2010/08/28 09:16:35 cherry Exp $
 #
 
 DISTNAME=		libelf-0.8.13
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.mr511.de/software/english.html
 COMMENT=		ELF object file access library
 LICENSE=		gnu-lgpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALL_MAKE_FLAGS+=	instroot=${DESTDIR}
 

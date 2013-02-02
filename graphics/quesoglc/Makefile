@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2009/02/15 16:03:46 jmcneill Exp $
+# $NetBSD: Makefile,v 1.2 2011/11/01 06:01:45 sbd Exp $
 #
 
 DISTNAME=	quesoglc-0.7.1-free
@@ -7,8 +7,6 @@ PKGREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=quesoglc/}
 EXTRACT_SUFX=	.tar.bz2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://quesoglc.sourceforge.net/

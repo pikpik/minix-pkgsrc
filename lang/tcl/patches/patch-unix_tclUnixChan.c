@@ -1,16 +1,15 @@
-$NetBSD$
-
---- unix/tclUnixChan.c.orig	Tue Nov 28 16:29:48 2006
-+++ unix/tclUnixChan.c
-@@ -17,6 +17,11 @@
- #include "tclPort.h"	/* Portability features for Tcl. */
- #include "tclIO.h"	/* To get Channel type declaration. */
+--- unix/tclUnixChan.c.orig	Tue Nov  6 15:05:00 2012
++++ unix/tclUnixChan.c	Fri Feb  1 19:57:36 2013
+@@ -24,6 +24,12 @@
+ #endif /* B4800 */
  
-+#ifdef __minix
-+   #define TIOCMGET 0x5415
-+   #define TIOCMSET 0x5418
-+#endif
+ #ifdef USE_TERMIOS
 +
- /*
-  * sys/ioctl.h has already been included by tclPort.h.	Including termios.h
-  * or termio.h causes a bunch of warning messages because some duplicate
++#   ifdef __minix
++#       define TIOCMGET 0x5415
++#       define TIOCMSET 0x5418
++#   endif
++
+ #   include <termios.h>
+ #   ifdef HAVE_SYS_IOCTL_H
+ #	include <sys/ioctl.h>

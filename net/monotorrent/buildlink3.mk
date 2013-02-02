@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.6 2011/04/22 13:42:30 obache Exp $
+# $NetBSD: buildlink3.mk,v 1.9 2012/05/07 01:53:53 dholland Exp $
 
 BUILDLINK_TREE+=	monotorrent
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	monotorrent
 MONOTORRENT_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.monotorrent+=	monotorrent>=0.72
-BUILDLINK_ABI_DEPENDS.monotorrent?=	monotorrent>=0.72nb3
+BUILDLINK_ABI_DEPENDS.monotorrent+=	monotorrent>=0.72nb5
 BUILDLINK_PKGSRCDIR.monotorrent?=	../../net/monotorrent
 
 .include "../../lang/mono/buildlink3.mk"

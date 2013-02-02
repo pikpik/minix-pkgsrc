@@ -1,6 +1,5 @@
-# $NetBSD: Makefile,v 1.8 2011/10/30 12:07:50 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/03/15 11:53:35 obache Exp $
 #
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "Makefile.common"
 

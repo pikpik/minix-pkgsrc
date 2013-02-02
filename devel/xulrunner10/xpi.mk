@@ -1,4 +1,4 @@
-# $NetBSD: xpi.mk,v 1.1.1.1 2012/03/15 08:58:27 ryoon Exp $
+# $NetBSD: xpi.mk,v 1.2 2012/03/19 20:34:03 ryoon Exp $
 #
 # common logic for repackaging mozilla extensions (.xpi files)
 # Used by the {firefox,seamonkey,thunderbird}10-l10n packages.
@@ -19,6 +19,7 @@ do-install: install-xpi
 install-xpi:
 .for f in ${XPI_FILES}
 	id=$$(${AWK} '/em:id=/ {sub("^.*em:id=\"", "");sub("\".*$$","");print $$0}' < ${WRKDIR}/${f:S/.xpi//}/install.rdf);	\
+	  ${MKDIR} ${DESTDIR}${EXTENSIONS_DIR}/$${id} && \
 	  cd ${WRKDIR}/${f:S/.xpi//} &&		\
 	  pax -rw . ${DESTDIR}${EXTENSIONS_DIR}/$${id}
 .endfor

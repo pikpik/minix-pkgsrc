@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.60 2011/09/29 12:53:58 joerg Exp $
+# $NetBSD: Makefile,v 1.67 2013/01/03 16:56:22 darcy Exp $
 
-DISTNAME=		PyGreSQL-4.0
-PKGNAME=		${PYPKGPREFIX}-postgresql-4.0
-PKGREVISION=		1
+DISTNAME=		PyGreSQL-4.1.1
+PKGNAME=		${PYPKGPREFIX}-postgresql-4.1.1
 CATEGORIES=		databases python
 MASTER_SITES=		http://pygresql.org/files/
 EXTRACT_SUFX=		.tgz
@@ -11,19 +10,17 @@ OWNER=			darcy@NetBSD.org
 HOMEPAGE=		http://www.PyGreSQL.org/
 COMMENT=		Python interface to PostgreSQL
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 MAKE_ENV+=		MANDIR=${PREFIX}/${PKGMANDIR}
 MAKE_ENV+=		BINDIR=${PREFIX}/bin
 USE_TOOLS+=		gmake
+LICENSE=        postgresql-license
 
 MAKE_FILE=		GNUmakefile
 MAKE_ENV+=		INSTALLED_LIBPQ=1
 
-PYTHON_VERSIONS_ACCEPTED= 27 26 25 24
-
 PY_PATCHPLIST=		yes
 PLIST_SUBST+=		PYPKGPREFIX=${PYPKGPREFIX:Q}
+REPLACE_PYTHON=		pg.py pgdb.py
 
 PYDISTUTILSPKG=		yes
 DOCDIR=			${PREFIX}/share/doc/${PYPKGPREFIX}-postgresql
@@ -42,6 +39,7 @@ post-install:
 		${INSTALL_DATA} "$$f" ${DESTDIR}${DOCDIR}/docs;		\
 	done
 
-.include "../../lang/python/extension.mk"
+.include "../../lang/python/application.mk"
+.include "../../lang/python/egg.mk"
 .include "../../mk/pgsql.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

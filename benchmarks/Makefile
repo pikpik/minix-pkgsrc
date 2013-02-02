@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.44 2011/02/28 18:39:07 wiz Exp $
+# $NetBSD: Makefile,v 1.46 2012/07/02 17:45:49 asau Exp $
 #
 
 COMMENT=	Benchmarking tools
@@ -11,6 +11,7 @@ SUBDIR+=	bytebench
 SUBDIR+=	dbench
 SUBDIR+=	dhrystone
 SUBDIR+=	fib
+SUBDIR+=	filebench
 SUBDIR+=	flops
 SUBDIR+=	forkbomb
 SUBDIR+=	hbench
@@ -34,6 +35,7 @@ SUBDIR+=	phoronix-test-suite
 SUBDIR+=	pipebench
 SUBDIR+=	postal
 SUBDIR+=	postmark
+SUBDIR+=	ramspeed
 SUBDIR+=	randread
 SUBDIR+=	skampi
 SUBDIR+=	super_pi

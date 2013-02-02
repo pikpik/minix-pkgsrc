@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2012/03/03 00:14:08 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 23:02:33 adam Exp $
 #
 
 DISTNAME=	avant-window-navigator-0.4.0
-PKGREVISION=	3
+PKGREVISION=	9
 CATEGORIES=	x11
 MASTER_SITES=	https://launchpad.net/awn/0.4/0.4.0/+download/
 
@@ -11,9 +11,7 @@ HOMEPAGE=	https://launchpad.net/awn
 COMMENT=	Dock-like navigation bar
 LICENSE=	gnu-lgpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
-# Needed fo launchpad
+# Needed for launchpad
 FETCH_USING=	curl
 
 GNU_CONFIGURE=	yes
@@ -53,7 +51,7 @@ DEPENDS+=		bzr>=2.4.2:../../devel/bzr
 .include "../../lang/vala014/buildlink3.mk"
 .include "../../devel/libwnck/buildlink3.mk"
 .include "../../sysutils/dbus-glib/buildlink3.mk"
-.include "../../sysutils/py-dbus/buildlink3.mk"  
+.include "../../sysutils/py-dbus/buildlink3.mk"
 .include "../../x11/py-gtk2/buildlink3.mk"
 .include "../../graphics/py-cairo/buildlink3.mk"
 .include "../../x11/libdesktop-agnostic/buildlink3.mk"

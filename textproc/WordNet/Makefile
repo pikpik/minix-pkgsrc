@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2008/09/06 21:27:53 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/08/21 23:49:26 marino Exp $
 #
 
 DISTNAME=		WordNet-3.0
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		textproc
 MASTER_SITES=		http://wordnet.princeton.edu/3.0/ \
 			ftp://ftp.cogsci.princeton.edu/pub/wordnet/3.0/
@@ -14,8 +14,6 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://wordnet.princeton.edu/
 COMMENT=		Lexical reference system
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_PKGLOCALEDIR=	yes
 GNU_CONFIGURE=		yes

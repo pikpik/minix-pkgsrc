@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.10 2009/07/16 14:53:13 joerg Exp $
+# $NetBSD: Makefile,v 1.11 2011/04/22 13:44:50 obache Exp $
 
 DISTNAME=	grep-2.4.2
 PKGNAME=	ja-grep-2.4.2
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_GNU:=grep/}
 PATCH_SITES=	http://www.hinadori.atnifty.com/~wills/program/
 PATCHFILES=	grep-2.4.2-mlb2.patch.gz
 PATCH_DIST_STRIP=	-p1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=	grep-[0-9]*
 

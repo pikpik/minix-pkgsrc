@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/03/13 16:03:08 ginsbach Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/03 21:57:47 wiz Exp $
 # FreeBSD Id: ports/textproc/diffsplit/Makefile,v 1.7 2006/12/22 13:43:54 barner Exp
 
 DISTNAME=	diffsplit
 PKGNAME=	diffsplit-1.0
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	textproc devel misc
 MASTER_SITES=	http://www.pathname.com/~quinlan/software/diffsplit/
 EXTRACT_SUFX=
@@ -12,8 +12,6 @@ EXTRACT_ONLY=
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.pathname.com/~quinlan/software/diffsplit/
 COMMENT=	Splits a unified diff into pieces which patch one file each
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 NO_BUILD=	YES
 WRKSRC=		${WRKDIR}

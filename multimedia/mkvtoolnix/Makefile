@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.43 2012/03/03 12:54:20 wiz Exp $
+# $NetBSD: Makefile,v 1.53 2012/11/08 07:28:12 adam Exp $
 
-DISTNAME=	mkvtoolnix-5.0.0
-PKGREVISION=	8
+DISTNAME=	mkvtoolnix-5.0.1
+PKGREVISION=	7
 CATEGORIES=	multimedia
 MASTER_SITES=	http://www.bunkus.org/videotools/mkvtoolnix/sources/
 EXTRACT_SUFX=	.tar.bz2
@@ -11,29 +11,34 @@ HOMEPAGE=	http://www.bunkus.org/videotools/mkvtoolnix/
 COMMENT=	Set of tools to create, alter and inspect Matroska files
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
 USE_TOOLS+=		gmake msgfmt
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--with-boost-libdir=${BUILDLINK_PREFIX.boost-libs}
 CONFIGURE_ARGS+=	--with-boost_regex=boost_regex
+CONFIGURE_ARGS+=	--with-boost-system=boost_system
 CONFIGURE_ARGS+=	--with-boost-filesystem=boost_filesystem
 
 LDFLAGS.DragonFly=	-lboost_system
 
 INSTALL_ENV+=	SHELL=${SH:Q}
 
+.include "../../mk/bsd.prefs.mk"
+
+.if !empty(MAKE_JOBS)
+DRAKE_ARGS=	-j${MAKE_JOBS}
+.else
+DRAKE_ARGS=	# empty
+.endif
+
 do-build:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ruby drake
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ruby drake ${DRAKE_ARGS}
 
 do-install:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${INSTALL_ENV} ruby drake install
 
 .include "options.mk"
-
-.include "../../mk/bsd.prefs.mk"
 
 .if ${OPSYS} != "Darwin"
 BUILDLINK_DEPMETHOD.${RUBY_BASE}=	build

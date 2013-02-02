@@ -1,28 +1,25 @@
-# $NetBSD: Makefile,v 1.80 2012/01/15 13:19:29 obache Exp $
+# $NetBSD: Makefile,v 1.88 2012/12/08 23:53:09 wiz Exp $
 
-DISTNAME=		bison-2.5
-PKGREVISION=		3
-CATEGORIES=		devel
-MASTER_SITES=		${MASTER_SITE_GNU:=bison/}
-EXTRACT_SUFX=		.tar.bz2
+DISTNAME=	bison-2.7
+CATEGORIES=	devel
+MASTER_SITES=	${MASTER_SITE_GNU:=bison/}
+EXTRACT_SUFX=	.tar.gz
 
-MAINTAINER=		pkgsrc-users@NetBSD.org
-HOMEPAGE=		http://www.gnu.org/software/bison/bison.html
-COMMENT=		GNU yacc(1) replacement
-LICENSE=		gnu-gpl-v3
+MAINTAINER=	pkgsrc-users@NetBSD.org
+HOMEPAGE=	http://www.gnu.org/software/bison/bison.html
+COMMENT=	GNU yacc(1) replacement
+LICENSE=	gnu-gpl-v3
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
-GNU_CONFIGURE=		YES
 USE_LANGUAGES=		c c++
 USE_PKGLOCALEDIR=	yes
-USE_TOOLS+=		grep gm4:run msgfmt
+USE_TOOLS+=		grep gm4:run msgfmt flex
+GNU_CONFIGURE=		yes
+CONFIGURE_ENV+=		gt_cv_func_gnugettext1_libintl=yes
+CONFIGURE_ENV+=		ac_cv_prog_M4=${TOOLS_PATH.gm4}
+
 INFO_FILES=		yes
-
-CONFIGURE_ENV+=		gt_cv_func_gnugettext1_libintl=yes \
-			ac_cv_path_M4=${TOOLS_PATH.gm4}
-
 TEST_TARGET=		check
 
 # Avoid rebuilding manpage

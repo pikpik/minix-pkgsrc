@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.13 2008/08/17 05:10:59 dholland Exp $
+# $NetBSD: Makefile,v 1.15 2012/07/02 17:27:23 asau Exp $
 
 DISTNAME=	libtecla-1.6.1
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.astro.caltech.edu/~mcs/tecla/
 
@@ -9,7 +9,6 @@ MAINTAINER=	kristerw@NetBSD.org
 HOMEPAGE=	http://www.astro.caltech.edu/~mcs/tecla/
 COMMENT=	Interactive command line editing facilities
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 MAKE_JOBS_SAFE=		no
 
 WRKSRC=			${WRKDIR}/${PKGBASE}
@@ -27,4 +26,5 @@ INSTALL_MAKE_FLAGS+=	MANDIR=${DESTDIR}${PREFIX}/${PKGMANDIR}
 CONFIGURE_ENV+=		tecla_cv_reentrant=no
 .endif
 
+.include "../../mk/termcap.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

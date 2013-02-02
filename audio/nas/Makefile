@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.86 2011/10/10 10:29:58 wiz Exp $
+# $NetBSD: Makefile,v 1.90 2013/01/05 12:57:21 mef Exp $
 
-DISTNAME=	nas-1.9.1.src
+DISTNAME=	nas-1.9.3.src
 PKGNAME=	${DISTNAME:S/.src//}
-PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nas/}
 
@@ -12,7 +11,6 @@ COMMENT=	Network Audio System
 LICENSE=	mit # with no-advertisement clause
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # 1) uses dia library before it is built
 # 2) make succeeds even with failures, making this problem non-obvious
@@ -88,8 +86,16 @@ CONF_FILES=	${EGDIR}/nasd.conf.eg ${PKG_SYSCONFDIR}/nasd.conf
 pre-configure:
 	cd ${WRKSRC}/config && ${SETENV} ${CONFIGURE_ENV} ./configure
 
+# XXX OpenBSD 2.9 or later does not use lib/X11/config/bsdLib.rules,
+# XXX the rule in OpenBSDLib.rules does not do the following.
+# XXX PLIST should be splitted?
+.if ${OPSYS} == "OpenBSD"
+post-install:
+	cd ${DESTDIR}${PREFIX}/lib && \
+		${LN} -s libaudio.so.2.4 libaudio.so.2 && \
+		${LN} -s libaudio.so.2 libaudio.so
+.endif
+
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXaw/buildlink3.mk"
-.include "../../x11/libXp/buildlink3.mk"
-
 .include "../../mk/bsd.pkg.mk"

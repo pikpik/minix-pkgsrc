@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2011/05/19 05:06:15 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:17 wiz Exp $
 
 DISTNAME=	Date-Leapyear-1.72
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	time perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Date/}
 
@@ -13,8 +13,6 @@ LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=	# empty
 PERL5_PACKLIST=	auto/Date/Leapyear/.packlist
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

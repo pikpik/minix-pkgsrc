@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.46 2012/02/06 12:39:33 wiz Exp $
+# $NetBSD: Makefile,v 1.51 2012/10/08 13:25:12 asau Exp $
 #
 
 DISTNAME=	gerbv-2.5.0
-PKGREVISION=	3
+PKGREVISION=	7
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=gerbv/}
 
@@ -12,7 +12,6 @@ COMMENT=	Gerber file viewer
 LICENSE=	gnu-gpl-v2
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	YES
 USE_LIBTOOL=	YES

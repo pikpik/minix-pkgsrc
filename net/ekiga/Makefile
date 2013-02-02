@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2012/03/03 00:13:43 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/12/16 01:52:28 obache Exp $
 #
 
 DISTNAME=		ekiga-3.2.6
-PKGREVISION=		17
+PKGREVISION=		26
 CATEGORIES=		net comms
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/ekiga/3.2/}
 EXTRACT_SUFX=		.tar.bz2
@@ -12,7 +12,6 @@ HOMEPAGE=		http://www.ekiga.org/
 COMMENT=		VoIP and video conferencing application for GNOME
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 PREV_PKGPATH=		net/ekiga-devel
 
 USE_TOOLS+=		gmake intltool msgfmt pkg-config
@@ -52,6 +51,7 @@ USE_LANGUAGES=		c c++
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../sysutils/libnotify/buildlink3.mk"
 .include "../../textproc/gnome-doc-utils/buildlink3.mk"
+.include "../../mk/omf-scrollkeeper.mk"
 .include "../../x11/gtk2/buildlink3.mk"
 .include "../../x11/libXv/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

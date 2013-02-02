@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.11 2007/10/14 17:50:04 minskim Exp $
+# $NetBSD: Makefile,v 1.13 2012/06/14 08:25:17 dholland Exp $
 #
 
 DISTNAME=		unalz-0.61
@@ -6,12 +6,11 @@ CATEGORIES=		archivers
 MASTER_SITES=		http://www.kipple.pe.kr/win/unalz/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		pkgsrc-wip-discuss@lists.kldp.net
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.kipple.pe.kr/win/unalz/
 COMMENT=		Alzip archive (.alz) extractor
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 BUILD_TARGET=		posix-utf8
 USE_LANGUAGES=		c c++

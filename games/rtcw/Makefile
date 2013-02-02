@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.15 2008/03/04 06:59:05 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2012/05/27 17:00:49 marino Exp $
 
 DISTNAME=	wolf-linux-1.33.x86
 PKGNAME=	rtcw-1.33
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/wolf/linux/
+MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/wolf/linux/old/
 EXTRACT_SUFX=	.run
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -23,19 +23,19 @@ EMUL_MODULES.linux=	base
 # This package needs DRI support.
 NOT_FOR_PLATFORM=	NetBSD-*-*
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 BUILD_DIRS=	# empty
 RTCWDIR=	${PREFIX}/lib/lokigames/rtcw
-USE_TOOLS+=	gtar pax
+USE_TOOLS+=	gtar pax gzip
 EXTRACT_CMD=	${SED} '1,178d' ${DOWNLOADED_DISTFILE} |		\
-		${GTAR} xzf - -C ${WRKSRC}
+		${GZIP_CMD} -d | ${GTAR} -C ${WRKSRC} -xf -
 
 pre-extract:
 	${MKDIR} ${WRKSRC}
 
 do-install:
 	${INSTALL_DATA_DIR} ${DESTDIR}${RTCWDIR}
+	${CHMOD} 755 ${WRKSRC}/Docs/PunkBuster
+	${CHMOD} 644 ${WRKSRC}/main/mp_bin.pk3
 	cd ${WRKSRC} && pax -rw -p am . ${DESTDIR}${RTCWDIR}
 
 .include "../../mk/bsd.pkg.mk"

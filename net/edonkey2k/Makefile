@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2009/10/18 20:28:52 zafer Exp $
+# $NetBSD: Makefile,v 1.18 2010/02/11 20:52:00 joerg Exp $
 #
 
 DISTNAME=	donkey
@@ -11,8 +11,6 @@ EXTRACT_SUFX=	.gz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.edonkey2000.com/
 COMMENT=	Yet another P2P file sharing tool
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EMUL_PLATFORMS=		linux-i386
 EMUL_MODULES.linux=	base compat

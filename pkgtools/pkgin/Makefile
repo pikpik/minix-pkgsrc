@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.19 2011/10/29 14:25:47 imil Exp $
+# $NetBSD: Makefile,v 1.31 2012/12/14 22:43:45 imil Exp $
 #
 
-DISTNAME=		pkgin-0.5.2.1
+DISTNAME=		pkgin-0.6.3.1
 PKGREVISION=		1
 CATEGORIES=		pkgtools
 MASTER_SITES=		ftp://ftp.NetBSD.org/pub/NetBSD/misc/imil/
@@ -11,8 +11,6 @@ MAINTAINER=		imil@NetBSD.org
 HOMEPAGE=		http://pkgin.net/
 COMMENT=		Apt / yum like tool for managing pkgsrc binary packages
 LICENSE=		modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 EGDIR=			${PREFIX}/share/examples/${PKGBASE}
 CONF_FILES=		${EGDIR}/repositories.conf.example		\
@@ -31,9 +29,13 @@ SUBST_SED.path=		-e "s|/usr/pkg/etc|${PKG_SYSCONFDIR}|g"
 SUBST_SED.path+=	-e "s|/usr/sbin|${PKG_TOOLS_BIN}|g"
 SUBST_SED.path+=	-e "s|/var|${VARBASE}|g"
 SUBST_SED.path+=	-e "s|/usr/pkg|${PREFIX}|g"
+SUBST_SED.path+=	-e "s|!=.*uname -p|=	${MACHINE_ARCH}|g"
 
 GNU_CONFIGURE=		yes
 USE_FEATURES=		nbcompat
+USE_TOOLS+=		nroff
+
+MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
 
 DEPENDS+=		pkg_install>=20110215:../../pkgtools/pkg_install
 
@@ -59,10 +61,7 @@ do-install:
 .	include "../../net/libfetch/buildlink3.mk"
 .endif
 
-# Only MINIX doesn't compile SQLite Amalgation source
-.if ${OPSYS} == "Minix"
-.	include "../../databases/sqlite3/buildlink3.mk"
-.endif
-
 .include "../../archivers/libarchive/buildlink3.mk"
+.include "../../databases/sqlite3/buildlink3.mk"
+.include "../../security/openssl/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

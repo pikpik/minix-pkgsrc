@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2012/01/29 00:12:54 marino Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/23 10:24:12 wiz Exp $
 #
 
 DISTNAME=	xonclock-0.0.9.4
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	time
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=xonclock/}
 
@@ -11,11 +11,10 @@ HOMEPAGE=	http://xonclock.sourceforge.net/
 COMMENT=	Analog clock
 LICENSE=	gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 GNU_CONFIGURE=	yes
 
-LDFLAGS.DragonFly=	-lm
+LDFLAGS.DragonFly=	-lm -lXrender
+LDFLAGS.SunOS+=		-lm -lrt
 
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../graphics/png/buildlink3.mk"
@@ -26,5 +25,4 @@ LDFLAGS.DragonFly=	-lm
 .include "../../x11/libXpm/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXrender/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

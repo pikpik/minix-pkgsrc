@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.56 2012/03/03 00:13:19 wiz Exp $
+# $NetBSD: Makefile,v 1.62 2012/10/06 14:11:21 asau Exp $
 #
 
 DISTNAME=	scigraphica-2.1.0
-PKGREVISION=	13
+PKGREVISION=	18
 CATEGORIES=	graphics math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=scigraphica/}
 
@@ -12,7 +12,6 @@ COMMENT=	Data analysis and technical graphics
 
 USE_TOOLS+=		gmake intltool pkg-config
 USE_GNU_READLINE=	YES
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=		YES
 CONFIGURE_ARGS+=	--without-gnome

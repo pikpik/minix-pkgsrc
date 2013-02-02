@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2011/01/13 13:53:33 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/23 17:19:17 asau Exp $
 
-DISTNAME=	vnstat-1.9
-PKGREVISION=	4
+DISTNAME=	vnstat-1.11
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://humdi.net/vnstat/
 #DISTFILES=${DISTNAME}.tar.gz
@@ -10,8 +10,6 @@ MAINTAINER=	sborrill@NetBSD.org
 HOMEPAGE=	http://humdi.net/vnstat/
 COMMENT=	Small network traffic monitor
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 
@@ -58,11 +56,11 @@ do-install:
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/vnstatd.1
 	${INSTALL_MAN} ${WRKSRC}/man/vnstat.conf.5 			\
 		${DESTDIR}${PREFIX}/${PKGMANDIR}/man5/vnstat.conf.5
-	if [ "${PLIST.gd}" = "yes" ]; then				\
+	if [ ${PLIST.gd:Q} = "yes" ]; then				\
 		${INSTALL_PROGRAM} ${WRKSRC}/src/vnstati		\
 		    ${DESTDIR}${PREFIX}/bin/vnstati;			\
 		${INSTALL_MAN} ${WRKSRC}/man/vnstati.1 			\
 		    ${DESTDIR}${PREFIX}/${PKGMANDIR}/man1/vnstati.1;	\
-	fi		
+	fi
 
 .include "../../mk/bsd.pkg.mk"

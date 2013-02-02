@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.40 2007/05/03 13:19:00 wiz Exp $
+@comment $NetBSD: PLIST,v 1.42 2012/06/03 22:18:33 wiz Exp $
 bin/xml2-config
 bin/xmlcatalog
 bin/xmllint

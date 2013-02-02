@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2008/05/24 21:45:15 tnn Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/23 10:24:18 wiz Exp $
 #
 
-DISTNAME=		libXScrnSaver-1.2.0
+DISTNAME=		libXScrnSaver-1.2.2
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=lib/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,7 +11,6 @@ HOMEPAGE=		http://xorg.freedesktop.org/
 COMMENT=		X11 Screen Saver Library
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		scrnsaverproto<1.2.0
 
@@ -27,10 +26,11 @@ PKGCONFIG_OVERRIDE+=	xscrnsaver.pc.in
 CONFIGURE_ARGS+=	--disable-malloc0returnsnull
 .endif
 
+.include "../../meta-pkgs/modular-xorg/hacks.mk"
+
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 BUILDLINK_API_DEPENDS.scrnsaverproto+=	scrnsaverproto>=1.2.0
 .include "../../x11/scrnsaverproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

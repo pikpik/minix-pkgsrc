@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2010/04/21 06:01:51 obache Exp $
+# $NetBSD: Makefile,v 1.7 2011/10/07 10:59:02 obache Exp $
 #
 
 DISTNAME=	Babel-0.9.6
@@ -10,8 +10,6 @@ MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://babel.edgewall.org/
 COMMENT=	Collection of tools for internationalizing Python applications
 LICENSE=	modified-bsd
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 

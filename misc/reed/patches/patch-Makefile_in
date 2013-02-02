@@ -1,0 +1,13 @@
+$NetBSD$
+
+Honor pkgsrc CFLAGS and LDFLAGS.
+
+--- Makefile.in~	2002-11-09 00:59:08.000000000 +0000
++++ Makefile.in
+@@ -1,5 +1,5 @@
+ all:
+-	$(CC) -O2 -o reed reed.c filemode.c -lcurses
++	$(CC) $(CFLAGS) $(LDFLAGS) -o reed reed.c filemode.c -lcurses
+ 
+ debug:
+ 	$(CC) -o reed reed.c filemode.c -lcurses -Wall -g

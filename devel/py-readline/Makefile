@@ -1,15 +1,13 @@
-# $NetBSD: Makefile,v 1.20 2011/05/04 11:38:05 obache Exp $
+# $NetBSD: Makefile,v 1.24 2012/10/31 11:19:34 asau Exp $
 #
 
 PKGNAME=	${PYPKGPREFIX}-readline-0
 PKGREVISION=	5
 CATEGORIES=	devel misc python
 
-MAINTAINER=	tsarna@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.python.org/doc/current/tut/node15.html
 COMMENT=	Line editing support for Python
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PYTHON_VERSIONS_INCLUDE_3X=	yes
 
@@ -29,9 +27,6 @@ do-patch:
 	for f in ${PATCHDIR}/patch-*;do \
 	${PATCH} --batch <$$f || true; \
 	done)
-
-BUILDLINK_API_DEPENDS.python24+=	python24>=2.4.5nb1
-BUILDLINK_API_DEPENDS.python25+=	python25>=2.5.2nb2
 
 .include "../../devel/readline/buildlink3.mk"
 .include "../../lang/python/extension.mk"

@@ -1,9 +1,7 @@
-# $NetBSD: Makefile,v 1.11 2010/10/28 11:11:00 adam Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/06 18:28:13 adam Exp $
 
 PKGNAME=	scmgit-docs-${GIT_VERSION}
 COMMENT=	GIT Tree History Storage Tool (documentation)
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		git<4.9.5nb1		# misc/git
 
@@ -17,6 +15,9 @@ BUILD_TARGET=		man
 INSTALL_TARGET=		install-man
 
 UNLIMIT_RESOURCES+=	datasize
+
+USE_TOOLS+=             perl
+CONFIGURE_ARGS+=	--with-perl=${PERL5:Q}
 
 .include "../../devel/scmgit/Makefile.common"
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2008/04/07 17:39:50 joerg Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 21:56:44 wiz Exp $
 #
 
 DISTNAME=		mirmon-1.36
+PKGREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		http://people.cs.uu.nl/henkp/mirmon/src/
 
@@ -10,7 +11,6 @@ HOMEPAGE=		http://people.cs.uu.nl/henkp/mirmon/
 COMMENT=		Monitor the state of mirror servers
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 REPLACE_PERL+=		mirmon
 USE_TOOLS+=		perl:run pod2man

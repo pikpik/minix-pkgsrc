@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2009/07/07 18:30:27 joerg Exp $
+# $NetBSD: Makefile,v 1.31 2012/10/29 05:06:10 asau Exp $
 
 DISTNAME=	dxpc-3.9.2
 CATEGORIES=	x11
@@ -10,14 +10,14 @@ HOMEPAGE=	http://www.vigor.nu/dxpc/
 COMMENT=	Differential X Protocol Compressor
 LICENSE=	2-clause-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake
 GNU_CONFIGURE=		yes
 
 INSTALL_MAKE_FLAGS+=	bindir=${DESTDIR}${PREFIX}/bin
 INSTALL_MAKE_FLAGS+=	man1dir=${DESTDIR}${PREFIX}/${PKGMANDIR}/man1
+
+LIBS.SunOS+=		-lsocket -lnsl
 
 .include "../../archivers/lzo/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"

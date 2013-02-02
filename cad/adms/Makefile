@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2012/02/06 12:39:33 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/09/15 10:03:47 obache Exp $
 #
 
 DISTNAME=	adms-2.2.5
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mot-adms/}
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://mot-adms.sourceforge.net/
 COMMENT=	Compact device model code generator for SPICE
 
 PKG_INSTALLATION_TYPES= overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 AUTOMAKE_OVERRIDE=	NO
 GNU_CONFIGURE=		YES

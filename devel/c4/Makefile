@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2007/02/17 20:59:47 wiz Exp $
+# $NetBSD: Makefile,v 1.10 2008/03/03 17:45:34 jlam Exp $
 #
 
 DISTNAME=	c4
@@ -10,8 +10,6 @@ MAINTAINER=	schmonz@NetBSD.org
 COMMENT=	CVS-like frontend to Perforce
 
 DEPENDS+=	p4-[0-9]*:../../devel/p4
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}/${PKGNAME_NOREV}
 BUILD_TARGET=	c4

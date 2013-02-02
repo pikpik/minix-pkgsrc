@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.98 2012/02/06 12:40:53 wiz Exp $
+# $NetBSD: Makefile,v 1.107 2012/12/20 15:11:15 prlw1 Exp $
 
 DISTNAME=	octave-${OCTAVE_VER}
-PKGREVISION=	2
+PKGREVISION=	4
 CATEGORIES=	math
 MASTER_SITES=	$(MASTER_SITE_GNU:=octave/) \
 		ftp://ftp.octave.org/pub/octave/ \
@@ -16,17 +16,15 @@ BUILD_DEPENDS+=	gperf>=2.7:../../devel/gperf
 BUILD_DEPENDS+=	teTeX-[0-9]*:../../print/teTeX
 DEPENDS+=	gnuplot>=3.7:../../graphics/gnuplot
 
-OCTAVE_VER=	3.4.3
+OCTAVE_VER=	3.6.3
 
 .if (${MACHINE_ARCH} == "arm32")
 BROKEN=		Internal compiler error occurs on arm32 (even with gcc-2.95.3)
 .endif
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_GNU_READLINE=	yes
 USE_LIBTOOL=		yes
-USE_TOOLS+=		autoconf gsed gmake makeinfo perl pkg-config bison
+USE_TOOLS+=		autoconf gsed gmake:run makeinfo perl pkg-config bison
 GNU_CONFIGURE=		yes
 
 GCC_REQD+=		3.0
@@ -37,6 +35,8 @@ USE_LANGUAGES=		c c++ fortran77
 CONFIGURE_ARGS+=	--enable-dl
 CONFIGURE_ARGS+=	--enable-static
 CONFIGURE_ARGS+=	--enable-shared
+
+CONFIGURE_ARGS+=	--without-opengl
 
 .include "options.mk"
 
@@ -73,6 +73,12 @@ SUBST_MESSAGE.unwrapping=	Unwrapping wrapper scripts.
 SUBST_FILES.unwrapping=		src/mkoctfile
 SUBST_SED.unwrapping=		-e 's:$(DESTDIR)::g' -e 's:$(BUILDLINK_DIR)/lib:$(PREFIX)/lib:g'
 
+SUBST_CLASSES+=			fix-make
+SUBST_STAGE.fix-make=		post-patch
+SUBST_MESSAGE.fix-make=		Fixing path to gmake.
+SUBST_FILES.fix-make=		scripts/pkg/pkg.m
+SUBST_SED.fix-make=		-e 's:@GMAKE@:$(GMAKE):g'
+
 post-extract:
 	find ${WRKSRC}/doc -type f -name '*.info*' -print | xargs rm -f
 	mkdir ${WRKSRC}/src/pic
@@ -92,6 +98,7 @@ post-build:
 
 .include "../../audio/libsndfile/buildlink3.mk"
 .include "../../devel/ncurses/buildlink3.mk"
+.include "../../devel/pcre/buildlink3.mk"
 .include "../../devel/readline/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
 .include "../../math/blas/buildlink3.mk"

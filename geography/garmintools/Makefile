@@ -1,4 +1,4 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1.1.1 2010/03/12 15:55:40 ghen Exp $
 
 DISTNAME=		garmintools-0.10
 CATEGORIES=		geography
@@ -10,8 +10,6 @@ COMMENT=		Utilities for Garmin Forerunner 305 and similar GPS units
 
 GNU_CONFIGURE=		yes
 USE_LIBTOOL=		yes
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	share/doc/garmintools
 

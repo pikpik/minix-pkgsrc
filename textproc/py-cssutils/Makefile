@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.2 2011/09/29 11:51:32 dholland Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/03 22:14:03 wiz Exp $
 #
 
-DISTNAME=	cssutils-0.9.7
+DISTNAME=	cssutils-0.9.9
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME}
 CATEGORIES=	textproc python
 MASTER_SITES=	http://cssutils.googlecode.com/files/ \
@@ -13,11 +13,13 @@ HOMEPAGE=	http://cthedot.de/cssutils/
 COMMENT=	Cascading Style Sheets parser and library for Python
 LICENSE=	gnu-lgpl-v3
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 USE_LANGUAGES=	#none
 
-PYTHON_VERSIONS_INCOMPATIBLE=	24
+REPLACE_INTERPRETER+=	python
+REPLACE.python.old=	/usr/bin/env python
+REPLACE.python.new=	${PYTHONBIN}
+REPLACE_FILES.python=	src/cssutils/*.py
+REPLACE_FILES.python+=	src/cssutils/scripts/*.py
 
 # all files are group/others writable.
 post-extract:

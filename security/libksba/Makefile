@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2011/03/11 07:22:05 adam Exp $
+# $NetBSD: Makefile,v 1.23 2011/04/22 13:42:47 obache Exp $
 
 DISTNAME=	libksba-1.2.0
 PKGREVISION=	1
@@ -10,8 +10,6 @@ MAINTAINER=	shannonjr@NetBSD.org
 HOMEPAGE=	http://www.g10code.com/p-libksba.html
 COMMENT=	X.509 library
 LICENSE=	gnu-gpl-v3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes

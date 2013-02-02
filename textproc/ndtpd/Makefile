@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.30 2009/07/07 21:10:44 joerg Exp $
+# $NetBSD: Makefile,v 1.32 2012/10/03 21:57:50 wiz Exp $
 #
 
 DISTNAME=	ndtpd-3.1.5
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	textproc japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/ndtpd/
 
@@ -11,7 +11,6 @@ HOMEPAGE=	http://www.sra.co.jp/people/m-kasahr/ndtpd/
 COMMENT=	Server for accessing CD-ROM books with NDTP
 
 PKG_INSTALLATION_TYPES=	pkgviews overwrite
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	makeinfo perl:run
 USE_LIBTOOL=	YES

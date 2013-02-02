@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2012/02/06 12:40:07 wiz Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/03 12:55:16 asau Exp $
 #
 
 DISTNAME=	Nestopia140src
 PKGNAME=	nestopia-1.40h
-PKGREVISION=	9
+PKGREVISION=	13
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=nestopia/}
 EXTRACT_SUFX=	.zip
@@ -14,8 +14,6 @@ SITES.nst140_lnx_release_h.zip=	http://rbelmont.mameworld.info/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://rbelmont.mameworld.info/?page_id=200
 COMMENT=	Portable, very accurate NES emulator with UNIF support
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=		${WRKDIR}
 USE_LANGUAGES=	c c++

@@ -1,6 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/11/26 20:47:00 adam Exp $
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+# $NetBSD: Makefile,v 1.7 2012/10/31 11:16:42 asau Exp $
 
 BOOST_PACKAGE=		jam
 BOOST_COMMENT=		(Boost.Jam utility)
@@ -10,10 +8,12 @@ CONFLICTS+=		boost-build<=1.33.1
 
 .include "../../meta-pkgs/boost/Makefile.common"
 
+PKGREVISION=		1
+
 SUBST_CLASSES+=		bb
 SUBST_MESSAGE.bb=	Fixing path to Boost.Build files.
 SUBST_STAGE.bb=		pre-build
-SUBST_FILES.bb=		tools/jam/src/Jambase
+SUBST_FILES.bb=		tools/build/v2/engine/Jambase
 SUBST_SED.bb=		-e 's,/usr/share/boost-build,${PREFIX}/share/boost-build,g'
 
 .include "../../devel/boost-build/toolset.mk"

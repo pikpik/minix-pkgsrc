@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.5 2010/09/11 08:26:04 obache Exp $
+# $NetBSD: Makefile,v 1.6 2012/02/27 17:14:46 elric Exp $
 #
 
 DISTNAME=		tinycdb_0.77
@@ -10,8 +10,6 @@ MASTER_SITES=		http://www.corpit.ru/mjt/tinycdb/
 MAINTAINER=		schmonz@NetBSD.org
 HOMEPAGE=		http://www.corpit.ru/mjt/tinycdb.html
 COMMENT=		Create and read constant databases
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 CONFLICTS+=		cdb-[0-9]*
 

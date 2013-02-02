@@ -1,17 +1,15 @@
-# $NetBSD: Makefile,v 1.8 2011/02/17 10:33:38 markd Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/06 14:11:17 asau Exp $
 #
 
-DISTNAME=		matplotlib-1.0.1
-PKGNAME=		${PYPKGPREFIX}-matplotlib-tk-1.0.1
-PKGREVISION=		1
+DISTNAME=		matplotlib-1.2.0
+PKGNAME=		${PYPKGPREFIX}-matplotlib-tk-1.2.0
 CATEGORIES=		graphics python
-MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=matplotlib/}
+MASTER_SITES=		https://github.com/downloads/matplotlib/matplotlib/
+FETCH_USING=		curl
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://matplotlib.sourceforge.net/
 COMMENT=		Tk frontend for matplotlib
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 PY_PATCHPLIST=		yes

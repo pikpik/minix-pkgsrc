@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/02/19 16:36:25 joerg Exp $
+# $NetBSD: Makefile,v 1.14 2010/02/26 10:28:34 wiz Exp $
 
 DISTNAME=	dog-1.7
 PKGREVISION=	1
@@ -8,8 +8,6 @@ MASTER_SITES=	http://jl.photodex.com/dog/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://jl.photodex.com/dog/
 COMMENT=	Dog writes the contents of each given file, URL, or stdin
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

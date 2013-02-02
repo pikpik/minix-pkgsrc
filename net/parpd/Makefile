@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2009/08/31 20:06:27 zafer Exp $
+# $NetBSD: Makefile,v 1.9 2010/04/21 19:22:10 roy Exp $
 #
 
 DISTNAME=		parpd-1.5
@@ -12,7 +12,6 @@ HOMEPAGE=		http://roy.marples.name/projects/parpd/
 COMMENT=		RFC1027 compliant Proxy ARP Daemon
 LICENSE=		modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
 USE_LANGUAGES=		c99
 
 EGDIR=			${PREFIX}/share/examples

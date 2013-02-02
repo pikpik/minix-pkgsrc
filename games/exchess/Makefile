@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2006/10/04 21:43:00 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2010/01/29 20:29:26 joerg Exp $
 
 DISTNAME=		EXCH314S
 # 5.01beta available
@@ -11,8 +11,6 @@ EXTRACT_SUFX=		.zip
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://personal.denison.edu/~homand/EXchess.htm
 COMMENT=		Experimental chess engine
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=		c++
 NO_CONFIGURE=		yes

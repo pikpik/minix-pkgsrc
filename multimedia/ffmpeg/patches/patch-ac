@@ -1,27 +1,15 @@
-$NetBSD: patch-ac,v 1.10 2011/07/19 19:53:18 drochner Exp $
+$NetBSD: patch-ac,v 1.13 2012/11/08 19:57:29 adam Exp $
 
---- Makefile.orig	2011-06-21 21:29:25.000000000 +0200
-+++ Makefile	2011-09-12 17:54:06.075569882 +0200
-@@ -112,7 +112,7 @@ version.h .version:
- # force version.sh to run whenever version might have changed
- -include .version
+--- Makefile.orig	2012-09-28 01:37:35.000000000 +0000
++++ Makefile
+@@ -139,8 +139,8 @@ install-progs: install-progs-yes $(PROGS
  
--DOCS = $(addprefix doc/, developer.html faq.html general.html libavfilter.html) $(HTMLPAGES) $(MANPAGES) $(PODPAGES)
-+DOCS = $(MANPAGES) $(PODPAGES)
- 
- documentation: $(DOCS)
- 
-@@ -152,11 +152,11 @@ install-progs: install-progs-yes $(PROGS
- 
- install-data: $(DATA_FILES)
- 	$(Q)mkdir -p "$(DATADIR)"
+ install-data: $(DATA_FILES) $(EXAMPLES_FILES)
+ 	$(Q)mkdir -p "$(DATADIR)/examples"
 -	$(INSTALL) -m 644 $(DATA_FILES) "$(DATADIR)"
+-	$(INSTALL) -m 644 $(EXAMPLES_FILES) "$(DATADIR)/examples"
 +	$(INSTALL) -c -m 644 $(DATA_FILES) "$(DATADIR)"
++	$(INSTALL) -c -m 644 $(EXAMPLES_FILES) "$(DATADIR)/examples"
  
- install-man: $(MANPAGES)
- 	$(Q)mkdir -p "$(MANDIR)/man1"
--	$(INSTALL) -m 644 $(MANPAGES) "$(MANDIR)/man1"
-+	$(INSTALL) -c -m 644 $(MANPAGES) "$(MANDIR)/man1"
- 
- uninstall: uninstall-libs uninstall-headers uninstall-progs uninstall-data uninstall-man
+ uninstall: uninstall-libs uninstall-headers uninstall-progs uninstall-data
  

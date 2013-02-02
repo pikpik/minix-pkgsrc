@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.39 2012/10/06 11:54:39 asau Exp $
 #
 
 DISTNAME=	frozen-bubble-2.2.0
+PKGREVISION=	6
 CATEGORIES=	games
 MASTER_SITES=	http://www.frozen-bubble.org/data/
 EXTRACT_SUFX=	.tar.bz2
@@ -13,8 +14,6 @@ LICENSE=	gnu-gpl-v2
 
 DEPENDS+=	p5-SDL>=2.1.2:../../devel/p5-SDL
 DEPENDS+=	p5-gettext>=0:../../devel/p5-gettext
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake perl pkg-config
 

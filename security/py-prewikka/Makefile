@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.32 2009/10/02 10:25:53 hasso Exp $
+# $NetBSD: Makefile,v 1.34 2012/04/08 19:09:12 wiz Exp $
 #
 
 DISTNAME=		prewikka-${VERSION}
@@ -6,8 +6,6 @@ PKGNAME=		${PYPKGPREFIX}-prewikka-${VERSION}
 CATEGORIES=		security
 MASTER_SITES=		http://www.prelude-ids.org/download/releases/prewikka/ \
 			http://www.prelude-ids.org/download/releases/old/
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 VERSION=		0.9.17.1
 
@@ -23,7 +21,6 @@ USE_TOOLS+=		msgfmt
 
 .include "../../mk/bsd.prefs.mk"
 
-PYTHON_VERSIONS_ACCEPTED=	27 26 25
 PYDISTUTILSPKG=		yes
 PYSETUP=		setup.py
 PYTHON_PATCH_SCRIPTS=	scripts/prewikka-httpd

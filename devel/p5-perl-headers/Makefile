@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.36 2010/08/21 16:34:47 seb Exp $
+# $NetBSD: Makefile,v 1.38 2012/10/03 21:55:52 wiz Exp $
 
 DISTNAME=		p5-perl-headers
 PKGNAME=		${DISTNAME}-${OS_VERSION}
-PKGREVISION=		6
+PKGREVISION=		7
 SVR4_PKGNAME=		p5plh
 CATEGORIES=		devel perl5
 MASTER_SITES=		# empty
@@ -13,7 +13,6 @@ HOMEPAGE=		http://www.perl.com/language/index.html
 COMMENT=		Perl header files
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	pax
 

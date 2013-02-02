@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2012/02/06 12:39:45 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/02 21:25:52 asau Exp $
 #
 
 DISTNAME=	rrdtool-1.4.5
 PKGNAME=	${RUBY_PKGPREFIX}-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	7
 CATEGORIES=	databases graphics net
 MASTER_SITES=	http://oss.oetiker.ch/rrdtool/pub/
 
@@ -11,8 +11,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://oss.oetiker.ch/rrdtool/
 COMMENT=	Ruby binding for rrdtool
 LICENSE=	gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # rrdtool explicitly forbids any use of -ffast-math
 #BUILDLINK_TRANSFORM+=	rm:-ffast-math

@@ -1,18 +1,22 @@
-# $NetBSD: Makefile,v 1.32 2010/01/31 17:21:14 spz Exp $
+# $NetBSD: Makefile,v 1.37 2012/08/01 13:12:36 wiz Exp $
 
-DISTNAME=		flex-2.5.35
+DISTNAME=		flex-2.5.36
+PKGREVISION=		1
 CATEGORIES=		lang
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=flex/}
-PKGREVISION=		2
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://flex.sourceforge.net/
 COMMENT=		Fast clone of lex(1), the lexical scanner generator
 
-PKG_DESTDIR_SUPPORT=	user-destdir
+# needed for building flex.pdf, make it an option?
+#BUILD_DEPENDS+=		gtexinfo-[0-9]*:../../devel/gtexinfo
+#BUILD_DEPENDS+=		tex-tex-[0-9]*:../../print/tex-tex
+#BUILD_DEPENDS+=		tex-pdftex-[0-9]*:../../print/tex-pdftex
+#BUILD_DEPENDS+=		tex-latex-fonts-[0-9]*:../../fonts/tex-latex-fonts
 
 GNU_CONFIGURE=		YES
-USE_TOOLS+=		bison makeinfo
+USE_TOOLS+=		gm4:run makeinfo
 MAKE_JOBS_SAFE=		no
 TEST_TARGET=		check
 INFO_FILES=		yes
@@ -25,18 +29,10 @@ USE_PKGLOCALEDIR=	YES
 CFLAGS+=		-D_LINUX_SOURCE_COMPAT
 .endif
 
-.if ${OPSYS} == "Minix"
-CONFIGURE_ENV+=		ac_cv_func_malloc_0_nonnull=yes
-CONFIGURE_ENV+=		ac_cv_func_realloc_0_nonnull=yes
-.endif
-
 #.if !empty(PKGSRC_RUN_TEST:M[Yy][Ee][Ss])
 USE_LANGUAGES=		c c++
 USE_TOOLS+=		gmake	# bmake has problems with the test suite
 #.endif
-
-post-install:
-	cd ${DESTDIR:Q}${PREFIX:Q}/bin && ln -s flex flex++
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

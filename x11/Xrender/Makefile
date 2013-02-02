@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.34 2008/09/08 07:02:52 dholland Exp $
+# $NetBSD: Makefile,v 1.35 2008/09/08 18:40:52 dholland Exp $
 
 DISTNAME=	libXrender-0.9.0
 PKGNAME=	${DISTNAME:S/lib//}
@@ -14,7 +14,6 @@ COMMENT=	Client library for the X Rendering Extension protocol
 CONFLICTS+=	libXrender-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		pkg-config
 USE_LIBTOOL=		YES

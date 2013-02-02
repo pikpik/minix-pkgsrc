@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2008/11/10 17:21:35 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2010/07/06 10:17:13 jmmv Exp $
 
 DISTNAME=		xjump_2.7.5.orig
 PKGNAME=		xjump-2.7.5
@@ -10,8 +10,6 @@ MASTER_SITES=		ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/\
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.gtlib.cc.gatech.edu/pub/debian/pool/main/x/xjump/
 COMMENT=		Jumping game for X
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/xjump-2.7.5.orig
 BUILD_TARGET=		xjump

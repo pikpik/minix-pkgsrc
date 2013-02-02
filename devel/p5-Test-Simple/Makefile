@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.47 2011/08/14 12:26:44 obache Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/03 21:55:45 wiz Exp $
 
 DISTNAME=		Test-Simple-0.98
 PKGNAME=		p5-${DISTNAME}
+PKGREVISION=		1
 SVR4_PKGNAME=		p5tsi
 CATEGORIES=		devel perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Test/}
@@ -14,7 +15,6 @@ LICENSE=		${PERL5_LICENSE}
 CONFLICTS+=		p5-Test-Builder-Tester-[0-9]*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 PERL5_PACKLIST=		auto/Test/Simple/.packlist
 

@@ -1,11 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2010/06/02 12:50:04 adam Exp $
+# $NetBSD: Makefile,v 1.10 2012/08/05 10:02:12 obache Exp $
 
 PERDITION_COMMENT=	PostgreSQL user database module
 PERDITION_PKGNAME=	postgresql
 PERDITION_SKIP_DISABLE=	pg
-PKGREVISION=		1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		2
 
 USE_TOOLS+=	bash:run
 REPLACE_BASH+=	perdition/db/postgresql/perditiondb_postgresql_makedb

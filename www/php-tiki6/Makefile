@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.6 2011/12/25 03:35:39 ryoon Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/28 06:30:58 asau Exp $
 #
 
-DISTNAME=	tiki-6.5
+DISTNAME=	tiki-6.8
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME:S/tiki-/tiki6-/}
-PKGREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=tikiwiki/}
 EXTRACT_SUFX=	.tar.bz2
@@ -12,8 +11,6 @@ MAINTAINER=	ryoon@NetBSD.org
 HOMEPAGE=	http://info.tiki.org/
 COMMENT=	Tiki Wiki CMS Groupware web-based application
 LICENSE=	gnu-lgpl-v2.1
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	${PHP_PKG_PREFIX}-iconv>=5.2.0:../../converters/php-iconv
 DEPENDS+=	${PHP_PKG_PREFIX}-mysqli>=5.2.0:../../databases/php-mysqli
@@ -31,12 +28,21 @@ BUILD_DEFS+=	APACHE_GROUP APACHE_USER
 TIKIDIR=		share/tiki6
 INSTALLATION_DIRS=	${TIKIDIR}
 
+.include "../../mk/bsd.prefs.mk"
+
+APACHE_USER?=	www
+APACHE_GROUP?=	www
+PKG_GROUPS=	${APACHE_GROUP}
+PKG_USERS=	${APACHE_USER}:${APACHE_GROUP}
+
+PKG_USERS_VARS=		APACHE_USER
+PKG_GROUPS_VARS=	APACHE_GROUP
+
 FILES_SUBST+=	WWWGRP=${APACHE_GROUP} WWWOWN=${APACHE_USER} \
 		TIKIDIR=${TIKIDIR}
 
 do-install:
-	${RM} ${WRKSRC}/*orig
-	${RM} ${WRKSRC}/lib/wiki-plugins/*orig
+	${RM} -f ${WRKSRC}/*orig
 	cd ${WRKSRC} && sh setup.sh -u ${APACHE_USER} -g ${APACHE_GROUP} -n
 	cd ${WRKSRC} && pax -rw -pmp * \
 		${DESTDIR}${PREFIX}/${TIKIDIR}

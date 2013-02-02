@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.16 2011/08/30 10:43:11 christos Exp $
+# $NetBSD: Makefile,v 1.19 2012/10/03 21:57:44 wiz Exp $
 #
 
 DISTNAME=		strace-4.5.15
-PKGREVISION=		3
+PKGREVISION=		5
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=strace/}
 EXTRACT_SUFX=		.tar.bz2
@@ -12,8 +12,6 @@ HOMEPAGE=		http://sourceforge.net/projects/strace/
 COMMENT=		Trace system calls
 LICENSE=		modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 #			NetBSD < 3.99.16
 NOT_FOR_PLATFORM=	NetBSD-[012]*-* NetBSD-3.[0-9][._]*-* \
 			NetBSD-3.99.[0-9]-* NetBSD-3.99.1[0-5]-*
@@ -22,6 +20,7 @@ NOT_FOR_PLATFORM+=	DragonFly-*-*
 GNU_CONFIGURE=		yes
 
 REPLACE_PERL=		strace-graph
+USE_TOOLS+=		perl:run
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Linux"

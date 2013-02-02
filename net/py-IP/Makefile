@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2011/11/02 10:58:33 obache Exp $
+# $NetBSD: Makefile,v 1.17 2012/04/08 19:09:09 wiz Exp $
 
 DISTNAME=	IPy-0.75
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:S/IPy/IP/}
@@ -10,10 +10,7 @@ HOMEPAGE=	https://github.com/haypo/python-ipy/
 COMMENT=	Python module to handle IPv4 and IPv6 address
 LICENSE=	modified-bsd
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 PYTHON_VERSIONS_INCLUDE_3X=	yes
-PYTHON_VERSIONS_INCOMPATIBLE=	24
 
 do-test:
 	${RUN}cd ${WRKSRC}/test; ${SETENV} ${TEST_ENV} ${PYTHONBIN} test_IPy.py

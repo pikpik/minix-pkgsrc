@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.25 2010/07/15 21:35:10 asau Exp $
+# $NetBSD: Makefile,v 1.27 2012/10/03 00:10:29 asau Exp $
 
 DISTNAME=		gcc-4.4.1
 PKGNAME=		avr-gcc-4.4.1
-PKGREVISION=		3
+PKGREVISION=		4
 CATEGORIES=		cross
 MASTER_SITES=		${MASTER_SITE_GNU:=gcc/releases/${DISTNAME}/}
 EXTRACT_SUFX=		.tar.bz2
@@ -11,8 +11,6 @@ DISTFILES=		${DISTNAME:S/-/-core-/}${EXTRACT_SUFX} \
 
 MAINTAINER=		pkgsrc-users@NetBSD.org
 COMMENT=		GNU gcc-4.4 for Atmel AVR 8-bit RISC microcontrollers
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=		avr-binutils-[0-9]*:../../cross/avr-binutils
 BUILD_DEPENDS+=		autoconf-[0-9]*:../../devel/autoconf

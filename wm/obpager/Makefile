@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1.1.1 2007/06/20 18:09:24 tnn Exp $
+# $NetBSD: Makefile,v 1.3 2012/10/08 12:42:22 asau Exp $
 #
 
 DISTNAME=	obpager-1.8
@@ -9,8 +9,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=obpager/}
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://obpager.sourceforge.net/
 COMMENT=	Lightweight pager applet for OpenBox
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	c++
 NO_CONFIGURE=	yes
@@ -26,5 +24,4 @@ do-install:
 
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

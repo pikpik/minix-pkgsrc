@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.2 2008/12/06 13:10:34 obache Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 12:55:22 asau Exp $
 
 DISTNAME=	xhomer-9-16-06
 PKGNAME=	xhomer-9.16.06
@@ -9,8 +9,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://xhomer.isani.org/xhomer/
 COMMENT=	DEC Pro 350/380 emulator
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=	gmake
 
@@ -32,5 +30,4 @@ do-install:
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libXxf86dga/buildlink3.mk"
 .include "../../x11/xf86dgaproto/buildlink3.mk"
-.include "../../x11/xextproto/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

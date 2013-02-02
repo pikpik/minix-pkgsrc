@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.3 2009/07/09 19:48:23 joerg Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:56:08 wiz Exp $
 #
 
 DISTNAME=	circos-0.49
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://mkweb.bcgsc.ca/circos/distribution/
 EXTRACT_SUFX=	.tgz
@@ -11,8 +11,6 @@ MAINTAINER=	schmonz@NetBSD.org
 HOMEPAGE=	http://mkweb.bcgsc.ca/circos/
 COMMENT=	Concise, explanatory, unique and print-ready data visualization
 #LICENSE=
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_LANGUAGES=	# none
 USE_TOOLS+=	pax perl bash:run

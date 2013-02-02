@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.5 2011/12/15 16:00:42 taca Exp $
+# $NetBSD: Makefile,v 1.8 2012/09/16 09:26:10 taca Exp $
 
-DISTNAME=	coderay-1.0.5
+DISTNAME=	coderay-1.0.8
 CATEGORIES=	textproc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

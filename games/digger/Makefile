@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2006/09/09 02:42:00 obache Exp $
+# $NetBSD: Makefile,v 1.16 2008/03/04 06:59:03 jlam Exp $
 #
 
 DISTNAME=		digger-20020314
@@ -9,8 +9,6 @@ MASTER_SITES=		http://www.digger.org/
 MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.digger.org/
 COMMENT=		Digger Remastered
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 

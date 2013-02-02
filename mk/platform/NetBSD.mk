@@ -1,4 +1,4 @@
-# $NetBSD: NetBSD.mk,v 1.36 2012/02/28 19:35:58 tron Exp $
+# $NetBSD: NetBSD.mk,v 1.37 2012/03/19 12:34:18 joerg Exp $
 #
 # Variable definitions for the NetBSD operating system.
 
@@ -29,7 +29,7 @@ EXPORT_SYMBOLS_LDFLAGS?=-Wl,-E	# add symbols to the dynamic symbol table
 .else
 EXPORT_SYMBOLS_LDFLAGS?=-Wl,--export-dynamic
 .endif
-MOTIF_TYPE_DEFAULT?=	openmotif	# default 2.0 compatible libs type
+MOTIF_TYPE_DEFAULT?=	motif	# default 2.0 compatible libs type
 NOLOGIN?=		/sbin/nologin
 # This must be lazy and using :? evaluation doesn't work due to a make bugs.
 PKG_TOOLS_BIN_cmd=	if [ -x ${LOCALBASE}/sbin/pkg_info ]; then echo ${LOCALBASE}/sbin; else echo /usr/sbin; fi

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.33 2012/03/03 00:13:11 wiz Exp $
+# $NetBSD: Makefile,v 1.41 2012/10/08 23:01:40 adam Exp $
 #
 
 DISTNAME=		comix-4.0.4
-PKGREVISION=		13
+PKGREVISION=		19
 CATEGORIES=		graphics python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=comix/}
 
@@ -11,15 +11,9 @@ HOMEPAGE=		http://comix.sourceforge.net/index.html
 COMMENT=		Image viewer specifically designed to handle comic books
 LICENSE=		gnu-gpl-v2
 
-PKG_DESTDIR_SUPPORT=	user-destdir
-
 DEPENDS+=		unrar-[0-9]*:../../archivers/unrar
 .include "../../lang/python/extension.mk"
-.if ${PYPKGPREFIX} == "py24"
-.include "../../databases/py-sqlite2/buildlink3.mk"
-.else
 DEPENDS+=		${PYPKGPREFIX}-sqlite3-[0-9]*:../../databases/py-sqlite3
-.endif
 
 MANCOMPRESSED=		yes
 

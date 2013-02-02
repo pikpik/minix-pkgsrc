@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.2 2010/08/21 16:36:20 seb Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/03 21:58:15 wiz Exp $
 #
 
 DISTNAME=	mobiperl-0.0.43
 PKGNAME=	p5-${DISTNAME}
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	textproc
 # no https support in pkgsrc
 MASTER_SITES=	# https://dev.mobileread.com/dist/tompe/mobiperl/
@@ -23,8 +23,6 @@ DEPENDS+=	p5-Encode-[0-9]*:../../textproc/p5-Encode
 DEPENDS+=	p5-XML-Parser-Lite-Tree-[0-9]*:../../textproc/p5-XML-Parser-Lite-Tree
 DEPENDS+=	p5-TimeDate-[0-9]*:../../time/p5-TimeDate
 DEPENDS+=	p5-HTML-Tree-[0-9]*:../../www/p5-HTML-Tree
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 INSTALLATION_DIRS=	bin ${PERL5_INSTALLVENDORLIB}/MobiPerl
 INSTALLATION_DIRS+=	${PERL5_INSTALLVENDORLIB}/Palm

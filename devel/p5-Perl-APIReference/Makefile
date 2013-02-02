@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2011/08/14 12:26:30 obache Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/03 21:55:29 wiz Exp $
 #
 
 DISTNAME=	Perl-APIReference-0.09
 PKGNAME=	p5-${DISTNAME}
+PKGREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Perl/}
 
@@ -12,7 +13,6 @@ COMMENT=	Programmatically query the perlapi
 LICENSE=	${PERL5_LICENSE}
 
 USE_LANGUAGES=		# empty
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 DEPENDS+=	p5-Class-XSAccessor>=1.05:../../devel/p5-Class-XSAccessor
 DEPENDS+=	p5-YAML-Tiny-[0-9]*:../../textproc/p5-YAML-Tiny

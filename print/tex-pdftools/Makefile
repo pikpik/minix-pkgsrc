@@ -1,7 +1,8 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.3 2012/04/25 15:47:19 minskim Exp $
 
 DISTNAME=	pdftools
 PKGNAME=	tex-${DISTNAME}-0.82
+PKGREVISION=	1
 TEXLIVE_REV=	23089
 
 MAINTAINER=	minskim@NetBSD.org
@@ -13,7 +14,6 @@ DEPENDS+=	tex-epstopdf-[0-9]*:../../graphics/tex-epstopdf
 DEPENDS+=	tex-oberdiek>=2011:../../print/tex-oberdiek
 DEPENDS+=	tex-pst-pdf-[0-9]*:../../graphics/tex-pst-pdf
 DEPENDS+=	web2c-[0-9]*:../../print/web2c
-DEPENDS+=	xpdfopen-[0-9]*:../../print/xpdfopen
 
 EVAL_PREFIX+=	EPSTOPDF_PREFIX=tex-epstopdf
 USE_TOOLS+=	perl:run
@@ -30,6 +30,7 @@ INSTALLATION_DIRS+=	bin
 TEX_TEXMF_DIRS=		# empty
 
 .include "../../print/texlive/package.mk"
+.include "options.mk"
 
 post-extract:
 	${MKDIR} ${WRKSRC}/bin

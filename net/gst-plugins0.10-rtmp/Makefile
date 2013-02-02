@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2012/02/06 12:41:12 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/06/14 07:44:21 sbd Exp $
 #
 
 GST_PLUGINS0.10_NAME=	rtmp
 GST_PLUGINS0.10_DIRS=	ext/rtmp
-
-PKG_DESTDIR_SUPPORT=	user-destdir
+PKGREVISION=		1
 
 .include "../../multimedia/gst-plugins0.10-bad/Makefile.common"
 

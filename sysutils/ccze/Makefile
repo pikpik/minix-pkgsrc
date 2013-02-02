@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2008/06/12 02:14:46 joerg Exp $
+# $NetBSD: Makefile,v 1.10 2012/03/03 00:13:55 wiz Exp $
 
 DISTNAME=	ccze-0.2.1
 PKGREVISION=	2
@@ -12,7 +12,6 @@ COMMENT=	Log coloriser, fast and light on resources
 INCOMPAT_CURSES=	NetBSD-1.5*-* NetBSD-1.6*-*
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake

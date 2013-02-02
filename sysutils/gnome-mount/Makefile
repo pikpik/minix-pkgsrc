@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2012/02/06 12:41:34 wiz Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/08 23:00:40 adam Exp $
 #
 
 DISTNAME=		gnome-mount-0.8
-PKGREVISION=		11
+PKGREVISION=		19
 CATEGORIES=		sysutils gnome
 MASTER_SITES=		http://hal.freedesktop.org/releases/
 
@@ -16,8 +16,6 @@ USE_TOOLS+=		gmake intltool msgfmt perl pkg-config
 USE_LIBTOOL=		YES
 
 GCONF_SCHEMAS+=	gnome-mount.schemas
-
-PKG_DESTDIR_SUPPORT=   user-destdir
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "NetBSD"

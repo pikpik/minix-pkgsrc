@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.14 2007/03/04 11:30:33 wiz Exp $
+# $NetBSD: Makefile,v 1.15 2010/02/11 19:37:03 joerg Exp $
 
 DISTNAME=	lile-2.0
 PKGNAME=	ile-2.0
@@ -8,8 +8,6 @@ EXTRACT_SUFX=	.tar.z
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 COMMENT=	Input Line Editor that wraps itself around programs
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 # uses struct sgttyb
 NOT_FOR_PLATFORM=	Linux-*-*

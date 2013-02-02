@@ -1,12 +1,10 @@
-# $NetBSD: Makefile,v 1.34 2011/01/13 13:36:16 wiz Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/29 05:06:45 asau Exp $
 #
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 .include "../../x11/py-qt3-base/Makefile.common"
 
 PKGNAME=		${PYPKGPREFIX}-qt3-base-${PYQT_VERSION}
-PKGREVISION=		8
+PKGREVISION=		9
 
 COMMENT=		Python binding for Qt3
 

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.24 2012/03/03 00:13:36 wiz Exp $
+# $NetBSD: Makefile,v 1.34 2012/12/15 10:36:29 ryoon Exp $
 #
 
 DISTNAME=	mousetweaks-2.28.1
-PKGREVISION=	14
+PKGREVISION=	23
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME:=sources/mousetweaks/2.28/}
 
@@ -10,8 +10,6 @@ MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://live.gnome.org/Mousetweaks/Home
 COMMENT=	Mouse accessibility software
 LICENSE=	gnu-gpl-v3 AND gnu-fdl-v1.3
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 

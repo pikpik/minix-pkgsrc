@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.13 2009/05/19 08:59:35 wiz Exp $
+# $NetBSD: Makefile,v 1.14 2010/01/27 20:15:39 joerg Exp $
 #
 
 DISTNAME=		su2-1.3
@@ -9,8 +9,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		ftp://ftp.ccs.neu.edu/pub/sysadmin/
 COMMENT=		Enhanced su, users su with own password + more
 LICENSE=		su2-license
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 SPECIAL_PERMS+=		bin/su2 ${SETUID_ROOT_PERMS}
 

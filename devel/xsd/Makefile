@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.11 2012/01/09 02:54:26 obache Exp $
+# $NetBSD: Makefile,v 1.14 2012/08/29 11:22:11 obache Exp $
 
 DISTNAME=		xsd-3.2.0+dep
 EXTRACT_SUFX=		.tar.bz2
 PKGNAME=		xsd-3.2.0
-PKGREVISION=		4
+PKGREVISION=		6
 CATEGORIES=		devel textproc
 MASTER_SITES=		http://www.codesynthesis.com/download/xsd/3.2/
 
@@ -11,8 +11,6 @@ MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.codesynthesis.com/products/xsd/
 COMMENT=		W3C XML Schema to C++ data binding compiler
 LICENSE=		gnu-gpl-v2
-
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 USE_TOOLS+=		bash gmake gm4
 USE_LANGUAGES+=		c++

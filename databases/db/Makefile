@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2008/02/21 19:32:23 jlam Exp $
+# $NetBSD: Makefile,v 1.32 2012/10/02 21:25:16 asau Exp $
 
 DISTNAME=	db-2.7.7
 PKGREVISION=	3
@@ -8,9 +8,9 @@ MASTER_SITES=	http://download.oracle.com/berkeley-db/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.oracle.com/database/berkeley-db.html
 COMMENT=	Sleepycat Software's Berkeley DB version 2
+LICENSE=	sleepycat-license # minus ASM stanza
 
 PKG_INSTALLATION_TYPES=	overwrite pkgviews
-PKG_DESTDIR_SUPPORT=	user-destdir
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/build_unix
 USE_LIBTOOL=		yes
