@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.4 2011/04/14 20:20:33 hans Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/23 17:19:10 asau Exp $
 
 DISTNAME=	tuntap
 PKGNAME=	solaris-tap-20091116
 CATEGORIES=	net
 MASTER_SITES=	http://www.whiteboard.ne.jp/~admin2/tuntap/source/tuntap/
 
-MAINTAINER=	tnn@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.whiteboard.ne.jp/~admin2/tuntap/
 COMMENT=	Solaris kernel module for virtual Ethernet devices
 

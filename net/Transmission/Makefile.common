@@ -1,4 +1,4 @@
-# $NetBSD: Makefile.common,v 1.10 2013/01/06 01:12:33 wiz Exp $
+# $NetBSD: Makefile.common,v 1.12 2013/02/01 22:21:09 wiz Exp $
 # used by net/Transmission/Makefile
 # used by net/Transmission-gui/Makefile
 
@@ -8,7 +8,7 @@ CATEGORIES=		net
 MASTER_SITES=		http://download.m0k.org/transmission/files/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tnn@NetBSD.org
+MAINTAINER=		wiz@NetBSD.org
 HOMEPAGE=		http://www.transmissionbt.com/
 COMMENT=		Free, lightweight BitTorrent client
 

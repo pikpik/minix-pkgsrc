@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.69 2012/10/08 23:02:31 adam Exp $
+# $NetBSD: Makefile,v 1.70 2012/12/21 11:36:50 dholland Exp $
 #
 
 DISTNAME=		sawfish-1.7.1
@@ -7,7 +7,7 @@ CATEGORIES=		x11 wm
 MASTER_SITES=		http://download.tuxfamily.org/sawfish/sawfish/
 EXTRACT_SUFX=		.tar.bz2
 
-MAINTAINER=		tnn@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://sawfish.wikia.com/
 COMMENT=		Extensible window manager that is fully configurable in Lisp
 
