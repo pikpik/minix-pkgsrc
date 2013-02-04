@@ -3,3 +3,4 @@ $NetBSD: distinfo,v 1.8 2011/06/15 11:43:13 adam Exp $
 SHA1 (xz-5.0.4.tar.bz2) = 7dd986aa42e0181cad3af236826f65514d2f7c19
 RMD160 (xz-5.0.4.tar.bz2) = 25463b22fb24156a5d6c62450265ebe1b29e670e
 Size (xz-5.0.4.tar.bz2) = 1048328 bytes
+SHA1 (patch-file_io.c) = a5eb8a11edd642ab4cc43a3c2bbbc293e150c30d
