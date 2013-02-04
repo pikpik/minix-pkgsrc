@@ -37,6 +37,10 @@ post-configure:
 CONFIGURE_ARGS+=	--disable-dtrace
 .endif
 
+.if ${OPSYS} == "Minix"
+.include "../../devel/pth/buildlink3.mk"
+.endif
+
 CONFIGURE_ARGS+=	${CONFIGURE_ARGS.${ICONV_TYPE}-iconv}
 CONFIGURE_ARGS.gnu-iconv=	--with-libiconv=gnu
 
