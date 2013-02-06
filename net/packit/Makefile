@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2009/12/09 12:27:28 obache Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/23 17:18:56 asau Exp $
 
 DISTNAME=	packit-1.0
-PKGREVISION=	2
+PKGREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://packit.sourceforge.net/downloads/
 EXTRACT_SUFX=	.tgz

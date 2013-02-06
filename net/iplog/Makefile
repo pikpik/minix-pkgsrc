@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.14 2010/02/11 21:36:18 joerg Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/23 17:18:29 asau Exp $
 #
 
 DISTNAME=	iplog-2.2.3
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ojnk/}
 

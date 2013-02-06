@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2012/04/13 23:20:07 hans Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/23 18:17:00 asau Exp $
 
 DISTNAME=	stegtunnel-0.4
+PKGREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.synacklabs.net/projects/stegtunnel/
 

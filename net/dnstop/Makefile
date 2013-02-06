@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2009/07/25 10:26:17 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/23 17:18:18 asau Exp $
 #
 
 DISTNAME=	dnstop-20090128
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://dns.measurement-factory.com/tools/dnstop/src/
 

@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.8 2011/07/30 10:25:13 cheusov Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/23 17:18:35 asau Exp $
 #
 
 DISTNAME=	libtrace-3.0.10
+PKGREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://research.wand.net.nz/software/libtrace/
 EXTRACT_SUFX=	.tar.bz2

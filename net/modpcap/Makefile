@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.1.1.1 2010/11/29 07:25:04 agc Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/23 17:18:37 asau Exp $
 #
 
 DISTNAME=		modcap.c
 PKGNAME=		modcap-0.0.5
+PKGREVISION=		1
 CATEGORIES=		net security
 MASTER_SITES=		http://www.emcy.it/Linux/files/
 EXTRACT_SUFX=		# empty

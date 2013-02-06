@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2012/09/15 10:06:16 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/23 18:16:38 asau Exp $
 #
 
 DISTNAME=	openvas-libraries-2.0.0
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	security
 MASTER_SITES=	http://wald.intevation.org/frs/download.php/548/
 

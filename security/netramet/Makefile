@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.8 2011/03/19 09:36:47 obache Exp $
+# $NetBSD: Makefile,v 1.9 2012/10/23 18:16:37 asau Exp $
 #
 
 DISTNAME=	NeTraMet44
 PKGNAME=	netramet-4.4.20
+PKGREVISION=	1
 CATEGORIES=	security net
 MASTER_SITES=	# http://foobar.cit.buffalo.edu/nms/NeTraMet/
 
