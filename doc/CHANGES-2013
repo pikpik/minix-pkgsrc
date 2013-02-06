@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.457 2013/02/05 15:59:12 taca Exp $
+$NetBSD: CHANGES-2013,v 1.462 2013/02/06 07:52:31 jnemeth Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -585,3 +585,8 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated security/openssl to 0.9.8y [taca 2013-02-05]
 	Updated mail/postfix to 2.8.14 [taca 2013-02-05]
 	Updated misc/stellarium to 0.12.0 [drochner 2013-02-05]
+	Updated www/libmicrohttpd to 0.9.25 [wiz 2013-02-06]
+	Updated mail/sendmail to 8.14.6 [jnemeth 2013-02-06]
+	Updated mail/libmilter to 8.14.6 [jnemeth 2013-02-06]
+	Updated mail/sendmail-qtool to 8.14.6 [jnemeth 2013-02-06]
+	Updated mail/sendmail-cidrexpand to 8.14.6 [jnemeth 2013-02-06]

@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11914 2013/02/04 12:34:33 obache Exp $
+$NetBSD: TODO,v 1.11916 2013/02/06 07:43:04 jnemeth Exp $
 
 Suggested new packages
 ======================
@@ -811,7 +811,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o libltdl-2.4.2
 	o libmcs-0.7.2
 	o libmemcached-1.0.16
-	o libmilter-8.14.5
 	o libmms-0.6.2
 	o libmp3splt-0.8.1
 	o libmtp-1.1.5
@@ -1092,7 +1091,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o seahorse-nautilus-3.6.1
 	o secpanel-0.6.1
 	o sendfile-20010424
-	o sendmail-8.14.6
 	o ser-0.9.6
 	o sharity-3.7
 	o sharity-light-1.3
