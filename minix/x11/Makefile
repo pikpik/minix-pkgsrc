@@ -37,8 +37,8 @@ post-extract:
 	${CP} ${FILESDIR}/assyntax.h ${WRKSRC}/programs/Xserver/hw/xfree86/os-support/assyntax.h
 
 post-install:
-	${CP} ${WRKSRC}/x11.pc ${X11R6_PREFIX}/lib/pkgconfig/x11.pc
-	${RM} -r ${X11R6_PREFIX}/lib/X11/doc/PDF
+	${CP} ${WRKSRC}/x11.pc ${DESTDIR}/${X11R6_PREFIX}/lib/pkgconfig/x11.pc
+	${RM} -r ${DESTDIR}/${X11R6_PREFIX}/lib/X11/doc/PDF
 #	${MV} "${X11R6_PREFIX}/bin" "${X11R6_PREFIX}/bin.all" 
 #	${MKDIR} "${X11R6_PREFIX}/bin"
 #	${MV} ${X11R6_PREFIX}/bin.all/xmkmf ${X11R6_PREFIX}/bin.all/imake \
