@@ -1,4 +1,4 @@
-$NetBSD: TODO,v 1.11918 2013/02/06 15:08:38 taca Exp $
+$NetBSD: TODO,v 1.11921 2013/02/07 10:26:04 wiz Exp $
 
 Suggested new packages
 ======================
@@ -356,7 +356,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o TiffIO-130e
 	o YoSucker-81
 	o ZIPIdent-2.9
-	o abcm2ps-7.3.1
+	o abcm2ps-7.4.0
 	o abcmidi-20121201
 	o accerciser-1.12.2 [GNOME 2.32]
 	o acpica-utils-20110623
@@ -711,7 +711,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o hesiod-3.1.0
 	o heyu-2.9.0
 	o hiawatha-8.7
-	o highlight-3.12
+	o highlight-3.13
 	o honeyd-1.5c
 	o horde-5.0.3
 	o host-20070128
@@ -750,7 +750,6 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o jcabc2ps-20070110
 	o jdb-1.14
 	o jed-0.99-18
-	o jhead-2.97
 	o john-1.7.9jumbo7
 	o jools-1.0
 	o jpilot-1.8.0
@@ -777,6 +776,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o kphotobook-0.0.7
 	o kronolith-4.0.3
 	o krusader-2.0
+	o ktorrent-4.3.1
 	o ktorrent3-3.3.4
 	o lapack-3.4.1
 	o latd-1.21
@@ -867,6 +867,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o mgetty+sendfax-1.1.35
 	o milkytracker-0.90.85
 	o mined-2012.22
+	o miniupnpd-1.8
 	o minivmac-3.2.3
 	o miredo-1.2.4
 	o mirmon-1.37
@@ -943,6 +944,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o openslp-2.0.0
 	o openssh-6.1p1
 	o openttd-1.2.3
+	o opera-12.14
 	o oroborus-2.0.18
 	o ortp-0.16.5
 	o oto-0.5
@@ -1155,7 +1157,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o tct-1.16
 	o tdir-1.67
 	o tds-1.6.2
-	o tea-34.0.0
+	o tea-34.0.1
 	o ted-en-us-2.17
 	o teem-1.10.0
 	o tellico-2.3.7
@@ -1224,7 +1226,7 @@ For possible Perl packages updates, see http://www.NetBSD.org/~wiz/perl.html.
 	o webalizer-2.23.05
 	o webkit-gtk-1.10.2
 	o webkit-gtk3-1.10.1
-	o webmin-1.610
+	o webmin-1.620
 	o websvn-2.3.2
 	o weechat-0.4.0
 	o windowlab-1.40

@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.56 2012/05/20 13:38:20 wiz Exp $
+# $NetBSD: Makefile,v 1.57 2012/09/12 00:24:41 asau Exp $
 
-DISTNAME=	audiofile-0.3.4
+DISTNAME=	audiofile-0.3.5
 PKGNAME=	lib${DISTNAME}
 CATEGORIES=	audio
 MASTER_SITES=	http://www.68k.org/~michael/audiofile/

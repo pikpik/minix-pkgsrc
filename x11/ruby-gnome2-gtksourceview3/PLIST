@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/pkgconfig/ruby-gtksourceview3.pc
+${RUBY_VENDORLIB}/gtksourceview3.rb
+${RUBY_VENDORLIB}/gtksourceview3/deprecated.rb
+${RUBY_VENDORARCHLIB}/gtksourceview3.${RUBY_DLEXT}

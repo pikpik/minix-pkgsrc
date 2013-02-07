@@ -1,9 +1,8 @@
-# $NetBSD: Makefile,v 1.20 2012/09/15 10:04:21 obache Exp $
+# $NetBSD: Makefile,v 1.21 2012/10/31 11:19:41 asau Exp $
 #
 
 PKGNAME=		${RUBY_PKGPREFIX}-gnome2-glib-${VERSION}
 COMMENT=		Ruby binding of GLib-2.x
-PKGREVISION=		1
 CATEGORIES=		devel
 
 CONFLICTS+=		ruby-gnome2-glib-[0-9]*
