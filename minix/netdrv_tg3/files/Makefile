@@ -8,9 +8,9 @@ BINDIR=$(PREFIX)/minixservices
 CONFDIR=$(PREFIX)/etc/system.conf.d 
 
 install:
-	mkdir -p $(CONFDIR)
-	mkdir -p $(BINDIR)
-	cp $(PROG) $(BINDIR)/
-	cp tg.conf $(CONFDIR)/tg
+	mkdir -p ${DESTDIR}$(CONFDIR)
+	mkdir -p ${DESTDIR}$(BINDIR)
+	cp $(PROG) ${DESTDIR}$(BINDIR)/
+	cp tg.conf ${DESTDIR}$(CONFDIR)/tg
 
 .include <bsd.prog.mk>
