@@ -1,10 +1,11 @@
-# $NetBSD: Makefile,v 1.1 2012/11/29 08:26:09 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/12/04 06:23:27 asau Exp $
 #
 
 USE_LANGUAGES=		c c++
 
 .include "Makefile.common"
 
+PKGREVISION=		1
 COMMENT+=		bad plugins
 
 .include "../../devel/glib2/schemas.mk"

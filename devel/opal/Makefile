@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2012/12/16 01:52:11 obache Exp $
+# $NetBSD: Makefile,v 1.23 2013/01/19 20:29:24 riastradh Exp $
 #
 
 DISTNAME=		opal-3.6.6
-PKGREVISION=		5
+PKGREVISION=		6
 CATEGORIES=		devel net comms
 MASTER_SITES=		${MASTER_SITE_GNOME:=sources/opal/3.6/}
 EXTRACT_SUFX=		.tar.bz2

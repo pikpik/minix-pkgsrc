@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.9 2010/09/18 12:11:36 obache Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/31 11:17:04 asau Exp $
 
 DISTNAME=		gsoap_2.7.17
 PKGNAME=		${DISTNAME:S/_/-/}
+PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=gsoap2/}
 EXTRACT_SUFX=		.zip

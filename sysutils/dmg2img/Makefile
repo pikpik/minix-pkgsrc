@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.3 2011/11/16 03:53:11 sbd Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/23 19:50:58 asau Exp $
 
 DISTNAME=		dmg2img-1.6.1
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		sysutils
 MASTER_SITES+=		http://vu1tur.eu.org/tools/download.pl?
 

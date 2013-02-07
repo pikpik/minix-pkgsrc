@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2012/05/29 13:36:01 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/09/12 00:24:43 asau Exp $
 
 DISTNAME=	libmusicbrainz-3.0.3
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.musicbrainz.org/pub/musicbrainz/
 

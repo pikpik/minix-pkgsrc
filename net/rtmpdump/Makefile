@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.5 2012/10/23 17:19:06 asau Exp $
+# $NetBSD: Makefile,v 1.6 2012/12/24 14:29:24 ryoon Exp $
 #
 
 DISTNAME=	rtmpdump-2.4
+PKGREVISION=	1
 CATEGORIES=	net multimedia
 MASTER_SITES=	http://rtmpdump.mplayerhq.hu/download/
 

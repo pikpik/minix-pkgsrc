@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.18 2011/08/01 21:42:45 tron Exp $
+# $NetBSD: buildlink3.mk,v 1.19 2012/05/16 17:42:37 tron Exp $
 
 BUILDLINK_TREE+=	libtorrent
 
@@ -6,7 +6,7 @@ BUILDLINK_TREE+=	libtorrent
 LIBTORRENT_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.libtorrent+=	libtorrent>=0.13.2
-BUILDLINK_ABI_DEPENDS.libtorrent+=	libtorrent>=0.13.2
+BUILDLINK_ABI_DEPENDS.libtorrent+=	libtorrent>=0.13.2nb2
 BUILDLINK_PKGSRCDIR.libtorrent?=	../../net/libtorrent
 
 .include "../../devel/libsigc++/buildlink3.mk"

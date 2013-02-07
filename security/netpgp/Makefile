@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.15 2010/11/07 07:54:39 agc Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/23 18:16:37 asau Exp $
 
 DISTNAME=		netpgp-20101107
+PKGREVISION=		1
 CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 

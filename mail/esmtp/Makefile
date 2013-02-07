@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2010/03/12 13:12:08 obache Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 12:19:09 asau Exp $
 #
 
 DISTNAME=	esmtp-1.2
+PKGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=esmtp/}
 EXTRACT_SUFX=	.tar.bz2

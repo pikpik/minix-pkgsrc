@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.53 2012/06/23 23:02:58 dholland Exp $
+# $NetBSD: Makefile,v 1.54 2012/10/08 12:27:41 asau Exp $
 
 DISTNAME=	slrn-0.9.9p1
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	news
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/slrn/
 

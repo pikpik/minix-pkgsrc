@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.31 2012/12/16 01:52:27 obache Exp $
+# $NetBSD: Makefile,v 1.32 2013/01/26 21:38:26 adam Exp $
 
 DISTNAME=	mediatomb-0.12.1
-PKGREVISION=	13
+PKGREVISION=	14
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mediatomb/}
 

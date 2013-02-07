@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.5 2010/01/17 12:02:40 wiz Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/23 18:16:30 asau Exp $
 
 DISTNAME=	hydan-0.13
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	http://crazyboy.com/hydan/
 

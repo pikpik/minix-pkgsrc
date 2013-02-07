@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.9 2011/07/28 23:33:31 pettai Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/23 18:17:01 asau Exp $
 
 DISTNAME=	xml-security-c-1.6.1
+PKGREVISION=	1
 CATEGORIES=	security devel
 MASTER_SITES=	http://apache.dataphone.se/santuario/c-library/ \
 		http://www.apache.org/dist//santuario/c-library/

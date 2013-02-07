@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.15 2011/04/22 13:44:04 obache Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/08 12:19:18 asau Exp $
 #
 
 DISTNAME=	mpop-1.0.23
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=mpop/}
 EXTRACT_SUFX=	.tar.bz2

@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2010/01/27 16:55:53 joerg Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/23 18:16:58 asau Exp $
 #
 
 DISTNAME=	sign-1.0.4
-PKGREVISION=	4
+PKGREVISION=	5
 CATEGORIES=	security
 MASTER_SITES=	http://swapped.cc/sign/files/
 

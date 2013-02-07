@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.14 2012/07/20 12:30:36 taca Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/02 21:25:39 asau Exp $
 
 MODNAME=		mssql
+PKGREVISION=		1
 CATEGORIES+=		databases
 COMMENT=		PHP extension for MS SQL databases
 
