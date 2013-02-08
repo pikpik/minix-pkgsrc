@@ -1,8 +1,6 @@
-$NetBSD$
-
---- gio/gsocket.c.orig	Sun Jun  5 23:18:49 2011
-+++ gio/gsocket.c
-@@ -33,6 +33,9 @@
+--- gio/gsocket.c.orig	2013-02-08 06:31:09.509535717 -0500
++++ gio/gsocket.c	2013-02-08 06:31:09.401535721 -0500
+@@ -37,6 +37,9 @@
  #include <signal.h>
  #include <string.h>
  #include <stdlib.h>
@@ -12,25 +10,40 @@ $NetBSD$
  
  #ifndef G_OS_WIN32
  # include <fcntl.h>
-@@ -748,8 +751,12 @@ g_socket_class_init (GSocketClass *klass)
+@@ -819,7 +822,11 @@
  						     P_("Listen backlog"),
  						     P_("Outstanding connections in the listen queue"),
  						     0,
 +#ifdef SOMAXCONN
  						     SOMAXCONN,
 +#else
- 						     10,
-+#endif
 +						     10,
++#endif
+ 						     10,
  						     G_PARAM_READWRITE |
                                                       G_PARAM_STATIC_STRINGS));
+@@ -2378,7 +2385,7 @@
+ gssize
+ g_socket_get_available_bytes (GSocket *socket)
+ {
+-#ifndef G_OS_WIN32
++#ifdef G_OS_WIN32
+   gulong avail = 0;
+ #else
+   gint avail = 0;
+@@ -4304,7 +4311,7 @@
  
-@@ -3538,6 +3545,35 @@ g_socket_get_credentials (GSocket   *socket,
-         g_credentials_set_native (ret,
-                                   G_CREDENTIALS_TYPE_LINUX_UCRED,
+   ret = NULL;
+ 
+-#if defined(__linux__) || defined(__OpenBSD__)
++#if defined(__linux__) || (defined(__OpenBSD__) && !defined(__MirBSD__))
+   {
+     socklen_t optlen;
+ #if defined(__linux__)
+@@ -4339,6 +4346,35 @@
                                    &native_creds);
-+      }
-+  }
+       }
+   }
 +#elif defined(__NetBSD__) && defined(LOCAL_PEEREID)
 +  {
 +    struct unpcbid cred;
@@ -58,6 +71,8 @@ $NetBSD$
 +	g_credentials_set_native (ret,
 +				  G_CREDENTIALS_TYPE_LINUX_UCRED,
 +				  &native_creds);
-       }
-   }
++      }
++  }
  #else
+   g_set_error_literal (error,
+                        G_IO_ERROR,
