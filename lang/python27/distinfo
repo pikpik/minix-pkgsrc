@@ -19,6 +19,7 @@ SHA1 (patch-av) = a14eaf4d5db6fc3b79ed896fbfcc34ca98051af2
 SHA1 (patch-aw) = 15652e241f371a22c7300f46771825ea74514fa0
 SHA1 (patch-ax) = 962fc8059867f55aaba2d32a53f25f4007658e0d
 SHA1 (patch-az) = 303f7b95494780b8fa54192663f0a192e3d46b59
+SHA1 (patch-configure.in) = 7c108216d736f3ec594dce853252b95d7034d903
 SHA1 (patch-ma) = d403fb383dfc8534d200139876061eacff963dec
 SHA1 (patch-pyconfig.h.in) = 7ebc0ed9ca9a37c5a6c8e04cc3f7fca4a5c90e8c
 SHA1 (patch-xa) = 25f02b03f1c5534e1d839a5489d5a046071f32c0
