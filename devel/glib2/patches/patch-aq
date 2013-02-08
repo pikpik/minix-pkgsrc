@@ -1,5 +1,5 @@
---- gio/gsocket.c.orig	2013-02-08 06:31:09.509535717 -0500
-+++ gio/gsocket.c	2013-02-08 06:31:09.401535721 -0500
+--- gio/gsocket.c.orig	2013-02-08 07:40:16.849537730 -0500
++++ gio/gsocket.c	2013-02-08 07:40:16.793537730 -0500
 @@ -37,6 +37,9 @@
  #include <signal.h>
  #include <string.h>
@@ -22,7 +22,240 @@
  						     10,
  						     G_PARAM_READWRITE |
                                                       G_PARAM_STATIC_STRINGS));
-@@ -2378,7 +2385,7 @@
+@@ -1289,6 +1296,7 @@
+ 
+   g_return_val_if_fail (G_IS_SOCKET (socket), FALSE);
+ 
++#ifdef IP_TTL
+   if (socket->priv->family == G_SOCKET_FAMILY_IPV4)
+     {
+       guchar optval;
+@@ -1298,14 +1306,20 @@
+ 			   &optval, &optlen);
+       value = optval;
+     }
+-  else if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
++  else
++#endif
++#ifdef IPV6_UNICAST_HOPS
++  if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
+     {
+       optlen = sizeof (value);
+       result = getsockopt (socket->priv->fd, IPPROTO_IPV6, IPV6_UNICAST_HOPS,
+ 			   &value, &optlen);
+     }
+   else
++#endif
++    {
+     g_return_val_if_reached (FALSE);
++    }
+ 
+   if (result < 0)
+     {
+@@ -1335,6 +1349,7 @@
+ 
+   g_return_if_fail (G_IS_SOCKET (socket));
+ 
++#ifdef IP_TTL
+   if (socket->priv->family == G_SOCKET_FAMILY_IPV4)
+     {
+       guchar optval = (guchar)ttl;
+@@ -1342,13 +1357,19 @@
+       result = setsockopt (socket->priv->fd, IPPROTO_IP, IP_TTL,
+ 			   &optval, sizeof (optval));
+     }
+-  else if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
++  else
++#endif
++#ifdef IPV6_UNICAST_HOPS
++  if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
+     {
+       result = setsockopt (socket->priv->fd, IPPROTO_IPV6, IPV6_UNICAST_HOPS,
+ 			   &ttl, sizeof (ttl));
+     }
+   else
++#endif
++    {
+     g_return_if_reached ();
++    }
+ 
+   if (result < 0)
+     {
+@@ -1375,6 +1396,7 @@
+ gboolean
+ g_socket_get_broadcast (GSocket *socket)
+ {
++#ifdef SO_BROADCAST
+   int result;
+   guint value = 0, optlen;
+ 
+@@ -1392,6 +1414,9 @@
+     }
+ 
+   return !!value;
++#else
++  return FALSE;
++#endif
+ }
+ 
+ /**
+@@ -1409,6 +1434,7 @@
+ g_socket_set_broadcast (GSocket    *socket,
+        	                gboolean    broadcast)
+ {
++#ifdef SO_BROADCAST
+   int result;
+   gint value;
+ 
+@@ -1428,6 +1454,9 @@
+     }
+ 
+   g_object_notify (G_OBJECT (socket), "broadcast");
++#else
++  g_warning ("setting SO_BROADCAST not supported on this platform");
++#endif
+ }
+ 
+ /**
+@@ -1450,20 +1479,27 @@
+ 
+   g_return_val_if_fail (G_IS_SOCKET (socket), FALSE);
+ 
++#ifdef IP_MULTICAST_LOOP
+   if (socket->priv->family == G_SOCKET_FAMILY_IPV4)
+     {
+       optlen = sizeof (guchar);
+       result = getsockopt (socket->priv->fd, IPPROTO_IP, IP_MULTICAST_LOOP,
+ 			   &value, &optlen);
+     }
+-  else if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
++  else
++#endif
++#ifdef IPV6_MULTICAST_LOOP
++  if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
+     {
+       optlen = sizeof (guint);
+       result = getsockopt (socket->priv->fd, IPPROTO_IPV6, IPV6_MULTICAST_LOOP,
+ 			   &value, &optlen);
+     }
+   else
++#endif
++    {
+     g_return_val_if_reached (FALSE);
++    }
+ 
+   if (result < 0)
+     {
+@@ -1497,6 +1533,7 @@
+ 
+   loopback = !!loopback;
+ 
++#ifdef IP_MULTICAST_LOOP
+   if (socket->priv->family == G_SOCKET_FAMILY_IPV4)
+     {
+       guchar value = (guchar)loopback;
+@@ -1504,7 +1541,10 @@
+       result = setsockopt (socket->priv->fd, IPPROTO_IP, IP_MULTICAST_LOOP,
+ 			   &value, sizeof (value));
+     }
+-  else if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
++  else
++#endif
++#ifdef IPV6_MULTICAST_LOOP
++  if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
+     {
+       guint value = (guint)loopback;
+ 
+@@ -1512,7 +1552,10 @@
+ 			   &value, sizeof (value));
+     }
+   else
++#endif
++    {
+     g_return_if_reached ();
++    }
+ 
+   if (result < 0)
+     {
+@@ -1543,6 +1586,7 @@
+ 
+   g_return_val_if_fail (G_IS_SOCKET (socket), FALSE);
+ 
++#ifdef IP_MULTICAST_TTL
+   if (socket->priv->family == G_SOCKET_FAMILY_IPV4)
+     {
+       guchar optval;
+@@ -1552,14 +1596,20 @@
+ 			   &optval, &optlen);
+       value = optval;
+     }
+-  else if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
++  else
++#endif
++#ifdef IPV6_MULTICAST_HOPS
++  if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
+     {
+       optlen = sizeof (value);
+       result = getsockopt (socket->priv->fd, IPPROTO_IPV6, IPV6_MULTICAST_HOPS,
+ 			   &value, &optlen);
+     }
+   else
++#endif
++    {
+     g_return_val_if_reached (FALSE);
++    }
+ 
+   if (result < 0)
+     {
+@@ -1590,6 +1640,7 @@
+ 
+   g_return_if_fail (G_IS_SOCKET (socket));
+ 
++#ifdef IP_MULTICAST_TTL
+   if (socket->priv->family == G_SOCKET_FAMILY_IPV4)
+     {
+       guchar optval = (guchar)ttl;
+@@ -1597,13 +1648,19 @@
+       result = setsockopt (socket->priv->fd, IPPROTO_IP, IP_MULTICAST_TTL,
+ 			   &optval, sizeof (optval));
+     }
+-  else if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
++  else
++#endif
++#ifdef IPV6_MULTICAST_HOPS
++  if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
+     {
+       result = setsockopt (socket->priv->fd, IPPROTO_IPV6, IPV6_MULTICAST_HOPS,
+ 			   &ttl, sizeof (ttl));
+     }
+   else
++#endif
++    {
+     g_return_if_reached ();
++    }
+ 
+   if (result < 0)
+     {
+@@ -1961,7 +2018,9 @@
+       result = setsockopt (socket->priv->fd, IPPROTO_IP, optname,
+ 			   &mc_req, sizeof (mc_req));
+     }
+-  else if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
++  else
++#ifdef IPV6_JOIN_GROUP
++  if (socket->priv->family == G_SOCKET_FAMILY_IPV6)
+     {
+       struct ipv6_mreq mc_req_ipv6;
+ 
+@@ -1978,6 +2037,7 @@
+ 			   &mc_req_ipv6, sizeof (mc_req_ipv6));
+     }
+   else
++#endif
+     g_return_val_if_reached (FALSE);
+ 
+   if (result < 0)
+@@ -2378,7 +2438,7 @@
  gssize
  g_socket_get_available_bytes (GSocket *socket)
  {
@@ -31,7 +264,7 @@
    gulong avail = 0;
  #else
    gint avail = 0;
-@@ -4304,7 +4311,7 @@
+@@ -4304,7 +4364,7 @@
  
    ret = NULL;
  
@@ -40,7 +273,7 @@
    {
      socklen_t optlen;
  #if defined(__linux__)
-@@ -4339,6 +4346,35 @@
+@@ -4339,6 +4399,35 @@
                                    &native_creds);
        }
    }
