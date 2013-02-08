@@ -1,4 +1,4 @@
-<!-- $NetBSD: platforms.xml,v 1.73 2012/07/25 21:24:44 tez Exp $ -->
+<!-- $NetBSD: platforms.xml,v 1.75 2013/02/08 04:59:35 asau Exp $ -->
 
 <chapter id="platforms">
   <title>Using pkgsrc on systems other than &os;</title>
@@ -47,16 +47,18 @@
 
     <sect2 id="darwin">
       <title>Darwin (Mac OS X)</title>
+      <!-- Mention which MacOS X versions this corresponds to! -->
+      <para>Darwin 5.x and up are supported.</para>
 
-      <para>Darwin 5.x and up are supported. Before you start, you
-      will need to download and install the Mac OS X Developer Tools
-      from Apple's Developer Connection. See
+      <para>Before you start, you need to download and install
+      the Mac OS X Developer Tools from Apple's Developer Connection.
+      This requires (free) membership. See
       <ulink url="http://developer.apple.com/macosx/">http://developer.apple.com/macosx/</ulink>
-      for details. (If you don't want or need the full Xcode GUI,
-      download and install Command Line Tools for Xcode.) Also,
-      make sure you install X11 (an optional package included with
-      the Developer Tools) if you intend to build packages that use
-      the X11 Window System.</para>
+      for details. Also, make sure you install X11 (an optional
+      package included with the Developer Tools) if you intend
+      to build packages that use the X11 Window System.
+      (If you don't want or need the full Xcode GUI,
+      download and install Command Line Tools for Xcode.)</para>
     </sect2>
 
     <sect2 id="freebsd">
