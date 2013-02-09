@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.182 2013/01/06 17:33:24 cheusov Exp $
+# $NetBSD: bootstrap,v 1.184 2013/02/09 12:41:43 obache Exp $
 #
 # Copyright (c) 2001-2011 Alistair Crooks <agc@NetBSD.org>
 # All rights reserved.
@@ -467,6 +467,25 @@ AIX)
 	set_opsys=no
 	machine_arch=`get_machine_arch_aix`
 	;;
+CYGWIN_*)
+	is_root () {
+		if id -nG | grep -q 'Administrators'; then
+			return 1
+		fi
+		return 0
+	}
+	root_user=`id -u`
+	root_grou=`id -g Administrator`
+	need_bsd_install=no
+	opsys=`uname -o`
+	need_awk=no
+	need_sed=no
+	need_xargs=no
+	# only used for unprivileged builds.
+	whoamiprog='id -u'
+	groupsprog='id -g'
+	;;
+
 Darwin)
 	root_group=wheel
 	need_bsd_install=no
@@ -942,8 +961,8 @@ $shprog ./bootstrap.sh)"
 bootstrap_bmake() {
 	echo_msg "Bootstrapping bmake"
 	copy_src $pkgsrcdir/devel/bmake/files bmake
-	run_cmd "(cd $wrkdir/bmake && env $bmakexenv $shprog ./boot-strap $configure_quiet_flags -q -o $opsys --prefix=$wrkdir --sysconfdir=$wrkdir --mksrc none --with-default-sys-path="$wrkdir/share/mk" $bmakexargs)"
-	run_cmd "$install_sh -c -o $user -g $group -m 755 $wrkdir/bmake/$opsys/bmake $wrkdir/bin/bmake"
+	run_cmd "(cd $wrkdir/bmake && env $bmakexenv $shprog ./boot-strap $configure_quiet_flags -q -o bootstrap.$opsys --prefix=$wrkdir --sysconfdir=$wrkdir --mksrc none --with-default-sys-path="$wrkdir/share/mk" $bmakexargs)"
+	run_cmd "$install_sh -c -o $user -g $group -m 755 $wrkdir/bmake/bootstrap.$opsys/bmake $wrkdir/bin/bmake"
 }
 bootstrap_bmake
 

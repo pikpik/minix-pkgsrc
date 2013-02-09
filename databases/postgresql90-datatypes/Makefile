@@ -1,7 +1,6 @@
-# $NetBSD: Makefile,v 1.8 2012/12/16 01:52:04 obache Exp $
+# $NetBSD: Makefile,v 1.9 2013/02/06 23:21:57 jperkin Exp $
 
 PKGNAME=	${DISTNAME:C/-/90-datatypes-/}
-PKGREVISION=	2
 COMMENT=	PostgreSQL data types support modules
 
 DEPENDS+=	postgresql90-server>=${PKGVERSION_NOREV}:../../databases/postgresql90-server
@@ -21,8 +20,8 @@ BUILD_DIRS+=		contrib/ltree
 BUILD_DIRS+=		contrib/lo
 BUILD_DIRS+=		contrib/uuid-ossp
 BUILD_DIRS+=		contrib/unaccent
-REQD_DIRS+=		${PG_SUBPREFIX}lib/postgresql
-REQD_DIRS+=		${PG_SUBPREFIX}share/postgresql/contrib
+REQD_DIRS+=		lib/postgresql
+REQD_DIRS+=		share/postgresql/contrib
 
 .include "../../databases/postgresql90-client/buildlink3.mk"
 .include "../../devel/ossp-uuid/buildlink3.mk"
