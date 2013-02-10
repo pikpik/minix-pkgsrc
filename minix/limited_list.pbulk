@@ -93,13 +93,19 @@ devel/subversion-base
 devel/topgit
 devel/yasm
 devel/zlib
+editors/dhex
 editors/ed
 editors/elvis
 editors/hexedit
+editors/hnb
+editors/joe
 editors/mg
+editors/mined
 editors/nano
 editors/nvi
 editors/pico
+editors/ssam
+editors/tweak
 editors/uemacs
 editors/vile
 editors/vilearn
@@ -166,6 +172,7 @@ misc/dialog
 misc/figlet
 misc/figlet-fonts
 misc/getopt
+misc/libutf
 net/fetch
 net/libfetch
 net/libpcap
