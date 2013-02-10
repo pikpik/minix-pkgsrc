@@ -1,8 +1,10 @@
 $NetBSD$
 
---- tools/Makefile.in.orig	2010-12-22 05:47:59.000000000 +0000
+Don't install cachemgr.conf.
+
+--- tools/Makefile.in.orig	2013-02-01 10:56:31.000000000 +0000
 +++ tools/Makefile.in
-@@ -1008,7 +1008,7 @@ info: info-recursive
+@@ -1146,7 +1146,7 @@ info: info-recursive
  
  info-am:
  
