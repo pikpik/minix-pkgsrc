@@ -206,6 +206,7 @@ security/rats
 security/sudo
 shells/bash
 shells/bash2
+shells/mudsh
 shells/nologinmsg
 shells/pdksh
 shells/zsh
