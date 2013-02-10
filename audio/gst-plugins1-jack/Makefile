@@ -1,8 +1,9 @@
-# $NetBSD: Makefile,v 1.13 2012/09/15 10:03:37 obache Exp $
+# $NetBSD: Makefile,v 1.1 2012/11/29 09:37:21 ryoon Exp $
 #
 
 GST_PLUGINS1_NAME=	jack
 GST_PLUGINS1_DIRS=	ext/jack
+PKGREVISION=		1
 
 .include "../../multimedia/gst-plugins1-good/Makefile.common"
 

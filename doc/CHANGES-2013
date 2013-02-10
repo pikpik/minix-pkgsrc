@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.491 2013/02/09 13:24:33 ryoon Exp $
+$NetBSD: CHANGES-2013,v 1.499 2013/02/09 22:33:56 markd Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -710,3 +710,12 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated devel/java-subversion to 1.7.8 [ryoon 2013-02-09]
 	Updated www/ap2-subversion to 1.7.8 [ryoon 2013-02-09]
 	Added devel/subversion16 version 1.6.20 [ryoon 2013-02-09]
+	Added databases/ruby-hiera version 1.0.0 [taca 2013-02-09]
+	Updated databases/ruby-sequel to 3.44.0 [taca 2013-02-09]
+	Updated time/py-icalendar to 3.3 [kleink 2013-02-09]
+	Updated audio/jack to 0.121.3 [ryoon 2013-02-09]
+	Updated pkgtools/pkgsrc-todo to 1.2 [wiz 2013-02-09]
+	Updated math/cloog to 0.18.0 [wiz 2013-02-09]
+	Updated sysutils/strigi to 0.7.8 [markd 2013-02-09]
+	Updated lang/racket-textual to 5.3.2 [asau 2013-02-10]
+	Updated lang/racket to 5.3.2 [asau 2013-02-10]

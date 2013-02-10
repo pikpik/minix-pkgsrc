@@ -1,8 +1,8 @@
 $NetBSD$
 
---- drivers/netjack/netjack_packet.c.orig	2008-11-11 23:36:40.000000000 +0100
-+++ drivers/netjack/netjack_packet.c	2011-12-30 03:30:24.997459515 +0100
-@@ -35,6 +35,10 @@
+--- drivers/netjack/netjack_packet.c.orig	2011-06-08 23:54:48.000000000 +0000
++++ drivers/netjack/netjack_packet.c
+@@ -44,6 +44,10 @@
  #include <errno.h>
  #include <stdarg.h>
  
@@ -11,5 +11,5 @@ $NetBSD$
 +#endif
 +
  #include <jack/types.h>
- #include <jack/engine.h>
  
+ // for jack_error in jack1
