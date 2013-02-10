@@ -1,4 +1,4 @@
-#	$NetBSD: bsd.pkg.mk,v 1.1982 2012/07/18 12:29:12 obache Exp $
+#	$NetBSD: bsd.pkg.mk,v 1.1983 2012/12/06 11:36:30 jperkin Exp $
 #
 # This file is in the public domain.
 #
@@ -785,6 +785,10 @@ ${_MAKEVARS_MK.${_phase_}}: ${WRKDIR}
 
 .if make(pbulk-index) || make(pbulk-index-item) || make(pbulk-save-wrkdir)
 .include "pbulk/pbulk-index.mk"
+.endif
+
+.if ${OPSYS} == "Cygwin" && defined(UAC_REQD_EXECS) && !empty(UAC_REQD_EXECS)
+.  include "misc/uac-manifest.mk"
 .endif
 
 .if defined(PKG_DEVELOPER) && ${PKG_DEVELOPER} != "no"

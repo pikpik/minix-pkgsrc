@@ -1,0 +1,2 @@
+@comment $NetBSD$
+${OPENVPN_PLUGINSDIR}/openvpn-nagios.la

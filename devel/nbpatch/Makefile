@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2010/05/02 22:33:27 joerg Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/31 11:17:31 asau Exp $
 #
 
 DISTNAME=	nbpatch-20100124
@@ -26,4 +26,5 @@ INSTALLATION_DIRS=	bin ${PKGMANDIR}/cat1 ${PKGMANDIR}/man1
 do-extract:
 	${CP} -r ${FILESDIR} ${WRKSRC}
 
+UAC_REQD_EXECS+=	bin/nbpatch
 .include "../../mk/bsd.pkg.mk"
