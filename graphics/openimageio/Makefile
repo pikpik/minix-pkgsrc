@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.4 2013/02/06 23:21:09 jperkin Exp $
+# $NetBSD: Makefile,v 1.5 2013/02/10 23:22:36 ryoon Exp $
 
 DISTNAME=	oiio-Release-1.1.5
-PKGNAME=	${DISTNAME:S/Release/openimageio/}
+PKGNAME=	${DISTNAME:S/oiio-Release/openimageio/}
 CATEGORIES=	graphics
 MASTER_SITES=	-https://github.com/OpenImageIO/oiio/archive/Release-1.1.5.tar.gz
 FETCH_USING=	curl
