@@ -162,6 +162,8 @@ math/units
 minix/clang29
 minix/clang31
 minix/compiler-rt
+minix/dde-linux26
+minix/dde-linux26-usb-drivers
 minix/git-review
 minix/netdrv_tg3
 minix/py-unittest-xml-reporting
