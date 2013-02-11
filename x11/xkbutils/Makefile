@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2012/06/06 09:32:44 wiz Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/29 05:07:13 asau Exp $
 #
 
-DISTNAME=		xkbutils-1.0.3
+DISTNAME=		xkbutils-1.0.4
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2

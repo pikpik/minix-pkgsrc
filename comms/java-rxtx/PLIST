@@ -1,0 +1,3 @@
+@comment $NetBSD$
+${JAVA_HOME}/jre/lib/ext/RXTXcomm.jar
+${JAVA_HOME}/jre/lib/${MACHINE_ARCH}/librxtxSerial.la

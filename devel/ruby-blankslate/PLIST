@@ -1,0 +1,9 @@
+@comment $NetBSD$
+${GEM_HOME}/cache/${GEM_NAME}.gem
+${GEM_LIBDIR}/README
+${GEM_LIBDIR}/Rakefile
+${GEM_LIBDIR}/VERSION
+${GEM_LIBDIR}/blankslate.gemspec
+${GEM_LIBDIR}/lib/blankslate.rb
+${GEM_LIBDIR}/spec/blankslate_spec.rb
+${GEM_HOME}/specifications/${GEM_NAME}.gemspec

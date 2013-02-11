@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.677 2013/02/01 01:34:13 reed Exp $
+# $NetBSD: Makefile,v 1.678 2013/02/07 13:49:22 obache Exp $
 #
 
 COMMENT=	Packages to support the X window system
@@ -206,7 +206,6 @@ SUBDIR+=	kterm
 SUBDIR+=	lablgtk
 SUBDIR+=	lablgtk1
 SUBDIR+=	labltk
-SUBDIR+=	lbxproxy
 SUBDIR+=	lesstif
 SUBDIR+=	libAppleWM
 SUBDIR+=	libFS
@@ -246,7 +245,6 @@ SUBDIR+=	libdesktop-agnostic
 SUBDIR+=	libdrm
 SUBDIR+=	libfakekey
 SUBDIR+=	libgnomekbd
-SUBDIR+=	liblbxutil
 SUBDIR+=	liboldXrandr
 SUBDIR+=	libunique
 SUBDIR+=	libunique3

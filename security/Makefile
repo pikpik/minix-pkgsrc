@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.451 2012/12/12 22:44:19 wiz Exp $
+# $NetBSD: Makefile,v 1.452 2013/01/14 14:44:29 bouyer Exp $
 #
 
 COMMENT=	Security tools
@@ -95,6 +95,7 @@ SUBDIR+=	hydan
 SUBDIR+=	hydra
 SUBDIR+=	ike-scan
 SUBDIR+=	ipsec-tools
+SUBDIR+=	ipv6-toolkit
 SUBDIR+=	isakmpd
 SUBDIR+=	jessie
 SUBDIR+=	john

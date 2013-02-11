@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/09/16 06:38:26 taca Exp $
 
-DISTNAME=	oily_png-1.0.2
+DISTNAME=	oily_png-1.0.3
 CATEGORIES=	graphics
 
 MAINTAINER=	taca@NetBSD.org

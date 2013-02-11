@@ -1,0 +1,12 @@
+# $NetBSD$
+#
+# used by www/ruby-padrino/Makefile
+# used by www/ruby-padrino-admin/Makefile
+# used by www/ruby-padrino-cache/Makefile
+# used by www/ruby-padrino-core/Makefile
+# used by www/ruby-padrino-gen/Makefile
+# used by www/ruby-padrino-helper/Makefile
+# used by www/ruby-padrino-mailer/Makefile
+
+RUBY_PADRINO_VERS=	0.10.7
+RUBY_PADRINO_SITE=	http://www.padrinorb.com/

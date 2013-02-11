@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.931 2013/01/30 18:52:13 wiz Exp $
+# $NetBSD: Makefile,v 1.937 2013/02/11 14:36:06 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -617,6 +617,7 @@ SUBDIR+=	ruby-faraday
 SUBDIR+=	ruby-fcgi
 SUBDIR+=	ruby-htmlsplit
 SUBDIR+=	ruby-http_parser.rb
+SUBDIR+=	ruby-http_router
 SUBDIR+=	ruby-httpclient
 SUBDIR+=	ruby-innate
 SUBDIR+=	ruby-jekyll
@@ -630,12 +631,21 @@ SUBDIR+=	ruby-net-flickr
 SUBDIR+=	ruby-net-http-digest_auth
 SUBDIR+=	ruby-net-http-persistent
 SUBDIR+=	ruby-ntlm-http
+SUBDIR+=	ruby-padrino
+SUBDIR+=	ruby-padrino-admin
+SUBDIR+=	ruby-padrino-cache
+SUBDIR+=	ruby-padrino-core
+SUBDIR+=	ruby-padrino-gen
+SUBDIR+=	ruby-padrino-helpers
+SUBDIR+=	ruby-padrino-mailer
 SUBDIR+=	ruby-patron
 SUBDIR+=	ruby-rack
 SUBDIR+=	ruby-rack-cache
+SUBDIR+=	ruby-rack-contrib
 SUBDIR+=	ruby-rack-mount
 SUBDIR+=	ruby-rack-mount06
 SUBDIR+=	ruby-rack-protection
+SUBDIR+=	ruby-rack-rewrite
 SUBDIR+=	ruby-rack-ssl
 SUBDIR+=	ruby-rack-test
 SUBDIR+=	ruby-rack-test05
@@ -649,9 +659,11 @@ SUBDIR+=	ruby-sass
 SUBDIR+=	ruby-sass-rails31
 SUBDIR+=	ruby-sass-rails32
 SUBDIR+=	ruby-sinatra
+SUBDIR+=	ruby-sinatra-contrib
 SUBDIR+=	ruby-staticmatic
 SUBDIR+=	ruby-tag
 SUBDIR+=	ruby-unicorn
+SUBDIR+=	ruby-url_mount
 SUBDIR+=	ruby-webrobots
 SUBDIR+=	ruby-webunit
 SUBDIR+=	screws
