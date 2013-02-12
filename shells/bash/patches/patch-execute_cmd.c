@@ -1,15 +1,25 @@
---- execute_cmd.c.orig	Fri Jun  3 13:34:42 2011
-+++ execute_cmd.c	Fri Jun  3 13:36:41 2011
-@@ -2202,7 +2202,11 @@
-   /* If the `lastpipe' option is set with shopt, and job control is not
-      enabled, execute the last element of non-async pipelines in the
-      current shell environment. */
--  if (lastpipe_opt && job_control == 0 && asynchronous == 0 && pipe_out == NO_PIPE && prev > 0)
-+  if (lastpipe_opt && 
-+#if defined(JOB_CONTROL)
-+		job_control == 0 && 
+--- execute_cmd.c.orig	Wed Feb  9 22:32:25 2011
++++ execute_cmd.c	Tue Feb 12 11:48:00 2013
+@@ -2196,6 +2196,7 @@
+   if (ignore_return && cmd)
+     cmd->flags |= CMD_IGNORE_RETURN;
+ 
++#if defined (JOB_CONTROL)
+   lastpipe_flag = 0;
+   begin_unwind_frame ("lastpipe-exec");
+   lstdin = -1;
+@@ -2219,11 +2220,14 @@
+     }	  
+   if (prev >= 0)
+     add_unwind_protect (close, prev);
 +#endif
-+		asynchronous == 0 && pipe_out == NO_PIPE && prev > 0)
-     {
-       lstdin = move_to_high_fd (0, 0, 255);
-       if (lstdin > 0)
+ 
+   exec_result = execute_command_internal (cmd, asynchronous, prev, pipe_out, fds_to_close);
+ 
++#if defined (JOB_CONTROL)
+   if (lstdin > 0)
+     restore_stdin (lstdin);
++#endif
+ 
+   if (prev >= 0)
+     close (prev);
