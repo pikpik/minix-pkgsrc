@@ -1,3 +1,7 @@
+$NetBSD$
+
+Add support for SPARC.
+
 --- /dev/null	2012-11-04 15:17:53.000000000 +0100
 +++ libs/context/config/sparc.cpp	2012-11-04 18:56:51.000000000 +0100
 @@ -0,0 +1,11 @@

@@ -1,6 +1,6 @@
-$NetBSD: patch-ac,v 1.2 2010/09/21 15:57:30 taca Exp $
+$NetBSD: patch-client_completion_hash.cc,v 1.1.1.1 2011/04/25 21:12:53 adam Exp $
 
-* Portability: include <bstring.h> if exists.
+Portability: include <bstring.h> if exists.
 
 --- client/completion_hash.cc.orig	2010-02-04 11:36:51.000000000 +0000
 +++ client/completion_hash.cc
