@@ -1,9 +1,11 @@
 $NetBSD$
 
---- src/largeobject.cxx.orig	2011-11-24 00:12:56.000000000 +0000
+Fix build with modern GCC.
+
+--- src/largeobject.cxx.orig	2013-02-11 10:36:16.000000000 +0000
 +++ src/largeobject.cxx
 @@ -18,6 +18,7 @@
- #include "pqxx/compiler.h"
+ #include "pqxx/compiler-internal.hxx"
  
  #include <cerrno>
 +#include <cstring>

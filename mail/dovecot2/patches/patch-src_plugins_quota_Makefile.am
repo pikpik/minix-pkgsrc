@@ -1,3 +1,5 @@
+$NetBSD$
+
 --- src/plugins/quota/Makefile.am.orig	2013-01-19 02:59:14.000000000 +0100
 +++ src/plugins/quota/Makefile.am	2013-01-19 03:05:16.000000000 +0100
 @@ -26,8 +26,11 @@
