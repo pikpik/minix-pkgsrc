@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.576 2013/02/12 22:45:06 wiz Exp $
+$NetBSD: CHANGES-2013,v 1.593 2013/02/13 18:43:16 adam Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -852,3 +852,23 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated meta-pkgs/boost to 1.53.0 [adam 2013-02-12]
 	Updated x11/xrandr to 1.4.0 [wiz 2013-02-12]
 	Added wm/i3 version 4.4 [tonnerre 2013-02-12]
+	Updated www/ikiwiki to 3.20130212 [schmonz 2013-02-13]
+	Updated multimedia/adobe-flash-plugin10.1 to 10.3.183.61 [obache 2013-02-13]
+	Updated multimedia/adobe-flash-plugin11 to 11.2.202.270 [obache 2013-02-13]
+	Updated www/opera to 12.14 [obache 2013-02-13]
+	Updated mail/postfix to 2.9.6 [taca 2013-02-13]
+	Updated security/openssl to 1.0.1e [taca 2013-02-13]
+	Updated databases/ruby-data_objects to 0.10.12 [taca 2013-02-13]
+	Updated databases/ruby-do_mysql to 0.10.12 [taca 2013-02-13]
+	Updated databases/ruby-do_postgres to 0.10.12 [taca 2013-02-13]
+	Updated databases/ruby-do_sqlite3 to 0.10.12 [taca 2013-02-13]
+	Updated devel/ruby-backports to 2.8.2 [taca 2013-02-13]
+	Added www/ruby-padrino-contrib version 0.1.13 [taca 2013-02-13]
+	Updated print/ruby-pdf-reader to 1.3.1 [taca 2013-02-13]
+	Updated misc/ruby-launchy to 2.2.0 [taca 2013-02-13]
+	Added www/ruby-puma version 1.6.3 [taca 2013-02-13]
+	Updated www/heel to 3.0.1 [taca 2013-02-13]
+	Updated textproc/ruby-multi_json to 1.6.0 [taca 2013-02-13]
+	Updated www/trac to 1.0 [gdt 2013-02-13]
+	Updated x11/gtk2 to 2.24.15 [adam 2013-02-13]
+	Updated databases/phpmyadmin to 3.5.6 [tron 2013-02-13]

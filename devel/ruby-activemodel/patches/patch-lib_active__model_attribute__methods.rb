@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-lib_active__model_attribute__methods.rb,v 1.1 2013/02/12 15:30:42 taca Exp $
 
-Fix for CVE-2013-0276.
+Workaround for CVE-2013-0276.
 
 --- lib/active_model/attribute_methods.rb.orig	2013-02-12 15:27:17.000000000 +0000
 +++ lib/active_model/attribute_methods.rb

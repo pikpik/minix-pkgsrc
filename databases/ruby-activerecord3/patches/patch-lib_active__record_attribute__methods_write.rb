@@ -1,6 +1,6 @@
-$NetBSD$
+$NetBSD: patch-lib_active__record_attribute__methods_write.rb,v 1.1 2013/02/12 13:23:20 taca Exp $
 
-Fix for CVE-2013-0277.
+Workaround for CVE-2013-0277.
 
 --- lib/active_record/attribute_methods/write.rb.orig	2013-02-12 00:08:22.000000000 +0000
 +++ lib/active_record/attribute_methods/write.rb
