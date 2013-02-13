@@ -57,6 +57,11 @@ BUILDLINK_DEPMETHOD.readline=	build
 CONFIGURE_ENV+=	ac_cv_type_wctype_t=no
 .endif
 
+# Minix lacks setpgid() which is needed for job control.
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=        --disable-job-control
+.endif
+
 BUILDLINK_API_DEPENDS.readline+=	readline>=4.3
 
 .include "../../devel/gettext-lib/buildlink3.mk"

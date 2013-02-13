@@ -39,7 +39,6 @@ INSTALLATION_DIRS=	${PKGMANDIR}/man1
 CONFIGURE_ARGS+=	--enable-readline
 CONFIGURE_ARGS+=	--enable-progcomp
 CONFIGURE_ARGS+=	--enable-process-substitution
-CONFIGURE_ARGS+=	--enable-job-control
 CONFIGURE_ARGS+=	--enable-history
 CONFIGURE_ARGS+=	--enable-help-builtin
 CONFIGURE_ARGS+=	--enable-extended-glob
@@ -65,6 +64,15 @@ PKG_SUPPORTED_OPTIONS=	static
 CONFIGURE_ARGS+=	--enable-static-link
 BUILDLINK_DEPMETHOD.gettext=	build
 BUILDLINK_DEPMETHOD.readline=	build
+.endif
+
+# Minix lacks setpgid() which is needed for job control.
+# bash malloc() is also broken on Minix
+.if ${OPSYS} == "Minix"
+CONFIGURE_ARGS+=	--disable-job-control
+CONFIGURE_ARGS+=	--with-bash-malloc=no
+.else
+CONFIGURE_ARGS+=	--enable-job-control
 .endif
 
 # Use "readline" package on Darwin to avoid link erros.
