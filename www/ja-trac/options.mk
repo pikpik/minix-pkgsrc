@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2011/03/15 06:04:03 obache Exp $
+# $NetBSD: options.mk,v 1.3 2013/01/20 08:56:48 obache Exp $
 
 PKG_OPTIONS_VAR=		PKG_OPTIONS.trac
 PKG_OPTIONS_REQUIRED_GROUPS=	db
@@ -9,6 +9,10 @@ PKG_OPTIONS_LEGACY_OPTS=	psycopg2:pgsql
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Msqlite)
+# py-sqlite2 is the external (vs. bundled with Python source)
+# implementation of Python DB API 2.0 for sqlite version 3.  It is
+# preferred over "py-sqlite3", the bundled version of sqlite3 support,
+# because it is more up to date.
 DEPENDS+=	${PYPKGPREFIX}-sqlite2>=2.5.5:../../databases/py-sqlite2
 .endif
 .if !empty(PKG_OPTIONS:Mpgsql)

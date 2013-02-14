@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2012/10/23 13:02:08 schmonz Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/23 18:16:31 asau Exp $
 #
 
-DISTNAME=		knc-1.7
+DISTNAME=		knc-1.7.1
 CATEGORIES=		security net
 MASTER_SITES=		http://oskt.secure-endpoints.com/downloads/
 
