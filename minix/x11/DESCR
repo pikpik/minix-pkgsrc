@@ -1,2 +1,2 @@
 X11R6 from bigports. This is a temporary package and will dissapear once Minix
-supports shared libraries.
+has a port of modular Xorg.
