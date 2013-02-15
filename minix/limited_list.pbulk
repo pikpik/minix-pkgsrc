@@ -90,6 +90,7 @@ devel/readline
 devel/scmcvs
 devel/scmgit
 devel/subversion-base
+devel/sysexits
 devel/topgit
 devel/yasm
 devel/zlib
@@ -183,6 +184,7 @@ net/tcpdump
 pkgtools/bootstrap-mk-files
 pkgtools/digest
 pkgtools/libnbcompat
+pkgtools/lintpkgsrc
 pkgtools/osabi
 pkgtools/p5-pkgsrc-Dewey
 pkgtools/pbulk
