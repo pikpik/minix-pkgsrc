@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.6 2012/08/14 11:58:01 obache Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/08 09:57:20 asau Exp $
 #
 
-DISTNAME=	dvtm-0.7
+DISTNAME=	dvtm-0.8
 CATEGORIES=	misc
 MASTER_SITES=	http://www.brain-dump.org/projects/dvtm/
 
@@ -12,6 +12,7 @@ LICENSE=	mit
 
 NO_CONFIGURE=		yes
 USE_LANGUAGES=		c99
+CURSES_DEFAULT=		ncurses
 
 SUBST_CLASSES+=		config
 SUBST_STAGE.config=	pre-build
@@ -19,7 +20,7 @@ SUBST_MESSAGE.config=	Fixing config.mk
 SUBST_FILES.config=	config.mk
 SUBST_SED.config=	-e 's,/usr/local,${PREFIX},'
 SUBST_SED.config+=	-e 's,share/man,${PKGMANDIR},'
-SUBST_SED.config+=	-e '/LIBS/s/-lncursesw/-lcurses/'
+SUBST_SED.config+=	-e '/LIBS/s/-lncursesw/-lncurses/'
 SUBST_SED.config+=	-e 's,^CFLAGS =,CFLAGS +=,'
 SUBST_SED.config+=	-e 's,^LDFLAGS =,LDFLAGS +=,'
 SUBST_SED.config+=	-e 's/cc/${CC:Q}/'

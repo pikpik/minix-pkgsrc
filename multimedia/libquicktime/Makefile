@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.1 2012/10/10 14:28:51 drochner Exp $
+# $NetBSD: Makefile,v 1.2 2012/10/23 16:07:13 asau Exp $
 #
 
 DISTNAME=	libquicktime-1.2.4
+PKGREVISION=	1
 CATEGORIES=	multimedia
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=libquicktime/}
 

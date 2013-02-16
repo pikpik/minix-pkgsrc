@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.32 2012/10/08 23:02:39 adam Exp $
+# $NetBSD: Makefile,v 1.33 2012/10/29 05:06:50 asau Exp $
 #
 
 DISTNAME=	rox-session-0.28
-PKGREVISION=	20
+PKGREVISION=	21
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=rox/}
 EXTRACT_SUFX=	.tar.bz2

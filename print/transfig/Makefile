@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.41 2012/01/30 07:09:06 sbd Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/08 13:45:48 asau Exp $
 
 DISTNAME=	transfig.3.2.5d
 PKGNAME=	transfig-3.2.5d
+PKGREVISION=	1
 CATEGORIES=	graphics print
 MASTER_SITES=	ftp://epb.lbl.gov/xfig/alpha/ \
 		${MASTER_SITE_SOURCEFORGE:=mcj/}

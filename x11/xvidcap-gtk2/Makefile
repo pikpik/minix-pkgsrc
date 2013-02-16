@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.24 2012/10/08 23:02:41 adam Exp $
+# $NetBSD: Makefile,v 1.25 2012/10/29 05:07:23 asau Exp $
 #
 
 .include "../../x11/xvidcap/Makefile.common"
 
 PKGNAME=		${DISTNAME:S/-/-gtk2-/}
-PKGREVISION=		20
+PKGREVISION=		21
 COMMENT=		Capture X display to individual frames or MPEG video (GTK2 version)
 
 CONFLICTS+=		xvidcap<1.1.3nb3

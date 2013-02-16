@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.12 2011/11/01 06:03:03 sbd Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/29 05:06:39 asau Exp $
 #
 
 DISTNAME=	matchbox-nest-0.3
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	x11
 MASTER_SITES=	http://matchbox-project.org/sources/matchbox-nest/0.3/
 EXTRACT_SUFX=	.tar.bz2

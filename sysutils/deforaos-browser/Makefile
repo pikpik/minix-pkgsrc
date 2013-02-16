@@ -1,8 +1,9 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2012/12/17 00:19:58 khorben Exp $
 #
 
 DISTNAME=	Browser-0.4.9
 PKGNAME=	deforaos-browser-0.4.9
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.defora.org/os/download/download/3720/
 

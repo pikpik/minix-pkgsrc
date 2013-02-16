@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.22 2012/10/08 23:02:33 adam Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/29 05:06:07 asau Exp $
 #
 
 DISTNAME=	antiright-3.4
-PKGREVISION=	16
+PKGREVISION=	17
 CATEGORIES=	x11
 MASTER_SITES=	http://download.savannah.nongnu.org/releases/antiright/
 EXTRACT_SUFX=	.tar.bz2

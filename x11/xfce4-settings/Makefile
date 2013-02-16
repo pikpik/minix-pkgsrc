@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.19 2012/10/08 23:02:40 adam Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/29 05:07:10 asau Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=		4.6.5
 
 DISTNAME=		xfce4-settings-${XFCE4_VERSION}
-PKGREVISION=		14
+PKGREVISION=		15
 CATEGORIES=		x11
 COMMENT=		Xfce settings manager
 

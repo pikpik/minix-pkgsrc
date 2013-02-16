@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.48 2012/10/03 21:55:33 wiz Exp $
+# $NetBSD: Makefile,v 1.49 2012/10/31 11:18:53 asau Exp $
 #
 
 DISTNAME=	SDL_Perl-2.1.2
 PKGNAME=	p5-SDL-2.1.2
-PKGREVISION=	10
+PKGREVISION=	11
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/D/DG/DGOEHRIG/}
 

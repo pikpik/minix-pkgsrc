@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.16 2012/10/08 23:00:54 adam Exp $
+# $NetBSD: Makefile,v 1.17 2012/10/25 06:57:07 asau Exp $
 
 .include "../../meta-pkgs/xfce4/Makefile.common"
 
 XFCE4_VERSION=	0.2.1
 
 DISTNAME=	xfce4-dict-plugin-${XFCE4_VERSION}
-PKGREVISION=	14
+PKGREVISION=	15
 CATEGORIES=	textproc
 MASTER_SITES=	http://goodies.xfce.org/releases/xfce4-dict-plugin/
 COMMENT=	Xfce dictionary server plugin

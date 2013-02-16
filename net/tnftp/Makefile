@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.28 2012/10/23 17:19:13 asau Exp $
+# $NetBSD: Makefile,v 1.30 2013/02/16 09:32:29 obache Exp $
 
 DISTNAME=		tnftp-20070806
 SVR4_PKGNAME=		tnftp
@@ -13,6 +13,7 @@ CONFLICTS+=		lukemftp-[0-9]*
 
 MAINTAINER=		lukem@NetBSD.org
 COMMENT=		The enhanced FTP client in NetBSD
+LICENSE=		original-bsd
 
 BOOTSTRAP_PKG=	yes
 
@@ -42,5 +43,16 @@ CHECK_BUILTIN.readline:=	no
 USE_BUILTIN.termcap?=	yes
 .endif
 
+# Check usability of builtin termcap if FETCH_USING=ftp
+# to avoid circular dependency with termcap from pkgsrc (devel/ncurses).
+CHECK_BUILTIN.termcap:=	yes
+.include "../../mk/termcap.builtin.mk"
+CHECK_BUILTIN.termcap:=	no
+
+.if !empty(FETCH_USING:Mftp) && !empty(USE_BUILTIN.termcap:M[Nn][Oo])
+CONFIGURE_ARGS+=	--disable-editcomplete
+.else
 .include "../../mk/termcap.buildlink3.mk"
+.endif
+
 .include "../../mk/bsd.pkg.mk"
