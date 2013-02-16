@@ -1,0 +1,9 @@
+$NetBSD$
+
+--- REPOSITORIES.orig	Thu Mar  3 14:43:09 2011
++++ REPOSITORIES
+@@ -1,3 +1,3 @@
+ ftp://ftp.netbsd.org/pub/pkgsrc/packages/NetBSD/$arch/5.0/All
+ http://mirror-master.dragonflybsd.org/packages/$arch/DragonFly-$osrelease/stable/All/
+-ftp://ftp.minix3.org/pub/minix/packages/$osrelease/$arch/All
++http://www.minix3.org/pkgsrc/packages/$osrelease/$arch/All
