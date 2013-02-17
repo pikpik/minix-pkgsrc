@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.611 2013/02/16 18:29:36 adam Exp $
+$NetBSD: CHANGES-2013,v 1.616 2013/02/16 22:40:52 agc Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -893,3 +893,9 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated time/py-icalendar to 3.3nb1 [wiz 2013-02-16]
 	Updated graphics/pngcrush to 1.7.50 [adam 2013-02-16]
 	Updated graphics/gimp to 2.8.4 [adam 2013-02-16]
+	Updated graphics/enblend-enfuse to 4.1.1 [adam 2013-02-16]
+	Updated lang/racket-textual to 5.3.3 [asau 2013-02-16]
+	Updated lang/racket to 5.3.3 [asau 2013-02-16]
+	Updated devel/p5-File-BaseDir to 0.03nb5 [schmonz 2013-02-16]
+	Updated security/ipv6-toolkit to 1.3 [agc 2013-02-16]
+	Updated mail/getmail to 4.38.0 [schmonz 2013-02-16]
