@@ -15,14 +15,14 @@ CPP_PRECOMP_FLAGS?=	# unset
 DEF_UMASK?=		022
 DEFAULT_SERIAL_DEVICE?=	/dev/null
 EXPORT_SYMBOLS_LDFLAGS?=	# Don't add symbols to the dynamic symbol table
-GROUPADD?=
+GROUPADD?=		/usr/sbin/groupadd
 NOLOGIN?=		/bin/false
 PKG_TOOLS_BIN?=		${LOCALBASE}/sbin
 ROOT_CMD?=		${SU} - root -c
 ROOT_GROUP?=	operator
 ROOT_USER?=		root
 SERIAL_DEVICES?=	/dev/null
-USERADD?=		/usr/bin/useradd
+USERADD?=		/usr/sbin/useradd
 ULIMIT_CMD_datasize?=	: 
 ULIMIT_CMD_stacksize?=	: 
 
