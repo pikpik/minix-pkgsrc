@@ -18,6 +18,7 @@ ALLOW_VULNERABLE_PACKAGES=      yes
 
 PKG_OPTIONS.gcc44=-gcc-java -gcc-objc
 PKG_OPTIONS.groff=-x11 -groff-docs
+ZSH_STATIC=yes
 
 CURSES_DEFAULT?= ncurses
 
