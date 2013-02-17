@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2009/08/06 01:44:48 minskim Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/31 11:17:05 asau Exp $
 
 DISTNAME=		haskell-mode-1.44
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		devel editors
 MASTER_SITES=		http://www.haskell.org/haskell-mode/
 

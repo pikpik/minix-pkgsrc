@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.32 2012/10/31 11:19:45 asau Exp $
+# $NetBSD: Makefile,v 1.33 2012/11/04 04:26:03 minskim Exp $
 #
 
 DISTNAME=	semi-1.14.6
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=	6
+PKGREVISION=	7
 CATEGORIES=	devel
 MASTER_SITES=	http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/comp/emacsen/lisp/semi/semi-1.14-for-flim-1.14/
 

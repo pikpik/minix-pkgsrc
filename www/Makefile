@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.939 2013/02/13 15:23:56 taca Exp $
+# $NetBSD: Makefile,v 1.943 2013/02/17 09:03:57 taca Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -595,10 +595,8 @@ SUBDIR+=	py-wtforms
 SUBDIR+=	qDecoder
 SUBDIR+=	raggle
 SUBDIR+=	ramaze
-SUBDIR+=	ruby-actionpack3
 SUBDIR+=	ruby-actionpack31
 SUBDIR+=	ruby-actionpack32
-SUBDIR+=	ruby-activeresource3
 SUBDIR+=	ruby-activeresource31
 SUBDIR+=	ruby-activeresource32
 SUBDIR+=	ruby-borges
@@ -612,7 +610,6 @@ SUBDIR+=	ruby-cssmin
 SUBDIR+=	ruby-csspool
 SUBDIR+=	ruby-div
 SUBDIR+=	ruby-erubis
-SUBDIR+=	ruby-erubis26
 SUBDIR+=	ruby-faraday
 SUBDIR+=	ruby-fcgi
 SUBDIR+=	ruby-htmlsplit
@@ -645,15 +642,11 @@ SUBDIR+=	ruby-rack
 SUBDIR+=	ruby-rack-cache
 SUBDIR+=	ruby-rack-contrib
 SUBDIR+=	ruby-rack-mount
-SUBDIR+=	ruby-rack-mount06
 SUBDIR+=	ruby-rack-protection
 SUBDIR+=	ruby-rack-rewrite
 SUBDIR+=	ruby-rack-ssl
 SUBDIR+=	ruby-rack-test
-SUBDIR+=	ruby-rack-test05
-SUBDIR+=	ruby-rack12
 SUBDIR+=	ruby-rack13
-SUBDIR+=	ruby-rails3
 SUBDIR+=	ruby-rails31
 SUBDIR+=	ruby-rails32
 SUBDIR+=	ruby-raindrops

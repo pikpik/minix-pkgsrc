@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2012/10/23 17:18:48 asau Exp $
+# $NetBSD: Makefile,v 1.8 2012/11/29 06:23:18 wen Exp $
 #
 
-DISTNAME=	Net-GitHub-0.49
+DISTNAME=	Net-GitHub-0.50
 PKGNAME=	p5-${DISTNAME}
 CATEGORIES=	net devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}

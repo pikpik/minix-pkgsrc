@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.3 2009/08/06 01:44:49 minskim Exp $
+# $NetBSD: Makefile,v 1.4 2012/10/31 11:17:28 asau Exp $
 #
 
 DISTNAME=	mell-1.0.0
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://taiyaki.org/elisp/mell/src/
 

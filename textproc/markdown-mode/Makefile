@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.4 2011/10/03 16:59:39 minskim Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/25 06:56:06 asau Exp $
 
 DISTNAME=	markdown-mode
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}-1.8.1
+PKGREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://jblevins.org/projects/markdown-mode/
 DIST_SUBDIR=	${DISTNAME}-1.8.1

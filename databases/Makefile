@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.417 2013/02/09 15:39:38 taca Exp $
+# $NetBSD: Makefile,v 1.420 2013/02/17 08:49:36 taca Exp $
 
 COMMENT=	Databases
 
@@ -337,12 +337,9 @@ SUBDIR+=	rrdtool12
 SUBDIR+=	ruby-activeldap
 SUBDIR+=	ruby-activerecord-cassandra
 SUBDIR+=	ruby-activerecord-odbc
-SUBDIR+=	ruby-activerecord3
 SUBDIR+=	ruby-activerecord31
 SUBDIR+=	ruby-activerecord32
-SUBDIR+=	ruby-acts-as-versioned
 SUBDIR+=	ruby-arel
-SUBDIR+=	ruby-arel20
 SUBDIR+=	ruby-arel22
 SUBDIR+=	ruby-cassandra
 SUBDIR+=	ruby-data_objects

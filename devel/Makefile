@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1700 2013/02/11 08:54:05 taca Exp $
+# $NetBSD: Makefile,v 1.1704 2013/02/17 09:08:21 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -1262,7 +1262,6 @@ SUBDIR+=	p5-parent
 SUBDIR+=	p5-perl-headers
 SUBDIR+=	p5-pip
 SUBDIR+=	p5-prefork
-SUBDIR+=	p5-sapnwrfc
 SUBDIR+=	p5-signatures
 SUBDIR+=	p5-strictures
 SUBDIR+=	p5-subversion
@@ -1419,10 +1418,8 @@ SUBDIR+=	rt3
 SUBDIR+=	rubigen
 SUBDIR+=	ruby-SDL
 SUBDIR+=	ruby-abstract
-SUBDIR+=	ruby-activemodel
 SUBDIR+=	ruby-activemodel31
 SUBDIR+=	ruby-activemodel32
-SUBDIR+=	ruby-activesupport3
 SUBDIR+=	ruby-activesupport31
 SUBDIR+=	ruby-activesupport32
 SUBDIR+=	ruby-amstd
@@ -1464,7 +1461,6 @@ SUBDIR+=	ruby-heckle
 SUBDIR+=	ruby-highline
 SUBDIR+=	ruby-hike
 SUBDIR+=	ruby-i18n
-SUBDIR+=	ruby-i18n_05
 SUBDIR+=	ruby-inline
 SUBDIR+=	ruby-io-like
 SUBDIR+=	ruby-kgio
@@ -1498,7 +1494,6 @@ SUBDIR+=	ruby-polyglot
 SUBDIR+=	ruby-posix-spawn
 SUBDIR+=	ruby-priority-queue
 SUBDIR+=	ruby-racc
-SUBDIR+=	ruby-railties
 SUBDIR+=	ruby-railties31
 SUBDIR+=	ruby-railties32
 SUBDIR+=	ruby-rake
@@ -1546,7 +1541,6 @@ SUBDIR+=	rudiments
 SUBDIR+=	rvm
 SUBDIR+=	rx
 SUBDIR+=	sablecc
-SUBDIR+=	sapnwrfcsdk
 SUBDIR+=	scintilla
 SUBDIR+=	scmcvs
 SUBDIR+=	scmgit

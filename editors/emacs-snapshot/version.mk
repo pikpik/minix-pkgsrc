@@ -1,7 +1,8 @@
-# $NetBSD: version.mk,v 1.12 2012/03/06 03:01:30 minskim Exp $
+# $NetBSD: version.mk,v 1.13 2013/02/12 04:47:31 minskim Exp $
 
 _EMACS_FLAVOR=	emacs
-_EMACS_REQD=	emacs>=23
+#_EMACS_REQD=	emacs25>=25
+_EMACS_REQD=	emacs24>=24.3
 _EMACS_PKGDEP.base=
 _EMACS_PKGDEP.leim=
 

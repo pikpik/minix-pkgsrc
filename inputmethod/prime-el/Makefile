@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.5 2011/09/21 21:40:20 joerg Exp $
+# $NetBSD: Makefile,v 1.6 2012/10/06 14:25:15 asau Exp $
 #
 
 DISTNAME=	prime-el-1.5.1.3
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	inputmethod
 MASTER_SITES=	http://prime.sourceforge.jp/src/
 

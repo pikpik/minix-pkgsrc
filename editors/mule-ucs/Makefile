@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2008/11/26 13:07:38 obache Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/03 11:43:38 asau Exp $
 
 DISTNAME=	Mule-UCS-0.84
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=	5
+PKGREVISION=	6
 CATEGORIES=	editors
 MASTER_SITES=	http://unit.aist.go.jp/itri/itri-gist/ftp.m17n.org/pub/mule/Mule-UCS/
 

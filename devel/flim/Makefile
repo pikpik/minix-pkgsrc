@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.34 2012/10/31 11:16:57 asau Exp $
+# $NetBSD: Makefile,v 1.35 2012/11/04 04:21:47 minskim Exp $
 
 DISTNAME=	flim-1.14.9
 PKGNAME=	${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.kanji.zinbun.kyoto-u.ac.jp/~tomo/comp/emacsen/lisp/flim/flim-1.14/
 

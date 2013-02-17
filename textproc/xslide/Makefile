@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.9 2009/08/06 01:44:57 minskim Exp $
+# $NetBSD: Makefile,v 1.10 2012/10/25 06:57:09 asau Exp $
 #
 
 DISTNAME=		xslide-0.2.2
 PKGNAME=		${EMACS_PKGNAME_PREFIX}${DISTNAME}
-PKGREVISION=		2
+PKGREVISION=		3
 CATEGORIES=		textproc
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE:=xslide/}
 
