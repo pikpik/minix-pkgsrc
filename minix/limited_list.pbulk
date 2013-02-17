@@ -233,6 +233,7 @@ sysutils/tarsnap
 sysutils/tree
 sysutils/wtail
 textproc/antiword
+textproc/c2html
 textproc/catdoc
 textproc/diffstat
 textproc/docbook-xml
@@ -242,6 +243,7 @@ textproc/grep
 textproc/groff
 textproc/gsed
 textproc/heirloom-col
+textproc/html2text
 textproc/libxml2
 textproc/libxslt
 textproc/nbsed
