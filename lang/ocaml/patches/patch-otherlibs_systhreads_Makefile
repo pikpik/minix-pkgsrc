@@ -9,7 +9,7 @@ Use BSD_INSTALL_* instead of mkdir and cp
  install:
 -	if test -f dllthreads.so; then cp dllthreads.so $(STUBLIBDIR)/dllthreads.so; fi
 -	cp libthreads.a $(LIBDIR)/libthreads.a
-+	if test -f dllthreads.so; then $(BSD_INSTALL_DATA) dllthreads.so $(STUBLIBDIR)/dllthreads.so; fi
++	if test -f dllthreads.so; then $(BSD_INSTALL_LIB) dllthreads.so $(STUBLIBDIR)/dllthreads.so; fi
 +	$(BSD_INSTALL_DATA) libthreads.a $(LIBDIR)/libthreads.a
  	cd $(LIBDIR); $(RANLIB) libthreads.a
 -	if test -d $(LIBDIR)/threads; then :; else mkdir $(LIBDIR)/threads; fi
