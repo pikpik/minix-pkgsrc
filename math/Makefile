@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.243 2012/11/29 08:00:12 jnemeth Exp $
+# $NetBSD: Makefile,v 1.244 2013/01/24 01:27:21 wen Exp $
 
 COMMENT=	Mathematics
 
@@ -113,6 +113,7 @@ SUBDIR+=	gtklife
 SUBDIR+=	harminv
 SUBDIR+=	heirloom-factor
 SUBDIR+=	heirloom-units
+SUBDIR+=	isl
 SUBDIR+=	itpp
 SUBDIR+=	kalgebra
 SUBDIR+=	kcalc
