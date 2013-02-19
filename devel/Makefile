@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1704 2013/02/17 09:08:21 taca Exp $
+# $NetBSD: Makefile,v 1.1705 2013/02/17 10:29:00 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -309,6 +309,7 @@ SUBDIR+=	ko-po-check
 SUBDIR+=	kscope
 SUBDIR+=	kyua-atf-compat
 SUBDIR+=	kyua-cli
+SUBDIR+=	kyua-testers
 SUBDIR+=	lcc
 SUBDIR+=	lcov
 SUBDIR+=	ldapsdk
