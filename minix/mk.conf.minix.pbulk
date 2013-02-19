@@ -51,3 +51,5 @@ PYPACKAGE=python27
 
 PREFER_PKGSRC=	MesaLib Xft2 Xrandr Xrender glu fontconfig freetype2
 
+USE_GNU_ICONV=yes
+
