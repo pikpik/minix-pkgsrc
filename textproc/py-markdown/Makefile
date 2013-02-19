@@ -1,14 +1,12 @@
-# $NetBSD: Makefile,v 1.4 2012/10/04 00:22:01 cheusov Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/25 06:56:51 asau Exp $
 
-DISTNAME=	Markdown-2.0.3
+DISTNAME=	Markdown-2.2.1
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:tl}
-PKGREVISION=	1
 CATEGORIES=	textproc python
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=python-markdown/} \
-		http://pypi.python.org/packages/source/M/Markdown/
+MASTER_SITES=	http://pypi.python.org/packages/source/M/Markdown/
 
 MAINTAINER=	joerg@NetBSD.org
-HOMEPAGE=	http://www.freewisdom.org/projects/python-markdown/
+HOMEPAGE=	http://pypi.python.org/pypi/Markdown
 COMMENT=	XHTML generator using a simple markup
 LICENSE=	modified-bsd
 
