@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $NetBSD: bootstrap,v 1.184 2013/02/09 12:41:43 obache Exp $
+# $NetBSD: bootstrap,v 1.188 2013/02/20 11:04:26 obache Exp $
 #
 # Copyright (c) 2001-2011 Alistair Crooks <agc@NetBSD.org>
 # All rights reserved.
@@ -470,12 +470,12 @@ AIX)
 CYGWIN_*)
 	is_root () {
 		if id -nG | grep -q 'Administrators'; then
-			return 1
+			return 0
 		fi
-		return 0
+		return 1
 	}
 	root_user=`id -u`
-	root_grou=`id -g Administrator`
+	root_group=`id -g Administrators`
 	need_bsd_install=no
 	opsys=`uname -o`
 	need_awk=no
@@ -884,6 +884,14 @@ sunpro)
 	echo "CC=			cc"        >> ${TARGET_MKCONF}
 	echo "CXX=			CC"        >> ${TARGET_MKCONF}
 	echo "CPP=			\${CC} -E" >> ${TARGET_MKCONF}
+	;;
+clang)
+	echo "CC=			clang"     >> ${TARGET_MKCONF}
+	echo "CXX=			clang++"   >> ${TARGET_MKCONF}
+	echo "CPP=			\${CC} -E" >> ${TARGET_MKCONF}
+	if [ -n "$CLANGBASE" -o -f "/bin/clang" ]; then
+		echo "CLANGBASE=		$CLANGBASE" >> ${TARGET_MKCONF}
+	fi
 	;;
 esac
 if [ -n "$GCCBASE" ]; then
