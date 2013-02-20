@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2008/03/03 18:25:53 jlam Exp $
+# $NetBSD: Makefile,v 1.18 2012/10/03 11:43:44 asau Exp $
 
 DISTNAME=	ted-2.16.src
 PKGNAME=	ted-en-us-2.16
@@ -16,11 +16,11 @@ WRKSRC=		${WRKDIR}/Ted-2.16
 USE_X11BASE=	YES
 NO_BUILD=	YES
 
-USE_TOOLS+=		gtar
+USE_TOOLS+=		tar
 INSTALLATION_DIRS=	share/Ted/ind
 
 post-extract:
-	@cd ${WRKSRC} ; ${GTAR} xf tedPackage/TedBindist.tar
+	@cd ${WRKSRC} ; ${TAR} xf tedPackage/TedBindist.tar
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/ind/US_English.ind \
