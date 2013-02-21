@@ -8,5 +8,5 @@ SHA1 (patch-ag) = 4da0a43f6b890482affff46b18eef4be67770e48
 SHA1 (patch-ai) = 26825922898567841bed0bf62a8dee3bcc50cd75
 SHA1 (patch-aj) = 8b3c52c2aee9cf53ee5a9ce64ead243d0970305e
 SHA1 (patch-ak) = 6dfb7195f45f81064f687a4c9febb9dcae721aa7
-SHA1 (patch-execute_cmd.c) = f4db70ec06307b663bbb60b42cf2157616eef256
+SHA1 (patch-execute_cmd.c) = cf76906cb19050197a8bf6757ba47ffba26d3f29
 SHA1 (patch-lib_sh_eaccess.c) = 484577f09efe67f604c3fb85afdb5a58b64f5b6c
