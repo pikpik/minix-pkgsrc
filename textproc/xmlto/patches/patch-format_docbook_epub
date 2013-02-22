@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- format/docbook/epub.orig	Thu Jul 14 10:30:41 2011
++++ format/docbook/epub
+@@ -23,6 +23,6 @@ case "$1" in
+   [ -e "$XSLT_PROCESSED" ] && rm "$XSLT_PROCESSED"
+   ${ZIP_PATH} -0Xq $EPUB_NAME mimetype
+   ${ZIP_PATH} -Xr9D $EPUB_NAME *
+-  ${GCP_PATH:-cp} -R -P -p -- $EPUB_NAME "$OUTPUT_DIR" 2>/dev/null
++  ${GCP_PATH:-cp} -R -p -- $EPUB_NAME "$OUTPUT_DIR" 2>/dev/null
+   ;;
+ esac

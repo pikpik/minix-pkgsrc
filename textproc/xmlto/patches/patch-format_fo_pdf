@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- format/fo/pdf.orig	Thu Dec  1 15:51:31 2011
++++ format/fo/pdf
+@@ -40,7 +40,7 @@ DEFAULT|DBLATEX)
+ 	      [ "$VERBOSE" -ge 3 ] && cat $OUT
+ 	    fi
+ 	  fi
+-	  ${GCP_PATH:-cp} -R -P -p -- *.pdf "$OUTPUT_DIR/$(basename "${XSLT_PROCESSED%.*}").pdf"
++	  ${GCP_PATH:-cp} -R -p -- *.pdf "$OUTPUT_DIR/$(basename "${XSLT_PROCESSED%.*}").pdf"
+ 	  ;;
+ 	esac
+ 	;;

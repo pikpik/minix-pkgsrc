@@ -1,0 +1,12 @@
+$NetBSD$
+
+--- format/fo/dvi.orig	Thu Mar  3 15:19:13 2011
++++ format/fo/dvi
+@@ -37,6 +37,6 @@ post-process)
+       [ "$VERBOSE" -ge 3 ] && cat $OUT
+     fi
+   fi
+-  ${GCP_PATH:-cp} -R -P -p -- *.dvi "$OUTPUT_DIR/$(basename "${XSLT_PROCESSED%.*}").dvi"
++  ${GCP_PATH:-cp} -R -p -- *.dvi "$OUTPUT_DIR/$(basename "${XSLT_PROCESSED%.*}").dvi"
+   ;;
+ esac
