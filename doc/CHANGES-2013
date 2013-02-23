@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.666 2013/02/21 15:51:43 pettai Exp $
+$NetBSD: CHANGES-2013,v 1.677 2013/02/22 20:30:17 ryoon Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -957,3 +957,24 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated math/ruby-spreadsheet to 0.8.1 [obache 2013-02-21]
 	Updated security/opendnssec to 1.3.13 [pettai 2013-02-21]
 	Updated x11/gtk2 to 2.24.16 [adam 2013-02-21]
+	Updated lang/php53 to 5.3.22 [taca 2013-02-22]
+	Updated lang/php54 to 5.4.12 [taca 2013-02-22]
+	Updated net/mikutter to 0.2.1.1130 [obache 2013-02-22]
+	Updated devel/xulrunner to 19.0 [ryoon 2013-02-22]
+	Updated www/firefox to 19.0 [ryoon 2013-02-22]
+	Updated www/nginx to 1.2.7nb1 [imil 2013-02-22]
+	Updated www/serf to 1.1.1 [taca 2013-02-22]
+	Updated www/serf0 to 0.7.2 [taca 2013-02-22]
+	Updated devel/subversion16-base to 1.6.20nb1 [taca 2013-02-22]
+	Updated lang/ruby193-base to 1.9.3p392 [taca 2013-02-22]
+	Updated databases/ruby-gdbm to 1.9.3p392nb2 [taca 2013-02-22]
+	Updated devel/ruby-curses to 1.9.3p392 [taca 2013-02-22]
+	Updated devel/ruby-fiddle to 1.9.3p392 [taca 2013-02-22]
+	Updated devel/ruby-readline to 1.9.3p392nb2 [taca 2013-02-22]
+	Updated x11/ruby-tk to 1.9.3p392nb1 [taca 2013-02-22]
+	Updated lang/ruby193 to 1.9.3p392 [taca 2013-02-22]
+	Updated lang/ruby to 1.9.3p392nb1 [taca 2013-02-22]
+	Updated devel/ruby-mode to 1.9.3p392 [taca 2013-02-22]
+	Added www/nginx-devel version 1.3.13 [imil 2013-02-22]
+	Updated www/firefox-l10n to 19.0 [ryoon 2013-02-22]
+	Updated mail/getmail to 4.39.0 [schmonz 2013-02-23]
