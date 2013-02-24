@@ -293,7 +293,7 @@ build_full_reqby(lpkg_head_t *reqby, struct pkg_meta *meta, int limit)
 	lpkg_t *lpp;
 	struct pkg_meta *meta_dep;
 
-	if (limit == 65536)
+	if (limit == 256)
 		errx(1, "Cycle in the dependency tree, bailing out");
 
 	if (meta->is_installed == 0 || meta->meta_required_by == NULL)
