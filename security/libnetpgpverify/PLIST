@@ -1,0 +1,4 @@
+@comment $NetBSD$
+include/netpgp/verify.h
+lib/libnetpgpverify.la
+man/man3/libnetpgpverify.3
