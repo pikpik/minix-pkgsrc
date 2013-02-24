@@ -19,6 +19,10 @@ BUILD_TARGET=	libs
 CXXFLAGS+=	-D_XPG5
 .endif
 
+.if ${OPSYS} == "Minix"
+CPPFLAGS+=	-D_XOPEN_SOURCE_EXTENDED
+.endif
+
 SUBST_CLASSES+=		includes
 SUBST_MESSAGE.includes=	Fixing include paths for ncurses headers.
 SUBST_STAGE.includes=	post-build
