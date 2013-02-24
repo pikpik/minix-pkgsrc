@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.175 2013/01/06 00:40:48 wiz Exp $
+# $NetBSD: Makefile,v 1.177 2013/02/24 15:58:16 schmonz Exp $
 
 DISTNAME=	pango-1.32.5
 PKGREVISION=	1
@@ -48,8 +48,6 @@ PLIST_VARS+=		coretext
 
 .if ${OPSYS} == "Darwin"
 PLIST.coretext=		yes
-.else
-BUILDLINK_API_DEPENDS.Xft2+=	Xft2>=2.1.7nb3
 .endif
 
 BUILDLINK_API_DEPENDS.glib2+=	glib2>=2.32.1

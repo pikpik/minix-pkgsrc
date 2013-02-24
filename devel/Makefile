@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1705 2013/02/17 10:29:00 wiz Exp $
+# $NetBSD: Makefile,v 1.1709 2013/02/24 14:22:14 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -1419,7 +1419,6 @@ SUBDIR+=	rt3
 SUBDIR+=	rubigen
 SUBDIR+=	ruby-SDL
 SUBDIR+=	ruby-abstract
-SUBDIR+=	ruby-activemodel31
 SUBDIR+=	ruby-activemodel32
 SUBDIR+=	ruby-activesupport31
 SUBDIR+=	ruby-activesupport32
@@ -1495,7 +1494,6 @@ SUBDIR+=	ruby-polyglot
 SUBDIR+=	ruby-posix-spawn
 SUBDIR+=	ruby-priority-queue
 SUBDIR+=	ruby-racc
-SUBDIR+=	ruby-railties31
 SUBDIR+=	ruby-railties32
 SUBDIR+=	ruby-rake
 SUBDIR+=	ruby-randexp
@@ -1531,9 +1529,7 @@ SUBDIR+=	ruby-thor
 SUBDIR+=	ruby-thrift
 SUBDIR+=	ruby-thrift_client
 SUBDIR+=	ruby-turn
-SUBDIR+=	ruby-turn08
 SUBDIR+=	ruby-uglifier
-SUBDIR+=	ruby-uglifier10
 SUBDIR+=	ruby-uuidtools
 SUBDIR+=	ruby-validatable
 SUBDIR+=	ruby2ruby
