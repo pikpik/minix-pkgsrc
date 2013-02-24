@@ -208,6 +208,7 @@ security/bcrypt
 security/crypto++
 security/libgcrypt
 security/libgpg-error
+security/mozilla-rootcerts
 security/openssh
 security/openssl
 security/p5-Digest
