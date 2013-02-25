@@ -109,7 +109,8 @@ GCC_REQD+=	20120614
 # _GCC_DIST_VERSION is the highest version of GCC installed by the pkgsrc
 # without the PKGREVISIONs.
 #
-_GCC_DIST_VERSION=	4.7.0
+.include "../../lang/gcc47/version.mk"
+_GCC_DIST_VERSION:=	${GCC_DIST_VERSION}
 
 # _GCC2_PATTERNS matches N s.t. N <= 2.95.3.
 _GCC2_PATTERNS=	[0-1].* 2.[0-9] 2.[0-9].* 2.[1-8][0-9] 2.[1-8][0-9].*	\
