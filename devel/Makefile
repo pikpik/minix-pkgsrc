@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1709 2013/02/24 14:22:14 taca Exp $
+# $NetBSD: Makefile,v 1.1710 2013/02/24 14:26:25 taca Exp $
 #
 
 COMMENT=	Development utilities
@@ -929,6 +929,7 @@ SUBDIR+=	p5-Module-Util
 SUBDIR+=	p5-Module-Versions
 SUBDIR+=	p5-Module-Versions-Report
 SUBDIR+=	p5-Moo
+SUBDIR+=	p5-MooX-Types-MooseLike
 SUBDIR+=	p5-Moose
 SUBDIR+=	p5-Moose-Autobox
 SUBDIR+=	p5-Moose-Policy

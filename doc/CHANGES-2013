@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.702 2013/02/24 16:04:24 khorben Exp $
+$NetBSD: CHANGES-2013,v 1.705 2013/02/25 03:14:21 wen Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1018,3 +1018,6 @@ Changes to the packages collection and infrastructure in 2013:
 	Removed www/ruby-sass-rails31 [taca 2013-02-24]
 	Updated net/aria2 to 1.16.3 [ryoon 2013-02-24]
 	Added sysutils/deforaos-terminal version 0.0.0 [khorben 2013-02-24]
+	Updated www/p5-Dancer to 1.3111 [wen 2013-02-25]
+	Added devel/p5-MooX-Types-MooseLike version 0.21 [wen 2013-02-25]
+	Updated lang/icc11 to 11.1.080nb1 [wiz 2013-02-25]
