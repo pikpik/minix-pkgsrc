@@ -1,11 +1,6 @@
 .ifdef BSD_PKG_MK
 
-AR=ar
-LD=ld
-CC= gcc
 CFLAGS+=	-march=i586
-BINUTILS_PROGRAM_PREFIX=
-COMPILER_TYPE=gnu
 PKGSRC_COMPILER=    gcc
 
 TOOLS_PLATFORM.ftp?=           /usr/bin/fetch
@@ -36,11 +31,6 @@ PKG_DBDIR=        /usr/var/db/pkg
 PKG_DEFAULT_OPTIONS?= -inet6
 PKG_OPTIONS.ghostscript=-fontconfig
 PKG_RCD_SCRIPTS=YES
-.if exists(/usr/sbin/pkg_add)
-PKG_TOOLS_BIN=        /usr/sbin
-.else
-PKG_TOOLS_BIN=        ${LOCALBASE}/sbin
-.endif
 
 RCD_SCRIPTS_DIR=${LOCALBASE}/etc/rc.d
 
@@ -53,7 +43,5 @@ PYTHON_VERSION_DEFAULT=27
 PYPACKAGE=python27
 
 PREFER_PKGSRC=	MesaLib Xft2 Xrandr Xrender glu fontconfig freetype2
-
-USE_GNU_ICONV=yes
 
 .endif
