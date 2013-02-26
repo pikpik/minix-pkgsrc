@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- library/slurp.orig	2012-11-23 15:56:11.000000000 +0000
++++ library/slurp
+@@ -40,7 +40,7 @@ examples:
+                   "content": "aGVsbG8gQW5zaWJsZSB3b3JsZAo=", 
+                   "encoding": "base64"
+                }
+-     description: "Example using C(/usr/bin/ansible)"
++     description: "Example using C(@LOCALBASE@/bin/ansible)"
+ notes:
+    - "See also: M(fetch)"
+ requirements: []

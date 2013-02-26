@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.705 2013/02/25 03:14:21 wen Exp $
+$NetBSD: CHANGES-2013,v 1.711 2013/02/26 00:15:31 hubertf Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1021,3 +1021,9 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated www/p5-Dancer to 1.3111 [wen 2013-02-25]
 	Added devel/p5-MooX-Types-MooseLike version 0.21 [wen 2013-02-25]
 	Updated lang/icc11 to 11.1.080nb1 [wiz 2013-02-25]
+	Updated www/apache24 to 2.4.4 [ryoon 2013-02-25]
+	Updated devel/cvsps3 to 3.10 [ryoon 2013-02-25]
+	Updated www/php-owncloud to 4.5.7 [ryoon 2013-02-25]
+	Updated print/qpdfview to 0.4 [ryoon 2013-02-25]
+	Added sysutils/ansible version 1.0 [hubertf 2013-02-26]
+	Added sysutils/euca2ools version 2.1.2 [hubertf 2013-02-26]

@@ -343,10 +343,6 @@ share/owncloud/3rdparty/System.php
 share/owncloud/3rdparty/XML/Parser.php
 share/owncloud/3rdparty/XML/Parser/Simple.php
 share/owncloud/3rdparty/aws-sdk/README.md
-share/owncloud/3rdparty/aws-sdk/_compatibility_test/README.md
-share/owncloud/3rdparty/aws-sdk/_compatibility_test/sdk_compatibility.inc.php
-share/owncloud/3rdparty/aws-sdk/_compatibility_test/sdk_compatibility_test.php
-share/owncloud/3rdparty/aws-sdk/_compatibility_test/sdk_compatibility_test_cli.php
 share/owncloud/3rdparty/aws-sdk/_docs/CHANGELOG.md
 share/owncloud/3rdparty/aws-sdk/_docs/CONTRIBUTORS.md
 share/owncloud/3rdparty/aws-sdk/_docs/DYNAMODBSESSIONHANDLER.html
