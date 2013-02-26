@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1 2012/12/13 16:07:55 ryoon Exp $
+# $NetBSD: Makefile,v 1.2 2012/12/24 01:40:17 ryoon Exp $
 #
 
-DISTNAME=	soycms_1.4.0a_mysql
+DISTNAME=	soycms_1.4.0c_mysql
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME:S/_/-/:S/_mysql//}
 CATEGORIES=	www
 MASTER_SITES=	http://ryo-on.users.sourceforge.net/distrib/

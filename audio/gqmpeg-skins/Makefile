@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/02/02 09:26:17 hans Exp $
+# $NetBSD: Makefile,v 1.20 2012/09/12 00:24:35 asau Exp $
 
 DISTNAME=	gqmpeg-skins-20030712
 PKGREVISION=	6
@@ -84,22 +84,22 @@ DIST_SUBDIR=	gqmpeg-skins
 WRKSRC=		${WRKDIR}
 NO_BUILD=	yes
 
-USE_TOOLS+=	gtar
+USE_TOOLS+=	tar gzcat
 
 INSTALLATION_DIRS=	share/gqmpeg/skins
 
 do-install:
-		for i in ${DISTFILES} ; do \
-			${ECHO} unpacking $$i ; \
-			${CAT} ${DISTDIR}/${DIST_SUBDIR}/$$i | ( cd ${DESTDIR}${PREFIX}/share/gqmpeg/skins ; \
-				    ${GTAR} -zxf - ) ; \
-		done
-		${FIND} ${DESTDIR}${PREFIX}/share/gqmpeg/skins -type d -print | \
-		${XARGS} ${CHMOD} 755
-		${FIND} ${DESTDIR}${PREFIX}/share/gqmpeg/skins -type f -print | \
-		${XARGS} ${CHMOD} 644
-		${FIND} ${DESTDIR}${PREFIX}/share/gqmpeg/skins -name "*~" -print | \
-		${XARGS} ${RM} -f
-		${CHOWN} -R ${BINOWN}:${BINGRP}  ${DESTDIR}${PREFIX}/share/gqmpeg/skins
+	for i in ${DISTFILES} ; do \
+		${ECHO} unpacking $$i ; \
+		${GZCAT} ${DISTDIR}/${DIST_SUBDIR}/$$i | \
+		${TAR} -xf - -C ${DESTDIR}${PREFIX}/share/gqmpeg/skins; \
+	done
+	${FIND} ${DESTDIR}${PREFIX}/share/gqmpeg/skins -type d -print | \
+	${XARGS} ${CHMOD} 755
+	${FIND} ${DESTDIR}${PREFIX}/share/gqmpeg/skins -type f -print | \
+	${XARGS} ${CHMOD} 644
+	${FIND} ${DESTDIR}${PREFIX}/share/gqmpeg/skins -name "*~" -print | \
+	${XARGS} ${RM} -f
+	${CHOWN} -R ${BINOWN}:${BINGRP}  ${DESTDIR}${PREFIX}/share/gqmpeg/skins
 
 .include "../../mk/bsd.pkg.mk"

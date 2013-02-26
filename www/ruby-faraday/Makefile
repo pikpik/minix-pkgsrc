@@ -1,6 +1,6 @@
-# $NetBSD$
+# $NetBSD: Makefile,v 1.1 2013/01/26 08:50:53 obache Exp $
 
-DISTNAME=	faraday-0.8.4
+DISTNAME=	faraday-0.8.6
 CATEGORIES=	www
 
 MAINTAINER=	obache@NetBSD.org
