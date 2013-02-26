@@ -1,7 +1,10 @@
-$NetBSD$
+$NetBSD: patch-Makefile.inc,v 1.1 2012/03/21 19:22:31 hans Exp $
 
---- Makefile.inc.orig	2012-03-21 20:14:50.782202133 +0100
-+++ Makefile.inc	2012-03-21 20:16:37.118104356 +0100
+Match OPSYS with what pkgsrc uses.
+Add an explicit -lm and -lgmodule-2.0 for Solaris.
+
+--- Makefile.inc.orig	2013-02-26 15:55:55.253179839 +0000
++++ Makefile.inc
 @@ -66,7 +66,7 @@ endif
  
  ifeq ($(GTOP),)
@@ -25,3 +28,12 @@ $NetBSD$
       ifeq ($(OSREV),5.8)
  LINK_FLAGS=
  SYS_LIBS+=	-lsocket -lintl
+@@ -123,7 +123,7 @@ GKRELLM_CFLAGS=	-DSOLARIS_8
+      else
+ SYS_LIBS+=	-lsocket
+       ifeq ($(MODULE),src)
+-SYS_LIBS+=	-lresolv -lX11
++SYS_LIBS+=	-lresolv -lX11 -lgmodule-2.0
+       else
+ SYS_LIBS+=	-lnsl
+       endif
