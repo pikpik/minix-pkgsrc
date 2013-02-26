@@ -37,6 +37,7 @@ databases/db4
 databases/sqlite3
 databases/tdb
 devel/apr
+devel/apr0
 devel/apr-util
 devel/autoconf
 devel/autoconf213
@@ -266,6 +267,7 @@ wm/fluxbox
 wm/fvwm
 wm/jwm
 www/apache
+www/apache2
 www/curl
 www/libwww
 www/links
