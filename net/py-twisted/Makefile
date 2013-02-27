@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.18 2013/02/17 14:53:13 gdt Exp $
+# $NetBSD: Makefile,v 1.20 2013/02/27 15:59:07 gdt Exp $
 
 PKGNAME=	${PYPKGPREFIX}-twisted-${TWISTED_VERSION}
+PKGREVISION=	1
 COMMENT=	Framework for writing networked applications
 .include "../../net/py-twisted/Makefile.common"
 
@@ -22,7 +23,7 @@ CFLAGS.SunOS+=	-D_XOPEN_SOURCE=1 -D_XOPEN_SOURCE_EXTENDED=1 -Du_int=uint32_t
 # .orig files from patches.  This is done pre-install rather than
 # post-patch so that mkpatches(1) will still work.
 pre-install:
-	rm ${WRKSRC}/twisted/runner/portmap.c.orig
+	rm -f ${WRKSRC}/twisted/runner/portmap.c.orig
 
 # Do not "make package" after running "make test"; this will result in files
 # being installed that should not be.
@@ -35,4 +36,12 @@ CHECK_FILES_SKIP+=	${PREFIX}/${PYSITELIB}/twisted/plugins/dropin.cache
 # egg.mk restricts the Python version list
 .include "../../lang/python/egg.mk"
 .include "../../lang/python/application.mk"
+
+# With python 2.6, twisted builds an additional object.
+# XXX Guess that 2.5 does this too.
+PLIST_VARS+=		initgroups
+.if ${PYPKGPREFIX} == "py26" || ${PYPKGPREFIX} == "py25"
+PLIST.initgroups=	YES
+.endif
+
 .include "../../mk/bsd.pkg.mk"

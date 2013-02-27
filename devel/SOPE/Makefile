@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2013/01/26 21:37:17 adam Exp $
+# $NetBSD: Makefile,v 1.9 2013/02/06 23:22:03 jperkin Exp $
 #
 
 DISTNAME=	SOPE-2.0.2a
@@ -19,8 +19,9 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gnustep --enable-debug --disable-strip
 
 pre-configure:
+	test -e ${BUILDLINK_DIR}/lib/libmysqlclient.so || \
 	${LN} -s ${BUILDLINK_DIR}/lib/mysql/libmysqlclient.so \
-	         ${BUILDLINK_DIR}/lib/libmysqlclient.so
+		${BUILDLINK_DIR}/lib/libmysqlclient.so
 
 .include "../../devel/gnustep-make/buildlink3.mk"
 .include "../../devel/gnustep-base/buildlink3.mk"

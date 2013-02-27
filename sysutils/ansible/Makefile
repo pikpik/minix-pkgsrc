@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.2 2013/02/26 17:42:59 riz Exp $
+# $NetBSD: Makefile,v 1.3 2013/02/26 20:11:02 riz Exp $
 #
 
 DISTNAME=	ansible-1.0
+PKGREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://ansible.cc/releases/
 

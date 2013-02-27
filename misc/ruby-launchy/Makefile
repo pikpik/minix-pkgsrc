@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.8 2012/09/16 06:46:02 taca Exp $
+# $NetBSD: Makefile,v 1.9 2013/02/13 15:37:05 taca Exp $
 
 DISTNAME=	launchy-2.2.0
+PKGREVISION=	1
 CATEGORIES=	misc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
@@ -11,6 +12,7 @@ LICENSE=	isc
 DEPENDS+=	${RUBY_PKGPREFIX}-addressable>=2.3<3:../../net/ruby-addressable
 
 USE_RAKE=	YES
+RUBY_RDOC_REQD=	3.12
 
 .include "../../lang/ruby/gem.mk"
 .include "../../mk/bsd.pkg.mk"

@@ -1,29 +1,6 @@
-# $NetBSD: Cygwin.mk,v 1.6 2013/02/22 13:39:31 obache Exp $
+# $NetBSD: Cygwin.mk,v 1.8 2013/02/27 10:59:33 obache Exp $
 #
 # Variable definitions for the Windows with Cygwin.
-
-###
-### Overrides to standard BSD .mk files
-###
-
-# "catinstall" not yet supported as there's no shipped [gn]roff
-MANINSTALL=	maninstall
-MAKE_FLAGS+=	MKCATPAGES=no NOLINT=1
-
-###
-### Alternate defaults to global pkgsrc settings, to help avoid
-### some of the excessive Interix fork(2) overhead, and reduce the
-### amount of settings required in the user's mk.conf
-###
-
-INSTALL?=		${PREFIX}/bin/install-sh
-PAX?=			${PREFIX}/bin/nbpax
-
-.if defined(BATCH)
-BULK_PREREQ+=		lang/perl5
-USE_BULK_BROKEN_CHECK?=	no
-USE_BULK_TIMESTAMPS?=	no
-.endif
 
 ###
 ### Platform definitions common to pkgsrc/mk/platform/*.mk
@@ -63,6 +40,7 @@ ULIMIT_CMD_memorysize?=	ulimit -v `ulimit -H -v`
 
 X11_TYPE?=		native
 
+_OPSYS_EXE_SUFFIX=	.exe	# executables may have suffix
 _OPSYS_HAS_INET6=	yes	# IPv6 is standard
 _OPSYS_HAS_JAVA=	no	# Java is not standard
 _OPSYS_HAS_MANZ=	yes	# MANZ controls gzipping of man pages
