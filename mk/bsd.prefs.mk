@@ -286,13 +286,10 @@ OS_VARIANT=		SmartOS
 .  endif
 
 .elif ${OPSYS} == "Minix"
-OS_VERSION!= echo `${UNAME} -v`
-LOWER_OS_VERSION= OS_VERSION
-LOWER_ARCH!=		${UNAME} -p
-MACHINE_ARCH=		${LOWER_ARCH}
-LOWER_VENDOR?=pc
+LOWER_VENDOR?=		pc
 LOWER_OPSYS:=		${OPSYS:tl}
-LDFLAGS+=	-lcompat_minix -lminlib
+LDFLAGS+=		-lcompat_minix -lminlib
+
 .elif !defined(LOWER_OPSYS)
 LOWER_OPSYS:=		${OPSYS:tl}
 .endif
