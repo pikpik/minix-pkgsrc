@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.30 2013/02/06 23:21:49 jperkin Exp $
+# $NetBSD: Makefile,v 1.31 2013/02/16 11:20:34 wiz Exp $
 
 DISTNAME=		spectrum-1.4.8
 PKGREVISION=		19
@@ -95,6 +95,8 @@ INSTALLATION_DIRS=	bin ${PKG_SYSCONFDIR}
 INSTALLATION_DIRS+=	share/locales
 INSTALLATION_DIRS+=	${EGDIR}
 # INSTALLATION_DIRS+=	${DOCDIR}
+
+LDFLAGS.SunOS+=		-lsocket -lnsl
 
 pre-install:
 	${RM} -f ${WRKSRC}/spectrumctl/spectrumctl.py.orig
