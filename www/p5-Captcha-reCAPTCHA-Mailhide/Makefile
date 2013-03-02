@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.6 2012/10/03 21:58:37 wiz Exp $
+# $NetBSD: Makefile,v 1.7 2012/10/28 06:30:30 asau Exp $
 #
 
 DISTNAME=	Captcha-reCAPTCHA-Mailhide-0.94
@@ -7,7 +7,7 @@ PKGREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=../../authors/id/A/AN/ANDYA/}
 
-MAINTAINER=	heinz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Captcha-reCAPTCHA-Mailhide/
 COMMENT=	Perl implementation of the reCAPTCHA Mailhide API
 LICENSE=	${PERL5_LICENSE}

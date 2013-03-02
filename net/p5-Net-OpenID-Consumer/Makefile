@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.9 2012/10/23 17:18:51 asau Exp $
+# $NetBSD: Makefile,v 1.10 2013/02/18 09:02:52 markd Exp $
 #
 
 DISTNAME=	Net-OpenID-Consumer-1.03
@@ -7,7 +7,7 @@ PKGREVISION=	3
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:=Net/}
 
-MAINTAINER=	heinz@NetBSD.org
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://search.cpan.org/dist/Net-OpenID-Consumer/
 COMMENT=	Perl library for consumers of OpenID identities
 LICENSE=	${PERL5_LICENSE}

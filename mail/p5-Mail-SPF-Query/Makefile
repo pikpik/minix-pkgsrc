@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.15 2012/10/03 21:56:31 wiz Exp $
+# $NetBSD: Makefile,v 1.16 2012/10/08 12:19:24 asau Exp $
 
 DISTNAME=		Mail-SPF-Query-1.999
 PKGNAME=		p5-${DISTNAME}
@@ -7,7 +7,7 @@ SVR4_PKGNAME=		p5msq
 CATEGORIES=		mail perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN:=Mail/}
 
-MAINTAINER=		heinz@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.openspf.org/
 COMMENT=		Perl module for Sender-Policy-Framework queries
 

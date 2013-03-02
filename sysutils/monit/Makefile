@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.8 2012/10/23 19:51:13 asau Exp $
+# $NetBSD: Makefile,v 1.9 2013/02/06 23:23:52 jperkin Exp $
 #
 
 DISTNAME=		monit-4.10.1
@@ -6,7 +6,7 @@ PKGREVISION=		3
 CATEGORIES=		sysutils
 MASTER_SITES=		http://www.tildeslash.com/monit/dist/
 
-MAINTAINER=		heinz@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.tildeslash.com/monit/
 COMMENT=		Utility for monitoring processes, files, directories and devices
 LICENSE=		gnu-gpl-v3

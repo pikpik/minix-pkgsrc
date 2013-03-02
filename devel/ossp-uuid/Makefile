@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.4 2012/10/03 21:54:33 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/31 11:17:34 asau Exp $
 #
 
 DISTNAME=		uuid-1.6.2
@@ -7,7 +7,7 @@ PKGREVISION=		1
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.ossp.org/pkg/lib/uuid/
 
-MAINTAINER=		heinz@NetBSD.org
+MAINTAINER=		pkgsrc-users@NetBSD.org
 HOMEPAGE=		http://www.ossp.org/pkg/lib/uuid/
 COMMENT=		C-API and command line tool for generating UUIDs
 
