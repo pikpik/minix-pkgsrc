@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.35 2012/09/15 15:03:23 obache Exp $
+# $NetBSD: Makefile,v 1.36 2012/10/02 21:25:51 asau Exp $
 #
 
 DISTNAME=	mysql-ruby-2.8.2
 PKGNAME=	${RUBY_PKGPREFIX}-mysql-2.8.2
-PKGREVISION=	3
+PKGREVISION=	4
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://rubyforge.org/frs/download.php/51087/ \
 		http://tmtm.org/downloads/mysql/ruby/

@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.955 2013/02/10 05:58:27 manu Exp $
+# $NetBSD: Makefile,v 1.956 2013/03/02 04:09:01 ryoon Exp $
 #
 
 COMMENT=	Networking tools
@@ -14,8 +14,6 @@ SUBDIR+=	ORBit
 SUBDIR+=	ORBit2
 SUBDIR+=	Radicale
 SUBDIR+=	SDL_net
-SUBDIR+=	Transmission
-SUBDIR+=	Transmission-gui
 SUBDIR+=	adns
 SUBDIR+=	aget
 SUBDIR+=	aiccu
@@ -648,6 +646,9 @@ SUBDIR+=	totd
 SUBDIR+=	traceroute-as
 SUBDIR+=	traceroute-nanog
 SUBDIR+=	trafshow
+SUBDIR+=	transmission
+SUBDIR+=	transmission-gtk
+SUBDIR+=	transmission-qt
 SUBDIR+=	trickle
 SUBDIR+=	tsclient
 SUBDIR+=	tsocks
