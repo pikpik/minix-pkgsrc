@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.64 2013/02/24 06:55:29 obache Exp $
+# $NetBSD: Makefile,v 1.65 2013/03/01 16:10:23 jperkin Exp $
 #
 # NOTE:
 # When updating this package, a change in the minor (4.n -> 4.(n+1))
@@ -36,13 +36,6 @@ CONFIGURE_ARGS+=	--program-transform-name=s,db_,db4_,
 OPSYSVARS+=		LIBSO_LIBS
 LIBSO_LIBS.SunOS+=	-lnsl -lrt
 CONFIGURE_ENV+=		LIBSO_LIBS=${LIBSO_LIBS:Q}
-
-.include "../../mk/bsd.prefs.mk"
-
-PLIST_VARS+=		norm_so
-.if ${OPSYS} != "Cygwin"
-PLIST.norm_so=		yes
-.endif
 
 .include "options.mk"
 
