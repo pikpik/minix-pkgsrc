@@ -41,3 +41,4 @@ SHA1 (patch-bi) = 0fe8c54b6d5b2c3d2e5c2cfa580d9ad153e6c712
 SHA1 (patch-lib_lbxutil_lbx__zlib_lbx__zlib__io.c) = fc0854cab11dff357042744c565bebda299e4950
 SHA1 (patch-lib_xtrans_Xtranssock__mnx3.c) = e28411d62c25373ffd12d9ab13b2c6774f64dd7b
 SHA1 (patch-programs_Xserver_hw_xfree86_os-support_minix3_dummy.c) = 49a09182c37da08f7aaed3dbdbf951b45bc71a83
+SHA1 (patch-programs_Xserver_os_osinit.c) = a49af7e00a0697883901cd516ece5f7dbf44c5ab
