@@ -1,6 +1,7 @@
-$NetBSD: patch-ab,v 1.17 2012/10/03 19:59:47 adam Exp $
+$NetBSD: patch-ab,v 1.18 2013/03/03 11:02:56 obache Exp $
 
 * fixes packlist with destdir installation on Cygwin.
+  https://rt.perl.org/rt3/Ticket/Display.html?id=117033
 * XXX
 
 --- installperl.orig	2012-10-26 02:44:15.000000000 +0000
