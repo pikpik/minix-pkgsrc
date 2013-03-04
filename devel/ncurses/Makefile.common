@@ -57,6 +57,8 @@ TERMINFODIR=	share/lib/terminfo
 TERMINFODIR=	share/terminfo
 .endif
 
+CFLAGS.Minix += -D_NETBSD_SOURCE
+
 # This prevents tic from writing into ~/.terminfo
 INSTALLATION_DIRS+=	${TERMINFODIR}
 
