@@ -1,4 +1,4 @@
-# $NetBSD: makevars.map,v 1.229 2012/12/11 14:58:00 ryoon Exp $
+# $NetBSD: makevars.map,v 1.230 2013/01/23 17:47:15 wiz Exp $
 #
 
 # This file contains the guessed type of some variables, according to
@@ -350,6 +350,7 @@ FILESDIR		RelativePkgPath [$package]
 FILES_SUBST		List of ShellWord [$package_list]
 FILES_SUBST_SED		List of ShellWord
 FIX_RPATH		List of Varname [$package_list]
+FLEX_REQD		List of Version [$package_list]
 FONTS_DIRS.*		List of Pathname [m:as,c:a]
 GAMEDATAMODE		FileMode [$system]
 GAMES_GROUP		UserGroupName [$system]

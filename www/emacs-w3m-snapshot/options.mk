@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.2 2008/04/12 22:43:13 jlam Exp $
+# $NetBSD: options.mk,v 1.1 2009/08/07 15:35:10 minskim Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.emacs-w3m
 PKG_SUPPORTED_OPTIONS=	emacs-w3m-mew
@@ -7,6 +7,7 @@ PKG_SUPPORTED_OPTIONS=	emacs-w3m-mew
 
 PLIST_VARS+=	mew
 .if !empty(PKG_OPTIONS:Memacs-w3m-mew)
+MAKE_ENV+=	EMACS-W3M-MEW=1
 .include "../../mail/mew/buildlink3.mk"
 PLIST.mew=	yes
 .endif
