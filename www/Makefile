@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.954 2013/02/26 12:46:17 ryoon Exp $
+# $NetBSD: Makefile,v 1.956 2013/03/05 19:39:57 darcy Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -530,6 +530,7 @@ SUBDIR+=	php-tidy
 SUBDIR+=	php-tiki6
 SUBDIR+=	php-tt-rss
 SUBDIR+=	php-uploadprogress
+SUBDIR+=	php-zendoptimizerplus
 SUBDIR+=	phraseanet
 SUBDIR+=	phraseanet-indexer
 SUBDIR+=	pound
@@ -583,6 +584,7 @@ SUBDIR+=	py-moin
 SUBDIR+=	py-nevow
 SUBDIR+=	py-paste
 SUBDIR+=	py-pendrell
+SUBDIR+=	py-recaptcha
 SUBDIR+=	py-rss2gen
 SUBDIR+=	py-scgi
 SUBDIR+=	py-simpletal

@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.772 2013/03/05 13:58:21 taca Exp $
+$NetBSD: CHANGES-2013,v 1.779 2013/03/05 22:03:39 pettai Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1108,3 +1108,11 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated www/typo3_46 to 4.6.16 [taca 2013-03-05]
 	Updated www/typo3_45 to 4.5.23 [taca 2013-03-05]
 	Updated www/typo3_47 to 4.7.8 [taca 2013-03-05]
+	Updated www/nginx-devel to 1.3.14 [imil 2013-03-05]
+	Updated devel/p5-PerlIO-via-dynamic to 0.14 [apb 2013-03-05]
+	Updated graphics/ImageMagick to 6.8.3.7 [adam 2013-03-05]
+	Updated graphics/p5-PerlMagick to 6.8.3.7 [adam 2013-03-05]
+	Added www/py-recaptcha version 1.0.6 [darcy 2013-03-05]
+	Added converters/p5-Data-Hexify version 1.00 [pettai 2013-03-05]
+	Added www/p5-File-Mork version 0.3 [pettai 2013-03-05]
+	Added www/php-zendoptimizerplus version 7.0.0 [imil 2013-03-05]
