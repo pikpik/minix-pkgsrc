@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.796 2013/03/07 12:46:15 obache Exp $
+$NetBSD: CHANGES-2013,v 1.800 2013/03/07 17:01:11 taca Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1136,3 +1136,7 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated net/wireshark to 1.8.6 [tron 2013-03-07]
 	Updated sysutils/user_cygwin to 20130307 [obache 2013-03-07]
 	Updated sysutils/logrotate to 3.8.3 [obache 2013-03-07]
+	Updated devel/ruby-rdoc to 3.12.2 [taca 2013-03-07]
+	Updated www/drupal7 to 7.21 [taca 2013-03-07]
+	Updated devel/ruby-eet to 0.1.4nb7 [taca 2013-03-07]
+	Updated audio/libaudiofile to 0.3.6 [adam 2013-03-07]
