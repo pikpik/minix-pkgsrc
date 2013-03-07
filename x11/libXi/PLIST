@@ -30,6 +30,8 @@ man/man3/XGetSelectedExtensionEvents.3
 man/man3/XGrabDevice.3
 man/man3/XGrabDeviceButton.3
 man/man3/XGrabDeviceKey.3
+man/man3/XIBarrierReleasePointer.3
+man/man3/XIBarrierReleasePointers.3
 man/man3/XIChangeHierarchy.3
 man/man3/XIChangeProperty.3
 man/man3/XIDefineCursor.3

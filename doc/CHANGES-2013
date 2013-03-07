@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.789 2013/03/06 22:53:05 pettai Exp $
+$NetBSD: CHANGES-2013,v 1.796 2013/03/07 12:46:15 obache Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1129,3 +1129,10 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated security/stunnel to 4.55 [jym 2013-03-06]
 	Added misc/p5-Parse-Win32Registry version 1.0 [pettai 2013-03-06]
 	Added security/log2timeline version 0.64 [pettai 2013-03-06]
+	Updated devel/mercurial to 2.5.2 [wiz 2013-03-07]
+	Added editors/se version 3.0 [tcort 2013-03-07]
+	Updated x11/inputproto to 2.3 [wiz 2013-03-07]
+	Updated x11/libXi to 1.7 [wiz 2013-03-07]
+	Updated net/wireshark to 1.8.6 [tron 2013-03-07]
+	Updated sysutils/user_cygwin to 20130307 [obache 2013-03-07]
+	Updated sysutils/logrotate to 3.8.3 [obache 2013-03-07]

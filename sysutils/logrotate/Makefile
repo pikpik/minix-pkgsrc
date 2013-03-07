@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.1.1.1 2012/03/06 04:53:24 sbd Exp $
+# $NetBSD: Makefile,v 1.3 2013/01/10 18:16:29 wiz Exp $
 #
 
-DISTNAME=		logrotate-3.8.2
+DISTNAME=		logrotate-3.8.3
 CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_GENTOO:=distfiles/}
 MASTER_SITES+=		${MASTER_SITE_FREEBSD:=distfiles/}
