@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.782 2013/03/06 11:07:36 obache Exp $
+$NetBSD: CHANGES-2013,v 1.789 2013/03/06 22:53:05 pettai Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1120,3 +1120,12 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated inputmethod/uim to 1.8.4 [obache 2013-03-06]
 	Updated inputmethod/uim-elisp to 1.8.4 [obache 2013-03-06]
 	Added sysutils/user_cygwin version 20130306 [obache 2013-03-06]
+	Updated www/typo3_45 to 4.5.24 [taca 2013-03-06]
+	Updated www/typo3_46 to 4.6.17 [taca 2013-03-06]
+	Updated www/typo3_47 to 4.7.9 [taca 2013-03-06]
+	Updated graphics/pngcrush to 1.7.52 [adam 2013-03-06]
+	Updated mail/mutt-devel to 1.5.21nb10 [is 2013-03-06]
+	Updated textproc/mdoclint to 1.19 [wiz 2013-03-06]
+	Updated security/stunnel to 4.55 [jym 2013-03-06]
+	Added misc/p5-Parse-Win32Registry version 1.0 [pettai 2013-03-06]
+	Added security/log2timeline version 0.64 [pettai 2013-03-06]
