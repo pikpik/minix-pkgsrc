@@ -73,6 +73,7 @@ devel/libidn
 devel/libmm
 devel/libtool-base
 devel/libuuid
+devel/libuxre
 devel/m4
 devel/nasm
 devel/nbpatch
@@ -145,8 +146,10 @@ lang/gawk
 lang/gcc44
 lang/guile
 lang/guile16
+lang/heirloom-awk
 lang/intercal
 lang/lua
+lang/mawk
 lang/minischeme
 lang/nawk
 lang/p2c
@@ -178,6 +181,7 @@ misc/figlet
 misc/figlet-fonts
 misc/getopt
 misc/libutf
+misc/watch
 net/fetch
 net/libfetch
 net/libpcap
@@ -247,6 +251,7 @@ textproc/grep
 textproc/groff
 textproc/gsed
 textproc/heirloom-col
+textproc/heirloom-ed
 textproc/html2text
 textproc/libxml2
 textproc/libxslt
