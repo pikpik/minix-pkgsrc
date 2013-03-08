@@ -78,7 +78,7 @@ devel/m4
 devel/nasm
 devel/nbpatch
 devel/ncurses
-devel/nucrsesw
+devel/ncursesw
 devel/p5-Error
 devel/p5-enum
 devel/pango
