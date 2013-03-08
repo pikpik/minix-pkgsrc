@@ -21,13 +21,28 @@ JAILED=0
 
 pbulksh_help() {
 	echo "Usage: "
+	echo "  $0 --fetch       Pre-fetch distfiles"
 	echo "  $0 --bootstrap   Do the initial bootstrap"
 	echo "  $0 --backup      Backup /usr/pkg to a safe place"
 	echo "  $0 --bin-kit     Create a binary kit"
 	echo "  $0 --build       Execute bulkbuild"
 	echo "  $0 --restore     Restore /usr/pkg"
-	echo "  $0 --all         Do all steps mentioned above"
+	echo "  $0 --all         Do all steps mentioned above (except fetch)"
 	echo "  $0 --help        Display this message"
+}
+
+# Run `bmake fetch` for every package in limited_list.pbulk. Potential uses:
+#  making a (local) distfiles mirror for all Minix packages.
+#  downloading the distfiles once and then using them for multiple jails.
+#  decreasing the chances of a pkg failing due to fetch errors during a build.
+pbulksh_fetch() {
+
+	for pkg in $(cat limited_list.pbulk)
+	do
+		cd ../${pkg}
+		bmake fetch
+		cd ../../minix
+	done
 }
 
 # Preparation -- bootstraps a pkgsrc installation into /usr/pbulk
@@ -180,6 +195,7 @@ then	JAILED=1
 fi
 
 case $1 in
+	"--fetch") pbulksh_fetch; break;;
 	"--bootstrap") pbulksh_bootstrap; break;;
 	"--backup") pbulksh_backup; break;;
 	"--bin-kit") pbulksh_bin_kit; break;;
