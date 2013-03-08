@@ -19,6 +19,8 @@ CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR:Q}
 .if ${OPSYS} == "Minix"
 # Minix doesn't support standard interface for network interface info
 CONFIGURE_ENV+= ac_cv_header_net_if_h=no
+# Minix has <sys/disklabel.h> but not the underlying ioctl
+CONFIGURE_ENV+=	ac_cv_header_sys_disklabel_h=no
 .endif
 
 # Only build fsck(8) on platforms that need it.
