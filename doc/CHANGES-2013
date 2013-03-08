@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.800 2013/03/07 17:01:11 taca Exp $
+$NetBSD: CHANGES-2013,v 1.814 2013/03/08 14:36:10 wen Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1140,3 +1140,17 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated www/drupal7 to 7.21 [taca 2013-03-07]
 	Updated devel/ruby-eet to 0.1.4nb7 [taca 2013-03-07]
 	Updated audio/libaudiofile to 0.3.6 [adam 2013-03-07]
+	Updated www/mediawiki to 1.20.3 [wen 2013-03-08]
+	Updated multimedia/gmplayer to 1.1nb9 [obache 2013-03-08]
+	Updated net/p5-Net-DHCP to 0.69.3 [wiz 2013-03-08]
+	Updated net/p5-Net-Write to 1.07 [wiz 2013-03-08]
+	Updated parallel/paexec to 0.18.0 [cheusov 2013-03-08]
+	Updated devel/mk-configure to 0.24.0 [cheusov 2013-03-08]
+	Updated pkgtools/nih to 0.11.0 [cheusov 2013-03-08]
+	Updated time/p5-DateTime-TimeZone to 1.57 [wen 2013-03-08]
+	Updated pkgtools/pkg_summary-utils to 0.61.0 [cheusov 2013-03-08]
+	Updated www/p5-HTTP-Tiny to 0.028 [wen 2013-03-08]
+	Updated devel/p5-CPAN-Perl-Releases to 1.02 [wen 2013-03-08]
+	Updated net/mtr to 0.84 [wiz 2013-03-08]
+	Updated www/p5-PSGI to 1.101 [wen 2013-03-08]
+	Added math/libint version 2.0.0 [asau 2013-03-08]

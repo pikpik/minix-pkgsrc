@@ -18,6 +18,7 @@ share/mediawiki/bin/ulimit-tvf.sh
 share/mediawiki/bin/ulimit.sh
 share/mediawiki/bin/ulimit4.sh
 share/mediawiki/cache/.htaccess
+share/mediawiki/composer.json
 share/mediawiki/docs/README
 share/mediawiki/docs/code-coverage/README
 share/mediawiki/docs/database.txt

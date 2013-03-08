@@ -1,7 +1,7 @@
 #!/usr/pkg/bin/ruby
 # -*- coding: utf-8 -*-
 #
-# $NetBSD: update-gemspec.rb,v 1.4 2012/03/02 03:46:09 taca Exp $
+# $NetBSD: update-gemspec.rb,v 1.5 2013/03/07 16:42:53 taca Exp $
 #
 # Copyright (c) 2011, 2012, 2013 The NetBSD Foundation, Inc.
 # All rights reserved.
@@ -66,7 +66,7 @@ class GemSpecUpdater
     key = nil
     rules.each do |s|
       s.split.each do |ru|
-        if /^:([a-z_]+)=*(\S+)*/ =~ ru
+        if key.nil? and /^:([a-z_]+)=(\S+)*/ =~ ru
           key = $1
           var = $2
           @attr[key] = var
