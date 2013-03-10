@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.22 2010/07/17 08:57:18 obache Exp $
+# $NetBSD: Makefile,v 1.23 2012/10/06 14:25:19 asau Exp $
 
 DISTNAME=	skk9.6
 PKGNAME=	skkserv-3.9.4
@@ -9,10 +9,11 @@ MASTER_SITES=	ftp://skk.kuis.kyoto-u.ac.jp/skk/9.6/
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://skk.kuis.kyoto-u.ac.jp/
 COMMENT=	Dictionary server for Simple Kana-Kanji conversion programs
+LICENSE=	gnu-gpl-v2
 
 DEPENDS=	skk-jisyo>=200708:../../inputmethod/skk-jisyo
 
-WRKSRC=			${WRKDIR}/skk-9.6
+WRKSRC=		${WRKDIR}/skk-9.6
 
 BUILD_DEFS+=	IPV6_READY
 
