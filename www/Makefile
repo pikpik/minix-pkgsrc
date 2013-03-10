@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.957 2013/03/05 22:19:51 imil Exp $
+# $NetBSD: Makefile,v 1.958 2013/03/07 06:47:23 wiz Exp $
 #
 
 COMMENT=	Packages related to the World Wide Web
@@ -648,6 +648,7 @@ SUBDIR+=	ruby-rack-protection
 SUBDIR+=	ruby-rack-rewrite
 SUBDIR+=	ruby-rack-ssl
 SUBDIR+=	ruby-rack-test
+SUBDIR+=	ruby-rack14
 SUBDIR+=	ruby-rails32
 SUBDIR+=	ruby-raindrops
 SUBDIR+=	ruby-sass
