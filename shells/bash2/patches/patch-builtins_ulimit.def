@@ -1,0 +1,11 @@
+--- builtins/ulimit.def.orig	Mon Mar 11 12:22:55 2013
++++ builtins/ulimit.def	Mon Mar 11 12:23:45 2013
+@@ -530,7 +530,7 @@
+       }
+   else
+     {
+-#if defined (HAVE_RESOURCE)
++#if defined (HAVE_RESOURCE) && !defined (__minix)
+       if (getrlimit (limits[ind].parameter, &limit) < 0)
+ 	return -1;
+ #  if defined (HPUX9)
