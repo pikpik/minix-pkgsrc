@@ -9,6 +9,7 @@ archivers/gzip
 archivers/lha
 archivers/libarchive
 archivers/libzip
+archivers/lzip
 archivers/lzo
 archivers/lzop
 archivers/nomarch
