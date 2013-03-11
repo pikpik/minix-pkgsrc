@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.37 2012/10/23 17:18:56 asau Exp $
+# $NetBSD: Makefile,v 1.38 2013/02/06 23:23:21 jperkin Exp $
 
 DISTNAME=		pchar-1.5
 PKGREVISION=		3
@@ -26,6 +26,10 @@ CONFIGURE_ARGS+=	--with-ipv6
 .  include "../../net/net-snmp/buildlink3.mk"
 CONFIGURE_ARGS+=	--with-snmp=${BUILDLINK_PREFIX.net-snmp}
 LIBS+=			-lsnmp -lcrypto -ldes
+.endif
+
+.if ${OPSYS} == "Darwin"
+CFLAGS+=	-D__APPLE_USE_RFC_3542
 .endif
 
 INSTALLATION_DIRS=	${PKGMANDIR}/man8 sbin
