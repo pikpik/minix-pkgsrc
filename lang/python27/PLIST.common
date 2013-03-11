@@ -1803,7 +1803,6 @@ lib/python${PY_VER_SUFFIX}/lib-dynload/_ctypes_test.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_functools.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_hashlib.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_heapq.so
-lib/python${PY_VER_SUFFIX}/lib-dynload/_hotshot.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_io.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_json.so
 lib/python${PY_VER_SUFFIX}/lib-dynload/_locale.so
