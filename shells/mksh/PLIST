@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.1.1.1 2006/09/15 13:00:37 joerg Exp $
+@comment $NetBSD$
 bin/mksh
-man/man1/mksh.1
+man/cat1/mksh.0
 share/examples/mksh/dot.mkshrc
