@@ -1,0 +1,8 @@
+$NetBSD: $
+
+Please read the general README file as well.
+
+==========================================================================
+
+Most users will not need to run the bootstrap script as all supported 
+versions of Minix3 come with pkgsrc pre-bootstrapped.
