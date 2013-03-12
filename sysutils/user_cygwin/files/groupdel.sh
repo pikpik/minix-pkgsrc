@@ -1,7 +1,7 @@
 #!/bin/bash
-# $NetBSD$
+# $NetBSD: groupdel.sh,v 1.1 2013/03/06 12:37:16 obache Exp $
 
-export PATH=/bin:$PATH
+export PATH=/bin:"$(/bin/cygpath -S)"
 
 show_usage () {
 	echo "usage: $0 [-v] group" >&2

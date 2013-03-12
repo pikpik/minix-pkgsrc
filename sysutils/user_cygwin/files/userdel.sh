@@ -1,7 +1,7 @@
 #!/bin/bash
-# $NetBSD: userdel.sh,v 1.1 2013/03/06 12:37:16 obache Exp $
+# $NetBSD: userdel.sh,v 1.2 2013/03/07 12:25:06 obache Exp $
 
-export PATH=/bin:$PATH
+export PATH=/bin:"$(/bin/cygpath -S)"
 
 show_usage () {
 	echo "usage: $0 [-rv] user" >&2
