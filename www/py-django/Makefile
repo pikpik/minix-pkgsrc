@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.38 2012/12/13 08:03:20 adam Exp $
+# $NetBSD: Makefile,v 1.39 2013/02/23 17:00:19 adam Exp $
 
-DJANGOVERS=	1.4.5
+DJANGOVERS=	1.5
 DISTNAME=	Django-${DJANGOVERS}
 PKGNAME=	${PYPKGPREFIX}-django-${DJANGOVERS}
 CATEGORIES=	www python
-MASTER_SITES=	http://www.djangoproject.com/m/releases/1.4/
+MASTER_SITES=	http://www.djangoproject.com/m/releases/1.5/
 
 MAINTAINER=	joerg@NetBSD.org
 HOMEPAGE=	http://www.djangoproject.com/
@@ -18,6 +18,7 @@ PLIST_SUBST+=	PYVERSSUFFIX=${PYVERSSUFFIX:Q}
 USE_LANGUAGES=		# empty
 REPLACE_PYTHON=		${WRKSRC}/django/bin/*.py
 REPLACE_PYTHON+=	${WRKSRC}/django/bin/profiling/*.py
+REPLACE_PYTHON+=	${WRKSRC}/django/contrib/admin/bin/*.py
 REPLACE_PYTHON+=	${WRKSRC}/django/contrib/admin/static/admin/js/*.py
 REPLACE_PYTHON+=	${WRKSRC}/django/conf/project_template/*.py
 
