@@ -226,11 +226,17 @@ security/pscan
 security/rats
 security/sudo
 shells/bash
+shells/bash-completion
 shells/bash2
+shells/bash2-doc
 shells/mksh
 shells/mudsh
 shells/nologinmsg
+shells/osh
 shells/pdksh
+shells/posh
+shells/standalone-tcsh
+shells/static-tcsh
 shells/tcsh
 shells/zsh
 sysutils/bchunk
