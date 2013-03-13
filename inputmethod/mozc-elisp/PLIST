@@ -1,0 +1,4 @@
+@comment $NetBSD$
+bin/mozc_emacs_helper
+${EMACS_LISPPREFIX}/mozc.el
+${EMACS_LISPPREFIX}/mozc.elc

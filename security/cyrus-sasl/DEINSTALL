@@ -1,8 +1,8 @@
 #!/bin/sh
 #
-# $NetBSD: DEINSTALL,v 1.8 2006/04/13 21:32:40 wiz Exp $
+# $NetBSD: DEINSTALL,v 1.9 2006/04/18 17:41:30 jlam Exp $
 
-SASLDB=@PKG_SYSCONFDIR@/sasldb.db
+SASLDB=@PKG_SYSCONFDIR@/sasldb@DBEXT@
 
 case ${STAGE} in
 POST-DEINSTALL)

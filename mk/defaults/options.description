@@ -462,6 +462,7 @@ nas			Enable usage of the Network Audio System.
 ncurses			Enable ncurses support.
 ncursesw		Enable wide character ncurses support.
 ndb-cluster		Build NDB Cluster support.
+ndbm			Use New Database Manager (ndbm).
 ndiff			Enable tool to compare Nmap scans.
 nextstep		Enable Cocoa or GNUstep support.
 nfdump-ftconv		Build the flow-tools to nfdump converter.
@@ -594,9 +595,12 @@ squid-backend-aufs	Enable use of with Posix AIO.
 squid-backend-coss	Enable use of COSS I/O with Posix AIO.
 squid-backend-diskd	Enable use of diskd process to write to cache.
 squid-backend-null	Enable use of null backend; using only memory.
+squid-backend-rock	Enable use of rock backend; database-style storage.
 squid-backend-ufs	Enable use of UFS (Unix File System).
 squid-carp		Enable use of CARP (Cache Array Routing Protocol).
 squid-ipf		Enable use of transparent proxy with IP Filter.
+squid-ipfw		Enable use of transparent proxy with IPFW.
+squid-kerberos-helper	Enable use of Kerberos helper support.
 squid-ldap-helper	Enable use of LDAP helper support.
 squid-netfilter		Enable use of transparent proxy with Linux Net Filter.
 squid-pam-helper	Enable use of PAM helper support.
