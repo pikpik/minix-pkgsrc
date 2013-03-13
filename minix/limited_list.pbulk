@@ -231,6 +231,7 @@ shells/mksh
 shells/mudsh
 shells/nologinmsg
 shells/pdksh
+shells/tcsh
 shells/zsh
 sysutils/bchunk
 sysutils/cpuburn

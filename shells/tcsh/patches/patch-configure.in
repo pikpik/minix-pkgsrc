@@ -1,0 +1,15 @@
+--- configure.in.orig	Mon Feb 13 16:33:50 2012
++++ configure.in	Wed Mar 13 13:25:08 2013
+@@ -99,6 +99,12 @@
+     tcsh_config_file=sysV88
+   ;;
+ 
++  ## Minix systems
++  *-*-minix*)
++    tcsh_config_file=minix
++    LDFLAGS="-lcompat_minix -lminlib"
++  ;;
++
+   ## NetBSD systems
+   *-*-netbsd*)
+     tcsh_config_file=bsd4.4
