@@ -6,6 +6,7 @@ include/libgsf-1/gsf/gsf-blob.h
 include/libgsf-1/gsf/gsf-clip-data.h
 include/libgsf-1/gsf/gsf-doc-meta-data.h
 include/libgsf-1/gsf/gsf-docprop-vector.h
+include/libgsf-1/gsf/gsf-fwd.h
 include/libgsf-1/gsf/gsf-impl-utils.h
 include/libgsf-1/gsf/gsf-infile-impl.h
 include/libgsf-1/gsf/gsf-infile-msole.h
@@ -78,7 +79,6 @@ share/gtk-doc/html/gsf/gsf-memory.html
 share/gtk-doc/html/gsf/gsf-metadata.html
 share/gtk-doc/html/gsf/gsf-users.html
 share/gtk-doc/html/gsf/gsf-utils.html
-share/gtk-doc/html/gsf/gsf.devhelp
 share/gtk-doc/html/gsf/gsf.devhelp2
 share/gtk-doc/html/gsf/history.html
 share/gtk-doc/html/gsf/home.png

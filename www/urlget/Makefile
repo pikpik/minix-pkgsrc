@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.12 2009/10/29 22:29:16 tnn Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/28 06:31:07 asau Exp $
 #
 
-DISTNAME=		urlget-1.4
+DISTNAME=		urlget-1.5
 CATEGORIES=		www
-MASTER_SITES=		ftp://ftp.gw.com/pub/people/kim/
+MASTER_SITES=		http://oss.gw.com/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Simple command-line tool to retrieve an HTTP URL
@@ -16,8 +16,8 @@ BUILD_TARGET=		svr4
 BUILD_TARGET=		bsd
 .endif
 INSTALL_TARGET=		inst-all
-INSTALL_MAKE_FLAGS+=	DEST=${DESTDIR}${PREFIX}	\
-			  MANDIR=${DESTDIR}/${PREFIX}/${PKGMANDIR}/man1
+INSTALL_MAKE_FLAGS+=	DEST=${DESTDIR}${PREFIX}
+INSTALL_MAKE_FLAGS+=	MANDIR=${DESTDIR}/${PREFIX}/${PKGMANDIR}/man1
 
 INSTALLATION_DIRS=	bin ${PKGMANDIR}/man1
 

@@ -1,10 +1,9 @@
-# $NetBSD: Makefile,v 1.15 2011/03/17 22:00:48 zafer Exp $
+# $NetBSD: Makefile,v 1.17 2013/03/14 15:49:10 kim Exp $
 #
 
-DISTNAME=		sdist-1.7
-PKGREVISION=		1
+DISTNAME=		sdist-1.9
 CATEGORIES=		net
-MASTER_SITES=		# ftp://ftp.gw.com/pub/people/kim/
+MASTER_SITES=		http://oss.gw.com/people/kim/
 
 MAINTAINER=		kim@tac.nyc.ny.us
 COMMENT=		Invoke rdist to distribute files to a set of hosts
@@ -20,14 +19,15 @@ SDIST_PAWD?=		pwd
 
 BUILD_DEFS+=		SDIST_PAWD
 
-INSTALLATION_DIRS=	sbin ${PKGMANDIR}/man8
-NO_CONFIGURE=		yes
-BUILD_MAKE_FLAGS+=	PREFIX=${PREFIX} PAWD=${SDIST_PAWD}
-INSTALL_MAKE_FLAGS+=	PREFIX=${DESTDIR}${PREFIX}
+EGDIR=			share/examples/${PKGBASE}
 
-SUBST_CLASSES+=		manpath
-SUBST_STAGE.manpath=	post-extract
-SUBST_FILES.manpath=	Makefile
-SUBST_SED.manpath=	-e 's,/man/,/${PKGMANDIR}/,'
+CONF_FILES=		${PREFIX}/${EGDIR}/${PKGBASE}.conf \
+			${PKG_SYSCONFDIR}/${PKGBASE}.conf
+
+INSTALLATION_DIRS=	sbin ${PKGMANDIR}/man8 ${EGDIR}
+NO_CONFIGURE=		yes
+BUILD_MAKE_FLAGS+=	PAWD=${SDIST_PAWD}
+INSTALL_MAKE_FLAGS+=	EGDIR=${EGDIR}
+MAKE_FLAGS+=		PREFIX=${PREFIX}
 
 .include "../../mk/bsd.pkg.mk"

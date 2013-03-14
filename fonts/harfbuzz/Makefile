@@ -1,7 +1,7 @@
-# $NetBSD: Makefile,v 1.7 2013/01/21 13:54:11 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2013/02/16 11:19:37 wiz Exp $
 
 DISTNAME=	harfbuzz-0.9.12
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.freedesktop.org/software/harfbuzz/release/
 EXTRACT_SUFX=	.tar.bz2
@@ -23,6 +23,7 @@ LDFLAGS.OpenBSD+=	-lz
 
 .include "../../devel/glib2/buildlink3.mk"
 .include "../../devel/zlib/buildlink3.mk"
-.include "../../graphics/cairo/buildlink3.mk"
+#cairo is only needed for some cmd line utility
+#.include "../../graphics/cairo/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

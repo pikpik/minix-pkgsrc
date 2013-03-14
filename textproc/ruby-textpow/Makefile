@@ -1,10 +1,10 @@
-# $NetBSD: Makefile,v 1.2 2010/09/10 08:41:49 taca Exp $
+# $NetBSD: Makefile,v 1.3 2012/09/16 11:35:39 taca Exp $
 
-DISTNAME=	textpow-1.3.0
+DISTNAME=	textpow-1.3.1
 CATEGORIES=	textproc
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
-HOMEPAGE=	http://textpow.rubyforge.org/
+HOMEPAGE=	https://github.com/grosser/textpow/
 COMMENT=	Library to parse and process Textmate bundles
 LICENSE=	mit
 

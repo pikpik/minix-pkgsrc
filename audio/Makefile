@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.477 2013/01/08 09:49:11 wiz Exp $
+# $NetBSD: Makefile,v 1.479 2013/03/14 13:42:26 wiz Exp $
 #
 
 COMMENT=	Audio tools
@@ -347,6 +347,7 @@ SUBDIR+=	portaudio-devel
 SUBDIR+=	pulseaudio
 SUBDIR+=	py-ao
 SUBDIR+=	py-audiotools
+SUBDIR+=	py-beets
 SUBDIR+=	py-cddb
 SUBDIR+=	py-daap
 SUBDIR+=	py-dynampd
@@ -358,6 +359,7 @@ SUBDIR+=	py-libmtag
 SUBDIR+=	py-mad
 SUBDIR+=	py-mpd
 SUBDIR+=	py-musicbrainz
+SUBDIR+=	py-musicbrainz-ngs
 SUBDIR+=	py-musique
 SUBDIR+=	py-mutagen
 SUBDIR+=	py-ogg

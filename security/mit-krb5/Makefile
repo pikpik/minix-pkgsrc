@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.65 2013/02/28 14:19:36 tez Exp $
+# $NetBSD: Makefile,v 1.66 2013/03/13 12:35:40 adam Exp $
 
 DISTNAME=	krb5-1.10.4
 PKGNAME=	mit-${DISTNAME}
@@ -46,6 +46,7 @@ CONFIGURE_ARGS+=	--disable-thread-support
 CONFIGURE_ARGS+=	--without-tcl
 CONFIGURE_ARGS+=	--enable-pkgsrc-libtool
 MAKE_ENV+=		ROOT_USER=${ROOT_USER}
+LIBS.SunOS=		-lrt
 
 PATCH_DIST_ARGS=	-d ${WRKSRC} -p2
 
