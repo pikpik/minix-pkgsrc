@@ -215,6 +215,7 @@ print/ghostscript
 print/libpaper
 security/bcrypt
 security/crypto++
+security/john
 security/libgcrypt
 security/libgpg-error
 security/mozilla-rootcerts
