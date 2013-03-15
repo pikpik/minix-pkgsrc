@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.24 2013/02/06 23:21:02 jperkin Exp $
+# $NetBSD: Makefile,v 1.25 2013/02/15 11:54:02 obache Exp $
 
 DISTNAME=	thrift-${THRIFT_VERSION}
 PKGNAME=	libthrift-${THRIFT_VERSION}
@@ -23,6 +23,7 @@ CONFIGURE_ENV+=		LEXLIB=""
 
 WRKSRC=		${WRKDIR}/thrift-${THRIFT_VERSION}
 THRIFT_VERSION=	0.7.0
+TEST_TARGET=	check
 
 pre-build:
 	${CHMOD} 0755 ${WRKSRC}/lib/erl/rebar

@@ -1,6 +1,7 @@
-# $NetBSD: Makefile,v 1.78 2012/12/16 11:16:38 wiz Exp $
+# $NetBSD: Makefile,v 1.79 2013/03/14 19:32:31 drochner Exp $
 
 DISTNAME=	fontconfig-2.10.91
+PKGREVISION=	1
 CATEGORIES=	fonts
 MASTER_SITES=	http://www.fontconfig.org/release/
 

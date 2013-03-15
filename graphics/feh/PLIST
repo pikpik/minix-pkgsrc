@@ -5,6 +5,7 @@ bin/gen-cam-menu
 man/man1/feh-cam.1
 man/man1/feh.1
 man/man1/gen-cam-menu.1
+share/applications/feh.desktop
 share/doc/feh/AUTHORS
 share/doc/feh/ChangeLog
 share/doc/feh/README

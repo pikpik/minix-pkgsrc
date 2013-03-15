@@ -1,4 +1,4 @@
-@comment $NetBSD: PLIST,v 1.5 2011/12/10 13:00:56 obache Exp $
+@comment $NetBSD$
 ${PYSITELIB}/${EGG_FILE}
 ${PYSITELIB}/mutagen/__init__.py
 ${PYSITELIB}/mutagen/__init__.pyc
@@ -51,6 +51,9 @@ ${PYSITELIB}/mutagen/ogg.pyo
 ${PYSITELIB}/mutagen/oggflac.py
 ${PYSITELIB}/mutagen/oggflac.pyc
 ${PYSITELIB}/mutagen/oggflac.pyo
+${PYSITELIB}/mutagen/oggopus.py
+${PYSITELIB}/mutagen/oggopus.pyc
+${PYSITELIB}/mutagen/oggopus.pyo
 ${PYSITELIB}/mutagen/oggspeex.py
 ${PYSITELIB}/mutagen/oggspeex.pyc
 ${PYSITELIB}/mutagen/oggspeex.pyo

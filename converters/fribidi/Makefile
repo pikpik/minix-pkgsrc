@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.17 2012/10/03 00:20:11 asau Exp $
+# $NetBSD: Makefile,v 1.19 2013/03/15 18:40:53 drochner Exp $
 #
 
 DISTNAME=		fribidi-0.19.5
+PKGREVISION=		1
 CATEGORIES=		converters
 MASTER_SITES=		http://fribidi.org/download/
 LICENSE=		gnu-gpl-v2
@@ -18,7 +19,7 @@ REPLACE_FILES.bash=	run.tests
 
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
-USE_TOOLS+=		pkg-config
+USE_TOOLS+=		pkg-config gmake
 
 PKGCONFIG_OVERRIDE=	fribidi.pc.in
 
