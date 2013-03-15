@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.29 2012/06/16 19:28:19 plunky Exp $
+# $NetBSD: Makefile,v 1.30 2012/10/03 11:24:42 asau Exp $
 #
 
 DISTNAME=	obexapp-1.4.15
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	http://people.freebsd.org/~emax/obexapp/
 
