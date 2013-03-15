@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.928 2013/03/14 19:02:04 kleink Exp $
+$NetBSD: CHANGES-2013,v 1.931 2013/03/14 21:53:41 gls Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1305,3 +1305,6 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated graphics/wxsvg to 1.1.13 [drochner 2013-03-14]
 	Updated fonts/fontconfig to 2.10.91 [drochner 2013-03-14]
 	Updated devel/libffi to 3.0.12 [drochner 2013-03-14]
+	Updated devel/reposurgeon to 2.26 [ryoon 2013-03-14]
+	Removed security/py-ssh [gls 2013-03-14]
+	Added devel/libexecinfo version 1.1 [asau 2013-03-15]
