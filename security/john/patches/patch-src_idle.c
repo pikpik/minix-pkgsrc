@@ -4,7 +4,7 @@
  	do {
  		if (event_pending) break;
  		last_check = current;
-+#ifdef __minix
++#ifndef __minix
  		sched_yield();
 +#endif
  		yield_calls++;

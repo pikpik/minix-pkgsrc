@@ -6,4 +6,4 @@ Size (john-1.7.6.tar.gz) = 832790 bytes
 SHA1 (patch-aa) = c7f027cec0ee565312fd4417ded8fe43005b01d1
 SHA1 (patch-ab) = 4f8c9e1bba14f64b651c6d08337f004a3e278e44
 SHA1 (patch-ac) = 8c123939d2b4939e172ae32cd90ba2950d907dd8
-SHA1 (patch-src_idle.c) = 25022b04cafb709684b6d70f1e28604ee7fd9b8e
+SHA1 (patch-src_idle.c) = f1ca6c4f67af5e9185ec07adea0a2698e408a07b
