@@ -53,6 +53,9 @@ my_help() {
 	echo "  Wipe current jail, if any, build a new jail,"
 	echo "  and run a full bulk build in it:"
 	echo "  $0 -A"
+	echo "  Keep current jail, retry the --build phase, skipping packages"
+	echo "  that built successfully in the last run:"
+	echo "  $0 -R"
 }
 
 makejail() {
@@ -109,6 +112,17 @@ makejailpkgsrc() {
 	return 0
 }
 
+retrybuild() {
+	LOGFILE=jail.log
+(
+	echo "Redirecting output to $LOGFILE"
+	exec 2>&1
+	set -x
+	echo " * Retrying the --build phase on existing jail."
+	mychroot "cd `dirname $PBULK_SH` && sh `basename $PBULK_SH` --jailed --build"
+) | tee $LOGFILE
+	return 0
+}
 
 jailall() {
 	LOGFILE=jail.log
@@ -138,7 +152,7 @@ else	echo rsync not found
 	exit 1
 fi
 
-while getopts "t:L:u:d:Ahr:cb:" opt
+while getopts "t:L:u:d:ARhr:cb:" opt
 do
 	case $opt in
 	b) BRANCH=$OPTARG ;;
@@ -148,6 +162,7 @@ do
 	L) PACKAGEURL=$OPTARG; RELOPTS="$RELOPTS -L$PACKAGEURL";;
 	d) JAILDEV=$OPTARG; initvars; ;;
 	A) jailall; ;;
+	R) retrybuild; ;;
 	*) my_help; exit 1; ;;
 	esac
 done
