@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.7 2012/10/03 21:59:03 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/28 06:30:58 asau Exp $
 #
 
 .include "../../www/phraseanet/Makefile.common"
 PKGNAME=        phraseanet-${VERS}
-PKGREVISION=	1
+PKGREVISION=	2
 
 USE_TOOLS+=	pax
 

@@ -1,0 +1,5 @@
+@comment $NetBSD$
+bin/rabbiter
+${RUBY_VENDORLIB}/rabbiter.rb
+${RUBY_VENDORLIB}/rabbiter/gettext.rb
+${RUBY_VENDORLIB}/rabbiter/version.rb

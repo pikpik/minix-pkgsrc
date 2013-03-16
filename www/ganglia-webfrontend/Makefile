@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.14 2012/04/14 16:25:11 adam Exp $
+# $NetBSD: Makefile,v 1.15 2012/10/28 06:30:16 asau Exp $
 #
 
 DISTNAME=	ganglia-3.1.2
 PKGNAME=	ganglia-webfrontend-3.1.2
-PKGREVISION=	1
+PKGREVISION=	2
 CATEGORIES=	www parallel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=ganglia/}
 

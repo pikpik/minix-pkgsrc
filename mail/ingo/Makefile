@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2012/02/23 11:24:29 obache Exp $
+# $NetBSD: Makefile,v 1.20 2013/02/22 19:59:06 shattered Exp $
 
 DISTNAME=	ingo-h3-${INGOVER}
 PKGNAME=	ingo-${INGOVER}
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	http://ftp.horde.org/pub/ingo/ \
 		ftp://ftp.horde.org/pub/ingo/

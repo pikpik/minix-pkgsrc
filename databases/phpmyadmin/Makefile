@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.111 2013/02/13 19:03:56 tron Exp $
+# $NetBSD: Makefile,v 1.112 2013/02/18 19:01:37 tron Exp $
 
 DISTNAME=	phpMyAdmin-${DIST_VERSION}-all-languages
 PKGNAME=	phpmyadmin-${DIST_VERSION:S/-//}
+PKGREVISION=	1
 CATEGORIES=	databases www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=phpmyadmin/}
 EXTRACT_SUFX=	.tar.xz

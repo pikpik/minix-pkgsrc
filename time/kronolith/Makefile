@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.19 2012/02/23 12:05:50 obache Exp $
+# $NetBSD: Makefile,v 1.20 2012/10/08 13:04:20 asau Exp $
 
 DISTNAME=	kronolith-h3-${KRONOLITHVER}
 PKGNAME=	kronolith-${KRONOLITHVER}
+PKGREVISION=	1
 CATEGORIES=	www time
 MASTER_SITES=	http://ftp.horde.org/pub/kronolith/ \
 		ftp://ftp.horde.org/pub/kronolith/

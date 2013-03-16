@@ -1,7 +1,8 @@
-# $NetBSD: Makefile,v 1.58 2012/02/23 11:04:09 obache Exp $
+# $NetBSD: Makefile,v 1.1.1.1 2013/01/27 16:35:06 bouyer Exp $
 
 DISTNAME=	mimp-h3-${MIMPVER}
 PKGNAME=	mimp-${MIMPVER}
+PKGREVISION=	1
 CATEGORIES=	mail www
 MASTER_SITES=	http://ftp.horde.org/pub/mimp/ \
 		ftp://ftp.horde.org/pub/mimp/

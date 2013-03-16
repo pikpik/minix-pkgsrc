@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.10 2013/02/11 13:01:12 taca Exp $
+# $NetBSD: Makefile,v 1.11 2013/02/28 10:52:24 obache Exp $
 
-DISTNAME=	sinatra-1.3.5
+DISTNAME=	sinatra-1.3.6
 CATEGORIES=	www
 
 MAINTAINER=	obache@NetBSD.org
