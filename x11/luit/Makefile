@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.7 2012/06/03 18:00:47 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/29 05:06:39 asau Exp $
 #
 
 DISTNAME=		luit-1.1.1
@@ -7,7 +7,7 @@ MASTER_SITES=		${MASTER_SITE_XORG:=app/}
 EXTRACT_SUFX=		.tar.bz2
 
 MAINTAINER=		joerg@NetBSD.org
-HOMEPAGE=		http://xorg.freedesktop.org/
+HOMEPAGE=		http://invisible-island.net/luit/
 COMMENT=		Locale and ISO 2022 support for Unicode terminals
 LICENSE=		mit
 

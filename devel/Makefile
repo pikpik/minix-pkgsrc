@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1715 2013/03/14 04:08:02 obache Exp $
+# $NetBSD: Makefile,v 1.1716 2013/03/14 22:29:47 asau Exp $
 #
 
 COMMENT=	Development utilities
@@ -1183,6 +1183,7 @@ SUBDIR+=	p5-Test-MinimumVersion
 SUBDIR+=	p5-Test-Mock-LWP
 SUBDIR+=	p5-Test-MockModule
 SUBDIR+=	p5-Test-MockObject
+SUBDIR+=	p5-Test-More-Behaviour
 SUBDIR+=	p5-Test-Most
 SUBDIR+=	p5-Test-NoWarnings
 SUBDIR+=	p5-Test-Object
