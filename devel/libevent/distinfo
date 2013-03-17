@@ -3,3 +3,7 @@ $NetBSD: distinfo,v 1.27 2012/07/13 15:52:54 fhajny Exp $
 SHA1 (libevent-2.0.21-stable.tar.gz) = 3e6674772eb77de24908c6267c698146420ab699
 RMD160 (libevent-2.0.21-stable.tar.gz) = 7345c8fa2d70ee3e5555b5911d9d8cb97614d644
 Size (libevent-2.0.21-stable.tar.gz) = 850772 bytes
+SHA1 (patch-configure.in) = 45f48c5d38074aeb6604e4b824fb598f0c8edf89
+SHA1 (patch-test_bench.c) = ebe56685ce60c97309c00a6761c43096d29a4603
+SHA1 (patch-test_bench_cascade.c) = 573bddfdef58f995951a47e3acb2775d7c3ed0b0
+SHA1 (patch-test_bench_httpclient.c) = bf298a2b5d8d45dcb256eb2381b17f7cac70f884

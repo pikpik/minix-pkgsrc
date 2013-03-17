@@ -12,6 +12,7 @@ LICENSE=	modified-bsd
 
 CONFLICTS+=	libev<3.9nb1
 
+USE_TOOLS+=		autoconf
 USE_LIBTOOL=		yes
 GNU_CONFIGURE=		yes
 PKGCONFIG_OVERRIDE+=	libevent_openssl.pc.in
@@ -32,6 +33,9 @@ CPPFLAGS.SunOS+=	-D__EXTENSIONS__
 CONFIGURE_ENV+=		ac_cv_func_strtoll=yes
 CPPFLAGS+=		-Dstrtoll=__strtoll
 .endif
+
+pre-configure:
+	(cd ${WRKSRC} && autoconf)
 
 .include "../../lang/python/application.mk"
 .include "../../security/openssl/buildlink3.mk"
