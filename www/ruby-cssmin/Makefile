@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.2 2008/09/15 15:33:27 taca Exp $
+# $NetBSD: Makefile,v 1.3 2010/09/10 13:01:58 taca Exp $
 
-DISTNAME=	cssmin-1.0.2
+DISTNAME=	cssmin-1.0.3
 CATEGORIES=	www
 
 MAINTAINER=	pkgsrc-users@NetBSD.org

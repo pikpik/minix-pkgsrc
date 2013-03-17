@@ -17,5 +17,5 @@ include/primitives/opa_gcc_sicortex.h
 include/primitives/opa_nt_intrinsics.h
 include/primitives/opa_sun_atomic_ops.h
 include/primitives/opa_unsafe.h
-lib/libopa.a
-share/doc/openpa/README
+lib/libopa.la
+lib/pkgconfig/openpa.pc

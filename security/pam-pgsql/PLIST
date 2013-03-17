@@ -1,0 +1,7 @@
+@comment $NetBSD$
+lib/security/pam_pgsql.la
+share/doc/pam-pgsql/CHANGELOG
+share/doc/pam-pgsql/COPYRIGHT
+share/doc/pam-pgsql/CREDITS
+share/doc/pam-pgsql/README
+share/doc/pam-pgsql/sample.sql
