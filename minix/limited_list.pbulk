@@ -69,6 +69,7 @@ devel/heirloom-libcommon
 devel/lcov
 devel/lemon
 devel/libelf
+devel/libevent
 devel/libffi
 devel/libgetopt
 devel/libiberty
