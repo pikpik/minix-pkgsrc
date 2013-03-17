@@ -139,6 +139,8 @@ MAKE_ENV+=		lt_cv_path_SED=${TOOLS_SED}
 
 CPPFLAGS+=		-I${BUILDLINK_DIR}/include
 CFLAGS+=		-I${BUILDLINK_DIR}/include
+CPPFLAGS.Minix+=	-D_NETBSD_SOURCE
+CFLAGS.Minix+=		-D_NETBSD_SOURCE
 
 # Somone should fix this so it will match the NetBSD system compiler
 #.if ${OPSYS} == "NetBSD"
