@@ -1,4 +1,4 @@
-# $NetBSD: buildlink3.mk,v 1.45 2013/02/06 23:21:21 jperkin Exp $
+# $NetBSD: buildlink3.mk,v 1.46 2013/02/16 11:17:59 wiz Exp $
 
 BUILDLINK_TREE+=	ImageMagick
 
@@ -16,7 +16,7 @@ pkgbase := ImageMagick
 .include "../../graphics/djvulibre-lib/buildlink3.mk"
 .endif
 .if !empty(PKG_BUILD_OPTIONS.ImageMagick:Mghostscript)
-.include "../../print/ghostscript/buildlink3.mk"
+.include "../../print/ghostscript/ghostscript.buildlink3.mk"
 .endif
 .if !empty(PKG_BUILD_OPTIONS.ImageMagick:Mjasper)
 .include "../../graphics/jasper/buildlink3.mk"

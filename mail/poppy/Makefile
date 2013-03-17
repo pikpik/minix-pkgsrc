@@ -1,8 +1,8 @@
-# $NetBSD: Makefile,v 1.11 2012/10/03 21:56:33 wiz Exp $
+# $NetBSD: Makefile,v 1.12 2012/10/08 12:19:27 asau Exp $
 #
 
-DISTNAME=	poppy-3.1
-PKGREVISION=	1
+DISTNAME=	poppy-4.01
+#KGREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.cnpbagwell.com/
 

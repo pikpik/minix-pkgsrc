@@ -1,4 +1,4 @@
-# $NetBSD: options.mk,v 1.11 2011/05/13 12:55:39 abs Exp $
+# $NetBSD: options.mk,v 1.12 2012/10/23 10:24:05 wiz Exp $
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.ImageMagick
 PKG_SUPPORTED_OPTIONS=	x11 jasper djvu ghostscript wmf
@@ -30,7 +30,7 @@ CONFIGURE_ARGS+=	--without-djvu
 .endif
 
 .if !empty(PKG_OPTIONS:Mghostscript)
-.include "../../print/ghostscript/buildlink3.mk"
+.include "../../print/ghostscript/ghostscript.buildlink3.mk"
 CONFIGURE_ARGS+=	--with-gslib
 .else
 CONFIGURE_ARGS+=	--without-gslib

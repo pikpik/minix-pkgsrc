@@ -1,8 +1,7 @@
-# $NetBSD: Makefile,v 1.10 2012/10/03 21:58:28 wiz Exp $
+# $NetBSD: Makefile,v 1.11 2012/10/28 06:30:12 asau Exp $
 #
 
-DISTNAME=	calamaris-2.58
-PKGREVISION=	1
+DISTNAME=	calamaris-2.59
 CATEGORIES=	www
 MASTER_SITES=	http://cord.de/tools/squid/calamaris/
 
