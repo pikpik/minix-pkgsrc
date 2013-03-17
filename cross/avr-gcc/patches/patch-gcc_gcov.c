@@ -6,7 +6,7 @@ $NetBSD$
  
  #define STRING_SIZE 200
  
-+#ifdef _MINIX
++#ifdef __minix
 +#define block_t gcc_block_t
 +#endif
 +
