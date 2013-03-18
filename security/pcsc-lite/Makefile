@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.17 2013/01/08 22:51:39 pettai Exp $
+# $NetBSD: Makefile,v 1.18 2013/02/01 22:21:11 wiz Exp $
 #
 
 DISTNAME=	pcsc-lite-1.8.7
@@ -42,4 +42,5 @@ INSTALLATION_DIRS=	${EGDIR}
 
 .include "../../devel/libusb1/buildlink3.mk"
 .include "../../mk/dlopen.buildlink3.mk"
+.include "../../mk/pthread.buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
