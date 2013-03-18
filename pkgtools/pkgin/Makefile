@@ -36,6 +36,7 @@ USE_FEATURES=		nbcompat
 USE_TOOLS+=		nroff
 
 MAKE_ENV+=		MACHINE_ARCH=${MACHINE_ARCH}
+MAKE_ENV+=		PKG_TOOLS_BIN=${PKG_TOOLS_BIN}
 
 DEPENDS+=		pkg_install>=20110215:../../pkgtools/pkg_install
 
