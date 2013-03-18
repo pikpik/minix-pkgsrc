@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.249 2013/03/14 19:00:44 drochner Exp $
+# $NetBSD: Makefile,v 1.250 2013/03/16 04:05:40 taca Exp $
 
 COMMENT=	Mathematics
 
@@ -78,6 +78,7 @@ SUBDIR+=	dfftpack
 SUBDIR+=	dieharder
 SUBDIR+=	djbfft
 SUBDIR+=	eigen2
+SUBDIR+=	eigen3
 SUBDIR+=	eispack
 SUBDIR+=	ess
 SUBDIR+=	eukleides

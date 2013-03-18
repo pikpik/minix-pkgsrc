@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.4 2011/04/05 12:05:01 wiz Exp $
+# $NetBSD: Makefile,v 1.5 2012/10/08 09:57:41 asau Exp $
 #
 
-DISTNAME=	xdg-utils-1.0.2
-PKGREVISION=	2
+DISTNAME=	xdg-utils-1.1.0-rc1
+PKGNAME=	xdg-utils-1.1.0rc1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://portland.freedesktop.org/download/
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://portland.freedesktop.org/
