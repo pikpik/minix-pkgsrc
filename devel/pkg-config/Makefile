@@ -26,6 +26,10 @@ CONFLICTS=		pkgconfig-[0-9]*
 CONFIGURE_ARGS+=	--cache-file=/dev/null
 .endif
 
+.if ${OPSYS} == "Minix"
+USE_GNU_ICONV=yes
+.endif
+
 .if ${OPSYS} == "NetBSD"
 post-configure:
 	cd ${WRKSRC}/glib; \
