@@ -9,11 +9,10 @@ RENDERPROTO_BUILDLINK3_MK:=
 
 .if ${X11_TYPE} == "native" || ${X11_TYPE} == "monolithic"
 . include "../../mk/x11.buildlink3.mk"
-. if ${BUILTIN_X11_TYPE.native} == "XFree86" || \
-     ${BUILTIN_X11_TYPE.native} == "xorg" && \
-     empty(BUILTIN_X11_VERSION.xorg)
+#. if ${BUILTIN_X11_TYPE.native} == "XFree86" || ${BUILTIN_X11_TYPE.native} == "xorg"
+# && empty(BUILTIN_X11_VERSION.xorg)
 RENDERPROTO_RENDERPROTO9=1
-. endif
+#. endif
 .endif
 
 .if defined(RENDERPROTO_RENDERPROTO9)
