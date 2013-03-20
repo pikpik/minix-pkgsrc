@@ -75,6 +75,7 @@ SUBDIR+=	mail
 SUBDIR+=	math
 SUBDIR+=	mbone
 SUBDIR+=	meta-pkgs
+SUBDIR+=	minix
 SUBDIR+=	misc
 SUBDIR+=	multimedia
 SUBDIR+=	net
