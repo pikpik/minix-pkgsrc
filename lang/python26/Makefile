@@ -36,6 +36,7 @@ CONFIGURE_ARGS+=	--disable-shared
 .else
 CONFIGURE_ARGS+=	--with-threads
 CONFIGURE_ARGS+=	--enable-shared
+.endif
 .if ${PTHREAD_TYPE} == "pth"
 CONFIGURE_ARGS+=	--with-pth
 .endif
