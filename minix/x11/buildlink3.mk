@@ -1,6 +1,6 @@
 # $NetBSD: buildlink3.mk,v 1.18 2006/12/12 21:52:38 joerg Exp $
 
-BUILDLINK_DEPMETHOD.x11?=	build
+BUILDLINK_DEPMETHOD.x11?=	full
 BUILDLINK_TREE+=	x11
 
 .if !defined(_MINIX_X11)
