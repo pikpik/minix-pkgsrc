@@ -1,6 +1,7 @@
 @comment $NetBSD$
 bin/aria2c
 man/man1/aria2c.1
+man/pt/man1/aria2c.1
 man/ru/man1/aria2c.1
 share/doc/aria2/README
 share/doc/aria2/README.html

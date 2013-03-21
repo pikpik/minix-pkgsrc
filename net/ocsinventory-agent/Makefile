@@ -1,11 +1,12 @@
-# $NetBSD: Makefile,v 1.7 2012/10/03 21:56:58 wiz Exp $
+# $NetBSD: Makefile,v 1.8 2012/10/23 17:18:43 asau Exp $
 #
 VERS=			1.1.2.1
 PKGREVISION=		4
 DISTNAME=		Ocsinventory-Agent-${VERS}
 PKGNAME=		ocsinventory-agent-${VERS}
 CATEGORIES=		net
-MASTER_SITES=		http://launchpad.net/ocsinventory-unix-agent/stable-1.1.2/ocsinventory-unix-agent-1.1.2.1/+download/
+MASTER_SITES=		http://launchpad.net/ocsinventory-unix-agent/stable-1.1.2/ocsinventory-unix-agent-1.1.2.1/+download/ \
+			http://launchpadlibrarian.net/57513674/
 
 MAINTAINER=		bouyer@NetBSD.org
 HOMEPAGE=		http://www.ocsinventory-ng.org/

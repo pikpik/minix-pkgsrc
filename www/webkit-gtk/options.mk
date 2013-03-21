@@ -1,9 +1,16 @@
-# $NetBSD: options.mk,v 1.1 2010/04/12 02:26:39 obache Exp $
+# $NetBSD: options.mk,v 1.2 2013/02/02 12:00:20 jmcneill Exp $
 #
 
 PKG_OPTIONS_VAR=	PKG_OPTIONS.webkit-gtk
 PKG_SUPPORTED_OPTIONS=	webkit-jit debug
-PKG_SUGGESTED_OPTIONS=	webkit-jit
+PKG_SUGGESTED_OPTIONS=
+
+.include "../../mk/bsd.prefs.mk"
+
+# XXX JIT produces invalid code on NetBSD/i386
+.if empty(MACHINE_PLATFORM:MNetBSD-*-i386)
+PKG_SUGGESTED_OPTIONS+= webkit-jit
+.endif
 
 .include "../../mk/bsd.options.mk"
 

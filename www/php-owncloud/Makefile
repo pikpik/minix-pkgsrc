@@ -1,11 +1,10 @@
-# $NetBSD: Makefile,v 1.28 2013/03/04 21:57:22 wiz Exp $
+# $NetBSD: Makefile,v 1.31 2013/03/19 14:33:11 taca Exp $
 #
 
-DISTNAME=	owncloud-4.5.7
+DISTNAME=	owncloud-5.0.0
 PKGNAME=	${PHP_PKG_PREFIX}-${DISTNAME}
-PKGREVISION=	1
 CATEGORIES=	www
-MASTER_SITES=	http://owncloud.org/releases/
+MASTER_SITES=	http://download.owncloud.org/community/
 EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	ryoon@NetBSD.org
@@ -49,8 +48,8 @@ FILES_SUBST+=	WWWGRP=${APACHE_GROUP} WWWOWN=${APACHE_USER} \
 		OC_DIR=${OC_DIR}
 
 do-install:
-	cd ${WRKDIR} && pax -rw -pmp owncloud \
-		${DESTDIR}${PREFIX}/share
+	cd ${WRKDIR} && ${FIND} owncloud -type f \! -name '*.orig' -print | \
+		pax -rw -pmp ${DESTDIR}${PREFIX}/share
 
 .include "../../lang/php/phpversion.mk"
 .include "../../mk/bsd.pkg.mk"

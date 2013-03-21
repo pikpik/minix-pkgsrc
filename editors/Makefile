@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.160 2013/02/17 07:37:32 dholland Exp $
+# $NetBSD: Makefile,v 1.162 2013/03/21 00:13:45 mspo Exp $
 #
 
 COMMENT=	Editors

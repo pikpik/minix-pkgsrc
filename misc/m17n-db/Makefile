@@ -1,9 +1,9 @@
-# $NetBSD: Makefile,v 1.17 2012/10/13 01:35:44 obache Exp $
+# $NetBSD: Makefile,v 1.18 2013/01/12 06:59:05 obache Exp $
 #
 
 DISTNAME=	m17n-db-1.6.4
 CATEGORIES=	misc
-MASTER_SITES=	http://download.savannah.gnu.org/releases//m17n/
+MASTER_SITES=	http://download.savannah.gnu.org/releases/m17n/
 
 MAINTAINER=	obache@NetBSD.org
 HOMEPAGE=	http://www.nongnu.org/m17n/

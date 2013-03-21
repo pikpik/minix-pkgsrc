@@ -1,0 +1,6 @@
+@comment $NetBSD$
+bin/hwloc-gather-topology
+include/hwloc/glibc-sched.h
+include/hwloc/linux-libnuma.h
+include/hwloc/linux.h
+man/man1/hwloc-gather-topology.1
