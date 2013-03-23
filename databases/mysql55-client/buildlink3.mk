@@ -1,12 +1,12 @@
-# $NetBSD: buildlink3.mk,v 1.3 2012/10/03 12:49:12 fhajny Exp $
+# $NetBSD: buildlink3.mk,v 1.4 2013/02/06 23:20:54 jperkin Exp $
 
 BUILDLINK_TREE+=	mysql-client
 
 .if !defined(MYSQL_CLIENT_BUILDLINK3_MK)
 MYSQL_CLIENT_BUILDLINK3_MK:=
 
-BUILDLINK_API_DEPENDS.mysql-client+=	mysql-client>=5.5.10
-BUILDLINK_ABI_DEPENDS.mysql-client+=	mysql-client>=5.5.29nb1
+BUILDLINK_API_DEPENDS.mysql-client+=	mysql-client>=5.5.10<5.6
+BUILDLINK_ABI_DEPENDS.mysql-client+=	mysql-client>=5.5.29nb1<5.6
 BUILDLINK_PKGSRCDIR.mysql-client?=	../../databases/mysql55-client
 BUILDLINK_INCDIRS.mysql-client?=	include/mysql
 BUILDLINK_LIBDIRS.mysql-client?=	lib
