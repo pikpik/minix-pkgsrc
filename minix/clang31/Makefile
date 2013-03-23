@@ -38,10 +38,7 @@ REPLACE_PYTHON=	utils/llvm-build/llvm-build \
 	tools/clang/utils/SummarizeErrors	\
 	tools/clang/utils/FindSpecRefs	\
 	tools/clang/tools/scan-build/set-xcode-analyzer	\
-	tools/clang/tools/scan-view/scan-view	\
-	klee/scripts/klee-gcc	\
-	klee/tools/ktest-tool/ktest-tool	\
-	klee/tools/klee-stats/klee-stats
+	tools/clang/tools/scan-view/scan-view
 
 # Avoid dependency on lang/gcc44
 MINIX_GCC_NODEP=yes
@@ -50,7 +47,7 @@ CONFLICTS+= clang-[0-9]*
 
 MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
-COMMENT=	c compiler: llvm, clang and klee packaged together
+COMMENT=	c compiler: llvm, clang
 DEPENDS+=       binutils>=2.17nb3:../../devel/binutils
 DEPENDS+=       compiler-rt>=3.1:../../minix/compiler-rt
 
@@ -69,7 +66,6 @@ INSTALLATION_DIRS=	bin lib libexec
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
-CXXFLAGS+= -D_POSIX_SOURCE
 CONFIGURE_ARGS+= --disable-threads
 CONFIGURE_ARGS+= --enable-optimized
 CONFIGURE_ARGS+= --disable-assertions
@@ -82,20 +78,12 @@ CONFIGURE_ARGS+= --disable-optimized
 
 SUBST_CLASSES+=         python
 SUBST_STAGE.python=     pre-configure
-SUBST_FILES.python=     klee/configure
 SUBST_SED.python=       -e "s,python -c ,${PYTHONBIN} -c ,"
 
 TEST_TARGET=	check unittests
 
-KLEE=${WRKDIR}/llvm/klee
-
 post-extract:
 	${MV} ${WRKDIR}/clang ${WRKDIR}/llvm/tools/clang
-	${MV} ${WRKDIR}/klee ${KLEE}
-
-post-build:
-	cd ${KLEE} && CPPFLAGS=-DUSE_KLEE_LIB_DIR=1 ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm --with-stp=${PREFIX}
-	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1 LLVMCC_OPTION=clang ENABLE_BUILT_CLANG=1
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${DESTDIR}${PREFIX}/bin/
@@ -113,7 +101,6 @@ post-install:
 	${MKDIR} ${DESTDIR}${PREFIX}/share	
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
 	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
-	cd ${KLEE} && gmake DESTDIR=${DESTDIR} install
 	touch ${DESTDIR}/${PREFIX}/bin/clang.dynok
 
 WRKSRC=			${WRKDIR}/llvm
@@ -121,5 +108,4 @@ WRKSRC=			${WRKDIR}/llvm
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
-.include "../../minix/stp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
