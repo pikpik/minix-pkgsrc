@@ -180,6 +180,7 @@ lang/tinyscheme
 lang/umb-scheme
 lang/wsbasic
 mail/mutt
+mail/mutt-devel
 mail/postfix
 math/bc
 math/mpcomplex
