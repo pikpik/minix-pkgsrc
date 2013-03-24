@@ -41,6 +41,16 @@ case $arg in
 "")
 	;;
 ######################################################################
+# Preserve the -Wl,--whole-archive / -Wl,--no-whole-archive arguments,
+# but also duplicate them into the list of libraries.  Someone may
+# want to mix static and dynamic linking.
+######################################################################
+-Wl,--whole-archive|-Wl,--no-whole-archive)
+	shquote "$arg"; arg="$shquoted"
+	cmd="$cmd $arg"
+	libs="$libs $arg"
+	;;
+######################################################################
 # Reduce command length by not appending options that we've already
 # seen.  We also ensure that all of the -l options come after the -L
 # options, and suppress consecutive repeated libraries.
