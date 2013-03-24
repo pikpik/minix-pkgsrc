@@ -105,6 +105,9 @@ post-install:
 
 WRKSRC=			${WRKDIR}/llvm
 
+MAKE_ENV+= WRAPPER_REORDER=no
+WRAPPER_REORDER=no
+
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
