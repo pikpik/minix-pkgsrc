@@ -90,6 +90,7 @@ devel/patch
 devel/patchutils
 devel/pcre
 devel/pkg-config
+devel/popt
 devel/pth
 devel/rcs
 devel/re2c
@@ -179,6 +180,7 @@ lang/tinyscheme
 lang/umb-scheme
 lang/wsbasic
 mail/mutt
+mail/mutt-devel
 mail/postfix
 math/bc
 math/mpcomplex

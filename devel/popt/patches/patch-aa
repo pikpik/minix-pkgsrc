@@ -1,8 +1,6 @@
-$NetBSD$
-
---- poptconfig.c.orig	2009-04-12 20:14:38.000000000 +0200
-+++ poptconfig.c
-@@ -42,7 +42,10 @@ extern int glob_pattern_p (const char *_
+--- poptconfig.c.orig	Wed May 20 13:18:07 2009
++++ poptconfig.c	Sat Mar 23 17:18:33 2013
+@@ -42,7 +42,10 @@
  /*@=declundef =exportheader =incondefs =protoparammatch =redecl =type @*/
  #endif	/* __LCLINT__ */
  
@@ -10,7 +8,7 @@ $NetBSD$
 +#if defined(__NetBSD__)
 +#include <sys/param.h>
 +#endif
-+#if !defined(__GLIBC__) && (!defined(__NetBSD__) || __NetBSD_Version__ < 599001100)
++#if !defined(__GLIBC__) && !defined(__minix) && (!defined(__NetBSD__) || __NetBSD_Version__ < 599001100)
  /* Return nonzero if PATTERN contains any metacharacters.
     Metacharacters can be quoted with backslashes if QUOTE is nonzero.  */
  static int
