@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.16 2012/10/06 14:25:19 asau Exp $
+# $NetBSD: Makefile,v 1.17 2013/02/17 19:18:04 dholland Exp $
 #
 
 DISTNAME=	tc-2.3.1
@@ -10,6 +10,8 @@ MASTER_SITES=	http://openlab.ring.gr.jp/tcode/resources/soft/
 MAINTAINER=	tech-pkg-ja@jp.NetBSD.org
 HOMEPAGE=	http://openlab.ring.gr.jp/tcode/tc2/index.html
 COMMENT=	T-Code driver for Emacs
+
+MAKE_JOBS_SAFE=	no
 
 .include "../../editors/emacs/modules.mk"
 

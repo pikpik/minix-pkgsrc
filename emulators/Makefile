@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.201 2013/02/17 10:29:01 wiz Exp $
+# $NetBSD: Makefile,v 1.202 2013/02/17 17:28:42 spz Exp $
 #
 
 COMMENT=	Emulators for other operating systems
@@ -110,7 +110,6 @@ SUBDIR+=	raine
 SUBDIR+=	simh
 SUBDIR+=	simulavr
 SUBDIR+=	ski
-SUBDIR+=	ski-bin
 SUBDIR+=	sms_sdl
 SUBDIR+=	snes9x
 SUBDIR+=	snes9x-gtk

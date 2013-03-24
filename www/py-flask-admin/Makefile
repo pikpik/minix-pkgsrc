@@ -1,6 +1,6 @@
-# $NetBSD: Makefile,v 1.1 2013/01/07 21:56:38 kleink Exp $
+# $NetBSD: Makefile,v 1.2 2013/01/09 19:02:43 kleink Exp $
 
-DISTNAME=	Flask-Admin-1.0.4
+DISTNAME=	Flask-Admin-1.0.5
 PKGNAME=	${PYPKGPREFIX}-${DISTNAME:tl}
 CATEGORIES=	www python
 MASTER_SITES=	http://pypi.python.org/packages/source/F/Flask-Admin/

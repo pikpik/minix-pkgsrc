@@ -1,4 +1,4 @@
-# $NetBSD: mozilla-common.mk,v 1.42 2013/01/22 14:14:56 wiz Exp $
+# $NetBSD: mozilla-common.mk,v 1.43 2013/03/10 17:27:27 ryoon Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 2.0.
 #
@@ -58,6 +58,12 @@ CONFIG_SUB_OVERRIDE+=		${MOZILLA_DIR}/js/ctypes/libffi/config.sub
 PYTHON_FOR_BUILD_ONLY=		yes
 .include "../../lang/python/application.mk"
 CONFIGURE_ENV+=		PYTHON=${PYTHONBIN:Q}
+
+SUBST_CLASSES+=		python
+SUBST_STAGE.python=	pre-configure
+SUBST_MESSAGE.python=	Fixing path to python.
+SUBST_FILES.python+=	media/webrtc/trunk/build/common.gypi
+SUBST_SED.python+=	-e 's,<!(python,<!(${PYTHONBIN},'
 
 # When MACHINAE_ARCH == "arm", linjpeg-turbo should be enabled.
 .if (${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64")

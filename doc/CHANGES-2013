@@ -1,4 +1,4 @@
-$NetBSD: CHANGES-2013,v 1.1037 2013/03/22 12:18:01 obache Exp $
+$NetBSD: CHANGES-2013,v 1.1046 2013/03/24 17:18:54 wiz Exp $
 
 Changes to the packages collection and infrastructure in 2013:
 
@@ -1493,3 +1493,14 @@ Changes to the packages collection and infrastructure in 2013:
 	Updated inputmethod/scim-ccinput to 0.3.1nb15 [obache 2013-03-20]
 	Updated net/mikutter to 0.2.1.1137 [obache 2013-03-22]
 	Updated www/seamonkey to 2.16nb1 [ryoon 2013-03-22]
+	Updated print/poppler to 0.22.2 [spz 2013-03-24]
+	Updated www/py-flask-admin to 1.0.5 [kleink 2013-03-24]
+	Updated x11/mlterm to 3.1.9 [tsutsui 2013-03-24]
+	Updated net/wpa_supplicant to 2.0 [rodent 2013-03-24]
+	Updated net/wpa_gui to 2.0 [rodent 2013-03-24]
+	Removed devel/p4 [wiz 2013-03-24]
+	Removed devel/p4-docs [wiz 2013-03-24]
+	Removed devel/p4d [wiz 2013-03-24]
+	Removed devel/p4web [wiz 2013-03-24]
+	Removed emulators/ski-bin successors emulators/ski [wiz 2013-03-24]
+	Updated x11/x3270 to 3.3.12ga12 [gsl 2013-03-24]
