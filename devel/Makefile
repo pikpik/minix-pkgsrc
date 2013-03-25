@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.1717 2013/03/15 21:00:37 schmonz Exp $
+# $NetBSD: Makefile,v 1.1718 2013/03/24 17:02:11 wiz Exp $
 #
 
 COMMENT=	Development utilities
@@ -92,7 +92,6 @@ SUBDIR+=	bzr-gtk
 SUBDIR+=	bzr-svn
 SUBDIR+=	bzrtools
 SUBDIR+=	c-cpp-reference
-SUBDIR+=	c4
 SUBDIR+=	cbrowser
 SUBDIR+=	ccache
 SUBDIR+=	cdecl
@@ -135,7 +134,6 @@ SUBDIR+=	cut
 SUBDIR+=	cutter
 SUBDIR+=	cvs2cl
 SUBDIR+=	cvs2html
-SUBDIR+=	cvs2p4
 SUBDIR+=	cvs2svn
 SUBDIR+=	cvsclone
 SUBDIR+=	cvsd
