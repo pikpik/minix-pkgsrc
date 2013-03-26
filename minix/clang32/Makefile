@@ -4,8 +4,7 @@
 PKGNAME=	clang-3.2
 CATEGORIES=	minix
 MASTER_SITES=	${MASTER_SITE_MINIX}
-SVNREV=		159319
-DISTNAME=	llvm-clang-r${SVNREV}
+DISTNAME=	llvm-clang-3.2
 
 USE_PYTHON=	yes
 PYTHON_FOR_BUILD_ONLY= yes
@@ -39,14 +38,17 @@ REPLACE_PYTHON=	utils/llvm-build/llvm-build \
 	tools/clang/tools/scan-build/set-xcode-analyzer	\
 	tools/clang/tools/scan-view/scan-view	
 
-	#klee/scripts/klee-gcc	\
-	#klee/tools/ktest-tool/ktest-tool	\
-	#klee/tools/klee-stats/klee-stats
-
 # Avoid dependency on lang/gcc44
 MINIX_GCC_NODEP=yes
 
+#CONFIGURE_WRKSRC=       ${WRKDIR}/build
+#BUILD_WRKSRC=           ${WRKDIR}/build
+#INSTALL_WRKSRC=         ${WRKDIR}/build
+
+#CMAKE_SOURCE_PATH=      ${WRKSRC}
+
 CONFLICTS+= clang-[0-9]*
+#CONFLICTS+= compiler-rt-[0-9]*
 
 MAINTAINER=	ben@minix3.org
 HOMEPAGE=	http://llvm.org/
@@ -58,6 +60,7 @@ PKG_DESTDIR_SUPPORT=destdir
 
 GNU_CONFIGURE=	yes
 USE_TOOLS+=	gmake perl:build chown groff
+#USE_CMAKE=      yes
 USE_LANGUAGES=  c c++
 _USE_GCC_SHLIB=	no
 MAKE_DIRS+=	etc/llvm
@@ -69,7 +72,6 @@ INSTALLATION_DIRS=	bin lib libexec
 
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
-CXXFLAGS+= -D_POSIX_SOURCE
 CONFIGURE_ARGS+= --disable-threads
 #CONFIGURE_ARGS+= --enable-optimized
 #CONFIGURE_ARGS+= --disable-assertions
@@ -82,26 +84,16 @@ CONFIGURE_ARGS+= --enable-targets=host-only
 CONFIGURE_ARGS+= --disable-optimized
 .endif
 
-#SUBST_CLASSES+=         python
-#SUBST_STAGE.python=     pre-configure
-#SUBST_FILES.python=     klee/configure
-#SUBST_SED.python=       -e "s,python -c ,${PYTHONBIN} -c ,"
-
 TEST_TARGET=	check unittests
 
-#KLEE=${WRKDIR}/llvm/klee
-
 post-extract:
-	${MV} ${WRKDIR}/clang ${WRKDIR}/llvm/tools/clang
-	#${MV} ${WRKDIR}/klee ${KLEE}
-
-#post-build:
-#	cd ${KLEE} && CPPFLAGS=-DUSE_KLEE_LIB_DIR=1 ./configure --prefix=${PREFIX} --with-llvm=${WRKDIR}/llvm --with-stp=${PREFIX}
-#	cd ${KLEE} && gmake ENABLE_OPTIMIZED=1 LLVMCC_OPTION=clang ENABLE_BUILT_CLANG=1
+	#${MKDIR} ${CONFIGURE_WRKSRC}
+	${MV} ${WRKDIR}/clang-3.2.src ${WRKSRC}/tools/clang
+	#${MV} ${WRKDIR}/compiler-rt-3.2.src ${WRKSRC}/tools/compiler-rt
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/llvm/tools/clang/tools/scan-build/* ${DESTDIR}${PREFIX}/bin/
-	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/ccc-analyzer \
+	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/* ${DESTDIR}${PREFIX}/bin/
+	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/ccc-analyzer \
 		${WRKSRC}/tools/clang/tools/scan-build/c++-analyzer \
 		${WRKSRC}/tools/clang/tools/scan-build/scan-build \
 		${WRKSRC}/tools/clang/tools/scan-view/scan-view \
@@ -113,15 +105,12 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-view/Resources/* \
 		${DESTDIR}${PYSITELIB}/Resources	
 	${MKDIR} ${DESTDIR}${PREFIX}/share	
-	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
-	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
-	#cd ${KLEE} && gmake DESTDIR=${DESTDIR} install
-	#touch ${DESTDIR}/${PREFIX}/bin/clang.dynok
+	${INSTALL_DATA} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
+	${INSTALL_DATA} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
 
-WRKSRC=			${WRKDIR}/llvm
+WRKSRC=			${WRKDIR}/llvm-3.2.src
 
 .include "../../converters/libiconv/buildlink3.mk"
 .include "../../lang/python/application.mk"
 .include "../../lang/python/extension.mk"
-.include "../../minix/stp/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"
