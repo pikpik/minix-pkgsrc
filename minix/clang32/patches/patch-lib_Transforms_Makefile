@@ -1,6 +1,6 @@
 $NetBSD$
 
---- lib/Transforms/Makefile.orig	Thu Jun 28 00:55:31 2012
+--- lib/Transforms/Makefile.orig	Wed Feb  1 03:51:43 2012
 +++ lib/Transforms/Makefile
 @@ -13,7 +13,7 @@ PARALLEL_DIRS = Utils Instrumentation Scalar InstCombi
  include $(LEVEL)/Makefile.config

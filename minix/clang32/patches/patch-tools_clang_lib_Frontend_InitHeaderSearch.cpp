@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tools/clang/lib/Frontend/InitHeaderSearch.cpp.orig	Thu Jun 28 00:57:40 2012
+--- tools/clang/lib/Frontend/InitHeaderSearch.cpp.orig	Wed Oct 24 16:19:39 2012
 +++ tools/clang/lib/Frontend/InitHeaderSearch.cpp
-@@ -421,7 +421,7 @@ AddDefaultCPlusPlusIncludePaths(const llvm::Triple &tr
+@@ -427,7 +427,7 @@ AddDefaultCPlusPlusIncludePaths(const llvm::Triple &tr
      break;
    }
    case llvm::Triple::Minix:

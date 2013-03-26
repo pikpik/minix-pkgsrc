@@ -1,17 +1,18 @@
 $NetBSD$
 
-SHA1 (llvm-clang-r159319.tar.gz) = 81792a3fa518b280589a6dd543a13ca38804019c
-RMD160 (llvm-clang-r159319.tar.gz) = b939dea32014e66107b3f49e1cfc322a94e02f19
-Size (llvm-clang-r159319.tar.gz) = 41120017 bytes
-SHA1 (patch-Makefile.config.in) = 24e767c2dfcfda92e3f0774aebdc64f025fd7d7e
-SHA1 (patch-Makefile.rules) = 0020054dd648ed6941e4779678e96fc2c6266869
-SHA1 (patch-lib_Support_Unix_PathV2.inc) = 1244b30a7eebab2fe7276acd66e71023814a4857
-SHA1 (patch-lib_Support_Unix_Unix.h) = d4e8b51e24f4869d065efca4b3745efe9991917f
-SHA1 (patch-lib_Support_raw__ostream.cpp) = befa3e3d17cb041c78a478aa129a3374eda99f19
-SHA1 (patch-lib_Transforms_Makefile) = 655d95426a828edc26ea70970953203dbbaf0899
-SHA1 (patch-runtime_Makefile) = 1342fe18467de30d17bb534a25ce197fd63be56b
-SHA1 (patch-tools_clang_lib_Basic_Targets.cpp) = 5e7f36b415f09081952b1de44db3cca73cb454c5
-SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 9cad5c5fe4dcbb3f18accd23c9ffa0c3736779ce
-SHA1 (patch-tools_clang_lib_Frontend_InitHeaderSearch.cpp) = 26a19732933d0fe9d0ead1a2ecd78df6b288cae3
-SHA1 (patch-tools_llvm-shlib_Makefile) = bb622ca3d24fd226e73c32b8b7d6e16fb3cac9d6
+SHA1 (llvm-clang-3.2.tar.gz) = 70a7fc1d536ce69f62365e3d78e03e254b634ee4
+RMD160 (llvm-clang-3.2.tar.gz) = 3a480d28ba33a535e78e050d559fed6760bb907e
+Size (llvm-clang-3.2.tar.gz) = 21081588 bytes
+SHA1 (patch-Makefile.config.in) = a130a68427ce13c9f52024f6414bd782a20a9ba9
+SHA1 (patch-Makefile.rules) = 3a6d8c1af651ae7f6d20b4153e8697b0e0f9ca1a
+SHA1 (patch-lib_Support_Unix_Memory.inc) = 7d7ed24ddd59b869896ade2f95485f9689fa1e8d
+SHA1 (patch-lib_Support_Unix_PathV2.inc) = 7c74ea1f8f656f081c5c0eeb597e2d2ab2d00351
+SHA1 (patch-lib_Support_Unix_Unix.h) = 1c8cc3d93a94f69d72808df318bcee47f05ffa49
+SHA1 (patch-lib_Support_raw__ostream.cpp) = 4361a128787897cc2837b586a7ab64f25edc7784
+SHA1 (patch-lib_Transforms_Makefile) = 7ea7d7a8ad47a6b91f39f408da0f1e5c443f83b3
+SHA1 (patch-runtime_Makefile) = 0c3b8a2b33ae85f991bd401cf4205902d1f8e65f
+SHA1 (patch-tools_clang_lib_Basic_Targets.cpp) = 67e9998df7a48542d297a25492ab2d7098adfc4a
+SHA1 (patch-tools_clang_lib_Driver_Tools.cpp) = 374e68a4277be412e3ae5f4de2844272f2874da0
+SHA1 (patch-tools_clang_lib_Frontend_InitHeaderSearch.cpp) = 96866a0534751e9efe23a58a25fae5762e1b121a
+SHA1 (patch-tools_llvm-shlib_Makefile) = 7d995b2fb4e16ee9b1ee38496da3d0ebe2118bd4
 SHA1 (patch-utils_lit_lit_main.py) = 2453c537143070b52ae0804dd9468e92b38da394

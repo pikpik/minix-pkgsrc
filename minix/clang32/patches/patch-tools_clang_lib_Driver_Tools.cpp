@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tools/clang/lib/Driver/Tools.cpp.orig	Thu Jun 28 00:57:54 2012
+--- tools/clang/lib/Driver/Tools.cpp.orig	Wed Nov 21 07:56:23 2012
 +++ tools/clang/lib/Driver/Tools.cpp
-@@ -5584,6 +5584,33 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -6154,6 +6154,33 @@ void minix::Link::ConstructJob(Compilation &C, const J
    const Driver &D = getToolChain().getDriver();
    ArgStringList CmdArgs;
  
@@ -36,7 +36,7 @@ $NetBSD$
    if (Output.isFilename()) {
      CmdArgs.push_back("-o");
      CmdArgs.push_back(Output.getFilename());
-@@ -5593,42 +5620,86 @@ void minix::Link::ConstructJob(Compilation &C, const J
+@@ -6163,42 +6190,86 @@ void minix::Link::ConstructJob(Compilation &C, const J
  
    if (!Args.hasArg(options::OPT_nostdlib) &&
        !Args.hasArg(options::OPT_nostartfiles)) {

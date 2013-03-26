@@ -1,8 +1,8 @@
 $NetBSD$
 
---- lib/Support/raw_ostream.cpp.orig	Thu Jun 28 00:55:41 2012
+--- lib/Support/raw_ostream.cpp.orig	Wed Aug 29 22:57:00 2012
 +++ lib/Support/raw_ostream.cpp
-@@ -585,8 +585,8 @@ uint64_t raw_fd_ostream::seek(uint64_t off) {
+@@ -586,8 +586,8 @@ uint64_t raw_fd_ostream::seek(uint64_t off) {
  }
  
  size_t raw_fd_ostream::preferred_buffer_size() const {

@@ -1,8 +1,8 @@
 $NetBSD$
 
---- tools/clang/lib/Basic/Targets.cpp.orig	Thu Jun 28 00:57:41 2012
+--- tools/clang/lib/Basic/Targets.cpp.orig	Wed Nov 28 22:01:30 2012
 +++ tools/clang/lib/Basic/Targets.cpp
-@@ -289,12 +289,6 @@ class MinixTargetInfo : public OSTargetInfo<Target> { 
+@@ -292,12 +292,6 @@ class MinixTargetInfo : public OSTargetInfo<Target> { 
      // Minix defines
  
      Builder.defineMacro("__minix", "3");

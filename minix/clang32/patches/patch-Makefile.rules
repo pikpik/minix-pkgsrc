@@ -1,6 +1,6 @@
 $NetBSD$
 
---- Makefile.rules.orig	Thu Jun 28 00:55:43 2012
+--- Makefile.rules.orig	Fri Oct 12 21:48:14 2012
 +++ Makefile.rules
 @@ -274,9 +274,11 @@ CPP.Defines :=
  ifeq ($(ENABLE_OPTIMIZED),1)
