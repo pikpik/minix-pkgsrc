@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.111 2013/02/09 22:11:29 ryoon Exp $
+# $NetBSD: Makefile,v 1.112 2013/02/16 11:19:33 wiz Exp $
 
 DISTNAME=	kdegraphics-${_KDE_VERSION}
 PKGREVISION=	29
@@ -39,6 +39,9 @@ BUILDLINK_TRANSFORM+=	rm:-fno-exceptions
 .endif
 
 .include "../../meta-pkgs/kde3/kde3.mk"
+.if ${OPSYS} == "Linux"
+.include "../../graphics/libv4l/buildlink3.mk"
+.endif
 .include "../../converters/fribidi/buildlink3.mk"
 .include "../../devel/libgphoto2/buildlink3.mk"
 .include "../../graphics/glut/buildlink3.mk"
