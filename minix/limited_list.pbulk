@@ -79,6 +79,7 @@ devel/libtool-base
 devel/libuuid
 devel/libuxre
 devel/m4
+devel/mk-configure
 devel/nasm
 devel/nbpatch
 devel/ncurses
