@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2013/02/06 23:23:16 jperkin Exp $
+# $NetBSD: Makefile,v 1.30 2013/02/16 11:23:53 wiz Exp $
 
 DISTNAME=		kismet-2008-05-R1
 PKGNAME=		kismet-2008.05.01
@@ -12,7 +12,7 @@ COMMENT=		802.11 wireless network detector, sniffer and IDS
 
 USE_LANGUAGES=		c c++
 USE_NCURSES=		yes # needs libpanel
-USE_TOOLS+=		gmake perl:run
+USE_TOOLS+=		gmake perl:run pkg-config
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--sysconfdir=${PKG_SYSCONFDIR}
 

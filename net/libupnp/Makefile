@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.19 2012/11/06 18:59:08 drochner Exp $
+# $NetBSD: Makefile,v 1.20 2013/01/29 16:22:47 drochner Exp $
 #
 
 DISTNAME=		libupnp-1.6.18
@@ -21,6 +21,8 @@ CONFIGURE_ARGS+=	--with-documentation
 PKGCONFIG_OVERRIDE+=	libupnp.pc.in
 
 TEST_TARGET=		check
+
+CFLAGS.SunOS+=		-D_POSIX_PTHREAD_SEMANTICS
 
 .include "options.mk"
 

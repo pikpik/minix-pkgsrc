@@ -1,11 +1,11 @@
-# $NetBSD: Makefile,v 1.12 2010/06/04 04:30:45 obache Exp $
+# $NetBSD: Makefile,v 1.13 2012/10/23 17:18:11 asau Exp $
 #
 
 DISTNAME=	bftpd-2.9
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:=bftpd/}
 
-MAINTAINER=	virtus@wanadoo.nl
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://bftpd.sourceforge.net/
 COMMENT=	Small and fast FTP server
 LICENSE=	gnu-gpl-v2

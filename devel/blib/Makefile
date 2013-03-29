@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.29 2012/10/31 11:16:40 asau Exp $
+# $NetBSD: Makefile,v 1.30 2013/02/16 11:18:49 wiz Exp $
 #
 
 DISTNAME=		blib-1.0.2
@@ -23,6 +23,9 @@ CONFIGURE_ARGS+=	--enable-gtk-doc=no
 
 # XXX: fix this for GNU/Linux, provide appropriate PLIST.
 CONFIGURE_ARGS+=	--disable-directfb
+
+CFLAGS.SunOS+=		-Du_int16_t=uint16_t
+CFLAGS.SunOS+=		-Du_int32_t=uint32_t
 
 post-extract:
 	${TOUCH} ${WRKSRC}/modules/libtool

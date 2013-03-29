@@ -1,4 +1,4 @@
-# $NetBSD: Makefile,v 1.41 2012/10/03 00:02:38 asau Exp $
+# $NetBSD: Makefile,v 1.42 2012/10/03 21:54:01 wiz Exp $
 #
 
 DISTNAME=	ircservices-5.0.64
@@ -7,7 +7,7 @@ CATEGORIES=	chat
 MASTER_SITES=	http://www.ircservices.za.net/download/old/ \
 		ftp://ftp.esper.net/ircservices/old/
 
-MAINTAINER=	virtus@wanadoo.nl
+MAINTAINER=	pkgsrc-users@NetBSD.org
 HOMEPAGE=	http://www.ircservices.za.net/
 COMMENT=	Services for IRC networks
 LICENSE=	gnu-gpl-v2
