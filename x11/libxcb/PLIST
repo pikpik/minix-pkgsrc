@@ -1,4 +1,6 @@
 @comment $NetBSD: PLIST,v 1.5 2012/10/07 22:09:47 wiz Exp $
+@comment LSC: Commented out a few lines as MFS does not support 
+@comment      names longer than 60 characters.
 include/xcb/bigreq.h
 include/xcb/composite.h
 include/xcb/damage.h
@@ -882,11 +884,11 @@ man/man3/xcb_input_get_feedback_control_unchecked.3
 man/man3/xcb_input_get_selected_extension_events.3
 man/man3/xcb_input_get_selected_extension_events_all_classes.3
 man/man3/xcb_input_get_selected_extension_events_all_classes_end.3
-man/man3/xcb_input_get_selected_extension_events_all_classes_length.3
+@comment man/man3/xcb_input_get_selected_extension_events_all_classes_length.3
 man/man3/xcb_input_get_selected_extension_events_reply.3
 man/man3/xcb_input_get_selected_extension_events_this_classes.3
 man/man3/xcb_input_get_selected_extension_events_this_classes_end.3
-man/man3/xcb_input_get_selected_extension_events_this_classes_length.3
+@comment man/man3/xcb_input_get_selected_extension_events_this_classes_length.3
 man/man3/xcb_input_get_selected_extension_events_unchecked.3
 man/man3/xcb_input_grab_device.3
 man/man3/xcb_input_grab_device_button.3
@@ -1747,7 +1749,7 @@ man/man3/xcb_xf86dri_destroy_drawable_checked.3
 man/man3/xcb_xf86dri_get_client_driver_name.3
 man/man3/xcb_xf86dri_get_client_driver_name_client_driver_name.3
 man/man3/xcb_xf86dri_get_client_driver_name_client_driver_name_end.3
-man/man3/xcb_xf86dri_get_client_driver_name_client_driver_name_length.3
+@comment man/man3/xcb_xf86dri_get_client_driver_name_client_driver_name_length.3
 man/man3/xcb_xf86dri_get_client_driver_name_reply.3
 man/man3/xcb_xf86dri_get_client_driver_name_unchecked.3
 man/man3/xcb_xf86dri_get_device_info.3
