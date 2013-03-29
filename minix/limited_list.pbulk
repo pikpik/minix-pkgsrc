@@ -79,6 +79,7 @@ devel/libtool-base
 devel/libuuid
 devel/libuxre
 devel/m4
+devel/mk-configure
 devel/nasm
 devel/nbpatch
 devel/ncurses
@@ -281,6 +282,7 @@ textproc/antiword
 textproc/c2html
 textproc/catdoc
 textproc/diffstat
+textproc/docbook
 textproc/docbook-xml
 textproc/docbook-xsl
 textproc/expat
@@ -291,6 +293,8 @@ textproc/heirloom-col
 textproc/heirloom-ed
 textproc/highlight
 textproc/html2text
+textproc/iso8879
+textproc/jade
 textproc/libxml2
 textproc/libxslt
 textproc/nbsed
@@ -299,6 +303,7 @@ textproc/rman
 textproc/robodoc
 textproc/texi2html
 textproc/wdiff
+textproc/xhtml
 textproc/xmlrpc-c
 textproc/xmlto
 time/cal

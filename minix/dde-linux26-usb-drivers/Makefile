@@ -1,7 +1,7 @@
 # $NetBSD$
 #
 
-DISTNAME=	dde-linux26-usb-drivers-23
+DISTNAME=	dde-linux26-usb-drivers-24
 MASTER_SITES=   http://www.minix3.org/distfiles-minix/
 CATEGORIES=	minix
 PKGREVISION=    # empty

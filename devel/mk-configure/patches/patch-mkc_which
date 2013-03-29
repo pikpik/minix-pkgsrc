@@ -1,0 +1,8 @@
+--- mkc_which.orig	Thu Mar 28 02:18:51 2013
++++ mkc_which	Thu Mar 28 02:18:59 2013
+@@ -1,4 +1,4 @@
+-#!/bin/sh
++#!/bin/ksh
+ 
+ ############################################################
+ # Copyright (c) 2009-2012 by Aleksey Cheusov
