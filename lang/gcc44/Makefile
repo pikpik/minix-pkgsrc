@@ -32,16 +32,7 @@ UNLIMIT_RESOURCES+=	stacksize
 .include "../../mk/bsd.prefs.mk"
 .include "options.mk"
 
-# Determine whether to use binutils
 .if ${OPSYS} == "Minix"
-DEPENDS+=	binutils>=2.17nb3:../../devel/binutils
-
-BINUTILS_PREFIX_CMD= ${PKG_INFO} -Q BINUTILS_PROGRAM_PREFIX binutils 2>/dev/null \
-		|| { cd ${.CURDIR}/../../devel/binutils \
-		&& ${MAKE} ${MAKEFLAGS} show-var VARNAME=BINUTILS_PROGRAM_PREFIX; }
-BINUTILS_PREFIX= ${:!${BINUTILS_PREFIX_CMD}!}
-CONFIGURE_ARGS+=	--with-as=${LOCALBASE}/bin/${BINUTILS_PREFIX}as
-CONFIGURE_ARGS+=	--with-ld=${LOCALBASE}/bin/${BINUTILS_PREFIX}ld
 CONFIGURE_ARGS+=	--host=i386-pc-minix --target=i386-pc-minix --build=i386-pc-minix 
 CONFIGURE_ARGS+=	--disable-visibility 
 .endif
