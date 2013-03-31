@@ -1,4 +1,4 @@
-# $NetBSD: mozilla-common.mk,v 1.43 2013/03/10 17:27:27 ryoon Exp $
+# $NetBSD: mozilla-common.mk,v 1.45 2013/03/30 20:03:08 ryoon Exp $
 #
 # common Makefile fragment for mozilla packages based on gecko 2.0.
 #
@@ -11,6 +11,15 @@ GNU_CONFIGURE=		yes
 USE_TOOLS+=		pkg-config perl gmake autoconf213 unzip zip
 USE_LANGUAGES+=		c99 c++
 UNLIMIT_RESOURCES+=	datasize
+
+.include "../../mk/bsd.prefs.mk"
+# gcc45-4.5.3 of lang/gcc45 does not generate proper binary,
+# but gcc 4.5.4 of NetBSD 7 generates working binary.
+.if !empty(MACHINE_PLATFORM:MNetBSD-5.*)
+GCC_REQD+=		4.6
+.else
+GCC_REQD+=		4.5
+.endif
 
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/libpkix/libpkix.sh
 CHECK_PORTABILITY_SKIP+=${MOZILLA_DIR}security/nss/tests/multinit/multinit.sh
@@ -65,7 +74,7 @@ SUBST_MESSAGE.python=	Fixing path to python.
 SUBST_FILES.python+=	media/webrtc/trunk/build/common.gypi
 SUBST_SED.python+=	-e 's,<!(python,<!(${PYTHONBIN},'
 
-# When MACHINAE_ARCH == "arm", linjpeg-turbo should be enabled.
+# When MACHINAE_ARCH == "arm", libjpeg-turbo should be enabled.
 .if (${MACHINE_ARCH} == "i386" || ${MACHINE_ARCH} == "x86_64")
 BUILD_DEPENDS+=		yasm>=1.1.0:../../devel/yasm
 CONFIGURE_ARGS+=	--enable-libjpeg-turbo
