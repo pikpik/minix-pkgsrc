@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.ac.orig	Sun May 14 05:29:23 2006
++++ configure.ac
+@@ -117,6 +117,8 @@ AC_CHECK_HEADERS( \
+ 	err.h \
+ 	ifaddrs.h \
+ 	netdb.h \
++	netinet/in_systm.h \
++	netinet/ip.h \
+ 	paths.h \
+ 	poll.h \
+ 	stdarg.h \
