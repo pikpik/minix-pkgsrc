@@ -207,6 +207,7 @@ misc/watch
 net/fetch
 net/libfetch
 net/libpcap
+net/openntpd
 net/rsync
 net/tcpdump
 pkgtools/bootstrap-mk-files

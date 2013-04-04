@@ -3,3 +3,8 @@ $NetBSD: distinfo,v 1.6 2005/06/28 17:13:25 peter Exp $
 SHA1 (openntpd-3.9p1.tar.gz) = 098a435d02886a9e4d34afb15b15fde795eda1e9
 RMD160 (openntpd-3.9p1.tar.gz) = c348004116c78810daa9451f15abcc26788949a8
 Size (openntpd-3.9p1.tar.gz) = 152700 bytes
+SHA1 (patch-client.c) = cc450be22b0b19e095f01a141248b4b55e7d34fb
+SHA1 (patch-configure.ac) = 08683706419a7c67b03d64700e175842b45da854
+SHA1 (patch-ntp.c) = fee3c2d08afa995a9921981de2b1c1f7b78632b7
+SHA1 (patch-ntpd.h) = aef2fa85f2133c81ea23fed1fd4f5426cf1c259f
+SHA1 (patch-server.c) = 502fe2aacf842bc0c6ce54b70c2a131ae3e99528
