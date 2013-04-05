@@ -118,7 +118,7 @@ pbulksh_bin_kit() {
 	# Trim the .ifdef BSD_PKG_MK and .endif lines to make a "fragment"
 	sed -e '1d;$d' /usr/pkgsrc/minix/mk.conf.minix > /usr/pkgsrc/minix/mk.conf.minix.frag
 
-	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} CFLAGS="-march=i586" sh ./bootstrap/bootstrap \
+	env PATH=/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:${PATH} CFLAGS="-march=i586" LD_LIBRARY_PATH=/usr/pkg.sav/lib sh ./bootstrap/bootstrap \
 		--mk-fragment=/usr/pkgsrc/minix/mk.conf.minix.frag \
 		--gzip-binary-kit=/usr/pkgsrc/bootstrap/bootstrap.tar.gz \
 		--varbase=/usr/var \
@@ -159,7 +159,7 @@ pbulksh_build() {
 		exit 1
 	fi
 
-	env STRIP=strip PATH=/bin:/sbin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:/usr/bin:/usr/sbin:/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:${PATH} /usr/pbulk/bin/bulkbuild
+	env STRIP=strip PATH=/bin:/sbin:/usr/pkg.sav/bin:/usr/pkg.sav/sbin:/usr/bin:/usr/sbin:/usr/pbulk/bin:/usr/pbulk/sbin:/usr/pkg.sav/gcc44/bin:${PATH} LD_LIBRARY_PATH=/usr/pkg.sav/lib /usr/pbulk/bin/bulkbuild
 }
 
 # Restore the backed up /usr/pkg and /usr/var
