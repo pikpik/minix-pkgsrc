@@ -73,9 +73,8 @@ INSTALLATION_DIRS=	bin lib libexec
 .include "../../mk/bsd.prefs.mk"
 .if ${OPSYS} == "Minix"
 CONFIGURE_ARGS+= --disable-threads
-#CONFIGURE_ARGS+= --enable-optimized
+CONFIGURE_ARGS+= --enable-optimized
 #CONFIGURE_ARGS+= --disable-assertions
-CONFIGURE_ARGS+= --disable-optimized
 CONFIGURE_ARGS+= --enable-assertions
 CONFIGURE_ARGS+= --enable-shared
 .else
@@ -92,8 +91,8 @@ post-extract:
 	#${MV} ${WRKDIR}/compiler-rt-3.2.src ${WRKSRC}/tools/compiler-rt
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/* ${DESTDIR}${PREFIX}/bin/
-	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/ccc-analyzer \
+	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/* ${DESTDIR}${PREFIX}/bin/
+	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-build/ccc-analyzer \
 		${WRKSRC}/tools/clang/tools/scan-build/c++-analyzer \
 		${WRKSRC}/tools/clang/tools/scan-build/scan-build \
 		${WRKSRC}/tools/clang/tools/scan-view/scan-view \
@@ -105,8 +104,8 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/clang/tools/scan-view/Resources/* \
 		${DESTDIR}${PYSITELIB}/Resources	
 	${MKDIR} ${DESTDIR}${PREFIX}/share	
-	${INSTALL_DATA} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
-	${INSTALL_DATA} ${WRKSRC}/tools/clang/clang-3.2.src/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
+	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/scanview.css ${DESTDIR}${PREFIX}/share	
+	${INSTALL_DATA} ${WRKSRC}/tools/clang/tools/scan-build/sorttable.js ${DESTDIR}${PREFIX}/share	
 
 WRKSRC=			${WRKDIR}/llvm-3.2.src
 
