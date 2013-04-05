@@ -7,7 +7,10 @@ set -e
 RELEASE=/usr/src/releasetools/release.sh
 PKGSRC=/usr/pkgsrc
 PACKAGEURL="ftp://ftp.minix3.org/pub/minix/packages/`uname -r`/`uname -m`/All/"
-PACKAGES="gcc44 scmgit-base"
+PACKAGES="
+	gettext-lib gmp mpfr gcc44 
+	scmgit-base
+"
 JAILROOTBASE=/usr/pbulk-jail
 BRANCH=minix-master
 REMOTE=pkgsrc

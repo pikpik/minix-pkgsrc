@@ -163,6 +163,7 @@ lang/a60
 lang/baci
 lang/bwbasic
 lang/f2c
+lang/ficl
 lang/gawk
 lang/gcc44
 lang/guile
@@ -173,6 +174,7 @@ lang/lua
 lang/mawk
 lang/minischeme
 lang/nawk
+lang/nhc98
 lang/p2c
 lang/perl5
 lang/python27
