@@ -212,6 +212,7 @@ net/libpcap
 net/openntpd
 net/rsync
 net/tcpdump
+net/tnftp
 pkgtools/bootstrap-mk-files
 pkgtools/digest
 pkgtools/libnbcompat

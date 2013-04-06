@@ -272,10 +272,12 @@ hookup(char *host, char *port)
 		goto bad;
 	}
 
+#ifdef SO_OOBINLINE
 	if (setsockopt(s, SOL_SOCKET, SO_OOBINLINE,
 			(void *)&on, sizeof(on)) == -1) {
 		DWARN("setsockopt %s (ignored)", "SO_OOBINLINE");
 	}
+#endif
 
 	return (hostname);
  bad:
