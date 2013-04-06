@@ -43,7 +43,7 @@ $NetBSD$
 +{
 +	int device;
 +	if ((device = open(file, O_RDWR, 0666)) > 0) {
-+	       struct partition geom;
++	       struct part_geom geom;
 +	       if (ioctl(device, DIOCGETP, &geom) < 0) {
 +	               close(device);
 +	       }
