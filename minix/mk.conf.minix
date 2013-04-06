@@ -3,7 +3,6 @@
 CFLAGS+=	-march=i586
 PKGSRC_COMPILER=    gcc
 
-TOOLS_PLATFORM.ftp?=           /usr/bin/fetch
 DISTDIR=/usr/pkgsrc/distfiles
 SKIP_LICENSE_CHECK=yes
 IS_BUILTIN.dl?=    yes
@@ -18,11 +17,10 @@ ZSH_STATIC=yes
 CURSES_DEFAULT?= ncurses
 
 EXTRACT_USING?=    bsdtar
-FETCH_USING?=        fetch
 
 LOCALBASE=        /usr/pkg
 SITE_MINIX=http://www.minix3.org/
-MASTER_SITE_BACKUP=${SITE_MINIX}/distfiles-backup/ ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/${DIST_SUBDIR}/ ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/${DIST_SUBDIR}/
+MASTER_SITE_BACKUP=${SITE_MINIX}/distfiles-backup/ ftp://ftp.netbsd.org/pub/pkgsrc/distfiles/${DIST_SUBDIR} ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/${DIST_SUBDIR}
 MASTER_SITE_MINIX=${SITE_MINIX}/distfiles-minix/
 PACKAGES=${PKGSRCDIR}/packages/${OS_VERSION}/${MACHINE_ARCH}
 PKGMANDIR=        man
